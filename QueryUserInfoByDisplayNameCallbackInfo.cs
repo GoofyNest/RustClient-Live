@@ -1,15 +1,15 @@
-public struct QueryUserInfoByDisplayNameCallbackInfo : ICallbackInfo // TypeDefIndex: 8315
+public struct QueryUserInfoByDisplayNameCallbackInfo : ICallbackInfo // TypeDefIndex: 8317
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -18,34 +18,34 @@ public struct QueryUserInfoByDisplayNameCallbackInfo : ICallbackInfo // TypeDefI
 	public Utf8String DisplayName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
 	public Nullable<Result> GetResultCode() { }

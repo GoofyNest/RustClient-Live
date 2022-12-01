@@ -1,6 +1,6 @@
-public class TimeAverageValue // TypeDefIndex: 6863
+public class TimeAverageValue // TypeDefIndex: 6865
 {
-	private TimeAverageValueData data; 
+	private TimeAverageValueData data;
 
 
 	public ulong Calculate() { }

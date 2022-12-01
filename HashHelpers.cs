@@ -1,6 +1,6 @@
 internal static class HashHelpers // TypeDefIndex: 747
 {
-	public static readonly int RandomSeed; 
+	public static readonly int RandomSeed;
 
 
 	public static int Combine(int h1, int h2) { }
@@ -12,20 +12,20 @@ internal static class HashHelpers // TypeDefIndex: 747
 internal static class HashHelpers // TypeDefIndex: 1396
 {
 
-[FriendAccessAllowedAttribute] 
+[FriendAccessAllowedAttribute]
 internal static class HashHelpers
-	public static readonly int[] primes; 
-	private static ConditionalWeakTable<object, SerializationInfo> s_SerializationInfoTable; 
+	public static readonly int[] primes;
+	private static ConditionalWeakTable<object, SerializationInfo> s_SerializationInfoTable;
 
 	internal static ConditionalWeakTable<object, SerializationInfo> SerializationInfoTable { get; }
 
 
 	internal static ConditionalWeakTable<object, SerializationInfo> get_SerializationInfoTable() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool IsPrime(int candidate) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int GetPrime(int min) { }
 
 	public static int ExpandPrime(int oldSize) { }

@@ -1,9 +1,9 @@
-public class PaintableSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6430
+public class PaintableSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6432
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<uint> crcs; 
-	public List<ulong> editHistory; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<uint> crcs;
+	public List<ulong> editHistory;
 
 
 	public static void ResetToPool(PaintableSign instance) { }

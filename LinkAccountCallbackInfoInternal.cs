@@ -1,8 +1,8 @@
-internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9590
+internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9592
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -34,13 +34,13 @@ internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettab
 
 }
 
-internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9665
+internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9667
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_PinGrantInfo; 
-	private IntPtr m_SelectedAccountId; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_PinGrantInfo;
+	private IntPtr m_SelectedAccountId;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

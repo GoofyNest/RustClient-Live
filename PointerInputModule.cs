@@ -4,8 +4,8 @@ public abstract class PointerInputModule : BaseInputModule // TypeDefIndex: 5087
 	public const int kMouseRightId = -2;
 	public const int kMouseMiddleId = -3;
 	public const int kFakeTouchesId = -4;
-	protected Dictionary<int, PointerEventData> m_PointerData; 
-	private readonly PointerInputModule.MouseState m_MouseState; 
+	protected Dictionary<int, PointerEventData> m_PointerData;
+	private readonly PointerInputModule.MouseState m_MouseState;
 
 
 	protected bool GetPointerData(int id, out PointerEventData data, bool create) { }
@@ -44,8 +44,8 @@ public abstract class PointerInputModule : BaseInputModule // TypeDefIndex: 5087
 
 public class PointerInputModule.MouseButtonEventData // TypeDefIndex: 5090
 {
-	public PointerEventData.FramePressState buttonState; 
-	public PointerEventData buttonData; 
+	public PointerEventData.FramePressState buttonState;
+	public PointerEventData buttonData;
 
 
 	public bool PressedThisFrame() { }

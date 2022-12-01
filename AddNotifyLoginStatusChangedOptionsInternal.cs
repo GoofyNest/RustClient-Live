@@ -1,8 +1,8 @@
-internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9551
+internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9553
 {
 
 internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable
-	private int m_ApiVersion; 
+	private int m_ApiVersion;
 
 
 	public void Set(ref AddNotifyLoginStatusChangedOptions other) { }
@@ -13,11 +13,11 @@ internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotify
 
 }
 
-internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9648
+internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9650
 {
 
 internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable
-	private int m_ApiVersion; 
+	private int m_ApiVersion;
 
 
 	public void Set(ref AddNotifyLoginStatusChangedOptions other) { }

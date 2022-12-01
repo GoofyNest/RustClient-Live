@@ -1,8 +1,8 @@
-public class BaseAnimalNPC : BaseNpc, IAIAttack, IAITirednessAbove, IAISleep, IAIHungerAbove, IAISenses // TypeDefIndex: 10029
+public class BaseAnimalNPC : BaseNpc, IAIAttack, IAITirednessAbove, IAISleep, IAIHungerAbove, IAISenses // TypeDefIndex: 10031
 {
-	private Option __menuOption_MenuDesignAI; 
-	public string deathStatName; 
-	protected AnimalBrain brain; 
+	private Option __menuOption_MenuDesignAI;
+	public string deathStatName;
+	protected AnimalBrain brain;
 
 	public override bool HasMenuOptions { get; }
 
@@ -11,9 +11,9 @@ public class BaseAnimalNPC : BaseNpc, IAIAttack, IAITirednessAbove, IAISleep, IA
 
 	public override bool get_HasMenuOptions() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDesignAI(BasePlayer ply) { }
 
 	public bool CanDesignAI(BasePlayer player) { }

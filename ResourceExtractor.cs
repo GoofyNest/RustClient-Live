@@ -1,9 +1,9 @@
-public class ResourceExtractor : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6330
+public class ResourceExtractor : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6332
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ItemContainer fuelContents; 
-	public ItemContainer outputContents; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ItemContainer fuelContents;
+	public ItemContainer outputContents;
 
 
 	public static void ResetToPool(ResourceExtractor instance) { }

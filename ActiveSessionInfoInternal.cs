@@ -1,10 +1,10 @@
-internal struct ActiveSessionInfoInternal : IGettable<ActiveSessionInfo>, ISettable<ActiveSessionInfo>, IDisposable // TypeDefIndex: 8457
+internal struct ActiveSessionInfoInternal : IGettable<ActiveSessionInfo>, ISettable<ActiveSessionInfo>, IDisposable // TypeDefIndex: 8459
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionName; 
-	private IntPtr m_LocalUserId; 
-	private OnlineSessionState m_State; 
-	private IntPtr m_SessionDetails; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionName;
+	private IntPtr m_LocalUserId;
+	private OnlineSessionState m_State;
+	private IntPtr m_SessionDetails;
 
 	public Utf8String SessionName { get; set; }
 	public ProductUserId LocalUserId { get; set; }

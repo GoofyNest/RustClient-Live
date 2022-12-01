@@ -1,9 +1,9 @@
-internal struct AddProgressionOptionsInternal : ISettable<AddProgressionOptions>, IDisposable // TypeDefIndex: 8799
+internal struct AddProgressionOptionsInternal : ISettable<AddProgressionOptions>, IDisposable // TypeDefIndex: 8801
 {
-	private int m_ApiVersion; 
-	private uint m_SnapshotId; 
-	private IntPtr m_Key; 
-	private IntPtr m_Value; 
+	private int m_ApiVersion;
+	private uint m_SnapshotId;
+	private IntPtr m_Key;
+	private IntPtr m_Value;
 
 	public uint SnapshotId { set; }
 	public Utf8String Key { set; }

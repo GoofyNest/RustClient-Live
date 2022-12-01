@@ -1,24 +1,24 @@
-public struct KickOptions // TypeDefIndex: 8740
+public struct KickOptions // TypeDefIndex: 8742
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RoomName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <RoomName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
 
 	public Utf8String RoomName { get; set; }
 	public ProductUserId TargetUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RoomName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RoomName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
 }

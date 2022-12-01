@@ -1,7 +1,7 @@
-internal class TargetPool // TypeDefIndex: 13660
+internal class TargetPool // TypeDefIndex: 13676
 {
-	private readonly List<int> m_Pool; 
-	private int m_Current; 
+	private readonly List<int> m_Pool;
+	private int m_Current;
 
 
 	internal void .ctor() { }

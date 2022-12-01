@@ -1,7 +1,7 @@
 public struct ListHashSet.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4814
 {
-	private readonly BufferList<T> list; 
-	private int index; 
+	private readonly BufferList<T> list;
+	private int index;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

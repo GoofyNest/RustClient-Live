@@ -1,7 +1,7 @@
-internal struct AssociateWithClanResult_t : ICallbackData // TypeDefIndex: 5504
+internal struct AssociateWithClanResult_t : ICallbackData // TypeDefIndex: 5506
 {
-	internal Result Result; 
-	public static int _datasize; 
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,6 +1,6 @@
 public enum ProtocolType // TypeDefIndex: 3045
 {
-	public int value__; 
+	public int value__;
 	public const ProtocolType IP = 0;
 	public const ProtocolType IPv6HopByHopOptions = 0;
 	public const ProtocolType Icmp = 1;

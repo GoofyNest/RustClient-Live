@@ -1,7 +1,7 @@
-internal struct LobbyMatchList_t : ICallbackData // TypeDefIndex: 5348
+internal struct LobbyMatchList_t : ICallbackData // TypeDefIndex: 5350
 {
-	internal uint LobbiesMatching; 
-	public static int _datasize; 
+	internal uint LobbiesMatching;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

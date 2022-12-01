@@ -1,6 +1,6 @@
-public class MaterialOverlay : MonoBehaviour // TypeDefIndex: 11842
+public class MaterialOverlay : MonoBehaviour // TypeDefIndex: 11849
 {
-	public Material material; 
+	public Material material;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }

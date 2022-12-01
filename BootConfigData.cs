@@ -1,9 +1,9 @@
 internal class BootConfigData // TypeDefIndex: 3359
 {
-	private IntPtr m_Ptr; 
+	private IntPtr m_Ptr;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static BootConfigData WrapBootConfigData(IntPtr nativeHandle) { }
 
 	private void .ctor(IntPtr nativeHandle) { }

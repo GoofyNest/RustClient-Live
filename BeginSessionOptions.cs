@@ -1,13 +1,13 @@
-public struct BeginSessionOptions // TypeDefIndex: 9725
+public struct BeginSessionOptions // TypeDefIndex: 9727
 {
-	[CompilerGeneratedAttribute] 
-	private uint <RegisterTimeoutSeconds>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ServerName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <EnableGameplayData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <RegisterTimeoutSeconds>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ServerName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <EnableGameplayData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
 
 	public uint RegisterTimeoutSeconds { get; set; }
 	public Utf8String ServerName { get; set; }
@@ -15,53 +15,53 @@ public struct BeginSessionOptions // TypeDefIndex: 9725
 	public ProductUserId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_RegisterTimeoutSeconds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RegisterTimeoutSeconds(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ServerName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ServerName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_EnableGameplayData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EnableGameplayData(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
 }
 
-public struct BeginSessionOptions // TypeDefIndex: 9822
+public struct BeginSessionOptions // TypeDefIndex: 9824
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatClientMode <Mode>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatClientMode <Mode>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public AntiCheatClientMode Mode { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatClientMode get_Mode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Mode(AntiCheatClientMode value) { }
 
 }

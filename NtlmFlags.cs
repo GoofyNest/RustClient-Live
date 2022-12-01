@@ -1,6 +1,6 @@
 public enum NtlmFlags // TypeDefIndex: 1729
 {
-	public int value__; 
+	public int value__;
 	public const NtlmFlags NegotiateUnicode = 1;
 	public const NtlmFlags NegotiateOem = 2;
 	public const NtlmFlags RequestTarget = 4;

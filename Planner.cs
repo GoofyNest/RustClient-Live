@@ -1,10 +1,10 @@
-public class Planner : HeldEntity // TypeDefIndex: 10335
+public class Planner : HeldEntity // TypeDefIndex: 10338
 {
-	private Vector3 rotationOffset; 
-	private bool hasAppliedStartingRotation; 
-	public Construction currentConstruction; 
-	internal Planner.Guide guide; 
-	public BaseEntity[] buildableList; 
+	private Vector3 rotationOffset;
+	private bool hasAppliedStartingRotation;
+	public Construction currentConstruction;
+	internal Planner.Guide guide;
+	public BaseEntity[] buildableList;
 
 	public bool isTypeDeployable { get; }
 
@@ -51,16 +51,16 @@ public class Planner : HeldEntity // TypeDefIndex: 10335
 
 }
 
-public class Planner.Guide // TypeDefIndex: 10336
+public class Planner.Guide // TypeDefIndex: 10339
 {
-	public GameObject guideObject; 
-	public Construction.Target lastPlacement; 
-	private Construction component; 
-	private Material goodMat; 
-	private Material neutralMat; 
-	private Material badMat; 
-	private bool wasTransparent; 
-	private Planner.Guide.PlacementState lastPlacementState; 
+	public GameObject guideObject;
+	public Construction.Target lastPlacement;
+	private Construction component;
+	private Material goodMat;
+	private Material neutralMat;
+	private Material badMat;
+	private bool wasTransparent;
+	private Planner.Guide.PlacementState lastPlacementState;
 
 
 	public bool IsValid() { }
@@ -93,24 +93,38 @@ public class Planner.Guide // TypeDefIndex: 10336
 
 }
 
-private enum Planner.Guide.PlacementState // TypeDefIndex: 10337
+private enum Planner.Guide.PlacementState // TypeDefIndex: 10340
 {
-	public int value__; 
+	public int value__;
 	public const Planner.Guide.PlacementState Invalid = 0;
 	public const Planner.Guide.PlacementState Neutral = 1;
 	public const Planner.Guide.PlacementState Valid = 2;
 
 }
 
-private sealed class Planner.<>c__DisplayClass9_0 // TypeDefIndex: 10338
+private sealed class Planner.<>c__DisplayClass9_0 // TypeDefIndex: 10341
 {
-	public Construction construction; 
-	public Planner <>4__this; 
+	public Construction construction;
+	public Planner <>4__this;
 
 
 	public void .ctor() { }
 
 	internal void <OpenComponentMenu>
+
+}
+
+private sealed class Planner.<>c // TypeDefIndex: 10342
+{
+	public static readonly Planner.<>c <>9;
+	public static Func<EntityLink, bool> <>9__20_0;
+
+
+	private static void .cctor() { }
+
+	public void .ctor() { }
+
+	internal bool <FindAppropriateHandle>
 
 }
 

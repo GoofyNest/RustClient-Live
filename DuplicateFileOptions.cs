@@ -1,33 +1,33 @@
-public struct DuplicateFileOptions // TypeDefIndex: 8882
+public struct DuplicateFileOptions // TypeDefIndex: 8884
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SourceFilename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DestinationFilename>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <SourceFilename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DestinationFilename>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String SourceFilename { get; set; }
 	public Utf8String DestinationFilename { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SourceFilename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SourceFilename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DestinationFilename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DestinationFilename(Utf8String value) { }
 
 }

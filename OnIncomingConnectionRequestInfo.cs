@@ -1,13 +1,13 @@
-public struct OnIncomingConnectionRequestInfo : ICallbackInfo // TypeDefIndex: 8968
+public struct OnIncomingConnectionRequestInfo : ICallbackInfo // TypeDefIndex: 8970
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <RemoteUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SocketId> <SocketId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <RemoteUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SocketId> <SocketId>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -15,28 +15,28 @@ public struct OnIncomingConnectionRequestInfo : ICallbackInfo // TypeDefIndex: 8
 	public Nullable<SocketId> SocketId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_RemoteUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RemoteUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SocketId> get_SocketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketId(Nullable<SocketId> value) { }
 
 	public Nullable<Result> GetResultCode() { }

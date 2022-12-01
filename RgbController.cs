@@ -1,21 +1,21 @@
-public class RgbController : IDisposable // TypeDefIndex: 7701
+public class RgbController : IDisposable // TypeDefIndex: 7703
 {
-	private readonly IReadOnlyList<IRgbService> _services; 
-	private readonly CancellationTokenSource _cts; 
-	private readonly ManualResetEventSlim _shutdown; 
-	[CompilerGeneratedAttribute] 
-	private readonly IRgbService <SteelSeries>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly IRgbService <Razer>k__BackingField; 
+	private readonly IReadOnlyList<IRgbService> _services;
+	private readonly CancellationTokenSource _cts;
+	private readonly ManualResetEventSlim _shutdown;
+	[CompilerGeneratedAttribute]
+	private readonly IRgbService <SteelSeries>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly IRgbService <Razer>k__BackingField;
 
 	public IRgbService SteelSeries { get; }
 	public IRgbService Razer { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IRgbService get_SteelSeries() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IRgbService get_Razer() { }
 
 	public void .ctor() { }
@@ -28,16 +28,16 @@ public class RgbController : IDisposable // TypeDefIndex: 7701
 
 	public void Event(RgbEventType type) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private void Worker() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private ValueTask StartServices() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private ValueTask StopServices() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private ValueTask UpdateServices() { }
 
 	public static void LogError(string message) { }
@@ -46,69 +46,69 @@ public class RgbController : IDisposable // TypeDefIndex: 7701
 
 }
 
-private struct RgbController.<Worker>d__14 : IAsyncStateMachine // TypeDefIndex: 7702
+private struct RgbController.<Worker>d__14 : IAsyncStateMachine // TypeDefIndex: 7704
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public RgbController <>4__this; 
-	private CancellationToken <ct>5__2; 
-	private ValueTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public RgbController <>4__this;
+	private CancellationToken <ct>5__2;
+	private ValueTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct RgbController.<StartServices>d__15 : IAsyncStateMachine // TypeDefIndex: 7703
+private struct RgbController.<StartServices>d__15 : IAsyncStateMachine // TypeDefIndex: 7705
 {
-	public int <>1__state; 
-	public AsyncValueTaskMethodBuilder <>t__builder; 
-	public RgbController <>4__this; 
-	private IEnumerator<IRgbService> <>7__wrap1; 
-	private IRgbService <service>5__3; 
-	private ValueTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncValueTaskMethodBuilder <>t__builder;
+	public RgbController <>4__this;
+	private IEnumerator<IRgbService> <>7__wrap1;
+	private IRgbService <service>5__3;
+	private ValueTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct RgbController.<StopServices>d__16 : IAsyncStateMachine // TypeDefIndex: 7704
+private struct RgbController.<StopServices>d__16 : IAsyncStateMachine // TypeDefIndex: 7706
 {
-	public int <>1__state; 
-	public AsyncValueTaskMethodBuilder <>t__builder; 
-	public RgbController <>4__this; 
-	private IEnumerator<IRgbService> <>7__wrap1; 
-	private IRgbService <service>5__3; 
-	private ValueTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncValueTaskMethodBuilder <>t__builder;
+	public RgbController <>4__this;
+	private IEnumerator<IRgbService> <>7__wrap1;
+	private IRgbService <service>5__3;
+	private ValueTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct RgbController.<UpdateServices>d__17 : IAsyncStateMachine // TypeDefIndex: 7705
+private struct RgbController.<UpdateServices>d__17 : IAsyncStateMachine // TypeDefIndex: 7707
 {
-	public int <>1__state; 
-	public AsyncValueTaskMethodBuilder <>t__builder; 
-	public RgbController <>4__this; 
-	private IEnumerator<IRgbService> <>7__wrap1; 
-	private IRgbService <service>5__3; 
-	private ValueTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncValueTaskMethodBuilder <>t__builder;
+	public RgbController <>4__this;
+	private IEnumerator<IRgbService> <>7__wrap1;
+	private IRgbService <service>5__3;
+	private ValueTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

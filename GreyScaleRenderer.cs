@@ -1,8 +1,8 @@
-public class GreyScaleRenderer : PostProcessEffectRenderer<GreyScale> // TypeDefIndex: 12009
+public class GreyScaleRenderer : PostProcessEffectRenderer<GreyScale> // TypeDefIndex: 12016
 {
-	private int dataProperty; 
-	private int colorProperty; 
-	private Shader greyScaleShader; 
+	private int dataProperty;
+	private int colorProperty;
+	private Shader greyScaleShader;
 
 
 	public override void Init() { }

@@ -1,13 +1,13 @@
-public class MovementSoundTrigger : TriggerBase, IClientComponentEx, ILOD // TypeDefIndex: 10725
+public class MovementSoundTrigger : TriggerBase, IClientComponentEx, ILOD // TypeDefIndex: 10729
 {
-	public SoundDefinition softSound; 
-	public SoundDefinition medSound; 
-	public SoundDefinition hardSound; 
-	public Collider collider; 
+	public SoundDefinition softSound;
+	public SoundDefinition medSound;
+	public SoundDefinition hardSound;
+	public Collider collider;
 	private const float maxDistance = 100;
 	private const float tickRate = 2;
-	private LODCell cell; 
-	private Dictionary<GameObject, Vector3> lastPositionByObject; 
+	private LODCell cell;
+	private Dictionary<GameObject, Vector3> lastPositionByObject;
 
 
 	internal override GameObject InterestedInObject(GameObject obj) { }

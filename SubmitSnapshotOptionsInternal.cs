@@ -1,7 +1,7 @@
-internal struct SubmitSnapshotOptionsInternal : ISettable<SubmitSnapshotOptions>, IDisposable // TypeDefIndex: 8816
+internal struct SubmitSnapshotOptionsInternal : ISettable<SubmitSnapshotOptions>, IDisposable // TypeDefIndex: 8818
 {
-	private int m_ApiVersion; 
-	private uint m_SnapshotId; 
+	private int m_ApiVersion;
+	private uint m_SnapshotId;
 
 	public uint SnapshotId { set; }
 

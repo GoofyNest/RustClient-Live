@@ -1,10 +1,10 @@
-public static class MathEx // TypeDefIndex: 6617
+public static class MathEx // TypeDefIndex: 6619
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float SnapTo(float val, float snapValue) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool QuadTest(Ray ray, Vector3 planeCenter, Quaternion planeRot, Vector2 planeSize, out Vector3 hitPosition, float gridSize = 0) { }
 
 	public static float BiasedLerp(float x, float bias) { }

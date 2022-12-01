@@ -1,8 +1,8 @@
-public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6333
+public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6335
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong triggeredID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong triggeredID;
 
 
 	public static void ResetToPool(Landmine instance) { }
@@ -59,11 +59,11 @@ public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6333
 
 }
 
-public class BearTrap : BaseTrap // TypeDefIndex: 10081
+public class BearTrap : BaseTrap // TypeDefIndex: 10083
 {
-	private Option __menuOption_Arm_Beartrap; 
-	protected Animator animator; 
-	private bool initialized; 
+	private Option __menuOption_Arm_Beartrap;
+	protected Animator animator;
+	private bool initialized;
 
 	public override bool HasMenuOptions { get; }
 
@@ -80,10 +80,10 @@ public class BearTrap : BaseTrap // TypeDefIndex: 10081
 
 	public override bool CanPickup(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Arm_Beartrap(BasePlayer player) { }
 
 	public bool Menu_Arm_ShowIf(BasePlayer player) { }
@@ -96,16 +96,16 @@ public class BearTrap : BaseTrap // TypeDefIndex: 10081
 
 }
 
-public class Landmine : BaseTrap // TypeDefIndex: 10120
+public class Landmine : BaseTrap // TypeDefIndex: 10122
 {
-	private Option __menuOption_Arm_Landmine; 
-	public GameObjectRef explosionEffect; 
-	public GameObjectRef triggeredEffect; 
-	public float minExplosionRadius; 
-	public float explosionRadius; 
-	public bool blocked; 
-	private ulong triggerPlayerID; 
-	public List<DamageTypeEntry> damageTypes; 
+	private Option __menuOption_Arm_Landmine;
+	public GameObjectRef explosionEffect;
+	public GameObjectRef triggeredEffect;
+	public float minExplosionRadius;
+	public float explosionRadius;
+	public bool blocked;
+	private ulong triggerPlayerID;
+	public List<DamageTypeEntry> damageTypes;
 
 	public override bool HasMenuOptions { get; }
 
@@ -122,10 +122,10 @@ public class Landmine : BaseTrap // TypeDefIndex: 10120
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Arm_Landmine(BasePlayer player) { }
 
 	public bool Menu_Disarm_ShowIf(BasePlayer player) { }
@@ -134,18 +134,18 @@ public class Landmine : BaseTrap // TypeDefIndex: 10120
 
 }
 
-public class GunTrap : StorageContainer // TypeDefIndex: 10292
+public class GunTrap : StorageContainer // TypeDefIndex: 10295
 {
-	public GameObjectRef gun_fire_effect; 
-	public GameObjectRef bulletEffect; 
-	public GameObjectRef triggeredEffect; 
-	public Transform muzzlePos; 
-	public Transform eyeTransform; 
-	public int numPellets; 
-	public int aimCone; 
-	public float sensorRadius; 
-	public ItemDefinition ammoType; 
-	public TargetTrigger trigger; 
+	public GameObjectRef gun_fire_effect;
+	public GameObjectRef bulletEffect;
+	public GameObjectRef triggeredEffect;
+	public Transform muzzlePos;
+	public Transform eyeTransform;
+	public int numPellets;
+	public int aimCone;
+	public float sensorRadius;
+	public ItemDefinition ammoType;
+	public TargetTrigger trigger;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -156,20 +156,20 @@ public class GunTrap : StorageContainer // TypeDefIndex: 10292
 
 	public Vector3 GetEyePosition() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
 
 	public void .ctor() { }
 
 }
 
-public static class GunTrap.GunTrapFlags // TypeDefIndex: 10293
+public static class GunTrap.GunTrapFlags // TypeDefIndex: 10296
 {
 	public const BaseEntity.Flags Triggered = 128;
 
 }
 
-public class BaseTrap : DecayEntity // TypeDefIndex: 11420
+public class BaseTrap : DecayEntity // TypeDefIndex: 11426
 {
 
 	public override bool DisplayHealthInfo(BasePlayer player) { }
@@ -178,23 +178,23 @@ public class BaseTrap : DecayEntity // TypeDefIndex: 11420
 
 }
 
-public class BaseTrapTrigger : TriggerBase // TypeDefIndex: 11421
+public class BaseTrapTrigger : TriggerBase // TypeDefIndex: 11427
 {
-	public BaseTrap _trap; 
+	public BaseTrap _trap;
 
 
 	public void .ctor() { }
 
 }
 
-public class BearTrapTrigger : BaseTrapTrigger // TypeDefIndex: 11422
+public class BearTrapTrigger : BaseTrapTrigger // TypeDefIndex: 11428
 {
 
 	public void .ctor() { }
 
 }
 
-public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 11423
+public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 11429
 {
 
 	public override void TrappedEffect() { }
@@ -203,43 +203,43 @@ public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 11423
 
 }
 
-public class TrappableWildlife : ScriptableObject // TypeDefIndex: 11424
+public class TrappableWildlife : ScriptableObject // TypeDefIndex: 11430
 {
-	public GameObjectRef worldObject; 
-	public ItemDefinition inventoryObject; 
-	public int minToCatch; 
-	public int maxToCatch; 
-	public List<TrappableWildlife.BaitType> baitTypes; 
-	public int caloriesForInterest; 
-	public float successRate; 
-	public float xpScale; 
+	public GameObjectRef worldObject;
+	public ItemDefinition inventoryObject;
+	public int minToCatch;
+	public int maxToCatch;
+	public List<TrappableWildlife.BaitType> baitTypes;
+	public int caloriesForInterest;
+	public float successRate;
+	public float xpScale;
 
 
 	public void .ctor() { }
 
 }
 
-public class TrappableWildlife.BaitType // TypeDefIndex: 11425
+public class TrappableWildlife.BaitType // TypeDefIndex: 11431
 {
-	public float successRate; 
-	public ItemDefinition bait; 
-	public int minForInterest; 
-	public int maxToConsume; 
+	public float successRate;
+	public ItemDefinition bait;
+	public int minForInterest;
+	public int maxToConsume;
 
 
 	public void .ctor() { }
 
 }
 
-public class WildlifeTrap : StorageContainer // TypeDefIndex: 11426
+public class WildlifeTrap : StorageContainer // TypeDefIndex: 11432
 {
-	public float tickRate; 
-	public GameObjectRef trappedEffect; 
-	public float trappedEffectRepeatRate; 
-	public float trapSuccessRate; 
-	public List<ItemDefinition> ignoreBait; 
-	public List<WildlifeTrap.WildlifeWeight> targetWildlife; 
-	protected float nextEffectTime; 
+	public float tickRate;
+	public GameObjectRef trappedEffect;
+	public float trappedEffectRepeatRate;
+	public float trapSuccessRate;
+	public List<ItemDefinition> ignoreBait;
+	public List<WildlifeTrap.WildlifeWeight> targetWildlife;
+	protected float nextEffectTime;
 
 
 	public bool HasCatch() { }
@@ -256,36 +256,36 @@ public class WildlifeTrap : StorageContainer // TypeDefIndex: 11426
 
 }
 
-public static class WildlifeTrap.WildlifeTrapFlags // TypeDefIndex: 11427
+public static class WildlifeTrap.WildlifeTrapFlags // TypeDefIndex: 11433
 {
 	public const BaseEntity.Flags Occupied = 128;
 
 }
 
-public class WildlifeTrap.WildlifeWeight // TypeDefIndex: 11428
+public class WildlifeTrap.WildlifeWeight // TypeDefIndex: 11434
 {
-	public TrappableWildlife wildlife; 
-	public int weight; 
+	public TrappableWildlife wildlife;
+	public int weight;
 
 
 	public void .ctor() { }
 
 }
 
-public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 11556
+public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 11563
 {
-	internal static bool bootstrapInitRun; 
-	public static bool isErrored; 
-	public string messageString; 
-	public CanvasGroup BootstrapUiCanvas; 
-	public GameObject errorPanel; 
-	public TextMeshProUGUI errorText; 
-	public TextMeshProUGUI statusText; 
-	private TimeSince timeSinceVisible; 
-	private static GameObject _engineUi; 
-	private static GameObject _gameUi; 
-	private static GameObject _menuUi; 
-	private static string lastWrittenValue; 
+	internal static bool bootstrapInitRun;
+	public static bool isErrored;
+	public string messageString;
+	public CanvasGroup BootstrapUiCanvas;
+	public GameObject errorPanel;
+	public TextMeshProUGUI errorText;
+	public TextMeshProUGUI statusText;
+	private TimeSince timeSinceVisible;
+	private static GameObject _engineUi;
+	private static GameObject _gameUi;
+	private static GameObject _menuUi;
+	private static string lastWrittenValue;
 
 	public static bool needsSetup { get; }
 	public static bool isPresent { get; }
@@ -307,7 +307,7 @@ public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 11556
 
 	public static void NetworkInitSteamworks(bool enableSteamDatagramRelay) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator Start() { }
 
 	public static GameObject LoadEngineUI() { }
@@ -322,7 +322,7 @@ public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 11556
 
 	public static void SetUIVisible(bool visible) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator ClientStartup() { }
 
 	protected void Update() { }
@@ -333,7 +333,7 @@ public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 11556
 
 	public void ExitGame() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerator LoadingUpdate(string str) { }
 
 	public static void WriteToLog(string str) { }
@@ -344,13 +344,13 @@ public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 11556
 
 }
 
-private sealed class Bootstrap.<>c // TypeDefIndex: 11557
+private sealed class Bootstrap.<>c // TypeDefIndex: 11564
 {
-	public static readonly Bootstrap.<>c <>9; 
-	public static Func<string, GameObject> <>9__13_0; 
-	public static Action <>9__13_1; 
-	public static Func<bool> <>9__13_2; 
-	public static Func<int> <>9__14_0; 
+	public static readonly Bootstrap.<>c <>9;
+	public static Func<string, GameObject> <>9__13_0;
+	public static Action <>9__13_1;
+	public static Func<bool> <>9__13_2;
+	public static Func<int> <>9__14_0;
 
 
 	private static void .cctor() { }
@@ -367,23 +367,23 @@ private sealed class Bootstrap.<>c // TypeDefIndex: 11557
 
 }
 
-private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11558
+private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11565
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Bootstrap <>4__this; 
-	private BenchmarkTimer <timer>5__2; 
-	private AssetBundleBackend <newBackend>5__3; 
-	private BenchmarkTimer <>7__wrap3; 
+	private int <>1__state;
+	private object <>2__current;
+	public Bootstrap <>4__this;
+	private BenchmarkTimer <timer>5__2;
+	private AssetBundleBackend <newBackend>5__3;
+	private BenchmarkTimer <>7__wrap3;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
@@ -394,33 +394,33 @@ private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, 
 
 	private void <>m__Finally3() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11559
+private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11566
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Bootstrap <>4__this; 
-	private BenchmarkTimer <>7__wrap1; 
-	private AsyncOperation <op>5__3; 
+	private int <>1__state;
+	private object <>2__current;
+	public Bootstrap <>4__this;
+	private BenchmarkTimer <>7__wrap1;
+	private AsyncOperation <op>5__3;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
@@ -431,42 +431,42 @@ private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnum
 
 	private void <>m__Finally3() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class Bootstrap.<LoadingUpdate>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11560
+private sealed class Bootstrap.<LoadingUpdate>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11567
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string str; 
+	private int <>1__state;
+	private object <>2__current;
+	public string str;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

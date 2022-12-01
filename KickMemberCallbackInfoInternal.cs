@@ -1,8 +1,8 @@
-internal struct KickMemberCallbackInfoInternal : ICallbackInfoInternal, IGettable<KickMemberCallbackInfo>, ISettable<KickMemberCallbackInfo>, IDisposable // TypeDefIndex: 9122
+internal struct KickMemberCallbackInfoInternal : ICallbackInfoInternal, IGettable<KickMemberCallbackInfo>, ISettable<KickMemberCallbackInfo>, IDisposable // TypeDefIndex: 9124
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LobbyId; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LobbyId;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

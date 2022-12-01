@@ -1,55 +1,55 @@
 public class WebClient : Component // TypeDefIndex: 2953
 {
-	private Uri m_baseAddress; 
-	private ICredentials m_credentials; 
-	private WebHeaderCollection m_headers; 
-	private NameValueCollection m_requestParameters; 
-	private WebResponse m_WebResponse; 
-	private WebRequest m_WebRequest; 
-	private Encoding m_Encoding; 
-	private string m_Method; 
-	private long m_ContentLength; 
-	private bool m_InitWebClientAsync; 
-	private bool m_Cancelled; 
-	private WebClient.ProgressData m_Progress; 
-	private IWebProxy m_Proxy; 
-	private bool m_ProxySet; 
-	private RequestCachePolicy m_CachePolicy; 
-	private int m_CallNesting; 
-	private AsyncOperation m_AsyncOp; 
-	[CompilerGeneratedAttribute] 
-	private OpenReadCompletedEventHandler OpenReadCompleted; 
-	private SendOrPostCallback openReadOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private OpenWriteCompletedEventHandler OpenWriteCompleted; 
-	private SendOrPostCallback openWriteOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private DownloadStringCompletedEventHandler DownloadStringCompleted; 
-	private SendOrPostCallback downloadStringOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private DownloadDataCompletedEventHandler DownloadDataCompleted; 
-	private SendOrPostCallback downloadDataOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private AsyncCompletedEventHandler DownloadFileCompleted; 
-	private SendOrPostCallback downloadFileOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private UploadStringCompletedEventHandler UploadStringCompleted; 
-	private SendOrPostCallback uploadStringOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private UploadDataCompletedEventHandler UploadDataCompleted; 
-	private SendOrPostCallback uploadDataOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private UploadFileCompletedEventHandler UploadFileCompleted; 
-	private SendOrPostCallback uploadFileOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private UploadValuesCompletedEventHandler UploadValuesCompleted; 
-	private SendOrPostCallback uploadValuesOperationCompleted; 
-	[CompilerGeneratedAttribute] 
-	private DownloadProgressChangedEventHandler DownloadProgressChanged; 
-	[CompilerGeneratedAttribute] 
-	private UploadProgressChangedEventHandler UploadProgressChanged; 
-	private SendOrPostCallback reportDownloadProgressChanged; 
-	private SendOrPostCallback reportUploadProgressChanged; 
+	private Uri m_baseAddress;
+	private ICredentials m_credentials;
+	private WebHeaderCollection m_headers;
+	private NameValueCollection m_requestParameters;
+	private WebResponse m_WebResponse;
+	private WebRequest m_WebRequest;
+	private Encoding m_Encoding;
+	private string m_Method;
+	private long m_ContentLength;
+	private bool m_InitWebClientAsync;
+	private bool m_Cancelled;
+	private WebClient.ProgressData m_Progress;
+	private IWebProxy m_Proxy;
+	private bool m_ProxySet;
+	private RequestCachePolicy m_CachePolicy;
+	private int m_CallNesting;
+	private AsyncOperation m_AsyncOp;
+	[CompilerGeneratedAttribute]
+	private OpenReadCompletedEventHandler OpenReadCompleted;
+	private SendOrPostCallback openReadOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private OpenWriteCompletedEventHandler OpenWriteCompleted;
+	private SendOrPostCallback openWriteOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private DownloadStringCompletedEventHandler DownloadStringCompleted;
+	private SendOrPostCallback downloadStringOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private DownloadDataCompletedEventHandler DownloadDataCompleted;
+	private SendOrPostCallback downloadDataOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private AsyncCompletedEventHandler DownloadFileCompleted;
+	private SendOrPostCallback downloadFileOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private UploadStringCompletedEventHandler UploadStringCompleted;
+	private SendOrPostCallback uploadStringOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private UploadDataCompletedEventHandler UploadDataCompleted;
+	private SendOrPostCallback uploadDataOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private UploadFileCompletedEventHandler UploadFileCompleted;
+	private SendOrPostCallback uploadFileOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private UploadValuesCompletedEventHandler UploadValuesCompleted;
+	private SendOrPostCallback uploadValuesOperationCompleted;
+	[CompilerGeneratedAttribute]
+	private DownloadProgressChangedEventHandler DownloadProgressChanged;
+	[CompilerGeneratedAttribute]
+	private UploadProgressChangedEventHandler UploadProgressChanged;
+	private SendOrPostCallback reportDownloadProgressChanged;
+	private SendOrPostCallback reportUploadProgressChanged;
 
 	public Encoding Encoding { get; set; }
 	public ICredentials Credentials { get; }
@@ -135,10 +135,10 @@ public class WebClient : Component // TypeDefIndex: 2953
 
 	private void OpenWriteOperationCompleted(object arg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_DownloadStringCompleted(DownloadStringCompletedEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_DownloadStringCompleted(DownloadStringCompletedEventHandler value) { }
 
 	protected virtual void OnDownloadStringCompleted(DownloadStringCompletedEventArgs e) { }
@@ -173,10 +173,10 @@ public class WebClient : Component // TypeDefIndex: 2953
 
 	private void UploadFileOperationCompleted(object arg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_UploadValuesCompleted(UploadValuesCompletedEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_UploadValuesCompleted(UploadValuesCompletedEventHandler value) { }
 
 	protected virtual void OnUploadValuesCompleted(UploadValuesCompletedEventArgs e) { }
@@ -205,11 +205,11 @@ public class WebClient : Component // TypeDefIndex: 2953
 
 private class WebClient.ProgressData // TypeDefIndex: 2954
 {
-	internal long BytesSent; 
-	internal long TotalBytesToSend; 
-	internal long BytesReceived; 
-	internal long TotalBytesToReceive; 
-	internal bool HasUploadPhase; 
+	internal long BytesSent;
+	internal long TotalBytesToSend;
+	internal long BytesReceived;
+	internal long TotalBytesToReceive;
+	internal bool HasUploadPhase;
 
 
 	internal void Reset() { }
@@ -220,17 +220,17 @@ private class WebClient.ProgressData // TypeDefIndex: 2954
 
 private class WebClient.DownloadBitsState // TypeDefIndex: 2955
 {
-	internal WebClient WebClient; 
-	internal Stream WriteStream; 
-	internal byte[] InnerBuffer; 
-	internal AsyncOperation AsyncOp; 
-	internal WebRequest Request; 
-	internal CompletionDelegate CompletionDelegate; 
-	internal Stream ReadStream; 
-	internal ScatterGatherBuffers SgBuffers; 
-	internal long ContentLength; 
-	internal long Length; 
-	internal WebClient.ProgressData Progress; 
+	internal WebClient WebClient;
+	internal Stream WriteStream;
+	internal byte[] InnerBuffer;
+	internal AsyncOperation AsyncOp;
+	internal WebRequest Request;
+	internal CompletionDelegate CompletionDelegate;
+	internal Stream ReadStream;
+	internal ScatterGatherBuffers SgBuffers;
+	internal long ContentLength;
+	internal long Length;
+	internal WebClient.ProgressData Progress;
 
 	internal bool Async { get; }
 
@@ -249,19 +249,19 @@ private class WebClient.DownloadBitsState // TypeDefIndex: 2955
 
 private class WebClient.UploadBitsState // TypeDefIndex: 2956
 {
-	private int m_ChunkSize; 
-	private int m_BufferWritePosition; 
-	internal WebClient WebClient; 
-	internal Stream WriteStream; 
-	internal byte[] InnerBuffer; 
-	internal byte[] Header; 
-	internal byte[] Footer; 
-	internal AsyncOperation AsyncOp; 
-	internal WebRequest Request; 
-	internal CompletionDelegate UploadCompletionDelegate; 
-	internal CompletionDelegate DownloadCompletionDelegate; 
-	internal Stream ReadStream; 
-	internal WebClient.ProgressData Progress; 
+	private int m_ChunkSize;
+	private int m_BufferWritePosition;
+	internal WebClient WebClient;
+	internal Stream WriteStream;
+	internal byte[] InnerBuffer;
+	internal byte[] Header;
+	internal byte[] Footer;
+	internal AsyncOperation AsyncOp;
+	internal WebRequest Request;
+	internal CompletionDelegate UploadCompletionDelegate;
+	internal CompletionDelegate DownloadCompletionDelegate;
+	internal Stream ReadStream;
+	internal WebClient.ProgressData Progress;
 
 	internal bool FileUpload { get; }
 	internal bool Async { get; }

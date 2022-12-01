@@ -1,7 +1,7 @@
 internal static class Helpers // TypeDefIndex: 5260
 {
-	private static byte[][] BufferPool; 
-	private static int BufferPoolIndex; 
+	private static byte[][] BufferPool;
+	private static int BufferPoolIndex;
 
 
 	public static Helpers.Memory TakeMemory() { }
@@ -16,18 +16,18 @@ internal static class Helpers // TypeDefIndex: 5260
 
 internal struct Helpers.Memory : IDisposable // TypeDefIndex: 5261
 {
-	private static readonly Queue<IntPtr> BufferBag; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <Ptr>k__BackingField; 
+	private static readonly Queue<IntPtr> BufferBag;
+	[CompilerGeneratedAttribute]
+	private IntPtr <Ptr>k__BackingField;
 
 	public IntPtr Ptr { get; set; }
 
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public IntPtr get_Ptr() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Ptr(IntPtr value) { }
 
 	public static IntPtr op_Implicit(in Helpers.Memory m) { }

@@ -1,6 +1,6 @@
 internal class ManifestBasedResourceGroveler : IResourceGroveler // TypeDefIndex: 485
 {
-	private ResourceManager.ResourceManagerMediator _mediator; 
+	private ResourceManager.ResourceManagerMediator _mediator;
 
 
 	public void .ctor(ResourceManager.ResourceManagerMediator mediator) { }
@@ -33,9 +33,9 @@ internal class ManifestBasedResourceGroveler : IResourceGroveler // TypeDefIndex
 
 public class ManifestResourceInfo // TypeDefIndex: 531
 {
-	private Assembly _containingAssembly; 
-	private string _containingFileName; 
-	private ResourceLocation _resourceLocation; 
+	private Assembly _containingAssembly;
+	private string _containingFileName;
+	private ResourceLocation _resourceLocation;
 
 	public virtual Assembly ReferencedAssembly { get; }
 	public virtual string FileName { get; }
@@ -54,21 +54,21 @@ public class ManifestResourceInfo // TypeDefIndex: 531
 
 internal class ManifestBuilder // TypeDefIndex: 1624
 {
-	private Dictionary<int, string> opcodeTab; 
-	private Dictionary<int, string> taskTab; 
-	private Dictionary<ulong, string> keywordTab; 
-	private Dictionary<string, Type> mapsTab; 
-	private Dictionary<string, string> stringTab; 
-	private StringBuilder sb; 
-	private StringBuilder events; 
-	private StringBuilder templates; 
-	private ResourceManager resources; 
-	private EventManifestOptions flags; 
-	private IList<string> errors; 
-	private Dictionary<string, List<int>> perEventByteArrayArgIndices; 
-	private string eventName; 
-	private int numParams; 
-	private List<int> byteArrArgIndices; 
+	private Dictionary<int, string> opcodeTab;
+	private Dictionary<int, string> taskTab;
+	private Dictionary<ulong, string> keywordTab;
+	private Dictionary<string, Type> mapsTab;
+	private Dictionary<string, string> stringTab;
+	private StringBuilder sb;
+	private StringBuilder events;
+	private StringBuilder templates;
+	private ResourceManager resources;
+	private EventManifestOptions flags;
+	private IList<string> errors;
+	private Dictionary<string, List<int>> perEventByteArrayArgIndices;
+	private string eventName;
+	private int numParams;
+	private List<int> byteArrArgIndices;
 
 	public IList<string> Errors { get; }
 
@@ -123,9 +123,9 @@ internal class ManifestBuilder // TypeDefIndex: 1624
 
 private sealed class ManifestBuilder.<>c__DisplayClass22_0 // TypeDefIndex: 1625
 {
-	public StringBuilder stringBuilder; 
-	public string eventMessage; 
-	public int writtenSoFar; 
+	public StringBuilder stringBuilder;
+	public string eventMessage;
+	public int writtenSoFar;
 
 
 	public void .ctor() { }
@@ -134,7 +134,7 @@ private sealed class ManifestBuilder.<>c__DisplayClass22_0 // TypeDefIndex: 1625
 
 private sealed class ManifestBuilder.<>c__DisplayClass22_1 // TypeDefIndex: 1626
 {
-	public int i; 
+	public int i;
 	public ManifestBuilder.<>c
 
 
@@ -146,48 +146,48 @@ private sealed class ManifestBuilder.<>c__DisplayClass22_1 // TypeDefIndex: 1626
 
 internal struct ManifestEnvelope // TypeDefIndex: 1627
 {
-	public ManifestEnvelope.ManifestFormats Format; 
-	public byte MajorVersion; 
-	public byte MinorVersion; 
-	public byte Magic; 
-	public ushort TotalChunks; 
-	public ushort ChunkNumber; 
+	public ManifestEnvelope.ManifestFormats Format;
+	public byte MajorVersion;
+	public byte MinorVersion;
+	public byte Magic;
+	public ushort TotalChunks;
+	public ushort ChunkNumber;
 
 }
 
 public enum ManifestEnvelope.ManifestFormats // TypeDefIndex: 1628
 {
-	public byte value__; 
+	public byte value__;
 	public const ManifestEnvelope.ManifestFormats SimpleXmlFormat = 1;
 
 }
 
-public static class Manifest // TypeDefIndex: 6206
+public static class Manifest // TypeDefIndex: 6208
 {
-	[CompilerGeneratedAttribute] 
-	private static DateTime <LastDownloaded>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <Contents>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private static DateTime <LastDownloaded>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <Contents>k__BackingField;
 
 	public static DateTime LastDownloaded { get; set; }
 	public static string Contents { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static DateTime get_LastDownloaded() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_LastDownloaded(DateTime value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_Contents() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_Contents(string value) { }
 
 	internal static void Download() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerator UpdateManifest() { }
 
 	private static void LoadManifest(string text) { }
@@ -196,10 +196,10 @@ public static class Manifest // TypeDefIndex: 6206
 
 }
 
-private sealed class Manifest.<>c // TypeDefIndex: 6207
+private sealed class Manifest.<>c // TypeDefIndex: 6209
 {
-	public static readonly Manifest.<>c <>9; 
-	public static Action<string> <>9__9_0; 
+	public static readonly Manifest.<>c <>9;
+	public static Action<string> <>9__9_0;
 
 
 	private static void .cctor() { }
@@ -210,49 +210,49 @@ private sealed class Manifest.<>c // TypeDefIndex: 6207
 
 }
 
-private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6208
+private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6210
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	private string <url>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	private string <url>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class Manifest // TypeDefIndex: 6251
+public class Manifest // TypeDefIndex: 6253
 {
-	public Manifest.NewsInfo News; 
-	public Manifest.ServersInfo Servers; 
-	public string ExceptionReportingUrl; 
-	public string BenchmarkUrl; 
-	public string AnalyticUrl; 
-	public string DatabaseUrl; 
-	public string LeaderboardUrl; 
-	public string ReportUrl; 
-	public string AccountUrl; 
-	public Hero[] Heroes; 
-	public Manifest.Administrator[] Administrators; 
-	public JObject Metadata; 
+	public Manifest.NewsInfo News;
+	public Manifest.ServersInfo Servers;
+	public string ExceptionReportingUrl;
+	public string BenchmarkUrl;
+	public string AnalyticUrl;
+	public string DatabaseUrl;
+	public string LeaderboardUrl;
+	public string ReportUrl;
+	public string AccountUrl;
+	public Hero[] Heroes;
+	public Manifest.Administrator[] Administrators;
+	public JObject Metadata;
 
 
 	internal static Manifest FromJson(string text) { }
@@ -261,44 +261,44 @@ public class Manifest // TypeDefIndex: 6251
 
 }
 
-public class Manifest.Administrator // TypeDefIndex: 6252
+public class Manifest.Administrator // TypeDefIndex: 6254
 {
-	public string UserId; 
-	public string Level; 
+	public string UserId;
+	public string Level;
 
 
 	public void .ctor() { }
 
 }
 
-public class Manifest.NewsInfo // TypeDefIndex: 6253
+public class Manifest.NewsInfo // TypeDefIndex: 6255
 {
-	public Manifest.NewsInfo.BlogInfo[] Blogs; 
+	public Manifest.NewsInfo.BlogInfo[] Blogs;
 
 
 	public void .ctor() { }
 
 }
 
-public class Manifest.NewsInfo.BlogInfo // TypeDefIndex: 6254
+public class Manifest.NewsInfo.BlogInfo // TypeDefIndex: 6256
 {
-	public DateTime Date; 
-	public string ShortName; 
-	public string Title; 
-	public string HeaderImage; 
-	public string SummaryHtml; 
-	public string Url; 
-	public string Tags; 
+	public DateTime Date;
+	public string ShortName;
+	public string Title;
+	public string HeaderImage;
+	public string SummaryHtml;
+	public string Url;
+	public string Tags;
 
 
 	public void .ctor() { }
 
 }
 
-public class Manifest.ServersInfo // TypeDefIndex: 6255
+public class Manifest.ServersInfo // TypeDefIndex: 6257
 {
-	public Manifest.ServerDesc[] Official; 
-	public string[] Banned; 
+	public Manifest.ServerDesc[] Official;
+	public string[] Banned;
 
 
 	public bool IsBannedServer(string ip) { }
@@ -307,25 +307,25 @@ public class Manifest.ServersInfo // TypeDefIndex: 6255
 
 }
 
-public class Manifest.ServerDesc // TypeDefIndex: 6256
+public class Manifest.ServerDesc // TypeDefIndex: 6258
 {
-	public string Address; 
-	public int Port; 
+	public string Address;
+	public int Port;
 
 
 	public void .ctor() { }
 
 }
 
-public class Manifest // TypeDefIndex: 13731
+public class Manifest // TypeDefIndex: 13747
 {
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static object PrintManifest() { }
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static object PrintManifestRaw() { }
 
 	public void .ctor() { }

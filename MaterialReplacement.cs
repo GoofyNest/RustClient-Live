@@ -1,9 +1,9 @@
-public class MaterialReplacement : MonoBehaviour // TypeDefIndex: 6594
+public class MaterialReplacement : MonoBehaviour // TypeDefIndex: 6596
 {
-	private bool initialized; 
-	public Material[] Default; 
-	public Material[] Override; 
-	public Renderer Renderer; 
+	private bool initialized;
+	public Material[] Default;
+	public Material[] Override;
+	public Renderer Renderer;
 
 
 	public static void ReplaceRecursive(GameObject go, Material mat) { }

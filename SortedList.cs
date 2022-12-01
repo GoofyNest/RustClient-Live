@@ -1,15 +1,15 @@
 public class SortedList : IDictionary, ICollection, IEnumerable, ICloneable // TypeDefIndex: 1417
 {
-	private object[] keys; 
-	private object[] values; 
-	private int _size; 
-	private int version; 
-	private IComparer comparer; 
-	private SortedList.KeyList keyList; 
-	private SortedList.ValueList valueList; 
-	private object _syncRoot; 
+	private object[] keys;
+	private object[] values;
+	private int _size;
+	private int version;
+	private IComparer comparer;
+	private SortedList.KeyList keyList;
+	private SortedList.ValueList valueList;
+	private object _syncRoot;
 	private const int _defaultCapacity = 16;
-	private static object[] emptyArray; 
+	private static object[] emptyArray;
 
 	public virtual int Capacity { get; set; }
 	public virtual int Count { get; }
@@ -94,8 +94,8 @@ public class SortedList : IDictionary, ICollection, IEnumerable, ICloneable // T
 
 private class SortedList.SyncSortedList : SortedList // TypeDefIndex: 1418
 {
-	private SortedList _list; 
-	private object _root; 
+	private SortedList _list;
+	private object _root;
 
 	public override int Count { get; }
 	public override object SyncRoot { get; }
@@ -154,15 +154,15 @@ private class SortedList.SyncSortedList : SortedList // TypeDefIndex: 1418
 
 private class SortedList.SortedListEnumerator : IDictionaryEnumerator, IEnumerator, ICloneable // TypeDefIndex: 1419
 {
-	private SortedList sortedList; 
-	private object key; 
-	private object value; 
-	private int index; 
-	private int startIndex; 
-	private int endIndex; 
-	private int version; 
-	private bool current; 
-	private int getObjectRetType; 
+	private SortedList sortedList;
+	private object key;
+	private object value;
+	private int index;
+	private int startIndex;
+	private int endIndex;
+	private int version;
+	private bool current;
+	private int getObjectRetType;
 
 	public virtual object Key { get; }
 	public virtual DictionaryEntry Entry { get; }
@@ -190,7 +190,7 @@ private class SortedList.SortedListEnumerator : IDictionaryEnumerator, IEnumerat
 
 private class SortedList.KeyList : IList, ICollection, IEnumerable // TypeDefIndex: 1420
 {
-	private SortedList sortedList; 
+	private SortedList sortedList;
 
 	public virtual int Count { get; }
 	public virtual bool IsReadOnly { get; }
@@ -235,7 +235,7 @@ private class SortedList.KeyList : IList, ICollection, IEnumerable // TypeDefInd
 
 private class SortedList.ValueList : IList, ICollection, IEnumerable // TypeDefIndex: 1421
 {
-	private SortedList sortedList; 
+	private SortedList sortedList;
 
 	public virtual int Count { get; }
 	public virtual bool IsReadOnly { get; }
@@ -280,12 +280,12 @@ private class SortedList.ValueList : IList, ICollection, IEnumerable // TypeDefI
 
 private struct SortedList.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKey, TValue>>, IDisposable, IEnumerator, IDictionaryEnumerator // TypeDefIndex: 3138
 {
-	private SortedList<TKey, TValue> _sortedList; 
-	private TKey _key; 
-	private TValue _value; 
-	private int _index; 
-	private int _version; 
-	private int _getEnumeratorRetType; 
+	private SortedList<TKey, TValue> _sortedList;
+	private TKey _key;
+	private TValue _value;
+	private int _index;
+	private int _version;
+	private int _getEnumeratorRetType;
 
 	private object System.Collections.IDictionaryEnumerator.Key { get; }
 	private DictionaryEntry System.Collections.IDictionaryEnumerator.Entry { get; }
@@ -368,10 +368,10 @@ private struct SortedList.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TK
 
 private sealed class SortedList.SortedListKeyEnumerator<TKey, TValue> : IEnumerator<TKey>, IDisposable, IEnumerator // TypeDefIndex: 3139
 {
-	private SortedList<TKey, TValue> _sortedList; 
-	private int _index; 
-	private int _version; 
-	private TKey _currentKey; 
+	private SortedList<TKey, TValue> _sortedList;
+	private int _index;
+	private int _version;
+	private TKey _currentKey;
 
 	public TKey Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -426,10 +426,10 @@ private sealed class SortedList.SortedListKeyEnumerator<TKey, TValue> : IEnumera
 
 private sealed class SortedList.SortedListValueEnumerator<TKey, TValue> : IEnumerator<TValue>, IDisposable, IEnumerator // TypeDefIndex: 3140
 {
-	private SortedList<TKey, TValue> _sortedList; 
-	private int _index; 
-	private int _version; 
-	private TValue _currentValue; 
+	private SortedList<TKey, TValue> _sortedList;
+	private int _index;
+	private int _version;
+	private TValue _currentValue;
 
 	public TValue Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -484,7 +484,7 @@ private sealed class SortedList.SortedListValueEnumerator<TKey, TValue> : IEnume
 
 private sealed class SortedList.KeyList<TKey, TValue> : IList<TKey>, ICollection<TKey>, IEnumerable<TKey>, IEnumerable, ICollection // TypeDefIndex: 3141
 {
-	private SortedList<TKey, TValue> _dict; 
+	private SortedList<TKey, TValue> _dict;
 
 	public int Count { get; }
 	public bool IsReadOnly { get; }
@@ -624,7 +624,7 @@ private sealed class SortedList.KeyList<TKey, TValue> : IList<TKey>, ICollection
 
 private sealed class SortedList.ValueList<TKey, TValue> : IList<TValue>, ICollection<TValue>, IEnumerable<TValue>, IEnumerable, ICollection // TypeDefIndex: 3142
 {
-	private SortedList<TKey, TValue> _dict; 
+	private SortedList<TKey, TValue> _dict;
 
 	public int Count { get; }
 	public bool IsReadOnly { get; }

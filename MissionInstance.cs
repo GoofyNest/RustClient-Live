@@ -1,18 +1,18 @@
-public class MissionInstance : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6463
+public class MissionInstance : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6465
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint providerID; 
-	public uint missionID; 
-	public uint missionStatus; 
-	public float completionScale; 
-	public float startTime; 
-	public float endTime; 
-	public Vector3 missionLocation; 
-	public List<ObjectiveStatus> objectiveStatuses; 
-	public List<MissionPoint> missionPoints; 
-	public List<uint> createdEntities; 
-	public List<MissionReward> rewards; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint providerID;
+	public uint missionID;
+	public uint missionStatus;
+	public float completionScale;
+	public float startTime;
+	public float endTime;
+	public Vector3 missionLocation;
+	public List<ObjectiveStatus> objectiveStatuses;
+	public List<MissionPoint> missionPoints;
+	public List<uint> createdEntities;
+	public List<MissionReward> rewards;
 
 
 	public static void ResetToPool(MissionInstance instance) { }

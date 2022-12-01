@@ -1,9 +1,9 @@
-internal struct CreateItemResult_t : ICallbackData // TypeDefIndex: 5438
+internal struct CreateItemResult_t : ICallbackData // TypeDefIndex: 5440
 {
-	internal Result Result; 
-	internal PublishedFileId PublishedFileId; 
-	internal bool UserNeedsToAcceptWorkshopLegalAgreement; 
-	public static int _datasize; 
+	internal Result Result;
+	internal PublishedFileId PublishedFileId;
+	internal bool UserNeedsToAcceptWorkshopLegalAgreement;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

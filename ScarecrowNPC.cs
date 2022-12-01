@@ -1,15 +1,15 @@
-public class ScarecrowNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10160
+public class ScarecrowNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10162
 {
-	private Option __menuOption_MenuDesignAI; 
-	[CompilerGeneratedAttribute] 
-	private ScarecrowBrain <Brain>k__BackingField; 
-	public float BaseAttackRate; 
-	public float BaseAttackDamge; 
-	public DamageType AttackDamageType; 
-	[HeaderAttribute] 
-	public LootContainer.LootSpawnSlot[] LootSpawnSlots; 
-	public static float NextBeanCanAllowedTime; 
-	public bool RoamAroundHomePoint; 
+	private Option __menuOption_MenuDesignAI;
+	[CompilerGeneratedAttribute]
+	private ScarecrowBrain <Brain>k__BackingField;
+	public float BaseAttackRate;
+	public float BaseAttackDamge;
+	public DamageType AttackDamageType;
+	[HeaderAttribute]
+	public LootContainer.LootSpawnSlot[] LootSpawnSlots;
+	public static float NextBeanCanAllowedTime;
+	public bool RoamAroundHomePoint;
 
 	public override bool HasMenuOptions { get; }
 	public ScarecrowBrain Brain { get; set; }
@@ -25,15 +25,15 @@ public class ScarecrowNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 101
 
 	public override float MaxHealth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ScarecrowBrain get_Brain() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Brain(ScarecrowBrain value) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDesignAI(BasePlayer ply) { }
 
 	public bool CanDesignAI(BasePlayer player) { }

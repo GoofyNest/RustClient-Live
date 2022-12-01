@@ -1,17 +1,17 @@
-public class ImpostorRenderer : MonoBehaviour // TypeDefIndex: 12432
+public class ImpostorRenderer : MonoBehaviour // TypeDefIndex: 12440
 {
 	public const string MainPassName = "DEFERRED";
-	private Camera camera; 
-	private static HashSet<ImpostorShadows> Shadows; 
-	private static HashSet<Impostor> Impostors; 
-	private static Dictionary<ImpostorInstanceData, ImpostorBatch> Batches; 
-	private static MaterialPropertyBlock block; 
-	private int treeLayer; 
-	private int treeLayerMask; 
-	private int impostorLayerMask; 
-	private static ImpostorRenderer instance; 
-	private static readonly int NaNProperty; 
-	private static readonly int PositionBufferProperty; 
+	private Camera camera;
+	private static HashSet<ImpostorShadows> Shadows;
+	private static HashSet<Impostor> Impostors;
+	private static Dictionary<ImpostorInstanceData, ImpostorBatch> Batches;
+	private static MaterialPropertyBlock block;
+	private int treeLayer;
+	private int treeLayerMask;
+	private int impostorLayerMask;
+	private static ImpostorRenderer instance;
+	private static readonly int NaNProperty;
+	private static readonly int PositionBufferProperty;
 
 	private Camera Camera { get; }
 	public static bool IsSupported { get; }

@@ -1,9 +1,9 @@
 internal static class BigIntegerCalculator // TypeDefIndex: 3970
 {
-	private static int ReducerThreshold; 
-	private static int SquareThreshold; 
-	private static int AllocationThreshold; 
-	private static int MultiplyThreshold; 
+	private static int ReducerThreshold;
+	private static int SquareThreshold;
+	private static int AllocationThreshold;
+	private static int MultiplyThreshold;
 
 
 	public static uint[] Add(uint[] left, uint right) { }

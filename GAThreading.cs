@@ -1,13 +1,13 @@
-internal class GAThreading // TypeDefIndex: 5674
+internal class GAThreading // TypeDefIndex: 5676
 {
-	private static bool endThread; 
-	private static DateTime threadDeadline; 
-	private static readonly GAThreading _instance; 
-	private readonly PriorityQueue<long, TimedBlock> blocks; 
-	private readonly object threadLock; 
-	private TimedBlock scheduledBlock; 
-	private bool hasScheduledBlockRun; 
-	private Thread thread; 
+	private static bool endThread;
+	private static DateTime threadDeadline;
+	private static readonly GAThreading _instance;
+	private readonly PriorityQueue<long, TimedBlock> blocks;
+	private readonly object threadLock;
+	private TimedBlock scheduledBlock;
+	private bool hasScheduledBlockRun;
+	private Thread thread;
 
 	private static GAThreading Instance { get; }
 

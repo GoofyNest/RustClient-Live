@@ -1,6 +1,6 @@
-public sealed class MetricTimeSpan : ITimeSpan, IComparable, IComparable<MetricTimeSpan>, IEquatable<MetricTimeSpan> // TypeDefIndex: 7506
+public sealed class MetricTimeSpan : ITimeSpan, IComparable, IComparable<MetricTimeSpan>, IEquatable<MetricTimeSpan> // TypeDefIndex: 7508
 {
-	private readonly TimeSpan _timeSpan; 
+	private readonly TimeSpan _timeSpan;
 
 	public long TotalMicroseconds { get; }
 	public int Hours { get; }

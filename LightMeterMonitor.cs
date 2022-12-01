@@ -1,8 +1,8 @@
-public sealed class LightMeterMonitor : Monitor // TypeDefIndex: 13607
+public sealed class LightMeterMonitor : Monitor // TypeDefIndex: 13623
 {
-	public int width; 
-	public int height; 
-	public bool showCurves; 
+	public int width;
+	public int height;
+	public bool showCurves;
 
 
 	internal override bool ShaderResourcesAvailable(PostProcessRenderContext context) { }

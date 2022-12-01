@@ -1,10 +1,10 @@
-public sealed class UnknownChannelEventAction // TypeDefIndex: 7618
+public sealed class UnknownChannelEventAction // TypeDefIndex: 7620
 {
-	public static readonly UnknownChannelEventAction Abort; 
-	[CompilerGeneratedAttribute] 
-	private readonly UnknownChannelEventInstruction <Instruction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <DataBytesToSkipCount>k__BackingField; 
+	public static readonly UnknownChannelEventAction Abort;
+	[CompilerGeneratedAttribute]
+	private readonly UnknownChannelEventInstruction <Instruction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <DataBytesToSkipCount>k__BackingField;
 
 	public UnknownChannelEventInstruction Instruction { get; }
 	public int DataBytesToSkipCount { get; }
@@ -12,10 +12,10 @@ public sealed class UnknownChannelEventAction // TypeDefIndex: 7618
 
 	private void .ctor(UnknownChannelEventInstruction instruction, int dataBytesToSkipCount) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public UnknownChannelEventInstruction get_Instruction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_DataBytesToSkipCount() { }
 
 	private static void .cctor() { }

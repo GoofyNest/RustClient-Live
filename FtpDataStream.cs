@@ -1,10 +1,10 @@
 internal class FtpDataStream : Stream, IDisposable // TypeDefIndex: 2997
 {
-	private FtpWebRequest request; 
-	private Stream networkStream; 
-	private bool disposed; 
-	private bool isRead; 
-	private int totalRead; 
+	private FtpWebRequest request;
+	private Stream networkStream;
+	private bool disposed;
+	private bool isRead;
+	private int totalRead;
 
 	public override bool CanRead { get; }
 	public override bool CanWrite { get; }

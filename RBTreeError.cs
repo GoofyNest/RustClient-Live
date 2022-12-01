@@ -1,6 +1,6 @@
 internal enum RBTreeError // TypeDefIndex: 4289
 {
-	public int value__; 
+	public int value__;
 	public const RBTreeError InvalidPageSize = 1;
 	public const RBTreeError PagePositionInSlotInUse = 3;
 	public const RBTreeError NoFreeSlots = 4;

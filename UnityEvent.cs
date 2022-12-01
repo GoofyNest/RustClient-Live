@@ -1,9 +1,9 @@
 public class UnityEvent : UnityEventBase // TypeDefIndex: 3643
 {
-	private object[] m_InvokeArray; 
+	private object[] m_InvokeArray;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 
 	public void AddListener(UnityAction call) { }

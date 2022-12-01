@@ -1,7 +1,7 @@
-internal static class IntExtensions // TypeDefIndex: 6952
+internal static class IntExtensions // TypeDefIndex: 6954
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int ToLittleEndianInt(Span<byte> source) { }
 
 	private static T CopyFromMemory<T>(Span<byte> memory) { }

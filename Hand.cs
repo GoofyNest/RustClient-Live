@@ -1,7 +1,7 @@
 public struct Hand : IEquatable<Hand> // TypeDefIndex: 4151
 {
-	private ulong m_DeviceId; 
-	private uint m_FeatureIndex; 
+	private ulong m_DeviceId;
+	private uint m_FeatureIndex;
 
 	internal ulong deviceId { get; }
 	internal uint featureIndex { get; }

@@ -1,17 +1,17 @@
 internal struct HashSet.Slot<T> // TypeDefIndex: 3255
 {
-	internal int hashCode; 
-	internal int next; 
-	internal T value; 
+	internal int hashCode;
+	internal int next;
+	internal T value;
 
 }
 
 public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 3256
 {
-	private HashSet<T> _set; 
-	private int _index; 
-	private int _version; 
-	private T _current; 
+	private HashSet<T> _set;
+	private int _index;
+	private int _version;
+	private T _current;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

@@ -1,9 +1,9 @@
-internal struct SendAudioOptionsInternal : ISettable<SendAudioOptions>, IDisposable // TypeDefIndex: 8707
+internal struct SendAudioOptionsInternal : ISettable<SendAudioOptions>, IDisposable // TypeDefIndex: 8709
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_Buffer; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private IntPtr m_Buffer;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String RoomName { set; }

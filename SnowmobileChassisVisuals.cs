@@ -1,51 +1,51 @@
-public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClientComponent // TypeDefIndex: 11493
+public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClientComponent // TypeDefIndex: 11500
 {
-	[SerializeField] 
-	private Animator animator; 
-	[SerializeField] 
-	private SnowmobileAudio audioScript; 
-	[SerializeField] 
-	private SnowmobileChassisVisuals.TreadRenderer[] treadRenderers; 
-	[SerializeField] 
-	private float treadSpeedMultiplier; 
-	[SerializeField] 
-	private bool flipRightSkiExtension; 
-	[SerializeField] 
-	private Transform leftSki; 
-	[SerializeField] 
-	private Transform leftSkiPistonIn; 
-	[SerializeField] 
-	private Transform leftSkiPistonOut; 
-	[SerializeField] 
-	private Transform rightSki; 
-	[SerializeField] 
-	private Transform rightSkiPistonIn; 
-	[SerializeField] 
-	private Transform rightSkiPistonOut; 
-	[SerializeField] 
-	private float skiVisualAdjust; 
-	[SerializeField] 
-	private float treadVisualAdjust; 
-	[SerializeField] 
-	private float skiVisualMaxExtension; 
-	[SerializeField] 
-	private float treadVisualMaxExtension; 
-	[SerializeField] 
-	private float wheelSizeVisualMultiplier; 
-	private float treadExtension; 
-	private float treadPrevExtension; 
-	private Snowmobile snowmobile; 
-	private float treadRotation; 
-	private MaterialPropertyBlock mpb; 
-	private Vector4 savedST; 
-	private static int animTurn; 
-	private static int animSpeedometer; 
-	private static int animTachometer; 
-	private static int animFuel; 
-	private static int animTreadWheels; 
-	private int animNeedleShakeIndex; 
-	private int animEngineOnIndex; 
-	private float steerPercent; 
+	[SerializeField]
+	private Animator animator;
+	[SerializeField]
+	private SnowmobileAudio audioScript;
+	[SerializeField]
+	private SnowmobileChassisVisuals.TreadRenderer[] treadRenderers;
+	[SerializeField]
+	private float treadSpeedMultiplier;
+	[SerializeField]
+	private bool flipRightSkiExtension;
+	[SerializeField]
+	private Transform leftSki;
+	[SerializeField]
+	private Transform leftSkiPistonIn;
+	[SerializeField]
+	private Transform leftSkiPistonOut;
+	[SerializeField]
+	private Transform rightSki;
+	[SerializeField]
+	private Transform rightSkiPistonIn;
+	[SerializeField]
+	private Transform rightSkiPistonOut;
+	[SerializeField]
+	private float skiVisualAdjust;
+	[SerializeField]
+	private float treadVisualAdjust;
+	[SerializeField]
+	private float skiVisualMaxExtension;
+	[SerializeField]
+	private float treadVisualMaxExtension;
+	[SerializeField]
+	private float wheelSizeVisualMultiplier;
+	private float treadExtension;
+	private float treadPrevExtension;
+	private Snowmobile snowmobile;
+	private float treadRotation;
+	private MaterialPropertyBlock mpb;
+	private Vector4 savedST;
+	private static int animTurn;
+	private static int animSpeedometer;
+	private static int animTachometer;
+	private static int animFuel;
+	private static int animTreadWheels;
+	private int animNeedleShakeIndex;
+	private int animEngineOnIndex;
+	private float steerPercent;
 
 
 	public override void Init(Snowmobile owner, VehicleChassisVisuals.ClientWheelData<Snowmobile>[] clientWheelData) { }
@@ -68,10 +68,10 @@ public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClie
 
 }
 
-private class SnowmobileChassisVisuals.TreadRenderer // TypeDefIndex: 11494
+private class SnowmobileChassisVisuals.TreadRenderer // TypeDefIndex: 11501
 {
-	public Renderer renderer; 
-	public int materialIndex; 
+	public Renderer renderer;
+	public int materialIndex;
 
 
 	public void .ctor() { }

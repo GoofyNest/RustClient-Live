@@ -1,9 +1,9 @@
 internal class ActiveAxis // TypeDefIndex: 2134
 {
-	private int currentDepth; 
-	private bool isActive; 
-	private Asttree axisTree; 
-	private ArrayList axisStack; 
+	private int currentDepth;
+	private bool isActive;
+	private Asttree axisTree;
+	private ArrayList axisStack;
 
 	public int CurrentDepth { get; }
 

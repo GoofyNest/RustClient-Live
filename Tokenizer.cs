@@ -1,21 +1,21 @@
 internal sealed class Tokenizer // TypeDefIndex: 920
 {
-	public int LineNo; 
-	private int _inProcessingTag; 
-	private byte[] _inBytes; 
-	private char[] _inChars; 
-	private string _inString; 
-	private int _inIndex; 
-	private int _inSize; 
-	private int _inSavedCharacter; 
-	private Tokenizer.TokenSource _inTokenSource; 
-	private Tokenizer.ITokenReader _inTokenReader; 
-	private Tokenizer.StringMaker _maker; 
-	private string[] _searchStrings; 
-	private string[] _replaceStrings; 
-	private int _inNestedIndex; 
-	private int _inNestedSize; 
-	private string _inNestedString; 
+	public int LineNo;
+	private int _inProcessingTag;
+	private byte[] _inBytes;
+	private char[] _inChars;
+	private string _inString;
+	private int _inIndex;
+	private int _inSize;
+	private int _inSavedCharacter;
+	private Tokenizer.TokenSource _inTokenSource;
+	private Tokenizer.ITokenReader _inTokenReader;
+	private Tokenizer.StringMaker _maker;
+	private string[] _searchStrings;
+	private string[] _replaceStrings;
+	private int _inNestedIndex;
+	private int _inNestedSize;
+	private string _inNestedString;
 
 
 	internal void BasicInitialization() { }
@@ -34,7 +34,7 @@ internal sealed class Tokenizer // TypeDefIndex: 920
 
 private enum Tokenizer.TokenSource // TypeDefIndex: 921
 {
-	public int value__; 
+	public int value__;
 	public const Tokenizer.TokenSource UnicodeByteArray = 0;
 	public const Tokenizer.TokenSource UTF8ByteArray = 1;
 	public const Tokenizer.TokenSource ASCIIByteArray = 2;
@@ -47,12 +47,12 @@ private enum Tokenizer.TokenSource // TypeDefIndex: 921
 
 internal sealed class Tokenizer.StringMaker // TypeDefIndex: 922
 {
-	private string[] aStrings; 
-	private uint cStringsMax; 
-	private uint cStringsUsed; 
-	public StringBuilder _outStringBuilder; 
-	public char[] _outChars; 
-	public int _outIndex; 
+	private string[] aStrings;
+	private uint cStringsMax;
+	private uint cStringsUsed;
+	public StringBuilder _outStringBuilder;
+	public char[] _outChars;
+	public int _outIndex;
 
 
 	private static uint HashString(string str) { }
@@ -69,8 +69,8 @@ internal sealed class Tokenizer.StringMaker // TypeDefIndex: 922
 
 internal class Tokenizer.StreamTokenReader : Tokenizer.ITokenReader // TypeDefIndex: 924
 {
-	internal StreamReader _in; 
-	internal int _numCharRead; 
+	internal StreamReader _in;
+	internal int _numCharRead;
 
 	internal int NumCharEncountered { get; }
 

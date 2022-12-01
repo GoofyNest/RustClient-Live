@@ -1,6 +1,6 @@
 internal enum Int64Enum // TypeDefIndex: 363
 {
-	public long value__; 
+	public long value__;
 
 }
 

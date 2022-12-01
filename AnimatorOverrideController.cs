@@ -1,17 +1,17 @@
 public class AnimatorOverrideController : RuntimeAnimatorController // TypeDefIndex: 4493
 {
-	internal AnimatorOverrideController.OnOverrideControllerDirtyCallback OnOverrideControllerDirty; 
+	internal AnimatorOverrideController.OnOverrideControllerDirtyCallback OnOverrideControllerDirty;
 
 	public AnimationClip Item { get; }
 
 
 	public AnimationClip get_Item(string name) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private AnimationClip Internal_GetClipByName(string name, bool returnEffectiveClip) { }
 
-	[RequiredByNativeCodeAttribute] 
-	[NativeConditionalAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[NativeConditionalAttribute]
 	internal static void OnInvalidateOverrideController(AnimatorOverrideController controller) { }
 
 }

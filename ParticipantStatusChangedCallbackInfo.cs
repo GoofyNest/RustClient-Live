@@ -1,19 +1,19 @@
-public struct ParticipantStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 8790
+public struct ParticipantStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 8792
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RoomName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ParticipantId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private RTCParticipantStatus <ParticipantStatus>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ParticipantMetadata[] <ParticipantMetadata>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ParticipantInBlocklist>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RoomName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ParticipantId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private RTCParticipantStatus <ParticipantStatus>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ParticipantMetadata[] <ParticipantMetadata>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ParticipantInBlocklist>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -24,46 +24,46 @@ public struct ParticipantStatusChangedCallbackInfo : ICallbackInfo // TypeDefInd
 	public bool ParticipantInBlocklist { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RoomName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RoomName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ParticipantId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public RTCParticipantStatus get_ParticipantStatus() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantStatus(RTCParticipantStatus value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ParticipantMetadata[] get_ParticipantMetadata() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantMetadata(ParticipantMetadata[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ParticipantInBlocklist() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantInBlocklist(bool value) { }
 
 	public Nullable<Result> GetResultCode() { }

@@ -1,6 +1,6 @@
-public enum MonitorType // TypeDefIndex: 13608
+public enum MonitorType // TypeDefIndex: 13624
 {
-	public int value__; 
+	public int value__;
 	public const MonitorType LightMeter = 0;
 	public const MonitorType Histogram = 1;
 	public const MonitorType Waveform = 2;

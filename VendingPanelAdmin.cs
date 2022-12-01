@@ -1,9 +1,9 @@
-public class VendingPanelAdmin : UIDialog // TypeDefIndex: 10459
+public class VendingPanelAdmin : UIDialog // TypeDefIndex: 10463
 {
-	public GameObject sellOrderAdminContainer; 
-	public GameObject sellOrderAdminPrefab; 
-	public InputField storeNameInputField; 
-	private VendingMachine vendingMachine; 
+	public GameObject sellOrderAdminContainer;
+	public GameObject sellOrderAdminPrefab;
+	public InputField storeNameInputField;
+	private VendingMachine vendingMachine;
 
 
 	public override void OpenDialog() { }

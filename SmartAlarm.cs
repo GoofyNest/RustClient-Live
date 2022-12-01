@@ -1,10 +1,10 @@
-public class SmartAlarm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6374
+public class SmartAlarm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6376
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<ulong> subscriptions; 
-	public string notificationTitle; 
-	public string notificationBody; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<ulong> subscriptions;
+	public string notificationTitle;
+	public string notificationBody;
 
 
 	public static void ResetToPool(SmartAlarm instance) { }
@@ -61,16 +61,16 @@ public class SmartAlarm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 637
 
 }
 
-public class SmartAlarm : AppIOEntity, ISubscribable // TypeDefIndex: 10167
+public class SmartAlarm : AppIOEntity, ISubscribable // TypeDefIndex: 10169
 {
-	private Option __menuOption_MenuSetupNotification; 
+	private Option __menuOption_MenuSetupNotification;
 	public const BaseEntity.Flags Flag_HasCustomMessage = 16384;
-	public static readonly Translate.Phrase DefaultNotificationTitle; 
-	public static readonly Translate.Phrase DefaultNotificationBody; 
-	[HeaderAttribute] 
-	public GameObjectRef SetupNotificationDialog; 
-	public Animator Animator; 
-	private static readonly int AnimatorOn; 
+	public static readonly Translate.Phrase DefaultNotificationTitle;
+	public static readonly Translate.Phrase DefaultNotificationBody;
+	[HeaderAttribute]
+	public GameObjectRef SetupNotificationDialog;
+	public Animator Animator;
+	private static readonly int AnimatorOn;
 
 	public override bool HasMenuOptions { get; }
 
@@ -83,15 +83,15 @@ public class SmartAlarm : AppIOEntity, ISubscribable // TypeDefIndex: 10167
 
 	public void OnAlarmStatusChange(bool isOn) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuSetupNotification(BasePlayer player) { }
 
 	public bool MenuSetupNotification_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SetupNotification(BaseEntity.RPCMessage rpc) { }
 
 	public void SetNotificationText(string title, string body) { }

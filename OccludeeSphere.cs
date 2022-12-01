@@ -1,8 +1,8 @@
-public struct OccludeeSphere // TypeDefIndex: 13296
+public struct OccludeeSphere // TypeDefIndex: 13311
 {
-	public int id; 
-	public OccludeeState state; 
-	public OcclusionCulling.Sphere sphere; 
+	public int id;
+	public OccludeeState state;
+	public OcclusionCulling.Sphere sphere;
 
 	public bool IsRegistered { get; }
 

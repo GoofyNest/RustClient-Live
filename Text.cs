@@ -1,15 +1,15 @@
 public class Text : MaskableGraphic, ILayoutElement // TypeDefIndex: 5020
 {
-	[SerializeField] 
-	private FontData m_FontData; 
-	[TextAreaAttribute] 
-	[SerializeField] 
-	protected string m_Text; 
-	private TextGenerator m_TextCache; 
-	private TextGenerator m_TextCacheForLayout; 
-	protected static Material s_DefaultText; 
-	protected bool m_DisableFontTextureRebuiltCallback; 
-	private readonly UIVertex[] m_TempVerts; 
+	[SerializeField]
+	private FontData m_FontData;
+	[TextAreaAttribute]
+	[SerializeField]
+	protected string m_Text;
+	private TextGenerator m_TextCache;
+	private TextGenerator m_TextCacheForLayout;
+	protected static Material s_DefaultText;
+	protected bool m_DisableFontTextureRebuiltCallback;
+	private readonly UIVertex[] m_TempVerts;
 
 	public TextGenerator cachedTextGenerator { get; }
 	public TextGenerator cachedTextGeneratorForLayout { get; }

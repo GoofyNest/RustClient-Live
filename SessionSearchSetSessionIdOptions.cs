@@ -1,15 +1,15 @@
-public struct SessionSearchSetSessionIdOptions // TypeDefIndex: 8600
+public struct SessionSearchSetSessionIdOptions // TypeDefIndex: 8602
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionId>k__BackingField;
 
 	public Utf8String SessionId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionId(Utf8String value) { }
 
 }

@@ -1,10 +1,10 @@
-internal class ForceWeather : MonoBehaviour // TypeDefIndex: 13893
+internal class ForceWeather : MonoBehaviour // TypeDefIndex: 13910
 {
-	private Toggle component; 
-	public bool Rain; 
-	public bool Fog; 
-	public bool Wind; 
-	public bool Clouds; 
+	private Toggle component;
+	public bool Rain;
+	public bool Fog;
+	public bool Wind;
+	public bool Clouds;
 
 
 	public void OnEnable() { }

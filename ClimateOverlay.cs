@@ -1,13 +1,13 @@
-public class ClimateOverlay : MonoBehaviour // TypeDefIndex: 10854
+public class ClimateOverlay : MonoBehaviour // TypeDefIndex: 10860
 {
-	[RangeAttribute] 
-	public float blendingSpeed; 
-	public PostProcessVolume[] biomeVolumes; 
-	private float cycleBlendTime; 
-	private bool isBlending; 
-	private float[] weights; 
-	private float[] srcWeights; 
-	private float[] dstWeights; 
+	[RangeAttribute]
+	public float blendingSpeed;
+	public PostProcessVolume[] biomeVolumes;
+	private float cycleBlendTime;
+	private bool isBlending;
+	private float[] weights;
+	private float[] srcWeights;
+	private float[] dstWeights;
 
 
 	private void Awake() { }

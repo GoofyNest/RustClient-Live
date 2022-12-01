@@ -1,7 +1,7 @@
 public struct Length : IEquatable<Length> // TypeDefIndex: 4714
 {
-	private float m_Value; 
-	private LengthUnit m_Unit; 
+	private float m_Value;
+	private LengthUnit m_Unit;
 
 	public float value { get; }
 	public LengthUnit unit { get; }

@@ -1,8 +1,8 @@
-internal struct AddNotifyMessageToClientOptionsInternal : ISettable<AddNotifyMessageToClientOptions>, IDisposable // TypeDefIndex: 9723
+internal struct AddNotifyMessageToClientOptionsInternal : ISettable<AddNotifyMessageToClientOptions>, IDisposable // TypeDefIndex: 9725
 {
 
 internal struct AddNotifyMessageToClientOptionsInternal : ISettable<AddNotifyMessageToClientOptions>, IDisposable
-	private int m_ApiVersion; 
+	private int m_ApiVersion;
 
 
 	public void Set(ref AddNotifyMessageToClientOptions other) { }

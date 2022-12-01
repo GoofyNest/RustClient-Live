@@ -1,6 +1,6 @@
-public class HitNumber : MonoBehaviour // TypeDefIndex: 10467
+public class HitNumber : MonoBehaviour // TypeDefIndex: 10471
 {
-	public HitNumber.HitType hitType; 
+	public HitNumber.HitType hitType;
 
 
 	public int ColorToMultiplier(HitNumber.HitType type) { }
@@ -11,9 +11,9 @@ public class HitNumber : MonoBehaviour // TypeDefIndex: 10467
 
 }
 
-public enum HitNumber.HitType // TypeDefIndex: 10468
+public enum HitNumber.HitType // TypeDefIndex: 10472
 {
-	public int value__; 
+	public int value__;
 	public const HitNumber.HitType Yellow = 0;
 	public const HitNumber.HitType Green = 1;
 	public const HitNumber.HitType Blue = 2;

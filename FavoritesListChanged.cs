@@ -1,13 +1,13 @@
-internal struct FavoritesListChanged_t : ICallbackData // TypeDefIndex: 5341
+internal struct FavoritesListChanged_t : ICallbackData // TypeDefIndex: 5343
 {
-	internal uint IP; 
-	internal uint QueryPort; 
-	internal uint ConnPort; 
-	internal uint AppID; 
-	internal uint Flags; 
-	internal bool Add; 
-	internal uint AccountId; 
-	public static int _datasize; 
+	internal uint IP;
+	internal uint QueryPort;
+	internal uint ConnPort;
+	internal uint AppID;
+	internal uint Flags;
+	internal bool Add;
+	internal uint AccountId;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

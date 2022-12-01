@@ -1,6 +1,6 @@
-internal struct UGCFileWriteStreamHandle_t : IEquatable<UGCFileWriteStreamHandle_t>, IComparable<UGCFileWriteStreamHandle_t> // TypeDefIndex: 5535
+internal struct UGCFileWriteStreamHandle_t : IEquatable<UGCFileWriteStreamHandle_t>, IComparable<UGCFileWriteStreamHandle_t> // TypeDefIndex: 5537
 {
-	public ulong Value; 
+	public ulong Value;
 
 
 	public static UGCFileWriteStreamHandle_t op_Implicit(ulong value) { }

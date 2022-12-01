@@ -1,51 +1,51 @@
-public class TerrainTexturing : TerrainExtension // TypeDefIndex: 12182
+public class TerrainTexturing : TerrainExtension // TypeDefIndex: 12189
 {
 	private const int MaxBasePyramidSize = 4096;
-	private TextureCacheState pyramidCacheState; 
-	private RenderTexture diffuseBasePyramidTexture; 
+	private TextureCacheState pyramidCacheState;
+	private RenderTexture diffuseBasePyramidTexture;
 	private const int CoarseHeightDownscale = 1;
 	private const int CoarseSlopeBlurPasses = 4;
 	private const float CoarseSlopeBlurRadius = 1;
-	private TextureCacheState coarseHeightSlopeCacheState; 
-	private RenderTexture coarseHeightSlopeTexture; 
+	private TextureCacheState coarseHeightSlopeCacheState;
+	private RenderTexture coarseHeightSlopeTexture;
 	private const int ShoreVectorDownscale = 3;
 	private const int ShoreVectorBlurPasses = 0;
-	private float terrainSize; 
-	private int shoreMapSize; 
-	private float[] shoreDistances; 
-	private Vector3[] shoreVectors; 
-	private Texture2D shoreVectorTexture; 
-	public bool debugFoliageDisplacement; 
-	private bool initialized; 
-	private static TerrainTexturing instance; 
-	private bool prevDebugFoliageDisplacement; 
-	private int prevQuality; 
-	private bool triggerUpdateGlobalParams; 
-	private int[,] PID_Layer; 
-	private static int PID_NaN; 
-	private static int PID_Terrain_Control0; 
-	private static int PID_Terrain_Control1; 
-	private static int PID_Terrain_TextureArray0; 
-	private static int PID_Terrain_TextureArray1; 
-	private static int PID_Terrain_HeightSlope; 
-	private static int PID_Terrain_ShoreVector; 
-	private static int PID_Terrain_Position; 
-	private static int PID_Terrain_Size; 
-	private static int PID_Terrain_RcpSize; 
-	private static int PID_Terrain_TexelSize; 
-	private static int PID_Terrain_TexelSize0; 
-	private static int PID_Terrain_TexelSize1; 
-	private static int PID_TerrainParallax; 
-	private static int PID_TerrainPotatoDetailTexture; 
-	private static int PID_TerrainPotatoDetailWorldUVScale; 
-	private static int PID_PotatoDetailTexture; 
-	private static int PID_PotatoDetailWorldUVScale; 
-	private static int PID_UVMIXMult; 
-	private static int PID_UVMIXStart; 
-	private static int PID_UVMIXDist; 
-	private static int PID_LayerFallback_Albedo; 
-	private static int PID_LayerFallback_Metallic; 
-	private static int PID_LayerFallback_Smoothness; 
+	private float terrainSize;
+	private int shoreMapSize;
+	private float[] shoreDistances;
+	private Vector3[] shoreVectors;
+	private Texture2D shoreVectorTexture;
+	public bool debugFoliageDisplacement;
+	private bool initialized;
+	private static TerrainTexturing instance;
+	private bool prevDebugFoliageDisplacement;
+	private int prevQuality;
+	private bool triggerUpdateGlobalParams;
+	private int[,] PID_Layer;
+	private static int PID_NaN;
+	private static int PID_Terrain_Control0;
+	private static int PID_Terrain_Control1;
+	private static int PID_Terrain_TextureArray0;
+	private static int PID_Terrain_TextureArray1;
+	private static int PID_Terrain_HeightSlope;
+	private static int PID_Terrain_ShoreVector;
+	private static int PID_Terrain_Position;
+	private static int PID_Terrain_Size;
+	private static int PID_Terrain_RcpSize;
+	private static int PID_Terrain_TexelSize;
+	private static int PID_Terrain_TexelSize0;
+	private static int PID_Terrain_TexelSize1;
+	private static int PID_TerrainParallax;
+	private static int PID_TerrainPotatoDetailTexture;
+	private static int PID_TerrainPotatoDetailWorldUVScale;
+	private static int PID_PotatoDetailTexture;
+	private static int PID_PotatoDetailWorldUVScale;
+	private static int PID_UVMIXMult;
+	private static int PID_UVMIXStart;
+	private static int PID_UVMIXDist;
+	private static int PID_LayerFallback_Albedo;
+	private static int PID_LayerFallback_Metallic;
+	private static int PID_LayerFallback_Smoothness;
 
 	public RenderTexture DiffuseBasePyramidTexture { get; }
 	public RenderTexture CoarseHeightSlopeTexture { get; }
@@ -181,9 +181,9 @@ public class TerrainTexturing : TerrainExtension // TypeDefIndex: 12182
 
 }
 
-private enum TerrainTexturing.LayerPropID // TypeDefIndex: 12183
+private enum TerrainTexturing.LayerPropID // TypeDefIndex: 12190
 {
-	public int value__; 
+	public int value__;
 	public const TerrainTexturing.LayerPropID UVMIX = 0;
 	public const TerrainTexturing.LayerPropID AridColor = 1;
 	public const TerrainTexturing.LayerPropID TemperateColor = 2;
@@ -204,25 +204,25 @@ private enum TerrainTexturing.LayerPropID // TypeDefIndex: 12183
 
 }
 
-private sealed class TerrainTexturing.<>c__DisplayClass27_0 // TypeDefIndex: 12184
+private sealed class TerrainTexturing.<>c__DisplayClass27_0 // TypeDefIndex: 12191
 {
-	public int block; 
-	public int dstsize; 
-	public int srcsize; 
-	public float hscale_s; 
-	public float ny; 
-	public float hscale; 
-	public float hoffset; 
-	public Color[] pixels; 
+	public int block;
+	public int dstsize;
+	public int srcsize;
+	public float hscale_s;
+	public float ny;
+	public float hscale;
+	public float hoffset;
+	public Color[] pixels;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class TerrainTexturing.<>c__DisplayClass27_1 // TypeDefIndex: 12185
+private sealed class TerrainTexturing.<>c__DisplayClass27_1 // TypeDefIndex: 12192
 {
-	public Color32[] heightColors; 
+	public Color32[] heightColors;
 	public TerrainTexturing.<>c
 
 
@@ -232,10 +232,10 @@ private sealed class TerrainTexturing.<>c__DisplayClass27_1 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainTexturing.<>c__DisplayClass27_2 // TypeDefIndex: 12186
+private sealed class TerrainTexturing.<>c__DisplayClass27_2 // TypeDefIndex: 12193
 {
-	public short[] heights; 
-	public int heightres; 
+	public short[] heights;
+	public int heightres;
 	public TerrainTexturing.<>c
 
 

@@ -1,8 +1,8 @@
 internal class CrossAppDomainSink : IMessageSink // TypeDefIndex: 1190
 {
-	private static Hashtable s_sinks; 
-	private static MethodInfo processMessageMethod; 
-	private int _domainID; 
+	private static Hashtable s_sinks;
+	private static MethodInfo processMessageMethod;
+	private int _domainID;
 
 	internal int TargetDomainId { get; }
 
@@ -23,15 +23,15 @@ internal class CrossAppDomainSink : IMessageSink // TypeDefIndex: 1190
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <AsyncProcessMessage>
 
 }
 
 private struct CrossAppDomainSink.ProcessMessageRes // TypeDefIndex: 1191
 {
-	public byte[] arrResponse; 
-	public CADMethodReturnMessage cadMrm; 
+	public byte[] arrResponse;
+	public CADMethodReturnMessage cadMrm;
 
 }
 

@@ -1,25 +1,25 @@
-public class Rank // TypeDefIndex: 6259
+public class Rank // TypeDefIndex: 6261
 {
-	public float Score; 
-	public int GlobalCount; 
-	public int GlobalRank; 
-	public string Country; 
-	public int CountryCount; 
-	public int CountryRank; 
-	public string City; 
-	public int CityCount; 
-	public int CityRank; 
-	public int FriendRank; 
-	public DateTime Created; 
+	public float Score;
+	public int GlobalCount;
+	public int GlobalRank;
+	public string Country;
+	public int CountryCount;
+	public int CountryRank;
+	public string City;
+	public int CityCount;
+	public int CityRank;
+	public int FriendRank;
+	public DateTime Created;
 
 
 	public void .ctor() { }
 
 }
 
-public enum Rank // TypeDefIndex: 13812
+public enum Rank // TypeDefIndex: 13828
 {
-	public int value__; 
+	public int value__;
 	public const Rank Two = 0;
 	public const Rank Three = 1;
 	public const Rank Four = 2;

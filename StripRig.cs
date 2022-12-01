@@ -1,8 +1,8 @@
-public class StripRig : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11756
+public class StripRig : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11763
 {
-	public Transform root; 
-	public bool fromClient; 
-	public bool fromServer; 
+	public Transform root;
+	public bool fromClient;
+	public bool fromServer;
 
 
 	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }

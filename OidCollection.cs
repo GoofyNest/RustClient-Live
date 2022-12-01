@@ -1,6 +1,6 @@
 public sealed class OidCollection : ICollection, IEnumerable // TypeDefIndex: 2793
 {
-	private ArrayList m_list; 
+	private ArrayList m_list;
 
 	public Oid Item { get; }
 	public int Count { get; }

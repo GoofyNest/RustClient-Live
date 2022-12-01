@@ -1,11 +1,11 @@
-public class RCEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6382
+public class RCEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6384
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 aim; 
-	public float zoom; 
-	public string identifier; 
-	public string password; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 aim;
+	public float zoom;
+	public string identifier;
+	public string password;
 
 
 	public static void ResetToPool(RCEntity instance) { }

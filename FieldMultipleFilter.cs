@@ -1,16 +1,16 @@
-internal class FieldMultipleFilter : PathFilter // TypeDefIndex: 6093
+internal class FieldMultipleFilter : PathFilter // TypeDefIndex: 6095
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 internal class FieldMultipleFilter : PathFilter
 
 	public void .ctor() { }
 
 }
 
-private sealed class FieldMultipleFilter.<>c // TypeDefIndex: 6094
+private sealed class FieldMultipleFilter.<>c // TypeDefIndex: 6096
 {
-	public static readonly FieldMultipleFilter.<>c <>9; 
+	public static readonly FieldMultipleFilter.<>c <>9;
 
 
 	private static void .cctor() { }

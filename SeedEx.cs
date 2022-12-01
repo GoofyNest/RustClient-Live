@@ -1,13 +1,13 @@
-public static class SeedEx // TypeDefIndex: 6601
+public static class SeedEx // TypeDefIndex: 6603
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static uint Seed(Vector2 v, uint baseSeed) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static uint Seed(Vector3 v, uint baseSeed) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static uint Seed(Vector4 v, uint baseSeed) { }
 
 }

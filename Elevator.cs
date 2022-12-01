@@ -1,8 +1,8 @@
-public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6394
+public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6396
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int floor; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int floor;
 
 
 	public static void ResetToPool(Elevator instance) { }
@@ -59,27 +59,27 @@ public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6394
 
 }
 
-public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 10105
+public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 10107
 {
-	private Option __menuOption_Menu_LowerElevator; 
-	private Option __menuOption_Menu_LowerElevatorToFloor; 
-	private Option __menuOption_Menu_RaiseElevator; 
-	private Option __menuOption_Menu_RaiseElevatorToTop; 
-	public GameObject DescendingHurtTrigger; 
-	public GameObject MovementCollider; 
-	public Transform UpButtonPoint; 
-	public Transform DownButtonPoint; 
-	public TriggerNotify VehicleTrigger; 
-	public GameObjectRef LiftArrivalScreenBounce; 
-	public SoundDefinition liftMovementLoopDef; 
-	public SoundDefinition liftMovementStartDef; 
-	public SoundDefinition liftMovementStopDef; 
-	public SoundDefinition liftMovementAccentSoundDef; 
-	public GameObjectRef liftButtonPressedEffect; 
-	public float movementAccentMinInterval; 
-	public float movementAccentMaxInterval; 
-	private Sound liftMovementLoopSound; 
-	private float nextMovementAccent; 
+	private Option __menuOption_Menu_LowerElevator;
+	private Option __menuOption_Menu_LowerElevatorToFloor;
+	private Option __menuOption_Menu_RaiseElevator;
+	private Option __menuOption_Menu_RaiseElevatorToTop;
+	public GameObject DescendingHurtTrigger;
+	public GameObject MovementCollider;
+	public Transform UpButtonPoint;
+	public Transform DownButtonPoint;
+	public TriggerNotify VehicleTrigger;
+	public GameObjectRef LiftArrivalScreenBounce;
+	public SoundDefinition liftMovementLoopDef;
+	public SoundDefinition liftMovementStartDef;
+	public SoundDefinition liftMovementStopDef;
+	public SoundDefinition liftMovementAccentSoundDef;
+	public GameObjectRef liftButtonPressedEffect;
+	public float movementAccentMinInterval;
+	public float movementAccentMaxInterval;
+	private Sound liftMovementLoopSound;
+	private float nextMovementAccent;
 	private const BaseEntity.Flags PressedUp = 128;
 	private const BaseEntity.Flags PressedDown = 256;
 
@@ -95,36 +95,36 @@ public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 10105
 
 	private Elevator get_owner() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_RaiseElevator(BasePlayer p) { }
 
 	protected bool Menu_RaiseElevator_ShowIf(BasePlayer p) { }
 
 	protected virtual bool Menu_RaiseElevator_ShowIf_Base(BasePlayer p) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_RaiseElevatorToTop(BasePlayer p) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_LowerElevator(BasePlayer p) { }
 
 	protected bool Menu_LowerElevator_ShowIf(BasePlayer p) { }
 
 	protected virtual bool Menu_LowerElevator_ShowIf_Base(BasePlayer p) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_LowerElevatorToFloor(BasePlayer p) { }
 
 	protected bool GetLookingAtButton(BasePlayer p, out Elevator.Direction d) { }
@@ -143,10 +143,10 @@ public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 10105
 
 }
 
-public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 10106
+public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 10108
 {
-	private Option __menuOption_Menu_LowerElevatorToFloor; 
-	private Option __menuOption_Menu_RaiseElevatorToTop; 
+	private Option __menuOption_Menu_LowerElevatorToFloor;
+	private Option __menuOption_Menu_RaiseElevatorToTop;
 
 	public override bool HasMenuOptions { get; }
 
@@ -155,16 +155,16 @@ public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 10106
 
 	public override bool get_HasMenuOptions() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_RaiseElevatorToTop(BasePlayer p) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_LowerElevatorToFloor(BasePlayer p) { }
 
 	protected override bool Menu_RaiseElevator_ShowIf_Base(BasePlayer p) { }
@@ -175,28 +175,28 @@ public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 10106
 
 }
 
-public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 10414
+public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 10418
 {
-	public Transform LiftRoot; 
-	public GameObjectRef LiftEntityPrefab; 
-	public GameObjectRef IoEntityPrefab; 
-	public Transform IoEntitySpawnPoint; 
-	public GameObject FloorBlockerVolume; 
-	public float LiftSpeedPerMetre; 
-	public GameObject[] PoweredObjects; 
-	public MeshRenderer PoweredMesh; 
-	[ColorUsageAttribute] 
-	public Color PoweredLightColour; 
-	[ColorUsageAttribute] 
-	public Color UnpoweredLightColour; 
-	public SkinnedMeshRenderer[] CableRenderers; 
-	public LODGroup CableLod; 
-	public Transform CableRoot; 
-	[CompilerGeneratedAttribute] 
-	private int <Floor>k__BackingField; 
+	public Transform LiftRoot;
+	public GameObjectRef LiftEntityPrefab;
+	public GameObjectRef IoEntityPrefab;
+	public Transform IoEntitySpawnPoint;
+	public GameObject FloorBlockerVolume;
+	public float LiftSpeedPerMetre;
+	public GameObject[] PoweredObjects;
+	public MeshRenderer PoweredMesh;
+	[ColorUsageAttribute]
+	public Color PoweredLightColour;
+	[ColorUsageAttribute]
+	public Color UnpoweredLightColour;
+	public SkinnedMeshRenderer[] CableRenderers;
+	public LODGroup CableLod;
+	public Transform CableRoot;
+	[CompilerGeneratedAttribute]
+	private int <Floor>k__BackingField;
 	protected const BaseEntity.Flags TopFloorFlag = 128;
 	public const BaseEntity.Flags ElevatorPowered = 256;
-	private ElevatorLift liftEntity; 
+	private ElevatorLift liftEntity;
 
 	protected virtual bool IsStatic { get; }
 	public int Floor { get; set; }
@@ -205,10 +205,10 @@ public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 10414
 
 	protected virtual bool get_IsStatic() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Floor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Floor(int value) { }
 
 	protected bool get_IsTop() { }
@@ -235,17 +235,17 @@ public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 10414
 
 }
 
-public enum Elevator.Direction // TypeDefIndex: 10415
+public enum Elevator.Direction // TypeDefIndex: 10419
 {
-	public int value__; 
+	public int value__;
 	public const Elevator.Direction Up = 0;
 	public const Elevator.Direction Down = 1;
 
 }
 
-public class ElevatorStatic : Elevator // TypeDefIndex: 10416
+public class ElevatorStatic : Elevator // TypeDefIndex: 10420
 {
-	public bool StaticTop; 
+	public bool StaticTop;
 	private const BaseEntity.Flags LiftRecentlyArrived = 512;
 
 	protected override bool IsStatic { get; }
@@ -257,9 +257,9 @@ public class ElevatorStatic : Elevator // TypeDefIndex: 10416
 
 }
 
-public class ElevatorIOEntity : IOEntity // TypeDefIndex: 11535
+public class ElevatorIOEntity : IOEntity // TypeDefIndex: 11542
 {
-	public int Consumption; 
+	public int Consumption;
 
 
 	public override int ConsumptionAmount() { }

@@ -1,7 +1,7 @@
-public static class CollectionEx // TypeDefIndex: 13133
+public static class CollectionEx // TypeDefIndex: 13148
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsNullOrEmpty<T>(ICollection<T> collection) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +12,7 @@ public static class CollectionEx // TypeDefIndex: 13133
 	|-CollectionEx.IsNullOrEmpty<Material>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsEmpty<T>(ICollection<T> collection) { }
 	/* GenericInstMethod :
 	|

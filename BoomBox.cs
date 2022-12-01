@@ -1,9 +1,9 @@
-public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6398
+public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6400
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string radioIp; 
-	public ulong assignedRadioBy; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string radioIp;
+	public ulong assignedRadioBy;
 
 
 	public static void ResetToPool(BoomBox instance) { }
@@ -60,28 +60,28 @@ public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6398
 
 }
 
-public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 11171
+public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 11177
 {
-	public static Dictionary<string, string> ValidStations; 
-	public static Dictionary<string, string> ServerValidStations; 
-	[ReplicatedVar] 
-	public static string ServerUrlList; 
-	private static string lastParsedServerList; 
-	public ShoutcastStreamer ShoutcastStreamer; 
-	public GameObjectRef RadioIpDialog; 
-	[CompilerGeneratedAttribute] 
-	private string <CurrentRadioIp>k__BackingField; 
-	public ulong AssignedRadioBy; 
-	public AudioSource SoundSource; 
-	public float ConditionLossRate; 
-	public ItemDefinition[] ValidCassettes; 
-	public SoundDefinition PlaySfx; 
-	public SoundDefinition StopSfx; 
+	public static Dictionary<string, string> ValidStations;
+	public static Dictionary<string, string> ServerValidStations;
+	[ReplicatedVar]
+	public static string ServerUrlList;
+	private static string lastParsedServerList;
+	public ShoutcastStreamer ShoutcastStreamer;
+	public GameObjectRef RadioIpDialog;
+	[CompilerGeneratedAttribute]
+	private string <CurrentRadioIp>k__BackingField;
+	public ulong AssignedRadioBy;
+	public AudioSource SoundSource;
+	public float ConditionLossRate;
+	public ItemDefinition[] ValidCassettes;
+	public SoundDefinition PlaySfx;
+	public SoundDefinition StopSfx;
 	public const BaseEntity.Flags HasCassette = 128;
-	[CompilerGeneratedAttribute] 
-	private Cassette <CurrentCassette>k__BackingField; 
-	private float localPlayerAchievementTime; 
-	private bool hasAwardedLocalPlayerAchievement; 
+	[CompilerGeneratedAttribute]
+	private Cassette <CurrentCassette>k__BackingField;
+	private float localPlayerAchievementTime;
+	private bool hasAwardedLocalPlayerAchievement;
 
 	public string CurrentRadioIp { get; set; }
 	private bool IsLocalPlayer { get; }
@@ -100,10 +100,10 @@ public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 
 
 	public static void ResetServerValidStations() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_CurrentRadioIp() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentRadioIp(string value) { }
 
 	public void ChangeRadioSettings(BasePlayer player) { }
@@ -120,10 +120,10 @@ public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 
 
 	public BaseEntity get_BaseEntity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Cassette get_CurrentCassette() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentCassette(Cassette value) { }
 
 	public void Play(BasePlayer forPlayer) { }

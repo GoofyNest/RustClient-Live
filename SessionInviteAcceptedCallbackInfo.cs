@@ -1,15 +1,15 @@
-public struct SessionInviteAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 8562
+public struct SessionInviteAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 8564
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <InviteId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <InviteId>k__BackingField;
 
 	public object ClientData { get; set; }
 	public Utf8String SessionId { get; set; }
@@ -18,34 +18,34 @@ public struct SessionInviteAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex:
 	public Utf8String InviteId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_InviteId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_InviteId(Utf8String value) { }
 
 	public Nullable<Result> GetResultCode() { }

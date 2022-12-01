@@ -1,9 +1,9 @@
 public struct SqlGuid : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4351
 {
-	private static readonly int s_sizeOfGuid; 
-	private static readonly int[] s_rgiGuidOrder; 
-	private byte[] m_value; 
-	public static readonly SqlGuid Null; 
+	private static readonly int s_sizeOfGuid;
+	private static readonly int[] s_rgiGuidOrder;
+	private byte[] m_value;
+	public static readonly SqlGuid Null;
 
 	public bool IsNull { get; }
 	public Guid Value { get; }

@@ -1,7 +1,7 @@
 public sealed class RC2CryptoServiceProvider : RC2 // TypeDefIndex: 974
 {
-	private bool m_use40bitSalt; 
-	private static KeySizes[] s_legalKeySizes; 
+	private bool m_use40bitSalt;
+	private static KeySizes[] s_legalKeySizes;
 
 	public override int EffectiveKeySize { get; }
 

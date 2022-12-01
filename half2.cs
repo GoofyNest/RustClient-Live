@@ -1,7 +1,7 @@
-public struct half2 : IEquatable<half2>, IFormattable // TypeDefIndex: 7148
+public struct half2 : IEquatable<half2>, IFormattable // TypeDefIndex: 7150
 {
-	public half x; 
-	public half y; 
+	public half x;
+	public half y;
 
 
 	public bool Equals(half2 rhs) { }

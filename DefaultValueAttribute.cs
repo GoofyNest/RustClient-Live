@@ -1,6 +1,6 @@
 public class DefaultValueAttribute : Attribute // TypeDefIndex: 2687
 {
-	private object value; 
+	private object value;
 
 	public virtual object Value { get; }
 
@@ -25,7 +25,7 @@ public class DefaultValueAttribute : Attribute // TypeDefIndex: 2687
 
 public class DefaultValueAttribute : Attribute // TypeDefIndex: 3803
 {
-	private object DefaultValue; 
+	private object DefaultValue;
 
 	public object Value { get; }
 

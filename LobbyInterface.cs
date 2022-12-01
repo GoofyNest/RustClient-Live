@@ -1,4 +1,4 @@
-public sealed class LobbyInterface : Handle // TypeDefIndex: 9153
+public sealed class LobbyInterface : Handle // TypeDefIndex: 9155
 {
 	public const int AddnotifyjoinlobbyacceptedApiLatest = 1;
 	public const int AddnotifylobbyinviteacceptedApiLatest = 1;
@@ -36,9 +36,9 @@ public sealed class LobbyInterface : Handle // TypeDefIndex: 9153
 	public const int PromotememberApiLatest = 1;
 	public const int QueryinvitesApiLatest = 1;
 	public const int RejectinviteApiLatest = 1;
-	public static readonly Utf8String SearchBucketId; 
-	public static readonly Utf8String SearchMincurrentmembers; 
-	public static readonly Utf8String SearchMinslotsavailable; 
+	public static readonly Utf8String SearchBucketId;
+	public static readonly Utf8String SearchMincurrentmembers;
+	public static readonly Utf8String SearchMinslotsavailable;
 	public const int SendinviteApiLatest = 1;
 	public const int UpdatelobbyApiLatest = 1;
 	public const int UpdatelobbymodificationApiLatest = 1;
@@ -126,67 +126,67 @@ public sealed class LobbyInterface : Handle // TypeDefIndex: 9153
 
 	public Result UpdateLobbyModification(ref UpdateLobbyModificationOptions options, out LobbyModification outLobbyModificationHandle) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnCreateLobbyCallbackInternalImplementation(ref CreateLobbyCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnDestroyLobbyCallbackInternalImplementation(ref DestroyLobbyCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnHardMuteMemberCallbackInternalImplementation(ref HardMuteMemberCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinLobbyAcceptedCallbackInternalImplementation(ref JoinLobbyAcceptedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinLobbyByIdCallbackInternalImplementation(ref JoinLobbyByIdCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinLobbyCallbackInternalImplementation(ref JoinLobbyCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnKickMemberCallbackInternalImplementation(ref KickMemberCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLeaveLobbyCallbackInternalImplementation(ref LeaveLobbyCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLobbyInviteAcceptedCallbackInternalImplementation(ref LobbyInviteAcceptedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLobbyInviteReceivedCallbackInternalImplementation(ref LobbyInviteReceivedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLobbyInviteRejectedCallbackInternalImplementation(ref LobbyInviteRejectedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLobbyMemberStatusReceivedCallbackInternalImplementation(ref LobbyMemberStatusReceivedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLobbyMemberUpdateReceivedCallbackInternalImplementation(ref LobbyMemberUpdateReceivedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLobbyUpdateReceivedCallbackInternalImplementation(ref LobbyUpdateReceivedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnPromoteMemberCallbackInternalImplementation(ref PromoteMemberCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryInvitesCallbackInternalImplementation(ref QueryInvitesCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnRTCRoomConnectionChangedCallbackInternalImplementation(ref RTCRoomConnectionChangedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnRejectInviteCallbackInternalImplementation(ref RejectInviteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSendInviteCallbackInternalImplementation(ref SendInviteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSendLobbyNativeInviteRequestedCallbackInternalImplementation(ref SendLobbyNativeInviteRequestedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnUpdateLobbyCallbackInternalImplementation(ref UpdateLobbyCallbackInfoInternal data) { }
 
 	private static void .cctor() { }

@@ -1,12 +1,12 @@
-public class CopyLODValues : MonoBehaviour, IEditorComponent // TypeDefIndex: 11663
+public class CopyLODValues : MonoBehaviour, IEditorComponent // TypeDefIndex: 11670
 {
-	[SerializeField] 
-	private LODGroup source; 
-	[SerializeField] 
-	private LODGroup destination; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	private bool scale; 
+	[SerializeField]
+	private LODGroup source;
+	[SerializeField]
+	private LODGroup destination;
+	[TooltipAttribute]
+	[SerializeField]
+	private bool scale;
 
 
 	public bool CanCopy() { }

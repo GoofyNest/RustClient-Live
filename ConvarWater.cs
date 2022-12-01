@@ -1,8 +1,8 @@
-public class ConvarWater : MonoBehaviour // TypeDefIndex: 13084
+public class ConvarWater : MonoBehaviour // TypeDefIndex: 13099
 {
-	[FormerlySerializedAsAttribute] 
-	public WaterSystem water; 
-	internal ConsoleSystem.Command water_quality; 
+	[FormerlySerializedAsAttribute]
+	public WaterSystem water;
+	internal ConsoleSystem.Command water_quality;
 
 
 	private void OnEnable() { }

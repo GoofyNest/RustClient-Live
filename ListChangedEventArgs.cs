@@ -1,9 +1,9 @@
 public class ListChangedEventArgs : EventArgs // TypeDefIndex: 2725
 {
-	private ListChangedType listChangedType; 
-	private int newIndex; 
-	private int oldIndex; 
-	private PropertyDescriptor propDesc; 
+	private ListChangedType listChangedType;
+	private int newIndex;
+	private int oldIndex;
+	private PropertyDescriptor propDesc;
 
 	public ListChangedType ListChangedType { get; }
 	public int NewIndex { get; }

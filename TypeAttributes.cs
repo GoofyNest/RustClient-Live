@@ -1,6 +1,6 @@
 public enum TypeAttributes // TypeDefIndex: 552
 {
-	public int value__; 
+	public int value__;
 	public const TypeAttributes VisibilityMask = 7;
 	public const TypeAttributes NotPublic = 0;
 	public const TypeAttributes Public = 1;
@@ -22,7 +22,7 @@ public enum TypeAttributes // TypeDefIndex: 552
 	public const TypeAttributes SpecialName = 1024;
 	public const TypeAttributes Import = 4096;
 	public const TypeAttributes Serializable = 8192;
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public const TypeAttributes WindowsRuntime = 16384;
 	public const TypeAttributes StringFormatMask = 196608;
 	public const TypeAttributes AnsiClass = 0;

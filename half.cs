@@ -1,9 +1,9 @@
-public struct half : IEquatable<half>, IFormattable // TypeDefIndex: 7147
+public struct half : IEquatable<half>, IFormattable // TypeDefIndex: 7149
 {
 
 [Serializable]
 public struct half : IEquatable<half>, IFormattable
-	public ushort value; 
+	public ushort value;
 
 
 	public static float op_Implicit(half d) { }

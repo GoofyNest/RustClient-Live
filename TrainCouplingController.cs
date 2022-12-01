@@ -1,16 +1,16 @@
-public class TrainCouplingController // TypeDefIndex: 11506
+public class TrainCouplingController // TypeDefIndex: 11513
 {
-	[CompilerGeneratedAttribute] 
-	private float <PreChangeTrackSpeed>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PreChangeCoupledBackwards>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private float <PreChangeTrackSpeed>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PreChangeCoupledBackwards>k__BackingField;
 	public const BaseEntity.Flags Flag_CouplingFront = 256;
 	public const BaseEntity.Flags Flag_CouplingRear = 512;
-	public readonly TrainCoupling frontCoupling; 
-	public readonly TrainCoupling rearCoupling; 
-	private readonly TrainCar owner; 
-	[ServerVar] 
-	public static float max_couple_speed; 
+	public readonly TrainCoupling frontCoupling;
+	public readonly TrainCoupling rearCoupling;
+	private readonly TrainCar owner;
+	[ServerVar]
+	public static float max_couple_speed;
 
 	public bool IsCoupled { get; }
 	public bool IsFrontCoupled { get; }
@@ -25,16 +25,16 @@ public class TrainCouplingController // TypeDefIndex: 11506
 
 	public bool get_IsRearCoupled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_PreChangeTrackSpeed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_PreChangeTrackSpeed(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PreChangeCoupledBackwards() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_PreChangeCoupledBackwards(bool value) { }
 
 	public void .ctor(TrainCar owner) { }

@@ -1,10 +1,10 @@
 public class SoapServices // TypeDefIndex: 1150
 {
-	private static Hashtable _xmlTypes; 
-	private static Hashtable _xmlElements; 
-	private static Hashtable _soapActions; 
-	private static Hashtable _soapActionsMethods; 
-	private static Hashtable _typeInfos; 
+	private static Hashtable _xmlTypes;
+	private static Hashtable _xmlElements;
+	private static Hashtable _soapActions;
+	private static Hashtable _soapActionsMethods;
+	private static Hashtable _typeInfos;
 
 	public static string XmlNsForClrTypeWithAssembly { get; }
 	public static string XmlNsForClrTypeWithNs { get; }
@@ -47,8 +47,8 @@ public class SoapServices // TypeDefIndex: 1150
 
 private class SoapServices.TypeInfo // TypeDefIndex: 1151
 {
-	public Hashtable Attributes; 
-	public Hashtable Elements; 
+	public Hashtable Attributes;
+	public Hashtable Elements;
 
 
 	public void .ctor() { }

@@ -1,8 +1,8 @@
 public sealed class IdnMapping // TypeDefIndex: 743
 {
-	private bool allow_unassigned; 
-	private bool use_std3; 
-	private Punycode puny; 
+	private bool allow_unassigned;
+	private bool use_std3;
+	private Punycode puny;
 
 
 	public void .ctor() { }

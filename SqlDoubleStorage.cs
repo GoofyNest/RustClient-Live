@@ -1,6 +1,6 @@
 internal sealed class SqlDoubleStorage : DataStorage // TypeDefIndex: 4423
 {
-	private SqlDouble[] _values; 
+	private SqlDouble[] _values;
 
 
 	public void .ctor(DataColumn column) { }

@@ -1,8 +1,8 @@
 internal struct GameConnectedFriendChatMsg_t : ICallbackData // TypeDefIndex: 5326
 {
-	internal ulong SteamIDUser; 
-	internal int MessageID; 
-	public static int _datasize; 
+	internal ulong SteamIDUser;
+	internal int MessageID;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

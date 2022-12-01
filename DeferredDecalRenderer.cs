@@ -1,11 +1,11 @@
-public class DeferredDecalRenderer : BaseCommandBuffer // TypeDefIndex: 12400
+public class DeferredDecalRenderer : BaseCommandBuffer // TypeDefIndex: 12408
 {
-	private static ListDictionary<InstancingKey, InstancingBuffer>[] DiffuseBuffer; 
-	private static ListDictionary<InstancingKey, InstancingBuffer>[] SpecularBuffer; 
-	private static ListDictionary<InstancingKey, InstancingBuffer>[] NormalsBuffer; 
-	private static ListDictionary<InstancingKey, InstancingBuffer>[] EmissionBuffer; 
-	private static ListDictionary<InstancingKey, InstancingBuffer>[] CombinedBuffer; 
-	private static MaterialPropertyBlock block; 
+	private static ListDictionary<InstancingKey, InstancingBuffer>[] DiffuseBuffer;
+	private static ListDictionary<InstancingKey, InstancingBuffer>[] SpecularBuffer;
+	private static ListDictionary<InstancingKey, InstancingBuffer>[] NormalsBuffer;
+	private static ListDictionary<InstancingKey, InstancingBuffer>[] EmissionBuffer;
+	private static ListDictionary<InstancingKey, InstancingBuffer>[] CombinedBuffer;
+	private static MaterialPropertyBlock block;
 
 
 	private void RefreshCommandBuffer(Camera camera) { }

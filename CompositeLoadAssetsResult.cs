@@ -1,6 +1,6 @@
-internal class CompositeLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6667
+internal class CompositeLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6669
 {
-	private readonly List<LoadAssetsResult> _loads; 
+	private readonly List<LoadAssetsResult> _loads;
 
 	public override int TotalCount { get; }
 	public override int CompletedCount { get; set; }
@@ -23,12 +23,12 @@ internal class CompositeLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 666
 
 }
 
-private sealed class CompositeLoadAssetsResult.<>c // TypeDefIndex: 6668
+private sealed class CompositeLoadAssetsResult.<>c // TypeDefIndex: 6670
 {
-	public static readonly CompositeLoadAssetsResult.<>c <>9; 
-	public static Func<LoadAssetsResult, int> <>9__3_0; 
-	public static Func<LoadAssetsResult, int> <>9__5_0; 
-	public static Func<LoadAssetsResult, bool> <>9__8_0; 
+	public static readonly CompositeLoadAssetsResult.<>c <>9;
+	public static Func<LoadAssetsResult, int> <>9__3_0;
+	public static Func<LoadAssetsResult, int> <>9__5_0;
+	public static Func<LoadAssetsResult, bool> <>9__8_0;
 
 
 	private static void .cctor() { }

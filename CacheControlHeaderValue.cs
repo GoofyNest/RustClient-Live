@@ -1,34 +1,34 @@
-public class CacheControlHeaderValue : ICloneable // TypeDefIndex: 5766
+public class CacheControlHeaderValue : ICloneable // TypeDefIndex: 5768
 {
-	private List<NameValueHeaderValue> extensions; 
-	private List<string> no_cache_headers; 
-	private List<string> private_headers; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<TimeSpan> <MaxAge>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <MaxStale>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<TimeSpan> <MaxStaleLimit>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<TimeSpan> <MinFresh>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <MustRevalidate>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <NoCache>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <NoStore>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <NoTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <OnlyIfCached>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Private>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ProxyRevalidate>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Public>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<TimeSpan> <SharedMaxAge>k__BackingField; 
+	private List<NameValueHeaderValue> extensions;
+	private List<string> no_cache_headers;
+	private List<string> private_headers;
+	[CompilerGeneratedAttribute]
+	private Nullable<TimeSpan> <MaxAge>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <MaxStale>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<TimeSpan> <MaxStaleLimit>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<TimeSpan> <MinFresh>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <MustRevalidate>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <NoCache>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <NoStore>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <NoTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <OnlyIfCached>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Private>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ProxyRevalidate>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Public>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<TimeSpan> <SharedMaxAge>k__BackingField;
 
 	public ICollection<NameValueHeaderValue> Extensions { get; }
 	public Nullable<TimeSpan> MaxAge { get; set; }
@@ -50,86 +50,86 @@ public class CacheControlHeaderValue : ICloneable // TypeDefIndex: 5766
 
 	public ICollection<NameValueHeaderValue> get_Extensions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<TimeSpan> get_MaxAge() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxAge(Nullable<TimeSpan> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_MaxStale() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxStale(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<TimeSpan> get_MaxStaleLimit() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxStaleLimit(Nullable<TimeSpan> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<TimeSpan> get_MinFresh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MinFresh(Nullable<TimeSpan> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_MustRevalidate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MustRevalidate(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_NoCache() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NoCache(bool value) { }
 
 	public ICollection<string> get_NoCacheHeaders() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_NoStore() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NoStore(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_NoTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NoTransform(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_OnlyIfCached() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnlyIfCached(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Private() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Private(bool value) { }
 
 	public ICollection<string> get_PrivateHeaders() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ProxyRevalidate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProxyRevalidate(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Public() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Public(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<TimeSpan> get_SharedMaxAge() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SharedMaxAge(Nullable<TimeSpan> value) { }
 
 	private object System.ICloneable.Clone() { }

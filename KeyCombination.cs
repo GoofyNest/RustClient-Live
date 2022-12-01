@@ -1,6 +1,6 @@
-public enum KeyCombination // TypeDefIndex: 8346
+public enum KeyCombination // TypeDefIndex: 8348
 {
-	public int value__; 
+	public int value__;
 	public const KeyCombination ModifierShift = 16;
 	public const KeyCombination KeyTypeMask = 65535;
 	public const KeyCombination ModifierMask = -65536;

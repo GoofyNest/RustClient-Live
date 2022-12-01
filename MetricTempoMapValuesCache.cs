@@ -1,13 +1,13 @@
-internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDefIndex: 7509
+internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDefIndex: 7511
 {
-	[CompilerGeneratedAttribute] 
-	private MetricTempoMapValuesCache.AccumulatedMicroseconds[] <Microseconds>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private double <DefaultMicrosecondsPerTick>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private double <DefaultTicksPerMicrosecond>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly IEnumerable<TempoMapLine> <InvalidateOnLines>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private MetricTempoMapValuesCache.AccumulatedMicroseconds[] <Microseconds>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private double <DefaultMicrosecondsPerTick>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private double <DefaultTicksPerMicrosecond>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly IEnumerable<TempoMapLine> <InvalidateOnLines>k__BackingField;
 
 	public MetricTempoMapValuesCache.AccumulatedMicroseconds[] Microseconds { get; set; }
 	public double DefaultMicrosecondsPerTick { get; set; }
@@ -15,27 +15,27 @@ internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDe
 	public IEnumerable<TempoMapLine> InvalidateOnLines { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MetricTempoMapValuesCache.AccumulatedMicroseconds[] get_Microseconds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Microseconds(MetricTempoMapValuesCache.AccumulatedMicroseconds[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_DefaultMicrosecondsPerTick() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DefaultMicrosecondsPerTick(double value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_DefaultTicksPerMicrosecond() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DefaultTicksPerMicrosecond(double value) { }
 
 	private static double GetMicroseconds(long time, Tempo tempo, short ticksPerQuarterNote) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IEnumerable<TempoMapLine> get_InvalidateOnLines() { }
 
 	public void Invalidate(TempoMap tempoMap) { }
@@ -44,16 +44,16 @@ internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDe
 
 }
 
-internal sealed class MetricTempoMapValuesCache.AccumulatedMicroseconds // TypeDefIndex: 7510
+internal sealed class MetricTempoMapValuesCache.AccumulatedMicroseconds // TypeDefIndex: 7512
 {
-	[CompilerGeneratedAttribute] 
-	private readonly long <Time>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly double <Microseconds>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly double <MicrosecondsPerTick>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly double <TicksPerMicrosecond>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly long <Time>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly double <Microseconds>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly double <MicrosecondsPerTick>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly double <TicksPerMicrosecond>k__BackingField;
 
 	public long Time { get; }
 	public double Microseconds { get; }
@@ -63,16 +63,16 @@ internal sealed class MetricTempoMapValuesCache.AccumulatedMicroseconds // TypeD
 
 	public void .ctor(long time, double microseconds, double microsecondsPerTick) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_Time() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_Microseconds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_MicrosecondsPerTick() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_TicksPerMicrosecond() { }
 
 }

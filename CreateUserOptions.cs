@@ -1,49 +1,49 @@
-public struct CreateUserOptions // TypeDefIndex: 9328
+public struct CreateUserOptions // TypeDefIndex: 9330
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DateOfBirth>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ParentEmail>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DateOfBirth>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ParentEmail>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String DateOfBirth { get; set; }
 	public Utf8String ParentEmail { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DateOfBirth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DateOfBirth(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ParentEmail() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParentEmail(Utf8String value) { }
 
 }
 
-public struct CreateUserOptions // TypeDefIndex: 9571
+public struct CreateUserOptions // TypeDefIndex: 9573
 {
-	[CompilerGeneratedAttribute] 
-	private ContinuanceToken <ContinuanceToken>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ContinuanceToken <ContinuanceToken>k__BackingField;
 
 	public ContinuanceToken ContinuanceToken { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ContinuanceToken get_ContinuanceToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ContinuanceToken(ContinuanceToken value) { }
 
 }

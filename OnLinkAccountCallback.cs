@@ -1,4 +1,4 @@
-public sealed class OnLinkAccountCallback : MulticastDelegate // TypeDefIndex: 9607
+public sealed class OnLinkAccountCallback : MulticastDelegate // TypeDefIndex: 9609
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ public sealed class OnLinkAccountCallback : MulticastDelegate // TypeDefIndex: 9
 
 }
 
-public sealed class OnLinkAccountCallback : MulticastDelegate // TypeDefIndex: 9682
+public sealed class OnLinkAccountCallback : MulticastDelegate // TypeDefIndex: 9684
 {
 
 	public void .ctor(object object, IntPtr method) { }

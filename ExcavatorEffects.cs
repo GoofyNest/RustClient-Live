@@ -1,12 +1,12 @@
-public class ExcavatorEffects : MonoBehaviour // TypeDefIndex: 11364
+public class ExcavatorEffects : MonoBehaviour // TypeDefIndex: 11370
 {
-	public static ExcavatorEffects instance; 
-	public ParticleSystemContainer[] miningParticles; 
-	public SoundPlayer[] miningSounds; 
-	public SoundFollowCollider[] beltSounds; 
-	public SoundPlayer[] miningStartSounds; 
-	public GameObject[] ambientMetalRattles; 
-	public bool wasMining; 
+	public static ExcavatorEffects instance;
+	public ParticleSystemContainer[] miningParticles;
+	public SoundPlayer[] miningSounds;
+	public SoundFollowCollider[] beltSounds;
+	public SoundPlayer[] miningStartSounds;
+	public GameObject[] ambientMetalRattles;
+	public bool wasMining;
 
 
 	public void Awake() { }

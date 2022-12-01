@@ -1,6 +1,6 @@
 public enum StreamingContextStates // TypeDefIndex: 1063
 {
-	public int value__; 
+	public int value__;
 	public const StreamingContextStates CrossProcess = 1;
 	public const StreamingContextStates CrossMachine = 2;
 	public const StreamingContextStates File = 4;

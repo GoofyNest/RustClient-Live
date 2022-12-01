@@ -1,12 +1,12 @@
-internal struct UserInfoDataInternal : IGettable<UserInfoData>, ISettable<UserInfoData>, IDisposable // TypeDefIndex: 8328
+internal struct UserInfoDataInternal : IGettable<UserInfoData>, ISettable<UserInfoData>, IDisposable // TypeDefIndex: 8330
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
-	private IntPtr m_Country; 
-	private IntPtr m_DisplayName; 
-	private IntPtr m_PreferredLanguage; 
-	private IntPtr m_Nickname; 
-	private IntPtr m_DisplayNameSanitized; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
+	private IntPtr m_Country;
+	private IntPtr m_DisplayName;
+	private IntPtr m_PreferredLanguage;
+	private IntPtr m_Nickname;
+	private IntPtr m_DisplayNameSanitized;
 
 	public EpicAccountId UserId { get; set; }
 	public Utf8String Country { get; set; }

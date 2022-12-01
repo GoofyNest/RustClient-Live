@@ -1,13 +1,13 @@
 public sealed class ExecutionContext : IDisposable, ISerializable // TypeDefIndex: 782
 {
-	private SynchronizationContext _syncContext; 
-	private SynchronizationContext _syncContextNoFlow; 
-	private LogicalCallContext _logicalCallContext; 
-	private IllogicalCallContext _illogicalCallContext; 
-	private ExecutionContext.Flags _flags; 
-	private Dictionary<IAsyncLocal, object> _localValues; 
-	private List<IAsyncLocal> _localChangeNotifications; 
-	private static readonly ExecutionContext s_dummyDefaultEC; 
+	private SynchronizationContext _syncContext;
+	private SynchronizationContext _syncContextNoFlow;
+	private LogicalCallContext _logicalCallContext;
+	private IllogicalCallContext _illogicalCallContext;
+	private ExecutionContext.Flags _flags;
+	private Dictionary<IAsyncLocal, object> _localValues;
+	private List<IAsyncLocal> _localChangeNotifications;
+	private static readonly ExecutionContext s_dummyDefaultEC;
 
 	internal bool isNewCapture { get; set; }
 	internal bool isFlowSuppressed { get; set; }
@@ -31,17 +31,17 @@ public sealed class ExecutionContext : IDisposable, ISerializable // TypeDefInde
 
 	internal bool get_IsPreAllocatedDefault() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void .ctor() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void .ctor(bool isPreAllocatedDefault) { }
 
 	internal static object GetLocalValue(IAsyncLocal local) { }
 
 	internal static void SetLocalValue(IAsyncLocal local, object newValue, bool needChangeNotifications) { }
 
-	[HandleProcessCorruptedStateExceptionsAttribute] 
+	[HandleProcessCorruptedStateExceptionsAttribute]
 	internal static void OnAsyncLocalContextChanged(ExecutionContext previous, ExecutionContext current) { }
 
 	internal LogicalCallContext get_LogicalCallContext() { }
@@ -52,33 +52,33 @@ public sealed class ExecutionContext : IDisposable, ISerializable // TypeDefInde
 
 	internal void set_IllogicalCallContext(IllogicalCallContext value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal SynchronizationContext get_SynchronizationContext() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void set_SynchronizationContext(SynchronizationContext value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal SynchronizationContext get_SynchronizationContextNoFlow() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void set_SynchronizationContextNoFlow(SynchronizationContext value) { }
 
 	public void Dispose() { }
 
 	public static void Run(ExecutionContext executionContext, ContextCallback callback, object state) { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static void Run(ExecutionContext executionContext, ContextCallback callback, object state, bool preserveSyncCtx) { }
 
-	[HandleProcessCorruptedStateExceptionsAttribute] 
+	[HandleProcessCorruptedStateExceptionsAttribute]
 	internal static void RunInternal(ExecutionContext executionContext, ContextCallback callback, object state, bool preserveSyncCtx) { }
 
 	internal static void EstablishCopyOnWriteScope(ref ExecutionContextSwitcher ecsw) { }
 
 	private static void EstablishCopyOnWriteScope(Thread currentThread, bool knownNullWindowsIdentity, ref ExecutionContextSwitcher ecsw) { }
 
-	[HandleProcessCorruptedStateExceptionsAttribute] 
+	[HandleProcessCorruptedStateExceptionsAttribute]
 	internal static ExecutionContextSwitcher SetExecutionContext(ExecutionContext executionContext, bool preserveSyncCtx) { }
 
 	public ExecutionContext CreateCopy() { }
@@ -89,7 +89,7 @@ public sealed class ExecutionContext : IDisposable, ISerializable // TypeDefInde
 
 	public static ExecutionContext Capture() { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static ExecutionContext FastCapture() { }
 
 	internal static ExecutionContext Capture(ref StackCrawlMark stackMark, ExecutionContext.CaptureOptions options) { }
@@ -106,7 +106,7 @@ public sealed class ExecutionContext : IDisposable, ISerializable // TypeDefInde
 
 private enum ExecutionContext.Flags // TypeDefIndex: 783
 {
-	public int value__; 
+	public int value__;
 	public const ExecutionContext.Flags None = 0;
 	public const ExecutionContext.Flags IsNewCapture = 1;
 	public const ExecutionContext.Flags IsFlowSuppressed = 2;
@@ -116,7 +116,7 @@ private enum ExecutionContext.Flags // TypeDefIndex: 783
 
 internal struct ExecutionContext.Reader // TypeDefIndex: 784
 {
-	private ExecutionContext m_ec; 
+	private ExecutionContext m_ec;
 
 	public bool IsNull { get; }
 	public bool IsFlowSuppressed { get; }
@@ -149,7 +149,7 @@ internal struct ExecutionContext.Reader // TypeDefIndex: 784
 
 internal enum ExecutionContext.CaptureOptions // TypeDefIndex: 785
 {
-	public int value__; 
+	public int value__;
 	public const ExecutionContext.CaptureOptions None = 0;
 	public const ExecutionContext.CaptureOptions IgnoreSyncCtx = 1;
 	public const ExecutionContext.CaptureOptions OptimizeDefaultCase = 2;

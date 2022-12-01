@@ -1,15 +1,15 @@
-public struct OnFriendsUpdateInfo : ICallbackInfo // TypeDefIndex: 9397
+public struct OnFriendsUpdateInfo : ICallbackInfo // TypeDefIndex: 9399
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private FriendsStatus <PreviousStatus>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private FriendsStatus <CurrentStatus>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private FriendsStatus <PreviousStatus>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private FriendsStatus <CurrentStatus>k__BackingField;
 
 	public object ClientData { get; set; }
 	public EpicAccountId LocalUserId { get; set; }
@@ -18,34 +18,34 @@ public struct OnFriendsUpdateInfo : ICallbackInfo // TypeDefIndex: 9397
 	public FriendsStatus CurrentStatus { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public FriendsStatus get_PreviousStatus() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PreviousStatus(FriendsStatus value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public FriendsStatus get_CurrentStatus() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CurrentStatus(FriendsStatus value) { }
 
 	public Nullable<Result> GetResultCode() { }

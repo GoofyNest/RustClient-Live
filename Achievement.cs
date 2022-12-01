@@ -1,6 +1,6 @@
-public struct Achievement // TypeDefIndex: 5554
+public struct Achievement // TypeDefIndex: 5556
 {
-	internal string Value; 
+	internal string Value;
 
 	public bool State { get; }
 	public string Identifier { get; }

@@ -1,9 +1,9 @@
-public sealed class BarBeatFractionTimeSpan : ITimeSpan, IComparable, IComparable<BarBeatFractionTimeSpan>, IEquatable<BarBeatFractionTimeSpan> // TypeDefIndex: 7503
+public sealed class BarBeatFractionTimeSpan : ITimeSpan, IComparable, IComparable<BarBeatFractionTimeSpan>, IEquatable<BarBeatFractionTimeSpan> // TypeDefIndex: 7505
 {
-	[CompilerGeneratedAttribute] 
-	private readonly long <Bars>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly double <Beats>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly long <Bars>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly double <Beats>k__BackingField;
 
 	public long Bars { get; }
 	public double Beats { get; }
@@ -13,10 +13,10 @@ public sealed class BarBeatFractionTimeSpan : ITimeSpan, IComparable, IComparabl
 
 	public void .ctor(long bars, double beats) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_Bars() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_Beats() { }
 
 	public static bool op_Equality(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }

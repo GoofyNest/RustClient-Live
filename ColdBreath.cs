@@ -1,8 +1,8 @@
-public class ColdBreath : BaseMonoBehaviour // TypeDefIndex: 11064
+public class ColdBreath : BaseMonoBehaviour // TypeDefIndex: 11070
 {
-	public GameObjectRef effect; 
-	private BasePlayer player; 
-	private Transform jawBone; 
+	public GameObjectRef effect;
+	private BasePlayer player;
+	private Transform jawBone;
 
 
 	protected void OnEnable() { }

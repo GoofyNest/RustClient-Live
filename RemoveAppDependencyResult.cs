@@ -1,9 +1,9 @@
-internal struct RemoveAppDependencyResult_t : ICallbackData // TypeDefIndex: 5450
+internal struct RemoveAppDependencyResult_t : ICallbackData // TypeDefIndex: 5452
 {
-	internal Result Result; 
-	internal PublishedFileId PublishedFileId; 
-	internal AppId AppID; 
-	public static int _datasize; 
+	internal Result Result;
+	internal PublishedFileId PublishedFileId;
+	internal AppId AppID;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

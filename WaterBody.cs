@@ -1,28 +1,28 @@
-public class WaterBody : MonoBehaviour // TypeDefIndex: 12347
+public class WaterBody : MonoBehaviour // TypeDefIndex: 12355
 {
-	public WaterBodyType Type; 
-	public Renderer Renderer; 
-	public Collider[] Triggers; 
-	public bool IsOcean; 
-	[CompilerGeneratedAttribute] 
-	private Transform <Transform>k__BackingField; 
-	public WaterBody.FishingTag FishingType; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <MeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Mesh <SharedMesh>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <Material>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <DepthPass>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <DepthDisplacementPass>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <OcclusionPass>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <CausticsPass>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <OcclusionCausticsPass>k__BackingField; 
+	public WaterBodyType Type;
+	public Renderer Renderer;
+	public Collider[] Triggers;
+	public bool IsOcean;
+	[CompilerGeneratedAttribute]
+	private Transform <Transform>k__BackingField;
+	public WaterBody.FishingTag FishingType;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <MeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Mesh <SharedMesh>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <Material>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <DepthPass>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <DepthDisplacementPass>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <OcclusionPass>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <CausticsPass>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <OcclusionCausticsPass>k__BackingField;
 
 	public Transform Transform { get; set; }
 	public MeshFilter MeshFilter { get; set; }
@@ -35,60 +35,60 @@ public class WaterBody : MonoBehaviour // TypeDefIndex: 12347
 	public int OcclusionCausticsPass { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Transform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_Transform() { }
 
 	private void Awake() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_MeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SharedMesh(Mesh value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Mesh get_SharedMesh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Material(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_Material() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DepthPass(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_DepthPass() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DepthDisplacementPass(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_DepthDisplacementPass() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_OcclusionPass(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_OcclusionPass() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CausticsPass(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_CausticsPass() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_OcclusionCausticsPass(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_OcclusionCausticsPass() { }
 
 	private void OnEnable() { }
@@ -101,9 +101,9 @@ public class WaterBody : MonoBehaviour // TypeDefIndex: 12347
 
 }
 
-public enum WaterBody.FishingTag // TypeDefIndex: 12348
+public enum WaterBody.FishingTag // TypeDefIndex: 12356
 {
-	public int value__; 
+	public int value__;
 	public const WaterBody.FishingTag MoonPool = 1;
 	public const WaterBody.FishingTag River = 2;
 	public const WaterBody.FishingTag Ocean = 4;

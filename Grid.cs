@@ -1,6 +1,6 @@
 internal class Grid.Node<T> // TypeDefIndex: 4836
 {
-	public HashSet<T> Contents; 
+	public HashSet<T> Contents;
 
 
 	public void Add(T obj) { }

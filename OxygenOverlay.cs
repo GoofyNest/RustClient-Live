@@ -1,14 +1,14 @@
-public class OxygenOverlay : MonoBehaviour // TypeDefIndex: 10860
+public class OxygenOverlay : MonoBehaviour // TypeDefIndex: 10866
 {
-	[SerializeField] 
-	private PostProcessVolume postProcessVolume; 
-	[SerializeField] 
-	private float smoothTime; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	private bool submarinesOnly; 
-	private float smoothCurrent; 
-	private float smoothVelocity; 
+	[SerializeField]
+	private PostProcessVolume postProcessVolume;
+	[SerializeField]
+	private float smoothTime;
+	[TooltipAttribute]
+	[SerializeField]
+	private bool submarinesOnly;
+	private float smoothCurrent;
+	private float smoothVelocity;
 
 
 	public void Awake() { }

@@ -1,8 +1,8 @@
 internal struct GameConnectedChatJoin_t : ICallbackData // TypeDefIndex: 5322
 {
-	internal ulong SteamIDClanChat; 
-	internal ulong SteamIDUser; 
-	public static int _datasize; 
+	internal ulong SteamIDClanChat;
+	internal ulong SteamIDUser;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

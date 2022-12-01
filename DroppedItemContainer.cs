@@ -1,13 +1,13 @@
-public class DroppedItemContainer : BaseCombatEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10101
+public class DroppedItemContainer : BaseCombatEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10103
 {
-	private Option __menuOption_Menu_Open; 
-	public string lootPanelName; 
-	public int maxItemCount; 
-	public ulong playerSteamID; 
-	public string _playerName; 
-	public bool onlyOwnerLoot; 
-	public SoundDefinition openSound; 
-	public SoundDefinition closeSound; 
+	private Option __menuOption_Menu_Open;
+	public string lootPanelName;
+	public int maxItemCount;
+	public ulong playerSteamID;
+	public string _playerName;
+	public bool onlyOwnerLoot;
+	public SoundDefinition openSound;
+	public SoundDefinition closeSound;
 
 	public override bool HasMenuOptions { get; }
 	public Translate.Phrase LootPanelTitle { get; }
@@ -30,9 +30,9 @@ public class DroppedItemContainer : BaseCombatEntity, LootPanel.IHasLootPanel, I
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
 	public void Menu_Open(BasePlayer player) { }
 
 	public SoundDefinition get_OpenSound() { }

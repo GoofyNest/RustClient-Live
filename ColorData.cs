@@ -1,36 +1,36 @@
-internal struct ColorData // TypeDefIndex: 7714
+internal struct ColorData // TypeDefIndex: 7716
 {
-	[CompilerGeneratedAttribute] 
-	private byte <Red>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <Green>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <Blue>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte <Red>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <Green>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <Blue>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public byte Red { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public byte Green { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public byte Blue { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Red() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Red(byte value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Green() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Green(byte value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Blue() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Blue(byte value) { }
 
 }

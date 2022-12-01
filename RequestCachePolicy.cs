@@ -1,6 +1,6 @@
 public class RequestCachePolicy // TypeDefIndex: 3093
 {
-	private RequestCacheLevel m_Level; 
+	private RequestCacheLevel m_Level;
 
 	public RequestCacheLevel Level { get; }
 

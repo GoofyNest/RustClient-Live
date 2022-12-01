@@ -1,8 +1,8 @@
 internal sealed class LeafRangeNode : LeafNode // TypeDefIndex: 2166
 {
-	private Decimal min; 
-	private Decimal max; 
-	private BitSet nextIteration; 
+	private Decimal min;
+	private Decimal max;
+	private BitSet nextIteration;
 
 	public Decimal Max { get; }
 	public Decimal Min { get; }

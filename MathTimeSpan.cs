@@ -1,14 +1,14 @@
-public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7505
+public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7507
 {
-	private static readonly Dictionary<TimeSpanMode, Tuple<string, string>> ModeStrings; 
-	[CompilerGeneratedAttribute] 
-	private readonly ITimeSpan <TimeSpan1>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly ITimeSpan <TimeSpan2>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly MathOperation <Operation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly TimeSpanMode <Mode>k__BackingField; 
+	private static readonly Dictionary<TimeSpanMode, Tuple<string, string>> ModeStrings;
+	[CompilerGeneratedAttribute]
+	private readonly ITimeSpan <TimeSpan1>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly ITimeSpan <TimeSpan2>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly MathOperation <Operation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly TimeSpanMode <Mode>k__BackingField;
 
 	public ITimeSpan TimeSpan1 { get; }
 	public ITimeSpan TimeSpan2 { get; }
@@ -18,16 +18,16 @@ public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7505
 
 	internal void .ctor(ITimeSpan timeSpan1, ITimeSpan timeSpan2, MathOperation operation, TimeSpanMode mode) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ITimeSpan get_TimeSpan1() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ITimeSpan get_TimeSpan2() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MathOperation get_Operation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimeSpanMode get_Mode() { }
 
 	public static bool op_Equality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }

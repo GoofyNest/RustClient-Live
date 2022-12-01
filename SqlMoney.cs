@@ -1,16 +1,16 @@
 public struct SqlMoney : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4355
 {
-	private bool _fNotNull; 
-	private long _value; 
-	internal static readonly int s_iMoneyScale; 
-	private static readonly long s_lTickBase; 
-	private static readonly double s_dTickBase; 
-	private static readonly long s_minLong; 
-	private static readonly long s_maxLong; 
-	public static readonly SqlMoney Null; 
-	public static readonly SqlMoney Zero; 
-	public static readonly SqlMoney MinValue; 
-	public static readonly SqlMoney MaxValue; 
+	private bool _fNotNull;
+	private long _value;
+	internal static readonly int s_iMoneyScale;
+	private static readonly long s_lTickBase;
+	private static readonly double s_dTickBase;
+	private static readonly long s_minLong;
+	private static readonly long s_maxLong;
+	public static readonly SqlMoney Null;
+	public static readonly SqlMoney Zero;
+	public static readonly SqlMoney MinValue;
+	public static readonly SqlMoney MaxValue;
 
 	public bool IsNull { get; }
 	public Decimal Value { get; }

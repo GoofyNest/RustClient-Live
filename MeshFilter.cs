@@ -4,17 +4,17 @@ public sealed class MeshFilter : Component // TypeDefIndex: 3410
 	public Mesh mesh { get; set; }
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DontStripMeshFilter() { }
 
 	public Mesh get_sharedMesh() { }
 
 	public void set_sharedMesh(Mesh value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Mesh get_mesh() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public void set_mesh(Mesh value) { }
 
 }

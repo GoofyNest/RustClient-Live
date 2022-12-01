@@ -1,8 +1,8 @@
-internal struct IsUserInSessionOptionsInternal : ISettable<IsUserInSessionOptions>, IDisposable // TypeDefIndex: 8495
+internal struct IsUserInSessionOptionsInternal : ISettable<IsUserInSessionOptions>, IDisposable // TypeDefIndex: 8497
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionName; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionName;
+	private IntPtr m_TargetUserId;
 
 	public Utf8String SessionName { set; }
 	public ProductUserId TargetUserId { set; }

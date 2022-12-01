@@ -1,6 +1,6 @@
-public class CeilingLight : IOEntity // TypeDefIndex: 10268
+public class CeilingLight : IOEntity // TypeDefIndex: 10271
 {
-	public float pushScale; 
+	public float pushScale;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -9,7 +9,7 @@ public class CeilingLight : IOEntity // TypeDefIndex: 10268
 
 	public override void OnAttacked(HitInfo info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void ClientPhysPush(BaseEntity.RPCMessage msg) { }
 
 	public void PhysPush(Vector3 attackNormal, Vector3 hitPositionWorld) { }

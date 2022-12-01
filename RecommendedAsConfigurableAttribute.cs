@@ -1,9 +1,9 @@
 public class RecommendedAsConfigurableAttribute : Attribute // TypeDefIndex: 2739
 {
-	private bool recommendedAsConfigurable; 
-	public static readonly RecommendedAsConfigurableAttribute No; 
-	public static readonly RecommendedAsConfigurableAttribute Yes; 
-	public static readonly RecommendedAsConfigurableAttribute Default; 
+	private bool recommendedAsConfigurable;
+	public static readonly RecommendedAsConfigurableAttribute No;
+	public static readonly RecommendedAsConfigurableAttribute Yes;
+	public static readonly RecommendedAsConfigurableAttribute Default;
 
 	public bool RecommendedAsConfigurable { get; }
 

@@ -1,8 +1,8 @@
-internal struct UnlockedAchievementInternal : IGettable<UnlockedAchievement>, ISettable<UnlockedAchievement>, IDisposable // TypeDefIndex: 9952
+internal struct UnlockedAchievementInternal : IGettable<UnlockedAchievement>, ISettable<UnlockedAchievement>, IDisposable // TypeDefIndex: 9954
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AchievementId; 
-	private long m_UnlockTime; 
+	private int m_ApiVersion;
+	private IntPtr m_AchievementId;
+	private long m_UnlockTime;
 
 	public Utf8String AchievementId { get; set; }
 	public Nullable<DateTimeOffset> UnlockTime { get; set; }

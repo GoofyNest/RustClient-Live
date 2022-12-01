@@ -1,8 +1,8 @@
-public class TextureSampler // TypeDefIndex: 5620
+public class TextureSampler // TypeDefIndex: 5622
 {
-	private Color[] _data; 
-	private int _height; 
-	private int _width; 
+	private Color[] _data;
+	private int _height;
+	private int _width;
 
 
 	public Color GetPixelBilinear(float u, float v) { }

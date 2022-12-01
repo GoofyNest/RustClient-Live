@@ -1,6 +1,6 @@
 public struct Int64 : IComparable, IFormattable, IConvertible, IComparable<long>, IEquatable<long> // TypeDefIndex: 259
 {
-	internal long m_value; 
+	internal long m_value;
 	public const long MaxValue = 9223372036854775807;
 	public const long MinValue = -9223372036854775808;
 

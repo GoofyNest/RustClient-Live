@@ -1,7 +1,7 @@
-internal struct LobbyModificationSetInvitesAllowedOptionsInternal : ISettable<LobbyModificationSetInvitesAllowedOptions>, IDisposable // TypeDefIndex: 9177
+internal struct LobbyModificationSetInvitesAllowedOptionsInternal : ISettable<LobbyModificationSetInvitesAllowedOptions>, IDisposable // TypeDefIndex: 9179
 {
-	private int m_ApiVersion; 
-	private int m_InvitesAllowed; 
+	private int m_ApiVersion;
+	private int m_InvitesAllowed;
 
 	public bool InvitesAllowed { set; }
 

@@ -1,12 +1,12 @@
-public class EmissionToggle : MonoBehaviour, IClientComponent // TypeDefIndex: 11078
+public class EmissionToggle : MonoBehaviour, IClientComponent // TypeDefIndex: 11084
 {
-	private Color emissionColor; 
-	public Renderer[] targetRenderers; 
-	public int materialIndex; 
-	private bool inited; 
-	private Nullable<float> emissionPercent; 
-	private static MaterialPropertyBlock block; 
-	private static int emissionColorID; 
+	private Color emissionColor;
+	public Renderer[] targetRenderers;
+	public int materialIndex;
+	private bool inited;
+	private Nullable<float> emissionPercent;
+	private static MaterialPropertyBlock block;
+	private static int emissionColorID;
 
 
 	public void OnEnable() { }

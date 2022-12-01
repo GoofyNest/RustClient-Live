@@ -1,7 +1,7 @@
 public class X509Certificate2 : X509Certificate // TypeDefIndex: 2814
 {
-	private string friendlyName; 
-	private static byte[] signedData; 
+	private string friendlyName;
+	private static byte[] signedData;
 
 	internal X509Certificate2Impl Impl { get; }
 	public X509ExtensionCollection Extensions { get; }
@@ -15,7 +15,7 @@ public class X509Certificate2 : X509Certificate // TypeDefIndex: 2814
 	public X500DistinguishedName SubjectName { get; }
 	public string Thumbprint { get; }
 	public int Version { get; }
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	internal X509Certificate MonoCertificate { get; }
 
 
@@ -55,13 +55,13 @@ public class X509Certificate2 : X509Certificate // TypeDefIndex: 2814
 
 	public int get_Version() { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public string GetNameInfo(X509NameType nameType, bool forIssuer) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override void Import(string fileName, string password, X509KeyStorageFlags keyStorageFlags) { }
 
 	public override void Reset() { }
@@ -72,7 +72,7 @@ public class X509Certificate2 : X509Certificate // TypeDefIndex: 2814
 
 	private static void AppendBuffer(StringBuilder sb, byte[] buffer) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public bool Verify() { }
 
 	internal X509Certificate get_MonoCertificate() { }

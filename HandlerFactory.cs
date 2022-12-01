@@ -1,4 +1,4 @@
-public class HandlerFactory // TypeDefIndex: 6946
+public class HandlerFactory // TypeDefIndex: 6948
 {
 
 	public static IHandler BuildHandler(WebSocketHttpRequest request, IWebSocketConnection connection) { }

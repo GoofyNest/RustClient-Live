@@ -1,6 +1,6 @@
 public class ActivatedServiceTypeEntry : TypeEntry // TypeDefIndex: 1128
 {
-	private Type obj_type; 
+	private Type obj_type;
 
 	public Type ObjectType { get; }
 

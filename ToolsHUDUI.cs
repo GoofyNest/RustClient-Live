@@ -1,10 +1,10 @@
-public class ToolsHUDUI : MonoBehaviour // TypeDefIndex: 13018
+public class ToolsHUDUI : MonoBehaviour // TypeDefIndex: 13032
 {
-	[SerializeField] 
-	private GameObject prefab; 
-	[SerializeField] 
-	private Transform parent; 
-	private bool initialised; 
+	[SerializeField]
+	private GameObject prefab;
+	[SerializeField]
+	private Transform parent;
+	private bool initialised;
 
 
 	protected void OnEnable() { }

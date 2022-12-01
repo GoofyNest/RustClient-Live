@@ -1,7 +1,7 @@
-public static class TimedObjectUtilities // TypeDefIndex: 7479
+public static class TimedObjectUtilities // TypeDefIndex: 7481
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TTime TimeAs<TTime>(ITimedObject obj, TempoMap tempoMap) { }
 	/* GenericInstMethod :
 	|

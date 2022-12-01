@@ -1,12 +1,12 @@
 public sealed class CanvasGroup : Behaviour, ICanvasRaycastFilter // TypeDefIndex: 4736
 {
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float alpha { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool interactable { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool blocksRaycasts { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool ignoreParentGroups { get; }
 
 

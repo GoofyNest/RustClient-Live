@@ -1,9 +1,9 @@
-public class FrostRenderer : PostProcessEffectRenderer<Frost> // TypeDefIndex: 12001
+public class FrostRenderer : PostProcessEffectRenderer<Frost> // TypeDefIndex: 12008
 {
-	private int scaleProperty; 
-	private int sharpnessProperty; 
-	private int darknessProperty; 
-	private Shader frostShader; 
+	private int scaleProperty;
+	private int sharpnessProperty;
+	private int darknessProperty;
+	private Shader frostShader;
 
 
 	public override void Init() { }

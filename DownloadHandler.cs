@@ -1,16 +1,16 @@
 public class DownloadHandler : IDisposable // TypeDefIndex: 4137
 {
-	[VisibleToOtherModulesAttribute] 
-	internal IntPtr m_Ptr; 
+	[VisibleToOtherModulesAttribute]
+	internal IntPtr m_Ptr;
 
 	public byte[] data { get; }
 	public string text { get; }
 
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Release() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal void .ctor() { }
 
 	protected override void Finalize() { }
@@ -36,8 +36,8 @@ public class DownloadHandler : IDisposable // TypeDefIndex: 4137
 	|-DownloadHandler.GetCheckedDownloader<object>
 	*/
 
-	[NativeThrowsAttribute] 
-	[VisibleToOtherModulesAttribute] 
+	[NativeThrowsAttribute]
+	[VisibleToOtherModulesAttribute]
 	internal static byte[] InternalGetByteArray(DownloadHandler dh) { }
 
 }

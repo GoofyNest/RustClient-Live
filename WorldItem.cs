@@ -1,8 +1,8 @@
-public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
+public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6313
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Item item; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Item item;
 
 
 	public static void ResetToPool(WorldItem instance) { }
@@ -59,11 +59,11 @@ public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
 
 }
 
-public class WorldItem : BaseEntity // TypeDefIndex: 10388
+public class WorldItem : BaseEntity // TypeDefIndex: 10392
 {
-	[HeaderAttribute] 
-	public bool allowPickup; 
-	public Item item; 
+	[HeaderAttribute]
+	public bool allowPickup;
+	public Item item;
 
 	public override BaseEntity.TraitFlag Traits { get; }
 
@@ -72,10 +72,10 @@ public class WorldItem : BaseEntity // TypeDefIndex: 10388
 
 	protected override void ClientInit(Entity info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void UpdateItem(BaseEntity.RPCMessage packet) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void PickupSound(BaseEntity.RPCMessage msg) { }
 
 	public virtual Vector3 IdealMenuPosition(BasePlayer playerUser) { }
@@ -104,7 +104,7 @@ public class WorldItem : BaseEntity // TypeDefIndex: 10388
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <GetMenuItems>
 
 }

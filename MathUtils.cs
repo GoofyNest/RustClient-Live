@@ -1,4 +1,4 @@
-internal static class MathUtils // TypeDefIndex: 5969
+internal static class MathUtils // TypeDefIndex: 5971
 {
 
 	public static int IntLength(ulong i) { }

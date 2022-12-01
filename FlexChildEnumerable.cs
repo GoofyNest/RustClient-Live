@@ -1,7 +1,7 @@
-internal struct FlexChildEnumerable : IEnumerable<IFlexNode>, IEnumerable // TypeDefIndex: 6817
+internal struct FlexChildEnumerable : IEnumerable<IFlexNode>, IEnumerable // TypeDefIndex: 6819
 {
-	private readonly FlexElement _parent; 
-	private readonly bool _reversed; 
+	private readonly FlexElement _parent;
+	private readonly bool _reversed;
 
 
 	public void .ctor(FlexElement parent, bool reversed) { }

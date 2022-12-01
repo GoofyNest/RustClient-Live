@@ -1,18 +1,18 @@
-public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 10676
+public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 10680
 {
-	public EnvironmentFishManager.FishTypeInstance[] fishTypes; 
-	[ClientVar] 
-	public static int maxFishPerType; 
-	[ClientVar] 
-	public static float maxFishDistance; 
-	[ClientVar] 
-	[HelpAttribute] 
-	public static float framebudgetms; 
-	public static EnvironmentFishManager.EnvironmentFishWorkQueue workQueue; 
-	private GameObject fishContainer; 
-	private int lastMaxFish; 
-	private Vector3 lastFishUpdatePosition; 
-	private float nextFishUpdateTime; 
+	public EnvironmentFishManager.FishTypeInstance[] fishTypes;
+	[ClientVar]
+	public static int maxFishPerType;
+	[ClientVar]
+	public static float maxFishDistance;
+	[ClientVar]
+	[HelpAttribute]
+	public static float framebudgetms;
+	public static EnvironmentFishManager.EnvironmentFishWorkQueue workQueue;
+	private GameObject fishContainer;
+	private int lastMaxFish;
+	private Vector3 lastFishUpdatePosition;
+	private float nextFishUpdateTime;
 
 
 	public int GetMaxFish() { }
@@ -37,17 +37,17 @@ public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // Typ
 
 }
 
-public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 10677
+public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 10681
 {
-	public GameObjectRef prefab; 
-	public bool shouldSchool; 
-	public float populationScale; 
-	public bool freshwater; 
-	public bool seawater; 
-	public float minDepth; 
-	public float maxDepth; 
-	public List<EnvironmentFish> activeFish; 
-	public List<EnvironmentFish> sleeping; 
+	public GameObjectRef prefab;
+	public bool shouldSchool;
+	public float populationScale;
+	public bool freshwater;
+	public bool seawater;
+	public float minDepth;
+	public float maxDepth;
+	public List<EnvironmentFish> activeFish;
+	public List<EnvironmentFish> sleeping;
 
 
 	public float GetPopulationScaleForPoint(Vector3 point) { }
@@ -60,7 +60,7 @@ public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 10677
 
 }
 
-public class EnvironmentFishManager.EnvironmentFishWorkQueue : ObjectWorkQueue<EnvironmentFish> // TypeDefIndex: 10678
+public class EnvironmentFishManager.EnvironmentFishWorkQueue : ObjectWorkQueue<EnvironmentFish> // TypeDefIndex: 10682
 {
 
 	protected override void RunJob(EnvironmentFish entity) { }

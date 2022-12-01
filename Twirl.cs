@@ -1,8 +1,8 @@
-public class Twirl : ImageEffectBase // TypeDefIndex: 8233
+public class Twirl : ImageEffectBase // TypeDefIndex: 8235
 {
-	public Vector2 radius; 
-	public float angle; 
-	public Vector2 center; 
+	public Vector2 radius;
+	public float angle;
+	public Vector2 center;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }

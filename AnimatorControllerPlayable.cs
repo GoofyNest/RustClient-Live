@@ -1,7 +1,7 @@
 public struct AnimatorControllerPlayable : IEquatable<AnimatorControllerPlayable> // TypeDefIndex: 4519
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimatorControllerPlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimatorControllerPlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }

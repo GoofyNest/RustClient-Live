@@ -1,8 +1,8 @@
-internal struct LobbyModificationAddMemberAttributeOptionsInternal : ISettable<LobbyModificationAddMemberAttributeOptions>, IDisposable // TypeDefIndex: 9169
+internal struct LobbyModificationAddMemberAttributeOptionsInternal : ISettable<LobbyModificationAddMemberAttributeOptions>, IDisposable // TypeDefIndex: 9171
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Attribute; 
-	private LobbyAttributeVisibility m_Visibility; 
+	private int m_ApiVersion;
+	private IntPtr m_Attribute;
+	private LobbyAttributeVisibility m_Visibility;
 
 	public Nullable<AttributeData> Attribute { set; }
 	public LobbyAttributeVisibility Visibility { set; }

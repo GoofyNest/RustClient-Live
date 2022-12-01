@@ -1,8 +1,8 @@
-public class Subscriber : Pool.IPooled // TypeDefIndex: 6881
+public class Subscriber : Pool.IPooled // TypeDefIndex: 6883
 {
-	internal Manager manager; 
-	internal Connection connection; 
-	public ListHashSet<Group> subscribed; 
+	internal Manager manager;
+	internal Connection connection;
+	public ListHashSet<Group> subscribed;
 
 
 	public Group Subscribe(Group group) { }

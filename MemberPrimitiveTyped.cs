@@ -1,7 +1,7 @@
 internal sealed class MemberPrimitiveTyped // TypeDefIndex: 1080
 {
-	internal InternalPrimitiveTypeE primitiveTypeEnum; 
-	internal object value; 
+	internal InternalPrimitiveTypeE primitiveTypeEnum;
+	internal object value;
 
 
 	internal void .ctor() { }

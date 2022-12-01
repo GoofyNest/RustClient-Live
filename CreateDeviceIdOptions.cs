@@ -1,15 +1,15 @@
-public struct CreateDeviceIdOptions // TypeDefIndex: 9567
+public struct CreateDeviceIdOptions // TypeDefIndex: 9569
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeviceModel>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeviceModel>k__BackingField;
 
 	public Utf8String DeviceModel { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeviceModel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeviceModel(Utf8String value) { }
 
 }

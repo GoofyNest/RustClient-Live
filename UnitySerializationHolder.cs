@@ -1,13 +1,13 @@
 internal class UnitySerializationHolder : ISerializable, IObjectReference // TypeDefIndex: 332
 {
-	private Type[] m_instantiation; 
-	private int[] m_elementTypes; 
-	private int m_genericParameterPosition; 
-	private Type m_declaringType; 
-	private MethodBase m_declaringMethod; 
-	private string m_data; 
-	private string m_assemblyName; 
-	private int m_unityType; 
+	private Type[] m_instantiation;
+	private int[] m_elementTypes;
+	private int m_genericParameterPosition;
+	private Type m_declaringType;
+	private MethodBase m_declaringMethod;
+	private string m_data;
+	private string m_assemblyName;
+	private int m_unityType;
 
 
 	internal static void GetUnitySerializationInfo(SerializationInfo info, Missing missing) { }

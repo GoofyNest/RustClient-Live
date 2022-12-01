@@ -1,10 +1,10 @@
 public abstract class UnityEventBase : ISerializationCallbackReceiver // TypeDefIndex: 3641
 {
-	private InvokableCallList m_Calls; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private PersistentCallGroup m_PersistentCalls; 
-	private bool m_CallsDirty; 
+	private InvokableCallList m_Calls;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private PersistentCallGroup m_PersistentCalls;
+	private bool m_CallsDirty;
 
 
 	protected void .ctor() { }

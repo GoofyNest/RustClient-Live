@@ -1,9 +1,9 @@
-public class SampleBuffer : ABuffer // TypeDefIndex: 7410
+public class SampleBuffer : ABuffer // TypeDefIndex: 7412
 {
-	private readonly short[] _Buffer; 
-	private readonly int[] _Bufferp; 
-	private readonly int _Channels; 
-	private readonly int _Frequency; 
+	private readonly short[] _Buffer;
+	private readonly int[] _Bufferp;
+	private readonly int _Channels;
+	private readonly int _Frequency;
 
 
 	internal void .ctor(int sampleFrequency, int numberOfChannels) { }

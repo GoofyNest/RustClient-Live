@@ -1,6 +1,6 @@
-public class FireSpot : BaseEntity // TypeDefIndex: 11273
+public class FireSpot : BaseEntity // TypeDefIndex: 11279
 {
-	public GameObject flameEffect; 
+	public GameObject flameEffect;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

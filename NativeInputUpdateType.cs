@@ -1,6 +1,6 @@
 internal enum NativeInputUpdateType // TypeDefIndex: 4527
 {
-	public int value__; 
+	public int value__;
 	public const NativeInputUpdateType Dynamic = 1;
 	public const NativeInputUpdateType Fixed = 2;
 	public const NativeInputUpdateType BeforeRender = 4;

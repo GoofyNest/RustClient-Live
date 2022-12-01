@@ -1,7 +1,7 @@
-public class ISO2022JPEncoding : MonoEncoding // TypeDefIndex: 7820
+public class ISO2022JPEncoding : MonoEncoding // TypeDefIndex: 7822
 {
-	private readonly bool allow_1byte_kana; 
-	private readonly bool allow_shift_io; 
+	private readonly bool allow_1byte_kana;
+	private readonly bool allow_shift_io;
 
 	public override string BodyName { get; }
 	public override string HeaderName { get; }

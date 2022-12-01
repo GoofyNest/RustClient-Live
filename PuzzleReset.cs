@@ -1,12 +1,12 @@
-public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6365
+public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6367
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public bool playerBlocksReset; 
-	public float playerDetectionRadius; 
-	public Vector3 playerDetectionOrigin; 
-	public float timeBetweenResets; 
-	public bool scaleWithServerPopulation; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public bool playerBlocksReset;
+	public float playerDetectionRadius;
+	public Vector3 playerDetectionOrigin;
+	public float timeBetweenResets;
+	public bool scaleWithServerPopulation;
 
 
 	public static void ResetToPool(PuzzleReset instance) { }
@@ -63,20 +63,22 @@ public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class PuzzleReset : FacepunchBehaviour // TypeDefIndex: 11547
+public class PuzzleReset : FacepunchBehaviour // TypeDefIndex: 11554
 {
-	public SpawnGroup[] respawnGroups; 
-	public IOEntity[] resetEnts; 
-	public GameObject[] resetObjects; 
-	public bool playersBlockReset; 
-	public bool CheckSleepingAIZForPlayers; 
-	public float playerDetectionRadius; 
-	public float playerHeightDetectionMinMax; 
-	public Transform playerDetectionOrigin; 
-	public float timeBetweenResets; 
-	public bool scaleWithServerPopulation; 
-	[HideInInspector] 
-	public Vector3[] resetPositions; 
+	public SpawnGroup[] respawnGroups;
+	public IOEntity[] resetEnts;
+	public GameObject[] resetObjects;
+	public bool playersBlockReset;
+	public bool CheckSleepingAIZForPlayers;
+	public float playerDetectionRadius;
+	public float playerHeightDetectionMinMax;
+	public Transform playerDetectionOrigin;
+	public float timeBetweenResets;
+	public bool scaleWithServerPopulation;
+	[HideInInspector]
+	public Vector3[] resetPositions;
+	public bool broadcastResetMessage;
+	public Translate.Phrase resetPhrase;
 
 
 	public void .ctor() { }

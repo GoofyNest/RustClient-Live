@@ -1,10 +1,10 @@
-public sealed class FastApproximateAntialiasing // TypeDefIndex: 13574
+public sealed class FastApproximateAntialiasing // TypeDefIndex: 13590
 {
-	[FormerlySerializedAsAttribute] 
-	[TooltipAttribute] 
-	public bool fastMode; 
-	[TooltipAttribute] 
-	public bool keepAlpha; 
+	[FormerlySerializedAsAttribute]
+	[TooltipAttribute]
+	public bool fastMode;
+	[TooltipAttribute]
+	public bool keepAlpha;
 
 
 	public void .ctor() { }

@@ -7,10 +7,10 @@ internal class BuiltinRuntimeReflectionSystem : IScriptableRuntimeReflectionSyst
 
 	private void Dispose(bool disposing) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static bool BuiltinUpdate() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static BuiltinRuntimeReflectionSystem Internal_BuiltinRuntimeReflectionSystem_New() { }
 
 	public void .ctor() { }

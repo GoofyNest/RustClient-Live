@@ -1,19 +1,19 @@
-public class ConditionalModel : PrefabAttribute // TypeDefIndex: 10778
+public class ConditionalModel : PrefabAttribute // TypeDefIndex: 10782
 {
-	public GameObjectRef prefab; 
-	public bool onClient; 
-	public bool onServer; 
-	public ModelConditionTest[] conditions; 
-	[CompilerGeneratedAttribute] 
-	private uint <targetPrefabId>k__BackingField; 
+	public GameObjectRef prefab;
+	public bool onClient;
+	public bool onServer;
+	public ModelConditionTest[] conditions;
+	[CompilerGeneratedAttribute]
+	private uint <targetPrefabId>k__BackingField;
 
 	public uint targetPrefabId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_targetPrefabId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_targetPrefabId(uint value) { }
 
 	protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }

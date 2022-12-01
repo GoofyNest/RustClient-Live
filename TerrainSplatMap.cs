@@ -1,8 +1,8 @@
-public class TerrainSplatMap : TerrainMap<byte> // TypeDefIndex: 12163
+public class TerrainSplatMap : TerrainMap<byte> // TypeDefIndex: 12170
 {
-	public Texture2D SplatTexture0; 
-	public Texture2D SplatTexture1; 
-	internal int num; 
+	public Texture2D SplatTexture0;
+	public Texture2D SplatTexture1;
+	internal int num;
 
 
 	public override void Setup() { }
@@ -63,10 +63,10 @@ public class TerrainSplatMap : TerrainMap<byte> // TypeDefIndex: 12163
 
 }
 
-private sealed class TerrainSplatMap.<>c__DisplayClass4_0 // TypeDefIndex: 12164
+private sealed class TerrainSplatMap.<>c__DisplayClass4_0 // TypeDefIndex: 12171
 {
-	public Color32[] cols; 
-	public TerrainSplatMap <>4__this; 
+	public Color32[] cols;
+	public TerrainSplatMap <>4__this;
 
 
 	public void .ctor() { }
@@ -75,10 +75,10 @@ private sealed class TerrainSplatMap.<>c__DisplayClass4_0 // TypeDefIndex: 12164
 
 }
 
-private sealed class TerrainSplatMap.<>c__DisplayClass4_1 // TypeDefIndex: 12165
+private sealed class TerrainSplatMap.<>c__DisplayClass4_1 // TypeDefIndex: 12172
 {
-	public Color32[] cols; 
-	public TerrainSplatMap <>4__this; 
+	public Color32[] cols;
+	public TerrainSplatMap <>4__this;
 
 
 	public void .ctor() { }
@@ -87,12 +87,12 @@ private sealed class TerrainSplatMap.<>c__DisplayClass4_1 // TypeDefIndex: 12165
 
 }
 
-private sealed class TerrainSplatMap.<>c__DisplayClass26_0 // TypeDefIndex: 12166
+private sealed class TerrainSplatMap.<>c__DisplayClass26_0 // TypeDefIndex: 12173
 {
-	public TerrainSplatMap <>4__this; 
-	public int idx; 
-	public float opacity; 
-	public int id; 
+	public TerrainSplatMap <>4__this;
+	public int idx;
+	public float opacity;
+	public int id;
 
 
 	public void .ctor() { }
@@ -101,12 +101,12 @@ private sealed class TerrainSplatMap.<>c__DisplayClass26_0 // TypeDefIndex: 1216
 
 }
 
-private sealed class TerrainSplatMap.<>c__DisplayClass28_0 // TypeDefIndex: 12167
+private sealed class TerrainSplatMap.<>c__DisplayClass28_0 // TypeDefIndex: 12174
 {
-	public TerrainSplatMap <>4__this; 
-	public int idx; 
-	public float delta; 
-	public int id; 
+	public TerrainSplatMap <>4__this;
+	public int idx;
+	public float delta;
+	public int id;
 
 
 	public void .ctor() { }

@@ -1,18 +1,18 @@
-public static class BoundsEx // TypeDefIndex: 13132
+public static class BoundsEx // TypeDefIndex: 13147
 {
-	private static Vector3[] pts; 
+	private static Vector3[] pts;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Bounds XZ3D(Bounds bounds) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Bounds Transform(Bounds bounds, Matrix4x4 matrix) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Rect ToScreenRect(Bounds b, Camera cam) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Rect ToCanvasRect(Bounds b, RectTransform target, Camera cam) { }
 
 	private static void .cctor() { }

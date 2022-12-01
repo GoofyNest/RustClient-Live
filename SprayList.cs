@@ -1,8 +1,8 @@
-public class SprayList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6441
+public class SprayList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6443
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<LinePoint> linePoints; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<LinePoint> linePoints;
 
 
 	public static void ResetToPool(SprayList instance) { }

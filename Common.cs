@@ -1,7 +1,7 @@
-public sealed class Common // TypeDefIndex: 8281
+public sealed class Common // TypeDefIndex: 8283
 {
 	public const ulong InvalidNotificationid = 0;
-	public static readonly Utf8String IptUnknown; 
+	public static readonly Utf8String IptUnknown;
 	public const int PagequeryApiLatest = 1;
 	public const int PagequeryMaxcountDefault = 10;
 	public const int PagequeryMaxcountMaximum = 100;

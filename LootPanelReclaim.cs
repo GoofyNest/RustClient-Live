@@ -1,9 +1,9 @@
-public class LootPanelReclaim : LootPanel // TypeDefIndex: 12801
+public class LootPanelReclaim : LootPanel // TypeDefIndex: 12815
 {
-	public int oldOverflow; 
-	public Text overflowText; 
-	public GameObject overflowObject; 
-	public static readonly Translate.Phrase MorePhrase; 
+	public int oldOverflow;
+	public Text overflowText;
+	public GameObject overflowObject;
+	public static readonly Translate.Phrase MorePhrase;
 
 
 	public override void Update() { }

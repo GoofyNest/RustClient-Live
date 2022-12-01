@@ -1,6 +1,6 @@
 internal struct SessionMask // TypeDefIndex: 1621
 {
-	private uint m_mask; 
+	private uint m_mask;
 
 	public static SessionMask All { get; }
 	public bool Item { get; set; }

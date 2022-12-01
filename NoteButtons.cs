@@ -1,7 +1,7 @@
-public static class NoteButtons // TypeDefIndex: 13915
+public static class NoteButtons // TypeDefIndex: 13932
 {
-	public static Buttons.ConButton[] Regular; 
-	public static Buttons.ConButton[] Sharp; 
+	public static Buttons.ConButton[] Regular;
+	public static Buttons.ConButton[] Sharp;
 
 
 	public static Buttons.ConButton Find(Notes note, InstrumentKeyController.NoteType type) { }

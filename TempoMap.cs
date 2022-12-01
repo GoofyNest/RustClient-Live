@@ -1,12 +1,12 @@
-public sealed class TempoMap // TypeDefIndex: 7466
+public sealed class TempoMap // TypeDefIndex: 7468
 {
-	public static readonly TempoMap Default; 
-	private ValueLine<TimeSignature> _timeSignatureLine; 
-	private ValueLine<Tempo> _tempoLine; 
-	private readonly List<ITempoMapValuesCache> _valuesCaches; 
-	private bool _isTempoMapReady; 
-	[CompilerGeneratedAttribute] 
-	private TimeDivision <TimeDivision>k__BackingField; 
+	public static readonly TempoMap Default;
+	private ValueLine<TimeSignature> _timeSignatureLine;
+	private ValueLine<Tempo> _tempoLine;
+	private readonly List<ITempoMapValuesCache> _valuesCaches;
+	private bool _isTempoMapReady;
+	[CompilerGeneratedAttribute]
+	private TimeDivision <TimeDivision>k__BackingField;
 
 	public TimeDivision TimeDivision { get; set; }
 	internal ValueLine<TimeSignature> TimeSignatureLine { get; set; }
@@ -16,10 +16,10 @@ public sealed class TempoMap // TypeDefIndex: 7466
 
 	internal void .ctor(TimeDivision timeDivision) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimeDivision get_TimeDivision() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_TimeDivision(TimeDivision value) { }
 
 	internal ValueLine<TimeSignature> get_TimeSignatureLine() { }
@@ -51,10 +51,10 @@ public sealed class TempoMap // TypeDefIndex: 7466
 
 }
 
-private sealed class TempoMap.<>c__DisplayClass35_0 // TypeDefIndex: 7467
+private sealed class TempoMap.<>c__DisplayClass35_0 // TypeDefIndex: 7469
 {
-	public TempoMapLine tempoMapLine; 
-	public Func<ITempoMapValuesCache, bool> <>9__0; 
+	public TempoMapLine tempoMapLine;
+	public Func<ITempoMapValuesCache, bool> <>9__0;
 
 
 	public void .ctor() { }

@@ -2,7 +2,7 @@ public enum RigidbodyConstraints // TypeDefIndex: 3913
 {
 
 public enum RigidbodyConstraints
-	public int value__; 
+	public int value__;
 	public const RigidbodyConstraints None = 0;
 	public const RigidbodyConstraints FreezePositionX = 2;
 	public const RigidbodyConstraints FreezePositionY = 4;

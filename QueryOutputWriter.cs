@@ -1,17 +1,17 @@
 internal class QueryOutputWriter : XmlRawWriter // TypeDefIndex: 1859
 {
-	private XmlRawWriter wrapped; 
-	private bool inCDataSection; 
-	private Dictionary<XmlQualifiedName, int> lookupCDataElems; 
-	private BitStack bitsCData; 
-	private XmlQualifiedName qnameCData; 
-	private bool outputDocType; 
-	private bool checkWellFormedDoc; 
-	private bool hasDocElem; 
-	private bool inAttr; 
-	private string systemId; 
-	private string publicId; 
-	private int depth; 
+	private XmlRawWriter wrapped;
+	private bool inCDataSection;
+	private Dictionary<XmlQualifiedName, int> lookupCDataElems;
+	private BitStack bitsCData;
+	private XmlQualifiedName qnameCData;
+	private bool outputDocType;
+	private bool checkWellFormedDoc;
+	private bool hasDocElem;
+	private bool inAttr;
+	private string systemId;
+	private string publicId;
+	private int depth;
 
 	internal override IXmlNamespaceResolver NamespaceResolver { set; }
 	internal override bool SupportsNamespaceDeclarationInChunks { get; }

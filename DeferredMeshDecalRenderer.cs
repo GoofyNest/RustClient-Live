@@ -1,15 +1,15 @@
-public class DeferredMeshDecalRenderer : MonoBehaviour // TypeDefIndex: 12420
+public class DeferredMeshDecalRenderer : MonoBehaviour // TypeDefIndex: 12428
 {
-	private Camera targetCamera; 
+	private Camera targetCamera;
 	private const string commandBufferName = "DeferredMeshDecals";
-	private CameraEvent commandBufferEvent; 
-	private CommandBuffer commandBuffer; 
-	private RenderTargetIdentifier[] targets; 
-	private Material multiCopyMat; 
-	private MaterialPropertyBlock block; 
-	private static HashSet<DeferredMeshDecal> registered; 
-	private static HashSet<DeferredMeshDecal> visible; 
-	private static Dictionary<DeferredMeshDecal.InstanceData, SimpleList<Matrix4x4>> batches; 
+	private CameraEvent commandBufferEvent;
+	private CommandBuffer commandBuffer;
+	private RenderTargetIdentifier[] targets;
+	private Material multiCopyMat;
+	private MaterialPropertyBlock block;
+	private static HashSet<DeferredMeshDecal> registered;
+	private static HashSet<DeferredMeshDecal> visible;
+	private static Dictionary<DeferredMeshDecal.InstanceData, SimpleList<Matrix4x4>> batches;
 
 	public Camera TargetCamera { get; }
 

@@ -1,10 +1,10 @@
-public static class OnParentSpawningEx // TypeDefIndex: 11646
+public static class OnParentSpawningEx // TypeDefIndex: 11653
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BroadcastOnParentSpawning(GameObject go) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SendOnParentSpawning(GameObject go) { }
 
 }

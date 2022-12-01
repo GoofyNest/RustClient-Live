@@ -1,6 +1,6 @@
-private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7520
+private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7522
 {
-	public long maxTime; 
+	public long maxTime;
 
 
 	public void .ctor() { }
@@ -23,11 +23,11 @@ private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 75
 
 }
 
-private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7521
+private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7523
 {
-	public static readonly ValueLine.<>c<TValue> <>9; 
-	public static Func<ValueChange<TValue>, TValue> <>9__16_1; 
-	public static Func<TValue, long, ValueChange<TValue>> <>9__16_3; 
+	public static readonly ValueLine.<>c<TValue> <>9;
+	public static Func<ValueChange<TValue>, TValue> <>9__16_1;
+	public static Func<TValue, long, ValueChange<TValue>> <>9__16_3;
 
 
 	private static void .cctor() { }

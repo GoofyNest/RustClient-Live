@@ -1,12 +1,12 @@
 internal struct ParamsArray // TypeDefIndex: 286
 {
-	private static readonly object[] oneArgArray; 
-	private static readonly object[] twoArgArray; 
-	private static readonly object[] threeArgArray; 
-	private readonly object arg0; 
-	private readonly object arg1; 
-	private readonly object arg2; 
-	private readonly object[] args; 
+	private static readonly object[] oneArgArray;
+	private static readonly object[] twoArgArray;
+	private static readonly object[] threeArgArray;
+	private readonly object arg0;
+	private readonly object arg1;
+	private readonly object arg2;
+	private readonly object[] args;
 
 	public int Length { get; }
 	public object Item { get; }

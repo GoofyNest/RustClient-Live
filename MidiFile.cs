@@ -1,10 +1,10 @@
-public sealed class MidiFile // TypeDefIndex: 7599
+public sealed class MidiFile // TypeDefIndex: 7601
 {
-	internal Nullable<ushort> _originalFormat; 
-	[CompilerGeneratedAttribute] 
-	private TimeDivision <TimeDivision>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly ChunksCollection <Chunks>k__BackingField; 
+	internal Nullable<ushort> _originalFormat;
+	[CompilerGeneratedAttribute]
+	private TimeDivision <TimeDivision>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly ChunksCollection <Chunks>k__BackingField;
 
 	public TimeDivision TimeDivision { get; set; }
 	public ChunksCollection Chunks { get; }
@@ -12,13 +12,13 @@ public sealed class MidiFile // TypeDefIndex: 7599
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimeDivision get_TimeDivision() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TimeDivision(TimeDivision value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ChunksCollection get_Chunks() { }
 
 	public static MidiFile Read(string filePath, ReadingSettings settings) { }

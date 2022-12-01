@@ -1,7 +1,7 @@
-public sealed class SequencerSpecificEvent : MetaEvent // TypeDefIndex: 7558
+public sealed class SequencerSpecificEvent : MetaEvent // TypeDefIndex: 7560
 {
-	[CompilerGeneratedAttribute] 
-	private byte[] <Data>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte[] <Data>k__BackingField;
 
 	public byte[] Data { get; set; }
 
@@ -10,10 +10,10 @@ public sealed class SequencerSpecificEvent : MetaEvent // TypeDefIndex: 7558
 
 	public void .ctor(byte[] data) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte[] get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Data(byte[] value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }

@@ -1,7 +1,7 @@
-internal struct GetUnlockedAchievementCountOptionsInternal : ISettable<GetUnlockedAchievementCountOptions>, IDisposable // TypeDefIndex: 9918
+internal struct GetUnlockedAchievementCountOptionsInternal : ISettable<GetUnlockedAchievementCountOptions>, IDisposable // TypeDefIndex: 9920
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
 
 	public ProductUserId UserId { set; }
 

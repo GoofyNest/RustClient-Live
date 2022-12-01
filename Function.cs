@@ -1,10 +1,10 @@
 internal class Function : AstNode // TypeDefIndex: 1792
 {
-	private Function.FunctionType functionType; 
-	private ArrayList argumentList; 
-	private string name; 
-	private string prefix; 
-	internal static XPathResultType[] ReturnTypes; 
+	private Function.FunctionType functionType;
+	private ArrayList argumentList;
+	private string name;
+	private string prefix;
+	internal static XPathResultType[] ReturnTypes;
 
 	public override AstNode.AstType Type { get; }
 	public override XPathResultType ReturnType { get; }
@@ -26,7 +26,7 @@ internal class Function : AstNode // TypeDefIndex: 1792
 
 public enum Function.FunctionType // TypeDefIndex: 1793
 {
-	public int value__; 
+	public int value__;
 	public const Function.FunctionType FuncLast = 0;
 	public const Function.FunctionType FuncPosition = 1;
 	public const Function.FunctionType FuncCount = 2;
@@ -60,14 +60,14 @@ public enum Function.FunctionType // TypeDefIndex: 1793
 
 internal sealed class Function // TypeDefIndex: 4266
 {
-	internal readonly string _name; 
-	internal readonly FunctionId _id; 
-	internal readonly Type _result; 
-	internal readonly bool _isValidateArguments; 
-	internal readonly bool _isVariantArgumentList; 
-	internal readonly int _argumentCount; 
-	internal readonly Type[] _parameters; 
-	internal static string[] s_functionName; 
+	internal readonly string _name;
+	internal readonly FunctionId _id;
+	internal readonly Type _result;
+	internal readonly bool _isValidateArguments;
+	internal readonly bool _isVariantArgumentList;
+	internal readonly int _argumentCount;
+	internal readonly Type[] _parameters;
+	internal static string[] s_functionName;
 
 
 	internal void .ctor(string name, FunctionId id, Type result, bool IsValidateArguments, bool IsVariantArgumentList, int argumentCount, Type a1, Type a2, Type a3) { }

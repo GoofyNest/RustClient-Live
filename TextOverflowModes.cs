@@ -1,6 +1,6 @@
-public enum TextOverflowModes // TypeDefIndex: 6772
+public enum TextOverflowModes // TypeDefIndex: 6774
 {
-	public int value__; 
+	public int value__;
 	public const TextOverflowModes Overflow = 0;
 	public const TextOverflowModes Ellipsis = 1;
 	public const TextOverflowModes Masking = 2;

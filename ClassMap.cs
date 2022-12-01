@@ -1,21 +1,21 @@
 internal class ClassMap : ObjectMap // TypeDefIndex: 2128
 {
-	private Hashtable _elements; 
-	private ArrayList _elementMembers; 
-	private Hashtable _attributeMembers; 
-	private XmlTypeMapMemberAttribute[] _attributeMembersArray; 
-	private ArrayList _flatLists; 
-	private ArrayList _allMembers; 
-	private ArrayList _membersWithDefault; 
-	private ArrayList _listMembers; 
-	private XmlTypeMapMemberAnyElement _defaultAnyElement; 
-	private XmlTypeMapMemberAnyAttribute _defaultAnyAttribute; 
-	private XmlTypeMapMemberNamespaces _namespaceDeclarations; 
-	private XmlTypeMapMember _xmlTextCollector; 
-	private XmlTypeMapMember _returnMember; 
-	private bool _ignoreMemberNamespace; 
-	private bool _canBeSimpleType; 
-	private Nullable<bool> _isOrderDependentMap; 
+	private Hashtable _elements;
+	private ArrayList _elementMembers;
+	private Hashtable _attributeMembers;
+	private XmlTypeMapMemberAttribute[] _attributeMembersArray;
+	private ArrayList _flatLists;
+	private ArrayList _allMembers;
+	private ArrayList _membersWithDefault;
+	private ArrayList _listMembers;
+	private XmlTypeMapMemberAnyElement _defaultAnyElement;
+	private XmlTypeMapMemberAnyAttribute _defaultAnyAttribute;
+	private XmlTypeMapMemberNamespaces _namespaceDeclarations;
+	private XmlTypeMapMember _xmlTextCollector;
+	private XmlTypeMapMember _returnMember;
+	private bool _ignoreMemberNamespace;
+	private bool _canBeSimpleType;
+	private Nullable<bool> _isOrderDependentMap;
 
 	public bool IsOrderDependentMap { get; }
 	public XmlTypeMapMemberAnyElement DefaultAnyElementMember { get; }

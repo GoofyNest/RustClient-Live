@@ -1,11 +1,11 @@
-internal struct LogPlayerUseWeaponDataInternal : IGettable<LogPlayerUseWeaponData>, ISettable<LogPlayerUseWeaponData>, IDisposable // TypeDefIndex: 9786
+internal struct LogPlayerUseWeaponDataInternal : IGettable<LogPlayerUseWeaponData>, ISettable<LogPlayerUseWeaponData>, IDisposable // TypeDefIndex: 9788
 {
-	private IntPtr m_PlayerHandle; 
-	private IntPtr m_PlayerPosition; 
-	private IntPtr m_PlayerViewRotation; 
-	private int m_IsPlayerViewZoomed; 
-	private int m_IsMeleeAttack; 
-	private IntPtr m_WeaponName; 
+	private IntPtr m_PlayerHandle;
+	private IntPtr m_PlayerPosition;
+	private IntPtr m_PlayerViewRotation;
+	private int m_IsPlayerViewZoomed;
+	private int m_IsMeleeAttack;
+	private IntPtr m_WeaponName;
 
 	public IntPtr PlayerHandle { get; set; }
 	public Nullable<Vec3f> PlayerPosition { get; set; }

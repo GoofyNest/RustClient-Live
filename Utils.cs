@@ -1,6 +1,6 @@
 internal static class Utils // TypeDefIndex: 1002
 {
-	private static RNGCryptoServiceProvider _rng; 
+	private static RNGCryptoServiceProvider _rng;
 
 	internal static RNGCryptoServiceProvider StaticRandomNumberGenerator { get; }
 
@@ -37,9 +37,9 @@ internal static class Utils // TypeDefIndex: 1002
 
 }
 
-public static class Utils // TypeDefIndex: 13341
+public static class Utils // TypeDefIndex: 13356
 {
-	private static Utils.FloatPackingPrecision ms_FloatPackingPrecision; 
+	private static Utils.FloatPackingPrecision ms_FloatPackingPrecision;
 	private const int kFloatPackingHighMinShaderLevel = 35;
 
 
@@ -52,7 +52,7 @@ public static class Utils // TypeDefIndex: 13341
 	|-Utils.NewWithComponent<BeamGeometry>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T GetOrAddComponent<T>(GameObject self) { }
 	/* GenericInstMethod :
 	|
@@ -62,60 +62,60 @@ public static class Utils // TypeDefIndex: 13341
 	|-Utils.GetOrAddComponent<MeshRenderer>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T GetOrAddComponent<T>(MonoBehaviour self) { }
 	/* GenericInstMethod :
 	|
 	|-Utils.GetOrAddComponent<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool HasFlag(Enum mask, Enum flags) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 xy(Vector3 aVector) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 xz(Vector3 aVector) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 yz(Vector3 aVector) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 yx(Vector3 aVector) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 zx(Vector3 aVector) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 zy(Vector3 aVector) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float GetVolumeCubic(Bounds self) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float GetMaxArea2D(Bounds self) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Color Opaque(Color self) { }
 
 	public static void GizmosDrawPlane(Vector3 normal, Vector3 position, Color color, float size = 1) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Plane TranslateCustom(Plane plane, Vector3 translation) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsValid(Plane plane) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Matrix4x4 SampleInMatrix(Gradient self, int floatPackingPrecision) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Color[] SampleInArray(Gradient self, int samplesCount) { }
 
 	private static Vector4 Vector4_Floor(Vector4 vec) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float PackToFloat(Color color, int floatPackingPrecision) { }
 
 	public static Utils.FloatPackingPrecision GetFloatPackingPrecision() { }
@@ -126,9 +126,9 @@ public static class Utils // TypeDefIndex: 13341
 
 }
 
-public enum Utils.FloatPackingPrecision // TypeDefIndex: 13342
+public enum Utils.FloatPackingPrecision // TypeDefIndex: 13357
 {
-	public int value__; 
+	public int value__;
 	public const Utils.FloatPackingPrecision High = 64;
 	public const Utils.FloatPackingPrecision Low = 8;
 	public const Utils.FloatPackingPrecision Undef = 0;

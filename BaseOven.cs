@@ -1,8 +1,8 @@
-public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
+public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6450
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float cookSpeed; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float cookSpeed;
 
 
 	public static void ResetToPool(BaseOven instance) { }
@@ -59,24 +59,24 @@ public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
 
 }
 
-public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10050
+public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10052
 {
-	private Option __menuOption_SwitchOff; 
-	private Option __menuOption_SwitchOn; 
-	private static Dictionary<float, HashSet<ItemDefinition>> _materialOutputCache; 
-	public BaseOven.TemperatureType temperature; 
-	public BaseEntity.Menu.Option switchOnMenu; 
-	public BaseEntity.Menu.Option switchOffMenu; 
-	public ItemAmount[] startupContents; 
-	public bool allowByproductCreation; 
-	public ItemDefinition fuelType; 
-	public bool canModFire; 
-	public bool disabledBySplash; 
-	public int smeltSpeed; 
-	public int fuelSlots; 
-	public int inputSlots; 
-	public int outputSlots; 
-	private float cookSpeedClient; 
+	private Option __menuOption_SwitchOff;
+	private Option __menuOption_SwitchOn;
+	private static Dictionary<float, HashSet<ItemDefinition>> _materialOutputCache;
+	public BaseOven.TemperatureType temperature;
+	public BaseEntity.Menu.Option switchOnMenu;
+	public BaseEntity.Menu.Option switchOffMenu;
+	public ItemAmount[] startupContents;
+	public bool allowByproductCreation;
+	public ItemDefinition fuelType;
+	public bool canModFire;
+	public bool disabledBySplash;
+	public int smeltSpeed;
+	public int fuelSlots;
+	public int inputSlots;
+	public int outputSlots;
+	private float cookSpeedClient;
 
 	public override bool HasMenuOptions { get; }
 	private float cookingTemperature { get; }
@@ -108,14 +108,14 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10050
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.ShowIf]
 	public void SwitchOn(BasePlayer player) { }
 
 	protected virtual bool SwitchOn_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.ShowIf]
 	public void SwitchOff(BasePlayer player) { }
 
 	protected virtual bool SwitchOff_ShowIf(BasePlayer player) { }
@@ -124,9 +124,9 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10050
 
 }
 
-public enum BaseOven.TemperatureType // TypeDefIndex: 10051
+public enum BaseOven.TemperatureType // TypeDefIndex: 10053
 {
-	public int value__; 
+	public int value__;
 	public const BaseOven.TemperatureType Normal = 0;
 	public const BaseOven.TemperatureType Warming = 1;
 	public const BaseOven.TemperatureType Cooking = 2;
@@ -135,12 +135,12 @@ public enum BaseOven.TemperatureType // TypeDefIndex: 10051
 
 }
 
-private sealed class BaseOven.<>c // TypeDefIndex: 10052
+private sealed class BaseOven.<>c // TypeDefIndex: 10054
 {
-	public static readonly BaseOven.<>c <>9; 
-	public static Func<GameObject, BaseOven> <>9__28_0; 
-	public static Func<BaseOven, bool> <>9__28_1; 
-	public static Func<BaseOven, float> <>9__28_2; 
+	public static readonly BaseOven.<>c <>9;
+	public static Func<GameObject, BaseOven> <>9__28_0;
+	public static Func<BaseOven, bool> <>9__28_1;
+	public static Func<BaseOven, float> <>9__28_2;
 
 
 	private static void .cctor() { }

@@ -1,4 +1,4 @@
-public class ByteArrayContent : HttpContent // TypeDefIndex: 5743
+public class ByteArrayContent : HttpContent // TypeDefIndex: 5745
 {
 
 internal class <Module>
@@ -8,9 +8,9 @@ internal class <Module>
 internal class <Module>
 
 public class ByteArrayContent : HttpContent
-	private readonly byte[] content; 
-	private readonly int offset; 
-	private readonly int count; 
+	private readonly byte[] content;
+	private readonly int offset;
+	private readonly int count;
 
 
 	public void .ctor(byte[] content) { }

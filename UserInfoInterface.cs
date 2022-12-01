@@ -1,4 +1,4 @@
-public sealed class UserInfoInterface : Handle // TypeDefIndex: 8329
+public sealed class UserInfoInterface : Handle // TypeDefIndex: 8331
 {
 	public const int CopyexternaluserinfobyaccountidApiLatest = 1;
 	public const int CopyexternaluserinfobyaccounttypeApiLatest = 1;
@@ -33,13 +33,13 @@ public sealed class UserInfoInterface : Handle // TypeDefIndex: 8329
 
 	public void QueryUserInfoByExternalAccount(ref QueryUserInfoByExternalAccountOptions options, object clientData, OnQueryUserInfoByExternalAccountCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryUserInfoByDisplayNameCallbackInternalImplementation(ref QueryUserInfoByDisplayNameCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryUserInfoByExternalAccountCallbackInternalImplementation(ref QueryUserInfoByExternalAccountCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryUserInfoCallbackInternalImplementation(ref QueryUserInfoCallbackInfoInternal data) { }
 
 }

@@ -1,9 +1,9 @@
-public class BaseCombat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6301
+public class BaseCombat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6303
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int state; 
-	public float health; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int state;
+	public float health;
 
 
 	public static void ResetToPool(BaseCombat instance) { }

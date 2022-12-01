@@ -1,6 +1,6 @@
-public class ValidBounds : SingletonComponent<ValidBounds> // TypeDefIndex: 11796
+public class ValidBounds : SingletonComponent<ValidBounds> // TypeDefIndex: 11803
 {
-	public Bounds worldBounds; 
+	public Bounds worldBounds;
 
 
 	public static bool Test(Vector3 vPos) { }

@@ -1,7 +1,7 @@
 public sealed class X500DistinguishedName : AsnEncodedData // TypeDefIndex: 2812
 {
-	private string name; 
-	private byte[] canonEncoding; 
+	private string name;
+	private byte[] canonEncoding;
 
 
 	public void .ctor(byte[] encodedDistinguishedName) { }

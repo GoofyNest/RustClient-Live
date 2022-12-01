@@ -1,8 +1,8 @@
-internal struct OnClientIntegrityViolatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnClientIntegrityViolatedCallbackInfo>, ISettable<OnClientIntegrityViolatedCallbackInfo>, IDisposable // TypeDefIndex: 9831
+internal struct OnClientIntegrityViolatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnClientIntegrityViolatedCallbackInfo>, ISettable<OnClientIntegrityViolatedCallbackInfo>, IDisposable // TypeDefIndex: 9833
 {
-	private IntPtr m_ClientData; 
-	private AntiCheatClientViolationType m_ViolationType; 
-	private IntPtr m_ViolationMessage; 
+	private IntPtr m_ClientData;
+	private AntiCheatClientViolationType m_ViolationType;
+	private IntPtr m_ViolationMessage;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

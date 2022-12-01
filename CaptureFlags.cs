@@ -1,6 +1,6 @@
 public enum CaptureFlags // TypeDefIndex: 3585
 {
-	public uint value__; 
+	public uint value__;
 	public const CaptureFlags ManagedObjects = 1;
 	public const CaptureFlags NativeObjects = 2;
 	public const CaptureFlags NativeAllocations = 4;

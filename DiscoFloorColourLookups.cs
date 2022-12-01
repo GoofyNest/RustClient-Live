@@ -1,11 +1,11 @@
-public class DiscoFloorColourLookups : PrefabAttribute, IClientComponent // TypeDefIndex: 11174
+public class DiscoFloorColourLookups : PrefabAttribute, IClientComponent // TypeDefIndex: 11180
 {
-	public float[] InOutLookup; 
-	public float[] RadialLookup; 
-	public float[] RippleLookup; 
-	public float[] CheckerLookup; 
-	public float[] BlockLookup; 
-	public Gradient[] ColourGradients; 
+	public float[] InOutLookup;
+	public float[] RadialLookup;
+	public float[] RippleLookup;
+	public float[] CheckerLookup;
+	public float[] BlockLookup;
+	public Gradient[] ColourGradients;
 
 
 	public float[] GetLookup(DiscoFloorMesh.PatternType pattern) { }

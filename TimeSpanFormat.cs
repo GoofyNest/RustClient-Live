@@ -1,7 +1,7 @@
 internal static class TimeSpanFormat // TypeDefIndex: 720
 {
-	internal static readonly TimeSpanFormat.FormatLiterals PositiveInvariantFormatLiterals; 
-	internal static readonly TimeSpanFormat.FormatLiterals NegativeInvariantFormatLiterals; 
+	internal static readonly TimeSpanFormat.FormatLiterals PositiveInvariantFormatLiterals;
+	internal static readonly TimeSpanFormat.FormatLiterals NegativeInvariantFormatLiterals;
 
 
 	private static string IntToString(int n, int digits) { }
@@ -18,7 +18,7 @@ internal static class TimeSpanFormat // TypeDefIndex: 720
 
 internal enum TimeSpanFormat.Pattern // TypeDefIndex: 721
 {
-	public int value__; 
+	public int value__;
 	public const TimeSpanFormat.Pattern None = 0;
 	public const TimeSpanFormat.Pattern Minimum = 1;
 	public const TimeSpanFormat.Pattern Full = 2;
@@ -27,13 +27,13 @@ internal enum TimeSpanFormat.Pattern // TypeDefIndex: 721
 
 internal struct TimeSpanFormat.FormatLiterals // TypeDefIndex: 722
 {
-	internal string AppCompatLiteral; 
-	internal int dd; 
-	internal int hh; 
-	internal int mm; 
-	internal int ss; 
-	internal int ff; 
-	private string[] literals; 
+	internal string AppCompatLiteral;
+	internal int dd;
+	internal int hh;
+	internal int mm;
+	internal int ss;
+	internal int ff;
+	private string[] literals;
 
 	internal string Start { get; }
 	internal string DayHourSep { get; }

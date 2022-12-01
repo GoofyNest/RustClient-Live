@@ -1,8 +1,8 @@
-public class DamageProperties : ScriptableObject // TypeDefIndex: 11720
+public class DamageProperties : ScriptableObject // TypeDefIndex: 11727
 {
-	public DamageProperties fallback; 
-	[HorizontalAttribute] 
-	public DamageProperties.HitAreaProperty[] bones; 
+	public DamageProperties fallback;
+	[HorizontalAttribute]
+	public DamageProperties.HitAreaProperty[] bones;
 
 
 	public float GetMultiplier(HitArea area) { }
@@ -13,10 +13,10 @@ public class DamageProperties : ScriptableObject // TypeDefIndex: 11720
 
 }
 
-public class DamageProperties.HitAreaProperty // TypeDefIndex: 11721
+public class DamageProperties.HitAreaProperty // TypeDefIndex: 11728
 {
-	public HitArea area; 
-	public float damage; 
+	public HitArea area;
+	public float damage;
 
 
 	public void .ctor() { }

@@ -1,17 +1,17 @@
-public sealed class MusicalTimeSpan : ITimeSpan, IComparable, IComparable<MusicalTimeSpan>, IEquatable<MusicalTimeSpan> // TypeDefIndex: 7508
+public sealed class MusicalTimeSpan : ITimeSpan, IComparable, IComparable<MusicalTimeSpan>, IEquatable<MusicalTimeSpan> // TypeDefIndex: 7510
 {
-	public static readonly MusicalTimeSpan Whole; 
-	public static readonly MusicalTimeSpan Half; 
-	public static readonly MusicalTimeSpan Quarter; 
-	public static readonly MusicalTimeSpan Eighth; 
-	public static readonly MusicalTimeSpan Sixteenth; 
-	public static readonly MusicalTimeSpan ThirtySecond; 
-	public static readonly MusicalTimeSpan SixtyFourth; 
-	private static readonly int FractionPartMultiplier; 
-	[CompilerGeneratedAttribute] 
-	private readonly long <Numerator>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly long <Denominator>k__BackingField; 
+	public static readonly MusicalTimeSpan Whole;
+	public static readonly MusicalTimeSpan Half;
+	public static readonly MusicalTimeSpan Quarter;
+	public static readonly MusicalTimeSpan Eighth;
+	public static readonly MusicalTimeSpan Sixteenth;
+	public static readonly MusicalTimeSpan ThirtySecond;
+	public static readonly MusicalTimeSpan SixtyFourth;
+	private static readonly int FractionPartMultiplier;
+	[CompilerGeneratedAttribute]
+	private readonly long <Numerator>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly long <Denominator>k__BackingField;
 
 	public long Numerator { get; }
 	public long Denominator { get; }
@@ -23,10 +23,10 @@ public sealed class MusicalTimeSpan : ITimeSpan, IComparable, IComparable<Musica
 
 	public void .ctor(long numerator, long denominator, bool simplify = True) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_Numerator() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_Denominator() { }
 
 	public MusicalTimeSpan Dotted(int dotsCount) { }

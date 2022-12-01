@@ -1,31 +1,31 @@
-public class NaturalBloomAndDirtyLens : MonoBehaviour // TypeDefIndex: 11843
+public class NaturalBloomAndDirtyLens : MonoBehaviour // TypeDefIndex: 11850
 {
-	public Shader shader; 
-	public Texture2D lensDirtTexture; 
-	public float range; 
-	public float cutoff; 
-	[RangeAttribute] 
-	public float bloomIntensity; 
-	[RangeAttribute] 
-	public float lensDirtIntensity; 
-	[RangeAttribute] 
-	public float spread; 
-	[RangeAttribute] 
-	public int iterations; 
-	[RangeAttribute] 
-	public int mips; 
-	public float[] mipWeights; 
-	public bool highPrecision; 
-	public bool downscaleSource; 
-	public bool debug; 
-	public bool temporalFilter; 
-	[RangeAttribute] 
-	public float temporalFilterWeight; 
-	private Material material; 
-	private float blurSize; 
-	private RenderTexture temporalHistory; 
-	private static int[] paramID; 
-	private static int[] sourceID; 
+	public Shader shader;
+	public Texture2D lensDirtTexture;
+	public float range;
+	public float cutoff;
+	[RangeAttribute]
+	public float bloomIntensity;
+	[RangeAttribute]
+	public float lensDirtIntensity;
+	[RangeAttribute]
+	public float spread;
+	[RangeAttribute]
+	public int iterations;
+	[RangeAttribute]
+	public int mips;
+	public float[] mipWeights;
+	public bool highPrecision;
+	public bool downscaleSource;
+	public bool debug;
+	public bool temporalFilter;
+	[RangeAttribute]
+	public float temporalFilterWeight;
+	private Material material;
+	private float blurSize;
+	private RenderTexture temporalHistory;
+	private static int[] paramID;
+	private static int[] sourceID;
 
 
 	private void OnDisable() { }
@@ -40,7 +40,7 @@ public class NaturalBloomAndDirtyLens : MonoBehaviour // TypeDefIndex: 11843
 
 }
 
-private static class NaturalBloomAndDirtyLens.Param // TypeDefIndex: 11844
+private static class NaturalBloomAndDirtyLens.Param // TypeDefIndex: 11851
 {
 	public const int _BloomRange = 0;
 	public const int _BloomCutoff = 1;

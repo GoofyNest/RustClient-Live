@@ -1,12 +1,12 @@
-public class Missions : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6459
+public class Missions : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6461
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<MissionInstance> missions; 
-	public int activeMission; 
-	public int protocol; 
-	public uint seed; 
-	public int saveCreatedTime; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<MissionInstance> missions;
+	public int activeMission;
+	public int protocol;
+	public uint seed;
+	public int saveCreatedTime;
 
 
 	public static void ResetToPool(Missions instance) { }

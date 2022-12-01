@@ -1,6 +1,6 @@
 internal enum CookieToken // TypeDefIndex: 2935
 {
-	public int value__; 
+	public int value__;
 	public const CookieToken Nothing = 0;
 	public const CookieToken NameValuePair = 1;
 	public const CookieToken Attribute = 2;

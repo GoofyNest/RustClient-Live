@@ -1,10 +1,10 @@
 public sealed class SecurityPermission : CodeAccessPermission // TypeDefIndex: 916
 {
 
-[ComVisibleAttribute] 
+[ComVisibleAttribute]
 [Serializable]
 public sealed class SecurityPermission : CodeAccessPermission
-	private SecurityPermissionFlag flags; 
+	private SecurityPermissionFlag flags;
 
 
 	public void .ctor(PermissionState state) { }

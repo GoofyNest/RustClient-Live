@@ -1,10 +1,10 @@
-public class BaseNetworkable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6299
+public class BaseNetworkable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6301
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint uid; 
-	public uint group; 
-	public uint prefabID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint uid;
+	public uint group;
+	public uint prefabID;
 
 
 	public static void ResetToPool(BaseNetworkable instance) { }
@@ -61,28 +61,28 @@ public class BaseNetworkable : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public abstract class BaseNetwork // TypeDefIndex: 6853
+public abstract class BaseNetwork // TypeDefIndex: 6855
 {
-	[CompilerGeneratedAttribute] 
-	private NetRead <read>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private NetWrite <write>k__BackingField; 
-	public INetworkCryptocraphy cryptography; 
+	[CompilerGeneratedAttribute]
+	private NetRead <read>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private NetWrite <write>k__BackingField;
+	public INetworkCryptocraphy cryptography;
 
 	public NetRead read { get; set; }
 	public NetWrite write { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public NetRead get_read() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_read(NetRead value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public NetWrite get_write() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_write(NetWrite value) { }
 
 	public void .ctor() { }
@@ -103,9 +103,9 @@ public abstract class BaseNetwork // TypeDefIndex: 6853
 
 }
 
-public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6854
+public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6856
 {
-	public int value__; 
+	public int value__;
 	public const BaseNetwork.StatTypeLong BytesSent = 0;
 	public const BaseNetwork.StatTypeLong BytesSent_LastSecond = 1;
 	public const BaseNetwork.StatTypeLong BytesReceived = 2;
@@ -120,26 +120,26 @@ public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6854
 
 }
 
-public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, IEntity, NetworkHandler // TypeDefIndex: 11209
+public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, IEntity, NetworkHandler // TypeDefIndex: 11215
 {
-	[CompilerGeneratedAttribute] 
-	private bool <JustCreated>k__BackingField; 
-	private DeferredAction entityDestroy; 
-	public List<Component> postNetworkUpdateComponents; 
-	public EntityRef parentEntity; 
-	public readonly List<BaseEntity> children; 
-	public bool canTriggerParent; 
-	[HeaderAttribute] 
-	[ReadOnlyAttribute] 
-	public uint prefabID; 
-	[TooltipAttribute] 
-	public bool globalBroadcast; 
-	public Networkable net; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsDestroyed>k__BackingField; 
-	private string _prefabName; 
-	private string _prefabNameWithoutExtension; 
-	public static BaseNetworkable.EntityRealm clientEntities; 
+	[CompilerGeneratedAttribute]
+	private bool <JustCreated>k__BackingField;
+	private DeferredAction entityDestroy;
+	public List<Component> postNetworkUpdateComponents;
+	public EntityRef parentEntity;
+	public readonly List<BaseEntity> children;
+	public bool canTriggerParent;
+	[HeaderAttribute]
+	[ReadOnlyAttribute]
+	public uint prefabID;
+	[TooltipAttribute]
+	public bool globalBroadcast;
+	public Networkable net;
+	[CompilerGeneratedAttribute]
+	private bool <IsDestroyed>k__BackingField;
+	private string _prefabName;
+	private string _prefabNameWithoutExtension;
+	public static BaseNetworkable.EntityRealm clientEntities;
 	private const bool isServersideEntity = False;
 
 	protected bool JustCreated { get; set; }
@@ -152,10 +152,10 @@ public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, I
 	public bool isClient { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected bool get_JustCreated() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_JustCreated(bool value) { }
 
 	public void ClientSpawn(Entity info) { }
@@ -200,10 +200,10 @@ public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, I
 
 	public PrefabAttribute.Library get_prefabAttribute() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsDestroyed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsDestroyed(bool value) { }
 
 	public string get_PrefabName() { }
@@ -269,25 +269,25 @@ public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, I
 
 }
 
-public struct BaseNetworkable.SaveInfo // TypeDefIndex: 11210
+public struct BaseNetworkable.SaveInfo // TypeDefIndex: 11216
 {
-	public Entity msg; 
-	public bool forDisk; 
-	public Connection forConnection; 
+	public Entity msg;
+	public bool forDisk;
+	public Connection forConnection;
 
 
 	internal bool SendingTo(Connection ownerConnection) { }
 
 }
 
-public struct BaseNetworkable.LoadInfo // TypeDefIndex: 11211
+public struct BaseNetworkable.LoadInfo // TypeDefIndex: 11217
 {
-	public Entity msg; 
-	public bool fromDisk; 
+	public Entity msg;
+	public bool fromDisk;
 
 }
 
-public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // TypeDefIndex: 11212
+public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // TypeDefIndex: 11218
 {
 	protected override Manager visibilityManager { get; }
 
@@ -298,9 +298,9 @@ public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // 
 
 }
 
-public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>, IEnumerable // TypeDefIndex: 11213
+public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>, IEnumerable // TypeDefIndex: 11219
 {
-	private ListDictionary<uint, BaseNetworkable> entityList; 
+	private ListDictionary<uint, BaseNetworkable> entityList;
 
 	public int Count { get; }
 	protected abstract Manager visibilityManager { get; }
@@ -334,21 +334,21 @@ public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>
 
 }
 
-public enum BaseNetworkable.DestroyMode // TypeDefIndex: 11214
+public enum BaseNetworkable.DestroyMode // TypeDefIndex: 11220
 {
-	public byte value__; 
+	public byte value__;
 	public const BaseNetworkable.DestroyMode None = 0;
 	public const BaseNetworkable.DestroyMode Gib = 1;
 
 }
 
-public static class BaseNetworkableEx // TypeDefIndex: 11215
+public static class BaseNetworkableEx // TypeDefIndex: 11221
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsValid(BaseNetworkable ent) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsRealNull(BaseNetworkable ent) { }
 
 }

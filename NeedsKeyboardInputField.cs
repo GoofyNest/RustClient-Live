@@ -1,7 +1,7 @@
-public class NeedsKeyboardInputField : NeedsKeyboard // TypeDefIndex: 8032
+public class NeedsKeyboardInputField : NeedsKeyboard // TypeDefIndex: 8034
 {
-	private InputField TargetInputField; 
-	private TMP_InputField TargetTmProInputField; 
+	private InputField TargetInputField;
+	private TMP_InputField TargetTmProInputField;
 
 
 	private void Awake() { }

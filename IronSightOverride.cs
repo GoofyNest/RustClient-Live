@@ -1,10 +1,10 @@
-public class IronSightOverride : MonoBehaviour // TypeDefIndex: 13227
+public class IronSightOverride : MonoBehaviour // TypeDefIndex: 13242
 {
-	public IronsightAimPoint aimPoint; 
-	public float fieldOfViewOffset; 
-	public float zoomFactor; 
-	[TooltipAttribute] 
-	public float fovBias; 
+	public IronsightAimPoint aimPoint;
+	public float fieldOfViewOffset;
+	public float zoomFactor;
+	[TooltipAttribute]
+	public float fovBias;
 
 
 	public void Update() { }

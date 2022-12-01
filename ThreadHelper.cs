@@ -1,9 +1,9 @@
 internal class ThreadHelper // TypeDefIndex: 800
 {
-	private Delegate _start; 
-	private object _startArg; 
-	private ExecutionContext _executionContext; 
-	internal static ContextCallback _ccb; 
+	private Delegate _start;
+	private object _startArg;
+	private ExecutionContext _executionContext;
+	internal static ContextCallback _ccb;
 
 
 	private static void .cctor() { }

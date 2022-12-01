@@ -1,14 +1,14 @@
-public class OvenItemIcon : MonoBehaviour // TypeDefIndex: 12809
+public class OvenItemIcon : MonoBehaviour // TypeDefIndex: 12823
 {
-	public ItemIcon ItemIcon; 
-	public RustText ItemLabel; 
-	public RustText MaterialLabel; 
-	public OvenSlotType SlotType; 
-	public Translate.Phrase EmptyPhrase; 
-	public List<OvenItemIcon.OvenSlotConfig> SlotConfigs; 
-	public float DisabledAlphaScale; 
-	public CanvasGroup CanvasGroup; 
-	private Item _item; 
+	public ItemIcon ItemIcon;
+	public RustText ItemLabel;
+	public RustText MaterialLabel;
+	public OvenSlotType SlotType;
+	public Translate.Phrase EmptyPhrase;
+	public List<OvenItemIcon.OvenSlotConfig> SlotConfigs;
+	public float DisabledAlphaScale;
+	public CanvasGroup CanvasGroup;
+	private Item _item;
 
 
 	private void Start() { }
@@ -19,16 +19,16 @@ public class OvenItemIcon : MonoBehaviour // TypeDefIndex: 12809
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <Start>
 
 }
 
-public class OvenItemIcon.OvenSlotConfig // TypeDefIndex: 12810
+public class OvenItemIcon.OvenSlotConfig // TypeDefIndex: 12824
 {
-	public OvenSlotType Type; 
-	public Sprite BackgroundImage; 
-	public Translate.Phrase SlotPhrase; 
+	public OvenSlotType Type;
+	public Sprite BackgroundImage;
+	public Translate.Phrase SlotPhrase;
 
 
 	public void .ctor() { }

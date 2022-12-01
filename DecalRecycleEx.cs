@@ -1,10 +1,10 @@
-public static class DecalRecycleEx // TypeDefIndex: 10903
+public static class DecalRecycleEx // TypeDefIndex: 10909
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BroadcastDecalRecycle(GameObject go) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SendDecalRecycle(GameObject go) { }
 
 }

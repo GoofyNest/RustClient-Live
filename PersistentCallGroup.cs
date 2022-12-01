@@ -1,8 +1,8 @@
 internal class PersistentCallGroup // TypeDefIndex: 3639
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private List<PersistentCall> m_Calls; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private List<PersistentCall> m_Calls;
 
 
 	public void .ctor() { }

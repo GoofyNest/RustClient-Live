@@ -1,15 +1,15 @@
-public class Occludee : MonoBehaviour // TypeDefIndex: 13299
+public class Occludee : MonoBehaviour // TypeDefIndex: 13314
 {
-	public float minTimeVisible; 
-	public bool isStatic; 
-	public bool autoRegister; 
-	public bool stickyGizmos; 
-	public OccludeeState state; 
-	protected int occludeeId; 
-	protected Vector3 center; 
-	protected float radius; 
-	protected Renderer renderer; 
-	protected Collider collider; 
+	public float minTimeVisible;
+	public bool isStatic;
+	public bool autoRegister;
+	public bool stickyGizmos;
+	public OccludeeState state;
+	protected int occludeeId;
+	protected Vector3 center;
+	protected float radius;
+	protected Renderer renderer;
+	protected Collider collider;
 
 
 	protected virtual void Awake() { }

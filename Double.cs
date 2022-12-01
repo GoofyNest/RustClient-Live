@@ -1,13 +1,13 @@
 public struct Double : IComparable, IFormattable, IConvertible, IComparable<double>, IEquatable<double> // TypeDefIndex: 208
 {
-	internal double m_value; 
+	internal double m_value;
 	public const double MinValue = -1,79769313486232E+308;
 	public const double MaxValue = 1,79769313486232E+308;
 	public const double Epsilon = 4,94065645841247E-324;
 	public const double NegativeInfinity = -∞;
 	public const double PositiveInfinity = ∞;
 	public const double NaN = ¤¤¤;
-	internal static double NegativeZero; 
+	internal static double NegativeZero;
 
 
 	public static bool IsInfinity(double d) { }
@@ -16,7 +16,7 @@ public struct Double : IComparable, IFormattable, IConvertible, IComparable<doub
 
 	public static bool IsNegativeInfinity(double d) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool IsNaN(double d) { }
 
 	public static bool IsFinite(double d) { }

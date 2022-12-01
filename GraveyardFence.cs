@@ -1,6 +1,6 @@
-public class GraveyardFence : SimpleBuildingBlock // TypeDefIndex: 10512
+public class GraveyardFence : SimpleBuildingBlock // TypeDefIndex: 10516
 {
-	public BoxCollider[] pillars; 
+	public BoxCollider[] pillars;
 
 
 	protected override void ClientInit(Entity info) { }

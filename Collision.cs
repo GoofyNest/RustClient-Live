@@ -1,12 +1,12 @@
 public class Collision // TypeDefIndex: 3920
 {
-	internal Vector3 m_Impulse; 
-	internal Vector3 m_RelativeVelocity; 
-	internal Rigidbody m_Rigidbody; 
-	internal Collider m_Collider; 
-	internal int m_ContactCount; 
-	internal ContactPoint[] m_ReusedContacts; 
-	internal ContactPoint[] m_LegacyContacts; 
+	internal Vector3 m_Impulse;
+	internal Vector3 m_RelativeVelocity;
+	internal Rigidbody m_Rigidbody;
+	internal Collider m_Collider;
+	internal int m_ContactCount;
+	internal ContactPoint[] m_ReusedContacts;
+	internal ContactPoint[] m_LegacyContacts;
 
 	public Rigidbody rigidbody { get; }
 	public Collider collider { get; }

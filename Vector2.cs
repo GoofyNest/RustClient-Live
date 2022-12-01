@@ -1,15 +1,15 @@
 public struct Vector2 : IEquatable<Vector2> // TypeDefIndex: 3471
 {
-	public float x; 
-	public float y; 
-	private static readonly Vector2 zeroVector; 
-	private static readonly Vector2 oneVector; 
-	private static readonly Vector2 upVector; 
-	private static readonly Vector2 downVector; 
-	private static readonly Vector2 leftVector; 
-	private static readonly Vector2 rightVector; 
-	private static readonly Vector2 positiveInfinityVector; 
-	private static readonly Vector2 negativeInfinityVector; 
+	public float x;
+	public float y;
+	private static readonly Vector2 zeroVector;
+	private static readonly Vector2 oneVector;
+	private static readonly Vector2 upVector;
+	private static readonly Vector2 downVector;
+	private static readonly Vector2 leftVector;
+	private static readonly Vector2 rightVector;
+	private static readonly Vector2 positiveInfinityVector;
+	private static readonly Vector2 negativeInfinityVector;
 	public const float kEpsilon = 1E-05;
 	public const float kEpsilonNormalSqrt = 1E-15;
 

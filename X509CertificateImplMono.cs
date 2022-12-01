@@ -1,6 +1,6 @@
 internal sealed class X509CertificateImplMono : X509CertificateImpl // TypeDefIndex: 1019
 {
-	private X509Certificate x509; 
+	private X509Certificate x509;
 
 	public override bool IsValid { get; }
 

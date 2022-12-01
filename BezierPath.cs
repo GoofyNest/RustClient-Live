@@ -1,10 +1,10 @@
-public class BezierPath // TypeDefIndex: 13524
+public class BezierPath // TypeDefIndex: 13540
 {
-	public int SegmentsPerCurve; 
-	public float MINIMUM_SQR_DISTANCE; 
-	public float DIVISION_THRESHOLD; 
-	private List<Vector2> controlPoints; 
-	private int curveCount; 
+	public int SegmentsPerCurve;
+	public float MINIMUM_SQR_DISTANCE;
+	public float DIVISION_THRESHOLD;
+	private List<Vector2> controlPoints;
+	private int curveCount;
 
 
 	public void .ctor() { }

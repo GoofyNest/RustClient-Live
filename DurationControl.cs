@@ -1,14 +1,14 @@
 internal struct DurationControl_t : ICallbackData // TypeDefIndex: 5312
 {
-	internal Result Result; 
-	internal AppId Appid; 
-	internal bool Applicable; 
-	internal int CsecsLast5h; 
-	internal DurationControlProgress Progress; 
-	internal DurationControlNotification Otification; 
-	internal int CsecsToday; 
-	internal int CsecsRemaining; 
-	public static int _datasize; 
+	internal Result Result;
+	internal AppId Appid;
+	internal bool Applicable;
+	internal int CsecsLast5h;
+	internal DurationControlProgress Progress;
+	internal DurationControlNotification Otification;
+	internal int CsecsToday;
+	internal int CsecsRemaining;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -22,9 +22,9 @@ internal struct DurationControl_t : ICallbackData // TypeDefIndex: 5312
 
 }
 
-public struct DurationControl // TypeDefIndex: 5555
+public struct DurationControl // TypeDefIndex: 5557
 {
-	internal DurationControl_t _inner; 
+	internal DurationControl_t _inner;
 
 }
 

@@ -1,6 +1,6 @@
 public enum CompareOptions // TypeDefIndex: 689
 {
-	public int value__; 
+	public int value__;
 	public const CompareOptions None = 0;
 	public const CompareOptions IgnoreCase = 1;
 	public const CompareOptions IgnoreNonSpace = 2;

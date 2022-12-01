@@ -1,8 +1,8 @@
-public class DecayPoint : PrefabAttribute // TypeDefIndex: 10791
+public class DecayPoint : PrefabAttribute // TypeDefIndex: 10795
 {
-	[TooltipAttribute] 
-	public float protection; 
-	public Socket_Base socket; 
+	[TooltipAttribute]
+	public float protection;
+	public Socket_Base socket;
 
 
 	public bool IsOccupied(BaseEntity entity) { }

@@ -1,11 +1,11 @@
 public class CanvasUpdateRegistry // TypeDefIndex: 4916
 {
-	private static CanvasUpdateRegistry s_Instance; 
-	private bool m_PerformingLayoutUpdate; 
-	private bool m_PerformingGraphicUpdate; 
-	private readonly IndexedSet<ICanvasElement> m_LayoutRebuildQueue; 
-	private readonly IndexedSet<ICanvasElement> m_GraphicRebuildQueue; 
-	private static readonly Comparison<ICanvasElement> s_SortLayoutFunction; 
+	private static CanvasUpdateRegistry s_Instance;
+	private bool m_PerformingLayoutUpdate;
+	private bool m_PerformingGraphicUpdate;
+	private readonly IndexedSet<ICanvasElement> m_LayoutRebuildQueue;
+	private readonly IndexedSet<ICanvasElement> m_GraphicRebuildQueue;
+	private static readonly Comparison<ICanvasElement> s_SortLayoutFunction;
 
 	public static CanvasUpdateRegistry instance { get; }
 

@@ -1,6 +1,6 @@
 private sealed class Task.<>c<TResult> // TypeDefIndex: 843
 {
-	public static readonly Task.<>c<TResult> <>9; 
+	public static readonly Task.<>c<TResult> <>9;
 
 
 	private static void .cctor() { }
@@ -77,18 +77,18 @@ private sealed class Task.<>c<TResult> // TypeDefIndex: 843
 
 public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefIndex: 853
 {
-	[ThreadStaticAttribute] 
-	internal static Task t_currentTask; 
-	[ThreadStaticAttribute] 
-	private static StackGuard t_stackGuard; 
-	internal static int s_taskIdCounter; 
-	private static readonly TaskFactory s_factory; 
-	private int m_taskId; 
-	internal object m_action; 
-	internal object m_stateObject; 
-	internal TaskScheduler m_taskScheduler; 
-	internal readonly Task m_parent; 
-	internal int m_stateFlags; 
+	[ThreadStaticAttribute]
+	internal static Task t_currentTask;
+	[ThreadStaticAttribute]
+	private static StackGuard t_stackGuard;
+	internal static int s_taskIdCounter;
+	private static readonly TaskFactory s_factory;
+	private int m_taskId;
+	internal object m_action;
+	internal object m_stateObject;
+	internal TaskScheduler m_taskScheduler;
+	internal readonly Task m_parent;
+	internal int m_stateFlags;
 	private const int OptionsMask = 65535;
 	internal const int TASK_STATE_STARTED = 65536;
 	internal const int TASK_STATE_DELEGATE_INVOKED = 131072;
@@ -107,19 +107,19 @@ public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefInd
 	internal const int TASK_STATE_TASKSCHEDULED_WAS_FIRED = 1073741824;
 	private const int TASK_STATE_COMPLETED_MASK = 23068672;
 	private const int CANCELLATION_REQUESTED = 1;
-	private object m_continuationObject; 
-	private static readonly object s_taskCompletionSentinel; 
-	[FriendAccessAllowedAttribute] 
-	internal static bool s_asyncDebuggingEnabled; 
-	private static readonly Dictionary<int, Task> s_currentActiveTasks; 
-	private static readonly object s_activeTasksLock; 
-	internal Task.ContingentProperties m_contingentProperties; 
-	private static readonly Action<object> s_taskCancelCallback; 
-	private static readonly Func<Task.ContingentProperties> s_createContingentProperties; 
-	private static Task s_completedTask; 
-	private static readonly Predicate<Task> s_IsExceptionObservedByParentPredicate; 
-	private static ContextCallback s_ecCallback; 
-	private static readonly Predicate<object> s_IsTaskContinuationNullPredicate; 
+	private object m_continuationObject;
+	private static readonly object s_taskCompletionSentinel;
+	[FriendAccessAllowedAttribute]
+	internal static bool s_asyncDebuggingEnabled;
+	private static readonly Dictionary<int, Task> s_currentActiveTasks;
+	private static readonly object s_activeTasksLock;
+	internal Task.ContingentProperties m_contingentProperties;
+	private static readonly Action<object> s_taskCancelCallback;
+	private static readonly Func<Task.ContingentProperties> s_createContingentProperties;
+	private static Task s_completedTask;
+	private static readonly Predicate<Task> s_IsExceptionObservedByParentPredicate;
+	private static ContextCallback s_ecCallback;
+	private static readonly Predicate<object> s_IsTaskContinuationNullPredicate;
 
 	internal TaskCreationOptions Options { get; }
 	internal bool IsWaitNotificationEnabledOrNotRanToCompletion { get; }
@@ -156,10 +156,10 @@ public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefInd
 	internal virtual Task HandedOverChildReplica { get; set; }
 
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static bool AddToActiveTasks(Task task) { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static void RemoveFromActiveTasks(int taskId) { }
 
 	internal void .ctor(bool canceled, TaskCreationOptions creationOptions, CancellationToken ct) { }
@@ -422,10 +422,10 @@ public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefInd
 	|-Task.FromException<VoidTaskResult>
 	*/
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static Task FromCancellation(CancellationToken cancellationToken) { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static Task<TResult> FromCancellation<TResult>(CancellationToken cancellationToken) { }
 	/* GenericInstMethod :
 	|
@@ -463,6 +463,10 @@ public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefInd
 	|-Task.Run<MP3Stream>
 	|-Task.Run<object>
 	*/
+
+	public static Task Run(Func<Task> function) { }
+
+	public static Task Run(Func<Task> function, CancellationToken cancellationToken) { }
 
 	public static Task<TResult> Run<TResult>(Func<Task<TResult>> function) { }
 	/* GenericInstMethod :
@@ -507,7 +511,7 @@ public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefInd
 
 	public static Task<Task> WhenAny(Task[] tasks) { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static Task<TResult> CreateUnwrapPromise<TResult>(Task outerTask, bool lookForOce) { }
 	/* GenericInstMethod :
 	|
@@ -520,14 +524,14 @@ public class Task : IThreadPoolWorkItem, IAsyncResult, IDisposable // TypeDefInd
 
 internal class Task.ContingentProperties // TypeDefIndex: 854
 {
-	internal ExecutionContext m_capturedContext; 
-	internal ManualResetEventSlim m_completionEvent; 
-	internal TaskExceptionHolder m_exceptionsHolder; 
-	internal CancellationToken m_cancellationToken; 
-	internal Shared<CancellationTokenRegistration> m_cancellationRegistration; 
-	internal int m_internalCancellationRequested; 
-	internal int m_completionCountdown; 
-	internal List<Task> m_exceptionalChildren; 
+	internal ExecutionContext m_capturedContext;
+	internal ManualResetEventSlim m_completionEvent;
+	internal TaskExceptionHolder m_exceptionsHolder;
+	internal CancellationToken m_cancellationToken;
+	internal Shared<CancellationTokenRegistration> m_cancellationRegistration;
+	internal int m_internalCancellationRequested;
+	internal int m_completionCountdown;
+	internal List<Task> m_exceptionalChildren;
 
 
 	internal void SetCompleted() { }
@@ -549,9 +553,9 @@ private sealed class Task.SetOnInvokeMres : ManualResetEventSlim, ITaskCompletio
 
 private sealed class Task.DelayPromise : Task<VoidTaskResult> // TypeDefIndex: 856
 {
-	internal readonly CancellationToken Token; 
-	internal CancellationTokenRegistration Registration; 
-	internal Timer Timer; 
+	internal readonly CancellationToken Token;
+	internal CancellationTokenRegistration Registration;
+	internal Timer Timer;
 
 
 	internal void .ctor(CancellationToken token) { }
@@ -562,8 +566,8 @@ private sealed class Task.DelayPromise : Task<VoidTaskResult> // TypeDefIndex: 8
 
 private sealed class Task.WhenAllPromise<T> : Task<T[]>, ITaskCompletionAction // TypeDefIndex: 857
 {
-	private readonly Task<T>[] m_tasks; 
-	private int m_count; 
+	private readonly Task<T>[] m_tasks;
+	private int m_count;
 
 	internal override bool ShouldNotifyDebuggerOfWaitCompletion { get; }
 
@@ -590,11 +594,11 @@ private sealed class Task.WhenAllPromise<T> : Task<T[]>, ITaskCompletionAction /
 
 private sealed class Task.<>c__DisplayClass178_0 // TypeDefIndex: 858
 {
-	public Task root; 
-	public bool replicasAreQuitting; 
-	public Action<object> taskReplicaDelegate; 
-	public TaskCreationOptions creationOptionsForReplicas; 
-	public InternalTaskOptions internalOptionsForReplicas; 
+	public Task root;
+	public bool replicasAreQuitting;
+	public Action<object> taskReplicaDelegate;
+	public TaskCreationOptions creationOptionsForReplicas;
+	public InternalTaskOptions internalOptionsForReplicas;
 
 
 	public void .ctor() { }
@@ -605,9 +609,9 @@ private sealed class Task.<>c__DisplayClass178_0 // TypeDefIndex: 858
 
 private sealed class Task.<>c // TypeDefIndex: 859
 {
-	public static readonly Task.<>c <>9; 
-	public static Action<object> <>9__276_0; 
-	public static TimerCallback <>9__276_1; 
+	public static readonly Task.<>c <>9;
+	public static Action<object> <>9__276_0;
+	public static TimerCallback <>9__276_1;
 
 
 	private static void .cctor() { }

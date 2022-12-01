@@ -1,42 +1,42 @@
-public class Sound : MonoBehaviour, IClientComponent, IOnParentDestroying, IComparable<Sound>, ISoundBudgetedUpdate // TypeDefIndex: 10750
+public class Sound : MonoBehaviour, IClientComponent, IOnParentDestroying, IComparable<Sound>, ISoundBudgetedUpdate // TypeDefIndex: 10754
 {
-	public static float volumeExponent; 
-	public SoundDefinition definition; 
-	public SoundModifier[] modifiers; 
-	public SoundSource soundSource; 
-	public AudioSource[] audioSources; 
-	[SerializeField] 
-	private SoundFade _fade; 
-	[SerializeField] 
-	private SoundModulation _modulation; 
-	[SerializeField] 
-	private SoundOcclusion _occlusion; 
-	private AudioSource audioSource; 
-	private AudioSource distantAudioSource; 
-	private Sound syncParent; 
-	private Sound syncChild; 
-	[CompilerGeneratedAttribute] 
-	private float <initialMaxDistance>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <initialSpread>k__BackingField; 
-	public bool playing; 
-	public bool isFirstPerson; 
-	[CompilerGeneratedAttribute] 
-	private float <startTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <endTime>k__BackingField; 
-	private List<WeightedAudioClip> closeClips; 
-	private List<WeightedAudioClip> farClips; 
-	private float distanceScale; 
-	private int clipIndex; 
-	private bool hasDistantSound; 
-	private float length; 
-	private int FrameUpdateIndex; 
-	private Vector3 previousPosition; 
-	private float previousPositionUpdateTime; 
-	[CompilerGeneratedAttribute] 
-	private float <basePitch>k__BackingField; 
-	private int priorityModifier; 
+	public static float volumeExponent;
+	public SoundDefinition definition;
+	public SoundModifier[] modifiers;
+	public SoundSource soundSource;
+	public AudioSource[] audioSources;
+	[SerializeField]
+	private SoundFade _fade;
+	[SerializeField]
+	private SoundModulation _modulation;
+	[SerializeField]
+	private SoundOcclusion _occlusion;
+	private AudioSource audioSource;
+	private AudioSource distantAudioSource;
+	private Sound syncParent;
+	private Sound syncChild;
+	[CompilerGeneratedAttribute]
+	private float <initialMaxDistance>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <initialSpread>k__BackingField;
+	public bool playing;
+	public bool isFirstPerson;
+	[CompilerGeneratedAttribute]
+	private float <startTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <endTime>k__BackingField;
+	private List<WeightedAudioClip> closeClips;
+	private List<WeightedAudioClip> farClips;
+	private float distanceScale;
+	private int clipIndex;
+	private bool hasDistantSound;
+	private float length;
+	private int FrameUpdateIndex;
+	private Vector3 previousPosition;
+	private float previousPositionUpdateTime;
+	[CompilerGeneratedAttribute]
+	private float <basePitch>k__BackingField;
+	private int priorityModifier;
 
 	public SoundFade fade { get; }
 	public SoundModulation modulation { get; }
@@ -61,16 +61,16 @@ public class Sound : MonoBehaviour, IClientComponent, IOnParentDestroying, IComp
 
 	public SoundOcclusion get_occlusion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_initialMaxDistance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_initialMaxDistance(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_initialSpread() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_initialSpread(float value) { }
 
 	public float get_audioSourceVolue() { }
@@ -95,22 +95,22 @@ public class Sound : MonoBehaviour, IClientComponent, IOnParentDestroying, IComp
 
 	public float get_maxDistance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_startTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_startTime(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_endTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_endTime(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_basePitch() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_basePitch(float value) { }
 
 	protected void Awake() { }

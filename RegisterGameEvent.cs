@@ -1,46 +1,46 @@
-internal struct RegisterGameEvent // TypeDefIndex: 7723
+internal struct RegisterGameEvent // TypeDefIndex: 7725
 {
-	[CompilerGeneratedAttribute] 
-	private string <GameId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Event>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <IconId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ValueOptional>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <GameId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Event>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <IconId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ValueOptional>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string GameId { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string Event { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public int IconId { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public bool ValueOptional { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_GameId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_GameId(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Event() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Event(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_IconId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IconId(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ValueOptional() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ValueOptional(bool value) { }
 
 }

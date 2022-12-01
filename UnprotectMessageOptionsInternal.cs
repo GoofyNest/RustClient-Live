@@ -1,10 +1,10 @@
-internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9746
+internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9748
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ClientHandle; 
-	private uint m_DataLengthBytes; 
-	private IntPtr m_Data; 
-	private uint m_OutBufferSizeBytes; 
+	private int m_ApiVersion;
+	private IntPtr m_ClientHandle;
+	private uint m_DataLengthBytes;
+	private IntPtr m_Data;
+	private uint m_OutBufferSizeBytes;
 
 	public IntPtr ClientHandle { set; }
 	public ArraySegment<byte> Data { set; }
@@ -25,12 +25,12 @@ internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOpti
 
 }
 
-internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9853
+internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9855
 {
-	private int m_ApiVersion; 
-	private uint m_DataLengthBytes; 
-	private IntPtr m_Data; 
-	private uint m_OutBufferSizeBytes; 
+	private int m_ApiVersion;
+	private uint m_DataLengthBytes;
+	private IntPtr m_Data;
+	private uint m_OutBufferSizeBytes;
 
 	public ArraySegment<byte> Data { set; }
 	public uint OutBufferSizeBytes { set; }

@@ -1,9 +1,9 @@
-public class RangeConditionHeaderValue : ICloneable // TypeDefIndex: 5810
+public class RangeConditionHeaderValue : ICloneable // TypeDefIndex: 5812
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <Date>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EntityTagHeaderValue <EntityTag>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <Date>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EntityTagHeaderValue <EntityTag>k__BackingField;
 
 	public Nullable<DateTimeOffset> Date { get; set; }
 	public EntityTagHeaderValue EntityTag { get; set; }
@@ -13,16 +13,16 @@ public class RangeConditionHeaderValue : ICloneable // TypeDefIndex: 5810
 
 	public void .ctor(EntityTagHeaderValue entityTag) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_Date() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Date(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EntityTagHeaderValue get_EntityTag() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_EntityTag(EntityTagHeaderValue value) { }
 
 	private object System.ICloneable.Clone() { }

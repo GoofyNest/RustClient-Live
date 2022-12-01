@@ -1,9 +1,9 @@
-public class TriggerZone : MonoBehaviour // TypeDefIndex: 13340
+public class TriggerZone : MonoBehaviour // TypeDefIndex: 13355
 {
-	public bool setIsTrigger; 
-	public float rangeMultiplier; 
+	public bool setIsTrigger;
+	public float rangeMultiplier;
 	private const int kMeshColliderNumSides = 8;
-	private Mesh m_Mesh; 
+	private Mesh m_Mesh;
 
 
 	private void Update() { }

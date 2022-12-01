@@ -1,9 +1,9 @@
-public class OptionAttribute : Attribute // TypeDefIndex: 7068
+public class OptionAttribute : Attribute // TypeDefIndex: 7070
 {
-	public Icons Icon; 
-	public Translate.Phrase Label; 
-	public string Value; 
-	public bool Default; 
+	public Icons Icon;
+	public Translate.Phrase Label;
+	public string Value;
+	public bool Default;
 
 
 	public void .ctor(string token, string english, string value, bool isdefault = False, Icons icon = 0) { }

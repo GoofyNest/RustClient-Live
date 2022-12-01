@@ -1,6 +1,6 @@
-internal enum UnicodeCharacter // TypeDefIndex: 6757
+internal enum UnicodeCharacter // TypeDefIndex: 6759
 {
-	public uint value__; 
+	public uint value__;
 	public const UnicodeCharacter HYPHEN_MINUS = 45;
 	public const UnicodeCharacter SOFT_HYPHEN = 173;
 	public const UnicodeCharacter HYPHEN = 8208;

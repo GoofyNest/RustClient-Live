@@ -1,16 +1,16 @@
-public class ArcadeMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6371
+public class ArcadeMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6373
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<ArcadeMachine.ScoreEntry> scores; 
-	public int genericInt1; 
-	public int genericInt2; 
-	public int genericInt3; 
-	public int genericInt4; 
-	public float genericFloat1; 
-	public float genericFloat2; 
-	public float genericFloat3; 
-	public float genericFloat4; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<ArcadeMachine.ScoreEntry> scores;
+	public int genericInt1;
+	public int genericInt2;
+	public int genericInt3;
+	public int genericInt4;
+	public float genericFloat1;
+	public float genericFloat2;
+	public float genericFloat3;
+	public float genericFloat4;
 
 
 	public static void ResetToPool(ArcadeMachine instance) { }
@@ -67,13 +67,13 @@ public class ArcadeMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class ArcadeMachine.ScoreEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6372
+public class ArcadeMachine.ScoreEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6374
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong playerID; 
-	public string displayName; 
-	public int score; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong playerID;
+	public string displayName;
+	public int score;
 
 
 	public static void ResetToPool(ArcadeMachine.ScoreEntry instance) { }

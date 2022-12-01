@@ -1,7 +1,7 @@
 public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 3325
 {
-	private NativeArray<T> m_Array; 
-	private int m_Index; 
+	private NativeArray<T> m_Array;
+	private int m_Index;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

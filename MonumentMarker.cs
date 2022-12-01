@@ -1,10 +1,10 @@
-public class MonumentMarker : MonoBehaviour // TypeDefIndex: 12720
+public class MonumentMarker : MonoBehaviour // TypeDefIndex: 12734
 {
-	public Text text; 
-	public Image imageBackground; 
-	public Image image; 
-	public Color dayColor; 
-	public Color nightColor; 
+	public Text text;
+	public Image imageBackground;
+	public Image image;
+	public Color dayColor;
+	public Color nightColor;
 
 
 	public void Setup(LandmarkInfo info) { }

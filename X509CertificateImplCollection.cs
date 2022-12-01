@@ -1,6 +1,6 @@
 internal class X509CertificateImplCollection : IDisposable // TypeDefIndex: 2821
 {
-	private List<X509CertificateImpl> list; 
+	private List<X509CertificateImpl> list;
 
 	public int Count { get; }
 	public X509CertificateImpl Item { get; }

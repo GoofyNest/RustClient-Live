@@ -1,10 +1,10 @@
-public class PlacePowerlineObjects : ProceduralComponent // TypeDefIndex: 12308
+public class PlacePowerlineObjects : ProceduralComponent // TypeDefIndex: 12316
 {
-	public PathList.BasicObject[] Start; 
-	public PathList.BasicObject[] End; 
-	public PathList.SideObject[] Side; 
-	[FormerlySerializedAsAttribute] 
-	public PathList.PathObject[] Path; 
+	public PathList.BasicObject[] Start;
+	public PathList.BasicObject[] End;
+	public PathList.SideObject[] Side;
+	[FormerlySerializedAsAttribute]
+	public PathList.PathObject[] Path;
 
 
 	public override void Process(uint seed) { }

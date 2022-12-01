@@ -1,7 +1,7 @@
-public class ERDebug // TypeDefIndex: 7197
+public class ERDebug // TypeDefIndex: 7199
 {
-	public static List<Vector3> leftTHandles; 
-	public static List<Vector3> rightTHandles; 
+	public static List<Vector3> leftTHandles;
+	public static List<Vector3> rightTHandles;
 
 
 	public void .ctor() { }

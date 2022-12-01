@@ -1,11 +1,11 @@
-public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 11681
+public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 11688
 {
-	public float Distance; 
-	private RendererBatch meshBatch; 
-	private Renderer meshRenderer; 
-	private MeshFilter meshFilter; 
-	private int curlod; 
-	private bool force; 
+	public float Distance;
+	private RendererBatch meshBatch;
+	private Renderer meshRenderer;
+	private MeshFilter meshFilter;
+	private int curlod;
+	private bool force;
 
 
 	protected override void InitLOD() { }

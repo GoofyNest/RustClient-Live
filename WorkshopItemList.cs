@@ -1,19 +1,19 @@
-internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7757
+internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7759
 {
-	private static int StaticRefresh; 
-	public WorkshopItemButton ButtonPrefab; 
-	public GameObject Container; 
-	public ListType ListType; 
+	private static int StaticRefresh;
+	public WorkshopItemButton ButtonPrefab;
+	public GameObject Container;
+	public ListType ListType;
 	private const int PerPage = 50;
-	public int Page; 
-	public Button PreviousPage; 
-	public Button NextPage; 
-	public Text PageInfo; 
-	public string ItemFilter; 
-	public Dropdown ItemTypeSelector; 
-	private int ForcedRefresh; 
-	private int TotalResults; 
-	private bool Refreshing; 
+	public int Page;
+	public Button PreviousPage;
+	public Button NextPage;
+	public Text PageInfo;
+	public string ItemFilter;
+	public Dropdown ItemTypeSelector;
+	private int ForcedRefresh;
+	private int TotalResults;
+	private bool Refreshing;
 
 	private int NumPages { get; }
 
@@ -40,7 +40,7 @@ internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7757
 
 	public void SwitchToAccepted() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task Refresh() { }
 
 	public void .ctor() { }
@@ -49,13 +49,13 @@ internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7757
 
 }
 
-private sealed class WorkshopItemList.<>c // TypeDefIndex: 7758
+private sealed class WorkshopItemList.<>c // TypeDefIndex: 7760
 {
-	public static readonly WorkshopItemList.<>c <>9; 
-	public static Func<Skinnable, bool> <>9__17_0; 
-	public static Func<Skinnable, string> <>9__17_1; 
-	public static Func<string, string> <>9__17_2; 
-	public static Func<Item, DateTime> <>9__26_0; 
+	public static readonly WorkshopItemList.<>c <>9;
+	public static Func<Skinnable, bool> <>9__17_0;
+	public static Func<Skinnable, string> <>9__17_1;
+	public static Func<string, string> <>9__17_2;
+	public static Func<Item, DateTime> <>9__26_0;
 
 
 	private static void .cctor() { }
@@ -72,17 +72,17 @@ private sealed class WorkshopItemList.<>c // TypeDefIndex: 7758
 
 }
 
-private struct WorkshopItemList.<Refresh>d__26 : IAsyncStateMachine // TypeDefIndex: 7759
+private struct WorkshopItemList.<Refresh>d__26 : IAsyncStateMachine // TypeDefIndex: 7761
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public WorkshopItemList <>4__this; 
-	private TaskAwaiter<Nullable<ResultPage>> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public WorkshopItemList <>4__this;
+	private TaskAwaiter<Nullable<ResultPage>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

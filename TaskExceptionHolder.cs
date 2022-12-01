@@ -1,12 +1,12 @@
 internal class TaskExceptionHolder // TypeDefIndex: 883
 {
-	private static readonly bool s_failFastOnUnobservedException; 
-	private static bool s_domainUnloadStarted; 
-	private static EventHandler s_adUnloadEventHandler; 
-	private readonly Task m_task; 
-	private List<ExceptionDispatchInfo> m_faultExceptions; 
-	private ExceptionDispatchInfo m_cancellationException; 
-	private bool m_isHandled; 
+	private static readonly bool s_failFastOnUnobservedException;
+	private static bool s_domainUnloadStarted;
+	private static EventHandler s_adUnloadEventHandler;
+	private readonly Task m_task;
+	private List<ExceptionDispatchInfo> m_faultExceptions;
+	private ExceptionDispatchInfo m_cancellationException;
+	private bool m_isHandled;
 
 	internal bool ContainsFaultList { get; }
 

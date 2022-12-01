@@ -1,10 +1,10 @@
-internal sealed class StreamWrapper : Stream // TypeDefIndex: 7650
+internal sealed class StreamWrapper : Stream // TypeDefIndex: 7652
 {
-	private readonly Stream _stream; 
-	private readonly CircularBuffer<byte> _buffer; 
-	private readonly byte[] _peekBuffer; 
-	private readonly byte[] _skipBytesBuffer; 
-	private long _position; 
+	private readonly Stream _stream;
+	private readonly CircularBuffer<byte> _buffer;
+	private readonly byte[] _peekBuffer;
+	private readonly byte[] _skipBytesBuffer;
+	private long _position;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }

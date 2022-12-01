@@ -1,12 +1,12 @@
 public class GridLayout : Behaviour // TypeDefIndex: 4028
 {
 
-[NativeTypeAttribute] 
-[NativeHeaderAttribute] 
-[RequireComponent] 
+[NativeTypeAttribute]
+[NativeHeaderAttribute]
+[RequireComponent]
 public class GridLayout : Behaviour
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DoNothing() { }
 
 }

@@ -1,14 +1,14 @@
-public class ReliableEventSender : StateMachineBehaviour // TypeDefIndex: 10847
+public class ReliableEventSender : StateMachineBehaviour // TypeDefIndex: 10853
 {
-	[HeaderAttribute] 
-	public string StateEnter; 
-	[HeaderAttribute] 
-	public string MidStateEvent; 
-	[RangeAttribute] 
-	public float TargetEventTime; 
-	private bool sentBeginEvent; 
-	private float lastTime; 
-	private AnimationEvents eventComponent; 
+	[HeaderAttribute]
+	public string StateEnter;
+	[HeaderAttribute]
+	public string MidStateEvent;
+	[RangeAttribute]
+	public float TargetEventTime;
+	private bool sentBeginEvent;
+	private float lastTime;
+	private AnimationEvents eventComponent;
 
 
 	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }

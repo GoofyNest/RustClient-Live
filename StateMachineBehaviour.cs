@@ -1,11 +1,11 @@
 public abstract class StateMachineBehaviour : ScriptableObject // TypeDefIndex: 4483
 {
 
-[AttributeUsageAttribute] 
-[RequiredByNativeCodeAttribute] 
+[AttributeUsageAttribute]
+[RequiredByNativeCodeAttribute]
 public sealed class SharedBetweenAnimatorsAttribute : Attribute
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public abstract class StateMachineBehaviour : ScriptableObject
 
 	public virtual void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }

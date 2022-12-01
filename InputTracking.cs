@@ -1,26 +1,26 @@
 public static class InputTracking // TypeDefIndex: 4142
 {
 
-[RequiredByNativeCodeAttribute] 
-[NativeHeaderAttribute] 
-[NativeConditionalAttribute] 
-[StaticAccessorAttribute] 
+[RequiredByNativeCodeAttribute]
+[NativeHeaderAttribute]
+[NativeConditionalAttribute]
+[StaticAccessorAttribute]
 public static class InputTracking
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action<XRNodeState> trackingAcquired; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<XRNodeState> trackingLost; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<XRNodeState> nodeAdded; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<XRNodeState> nodeRemoved; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action<XRNodeState> trackingAcquired;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<XRNodeState> trackingLost;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<XRNodeState> nodeAdded;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<XRNodeState> nodeRemoved;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeTrackingEvent(InputTracking.TrackingStateEventType eventType, XRNode nodeType, long uniqueID, bool tracked) { }
 
 	private static void .cctor() { }
@@ -29,7 +29,7 @@ public static class InputTracking
 
 private enum InputTracking.TrackingStateEventType // TypeDefIndex: 4143
 {
-	public int value__; 
+	public int value__;
 	public const InputTracking.TrackingStateEventType NodeAdded = 0;
 	public const InputTracking.TrackingStateEventType NodeRemoved = 1;
 	public const InputTracking.TrackingStateEventType TrackingAcquired = 2;

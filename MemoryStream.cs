@@ -1,15 +1,15 @@
 public class MemoryStream : Stream // TypeDefIndex: 635
 {
-	private byte[] _buffer; 
-	private int _origin; 
-	private int _position; 
-	private int _length; 
-	private int _capacity; 
-	private bool _expandable; 
-	private bool _writable; 
-	private bool _exposable; 
-	private bool _isOpen; 
-	private Task<int> _lastReadTask; 
+	private byte[] _buffer;
+	private int _origin;
+	private int _position;
+	private int _length;
+	private int _capacity;
+	private bool _expandable;
+	private bool _writable;
+	private bool _exposable;
+	private bool _isOpen;
+	private Task<int> _lastReadTask;
 	private const int MemStreamMaxLength = 2147483647;
 
 	public override bool CanRead { get; }
@@ -70,7 +70,7 @@ public class MemoryStream : Stream // TypeDefIndex: 635
 
 	public override int Read([In] [Out] byte[] buffer, int offset, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	public override int ReadByte() { }
@@ -85,7 +85,7 @@ public class MemoryStream : Stream // TypeDefIndex: 635
 
 	public override void Write(byte[] buffer, int offset, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	public override void WriteByte(byte value) { }

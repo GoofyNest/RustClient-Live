@@ -1,6 +1,6 @@
 internal sealed class SqlBinaryStorage : DataStorage // TypeDefIndex: 4417
 {
-	private SqlBinary[] _values; 
+	private SqlBinary[] _values;
 
 
 	public void .ctor(DataColumn column) { }

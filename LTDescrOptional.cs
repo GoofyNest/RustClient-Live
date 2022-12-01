@@ -1,49 +1,49 @@
-public class LTDescrOptional // TypeDefIndex: 5580
+public class LTDescrOptional // TypeDefIndex: 5582
 {
-	[CompilerGeneratedAttribute] 
-	private Transform <toTrans>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <point>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <axis>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <lastVal>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Quaternion <origRotation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LTBezierPath <path>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LTSpline <spline>k__BackingField; 
-	public AnimationCurve animationCurve; 
-	public int initFrameCount; 
-	[CompilerGeneratedAttribute] 
-	private LTRect <ltRect>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<float> <onUpdateFloat>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<float, float> <onUpdateFloatRatio>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<float, object> <onUpdateFloatObject>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<Vector2> <onUpdateVector2>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<Vector3> <onUpdateVector3>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<Vector3, object> <onUpdateVector3Object>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<Color> <onUpdateColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<Color, object> <onUpdateColorObject>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action <onComplete>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<object> <onCompleteObject>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <onCompleteParam>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <onUpdateParam>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action <onStart>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Transform <toTrans>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <point>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <axis>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <lastVal>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Quaternion <origRotation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LTBezierPath <path>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LTSpline <spline>k__BackingField;
+	public AnimationCurve animationCurve;
+	public int initFrameCount;
+	[CompilerGeneratedAttribute]
+	private LTRect <ltRect>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<float> <onUpdateFloat>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<float, float> <onUpdateFloatRatio>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<float, object> <onUpdateFloatObject>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<Vector2> <onUpdateVector2>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<Vector3> <onUpdateVector3>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<Vector3, object> <onUpdateVector3Object>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<Color> <onUpdateColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<Color, object> <onUpdateColorObject>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action <onComplete>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<object> <onCompleteObject>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <onCompleteParam>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <onUpdateParam>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action <onStart>k__BackingField;
 
 	public Transform toTrans { get; set; }
 	public Vector3 point { get; set; }
@@ -68,130 +68,130 @@ public class LTDescrOptional // TypeDefIndex: 5580
 	public Action onStart { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_toTrans() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_toTrans(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_point() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_point(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_axis() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_axis(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_lastVal() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_lastVal(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Quaternion get_origRotation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_origRotation(Quaternion value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LTBezierPath get_path() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_path(LTBezierPath value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LTSpline get_spline() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_spline(LTSpline value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LTRect get_ltRect() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ltRect(LTRect value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<float> get_onUpdateFloat() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateFloat(Action<float> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<float, float> get_onUpdateFloatRatio() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateFloatRatio(Action<float, float> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<float, object> get_onUpdateFloatObject() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateFloatObject(Action<float, object> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<Vector2> get_onUpdateVector2() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateVector2(Action<Vector2> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<Vector3> get_onUpdateVector3() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateVector3(Action<Vector3> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<Vector3, object> get_onUpdateVector3Object() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateVector3Object(Action<Vector3, object> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<Color> get_onUpdateColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateColor(Action<Color> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<Color, object> get_onUpdateColorObject() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateColorObject(Action<Color, object> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action get_onComplete() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onComplete(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<object> get_onCompleteObject() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onCompleteObject(Action<object> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_onCompleteParam() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onCompleteParam(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_onUpdateParam() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onUpdateParam(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action get_onStart() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_onStart(Action value) { }
 
 	public void reset() { }

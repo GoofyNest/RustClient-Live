@@ -1,6 +1,6 @@
-public class SlotMachineStorage : StorageContainer // TypeDefIndex: 10361
+public class SlotMachineStorage : StorageContainer // TypeDefIndex: 10365
 {
-	public int Amount; 
+	public int Amount;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -9,7 +9,7 @@ public class SlotMachineStorage : StorageContainer // TypeDefIndex: 10361
 
 	public override bool ShouldShowLootMenus() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void RPC_UpdateAmount(BaseEntity.RPCMessage msg) { }
 
 	public void .ctor() { }

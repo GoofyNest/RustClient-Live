@@ -1,17 +1,17 @@
 public class CryptoStream : Stream, IDisposable // TypeDefIndex: 949
 {
-	private Stream _stream; 
-	private ICryptoTransform _Transform; 
-	private byte[] _InputBuffer; 
-	private int _InputBufferIndex; 
-	private int _InputBlockSize; 
-	private byte[] _OutputBuffer; 
-	private int _OutputBufferIndex; 
-	private int _OutputBlockSize; 
-	private CryptoStreamMode _transformMode; 
-	private bool _canRead; 
-	private bool _canWrite; 
-	private bool _finalBlockTransformed; 
+	private Stream _stream;
+	private ICryptoTransform _Transform;
+	private byte[] _InputBuffer;
+	private int _InputBufferIndex;
+	private int _InputBlockSize;
+	private byte[] _OutputBuffer;
+	private int _OutputBufferIndex;
+	private int _OutputBlockSize;
+	private CryptoStreamMode _transformMode;
+	private bool _canRead;
+	private bool _canWrite;
+	private bool _finalBlockTransformed;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }
@@ -49,14 +49,14 @@ public class CryptoStream : Stream, IDisposable // TypeDefIndex: 949
 
 	public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task<int> ReadAsyncInternal(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	public override void Write(byte[] buffer, int offset, int count) { }
 
 	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task WriteAsyncInternal(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	public void Clear() { }
@@ -84,50 +84,50 @@ private struct CryptoStream.HopToThreadPoolAwaitable : INotifyCompletion // Type
 
 private struct CryptoStream.<ReadAsyncInternal>d__34 : IAsyncStateMachine // TypeDefIndex: 951
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<int> <>t__builder; 
-	public CryptoStream <>4__this; 
-	public int count; 
-	public int offset; 
-	public byte[] buffer; 
-	public CancellationToken cancellationToken; 
-	private byte[] <tempInputBuffer>5__1; 
-	private int <currentOutputIndex>5__2; 
-	private int <bytesToDeliver>5__3; 
-	private SemaphoreSlim <sem>5__4; 
-	private CryptoStream.HopToThreadPoolAwaitable <>u__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2; 
-	private int <>7__wrap1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__3; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<int> <>t__builder;
+	public CryptoStream <>4__this;
+	public int count;
+	public int offset;
+	public byte[] buffer;
+	public CancellationToken cancellationToken;
+	private byte[] <tempInputBuffer>5__1;
+	private int <currentOutputIndex>5__2;
+	private int <bytesToDeliver>5__3;
+	private SemaphoreSlim <sem>5__4;
+	private CryptoStream.HopToThreadPoolAwaitable <>u__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2;
+	private int <>7__wrap1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__3;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 private struct CryptoStream.<WriteAsyncInternal>d__37 : IAsyncStateMachine // TypeDefIndex: 952
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public CryptoStream <>4__this; 
-	public int count; 
-	public int offset; 
-	public byte[] buffer; 
-	public CancellationToken cancellationToken; 
-	private int <bytesToWrite>5__1; 
-	private int <currentInputIndex>5__2; 
-	private int <numWholeBlocksInBytes>5__3; 
-	private SemaphoreSlim <sem>5__4; 
-	private CryptoStream.HopToThreadPoolAwaitable <>u__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public CryptoStream <>4__this;
+	public int count;
+	public int offset;
+	public byte[] buffer;
+	public CancellationToken cancellationToken;
+	private int <bytesToWrite>5__1;
+	private int <currentInputIndex>5__2;
+	private int <numWholeBlocksInBytes>5__3;
+	private SemaphoreSlim <sem>5__4;
+	private CryptoStream.HopToThreadPoolAwaitable <>u__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

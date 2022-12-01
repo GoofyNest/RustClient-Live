@@ -1,13 +1,13 @@
-public static class EZSoftBoneUtility // TypeDefIndex: 7177
+public static class EZSoftBoneUtility // TypeDefIndex: 7179
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static Vector3 Abs(Vector3 v) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float Max(Vector3 v) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Contains(LayerMask mask, int layer) { }
 
 	public static void GetCapsuleParams(CapsuleCollider collider, out Vector3 center0, out Vector3 center1, out float radius) { }

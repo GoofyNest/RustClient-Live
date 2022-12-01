@@ -1,6 +1,6 @@
 public struct ConfiguredTaskAwaitable // TypeDefIndex: 1292
 {
-	private readonly ConfiguredTaskAwaitable.ConfiguredTaskAwaiter m_configuredTaskAwaiter; 
+	private readonly ConfiguredTaskAwaitable.ConfiguredTaskAwaiter m_configuredTaskAwaiter;
 
 
 	internal void .ctor(Task task, bool continueOnCapturedContext) { }
@@ -11,8 +11,8 @@ public struct ConfiguredTaskAwaitable // TypeDefIndex: 1292
 
 public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 1293
 {
-	private readonly Task m_task; 
-	private readonly bool m_continueOnCapturedContext; 
+	private readonly Task m_task;
+	private readonly bool m_continueOnCapturedContext;
 
 	public bool IsCompleted { get; }
 
@@ -31,8 +31,8 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter : ICriticalNotifyCom
 
 public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 1295
 {
-	private readonly Task<TResult> m_task; 
-	private readonly bool m_continueOnCapturedContext; 
+	private readonly Task<TResult> m_task;
+	private readonly bool m_continueOnCapturedContext;
 
 	public bool IsCompleted { get; }
 

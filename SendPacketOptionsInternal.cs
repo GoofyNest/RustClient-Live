@@ -1,15 +1,15 @@
-internal struct SendPacketOptionsInternal : ISettable<SendPacketOptions>, IDisposable // TypeDefIndex: 9000
+internal struct SendPacketOptionsInternal : ISettable<SendPacketOptions>, IDisposable // TypeDefIndex: 9002
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RemoteUserId; 
-	private IntPtr m_SocketId; 
-	private byte m_Channel; 
-	private uint m_DataLengthBytes; 
-	private IntPtr m_Data; 
-	private int m_AllowDelayedDelivery; 
-	private PacketReliability m_Reliability; 
-	private int m_DisableAutoAcceptConnection; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RemoteUserId;
+	private IntPtr m_SocketId;
+	private byte m_Channel;
+	private uint m_DataLengthBytes;
+	private IntPtr m_Data;
+	private int m_AllowDelayedDelivery;
+	private PacketReliability m_Reliability;
+	private int m_DisableAutoAcceptConnection;
 
 	public ProductUserId LocalUserId { set; }
 	public ProductUserId RemoteUserId { set; }

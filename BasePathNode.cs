@@ -1,9 +1,9 @@
-public class BasePathNode : MonoBehaviour // TypeDefIndex: 10586
+public class BasePathNode : MonoBehaviour // TypeDefIndex: 10590
 {
-	public BasePath Path; 
-	public List<BasePathNode> linked; 
-	public float maxVelocityOnApproach; 
-	public bool straightaway; 
+	public BasePath Path;
+	public List<BasePathNode> linked;
+	public float maxVelocityOnApproach;
+	public bool straightaway;
 
 
 	public void OnDrawGizmosSelected() { }

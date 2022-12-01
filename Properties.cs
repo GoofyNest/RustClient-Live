@@ -1,20 +1,20 @@
-public class Properties // TypeDefIndex: 7095
+public class Properties // TypeDefIndex: 7097
 {
-	private object Parent; 
-	private RectTransform Canvas; 
-	[CompilerGeneratedAttribute] 
-	private Action UpdateControlsFromValues; 
-	public List<FieldInfo> Fields; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsDirty>k__BackingField; 
+	private object Parent;
+	private RectTransform Canvas;
+	[CompilerGeneratedAttribute]
+	private Action UpdateControlsFromValues;
+	public List<FieldInfo> Fields;
+	[CompilerGeneratedAttribute]
+	private bool <IsDirty>k__BackingField;
 
 	public bool IsDirty { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_UpdateControlsFromValues(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_UpdateControlsFromValues(Action value) { }
 
 	public void .ctor(object Parent, RectTransform Canvas) { }
@@ -41,10 +41,10 @@ public class Properties // TypeDefIndex: 7095
 
 	public void SetValues(Dictionary<string, object> a, Dictionary<string, object> b, float delta) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsDirty() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsDirty(bool value) { }
 
 	private void MarkDirty() { }
@@ -53,11 +53,11 @@ public class Properties // TypeDefIndex: 7095
 
 }
 
-private sealed class Properties.<>c__DisplayClass10_0 // TypeDefIndex: 7096
+private sealed class Properties.<>c__DisplayClass10_0 // TypeDefIndex: 7098
 {
-	public RustInput ctrl; 
-	public FieldInfo f; 
-	public Properties <>4__this; 
+	public RustInput ctrl;
+	public FieldInfo f;
+	public Properties <>4__this;
 
 
 	public void .ctor() { }
@@ -66,10 +66,10 @@ private sealed class Properties.<>c__DisplayClass10_0 // TypeDefIndex: 7096
 
 }
 
-private sealed class Properties.<>c__DisplayClass11_0 // TypeDefIndex: 7097
+private sealed class Properties.<>c__DisplayClass11_0 // TypeDefIndex: 7099
 {
-	public FieldInfo f; 
-	public Properties <>4__this; 
+	public FieldInfo f;
+	public Properties <>4__this;
 
 
 	public void .ctor() { }
@@ -78,9 +78,9 @@ private sealed class Properties.<>c__DisplayClass11_0 // TypeDefIndex: 7097
 
 }
 
-private sealed class Properties.<>c__DisplayClass11_1 // TypeDefIndex: 7098
+private sealed class Properties.<>c__DisplayClass11_1 // TypeDefIndex: 7100
 {
-	public RustButtonGroup ctrl; 
+	public RustButtonGroup ctrl;
 	public Properties.<>c
 
 
@@ -90,10 +90,10 @@ private sealed class Properties.<>c__DisplayClass11_1 // TypeDefIndex: 7098
 
 }
 
-private sealed class Properties.<>c // TypeDefIndex: 7099
+private sealed class Properties.<>c // TypeDefIndex: 7101
 {
-	public static readonly Properties.<>c <>9; 
-	public static Func<OptionAttribute, Option> <>9__11_0; 
+	public static readonly Properties.<>c <>9;
+	public static Func<OptionAttribute, Option> <>9__11_0;
 
 
 	private static void .cctor() { }
@@ -104,11 +104,11 @@ private sealed class Properties.<>c // TypeDefIndex: 7099
 
 }
 
-private sealed class Properties.<>c__DisplayClass12_0 // TypeDefIndex: 7100
+private sealed class Properties.<>c__DisplayClass12_0 // TypeDefIndex: 7102
 {
-	public FieldInfo f; 
-	public Properties <>4__this; 
-	public RustToggle ctrl; 
+	public FieldInfo f;
+	public Properties <>4__this;
+	public RustToggle ctrl;
 
 
 	public void .ctor() { }
@@ -119,10 +119,10 @@ private sealed class Properties.<>c__DisplayClass12_0 // TypeDefIndex: 7100
 
 }
 
-private sealed class Properties.<>c__DisplayClass13_0 // TypeDefIndex: 7101
+private sealed class Properties.<>c__DisplayClass13_0 // TypeDefIndex: 7103
 {
-	public FieldInfo f; 
-	public Properties <>4__this; 
+	public FieldInfo f;
+	public Properties <>4__this;
 
 
 	public void .ctor() { }
@@ -131,9 +131,9 @@ private sealed class Properties.<>c__DisplayClass13_0 // TypeDefIndex: 7101
 
 }
 
-private sealed class Properties.<>c__DisplayClass13_1 // TypeDefIndex: 7102
+private sealed class Properties.<>c__DisplayClass13_1 // TypeDefIndex: 7104
 {
-	public RustSlider ctrl; 
+	public RustSlider ctrl;
 	public Properties.<>c
 
 

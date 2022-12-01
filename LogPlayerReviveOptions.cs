@@ -1,24 +1,24 @@
-public struct LogPlayerReviveOptions // TypeDefIndex: 9775
+public struct LogPlayerReviveOptions // TypeDefIndex: 9777
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <RevivedPlayerHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ReviverPlayerHandle>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <RevivedPlayerHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <ReviverPlayerHandle>k__BackingField;
 
 	public IntPtr RevivedPlayerHandle { get; set; }
 	public IntPtr ReviverPlayerHandle { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_RevivedPlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RevivedPlayerHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ReviverPlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReviverPlayerHandle(IntPtr value) { }
 
 }

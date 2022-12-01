@@ -1,36 +1,36 @@
-internal struct GameMetadata // TypeDefIndex: 7720
+internal struct GameMetadata // TypeDefIndex: 7722
 {
-	[CompilerGeneratedAttribute] 
-	private string <GameId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <GameDisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Developer>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <GameId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <GameDisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Developer>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string GameId { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string GameDisplayName { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string Developer { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_GameId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_GameId(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_GameDisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_GameDisplayName(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Developer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Developer(string value) { }
 
 }

@@ -2,19 +2,19 @@ public struct Vector3 : IEquatable<Vector3> // TypeDefIndex: 3468
 {
 	public const float kEpsilon = 1E-05;
 	public const float kEpsilonNormalSqrt = 1E-15;
-	public float x; 
-	public float y; 
-	public float z; 
-	private static readonly Vector3 zeroVector; 
-	private static readonly Vector3 oneVector; 
-	private static readonly Vector3 upVector; 
-	private static readonly Vector3 downVector; 
-	private static readonly Vector3 leftVector; 
-	private static readonly Vector3 rightVector; 
-	private static readonly Vector3 forwardVector; 
-	private static readonly Vector3 backVector; 
-	private static readonly Vector3 positiveInfinityVector; 
-	private static readonly Vector3 negativeInfinityVector; 
+	public float x;
+	public float y;
+	public float z;
+	private static readonly Vector3 zeroVector;
+	private static readonly Vector3 oneVector;
+	private static readonly Vector3 upVector;
+	private static readonly Vector3 downVector;
+	private static readonly Vector3 leftVector;
+	private static readonly Vector3 rightVector;
+	private static readonly Vector3 forwardVector;
+	private static readonly Vector3 backVector;
+	private static readonly Vector3 positiveInfinityVector;
+	private static readonly Vector3 negativeInfinityVector;
 
 	public float Item { get; set; }
 	public Vector3 normalized { get; }
@@ -31,15 +31,15 @@ public struct Vector3 : IEquatable<Vector3> // TypeDefIndex: 3468
 	public static Vector3 positiveInfinity { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Vector3 Slerp(Vector3 a, Vector3 b, float t) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void OrthoNormalize2(ref Vector3 a, ref Vector3 b) { }
 
 	public static void OrthoNormalize(ref Vector3 normal, ref Vector3 tangent) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Vector3 RotateTowards(Vector3 current, Vector3 target, float maxRadiansDelta, float maxMagnitudeDelta) { }
 
 	public static Vector3 Lerp(Vector3 a, Vector3 b, float t) { }
@@ -48,7 +48,7 @@ public struct Vector3 : IEquatable<Vector3> // TypeDefIndex: 3468
 
 	public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime) { }
 
 	public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed, float deltaTime) { }

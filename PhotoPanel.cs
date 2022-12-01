@@ -1,9 +1,9 @@
-public class PhotoPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 10538
+public class PhotoPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 10542
 {
-	public RawImage Image; 
-	public InputField Message; 
-	private Item _item; 
-	private Texture2D _texture; 
+	public RawImage Image;
+	public InputField Message;
+	private Item _item;
+	private Texture2D _texture;
 
 
 	public void OnItem(Item item) { }

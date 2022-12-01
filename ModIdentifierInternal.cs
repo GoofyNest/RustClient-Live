@@ -1,11 +1,11 @@
-internal struct ModIdentifierInternal : IGettable<ModIdentifier>, ISettable<ModIdentifier>, IDisposable // TypeDefIndex: 9021
+internal struct ModIdentifierInternal : IGettable<ModIdentifier>, ISettable<ModIdentifier>, IDisposable // TypeDefIndex: 9023
 {
-	private int m_ApiVersion; 
-	private IntPtr m_NamespaceId; 
-	private IntPtr m_ItemId; 
-	private IntPtr m_ArtifactId; 
-	private IntPtr m_Title; 
-	private IntPtr m_Version; 
+	private int m_ApiVersion;
+	private IntPtr m_NamespaceId;
+	private IntPtr m_ItemId;
+	private IntPtr m_ArtifactId;
+	private IntPtr m_Title;
+	private IntPtr m_Version;
 
 	public Utf8String NamespaceId { get; set; }
 	public Utf8String ItemId { get; set; }

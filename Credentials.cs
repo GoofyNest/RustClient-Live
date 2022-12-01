@@ -1,42 +1,42 @@
-public struct Credentials // TypeDefIndex: 9573
+public struct Credentials // TypeDefIndex: 9575
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Token>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalCredentialType <Type>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <Token>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalCredentialType <Type>k__BackingField;
 
 	public Utf8String Token { get; set; }
 	public ExternalCredentialType Type { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Token() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Token(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalCredentialType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Type(ExternalCredentialType value) { }
 
 	internal void Set(ref CredentialsInternal other) { }
 
 }
 
-public struct Credentials // TypeDefIndex: 9656
+public struct Credentials // TypeDefIndex: 9658
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Id>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Token>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LoginCredentialType <Type>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <SystemAuthCredentialsOptions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalCredentialType <ExternalType>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <Id>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Token>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LoginCredentialType <Type>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <SystemAuthCredentialsOptions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalCredentialType <ExternalType>k__BackingField;
 
 	public Utf8String Id { get; set; }
 	public Utf8String Token { get; set; }
@@ -45,34 +45,34 @@ public struct Credentials // TypeDefIndex: 9656
 	public ExternalCredentialType ExternalType { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Id(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Token() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Token(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LoginCredentialType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Type(LoginCredentialType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_SystemAuthCredentialsOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SystemAuthCredentialsOptions(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalCredentialType get_ExternalType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExternalType(ExternalCredentialType value) { }
 
 	internal void Set(ref CredentialsInternal other) { }

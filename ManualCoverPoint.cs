@@ -1,10 +1,10 @@
-public class ManualCoverPoint : FacepunchBehaviour // TypeDefIndex: 13930
+public class ManualCoverPoint : FacepunchBehaviour // TypeDefIndex: 13947
 {
-	public bool IsDynamic; 
-	public float Score; 
-	public CoverPointVolume Volume; 
-	public Vector3 Normal; 
-	public CoverPoint.CoverType NormalCoverType; 
+	public bool IsDynamic;
+	public float Score;
+	public CoverPointVolume Volume;
+	public Vector3 Normal;
+	public CoverPoint.CoverType NormalCoverType;
 
 	public Vector3 Position { get; }
 	public float DirectionMagnitude { get; }

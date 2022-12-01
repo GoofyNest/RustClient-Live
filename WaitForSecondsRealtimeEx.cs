@@ -1,18 +1,18 @@
-public class WaitForSecondsRealtimeEx : CustomYieldInstruction, Pool.IPooled // TypeDefIndex: 6175
+public class WaitForSecondsRealtimeEx : CustomYieldInstruction, Pool.IPooled // TypeDefIndex: 6177
 {
-	private bool _isInPool; 
-	private float _waitUntilTime; 
-	[CompilerGeneratedAttribute] 
-	private float <WaitTime>k__BackingField; 
+	private bool _isInPool;
+	private float _waitUntilTime;
+	[CompilerGeneratedAttribute]
+	private float <WaitTime>k__BackingField;
 
 	public float WaitTime { get; set; }
 	public override bool keepWaiting { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_WaitTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_WaitTime(float value) { }
 
 	public override bool get_keepWaiting() { }

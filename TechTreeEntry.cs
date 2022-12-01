@@ -1,17 +1,17 @@
-public class TechTreeEntry : TechTreeWidget // TypeDefIndex: 12674
+public class TechTreeEntry : TechTreeWidget // TypeDefIndex: 12688
 {
-	public RawImage icon; 
-	public GameObject ableToUnlockBackground; 
-	public GameObject unlockedBackground; 
-	public GameObject lockedBackground; 
-	public GameObject lockOverlay; 
-	public GameObject selectedBackground; 
-	public Image radialUnlock; 
-	public float holdTime; 
-	private bool locked; 
-	private bool pathToUnlock; 
-	private bool isSelected; 
-	private float radialFillTime; 
+	public RawImage icon;
+	public GameObject ableToUnlockBackground;
+	public GameObject unlockedBackground;
+	public GameObject lockedBackground;
+	public GameObject lockOverlay;
+	public GameObject selectedBackground;
+	public Image radialUnlock;
+	public float holdTime;
+	private bool locked;
+	private bool pathToUnlock;
+	private bool isSelected;
+	private float radialFillTime;
 
 
 	public override bool IsLocked() { }

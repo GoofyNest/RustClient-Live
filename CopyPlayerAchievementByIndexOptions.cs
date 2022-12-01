@@ -1,33 +1,33 @@
-public struct CopyPlayerAchievementByIndexOptions // TypeDefIndex: 9903
+public struct CopyPlayerAchievementByIndexOptions // TypeDefIndex: 9905
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AchievementIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AchievementIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
 
 	public ProductUserId TargetUserId { get; set; }
 	public uint AchievementIndex { get; set; }
 	public ProductUserId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AchievementIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementIndex(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
 }

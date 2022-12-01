@@ -1,6 +1,6 @@
 internal struct SafeGPtrArrayHandle : IDisposable // TypeDefIndex: 21
 {
-	private RuntimeGPtrArrayHandle handle; 
+	private RuntimeGPtrArrayHandle handle;
 
 	internal int Length { get; }
 	internal IntPtr Item { get; }

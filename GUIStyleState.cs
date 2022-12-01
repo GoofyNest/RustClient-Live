@@ -1,9 +1,9 @@
 public sealed class GUIStyleState // TypeDefIndex: 4052
 {
-	internal IntPtr m_Ptr; 
-	private readonly GUIStyle m_SourceStyle; 
+	internal IntPtr m_Ptr;
+	private readonly GUIStyle m_SourceStyle;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Color textColor { get; set; }
 
 
@@ -11,10 +11,10 @@ public sealed class GUIStyleState // TypeDefIndex: 4052
 
 	public void set_textColor(Color value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Init() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Cleanup() { }
 
 	public void .ctor() { }

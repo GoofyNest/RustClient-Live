@@ -1,9 +1,9 @@
 public sealed class GameObject : Object // TypeDefIndex: 3518
 {
 
-[UsedByNativeCodeAttribute] 
-[ExcludeFromPresetAttribute] 
-[NativeHeaderAttribute] 
+[UsedByNativeCodeAttribute]
+[ExcludeFromPresetAttribute]
+[NativeHeaderAttribute]
 public sealed class GameObject : Object
 	public Transform transform { get; }
 	public int layer { get; set; }
@@ -14,7 +14,7 @@ public sealed class GameObject : Object
 	public GameObject gameObject { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static GameObject CreatePrimitive(PrimitiveType type) { }
 
 	public T GetComponent<T>() { }
@@ -219,19 +219,19 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponent<object>
 	*/
 
-	[FreeFunctionAttribute] 
-	[TypeInferenceRuleAttribute] 
+	[FreeFunctionAttribute]
+	[TypeInferenceRuleAttribute]
 	public Component GetComponent(Type type) { }
 
-	[NativeWritableSelfAttribute] 
-	[FreeFunctionAttribute] 
+	[NativeWritableSelfAttribute]
+	[FreeFunctionAttribute]
 	internal void GetComponentFastPath(Type type, IntPtr oneFurtherThanResultValue) { }
 
-	[TypeInferenceRuleAttribute] 
-	[FreeFunctionAttribute] 
+	[TypeInferenceRuleAttribute]
+	[FreeFunctionAttribute]
 	public Component GetComponentInChildren(Type type, bool includeInactive) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public T GetComponentInChildren<T>() { }
 	/* GenericInstMethod :
 	|
@@ -252,6 +252,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponentInChildren<Rigidbody>
 	|-GameObject.GetComponentInChildren<Button>
 	|-GameObject.GetComponentInChildren<Dropdown.DropdownItem>
+	|-GameObject.GetComponentInChildren<UILineRenderer>
 	|-GameObject.GetComponentInChildren<Text>
 	|-GameObject.GetComponentInChildren<object>
 	*/
@@ -263,8 +264,8 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponentInChildren<object>
 	*/
 
-	[FreeFunctionAttribute] 
-	[TypeInferenceRuleAttribute] 
+	[FreeFunctionAttribute]
+	[TypeInferenceRuleAttribute]
 	public Component GetComponentInParent(Type type) { }
 
 	public T GetComponentInParent<T>() { }
@@ -284,7 +285,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponentInParent<object>
 	*/
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Array GetComponentsInternal(Type type, bool useSearchTypeAsArrayReturnType, bool recursive, bool includeInactive, bool reverse, object resultList) { }
 
 	public Component[] GetComponents(Type type) { }
@@ -311,7 +312,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponents<Component>
 	*/
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public Component[] GetComponentsInChildren(Type type) { }
 
 	public Component[] GetComponentsInChildren(Type type, bool includeInactive) { }
@@ -429,18 +430,18 @@ public sealed class GameObject : Object
 	|-GameObject.TryGetComponent<Wearable>
 	*/
 
-	[FreeFunctionAttribute] 
-	[NativeWritableSelfAttribute] 
+	[FreeFunctionAttribute]
+	[NativeWritableSelfAttribute]
 	internal void TryGetComponentFastPath(Type type, IntPtr oneFurtherThanResultValue) { }
 
 	public void SendMessage(string methodName, SendMessageOptions options) { }
 
 	public void BroadcastMessage(string methodName, SendMessageOptions options) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Component Internal_AddComponentWithType(Type componentType) { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public Component AddComponent(Type componentType) { }
 
 	public T AddComponent<T>() { }
@@ -565,50 +566,50 @@ public sealed class GameObject : Object
 	|-GameObject.AddComponent<object>
 	*/
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Transform get_transform() { }
 
 	public int get_layer() { }
 
 	public void set_layer(int value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void SetActive(bool value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_activeSelf() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_activeInHierarchy() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isStatic() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void set_isStatic(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public string get_tag() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_tag(string value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool CompareTag(string tag) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SendMessage(string methodName, object value, SendMessageOptions options) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void SendMessage(string methodName, object value) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void SendMessage(string methodName) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void BroadcastMessage(string methodName, object parameter, SendMessageOptions options) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void BroadcastMessage(string methodName, object parameter) { }
 
 	public void .ctor(string name) { }
@@ -617,10 +618,10 @@ public sealed class GameObject : Object
 
 	public void .ctor(string name, Type[] components) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_CreateGameObject(GameObject self, string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static GameObject Find(string name) { }
 
 	public GameObject get_gameObject() { }

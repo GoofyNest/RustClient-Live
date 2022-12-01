@@ -1,33 +1,33 @@
-public struct PromoteMemberOptions // TypeDefIndex: 9252
+public struct PromoteMemberOptions // TypeDefIndex: 9254
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LobbyId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LobbyId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
 
 	public Utf8String LobbyId { get; set; }
 	public ProductUserId LocalUserId { get; set; }
 	public ProductUserId TargetUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LobbyId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
 }

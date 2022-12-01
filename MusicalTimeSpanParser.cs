@@ -1,13 +1,13 @@
-internal static class MusicalTimeSpanParser // TypeDefIndex: 7502
+internal static class MusicalTimeSpanParser // TypeDefIndex: 7504
 {
-	private static readonly Dictionary<string, Tuple<int, int>> Fractions; 
-	private static readonly Dictionary<string, Tuple<int, int>> Tuplets; 
-	private static readonly string FractionGroup; 
-	private static readonly string FractionMnemonicGroup; 
-	private static readonly string TupletGroup; 
-	private static readonly string TupletMnemonicGroup; 
-	private static readonly string DotsGroup; 
-	private static readonly string[] Patterns; 
+	private static readonly Dictionary<string, Tuple<int, int>> Fractions;
+	private static readonly Dictionary<string, Tuple<int, int>> Tuplets;
+	private static readonly string FractionGroup;
+	private static readonly string FractionMnemonicGroup;
+	private static readonly string TupletGroup;
+	private static readonly string TupletMnemonicGroup;
+	private static readonly string DotsGroup;
+	private static readonly string[] Patterns;
 
 
 	internal static ParsingResult TryParse(string input, out MusicalTimeSpan timeSpan) { }

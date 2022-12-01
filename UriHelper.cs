@@ -1,6 +1,6 @@
 internal static class UriHelper // TypeDefIndex: 2581
 {
-	private static readonly char[] HexUpperChars; 
+	private static readonly char[] HexUpperChars;
 
 
 	internal static char[] EscapeString(string input, int start, int end, char[] dest, ref int destPos, bool isUriString, char force1, char force2, char rsvd) { }

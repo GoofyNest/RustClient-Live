@@ -1,28 +1,28 @@
-public class BaseMelee : AttackEntity // TypeDefIndex: 10243
+public class BaseMelee : AttackEntity // TypeDefIndex: 10245
 {
-	[HeaderAttribute] 
-	public bool canThrowAsProjectile; 
-	public bool canAiHearIt; 
-	public bool onlyThrowAsProjectile; 
-	[HeaderAttribute] 
-	public DamageProperties damageProperties; 
-	public List<DamageTypeEntry> damageTypes; 
-	public float maxDistance; 
-	public float attackRadius; 
-	public bool isAutomatic; 
-	public bool blockSprintOnAttack; 
-	[HeaderAttribute] 
-	public GameObjectRef strikeFX; 
-	public bool useStandardHitEffects; 
-	[HeaderAttribute] 
-	public float aiStrikeDelay; 
-	public GameObjectRef swingEffect; 
-	public List<BaseMelee.MaterialFX> materialStrikeFX; 
-	[HeaderAttribute] 
-	[RangeAttribute] 
-	public float heartStress; 
-	public ResourceDispenser.GatherProperties gathering; 
-	private bool throwReady; 
+	[HeaderAttribute]
+	public bool canThrowAsProjectile;
+	public bool canAiHearIt;
+	public bool onlyThrowAsProjectile;
+	[HeaderAttribute]
+	public DamageProperties damageProperties;
+	public List<DamageTypeEntry> damageTypes;
+	public float maxDistance;
+	public float attackRadius;
+	public bool isAutomatic;
+	public bool blockSprintOnAttack;
+	[HeaderAttribute]
+	public GameObjectRef strikeFX;
+	public bool useStandardHitEffects;
+	[HeaderAttribute]
+	public float aiStrikeDelay;
+	public GameObjectRef swingEffect;
+	public List<BaseMelee.MaterialFX> materialStrikeFX;
+	[HeaderAttribute]
+	[RangeAttribute]
+	public float heartStress;
+	public ResourceDispenser.GatherProperties gathering;
+	private bool throwReady;
 
 	protected virtual bool CanAttack { get; }
 	protected virtual bool CanThrow { get; }
@@ -76,10 +76,10 @@ public class BaseMelee : AttackEntity // TypeDefIndex: 10243
 
 }
 
-public class BaseMelee.MaterialFX // TypeDefIndex: 10244
+public class BaseMelee.MaterialFX // TypeDefIndex: 10246
 {
-	public string materialName; 
-	public GameObjectRef fx; 
+	public string materialName;
+	public GameObjectRef fx;
 
 
 	public void .ctor() { }

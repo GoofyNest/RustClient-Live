@@ -1,11 +1,11 @@
-public class SmartSwitch : AppIOEntity // TypeDefIndex: 10168
+public class SmartSwitch : AppIOEntity // TypeDefIndex: 10170
 {
-	private Option __menuOption_Menu_TurnOff; 
-	private Option __menuOption_Menu_TurnOn; 
-	[HeaderAttribute] 
-	public Animator ReceiverAnimator; 
-	private static readonly int ReceiverNoPower; 
-	private static readonly int ReceiverOn; 
+	private Option __menuOption_Menu_TurnOff;
+	private Option __menuOption_Menu_TurnOn;
+	[HeaderAttribute]
+	public Animator ReceiverAnimator;
+	private static readonly int ReceiverNoPower;
+	private static readonly int ReceiverOn;
 
 	public override bool HasMenuOptions { get; }
 
@@ -22,18 +22,18 @@ public class SmartSwitch : AppIOEntity // TypeDefIndex: 10168
 
 	public void OnSwitchStatusChange(bool isOn) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOn(BasePlayer player) { }
 
 	public bool Menu_TurnOn_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOff(BasePlayer player) { }
 
 	public bool Menu_TurnOff_ShowIf(BasePlayer player) { }

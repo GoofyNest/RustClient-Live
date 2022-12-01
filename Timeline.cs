@@ -1,24 +1,24 @@
-public class Timeline : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7080
+public class Timeline : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7082
 {
-	public int StartTime; 
-	public int EndTime; 
-	public int CurrentPosition; 
-	public TimeRuler TimeRuler; 
-	public RectTransform IndicatorCurrent; 
-	public UnityEvent OnStartScrub; 
-	public UnityEvent OnEndScrub; 
-	public Timeline.ScrubEvent OnScrubToTime; 
-	public List<TimelineMarker> Markers; 
-	[CompilerGeneratedAttribute] 
-	private TimelineMarker <SelectedMarker>k__BackingField; 
+	public int StartTime;
+	public int EndTime;
+	public int CurrentPosition;
+	public TimeRuler TimeRuler;
+	public RectTransform IndicatorCurrent;
+	public UnityEvent OnStartScrub;
+	public UnityEvent OnEndScrub;
+	public Timeline.ScrubEvent OnScrubToTime;
+	public List<TimelineMarker> Markers;
+	[CompilerGeneratedAttribute]
+	private TimelineMarker <SelectedMarker>k__BackingField;
 
 	public TimelineMarker SelectedMarker { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimelineMarker get_SelectedMarker() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SelectedMarker(TimelineMarker value) { }
 
 	internal void SelectMarker(TimelineMarker marker) { }
@@ -51,7 +51,7 @@ public class Timeline : RustControl, IPointerDownHandler, IEventSystemHandler, I
 
 }
 
-public class Timeline.ScrubEvent : UnityEvent<float> // TypeDefIndex: 7081
+public class Timeline.ScrubEvent : UnityEvent<float> // TypeDefIndex: 7083
 {
 
 	public void .ctor() { }

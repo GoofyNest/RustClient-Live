@@ -1,20 +1,22 @@
-public class BlackjackController : CardGameController // TypeDefIndex: 13797
+public class BlackjackController : CardGameController // TypeDefIndex: 13813
 {
-	public List<PlayingCard> dealerCards; 
+	public List<PlayingCard> dealerCards;
 	public const float BLACKJACK_PAYOUT_RATIO = 1,5;
 	public const float INSURANCE_PAYOUT_RATIO = 2;
-	[CompilerGeneratedAttribute] 
-	private BlackjackController.BlackjackInputOption <LastAction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <LastActionTarget>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <LastActionValue>k__BackingField; 
-	public BlackjackController.DealerOpinion dealerRoundOpinion; 
+	private const float DEALER_MOVE_TIME = 1;
+	[CompilerGeneratedAttribute]
+	private BlackjackController.BlackjackInputOption <LastAction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <LastActionTarget>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <LastActionValue>k__BackingField;
+	public BlackjackController.DealerOpinion dealerRoundOpinion;
 
 	public override int MinPlayers { get; }
 	public override int MinBuyIn { get; }
 	public override int MaxBuyIn { get; }
 	public override int MinToPlay { get; }
+	public override int EndRoundDelay { get; }
 	public override int TimeBetweenRounds { get; }
 	public BlackjackController.BlackjackInputOption LastAction { get; set; }
 	public ulong LastActionTarget { get; set; }
@@ -32,24 +34,26 @@ public class BlackjackController : CardGameController // TypeDefIndex: 13797
 
 	public override int get_MinToPlay() { }
 
+	public override int get_EndRoundDelay() { }
+
 	public override int get_TimeBetweenRounds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BlackjackController.BlackjackInputOption get_LastAction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastAction(BlackjackController.BlackjackInputOption value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_LastActionTarget() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastActionTarget(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_LastActionValue() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastActionValue(int value) { }
 
 	public bool get_AllBetsPlaced() { }
@@ -104,32 +108,32 @@ public class BlackjackController : CardGameController // TypeDefIndex: 13797
 
 	public void PlayDealerOpinionSound() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
 }
 
-public enum BlackjackController.BlackjackInputOption // TypeDefIndex: 13798
+public enum BlackjackController.BlackjackInputOption // TypeDefIndex: 13814
 {
-	public int value__; 
+	public int value__;
 	public const BlackjackController.BlackjackInputOption None = 0;
 	public const BlackjackController.BlackjackInputOption SubmitBet = 1;
 	public const BlackjackController.BlackjackInputOption Hit = 2;
@@ -142,9 +146,9 @@ public enum BlackjackController.BlackjackInputOption // TypeDefIndex: 13798
 
 }
 
-public enum BlackjackController.BlackjackRoundResult // TypeDefIndex: 13799
+public enum BlackjackController.BlackjackRoundResult // TypeDefIndex: 13815
 {
-	public int value__; 
+	public int value__;
 	public const BlackjackController.BlackjackRoundResult None = 0;
 	public const BlackjackController.BlackjackRoundResult Bust = 1;
 	public const BlackjackController.BlackjackRoundResult Loss = 2;
@@ -154,17 +158,17 @@ public enum BlackjackController.BlackjackRoundResult // TypeDefIndex: 13799
 
 }
 
-public enum BlackjackController.CardsValueMode // TypeDefIndex: 13800
+public enum BlackjackController.CardsValueMode // TypeDefIndex: 13816
 {
-	public int value__; 
+	public int value__;
 	public const BlackjackController.CardsValueMode Low = 0;
 	public const BlackjackController.CardsValueMode High = 1;
 
 }
 
-public enum BlackjackController.DealerOpinion // TypeDefIndex: 13801
+public enum BlackjackController.DealerOpinion // TypeDefIndex: 13817
 {
-	public int value__; 
+	public int value__;
 	public const BlackjackController.DealerOpinion Neutral = 0;
 	public const BlackjackController.DealerOpinion Shocked = 1;
 	public const BlackjackController.DealerOpinion Sad = 2;

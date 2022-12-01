@@ -1,18 +1,18 @@
-public class VirtualItemIcon : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12842
+public class VirtualItemIcon : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12856
 {
-	public ItemDefinition itemDef; 
-	public int itemAmount; 
-	public bool asBlueprint; 
-	public Image iconImage; 
-	public Image bpUnderlay; 
-	public Text amountText; 
-	public Text hoverText; 
-	public CanvasGroup iconContents; 
-	public Tooltip ToolTip; 
-	public CanvasGroup conditionObject; 
-	public Image conditionFill; 
-	public Image maxConditionFill; 
-	public Image cornerIcon; 
+	public ItemDefinition itemDef;
+	public int itemAmount;
+	public bool asBlueprint;
+	public Image iconImage;
+	public Image bpUnderlay;
+	public Text amountText;
+	public Text hoverText;
+	public CanvasGroup iconContents;
+	public Tooltip ToolTip;
+	public CanvasGroup conditionObject;
+	public Image conditionFill;
+	public Image maxConditionFill;
+	public Image cornerIcon;
 
 
 	public void SetVirtualItem(ItemDefinition info, int amount = 0, ulong skinId = 0, bool asBP = False, int dataInt = 0) { }
@@ -41,9 +41,9 @@ public class VirtualItemIcon : MonoBehaviour, IPointerEnterHandler, IEventSystem
 
 }
 
-private sealed class VirtualItemIcon.<>c__DisplayClass17_0 // TypeDefIndex: 12843
+private sealed class VirtualItemIcon.<>c__DisplayClass17_0 // TypeDefIndex: 12857
 {
-	public ulong skin; 
+	public ulong skin;
 
 
 	public void .ctor() { }

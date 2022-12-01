@@ -1,12 +1,12 @@
-public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 12577
+public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 12590
 {
-	public SoundDefinition listComplete; 
-	public SoundDefinition itemComplete; 
-	public SoundDefinition popup; 
-	public Canvas Canvas; 
-	public Text titleText; 
-	private AchievementTodo[] items; 
-	private bool blockOpenSound; 
+	public SoundDefinition listComplete;
+	public SoundDefinition itemComplete;
+	public SoundDefinition popup;
+	public Canvas Canvas;
+	public Text titleText;
+	private AchievementTodo[] items;
+	private bool blockOpenSound;
 
 	public bool IsOpen { get; }
 
@@ -19,7 +19,7 @@ public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 12
 
 	public void Reset() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator Think() { }
 
 	public bool ShouldShow() { }
@@ -42,31 +42,31 @@ public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 12
 
 }
 
-private sealed class Achievements.<Think>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12578
+private sealed class Achievements.<Think>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12591
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Achievements <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public Achievements <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

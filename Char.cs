@@ -1,9 +1,9 @@
 public struct Char : IComparable, IConvertible, IComparable<char>, IEquatable<char> // TypeDefIndex: 183
 {
-	internal char m_value; 
+	internal char m_value;
 	public const char MaxValue = '\xffff';
 	public const char MinValue = '\x0';
-	private static readonly byte[] categoryForLatin1; 
+	private static readonly byte[] categoryForLatin1;
 	internal const int UNICODE_PLANE00_END = 65535;
 	internal const int UNICODE_PLANE01_START = 65536;
 	internal const int UNICODE_PLANE16_END = 1114111;

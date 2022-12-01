@@ -1,6 +1,6 @@
-public enum ExternalCredentialType // TypeDefIndex: 8286
+public enum ExternalCredentialType // TypeDefIndex: 8288
 {
-	public int value__; 
+	public int value__;
 	public const ExternalCredentialType Epic = 0;
 	public const ExternalCredentialType SteamAppTicket = 1;
 	public const ExternalCredentialType PsnIdToken = 2;

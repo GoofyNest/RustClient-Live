@@ -1,10 +1,10 @@
-public class TimerSwitch : IOEntity // TypeDefIndex: 10184
+public class TimerSwitch : IOEntity // TypeDefIndex: 10186
 {
-	private Option __menuOption_Menu_TurnOn; 
-	public float timerLength; 
-	public Transform timerDrum; 
-	private float timePassed; 
-	private float oldTimeFraction; 
+	private Option __menuOption_Menu_TurnOn;
+	public float timerLength;
+	public Transform timerDrum;
+	private float timePassed;
+	private float oldTimeFraction;
 
 	public override bool HasMenuOptions { get; }
 
@@ -19,10 +19,10 @@ public class TimerSwitch : IOEntity // TypeDefIndex: 10184
 
 	public void Update() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOn(BasePlayer player) { }
 
 	public bool Menu_Activate_ShowIf(BasePlayer player) { }

@@ -1,7 +1,7 @@
 public class DSASignatureDeformatter : AsymmetricSignatureDeformatter // TypeDefIndex: 957
 {
-	private DSA _dsaKey; 
-	private string _oid; 
+	private DSA _dsaKey;
+	private string _oid;
 
 
 	public void .ctor() { }

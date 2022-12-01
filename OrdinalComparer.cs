@@ -1,6 +1,6 @@
 internal sealed class OrdinalComparer : StringComparer // TypeDefIndex: 305
 {
-	private bool _ignoreCase; 
+	private bool _ignoreCase;
 
 
 	internal void .ctor(bool ignoreCase) { }

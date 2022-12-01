@@ -1,6 +1,6 @@
 public static class GC // TypeDefIndex: 224
 {
-	internal static readonly object EPHEMERON_TOMBSTONE; 
+	internal static readonly object EPHEMERON_TOMBSTONE;
 
 	public static int MaxGeneration { get; }
 
@@ -23,18 +23,18 @@ public static class GC // TypeDefIndex: 224
 
 	public static void Collect() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int CollectionCount(int generation) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void KeepAlive(object obj) { }
 
 	public static int get_MaxGeneration() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private static void _SuppressFinalize(object o) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void SuppressFinalize(object obj) { }
 
 	private static void _ReRegisterForFinalize(object o) { }
@@ -47,24 +47,24 @@ public static class GC // TypeDefIndex: 224
 
 }
 
-public class GC : ConsoleSystem // TypeDefIndex: 13713
+public class GC : ConsoleSystem // TypeDefIndex: 13729
 {
-	[ClientVar] 
-	public static bool buffer_enabled; 
-	[ClientVar] 
-	public static int debuglevel; 
-	private static int m_buffer; 
+	[ClientVar]
+	public static bool buffer_enabled;
+	[ClientVar]
+	public static int debuglevel;
+	private static int m_buffer;
 
-	[ClientVar] 
+	[ClientVar]
 	public static int buffer { get; set; }
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static bool incremental_enabled { get; set; }
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static int incremental_milliseconds { get; set; }
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static bool enabled { get; set; }
 
 
@@ -84,16 +84,16 @@ public class GC : ConsoleSystem // TypeDefIndex: 13713
 
 	public static void set_enabled(bool value) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void collect() { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void unload() { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void alloc(ConsoleSystem.Arg args) { }
 
 	public void .ctor() { }
@@ -102,13 +102,13 @@ public class GC : ConsoleSystem // TypeDefIndex: 13713
 
 }
 
-public class GC : MonoBehaviour, IClientComponent // TypeDefIndex: 13827
+public class GC : MonoBehaviour, IClientComponent // TypeDefIndex: 13843
 {
-	private static float gcTime; 
-	private static GarbageCollector.Mode gcMode; 
-	private long heapSize; 
-	private long heapBaseline; 
-	private int collectionCount; 
+	private static float gcTime;
+	private static GarbageCollector.Mode gcMode;
+	private long heapSize;
+	private long heapBaseline;
+	private int collectionCount;
 
 	public static bool Enabled { get; }
 

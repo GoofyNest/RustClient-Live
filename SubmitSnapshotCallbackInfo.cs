@@ -1,33 +1,33 @@
-public struct SubmitSnapshotCallbackInfo : ICallbackInfo // TypeDefIndex: 8813
+public struct SubmitSnapshotCallbackInfo : ICallbackInfo // TypeDefIndex: 8815
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <SnapshotId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <SnapshotId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public uint SnapshotId { get; set; }
 	public object ClientData { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_SnapshotId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SnapshotId(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
 	public Nullable<Result> GetResultCode() { }

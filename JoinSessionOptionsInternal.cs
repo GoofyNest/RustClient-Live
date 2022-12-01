@@ -1,10 +1,10 @@
-internal struct JoinSessionOptionsInternal : ISettable<JoinSessionOptions>, IDisposable // TypeDefIndex: 8501
+internal struct JoinSessionOptionsInternal : ISettable<JoinSessionOptions>, IDisposable // TypeDefIndex: 8503
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionName; 
-	private IntPtr m_SessionHandle; 
-	private IntPtr m_LocalUserId; 
-	private int m_PresenceEnabled; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionName;
+	private IntPtr m_SessionHandle;
+	private IntPtr m_LocalUserId;
+	private int m_PresenceEnabled;
 
 	public Utf8String SessionName { set; }
 	public SessionDetails SessionHandle { set; }

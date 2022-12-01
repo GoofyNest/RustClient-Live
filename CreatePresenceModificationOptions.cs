@@ -1,15 +1,15 @@
-public struct CreatePresenceModificationOptions // TypeDefIndex: 8823
+public struct CreatePresenceModificationOptions // TypeDefIndex: 8825
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
 }

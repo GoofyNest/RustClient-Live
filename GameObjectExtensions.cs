@@ -1,7 +1,7 @@
-public static class GameObjectExtensions // TypeDefIndex: 6231
+public static class GameObjectExtensions // TypeDefIndex: 6233
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetIgnoreCollisions(GameObject self, GameObject other, bool ignore) { }
 
 }

@@ -1,22 +1,22 @@
-public static class MapImageRenderer // TypeDefIndex: 12495
+public static class MapImageRenderer // TypeDefIndex: 12503
 {
-	private static readonly Vector3 StartColor; 
-	private static readonly Vector4 WaterColor; 
-	private static readonly Vector4 GravelColor; 
-	private static readonly Vector4 DirtColor; 
-	private static readonly Vector4 SandColor; 
-	private static readonly Vector4 GrassColor; 
-	private static readonly Vector4 ForestColor; 
-	private static readonly Vector4 RockColor; 
-	private static readonly Vector4 SnowColor; 
-	private static readonly Vector4 PebbleColor; 
-	private static readonly Vector4 OffShoreColor; 
-	private static readonly Vector3 SunDirection; 
+	private static readonly Vector3 StartColor;
+	private static readonly Vector4 WaterColor;
+	private static readonly Vector4 GravelColor;
+	private static readonly Vector4 DirtColor;
+	private static readonly Vector4 SandColor;
+	private static readonly Vector4 GrassColor;
+	private static readonly Vector4 ForestColor;
+	private static readonly Vector4 RockColor;
+	private static readonly Vector4 SnowColor;
+	private static readonly Vector4 PebbleColor;
+	private static readonly Vector4 OffShoreColor;
+	private static readonly Vector3 SunDirection;
 	private const float SunPower = 0,65;
 	private const float Brightness = 1,05;
 	private const float Contrast = 0,94;
 	private const float OceanWaterLevel = 0;
-	private static readonly Vector3 Half; 
+	private static readonly Vector3 Half;
 
 
 	public static byte[] Render(out int imageWidth, out int imageHeight, out Color background, float scale = 0,5, bool lossy = True) { }
@@ -29,11 +29,11 @@ public static class MapImageRenderer // TypeDefIndex: 12495
 
 }
 
-private struct MapImageRenderer.Array2D<T> // TypeDefIndex: 12496
+private struct MapImageRenderer.Array2D<T> // TypeDefIndex: 12504
 {
-	private readonly T[] _items; 
-	private readonly int _width; 
-	private readonly int _height; 
+	private readonly T[] _items;
+	private readonly int _width;
+	private readonly int _height;
 
 	public T Item { get; }
 
@@ -55,13 +55,13 @@ private struct MapImageRenderer.Array2D<T> // TypeDefIndex: 12496
 
 }
 
-private sealed class MapImageRenderer.<>c__DisplayClass17_0 // TypeDefIndex: 12497
+private sealed class MapImageRenderer.<>c__DisplayClass17_0 // TypeDefIndex: 12505
 {
-	public TerrainHeightMap terrainHeightMap; 
-	public TerrainSplatMap terrainSplatMap; 
-	public float invMapRes; 
-	public int mapRes; 
-	public MapImageRenderer.Array2D<Color> output; 
+	public TerrainHeightMap terrainHeightMap;
+	public TerrainSplatMap terrainSplatMap;
+	public float invMapRes;
+	public int mapRes;
+	public MapImageRenderer.Array2D<Color> output;
 
 
 	public void .ctor() { }

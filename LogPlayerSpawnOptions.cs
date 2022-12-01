@@ -1,33 +1,33 @@
-public struct LogPlayerSpawnOptions // TypeDefIndex: 9777
+public struct LogPlayerSpawnOptions // TypeDefIndex: 9779
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <SpawnedPlayerHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TeamId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <CharacterId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <SpawnedPlayerHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TeamId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <CharacterId>k__BackingField;
 
 	public IntPtr SpawnedPlayerHandle { get; set; }
 	public uint TeamId { get; set; }
 	public uint CharacterId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_SpawnedPlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SpawnedPlayerHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TeamId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TeamId(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_CharacterId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CharacterId(uint value) { }
 
 }

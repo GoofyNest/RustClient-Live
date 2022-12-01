@@ -1,8 +1,8 @@
 protected internal struct EventSource.EventData // TypeDefIndex: 1581
 {
-	internal long m_Ptr; 
-	internal int m_Size; 
-	internal int m_Reserved; 
+	internal long m_Ptr;
+	internal int m_Size;
+	internal int m_Reserved;
 
 	public IntPtr DataPointer { get; set; }
 	public int Size { set; }
@@ -20,10 +20,10 @@ protected internal struct EventSource.EventData // TypeDefIndex: 1581
 
 protected class XmlSerializationReader.CollectionFixup // TypeDefIndex: 2098
 {
-	private XmlSerializationCollectionFixupCallback callback; 
-	private object collection; 
-	private object collectionItems; 
-	private string id; 
+	private XmlSerializationCollectionFixupCallback callback;
+	private object collection;
+	private object collectionItems;
+	private string id;
 
 	public XmlSerializationCollectionFixupCallback Callback { get; }
 	public object Collection { get; }
@@ -47,9 +47,9 @@ protected class XmlSerializationReader.CollectionFixup // TypeDefIndex: 2098
 
 protected class XmlSerializationReader.Fixup // TypeDefIndex: 2099
 {
-	private object source; 
-	private string[] ids; 
-	private XmlSerializationFixupCallback callback; 
+	private object source;
+	private string[] ids;
+	private XmlSerializationFixupCallback callback;
 
 	public XmlSerializationFixupCallback Callback { get; }
 	public string[] Ids { get; }
@@ -68,8 +68,8 @@ protected class XmlSerializationReader.Fixup // TypeDefIndex: 2099
 
 protected abstract class TypeConverter.SimplePropertyDescriptor : PropertyDescriptor // TypeDefIndex: 2752
 {
-	private Type componentType; 
-	private Type propertyType; 
+	private Type componentType;
+	private Type propertyType;
 
 	public override Type ComponentType { get; }
 	public override bool IsReadOnly { get; }
@@ -90,14 +90,14 @@ protected abstract class TypeConverter.SimplePropertyDescriptor : PropertyDescri
 
 protected internal class Dropdown.DropdownItem : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, ICancelHandler // TypeDefIndex: 4928
 {
-	[SerializeField] 
-	private Text m_Text; 
-	[SerializeField] 
-	private Image m_Image; 
-	[SerializeField] 
-	private RectTransform m_RectTransform; 
-	[SerializeField] 
-	private Toggle m_Toggle; 
+	[SerializeField]
+	private Text m_Text;
+	[SerializeField]
+	private Image m_Image;
+	[SerializeField]
+	private RectTransform m_RectTransform;
+	[SerializeField]
+	private Toggle m_Toggle;
 
 	public Text text { get; set; }
 	public Image image { get; set; }
@@ -131,7 +131,7 @@ protected internal class Dropdown.DropdownItem : MonoBehaviour, IPointerEnterHan
 
 protected enum InputField.EditState // TypeDefIndex: 4960
 {
-	public int value__; 
+	public int value__;
 	public const InputField.EditState Continue = 0;
 	public const InputField.EditState Finish = 1;
 
@@ -139,7 +139,7 @@ protected enum InputField.EditState // TypeDefIndex: 4960
 
 protected enum Selectable.SelectionState // TypeDefIndex: 5011
 {
-	public int value__; 
+	public int value__;
 	public const Selectable.SelectionState Normal = 0;
 	public const Selectable.SelectionState Highlighted = 1;
 	public const Selectable.SelectionState Pressed = 2;
@@ -150,8 +150,8 @@ protected enum Selectable.SelectionState // TypeDefIndex: 5011
 
 protected class PointerInputModule.ButtonState // TypeDefIndex: 5088
 {
-	private PointerEventData.InputButton m_Button; 
-	private PointerInputModule.MouseButtonEventData m_EventData; 
+	private PointerEventData.InputButton m_Button;
+	private PointerInputModule.MouseButtonEventData m_EventData;
 
 	public PointerInputModule.MouseButtonEventData eventData { get; set; }
 	public PointerEventData.InputButton button { get; set; }
@@ -171,7 +171,7 @@ protected class PointerInputModule.ButtonState // TypeDefIndex: 5088
 
 protected class PointerInputModule.MouseState // TypeDefIndex: 5089
 {
-	private List<PointerInputModule.ButtonState> m_TrackedButtons; 
+	private List<PointerInputModule.ButtonState> m_TrackedButtons;
 
 
 	public bool AnyPressesThisFrame() { }
@@ -186,9 +186,9 @@ protected class PointerInputModule.MouseState // TypeDefIndex: 5089
 
 }
 
-protected internal enum JsonReader.State // TypeDefIndex: 5910
+protected internal enum JsonReader.State // TypeDefIndex: 5912
 {
-	public int value__; 
+	public int value__;
 	public const JsonReader.State Start = 0;
 	public const JsonReader.State Complete = 1;
 	public const JsonReader.State Property = 2;
@@ -205,54 +205,54 @@ protected internal enum JsonReader.State // TypeDefIndex: 5910
 
 }
 
-protected enum TMP_InputField.EditState // TypeDefIndex: 6734
+protected enum TMP_InputField.EditState // TypeDefIndex: 6736
 {
-	public int value__; 
+	public int value__;
 	public const TMP_InputField.EditState Continue = 0;
 	public const TMP_InputField.EditState Finish = 1;
 
 }
 
-protected struct TMP_Text.UnicodeChar // TypeDefIndex: 6778
+protected struct TMP_Text.UnicodeChar // TypeDefIndex: 6780
 {
-	public int unicode; 
-	public int stringIndex; 
-	public int length; 
+	public int unicode;
+	public int stringIndex;
+	public int length;
 
 }
 
-protected static class AnimalAnimation.Params // TypeDefIndex: 10841
+protected static class AnimalAnimation.Params // TypeDefIndex: 10847
 {
-	public static int WalkSpeed; 
-	public static int Sleeping; 
-	public static int IdleOffset; 
+	public static int WalkSpeed;
+	public static int Sleeping;
+	public static int IdleOffset;
 
 
 	private static void .cctor() { }
 
 }
 
-protected class ViewShake.ShakeParameters // TypeDefIndex: 10982
+protected class ViewShake.ShakeParameters // TypeDefIndex: 10988
 {
-	public float endTime; 
-	public float duration; 
-	public float amplitude; 
-	public float frequency; 
-	public float nextShake; 
-	public float angle; 
-	public Vector3 offset; 
-	public bool infinite; 
+	public float endTime;
+	public float duration;
+	public float amplitude;
+	public float frequency;
+	public float nextShake;
+	public float angle;
+	public Vector3 offset;
+	public bool infinite;
 
 
 	public void .ctor() { }
 
 }
 
-protected struct BaseFootstepEffect.GroundInfo // TypeDefIndex: 11062
+protected struct BaseFootstepEffect.GroundInfo // TypeDefIndex: 11068
 {
-	public string surface; 
-	public Vector3 position; 
-	public Quaternion rotation; 
+	public string surface;
+	public Vector3 position;
+	public Quaternion rotation;
 
 
 	public GameObject SpawnDecal(string effectType) { }
@@ -263,9 +263,9 @@ protected struct BaseFootstepEffect.GroundInfo // TypeDefIndex: 11062
 
 }
 
-protected enum VehicleChassisVisuals.ExtensionMode<T> // TypeDefIndex: 11519
+protected enum VehicleChassisVisuals.ExtensionMode<T> // TypeDefIndex: 11526
 {
-	public int value__; 
+	public int value__;
 	public const VehicleChassisVisuals.ExtensionMode<T> RestingIsMinExtension = 0;
 	public const VehicleChassisVisuals.ExtensionMode<T> RestingIsMaxExtension = 1;
 

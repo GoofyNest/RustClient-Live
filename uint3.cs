@@ -1,13 +1,13 @@
-public struct uint3 : IEquatable<uint3>, IFormattable // TypeDefIndex: 7156
+public struct uint3 : IEquatable<uint3>, IFormattable // TypeDefIndex: 7158
 {
 
-[DebuggerTypeProxyAttribute] 
-[DefaultMemberAttribute] 
+[DebuggerTypeProxyAttribute]
+[DefaultMemberAttribute]
 [Serializable]
 public struct uint3 : IEquatable<uint3>, IFormattable
-	public uint x; 
-	public uint y; 
-	public uint z; 
+	public uint x;
+	public uint y;
+	public uint z;
 
 
 	public void .ctor(uint x, uint y, uint z) { }

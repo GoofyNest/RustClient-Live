@@ -1,10 +1,10 @@
-public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6313
+public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6315
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public CodeLock.Private pv; 
-	public bool hasCode; 
-	public bool hasGuestCode; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public CodeLock.Private pv;
+	public bool hasCode;
+	public bool hasGuestCode;
 
 
 	public static void ResetToPool(CodeLock instance) { }
@@ -61,14 +61,14 @@ public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6313
 
 }
 
-public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6314
+public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6316
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string code; 
-	public List<ulong> users; 
-	public string guestCode; 
-	public List<ulong> guestUsers; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string code;
+	public List<ulong> users;
+	public string guestCode;
+	public List<ulong> guestUsers;
 
 
 	public static void ResetToPool(CodeLock.Private instance) { }
@@ -125,21 +125,21 @@ public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class CodeLock : BaseLock // TypeDefIndex: 10091
+public class CodeLock : BaseLock // TypeDefIndex: 10093
 {
-	private Option __menuOption_Menu_ChangeGuestCode; 
-	private Option __menuOption_Menu_ChangeLockCode; 
-	private Option __menuOption_Menu_Lock; 
-	private Option __menuOption_Menu_Unlock; 
-	public GameObjectRef keyEnterDialog; 
-	public GameObjectRef effectUnlocked; 
-	public GameObjectRef effectLocked; 
-	public GameObjectRef effectDenied; 
-	public GameObjectRef effectCodeChanged; 
-	public GameObjectRef effectShock; 
-	private bool hasCode; 
+	private Option __menuOption_Menu_ChangeGuestCode;
+	private Option __menuOption_Menu_ChangeLockCode;
+	private Option __menuOption_Menu_Lock;
+	private Option __menuOption_Menu_Unlock;
+	public GameObjectRef keyEnterDialog;
+	public GameObjectRef effectUnlocked;
+	public GameObjectRef effectLocked;
+	public GameObjectRef effectDenied;
+	public GameObjectRef effectCodeChanged;
+	public GameObjectRef effectShock;
+	private bool hasCode;
 	public const BaseEntity.Flags Flag_CodeEntryBlocked = 524288;
-	public static readonly Translate.Phrase blockwarning; 
+	public static readonly Translate.Phrase blockwarning;
 
 	public override bool HasMenuOptions { get; }
 
@@ -154,52 +154,52 @@ public class CodeLock : BaseLock // TypeDefIndex: 10091
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Unlock(BasePlayer player) { }
 
 	public bool Menu_Unlock_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lock(BasePlayer player) { }
 
 	public bool Menu_Lock_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_ChangeLockCode(BasePlayer player) { }
 
 	public bool Menu_ChangeLockCode_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_ChangeGuestCode(BasePlayer player) { }
 
 	public bool Menu_ChangeGuestCode_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void EnterUnlockCode(BaseEntity.RPCMessage rpc) { }
 
 	public void .ctor() { }
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Menu_ChangeLockCode>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Menu_ChangeGuestCode>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <EnterUnlockCode>
 
 }

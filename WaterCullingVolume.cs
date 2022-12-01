@@ -1,11 +1,11 @@
-public class WaterCullingVolume : MonoBehaviour // TypeDefIndex: 12351
+public class WaterCullingVolume : MonoBehaviour // TypeDefIndex: 12359
 {
-	public bool isDynamic; 
-	private Bounds worldBounds; 
-	private Vector4[] worldToLocal; 
-	private bool isVisible; 
-	private float distanceToCamera; 
-	private static HashSet<WaterCullingVolume> volumes; 
+	public bool isDynamic;
+	private Bounds worldBounds;
+	private Vector4[] worldToLocal;
+	private bool isVisible;
+	private float distanceToCamera;
+	private static HashSet<WaterCullingVolume> volumes;
 
 	public Bounds WorldBounds { get; }
 	public Vector4[] WorldToLocal { get; }

@@ -1,6 +1,6 @@
 public enum TextureFormat // TypeDefIndex: 3427
 {
-	public int value__; 
+	public int value__;
 	public const TextureFormat Alpha8 = 1;
 	public const TextureFormat ARGB4444 = 2;
 	public const TextureFormat RGB24 = 3;
@@ -44,9 +44,9 @@ public enum TextureFormat // TypeDefIndex: 3427
 	public const TextureFormat ASTC_8x8 = 51;
 	public const TextureFormat ASTC_10x10 = 52;
 	public const TextureFormat ASTC_12x12 = 53;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const TextureFormat ETC_RGB4_3DS = 60;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const TextureFormat ETC_RGBA8_3DS = 61;
 	public const TextureFormat RG16 = 62;
 	public const TextureFormat R8 = 63;

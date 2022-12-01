@@ -1,36 +1,36 @@
 public sealed class VideoPlayer : Behaviour // TypeDefIndex: 4788
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private VideoPlayer.EventHandler prepareCompleted; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private VideoPlayer.EventHandler loopPointReached; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private VideoPlayer.EventHandler started; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private VideoPlayer.EventHandler frameDropped; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private VideoPlayer.ErrorEventHandler errorReceived; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private VideoPlayer.EventHandler seekCompleted; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private VideoPlayer.TimeEventHandler clockResyncOccurred; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private VideoPlayer.FrameReadyEventHandler frameReady; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private VideoPlayer.EventHandler prepareCompleted;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private VideoPlayer.EventHandler loopPointReached;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private VideoPlayer.EventHandler started;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private VideoPlayer.EventHandler frameDropped;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private VideoPlayer.ErrorEventHandler errorReceived;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private VideoPlayer.EventHandler seekCompleted;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private VideoPlayer.TimeEventHandler clockResyncOccurred;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private VideoPlayer.FrameReadyEventHandler frameReady;
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public string url { set; }
-	[NativeHeaderAttribute] 
+	[NativeHeaderAttribute]
 	public Texture texture { get; }
 	public bool isPrepared { get; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public long frame { get; }
 	public uint width { get; }
 	public uint height { get; }
@@ -40,7 +40,7 @@ public sealed class VideoPlayer : Behaviour // TypeDefIndex: 4788
 
 	public Texture get_texture() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isPrepared() { }
 
 	public void Play() { }
@@ -53,34 +53,34 @@ public sealed class VideoPlayer : Behaviour // TypeDefIndex: 4788
 
 	public uint get_height() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_errorReceived(VideoPlayer.ErrorEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_errorReceived(VideoPlayer.ErrorEventHandler value) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokePrepareCompletedCallback_Internal(VideoPlayer source) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeFrameReadyCallback_Internal(VideoPlayer source, long frameIdx) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeLoopPointReachedCallback_Internal(VideoPlayer source) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeStartedCallback_Internal(VideoPlayer source) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeFrameDroppedCallback_Internal(VideoPlayer source) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeErrorReceivedCallback_Internal(VideoPlayer source, string errorStr) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeSeekCompletedCallback_Internal(VideoPlayer source) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeClockResyncOccurredCallback_Internal(VideoPlayer source, double seconds) { }
 
 }

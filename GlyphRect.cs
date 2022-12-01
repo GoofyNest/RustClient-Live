@@ -1,18 +1,18 @@
 public struct GlyphRect : IEquatable<GlyphRect> // TypeDefIndex: 4115
 {
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private int m_X; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private int m_Y; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private int m_Width; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private int m_Height; 
-	private static readonly GlyphRect s_ZeroGlyphRect; 
+	[NativeNameAttribute]
+	[SerializeField]
+	private int m_X;
+	[SerializeField]
+	[NativeNameAttribute]
+	private int m_Y;
+	[NativeNameAttribute]
+	[SerializeField]
+	private int m_Width;
+	[SerializeField]
+	[NativeNameAttribute]
+	private int m_Height;
+	private static readonly GlyphRect s_ZeroGlyphRect;
 
 	public int x { get; }
 	public int y { get; }

@@ -1,21 +1,21 @@
-public class BenchmarkData // TypeDefIndex: 6185
+public class BenchmarkData // TypeDefIndex: 6187
 {
-	public static BenchmarkData Current; 
-	public Dictionary<string, float> Results; 
-	public string ComputerName; 
-	public string BuildDate; 
-	public string BranchName; 
-	public string Changeset; 
-	public string BuildId; 
-	public bool Auto; 
-	public int Version; 
-	public AppInfo AppInfo; 
-	public SystemInformation SystemInfo; 
-	private int frames; 
-	private int hitches; 
-	private int freezes; 
-	private float lastTime; 
-	private double frameTimes; 
+	public static BenchmarkData Current;
+	public Dictionary<string, float> Results;
+	public string ComputerName;
+	public string BuildDate;
+	public string BranchName;
+	public string Changeset;
+	public string BuildId;
+	public bool Auto;
+	public int Version;
+	public AppInfo AppInfo;
+	public SystemInformation SystemInfo;
+	private int frames;
+	private int hitches;
+	private int freezes;
+	private float lastTime;
+	private double frameTimes;
 
 	private float AvgMilliseconds { get; }
 	private float avgFrameRate { get; }
@@ -25,7 +25,7 @@ public class BenchmarkData // TypeDefIndex: 6185
 
 	public void WriteTimersToResults() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<string> Upload() { }
 
 	public string WriteJSON() { }
@@ -44,17 +44,17 @@ public class BenchmarkData // TypeDefIndex: 6185
 
 }
 
-private struct BenchmarkData.<Upload>d__13 : IAsyncStateMachine // TypeDefIndex: 6186
+private struct BenchmarkData.<Upload>d__13 : IAsyncStateMachine // TypeDefIndex: 6188
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<string> <>t__builder; 
-	public BenchmarkData <>4__this; 
-	private TaskAwaiter<string> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<string> <>t__builder;
+	public BenchmarkData <>4__this;
+	private TaskAwaiter<string> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

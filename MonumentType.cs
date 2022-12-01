@@ -1,6 +1,6 @@
-public enum MonumentType // TypeDefIndex: 11708
+public enum MonumentType // TypeDefIndex: 11715
 {
-	public int value__; 
+	public int value__;
 	public const MonumentType Cave = 0;
 	public const MonumentType Airport = 1;
 	public const MonumentType Building = 2;

@@ -1,6 +1,6 @@
 internal class ReaderPositionInfo : PositionInfo // TypeDefIndex: 1987
 {
-	private IXmlLineInfo lineInfo; 
+	private IXmlLineInfo lineInfo;
 
 	public override int LineNumber { get; }
 	public override int LinePosition { get; }

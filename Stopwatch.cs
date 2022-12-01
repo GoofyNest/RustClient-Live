@@ -1,10 +1,10 @@
 public class Stopwatch // TypeDefIndex: 2657
 {
-	public static readonly long Frequency; 
-	public static readonly bool IsHighResolution; 
-	private long elapsed; 
-	private long started; 
-	private bool is_running; 
+	public static readonly long Frequency;
+	public static readonly bool IsHighResolution;
+	private long elapsed;
+	private long started;
+	private bool is_running;
 
 	public TimeSpan Elapsed { get; }
 	public long ElapsedMilliseconds { get; }

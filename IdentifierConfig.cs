@@ -1,8 +1,8 @@
-public class IdentifierConfig : UIDialog // TypeDefIndex: 10405
+public class IdentifierConfig : UIDialog // TypeDefIndex: 10409
 {
-	private IRemoteControllable rc; 
-	public InputField input; 
-	public string id; 
+	private IRemoteControllable rc;
+	public InputField input;
+	public string id;
 
 
 	public override void OpenDialog() { }

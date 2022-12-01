@@ -1,9 +1,9 @@
-internal struct OnMessageToClientCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnMessageToClientCallbackInfo>, ISettable<OnMessageToClientCallbackInfo>, IDisposable // TypeDefIndex: 9794
+internal struct OnMessageToClientCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnMessageToClientCallbackInfo>, ISettable<OnMessageToClientCallbackInfo>, IDisposable // TypeDefIndex: 9796
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_ClientHandle; 
-	private IntPtr m_MessageData; 
-	private uint m_MessageDataSizeBytes; 
+	private IntPtr m_ClientData;
+	private IntPtr m_ClientHandle;
+	private IntPtr m_MessageData;
+	private uint m_MessageDataSizeBytes;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

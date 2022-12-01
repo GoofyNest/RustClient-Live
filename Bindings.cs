@@ -1,4 +1,4 @@
-public static class Bindings // TypeDefIndex: 8280
+public static class Bindings // TypeDefIndex: 8282
 {
 
 	internal static extern ulong EOS_Achievements_AddNotifyAchievementsUnlocked(IntPtr handle, ref AddNotifyAchievementsUnlockedOptionsInternal options, IntPtr clientData, OnAchievementsUnlockedCallbackInternal notificationFn) { }

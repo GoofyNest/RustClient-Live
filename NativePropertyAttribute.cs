@@ -1,13 +1,13 @@
 internal class NativePropertyAttribute : NativeMethodAttribute // TypeDefIndex: 3276
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private TargetType <TargetType>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private TargetType <TargetType>k__BackingField;
 
 	public TargetType TargetType { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetType(TargetType value) { }
 
 	public void .ctor() { }

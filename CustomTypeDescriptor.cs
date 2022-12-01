@@ -6,7 +6,7 @@ public class ComponentConverter : ReferenceConverter
 public class CultureInfoConverter : TypeConverter
 
 public abstract class CustomTypeDescriptor : ICustomTypeDescriptor
-	private ICustomTypeDescriptor _parent; 
+	private ICustomTypeDescriptor _parent;
 
 
 	protected void .ctor() { }

@@ -1,7 +1,7 @@
-internal struct LowBatteryPower_t : ICallbackData // TypeDefIndex: 5334
+internal struct LowBatteryPower_t : ICallbackData // TypeDefIndex: 5336
 {
-	internal byte MinutesBatteryLeft; 
-	public static int _datasize; 
+	internal byte MinutesBatteryLeft;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

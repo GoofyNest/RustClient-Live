@@ -1,14 +1,14 @@
-public class TrainCoupling // TypeDefIndex: 11505
+public class TrainCoupling // TypeDefIndex: 11512
 {
-	public readonly TrainCar owner; 
-	public readonly bool isFrontCoupling; 
-	public readonly TrainCouplingController controller; 
-	public readonly Transform couplingPoint; 
-	public readonly Transform couplingPivot; 
-	public readonly BaseEntity.Flags flag; 
-	public readonly bool isValid; 
-	public EntityRef<TrainCar> clientCoupledTo; 
-	public bool clientCoupledToFront; 
+	public readonly TrainCar owner;
+	public readonly bool isFrontCoupling;
+	public readonly TrainCouplingController controller;
+	public readonly Transform couplingPoint;
+	public readonly Transform couplingPivot;
+	public readonly BaseEntity.Flags flag;
+	public readonly bool isValid;
+	public EntityRef<TrainCar> clientCoupledTo;
+	public bool clientCoupledToFront;
 
 	public bool IsCoupled { get; }
 	public bool IsUncoupled { get; }

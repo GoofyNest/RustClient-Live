@@ -1,4 +1,4 @@
-public sealed class OnDisconnectedCallback : MulticastDelegate // TypeDefIndex: 8780
+public sealed class OnDisconnectedCallback : MulticastDelegate // TypeDefIndex: 8782
 {
 
 	public void .ctor(object object, IntPtr method) { }

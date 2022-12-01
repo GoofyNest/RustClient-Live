@@ -1,10 +1,10 @@
-public class VendingMachineMapMarker : MapMarker // TypeDefIndex: 11349
+public class VendingMachineMapMarker : MapMarker // TypeDefIndex: 11355
 {
-	public string markerShopName; 
-	public VendingMachine server_vendingMachine; 
-	public VendingMachine client_vendingMachine; 
-	public uint client_vendingMachineNetworkID; 
-	public GameObjectRef clusterMarkerObj; 
+	public string markerShopName;
+	public VendingMachine server_vendingMachine;
+	public VendingMachine client_vendingMachine;
+	public uint client_vendingMachineNetworkID;
+	public GameObjectRef clusterMarkerObj;
 
 	public override MapMarker.ClusterType ShouldCluster { get; }
 	public override float GetClusterRadius { get; }

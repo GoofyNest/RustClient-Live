@@ -1,29 +1,29 @@
 internal class WebConnection // TypeDefIndex: 3027
 {
-	private ServicePoint sPoint; 
-	private Stream nstream; 
-	internal Socket socket; 
-	private object socketLock; 
-	private IWebConnectionState state; 
-	private WebExceptionStatus status; 
-	private bool keepAlive; 
-	private byte[] buffer; 
-	private EventHandler abortHandler; 
-	private WebConnection.AbortHelper abortHelper; 
-	internal WebConnectionData Data; 
-	private bool chunkedRead; 
-	private MonoChunkStream chunkStream; 
-	private Queue queue; 
-	private bool reused; 
-	private int position; 
-	private HttpWebRequest priority_request; 
-	private NetworkCredential ntlm_credentials; 
-	private bool ntlm_authenticated; 
-	private bool unsafe_sharing; 
-	private WebConnection.NtlmAuthState connect_ntlm_auth_state; 
-	private HttpWebRequest connect_request; 
-	private Exception connect_exception; 
-	private MonoTlsStream tlsStream; 
+	private ServicePoint sPoint;
+	private Stream nstream;
+	internal Socket socket;
+	private object socketLock;
+	private IWebConnectionState state;
+	private WebExceptionStatus status;
+	private bool keepAlive;
+	private byte[] buffer;
+	private EventHandler abortHandler;
+	private WebConnection.AbortHelper abortHelper;
+	internal WebConnectionData Data;
+	private bool chunkedRead;
+	private MonoChunkStream chunkStream;
+	private Queue queue;
+	private bool reused;
+	private int position;
+	private HttpWebRequest priority_request;
+	private NetworkCredential ntlm_credentials;
+	private bool ntlm_authenticated;
+	private bool unsafe_sharing;
+	private WebConnection.NtlmAuthState connect_ntlm_auth_state;
+	private HttpWebRequest connect_request;
+	private Exception connect_exception;
+	private MonoTlsStream tlsStream;
 
 	internal HttpWebRequest PriorityRequest { set; }
 	internal bool NtlmAuthenticated { get; set; }
@@ -101,14 +101,14 @@ internal class WebConnection // TypeDefIndex: 3027
 
 	internal void set_UnsafeAuthenticatedConnectionSharing(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SendRequest>
 
 }
 
 private enum WebConnection.NtlmAuthState // TypeDefIndex: 3028
 {
-	public int value__; 
+	public int value__;
 	public const WebConnection.NtlmAuthState None = 0;
 	public const WebConnection.NtlmAuthState Challenge = 1;
 	public const WebConnection.NtlmAuthState Response = 2;
@@ -117,7 +117,7 @@ private enum WebConnection.NtlmAuthState // TypeDefIndex: 3028
 
 private class WebConnection.AbortHelper // TypeDefIndex: 3029
 {
-	public WebConnection Connection; 
+	public WebConnection Connection;
 
 
 	public void Abort(object sender, EventArgs args) { }

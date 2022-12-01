@@ -1,17 +1,17 @@
-public class BloomOptimized : PostEffectsBase // TypeDefIndex: 8180
+public class BloomOptimized : PostEffectsBase // TypeDefIndex: 8182
 {
-	[RangeAttribute] 
-	public float threshold; 
-	[RangeAttribute] 
-	public float intensity; 
-	[RangeAttribute] 
-	public float blurSize; 
-	private BloomOptimized.Resolution resolution; 
-	[RangeAttribute] 
-	public int blurIterations; 
-	public BloomOptimized.BlurType blurType; 
-	public Shader fastBloomShader; 
-	private Material fastBloomMaterial; 
+	[RangeAttribute]
+	public float threshold;
+	[RangeAttribute]
+	public float intensity;
+	[RangeAttribute]
+	public float blurSize;
+	private BloomOptimized.Resolution resolution;
+	[RangeAttribute]
+	public int blurIterations;
+	public BloomOptimized.BlurType blurType;
+	public Shader fastBloomShader;
+	private Material fastBloomMaterial;
 
 
 	public override bool CheckResources() { }
@@ -24,17 +24,17 @@ public class BloomOptimized : PostEffectsBase // TypeDefIndex: 8180
 
 }
 
-public enum BloomOptimized.Resolution // TypeDefIndex: 8181
+public enum BloomOptimized.Resolution // TypeDefIndex: 8183
 {
-	public int value__; 
+	public int value__;
 	public const BloomOptimized.Resolution Low = 0;
 	public const BloomOptimized.Resolution High = 1;
 
 }
 
-public enum BloomOptimized.BlurType // TypeDefIndex: 8182
+public enum BloomOptimized.BlurType // TypeDefIndex: 8184
 {
-	public int value__; 
+	public int value__;
 	public const BloomOptimized.BlurType Standard = 0;
 	public const BloomOptimized.BlurType Sgx = 1;
 

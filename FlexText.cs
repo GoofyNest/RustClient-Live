@@ -1,26 +1,26 @@
-public class FlexText : TextMeshProUGUI, IFlexNode // TypeDefIndex: 6830
+public class FlexText : TextMeshProUGUI, IFlexNode // TypeDefIndex: 6832
 {
-	[TooltipAttribute] 
-	public FlexLength Basis; 
-	[MinAttribute] 
-	[TooltipAttribute] 
-	public int Grow; 
-	[MinAttribute] 
-	[TooltipAttribute] 
-	public int Shrink; 
-	[TooltipAttribute] 
-	public FlexAlignSelf AlignSelf; 
-	[TooltipAttribute] 
-	public FlexLength MinWidth; 
-	[TooltipAttribute] 
-	public FlexLength MaxWidth; 
-	[TooltipAttribute] 
-	public FlexLength MinHeight; 
-	[TooltipAttribute] 
-	public FlexLength MaxHeight; 
-	private bool _isDirty; 
-	private float _preferredWidth; 
-	private float _preferredHeight; 
+	[TooltipAttribute]
+	public FlexLength Basis;
+	[MinAttribute]
+	[TooltipAttribute]
+	public int Grow;
+	[MinAttribute]
+	[TooltipAttribute]
+	public int Shrink;
+	[TooltipAttribute]
+	public FlexAlignSelf AlignSelf;
+	[TooltipAttribute]
+	public FlexLength MinWidth;
+	[TooltipAttribute]
+	public FlexLength MaxWidth;
+	[TooltipAttribute]
+	public FlexLength MinHeight;
+	[TooltipAttribute]
+	public FlexLength MaxHeight;
+	private bool _isDirty;
+	private float _preferredWidth;
+	private float _preferredHeight;
 
 	private RectTransform Facepunch.Flexbox.IFlexNode.Transform { get; }
 	private bool Facepunch.Flexbox.IFlexNode.IsActive { get; }

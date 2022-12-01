@@ -1,35 +1,35 @@
-public class ShoutcastStream : IDisposable // TypeDefIndex: 13770
+public class ShoutcastStream : IDisposable // TypeDefIndex: 13786
 {
-	private static HttpClient client; 
-	[CompilerGeneratedAttribute] 
-	private bool <SocketConnected>k__BackingField; 
-	private MP3Stream MP3Stream; 
-	private CancellationTokenSource cancelSource; 
-	private CancellationToken cancelToken; 
-	private bool disconnected; 
-	private bool connecting; 
-	private static TimeSince lastStreamInit; 
-	private static int sessionCount; 
-	private int sessionId; 
-	private bool reading; 
-	private string url; 
-	private static List<float[]> pooledBuffers; 
+	private static HttpClient client;
+	[CompilerGeneratedAttribute]
+	private bool <SocketConnected>k__BackingField;
+	private MP3Stream MP3Stream;
+	private CancellationTokenSource cancelSource;
+	private CancellationToken cancelToken;
+	private bool disconnected;
+	private bool connecting;
+	private static TimeSince lastStreamInit;
+	private static int sessionCount;
+	private int sessionId;
+	private bool reading;
+	private string url;
+	private static List<float[]> pooledBuffers;
 	public const uint MaxSampleBuffer = 163840;
-	[CompilerGeneratedAttribute] 
-	private uint <currentWriteIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float[] <floatSamples>k__BackingField; 
-	private byte[] buffer; 
-	public float[] floatBuffer; 
+	[CompilerGeneratedAttribute]
+	private uint <currentWriteIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float[] <floatSamples>k__BackingField;
+	private byte[] buffer;
+	public float[] floatBuffer;
 	public const uint bufferSize = 32768;
 	private const float const_1_div_32768_ = 3,051758E-05;
-	private List<ShoutcastStreamer> connectedStreamers; 
-	private static List<ShoutcastStream> connections; 
-	private static List<ShoutcastStream> active; 
-	private static int lastFrameUpdate; 
-	private float[] intToFloatBuffer; 
-	private short[] zeroResult; 
-	private short[] byteResult; 
+	private List<ShoutcastStreamer> connectedStreamers;
+	private static List<ShoutcastStream> connections;
+	private static List<ShoutcastStream> active;
+	private static int lastFrameUpdate;
+	private float[] intToFloatBuffer;
+	private short[] zeroResult;
+	private short[] byteResult;
 
 	public bool SocketConnected { get; set; }
 	public int Frequency { get; }
@@ -37,24 +37,24 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 13770
 	public float[] floatSamples { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_SocketConnected() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SocketConnected(bool value) { }
 
 	public int get_Frequency() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_currentWriteIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_currentWriteIndex(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float[] get_floatSamples() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_floatSamples(float[] value) { }
 
 	public static void RunConnections() { }
@@ -71,13 +71,13 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 13770
 
 	public void RegisterNewStreamer(ShoutcastStreamer forStreamer) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task ConnectAsync() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<bool> ReadDataAsync(ShoutcastStreamer forStreamer) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task<bool> ReadDataAsync(byte[] byteBuffer) { }
 
 	private float[] IntToFloat(short[] from) { }
@@ -92,7 +92,7 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 13770
 
 	public void Dispose() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task ShutdownSafely() { }
 
 	public void AttemptDisconnect(ShoutcastStreamer streamer) { }
@@ -103,9 +103,9 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 13770
 
 }
 
-private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 13771
+private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 13787
 {
-	public Stream stream; 
+	public Stream stream;
 
 
 	public void .ctor() { }
@@ -114,68 +114,68 @@ private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 1377
 
 }
 
-private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeDefIndex: 13772
+private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeDefIndex: 13788
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public ShoutcastStream <>4__this; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public ShoutcastStream <>4__this;
 	private ShoutcastStream.<>c
-	private TaskAwaiter<HttpResponseMessage> <>u__1; 
-	private TaskAwaiter<Stream> <>u__2; 
-	private TaskAwaiter<MP3Stream> <>u__3; 
+	private TaskAwaiter<HttpResponseMessage> <>u__1;
+	private TaskAwaiter<Stream> <>u__2;
+	private TaskAwaiter<MP3Stream> <>u__3;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // TypeDefIndex: 13773
+private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // TypeDefIndex: 13789
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<bool> <>t__builder; 
-	public ShoutcastStreamer forStreamer; 
-	public ShoutcastStream <>4__this; 
-	private TaskAwaiter<bool> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<bool> <>t__builder;
+	public ShoutcastStreamer forStreamer;
+	public ShoutcastStream <>4__this;
+	private TaskAwaiter<bool> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // TypeDefIndex: 13774
+private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // TypeDefIndex: 13790
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<bool> <>t__builder; 
-	public ShoutcastStream <>4__this; 
-	public byte[] byteBuffer; 
-	private TaskAwaiter<int> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<bool> <>t__builder;
+	public ShoutcastStream <>4__this;
+	public byte[] byteBuffer;
+	private TaskAwaiter<int> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // TypeDefIndex: 13775
+private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // TypeDefIndex: 13791
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public ShoutcastStream <>4__this; 
-	private Stopwatch <stopwatch>5__2; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public ShoutcastStream <>4__this;
+	private Stopwatch <stopwatch>5__2;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

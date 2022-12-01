@@ -1,13 +1,13 @@
 internal class Lease : MarshalByRefObject, ILease // TypeDefIndex: 1165
 {
-	private DateTime _leaseExpireTime; 
-	private LeaseState _currentState; 
-	private TimeSpan _initialLeaseTime; 
-	private TimeSpan _renewOnCallTime; 
-	private TimeSpan _sponsorshipTimeout; 
-	private ArrayList _sponsors; 
-	private Queue _renewingSponsors; 
-	private Lease.RenewalDelegate _renewalDelegate; 
+	private DateTime _leaseExpireTime;
+	private LeaseState _currentState;
+	private TimeSpan _initialLeaseTime;
+	private TimeSpan _renewOnCallTime;
+	private TimeSpan _sponsorshipTimeout;
+	private ArrayList _sponsors;
+	private Queue _renewingSponsors;
+	private Lease.RenewalDelegate _renewalDelegate;
 
 	public TimeSpan CurrentLeaseTime { get; }
 	public LeaseState CurrentState { get; }

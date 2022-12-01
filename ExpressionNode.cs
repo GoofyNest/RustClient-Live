@@ -1,6 +1,6 @@
 internal abstract class ExpressionNode // TypeDefIndex: 4253
 {
-	private DataTable _table; 
+	private DataTable _table;
 
 	internal IFormatProvider FormatProvider { get; }
 	internal virtual bool IsSqlColumn { get; }

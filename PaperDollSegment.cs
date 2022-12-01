@@ -1,9 +1,9 @@
-public class PaperDollSegment : BaseMonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12816
+public class PaperDollSegment : BaseMonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12830
 {
-	public static HitArea selectedAreas; 
-	[InspectorFlagsAttribute] 
-	public HitArea area; 
-	public Image overlayImg; 
+	public static HitArea selectedAreas;
+	[InspectorFlagsAttribute]
+	public HitArea area;
+	public Image overlayImg;
 
 
 	public void OnPointerEnter(PointerEventData eventData) { }

@@ -1,8 +1,8 @@
 internal class SecurityParser : SmallXmlParser, SmallXmlParser.IContentHandler // TypeDefIndex: 23
 {
-	private SecurityElement root; 
-	private SecurityElement current; 
-	private Stack stack; 
+	private SecurityElement root;
+	private SecurityElement current;
+	private Stack stack;
 
 
 	public void .ctor() { }

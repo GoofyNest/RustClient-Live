@@ -1,35 +1,35 @@
 public class Gradient : IEquatable<Gradient> // TypeDefIndex: 3465
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 	public GradientColorKey[] colorKeys { get; }
 	public GradientAlphaKey[] alphaKeys { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Init() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Cleanup() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private bool Internal_Equals(IntPtr other) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 
 	protected override void Finalize() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Color Evaluate(float time) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public GradientColorKey[] get_colorKeys() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public GradientAlphaKey[] get_alphaKeys() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetKeys(GradientColorKey[] colorKeys, GradientAlphaKey[] alphaKeys) { }
 
 	public override bool Equals(object o) { }

@@ -1,10 +1,10 @@
-public sealed class TimeSignature // TypeDefIndex: 7471
+public sealed class TimeSignature // TypeDefIndex: 7473
 {
-	public static readonly TimeSignature Default; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <Numerator>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <Denominator>k__BackingField; 
+	public static readonly TimeSignature Default;
+	[CompilerGeneratedAttribute]
+	private readonly int <Numerator>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <Denominator>k__BackingField;
 
 	public int Numerator { get; }
 	public int Denominator { get; }
@@ -12,10 +12,10 @@ public sealed class TimeSignature // TypeDefIndex: 7471
 
 	public void .ctor(int numerator, int denominator) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Numerator() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Denominator() { }
 
 	public static bool op_Equality(TimeSignature timeSignature1, TimeSignature timeSignature2) { }

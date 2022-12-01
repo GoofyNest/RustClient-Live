@@ -1,7 +1,7 @@
-public class PerformedAttackAIEvent : BaseAIEvent // TypeDefIndex: 11141
+public class PerformedAttackAIEvent : BaseAIEvent // TypeDefIndex: 11147
 {
-	protected float lastExecuteTime; 
-	private BaseCombatEntity combatEntity; 
+	protected float lastExecuteTime;
+	private BaseCombatEntity combatEntity;
 
 
 	public void .ctor() { }

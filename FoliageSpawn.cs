@@ -1,6 +1,6 @@
-public class FoliageSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 11616
+public class FoliageSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 11623
 {
-	public FoliagePlacement Placement; 
+	public FoliagePlacement Placement;
 
 
 	protected void Awake() { }

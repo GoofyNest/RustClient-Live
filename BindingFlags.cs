@@ -1,6 +1,6 @@
 public enum BindingFlags // TypeDefIndex: 521
 {
-	public int value__; 
+	public int value__;
 	public const BindingFlags Default = 0;
 	public const BindingFlags IgnoreCase = 1;
 	public const BindingFlags DeclaredOnly = 2;

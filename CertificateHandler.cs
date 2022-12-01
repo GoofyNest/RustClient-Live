@@ -1,11 +1,11 @@
 public class CertificateHandler : IDisposable // TypeDefIndex: 4136
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 
 	private static IntPtr Create(CertificateHandler obj) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Release() { }
 
 	protected void .ctor() { }
@@ -14,7 +14,7 @@ public class CertificateHandler : IDisposable // TypeDefIndex: 4136
 
 	protected virtual bool ValidateCertificate(byte[] certificateData) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal bool ValidateCertificateNative(byte[] certificateData) { }
 
 	public void Dispose() { }

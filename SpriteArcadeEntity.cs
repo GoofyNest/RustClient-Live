@@ -1,6 +1,6 @@
-public class SpriteArcadeEntity : ArcadeEntity // TypeDefIndex: 10495
+public class SpriteArcadeEntity : ArcadeEntity // TypeDefIndex: 10499
 {
-	public SpriteRenderer spriteRenderer; 
+	public SpriteRenderer spriteRenderer;
 
 
 	public override void SetVisible(bool wantsVis) { }

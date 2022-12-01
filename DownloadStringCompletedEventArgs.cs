@@ -1,6 +1,6 @@
 public class DownloadStringCompletedEventArgs : AsyncCompletedEventArgs // TypeDefIndex: 2963
 {
-	private string m_Result; 
+	private string m_Result;
 
 	public string Result { get; }
 

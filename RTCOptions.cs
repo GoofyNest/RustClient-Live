@@ -1,15 +1,15 @@
-public struct RTCOptions // TypeDefIndex: 9878
+public struct RTCOptions // TypeDefIndex: 9880
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <PlatformSpecificOptions>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <PlatformSpecificOptions>k__BackingField;
 
 	public IntPtr PlatformSpecificOptions { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_PlatformSpecificOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlatformSpecificOptions(IntPtr value) { }
 
 	internal void Set(ref RTCOptionsInternal other) { }

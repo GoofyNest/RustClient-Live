@@ -1,9 +1,9 @@
-public class RHIBAIController : FacepunchBehaviour // TypeDefIndex: 11439
+public class RHIBAIController : FacepunchBehaviour // TypeDefIndex: 11445
 {
-	public List<Vector3> nodes; 
+	public List<Vector3> nodes;
 
 
-	[ContextMenu] 
+	[ContextMenu]
 	public void SetupPatrolPath() { }
 
 	public float GetWaterDepth(Vector3 pos) { }

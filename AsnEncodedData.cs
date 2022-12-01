@@ -1,7 +1,7 @@
 public class AsnEncodedData // TypeDefIndex: 2797
 {
-	internal Oid _oid; 
-	internal byte[] _raw; 
+	internal Oid _oid;
+	internal byte[] _raw;
 
 	public Oid Oid { get; set; }
 	public byte[] RawData { get; set; }

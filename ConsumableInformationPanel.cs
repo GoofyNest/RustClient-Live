@@ -1,13 +1,13 @@
-public class ConsumableInformationPanel : ItemInformationPanel // TypeDefIndex: 12764
+public class ConsumableInformationPanel : ItemInformationPanel // TypeDefIndex: 12778
 {
-	public ItemTextValue[] values; 
-	public UIGenesDisplay Genes; 
-	public Text TextUnknownGenetics; 
-	public Text LabelGenetics; 
-	public GameObject GeneticsGameObject; 
-	public ItemTextValue durationValue; 
-	public ItemTextValue baitValue; 
-	private GrowableGenes genes; 
+	public ItemTextValue[] values;
+	public UIGenesDisplay Genes;
+	public Text TextUnknownGenetics;
+	public Text LabelGenetics;
+	public GameObject GeneticsGameObject;
+	public ItemTextValue durationValue;
+	public ItemTextValue baitValue;
+	private GrowableGenes genes;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

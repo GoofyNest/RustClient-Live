@@ -1,6 +1,6 @@
 public static class Pool // TypeDefIndex: 4841
 {
-	public static Dictionary<Type, Pool.ICollection> directory; 
+	public static Dictionary<Type, Pool.ICollection> directory;
 
 
 	public static void FreeList<T>(ref List<T> obj) { }
@@ -1155,17 +1155,17 @@ public static class Pool // TypeDefIndex: 4841
 
 public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4844
 {
-	public T[] buffer; 
-	[CompilerGeneratedAttribute] 
-	private long <ItemsInStack>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <ItemsInUse>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <ItemsCreated>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <ItemsTaken>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <ItemsSpilled>k__BackingField; 
+	public T[] buffer;
+	[CompilerGeneratedAttribute]
+	private long <ItemsInStack>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <ItemsInUse>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <ItemsCreated>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <ItemsTaken>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <ItemsSpilled>k__BackingField;
 
 	public long ItemsInStack { get; set; }
 	public long ItemsInUse { get; set; }
@@ -1174,70 +1174,70 @@ public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4844
 	public long ItemsSpilled { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_ItemsInStack() { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.get_ItemsInStack
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ItemsInStack(long value) { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.set_ItemsInStack
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_ItemsInUse() { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.get_ItemsInUse
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ItemsInUse(long value) { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.set_ItemsInUse
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_ItemsCreated() { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.get_ItemsCreated
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ItemsCreated(long value) { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.set_ItemsCreated
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_ItemsTaken() { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.get_ItemsTaken
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ItemsTaken(long value) { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.set_ItemsTaken
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_ItemsSpilled() { }
 	/* GenericInstMethod :
 	|
 	|-Pool.PoolCollection<object>.get_ItemsSpilled
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ItemsSpilled(long value) { }
 	/* GenericInstMethod :
 	|
@@ -1270,48 +1270,48 @@ public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4844
 
 }
 
-public class Pool : ConsoleSystem // TypeDefIndex: 13743
+public class Pool : ConsoleSystem // TypeDefIndex: 13759
 {
-	[ServerVar] 
-	[ClientVar] 
-	public static int mode; 
-	[ServerVar] 
-	[ClientVar] 
-	public static bool prewarm; 
-	[ServerVar] 
-	[ClientVar] 
-	public static bool enabled; 
-	[ServerVar] 
-	[ClientVar] 
-	public static bool debug; 
+	[ServerVar]
+	[ClientVar]
+	public static int mode;
+	[ServerVar]
+	[ClientVar]
+	public static bool prewarm;
+	[ServerVar]
+	[ClientVar]
+	public static bool enabled;
+	[ServerVar]
+	[ClientVar]
+	public static bool debug;
 
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void print_memory(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void print_prefabs(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void print_assets(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void clear_memory(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void clear_prefabs(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void clear_assets(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void export_prefabs(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }
@@ -1320,10 +1320,10 @@ public class Pool : ConsoleSystem // TypeDefIndex: 13743
 
 }
 
-private sealed class Pool.<>c // TypeDefIndex: 13744
+private sealed class Pool.<>c // TypeDefIndex: 13760
 {
-	public static readonly Pool.<>c <>9; 
-	public static Func<KeyValuePair<Type, Pool.ICollection>, long> <>9__4_0; 
+	public static readonly Pool.<>c <>9;
+	public static Func<KeyValuePair<Type, Pool.ICollection>, long> <>9__4_0;
 
 
 	private static void .cctor() { }

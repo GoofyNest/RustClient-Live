@@ -1,7 +1,7 @@
-public class RustWrapper : RustControl // TypeDefIndex: 7077
+public class RustWrapper : RustControl // TypeDefIndex: 7079
 {
-	public RustText Text; 
-	public RectTransform Canvas; 
+	public RustText Text;
+	public RectTransform Canvas;
 
 
 	protected override void ApplyStyle(StyleAsset.Group s) { }

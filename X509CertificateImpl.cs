@@ -1,6 +1,6 @@
 internal abstract class X509CertificateImpl : IDisposable // TypeDefIndex: 1018
 {
-	private byte[] cachedCertificateHash; 
+	private byte[] cachedCertificateHash;
 
 	public abstract bool IsValid { get; }
 

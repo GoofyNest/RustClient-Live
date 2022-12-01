@@ -1,17 +1,17 @@
-public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex: 10712
+public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex: 10716
 {
-	[RangeAttribute] 
-	public float blend; 
-	public float blendSmoothing; 
-	public float loopFadeOutTime; 
-	public float loopFadeInTime; 
-	public float gainModSmoothing; 
-	public float pitchModSmoothing; 
-	public bool shouldPlay; 
-	public float gain; 
-	public List<BlendedSoundLoops.Loop> loops; 
-	public float maxDistance; 
-	private float smoothedBlend; 
+	[RangeAttribute]
+	public float blend;
+	public float blendSmoothing;
+	public float loopFadeOutTime;
+	public float loopFadeInTime;
+	public float gainModSmoothing;
+	public float pitchModSmoothing;
+	public bool shouldPlay;
+	public float gain;
+	public List<BlendedSoundLoops.Loop> loops;
+	public float maxDistance;
+	private float smoothedBlend;
 
 
 	private void Update() { }
@@ -20,17 +20,17 @@ public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex
 
 }
 
-public class BlendedSoundLoops.Loop // TypeDefIndex: 10713
+public class BlendedSoundLoops.Loop // TypeDefIndex: 10717
 {
-	public SoundDefinition soundDef; 
-	public AnimationCurve gainCurve; 
-	public AnimationCurve pitchCurve; 
-	[HideInInspector] 
-	public Sound sound; 
-	[HideInInspector] 
-	public SoundModulation.Modulator gainMod; 
-	[HideInInspector] 
-	public SoundModulation.Modulator pitchMod; 
+	public SoundDefinition soundDef;
+	public AnimationCurve gainCurve;
+	public AnimationCurve pitchCurve;
+	[HideInInspector]
+	public Sound sound;
+	[HideInInspector]
+	public SoundModulation.Modulator gainMod;
+	[HideInInspector]
+	public SoundModulation.Modulator pitchMod;
 
 
 	public void .ctor() { }

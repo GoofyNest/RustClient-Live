@@ -1,6 +1,6 @@
 public enum HttpStatusCode // TypeDefIndex: 2877
 {
-	public int value__; 
+	public int value__;
 	public const HttpStatusCode Continue = 100;
 	public const HttpStatusCode SwitchingProtocols = 101;
 	public const HttpStatusCode OK = 200;
@@ -53,7 +53,7 @@ public enum HttpStatusCode // TypeDefIndex: 2877
 
 internal enum HTTPStatusCode // TypeDefIndex: 5164
 {
-	public int value__; 
+	public int value__;
 	public const HTTPStatusCode Invalid = 0;
 	public const HTTPStatusCode Code100Continue = 100;
 	public const HTTPStatusCode Code101SwitchingProtocols = 101;

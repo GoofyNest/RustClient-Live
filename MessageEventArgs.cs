@@ -1,382 +1,382 @@
 public class MessageEventArgs // TypeDefIndex: 3791
 {
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Initialization.PlayerUpdateTime
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Initialization.DirectorSampleTime
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Initialization.AsyncUploadTimeSlicedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Initialization.SynchronizeState
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Initialization.SynchronizeInputs
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Initialization.XREarlyUpdate
 
-[RequiredByNativeCodeAttribute] 
-[MovedFromAttribute] 
+[RequiredByNativeCodeAttribute]
+[MovedFromAttribute]
 public struct EarlyUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.PollPlayerConnection
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ProfilerStartFrame
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.PollHtcsPlayerConnection
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.GpuTimestamp
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.AnalyticsCoreStatsUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UnityWebRequestUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateStreamingManager
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ExecuteMainThreadJobs
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ProcessMouseInWindow
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ClearIntermediateRenderers
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ClearLines
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.PresentBeforeUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ResetFrameStatsAfterPresent
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateAsyncReadbackManager
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateTextureStreamingManager
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdatePreloading
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.RendererNotifyInvisible
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.PlayerCleanupCachedData
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateMainGameViewRect
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateCanvasRectTransform
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateInputManager
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ProcessRemoteInput
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.XRUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.ScriptRunDelayedStartupFrame
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.UpdateKinect
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.DeliverIosPlatformEvents
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.DispatchEventQueueEvents
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.PhysicsResetInterpolatedTransformPosition
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.SpriteAtlasManagerUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.TangoUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct EarlyUpdate.PerformanceAnalyticsUpdate
 
-[RequiredByNativeCodeAttribute] 
-[MovedFromAttribute] 
+[RequiredByNativeCodeAttribute]
+[MovedFromAttribute]
 public struct FixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.ClearLines
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.DirectorFixedSampleTime
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.AudioFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.ScriptRunBehaviourFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.DirectorFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.LegacyFixedAnimationUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.XRFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.PhysicsFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.Physics2DFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.DirectorFixedUpdatePostPhysics
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.ScriptRunDelayedFixedFrameRate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct FixedUpdate.NewInputFixedUpdate
 
-[RequiredByNativeCodeAttribute] 
-[MovedFromAttribute] 
+[RequiredByNativeCodeAttribute]
+[MovedFromAttribute]
 public struct PreUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.PhysicsUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.Physics2DUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.CheckTexFieldInput
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.IMGUISendQueuedEvents
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.SendMouseEvents
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.AIUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.WindUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.UpdateVideo
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreUpdate.NewInputUpdate
 
-[MovedFromAttribute] 
-[RequiredByNativeCodeAttribute] 
+[MovedFromAttribute]
+[RequiredByNativeCodeAttribute]
 public struct Update
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Update.ScriptRunBehaviourUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Update.DirectorUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Update.ScriptRunDelayedDynamicFrameRate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct Update.ScriptRunDelayedTasks
 
-[RequiredByNativeCodeAttribute] 
-[MovedFromAttribute] 
+[RequiredByNativeCodeAttribute]
+[MovedFromAttribute]
 public struct PreLateUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.AIUpdatePostScript
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.DirectorUpdateAnimationBegin
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.LegacyAnimationUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.DirectorUpdateAnimationEnd
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.DirectorDeferredEvaluate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.UpdateNetworkManager
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.UpdateMasterServerInterface
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.UNetUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.EndGraphicsJobsAfterScriptUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.ParticleSystemBeginUpdateAll
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.ScriptRunBehaviourLateUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PreLateUpdate.ConstraintManagerUpdate
 
-[MovedFromAttribute] 
-[RequiredByNativeCodeAttribute] 
+[MovedFromAttribute]
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PlayerSendFrameStarted
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateRectTransform
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateCanvasRectTransform
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PlayerUpdateCanvases
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateAudio
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateVideo
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.DirectorLateUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ScriptRunDelayedDynamicFrameRate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.VFXUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ParticleSystemEndUpdateAll
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.EndGraphicsJobsAfterScriptLateUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateSubstance
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateCustomRenderTextures
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateAllRenderers
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.EnlightenRuntimeUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateAllSkinnedMeshes
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ProcessWebSendMessages
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.SortingGroupsUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateVideoTextures
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.DirectorRenderImage
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PlayerEmitCanvasGeometry
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.FinishFrameRendering
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.BatchModeUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PlayerSendFrameComplete
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateCaptureScreenshot
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PresentAfterDraw
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ClearImmediateRenderers
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.XRPostPresent
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.UpdateResolution
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.InputEndFrame
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.GUIClearEvents
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ShaderHandleErrors
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ResetInputAxis
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ThreadedLoadingDebug
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ProfilerSynchronizeStats
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.MemoryFrameMaintenance
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ExecuteGameCenterCallbacks
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.ProfilerEndFrame
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PlayerSendFramePostPresent
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PhysicsSkinnedClothBeginUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.PhysicsSkinnedClothFinishUpdate
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public struct PostLateUpdate.TriggerEndOfFrameCallbacks
 
 [Serializable]
 public class MessageEventArgs
-	public int playerId; 
-	public byte[] data; 
+	public int playerId;
+	public byte[] data;
 
 
 	public void .ctor() { }

@@ -1,19 +1,19 @@
-public class NGSS_Directional : MonoBehaviour // TypeDefIndex: 13294
+public class NGSS_Directional : MonoBehaviour // TypeDefIndex: 13309
 {
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float PCSS_GLOBAL_SOFTNESS; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float PCSS_FILTER_DIR_MIN; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float PCSS_FILTER_DIR_MAX; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float BANDING_NOISE_AMOUNT; 
-	[TooltipAttribute] 
-	public NGSS_Directional.SAMPLER_COUNT SAMPLERS_COUNT; 
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float PCSS_GLOBAL_SOFTNESS;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float PCSS_FILTER_DIR_MIN;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float PCSS_FILTER_DIR_MAX;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float BANDING_NOISE_AMOUNT;
+	[TooltipAttribute]
+	public NGSS_Directional.SAMPLER_COUNT SAMPLERS_COUNT;
 
 
 	private void Update() { }
@@ -24,9 +24,9 @@ public class NGSS_Directional : MonoBehaviour // TypeDefIndex: 13294
 
 }
 
-public enum NGSS_Directional.SAMPLER_COUNT // TypeDefIndex: 13295
+public enum NGSS_Directional.SAMPLER_COUNT // TypeDefIndex: 13310
 {
-	public int value__; 
+	public int value__;
 	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_16 = 0;
 	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_25 = 1;
 	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_32 = 2;

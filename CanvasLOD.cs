@@ -1,9 +1,9 @@
-public class CanvasLOD : LODComponent // TypeDefIndex: 11661
+public class CanvasLOD : LODComponent // TypeDefIndex: 11668
 {
-	public float Distance; 
-	private Canvas canvas; 
-	private int curlod; 
-	private bool force; 
+	public float Distance;
+	private Canvas canvas;
+	private int curlod;
+	private bool force;
 
 
 	protected override void InitLOD() { }

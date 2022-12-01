@@ -1,13 +1,13 @@
 public static class CustomAttributeExtensions // TypeDefIndex: 502
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Attribute GetCustomAttribute(Assembly element, Type attributeType) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Attribute GetCustomAttribute(MemberInfo element, Type attributeType) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T GetCustomAttribute<T>(Assembly element) { }
 	/* GenericInstMethod :
 	|
@@ -15,7 +15,7 @@ public static class CustomAttributeExtensions // TypeDefIndex: 502
 	|-CustomAttributeExtensions.GetCustomAttribute<NeutralResourcesLanguageAttribute>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T GetCustomAttribute<T>(MemberInfo element) { }
 	/* GenericInstMethod :
 	|
@@ -26,10 +26,10 @@ public static class CustomAttributeExtensions // TypeDefIndex: 502
 	|-CustomAttributeExtensions.GetCustomAttribute<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<Attribute> GetCustomAttributes(MemberInfo element, Type attributeType) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<T> GetCustomAttributes<T>(MemberInfo element) { }
 	/* GenericInstMethod :
 	|

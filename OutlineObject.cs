@@ -1,8 +1,8 @@
-public class OutlineObject : MonoBehaviour, IClientComponent // TypeDefIndex: 11839
+public class OutlineObject : MonoBehaviour, IClientComponent // TypeDefIndex: 11846
 {
-	public Mesh[] meshes; 
-	public Transform[] meshTransforms; 
-	private Collider _col; 
+	public Mesh[] meshes;
+	public Transform[] meshTransforms;
+	private Collider _col;
 
 
 	public virtual float SampleVisibility() { }

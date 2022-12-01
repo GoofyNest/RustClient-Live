@@ -1,11 +1,11 @@
 public static class SubsystemManager // TypeDefIndex: 3949
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action reloadSubsytemsStarted; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action reloadSubsytemsCompleted; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action reloadSubsytemsStarted;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action reloadSubsytemsCompleted;
 
 
 	private static void .cctor() { }
@@ -14,10 +14,10 @@ public static class SubsystemManager // TypeDefIndex: 3949
 
 	internal static void StaticConstructScriptingClassMap() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_ReloadSubsystemsStarted() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_ReloadSubsystemsCompleted() { }
 
 }

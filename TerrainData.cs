@@ -6,15 +6,15 @@ public sealed class TerrainData : Object // TypeDefIndex: 4098
 	private const string k_DetailDatabasePrefix = "GetDetailDatabase().";
 	private const string k_TreeDatabasePrefix = "GetTreeDatabase().";
 	private const string k_SplatDatabasePrefix = "GetSplatDatabase().";
-	internal static readonly int k_MaximumResolution; 
-	internal static readonly int k_MinimumDetailResolutionPerPatch; 
-	internal static readonly int k_MaximumDetailResolutionPerPatch; 
-	internal static readonly int k_MaximumDetailPatchCount; 
-	internal static readonly int k_MaximumDetailsPerRes; 
-	internal static readonly int k_MinimumAlphamapResolution; 
-	internal static readonly int k_MaximumAlphamapResolution; 
-	internal static readonly int k_MinimumBaseMapResolution; 
-	internal static readonly int k_MaximumBaseMapResolution; 
+	internal static readonly int k_MaximumResolution;
+	internal static readonly int k_MinimumDetailResolutionPerPatch;
+	internal static readonly int k_MaximumDetailResolutionPerPatch;
+	internal static readonly int k_MaximumDetailPatchCount;
+	internal static readonly int k_MaximumDetailsPerRes;
+	internal static readonly int k_MinimumAlphamapResolution;
+	internal static readonly int k_MaximumAlphamapResolution;
+	internal static readonly int k_MinimumBaseMapResolution;
+	internal static readonly int k_MaximumBaseMapResolution;
 
 	public int heightmapResolution { get; set; }
 	private int internalHeightmapResolution { get; set; }
@@ -34,94 +34,94 @@ public sealed class TerrainData : Object // TypeDefIndex: 4098
 	internal Terrain[] users { get; }
 
 
-	[StaticAccessorAttribute] 
-	[ThreadSafeAttribute] 
+	[StaticAccessorAttribute]
+	[ThreadSafeAttribute]
 	private static int GetBoundaryValue(TerrainData.BoundaryValueType type) { }
 
 	public void .ctor() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_Create(TerrainData terrainData) { }
 
 	public int get_heightmapResolution() { }
 
 	public void set_heightmapResolution(int value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private int get_internalHeightmapResolution() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void set_internalHeightmapResolution(int value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Vector3 get_heightmapScale() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Vector3 get_size() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public void set_size(Vector3 value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public float GetHeight(int x, int y) { }
 
 	public float[,] GetHeights(int xBase, int yBase, int width, int height) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private float[,] Internal_GetHeights(int xBase, int yBase, int width, int height) { }
 
 	public void SetHeights(int xBase, int yBase, float[,] heights) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_SetHeights(int xBase, int yBase, int width, int height, float[,] heights) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Vector3 GetInterpolatedNormal(float x, float y) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public int get_detailResolution() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public DetailPrototype[] get_detailPrototypes() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public int[,] GetDetailLayer(int xBase, int yBase, int width, int height, int layer) { }
 
 	public void SetDetailLayer(int xBase, int yBase, int layer, int[,] details) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_SetDetailLayer(int xBase, int yBase, int totalWidth, int totalHeight, int detailIndex, int[,] data) { }
 
 	public TreeInstance[] get_treeInstances() { }
 
 	public void set_treeInstances(TreeInstance[] value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private TreeInstance[] Internal_GetTreeInstances() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetTreeInstances(TreeInstance[] instances, bool snapToHeightmap) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public int get_alphamapLayers() { }
 
 	public float[,,] GetAlphamaps(int x, int y, int width, int height) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private float[,,] Internal_GetAlphamaps(int x, int y, int width, int height) { }
 
 	public int get_alphamapResolution() { }
 
 	public void set_alphamapResolution(int value) { }
 
-	[RequiredByNativeCodeAttribute] 
-	[NativeNameAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[NativeNameAttribute]
 	internal float GetAlphamapResolutionInternal() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private int get_Internal_alphamapResolution() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void set_Internal_alphamapResolution(int value) { }
 
 	public int get_alphamapWidth() { }
@@ -130,15 +130,15 @@ public sealed class TerrainData : Object // TypeDefIndex: 4098
 
 	public void set_baseMapResolution(int value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void set_Internal_baseMapResolution(int value) { }
 
 	public void SetAlphamaps(int x, int y, float[,,] map) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_SetAlphamaps(int x, int y, int width, int height, float[,,] map) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public TerrainLayer[] get_terrainLayers() { }
 
 	internal Terrain[] get_users() { }
@@ -157,7 +157,7 @@ public sealed class TerrainData : Object // TypeDefIndex: 4098
 
 private enum TerrainData.BoundaryValueType // TypeDefIndex: 4099
 {
-	public int value__; 
+	public int value__;
 	public const TerrainData.BoundaryValueType MaxHeightmapRes = 0;
 	public const TerrainData.BoundaryValueType MinDetailResPerPatch = 1;
 	public const TerrainData.BoundaryValueType MaxDetailResPerPatch = 2;

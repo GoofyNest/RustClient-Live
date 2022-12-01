@@ -1,11 +1,11 @@
-public class SoundLightDialog : UIDialog // TypeDefIndex: 12668
+public class SoundLightDialog : UIDialog // TypeDefIndex: 12682
 {
-	public RustOption ColourOption; 
-	public RustOption VolumeOption; 
-	public RustOption SpeedOption; 
-	public RustOption PatternOption; 
-	public RustOption GradientOption; 
-	private AudioVisualisationEntity targetEntity; 
+	public RustOption ColourOption;
+	public RustOption VolumeOption;
+	public RustOption SpeedOption;
+	public RustOption PatternOption;
+	public RustOption GradientOption;
+	private AudioVisualisationEntity targetEntity;
 
 
 	public void SetLight(AudioVisualisationEntity entity) { }

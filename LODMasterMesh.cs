@@ -1,17 +1,17 @@
-public class LODMasterMesh : LODComponent // TypeDefIndex: 11676
+public class LODMasterMesh : LODComponent // TypeDefIndex: 11683
 {
-	public MeshRenderer ReplacementMesh; 
-	public float Distance; 
-	public LODComponent[] ChildComponents; 
-	public bool Block; 
-	public Bounds MeshBounds; 
-	private static Material DebugMaterial; 
-	private Material originalMaterial; 
-	private int curlod; 
-	private bool force; 
-	private static LODMasterMesh.LODEnableQueue EnableQueue; 
-	private static LODMasterMesh.LODEnableQueue DisableQueue; 
-	private bool showState; 
+	public MeshRenderer ReplacementMesh;
+	public float Distance;
+	public LODComponent[] ChildComponents;
+	public bool Block;
+	public Bounds MeshBounds;
+	private static Material DebugMaterial;
+	private Material originalMaterial;
+	private int curlod;
+	private bool force;
+	private static LODMasterMesh.LODEnableQueue EnableQueue;
+	private static LODMasterMesh.LODEnableQueue DisableQueue;
+	private bool showState;
 
 
 	protected override void InitLOD() { }
@@ -50,9 +50,9 @@ public class LODMasterMesh : LODComponent // TypeDefIndex: 11676
 
 }
 
-private class LODMasterMesh.LODEnableQueue : ObjectWorkQueue<LODComponent> // TypeDefIndex: 11677
+private class LODMasterMesh.LODEnableQueue : ObjectWorkQueue<LODComponent> // TypeDefIndex: 11684
 {
-	public bool TargetState; 
+	public bool TargetState;
 
 
 	protected override bool ShouldAdd(LODComponent entity) { }

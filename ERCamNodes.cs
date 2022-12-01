@@ -1,17 +1,17 @@
-public class ERCamNodes : ScriptableObject // TypeDefIndex: 7229
+public class ERCamNodes : ScriptableObject // TypeDefIndex: 7231
 {
-	[SerializeField] 
-	public float sleep; 
-	[SerializeField] 
-	public float speed; 
-	[SerializeField] 
-	public float easeOutDistance; 
-	[SerializeField] 
-	public float easeInDistance; 
-	[SerializeField] 
-	public GameObject startLookat; 
-	[SerializeField] 
-	public GameObject endLookat; 
+	[SerializeField]
+	public float sleep;
+	[SerializeField]
+	public float speed;
+	[SerializeField]
+	public float easeOutDistance;
+	[SerializeField]
+	public float easeInDistance;
+	[SerializeField]
+	public GameObject startLookat;
+	[SerializeField]
+	public GameObject endLookat;
 
 
 	public void .ctor() { }

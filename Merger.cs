@@ -1,11 +1,11 @@
 internal sealed class Merger // TypeDefIndex: 4282
 {
-	private DataSet _dataSet; 
-	private DataTable _dataTable; 
-	private bool _preserveChanges; 
-	private MissingSchemaAction _missingSchemaAction; 
-	private bool _isStandAlonetable; 
-	private bool _IgnoreNSforTableLookup; 
+	private DataSet _dataSet;
+	private DataTable _dataTable;
+	private bool _preserveChanges;
+	private MissingSchemaAction _missingSchemaAction;
+	private bool _isStandAlonetable;
+	private bool _IgnoreNSforTableLookup;
 
 
 	internal void .ctor(DataSet dataSet, bool preserveChanges, MissingSchemaAction missingSchemaAction) { }

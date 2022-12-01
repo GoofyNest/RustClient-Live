@@ -1,9 +1,9 @@
 public struct WaitForChangedResult // TypeDefIndex: 2858
 {
-	private WatcherChangeTypes changeType; 
-	private string name; 
-	private string oldName; 
-	private bool timedOut; 
+	private WatcherChangeTypes changeType;
+	private string name;
+	private string oldName;
+	private bool timedOut;
 
 	public WatcherChangeTypes ChangeType { set; }
 	public string Name { set; }

@@ -1,6 +1,6 @@
 internal sealed class BooleanStorage : DataStorage // TypeDefIndex: 4371
 {
-	private bool[] _values; 
+	private bool[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

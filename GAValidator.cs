@@ -1,4 +1,4 @@
-internal static class GAValidator // TypeDefIndex: 5642
+internal static class GAValidator // TypeDefIndex: 5644
 {
 
 	public static bool ValidateBusinessEvent(string currency, long amount, string cartType, string itemType, string itemId) { }

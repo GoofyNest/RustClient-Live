@@ -1,26 +1,26 @@
-public class BaseArcadeGame : BaseMonoBehaviour // TypeDefIndex: 10484
+public class BaseArcadeGame : BaseMonoBehaviour // TypeDefIndex: 10488
 {
-	public static List<BaseArcadeGame> globalActiveGames; 
-	public Camera cameraToRender; 
-	public RenderTexture renderTexture; 
-	public Texture2D distantTexture; 
-	public Transform center; 
-	public int frameRate; 
-	public Dictionary<uint, ArcadeEntity> activeArcadeEntities; 
-	public Sprite[] spriteManifest; 
-	public ArcadeEntity[] entityManifest; 
-	public bool clientside; 
-	public bool clientsideInput; 
+	public static List<BaseArcadeGame> globalActiveGames;
+	public Camera cameraToRender;
+	public RenderTexture renderTexture;
+	public Texture2D distantTexture;
+	public Transform center;
+	public int frameRate;
+	public Dictionary<uint, ArcadeEntity> activeArcadeEntities;
+	public Sprite[] spriteManifest;
+	public ArcadeEntity[] entityManifest;
+	public bool clientside;
+	public bool clientsideInput;
 	public const int spriteIndexInvisible = 1555;
-	public GameObject arcadeEntityPrefab; 
-	public BaseArcadeMachine ownerMachine; 
-	public static int gameOffsetIndex; 
-	private bool isAuthorative; 
-	public Canvas canvas; 
-	private float lastFrameRate; 
-	private uint lastEntityID; 
-	private bool currentGameVisibility; 
-	private float lastSnapshotTime; 
+	public GameObject arcadeEntityPrefab;
+	public BaseArcadeMachine ownerMachine;
+	public static int gameOffsetIndex;
+	private bool isAuthorative;
+	public Canvas canvas;
+	private float lastFrameRate;
+	private uint lastEntityID;
+	private bool currentGameVisibility;
+	private float lastSnapshotTime;
 
 
 	public void SendArcadeEntityMessage(ArcadeEntity ent, string msg) { }

@@ -1,11 +1,11 @@
-public class LootPanelHorse : LootPanel // TypeDefIndex: 12796
+public class LootPanelHorse : LootPanel // TypeDefIndex: 12810
 {
-	public Text breedTitle; 
-	public Text maxSpeedText; 
-	public Text staminaText; 
-	public Text healthText; 
-	public GameObject[] storageSlots; 
-	public GameObject storageWindow; 
+	public Text breedTitle;
+	public Text maxSpeedText;
+	public Text staminaText;
+	public Text healthText;
+	public GameObject[] storageSlots;
+	public GameObject storageWindow;
 
 
 	public RidableHorse GetHorse() { }

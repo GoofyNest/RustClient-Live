@@ -1,26 +1,26 @@
-public class TOD_Animation : MonoBehaviour // TypeDefIndex: 8086
+public class TOD_Animation : MonoBehaviour // TypeDefIndex: 8088
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float CameraMovement; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float WindDegrees; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float WindSpeed; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <CloudUV>k__BackingField; 
-	private TOD_Sky sky; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float CameraMovement;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float WindDegrees;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float WindSpeed;
+	[CompilerGeneratedAttribute]
+	private Vector3 <CloudUV>k__BackingField;
+	private TOD_Sky sky;
 
 	public Vector3 CloudUV { get; set; }
 	public Vector3 OffsetUV { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_CloudUV() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CloudUV(Vector3 value) { }
 
 	public Vector3 get_OffsetUV() { }
@@ -33,40 +33,40 @@ public class TOD_Animation : MonoBehaviour // TypeDefIndex: 8086
 
 }
 
-public class TOD_MinAttribute : PropertyAttribute // TypeDefIndex: 8087
+public class TOD_MinAttribute : PropertyAttribute // TypeDefIndex: 8089
 {
-	public float min; 
+	public float min;
 
 
 	public void .ctor(float min) { }
 
 }
 
-public class TOD_MaxAttribute : PropertyAttribute // TypeDefIndex: 8088
+public class TOD_MaxAttribute : PropertyAttribute // TypeDefIndex: 8090
 {
-	public float max; 
+	public float max;
 
 
 	public void .ctor(float max) { }
 
 }
 
-public class TOD_RangeAttribute : PropertyAttribute // TypeDefIndex: 8089
+public class TOD_RangeAttribute : PropertyAttribute // TypeDefIndex: 8091
 {
-	public float min; 
-	public float max; 
+	public float min;
+	public float max;
 
 
 	public void .ctor(float min, float max) { }
 
 }
 
-public class TOD_Billboard : MonoBehaviour // TypeDefIndex: 8090
+public class TOD_Billboard : MonoBehaviour // TypeDefIndex: 8092
 {
-	public float Altitude; 
-	public float Azimuth; 
-	public float Distance; 
-	public float Size; 
+	public float Altitude;
+	public float Azimuth;
+	public float Distance;
+	public float Size;
 
 
 	private T GetComponentInParents<T>() { }
@@ -79,15 +79,15 @@ public class TOD_Billboard : MonoBehaviour // TypeDefIndex: 8090
 
 }
 
-public class TOD_Camera : MonoBehaviour // TypeDefIndex: 8091
+public class TOD_Camera : MonoBehaviour // TypeDefIndex: 8093
 {
-	public TOD_Sky sky; 
-	public bool DomePosToCamera; 
-	public Vector3 DomePosOffset; 
-	public bool DomeScaleToFarClip; 
-	public float DomeScaleFactor; 
-	private Camera cameraComponent; 
-	private Transform cameraTransform; 
+	public TOD_Sky sky;
+	public bool DomePosToCamera;
+	public Vector3 DomePosOffset;
+	public bool DomeScaleToFarClip;
+	public float DomeScaleFactor;
+	private Camera cameraComponent;
+	private Transform cameraTransform;
 
 	public bool HDR { get; }
 	public float NearClipPlane { get; }
@@ -121,101 +121,101 @@ public class TOD_Camera : MonoBehaviour // TypeDefIndex: 8091
 
 }
 
-public class TOD_Components : MonoBehaviour // TypeDefIndex: 8092
+public class TOD_Components : MonoBehaviour // TypeDefIndex: 8094
 {
-	public GameObject Space; 
-	public GameObject Stars; 
-	public GameObject Sun; 
-	public GameObject Moon; 
-	public GameObject Atmosphere; 
-	public GameObject Clear; 
-	public GameObject Clouds; 
-	public GameObject Billboards; 
-	public GameObject Light; 
-	[CompilerGeneratedAttribute] 
-	private Transform <DomeTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <SpaceTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <StarTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <SunTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <MoonTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <AtmosphereTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <ClearTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <CloudTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <BillboardTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Transform <LightTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <SpaceRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <StarRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <SunRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <MoonRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <AtmosphereRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <ClearRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer <CloudRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Renderer[] <BillboardRenderers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <SpaceMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <StarMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <SunMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <MoonMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <AtmosphereMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <ClearMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <CloudMeshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter[] <BillboardMeshFilters>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <SpaceMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <StarMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <SunMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <MoonMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <AtmosphereMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <ClearMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <CloudMaterial>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material[] <BillboardMaterials>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Light <LightSource>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Sky <Sky>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Animation <Animation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Time <Time>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Camera <Camera>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Rays <Rays>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Scattering <Scattering>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Shadows <Shadows>k__BackingField; 
+	public GameObject Space;
+	public GameObject Stars;
+	public GameObject Sun;
+	public GameObject Moon;
+	public GameObject Atmosphere;
+	public GameObject Clear;
+	public GameObject Clouds;
+	public GameObject Billboards;
+	public GameObject Light;
+	[CompilerGeneratedAttribute]
+	private Transform <DomeTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <SpaceTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <StarTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <SunTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <MoonTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <AtmosphereTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <ClearTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <CloudTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <BillboardTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Transform <LightTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <SpaceRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <StarRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <SunRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <MoonRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <AtmosphereRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <ClearRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer <CloudRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Renderer[] <BillboardRenderers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <SpaceMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <StarMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <SunMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <MoonMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <AtmosphereMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <ClearMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <CloudMeshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter[] <BillboardMeshFilters>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <SpaceMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <StarMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <SunMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <MoonMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <AtmosphereMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <ClearMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <CloudMaterial>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material[] <BillboardMaterials>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Light <LightSource>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Sky <Sky>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Animation <Animation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Time <Time>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Camera <Camera>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Rays <Rays>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Scattering <Scattering>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Shadows <Shadows>k__BackingField;
 
 	public Transform DomeTransform { get; set; }
 	public Transform SpaceTransform { get; set; }
@@ -261,256 +261,256 @@ public class TOD_Components : MonoBehaviour // TypeDefIndex: 8092
 	public TOD_Shadows Shadows { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_DomeTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DomeTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_SpaceTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SpaceTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_StarTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StarTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_SunTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SunTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_MoonTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MoonTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_AtmosphereTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AtmosphereTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_ClearTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClearTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_CloudTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CloudTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_BillboardTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BillboardTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_LightTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LightTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_SpaceRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SpaceRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_StarRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StarRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_SunRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SunRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_MoonRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MoonRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_AtmosphereRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AtmosphereRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_ClearRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClearRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_CloudRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CloudRenderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer[] get_BillboardRenderers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BillboardRenderers(Renderer[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_SpaceMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SpaceMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_StarMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StarMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_SunMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SunMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_MoonMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MoonMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_AtmosphereMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AtmosphereMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_ClearMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClearMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_CloudMeshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CloudMeshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter[] get_BillboardMeshFilters() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BillboardMeshFilters(MeshFilter[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_SpaceMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SpaceMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_StarMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StarMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_SunMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SunMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_MoonMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MoonMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_AtmosphereMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AtmosphereMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_ClearMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClearMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_CloudMaterial() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CloudMaterial(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material[] get_BillboardMaterials() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BillboardMaterials(Material[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Light get_LightSource() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LightSource(Light value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Sky get_Sky() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Sky(TOD_Sky value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Animation get_Animation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Animation(TOD_Animation value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Time get_Time() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Time(TOD_Time value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Camera get_Camera() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Camera(TOD_Camera value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Rays get_Rays() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Rays(TOD_Rays value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Scattering get_Scattering() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Scattering(TOD_Scattering value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Shadows get_Shadows() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Shadows(TOD_Shadows value) { }
 
 	public void Initialize() { }
@@ -519,25 +519,25 @@ public class TOD_Components : MonoBehaviour // TypeDefIndex: 8092
 
 }
 
-public enum TOD_MoonPositionType // TypeDefIndex: 8093
+public enum TOD_MoonPositionType // TypeDefIndex: 8095
 {
-	public int value__; 
+	public int value__;
 	public const TOD_MoonPositionType OppositeToSun = 0;
 	public const TOD_MoonPositionType Realistic = 1;
 
 }
 
-public enum TOD_StarsPositionType // TypeDefIndex: 8094
+public enum TOD_StarsPositionType // TypeDefIndex: 8096
 {
-	public int value__; 
+	public int value__;
 	public const TOD_StarsPositionType Static = 0;
 	public const TOD_StarsPositionType Rotating = 1;
 
 }
 
-public enum TOD_FogType // TypeDefIndex: 8095
+public enum TOD_FogType // TypeDefIndex: 8097
 {
-	public int value__; 
+	public int value__;
 	public const TOD_FogType None = 0;
 	public const TOD_FogType Atmosphere = 1;
 	public const TOD_FogType Directional = 2;
@@ -545,9 +545,9 @@ public enum TOD_FogType // TypeDefIndex: 8095
 
 }
 
-public enum TOD_AmbientType // TypeDefIndex: 8096
+public enum TOD_AmbientType // TypeDefIndex: 8098
 {
-	public int value__; 
+	public int value__;
 	public const TOD_AmbientType None = 0;
 	public const TOD_AmbientType Color = 1;
 	public const TOD_AmbientType Gradient = 2;
@@ -555,82 +555,82 @@ public enum TOD_AmbientType // TypeDefIndex: 8096
 
 }
 
-public enum TOD_ReflectionType // TypeDefIndex: 8097
+public enum TOD_ReflectionType // TypeDefIndex: 8099
 {
-	public int value__; 
+	public int value__;
 	public const TOD_ReflectionType None = 0;
 	public const TOD_ReflectionType Cubemap = 1;
 
 }
 
-public enum TOD_ColorSpaceType // TypeDefIndex: 8098
+public enum TOD_ColorSpaceType // TypeDefIndex: 8100
 {
-	public int value__; 
+	public int value__;
 	public const TOD_ColorSpaceType Auto = 0;
 	public const TOD_ColorSpaceType Linear = 1;
 	public const TOD_ColorSpaceType Gamma = 2;
 
 }
 
-public enum TOD_ColorRangeType // TypeDefIndex: 8099
+public enum TOD_ColorRangeType // TypeDefIndex: 8101
 {
-	public int value__; 
+	public int value__;
 	public const TOD_ColorRangeType Auto = 0;
 	public const TOD_ColorRangeType HDR = 1;
 	public const TOD_ColorRangeType LDR = 2;
 
 }
 
-public enum TOD_ColorOutputType // TypeDefIndex: 8100
+public enum TOD_ColorOutputType // TypeDefIndex: 8102
 {
-	public int value__; 
+	public int value__;
 	public const TOD_ColorOutputType Raw = 0;
 	public const TOD_ColorOutputType Dithered = 1;
 
 }
 
-public enum TOD_CloudQualityType // TypeDefIndex: 8101
+public enum TOD_CloudQualityType // TypeDefIndex: 8103
 {
-	public int value__; 
+	public int value__;
 	public const TOD_CloudQualityType Low = 0;
 	public const TOD_CloudQualityType Medium = 1;
 	public const TOD_CloudQualityType High = 2;
 
 }
 
-public enum TOD_MeshQualityType // TypeDefIndex: 8102
+public enum TOD_MeshQualityType // TypeDefIndex: 8104
 {
-	public int value__; 
+	public int value__;
 	public const TOD_MeshQualityType Low = 0;
 	public const TOD_MeshQualityType Medium = 1;
 	public const TOD_MeshQualityType High = 2;
 
 }
 
-public enum TOD_StarQualityType // TypeDefIndex: 8103
+public enum TOD_StarQualityType // TypeDefIndex: 8105
 {
-	public int value__; 
+	public int value__;
 	public const TOD_StarQualityType Low = 0;
 	public const TOD_StarQualityType Medium = 1;
 	public const TOD_StarQualityType High = 2;
 
 }
 
-public enum TOD_SkyQualityType // TypeDefIndex: 8104
+public enum TOD_SkyQualityType // TypeDefIndex: 8106
 {
-	public int value__; 
+	public int value__;
 	public const TOD_SkyQualityType PerVertex = 0;
 	public const TOD_SkyQualityType PerPixel = 1;
 
 }
 
-public abstract class TOD_ImageEffect : MonoBehaviour // TypeDefIndex: 8105
+public abstract class TOD_ImageEffect : MonoBehaviour // TypeDefIndex: 8107
 {
-	public TOD_Sky sky; 
-	protected Camera cam; 
-	private bool supportsDepth; 
-	private bool supportsHdr; 
-	private static Vector3[] frustumCornersArray; 
+	public TOD_Sky sky;
+	protected Camera cam;
+	private bool supportsDepth;
+	private bool supportsHdr;
+	private static Vector3[] frustumCornersArray;
 
 
 	protected Material CreateMaterial(Shader shader) { }
@@ -653,30 +653,30 @@ public abstract class TOD_ImageEffect : MonoBehaviour // TypeDefIndex: 8105
 
 }
 
-public enum TOD_ImageEffect.ResolutionType // TypeDefIndex: 8106
+public enum TOD_ImageEffect.ResolutionType // TypeDefIndex: 8108
 {
-	public int value__; 
+	public int value__;
 	public const TOD_ImageEffect.ResolutionType Low = 0;
 	public const TOD_ImageEffect.ResolutionType Normal = 1;
 	public const TOD_ImageEffect.ResolutionType High = 2;
 
 }
 
-public class TOD_Parameters // TypeDefIndex: 8107
+public class TOD_Parameters // TypeDefIndex: 8109
 {
-	public TOD_CycleParameters Cycle; 
-	public TOD_WorldParameters World; 
-	public TOD_AtmosphereParameters Atmosphere; 
-	public TOD_DayParameters Day; 
-	public TOD_NightParameters Night; 
-	public TOD_SunParameters Sun; 
-	public TOD_MoonParameters Moon; 
-	public TOD_LightParameters Light; 
-	public TOD_StarParameters Stars; 
-	public TOD_CloudParameters Clouds; 
-	public TOD_FogParameters Fog; 
-	public TOD_AmbientParameters Ambient; 
-	public TOD_ReflectionParameters Reflection; 
+	public TOD_CycleParameters Cycle;
+	public TOD_WorldParameters World;
+	public TOD_AtmosphereParameters Atmosphere;
+	public TOD_DayParameters Day;
+	public TOD_NightParameters Night;
+	public TOD_SunParameters Sun;
+	public TOD_MoonParameters Moon;
+	public TOD_LightParameters Light;
+	public TOD_StarParameters Stars;
+	public TOD_CloudParameters Clouds;
+	public TOD_FogParameters Fog;
+	public TOD_AmbientParameters Ambient;
+	public TOD_ReflectionParameters Reflection;
 
 
 	public void .ctor() { }
@@ -687,17 +687,17 @@ public class TOD_Parameters // TypeDefIndex: 8107
 
 }
 
-public class TOD_CycleParameters // TypeDefIndex: 8108
+public class TOD_CycleParameters // TypeDefIndex: 8110
 {
-	[TooltipAttribute] 
-	public float Hour; 
-	[TooltipAttribute] 
-	public int Day; 
-	[TooltipAttribute] 
-	public int Month; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public int Year; 
+	[TooltipAttribute]
+	public float Hour;
+	[TooltipAttribute]
+	public int Day;
+	[TooltipAttribute]
+	public int Month;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public int Year;
 
 	public DateTime DateTime { get; set; }
 	public long Ticks { get; set; }
@@ -715,297 +715,297 @@ public class TOD_CycleParameters // TypeDefIndex: 8108
 
 }
 
-public class TOD_WorldParameters // TypeDefIndex: 8109
+public class TOD_WorldParameters // TypeDefIndex: 8111
 {
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Latitude; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Longitude; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float UTC; 
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Latitude;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Longitude;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float UTC;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_AtmosphereParameters // TypeDefIndex: 8110
+public class TOD_AtmosphereParameters // TypeDefIndex: 8112
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float RayleighMultiplier; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MieMultiplier; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Brightness; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Contrast; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Directionality; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Fogginess; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float RayleighMultiplier;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MieMultiplier;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Brightness;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Contrast;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Directionality;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Fogginess;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_DayParameters // TypeDefIndex: 8111
+public class TOD_DayParameters // TypeDefIndex: 8113
 {
-	[TooltipAttribute] 
-	public Gradient SunColor; 
-	[TooltipAttribute] 
-	public Gradient LightColor; 
-	[TooltipAttribute] 
-	public Gradient RayColor; 
-	[TooltipAttribute] 
-	public Gradient SkyColor; 
-	[TooltipAttribute] 
-	public Gradient CloudColor; 
-	[TooltipAttribute] 
-	public Gradient FogColor; 
-	[TooltipAttribute] 
-	public Gradient AmbientColor; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float LightIntensity; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float ShadowStrength; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float AmbientMultiplier; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float ReflectionMultiplier; 
+	[TooltipAttribute]
+	public Gradient SunColor;
+	[TooltipAttribute]
+	public Gradient LightColor;
+	[TooltipAttribute]
+	public Gradient RayColor;
+	[TooltipAttribute]
+	public Gradient SkyColor;
+	[TooltipAttribute]
+	public Gradient CloudColor;
+	[TooltipAttribute]
+	public Gradient FogColor;
+	[TooltipAttribute]
+	public Gradient AmbientColor;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float LightIntensity;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float ShadowStrength;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float AmbientMultiplier;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float ReflectionMultiplier;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_NightParameters // TypeDefIndex: 8112
+public class TOD_NightParameters // TypeDefIndex: 8114
 {
-	[TooltipAttribute] 
-	public Gradient MoonColor; 
-	[TooltipAttribute] 
-	public Gradient LightColor; 
-	[TooltipAttribute] 
-	public Gradient RayColor; 
-	[TooltipAttribute] 
-	public Gradient SkyColor; 
-	[TooltipAttribute] 
-	public Gradient CloudColor; 
-	[TooltipAttribute] 
-	public Gradient FogColor; 
-	[TooltipAttribute] 
-	public Gradient AmbientColor; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float LightIntensity; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float ShadowStrength; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float AmbientMultiplier; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float ReflectionMultiplier; 
+	[TooltipAttribute]
+	public Gradient MoonColor;
+	[TooltipAttribute]
+	public Gradient LightColor;
+	[TooltipAttribute]
+	public Gradient RayColor;
+	[TooltipAttribute]
+	public Gradient SkyColor;
+	[TooltipAttribute]
+	public Gradient CloudColor;
+	[TooltipAttribute]
+	public Gradient FogColor;
+	[TooltipAttribute]
+	public Gradient AmbientColor;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float LightIntensity;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float ShadowStrength;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float AmbientMultiplier;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float ReflectionMultiplier;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_SunParameters // TypeDefIndex: 8113
+public class TOD_SunParameters // TypeDefIndex: 8115
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MeshSize; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MeshBrightness; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MeshContrast; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MeshSize;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MeshBrightness;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MeshContrast;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_MoonParameters // TypeDefIndex: 8114
+public class TOD_MoonParameters // TypeDefIndex: 8116
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MeshSize; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MeshBrightness; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MeshContrast; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float HaloSize; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float HaloBrightness; 
-	[TooltipAttribute] 
-	public TOD_MoonPositionType Position; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MeshSize;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MeshBrightness;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MeshContrast;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float HaloSize;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float HaloBrightness;
+	[TooltipAttribute]
+	public TOD_MoonPositionType Position;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_StarParameters // TypeDefIndex: 8115
+public class TOD_StarParameters // TypeDefIndex: 8117
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Size; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Brightness; 
-	[TooltipAttribute] 
-	public TOD_StarsPositionType Position; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Size;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Brightness;
+	[TooltipAttribute]
+	public TOD_StarsPositionType Position;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_CloudParameters // TypeDefIndex: 8116
+public class TOD_CloudParameters // TypeDefIndex: 8118
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Size; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Opacity; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Coverage; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Sharpness; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Coloring; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Attenuation; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float Saturation; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Scattering; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Brightness; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Size;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Opacity;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Coverage;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Sharpness;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Coloring;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Attenuation;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float Saturation;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Scattering;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Brightness;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_LightParameters // TypeDefIndex: 8117
+public class TOD_LightParameters // TypeDefIndex: 8119
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float UpdateInterval; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float MinimumHeight; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float UpdateInterval;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float MinimumHeight;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_FogParameters // TypeDefIndex: 8118
+public class TOD_FogParameters // TypeDefIndex: 8120
 {
-	[TooltipAttribute] 
-	public TOD_FogType Mode; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public float HeightBias; 
+	[TooltipAttribute]
+	public TOD_FogType Mode;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public float HeightBias;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_AmbientParameters // TypeDefIndex: 8119
+public class TOD_AmbientParameters // TypeDefIndex: 8121
 {
-	[TooltipAttribute] 
-	public TOD_AmbientType Mode; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Saturation; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float UpdateInterval; 
+	[TooltipAttribute]
+	public TOD_AmbientType Mode;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Saturation;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float UpdateInterval;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_ReflectionParameters // TypeDefIndex: 8120
+public class TOD_ReflectionParameters // TypeDefIndex: 8122
 {
-	[TooltipAttribute] 
-	public TOD_ReflectionType Mode; 
-	[TooltipAttribute] 
-	public ReflectionProbeClearFlags ClearFlags; 
-	[TooltipAttribute] 
-	public LayerMask CullingMask; 
-	[TooltipAttribute] 
-	public GameObject ProbePrefab; 
+	[TooltipAttribute]
+	public TOD_ReflectionType Mode;
+	[TooltipAttribute]
+	public ReflectionProbeClearFlags ClearFlags;
+	[TooltipAttribute]
+	public LayerMask CullingMask;
+	[TooltipAttribute]
+	public GameObject ProbePrefab;
 
 
 	public void .ctor() { }
 
 }
 
-public class TOD_Rays : TOD_ImageEffect // TypeDefIndex: 8121
+public class TOD_Rays : TOD_ImageEffect // TypeDefIndex: 8123
 {
-	public Shader GodRayShader; 
-	public Shader ScreenClearShader; 
-	public Shader SkyMaskShader; 
-	[TooltipAttribute] 
-	public bool UseDepthTexture; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public TOD_Rays.BlendModeType BlendMode; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float Intensity; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public TOD_ImageEffect.ResolutionType Resolution; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public int BlurIterations; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float BlurRadius; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MaxRadius; 
-	private Material godRayMaterial; 
-	private Material screenClearMaterial; 
-	private Material skyMaskMaterial; 
+	public Shader GodRayShader;
+	public Shader ScreenClearShader;
+	public Shader SkyMaskShader;
+	[TooltipAttribute]
+	public bool UseDepthTexture;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public TOD_Rays.BlendModeType BlendMode;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float Intensity;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public TOD_ImageEffect.ResolutionType Resolution;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public int BlurIterations;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float BlurRadius;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MaxRadius;
+	private Material godRayMaterial;
+	private Material screenClearMaterial;
+	private Material skyMaskMaterial;
 	private const int PASS_SCREEN = 0;
 	private const int PASS_ADD = 1;
 
@@ -1020,129 +1020,129 @@ public class TOD_Rays : TOD_ImageEffect // TypeDefIndex: 8121
 
 }
 
-public enum TOD_Rays.BlendModeType // TypeDefIndex: 8122
+public enum TOD_Rays.BlendModeType // TypeDefIndex: 8124
 {
-	public int value__; 
+	public int value__;
 	public const TOD_Rays.BlendModeType Screen = 0;
 	public const TOD_Rays.BlendModeType Add = 1;
 
 }
 
-public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8123
+public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8125
 {
-	public Material Skybox; 
-	public Mesh MoonLOD0; 
-	public Mesh MoonLOD1; 
-	public Mesh MoonLOD2; 
-	public Mesh SkyLOD0; 
-	public Mesh SkyLOD1; 
-	public Mesh SkyLOD2; 
-	public Mesh CloudsLOD0; 
-	public Mesh CloudsLOD1; 
-	public Mesh CloudsLOD2; 
-	public Mesh StarsLOD0; 
-	public Mesh StarsLOD1; 
-	public Mesh StarsLOD2; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunLightColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonLightColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunSkyColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonSkyColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunMeshColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonMeshColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunCloudColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonCloudColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_FogColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_GroundColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_AmbientColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_LightDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_LocalSunDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_LocalMoonDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_LocalLightDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_Contrast>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_Brightness>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_Fogginess>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_Directionality>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonHaloPower>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonHaloColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudSize>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudOpacity>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudCoverage>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudSharpness>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudDensity>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudColoring>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudAttenuation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudSaturation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudScattering>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudBrightness>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudMultiplier>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudOffset>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_CloudWind>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_StarSize>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_StarBrightness>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_StarVisibility>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunMeshContrast>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_SunMeshBrightness>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonMeshContrast>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_MoonMeshBrightness>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_kBetaMie>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_kSun>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_k4PI>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_kRadius>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_kScale>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_World2Sky>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID_Sky2World>k__BackingField; 
+	public Material Skybox;
+	public Mesh MoonLOD0;
+	public Mesh MoonLOD1;
+	public Mesh MoonLOD2;
+	public Mesh SkyLOD0;
+	public Mesh SkyLOD1;
+	public Mesh SkyLOD2;
+	public Mesh CloudsLOD0;
+	public Mesh CloudsLOD1;
+	public Mesh CloudsLOD2;
+	public Mesh StarsLOD0;
+	public Mesh StarsLOD1;
+	public Mesh StarsLOD2;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunLightColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonLightColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunSkyColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonSkyColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunMeshColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonMeshColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunCloudColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonCloudColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_FogColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_GroundColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_AmbientColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_LightDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_LocalSunDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_LocalMoonDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_LocalLightDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_Contrast>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_Brightness>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_Fogginess>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_Directionality>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonHaloPower>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonHaloColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudSize>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudOpacity>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudCoverage>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudSharpness>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudDensity>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudColoring>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudAttenuation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudSaturation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudScattering>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudBrightness>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudMultiplier>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudOffset>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_CloudWind>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_StarSize>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_StarBrightness>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_StarVisibility>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunMeshContrast>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_SunMeshBrightness>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonMeshContrast>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_MoonMeshBrightness>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_kBetaMie>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_kSun>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_k4PI>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_kRadius>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_kScale>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_World2Sky>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID_Sky2World>k__BackingField;
 
 	public int ID_SunLightColor { get; set; }
 	public int ID_MoonLightColor { get; set; }
@@ -1196,304 +1196,304 @@ public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8123
 	public int ID_Sky2World { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunLightColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunLightColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonLightColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonLightColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunSkyColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunSkyColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonSkyColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonSkyColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunMeshColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunMeshColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonMeshColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonMeshColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunCloudColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunCloudColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonCloudColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonCloudColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_FogColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_FogColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_GroundColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_GroundColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_AmbientColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_AmbientColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunDirection(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonDirection(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_LightDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_LightDirection(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_LocalSunDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_LocalSunDirection(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_LocalMoonDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_LocalMoonDirection(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_LocalLightDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_LocalLightDirection(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_Contrast() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_Contrast(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_Brightness() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_Brightness(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_Fogginess() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_Fogginess(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_Directionality() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_Directionality(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonHaloPower() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonHaloPower(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonHaloColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonHaloColor(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudSize() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudSize(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudOpacity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudOpacity(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudCoverage() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudCoverage(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudSharpness() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudSharpness(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudDensity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudDensity(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudColoring() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudColoring(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudAttenuation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudAttenuation(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudSaturation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudSaturation(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudScattering() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudScattering(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudBrightness() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudBrightness(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudMultiplier() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudMultiplier(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudOffset() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudOffset(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_CloudWind() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_CloudWind(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_StarSize() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_StarSize(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_StarBrightness() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_StarBrightness(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_StarVisibility() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_StarVisibility(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunMeshContrast() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunMeshContrast(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_SunMeshBrightness() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_SunMeshBrightness(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonMeshContrast() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonMeshContrast(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_MoonMeshBrightness() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_MoonMeshBrightness(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_kBetaMie() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_kBetaMie(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_kSun() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_kSun(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_k4PI() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_k4PI(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_kRadius() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_kRadius(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_kScale() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_kScale(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_World2Sky() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_World2Sky(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID_Sky2World() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID_Sky2World(int value) { }
 
 	public void Initialize() { }
@@ -1502,40 +1502,40 @@ public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8123
 
 }
 
-public class TOD_Scattering : TOD_ImageEffect // TypeDefIndex: 8124
+public class TOD_Scattering : TOD_ImageEffect // TypeDefIndex: 8126
 {
-	public Shader ScatteringShader; 
-	public Shader ScreenClearShader; 
-	public Shader SkyMaskShader; 
-	public Texture2D DitheringTexture; 
-	[TooltipAttribute] 
-	public bool SinglePass; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float GlobalDensity; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float HeightFalloff; 
-	[TooltipAttribute] 
-	public float StartDistance; 
-	[TooltipAttribute] 
-	public float ZeroLevel; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public TOD_ImageEffect.ResolutionType Resolution; 
-	[TooltipAttribute] 
-	[TOD_RangeAttribute] 
-	public int BlurIterations; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float BlurRadius; 
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float MaxRadius; 
-	private Material scatteringMaterial; 
-	private Material screenClearMaterial; 
-	private Material skyMaskMaterial; 
+	public Shader ScatteringShader;
+	public Shader ScreenClearShader;
+	public Shader SkyMaskShader;
+	public Texture2D DitheringTexture;
+	[TooltipAttribute]
+	public bool SinglePass;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float GlobalDensity;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float HeightFalloff;
+	[TooltipAttribute]
+	public float StartDistance;
+	[TooltipAttribute]
+	public float ZeroLevel;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public TOD_ImageEffect.ResolutionType Resolution;
+	[TooltipAttribute]
+	[TOD_RangeAttribute]
+	public int BlurIterations;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float BlurRadius;
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float MaxRadius;
+	private Material scatteringMaterial;
+	private Material screenClearMaterial;
+	private Material skyMaskMaterial;
 
 
 	protected void OnEnable() { }
@@ -1546,158 +1546,158 @@ public class TOD_Scattering : TOD_ImageEffect // TypeDefIndex: 8124
 
 	protected void OnPostRender() { }
 
-	[ImageEffectOpaque] 
+	[ImageEffectOpaque]
 	protected void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
 	public void .ctor() { }
 
 }
 
-public class TOD_Shadows : TOD_ImageEffect // TypeDefIndex: 8125
+public class TOD_Shadows : TOD_ImageEffect // TypeDefIndex: 8127
 {
-	public Shader ShadowShader; 
-	public Texture2D CloudTexture; 
-	[HeaderAttribute] 
-	[RangeAttribute] 
-	public float Cutoff; 
-	[RangeAttribute] 
-	public float Fade; 
-	[RangeAttribute] 
-	public float Intensity; 
-	private Material shadowMaterial; 
+	public Shader ShadowShader;
+	public Texture2D CloudTexture;
+	[HeaderAttribute]
+	[RangeAttribute]
+	public float Cutoff;
+	[RangeAttribute]
+	public float Fade;
+	[RangeAttribute]
+	public float Intensity;
+	private Material shadowMaterial;
 
 
 	protected void OnEnable() { }
 
 	protected void OnDisable() { }
 
-	[ImageEffectOpaque] 
+	[ImageEffectOpaque]
 	protected void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
 	public void .ctor() { }
 
 }
 
-public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8126
+public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8128
 {
-	private static List<TOD_Sky> instances; 
-	[TooltipAttribute] 
-	public TOD_ColorSpaceType ColorSpace; 
-	[TooltipAttribute] 
-	public TOD_ColorRangeType ColorRange; 
-	[TooltipAttribute] 
-	public TOD_ColorOutputType ColorOutput; 
-	[TooltipAttribute] 
-	public TOD_SkyQualityType SkyQuality; 
-	[TooltipAttribute] 
-	public TOD_CloudQualityType CloudQuality; 
-	[TooltipAttribute] 
-	public TOD_MeshQualityType MeshQuality; 
-	[TooltipAttribute] 
-	public TOD_StarQualityType StarQuality; 
-	public TOD_CycleParameters Cycle; 
-	public TOD_WorldParameters World; 
-	public TOD_AtmosphereParameters Atmosphere; 
-	public TOD_DayParameters Day; 
-	public TOD_NightParameters Night; 
-	public TOD_SunParameters Sun; 
-	public TOD_MoonParameters Moon; 
-	public TOD_StarParameters Stars; 
-	public TOD_CloudParameters Clouds; 
-	public TOD_LightParameters Light; 
-	public TOD_FogParameters Fog; 
-	public TOD_AmbientParameters Ambient; 
-	public TOD_ReflectionParameters Reflection; 
-	[CompilerGeneratedAttribute] 
-	private bool <Initialized>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Components <Components>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TOD_Resources <Resources>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsDay>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsNight>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <LerpValue>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <SunZenith>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <SunAltitude>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <SunAzimuth>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <MoonZenith>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <MoonAltitude>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <MoonAzimuth>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <SunsetTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <SunriseTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <LocalSiderealTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <SunVisibility>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <MoonVisibility>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <SunDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <MoonDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <LightDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <LocalSunDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <LocalMoonDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <LocalLightDirection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <SunLightColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <MoonLightColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <SunRayColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <MoonRayColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <SunSkyColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <MoonSkyColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <SunMeshColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <MoonMeshColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <SunCloudColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <MoonCloudColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <FogColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <GroundColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <AmbientColor>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Color <MoonHaloColor>k__BackingField; 
-	private TOD_Sky.ReflectionProbeState ReflectionCur; 
-	private TOD_Sky.ReflectionProbeState ReflectionSrc; 
-	private TOD_Sky.ReflectionProbeState ReflectionDst; 
-	public static float ReflectionUpdateSpeed; 
-	public static int ReflectionResolution; 
-	public static float ReflectionUpdateInterval; 
-	public static ReflectionProbeTimeSlicingMode ReflectionTimeSlicing; 
-	private float timeSinceLightUpdate; 
-	private float timeSinceAmbientUpdate; 
-	private float timeSinceReflectionUpdate; 
+	private static List<TOD_Sky> instances;
+	[TooltipAttribute]
+	public TOD_ColorSpaceType ColorSpace;
+	[TooltipAttribute]
+	public TOD_ColorRangeType ColorRange;
+	[TooltipAttribute]
+	public TOD_ColorOutputType ColorOutput;
+	[TooltipAttribute]
+	public TOD_SkyQualityType SkyQuality;
+	[TooltipAttribute]
+	public TOD_CloudQualityType CloudQuality;
+	[TooltipAttribute]
+	public TOD_MeshQualityType MeshQuality;
+	[TooltipAttribute]
+	public TOD_StarQualityType StarQuality;
+	public TOD_CycleParameters Cycle;
+	public TOD_WorldParameters World;
+	public TOD_AtmosphereParameters Atmosphere;
+	public TOD_DayParameters Day;
+	public TOD_NightParameters Night;
+	public TOD_SunParameters Sun;
+	public TOD_MoonParameters Moon;
+	public TOD_StarParameters Stars;
+	public TOD_CloudParameters Clouds;
+	public TOD_LightParameters Light;
+	public TOD_FogParameters Fog;
+	public TOD_AmbientParameters Ambient;
+	public TOD_ReflectionParameters Reflection;
+	[CompilerGeneratedAttribute]
+	private bool <Initialized>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Components <Components>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TOD_Resources <Resources>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsDay>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsNight>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <LerpValue>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <SunZenith>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <SunAltitude>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <SunAzimuth>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <MoonZenith>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <MoonAltitude>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <MoonAzimuth>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <SunsetTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <SunriseTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <LocalSiderealTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <SunVisibility>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <MoonVisibility>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <SunDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <MoonDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <LightDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <LocalSunDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <LocalMoonDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <LocalLightDirection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <SunLightColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <MoonLightColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <SunRayColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <MoonRayColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <SunSkyColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <MoonSkyColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <SunMeshColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <MoonMeshColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <SunCloudColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <MoonCloudColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <FogColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <GroundColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <AmbientColor>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Color <MoonHaloColor>k__BackingField;
+	private TOD_Sky.ReflectionProbeState ReflectionCur;
+	private TOD_Sky.ReflectionProbeState ReflectionSrc;
+	private TOD_Sky.ReflectionProbeState ReflectionDst;
+	public static float ReflectionUpdateSpeed;
+	public static int ReflectionResolution;
+	public static float ReflectionUpdateInterval;
+	public static ReflectionProbeTimeSlicingMode ReflectionTimeSlicing;
+	private float timeSinceLightUpdate;
+	private float timeSinceAmbientUpdate;
+	private float timeSinceReflectionUpdate;
 	private const int TOD_SAMPLES = 2;
-	private Vector3 kBetaMie; 
-	private Vector4 kSun; 
-	private Vector4 k4PI; 
-	private Vector4 kRadius; 
-	private Vector4 kScale; 
+	private Vector3 kBetaMie;
+	private Vector4 kSun;
+	private Vector4 k4PI;
+	private Vector4 kRadius;
+	private Vector4 kScale;
 	private const float pi = 3,141593;
 	private const float tau = 6,283185;
 
@@ -1754,238 +1754,238 @@ public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8126
 
 	public static TOD_Sky get_Instance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Initialized() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Initialized(bool value) { }
 
 	public bool get_Headless() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Components get_Components() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Components(TOD_Components value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TOD_Resources get_Resources() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Resources(TOD_Resources value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsDay() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsDay(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsNight() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsNight(bool value) { }
 
 	public float get_Radius() { }
 
 	public float get_Diameter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_LerpValue() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LerpValue(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_SunZenith() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunZenith(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_SunAltitude() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunAltitude(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_SunAzimuth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunAzimuth(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_MoonZenith() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonZenith(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_MoonAltitude() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonAltitude(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_MoonAzimuth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonAzimuth(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_SunsetTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunsetTime(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_SunriseTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunriseTime(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_LocalSiderealTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LocalSiderealTime(float value) { }
 
 	public float get_LightZenith() { }
 
 	public float get_LightIntensity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_SunVisibility() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunVisibility(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_MoonVisibility() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonVisibility(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_SunDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunDirection(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_MoonDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonDirection(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_LightDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LightDirection(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_LocalSunDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LocalSunDirection(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_LocalMoonDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LocalMoonDirection(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_LocalLightDirection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LocalLightDirection(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_SunLightColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunLightColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_MoonLightColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonLightColor(Color value) { }
 
 	public Color get_LightColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_SunRayColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SunRayColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_MoonRayColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MoonRayColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_SunSkyColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunSkyColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_MoonSkyColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonSkyColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_SunMeshColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunMeshColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_MoonMeshColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonMeshColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_SunCloudColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SunCloudColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_MoonCloudColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonCloudColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_FogColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_FogColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_GroundColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_GroundColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_AmbientColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_AmbientColor(Color value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Color get_MoonHaloColor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_MoonHaloColor(Color value) { }
 
 	public ReflectionProbe get_Probe() { }
@@ -2078,11 +2078,11 @@ public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8126
 
 }
 
-public class TOD_Sky.ReflectionProbeState // TypeDefIndex: 8127
+public class TOD_Sky.ReflectionProbeState // TypeDefIndex: 8129
 {
-	public ReflectionProbe Probe; 
-	public GameObject ProbeInstance; 
-	public int ProbeRenderID; 
+	public ReflectionProbe Probe;
+	public GameObject ProbeInstance;
+	public int ProbeRenderID;
 
 
 	public void InitializePrimary(Vector3 position, GameObject prefab) { }
@@ -2093,89 +2093,89 @@ public class TOD_Sky.ReflectionProbeState // TypeDefIndex: 8127
 
 }
 
-public class TOD_Time : MonoBehaviour // TypeDefIndex: 8128
+public class TOD_Time : MonoBehaviour // TypeDefIndex: 8130
 {
-	[TooltipAttribute] 
-	[TOD_MinAttribute] 
-	public float DayLengthInMinutes; 
-	[TooltipAttribute] 
-	public bool ProgressTime; 
-	[TooltipAttribute] 
-	public bool UseDeviceDate; 
-	[TooltipAttribute] 
-	public bool UseDeviceTime; 
-	[TooltipAttribute] 
-	public bool UseTimeCurve; 
-	[TooltipAttribute] 
-	public AnimationCurve TimeCurve; 
-	[CompilerGeneratedAttribute] 
-	private Action OnSecond; 
-	[CompilerGeneratedAttribute] 
-	private Action OnMinute; 
-	[CompilerGeneratedAttribute] 
-	private Action OnHour; 
-	[CompilerGeneratedAttribute] 
-	private Action OnDay; 
-	[CompilerGeneratedAttribute] 
-	private Action OnMonth; 
-	[CompilerGeneratedAttribute] 
-	private Action OnYear; 
-	[CompilerGeneratedAttribute] 
-	private Action OnSunrise; 
-	[CompilerGeneratedAttribute] 
-	private Action OnSunset; 
-	private TOD_Sky sky; 
-	private AnimationCurve timeCurve; 
-	private AnimationCurve timeCurveInverse; 
-	private float timeFraction; 
+	[TooltipAttribute]
+	[TOD_MinAttribute]
+	public float DayLengthInMinutes;
+	[TooltipAttribute]
+	public bool ProgressTime;
+	[TooltipAttribute]
+	public bool UseDeviceDate;
+	[TooltipAttribute]
+	public bool UseDeviceTime;
+	[TooltipAttribute]
+	public bool UseTimeCurve;
+	[TooltipAttribute]
+	public AnimationCurve TimeCurve;
+	[CompilerGeneratedAttribute]
+	private Action OnSecond;
+	[CompilerGeneratedAttribute]
+	private Action OnMinute;
+	[CompilerGeneratedAttribute]
+	private Action OnHour;
+	[CompilerGeneratedAttribute]
+	private Action OnDay;
+	[CompilerGeneratedAttribute]
+	private Action OnMonth;
+	[CompilerGeneratedAttribute]
+	private Action OnYear;
+	[CompilerGeneratedAttribute]
+	private Action OnSunrise;
+	[CompilerGeneratedAttribute]
+	private Action OnSunset;
+	private TOD_Sky sky;
+	private AnimationCurve timeCurve;
+	private AnimationCurve timeCurveInverse;
+	private float timeFraction;
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnSecond(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnSecond(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnMinute(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnMinute(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnHour(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnHour(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnDay(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnDay(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnMonth(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnMonth(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnYear(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnYear(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnSunrise(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnSunrise(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnSunset(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnSunset(Action value) { }
 
 	public void RefreshTimeCurve() { }
@@ -2198,7 +2198,7 @@ public class TOD_Time : MonoBehaviour // TypeDefIndex: 8128
 
 }
 
-public static class TOD_Util // TypeDefIndex: 8129
+public static class TOD_Util // TypeDefIndex: 8131
 {
 
 	public static Color MulRGB(Color color, float multiplier) { }
@@ -2228,9 +2228,9 @@ public static class TOD_Util // TypeDefIndex: 8129
 
 }
 
-public abstract class TOD_Audio : MonoBehaviour // TypeDefIndex: 8130
+public abstract class TOD_Audio : MonoBehaviour // TypeDefIndex: 8132
 {
-	private AudioSource audioComponent; 
+	private AudioSource audioComponent;
 
 
 	protected float GetVolume() { }
@@ -2243,11 +2243,11 @@ public abstract class TOD_Audio : MonoBehaviour // TypeDefIndex: 8130
 
 }
 
-public class TOD_AudioAtDay : TOD_Audio // TypeDefIndex: 8131
+public class TOD_AudioAtDay : TOD_Audio // TypeDefIndex: 8133
 {
-	public float fadeTime; 
-	private float lerpTime; 
-	private float maxVolume; 
+	public float fadeTime;
+	private float lerpTime;
+	private float maxVolume;
 
 
 	protected void Start() { }
@@ -2258,11 +2258,11 @@ public class TOD_AudioAtDay : TOD_Audio // TypeDefIndex: 8131
 
 }
 
-public class TOD_AudioAtNight : TOD_Audio // TypeDefIndex: 8132
+public class TOD_AudioAtNight : TOD_Audio // TypeDefIndex: 8134
 {
-	public float fadeTime; 
-	private float lerpTime; 
-	private float maxVolume; 
+	public float fadeTime;
+	private float lerpTime;
+	private float maxVolume;
 
 
 	protected void Start() { }
@@ -2273,9 +2273,9 @@ public class TOD_AudioAtNight : TOD_Audio // TypeDefIndex: 8132
 
 }
 
-public class TOD_AudioAtTime : TOD_Audio // TypeDefIndex: 8133
+public class TOD_AudioAtTime : TOD_Audio // TypeDefIndex: 8135
 {
-	public AnimationCurve Volume; 
+	public AnimationCurve Volume;
 
 
 	protected void Update() { }
@@ -2284,9 +2284,9 @@ public class TOD_AudioAtTime : TOD_Audio // TypeDefIndex: 8133
 
 }
 
-public abstract class TOD_Light : MonoBehaviour // TypeDefIndex: 8134
+public abstract class TOD_Light : MonoBehaviour // TypeDefIndex: 8136
 {
-	private Light lightComponent; 
+	private Light lightComponent;
 
 
 	protected float GetIntensity() { }
@@ -2299,11 +2299,11 @@ public abstract class TOD_Light : MonoBehaviour // TypeDefIndex: 8134
 
 }
 
-public class TOD_LightAtDay : TOD_Light // TypeDefIndex: 8135
+public class TOD_LightAtDay : TOD_Light // TypeDefIndex: 8137
 {
-	public float fadeTime; 
-	private float lerpTime; 
-	private float maxIntensity; 
+	public float fadeTime;
+	private float lerpTime;
+	private float maxIntensity;
 
 
 	protected void Start() { }
@@ -2314,11 +2314,11 @@ public class TOD_LightAtDay : TOD_Light // TypeDefIndex: 8135
 
 }
 
-public class TOD_LightAtNight : TOD_Light // TypeDefIndex: 8136
+public class TOD_LightAtNight : TOD_Light // TypeDefIndex: 8138
 {
-	public float fadeTime; 
-	private float lerpTime; 
-	private float maxIntensity; 
+	public float fadeTime;
+	private float lerpTime;
+	private float maxIntensity;
 
 
 	protected void Start() { }
@@ -2329,9 +2329,9 @@ public class TOD_LightAtNight : TOD_Light // TypeDefIndex: 8136
 
 }
 
-public class TOD_LightAtTime : TOD_Light // TypeDefIndex: 8137
+public class TOD_LightAtTime : TOD_Light // TypeDefIndex: 8139
 {
-	public AnimationCurve Intensity; 
+	public AnimationCurve Intensity;
 
 
 	protected void Update() { }
@@ -2340,10 +2340,10 @@ public class TOD_LightAtTime : TOD_Light // TypeDefIndex: 8137
 
 }
 
-public class TOD_LoadSkyFromFile : MonoBehaviour // TypeDefIndex: 8138
+public class TOD_LoadSkyFromFile : MonoBehaviour // TypeDefIndex: 8140
 {
-	public TOD_Sky sky; 
-	public TextAsset textAsset; 
+	public TOD_Sky sky;
+	public TextAsset textAsset;
 
 
 	protected void Start() { }
@@ -2352,9 +2352,9 @@ public class TOD_LoadSkyFromFile : MonoBehaviour // TypeDefIndex: 8138
 
 }
 
-public abstract class TOD_Particle : MonoBehaviour // TypeDefIndex: 8139
+public abstract class TOD_Particle : MonoBehaviour // TypeDefIndex: 8141
 {
-	private ParticleSystem particleComponent; 
+	private ParticleSystem particleComponent;
 
 
 	protected float GetEmission() { }
@@ -2367,11 +2367,11 @@ public abstract class TOD_Particle : MonoBehaviour // TypeDefIndex: 8139
 
 }
 
-public class TOD_ParticleAtDay : TOD_Particle // TypeDefIndex: 8140
+public class TOD_ParticleAtDay : TOD_Particle // TypeDefIndex: 8142
 {
-	public float fadeTime; 
-	private float lerpTime; 
-	private float maxEmission; 
+	public float fadeTime;
+	private float lerpTime;
+	private float maxEmission;
 
 
 	protected void Start() { }
@@ -2382,11 +2382,11 @@ public class TOD_ParticleAtDay : TOD_Particle // TypeDefIndex: 8140
 
 }
 
-public class TOD_ParticleAtNight : TOD_Particle // TypeDefIndex: 8141
+public class TOD_ParticleAtNight : TOD_Particle // TypeDefIndex: 8143
 {
-	public float fadeTime; 
-	private float lerpTime; 
-	private float maxEmission; 
+	public float fadeTime;
+	private float lerpTime;
+	private float maxEmission;
 
 
 	protected void Start() { }
@@ -2397,9 +2397,9 @@ public class TOD_ParticleAtNight : TOD_Particle // TypeDefIndex: 8141
 
 }
 
-public class TOD_ParticleAtTime : TOD_Particle // TypeDefIndex: 8142
+public class TOD_ParticleAtTime : TOD_Particle // TypeDefIndex: 8144
 {
-	public AnimationCurve Emission; 
+	public AnimationCurve Emission;
 
 
 	protected void Update() { }
@@ -2408,9 +2408,9 @@ public class TOD_ParticleAtTime : TOD_Particle // TypeDefIndex: 8142
 
 }
 
-public abstract class TOD_Render : MonoBehaviour // TypeDefIndex: 8143
+public abstract class TOD_Render : MonoBehaviour // TypeDefIndex: 8145
 {
-	private Renderer rendererComponent; 
+	private Renderer rendererComponent;
 
 
 	protected void SetState(bool value) { }
@@ -2421,7 +2421,7 @@ public abstract class TOD_Render : MonoBehaviour // TypeDefIndex: 8143
 
 }
 
-public class TOD_RenderAtDay : TOD_Render // TypeDefIndex: 8144
+public class TOD_RenderAtDay : TOD_Render // TypeDefIndex: 8146
 {
 
 	protected void Start() { }
@@ -2432,7 +2432,7 @@ public class TOD_RenderAtDay : TOD_Render // TypeDefIndex: 8144
 
 }
 
-public class TOD_RenderAtNight : TOD_Render // TypeDefIndex: 8145
+public class TOD_RenderAtNight : TOD_Render // TypeDefIndex: 8147
 {
 
 	protected void Start() { }
@@ -2443,23 +2443,23 @@ public class TOD_RenderAtNight : TOD_Render // TypeDefIndex: 8145
 
 }
 
-public class TOD_WeatherManager : MonoBehaviour // TypeDefIndex: 8146
+public class TOD_WeatherManager : MonoBehaviour // TypeDefIndex: 8148
 {
-	public ParticleSystem RainParticleSystem; 
-	public float FadeTime; 
-	public TOD_WeatherManager.RainType Rain; 
-	public TOD_WeatherManager.CloudType Clouds; 
-	public TOD_WeatherManager.AtmosphereType Atmosphere; 
-	private float cloudOpacityMax; 
-	private float cloudBrightnessMax; 
-	private float atmosphereBrightnessMax; 
-	private float rainEmissionMax; 
-	private float cloudOpacity; 
-	private float cloudCoverage; 
-	private float cloudBrightness; 
-	private float atmosphereFog; 
-	private float atmosphereBrightness; 
-	private float rainEmission; 
+	public ParticleSystem RainParticleSystem;
+	public float FadeTime;
+	public TOD_WeatherManager.RainType Rain;
+	public TOD_WeatherManager.CloudType Clouds;
+	public TOD_WeatherManager.AtmosphereType Atmosphere;
+	private float cloudOpacityMax;
+	private float cloudBrightnessMax;
+	private float atmosphereBrightnessMax;
+	private float rainEmissionMax;
+	private float cloudOpacity;
+	private float cloudCoverage;
+	private float cloudBrightness;
+	private float atmosphereFog;
+	private float atmosphereBrightness;
+	private float rainEmission;
 
 
 	private float GetRainEmission() { }
@@ -2474,18 +2474,18 @@ public class TOD_WeatherManager : MonoBehaviour // TypeDefIndex: 8146
 
 }
 
-public enum TOD_WeatherManager.RainType // TypeDefIndex: 8147
+public enum TOD_WeatherManager.RainType // TypeDefIndex: 8149
 {
-	public int value__; 
+	public int value__;
 	public const TOD_WeatherManager.RainType None = 0;
 	public const TOD_WeatherManager.RainType Light = 1;
 	public const TOD_WeatherManager.RainType Heavy = 2;
 
 }
 
-public enum TOD_WeatherManager.CloudType // TypeDefIndex: 8148
+public enum TOD_WeatherManager.CloudType // TypeDefIndex: 8150
 {
-	public int value__; 
+	public int value__;
 	public const TOD_WeatherManager.CloudType None = 0;
 	public const TOD_WeatherManager.CloudType Few = 1;
 	public const TOD_WeatherManager.CloudType Scattered = 2;
@@ -2494,9 +2494,9 @@ public enum TOD_WeatherManager.CloudType // TypeDefIndex: 8148
 
 }
 
-public enum TOD_WeatherManager.AtmosphereType // TypeDefIndex: 8149
+public enum TOD_WeatherManager.AtmosphereType // TypeDefIndex: 8151
 {
-	public int value__; 
+	public int value__;
 	public const TOD_WeatherManager.AtmosphereType Clear = 0;
 	public const TOD_WeatherManager.AtmosphereType Storm = 1;
 	public const TOD_WeatherManager.AtmosphereType Dust = 2;

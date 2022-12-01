@@ -1,6 +1,6 @@
 public enum SpeechError // TypeDefIndex: 3606
 {
-	public int value__; 
+	public int value__;
 	public const SpeechError NoError = 0;
 	public const SpeechError TopicLanguageNotSupported = 1;
 	public const SpeechError GrammarLanguageMismatch = 2;

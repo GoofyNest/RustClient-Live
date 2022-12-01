@@ -1,9 +1,9 @@
 internal sealed class SchemaCollectionCompiler : BaseProcessor // TypeDefIndex: 2272
 {
-	private bool compileContentModel; 
-	private XmlSchemaObjectTable examplars; 
-	private Stack complexTypeStack; 
-	private XmlSchema schema; 
+	private bool compileContentModel;
+	private XmlSchemaObjectTable examplars;
+	private Stack complexTypeStack;
+	private XmlSchema schema;
 
 
 	public void .ctor(XmlNameTable nameTable, ValidationEventHandler eventHandler) { }

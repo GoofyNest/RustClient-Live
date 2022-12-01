@@ -1,13 +1,13 @@
 internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 {
-	[CompilerGeneratedAttribute] 
-	private T <Item>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private SortedSet.Node<T> <Left>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private SortedSet.Node<T> <Right>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private NodeColor <Color>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private T <Item>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private SortedSet.Node<T> <Left>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private SortedSet.Node<T> <Right>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private NodeColor <Color>k__BackingField;
 
 	public T Item { get; set; }
 	public SortedSet.Node<T> Left { get; set; }
@@ -44,7 +44,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.IsNullOrBlack
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public T get_Item() { }
 	/* GenericInstMethod :
 	|
@@ -54,7 +54,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_Item
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Item(T value) { }
 	/* GenericInstMethod :
 	|
@@ -65,7 +65,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.set_Item
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public SortedSet.Node<T> get_Left() { }
 	/* GenericInstMethod :
 	|
@@ -75,7 +75,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_Left
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Left(SortedSet.Node<T> value) { }
 	/* GenericInstMethod :
 	|
@@ -85,7 +85,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.set_Left
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public SortedSet.Node<T> get_Right() { }
 	/* GenericInstMethod :
 	|
@@ -95,7 +95,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_Right
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Right(SortedSet.Node<T> value) { }
 	/* GenericInstMethod :
 	|
@@ -105,7 +105,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.set_Right
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public NodeColor get_Color() { }
 	/* GenericInstMethod :
 	|
@@ -115,7 +115,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_Color
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Color(NodeColor value) { }
 	/* GenericInstMethod :
 	|
@@ -257,12 +257,12 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 
 public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator, ISerializable, IDeserializationCallback // TypeDefIndex: 3145
 {
-	private static readonly SortedSet.Node<T> s_dummyNode; 
-	private SortedSet<T> _tree; 
-	private int _version; 
-	private Stack<SortedSet.Node<T>> _stack; 
-	private SortedSet.Node<T> _current; 
-	private bool _reverse; 
+	private static readonly SortedSet.Node<T> s_dummyNode;
+	private SortedSet<T> _tree;
+	private int _version;
+	private Stack<SortedSet.Node<T>> _stack;
+	private SortedSet.Node<T> _current;
+	private bool _reverse;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -394,9 +394,9 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 
 private sealed class SortedSet.<>c__DisplayClass52_0<T> // TypeDefIndex: 3146
 {
-	public int index; 
-	public int count; 
-	public T[] array; 
+	public int index;
+	public int count;
+	public T[] array;
 
 
 	public void .ctor() { }
@@ -421,7 +421,7 @@ private sealed class SortedSet.<>c__DisplayClass52_0<T> // TypeDefIndex: 3146
 
 private sealed class SortedSet.<>c__DisplayClass53_0<T> // TypeDefIndex: 3147
 {
-	public int index; 
+	public int index;
 
 
 	public void .ctor() { }
@@ -436,7 +436,7 @@ private sealed class SortedSet.<>c__DisplayClass53_0<T> // TypeDefIndex: 3147
 
 private sealed class SortedSet.<>c__DisplayClass53_1<T> // TypeDefIndex: 3148
 {
-	public object[] objects; 
+	public object[] objects;
 	public SortedSet.<>c
 
 

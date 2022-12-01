@@ -1,10 +1,10 @@
-internal struct SessionInviteAcceptedCallbackInfoInternal : ICallbackInfoInternal, IGettable<SessionInviteAcceptedCallbackInfo>, ISettable<SessionInviteAcceptedCallbackInfo>, IDisposable // TypeDefIndex: 8563
+internal struct SessionInviteAcceptedCallbackInfoInternal : ICallbackInfoInternal, IGettable<SessionInviteAcceptedCallbackInfo>, ISettable<SessionInviteAcceptedCallbackInfo>, IDisposable // TypeDefIndex: 8565
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_SessionId; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
-	private IntPtr m_InviteId; 
+	private IntPtr m_ClientData;
+	private IntPtr m_SessionId;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
+	private IntPtr m_InviteId;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

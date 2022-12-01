@@ -1,7 +1,7 @@
-internal struct OnQueryLeaderboardRanksCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnQueryLeaderboardRanksCompleteCallbackInfo>, ISettable<OnQueryLeaderboardRanksCompleteCallbackInfo>, IDisposable // TypeDefIndex: 9309
+internal struct OnQueryLeaderboardRanksCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnQueryLeaderboardRanksCompleteCallbackInfo>, ISettable<OnQueryLeaderboardRanksCompleteCallbackInfo>, IDisposable // TypeDefIndex: 9311
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

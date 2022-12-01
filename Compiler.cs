@@ -1,18 +1,18 @@
 internal sealed class Compiler : BaseProcessor // TypeDefIndex: 2285
 {
-	private string restrictionErrorMsg; 
-	private XmlSchemaObjectTable attributes; 
-	private XmlSchemaObjectTable attributeGroups; 
-	private XmlSchemaObjectTable elements; 
-	private XmlSchemaObjectTable schemaTypes; 
-	private XmlSchemaObjectTable groups; 
-	private XmlSchemaObjectTable notations; 
-	private XmlSchemaObjectTable examplars; 
-	private XmlSchemaObjectTable identityConstraints; 
-	private Stack complexTypeStack; 
-	private Hashtable schemasToCompile; 
-	private Hashtable importedSchemas; 
-	private XmlSchema schemaForSchema; 
+	private string restrictionErrorMsg;
+	private XmlSchemaObjectTable attributes;
+	private XmlSchemaObjectTable attributeGroups;
+	private XmlSchemaObjectTable elements;
+	private XmlSchemaObjectTable schemaTypes;
+	private XmlSchemaObjectTable groups;
+	private XmlSchemaObjectTable notations;
+	private XmlSchemaObjectTable examplars;
+	private XmlSchemaObjectTable identityConstraints;
+	private Stack complexTypeStack;
+	private Hashtable schemasToCompile;
+	private Hashtable importedSchemas;
+	private XmlSchema schemaForSchema;
 
 
 	public void .ctor(XmlNameTable nameTable, ValidationEventHandler eventHandler, XmlSchema schemaForSchema, XmlSchemaCompilationSettings compilationSettings) { }

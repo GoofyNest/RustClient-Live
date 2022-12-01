@@ -1,7 +1,7 @@
 public static class IJobParallelForTransformExtensions // TypeDefIndex: 3589
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static JobHandle Schedule<T>(T jobData, TransformAccessArray transforms, JobHandle dependsOn) { }
 	/* GenericInstMethod :
 	|
@@ -14,7 +14,7 @@ public static class IJobParallelForTransformExtensions // TypeDefIndex: 3589
 
 internal struct IJobParallelForTransformExtensions.TransformParallelForLoopStruct<T> // TypeDefIndex: 3590
 {
-	public static IntPtr jobReflectionData; 
+	public static IntPtr jobReflectionData;
 
 
 	public static IntPtr Initialize() { }

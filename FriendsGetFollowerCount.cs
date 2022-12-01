@@ -1,9 +1,9 @@
 internal struct FriendsGetFollowerCount_t : ICallbackData // TypeDefIndex: 5327
 {
-	internal Result Result; 
-	internal ulong SteamID; 
-	internal int Count; 
-	public static int _datasize; 
+	internal Result Result;
+	internal ulong SteamID;
+	internal int Count;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

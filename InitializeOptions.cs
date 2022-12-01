@@ -1,19 +1,19 @@
-public struct InitializeOptions // TypeDefIndex: 9870
+public struct InitializeOptions // TypeDefIndex: 9872
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <AllocateMemoryFunction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ReallocateMemoryFunction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ReleaseMemoryFunction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <SystemInitializeOptions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<InitializeThreadAffinity> <OverrideThreadAffinity>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <AllocateMemoryFunction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <ReallocateMemoryFunction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <ReleaseMemoryFunction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <SystemInitializeOptions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<InitializeThreadAffinity> <OverrideThreadAffinity>k__BackingField;
 
 	public IntPtr AllocateMemoryFunction { get; set; }
 	public IntPtr ReallocateMemoryFunction { get; set; }
@@ -24,46 +24,46 @@ public struct InitializeOptions // TypeDefIndex: 9870
 	public Nullable<InitializeThreadAffinity> OverrideThreadAffinity { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_AllocateMemoryFunction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllocateMemoryFunction(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ReallocateMemoryFunction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReallocateMemoryFunction(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ReleaseMemoryFunction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReleaseMemoryFunction(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductVersion(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_SystemInitializeOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SystemInitializeOptions(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<InitializeThreadAffinity> get_OverrideThreadAffinity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverrideThreadAffinity(Nullable<InitializeThreadAffinity> value) { }
 
 }

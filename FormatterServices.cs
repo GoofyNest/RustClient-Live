@@ -1,10 +1,10 @@
 public static class FormatterServices // TypeDefIndex: 1026
 {
-	internal static ConcurrentDictionary<MemberHolder, MemberInfo[]> m_MemberInfoTable; 
-	private static bool unsafeTypeForwardersIsEnabled; 
-	private static bool unsafeTypeForwardersIsEnabledInitialized; 
-	private static readonly Type[] advancedTypes; 
-	private static Binder s_binder; 
+	internal static ConcurrentDictionary<MemberHolder, MemberInfo[]> m_MemberInfoTable;
+	private static bool unsafeTypeForwardersIsEnabled;
+	private static bool unsafeTypeForwardersIsEnabledInitialized;
+	private static readonly Type[] advancedTypes;
+	private static Binder s_binder;
 
 
 	private static void .cctor() { }
@@ -51,7 +51,7 @@ public static class FormatterServices // TypeDefIndex: 1026
 
 private sealed class FormatterServices.<>c__DisplayClass9_0 // TypeDefIndex: 1027
 {
-	public Type type; 
+	public Type type;
 
 
 	public void .ctor() { }

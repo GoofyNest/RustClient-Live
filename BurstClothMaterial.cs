@@ -1,30 +1,30 @@
-public class BurstClothMaterial : ScriptableObject // TypeDefIndex: 7324
+public class BurstClothMaterial : ScriptableObject // TypeDefIndex: 7326
 {
-	[SerializeField] 
-	[RangeAttribute] 
-	private float _damping; 
-	[SerializeField] 
-	[BurstClothCurveRectAttribute] 
-	private AnimationCurve _dampingCurve; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float _stiffness; 
-	[SerializeField] 
-	[BurstClothCurveRectAttribute] 
-	private AnimationCurve _stiffnessCurve; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float _resistance; 
-	[SerializeField] 
-	[BurstClothCurveRectAttribute] 
-	private AnimationCurve _resistanceCurve; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float _slackness; 
-	[SerializeField] 
-	[BurstClothCurveRectAttribute] 
-	private AnimationCurve _slacknessCurve; 
-	private static BurstClothMaterial _defaultMaterial; 
+	[SerializeField]
+	[RangeAttribute]
+	private float _damping;
+	[SerializeField]
+	[BurstClothCurveRectAttribute]
+	private AnimationCurve _dampingCurve;
+	[SerializeField]
+	[RangeAttribute]
+	private float _stiffness;
+	[SerializeField]
+	[BurstClothCurveRectAttribute]
+	private AnimationCurve _stiffnessCurve;
+	[SerializeField]
+	[RangeAttribute]
+	private float _resistance;
+	[SerializeField]
+	[BurstClothCurveRectAttribute]
+	private AnimationCurve _resistanceCurve;
+	[SerializeField]
+	[RangeAttribute]
+	private float _slackness;
+	[SerializeField]
+	[BurstClothCurveRectAttribute]
+	private AnimationCurve _slacknessCurve;
+	private static BurstClothMaterial _defaultMaterial;
 
 	public float Damping { get; set; }
 	public AnimationCurve DampingCurve { get; }

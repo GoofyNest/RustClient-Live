@@ -1,10 +1,10 @@
-public class LootPanelContainer : MonoBehaviour // TypeDefIndex: 12793
+public class LootPanelContainer : MonoBehaviour // TypeDefIndex: 12807
 {
-	public static string containerName; 
-	public GameObject NoLootPanel; 
-	internal bool wasShowingPanel; 
-	internal GameObject currentLootPanel; 
-	private string _lastLootPanel; 
+	public static string containerName;
+	public GameObject NoLootPanel;
+	internal bool wasShowingPanel;
+	internal GameObject currentLootPanel;
+	private string _lastLootPanel;
 
 	private bool shouldShowPanel { get; }
 

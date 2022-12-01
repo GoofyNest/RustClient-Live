@@ -1,15 +1,15 @@
 public class Stack : ICollection, IEnumerable, ICloneable // TypeDefIndex: 1423
 {
 
-[ComVisibleAttribute] 
-[DebuggerTypeProxyAttribute] 
-[DebuggerDisplayAttribute] 
+[ComVisibleAttribute]
+[DebuggerTypeProxyAttribute]
+[DebuggerDisplayAttribute]
 [Serializable]
 public class Stack : ICollection, IEnumerable, ICloneable
-	private object[] _array; 
-	private int _size; 
-	private int _version; 
-	private object _syncRoot; 
+	private object[] _array;
+	private int _size;
+	private int _version;
+	private object _syncRoot;
 
 	public virtual int Count { get; }
 	public virtual object SyncRoot { get; }
@@ -41,10 +41,10 @@ public class Stack : ICollection, IEnumerable, ICloneable
 
 private class Stack.StackEnumerator : IEnumerator, ICloneable // TypeDefIndex: 1424
 {
-	private Stack _stack; 
-	private int _index; 
-	private int _version; 
-	private object currentElement; 
+	private Stack _stack;
+	private int _index;
+	private int _version;
+	private object currentElement;
 
 	public virtual object Current { get; }
 
@@ -63,10 +63,10 @@ private class Stack.StackEnumerator : IEnumerator, ICloneable // TypeDefIndex: 1
 
 public struct Stack.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 3153
 {
-	private readonly Stack<T> _stack; 
-	private readonly int _version; 
-	private int _index; 
-	private T _currentElement; 
+	private readonly Stack<T> _stack;
+	private readonly int _version;
+	private int _index;
+	private T _currentElement;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

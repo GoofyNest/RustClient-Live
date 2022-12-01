@@ -1,9 +1,9 @@
 internal class PropagationPaths // TypeDefIndex: 4705
 {
-	private static readonly ObjectPool<PropagationPaths> s_Pool; 
-	public readonly List<VisualElement> trickleDownPath; 
-	public readonly List<VisualElement> targetElements; 
-	public readonly List<VisualElement> bubbleUpPath; 
+	private static readonly ObjectPool<PropagationPaths> s_Pool;
+	public readonly List<VisualElement> trickleDownPath;
+	public readonly List<VisualElement> targetElements;
+	public readonly List<VisualElement> bubbleUpPath;
 
 
 	public void .ctor() { }
@@ -20,7 +20,7 @@ internal class PropagationPaths // TypeDefIndex: 4705
 
 public enum PropagationPaths.Type // TypeDefIndex: 4706
 {
-	public int value__; 
+	public int value__;
 	public const PropagationPaths.Type None = 0;
 	public const PropagationPaths.Type TrickleDown = 1;
 	public const PropagationPaths.Type BubbleUp = 2;

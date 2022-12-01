@@ -1,7 +1,7 @@
 public class DiagnosticsConfigurationHandler : IConfigurationSectionHandler // TypeDefIndex: 3185
 {
 
-[ObsoleteAttribute] 
+[ObsoleteAttribute]
 public class DiagnosticsConfigurationHandler : IConfigurationSectionHandler
 
 	public void .ctor() { }

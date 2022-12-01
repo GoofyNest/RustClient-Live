@@ -1,24 +1,24 @@
-public struct LeaderboardUserScore // TypeDefIndex: 9299
+public struct LeaderboardUserScore // TypeDefIndex: 9301
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <UserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Score>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <UserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Score>k__BackingField;
 
 	public ProductUserId UserId { get; set; }
 	public int Score { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Score() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Score(int value) { }
 
 	internal void Set(ref LeaderboardUserScoreInternal other) { }

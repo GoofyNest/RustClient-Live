@@ -1,6 +1,6 @@
 public enum StatementType // TypeDefIndex: 4315
 {
-	public int value__; 
+	public int value__;
 	public const StatementType Select = 0;
 	public const StatementType Insert = 1;
 	public const StatementType Update = 2;

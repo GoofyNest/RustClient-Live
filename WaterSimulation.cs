@@ -1,29 +1,29 @@
-public class WaterSimulation // TypeDefIndex: 12373
+public class WaterSimulation // TypeDefIndex: 12381
 {
 	private const int MaxSolverResolution = 512;
-	private WaterSystem water; 
-	private Camera camera; 
-	private int solverResolution; 
-	private float solverSizeInWorld; 
-	private float gravity; 
-	private float amplitude; 
-	private int solverButterflyCount; 
-	private Vector2 windDirection; 
-	private float windMagnitude; 
-	private RenderTexture displacementMap; 
-	private Vector4 displacementMapTexelSize; 
-	private RenderTexture normalFoldMap; 
-	private Material computeNormalFoldMat; 
-	private Material simulationMat; 
-	private Texture2D hTilde0Map; 
-	private Texture2D dispersionMap; 
-	private Texture2D butterflyMap; 
-	private RenderTexture hTilde_hMap; 
-	private RenderTexture hTilde_dxdzMap; 
-	private CommandBufferManager commandBufferManager; 
-	private CommandBufferDesc commandBufferDesc; 
-	private bool playing; 
-	private bool initialized; 
+	private WaterSystem water;
+	private Camera camera;
+	private int solverResolution;
+	private float solverSizeInWorld;
+	private float gravity;
+	private float amplitude;
+	private int solverButterflyCount;
+	private Vector2 windDirection;
+	private float windMagnitude;
+	private RenderTexture displacementMap;
+	private Vector4 displacementMapTexelSize;
+	private RenderTexture normalFoldMap;
+	private Material computeNormalFoldMat;
+	private Material simulationMat;
+	private Texture2D hTilde0Map;
+	private Texture2D dispersionMap;
+	private Texture2D butterflyMap;
+	private RenderTexture hTilde_hMap;
+	private RenderTexture hTilde_dxdzMap;
+	private CommandBufferManager commandBufferManager;
+	private CommandBufferDesc commandBufferDesc;
+	private bool playing;
+	private bool initialized;
 
 	public Texture DisplacementMap { get; }
 	public Vector4 DisplacementMapTexelSize { get; }
@@ -115,12 +115,12 @@ public class WaterSimulation // TypeDefIndex: 12373
 
 }
 
-public struct WaterSimulation.Butterfly // TypeDefIndex: 12374
+public struct WaterSimulation.Butterfly // TypeDefIndex: 12382
 {
-	public int i; 
-	public int j; 
-	public float wr; 
-	public float wi; 
+	public int i;
+	public int j;
+	public float wr;
+	public float wi;
 
 }
 

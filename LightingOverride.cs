@@ -1,17 +1,17 @@
-public class LightingOverride : MonoBehaviour // TypeDefIndex: 6644
+public class LightingOverride : MonoBehaviour // TypeDefIndex: 6646
 {
-	public bool overrideAmbientLight; 
-	public AmbientMode ambientMode; 
-	public Color ambientGroundColor; 
-	public Color ambientEquatorColor; 
-	public Color ambientLight; 
-	public float ambientIntensity; 
-	internal Color old_ambientLight; 
-	internal Color old_ambientGroundColor; 
-	internal Color old_ambientEquatorColor; 
-	internal float old_ambientIntensity; 
-	internal AmbientMode old_ambientMode; 
-	public float aspect; 
+	public bool overrideAmbientLight;
+	public AmbientMode ambientMode;
+	public Color ambientGroundColor;
+	public Color ambientEquatorColor;
+	public Color ambientLight;
+	public float ambientIntensity;
+	internal Color old_ambientLight;
+	internal Color old_ambientGroundColor;
+	internal Color old_ambientEquatorColor;
+	internal float old_ambientIntensity;
+	internal AmbientMode old_ambientMode;
+	public float aspect;
 
 
 	private void OnPreRender() { }

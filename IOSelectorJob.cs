@@ -1,8 +1,8 @@
 internal class IOSelectorJob : IThreadPoolWorkItem // TypeDefIndex: 2595
 {
-	private IOOperation operation; 
-	private IOAsyncCallback callback; 
-	private IOAsyncResult state; 
+	private IOOperation operation;
+	private IOAsyncCallback callback;
+	private IOAsyncResult state;
 
 
 	public void .ctor(IOOperation operation, IOAsyncCallback callback, IOAsyncResult state) { }

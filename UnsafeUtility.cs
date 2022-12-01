@@ -7,24 +7,24 @@ public static class UnsafeUtility // TypeDefIndex: 3340
 	|-UnsafeUtility.IsBlittable<FoliageGridMeshData.FoliageVertex>
 	*/
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void* Malloc(long size, int alignment, Allocator allocator) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void Free(void* memory, Allocator allocator) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void MemCpy(void* destination, void* source, long size) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void MemSet(void* destination, byte value, long size) { }
 
 	public static void MemClear(void* destination, long size) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static int SizeOf(Type type) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static bool IsBlittable(Type type) { }
 
 	private static bool IsBlittableValueType(Type t) { }
@@ -244,8 +244,8 @@ public static class UnsafeUtility // TypeDefIndex: 3340
 
 private struct UnsafeUtility.AlignOfHelper<T> // TypeDefIndex: 3341
 {
-	public byte dummy; 
-	public T data; 
+	public byte dummy;
+	public T data;
 
 }
 

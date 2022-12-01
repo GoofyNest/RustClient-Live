@@ -1,6 +1,6 @@
 internal sealed class SqlDateTimeStorage : DataStorage // TypeDefIndex: 4421
 {
-	private SqlDateTime[] _values; 
+	private SqlDateTime[] _values;
 
 
 	public void .ctor(DataColumn column) { }

@@ -1,8 +1,8 @@
-internal struct UserTokenInternal : IGettable<UserToken>, ISettable<UserToken>, IDisposable // TypeDefIndex: 8758
+internal struct UserTokenInternal : IGettable<UserToken>, ISettable<UserToken>, IDisposable // TypeDefIndex: 8760
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ProductUserId; 
-	private IntPtr m_Token; 
+	private int m_ApiVersion;
+	private IntPtr m_ProductUserId;
+	private IntPtr m_Token;
 
 	public ProductUserId ProductUserId { get; set; }
 	public Utf8String Token { get; set; }

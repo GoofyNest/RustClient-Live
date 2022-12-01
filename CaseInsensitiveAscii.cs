@@ -1,7 +1,7 @@
 internal class CaseInsensitiveAscii : IEqualityComparer, IComparer // TypeDefIndex: 2904
 {
-	internal static readonly CaseInsensitiveAscii StaticInstance; 
-	internal static readonly byte[] AsciiToLower; 
+	internal static readonly CaseInsensitiveAscii StaticInstance;
+	internal static readonly byte[] AsciiToLower;
 
 
 	public int GetHashCode(object myObject) { }

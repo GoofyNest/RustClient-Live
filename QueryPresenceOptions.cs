@@ -1,24 +1,24 @@
-public struct QueryPresenceOptions // TypeDefIndex: 8859
+public struct QueryPresenceOptions // TypeDefIndex: 8861
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <TargetUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <TargetUserId>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public EpicAccountId TargetUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(EpicAccountId value) { }
 
 }

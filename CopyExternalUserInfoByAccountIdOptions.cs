@@ -1,33 +1,33 @@
-public struct CopyExternalUserInfoByAccountIdOptions // TypeDefIndex: 8297
+public struct CopyExternalUserInfoByAccountIdOptions // TypeDefIndex: 8299
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AccountId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <AccountId>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public EpicAccountId TargetUserId { get; set; }
 	public Utf8String AccountId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(Utf8String value) { }
 
 }

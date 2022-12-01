@@ -1,7 +1,7 @@
 public class TypeConverter // TypeDefIndex: 2751
 {
 	private const string s_UseCompatibleTypeConverterBehavior = "UseCompatibleTypeConverterBehavior";
-	private static bool useCompatibleTypeConversion; 
+	private static bool useCompatibleTypeConversion;
 
 	private static bool UseCompatibleTypeConversion { get; }
 
@@ -92,8 +92,8 @@ public class TypeConverter // TypeDefIndex: 2751
 
 public class TypeConverter.StandardValuesCollection : ICollection, IEnumerable // TypeDefIndex: 2753
 {
-	private ICollection values; 
-	private Array valueArray; 
+	private ICollection values;
+	private Array valueArray;
 
 	public int Count { get; }
 	private int System.Collections.ICollection.Count { get; }

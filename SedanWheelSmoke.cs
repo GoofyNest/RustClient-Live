@@ -1,13 +1,13 @@
-public class SedanWheelSmoke : MonoBehaviour // TypeDefIndex: 10011
+public class SedanWheelSmoke : MonoBehaviour // TypeDefIndex: 10013
 {
-	public ParticleSystem[] tireSmoke; 
-	public ParticleSystem[] tireWaterSplash; 
-	public ParticleSystem[] tireWaterSplash_Extra; 
-	public bool[] wheelTouching; 
-	private ParticleSystem[] activeTireEffect; 
-	private Vector3 vecLastPosition; 
-	private float forwardSpeed; 
-	private float updateTime; 
+	public ParticleSystem[] tireSmoke;
+	public ParticleSystem[] tireWaterSplash;
+	public ParticleSystem[] tireWaterSplash_Extra;
+	public bool[] wheelTouching;
+	private ParticleSystem[] activeTireEffect;
+	private Vector3 vecLastPosition;
+	private float forwardSpeed;
+	private float updateTime;
 
 
 	public void InitWheelSmoke() { }

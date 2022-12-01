@@ -1,11 +1,11 @@
-public struct ViewModelDrawEvent : IEquatable<ViewModelDrawEvent> // TypeDefIndex: 13240
+public struct ViewModelDrawEvent : IEquatable<ViewModelDrawEvent> // TypeDefIndex: 13255
 {
-	public ViewModelRenderer viewModelRenderer; 
-	public Renderer renderer; 
-	public bool skipDepthPrePass; 
-	public Material material; 
-	public int subMesh; 
-	public int pass; 
+	public ViewModelRenderer viewModelRenderer;
+	public Renderer renderer;
+	public bool skipDepthPrePass;
+	public Material material;
+	public int subMesh;
+	public int pass;
 
 
 	public bool Equals(ViewModelDrawEvent other) { }

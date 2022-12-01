@@ -1,8 +1,8 @@
-public static class TextureFormatUtilities // TypeDefIndex: 13661
+public static class TextureFormatUtilities // TypeDefIndex: 13677
 {
-	private static Dictionary<int, RenderTextureFormat> s_FormatAliasMap; 
-	private static Dictionary<int, bool> s_SupportedRenderTextureFormats; 
-	private static Dictionary<int, bool> s_SupportedTextureFormats; 
+	private static Dictionary<int, RenderTextureFormat> s_FormatAliasMap;
+	private static Dictionary<int, bool> s_SupportedRenderTextureFormats;
+	private static Dictionary<int, bool> s_SupportedTextureFormats;
 
 
 	private static void .cctor() { }
@@ -11,10 +11,10 @@ public static class TextureFormatUtilities // TypeDefIndex: 13661
 
 	public static RenderTextureFormat GetUncompressedRenderTextureFormat(Texture texture) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static bool IsSupported(RenderTextureFormat format) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static bool IsSupported(TextureFormat format) { }
 
 }

@@ -1,19 +1,19 @@
-public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // TypeDefIndex: 8234
+public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // TypeDefIndex: 8236
 {
-	public VignetteAndChromaticAberration.AberrationMode mode; 
-	public float intensity; 
-	public float chromaticAberration; 
-	public float axialAberration; 
-	public float blur; 
-	public float blurSpread; 
-	public float luminanceDependency; 
-	public float blurDistance; 
-	public Shader vignetteShader; 
-	public Shader separableBlurShader; 
-	public Shader chromAberrationShader; 
-	private Material m_VignetteMaterial; 
-	private Material m_SeparableBlurMaterial; 
-	private Material m_ChromAberrationMaterial; 
+	public VignetteAndChromaticAberration.AberrationMode mode;
+	public float intensity;
+	public float chromaticAberration;
+	public float axialAberration;
+	public float blur;
+	public float blurSpread;
+	public float luminanceDependency;
+	public float blurDistance;
+	public Shader vignetteShader;
+	public Shader separableBlurShader;
+	public Shader chromAberrationShader;
+	private Material m_VignetteMaterial;
+	private Material m_SeparableBlurMaterial;
+	private Material m_ChromAberrationMaterial;
 
 
 	public override bool CheckResources() { }
@@ -26,9 +26,9 @@ public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // T
 
 }
 
-public enum VignetteAndChromaticAberration.AberrationMode // TypeDefIndex: 8235
+public enum VignetteAndChromaticAberration.AberrationMode // TypeDefIndex: 8237
 {
-	public int value__; 
+	public int value__;
 	public const VignetteAndChromaticAberration.AberrationMode Simple = 0;
 	public const VignetteAndChromaticAberration.AberrationMode Advanced = 1;
 

@@ -1,12 +1,12 @@
 internal sealed class RegexFCD // TypeDefIndex: 2613
 {
-	private int[] _intStack; 
-	private int _intDepth; 
-	private RegexFC[] _fcStack; 
-	private int _fcDepth; 
-	private bool _skipAllChildren; 
-	private bool _skipchild; 
-	private bool _failed; 
+	private int[] _intStack;
+	private int _intDepth;
+	private RegexFC[] _fcStack;
+	private int _fcDepth;
+	private bool _skipAllChildren;
+	private bool _skipchild;
+	private bool _failed;
 
 
 	internal static RegexPrefix FirstChars(RegexTree t) { }

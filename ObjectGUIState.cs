@@ -1,6 +1,6 @@
 internal class ObjectGUIState : IDisposable // TypeDefIndex: 4062
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 
 	public void .ctor() { }
@@ -13,7 +13,7 @@ internal class ObjectGUIState : IDisposable // TypeDefIndex: 4062
 
 	private static IntPtr Internal_Create() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static void Internal_Destroy(IntPtr ptr) { }
 
 }

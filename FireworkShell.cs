@@ -1,16 +1,16 @@
-public class FireworkShell : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 9986
+public class FireworkShell : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 9988
 {
-	public float fuseLengthMin; 
-	public float fuseLengthMax; 
-	public float speedMin; 
-	public float speedMax; 
-	public ParticleSystem explodePFX; 
-	public SoundPlayer explodeSound; 
-	public float inaccuracyDegrees; 
-	public LightEx explosionLight; 
-	public float lifetime; 
-	private float speed; 
-	protected bool exploded; 
+	public float fuseLengthMin;
+	public float fuseLengthMax;
+	public float speedMin;
+	public float speedMax;
+	public ParticleSystem explodePFX;
+	public SoundPlayer explodeSound;
+	public float inaccuracyDegrees;
+	public LightEx explosionLight;
+	public float lifetime;
+	private float speed;
+	protected bool exploded;
 
 
 	public virtual void Init(MortarFirework firework) { }

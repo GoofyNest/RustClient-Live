@@ -1,6 +1,6 @@
 internal enum StylePropertyID // TypeDefIndex: 4732
 {
-	public int value__; 
+	public int value__;
 	public const StylePropertyID Unknown = -1;
 	public const StylePropertyID MarginLeft = 0;
 	public const StylePropertyID MarginTop = 1;

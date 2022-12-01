@@ -1,16 +1,16 @@
 internal class PKCS12 : ICloneable // TypeDefIndex: 55
 {
-	private byte[] _password; 
-	private ArrayList _keyBags; 
-	private ArrayList _secretBags; 
-	private X509CertificateCollection _certs; 
-	private bool _keyBagsChanged; 
-	private bool _secretBagsChanged; 
-	private bool _certsChanged; 
-	private int _iterations; 
-	private ArrayList _safeBags; 
-	private RandomNumberGenerator _rng; 
-	private static int password_max_length; 
+	private byte[] _password;
+	private ArrayList _keyBags;
+	private ArrayList _secretBags;
+	private X509CertificateCollection _certs;
+	private bool _keyBagsChanged;
+	private bool _secretBagsChanged;
+	private bool _certsChanged;
+	private int _iterations;
+	private ArrayList _safeBags;
+	private RandomNumberGenerator _rng;
+	private static int password_max_length;
 
 	public string Password { set; }
 	public int IterationCount { get; set; }
@@ -84,13 +84,13 @@ internal class PKCS12 : ICloneable // TypeDefIndex: 55
 
 public class PKCS12.DeriveBytes // TypeDefIndex: 56
 {
-	private static byte[] keyDiversifier; 
-	private static byte[] ivDiversifier; 
-	private static byte[] macDiversifier; 
-	private string _hashName; 
-	private int _iterations; 
-	private byte[] _password; 
-	private byte[] _salt; 
+	private static byte[] keyDiversifier;
+	private static byte[] ivDiversifier;
+	private static byte[] macDiversifier;
+	private string _hashName;
+	private int _iterations;
+	private byte[] _password;
+	private byte[] _salt;
 
 	public string HashName { set; }
 	public int IterationCount { set; }
@@ -124,17 +124,17 @@ public class PKCS12.DeriveBytes // TypeDefIndex: 56
 
 public class PKCS12 : ICloneable // TypeDefIndex: 1711
 {
-	private byte[] _password; 
-	private ArrayList _keyBags; 
-	private ArrayList _secretBags; 
-	private X509CertificateCollection _certs; 
-	private bool _keyBagsChanged; 
-	private bool _secretBagsChanged; 
-	private bool _certsChanged; 
-	private int _iterations; 
-	private ArrayList _safeBags; 
-	private RandomNumberGenerator _rng; 
-	private static int password_max_length; 
+	private byte[] _password;
+	private ArrayList _keyBags;
+	private ArrayList _secretBags;
+	private X509CertificateCollection _certs;
+	private bool _keyBagsChanged;
+	private bool _secretBagsChanged;
+	private bool _certsChanged;
+	private int _iterations;
+	private ArrayList _safeBags;
+	private RandomNumberGenerator _rng;
+	private static int password_max_length;
 
 	public string Password { set; }
 	public int IterationCount { get; set; }
@@ -208,13 +208,13 @@ public class PKCS12 : ICloneable // TypeDefIndex: 1711
 
 public class PKCS12.DeriveBytes // TypeDefIndex: 1712
 {
-	private static byte[] keyDiversifier; 
-	private static byte[] ivDiversifier; 
-	private static byte[] macDiversifier; 
-	private string _hashName; 
-	private int _iterations; 
-	private byte[] _password; 
-	private byte[] _salt; 
+	private static byte[] keyDiversifier;
+	private static byte[] ivDiversifier;
+	private static byte[] macDiversifier;
+	private string _hashName;
+	private int _iterations;
+	private byte[] _password;
+	private byte[] _salt;
 
 	public string HashName { set; }
 	public int IterationCount { set; }

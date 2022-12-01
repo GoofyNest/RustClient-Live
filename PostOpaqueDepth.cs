@@ -1,11 +1,11 @@
-public class PostOpaqueDepth : MonoBehaviour // TypeDefIndex: 12439
+public class PostOpaqueDepth : MonoBehaviour // TypeDefIndex: 12447
 {
-	public RenderTexture postOpaqueDepth; 
-	private Camera camera; 
-	private CommandBufferManager commandBufferManager; 
-	private CommandBufferDesc commandBufferDesc; 
-	private Material copyDepthMat; 
-	public RenderTexture cameraDepth; 
+	public RenderTexture postOpaqueDepth;
+	private Camera camera;
+	private CommandBufferManager commandBufferManager;
+	private CommandBufferDesc commandBufferDesc;
+	private Material copyDepthMat;
+	public RenderTexture cameraDepth;
 
 	public RenderTexture PostOpaque { get; }
 	public Material CopyDepthMat { get; }

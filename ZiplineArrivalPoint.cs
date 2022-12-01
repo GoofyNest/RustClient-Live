@@ -1,8 +1,8 @@
-public class ZiplineArrivalPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6445
+public class ZiplineArrivalPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6447
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<VectorData> linePoints; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<VectorData> linePoints;
 
 
 	public static void ResetToPool(ZiplineArrivalPoint instance) { }
@@ -59,10 +59,10 @@ public class ZiplineArrivalPoint : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class ZiplineArrivalPoint : BaseEntity // TypeDefIndex: 10390
+public class ZiplineArrivalPoint : BaseEntity // TypeDefIndex: 10394
 {
-	public LineRenderer Line; 
-	private Vector3[] linePositions; 
+	public LineRenderer Line;
+	private Vector3[] linePositions;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

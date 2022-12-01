@@ -1,6 +1,6 @@
-public enum Status // TypeDefIndex: 8867
+public enum Status // TypeDefIndex: 8869
 {
-	public int value__; 
+	public int value__;
 	public const Status Offline = 0;
 	public const Status Online = 1;
 	public const Status Away = 2;

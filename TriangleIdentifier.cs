@@ -1,8 +1,8 @@
-public class TriangleIdentifier : MonoBehaviour // TypeDefIndex: 11026
+public class TriangleIdentifier : MonoBehaviour // TypeDefIndex: 11032
 {
-	public int TriangleID; 
-	public int SubmeshID; 
-	public float LineLength; 
+	public int TriangleID;
+	public int SubmeshID;
+	public float LineLength;
 
 
 	private void OnDrawGizmosSelected() { }

@@ -1,10 +1,10 @@
-internal class PendingBuffer // TypeDefIndex: 5670
+internal class PendingBuffer // TypeDefIndex: 5672
 {
-	protected byte[] buf; 
-	private int start; 
-	private int end; 
-	private uint bits; 
-	private int bitCount; 
+	protected byte[] buf;
+	private int start;
+	private int end;
+	private uint bits;
+	private int bitCount;
 
 	public int BitCount { get; }
 	public bool IsFlushed { get; }

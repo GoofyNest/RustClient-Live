@@ -1,26 +1,26 @@
-public class RgbEffects : SingletonComponent<RgbEffects> // TypeDefIndex: 12456
+public class RgbEffects : SingletonComponent<RgbEffects> // TypeDefIndex: 12464
 {
-	[ClientVar] 
-	public static bool Enabled; 
-	[ClientVar] 
-	public static Vector3 ColorCorrection_SteelSeries; 
-	[ClientVar] 
-	public static Vector3 ColorCorrection_Razer; 
-	[ClientVar] 
-	public static float Brightness; 
-	public Color defaultColor; 
-	public Color buildingPrivilegeColor; 
-	public Color coldColor; 
-	public Color hotColor; 
-	public Color hurtColor; 
-	public Color healedColor; 
-	public Color irradiatedColor; 
-	public Color comfortedColor; 
-	private RgbController _controller; 
-	private readonly Stopwatch _lastStaticSet; 
-	private Nullable<Color> _lastStatic; 
-	private readonly Stopwatch _lastPulse; 
-	private float _lastPulseDuration; 
+	[ClientVar]
+	public static bool Enabled;
+	[ClientVar]
+	public static Vector3 ColorCorrection_SteelSeries;
+	[ClientVar]
+	public static Vector3 ColorCorrection_Razer;
+	[ClientVar]
+	public static float Brightness;
+	public Color defaultColor;
+	public Color buildingPrivilegeColor;
+	public Color coldColor;
+	public Color hotColor;
+	public Color hurtColor;
+	public Color healedColor;
+	public Color irradiatedColor;
+	public Color comfortedColor;
+	private RgbController _controller;
+	private readonly Stopwatch _lastStaticSet;
+	private Nullable<Color> _lastStatic;
+	private readonly Stopwatch _lastPulse;
+	private float _lastPulseDuration;
 
 
 	public void OnEnable() { }
@@ -51,12 +51,12 @@ public class RgbEffects : SingletonComponent<RgbEffects> // TypeDefIndex: 12456
 
 	private static Nullable<ValueTuple<RgbColor, float>> GetCurrentFlash() { }
 
-	[ClientVar] 
-	[EditorBrowsableAttribute] 
+	[ClientVar]
+	[EditorBrowsableAttribute]
 	public static void ConVar_Static(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
-	[EditorBrowsableAttribute] 
+	[ClientVar]
+	[EditorBrowsableAttribute]
 	public static void ConVar_Pulse(ConsoleSystem.Arg args) { }
 
 	public void .ctor() { }

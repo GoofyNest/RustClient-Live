@@ -1,7 +1,7 @@
-public class sRGB // TypeDefIndex: 13154
+public class sRGB // TypeDefIndex: 13169
 {
-	public static byte[] to_linear; 
-	public static byte[] to_srgb; 
+	public static byte[] to_linear;
+	public static byte[] to_srgb;
 
 
 	private static void .cctor() { }

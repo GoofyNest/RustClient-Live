@@ -1,21 +1,21 @@
 public class LayoutElement : UIBehaviour, ILayoutElement, ILayoutIgnorer // TypeDefIndex: 4982
 {
-	[SerializeField] 
-	private bool m_IgnoreLayout; 
-	[SerializeField] 
-	private float m_MinWidth; 
-	[SerializeField] 
-	private float m_MinHeight; 
-	[SerializeField] 
-	private float m_PreferredWidth; 
-	[SerializeField] 
-	private float m_PreferredHeight; 
-	[SerializeField] 
-	private float m_FlexibleWidth; 
-	[SerializeField] 
-	private float m_FlexibleHeight; 
-	[SerializeField] 
-	private int m_LayoutPriority; 
+	[SerializeField]
+	private bool m_IgnoreLayout;
+	[SerializeField]
+	private float m_MinWidth;
+	[SerializeField]
+	private float m_MinHeight;
+	[SerializeField]
+	private float m_PreferredWidth;
+	[SerializeField]
+	private float m_PreferredHeight;
+	[SerializeField]
+	private float m_FlexibleWidth;
+	[SerializeField]
+	private float m_FlexibleHeight;
+	[SerializeField]
+	private int m_LayoutPriority;
 
 	public virtual bool ignoreLayout { get; set; }
 	public virtual float minWidth { get; set; }

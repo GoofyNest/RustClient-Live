@@ -1,8 +1,8 @@
 public sealed class KeySizes // TypeDefIndex: 943
 {
-	private int m_minSize; 
-	private int m_maxSize; 
-	private int m_skipSize; 
+	private int m_minSize;
+	private int m_maxSize;
+	private int m_skipSize;
 
 	public int MinSize { get; }
 	public int MaxSize { get; }

@@ -1,6 +1,6 @@
-public enum NATType // TypeDefIndex: 8964
+public enum NATType // TypeDefIndex: 8966
 {
-	public int value__; 
+	public int value__;
 	public const NATType Unknown = 0;
 	public const NATType Open = 1;
 	public const NATType Moderate = 2;

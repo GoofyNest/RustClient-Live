@@ -1,8 +1,8 @@
-internal struct GetOfferItemCountOptionsInternal : ISettable<GetOfferItemCountOptions>, IDisposable // TypeDefIndex: 9474
+internal struct GetOfferItemCountOptionsInternal : ISettable<GetOfferItemCountOptions>, IDisposable // TypeDefIndex: 9476
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_OfferId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_OfferId;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String OfferId { set; }

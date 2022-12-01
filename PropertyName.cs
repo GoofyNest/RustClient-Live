@@ -1,6 +1,6 @@
 public struct PropertyName : IEquatable<PropertyName> // TypeDefIndex: 3489
 {
-	internal int id; 
+	internal int id;
 
 
 	public void .ctor(string name) { }

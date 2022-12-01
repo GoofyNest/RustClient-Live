@@ -1,6 +1,6 @@
 internal enum RestrictionFlags // TypeDefIndex: 2176
 {
-	public int value__; 
+	public int value__;
 	public const RestrictionFlags Length = 1;
 	public const RestrictionFlags MinLength = 2;
 	public const RestrictionFlags MaxLength = 4;

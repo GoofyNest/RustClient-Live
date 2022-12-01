@@ -1,10 +1,10 @@
-internal struct LobbyGameCreated_t : ICallbackData // TypeDefIndex: 5347
+internal struct LobbyGameCreated_t : ICallbackData // TypeDefIndex: 5349
 {
-	internal ulong SteamIDLobby; 
-	internal ulong SteamIDGameServer; 
-	internal uint IP; 
-	internal ushort Port; 
-	public static int _datasize; 
+	internal ulong SteamIDLobby;
+	internal ulong SteamIDGameServer;
+	internal uint IP;
+	internal ushort Port;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

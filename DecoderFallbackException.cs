@@ -1,7 +1,7 @@
 public sealed class DecoderFallbackException : ArgumentException // TypeDefIndex: 438
 {
-	private byte[] bytesUnknown; 
-	private int index; 
+	private byte[] bytesUnknown;
+	private int index;
 
 
 	public void .ctor() { }

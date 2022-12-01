@@ -1,12 +1,12 @@
 public sealed class Timer : MarshalByRefObject, IDisposable // TypeDefIndex: 832
 {
-	private static readonly Timer.Scheduler scheduler; 
-	private TimerCallback callback; 
-	private object state; 
-	private long due_time_ms; 
-	private long period_ms; 
-	private long next_run; 
-	private bool disposed; 
+	private static readonly Timer.Scheduler scheduler;
+	private TimerCallback callback;
+	private object state;
+	private long due_time_ms;
+	private long period_ms;
+	private long next_run;
+	private bool disposed;
 	private const long MaxValue = 4294967294;
 
 
@@ -43,9 +43,9 @@ private sealed class Timer.TimerComparer : IComparer // TypeDefIndex: 833
 
 private sealed class Timer.Scheduler // TypeDefIndex: 834
 {
-	private static Timer.Scheduler instance; 
-	private SortedList list; 
-	private ManualResetEvent changed; 
+	private static Timer.Scheduler instance;
+	private SortedList list;
+	private ManualResetEvent changed;
 
 	public static Timer.Scheduler Instance { get; }
 

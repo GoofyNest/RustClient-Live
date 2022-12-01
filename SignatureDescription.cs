@@ -1,9 +1,9 @@
 public class SignatureDescription // TypeDefIndex: 992
 {
-	private string _strKey; 
-	private string _strDigest; 
-	private string _strFormatter; 
-	private string _strDeformatter; 
+	private string _strKey;
+	private string _strDigest;
+	private string _strFormatter;
+	private string _strDeformatter;
 
 	public string KeyAlgorithm { set; }
 	public string DigestAlgorithm { set; }

@@ -1,11 +1,11 @@
 public abstract class Decoder // TypeDefIndex: 433
 {
-	internal DecoderFallback m_fallback; 
-	internal DecoderFallbackBuffer m_fallbackBuffer; 
+	internal DecoderFallback m_fallback;
+	internal DecoderFallbackBuffer m_fallbackBuffer;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public DecoderFallback Fallback { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public DecoderFallbackBuffer FallbackBuffer { get; }
 	internal bool InternalHasFallbackBuffer { get; }
 
@@ -20,48 +20,48 @@ public abstract class Decoder // TypeDefIndex: 433
 
 	internal bool get_InternalHasFallbackBuffer() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual void Reset() { }
 
 	public abstract int GetCharCount(byte[] bytes, int index, int count);
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual int GetCharCount(byte[] bytes, int index, int count, bool flush) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetCharCount(byte* bytes, int count, bool flush) { }
 
 	public abstract int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex);
 
 	public virtual int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, bool flush) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetChars(byte* bytes, int byteCount, char* chars, int charCount, bool flush) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual void Convert(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public virtual void Convert(byte* bytes, int byteCount, char* chars, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed) { }
 
 }
 
-public class Decoder // TypeDefIndex: 7402
+public class Decoder // TypeDefIndex: 7404
 {
-	private static readonly Decoder.Params DecoderDefaultParams; 
-	private Equalizer _Equalizer; 
-	private SynthesisFilter _LeftChannelFilter; 
-	private SynthesisFilter _RightChannelFilter; 
-	private bool _IsInitialized; 
-	private LayerIDecoder _L1Decoder; 
-	private LayerIIDecoder _L2Decoder; 
-	private LayerIIIDecoder _L3Decoder; 
-	private ABuffer _Output; 
-	private int _OutputChannels; 
-	private int _OutputFrequency; 
+	private static readonly Decoder.Params DecoderDefaultParams;
+	private Equalizer _Equalizer;
+	private SynthesisFilter _LeftChannelFilter;
+	private SynthesisFilter _RightChannelFilter;
+	private bool _IsInitialized;
+	private LayerIDecoder _L1Decoder;
+	private LayerIIDecoder _L2Decoder;
+	private LayerIIIDecoder _L3Decoder;
+	private ABuffer _Output;
+	private int _OutputChannels;
+	private int _OutputFrequency;
 
 	internal static Decoder.Params DefaultParams { get; }
 	internal virtual ABuffer OutputBuffer { set; }
@@ -87,10 +87,10 @@ public class Decoder // TypeDefIndex: 7402
 
 }
 
-public class Decoder.Params : ICloneable // TypeDefIndex: 7403
+public class Decoder.Params : ICloneable // TypeDefIndex: 7405
 {
-	private OutputChannels _OutputChannels; 
-	private readonly Equalizer _Equalizer; 
+	private OutputChannels _OutputChannels;
+	private readonly Equalizer _Equalizer;
 
 	internal virtual Equalizer InitialEqualizerSettings { get; }
 
@@ -103,11 +103,11 @@ public class Decoder.Params : ICloneable // TypeDefIndex: 7403
 
 }
 
-public sealed class Decoder : IDisposable // TypeDefIndex: 13356
+public sealed class Decoder : IDisposable // TypeDefIndex: 13371
 {
 	private const string whiteSpace = " \t\n\r";
 	private const string wordBreak = " \t\n\r{}[],:\"";
-	private StringReader json; 
+	private StringReader json;
 
 	private char PeekChar { get; }
 	private char NextChar { get; }
@@ -145,9 +145,9 @@ public sealed class Decoder : IDisposable // TypeDefIndex: 13356
 
 }
 
-private enum Decoder.Token // TypeDefIndex: 13357
+private enum Decoder.Token // TypeDefIndex: 13372
 {
-	public int value__; 
+	public int value__;
 	public const Decoder.Token None = 0;
 	public const Decoder.Token OpenBrace = 1;
 	public const Decoder.Token CloseBrace = 2;

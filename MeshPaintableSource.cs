@@ -1,22 +1,22 @@
-public class MeshPaintableSource : MonoBehaviour, IClientComponent // TypeDefIndex: 10936
+public class MeshPaintableSource : MonoBehaviour, IClientComponent // TypeDefIndex: 10942
 {
-	public Vector4 uvRange; 
-	public int texWidth; 
-	public int texHeight; 
-	public string replacementTextureName; 
-	public float cameraFOV; 
-	public float cameraDistance; 
-	public Texture2D texture; 
-	public GameObject sourceObject; 
-	public Mesh collisionMesh; 
-	public Vector3 localPosition; 
-	public Vector3 localRotation; 
-	public bool applyToAllRenderers; 
-	public Renderer[] extraRenderers; 
-	public bool paint3D; 
-	public bool isSelected; 
-	public Renderer legRenderer; 
-	private static MaterialPropertyBlock block; 
+	public Vector4 uvRange;
+	public int texWidth;
+	public int texHeight;
+	public string replacementTextureName;
+	public float cameraFOV;
+	public float cameraDistance;
+	public Texture2D texture;
+	public GameObject sourceObject;
+	public Mesh collisionMesh;
+	public Vector3 localPosition;
+	public Vector3 localRotation;
+	public bool applyToAllRenderers;
+	public Renderer[] extraRenderers;
+	public bool paint3D;
+	public bool isSelected;
+	public Renderer legRenderer;
+	private static MaterialPropertyBlock block;
 
 
 	public void Init() { }

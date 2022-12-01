@@ -1,37 +1,37 @@
-public static class Benchmarking // TypeDefIndex: 9975
+public static class Benchmarking // TypeDefIndex: 9977
 {
-	[CompilerGeneratedAttribute] 
-	private static bool <IsBenchmarking>k__BackingField; 
-	public static string[] BenchmarkScenes; 
+	[CompilerGeneratedAttribute]
+	private static bool <IsBenchmarking>k__BackingField;
+	public static string[] BenchmarkScenes;
 
 	public static bool IsBenchmarking { get; set; }
 	public static bool IsAutoBenchmark { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_IsBenchmarking() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_IsBenchmarking(bool value) { }
 
 	public static bool get_IsAutoBenchmark() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task RunAsync(string demoName, bool runBenchmarkScenes = True) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task RunSingleSceneAsync(string scene) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private static Task RunBenchmarkScene(string scene) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task RunBenchmarksInScene() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private static Task Report() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private static Task RunDemoBasedBenchmark(string demoName, string benchmarkLabel = "") { }
 
 	private static void RecordBundleSizes() { }
@@ -40,101 +40,101 @@ public static class Benchmarking // TypeDefIndex: 9975
 
 }
 
-private struct Benchmarking.<RunAsync>d__7 : IAsyncStateMachine // TypeDefIndex: 9976
+private struct Benchmarking.<RunAsync>d__7 : IAsyncStateMachine // TypeDefIndex: 9978
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public string demoName; 
-	public bool runBenchmarkScenes; 
-	private object <>7__wrap1; 
-	private int <>7__wrap2; 
-	private TaskAwaiter <>u__1; 
-	private string[] <>7__wrap3; 
-	private int <>7__wrap4; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public string demoName;
+	public bool runBenchmarkScenes;
+	private object <>7__wrap1;
+	private int <>7__wrap2;
+	private TaskAwaiter <>u__1;
+	private string[] <>7__wrap3;
+	private int <>7__wrap4;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct Benchmarking.<RunSingleSceneAsync>d__8 : IAsyncStateMachine // TypeDefIndex: 9977
+private struct Benchmarking.<RunSingleSceneAsync>d__8 : IAsyncStateMachine // TypeDefIndex: 9979
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public string scene; 
-	private object <>7__wrap1; 
-	private int <>7__wrap2; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public string scene;
+	private object <>7__wrap1;
+	private int <>7__wrap2;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct Benchmarking.<RunBenchmarkScene>d__9 : IAsyncStateMachine // TypeDefIndex: 9978
+private struct Benchmarking.<RunBenchmarkScene>d__9 : IAsyncStateMachine // TypeDefIndex: 9980
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public string scene; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public string scene;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct Benchmarking.<RunBenchmarksInScene>d__10 : IAsyncStateMachine // TypeDefIndex: 9979
+private struct Benchmarking.<RunBenchmarksInScene>d__10 : IAsyncStateMachine // TypeDefIndex: 9981
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	private TaskAwaiter <>u__1; 
-	private BenchmarkScene[] <>7__wrap1; 
-	private int <>7__wrap2; 
-	private IEnumerator <coroutine>5__4; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	private TaskAwaiter <>u__1;
+	private BenchmarkScene[] <>7__wrap1;
+	private int <>7__wrap2;
+	private IEnumerator <coroutine>5__4;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct Benchmarking.<Report>d__11 : IAsyncStateMachine // TypeDefIndex: 9980
+private struct Benchmarking.<Report>d__11 : IAsyncStateMachine // TypeDefIndex: 9982
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	private TaskAwaiter<string> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	private TaskAwaiter<string> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct Benchmarking.<RunDemoBasedBenchmark>d__12 : IAsyncStateMachine // TypeDefIndex: 9981
+private struct Benchmarking.<RunDemoBasedBenchmark>d__12 : IAsyncStateMachine // TypeDefIndex: 9983
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public string demoName; 
-	public string benchmarkLabel; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public string demoName;
+	public string benchmarkLabel;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

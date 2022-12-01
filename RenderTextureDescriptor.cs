@@ -1,39 +1,39 @@
 public struct RenderTextureDescriptor // TypeDefIndex: 3452
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <width>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <height>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <msaaSamples>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <volumeDepth>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <mipCount>k__BackingField; 
-	private GraphicsFormat _graphicsFormat; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private GraphicsFormat <stencilFormat>k__BackingField; 
-	private int _depthBufferBits; 
-	private static int[] depthFormatBits; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private TextureDimension <dimension>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private ShadowSamplingMode <shadowSamplingMode>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private VRTextureUsage <vrUsage>k__BackingField; 
-	private RenderTextureCreationFlags _flags; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private RenderTextureMemoryless <memoryless>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <width>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <height>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <msaaSamples>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <volumeDepth>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <mipCount>k__BackingField;
+	private GraphicsFormat _graphicsFormat;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private GraphicsFormat <stencilFormat>k__BackingField;
+	private int _depthBufferBits;
+	private static int[] depthFormatBits;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private TextureDimension <dimension>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private ShadowSamplingMode <shadowSamplingMode>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private VRTextureUsage <vrUsage>k__BackingField;
+	private RenderTextureCreationFlags _flags;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private RenderTextureMemoryless <memoryless>k__BackingField;
 
 	public int width { get; set; }
 	public int height { get; set; }
@@ -55,31 +55,31 @@ public struct RenderTextureDescriptor // TypeDefIndex: 3452
 	public bool useDynamicScale { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_width() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_width(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_height() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_height(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_msaaSamples() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_msaaSamples(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_volumeDepth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_volumeDepth(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_mipCount(int value) { }
 
 	public GraphicsFormat get_graphicsFormat() { }
@@ -98,28 +98,28 @@ public struct RenderTextureDescriptor // TypeDefIndex: 3452
 
 	public void set_depthBufferBits(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TextureDimension get_dimension() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_dimension(TextureDimension value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ShadowSamplingMode get_shadowSamplingMode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_shadowSamplingMode(ShadowSamplingMode value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public VRTextureUsage get_vrUsage() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_vrUsage(VRTextureUsage value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public RenderTextureMemoryless get_memoryless() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_memoryless(RenderTextureMemoryless value) { }
 
 	public void .ctor(int width, int height) { }

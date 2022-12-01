@@ -1,8 +1,8 @@
 public class ResourceSet : IDisposable, IEnumerable // TypeDefIndex: 497
 {
-	protected IResourceReader Reader; 
-	protected Hashtable Table; 
-	private Hashtable _caseInsensitiveTable; 
+	protected IResourceReader Reader;
+	protected Hashtable Table;
+	private Hashtable _caseInsensitiveTable;
 
 
 	protected void .ctor() { }
@@ -15,7 +15,7 @@ public class ResourceSet : IDisposable, IEnumerable // TypeDefIndex: 497
 
 	public void Dispose() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual IDictionaryEnumerator GetEnumerator() { }
 
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }

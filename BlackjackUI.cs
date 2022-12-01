@@ -1,72 +1,72 @@
-public class BlackjackUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12632
+public class BlackjackUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12645
 {
-	[SerializeField] 
-	private Image[] playerCardImages; 
-	[SerializeField] 
-	private Image[] dealerCardImages; 
-	[SerializeField] 
-	private Image[] splitCardImages; 
-	[SerializeField] 
-	private Image[] playerCardBackings; 
-	[SerializeField] 
-	private Image[] dealerCardBackings; 
-	[SerializeField] 
-	private Image[] splitCardBackings; 
-	[SerializeField] 
-	private CardGamePlayerWidget[] playerWidgets; 
-	[SerializeField] 
-	private GameObject dealerValueObj; 
-	[SerializeField] 
-	private RustText dealerValueText; 
-	[SerializeField] 
-	private GameObject yourValueObj; 
-	[SerializeField] 
-	private RustText yourValueText; 
-	[SerializeField] 
-	private Translate.Phrase phrasePlaceYourBet; 
-	[SerializeField] 
-	private Translate.Phrase phraseHit; 
-	[SerializeField] 
-	private Translate.Phrase phraseStand; 
-	[SerializeField] 
-	private Translate.Phrase phraseSplit; 
-	[SerializeField] 
-	private Translate.Phrase phraseDouble; 
-	[SerializeField] 
-	private Translate.Phrase phraseInsurance; 
-	[SerializeField] 
-	private Translate.Phrase phraseBust; 
-	[SerializeField] 
-	private Translate.Phrase phraseBlackjack; 
-	[SerializeField] 
-	private Translate.Phrase phraseStandoff; 
-	[SerializeField] 
-	private Translate.Phrase phraseYouWin; 
-	[SerializeField] 
-	private Translate.Phrase phraseYouLose; 
-	[SerializeField] 
-	private Translate.Phrase phraseWaitingForOtherPlayers; 
-	[SerializeField] 
-	private Translate.Phrase phraseHand; 
-	[SerializeField] 
-	private Translate.Phrase phraseInsurancePaidOut; 
-	[SerializeField] 
-	private Sprite insuranceIcon; 
-	[SerializeField] 
-	private Sprite noIcon; 
-	[SerializeField] 
-	private Color bustTextColour; 
-	[CompilerGeneratedAttribute] 
-	private int <DynamicBetAmount>k__BackingField; 
-	private ulong lastActionId; 
+	[SerializeField]
+	private Image[] playerCardImages;
+	[SerializeField]
+	private Image[] dealerCardImages;
+	[SerializeField]
+	private Image[] splitCardImages;
+	[SerializeField]
+	private Image[] playerCardBackings;
+	[SerializeField]
+	private Image[] dealerCardBackings;
+	[SerializeField]
+	private Image[] splitCardBackings;
+	[SerializeField]
+	private CardGamePlayerWidget[] playerWidgets;
+	[SerializeField]
+	private GameObject dealerValueObj;
+	[SerializeField]
+	private RustText dealerValueText;
+	[SerializeField]
+	private GameObject yourValueObj;
+	[SerializeField]
+	private RustText yourValueText;
+	[SerializeField]
+	private Translate.Phrase phrasePlaceYourBet;
+	[SerializeField]
+	private Translate.Phrase phraseHit;
+	[SerializeField]
+	private Translate.Phrase phraseStand;
+	[SerializeField]
+	private Translate.Phrase phraseSplit;
+	[SerializeField]
+	private Translate.Phrase phraseDouble;
+	[SerializeField]
+	private Translate.Phrase phraseInsurance;
+	[SerializeField]
+	private Translate.Phrase phraseBust;
+	[SerializeField]
+	private Translate.Phrase phraseBlackjack;
+	[SerializeField]
+	private Translate.Phrase phraseStandoff;
+	[SerializeField]
+	private Translate.Phrase phraseYouWin;
+	[SerializeField]
+	private Translate.Phrase phraseYouLose;
+	[SerializeField]
+	private Translate.Phrase phraseWaitingForOtherPlayers;
+	[SerializeField]
+	private Translate.Phrase phraseHand;
+	[SerializeField]
+	private Translate.Phrase phraseInsurancePaidOut;
+	[SerializeField]
+	private Sprite insuranceIcon;
+	[SerializeField]
+	private Sprite noIcon;
+	[SerializeField]
+	private Color bustTextColour;
+	[CompilerGeneratedAttribute]
+	private int <DynamicBetAmount>k__BackingField;
+	private ulong lastActionId;
 
 	public int DynamicBetAmount { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_DynamicBetAmount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DynamicBetAmount(int value) { }
 
 	public void UpdateInGameUI(CardGameUI ui, CardGameController game) { }
@@ -85,10 +85,10 @@ public class BlackjackUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIn
 
 }
 
-private sealed class BlackjackUI.<>c // TypeDefIndex: 12633
+private sealed class BlackjackUI.<>c // TypeDefIndex: 12646
 {
-	public static readonly BlackjackUI.<>c <>9; 
-	public static Predicate<CardGameUI.KeycodeWithAction> <>9__33_0; 
+	public static readonly BlackjackUI.<>c <>9;
+	public static Predicate<CardGameUI.KeycodeWithAction> <>9__33_0;
 
 
 	private static void .cctor() { }

@@ -1,8 +1,8 @@
 internal static class ValidationHelper // TypeDefIndex: 2888
 {
-	public static string[] EmptyArray; 
-	internal static readonly char[] InvalidMethodChars; 
-	internal static readonly char[] InvalidParamChars; 
+	public static string[] EmptyArray;
+	internal static readonly char[] InvalidMethodChars;
+	internal static readonly char[] InvalidParamChars;
 
 
 	public static string MakeStringNull(string stringValue) { }

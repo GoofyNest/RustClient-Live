@@ -1,7 +1,7 @@
 internal struct EncryptedAppTicketResponse_t : ICallbackData // TypeDefIndex: 5307
 {
-	internal Result Result; 
-	public static int _datasize; 
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

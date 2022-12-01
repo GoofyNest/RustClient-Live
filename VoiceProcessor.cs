@@ -1,22 +1,22 @@
-public class VoiceProcessor : EntityComponentBase // TypeDefIndex: 11399
+public class VoiceProcessor : EntityComponentBase // TypeDefIndex: 11405
 {
-	public AudioSource mouthSpeaker; 
-	public PlayerVoiceSpeaker playerSpeaker; 
-	public float volumeMultiplier; 
-	private uint optimalRate; 
-	private uint bufferSize; 
-	private float[] buffer; 
-	private uint dataReceived; 
-	private uint playbackBuffer; 
-	private uint dataPosition; 
-	private bool Initialized; 
-	public float currentVolume; 
-	private List<VoiceProcessor> subProcessors; 
-	private bool isPlaying; 
-	private bool stopping; 
-	private float[] volumeData; 
-	internal float volumeVelocity; 
-	private static MemoryStream decompressStream; 
+	public AudioSource mouthSpeaker;
+	public PlayerVoiceSpeaker playerSpeaker;
+	public float volumeMultiplier;
+	private uint optimalRate;
+	private uint bufferSize;
+	private float[] buffer;
+	private uint dataReceived;
+	private uint playbackBuffer;
+	private uint dataPosition;
+	private bool Initialized;
+	public float currentVolume;
+	private List<VoiceProcessor> subProcessors;
+	private bool isPlaying;
+	private bool stopping;
+	private float[] volumeData;
+	internal float volumeVelocity;
+	private static MemoryStream decompressStream;
 
 
 	private void InitializeSpeaker() { }

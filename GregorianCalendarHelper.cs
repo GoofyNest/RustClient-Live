@@ -1,18 +1,18 @@
 internal class GregorianCalendarHelper // TypeDefIndex: 704
 {
-	internal static readonly int[] DaysToMonth365; 
-	internal static readonly int[] DaysToMonth366; 
-	[OptionalFieldAttribute] 
-	internal int m_maxYear; 
-	[OptionalFieldAttribute] 
-	internal int m_minYear; 
-	internal Calendar m_Cal; 
-	[OptionalFieldAttribute] 
-	internal EraInfo[] m_EraInfo; 
-	[OptionalFieldAttribute] 
-	internal int[] m_eras; 
-	[OptionalFieldAttribute] 
-	internal DateTime m_minDate; 
+	internal static readonly int[] DaysToMonth365;
+	internal static readonly int[] DaysToMonth366;
+	[OptionalFieldAttribute]
+	internal int m_maxYear;
+	[OptionalFieldAttribute]
+	internal int m_minYear;
+	internal Calendar m_Cal;
+	[OptionalFieldAttribute]
+	internal EraInfo[] m_EraInfo;
+	[OptionalFieldAttribute]
+	internal int[] m_eras;
+	[OptionalFieldAttribute]
+	internal DateTime m_minDate;
 
 	internal int MaxYear { get; }
 	public int[] Eras { get; }

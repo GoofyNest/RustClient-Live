@@ -1,8 +1,8 @@
 public class LayoutRebuilder : ICanvasElement // TypeDefIndex: 4985
 {
-	private RectTransform m_ToRebuild; 
-	private int m_CachedHashFromTransform; 
-	private static ObjectPool<LayoutRebuilder> s_Rebuilders; 
+	private RectTransform m_ToRebuild;
+	private int m_CachedHashFromTransform;
+	private static ObjectPool<LayoutRebuilder> s_Rebuilders;
 
 	public Transform transform { get; }
 
@@ -51,12 +51,12 @@ public class LayoutRebuilder : ICanvasElement // TypeDefIndex: 4985
 
 private sealed class LayoutRebuilder.<>c // TypeDefIndex: 4986
 {
-	public static readonly LayoutRebuilder.<>c <>9; 
-	public static Predicate<Component> <>9__10_0; 
-	public static UnityAction<Component> <>9__12_0; 
-	public static UnityAction<Component> <>9__12_1; 
-	public static UnityAction<Component> <>9__12_2; 
-	public static UnityAction<Component> <>9__12_3; 
+	public static readonly LayoutRebuilder.<>c <>9;
+	public static Predicate<Component> <>9__10_0;
+	public static UnityAction<Component> <>9__12_0;
+	public static UnityAction<Component> <>9__12_1;
+	public static UnityAction<Component> <>9__12_2;
+	public static UnityAction<Component> <>9__12_3;
 
 
 	private static void .cctor() { }

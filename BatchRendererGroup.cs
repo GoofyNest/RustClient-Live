@@ -1,10 +1,10 @@
 public class BatchRendererGroup // TypeDefIndex: 3849
 {
-	private IntPtr m_GroupHandle; 
-	private BatchRendererGroup.OnPerformCulling m_PerformCulling; 
+	private IntPtr m_GroupHandle;
+	private BatchRendererGroup.OnPerformCulling m_PerformCulling;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnPerformCulling(BatchRendererGroup group, ref BatchRendererCullingOutput context, ref LODParameters lodParameters) { }
 
 }

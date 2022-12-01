@@ -1,20 +1,20 @@
-public class HackableLockedCrate : LootContainer // TypeDefIndex: 10114
+public class HackableLockedCrate : LootContainer // TypeDefIndex: 10116
 {
-	private Option __menuOption_Menu_Hack; 
+	private Option __menuOption_Menu_Hack;
 	public const BaseEntity.Flags Flag_Hacking = 128;
 	public const BaseEntity.Flags Flag_FullyHacked = 256;
-	public Text timerText; 
-	[ServerVar] 
-	public static float requiredHackSeconds; 
-	[ServerVar] 
-	public static float decaySeconds; 
-	public SoundPlayer hackProgressBeep; 
-	private float hackSeconds; 
-	public GameObjectRef shockEffect; 
-	public GameObjectRef mapMarkerEntityPrefab; 
-	public GameObjectRef landEffect; 
-	public bool shouldDecay; 
-	private int beepSeconds; 
+	public Text timerText;
+	[ServerVar]
+	public static float requiredHackSeconds;
+	[ServerVar]
+	public static float decaySeconds;
+	public SoundPlayer hackProgressBeep;
+	private float hackSeconds;
+	public GameObjectRef shockEffect;
+	public GameObjectRef mapMarkerEntityPrefab;
+	public GameObjectRef landEffect;
+	public bool shouldDecay;
+	private int beepSeconds;
 
 	public override bool HasMenuOptions { get; }
 
@@ -31,7 +31,7 @@ public class HackableLockedCrate : LootContainer // TypeDefIndex: 10114
 
 	public override void DestroyShared() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void UpdateHackProgress(int totalSecondsComplete, int totalSecondsRequired) { }
 
 	public override void PostNetworkUpdate() { }
@@ -40,10 +40,10 @@ public class HackableLockedCrate : LootContainer // TypeDefIndex: 10114
 
 	public override bool ShouldShowLootMenus() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Hack(BasePlayer player) { }
 
 	public bool Menu_Hack_ShowIf(BasePlayer player) { }

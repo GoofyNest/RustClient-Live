@@ -1,9 +1,9 @@
-public static class MemoryExtensions // TypeDefIndex: 6902
+public static class MemoryExtensions // TypeDefIndex: 6904
 {
-	internal static readonly IntPtr StringAdjustment; 
+	internal static readonly IntPtr StringAdjustment;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void Reverse<T>(Span<T> span) { }
 	/* GenericInstMethod :
 	|

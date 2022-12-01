@@ -1,10 +1,10 @@
-public class StreamContent : HttpContent // TypeDefIndex: 5763
+public class StreamContent : HttpContent // TypeDefIndex: 5765
 {
-	private readonly Stream content; 
-	private readonly int bufferSize; 
-	private readonly CancellationToken cancellationToken; 
-	private readonly long startPosition; 
-	private bool contentCopied; 
+	private readonly Stream content;
+	private readonly int bufferSize;
+	private readonly CancellationToken cancellationToken;
+	private readonly long startPosition;
+	private bool contentCopied;
 
 
 	public void .ctor(Stream content) { }

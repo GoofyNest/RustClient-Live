@@ -1,4 +1,4 @@
-public class ERMeshCombineUtility // TypeDefIndex: 7251
+public class ERMeshCombineUtility // TypeDefIndex: 7253
 {
 
 	public static Mesh Combine(Transform container, ERMeshCombineUtility.MeshInstance[] combines, bool generateStrips) { }
@@ -19,13 +19,13 @@ public class ERMeshCombineUtility // TypeDefIndex: 7251
 
 }
 
-public struct ERMeshCombineUtility.MeshInstance // TypeDefIndex: 7252
+public struct ERMeshCombineUtility.MeshInstance // TypeDefIndex: 7254
 {
-	public Mesh mesh; 
-	public int subMeshIndex; 
-	public Matrix4x4 transform; 
-	public int vertexCount; 
-	public bool flipTriangles; 
+	public Mesh mesh;
+	public int subMeshIndex;
+	public Matrix4x4 transform;
+	public int vertexCount;
+	public bool flipTriangles;
 
 }
 

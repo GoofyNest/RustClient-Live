@@ -1,33 +1,33 @@
-public struct UnregisterPlayersCallbackInfo : ICallbackInfo // TypeDefIndex: 8609
+public struct UnregisterPlayersCallbackInfo : ICallbackInfo // TypeDefIndex: 8611
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <UnregisteredPlayers>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <UnregisteredPlayers>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
 	public ProductUserId[] UnregisteredPlayers { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_UnregisteredPlayers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnregisteredPlayers(ProductUserId[] value) { }
 
 	public Nullable<Result> GetResultCode() { }

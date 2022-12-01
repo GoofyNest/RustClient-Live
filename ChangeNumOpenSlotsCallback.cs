@@ -1,7 +1,7 @@
-internal struct ChangeNumOpenSlotsCallback_t : ICallbackData // TypeDefIndex: 5364
+internal struct ChangeNumOpenSlotsCallback_t : ICallbackData // TypeDefIndex: 5366
 {
-	internal Result Result; 
-	public static int _datasize; 
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,16 +1,16 @@
 internal sealed class ObjectMap // TypeDefIndex: 1088
 {
-	internal string objectName; 
-	internal Type objectType; 
-	internal BinaryTypeEnum[] binaryTypeEnumA; 
-	internal object[] typeInformationA; 
-	internal Type[] memberTypes; 
-	internal string[] memberNames; 
-	internal ReadObjectInfo objectInfo; 
-	internal bool isInitObjectInfo; 
-	internal ObjectReader objectReader; 
-	internal int objectId; 
-	internal BinaryAssemblyInfo assemblyInfo; 
+	internal string objectName;
+	internal Type objectType;
+	internal BinaryTypeEnum[] binaryTypeEnumA;
+	internal object[] typeInformationA;
+	internal Type[] memberTypes;
+	internal string[] memberNames;
+	internal ReadObjectInfo objectInfo;
+	internal bool isInitObjectInfo;
+	internal ObjectReader objectReader;
+	internal int objectId;
+	internal BinaryAssemblyInfo assemblyInfo;
 
 
 	internal void .ctor(string objectName, Type objectType, string[] memberNames, ObjectReader objectReader, int objectId, BinaryAssemblyInfo assemblyInfo) { }

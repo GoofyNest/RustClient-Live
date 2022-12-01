@@ -1,33 +1,33 @@
-public struct QueryOffersCallbackInfo : ICallbackInfo // TypeDefIndex: 9498
+public struct QueryOffersCallbackInfo : ICallbackInfo // TypeDefIndex: 9500
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
 	public EpicAccountId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
 	public Nullable<Result> GetResultCode() { }

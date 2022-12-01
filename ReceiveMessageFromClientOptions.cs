@@ -1,24 +1,24 @@
-public struct ReceiveMessageFromClientOptions // TypeDefIndex: 9739
+public struct ReceiveMessageFromClientOptions // TypeDefIndex: 9741
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ClientHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <Data>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <ClientHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <Data>k__BackingField;
 
 	public IntPtr ClientHandle { get; set; }
 	public ArraySegment<byte> Data { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ClientHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Data(ArraySegment<byte> value) { }
 
 }

@@ -3,18 +3,18 @@ public sealed class SerializationInfo // TypeDefIndex: 1058
 	private const int defaultSize = 4;
 	private const string s_mscorlibAssemblySimpleName = "mscorlib";
 	private const string s_mscorlibFileName = "mscorlib.dll";
-	internal string[] m_members; 
-	internal object[] m_data; 
-	internal Type[] m_types; 
-	private Dictionary<string, int> m_nameToIndex; 
-	internal int m_currMember; 
-	internal IFormatterConverter m_converter; 
-	private string m_fullTypeName; 
-	private string m_assemName; 
-	private Type objectType; 
-	private bool isFullTypeNameSetExplicit; 
-	private bool isAssemblyNameSetExplicit; 
-	private bool requireSameTokenInPartialTrust; 
+	internal string[] m_members;
+	internal object[] m_data;
+	internal Type[] m_types;
+	private Dictionary<string, int> m_nameToIndex;
+	internal int m_currMember;
+	internal IFormatterConverter m_converter;
+	private string m_fullTypeName;
+	private string m_assemName;
+	private Type objectType;
+	private bool isFullTypeNameSetExplicit;
+	private bool isAssemblyNameSetExplicit;
+	private bool requireSameTokenInPartialTrust;
 
 	public string FullTypeName { get; }
 	public string AssemblyName { get; }
@@ -24,10 +24,10 @@ public sealed class SerializationInfo // TypeDefIndex: 1058
 	public bool IsAssemblyNameSetExplicit { get; }
 
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(Type type, IFormatterConverter converter) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(Type type, IFormatterConverter converter, bool requireSameTokenInPartialTrust) { }
 
 	public string get_FullTypeName() { }
@@ -70,7 +70,7 @@ public sealed class SerializationInfo // TypeDefIndex: 1058
 
 	public void AddValue(string name, long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void AddValue(string name, ulong value) { }
 
 	public void AddValue(string name, float value) { }
@@ -85,12 +85,12 @@ public sealed class SerializationInfo // TypeDefIndex: 1058
 
 	private object GetElement(string name, out Type foundType) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	private object GetElementNoThrow(string name, out Type foundType) { }
 
 	public object GetValue(string name, Type type) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	internal object GetValueNoThrow(string name, Type type) { }
 
 	public bool GetBoolean(string name) { }

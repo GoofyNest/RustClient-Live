@@ -1,8 +1,8 @@
-public class SimpleUID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6357
+public class SimpleUID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6359
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint uid; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint uid;
 
 
 	public static void ResetToPool(SimpleUID instance) { }

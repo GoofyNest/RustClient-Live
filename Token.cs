@@ -1,11 +1,11 @@
-internal struct Token // TypeDefIndex: 5788
+internal struct Token // TypeDefIndex: 5790
 {
-	public static readonly Token Empty; 
-	private readonly Token.Type type; 
-	[CompilerGeneratedAttribute] 
-	private int <StartPosition>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <EndPosition>k__BackingField; 
+	public static readonly Token Empty;
+	private readonly Token.Type type;
+	[CompilerGeneratedAttribute]
+	private int <StartPosition>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <EndPosition>k__BackingField;
 
 	public int StartPosition { get; set; }
 	public int EndPosition { get; set; }
@@ -14,16 +14,16 @@ internal struct Token // TypeDefIndex: 5788
 
 	public void .ctor(Token.Type type, int startPosition, int endPosition) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_StartPosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_StartPosition(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_EndPosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_EndPosition(int value) { }
 
 	public Token.Type get_Kind() { }
@@ -36,9 +36,9 @@ internal struct Token // TypeDefIndex: 5788
 
 }
 
-public enum Token.Type // TypeDefIndex: 5789
+public enum Token.Type // TypeDefIndex: 5791
 {
-	public int value__; 
+	public int value__;
 	public const Token.Type Error = 0;
 	public const Token.Type End = 1;
 	public const Token.Type Token = 2;
@@ -52,28 +52,28 @@ public enum Token.Type // TypeDefIndex: 5789
 
 }
 
-public struct Token // TypeDefIndex: 9702
+public struct Token // TypeDefIndex: 9704
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <App>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ClientId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <AccountId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AccessToken>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private double <ExpiresIn>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ExpiresAt>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AuthTokenType <AuthType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RefreshToken>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private double <RefreshExpiresIn>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RefreshExpiresAt>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <App>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ClientId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <AccountId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <AccessToken>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private double <ExpiresIn>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ExpiresAt>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AuthTokenType <AuthType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RefreshToken>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private double <RefreshExpiresIn>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RefreshExpiresAt>k__BackingField;
 
 	public Utf8String App { get; set; }
 	public Utf8String ClientId { get; set; }
@@ -87,64 +87,64 @@ public struct Token // TypeDefIndex: 9702
 	public Utf8String RefreshExpiresAt { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_App() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_App(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ClientId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AccessToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccessToken(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_ExpiresIn() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExpiresIn(double value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ExpiresAt() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExpiresAt(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AuthTokenType get_AuthType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AuthType(AuthTokenType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RefreshToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RefreshToken(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_RefreshExpiresIn() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RefreshExpiresIn(double value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RefreshExpiresAt() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RefreshExpiresAt(Utf8String value) { }
 
 	internal void Set(ref TokenInternal other) { }

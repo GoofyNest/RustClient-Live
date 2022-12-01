@@ -1,10 +1,10 @@
-public class ODCCODOCQQ : MonoBehaviour // TypeDefIndex: 7217
+public class ODCCODOCQQ : MonoBehaviour // TypeDefIndex: 7219
 {
-	public static GameObject rtg; 
-	public static GameObject swgLeft; 
-	public static GameObject swgRight; 
-	public static Vector3 camdir; 
-	public static List<List<Vector3>> vecs; 
+	public static GameObject rtg;
+	public static GameObject swgLeft;
+	public static GameObject swgRight;
+	public static Vector3 camdir;
+	public static List<List<Vector3>> vecs;
 
 
 	public static void OODDQCQQDQ(ERModularBase baseScript, ERModularRoad scr) { }

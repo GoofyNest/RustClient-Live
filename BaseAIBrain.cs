@@ -1,56 +1,58 @@
-public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 10208
+public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 10210
 {
-	public bool UseQueuedMovementUpdates; 
-	public bool AllowedToSleep; 
-	public AIDesignSO DefaultDesignSO; 
-	public List<AIDesignSO> Designs; 
-	public AIDesign InstanceSpecificDesign; 
-	public float SenseRange; 
-	public float AttackRangeMultiplier; 
-	public float TargetLostRange; 
-	public float VisionCone; 
-	public bool CheckVisionCone; 
-	public bool CheckLOS; 
-	public bool IgnoreNonVisionSneakers; 
-	public float ListenRange; 
-	public EntityType SenseTypes; 
-	public bool HostileTargetsOnly; 
-	public bool IgnoreSafeZonePlayers; 
-	public int MaxGroupSize; 
-	public float MemoryDuration; 
-	public bool RefreshKnownLOS; 
-	[CompilerGeneratedAttribute] 
-	private BaseAIBrain.BasicAIState <CurrentState>k__BackingField; 
-	public Vector3 mainInterestPoint; 
-	[CompilerGeneratedAttribute] 
-	private AIThinkMode <ThinkMode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Age>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AIBrainSenses <Senses>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePathFinder <PathFinder>k__BackingField; 
-	public bool UseAIDesign; 
-	[CompilerGeneratedAttribute] 
-	private AIEvents <Events>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AIDesign <AIDesign>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePlayer <DesigningPlayer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePlayer <OwningPlayer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsGroupLeader>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsGrouped>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IAIGroupable <GroupLeader>k__BackingField; 
-	public bool Pet; 
-	private List<IAIGroupable> groupMembers; 
-	[HeaderAttribute] 
-	public bool CanUseHealingItems; 
-	public float HealChance; 
-	public float HealBelowHealthFraction; 
+	public bool UseQueuedMovementUpdates;
+	public bool AllowedToSleep;
+	public AIDesignSO DefaultDesignSO;
+	public List<AIDesignSO> Designs;
+	public AIDesign InstanceSpecificDesign;
+	public float SenseRange;
+	public float AttackRangeMultiplier;
+	public float TargetLostRange;
+	public float VisionCone;
+	public bool CheckVisionCone;
+	public bool CheckLOS;
+	public bool IgnoreNonVisionSneakers;
+	public float IgnoreSneakersMaxDistance;
+	public float IgnoreNonVisionMaxDistance;
+	public float ListenRange;
+	public EntityType SenseTypes;
+	public bool HostileTargetsOnly;
+	public bool IgnoreSafeZonePlayers;
+	public int MaxGroupSize;
+	public float MemoryDuration;
+	public bool RefreshKnownLOS;
+	[CompilerGeneratedAttribute]
+	private BaseAIBrain.BasicAIState <CurrentState>k__BackingField;
+	public Vector3 mainInterestPoint;
+	[CompilerGeneratedAttribute]
+	private AIThinkMode <ThinkMode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Age>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AIBrainSenses <Senses>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BasePathFinder <PathFinder>k__BackingField;
+	public bool UseAIDesign;
+	[CompilerGeneratedAttribute]
+	private AIEvents <Events>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AIDesign <AIDesign>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BasePlayer <DesigningPlayer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BasePlayer <OwningPlayer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsGroupLeader>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsGrouped>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IAIGroupable <GroupLeader>k__BackingField;
+	public bool Pet;
+	private List<IAIGroupable> groupMembers;
+	[HeaderAttribute]
+	public bool CanUseHealingItems;
+	public float HealChance;
+	public float HealBelowHealthFraction;
 
 	public BaseAIBrain.BasicAIState CurrentState { get; set; }
 	public AIThinkMode ThinkMode { get; set; }
@@ -76,78 +78,78 @@ public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAID
 
 	public bool IssuePetCommand(PetCommandType cmd, int param, Nullable<Ray> ray) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseAIBrain.BasicAIState get_CurrentState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentState(BaseAIBrain.BasicAIState value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AIThinkMode get_ThinkMode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_ThinkMode(AIThinkMode value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Age() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Age(float value) { }
 
 	public void ForceSetAge(float age) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AIBrainSenses get_Senses() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Senses(AIBrainSenses value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BasePathFinder get_PathFinder() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_PathFinder(BasePathFinder value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AIEvents get_Events() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Events(AIEvents value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AIDesign get_AIDesign() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_AIDesign(AIDesign value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BasePlayer get_DesigningPlayer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DesigningPlayer(BasePlayer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BasePlayer get_OwningPlayer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_OwningPlayer(BasePlayer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsGroupLeader() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsGroupLeader(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsGrouped() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsGrouped(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IAIGroupable get_GroupLeader() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_GroupLeader(IAIGroupable value) { }
 
 	private bool IAIDesign.CanPlayerDesignAI(BasePlayer player) { }
@@ -160,7 +162,7 @@ public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAID
 
 }
 
-public class BaseAIBrain.BasicAIState // TypeDefIndex: 10209
+public class BaseAIBrain.BasicAIState // TypeDefIndex: 10211
 {
 
 	public void .ctor() { }

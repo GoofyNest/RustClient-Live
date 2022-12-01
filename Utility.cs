@@ -1,24 +1,24 @@
 internal class Utility // TypeDefIndex: 4724
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action<bool> GraphicsResourcesRecreate; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action EngineUpdate; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action FlushPendingResources; 
-	private static ProfilerMarker s_MarkerRaiseEngineUpdate; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action<bool> GraphicsResourcesRecreate;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action EngineUpdate;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action FlushPendingResources;
+	private static ProfilerMarker s_MarkerRaiseEngineUpdate;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RaiseGraphicsResourcesRecreate(bool recreate) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RaiseEngineUpdate() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RaiseFlushPendingResources() { }
 
 	private static void .cctor() { }
@@ -27,16 +27,16 @@ internal class Utility // TypeDefIndex: 4724
 
 public class Utility.GPUBuffer<T> // TypeDefIndex: 4725
 {
-	private IntPtr buffer; 
+	private IntPtr buffer;
 
 }
 
 public static class Utility // TypeDefIndex: 5278
 {
-	private static readonly byte[] readBuffer; 
+	private static readonly byte[] readBuffer;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static T ToType<T>(IntPtr ptr) { }
 	/* GenericInstMethod :
 	|
@@ -157,19 +157,19 @@ public static class Utility // TypeDefIndex: 5278
 	|-Utility.ToType<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static object ToType(IntPtr ptr, Type t) { }
 
 	internal static uint Swap(uint x) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static uint IpToInt32(IPAddress ipAddress) { }
 
 	public static IPAddress Int32ToIp(uint ipAddress) { }
 
 	public static string FormatPrice(string currency, double price) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string ReadNullTerminatedUTF8String(BinaryReader br) { }
 
 	private static void .cctor() { }

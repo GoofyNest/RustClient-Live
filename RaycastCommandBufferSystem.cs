@@ -1,10 +1,10 @@
-public static class RaycastCommandBufferSystem // TypeDefIndex: 10607
+public static class RaycastCommandBufferSystem // TypeDefIndex: 10611
 {
-	private static CommandBuffer buffer; 
-	private static Material depthmaterial; 
-	private static ComputeBuffer computeBuffer; 
-	private static float[] resultDataArray; 
-	private static int dataLength; 
+	private static CommandBuffer buffer;
+	private static Material depthmaterial;
+	private static ComputeBuffer computeBuffer;
+	private static float[] resultDataArray;
+	private static int dataLength;
 
 
 	private static void SetupCommandBuffer() { }

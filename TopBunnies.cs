@@ -1,11 +1,11 @@
-public class TopBunnies : MonoBehaviour // TypeDefIndex: 10511
+public class TopBunnies : MonoBehaviour // TypeDefIndex: 10515
 {
-	public BunnyEntry[] topBunnyEntries; 
-	public Text timerText; 
-	public CanvasGroup group; 
-	public Color endingColor; 
-	private bool flash; 
-	private int lastSeconds; 
+	public BunnyEntry[] topBunnyEntries;
+	public Text timerText;
+	public CanvasGroup group;
+	public Color endingColor;
+	private bool flash;
+	private int lastSeconds;
 
 
 	public void Update() { }

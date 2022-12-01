@@ -1,8 +1,8 @@
 public class WellKnownServiceTypeEntry : TypeEntry // TypeDefIndex: 1156
 {
-	private Type obj_type; 
-	private string obj_uri; 
-	private WellKnownObjectMode obj_mode; 
+	private Type obj_type;
+	private string obj_uri;
+	private WellKnownObjectMode obj_mode;
 
 	public WellKnownObjectMode Mode { get; }
 	public Type ObjectType { get; }

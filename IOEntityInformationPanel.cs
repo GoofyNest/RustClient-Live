@@ -1,10 +1,10 @@
-public class IOEntityInformationPanel : ItemInformationPanel // TypeDefIndex: 12772
+public class IOEntityInformationPanel : ItemInformationPanel // TypeDefIndex: 12786
 {
-	public ItemTextValue requiredPowerDisplay; 
-	public ItemTextValue requiredFluidDisplay; 
-	public ItemTextValue generatedPowerDisplay; 
-	public ItemTextValue capacityDisplay; 
-	public ItemTextValue chargeDisplay; 
+	public ItemTextValue requiredPowerDisplay;
+	public ItemTextValue requiredFluidDisplay;
+	public ItemTextValue generatedPowerDisplay;
+	public ItemTextValue capacityDisplay;
+	public ItemTextValue chargeDisplay;
 
 
 	public IOEntity GetIOEntityToUse(ItemDefinition info) { }

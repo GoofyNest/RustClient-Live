@@ -1,22 +1,22 @@
-public class ContactsPanel : SingletonComponent<ContactsPanel> // TypeDefIndex: 12700
+public class ContactsPanel : SingletonComponent<ContactsPanel> // TypeDefIndex: 12714
 {
-	public RectTransform alliesBucket; 
-	public RectTransform seenBucket; 
-	public RectTransform enemiesBucket; 
-	public RectTransform contentsBucket; 
-	public ContactsEntry contactEntryPrefab; 
-	public RawImage mugshotTest; 
-	public RawImage fullBodyTest; 
-	public RustButton[] filterButtons; 
-	public RelationshipManager.RelationshipType selectedRelationshipType; 
-	public RustButton lastSeenToggle; 
-	public Translate.Phrase sortingByLastSeenPhrase; 
-	public Translate.Phrase sortingByFirstSeen; 
-	public RustText sortText; 
-	private ContactsPanel.SortMode sortMode; 
-	private ulong selectedPlayerID; 
-	private float nextUpdateTime; 
-	private bool dirty; 
+	public RectTransform alliesBucket;
+	public RectTransform seenBucket;
+	public RectTransform enemiesBucket;
+	public RectTransform contentsBucket;
+	public ContactsEntry contactEntryPrefab;
+	public RawImage mugshotTest;
+	public RawImage fullBodyTest;
+	public RustButton[] filterButtons;
+	public RelationshipManager.RelationshipType selectedRelationshipType;
+	public RustButton lastSeenToggle;
+	public Translate.Phrase sortingByLastSeenPhrase;
+	public Translate.Phrase sortingByFirstSeen;
+	public RustText sortText;
+	private ContactsPanel.SortMode sortMode;
+	private ulong selectedPlayerID;
+	private float nextUpdateTime;
+	private bool dirty;
 
 
 	public RectTransform BucketFromType(RelationshipManager.RelationshipType type) { }
@@ -57,9 +57,9 @@ public class ContactsPanel : SingletonComponent<ContactsPanel> // TypeDefIndex: 
 
 }
 
-public enum ContactsPanel.SortMode // TypeDefIndex: 12701
+public enum ContactsPanel.SortMode // TypeDefIndex: 12715
 {
-	public int value__; 
+	public int value__;
 	public const ContactsPanel.SortMode None = 0;
 	public const ContactsPanel.SortMode RecentlySeen = 1;
 

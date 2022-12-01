@@ -1,20 +1,20 @@
-public class WaterInteraction : MonoBehaviour // TypeDefIndex: 12366
+public class WaterInteraction : MonoBehaviour // TypeDefIndex: 12374
 {
-	[SerializeField] 
-	private Texture2D texture; 
-	[RangeAttribute] 
-	public float Displacement; 
-	[RangeAttribute] 
-	public float Disturbance; 
-	[CompilerGeneratedAttribute] 
-	private WaterDynamics.Image <Image>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector2 <Position>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector2 <Scale>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Rotation>k__BackingField; 
-	private Transform cachedTransform; 
+	[SerializeField]
+	private Texture2D texture;
+	[RangeAttribute]
+	public float Displacement;
+	[RangeAttribute]
+	public float Disturbance;
+	[CompilerGeneratedAttribute]
+	private WaterDynamics.Image <Image>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector2 <Position>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector2 <Scale>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Rotation>k__BackingField;
+	private Transform cachedTransform;
 
 	public Texture2D Texture { get; set; }
 	public WaterDynamics.Image Image { get; set; }
@@ -27,28 +27,28 @@ public class WaterInteraction : MonoBehaviour // TypeDefIndex: 12366
 
 	public void set_Texture(Texture2D value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WaterDynamics.Image get_Image() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Image(WaterDynamics.Image value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector2 get_Position() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Position(Vector2 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector2 get_Scale() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Scale(Vector2 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Rotation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Rotation(float value) { }
 
 	protected void OnEnable() { }

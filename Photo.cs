@@ -1,9 +1,9 @@
-public class Photo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6390
+public class Photo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6392
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong photographerSteamId; 
-	public uint imageCrc; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong photographerSteamId;
+	public uint imageCrc;
 
 
 	public static void ResetToPool(Photo instance) { }

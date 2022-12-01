@@ -1,15 +1,15 @@
-public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 10400
+public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 10404
 {
-	public NVGEffect.ColorCorrectionParams ColorCorrection1; 
-	public NVGEffect.ColorCorrectionParams ColorCorrection2; 
-	public NVGEffect.NoiseAndGrainParams NoiseAndGrain; 
-	private Texture2D rgbChannelTex1; 
-	private Texture2D rgbChannelTex2; 
-	private bool updateTexturesOnStartup; 
-	public Texture2D NoiseTexture; 
-	private static float NOISE_TILE_AMOUNT; 
-	public Shader Shader; 
-	private Material material; 
+	public NVGEffect.ColorCorrectionParams ColorCorrection1;
+	public NVGEffect.ColorCorrectionParams ColorCorrection2;
+	public NVGEffect.NoiseAndGrainParams NoiseAndGrain;
+	private Texture2D rgbChannelTex1;
+	private Texture2D rgbChannelTex2;
+	private bool updateTexturesOnStartup;
+	public Texture2D NoiseTexture;
+	private static float NOISE_TILE_AMOUNT;
+	public Shader Shader;
+	private Material material;
 
 
 	private void Awake() { }
@@ -32,27 +32,27 @@ public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 10400
 
 }
 
-public struct NVGEffect.ColorCorrectionParams // TypeDefIndex: 10401
+public struct NVGEffect.ColorCorrectionParams // TypeDefIndex: 10405
 {
-	public float saturation; 
-	public AnimationCurve redChannel; 
-	public AnimationCurve greenChannel; 
-	public AnimationCurve blueChannel; 
+	public float saturation;
+	public AnimationCurve redChannel;
+	public AnimationCurve greenChannel;
+	public AnimationCurve blueChannel;
 
 }
 
-public struct NVGEffect.NoiseAndGrainParams // TypeDefIndex: 10402
+public struct NVGEffect.NoiseAndGrainParams // TypeDefIndex: 10406
 {
-	public float intensityMultiplier; 
-	public float generalIntensity; 
-	public float blackIntensity; 
-	public float whiteIntensity; 
-	public float midGrey; 
-	public bool monochrome; 
-	public Vector3 intensities; 
-	public Vector3 tiling; 
-	public float monochromeTiling; 
-	public FilterMode filterMode; 
+	public float intensityMultiplier;
+	public float generalIntensity;
+	public float blackIntensity;
+	public float whiteIntensity;
+	public float midGrey;
+	public bool monochrome;
+	public Vector3 intensities;
+	public Vector3 tiling;
+	public float monochromeTiling;
+	public FilterMode filterMode;
 
 }
 

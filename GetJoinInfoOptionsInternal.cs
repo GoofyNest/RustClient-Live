@@ -1,8 +1,8 @@
-internal struct GetJoinInfoOptionsInternal : ISettable<GetJoinInfoOptions>, IDisposable // TypeDefIndex: 8828
+internal struct GetJoinInfoOptionsInternal : ISettable<GetJoinInfoOptions>, IDisposable // TypeDefIndex: 8830
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
 
 	public EpicAccountId LocalUserId { set; }
 	public EpicAccountId TargetUserId { set; }

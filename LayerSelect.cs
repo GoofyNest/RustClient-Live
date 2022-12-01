@@ -1,7 +1,7 @@
-public struct LayerSelect // TypeDefIndex: 13217
+public struct LayerSelect // TypeDefIndex: 13232
 {
-	[SerializeField] 
-	private int layer; 
+	[SerializeField]
+	private int layer;
 
 	public int Mask { get; }
 	public string Name { get; }

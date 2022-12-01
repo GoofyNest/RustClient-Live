@@ -1,6 +1,6 @@
 public class SerializationException : SystemException // TypeDefIndex: 1056
 {
-	private static string _nullMessage; 
+	private static string _nullMessage;
 
 
 	public void .ctor() { }

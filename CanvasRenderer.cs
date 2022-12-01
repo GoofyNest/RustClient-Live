@@ -1,15 +1,15 @@
 public sealed class CanvasRenderer : Component // TypeDefIndex: 4737
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <isMask>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <isMask>k__BackingField;
 
 	public bool hasPopInstruction { set; }
 	public int materialCount { get; set; }
 	public int popMaterialCount { set; }
 	public int absoluteDepth { get; }
 	public bool hasMoved { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool cull { get; set; }
 
 
@@ -63,13 +63,13 @@ public sealed class CanvasRenderer : Component // TypeDefIndex: 4737
 
 	public static void AddUIVertexStream(List<UIVertex> verts, List<Vector3> positions, List<Color32> colors, List<Vector2> uv0S, List<Vector2> uv1S, List<Vector2> uv2S, List<Vector2> uv3S, List<Vector3> normals, List<Vector4> tangents) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static void SplitIndicesStreamsInternal(object verts, object indices) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static void SplitUIVertexStreamsInternal(object verts, object positions, object colors, object uv0S, object uv1S, object uv2S, object uv3S, object normals, object tangents) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static void CreateUIVertexStreamInternal(object verts, object positions, object colors, object uv0S, object uv1S, object uv2S, object uv3S, object normals, object tangents, object indices) { }
 
 	private void SetColor_Injected(ref Color color) { }

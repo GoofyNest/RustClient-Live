@@ -1,9 +1,9 @@
-public class RendererInfo : ComponentInfo<Renderer> // TypeDefIndex: 10897
+public class RendererInfo : ComponentInfo<Renderer> // TypeDefIndex: 10903
 {
-	public ShadowCastingMode shadows; 
-	public Material material; 
-	public Mesh mesh; 
-	public MeshFilter meshFilter; 
+	public ShadowCastingMode shadows;
+	public Material material;
+	public Mesh mesh;
+	public MeshFilter meshFilter;
 
 
 	public override void Reset() { }

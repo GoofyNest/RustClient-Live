@@ -1,18 +1,18 @@
-public class CableCurve // TypeDefIndex: 13525
+public class CableCurve // TypeDefIndex: 13541
 {
-	[SerializeField] 
-	private Vector2 m_start; 
-	[SerializeField] 
-	private Vector2 m_end; 
-	[SerializeField] 
-	private float m_slack; 
-	[SerializeField] 
-	private int m_steps; 
-	[SerializeField] 
-	private bool m_regen; 
-	private static Vector2[] emptyCurve; 
-	[SerializeField] 
-	private Vector2[] points; 
+	[SerializeField]
+	private Vector2 m_start;
+	[SerializeField]
+	private Vector2 m_end;
+	[SerializeField]
+	private float m_slack;
+	[SerializeField]
+	private int m_steps;
+	[SerializeField]
+	private bool m_regen;
+	private static Vector2[] emptyCurve;
+	[SerializeField]
+	private Vector2[] points;
 
 	public bool regenPoints { get; set; }
 	public Vector2 start { get; set; }

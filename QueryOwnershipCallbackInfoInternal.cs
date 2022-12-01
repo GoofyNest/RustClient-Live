@@ -1,10 +1,10 @@
-internal struct QueryOwnershipCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryOwnershipCallbackInfo>, ISettable<QueryOwnershipCallbackInfo>, IDisposable // TypeDefIndex: 9503
+internal struct QueryOwnershipCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryOwnershipCallbackInfo>, ISettable<QueryOwnershipCallbackInfo>, IDisposable // TypeDefIndex: 9505
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ItemOwnership; 
-	private uint m_ItemOwnershipCount; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ItemOwnership;
+	private uint m_ItemOwnershipCount;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

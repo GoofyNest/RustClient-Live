@@ -1,7 +1,7 @@
 public abstract class TypeDescriptionProvider // TypeDefIndex: 2755
 {
-	private TypeDescriptionProvider _parent; 
-	private TypeDescriptionProvider.EmptyCustomTypeDescriptor _emptyDescriptor; 
+	private TypeDescriptionProvider _parent;
+	private TypeDescriptionProvider.EmptyCustomTypeDescriptor _emptyDescriptor;
 
 
 	protected void .ctor() { }

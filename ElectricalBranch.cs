@@ -1,8 +1,8 @@
-public class ElectricalBranch : IOEntity // TypeDefIndex: 10103
+public class ElectricalBranch : IOEntity // TypeDefIndex: 10105
 {
-	private Option __menuOption_Menu_SetBranch; 
-	public int branchAmount; 
-	public GameObjectRef branchPanelPrefab; 
+	private Option __menuOption_Menu_SetBranch;
+	public int branchAmount;
+	public GameObjectRef branchPanelPrefab;
 
 	public override bool HasMenuOptions { get; }
 
@@ -15,10 +15,10 @@ public class ElectricalBranch : IOEntity // TypeDefIndex: 10103
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_SetBranch(BasePlayer player) { }
 
 	public bool Menu_SetBranch_ShowIf(BasePlayer player) { }

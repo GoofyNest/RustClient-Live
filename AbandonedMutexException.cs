@@ -1,11 +1,11 @@
 public class AbandonedMutexException : SystemException // TypeDefIndex: 773
 {
 
-[ComVisibleAttribute] 
+[ComVisibleAttribute]
 [Serializable]
 public class AbandonedMutexException : SystemException
-	private int m_MutexIndex; 
-	private Mutex m_Mutex; 
+	private int m_MutexIndex;
+	private Mutex m_Mutex;
 
 
 	public void .ctor() { }

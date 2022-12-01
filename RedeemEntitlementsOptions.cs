@@ -1,24 +1,24 @@
-public struct RedeemEntitlementsOptions // TypeDefIndex: 9512
+public struct RedeemEntitlementsOptions // TypeDefIndex: 9514
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String[] <EntitlementIds>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String[] <EntitlementIds>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public Utf8String[] EntitlementIds { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String[] get_EntitlementIds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EntitlementIds(Utf8String[] value) { }
 
 }

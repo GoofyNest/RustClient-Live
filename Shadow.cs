@@ -1,11 +1,11 @@
 public class Shadow : BaseMeshEffect // TypeDefIndex: 5042
 {
-	[SerializeField] 
-	private Color m_EffectColor; 
-	[SerializeField] 
-	private Vector2 m_EffectDistance; 
-	[SerializeField] 
-	private bool m_UseGraphicAlpha; 
+	[SerializeField]
+	private Color m_EffectColor;
+	[SerializeField]
+	private Vector2 m_EffectDistance;
+	[SerializeField]
+	private bool m_UseGraphicAlpha;
 	private const float kMaxEffectDistance = 600;
 
 	public Color effectColor { get; set; }

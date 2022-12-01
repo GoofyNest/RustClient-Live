@@ -1,58 +1,58 @@
 public class ScrollRect : UIBehaviour, IInitializePotentialDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, ICanvasElement, ILayoutElement, ILayoutGroup, ILayoutController // TypeDefIndex: 5000
 {
-	[SerializeField] 
-	private RectTransform m_Content; 
-	[SerializeField] 
-	private bool m_Horizontal; 
-	[SerializeField] 
-	private bool m_Vertical; 
-	[SerializeField] 
-	private ScrollRect.MovementType m_MovementType; 
-	[SerializeField] 
-	private float m_Elasticity; 
-	[SerializeField] 
-	private bool m_Inertia; 
-	[SerializeField] 
-	private float m_DecelerationRate; 
-	[SerializeField] 
-	private float m_ScrollSensitivity; 
-	[SerializeField] 
-	private RectTransform m_Viewport; 
-	[SerializeField] 
-	private Scrollbar m_HorizontalScrollbar; 
-	[SerializeField] 
-	private Scrollbar m_VerticalScrollbar; 
-	[SerializeField] 
-	private ScrollRect.ScrollbarVisibility m_HorizontalScrollbarVisibility; 
-	[SerializeField] 
-	private ScrollRect.ScrollbarVisibility m_VerticalScrollbarVisibility; 
-	[SerializeField] 
-	private float m_HorizontalScrollbarSpacing; 
-	[SerializeField] 
-	private float m_VerticalScrollbarSpacing; 
-	[SerializeField] 
-	private ScrollRect.ScrollRectEvent m_OnValueChanged; 
-	private Vector2 m_PointerStartLocalCursor; 
-	protected Vector2 m_ContentStartPosition; 
-	private RectTransform m_ViewRect; 
-	protected Bounds m_ContentBounds; 
-	private Bounds m_ViewBounds; 
-	private Vector2 m_Velocity; 
-	private bool m_Dragging; 
-	private bool m_Scrolling; 
-	private Vector2 m_PrevPosition; 
-	private Bounds m_PrevContentBounds; 
-	private Bounds m_PrevViewBounds; 
-	private bool m_HasRebuiltLayout; 
-	private bool m_HSliderExpand; 
-	private bool m_VSliderExpand; 
-	private float m_HSliderHeight; 
-	private float m_VSliderWidth; 
-	private RectTransform m_Rect; 
-	private RectTransform m_HorizontalScrollbarRect; 
-	private RectTransform m_VerticalScrollbarRect; 
-	private DrivenRectTransformTracker m_Tracker; 
-	private readonly Vector3[] m_Corners; 
+	[SerializeField]
+	private RectTransform m_Content;
+	[SerializeField]
+	private bool m_Horizontal;
+	[SerializeField]
+	private bool m_Vertical;
+	[SerializeField]
+	private ScrollRect.MovementType m_MovementType;
+	[SerializeField]
+	private float m_Elasticity;
+	[SerializeField]
+	private bool m_Inertia;
+	[SerializeField]
+	private float m_DecelerationRate;
+	[SerializeField]
+	private float m_ScrollSensitivity;
+	[SerializeField]
+	private RectTransform m_Viewport;
+	[SerializeField]
+	private Scrollbar m_HorizontalScrollbar;
+	[SerializeField]
+	private Scrollbar m_VerticalScrollbar;
+	[SerializeField]
+	private ScrollRect.ScrollbarVisibility m_HorizontalScrollbarVisibility;
+	[SerializeField]
+	private ScrollRect.ScrollbarVisibility m_VerticalScrollbarVisibility;
+	[SerializeField]
+	private float m_HorizontalScrollbarSpacing;
+	[SerializeField]
+	private float m_VerticalScrollbarSpacing;
+	[SerializeField]
+	private ScrollRect.ScrollRectEvent m_OnValueChanged;
+	private Vector2 m_PointerStartLocalCursor;
+	protected Vector2 m_ContentStartPosition;
+	private RectTransform m_ViewRect;
+	protected Bounds m_ContentBounds;
+	private Bounds m_ViewBounds;
+	private Vector2 m_Velocity;
+	private bool m_Dragging;
+	private bool m_Scrolling;
+	private Vector2 m_PrevPosition;
+	private Bounds m_PrevContentBounds;
+	private Bounds m_PrevViewBounds;
+	private bool m_HasRebuiltLayout;
+	private bool m_HSliderExpand;
+	private bool m_VSliderExpand;
+	private float m_HSliderHeight;
+	private float m_VSliderWidth;
+	private RectTransform m_Rect;
+	private RectTransform m_HorizontalScrollbarRect;
+	private RectTransform m_VerticalScrollbarRect;
+	private DrivenRectTransformTracker m_Tracker;
+	private readonly Vector3[] m_Corners;
 
 	public RectTransform content { get; set; }
 	public bool horizontal { get; set; }
@@ -273,7 +273,7 @@ public class ScrollRect : UIBehaviour, IInitializePotentialDragHandler, IEventSy
 
 public enum ScrollRect.MovementType // TypeDefIndex: 5001
 {
-	public int value__; 
+	public int value__;
 	public const ScrollRect.MovementType Unrestricted = 0;
 	public const ScrollRect.MovementType Elastic = 1;
 	public const ScrollRect.MovementType Clamped = 2;
@@ -282,7 +282,7 @@ public enum ScrollRect.MovementType // TypeDefIndex: 5001
 
 public enum ScrollRect.ScrollbarVisibility // TypeDefIndex: 5002
 {
-	public int value__; 
+	public int value__;
 	public const ScrollRect.ScrollbarVisibility Permanent = 0;
 	public const ScrollRect.ScrollbarVisibility AutoHide = 1;
 	public const ScrollRect.ScrollbarVisibility AutoHideAndExpandViewport = 2;

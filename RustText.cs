@@ -1,17 +1,17 @@
-public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7073
+public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7075
 {
-	public bool IsLocalized; 
-	public string Token; 
-	[TextAreaAttribute] 
-	public string English; 
-	public Translate.Phrase Phrase; 
-	[FormerlySerializedAsAttribute] 
-	public bool AutoSetWidth; 
-	public bool AutoSetHeight; 
-	public bool AutoSizeParent; 
-	public float MinWidth; 
-	public float MaxWidth; 
-	private object[] localizationArguments; 
+	public bool IsLocalized;
+	public string Token;
+	[TextAreaAttribute]
+	public string English;
+	public Translate.Phrase Phrase;
+	[FormerlySerializedAsAttribute]
+	public bool AutoSetWidth;
+	public bool AutoSetHeight;
+	public bool AutoSizeParent;
+	public float MinWidth;
+	public float MaxWidth;
+	private object[] localizationArguments;
 
 	public string LanguageToken { get; }
 	public string LanguageEnglish { get; }

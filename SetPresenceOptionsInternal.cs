@@ -1,8 +1,8 @@
-internal struct SetPresenceOptionsInternal : ISettable<SetPresenceOptions>, IDisposable // TypeDefIndex: 8866
+internal struct SetPresenceOptionsInternal : ISettable<SetPresenceOptions>, IDisposable // TypeDefIndex: 8868
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_PresenceModificationHandle; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_PresenceModificationHandle;
 
 	public EpicAccountId LocalUserId { set; }
 	public PresenceModification PresenceModificationHandle { set; }

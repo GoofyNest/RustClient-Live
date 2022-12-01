@@ -1,11 +1,11 @@
-public class Add // TypeDefIndex: 6258
+public class Add // TypeDefIndex: 6260
 {
-	public string Parent; 
-	public float Score; 
-	public string Extra; 
-	public bool ReplaceIfHigher; 
-	public bool ReplaceIfLower; 
-	public Auth Auth; 
+	public string Parent;
+	public float Score;
+	public string Extra;
+	public bool ReplaceIfHigher;
+	public bool ReplaceIfLower;
+	public Auth Auth;
 
 	public int Version { get; }
 
@@ -16,9 +16,9 @@ public class Add // TypeDefIndex: 6258
 
 }
 
-public class Add : Base // TypeDefIndex: 6262
+public class Add : Base // TypeDefIndex: 6264
 {
-	public string Content; 
+	public string Content;
 
 
 	public void .ctor() { }

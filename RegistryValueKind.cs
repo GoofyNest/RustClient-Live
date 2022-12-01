@@ -1,6 +1,6 @@
 public enum RegistryValueKind // TypeDefIndex: 104
 {
-	public int value__; 
+	public int value__;
 	public const RegistryValueKind Unknown = 0;
 	public const RegistryValueKind String = 1;
 	public const RegistryValueKind ExpandString = 2;

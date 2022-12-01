@@ -1,19 +1,19 @@
-public class RendererGroup : Pool.IPooled // TypeDefIndex: 11659
+public class RendererGroup : Pool.IPooled // TypeDefIndex: 11666
 {
-	public bool Invalidated; 
-	public bool NeedsRefresh; 
-	public bool Processing; 
-	public bool Preserving; 
-	public ListHashSet<RendererBatch> Renderers; 
-	public List<RendererBatch> TempRenderers; 
-	public List<MeshRendererBatch> Batches; 
-	public List<MeshRendererBatch> TempBatches; 
-	public List<MeshRendererInstance> TempInstances; 
-	private RendererGrid grid; 
-	private RendererCell cell; 
-	private RendererKey key; 
-	private Action updateData; 
-	private Action refreshBatches; 
+	public bool Invalidated;
+	public bool NeedsRefresh;
+	public bool Processing;
+	public bool Preserving;
+	public ListHashSet<RendererBatch> Renderers;
+	public List<RendererBatch> TempRenderers;
+	public List<MeshRendererBatch> Batches;
+	public List<MeshRendererBatch> TempBatches;
+	public List<MeshRendererInstance> TempInstances;
+	private RendererGrid grid;
+	private RendererCell cell;
+	private RendererKey key;
+	private Action updateData;
+	private Action refreshBatches;
 
 	public float Size { get; }
 	public Vector3 Position { get; }

@@ -1,8 +1,8 @@
-public class DynamicZNear : MonoBehaviour // TypeDefIndex: 10912
+public class DynamicZNear : MonoBehaviour // TypeDefIndex: 10918
 {
-	public float minimum; 
-	public float maximum; 
-	private Camera cam; 
+	public float minimum;
+	public float maximum;
+	private Camera cam;
 
 
 	protected void Awake() { }

@@ -1,4 +1,4 @@
-public class SuppressMenu : ListComponent<SuppressMenu> // TypeDefIndex: 7105
+public class SuppressMenu : ListComponent<SuppressMenu> // TypeDefIndex: 7107
 {
 	public static bool Any { get; }
 

@@ -1,35 +1,36 @@
-public class BaseViewModel : MonoBehaviour // TypeDefIndex: 13224
+public class BaseViewModel : MonoBehaviour // TypeDefIndex: 13239
 {
-	public static bool HideViewmodel; 
-	public static BaseViewModel GestureModel; 
-	public static List<BaseViewModel> ActiveModels; 
-	[HeaderAttribute] 
-	public LazyAimProperties lazyaimRegular; 
-	public LazyAimProperties lazyaimIronsights; 
-	public Transform pivot; 
-	public bool useViewModelCamera; 
-	public bool wantsHeldItemFlags; 
-	public GameObject[] hideSightMeshes; 
-	public bool isGestureViewModel; 
-	public Transform MuzzlePoint; 
-	[HeaderAttribute] 
-	public SubsurfaceProfile subsurfaceProfile; 
-	internal Animator animator; 
-	internal AnimationEvents animationEvent; 
-	internal IronSights ironSights; 
-	internal ViewmodelSway sway; 
-	internal ViewmodelLower lower; 
-	internal ViewmodelBob bob; 
-	internal ViewmodelPunch punch; 
-	internal ViewmodelAspectOffset aspectOffset; 
-	internal ViewmodelMountedAnchor mountedAnchor; 
-	internal Model model; 
-	internal static bool gestureHide; 
-	internal static TimeSince gestureHideTime; 
-	private static GestureCollection gestureCollection; 
-	private Skeleton Skeleton; 
-	private GameObject Clothing; 
-	private bool workshopMode; 
+	public static bool HideViewmodel;
+	public static BaseViewModel GestureModel;
+	public static List<BaseViewModel> ActiveModels;
+	[HeaderAttribute]
+	public LazyAimProperties lazyaimRegular;
+	public LazyAimProperties lazyaimIronsights;
+	public Transform pivot;
+	public bool useViewModelCamera;
+	public bool wantsHeldItemFlags;
+	public GameObject[] hideSightMeshes;
+	public bool isGestureViewModel;
+	public Transform MuzzlePoint;
+	[HeaderAttribute]
+	public SubsurfaceProfile subsurfaceProfile;
+	internal Animator animator;
+	internal AnimationEvents animationEvent;
+	internal IronSights ironSights;
+	internal ViewmodelSway sway;
+	internal ViewmodelLower lower;
+	internal ViewmodelBob bob;
+	internal ViewmodelPunch punch;
+	internal ViewmodelAspectOffset aspectOffset;
+	internal ViewmodelMountedAnchor mountedAnchor;
+	internal Model model;
+	internal static bool gestureHide;
+	internal static TimeSince gestureHideTime;
+	private static GestureCollection gestureCollection;
+	internal static GameObject aimHelperRoot;
+	private Skeleton Skeleton;
+	private GameObject Clothing;
+	private bool workshopMode;
 
 	public static BaseViewModel ActiveModel { get; }
 	public static bool UsingViewModelCamera { get; }

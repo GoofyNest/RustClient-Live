@@ -1,49 +1,49 @@
-public struct LoginOptions // TypeDefIndex: 9595
+public struct LoginOptions // TypeDefIndex: 9597
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<Credentials> <Credentials>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<UserLoginInfo> <UserLoginInfo>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<Credentials> <Credentials>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<UserLoginInfo> <UserLoginInfo>k__BackingField;
 
 	public Nullable<Credentials> Credentials { get; set; }
 	public Nullable<UserLoginInfo> UserLoginInfo { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Credentials> get_Credentials() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Credentials(Nullable<Credentials> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<UserLoginInfo> get_UserLoginInfo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserLoginInfo(Nullable<UserLoginInfo> value) { }
 
 }
 
-public struct LoginOptions // TypeDefIndex: 9672
+public struct LoginOptions // TypeDefIndex: 9674
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<Credentials> <Credentials>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AuthScopeFlags <ScopeFlags>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<Credentials> <Credentials>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AuthScopeFlags <ScopeFlags>k__BackingField;
 
 	public Nullable<Credentials> Credentials { get; set; }
 	public AuthScopeFlags ScopeFlags { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Credentials> get_Credentials() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Credentials(Nullable<Credentials> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AuthScopeFlags get_ScopeFlags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ScopeFlags(AuthScopeFlags value) { }
 
 }

@@ -1,6 +1,6 @@
 public enum ListChangedType // TypeDefIndex: 2727
 {
-	public int value__; 
+	public int value__;
 	public const ListChangedType Reset = 0;
 	public const ListChangedType ItemAdded = 1;
 	public const ListChangedType ItemDeleted = 2;

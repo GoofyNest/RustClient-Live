@@ -1,15 +1,15 @@
-public struct PresenceModificationSetJoinInfoOptions // TypeDefIndex: 8851
+public struct PresenceModificationSetJoinInfoOptions // TypeDefIndex: 8853
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <JoinInfo>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <JoinInfo>k__BackingField;
 
 	public Utf8String JoinInfo { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_JoinInfo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_JoinInfo(Utf8String value) { }
 
 }

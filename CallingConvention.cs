@@ -1,6 +1,6 @@
 public enum CallingConvention // TypeDefIndex: 1342
 {
-	public int value__; 
+	public int value__;
 	public const CallingConvention Winapi = 1;
 	public const CallingConvention Cdecl = 2;
 	public const CallingConvention StdCall = 3;

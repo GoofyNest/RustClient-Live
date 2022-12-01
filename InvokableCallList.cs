@@ -1,9 +1,9 @@
 internal class InvokableCallList // TypeDefIndex: 3640
 {
-	private readonly List<BaseInvokableCall> m_PersistentCalls; 
-	private readonly List<BaseInvokableCall> m_RuntimeCalls; 
-	private readonly List<BaseInvokableCall> m_ExecutingCalls; 
-	private bool m_NeedsUpdate; 
+	private readonly List<BaseInvokableCall> m_PersistentCalls;
+	private readonly List<BaseInvokableCall> m_RuntimeCalls;
+	private readonly List<BaseInvokableCall> m_ExecutingCalls;
+	private bool m_NeedsUpdate;
 
 
 	public void AddPersistentInvokableCall(BaseInvokableCall call) { }

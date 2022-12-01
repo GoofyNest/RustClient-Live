@@ -1,11 +1,11 @@
 public abstract class TaskScheduler // TypeDefIndex: 886
 {
-	private static ConditionalWeakTable<TaskScheduler, object> s_activeTaskSchedulers; 
-	private static readonly TaskScheduler s_defaultTaskScheduler; 
-	internal static int s_taskSchedulerIdCounter; 
-	private int m_taskSchedulerId; 
-	private static EventHandler<UnobservedTaskExceptionEventArgs> _unobservedTaskException; 
-	private static readonly object _unobservedTaskExceptionLockObject; 
+	private static ConditionalWeakTable<TaskScheduler, object> s_activeTaskSchedulers;
+	private static readonly TaskScheduler s_defaultTaskScheduler;
+	internal static int s_taskSchedulerIdCounter;
+	private int m_taskSchedulerId;
+	private static EventHandler<UnobservedTaskExceptionEventArgs> _unobservedTaskException;
+	private static readonly object _unobservedTaskExceptionLockObject;
 
 	internal virtual bool RequiresAtomicStartTransition { get; }
 	public static TaskScheduler Default { get; }

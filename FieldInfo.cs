@@ -38,20 +38,20 @@ public abstract class FieldInfo : MemberInfo, _FieldInfo // TypeDefIndex: 568
 
 	public abstract void SetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture);
 
-	[DebuggerHiddenAttribute] 
-	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute]
+	[DebuggerStepThroughAttribute]
 	public void SetValue(object obj, object value) { }
 
 	private static FieldInfo internal_from_handle_type(IntPtr field_handle, IntPtr type_handle) { }
 
 	public static FieldInfo GetFieldFromHandle(RuntimeFieldHandle handle) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static FieldInfo GetFieldFromHandle(RuntimeFieldHandle handle, RuntimeTypeHandle declaringType) { }
 
 	internal virtual int GetFieldOffset() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual void SetValueDirect(TypedReference obj, object value) { }
 
 	private MarshalAsAttribute get_marshal_info() { }

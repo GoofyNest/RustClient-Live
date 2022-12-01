@@ -1,9 +1,9 @@
-public class ClothLOD : FacepunchBehaviour // TypeDefIndex: 11662
+public class ClothLOD : FacepunchBehaviour // TypeDefIndex: 11669
 {
-	[ServerVar] 
-	public static float clothLODDist; 
-	public Cloth cloth; 
-	private bool lastWantsEnabled; 
+	[ServerVar]
+	public static float clothLODDist;
+	public Cloth cloth;
+	private bool lastWantsEnabled;
 
 
 	public void Awake() { }

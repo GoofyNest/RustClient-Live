@@ -1,9 +1,9 @@
-public class HeldBoomBox : HeldEntity, ICassettePlayer // TypeDefIndex: 10294
+public class HeldBoomBox : HeldEntity, ICassettePlayer // TypeDefIndex: 10297
 {
-	public BoomBox BoxController; 
-	public SwapKeycard cassetteSwapper; 
-	private TimeSince lastPlayToggle; 
-	private static int animPlay; 
+	public BoomBox BoxController;
+	public SwapKeycard cassetteSwapper;
+	private TimeSince lastPlayToggle;
+	private static int animPlay;
 
 	public BaseEntity ToBaseEntity { get; }
 
@@ -20,13 +20,13 @@ public class HeldBoomBox : HeldEntity, ICassettePlayer // TypeDefIndex: 10294
 
 	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void OnRadioIPChanged(BaseEntity.RPCMessage msg) { }
 
 	public void OnLoadedWithCassette(Cassette c) { }

@@ -1,17 +1,17 @@
-public class EOS // TypeDefIndex: 8027
+public class EOS // TypeDefIndex: 8029
 {
 
 internal class <Module>
 
 public class EOS
-	private static string productName; 
-	private static string productVersion; 
-	private static string productId; 
-	private static string sandboxId; 
-	private static string deploymentId; 
-	public static PlatformInterface Interface; 
-	public static LogLevel LogLevel; 
-	private static StreamWriter logWriter; 
+	private static string productName;
+	private static string productVersion;
+	private static string productId;
+	private static string sandboxId;
+	private static string deploymentId;
+	public static PlatformInterface Interface;
+	public static LogLevel LogLevel;
+	private static StreamWriter logWriter;
 
 
 	private static void OnLogMessage(ref LogMessage logMessage) { }

@@ -1,26 +1,26 @@
-internal sealed class InflateBlocks // TypeDefIndex: 6984
+internal sealed class InflateBlocks // TypeDefIndex: 6986
 {
-	internal static readonly int[] border; 
-	private InflateBlocks.InflateBlockMode mode; 
-	internal int left; 
-	internal int table; 
-	internal int index; 
-	internal int[] blens; 
-	internal int[] bb; 
-	internal int[] tb; 
-	internal InflateCodes codes; 
-	internal int last; 
-	internal ZlibCodec _codec; 
-	internal int bitk; 
-	internal int bitb; 
-	internal int[] hufts; 
-	internal byte[] window; 
-	internal int end; 
-	internal int readAt; 
-	internal int writeAt; 
-	internal object checkfn; 
-	internal uint check; 
-	internal InfTree inftree; 
+	internal static readonly int[] border;
+	private InflateBlocks.InflateBlockMode mode;
+	internal int left;
+	internal int table;
+	internal int index;
+	internal int[] blens;
+	internal int[] bb;
+	internal int[] tb;
+	internal InflateCodes codes;
+	internal int last;
+	internal ZlibCodec _codec;
+	internal int bitk;
+	internal int bitb;
+	internal int[] hufts;
+	internal byte[] window;
+	internal int end;
+	internal int readAt;
+	internal int writeAt;
+	internal object checkfn;
+	internal uint check;
+	internal InfTree inftree;
 
 
 	internal void .ctor(ZlibCodec codec, object checkfn, int w) { }
@@ -37,9 +37,9 @@ internal sealed class InflateBlocks // TypeDefIndex: 6984
 
 }
 
-private enum InflateBlocks.InflateBlockMode // TypeDefIndex: 6985
+private enum InflateBlocks.InflateBlockMode // TypeDefIndex: 6987
 {
-	public int value__; 
+	public int value__;
 	public const InflateBlocks.InflateBlockMode TYPE = 0;
 	public const InflateBlocks.InflateBlockMode LENS = 1;
 	public const InflateBlocks.InflateBlockMode STORED = 2;

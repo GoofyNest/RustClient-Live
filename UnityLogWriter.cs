@@ -3,10 +3,10 @@ internal class UnityLogWriter : TextWriter // TypeDefIndex: 3460
 	public override Encoding Encoding { get; }
 
 
-	[ThreadAndSerializationSafeAttribute] 
+	[ThreadAndSerializationSafeAttribute]
 	public static void WriteStringToUnityLog(string s) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void WriteStringToUnityLogImpl(string s) { }
 
 	public static void Init() { }

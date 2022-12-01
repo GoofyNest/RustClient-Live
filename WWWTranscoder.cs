@@ -1,14 +1,14 @@
 internal class WWWTranscoder // TypeDefIndex: 4131
 {
-	private static byte[] ucHexChars; 
-	private static byte[] lcHexChars; 
-	private static byte urlEscapeChar; 
-	private static byte[] urlSpace; 
-	private static byte[] dataSpace; 
-	private static byte[] urlForbidden; 
-	private static byte qpEscapeChar; 
-	private static byte[] qpSpace; 
-	private static byte[] qpForbidden; 
+	private static byte[] ucHexChars;
+	private static byte[] lcHexChars;
+	private static byte urlEscapeChar;
+	private static byte[] urlSpace;
+	private static byte[] dataSpace;
+	private static byte[] urlForbidden;
+	private static byte qpEscapeChar;
+	private static byte[] qpSpace;
+	private static byte[] qpForbidden;
 
 
 	private static byte Hex2Byte(byte[] b, int offset) { }

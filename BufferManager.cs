@@ -1,15 +1,15 @@
 internal static class BufferManager // TypeDefIndex: 5181
 {
-	private static readonly Stack<BufferManager.ReferenceCounter> ReferenceCounterPool; 
-	private static readonly Dictionary<int, Stack<IntPtr>> BufferPools; 
-	private static readonly Dictionary<IntPtr, BufferManager.ReferenceCounter> ReferenceCounters; 
-	private static readonly BufferManager.FreeFn FreeFunctionPin; 
-	public static readonly IntPtr FreeFunctionPointer; 
+	private static readonly Stack<BufferManager.ReferenceCounter> ReferenceCounterPool;
+	private static readonly Dictionary<int, Stack<IntPtr>> BufferPools;
+	private static readonly Dictionary<IntPtr, BufferManager.ReferenceCounter> ReferenceCounters;
+	private static readonly BufferManager.FreeFn FreeFunctionPin;
+	public static readonly IntPtr FreeFunctionPointer;
 
 
 	public static IntPtr Get(int size, int referenceCount) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	private static void Free(NetMsg* msg) { }
 
 	private static BufferManager.ReferenceCounter AllocateReferenceCounter(IntPtr ptr, int size, int referenceCount) { }
@@ -30,23 +30,23 @@ internal static class BufferManager // TypeDefIndex: 5181
 
 private sealed class BufferManager.ReferenceCounter // TypeDefIndex: 5182
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <Pointer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Size>k__BackingField; 
-	private int _count; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <Pointer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Size>k__BackingField;
+	private int _count;
 
 	private IntPtr Pointer { set; }
 	public int Size { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Pointer(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Size() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Size(int value) { }
 
 	public void Set(IntPtr ptr, int size, int referenceCount) { }

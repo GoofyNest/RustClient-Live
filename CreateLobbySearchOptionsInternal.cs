@@ -1,7 +1,7 @@
-internal struct CreateLobbySearchOptionsInternal : ISettable<CreateLobbySearchOptions>, IDisposable // TypeDefIndex: 9094
+internal struct CreateLobbySearchOptionsInternal : ISettable<CreateLobbySearchOptions>, IDisposable // TypeDefIndex: 9096
 {
-	private int m_ApiVersion; 
-	private uint m_MaxResults; 
+	private int m_ApiVersion;
+	private uint m_MaxResults;
 
 	public uint MaxResults { set; }
 

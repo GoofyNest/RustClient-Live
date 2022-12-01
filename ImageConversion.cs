@@ -1,23 +1,23 @@
 public static class ImageConversion // TypeDefIndex: 4073
 {
 
-[NativeHeaderAttribute] 
-[ExtensionAttribute] 
+[NativeHeaderAttribute]
+[ExtensionAttribute]
 public static class ImageConversion
 
-	[ExtensionAttribute] 
-	[NativeMethodAttribute] 
+	[ExtensionAttribute]
+	[NativeMethodAttribute]
 	public static byte[] EncodeToPNG(Texture2D tex) { }
 
-	[NativeMethodAttribute] 
-	[ExtensionAttribute] 
+	[NativeMethodAttribute]
+	[ExtensionAttribute]
 	public static byte[] EncodeToJPG(Texture2D tex, int quality) { }
 
-	[ExtensionAttribute] 
-	[NativeMethodAttribute] 
+	[ExtensionAttribute]
+	[NativeMethodAttribute]
 	public static bool LoadImage(Texture2D tex, byte[] data, bool markNonReadable) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool LoadImage(Texture2D tex, byte[] data) { }
 
 }

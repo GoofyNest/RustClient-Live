@@ -1,16 +1,16 @@
-public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13301
+public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13316
 {
-	public OcclusionCulling.DebugSettings debugSettings; 
-	private Material debugMipMat; 
+	public OcclusionCulling.DebugSettings debugSettings;
+	private Material debugMipMat;
 	private const float debugDrawDuration = 0,0334;
-	private Material downscaleMat; 
-	private Material blitCopyMat; 
-	private int hiZLevelCount; 
-	private int hiZWidth; 
-	private int hiZHeight; 
-	private RenderTexture depthTexture; 
-	private RenderTexture hiZTexture; 
-	private RenderTexture[] hiZLevels; 
+	private Material downscaleMat;
+	private Material blitCopyMat;
+	private int hiZLevelCount;
+	private int hiZWidth;
+	private int hiZHeight;
+	private RenderTexture depthTexture;
+	private RenderTexture hiZTexture;
+	private RenderTexture[] hiZLevels;
 	private const int GridCellsPerAxis = 2097152;
 	private const int GridHalfCellsPerAxis = 1048576;
 	private const int GridMinHalfCellsPerAxis = -1048575;
@@ -20,12 +20,12 @@ public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13301
 	private const float GridRcpCellSize = 0,01;
 	private const int GridPoolCapacity = 16384;
 	private const int GridPoolGranularity = 4096;
-	private static OcclusionCulling.HashedPool<OcclusionCulling.Cell> grid; 
-	private static Queue<OcclusionCulling.Cell> gridChanged; 
-	public ComputeShader computeShader; 
-	public bool usePixelShaderFallback; 
-	public bool useAsyncReadAPI; 
-	private Camera camera; 
+	private static OcclusionCulling.HashedPool<OcclusionCulling.Cell> grid;
+	private static Queue<OcclusionCulling.Cell> gridChanged;
+	public ComputeShader computeShader;
+	public bool usePixelShaderFallback;
+	public bool useAsyncReadAPI;
+	private Camera camera;
 	private const int ComputeThreadsPerGroup = 64;
 	private const int InputBufferStride = 16;
 	private const int ResultBufferStride = 4;
@@ -33,36 +33,36 @@ public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13301
 	private const int OccludeePoolGranularity = 2048;
 	private const int StateBufferGranularity = 2048;
 	private const int GridBufferGranularity = 256;
-	private static Queue<OccludeeState> statePool; 
-	private static OcclusionCulling.SimpleList<OccludeeState> staticOccludees; 
-	private static OcclusionCulling.SimpleList<OccludeeState.State> staticStates; 
-	private static OcclusionCulling.SimpleList<int> staticVisibilityChanged; 
-	private static OcclusionCulling.SimpleList<OccludeeState> dynamicOccludees; 
-	private static OcclusionCulling.SimpleList<OccludeeState.State> dynamicStates; 
-	private static OcclusionCulling.SimpleList<int> dynamicVisibilityChanged; 
-	private static List<int> staticChanged; 
-	private static Queue<int> staticRecycled; 
-	private static List<int> dynamicChanged; 
-	private static Queue<int> dynamicRecycled; 
-	private static OcclusionCulling.BufferSet staticSet; 
-	private static OcclusionCulling.BufferSet dynamicSet; 
-	private static OcclusionCulling.BufferSet gridSet; 
-	private Vector4[] frustumPlanes; 
-	private string[] frustumPropNames; 
-	private float[] matrixToFloatTemp; 
-	private Material fallbackMat; 
-	private Material depthCopyMat; 
-	private Matrix4x4 viewMatrix; 
-	private Matrix4x4 projMatrix; 
-	private Matrix4x4 viewProjMatrix; 
-	private Matrix4x4 prevViewProjMatrix; 
-	private Matrix4x4 invViewProjMatrix; 
-	private bool useNativePath; 
-	private static OcclusionCulling instance; 
-	private static GraphicsDeviceType[] supportedDeviceTypes; 
-	private static bool _enabled; 
-	private static bool _safeMode; 
-	private static OcclusionCulling.DebugFilter _debugShow; 
+	private static Queue<OccludeeState> statePool;
+	private static OcclusionCulling.SimpleList<OccludeeState> staticOccludees;
+	private static OcclusionCulling.SimpleList<OccludeeState.State> staticStates;
+	private static OcclusionCulling.SimpleList<int> staticVisibilityChanged;
+	private static OcclusionCulling.SimpleList<OccludeeState> dynamicOccludees;
+	private static OcclusionCulling.SimpleList<OccludeeState.State> dynamicStates;
+	private static OcclusionCulling.SimpleList<int> dynamicVisibilityChanged;
+	private static List<int> staticChanged;
+	private static Queue<int> staticRecycled;
+	private static List<int> dynamicChanged;
+	private static Queue<int> dynamicRecycled;
+	private static OcclusionCulling.BufferSet staticSet;
+	private static OcclusionCulling.BufferSet dynamicSet;
+	private static OcclusionCulling.BufferSet gridSet;
+	private Vector4[] frustumPlanes;
+	private string[] frustumPropNames;
+	private float[] matrixToFloatTemp;
+	private Material fallbackMat;
+	private Material depthCopyMat;
+	private Matrix4x4 viewMatrix;
+	private Matrix4x4 projMatrix;
+	private Matrix4x4 viewProjMatrix;
+	private Matrix4x4 prevViewProjMatrix;
+	private Matrix4x4 invViewProjMatrix;
+	private bool useNativePath;
+	private static OcclusionCulling instance;
+	private static GraphicsDeviceType[] supportedDeviceTypes;
+	private static bool _enabled;
+	private static bool _safeMode;
+	private static OcclusionCulling.DebugFilter _debugShow;
 
 	public bool HiZReady { get; }
 	public static OcclusionCulling Instance { get; }
@@ -218,23 +218,23 @@ public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13301
 
 }
 
-public class OcclusionCulling.BufferSet // TypeDefIndex: 13302
+public class OcclusionCulling.BufferSet // TypeDefIndex: 13317
 {
-	public ComputeBuffer inputBuffer; 
-	public ComputeBuffer resultBuffer; 
-	public int width; 
-	public int height; 
-	public int capacity; 
-	public int count; 
-	public Texture2D inputTexture; 
-	public RenderTexture resultTexture; 
-	public Texture2D resultReadTexture; 
-	public Color[] inputData; 
-	public Color32[] resultData; 
-	private OcclusionCulling culling; 
+	public ComputeBuffer inputBuffer;
+	public ComputeBuffer resultBuffer;
+	public int width;
+	public int height;
+	public int capacity;
+	public int count;
+	public Texture2D inputTexture;
+	public RenderTexture resultTexture;
+	public Texture2D resultReadTexture;
+	public Color[] inputData;
+	public Color32[] resultData;
+	private OcclusionCulling culling;
 	private const int MaxAsyncGPUReadbackRequests = 10;
-	private Queue<AsyncGPUReadbackRequest> asyncRequests; 
-	public IntPtr readbackInst; 
+	private Queue<AsyncGPUReadbackRequest> asyncRequests;
+	public IntPtr readbackInst;
 
 	public bool Ready { get; }
 
@@ -261,9 +261,9 @@ public class OcclusionCulling.BufferSet // TypeDefIndex: 13302
 
 }
 
-public enum OcclusionCulling.DebugFilter // TypeDefIndex: 13303
+public enum OcclusionCulling.DebugFilter // TypeDefIndex: 13318
 {
-	public int value__; 
+	public int value__;
 	public const OcclusionCulling.DebugFilter Off = 0;
 	public const OcclusionCulling.DebugFilter Dynamic = 1;
 	public const OcclusionCulling.DebugFilter Static = 2;
@@ -272,9 +272,9 @@ public enum OcclusionCulling.DebugFilter // TypeDefIndex: 13303
 
 }
 
-public enum OcclusionCulling.DebugMask // TypeDefIndex: 13304
+public enum OcclusionCulling.DebugMask // TypeDefIndex: 13319
 {
-	public int value__; 
+	public int value__;
 	public const OcclusionCulling.DebugMask Off = 0;
 	public const OcclusionCulling.DebugMask Dynamic = 1;
 	public const OcclusionCulling.DebugMask Static = 2;
@@ -283,41 +283,41 @@ public enum OcclusionCulling.DebugMask // TypeDefIndex: 13304
 
 }
 
-public class OcclusionCulling.DebugSettings // TypeDefIndex: 13305
+public class OcclusionCulling.DebugSettings // TypeDefIndex: 13320
 {
-	public bool log; 
-	public bool showAllVisible; 
-	public bool showMipChain; 
-	public bool showMain; 
-	public int showMainLod; 
-	public bool showFallback; 
-	public bool showStats; 
-	public bool showScreenBounds; 
-	public OcclusionCulling.DebugMask showMask; 
-	public LayerMask layerFilter; 
+	public bool log;
+	public bool showAllVisible;
+	public bool showMipChain;
+	public bool showMain;
+	public int showMainLod;
+	public bool showFallback;
+	public bool showStats;
+	public bool showScreenBounds;
+	public OcclusionCulling.DebugMask showMask;
+	public LayerMask layerFilter;
 
 
 	public void .ctor() { }
 
 }
 
-public class OcclusionCulling.HashedPoolValue // TypeDefIndex: 13306
+public class OcclusionCulling.HashedPoolValue // TypeDefIndex: 13321
 {
-	public ulong hashedPoolKey; 
-	public int hashedPoolIndex; 
+	public ulong hashedPoolKey;
+	public int hashedPoolIndex;
 
 
 	public void .ctor() { }
 
 }
 
-public class OcclusionCulling.HashedPool<ValueType> // TypeDefIndex: 13307
+public class OcclusionCulling.HashedPool<ValueType> // TypeDefIndex: 13322
 {
-	private int granularity; 
-	private Dictionary<ulong, ValueType> dict; 
-	private List<ValueType> pool; 
-	private List<ValueType> list; 
-	private Queue<ValueType> recycled; 
+	private int granularity;
+	private Dictionary<ulong, ValueType> dict;
+	private List<ValueType> pool;
+	private List<ValueType> list;
+	private Queue<ValueType> recycled;
 
 	public int Size { get; }
 	public int Count { get; }
@@ -393,12 +393,12 @@ public class OcclusionCulling.HashedPool<ValueType> // TypeDefIndex: 13307
 
 }
 
-public class OcclusionCulling.SimpleList<T> // TypeDefIndex: 13308
+public class OcclusionCulling.SimpleList<T> // TypeDefIndex: 13323
 {
 	private const int defaultCapacity = 16;
-	private static readonly T[] emptyArray; 
-	public T[] array; 
-	public int count; 
+	private static readonly T[] emptyArray;
+	public T[] array;
+	public int count;
 
 	public int Count { get; }
 	public int Capacity { get; set; }
@@ -526,24 +526,24 @@ public class OcclusionCulling.SimpleList<T> // TypeDefIndex: 13308
 
 }
 
-public class OcclusionCulling.SmartListValue // TypeDefIndex: 13309
+public class OcclusionCulling.SmartListValue // TypeDefIndex: 13324
 {
-	public int hashedListIndex; 
+	public int hashedListIndex;
 
 
 	public void .ctor() { }
 
 }
 
-public class OcclusionCulling.SmartList // TypeDefIndex: 13310
+public class OcclusionCulling.SmartList // TypeDefIndex: 13325
 {
 	private const int defaultCapacity = 16;
-	private static readonly OccludeeState[] emptyList; 
-	private static readonly int[] emptySlots; 
-	private OccludeeState[] list; 
-	private int[] slots; 
-	private Queue<int> recycled; 
-	private int count; 
+	private static readonly OccludeeState[] emptyList;
+	private static readonly int[] emptySlots;
+	private OccludeeState[] list;
+	private int[] slots;
+	private Queue<int> recycled;
+	private int count;
 
 	public OccludeeState[] List { get; }
 	public int[] Slots { get; }
@@ -583,16 +583,16 @@ public class OcclusionCulling.SmartList // TypeDefIndex: 13310
 
 }
 
-public class OcclusionCulling.Cell : OcclusionCulling.HashedPoolValue // TypeDefIndex: 13311
+public class OcclusionCulling.Cell : OcclusionCulling.HashedPoolValue // TypeDefIndex: 13326
 {
-	public int x; 
-	public int y; 
-	public int z; 
-	public Bounds bounds; 
-	public Vector4 sphereBounds; 
-	public bool isVisible; 
-	public OcclusionCulling.SmartList staticBucket; 
-	public OcclusionCulling.SmartList dynamicBucket; 
+	public int x;
+	public int y;
+	public int z;
+	public Bounds bounds;
+	public Vector4 sphereBounds;
+	public bool isVisible;
+	public OcclusionCulling.SmartList staticBucket;
+	public OcclusionCulling.SmartList dynamicBucket;
 
 
 	public void Reset() { }
@@ -603,10 +603,10 @@ public class OcclusionCulling.Cell : OcclusionCulling.HashedPoolValue // TypeDef
 
 }
 
-public struct OcclusionCulling.Sphere // TypeDefIndex: 13312
+public struct OcclusionCulling.Sphere // TypeDefIndex: 13327
 {
-	public Vector3 position; 
-	public float radius; 
+	public Vector3 position;
+	public float radius;
 
 
 	public bool IsValid() { }
@@ -615,7 +615,7 @@ public struct OcclusionCulling.Sphere // TypeDefIndex: 13312
 
 }
 
-public sealed class OcclusionCulling.OnVisibilityChanged : MulticastDelegate // TypeDefIndex: 13313
+public sealed class OcclusionCulling.OnVisibilityChanged : MulticastDelegate // TypeDefIndex: 13328
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,11 +1,11 @@
-internal struct SendLobbyNativeInviteRequestedCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendLobbyNativeInviteRequestedCallbackInfo>, ISettable<SendLobbyNativeInviteRequestedCallbackInfo>, IDisposable // TypeDefIndex: 9269
+internal struct SendLobbyNativeInviteRequestedCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendLobbyNativeInviteRequestedCallbackInfo>, ISettable<SendLobbyNativeInviteRequestedCallbackInfo>, IDisposable // TypeDefIndex: 9271
 {
-	private IntPtr m_ClientData; 
-	private ulong m_UiEventId; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetNativeAccountType; 
-	private IntPtr m_TargetUserNativeAccountId; 
-	private IntPtr m_LobbyId; 
+	private IntPtr m_ClientData;
+	private ulong m_UiEventId;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetNativeAccountType;
+	private IntPtr m_TargetUserNativeAccountId;
+	private IntPtr m_LobbyId;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

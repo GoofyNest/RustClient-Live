@@ -1,7 +1,7 @@
-public class Workshop : ConsoleSystem // TypeDefIndex: 13766
+public class Workshop : ConsoleSystem // TypeDefIndex: 13782
 {
 
-	[ClientVar] 
+	[ClientVar]
 	public static void print_loaded_skins(ConsoleSystem.Arg args) { }
 
 	public void .ctor() { }

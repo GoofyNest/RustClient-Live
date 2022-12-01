@@ -1,17 +1,17 @@
 public static class TerrainCallbacks // TypeDefIndex: 4101
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static TerrainCallbacks.HeightmapChangedCallback heightmapChanged; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static TerrainCallbacks.TextureChangedCallback textureChanged; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static TerrainCallbacks.HeightmapChangedCallback heightmapChanged;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static TerrainCallbacks.TextureChangedCallback textureChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void InvokeHeightmapChangedCallback(TerrainData terrainData, RectInt heightRegion, bool synched) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void InvokeTextureChangedCallback(TerrainData terrainData, string textureName, RectInt texelRegion, bool synched) { }
 
 }

@@ -1,23 +1,23 @@
-public class SoundPlayer : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 10766
+public class SoundPlayer : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 10770
 {
-	public SoundDefinition soundDefinition; 
-	public bool playImmediately; 
-	public float minStartDelay; 
-	public float maxStartDelay; 
-	public bool debugRepeat; 
-	public bool pending; 
-	public Vector3 soundOffset; 
-	private int playOnFrame; 
-	[CompilerGeneratedAttribute] 
-	private Sound <sound>k__BackingField; 
+	public SoundDefinition soundDefinition;
+	public bool playImmediately;
+	public float minStartDelay;
+	public float maxStartDelay;
+	public bool debugRepeat;
+	public bool pending;
+	public Vector3 soundOffset;
+	private int playOnFrame;
+	[CompilerGeneratedAttribute]
+	private Sound <sound>k__BackingField;
 
 	public Sound sound { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Sound get_sound() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_sound(Sound value) { }
 
 	protected void Awake() { }

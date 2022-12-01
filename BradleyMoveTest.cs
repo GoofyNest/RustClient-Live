@@ -1,20 +1,20 @@
-public class BradleyMoveTest : MonoBehaviour // TypeDefIndex: 10587
+public class BradleyMoveTest : MonoBehaviour // TypeDefIndex: 10591
 {
-	public WheelCollider[] leftWheels; 
-	public WheelCollider[] rightWheels; 
-	public float moveForceMax; 
-	public float brakeForce; 
-	public float throttle; 
-	public float turnForce; 
-	public float sideStiffnessMax; 
-	public float sideStiffnessMin; 
-	public Transform centerOfMass; 
-	public float turning; 
-	public bool brake; 
-	public Rigidbody myRigidBody; 
-	public Vector3 destination; 
-	public float stoppingDist; 
-	public GameObject followTest; 
+	public WheelCollider[] leftWheels;
+	public WheelCollider[] rightWheels;
+	public float moveForceMax;
+	public float brakeForce;
+	public float throttle;
+	public float turnForce;
+	public float sideStiffnessMax;
+	public float sideStiffnessMin;
+	public Transform centerOfMass;
+	public float turning;
+	public bool brake;
+	public Rigidbody myRigidBody;
+	public Vector3 destination;
+	public float stoppingDist;
+	public GameObject followTest;
 
 
 	public void Awake() { }

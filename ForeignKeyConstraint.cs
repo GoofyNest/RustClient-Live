@@ -1,27 +1,27 @@
 public class ForeignKeyConstraint : Constraint // TypeDefIndex: 4273
 {
-	internal Rule _deleteRule; 
-	internal Rule _updateRule; 
-	internal AcceptRejectRule _acceptRejectRule; 
-	private DataKey _childKey; 
-	private DataKey _parentKey; 
+	internal Rule _deleteRule;
+	internal Rule _updateRule;
+	internal AcceptRejectRule _acceptRejectRule;
+	private DataKey _childKey;
+	private DataKey _parentKey;
 
 	internal DataKey ChildKey { get; }
-	[ReadOnlyAttribute] 
+	[ReadOnlyAttribute]
 	public virtual DataColumn[] Columns { get; }
-	[ReadOnlyAttribute] 
+	[ReadOnlyAttribute]
 	public override DataTable Table { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual AcceptRejectRule AcceptRejectRule { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual Rule DeleteRule { get; set; }
-	[ReadOnlyAttribute] 
+	[ReadOnlyAttribute]
 	public virtual DataColumn[] RelatedColumns { get; }
 	internal DataColumn[] RelatedColumnsReference { get; }
 	internal DataKey ParentKey { get; }
-	[ReadOnlyAttribute] 
+	[ReadOnlyAttribute]
 	public virtual DataTable RelatedTable { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual Rule UpdateRule { get; set; }
 
 

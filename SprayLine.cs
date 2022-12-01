@@ -1,11 +1,11 @@
-public class SprayLine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6440
+public class SprayLine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6442
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<LinePoint> linePoints; 
-	public Vector3 colour; 
-	public float width; 
-	public uint editingPlayer; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<LinePoint> linePoints;
+	public Vector3 colour;
+	public float width;
+	public uint editingPlayer;
 
 
 	public static void ResetToPool(SprayLine instance) { }

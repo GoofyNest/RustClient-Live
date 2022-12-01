@@ -1,8 +1,8 @@
-internal struct RequestPermissionsCallbackInfoInternal : ICallbackInfoInternal, IGettable<RequestPermissionsCallbackInfo>, ISettable<RequestPermissionsCallbackInfo>, IDisposable // TypeDefIndex: 9361
+internal struct RequestPermissionsCallbackInfoInternal : ICallbackInfoInternal, IGettable<RequestPermissionsCallbackInfo>, ISettable<RequestPermissionsCallbackInfo>, IDisposable // TypeDefIndex: 9363
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

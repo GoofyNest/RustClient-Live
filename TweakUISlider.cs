@@ -1,9 +1,9 @@
-public class TweakUISlider : TweakUIBase // TypeDefIndex: 12925
+public class TweakUISlider : TweakUIBase // TypeDefIndex: 12939
 {
-	public Slider sliderControl; 
-	public TextMeshProUGUI textControl; 
-	public static string lastConVarChanged; 
-	public static TimeSince timeSinceLastConVarChange; 
+	public Slider sliderControl;
+	public TextMeshProUGUI textControl;
+	public static string lastConVarChanged;
+	public static TimeSince timeSinceLastConVarChange;
 
 
 	protected override void Init() { }

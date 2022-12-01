@@ -1,10 +1,10 @@
-internal class Lexer // TypeDefIndex: 5790
+internal class Lexer // TypeDefIndex: 5792
 {
-	private static readonly bool[] token_chars; 
-	private static readonly int last_token_char; 
-	private static readonly string[] dt_formats; 
-	private readonly string s; 
-	private int pos; 
+	private static readonly bool[] token_chars;
+	private static readonly int last_token_char;
+	private static readonly string[] dt_formats;
+	private readonly string s;
+	private int pos;
 
 	public int Position { get; set; }
 

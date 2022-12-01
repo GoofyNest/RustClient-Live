@@ -1,11 +1,11 @@
-public class ERSideObjectSection : MonoBehaviour // TypeDefIndex: 7305
+public class ERSideObjectSection : MonoBehaviour // TypeDefIndex: 7307
 {
-	public ERModularRoad road; 
-	public int sectionListIndex; 
-	public int sectionIndex; 
-	public double soId; 
-	public int leftright; 
-	public bool mirrored; 
+	public ERModularRoad road;
+	public int sectionListIndex;
+	public int sectionIndex;
+	public double soId;
+	public int leftright;
+	public bool mirrored;
 
 
 	public void Copy(ERSideObjectSection source) { }

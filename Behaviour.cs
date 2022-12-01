@@ -1,9 +1,9 @@
 public class Behaviour : Component // TypeDefIndex: 3508
 {
-	[RequiredByNativeCodeAttribute] 
-	[NativePropertyAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[NativePropertyAttribute]
 	public bool enabled { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool isActiveAndEnabled { get; }
 
 
@@ -11,7 +11,7 @@ public class Behaviour : Component // TypeDefIndex: 3508
 
 	public void set_enabled(bool value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isActiveAndEnabled() { }
 
 	public void .ctor() { }

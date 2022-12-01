@@ -1,6 +1,6 @@
 public enum MissingSchemaAction // TypeDefIndex: 4284
 {
-	public int value__; 
+	public int value__;
 	public const MissingSchemaAction Add = 1;
 	public const MissingSchemaAction Ignore = 2;
 	public const MissingSchemaAction Error = 3;

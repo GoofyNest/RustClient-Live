@@ -1,9 +1,9 @@
-public class CardInputWidget : MonoBehaviour // TypeDefIndex: 12644
+public class CardInputWidget : MonoBehaviour // TypeDefIndex: 12657
 {
-	public RustText InputText; 
-	public RustText ActionText; 
-	public RustText ExtraText; 
-	private KeyCode lastKey; 
+	public RustText InputText;
+	public RustText ActionText;
+	public RustText ExtraText;
+	private KeyCode lastKey;
 
 
 	public void Populate(KeyCode key, Translate.Phrase display, string extra) { }

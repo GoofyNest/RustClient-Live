@@ -1,24 +1,24 @@
 public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 801
 {
-	private static LocalDataStoreMgr s_LocalDataStoreMgr; 
-	[ThreadStaticAttribute] 
-	private static LocalDataStoreHolder s_LocalDataStore; 
-	[ThreadStaticAttribute] 
-	internal static CultureInfo m_CurrentCulture; 
-	[ThreadStaticAttribute] 
-	internal static CultureInfo m_CurrentUICulture; 
-	private static AsyncLocal<CultureInfo> s_asyncLocalCurrentCulture; 
-	private static AsyncLocal<CultureInfo> s_asyncLocalCurrentUICulture; 
-	private InternalThread internal_thread; 
-	private object m_ThreadStartArg; 
-	private object pending_exception; 
-	private IPrincipal principal; 
-	private int principal_version; 
-	[ThreadStaticAttribute] 
-	private static Thread current_thread; 
-	private MulticastDelegate m_Delegate; 
-	private ExecutionContext m_ExecutionContext; 
-	private bool m_ExecutionContextBelongsToOuterScope; 
+	private static LocalDataStoreMgr s_LocalDataStoreMgr;
+	[ThreadStaticAttribute]
+	private static LocalDataStoreHolder s_LocalDataStore;
+	[ThreadStaticAttribute]
+	internal static CultureInfo m_CurrentCulture;
+	[ThreadStaticAttribute]
+	internal static CultureInfo m_CurrentUICulture;
+	private static AsyncLocal<CultureInfo> s_asyncLocalCurrentCulture;
+	private static AsyncLocal<CultureInfo> s_asyncLocalCurrentUICulture;
+	private InternalThread internal_thread;
+	private object m_ThreadStartArg;
+	private object pending_exception;
+	private IPrincipal principal;
+	private int principal_version;
+	[ThreadStaticAttribute]
+	private static Thread current_thread;
+	private MulticastDelegate m_Delegate;
+	private ExecutionContext m_ExecutionContext;
+	private bool m_ExecutionContextBelongsToOuterScope;
 
 	internal bool ExecutionContextBelongsToCurrentScope { get; set; }
 	public ThreadPriority Priority { set; }
@@ -51,20 +51,20 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 
 	private void Start(ref StackCrawlMark stackMark) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal ExecutionContext.Reader GetExecutionContextReader() { }
 
 	internal bool get_ExecutionContextBelongsToCurrentScope() { }
 
 	internal void set_ExecutionContextBelongsToCurrentScope(bool value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal ExecutionContext GetMutableExecutionContext() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void SetExecutionContext(ExecutionContext value, bool belongsToCurrentScope) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void SetExecutionContext(ExecutionContext.Reader value, bool belongsToCurrentScope) { }
 
 	public void set_Priority(ThreadPriority value) { }
@@ -81,10 +81,10 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 
 	public static void Sleep(int millisecondsTimeout) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private static bool YieldInternal() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool Yield() { }
 
 	private void SetStartHelper(Delegate start, int maxStackSize) { }
@@ -113,7 +113,7 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 
 	private static Thread GetCurrentThread() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static Thread get_CurrentThread() { }
 
 	internal static int get_CurrentThreadId() { }
@@ -122,7 +122,7 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 
 	private IntPtr Thread_internal(MulticastDelegate start) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected override void Finalize() { }
 
 	public bool get_IsThreadPoolThread() { }
@@ -145,7 +145,7 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 
 	private static void SpinWait_nop() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void SpinWait(int iterations) { }
 
 	private void StartInternal(IPrincipal principal, ref StackCrawlMark stackMark) { }
@@ -162,16 +162,16 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 
 	private void SetStart(MulticastDelegate start, int maxStackSize) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public int get_ManagedThreadId() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void BeginCriticalRegion() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void EndCriticalRegion() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetHashCode() { }
 
 	private ThreadState ValidateThreadState() { }

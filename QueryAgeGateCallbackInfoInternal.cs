@@ -1,9 +1,9 @@
-internal struct QueryAgeGateCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryAgeGateCallbackInfo>, ISettable<QueryAgeGateCallbackInfo>, IDisposable // TypeDefIndex: 9353
+internal struct QueryAgeGateCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryAgeGateCallbackInfo>, ISettable<QueryAgeGateCallbackInfo>, IDisposable // TypeDefIndex: 9355
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_CountryCode; 
-	private uint m_AgeOfConsent; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_CountryCode;
+	private uint m_AgeOfConsent;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

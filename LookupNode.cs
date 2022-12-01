@@ -1,9 +1,9 @@
 internal sealed class LookupNode : ExpressionNode // TypeDefIndex: 4268
 {
-	private readonly string _relationName; 
-	private readonly string _columnName; 
-	private DataColumn _column; 
-	private DataRelation _relation; 
+	private readonly string _relationName;
+	private readonly string _columnName;
+	private DataColumn _column;
+	private DataRelation _relation;
 
 
 	internal void .ctor(DataTable table, string columnName, string relationName) { }

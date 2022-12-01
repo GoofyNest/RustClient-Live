@@ -1,16 +1,16 @@
-internal struct RemoveGame // TypeDefIndex: 7726
+internal struct RemoveGame // TypeDefIndex: 7728
 {
-	[CompilerGeneratedAttribute] 
-	private string <GameId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <GameId>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string GameId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_GameId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_GameId(string value) { }
 
 }

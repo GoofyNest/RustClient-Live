@@ -1,17 +1,17 @@
 public struct RaycastHit // TypeDefIndex: 3924
 {
-	[NativeNameAttribute] 
-	internal Vector3 m_Point; 
-	[NativeNameAttribute] 
-	internal Vector3 m_Normal; 
-	[NativeNameAttribute] 
-	internal uint m_FaceID; 
-	[NativeNameAttribute] 
-	internal float m_Distance; 
-	[NativeNameAttribute] 
-	internal Vector2 m_UV; 
-	[NativeNameAttribute] 
-	internal int m_Collider; 
+	[NativeNameAttribute]
+	internal Vector3 m_Point;
+	[NativeNameAttribute]
+	internal Vector3 m_Normal;
+	[NativeNameAttribute]
+	internal uint m_FaceID;
+	[NativeNameAttribute]
+	internal float m_Distance;
+	[NativeNameAttribute]
+	internal Vector2 m_UV;
+	[NativeNameAttribute]
+	internal int m_Collider;
 
 	public Collider collider { get; }
 	public Vector3 point { get; set; }
@@ -40,7 +40,7 @@ public struct RaycastHit // TypeDefIndex: 3924
 
 	public int get_triangleIndex() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Vector2 CalculateRaycastTexCoord(Collider collider, Vector2 uv, Vector3 pos, uint face, int textcoord) { }
 
 	public Vector2 get_textureCoord() { }

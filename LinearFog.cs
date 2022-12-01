@@ -1,11 +1,11 @@
-public class LinearFog : MonoBehaviour // TypeDefIndex: 11841
+public class LinearFog : MonoBehaviour // TypeDefIndex: 11848
 {
-	public Material fogMaterial; 
-	public Color fogColor; 
-	public float fogStart; 
-	public float fogRange; 
-	public float fogDensity; 
-	public bool fogSky; 
+	public Material fogMaterial;
+	public Color fogColor;
+	public float fogStart;
+	public float fogRange;
+	public float fogDensity;
+	public bool fogSky;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }

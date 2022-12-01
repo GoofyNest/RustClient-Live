@@ -1,21 +1,21 @@
-public struct SendPacketOptions // TypeDefIndex: 8999
+public struct SendPacketOptions // TypeDefIndex: 9001
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <RemoteUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SocketId> <SocketId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <Channel>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <Data>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AllowDelayedDelivery>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PacketReliability <Reliability>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <DisableAutoAcceptConnection>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <RemoteUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SocketId> <SocketId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <Channel>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <Data>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AllowDelayedDelivery>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PacketReliability <Reliability>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <DisableAutoAcceptConnection>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ProductUserId RemoteUserId { get; set; }
@@ -27,52 +27,52 @@ public struct SendPacketOptions // TypeDefIndex: 8999
 	public bool DisableAutoAcceptConnection { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_RemoteUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RemoteUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SocketId> get_SocketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketId(Nullable<SocketId> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Channel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Channel(byte value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Data(ArraySegment<byte> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AllowDelayedDelivery() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllowDelayedDelivery(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PacketReliability get_Reliability() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Reliability(PacketReliability value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_DisableAutoAcceptConnection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisableAutoAcceptConnection(bool value) { }
 
 }

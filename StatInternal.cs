@@ -1,10 +1,10 @@
-internal struct StatInternal : IGettable<Stat>, ISettable<Stat>, IDisposable // TypeDefIndex: 8447
+internal struct StatInternal : IGettable<Stat>, ISettable<Stat>, IDisposable // TypeDefIndex: 8449
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Name; 
-	private long m_StartTime; 
-	private long m_EndTime; 
-	private int m_Value; 
+	private int m_ApiVersion;
+	private IntPtr m_Name;
+	private long m_StartTime;
+	private long m_EndTime;
+	private int m_Value;
 
 	public Utf8String Name { get; set; }
 	public Nullable<DateTimeOffset> StartTime { get; set; }

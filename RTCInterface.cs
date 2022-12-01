@@ -1,4 +1,4 @@
-public sealed class RTCInterface : Handle // TypeDefIndex: 8792
+public sealed class RTCInterface : Handle // TypeDefIndex: 8794
 {
 	public const int AddnotifydisconnectedApiLatest = 1;
 	public const int AddnotifyparticipantstatuschangedApiLatest = 1;
@@ -36,19 +36,19 @@ public sealed class RTCInterface : Handle // TypeDefIndex: 8792
 
 	public Result SetSetting(ref SetSettingOptions options) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnBlockParticipantCallbackInternalImplementation(ref BlockParticipantCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnDisconnectedCallbackInternalImplementation(ref DisconnectedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinRoomCallbackInternalImplementation(ref JoinRoomCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnLeaveRoomCallbackInternalImplementation(ref LeaveRoomCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnParticipantStatusChangedCallbackInternalImplementation(ref ParticipantStatusChangedCallbackInfoInternal data) { }
 
 }

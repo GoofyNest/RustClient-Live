@@ -1,8 +1,8 @@
-public class ViewmodelItem : MonoBehaviour // TypeDefIndex: 10984
+public class ViewmodelItem : MonoBehaviour // TypeDefIndex: 10990
 {
-	private bool vOneRun; 
-	private bool bWasOn; 
-	private Animator viewmodelAnimator; 
+	private bool vOneRun;
+	private bool bWasOn;
+	private Animator viewmodelAnimator;
 
 
 	private void OnEnable() { }

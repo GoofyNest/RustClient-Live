@@ -1,9 +1,9 @@
-public class RainEffect : WeatherEffect // TypeDefIndex: 11816
+public class RainEffect : WeatherEffect // TypeDefIndex: 11823
 {
-	public int FadeStartDistance; 
-	public int FadeEndDistance; 
-	public int FadeFalloff; 
-	public bool Stormy; 
+	public int FadeStartDistance;
+	public int FadeEndDistance;
+	public int FadeFalloff;
+	public bool Stormy;
 
 
 	protected override float GetCurrentIntensity() { }

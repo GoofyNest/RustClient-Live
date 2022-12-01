@@ -1,7 +1,7 @@
 public struct CustomAttributeNamedArgument // TypeDefIndex: 563
 {
-	private CustomAttributeTypedArgument typedArgument; 
-	private MemberInfo memberInfo; 
+	private CustomAttributeTypedArgument typedArgument;
+	private MemberInfo memberInfo;
 
 	public MemberInfo MemberInfo { get; }
 	public CustomAttributeTypedArgument TypedValue { get; }

@@ -1,9 +1,9 @@
-public class BowWeapon : BaseProjectile // TypeDefIndex: 10255
+public class BowWeapon : BaseProjectile // TypeDefIndex: 10258
 {
-	protected bool attackReady; 
-	private float arrowBack; 
-	private SwapArrows swapArrows; 
-	private bool wasAiming; 
+	protected bool attackReady;
+	private float arrowBack;
+	private SwapArrows swapArrows;
+	private bool wasAiming;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

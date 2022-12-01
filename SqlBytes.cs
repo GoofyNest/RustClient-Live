@@ -1,10 +1,10 @@
 public sealed class SqlBytes : INullable, IXmlSerializable, ISerializable // TypeDefIndex: 4346
 {
-	internal byte[] _rgbBuf; 
-	private long _lCurLen; 
-	internal Stream _stream; 
-	private SqlBytesCharsState _state; 
-	private byte[] _rgbWorkBuf; 
+	internal byte[] _rgbBuf;
+	private long _lCurLen;
+	internal Stream _stream;
+	private SqlBytesCharsState _state;
+	private byte[] _rgbWorkBuf;
 
 	public bool IsNull { get; }
 	public byte[] Buffer { get; }

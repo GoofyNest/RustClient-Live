@@ -1,6 +1,6 @@
 internal sealed class X509ExtensionCollection : CollectionBase, IEnumerable // TypeDefIndex: 62
 {
-	private bool readOnly; 
+	private bool readOnly;
 
 
 	public void .ctor() { }
@@ -13,7 +13,7 @@ internal sealed class X509ExtensionCollection : CollectionBase, IEnumerable // T
 
 public sealed class X509ExtensionCollection : CollectionBase, IEnumerable // TypeDefIndex: 1720
 {
-	private bool readOnly; 
+	private bool readOnly;
 
 	public X509Extension Item { get; }
 
@@ -32,8 +32,8 @@ public sealed class X509ExtensionCollection : CollectionBase, IEnumerable // Typ
 
 public sealed class X509ExtensionCollection : ICollection, IEnumerable // TypeDefIndex: 2832
 {
-	private static byte[] Empty; 
-	private ArrayList _list; 
+	private static byte[] Empty;
+	private ArrayList _list;
 
 	public int Count { get; }
 	public object SyncRoot { get; }

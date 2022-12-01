@@ -1,6 +1,6 @@
 private enum RBTree.NodeColor<K> // TypeDefIndex: 4292
 {
-	public int value__; 
+	public int value__;
 	public const RBTree.NodeColor<K> red = 0;
 	public const RBTree.NodeColor<K> black = 1;
 
@@ -8,21 +8,21 @@ private enum RBTree.NodeColor<K> // TypeDefIndex: 4292
 
 private struct RBTree.Node<K> // TypeDefIndex: 4293
 {
-	internal int _selfId; 
-	internal int _leftId; 
-	internal int _rightId; 
-	internal int _parentId; 
-	internal int _nextId; 
-	internal int _subTreeSize; 
-	internal K _keyOfNode; 
-	internal RBTree.NodeColor<K> _nodeColor; 
+	internal int _selfId;
+	internal int _leftId;
+	internal int _rightId;
+	internal int _parentId;
+	internal int _nextId;
+	internal int _subTreeSize;
+	internal K _keyOfNode;
+	internal RBTree.NodeColor<K> _nodeColor;
 
 }
 
 private struct RBTree.NodePath<K> // TypeDefIndex: 4294
 {
-	internal readonly int _nodeID; 
-	internal readonly int _mainTreeNodeID; 
+	internal readonly int _nodeID;
+	internal readonly int _mainTreeNodeID;
 
 
 	internal void .ctor(int nodeID, int mainTreeNodeID) { }
@@ -36,11 +36,11 @@ private struct RBTree.NodePath<K> // TypeDefIndex: 4294
 
 private sealed class RBTree.TreePage<K> // TypeDefIndex: 4295
 {
-	internal readonly RBTree.Node<K>[] _slots; 
-	internal readonly int[] _slotMap; 
-	private int _inUseCount; 
-	private int _pageId; 
-	private int _nextFreeSlotLine; 
+	internal readonly RBTree.Node<K>[] _slots;
+	internal readonly int[] _slotMap;
+	private int _inUseCount;
+	private int _pageId;
+	private int _nextFreeSlotLine;
 
 	internal int InUseCount { get; set; }
 	internal int PageId { get; set; }
@@ -93,11 +93,11 @@ private sealed class RBTree.TreePage<K> // TypeDefIndex: 4295
 
 internal struct RBTree.RBTreeEnumerator<K> : IEnumerator<K>, IDisposable, IEnumerator // TypeDefIndex: 4296
 {
-	private readonly RBTree<K> _tree; 
-	private readonly int _version; 
-	private int _index; 
-	private int _mainTreeNodeId; 
-	private K _current; 
+	private readonly RBTree<K> _tree;
+	private readonly int _version;
+	private int _index;
+	private int _mainTreeNodeId;
+	private K _current;
 
 	public K Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

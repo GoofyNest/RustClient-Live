@@ -1,6 +1,6 @@
-public class ReskinEffect : MonoBehaviour // TypeDefIndex: 10608
+public class ReskinEffect : MonoBehaviour // TypeDefIndex: 10612
 {
-	public ParticleSystem TargetSystem; 
+	public ParticleSystem TargetSystem;
 
 
 	public void SizeToEntity(BaseEntity ent) { }

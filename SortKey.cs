@@ -1,9 +1,9 @@
 public class SortKey // TypeDefIndex: 733
 {
-	private readonly string source; 
-	private readonly byte[] key; 
-	private readonly CompareOptions options; 
-	private readonly int lcid; 
+	private readonly string source;
+	private readonly byte[] key;
+	private readonly CompareOptions options;
+	private readonly int lcid;
 
 	public virtual string OriginalString { get; }
 	public virtual byte[] KeyData { get; }

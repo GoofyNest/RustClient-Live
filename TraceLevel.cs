@@ -1,6 +1,6 @@
 public enum TraceLevel // TypeDefIndex: 2642
 {
-	public int value__; 
+	public int value__;
 	public const TraceLevel Off = 0;
 	public const TraceLevel Error = 1;
 	public const TraceLevel Warning = 2;

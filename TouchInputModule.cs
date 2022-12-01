@@ -1,13 +1,13 @@
 public class TouchInputModule : PointerInputModule // TypeDefIndex: 5093
 {
-	private Vector2 m_LastMousePosition; 
-	private Vector2 m_MousePosition; 
-	private PointerEventData m_InputPointerEvent; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private bool m_ForceModuleActive; 
+	private Vector2 m_LastMousePosition;
+	private Vector2 m_MousePosition;
+	private PointerEventData m_InputPointerEvent;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private bool m_ForceModuleActive;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public bool allowActivationOnStandalone { get; set; }
 	public bool forceModuleActive { get; set; }
 

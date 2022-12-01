@@ -1,15 +1,15 @@
 public abstract class TextWriter : MarshalByRefObject, IDisposable // TypeDefIndex: 655
 {
-	public static readonly TextWriter Null; 
-	private static Action<object> _WriteCharDelegate; 
-	private static Action<object> _WriteStringDelegate; 
-	private static Action<object> _WriteCharArrayRangeDelegate; 
-	private static Action<object> _WriteLineCharDelegate; 
-	private static Action<object> _WriteLineStringDelegate; 
-	private static Action<object> _WriteLineCharArrayRangeDelegate; 
-	private static Action<object> _FlushDelegate; 
-	protected char[] CoreNewLine; 
-	private IFormatProvider InternalFormatProvider; 
+	public static readonly TextWriter Null;
+	private static Action<object> _WriteCharDelegate;
+	private static Action<object> _WriteStringDelegate;
+	private static Action<object> _WriteCharArrayRangeDelegate;
+	private static Action<object> _WriteLineCharDelegate;
+	private static Action<object> _WriteLineStringDelegate;
+	private static Action<object> _WriteLineCharArrayRangeDelegate;
+	private static Action<object> _FlushDelegate;
+	protected char[] CoreNewLine;
+	private IFormatProvider InternalFormatProvider;
 
 	private static string InitialNewLine { get; }
 	public virtual IFormatProvider FormatProvider { get; }
@@ -85,7 +85,7 @@ private sealed class TextWriter.NullTextWriter : TextWriter // TypeDefIndex: 656
 
 internal sealed class TextWriter.SyncTextWriter : TextWriter, IDisposable // TypeDefIndex: 657
 {
-	private TextWriter _out; 
+	private TextWriter _out;
 
 	public override Encoding Encoding { get; }
 	public override IFormatProvider FormatProvider { get; }
@@ -129,7 +129,7 @@ internal sealed class TextWriter.SyncTextWriter : TextWriter, IDisposable // Typ
 
 private sealed class TextWriter.<>c // TypeDefIndex: 658
 {
-	public static readonly TextWriter.<>c <>9; 
+	public static readonly TextWriter.<>c <>9;
 
 
 	private static void .cctor() { }

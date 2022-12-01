@@ -1,12 +1,12 @@
 internal static class TraceInternal // TypeDefIndex: 2641
 {
-	private static string appName; 
-	private static TraceListenerCollection listeners; 
-	private static bool autoFlush; 
-	[ThreadStaticAttribute] 
-	private static int indentLevel; 
-	private static int indentSize; 
-	internal static readonly object critSec; 
+	private static string appName;
+	private static TraceListenerCollection listeners;
+	private static bool autoFlush;
+	[ThreadStaticAttribute]
+	private static int indentLevel;
+	private static int indentSize;
+	internal static readonly object critSec;
 
 	public static TraceListenerCollection Listeners { get; }
 	public static bool AutoFlush { get; }

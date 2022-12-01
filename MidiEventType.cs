@@ -1,6 +1,6 @@
-public enum MidiEventType // TypeDefIndex: 7532
+public enum MidiEventType // TypeDefIndex: 7534
 {
-	public byte value__; 
+	public byte value__;
 	public const MidiEventType NormalSysEx = 0;
 	public const MidiEventType EscapeSysEx = 1;
 	public const MidiEventType SequenceNumber = 2;

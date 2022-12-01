@@ -1,7 +1,7 @@
-public static class LengthedObjectUtilities // TypeDefIndex: 7451
+public static class LengthedObjectUtilities // TypeDefIndex: 7453
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TLength LengthAs<TLength>(ILengthedObject obj, TempoMap tempoMap) { }
 	/* GenericInstMethod :
 	|

@@ -1,14 +1,14 @@
 internal class FtpAsyncResult : IAsyncResult // TypeDefIndex: 2996
 {
-	private FtpWebResponse response; 
-	private ManualResetEvent waitHandle; 
-	private Exception exception; 
-	private AsyncCallback callback; 
-	private Stream stream; 
-	private object state; 
-	private bool completed; 
-	private bool synch; 
-	private object locker; 
+	private FtpWebResponse response;
+	private ManualResetEvent waitHandle;
+	private Exception exception;
+	private AsyncCallback callback;
+	private Stream stream;
+	private object state;
+	private bool completed;
+	private bool synch;
+	private object locker;
 
 	public object AsyncState { get; }
 	public WaitHandle AsyncWaitHandle { get; }

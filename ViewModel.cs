@@ -1,8 +1,8 @@
-public class ViewModel : MonoBehaviour, IClientComponent // TypeDefIndex: 10980
+public class ViewModel : MonoBehaviour, IClientComponent // TypeDefIndex: 10986
 {
-	public GameObjectRef viewModelPrefab; 
-	public HeldEntity targetEntity; 
-	public BaseViewModel instance; 
+	public GameObjectRef viewModelPrefab;
+	public HeldEntity targetEntity;
+	public BaseViewModel instance;
 
 	public bool ironSights { set; }
 

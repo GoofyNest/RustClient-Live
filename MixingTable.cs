@@ -1,9 +1,9 @@
-public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6393
+public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6395
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float totalMixTime; 
-	public float remainingMixTime; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float totalMixTime;
+	public float remainingMixTime;
 
 
 	public static void ResetToPool(MixingTable instance) { }
@@ -60,19 +60,19 @@ public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class MixingTable : StorageContainer // TypeDefIndex: 10129
+public class MixingTable : StorageContainer // TypeDefIndex: 10131
 {
-	private Option __menuOption_Menu_TurnOff; 
-	private Option __menuOption_Menu_TurnOn; 
-	public GameObject Particles; 
-	public RecipeList Recipes; 
-	public bool OnlyAcceptValidIngredients; 
-	[CompilerGeneratedAttribute] 
-	private float <RemainingMixTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <TotalMixTime>k__BackingField; 
-	private float lastTickTimestamp; 
-	private List<Item> inventoryItems; 
+	private Option __menuOption_Menu_TurnOff;
+	private Option __menuOption_Menu_TurnOn;
+	public GameObject Particles;
+	public RecipeList Recipes;
+	public bool OnlyAcceptValidIngredients;
+	[CompilerGeneratedAttribute]
+	private float <RemainingMixTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <TotalMixTime>k__BackingField;
+	private float lastTickTimestamp;
+	private List<Item> inventoryItems;
 
 	public override bool HasMenuOptions { get; }
 	public float RemainingMixTime { get; set; }
@@ -87,34 +87,34 @@ public class MixingTable : StorageContainer // TypeDefIndex: 10129
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_RemainingMixTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_RemainingMixTime(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_TotalMixTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_TotalMixTime(float value) { }
 
 	public float get_ClientEstimatedRemainingMixTime() { }
 
 	public float get_ProgressFraction() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOn(BasePlayer player) { }
 
 	public bool Menu_TurnOn_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOff(BasePlayer player) { }
 
 	public bool Menu_TurnOff_ShowIf(BasePlayer player) { }

@@ -1,15 +1,15 @@
-public struct LobbyModificationSetInvitesAllowedOptions // TypeDefIndex: 9176
+public struct LobbyModificationSetInvitesAllowedOptions // TypeDefIndex: 9178
 {
-	[CompilerGeneratedAttribute] 
-	private bool <InvitesAllowed>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <InvitesAllowed>k__BackingField;
 
 	public bool InvitesAllowed { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_InvitesAllowed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_InvitesAllowed(bool value) { }
 
 }

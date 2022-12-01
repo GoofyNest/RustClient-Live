@@ -15,7 +15,7 @@ public sealed class Sprite : Object // TypeDefIndex: 3577
 	public Vector2[] uv { get; }
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void .ctor() { }
 
 	internal int GetPackingMode() { }
@@ -30,7 +30,7 @@ public sealed class Sprite : Object // TypeDefIndex: 3577
 
 	internal Vector4 GetPadding() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static Sprite CreateSprite(Texture2D texture, Rect rect, Vector2 pivot, float pixelsPerUnit, uint extrude, SpriteMeshType meshType, Vector4 border, bool generateFallbackPhysicsShape) { }
 
 	public Bounds get_bounds() { }
@@ -41,13 +41,13 @@ public sealed class Sprite : Object // TypeDefIndex: 3577
 
 	public Texture2D get_texture() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public float get_pixelsPerUnit() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public Texture2D get_associatedAlphaSplitTexture() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public Vector2 get_pivot() { }
 
 	public bool get_packed() { }
@@ -56,13 +56,13 @@ public sealed class Sprite : Object // TypeDefIndex: 3577
 
 	public Rect get_textureRect() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Vector2[] get_vertices() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public ushort[] get_triangles() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Vector2[] get_uv() { }
 
 	public static Sprite Create(Texture2D texture, Rect rect, Vector2 pivot, float pixelsPerUnit, uint extrude, SpriteMeshType meshType, Vector4 border, bool generateFallbackPhysicsShape) { }

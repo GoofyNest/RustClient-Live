@@ -1,68 +1,68 @@
 public class HttpWebRequest : WebRequest, ISerializable // TypeDefIndex: 3006
 {
-	private Uri requestUri; 
-	private Uri actualUri; 
-	private bool hostChanged; 
-	private bool allowAutoRedirect; 
-	private bool allowBuffering; 
-	private X509CertificateCollection certificates; 
-	private string connectionGroup; 
-	private bool haveContentLength; 
-	private long contentLength; 
-	private HttpContinueDelegate continueDelegate; 
-	private CookieContainer cookieContainer; 
-	private ICredentials credentials; 
-	private bool haveResponse; 
-	private bool haveRequest; 
-	private bool requestSent; 
-	private WebHeaderCollection webHeaders; 
-	private bool keepAlive; 
-	private int maxAutoRedirect; 
-	private string mediaType; 
-	private string method; 
-	private string initialMethod; 
-	private bool pipelined; 
-	private bool preAuthenticate; 
-	private bool usedPreAuth; 
-	private Version version; 
-	private bool force_version; 
-	private Version actualVersion; 
-	private IWebProxy proxy; 
-	private bool sendChunked; 
-	private ServicePoint servicePoint; 
-	private int timeout; 
-	private WebConnectionStream writeStream; 
-	private HttpWebResponse webResponse; 
-	private WebAsyncResult asyncWrite; 
-	private WebAsyncResult asyncRead; 
-	private EventHandler abortHandler; 
-	private int aborted; 
-	private bool gotRequestStream; 
-	private int redirects; 
-	private bool expectContinue; 
-	private byte[] bodyBuffer; 
-	private int bodyBufferLength; 
-	private bool getResponseCalled; 
-	private Exception saved_exc; 
-	private object locker; 
-	private bool finished_reading; 
-	internal WebConnection WebConnection; 
-	private DecompressionMethods auto_decomp; 
-	private static int defaultMaxResponseHeadersLength; 
-	private int readWriteTimeout; 
-	private MonoTlsProvider tlsProvider; 
-	private MonoTlsSettings tlsSettings; 
-	private ServerCertValidationCallback certValidationCallback; 
-	private HttpWebRequest.AuthorizationState auth_state; 
-	private HttpWebRequest.AuthorizationState proxy_auth_state; 
-	private string host; 
-	internal Action<Stream> ResendContentFactory; 
-	[CompilerGeneratedAttribute] 
-	private bool <ThrowOnError>k__BackingField; 
-	private bool unsafe_auth_blah; 
-	[CompilerGeneratedAttribute] 
-	private bool <ReuseConnection>k__BackingField; 
-	internal WebConnection StoredConnection; 
+	private Uri requestUri;
+	private Uri actualUri;
+	private bool hostChanged;
+	private bool allowAutoRedirect;
+	private bool allowBuffering;
+	private X509CertificateCollection certificates;
+	private string connectionGroup;
+	private bool haveContentLength;
+	private long contentLength;
+	private HttpContinueDelegate continueDelegate;
+	private CookieContainer cookieContainer;
+	private ICredentials credentials;
+	private bool haveResponse;
+	private bool haveRequest;
+	private bool requestSent;
+	private WebHeaderCollection webHeaders;
+	private bool keepAlive;
+	private int maxAutoRedirect;
+	private string mediaType;
+	private string method;
+	private string initialMethod;
+	private bool pipelined;
+	private bool preAuthenticate;
+	private bool usedPreAuth;
+	private Version version;
+	private bool force_version;
+	private Version actualVersion;
+	private IWebProxy proxy;
+	private bool sendChunked;
+	private ServicePoint servicePoint;
+	private int timeout;
+	private WebConnectionStream writeStream;
+	private HttpWebResponse webResponse;
+	private WebAsyncResult asyncWrite;
+	private WebAsyncResult asyncRead;
+	private EventHandler abortHandler;
+	private int aborted;
+	private bool gotRequestStream;
+	private int redirects;
+	private bool expectContinue;
+	private byte[] bodyBuffer;
+	private int bodyBufferLength;
+	private bool getResponseCalled;
+	private Exception saved_exc;
+	private object locker;
+	private bool finished_reading;
+	internal WebConnection WebConnection;
+	private DecompressionMethods auto_decomp;
+	private static int defaultMaxResponseHeadersLength;
+	private int readWriteTimeout;
+	private MonoTlsProvider tlsProvider;
+	private MonoTlsSettings tlsSettings;
+	private ServerCertValidationCallback certValidationCallback;
+	private HttpWebRequest.AuthorizationState auth_state;
+	private HttpWebRequest.AuthorizationState proxy_auth_state;
+	private string host;
+	internal Action<Stream> ResendContentFactory;
+	[CompilerGeneratedAttribute]
+	private bool <ThrowOnError>k__BackingField;
+	private bool unsafe_auth_blah;
+	[CompilerGeneratedAttribute]
+	private bool <ReuseConnection>k__BackingField;
+	internal WebConnection StoredConnection;
 
 	public string Accept { set; }
 	public Uri Address { get; set; }
@@ -115,7 +115,7 @@ public class HttpWebRequest : WebRequest, ISerializable // TypeDefIndex: 3006
 
 	public void .ctor(Uri uri) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
 	private void ResetAuthorization() { }
@@ -158,10 +158,10 @@ public class HttpWebRequest : WebRequest, ISerializable // TypeDefIndex: 3006
 
 	internal void set_InternalContentLength(long value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_ThrowOnError() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_ThrowOnError(bool value) { }
 
 	public override string get_ContentType() { }
@@ -304,30 +304,30 @@ public class HttpWebRequest : WebRequest, ISerializable // TypeDefIndex: 3006
 
 	private bool CheckFinalStatus(WebAsyncResult result) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_ReuseConnection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_ReuseConnection(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SetWriteStream>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SetWriteStream>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <SetWriteStreamInner>
 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public void .ctor() { }
 
 }
 
 private enum HttpWebRequest.NtlmAuthState // TypeDefIndex: 3007
 {
-	public int value__; 
+	public int value__;
 	public const HttpWebRequest.NtlmAuthState None = 0;
 	public const HttpWebRequest.NtlmAuthState Challenge = 1;
 	public const HttpWebRequest.NtlmAuthState Response = 2;
@@ -336,10 +336,10 @@ private enum HttpWebRequest.NtlmAuthState // TypeDefIndex: 3007
 
 private struct HttpWebRequest.AuthorizationState // TypeDefIndex: 3008
 {
-	private readonly HttpWebRequest request; 
-	private readonly bool isProxy; 
-	private bool isCompleted; 
-	private HttpWebRequest.NtlmAuthState ntlm_auth_state; 
+	private readonly HttpWebRequest request;
+	private readonly bool isProxy;
+	private bool isCompleted;
+	private HttpWebRequest.NtlmAuthState ntlm_auth_state;
 
 	public bool IsCompleted { get; }
 	public HttpWebRequest.NtlmAuthState NtlmAuthState { get; }
@@ -364,8 +364,8 @@ private struct HttpWebRequest.AuthorizationState // TypeDefIndex: 3008
 
 private sealed class HttpWebRequest.<>c__DisplayClass238_0 // TypeDefIndex: 3009
 {
-	public WebAsyncResult aread; 
-	public HttpWebRequest <>4__this; 
+	public WebAsyncResult aread;
+	public HttpWebRequest <>4__this;
 
 
 	public void .ctor() { }

@@ -1,36 +1,36 @@
-public class WaterRendering // TypeDefIndex: 12369
+public class WaterRendering // TypeDefIndex: 12377
 {
-	private WaterSystem water; 
-	private WaterSimulation simulation; 
-	private Camera camera; 
-	private PostOpaqueDepth postOpaqueDepth; 
-	private int width; 
-	private int height; 
-	private bool initialized; 
-	private WaterRadialMesh radialMesh; 
-	private WaterRendering.RenderState state; 
+	private WaterSystem water;
+	private WaterSimulation simulation;
+	private Camera camera;
+	private PostOpaqueDepth postOpaqueDepth;
+	private int width;
+	private int height;
+	private bool initialized;
+	private WaterRadialMesh radialMesh;
+	private WaterRendering.RenderState state;
 	private const int MaxCullingVolumes = 4;
 	private const float MaxCullingVolumeDistanceToCamera = 500;
 	private const float MaxCullingVolumeSqrDistanceToCamera = 250000;
-	private static Vector4[] cullingVolumeArray; 
-	private static Plane[] frustumPlanes; 
-	private Material reflectionMat; 
-	private Material underwaterMat; 
-	private Material multiCopyMat; 
-	private RenderTexture surfaceTex; 
-	private RenderTexture preFogBackgroundTex; 
-	private RenderTexture ssrReflectionTex; 
-	private Mesh overlayMesh; 
-	private float underwaterScatterCoefficientOverride; 
-	private MaterialPropertyBlock underwaterBlock; 
-	private CommandBufferManager commandBufferManager; 
-	private CommandBufferDesc setGlobalsCBDesc; 
-	private CommandBufferDesc waterMaskCBDesc; 
-	private CommandBufferDesc waterDepthCBDesc; 
-	private CommandBufferDesc preFogCBDesc; 
-	private CommandBufferDesc postFogCBDesc; 
-	private RenderTargetIdentifier[] targets; 
-	private bool initializedMaterials; 
+	private static Vector4[] cullingVolumeArray;
+	private static Plane[] frustumPlanes;
+	private Material reflectionMat;
+	private Material underwaterMat;
+	private Material multiCopyMat;
+	private RenderTexture surfaceTex;
+	private RenderTexture preFogBackgroundTex;
+	private RenderTexture ssrReflectionTex;
+	private Mesh overlayMesh;
+	private float underwaterScatterCoefficientOverride;
+	private MaterialPropertyBlock underwaterBlock;
+	private CommandBufferManager commandBufferManager;
+	private CommandBufferDesc setGlobalsCBDesc;
+	private CommandBufferDesc waterMaskCBDesc;
+	private CommandBufferDesc waterDepthCBDesc;
+	private CommandBufferDesc preFogCBDesc;
+	private CommandBufferDesc postFogCBDesc;
+	private RenderTargetIdentifier[] targets;
+	private bool initializedMaterials;
 
 	public bool IsInitialized { get; }
 	public Material ReflectionMaterial { get; }
@@ -106,23 +106,23 @@ public class WaterRendering // TypeDefIndex: 12369
 
 }
 
-private struct WaterRendering.RenderState // TypeDefIndex: 12370
+private struct WaterRendering.RenderState // TypeDefIndex: 12378
 {
-	public Camera camera; 
-	public int layer; 
-	public bool simulation; 
-	public bool displacement; 
-	public int reflections; 
-	public bool caustics; 
-	public int visibilityMask; 
-	public List<WaterCullingVolume> cullingVolumes; 
+	public Camera camera;
+	public int layer;
+	public bool simulation;
+	public bool displacement;
+	public int reflections;
+	public bool caustics;
+	public int visibilityMask;
+	public List<WaterCullingVolume> cullingVolumes;
 
 }
 
-private sealed class WaterRendering.<>c // TypeDefIndex: 12371
+private sealed class WaterRendering.<>c // TypeDefIndex: 12379
 {
-	public static readonly WaterRendering.<>c <>9; 
-	public static Comparison<WaterCullingVolume> <>9__62_0; 
+	public static readonly WaterRendering.<>c <>9;
+	public static Comparison<WaterCullingVolume> <>9__62_0;
 
 
 	private static void .cctor() { }

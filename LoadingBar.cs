@@ -1,9 +1,9 @@
-public class LoadingBar : MonoBehaviour // TypeDefIndex: 7088
+public class LoadingBar : MonoBehaviour // TypeDefIndex: 7090
 {
-	public CanvasGroup Canvas; 
-	public Text Label; 
-	public Text SubLabel; 
-	public Image ProgressImage; 
+	public CanvasGroup Canvas;
+	public Text Label;
+	public Text SubLabel;
+	public Image ProgressImage;
 
 	public bool Active { set; }
 	public float Progress { set; }

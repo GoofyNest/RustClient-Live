@@ -1,6 +1,6 @@
-public class PrefabPoolCollection // TypeDefIndex: 13213
+public class PrefabPoolCollection // TypeDefIndex: 13228
 {
-	public Dictionary<uint, PrefabPool> storage; 
+	public Dictionary<uint, PrefabPool> storage;
 
 
 	public void Push(GameObject instance) { }

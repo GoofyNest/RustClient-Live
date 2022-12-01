@@ -1,8 +1,8 @@
-internal struct CopyOfferByIndexOptionsInternal : ISettable<CopyOfferByIndexOptions>, IDisposable // TypeDefIndex: 9446
+internal struct CopyOfferByIndexOptionsInternal : ISettable<CopyOfferByIndexOptions>, IDisposable // TypeDefIndex: 9448
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private uint m_OfferIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private uint m_OfferIndex;
 
 	public EpicAccountId LocalUserId { set; }
 	public uint OfferIndex { set; }

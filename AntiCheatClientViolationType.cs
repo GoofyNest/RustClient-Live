@@ -1,6 +1,6 @@
-public enum AntiCheatClientViolationType // TypeDefIndex: 9821
+public enum AntiCheatClientViolationType // TypeDefIndex: 9823
 {
-	public int value__; 
+	public int value__;
 	public const AntiCheatClientViolationType Invalid = 0;
 	public const AntiCheatClientViolationType IntegrityCatalogNotFound = 1;
 	public const AntiCheatClientViolationType IntegrityCatalogError = 2;

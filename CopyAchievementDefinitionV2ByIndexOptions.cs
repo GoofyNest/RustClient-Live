@@ -1,15 +1,15 @@
-public struct CopyAchievementDefinitionV2ByIndexOptions // TypeDefIndex: 9899
+public struct CopyAchievementDefinitionV2ByIndexOptions // TypeDefIndex: 9901
 {
-	[CompilerGeneratedAttribute] 
-	private uint <AchievementIndex>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <AchievementIndex>k__BackingField;
 
 	public uint AchievementIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AchievementIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementIndex(uint value) { }
 
 }

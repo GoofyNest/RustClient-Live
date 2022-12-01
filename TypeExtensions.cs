@@ -1,46 +1,46 @@
-internal static class TypeExtensions // TypeDefIndex: 5978
+internal static class TypeExtensions // TypeDefIndex: 5980
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static MemberTypes MemberType(MemberInfo memberInfo) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ContainsGenericParameters(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsInterface(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsGenericType(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsGenericTypeDefinition(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Type BaseType(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsEnum(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsClass(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsSealed(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsAbstract(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsValueType(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool AssignableToTypeName(Type type, string fullTypeName, out Type match) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool AssignableToTypeName(Type type, string fullTypeName) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ImplementInterface(Type type, Type interfaceType) { }
 
 }

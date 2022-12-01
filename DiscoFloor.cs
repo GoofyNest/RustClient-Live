@@ -1,12 +1,12 @@
-public class DiscoFloor : AudioVisualisationEntity // TypeDefIndex: 11173
+public class DiscoFloor : AudioVisualisationEntity // TypeDefIndex: 11179
 {
-	public float GradientDuration; 
-	public float VolumeSensitivityMultiplier; 
-	public float BaseSpeed; 
-	public Light[] LightSources; 
-	public DiscoFloorMesh FloorMesh; 
-	private float currentFloorTime; 
-	private DiscoFloorColourLookups cachedLookups; 
+	public float GradientDuration;
+	public float VolumeSensitivityMultiplier;
+	public float BaseSpeed;
+	public Light[] LightSources;
+	public DiscoFloorMesh FloorMesh;
+	private float currentFloorTime;
+	private DiscoFloorColourLookups cachedLookups;
 
 	private Gradient ColourGradient { get; }
 	public override bool ShowPatternOption { get; }

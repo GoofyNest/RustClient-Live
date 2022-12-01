@@ -1,10 +1,10 @@
 public abstract class PropertyDescriptor : MemberDescriptor // TypeDefIndex: 2734
 {
-	private TypeConverter converter; 
-	private Hashtable valueChangedHandlers; 
-	private object[] editors; 
-	private Type[] editorTypes; 
-	private int editorCount; 
+	private TypeConverter converter;
+	private Hashtable valueChangedHandlers;
+	private object[] editors;
+	private Type[] editorTypes;
+	private int editorCount;
 
 	public abstract Type ComponentType { get; }
 	public virtual TypeConverter Converter { get; }

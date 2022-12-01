@@ -1,6 +1,6 @@
-public class RecordingBars : MonoBehaviour // TypeDefIndex: 12989
+public class RecordingBars : MonoBehaviour // TypeDefIndex: 13003
 {
-	public Image BorderImage; 
+	public Image BorderImage;
 
 	public Color Tint { set; }
 

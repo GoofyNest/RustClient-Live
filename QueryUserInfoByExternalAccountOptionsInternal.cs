@@ -1,9 +1,9 @@
-internal struct QueryUserInfoByExternalAccountOptionsInternal : ISettable<QueryUserInfoByExternalAccountOptions>, IDisposable // TypeDefIndex: 8322
+internal struct QueryUserInfoByExternalAccountOptionsInternal : ISettable<QueryUserInfoByExternalAccountOptions>, IDisposable // TypeDefIndex: 8324
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ExternalAccountId; 
-	private ExternalAccountType m_AccountType; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ExternalAccountId;
+	private ExternalAccountType m_AccountType;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String ExternalAccountId { set; }

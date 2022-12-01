@@ -1,13 +1,13 @@
-public class BaseBoat : BaseVehicle // TypeDefIndex: 10032
+public class BaseBoat : BaseVehicle // TypeDefIndex: 10034
 {
-	private Option __menuOption_Menu_Push; 
-	public float engineThrust; 
-	public float steeringScale; 
-	public float gasPedal; 
-	public float steering; 
-	public Transform thrustPoint; 
-	public Transform centerOfMass; 
-	public Buoyancy buoyancy; 
+	private Option __menuOption_Menu_Push;
+	public float engineThrust;
+	public float steeringScale;
+	public float gasPedal;
+	public float steering;
+	public Transform thrustPoint;
+	public Transform centerOfMass;
+	public Buoyancy buoyancy;
 
 	public override bool HasMenuOptions { get; }
 
@@ -20,10 +20,12 @@ public class BaseBoat : BaseVehicle // TypeDefIndex: 10032
 
 	public override float MaxVelocity() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	public override bool MountMenuVisible(BasePlayer player) { }
+
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public virtual void Menu_Push(BasePlayer player) { }
 
 	public virtual bool EngineInWater() { }

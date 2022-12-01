@@ -1,11 +1,11 @@
-internal struct RegisterEventOptionsInternal : ISettable<RegisterEventOptions>, IDisposable // TypeDefIndex: 9798
+internal struct RegisterEventOptionsInternal : ISettable<RegisterEventOptions>, IDisposable // TypeDefIndex: 9800
 {
-	private int m_ApiVersion; 
-	private uint m_EventId; 
-	private IntPtr m_EventName; 
-	private AntiCheatCommonEventType m_EventType; 
-	private uint m_ParamDefsCount; 
-	private IntPtr m_ParamDefs; 
+	private int m_ApiVersion;
+	private uint m_EventId;
+	private IntPtr m_EventName;
+	private AntiCheatCommonEventType m_EventType;
+	private uint m_ParamDefsCount;
+	private IntPtr m_ParamDefs;
 
 	public uint EventId { set; }
 	public Utf8String EventName { set; }

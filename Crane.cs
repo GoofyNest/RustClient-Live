@@ -1,13 +1,13 @@
-public class Crane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6422
+public class Crane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6424
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float yaw; 
-	public float arm1; 
-	public float arm2; 
-	public float magnet; 
-	public float time; 
-	public int treadInput; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float yaw;
+	public float arm1;
+	public float arm2;
+	public float magnet;
+	public float time;
+	public int treadInput;
 
 
 	public static void ResetToPool(Crane instance) { }

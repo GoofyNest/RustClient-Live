@@ -1,17 +1,17 @@
-internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9642
+internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9644
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_ProductUserId; 
-	private int m_IsAccountInfoPresent; 
-	private ExternalAccountType m_AccountIdType; 
-	private IntPtr m_AccountId; 
-	private IntPtr m_Platform; 
-	private IntPtr m_DeviceType; 
-	private IntPtr m_ClientId; 
-	private IntPtr m_ProductId; 
-	private IntPtr m_SandboxId; 
-	private IntPtr m_DeploymentId; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_ProductUserId;
+	private int m_IsAccountInfoPresent;
+	private ExternalAccountType m_AccountIdType;
+	private IntPtr m_AccountId;
+	private IntPtr m_Platform;
+	private IntPtr m_DeviceType;
+	private IntPtr m_ClientId;
+	private IntPtr m_ProductId;
+	private IntPtr m_SandboxId;
+	private IntPtr m_DeploymentId;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -88,21 +88,21 @@ internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGett
 
 }
 
-internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9705
+internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9707
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_ApplicationId; 
-	private IntPtr m_ClientId; 
-	private IntPtr m_ProductId; 
-	private IntPtr m_SandboxId; 
-	private IntPtr m_DeploymentId; 
-	private IntPtr m_DisplayName; 
-	private int m_IsExternalAccountInfoPresent; 
-	private ExternalAccountType m_ExternalAccountIdType; 
-	private IntPtr m_ExternalAccountId; 
-	private IntPtr m_ExternalAccountDisplayName; 
-	private IntPtr m_Platform; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_ApplicationId;
+	private IntPtr m_ClientId;
+	private IntPtr m_ProductId;
+	private IntPtr m_SandboxId;
+	private IntPtr m_DeploymentId;
+	private IntPtr m_DisplayName;
+	private int m_IsExternalAccountInfoPresent;
+	private ExternalAccountType m_ExternalAccountIdType;
+	private IntPtr m_ExternalAccountId;
+	private IntPtr m_ExternalAccountDisplayName;
+	private IntPtr m_Platform;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

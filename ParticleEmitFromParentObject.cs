@@ -1,10 +1,10 @@
-public class ParticleEmitFromParentObject : MonoBehaviour // TypeDefIndex: 11090
+public class ParticleEmitFromParentObject : MonoBehaviour // TypeDefIndex: 11096
 {
-	public string bonename; 
-	private Bounds bounds; 
-	private Transform bone; 
-	private BaseEntity entity; 
-	private float lastBoundsUpdate; 
+	public string bonename;
+	private Bounds bounds;
+	private Transform bone;
+	private BaseEntity entity;
+	private float lastBoundsUpdate;
 
 
 	private void OnEnable() { }

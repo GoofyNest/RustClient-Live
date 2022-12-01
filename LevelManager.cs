@@ -1,6 +1,6 @@
-public static class LevelManager // TypeDefIndex: 11704
+public static class LevelManager // TypeDefIndex: 11711
 {
-	public static string CurrentLevelName; 
+	public static string CurrentLevelName;
 
 	public static bool isLoaded { get; }
 
@@ -11,39 +11,39 @@ public static class LevelManager // TypeDefIndex: 11704
 
 	public static void LoadLevel(string strName, bool keepLoadingScreenOpen = True) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerator LoadLevelAsync(string strName, bool keepLoadingScreenOpen = True) { }
 
 	public static void UnloadLevel(bool loadingScreen = True) { }
 
 }
 
-private sealed class LevelManager.<LoadLevelAsync>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11705
+private sealed class LevelManager.<LoadLevelAsync>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11712
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string strName; 
-	public bool keepLoadingScreenOpen; 
+	private int <>1__state;
+	private object <>2__current;
+	public string strName;
+	public bool keepLoadingScreenOpen;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

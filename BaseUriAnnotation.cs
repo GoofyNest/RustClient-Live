@@ -1,6 +1,6 @@
-internal class BaseUriAnnotation // TypeDefIndex: 5831
+internal class BaseUriAnnotation // TypeDefIndex: 5833
 {
-	internal string baseUri; 
+	internal string baseUri;
 
 
 	public void .ctor(string baseUri) { }

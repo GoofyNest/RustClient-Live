@@ -1,8 +1,8 @@
-internal static class JavaScriptUtils // TypeDefIndex: 5966
+internal static class JavaScriptUtils // TypeDefIndex: 5968
 {
-	internal static readonly bool[] SingleQuoteCharEscapeFlags; 
-	internal static readonly bool[] DoubleQuoteCharEscapeFlags; 
-	internal static readonly bool[] HtmlCharEscapeFlags; 
+	internal static readonly bool[] SingleQuoteCharEscapeFlags;
+	internal static readonly bool[] DoubleQuoteCharEscapeFlags;
+	internal static readonly bool[] HtmlCharEscapeFlags;
 
 
 	private static void .cctor() { }

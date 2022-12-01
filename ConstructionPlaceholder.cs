@@ -1,9 +1,9 @@
-public class ConstructionPlaceholder : PrefabAttribute, IPrefabPreProcess // TypeDefIndex: 10785
+public class ConstructionPlaceholder : PrefabAttribute, IPrefabPreProcess // TypeDefIndex: 10789
 {
-	public Mesh mesh; 
-	public Material material; 
-	public bool renderer; 
-	public bool collider; 
+	public Mesh mesh;
+	public Material material;
+	public bool renderer;
+	public bool collider;
 
 
 	protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }

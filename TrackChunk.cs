@@ -1,14 +1,14 @@
-public sealed class TrackChunk : MidiChunk // TypeDefIndex: 7525
+public sealed class TrackChunk : MidiChunk // TypeDefIndex: 7527
 {
-	[CompilerGeneratedAttribute] 
-	private readonly EventsCollection <Events>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly EventsCollection <Events>k__BackingField;
 
 	public EventsCollection Events { get; }
 
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventsCollection get_Events() { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, uint size) { }

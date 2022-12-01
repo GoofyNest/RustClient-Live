@@ -1,15 +1,15 @@
-public struct PrePresentOptions // TypeDefIndex: 8366
+public struct PrePresentOptions // TypeDefIndex: 8368
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <PlatformSpecificData>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <PlatformSpecificData>k__BackingField;
 
 	public IntPtr PlatformSpecificData { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_PlatformSpecificData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlatformSpecificData(IntPtr value) { }
 
 	internal void Set(ref PrePresentOptionsInternal other) { }

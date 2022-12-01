@@ -1,20 +1,20 @@
-public class SelectedContact : SingletonComponent<SelectedContact> // TypeDefIndex: 12732
+public class SelectedContact : SingletonComponent<SelectedContact> // TypeDefIndex: 12746
 {
-	public RustText nameText; 
-	public RustText seenText; 
-	public RawImage mugshotImage; 
-	public Texture2D unknownMugshot; 
-	public InputField noteInput; 
-	public GameObject[] relationshipTypeTags; 
-	public Translate.Phrase lastSeenPrefix; 
-	public Translate.Phrase nowPhrase; 
-	public Translate.Phrase agoSuffix; 
-	public RustButton FriendlyButton; 
-	public RustButton SeenButton; 
-	public RustButton EnemyButton; 
-	public RustButton chatMute; 
-	private ulong selectedPlayerId; 
-	private RelationshipManager.RelationshipType selectedPlayerRelationship; 
+	public RustText nameText;
+	public RustText seenText;
+	public RawImage mugshotImage;
+	public Texture2D unknownMugshot;
+	public InputField noteInput;
+	public GameObject[] relationshipTypeTags;
+	public Translate.Phrase lastSeenPrefix;
+	public Translate.Phrase nowPhrase;
+	public Translate.Phrase agoSuffix;
+	public RustButton FriendlyButton;
+	public RustButton SeenButton;
+	public RustButton EnemyButton;
+	public RustButton chatMute;
+	private ulong selectedPlayerId;
+	private RelationshipManager.RelationshipType selectedPlayerRelationship;
 
 
 	public void SetSelected_Internal(RelationshipManager.PlayerRelationshipInfo selected) { }

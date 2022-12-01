@@ -1,14 +1,14 @@
 public abstract class SymmetricAlgorithm : IDisposable // TypeDefIndex: 999
 {
-	protected int BlockSizeValue; 
-	protected int FeedbackSizeValue; 
-	protected byte[] IVValue; 
-	protected byte[] KeyValue; 
-	protected KeySizes[] LegalBlockSizesValue; 
-	protected KeySizes[] LegalKeySizesValue; 
-	protected int KeySizeValue; 
-	protected CipherMode ModeValue; 
-	protected PaddingMode PaddingValue; 
+	protected int BlockSizeValue;
+	protected int FeedbackSizeValue;
+	protected byte[] IVValue;
+	protected byte[] KeyValue;
+	protected KeySizes[] LegalBlockSizesValue;
+	protected KeySizes[] LegalKeySizesValue;
+	protected int KeySizeValue;
+	protected CipherMode ModeValue;
+	protected PaddingMode PaddingValue;
 
 	public virtual int BlockSize { get; set; }
 	public virtual int FeedbackSize { get; }

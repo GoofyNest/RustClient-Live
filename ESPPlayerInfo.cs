@@ -1,33 +1,35 @@
-public class ESPPlayerInfo : MonoBehaviour // TypeDefIndex: 13795
+public class ESPPlayerInfo : MonoBehaviour // TypeDefIndex: 13811
 {
-	public Vector3 WorldOffset; 
-	public TextMeshProUGUI Text; 
-	public TextMeshProUGUI Image; 
-	public CanvasGroup group; 
-	public Gradient gradientNormal; 
-	public Gradient gradientTeam; 
-	public Color TeamColor; 
-	public Color AllyColor; 
-	public Color EnemyColor; 
-	public QueryVis visCheck; 
-	[CompilerGeneratedAttribute] 
-	private BasePlayer <Entity>k__BackingField; 
-	[ClientVar] 
-	[HelpAttribute] 
-	public static float framebudgetms; 
-	private bool inQueue; 
-	public static ESPPlayerInfo.ESPWorkQueue workQueue; 
-	private int numFramesVisible; 
-	private float distanceFromCamera; 
-	private TimeSince lastHealthUpdate; 
+	public Vector3 WorldOffset;
+	public TextMeshProUGUI Text;
+	public TextMeshProUGUI Image;
+	public CanvasGroup group;
+	public Gradient gradientNormal;
+	public Gradient gradientTeam;
+	public Color TeamColor;
+	public Color AllyColor;
+	public Color EnemyColor;
+	public QueryVis visCheck;
+	[CompilerGeneratedAttribute]
+	private BasePlayer <Entity>k__BackingField;
+	[ClientVar]
+	[HelpAttribute]
+	public static float framebudgetms;
+	private bool inQueue;
+	public static ESPPlayerInfo.ESPWorkQueue workQueue;
+	private Vector3 playerVisPosHead;
+	private Vector3 playerVisPosSpine;
+	private int numFramesVisible;
+	private float distanceFromCamera;
+	private TimeSince lastHealthUpdate;
 
 	public BasePlayer Entity { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BasePlayer get_Entity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Entity(BasePlayer value) { }
 
 	public void Clear() { }
@@ -64,7 +66,7 @@ public class ESPPlayerInfo : MonoBehaviour // TypeDefIndex: 13795
 
 }
 
-public class ESPPlayerInfo.ESPWorkQueue : ObjectWorkQueue<ESPPlayerInfo> // TypeDefIndex: 13796
+public class ESPPlayerInfo.ESPWorkQueue : ObjectWorkQueue<ESPPlayerInfo> // TypeDefIndex: 13812
 {
 
 	protected override void RunJob(ESPPlayerInfo entity) { }

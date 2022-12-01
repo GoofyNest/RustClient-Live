@@ -1,8 +1,8 @@
-public struct Half3 : IProto // TypeDefIndex: 6485
+public struct Half3 : IProto // TypeDefIndex: 6487
 {
-	public uint x; 
-	public uint y; 
-	public uint z; 
+	public uint x;
+	public uint y;
+	public uint z;
 
 
 	public static void ResetToPool(Half3 instance) { }
@@ -49,11 +49,11 @@ public struct Half3 : IProto // TypeDefIndex: 6485
 
 }
 
-public struct Half3 // TypeDefIndex: 13208
+public struct Half3 // TypeDefIndex: 13223
 {
-	public ushort x; 
-	public ushort y; 
-	public ushort z; 
+	public ushort x;
+	public ushort y;
+	public ushort z;
 
 
 	public void .ctor(Vector3 vec) { }

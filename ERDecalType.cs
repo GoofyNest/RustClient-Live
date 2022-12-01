@@ -1,6 +1,6 @@
-public enum ERDecalType // TypeDefIndex: 7226
+public enum ERDecalType // TypeDefIndex: 7228
 {
-	public int value__; 
+	public int value__;
 	public const ERDecalType StartEnd = 0;
 	public const ERDecalType LineMarking = 1;
 	public const ERDecalType StopMarking = 2;

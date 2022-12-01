@@ -1,8 +1,8 @@
-public class TimedEvent : ITimedObject // TypeDefIndex: 7472
+public class TimedEvent : ITimedObject // TypeDefIndex: 7474
 {
-	internal long _time; 
-	[CompilerGeneratedAttribute] 
-	private readonly MidiEvent <Event>k__BackingField; 
+	internal long _time;
+	[CompilerGeneratedAttribute]
+	private readonly MidiEvent <Event>k__BackingField;
 
 	public MidiEvent Event { get; }
 	public long Time { get; }
@@ -10,7 +10,7 @@ public class TimedEvent : ITimedObject // TypeDefIndex: 7472
 
 	public void .ctor(MidiEvent midiEvent) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MidiEvent get_Event() { }
 
 	public long get_Time() { }

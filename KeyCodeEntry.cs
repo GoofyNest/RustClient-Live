@@ -1,16 +1,17 @@
-public class KeyCodeEntry : UIDialog // TypeDefIndex: 12655
+public class KeyCodeEntry : UIDialog // TypeDefIndex: 12669
 {
-	public Text textDisplay; 
-	public Action<string> onCodeEntered; 
-	public Text typeDisplay; 
-	public Translate.Phrase masterCodePhrase; 
-	public Translate.Phrase guestCodePhrase; 
-	public GameObject memoryKeycodeButton; 
-	private static string lastCodeEntered; 
-	private string textEntered; 
-	private TimeSince lastKeyDelete; 
-	private bool isEnteringNumber; 
-	private int lastEnteredFrame; 
+	public Text textDisplay;
+	public Action<string> onCodeEntered;
+	public Action onClosed;
+	public Text typeDisplay;
+	public Translate.Phrase masterCodePhrase;
+	public Translate.Phrase guestCodePhrase;
+	public GameObject memoryKeycodeButton;
+	private static string lastCodeEntered;
+	private string textEntered;
+	private TimeSince lastKeyDelete;
+	private bool isEnteringNumber;
+	private int lastEnteredFrame;
 
 
 	public void SetUsingGuestCode(bool should) { }
@@ -18,6 +19,8 @@ public class KeyCodeEntry : UIDialog // TypeDefIndex: 12655
 	protected override void OnEnable() { }
 
 	public void Cancel() { }
+
+	public override void CloseDialog() { }
 
 	public void ClearCode() { }
 
@@ -27,7 +30,7 @@ public class KeyCodeEntry : UIDialog // TypeDefIndex: 12655
 
 	public void EnterLastUsedNumber() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator ProcessLastNumberInput() { }
 
 	public void EnterNumber(int i) { }
@@ -40,32 +43,32 @@ public class KeyCodeEntry : UIDialog // TypeDefIndex: 12655
 
 }
 
-private sealed class KeyCodeEntry.<ProcessLastNumberInput>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12656
+private sealed class KeyCodeEntry.<ProcessLastNumberInput>d__19 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12670
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public KeyCodeEntry <>4__this; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public KeyCodeEntry <>4__this;
+	private int <i>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

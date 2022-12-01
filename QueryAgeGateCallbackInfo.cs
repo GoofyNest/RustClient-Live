@@ -1,13 +1,13 @@
-public struct QueryAgeGateCallbackInfo : ICallbackInfo // TypeDefIndex: 9352
+public struct QueryAgeGateCallbackInfo : ICallbackInfo // TypeDefIndex: 9354
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <CountryCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AgeOfConsent>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <CountryCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AgeOfConsent>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -15,28 +15,28 @@ public struct QueryAgeGateCallbackInfo : ICallbackInfo // TypeDefIndex: 9352
 	public uint AgeOfConsent { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_CountryCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CountryCode(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AgeOfConsent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AgeOfConsent(uint value) { }
 
 	public Nullable<Result> GetResultCode() { }

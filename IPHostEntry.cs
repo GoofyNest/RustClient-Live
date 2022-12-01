@@ -1,9 +1,9 @@
 public class IPHostEntry // TypeDefIndex: 2884
 {
-	private string hostName; 
-	private string[] aliases; 
-	private IPAddress[] addressList; 
-	internal bool isTrustedHost; 
+	private string hostName;
+	private string[] aliases;
+	private IPAddress[] addressList;
+	internal bool isTrustedHost;
 
 	public string HostName { get; set; }
 	public string[] Aliases { set; }

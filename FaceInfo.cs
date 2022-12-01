@@ -1,66 +1,66 @@
 public struct FaceInfo // TypeDefIndex: 4114
 {
 
-[UsedByNativeCodeAttribute] 
+[UsedByNativeCodeAttribute]
 [Serializable]
 public struct FaceInfo
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private string m_FamilyName; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private string m_StyleName; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private int m_PointSize; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_Scale; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_LineHeight; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_AscentLine; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_CapLine; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_MeanLine; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_Baseline; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_DescentLine; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_SuperscriptOffset; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_SuperscriptSize; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_SubscriptOffset; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_SubscriptSize; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_UnderlineOffset; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_UnderlineThickness; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_StrikethroughOffset; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_StrikethroughThickness; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_TabWidth; 
+	[NativeNameAttribute]
+	[SerializeField]
+	private string m_FamilyName;
+	[SerializeField]
+	[NativeNameAttribute]
+	private string m_StyleName;
+	[NativeNameAttribute]
+	[SerializeField]
+	private int m_PointSize;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_Scale;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_LineHeight;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_AscentLine;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_CapLine;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_MeanLine;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_Baseline;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_DescentLine;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_SuperscriptOffset;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_SuperscriptSize;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_SubscriptOffset;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_SubscriptSize;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_UnderlineOffset;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_UnderlineThickness;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_StrikethroughOffset;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_StrikethroughThickness;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_TabWidth;
 
 	public string familyName { set; }
 	public string styleName { set; }
@@ -153,29 +153,29 @@ public struct FaceInfo
 
 }
 
-public class FaceInfo_Legacy // TypeDefIndex: 6702
+public class FaceInfo_Legacy // TypeDefIndex: 6704
 {
-	public string Name; 
-	public float PointSize; 
-	public float Scale; 
-	public int CharacterCount; 
-	public float LineHeight; 
-	public float Baseline; 
-	public float Ascender; 
-	public float CapHeight; 
-	public float Descender; 
-	public float CenterLine; 
-	public float SuperscriptOffset; 
-	public float SubscriptOffset; 
-	public float SubSize; 
-	public float Underline; 
-	public float UnderlineThickness; 
-	public float strikethrough; 
-	public float strikethroughThickness; 
-	public float TabWidth; 
-	public float Padding; 
-	public float AtlasWidth; 
-	public float AtlasHeight; 
+	public string Name;
+	public float PointSize;
+	public float Scale;
+	public int CharacterCount;
+	public float LineHeight;
+	public float Baseline;
+	public float Ascender;
+	public float CapHeight;
+	public float Descender;
+	public float CenterLine;
+	public float SuperscriptOffset;
+	public float SubscriptOffset;
+	public float SubSize;
+	public float Underline;
+	public float UnderlineThickness;
+	public float strikethrough;
+	public float strikethroughThickness;
+	public float TabWidth;
+	public float Padding;
+	public float AtlasWidth;
+	public float AtlasHeight;
 
 
 	public void .ctor() { }

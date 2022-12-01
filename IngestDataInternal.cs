@@ -1,8 +1,8 @@
-internal struct IngestDataInternal : IGettable<IngestData>, ISettable<IngestData>, IDisposable // TypeDefIndex: 8433
+internal struct IngestDataInternal : IGettable<IngestData>, ISettable<IngestData>, IDisposable // TypeDefIndex: 8435
 {
-	private int m_ApiVersion; 
-	private IntPtr m_StatName; 
-	private int m_IngestAmount; 
+	private int m_ApiVersion;
+	private IntPtr m_StatName;
+	private int m_IngestAmount;
 
 	public Utf8String StatName { get; set; }
 	public int IngestAmount { get; set; }

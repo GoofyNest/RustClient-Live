@@ -1,7 +1,7 @@
-public class WeightedStringList // TypeDefIndex: 6221
+public class WeightedStringList // TypeDefIndex: 6223
 {
-	public List<WeightedStringList.Container> Objects; 
-	private float _total; 
+	public List<WeightedStringList.Container> Objects;
+	private float _total;
 
 	private float Total { get; }
 
@@ -16,17 +16,17 @@ public class WeightedStringList // TypeDefIndex: 6221
 
 }
 
-public struct WeightedStringList.Container // TypeDefIndex: 6222
+public struct WeightedStringList.Container // TypeDefIndex: 6224
 {
-	public float Weight; 
-	public string Object; 
+	public float Weight;
+	public string Object;
 
 }
 
-private sealed class WeightedStringList.<>c // TypeDefIndex: 6223
+private sealed class WeightedStringList.<>c // TypeDefIndex: 6225
 {
-	public static readonly WeightedStringList.<>c <>9; 
-	public static Func<WeightedStringList.Container, float> <>9__3_0; 
+	public static readonly WeightedStringList.<>c <>9;
+	public static Func<WeightedStringList.Container, float> <>9__3_0;
 
 
 	private static void .cctor() { }

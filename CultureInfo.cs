@@ -1,43 +1,43 @@
 public class CultureInfo : ICloneable, IFormatProvider // TypeDefIndex: 741
 {
-	private static CultureInfo invariant_culture_info; 
-	private static object shared_table_lock; 
-	private static CultureInfo default_current_culture; 
-	private bool m_isReadOnly; 
-	private int cultureID; 
-	private int parent_lcid; 
-	private int datetime_index; 
-	private int number_index; 
-	private int default_calendar_type; 
-	private bool m_useUserOverride; 
-	internal NumberFormatInfo numInfo; 
-	internal DateTimeFormatInfo dateTimeInfo; 
-	private TextInfo textInfo; 
-	internal string m_name; 
-	private string englishname; 
-	private string nativename; 
-	private string iso3lang; 
-	private string iso2lang; 
-	private string win3lang; 
-	private string territory; 
-	private string[] native_calendar_names; 
-	private CompareInfo compareInfo; 
-	private readonly void* textinfo_data; 
-	private int m_dataItem; 
-	private Calendar calendar; 
-	private CultureInfo parent_culture; 
-	private bool constructed; 
-	internal byte[] cached_serialized_form; 
-	internal CultureData m_cultureData; 
-	internal bool m_isInherited; 
+	private static CultureInfo invariant_culture_info;
+	private static object shared_table_lock;
+	private static CultureInfo default_current_culture;
+	private bool m_isReadOnly;
+	private int cultureID;
+	private int parent_lcid;
+	private int datetime_index;
+	private int number_index;
+	private int default_calendar_type;
+	private bool m_useUserOverride;
+	internal NumberFormatInfo numInfo;
+	internal DateTimeFormatInfo dateTimeInfo;
+	private TextInfo textInfo;
+	internal string m_name;
+	private string englishname;
+	private string nativename;
+	private string iso3lang;
+	private string iso2lang;
+	private string win3lang;
+	private string territory;
+	private string[] native_calendar_names;
+	private CompareInfo compareInfo;
+	private readonly void* textinfo_data;
+	private int m_dataItem;
+	private Calendar calendar;
+	private CultureInfo parent_culture;
+	private bool constructed;
+	internal byte[] cached_serialized_form;
+	internal CultureData m_cultureData;
+	internal bool m_isInherited;
 	internal const int InvariantCultureId = 127;
 	private const int CalendarTypeBits = 8;
 	private const string MSG_READONLY = "This instance is read only";
-	private static CultureInfo s_DefaultThreadCurrentUICulture; 
-	private static CultureInfo s_DefaultThreadCurrentCulture; 
-	private static Dictionary<int, CultureInfo> shared_by_number; 
-	private static Dictionary<string, CultureInfo> shared_by_name; 
-	internal static readonly bool IsTaiwanSku; 
+	private static CultureInfo s_DefaultThreadCurrentUICulture;
+	private static CultureInfo s_DefaultThreadCurrentCulture;
+	private static Dictionary<int, CultureInfo> shared_by_number;
+	private static Dictionary<string, CultureInfo> shared_by_name;
+	internal static readonly bool IsTaiwanSku;
 
 	public static CultureInfo InvariantCulture { get; }
 	public static CultureInfo CurrentCulture { get; }
@@ -187,12 +187,12 @@ public class CultureInfo : ICloneable, IFormatProvider // TypeDefIndex: 741
 
 private struct CultureInfo.Data // TypeDefIndex: 742
 {
-	public int ansi; 
-	public int ebcdic; 
-	public int mac; 
-	public int oem; 
-	public bool right_to_left; 
-	public byte list_sep; 
+	public int ansi;
+	public int ebcdic;
+	public int mac;
+	public int oem;
+	public bool right_to_left;
+	public byte list_sep;
 
 }
 

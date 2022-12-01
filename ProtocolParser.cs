@@ -1,6 +1,6 @@
-public static class ProtocolParser // TypeDefIndex: 6287
+public static class ProtocolParser // TypeDefIndex: 6289
 {
-	private static byte[] staticBuffer; 
+	private static byte[] staticBuffer;
 
 
 	public static float ReadSingle(Stream stream) { }
@@ -27,40 +27,40 @@ public static class ProtocolParser // TypeDefIndex: 6287
 
 	public static void WritePooledBytes(Stream stream, ArraySegment<byte> segment) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static ulong ReadFixed64(BinaryReader reader) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static long ReadSFixed64(BinaryReader reader) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static uint ReadFixed32(BinaryReader reader) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static int ReadSFixed32(BinaryReader reader) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteFixed64(BinaryWriter writer, ulong val) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteSFixed64(BinaryWriter writer, long val) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteFixed32(BinaryWriter writer, uint val) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteSFixed32(BinaryWriter writer, int val) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static float ReadFloat(BinaryReader reader) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static double ReadDouble(BinaryReader reader) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteFloat(BinaryWriter writer, float val) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteDouble(BinaryWriter writer, double val) { }
 
 	public static Key ReadKey(Stream stream) { }
@@ -77,10 +77,10 @@ public static class ProtocolParser // TypeDefIndex: 6287
 
 	public static byte[] ReadVarIntBytes(Stream stream) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static int ReadInt32(Stream stream) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteInt32(Stream stream, int val) { }
 
 	public static int ReadZInt32(Stream stream) { }
@@ -91,10 +91,10 @@ public static class ProtocolParser // TypeDefIndex: 6287
 
 	public static void WriteUInt32(Stream stream, uint val) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static int ReadInt64(Stream stream) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void WriteInt64(Stream stream, int val) { }
 
 	public static long ReadZInt64(Stream stream) { }

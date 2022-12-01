@@ -1,14 +1,14 @@
 internal class KeyPairPersistence // TypeDefIndex: 65
 {
-	private static bool _userPathExists; 
-	private static string _userPath; 
-	private static bool _machinePathExists; 
-	private static string _machinePath; 
-	private CspParameters _params; 
-	private string _keyvalue; 
-	private string _filename; 
-	private string _container; 
-	private static object lockobj; 
+	private static bool _userPathExists;
+	private static string _userPath;
+	private static bool _machinePathExists;
+	private static string _machinePath;
+	private CspParameters _params;
+	private string _keyvalue;
+	private string _filename;
+	private string _container;
+	private static object lockobj;
 
 	public string Filename { get; }
 	public string KeyValue { get; set; }

@@ -1,7 +1,7 @@
-internal struct CopyLeaderboardRecordByUserIdOptionsInternal : ISettable<CopyLeaderboardRecordByUserIdOptions>, IDisposable // TypeDefIndex: 9283
+internal struct CopyLeaderboardRecordByUserIdOptionsInternal : ISettable<CopyLeaderboardRecordByUserIdOptions>, IDisposable // TypeDefIndex: 9285
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
 
 	public ProductUserId UserId { set; }
 

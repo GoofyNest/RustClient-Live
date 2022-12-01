@@ -1,30 +1,30 @@
-public class EZSoftBoneMaterial : ScriptableObject // TypeDefIndex: 7176
+public class EZSoftBoneMaterial : ScriptableObject // TypeDefIndex: 7178
 {
-	[SerializeField] 
-	[RangeAttribute] 
-	private float m_Damping; 
-	[SerializeField] 
-	[EZCurveRectAttribute] 
-	private AnimationCurve m_DampingCurve; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float m_Stiffness; 
-	[SerializeField] 
-	[EZCurveRectAttribute] 
-	private AnimationCurve m_StiffnessCurve; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float m_Resistance; 
-	[SerializeField] 
-	[EZCurveRectAttribute] 
-	private AnimationCurve m_ResistanceCurve; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float m_Slackness; 
-	[SerializeField] 
-	[EZCurveRectAttribute] 
-	private AnimationCurve m_SlacknessCurve; 
-	private static EZSoftBoneMaterial m_DefaultMaterial; 
+	[SerializeField]
+	[RangeAttribute]
+	private float m_Damping;
+	[SerializeField]
+	[EZCurveRectAttribute]
+	private AnimationCurve m_DampingCurve;
+	[SerializeField]
+	[RangeAttribute]
+	private float m_Stiffness;
+	[SerializeField]
+	[EZCurveRectAttribute]
+	private AnimationCurve m_StiffnessCurve;
+	[SerializeField]
+	[RangeAttribute]
+	private float m_Resistance;
+	[SerializeField]
+	[EZCurveRectAttribute]
+	private AnimationCurve m_ResistanceCurve;
+	[SerializeField]
+	[RangeAttribute]
+	private float m_Slackness;
+	[SerializeField]
+	[EZCurveRectAttribute]
+	private AnimationCurve m_SlacknessCurve;
+	private static EZSoftBoneMaterial m_DefaultMaterial;
 
 	public float damping { get; set; }
 	public AnimationCurve dampingCurve { get; }

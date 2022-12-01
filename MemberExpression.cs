@@ -1,10 +1,10 @@
 public class MemberExpression : Expression // TypeDefIndex: 3247
 {
 
-[DebuggerTypeProxyAttribute] 
+[DebuggerTypeProxyAttribute]
 public class MemberExpression : Expression
-	[CompilerGeneratedAttribute] 
-	private readonly Expression <Expression>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly Expression <Expression>k__BackingField;
 
 	public MemberInfo Member { get; }
 	public Expression Expression { get; }
@@ -12,10 +12,10 @@ public class MemberExpression : Expression
 
 	public MemberInfo get_Member() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Expression get_Expression() { }
 
-	[ExcludeFromCodeCoverageAttribute] 
+	[ExcludeFromCodeCoverageAttribute]
 	internal virtual MemberInfo GetMember() { }
 
 }

@@ -1,6 +1,6 @@
 internal enum TraceLoggingDataType // TypeDefIndex: 1579
 {
-	public int value__; 
+	public int value__;
 	public const TraceLoggingDataType Nil = 0;
 	public const TraceLoggingDataType Utf16String = 1;
 	public const TraceLoggingDataType MbcsString = 2;

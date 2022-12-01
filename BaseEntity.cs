@@ -1,12 +1,12 @@
-public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6300
+public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6302
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 pos; 
-	public Vector3 rot; 
-	public int flags; 
-	public float time; 
-	public ulong skinid; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 pos;
+	public Vector3 rot;
+	public int flags;
+	public float time;
+	public ulong skinid;
 
 
 	public static void ResetToPool(BaseEntity instance) { }
@@ -63,48 +63,48 @@ public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 630
 
 }
 
-public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo, IPrefabPreProcess // TypeDefIndex: 10210
+public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo, IPrefabPreProcess // TypeDefIndex: 10212
 {
-	protected Ragdoll ragdoll; 
-	internal PositionLerp positionLerp; 
-	private List<Option> menuOptions; 
-	private static Queue<BaseEntity> globalBroadcastQueue; 
-	private static uint globalBroadcastProtocol; 
-	private uint broadcastProtocol; 
-	private List<EntityLink> links; 
-	private bool linkedToNeighbours; 
+	protected Ragdoll ragdoll;
+	internal PositionLerp positionLerp;
+	private List<Option> menuOptions;
+	private static Queue<BaseEntity> globalBroadcastQueue;
+	private static uint globalBroadcastProtocol;
+	private uint broadcastProtocol;
+	private List<EntityLink> links;
+	private bool linkedToNeighbours;
 	private const int MaxFileRequestsPerSecond = 20;
-	private static readonly Queue<BaseEntity.QueuedFileRequest> QueuedFileRequests; 
-	private static TimeAverageValueData _fileRequestCounter; 
-	private static Action _flushQueuedFileRequests; 
-	private List<BaseEntity.PendingFileRequest> _pendingFileRequests; 
-	private Action updateParentingAction; 
-	private BaseEntity addedToParentEntity; 
-	public ItemSkin itemSkin; 
-	private EntityRef[] entitySlots; 
-	protected List<TriggerBase> triggers; 
-	protected bool isVisible; 
-	protected bool isAnimatorVisible; 
-	protected bool isShadowVisible; 
-	protected OccludeeSphere localOccludee; 
-	[CompilerGeneratedAttribute] 
-	private float <Weight>k__BackingField; 
-	[HeaderAttribute] 
-	public Bounds bounds; 
-	public GameObjectRef impactEffect; 
-	public bool enableSaving; 
-	public bool syncPosition; 
-	public Model model; 
-	[InspectorFlagsAttribute] 
-	public BaseEntity.Flags flags; 
-	public uint parentBone; 
-	public ulong skinID; 
-	private EntityComponentBase[] _components; 
-	[HideInInspector] 
-	public bool HasBrain; 
-	protected string _name; 
-	[CompilerGeneratedAttribute] 
-	private ulong <OwnerID>k__BackingField; 
+	private static readonly Queue<BaseEntity.QueuedFileRequest> QueuedFileRequests;
+	private static TimeAverageValueData _fileRequestCounter;
+	private static Action _flushQueuedFileRequests;
+	private List<BaseEntity.PendingFileRequest> _pendingFileRequests;
+	private Action updateParentingAction;
+	private BaseEntity addedToParentEntity;
+	public ItemSkin itemSkin;
+	private EntityRef[] entitySlots;
+	protected List<TriggerBase> triggers;
+	protected bool isVisible;
+	protected bool isAnimatorVisible;
+	protected bool isShadowVisible;
+	protected OccludeeSphere localOccludee;
+	[CompilerGeneratedAttribute]
+	private float <Weight>k__BackingField;
+	[HeaderAttribute]
+	public Bounds bounds;
+	public GameObjectRef impactEffect;
+	public bool enableSaving;
+	public bool syncPosition;
+	public Model model;
+	[InspectorFlagsAttribute]
+	public BaseEntity.Flags flags;
+	public uint parentBone;
+	public ulong skinID;
+	private EntityComponentBase[] _components;
+	[HideInInspector]
+	public bool HasBrain;
+	protected string _name;
+	[CompilerGeneratedAttribute]
+	private ulong <OwnerID>k__BackingField;
 
 	public virtual bool HasMenuOptions { get; }
 	public virtual float RealisticMass { get; }
@@ -287,7 +287,7 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 	public void RefreshEntityLinks() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void RequestFileFromServer(uint crc, FileStorage.Type type, string responseFunction, uint part = 0) { }
 
 	public void RequestFileFromServer(IServerFileReceiver receiver, FileStorage.Type type, uint crc, uint part = 0, bool respondIfNotFound = False) { }
@@ -298,7 +298,7 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 	private static void FlushQueuedFileRequests() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CL_ReceiveFileRequest(BaseEntity.RPCMessage msg) { }
 
 	private void CompletePendingFileRequests(FileStorage.Type type, uint crc, uint part, byte[] data) { }
@@ -357,6 +357,8 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 	|-BaseEntity.ServerRPC<object, object, object, object>
 	|
 	|-BaseEntity.ServerRPC<uint, byte, uint, uint>
+	|
+	|-BaseEntity.ServerRPC<uint, int, bool, int>
 	|
 	|-BaseEntity.ServerRPC<uint, uint, sbyte, int>
 	|
@@ -478,6 +480,7 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 	|
 	|-BaseEntity.ServerRPC<uint, byte, uint, uint>
 	|
+	|-BaseEntity.ServerRPC<uint, int, bool, int>
 	|-BaseEntity.ServerRPC<uint, uint, sbyte, int>
 	|
 	|-BaseEntity.ServerRPC<ulong, uint, uint, byte[]>
@@ -624,10 +627,10 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 	public void SendSignalBroadcast(BaseEntity.Signal signal, string arg = "") { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SignalFromServerEx(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SignalFromServer(BaseEntity.RPCMessage msg) { }
 
 	public virtual void OnSignal(BaseEntity.Signal signal, string arg) { }
@@ -698,10 +701,10 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 	protected virtual void DebugDrawCullingBounds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Weight() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Weight(float value) { }
 
 	public EntityComponentBase[] get_Components() { }
@@ -832,10 +835,10 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 	public virtual Transform FindClosestBone(Vector3 worldPos) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_OwnerID() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OwnerID(ulong value) { }
 
 	public virtual bool ShouldBlockProjectiles() { }
@@ -856,17 +859,17 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 }
 
-public class BaseEntity.Menu : Attribute // TypeDefIndex: 10211
+public class BaseEntity.Menu : Attribute // TypeDefIndex: 10213
 {
-	public string TitleToken; 
-	public string TitleEnglish; 
-	public string UseVariable; 
-	public int Order; 
-	public string ProxyFunction; 
-	public float Time; 
-	public string OnStart; 
-	public string OnProgress; 
-	public bool LongUseOnly; 
+	public string TitleToken;
+	public string TitleEnglish;
+	public string UseVariable;
+	public int Order;
+	public string ProxyFunction;
+	public float Time;
+	public string OnStart;
+	public string OnProgress;
+	public bool LongUseOnly;
 
 
 	public void .ctor() { }
@@ -875,63 +878,63 @@ public class BaseEntity.Menu : Attribute // TypeDefIndex: 10211
 
 }
 
-public struct BaseEntity.Menu.Option // TypeDefIndex: 10212
+public struct BaseEntity.Menu.Option // TypeDefIndex: 10214
 {
-	public Translate.Phrase name; 
-	public Translate.Phrase description; 
-	public Sprite icon; 
-	public int order; 
-	public bool usableWhileWounded; 
+	public Translate.Phrase name;
+	public Translate.Phrase description;
+	public Sprite icon;
+	public int order;
+	public bool usableWhileWounded;
 
 
 	public void CopyTo(ref Option option) { }
 
 }
 
-public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 10213
+public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 10215
 {
-	public string token; 
-	public string english; 
+	public string token;
+	public string english;
 
 
 	public void .ctor(string t, string e) { }
 
 }
 
-public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 10214
+public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 10216
 {
-	public string icon; 
+	public string icon;
 
 
 	public void .ctor(string i) { }
 
 }
 
-public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 10215
+public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 10217
 {
-	public string functionName; 
+	public string functionName;
 
 
 	public void .ctor(string testFunc) { }
 
 }
 
-public class BaseEntity.Menu.UsableWhileWounded : Attribute // TypeDefIndex: 10216
+public class BaseEntity.Menu.UsableWhileWounded : Attribute // TypeDefIndex: 10218
 {
 
 	public void .ctor() { }
 
 }
 
-public struct BaseEntity.MovementModify // TypeDefIndex: 10217
+public struct BaseEntity.MovementModify // TypeDefIndex: 10219
 {
-	public float drag; 
+	public float drag;
 
 }
 
-public enum BaseEntity.Flags // TypeDefIndex: 10218
+public enum BaseEntity.Flags // TypeDefIndex: 10220
 {
-	public int value__; 
+	public int value__;
 	public const BaseEntity.Flags Placeholder = 1;
 	public const BaseEntity.Flags On = 2;
 	public const BaseEntity.Flags OnFire = 4;
@@ -955,14 +958,14 @@ public enum BaseEntity.Flags // TypeDefIndex: 10218
 
 }
 
-private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRequest> // TypeDefIndex: 10219
+private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRequest> // TypeDefIndex: 10221
 {
-	public readonly BaseEntity Entity; 
-	public readonly FileStorage.Type Type; 
-	public readonly uint Part; 
-	public readonly uint Crc; 
-	public readonly uint ResponseFunction; 
-	public readonly Nullable<bool> RespondIfNotFound; 
+	public readonly BaseEntity Entity;
+	public readonly FileStorage.Type Type;
+	public readonly uint Part;
+	public readonly uint Crc;
+	public readonly uint ResponseFunction;
+	public readonly Nullable<bool> RespondIfNotFound;
 
 
 	public void .ctor(BaseEntity entity, FileStorage.Type type, uint part, uint crc, uint responseFunction, Nullable<bool> respondIfNotFound) { }
@@ -975,13 +978,13 @@ private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRe
 
 }
 
-private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFileRequest> // TypeDefIndex: 10220
+private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFileRequest> // TypeDefIndex: 10222
 {
-	public readonly FileStorage.Type Type; 
-	public readonly uint NumId; 
-	public readonly uint Crc; 
-	public readonly IServerFileReceiver Receiver; 
-	public readonly float Time; 
+	public readonly FileStorage.Type Type;
+	public readonly uint NumId;
+	public readonly uint Crc;
+	public readonly IServerFileReceiver Receiver;
+	public readonly float Time;
 
 
 	public void .ctor(FileStorage.Type type, uint numId, uint crc, IServerFileReceiver receiver) { }
@@ -994,13 +997,13 @@ private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFile
 
 }
 
-public class BaseEntity.Query.EntityTree // TypeDefIndex: 10222
+public class BaseEntity.Query.EntityTree // TypeDefIndex: 10224
 {
 
 public class BaseEntity.Query.EntityTree
-	private Grid<BaseEntity> Grid; 
-	private Grid<BasePlayer> PlayerGrid; 
-	private Grid<BaseEntity> BrainGrid; 
+	private Grid<BaseEntity> Grid;
+	private Grid<BasePlayer> PlayerGrid;
+	private Grid<BaseEntity> BrainGrid;
 
 
 	public void .ctor(float worldSize) { }
@@ -1031,31 +1034,31 @@ public class BaseEntity.Query.EntityTree
 
 }
 
-public class BaseEntity.RPC_Shared : Attribute // TypeDefIndex: 10223
+public class BaseEntity.RPC_Shared : Attribute // TypeDefIndex: 10225
 {
 
 	public void .ctor() { }
 
 }
 
-public struct BaseEntity.RPCMessage // TypeDefIndex: 10224
+public struct BaseEntity.RPCMessage // TypeDefIndex: 10226
 {
-	public Connection connection; 
-	public BasePlayer player; 
-	public NetRead read; 
+	public Connection connection;
+	public BasePlayer player;
+	public NetRead read;
 
 }
 
-public class BaseEntity.RPC_Client : BaseEntity.RPC_Shared // TypeDefIndex: 10225
+public class BaseEntity.RPC_Client : BaseEntity.RPC_Shared // TypeDefIndex: 10227
 {
 
 	public void .ctor() { }
 
 }
 
-public enum BaseEntity.Signal // TypeDefIndex: 10226
+public enum BaseEntity.Signal // TypeDefIndex: 10228
 {
-	public int value__; 
+	public int value__;
 	public const BaseEntity.Signal Attack = 0;
 	public const BaseEntity.Signal Alt_Attack = 1;
 	public const BaseEntity.Signal DryFire = 2;
@@ -1076,9 +1079,9 @@ public enum BaseEntity.Signal // TypeDefIndex: 10226
 
 }
 
-public enum BaseEntity.Slot // TypeDefIndex: 10227
+public enum BaseEntity.Slot // TypeDefIndex: 10229
 {
-	public int value__; 
+	public int value__;
 	public const BaseEntity.Slot Lock = 0;
 	public const BaseEntity.Slot FireMod = 1;
 	public const BaseEntity.Slot UpperModifier = 2;
@@ -1091,9 +1094,9 @@ public enum BaseEntity.Slot // TypeDefIndex: 10227
 
 }
 
-public enum BaseEntity.TraitFlag // TypeDefIndex: 10228
+public enum BaseEntity.TraitFlag // TypeDefIndex: 10230
 {
-	public int value__; 
+	public int value__;
 	public const BaseEntity.TraitFlag None = 0;
 	public const BaseEntity.TraitFlag Alive = 1;
 	public const BaseEntity.TraitFlag Animal = 2;
@@ -1105,11 +1108,11 @@ public enum BaseEntity.TraitFlag // TypeDefIndex: 10228
 
 }
 
-public enum BaseEntity.GiveItemReason // TypeDefIndex: 10230
+public enum BaseEntity.GiveItemReason // TypeDefIndex: 10232
 {
 
 public enum BaseEntity.GiveItemReason
-	public int value__; 
+	public int value__;
 	public const BaseEntity.GiveItemReason Generic = 0;
 	public const BaseEntity.GiveItemReason ResourceHarvested = 1;
 	public const BaseEntity.GiveItemReason PickedUp = 2;
@@ -1117,11 +1120,11 @@ public enum BaseEntity.GiveItemReason
 
 }
 
-private sealed class BaseEntity.<>c // TypeDefIndex: 10231
+private sealed class BaseEntity.<>c // TypeDefIndex: 10233
 {
-	public static readonly BaseEntity.<>c <>9; 
-	public static Comparison<Option> <>9__35_0; 
-	public static Predicate<BaseEntity.PendingFileRequest> <>9__97_0; 
+	public static readonly BaseEntity.<>c <>9;
+	public static Comparison<Option> <>9__35_0;
+	public static Predicate<BaseEntity.PendingFileRequest> <>9__97_0;
 
 
 	private static void .cctor() { }

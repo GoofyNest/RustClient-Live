@@ -1,6 +1,6 @@
 internal class StringFacetsChecker : FacetsChecker // TypeDefIndex: 2252
 {
-	private static Regex languagePattern; 
+	private static Regex languagePattern;
 
 	private static Regex LanguagePattern { get; }
 

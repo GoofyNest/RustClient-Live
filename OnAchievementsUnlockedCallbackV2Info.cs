@@ -1,13 +1,13 @@
-public struct OnAchievementsUnlockedCallbackV2Info : ICallbackInfo // TypeDefIndex: 9925
+public struct OnAchievementsUnlockedCallbackV2Info : ICallbackInfo // TypeDefIndex: 9927
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <UserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AchievementId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <UnlockTime>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <UserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <AchievementId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <UnlockTime>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId UserId { get; set; }
@@ -15,28 +15,28 @@ public struct OnAchievementsUnlockedCallbackV2Info : ICallbackInfo // TypeDefInd
 	public Nullable<DateTimeOffset> UnlockTime { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AchievementId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_UnlockTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnlockTime(Nullable<DateTimeOffset> value) { }
 
 	public Nullable<Result> GetResultCode() { }

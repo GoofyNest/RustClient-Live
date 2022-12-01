@@ -1,7 +1,7 @@
-public class KeyInformationPanel : ItemInformationPanel // TypeDefIndex: 12789
+public class KeyInformationPanel : ItemInformationPanel // TypeDefIndex: 12803
 {
-	[SerializeField] 
-	private Text id; 
+	[SerializeField]
+	private Text id;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

@@ -1,91 +1,91 @@
 public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement // TypeDefIndex: 4952
 {
-	protected TouchScreenKeyboard m_Keyboard; 
-	private static readonly char[] kSeparators; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	protected Text m_TextComponent; 
-	[SerializeField] 
-	protected Graphic m_Placeholder; 
-	[SerializeField] 
-	private InputField.ContentType m_ContentType; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private InputField.InputType m_InputType; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private char m_AsteriskChar; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private TouchScreenKeyboardType m_KeyboardType; 
-	[SerializeField] 
-	private InputField.LineType m_LineType; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private bool m_HideMobileInput; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private InputField.CharacterValidation m_CharacterValidation; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private int m_CharacterLimit; 
-	[FormerlySerializedAsAttribute] 
-	[FormerlySerializedAsAttribute] 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private InputField.SubmitEvent m_OnEndEdit; 
-	[FormerlySerializedAsAttribute] 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private InputField.OnChangeEvent m_OnValueChanged; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private InputField.OnValidateInput m_OnValidateInput; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Color m_CaretColor; 
-	[SerializeField] 
-	private bool m_CustomCaretColor; 
-	[SerializeField] 
-	private Color m_SelectionColor; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	protected string m_Text; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float m_CaretBlinkRate; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private int m_CaretWidth; 
-	[SerializeField] 
-	private bool m_ReadOnly; 
-	protected int m_CaretPosition; 
-	protected int m_CaretSelectPosition; 
-	private RectTransform caretRectTrans; 
-	protected UIVertex[] m_CursorVerts; 
-	private TextGenerator m_InputTextCache; 
-	private CanvasRenderer m_CachedInputRenderer; 
-	private bool m_PreventFontCallback; 
-	protected Mesh m_Mesh; 
-	private bool m_AllowInput; 
-	private bool m_ShouldActivateNextUpdate; 
-	private bool m_UpdateDrag; 
-	private bool m_DragPositionOutOfBounds; 
+	protected TouchScreenKeyboard m_Keyboard;
+	private static readonly char[] kSeparators;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	protected Text m_TextComponent;
+	[SerializeField]
+	protected Graphic m_Placeholder;
+	[SerializeField]
+	private InputField.ContentType m_ContentType;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private InputField.InputType m_InputType;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private char m_AsteriskChar;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private TouchScreenKeyboardType m_KeyboardType;
+	[SerializeField]
+	private InputField.LineType m_LineType;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private bool m_HideMobileInput;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private InputField.CharacterValidation m_CharacterValidation;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private int m_CharacterLimit;
+	[FormerlySerializedAsAttribute]
+	[FormerlySerializedAsAttribute]
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private InputField.SubmitEvent m_OnEndEdit;
+	[FormerlySerializedAsAttribute]
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private InputField.OnChangeEvent m_OnValueChanged;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private InputField.OnValidateInput m_OnValidateInput;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Color m_CaretColor;
+	[SerializeField]
+	private bool m_CustomCaretColor;
+	[SerializeField]
+	private Color m_SelectionColor;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	protected string m_Text;
+	[SerializeField]
+	[RangeAttribute]
+	private float m_CaretBlinkRate;
+	[SerializeField]
+	[RangeAttribute]
+	private int m_CaretWidth;
+	[SerializeField]
+	private bool m_ReadOnly;
+	protected int m_CaretPosition;
+	protected int m_CaretSelectPosition;
+	private RectTransform caretRectTrans;
+	protected UIVertex[] m_CursorVerts;
+	private TextGenerator m_InputTextCache;
+	private CanvasRenderer m_CachedInputRenderer;
+	private bool m_PreventFontCallback;
+	protected Mesh m_Mesh;
+	private bool m_AllowInput;
+	private bool m_ShouldActivateNextUpdate;
+	private bool m_UpdateDrag;
+	private bool m_DragPositionOutOfBounds;
 	private const float kHScrollSpeed = 0,05;
 	private const float kVScrollSpeed = 0,1;
-	protected bool m_CaretVisible; 
-	private Coroutine m_BlinkCoroutine; 
-	private float m_BlinkStartTime; 
-	protected int m_DrawStart; 
-	protected int m_DrawEnd; 
-	private Coroutine m_DragCoroutine; 
-	private string m_OriginalText; 
-	private bool m_WasCanceled; 
-	private bool m_HasDoneFocusTransition; 
-	private WaitForSecondsRealtime m_WaitForSecondsRealtime; 
-	private bool m_TouchKeyboardAllowsInPlaceEditing; 
+	protected bool m_CaretVisible;
+	private Coroutine m_BlinkCoroutine;
+	private float m_BlinkStartTime;
+	protected int m_DrawStart;
+	protected int m_DrawEnd;
+	private Coroutine m_DragCoroutine;
+	private string m_OriginalText;
+	private bool m_WasCanceled;
+	private bool m_HasDoneFocusTransition;
+	private WaitForSecondsRealtime m_WaitForSecondsRealtime;
+	private bool m_TouchKeyboardAllowsInPlaceEditing;
 	private const string kEmailSpecialCharacters = "!#$%&\'*+-/=?^_`{|}~";
-	private Event m_ProcessingEvent; 
+	private Event m_ProcessingEvent;
 	private const int k_MaxTextLength = 16382;
 
 	private BaseInput input { get; }
@@ -104,7 +104,7 @@ public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandle
 	public bool customCaretColor { get; set; }
 	public Color selectionColor { get; set; }
 	public InputField.SubmitEvent onEndEdit { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public InputField.OnChangeEvent onValueChange { get; set; }
 	public InputField.OnChangeEvent onValueChanged { get; set; }
 	public InputField.OnValidateInput onValidateInput { get; set; }
@@ -271,7 +271,7 @@ public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandle
 
 	protected override void OnDisable() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator CaretBlink() { }
 
 	private void SetCaretVisible() { }
@@ -298,7 +298,7 @@ public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandle
 
 	protected virtual void LateUpdate() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public Vector2 ScreenToLocal(Vector2 screen) { }
 
 	private int GetUnclampedCharacterLineFromPosition(Vector2 pos, TextGenerator generator) { }
@@ -311,7 +311,7 @@ public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandle
 
 	public virtual void OnDrag(PointerEventData eventData) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator MouseDragOutsideRect(PointerEventData eventData) { }
 
 	public virtual void OnEndDrag(PointerEventData eventData) { }
@@ -454,7 +454,7 @@ public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandle
 
 public enum InputField.ContentType // TypeDefIndex: 4953
 {
-	public int value__; 
+	public int value__;
 	public const InputField.ContentType Standard = 0;
 	public const InputField.ContentType Autocorrected = 1;
 	public const InputField.ContentType IntegerNumber = 2;
@@ -470,7 +470,7 @@ public enum InputField.ContentType // TypeDefIndex: 4953
 
 public enum InputField.InputType // TypeDefIndex: 4954
 {
-	public int value__; 
+	public int value__;
 	public const InputField.InputType Standard = 0;
 	public const InputField.InputType AutoCorrect = 1;
 	public const InputField.InputType Password = 2;
@@ -479,7 +479,7 @@ public enum InputField.InputType // TypeDefIndex: 4954
 
 public enum InputField.CharacterValidation // TypeDefIndex: 4955
 {
-	public int value__; 
+	public int value__;
 	public const InputField.CharacterValidation None = 0;
 	public const InputField.CharacterValidation Integer = 1;
 	public const InputField.CharacterValidation Decimal = 2;
@@ -491,7 +491,7 @@ public enum InputField.CharacterValidation // TypeDefIndex: 4955
 
 public enum InputField.LineType // TypeDefIndex: 4956
 {
-	public int value__; 
+	public int value__;
 	public const InputField.LineType SingleLine = 0;
 	public const InputField.LineType MultiLineSubmit = 1;
 	public const InputField.LineType MultiLineNewline = 2;
@@ -527,59 +527,59 @@ public class InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 4959
 
 private sealed class InputField.<CaretBlink>d__159 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4961
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public InputField <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public InputField <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
 private sealed class InputField.<MouseDragOutsideRect>d__179 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4962
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public InputField <>4__this; 
-	public PointerEventData eventData; 
+	private int <>1__state;
+	private object <>2__current;
+	public InputField <>4__this;
+	public PointerEventData eventData;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

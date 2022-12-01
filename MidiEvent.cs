@@ -1,8 +1,8 @@
-public abstract class MidiEvent // TypeDefIndex: 7531
+public abstract class MidiEvent // TypeDefIndex: 7533
 {
-	internal long _deltaTime; 
-	[CompilerGeneratedAttribute] 
-	private readonly MidiEventType <EventType>k__BackingField; 
+	internal long _deltaTime;
+	[CompilerGeneratedAttribute]
+	private readonly MidiEventType <EventType>k__BackingField;
 
 	public MidiEventType EventType { get; }
 	public long DeltaTime { get; set; }
@@ -10,7 +10,7 @@ public abstract class MidiEvent // TypeDefIndex: 7531
 
 	public void .ctor(MidiEventType eventType) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MidiEventType get_EventType() { }
 
 	public long get_DeltaTime() { }

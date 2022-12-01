@@ -1,10 +1,10 @@
-internal struct PinGrantInfoInternal : IGettable<PinGrantInfo>, ISettable<PinGrantInfo>, IDisposable // TypeDefIndex: 9697
+internal struct PinGrantInfoInternal : IGettable<PinGrantInfo>, ISettable<PinGrantInfo>, IDisposable // TypeDefIndex: 9699
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserCode; 
-	private IntPtr m_VerificationURI; 
-	private int m_ExpiresIn; 
-	private IntPtr m_VerificationURIComplete; 
+	private int m_ApiVersion;
+	private IntPtr m_UserCode;
+	private IntPtr m_VerificationURI;
+	private int m_ExpiresIn;
+	private IntPtr m_VerificationURIComplete;
 
 	public Utf8String UserCode { get; set; }
 	public Utf8String VerificationURI { get; set; }

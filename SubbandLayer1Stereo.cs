@@ -1,11 +1,11 @@
-public class SubbandLayer1Stereo : SubbandLayer1 // TypeDefIndex: 7419
+public class SubbandLayer1Stereo : SubbandLayer1 // TypeDefIndex: 7421
 {
-	protected int Channel2Allocation; 
-	protected float Channel2Factor; 
-	protected float Channel2Offset; 
-	protected float Channel2Sample; 
-	protected int Channel2Samplelength; 
-	protected float Channel2Scalefactor; 
+	protected int Channel2Allocation;
+	protected float Channel2Factor;
+	protected float Channel2Offset;
+	protected float Channel2Sample;
+	protected int Channel2Samplelength;
+	protected float Channel2Scalefactor;
 
 
 	internal void .ctor(int subbandnumber) { }

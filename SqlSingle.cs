@@ -1,11 +1,11 @@
 public struct SqlSingle : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4356
 {
-	private bool _fNotNull; 
-	private float _value; 
-	public static readonly SqlSingle Null; 
-	public static readonly SqlSingle Zero; 
-	public static readonly SqlSingle MinValue; 
-	public static readonly SqlSingle MaxValue; 
+	private bool _fNotNull;
+	private float _value;
+	public static readonly SqlSingle Null;
+	public static readonly SqlSingle Zero;
+	public static readonly SqlSingle MinValue;
+	public static readonly SqlSingle MaxValue;
 
 	public bool IsNull { get; }
 	public float Value { get; }

@@ -2,8 +2,8 @@ public class PKCS7.ContentInfo // TypeDefIndex: 49
 {
 
 public class PKCS7.ContentInfo
-	private string contentType; 
-	private ASN1 content; 
+	private string contentType;
+	private ASN1 content;
 
 	public ASN1 ASN1 { get; }
 	public ASN1 Content { get; set; }
@@ -34,10 +34,10 @@ public class PKCS7.ContentInfo
 
 public class PKCS7.EncryptedData // TypeDefIndex: 50
 {
-	private byte _version; 
-	private PKCS7.ContentInfo _content; 
-	private PKCS7.ContentInfo _encryptionAlgorithm; 
-	private byte[] _encrypted; 
+	private byte _version;
+	private PKCS7.ContentInfo _content;
+	private PKCS7.ContentInfo _encryptionAlgorithm;
+	private byte[] _encrypted;
 
 	public PKCS7.ContentInfo EncryptionAlgorithm { get; }
 	public byte[] EncryptedContent { get; }
@@ -57,8 +57,8 @@ public class PKCS7.ContentInfo // TypeDefIndex: 1708
 {
 
 public class PKCS7.ContentInfo
-	private string contentType; 
-	private ASN1 content; 
+	private string contentType;
+	private ASN1 content;
 
 	public ASN1 ASN1 { get; }
 	public ASN1 Content { get; set; }
@@ -89,10 +89,10 @@ public class PKCS7.ContentInfo
 
 public class PKCS7.EncryptedData // TypeDefIndex: 1709
 {
-	private byte _version; 
-	private PKCS7.ContentInfo _content; 
-	private PKCS7.ContentInfo _encryptionAlgorithm; 
-	private byte[] _encrypted; 
+	private byte _version;
+	private PKCS7.ContentInfo _content;
+	private PKCS7.ContentInfo _encryptionAlgorithm;
+	private byte[] _encrypted;
 
 	public PKCS7.ContentInfo EncryptionAlgorithm { get; }
 	public byte[] EncryptedContent { get; }

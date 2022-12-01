@@ -1,34 +1,34 @@
 public class FontData : ISerializationCallbackReceiver // TypeDefIndex: 4934
 {
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private Font m_Font; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private int m_FontSize; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private FontStyle m_FontStyle; 
-	[SerializeField] 
-	private bool m_BestFit; 
-	[SerializeField] 
-	private int m_MinSize; 
-	[SerializeField] 
-	private int m_MaxSize; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private TextAnchor m_Alignment; 
-	[SerializeField] 
-	private bool m_AlignByGeometry; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private bool m_RichText; 
-	[SerializeField] 
-	private HorizontalWrapMode m_HorizontalOverflow; 
-	[SerializeField] 
-	private VerticalWrapMode m_VerticalOverflow; 
-	[SerializeField] 
-	private float m_LineSpacing; 
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private Font m_Font;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private int m_FontSize;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private FontStyle m_FontStyle;
+	[SerializeField]
+	private bool m_BestFit;
+	[SerializeField]
+	private int m_MinSize;
+	[SerializeField]
+	private int m_MaxSize;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private TextAnchor m_Alignment;
+	[SerializeField]
+	private bool m_AlignByGeometry;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private bool m_RichText;
+	[SerializeField]
+	private HorizontalWrapMode m_HorizontalOverflow;
+	[SerializeField]
+	private VerticalWrapMode m_VerticalOverflow;
+	[SerializeField]
+	private float m_LineSpacing;
 
 	public static FontData defaultFontData { get; }
 	public Font font { get; set; }

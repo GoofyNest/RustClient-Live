@@ -1,8 +1,8 @@
-public class SkullTrophy : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6395
+public class SkullTrophy : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6397
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string playerName; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string playerName;
 
 
 	public static void ResetToPool(SkullTrophy instance) { }
@@ -59,20 +59,20 @@ public class SkullTrophy : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class SkullTrophy : StorageContainer // TypeDefIndex: 10517
+public class SkullTrophy : StorageContainer // TypeDefIndex: 10521
 {
-	public RustText NameText; 
-	public TextProOnACircle CircleModifier; 
-	public int AngleModifierMinCharCount; 
-	public int AngleModifierMaxCharCount; 
-	public int AngleModifierMinArcAngle; 
-	public int AngleModifierMaxArcAngle; 
-	public float SunsetTime; 
-	public float SunriseTime; 
-	public MeshRenderer[] SkullRenderers; 
-	public Material[] DaySkull; 
-	public Material[] NightSkull; 
-	public Material[] NoSkull; 
+	public RustText NameText;
+	public TextProOnACircle CircleModifier;
+	public int AngleModifierMinCharCount;
+	public int AngleModifierMaxCharCount;
+	public int AngleModifierMinArcAngle;
+	public int AngleModifierMaxArcAngle;
+	public float SunsetTime;
+	public float SunriseTime;
+	public MeshRenderer[] SkullRenderers;
+	public Material[] DaySkull;
+	public Material[] NightSkull;
+	public Material[] NoSkull;
 
 	private bool IsNightTime { get; }
 

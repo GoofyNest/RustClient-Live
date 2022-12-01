@@ -1,8 +1,8 @@
-public class Corpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6306
+public class Corpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6308
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint parentID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint parentID;
 
 
 	public static void ResetToPool(Corpse instance) { }

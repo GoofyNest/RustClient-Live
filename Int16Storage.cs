@@ -1,6 +1,6 @@
 internal sealed class Int16Storage : DataStorage // TypeDefIndex: 4408
 {
-	private short[] _values; 
+	private short[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

@@ -1,9 +1,9 @@
-internal struct QueryFileListOptionsInternal : ISettable<QueryFileListOptions>, IDisposable // TypeDefIndex: 8414
+internal struct QueryFileListOptionsInternal : ISettable<QueryFileListOptions>, IDisposable // TypeDefIndex: 8416
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ListOfTags; 
-	private uint m_ListOfTagsCount; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ListOfTags;
+	private uint m_ListOfTagsCount;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String[] ListOfTags { set; }
@@ -21,10 +21,10 @@ internal struct QueryFileListOptionsInternal : ISettable<QueryFileListOptions>, 
 
 }
 
-internal struct QueryFileListOptionsInternal : ISettable<QueryFileListOptions>, IDisposable // TypeDefIndex: 8917
+internal struct QueryFileListOptionsInternal : ISettable<QueryFileListOptions>, IDisposable // TypeDefIndex: 8919
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
 
 	public ProductUserId LocalUserId { set; }
 

@@ -1,6 +1,6 @@
 public class ObjectDisposedException : InvalidOperationException // TypeDefIndex: 280
 {
-	private string objectName; 
+	private string objectName;
 
 	public override string Message { get; }
 	public string ObjectName { get; }

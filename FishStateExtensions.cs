@@ -1,10 +1,10 @@
-public static class FishStateExtensions // TypeDefIndex: 11195
+public static class FishStateExtensions // TypeDefIndex: 11201
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Contains(BaseFishingRod.FishState state, BaseFishingRod.FishState check) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BaseFishingRod.FishState FlipHorizontal(BaseFishingRod.FishState state) { }
 
 }

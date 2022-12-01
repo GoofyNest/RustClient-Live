@@ -1,24 +1,24 @@
 internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSslStream, IDisposable // TypeDefIndex: 2544
 {
-	private MobileTlsContext xobileTlsContext; 
-	private ExceptionDispatchInfo lastException; 
-	private AsyncProtocolRequest asyncHandshakeRequest; 
-	private AsyncProtocolRequest asyncReadRequest; 
-	private AsyncProtocolRequest asyncWriteRequest; 
-	private BufferOffsetSize2 readBuffer; 
-	private BufferOffsetSize2 writeBuffer; 
-	private object ioLock; 
-	private int closeRequested; 
-	private bool shutdown; 
-	private static int uniqueNameInteger; 
-	[CompilerGeneratedAttribute] 
-	private readonly SslStream <SslStream>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly MonoTlsSettings <Settings>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly MonoTlsProvider <Provider>k__BackingField; 
-	private static int nextId; 
-	internal readonly int ID; 
+	private MobileTlsContext xobileTlsContext;
+	private ExceptionDispatchInfo lastException;
+	private AsyncProtocolRequest asyncHandshakeRequest;
+	private AsyncProtocolRequest asyncReadRequest;
+	private AsyncProtocolRequest asyncWriteRequest;
+	private BufferOffsetSize2 readBuffer;
+	private BufferOffsetSize2 writeBuffer;
+	private object ioLock;
+	private int closeRequested;
+	private bool shutdown;
+	private static int uniqueNameInteger;
+	[CompilerGeneratedAttribute]
+	private readonly SslStream <SslStream>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly MonoTlsSettings <Settings>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly MonoTlsProvider <Provider>k__BackingField;
+	private static int nextId;
+	internal readonly int ID;
 
 	public MonoTlsSettings Settings { get; }
 	public MonoTlsProvider Provider { get; }
@@ -36,10 +36,10 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 
 	public void .ctor(Stream innerStream, bool leaveInnerStreamOpen, SslStream owner, MonoTlsSettings settings, MonoTlsProvider provider) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MonoTlsSettings get_Settings() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MonoTlsProvider get_Provider() { }
 
 	internal void CheckThrow(bool authSuccessCheck, bool shutdownCheck = False) { }
@@ -58,7 +58,7 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 
 	public AuthenticatedStream get_AuthenticatedStream() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task ProcessAuthentication(bool runSynchronously, bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool clientCertRequired) { }
 
 	protected abstract MobileTlsContext CreateContext(bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool askForClientCert);
@@ -79,7 +79,7 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 
 	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task<int> StartOperation(MobileAuthenticatedStream.OperationType type, AsyncProtocolRequest asyncRequest, CancellationToken cancellationToken) { }
 
 	internal int InternalRead(byte[] buffer, int offset, int size, out bool outWantMore) { }
@@ -90,10 +90,10 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 
 	private bool InternalWrite(AsyncProtocolRequest asyncRequest, BufferOffsetSize2 internalBuffer, byte[] buffer, int offset, int size) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	internal Task<int> InnerRead(bool sync, int requestedSize, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	internal Task InnerWrite(bool sync, CancellationToken cancellationToken) { }
 
 	internal AsyncOperationStatus ProcessHandshake(AsyncOperationStatus status) { }
@@ -132,14 +132,14 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <InnerWrite>
 
 }
 
 private enum MobileAuthenticatedStream.OperationType // TypeDefIndex: 2545
 {
-	public int value__; 
+	public int value__;
 	public const MobileAuthenticatedStream.OperationType Read = 0;
 	public const MobileAuthenticatedStream.OperationType Write = 1;
 	public const MobileAuthenticatedStream.OperationType Shutdown = 2;
@@ -148,48 +148,48 @@ private enum MobileAuthenticatedStream.OperationType // TypeDefIndex: 2545
 
 private struct MobileAuthenticatedStream.<ProcessAuthentication>d__47 : IAsyncStateMachine // TypeDefIndex: 2546
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public bool serverMode; 
-	public X509Certificate serverCertificate; 
-	public string targetHost; 
-	public MobileAuthenticatedStream <>4__this; 
-	public bool runSynchronously; 
-	public SslProtocols enabledProtocols; 
-	public X509CertificateCollection clientCertificates; 
-	public bool clientCertRequired; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public bool serverMode;
+	public X509Certificate serverCertificate;
+	public string targetHost;
+	public MobileAuthenticatedStream <>4__this;
+	public bool runSynchronously;
+	public SslProtocols enabledProtocols;
+	public X509CertificateCollection clientCertificates;
+	public bool clientCertRequired;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 private struct MobileAuthenticatedStream.<StartOperation>d__58 : IAsyncStateMachine // TypeDefIndex: 2547
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<int> <>t__builder; 
-	public MobileAuthenticatedStream <>4__this; 
-	public MobileAuthenticatedStream.OperationType type; 
-	public AsyncProtocolRequest asyncRequest; 
-	public CancellationToken cancellationToken; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<int> <>t__builder;
+	public MobileAuthenticatedStream <>4__this;
+	public MobileAuthenticatedStream.OperationType type;
+	public AsyncProtocolRequest asyncRequest;
+	public CancellationToken cancellationToken;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 private sealed class MobileAuthenticatedStream.<>c__DisplayClass66_0 // TypeDefIndex: 2548
 {
-	public MobileAuthenticatedStream <>4__this; 
-	public int len; 
+	public MobileAuthenticatedStream <>4__this;
+	public int len;
 
 
 	public void .ctor() { }
@@ -200,35 +200,35 @@ private sealed class MobileAuthenticatedStream.<>c__DisplayClass66_0 // TypeDefI
 
 private struct MobileAuthenticatedStream.<InnerRead>d__66 : IAsyncStateMachine // TypeDefIndex: 2549
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<int> <>t__builder; 
-	public MobileAuthenticatedStream <>4__this; 
-	public CancellationToken cancellationToken; 
-	public int requestedSize; 
-	public bool sync; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<int> <>t__builder;
+	public MobileAuthenticatedStream <>4__this;
+	public CancellationToken cancellationToken;
+	public int requestedSize;
+	public bool sync;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 private struct MobileAuthenticatedStream.<InnerWrite>d__67 : IAsyncStateMachine // TypeDefIndex: 2550
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public CancellationToken cancellationToken; 
-	public MobileAuthenticatedStream <>4__this; 
-	public bool sync; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public CancellationToken cancellationToken;
+	public MobileAuthenticatedStream <>4__this;
+	public bool sync;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

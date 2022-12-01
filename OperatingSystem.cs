@@ -1,8 +1,8 @@
 public sealed class OperatingSystem : ICloneable, ISerializable // TypeDefIndex: 384
 {
-	private PlatformID _platform; 
-	private Version _version; 
-	private string _servicePack; 
+	private PlatformID _platform;
+	private Version _version;
+	private string _servicePack;
 
 	public PlatformID Platform { get; }
 	public Version Version { get; }

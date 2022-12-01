@@ -1,6 +1,6 @@
 public enum FtpStatusCode // TypeDefIndex: 2874
 {
-	public int value__; 
+	public int value__;
 	public const FtpStatusCode Undefined = 0;
 	public const FtpStatusCode RestartMarker = 110;
 	public const FtpStatusCode ServiceTemporarilyNotAvailable = 120;

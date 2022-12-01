@@ -1,9 +1,9 @@
 internal sealed class AllElementsContentValidator : ContentValidator // TypeDefIndex: 2173
 {
-	private Hashtable elements; 
-	private object[] particles; 
-	private BitSet isRequired; 
-	private int countRequired; 
+	private Hashtable elements;
+	private object[] particles;
+	private BitSet isRequired;
+	private int countRequired;
 
 	public override bool IsEmptiable { get; }
 

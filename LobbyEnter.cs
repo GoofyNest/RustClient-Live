@@ -1,10 +1,10 @@
-internal struct LobbyEnter_t : ICallbackData // TypeDefIndex: 5343
+internal struct LobbyEnter_t : ICallbackData // TypeDefIndex: 5345
 {
-	internal ulong SteamIDLobby; 
-	internal uint GfChatPermissions; 
-	internal bool Locked; 
-	internal uint EChatRoomEnterResponse; 
-	public static int _datasize; 
+	internal ulong SteamIDLobby;
+	internal uint GfChatPermissions;
+	internal bool Locked;
+	internal uint EChatRoomEnterResponse;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

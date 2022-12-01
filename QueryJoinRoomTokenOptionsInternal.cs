@@ -1,11 +1,11 @@
-internal struct QueryJoinRoomTokenOptionsInternal : ISettable<QueryJoinRoomTokenOptions>, IDisposable // TypeDefIndex: 8751
+internal struct QueryJoinRoomTokenOptionsInternal : ISettable<QueryJoinRoomTokenOptions>, IDisposable // TypeDefIndex: 8753
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_TargetUserIds; 
-	private uint m_TargetUserIdsCount; 
-	private IntPtr m_TargetUserIpAddresses; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private IntPtr m_TargetUserIds;
+	private uint m_TargetUserIdsCount;
+	private IntPtr m_TargetUserIpAddresses;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String RoomName { set; }

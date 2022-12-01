@@ -1,9 +1,9 @@
 public struct Color : IEquatable<Color> // TypeDefIndex: 3461
 {
-	public float r; 
-	public float g; 
-	public float b; 
-	public float a; 
+	public float r;
+	public float g;
+	public float b;
+	public float a;
 
 	public static Color red { get; }
 	public static Color green { get; }
@@ -95,12 +95,12 @@ public struct Color : IEquatable<Color> // TypeDefIndex: 3461
 
 }
 
-public struct Color // TypeDefIndex: 5558
+public struct Color // TypeDefIndex: 5560
 {
-	public byte r; 
-	public byte g; 
-	public byte b; 
-	public byte a; 
+	public byte r;
+	public byte g;
+	public byte b;
+	public byte a;
 
 }
 

@@ -1,8 +1,8 @@
-internal struct CreateLobbyCallbackInfoInternal : ICallbackInfoInternal, IGettable<CreateLobbyCallbackInfo>, ISettable<CreateLobbyCallbackInfo>, IDisposable // TypeDefIndex: 9090
+internal struct CreateLobbyCallbackInfoInternal : ICallbackInfoInternal, IGettable<CreateLobbyCallbackInfo>, ISettable<CreateLobbyCallbackInfo>, IDisposable // TypeDefIndex: 9092
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LobbyId; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LobbyId;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

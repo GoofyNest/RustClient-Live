@@ -1,14 +1,14 @@
-public class LTSeq // TypeDefIndex: 5581
+public class LTSeq // TypeDefIndex: 5583
 {
-	public LTSeq previous; 
-	public LTSeq current; 
-	public LTDescr tween; 
-	public float totalDelay; 
-	public float timeScale; 
-	private int debugIter; 
-	public uint counter; 
-	public bool toggle; 
-	private uint _id; 
+	public LTSeq previous;
+	public LTSeq current;
+	public LTDescr tween;
+	public float totalDelay;
+	public float timeScale;
+	private int debugIter;
+	public uint counter;
+	public bool toggle;
+	private uint _id;
 
 	public int id { get; }
 

@@ -1,15 +1,15 @@
-public class WorkbenchPanel : LootPanel, IInventoryChanged // TypeDefIndex: 12844
+public class WorkbenchPanel : LootPanel, IInventoryChanged // TypeDefIndex: 12858
 {
-	public Button experimentButton; 
-	public Text timerText; 
-	public Text costText; 
-	public GameObject expermentCostParent; 
-	public GameObject controlsParent; 
-	public GameObject allUnlockedNotification; 
-	public GameObject informationParent; 
-	public GameObject cycleIcon; 
-	public TechTreeDialog techTreeDialog; 
-	private bool wasWorking; 
+	public Button experimentButton;
+	public Text timerText;
+	public Text costText;
+	public GameObject expermentCostParent;
+	public GameObject controlsParent;
+	public GameObject allUnlockedNotification;
+	public GameObject informationParent;
+	public GameObject cycleIcon;
+	public TechTreeDialog techTreeDialog;
+	private bool wasWorking;
 
 
 	public override void Update() { }

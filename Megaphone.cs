@@ -1,29 +1,29 @@
-public class Megaphone : HeldEntity // TypeDefIndex: 10324
+public class Megaphone : HeldEntity // TypeDefIndex: 10327
 {
-	[HeaderAttribute] 
-	public VoiceProcessor voiceProcessor; 
-	public float VoiceDamageMinFrequency; 
-	public float VoiceDamageAmount; 
-	public AudioSource VoiceSource; 
-	public SoundDefinition StartBroadcastingSfx; 
-	public SoundDefinition StopBroadcastingSfx; 
-	[CompilerGeneratedAttribute] 
-	private static float <MegaphoneVoiceRange>k__BackingField; 
-	[ClientVar] 
-	public static bool IgnorePushToTalk; 
-	private static int BroadcastBoolAnim; 
-	private float talkingLayerWeight; 
+	[HeaderAttribute]
+	public VoiceProcessor voiceProcessor;
+	public float VoiceDamageMinFrequency;
+	public float VoiceDamageAmount;
+	public AudioSource VoiceSource;
+	public SoundDefinition StartBroadcastingSfx;
+	public SoundDefinition StopBroadcastingSfx;
+	[CompilerGeneratedAttribute]
+	private static float <MegaphoneVoiceRange>k__BackingField;
+	[ClientVar]
+	public static bool IgnorePushToTalk;
+	private static int BroadcastBoolAnim;
+	private float talkingLayerWeight;
 
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float MegaphoneVoiceRange { get; set; }
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static float get_MegaphoneVoiceRange() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_MegaphoneVoiceRange(float value) { }
 
 	public bool Receive(byte[] data) { }

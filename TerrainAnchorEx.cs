@@ -1,13 +1,13 @@
-public static class TerrainAnchorEx // TypeDefIndex: 12126
+public static class TerrainAnchorEx // TypeDefIndex: 12133
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ApplyTerrainAnchors(Transform transform, TerrainAnchor[] anchors, ref Vector3 pos, Quaternion rot, Vector3 scale, SpawnFilter filter) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ApplyTerrainAnchors(Transform transform, TerrainAnchor[] anchors, ref Vector3 pos, Quaternion rot, Vector3 scale, TerrainAnchorMode mode, SpawnFilter filter) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyTerrainAnchors(Transform transform, TerrainAnchor[] anchors) { }
 
 }

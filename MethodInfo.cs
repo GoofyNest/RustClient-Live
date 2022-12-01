@@ -20,10 +20,10 @@ public abstract class MethodInfo : MethodBase, _MethodInfo // TypeDefIndex: 542
 
 	public abstract MethodInfo GetBaseDefinition();
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Type[] GetGenericArguments() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual MethodInfo GetGenericMethodDefinition() { }
 
 	public virtual MethodInfo MakeGenericMethod(Type[] typeArguments) { }

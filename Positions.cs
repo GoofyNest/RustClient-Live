@@ -1,6 +1,6 @@
 internal class Positions // TypeDefIndex: 2155
 {
-	private ArrayList positions; 
+	private ArrayList positions;
 
 	public Position Item { get; }
 	public int Count { get; }

@@ -1,18 +1,18 @@
 internal sealed class NameInfo // TypeDefIndex: 1124
 {
-	internal string NIFullName; 
-	internal long NIobjectId; 
-	internal long NIassemId; 
-	internal InternalPrimitiveTypeE NIprimitiveTypeEnum; 
-	internal Type NItype; 
-	internal bool NIisSealed; 
-	internal bool NIisArray; 
-	internal bool NIisArrayItem; 
-	internal bool NItransmitTypeOnObject; 
-	internal bool NItransmitTypeOnMember; 
-	internal bool NIisParentTypeOnObject; 
-	internal InternalArrayTypeE NIarrayEnum; 
-	private bool NIsealedStatusChecked; 
+	internal string NIFullName;
+	internal long NIobjectId;
+	internal long NIassemId;
+	internal InternalPrimitiveTypeE NIprimitiveTypeEnum;
+	internal Type NItype;
+	internal bool NIisSealed;
+	internal bool NIisArray;
+	internal bool NIisArrayItem;
+	internal bool NItransmitTypeOnObject;
+	internal bool NItransmitTypeOnMember;
+	internal bool NIisParentTypeOnObject;
+	internal InternalArrayTypeE NIarrayEnum;
+	private bool NIsealedStatusChecked;
 
 	public bool IsSealed { get; }
 	public string NIname { get; set; }
@@ -32,11 +32,11 @@ internal sealed class NameInfo // TypeDefIndex: 1124
 
 internal sealed class NameInfo : ConcurrentSetItem<KeyValuePair<string, EventTags>, NameInfo> // TypeDefIndex: 1525
 {
-	private static int lastIdentity; 
-	internal readonly string name; 
-	internal readonly EventTags tags; 
-	internal readonly int identity; 
-	internal readonly byte[] nameMetadata; 
+	private static int lastIdentity;
+	internal readonly string name;
+	internal readonly EventTags tags;
+	internal readonly int identity;
+	internal readonly byte[] nameMetadata;
 
 
 	internal static void ReserveEventIDsBelow(int eventId) { }

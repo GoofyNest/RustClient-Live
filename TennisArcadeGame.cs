@@ -1,26 +1,26 @@
-public class TennisArcadeGame : BaseArcadeGame // TypeDefIndex: 10497
+public class TennisArcadeGame : BaseArcadeGame // TypeDefIndex: 10501
 {
-	public ArcadeEntity paddle1; 
-	public ArcadeEntity paddle2; 
-	public ArcadeEntity ball; 
-	public Transform paddle1Origin; 
-	public Transform paddle2Origin; 
-	public Transform paddle1Goal; 
-	public Transform paddle2Goal; 
-	public Transform ballSpawn; 
-	public float maxScore; 
-	public ArcadeEntity[] paddle1ScoreNodes; 
-	public ArcadeEntity[] paddle2ScoreNodes; 
-	public int paddle1Score; 
-	public int paddle2Score; 
-	public float sensitivity; 
-	public ArcadeEntity logo; 
-	public bool OnMainMenu; 
-	public bool GameActive; 
-	private float paddleMoveSpeed; 
-	private float lastInputTime; 
-	private float lastHeight; 
-	private float lastAIHeight; 
+	public ArcadeEntity paddle1;
+	public ArcadeEntity paddle2;
+	public ArcadeEntity ball;
+	public Transform paddle1Origin;
+	public Transform paddle2Origin;
+	public Transform paddle1Goal;
+	public Transform paddle2Goal;
+	public Transform ballSpawn;
+	public float maxScore;
+	public ArcadeEntity[] paddle1ScoreNodes;
+	public ArcadeEntity[] paddle2ScoreNodes;
+	public int paddle1Score;
+	public int paddle2Score;
+	public float sensitivity;
+	public ArcadeEntity logo;
+	public bool OnMainMenu;
+	public bool GameActive;
+	private float paddleMoveSpeed;
+	private float lastInputTime;
+	private float lastHeight;
+	private float lastAIHeight;
 
 
 	public override void OnNoHost() { }

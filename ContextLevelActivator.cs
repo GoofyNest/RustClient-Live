@@ -1,6 +1,6 @@
 internal class ContextLevelActivator : IActivator // TypeDefIndex: 1205
 {
-	private IActivator m_NextActivator; 
+	private IActivator m_NextActivator;
 
 	public IActivator NextActivator { get; }
 

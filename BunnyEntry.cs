@@ -1,9 +1,9 @@
-public class BunnyEntry : MonoBehaviour // TypeDefIndex: 10509
+public class BunnyEntry : MonoBehaviour // TypeDefIndex: 10513
 {
-	public Text nameText; 
-	public Text amountText; 
-	public RawImage starImage; 
-	public RawImage selfImage; 
+	public Text nameText;
+	public Text amountText;
+	public RawImage starImage;
+	public RawImage selfImage;
 
 
 	public void UpdateText(string newName, int amount, bool isLocalPlayer = False) { }

@@ -1,11 +1,11 @@
 internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnumerable<TElement>, IEnumerable, IList<TElement>, ICollection<TElement> // TypeDefIndex: 3227
 {
-	internal TKey key; 
-	internal int hashCode; 
-	internal TElement[] elements; 
-	internal int count; 
-	internal Lookup.Grouping<TKey, TElement> hashNext; 
-	internal Lookup.Grouping<TKey, TElement> next; 
+	internal TKey key;
+	internal int hashCode;
+	internal TElement[] elements;
+	internal int count;
+	internal Lookup.Grouping<TKey, TElement> hashNext;
+	internal Lookup.Grouping<TKey, TElement> next;
 
 	public TKey Key { get; }
 	private int System.Collections.Generic.ICollection<TElement>.Count { get; }
@@ -29,7 +29,7 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.Add
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator<TElement> GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -255,16 +255,16 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 
 private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnumerator<TElement>, IDisposable, IEnumerator // TypeDefIndex: 3228
 {
-	private int <>1__state; 
-	private TElement <>2__current; 
-	public Lookup.Grouping<TKey, TElement> <>4__this; 
-	private int <i>5__1; 
+	private int <>1__state;
+	private TElement <>2__current;
+	public Lookup.Grouping<TKey, TElement> <>4__this;
+	private int <i>5__1;
 
 	private TElement System.Collections.Generic.IEnumerator<TElement>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -276,7 +276,7 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	|-Lookup.Grouping.<GetEnumerator>d__7<Vector2Int, Resolution>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -302,7 +302,7 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	|-Lookup.Grouping.<GetEnumerator>d__7<Vector2Int, Resolution>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TElement System.Collections.Generic.IEnumerator<TElement>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -316,7 +316,7 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	|-Lookup.Grouping.<GetEnumerator>d__7<Vector2Int, Resolution>.System.Collections.Generic.IEnumerator<TElement>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -333,7 +333,7 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	|-Lookup.Grouping.<GetEnumerator>d__7<Vector2Int, Resolution>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -351,16 +351,16 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 
 private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<IGrouping<TKey, TElement>>, IDisposable, IEnumerator // TypeDefIndex: 3229
 {
-	private int <>1__state; 
-	private IGrouping<TKey, TElement> <>2__current; 
-	public Lookup<TKey, TElement> <>4__this; 
-	private Lookup.Grouping<TKey, TElement> <g>5__1; 
+	private int <>1__state;
+	private IGrouping<TKey, TElement> <>2__current;
+	public Lookup<TKey, TElement> <>4__this;
+	private Lookup.Grouping<TKey, TElement> <g>5__1;
 
 	private IGrouping<TKey, TElement> System.Collections.Generic.IEnumerator<System.Linq.IGrouping<TKey,TElement>>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -372,7 +372,7 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	|-Lookup.<GetEnumerator>d__12<Vector2Int, Resolution>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -396,7 +396,7 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	|-Lookup.<GetEnumerator>d__12<Vector2Int, Resolution>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IGrouping<TKey, TElement> System.Collections.Generic.IEnumerator<System.Linq.IGrouping<TKey,TElement>>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -408,7 +408,7 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	|-Lookup.<GetEnumerator>d__12<Vector2Int, Resolution>.System.Collections.Generic.IEnumerator<System.Linq.IGrouping<TKey,TElement>>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -425,7 +425,7 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	|-Lookup.<GetEnumerator>d__12<Vector2Int, Resolution>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

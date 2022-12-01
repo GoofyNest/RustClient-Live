@@ -1,6 +1,6 @@
-public enum CompressionLevel // TypeDefIndex: 6993
+public enum CompressionLevel // TypeDefIndex: 6995
 {
-	public int value__; 
+	public int value__;
 	public const CompressionLevel None = 0;
 	public const CompressionLevel Level0 = 0;
 	public const CompressionLevel BestSpeed = 1;

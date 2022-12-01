@@ -1,24 +1,24 @@
-public struct GetEntitlementsByNameCountOptions // TypeDefIndex: 9459
+public struct GetEntitlementsByNameCountOptions // TypeDefIndex: 9461
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <EntitlementName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <EntitlementName>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public Utf8String EntitlementName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_EntitlementName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EntitlementName(Utf8String value) { }
 
 }

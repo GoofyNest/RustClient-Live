@@ -1,12 +1,12 @@
-public static class Global // TypeDefIndex: 6631
+public static class Global // TypeDefIndex: 6633
 {
-	public static Func<string, GameObject> LoadPrefab; 
-	public static Func<string, GameObject> FindPrefab; 
-	public static Func<string, GameObject> CreatePrefab; 
-	public static Action OpenMainMenu; 
-	private static FacepunchBehaviour _runner; 
-	[CompilerGeneratedAttribute] 
-	private static int <LaunchCountThisVersion>k__BackingField; 
+	public static Func<string, GameObject> LoadPrefab;
+	public static Func<string, GameObject> FindPrefab;
+	public static Func<string, GameObject> CreatePrefab;
+	public static Action OpenMainMenu;
+	private static FacepunchBehaviour _runner;
+	[CompilerGeneratedAttribute]
+	private static int <LaunchCountThisVersion>k__BackingField;
 
 	public static FacepunchBehaviour Runner { get; }
 	public static int LaunchCountThisVersion { get; set; }
@@ -14,90 +14,90 @@ public static class Global // TypeDefIndex: 6631
 
 	public static FacepunchBehaviour get_Runner() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static int get_LaunchCountThisVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_LaunchCountThisVersion(int value) { }
 
 	public static void Init() { }
 
 }
 
-public class Global : ConsoleSystem // TypeDefIndex: 13714
+public class Global : ConsoleSystem // TypeDefIndex: 13730
 {
-	private static int _developer; 
-	[ServerVar] 
-	[ClientVar] 
-	public static bool skipassetwarmup; 
-	[ServerVar] 
-	[ClientVar] 
-	public static int maxthreads; 
+	private static int _developer;
+	[ServerVar]
+	[ClientVar]
+	public static bool skipassetwarmup;
+	[ServerVar]
+	[ClientVar]
+	public static int maxthreads;
 	private const int DefaultWarmupConcurrency = 1;
 	private const int DefaultPreloadConcurrency = 1;
-	[ServerVar] 
-	[ClientVar] 
-	public static int warmupConcurrency; 
-	[ServerVar] 
-	[ClientVar] 
-	public static int preloadConcurrency; 
-	[ServerVar] 
-	[ClientVar] 
-	public static bool forceUnloadBundles; 
+	[ServerVar]
+	[ClientVar]
+	public static int warmupConcurrency;
+	[ServerVar]
+	[ClientVar]
+	public static int preloadConcurrency;
+	[ServerVar]
+	[ClientVar]
+	public static bool forceUnloadBundles;
 	private const bool DefaultAsyncWarmupEnabled = False;
-	[ServerVar] 
-	[ClientVar] 
-	public static bool asyncWarmup; 
-	[ClientVar] 
-	public static int asyncLoadingPreset; 
-	private static int _censornudity; 
-	private static bool _censorsigns; 
-	[ClientVar] 
-	public static int signUndoBuffer; 
-	private static bool _censorRecordings; 
-	private static bool _processMidiInput; 
-	private static bool _showBlood; 
-	[ClientVar] 
-	public static bool limitFlashing; 
-	[ClientVar] 
-	public static bool showItemCountsOnPickup; 
-	[ClientVar] 
-	public static bool useSingleItemPickupNotice; 
-	[ClientVar] 
-	public static bool showItemPickupNotices; 
-	[ClientVar] 
-	public static float vehicleDismountHoldTime; 
-	[ClientVar] 
-	public static bool hideInteractTextWhileADS; 
-	[ServerVar] 
-	[ClientVar] 
-	public static int perf; 
-	[ClientVar] 
-	public static bool god; 
-	[ClientVar] 
-	public static bool specnet; 
-	[ClientVar] 
-	public static bool streamermode; 
-	[ClientVar] 
-	public static bool richPresence; 
-	private static float _consoleScale; 
+	[ServerVar]
+	[ClientVar]
+	public static bool asyncWarmup;
+	[ClientVar]
+	public static int asyncLoadingPreset;
+	private static int _censornudity;
+	private static bool _censorsigns;
+	[ClientVar]
+	public static int signUndoBuffer;
+	private static bool _censorRecordings;
+	private static bool _processMidiInput;
+	private static bool _showBlood;
+	[ClientVar]
+	public static bool limitFlashing;
+	[ClientVar]
+	public static bool showItemCountsOnPickup;
+	[ClientVar]
+	public static bool useSingleItemPickupNotice;
+	[ClientVar]
+	public static bool showItemPickupNotices;
+	[ClientVar]
+	public static float vehicleDismountHoldTime;
+	[ClientVar]
+	public static bool hideInteractTextWhileADS;
+	[ServerVar]
+	[ClientVar]
+	public static int perf;
+	[ClientVar]
+	public static bool god;
+	[ClientVar]
+	public static bool specnet;
+	[ClientVar]
+	public static bool streamermode;
+	[ClientVar]
+	public static bool richPresence;
+	private static float _consoleScale;
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static int developer { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static int censornudity { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool censorsigns { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool censorrecordings { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool processMidiInput { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool showBlood { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static string language { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float consoleScale { get; set; }
 
 
@@ -129,77 +129,77 @@ public class Global : ConsoleSystem // TypeDefIndex: 13714
 
 	public static void set_showBlood(bool value) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void restart(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void quit(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void writecfg() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void readcfg(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void exec(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void report(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void objects(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void textures(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void colliders(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void error(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void queue(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void status_cl(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleport(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleport2me(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleportany(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleportpos(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleportlos(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleport2owneditem(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleport2autheditem(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleport2marker(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void teleport2death(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void free(ConsoleSystem.Arg args) { }
 
 	public static string get_language() { }
@@ -210,26 +210,26 @@ public class Global : ConsoleSystem // TypeDefIndex: 13714
 
 	public static void set_consoleScale(float value) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void version(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void sysinfo(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void sysuid(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void breakitem(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void breakclothing(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void subscriptions(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }
@@ -238,12 +238,12 @@ public class Global : ConsoleSystem // TypeDefIndex: 13714
 
 }
 
-private sealed class Global.<>c // TypeDefIndex: 13715
+private sealed class Global.<>c // TypeDefIndex: 13731
 {
-	public static readonly Global.<>c <>9; 
-	public static Func<KeyValuePair<Type, long>, long> <>9__49_0; 
-	public static Func<Collider, bool> <>9__51_0; 
-	public static Func<Collider, bool> <>9__51_1; 
+	public static readonly Global.<>c <>9;
+	public static Func<KeyValuePair<Type, long>, long> <>9__49_0;
+	public static Func<Collider, bool> <>9__51_0;
+	public static Func<Collider, bool> <>9__51_1;
 
 
 	private static void .cctor() { }

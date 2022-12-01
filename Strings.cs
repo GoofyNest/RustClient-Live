@@ -5,10 +5,10 @@ internal static class Strings // TypeDefIndex: 3248
 
 }
 
-public sealed class Strings // TypeDefIndex: 7389
+public sealed class Strings // TypeDefIndex: 7391
 {
-	[CompilerGeneratedAttribute] 
-	private static Dictionary<string, int> <>f__switch$map0; 
+	[CompilerGeneratedAttribute]
+	private static Dictionary<string, int> <>f__switch$map0;
 
 
 	public void .ctor() { }

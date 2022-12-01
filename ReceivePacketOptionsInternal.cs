@@ -1,9 +1,9 @@
-internal struct ReceivePacketOptionsInternal : ISettable<ReceivePacketOptions>, IDisposable // TypeDefIndex: 8997
+internal struct ReceivePacketOptionsInternal : ISettable<ReceivePacketOptions>, IDisposable // TypeDefIndex: 8999
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private uint m_MaxDataSizeBytes; 
-	private IntPtr m_RequestedChannel; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private uint m_MaxDataSizeBytes;
+	private IntPtr m_RequestedChannel;
 
 	public ProductUserId LocalUserId { set; }
 	public uint MaxDataSizeBytes { set; }

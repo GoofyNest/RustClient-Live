@@ -1,7 +1,7 @@
-public class DecalScale : DecalComponent // TypeDefIndex: 10905
+public class DecalScale : DecalComponent // TypeDefIndex: 10911
 {
-	[MinMaxAttribute] 
-	public MinMax range; 
+	[MinMaxAttribute]
+	public MinMax range;
 
 
 	public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }

@@ -3,11 +3,11 @@ public class RenderTexture : Texture // TypeDefIndex: 3451
 	public override int width { get; set; }
 	public override int height { get; set; }
 	public override TextureDimension dimension { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public GraphicsFormat graphicsFormat { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool useMipMap { set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool sRGB { get; }
 	public RenderTextureFormat format { get; }
 	public bool autoGenerateMips { set; }
@@ -55,20 +55,20 @@ public class RenderTexture : Texture // TypeDefIndex: 3451
 
 	public void set_isPowerOfTwo(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static RenderTexture GetActive() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void SetActive(RenderTexture rt) { }
 
 	public static RenderTexture get_active() { }
 
 	public static void set_active(RenderTexture value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private RenderBuffer GetColorBuffer() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private RenderBuffer GetDepthBuffer() { }
 
 	public RenderBuffer get_colorBuffer() { }
@@ -89,28 +89,28 @@ public class RenderTexture : Texture // TypeDefIndex: 3451
 
 	internal void SetSRGBReadWrite(bool srgb) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_Create(RenderTexture rt) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetRenderTextureDescriptor(RenderTextureDescriptor desc) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private RenderTextureDescriptor GetDescriptor() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static RenderTexture GetTemporary_Internal(RenderTextureDescriptor desc) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void ReleaseTemporary(RenderTexture temp) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public int get_depth() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_depth(int value) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	protected internal void .ctor() { }
 
 	public void .ctor(RenderTextureDescriptor desc) { }
@@ -125,13 +125,13 @@ public class RenderTexture : Texture // TypeDefIndex: 3451
 
 	public void .ctor(int width, int height, int depth, RenderTextureFormat format, RenderTextureReadWrite readWrite) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void .ctor(int width, int height, int depth, RenderTextureFormat format) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void .ctor(int width, int height, int depth) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void .ctor(int width, int height, int depth, RenderTextureFormat format, int mipCount) { }
 
 	public RenderTextureDescriptor get_descriptor() { }
@@ -146,16 +146,16 @@ public class RenderTexture : Texture // TypeDefIndex: 3451
 
 	private static RenderTexture GetTemporaryImpl(int width, int height, int depthBuffer, GraphicsFormat format, int antiAliasing = 1, RenderTextureMemoryless memorylessMode = 0, VRTextureUsage vrUsage = 0, bool useDynamicScale = False) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RenderTexture GetTemporary(int width, int height, int depthBuffer, RenderTextureFormat format, RenderTextureReadWrite readWrite) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RenderTexture GetTemporary(int width, int height, int depthBuffer, RenderTextureFormat format) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RenderTexture GetTemporary(int width, int height, int depthBuffer) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RenderTexture GetTemporary(int width, int height) { }
 
 	private void GetColorBuffer_Injected(out RenderBuffer ret) { }

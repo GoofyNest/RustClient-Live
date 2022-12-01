@@ -1,7 +1,7 @@
 public struct CancellationToken // TypeDefIndex: 749
 {
-	private CancellationTokenSource m_source; 
-	private static readonly Action<object> s_ActionToActionObjShunt; 
+	private CancellationTokenSource m_source;
+	private static readonly Action<object> s_ActionToActionObjShunt;
 
 	public static CancellationToken None { get; }
 	public bool IsCancellationRequested { get; }

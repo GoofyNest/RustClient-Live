@@ -1,6 +1,6 @@
 public enum PropagationPhase // TypeDefIndex: 4661
 {
-	public int value__; 
+	public int value__;
 	public const PropagationPhase None = 0;
 	public const PropagationPhase TrickleDown = 1;
 	public const PropagationPhase AtTarget = 2;

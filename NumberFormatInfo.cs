@@ -1,47 +1,47 @@
 public sealed class NumberFormatInfo : ICloneable, IFormatProvider // TypeDefIndex: 713
 {
-	private static NumberFormatInfo invariantInfo; 
-	internal int[] numberGroupSizes; 
-	internal int[] currencyGroupSizes; 
-	internal int[] percentGroupSizes; 
-	internal string positiveSign; 
-	internal string negativeSign; 
-	internal string numberDecimalSeparator; 
-	internal string numberGroupSeparator; 
-	internal string currencyGroupSeparator; 
-	internal string currencyDecimalSeparator; 
-	internal string currencySymbol; 
-	internal string ansiCurrencySymbol; 
-	internal string nanSymbol; 
-	internal string positiveInfinitySymbol; 
-	internal string negativeInfinitySymbol; 
-	internal string percentDecimalSeparator; 
-	internal string percentGroupSeparator; 
-	internal string percentSymbol; 
-	internal string perMilleSymbol; 
-	[OptionalFieldAttribute] 
-	internal string[] nativeDigits; 
-	[OptionalFieldAttribute] 
-	internal int m_dataItem; 
-	internal int numberDecimalDigits; 
-	internal int currencyDecimalDigits; 
-	internal int currencyPositivePattern; 
-	internal int currencyNegativePattern; 
-	internal int numberNegativePattern; 
-	internal int percentPositivePattern; 
-	internal int percentNegativePattern; 
-	internal int percentDecimalDigits; 
-	[OptionalFieldAttribute] 
-	internal int digitSubstitution; 
-	internal bool isReadOnly; 
-	[OptionalFieldAttribute] 
-	internal bool m_useUserOverride; 
-	[OptionalFieldAttribute] 
-	internal bool m_isInvariant; 
-	[OptionalFieldAttribute] 
-	internal bool validForParseAsNumber; 
-	[OptionalFieldAttribute] 
-	internal bool validForParseAsCurrency; 
+	private static NumberFormatInfo invariantInfo;
+	internal int[] numberGroupSizes;
+	internal int[] currencyGroupSizes;
+	internal int[] percentGroupSizes;
+	internal string positiveSign;
+	internal string negativeSign;
+	internal string numberDecimalSeparator;
+	internal string numberGroupSeparator;
+	internal string currencyGroupSeparator;
+	internal string currencyDecimalSeparator;
+	internal string currencySymbol;
+	internal string ansiCurrencySymbol;
+	internal string nanSymbol;
+	internal string positiveInfinitySymbol;
+	internal string negativeInfinitySymbol;
+	internal string percentDecimalSeparator;
+	internal string percentGroupSeparator;
+	internal string percentSymbol;
+	internal string perMilleSymbol;
+	[OptionalFieldAttribute]
+	internal string[] nativeDigits;
+	[OptionalFieldAttribute]
+	internal int m_dataItem;
+	internal int numberDecimalDigits;
+	internal int currencyDecimalDigits;
+	internal int currencyPositivePattern;
+	internal int currencyNegativePattern;
+	internal int numberNegativePattern;
+	internal int percentPositivePattern;
+	internal int percentNegativePattern;
+	internal int percentDecimalDigits;
+	[OptionalFieldAttribute]
+	internal int digitSubstitution;
+	internal bool isReadOnly;
+	[OptionalFieldAttribute]
+	internal bool m_useUserOverride;
+	[OptionalFieldAttribute]
+	internal bool m_isInvariant;
+	[OptionalFieldAttribute]
+	internal bool validForParseAsNumber;
+	[OptionalFieldAttribute]
+	internal bool validForParseAsCurrency;
 	private const NumberStyles InvalidNumberStyles = -1024;
 
 	public static NumberFormatInfo InvariantInfo { get; }
@@ -76,13 +76,13 @@ public sealed class NumberFormatInfo : ICloneable, IFormatProvider // TypeDefInd
 
 	public void .ctor() { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
 	internal void .ctor(CultureData cultureData) { }

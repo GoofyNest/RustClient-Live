@@ -1,6 +1,6 @@
 public sealed class RuntimeWrappedException : Exception // TypeDefIndex: 1288
 {
-	private object m_wrappedException; 
+	private object m_wrappedException;
 
 
 	private void .ctor(object thrownObject) { }

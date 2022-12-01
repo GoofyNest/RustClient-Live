@@ -1,22 +1,22 @@
-public class DistanceFlareLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13085
+public class DistanceFlareLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13100
 {
-	public bool isDynamic; 
-	public float minEnabledDistance; 
-	public float maxEnabledDistance; 
-	public bool toggleFade; 
-	public float toggleFadeDuration; 
-	private LODCell cell; 
-	private Renderer flareRenderer; 
-	private float flareIntensity; 
-	private float fadeIntensity; 
-	private Color startColor; 
-	private static int emissionColorID; 
-	private static MaterialPropertyBlock block; 
-	private LODEnvironmentMode EnvironmentMode; 
-	private float fadeStartTime; 
-	private float fadeEndTime; 
-	private bool fadeToState; 
-	private bool queuedState; 
+	public bool isDynamic;
+	public float minEnabledDistance;
+	public float maxEnabledDistance;
+	public bool toggleFade;
+	public float toggleFadeDuration;
+	private LODCell cell;
+	private Renderer flareRenderer;
+	private float flareIntensity;
+	private float fadeIntensity;
+	private Color startColor;
+	private static int emissionColorID;
+	private static MaterialPropertyBlock block;
+	private LODEnvironmentMode EnvironmentMode;
+	private float fadeStartTime;
+	private float fadeEndTime;
+	private bool fadeToState;
+	private bool queuedState;
 
 
 	private float GetDistance() { }

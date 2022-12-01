@@ -1,9 +1,9 @@
 internal class BigInteger // TypeDefIndex: 80
 {
-	private uint length; 
-	private uint[] data; 
-	internal static readonly uint[] smallPrimes; 
-	private static RandomNumberGenerator rng; 
+	private uint length;
+	private uint[] data;
+	internal static readonly uint[] smallPrimes;
+	private static RandomNumberGenerator rng;
 
 	private static RandomNumberGenerator Rng { get; }
 
@@ -108,7 +108,7 @@ internal class BigInteger // TypeDefIndex: 80
 
 public enum BigInteger.Sign // TypeDefIndex: 81
 {
-	public int value__; 
+	public int value__;
 	public const BigInteger.Sign Negative = -1;
 	public const BigInteger.Sign Zero = 0;
 	public const BigInteger.Sign Positive = 1;
@@ -117,8 +117,8 @@ public enum BigInteger.Sign // TypeDefIndex: 81
 
 internal sealed class BigInteger.ModulusRing // TypeDefIndex: 82
 {
-	private BigInteger mod; 
-	private BigInteger constant; 
+	private BigInteger mod;
+	private BigInteger constant;
 
 
 	public void .ctor(BigInteger modulus) { }
@@ -172,35 +172,35 @@ private sealed class BigInteger.Kernel // TypeDefIndex: 83
 
 public class BigInteger // TypeDefIndex: 1763
 {
-	private uint length; 
-	private uint[] data; 
-	internal static readonly uint[] smallPrimes; 
-	private static RandomNumberGenerator rng; 
+	private uint length;
+	private uint[] data;
+	internal static readonly uint[] smallPrimes;
+	private static RandomNumberGenerator rng;
 
 	private static RandomNumberGenerator Rng { get; }
 
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(BigInteger.Sign sign, uint len) { }
 
 	public void .ctor(BigInteger bi) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(BigInteger bi, uint len) { }
 
 	public void .ctor(byte[] inData) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(uint ui) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static BigInteger op_Implicit(uint value) { }
 
 	public static BigInteger op_Implicit(int value) { }
 
 	public static BigInteger op_Subtraction(BigInteger bi1, BigInteger bi2) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint op_Modulus(BigInteger bi, uint ui) { }
 
 	public static BigInteger op_Modulus(BigInteger bi1, BigInteger bi2) { }
@@ -223,20 +223,20 @@ public class BigInteger // TypeDefIndex: 1763
 
 	public bool TestBit(int bitNum) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void SetBit(uint bitNum) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void SetBit(uint bitNum, bool value) { }
 
 	public int LowestSetBit() { }
 
 	public byte[] GetBytes() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool op_Equality(BigInteger bi1, uint ui) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool op_Inequality(BigInteger bi1, uint ui) { }
 
 	public static bool op_Equality(BigInteger bi1, BigInteger bi2) { }
@@ -251,10 +251,10 @@ public class BigInteger // TypeDefIndex: 1763
 
 	public static bool op_LessThanOrEqual(BigInteger bi1, BigInteger bi2) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public string ToString(uint radix) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public string ToString(uint radix, string characterSet) { }
 
 	private void Normalize() { }
@@ -277,7 +277,7 @@ public class BigInteger // TypeDefIndex: 1763
 
 public enum BigInteger.Sign // TypeDefIndex: 1764
 {
-	public int value__; 
+	public int value__;
 	public const BigInteger.Sign Negative = -1;
 	public const BigInteger.Sign Zero = 0;
 	public const BigInteger.Sign Positive = 1;
@@ -286,8 +286,8 @@ public enum BigInteger.Sign // TypeDefIndex: 1764
 
 public sealed class BigInteger.ModulusRing // TypeDefIndex: 1765
 {
-	private BigInteger mod; 
-	private BigInteger constant; 
+	private BigInteger mod;
+	private BigInteger constant;
 
 
 	public void .ctor(BigInteger modulus) { }
@@ -300,7 +300,7 @@ public sealed class BigInteger.ModulusRing // TypeDefIndex: 1765
 
 	public BigInteger Pow(BigInteger a, BigInteger k) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public BigInteger Pow(uint b, BigInteger exp) { }
 
 }
@@ -340,13 +340,13 @@ private sealed class BigInteger.Kernel // TypeDefIndex: 1766
 
 public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, IEquatable<BigInteger> // TypeDefIndex: 3968
 {
-	internal readonly int _sign; 
-	internal readonly uint[] _bits; 
-	private static readonly BigInteger s_bnMinInt; 
-	private static readonly BigInteger s_bnOneInt; 
-	private static readonly BigInteger s_bnZeroInt; 
-	private static readonly BigInteger s_bnMinusOneInt; 
-	private static readonly byte[] s_success; 
+	internal readonly int _sign;
+	internal readonly uint[] _bits;
+	private static readonly BigInteger s_bnMinInt;
+	private static readonly BigInteger s_bnOneInt;
+	private static readonly BigInteger s_bnZeroInt;
+	private static readonly BigInteger s_bnMinusOneInt;
+	private static readonly byte[] s_success;
 
 	public static BigInteger Zero { get; }
 	public bool IsZero { get; }
@@ -354,15 +354,15 @@ public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, I
 
 	public void .ctor(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(uint value) { }
 
 	public void .ctor(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(ulong value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(byte[] value) { }
 
 	public void .ctor(ReadOnlySpan<byte> value) { }
@@ -409,42 +409,42 @@ public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, I
 
 	public static BigInteger op_Implicit(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static BigInteger op_Implicit(sbyte value) { }
 
 	public static BigInteger op_Implicit(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static BigInteger op_Implicit(ushort value) { }
 
 	public static BigInteger op_Implicit(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static BigInteger op_Implicit(uint value) { }
 
 	public static BigInteger op_Implicit(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static BigInteger op_Implicit(ulong value) { }
 
 	public static byte op_Explicit(BigInteger value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte op_Explicit(BigInteger value) { }
 
 	public static short op_Explicit(BigInteger value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort op_Explicit(BigInteger value) { }
 
 	public static int op_Explicit(BigInteger value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint op_Explicit(BigInteger value) { }
 
 	public static long op_Explicit(BigInteger value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong op_Explicit(BigInteger value) { }
 
 	public static float op_Explicit(BigInteger value) { }
@@ -483,7 +483,7 @@ public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, I
 
 private enum BigInteger.GetBytesMode // TypeDefIndex: 3969
 {
-	public int value__; 
+	public int value__;
 	public const BigInteger.GetBytesMode AllocateArray = 0;
 	public const BigInteger.GetBytesMode Count = 1;
 	public const BigInteger.GetBytesMode Span = 2;

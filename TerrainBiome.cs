@@ -1,4 +1,4 @@
-public static class TerrainBiome // TypeDefIndex: 7795
+public static class TerrainBiome // TypeDefIndex: 7797
 {
 
 public static class TerrainBiome
@@ -13,7 +13,7 @@ public static class TerrainBiome
 	public const int TEMPERATE_IDX = 1;
 	public const int TUNDRA_IDX = 2;
 	public const int ARCTIC_IDX = 3;
-	private static Dictionary<int, int> type2index; 
+	private static Dictionary<int, int> type2index;
 
 
 	public static int TypeToIndex(int id) { }
@@ -24,9 +24,9 @@ public static class TerrainBiome
 
 }
 
-public enum TerrainBiome.Enum // TypeDefIndex: 7796
+public enum TerrainBiome.Enum // TypeDefIndex: 7798
 {
-	public int value__; 
+	public int value__;
 	public const TerrainBiome.Enum Arid = 1;
 	public const TerrainBiome.Enum Temperate = 2;
 	public const TerrainBiome.Enum Tundra = 4;

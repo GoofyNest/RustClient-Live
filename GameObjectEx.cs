@@ -1,36 +1,36 @@
-public static class GameObjectEx // TypeDefIndex: 13489
+public static class GameObjectEx // TypeDefIndex: 13505
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BaseEntity ToBaseEntity(GameObject go) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BaseEntity ToBaseEntity(Collider collider) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BaseEntity ToBaseEntity(Transform transform) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsOnLayer(GameObject go, Layer rustLayer) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsOnLayer(GameObject go, int layer) { }
 
 	private static IEntity GetEntityFromRegistry(Transform transform) { }
 
 	private static IEntity GetEntityFromComponent(Transform transform) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetHierarchyGroup(GameObject obj, string strRoot, bool groupActive = True, bool persistant = False) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool HasComponent<T>(GameObject obj) { }
 	/* GenericInstMethod :
 	|
 	|-GameObjectEx.HasComponent<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetChildComponentsEnabled<T>(GameObject gameObject, bool enabled) { }
 	/* GenericInstMethod :
 	|

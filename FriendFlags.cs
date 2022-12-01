@@ -1,6 +1,6 @@
 internal enum FriendFlags // TypeDefIndex: 5153
 {
-	public int value__; 
+	public int value__;
 	public const FriendFlags None = 0;
 	public const FriendFlags Blocked = 1;
 	public const FriendFlags FriendshipRequested = 2;

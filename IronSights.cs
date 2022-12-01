@@ -1,30 +1,30 @@
-public class IronSights : MonoBehaviour // TypeDefIndex: 13228
+public class IronSights : MonoBehaviour // TypeDefIndex: 13243
 {
-	public bool Enabled; 
-	[HeaderAttribute] 
-	public IronsightAimPoint aimPoint; 
-	public float fieldOfViewOffset; 
-	public float zoomFactor; 
-	[HeaderAttribute] 
-	public float introSpeed; 
-	public AnimationCurve introCurve; 
-	public float outroSpeed; 
-	public AnimationCurve outroCurve; 
-	[HeaderAttribute] 
-	public SoundDefinition upSound; 
-	public SoundDefinition downSound; 
-	[HeaderAttribute] 
-	public IronSightOverride ironsightsOverride; 
-	public bool processUltrawideOffset; 
-	private Animator animator; 
-	private int param_ironsightstrength; 
-	private int param_ironsightsEnabled; 
-	private float delta; 
-	private float rawDelta; 
-	private float maxDelta; 
-	private Vector3 positionOffset; 
-	private Quaternion rotationOffset; 
-	private AnimationCurve currentCurve; 
+	public bool Enabled;
+	[HeaderAttribute]
+	public IronsightAimPoint aimPoint;
+	public float fieldOfViewOffset;
+	public float zoomFactor;
+	[HeaderAttribute]
+	public float introSpeed;
+	public AnimationCurve introCurve;
+	public float outroSpeed;
+	public AnimationCurve outroCurve;
+	[HeaderAttribute]
+	public SoundDefinition upSound;
+	public SoundDefinition downSound;
+	[HeaderAttribute]
+	public IronSightOverride ironsightsOverride;
+	public bool processUltrawideOffset;
+	private Animator animator;
+	private int param_ironsightstrength;
+	private int param_ironsightsEnabled;
+	private float delta;
+	private float rawDelta;
+	private float maxDelta;
+	private Vector3 positionOffset;
+	private Quaternion rotationOffset;
+	private AnimationCurve currentCurve;
 
 
 	public void OnEnable() { }

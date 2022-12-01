@@ -1,10 +1,10 @@
-public class Sign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6326
+public class Sign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6328
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint imageid; 
-	public List<uint> imageIds; 
-	public List<ulong> editHistory; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint imageid;
+	public List<uint> imageIds;
+	public List<ulong> editHistory;
 
 
 	public static void ResetToPool(Sign instance) { }

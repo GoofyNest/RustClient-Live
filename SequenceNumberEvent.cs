@@ -1,7 +1,7 @@
-public sealed class SequenceNumberEvent : MetaEvent // TypeDefIndex: 7557
+public sealed class SequenceNumberEvent : MetaEvent // TypeDefIndex: 7559
 {
-	[CompilerGeneratedAttribute] 
-	private ushort <Number>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ushort <Number>k__BackingField;
 
 	public ushort Number { get; set; }
 
@@ -10,10 +10,10 @@ public sealed class SequenceNumberEvent : MetaEvent // TypeDefIndex: 7557
 
 	public void .ctor(ushort number) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_Number() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Number(ushort value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }

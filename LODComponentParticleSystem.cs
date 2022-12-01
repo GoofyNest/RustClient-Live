@@ -1,13 +1,13 @@
-public abstract class LODComponentParticleSystem : LODComponent // TypeDefIndex: 11672
+public abstract class LODComponentParticleSystem : LODComponent // TypeDefIndex: 11679
 {
-	[TooltipAttribute] 
-	public bool playOnShow; 
-	protected ParticleSystem particleSystem; 
-	protected Renderer particleSystemRenderer; 
-	protected float maxEmission; 
-	protected int curlod; 
-	protected bool force; 
-	private bool initialized; 
+	[TooltipAttribute]
+	public bool playOnShow;
+	protected ParticleSystem particleSystem;
+	protected Renderer particleSystemRenderer;
+	protected float maxEmission;
+	protected int curlod;
+	protected bool force;
+	private bool initialized;
 
 
 	protected override void InitLOD() { }

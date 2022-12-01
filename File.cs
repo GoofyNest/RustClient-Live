@@ -1,6 +1,6 @@
 internal class FileBasedResourceGroveler : IResourceGroveler // TypeDefIndex: 482
 {
-	private ResourceManager.ResourceManagerMediator _mediator; 
+	private ResourceManager.ResourceManagerMediator _mediator;
 
 
 	public void .ctor(ResourceManager.ResourceManagerMediator mediator) { }
@@ -15,7 +15,7 @@ internal class FileBasedResourceGroveler : IResourceGroveler // TypeDefIndex: 48
 
 public sealed class FileInfo : FileSystemInfo // TypeDefIndex: 623
 {
-	private string _name; 
+	private string _name;
 
 	public override string Name { get; }
 	public long Length { get; }
@@ -60,8 +60,8 @@ public sealed class FileInfo : FileSystemInfo // TypeDefIndex: 623
 
 public class FileLoadException : IOException // TypeDefIndex: 624
 {
-	private string _fileName; 
-	private string _fusionLog; 
+	private string _fileName;
+	private string _fusionLog;
 
 	public override string Message { get; }
 	public string FusionLog { get; }
@@ -89,8 +89,8 @@ public class FileLoadException : IOException // TypeDefIndex: 624
 
 public class FileNotFoundException : IOException // TypeDefIndex: 625
 {
-	private string _fileName; 
-	private string _fusionLog; 
+	private string _fileName;
+	private string _fusionLog;
 
 	public override string Message { get; }
 	public string FusionLog { get; }
@@ -125,18 +125,18 @@ internal static class FileSystemEnumerableFactory // TypeDefIndex: 626
 
 internal class FileSystemEnumerableIterator<TSource> : Iterator<TSource> // TypeDefIndex: 628
 {
-	private SearchResultHandler<TSource> _resultHandler; 
-	private List<Directory.SearchData> searchStack; 
-	private Directory.SearchData searchData; 
-	private string searchCriteria; 
-	private SafeFindHandle _hnd; 
-	private bool needsParentPathDiscoveryDemand; 
-	private bool empty; 
-	private string userPath; 
-	private SearchOption searchOption; 
-	private string fullPath; 
-	private string normalizedSearchPath; 
-	private bool _checkHost; 
+	private SearchResultHandler<TSource> _resultHandler;
+	private List<Directory.SearchData> searchStack;
+	private Directory.SearchData searchData;
+	private string searchCriteria;
+	private SafeFindHandle _hnd;
+	private bool needsParentPathDiscoveryDemand;
+	private bool empty;
+	private string userPath;
+	private SearchOption searchOption;
+	private string fullPath;
+	private string normalizedSearchPath;
+	private bool _checkHost;
 
 
 	internal void .ctor(string path, string originalUserPath, string searchPattern, SearchOption searchOption, SearchResultHandler<TSource> resultHandler, bool checkHost) { }
@@ -231,24 +231,24 @@ internal static class FileSystemEnumerableHelpers // TypeDefIndex: 632
 
 public abstract class FileSystemInfo : MarshalByRefObject, ISerializable // TypeDefIndex: 633
 {
-	internal MonoIOStat _data; 
-	internal int _dataInitialised; 
-	protected string FullPath; 
-	protected string OriginalPath; 
-	private string _displayPath; 
+	internal MonoIOStat _data;
+	internal int _dataInitialised;
+	protected string FullPath;
+	protected string OriginalPath;
+	private string _displayPath;
 
 	public virtual string FullName { get; }
 	public string Extension { get; }
 	public abstract string Name { get; }
 	public abstract bool Exists { get; }
 	public DateTime CreationTime { get; set; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public DateTime CreationTimeUtc { get; set; }
 	public DateTime LastAccessTime { get; set; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public DateTime LastAccessTimeUtc { get; set; }
 	public DateTime LastWriteTime { get; set; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public DateTime LastWriteTimeUtc { get; set; }
 	public FileAttributes Attributes { get; }
 	internal string DisplayPath { get; set; }
@@ -296,7 +296,7 @@ public abstract class FileSystemInfo : MarshalByRefObject, ISerializable // Type
 
 	public FileAttributes get_Attributes() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
 	internal string get_DisplayPath() { }
@@ -307,7 +307,7 @@ public abstract class FileSystemInfo : MarshalByRefObject, ISerializable // Type
 
 public static class File // TypeDefIndex: 663
 {
-	private static Nullable<DateTime> defaultLocalFileTime; 
+	private static Nullable<DateTime> defaultLocalFileTime;
 
 	private static DateTime DefaultLocalFileTime { get; }
 
@@ -368,7 +368,7 @@ public static class File // TypeDefIndex: 663
 
 	public static IEnumerable<string> ReadLines(string path) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<string> ReadLines(StreamReader reader) { }
 
 	internal static int FillAttributeInfo(string path, ref MonoIOStat data, bool tryagain, bool returnErrorOnNotFound) { }
@@ -377,48 +377,48 @@ public static class File // TypeDefIndex: 663
 
 private sealed class File.<ReadLines>d__58 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IDisposable, IEnumerator // TypeDefIndex: 664
 {
-	private int <>1__state; 
-	private string <>2__current; 
-	private int <>l__initialThreadId; 
-	private StreamReader reader; 
-	public StreamReader <>3__reader; 
-	private string <s>5__1; 
-	private StreamReader <>7__wrap1; 
+	private int <>1__state;
+	private string <>2__current;
+	private int <>l__initialThreadId;
+	private StreamReader reader;
+	public StreamReader <>3__reader;
+	private string <s>5__1;
+	private StreamReader <>7__wrap1;
 
 	private string System.Collections.Generic.IEnumerator<System.String>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
 	private void <>m__Finally1() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private string System.Collections.Generic.IEnumerator<System.String>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<string> System.Collections.Generic.IEnumerable<System.String>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
 public enum FileAccess // TypeDefIndex: 665
 {
-	public int value__; 
+	public int value__;
 	public const FileAccess Read = 1;
 	public const FileAccess Write = 2;
 	public const FileAccess ReadWrite = 3;
@@ -427,7 +427,7 @@ public enum FileAccess // TypeDefIndex: 665
 
 public enum FileAttributes // TypeDefIndex: 666
 {
-	public int value__; 
+	public int value__;
 	public const FileAttributes Archive = 32;
 	public const FileAttributes Compressed = 2048;
 	public const FileAttributes Device = 64;
@@ -449,7 +449,7 @@ public enum FileAttributes // TypeDefIndex: 666
 
 public enum FileMode // TypeDefIndex: 667
 {
-	public int value__; 
+	public int value__;
 	public const FileMode CreateNew = 1;
 	public const FileMode Create = 2;
 	public const FileMode Open = 3;
@@ -461,7 +461,7 @@ public enum FileMode // TypeDefIndex: 667
 
 public enum FileOptions // TypeDefIndex: 668
 {
-	public int value__; 
+	public int value__;
 	public const FileOptions None = 0;
 	public const FileOptions Encrypted = 16384;
 	public const FileOptions DeleteOnClose = 67108864;
@@ -474,7 +474,7 @@ public enum FileOptions // TypeDefIndex: 668
 
 public enum FileShare // TypeDefIndex: 669
 {
-	public int value__; 
+	public int value__;
 	public const FileShare None = 0;
 	public const FileShare Read = 1;
 	public const FileShare Write = 2;
@@ -486,23 +486,23 @@ public enum FileShare // TypeDefIndex: 669
 
 public class FileStream : Stream // TypeDefIndex: 670
 {
-	private static byte[] buf_recycle; 
-	private static readonly object buf_recycle_lock; 
-	private byte[] buf; 
-	private string name; 
-	private SafeFileHandle safeHandle; 
-	private bool isExposed; 
-	private long append_startpos; 
-	private FileAccess access; 
-	private bool owner; 
-	private bool async; 
-	private bool canseek; 
-	private bool anonymous; 
-	private bool buf_dirty; 
-	private int buf_size; 
-	private int buf_length; 
-	private int buf_offset; 
-	private long buf_start; 
+	private static byte[] buf_recycle;
+	private static readonly object buf_recycle_lock;
+	private byte[] buf;
+	private string name;
+	private SafeFileHandle safeHandle;
+	private bool isExposed;
+	private long append_startpos;
+	private FileAccess access;
+	private bool owner;
+	private bool async;
+	private bool canseek;
+	private bool anonymous;
+	private bool buf_dirty;
+	private int buf_size;
+	private int buf_length;
+	private int buf_offset;
+	private long buf_start;
 
 	public override bool CanRead { get; }
 	public override bool CanWrite { get; }
@@ -641,15 +641,15 @@ private sealed class FileStream.WriteDelegate : MulticastDelegate // TypeDefInde
 
 internal class FileStreamAsyncResult : IAsyncResult // TypeDefIndex: 673
 {
-	private object state; 
-	private bool completed; 
-	private ManualResetEvent wh; 
-	private AsyncCallback cb; 
-	private bool completedSynch; 
-	public int Count; 
-	public int OriginalCount; 
-	public int BytesRead; 
-	private AsyncCallback realcb; 
+	private object state;
+	private bool completed;
+	private ManualResetEvent wh;
+	private AsyncCallback cb;
+	private bool completedSynch;
+	public int Count;
+	public int OriginalCount;
+	public int BytesRead;
+	private AsyncCallback realcb;
 
 	public object AsyncState { get; }
 	public bool CompletedSynchronously { get; }
@@ -673,11 +673,11 @@ internal class FileStreamAsyncResult : IAsyncResult // TypeDefIndex: 673
 
 internal class FileData // TypeDefIndex: 2840
 {
-	public string Directory; 
-	public FileAttributes Attributes; 
-	public bool NotExists; 
-	public DateTime CreationTime; 
-	public DateTime LastWriteTime; 
+	public string Directory;
+	public FileAttributes Attributes;
+	public bool NotExists;
+	public DateTime CreationTime;
+	public DateTime LastWriteTime;
 
 
 	public void .ctor() { }
@@ -686,7 +686,7 @@ internal class FileData // TypeDefIndex: 2840
 
 internal enum FileAction // TypeDefIndex: 2844
 {
-	public int value__; 
+	public int value__;
 	public const FileAction Added = 1;
 	public const FileAction Removed = 2;
 	public const FileAction Modified = 3;
@@ -697,9 +697,9 @@ internal enum FileAction // TypeDefIndex: 2844
 
 public class FileSystemEventArgs : EventArgs // TypeDefIndex: 2845
 {
-	private WatcherChangeTypes changeType; 
-	private string directory; 
-	private string name; 
+	private WatcherChangeTypes changeType;
+	private string directory;
+	private string name;
 
 	public string FullPath { get; }
 
@@ -725,57 +725,57 @@ public sealed class FileSystemEventHandler : MulticastDelegate // TypeDefIndex: 
 
 public class FileSystemWatcher : Component // TypeDefIndex: 2847
 {
-	private bool enableRaisingEvents; 
-	private string filter; 
-	private bool includeSubdirectories; 
-	private int internalBufferSize; 
-	private NotifyFilters notifyFilter; 
-	private string path; 
-	private string fullpath; 
-	private ISynchronizeInvoke synchronizingObject; 
-	private WaitForChangedResult lastData; 
-	private bool waiting; 
-	private SearchPattern2 pattern; 
-	private bool disposed; 
-	private string mangledFilter; 
-	private static IFileWatcher watcher; 
-	private static object lockobj; 
-	[CompilerGeneratedAttribute] 
-	private FileSystemEventHandler Changed; 
-	[CompilerGeneratedAttribute] 
-	private FileSystemEventHandler Created; 
-	[CompilerGeneratedAttribute] 
-	private FileSystemEventHandler Deleted; 
-	[CompilerGeneratedAttribute] 
-	private ErrorEventHandler Error; 
-	[CompilerGeneratedAttribute] 
-	private RenamedEventHandler Renamed; 
+	private bool enableRaisingEvents;
+	private string filter;
+	private bool includeSubdirectories;
+	private int internalBufferSize;
+	private NotifyFilters notifyFilter;
+	private string path;
+	private string fullpath;
+	private ISynchronizeInvoke synchronizingObject;
+	private WaitForChangedResult lastData;
+	private bool waiting;
+	private SearchPattern2 pattern;
+	private bool disposed;
+	private string mangledFilter;
+	private static IFileWatcher watcher;
+	private static object lockobj;
+	[CompilerGeneratedAttribute]
+	private FileSystemEventHandler Changed;
+	[CompilerGeneratedAttribute]
+	private FileSystemEventHandler Created;
+	[CompilerGeneratedAttribute]
+	private FileSystemEventHandler Deleted;
+	[CompilerGeneratedAttribute]
+	private ErrorEventHandler Error;
+	[CompilerGeneratedAttribute]
+	private RenamedEventHandler Renamed;
 
 	internal bool Waiting { get; set; }
 	internal string MangledFilter { get; }
 	internal SearchPattern2 Pattern { get; }
 	internal string FullPath { get; }
-	[IODescriptionAttribute] 
-	[DefaultValueAttribute] 
+	[IODescriptionAttribute]
+	[DefaultValueAttribute]
 	public bool EnableRaisingEvents { set; }
-	[SettingsBindableAttribute] 
-	[TypeConverterAttribute] 
-	[DefaultValueAttribute] 
-	[IODescriptionAttribute] 
+	[SettingsBindableAttribute]
+	[TypeConverterAttribute]
+	[DefaultValueAttribute]
+	[IODescriptionAttribute]
 	public string Filter { set; }
-	[DefaultValueAttribute] 
-	[IODescriptionAttribute] 
+	[DefaultValueAttribute]
+	[IODescriptionAttribute]
 	public bool IncludeSubdirectories { get; }
-	[IODescriptionAttribute] 
-	[DefaultValueAttribute] 
+	[IODescriptionAttribute]
+	[DefaultValueAttribute]
 	public NotifyFilters NotifyFilter { set; }
-	[DefaultValueAttribute] 
-	[IODescriptionAttribute] 
-	[EditorAttribute] 
-	[SettingsBindableAttribute] 
-	[TypeConverterAttribute] 
+	[DefaultValueAttribute]
+	[IODescriptionAttribute]
+	[EditorAttribute]
+	[SettingsBindableAttribute]
+	[TypeConverterAttribute]
 	public string Path { set; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public override ISite Site { get; }
 
 
@@ -825,10 +825,10 @@ public class FileSystemWatcher : Component // TypeDefIndex: 2847
 
 	private void Stop() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_Changed(FileSystemEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_Changed(FileSystemEventHandler value) { }
 
 	private static int InternalSupportsFSW() { }
@@ -839,7 +839,7 @@ public class FileSystemWatcher : Component // TypeDefIndex: 2847
 
 private enum FileSystemWatcher.EventType // TypeDefIndex: 2848
 {
-	public int value__; 
+	public int value__;
 	public const FileSystemWatcher.EventType FileSystemEvent = 0;
 	public const FileSystemWatcher.EventType ErrorEvent = 1;
 	public const FileSystemWatcher.EventType RenameEvent = 2;
@@ -848,28 +848,28 @@ private enum FileSystemWatcher.EventType // TypeDefIndex: 2848
 
 public class FileWebRequest : WebRequest, ISerializable // TypeDefIndex: 2948
 {
-	private static WaitCallback s_GetRequestStreamCallback; 
-	private static WaitCallback s_GetResponseCallback; 
-	private string m_connectionGroupName; 
-	private long m_contentLength; 
-	private ICredentials m_credentials; 
-	private FileAccess m_fileAccess; 
-	private WebHeaderCollection m_headers; 
-	private string m_method; 
-	private bool m_preauthenticate; 
-	private IWebProxy m_proxy; 
-	private ManualResetEvent m_readerEvent; 
-	private bool m_readPending; 
-	private WebResponse m_response; 
-	private Stream m_stream; 
-	private bool m_syncHint; 
-	private int m_timeout; 
-	private Uri m_uri; 
-	private bool m_writePending; 
-	private bool m_writing; 
-	private LazyAsyncResult m_WriteAResult; 
-	private LazyAsyncResult m_ReadAResult; 
-	private int m_Aborted; 
+	private static WaitCallback s_GetRequestStreamCallback;
+	private static WaitCallback s_GetResponseCallback;
+	private string m_connectionGroupName;
+	private long m_contentLength;
+	private ICredentials m_credentials;
+	private FileAccess m_fileAccess;
+	private WebHeaderCollection m_headers;
+	private string m_method;
+	private bool m_preauthenticate;
+	private IWebProxy m_proxy;
+	private ManualResetEvent m_readerEvent;
+	private bool m_readPending;
+	private WebResponse m_response;
+	private Stream m_stream;
+	private bool m_syncHint;
+	private int m_timeout;
+	private Uri m_uri;
+	private bool m_writePending;
+	private bool m_writing;
+	private LazyAsyncResult m_WriteAResult;
+	private LazyAsyncResult m_ReadAResult;
+	private int m_Aborted;
 
 	internal bool Aborted { get; }
 	public override string ConnectionGroupName { set; }
@@ -887,7 +887,7 @@ public class FileWebRequest : WebRequest, ISerializable // TypeDefIndex: 2948
 
 	internal void .ctor(Uri uri) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
 	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
@@ -967,7 +967,7 @@ internal class FileWebRequestCreator : IWebRequestCreate // TypeDefIndex: 2949
 
 internal sealed class FileWebStream : FileStream, ICloseEx // TypeDefIndex: 2950
 {
-	private FileWebRequest m_request; 
+	private FileWebRequest m_request;
 
 
 	public void .ctor(FileWebRequest request, string path, FileMode mode, FileAccess access, FileShare sharing) { }
@@ -996,12 +996,12 @@ internal sealed class FileWebStream : FileStream, ICloseEx // TypeDefIndex: 2950
 
 public class FileWebResponse : WebResponse, ISerializable, ICloseEx // TypeDefIndex: 2951
 {
-	private bool m_closed; 
-	private long m_contentLength; 
-	private FileAccess m_fileAccess; 
-	private WebHeaderCollection m_headers; 
-	private Stream m_stream; 
-	private Uri m_uri; 
+	private bool m_closed;
+	private long m_contentLength;
+	private FileAccess m_fileAccess;
+	private WebHeaderCollection m_headers;
+	private Stream m_stream;
+	private Uri m_uri;
 
 	public override long ContentLength { get; }
 	public override WebHeaderCollection Headers { get; }
@@ -1010,7 +1010,7 @@ public class FileWebResponse : WebResponse, ISerializable, ICloseEx // TypeDefIn
 
 	internal void .ctor(FileWebRequest request, Uri uri, FileAccess access, bool asyncHint) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
 	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
@@ -1033,13 +1033,13 @@ public class FileWebResponse : WebResponse, ISerializable, ICloseEx // TypeDefIn
 
 }
 
-internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5408
+internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5410
 {
-	internal Result Result; 
-	internal ulong FileSize; 
-	internal byte[] FileSHA; 
-	internal uint Flags; 
-	public static int _datasize; 
+	internal Result Result;
+	internal ulong FileSize;
+	internal byte[] FileSHA;
+	internal uint Flags;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -1053,14 +1053,14 @@ internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5408
 
 }
 
-public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6475
+public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6477
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public byte[] data; 
-	public uint entityId; 
-	public uint numId; 
-	public uint crc; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public byte[] data;
+	public uint entityId;
+	public uint numId;
+	public uint crc;
 
 
 	public static void ResetToPool(FileStorageCacheData instance) { }
@@ -1117,11 +1117,11 @@ public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public static class FileSystem // TypeDefIndex: 6669
+public static class FileSystem // TypeDefIndex: 6671
 {
-	public static bool LogDebug; 
-	public static bool LogTime; 
-	public static FileSystemBackend Backend; 
+	public static bool LogDebug;
+	public static bool LogTime;
+	public static FileSystemBackend Backend;
 
 
 	public static GameObject[] LoadPrefabs(string folder) { }
@@ -1169,11 +1169,11 @@ public static class FileSystem // TypeDefIndex: 6669
 
 }
 
-public abstract class FileSystemBackend // TypeDefIndex: 6670
+public abstract class FileSystemBackend // TypeDefIndex: 6672
 {
-	public bool isError; 
-	public string loadingError; 
-	public Dictionary<string, Object> cache; 
+	public bool isError;
+	public string loadingError;
+	public Dictionary<string, Object> cache;
 
 
 	public GameObject[] LoadPrefabs(string folder) { }
@@ -1222,44 +1222,44 @@ public abstract class FileSystemBackend // TypeDefIndex: 6670
 
 }
 
-public class FileDialog : MonoBehaviour // TypeDefIndex: 7106
+public class FileDialog : MonoBehaviour // TypeDefIndex: 7108
 {
-	[HideInInspector] 
-	public string result; 
-	[HideInInspector] 
-	private FileDialog.FileDialogMode mode; 
-	[HideInInspector] 
-	public bool finished; 
-	[HeaderAttribute] 
-	public Image windowIcon; 
-	public Text windowName; 
-	public InputField currentPath; 
-	public InputField fileName; 
-	public Button up; 
-	public Button commit; 
-	public Button cancel; 
-	public GameObject filesScrollRectContent; 
-	public GameObject drivesScrollRectContent; 
-	[HeaderAttribute] 
-	public GameObject filesScrollRectElement; 
-	public GameObject drivesScrollRectElement; 
-	[HeaderAttribute] 
-	public Sprite folderIcon; 
-	public Sprite fileIcon; 
-	private string workingPath; 
-	private string workingFile; 
-	private string[] allowedExtensions; 
-	private long maxSize; 
-	private bool saveLastPath; 
+	[HideInInspector]
+	public string result;
+	[HideInInspector]
+	private FileDialog.FileDialogMode mode;
+	[HideInInspector]
+	public bool finished;
+	[HeaderAttribute]
+	public Image windowIcon;
+	public Text windowName;
+	public InputField currentPath;
+	public InputField fileName;
+	public Button up;
+	public Button commit;
+	public Button cancel;
+	public GameObject filesScrollRectContent;
+	public GameObject drivesScrollRectContent;
+	[HeaderAttribute]
+	public GameObject filesScrollRectElement;
+	public GameObject drivesScrollRectElement;
+	[HeaderAttribute]
+	public Sprite folderIcon;
+	public Sprite fileIcon;
+	private string workingPath;
+	private string workingFile;
+	private string[] allowedExtensions;
+	private long maxSize;
+	private bool saveLastPath;
 
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator Open(string path, string allowedExtensions, string windowName = "OPEN FILE", Sprite windowIcon, long maxSize = -1, bool saveLastPath = True) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator Save(string path, string allowedExtensions, string windowName = "SAVE FILE", Sprite windowIcon, bool saveLastPath = True) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<string> SaveAsync(string path, string allowedExtensions, string windowName = "SAVE FILE", Sprite windowIcon, bool saveLastPath = True) { }
 
 	private void Hide() { }
@@ -1294,116 +1294,116 @@ public class FileDialog : MonoBehaviour // TypeDefIndex: 7106
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <UpdateFilesList>
 
 }
 
-public enum FileDialog.FileDialogMode // TypeDefIndex: 7107
+public enum FileDialog.FileDialogMode // TypeDefIndex: 7109
 {
-	public int value__; 
+	public int value__;
 	public const FileDialog.FileDialogMode Open = 0;
 	public const FileDialog.FileDialogMode Save = 1;
 
 }
 
-private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7108
+private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7110
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public FileDialog <>4__this; 
-	public long maxSize; 
-	public bool saveLastPath; 
-	public string allowedExtensions; 
-	public string path; 
-	public string windowName; 
-	public Sprite windowIcon; 
+	private int <>1__state;
+	private object <>2__current;
+	public FileDialog <>4__this;
+	public long maxSize;
+	public bool saveLastPath;
+	public string allowedExtensions;
+	public string path;
+	public string windowName;
+	public Sprite windowIcon;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7109
+private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7111
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public FileDialog <>4__this; 
-	public bool saveLastPath; 
-	public string allowedExtensions; 
-	public string path; 
-	public string windowName; 
-	public Sprite windowIcon; 
+	private int <>1__state;
+	private object <>2__current;
+	public FileDialog <>4__this;
+	public bool saveLastPath;
+	public string allowedExtensions;
+	public string path;
+	public string windowName;
+	public Sprite windowIcon;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex: 7110
+private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex: 7112
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<string> <>t__builder; 
-	public FileDialog <>4__this; 
-	public bool saveLastPath; 
-	public string allowedExtensions; 
-	public string path; 
-	public string windowName; 
-	public Sprite windowIcon; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<string> <>t__builder;
+	public FileDialog <>4__this;
+	public bool saveLastPath;
+	public string allowedExtensions;
+	public string path;
+	public string windowName;
+	public Sprite windowIcon;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public class FileListElement : MonoBehaviour // TypeDefIndex: 7111
+public class FileListElement : MonoBehaviour // TypeDefIndex: 7113
 {
-	public Image icon; 
-	public Text elementName; 
-	public Text size; 
-	public FileDialog instance; 
-	public bool isFile; 
-	public string data; 
+	public Image icon;
+	public Text elementName;
+	public Text size;
+	public FileDialog instance;
+	public bool isFile;
+	public string data;
 
 
 	public void OnClick() { }
@@ -1412,7 +1412,7 @@ public class FileListElement : MonoBehaviour // TypeDefIndex: 7111
 
 }
 
-internal static class FileUtilities // TypeDefIndex: 7629
+internal static class FileUtilities // TypeDefIndex: 7631
 {
 
 	private static extern SafeFileHandle CreateFile(string lpFileName, uint dwDesiredAccess, uint dwShareMode, IntPtr lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, IntPtr hTemplateFile) { }
@@ -1423,16 +1423,16 @@ internal static class FileUtilities // TypeDefIndex: 7629
 
 }
 
-public struct FileMetadata // TypeDefIndex: 8391
+public struct FileMetadata // TypeDefIndex: 8393
 {
-	[CompilerGeneratedAttribute] 
-	private uint <FileSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <MD5Hash>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <UnencryptedDataSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <FileSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <MD5Hash>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <UnencryptedDataSizeBytes>k__BackingField;
 
 	public uint FileSizeBytes { get; set; }
 	public Utf8String MD5Hash { get; set; }
@@ -1440,41 +1440,41 @@ public struct FileMetadata // TypeDefIndex: 8391
 	public uint UnencryptedDataSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_FileSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FileSizeBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_MD5Hash() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MD5Hash(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_UnencryptedDataSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnencryptedDataSizeBytes(uint value) { }
 
 	internal void Set(ref FileMetadataInternal other) { }
 
 }
 
-internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8392
+internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8394
 {
-	private int m_ApiVersion; 
-	private uint m_FileSizeBytes; 
-	private IntPtr m_MD5Hash; 
-	private IntPtr m_Filename; 
-	private uint m_UnencryptedDataSizeBytes; 
+	private int m_ApiVersion;
+	private uint m_FileSizeBytes;
+	private IntPtr m_MD5Hash;
+	private IntPtr m_Filename;
+	private uint m_UnencryptedDataSizeBytes;
 
 	public uint FileSizeBytes { get; set; }
 	public Utf8String MD5Hash { get; set; }
@@ -1508,18 +1508,18 @@ internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMe
 
 }
 
-public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8393
+public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8395
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <BytesTransferred>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TotalFileSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <BytesTransferred>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TotalFileSizeBytes>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -1528,34 +1528,34 @@ public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 
 	public uint TotalFileSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_BytesTransferred() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BytesTransferred(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TotalFileSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TotalFileSizeBytes(uint value) { }
 
 	public Nullable<Result> GetResultCode() { }
@@ -1564,13 +1564,13 @@ public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 
 
 }
 
-internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8394
+internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8396
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Filename; 
-	private uint m_BytesTransferred; 
-	private uint m_TotalFileSizeBytes; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Filename;
+	private uint m_BytesTransferred;
+	private uint m_TotalFileSizeBytes;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }
@@ -1612,18 +1612,18 @@ internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal
 
 }
 
-public struct FileMetadata // TypeDefIndex: 8884
+public struct FileMetadata // TypeDefIndex: 8886
 {
-	[CompilerGeneratedAttribute] 
-	private uint <FileSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <MD5Hash>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <LastModifiedTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <UnencryptedDataSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <FileSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <MD5Hash>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <LastModifiedTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <UnencryptedDataSizeBytes>k__BackingField;
 
 	public uint FileSizeBytes { get; set; }
 	public Utf8String MD5Hash { get; set; }
@@ -1632,48 +1632,48 @@ public struct FileMetadata // TypeDefIndex: 8884
 	public uint UnencryptedDataSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_FileSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FileSizeBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_MD5Hash() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MD5Hash(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_LastModifiedTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LastModifiedTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_UnencryptedDataSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnencryptedDataSizeBytes(uint value) { }
 
 	internal void Set(ref FileMetadataInternal other) { }
 
 }
 
-internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8885
+internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8887
 {
-	private int m_ApiVersion; 
-	private uint m_FileSizeBytes; 
-	private IntPtr m_MD5Hash; 
-	private IntPtr m_Filename; 
-	private long m_LastModifiedTime; 
-	private uint m_UnencryptedDataSizeBytes; 
+	private int m_ApiVersion;
+	private uint m_FileSizeBytes;
+	private IntPtr m_MD5Hash;
+	private IntPtr m_Filename;
+	private long m_LastModifiedTime;
+	private uint m_UnencryptedDataSizeBytes;
 
 	public uint FileSizeBytes { get; set; }
 	public Utf8String MD5Hash { get; set; }
@@ -1712,18 +1712,18 @@ internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMe
 
 }
 
-public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8886
+public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8888
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <BytesTransferred>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TotalFileSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <BytesTransferred>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TotalFileSizeBytes>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -1732,34 +1732,34 @@ public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 
 	public uint TotalFileSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_BytesTransferred() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BytesTransferred(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TotalFileSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TotalFileSizeBytes(uint value) { }
 
 	public Nullable<Result> GetResultCode() { }
@@ -1768,13 +1768,13 @@ public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 
 
 }
 
-internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8887
+internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8889
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Filename; 
-	private uint m_BytesTransferred; 
-	private uint m_TotalFileSizeBytes; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Filename;
+	private uint m_BytesTransferred;
+	private uint m_TotalFileSizeBytes;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }
@@ -1816,22 +1816,22 @@ internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal
 
 }
 
-public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11105
+public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11111
 {
-	public static bool ranInBackground; 
-	public static Coroutine warmupTask; 
-	private static bool run; 
-	public static string[] ExcludeFilter; 
+	public static bool ranInBackground;
+	public static Coroutine warmupTask;
+	private static bool run;
+	public static string[] ExcludeFilter;
 
 
 	public static void Run() { }
 
 	public static IEnumerator Run(string[] assetList, Action<string> statusFunction, string format, int priority = 0) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerator RunAsyncImpl(string[] assetList, Action<string> statusFunction, string format, int priority) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerator RunImpl(string[] assetList, Action<string> statusFunction, string format) { }
 
 	private static float CalculateFrameBudget() { }
@@ -1848,77 +1848,77 @@ public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11105
 
 }
 
-private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11106
+private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11112
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string[] assetList; 
-	public int priority; 
-	public Action<string> statusFunction; 
-	public string format; 
-	private Stopwatch <sw>5__2; 
-	private AssetPreloadResult <preload>5__3; 
-	private int <warmupIndex>5__4; 
+	private int <>1__state;
+	private object <>2__current;
+	public string[] assetList;
+	public int priority;
+	public Action<string> statusFunction;
+	public string format;
+	private Stopwatch <sw>5__2;
+	private AssetPreloadResult <preload>5__3;
+	private int <warmupIndex>5__4;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11107
+private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11113
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string[] assetList; 
-	public Action<string> statusFunction; 
-	public string format; 
-	private Stopwatch <sw>5__2; 
-	private int <i>5__3; 
+	private int <>1__state;
+	private object <>2__current;
+	public string[] assetList;
+	public Action<string> statusFunction;
+	public string format;
+	private Stopwatch <sw>5__2;
+	private int <i>5__3;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11108
+private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11114
 {
-	public Nullable<bool> poolFilter; 
+	public Nullable<bool> poolFilter;
 
 
 	public void .ctor() { }
@@ -1927,12 +1927,12 @@ private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11
 
 }
 
-private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11109
+private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11115
 {
-	public static readonly FileSystem_Warmup.<>c <>9; 
-	public static Func<GameManifest.PrefabProperties, string> <>9__10_0; 
-	public static Func<string, bool> <>9__10_1; 
-	public static Func<GameManifest.PrefabProperties, string> <>9__10_3; 
+	public static readonly FileSystem_Warmup.<>c <>9;
+	public static Func<GameManifest.PrefabProperties, string> <>9__10_0;
+	public static Func<string, bool> <>9__10_1;
+	public static Func<GameManifest.PrefabProperties, string> <>9__10_3;
 
 
 	private static void .cctor() { }
@@ -1947,12 +1947,12 @@ private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11109
 
 }
 
-public class FileStorage : IDisposable // TypeDefIndex: 12469
+public class FileStorage : IDisposable // TypeDefIndex: 12477
 {
-	private Database db; 
-	private CRC32 crc; 
-	private MruDictionary<uint, FileStorage.CacheData> _cache; 
-	public static FileStorage client; 
+	private Database db;
+	private CRC32 crc;
+	private MruDictionary<uint, FileStorage.CacheData> _cache;
+	public static FileStorage client;
 
 
 	protected void .ctor(string name, bool server) { }
@@ -1987,31 +1987,31 @@ public class FileStorage : IDisposable // TypeDefIndex: 12469
 
 }
 
-private class FileStorage.CacheData // TypeDefIndex: 12470
+private class FileStorage.CacheData // TypeDefIndex: 12478
 {
-	public byte[] data; 
-	public uint entityID; 
-	public uint numID; 
+	public byte[] data;
+	public uint entityID;
+	public uint numID;
 
 
 	public void .ctor() { }
 
 }
 
-public enum FileStorage.Type // TypeDefIndex: 12471
+public enum FileStorage.Type // TypeDefIndex: 12479
 {
-	public int value__; 
+	public int value__;
 	public const FileStorage.Type png = 0;
 	public const FileStorage.Type jpg = 1;
 	public const FileStorage.Type ogg = 2;
 
 }
 
-private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12472
+private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12480
 {
-	public uint entityid; 
-	public uint numid; 
-	public Func<KeyValuePair<uint, FileStorage.CacheData>, bool> <>9__0; 
+	public uint entityid;
+	public uint numid;
+	public Func<KeyValuePair<uint, FileStorage.CacheData>, bool> <>9__0;
 
 
 	public void .ctor() { }
@@ -2020,10 +2020,10 @@ private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12472
 
 }
 
-private sealed class FileStorage.<>c // TypeDefIndex: 12473
+private sealed class FileStorage.<>c // TypeDefIndex: 12481
 {
-	public static readonly FileStorage.<>c <>9; 
-	public static Func<KeyValuePair<uint, FileStorage.CacheData>, uint> <>9__14_1; 
+	public static readonly FileStorage.<>c <>9;
+	public static Func<KeyValuePair<uint, FileStorage.CacheData>, uint> <>9__14_1;
 
 
 	private static void .cctor() { }
@@ -2034,23 +2034,23 @@ private sealed class FileStorage.<>c // TypeDefIndex: 12473
 
 }
 
-public static class FileEx // TypeDefIndex: 13135
+public static class FileEx // TypeDefIndex: 13150
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool MoveToSafe(FileInfo parent, string target, int retries = 10) { }
 
 	public static void Backup(string[] names) { }
 
 }
 
-public class FileConVar : ConsoleSystem // TypeDefIndex: 13710
+public class FileConVar : ConsoleSystem // TypeDefIndex: 13726
 {
-	[ClientVar] 
+	[ClientVar]
 	public static bool debug { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool time { get; set; }
 
 

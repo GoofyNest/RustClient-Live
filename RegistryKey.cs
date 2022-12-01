@@ -1,16 +1,16 @@
 public sealed class RegistryKey : MarshalByRefObject, IDisposable // TypeDefIndex: 103
 {
-	private object handle; 
-	private SafeRegistryHandle safe_handle; 
-	private object hive; 
-	private readonly string qname; 
-	private readonly bool isRemoteRoot; 
-	private readonly bool isWritable; 
-	private static readonly IRegistryApi RegistryApi; 
+	private object handle;
+	private SafeRegistryHandle safe_handle;
+	private object hive;
+	private readonly string qname;
+	private readonly bool isRemoteRoot;
+	private readonly bool isWritable;
+	private static readonly IRegistryApi RegistryApi;
 
 	public string Name { get; }
-	[MonoTODOAttribute] 
-	[ComVisibleAttribute] 
+	[MonoTODOAttribute]
+	[ComVisibleAttribute]
 	public SafeRegistryHandle Handle { get; }
 	internal bool IsRoot { get; }
 	internal RegistryHive Hive { get; }

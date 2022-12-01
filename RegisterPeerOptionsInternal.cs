@@ -1,13 +1,13 @@
-internal struct RegisterPeerOptionsInternal : ISettable<RegisterPeerOptions>, IDisposable // TypeDefIndex: 9851
+internal struct RegisterPeerOptionsInternal : ISettable<RegisterPeerOptions>, IDisposable // TypeDefIndex: 9853
 {
-	private int m_ApiVersion; 
-	private IntPtr m_PeerHandle; 
-	private AntiCheatCommonClientType m_ClientType; 
-	private AntiCheatCommonClientPlatform m_ClientPlatform; 
-	private uint m_AuthenticationTimeout; 
-	private IntPtr m_AccountId_DEPRECATED; 
-	private IntPtr m_IpAddress; 
-	private IntPtr m_PeerProductUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_PeerHandle;
+	private AntiCheatCommonClientType m_ClientType;
+	private AntiCheatCommonClientPlatform m_ClientPlatform;
+	private uint m_AuthenticationTimeout;
+	private IntPtr m_AccountId_DEPRECATED;
+	private IntPtr m_IpAddress;
+	private IntPtr m_PeerProductUserId;
 
 	public IntPtr PeerHandle { set; }
 	public AntiCheatCommonClientType ClientType { set; }

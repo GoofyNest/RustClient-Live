@@ -1,21 +1,21 @@
-public class LootPanelEngine : LootPanel // TypeDefIndex: 12794
+public class LootPanelEngine : LootPanel // TypeDefIndex: 12808
 {
-	[SerializeField] 
-	private Image engineImage; 
-	[SerializeField] 
-	private ItemIcon[] icons; 
-	[SerializeField] 
-	private GameObject warning; 
-	[SerializeField] 
-	private RustText hp; 
-	[SerializeField] 
-	private RustText power; 
-	[SerializeField] 
-	private RustText acceleration; 
-	[SerializeField] 
-	private RustText topSpeed; 
-	[SerializeField] 
-	private RustText fuelEconomy; 
+	[SerializeField]
+	private Image engineImage;
+	[SerializeField]
+	private ItemIcon[] icons;
+	[SerializeField]
+	private GameObject warning;
+	[SerializeField]
+	private RustText hp;
+	[SerializeField]
+	private RustText power;
+	[SerializeField]
+	private RustText acceleration;
+	[SerializeField]
+	private RustText topSpeed;
+	[SerializeField]
+	private RustText fuelEconomy;
 
 
 	protected void OnEnable() { }

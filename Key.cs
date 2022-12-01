@@ -1,24 +1,24 @@
-public struct Key // TypeDefIndex: 6290
+public struct Key // TypeDefIndex: 6292
 {
-	[CompilerGeneratedAttribute] 
-	private uint <Field>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Wire <WireType>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <Field>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Wire <WireType>k__BackingField;
 
 	public uint Field { get; set; }
 	public Wire WireType { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_Field() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Field(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Wire get_WireType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_WireType(Wire value) { }
 
 	public void .ctor(uint field, Wire wireType) { }

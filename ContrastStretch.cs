@@ -1,18 +1,18 @@
-public class ContrastStretch : MonoBehaviour // TypeDefIndex: 8193
+public class ContrastStretch : MonoBehaviour // TypeDefIndex: 8195
 {
-	public float adaptationSpeed; 
-	public float limitMinimum; 
-	public float limitMaximum; 
-	private RenderTexture[] adaptRenderTex; 
-	private int curAdaptIndex; 
-	public Shader shaderLum; 
-	private Material m_materialLum; 
-	public Shader shaderReduce; 
-	private Material m_materialReduce; 
-	public Shader shaderAdapt; 
-	private Material m_materialAdapt; 
-	public Shader shaderApply; 
-	private Material m_materialApply; 
+	public float adaptationSpeed;
+	public float limitMinimum;
+	public float limitMaximum;
+	private RenderTexture[] adaptRenderTex;
+	private int curAdaptIndex;
+	public Shader shaderLum;
+	private Material m_materialLum;
+	public Shader shaderReduce;
+	private Material m_materialReduce;
+	public Shader shaderAdapt;
+	private Material m_materialAdapt;
+	public Shader shaderApply;
+	private Material m_materialApply;
 
 	protected Material materialLum { get; }
 	protected Material materialReduce { get; }

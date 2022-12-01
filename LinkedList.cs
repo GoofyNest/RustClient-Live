@@ -1,10 +1,10 @@
 public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator, ISerializable, IDeserializationCallback // TypeDefIndex: 3116
 {
-	private LinkedList<T> _list; 
-	private LinkedListNode<T> _node; 
-	private int _version; 
-	private T _current; 
-	private int _index; 
+	private LinkedList<T> _list;
+	private LinkedListNode<T> _node;
+	private int _version;
+	private T _current;
+	private int _index;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

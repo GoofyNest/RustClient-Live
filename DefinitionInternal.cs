@@ -1,11 +1,11 @@
-internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9289
+internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9291
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LeaderboardId; 
-	private IntPtr m_StatName; 
-	private LeaderboardAggregation m_Aggregation; 
-	private long m_StartTime; 
-	private long m_EndTime; 
+	private int m_ApiVersion;
+	private IntPtr m_LeaderboardId;
+	private IntPtr m_StatName;
+	private LeaderboardAggregation m_Aggregation;
+	private long m_StartTime;
+	private long m_EndTime;
 
 	public Utf8String LeaderboardId { get; set; }
 	public Utf8String StatName { get; set; }
@@ -44,21 +44,21 @@ internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition
 
 }
 
-internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9910
+internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9912
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AchievementId; 
-	private IntPtr m_DisplayName; 
-	private IntPtr m_Description; 
-	private IntPtr m_LockedDisplayName; 
-	private IntPtr m_LockedDescription; 
-	private IntPtr m_HiddenDescription; 
-	private IntPtr m_CompletionDescription; 
-	private IntPtr m_UnlockedIconId; 
-	private IntPtr m_LockedIconId; 
-	private int m_IsHidden; 
-	private int m_StatThresholdsCount; 
-	private IntPtr m_StatThresholds; 
+	private int m_ApiVersion;
+	private IntPtr m_AchievementId;
+	private IntPtr m_DisplayName;
+	private IntPtr m_Description;
+	private IntPtr m_LockedDisplayName;
+	private IntPtr m_LockedDescription;
+	private IntPtr m_HiddenDescription;
+	private IntPtr m_CompletionDescription;
+	private IntPtr m_UnlockedIconId;
+	private IntPtr m_LockedIconId;
+	private int m_IsHidden;
+	private int m_StatThresholdsCount;
+	private IntPtr m_StatThresholds;
 
 	public Utf8String AchievementId { get; set; }
 	public Utf8String DisplayName { get; set; }

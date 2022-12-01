@@ -1,11 +1,11 @@
 public class RowUpdatingEventArgs : EventArgs // TypeDefIndex: 4414
 {
-	private IDbCommand _command; 
-	private StatementType _statementType; 
-	private DataTableMapping _tableMapping; 
-	private Exception _errors; 
-	private DataRow _dataRow; 
-	private UpdateStatus _status; 
+	private IDbCommand _command;
+	private StatementType _statementType;
+	private DataTableMapping _tableMapping;
+	private Exception _errors;
+	private DataRow _dataRow;
+	private UpdateStatus _status;
 
 	protected virtual IDbCommand BaseCommand { get; set; }
 	public IDbCommand Command { get; set; }

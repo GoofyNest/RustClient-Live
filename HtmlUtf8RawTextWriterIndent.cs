@@ -1,9 +1,9 @@
 internal class HtmlUtf8RawTextWriterIndent : HtmlUtf8RawTextWriter // TypeDefIndex: 1843
 {
-	private int indentLevel; 
-	private int endBlockPos; 
-	private string indentChars; 
-	private bool newLineOnAttributes; 
+	private int indentLevel;
+	private int endBlockPos;
+	private string indentChars;
+	private bool newLineOnAttributes;
 
 
 	public void .ctor(Stream stream, XmlWriterSettings settings) { }

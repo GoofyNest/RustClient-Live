@@ -1,6 +1,6 @@
 internal enum ValidatorState // TypeDefIndex: 2393
 {
-	public int value__; 
+	public int value__;
 	public const ValidatorState None = 0;
 	public const ValidatorState Start = 1;
 	public const ValidatorState TopLevelAttribute = 2;

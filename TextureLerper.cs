@@ -1,11 +1,11 @@
-internal class TextureLerper // TypeDefIndex: 13662
+internal class TextureLerper // TypeDefIndex: 13678
 {
-	private static TextureLerper m_Instance; 
-	private CommandBuffer m_Command; 
-	private PropertySheetFactory m_PropertySheets; 
-	private PostProcessResources m_Resources; 
-	private List<RenderTexture> m_Recycled; 
-	private List<RenderTexture> m_Actives; 
+	private static TextureLerper m_Instance;
+	private CommandBuffer m_Command;
+	private PropertySheetFactory m_PropertySheets;
+	private PostProcessResources m_Resources;
+	private List<RenderTexture> m_Recycled;
+	private List<RenderTexture> m_Actives;
 
 	internal static TextureLerper instance { get; }
 

@@ -1,10 +1,10 @@
-public static class TimeSpanEx // TypeDefIndex: 13144
+public static class TimeSpanEx // TypeDefIndex: 13159
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string ToShortString(TimeSpan timeSpan) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string ToShortStringNoHours(TimeSpan timeSpan) { }
 
 }

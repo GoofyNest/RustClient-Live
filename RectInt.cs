@@ -1,9 +1,9 @@
 public struct RectInt : IEquatable<RectInt> // TypeDefIndex: 3377
 {
-	private int m_XMin; 
-	private int m_YMin; 
-	private int m_Width; 
-	private int m_Height; 
+	private int m_XMin;
+	private int m_YMin;
+	private int m_Width;
+	private int m_Height;
 
 	public int x { get; }
 	public int y { get; }

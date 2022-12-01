@@ -1,6 +1,6 @@
-public class MapMarkerPet : MapMarker // TypeDefIndex: 10667
+public class MapMarkerPet : MapMarker // TypeDefIndex: 10671
 {
-	private RectTransform _rectTransform; 
+	private RectTransform _rectTransform;
 
 
 	public override void SetupUIMarker(GameObject marker) { }

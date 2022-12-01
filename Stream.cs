@@ -1,18 +1,18 @@
 public abstract class Stream : MarshalByRefObject, IDisposable // TypeDefIndex: 638
 {
-	public static readonly Stream Null; 
+	public static readonly Stream Null;
 	private const int _DefaultCopyBufferSize = 81920;
-	private Stream.ReadWriteTask _activeReadWriteTask; 
-	private SemaphoreSlim _asyncActiveSemaphore; 
+	private Stream.ReadWriteTask _activeReadWriteTask;
+	private SemaphoreSlim _asyncActiveSemaphore;
 
 	public abstract bool CanRead { get; }
 	public abstract bool CanSeek { get; }
 	public abstract bool CanWrite { get; }
 	public abstract long Length { get; }
 	public abstract long Position { get; set; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual int ReadTimeout { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual int WriteTimeout { get; }
 
 
@@ -34,16 +34,16 @@ public abstract class Stream : MarshalByRefObject, IDisposable // TypeDefIndex: 
 
 	public virtual int get_WriteTimeout() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public Task CopyToAsync(Stream destination) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public Task CopyToAsync(Stream destination, int bufferSize) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task CopyToAsyncInternal(Stream destination, int bufferSize, CancellationToken cancellationToken) { }
 
 	public void CopyTo(Stream destination) { }
@@ -64,7 +64,7 @@ public abstract class Stream : MarshalByRefObject, IDisposable // TypeDefIndex: 
 
 	public virtual int EndRead(IAsyncResult asyncResult) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	private Task<int> BeginEndReadAsync(byte[] buffer, int offset, int count) { }
@@ -79,10 +79,10 @@ public abstract class Stream : MarshalByRefObject, IDisposable // TypeDefIndex: 
 
 	public virtual void EndWrite(IAsyncResult asyncResult) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public Task WriteAsync(byte[] buffer, int offset, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	private Task BeginEndWriteAsync(byte[] buffer, int offset, int count) { }
@@ -115,22 +115,22 @@ public abstract class Stream : MarshalByRefObject, IDisposable // TypeDefIndex: 
 
 private struct Stream.ReadWriteParameters // TypeDefIndex: 639
 {
-	internal byte[] Buffer; 
-	internal int Offset; 
-	internal int Count; 
+	internal byte[] Buffer;
+	internal int Offset;
+	internal int Count;
 
 }
 
 private sealed class Stream.ReadWriteTask : Task<int>, ITaskCompletionAction // TypeDefIndex: 640
 {
-	internal readonly bool _isRead; 
-	internal Stream _stream; 
-	internal byte[] _buffer; 
-	internal int _offset; 
-	internal int _count; 
-	private AsyncCallback _callback; 
-	private ExecutionContext _context; 
-	private static ContextCallback s_invokeAsyncCallback; 
+	internal readonly bool _isRead;
+	internal Stream _stream;
+	internal byte[] _buffer;
+	internal int _offset;
+	internal int _count;
+	private AsyncCallback _callback;
+	private ExecutionContext _context;
+	private static ContextCallback s_invokeAsyncCallback;
 
 
 	internal void ClearBeginState() { }
@@ -145,7 +145,7 @@ private sealed class Stream.ReadWriteTask : Task<int>, ITaskCompletionAction // 
 
 private sealed class Stream.NullStream : Stream // TypeDefIndex: 641
 {
-	private static Task<int> s_nullReadTask; 
+	private static Task<int> s_nullReadTask;
 
 	public override bool CanRead { get; }
 	public override bool CanWrite { get; }
@@ -182,14 +182,14 @@ private sealed class Stream.NullStream : Stream // TypeDefIndex: 641
 
 	public override int Read([In] [Out] byte[] buffer, int offset, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	public override int ReadByte() { }
 
 	public override void Write(byte[] buffer, int offset, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	public override void WriteByte(byte value) { }
@@ -202,12 +202,12 @@ private sealed class Stream.NullStream : Stream // TypeDefIndex: 641
 
 internal sealed class Stream.SynchronousAsyncResult : IAsyncResult // TypeDefIndex: 642
 {
-	private readonly object _stateObject; 
-	private readonly bool _isWrite; 
-	private ManualResetEvent _waitHandle; 
-	private ExceptionDispatchInfo _exceptionInfo; 
-	private bool _endXxxCalled; 
-	private int _bytesRead; 
+	private readonly object _stateObject;
+	private readonly bool _isWrite;
+	private ManualResetEvent _waitHandle;
+	private ExceptionDispatchInfo _exceptionInfo;
+	private bool _endXxxCalled;
+	private int _bytesRead;
 
 	public bool IsCompleted { get; }
 	public WaitHandle AsyncWaitHandle { get; }
@@ -239,8 +239,8 @@ internal sealed class Stream.SynchronousAsyncResult : IAsyncResult // TypeDefInd
 
 private sealed class Stream.SynchronousAsyncResult.<>c // TypeDefIndex: 643
 {
-	public static readonly Stream.SynchronousAsyncResult.<>c <>9; 
-	public static Func<ManualResetEvent> <>9__12_0; 
+	public static readonly Stream.SynchronousAsyncResult.<>c <>9;
+	public static Func<ManualResetEvent> <>9__12_0;
 
 
 	private static void .cctor() { }
@@ -253,15 +253,15 @@ private sealed class Stream.SynchronousAsyncResult.<>c // TypeDefIndex: 643
 
 private sealed class Stream.<>c // TypeDefIndex: 644
 {
-	public static readonly Stream.<>c <>9; 
-	public static Func<SemaphoreSlim> <>9__4_0; 
-	public static Func<object, int> <>9__39_0; 
-	public static Func<Stream, Stream.ReadWriteParameters, AsyncCallback, object, IAsyncResult> <>9__43_0; 
-	public static Func<Stream, IAsyncResult, int> <>9__43_1; 
-	public static Func<object, int> <>9__46_0; 
-	public static Action<Task, object> <>9__47_0; 
-	public static Func<Stream, Stream.ReadWriteParameters, AsyncCallback, object, IAsyncResult> <>9__53_0; 
-	public static Func<Stream, IAsyncResult, VoidTaskResult> <>9__53_1; 
+	public static readonly Stream.<>c <>9;
+	public static Func<SemaphoreSlim> <>9__4_0;
+	public static Func<object, int> <>9__39_0;
+	public static Func<Stream, Stream.ReadWriteParameters, AsyncCallback, object, IAsyncResult> <>9__43_0;
+	public static Func<Stream, IAsyncResult, int> <>9__43_1;
+	public static Func<object, int> <>9__46_0;
+	public static Action<Task, object> <>9__47_0;
+	public static Func<Stream, Stream.ReadWriteParameters, AsyncCallback, object, IAsyncResult> <>9__53_0;
+	public static Func<Stream, IAsyncResult, VoidTaskResult> <>9__53_1;
 
 
 	private static void .cctor() { }
@@ -288,21 +288,21 @@ private sealed class Stream.<>c // TypeDefIndex: 644
 
 private struct Stream.<CopyToAsyncInternal>d__27 : IAsyncStateMachine // TypeDefIndex: 645
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public int bufferSize; 
-	public Stream destination; 
-	private byte[] <buffer>5__1; 
-	private int <bytesRead>5__2; 
-	public CancellationToken cancellationToken; 
-	public Stream <>4__this; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public int bufferSize;
+	public Stream destination;
+	private byte[] <buffer>5__1;
+	private int <bytesRead>5__2;
+	public CancellationToken cancellationToken;
+	public Stream <>4__this;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

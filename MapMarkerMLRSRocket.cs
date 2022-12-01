@@ -1,6 +1,6 @@
-public class MapMarkerMLRSRocket : MapMarker // TypeDefIndex: 11464
+public class MapMarkerMLRSRocket : MapMarker // TypeDefIndex: 11470
 {
-	public RectTransform uiMarkerTransform; 
+	public RectTransform uiMarkerTransform;
 
 
 	public override void SetupUIMarker(GameObject marker) { }

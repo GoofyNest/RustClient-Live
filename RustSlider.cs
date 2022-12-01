@@ -1,14 +1,14 @@
-public class RustSlider : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler, IInitializePotentialDragHandler // TypeDefIndex: 7069
+public class RustSlider : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler, IInitializePotentialDragHandler // TypeDefIndex: 7071
 {
-	public RustInput NumberInput; 
-	public Image SliderCanvas; 
-	public string DecimalFormat; 
-	public float MinValue; 
-	public float MaxValue; 
-	public bool Integer; 
-	public float ValueInternal; 
-	public RustSlider.ChangedEvent OnChanged; 
-	private float lastCallbackValue; 
+	public RustInput NumberInput;
+	public Image SliderCanvas;
+	public string DecimalFormat;
+	public float MinValue;
+	public float MaxValue;
+	public bool Integer;
+	public float ValueInternal;
+	public RustSlider.ChangedEvent OnChanged;
+	private float lastCallbackValue;
 
 	public float Value { get; set; }
 	public float ValueNormalized { get; set; }
@@ -44,7 +44,7 @@ public class RustSlider : RustControl, IPointerDownHandler, IEventSystemHandler,
 
 }
 
-public class RustSlider.ChangedEvent : UnityEvent<float> // TypeDefIndex: 7070
+public class RustSlider.ChangedEvent : UnityEvent<float> // TypeDefIndex: 7072
 {
 
 	public void .ctor() { }

@@ -1,8 +1,8 @@
 internal sealed class SynchronizationContextAwaitTaskContinuation : AwaitTaskContinuation // TypeDefIndex: 877
 {
-	private static readonly SendOrPostCallback s_postCallback; 
-	private static ContextCallback s_postActionCallback; 
-	private readonly SynchronizationContext m_syncContext; 
+	private static readonly SendOrPostCallback s_postCallback;
+	private static ContextCallback s_postActionCallback;
+	private readonly SynchronizationContext m_syncContext;
 
 
 	internal void .ctor(SynchronizationContext context, Action action, bool flowExecutionContext, ref StackCrawlMark stackMark) { }
@@ -19,7 +19,7 @@ internal sealed class SynchronizationContextAwaitTaskContinuation : AwaitTaskCon
 
 private sealed class SynchronizationContextAwaitTaskContinuation.<>c // TypeDefIndex: 878
 {
-	public static readonly SynchronizationContextAwaitTaskContinuation.<>c <>9; 
+	public static readonly SynchronizationContextAwaitTaskContinuation.<>c <>9;
 
 
 	private static void .cctor() { }

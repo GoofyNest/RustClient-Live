@@ -1,9 +1,9 @@
 internal struct SetPersonaNameResponse_t : ICallbackData // TypeDefIndex: 5330
 {
-	internal bool Success; 
-	internal bool LocalSuccess; 
-	internal Result Result; 
-	public static int _datasize; 
+	internal bool Success;
+	internal bool LocalSuccess;
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,12 +1,12 @@
-public class Paddle : BaseMelee // TypeDefIndex: 11206
+public class Paddle : BaseMelee // TypeDefIndex: 11212
 {
-	public float animPaddleCooldown; 
-	public GameObjectRef kayakSeat; 
-	public float animationLerpSpeed; 
-	private static int param_Paddling; 
-	private static int param_right; 
-	private static int param_forward; 
-	private Vector3 smoothedAnimDirection; 
+	public float animPaddleCooldown;
+	public GameObjectRef kayakSeat;
+	public float animationLerpSpeed;
+	private static int param_Paddling;
+	private static int param_right;
+	private static int param_forward;
+	private Vector3 smoothedAnimDirection;
 
 	protected override bool CanAttack { get; }
 	protected override bool CanThrow { get; }

@@ -1,25 +1,25 @@
-public class SoundOcclusion : MonoBehaviour // TypeDefIndex: 10765
+public class SoundOcclusion : MonoBehaviour // TypeDefIndex: 10769
 {
-	public LayerMask occlusionLayerMask; 
-	[CompilerGeneratedAttribute] 
-	private bool <isOccluded>k__BackingField; 
-	private float occlusionAmount; 
-	private Sound sound; 
-	private OnePoleLowpassFilter lowpass; 
-	private SoundModulation.Modulator gainMod; 
-	private Vector3 soundOffset; 
-	private float lastOcclusionCheck; 
-	private float occlusionCheckInterval; 
-	private Ray ray; 
-	private List<RaycastHit> hits; 
+	public LayerMask occlusionLayerMask;
+	[CompilerGeneratedAttribute]
+	private bool <isOccluded>k__BackingField;
+	private float occlusionAmount;
+	private Sound sound;
+	private OnePoleLowpassFilter lowpass;
+	private SoundModulation.Modulator gainMod;
+	private Vector3 soundOffset;
+	private float lastOcclusionCheck;
+	private float occlusionCheckInterval;
+	private Ray ray;
+	private List<RaycastHit> hits;
 
 	public bool isOccluded { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_isOccluded() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_isOccluded(bool value) { }
 
 	public void Awake() { }

@@ -1,8 +1,8 @@
-public class DudExplosive : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6329
+public class DudExplosive : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6331
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float fuseTimeLeft; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float fuseTimeLeft;
 
 
 	public static void ResetToPool(DudExplosive instance) { }

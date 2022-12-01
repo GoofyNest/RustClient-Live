@@ -1,31 +1,31 @@
-public class LiquidWeapon : BaseLiquidVessel // TypeDefIndex: 10317
+public class LiquidWeapon : BaseLiquidVessel // TypeDefIndex: 10320
 {
-	[HeaderAttribute] 
-	public float FireRate; 
-	public float MaxRange; 
-	public int FireAmountML; 
-	public int MaxPressure; 
-	public int PressureLossPerTick; 
-	public int PressureGainedPerPump; 
-	public float MinDmgRadius; 
-	public float MaxDmgRadius; 
-	public float SplashRadius; 
-	public GameObjectRef ImpactSplashEffect; 
-	public AnimationCurve PowerCurve; 
-	public List<DamageTypeEntry> Damage; 
-	public LiquidWeaponEffects EntityWeaponEffects; 
-	public bool RequiresPumping; 
-	public bool AutoPump; 
-	public bool WaitForFillAnim; 
-	public bool UseFalloffCurve; 
-	public AnimationCurve FalloffCurve; 
-	public float PumpingBlockDuration; 
-	public float StartFillingBlockDuration; 
-	public float StopFillingBlockDuration; 
-	private float cooldownTime; 
-	private bool filling; 
-	private LiquidWeaponEffects viewModelweaponEffects; 
-	private int pressure; 
+	[HeaderAttribute]
+	public float FireRate;
+	public float MaxRange;
+	public int FireAmountML;
+	public int MaxPressure;
+	public int PressureLossPerTick;
+	public int PressureGainedPerPump;
+	public float MinDmgRadius;
+	public float MaxDmgRadius;
+	public float SplashRadius;
+	public GameObjectRef ImpactSplashEffect;
+	public AnimationCurve PowerCurve;
+	public List<DamageTypeEntry> Damage;
+	public LiquidWeaponEffects EntityWeaponEffects;
+	public bool RequiresPumping;
+	public bool AutoPump;
+	public bool WaitForFillAnim;
+	public bool UseFalloffCurve;
+	public AnimationCurve FalloffCurve;
+	public float PumpingBlockDuration;
+	public float StartFillingBlockDuration;
+	public float StopFillingBlockDuration;
+	private float cooldownTime;
+	private bool filling;
+	private LiquidWeaponEffects viewModelweaponEffects;
+	private int pressure;
 
 	public float PressureFraction { get; }
 	public float MinimumPressureFraction { get; }

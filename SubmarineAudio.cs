@@ -1,68 +1,68 @@
-public class SubmarineAudio : MonoBehaviour // TypeDefIndex: 11496
+public class SubmarineAudio : MonoBehaviour // TypeDefIndex: 11503
 {
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition engineStartSound; 
-	[SerializeField] 
-	private SoundDefinition engineStopSound; 
-	[SerializeField] 
-	private SoundDefinition engineStartFailSound; 
-	[SerializeField] 
-	private SoundDefinition engineLoopSound; 
-	[SerializeField] 
-	private AnimationCurve engineLoopPitchCurve; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition underwaterLoopDef; 
-	[SerializeField] 
-	private SoundDefinition underwaterMovementLoopDef; 
-	[SerializeField] 
-	private BlendedSoundLoops surfaceWaterLoops; 
-	[SerializeField] 
-	private float surfaceWaterSoundsMaxSpeed; 
-	[SerializeField] 
-	private SoundDefinition waterEmergeSoundDef; 
-	[SerializeField] 
-	private SoundDefinition waterSubmergeSoundDef; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition activeLoopDef; 
-	[SerializeField] 
-	private SoundDefinition footPedalSoundDef; 
-	[SerializeField] 
-	private Transform footPedalSoundPos; 
-	[SerializeField] 
-	private SoundDefinition steeringWheelSoundDef; 
-	[SerializeField] 
-	private Transform steeringWheelSoundPos; 
-	[SerializeField] 
-	private SoundDefinition heavyDamageSparksDef; 
-	[SerializeField] 
-	private Transform heavyDamageSparksPos; 
-	[SerializeField] 
-	private SoundDefinition flagRaise; 
-	[SerializeField] 
-	private SoundDefinition flagLower; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition climbOrDiveLoopSound; 
-	[SerializeField] 
-	private SoundDefinition sonarBlipSound; 
-	[SerializeField] 
-	private SoundDefinition torpedoFailedSound; 
-	private Sound engineLoop; 
-	private SoundModulation.Modulator engineLoopPitchMod; 
-	private Sound activeLoop; 
-	private Sound heavyDamageSparksLoop; 
-	private Sound underwaterLoop; 
-	private SoundModulation.Modulator underwaterGainMod; 
-	private Sound underwaterMovementLoop; 
-	private SoundModulation.Modulator underwaterMovementGainMod; 
-	private Sound climbOrDiveLoop; 
-	private float engineSoundMaxDistSqr; 
-	private float previousWaterDepth; 
-	private float previousRudderInput; 
-	private float previousThrottleInput; 
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition engineStartSound;
+	[SerializeField]
+	private SoundDefinition engineStopSound;
+	[SerializeField]
+	private SoundDefinition engineStartFailSound;
+	[SerializeField]
+	private SoundDefinition engineLoopSound;
+	[SerializeField]
+	private AnimationCurve engineLoopPitchCurve;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition underwaterLoopDef;
+	[SerializeField]
+	private SoundDefinition underwaterMovementLoopDef;
+	[SerializeField]
+	private BlendedSoundLoops surfaceWaterLoops;
+	[SerializeField]
+	private float surfaceWaterSoundsMaxSpeed;
+	[SerializeField]
+	private SoundDefinition waterEmergeSoundDef;
+	[SerializeField]
+	private SoundDefinition waterSubmergeSoundDef;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition activeLoopDef;
+	[SerializeField]
+	private SoundDefinition footPedalSoundDef;
+	[SerializeField]
+	private Transform footPedalSoundPos;
+	[SerializeField]
+	private SoundDefinition steeringWheelSoundDef;
+	[SerializeField]
+	private Transform steeringWheelSoundPos;
+	[SerializeField]
+	private SoundDefinition heavyDamageSparksDef;
+	[SerializeField]
+	private Transform heavyDamageSparksPos;
+	[SerializeField]
+	private SoundDefinition flagRaise;
+	[SerializeField]
+	private SoundDefinition flagLower;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition climbOrDiveLoopSound;
+	[SerializeField]
+	private SoundDefinition sonarBlipSound;
+	[SerializeField]
+	private SoundDefinition torpedoFailedSound;
+	private Sound engineLoop;
+	private SoundModulation.Modulator engineLoopPitchMod;
+	private Sound activeLoop;
+	private Sound heavyDamageSparksLoop;
+	private Sound underwaterLoop;
+	private SoundModulation.Modulator underwaterGainMod;
+	private Sound underwaterMovementLoop;
+	private SoundModulation.Modulator underwaterMovementGainMod;
+	private Sound climbOrDiveLoop;
+	private float engineSoundMaxDistSqr;
+	private float previousWaterDepth;
+	private float previousRudderInput;
+	private float previousThrottleInput;
 
 
 	protected void Awake() { }

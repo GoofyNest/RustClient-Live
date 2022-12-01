@@ -1,4 +1,4 @@
-public sealed class SanctionsInterface : Handle // TypeDefIndex: 8631
+public sealed class SanctionsInterface : Handle // TypeDefIndex: 8633
 {
 	public const int CopyplayersanctionbyindexApiLatest = 1;
 	public const int GetplayersanctioncountApiLatest = 1;
@@ -16,7 +16,7 @@ public sealed class SanctionsInterface : Handle // TypeDefIndex: 8631
 
 	public void QueryActivePlayerSanctions(ref QueryActivePlayerSanctionsOptions options, object clientData, OnQueryActivePlayerSanctionsCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryActivePlayerSanctionsCallbackInternalImplementation(ref QueryActivePlayerSanctionsCallbackInfoInternal data) { }
 
 }

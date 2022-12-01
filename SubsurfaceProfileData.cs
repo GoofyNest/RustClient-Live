@@ -1,11 +1,11 @@
-public struct SubsurfaceProfileData // TypeDefIndex: 12412
+public struct SubsurfaceProfileData // TypeDefIndex: 12420
 {
-	[RangeAttribute] 
-	public float ScatterRadius; 
-	[ColorUsageAttribute] 
-	public Color SubsurfaceColor; 
-	[ColorUsageAttribute] 
-	public Color FalloffColor; 
+	[RangeAttribute]
+	public float ScatterRadius;
+	[ColorUsageAttribute]
+	public Color SubsurfaceColor;
+	[ColorUsageAttribute]
+	public Color FalloffColor;
 
 	public static SubsurfaceProfileData Default { get; }
 	public static SubsurfaceProfileData Invalid { get; }

@@ -1,6 +1,6 @@
-public class ButtonIcon : RustButton // TypeDefIndex: 12607
+public class ButtonIcon : RustButton // TypeDefIndex: 12620
 {
-	public Image Image; 
+	public Image Image;
 
 
 	protected override void ApplyStyle(StyleAsset.Group s) { }

@@ -1,10 +1,10 @@
 internal sealed class LocalDataStoreMgr // TypeDefIndex: 148
 {
-	private bool[] m_SlotInfoTable; 
-	private int m_FirstAvailableSlot; 
-	private List<LocalDataStore> m_ManagedLocalDataStores; 
-	private Dictionary<string, LocalDataStoreSlot> m_KeyToSlotMap; 
-	private long m_CookieGenerator; 
+	private bool[] m_SlotInfoTable;
+	private int m_FirstAvailableSlot;
+	private List<LocalDataStore> m_ManagedLocalDataStores;
+	private Dictionary<string, LocalDataStoreSlot> m_KeyToSlotMap;
+	private long m_CookieGenerator;
 
 
 	public LocalDataStoreHolder CreateLocalDataStore() { }

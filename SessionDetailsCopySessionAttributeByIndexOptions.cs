@@ -1,15 +1,15 @@
-public struct SessionDetailsCopySessionAttributeByIndexOptions // TypeDefIndex: 8552
+public struct SessionDetailsCopySessionAttributeByIndexOptions // TypeDefIndex: 8554
 {
-	[CompilerGeneratedAttribute] 
-	private uint <AttrIndex>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <AttrIndex>k__BackingField;
 
 	public uint AttrIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AttrIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AttrIndex(uint value) { }
 
 }

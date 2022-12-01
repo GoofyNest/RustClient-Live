@@ -1,16 +1,16 @@
 public struct RectangleLight // TypeDefIndex: 3889
 {
-	public int instanceID; 
-	public bool shadow; 
-	public LightMode mode; 
-	public Vector3 position; 
-	public Quaternion orientation; 
-	public LinearColor color; 
-	public LinearColor indirectColor; 
-	public float range; 
-	public float width; 
-	public float height; 
-	public FalloffType falloff; 
+	public int instanceID;
+	public bool shadow;
+	public LightMode mode;
+	public Vector3 position;
+	public Quaternion orientation;
+	public LinearColor color;
+	public LinearColor indirectColor;
+	public float range;
+	public float width;
+	public float height;
+	public FalloffType falloff;
 
 }
 

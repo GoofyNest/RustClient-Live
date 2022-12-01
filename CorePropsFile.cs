@@ -1,16 +1,16 @@
-internal struct CorePropsFile // TypeDefIndex: 7717
+internal struct CorePropsFile // TypeDefIndex: 7719
 {
-	[CompilerGeneratedAttribute] 
-	private string <Address>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Address>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string Address { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Address() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Address(string value) { }
 
 }

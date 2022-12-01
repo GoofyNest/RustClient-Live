@@ -1,6 +1,6 @@
 public enum TlsProtocols // TypeDefIndex: 1751
 {
-	public int value__; 
+	public int value__;
 	public const TlsProtocols Zero = 0;
 	public const TlsProtocols Tls10Client = 128;
 	public const TlsProtocols Tls10Server = 64;

@@ -1,10 +1,10 @@
-public class LifeInfographicStatWeapon : MonoBehaviour // TypeDefIndex: 12853
+public class LifeInfographicStatWeapon : MonoBehaviour // TypeDefIndex: 12867
 {
-	public RustText WeaponName; 
-	public RustText ShotsFired; 
-	public RustText ShotsHit; 
-	public RustText ShotsPercent; 
-	public Image WeaponIcon; 
+	public RustText WeaponName;
+	public RustText ShotsFired;
+	public RustText ShotsHit;
+	public RustText ShotsPercent;
+	public Image WeaponIcon;
 
 
 	public void Populate(PlayerLifeStory.WeaponStats stats, ItemDefinition def) { }

@@ -1,7 +1,7 @@
 public sealed class FixedBufferAttribute : Attribute // TypeDefIndex: 1306
 {
-	private Type elementType; 
-	private int length; 
+	private Type elementType;
+	private int length;
 
 	public Type ElementType { get; }
 	public int Length { get; }

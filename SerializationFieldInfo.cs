@@ -1,7 +1,7 @@
 internal sealed class SerializationFieldInfo : FieldInfo // TypeDefIndex: 1057
 {
-	private RuntimeFieldInfo m_field; 
-	private string m_serializationName; 
+	private RuntimeFieldInfo m_field;
+	private string m_serializationName;
 
 	public override Module Module { get; }
 	public override int MetadataToken { get; }

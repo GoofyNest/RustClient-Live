@@ -1,6 +1,6 @@
 public enum TraceOptions // TypeDefIndex: 2645
 {
-	public int value__; 
+	public int value__;
 	public const TraceOptions None = 0;
 	public const TraceOptions LogicalOperationStack = 1;
 	public const TraceOptions DateTime = 2;

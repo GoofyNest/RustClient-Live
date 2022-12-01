@@ -1,27 +1,27 @@
 internal class X509Certificate : ISerializable // TypeDefIndex: 58
 {
-	private ASN1 decoder; 
-	private byte[] m_encodedcert; 
-	private DateTime m_from; 
-	private DateTime m_until; 
-	private ASN1 issuer; 
-	private string m_issuername; 
-	private string m_keyalgo; 
-	private byte[] m_keyalgoparams; 
-	private ASN1 subject; 
-	private string m_subject; 
-	private byte[] m_publickey; 
-	private byte[] signature; 
-	private string m_signaturealgo; 
-	private byte[] m_signaturealgoparams; 
-	private RSA _rsa; 
-	private DSA _dsa; 
-	private int version; 
-	private byte[] serialnumber; 
-	private byte[] issuerUniqueID; 
-	private byte[] subjectUniqueID; 
-	private X509ExtensionCollection extensions; 
-	private static string encoding_error; 
+	private ASN1 decoder;
+	private byte[] m_encodedcert;
+	private DateTime m_from;
+	private DateTime m_until;
+	private ASN1 issuer;
+	private string m_issuername;
+	private string m_keyalgo;
+	private byte[] m_keyalgoparams;
+	private ASN1 subject;
+	private string m_subject;
+	private byte[] m_publickey;
+	private byte[] signature;
+	private string m_signaturealgo;
+	private byte[] m_signaturealgoparams;
+	private RSA _rsa;
+	private DSA _dsa;
+	private int version;
+	private byte[] serialnumber;
+	private byte[] issuerUniqueID;
+	private byte[] subjectUniqueID;
+	private X509ExtensionCollection extensions;
+	private static string encoding_error;
 
 	public DSA DSA { get; }
 	public virtual string IssuerName { get; }
@@ -72,10 +72,10 @@ internal class X509Certificate : ISerializable // TypeDefIndex: 58
 
 public class X509Certificate : IDeserializationCallback, ISerializable, IDisposable // TypeDefIndex: 1017
 {
-	private X509CertificateImpl impl; 
-	private bool hideDates; 
-	private string issuer_name; 
-	private string subject_name; 
+	private X509CertificateImpl impl;
+	private bool hideDates;
+	private string issuer_name;
+	private string subject_name;
 
 	internal X509CertificateImpl Impl { get; }
 	internal bool IsValid { get; }
@@ -123,15 +123,15 @@ public class X509Certificate : IDeserializationCallback, ISerializable, IDisposa
 
 	public string get_Subject() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool Equals(object obj) { }
 
-	[MonoTODOAttribute] 
-	[ComVisibleAttribute] 
+	[MonoTODOAttribute]
+	[ComVisibleAttribute]
 	public virtual void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags) { }
 
-	[MonoTODOAttribute] 
-	[ComVisibleAttribute] 
+	[MonoTODOAttribute]
+	[ComVisibleAttribute]
 	public virtual void Import(string fileName, string password, X509KeyStorageFlags keyStorageFlags) { }
 
 	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
@@ -142,36 +142,36 @@ public class X509Certificate : IDeserializationCallback, ISerializable, IDisposa
 
 	protected virtual void Dispose(bool disposing) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual void Reset() { }
 
 }
 
 public class X509Certificate : ISerializable // TypeDefIndex: 1716
 {
-	private ASN1 decoder; 
-	private byte[] m_encodedcert; 
-	private DateTime m_from; 
-	private DateTime m_until; 
-	private ASN1 issuer; 
-	private string m_issuername; 
-	private string m_keyalgo; 
-	private byte[] m_keyalgoparams; 
-	private ASN1 subject; 
-	private string m_subject; 
-	private byte[] m_publickey; 
-	private byte[] signature; 
-	private string m_signaturealgo; 
-	private byte[] m_signaturealgoparams; 
-	private byte[] certhash; 
-	private RSA _rsa; 
-	private DSA _dsa; 
-	private int version; 
-	private byte[] serialnumber; 
-	private byte[] issuerUniqueID; 
-	private byte[] subjectUniqueID; 
-	private X509ExtensionCollection extensions; 
-	private static string encoding_error; 
+	private ASN1 decoder;
+	private byte[] m_encodedcert;
+	private DateTime m_from;
+	private DateTime m_until;
+	private ASN1 issuer;
+	private string m_issuername;
+	private string m_keyalgo;
+	private byte[] m_keyalgoparams;
+	private ASN1 subject;
+	private string m_subject;
+	private byte[] m_publickey;
+	private byte[] signature;
+	private string m_signaturealgo;
+	private byte[] m_signaturealgoparams;
+	private byte[] certhash;
+	private RSA _rsa;
+	private DSA _dsa;
+	private int version;
+	private byte[] serialnumber;
+	private byte[] issuerUniqueID;
+	private byte[] subjectUniqueID;
+	private X509ExtensionCollection extensions;
+	private static string encoding_error;
 
 	public DSA DSA { get; set; }
 	public X509ExtensionCollection Extensions { get; }

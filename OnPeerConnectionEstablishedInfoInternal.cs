@@ -1,11 +1,11 @@
-internal struct OnPeerConnectionEstablishedInfoInternal : ICallbackInfoInternal, IGettable<OnPeerConnectionEstablishedInfo>, ISettable<OnPeerConnectionEstablishedInfo>, IDisposable // TypeDefIndex: 8977
+internal struct OnPeerConnectionEstablishedInfoInternal : ICallbackInfoInternal, IGettable<OnPeerConnectionEstablishedInfo>, ISettable<OnPeerConnectionEstablishedInfo>, IDisposable // TypeDefIndex: 8979
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RemoteUserId; 
-	private IntPtr m_SocketId; 
-	private ConnectionEstablishedType m_ConnectionType; 
-	private NetworkConnectionType m_NetworkType; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RemoteUserId;
+	private IntPtr m_SocketId;
+	private ConnectionEstablishedType m_ConnectionType;
+	private NetworkConnectionType m_NetworkType;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

@@ -1,11 +1,11 @@
 public class MarshalByValueComponent : IComponent, IDisposable, IServiceProvider // TypeDefIndex: 2728
 {
-	private static readonly object EventDisposed; 
-	private ISite site; 
-	private EventHandlerList events; 
+	private static readonly object EventDisposed;
+	private ISite site;
+	private EventHandlerList events;
 
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public virtual ISite Site { get; }
 
 

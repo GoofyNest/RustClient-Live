@@ -1,25 +1,25 @@
-public class DeferredExtension : MonoBehaviour // TypeDefIndex: 12407
+public class DeferredExtension : MonoBehaviour // TypeDefIndex: 12415
 {
-	public ExtendGBufferParams extendGBuffer; 
-	public SubsurfaceScatteringParams subsurfaceScattering; 
-	public Texture2D blueNoise; 
-	public float depthScale; 
-	public bool debug; 
-	public bool forceToCameraResolution; 
-	private Camera _targetCamera; 
-	private CommandBufferManager commandBufferManager; 
-	private CommandBufferDesc extendGBufferCBDesc; 
-	private CommandBufferDesc postSubsurfaceCBDesc; 
-	private Material postSubsurfaceMat; 
-	private int frameIndexMod8; 
-	private PostProcessLayer post; 
-	private int gbufferWidth; 
-	private int gbufferHeight; 
-	private RenderTexture gbufferTexture4; 
-	private RenderTexture gbufferTexture5; 
-	private RenderTargetIdentifier[] targets; 
-	private static HashSet<DeferredExtensionMesh> registeredMeshes; 
-	private static HashSet<DeferredExtensionMesh> visibleMeshes; 
+	public ExtendGBufferParams extendGBuffer;
+	public SubsurfaceScatteringParams subsurfaceScattering;
+	public Texture2D blueNoise;
+	public float depthScale;
+	public bool debug;
+	public bool forceToCameraResolution;
+	private Camera _targetCamera;
+	private CommandBufferManager commandBufferManager;
+	private CommandBufferDesc extendGBufferCBDesc;
+	private CommandBufferDesc postSubsurfaceCBDesc;
+	private Material postSubsurfaceMat;
+	private int frameIndexMod8;
+	private PostProcessLayer post;
+	private int gbufferWidth;
+	private int gbufferHeight;
+	private RenderTexture gbufferTexture4;
+	private RenderTexture gbufferTexture5;
+	private RenderTargetIdentifier[] targets;
+	private static HashSet<DeferredExtensionMesh> registeredMeshes;
+	private static HashSet<DeferredExtensionMesh> visibleMeshes;
 
 	private Camera targetCamera { get; }
 	private int TargetWidth { get; }
@@ -87,9 +87,9 @@ public class DeferredExtension : MonoBehaviour // TypeDefIndex: 12407
 
 }
 
-private enum DeferredExtension.SubsurfacePass // TypeDefIndex: 12408
+private enum DeferredExtension.SubsurfacePass // TypeDefIndex: 12416
 {
-	public int value__; 
+	public int value__;
 	public const DeferredExtension.SubsurfacePass SetupFullRes = 0;
 	public const DeferredExtension.SubsurfacePass SetupHalfRes = 1;
 	public const DeferredExtension.SubsurfacePass Direction0 = 2;

@@ -1,15 +1,15 @@
-public class RustImageButton : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, ILayoutElement // TypeDefIndex: 7060
+public class RustImageButton : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, ILayoutElement // TypeDefIndex: 7062
 {
-	public Image Background; 
-	public Image Icon; 
-	public UnityEvent OnPressed; 
-	public UnityEvent OnReleased; 
-	public bool IsToggle; 
-	public bool UnpressSiblings; 
-	public bool PreventToggleOff; 
-	public Transform TabPanelTarget; 
-	public Sprite PressedImage; 
-	public Sprite UnpressedImage; 
+	public Image Background;
+	public Image Icon;
+	public UnityEvent OnPressed;
+	public UnityEvent OnReleased;
+	public bool IsToggle;
+	public bool UnpressSiblings;
+	public bool PreventToggleOff;
+	public Transform TabPanelTarget;
+	public Sprite PressedImage;
+	public Sprite UnpressedImage;
 
 	public bool Value { get; set; }
 	public float minWidth { get; }

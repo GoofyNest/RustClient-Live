@@ -1,6 +1,6 @@
-public class RustPlatformHooks : IPlatformHooks // TypeDefIndex: 12457
+public class RustPlatformHooks : IPlatformHooks // TypeDefIndex: 12465
 {
-	public static readonly RustPlatformHooks Instance; 
+	public static readonly RustPlatformHooks Instance;
 
 	public uint SteamAppId { get; }
 

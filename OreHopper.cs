@@ -1,11 +1,11 @@
-public class OreHopper : PercentFullStorageContainer // TypeDefIndex: 9998
+public class OreHopper : PercentFullStorageContainer // TypeDefIndex: 10000
 {
-	[SerializeField] 
-	private Transform oreOutputMesh; 
-	private float visualPercentFull; 
-	private Vector3 _oreScale; 
-	private MeshRenderer[] orePlaneRenderers; 
-	private Nullable<int> lastSetLootTypeIndex; 
+	[SerializeField]
+	private Transform oreOutputMesh;
+	private float visualPercentFull;
+	private Vector3 _oreScale;
+	private MeshRenderer[] orePlaneRenderers;
+	private Nullable<int> lastSetLootTypeIndex;
 
 
 	protected override void OnPercentFullChanged(float newPercentFull) { }

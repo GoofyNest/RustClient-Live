@@ -1,15 +1,15 @@
-public class PathInterestNode : MonoBehaviour // TypeDefIndex: 10589
+public class PathInterestNode : MonoBehaviour // TypeDefIndex: 10593
 {
-	[CompilerGeneratedAttribute] 
-	private float <NextVisitTime>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private float <NextVisitTime>k__BackingField;
 
 	public float NextVisitTime { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_NextVisitTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NextVisitTime(float value) { }
 
 	public void OnDrawGizmos() { }

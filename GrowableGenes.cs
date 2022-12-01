@@ -1,6 +1,6 @@
-public class GrowableGenes // TypeDefIndex: 11279
+public class GrowableGenes // TypeDefIndex: 11285
 {
-	public GrowableGene[] Genes; 
+	public GrowableGene[] Genes;
 
 
 	public void .ctor() { }

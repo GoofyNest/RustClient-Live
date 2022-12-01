@@ -1,6 +1,6 @@
 public enum RenderBufferStoreAction // TypeDefIndex: 3812
 {
-	public int value__; 
+	public int value__;
 	public const RenderBufferStoreAction Store = 0;
 	public const RenderBufferStoreAction Resolve = 1;
 	public const RenderBufferStoreAction StoreAndResolve = 2;

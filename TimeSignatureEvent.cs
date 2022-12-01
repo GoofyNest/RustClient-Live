@@ -1,12 +1,12 @@
-public sealed class TimeSignatureEvent : MetaEvent // TypeDefIndex: 7564
+public sealed class TimeSignatureEvent : MetaEvent // TypeDefIndex: 7566
 {
-	private byte _denominator; 
-	[CompilerGeneratedAttribute] 
-	private byte <Numerator>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <ClocksPerClick>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <ThirtySecondNotesPerBeat>k__BackingField; 
+	private byte _denominator;
+	[CompilerGeneratedAttribute]
+	private byte <Numerator>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <ClocksPerClick>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <ThirtySecondNotesPerBeat>k__BackingField;
 
 	public byte Numerator { get; set; }
 	public byte Denominator { get; set; }
@@ -16,26 +16,26 @@ public sealed class TimeSignatureEvent : MetaEvent // TypeDefIndex: 7564
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Numerator() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Numerator(byte value) { }
 
 	public byte get_Denominator() { }
 
 	public void set_Denominator(byte value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_ClocksPerClick() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClocksPerClick(byte value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_ThirtySecondNotesPerBeat() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ThirtySecondNotesPerBeat(byte value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }

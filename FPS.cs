@@ -1,17 +1,17 @@
-public class FPS : ConsoleSystem // TypeDefIndex: 13711
+public class FPS : ConsoleSystem // TypeDefIndex: 13727
 {
-	private static int _limit; 
-	[ClientVar] 
-	public static bool limitInBackground; 
-	[ClientVar] 
-	public static bool limitInMenu; 
+	private static int _limit;
+	[ClientVar]
+	public static bool limitInBackground;
+	[ClientVar]
+	public static bool limitInMenu;
 	public const int CappedFrameRateWhileInBackground = 15;
-	private static int m_graph; 
+	private static int m_graph;
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static int limit { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static int graph { get; set; }
 
 

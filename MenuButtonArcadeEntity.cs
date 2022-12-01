@@ -1,8 +1,8 @@
-public class MenuButtonArcadeEntity : TextArcadeEntity // TypeDefIndex: 10494
+public class MenuButtonArcadeEntity : TextArcadeEntity // TypeDefIndex: 10498
 {
-	public string titleText; 
-	public string selectionSuffix; 
-	public string clickMessage; 
+	public string titleText;
+	public string selectionSuffix;
+	public string clickMessage;
 
 
 	public bool IsHighlighted() { }

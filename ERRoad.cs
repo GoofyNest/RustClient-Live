@@ -1,8 +1,8 @@
-public class ERRoad // TypeDefIndex: 7195
+public class ERRoad // TypeDefIndex: 7197
 {
-	public ERModularRoad roadScript; 
-	public GameObject gameObject; 
-	public string str; 
+	public ERModularRoad roadScript;
+	public GameObject gameObject;
+	public string str;
 
 
 	public void .ctor() { }
@@ -57,7 +57,7 @@ public class ERRoad // TypeDefIndex: 7195
 
 	public ERRoad SplitRoad(int markerIndex) { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	private ERModularRoad SplitRoadExt(int markerIndex) { }
 
 	public void SetSideObjects(List<ERSORoadExt> soDataExt) { }
@@ -86,7 +86,7 @@ public class ERRoad // TypeDefIndex: 7195
 
 	public void FollowTerrainContours(bool value) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void SetFollowTerrainContoursOffset(float value) { }
 
 	public void FollowTerrainContourThreshold(float value) { }
@@ -125,7 +125,7 @@ public class ERRoad // TypeDefIndex: 7195
 
 	public Vector3 GetLookatSmooth(float distance, int currentElement) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public Vector3 GetLookatAtDistanceSmooth(float distance, ref int currentElement) { }
 
 	public int GetMarkerByPoint(int el) { }
@@ -142,10 +142,10 @@ public class ERRoad // TypeDefIndex: 7195
 
 	public float SetIndent(float value, int marker, ERRoadSide type) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float SetRightIndent(float value, int marker) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float SetLeftIndent(float value, int marker) { }
 
 	public float SetSurrounding(float value, int marker) { }
@@ -156,10 +156,10 @@ public class ERRoad // TypeDefIndex: 7195
 
 	public ERIndentAlignment GetIndentAlignment(int marker, ERRoadSide type) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float SetRightSurrouding(float value, int marker) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float SetLeftSurrouding(float value, int marker) { }
 
 	public Vector3[] GetRightIndentPoints() { }
@@ -170,7 +170,7 @@ public class ERRoad // TypeDefIndex: 7195
 
 	public Vector3[] GetLeftSurroudingPoints() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float GetLength() { }
 
 	public float GetDistance() { }

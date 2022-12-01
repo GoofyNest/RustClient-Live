@@ -1,6 +1,6 @@
-public sealed class KnownTypeAttribute : Attribute // TypeDefIndex: 5715
+public sealed class KnownTypeAttribute : Attribute // TypeDefIndex: 5717
 {
-	private Type type; 
+	private Type type;
 
 
 	public void .ctor(Type type) { }

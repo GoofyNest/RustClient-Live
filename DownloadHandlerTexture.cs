@@ -1,8 +1,8 @@
 public sealed class DownloadHandlerTexture : DownloadHandler // TypeDefIndex: 4758
 {
-	private Texture2D mTexture; 
-	private bool mHasTexture; 
-	private bool mNonReadable; 
+	private Texture2D mTexture;
+	private bool mHasTexture;
+	private bool mNonReadable;
 
 	public Texture2D texture { get; }
 
@@ -19,7 +19,7 @@ public sealed class DownloadHandlerTexture : DownloadHandler // TypeDefIndex: 47
 
 	private Texture2D InternalGetTexture() { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private Texture2D InternalGetTextureNative() { }
 
 	public static Texture2D GetContent(UnityWebRequest www) { }

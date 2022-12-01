@@ -1,11 +1,11 @@
-public class ViewmodelLower : MonoBehaviour // TypeDefIndex: 13250
+public class ViewmodelLower : MonoBehaviour // TypeDefIndex: 13265
 {
-	public bool lowerOnSprint; 
-	public bool lowerWhenCantAttack; 
-	public float lowerScale; 
-	private bool shouldLower; 
-	internal float rotateAngle; 
-	private BasePlayer updatePlayer; 
+	public bool lowerOnSprint;
+	public bool lowerWhenCantAttack;
+	public float lowerScale;
+	private bool shouldLower;
+	internal float rotateAngle;
+	private BasePlayer updatePlayer;
 
 
 	public void SetShouldLower(bool shouldLower) { }

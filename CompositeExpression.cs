@@ -1,12 +1,12 @@
-internal class CompositeExpression : QueryExpression // TypeDefIndex: 6100
+internal class CompositeExpression : QueryExpression // TypeDefIndex: 6102
 {
-	[CompilerGeneratedAttribute] 
-	private List<QueryExpression> <Expressions>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private List<QueryExpression> <Expressions>k__BackingField;
 
 	public List<QueryExpression> Expressions { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Expressions(List<QueryExpression> value) { }
 
 	public void .ctor() { }

@@ -1,6 +1,6 @@
 internal sealed class DelegatingTypeDescriptionProvider : TypeDescriptionProvider // TypeDefIndex: 2688
 {
-	private Type _type; 
+	private Type _type;
 
 	internal TypeDescriptionProvider Provider { get; }
 

@@ -1,13 +1,13 @@
 public class CustomAttributeData // TypeDefIndex: 560
 {
-	private ConstructorInfo ctorInfo; 
-	private IList<CustomAttributeTypedArgument> ctorArgs; 
-	private IList<CustomAttributeNamedArgument> namedArgs; 
-	private CustomAttributeData.LazyCAttrData lazyData; 
+	private ConstructorInfo ctorInfo;
+	private IList<CustomAttributeTypedArgument> ctorArgs;
+	private IList<CustomAttributeNamedArgument> namedArgs;
+	private CustomAttributeData.LazyCAttrData lazyData;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual ConstructorInfo Constructor { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual IList<CustomAttributeTypedArgument> ConstructorArguments { get; }
 	public virtual IList<CustomAttributeNamedArgument> NamedArguments { get; }
 	public Type AttributeType { get; }
@@ -59,9 +59,9 @@ public class CustomAttributeData // TypeDefIndex: 560
 
 private class CustomAttributeData.LazyCAttrData // TypeDefIndex: 561
 {
-	internal Assembly assembly; 
-	internal IntPtr data; 
-	internal uint data_length; 
+	internal Assembly assembly;
+	internal IntPtr data;
+	internal uint data_length;
 
 
 	public void .ctor() { }

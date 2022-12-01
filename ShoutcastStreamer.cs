@@ -1,32 +1,32 @@
-public class ShoutcastStreamer : MonoBehaviour, IClientComponent // TypeDefIndex: 10746
+public class ShoutcastStreamer : MonoBehaviour, IClientComponent // TypeDefIndex: 10750
 {
-	public string Host; 
-	public AudioSource Source; 
-	[ClientVar] 
-	public static int MaxAudioStreams; 
-	[ClientVar] 
-	public static bool DebugStreams; 
-	[ClientVar] 
-	public static bool StreamingAnalytics; 
-	private static bool _allowInternetStreams; 
-	private static HashSet<ShoutcastStreamer> activeStreams; 
-	public RadioPlaylist[] BuiltinRadios; 
-	public ShoutcastStream Stream; 
-	private bool _readingData; 
-	private AudioClip streamClip; 
-	private int sampleRate; 
-	[CompilerGeneratedAttribute] 
-	private uint <CurrentReadIndex>k__BackingField; 
+	public string Host;
+	public AudioSource Source;
+	[ClientVar]
+	public static int MaxAudioStreams;
+	[ClientVar]
+	public static bool DebugStreams;
+	[ClientVar]
+	public static bool StreamingAnalytics;
+	private static bool _allowInternetStreams;
+	private static HashSet<ShoutcastStreamer> activeStreams;
+	public RadioPlaylist[] BuiltinRadios;
+	public ShoutcastStream Stream;
+	private bool _readingData;
+	private AudioClip streamClip;
+	private int sampleRate;
+	[CompilerGeneratedAttribute]
+	private uint <CurrentReadIndex>k__BackingField;
 	private const uint BufferStartCutOff = 81920;
-	private bool canUpdate; 
-	private bool wantsShutdown; 
-	private RadioPlaylist currentPlaylist; 
-	private TimeUntil nextStatLog; 
+	private bool canUpdate;
+	private bool wantsShutdown;
+	private RadioPlaylist currentPlaylist;
+	private TimeUntil nextStatLog;
 	private const float StatLogInterval = 60;
-	private bool waitAudio; 
-	private float waitUntilBuffer; 
+	private bool waitAudio;
+	private float waitUntilBuffer;
 
-	[ClientVar] 
+	[ClientVar]
 	public static bool AllowInternetStreams { get; set; }
 	public static int ActiveStreamCount { get; }
 	public uint CurrentReadIndex { get; set; }
@@ -42,10 +42,10 @@ public class ShoutcastStreamer : MonoBehaviour, IClientComponent // TypeDefIndex
 
 	public static int get_ActiveStreamCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_CurrentReadIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CurrentReadIndex(uint value) { }
 
 	public bool get_IsConnected() { }
@@ -74,7 +74,7 @@ public class ShoutcastStreamer : MonoBehaviour, IClientComponent // TypeDefIndex
 
 	private float get_BufferedPercentage() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private void ReadData() { }
 
 	private void OnDisable() { }
@@ -85,17 +85,17 @@ public class ShoutcastStreamer : MonoBehaviour, IClientComponent // TypeDefIndex
 
 }
 
-private struct ShoutcastStreamer.<ReadData>d__46 : IAsyncStateMachine // TypeDefIndex: 10747
+private struct ShoutcastStreamer.<ReadData>d__46 : IAsyncStateMachine // TypeDefIndex: 10751
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public ShoutcastStreamer <>4__this; 
-	private TaskAwaiter<bool> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public ShoutcastStreamer <>4__this;
+	private TaskAwaiter<bool> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

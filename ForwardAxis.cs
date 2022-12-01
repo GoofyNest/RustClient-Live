@@ -1,10 +1,10 @@
 internal class ForwardAxis // TypeDefIndex: 2136
 {
-	private DoubleLinkAxis topNode; 
-	private DoubleLinkAxis rootNode; 
-	private bool isAttribute; 
-	private bool isDss; 
-	private bool isSelfAxis; 
+	private DoubleLinkAxis topNode;
+	private DoubleLinkAxis rootNode;
+	private bool isAttribute;
+	private bool isDss;
+	private bool isSelfAxis;
 
 	internal DoubleLinkAxis RootNode { get; }
 	internal DoubleLinkAxis TopNode { get; }

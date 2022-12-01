@@ -1,32 +1,32 @@
-public class CargoShip : BaseEntity // TypeDefIndex: 10001
+public class CargoShip : BaseEntity // TypeDefIndex: 10003
 {
-	public int targetNodeIndex; 
-	public GameObject wakeParent; 
-	public GameObjectRef scientistTurretPrefab; 
-	public Transform[] scientistSpawnPoints; 
-	public List<Transform> crateSpawns; 
-	public GameObjectRef lockedCratePrefab; 
-	public GameObjectRef militaryCratePrefab; 
-	public GameObjectRef eliteCratePrefab; 
-	public GameObjectRef junkCratePrefab; 
-	public Transform waterLine; 
-	public Transform rudder; 
-	public Transform propeller; 
-	public GameObjectRef escapeBoatPrefab; 
-	public Transform escapeBoatPoint; 
-	public GameObjectRef microphonePrefab; 
-	public Transform microphonePoint; 
-	public GameObjectRef speakerPrefab; 
-	public Transform[] speakerPoints; 
-	public GameObject radiation; 
-	public GameObjectRef mapMarkerEntityPrefab; 
-	public GameObject hornOrigin; 
-	public SoundDefinition hornDef; 
-	public CargoShipSounds cargoShipSounds; 
-	public GameObject[] layouts; 
-	public GameObjectRef playerTest; 
-	private uint layoutChoice; 
-	private TimeSince timeSinceUpdatedSounds; 
+	public int targetNodeIndex;
+	public GameObject wakeParent;
+	public GameObjectRef scientistTurretPrefab;
+	public Transform[] scientistSpawnPoints;
+	public List<Transform> crateSpawns;
+	public GameObjectRef lockedCratePrefab;
+	public GameObjectRef militaryCratePrefab;
+	public GameObjectRef eliteCratePrefab;
+	public GameObjectRef junkCratePrefab;
+	public Transform waterLine;
+	public Transform rudder;
+	public Transform propeller;
+	public GameObjectRef escapeBoatPrefab;
+	public Transform escapeBoatPoint;
+	public GameObjectRef microphonePrefab;
+	public Transform microphonePoint;
+	public GameObjectRef speakerPrefab;
+	public Transform[] speakerPoints;
+	public GameObject radiation;
+	public GameObjectRef mapMarkerEntityPrefab;
+	public GameObject hornOrigin;
+	public SoundDefinition hornDef;
+	public CargoShipSounds cargoShipSounds;
+	public GameObject[] layouts;
+	public GameObjectRef playerTest;
+	private uint layoutChoice;
+	private TimeSince timeSinceUpdatedSounds;
 	private const float updateRateDistSq = 10000;
 
 
@@ -40,7 +40,7 @@ public class CargoShip : BaseEntity // TypeDefIndex: 10001
 
 	public override void PostNetworkUpdate() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void DoHornSound(BaseEntity.RPCMessage msg) { }
 
 	public override bool SupportsChildDeployables() { }

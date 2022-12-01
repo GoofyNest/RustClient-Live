@@ -1,8 +1,8 @@
 public abstract class TimeZone // TypeDefIndex: 401
 {
-	private static TimeZone currentTimeZone; 
-	private static object tz_lock; 
-	private static long timezone_check; 
+	private static TimeZone currentTimeZone;
+	private static object tz_lock;
+	private static long timezone_check;
 
 	public static TimeZone CurrentTimeZone { get; }
 

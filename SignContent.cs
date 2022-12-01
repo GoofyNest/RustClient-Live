@@ -1,7 +1,7 @@
-public class SignContent : ImageStorageEntity, IUGCBrowserEntity // TypeDefIndex: 11251
+public class SignContent : ImageStorageEntity, IUGCBrowserEntity // TypeDefIndex: 11257
 {
-	private uint[] textureIDs; 
-	private List<ulong> editHistory; 
+	private uint[] textureIDs;
+	private List<ulong> editHistory;
 
 	protected override uint CrcToLoad { get; }
 	protected override FileStorage.Type StorageType { get; }

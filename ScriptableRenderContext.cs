@@ -1,6 +1,6 @@
 public struct ScriptableRenderContext : IEquatable<ScriptableRenderContext> // TypeDefIndex: 3855
 {
-	private IntPtr m_Ptr; 
+	private IntPtr m_Ptr;
 
 
 	private int GetNumberOfCameras_Internal() { }

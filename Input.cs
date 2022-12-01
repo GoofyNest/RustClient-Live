@@ -1,12 +1,12 @@
 public class Input // TypeDefIndex: 4080
 {
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static bool anyKey { get; }
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static bool anyKeyDown { get; }
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static Vector3 mousePosition { get; }
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static Vector2 mouseScrollDelta { get; }
 	public static IMECompositionMode imeCompositionMode { get; set; }
 	public static string compositionString { get; }
@@ -17,34 +17,34 @@ public class Input // TypeDefIndex: 4080
 	public static Touch[] touches { get; }
 
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private static bool GetKeyInt(KeyCode key) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private static bool GetKeyUpInt(KeyCode key) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private static bool GetKeyDownInt(KeyCode key) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static float GetAxis(string axisName) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static float GetAxisRaw(string axisName) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static bool GetButtonDown(string buttonName) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static bool GetMouseButton(int button) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static bool GetMouseButtonDown(int button) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static bool GetMouseButtonUp(int button) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static Touch GetTouch(int index) { }
 
 	public static bool GetKey(KeyCode key) { }
@@ -71,13 +71,13 @@ public class Input // TypeDefIndex: 4080
 
 	public static void set_compositionCursorPos(Vector2 value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool get_mousePresent() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static int get_touchCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool get_touchSupported() { }
 
 	public static Touch[] get_touches() { }
@@ -94,21 +94,21 @@ public class Input // TypeDefIndex: 4080
 
 }
 
-public static class Input // TypeDefIndex: 6841
+public static class Input // TypeDefIndex: 6843
 {
 
 public static class Input
-	private static readonly Memoized<string, string> WithoutFirstChar; 
-	[CompilerGeneratedAttribute] 
-	private static Action<string, bool> RunBind; 
-	private static List<Input.Button> buttons; 
-	private static List<Action> frameThinks; 
+	private static readonly Memoized<string, string> WithoutFirstChar;
+	[CompilerGeneratedAttribute]
+	private static Action<string, bool> RunBind;
+	private static List<Input.Button> buttons;
+	private static List<Action> frameThinks;
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_RunBind(Action<string, bool> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_RunBind(Action<string, bool> value) { }
 
 	public static void Frame() { }
@@ -147,17 +147,17 @@ public static class Input
 
 }
 
-public class Input.Button // TypeDefIndex: 6842
+public class Input.Button // TypeDefIndex: 6844
 {
-	public string Name; 
-	public Func<bool> TestFunction; 
-	public bool CurrentValue; 
-	public bool LastValue; 
-	public string[] Binds; 
-	public bool Transient; 
-	public bool Cycle; 
-	public int CycleIndex; 
-	public KeyCode Code; 
+	public string Name;
+	public Func<bool> TestFunction;
+	public bool CurrentValue;
+	public bool LastValue;
+	public string[] Binds;
+	public bool Transient;
+	public bool Cycle;
+	public int CycleIndex;
+	public KeyCode Code;
 
 
 	public virtual void Update() { }
@@ -170,9 +170,9 @@ public class Input.Button // TypeDefIndex: 6842
 
 }
 
-private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6843
+private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6845
 {
-	public string name; 
+	public string name;
 
 
 	public void .ctor() { }
@@ -181,15 +181,15 @@ private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6843
 
 }
 
-private sealed class Input.<>c // TypeDefIndex: 6844
+private sealed class Input.<>c // TypeDefIndex: 6846
 {
-	public static readonly Input.<>c <>9; 
-	public static Func<Input.Button, bool> <>9__15_0; 
-	public static Func<Input.Button, string> <>9__15_1; 
-	public static Func<Input.Button, string> <>9__16_0; 
-	public static Func<Input.Button, bool> <>9__17_0; 
-	public static Func<Input.Button, string> <>9__17_1; 
-	public static Func<Input.Button, string> <>9__18_1; 
+	public static readonly Input.<>c <>9;
+	public static Func<Input.Button, bool> <>9__15_0;
+	public static Func<Input.Button, string> <>9__15_1;
+	public static Func<Input.Button, string> <>9__16_0;
+	public static Func<Input.Button, bool> <>9__17_0;
+	public static Func<Input.Button, string> <>9__17_1;
+	public static Func<Input.Button, string> <>9__18_1;
 
 
 	private static void .cctor() { }
@@ -212,9 +212,9 @@ private sealed class Input.<>c // TypeDefIndex: 6844
 
 }
 
-private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6845
+private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6847
 {
-	public string bind; 
+	public string bind;
 
 
 	public void .ctor() { }
@@ -223,9 +223,9 @@ private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6845
 
 }
 
-private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6846
+private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6848
 {
-	public string bind; 
+	public string bind;
 
 
 	public void .ctor() { }
@@ -234,9 +234,9 @@ private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6846
 
 }
 
-private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6847
+private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6849
 {
-	public string bind; 
+	public string bind;
 
 
 	public void .ctor() { }
@@ -245,34 +245,34 @@ private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6847
 
 }
 
-public class Input : ConsoleSystem // TypeDefIndex: 13724
+public class Input : ConsoleSystem // TypeDefIndex: 13740
 {
-	[ClientVar] 
-	public static bool flipy; 
-	[ClientVar] 
-	public static bool autocrouch; 
-	[ClientVar] 
-	public static float sensitivity; 
-	[ClientVar] 
-	public static float ads_sensitivity; 
-	[ClientVar] 
-	public static float vehicle_sensitivity; 
-	[ClientVar] 
-	public static bool vehicle_flipy; 
-	[ClientVar] 
-	public static bool toggleDuck; 
-	[ClientVar] 
-	public static bool alwayssprint; 
-	[ClientVar] 
-	public static bool toggleAds; 
-	[ClientVar] 
-	public static float holdtime; 
+	[ClientVar]
+	public static bool flipy;
+	[ClientVar]
+	public static bool autocrouch;
+	[ClientVar]
+	public static float sensitivity;
+	[ClientVar]
+	public static float ads_sensitivity;
+	[ClientVar]
+	public static float vehicle_sensitivity;
+	[ClientVar]
+	public static bool vehicle_flipy;
+	[ClientVar]
+	public static bool toggleDuck;
+	[ClientVar]
+	public static bool alwayssprint;
+	[ClientVar]
+	public static bool toggleAds;
+	[ClientVar]
+	public static float holdtime;
 
 
-	[ClientVar] 
+	[ClientVar]
 	public static string bind(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void clearbinds(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }

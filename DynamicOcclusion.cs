@@ -1,16 +1,16 @@
-public class DynamicOcclusion : MonoBehaviour // TypeDefIndex: 13328
+public class DynamicOcclusion : MonoBehaviour // TypeDefIndex: 13343
 {
-	public LayerMask layerMask; 
-	public float minOccluderArea; 
-	public int waitFrameCount; 
-	public float minSurfaceRatio; 
-	public float maxSurfaceDot; 
-	public PlaneAlignment planeAlignment; 
-	public float planeOffset; 
-	private VolumetricLightBeam m_Master; 
-	private int m_FrameCountToWait; 
-	private float m_RangeMultiplier; 
-	private uint m_PrevNonSubHitDirectionId; 
+	public LayerMask layerMask;
+	public float minOccluderArea;
+	public int waitFrameCount;
+	public float minSurfaceRatio;
+	public float maxSurfaceDot;
+	public PlaneAlignment planeAlignment;
+	public float planeOffset;
+	private VolumetricLightBeam m_Master;
+	private int m_FrameCountToWait;
+	private float m_RangeMultiplier;
+	private uint m_PrevNonSubHitDirectionId;
 
 
 	private void OnValidate() { }
@@ -45,9 +45,9 @@ public class DynamicOcclusion : MonoBehaviour // TypeDefIndex: 13328
 
 }
 
-private enum DynamicOcclusion.Direction // TypeDefIndex: 13329
+private enum DynamicOcclusion.Direction // TypeDefIndex: 13344
 {
-	public int value__; 
+	public int value__;
 	public const DynamicOcclusion.Direction Up = 0;
 	public const DynamicOcclusion.Direction Right = 1;
 	public const DynamicOcclusion.Direction Down = 2;

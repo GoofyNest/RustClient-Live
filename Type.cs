@@ -1,15 +1,15 @@
 public abstract class Type : MemberInfo, _Type // TypeDefIndex: 322
 {
-	public static readonly MemberFilter FilterAttribute; 
-	public static readonly MemberFilter FilterName; 
-	public static readonly MemberFilter FilterNameIgnoreCase; 
-	public static readonly object Missing; 
-	public static readonly char Delimiter; 
-	public static readonly Type[] EmptyTypes; 
-	private static Binder defaultBinder; 
+	public static readonly MemberFilter FilterAttribute;
+	public static readonly MemberFilter FilterName;
+	public static readonly MemberFilter FilterNameIgnoreCase;
+	public static readonly object Missing;
+	public static readonly char Delimiter;
+	public static readonly Type[] EmptyTypes;
+	private static Binder defaultBinder;
 	private const BindingFlags DefaultLookup = 28;
 	internal const BindingFlags DeclaredOnlyLookup = 62;
-	internal RuntimeTypeHandle _impl; 
+	internal RuntimeTypeHandle _impl;
 
 	public override MemberTypes MemberType { get; }
 	public override Type DeclaringType { get; }
@@ -104,21 +104,21 @@ public abstract class Type : MemberInfo, _Type // TypeDefIndex: 322
 
 	public abstract Type get_BaseType();
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public ConstructorInfo GetConstructor(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public ConstructorInfo GetConstructor(BindingFlags bindingAttr, Binder binder, Type[] types, ParameterModifier[] modifiers) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public ConstructorInfo GetConstructor(Type[] types) { }
 
 	protected abstract ConstructorInfo GetConstructorImpl(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers);
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public ConstructorInfo[] GetConstructors() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public abstract ConstructorInfo[] GetConstructors(BindingFlags bindingAttr);
 
 	public MethodInfo GetMethod(string name, BindingFlags bindingAttr, Binder binder, Type[] types, ParameterModifier[] modifiers) { }
@@ -287,7 +287,7 @@ public abstract class Type : MemberInfo, _Type // TypeDefIndex: 322
 
 	public abstract Type get_UnderlyingSystemType();
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual bool IsSubclassOf(Type c) { }
 
 	public virtual bool IsInstanceOfType(object o) { }

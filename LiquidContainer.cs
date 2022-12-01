@@ -1,13 +1,13 @@
-public class LiquidContainer : ContainerIOEntity // TypeDefIndex: 10122
+public class LiquidContainer : ContainerIOEntity // TypeDefIndex: 10124
 {
-	private Option __menuOption_MenuDrink; 
-	public ItemDefinition defaultLiquid; 
-	public int startingAmount; 
-	public bool autofillOutputs; 
-	public float autofillTickRate; 
-	public int autofillTickAmount; 
-	public int maxOutputFlow; 
-	public ItemDefinition[] ValidItems; 
+	private Option __menuOption_MenuDrink;
+	public ItemDefinition defaultLiquid;
+	public int startingAmount;
+	public bool autofillOutputs;
+	public float autofillTickRate;
+	public int autofillTickAmount;
+	public int maxOutputFlow;
+	public ItemDefinition[] ValidItems;
 
 	public override bool HasMenuOptions { get; }
 	public override bool IsGravitySource { get; }
@@ -24,10 +24,10 @@ public class LiquidContainer : ContainerIOEntity // TypeDefIndex: 10122
 
 	protected override bool get_DisregardGravityRestrictionsOnLiquid() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDrink(BasePlayer player) { }
 
 	public virtual bool MenuDrink_ShowIf(BasePlayer player) { }

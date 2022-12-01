@@ -48,15 +48,15 @@ internal sealed class RegexCode // TypeDefIndex: 2612
 	internal const int Back = 128;
 	internal const int Back2 = 256;
 	internal const int Ci = 512;
-	internal int[] _codes; 
-	internal string[] _strings; 
-	internal int _trackcount; 
-	internal Hashtable _caps; 
-	internal int _capsize; 
-	internal RegexPrefix _fcPrefix; 
-	internal RegexBoyerMoore _bmPrefix; 
-	internal int _anchors; 
-	internal bool _rightToLeft; 
+	internal int[] _codes;
+	internal string[] _strings;
+	internal int _trackcount;
+	internal Hashtable _caps;
+	internal int _capsize;
+	internal RegexPrefix _fcPrefix;
+	internal RegexBoyerMoore _bmPrefix;
+	internal int _anchors;
+	internal bool _rightToLeft;
 
 
 	internal void .ctor(int[] codes, List<string> stringlist, int trackcount, Hashtable caps, int capsize, RegexBoyerMoore bmPrefix, RegexPrefix fcPrefix, int anchors, bool rightToLeft) { }

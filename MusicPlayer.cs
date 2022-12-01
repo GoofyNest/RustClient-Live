@@ -1,6 +1,6 @@
-internal struct MusicPlayerRemoteWillActivate_t : ICallbackData // TypeDefIndex: 5416
+internal struct MusicPlayerRemoteWillActivate_t : ICallbackData // TypeDefIndex: 5418
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -14,9 +14,9 @@ internal struct MusicPlayerRemoteWillActivate_t : ICallbackData // TypeDefIndex:
 
 }
 
-internal struct MusicPlayerRemoteWillDeactivate_t : ICallbackData // TypeDefIndex: 5417
+internal struct MusicPlayerRemoteWillDeactivate_t : ICallbackData // TypeDefIndex: 5419
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -30,9 +30,9 @@ internal struct MusicPlayerRemoteWillDeactivate_t : ICallbackData // TypeDefInde
 
 }
 
-internal struct MusicPlayerRemoteToFront_t : ICallbackData // TypeDefIndex: 5418
+internal struct MusicPlayerRemoteToFront_t : ICallbackData // TypeDefIndex: 5420
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -46,9 +46,9 @@ internal struct MusicPlayerRemoteToFront_t : ICallbackData // TypeDefIndex: 5418
 
 }
 
-internal struct MusicPlayerWillQuit_t : ICallbackData // TypeDefIndex: 5419
+internal struct MusicPlayerWillQuit_t : ICallbackData // TypeDefIndex: 5421
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -62,9 +62,9 @@ internal struct MusicPlayerWillQuit_t : ICallbackData // TypeDefIndex: 5419
 
 }
 
-internal struct MusicPlayerWantsPlay_t : ICallbackData // TypeDefIndex: 5420
+internal struct MusicPlayerWantsPlay_t : ICallbackData // TypeDefIndex: 5422
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -78,9 +78,9 @@ internal struct MusicPlayerWantsPlay_t : ICallbackData // TypeDefIndex: 5420
 
 }
 
-internal struct MusicPlayerWantsPause_t : ICallbackData // TypeDefIndex: 5421
+internal struct MusicPlayerWantsPause_t : ICallbackData // TypeDefIndex: 5423
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -94,9 +94,9 @@ internal struct MusicPlayerWantsPause_t : ICallbackData // TypeDefIndex: 5421
 
 }
 
-internal struct MusicPlayerWantsPlayPrevious_t : ICallbackData // TypeDefIndex: 5422
+internal struct MusicPlayerWantsPlayPrevious_t : ICallbackData // TypeDefIndex: 5424
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -110,9 +110,9 @@ internal struct MusicPlayerWantsPlayPrevious_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct MusicPlayerWantsPlayNext_t : ICallbackData // TypeDefIndex: 5423
+internal struct MusicPlayerWantsPlayNext_t : ICallbackData // TypeDefIndex: 5425
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -126,10 +126,10 @@ internal struct MusicPlayerWantsPlayNext_t : ICallbackData // TypeDefIndex: 5423
 
 }
 
-internal struct MusicPlayerWantsShuffled_t : ICallbackData // TypeDefIndex: 5424
+internal struct MusicPlayerWantsShuffled_t : ICallbackData // TypeDefIndex: 5426
 {
-	internal bool Shuffled; 
-	public static int _datasize; 
+	internal bool Shuffled;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -143,10 +143,10 @@ internal struct MusicPlayerWantsShuffled_t : ICallbackData // TypeDefIndex: 5424
 
 }
 
-internal struct MusicPlayerWantsLooped_t : ICallbackData // TypeDefIndex: 5425
+internal struct MusicPlayerWantsLooped_t : ICallbackData // TypeDefIndex: 5427
 {
-	internal bool Looped; 
-	public static int _datasize; 
+	internal bool Looped;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -160,10 +160,10 @@ internal struct MusicPlayerWantsLooped_t : ICallbackData // TypeDefIndex: 5425
 
 }
 
-internal struct MusicPlayerWantsVolume_t : ICallbackData // TypeDefIndex: 5426
+internal struct MusicPlayerWantsVolume_t : ICallbackData // TypeDefIndex: 5428
 {
-	internal float NewVolume; 
-	public static int _datasize; 
+	internal float NewVolume;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -177,10 +177,10 @@ internal struct MusicPlayerWantsVolume_t : ICallbackData // TypeDefIndex: 5426
 
 }
 
-internal struct MusicPlayerSelectsQueueEntry_t : ICallbackData // TypeDefIndex: 5427
+internal struct MusicPlayerSelectsQueueEntry_t : ICallbackData // TypeDefIndex: 5429
 {
-	internal int NID; 
-	public static int _datasize; 
+	internal int NID;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -194,10 +194,10 @@ internal struct MusicPlayerSelectsQueueEntry_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct MusicPlayerSelectsPlaylistEntry_t : ICallbackData // TypeDefIndex: 5428
+internal struct MusicPlayerSelectsPlaylistEntry_t : ICallbackData // TypeDefIndex: 5430
 {
-	internal int NID; 
-	public static int _datasize; 
+	internal int NID;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -211,10 +211,10 @@ internal struct MusicPlayerSelectsPlaylistEntry_t : ICallbackData // TypeDefInde
 
 }
 
-internal struct MusicPlayerWantsPlayingRepeatStatus_t : ICallbackData // TypeDefIndex: 5429
+internal struct MusicPlayerWantsPlayingRepeatStatus_t : ICallbackData // TypeDefIndex: 5431
 {
-	internal int PlayingRepeatStatus; 
-	public static int _datasize; 
+	internal int PlayingRepeatStatus;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

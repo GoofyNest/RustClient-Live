@@ -1,6 +1,6 @@
-internal struct HAuthTicket : IEquatable<HAuthTicket>, IComparable<HAuthTicket> // TypeDefIndex: 5527
+internal struct HAuthTicket : IEquatable<HAuthTicket>, IComparable<HAuthTicket> // TypeDefIndex: 5529
 {
-	public uint Value; 
+	public uint Value;
 
 
 	public static HAuthTicket op_Implicit(uint value) { }

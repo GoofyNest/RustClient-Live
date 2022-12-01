@@ -25,10 +25,10 @@ internal static class BigNumber // TypeDefIndex: 3971
 
 private struct BigNumber.BigNumberBuffer // TypeDefIndex: 3972
 {
-	public StringBuilder digits; 
-	public int precision; 
-	public int scale; 
-	public bool sign; 
+	public StringBuilder digits;
+	public int precision;
+	public int scale;
+	public bool sign;
 
 
 	public static BigNumber.BigNumberBuffer Create() { }

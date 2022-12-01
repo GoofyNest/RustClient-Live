@@ -1,11 +1,11 @@
-public class RandomDynamicObject : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 12104
+public class RandomDynamicObject : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 12111
 {
-	public uint Seed; 
-	public float Distance; 
-	public float Probability; 
-	public GameObject[] Candidates; 
-	private GameObject instance; 
-	private LODCell cell; 
+	public uint Seed;
+	public float Distance;
+	public float Probability;
+	public GameObject[] Candidates;
+	private GameObject instance;
+	private LODCell cell;
 
 
 	protected void OnEnable() { }

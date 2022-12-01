@@ -1,9 +1,9 @@
-public struct InstancingKey : IEquatable<InstancingKey> // TypeDefIndex: 13152
+public struct InstancingKey : IEquatable<InstancingKey> // TypeDefIndex: 13167
 {
-	public Mesh mesh; 
-	public int submeshIndex; 
-	public Material material; 
-	public int shaderPass; 
+	public Mesh mesh;
+	public int submeshIndex;
+	public Material material;
+	public int shaderPass;
 
 
 	public void .ctor(Mesh mesh, int submeshIndex, Material material, int shaderPass) { }

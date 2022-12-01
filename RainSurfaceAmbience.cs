@@ -1,9 +1,9 @@
-public class RainSurfaceAmbience : SingletonComponent<RainSurfaceAmbience>, IClientComponent // TypeDefIndex: 10706
+public class RainSurfaceAmbience : SingletonComponent<RainSurfaceAmbience>, IClientComponent // TypeDefIndex: 10710
 {
-	public List<RainSurfaceAmbience.SurfaceSound> surfaces; 
-	public GameObjectRef emitterPrefab; 
-	public Dictionary<ParticlePatch, AmbienceEmitter> spawnedEmitters; 
-	private Dictionary<PhysicMaterial, RainSurfaceAmbience.SurfaceSound> surfaceSoundsByMaterial; 
+	public List<RainSurfaceAmbience.SurfaceSound> surfaces;
+	public GameObjectRef emitterPrefab;
+	public Dictionary<ParticlePatch, AmbienceEmitter> spawnedEmitters;
+	private Dictionary<PhysicMaterial, RainSurfaceAmbience.SurfaceSound> surfaceSoundsByMaterial;
 
 
 	protected override void Awake() { }
@@ -20,10 +20,10 @@ public class RainSurfaceAmbience : SingletonComponent<RainSurfaceAmbience>, ICli
 
 }
 
-public class RainSurfaceAmbience.SurfaceSound // TypeDefIndex: 10707
+public class RainSurfaceAmbience.SurfaceSound // TypeDefIndex: 10711
 {
-	public AmbienceDefinitionList baseAmbience; 
-	public List<PhysicMaterial> materials; 
+	public AmbienceDefinitionList baseAmbience;
+	public List<PhysicMaterial> materials;
 
 
 	public void .ctor() { }

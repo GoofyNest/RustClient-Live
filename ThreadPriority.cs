@@ -1,6 +1,6 @@
 public enum ThreadPriority // TypeDefIndex: 817
 {
-	public int value__; 
+	public int value__;
 	public const ThreadPriority Lowest = 0;
 	public const ThreadPriority BelowNormal = 1;
 	public const ThreadPriority Normal = 2;
@@ -11,7 +11,7 @@ public enum ThreadPriority // TypeDefIndex: 817
 
 public enum ThreadPriority // TypeDefIndex: 3349
 {
-	public int value__; 
+	public int value__;
 	public const ThreadPriority Low = 0;
 	public const ThreadPriority BelowNormal = 1;
 	public const ThreadPriority Normal = 2;

@@ -1,10 +1,10 @@
-internal struct QueryDefinitionsOptionsInternal : ISettable<QueryDefinitionsOptions>, IDisposable // TypeDefIndex: 9944
+internal struct QueryDefinitionsOptionsInternal : ISettable<QueryDefinitionsOptions>, IDisposable // TypeDefIndex: 9946
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_EpicUserId_DEPRECATED; 
-	private IntPtr m_HiddenAchievementIds_DEPRECATED; 
-	private uint m_HiddenAchievementsCount_DEPRECATED; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_EpicUserId_DEPRECATED;
+	private IntPtr m_HiddenAchievementIds_DEPRECATED;
+	private uint m_HiddenAchievementsCount_DEPRECATED;
 
 	public ProductUserId LocalUserId { set; }
 	public EpicAccountId EpicUserId_DEPRECATED { set; }

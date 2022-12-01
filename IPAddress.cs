@@ -1,24 +1,24 @@
 public class IPAddress // TypeDefIndex: 2882
 {
-	public static readonly IPAddress Any; 
-	public static readonly IPAddress Loopback; 
-	public static readonly IPAddress Broadcast; 
-	public static readonly IPAddress None; 
+	public static readonly IPAddress Any;
+	public static readonly IPAddress Loopback;
+	public static readonly IPAddress Broadcast;
+	public static readonly IPAddress None;
 	internal const long LoopbackMask = 255;
-	internal long m_Address; 
-	internal string m_ToString; 
-	public static readonly IPAddress IPv6Any; 
-	public static readonly IPAddress IPv6Loopback; 
-	public static readonly IPAddress IPv6None; 
-	private AddressFamily m_Family; 
-	private ushort[] m_Numbers; 
-	private long m_ScopeId; 
-	private int m_HashCode; 
+	internal long m_Address;
+	internal string m_ToString;
+	public static readonly IPAddress IPv6Any;
+	public static readonly IPAddress IPv6Loopback;
+	public static readonly IPAddress IPv6None;
+	private AddressFamily m_Family;
+	private ushort[] m_Numbers;
+	private long m_ScopeId;
+	private int m_HashCode;
 	internal const int IPv4AddressBytes = 4;
 	internal const int IPv6AddressBytes = 16;
 	internal const int NumberOfLabels = 8;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public long Address { get; }
 	public AddressFamily AddressFamily { get; }
 	public long ScopeId { get; }

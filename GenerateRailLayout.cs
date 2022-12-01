@@ -1,4 +1,4 @@
-public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12236
+public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12244
 {
 	public const float Width = 4;
 	public const float InnerPadding = 1;
@@ -8,7 +8,7 @@ public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12236
 	public const float RandomScale = 1;
 	public const float MeshOffset = 0;
 	public const float TerrainOffset = -0,125;
-	private static Quaternion rot90; 
+	private static Quaternion rot90;
 	private const int MaxDepth = 250000;
 
 
@@ -22,32 +22,32 @@ public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12236
 
 }
 
-private class GenerateRailLayout.PathNode // TypeDefIndex: 12237
+private class GenerateRailLayout.PathNode // TypeDefIndex: 12245
 {
-	public MonumentInfo monument; 
-	public TerrainPathConnect target; 
-	public PathFinder.Node node; 
+	public MonumentInfo monument;
+	public TerrainPathConnect target;
+	public PathFinder.Node node;
 
 
 	public void .ctor() { }
 
 }
 
-private class GenerateRailLayout.PathSegment // TypeDefIndex: 12238
+private class GenerateRailLayout.PathSegment // TypeDefIndex: 12246
 {
-	public PathFinder.Node start; 
-	public PathFinder.Node end; 
-	public TerrainPathConnect origin; 
-	public TerrainPathConnect target; 
+	public PathFinder.Node start;
+	public PathFinder.Node end;
+	public TerrainPathConnect origin;
+	public TerrainPathConnect target;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class GenerateRailLayout.<>c__DisplayClass13_0 // TypeDefIndex: 12239
+private sealed class GenerateRailLayout.<>c__DisplayClass13_0 // TypeDefIndex: 12247
 {
-	public PathList rail; 
+	public PathList rail;
 
 
 	public void .ctor() { }

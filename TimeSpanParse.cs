@@ -1,6 +1,6 @@
 internal static class TimeSpanParse // TypeDefIndex: 723
 {
-	private static readonly TimeSpanParse.TimeSpanToken zero; 
+	private static readonly TimeSpanParse.TimeSpanToken zero;
 
 
 	private static bool TryTimeToTicks(bool positive, TimeSpanParse.TimeSpanToken days, TimeSpanParse.TimeSpanToken hours, TimeSpanParse.TimeSpanToken minutes, TimeSpanParse.TimeSpanToken seconds, TimeSpanParse.TimeSpanToken fraction, out long result) { }
@@ -27,7 +27,7 @@ internal static class TimeSpanParse // TypeDefIndex: 723
 
 private enum TimeSpanParse.TimeSpanThrowStyle // TypeDefIndex: 724
 {
-	public int value__; 
+	public int value__;
 	public const TimeSpanParse.TimeSpanThrowStyle None = 0;
 	public const TimeSpanParse.TimeSpanThrowStyle All = 1;
 
@@ -35,7 +35,7 @@ private enum TimeSpanParse.TimeSpanThrowStyle // TypeDefIndex: 724
 
 private enum TimeSpanParse.ParseFailureKind // TypeDefIndex: 725
 {
-	public int value__; 
+	public int value__;
 	public const TimeSpanParse.ParseFailureKind None = 0;
 	public const TimeSpanParse.ParseFailureKind ArgumentNull = 1;
 	public const TimeSpanParse.ParseFailureKind Format = 2;
@@ -46,7 +46,7 @@ private enum TimeSpanParse.ParseFailureKind // TypeDefIndex: 725
 
 private enum TimeSpanParse.TimeSpanStandardStyles // TypeDefIndex: 726
 {
-	public int value__; 
+	public int value__;
 	public const TimeSpanParse.TimeSpanStandardStyles None = 0;
 	public const TimeSpanParse.TimeSpanStandardStyles Invariant = 1;
 	public const TimeSpanParse.TimeSpanStandardStyles Localized = 2;
@@ -57,7 +57,7 @@ private enum TimeSpanParse.TimeSpanStandardStyles // TypeDefIndex: 726
 
 private enum TimeSpanParse.TTT // TypeDefIndex: 727
 {
-	public int value__; 
+	public int value__;
 	public const TimeSpanParse.TTT None = 0;
 	public const TimeSpanParse.TTT End = 1;
 	public const TimeSpanParse.TTT Num = 2;
@@ -68,10 +68,10 @@ private enum TimeSpanParse.TTT // TypeDefIndex: 727
 
 private struct TimeSpanParse.TimeSpanToken // TypeDefIndex: 728
 {
-	internal TimeSpanParse.TTT ttt; 
-	internal int num; 
-	internal int zeroes; 
-	internal string sep; 
+	internal TimeSpanParse.TTT ttt;
+	internal int num;
+	internal int zeroes;
+	internal string sep;
 
 
 	public void .ctor(int number) { }
@@ -82,8 +82,8 @@ private struct TimeSpanParse.TimeSpanToken // TypeDefIndex: 728
 
 private struct TimeSpanParse.TimeSpanTokenizer // TypeDefIndex: 729
 {
-	private int m_pos; 
-	private string m_value; 
+	private int m_pos;
+	private string m_value;
 
 	internal bool EOL { get; }
 	internal char NextChar { get; }
@@ -106,18 +106,18 @@ private struct TimeSpanParse.TimeSpanTokenizer // TypeDefIndex: 729
 
 private struct TimeSpanParse.TimeSpanRawInfo // TypeDefIndex: 730
 {
-	internal TimeSpanParse.TTT lastSeenTTT; 
-	internal int tokenCount; 
-	internal int SepCount; 
-	internal int NumCount; 
-	internal string[] literals; 
-	internal TimeSpanParse.TimeSpanToken[] numbers; 
-	private TimeSpanFormat.FormatLiterals m_posLoc; 
-	private TimeSpanFormat.FormatLiterals m_negLoc; 
-	private bool m_posLocInit; 
-	private bool m_negLocInit; 
-	private string m_fullPosPattern; 
-	private string m_fullNegPattern; 
+	internal TimeSpanParse.TTT lastSeenTTT;
+	internal int tokenCount;
+	internal int SepCount;
+	internal int NumCount;
+	internal string[] literals;
+	internal TimeSpanParse.TimeSpanToken[] numbers;
+	private TimeSpanFormat.FormatLiterals m_posLoc;
+	private TimeSpanFormat.FormatLiterals m_negLoc;
+	private bool m_posLocInit;
+	private bool m_negLocInit;
+	private string m_fullPosPattern;
+	private string m_fullNegPattern;
 
 	internal TimeSpanFormat.FormatLiterals PositiveInvariant { get; }
 	internal TimeSpanFormat.FormatLiterals NegativeInvariant { get; }
@@ -163,12 +163,12 @@ private struct TimeSpanParse.TimeSpanRawInfo // TypeDefIndex: 730
 
 private struct TimeSpanParse.TimeSpanResult // TypeDefIndex: 731
 {
-	internal TimeSpan parsedTimeSpan; 
-	internal TimeSpanParse.TimeSpanThrowStyle throwStyle; 
-	internal TimeSpanParse.ParseFailureKind m_failure; 
-	internal string m_failureMessageID; 
-	internal object m_failureMessageFormatArgument; 
-	internal string m_failureArgumentName; 
+	internal TimeSpan parsedTimeSpan;
+	internal TimeSpanParse.TimeSpanThrowStyle throwStyle;
+	internal TimeSpanParse.ParseFailureKind m_failure;
+	internal string m_failureMessageID;
+	internal object m_failureMessageFormatArgument;
+	internal string m_failureArgumentName;
 
 
 	internal void Init(TimeSpanParse.TimeSpanThrowStyle canThrow) { }

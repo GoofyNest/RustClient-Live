@@ -1,7 +1,7 @@
-public sealed class Crc16 // TypeDefIndex: 7401
+public sealed class Crc16 // TypeDefIndex: 7403
 {
-	private static readonly short Polynomial; 
-	private short _CRC; 
+	private static readonly short Polynomial;
+	private short _CRC;
 
 
 	private static void .cctor() { }

@@ -1,28 +1,28 @@
-public class ArcadeEntity : BaseMonoBehaviour // TypeDefIndex: 10481
+public class ArcadeEntity : BaseMonoBehaviour // TypeDefIndex: 10485
 {
-	public uint id; 
-	public uint spriteID; 
-	public uint soundID; 
-	public bool visible; 
-	public Vector3 heading; 
-	public bool isEnabled; 
-	public bool dirty; 
-	public float alpha; 
-	public BoxCollider boxCollider; 
-	public bool host; 
-	public bool localAuthorativeOverride; 
-	public ArcadeEntity arcadeEntityParent; 
-	public uint prefabID; 
-	[HeaderAttribute] 
-	public bool takesDamage; 
-	public float health; 
-	public float maxHealth; 
-	public bool mapLoadedEntiy; 
-	private Sprite spriteRef; 
-	protected BaseArcadeGame arcadeGameParent; 
-	private ArcadeEntityController controller; 
-	public static uint PARENTID_INVALID; 
-	public ArcadeGame.arcadeEnt savedState; 
+	public uint id;
+	public uint spriteID;
+	public uint soundID;
+	public bool visible;
+	public Vector3 heading;
+	public bool isEnabled;
+	public bool dirty;
+	public float alpha;
+	public BoxCollider boxCollider;
+	public bool host;
+	public bool localAuthorativeOverride;
+	public ArcadeEntity arcadeEntityParent;
+	public uint prefabID;
+	[HeaderAttribute]
+	public bool takesDamage;
+	public float health;
+	public float maxHealth;
+	public bool mapLoadedEntiy;
+	private Sprite spriteRef;
+	protected BaseArcadeGame arcadeGameParent;
+	private ArcadeEntityController controller;
+	public static uint PARENTID_INVALID;
+	public ArcadeGame.arcadeEnt savedState;
 
 	public Vector3 positionLocal { get; set; }
 	public Vector3 positionWorld { get; set; }

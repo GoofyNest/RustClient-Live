@@ -1,7 +1,7 @@
 internal class InternalEncoderBestFitFallback : EncoderFallback // TypeDefIndex: 445
 {
-	internal Encoding encoding; 
-	internal char[] arrayBestFit; 
+	internal Encoding encoding;
+	internal char[] arrayBestFit;
 
 	public override int MaxCharCount { get; }
 

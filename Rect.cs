@@ -1,13 +1,13 @@
 public struct Rect : IEquatable<Rect> // TypeDefIndex: 3376
 {
-	[NativeNameAttribute] 
-	private float m_XMin; 
-	[NativeNameAttribute] 
-	private float m_YMin; 
-	[NativeNameAttribute] 
-	private float m_Width; 
-	[NativeNameAttribute] 
-	private float m_Height; 
+	[NativeNameAttribute]
+	private float m_XMin;
+	[NativeNameAttribute]
+	private float m_YMin;
+	[NativeNameAttribute]
+	private float m_Width;
+	[NativeNameAttribute]
+	private float m_Height;
 
 	public static Rect zero { get; }
 	public float x { get; set; }

@@ -1,6 +1,6 @@
-public struct RealTimeSince // TypeDefIndex: 6173
+public struct RealTimeSince // TypeDefIndex: 6175
 {
-	private float time; 
+	private float time;
 
 
 	public static float op_Implicit(RealTimeSince ts) { }

@@ -1,11 +1,11 @@
-public class WorldData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6517
+public class WorldData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6519
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint size; 
-	public List<MapData> maps; 
-	public List<PrefabData> prefabs; 
-	public List<PathData> paths; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint size;
+	public List<MapData> maps;
+	public List<PrefabData> prefabs;
+	public List<PathData> paths;
 
 
 	public static void ResetToPool(WorldData instance) { }

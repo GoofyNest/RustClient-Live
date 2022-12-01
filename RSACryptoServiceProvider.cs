@@ -1,16 +1,16 @@
 public sealed class RSACryptoServiceProvider : RSA // TypeDefIndex: 983
 {
-	private static CspProviderFlags s_UseMachineKeyStore; 
-	private KeyPairPersistence store; 
-	private bool persistKey; 
-	private bool persisted; 
-	private bool privateKeyExportable; 
-	private bool m_disposed; 
-	private RSAManaged rsa; 
+	private static CspProviderFlags s_UseMachineKeyStore;
+	private KeyPairPersistence store;
+	private bool persistKey;
+	private bool persisted;
+	private bool privateKeyExportable;
+	private bool m_disposed;
+	private RSAManaged rsa;
 
 	public static bool UseMachineKeyStore { get; }
 	public override int KeySize { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public bool PublicOnly { get; }
 
 

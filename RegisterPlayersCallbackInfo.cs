@@ -1,13 +1,13 @@
-public struct RegisterPlayersCallbackInfo : ICallbackInfo // TypeDefIndex: 8534
+public struct RegisterPlayersCallbackInfo : ICallbackInfo // TypeDefIndex: 8536
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <RegisteredPlayers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <SanctionedPlayers>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <RegisteredPlayers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <SanctionedPlayers>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -15,28 +15,28 @@ public struct RegisterPlayersCallbackInfo : ICallbackInfo // TypeDefIndex: 8534
 	public ProductUserId[] SanctionedPlayers { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_RegisteredPlayers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RegisteredPlayers(ProductUserId[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_SanctionedPlayers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SanctionedPlayers(ProductUserId[] value) { }
 
 	public Nullable<Result> GetResultCode() { }

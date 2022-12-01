@@ -1,14 +1,14 @@
 public sealed class LogicalCallContext : ISerializable, ICloneable // TypeDefIndex: 1217
 {
-	private static Type s_callContextType; 
+	private static Type s_callContextType;
 	private const string s_CorrelationMgrSlotName = "System.Diagnostics.Trace.CorrelationManagerSlot";
-	private Hashtable m_Datastore; 
-	private CallContextRemotingData m_RemotingData; 
-	private CallContextSecurityData m_SecurityData; 
-	private object m_HostContext; 
-	private bool m_IsCorrelationMgr; 
-	private Header[] _sendHeaders; 
-	private Header[] _recvHeaders; 
+	private Hashtable m_Datastore;
+	private CallContextRemotingData m_RemotingData;
+	private CallContextSecurityData m_SecurityData;
+	private object m_HostContext;
+	private bool m_IsCorrelationMgr;
+	private Header[] _sendHeaders;
+	private Header[] _recvHeaders;
 
 	public bool HasInfo { get; }
 	private bool HasUserData { get; }
@@ -41,7 +41,7 @@ public sealed class LogicalCallContext : ISerializable, ICloneable // TypeDefInd
 
 internal struct LogicalCallContext.Reader // TypeDefIndex: 1218
 {
-	private LogicalCallContext m_ctx; 
+	private LogicalCallContext m_ctx;
 
 	public bool IsNull { get; }
 	public bool HasInfo { get; }

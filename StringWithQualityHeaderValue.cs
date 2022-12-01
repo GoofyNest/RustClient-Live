@@ -1,9 +1,9 @@
-public class StringWithQualityHeaderValue : ICloneable // TypeDefIndex: 5814
+public class StringWithQualityHeaderValue : ICloneable // TypeDefIndex: 5816
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<double> <Quality>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Value>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<double> <Quality>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Value>k__BackingField;
 
 	public Nullable<double> Quality { get; set; }
 	public string Value { get; set; }
@@ -11,16 +11,16 @@ public class StringWithQualityHeaderValue : ICloneable // TypeDefIndex: 5814
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<double> get_Quality() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Quality(Nullable<double> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Value() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Value(string value) { }
 
 	private object System.ICloneable.Clone() { }

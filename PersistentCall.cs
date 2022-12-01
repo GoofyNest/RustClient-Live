@@ -1,21 +1,21 @@
 internal class PersistentCall // TypeDefIndex: 3638
 {
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private Object m_Target; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_MethodName; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private PersistentListenerMode m_Mode; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private ArgumentCache m_Arguments; 
-	[FormerlySerializedAsAttribute] 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private UnityEventCallState m_CallState; 
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private Object m_Target;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_MethodName;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private PersistentListenerMode m_Mode;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private ArgumentCache m_Arguments;
+	[FormerlySerializedAsAttribute]
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private UnityEventCallState m_CallState;
 
 	public Object target { get; }
 	public string methodName { get; }

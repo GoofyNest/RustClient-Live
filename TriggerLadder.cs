@@ -1,4 +1,4 @@
-public class TriggerLadder : TriggerBase // TypeDefIndex: 11772
+public class TriggerLadder : TriggerBase // TypeDefIndex: 11779
 {
 
 	internal override GameObject InterestedInObject(GameObject obj) { }

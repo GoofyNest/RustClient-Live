@@ -1,16 +1,16 @@
-public class QuickCraft : SingletonComponent<QuickCraft>, IInventoryChanged // TypeDefIndex: 12819
+public class QuickCraft : SingletonComponent<QuickCraft>, IInventoryChanged // TypeDefIndex: 12833
 {
-	public GameObjectRef craftButton; 
-	public GameObject empty; 
-	public Sprite FavouriteOnSprite; 
-	public Sprite FavouriteOffSprite; 
-	public Color FavouriteOnColor; 
-	public Color FavouriteOffColor; 
-	public static HashSet<ItemBlueprint> FavouriteBlueprints; 
-	private float lastRebuildTime; 
-	private bool forceRebuild; 
-	private bool isDirty; 
-	private int lastHash; 
+	public GameObjectRef craftButton;
+	public GameObject empty;
+	public Sprite FavouriteOnSprite;
+	public Sprite FavouriteOffSprite;
+	public Color FavouriteOnColor;
+	public Color FavouriteOffColor;
+	public static HashSet<ItemBlueprint> FavouriteBlueprints;
+	private float lastRebuildTime;
+	private bool forceRebuild;
+	private bool isDirty;
+	private int lastHash;
 	private const int buttonCount = 18;
 
 
@@ -26,7 +26,7 @@ public class QuickCraft : SingletonComponent<QuickCraft>, IInventoryChanged // T
 
 	private void Dirty() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator WatchForChanges() { }
 
 	private void Rebuild() { }
@@ -57,31 +57,31 @@ public class QuickCraft : SingletonComponent<QuickCraft>, IInventoryChanged // T
 
 }
 
-private sealed class QuickCraft.<WatchForChanges>d__16 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12820
+private sealed class QuickCraft.<WatchForChanges>d__16 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12834
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public QuickCraft <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public QuickCraft <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

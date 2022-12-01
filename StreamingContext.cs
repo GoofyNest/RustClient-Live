@@ -1,7 +1,7 @@
 public struct StreamingContext // TypeDefIndex: 1062
 {
-	internal object m_additionalContext; 
-	internal StreamingContextStates m_state; 
+	internal object m_additionalContext;
+	internal StreamingContextStates m_state;
 
 	public object Context { get; }
 	public StreamingContextStates State { get; }

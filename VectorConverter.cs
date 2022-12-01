@@ -1,36 +1,36 @@
-public class VectorConverter : JsonConverter // TypeDefIndex: 6114
+public class VectorConverter : JsonConverter // TypeDefIndex: 6116
 {
-	private static readonly Type V2; 
-	private static readonly Type V3; 
-	private static readonly Type V4; 
-	[CompilerGeneratedAttribute] 
-	private bool <EnableVector2>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <EnableVector3>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <EnableVector4>k__BackingField; 
+	private static readonly Type V2;
+	private static readonly Type V3;
+	private static readonly Type V4;
+	[CompilerGeneratedAttribute]
+	private bool <EnableVector2>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <EnableVector3>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <EnableVector4>k__BackingField;
 
 	public bool EnableVector2 { get; set; }
 	public bool EnableVector3 { get; set; }
 	public bool EnableVector4 { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_EnableVector2() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EnableVector2(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_EnableVector3() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EnableVector3(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_EnableVector4() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EnableVector4(bool value) { }
 
 	public void .ctor() { }

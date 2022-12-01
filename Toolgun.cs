@@ -1,14 +1,14 @@
-public class Toolgun : Hammer // TypeDefIndex: 10376
+public class Toolgun : Hammer // TypeDefIndex: 10380
 {
-	public GameObjectRef attackEffect; 
-	public GameObjectRef beamEffect; 
-	public GameObjectRef beamImpactEffect; 
-	public GameObjectRef errorEffect; 
-	public GameObjectRef beamEffectClassic; 
-	public GameObjectRef beamImpactEffectClassic; 
-	public Transform muzzlePoint; 
-	[ClientVar] 
-	public static bool classiceffects; 
+	public GameObjectRef attackEffect;
+	public GameObjectRef beamEffect;
+	public GameObjectRef beamImpactEffect;
+	public GameObjectRef errorEffect;
+	public GameObjectRef beamEffectClassic;
+	public GameObjectRef beamImpactEffectClassic;
+	public Transform muzzlePoint;
+	[ClientVar]
+	public static bool classiceffects;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -21,7 +21,7 @@ public class Toolgun : Hammer // TypeDefIndex: 10376
 
 	public void DoAttackEffect(Vector3 endPos, Vector3 normal) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void EffectSpawn(BaseEntity.RPCMessage msg) { }
 
 	public override void ClientAttack() { }

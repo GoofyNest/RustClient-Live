@@ -1,34 +1,34 @@
-public class FlameThrower : AttackEntity // TypeDefIndex: 10288
+public class FlameThrower : AttackEntity // TypeDefIndex: 10291
 {
-	[HeaderAttribute] 
-	public int maxAmmo; 
-	public int ammo; 
-	public ItemDefinition fuelType; 
-	public float timeSinceLastAttack; 
-	[FormerlySerializedAsAttribute] 
-	public float nextReadyTime; 
-	public float flameRange; 
-	public float flameRadius; 
-	public ParticleSystem[] flameEffects; 
-	public FlameJet jet; 
-	public GameObjectRef fireballPrefab; 
-	public List<DamageTypeEntry> damagePerSec; 
-	public SoundDefinition flameStart3P; 
-	public SoundDefinition flameLoop3P; 
-	public SoundDefinition flameStop3P; 
-	public SoundDefinition pilotLoopSoundDef; 
-	private float tickRate; 
-	private float lastFlameTick; 
-	public float fuelPerSec; 
-	private float ammoRemainder; 
-	public float reloadDuration; 
-	private bool isReloading; 
-	private Sound loopSound; 
-	private Sound pilotLoopSound; 
-	private float currentGaugeSetting; 
-	private bool wasFlameOn; 
-	private float nextUnfireTime; 
-	private bool firing; 
+	[HeaderAttribute]
+	public int maxAmmo;
+	public int ammo;
+	public ItemDefinition fuelType;
+	public float timeSinceLastAttack;
+	[FormerlySerializedAsAttribute]
+	public float nextReadyTime;
+	public float flameRange;
+	public float flameRadius;
+	public ParticleSystem[] flameEffects;
+	public FlameJet jet;
+	public GameObjectRef fireballPrefab;
+	public List<DamageTypeEntry> damagePerSec;
+	public SoundDefinition flameStart3P;
+	public SoundDefinition flameLoop3P;
+	public SoundDefinition flameStop3P;
+	public SoundDefinition pilotLoopSoundDef;
+	private float tickRate;
+	private float lastFlameTick;
+	public float fuelPerSec;
+	private float ammoRemainder;
+	public float reloadDuration;
+	private bool isReloading;
+	private Sound loopSound;
+	private Sound pilotLoopSound;
+	private float currentGaugeSetting;
+	private bool wasFlameOn;
+	private float nextUnfireTime;
+	private bool firing;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

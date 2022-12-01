@@ -43,12 +43,12 @@ internal static class Unsafe // TypeDefIndex: 1318
 
 }
 
-public static class Unsafe // TypeDefIndex: 6674
+public static class Unsafe // TypeDefIndex: 6676
 {
 
 public static class Unsafe
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static int SizeOf<T>() { }
 	/* GenericInstMethod :
 	|
@@ -59,10 +59,10 @@ public static class Unsafe
 	|-Unsafe.SizeOf<object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static void CopyBlock(ref byte destination, ref byte source, uint byteCount) { }
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static T As<T>(object o) { }
 	/* GenericInstMethod :
 	|
@@ -71,7 +71,7 @@ public static class Unsafe
 	|-Unsafe.As<object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static ref T AsRef<T>(void* source) { }
 	/* GenericInstMethod :
 	|
@@ -81,7 +81,7 @@ public static class Unsafe
 	|-Unsafe.AsRef<object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static ref TTo As<TFrom, TTo>(ref TFrom source) { }
 	/* GenericInstMethod :
 	|
@@ -94,7 +94,7 @@ public static class Unsafe
 	|-Unsafe.As<object, object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static ref T Add<T>(ref T source, int elementOffset) { }
 	/* GenericInstMethod :
 	|
@@ -105,7 +105,7 @@ public static class Unsafe
 	|-Unsafe.Add<object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static ref T Add<T>(ref T source, IntPtr elementOffset) { }
 	/* GenericInstMethod :
 	|
@@ -114,7 +114,7 @@ public static class Unsafe
 	|-Unsafe.Add<object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static ref T AddByteOffset<T>(ref T source, IntPtr byteOffset) { }
 	/* GenericInstMethod :
 	|
@@ -123,7 +123,7 @@ public static class Unsafe
 	|-Unsafe.AddByteOffset<object>
 	*/
 
-	[NonVersionableAttribute] 
+	[NonVersionableAttribute]
 	public static IntPtr ByteOffset<T>(ref T origin, ref T target) { }
 	/* GenericInstMethod :
 	|

@@ -1,6 +1,6 @@
 public sealed class Missing : ISerializable // TypeDefIndex: 543
 {
-	public static readonly Missing Value; 
+	public static readonly Missing Value;
 
 
 	private void .ctor() { }

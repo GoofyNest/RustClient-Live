@@ -1,7 +1,7 @@
 public static class IJobParallelForExtensions // TypeDefIndex: 3303
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static JobHandle Schedule<T>(T jobData, int arrayLength, int innerloopBatchCount, JobHandle dependsOn) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +12,7 @@ public static class IJobParallelForExtensions // TypeDefIndex: 3303
 
 internal struct IJobParallelForExtensions.ParallelForJobStruct<T> // TypeDefIndex: 3304
 {
-	public static IntPtr jobReflectionData; 
+	public static IntPtr jobReflectionData;
 
 
 	public static IntPtr Initialize() { }

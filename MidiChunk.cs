@@ -1,14 +1,14 @@
-public abstract class MidiChunk // TypeDefIndex: 7524
+public abstract class MidiChunk // TypeDefIndex: 7526
 {
-	[CompilerGeneratedAttribute] 
-	private readonly string <ChunkId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly string <ChunkId>k__BackingField;
 
 	public string ChunkId { get; }
 
 
 	protected void .ctor(string id) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ChunkId() { }
 
 	internal void Read(MidiReader reader, ReadingSettings settings) { }

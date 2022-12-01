@@ -1,7 +1,7 @@
-public struct uint2 : IEquatable<uint2>, IFormattable // TypeDefIndex: 7154
+public struct uint2 : IEquatable<uint2>, IFormattable // TypeDefIndex: 7156
 {
-	public uint x; 
-	public uint y; 
+	public uint x;
+	public uint y;
 
 
 	public void .ctor(uint x, uint y) { }

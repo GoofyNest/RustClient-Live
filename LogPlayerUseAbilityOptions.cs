@@ -1,13 +1,13 @@
-public struct LogPlayerUseAbilityOptions // TypeDefIndex: 9783
+public struct LogPlayerUseAbilityOptions // TypeDefIndex: 9785
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <PlayerHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AbilityId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AbilityDurationMs>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AbilityCooldownMs>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <PlayerHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AbilityId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AbilityDurationMs>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AbilityCooldownMs>k__BackingField;
 
 	public IntPtr PlayerHandle { get; set; }
 	public uint AbilityId { get; set; }
@@ -15,28 +15,28 @@ public struct LogPlayerUseAbilityOptions // TypeDefIndex: 9783
 	public uint AbilityCooldownMs { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_PlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AbilityId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AbilityId(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AbilityDurationMs() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AbilityDurationMs(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AbilityCooldownMs() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AbilityCooldownMs(uint value) { }
 
 }

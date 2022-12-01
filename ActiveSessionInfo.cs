@@ -1,13 +1,13 @@
-public struct ActiveSessionInfo // TypeDefIndex: 8456
+public struct ActiveSessionInfo // TypeDefIndex: 8458
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnlineSessionState <State>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SessionDetailsInfo> <SessionDetails>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnlineSessionState <State>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SessionDetailsInfo> <SessionDetails>k__BackingField;
 
 	public Utf8String SessionName { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -15,28 +15,28 @@ public struct ActiveSessionInfo // TypeDefIndex: 8456
 	public Nullable<SessionDetailsInfo> SessionDetails { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnlineSessionState get_State() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_State(OnlineSessionState value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SessionDetailsInfo> get_SessionDetails() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionDetails(Nullable<SessionDetailsInfo> value) { }
 
 	internal void Set(ref ActiveSessionInfoInternal other) { }

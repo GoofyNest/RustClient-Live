@@ -1,8 +1,8 @@
 public sealed class InstanceDescriptor // TypeDefIndex: 2787
 {
-	private MemberInfo member; 
-	private ICollection arguments; 
-	private bool isComplete; 
+	private MemberInfo member;
+	private ICollection arguments;
+	private bool isComplete;
 
 
 	public void .ctor(MemberInfo member, ICollection arguments) { }

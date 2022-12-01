@@ -1,10 +1,10 @@
 internal class MD4Managed : MD4 // TypeDefIndex: 69
 {
-	private uint[] state; 
-	private byte[] buffer; 
-	private uint[] count; 
-	private uint[] x; 
-	private byte[] digest; 
+	private uint[] state;
+	private byte[] buffer;
+	private uint[] count;
+	private uint[] x;
+	private byte[] digest;
 
 
 	public void .ctor() { }
@@ -41,11 +41,11 @@ internal class MD4Managed : MD4 // TypeDefIndex: 69
 
 public class MD4Managed : MD4 // TypeDefIndex: 1756
 {
-	private uint[] state; 
-	private byte[] buffer; 
-	private uint[] count; 
-	private uint[] x; 
-	private byte[] digest; 
+	private uint[] state;
+	private byte[] buffer;
+	private uint[] count;
+	private uint[] x;
+	private byte[] digest;
 
 
 	public void .ctor() { }

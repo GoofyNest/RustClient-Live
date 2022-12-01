@@ -1,8 +1,8 @@
-public class FirstPersonEffect : MonoBehaviour, IEffect, IPrefabPreProcess // TypeDefIndex: 11082
+public class FirstPersonEffect : MonoBehaviour, IEffect, IPrefabPreProcess // TypeDefIndex: 11088
 {
-	public bool isGunShot; 
-	[HideInInspector] 
-	public EffectParentToWeaponBone parentToWeaponComponent; 
+	public bool isGunShot;
+	[HideInInspector]
+	public EffectParentToWeaponBone parentToWeaponComponent;
 
 
 	private BaseViewModel GetViewModel(Effect effect) { }

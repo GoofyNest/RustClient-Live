@@ -1,155 +1,155 @@
-public class OQQCCQCDQQ : MonoBehaviour // TypeDefIndex: 7283
+public class OQQCCQCDQQ : MonoBehaviour // TypeDefIndex: 7285
 {
-	[HideInInspector] 
-	public QDQDOOQQDQODD roadType; 
-	[HideInInspector] 
-	public double roadTypeID; 
-	[HideInInspector] 
-	public int roadTypeIndex; 
-	[HideInInspector] 
-	public int geometryType; 
-	[HideInInspector] 
-	public ERExitType exitType; 
-	[HideInInspector] 
-	public float offset; 
-	[HideInInspector] 
-	public int halfwayIndex; 
-	[HideInInspector] 
-	public int startSplineIndex; 
-	[HideInInspector] 
-	public int endSplineIndex; 
-	[HideInInspector] 
-	public Vector3 endSplinePointRight; 
-	[HideInInspector] 
-	public Vector3 endSplinePointLeft; 
-	[HideInInspector] 
-	public float startDistance; 
-	[HideInInspector] 
-	public float endDistance; 
-	[HideInInspector] 
-	public int markerIndex; 
-	[HideInInspector] 
-	public int extrusionType; 
-	[HideInInspector] 
-	public AnimationCurve extrusionCurve; 
-	[HideInInspector] 
-	public float extrusionDistance; 
-	[HideInInspector] 
-	public int startDistanceIndex; 
-	[HideInInspector] 
-	public float startDecalDistance; 
-	[HideInInspector] 
-	public float fixedDistance; 
-	[HideInInspector] 
-	public int fixedDistanceIndex; 
-	[HideInInspector] 
-	public float splitDistance; 
-	[HideInInspector] 
-	public AnimationCurve splitCurve; 
-	[HideInInspector] 
-	public float splitEndWidth; 
-	[HideInInspector] 
-	public float connectionAngle; 
-	[HideInInspector] 
-	public float connectionRadius; 
-	[HideInInspector] 
-	public ERModularRoad road; 
-	[HideInInspector] 
-	public ERCrossingPrefabs connector; 
-	[HideInInspector] 
-	public Vector3 connectionHandlePosition; 
-	[HideInInspector] 
-	public Vector3 OCODOQDODQ; 
-	[HideInInspector] 
-	public Vector3 handleDirection; 
-	[HideInInspector] 
-	public GameObject surfaceMesh; 
-	[HideInInspector] 
-	public GameObject exitSignObject; 
-	[HideInInspector] 
-	public float exitSignObjectOffset; 
-	[HideInInspector] 
-	public GameObject exitSignObjectInstance; 
-	[HideInInspector] 
-	public GameObject exitSplitSpawnObject; 
-	[HideInInspector] 
-	public int exitSplitSpawnType; 
-	[HideInInspector] 
-	public float exitSplitSpawnDistance; 
-	[HideInInspector] 
-	public float exitSplitSpawnStartOffset; 
-	[HideInInspector] 
-	public float exitSplitSpawnOffset; 
-	[HideInInspector] 
-	public float exitSplitSpawnObjectBounds; 
-	[HideInInspector] 
-	public List<GameObject> spawnedSplitObjects; 
-	[HideInInspector] 
-	public List<Vector3> soPointsRightStart; 
-	[HideInInspector] 
-	public int soRightSplitEndIndex; 
-	[HideInInspector] 
-	public List<Vector3> soPointsLeftStart; 
-	[HideInInspector] 
-	public int startLineMarkingDecal; 
-	[HideInInspector] 
-	public bool startDecalFoldout; 
-	[HideInInspector] 
-	public int splitLineMarkingDecal1; 
-	[HideInInspector] 
-	public bool splitDecal1Foldout; 
-	[HideInInspector] 
-	public int splitLineMarkingDecal2; 
-	[HideInInspector] 
-	public bool splitDecal2Foldout; 
-	[HideInInspector] 
-	public List<Vector3> edgeVecs; 
-	[HideInInspector] 
-	public List<Vector3> vecs; 
-	[HideInInspector] 
-	public List<Vector2> uvsArray; 
-	[HideInInspector] 
-	public List<Vector2> uvsArray2; 
-	[HideInInspector] 
-	public List<Color> customColors; 
-	[HideInInspector] 
-	public List<Color> colors; 
-	[HideInInspector] 
-	public List<int> tris; 
-	[HideInInspector] 
-	private int ᙃ; 
-	[HideInInspector] 
-	private int ᙄ; 
-	[HideInInspector] 
-	private int ᙅ; 
-	[HideInInspector] 
-	private List<Vector3> 4AAAA; 
-	[HideInInspector] 
-	private List<Vector3> 5AAA1; 
-	[HideInInspector] 
-	private List<Vector3> 6AAAA; 
-	[HideInInspector] 
-	private List<float> 7AAA1; 
-	[HideInInspector] 
-	private List<Vector3> 8AAAA; 
-	[HideInInspector] 
-	private Vector3 9AAA1; 
-	[HideInInspector] 
-	private float BAAAA; 
-	[HideInInspector] 
-	private float CAAA1; 
-	[HideInInspector] 
-	private float 00AAA; 
-	[HideInInspector] 
-	private float 10AA1; 
-	[HideInInspector] 
-	private int 20AAA; 
-	[HideInInspector] 
-	private int 30AA1; 
-	[HideInInspector] 
-	public List<Vector3> treeVecs; 
-	[HideInInspector] 
-	public List<Vector3> detailVecs; 
+	[HideInInspector]
+	public QDQDOOQQDQODD roadType;
+	[HideInInspector]
+	public double roadTypeID;
+	[HideInInspector]
+	public int roadTypeIndex;
+	[HideInInspector]
+	public int geometryType;
+	[HideInInspector]
+	public ERExitType exitType;
+	[HideInInspector]
+	public float offset;
+	[HideInInspector]
+	public int halfwayIndex;
+	[HideInInspector]
+	public int startSplineIndex;
+	[HideInInspector]
+	public int endSplineIndex;
+	[HideInInspector]
+	public Vector3 endSplinePointRight;
+	[HideInInspector]
+	public Vector3 endSplinePointLeft;
+	[HideInInspector]
+	public float startDistance;
+	[HideInInspector]
+	public float endDistance;
+	[HideInInspector]
+	public int markerIndex;
+	[HideInInspector]
+	public int extrusionType;
+	[HideInInspector]
+	public AnimationCurve extrusionCurve;
+	[HideInInspector]
+	public float extrusionDistance;
+	[HideInInspector]
+	public int startDistanceIndex;
+	[HideInInspector]
+	public float startDecalDistance;
+	[HideInInspector]
+	public float fixedDistance;
+	[HideInInspector]
+	public int fixedDistanceIndex;
+	[HideInInspector]
+	public float splitDistance;
+	[HideInInspector]
+	public AnimationCurve splitCurve;
+	[HideInInspector]
+	public float splitEndWidth;
+	[HideInInspector]
+	public float connectionAngle;
+	[HideInInspector]
+	public float connectionRadius;
+	[HideInInspector]
+	public ERModularRoad road;
+	[HideInInspector]
+	public ERCrossingPrefabs connector;
+	[HideInInspector]
+	public Vector3 connectionHandlePosition;
+	[HideInInspector]
+	public Vector3 OCODOQDODQ;
+	[HideInInspector]
+	public Vector3 handleDirection;
+	[HideInInspector]
+	public GameObject surfaceMesh;
+	[HideInInspector]
+	public GameObject exitSignObject;
+	[HideInInspector]
+	public float exitSignObjectOffset;
+	[HideInInspector]
+	public GameObject exitSignObjectInstance;
+	[HideInInspector]
+	public GameObject exitSplitSpawnObject;
+	[HideInInspector]
+	public int exitSplitSpawnType;
+	[HideInInspector]
+	public float exitSplitSpawnDistance;
+	[HideInInspector]
+	public float exitSplitSpawnStartOffset;
+	[HideInInspector]
+	public float exitSplitSpawnOffset;
+	[HideInInspector]
+	public float exitSplitSpawnObjectBounds;
+	[HideInInspector]
+	public List<GameObject> spawnedSplitObjects;
+	[HideInInspector]
+	public List<Vector3> soPointsRightStart;
+	[HideInInspector]
+	public int soRightSplitEndIndex;
+	[HideInInspector]
+	public List<Vector3> soPointsLeftStart;
+	[HideInInspector]
+	public int startLineMarkingDecal;
+	[HideInInspector]
+	public bool startDecalFoldout;
+	[HideInInspector]
+	public int splitLineMarkingDecal1;
+	[HideInInspector]
+	public bool splitDecal1Foldout;
+	[HideInInspector]
+	public int splitLineMarkingDecal2;
+	[HideInInspector]
+	public bool splitDecal2Foldout;
+	[HideInInspector]
+	public List<Vector3> edgeVecs;
+	[HideInInspector]
+	public List<Vector3> vecs;
+	[HideInInspector]
+	public List<Vector2> uvsArray;
+	[HideInInspector]
+	public List<Vector2> uvsArray2;
+	[HideInInspector]
+	public List<Color> customColors;
+	[HideInInspector]
+	public List<Color> colors;
+	[HideInInspector]
+	public List<int> tris;
+	[HideInInspector]
+	private int ᙃ;
+	[HideInInspector]
+	private int ᙄ;
+	[HideInInspector]
+	private int ᙅ;
+	[HideInInspector]
+	private List<Vector3> 4AAAA;
+	[HideInInspector]
+	private List<Vector3> 5AAA1;
+	[HideInInspector]
+	private List<Vector3> 6AAAA;
+	[HideInInspector]
+	private List<float> 7AAA1;
+	[HideInInspector]
+	private List<Vector3> 8AAAA;
+	[HideInInspector]
+	private Vector3 9AAA1;
+	[HideInInspector]
+	private float BAAAA;
+	[HideInInspector]
+	private float CAAA1;
+	[HideInInspector]
+	private float 00AAA;
+	[HideInInspector]
+	private float 10AA1;
+	[HideInInspector]
+	private int 20AAA;
+	[HideInInspector]
+	private int 30AA1;
+	[HideInInspector]
+	public List<Vector3> treeVecs;
+	[HideInInspector]
+	public List<Vector3> detailVecs;
 
 
 	public static void OOOCDQDQDC(List<ERMarkerExt> markers, List<OQQCCQCDQQ> exitRoads, ref List<Vector3> splinePoints, ref List<float> tValues) { }

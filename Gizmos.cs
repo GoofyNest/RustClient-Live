@@ -4,28 +4,28 @@ public sealed class Gizmos // TypeDefIndex: 3380
 	public static Matrix4x4 matrix { get; set; }
 
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawLine(Vector3 from, Vector3 to) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawWireSphere(Vector3 center, float radius) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawSphere(Vector3 center, float radius) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawWireCube(Vector3 center, Vector3 size) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawCube(Vector3 center, Vector3 size) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawMesh(Mesh mesh, int submeshIndex, Vector3 position, Quaternion rotation, Vector3 scale) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawIcon(Vector3 center, string name, bool allowScaling) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	public static void DrawIcon(Vector3 center, string name, bool allowScaling, Color tint) { }
 
 	public static Color get_color() { }

@@ -1,17 +1,17 @@
-public class WebSocketException : Exception // TypeDefIndex: 6967
+public class WebSocketException : Exception // TypeDefIndex: 6969
 {
-	[CompilerGeneratedAttribute] 
-	private ushort <StatusCode>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ushort <StatusCode>k__BackingField;
 
 	public ushort StatusCode { get; set; }
 
 
 	public void .ctor(ushort statusCode) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_StatusCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_StatusCode(ushort value) { }
 
 }

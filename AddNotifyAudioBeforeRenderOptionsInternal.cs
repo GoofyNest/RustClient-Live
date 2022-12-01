@@ -1,9 +1,9 @@
-internal struct AddNotifyAudioBeforeRenderOptionsInternal : ISettable<AddNotifyAudioBeforeRenderOptions>, IDisposable // TypeDefIndex: 8641
+internal struct AddNotifyAudioBeforeRenderOptionsInternal : ISettable<AddNotifyAudioBeforeRenderOptions>, IDisposable // TypeDefIndex: 8643
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private int m_UnmixedAudio; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private int m_UnmixedAudio;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String RoomName { set; }

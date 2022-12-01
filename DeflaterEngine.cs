@@ -1,29 +1,29 @@
-internal class DeflaterEngine : DeflaterConstants // TypeDefIndex: 5666
+internal class DeflaterEngine : DeflaterConstants // TypeDefIndex: 5668
 {
-	private static int TOO_FAR; 
-	private int ins_h; 
-	private short[] head; 
-	private short[] prev; 
-	private int matchStart; 
-	private int matchLen; 
-	private bool prevAvailable; 
-	private int blockStart; 
-	private int strstart; 
-	private int lookahead; 
-	private byte[] window; 
-	private DeflateStrategy strategy; 
-	private int max_chain; 
-	private int max_lazy; 
-	private int niceLength; 
-	private int goodLength; 
-	private int comprFunc; 
-	private byte[] inputBuf; 
-	private int totalIn; 
-	private int inputOff; 
-	private int inputEnd; 
-	private DeflaterPending pending; 
-	private DeflaterHuffman huffman; 
-	private Adler32 adler; 
+	private static int TOO_FAR;
+	private int ins_h;
+	private short[] head;
+	private short[] prev;
+	private int matchStart;
+	private int matchLen;
+	private bool prevAvailable;
+	private int blockStart;
+	private int strstart;
+	private int lookahead;
+	private byte[] window;
+	private DeflateStrategy strategy;
+	private int max_chain;
+	private int max_lazy;
+	private int niceLength;
+	private int goodLength;
+	private int comprFunc;
+	private byte[] inputBuf;
+	private int totalIn;
+	private int inputOff;
+	private int inputEnd;
+	private DeflaterPending pending;
+	private DeflaterHuffman huffman;
+	private Adler32 adler;
 
 	public int Adler { get; }
 	public int TotalIn { get; }

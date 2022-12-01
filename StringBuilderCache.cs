@@ -1,7 +1,7 @@
 internal static class StringBuilderCache // TypeDefIndex: 464
 {
-	[ThreadStaticAttribute] 
-	private static StringBuilder CachedInstance; 
+	[ThreadStaticAttribute]
+	private static StringBuilder CachedInstance;
 
 
 	public static StringBuilder Acquire(int capacity = 16) { }

@@ -1,9 +1,9 @@
 public class RIPEMD160Managed : RIPEMD160 // TypeDefIndex: 980
 {
-	private byte[] _buffer; 
-	private long _count; 
-	private uint[] _stateMD160; 
-	private uint[] _blockDWords; 
+	private byte[] _buffer;
+	private long _count;
+	private uint[] _stateMD160;
+	private uint[] _blockDWords;
 
 
 	public void .ctor() { }

@@ -1,15 +1,15 @@
-public class ShopFrontLootPanel : LootPanel // TypeDefIndex: 10394
+public class ShopFrontLootPanel : LootPanel // TypeDefIndex: 10398
 {
-	public Text playerLabelA; 
-	public Text playerLabelB; 
-	public GameObject confirmButton; 
-	public GameObject confirmHelp; 
-	public GameObject denyButton; 
-	public GameObject denyHelp; 
-	public GameObject waitingText; 
-	public GameObject exchangeInProgressImage; 
-	public Translate.Phrase acceptedPhrase; 
-	public Translate.Phrase noOnePhrase; 
+	public Text playerLabelA;
+	public Text playerLabelB;
+	public GameObject confirmButton;
+	public GameObject confirmHelp;
+	public GameObject denyButton;
+	public GameObject denyHelp;
+	public GameObject waitingText;
+	public GameObject exchangeInProgressImage;
+	public Translate.Phrase acceptedPhrase;
+	public Translate.Phrase noOnePhrase;
 
 
 	public ShopFront GetShopfront() { }

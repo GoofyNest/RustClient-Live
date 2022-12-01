@@ -1,10 +1,10 @@
 internal sealed class NfaContentValidator : ContentValidator // TypeDefIndex: 2170
 {
-	private BitSet firstpos; 
-	private BitSet[] followpos; 
-	private SymbolsDictionary symbols; 
-	private Positions positions; 
-	private int endMarkerPos; 
+	private BitSet firstpos;
+	private BitSet[] followpos;
+	private SymbolsDictionary symbols;
+	private Positions positions;
+	private int endMarkerPos;
 
 
 	internal void .ctor(BitSet firstpos, BitSet[] followpos, SymbolsDictionary symbols, Positions positions, int endMarkerPos, XmlSchemaContentType contentType, bool isOpen, bool isEmptiable) { }

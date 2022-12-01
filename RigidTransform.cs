@@ -1,8 +1,8 @@
-public struct RigidTransform // TypeDefIndex: 7153
+public struct RigidTransform // TypeDefIndex: 7155
 {
-	public quaternion rot; 
-	public float3 pos; 
-	public static readonly RigidTransform identity; 
+	public quaternion rot;
+	public float3 pos;
+	public static readonly RigidTransform identity;
 
 
 	public void .ctor(quaternion rotation, float3 translation) { }

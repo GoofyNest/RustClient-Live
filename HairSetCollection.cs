@@ -1,10 +1,10 @@
-public class HairSetCollection : ScriptableObject // TypeDefIndex: 12486
+public class HairSetCollection : ScriptableObject // TypeDefIndex: 12494
 {
-	public HairSetCollection.HairSetEntry[] Head; 
-	public HairSetCollection.HairSetEntry[] Eyebrow; 
-	public HairSetCollection.HairSetEntry[] Facial; 
-	public HairSetCollection.HairSetEntry[] Armpit; 
-	public HairSetCollection.HairSetEntry[] Pubic; 
+	public HairSetCollection.HairSetEntry[] Head;
+	public HairSetCollection.HairSetEntry[] Eyebrow;
+	public HairSetCollection.HairSetEntry[] Facial;
+	public HairSetCollection.HairSetEntry[] Armpit;
+	public HairSetCollection.HairSetEntry[] Pubic;
 
 
 	public HairSetCollection.HairSetEntry[] GetListByType(HairType hairType) { }
@@ -19,11 +19,11 @@ public class HairSetCollection : ScriptableObject // TypeDefIndex: 12486
 
 }
 
-public struct HairSetCollection.HairSetEntry // TypeDefIndex: 12487
+public struct HairSetCollection.HairSetEntry // TypeDefIndex: 12495
 {
-	public HairSet HairSet; 
-	public GameObjectRef HairPrefab; 
-	public HairDyeCollection HairDyeCollection; 
+	public HairSet HairSet;
+	public GameObjectRef HairPrefab;
+	public HairDyeCollection HairDyeCollection;
 
 }
 

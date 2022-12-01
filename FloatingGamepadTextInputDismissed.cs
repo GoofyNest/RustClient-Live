@@ -1,6 +1,6 @@
-internal struct FloatingGamepadTextInputDismissed_t : ICallbackData // TypeDefIndex: 5340
+internal struct FloatingGamepadTextInputDismissed_t : ICallbackData // TypeDefIndex: 5342
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

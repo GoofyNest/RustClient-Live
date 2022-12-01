@@ -1,6 +1,6 @@
 internal enum FunctionId // TypeDefIndex: 4265
 {
-	public int value__; 
+	public int value__;
 	public const FunctionId none = -1;
 	public const FunctionId Ascii = 0;
 	public const FunctionId Char = 1;

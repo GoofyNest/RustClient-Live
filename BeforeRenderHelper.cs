@@ -1,6 +1,6 @@
 internal static class BeforeRenderHelper // TypeDefIndex: 3382
 {
-	private static List<BeforeRenderHelper.OrderBlock> s_OrderBlocks; 
+	private static List<BeforeRenderHelper.OrderBlock> s_OrderBlocks;
 
 
 	private static int GetUpdateOrder(UnityAction callback) { }
@@ -17,8 +17,8 @@ internal static class BeforeRenderHelper // TypeDefIndex: 3382
 
 private struct BeforeRenderHelper.OrderBlock // TypeDefIndex: 3383
 {
-	internal int order; 
-	internal UnityAction callback; 
+	internal int order;
+	internal UnityAction callback;
 
 }
 

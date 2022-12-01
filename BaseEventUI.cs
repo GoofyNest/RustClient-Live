@@ -1,28 +1,28 @@
-public class BaseEventUI : MonoBehaviour // TypeDefIndex: 12543
+public class BaseEventUI : MonoBehaviour // TypeDefIndex: 12556
 {
-	[HideInInspector] 
-	public AIEventType EventType; 
-	public RustText TextEventType; 
-	public RustText TextOutput; 
-	public RustButton ToggleInvert; 
-	public Dropdown DropdownInputMemorySlot; 
-	public Dropdown DropdownOutputMemorySlot; 
-	public RustInput InputFloatValue; 
-	public RustInput InputFloatValue2; 
-	[HideInInspector] 
-	public BaseStateUI Output; 
-	[CompilerGeneratedAttribute] 
-	private int <ID>k__BackingField; 
-	private BaseStateUI stateUI; 
-	private Color outputColor; 
+	[HideInInspector]
+	public AIEventType EventType;
+	public RustText TextEventType;
+	public RustText TextOutput;
+	public RustButton ToggleInvert;
+	public Dropdown DropdownInputMemorySlot;
+	public Dropdown DropdownOutputMemorySlot;
+	public RustInput InputFloatValue;
+	public RustInput InputFloatValue2;
+	[HideInInspector]
+	public BaseStateUI Output;
+	[CompilerGeneratedAttribute]
+	private int <ID>k__BackingField;
+	private BaseStateUI stateUI;
+	private Color outputColor;
 
 	public int ID { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ID(int value) { }
 
 	public virtual void Init(AIEventType eventType, BaseStateUI stateUI) { }

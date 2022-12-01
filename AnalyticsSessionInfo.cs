@@ -1,17 +1,17 @@
 public static class AnalyticsSessionInfo // TypeDefIndex: 4753
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static AnalyticsSessionInfo.SessionStateChanged sessionStateChanged; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static AnalyticsSessionInfo.IdentityTokenChanged identityTokenChanged; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static AnalyticsSessionInfo.SessionStateChanged sessionStateChanged;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static AnalyticsSessionInfo.IdentityTokenChanged identityTokenChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void CallSessionStateChanged(AnalyticsSessionState sessionState, long sessionId, long sessionElapsedTime, bool sessionChanged) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void CallIdentityTokenChanged(string token) { }
 
 }

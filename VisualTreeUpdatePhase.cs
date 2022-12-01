@@ -1,6 +1,6 @@
 internal enum VisualTreeUpdatePhase // TypeDefIndex: 4622
 {
-	public int value__; 
+	public int value__;
 	public const VisualTreeUpdatePhase ViewData = 0;
 	public const VisualTreeUpdatePhase Bindings = 1;
 	public const VisualTreeUpdatePhase Animation = 2;

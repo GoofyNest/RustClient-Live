@@ -1,6 +1,6 @@
 public class CaseInsensitiveComparer : IComparer // TypeDefIndex: 1382
 {
-	private CompareInfo m_compareInfo; 
+	private CompareInfo m_compareInfo;
 
 	public static CaseInsensitiveComparer Default { get; }
 

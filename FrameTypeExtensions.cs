@@ -1,7 +1,7 @@
-public static class FrameTypeExtensions // TypeDefIndex: 6945
+public static class FrameTypeExtensions // TypeDefIndex: 6947
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsDefined(FrameType type) { }
 
 }

@@ -1,7 +1,7 @@
-public class BaseFishNPC : BaseNpc, IAIAttack, IAISenses // TypeDefIndex: 10041
+public class BaseFishNPC : BaseNpc, IAIAttack, IAISenses // TypeDefIndex: 10043
 {
-	private Option __menuOption_MenuDesignAI; 
-	protected FishBrain brain; 
+	private Option __menuOption_MenuDesignAI;
+	protected FishBrain brain;
 
 	public override bool HasMenuOptions { get; }
 
@@ -10,9 +10,9 @@ public class BaseFishNPC : BaseNpc, IAIAttack, IAISenses // TypeDefIndex: 10041
 
 	public override bool get_HasMenuOptions() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDesignAI(BasePlayer ply) { }
 
 	public bool CanDesignAI(BasePlayer player) { }

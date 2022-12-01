@@ -1,6 +1,6 @@
-internal enum ParserTimeZone // TypeDefIndex: 5922
+internal enum ParserTimeZone // TypeDefIndex: 5924
 {
-	public int value__; 
+	public int value__;
 	public const ParserTimeZone Unspecified = 0;
 	public const ParserTimeZone Utc = 1;
 	public const ParserTimeZone LocalWestOfUtc = 2;

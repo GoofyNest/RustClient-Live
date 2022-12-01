@@ -1,7 +1,7 @@
-internal struct CopyLobbyDetailsHandleByUiEventIdOptionsInternal : ISettable<CopyLobbyDetailsHandleByUiEventIdOptions>, IDisposable // TypeDefIndex: 9086
+internal struct CopyLobbyDetailsHandleByUiEventIdOptionsInternal : ISettable<CopyLobbyDetailsHandleByUiEventIdOptions>, IDisposable // TypeDefIndex: 9088
 {
-	private int m_ApiVersion; 
-	private ulong m_UiEventId; 
+	private int m_ApiVersion;
+	private ulong m_UiEventId;
 
 	public ulong UiEventId { set; }
 

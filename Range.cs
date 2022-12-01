@@ -1,8 +1,8 @@
 internal struct Range // TypeDefIndex: 4288
 {
-	private int _min; 
-	private int _max; 
-	private bool _isNotNull; 
+	private int _min;
+	private int _max;
+	private bool _isNotNull;
 
 	public int Count { get; }
 	public bool IsNull { get; }

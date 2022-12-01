@@ -1,13 +1,13 @@
-public class Telephone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6397
+public class Telephone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6399
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int lastNumber; 
-	public int phoneNumber; 
-	public uint usingPlayer; 
-	public string phoneName; 
-	public PhoneDirectory savedNumbers; 
-	public List<VoicemailEntry> voicemail; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int lastNumber;
+	public int phoneNumber;
+	public uint usingPlayer;
+	public string phoneName;
+	public PhoneDirectory savedNumbers;
+	public List<VoicemailEntry> voicemail;
 
 
 	public static void ResetToPool(Telephone instance) { }
@@ -64,26 +64,26 @@ public class Telephone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6397
 
 }
 
-public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 10180
+public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 10182
 {
-	private Option __menuOption_Menu_Answer; 
-	private Option __menuOption_Menu_MakeCall; 
+	private Option __menuOption_Menu_Answer;
+	private Option __menuOption_Menu_MakeCall;
 	public const int MaxPhoneNameLength = 20;
 	public const int MaxSavedNumbers = 10;
-	public Transform PhoneHotspot; 
-	public Transform AnsweringMachineHotspot; 
-	public Transform[] HandsetRoots; 
-	public ItemDefinition[] ValidCassettes; 
-	public Transform ParentedHandsetTransform; 
-	public LineRenderer CableLineRenderer; 
-	public Transform CableStartPoint; 
-	public Transform CableEndPoint; 
-	public float LineDroopAmount; 
-	[CompilerGeneratedAttribute] 
-	private Cassette <cachedCassette>k__BackingField; 
-	public PhoneController Controller; 
-	private Vector3[] cablePoints; 
-	private static Telephone.CensoredNumbers censoredNumbers; 
+	public Transform PhoneHotspot;
+	public Transform AnsweringMachineHotspot;
+	public Transform[] HandsetRoots;
+	public ItemDefinition[] ValidCassettes;
+	public Transform ParentedHandsetTransform;
+	public LineRenderer CableLineRenderer;
+	public Transform CableStartPoint;
+	public Transform CableEndPoint;
+	public float LineDroopAmount;
+	[CompilerGeneratedAttribute]
+	private Cassette <cachedCassette>k__BackingField;
+	public PhoneController Controller;
+	private Vector3[] cablePoints;
+	private static Telephone.CensoredNumbers censoredNumbers;
 
 	public override bool HasMenuOptions { get; }
 	public Cassette cachedCassette { get; set; }
@@ -98,29 +98,29 @@ public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 101
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Cassette get_cachedCassette() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_cachedCassette(Cassette value) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_MakeCall(BasePlayer player) { }
 
 	private void DelayedViewModelDeploy() { }
 
 	public void HolsterViewmodel() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Answer(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void SetClientState(BaseEntity.RPCMessage msg) { }
 
 	private void LateUpdate() { }
@@ -137,30 +137,30 @@ public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 101
 
 	public override bool ShouldShowLootMenus() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void ClientOnDialFailed(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ClientReceiveAnsweringData(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ClientPlayAnsweringMessage(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void OnIncomingCallDuringCall() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void OnReceivedVoice(BaseEntity.RPCMessage msg) { }
 
 	public void OnLoadedWithCassette(Cassette c) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void ClientOnCassetteChanged(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ReceivePhoneDirectory(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ClientToggleVoicemail(BaseEntity.RPCMessage msg) { }
 
 	public void OnCensorRecordingsChanged() { }
@@ -191,9 +191,9 @@ public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 101
 
 }
 
-public enum Telephone.CallState // TypeDefIndex: 10181
+public enum Telephone.CallState // TypeDefIndex: 10183
 {
-	public int value__; 
+	public int value__;
 	public const Telephone.CallState Idle = 0;
 	public const Telephone.CallState Dialing = 1;
 	public const Telephone.CallState Ringing = 2;
@@ -201,9 +201,9 @@ public enum Telephone.CallState // TypeDefIndex: 10181
 
 }
 
-public enum Telephone.DialFailReason // TypeDefIndex: 10182
+public enum Telephone.DialFailReason // TypeDefIndex: 10184
 {
-	public int value__; 
+	public int value__;
 	public const Telephone.DialFailReason TimedOut = 0;
 	public const Telephone.DialFailReason Engaged = 1;
 	public const Telephone.DialFailReason WrongNumber = 2;
@@ -215,10 +215,10 @@ public enum Telephone.DialFailReason // TypeDefIndex: 10182
 
 }
 
-private class Telephone.CensoredNumbers // TypeDefIndex: 10183
+private class Telephone.CensoredNumbers // TypeDefIndex: 10185
 {
-	public List<int> numbers; 
-	public int saveVersion; 
+	public List<int> numbers;
+	public int saveVersion;
 
 
 	public void .ctor() { }

@@ -1,7 +1,7 @@
 public abstract class DecoderFallbackBuffer // TypeDefIndex: 440
 {
-	internal byte* byteStart; 
-	internal char* charEnd; 
+	internal byte* byteStart;
+	internal char* charEnd;
 
 	public abstract int Remaining { get; }
 

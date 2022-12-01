@@ -1,4 +1,4 @@
-public sealed class ProgramChangeEvent : ChannelEvent // TypeDefIndex: 7543
+public sealed class ProgramChangeEvent : ChannelEvent // TypeDefIndex: 7545
 {
 	public SevenBitNumber ProgramNumber { get; }
 

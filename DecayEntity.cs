@@ -1,10 +1,10 @@
-public class DecayEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
+public class DecayEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6344
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float decayTimer; 
-	public uint buildingID; 
-	public float upkeepTimer; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float decayTimer;
+	public uint buildingID;
+	public float upkeepTimer;
 
 
 	public static void ResetToPool(DecayEntity instance) { }
@@ -61,11 +61,11 @@ public class DecayEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class DecayEntity : BaseCombatEntity // TypeDefIndex: 11263
+public class DecayEntity : BaseCombatEntity // TypeDefIndex: 11269
 {
-	public GameObjectRef debrisPrefab; 
-	public uint buildingID; 
-	private Upkeep upkeep; 
+	public GameObjectRef debrisPrefab;
+	public uint buildingID;
+	private Upkeep upkeep;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

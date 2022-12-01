@@ -1,11 +1,11 @@
 internal struct GlyphAdjustmentRecord // TypeDefIndex: 4119
 {
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private uint m_GlyphIndex; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private GlyphValueRecord m_GlyphValueRecord; 
+	[NativeNameAttribute]
+	[SerializeField]
+	private uint m_GlyphIndex;
+	[SerializeField]
+	[NativeNameAttribute]
+	private GlyphValueRecord m_GlyphValueRecord;
 
 	public uint glyphIndex { get; }
 	public GlyphValueRecord glyphValueRecord { get; }

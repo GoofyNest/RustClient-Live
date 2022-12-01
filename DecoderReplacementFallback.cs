@@ -1,6 +1,6 @@
 public sealed class DecoderReplacementFallback : DecoderFallback // TypeDefIndex: 442
 {
-	private string strDefault; 
+	private string strDefault;
 
 	public string DefaultString { get; }
 	public override int MaxCharCount { get; }

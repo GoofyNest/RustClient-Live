@@ -1,11 +1,11 @@
-internal sealed class HeaderChunk : MidiChunk // TypeDefIndex: 7522
+internal sealed class HeaderChunk : MidiChunk // TypeDefIndex: 7524
 {
-	[CompilerGeneratedAttribute] 
-	private ushort <FileFormat>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TimeDivision <TimeDivision>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ushort <TracksNumber>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ushort <FileFormat>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TimeDivision <TimeDivision>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ushort <TracksNumber>k__BackingField;
 
 	public ushort FileFormat { get; set; }
 	public TimeDivision TimeDivision { get; set; }
@@ -14,22 +14,22 @@ internal sealed class HeaderChunk : MidiChunk // TypeDefIndex: 7522
 
 	internal void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_FileFormat() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FileFormat(ushort value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimeDivision get_TimeDivision() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TimeDivision(TimeDivision value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_TracksNumber() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TracksNumber(ushort value) { }
 
 	public override string ToString() { }

@@ -1,6 +1,6 @@
-public enum Layer // TypeDefIndex: 6630
+public enum Layer // TypeDefIndex: 6632
 {
-	public int value__; 
+	public int value__;
 	public const Layer Default = 0;
 	public const Layer TransparentFX = 1;
 	public const Layer Ignore_Raycast = 2;
@@ -36,19 +36,19 @@ public enum Layer // TypeDefIndex: 6630
 
 }
 
-public class Layer : ConsoleSystem // TypeDefIndex: 13728
+public class Layer : ConsoleSystem // TypeDefIndex: 13744
 {
 
-	[ClientVar] 
+	[ClientVar]
 	public static void show(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void hide(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void toggle(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void culling(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }

@@ -1,9 +1,9 @@
 internal sealed class UnitySynchronizationContext : SynchronizationContext // TypeDefIndex: 3539
 {
-	private readonly List<UnitySynchronizationContext.WorkRequest> m_AsyncWorkQueue; 
-	private readonly List<UnitySynchronizationContext.WorkRequest> m_CurrentFrameWork; 
-	private readonly int m_MainThreadID; 
-	private int m_TrackedCount; 
+	private readonly List<UnitySynchronizationContext.WorkRequest> m_AsyncWorkQueue;
+	private readonly List<UnitySynchronizationContext.WorkRequest> m_CurrentFrameWork;
+	private readonly int m_MainThreadID;
+	private int m_TrackedCount;
 
 
 	private void .ctor(int mainThreadID) { }
@@ -24,22 +24,22 @@ internal sealed class UnitySynchronizationContext : SynchronizationContext // Ty
 
 	private bool HasPendingTasks() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InitializeSynchronizationContext() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void ExecuteTasks() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static bool ExecutePendingTasks(long millisecondsTimeout) { }
 
 }
 
 private struct UnitySynchronizationContext.WorkRequest // TypeDefIndex: 3540
 {
-	private readonly SendOrPostCallback m_DelagateCallback; 
-	private readonly object m_DelagateState; 
-	private readonly ManualResetEvent m_WaitHandle; 
+	private readonly SendOrPostCallback m_DelagateCallback;
+	private readonly object m_DelagateState;
+	private readonly ManualResetEvent m_WaitHandle;
 
 
 	public void .ctor(SendOrPostCallback callback, object state, ManualResetEvent waitHandle) { }

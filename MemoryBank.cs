@@ -1,10 +1,10 @@
-public class MemoryBank : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6565
+public class MemoryBank : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6567
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int type; 
-	public int slotCount; 
-	public List<int> slots; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int type;
+	public int slotCount;
+	public List<int> slots;
 
 
 	public static void ResetToPool(MemoryBank instance) { }

@@ -1,4 +1,4 @@
-public static class Os // TypeDefIndex: 5614
+public static class Os // TypeDefIndex: 5616
 {
 
 	public static void OpenFolder(string folder) { }
@@ -9,43 +9,43 @@ public static class Os // TypeDefIndex: 5614
 
 }
 
-internal struct Os.PROCESS_INFORMATION // TypeDefIndex: 5615
+internal struct Os.PROCESS_INFORMATION // TypeDefIndex: 5617
 {
-	public IntPtr hProcess; 
-	public IntPtr hThread; 
-	public int dwProcessId; 
-	public int dwThreadId; 
+	public IntPtr hProcess;
+	public IntPtr hThread;
+	public int dwProcessId;
+	public int dwThreadId;
 
 }
 
-private struct Os.STARTUPINFO // TypeDefIndex: 5616
+private struct Os.STARTUPINFO // TypeDefIndex: 5618
 {
-	public int cb; 
-	public IntPtr lpReserved; 
-	public IntPtr lpDesktop; 
-	public IntPtr lpTitle; 
-	public int dwX; 
-	public int dwY; 
-	public int dwXSize; 
-	public int dwYSize; 
-	public int dwXCountChars; 
-	public int dwYCountChars; 
-	public int dwFillAttribute; 
-	public int dwFlags; 
-	public short wShowWindow; 
-	public short cbReserved2; 
-	public IntPtr lpReserved2; 
-	public IntPtr hStdInput; 
-	public IntPtr hStdOutput; 
-	public IntPtr hStdError; 
+	public int cb;
+	public IntPtr lpReserved;
+	public IntPtr lpDesktop;
+	public IntPtr lpTitle;
+	public int dwX;
+	public int dwY;
+	public int dwXSize;
+	public int dwYSize;
+	public int dwXCountChars;
+	public int dwYCountChars;
+	public int dwFillAttribute;
+	public int dwFlags;
+	public short wShowWindow;
+	public short cbReserved2;
+	public IntPtr lpReserved2;
+	public IntPtr hStdInput;
+	public IntPtr hStdOutput;
+	public IntPtr hStdError;
 
 }
 
-public struct Os.SECURITY_ATTRIBUTES // TypeDefIndex: 5617
+public struct Os.SECURITY_ATTRIBUTES // TypeDefIndex: 5619
 {
-	public int nLength; 
-	public IntPtr lpSecurityDescriptor; 
-	public int bInheritHandle; 
+	public int nLength;
+	public IntPtr lpSecurityDescriptor;
+	public int bInheritHandle;
 
 }
 

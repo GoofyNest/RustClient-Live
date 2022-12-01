@@ -1,33 +1,33 @@
-public struct OnClientIntegrityViolatedCallbackInfo : ICallbackInfo // TypeDefIndex: 9830
+public struct OnClientIntegrityViolatedCallbackInfo : ICallbackInfo // TypeDefIndex: 9832
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatClientViolationType <ViolationType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ViolationMessage>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatClientViolationType <ViolationType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ViolationMessage>k__BackingField;
 
 	public object ClientData { get; set; }
 	public AntiCheatClientViolationType ViolationType { get; set; }
 	public Utf8String ViolationMessage { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatClientViolationType get_ViolationType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ViolationType(AntiCheatClientViolationType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ViolationMessage() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ViolationMessage(Utf8String value) { }
 
 	public Nullable<Result> GetResultCode() { }

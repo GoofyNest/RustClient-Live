@@ -1,6 +1,6 @@
 public enum TypeCode // TypeDefIndex: 404
 {
-	public int value__; 
+	public int value__;
 	public const TypeCode Empty = 0;
 	public const TypeCode Object = 1;
 	public const TypeCode DBNull = 2;

@@ -1,18 +1,18 @@
 public enum EntityHandling // TypeDefIndex: 1838
 {
-	public int value__; 
+	public int value__;
 	public const EntityHandling ExpandEntities = 1;
 	public const EntityHandling ExpandCharEntities = 2;
 
 }
 
-public class EntityTagHeaderValue : ICloneable // TypeDefIndex: 5772
+public class EntityTagHeaderValue : ICloneable // TypeDefIndex: 5774
 {
-	private static readonly EntityTagHeaderValue any; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsWeak>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Tag>k__BackingField; 
+	private static readonly EntityTagHeaderValue any;
+	[CompilerGeneratedAttribute]
+	private bool <IsWeak>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Tag>k__BackingField;
 
 	public bool IsWeak { get; set; }
 	public string Tag { get; set; }
@@ -20,16 +20,16 @@ public class EntityTagHeaderValue : ICloneable // TypeDefIndex: 5772
 
 	internal void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsWeak() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_IsWeak(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Tag() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Tag(string value) { }
 
 	private object System.ICloneable.Clone() { }
@@ -50,121 +50,121 @@ public class EntityTagHeaderValue : ICloneable // TypeDefIndex: 5772
 
 }
 
-public class Entity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6298
+public class Entity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6300
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public BaseNetworkable baseNetworkable; 
-	public BaseEntity baseEntity; 
-	public BasePlayer basePlayer; 
-	public WorldItem worldItem; 
-	public BaseResource resource; 
-	public BuildingBlock buildingBlock; 
-	public Environment environment; 
-	public Corpse corpse; 
-	public ParentInfo parent; 
-	public KeyLock keyLock; 
-	public CodeLock codeLock; 
-	public EntitySlots entitySlots; 
-	public BuildingPrivilege buildingPrivilege; 
-	public StorageBox storageBox; 
-	public HeldEntity heldEntity; 
-	public BaseProjectile baseProjectile; 
-	public BaseNPC baseNPC; 
-	public Loot loot; 
-	public GenericSpawner genericSpawner; 
-	public SleepingBag sleepingBag; 
-	public LootableCorpse lootableCorpse; 
-	public Sign sign; 
-	public BaseCombat baseCombat; 
-	public MapEntity mapEntity; 
-	public ResearchTable researchTable; 
-	public DudExplosive dudExplosive; 
-	public MiningQuarry miningQuarry; 
-	public BaseVehicle baseVehicle; 
-	public Helicopter helicopter; 
-	public Landmine landmine; 
-	public AutoTurret autoturret; 
-	public SphereEntity sphereEntity; 
-	public StabilityEntity stabilityEntity; 
-	public OwnerInfo ownerInfo; 
-	public DecayEntity decayEntity; 
-	public Spawnable spawnable; 
-	public ServerGib servergib; 
-	public VendingMachine vendingMachine; 
-	public SpinnerWheel spinnerWheel; 
-	public Lift lift; 
-	public BradleyAPC bradley; 
-	public WaterWell waterwell; 
-	public Motorboat motorBoat; 
-	public IOEntity ioEntity; 
-	public PuzzleReset puzzleReset; 
-	public RelationshipManager relationshipManager; 
-	public HotAirBalloon hotAirBalloon; 
-	public SAMSite samSite; 
-	public EggHunt eggHunt; 
-	public ArcadeMachine arcadeMachine; 
-	public Minicopter miniCopter; 
-	public Horse horse; 
-	public SmartAlarm smartAlarm; 
-	public LightString lightString; 
-	public LightDeployer lightDeployer; 
-	public RCEntity rcEntity; 
-	public ComputerStation computerStation; 
-	public GrowableEntity growableEntity; 
-	public Composter composter; 
-	public ModularVehicle modularVehicle; 
-	public ModularCar modularCar; 
-	public SimpleUID simpleUID; 
-	public VehicleLift vehicleLift; 
-	public EngineStorage engineStorage; 
-	public VehicleVendor vehicleVendor; 
-	public WaterPool WaterPool; 
-	public Photo photo; 
-	public PhotoFrame photoFrame; 
-	public VehicleModule vehicleModule; 
-	public MixingTable mixingTable; 
-	public ShopKeeper shopKeeper; 
-	public Elevator elevator; 
-	public SkullTrophy skullTrophy; 
-	public Cassette cassette; 
-	public Telephone telephone; 
-	public BoomBox boomBox; 
-	public NeonSign neonSign; 
-	public SubEntityList subEntityList; 
-	public MarketTerminal marketTerminal; 
-	public DeliveryDrone deliveryDrone; 
-	public ReclaimTerminal reclaimTerminal; 
-	public SlotMachine slotMachine; 
-	public TrainEngine trainEngine; 
-	public CardGame cardGame; 
-	public Crane crane; 
-	public ConnectedSpeaker connectedSpeaker; 
-	public AudioEntity audioEntity; 
-	public MicrophoneStand microphoneStand; 
-	public Submarine submarine; 
-	public SleepingBagCamper sleepingBagCamper; 
-	public CamperModule camperModule; 
-	public PaintableSign paintableSign; 
-	public Whitelist whitelist; 
-	public FrankensteinTable FrankensteinTable; 
-	public MLRS mlrs; 
-	public ReclaimManager reclaimManager; 
-	public GameMode gameMode; 
-	public Snowmobile snowmobile; 
-	public bool createdThisFrame; 
-	public PatternFirework patternFirework; 
-	public CargoPlane cargoPlane; 
-	public PaintedItem paintedItem; 
-	public Spray spray; 
-	public BaseTrain baseTrain; 
-	public Zipline zipline; 
-	public ZiplineMountable ziplineMountable; 
-	public ZiplineArrivalPoint ZiplineArrival; 
-	public SprayLine sprayLine; 
-	public CoalingTower coalingTower; 
-	public SimpleFloat simpleFloat; 
-	public BaseOven baseOven; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public BaseNetworkable baseNetworkable;
+	public BaseEntity baseEntity;
+	public BasePlayer basePlayer;
+	public WorldItem worldItem;
+	public BaseResource resource;
+	public BuildingBlock buildingBlock;
+	public Environment environment;
+	public Corpse corpse;
+	public ParentInfo parent;
+	public KeyLock keyLock;
+	public CodeLock codeLock;
+	public EntitySlots entitySlots;
+	public BuildingPrivilege buildingPrivilege;
+	public StorageBox storageBox;
+	public HeldEntity heldEntity;
+	public BaseProjectile baseProjectile;
+	public BaseNPC baseNPC;
+	public Loot loot;
+	public GenericSpawner genericSpawner;
+	public SleepingBag sleepingBag;
+	public LootableCorpse lootableCorpse;
+	public Sign sign;
+	public BaseCombat baseCombat;
+	public MapEntity mapEntity;
+	public ResearchTable researchTable;
+	public DudExplosive dudExplosive;
+	public MiningQuarry miningQuarry;
+	public BaseVehicle baseVehicle;
+	public Helicopter helicopter;
+	public Landmine landmine;
+	public AutoTurret autoturret;
+	public SphereEntity sphereEntity;
+	public StabilityEntity stabilityEntity;
+	public OwnerInfo ownerInfo;
+	public DecayEntity decayEntity;
+	public Spawnable spawnable;
+	public ServerGib servergib;
+	public VendingMachine vendingMachine;
+	public SpinnerWheel spinnerWheel;
+	public Lift lift;
+	public BradleyAPC bradley;
+	public WaterWell waterwell;
+	public Motorboat motorBoat;
+	public IOEntity ioEntity;
+	public PuzzleReset puzzleReset;
+	public RelationshipManager relationshipManager;
+	public HotAirBalloon hotAirBalloon;
+	public SAMSite samSite;
+	public EggHunt eggHunt;
+	public ArcadeMachine arcadeMachine;
+	public Minicopter miniCopter;
+	public Horse horse;
+	public SmartAlarm smartAlarm;
+	public LightString lightString;
+	public LightDeployer lightDeployer;
+	public RCEntity rcEntity;
+	public ComputerStation computerStation;
+	public GrowableEntity growableEntity;
+	public Composter composter;
+	public ModularVehicle modularVehicle;
+	public ModularCar modularCar;
+	public SimpleUID simpleUID;
+	public VehicleLift vehicleLift;
+	public EngineStorage engineStorage;
+	public VehicleVendor vehicleVendor;
+	public WaterPool WaterPool;
+	public Photo photo;
+	public PhotoFrame photoFrame;
+	public VehicleModule vehicleModule;
+	public MixingTable mixingTable;
+	public ShopKeeper shopKeeper;
+	public Elevator elevator;
+	public SkullTrophy skullTrophy;
+	public Cassette cassette;
+	public Telephone telephone;
+	public BoomBox boomBox;
+	public NeonSign neonSign;
+	public SubEntityList subEntityList;
+	public MarketTerminal marketTerminal;
+	public DeliveryDrone deliveryDrone;
+	public ReclaimTerminal reclaimTerminal;
+	public SlotMachine slotMachine;
+	public TrainEngine trainEngine;
+	public CardGame cardGame;
+	public Crane crane;
+	public ConnectedSpeaker connectedSpeaker;
+	public AudioEntity audioEntity;
+	public MicrophoneStand microphoneStand;
+	public Submarine submarine;
+	public SleepingBagCamper sleepingBagCamper;
+	public CamperModule camperModule;
+	public PaintableSign paintableSign;
+	public Whitelist whitelist;
+	public FrankensteinTable FrankensteinTable;
+	public MLRS mlrs;
+	public ReclaimManager reclaimManager;
+	public GameMode gameMode;
+	public Snowmobile snowmobile;
+	public bool createdThisFrame;
+	public PatternFirework patternFirework;
+	public CargoPlane cargoPlane;
+	public PaintedItem paintedItem;
+	public Spray spray;
+	public BaseTrain baseTrain;
+	public Zipline zipline;
+	public ZiplineMountable ziplineMountable;
+	public ZiplineArrivalPoint ZiplineArrival;
+	public SprayLine sprayLine;
+	public CoalingTower coalingTower;
+	public SimpleFloat simpleFloat;
+	public BaseOven baseOven;
 
 
 	public static void ResetToPool(Entity instance) { }
@@ -221,16 +221,16 @@ public class Entity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6298
 
 }
 
-public class EntitySlots : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6303
+public class EntitySlots : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint slotLock; 
-	public uint slotFireMod; 
-	public uint slotUpperModification; 
-	public uint centerDecoration; 
-	public uint lowerCenterDecoration; 
-	public uint storageMonitor; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint slotLock;
+	public uint slotFireMod;
+	public uint slotUpperModification;
+	public uint centerDecoration;
+	public uint lowerCenterDecoration;
+	public uint storageMonitor;
 
 
 	public static void ResetToPool(EntitySlots instance) { }
@@ -287,11 +287,11 @@ public class EntitySlots : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class EntityList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6491
+public class EntityList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6493
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<Entity> entity; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<Entity> entity;
 
 
 	public static void ResetToPool(EntityList instance) { }
@@ -348,11 +348,11 @@ public class EntityList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 649
 
 }
 
-public class EntityIdList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6514
+public class EntityIdList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6516
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<uint> entityIds; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<uint> entityIds;
 
 
 	public static void ResetToPool(EntityIdList instance) { }
@@ -409,9 +409,9 @@ public class EntityIdList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public static class Entity // TypeDefIndex: 6638
+public static class Entity // TypeDefIndex: 6640
 {
-	private static Dictionary<Transform, IEntity> _dict; 
+	private static Dictionary<Transform, IEntity> _dict;
 
 
 	public static void Register(Transform t, IEntity entity) { }
@@ -430,9 +430,9 @@ public static class Entity // TypeDefIndex: 6638
 
 }
 
-public enum EntityType // TypeDefIndex: 11160
+public enum EntityType // TypeDefIndex: 11166
 {
-	public int value__; 
+	public int value__;
 	public const EntityType Player = 1;
 	public const EntityType NPC = 2;
 	public const EntityType WorldItem = 4;
@@ -443,7 +443,7 @@ public enum EntityType // TypeDefIndex: 11160
 
 }
 
-public class EntityCollisionMessage : EntityComponent<BaseEntity> // TypeDefIndex: 11221
+public class EntityCollisionMessage : EntityComponent<BaseEntity> // TypeDefIndex: 11227
 {
 
 	private void OnCollisionEnter(Collision collision) { }
@@ -452,9 +452,9 @@ public class EntityCollisionMessage : EntityComponent<BaseEntity> // TypeDefInde
 
 }
 
-public class EntityComponent<T> : EntityComponentBase // TypeDefIndex: 11222
+public class EntityComponent<T> : EntityComponentBase // TypeDefIndex: 11228
 {
-	private T _baseEntity; 
+	private T _baseEntity;
 
 	protected T baseEntity { get; }
 
@@ -491,7 +491,7 @@ public class EntityComponent<T> : EntityComponentBase // TypeDefIndex: 11222
 
 }
 
-public class EntityComponentBase : BaseMonoBehaviour // TypeDefIndex: 11223
+public class EntityComponentBase : BaseMonoBehaviour // TypeDefIndex: 11229
 {
 	public virtual bool HasMenuOptions { get; }
 
@@ -508,9 +508,9 @@ public class EntityComponentBase : BaseMonoBehaviour // TypeDefIndex: 11223
 
 }
 
-public class EntityDebug : EntityComponent<BaseEntity> // TypeDefIndex: 11224
+public class EntityDebug : EntityComponent<BaseEntity> // TypeDefIndex: 11230
 {
-	internal Stopwatch stopwatch; 
+	internal Stopwatch stopwatch;
 
 
 	private void Update() { }
@@ -519,17 +519,17 @@ public class EntityDebug : EntityComponent<BaseEntity> // TypeDefIndex: 11224
 
 }
 
-public class EntityFlag_Animator : EntityFlag_Toggle // TypeDefIndex: 11225
+public class EntityFlag_Animator : EntityFlag_Toggle // TypeDefIndex: 11231
 {
-	public Animator TargetAnimator; 
-	public string ParamName; 
-	public EntityFlag_Animator.AnimatorMode AnimationMode; 
-	public float FloatOnState; 
-	public float FloatOffState; 
-	public int IntegerOnState; 
-	public int IntegerOffState; 
-	private int cachedHash; 
-	private bool cachedState; 
+	public Animator TargetAnimator;
+	public string ParamName;
+	public EntityFlag_Animator.AnimatorMode AnimationMode;
+	public float FloatOnState;
+	public float FloatOffState;
+	public int IntegerOnState;
+	public int IntegerOffState;
+	private int cachedHash;
+	private bool cachedState;
 
 	private int ParamHash { get; }
 
@@ -542,9 +542,9 @@ public class EntityFlag_Animator : EntityFlag_Toggle // TypeDefIndex: 11225
 
 }
 
-public enum EntityFlag_Animator.AnimatorMode // TypeDefIndex: 11226
+public enum EntityFlag_Animator.AnimatorMode // TypeDefIndex: 11232
 {
-	public int value__; 
+	public int value__;
 	public const EntityFlag_Animator.AnimatorMode Bool = 0;
 	public const EntityFlag_Animator.AnimatorMode Float = 1;
 	public const EntityFlag_Animator.AnimatorMode Trigger = 2;
@@ -552,27 +552,27 @@ public enum EntityFlag_Animator.AnimatorMode // TypeDefIndex: 11226
 
 }
 
-public class EntityFlag_TOD : EntityComponent<BaseEntity> // TypeDefIndex: 11227
+public class EntityFlag_TOD : EntityComponent<BaseEntity> // TypeDefIndex: 11233
 {
-	public BaseEntity.Flags desiredFlag; 
-	public bool onAtNight; 
+	public BaseEntity.Flags desiredFlag;
+	public bool onAtNight;
 
 
 	public void .ctor() { }
 
 }
 
-public class EntityFlag_Toggle : EntityComponent<BaseEntity>, IOnPostNetworkUpdate, IOnSendNetworkUpdate, IPrefabPreProcess // TypeDefIndex: 11228
+public class EntityFlag_Toggle : EntityComponent<BaseEntity>, IOnPostNetworkUpdate, IOnSendNetworkUpdate, IPrefabPreProcess // TypeDefIndex: 11234
 {
-	public bool runClientside; 
-	public bool runServerside; 
-	public BaseEntity.Flags flag; 
-	[SerializeField] 
-	private UnityEvent onFlagEnabled; 
-	[SerializeField] 
-	private UnityEvent onFlagDisabled; 
-	internal bool hasRunOnce; 
-	internal bool lastHasFlag; 
+	public bool runClientside;
+	public bool runServerside;
+	public BaseEntity.Flags flag;
+	[SerializeField]
+	private UnityEvent onFlagEnabled;
+	[SerializeField]
+	private UnityEvent onFlagDisabled;
+	internal bool hasRunOnce;
+	internal bool lastHasFlag;
 
 
 	protected void OnDisable() { }
@@ -591,9 +591,9 @@ public class EntityFlag_Toggle : EntityComponent<BaseEntity>, IOnPostNetworkUpda
 
 }
 
-public class EntityFlag_ToggleNotify : EntityFlag_Toggle // TypeDefIndex: 11229
+public class EntityFlag_ToggleNotify : EntityFlag_Toggle // TypeDefIndex: 11235
 {
-	public bool UseEntityParent; 
+	public bool UseEntityParent;
 
 
 	protected override void OnStateToggled(bool state) { }
@@ -602,14 +602,14 @@ public class EntityFlag_ToggleNotify : EntityFlag_Toggle // TypeDefIndex: 11229
 
 }
 
-public class EntityItem_RotateWhenOn : EntityComponent<BaseEntity>, IOnPostNetworkUpdate // TypeDefIndex: 11231
+public class EntityItem_RotateWhenOn : EntityComponent<BaseEntity>, IOnPostNetworkUpdate // TypeDefIndex: 11237
 {
-	public EntityItem_RotateWhenOn.State on; 
-	public EntityItem_RotateWhenOn.State off; 
-	internal bool currentlyOn; 
-	internal bool stateInitialized; 
-	public BaseEntity.Flags targetFlag; 
-	private Sound movementLoop; 
+	public EntityItem_RotateWhenOn.State on;
+	public EntityItem_RotateWhenOn.State off;
+	internal bool currentlyOn;
+	internal bool stateInitialized;
+	public BaseEntity.Flags targetFlag;
+	private Sound movementLoop;
 
 
 	private void OnEnable() { }
@@ -622,80 +622,80 @@ public class EntityItem_RotateWhenOn : EntityComponent<BaseEntity>, IOnPostNetwo
 
 	public void DoClose() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator RotateTo(EntityItem_RotateWhenOn.State state) { }
 
 	public void .ctor() { }
 
 }
 
-public class EntityItem_RotateWhenOn.State // TypeDefIndex: 11232
+public class EntityItem_RotateWhenOn.State // TypeDefIndex: 11238
 {
-	public Vector3 rotation; 
-	public float initialDelay; 
-	public float timeToTake; 
-	public AnimationCurve animationCurve; 
-	public string effectOnStart; 
-	public string effectOnFinish; 
-	public SoundDefinition movementLoop; 
-	public float movementLoopFadeOutTime; 
-	public SoundDefinition startSound; 
-	public SoundDefinition stopSound; 
+	public Vector3 rotation;
+	public float initialDelay;
+	public float timeToTake;
+	public AnimationCurve animationCurve;
+	public string effectOnStart;
+	public string effectOnFinish;
+	public SoundDefinition movementLoop;
+	public float movementLoopFadeOutTime;
+	public SoundDefinition startSound;
+	public SoundDefinition stopSound;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class EntityItem_RotateWhenOn.<RotateTo>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11233
+private sealed class EntityItem_RotateWhenOn.<RotateTo>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11239
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public EntityItem_RotateWhenOn <>4__this; 
-	public EntityItem_RotateWhenOn.State state; 
-	private Quaternion <start>5__2; 
-	private Quaternion <target>5__3; 
-	private bool <effectsStarted>5__4; 
-	private float <TimeTaken>5__5; 
+	private int <>1__state;
+	private object <>2__current;
+	public EntityItem_RotateWhenOn <>4__this;
+	public EntityItem_RotateWhenOn.State state;
+	private Quaternion <start>5__2;
+	private Quaternion <target>5__3;
+	private bool <effectsStarted>5__4;
+	private float <TimeTaken>5__5;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class EntityTimedDestroy : EntityComponent<BaseEntity> // TypeDefIndex: 11234
+public class EntityTimedDestroy : EntityComponent<BaseEntity> // TypeDefIndex: 11240
 {
-	public float secondsTillDestroy; 
+	public float secondsTillDestroy;
 
 
 	public void .ctor() { }
 
 }
 
-public class EntityFuelSystem // TypeDefIndex: 11267
+public class EntityFuelSystem // TypeDefIndex: 11273
 {
-	private readonly bool isServer; 
-	private readonly bool editorGiveFreeFuel; 
-	private readonly uint fuelStorageID; 
-	public EntityRef<StorageContainer> fuelStorageInstance; 
+	private readonly bool isServer;
+	private readonly bool editorGiveFreeFuel;
+	private readonly uint fuelStorageID;
+	public EntityRef<StorageContainer> fuelStorageInstance;
 
 
 	public void .ctor(bool isServer, GameObjectRef fuelStoragePrefab, List<BaseEntity> children, bool editorGiveFreeFuel = True) { }
@@ -706,12 +706,12 @@ public class EntityFuelSystem // TypeDefIndex: 11267
 
 }
 
-public class EntityLink : Pool.IPooled // TypeDefIndex: 11268
+public class EntityLink : Pool.IPooled // TypeDefIndex: 11274
 {
-	public BaseEntity owner; 
-	public Socket_Base socket; 
-	public List<EntityLink> connections; 
-	public int capacity; 
+	public BaseEntity owner;
+	public Socket_Base socket;
+	public List<EntityLink> connections;
+	public int capacity;
 
 	public string name { get; }
 
@@ -746,24 +746,24 @@ public class EntityLink : Pool.IPooled // TypeDefIndex: 11268
 
 }
 
-public static class EntityLinkEx // TypeDefIndex: 11269
+public static class EntityLinkEx // TypeDefIndex: 11275
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void FreeLinks(List<EntityLink> links) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ClearLinks(List<EntityLink> links) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void AddLinks(List<EntityLink> links, BaseEntity entity, Socket_Base[] sockets) { }
 
 }
 
-public struct EntityRef // TypeDefIndex: 11270
+public struct EntityRef // TypeDefIndex: 11276
 {
-	internal BaseEntity ent_cached; 
-	internal uint id_cached; 
+	internal BaseEntity ent_cached;
+	internal uint id_cached;
 
 	public uint uid { get; set; }
 
@@ -782,9 +782,9 @@ public struct EntityRef // TypeDefIndex: 11270
 
 }
 
-public struct EntityRef<T> // TypeDefIndex: 11271
+public struct EntityRef<T> // TypeDefIndex: 11277
 {
-	private EntityRef entityRef; 
+	private EntityRef entityRef;
 
 	public bool IsSet { get; }
 	public uint uid { get; set; }
@@ -882,9 +882,9 @@ public struct EntityRef<T> // TypeDefIndex: 11271
 
 }
 
-public class EntityHUDRender : MonoBehaviour // TypeDefIndex: 12682
+public class EntityHUDRender : MonoBehaviour // TypeDefIndex: 12696
 {
-	internal BaseEntity cachedEntity; 
+	internal BaseEntity cachedEntity;
 
 
 	private void OnWillRenderObject() { }
@@ -893,82 +893,82 @@ public class EntityHUDRender : MonoBehaviour // TypeDefIndex: 12682
 
 }
 
-public class Entity : ConsoleSystem // TypeDefIndex: 13700
+public class Entity : ConsoleSystem // TypeDefIndex: 13716
 {
 
-	[ClientVar] 
+	[ClientVar]
 	public static void debug_lookat(ConsoleSystem.Arg args) { }
 
 	private static TextTable GetEntityTable(Func<Entity.EntityInfo, bool> filter) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_entity(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_id(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_group(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_parent(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_status(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_radius(ConsoleSystem.Arg args) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void find_self(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void clspawn(string name) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void clspawnat(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void clspawnhere(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void clspawnitem(string name) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void UploadSign(ConsoleSystem.Arg arg) { }
 
 	private static bool IsLookingAtSign(ConsoleSystem.Arg arg, out ISignage signage) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void DownloadSign(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }
 
 }
 
-private struct Entity.EntityInfo // TypeDefIndex: 13701
+private struct Entity.EntityInfo // TypeDefIndex: 13717
 {
-	public BaseNetworkable entity; 
-	public uint entityID; 
-	public uint groupID; 
-	public uint parentID; 
-	public string status; 
+	public BaseNetworkable entity;
+	public uint entityID;
+	public uint groupID;
+	public uint parentID;
+	public string status;
 
 
 	public void .ctor(BaseNetworkable src) { }
 
 }
 
-private sealed class Entity.<>c__DisplayClass3_0 // TypeDefIndex: 13702
+private sealed class Entity.<>c__DisplayClass3_0 // TypeDefIndex: 13718
 {
-	public string filter; 
+	public string filter;
 
 
 	public void .ctor() { }
@@ -977,9 +977,9 @@ private sealed class Entity.<>c__DisplayClass3_0 // TypeDefIndex: 13702
 
 }
 
-private sealed class Entity.<>c__DisplayClass4_0 // TypeDefIndex: 13703
+private sealed class Entity.<>c__DisplayClass4_0 // TypeDefIndex: 13719
 {
-	public uint filter; 
+	public uint filter;
 
 
 	public void .ctor() { }
@@ -988,9 +988,9 @@ private sealed class Entity.<>c__DisplayClass4_0 // TypeDefIndex: 13703
 
 }
 
-private sealed class Entity.<>c__DisplayClass5_0 // TypeDefIndex: 13704
+private sealed class Entity.<>c__DisplayClass5_0 // TypeDefIndex: 13720
 {
-	public uint filter; 
+	public uint filter;
 
 
 	public void .ctor() { }
@@ -999,9 +999,9 @@ private sealed class Entity.<>c__DisplayClass5_0 // TypeDefIndex: 13704
 
 }
 
-private sealed class Entity.<>c__DisplayClass6_0 // TypeDefIndex: 13705
+private sealed class Entity.<>c__DisplayClass6_0 // TypeDefIndex: 13721
 {
-	public uint filter; 
+	public uint filter;
 
 
 	public void .ctor() { }
@@ -1010,9 +1010,9 @@ private sealed class Entity.<>c__DisplayClass6_0 // TypeDefIndex: 13705
 
 }
 
-private sealed class Entity.<>c__DisplayClass7_0 // TypeDefIndex: 13706
+private sealed class Entity.<>c__DisplayClass7_0 // TypeDefIndex: 13722
 {
-	public string filter; 
+	public string filter;
 
 
 	public void .ctor() { }
@@ -1021,10 +1021,10 @@ private sealed class Entity.<>c__DisplayClass7_0 // TypeDefIndex: 13706
 
 }
 
-private sealed class Entity.<>c__DisplayClass8_0 // TypeDefIndex: 13707
+private sealed class Entity.<>c__DisplayClass8_0 // TypeDefIndex: 13723
 {
-	public BasePlayer player; 
-	public uint filter; 
+	public BasePlayer player;
+	public uint filter;
 
 
 	public void .ctor() { }
@@ -1033,9 +1033,9 @@ private sealed class Entity.<>c__DisplayClass8_0 // TypeDefIndex: 13707
 
 }
 
-private sealed class Entity.<>c__DisplayClass9_0 // TypeDefIndex: 13708
+private sealed class Entity.<>c__DisplayClass9_0 // TypeDefIndex: 13724
 {
-	public uint filter; 
+	public uint filter;
 
 
 	public void .ctor() { }

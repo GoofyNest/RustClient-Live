@@ -1,6 +1,6 @@
 public struct Byte : IComparable, IFormattable, IConvertible, IComparable<byte>, IEquatable<byte> // TypeDefIndex: 181
 {
-	private byte m_value; 
+	private byte m_value;
 	public const byte MaxValue = 255;
 	public const byte MinValue = 0;
 

@@ -1,14 +1,14 @@
 internal abstract class MobileTlsContext : IDisposable // TypeDefIndex: 2551
 {
-	private MobileAuthenticatedStream parent; 
-	private bool serverMode; 
-	private string targetHost; 
-	private string serverName; 
-	private SslProtocols enabledProtocols; 
-	private X509Certificate serverCertificate; 
-	private X509CertificateCollection clientCertificates; 
-	private bool askForClientCert; 
-	private ICertificateValidator2 certificateValidator; 
+	private MobileAuthenticatedStream parent;
+	private bool serverMode;
+	private string targetHost;
+	private string serverName;
+	private SslProtocols enabledProtocols;
+	private X509Certificate serverCertificate;
+	private X509CertificateCollection clientCertificates;
+	private bool askForClientCert;
+	private ICertificateValidator2 certificateValidator;
 
 	internal MobileAuthenticatedStream Parent { get; }
 	public MonoTlsSettings Settings { get; }

@@ -1,6 +1,6 @@
-public static class DebugEx // TypeDefIndex: 5605
+public static class DebugEx // TypeDefIndex: 5607
 {
-	private static float startTime; 
+	private static float startTime;
 
 
 	public static void Log(object message, StackTraceLogType stacktrace = 0) { }

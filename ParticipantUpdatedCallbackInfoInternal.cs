@@ -1,11 +1,11 @@
-internal struct ParticipantUpdatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<ParticipantUpdatedCallbackInfo>, ISettable<ParticipantUpdatedCallbackInfo>, IDisposable // TypeDefIndex: 8699
+internal struct ParticipantUpdatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<ParticipantUpdatedCallbackInfo>, ISettable<ParticipantUpdatedCallbackInfo>, IDisposable // TypeDefIndex: 8701
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_ParticipantId; 
-	private int m_Speaking; 
-	private RTCAudioStatus m_AudioStatus; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private IntPtr m_ParticipantId;
+	private int m_Speaking;
+	private RTCAudioStatus m_AudioStatus;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

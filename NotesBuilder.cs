@@ -1,26 +1,26 @@
-internal sealed class NotesBuilder // TypeDefIndex: 7454
+internal sealed class NotesBuilder // TypeDefIndex: 7456
 {
-	private readonly NoteDetectionSettings _noteDetectionSettings; 
+	private readonly NoteDetectionSettings _noteDetectionSettings;
 
 
 	public void .ctor(NoteDetectionSettings noteDetectionSettings) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerable<Note> GetNotesLazy(IEnumerable<TimedEvent> timedEvents, bool collectTimedEvents = False, List<TimedEvent> collectedTimedEvents) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerable<Note> GetNotesLazy(IEnumerable<Tuple<TimedEvent, int>> timedEvents, bool collectTimedEvents = False, List<Tuple<TimedEvent, int>> collectedTimedEvents) { }
 
 	private static int GetNoteEventId(NoteEvent noteEvent) { }
 
 }
 
-private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7455
+private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7457
 {
-	[CompilerGeneratedAttribute] 
-	private readonly TimedEvent <NoteOnTimedEvent>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TimedEvent <NoteOffTimedEvent>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly TimedEvent <NoteOnTimedEvent>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TimedEvent <NoteOffTimedEvent>k__BackingField;
 
 	public TimedEvent NoteOnTimedEvent { get; }
 	public TimedEvent NoteOffTimedEvent { get; set; }
@@ -29,13 +29,13 @@ private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7455
 
 	public void .ctor(TimedEvent noteOnTimedEvent) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimedEvent get_NoteOnTimedEvent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimedEvent get_NoteOffTimedEvent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NoteOffTimedEvent(TimedEvent value) { }
 
 	public bool get_IsCompleted() { }
@@ -44,11 +44,11 @@ private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7455
 
 }
 
-private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefIndex: 7456
+private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefIndex: 7458
 {
-	private readonly NoteStartDetectionPolicy _noteStartDetectionPolicy; 
-	private readonly Stack<LinkedListNode<TDescriptor>> _nodesStack; 
-	private readonly Queue<LinkedListNode<TDescriptor>> _nodesQueue; 
+	private readonly NoteStartDetectionPolicy _noteStartDetectionPolicy;
+	private readonly Stack<LinkedListNode<TDescriptor>> _nodesStack;
+	private readonly Queue<LinkedListNode<TDescriptor>> _nodesQueue;
 
 	public int Count { get; }
 
@@ -83,39 +83,39 @@ private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefInd
 
 }
 
-private sealed class NotesBuilder.NoteOnsHolder : NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor> // TypeDefIndex: 7457
+private sealed class NotesBuilder.NoteOnsHolder : NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor> // TypeDefIndex: 7459
 {
 
 	public void .ctor(NoteStartDetectionPolicy noteStartDetectionPolicy) { }
 
 }
 
-private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7458
+private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7460
 {
-	private int <>1__state; 
-	private Note <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TimedEvent> timedEvents; 
-	public IEnumerable<TimedEvent> <>3__timedEvents; 
-	private bool collectTimedEvents; 
-	public bool <>3__collectTimedEvents; 
-	private List<TimedEvent> collectedTimedEvents; 
-	public List<TimedEvent> <>3__collectedTimedEvents; 
-	public NotesBuilder <>4__this; 
-	private LinkedList<NotesBuilder.NoteDescriptor> <notesDescriptors>5__2; 
-	private Dictionary<int, NotesBuilder.NoteOnsHolder> <notesDescriptorsNodes>5__3; 
-	private IEnumerator<TimedEvent> <>7__wrap3; 
-	private LinkedListNode<NotesBuilder.NoteDescriptor> <n>5__5; 
-	private LinkedList.Enumerator<NotesBuilder.NoteDescriptor> <>7__wrap5; 
+	private int <>1__state;
+	private Note <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TimedEvent> timedEvents;
+	public IEnumerable<TimedEvent> <>3__timedEvents;
+	private bool collectTimedEvents;
+	public bool <>3__collectTimedEvents;
+	private List<TimedEvent> collectedTimedEvents;
+	public List<TimedEvent> <>3__collectedTimedEvents;
+	public NotesBuilder <>4__this;
+	private LinkedList<NotesBuilder.NoteDescriptor> <notesDescriptors>5__2;
+	private Dictionary<int, NotesBuilder.NoteOnsHolder> <notesDescriptorsNodes>5__3;
+	private IEnumerator<TimedEvent> <>7__wrap3;
+	private LinkedListNode<NotesBuilder.NoteDescriptor> <n>5__5;
+	private LinkedList.Enumerator<NotesBuilder.NoteDescriptor> <>7__wrap5;
 
 	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
@@ -124,50 +124,50 @@ private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnume
 
 	private void <>m__Finally2() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<Note> System.Collections.Generic.IEnumerable<Melanchall.DryWetMidi.Interaction.Note>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
-private sealed class NotesBuilder.<GetNotesLazy>d__8 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7459
+private sealed class NotesBuilder.<GetNotesLazy>d__8 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7461
 {
-	private int <>1__state; 
-	private Note <>2__current; 
-	private int <>l__initialThreadId; 
-	public NotesBuilder <>4__this; 
-	private IEnumerable<Tuple<TimedEvent, int>> timedEvents; 
-	public IEnumerable<Tuple<TimedEvent, int>> <>3__timedEvents; 
-	private bool collectTimedEvents; 
-	public bool <>3__collectTimedEvents; 
-	private List<Tuple<TimedEvent, int>> collectedTimedEvents; 
-	public List<Tuple<TimedEvent, int>> <>3__collectedTimedEvents; 
-	private LinkedList<NotesBuilder.NoteDescriptor> <notesDescriptors>5__2; 
-	private Dictionary<Tuple<int, int>, NotesBuilder.NoteOnsHolder> <notesDescriptorsNodes>5__3; 
-	private bool <respectEventsCollectionIndex>5__4; 
-	private IEnumerator<Tuple<TimedEvent, int>> <>7__wrap4; 
-	private LinkedListNode<NotesBuilder.NoteDescriptor> <n>5__6; 
-	private LinkedList.Enumerator<NotesBuilder.NoteDescriptor> <>7__wrap6; 
+	private int <>1__state;
+	private Note <>2__current;
+	private int <>l__initialThreadId;
+	public NotesBuilder <>4__this;
+	private IEnumerable<Tuple<TimedEvent, int>> timedEvents;
+	public IEnumerable<Tuple<TimedEvent, int>> <>3__timedEvents;
+	private bool collectTimedEvents;
+	public bool <>3__collectTimedEvents;
+	private List<Tuple<TimedEvent, int>> collectedTimedEvents;
+	public List<Tuple<TimedEvent, int>> <>3__collectedTimedEvents;
+	private LinkedList<NotesBuilder.NoteDescriptor> <notesDescriptors>5__2;
+	private Dictionary<Tuple<int, int>, NotesBuilder.NoteOnsHolder> <notesDescriptorsNodes>5__3;
+	private bool <respectEventsCollectionIndex>5__4;
+	private IEnumerator<Tuple<TimedEvent, int>> <>7__wrap4;
+	private LinkedListNode<NotesBuilder.NoteDescriptor> <n>5__6;
+	private LinkedList.Enumerator<NotesBuilder.NoteDescriptor> <>7__wrap6;
 
 	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
@@ -176,19 +176,19 @@ private sealed class NotesBuilder.<GetNotesLazy>d__8 : IEnumerable<Note>, IEnume
 
 	private void <>m__Finally2() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<Note> System.Collections.Generic.IEnumerable<Melanchall.DryWetMidi.Interaction.Note>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }

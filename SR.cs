@@ -134,10 +134,10 @@ internal static class SR
 
 internal class SR // TypeDefIndex: 4901
 {
-	private static ResourceManager resourceMan; 
-	private static CultureInfo resourceCulture; 
+	private static ResourceManager resourceMan;
+	private static CultureInfo resourceCulture;
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	internal static ResourceManager ResourceManager { get; }
 	internal static string DataTypes { get; }
 	internal static string Keywords { get; }
@@ -154,7 +154,7 @@ internal class SR // TypeDefIndex: 4901
 
 }
 
-internal static class SR // TypeDefIndex: 6273
+internal static class SR // TypeDefIndex: 6275
 {
 
 internal class <Module>
@@ -162,9 +162,9 @@ internal class <Module>
 internal static class SR
 
 internal static class SR
-	private static ResourceManager s_resourceManager; 
-	[CompilerGeneratedAttribute] 
-	private static readonly Type <ResourceType>k__BackingField; 
+	private static ResourceManager s_resourceManager;
+	[CompilerGeneratedAttribute]
+	private static readonly Type <ResourceType>k__BackingField;
 
 	private static ResourceManager ResourceManager { get; }
 	internal static Type ResourceType { get; }
@@ -175,7 +175,7 @@ internal static class SR
 
 	internal static string GetResourceString(string resourceKey, string defaultString) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static Type get_ResourceType() { }
 
 	internal static string get_ArgumentException_BufferNotFromPool() { }
@@ -184,11 +184,11 @@ internal static class SR
 
 }
 
-internal static class SR // TypeDefIndex: 6908
+internal static class SR // TypeDefIndex: 6910
 {
-	private static ResourceManager s_resourceManager; 
-	[CompilerGeneratedAttribute] 
-	private static readonly Type <ResourceType>k__BackingField; 
+	private static ResourceManager s_resourceManager;
+	[CompilerGeneratedAttribute]
+	private static readonly Type <ResourceType>k__BackingField;
 
 	private static ResourceManager ResourceManager { get; }
 	internal static Type ResourceType { get; }
@@ -206,7 +206,7 @@ internal static class SR // TypeDefIndex: 6908
 
 	internal static string Format(string resourceFormat, object p1) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static Type get_ResourceType() { }
 
 	internal static string get_NotSupported_CannotCallEqualsOnSpan() { }

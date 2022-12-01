@@ -1,8 +1,8 @@
 public class StringInfo // TypeDefIndex: 716
 {
-	[OptionalFieldAttribute] 
-	private string m_str; 
-	private int[] m_indexes; 
+	[OptionalFieldAttribute]
+	private string m_str;
+	private int[] m_indexes;
 
 	public string String { set; }
 
@@ -11,16 +11,16 @@ public class StringInfo // TypeDefIndex: 716
 
 	public void .ctor(string value) { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool Equals(object value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetHashCode() { }
 
 	public void set_String(string value) { }

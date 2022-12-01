@@ -1,6 +1,6 @@
 internal enum StorageType // TypeDefIndex: 4385
 {
-	public int value__; 
+	public int value__;
 	public const StorageType Empty = 0;
 	public const StorageType Object = 1;
 	public const StorageType DBNull = 2;

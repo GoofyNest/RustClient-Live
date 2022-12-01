@@ -1,17 +1,17 @@
 internal class SmallXmlParser // TypeDefIndex: 24
 {
-	private SmallXmlParser.IContentHandler handler; 
-	private TextReader reader; 
-	private Stack elementNames; 
-	private Stack xmlSpaces; 
-	private string xmlSpace; 
-	private StringBuilder buffer; 
-	private char[] nameBuffer; 
-	private bool isWhitespace; 
-	private SmallXmlParser.AttrListImpl attributes; 
-	private int line; 
-	private int column; 
-	private bool resetColumn; 
+	private SmallXmlParser.IContentHandler handler;
+	private TextReader reader;
+	private Stack elementNames;
+	private Stack xmlSpaces;
+	private string xmlSpace;
+	private StringBuilder buffer;
+	private char[] nameBuffer;
+	private bool isWhitespace;
+	private SmallXmlParser.AttrListImpl attributes;
+	private int line;
+	private int column;
+	private bool resetColumn;
 
 
 	public void .ctor() { }
@@ -64,8 +64,8 @@ internal class SmallXmlParser // TypeDefIndex: 24
 
 private class SmallXmlParser.AttrListImpl : SmallXmlParser.IAttrList // TypeDefIndex: 27
 {
-	private List<string> attrNames; 
-	private List<string> attrValues; 
+	private List<string> attrNames;
+	private List<string> attrValues;
 
 	public int Length { get; }
 	public string[] Names { get; }
@@ -94,8 +94,8 @@ private class SmallXmlParser.AttrListImpl : SmallXmlParser.IAttrList // TypeDefI
 
 internal class SmallXmlParserException : SystemException // TypeDefIndex: 28
 {
-	private int line; 
-	private int column; 
+	private int line;
+	private int column;
 
 
 	public void .ctor(string msg, int line, int column) { }
@@ -121,19 +121,19 @@ public sealed class XmlSyntaxException : SystemException // TypeDefIndex: 909
 
 internal class XPathParser // TypeDefIndex: 1800
 {
-	private XPathScanner scanner; 
-	private int parseDepth; 
-	private static readonly XPathResultType[] temparray1; 
-	private static readonly XPathResultType[] temparray2; 
-	private static readonly XPathResultType[] temparray3; 
-	private static readonly XPathResultType[] temparray4; 
-	private static readonly XPathResultType[] temparray5; 
-	private static readonly XPathResultType[] temparray6; 
-	private static readonly XPathResultType[] temparray7; 
-	private static readonly XPathResultType[] temparray8; 
-	private static readonly XPathResultType[] temparray9; 
-	private static Hashtable functionTable; 
-	private static Hashtable AxesTable; 
+	private XPathScanner scanner;
+	private int parseDepth;
+	private static readonly XPathResultType[] temparray1;
+	private static readonly XPathResultType[] temparray2;
+	private static readonly XPathResultType[] temparray3;
+	private static readonly XPathResultType[] temparray4;
+	private static readonly XPathResultType[] temparray5;
+	private static readonly XPathResultType[] temparray6;
+	private static readonly XPathResultType[] temparray7;
+	private static readonly XPathResultType[] temparray8;
+	private static readonly XPathResultType[] temparray9;
+	private static Hashtable functionTable;
+	private static Hashtable AxesTable;
 
 
 	private void .ctor(XPathScanner scanner) { }
@@ -204,10 +204,10 @@ internal class XPathParser // TypeDefIndex: 1800
 
 private class XPathParser.ParamInfo // TypeDefIndex: 1801
 {
-	private Function.FunctionType ftype; 
-	private int minargs; 
-	private int maxargs; 
-	private XPathResultType[] argTypes; 
+	private Function.FunctionType ftype;
+	private int minargs;
+	private int maxargs;
+	private XPathResultType[] argTypes;
 
 	public Function.FunctionType FType { get; }
 	public int Minargs { get; }
@@ -229,16 +229,16 @@ private class XPathParser.ParamInfo // TypeDefIndex: 1801
 
 internal sealed class XPathScanner // TypeDefIndex: 1802
 {
-	private string xpathExpr; 
-	private int xpathExprIndex; 
-	private XPathScanner.LexKind kind; 
-	private char currentChar; 
-	private string name; 
-	private string prefix; 
-	private string stringValue; 
-	private double numberValue; 
-	private bool canBeFunction; 
-	private XmlCharType xmlCharType; 
+	private string xpathExpr;
+	private int xpathExprIndex;
+	private XPathScanner.LexKind kind;
+	private char currentChar;
+	private string name;
+	private string prefix;
+	private string stringValue;
+	private double numberValue;
+	private bool canBeFunction;
+	private XmlCharType xmlCharType;
 
 	public string SourceText { get; }
 	private char CurerntChar { get; }
@@ -286,7 +286,7 @@ internal sealed class XPathScanner // TypeDefIndex: 1802
 
 public enum XPathScanner.LexKind // TypeDefIndex: 1803
 {
-	public int value__; 
+	public int value__;
 	public const XPathScanner.LexKind Comma = 44;
 	public const XPathScanner.LexKind Slash = 47;
 	public const XPathScanner.LexKind At = 64;
@@ -323,10 +323,10 @@ public enum XPathScanner.LexKind // TypeDefIndex: 1803
 
 internal sealed class XPathDocumentNavigator : XPathNavigator, IXmlLineInfo // TypeDefIndex: 1804
 {
-	private XPathNode[] pageCurrent; 
-	private XPathNode[] pageParent; 
-	private int idxCurrent; 
-	private int idxParent; 
+	private XPathNode[] pageCurrent;
+	private XPathNode[] pageParent;
+	private int idxCurrent;
+	private int idxParent;
 
 	public override string Value { get; }
 	public override XPathNodeType NodeType { get; }
@@ -377,13 +377,13 @@ internal sealed class XPathDocumentNavigator : XPathNavigator, IXmlLineInfo // T
 
 internal struct XPathNode // TypeDefIndex: 1805
 {
-	private XPathNodeInfoAtom info; 
-	private ushort idxSibling; 
-	private ushort idxParent; 
-	private ushort idxSimilar; 
-	private ushort posOffset; 
-	private uint props; 
-	private string value; 
+	private XPathNodeInfoAtom info;
+	private ushort idxSibling;
+	private ushort idxParent;
+	private ushort idxSimilar;
+	private ushort posOffset;
+	private uint props;
+	private string value;
 
 	public XPathNodeType NodeType { get; }
 	public string Prefix { get; }
@@ -440,8 +440,8 @@ internal struct XPathNode // TypeDefIndex: 1805
 
 internal struct XPathNodeRef // TypeDefIndex: 1806
 {
-	private XPathNode[] page; 
-	private int idx; 
+	private XPathNode[] page;
+	private int idx;
 
 	public XPathNode[] Page { get; }
 	public int Index { get; }
@@ -476,9 +476,9 @@ internal abstract class XPathNodeHelper // TypeDefIndex: 1807
 
 internal sealed class XPathNodePageInfo // TypeDefIndex: 1808
 {
-	private int pageNum; 
-	private int nodeCount; 
-	private XPathNode[] pageNext; 
+	private int pageNum;
+	private int nodeCount;
+	private XPathNode[] pageNext;
 
 	public int PageNumber { get; }
 	public int NodeCount { get; }
@@ -495,15 +495,15 @@ internal sealed class XPathNodePageInfo // TypeDefIndex: 1808
 
 internal sealed class XPathNodeInfoAtom // TypeDefIndex: 1809
 {
-	private string localName; 
-	private string namespaceUri; 
-	private string prefix; 
-	private XPathNode[] pageParent; 
-	private XPathNode[] pageSibling; 
-	private XPathDocument doc; 
-	private int lineNumBase; 
-	private int linePosBase; 
-	private XPathNodePageInfo pageInfo; 
+	private string localName;
+	private string namespaceUri;
+	private string prefix;
+	private XPathNode[] pageParent;
+	private XPathNode[] pageSibling;
+	private XPathDocument doc;
+	private int lineNumBase;
+	private int linePosBase;
+	private XPathNodePageInfo pageInfo;
 
 	public XPathNodePageInfo PageInfo { get; }
 	public string LocalName { get; }
@@ -538,7 +538,7 @@ internal sealed class XPathNodeInfoAtom // TypeDefIndex: 1809
 
 internal class XmlRawWriterBase64Encoder : Base64Encoder // TypeDefIndex: 1814
 {
-	private XmlRawWriter rawWriter; 
+	private XmlRawWriter rawWriter;
 
 
 	internal void .ctor(XmlRawWriter rawWriter) { }
@@ -549,7 +549,7 @@ internal class XmlRawWriterBase64Encoder : Base64Encoder // TypeDefIndex: 1814
 
 internal class XmlTextWriterBase64Encoder : Base64Encoder // TypeDefIndex: 1815
 {
-	private XmlTextEncoder xmlTextEncoder; 
+	private XmlTextEncoder xmlTextEncoder;
 
 
 	internal void .ctor(XmlTextEncoder xmlTextEncoder) { }
@@ -560,7 +560,7 @@ internal class XmlTextWriterBase64Encoder : Base64Encoder // TypeDefIndex: 1815
 
 internal enum BinXmlToken // TypeDefIndex: 1818
 {
-	public int value__; 
+	public int value__;
 	public const BinXmlToken Error = 0;
 	public const BinXmlToken NotImpl = -2;
 	public const BinXmlToken EOF = -1;
@@ -632,27 +632,27 @@ internal enum BinXmlToken // TypeDefIndex: 1818
 
 internal struct BinXmlSqlDecimal // TypeDefIndex: 1819
 {
-	internal byte m_bLen; 
-	internal byte m_bPrec; 
-	internal byte m_bScale; 
-	internal byte m_bSign; 
-	internal uint m_data1; 
-	internal uint m_data2; 
-	internal uint m_data3; 
-	internal uint m_data4; 
-	private static readonly byte NUMERIC_MAX_PRECISION; 
-	private static readonly byte MaxPrecision; 
-	private static readonly byte MaxScale; 
-	private static readonly int x_cNumeMax; 
-	private static readonly long x_lInt32Base; 
-	private static readonly ulong x_ulInt32Base; 
-	private static readonly ulong x_ulInt32BaseForMod; 
-	internal static readonly ulong x_llMax; 
-	private static readonly double DUINT_BASE; 
-	private static readonly double DUINT_BASE2; 
-	private static readonly double DUINT_BASE3; 
-	private static readonly uint[] x_rgulShiftBase; 
-	private static readonly byte[] rgCLenFromPrec; 
+	internal byte m_bLen;
+	internal byte m_bPrec;
+	internal byte m_bScale;
+	internal byte m_bSign;
+	internal uint m_data1;
+	internal uint m_data2;
+	internal uint m_data3;
+	internal uint m_data4;
+	private static readonly byte NUMERIC_MAX_PRECISION;
+	private static readonly byte MaxPrecision;
+	private static readonly byte MaxScale;
+	private static readonly int x_cNumeMax;
+	private static readonly long x_lInt32Base;
+	private static readonly ulong x_ulInt32Base;
+	private static readonly ulong x_ulInt32BaseForMod;
+	internal static readonly ulong x_llMax;
+	private static readonly double DUINT_BASE;
+	private static readonly double DUINT_BASE2;
+	private static readonly double DUINT_BASE3;
+	private static readonly uint[] x_rgulShiftBase;
+	private static readonly byte[] rgCLenFromPrec;
 
 	public bool IsPositive { get; }
 
@@ -681,7 +681,7 @@ internal struct BinXmlSqlDecimal // TypeDefIndex: 1819
 
 internal struct BinXmlSqlMoney // TypeDefIndex: 1820
 {
-	private long data; 
+	private long data;
 
 
 	public void .ctor(int v) { }
@@ -696,12 +696,12 @@ internal struct BinXmlSqlMoney // TypeDefIndex: 1820
 
 internal abstract class BinXmlDateTime // TypeDefIndex: 1821
 {
-	internal static int[] KatmaiTimeScaleMultiplicator; 
-	private static readonly double SQLTicksPerMillisecond; 
-	public static readonly int SQLTicksPerSecond; 
-	public static readonly int SQLTicksPerMinute; 
-	public static readonly int SQLTicksPerHour; 
-	private static readonly int SQLTicksPerDay; 
+	internal static int[] KatmaiTimeScaleMultiplicator;
+	private static readonly double SQLTicksPerMillisecond;
+	public static readonly int SQLTicksPerSecond;
+	public static readonly int SQLTicksPerMinute;
+	public static readonly int SQLTicksPerHour;
+	private static readonly int SQLTicksPerDay;
 
 
 	private static void Write2Dig(StringBuilder sb, int val) { }
@@ -780,60 +780,60 @@ internal abstract class BinXmlDateTime // TypeDefIndex: 1821
 
 internal sealed class XmlSqlBinaryReader : XmlReader, IXmlNamespaceResolver // TypeDefIndex: 1822
 {
-	internal static readonly Type TypeOfObject; 
-	internal static readonly Type TypeOfString; 
-	private static Type[] TokenTypeMap; 
-	private static byte[] XsdKatmaiTimeScaleToValueLengthMap; 
-	private static ReadState[] ScanState2ReadState; 
-	private Stream inStrm; 
-	private byte[] data; 
-	private int pos; 
-	private int mark; 
-	private int end; 
-	private long offset; 
-	private bool eof; 
-	private bool sniffed; 
-	private bool isEmpty; 
-	private int docState; 
-	private XmlSqlBinaryReader.SymbolTables symbolTables; 
-	private XmlNameTable xnt; 
-	private bool xntFromSettings; 
-	private string xml; 
-	private string xmlns; 
-	private string nsxmlns; 
-	private string baseUri; 
-	private XmlSqlBinaryReader.ScanState state; 
-	private XmlNodeType nodetype; 
-	private BinXmlToken token; 
-	private int attrIndex; 
-	private XmlSqlBinaryReader.QName qnameOther; 
-	private XmlSqlBinaryReader.QName qnameElement; 
-	private XmlNodeType parentNodeType; 
-	private XmlSqlBinaryReader.ElemInfo[] elementStack; 
-	private int elemDepth; 
-	private XmlSqlBinaryReader.AttrInfo[] attributes; 
-	private int[] attrHashTbl; 
-	private int attrCount; 
-	private int posAfterAttrs; 
-	private bool xmlspacePreserve; 
-	private int tokLen; 
-	private int tokDataPos; 
-	private bool hasTypedValue; 
-	private Type valueType; 
-	private string stringValue; 
-	private Dictionary<string, XmlSqlBinaryReader.NamespaceDecl> namespaces; 
-	private XmlSqlBinaryReader.NestedBinXml prevNameInfo; 
-	private XmlReader textXmlReader; 
-	private bool closeInput; 
-	private bool checkCharacters; 
-	private bool ignoreWhitespace; 
-	private bool ignorePIs; 
-	private bool ignoreComments; 
-	private DtdProcessing dtdProcessing; 
-	private SecureStringHasher hasher; 
-	private XmlCharType xmlCharType; 
-	private Encoding unicode; 
-	private byte version; 
+	internal static readonly Type TypeOfObject;
+	internal static readonly Type TypeOfString;
+	private static Type[] TokenTypeMap;
+	private static byte[] XsdKatmaiTimeScaleToValueLengthMap;
+	private static ReadState[] ScanState2ReadState;
+	private Stream inStrm;
+	private byte[] data;
+	private int pos;
+	private int mark;
+	private int end;
+	private long offset;
+	private bool eof;
+	private bool sniffed;
+	private bool isEmpty;
+	private int docState;
+	private XmlSqlBinaryReader.SymbolTables symbolTables;
+	private XmlNameTable xnt;
+	private bool xntFromSettings;
+	private string xml;
+	private string xmlns;
+	private string nsxmlns;
+	private string baseUri;
+	private XmlSqlBinaryReader.ScanState state;
+	private XmlNodeType nodetype;
+	private BinXmlToken token;
+	private int attrIndex;
+	private XmlSqlBinaryReader.QName qnameOther;
+	private XmlSqlBinaryReader.QName qnameElement;
+	private XmlNodeType parentNodeType;
+	private XmlSqlBinaryReader.ElemInfo[] elementStack;
+	private int elemDepth;
+	private XmlSqlBinaryReader.AttrInfo[] attributes;
+	private int[] attrHashTbl;
+	private int attrCount;
+	private int posAfterAttrs;
+	private bool xmlspacePreserve;
+	private int tokLen;
+	private int tokDataPos;
+	private bool hasTypedValue;
+	private Type valueType;
+	private string stringValue;
+	private Dictionary<string, XmlSqlBinaryReader.NamespaceDecl> namespaces;
+	private XmlSqlBinaryReader.NestedBinXml prevNameInfo;
+	private XmlReader textXmlReader;
+	private bool closeInput;
+	private bool checkCharacters;
+	private bool ignoreWhitespace;
+	private bool ignorePIs;
+	private bool ignoreComments;
+	private DtdProcessing dtdProcessing;
+	private SecureStringHasher hasher;
+	private XmlCharType xmlCharType;
+	private Encoding unicode;
+	private byte version;
 
 	public override XmlReaderSettings Settings { get; }
 	public override XmlNodeType NodeType { get; }
@@ -1099,7 +1099,7 @@ internal sealed class XmlSqlBinaryReader : XmlReader, IXmlNamespaceResolver // T
 
 private enum XmlSqlBinaryReader.ScanState // TypeDefIndex: 1823
 {
-	public int value__; 
+	public int value__;
 	public const XmlSqlBinaryReader.ScanState Doc = 0;
 	public const XmlSqlBinaryReader.ScanState XmlText = 1;
 	public const XmlSqlBinaryReader.ScanState Attr = 2;
@@ -1114,9 +1114,9 @@ private enum XmlSqlBinaryReader.ScanState // TypeDefIndex: 1823
 
 internal struct XmlSqlBinaryReader.QName // TypeDefIndex: 1824
 {
-	public string prefix; 
-	public string localname; 
-	public string namespaceUri; 
+	public string prefix;
+	public string localname;
+	public string namespaceUri;
 
 
 	public void .ctor(string prefix, string lname, string nsUri) { }
@@ -1145,11 +1145,11 @@ internal struct XmlSqlBinaryReader.QName // TypeDefIndex: 1824
 
 private struct XmlSqlBinaryReader.ElemInfo // TypeDefIndex: 1825
 {
-	public XmlSqlBinaryReader.QName name; 
-	public string xmlLang; 
-	public XmlSpace xmlSpace; 
-	public bool xmlspacePreserve; 
-	public XmlSqlBinaryReader.NamespaceDecl nsdecls; 
+	public XmlSqlBinaryReader.QName name;
+	public string xmlLang;
+	public XmlSpace xmlSpace;
+	public bool xmlspacePreserve;
+	public XmlSqlBinaryReader.NamespaceDecl nsdecls;
 
 
 	public void Set(XmlSqlBinaryReader.QName name, bool xmlspacePreserve) { }
@@ -1160,11 +1160,11 @@ private struct XmlSqlBinaryReader.ElemInfo // TypeDefIndex: 1825
 
 private struct XmlSqlBinaryReader.AttrInfo // TypeDefIndex: 1826
 {
-	public XmlSqlBinaryReader.QName name; 
-	public string val; 
-	public int contentPos; 
-	public int hashCode; 
-	public int prevHash; 
+	public XmlSqlBinaryReader.QName name;
+	public string val;
+	public int contentPos;
+	public int hashCode;
+	public int prevHash;
 
 
 	public void Set(XmlSqlBinaryReader.QName n, string v) { }
@@ -1185,12 +1185,12 @@ private struct XmlSqlBinaryReader.AttrInfo // TypeDefIndex: 1826
 
 private class XmlSqlBinaryReader.NamespaceDecl // TypeDefIndex: 1827
 {
-	public string prefix; 
-	public string uri; 
-	public XmlSqlBinaryReader.NamespaceDecl scopeLink; 
-	public XmlSqlBinaryReader.NamespaceDecl prevLink; 
-	public int scope; 
-	public bool implied; 
+	public string prefix;
+	public string uri;
+	public XmlSqlBinaryReader.NamespaceDecl scopeLink;
+	public XmlSqlBinaryReader.NamespaceDecl prevLink;
+	public int scope;
+	public bool implied;
 
 
 	public void .ctor(string prefix, string nsuri, XmlSqlBinaryReader.NamespaceDecl nextInScope, XmlSqlBinaryReader.NamespaceDecl prevDecl, int scope, bool implied) { }
@@ -1199,10 +1199,10 @@ private class XmlSqlBinaryReader.NamespaceDecl // TypeDefIndex: 1827
 
 private struct XmlSqlBinaryReader.SymbolTables // TypeDefIndex: 1828
 {
-	public string[] symtable; 
-	public int symCount; 
-	public XmlSqlBinaryReader.QName[] qnametable; 
-	public int qnameCount; 
+	public string[] symtable;
+	public int symCount;
+	public XmlSqlBinaryReader.QName[] qnametable;
+	public int qnameCount;
 
 
 	public void Init() { }
@@ -1211,9 +1211,9 @@ private struct XmlSqlBinaryReader.SymbolTables // TypeDefIndex: 1828
 
 private class XmlSqlBinaryReader.NestedBinXml // TypeDefIndex: 1829
 {
-	public XmlSqlBinaryReader.SymbolTables symbolTables; 
-	public int docState; 
-	public XmlSqlBinaryReader.NestedBinXml next; 
+	public XmlSqlBinaryReader.SymbolTables symbolTables;
+	public int docState;
+	public XmlSqlBinaryReader.NestedBinXml next;
 
 
 	public void .ctor(XmlSqlBinaryReader.SymbolTables symbolTables, int docState, XmlSqlBinaryReader.NestedBinXml next) { }
@@ -1222,8 +1222,8 @@ private class XmlSqlBinaryReader.NestedBinXml // TypeDefIndex: 1829
 
 internal class XmlAsyncCheckReader : XmlReader // TypeDefIndex: 1873
 {
-	private readonly XmlReader coreReader; 
-	private Task lastTask; 
+	private readonly XmlReader coreReader;
+	private Task lastTask;
 
 	internal XmlReader CoreReader { get; }
 	public override XmlReaderSettings Settings { get; }
@@ -1361,7 +1361,7 @@ internal class XmlAsyncCheckReader : XmlReader // TypeDefIndex: 1873
 
 internal class XmlAsyncCheckReaderWithNS : XmlAsyncCheckReader, IXmlNamespaceResolver // TypeDefIndex: 1874
 {
-	private readonly IXmlNamespaceResolver readerAsIXmlNamespaceResolver; 
+	private readonly IXmlNamespaceResolver readerAsIXmlNamespaceResolver;
 
 
 	public void .ctor(XmlReader reader) { }
@@ -1376,7 +1376,7 @@ internal class XmlAsyncCheckReaderWithNS : XmlAsyncCheckReader, IXmlNamespaceRes
 
 internal class XmlAsyncCheckReaderWithLineInfo : XmlAsyncCheckReader, IXmlLineInfo // TypeDefIndex: 1875
 {
-	private readonly IXmlLineInfo readerAsIXmlLineInfo; 
+	private readonly IXmlLineInfo readerAsIXmlLineInfo;
 
 	public virtual int LineNumber { get; }
 	public virtual int LinePosition { get; }
@@ -1394,7 +1394,7 @@ internal class XmlAsyncCheckReaderWithLineInfo : XmlAsyncCheckReader, IXmlLineIn
 
 internal class XmlAsyncCheckReaderWithLineInfoNS : XmlAsyncCheckReaderWithLineInfo, IXmlNamespaceResolver // TypeDefIndex: 1876
 {
-	private readonly IXmlNamespaceResolver readerAsIXmlNamespaceResolver; 
+	private readonly IXmlNamespaceResolver readerAsIXmlNamespaceResolver;
 
 
 	public void .ctor(XmlReader reader) { }
@@ -1409,7 +1409,7 @@ internal class XmlAsyncCheckReaderWithLineInfoNS : XmlAsyncCheckReaderWithLineIn
 
 internal class XmlAsyncCheckReaderWithLineInfoNSSchema : XmlAsyncCheckReaderWithLineInfoNS, IXmlSchemaInfo // TypeDefIndex: 1877
 {
-	private readonly IXmlSchemaInfo readerAsIXmlSchemaInfo; 
+	private readonly IXmlSchemaInfo readerAsIXmlSchemaInfo;
 
 	private XmlSchemaValidity System.Xml.Schema.IXmlSchemaInfo.Validity { get; }
 	private bool System.Xml.Schema.IXmlSchemaInfo.IsDefault { get; }
@@ -1440,8 +1440,8 @@ internal class XmlAsyncCheckReaderWithLineInfoNSSchema : XmlAsyncCheckReaderWith
 
 internal class XmlAsyncCheckWriter : XmlWriter // TypeDefIndex: 1878
 {
-	private readonly XmlWriter coreWriter; 
-	private Task lastTask; 
+	private readonly XmlWriter coreWriter;
+	private Task lastTask;
 
 	public override WriteState WriteState { get; }
 
@@ -1514,12 +1514,12 @@ internal class XmlAsyncCheckWriter : XmlWriter // TypeDefIndex: 1878
 
 internal class XmlAutoDetectWriter : XmlRawWriter // TypeDefIndex: 1879
 {
-	private XmlRawWriter wrapped; 
-	private OnRemoveWriter onRemove; 
-	private XmlWriterSettings writerSettings; 
-	private XmlEventCache eventCache; 
-	private TextWriter textWriter; 
-	private Stream strm; 
+	private XmlRawWriter wrapped;
+	private OnRemoveWriter onRemove;
+	private XmlWriterSettings writerSettings;
+	private XmlEventCache eventCache;
+	private TextWriter textWriter;
+	private Stream strm;
 
 	internal override IXmlNamespaceResolver NamespaceResolver { set; }
 	internal override bool SupportsNamespaceDeclarationInChunks { get; }
@@ -1603,38 +1603,38 @@ internal class XmlAutoDetectWriter : XmlRawWriter // TypeDefIndex: 1879
 
 internal class XmlEncodedRawTextWriter : XmlRawWriter // TypeDefIndex: 1880
 {
-	private readonly bool useAsync; 
-	protected byte[] bufBytes; 
-	protected Stream stream; 
-	protected Encoding encoding; 
-	protected XmlCharType xmlCharType; 
-	protected int bufPos; 
-	protected int textPos; 
-	protected int contentPos; 
-	protected int cdataPos; 
-	protected int attrEndPos; 
-	protected int bufLen; 
-	protected bool writeToNull; 
-	protected bool hadDoubleBracket; 
-	protected bool inAttributeValue; 
-	protected int bufBytesUsed; 
-	protected char[] bufChars; 
-	protected Encoder encoder; 
-	protected TextWriter writer; 
-	protected bool trackTextContent; 
-	protected bool inTextContent; 
-	private int lastMarkPos; 
-	private int[] textContentMarks; 
-	private CharEntityEncoderFallback charEntityFallback; 
-	protected NewLineHandling newLineHandling; 
-	protected bool closeOutput; 
-	protected bool omitXmlDeclaration; 
-	protected string newLineChars; 
-	protected bool checkCharacters; 
-	protected XmlStandalone standalone; 
-	protected XmlOutputMethod outputMethod; 
-	protected bool autoXmlDeclaration; 
-	protected bool mergeCDataSections; 
+	private readonly bool useAsync;
+	protected byte[] bufBytes;
+	protected Stream stream;
+	protected Encoding encoding;
+	protected XmlCharType xmlCharType;
+	protected int bufPos;
+	protected int textPos;
+	protected int contentPos;
+	protected int cdataPos;
+	protected int attrEndPos;
+	protected int bufLen;
+	protected bool writeToNull;
+	protected bool hadDoubleBracket;
+	protected bool inAttributeValue;
+	protected int bufBytesUsed;
+	protected char[] bufChars;
+	protected Encoder encoder;
+	protected TextWriter writer;
+	protected bool trackTextContent;
+	protected bool inTextContent;
+	private int lastMarkPos;
+	private int[] textContentMarks;
+	private CharEntityEncoderFallback charEntityFallback;
+	protected NewLineHandling newLineHandling;
+	protected bool closeOutput;
+	protected bool omitXmlDeclaration;
+	protected string newLineChars;
+	protected bool checkCharacters;
+	protected XmlStandalone standalone;
+	protected XmlOutputMethod outputMethod;
+	protected bool autoXmlDeclaration;
+	protected bool mergeCDataSections;
 
 	internal override bool SupportsNamespaceDeclarationInChunks { get; }
 
@@ -1755,12 +1755,12 @@ internal class XmlEncodedRawTextWriter : XmlRawWriter // TypeDefIndex: 1880
 
 internal class XmlEncodedRawTextWriterIndent : XmlEncodedRawTextWriter // TypeDefIndex: 1881
 {
-	protected int indentLevel; 
-	protected bool newLineOnAttributes; 
-	protected string indentChars; 
-	protected bool mixedContent; 
-	private BitStack mixedContentStack; 
-	protected ConformanceLevel conformanceLevel; 
+	protected int indentLevel;
+	protected bool newLineOnAttributes;
+	protected string indentChars;
+	protected bool mixedContent;
+	private BitStack mixedContentStack;
+	protected ConformanceLevel conformanceLevel;
 
 
 	public void .ctor(TextWriter writer, XmlWriterSettings settings) { }
@@ -1813,12 +1813,12 @@ internal class XmlEncodedRawTextWriterIndent : XmlEncodedRawTextWriter // TypeDe
 
 internal sealed class XmlEventCache : XmlRawWriter // TypeDefIndex: 1882
 {
-	private List<XmlEventCache.XmlEvent[]> pages; 
-	private XmlEventCache.XmlEvent[] pageCurr; 
-	private int pageSize; 
-	private bool hasRootNode; 
-	private StringConcat singleText; 
-	private string baseUri; 
+	private List<XmlEventCache.XmlEvent[]> pages;
+	private XmlEventCache.XmlEvent[] pageCurr;
+	private int pageSize;
+	private bool hasRootNode;
+	private StringConcat singleText;
+	private string baseUri;
 
 
 	public void .ctor(string baseUri, bool hasRootNode) { }
@@ -1903,7 +1903,7 @@ internal sealed class XmlEventCache : XmlRawWriter // TypeDefIndex: 1882
 
 private enum XmlEventCache.XmlEventType // TypeDefIndex: 1883
 {
-	public int value__; 
+	public int value__;
 	public const XmlEventCache.XmlEventType Unknown = 0;
 	public const XmlEventCache.XmlEventType DocType = 1;
 	public const XmlEventCache.XmlEventType StartElem = 2;
@@ -1935,11 +1935,11 @@ private enum XmlEventCache.XmlEventType // TypeDefIndex: 1883
 
 private struct XmlEventCache.XmlEvent // TypeDefIndex: 1884
 {
-	private XmlEventCache.XmlEventType eventType; 
-	private string s1; 
-	private string s2; 
-	private string s3; 
-	private object o; 
+	private XmlEventCache.XmlEventType eventType;
+	private string s1;
+	private string s2;
+	private string s3;
+	private object o;
 
 	public XmlEventCache.XmlEventType EventType { get; }
 	public string String1 { get; }
@@ -1974,16 +1974,16 @@ private struct XmlEventCache.XmlEvent // TypeDefIndex: 1884
 
 public class XmlParserContext // TypeDefIndex: 1885
 {
-	private XmlNameTable _nt; 
-	private XmlNamespaceManager _nsMgr; 
-	private string _docTypeName; 
-	private string _pubId; 
-	private string _sysId; 
-	private string _internalSubset; 
-	private string _xmlLang; 
-	private XmlSpace _xmlSpace; 
-	private string _baseURI; 
-	private Encoding _encoding; 
+	private XmlNameTable _nt;
+	private XmlNamespaceManager _nsMgr;
+	private string _docTypeName;
+	private string _pubId;
+	private string _sysId;
+	private string _internalSubset;
+	private string _xmlLang;
+	private XmlSpace _xmlSpace;
+	private string _baseURI;
+	private Encoding _encoding;
 
 	public XmlNameTable NameTable { get; }
 	public XmlNamespaceManager NamespaceManager { get; }
@@ -2030,8 +2030,8 @@ public class XmlParserContext // TypeDefIndex: 1885
 
 internal abstract class XmlRawWriter : XmlWriter // TypeDefIndex: 1886
 {
-	protected XmlRawWriterBase64Encoder base64Encoder; 
-	protected IXmlNamespaceResolver resolver; 
+	protected XmlRawWriterBase64Encoder base64Encoder;
+	protected IXmlNamespaceResolver resolver;
 
 	public override WriteState WriteState { get; }
 	internal virtual IXmlNamespaceResolver NamespaceResolver { set; }
@@ -2108,9 +2108,9 @@ internal abstract class XmlRawWriter : XmlWriter // TypeDefIndex: 1886
 
 public abstract class XmlReader : IDisposable // TypeDefIndex: 1887
 {
-	private static uint IsTextualNodeBitmap; 
-	private static uint CanReadContentAsBitmap; 
-	private static uint HasValueBitmap; 
+	private static uint IsTextualNodeBitmap;
+	private static uint CanReadContentAsBitmap;
+	private static uint HasValueBitmap;
 
 	public virtual XmlReaderSettings Settings { get; }
 	public abstract XmlNodeType NodeType { get; }
@@ -2214,14 +2214,14 @@ public abstract class XmlReader : IDisposable // TypeDefIndex: 1887
 
 	public virtual int ReadValueChunk(char[] buffer, int index, int count) { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public virtual string ReadString() { }
 
 	public virtual XmlNodeType MoveToContent() { }
 
 	public virtual void ReadStartElement() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public virtual string ReadElementString() { }
 
 	public virtual void ReadEndElement() { }
@@ -2272,28 +2272,28 @@ public abstract class XmlReader : IDisposable // TypeDefIndex: 1887
 
 public sealed class XmlReaderSettings // TypeDefIndex: 1888
 {
-	private bool useAsync; 
-	private XmlNameTable nameTable; 
-	private XmlResolver xmlResolver; 
-	private int lineNumberOffset; 
-	private int linePositionOffset; 
-	private ConformanceLevel conformanceLevel; 
-	private bool checkCharacters; 
-	private long maxCharactersInDocument; 
-	private long maxCharactersFromEntities; 
-	private bool ignoreWhitespace; 
-	private bool ignorePIs; 
-	private bool ignoreComments; 
-	private DtdProcessing dtdProcessing; 
-	private ValidationType validationType; 
-	private XmlSchemaValidationFlags validationFlags; 
-	private XmlSchemaSet schemas; 
-	private ValidationEventHandler valEventHandler; 
-	private bool closeInput; 
-	private bool isReadOnly; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsXmlResolverSet>k__BackingField; 
-	private static Nullable<bool> s_enableLegacyXmlSettings; 
+	private bool useAsync;
+	private XmlNameTable nameTable;
+	private XmlResolver xmlResolver;
+	private int lineNumberOffset;
+	private int linePositionOffset;
+	private ConformanceLevel conformanceLevel;
+	private bool checkCharacters;
+	private long maxCharactersInDocument;
+	private long maxCharactersFromEntities;
+	private bool ignoreWhitespace;
+	private bool ignorePIs;
+	private bool ignoreComments;
+	private DtdProcessing dtdProcessing;
+	private ValidationType validationType;
+	private XmlSchemaValidationFlags validationFlags;
+	private XmlSchemaSet schemas;
+	private ValidationEventHandler valEventHandler;
+	private bool closeInput;
+	private bool isReadOnly;
+	[CompilerGeneratedAttribute]
+	private bool <IsXmlResolverSet>k__BackingField;
+	private static Nullable<bool> s_enableLegacyXmlSettings;
 
 	public bool Async { get; set; }
 	public XmlNameTable NameTable { get; set; }
@@ -2326,10 +2326,10 @@ public sealed class XmlReaderSettings // TypeDefIndex: 1888
 
 	public void set_NameTable(XmlNameTable value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_IsXmlResolverSet() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_IsXmlResolverSet(bool value) { }
 
 	public void set_XmlResolver(XmlResolver value) { }
@@ -2422,7 +2422,7 @@ public sealed class XmlReaderSettings // TypeDefIndex: 1888
 
 public enum XmlSpace // TypeDefIndex: 1889
 {
-	public int value__; 
+	public int value__;
 	public const XmlSpace None = 0;
 	public const XmlSpace Default = 1;
 	public const XmlSpace Preserve = 2;
@@ -2431,12 +2431,12 @@ public enum XmlSpace // TypeDefIndex: 1889
 
 internal class XmlTextEncoder // TypeDefIndex: 1890
 {
-	private TextWriter textWriter; 
-	private bool inAttribute; 
-	private char quoteChar; 
-	private StringBuilder attrValue; 
-	private bool cacheAttrValue; 
-	private XmlCharType xmlCharType; 
+	private TextWriter textWriter;
+	private bool inAttribute;
+	private char quoteChar;
+	private StringBuilder attrValue;
+	private bool cacheAttrValue;
+	private XmlCharType xmlCharType;
 
 	internal char QuoteChar { set; }
 	internal string AttributeValue { get; }
@@ -2480,7 +2480,7 @@ internal class XmlTextEncoder // TypeDefIndex: 1890
 
 public class XmlTextReader : XmlReader, IXmlLineInfo, IXmlNamespaceResolver // TypeDefIndex: 1891
 {
-	private XmlTextReaderImpl impl; 
+	private XmlTextReaderImpl impl;
 
 	public override XmlNodeType NodeType { get; }
 	public override string Name { get; }
@@ -2626,83 +2626,83 @@ public class XmlTextReader : XmlReader, IXmlLineInfo, IXmlNamespaceResolver // T
 
 internal class XmlTextReaderImpl : XmlReader, IXmlLineInfo, IXmlNamespaceResolver // TypeDefIndex: 1892
 {
-	private readonly bool useAsync; 
-	private XmlTextReaderImpl.LaterInitParam laterInitParam; 
-	private XmlCharType xmlCharType; 
-	private XmlTextReaderImpl.ParsingState ps; 
-	private XmlTextReaderImpl.ParsingFunction parsingFunction; 
-	private XmlTextReaderImpl.ParsingFunction nextParsingFunction; 
-	private XmlTextReaderImpl.ParsingFunction nextNextParsingFunction; 
-	private XmlTextReaderImpl.NodeData[] nodes; 
-	private XmlTextReaderImpl.NodeData curNode; 
-	private int index; 
-	private int curAttrIndex; 
-	private int attrCount; 
-	private int attrHashtable; 
-	private int attrDuplWalkCount; 
-	private bool attrNeedNamespaceLookup; 
-	private bool fullAttrCleanup; 
-	private XmlTextReaderImpl.NodeData[] attrDuplSortingArray; 
-	private XmlNameTable nameTable; 
-	private bool nameTableFromSettings; 
-	private XmlResolver xmlResolver; 
-	private string url; 
-	private bool normalize; 
-	private bool supportNamespaces; 
-	private WhitespaceHandling whitespaceHandling; 
-	private DtdProcessing dtdProcessing; 
-	private EntityHandling entityHandling; 
-	private bool ignorePIs; 
-	private bool ignoreComments; 
-	private bool checkCharacters; 
-	private int lineNumberOffset; 
-	private int linePositionOffset; 
-	private bool closeInput; 
-	private long maxCharactersInDocument; 
-	private long maxCharactersFromEntities; 
-	private bool v1Compat; 
-	private XmlNamespaceManager namespaceManager; 
-	private string lastPrefix; 
-	private XmlTextReaderImpl.XmlContext xmlContext; 
-	private XmlTextReaderImpl.ParsingState[] parsingStatesStack; 
-	private int parsingStatesStackTop; 
-	private string reportedBaseUri; 
-	private Encoding reportedEncoding; 
-	private IDtdInfo dtdInfo; 
-	private XmlNodeType fragmentType; 
-	private XmlParserContext fragmentParserContext; 
-	private bool fragment; 
-	private IncrementalReadDecoder incReadDecoder; 
-	private XmlTextReaderImpl.IncrementalReadState incReadState; 
-	private LineInfo incReadLineInfo; 
-	private int incReadDepth; 
-	private int incReadLeftStartPos; 
-	private int incReadLeftEndPos; 
-	private int attributeValueBaseEntityId; 
-	private bool emptyEntityInAttributeResolved; 
-	private IValidationEventHandling validationEventHandling; 
-	private XmlTextReaderImpl.OnDefaultAttributeUseDelegate onDefaultAttributeUse; 
-	private bool validatingReaderCompatFlag; 
-	private bool addDefaultAttributesAndNormalize; 
-	private StringBuilder stringBuilder; 
-	private bool rootElementParsed; 
-	private bool standalone; 
-	private int nextEntityId; 
-	private XmlTextReaderImpl.ParsingMode parsingMode; 
-	private ReadState readState; 
-	private IDtdEntityInfo lastEntity; 
-	private bool afterResetState; 
-	private int documentStartBytePos; 
-	private int readValueOffset; 
-	private long charactersInDocument; 
-	private long charactersFromEntities; 
-	private Dictionary<IDtdEntityInfo, IDtdEntityInfo> currentEntities; 
-	private bool disableUndeclaredEntityCheck; 
-	private XmlReader outerReader; 
-	private bool xmlResolverIsSet; 
-	private string Xml; 
-	private string XmlNs; 
-	private Task<Tuple<int, int, int, bool>> parseText_dummyTask; 
+	private readonly bool useAsync;
+	private XmlTextReaderImpl.LaterInitParam laterInitParam;
+	private XmlCharType xmlCharType;
+	private XmlTextReaderImpl.ParsingState ps;
+	private XmlTextReaderImpl.ParsingFunction parsingFunction;
+	private XmlTextReaderImpl.ParsingFunction nextParsingFunction;
+	private XmlTextReaderImpl.ParsingFunction nextNextParsingFunction;
+	private XmlTextReaderImpl.NodeData[] nodes;
+	private XmlTextReaderImpl.NodeData curNode;
+	private int index;
+	private int curAttrIndex;
+	private int attrCount;
+	private int attrHashtable;
+	private int attrDuplWalkCount;
+	private bool attrNeedNamespaceLookup;
+	private bool fullAttrCleanup;
+	private XmlTextReaderImpl.NodeData[] attrDuplSortingArray;
+	private XmlNameTable nameTable;
+	private bool nameTableFromSettings;
+	private XmlResolver xmlResolver;
+	private string url;
+	private bool normalize;
+	private bool supportNamespaces;
+	private WhitespaceHandling whitespaceHandling;
+	private DtdProcessing dtdProcessing;
+	private EntityHandling entityHandling;
+	private bool ignorePIs;
+	private bool ignoreComments;
+	private bool checkCharacters;
+	private int lineNumberOffset;
+	private int linePositionOffset;
+	private bool closeInput;
+	private long maxCharactersInDocument;
+	private long maxCharactersFromEntities;
+	private bool v1Compat;
+	private XmlNamespaceManager namespaceManager;
+	private string lastPrefix;
+	private XmlTextReaderImpl.XmlContext xmlContext;
+	private XmlTextReaderImpl.ParsingState[] parsingStatesStack;
+	private int parsingStatesStackTop;
+	private string reportedBaseUri;
+	private Encoding reportedEncoding;
+	private IDtdInfo dtdInfo;
+	private XmlNodeType fragmentType;
+	private XmlParserContext fragmentParserContext;
+	private bool fragment;
+	private IncrementalReadDecoder incReadDecoder;
+	private XmlTextReaderImpl.IncrementalReadState incReadState;
+	private LineInfo incReadLineInfo;
+	private int incReadDepth;
+	private int incReadLeftStartPos;
+	private int incReadLeftEndPos;
+	private int attributeValueBaseEntityId;
+	private bool emptyEntityInAttributeResolved;
+	private IValidationEventHandling validationEventHandling;
+	private XmlTextReaderImpl.OnDefaultAttributeUseDelegate onDefaultAttributeUse;
+	private bool validatingReaderCompatFlag;
+	private bool addDefaultAttributesAndNormalize;
+	private StringBuilder stringBuilder;
+	private bool rootElementParsed;
+	private bool standalone;
+	private int nextEntityId;
+	private XmlTextReaderImpl.ParsingMode parsingMode;
+	private ReadState readState;
+	private IDtdEntityInfo lastEntity;
+	private bool afterResetState;
+	private int documentStartBytePos;
+	private int readValueOffset;
+	private long charactersInDocument;
+	private long charactersFromEntities;
+	private Dictionary<IDtdEntityInfo, IDtdEntityInfo> currentEntities;
+	private bool disableUndeclaredEntityCheck;
+	private XmlReader outerReader;
+	private bool xmlResolverIsSet;
+	private string Xml;
+	private string XmlNs;
+	private Task<Tuple<int, int, int, bool>> parseText_dummyTask;
 
 	public override XmlReaderSettings Settings { get; }
 	public override XmlNodeType NodeType { get; }
@@ -3310,7 +3310,7 @@ internal class XmlTextReaderImpl : XmlReader, IXmlLineInfo, IXmlNamespaceResolve
 
 private enum XmlTextReaderImpl.ParsingFunction // TypeDefIndex: 1893
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextReaderImpl.ParsingFunction ElementContent = 0;
 	public const XmlTextReaderImpl.ParsingFunction NoData = 1;
 	public const XmlTextReaderImpl.ParsingFunction OpenUrl = 2;
@@ -3342,7 +3342,7 @@ private enum XmlTextReaderImpl.ParsingFunction // TypeDefIndex: 1893
 
 private enum XmlTextReaderImpl.ParsingMode // TypeDefIndex: 1894
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextReaderImpl.ParsingMode Full = 0;
 	public const XmlTextReaderImpl.ParsingMode SkipNode = 1;
 	public const XmlTextReaderImpl.ParsingMode SkipContent = 2;
@@ -3351,7 +3351,7 @@ private enum XmlTextReaderImpl.ParsingMode // TypeDefIndex: 1894
 
 private enum XmlTextReaderImpl.EntityType // TypeDefIndex: 1895
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextReaderImpl.EntityType CharacterDec = 0;
 	public const XmlTextReaderImpl.EntityType CharacterHex = 1;
 	public const XmlTextReaderImpl.EntityType CharacterNamed = 2;
@@ -3365,7 +3365,7 @@ private enum XmlTextReaderImpl.EntityType // TypeDefIndex: 1895
 
 private enum XmlTextReaderImpl.EntityExpandType // TypeDefIndex: 1896
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextReaderImpl.EntityExpandType All = 0;
 	public const XmlTextReaderImpl.EntityExpandType OnlyGeneral = 1;
 	public const XmlTextReaderImpl.EntityExpandType OnlyCharacter = 2;
@@ -3374,7 +3374,7 @@ private enum XmlTextReaderImpl.EntityExpandType // TypeDefIndex: 1896
 
 private enum XmlTextReaderImpl.IncrementalReadState // TypeDefIndex: 1897
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextReaderImpl.IncrementalReadState Text = 0;
 	public const XmlTextReaderImpl.IncrementalReadState StartTag = 1;
 	public const XmlTextReaderImpl.IncrementalReadState PI = 2;
@@ -3395,16 +3395,16 @@ private enum XmlTextReaderImpl.IncrementalReadState // TypeDefIndex: 1897
 
 private class XmlTextReaderImpl.LaterInitParam // TypeDefIndex: 1898
 {
-	public bool useAsync; 
-	public Stream inputStream; 
-	public byte[] inputBytes; 
-	public int inputByteCount; 
-	public Uri inputbaseUri; 
-	public string inputUriStr; 
-	public XmlResolver inputUriResolver; 
-	public XmlParserContext inputContext; 
-	public TextReader inputTextReader; 
-	public XmlTextReaderImpl.InitInputType initType; 
+	public bool useAsync;
+	public Stream inputStream;
+	public byte[] inputBytes;
+	public int inputByteCount;
+	public Uri inputbaseUri;
+	public string inputUriStr;
+	public XmlResolver inputUriResolver;
+	public XmlParserContext inputContext;
+	public TextReader inputTextReader;
+	public XmlTextReaderImpl.InitInputType initType;
 
 
 	public void .ctor() { }
@@ -3413,7 +3413,7 @@ private class XmlTextReaderImpl.LaterInitParam // TypeDefIndex: 1898
 
 private enum XmlTextReaderImpl.InitInputType // TypeDefIndex: 1899
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextReaderImpl.InitInputType UriString = 0;
 	public const XmlTextReaderImpl.InitInputType Stream = 1;
 	public const XmlTextReaderImpl.InitInputType TextReader = 2;
@@ -3423,27 +3423,27 @@ private enum XmlTextReaderImpl.InitInputType // TypeDefIndex: 1899
 
 private struct XmlTextReaderImpl.ParsingState // TypeDefIndex: 1900
 {
-	internal char[] chars; 
-	internal int charPos; 
-	internal int charsUsed; 
-	internal Encoding encoding; 
-	internal bool appendMode; 
-	internal Stream stream; 
-	internal Decoder decoder; 
-	internal byte[] bytes; 
-	internal int bytePos; 
-	internal int bytesUsed; 
-	internal TextReader textReader; 
-	internal int lineNo; 
-	internal int lineStartPos; 
-	internal string baseUriStr; 
-	internal Uri baseUri; 
-	internal bool isEof; 
-	internal bool isStreamEof; 
-	internal IDtdEntityInfo entity; 
-	internal int entityId; 
-	internal bool eolNormalized; 
-	internal bool entityResolvedManually; 
+	internal char[] chars;
+	internal int charPos;
+	internal int charsUsed;
+	internal Encoding encoding;
+	internal bool appendMode;
+	internal Stream stream;
+	internal Decoder decoder;
+	internal byte[] bytes;
+	internal int bytePos;
+	internal int bytesUsed;
+	internal TextReader textReader;
+	internal int lineNo;
+	internal int lineStartPos;
+	internal string baseUriStr;
+	internal Uri baseUri;
+	internal bool isEof;
+	internal bool isStreamEof;
+	internal IDtdEntityInfo entity;
+	internal int entityId;
+	internal bool eolNormalized;
+	internal bool entityResolvedManually;
 
 	internal int LineNo { get; }
 	internal int LinePos { get; }
@@ -3461,10 +3461,10 @@ private struct XmlTextReaderImpl.ParsingState // TypeDefIndex: 1900
 
 private class XmlTextReaderImpl.XmlContext // TypeDefIndex: 1901
 {
-	internal XmlSpace xmlSpace; 
-	internal string xmlLang; 
-	internal string defaultNamespace; 
-	internal XmlTextReaderImpl.XmlContext previousContext; 
+	internal XmlSpace xmlSpace;
+	internal string xmlLang;
+	internal string defaultNamespace;
+	internal XmlTextReaderImpl.XmlContext previousContext;
 
 
 	internal void .ctor() { }
@@ -3502,7 +3502,7 @@ private class XmlTextReaderImpl.NoNamespaceManager : XmlNamespaceManager // Type
 
 internal class XmlTextReaderImpl.DtdParserProxy : IDtdParserAdapterV1, IDtdParserAdapterWithValidation, IDtdParserAdapter // TypeDefIndex: 1903
 {
-	private XmlTextReaderImpl reader; 
+	private XmlTextReaderImpl reader;
 
 	private XmlNameTable System.Xml.IDtdParserAdapter.NameTable { get; }
 	private IXmlNamespaceResolver System.Xml.IDtdParserAdapter.NamespaceResolver { get; }
@@ -3588,26 +3588,26 @@ internal class XmlTextReaderImpl.DtdParserProxy : IDtdParserAdapterV1, IDtdParse
 
 private class XmlTextReaderImpl.NodeData : IComparable // TypeDefIndex: 1904
 {
-	private static XmlTextReaderImpl.NodeData s_None; 
-	internal XmlNodeType type; 
-	internal string localName; 
-	internal string prefix; 
-	internal string ns; 
-	internal string nameWPrefix; 
-	private string value; 
-	private char[] chars; 
-	private int valueStartPos; 
-	private int valueLength; 
-	internal LineInfo lineInfo; 
-	internal LineInfo lineInfo2; 
-	internal char quoteChar; 
-	internal int depth; 
-	private bool isEmptyOrDefault; 
-	internal int entityId; 
-	internal bool xmlContextPushed; 
-	internal XmlTextReaderImpl.NodeData nextAttrValueChunk; 
-	internal object schemaType; 
-	internal object typedValue; 
+	private static XmlTextReaderImpl.NodeData s_None;
+	internal XmlNodeType type;
+	internal string localName;
+	internal string prefix;
+	internal string ns;
+	internal string nameWPrefix;
+	private string value;
+	private char[] chars;
+	private int valueStartPos;
+	private int valueLength;
+	internal LineInfo lineInfo;
+	internal LineInfo lineInfo2;
+	internal char quoteChar;
+	internal int depth;
+	private bool isEmptyOrDefault;
+	internal int entityId;
+	internal bool xmlContextPushed;
+	internal XmlTextReaderImpl.NodeData nextAttrValueChunk;
+	internal object schemaType;
+	internal object typedValue;
 
 	internal static XmlTextReaderImpl.NodeData None { get; }
 	internal int LineNo { get; }
@@ -3676,7 +3676,7 @@ private class XmlTextReaderImpl.NodeData : IComparable // TypeDefIndex: 1904
 
 private class XmlTextReaderImpl.DtdDefaultAttributeInfoToNodeDataComparer : IComparer<object> // TypeDefIndex: 1905
 {
-	private static IComparer<object> s_instance; 
+	private static IComparer<object> s_instance;
 
 	internal static IComparer<object> Instance { get; }
 
@@ -3706,34 +3706,34 @@ internal sealed class XmlTextReaderImpl.OnDefaultAttributeUseDelegate : Multicas
 
 public class XmlTextWriter : XmlWriter // TypeDefIndex: 1908
 {
-	private TextWriter textWriter; 
-	private XmlTextEncoder xmlEncoder; 
-	private Encoding encoding; 
-	private Formatting formatting; 
-	private bool indented; 
-	private int indentation; 
-	private char indentChar; 
-	private XmlTextWriter.TagInfo[] stack; 
-	private int top; 
-	private XmlTextWriter.State[] stateTable; 
-	private XmlTextWriter.State currentState; 
-	private XmlTextWriter.Token lastToken; 
-	private XmlTextWriterBase64Encoder base64Encoder; 
-	private char quoteChar; 
-	private char curQuoteChar; 
-	private bool namespaces; 
-	private XmlTextWriter.SpecialAttr specialAttr; 
-	private string prefixForXmlNs; 
-	private bool flush; 
-	private XmlTextWriter.Namespace[] nsStack; 
-	private int nsTop; 
-	private Dictionary<string, int> nsHashtable; 
-	private bool useNsHashtable; 
-	private XmlCharType xmlCharType; 
-	private static string[] stateName; 
-	private static string[] tokenName; 
-	private static readonly XmlTextWriter.State[] stateTableDefault; 
-	private static readonly XmlTextWriter.State[] stateTableDocument; 
+	private TextWriter textWriter;
+	private XmlTextEncoder xmlEncoder;
+	private Encoding encoding;
+	private Formatting formatting;
+	private bool indented;
+	private int indentation;
+	private char indentChar;
+	private XmlTextWriter.TagInfo[] stack;
+	private int top;
+	private XmlTextWriter.State[] stateTable;
+	private XmlTextWriter.State currentState;
+	private XmlTextWriter.Token lastToken;
+	private XmlTextWriterBase64Encoder base64Encoder;
+	private char quoteChar;
+	private char curQuoteChar;
+	private bool namespaces;
+	private XmlTextWriter.SpecialAttr specialAttr;
+	private string prefixForXmlNs;
+	private bool flush;
+	private XmlTextWriter.Namespace[] nsStack;
+	private int nsTop;
+	private Dictionary<string, int> nsHashtable;
+	private bool useNsHashtable;
+	private XmlCharType xmlCharType;
+	private static string[] stateName;
+	private static string[] tokenName;
+	private static readonly XmlTextWriter.State[] stateTableDefault;
+	private static readonly XmlTextWriter.State[] stateTableDocument;
 
 	public Stream BaseStream { get; }
 	public bool Namespaces { set; }
@@ -3858,7 +3858,7 @@ public class XmlTextWriter : XmlWriter // TypeDefIndex: 1908
 
 private enum XmlTextWriter.NamespaceState // TypeDefIndex: 1909
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextWriter.NamespaceState Uninitialized = 0;
 	public const XmlTextWriter.NamespaceState NotDeclaredButInScope = 1;
 	public const XmlTextWriter.NamespaceState DeclaredButNotWrittenOut = 2;
@@ -3868,15 +3868,15 @@ private enum XmlTextWriter.NamespaceState // TypeDefIndex: 1909
 
 private struct XmlTextWriter.TagInfo // TypeDefIndex: 1910
 {
-	internal string name; 
-	internal string prefix; 
-	internal string defaultNs; 
-	internal XmlTextWriter.NamespaceState defaultNsState; 
-	internal XmlSpace xmlSpace; 
-	internal string xmlLang; 
-	internal int prevNsTop; 
-	internal int prefixCount; 
-	internal bool mixed; 
+	internal string name;
+	internal string prefix;
+	internal string defaultNs;
+	internal XmlTextWriter.NamespaceState defaultNsState;
+	internal XmlSpace xmlSpace;
+	internal string xmlLang;
+	internal int prevNsTop;
+	internal int prefixCount;
+	internal bool mixed;
 
 
 	internal void Init(int nsTop) { }
@@ -3885,10 +3885,10 @@ private struct XmlTextWriter.TagInfo // TypeDefIndex: 1910
 
 private struct XmlTextWriter.Namespace // TypeDefIndex: 1911
 {
-	internal string prefix; 
-	internal string ns; 
-	internal bool declared; 
-	internal int prevNsIndex; 
+	internal string prefix;
+	internal string ns;
+	internal bool declared;
+	internal int prevNsIndex;
 
 
 	internal void Set(string prefix, string ns, bool declared) { }
@@ -3897,7 +3897,7 @@ private struct XmlTextWriter.Namespace // TypeDefIndex: 1911
 
 private enum XmlTextWriter.SpecialAttr // TypeDefIndex: 1912
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextWriter.SpecialAttr None = 0;
 	public const XmlTextWriter.SpecialAttr XmlSpace = 1;
 	public const XmlTextWriter.SpecialAttr XmlLang = 2;
@@ -3907,7 +3907,7 @@ private enum XmlTextWriter.SpecialAttr // TypeDefIndex: 1912
 
 private enum XmlTextWriter.State // TypeDefIndex: 1913
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextWriter.State Start = 0;
 	public const XmlTextWriter.State Prolog = 1;
 	public const XmlTextWriter.State PostDTD = 2;
@@ -3923,7 +3923,7 @@ private enum XmlTextWriter.State // TypeDefIndex: 1913
 
 private enum XmlTextWriter.Token // TypeDefIndex: 1914
 {
-	public int value__; 
+	public int value__;
 	public const XmlTextWriter.Token PI = 0;
 	public const XmlTextWriter.Token Doctype = 1;
 	public const XmlTextWriter.Token Comment = 2;
@@ -3943,29 +3943,29 @@ private enum XmlTextWriter.Token // TypeDefIndex: 1914
 
 internal class XmlUtf8RawTextWriter : XmlRawWriter // TypeDefIndex: 1915
 {
-	private readonly bool useAsync; 
-	protected byte[] bufBytes; 
-	protected Stream stream; 
-	protected Encoding encoding; 
-	protected XmlCharType xmlCharType; 
-	protected int bufPos; 
-	protected int textPos; 
-	protected int contentPos; 
-	protected int cdataPos; 
-	protected int attrEndPos; 
-	protected int bufLen; 
-	protected bool writeToNull; 
-	protected bool hadDoubleBracket; 
-	protected bool inAttributeValue; 
-	protected NewLineHandling newLineHandling; 
-	protected bool closeOutput; 
-	protected bool omitXmlDeclaration; 
-	protected string newLineChars; 
-	protected bool checkCharacters; 
-	protected XmlStandalone standalone; 
-	protected XmlOutputMethod outputMethod; 
-	protected bool autoXmlDeclaration; 
-	protected bool mergeCDataSections; 
+	private readonly bool useAsync;
+	protected byte[] bufBytes;
+	protected Stream stream;
+	protected Encoding encoding;
+	protected XmlCharType xmlCharType;
+	protected int bufPos;
+	protected int textPos;
+	protected int contentPos;
+	protected int cdataPos;
+	protected int attrEndPos;
+	protected int bufLen;
+	protected bool writeToNull;
+	protected bool hadDoubleBracket;
+	protected bool inAttributeValue;
+	protected NewLineHandling newLineHandling;
+	protected bool closeOutput;
+	protected bool omitXmlDeclaration;
+	protected string newLineChars;
+	protected bool checkCharacters;
+	protected XmlStandalone standalone;
+	protected XmlOutputMethod outputMethod;
+	protected bool autoXmlDeclaration;
+	protected bool mergeCDataSections;
 
 	internal override bool SupportsNamespaceDeclarationInChunks { get; }
 
@@ -4084,12 +4084,12 @@ internal class XmlUtf8RawTextWriter : XmlRawWriter // TypeDefIndex: 1915
 
 internal class XmlUtf8RawTextWriterIndent : XmlUtf8RawTextWriter // TypeDefIndex: 1916
 {
-	protected int indentLevel; 
-	protected bool newLineOnAttributes; 
-	protected string indentChars; 
-	protected bool mixedContent; 
-	private BitStack mixedContentStack; 
-	protected ConformanceLevel conformanceLevel; 
+	protected int indentLevel;
+	protected bool newLineOnAttributes;
+	protected string indentChars;
+	protected bool mixedContent;
+	private BitStack mixedContentStack;
+	protected ConformanceLevel conformanceLevel;
 
 
 	public void .ctor(Stream stream, XmlWriterSettings settings) { }
@@ -4140,7 +4140,7 @@ internal class XmlUtf8RawTextWriterIndent : XmlUtf8RawTextWriter // TypeDefIndex
 
 public class XmlValidatingReader : XmlReader // TypeDefIndex: 1917
 {
-	private XmlValidatingReaderImpl impl; 
+	private XmlValidatingReaderImpl impl;
 
 	public override XmlNodeType NodeType { get; }
 	public override string LocalName { get; }
@@ -4209,19 +4209,19 @@ public class XmlValidatingReader : XmlReader // TypeDefIndex: 1917
 
 internal sealed class XmlValidatingReaderImpl : XmlReader, IXmlLineInfo, IXmlNamespaceResolver // TypeDefIndex: 1918
 {
-	private XmlReader coreReader; 
-	private XmlTextReaderImpl coreReaderImpl; 
-	private IXmlNamespaceResolver coreReaderNSResolver; 
-	private ValidationType validationType; 
-	private BaseValidator validator; 
-	private XmlSchemaCollection schemaCollection; 
-	private bool processIdentityConstraints; 
-	private XmlValidatingReaderImpl.ParsingFunction parsingFunction; 
-	private XmlValidatingReaderImpl.ValidationEventHandling eventHandling; 
-	private XmlParserContext parserContext; 
-	private ReadContentAsBinaryHelper readBinaryHelper; 
-	private XmlReader outerReader; 
-	private static XmlResolver s_tempResolver; 
+	private XmlReader coreReader;
+	private XmlTextReaderImpl coreReaderImpl;
+	private IXmlNamespaceResolver coreReaderNSResolver;
+	private ValidationType validationType;
+	private BaseValidator validator;
+	private XmlSchemaCollection schemaCollection;
+	private bool processIdentityConstraints;
+	private XmlValidatingReaderImpl.ParsingFunction parsingFunction;
+	private XmlValidatingReaderImpl.ValidationEventHandling eventHandling;
+	private XmlParserContext parserContext;
+	private ReadContentAsBinaryHelper readBinaryHelper;
+	private XmlReader outerReader;
+	private static XmlResolver s_tempResolver;
 
 	public override XmlReaderSettings Settings { get; }
 	public override XmlNodeType NodeType { get; }
@@ -4383,7 +4383,7 @@ internal sealed class XmlValidatingReaderImpl : XmlReader, IXmlLineInfo, IXmlNam
 
 private enum XmlValidatingReaderImpl.ParsingFunction // TypeDefIndex: 1919
 {
-	public int value__; 
+	public int value__;
 	public const XmlValidatingReaderImpl.ParsingFunction Read = 0;
 	public const XmlValidatingReaderImpl.ParsingFunction Init = 1;
 	public const XmlValidatingReaderImpl.ParsingFunction ParseDtdFromContext = 2;
@@ -4397,8 +4397,8 @@ private enum XmlValidatingReaderImpl.ParsingFunction // TypeDefIndex: 1919
 
 internal class XmlValidatingReaderImpl.ValidationEventHandling : IValidationEventHandling // TypeDefIndex: 1920
 {
-	private XmlValidatingReaderImpl reader; 
-	private ValidationEventHandler eventHandler; 
+	private XmlValidatingReaderImpl reader;
+	private ValidationEventHandler eventHandler;
 
 	private object System.Xml.IValidationEventHandling.EventHandler { get; }
 
@@ -4415,36 +4415,36 @@ internal class XmlValidatingReaderImpl.ValidationEventHandling : IValidationEven
 
 internal class XmlWellFormedWriter : XmlWriter // TypeDefIndex: 1921
 {
-	private XmlWriter writer; 
-	private XmlRawWriter rawWriter; 
-	private IXmlNamespaceResolver predefinedNamespaces; 
-	private XmlWellFormedWriter.Namespace[] nsStack; 
-	private int nsTop; 
-	private Dictionary<string, int> nsHashtable; 
-	private bool useNsHashtable; 
-	private XmlWellFormedWriter.ElementScope[] elemScopeStack; 
-	private int elemTop; 
-	private XmlWellFormedWriter.AttrName[] attrStack; 
-	private int attrCount; 
-	private Dictionary<string, int> attrHashTable; 
-	private XmlWellFormedWriter.SpecialAttribute specAttr; 
-	private XmlWellFormedWriter.AttributeValueCache attrValueCache; 
-	private string curDeclPrefix; 
-	private XmlWellFormedWriter.State[] stateTable; 
-	private XmlWellFormedWriter.State currentState; 
-	private bool checkCharacters; 
-	private bool omitDuplNamespaces; 
-	private bool writeEndDocumentOnClose; 
-	private ConformanceLevel conformanceLevel; 
-	private bool dtdWritten; 
-	private bool xmlDeclFollows; 
-	private XmlCharType xmlCharType; 
-	private SecureStringHasher hasher; 
-	internal static readonly string[] stateName; 
-	internal static readonly string[] tokenName; 
-	private static WriteState[] state2WriteState; 
-	private static readonly XmlWellFormedWriter.State[] StateTableDocument; 
-	private static readonly XmlWellFormedWriter.State[] StateTableAuto; 
+	private XmlWriter writer;
+	private XmlRawWriter rawWriter;
+	private IXmlNamespaceResolver predefinedNamespaces;
+	private XmlWellFormedWriter.Namespace[] nsStack;
+	private int nsTop;
+	private Dictionary<string, int> nsHashtable;
+	private bool useNsHashtable;
+	private XmlWellFormedWriter.ElementScope[] elemScopeStack;
+	private int elemTop;
+	private XmlWellFormedWriter.AttrName[] attrStack;
+	private int attrCount;
+	private Dictionary<string, int> attrHashTable;
+	private XmlWellFormedWriter.SpecialAttribute specAttr;
+	private XmlWellFormedWriter.AttributeValueCache attrValueCache;
+	private string curDeclPrefix;
+	private XmlWellFormedWriter.State[] stateTable;
+	private XmlWellFormedWriter.State currentState;
+	private bool checkCharacters;
+	private bool omitDuplNamespaces;
+	private bool writeEndDocumentOnClose;
+	private ConformanceLevel conformanceLevel;
+	private bool dtdWritten;
+	private bool xmlDeclFollows;
+	private XmlCharType xmlCharType;
+	private SecureStringHasher hasher;
+	internal static readonly string[] stateName;
+	internal static readonly string[] tokenName;
+	private static WriteState[] state2WriteState;
+	private static readonly XmlWellFormedWriter.State[] StateTableDocument;
+	private static readonly XmlWellFormedWriter.State[] StateTableAuto;
 
 	public override WriteState WriteState { get; }
 	internal XmlRawWriter RawWriter { get; }
@@ -4565,7 +4565,7 @@ internal class XmlWellFormedWriter : XmlWriter // TypeDefIndex: 1921
 
 private enum XmlWellFormedWriter.State // TypeDefIndex: 1922
 {
-	public int value__; 
+	public int value__;
 	public const XmlWellFormedWriter.State Start = 0;
 	public const XmlWellFormedWriter.State TopLevel = 1;
 	public const XmlWellFormedWriter.State Document = 2;
@@ -4604,7 +4604,7 @@ private enum XmlWellFormedWriter.State // TypeDefIndex: 1922
 
 private enum XmlWellFormedWriter.Token // TypeDefIndex: 1923
 {
-	public int value__; 
+	public int value__;
 	public const XmlWellFormedWriter.Token StartDocument = 0;
 	public const XmlWellFormedWriter.Token EndDocument = 1;
 	public const XmlWellFormedWriter.Token PI = 2;
@@ -4625,7 +4625,7 @@ private enum XmlWellFormedWriter.Token // TypeDefIndex: 1923
 
 private class XmlWellFormedWriter.NamespaceResolverProxy : IXmlNamespaceResolver // TypeDefIndex: 1924
 {
-	private XmlWellFormedWriter wfWriter; 
+	private XmlWellFormedWriter wfWriter;
 
 
 	internal void .ctor(XmlWellFormedWriter wfWriter) { }
@@ -4640,12 +4640,12 @@ private class XmlWellFormedWriter.NamespaceResolverProxy : IXmlNamespaceResolver
 
 private struct XmlWellFormedWriter.ElementScope // TypeDefIndex: 1925
 {
-	internal int prevNSTop; 
-	internal string prefix; 
-	internal string localName; 
-	internal string namespaceUri; 
-	internal XmlSpace xmlSpace; 
-	internal string xmlLang; 
+	internal int prevNSTop;
+	internal string prefix;
+	internal string localName;
+	internal string namespaceUri;
+	internal XmlSpace xmlSpace;
+	internal string xmlLang;
 
 
 	internal void Set(string prefix, string localName, string namespaceUri, int prevNSTop) { }
@@ -4658,7 +4658,7 @@ private struct XmlWellFormedWriter.ElementScope // TypeDefIndex: 1925
 
 private enum XmlWellFormedWriter.NamespaceKind // TypeDefIndex: 1926
 {
-	public int value__; 
+	public int value__;
 	public const XmlWellFormedWriter.NamespaceKind Written = 0;
 	public const XmlWellFormedWriter.NamespaceKind NeedToWrite = 1;
 	public const XmlWellFormedWriter.NamespaceKind Implied = 2;
@@ -4668,10 +4668,10 @@ private enum XmlWellFormedWriter.NamespaceKind // TypeDefIndex: 1926
 
 private struct XmlWellFormedWriter.Namespace // TypeDefIndex: 1927
 {
-	internal string prefix; 
-	internal string namespaceUri; 
-	internal XmlWellFormedWriter.NamespaceKind kind; 
-	internal int prevNsIndex; 
+	internal string prefix;
+	internal string namespaceUri;
+	internal XmlWellFormedWriter.NamespaceKind kind;
+	internal int prevNsIndex;
 
 
 	internal void Set(string prefix, string namespaceUri, XmlWellFormedWriter.NamespaceKind kind) { }
@@ -4682,10 +4682,10 @@ private struct XmlWellFormedWriter.Namespace // TypeDefIndex: 1927
 
 private struct XmlWellFormedWriter.AttrName // TypeDefIndex: 1928
 {
-	internal string prefix; 
-	internal string namespaceUri; 
-	internal string localName; 
-	internal int prev; 
+	internal string prefix;
+	internal string namespaceUri;
+	internal string localName;
+	internal int prev;
 
 
 	internal void Set(string prefix, string localName, string namespaceUri) { }
@@ -4696,7 +4696,7 @@ private struct XmlWellFormedWriter.AttrName // TypeDefIndex: 1928
 
 private enum XmlWellFormedWriter.SpecialAttribute // TypeDefIndex: 1929
 {
-	public int value__; 
+	public int value__;
 	public const XmlWellFormedWriter.SpecialAttribute No = 0;
 	public const XmlWellFormedWriter.SpecialAttribute DefaultXmlns = 1;
 	public const XmlWellFormedWriter.SpecialAttribute PrefixedXmlns = 2;
@@ -4707,11 +4707,11 @@ private enum XmlWellFormedWriter.SpecialAttribute // TypeDefIndex: 1929
 
 private class XmlWellFormedWriter.AttributeValueCache // TypeDefIndex: 1930
 {
-	private StringBuilder stringValue; 
-	private string singleStringValue; 
-	private XmlWellFormedWriter.AttributeValueCache.Item[] items; 
-	private int firstItem; 
-	private int lastItem; 
+	private StringBuilder stringValue;
+	private string singleStringValue;
+	private XmlWellFormedWriter.AttributeValueCache.Item[] items;
+	private int firstItem;
+	private int lastItem;
 
 	internal string StringValue { get; }
 
@@ -4752,7 +4752,7 @@ private class XmlWellFormedWriter.AttributeValueCache // TypeDefIndex: 1930
 
 private enum XmlWellFormedWriter.AttributeValueCache.ItemType // TypeDefIndex: 1931
 {
-	public int value__; 
+	public int value__;
 	public const XmlWellFormedWriter.AttributeValueCache.ItemType EntityRef = 0;
 	public const XmlWellFormedWriter.AttributeValueCache.ItemType CharEntity = 1;
 	public const XmlWellFormedWriter.AttributeValueCache.ItemType SurrogateCharEntity = 2;
@@ -4767,8 +4767,8 @@ private enum XmlWellFormedWriter.AttributeValueCache.ItemType // TypeDefIndex: 1
 
 private class XmlWellFormedWriter.AttributeValueCache.Item // TypeDefIndex: 1932
 {
-	internal XmlWellFormedWriter.AttributeValueCache.ItemType type; 
-	internal object data; 
+	internal XmlWellFormedWriter.AttributeValueCache.ItemType type;
+	internal object data;
 
 
 	internal void .ctor() { }
@@ -4779,9 +4779,9 @@ private class XmlWellFormedWriter.AttributeValueCache.Item // TypeDefIndex: 1932
 
 private class XmlWellFormedWriter.AttributeValueCache.BufferChunk // TypeDefIndex: 1933
 {
-	internal char[] buffer; 
-	internal int index; 
-	internal int count; 
+	internal char[] buffer;
+	internal int index;
+	internal int count;
 
 
 	internal void .ctor(char[] buffer, int index, int count) { }
@@ -4790,7 +4790,7 @@ private class XmlWellFormedWriter.AttributeValueCache.BufferChunk // TypeDefInde
 
 public abstract class XmlWriter : IDisposable // TypeDefIndex: 1935
 {
-	private char[] writeNodeBuffer; 
+	private char[] writeNodeBuffer;
 
 	public abstract WriteState WriteState { get; }
 
@@ -4877,7 +4877,7 @@ public abstract class XmlWriter : IDisposable // TypeDefIndex: 1935
 
 public enum XmlOutputMethod // TypeDefIndex: 1936
 {
-	public int value__; 
+	public int value__;
 	public const XmlOutputMethod Xml = 0;
 	public const XmlOutputMethod Html = 1;
 	public const XmlOutputMethod Text = 2;
@@ -4887,7 +4887,7 @@ public enum XmlOutputMethod // TypeDefIndex: 1936
 
 internal enum XmlStandalone // TypeDefIndex: 1938
 {
-	public int value__; 
+	public int value__;
 	public const XmlStandalone Omit = 0;
 	public const XmlStandalone Yes = 1;
 	public const XmlStandalone No = 2;
@@ -4896,29 +4896,29 @@ internal enum XmlStandalone // TypeDefIndex: 1938
 
 public sealed class XmlWriterSettings // TypeDefIndex: 1939
 {
-	private bool useAsync; 
-	private Encoding encoding; 
-	private bool omitXmlDecl; 
-	private NewLineHandling newLineHandling; 
-	private string newLineChars; 
-	private TriState indent; 
-	private string indentChars; 
-	private bool newLineOnAttributes; 
-	private bool closeOutput; 
-	private NamespaceHandling namespaceHandling; 
-	private ConformanceLevel conformanceLevel; 
-	private bool checkCharacters; 
-	private bool writeEndDocumentOnClose; 
-	private XmlOutputMethod outputMethod; 
-	private List<XmlQualifiedName> cdataSections; 
-	private bool doNotEscapeUriAttributes; 
-	private bool mergeCDataSections; 
-	private string mediaType; 
-	private string docTypeSystem; 
-	private string docTypePublic; 
-	private XmlStandalone standalone; 
-	private bool autoXmlDecl; 
-	private bool isReadOnly; 
+	private bool useAsync;
+	private Encoding encoding;
+	private bool omitXmlDecl;
+	private NewLineHandling newLineHandling;
+	private string newLineChars;
+	private TriState indent;
+	private string indentChars;
+	private bool newLineOnAttributes;
+	private bool closeOutput;
+	private NamespaceHandling namespaceHandling;
+	private ConformanceLevel conformanceLevel;
+	private bool checkCharacters;
+	private bool writeEndDocumentOnClose;
+	private XmlOutputMethod outputMethod;
+	private List<XmlQualifiedName> cdataSections;
+	private bool doNotEscapeUriAttributes;
+	private bool mergeCDataSections;
+	private string mediaType;
+	private string docTypeSystem;
+	private string docTypePublic;
+	private XmlStandalone standalone;
+	private bool autoXmlDecl;
+	private bool isReadOnly;
 
 	public bool Async { get; }
 	public Encoding Encoding { get; }
@@ -5023,21 +5023,21 @@ public sealed class XmlWriterSettings // TypeDefIndex: 1939
 
 internal class XsdCachingReader : XmlReader, IXmlLineInfo // TypeDefIndex: 1940
 {
-	private XmlReader coreReader; 
-	private XmlNameTable coreReaderNameTable; 
-	private ValidatingReaderNodeData[] contentEvents; 
-	private ValidatingReaderNodeData[] attributeEvents; 
-	private ValidatingReaderNodeData cachedNode; 
-	private XsdCachingReader.CachingReaderState cacheState; 
-	private int contentIndex; 
-	private int attributeCount; 
-	private bool returnOriginalStringValues; 
-	private CachingEventHandler cacheHandler; 
-	private int currentAttrIndex; 
-	private int currentContentIndex; 
-	private bool readAhead; 
-	private IXmlLineInfo lineInfo; 
-	private ValidatingReaderNodeData textNode; 
+	private XmlReader coreReader;
+	private XmlNameTable coreReaderNameTable;
+	private ValidatingReaderNodeData[] contentEvents;
+	private ValidatingReaderNodeData[] attributeEvents;
+	private ValidatingReaderNodeData cachedNode;
+	private XsdCachingReader.CachingReaderState cacheState;
+	private int contentIndex;
+	private int attributeCount;
+	private bool returnOriginalStringValues;
+	private CachingEventHandler cacheHandler;
+	private int currentAttrIndex;
+	private int currentContentIndex;
+	private bool readAhead;
+	private IXmlLineInfo lineInfo;
+	private ValidatingReaderNodeData textNode;
 
 	public override XmlReaderSettings Settings { get; }
 	public override XmlNodeType NodeType { get; }
@@ -5167,7 +5167,7 @@ internal class XsdCachingReader : XmlReader, IXmlLineInfo // TypeDefIndex: 1940
 
 private enum XsdCachingReader.CachingReaderState // TypeDefIndex: 1941
 {
-	public int value__; 
+	public int value__;
 	public const XsdCachingReader.CachingReaderState None = 0;
 	public const XsdCachingReader.CachingReaderState Init = 1;
 	public const XsdCachingReader.CachingReaderState Record = 2;
@@ -5179,45 +5179,45 @@ private enum XsdCachingReader.CachingReaderState // TypeDefIndex: 1941
 
 internal class XsdValidatingReader : XmlReader, IXmlSchemaInfo, IXmlLineInfo, IXmlNamespaceResolver // TypeDefIndex: 1944
 {
-	private XmlReader coreReader; 
-	private IXmlNamespaceResolver coreReaderNSResolver; 
-	private IXmlNamespaceResolver thisNSResolver; 
-	private XmlSchemaValidator validator; 
-	private XmlResolver xmlResolver; 
-	private ValidationEventHandler validationEvent; 
-	private XsdValidatingReader.ValidatingReaderState validationState; 
-	private XmlValueGetter valueGetter; 
-	private XmlNamespaceManager nsManager; 
-	private bool manageNamespaces; 
-	private bool processInlineSchema; 
-	private bool replayCache; 
-	private ValidatingReaderNodeData cachedNode; 
-	private AttributePSVIInfo attributePSVI; 
-	private int attributeCount; 
-	private int coreReaderAttributeCount; 
-	private int currentAttrIndex; 
-	private AttributePSVIInfo[] attributePSVINodes; 
-	private ArrayList defaultAttributes; 
-	private Parser inlineSchemaParser; 
-	private object atomicValue; 
-	private XmlSchemaInfo xmlSchemaInfo; 
-	private string originalAtomicValueString; 
-	private XmlNameTable coreReaderNameTable; 
-	private XsdCachingReader cachingReader; 
-	private ValidatingReaderNodeData textNode; 
-	private string NsXmlNs; 
-	private string NsXs; 
-	private string NsXsi; 
-	private string XsiType; 
-	private string XsiNil; 
-	private string XsdSchema; 
-	private string XsiSchemaLocation; 
-	private string XsiNoNamespaceSchemaLocation; 
-	private XmlCharType xmlCharType; 
-	private IXmlLineInfo lineInfo; 
-	private ReadContentAsBinaryHelper readBinaryHelper; 
-	private XsdValidatingReader.ValidatingReaderState savedState; 
-	private static Type TypeOfString; 
+	private XmlReader coreReader;
+	private IXmlNamespaceResolver coreReaderNSResolver;
+	private IXmlNamespaceResolver thisNSResolver;
+	private XmlSchemaValidator validator;
+	private XmlResolver xmlResolver;
+	private ValidationEventHandler validationEvent;
+	private XsdValidatingReader.ValidatingReaderState validationState;
+	private XmlValueGetter valueGetter;
+	private XmlNamespaceManager nsManager;
+	private bool manageNamespaces;
+	private bool processInlineSchema;
+	private bool replayCache;
+	private ValidatingReaderNodeData cachedNode;
+	private AttributePSVIInfo attributePSVI;
+	private int attributeCount;
+	private int coreReaderAttributeCount;
+	private int currentAttrIndex;
+	private AttributePSVIInfo[] attributePSVINodes;
+	private ArrayList defaultAttributes;
+	private Parser inlineSchemaParser;
+	private object atomicValue;
+	private XmlSchemaInfo xmlSchemaInfo;
+	private string originalAtomicValueString;
+	private XmlNameTable coreReaderNameTable;
+	private XsdCachingReader cachingReader;
+	private ValidatingReaderNodeData textNode;
+	private string NsXmlNs;
+	private string NsXs;
+	private string NsXsi;
+	private string XsiType;
+	private string XsiNil;
+	private string XsdSchema;
+	private string XsiSchemaLocation;
+	private string XsiNoNamespaceSchemaLocation;
+	private XmlCharType xmlCharType;
+	private IXmlLineInfo lineInfo;
+	private ReadContentAsBinaryHelper readBinaryHelper;
+	private XsdValidatingReader.ValidatingReaderState savedState;
+	private static Type TypeOfString;
 
 	public override XmlReaderSettings Settings { get; }
 	public override XmlNodeType NodeType { get; }
@@ -5399,7 +5399,7 @@ internal class XsdValidatingReader : XmlReader, IXmlSchemaInfo, IXmlLineInfo, IX
 
 private enum XsdValidatingReader.ValidatingReaderState // TypeDefIndex: 1945
 {
-	public int value__; 
+	public int value__;
 	public const XsdValidatingReader.ValidatingReaderState None = 0;
 	public const XsdValidatingReader.ValidatingReaderState Init = 1;
 	public const XsdValidatingReader.ValidatingReaderState Read = 2;
@@ -5418,8 +5418,8 @@ private enum XsdValidatingReader.ValidatingReaderState // TypeDefIndex: 1945
 
 public class XmlAttribute : XmlNode // TypeDefIndex: 1947
 {
-	private XmlName name; 
-	private XmlLinkedNode lastChild; 
+	private XmlName name;
+	private XmlLinkedNode lastChild;
 
 	internal int LocalNameHash { get; }
 	internal XmlName XmlName { get; set; }
@@ -5611,7 +5611,7 @@ public class XmlCDataSection : XmlCharacterData // TypeDefIndex: 1949
 
 public abstract class XmlCharacterData : XmlLinkedNode // TypeDefIndex: 1950
 {
-	private string data; 
+	private string data;
 
 	public override string Value { get; set; }
 	public override string InnerText { get; set; }
@@ -5638,9 +5638,9 @@ public abstract class XmlCharacterData : XmlLinkedNode // TypeDefIndex: 1950
 
 internal sealed class XmlChildEnumerator : IEnumerator // TypeDefIndex: 1951
 {
-	internal XmlNode container; 
-	internal XmlNode child; 
-	internal bool isFirst; 
+	internal XmlNode container;
+	internal XmlNode child;
+	internal bool isFirst;
 
 	private object System.Collections.IEnumerator.Current { get; }
 	internal XmlNode Current { get; }
@@ -5662,7 +5662,7 @@ internal sealed class XmlChildEnumerator : IEnumerator // TypeDefIndex: 1951
 
 internal class XmlChildNodes : XmlNodeList // TypeDefIndex: 1952
 {
-	private XmlNode container; 
+	private XmlNode container;
 
 	public override int Count { get; }
 
@@ -5702,9 +5702,9 @@ public class XmlComment : XmlCharacterData // TypeDefIndex: 1953
 
 public class XmlDeclaration : XmlLinkedNode // TypeDefIndex: 1954
 {
-	private string version; 
-	private string encoding; 
-	private string standalone; 
+	private string version;
+	private string encoding;
+	private string standalone;
 
 	public string Version { get; set; }
 	public string Encoding { get; set; }
@@ -5756,50 +5756,50 @@ public class XmlDeclaration : XmlLinkedNode // TypeDefIndex: 1954
 
 public class XmlDocument : XmlNode // TypeDefIndex: 1955
 {
-	private XmlImplementation implementation; 
-	private DomNameTable domNameTable; 
-	private XmlLinkedNode lastChild; 
-	private XmlNamedNodeMap entities; 
-	private Hashtable htElementIdMap; 
-	private Hashtable htElementIDAttrDecl; 
-	private SchemaInfo schemaInfo; 
-	private XmlSchemaSet schemas; 
-	private bool reportValidity; 
-	private bool actualLoadingStatus; 
-	private XmlNodeChangedEventHandler onNodeInsertingDelegate; 
-	private XmlNodeChangedEventHandler onNodeInsertedDelegate; 
-	private XmlNodeChangedEventHandler onNodeRemovingDelegate; 
-	private XmlNodeChangedEventHandler onNodeRemovedDelegate; 
-	private XmlNodeChangedEventHandler onNodeChangingDelegate; 
-	private XmlNodeChangedEventHandler onNodeChangedDelegate; 
-	internal bool fEntRefNodesPresent; 
-	internal bool fCDataNodesPresent; 
-	private bool preserveWhitespace; 
-	private bool isLoading; 
-	internal string strDocumentName; 
-	internal string strDocumentFragmentName; 
-	internal string strCommentName; 
-	internal string strTextName; 
-	internal string strCDataSectionName; 
-	internal string strEntityName; 
-	internal string strID; 
-	internal string strXmlns; 
-	internal string strXml; 
-	internal string strSpace; 
-	internal string strLang; 
-	internal string strEmpty; 
-	internal string strNonSignificantWhitespaceName; 
-	internal string strSignificantWhitespaceName; 
-	internal string strReservedXmlns; 
-	internal string strReservedXml; 
-	internal string baseURI; 
-	private XmlResolver resolver; 
-	internal bool bSetResolver; 
-	internal object objLock; 
-	internal static EmptyEnumerator EmptyEnumerator; 
-	internal static IXmlSchemaInfo NotKnownSchemaInfo; 
-	internal static IXmlSchemaInfo ValidSchemaInfo; 
-	internal static IXmlSchemaInfo InvalidSchemaInfo; 
+	private XmlImplementation implementation;
+	private DomNameTable domNameTable;
+	private XmlLinkedNode lastChild;
+	private XmlNamedNodeMap entities;
+	private Hashtable htElementIdMap;
+	private Hashtable htElementIDAttrDecl;
+	private SchemaInfo schemaInfo;
+	private XmlSchemaSet schemas;
+	private bool reportValidity;
+	private bool actualLoadingStatus;
+	private XmlNodeChangedEventHandler onNodeInsertingDelegate;
+	private XmlNodeChangedEventHandler onNodeInsertedDelegate;
+	private XmlNodeChangedEventHandler onNodeRemovingDelegate;
+	private XmlNodeChangedEventHandler onNodeRemovedDelegate;
+	private XmlNodeChangedEventHandler onNodeChangingDelegate;
+	private XmlNodeChangedEventHandler onNodeChangedDelegate;
+	internal bool fEntRefNodesPresent;
+	internal bool fCDataNodesPresent;
+	private bool preserveWhitespace;
+	private bool isLoading;
+	internal string strDocumentName;
+	internal string strDocumentFragmentName;
+	internal string strCommentName;
+	internal string strTextName;
+	internal string strCDataSectionName;
+	internal string strEntityName;
+	internal string strID;
+	internal string strXmlns;
+	internal string strXml;
+	internal string strSpace;
+	internal string strLang;
+	internal string strEmpty;
+	internal string strNonSignificantWhitespaceName;
+	internal string strSignificantWhitespaceName;
+	internal string strReservedXmlns;
+	internal string strReservedXml;
+	internal string baseURI;
+	private XmlResolver resolver;
+	internal bool bSetResolver;
+	internal object objLock;
+	internal static EmptyEnumerator EmptyEnumerator;
+	internal static IXmlSchemaInfo NotKnownSchemaInfo;
+	internal static IXmlSchemaInfo ValidSchemaInfo;
+	internal static IXmlSchemaInfo InvalidSchemaInfo;
 
 	internal SchemaInfo DtdSchemaInfo { get; set; }
 	public override XmlNodeType NodeType { get; }
@@ -6019,7 +6019,7 @@ public class XmlDocument : XmlNode // TypeDefIndex: 1955
 
 public class XmlDocumentFragment : XmlNode // TypeDefIndex: 1956
 {
-	private XmlLinkedNode lastChild; 
+	private XmlLinkedNode lastChild;
 
 	public override string Name { get; }
 	public override string LocalName { get; }
@@ -6067,14 +6067,14 @@ public class XmlDocumentFragment : XmlNode // TypeDefIndex: 1956
 
 public class XmlDocumentType : XmlLinkedNode // TypeDefIndex: 1957
 {
-	private string name; 
-	private string publicId; 
-	private string systemId; 
-	private string internalSubset; 
-	private bool namespaces; 
-	private XmlNamedNodeMap entities; 
-	private XmlNamedNodeMap notations; 
-	private SchemaInfo schemaInfo; 
+	private string name;
+	private string publicId;
+	private string systemId;
+	private string internalSubset;
+	private bool namespaces;
+	private XmlNamedNodeMap entities;
+	private XmlNamedNodeMap notations;
+	private SchemaInfo schemaInfo;
 
 	public override string Name { get; }
 	public override string LocalName { get; }
@@ -6125,9 +6125,9 @@ public class XmlDocumentType : XmlLinkedNode // TypeDefIndex: 1957
 
 public class XmlElement : XmlLinkedNode // TypeDefIndex: 1958
 {
-	private XmlName name; 
-	private XmlAttributeCollection attributes; 
-	private XmlLinkedNode lastChild; 
+	private XmlName name;
+	private XmlAttributeCollection attributes;
+	private XmlLinkedNode lastChild;
 
 	internal XmlName XmlName { get; set; }
 	public override string Name { get; }
@@ -6240,14 +6240,14 @@ public class XmlElement : XmlLinkedNode // TypeDefIndex: 1958
 
 public class XmlEntity : XmlNode // TypeDefIndex: 1959
 {
-	private string publicId; 
-	private string systemId; 
-	private string notationName; 
-	private string name; 
-	private string unparsedReplacementStr; 
-	private string baseURI; 
-	private XmlLinkedNode lastChild; 
-	private bool childrenFoliating; 
+	private string publicId;
+	private string systemId;
+	private string notationName;
+	private string name;
+	private string unparsedReplacementStr;
+	private string baseURI;
+	private XmlLinkedNode lastChild;
+	private bool childrenFoliating;
 
 	public override bool IsReadOnly { get; }
 	public override string Name { get; }
@@ -6301,8 +6301,8 @@ public class XmlEntity : XmlNode // TypeDefIndex: 1959
 
 public class XmlEntityReference : XmlLinkedNode // TypeDefIndex: 1960
 {
-	private string name; 
-	private XmlLinkedNode lastChild; 
+	private string name;
+	private XmlLinkedNode lastChild;
 
 	public override string Name { get; }
 	public override string LocalName { get; }
@@ -6357,7 +6357,7 @@ public class XmlEntityReference : XmlLinkedNode // TypeDefIndex: 1960
 
 public enum XmlNodeChangedAction // TypeDefIndex: 1961
 {
-	public int value__; 
+	public int value__;
 	public const XmlNodeChangedAction Insert = 0;
 	public const XmlNodeChangedAction Remove = 1;
 	public const XmlNodeChangedAction Change = 2;
@@ -6366,7 +6366,7 @@ public enum XmlNodeChangedAction // TypeDefIndex: 1961
 
 public class XmlImplementation // TypeDefIndex: 1962
 {
-	private XmlNameTable nameTable; 
+	private XmlNameTable nameTable;
 
 	internal XmlNameTable NameTable { get; }
 
@@ -6383,7 +6383,7 @@ public class XmlImplementation // TypeDefIndex: 1962
 
 public abstract class XmlLinkedNode : XmlNode // TypeDefIndex: 1963
 {
-	internal XmlLinkedNode next; 
+	internal XmlLinkedNode next;
 
 	public override XmlNode PreviousSibling { get; }
 	public override XmlNode NextSibling { get; }
@@ -6399,9 +6399,9 @@ public abstract class XmlLinkedNode : XmlNode // TypeDefIndex: 1963
 
 internal class XmlLoader // TypeDefIndex: 1964
 {
-	private XmlDocument doc; 
-	private XmlReader reader; 
-	private bool preserveWhitespace; 
+	private XmlDocument doc;
+	private XmlReader reader;
+	private bool preserveWhitespace;
 
 
 	public void .ctor() { }
@@ -6462,13 +6462,13 @@ internal class XmlLoader // TypeDefIndex: 1964
 
 internal class XmlName : IXmlSchemaInfo // TypeDefIndex: 1965
 {
-	private string prefix; 
-	private string localName; 
-	private string ns; 
-	private string name; 
-	private int hashCode; 
-	internal XmlDocument ownerDoc; 
-	internal XmlName next; 
+	private string prefix;
+	private string localName;
+	private string ns;
+	private string name;
+	private int hashCode;
+	internal XmlDocument ownerDoc;
+	internal XmlName next;
 
 	public string LocalName { get; }
 	public string NamespaceURI { get; }
@@ -6523,10 +6523,10 @@ internal class XmlName : IXmlSchemaInfo // TypeDefIndex: 1965
 
 internal sealed class XmlNameEx : XmlName // TypeDefIndex: 1966
 {
-	private byte flags; 
-	private XmlSchemaSimpleType memberType; 
-	private XmlSchemaType schemaType; 
-	private object decl; 
+	private byte flags;
+	private XmlSchemaSimpleType memberType;
+	private XmlSchemaType schemaType;
+	private object decl;
 
 	public override XmlSchemaValidity Validity { get; }
 	public override bool IsDefault { get; }
@@ -6565,8 +6565,8 @@ internal sealed class XmlNameEx : XmlName // TypeDefIndex: 1966
 
 public class XmlNamedNodeMap : IEnumerable // TypeDefIndex: 1967
 {
-	internal XmlNode parent; 
-	internal XmlNamedNodeMap.SmallXmlNodeList nodes; 
+	internal XmlNode parent;
+	internal XmlNamedNodeMap.SmallXmlNodeList nodes;
 
 	public virtual int Count { get; }
 
@@ -6599,7 +6599,7 @@ public class XmlNamedNodeMap : IEnumerable // TypeDefIndex: 1967
 
 internal struct XmlNamedNodeMap.SmallXmlNodeList // TypeDefIndex: 1968
 {
-	private object field; 
+	private object field;
 
 	public int Count { get; }
 	public object Item { get; }
@@ -6621,8 +6621,8 @@ internal struct XmlNamedNodeMap.SmallXmlNodeList // TypeDefIndex: 1968
 
 private class XmlNamedNodeMap.SmallXmlNodeList.SingleObjectEnumerator : IEnumerator // TypeDefIndex: 1969
 {
-	private object loneValue; 
-	private int position; 
+	private object loneValue;
+	private int position;
 
 	public object Current { get; }
 
@@ -6639,7 +6639,7 @@ private class XmlNamedNodeMap.SmallXmlNodeList.SingleObjectEnumerator : IEnumera
 
 public abstract class XmlNode : ICloneable, IEnumerable // TypeDefIndex: 1970
 {
-	internal XmlNode parentNode; 
+	internal XmlNode parentNode;
 
 	public abstract string Name { get; }
 	public virtual string Value { get; set; }
@@ -6799,12 +6799,12 @@ public abstract class XmlNode : ICloneable, IEnumerable // TypeDefIndex: 1970
 
 public class XmlNodeChangedEventArgs : EventArgs // TypeDefIndex: 1971
 {
-	private XmlNodeChangedAction action; 
-	private XmlNode node; 
-	private XmlNode oldParent; 
-	private XmlNode newParent; 
-	private string oldValue; 
-	private string newValue; 
+	private XmlNodeChangedAction action;
+	private XmlNode node;
+	private XmlNode oldParent;
+	private XmlNode newParent;
+	private string oldValue;
+	private string newValue;
 
 	public XmlNodeChangedAction Action { get; }
 
@@ -6852,23 +6852,23 @@ public abstract class XmlNodeList : IEnumerable, IDisposable // TypeDefIndex: 19
 
 internal class XmlNodeReaderNavigator // TypeDefIndex: 1974
 {
-	private XmlNode curNode; 
-	private XmlNode elemNode; 
-	private XmlNode logNode; 
-	private int attrIndex; 
-	private int logAttrIndex; 
-	private XmlNameTable nameTable; 
-	private XmlDocument doc; 
-	private int nAttrInd; 
-	private int nDeclarationAttrCount; 
-	private int nDocTypeAttrCount; 
-	private int nLogLevel; 
-	private int nLogAttrInd; 
-	private bool bLogOnAttrVal; 
-	private bool bCreatedOnAttribute; 
-	internal XmlNodeReaderNavigator.VirtualAttribute[] decNodeAttributes; 
-	internal XmlNodeReaderNavigator.VirtualAttribute[] docTypeNodeAttributes; 
-	private bool bOnAttrVal; 
+	private XmlNode curNode;
+	private XmlNode elemNode;
+	private XmlNode logNode;
+	private int attrIndex;
+	private int logAttrIndex;
+	private XmlNameTable nameTable;
+	private XmlDocument doc;
+	private int nAttrInd;
+	private int nDeclarationAttrCount;
+	private int nDocTypeAttrCount;
+	private int nLogLevel;
+	private int nLogAttrInd;
+	private bool bLogOnAttrVal;
+	private bool bCreatedOnAttribute;
+	internal XmlNodeReaderNavigator.VirtualAttribute[] decNodeAttributes;
+	internal XmlNodeReaderNavigator.VirtualAttribute[] docTypeNodeAttributes;
+	private bool bOnAttrVal;
 
 	public XmlNodeType NodeType { get; }
 	public string NamespaceURI { get; }
@@ -6997,8 +6997,8 @@ internal class XmlNodeReaderNavigator // TypeDefIndex: 1974
 
 internal struct XmlNodeReaderNavigator.VirtualAttribute // TypeDefIndex: 1975
 {
-	internal string name; 
-	internal string value; 
+	internal string name;
+	internal string value;
 
 
 	internal void .ctor(string name, string value) { }
@@ -7007,15 +7007,15 @@ internal struct XmlNodeReaderNavigator.VirtualAttribute // TypeDefIndex: 1975
 
 public class XmlNodeReader : XmlReader, IXmlNamespaceResolver // TypeDefIndex: 1976
 {
-	private XmlNodeReaderNavigator readerNav; 
-	private XmlNodeType nodeType; 
-	private int curDepth; 
-	private ReadState readState; 
-	private bool fEOF; 
-	private bool bResolveEntity; 
-	private bool bStartFromDocument; 
-	private bool bInReadBinary; 
-	private ReadContentAsBinaryHelper readBinaryHelper; 
+	private XmlNodeReaderNavigator readerNav;
+	private XmlNodeType nodeType;
+	private int curDepth;
+	private ReadState readState;
+	private bool fEOF;
+	private bool bResolveEntity;
+	private bool bStartFromDocument;
+	private bool bInReadBinary;
+	private ReadContentAsBinaryHelper readBinaryHelper;
 
 	public override XmlNodeType NodeType { get; }
 	public override string Name { get; }
@@ -7137,9 +7137,9 @@ public class XmlNodeReader : XmlReader, IXmlNamespaceResolver // TypeDefIndex: 1
 
 public class XmlNotation : XmlNode // TypeDefIndex: 1977
 {
-	private string publicId; 
-	private string systemId; 
-	private string name; 
+	private string publicId;
+	private string systemId;
+	private string name;
 
 	public override string Name { get; }
 	public override string LocalName { get; }
@@ -7170,8 +7170,8 @@ public class XmlNotation : XmlNode // TypeDefIndex: 1977
 
 public class XmlProcessingInstruction : XmlLinkedNode // TypeDefIndex: 1978
 {
-	private string target; 
-	private string data; 
+	private string target;
+	private string data;
 
 	public override string Name { get; }
 	public override string LocalName { get; }
@@ -7279,7 +7279,7 @@ public class XmlText : XmlCharacterData // TypeDefIndex: 1980
 
 internal class XmlUnspecifiedAttribute : XmlAttribute // TypeDefIndex: 1981
 {
-	private bool fSpecified; 
+	private bool fSpecified;
 
 	public override bool Specified { get; }
 	public override string InnerText { set; }
@@ -7343,7 +7343,7 @@ public class XmlWhitespace : XmlCharacterData // TypeDefIndex: 1982
 
 public enum XmlTokenizedType // TypeDefIndex: 1999
 {
-	public int value__; 
+	public int value__;
 	public const XmlTokenizedType CDATA = 0;
 	public const XmlTokenizedType ID = 1;
 	public const XmlTokenizedType IDREF = 2;
@@ -7362,9 +7362,9 @@ public enum XmlTokenizedType // TypeDefIndex: 1999
 
 internal struct XmlCharType // TypeDefIndex: 2001
 {
-	private static object s_Lock; 
-	private static byte[] s_CharProperties; 
-	internal byte[] charProperties; 
+	private static object s_Lock;
+	private static byte[] s_CharProperties;
+	internal byte[] charProperties;
 
 	private static object StaticLock { get; }
 	public static XmlCharType Instance { get; }
@@ -7439,7 +7439,7 @@ internal static class XmlComplianceUtil // TypeDefIndex: 2002
 
 public enum XmlDateTimeSerializationMode // TypeDefIndex: 2004
 {
-	public int value__; 
+	public int value__;
 	public const XmlDateTimeSerializationMode Local = 0;
 	public const XmlDateTimeSerializationMode Utc = 1;
 	public const XmlDateTimeSerializationMode Unspecified = 2;
@@ -7449,13 +7449,13 @@ public enum XmlDateTimeSerializationMode // TypeDefIndex: 2004
 
 public class XmlConvert // TypeDefIndex: 2005
 {
-	private static XmlCharType xmlCharType; 
-	internal static char[] crt; 
-	private static readonly int c_EncodedCharLength; 
-	private static Regex c_EncodeCharPattern; 
-	private static Regex c_DecodeCharPattern; 
-	private static string[] s_allDateTimeFormats; 
-	internal static readonly char[] WhitespaceChars; 
+	private static XmlCharType xmlCharType;
+	internal static char[] crt;
+	private static readonly int c_EncodedCharLength;
+	private static Regex c_EncodeCharPattern;
+	private static Regex c_DecodeCharPattern;
+	private static string[] s_allDateTimeFormats;
+	internal static readonly char[] WhitespaceChars;
 
 	private static string[] AllDateTimeFormats { get; }
 
@@ -7502,7 +7502,7 @@ public class XmlConvert // TypeDefIndex: 2005
 
 	public static string ToString(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static string ToString(sbyte value) { }
 
 	public static string ToString(short value) { }
@@ -7513,13 +7513,13 @@ public class XmlConvert // TypeDefIndex: 2005
 
 	public static string ToString(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static string ToString(ushort value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static string ToString(uint value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static string ToString(ulong value) { }
 
 	public static string ToString(float value) { }
@@ -7552,7 +7552,7 @@ public class XmlConvert // TypeDefIndex: 2005
 
 	internal static Exception TryToInteger(string s, out Decimal result) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(string s) { }
 
 	internal static Exception TryToSByte(string s, out sbyte result) { }
@@ -7573,17 +7573,17 @@ public class XmlConvert // TypeDefIndex: 2005
 
 	internal static Exception TryToByte(string s, out byte result) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(string s) { }
 
 	internal static Exception TryToUInt16(string s, out ushort result) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(string s) { }
 
 	internal static Exception TryToUInt32(string s, out uint result) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(string s) { }
 
 	internal static Exception TryToUInt64(string s, out ulong result) { }
@@ -7606,7 +7606,7 @@ public class XmlConvert // TypeDefIndex: 2005
 
 	private static void CreateAllDateTimeFormats() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static DateTime ToDateTime(string s) { }
 
 	public static DateTime ToDateTime(string s, string[] formats) { }
@@ -7679,7 +7679,7 @@ public class XmlConvert // TypeDefIndex: 2005
 
 internal class XmlDownloadManager // TypeDefIndex: 2006
 {
-	private Hashtable connections; 
+	private Hashtable connections;
 
 
 	internal Stream GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy) { }
@@ -7690,7 +7690,7 @@ internal class XmlDownloadManager // TypeDefIndex: 2006
 
 	internal Task<Stream> GetStreamAsync(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task<Stream> GetNonFileStreamAsync(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy) { }
 
 	public void .ctor() { }
@@ -7699,7 +7699,7 @@ internal class XmlDownloadManager // TypeDefIndex: 2006
 
 private sealed class XmlDownloadManager.<>c__DisplayClass4_0 // TypeDefIndex: 2007
 {
-	public Uri uri; 
+	public Uri uri;
 
 
 	public void .ctor() { }
@@ -7710,29 +7710,29 @@ private sealed class XmlDownloadManager.<>c__DisplayClass4_0 // TypeDefIndex: 20
 
 private struct XmlDownloadManager.<GetNonFileStreamAsync>d__5 : IAsyncStateMachine // TypeDefIndex: 2008
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Stream> <>t__builder; 
-	public Uri uri; 
-	public ICredentials credentials; 
-	public IWebProxy proxy; 
-	public RequestCachePolicy cachePolicy; 
-	private WebRequest <req>5__1; 
-	public XmlDownloadManager <>4__this; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<WebResponse> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Stream> <>t__builder;
+	public Uri uri;
+	public ICredentials credentials;
+	public IWebProxy proxy;
+	public RequestCachePolicy cachePolicy;
+	private WebRequest <req>5__1;
+	public XmlDownloadManager <>4__this;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<WebResponse> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 internal class XmlRegisteredNonCachedStream : Stream // TypeDefIndex: 2010
 {
-	protected Stream stream; 
-	private XmlDownloadManager downloadManager; 
-	private string host; 
+	protected Stream stream;
+	private XmlDownloadManager downloadManager;
+	private string host;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }
@@ -7785,7 +7785,7 @@ internal class XmlRegisteredNonCachedStream : Stream // TypeDefIndex: 2010
 
 internal class XmlCachedStream : MemoryStream // TypeDefIndex: 2011
 {
-	private Uri uri; 
+	private Uri uri;
 
 
 	internal void .ctor(Uri uri, Stream stream) { }
@@ -7794,13 +7794,13 @@ internal class XmlCachedStream : MemoryStream // TypeDefIndex: 2011
 
 public class XmlException : SystemException // TypeDefIndex: 2024
 {
-	private string res; 
-	private string[] args; 
-	private int lineNumber; 
-	private int linePosition; 
-	[OptionalFieldAttribute] 
-	private string sourceUri; 
-	private string message; 
+	private string res;
+	private string[] args;
+	private int lineNumber;
+	private int linePosition;
+	[OptionalFieldAttribute]
+	private string sourceUri;
+	private string message;
 
 	public int LineNumber { get; }
 	public int LinePosition { get; }
@@ -7881,7 +7881,7 @@ public abstract class XmlNameTable // TypeDefIndex: 2025
 
 public enum XmlNamespaceScope // TypeDefIndex: 2026
 {
-	public int value__; 
+	public int value__;
 	public const XmlNamespaceScope All = 0;
 	public const XmlNamespaceScope ExcludeXml = 1;
 	public const XmlNamespaceScope Local = 2;
@@ -7890,14 +7890,14 @@ public enum XmlNamespaceScope // TypeDefIndex: 2026
 
 public class XmlNamespaceManager : IXmlNamespaceResolver, IEnumerable // TypeDefIndex: 2027
 {
-	private XmlNamespaceManager.NamespaceDeclaration[] nsdecls; 
-	private int lastDecl; 
-	private XmlNameTable nameTable; 
-	private int scopeId; 
-	private Dictionary<string, int> hashTable; 
-	private bool useHashtable; 
-	private string xml; 
-	private string xmlNs; 
+	private XmlNamespaceManager.NamespaceDeclaration[] nsdecls;
+	private int lastDecl;
+	private XmlNameTable nameTable;
+	private int scopeId;
+	private Dictionary<string, int> hashTable;
+	private bool useHashtable;
+	private string xml;
+	private string xmlNs;
 
 	public virtual XmlNameTable NameTable { get; }
 	public virtual string DefaultNamespace { get; }
@@ -7933,10 +7933,10 @@ public class XmlNamespaceManager : IXmlNamespaceResolver, IEnumerable // TypeDef
 
 private struct XmlNamespaceManager.NamespaceDeclaration // TypeDefIndex: 2028
 {
-	public string prefix; 
-	public string uri; 
-	public int scopeId; 
-	public int previousNsIndex; 
+	public string prefix;
+	public string uri;
+	public int scopeId;
+	public int previousNsIndex;
 
 
 	public void Set(string prefix, string uri, int scopeId, int previousNsIndex) { }
@@ -7945,7 +7945,7 @@ private struct XmlNamespaceManager.NamespaceDeclaration // TypeDefIndex: 2028
 
 public enum XmlNodeType // TypeDefIndex: 2029
 {
-	public int value__; 
+	public int value__;
 	public const XmlNodeType None = 0;
 	public const XmlNodeType Element = 1;
 	public const XmlNodeType Attribute = 2;
@@ -7969,11 +7969,11 @@ public enum XmlNodeType // TypeDefIndex: 2029
 
 public class XmlQualifiedName // TypeDefIndex: 2030
 {
-	private static XmlQualifiedName.HashCodeOfStringDelegate hashCodeDelegate; 
-	private string name; 
-	private string ns; 
-	private int hash; 
-	public static readonly XmlQualifiedName Empty; 
+	private static XmlQualifiedName.HashCodeOfStringDelegate hashCodeDelegate;
+	private string name;
+	private string ns;
+	private int hash;
+	public static readonly XmlQualifiedName Empty;
 
 	public string Namespace { get; }
 	public string Name { get; }
@@ -8056,10 +8056,10 @@ public abstract class XmlResolver // TypeDefIndex: 2032
 
 public class XmlUrlResolver : XmlResolver // TypeDefIndex: 2033
 {
-	private static object s_DownloadManager; 
-	private ICredentials _credentials; 
-	private IWebProxy _proxy; 
-	private RequestCachePolicy _cachePolicy; 
+	private static object s_DownloadManager;
+	private ICredentials _credentials;
+	private IWebProxy _proxy;
+	private RequestCachePolicy _cachePolicy;
 
 	private static XmlDownloadManager DownloadManager { get; }
 
@@ -8072,35 +8072,35 @@ public class XmlUrlResolver : XmlResolver // TypeDefIndex: 2033
 
 	public override Uri ResolveUri(Uri baseUri, string relativeUri) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public override Task<object> GetEntityAsync(Uri absoluteUri, string role, Type ofObjectToReturn) { }
 
 }
 
 private struct XmlUrlResolver.<GetEntityAsync>d__15 : IAsyncStateMachine // TypeDefIndex: 2034
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<object> <>t__builder; 
-	public Type ofObjectToReturn; 
-	public Uri absoluteUri; 
-	public XmlUrlResolver <>4__this; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Stream> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<object> <>t__builder;
+	public Type ofObjectToReturn;
+	public Uri absoluteUri;
+	public XmlUrlResolver <>4__this;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Stream> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 public class XPathDocument // TypeDefIndex: 2036
 {
-	private XPathNode[] pageXmlNmsp; 
-	private int idxXmlNmsp; 
-	private XmlNameTable nameTable; 
-	private bool hasLineInfo; 
-	private Dictionary<XPathNodeRef, XPathNodeRef> mapNmsp; 
+	private XPathNode[] pageXmlNmsp;
+	private int idxXmlNmsp;
+	private XmlNameTable nameTable;
+	private bool hasLineInfo;
+	private Dictionary<XPathNodeRef, XPathNodeRef> mapNmsp;
 
 	internal XmlNameTable NameTable { get; }
 	internal bool HasLineInfo { get; }
@@ -8118,9 +8118,9 @@ public class XPathDocument // TypeDefIndex: 2036
 
 public class XPathException : SystemException // TypeDefIndex: 2037
 {
-	private string res; 
-	private string[] args; 
-	private string message; 
+	private string res;
+	private string[] args;
+	private string message;
 
 	public override string Message { get; }
 
@@ -8151,7 +8151,7 @@ public class XPathException : SystemException // TypeDefIndex: 2037
 
 public enum XPathResultType // TypeDefIndex: 2038
 {
-	public int value__; 
+	public int value__;
 	public const XPathResultType Number = 0;
 	public const XPathResultType String = 1;
 	public const XPathResultType Boolean = 2;
@@ -8203,7 +8203,7 @@ public abstract class XPathItem // TypeDefIndex: 2039
 
 public enum XPathNamespaceScope // TypeDefIndex: 2040
 {
-	public int value__; 
+	public int value__;
 	public const XPathNamespaceScope All = 0;
 	public const XPathNamespaceScope ExcludeXml = 1;
 	public const XPathNamespaceScope Local = 2;
@@ -8212,10 +8212,10 @@ public enum XPathNamespaceScope // TypeDefIndex: 2040
 
 public abstract class XPathNavigator : XPathItem, ICloneable, IXmlNamespaceResolver // TypeDefIndex: 2041
 {
-	internal static readonly XPathNavigatorKeyComparer comparer; 
-	internal static readonly char[] NodeTypeLetter; 
-	internal static readonly char[] UniqueIdTbl; 
-	internal static readonly int[] ContentKindMasks; 
+	internal static readonly XPathNavigatorKeyComparer comparer;
+	internal static readonly char[] NodeTypeLetter;
+	internal static readonly char[] UniqueIdTbl;
+	internal static readonly int[] ContentKindMasks;
 
 	public override XmlSchemaType XmlType { get; }
 	public override object TypedValue { get; }
@@ -8309,7 +8309,7 @@ internal class XPathNavigatorKeyComparer : IEqualityComparer // TypeDefIndex: 20
 
 public enum XPathNodeType // TypeDefIndex: 2043
 {
-	public int value__; 
+	public int value__;
 	public const XPathNodeType Root = 0;
 	public const XPathNodeType Element = 1;
 	public const XPathNodeType Attribute = 2;
@@ -8325,7 +8325,7 @@ public enum XPathNodeType // TypeDefIndex: 2043
 
 public class XmlSerializerNamespaces // TypeDefIndex: 2045
 {
-	private Hashtable namespaces; 
+	private Hashtable namespaces;
 
 	public int Count { get; }
 	internal ArrayList NamespaceList { get; }
@@ -8365,11 +8365,11 @@ public sealed class XmlAttributeEventHandler : MulticastDelegate // TypeDefIndex
 
 public class XmlAttributeEventArgs : EventArgs // TypeDefIndex: 2047
 {
-	private object o; 
-	private XmlAttribute attr; 
-	private string qnames; 
-	private int lineNumber; 
-	private int linePosition; 
+	private object o;
+	private XmlAttribute attr;
+	private string qnames;
+	private int lineNumber;
+	private int linePosition;
 
 
 	internal void .ctor(XmlAttribute attr, int lineNumber, int linePosition, object o, string qnames) { }
@@ -8391,11 +8391,11 @@ public sealed class XmlElementEventHandler : MulticastDelegate // TypeDefIndex: 
 
 public class XmlElementEventArgs : EventArgs // TypeDefIndex: 2049
 {
-	private object o; 
-	private XmlElement elem; 
-	private string qnames; 
-	private int lineNumber; 
-	private int linePosition; 
+	private object o;
+	private XmlElement elem;
+	private string qnames;
+	private int lineNumber;
+	private int linePosition;
 
 
 	internal void .ctor(XmlElement elem, int lineNumber, int linePosition, object o, string qnames) { }
@@ -8417,10 +8417,10 @@ public sealed class XmlNodeEventHandler : MulticastDelegate // TypeDefIndex: 205
 
 public class XmlNodeEventArgs : EventArgs // TypeDefIndex: 2051
 {
-	private object o; 
-	private XmlNode xmlNode; 
-	private int lineNumber; 
-	private int linePosition; 
+	private object o;
+	private XmlNode xmlNode;
+	private int lineNumber;
+	private int linePosition;
 
 
 	internal void .ctor(XmlNode xmlNode, int lineNumber, int linePosition, object o) { }
@@ -8429,9 +8429,9 @@ public class XmlNodeEventArgs : EventArgs // TypeDefIndex: 2051
 
 internal class XmlTypeSerializationSource : SerializationSource // TypeDefIndex: 2060
 {
-	private string attributeOverridesHash; 
-	private Type type; 
-	private string rootHash; 
+	private string attributeOverridesHash;
+	private Type type;
+	private string rootHash;
 
 
 	public void .ctor(Type type, XmlRootAttribute root, XmlAttributeOverrides attributeOverrides, string namspace, Type[] includedTypes) { }
@@ -8444,16 +8444,16 @@ internal class XmlTypeSerializationSource : SerializationSource // TypeDefIndex:
 
 internal class XmlTypeConvertorAttribute : Attribute // TypeDefIndex: 2061
 {
-	[CompilerGeneratedAttribute] 
-	private string <Method>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Method>k__BackingField;
 
 	public string Method { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Method() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Method(string value) { }
 
 	public void .ctor(string method) { }
@@ -8469,9 +8469,9 @@ public class XmlAnyAttributeAttribute : Attribute // TypeDefIndex: 2065
 
 public class XmlAnyElementAttribute : Attribute // TypeDefIndex: 2066
 {
-	private string elementName; 
-	private string ns; 
-	private int order; 
+	private string elementName;
+	private string ns;
+	private int order;
 
 	public string Name { get; }
 	public string Namespace { get; }
@@ -8510,11 +8510,11 @@ public class XmlAnyElementAttributes : CollectionBase // TypeDefIndex: 2067
 
 public class XmlArrayAttribute : Attribute // TypeDefIndex: 2068
 {
-	private string elementName; 
-	private XmlSchemaForm form; 
-	private bool isNullable; 
-	private string ns; 
-	private int order; 
+	private string elementName;
+	private XmlSchemaForm form;
+	private bool isNullable;
+	private string ns;
+	private int order;
 
 	public string ElementName { get; }
 	public XmlSchemaForm Form { get; }
@@ -8539,14 +8539,14 @@ public class XmlArrayAttribute : Attribute // TypeDefIndex: 2068
 
 public class XmlArrayItemAttribute : Attribute // TypeDefIndex: 2069
 {
-	private string dataType; 
-	private string elementName; 
-	private XmlSchemaForm form; 
-	private string ns; 
-	private bool isNullable; 
-	private bool isNullableSpecified; 
-	private int nestingLevel; 
-	private Type type; 
+	private string dataType;
+	private string elementName;
+	private XmlSchemaForm form;
+	private string ns;
+	private bool isNullable;
+	private bool isNullableSpecified;
+	private int nestingLevel;
+	private Type type;
 
 	public string DataType { get; }
 	public string ElementName { get; }
@@ -8595,11 +8595,11 @@ public class XmlArrayItemAttributes : CollectionBase // TypeDefIndex: 2070
 
 public class XmlAttributeAttribute : Attribute // TypeDefIndex: 2071
 {
-	private string attributeName; 
-	private string dataType; 
-	private Type type; 
-	private XmlSchemaForm form; 
-	private string ns; 
+	private string attributeName;
+	private string dataType;
+	private Type type;
+	private XmlSchemaForm form;
+	private string ns;
 
 	public string AttributeName { get; }
 	public string DataType { get; set; }
@@ -8625,7 +8625,7 @@ public class XmlAttributeAttribute : Attribute // TypeDefIndex: 2071
 
 public class XmlAttributeOverrides // TypeDefIndex: 2072
 {
-	private Hashtable overrides; 
+	private Hashtable overrides;
 
 	public XmlAttributes Item { get; }
 	public XmlAttributes Item { get; }
@@ -8645,20 +8645,20 @@ public class XmlAttributeOverrides // TypeDefIndex: 2072
 
 public class XmlAttributes // TypeDefIndex: 2073
 {
-	private XmlAnyAttributeAttribute xmlAnyAttribute; 
-	private XmlAnyElementAttributes xmlAnyElements; 
-	private XmlArrayAttribute xmlArray; 
-	private XmlArrayItemAttributes xmlArrayItems; 
-	private XmlAttributeAttribute xmlAttribute; 
-	private XmlChoiceIdentifierAttribute xmlChoiceIdentifier; 
-	private object xmlDefaultValue; 
-	private XmlElementAttributes xmlElements; 
-	private XmlEnumAttribute xmlEnum; 
-	private bool xmlIgnore; 
-	private bool xmlns; 
-	private XmlRootAttribute xmlRoot; 
-	private XmlTextAttribute xmlText; 
-	private XmlTypeAttribute xmlType; 
+	private XmlAnyAttributeAttribute xmlAnyAttribute;
+	private XmlAnyElementAttributes xmlAnyElements;
+	private XmlArrayAttribute xmlArray;
+	private XmlArrayItemAttributes xmlArrayItems;
+	private XmlAttributeAttribute xmlAttribute;
+	private XmlChoiceIdentifierAttribute xmlChoiceIdentifier;
+	private object xmlDefaultValue;
+	private XmlElementAttributes xmlElements;
+	private XmlEnumAttribute xmlEnum;
+	private bool xmlIgnore;
+	private bool xmlns;
+	private XmlRootAttribute xmlRoot;
+	private XmlTextAttribute xmlText;
+	private XmlTypeAttribute xmlType;
 
 	public XmlAnyAttributeAttribute XmlAnyAttribute { get; }
 	public XmlAnyElementAttributes XmlAnyElements { get; }
@@ -8717,7 +8717,7 @@ public class XmlAttributes // TypeDefIndex: 2073
 
 public class XmlChoiceIdentifierAttribute : Attribute // TypeDefIndex: 2074
 {
-	private string memberName; 
+	private string memberName;
 
 	public string MemberName { get; }
 
@@ -8730,7 +8730,7 @@ public class XmlChoiceIdentifierAttribute : Attribute // TypeDefIndex: 2074
 
 internal class XmlCustomFormatter // TypeDefIndex: 2075
 {
-	private static string[] allTimeFormats; 
+	private static string[] allTimeFormats;
 
 
 	internal static string FromEnum(long value, string[] values, long[] ids, string typeName) { }
@@ -8749,13 +8749,13 @@ internal class XmlCustomFormatter // TypeDefIndex: 2075
 
 public class XmlElementAttribute : Attribute // TypeDefIndex: 2076
 {
-	private string dataType; 
-	private string elementName; 
-	private XmlSchemaForm form; 
-	private string ns; 
-	private bool isNullable; 
-	private Type type; 
-	private int order; 
+	private string dataType;
+	private string elementName;
+	private XmlSchemaForm form;
+	private string ns;
+	private bool isNullable;
+	private Type type;
+	private int order;
 
 	public string DataType { get; }
 	public string ElementName { get; }
@@ -8808,7 +8808,7 @@ public class XmlElementAttributes : CollectionBase // TypeDefIndex: 2077
 
 public class XmlEnumAttribute : Attribute // TypeDefIndex: 2078
 {
-	private string name; 
+	private string name;
 
 	public string Name { get; }
 
@@ -8830,7 +8830,7 @@ public class XmlIgnoreAttribute : Attribute // TypeDefIndex: 2079
 
 public class XmlIncludeAttribute : Attribute // TypeDefIndex: 2080
 {
-	private Type type; 
+	private Type type;
 
 	public Type Type { get; }
 
@@ -8841,13 +8841,13 @@ public class XmlIncludeAttribute : Attribute // TypeDefIndex: 2080
 
 public abstract class XmlMapping // TypeDefIndex: 2081
 {
-	private ObjectMap map; 
-	private ArrayList relatedMaps; 
-	private SerializationFormat format; 
-	private SerializationSource source; 
-	internal string _elementName; 
-	internal string _namespace; 
-	private string key; 
+	private ObjectMap map;
+	private ArrayList relatedMaps;
+	private SerializationFormat format;
+	private SerializationSource source;
+	internal string _elementName;
+	internal string _namespace;
+	private string key;
 
 	public string ElementName { get; }
 	public string Namespace { get; }
@@ -8884,10 +8884,10 @@ public abstract class XmlMapping // TypeDefIndex: 2081
 public class XmlMembersMapping : XmlMapping // TypeDefIndex: 2085
 {
 
-[DefaultMemberAttribute] 
+[DefaultMemberAttribute]
 public class XmlMembersMapping : XmlMapping
-	private bool _hasWrapperElement; 
-	private XmlMemberMapping[] _mapping; 
+	private bool _hasWrapperElement;
+	private XmlMemberMapping[] _mapping;
 
 	public int Count { get; }
 	internal bool HasWrapperElement { get; }
@@ -8908,15 +8908,15 @@ public class XmlNamespaceDeclarationsAttribute : Attribute // TypeDefIndex: 2086
 
 public class XmlReflectionImporter // TypeDefIndex: 2087
 {
-	private string initialDefaultNamespace; 
-	private XmlAttributeOverrides attributeOverrides; 
-	private ArrayList includedTypes; 
-	private ReflectionHelper helper; 
-	private int arrayChoiceCount; 
-	private ArrayList relatedMaps; 
-	private bool allowPrivateTypes; 
-	private static readonly string errSimple; 
-	private static readonly string errSimple2; 
+	private string initialDefaultNamespace;
+	private XmlAttributeOverrides attributeOverrides;
+	private ArrayList includedTypes;
+	private ReflectionHelper helper;
+	private int arrayChoiceCount;
+	private ArrayList relatedMaps;
+	private bool allowPrivateTypes;
+	private static readonly string errSimple;
+	private static readonly string errSimple2;
 
 
 	public void .ctor(XmlAttributeOverrides attributeOverrides, string defaultNamespace) { }
@@ -8975,8 +8975,8 @@ public class XmlReflectionImporter // TypeDefIndex: 2087
 
 private sealed class XmlReflectionImporter.<>c // TypeDefIndex: 2088
 {
-	public static readonly XmlReflectionImporter.<>c <>9; 
-	public static Comparison<XmlReflectionMember> <>9__28_0; 
+	public static readonly XmlReflectionImporter.<>c <>9;
+	public static Comparison<XmlReflectionMember> <>9__28_0;
 
 
 	private static void .cctor() { }
@@ -8989,11 +8989,11 @@ private sealed class XmlReflectionImporter.<>c // TypeDefIndex: 2088
 
 public class XmlReflectionMember // TypeDefIndex: 2089
 {
-	private bool isReturnValue; 
-	private string memberName; 
-	private Type memberType; 
-	private XmlAttributes xmlAttributes; 
-	private Type declaringType; 
+	private bool isReturnValue;
+	private string memberName;
+	private Type memberType;
+	private XmlAttributes xmlAttributes;
+	private Type declaringType;
 
 	public bool IsReturnValue { get; }
 	public string MemberName { get; }
@@ -9020,10 +9020,10 @@ public class XmlReflectionMember // TypeDefIndex: 2089
 
 public class XmlRootAttribute : Attribute // TypeDefIndex: 2090
 {
-	private string dataType; 
-	private string elementName; 
-	private bool isNullable; 
-	private string ns; 
+	private string dataType;
+	private string elementName;
+	private bool isNullable;
+	private string ns;
 
 	public string DataType { get; set; }
 	public string ElementName { get; set; }
@@ -9057,8 +9057,8 @@ public class XmlRootAttribute : Attribute // TypeDefIndex: 2090
 
 public sealed class XmlSchemaProviderAttribute : Attribute // TypeDefIndex: 2091
 {
-	private string _methodName; 
-	private bool _isAny; 
+	private string _methodName;
+	private bool _isAny;
 
 	public string MethodName { get; }
 	public bool IsAny { get; set; }
@@ -9122,31 +9122,31 @@ public sealed class XmlSerializationReadCallback : MulticastDelegate // TypeDefI
 
 public abstract class XmlSerializationReader : XmlSerializationGeneratedCode // TypeDefIndex: 2096
 {
-	private XmlDocument document; 
-	private XmlReader reader; 
-	private ArrayList fixups; 
-	private Hashtable collFixups; 
-	private ArrayList collItemFixups; 
-	private Hashtable typesCallbacks; 
-	private ArrayList noIDTargets; 
-	private Hashtable targets; 
-	private Hashtable delayedListFixups; 
-	private XmlSerializer eventSource; 
-	private int delayedFixupId; 
-	private Hashtable referencedObjects; 
-	private int readCount; 
-	private int whileIterationCount; 
-	private string w3SchemaNS; 
-	private string w3InstanceNS; 
-	private string w3InstanceNS2000; 
-	private string w3InstanceNS1999; 
-	private string soapNS; 
-	private string wsdlNS; 
-	private string nullX; 
-	private string nil; 
-	private string typeX; 
-	private string arrayType; 
-	private XmlQualifiedName arrayQName; 
+	private XmlDocument document;
+	private XmlReader reader;
+	private ArrayList fixups;
+	private Hashtable collFixups;
+	private ArrayList collItemFixups;
+	private Hashtable typesCallbacks;
+	private ArrayList noIDTargets;
+	private Hashtable targets;
+	private Hashtable delayedListFixups;
+	private XmlSerializer eventSource;
+	private int delayedFixupId;
+	private Hashtable referencedObjects;
+	private int readCount;
+	private int whileIterationCount;
+	private string w3SchemaNS;
+	private string w3InstanceNS;
+	private string w3InstanceNS2000;
+	private string w3InstanceNS1999;
+	private string soapNS;
+	private string wsdlNS;
+	private string nullX;
+	private string nil;
+	private string typeX;
+	private string arrayType;
+	private XmlQualifiedName arrayQName;
 
 	protected XmlDocument Document { get; }
 	protected XmlReader Reader { get; }
@@ -9258,10 +9258,10 @@ public abstract class XmlSerializationReader : XmlSerializationGeneratedCode // 
 
 private class XmlSerializationReader.WriteCallbackInfo // TypeDefIndex: 2097
 {
-	public Type Type; 
-	public string TypeName; 
-	public string TypeNs; 
-	public XmlSerializationReadCallback Callback; 
+	public Type Type;
+	public string TypeName;
+	public string TypeNs;
+	public XmlSerializationReadCallback Callback;
 
 
 	public void .ctor() { }
@@ -9270,9 +9270,9 @@ private class XmlSerializationReader.WriteCallbackInfo // TypeDefIndex: 2097
 
 private class XmlSerializationReader.CollectionItemFixup // TypeDefIndex: 2100
 {
-	private Array list; 
-	private int index; 
-	private string id; 
+	private Array list;
+	private int index;
+	private string id;
 
 	public Array Collection { get; }
 	public int Index { get; }
@@ -9291,10 +9291,10 @@ private class XmlSerializationReader.CollectionItemFixup // TypeDefIndex: 2100
 
 internal class XmlSerializationReaderInterpreter : XmlSerializationReader // TypeDefIndex: 2101
 {
-	private XmlMapping _typeMap; 
-	private SerializationFormat _format; 
-	private static readonly XmlQualifiedName AnyType; 
-	private static readonly object[] empty_array; 
+	private XmlMapping _typeMap;
+	private SerializationFormat _format;
+	private static readonly XmlQualifiedName AnyType;
+	private static readonly object[] empty_array;
 
 
 	public void .ctor(XmlMapping typeMap) { }
@@ -9379,9 +9379,9 @@ internal class XmlSerializationReaderInterpreter : XmlSerializationReader // Typ
 
 private class XmlSerializationReaderInterpreter.FixupCallbackInfo // TypeDefIndex: 2102
 {
-	private XmlSerializationReaderInterpreter _sri; 
-	private ClassMap _map; 
-	private bool _isValueList; 
+	private XmlSerializationReaderInterpreter _sri;
+	private ClassMap _map;
+	private bool _isValueList;
 
 
 	public void .ctor(XmlSerializationReaderInterpreter sri, ClassMap map, bool isValueList) { }
@@ -9392,8 +9392,8 @@ private class XmlSerializationReaderInterpreter.FixupCallbackInfo // TypeDefInde
 
 private class XmlSerializationReaderInterpreter.ReaderCallbackInfo // TypeDefIndex: 2103
 {
-	private XmlSerializationReaderInterpreter _sri; 
-	private XmlTypeMapping _typeMap; 
+	private XmlSerializationReaderInterpreter _sri;
+	private XmlTypeMapping _typeMap;
 
 
 	public void .ctor(XmlSerializationReaderInterpreter sri, XmlTypeMapping typeMap) { }
@@ -9417,14 +9417,14 @@ public sealed class XmlSerializationWriteCallback : MulticastDelegate // TypeDef
 
 public abstract class XmlSerializationWriter : XmlSerializationGeneratedCode // TypeDefIndex: 2105
 {
-	private ObjectIDGenerator idGenerator; 
-	private int qnameCount; 
-	private bool topLevelElement; 
-	private ArrayList namespaces; 
-	private XmlWriter writer; 
-	private Queue referencedElements; 
-	private Hashtable callbacks; 
-	private Hashtable serializedObjects; 
+	private ObjectIDGenerator idGenerator;
+	private int qnameCount;
+	private bool topLevelElement;
+	private ArrayList namespaces;
+	private XmlWriter writer;
+	private Queue referencedElements;
+	private Hashtable callbacks;
+	private Hashtable serializedObjects;
 
 	protected XmlWriter Writer { get; }
 
@@ -9533,10 +9533,10 @@ public abstract class XmlSerializationWriter : XmlSerializationGeneratedCode // 
 
 private class XmlSerializationWriter.WriteCallbackInfo // TypeDefIndex: 2106
 {
-	public Type Type; 
-	public string TypeName; 
-	public string TypeNs; 
-	public XmlSerializationWriteCallback Callback; 
+	public Type Type;
+	public string TypeName;
+	public string TypeNs;
+	public XmlSerializationWriteCallback Callback;
 
 
 	public void .ctor() { }
@@ -9545,8 +9545,8 @@ private class XmlSerializationWriter.WriteCallbackInfo // TypeDefIndex: 2106
 
 internal class XmlSerializationWriterInterpreter : XmlSerializationWriter // TypeDefIndex: 2107
 {
-	private XmlMapping _typeMap; 
-	private SerializationFormat _format; 
+	private XmlMapping _typeMap;
+	private SerializationFormat _format;
 
 
 	public void .ctor(XmlMapping typeMap) { }
@@ -9603,8 +9603,8 @@ internal class XmlSerializationWriterInterpreter : XmlSerializationWriter // Typ
 
 private class XmlSerializationWriterInterpreter.CallbackInfo // TypeDefIndex: 2108
 {
-	private XmlSerializationWriterInterpreter _swi; 
-	private XmlTypeMapping _typeMap; 
+	private XmlSerializationWriterInterpreter _swi;
+	private XmlTypeMapping _typeMap;
 
 
 	public void .ctor(XmlSerializationWriterInterpreter swi, XmlTypeMapping typeMap) { }
@@ -9617,19 +9617,19 @@ private class XmlSerializationWriterInterpreter.CallbackInfo // TypeDefIndex: 21
 
 public class XmlSerializer // TypeDefIndex: 2109
 {
-	private static int generationThreshold; 
-	private static bool backgroundGeneration; 
-	private static bool deleteTempFiles; 
-	private static bool generatorFallback; 
-	private bool customSerializer; 
-	private XmlMapping typeMapping; 
-	private XmlSerializer.SerializerData serializerData; 
-	private static Hashtable serializerTypes; 
-	private UnreferencedObjectEventHandler onUnreferencedObject; 
-	private XmlAttributeEventHandler onUnknownAttribute; 
-	private XmlElementEventHandler onUnknownElement; 
-	private XmlNodeEventHandler onUnknownNode; 
-	private static Encoding DefaultEncoding; 
+	private static int generationThreshold;
+	private static bool backgroundGeneration;
+	private static bool deleteTempFiles;
+	private static bool generatorFallback;
+	private bool customSerializer;
+	private XmlMapping typeMapping;
+	private XmlSerializer.SerializerData serializerData;
+	private static Hashtable serializerTypes;
+	private UnreferencedObjectEventHandler onUnreferencedObject;
+	private XmlAttributeEventHandler onUnknownAttribute;
+	private XmlElementEventHandler onUnknownElement;
+	private XmlNodeEventHandler onUnknownNode;
+	private static Encoding DefaultEncoding;
 
 	internal XmlMapping Mapping { get; }
 
@@ -9676,10 +9676,10 @@ public class XmlSerializer // TypeDefIndex: 2109
 
 internal class XmlSerializer.SerializerData // TypeDefIndex: 2110
 {
-	public MethodInfo ReaderMethod; 
-	public Type WriterType; 
-	public MethodInfo WriterMethod; 
-	public XmlSerializerImplementation Implementation; 
+	public MethodInfo ReaderMethod;
+	public Type WriterType;
+	public MethodInfo WriterMethod;
+	public XmlSerializerImplementation Implementation;
 
 
 	public XmlSerializationWriter CreateWriter() { }
@@ -9688,7 +9688,7 @@ internal class XmlSerializer.SerializerData // TypeDefIndex: 2110
 
 public class XmlSerializerFactory // TypeDefIndex: 2111
 {
-	private static Hashtable serializersBySource; 
+	private static Hashtable serializersBySource;
 
 
 	public void .ctor() { }
@@ -9714,8 +9714,8 @@ public abstract class XmlSerializerImplementation // TypeDefIndex: 2112
 
 public class XmlTextAttribute : Attribute // TypeDefIndex: 2113
 {
-	private string dataType; 
-	private Type type; 
+	private string dataType;
+	private Type type;
 
 	public string DataType { get; }
 	public Type Type { get; }
@@ -9733,9 +9733,9 @@ public class XmlTextAttribute : Attribute // TypeDefIndex: 2113
 
 public class XmlTypeAttribute : Attribute // TypeDefIndex: 2114
 {
-	private bool includeInSchema; 
-	private string ns; 
-	private string typeName; 
+	private bool includeInSchema;
+	private string ns;
+	private string typeName;
 
 	public bool IncludeInSchema { get; }
 	public string Namespace { get; }
@@ -9754,17 +9754,17 @@ public class XmlTypeAttribute : Attribute // TypeDefIndex: 2114
 
 internal class XmlTypeMapElementInfo // TypeDefIndex: 2115
 {
-	private string _elementName; 
-	private string _namespace; 
-	private XmlSchemaForm _form; 
-	private XmlTypeMapMember _member; 
-	private object _choiceValue; 
-	private bool _isNullable; 
-	private int _nestingLevel; 
-	private XmlTypeMapping _mappedType; 
-	private TypeData _type; 
-	private bool _wrappedElement; 
-	private int _explicitOrder; 
+	private string _elementName;
+	private string _namespace;
+	private XmlSchemaForm _form;
+	private XmlTypeMapMember _member;
+	private object _choiceValue;
+	private bool _isNullable;
+	private int _nestingLevel;
+	private XmlTypeMapping _mappedType;
+	private TypeData _type;
+	private bool _wrappedElement;
+	private int _explicitOrder;
 
 	public TypeData TypeData { get; }
 	public object ChoiceValue { get; set; }
@@ -9853,16 +9853,16 @@ internal class XmlTypeMapElementInfoList : ArrayList // TypeDefIndex: 2116
 
 internal class XmlTypeMapMember // TypeDefIndex: 2117
 {
-	private string _name; 
-	private int _index; 
-	private int _globalIndex; 
-	private int _specifiedGlobalIndex; 
-	private TypeData _typeData; 
-	private MemberInfo _member; 
-	private MemberInfo _specifiedMember; 
-	private MethodInfo _shouldSerialize; 
-	private object _defaultValue; 
-	private int _flags; 
+	private string _name;
+	private int _index;
+	private int _globalIndex;
+	private int _specifiedGlobalIndex;
+	private TypeData _typeData;
+	private MemberInfo _member;
+	private MemberInfo _specifiedMember;
+	private MethodInfo _shouldSerialize;
+	private object _defaultValue;
+	private int _flags;
 
 	public string Name { get; set; }
 	public object DefaultValue { get; set; }
@@ -9925,10 +9925,10 @@ internal class XmlTypeMapMember // TypeDefIndex: 2117
 
 internal class XmlTypeMapMemberAttribute : XmlTypeMapMember // TypeDefIndex: 2118
 {
-	private string _attributeName; 
-	private string _namespace; 
-	private XmlSchemaForm _form; 
-	private XmlTypeMapping _mappedType; 
+	private string _attributeName;
+	private string _namespace;
+	private XmlSchemaForm _form;
+	private XmlTypeMapping _mappedType;
 
 	public string AttributeName { get; set; }
 	public string Namespace { get; set; }
@@ -9956,10 +9956,10 @@ internal class XmlTypeMapMemberAttribute : XmlTypeMapMember // TypeDefIndex: 211
 
 internal class XmlTypeMapMemberElement : XmlTypeMapMember // TypeDefIndex: 2119
 {
-	private XmlTypeMapElementInfoList _elementInfo; 
-	private string _choiceMember; 
-	private bool _isTextCollector; 
-	private TypeData _choiceTypeData; 
+	private XmlTypeMapElementInfoList _elementInfo;
+	private string _choiceMember;
+	private bool _isTextCollector;
+	private TypeData _choiceTypeData;
 
 	public XmlTypeMapElementInfoList ElementInfo { get; set; }
 	public string ChoiceMember { get; set; }
@@ -10000,7 +10000,7 @@ internal class XmlTypeMapMemberList : XmlTypeMapMemberElement // TypeDefIndex: 2
 
 internal class XmlTypeMapMemberExpandable : XmlTypeMapMemberElement // TypeDefIndex: 2121
 {
-	private int _flatArrayIndex; 
+	private int _flatArrayIndex;
 
 	public int FlatArrayIndex { get; set; }
 
@@ -10015,7 +10015,7 @@ internal class XmlTypeMapMemberExpandable : XmlTypeMapMemberElement // TypeDefIn
 
 internal class XmlTypeMapMemberFlatList : XmlTypeMapMemberExpandable // TypeDefIndex: 2122
 {
-	private ListMap _listMap; 
+	private ListMap _listMap;
 
 	public ListMap ListMap { get; set; }
 
@@ -10057,15 +10057,15 @@ internal class XmlTypeMapMemberNamespaces : XmlTypeMapMember // TypeDefIndex: 21
 
 public class XmlTypeMapping : XmlMapping // TypeDefIndex: 2126
 {
-	private string xmlType; 
-	private string xmlTypeNamespace; 
-	private TypeData type; 
-	private XmlTypeMapping baseMap; 
-	private bool multiReferenceType; 
-	private bool includeInSchema; 
-	private bool isNullable; 
-	private bool isAny; 
-	private ArrayList _derivedTypes; 
+	private string xmlType;
+	private string xmlTypeNamespace;
+	private TypeData type;
+	private XmlTypeMapping baseMap;
+	private bool multiReferenceType;
+	private bool includeInSchema;
+	private bool isNullable;
+	private bool isAny;
+	private ArrayList _derivedTypes;
 
 	public string TypeFullName { get; }
 	internal TypeData TypeData { get; }
@@ -10124,7 +10124,7 @@ public class XmlTypeMapping : XmlMapping // TypeDefIndex: 2126
 
 public enum XmlSchemaDatatypeVariety // TypeDefIndex: 2174
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaDatatypeVariety Atomic = 0;
 	public const XmlSchemaDatatypeVariety List = 1;
 	public const XmlSchemaDatatypeVariety Union = 2;
@@ -10133,8 +10133,8 @@ public enum XmlSchemaDatatypeVariety // TypeDefIndex: 2174
 
 internal class XsdSimpleValue // TypeDefIndex: 2175
 {
-	private XmlSchemaSimpleType xmlType; 
-	private object typedValue; 
+	private XmlSchemaSimpleType xmlType;
+	private object typedValue;
 
 	public XmlSchemaSimpleType XmlType { get; }
 	public object TypedValue { get; }
@@ -10150,7 +10150,7 @@ internal class XsdSimpleValue // TypeDefIndex: 2175
 
 internal enum XmlSchemaWhiteSpace // TypeDefIndex: 2177
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaWhiteSpace Preserve = 0;
 	public const XmlSchemaWhiteSpace Replace = 1;
 	public const XmlSchemaWhiteSpace Collapse = 2;
@@ -10159,36 +10159,36 @@ internal enum XmlSchemaWhiteSpace // TypeDefIndex: 2177
 
 public sealed class XmlSchemaInference // TypeDefIndex: 2259
 {
-	internal static XmlQualifiedName ST_boolean; 
-	internal static XmlQualifiedName ST_byte; 
-	internal static XmlQualifiedName ST_unsignedByte; 
-	internal static XmlQualifiedName ST_short; 
-	internal static XmlQualifiedName ST_unsignedShort; 
-	internal static XmlQualifiedName ST_int; 
-	internal static XmlQualifiedName ST_unsignedInt; 
-	internal static XmlQualifiedName ST_long; 
-	internal static XmlQualifiedName ST_unsignedLong; 
-	internal static XmlQualifiedName ST_integer; 
-	internal static XmlQualifiedName ST_decimal; 
-	internal static XmlQualifiedName ST_float; 
-	internal static XmlQualifiedName ST_double; 
-	internal static XmlQualifiedName ST_duration; 
-	internal static XmlQualifiedName ST_dateTime; 
-	internal static XmlQualifiedName ST_time; 
-	internal static XmlQualifiedName ST_date; 
-	internal static XmlQualifiedName ST_gYearMonth; 
-	internal static XmlQualifiedName ST_string; 
-	internal static XmlQualifiedName ST_anySimpleType; 
-	internal static XmlQualifiedName[] SimpleTypes; 
-	private XmlSchema rootSchema; 
-	private XmlSchemaSet schemaSet; 
-	private XmlReader xtr; 
-	private NameTable nametable; 
-	private string TargetNamespace; 
-	private XmlNamespaceManager NamespaceManager; 
-	private ArrayList schemaList; 
-	private XmlSchemaInference.InferenceOption occurrence; 
-	private XmlSchemaInference.InferenceOption typeInference; 
+	internal static XmlQualifiedName ST_boolean;
+	internal static XmlQualifiedName ST_byte;
+	internal static XmlQualifiedName ST_unsignedByte;
+	internal static XmlQualifiedName ST_short;
+	internal static XmlQualifiedName ST_unsignedShort;
+	internal static XmlQualifiedName ST_int;
+	internal static XmlQualifiedName ST_unsignedInt;
+	internal static XmlQualifiedName ST_long;
+	internal static XmlQualifiedName ST_unsignedLong;
+	internal static XmlQualifiedName ST_integer;
+	internal static XmlQualifiedName ST_decimal;
+	internal static XmlQualifiedName ST_float;
+	internal static XmlQualifiedName ST_double;
+	internal static XmlQualifiedName ST_duration;
+	internal static XmlQualifiedName ST_dateTime;
+	internal static XmlQualifiedName ST_time;
+	internal static XmlQualifiedName ST_date;
+	internal static XmlQualifiedName ST_gYearMonth;
+	internal static XmlQualifiedName ST_string;
+	internal static XmlQualifiedName ST_anySimpleType;
+	internal static XmlQualifiedName[] SimpleTypes;
+	private XmlSchema rootSchema;
+	private XmlSchemaSet schemaSet;
+	private XmlReader xtr;
+	private NameTable nametable;
+	private string TargetNamespace;
+	private XmlNamespaceManager NamespaceManager;
+	private ArrayList schemaList;
+	private XmlSchemaInference.InferenceOption occurrence;
+	private XmlSchemaInference.InferenceOption typeInference;
 
 	public XmlSchemaInference.InferenceOption Occurrence { get; set; }
 	public XmlSchemaInference.InferenceOption TypeInference { set; }
@@ -10258,7 +10258,7 @@ public sealed class XmlSchemaInference // TypeDefIndex: 2259
 
 public enum XmlSchemaInference.InferenceOption // TypeDefIndex: 2260
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaInference.InferenceOption Restricted = 0;
 	public const XmlSchemaInference.InferenceOption Relaxed = 1;
 
@@ -10281,11 +10281,11 @@ public class XmlSchemaInferenceException : XmlSchemaException // TypeDefIndex: 2
 
 public sealed class XmlAtomicValue : XPathItem, ICloneable // TypeDefIndex: 2303
 {
-	private XmlSchemaType xmlType; 
-	private object objVal; 
-	private TypeCode clrType; 
-	private XmlAtomicValue.Union unionVal; 
-	private XmlAtomicValue.NamespacePrefixForQName nsPrefix; 
+	private XmlSchemaType xmlType;
+	private object objVal;
+	private TypeCode clrType;
+	private XmlAtomicValue.Union unionVal;
+	private XmlAtomicValue.NamespacePrefixForQName nsPrefix;
 
 	public override XmlSchemaType XmlType { get; }
 	public override Type ValueType { get; }
@@ -10346,18 +10346,18 @@ public sealed class XmlAtomicValue : XPathItem, ICloneable // TypeDefIndex: 2303
 
 private struct XmlAtomicValue.Union // TypeDefIndex: 2304
 {
-	public bool boolVal; 
-	public double dblVal; 
-	public long i64Val; 
-	public int i32Val; 
-	public DateTime dtVal; 
+	public bool boolVal;
+	public double dblVal;
+	public long i64Val;
+	public int i32Val;
+	public DateTime dtVal;
 
 }
 
 private class XmlAtomicValue.NamespacePrefixForQName : IXmlNamespaceResolver // TypeDefIndex: 2305
 {
-	public string prefix; 
-	public string ns; 
+	public string prefix;
+	public string ns;
 
 
 	public void .ctor(string prefix, string ns) { }
@@ -10372,101 +10372,101 @@ private class XmlAtomicValue.NamespacePrefixForQName : IXmlNamespaceResolver // 
 
 public class XmlSchema : XmlSchemaObject // TypeDefIndex: 2306
 {
-	private XmlSchemaForm attributeFormDefault; 
-	private XmlSchemaForm elementFormDefault; 
-	private XmlSchemaDerivationMethod blockDefault; 
-	private XmlSchemaDerivationMethod finalDefault; 
-	private string targetNs; 
-	private string version; 
-	private XmlSchemaObjectCollection includes; 
-	private XmlSchemaObjectCollection items; 
-	private string id; 
-	private XmlAttribute[] moreAttributes; 
-	private bool isCompiled; 
-	private bool isCompiledBySet; 
-	private bool isPreprocessed; 
-	private bool isRedefined; 
-	private int errorCount; 
-	private XmlSchemaObjectTable attributes; 
-	private XmlSchemaObjectTable attributeGroups; 
-	private XmlSchemaObjectTable elements; 
-	private XmlSchemaObjectTable types; 
-	private XmlSchemaObjectTable groups; 
-	private XmlSchemaObjectTable notations; 
-	private XmlSchemaObjectTable identityConstraints; 
-	private static int globalIdCounter; 
-	private ArrayList importedSchemas; 
-	private ArrayList importedNamespaces; 
-	private int schemaId; 
-	private Uri baseUri; 
-	private bool isChameleon; 
-	private Hashtable ids; 
-	private XmlDocument document; 
+	private XmlSchemaForm attributeFormDefault;
+	private XmlSchemaForm elementFormDefault;
+	private XmlSchemaDerivationMethod blockDefault;
+	private XmlSchemaDerivationMethod finalDefault;
+	private string targetNs;
+	private string version;
+	private XmlSchemaObjectCollection includes;
+	private XmlSchemaObjectCollection items;
+	private string id;
+	private XmlAttribute[] moreAttributes;
+	private bool isCompiled;
+	private bool isCompiledBySet;
+	private bool isPreprocessed;
+	private bool isRedefined;
+	private int errorCount;
+	private XmlSchemaObjectTable attributes;
+	private XmlSchemaObjectTable attributeGroups;
+	private XmlSchemaObjectTable elements;
+	private XmlSchemaObjectTable types;
+	private XmlSchemaObjectTable groups;
+	private XmlSchemaObjectTable notations;
+	private XmlSchemaObjectTable identityConstraints;
+	private static int globalIdCounter;
+	private ArrayList importedSchemas;
+	private ArrayList importedNamespaces;
+	private int schemaId;
+	private Uri baseUri;
+	private bool isChameleon;
+	private Hashtable ids;
+	private XmlDocument document;
 
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public XmlSchemaForm AttributeFormDefault { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public XmlSchemaDerivationMethod BlockDefault { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaDerivationMethod FinalDefault { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaForm ElementFormDefault { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string TargetNamespace { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Version { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Includes { get; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Items { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool IsCompiledBySet { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool IsPreprocessed { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool IsRedefined { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable Attributes { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable AttributeGroups { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable SchemaTypes { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable Elements { get; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Id { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable Groups { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable Notations { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaObjectTable IdentityConstraints { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal Uri BaseUri { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal int SchemaId { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool IsChameleon { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal Hashtable Ids { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlDocument Document { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal int ErrorCount { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string IdAttribute { get; set; }
 	internal ArrayList ImportedSchemas { get; }
 	internal ArrayList ImportedNamespaces { get; }
@@ -10582,9 +10582,9 @@ public class XmlSchema : XmlSchemaObject // TypeDefIndex: 2306
 
 public class XmlSchemaAll : XmlSchemaGroupBase // TypeDefIndex: 2307
 {
-	private XmlSchemaObjectCollection items; 
+	private XmlSchemaObjectCollection items;
 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public override XmlSchemaObjectCollection Items { get; }
 	internal override bool IsEmpty { get; }
 
@@ -10601,17 +10601,17 @@ public class XmlSchemaAll : XmlSchemaGroupBase // TypeDefIndex: 2307
 
 public class XmlSchemaAnnotated : XmlSchemaObject // TypeDefIndex: 2308
 {
-	private string id; 
-	private XmlSchemaAnnotation annotation; 
-	private XmlAttribute[] moreAttributes; 
+	private string id;
+	private XmlSchemaAnnotation annotation;
+	private XmlAttribute[] moreAttributes;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Id { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnnotation Annotation { get; set; }
-	[XmlAnyAttributeAttribute] 
+	[XmlAnyAttributeAttribute]
 	public XmlAttribute[] UnhandledAttributes { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string IdAttribute { get; set; }
 
 
@@ -10641,16 +10641,16 @@ public class XmlSchemaAnnotated : XmlSchemaObject // TypeDefIndex: 2308
 
 public class XmlSchemaAnnotation : XmlSchemaObject // TypeDefIndex: 2309
 {
-	private string id; 
-	private XmlSchemaObjectCollection items; 
-	private XmlAttribute[] moreAttributes; 
+	private string id;
+	private XmlSchemaObjectCollection items;
+	private XmlAttribute[] moreAttributes;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Id { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Items { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string IdAttribute { get; set; }
 
 
@@ -10672,20 +10672,20 @@ public class XmlSchemaAnnotation : XmlSchemaObject // TypeDefIndex: 2309
 
 public class XmlSchemaAny : XmlSchemaParticle // TypeDefIndex: 2310
 {
-	private string ns; 
-	private XmlSchemaContentProcessing processContents; 
-	private NamespaceList namespaceList; 
+	private string ns;
+	private XmlSchemaContentProcessing processContents;
+	private NamespaceList namespaceList;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Namespace { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaContentProcessing ProcessContents { set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal NamespaceList NamespaceList { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal string ResolvedNamespace { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaContentProcessing ProcessContentsCorrect { get; }
 	internal override string NameString { get; }
 
@@ -10716,18 +10716,18 @@ public class XmlSchemaAny : XmlSchemaParticle // TypeDefIndex: 2310
 
 public class XmlSchemaAnyAttribute : XmlSchemaAnnotated // TypeDefIndex: 2311
 {
-	private string ns; 
-	private XmlSchemaContentProcessing processContents; 
-	private NamespaceList namespaceList; 
+	private string ns;
+	private XmlSchemaContentProcessing processContents;
+	private NamespaceList namespaceList;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Namespace { set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public XmlSchemaContentProcessing ProcessContents { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal NamespaceList NamespaceList { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaContentProcessing ProcessContentsCorrect { get; }
 
 
@@ -10759,13 +10759,13 @@ public class XmlSchemaAnyAttribute : XmlSchemaAnnotated // TypeDefIndex: 2311
 
 public class XmlSchemaAppInfo : XmlSchemaObject // TypeDefIndex: 2312
 {
-	private string source; 
-	private XmlNode[] markup; 
+	private string source;
+	private XmlNode[] markup;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Source { set; }
-	[XmlTextAttribute] 
-	[XmlAnyElementAttribute] 
+	[XmlTextAttribute]
+	[XmlAnyElementAttribute]
 	public XmlNode[] Markup { get; set; }
 
 
@@ -10781,46 +10781,46 @@ public class XmlSchemaAppInfo : XmlSchemaObject // TypeDefIndex: 2312
 
 public class XmlSchemaAttribute : XmlSchemaAnnotated // TypeDefIndex: 2313
 {
-	private string defaultValue; 
-	private string fixedValue; 
-	private string name; 
-	private XmlSchemaForm form; 
-	private XmlSchemaUse use; 
-	private XmlQualifiedName refName; 
-	private XmlQualifiedName typeName; 
-	private XmlQualifiedName qualifiedName; 
-	private XmlSchemaSimpleType type; 
-	private XmlSchemaSimpleType attributeType; 
-	private SchemaAttDef attDef; 
+	private string defaultValue;
+	private string fixedValue;
+	private string name;
+	private XmlSchemaForm form;
+	private XmlSchemaUse use;
+	private XmlQualifiedName refName;
+	private XmlQualifiedName typeName;
+	private XmlQualifiedName qualifiedName;
+	private XmlSchemaSimpleType type;
+	private XmlSchemaSimpleType attributeType;
+	private SchemaAttDef attDef;
 
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public string DefaultValue { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public string FixedValue { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaForm Form { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName RefName { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName SchemaTypeName { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaSimpleType SchemaType { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public XmlSchemaUse Use { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlQualifiedName QualifiedName { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaSimpleType AttributeSchemaType { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaDatatype Datatype { get; }
 	internal SchemaAttDef AttDef { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
 
 
@@ -10882,35 +10882,35 @@ public class XmlSchemaAttribute : XmlSchemaAnnotated // TypeDefIndex: 2313
 
 public class XmlSchemaAttributeGroup : XmlSchemaAnnotated // TypeDefIndex: 2314
 {
-	private string name; 
-	private XmlSchemaObjectCollection attributes; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlQualifiedName qname; 
-	private XmlSchemaAttributeGroup redefined; 
-	private XmlSchemaObjectTable attributeUses; 
-	private XmlSchemaAnyAttribute attributeWildcard; 
-	private int selfReferenceCount; 
+	private string name;
+	private XmlSchemaObjectCollection attributes;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlQualifiedName qname;
+	private XmlSchemaAttributeGroup redefined;
+	private XmlSchemaObjectTable attributeUses;
+	private XmlSchemaAnyAttribute attributeWildcard;
+	private int selfReferenceCount;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Attributes { get; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnyAttribute AnyAttribute { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlQualifiedName QualifiedName { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaObjectTable AttributeUses { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaAnyAttribute AttributeWildcard { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaAttributeGroup RedefinedAttributeGroup { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaAttributeGroup Redefined { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal int SelfReferenceCount { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
 
 
@@ -10956,9 +10956,9 @@ public class XmlSchemaAttributeGroup : XmlSchemaAnnotated // TypeDefIndex: 2314
 
 public class XmlSchemaAttributeGroupRef : XmlSchemaAnnotated // TypeDefIndex: 2315
 {
-	private XmlQualifiedName refName; 
+	private XmlQualifiedName refName;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName RefName { get; set; }
 
 
@@ -10972,13 +10972,13 @@ public class XmlSchemaAttributeGroupRef : XmlSchemaAnnotated // TypeDefIndex: 23
 
 public class XmlSchemaChoice : XmlSchemaGroupBase // TypeDefIndex: 2316
 {
-	private XmlSchemaObjectCollection items; 
+	private XmlSchemaObjectCollection items;
 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public override XmlSchemaObjectCollection Items { get; }
 	internal override bool IsEmpty { get; }
 
@@ -10995,14 +10995,14 @@ public class XmlSchemaChoice : XmlSchemaGroupBase // TypeDefIndex: 2316
 
 public sealed class XmlSchemaCollection : ICollection, IEnumerable // TypeDefIndex: 2317
 {
-	private Hashtable collection; 
-	private XmlNameTable nameTable; 
-	private SchemaNames schemaNames; 
-	private ReaderWriterLock wLock; 
-	private int timeout; 
-	private bool isThreadSafe; 
-	private ValidationEventHandler validationEventHandler; 
-	private XmlResolver xmlResolver; 
+	private Hashtable collection;
+	private XmlNameTable nameTable;
+	private SchemaNames schemaNames;
+	private ReaderWriterLock wLock;
+	private int timeout;
+	private bool isThreadSafe;
+	private ValidationEventHandler validationEventHandler;
+	private XmlResolver xmlResolver;
 
 	public int Count { get; }
 	public XmlNameTable NameTable { get; }
@@ -11051,9 +11051,9 @@ public sealed class XmlSchemaCollection : ICollection, IEnumerable // TypeDefInd
 
 internal sealed class XmlSchemaCollectionNode // TypeDefIndex: 2318
 {
-	private string namespaceUri; 
-	private SchemaInfo schemaInfo; 
-	private XmlSchema schema; 
+	private string namespaceUri;
+	private SchemaInfo schemaInfo;
+	private XmlSchema schema;
 
 	internal string NamespaceURI { set; }
 	internal SchemaInfo SchemaInfo { get; set; }
@@ -11076,7 +11076,7 @@ internal sealed class XmlSchemaCollectionNode // TypeDefIndex: 2318
 
 public sealed class XmlSchemaCollectionEnumerator : IEnumerator // TypeDefIndex: 2319
 {
-	private IDictionaryEnumerator enumerator; 
+	private IDictionaryEnumerator enumerator;
 
 	private object System.Collections.IEnumerator.Current { get; }
 	public XmlSchema Current { get; }
@@ -11101,7 +11101,7 @@ public sealed class XmlSchemaCollectionEnumerator : IEnumerator // TypeDefIndex:
 
 public sealed class XmlSchemaCompilationSettings // TypeDefIndex: 2320
 {
-	private bool enableUpaCheck; 
+	private bool enableUpaCheck;
 
 	public bool EnableUpaCheck { get; }
 
@@ -11114,16 +11114,16 @@ public sealed class XmlSchemaCompilationSettings // TypeDefIndex: 2320
 
 public class XmlSchemaComplexContent : XmlSchemaContentModel // TypeDefIndex: 2321
 {
-	private XmlSchemaContent content; 
-	private bool isMixed; 
-	private bool hasMixedAttribute; 
+	private XmlSchemaContent content;
+	private bool isMixed;
+	private bool hasMixedAttribute;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public bool IsMixed { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public override XmlSchemaContent Content { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool HasMixedAttribute { get; }
 
 
@@ -11143,22 +11143,22 @@ public class XmlSchemaComplexContent : XmlSchemaContentModel // TypeDefIndex: 23
 
 public class XmlSchemaComplexContentExtension : XmlSchemaContent // TypeDefIndex: 2322
 {
-	private XmlSchemaParticle particle; 
-	private XmlSchemaObjectCollection attributes; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlQualifiedName baseTypeName; 
+	private XmlSchemaParticle particle;
+	private XmlSchemaObjectCollection attributes;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlQualifiedName baseTypeName;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName BaseTypeName { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaParticle Particle { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Attributes { get; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnyAttribute AnyAttribute { get; set; }
 
 
@@ -11184,22 +11184,22 @@ public class XmlSchemaComplexContentExtension : XmlSchemaContent // TypeDefIndex
 
 public class XmlSchemaComplexContentRestriction : XmlSchemaContent // TypeDefIndex: 2323
 {
-	private XmlSchemaParticle particle; 
-	private XmlSchemaObjectCollection attributes; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlQualifiedName baseTypeName; 
+	private XmlSchemaParticle particle;
+	private XmlSchemaObjectCollection attributes;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlQualifiedName baseTypeName;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName BaseTypeName { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaParticle Particle { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Attributes { get; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnyAttribute AnyAttribute { get; set; }
 
 
@@ -11225,59 +11225,59 @@ public class XmlSchemaComplexContentRestriction : XmlSchemaContent // TypeDefInd
 
 public class XmlSchemaComplexType : XmlSchemaType // TypeDefIndex: 2324
 {
-	private XmlSchemaDerivationMethod block; 
-	private XmlSchemaContentModel contentModel; 
-	private XmlSchemaParticle particle; 
-	private XmlSchemaObjectCollection attributes; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlSchemaParticle contentTypeParticle; 
-	private XmlSchemaDerivationMethod blockResolved; 
-	private XmlSchemaObjectTable localElements; 
-	private XmlSchemaObjectTable attributeUses; 
-	private XmlSchemaAnyAttribute attributeWildcard; 
-	private static XmlSchemaComplexType anyTypeLax; 
-	private static XmlSchemaComplexType anyTypeSkip; 
-	private static XmlSchemaComplexType untypedAnyType; 
-	private byte pvFlags; 
+	private XmlSchemaDerivationMethod block;
+	private XmlSchemaContentModel contentModel;
+	private XmlSchemaParticle particle;
+	private XmlSchemaObjectCollection attributes;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlSchemaParticle contentTypeParticle;
+	private XmlSchemaDerivationMethod blockResolved;
+	private XmlSchemaObjectTable localElements;
+	private XmlSchemaObjectTable attributeUses;
+	private XmlSchemaAnyAttribute attributeWildcard;
+	private static XmlSchemaComplexType anyTypeLax;
+	private static XmlSchemaComplexType anyTypeSkip;
+	private static XmlSchemaComplexType untypedAnyType;
+	private byte pvFlags;
 
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal static XmlSchemaComplexType AnyType { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal static XmlSchemaComplexType UntypedAnyType { get; }
 	internal static ContentValidator AnyTypeContentValidator { get; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public bool IsAbstract { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public XmlSchemaDerivationMethod Block { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public override bool IsMixed { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaContentModel ContentModel { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaParticle Particle { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Attributes { get; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnyAttribute AnyAttribute { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaContentType ContentType { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaParticle ContentTypeParticle { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaDerivationMethod BlockResolved { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable AttributeUses { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaAnyAttribute AttributeWildcard { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaObjectTable LocalElements { get; }
 	internal bool HasWildCard { set; }
 
@@ -11373,7 +11373,7 @@ public abstract class XmlSchemaContent : XmlSchemaAnnotated // TypeDefIndex: 232
 
 public abstract class XmlSchemaContentModel : XmlSchemaAnnotated // TypeDefIndex: 2326
 {
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public abstract XmlSchemaContent Content { get; set; }
 
 
@@ -11387,21 +11387,21 @@ public abstract class XmlSchemaContentModel : XmlSchemaAnnotated // TypeDefIndex
 
 public enum XmlSchemaContentProcessing // TypeDefIndex: 2327
 {
-	public int value__; 
-	[XmlIgnoreAttribute] 
+	public int value__;
+	[XmlIgnoreAttribute]
 	public const XmlSchemaContentProcessing None = 0;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaContentProcessing Skip = 1;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaContentProcessing Lax = 2;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaContentProcessing Strict = 3;
 
 }
 
 public enum XmlSchemaContentType // TypeDefIndex: 2328
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaContentType TextOnly = 0;
 	public const XmlSchemaContentType Empty = 1;
 	public const XmlSchemaContentType ElementOnly = 2;
@@ -11488,39 +11488,39 @@ public abstract class XmlSchemaDatatype // TypeDefIndex: 2329
 
 public enum XmlSchemaDerivationMethod // TypeDefIndex: 2330
 {
-	public int value__; 
-	[XmlEnumAttribute] 
+	public int value__;
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod Empty = 0;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod Substitution = 1;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod Extension = 2;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod Restriction = 4;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod List = 8;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod Union = 16;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaDerivationMethod All = 255;
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public const XmlSchemaDerivationMethod None = 256;
 
 }
 
 public class XmlSchemaDocumentation : XmlSchemaObject // TypeDefIndex: 2331
 {
-	private string source; 
-	private string language; 
-	private XmlNode[] markup; 
-	private static XmlSchemaSimpleType languageType; 
+	private string source;
+	private string language;
+	private XmlNode[] markup;
+	private static XmlSchemaSimpleType languageType;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Source { set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Language { set; }
-	[XmlAnyElementAttribute] 
-	[XmlTextAttribute] 
+	[XmlAnyElementAttribute]
+	[XmlTextAttribute]
 	public XmlNode[] Markup { set; }
 
 
@@ -11538,83 +11538,83 @@ public class XmlSchemaDocumentation : XmlSchemaObject // TypeDefIndex: 2331
 
 public class XmlSchemaElement : XmlSchemaParticle // TypeDefIndex: 2332
 {
-	private bool isAbstract; 
-	private bool hasAbstractAttribute; 
-	private bool isNillable; 
-	private bool hasNillableAttribute; 
-	private bool isLocalTypeDerivationChecked; 
-	private XmlSchemaDerivationMethod block; 
-	private XmlSchemaDerivationMethod final; 
-	private XmlSchemaForm form; 
-	private string defaultValue; 
-	private string fixedValue; 
-	private string name; 
-	private XmlQualifiedName refName; 
-	private XmlQualifiedName substitutionGroup; 
-	private XmlQualifiedName typeName; 
-	private XmlSchemaType type; 
-	private XmlQualifiedName qualifiedName; 
-	private XmlSchemaType elementType; 
-	private XmlSchemaDerivationMethod blockResolved; 
-	private XmlSchemaDerivationMethod finalResolved; 
-	private XmlSchemaObjectCollection constraints; 
-	private SchemaElementDecl elementDecl; 
+	private bool isAbstract;
+	private bool hasAbstractAttribute;
+	private bool isNillable;
+	private bool hasNillableAttribute;
+	private bool isLocalTypeDerivationChecked;
+	private XmlSchemaDerivationMethod block;
+	private XmlSchemaDerivationMethod final;
+	private XmlSchemaForm form;
+	private string defaultValue;
+	private string fixedValue;
+	private string name;
+	private XmlQualifiedName refName;
+	private XmlQualifiedName substitutionGroup;
+	private XmlQualifiedName typeName;
+	private XmlSchemaType type;
+	private XmlQualifiedName qualifiedName;
+	private XmlSchemaType elementType;
+	private XmlSchemaDerivationMethod blockResolved;
+	private XmlSchemaDerivationMethod finalResolved;
+	private XmlSchemaObjectCollection constraints;
+	private SchemaElementDecl elementDecl;
 
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public bool IsAbstract { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaDerivationMethod Block { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public string DefaultValue { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaDerivationMethod Final { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public string FixedValue { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public XmlSchemaForm Form { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public bool IsNillable { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool HasNillableAttribute { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool HasAbstractAttribute { get; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName RefName { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName SubstitutionGroup { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName SchemaTypeName { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaType SchemaType { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Constraints { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlQualifiedName QualifiedName { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaType ElementSchemaType { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaDerivationMethod BlockResolved { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaDerivationMethod FinalResolved { get; }
 	internal bool HasConstraints { get; }
 	internal bool IsLocalTypeDerivationChecked { get; set; }
 	internal SchemaElementDecl ElementDecl { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameString { get; }
 
 
@@ -11714,13 +11714,13 @@ public class XmlSchemaElement : XmlSchemaParticle // TypeDefIndex: 2332
 
 public class XmlSchemaException : SystemException // TypeDefIndex: 2333
 {
-	private string res; 
-	private string[] args; 
-	private string sourceUri; 
-	private int lineNumber; 
-	private int linePosition; 
-	private XmlSchemaObject sourceSchemaObject; 
-	private string message; 
+	private string res;
+	private string[] args;
+	private string sourceUri;
+	private int lineNumber;
+	private int linePosition;
+	private XmlSchemaObject sourceSchemaObject;
+	private string message;
 
 	internal string GetRes { get; }
 	internal string[] Args { get; }
@@ -11787,22 +11787,22 @@ public class XmlSchemaException : SystemException // TypeDefIndex: 2333
 
 public abstract class XmlSchemaExternal : XmlSchemaObject // TypeDefIndex: 2334
 {
-	private string location; 
-	private Uri baseUri; 
-	private XmlSchema schema; 
-	private string id; 
-	private XmlAttribute[] moreAttributes; 
-	private Compositor compositor; 
+	private string location;
+	private Uri baseUri;
+	private XmlSchema schema;
+	private string id;
+	private XmlAttribute[] moreAttributes;
+	private Compositor compositor;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string SchemaLocation { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchema Schema { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Id { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal Uri BaseUri { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string IdAttribute { get; set; }
 	internal Compositor Compositor { get; set; }
 
@@ -11839,14 +11839,14 @@ public abstract class XmlSchemaExternal : XmlSchemaObject // TypeDefIndex: 2334
 
 public abstract class XmlSchemaFacet : XmlSchemaAnnotated // TypeDefIndex: 2336
 {
-	private string value; 
-	private bool isFixed; 
-	private FacetType facetType; 
+	private string value;
+	private bool isFixed;
+	private FacetType facetType;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Value { get; set; }
-	[DefaultValueAttribute] 
-	[XmlAttributeAttribute] 
+	[DefaultValueAttribute]
+	[XmlAttributeAttribute]
 	public virtual bool IsFixed { get; set; }
 	internal FacetType FacetType { get; set; }
 
@@ -11960,40 +11960,40 @@ public class XmlSchemaWhiteSpaceFacet : XmlSchemaFacet // TypeDefIndex: 2349
 
 public enum XmlSchemaForm // TypeDefIndex: 2350
 {
-	public int value__; 
-	[XmlIgnoreAttribute] 
+	public int value__;
+	[XmlIgnoreAttribute]
 	public const XmlSchemaForm None = 0;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaForm Qualified = 1;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaForm Unqualified = 2;
 
 }
 
 public class XmlSchemaGroup : XmlSchemaAnnotated // TypeDefIndex: 2351
 {
-	private string name; 
-	private XmlSchemaGroupBase particle; 
-	private XmlSchemaParticle canonicalParticle; 
-	private XmlQualifiedName qname; 
-	private XmlSchemaGroup redefined; 
-	private int selfReferenceCount; 
+	private string name;
+	private XmlSchemaGroupBase particle;
+	private XmlSchemaParticle canonicalParticle;
+	private XmlQualifiedName qname;
+	private XmlSchemaGroup redefined;
+	private int selfReferenceCount;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaGroupBase Particle { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlQualifiedName QualifiedName { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaParticle CanonicalParticle { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaGroup Redefined { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal int SelfReferenceCount { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
 
 
@@ -12035,7 +12035,7 @@ public class XmlSchemaGroup : XmlSchemaAnnotated // TypeDefIndex: 2351
 
 public abstract class XmlSchemaGroupBase : XmlSchemaParticle // TypeDefIndex: 2352
 {
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public abstract XmlSchemaObjectCollection Items { get; }
 
 
@@ -12049,15 +12049,15 @@ public abstract class XmlSchemaGroupBase : XmlSchemaParticle // TypeDefIndex: 23
 
 public class XmlSchemaGroupRef : XmlSchemaParticle // TypeDefIndex: 2353
 {
-	private XmlQualifiedName refName; 
-	private XmlSchemaGroupBase particle; 
-	private XmlSchemaGroup refined; 
+	private XmlQualifiedName refName;
+	private XmlSchemaGroupBase particle;
+	private XmlSchemaGroup refined;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName RefName { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaGroupBase Particle { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaGroup Redefined { get; set; }
 
 
@@ -12079,23 +12079,23 @@ public class XmlSchemaGroupRef : XmlSchemaParticle // TypeDefIndex: 2353
 
 public class XmlSchemaIdentityConstraint : XmlSchemaAnnotated // TypeDefIndex: 2354
 {
-	private string name; 
-	private XmlSchemaXPath selector; 
-	private XmlSchemaObjectCollection fields; 
-	private XmlQualifiedName qualifiedName; 
-	private CompiledIdentityConstraint compiledConstraint; 
+	private string name;
+	private XmlSchemaXPath selector;
+	private XmlSchemaObjectCollection fields;
+	private XmlQualifiedName qualifiedName;
+	private CompiledIdentityConstraint compiledConstraint;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaXPath Selector { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Fields { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlQualifiedName QualifiedName { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal CompiledIdentityConstraint CompiledConstraint { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
 
 
@@ -12127,10 +12127,10 @@ public class XmlSchemaIdentityConstraint : XmlSchemaAnnotated // TypeDefIndex: 2
 
 public class XmlSchemaXPath : XmlSchemaAnnotated // TypeDefIndex: 2355
 {
-	private string xpath; 
+	private string xpath;
 
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public string XPath { get; set; }
 
 
@@ -12158,9 +12158,9 @@ public class XmlSchemaKey : XmlSchemaIdentityConstraint // TypeDefIndex: 2357
 
 public class XmlSchemaKeyref : XmlSchemaIdentityConstraint // TypeDefIndex: 2358
 {
-	private XmlQualifiedName refer; 
+	private XmlQualifiedName refer;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName Refer { get; set; }
 
 
@@ -12174,10 +12174,10 @@ public class XmlSchemaKeyref : XmlSchemaIdentityConstraint // TypeDefIndex: 2358
 
 public class XmlSchemaImport : XmlSchemaExternal // TypeDefIndex: 2359
 {
-	private string ns; 
-	private XmlSchemaAnnotation annotation; 
+	private string ns;
+	private XmlSchemaAnnotation annotation;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Namespace { get; set; }
 
 
@@ -12193,7 +12193,7 @@ public class XmlSchemaImport : XmlSchemaExternal // TypeDefIndex: 2359
 
 public class XmlSchemaInclude : XmlSchemaExternal // TypeDefIndex: 2360
 {
-	private XmlSchemaAnnotation annotation; 
+	private XmlSchemaAnnotation annotation;
 
 
 	public void .ctor() { }
@@ -12204,14 +12204,14 @@ public class XmlSchemaInclude : XmlSchemaExternal // TypeDefIndex: 2360
 
 public class XmlSchemaInfo : IXmlSchemaInfo // TypeDefIndex: 2361
 {
-	private bool isDefault; 
-	private bool isNil; 
-	private XmlSchemaElement schemaElement; 
-	private XmlSchemaAttribute schemaAttribute; 
-	private XmlSchemaType schemaType; 
-	private XmlSchemaSimpleType memberType; 
-	private XmlSchemaValidity validity; 
-	private XmlSchemaContentType contentType; 
+	private bool isDefault;
+	private bool isNil;
+	private XmlSchemaElement schemaElement;
+	private XmlSchemaAttribute schemaAttribute;
+	private XmlSchemaType schemaType;
+	private XmlSchemaSimpleType memberType;
+	private XmlSchemaValidity validity;
+	private XmlSchemaContentType contentType;
 
 	public XmlSchemaValidity Validity { get; set; }
 	public bool IsDefault { get; set; }
@@ -12272,20 +12272,20 @@ public class XmlSchemaInfo : IXmlSchemaInfo // TypeDefIndex: 2361
 
 public class XmlSchemaNotation : XmlSchemaAnnotated // TypeDefIndex: 2362
 {
-	private string name; 
-	private string publicId; 
-	private string systemId; 
-	private XmlQualifiedName qname; 
+	private string name;
+	private string publicId;
+	private string systemId;
+	private XmlQualifiedName qname;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Public { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string System { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlQualifiedName QualifiedName { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
 
 
@@ -12315,28 +12315,28 @@ public class XmlSchemaNotation : XmlSchemaAnnotated // TypeDefIndex: 2362
 
 public abstract class XmlSchemaObject // TypeDefIndex: 2363
 {
-	private int lineNum; 
-	private int linePos; 
-	private string sourceUri; 
-	private XmlSerializerNamespaces namespaces; 
-	private XmlSchemaObject parent; 
-	private bool isProcessing; 
+	private int lineNum;
+	private int linePos;
+	private string sourceUri;
+	private XmlSerializerNamespaces namespaces;
+	private XmlSchemaObject parent;
+	private bool isProcessing;
 
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public int LineNumber { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public int LinePosition { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public string SourceUri { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObject Parent { get; set; }
-	[XmlNamespaceDeclarationsAttribute] 
+	[XmlNamespaceDeclarationsAttribute]
 	public XmlSerializerNamespaces Namespaces { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal virtual string IdAttribute { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal virtual string NameAttribute { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal bool IsProcessing { get; set; }
 
 
@@ -12390,7 +12390,7 @@ public abstract class XmlSchemaObject // TypeDefIndex: 2363
 
 public class XmlSchemaObjectCollection : CollectionBase // TypeDefIndex: 2364
 {
-	private XmlSchemaObject parent; 
+	private XmlSchemaObject parent;
 
 	public virtual XmlSchemaObject Item { get; set; }
 
@@ -12425,7 +12425,7 @@ public class XmlSchemaObjectCollection : CollectionBase // TypeDefIndex: 2364
 
 public class XmlSchemaObjectEnumerator : IEnumerator // TypeDefIndex: 2365
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public XmlSchemaObject Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -12447,8 +12447,8 @@ public class XmlSchemaObjectEnumerator : IEnumerator // TypeDefIndex: 2365
 
 public class XmlSchemaObjectTable // TypeDefIndex: 2366
 {
-	private Dictionary<XmlQualifiedName, XmlSchemaObject> table; 
-	private List<XmlSchemaObjectTable.XmlSchemaObjectEntry> entries; 
+	private Dictionary<XmlQualifiedName, XmlSchemaObject> table;
+	private List<XmlSchemaObjectTable.XmlSchemaObjectEntry> entries;
 
 	public int Count { get; }
 	public XmlSchemaObject Item { get; }
@@ -12483,7 +12483,7 @@ public class XmlSchemaObjectTable // TypeDefIndex: 2366
 
 internal enum XmlSchemaObjectTable.EnumeratorType // TypeDefIndex: 2367
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaObjectTable.EnumeratorType Keys = 0;
 	public const XmlSchemaObjectTable.EnumeratorType Values = 1;
 	public const XmlSchemaObjectTable.EnumeratorType DictionaryEntry = 2;
@@ -12492,8 +12492,8 @@ internal enum XmlSchemaObjectTable.EnumeratorType // TypeDefIndex: 2367
 
 internal struct XmlSchemaObjectTable.XmlSchemaObjectEntry // TypeDefIndex: 2368
 {
-	internal XmlQualifiedName qname; 
-	internal XmlSchemaObject xso; 
+	internal XmlQualifiedName qname;
+	internal XmlSchemaObject xso;
 
 
 	public void .ctor(XmlQualifiedName name, XmlSchemaObject value) { }
@@ -12502,8 +12502,8 @@ internal struct XmlSchemaObjectTable.XmlSchemaObjectEntry // TypeDefIndex: 2368
 
 internal class XmlSchemaObjectTable.ValuesCollection : ICollection, IEnumerable // TypeDefIndex: 2369
 {
-	private List<XmlSchemaObjectTable.XmlSchemaObjectEntry> entries; 
-	private int size; 
+	private List<XmlSchemaObjectTable.XmlSchemaObjectEntry> entries;
+	private int size;
 
 	public int Count { get; }
 	public object SyncRoot { get; }
@@ -12523,12 +12523,12 @@ internal class XmlSchemaObjectTable.ValuesCollection : ICollection, IEnumerable 
 
 internal class XmlSchemaObjectTable.XSOEnumerator : IEnumerator // TypeDefIndex: 2370
 {
-	private List<XmlSchemaObjectTable.XmlSchemaObjectEntry> entries; 
-	private XmlSchemaObjectTable.EnumeratorType enumType; 
-	protected int currentIndex; 
-	protected int size; 
-	protected XmlQualifiedName currentKey; 
-	protected XmlSchemaObject currentValue; 
+	private List<XmlSchemaObjectTable.XmlSchemaObjectEntry> entries;
+	private XmlSchemaObjectTable.EnumeratorType enumType;
+	protected int currentIndex;
+	protected int size;
+	protected XmlQualifiedName currentKey;
+	protected XmlSchemaObject currentValue;
 
 	public object Current { get; }
 
@@ -12562,18 +12562,18 @@ internal class XmlSchemaObjectTable.XSODictionaryEnumerator : XmlSchemaObjectTab
 
 public abstract class XmlSchemaParticle : XmlSchemaAnnotated // TypeDefIndex: 2372
 {
-	private Decimal minOccurs; 
-	private Decimal maxOccurs; 
-	private XmlSchemaParticle.Occurs flags; 
-	internal static readonly XmlSchemaParticle Empty; 
+	private Decimal minOccurs;
+	private Decimal maxOccurs;
+	private XmlSchemaParticle.Occurs flags;
+	internal static readonly XmlSchemaParticle Empty;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string MinOccursString { get; set; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string MaxOccursString { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public Decimal MinOccurs { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public Decimal MaxOccurs { get; set; }
 	internal virtual bool IsEmpty { get; }
 	internal virtual string NameString { get; }
@@ -12609,7 +12609,7 @@ public abstract class XmlSchemaParticle : XmlSchemaAnnotated // TypeDefIndex: 23
 
 private enum XmlSchemaParticle.Occurs // TypeDefIndex: 2373
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaParticle.Occurs None = 0;
 	public const XmlSchemaParticle.Occurs Min = 1;
 	public const XmlSchemaParticle.Occurs Max = 2;
@@ -12629,22 +12629,22 @@ private class XmlSchemaParticle.EmptyParticle : XmlSchemaParticle // TypeDefInde
 
 public class XmlSchemaRedefine : XmlSchemaExternal // TypeDefIndex: 2375
 {
-	private XmlSchemaObjectCollection items; 
-	private XmlSchemaObjectTable attributeGroups; 
-	private XmlSchemaObjectTable types; 
-	private XmlSchemaObjectTable groups; 
+	private XmlSchemaObjectCollection items;
+	private XmlSchemaObjectTable attributeGroups;
+	private XmlSchemaObjectTable types;
+	private XmlSchemaObjectTable groups;
 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Items { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable AttributeGroups { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable SchemaTypes { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaObjectTable Groups { get; }
 
 
@@ -12664,13 +12664,13 @@ public class XmlSchemaRedefine : XmlSchemaExternal // TypeDefIndex: 2375
 
 public class XmlSchemaSequence : XmlSchemaGroupBase // TypeDefIndex: 2376
 {
-	private XmlSchemaObjectCollection items; 
+	private XmlSchemaObjectCollection items;
 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public override XmlSchemaObjectCollection Items { get; }
 	internal override bool IsEmpty { get; }
 
@@ -12687,26 +12687,26 @@ public class XmlSchemaSequence : XmlSchemaGroupBase // TypeDefIndex: 2376
 
 public class XmlSchemaSet // TypeDefIndex: 2377
 {
-	private XmlNameTable nameTable; 
-	private SchemaNames schemaNames; 
-	private SortedList schemas; 
-	private ValidationEventHandler internalEventHandler; 
-	private ValidationEventHandler eventHandler; 
-	private bool isCompiled; 
-	private Hashtable schemaLocations; 
-	private Hashtable chameleonSchemas; 
-	private Hashtable targetNamespaces; 
-	private bool compileAll; 
-	private SchemaInfo cachedCompiledInfo; 
-	private XmlReaderSettings readerSettings; 
-	private XmlSchema schemaForSchema; 
-	private XmlSchemaCompilationSettings compilationSettings; 
-	internal XmlSchemaObjectTable elements; 
-	internal XmlSchemaObjectTable attributes; 
-	internal XmlSchemaObjectTable schemaTypes; 
-	internal XmlSchemaObjectTable substitutionGroups; 
-	private XmlSchemaObjectTable typeExtensions; 
-	private object internalSyncObject; 
+	private XmlNameTable nameTable;
+	private SchemaNames schemaNames;
+	private SortedList schemas;
+	private ValidationEventHandler internalEventHandler;
+	private ValidationEventHandler eventHandler;
+	private bool isCompiled;
+	private Hashtable schemaLocations;
+	private Hashtable chameleonSchemas;
+	private Hashtable targetNamespaces;
+	private bool compileAll;
+	private SchemaInfo cachedCompiledInfo;
+	private XmlReaderSettings readerSettings;
+	private XmlSchema schemaForSchema;
+	private XmlSchemaCompilationSettings compilationSettings;
+	internal XmlSchemaObjectTable elements;
+	internal XmlSchemaObjectTable attributes;
+	internal XmlSchemaObjectTable schemaTypes;
+	internal XmlSchemaObjectTable substitutionGroups;
+	private XmlSchemaObjectTable typeExtensions;
+	private object internalSyncObject;
 
 	internal object InternalSyncObject { get; }
 	public bool IsCompiled { get; }
@@ -12830,10 +12830,10 @@ public class XmlSchemaSet // TypeDefIndex: 2377
 
 public class XmlSchemaSimpleContent : XmlSchemaContentModel // TypeDefIndex: 2378
 {
-	private XmlSchemaContent content; 
+	private XmlSchemaContent content;
 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public override XmlSchemaContent Content { get; set; }
 
 
@@ -12847,16 +12847,16 @@ public class XmlSchemaSimpleContent : XmlSchemaContentModel // TypeDefIndex: 237
 
 public class XmlSchemaSimpleContentExtension : XmlSchemaContent // TypeDefIndex: 2379
 {
-	private XmlSchemaObjectCollection attributes; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlQualifiedName baseTypeName; 
+	private XmlSchemaObjectCollection attributes;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlQualifiedName baseTypeName;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName BaseTypeName { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Attributes { get; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnyAttribute AnyAttribute { get; set; }
 
 
@@ -12878,33 +12878,33 @@ public class XmlSchemaSimpleContentExtension : XmlSchemaContent // TypeDefIndex:
 
 public class XmlSchemaSimpleContentRestriction : XmlSchemaContent // TypeDefIndex: 2380
 {
-	private XmlQualifiedName baseTypeName; 
-	private XmlSchemaSimpleType baseType; 
-	private XmlSchemaObjectCollection facets; 
-	private XmlSchemaObjectCollection attributes; 
-	private XmlSchemaAnyAttribute anyAttribute; 
+	private XmlQualifiedName baseTypeName;
+	private XmlSchemaSimpleType baseType;
+	private XmlSchemaObjectCollection facets;
+	private XmlSchemaObjectCollection attributes;
+	private XmlSchemaAnyAttribute anyAttribute;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName BaseTypeName { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaSimpleType BaseType { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Facets { get; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Attributes { get; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaAnyAttribute AnyAttribute { get; set; }
 
 
@@ -12932,11 +12932,11 @@ public class XmlSchemaSimpleContentRestriction : XmlSchemaContent // TypeDefInde
 
 public class XmlSchemaSimpleType : XmlSchemaType // TypeDefIndex: 2381
 {
-	private XmlSchemaSimpleTypeContent content; 
+	private XmlSchemaSimpleTypeContent content;
 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaSimpleTypeContent Content { get; set; }
 
 
@@ -12959,15 +12959,15 @@ public abstract class XmlSchemaSimpleTypeContent : XmlSchemaAnnotated // TypeDef
 
 public class XmlSchemaSimpleTypeList : XmlSchemaSimpleTypeContent // TypeDefIndex: 2383
 {
-	private XmlQualifiedName itemTypeName; 
-	private XmlSchemaSimpleType itemType; 
-	private XmlSchemaSimpleType baseItemType; 
+	private XmlQualifiedName itemTypeName;
+	private XmlSchemaSimpleType itemType;
+	private XmlSchemaSimpleType baseItemType;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName ItemTypeName { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaSimpleType ItemType { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaSimpleType BaseItemType { get; set; }
 
 
@@ -12991,26 +12991,26 @@ public class XmlSchemaSimpleTypeList : XmlSchemaSimpleTypeContent // TypeDefInde
 
 public class XmlSchemaSimpleTypeRestriction : XmlSchemaSimpleTypeContent // TypeDefIndex: 2384
 {
-	private XmlQualifiedName baseTypeName; 
-	private XmlSchemaSimpleType baseType; 
-	private XmlSchemaObjectCollection facets; 
+	private XmlQualifiedName baseTypeName;
+	private XmlSchemaSimpleType baseType;
+	private XmlSchemaObjectCollection facets;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName BaseTypeName { get; set; }
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaSimpleType BaseType { get; set; }
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection Facets { get; }
 
 
@@ -13032,15 +13032,15 @@ public class XmlSchemaSimpleTypeRestriction : XmlSchemaSimpleTypeContent // Type
 
 public class XmlSchemaSimpleTypeUnion : XmlSchemaSimpleTypeContent // TypeDefIndex: 2385
 {
-	private XmlSchemaObjectCollection baseTypes; 
-	private XmlQualifiedName[] memberTypes; 
-	private XmlSchemaSimpleType[] baseMemberTypes; 
+	private XmlSchemaObjectCollection baseTypes;
+	private XmlQualifiedName[] memberTypes;
+	private XmlSchemaSimpleType[] baseMemberTypes;
 
-	[XmlElementAttribute] 
+	[XmlElementAttribute]
 	public XmlSchemaObjectCollection BaseTypes { get; }
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public XmlQualifiedName[] MemberTypes { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaSimpleType[] BaseMemberTypes { get; }
 
 
@@ -13062,12 +13062,12 @@ public class XmlSchemaSimpleTypeUnion : XmlSchemaSimpleTypeContent // TypeDefInd
 
 internal class XmlSchemaSubstitutionGroup : XmlSchemaObject // TypeDefIndex: 2386
 {
-	private ArrayList membersList; 
-	private XmlQualifiedName examplar; 
+	private ArrayList membersList;
+	private XmlQualifiedName examplar;
 
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal ArrayList Members { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlQualifiedName Examplar { get; set; }
 
 
@@ -13083,9 +13083,9 @@ internal class XmlSchemaSubstitutionGroup : XmlSchemaObject // TypeDefIndex: 238
 
 internal class XmlSchemaSubstitutionGroupV1Compat : XmlSchemaSubstitutionGroup // TypeDefIndex: 2387
 {
-	private XmlSchemaChoice choice; 
+	private XmlSchemaChoice choice;
 
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaChoice Choice { get; }
 
 
@@ -13097,43 +13097,43 @@ internal class XmlSchemaSubstitutionGroupV1Compat : XmlSchemaSubstitutionGroup /
 
 public class XmlSchemaType : XmlSchemaAnnotated // TypeDefIndex: 2388
 {
-	private string name; 
-	private XmlSchemaDerivationMethod final; 
-	private XmlSchemaDerivationMethod derivedBy; 
-	private XmlSchemaType baseSchemaType; 
-	private XmlSchemaDatatype datatype; 
-	private XmlSchemaDerivationMethod finalResolved; 
-	private SchemaElementDecl elementDecl; 
-	private XmlQualifiedName qname; 
-	private XmlSchemaType redefined; 
-	private XmlSchemaContentType contentType; 
+	private string name;
+	private XmlSchemaDerivationMethod final;
+	private XmlSchemaDerivationMethod derivedBy;
+	private XmlSchemaType baseSchemaType;
+	private XmlSchemaDatatype datatype;
+	private XmlSchemaDerivationMethod finalResolved;
+	private SchemaElementDecl elementDecl;
+	private XmlQualifiedName qname;
+	private XmlSchemaType redefined;
+	private XmlSchemaContentType contentType;
 
-	[XmlAttributeAttribute] 
+	[XmlAttributeAttribute]
 	public string Name { get; set; }
-	[XmlAttributeAttribute] 
-	[DefaultValueAttribute] 
+	[XmlAttributeAttribute]
+	[DefaultValueAttribute]
 	public XmlSchemaDerivationMethod Final { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlQualifiedName QualifiedName { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaDerivationMethod FinalResolved { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaType BaseXmlSchemaType { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaDerivationMethod DerivedBy { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlSchemaDatatype Datatype { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public virtual bool IsMixed { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	public XmlTypeCode TypeCode { get; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlValueConverter ValueConverter { get; }
 	internal XmlSchemaContentType SchemaContentType { get; }
 	internal SchemaElementDecl ElementDecl { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal XmlSchemaType Redefined { get; set; }
-	[XmlIgnoreAttribute] 
+	[XmlIgnoreAttribute]
 	internal override string NameAttribute { get; set; }
 
 
@@ -13205,14 +13205,14 @@ public class XmlSchemaType : XmlSchemaAnnotated // TypeDefIndex: 2388
 
 public enum XmlSchemaUse // TypeDefIndex: 2389
 {
-	public int value__; 
-	[XmlIgnoreAttribute] 
+	public int value__;
+	[XmlIgnoreAttribute]
 	public const XmlSchemaUse None = 0;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaUse Optional = 1;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaUse Prohibited = 2;
-	[XmlEnumAttribute] 
+	[XmlEnumAttribute]
 	public const XmlSchemaUse Required = 3;
 
 }
@@ -13249,7 +13249,7 @@ public sealed class XmlValueGetter : MulticastDelegate // TypeDefIndex: 2391
 
 public enum XmlSchemaValidationFlags // TypeDefIndex: 2392
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaValidationFlags None = 0;
 	public const XmlSchemaValidationFlags ProcessInlineSchema = 1;
 	public const XmlSchemaValidationFlags ProcessSchemaLocation = 2;
@@ -13261,52 +13261,52 @@ public enum XmlSchemaValidationFlags // TypeDefIndex: 2392
 
 public sealed class XmlSchemaValidator // TypeDefIndex: 2395
 {
-	private XmlSchemaSet schemaSet; 
-	private XmlSchemaValidationFlags validationFlags; 
-	private int startIDConstraint; 
-	private bool isRoot; 
-	private bool rootHasSchema; 
-	private bool attrValid; 
-	private bool checkEntity; 
-	private SchemaInfo compiledSchemaInfo; 
-	private IDtdInfo dtdSchemaInfo; 
-	private Hashtable validatedNamespaces; 
-	private HWStack validationStack; 
-	private ValidationState context; 
-	private ValidatorState currentState; 
-	private Hashtable attPresence; 
-	private SchemaAttDef wildID; 
-	private Hashtable IDs; 
-	private IdRefNode idRefListHead; 
-	private XmlQualifiedName contextQName; 
-	private string NsXs; 
-	private string NsXsi; 
-	private string NsXmlNs; 
-	private string NsXml; 
-	private XmlSchemaObject partialValidationType; 
-	private StringBuilder textValue; 
-	private ValidationEventHandler eventHandler; 
-	private object validationEventSender; 
-	private XmlNameTable nameTable; 
-	private IXmlLineInfo positionInfo; 
-	private IXmlLineInfo dummyPositionInfo; 
-	private XmlResolver xmlResolver; 
-	private Uri sourceUri; 
-	private string sourceUriString; 
-	private IXmlNamespaceResolver nsResolver; 
-	private XmlSchemaContentProcessing processContents; 
-	private string xsiTypeString; 
-	private string xsiNilString; 
-	private string xsiSchemaLocationString; 
-	private string xsiNoNamespaceSchemaLocationString; 
-	private static readonly XmlSchemaDatatype dtQName; 
-	private static readonly XmlSchemaDatatype dtCDATA; 
-	private static readonly XmlSchemaDatatype dtStringArray; 
-	private static XmlSchemaParticle[] EmptyParticleArray; 
-	private static XmlSchemaAttribute[] EmptyAttributeArray; 
-	private XmlCharType xmlCharType; 
-	internal static bool[,] ValidStates; 
-	private static string[] MethodNames; 
+	private XmlSchemaSet schemaSet;
+	private XmlSchemaValidationFlags validationFlags;
+	private int startIDConstraint;
+	private bool isRoot;
+	private bool rootHasSchema;
+	private bool attrValid;
+	private bool checkEntity;
+	private SchemaInfo compiledSchemaInfo;
+	private IDtdInfo dtdSchemaInfo;
+	private Hashtable validatedNamespaces;
+	private HWStack validationStack;
+	private ValidationState context;
+	private ValidatorState currentState;
+	private Hashtable attPresence;
+	private SchemaAttDef wildID;
+	private Hashtable IDs;
+	private IdRefNode idRefListHead;
+	private XmlQualifiedName contextQName;
+	private string NsXs;
+	private string NsXsi;
+	private string NsXmlNs;
+	private string NsXml;
+	private XmlSchemaObject partialValidationType;
+	private StringBuilder textValue;
+	private ValidationEventHandler eventHandler;
+	private object validationEventSender;
+	private XmlNameTable nameTable;
+	private IXmlLineInfo positionInfo;
+	private IXmlLineInfo dummyPositionInfo;
+	private XmlResolver xmlResolver;
+	private Uri sourceUri;
+	private string sourceUriString;
+	private IXmlNamespaceResolver nsResolver;
+	private XmlSchemaContentProcessing processContents;
+	private string xsiTypeString;
+	private string xsiNilString;
+	private string xsiSchemaLocationString;
+	private string xsiNoNamespaceSchemaLocationString;
+	private static readonly XmlSchemaDatatype dtQName;
+	private static readonly XmlSchemaDatatype dtCDATA;
+	private static readonly XmlSchemaDatatype dtStringArray;
+	private static XmlSchemaParticle[] EmptyParticleArray;
+	private static XmlSchemaAttribute[] EmptyAttributeArray;
+	private XmlCharType xmlCharType;
+	internal static bool[,] ValidStates;
+	private static string[] MethodNames;
 
 	public XmlResolver XmlResolver { set; }
 	public IXmlLineInfo LineInfoProvider { set; }
@@ -13511,7 +13511,7 @@ public sealed class XmlSchemaValidator // TypeDefIndex: 2395
 
 public enum XmlSchemaValidity // TypeDefIndex: 2396
 {
-	public int value__; 
+	public int value__;
 	public const XmlSchemaValidity NotKnown = 0;
 	public const XmlSchemaValidity Valid = 1;
 	public const XmlSchemaValidity Invalid = 2;
@@ -13520,7 +13520,7 @@ public enum XmlSchemaValidity // TypeDefIndex: 2396
 
 public enum XmlSeverityType // TypeDefIndex: 2397
 {
-	public int value__; 
+	public int value__;
 	public const XmlSeverityType Error = 0;
 	public const XmlSeverityType Warning = 1;
 
@@ -13528,7 +13528,7 @@ public enum XmlSeverityType // TypeDefIndex: 2397
 
 public enum XmlTypeCode // TypeDefIndex: 2398
 {
-	public int value__; 
+	public int value__;
 	public const XmlTypeCode None = 0;
 	public const XmlTypeCode Item = 1;
 	public const XmlTypeCode Node = 2;
@@ -13712,38 +13712,38 @@ internal abstract class XmlValueConverter // TypeDefIndex: 2399
 
 internal abstract class XmlBaseConverter : XmlValueConverter // TypeDefIndex: 2400
 {
-	private XmlSchemaType schemaType; 
-	private XmlTypeCode typeCode; 
-	private Type clrTypeDefault; 
-	protected static readonly Type ICollectionType; 
-	protected static readonly Type IEnumerableType; 
-	protected static readonly Type IListType; 
-	protected static readonly Type ObjectArrayType; 
-	protected static readonly Type StringArrayType; 
-	protected static readonly Type XmlAtomicValueArrayType; 
-	protected static readonly Type DecimalType; 
-	protected static readonly Type Int32Type; 
-	protected static readonly Type Int64Type; 
-	protected static readonly Type StringType; 
-	protected static readonly Type XmlAtomicValueType; 
-	protected static readonly Type ObjectType; 
-	protected static readonly Type ByteType; 
-	protected static readonly Type Int16Type; 
-	protected static readonly Type SByteType; 
-	protected static readonly Type UInt16Type; 
-	protected static readonly Type UInt32Type; 
-	protected static readonly Type UInt64Type; 
-	protected static readonly Type XPathItemType; 
-	protected static readonly Type DoubleType; 
-	protected static readonly Type SingleType; 
-	protected static readonly Type DateTimeType; 
-	protected static readonly Type DateTimeOffsetType; 
-	protected static readonly Type BooleanType; 
-	protected static readonly Type ByteArrayType; 
-	protected static readonly Type XmlQualifiedNameType; 
-	protected static readonly Type UriType; 
-	protected static readonly Type TimeSpanType; 
-	protected static readonly Type XPathNavigatorType; 
+	private XmlSchemaType schemaType;
+	private XmlTypeCode typeCode;
+	private Type clrTypeDefault;
+	protected static readonly Type ICollectionType;
+	protected static readonly Type IEnumerableType;
+	protected static readonly Type IListType;
+	protected static readonly Type ObjectArrayType;
+	protected static readonly Type StringArrayType;
+	protected static readonly Type XmlAtomicValueArrayType;
+	protected static readonly Type DecimalType;
+	protected static readonly Type Int32Type;
+	protected static readonly Type Int64Type;
+	protected static readonly Type StringType;
+	protected static readonly Type XmlAtomicValueType;
+	protected static readonly Type ObjectType;
+	protected static readonly Type ByteType;
+	protected static readonly Type Int16Type;
+	protected static readonly Type SByteType;
+	protected static readonly Type UInt16Type;
+	protected static readonly Type UInt32Type;
+	protected static readonly Type UInt64Type;
+	protected static readonly Type XPathItemType;
+	protected static readonly Type DoubleType;
+	protected static readonly Type SingleType;
+	protected static readonly Type DateTimeType;
+	protected static readonly Type DateTimeOffsetType;
+	protected static readonly Type BooleanType;
+	protected static readonly Type ByteArrayType;
+	protected static readonly Type XmlQualifiedNameType;
+	protected static readonly Type UriType;
+	protected static readonly Type TimeSpanType;
+	protected static readonly Type XPathNavigatorType;
 
 	protected XmlSchemaType SchemaType { get; }
 	protected XmlTypeCode TypeCode { get; }
@@ -14175,9 +14175,9 @@ internal class XmlStringConverter : XmlBaseConverter // TypeDefIndex: 2406
 
 internal class XmlUntypedConverter : XmlListConverter // TypeDefIndex: 2407
 {
-	private bool allowListToList; 
-	public static readonly XmlValueConverter Untyped; 
-	public static readonly XmlValueConverter UntypedList; 
+	private bool allowListToList;
+	public static readonly XmlValueConverter Untyped;
+	public static readonly XmlValueConverter UntypedList;
 
 
 	protected void .ctor() { }
@@ -14264,8 +14264,8 @@ internal class XmlUntypedConverter : XmlListConverter // TypeDefIndex: 2407
 
 internal class XmlAnyConverter : XmlBaseConverter // TypeDefIndex: 2408
 {
-	public static readonly XmlValueConverter Item; 
-	public static readonly XmlValueConverter AnyAtomic; 
+	public static readonly XmlValueConverter Item;
+	public static readonly XmlValueConverter AnyAtomic;
 
 
 	protected void .ctor(XmlTypeCode typeCode) { }
@@ -14314,8 +14314,8 @@ internal class XmlAnyConverter : XmlBaseConverter // TypeDefIndex: 2408
 
 internal class XmlAnyListConverter : XmlListConverter // TypeDefIndex: 2409
 {
-	public static readonly XmlValueConverter ItemList; 
-	public static readonly XmlValueConverter AnyAtomicList; 
+	public static readonly XmlValueConverter ItemList;
+	public static readonly XmlValueConverter AnyAtomicList;
 
 
 	protected void .ctor(XmlBaseConverter atomicConverter) { }
@@ -14328,7 +14328,7 @@ internal class XmlAnyListConverter : XmlListConverter // TypeDefIndex: 2409
 
 internal class XmlListConverter : XmlBaseConverter // TypeDefIndex: 2410
 {
-	protected XmlValueConverter atomicConverter; 
+	protected XmlValueConverter atomicConverter;
 
 
 	protected void .ctor(XmlBaseConverter atomicConverter) { }
@@ -14400,9 +14400,9 @@ internal class XmlListConverter : XmlBaseConverter // TypeDefIndex: 2410
 
 internal class XmlUnionConverter : XmlBaseConverter // TypeDefIndex: 2411
 {
-	private XmlValueConverter[] converters; 
-	private bool hasAtomicMember; 
-	private bool hasListMember; 
+	private XmlValueConverter[] converters;
+	private bool hasAtomicMember;
+	private bool hasListMember;
 
 
 	protected void .ctor(XmlSchemaType schemaType) { }
@@ -14415,117 +14415,117 @@ internal class XmlUnionConverter : XmlBaseConverter // TypeDefIndex: 2411
 
 internal sealed class XsdBuilder : SchemaBuilder // TypeDefIndex: 2412
 {
-	private static readonly XsdBuilder.State[] SchemaElement; 
-	private static readonly XsdBuilder.State[] SchemaSubelements; 
-	private static readonly XsdBuilder.State[] AttributeSubelements; 
-	private static readonly XsdBuilder.State[] ElementSubelements; 
-	private static readonly XsdBuilder.State[] ComplexTypeSubelements; 
-	private static readonly XsdBuilder.State[] SimpleContentSubelements; 
-	private static readonly XsdBuilder.State[] SimpleContentExtensionSubelements; 
-	private static readonly XsdBuilder.State[] SimpleContentRestrictionSubelements; 
-	private static readonly XsdBuilder.State[] ComplexContentSubelements; 
-	private static readonly XsdBuilder.State[] ComplexContentExtensionSubelements; 
-	private static readonly XsdBuilder.State[] ComplexContentRestrictionSubelements; 
-	private static readonly XsdBuilder.State[] SimpleTypeSubelements; 
-	private static readonly XsdBuilder.State[] SimpleTypeRestrictionSubelements; 
-	private static readonly XsdBuilder.State[] SimpleTypeListSubelements; 
-	private static readonly XsdBuilder.State[] SimpleTypeUnionSubelements; 
-	private static readonly XsdBuilder.State[] RedefineSubelements; 
-	private static readonly XsdBuilder.State[] AttributeGroupSubelements; 
-	private static readonly XsdBuilder.State[] GroupSubelements; 
-	private static readonly XsdBuilder.State[] AllSubelements; 
-	private static readonly XsdBuilder.State[] ChoiceSequenceSubelements; 
-	private static readonly XsdBuilder.State[] IdentityConstraintSubelements; 
-	private static readonly XsdBuilder.State[] AnnotationSubelements; 
-	private static readonly XsdBuilder.State[] AnnotatedSubelements; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SchemaAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AttributeAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ElementAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexTypeAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleContentAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleContentExtensionAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleContentRestrictionAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexContentAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexContentExtensionAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexContentRestrictionAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeRestrictionAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeUnionAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeListAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AttributeGroupAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AttributeGroupRefAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] GroupAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] GroupRefAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ParticleAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AnyAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] IdentityConstraintAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] SelectorAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] FieldAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] NotationAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] IncludeAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] ImportAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] FacetAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AnyAttributeAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] DocumentationAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AppinfoAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] RedefineAttributes; 
-	private static readonly XsdBuilder.XsdAttributeEntry[] AnnotationAttributes; 
-	private static readonly XsdBuilder.XsdEntry[] SchemaEntries; 
-	private static readonly int[] DerivationMethodValues; 
-	private static readonly string[] DerivationMethodStrings; 
-	private static readonly string[] FormStringValues; 
-	private static readonly string[] UseStringValues; 
-	private static readonly string[] ProcessContentsStringValues; 
-	private XmlReader reader; 
-	private PositionInfo positionInfo; 
-	private XsdBuilder.XsdEntry currentEntry; 
-	private XsdBuilder.XsdEntry nextEntry; 
-	private bool hasChild; 
-	private HWStack stateHistory; 
-	private Stack containerStack; 
-	private XmlNameTable nameTable; 
-	private SchemaNames schemaNames; 
-	private XmlNamespaceManager namespaceManager; 
-	private bool canIncludeImport; 
-	private XmlSchema schema; 
-	private XmlSchemaObject xso; 
-	private XmlSchemaElement element; 
-	private XmlSchemaAny anyElement; 
-	private XmlSchemaAttribute attribute; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlSchemaComplexType complexType; 
-	private XmlSchemaSimpleType simpleType; 
-	private XmlSchemaComplexContent complexContent; 
-	private XmlSchemaComplexContentExtension complexContentExtension; 
-	private XmlSchemaComplexContentRestriction complexContentRestriction; 
-	private XmlSchemaSimpleContent simpleContent; 
-	private XmlSchemaSimpleContentExtension simpleContentExtension; 
-	private XmlSchemaSimpleContentRestriction simpleContentRestriction; 
-	private XmlSchemaSimpleTypeUnion simpleTypeUnion; 
-	private XmlSchemaSimpleTypeList simpleTypeList; 
-	private XmlSchemaSimpleTypeRestriction simpleTypeRestriction; 
-	private XmlSchemaGroup group; 
-	private XmlSchemaGroupRef groupRef; 
-	private XmlSchemaAll all; 
-	private XmlSchemaChoice choice; 
-	private XmlSchemaSequence sequence; 
-	private XmlSchemaParticle particle; 
-	private XmlSchemaAttributeGroup attributeGroup; 
-	private XmlSchemaAttributeGroupRef attributeGroupRef; 
-	private XmlSchemaNotation notation; 
-	private XmlSchemaIdentityConstraint identityConstraint; 
-	private XmlSchemaXPath xpath; 
-	private XmlSchemaInclude include; 
-	private XmlSchemaImport import; 
-	private XmlSchemaAnnotation annotation; 
-	private XmlSchemaAppInfo appInfo; 
-	private XmlSchemaDocumentation documentation; 
-	private XmlSchemaFacet facet; 
-	private XmlNode[] markup; 
-	private XmlSchemaRedefine redefine; 
-	private ValidationEventHandler validationEventHandler; 
-	private ArrayList unhandledAttributes; 
-	private Hashtable namespaces; 
+	private static readonly XsdBuilder.State[] SchemaElement;
+	private static readonly XsdBuilder.State[] SchemaSubelements;
+	private static readonly XsdBuilder.State[] AttributeSubelements;
+	private static readonly XsdBuilder.State[] ElementSubelements;
+	private static readonly XsdBuilder.State[] ComplexTypeSubelements;
+	private static readonly XsdBuilder.State[] SimpleContentSubelements;
+	private static readonly XsdBuilder.State[] SimpleContentExtensionSubelements;
+	private static readonly XsdBuilder.State[] SimpleContentRestrictionSubelements;
+	private static readonly XsdBuilder.State[] ComplexContentSubelements;
+	private static readonly XsdBuilder.State[] ComplexContentExtensionSubelements;
+	private static readonly XsdBuilder.State[] ComplexContentRestrictionSubelements;
+	private static readonly XsdBuilder.State[] SimpleTypeSubelements;
+	private static readonly XsdBuilder.State[] SimpleTypeRestrictionSubelements;
+	private static readonly XsdBuilder.State[] SimpleTypeListSubelements;
+	private static readonly XsdBuilder.State[] SimpleTypeUnionSubelements;
+	private static readonly XsdBuilder.State[] RedefineSubelements;
+	private static readonly XsdBuilder.State[] AttributeGroupSubelements;
+	private static readonly XsdBuilder.State[] GroupSubelements;
+	private static readonly XsdBuilder.State[] AllSubelements;
+	private static readonly XsdBuilder.State[] ChoiceSequenceSubelements;
+	private static readonly XsdBuilder.State[] IdentityConstraintSubelements;
+	private static readonly XsdBuilder.State[] AnnotationSubelements;
+	private static readonly XsdBuilder.State[] AnnotatedSubelements;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SchemaAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AttributeAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ElementAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexTypeAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleContentAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleContentExtensionAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleContentRestrictionAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexContentAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexContentExtensionAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ComplexContentRestrictionAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeRestrictionAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeUnionAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SimpleTypeListAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AttributeGroupAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AttributeGroupRefAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] GroupAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] GroupRefAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ParticleAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AnyAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] IdentityConstraintAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] SelectorAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] FieldAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] NotationAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] IncludeAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] ImportAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] FacetAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AnyAttributeAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] DocumentationAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AppinfoAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] RedefineAttributes;
+	private static readonly XsdBuilder.XsdAttributeEntry[] AnnotationAttributes;
+	private static readonly XsdBuilder.XsdEntry[] SchemaEntries;
+	private static readonly int[] DerivationMethodValues;
+	private static readonly string[] DerivationMethodStrings;
+	private static readonly string[] FormStringValues;
+	private static readonly string[] UseStringValues;
+	private static readonly string[] ProcessContentsStringValues;
+	private XmlReader reader;
+	private PositionInfo positionInfo;
+	private XsdBuilder.XsdEntry currentEntry;
+	private XsdBuilder.XsdEntry nextEntry;
+	private bool hasChild;
+	private HWStack stateHistory;
+	private Stack containerStack;
+	private XmlNameTable nameTable;
+	private SchemaNames schemaNames;
+	private XmlNamespaceManager namespaceManager;
+	private bool canIncludeImport;
+	private XmlSchema schema;
+	private XmlSchemaObject xso;
+	private XmlSchemaElement element;
+	private XmlSchemaAny anyElement;
+	private XmlSchemaAttribute attribute;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlSchemaComplexType complexType;
+	private XmlSchemaSimpleType simpleType;
+	private XmlSchemaComplexContent complexContent;
+	private XmlSchemaComplexContentExtension complexContentExtension;
+	private XmlSchemaComplexContentRestriction complexContentRestriction;
+	private XmlSchemaSimpleContent simpleContent;
+	private XmlSchemaSimpleContentExtension simpleContentExtension;
+	private XmlSchemaSimpleContentRestriction simpleContentRestriction;
+	private XmlSchemaSimpleTypeUnion simpleTypeUnion;
+	private XmlSchemaSimpleTypeList simpleTypeList;
+	private XmlSchemaSimpleTypeRestriction simpleTypeRestriction;
+	private XmlSchemaGroup group;
+	private XmlSchemaGroupRef groupRef;
+	private XmlSchemaAll all;
+	private XmlSchemaChoice choice;
+	private XmlSchemaSequence sequence;
+	private XmlSchemaParticle particle;
+	private XmlSchemaAttributeGroup attributeGroup;
+	private XmlSchemaAttributeGroupRef attributeGroupRef;
+	private XmlSchemaNotation notation;
+	private XmlSchemaIdentityConstraint identityConstraint;
+	private XmlSchemaXPath xpath;
+	private XmlSchemaInclude include;
+	private XmlSchemaImport import;
+	private XmlSchemaAnnotation annotation;
+	private XmlSchemaAppInfo appInfo;
+	private XmlSchemaDocumentation documentation;
+	private XmlSchemaFacet facet;
+	private XmlNode[] markup;
+	private XmlSchemaRedefine redefine;
+	private ValidationEventHandler validationEventHandler;
+	private ArrayList unhandledAttributes;
+	private Hashtable namespaces;
 
 	private SchemaNames.Token CurrentElement { get; }
 	private SchemaNames.Token ParentElement { get; }
@@ -14812,7 +14812,7 @@ internal sealed class XsdBuilder : SchemaBuilder // TypeDefIndex: 2412
 
 private enum XsdBuilder.State // TypeDefIndex: 2413
 {
-	public int value__; 
+	public int value__;
 	public const XsdBuilder.State Root = 0;
 	public const XsdBuilder.State Schema = 1;
 	public const XsdBuilder.State Annotation = 2;
@@ -14905,8 +14905,8 @@ private sealed class XsdBuilder.XsdEndChildFunction : MulticastDelegate // TypeD
 
 private sealed class XsdBuilder.XsdAttributeEntry // TypeDefIndex: 2417
 {
-	public SchemaNames.Token Attribute; 
-	public XsdBuilder.XsdBuildFunction BuildFunc; 
+	public SchemaNames.Token Attribute;
+	public XsdBuilder.XsdBuildFunction BuildFunc;
 
 
 	public void .ctor(SchemaNames.Token a, XsdBuilder.XsdBuildFunction build) { }
@@ -14915,13 +14915,13 @@ private sealed class XsdBuilder.XsdAttributeEntry // TypeDefIndex: 2417
 
 private sealed class XsdBuilder.XsdEntry // TypeDefIndex: 2418
 {
-	public SchemaNames.Token Name; 
-	public XsdBuilder.State CurrentState; 
-	public XsdBuilder.State[] NextStates; 
-	public XsdBuilder.XsdAttributeEntry[] Attributes; 
-	public XsdBuilder.XsdInitFunction InitFunc; 
-	public XsdBuilder.XsdEndChildFunction EndChildFunc; 
-	public bool ParseContent; 
+	public SchemaNames.Token Name;
+	public XsdBuilder.State CurrentState;
+	public XsdBuilder.State[] NextStates;
+	public XsdBuilder.XsdAttributeEntry[] Attributes;
+	public XsdBuilder.XsdInitFunction InitFunc;
+	public XsdBuilder.XsdEndChildFunction EndChildFunc;
+	public bool ParseContent;
 
 
 	public void .ctor(SchemaNames.Token n, XsdBuilder.State state, XsdBuilder.State[] nextStates, XsdBuilder.XsdAttributeEntry[] attributes, XsdBuilder.XsdInitFunction init, XsdBuilder.XsdEndChildFunction end, bool parseContent) { }
@@ -14930,8 +14930,8 @@ private sealed class XsdBuilder.XsdEntry // TypeDefIndex: 2418
 
 private class XsdBuilder.BuilderNamespaceManager : XmlNamespaceManager // TypeDefIndex: 2419
 {
-	private XmlNamespaceManager nsMgr; 
-	private XmlReader reader; 
+	private XmlNamespaceManager nsMgr;
+	private XmlReader reader;
 
 
 	public void .ctor(XmlNamespaceManager nsMgr, XmlReader reader) { }
@@ -14942,7 +14942,7 @@ private class XsdBuilder.BuilderNamespaceManager : XmlNamespaceManager // TypeDe
 
 internal enum XsdDateTimeFlags // TypeDefIndex: 2420
 {
-	public int value__; 
+	public int value__;
 	public const XsdDateTimeFlags DateTime = 1;
 	public const XsdDateTimeFlags Time = 2;
 	public const XsdDateTimeFlags Date = 4;
@@ -14960,31 +14960,31 @@ internal enum XsdDateTimeFlags // TypeDefIndex: 2420
 
 internal struct XsdDateTime // TypeDefIndex: 2421
 {
-	private DateTime dt; 
-	private uint extra; 
-	private static readonly int Lzyyyy; 
-	private static readonly int Lzyyyy_; 
-	private static readonly int Lzyyyy_MM; 
-	private static readonly int Lzyyyy_MM_; 
-	private static readonly int Lzyyyy_MM_dd; 
-	private static readonly int Lzyyyy_MM_ddT; 
-	private static readonly int LzHH; 
-	private static readonly int LzHH_; 
-	private static readonly int LzHH_mm; 
-	private static readonly int LzHH_mm_; 
-	private static readonly int LzHH_mm_ss; 
-	private static readonly int Lz_; 
-	private static readonly int Lz_zz; 
-	private static readonly int Lz_zz_; 
-	private static readonly int Lz_zz_zz; 
-	private static readonly int Lz__; 
-	private static readonly int Lz__mm; 
-	private static readonly int Lz__mm_; 
-	private static readonly int Lz__mm__; 
-	private static readonly int Lz__mm_dd; 
-	private static readonly int Lz___; 
-	private static readonly int Lz___dd; 
-	private static readonly XmlTypeCode[] typeCodes; 
+	private DateTime dt;
+	private uint extra;
+	private static readonly int Lzyyyy;
+	private static readonly int Lzyyyy_;
+	private static readonly int Lzyyyy_MM;
+	private static readonly int Lzyyyy_MM_;
+	private static readonly int Lzyyyy_MM_dd;
+	private static readonly int Lzyyyy_MM_ddT;
+	private static readonly int LzHH;
+	private static readonly int LzHH_;
+	private static readonly int LzHH_mm;
+	private static readonly int LzHH_mm_;
+	private static readonly int LzHH_mm_ss;
+	private static readonly int Lz_;
+	private static readonly int Lz_zz;
+	private static readonly int Lz_zz_;
+	private static readonly int Lz_zz_zz;
+	private static readonly int Lz__;
+	private static readonly int Lz__mm;
+	private static readonly int Lz__mm_;
+	private static readonly int Lz__mm__;
+	private static readonly int Lz__mm_dd;
+	private static readonly int Lz___;
+	private static readonly int Lz___dd;
+	private static readonly XmlTypeCode[] typeCodes;
 
 	private XsdDateTime.DateTimeTypeCode InternalTypeCode { get; }
 	private XsdDateTime.XsdDateTimeKind InternalKind { get; }
@@ -15057,7 +15057,7 @@ internal struct XsdDateTime // TypeDefIndex: 2421
 
 private enum XsdDateTime.DateTimeTypeCode // TypeDefIndex: 2422
 {
-	public int value__; 
+	public int value__;
 	public const XsdDateTime.DateTimeTypeCode DateTime = 0;
 	public const XsdDateTime.DateTimeTypeCode Time = 1;
 	public const XsdDateTime.DateTimeTypeCode Date = 2;
@@ -15072,7 +15072,7 @@ private enum XsdDateTime.DateTimeTypeCode // TypeDefIndex: 2422
 
 private enum XsdDateTime.XsdDateTimeKind // TypeDefIndex: 2423
 {
-	public int value__; 
+	public int value__;
 	public const XsdDateTime.XsdDateTimeKind Unspecified = 0;
 	public const XsdDateTime.XsdDateTimeKind Zulu = 1;
 	public const XsdDateTime.XsdDateTimeKind LocalWestOfZulu = 2;
@@ -15082,20 +15082,20 @@ private enum XsdDateTime.XsdDateTimeKind // TypeDefIndex: 2423
 
 private struct XsdDateTime.Parser // TypeDefIndex: 2424
 {
-	public XsdDateTime.DateTimeTypeCode typeCode; 
-	public int year; 
-	public int month; 
-	public int day; 
-	public int hour; 
-	public int minute; 
-	public int second; 
-	public int fraction; 
-	public XsdDateTime.XsdDateTimeKind kind; 
-	public int zoneHour; 
-	public int zoneMinute; 
-	private string text; 
-	private int length; 
-	private static int[] Power10; 
+	public XsdDateTime.DateTimeTypeCode typeCode;
+	public int year;
+	public int month;
+	public int day;
+	public int hour;
+	public int minute;
+	public int second;
+	public int fraction;
+	public XsdDateTime.XsdDateTimeKind kind;
+	public int zoneHour;
+	public int zoneMinute;
+	private string text;
+	private int length;
+	private static int[] Power10;
 
 
 	public bool Parse(string text, XsdDateTimeFlags kinds) { }
@@ -15124,13 +15124,13 @@ private struct XsdDateTime.Parser // TypeDefIndex: 2424
 
 internal struct XsdDuration // TypeDefIndex: 2425
 {
-	private int years; 
-	private int months; 
-	private int days; 
-	private int hours; 
-	private int minutes; 
-	private int seconds; 
-	private uint nanoseconds; 
+	private int years;
+	private int months;
+	private int days;
+	private int hours;
+	private int minutes;
+	private int seconds;
+	private uint nanoseconds;
 
 	public bool IsNegative { get; }
 	public int Years { get; }
@@ -15190,7 +15190,7 @@ internal struct XsdDuration // TypeDefIndex: 2425
 
 private enum XsdDuration.Parts // TypeDefIndex: 2426
 {
-	public int value__; 
+	public int value__;
 	public const XsdDuration.Parts HasNone = 0;
 	public const XsdDuration.Parts HasYears = 1;
 	public const XsdDuration.Parts HasMonths = 2;
@@ -15203,7 +15203,7 @@ private enum XsdDuration.Parts // TypeDefIndex: 2426
 
 public enum XsdDuration.DurationType // TypeDefIndex: 2427
 {
-	public int value__; 
+	public int value__;
 	public const XsdDuration.DurationType Duration = 0;
 	public const XsdDuration.DurationType YearMonthDuration = 1;
 	public const XsdDuration.DurationType DayTimeDuration = 2;
@@ -15212,26 +15212,26 @@ public enum XsdDuration.DurationType // TypeDefIndex: 2427
 
 internal sealed class XsdValidator : BaseValidator // TypeDefIndex: 2428
 {
-	private int startIDConstraint; 
-	private HWStack validationStack; 
-	private Hashtable attPresence; 
-	private XmlNamespaceManager nsManager; 
-	private bool bManageNamespaces; 
-	private Hashtable IDs; 
-	private IdRefNode idRefListHead; 
-	private Parser inlineSchemaParser; 
-	private XmlSchemaContentProcessing processContents; 
-	private static readonly XmlSchemaDatatype dtCDATA; 
-	private static readonly XmlSchemaDatatype dtQName; 
-	private static readonly XmlSchemaDatatype dtStringArray; 
-	private string NsXmlNs; 
-	private string NsXs; 
-	private string NsXsi; 
-	private string XsiType; 
-	private string XsiNil; 
-	private string XsiSchemaLocation; 
-	private string XsiNoNamespaceSchemaLocation; 
-	private string XsdSchema; 
+	private int startIDConstraint;
+	private HWStack validationStack;
+	private Hashtable attPresence;
+	private XmlNamespaceManager nsManager;
+	private bool bManageNamespaces;
+	private Hashtable IDs;
+	private IdRefNode idRefListHead;
+	private Parser inlineSchemaParser;
+	private XmlSchemaContentProcessing processContents;
+	private static readonly XmlSchemaDatatype dtCDATA;
+	private static readonly XmlSchemaDatatype dtQName;
+	private static readonly XmlSchemaDatatype dtStringArray;
+	private string NsXmlNs;
+	private string NsXs;
+	private string NsXsi;
+	private string XsiType;
+	private string XsiNil;
+	private string XsiSchemaLocation;
+	private string XsiNoNamespaceSchemaLocation;
+	private string XsdSchema;
 
 	private bool IsInlineSchemaStarted { get; }
 	private bool HasSchema { get; }
@@ -15329,7 +15329,7 @@ public sealed class XmlReaderSection // TypeDefIndex: 2429
 
 public enum XRNode // TypeDefIndex: 4144
 {
-	public int value__; 
+	public int value__;
 	public const XRNode LeftEye = 0;
 	public const XRNode RightEye = 1;
 	public const XRNode CenterEye = 2;
@@ -15344,16 +15344,16 @@ public enum XRNode // TypeDefIndex: 4144
 
 public struct XRNodeState // TypeDefIndex: 4146
 {
-	private XRNode m_Type; 
-	private AvailableTrackingData m_AvailableFields; 
-	private Vector3 m_Position; 
-	private Quaternion m_Rotation; 
-	private Vector3 m_Velocity; 
-	private Vector3 m_AngularVelocity; 
-	private Vector3 m_Acceleration; 
-	private Vector3 m_AngularAcceleration; 
-	private int m_Tracked; 
-	private ulong m_UniqueID; 
+	private XRNode m_Type;
+	private AvailableTrackingData m_AvailableFields;
+	private Vector3 m_Position;
+	private Quaternion m_Rotation;
+	private Vector3 m_Velocity;
+	private Vector3 m_AngularVelocity;
+	private Vector3 m_Acceleration;
+	private Vector3 m_AngularAcceleration;
+	private int m_Tracked;
+	private ulong m_UniqueID;
 
 	public ulong uniqueID { set; }
 	public XRNode nodeType { set; }
@@ -15370,12 +15370,12 @@ public struct XRNodeState // TypeDefIndex: 4146
 
 public class XRDisplaySubsystem : IntegratedSubsystem<XRDisplaySubsystemDescriptor> // TypeDefIndex: 4155
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<bool> displayFocusChanged; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<bool> displayFocusChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeDisplayFocusChanged(bool focus) { }
 
 	public void .ctor() { }
@@ -15384,21 +15384,21 @@ public class XRDisplaySubsystem : IntegratedSubsystem<XRDisplaySubsystemDescript
 
 public struct XRDisplaySubsystem.XRRenderPass // TypeDefIndex: 4156
 {
-	private IntPtr displaySubsystemInstance; 
-	public int renderPassIndex; 
-	public RenderTargetIdentifier renderTarget; 
-	public RenderTextureDescriptor renderTargetDesc; 
-	public bool shouldFillOutDepth; 
-	public int cullingPassIndex; 
+	private IntPtr displaySubsystemInstance;
+	public int renderPassIndex;
+	public RenderTargetIdentifier renderTarget;
+	public RenderTextureDescriptor renderTargetDesc;
+	public bool shouldFillOutDepth;
+	public int cullingPassIndex;
 
 }
 
 public struct XRDisplaySubsystem.XRMirrorViewBlitDesc // TypeDefIndex: 4157
 {
-	private IntPtr displaySubsystemInstance; 
-	public bool nativeBlitAvailable; 
-	public bool nativeBlitInvalidStates; 
-	public int blitParamsCount; 
+	private IntPtr displaySubsystemInstance;
+	public bool nativeBlitAvailable;
+	public bool nativeBlitInvalidStates;
+	public int blitParamsCount;
 
 }
 
@@ -15411,18 +15411,18 @@ public class XRDisplaySubsystemDescriptor : IntegratedSubsystemDescriptor<XRDisp
 
 public class XRInputSubsystem : IntegratedSubsystem<XRInputSubsystemDescriptor> // TypeDefIndex: 4159
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private Action<XRInputSubsystem> trackingOriginUpdated; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private Action<XRInputSubsystem> boundaryChanged; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private Action<XRInputSubsystem> trackingOriginUpdated;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private Action<XRInputSubsystem> boundaryChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeTrackingOriginUpdatedEvent(IntPtr internalPtr) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeBoundaryChangedEvent(IntPtr internalPtr) { }
 
 	public void .ctor() { }
@@ -15439,7 +15439,7 @@ public class XRInputSubsystemDescriptor : IntegratedSubsystemDescriptor<XRInputS
 public class XRMeshSubsystem : IntegratedSubsystem<XRMeshSubsystemDescriptor> // TypeDefIndex: 4166
 {
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void InvokeMeshReadyDelegate(MeshGenerationResult result, Action<MeshGenerationResult> onMeshGenerationComplete) { }
 
 	public void .ctor() { }
@@ -15455,13 +15455,13 @@ public class XRMeshSubsystemDescriptor : IntegratedSubsystemDescriptor<XRMeshSub
 
 internal sealed class XDRSchema : XMLSchema // TypeDefIndex: 4318
 {
-	internal string _schemaName; 
-	internal string _schemaUri; 
-	internal XmlElement _schemaRoot; 
-	internal DataSet _ds; 
-	private static readonly char[] s_colonArray; 
-	private static XDRSchema.NameType[] s_mapNameTypeXdr; 
-	private static XDRSchema.NameType s_enumerationNameType; 
+	internal string _schemaName;
+	internal string _schemaUri;
+	internal XmlElement _schemaRoot;
+	internal DataSet _ds;
+	private static readonly char[] s_colonArray;
+	private static XDRSchema.NameType[] s_mapNameTypeXdr;
+	private static XDRSchema.NameType s_enumerationNameType;
 
 
 	internal void .ctor(DataSet ds, bool fInline) { }
@@ -15500,8 +15500,8 @@ internal sealed class XDRSchema : XMLSchema // TypeDefIndex: 4318
 
 private sealed class XDRSchema.NameType : IComparable // TypeDefIndex: 4319
 {
-	public string name; 
-	public Type type; 
+	public string name;
+	public Type type;
 
 
 	public void .ctor(string n, Type t) { }
@@ -15512,9 +15512,9 @@ private sealed class XDRSchema.NameType : IComparable // TypeDefIndex: 4319
 
 internal sealed class XMLDiffLoader // TypeDefIndex: 4320
 {
-	private ArrayList _tables; 
-	private DataSet _dataSet; 
-	private DataTable _dataTable; 
+	private ArrayList _tables;
+	private DataSet _dataSet;
+	private DataTable _dataTable;
 
 
 	internal void LoadDiffGram(DataSet ds, XmlReader dataTextReader) { }
@@ -15560,26 +15560,26 @@ internal class XMLSchema // TypeDefIndex: 4321
 
 internal sealed class XSDSchema : XMLSchema // TypeDefIndex: 4323
 {
-	private XmlSchemaSet _schemaSet; 
-	private XmlSchemaElement _dsElement; 
-	private DataSet _ds; 
-	private string _schemaName; 
-	private ArrayList _columnExpressions; 
-	private Hashtable _constraintNodes; 
-	private ArrayList _refTables; 
-	private ArrayList _complexTypes; 
-	private XmlSchemaObjectCollection _annotations; 
-	private XmlSchemaObjectCollection _elements; 
-	private Hashtable _attributes; 
-	private Hashtable _elementsTable; 
-	private Hashtable _attributeGroups; 
-	private Hashtable _schemaTypes; 
-	private Hashtable _expressions; 
-	private Dictionary<DataTable, List<DataTable>> _tableDictionary; 
-	private Hashtable _udSimpleTypes; 
-	private Hashtable _existingSimpleTypeMap; 
-	private bool _fromInference; 
-	private static readonly XSDSchema.NameType[] s_mapNameTypeXsd; 
+	private XmlSchemaSet _schemaSet;
+	private XmlSchemaElement _dsElement;
+	private DataSet _ds;
+	private string _schemaName;
+	private ArrayList _columnExpressions;
+	private Hashtable _constraintNodes;
+	private ArrayList _refTables;
+	private ArrayList _complexTypes;
+	private XmlSchemaObjectCollection _annotations;
+	private XmlSchemaObjectCollection _elements;
+	private Hashtable _attributes;
+	private Hashtable _elementsTable;
+	private Hashtable _attributeGroups;
+	private Hashtable _schemaTypes;
+	private Hashtable _expressions;
+	private Dictionary<DataTable, List<DataTable>> _tableDictionary;
+	private Hashtable _udSimpleTypes;
+	private Hashtable _existingSimpleTypeMap;
+	private bool _fromInference;
+	private static readonly XSDSchema.NameType[] s_mapNameTypeXsd;
 
 	internal bool FromInference { get; set; }
 
@@ -15698,8 +15698,8 @@ internal sealed class XSDSchema : XMLSchema // TypeDefIndex: 4323
 
 private sealed class XSDSchema.NameType : IComparable // TypeDefIndex: 4324
 {
-	public readonly string name; 
-	public readonly Type type; 
+	public readonly string name;
+	public readonly Type type;
 
 
 	public void .ctor(string n, Type t) { }
@@ -15710,7 +15710,7 @@ private sealed class XSDSchema.NameType : IComparable // TypeDefIndex: 4324
 
 internal sealed class XmlIgnoreNamespaceReader : XmlNodeReader // TypeDefIndex: 4325
 {
-	private List<string> _namespacesToIgnore; 
+	private List<string> _namespacesToIgnore;
 
 
 	internal void .ctor(XmlDocument xdoc, string[] namespacesToIgnore) { }
@@ -15723,31 +15723,31 @@ internal sealed class XmlIgnoreNamespaceReader : XmlNodeReader // TypeDefIndex: 
 
 internal sealed class XmlDataLoader // TypeDefIndex: 4326
 {
-	private DataSet _dataSet; 
-	private XmlToDatasetMap _nodeToSchemaMap; 
-	private Hashtable _nodeToRowMap; 
-	private Stack _childRowsStack; 
-	private Hashtable _htableExcludedNS; 
-	private bool _fIsXdr; 
-	internal bool _isDiffgram; 
-	private XmlElement _topMostNode; 
-	private bool _ignoreSchema; 
-	private DataTable _dataTable; 
-	private bool _isTableLevel; 
-	private bool _fromInference; 
-	private XmlReader _dataReader; 
-	private object _XSD_XMLNS_NS; 
-	private object _XDR_SCHEMA; 
-	private object _XDRNS; 
-	private object _SQL_SYNC; 
-	private object _UPDGNS; 
-	private object _XSD_SCHEMA; 
-	private object _XSDNS; 
-	private object _DFFNS; 
-	private object _MSDNS; 
-	private object _DIFFID; 
-	private object _HASCHANGES; 
-	private object _ROWORDER; 
+	private DataSet _dataSet;
+	private XmlToDatasetMap _nodeToSchemaMap;
+	private Hashtable _nodeToRowMap;
+	private Stack _childRowsStack;
+	private Hashtable _htableExcludedNS;
+	private bool _fIsXdr;
+	internal bool _isDiffgram;
+	private XmlElement _topMostNode;
+	private bool _ignoreSchema;
+	private DataTable _dataTable;
+	private bool _isTableLevel;
+	private bool _fromInference;
+	private XmlReader _dataReader;
+	private object _XSD_XMLNS_NS;
+	private object _XDR_SCHEMA;
+	private object _XDRNS;
+	private object _SQL_SYNC;
+	private object _UPDGNS;
+	private object _XSD_SCHEMA;
+	private object _XSDNS;
+	private object _DFFNS;
+	private object _MSDNS;
+	private object _DIFFID;
+	private object _HASCHANGES;
+	private object _ROWORDER;
 
 	internal bool FromInference { get; set; }
 
@@ -15812,7 +15812,7 @@ internal sealed class XmlDataLoader // TypeDefIndex: 4326
 
 public enum XmlReadMode // TypeDefIndex: 4327
 {
-	public int value__; 
+	public int value__;
 	public const XmlReadMode Auto = 0;
 	public const XmlReadMode ReadSchema = 1;
 	public const XmlReadMode IgnoreSchema = 2;
@@ -15825,8 +15825,8 @@ public enum XmlReadMode // TypeDefIndex: 4327
 
 internal sealed class XmlToDatasetMap // TypeDefIndex: 4328
 {
-	private XmlToDatasetMap.XmlNodeIdHashtable _tableSchemaMap; 
-	private XmlToDatasetMap.TableSchemaInfo _lastTableSchemaInfo; 
+	private XmlToDatasetMap.XmlNodeIdHashtable _tableSchemaMap;
+	private XmlToDatasetMap.TableSchemaInfo _lastTableSchemaInfo;
 
 
 	public void .ctor(DataSet dataSet, XmlNameTable nameTable) { }
@@ -15871,8 +15871,8 @@ internal sealed class XmlToDatasetMap // TypeDefIndex: 4328
 
 private sealed class XmlToDatasetMap.XmlNodeIdentety // TypeDefIndex: 4329
 {
-	public string LocalName; 
-	public string NamespaceURI; 
+	public string LocalName;
+	public string NamespaceURI;
 
 
 	public void .ctor(string localName, string namespaceURI) { }
@@ -15885,7 +15885,7 @@ private sealed class XmlToDatasetMap.XmlNodeIdentety // TypeDefIndex: 4329
 
 internal sealed class XmlToDatasetMap.XmlNodeIdHashtable : Hashtable // TypeDefIndex: 4330
 {
-	private XmlToDatasetMap.XmlNodeIdentety _id; 
+	private XmlToDatasetMap.XmlNodeIdentety _id;
 
 	public object Item { get; }
 	public object Item { get; }
@@ -15907,8 +15907,8 @@ internal sealed class XmlToDatasetMap.XmlNodeIdHashtable : Hashtable // TypeDefI
 
 private sealed class XmlToDatasetMap.TableSchemaInfo // TypeDefIndex: 4331
 {
-	public DataTable TableSchema; 
-	public XmlToDatasetMap.XmlNodeIdHashtable ColumnsSchemaMap; 
+	public DataTable TableSchema;
+	public XmlToDatasetMap.XmlNodeIdHashtable ColumnsSchemaMap;
 
 
 	public void .ctor(DataTable tableSchema) { }
@@ -15917,7 +15917,7 @@ private sealed class XmlToDatasetMap.TableSchemaInfo // TypeDefIndex: 4331
 
 public enum XmlWriteMode // TypeDefIndex: 4332
 {
-	public int value__; 
+	public int value__;
 	public const XmlWriteMode WriteSchema = 0;
 	public const XmlWriteMode IgnoreSchema = 1;
 	public const XmlWriteMode DiffGram = 2;
@@ -15926,23 +15926,23 @@ public enum XmlWriteMode // TypeDefIndex: 4332
 
 internal sealed class XmlTreeGen // TypeDefIndex: 4335
 {
-	private ArrayList _constraintNames; 
-	private Hashtable _namespaces; 
-	private Hashtable _autogenerated; 
-	private Hashtable _prefixes; 
-	private DataSet _ds; 
-	private ArrayList _tables; 
-	private ArrayList _relations; 
-	private XmlDocument _dc; 
-	private XmlElement _sRoot; 
-	private int _prefixCount; 
-	private SchemaFormat _schFormat; 
-	private string _filePath; 
-	private string _fileName; 
-	private string _fileExt; 
-	private XmlElement _dsElement; 
-	private XmlElement _constraintSeparator; 
-	private Converter<Type, string> _targetConverter; 
+	private ArrayList _constraintNames;
+	private Hashtable _namespaces;
+	private Hashtable _autogenerated;
+	private Hashtable _prefixes;
+	private DataSet _ds;
+	private ArrayList _tables;
+	private ArrayList _relations;
+	private XmlDocument _dc;
+	private XmlElement _sRoot;
+	private int _prefixCount;
+	private SchemaFormat _schFormat;
+	private string _filePath;
+	private string _fileName;
+	private string _fileExt;
+	private XmlElement _dsElement;
+	private XmlElement _constraintSeparator;
+	private Converter<Type, string> _targetConverter;
 
 
 	internal void .ctor(SchemaFormat format) { }
@@ -16047,15 +16047,15 @@ internal sealed class XmlTreeGen // TypeDefIndex: 4335
 
 internal sealed class XmlDataTreeWriter // TypeDefIndex: 4337
 {
-	private XmlWriter _xmlw; 
-	private DataSet _ds; 
-	private DataTable _dt; 
-	private ArrayList _dTables; 
-	private DataTable[] _topLevelTables; 
-	private bool _fFromTable; 
-	private bool _isDiffgram; 
-	private Hashtable _rowsOrder; 
-	private bool _writeHierarchy; 
+	private XmlWriter _xmlw;
+	private DataSet _ds;
+	private DataTable _dt;
+	private ArrayList _dTables;
+	private DataTable[] _topLevelTables;
+	private bool _fFromTable;
+	private bool _isDiffgram;
+	private Hashtable _rowsOrder;
+	private bool _writeHierarchy;
 
 
 	internal void .ctor(DataSet ds) { }
@@ -16082,14 +16082,14 @@ internal sealed class XmlDataTreeWriter // TypeDefIndex: 4337
 
 public sealed class SqlXml : INullable, IXmlSerializable // TypeDefIndex: 4364
 {
-	private static readonly Func<Stream, XmlReaderSettings, XmlParserContext, XmlReader> s_sqlReaderDelegate; 
-	private static readonly XmlReaderSettings s_defaultXmlReaderSettings; 
-	private static readonly XmlReaderSettings s_defaultXmlReaderSettingsCloseInput; 
-	private static MethodInfo s_createSqlReaderMethodInfo; 
-	private MethodInfo _createSqlReaderMethodInfo; 
-	private bool _fNotNull; 
-	private Stream _stream; 
-	private bool _firstCreateReader; 
+	private static readonly Func<Stream, XmlReaderSettings, XmlParserContext, XmlReader> s_sqlReaderDelegate;
+	private static readonly XmlReaderSettings s_defaultXmlReaderSettings;
+	private static readonly XmlReaderSettings s_defaultXmlReaderSettingsCloseInput;
+	private static MethodInfo s_createSqlReaderMethodInfo;
+	private MethodInfo _createSqlReaderMethodInfo;
+	private bool _fNotNull;
+	private Stream _stream;
+	private bool _firstCreateReader;
 
 	private static MethodInfo CreateSqlReaderMethodInfo { get; }
 	public bool IsNull { get; }
@@ -16123,9 +16123,9 @@ public sealed class SqlXml : INullable, IXmlSerializable // TypeDefIndex: 4364
 
 internal sealed class SqlXmlStreamWrapper : Stream // TypeDefIndex: 4365
 {
-	private Stream _stream; 
-	private long _lPosition; 
-	private bool _isClosed; 
+	private Stream _stream;
+	private long _lPosition;
+	private bool _isClosed;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }
@@ -16181,31 +16181,31 @@ public static class XRDevice // TypeDefIndex: 4773
 
 internal class <Module>
 
-[NativeConditionalAttribute] 
+[NativeConditionalAttribute]
 public static class XRDevice
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<string> deviceLoaded; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<string> deviceLoaded;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeDeviceLoaded(string loadedDeviceName) { }
 
 	private static void .cctor() { }
 
 }
 
-public sealed class XName : IEquatable<XName>, ISerializable // TypeDefIndex: 5822
+public sealed class XName : IEquatable<XName>, ISerializable // TypeDefIndex: 5824
 {
 
 internal class <Module>
 
-[KnownTypeAttribute] 
+[KnownTypeAttribute]
 [Serializable]
 public sealed class XName : IEquatable<XName>, ISerializable
-	private XNamespace ns; 
-	private string localName; 
-	private int hashCode; 
+	private XNamespace ns;
+	private string localName;
+	private int hashCode;
 
 	public string LocalName { get; }
 	public XNamespace Namespace { get; }
@@ -16226,7 +16226,7 @@ public sealed class XName : IEquatable<XName>, ISerializable
 
 	public static XName Get(string localName, string namespaceName) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static XName op_Implicit(string expandedName) { }
 
 	public override bool Equals(object obj) { }
@@ -16243,15 +16243,15 @@ public sealed class XName : IEquatable<XName>, ISerializable
 
 }
 
-public sealed class XNamespace // TypeDefIndex: 5824
+public sealed class XNamespace // TypeDefIndex: 5826
 {
-	private static XHashtable<WeakReference> namespaces; 
-	private static WeakReference refNone; 
-	private static WeakReference refXml; 
-	private static WeakReference refXmlns; 
-	private string namespaceName; 
-	private int hashCode; 
-	private XHashtable<XName> names; 
+	private static XHashtable<WeakReference> namespaces;
+	private static WeakReference refNone;
+	private static WeakReference refXml;
+	private static WeakReference refXmlns;
+	private string namespaceName;
+	private int hashCode;
+	private XHashtable<XName> names;
 
 	public string NamespaceName { get; }
 	public static XNamespace None { get; }
@@ -16275,7 +16275,7 @@ public sealed class XNamespace // TypeDefIndex: 5824
 
 	public static XNamespace Get(string namespaceName) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static XNamespace op_Implicit(string namespaceName) { }
 
 	public override bool Equals(object obj) { }
@@ -16298,10 +16298,10 @@ public sealed class XNamespace // TypeDefIndex: 5824
 
 }
 
-public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5829
+public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5831
 {
-	internal XContainer parent; 
-	internal object annotations; 
+	internal XContainer parent;
+	internal object annotations;
 
 	public string BaseUri { get; }
 	public abstract XmlNodeType NodeType { get; }
@@ -16332,7 +16332,7 @@ public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5829
 	|-XObject.Annotation<XObjectChangeAnnotation>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerable<T> Annotations<T>() { }
 	/* GenericInstMethod :
 	|
@@ -16362,27 +16362,27 @@ public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5829
 
 }
 
-private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 5830
+private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 5832
 {
-	private int <>1__state; 
-	private T <>2__current; 
-	private int <>l__initialThreadId; 
-	public XObject <>4__this; 
-	private object[] <a>5__1; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private T <>2__current;
+	private int <>l__initialThreadId;
+	public XObject <>4__this;
+	private object[] <a>5__1;
+	private int <i>5__2;
 
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
 	|-XObject.<Annotations>d__16<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -16395,35 +16395,35 @@ private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable
 	|-XObject.<Annotations>d__16<object>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-XObject.<Annotations>d__16<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
 	|-XObject.<Annotations>d__16<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-XObject.<Annotations>d__16<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
 	|-XObject.<Annotations>d__16<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -16432,16 +16432,16 @@ private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable
 
 }
 
-internal class XObjectChangeAnnotation // TypeDefIndex: 5834
+internal class XObjectChangeAnnotation // TypeDefIndex: 5836
 {
-	internal EventHandler<XObjectChangeEventArgs> changing; 
-	internal EventHandler<XObjectChangeEventArgs> changed; 
+	internal EventHandler<XObjectChangeEventArgs> changing;
+	internal EventHandler<XObjectChangeEventArgs> changed;
 
 }
 
-public enum XObjectChange // TypeDefIndex: 5835
+public enum XObjectChange // TypeDefIndex: 5837
 {
-	public int value__; 
+	public int value__;
 	public const XObjectChange Add = 0;
 	public const XObjectChange Remove = 1;
 	public const XObjectChange Name = 2;
@@ -16449,13 +16449,13 @@ public enum XObjectChange // TypeDefIndex: 5835
 
 }
 
-public class XObjectChangeEventArgs : EventArgs // TypeDefIndex: 5836
+public class XObjectChangeEventArgs : EventArgs // TypeDefIndex: 5838
 {
-	private XObjectChange objectChange; 
-	public static readonly XObjectChangeEventArgs Add; 
-	public static readonly XObjectChangeEventArgs Remove; 
-	public static readonly XObjectChangeEventArgs Name; 
-	public static readonly XObjectChangeEventArgs Value; 
+	private XObjectChange objectChange;
+	public static readonly XObjectChangeEventArgs Add;
+	public static readonly XObjectChangeEventArgs Remove;
+	public static readonly XObjectChangeEventArgs Name;
+	public static readonly XObjectChangeEventArgs Value;
 
 
 	public void .ctor(XObjectChange objectChange) { }
@@ -16464,9 +16464,9 @@ public class XObjectChangeEventArgs : EventArgs // TypeDefIndex: 5836
 
 }
 
-public abstract class XNode : XObject // TypeDefIndex: 5837
+public abstract class XNode : XObject // TypeDefIndex: 5839
 {
-	internal XNode next; 
+	internal XNode next;
 
 
 	internal void .ctor() { }
@@ -16485,9 +16485,9 @@ public abstract class XNode : XObject // TypeDefIndex: 5837
 
 }
 
-public class XText : XNode // TypeDefIndex: 5838
+public class XText : XNode // TypeDefIndex: 5840
 {
-	internal string text; 
+	internal string text;
 
 	public override XmlNodeType NodeType { get; }
 	public string Value { get; set; }
@@ -16511,7 +16511,7 @@ public class XText : XNode // TypeDefIndex: 5838
 
 }
 
-public class XCData : XText // TypeDefIndex: 5839
+public class XCData : XText // TypeDefIndex: 5841
 {
 	public override XmlNodeType NodeType { get; }
 
@@ -16528,9 +16528,9 @@ public class XCData : XText // TypeDefIndex: 5839
 
 }
 
-public abstract class XContainer : XNode // TypeDefIndex: 5840
+public abstract class XContainer : XNode // TypeDefIndex: 5842
 {
-	internal object content; 
+	internal object content;
 
 	public XNode LastNode { get; }
 
@@ -16543,7 +16543,7 @@ public abstract class XContainer : XNode // TypeDefIndex: 5840
 
 	public void Add(object content) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerable<XNode> Nodes() { }
 
 	internal virtual void AddAttribute(XAttribute a) { }
@@ -16586,47 +16586,47 @@ public abstract class XContainer : XNode // TypeDefIndex: 5840
 
 }
 
-private sealed class XContainer.<Nodes>d__18 : IEnumerable<XNode>, IEnumerable, IEnumerator<XNode>, IDisposable, IEnumerator // TypeDefIndex: 5841
+private sealed class XContainer.<Nodes>d__18 : IEnumerable<XNode>, IEnumerable, IEnumerator<XNode>, IDisposable, IEnumerator // TypeDefIndex: 5843
 {
-	private int <>1__state; 
-	private XNode <>2__current; 
-	private int <>l__initialThreadId; 
-	public XContainer <>4__this; 
-	private XNode <n>5__1; 
+	private int <>1__state;
+	private XNode <>2__current;
+	private int <>l__initialThreadId;
+	public XContainer <>4__this;
+	private XNode <n>5__1;
 
 	private XNode System.Collections.Generic.IEnumerator<System.Xml.Linq.XNode>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private XNode System.Collections.Generic.IEnumerator<System.Xml.Linq.XNode>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<XNode> System.Collections.Generic.IEnumerable<System.Xml.Linq.XNode>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
-public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5843
+public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5845
 {
-	internal XName name; 
-	internal XAttribute lastAttr; 
+	internal XName name;
+	internal XAttribute lastAttr;
 
 	public bool IsEmpty { get; }
 	public XName Name { get; }
@@ -16672,7 +16672,7 @@ public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5843
 
 	internal override XNode CloneNode() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerable<XAttribute> GetAttributes(XName name) { }
 
 	private string GetNamespaceOfPrefixInScope(string prefix, XElement outOfScope) { }
@@ -16685,48 +16685,48 @@ public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5843
 
 }
 
-private sealed class XElement.<GetAttributes>d__105 : IEnumerable<XAttribute>, IEnumerable, IEnumerator<XAttribute>, IDisposable, IEnumerator // TypeDefIndex: 5844
+private sealed class XElement.<GetAttributes>d__105 : IEnumerable<XAttribute>, IEnumerable, IEnumerator<XAttribute>, IDisposable, IEnumerator // TypeDefIndex: 5846
 {
-	private int <>1__state; 
-	private XAttribute <>2__current; 
-	private int <>l__initialThreadId; 
-	public XElement <>4__this; 
-	private XAttribute <a>5__1; 
-	private XName name; 
-	public XName <>3__name; 
+	private int <>1__state;
+	private XAttribute <>2__current;
+	private int <>l__initialThreadId;
+	public XElement <>4__this;
+	private XAttribute <a>5__1;
+	private XName name;
+	public XName <>3__name;
 
 	private XAttribute System.Collections.Generic.IEnumerator<System.Xml.Linq.XAttribute>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private XAttribute System.Collections.Generic.IEnumerator<System.Xml.Linq.XAttribute>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<XAttribute> System.Collections.Generic.IEnumerable<System.Xml.Linq.XAttribute>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
-public class XDocument : XContainer // TypeDefIndex: 5850
+public class XDocument : XContainer // TypeDefIndex: 5852
 {
-	private XDeclaration declaration; 
+	private XDeclaration declaration;
 
 	public XDeclaration Declaration { get; set; }
 	public override XmlNodeType NodeType { get; }
@@ -16770,9 +16770,9 @@ public class XDocument : XContainer // TypeDefIndex: 5850
 
 }
 
-public class XComment : XNode // TypeDefIndex: 5851
+public class XComment : XNode // TypeDefIndex: 5853
 {
-	internal string value; 
+	internal string value;
 
 	public override XmlNodeType NodeType { get; }
 	public string Value { get; }
@@ -16792,10 +16792,10 @@ public class XComment : XNode // TypeDefIndex: 5851
 
 }
 
-public class XProcessingInstruction : XNode // TypeDefIndex: 5852
+public class XProcessingInstruction : XNode // TypeDefIndex: 5854
 {
-	internal string target; 
-	internal string data; 
+	internal string target;
+	internal string data;
 
 	public string Data { get; }
 	public override XmlNodeType NodeType { get; }
@@ -16820,11 +16820,11 @@ public class XProcessingInstruction : XNode // TypeDefIndex: 5852
 
 }
 
-public class XDeclaration // TypeDefIndex: 5853
+public class XDeclaration // TypeDefIndex: 5855
 {
-	private string version; 
-	private string encoding; 
-	private string standalone; 
+	private string version;
+	private string encoding;
+	private string standalone;
 
 	public string Encoding { get; }
 	public string Standalone { get; }
@@ -16845,13 +16845,13 @@ public class XDeclaration // TypeDefIndex: 5853
 
 }
 
-public class XDocumentType : XNode // TypeDefIndex: 5854
+public class XDocumentType : XNode // TypeDefIndex: 5856
 {
-	private string name; 
-	private string publicId; 
-	private string systemId; 
-	private string internalSubset; 
-	private IDtdInfo dtdInfo; 
+	private string name;
+	private string publicId;
+	private string systemId;
+	private string internalSubset;
+	private IDtdInfo dtdInfo;
 
 	public string InternalSubset { get; }
 	public string Name { get; }
@@ -16882,11 +16882,11 @@ public class XDocumentType : XNode // TypeDefIndex: 5854
 
 }
 
-public class XAttribute : XObject // TypeDefIndex: 5855
+public class XAttribute : XObject // TypeDefIndex: 5857
 {
-	internal XAttribute next; 
-	internal XName name; 
-	internal string value; 
+	internal XAttribute next;
+	internal XName name;
+	internal string value;
 
 	public bool IsNamespaceDeclaration { get; }
 	public XName Name { get; }
@@ -16914,16 +16914,16 @@ public class XAttribute : XObject // TypeDefIndex: 5855
 
 }
 
-public class XStreamingElement // TypeDefIndex: 5856
+public class XStreamingElement // TypeDefIndex: 5858
 {
-	internal XName name; 
-	internal object content; 
+	internal XName name;
+	internal object content;
 
 }
 
-internal class XmlDocumentWrapper : XmlNodeWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6118
+internal class XmlDocumentWrapper : XmlNodeWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6120
 {
-	private readonly XmlDocument _document; 
+	private readonly XmlDocument _document;
 
 	public IXmlElement DocumentElement { get; }
 
@@ -16958,9 +16958,9 @@ internal class XmlDocumentWrapper : XmlNodeWrapper, IXmlDocument, IXmlNode // Ty
 
 }
 
-internal class XmlElementWrapper : XmlNodeWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6119
+internal class XmlElementWrapper : XmlNodeWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6121
 {
-	private readonly XmlElement _element; 
+	private readonly XmlElement _element;
 
 	public bool IsEmpty { get; }
 
@@ -16975,9 +16975,9 @@ internal class XmlElementWrapper : XmlNodeWrapper, IXmlElement, IXmlNode // Type
 
 }
 
-internal class XmlDeclarationWrapper : XmlNodeWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6120
+internal class XmlDeclarationWrapper : XmlNodeWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6122
 {
-	private readonly XmlDeclaration _declaration; 
+	private readonly XmlDeclaration _declaration;
 
 	public string Version { get; }
 	public string Encoding { get; }
@@ -16994,9 +16994,9 @@ internal class XmlDeclarationWrapper : XmlNodeWrapper, IXmlDeclaration, IXmlNode
 
 }
 
-internal class XmlDocumentTypeWrapper : XmlNodeWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6121
+internal class XmlDocumentTypeWrapper : XmlNodeWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6123
 {
-	private readonly XmlDocumentType _documentType; 
+	private readonly XmlDocumentType _documentType;
 
 	public string Name { get; }
 	public string System { get; }
@@ -17019,11 +17019,11 @@ internal class XmlDocumentTypeWrapper : XmlNodeWrapper, IXmlDocumentType, IXmlNo
 
 }
 
-internal class XmlNodeWrapper : IXmlNode // TypeDefIndex: 6122
+internal class XmlNodeWrapper : IXmlNode // TypeDefIndex: 6124
 {
-	private readonly XmlNode _node; 
-	private List<IXmlNode> _childNodes; 
-	private List<IXmlNode> _attributes; 
+	private readonly XmlNode _node;
+	private List<IXmlNode> _childNodes;
+	private List<IXmlNode> _attributes;
 
 	public object WrappedNode { get; }
 	public XmlNodeType NodeType { get; }
@@ -17061,10 +17061,10 @@ internal class XmlNodeWrapper : IXmlNode // TypeDefIndex: 6122
 
 }
 
-internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6128
+internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6130
 {
-	[CompilerGeneratedAttribute] 
-	private XDeclaration <Declaration>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private XDeclaration <Declaration>k__BackingField;
 
 	internal XDeclaration Declaration { get; set; }
 	public override XmlNodeType NodeType { get; }
@@ -17073,10 +17073,10 @@ internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode /
 	public string Standalone { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal XDeclaration get_Declaration() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Declaration(XDeclaration value) { }
 
 	public void .ctor(XDeclaration declaration) { }
@@ -17091,9 +17091,9 @@ internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode /
 
 }
 
-internal class XDocumentTypeWrapper : XObjectWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6129
+internal class XDocumentTypeWrapper : XObjectWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6131
 {
-	private readonly XDocumentType _documentType; 
+	private readonly XDocumentType _documentType;
 
 	public string Name { get; }
 	public string System { get; }
@@ -17116,7 +17116,7 @@ internal class XDocumentTypeWrapper : XObjectWrapper, IXmlDocumentType, IXmlNode
 
 }
 
-internal class XDocumentWrapper : XContainerWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6130
+internal class XDocumentWrapper : XContainerWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6132
 {
 	private XDocument Document { get; }
 	public override List<IXmlNode> ChildNodes { get; }
@@ -17159,7 +17159,7 @@ internal class XDocumentWrapper : XContainerWrapper, IXmlDocument, IXmlNode // T
 
 }
 
-internal class XTextWrapper : XObjectWrapper // TypeDefIndex: 6131
+internal class XTextWrapper : XObjectWrapper // TypeDefIndex: 6133
 {
 	private XText Text { get; }
 	public override string Value { get; }
@@ -17176,7 +17176,7 @@ internal class XTextWrapper : XObjectWrapper // TypeDefIndex: 6131
 
 }
 
-internal class XCommentWrapper : XObjectWrapper // TypeDefIndex: 6132
+internal class XCommentWrapper : XObjectWrapper // TypeDefIndex: 6134
 {
 	private XComment Text { get; }
 	public override string Value { get; }
@@ -17193,7 +17193,7 @@ internal class XCommentWrapper : XObjectWrapper // TypeDefIndex: 6132
 
 }
 
-internal class XProcessingInstructionWrapper : XObjectWrapper // TypeDefIndex: 6133
+internal class XProcessingInstructionWrapper : XObjectWrapper // TypeDefIndex: 6135
 {
 	private XProcessingInstruction ProcessingInstruction { get; }
 	public override string LocalName { get; }
@@ -17210,9 +17210,9 @@ internal class XProcessingInstructionWrapper : XObjectWrapper // TypeDefIndex: 6
 
 }
 
-internal class XContainerWrapper : XObjectWrapper // TypeDefIndex: 6134
+internal class XContainerWrapper : XObjectWrapper // TypeDefIndex: 6136
 {
-	private List<IXmlNode> _childNodes; 
+	private List<IXmlNode> _childNodes;
 
 	private XContainer Container { get; }
 	public override List<IXmlNode> ChildNodes { get; }
@@ -17233,10 +17233,10 @@ internal class XContainerWrapper : XObjectWrapper // TypeDefIndex: 6134
 
 }
 
-internal class XObjectWrapper : IXmlNode // TypeDefIndex: 6135
+internal class XObjectWrapper : IXmlNode // TypeDefIndex: 6137
 {
-	private static readonly List<IXmlNode> EmptyChildNodes; 
-	private readonly XObject _xmlObject; 
+	private static readonly List<IXmlNode> EmptyChildNodes;
+	private readonly XObject _xmlObject;
 
 	public object WrappedNode { get; }
 	public virtual XmlNodeType NodeType { get; }
@@ -17272,7 +17272,7 @@ internal class XObjectWrapper : IXmlNode // TypeDefIndex: 6135
 
 }
 
-internal class XAttributeWrapper : XObjectWrapper // TypeDefIndex: 6136
+internal class XAttributeWrapper : XObjectWrapper // TypeDefIndex: 6138
 {
 	private XAttribute Attribute { get; }
 	public override string Value { get; }
@@ -17295,9 +17295,9 @@ internal class XAttributeWrapper : XObjectWrapper // TypeDefIndex: 6136
 
 }
 
-internal class XElementWrapper : XContainerWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6137
+internal class XElementWrapper : XContainerWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6139
 {
-	private List<IXmlNode> _attributes; 
+	private List<IXmlNode> _attributes;
 
 	private XElement Element { get; }
 	public override List<IXmlNode> Attributes { get; }
@@ -17329,27 +17329,27 @@ internal class XElementWrapper : XContainerWrapper, IXmlElement, IXmlNode // Typ
 
 }
 
-public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6138
+public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6140
 {
-	[CompilerGeneratedAttribute] 
-	private string <DeserializeRootElementName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <WriteArrayAttribute>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <OmitRootObject>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <DeserializeRootElementName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <WriteArrayAttribute>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <OmitRootObject>k__BackingField;
 
 	public string DeserializeRootElementName { get; }
 	public bool WriteArrayAttribute { get; }
 	public bool OmitRootObject { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_DeserializeRootElementName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_WriteArrayAttribute() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_OmitRootObject() { }
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
@@ -17406,10 +17406,10 @@ public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6138
 
 }
 
-public class XORSwitch : IOEntity // TypeDefIndex: 11541
+public class XORSwitch : IOEntity // TypeDefIndex: 11548
 {
-	private int input1Amount; 
-	private int input2Amount; 
+	private int input1Amount;
+	private int input2Amount;
 
 
 	public void .ctor() { }

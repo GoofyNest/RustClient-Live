@@ -1,15 +1,15 @@
 public sealed class SecureString : IDisposable // TypeDefIndex: 903
 {
-	private int length; 
-	private bool disposed; 
-	private byte[] data; 
+	private int length;
+	private bool disposed;
+	private byte[] data;
 
 	public int Length { get; }
 
 
 	public void .ctor() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(char* value, int length) { }
 
 	public int get_Length() { }

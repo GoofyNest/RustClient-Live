@@ -10,17 +10,17 @@ public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, I
 	private const string KeysName = "Keys";
 	private const string ValuesName = "Values";
 	private const string KeyComparerName = "KeyComparer";
-	private Hashtable.bucket[] buckets; 
-	private int count; 
-	private int occupancy; 
-	private int loadsize; 
-	private float loadFactor; 
-	private int version; 
-	private bool isWriterInProgress; 
-	private ICollection keys; 
-	private ICollection values; 
-	private IEqualityComparer _keycomparer; 
-	private object _syncRoot; 
+	private Hashtable.bucket[] buckets;
+	private int count;
+	private int occupancy;
+	private int loadsize;
+	private float loadFactor;
+	private int version;
+	private bool isWriterInProgress;
+	private ICollection keys;
+	private ICollection values;
+	private IEqualityComparer _keycomparer;
+	private object _syncRoot;
 
 	public virtual object Item { get; set; }
 	public virtual bool IsReadOnly { get; }
@@ -38,12 +38,12 @@ public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, I
 
 	public void .ctor(int capacity, float loadFactor) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void .ctor(int capacity, float loadFactor, IHashCodeProvider hcp, IComparer comparer) { }
 
 	public void .ctor(int capacity, float loadFactor, IEqualityComparer equalityComparer) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void .ctor(IHashCodeProvider hcp, IComparer comparer) { }
 
 	public void .ctor(IEqualityComparer equalityComparer) { }
@@ -56,7 +56,7 @@ public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, I
 
 	public virtual void Add(object key, object value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public virtual void Clear() { }
 
 	public virtual object Clone() { }
@@ -83,7 +83,7 @@ public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, I
 
 	private void UpdateVersion() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private void rehash(int newsize, bool forceNewHashCode) { }
 
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
@@ -100,12 +100,12 @@ public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, I
 
 	public virtual ICollection get_Values() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private void Insert(object key, object nvalue, bool add) { }
 
 	private void putEntry(Hashtable.bucket[] newBuckets, object key, object nvalue, int hashcode) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public virtual void Remove(object key) { }
 
 	public virtual object get_SyncRoot() { }
@@ -122,15 +122,15 @@ public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, I
 
 private struct Hashtable.bucket // TypeDefIndex: 1390
 {
-	public object key; 
-	public object val; 
-	public int hash_coll; 
+	public object key;
+	public object val;
+	public int hash_coll;
 
 }
 
 private class Hashtable.KeyCollection : ICollection, IEnumerable // TypeDefIndex: 1391
 {
-	private Hashtable _hashtable; 
+	private Hashtable _hashtable;
 
 	public virtual object SyncRoot { get; }
 	public virtual int Count { get; }
@@ -150,7 +150,7 @@ private class Hashtable.KeyCollection : ICollection, IEnumerable // TypeDefIndex
 
 private class Hashtable.ValueCollection : ICollection, IEnumerable // TypeDefIndex: 1392
 {
-	private Hashtable _hashtable; 
+	private Hashtable _hashtable;
 
 	public virtual object SyncRoot { get; }
 	public virtual int Count { get; }
@@ -170,7 +170,7 @@ private class Hashtable.ValueCollection : ICollection, IEnumerable // TypeDefInd
 
 private class Hashtable.SyncHashtable : Hashtable, IEnumerable // TypeDefIndex: 1393
 {
-	protected Hashtable _table; 
+	protected Hashtable _table;
 
 	public override int Count { get; }
 	public override bool IsReadOnly { get; }
@@ -224,13 +224,13 @@ private class Hashtable.SyncHashtable : Hashtable, IEnumerable // TypeDefIndex: 
 
 private class Hashtable.HashtableEnumerator : IDictionaryEnumerator, IEnumerator, ICloneable // TypeDefIndex: 1394
 {
-	private Hashtable hashtable; 
-	private int bucket; 
-	private int version; 
-	private bool current; 
-	private int getObjectRetType; 
-	private object currentKey; 
-	private object currentValue; 
+	private Hashtable hashtable;
+	private int bucket;
+	private int version;
+	private bool current;
+	private int getObjectRetType;
+	private object currentKey;
+	private object currentValue;
 
 	public virtual object Key { get; }
 	public virtual DictionaryEntry Entry { get; }

@@ -1,10 +1,10 @@
-public enum FlexDirection // TypeDefIndex: 6813
+public enum FlexDirection // TypeDefIndex: 6815
 {
 
 internal class <Module>
 
 public enum FlexDirection
-	public int value__; 
+	public int value__;
 	public const FlexDirection Row = 0;
 	public const FlexDirection RowReverse = 1;
 	public const FlexDirection Column = 2;

@@ -1,6 +1,6 @@
-public static class Parallel // TypeDefIndex: 5606
+public static class Parallel // TypeDefIndex: 5608
 {
-	public static int MaxThreads; 
+	public static int MaxThreads;
 
 
 	public static void ForEach<T>(IList<T> data, Action<T> action) { }
@@ -23,17 +23,17 @@ public static class Parallel // TypeDefIndex: 5606
 
 	public static void Call(int threads, Action<int, int> action) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerator Coroutine(Action action) { }
 
 	private static void .cctor() { }
 
 }
 
-private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5607
+private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5609
 {
-	public Action<T> action; 
-	public IList<T> data; 
+	public Action<T> action;
+	public IList<T> data;
 
 
 	public void .ctor() { }
@@ -50,11 +50,11 @@ private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5607
 
 }
 
-private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5608
+private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5610
 {
-	public int chunk_size; 
-	public int toExclusive; 
-	public Action<int> action; 
+	public int chunk_size;
+	public int toExclusive;
+	public Action<int> action;
 
 
 	public void .ctor() { }
@@ -63,10 +63,10 @@ private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5608
 
 }
 
-private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5609
+private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5611
 {
-	public Action<int, int> action; 
-	public int threads; 
+	public Action<int, int> action;
+	public int threads;
 
 
 	public void .ctor() { }
@@ -75,32 +75,32 @@ private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5609
 
 }
 
-private sealed class Parallel.<Coroutine>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5610
+private sealed class Parallel.<Coroutine>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5612
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Action action; 
-	private IAsyncResult <asyncResult>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public Action action;
+	private IAsyncResult <asyncResult>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

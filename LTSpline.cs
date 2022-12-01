@@ -1,16 +1,16 @@
-public class LTSpline // TypeDefIndex: 5591
+public class LTSpline // TypeDefIndex: 5593
 {
-	public static int DISTANCE_COUNT; 
-	public static int SUBLINE_COUNT; 
-	public float distance; 
-	public bool constantSpeed; 
-	public Vector3[] pts; 
-	public Vector3[] ptsAdj; 
-	public int ptsAdjLength; 
-	public bool orientToPath; 
-	public bool orientToPath2d; 
-	private int numSections; 
-	private int currPt; 
+	public static int DISTANCE_COUNT;
+	public static int SUBLINE_COUNT;
+	public float distance;
+	public bool constantSpeed;
+	public Vector3[] pts;
+	public Vector3[] ptsAdj;
+	public int ptsAdjLength;
+	public bool orientToPath;
+	public bool orientToPath2d;
+	private int numSections;
+	private int currPt;
 
 
 	public void .ctor(Vector3[] pts) { }

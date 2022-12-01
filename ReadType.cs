@@ -1,6 +1,6 @@
-internal enum ReadType // TypeDefIndex: 5900
+internal enum ReadType // TypeDefIndex: 5902
 {
-	public int value__; 
+	public int value__;
 	public const ReadType Read = 0;
 	public const ReadType ReadAsInt32 = 1;
 	public const ReadType ReadAsBytes = 2;

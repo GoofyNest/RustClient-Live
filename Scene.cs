@@ -1,7 +1,7 @@
 public struct Scene // TypeDefIndex: 3658
 {
-	[SerializeField] 
-	private int m_Handle; 
+	[SerializeField]
+	private int m_Handle;
 
 	public int handle { get; }
 	public string name { get; }
@@ -10,22 +10,22 @@ public struct Scene // TypeDefIndex: 3658
 	public int rootCount { get; }
 
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static bool IsValidInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static string GetNameInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static bool GetIsLoadedInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static int GetBuildIndexInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static int GetRootCountInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static void GetRootGameObjectsInternal(int sceneHandle, object resultRootList) { }
 
 	public int get_handle() { }

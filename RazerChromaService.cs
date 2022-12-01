@@ -1,14 +1,14 @@
-public class RazerChromaService : IRgbService // TypeDefIndex: 7727
+public class RazerChromaService : IRgbService // TypeDefIndex: 7729
 {
-	private readonly object _syncRoot; 
-	private Color _baseColor; 
-	private Nullable<float> _pulseDuration; 
-	private Color _pulseColor; 
-	private readonly Stopwatch _pulseTimer; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsConnected>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <ColorCorrection>k__BackingField; 
+	private readonly object _syncRoot;
+	private Color _baseColor;
+	private Nullable<float> _pulseDuration;
+	private Color _pulseColor;
+	private readonly Stopwatch _pulseTimer;
+	[CompilerGeneratedAttribute]
+	private bool <IsConnected>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <ColorCorrection>k__BackingField;
 
 	public bool IsConnected { get; set; }
 	public Vector3 ColorCorrection { get; set; }
@@ -16,16 +16,16 @@ public class RazerChromaService : IRgbService // TypeDefIndex: 7727
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsConnected() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsConnected(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_ColorCorrection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ColorCorrection(Vector3 value) { }
 
 	public ValueTask Start() { }
@@ -46,10 +46,10 @@ public class RazerChromaService : IRgbService // TypeDefIndex: 7727
 
 	private static int ColorToInt32(byte r, byte g, byte b) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void <SetColor>g__EnableEffect|21_0(Guid effectId) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void <SetColor>g__CheckCreateEffect|21_1(int result) { }
 
 }

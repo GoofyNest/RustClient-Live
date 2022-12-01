@@ -1,6 +1,6 @@
-public enum InvalidSystemCommonEventParameterValuePolicy // TypeDefIndex: 7610
+public enum InvalidSystemCommonEventParameterValuePolicy // TypeDefIndex: 7612
 {
-	public int value__; 
+	public int value__;
 	public const InvalidSystemCommonEventParameterValuePolicy Abort = 0;
 	public const InvalidSystemCommonEventParameterValuePolicy SnapToLimits = 1;
 

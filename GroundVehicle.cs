@@ -1,26 +1,26 @@
-public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 11446
+public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 11452
 {
-	[HeaderAttribute] 
-	[SerializeField] 
-	protected GroundVehicleAudio gvAudio; 
-	[SerializeField] 
-	private GameObjectRef fuelStoragePrefab; 
-	[SerializeField] 
-	private Transform waterloggedPoint; 
-	[SerializeField] 
-	private GameObjectRef collisionEffect; 
-	[SerializeField] 
-	private float engineStartupTime; 
-	[SerializeField] 
-	private float minCollisionDamageForce; 
-	[SerializeField] 
-	private float maxCollisionDamageForce; 
-	[SerializeField] 
-	private float collisionDamageMultiplier; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <Velocity>k__BackingField; 
-	protected VehicleEngineController<GroundVehicle> engineController; 
-	private bool runningClientTick; 
+	[HeaderAttribute]
+	[SerializeField]
+	protected GroundVehicleAudio gvAudio;
+	[SerializeField]
+	private GameObjectRef fuelStoragePrefab;
+	[SerializeField]
+	private Transform waterloggedPoint;
+	[SerializeField]
+	private GameObjectRef collisionEffect;
+	[SerializeField]
+	private float engineStartupTime;
+	[SerializeField]
+	private float minCollisionDamageForce;
+	[SerializeField]
+	private float maxCollisionDamageForce;
+	[SerializeField]
+	private float collisionDamageMultiplier;
+	[CompilerGeneratedAttribute]
+	private Vector3 <Velocity>k__BackingField;
+	protected VehicleEngineController<GroundVehicle> engineController;
+	private bool runningClientTick;
 
 	public Vector3 Velocity { get; set; }
 	public abstract float DriveWheelVelocity { get; }
@@ -28,10 +28,10 @@ public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntit
 	public VehicleEngineController.EngineState<GroundVehicle> CurEngineState { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_Velocity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Velocity(Vector3 value) { }
 
 	public abstract float get_DriveWheelVelocity();

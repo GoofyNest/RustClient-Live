@@ -1,6 +1,6 @@
-public struct TimeUntil // TypeDefIndex: 6172
+public struct TimeUntil // TypeDefIndex: 6174
 {
-	private float time; 
+	private float time;
 
 
 	public static float op_Implicit(TimeUntil ts) { }

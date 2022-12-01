@@ -1,13 +1,13 @@
-public class MaterialColorLerp : MonoBehaviour, IClientComponent // TypeDefIndex: 11374
+public class MaterialColorLerp : MonoBehaviour, IClientComponent // TypeDefIndex: 11380
 {
-	public Color startColor; 
-	public Color endColor; 
-	public Color currentColor; 
-	public float delta; 
-	private static MaterialPropertyBlock materialPropertyBlock; 
-	private bool initialized; 
-	private float lerpStartTime; 
-	private List<Renderer> cachedRenderers; 
+	public Color startColor;
+	public Color endColor;
+	public Color currentColor;
+	public float delta;
+	private static MaterialPropertyBlock materialPropertyBlock;
+	private bool initialized;
+	private float lerpStartTime;
+	private List<Renderer> cachedRenderers;
 
 
 	public void OnEnable() { }

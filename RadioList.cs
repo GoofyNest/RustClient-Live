@@ -1,9 +1,9 @@
-public class RadioList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6515
+public class RadioList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6517
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<string> stationUrls; 
-	public List<string> stationNames; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<string> stationUrls;
+	public List<string> stationNames;
 
 
 	public static void ResetToPool(RadioList instance) { }

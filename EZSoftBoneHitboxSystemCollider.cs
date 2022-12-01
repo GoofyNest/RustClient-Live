@@ -1,9 +1,9 @@
-public class EZSoftBoneHitboxSystemCollider : EZSoftBoneColliderBase, IClientComponent // TypeDefIndex: 10993
+public class EZSoftBoneHitboxSystemCollider : EZSoftBoneColliderBase, IClientComponent // TypeDefIndex: 10999
 {
-	public float radius; 
-	private HitboxSystem hitboxSystem; 
-	private float positionTime; 
-	private Vector3 positionCache; 
+	public float radius;
+	private HitboxSystem hitboxSystem;
+	private float positionTime;
+	private Vector3 positionCache;
 
 
 	public void Awake() { }

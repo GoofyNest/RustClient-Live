@@ -1,9 +1,9 @@
-internal struct CopyItemImageInfoByIndexOptionsInternal : ISettable<CopyItemImageInfoByIndexOptions>, IDisposable // TypeDefIndex: 9438
+internal struct CopyItemImageInfoByIndexOptionsInternal : ISettable<CopyItemImageInfoByIndexOptions>, IDisposable // TypeDefIndex: 9440
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ItemId; 
-	private uint m_ImageInfoIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ItemId;
+	private uint m_ImageInfoIndex;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String ItemId { set; }

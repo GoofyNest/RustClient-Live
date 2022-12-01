@@ -1,15 +1,15 @@
 public struct Navigation : IEquatable<Navigation> // TypeDefIndex: 4996
 {
-	[SerializeField] 
-	private Navigation.Mode m_Mode; 
-	[SerializeField] 
-	private Selectable m_SelectOnUp; 
-	[SerializeField] 
-	private Selectable m_SelectOnDown; 
-	[SerializeField] 
-	private Selectable m_SelectOnLeft; 
-	[SerializeField] 
-	private Selectable m_SelectOnRight; 
+	[SerializeField]
+	private Navigation.Mode m_Mode;
+	[SerializeField]
+	private Selectable m_SelectOnUp;
+	[SerializeField]
+	private Selectable m_SelectOnDown;
+	[SerializeField]
+	private Selectable m_SelectOnLeft;
+	[SerializeField]
+	private Selectable m_SelectOnRight;
 
 	public Navigation.Mode mode { get; set; }
 	public Selectable selectOnUp { get; set; }
@@ -47,7 +47,7 @@ public struct Navigation : IEquatable<Navigation> // TypeDefIndex: 4996
 
 public enum Navigation.Mode // TypeDefIndex: 4997
 {
-	public int value__; 
+	public int value__;
 	public const Navigation.Mode None = 0;
 	public const Navigation.Mode Horizontal = 1;
 	public const Navigation.Mode Vertical = 2;

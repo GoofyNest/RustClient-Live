@@ -1,13 +1,13 @@
 internal sealed class AggregateNode : ExpressionNode // TypeDefIndex: 4247
 {
-	private readonly AggregateType _type; 
-	private readonly Aggregate _aggregate; 
-	private readonly bool _local; 
-	private readonly string _relationName; 
-	private readonly string _columnName; 
-	private DataTable _childTable; 
-	private DataColumn _column; 
-	private DataRelation _relation; 
+	private readonly AggregateType _type;
+	private readonly Aggregate _aggregate;
+	private readonly bool _local;
+	private readonly string _relationName;
+	private readonly string _columnName;
+	private DataTable _childTable;
+	private DataColumn _column;
+	private DataRelation _relation;
 
 
 	internal void .ctor(DataTable table, FunctionId aggregateType, string columnName) { }

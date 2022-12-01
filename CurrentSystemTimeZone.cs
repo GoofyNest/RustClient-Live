@@ -1,6 +1,6 @@
 internal class CurrentSystemTimeZone : TimeZone // TypeDefIndex: 402
 {
-	private readonly TimeZoneInfo LocalTimeZone; 
+	private readonly TimeZoneInfo LocalTimeZone;
 
 
 	internal void .ctor() { }

@@ -1,15 +1,15 @@
-public struct ExternalAccountInfo // TypeDefIndex: 9579
+public struct ExternalAccountInfo // TypeDefIndex: 9581
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ProductUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AccountId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalAccountType <AccountIdType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <LastLoginTime>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ProductUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <AccountId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalAccountType <AccountIdType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <LastLoginTime>k__BackingField;
 
 	public ProductUserId ProductUserId { get; set; }
 	public Utf8String DisplayName { get; set; }
@@ -18,34 +18,34 @@ public struct ExternalAccountInfo // TypeDefIndex: 9579
 	public Nullable<DateTimeOffset> LastLoginTime { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ProductUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalAccountType get_AccountIdType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountIdType(ExternalAccountType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_LastLoginTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LastLoginTime(Nullable<DateTimeOffset> value) { }
 
 	internal void Set(ref ExternalAccountInfoInternal other) { }

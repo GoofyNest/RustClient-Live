@@ -1,6 +1,6 @@
 public class Time // TypeDefIndex: 3561
 {
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static float time { get; }
 	public static float deltaTime { get; }
 	public static float fixedTime { get; }
@@ -11,9 +11,9 @@ public class Time // TypeDefIndex: 3561
 	public static float smoothDeltaTime { get; }
 	public static float timeScale { get; set; }
 	public static int frameCount { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static int renderedFrameCount { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static float realtimeSinceStartup { get; }
 
 
@@ -49,7 +49,7 @@ public class Time // TypeDefIndex: 3561
 
 }
 
-public class Time : ConsoleSystem // TypeDefIndex: 13757
+public class Time : ConsoleSystem // TypeDefIndex: 13773
 {
 
 	public void .ctor() { }

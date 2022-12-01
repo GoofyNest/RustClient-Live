@@ -1,24 +1,24 @@
 internal sealed class Preprocessor : BaseProcessor // TypeDefIndex: 2268
 {
-	private string Xmlns; 
-	private string NsXsi; 
-	private string targetNamespace; 
-	private XmlSchema rootSchema; 
-	private XmlSchema currentSchema; 
-	private XmlSchemaForm elementFormDefault; 
-	private XmlSchemaForm attributeFormDefault; 
-	private XmlSchemaDerivationMethod blockDefault; 
-	private XmlSchemaDerivationMethod finalDefault; 
-	private Hashtable schemaLocations; 
-	private Hashtable chameleonSchemas; 
-	private Hashtable referenceNamespaces; 
-	private Hashtable processedExternals; 
-	private SortedList lockList; 
-	private XmlReaderSettings readerSettings; 
-	private XmlSchema rootSchemaForRedefine; 
-	private ArrayList redefinedList; 
-	private static XmlSchema builtInSchemaForXmlNS; 
-	private XmlResolver xmlResolver; 
+	private string Xmlns;
+	private string NsXsi;
+	private string targetNamespace;
+	private XmlSchema rootSchema;
+	private XmlSchema currentSchema;
+	private XmlSchemaForm elementFormDefault;
+	private XmlSchemaForm attributeFormDefault;
+	private XmlSchemaDerivationMethod blockDefault;
+	private XmlSchemaDerivationMethod finalDefault;
+	private Hashtable schemaLocations;
+	private Hashtable chameleonSchemas;
+	private Hashtable referenceNamespaces;
+	private Hashtable processedExternals;
+	private SortedList lockList;
+	private XmlReaderSettings readerSettings;
+	private XmlSchema rootSchemaForRedefine;
+	private ArrayList redefinedList;
+	private static XmlSchema builtInSchemaForXmlNS;
+	private XmlResolver xmlResolver;
 
 	internal XmlResolver XmlResolver { set; }
 	internal XmlReaderSettings ReaderSettings { set; }

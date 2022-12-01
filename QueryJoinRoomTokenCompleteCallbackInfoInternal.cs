@@ -1,11 +1,11 @@
-internal struct QueryJoinRoomTokenCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryJoinRoomTokenCompleteCallbackInfo>, ISettable<QueryJoinRoomTokenCompleteCallbackInfo>, IDisposable // TypeDefIndex: 8749
+internal struct QueryJoinRoomTokenCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryJoinRoomTokenCompleteCallbackInfo>, ISettable<QueryJoinRoomTokenCompleteCallbackInfo>, IDisposable // TypeDefIndex: 8751
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_ClientBaseUrl; 
-	private uint m_QueryId; 
-	private uint m_TokenCount; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_RoomName;
+	private IntPtr m_ClientBaseUrl;
+	private uint m_QueryId;
+	private uint m_TokenCount;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

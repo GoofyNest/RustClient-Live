@@ -1,10 +1,10 @@
 internal sealed class InternalDecoderBestFitFallbackBuffer : DecoderFallbackBuffer // TypeDefIndex: 435
 {
-	internal char cBestFit; 
-	internal int iCount; 
-	internal int iSize; 
-	private InternalDecoderBestFitFallback oFallback; 
-	private static object s_InternalSyncObject; 
+	internal char cBestFit;
+	internal int iCount;
+	internal int iSize;
+	private InternalDecoderBestFitFallback oFallback;
+	private static object s_InternalSyncObject;
 
 	private static object InternalSyncObject { get; }
 	public override int Remaining { get; }

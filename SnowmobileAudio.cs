@@ -1,38 +1,38 @@
-public class SnowmobileAudio : GroundVehicleAudio // TypeDefIndex: 11492
+public class SnowmobileAudio : GroundVehicleAudio // TypeDefIndex: 11499
 {
-	[HeaderAttribute] 
-	[SerializeField] 
-	private EngineAudioSet engineAudioSet; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private AnimationCurve skiGainCurve; 
-	[SerializeField] 
-	private SoundDefinition skiSlideSoundDef; 
-	[SerializeField] 
-	private SoundDefinition skiSlideSnowSoundDef; 
-	[SerializeField] 
-	private SoundDefinition skiSlideSandSoundDef; 
-	[SerializeField] 
-	private SoundDefinition skiSlideGrassSoundDef; 
-	[SerializeField] 
-	private SoundDefinition skiSlideWaterSoundDef; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private AnimationCurve movementGainCurve; 
-	[SerializeField] 
-	private SoundDefinition movementLoopDef; 
-	[SerializeField] 
-	private SoundDefinition suspensionLurchSoundDef; 
-	[SerializeField] 
-	private float suspensionLurchMinExtensionDelta; 
-	[SerializeField] 
-	private float suspensionLurchMinTimeBetweenSounds; 
-	private Snowmobile snowmobile; 
-	private Sound movementLoop; 
-	private SoundModulation.Modulator movementGainMod; 
-	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, float> prevWheelExtensionPercent; 
-	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, bool> wheelWasGrounded; 
-	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, float> lastSuspensionSoundPlayed; 
+	[HeaderAttribute]
+	[SerializeField]
+	private EngineAudioSet engineAudioSet;
+	[HeaderAttribute]
+	[SerializeField]
+	private AnimationCurve skiGainCurve;
+	[SerializeField]
+	private SoundDefinition skiSlideSoundDef;
+	[SerializeField]
+	private SoundDefinition skiSlideSnowSoundDef;
+	[SerializeField]
+	private SoundDefinition skiSlideSandSoundDef;
+	[SerializeField]
+	private SoundDefinition skiSlideGrassSoundDef;
+	[SerializeField]
+	private SoundDefinition skiSlideWaterSoundDef;
+	[HeaderAttribute]
+	[SerializeField]
+	private AnimationCurve movementGainCurve;
+	[SerializeField]
+	private SoundDefinition movementLoopDef;
+	[SerializeField]
+	private SoundDefinition suspensionLurchSoundDef;
+	[SerializeField]
+	private float suspensionLurchMinExtensionDelta;
+	[SerializeField]
+	private float suspensionLurchMinTimeBetweenSounds;
+	private Snowmobile snowmobile;
+	private Sound movementLoop;
+	private SoundModulation.Modulator movementGainMod;
+	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, float> prevWheelExtensionPercent;
+	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, bool> wheelWasGrounded;
+	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, float> lastSuspensionSoundPlayed;
 
 	protected override EngineAudioSet EngineAudioSet { get; set; }
 

@@ -1,23 +1,23 @@
-public class BaseMovement : MonoBehaviour // TypeDefIndex: 11403
+public class BaseMovement : MonoBehaviour // TypeDefIndex: 11409
 {
-	public bool adminCheat; 
-	public float adminSpeed; 
-	[CompilerGeneratedAttribute] 
-	private BasePlayer <Owner>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <InheritedVelocity>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <TargetMovement>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Running>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Ducking>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Crawling>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Grounded>k__BackingField; 
+	public bool adminCheat;
+	public float adminSpeed;
+	[CompilerGeneratedAttribute]
+	private BasePlayer <Owner>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <InheritedVelocity>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <TargetMovement>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Running>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Ducking>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Crawling>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Grounded>k__BackingField;
 	private const float RECENTLY_TELEPORTED_TIME = 1;
-	private float lastTeleportedTime; 
+	private float lastTeleportedTime;
 
 	public BasePlayer Owner { get; set; }
 	public Vector3 InheritedVelocity { get; set; }
@@ -33,46 +33,46 @@ public class BaseMovement : MonoBehaviour // TypeDefIndex: 11403
 	public bool RecentlyTeleported { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BasePlayer get_Owner() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Owner(BasePlayer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_InheritedVelocity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_InheritedVelocity(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_TargetMovement() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_TargetMovement(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Running() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Running(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Ducking() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Ducking(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Crawling() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Crawling(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Grounded() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Grounded(float value) { }
 
 	public bool get_IsRunning() { }

@@ -1,7 +1,7 @@
 internal sealed class LikeNode : BinaryNode // TypeDefIndex: 4250
 {
-	private int _kind; 
-	private string _pattern; 
+	private int _kind;
+	private string _pattern;
 
 
 	internal void .ctor(DataTable table, int op, ExpressionNode left, ExpressionNode right) { }

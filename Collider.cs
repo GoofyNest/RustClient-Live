@@ -4,7 +4,7 @@ public class Collider : Component // TypeDefIndex: 3926
 	public Rigidbody attachedRigidbody { get; }
 	public bool isTrigger { get; set; }
 	public Bounds bounds { get; }
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public PhysicMaterial sharedMaterial { get; set; }
 	public PhysicMaterial material { set; }
 
@@ -13,7 +13,7 @@ public class Collider : Component // TypeDefIndex: 3926
 
 	public void set_enabled(bool value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public Rigidbody get_attachedRigidbody() { }
 
 	public bool get_isTrigger() { }
@@ -28,14 +28,14 @@ public class Collider : Component // TypeDefIndex: 3926
 
 	public void set_sharedMaterial(PhysicMaterial value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void set_material(PhysicMaterial value) { }
 
 	private RaycastHit Raycast(Ray ray, float maxDistance, ref bool hasHit) { }
 
 	public bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void Internal_ClosestPointOnBounds(Vector3 point, ref Vector3 outPos, ref float distance) { }
 
 	public Vector3 ClosestPointOnBounds(Vector3 position) { }

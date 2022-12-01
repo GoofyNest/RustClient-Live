@@ -1,6 +1,6 @@
-public class DevEnvironment : DevControlsTab // TypeDefIndex: 11034
+public class DevEnvironment : DevControlsTab // TypeDefIndex: 11040
 {
-	public TOD_Sky sky; 
+	public TOD_Sky sky;
 
 
 	private void OnEnable() { }

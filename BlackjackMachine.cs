@@ -1,22 +1,22 @@
-public class BlackjackMachine : BaseCardGameEntity // TypeDefIndex: 10082
+public class BlackjackMachine : BaseCardGameEntity // TypeDefIndex: 10084
 {
-	private Option __menuOption_Menu_Play; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private GameObjectRef mainScreenPrefab; 
-	[SerializeField] 
-	private GameObjectRef smallScreenPrefab; 
-	[SerializeField] 
-	private Transform mainScreenParent; 
-	[SerializeField] 
-	private Transform[] smallScreenParents; 
-	private static int _maxbet; 
-	private BlackjackController controller; 
-	private BlackjackMainScreenUI mainScreenUI; 
-	private BlackjackSmallScreenUI[] smallScreenUIs; 
+	private Option __menuOption_Menu_Play;
+	[HeaderAttribute]
+	[SerializeField]
+	private GameObjectRef mainScreenPrefab;
+	[SerializeField]
+	private GameObjectRef smallScreenPrefab;
+	[SerializeField]
+	private Transform mainScreenParent;
+	[SerializeField]
+	private Transform[] smallScreenParents;
+	private static int _maxbet;
+	private BlackjackController controller;
+	private BlackjackMainScreenUI mainScreenUI;
+	private BlackjackSmallScreenUI[] smallScreenUIs;
 
 	public override bool HasMenuOptions { get; }
-	[ServerVar] 
+	[ServerVar]
 	public static int maxbet { get; set; }
 	protected override float MaxStorageInteractionDist { get; }
 
@@ -39,10 +39,10 @@ public class BlackjackMachine : BaseCardGameEntity // TypeDefIndex: 10082
 
 	public override void RefreshLocalPlayer(CardPlayerData localPlayerData) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public override void Menu_Play(BasePlayer player) { }
 
 	public void .ctor() { }

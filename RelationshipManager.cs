@@ -1,11 +1,11 @@
-public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6366
+public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6368
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong lastTeamIndex; 
-	public List<PlayerTeam> teamList; 
-	public int maxTeamSize; 
-	public List<RelationshipManager.PlayerRelationships> relationships; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong lastTeamIndex;
+	public List<PlayerTeam> teamList;
+	public int maxTeamSize;
+	public List<RelationshipManager.PlayerRelationships> relationships;
 
 
 	public static void ResetToPool(RelationshipManager instance) { }
@@ -62,17 +62,17 @@ public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6367
+public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6369
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong playerID; 
-	public int type; 
-	public int weight; 
-	public uint mugshotCrc; 
-	public string displayName; 
-	public string notes; 
-	public float timeSinceSeen; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong playerID;
+	public int type;
+	public int weight;
+	public uint mugshotCrc;
+	public string displayName;
+	public string notes;
+	public float timeSinceSeen;
 
 
 	public static void ResetToPool(RelationshipManager.PlayerRelationshipInfo instance) { }
@@ -129,12 +129,12 @@ public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPoo
 
 }
 
-public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6368
+public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6370
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong playerID; 
-	public List<RelationshipManager.PlayerRelationshipInfo> relations; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong playerID;
+	public List<RelationshipManager.PlayerRelationshipInfo> relations;
 
 
 	public static void ResetToPool(RelationshipManager.PlayerRelationships instance) { }
@@ -191,19 +191,19 @@ public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled
 
 }
 
-public class RelationshipManager : BaseEntity // TypeDefIndex: 10348
+public class RelationshipManager : BaseEntity // TypeDefIndex: 10352
 {
-	[ReplicatedVar] 
-	public static bool contacts; 
+	[ReplicatedVar]
+	public static bool contacts;
 	private const int MugshotResolution = 256;
 	private const int MugshotMaxFileSize = 65536;
 	private const float MugshotMaxDistance = 50;
-	public static RelationshipManager.PlayerRelationships localRelationships; 
-	[ClientVar] 
-	public static Vector3 mugshotOffset; 
-	[CompilerGeneratedAttribute] 
-	private static RelationshipManager <ClientInstance>k__BackingField; 
-	public static int clientMaxTeamSize; 
+	public static RelationshipManager.PlayerRelationships localRelationships;
+	[ClientVar]
+	public static Vector3 mugshotOffset;
+	[CompilerGeneratedAttribute]
+	private static RelationshipManager <ClientInstance>k__BackingField;
+	public static int clientMaxTeamSize;
 
 	public static RelationshipManager ClientInstance { get; set; }
 
@@ -212,10 +212,10 @@ public class RelationshipManager : BaseEntity // TypeDefIndex: 10348
 
 	public static void RequestUpdatedContacts() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_DoMugshot(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_RecieveLocalRelationships(BaseEntity.RPCMessage msg) { }
 
 	public static void ChangeRelationship(ulong targetPlayerID, RelationshipManager.RelationshipType newRelationshipType) { }
@@ -228,10 +228,10 @@ public class RelationshipManager : BaseEntity // TypeDefIndex: 10348
 
 	private static uint GetSteamIdHash(ulong requesterSteamId, ulong targetSteamId) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static RelationshipManager get_ClientInstance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_ClientInstance(RelationshipManager value) { }
 
 	public void OnEnable() { }
@@ -248,9 +248,9 @@ public class RelationshipManager : BaseEntity // TypeDefIndex: 10348
 
 }
 
-public enum RelationshipManager.RelationshipType // TypeDefIndex: 10349
+public enum RelationshipManager.RelationshipType // TypeDefIndex: 10353
 {
-	public int value__; 
+	public int value__;
 	public const RelationshipManager.RelationshipType NONE = 0;
 	public const RelationshipManager.RelationshipType Acquaintance = 1;
 	public const RelationshipManager.RelationshipType Friend = 2;
@@ -258,19 +258,19 @@ public enum RelationshipManager.RelationshipType // TypeDefIndex: 10349
 
 }
 
-public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerFileReceiver // TypeDefIndex: 10350
+public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerFileReceiver // TypeDefIndex: 10354
 {
-	public string displayName; 
-	public ulong player; 
-	public RelationshipManager.RelationshipType type; 
-	public int weight; 
-	public uint mugshotCrc; 
-	public string notes; 
-	public float lastSeenTime; 
-	private readonly Action mugshotTimeoutAction; 
-	private uint loadedMugshotCrc; 
-	public bool mugshotLoading; 
-	public Texture2D mugshotTexture; 
+	public string displayName;
+	public ulong player;
+	public RelationshipManager.RelationshipType type;
+	public int weight;
+	public uint mugshotCrc;
+	public string notes;
+	public float lastSeenTime;
+	private readonly Action mugshotTimeoutAction;
+	private uint loadedMugshotCrc;
+	public bool mugshotLoading;
+	public Texture2D mugshotTexture;
 
 	public bool IsMugshotLoaded { get; }
 
@@ -293,11 +293,11 @@ public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerF
 
 }
 
-public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIndex: 10351
+public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIndex: 10355
 {
-	public bool dirty; 
-	public ulong ownerPlayer; 
-	public Dictionary<ulong, RelationshipManager.PlayerRelationshipInfo> relations; 
+	public bool dirty;
+	public ulong ownerPlayer;
+	public Dictionary<ulong, RelationshipManager.PlayerRelationshipInfo> relations;
 
 
 	public RelationshipManager.PlayerRelationshipInfo GetRelations(ulong player) { }
@@ -310,11 +310,11 @@ public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIn
 
 }
 
-private sealed class RelationshipManager.<>c // TypeDefIndex: 10352
+private sealed class RelationshipManager.<>c // TypeDefIndex: 10356
 {
-	public static readonly RelationshipManager.<>c <>9; 
-	public static Func<ulong, ulong> <>9__11_0; 
-	public static Func<RelationshipManager.PlayerRelationshipInfo, ulong> <>9__11_1; 
+	public static readonly RelationshipManager.<>c <>9;
+	public static Func<ulong, ulong> <>9__11_0;
+	public static Func<RelationshipManager.PlayerRelationshipInfo, ulong> <>9__11_1;
 
 
 	private static void .cctor() { }

@@ -1,19 +1,19 @@
-public class Meta : ConsoleSystem // TypeDefIndex: 11002
+public class Meta : ConsoleSystem // TypeDefIndex: 11008
 {
 
-	[ServerVar] 
+	[ServerVar]
 	public static void add(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void if_true(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void if_false(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void reset_cycle(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void exec(ConsoleSystem.Arg args) { }
 
 	private static ConsoleSystem.Command Find(string name) { }

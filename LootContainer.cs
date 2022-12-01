@@ -1,23 +1,23 @@
-public class LootContainer : StorageContainer // TypeDefIndex: 11325
+public class LootContainer : StorageContainer // TypeDefIndex: 11331
 {
 
 public interface ISplashable
 
 public class LootContainer : StorageContainer
-	public bool destroyOnEmpty; 
-	public LootSpawn lootDefinition; 
-	public int maxDefinitionsToSpawn; 
-	public float minSecondsBetweenRefresh; 
-	public float maxSecondsBetweenRefresh; 
-	public bool initialLootSpawn; 
-	public float xpLootedScale; 
-	public float xpDestroyedScale; 
-	public bool BlockPlayerItemInput; 
-	public int scrapAmount; 
-	public string deathStat; 
-	public LootContainer.LootSpawnSlot[] LootSpawnSlots; 
-	public LootContainer.spawnType SpawnType; 
-	private bool localPlayerInvolved; 
+	public bool destroyOnEmpty;
+	public LootSpawn lootDefinition;
+	public int maxDefinitionsToSpawn;
+	public float minSecondsBetweenRefresh;
+	public float maxSecondsBetweenRefresh;
+	public bool initialLootSpawn;
+	public float xpLootedScale;
+	public float xpDestroyedScale;
+	public bool BlockPlayerItemInput;
+	public int scrapAmount;
+	public string deathStat;
+	public LootContainer.LootSpawnSlot[] LootSpawnSlots;
+	public LootContainer.spawnType SpawnType;
+	private bool localPlayerInvolved;
 
 	public bool shouldRefreshContents { get; }
 
@@ -36,9 +36,9 @@ public class LootContainer : StorageContainer
 
 }
 
-public enum LootContainer.spawnType // TypeDefIndex: 11326
+public enum LootContainer.spawnType // TypeDefIndex: 11332
 {
-	public int value__; 
+	public int value__;
 	public const LootContainer.spawnType GENERIC = 0;
 	public const LootContainer.spawnType PLAYER = 1;
 	public const LootContainer.spawnType TOWN = 2;
@@ -48,11 +48,11 @@ public enum LootContainer.spawnType // TypeDefIndex: 11326
 
 }
 
-public struct LootContainer.LootSpawnSlot // TypeDefIndex: 11327
+public struct LootContainer.LootSpawnSlot // TypeDefIndex: 11333
 {
-	public LootSpawn definition; 
-	public int numberToSpawn; 
-	public float probability; 
+	public LootSpawn definition;
+	public int numberToSpawn;
+	public float probability;
 
 }
 

@@ -1,6 +1,6 @@
 public sealed class SecurityPermissionAttribute : CodeAccessSecurityAttribute // TypeDefIndex: 917
 {
-	private SecurityPermissionFlag m_Flags; 
+	private SecurityPermissionFlag m_Flags;
 
 	public bool SkipVerification { set; }
 

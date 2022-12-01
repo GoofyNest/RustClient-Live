@@ -1,7 +1,7 @@
 public struct TransactionOptions // TypeDefIndex: 3993
 {
-	private IsolationLevel level; 
-	private TimeSpan timeout; 
+	private IsolationLevel level;
+	private TimeSpan timeout;
 
 
 	internal void .ctor(IsolationLevel level, TimeSpan timeout) { }

@@ -1,10 +1,10 @@
-public class ChippyBulletEntity : SpriteArcadeEntity // TypeDefIndex: 10490
+public class ChippyBulletEntity : SpriteArcadeEntity // TypeDefIndex: 10494
 {
-	public float speed; 
-	public float maxSpeed; 
-	public float radius; 
-	public float damage; 
-	public ArcadeEntity bulletImpact; 
+	public float speed;
+	public float maxSpeed;
+	public float radius;
+	public float damage;
+	public ArcadeEntity bulletImpact;
 
 
 	public void FixedUpdate() { }

@@ -1,16 +1,16 @@
-public class MemoryTraceWriter : ITraceWriter // TypeDefIndex: 5985
+public class MemoryTraceWriter : ITraceWriter // TypeDefIndex: 5987
 {
-	private readonly Queue<string> _traceMessages; 
-	[CompilerGeneratedAttribute] 
-	private TraceLevel <LevelFilter>k__BackingField; 
+	private readonly Queue<string> _traceMessages;
+	[CompilerGeneratedAttribute]
+	private TraceLevel <LevelFilter>k__BackingField;
 
 	public TraceLevel LevelFilter { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TraceLevel get_LevelFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LevelFilter(TraceLevel value) { }
 
 	public void .ctor() { }

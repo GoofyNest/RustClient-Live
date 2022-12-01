@@ -1,19 +1,19 @@
-internal sealed class InflateCodes // TypeDefIndex: 6987
+internal sealed class InflateCodes // TypeDefIndex: 6989
 {
-	internal int mode; 
-	internal int len; 
-	internal int[] tree; 
-	internal int tree_index; 
-	internal int need; 
-	internal int lit; 
-	internal int bitsToGet; 
-	internal int dist; 
-	internal byte lbits; 
-	internal byte dbits; 
-	internal int[] ltree; 
-	internal int ltree_index; 
-	internal int[] dtree; 
-	internal int dtree_index; 
+	internal int mode;
+	internal int len;
+	internal int[] tree;
+	internal int tree_index;
+	internal int need;
+	internal int lit;
+	internal int bitsToGet;
+	internal int dist;
+	internal byte lbits;
+	internal byte dbits;
+	internal int[] ltree;
+	internal int ltree_index;
+	internal int[] dtree;
+	internal int dtree_index;
 
 
 	internal void .ctor() { }

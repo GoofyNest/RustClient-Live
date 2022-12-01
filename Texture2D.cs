@@ -1,16 +1,16 @@
 public sealed class Texture2D : Texture // TypeDefIndex: 3446
 {
 	public TextureFormat format { get; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static Texture2D whiteTexture { get; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static Texture2D blackTexture { get; }
 	public override bool isReadable { get; }
 	public int requestedMipmapLevel { set; }
 	public int minimumMipmapLevel { set; }
 
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public TextureFormat get_format() { }
 
 	public static Texture2D get_whiteTexture() { }
@@ -19,66 +19,66 @@ public sealed class Texture2D : Texture // TypeDefIndex: 3446
 
 	public void Compress(bool highQuality) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Internal_CreateImpl(Texture2D mono, int w, int h, int mipCount, GraphicsFormat format, TextureCreationFlags flags, IntPtr nativeTex) { }
 
 	private static void Internal_Create(Texture2D mono, int w, int h, int mipCount, GraphicsFormat format, TextureCreationFlags flags, IntPtr nativeTex) { }
 
 	public override bool get_isReadable() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void ApplyImpl(bool updateMipmaps, bool makeNoLongerReadable) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private bool ResizeImpl(int width, int height) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetPixelImpl(int image, int x, int y, Color color) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private Color GetPixelImpl(int image, int x, int y) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private Color GetPixelBilinearImpl(int image, float u, float v) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private bool ResizeWithFormatImpl(int width, int height, TextureFormat format, bool hasMipMap) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void ReadPixelsImpl(Rect source, int destX, int destY, bool recalculateMipMaps) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetPixelsImpl(int x, int y, int w, int h, Color[] pixel, int miplevel, int frame) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private bool LoadRawTextureDataImpl(IntPtr data, int size) { }
 
 	private IntPtr GetWritableImageData(int frame) { }
 
 	private long GetRawImageDataSize() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_requestedMipmapLevel(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_minimumMipmapLevel(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void ClearRequestedMipmapLevel() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void ClearMinimumMipmapLevel() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetAllPixels32(Color32[] colors, int miplevel) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetBlockOfPixels32(int x, int y, int blockWidth, int blockHeight, Color32[] colors, int miplevel) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Color[] GetPixels(int x, int y, int blockWidth, int blockHeight, int miplevel) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Color32[] GetPixels32(int miplevel) { }
 
 	public Color32[] GetPixels32() { }
@@ -129,7 +129,7 @@ public sealed class Texture2D : Texture // TypeDefIndex: 3446
 
 	public void ReadPixels(Rect source, int destX, int destY, bool recalculateMipMaps) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void ReadPixels(Rect source, int destX, int destY) { }
 
 	public void SetPixels32(Color32[] colors, int miplevel) { }

@@ -1,8 +1,8 @@
-internal struct GlobalAchievementPercentagesReady_t : ICallbackData // TypeDefIndex: 5401
+internal struct GlobalAchievementPercentagesReady_t : ICallbackData // TypeDefIndex: 5403
 {
-	internal ulong GameID; 
-	internal Result Result; 
-	public static int _datasize; 
+	internal ulong GameID;
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,8 +1,8 @@
 public abstract class RC2 : SymmetricAlgorithm // TypeDefIndex: 973
 {
-	protected int EffectiveKeySizeValue; 
-	private static KeySizes[] s_legalBlockSizes; 
-	private static KeySizes[] s_legalKeySizes; 
+	protected int EffectiveKeySizeValue;
+	private static KeySizes[] s_legalBlockSizes;
+	private static KeySizes[] s_legalKeySizes;
 
 	public virtual int EffectiveKeySize { get; }
 	public override int KeySize { get; set; }

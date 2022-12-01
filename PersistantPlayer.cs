@@ -1,9 +1,9 @@
-public class PersistantPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6465
+public class PersistantPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6467
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<int> unlockedItems; 
-	public int protocolVersion; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<int> unlockedItems;
+	public int protocolVersion;
 
 
 	public static void ResetToPool(PersistantPlayer instance) { }

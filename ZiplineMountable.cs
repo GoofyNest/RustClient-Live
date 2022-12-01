@@ -1,8 +1,8 @@
-public class ZiplineMountable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6444
+public class ZiplineMountable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6446
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<VectorData> linePoints; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<VectorData> linePoints;
 
 
 	public static void ResetToPool(ZiplineMountable instance) { }
@@ -59,23 +59,23 @@ public class ZiplineMountable : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class ZiplineMountable : BaseMountable // TypeDefIndex: 10392
+public class ZiplineMountable : BaseMountable // TypeDefIndex: 10396
 {
-	public float MoveSpeed; 
-	public float ForwardAdditive; 
-	public CapsuleCollider ZipCollider; 
-	public Transform ZiplineGrabRoot; 
-	public Transform LeftHandIkPoint; 
-	public Transform RightHandIkPoint; 
-	public float SpeedUpTime; 
-	public bool EditorHoldInPlace; 
-	private List<Vector3> linePoints; 
+	public float MoveSpeed;
+	public float ForwardAdditive;
+	public CapsuleCollider ZipCollider;
+	public Transform ZiplineGrabRoot;
+	public Transform LeftHandIkPoint;
+	public Transform RightHandIkPoint;
+	public float SpeedUpTime;
+	public bool EditorHoldInPlace;
+	private List<Vector3> linePoints;
 	private const BaseEntity.Flags PushForward = 128;
-	public AnimationCurve MountPositionCurve; 
-	public AnimationCurve MountRotationCurve; 
-	public float MountEaseInTime; 
+	public AnimationCurve MountPositionCurve;
+	public AnimationCurve MountRotationCurve;
+	public float MountEaseInTime;
 	private const BaseEntity.Flags ShowHandle = 256;
-	private float forwardSpeedAnim; 
+	private float forwardSpeedAnim;
 
 	public override bool DisableLegsMeshAtExtremeViewAnglesInFirstPersonWithEyes { get; }
 	public override float FirstPersonWithArmsEyesLerp { get; }

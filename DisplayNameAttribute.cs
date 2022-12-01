@@ -1,7 +1,7 @@
 public class DisplayNameAttribute : Attribute // TypeDefIndex: 2696
 {
-	public static readonly DisplayNameAttribute Default; 
-	private string _displayName; 
+	public static readonly DisplayNameAttribute Default;
+	private string _displayName;
 
 	public virtual string DisplayName { get; }
 	protected string DisplayNameValue { get; }
@@ -25,9 +25,9 @@ public class DisplayNameAttribute : Attribute // TypeDefIndex: 2696
 
 }
 
-public sealed class DisplayNameAttribute : Attribute // TypeDefIndex: 13537
+public sealed class DisplayNameAttribute : Attribute // TypeDefIndex: 13553
 {
-	public readonly string displayName; 
+	public readonly string displayName;
 
 
 	public void .ctor(string displayName) { }

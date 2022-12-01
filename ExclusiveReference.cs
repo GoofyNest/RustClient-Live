@@ -1,8 +1,8 @@
 internal sealed class ExclusiveReference // TypeDefIndex: 2602
 {
-	private RegexRunner _ref; 
-	private object _obj; 
-	private int _locked; 
+	private RegexRunner _ref;
+	private object _obj;
+	private int _locked;
 
 
 	internal object Get() { }

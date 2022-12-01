@@ -1,4 +1,4 @@
-internal abstract class ReflectionDelegateFactory // TypeDefIndex: 5928
+internal abstract class ReflectionDelegateFactory // TypeDefIndex: 5930
 {
 
 	public Func<T, object> CreateGet<T>(MemberInfo memberInfo) { }

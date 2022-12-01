@@ -1,18 +1,18 @@
-public class WindZoneExManager : MonoBehaviour // TypeDefIndex: 12451
+public class WindZoneExManager : MonoBehaviour // TypeDefIndex: 12459
 {
-	public float maxAccumMain; 
-	public float maxAccumTurbulence; 
-	public float globalMainScale; 
-	public float globalTurbulenceScale; 
-	public Transform testPosition; 
+	public float maxAccumMain;
+	public float maxAccumTurbulence;
+	public float globalMainScale;
+	public float globalTurbulenceScale;
+	public Transform testPosition;
 	private const int MaxWindZones = 8;
 	private const float MaxWindZoneDistanceToCamera = 1000;
 	private const float MaxWindZoneSqrDistanceToCamera = 1000000;
-	private static HashSet<WindZoneEx> registeredZones; 
-	private static List<WindZoneExManager.CurrentZoneEntry> currentZones; 
-	private static Vector4[] windZoneInfoArray; 
-	private static Vector4[] windZoneParamArray; 
-	private static WindZoneExManager instance; 
+	private static HashSet<WindZoneEx> registeredZones;
+	private static List<WindZoneExManager.CurrentZoneEntry> currentZones;
+	private static Vector4[] windZoneInfoArray;
+	private static Vector4[] windZoneParamArray;
+	private static WindZoneExManager instance;
 
 	public static WindZoneExManager Instance { get; }
 
@@ -43,28 +43,28 @@ public class WindZoneExManager : MonoBehaviour // TypeDefIndex: 12451
 
 }
 
-private enum WindZoneExManager.TestMode // TypeDefIndex: 12452
+private enum WindZoneExManager.TestMode // TypeDefIndex: 12460
 {
-	public int value__; 
+	public int value__;
 	public const WindZoneExManager.TestMode Disabled = 0;
 	public const WindZoneExManager.TestMode Low = 1;
 
 }
 
-private struct WindZoneExManager.CurrentZoneEntry // TypeDefIndex: 12453
+private struct WindZoneExManager.CurrentZoneEntry // TypeDefIndex: 12461
 {
-	public WindZoneEx zone; 
-	public float distanceSqr; 
+	public WindZoneEx zone;
+	public float distanceSqr;
 
 
 	public void .ctor(WindZoneEx zone, float distance) { }
 
 }
 
-private sealed class WindZoneExManager.<>c // TypeDefIndex: 12454
+private sealed class WindZoneExManager.<>c // TypeDefIndex: 12462
 {
-	public static readonly WindZoneExManager.<>c <>9; 
-	public static Comparison<WindZoneExManager.CurrentZoneEntry> <>9__22_0; 
+	public static readonly WindZoneExManager.<>c <>9;
+	public static Comparison<WindZoneExManager.CurrentZoneEntry> <>9__22_0;
 
 
 	private static void .cctor() { }

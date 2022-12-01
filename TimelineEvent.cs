@@ -1,36 +1,36 @@
-internal struct TimelineEvent // TypeDefIndex: 7725
+internal struct TimelineEvent // TypeDefIndex: 7727
 {
-	[CompilerGeneratedAttribute] 
-	private string <Event>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <IconId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Previewable>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Event>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <IconId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Previewable>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string Event { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public string IconId { get; set; }
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public int Previewable { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Event() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Event(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_IconId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IconId(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Previewable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Previewable(int value) { }
 
 }

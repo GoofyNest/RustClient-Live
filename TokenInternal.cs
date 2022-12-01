@@ -1,16 +1,16 @@
-internal struct TokenInternal : IGettable<Token>, ISettable<Token>, IDisposable // TypeDefIndex: 9703
+internal struct TokenInternal : IGettable<Token>, ISettable<Token>, IDisposable // TypeDefIndex: 9705
 {
-	private int m_ApiVersion; 
-	private IntPtr m_App; 
-	private IntPtr m_ClientId; 
-	private IntPtr m_AccountId; 
-	private IntPtr m_AccessToken; 
-	private double m_ExpiresIn; 
-	private IntPtr m_ExpiresAt; 
-	private AuthTokenType m_AuthType; 
-	private IntPtr m_RefreshToken; 
-	private double m_RefreshExpiresIn; 
-	private IntPtr m_RefreshExpiresAt; 
+	private int m_ApiVersion;
+	private IntPtr m_App;
+	private IntPtr m_ClientId;
+	private IntPtr m_AccountId;
+	private IntPtr m_AccessToken;
+	private double m_ExpiresIn;
+	private IntPtr m_ExpiresAt;
+	private AuthTokenType m_AuthType;
+	private IntPtr m_RefreshToken;
+	private double m_RefreshExpiresIn;
+	private IntPtr m_RefreshExpiresAt;
 
 	public Utf8String App { get; set; }
 	public Utf8String ClientId { get; set; }

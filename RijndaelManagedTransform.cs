@@ -1,29 +1,29 @@
 public sealed class RijndaelManagedTransform : ICryptoTransform, IDisposable // TypeDefIndex: 978
 {
-	private CipherMode m_cipherMode; 
-	private PaddingMode m_paddingValue; 
-	private RijndaelManagedTransformMode m_transformMode; 
-	private int m_blockSizeBits; 
-	private int m_blockSizeBytes; 
-	private int m_inputBlockSize; 
-	private int m_outputBlockSize; 
-	private int[] m_encryptKeyExpansion; 
-	private int[] m_decryptKeyExpansion; 
-	private int m_Nr; 
-	private int m_Nb; 
-	private int m_Nk; 
-	private int[] m_encryptindex; 
-	private int[] m_decryptindex; 
-	private int[] m_IV; 
-	private int[] m_lastBlockBuffer; 
-	private byte[] m_depadBuffer; 
-	private byte[] m_shiftRegister; 
-	private static readonly byte[] s_Sbox; 
-	private static readonly int[] s_Rcon; 
-	private static readonly int[] s_T; 
-	private static readonly int[] s_TF; 
-	private static readonly int[] s_iT; 
-	private static readonly int[] s_iTF; 
+	private CipherMode m_cipherMode;
+	private PaddingMode m_paddingValue;
+	private RijndaelManagedTransformMode m_transformMode;
+	private int m_blockSizeBits;
+	private int m_blockSizeBytes;
+	private int m_inputBlockSize;
+	private int m_outputBlockSize;
+	private int[] m_encryptKeyExpansion;
+	private int[] m_decryptKeyExpansion;
+	private int m_Nr;
+	private int m_Nb;
+	private int m_Nk;
+	private int[] m_encryptindex;
+	private int[] m_decryptindex;
+	private int[] m_IV;
+	private int[] m_lastBlockBuffer;
+	private byte[] m_depadBuffer;
+	private byte[] m_shiftRegister;
+	private static readonly byte[] s_Sbox;
+	private static readonly int[] s_Rcon;
+	private static readonly int[] s_T;
+	private static readonly int[] s_TF;
+	private static readonly int[] s_iT;
+	private static readonly int[] s_iTF;
 
 	public int InputBlockSize { get; }
 	public int OutputBlockSize { get; }

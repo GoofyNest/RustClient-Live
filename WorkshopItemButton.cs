@@ -1,14 +1,14 @@
-internal class WorkshopItemButton : MonoBehaviour // TypeDefIndex: 7756
+internal class WorkshopItemButton : MonoBehaviour // TypeDefIndex: 7758
 {
-	public TextMeshProUGUI Name; 
-	public TextMeshProUGUI Description; 
-	public HttpImage Icon; 
-	public GameObject OldIndicator; 
-	public GameObject Incompatible; 
-	public GameObject ItemDownloaded; 
-	public GameObject ItemDownloadPending; 
-	public GameObject ItemDownloading; 
-	private IWorkshopContent Item; 
+	public TextMeshProUGUI Name;
+	public TextMeshProUGUI Description;
+	public HttpImage Icon;
+	public GameObject OldIndicator;
+	public GameObject Incompatible;
+	public GameObject ItemDownloaded;
+	public GameObject ItemDownloadPending;
+	public GameObject ItemDownloading;
+	private IWorkshopContent Item;
 
 
 	internal void Init(IWorkshopContent item) { }

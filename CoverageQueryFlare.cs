@@ -1,37 +1,37 @@
-public class CoverageQueryFlare : BaseMonoBehaviour, IClientComponent, IOnParentDestroying, ILOD // TypeDefIndex: 10532
+public class CoverageQueryFlare : BaseMonoBehaviour, IClientComponent, IOnParentDestroying, ILOD // TypeDefIndex: 10536
 {
-	public bool isDynamic; 
-	public bool timeShimmer; 
-	public bool positionalShimmer; 
-	public bool rotate; 
-	public float maxVisibleDistance; 
-	public bool lightScaled; 
-	public float dotMin; 
-	public float dotMax; 
-	public CoverageQueries.RadiusSpace coverageRadiusSpace; 
-	public float coverageRadius; 
-	public LODDistanceMode DistanceMode; 
+	public bool isDynamic;
+	public bool timeShimmer;
+	public bool positionalShimmer;
+	public bool rotate;
+	public float maxVisibleDistance;
+	public bool lightScaled;
+	public float dotMin;
+	public float dotMax;
+	public CoverageQueries.RadiusSpace coverageRadiusSpace;
+	public float coverageRadius;
+	public LODDistanceMode DistanceMode;
 	private const float tickRate = 0,03030303;
-	private static MaterialPropertyBlock block; 
-	private bool isCulled; 
-	private bool isOccluded; 
-	private int curlod; 
-	private CoverageQueries.Query query; 
-	private bool queryRegistered; 
-	private float privateRand; 
-	private bool force; 
-	private LODCell cell; 
-	private float currentDistance; 
-	private Renderer flareRenderer; 
-	private Renderer orbRenderer; 
-	private float startColorMultiplier; 
-	private float flareIntensity; 
-	private float visibleFraction; 
-	private bool destroying; 
-	private readonly int VisibleFraction_DotMin_DotMax_Rotate; 
-	private readonly int PShimmer_TShimmer_Seed_LightScale; 
-	private readonly int ColorMultID; 
-	private LODEnvironmentMode EnvironmentMode; 
+	private static MaterialPropertyBlock block;
+	private bool isCulled;
+	private bool isOccluded;
+	private int curlod;
+	private CoverageQueries.Query query;
+	private bool queryRegistered;
+	private float privateRand;
+	private bool force;
+	private LODCell cell;
+	private float currentDistance;
+	private Renderer flareRenderer;
+	private Renderer orbRenderer;
+	private float startColorMultiplier;
+	private float flareIntensity;
+	private float visibleFraction;
+	private bool destroying;
+	private readonly int VisibleFraction_DotMin_DotMax_Rotate;
+	private readonly int PShimmer_TShimmer_Seed_LightScale;
+	private readonly int ColorMultID;
+	private LODEnvironmentMode EnvironmentMode;
 
 	public float CurrentDistance { get; }
 

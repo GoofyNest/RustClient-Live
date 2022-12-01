@@ -1,20 +1,20 @@
 internal class BaseValidator // TypeDefIndex: 2140
 {
-	private XmlSchemaCollection schemaCollection; 
-	private IValidationEventHandling eventHandling; 
-	private XmlNameTable nameTable; 
-	private SchemaNames schemaNames; 
-	private PositionInfo positionInfo; 
-	private XmlResolver xmlResolver; 
-	private Uri baseUri; 
-	protected SchemaInfo schemaInfo; 
-	protected XmlValidatingReaderImpl reader; 
-	protected XmlQualifiedName elementName; 
-	protected ValidationState context; 
-	protected StringBuilder textValue; 
-	protected string textString; 
-	protected bool hasSibling; 
-	protected bool checkDatatype; 
+	private XmlSchemaCollection schemaCollection;
+	private IValidationEventHandling eventHandling;
+	private XmlNameTable nameTable;
+	private SchemaNames schemaNames;
+	private PositionInfo positionInfo;
+	private XmlResolver xmlResolver;
+	private Uri baseUri;
+	protected SchemaInfo schemaInfo;
+	protected XmlValidatingReaderImpl reader;
+	protected XmlQualifiedName elementName;
+	protected ValidationState context;
+	protected StringBuilder textValue;
+	protected string textString;
+	protected bool hasSibling;
+	protected bool checkDatatype;
 
 	public XmlValidatingReaderImpl Reader { get; }
 	public XmlSchemaCollection SchemaCollection { get; }

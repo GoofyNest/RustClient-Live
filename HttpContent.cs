@@ -1,9 +1,9 @@
-public abstract class HttpContent : IDisposable // TypeDefIndex: 5751
+public abstract class HttpContent : IDisposable // TypeDefIndex: 5753
 {
-	private HttpContent.FixedMemoryStream buffer; 
-	private Stream stream; 
-	private bool disposed; 
-	private HttpContentHeaders headers; 
+	private HttpContent.FixedMemoryStream buffer;
+	private Stream stream;
+	private bool disposed;
+	private HttpContentHeaders headers;
 
 	public HttpContentHeaders Headers { get; }
 	internal Nullable<long> LoadedBufferLength { get; }
@@ -19,7 +19,7 @@ public abstract class HttpContent : IDisposable // TypeDefIndex: 5751
 
 	public Task CopyToAsync(Stream stream, TransportContext context) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	protected virtual Task<Stream> CreateContentReadStreamAsync() { }
 
 	private static HttpContent.FixedMemoryStream CreateFixedMemoryStream(long maxBufferSize) { }
@@ -30,13 +30,13 @@ public abstract class HttpContent : IDisposable // TypeDefIndex: 5751
 
 	public Task LoadIntoBufferAsync() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task LoadIntoBufferAsync(long maxBufferSize) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<Stream> ReadAsStreamAsync() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<string> ReadAsStringAsync() { }
 
 	private static Encoding GetEncodingFromBuffer(byte[] buffer, int length, ref int preambleLength) { }
@@ -51,9 +51,9 @@ public abstract class HttpContent : IDisposable // TypeDefIndex: 5751
 
 }
 
-private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefIndex: 5752
+private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefIndex: 5754
 {
-	private readonly long maxSize; 
+	private readonly long maxSize;
 
 
 	public void .ctor(long maxSize) { }
@@ -66,63 +66,63 @@ private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefInde
 
 }
 
-private struct HttpContent.<CreateContentReadStreamAsync>d__12 : IAsyncStateMachine // TypeDefIndex: 5753
+private struct HttpContent.<CreateContentReadStreamAsync>d__12 : IAsyncStateMachine // TypeDefIndex: 5755
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Stream> <>t__builder; 
-	public HttpContent <>4__this; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Stream> <>t__builder;
+	public HttpContent <>4__this;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct HttpContent.<LoadIntoBufferAsync>d__17 : IAsyncStateMachine // TypeDefIndex: 5754
+private struct HttpContent.<LoadIntoBufferAsync>d__17 : IAsyncStateMachine // TypeDefIndex: 5756
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public HttpContent <>4__this; 
-	public long maxBufferSize; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public HttpContent <>4__this;
+	public long maxBufferSize;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct HttpContent.<ReadAsStreamAsync>d__18 : IAsyncStateMachine // TypeDefIndex: 5755
+private struct HttpContent.<ReadAsStreamAsync>d__18 : IAsyncStateMachine // TypeDefIndex: 5757
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Stream> <>t__builder; 
-	public HttpContent <>4__this; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Stream> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Stream> <>t__builder;
+	public HttpContent <>4__this;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Stream> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct HttpContent.<ReadAsStringAsync>d__20 : IAsyncStateMachine // TypeDefIndex: 5756
+private struct HttpContent.<ReadAsStringAsync>d__20 : IAsyncStateMachine // TypeDefIndex: 5758
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<string> <>t__builder; 
-	public HttpContent <>4__this; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<string> <>t__builder;
+	public HttpContent <>4__this;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

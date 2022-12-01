@@ -1,10 +1,10 @@
-internal struct QueryExternalAccountMappingsOptionsInternal : ISettable<QueryExternalAccountMappingsOptions>, IDisposable // TypeDefIndex: 9626
+internal struct QueryExternalAccountMappingsOptionsInternal : ISettable<QueryExternalAccountMappingsOptions>, IDisposable // TypeDefIndex: 9628
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private ExternalAccountType m_AccountIdType; 
-	private IntPtr m_ExternalAccountIds; 
-	private uint m_ExternalAccountIdCount; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private ExternalAccountType m_AccountIdType;
+	private IntPtr m_ExternalAccountIds;
+	private uint m_ExternalAccountIdCount;
 
 	public ProductUserId LocalUserId { set; }
 	public ExternalAccountType AccountIdType { set; }

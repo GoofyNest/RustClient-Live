@@ -1,16 +1,16 @@
-public class LookatHealth : MonoBehaviour // TypeDefIndex: 12858
+public class LookatHealth : MonoBehaviour // TypeDefIndex: 12872
 {
-	public static bool Enabled; 
-	public GameObject container; 
-	public Text textHealth; 
-	public Text textStability; 
-	public Image healthBar; 
-	public Image healthBarBG; 
-	public Color barBGColorNormal; 
-	public Color barBGColorUnstable; 
-	internal BaseEntity previousLookingAt; 
-	internal float idealWidth; 
-	internal Animator anim; 
+	public static bool Enabled;
+	public GameObject container;
+	public Text textHealth;
+	public Text textStability;
+	public Image healthBar;
+	public Image healthBarBG;
+	public Color barBGColorNormal;
+	public Color barBGColorUnstable;
+	internal BaseEntity previousLookingAt;
+	internal float idealWidth;
+	internal Animator anim;
 
 
 	private void Start() { }

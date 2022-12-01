@@ -1,9 +1,9 @@
-public class AnimatorLOD : LODComponent // TypeDefIndex: 11651
+public class AnimatorLOD : LODComponent // TypeDefIndex: 11658
 {
-	public float Distance; 
-	private Animator animator; 
-	private int curlod; 
-	private bool force; 
+	public float Distance;
+	private Animator animator;
+	private int curlod;
+	private bool force;
 
 
 	protected override void InitLOD() { }

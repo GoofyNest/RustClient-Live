@@ -1,7 +1,7 @@
 public sealed class TransactionScope // TypeDefIndex: 3994
 {
-	private static TransactionOptions defaultOptions; 
-	private bool completed; 
+	private static TransactionOptions defaultOptions;
+	private bool completed;
 
 	internal bool IsComplete { get; }
 

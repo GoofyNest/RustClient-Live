@@ -1,15 +1,15 @@
-public abstract class Graph : MonoBehaviour // TypeDefIndex: 12694
+public abstract class Graph : MonoBehaviour // TypeDefIndex: 12708
 {
-	public Material Material; 
-	public int Resolution; 
-	public Vector2 ScreenFill; 
-	public Vector2 ScreenOrigin; 
-	public Vector2 Pivot; 
-	public Rect Area; 
-	internal float CurrentValue; 
-	private int index; 
-	private float[] values; 
-	private float max; 
+	public Material Material;
+	public int Resolution;
+	public Vector2 ScreenFill;
+	public Vector2 ScreenOrigin;
+	public Vector2 Pivot;
+	public Rect Area;
+	internal float CurrentValue;
+	private int index;
+	private float[] values;
+	private float max;
 
 
 	protected abstract float GetValue();

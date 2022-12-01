@@ -1,10 +1,10 @@
 internal class DomNameTable // TypeDefIndex: 1946
 {
-	private XmlName[] entries; 
-	private int count; 
-	private int mask; 
-	private XmlDocument ownerDocument; 
-	private XmlNameTable nameTable; 
+	private XmlName[] entries;
+	private int count;
+	private int mask;
+	private XmlDocument ownerDocument;
+	private XmlNameTable nameTable;
 
 
 	public void .ctor(XmlDocument document) { }

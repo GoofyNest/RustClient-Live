@@ -1,8 +1,8 @@
-public class FoliageGridMeshData // TypeDefIndex: 13161
+public class FoliageGridMeshData // TypeDefIndex: 13176
 {
-	public List<FoliageGridMeshData.FoliageVertex> vertices; 
-	public List<int> triangles; 
-	public Bounds bounds; 
+	public List<FoliageGridMeshData.FoliageVertex> vertices;
+	public List<int> triangles;
+	public Bounds bounds;
 
 
 	public void Alloc() { }
@@ -19,15 +19,15 @@ public class FoliageGridMeshData // TypeDefIndex: 13161
 
 }
 
-public struct FoliageGridMeshData.FoliageVertex // TypeDefIndex: 13162
+public struct FoliageGridMeshData.FoliageVertex // TypeDefIndex: 13177
 {
-	public Vector3 position; 
-	public Vector3 normal; 
-	public Vector4 tangent; 
-	public Color32 color; 
-	public Vector2 uv; 
-	public Vector4 uv2; 
-	public static readonly VertexAttributeDescriptor[] VertexLayout; 
+	public Vector3 position;
+	public Vector3 normal;
+	public Vector4 tangent;
+	public Color32 color;
+	public Vector2 uv;
+	public Vector4 uv2;
+	public static readonly VertexAttributeDescriptor[] VertexLayout;
 
 
 	private static void .cctor() { }

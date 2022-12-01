@@ -1,16 +1,16 @@
-internal struct InfoInternal : IGettable<Info>, ISettable<Info>, IDisposable // TypeDefIndex: 8832
+internal struct InfoInternal : IGettable<Info>, ISettable<Info>, IDisposable // TypeDefIndex: 8834
 {
-	private int m_ApiVersion; 
-	private Status m_Status; 
-	private IntPtr m_UserId; 
-	private IntPtr m_ProductId; 
-	private IntPtr m_ProductVersion; 
-	private IntPtr m_Platform; 
-	private IntPtr m_RichText; 
-	private int m_RecordsCount; 
-	private IntPtr m_Records; 
-	private IntPtr m_ProductName; 
-	private IntPtr m_IntegratedPlatform; 
+	private int m_ApiVersion;
+	private Status m_Status;
+	private IntPtr m_UserId;
+	private IntPtr m_ProductId;
+	private IntPtr m_ProductVersion;
+	private IntPtr m_Platform;
+	private IntPtr m_RichText;
+	private int m_RecordsCount;
+	private IntPtr m_Records;
+	private IntPtr m_ProductName;
+	private IntPtr m_IntegratedPlatform;
 
 	public Status Status { get; set; }
 	public EpicAccountId UserId { get; set; }

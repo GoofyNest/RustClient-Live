@@ -1,7 +1,7 @@
 public class UTF8Encoding : Encoding // TypeDefIndex: 474
 {
-	private bool emitUTF8Identifier; 
-	private bool isThrowException; 
+	private bool emitUTF8Identifier;
+	private bool isThrowException;
 
 
 	public void .ctor() { }
@@ -16,31 +16,31 @@ public class UTF8Encoding : Encoding // TypeDefIndex: 474
 
 	public override int GetByteCount(string chars) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetByteCount(char* chars, int count) { }
 
 	public override int GetBytes(string s, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public override int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override string GetString(byte[] bytes, int index, int count) { }
 
 	internal override int GetByteCount(char* chars, int count, EncoderNLS baseEncoder) { }
@@ -81,7 +81,7 @@ public class UTF8Encoding : Encoding // TypeDefIndex: 474
 
 internal class UTF8Encoding.UTF8Encoder : EncoderNLS, ISerializable // TypeDefIndex: 475
 {
-	internal int surrogateChar; 
+	internal int surrogateChar;
 
 	internal override bool HasState { get; }
 
@@ -100,7 +100,7 @@ internal class UTF8Encoding.UTF8Encoder : EncoderNLS, ISerializable // TypeDefIn
 
 internal class UTF8Encoding.UTF8Decoder : DecoderNLS, ISerializable // TypeDefIndex: 476
 {
-	internal int bits; 
+	internal int bits;
 
 	internal override bool HasState { get; }
 

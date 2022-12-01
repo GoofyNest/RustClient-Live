@@ -11,7 +11,7 @@ internal class MouseCaptureDispatchingStrategy : IEventDispatchingStrategy // Ty
 
 private enum MouseCaptureDispatchingStrategy.EventBehavior // TypeDefIndex: 4671
 {
-	public int value__; 
+	public int value__;
 	public const MouseCaptureDispatchingStrategy.EventBehavior None = 0;
 	public const MouseCaptureDispatchingStrategy.EventBehavior IsCapturable = 1;
 	public const MouseCaptureDispatchingStrategy.EventBehavior IsSentExclusivelyToCapturingElement = 2;

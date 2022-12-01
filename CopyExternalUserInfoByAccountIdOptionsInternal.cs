@@ -1,9 +1,9 @@
-internal struct CopyExternalUserInfoByAccountIdOptionsInternal : ISettable<CopyExternalUserInfoByAccountIdOptions>, IDisposable // TypeDefIndex: 8298
+internal struct CopyExternalUserInfoByAccountIdOptionsInternal : ISettable<CopyExternalUserInfoByAccountIdOptions>, IDisposable // TypeDefIndex: 8300
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
-	private IntPtr m_AccountId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
+	private IntPtr m_AccountId;
 
 	public EpicAccountId LocalUserId { set; }
 	public EpicAccountId TargetUserId { set; }

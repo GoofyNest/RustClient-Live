@@ -1,18 +1,18 @@
-public class CoverageQueries : MonoBehaviour // TypeDefIndex: 13267
+public class CoverageQueries : MonoBehaviour // TypeDefIndex: 13282
 {
-	public bool debug; 
-	public float depthBias; 
-	private static List<CoverageQueries.Query> pool; 
-	private static List<CoverageQueries.Query> added; 
-	private static List<CoverageQueries.Query> reused; 
-	private static List<int> removed; 
-	private static List<int> changed; 
-	private static Queue<int> freed; 
-	private static CoverageQueries.BufferSet buffer; 
-	private Camera camera; 
-	private Material coverageMat; 
-	private static CoverageQueries instance; 
-	private static bool _debugShow; 
+	public bool debug;
+	public float depthBias;
+	private static List<CoverageQueries.Query> pool;
+	private static List<CoverageQueries.Query> added;
+	private static List<CoverageQueries.Query> reused;
+	private static List<int> removed;
+	private static List<int> changed;
+	private static Queue<int> freed;
+	private static CoverageQueries.BufferSet buffer;
+	private Camera camera;
+	private Material coverageMat;
+	private static CoverageQueries instance;
+	private static bool _debugShow;
 
 	public static CoverageQueries Instance { get; }
 	public static bool Supported { get; }
@@ -57,17 +57,17 @@ public class CoverageQueries : MonoBehaviour // TypeDefIndex: 13267
 
 }
 
-public class CoverageQueries.BufferSet // TypeDefIndex: 13268
+public class CoverageQueries.BufferSet // TypeDefIndex: 13283
 {
-	public int width; 
-	public int height; 
-	public Texture2D inputTexture; 
-	public RenderTexture resultTexture; 
-	public Color[] inputData; 
-	public Color32[] resultData; 
-	private Material coverageMat; 
+	public int width;
+	public int height;
+	public Texture2D inputTexture;
+	public RenderTexture resultTexture;
+	public Color[] inputData;
+	public Color32[] resultData;
+	private Material coverageMat;
 	private const int MaxAsyncGPUReadbackRequests = 10;
-	private Queue<AsyncGPUReadbackRequest> asyncRequests; 
+	private Queue<AsyncGPUReadbackRequest> asyncRequests;
 
 
 	public void Attach(Material coverageMat) { }
@@ -88,19 +88,19 @@ public class CoverageQueries.BufferSet // TypeDefIndex: 13268
 
 }
 
-public enum CoverageQueries.RadiusSpace // TypeDefIndex: 13269
+public enum CoverageQueries.RadiusSpace // TypeDefIndex: 13284
 {
-	public int value__; 
+	public int value__;
 	public const CoverageQueries.RadiusSpace ScreenNormalized = 0;
 	public const CoverageQueries.RadiusSpace World = 1;
 
 }
 
-public class CoverageQueries.Query // TypeDefIndex: 13270
+public class CoverageQueries.Query // TypeDefIndex: 13285
 {
-	public CoverageQueries.Query.Input input; 
-	public CoverageQueries.Query.Internal intern; 
-	public CoverageQueries.Query.Result result; 
+	public CoverageQueries.Query.Input input;
+	public CoverageQueries.Query.Internal intern;
+	public CoverageQueries.Query.Result result;
 
 	public bool IsRegistered { get; }
 
@@ -125,36 +125,36 @@ public class CoverageQueries.Query // TypeDefIndex: 13270
 
 }
 
-public struct CoverageQueries.Query.Input // TypeDefIndex: 13271
+public struct CoverageQueries.Query.Input // TypeDefIndex: 13286
 {
-	public Vector3 position; 
-	public CoverageQueries.RadiusSpace radiusSpace; 
-	public float radius; 
-	public int sampleCount; 
-	public float smoothingSpeed; 
+	public Vector3 position;
+	public CoverageQueries.RadiusSpace radiusSpace;
+	public float radius;
+	public int sampleCount;
+	public float smoothingSpeed;
 
 }
 
-public struct CoverageQueries.Query.Internal // TypeDefIndex: 13272
+public struct CoverageQueries.Query.Internal // TypeDefIndex: 13287
 {
-	public int id; 
+	public int id;
 
 
 	public void Reset() { }
 
 }
 
-public struct CoverageQueries.Query.Result // TypeDefIndex: 13273
+public struct CoverageQueries.Query.Result // TypeDefIndex: 13288
 {
-	public int passed; 
-	public float coverage; 
-	public float smoothCoverage; 
-	public float weightedCoverage; 
-	public float weightedSmoothCoverage; 
-	public bool originOccluded; 
-	public int frame; 
-	public float originVisibility; 
-	public float originSmoothVisibility; 
+	public int passed;
+	public float coverage;
+	public float smoothCoverage;
+	public float weightedCoverage;
+	public float weightedSmoothCoverage;
+	public bool originOccluded;
+	public int frame;
+	public float originVisibility;
+	public float originSmoothVisibility;
 
 
 	public void Reset() { }

@@ -1,11 +1,11 @@
 public sealed class ReaderWriterLock : CriticalFinalizerObject // TypeDefIndex: 829
 {
-	private int seq_num; 
-	private int state; 
-	private int readers; 
-	private int writer_lock_owner; 
-	private LockQueue writer_queue; 
-	private Hashtable reader_locks; 
+	private int seq_num;
+	private int state;
+	private int readers;
+	private int writer_lock_owner;
+	private LockQueue writer_queue;
+	private Hashtable reader_locks;
 
 
 	public void .ctor() { }
@@ -16,7 +16,7 @@ public sealed class ReaderWriterLock : CriticalFinalizerObject // TypeDefIndex: 
 
 	private void AcquireWriterLock(int millisecondsTimeout, int initialLockCount) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void ReleaseWriterLock() { }
 
 	private void ReleaseWriterLock(int releaseCount) { }

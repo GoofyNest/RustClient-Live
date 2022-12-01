@@ -1,7 +1,7 @@
-public class SirenLight : IOEntity // TypeDefIndex: 10437
+public class SirenLight : IOEntity // TypeDefIndex: 10441
 {
-	public GameObject lightObj; 
-	public float speed; 
+	public GameObject lightObj;
+	public float speed;
 
 
 	public override void ResetState() { }

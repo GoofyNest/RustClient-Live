@@ -1,6 +1,6 @@
-public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12158
+public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12165
 {
-	internal int res; 
+	internal int res;
 
 
 	public void ApplyFilter(float normX, float normZ, float radius, float fade, Action<int, int, float> action) { }
@@ -41,15 +41,15 @@ public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12158
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12159
+private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12166
 {
-	public Vector2i base_min; 
-	public Vector2i base_count; 
-	public TerrainMap <>4__this; 
-	public Vector2i v0; 
-	public Vector2i v1; 
-	public Vector2i v2; 
-	public Action<int, int> action; 
+	public Vector2i base_min;
+	public Vector2i base_count;
+	public TerrainMap <>4__this;
+	public Vector2i v0;
+	public Vector2i v1;
+	public Vector2i v2;
+	public Action<int, int> action;
 
 
 	public void .ctor() { }
@@ -58,17 +58,17 @@ private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12159
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12160
+private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12167
 {
-	public Vector2i base_min; 
-	public Vector2i size_y; 
-	public Vector2i size_x; 
-	public TerrainMap <>4__this; 
-	public Vector2i v0; 
-	public Vector2i v1; 
-	public Vector2i v2; 
-	public Vector2i v3; 
-	public Action<int, int> action; 
+	public Vector2i base_min;
+	public Vector2i size_y;
+	public Vector2i size_x;
+	public TerrainMap <>4__this;
+	public Vector2i v0;
+	public Vector2i v1;
+	public Vector2i v2;
+	public Vector2i v3;
+	public Action<int, int> action;
 
 
 	public void .ctor() { }

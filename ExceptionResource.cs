@@ -1,6 +1,6 @@
 internal enum ExceptionResource // TypeDefIndex: 310
 {
-	public int value__; 
+	public int value__;
 	public const ExceptionResource Argument_ImplementIComparable = 0;
 	public const ExceptionResource Argument_InvalidType = 1;
 	public const ExceptionResource Argument_InvalidArgumentForComparison = 2;

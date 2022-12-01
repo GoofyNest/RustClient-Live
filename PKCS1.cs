@@ -1,9 +1,9 @@
 internal sealed class PKCS1 // TypeDefIndex: 70
 {
-	private static byte[] emptySHA1; 
-	private static byte[] emptySHA256; 
-	private static byte[] emptySHA384; 
-	private static byte[] emptySHA512; 
+	private static byte[] emptySHA1;
+	private static byte[] emptySHA256;
+	private static byte[] emptySHA384;
+	private static byte[] emptySHA512;
 
 
 	private static bool Compare(byte[] array1, byte[] array2) { }
@@ -28,10 +28,10 @@ internal sealed class PKCS1 // TypeDefIndex: 70
 
 public sealed class PKCS1 // TypeDefIndex: 1757
 {
-	private static byte[] emptySHA1; 
-	private static byte[] emptySHA256; 
-	private static byte[] emptySHA384; 
-	private static byte[] emptySHA512; 
+	private static byte[] emptySHA1;
+	private static byte[] emptySHA256;
+	private static byte[] emptySHA384;
+	private static byte[] emptySHA512;
 
 
 	internal static string HashNameFromOid(string oid, bool throwOnError = True) { }

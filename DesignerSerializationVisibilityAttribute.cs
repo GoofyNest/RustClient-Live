@@ -1,10 +1,10 @@
 public sealed class DesignerSerializationVisibilityAttribute : Attribute // TypeDefIndex: 2695
 {
-	public static readonly DesignerSerializationVisibilityAttribute Content; 
-	public static readonly DesignerSerializationVisibilityAttribute Hidden; 
-	public static readonly DesignerSerializationVisibilityAttribute Visible; 
-	public static readonly DesignerSerializationVisibilityAttribute Default; 
-	private DesignerSerializationVisibility visibility; 
+	public static readonly DesignerSerializationVisibilityAttribute Content;
+	public static readonly DesignerSerializationVisibilityAttribute Hidden;
+	public static readonly DesignerSerializationVisibilityAttribute Visible;
+	public static readonly DesignerSerializationVisibilityAttribute Default;
+	private DesignerSerializationVisibility visibility;
 
 	public DesignerSerializationVisibility Visibility { get; }
 

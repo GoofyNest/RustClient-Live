@@ -1,6 +1,6 @@
 public enum CallingConventions // TypeDefIndex: 522
 {
-	public int value__; 
+	public int value__;
 	public const CallingConventions Standard = 1;
 	public const CallingConventions VarArgs = 2;
 	public const CallingConventions Any = 3;

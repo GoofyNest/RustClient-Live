@@ -1,6 +1,6 @@
 public class HMACSHA384 : HMAC // TypeDefIndex: 965
 {
-	private bool m_useLegacyBlockSize; 
+	private bool m_useLegacyBlockSize;
 
 	private int BlockSize { get; }
 

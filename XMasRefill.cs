@@ -1,14 +1,14 @@
-public class XMasRefill : BaseEntity // TypeDefIndex: 10389
+public class XMasRefill : BaseEntity // TypeDefIndex: 10393
 {
-	public GameObjectRef[] giftPrefabs; 
-	public List<BasePlayer> goodKids; 
-	public List<Stocking> stockings; 
-	public AudioSource bells; 
+	public GameObjectRef[] giftPrefabs;
+	public List<BasePlayer> goodKids;
+	public List<Stocking> stockings;
+	public AudioSource bells;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void PlayBells() { }
 
 	public void .ctor() { }

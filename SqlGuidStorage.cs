@@ -1,6 +1,6 @@
 internal sealed class SqlGuidStorage : DataStorage // TypeDefIndex: 4424
 {
-	private SqlGuid[] _values; 
+	private SqlGuid[] _values;
 
 
 	public void .ctor(DataColumn column) { }

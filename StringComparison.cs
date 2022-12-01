@@ -1,6 +1,6 @@
 public enum StringComparison // TypeDefIndex: 392
 {
-	public int value__; 
+	public int value__;
 	public const StringComparison CurrentCulture = 0;
 	public const StringComparison CurrentCultureIgnoreCase = 1;
 	public const StringComparison InvariantCulture = 2;

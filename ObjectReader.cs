@@ -1,29 +1,29 @@
 internal sealed class ObjectReader // TypeDefIndex: 1112
 {
-	internal Stream m_stream; 
-	internal ISurrogateSelector m_surrogates; 
-	internal StreamingContext m_context; 
-	internal ObjectManager m_objectManager; 
-	internal InternalFE formatterEnums; 
-	internal SerializationBinder m_binder; 
-	internal long topId; 
-	internal bool bSimpleAssembly; 
-	internal object handlerObject; 
-	internal object m_topObject; 
-	internal Header[] headers; 
-	internal HeaderHandler handler; 
-	internal SerObjectInfoInit serObjectInfoInit; 
-	internal IFormatterConverter m_formatterConverter; 
-	internal SerStack stack; 
-	private SerStack valueFixupStack; 
-	internal object[] crossAppDomainArray; 
-	private bool bFullDeserialization; 
-	private bool bOldFormatDetected; 
-	private IntSizedArray valTypeObjectIdTable; 
-	private NameCache typeCache; 
-	private string previousAssemblyString; 
-	private string previousName; 
-	private Type previousType; 
+	internal Stream m_stream;
+	internal ISurrogateSelector m_surrogates;
+	internal StreamingContext m_context;
+	internal ObjectManager m_objectManager;
+	internal InternalFE formatterEnums;
+	internal SerializationBinder m_binder;
+	internal long topId;
+	internal bool bSimpleAssembly;
+	internal object handlerObject;
+	internal object m_topObject;
+	internal Header[] headers;
+	internal HeaderHandler handler;
+	internal SerObjectInfoInit serObjectInfoInit;
+	internal IFormatterConverter m_formatterConverter;
+	internal SerStack stack;
+	private SerStack valueFixupStack;
+	internal object[] crossAppDomainArray;
+	private bool bFullDeserialization;
+	private bool bOldFormatDetected;
+	private IntSizedArray valTypeObjectIdTable;
+	private NameCache typeCache;
+	private string previousAssemblyString;
+	private string previousName;
+	private Type previousType;
 
 	private SerStack ValueFixupStack { get; }
 	internal object TopObject { get; set; }
@@ -99,8 +99,8 @@ internal sealed class ObjectReader // TypeDefIndex: 1112
 
 internal class ObjectReader.TypeNAssembly // TypeDefIndex: 1113
 {
-	public Type type; 
-	public string assemblyName; 
+	public Type type;
+	public string assemblyName;
 
 
 	public void .ctor() { }
@@ -109,7 +109,7 @@ internal class ObjectReader.TypeNAssembly // TypeDefIndex: 1113
 
 internal sealed class ObjectReader.TopLevelAssemblyTypeResolver // TypeDefIndex: 1114
 {
-	private Assembly m_topLevelAssembly; 
+	private Assembly m_topLevelAssembly;
 
 
 	public void .ctor(Assembly topLevelAssembly) { }

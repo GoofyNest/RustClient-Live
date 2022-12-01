@@ -1,4 +1,4 @@
-public sealed class NoteOnEvent : NoteEvent // TypeDefIndex: 7541
+public sealed class NoteOnEvent : NoteEvent // TypeDefIndex: 7543
 {
 
 	public void .ctor() { }

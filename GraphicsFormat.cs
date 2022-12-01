@@ -1,6 +1,6 @@
 public enum GraphicsFormat // TypeDefIndex: 3907
 {
-	public int value__; 
+	public int value__;
 	public const GraphicsFormat None = 0;
 	public const GraphicsFormat R8_SRGB = 1;
 	public const GraphicsFormat R8G8_SRGB = 2;
@@ -85,12 +85,12 @@ public enum GraphicsFormat // TypeDefIndex: 3907
 	public const GraphicsFormat R10G10B10_XRUNormPack32 = 84;
 	public const GraphicsFormat A10R10G10B10_XRSRGBPack32 = 85;
 	public const GraphicsFormat A10R10G10B10_XRUNormPack32 = 86;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const GraphicsFormat RGB_DXT1_SRGB = 96;
 	public const GraphicsFormat RGBA_DXT1_SRGB = 96;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const GraphicsFormat RGB_DXT1_UNorm = 97;
 	public const GraphicsFormat RGBA_DXT1_UNorm = 97;
 	public const GraphicsFormat RGBA_DXT3_SRGB = 98;

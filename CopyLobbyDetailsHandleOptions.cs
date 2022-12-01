@@ -1,24 +1,24 @@
-public struct CopyLobbyDetailsHandleOptions // TypeDefIndex: 9087
+public struct CopyLobbyDetailsHandleOptions // TypeDefIndex: 9089
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LobbyId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LobbyId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
 
 	public Utf8String LobbyId { get; set; }
 	public ProductUserId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LobbyId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
 }

@@ -1,8 +1,8 @@
-public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6316
+public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6318
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<int> itemIds; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<int> itemIds;
 
 
 	public static void ResetToPool(FrankensteinTable instance) { }
@@ -59,21 +59,21 @@ public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class FrankensteinTable : StorageContainer // TypeDefIndex: 10110
+public class FrankensteinTable : StorageContainer // TypeDefIndex: 10112
 {
-	private Option __menuOption_MenuSleepFrankenstein; 
-	private Option __menuOption_MenuWakeFrankenstein; 
-	public GameObjectRef FrankensteinPrefab; 
-	public Transform SpawnLocation; 
-	public ItemDefinition WeaponItem; 
-	public List<ItemDefinition> HeadItems; 
-	public List<ItemDefinition> TorsoItems; 
-	public List<ItemDefinition> LegItems; 
-	[HideInInspector] 
-	public List<ItemDefinition> ItemsToUse; 
-	public FrankensteinTableVisuals TableVisuals; 
-	[HeaderAttribute] 
-	public float TableDownDuration; 
+	private Option __menuOption_MenuSleepFrankenstein;
+	private Option __menuOption_MenuWakeFrankenstein;
+	public GameObjectRef FrankensteinPrefab;
+	public Transform SpawnLocation;
+	public ItemDefinition WeaponItem;
+	public List<ItemDefinition> HeadItems;
+	public List<ItemDefinition> TorsoItems;
+	public List<ItemDefinition> LegItems;
+	[HideInInspector]
+	public List<ItemDefinition> ItemsToUse;
+	public FrankensteinTableVisuals TableVisuals;
+	[HeaderAttribute]
+	public float TableDownDuration;
 
 	public override bool HasMenuOptions { get; }
 
@@ -92,18 +92,18 @@ public class FrankensteinTable : StorageContainer // TypeDefIndex: 10110
 
 	public void Create() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
-	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
+	[BaseEntity.Menu.Icon]
 	public void MenuWakeFrankenstein(BasePlayer ply) { }
 
 	public bool CanWake(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
-	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
+	[BaseEntity.Menu.Icon]
 	public void MenuSleepFrankenstein(BasePlayer ply) { }
 
 	public bool CanSleep(BasePlayer player) { }
@@ -118,7 +118,7 @@ public class FrankensteinTable : StorageContainer // TypeDefIndex: 10110
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CL_WakeFrankenstein(BaseEntity.RPCMessage msg) { }
 
 	public void RefreshVisuals() { }

@@ -1,11 +1,11 @@
-public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6338
+public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6340
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 aimPos; 
-	public Vector3 aimDir; 
-	public uint targetID; 
-	public List<PlayerNameID> users; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 aimPos;
+	public Vector3 aimDir;
+	public uint targetID;
+	public List<PlayerNameID> users;
 
 
 	public static void ResetToPool(AutoTurret instance) { }
@@ -62,56 +62,56 @@ public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 633
 
 }
 
-public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 10025
+public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 10027
 {
-	private Option __menuOption_Menu_AssignToFriend; 
-	private Option __menuOption_Menu_MaxAuth; 
-	private Option __menuOption_MenuAuthorize; 
-	private Option __menuOption_MenuClearList; 
-	private Option __menuOption_MenuDeauthorize; 
-	private Option __menuOption_MenuTurretAttackAll; 
-	private Option __menuOption_MenuTurretPeacekeeper; 
-	private Option __menuOption_MenuTurretRotate; 
-	public GameObjectRef gun_fire_effect; 
-	public GameObjectRef bulletEffect; 
-	public float bulletSpeed; 
-	public AmbienceEmitter ambienceEmitter; 
-	public GameObject assignDialog; 
-	private SoundModulation.Modulator turnSoundModulator; 
-	private Sound turnLoop; 
-	private float nextFocusSound; 
-	private bool wasTurning; 
-	private Quaternion lastYaw; 
-	private BasePlayer playerController; 
-	private string rcIdentifier; 
-	private Vector3 initialAimDir; 
-	public float rcTurnSensitivity; 
-	public Transform RCEyes; 
-	public TargetTrigger targetTrigger; 
-	public Transform socketTransform; 
-	public BaseCombatEntity target; 
-	public Transform eyePos; 
-	public Transform muzzlePos; 
-	public Vector3 aimDir; 
-	public Transform gun_yaw; 
-	public Transform gun_pitch; 
-	public float sightRange; 
-	public SoundDefinition turnLoopDef; 
-	public SoundDefinition movementChangeDef; 
-	public SoundDefinition ambientLoopDef; 
-	public SoundDefinition focusCameraDef; 
-	public float focusSoundFreqMin; 
-	public float focusSoundFreqMax; 
-	public GameObjectRef peacekeeperToggleSound; 
-	public GameObjectRef onlineSound; 
-	public GameObjectRef offlineSound; 
-	public GameObjectRef targetAcquiredEffect; 
-	public GameObjectRef targetLostEffect; 
-	public GameObjectRef reloadEffect; 
-	public float aimCone; 
+	private Option __menuOption_Menu_AssignToFriend;
+	private Option __menuOption_Menu_MaxAuth;
+	private Option __menuOption_MenuAuthorize;
+	private Option __menuOption_MenuClearList;
+	private Option __menuOption_MenuDeauthorize;
+	private Option __menuOption_MenuTurretAttackAll;
+	private Option __menuOption_MenuTurretPeacekeeper;
+	private Option __menuOption_MenuTurretRotate;
+	public GameObjectRef gun_fire_effect;
+	public GameObjectRef bulletEffect;
+	public float bulletSpeed;
+	public AmbienceEmitter ambienceEmitter;
+	public GameObject assignDialog;
+	private SoundModulation.Modulator turnSoundModulator;
+	private Sound turnLoop;
+	private float nextFocusSound;
+	private bool wasTurning;
+	private Quaternion lastYaw;
+	private BasePlayer playerController;
+	private string rcIdentifier;
+	private Vector3 initialAimDir;
+	public float rcTurnSensitivity;
+	public Transform RCEyes;
+	public TargetTrigger targetTrigger;
+	public Transform socketTransform;
+	public BaseCombatEntity target;
+	public Transform eyePos;
+	public Transform muzzlePos;
+	public Vector3 aimDir;
+	public Transform gun_yaw;
+	public Transform gun_pitch;
+	public float sightRange;
+	public SoundDefinition turnLoopDef;
+	public SoundDefinition movementChangeDef;
+	public SoundDefinition ambientLoopDef;
+	public SoundDefinition focusCameraDef;
+	public float focusSoundFreqMin;
+	public float focusSoundFreqMax;
+	public GameObjectRef peacekeeperToggleSound;
+	public GameObjectRef onlineSound;
+	public GameObjectRef offlineSound;
+	public GameObjectRef targetAcquiredEffect;
+	public GameObjectRef targetLostEffect;
+	public GameObjectRef reloadEffect;
+	public float aimCone;
 	public const BaseEntity.Flags Flag_Equipped = 512;
 	public const BaseEntity.Flags Flag_MaxAuths = 1024;
-	public List<PlayerNameID> authorizedPlayers; 
+	public List<PlayerNameID> authorizedPlayers;
 
 	public override bool HasMenuOptions { get; }
 	public virtual bool RequiresMouse { get; }
@@ -135,72 +135,72 @@ public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex
 
 	private void UpdateSounds(bool didTurn) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_ReceiveAimDir(BaseEntity.RPCMessage rpc) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_MaxAuth(BasePlayer player) { }
 
 	public bool MenuMaxAuth_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuAuthorize(BasePlayer player) { }
 
 	public bool MenuAuthorize_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDeauthorize(BasePlayer player) { }
 
 	public bool MenuDeauthorize_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuClearList(BasePlayer player) { }
 
 	public bool MenuClearList_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuTurretRotate(BasePlayer player) { }
 
 	public bool MenuTurretRotate_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuTurretPeacekeeper(BasePlayer player) { }
 
 	public bool MenuTurretPeacekeeper_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuTurretAttackAll(BasePlayer player) { }
 
 	public bool MenuTurretAttackAll_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_AssignToFriend(BasePlayer player) { }
 
 	public virtual bool Menu_AssignToFriend_Test(BasePlayer player) { }
@@ -267,23 +267,23 @@ public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <Menu_AssignToFriend>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Menu_AssignToFriend>
 
 }
 
-public static class AutoTurret.TurretFlags // TypeDefIndex: 10026
+public static class AutoTurret.TurretFlags // TypeDefIndex: 10028
 {
 	public const BaseEntity.Flags Peacekeeper = 128;
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10027
+private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10029
 {
-	public ulong id; 
+	public ulong id;
 
 
 	public void .ctor() { }
@@ -292,9 +292,9 @@ private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10027
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 10028
+private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 10030
 {
-	public BasePlayer player; 
+	public BasePlayer player;
 
 
 	public void .ctor() { }

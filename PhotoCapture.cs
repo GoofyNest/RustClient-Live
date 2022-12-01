@@ -1,39 +1,39 @@
 public class PhotoCapture : IDisposable // TypeDefIndex: 3610
 {
-	internal IntPtr m_NativePtr; 
-	private static readonly long HR_SUCCESS; 
+	internal IntPtr m_NativePtr;
+	private static readonly long HR_SUCCESS;
 
 
 	private static PhotoCapture.PhotoCaptureResult MakeCaptureResult(long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnCreatedResourceDelegate(PhotoCapture.OnCaptureResourceCreatedCallback callback, IntPtr nativePtr) { }
 
 	private void .ctor(IntPtr nativeCaptureObject) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnPhotoModeStartedDelegate(PhotoCapture.OnPhotoModeStartedCallback callback, long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnPhotoModeStoppedDelegate(PhotoCapture.OnPhotoModeStoppedCallback callback, long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnCapturedPhotoToDiskDelegate(PhotoCapture.OnCapturedToDiskCallback callback, long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnCapturedPhotoToMemoryDelegate(PhotoCapture.OnCapturedToMemoryCallback callback, long hResult, IntPtr photoCaptureFramePtr) { }
 
 	public void Dispose() { }
 
-	[NativeNameAttribute] 
-	[NativeConditionalAttribute] 
+	[NativeNameAttribute]
+	[NativeConditionalAttribute]
 	private void Dispose_Internal() { }
 
 	protected override void Finalize() { }
 
-	[NativeConditionalAttribute] 
-	[NativeNameAttribute] 
-	[ThreadAndSerializationSafeAttribute] 
+	[NativeConditionalAttribute]
+	[NativeNameAttribute]
+	[ThreadAndSerializationSafeAttribute]
 	private void DisposeThreaded_Internal() { }
 
 	private static void .cctor() { }
@@ -42,7 +42,7 @@ public class PhotoCapture : IDisposable // TypeDefIndex: 3610
 
 public enum PhotoCapture.CaptureResultType // TypeDefIndex: 3611
 {
-	public int value__; 
+	public int value__;
 	public const PhotoCapture.CaptureResultType Success = 0;
 	public const PhotoCapture.CaptureResultType UnknownError = 1;
 
@@ -50,8 +50,8 @@ public enum PhotoCapture.CaptureResultType // TypeDefIndex: 3611
 
 public struct PhotoCapture.PhotoCaptureResult // TypeDefIndex: 3612
 {
-	public PhotoCapture.CaptureResultType resultType; 
-	public long hResult; 
+	public PhotoCapture.CaptureResultType resultType;
+	public long hResult;
 
 }
 

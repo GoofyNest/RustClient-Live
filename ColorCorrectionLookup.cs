@@ -1,9 +1,9 @@
-public class ColorCorrectionLookup : PostEffectsBase // TypeDefIndex: 8190
+public class ColorCorrectionLookup : PostEffectsBase // TypeDefIndex: 8192
 {
-	public Shader shader; 
-	private Material material; 
-	public Texture3D converted3DLut; 
-	public string basedOnTempTex; 
+	public Shader shader;
+	private Material material;
+	public Texture3D converted3DLut;
+	public string basedOnTempTex;
 
 
 	public override bool CheckResources() { }

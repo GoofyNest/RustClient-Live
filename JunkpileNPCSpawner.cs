@@ -1,7 +1,7 @@
-public class JunkpileNPCSpawner : NPCSpawner // TypeDefIndex: 11746
+public class JunkpileNPCSpawner : NPCSpawner // TypeDefIndex: 11753
 {
-	[HeaderAttribute] 
-	public bool UseSpawnChance; 
+	[HeaderAttribute]
+	public bool UseSpawnChance;
 
 
 	public void .ctor() { }

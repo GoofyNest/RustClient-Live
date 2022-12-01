@@ -1,12 +1,12 @@
 internal class WebConnectionGroup // TypeDefIndex: 3031
 {
-	private ServicePoint sPoint; 
-	private string name; 
-	private LinkedList<WebConnectionGroup.ConnectionState> connections; 
-	private Queue queue; 
-	private bool closing; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler ConnectionClosed; 
+	private ServicePoint sPoint;
+	private string name;
+	private LinkedList<WebConnectionGroup.ConnectionState> connections;
+	private Queue queue;
+	private bool closing;
+	[CompilerGeneratedAttribute]
+	private EventHandler ConnectionClosed;
 
 	public string Name { get; }
 	internal Queue Queue { get; }
@@ -14,10 +14,10 @@ internal class WebConnectionGroup // TypeDefIndex: 3031
 
 	public void .ctor(ServicePoint sPoint, string name) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_ConnectionClosed(EventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_ConnectionClosed(EventHandler value) { }
 
 	private void OnConnectionClosed() { }
@@ -42,12 +42,12 @@ internal class WebConnectionGroup // TypeDefIndex: 3031
 
 private class WebConnectionGroup.ConnectionState : IWebConnectionState // TypeDefIndex: 3032
 {
-	[CompilerGeneratedAttribute] 
-	private WebConnection <Connection>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WebConnectionGroup <Group>k__BackingField; 
-	private bool busy; 
-	private DateTime idleSince; 
+	[CompilerGeneratedAttribute]
+	private WebConnection <Connection>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WebConnectionGroup <Group>k__BackingField;
+	private bool busy;
+	private DateTime idleSince;
 
 	public WebConnection Connection { get; set; }
 	public WebConnectionGroup Group { get; set; }
@@ -56,16 +56,16 @@ private class WebConnectionGroup.ConnectionState : IWebConnectionState // TypeDe
 	public DateTime IdleSince { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WebConnection get_Connection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Connection(WebConnection value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WebConnectionGroup get_Group() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Group(WebConnectionGroup value) { }
 
 	public ServicePoint get_ServicePoint() { }

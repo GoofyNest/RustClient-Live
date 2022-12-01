@@ -1,11 +1,11 @@
-public class ColdOverlay : MonoBehaviour // TypeDefIndex: 10855
+public class ColdOverlay : MonoBehaviour // TypeDefIndex: 10861
 {
-	public PostProcessVolume postProcessVolume; 
-	public float smoothTime; 
-	public bool preventInstantiation; 
-	private float smoothCurrent; 
-	private float smoothVelocity; 
-	private ColorGrading colorGrading; 
+	public PostProcessVolume postProcessVolume;
+	public float smoothTime;
+	public bool preventInstantiation;
+	private float smoothCurrent;
+	private float smoothVelocity;
+	private ColorGrading colorGrading;
 
 
 	public void Awake() { }

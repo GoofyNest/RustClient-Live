@@ -1,6 +1,6 @@
 public struct Friend // TypeDefIndex: 5242
 {
-	public SteamId Id; 
+	public SteamId Id;
 
 	public bool IsMe { get; }
 	public bool IsFriend { get; }
@@ -24,7 +24,7 @@ public struct Friend // TypeDefIndex: 5242
 
 	public bool get_IsOnline() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task RequestInfoAsync() { }
 
 	public Relationship get_Relationship() { }
@@ -39,11 +39,11 @@ public struct Friend // TypeDefIndex: 5242
 
 public struct Friend.FriendGameInfo // TypeDefIndex: 5243
 {
-	internal ulong GameID; 
-	internal uint GameIP; 
-	internal ulong SteamIDLobby; 
-	public int ConnectionPort; 
-	public int QueryPort; 
+	internal ulong GameID;
+	internal uint GameIP;
+	internal ulong SteamIDLobby;
+	public int ConnectionPort;
+	public int QueryPort;
 
 	public IPAddress IpAddress { get; }
 
@@ -56,15 +56,15 @@ public struct Friend.FriendGameInfo // TypeDefIndex: 5243
 
 private struct Friend.<RequestInfoAsync>d__13 : IAsyncStateMachine // TypeDefIndex: 5244
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public Friend <>4__this; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public Friend <>4__this;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

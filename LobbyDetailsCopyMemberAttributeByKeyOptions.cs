@@ -1,24 +1,24 @@
-public struct LobbyDetailsCopyMemberAttributeByKeyOptions // TypeDefIndex: 9139
+public struct LobbyDetailsCopyMemberAttributeByKeyOptions // TypeDefIndex: 9141
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AttrKey>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <AttrKey>k__BackingField;
 
 	public ProductUserId TargetUserId { get; set; }
 	public Utf8String AttrKey { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AttrKey() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AttrKey(Utf8String value) { }
 
 }

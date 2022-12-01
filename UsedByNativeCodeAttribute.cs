@@ -1,8 +1,8 @@
 internal class UsedByNativeCodeAttribute : Attribute // TypeDefIndex: 3288
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
 
 	public string Name { set; }
 
@@ -11,7 +11,7 @@ internal class UsedByNativeCodeAttribute : Attribute // TypeDefIndex: 3288
 
 	public void .ctor(string name) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Name(string value) { }
 
 }

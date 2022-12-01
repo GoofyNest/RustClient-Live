@@ -1,8 +1,8 @@
-public class Stats // TypeDefIndex: 6878
+public class Stats // TypeDefIndex: 6880
 {
-	public bool Enabled; 
-	public Stats.Node Building; 
-	public Stats.Node Previous; 
+	public bool Enabled;
+	public Stats.Node Building;
+	public Stats.Node Previous;
 
 
 	public void .ctor() { }
@@ -15,11 +15,11 @@ public class Stats // TypeDefIndex: 6878
 
 }
 
-public class Stats.Node : Pool.IPooled // TypeDefIndex: 6879
+public class Stats.Node : Pool.IPooled // TypeDefIndex: 6881
 {
-	public Dictionary<string, Stats.Node> Children; 
-	public long Bytes; 
-	public long Count; 
+	public Dictionary<string, Stats.Node> Children;
+	public long Bytes;
+	public long Count;
 
 
 	internal Stats.Node Add(string category, long bytes) { }

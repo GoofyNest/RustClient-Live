@@ -1,18 +1,18 @@
-public class ErrorEventArgs : EventArgs // TypeDefIndex: 5993
+public class ErrorEventArgs : EventArgs // TypeDefIndex: 5995
 {
-	[CompilerGeneratedAttribute] 
-	private object <CurrentObject>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ErrorContext <ErrorContext>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <CurrentObject>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ErrorContext <ErrorContext>k__BackingField;
 
 	private object CurrentObject { set; }
 	private ErrorContext ErrorContext { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentObject(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ErrorContext(ErrorContext value) { }
 
 	public void .ctor(object currentObject, ErrorContext errorContext) { }

@@ -1,12 +1,12 @@
-public class EmissionScaledByLight : MonoBehaviour, IClientComponent // TypeDefIndex: 11077
+public class EmissionScaledByLight : MonoBehaviour, IClientComponent // TypeDefIndex: 11083
 {
-	private Color emissionColor; 
-	public Renderer[] targetRenderers; 
-	public int materialIndex; 
-	private static MaterialPropertyBlock block; 
-	public Light lightToFollow; 
-	public float maxEmissionValue; 
-	private int index; 
+	private Color emissionColor;
+	public Renderer[] targetRenderers;
+	public int materialIndex;
+	private static MaterialPropertyBlock block;
+	public Light lightToFollow;
+	public float maxEmissionValue;
+	private int index;
 
 
 	public void OnEnable() { }

@@ -1,19 +1,19 @@
 internal class ScriptableRuntimeReflectionSystemWrapper // TypeDefIndex: 3903
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private IScriptableRuntimeReflectionSystem <implementation>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private IScriptableRuntimeReflectionSystem <implementation>k__BackingField;
 
 	internal IScriptableRuntimeReflectionSystem implementation { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal IScriptableRuntimeReflectionSystem get_implementation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_implementation(IScriptableRuntimeReflectionSystem value) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes(out bool result) { }
 
 	public void .ctor() { }

@@ -1,11 +1,11 @@
-public class WorkshopView : MonoBehaviour // TypeDefIndex: 7783
+public class WorkshopView : MonoBehaviour // TypeDefIndex: 7785
 {
-	public TextMeshProUGUI Title; 
-	public TextMeshProUGUI AuthorName; 
-	public TextMeshProUGUI VoteInfo; 
-	public Button VoteUp; 
-	public Button VoteDown; 
-	private IWorkshopContent item; 
+	public TextMeshProUGUI Title;
+	public TextMeshProUGUI AuthorName;
+	public TextMeshProUGUI VoteInfo;
+	public Button VoteUp;
+	public Button VoteDown;
+	private IWorkshopContent item;
 
 	protected WorkshopInterface Interface { get; }
 	protected WorkshopItemEditor Editor { get; }

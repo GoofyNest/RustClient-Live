@@ -1,14 +1,14 @@
-public class uiPlayerPreview : SingletonComponent<uiPlayerPreview> // TypeDefIndex: 12983
+public class uiPlayerPreview : SingletonComponent<uiPlayerPreview> // TypeDefIndex: 12997
 {
-	public Camera previewCamera; 
-	public PlayerModel playermodel; 
-	public ReflectionProbe reflectionProbe; 
-	public SegmentMaskPositioning segmentMask; 
-	private static readonly object FalseObject; 
-	private static readonly object TrueObject; 
-	internal BasePlayer needsUpdateFrom; 
-	private PostProcessLayer postProcessLayer; 
-	private bool wasOpen; 
+	public Camera previewCamera;
+	public PlayerModel playermodel;
+	public ReflectionProbe reflectionProbe;
+	public SegmentMaskPositioning segmentMask;
+	private static readonly object FalseObject;
+	private static readonly object TrueObject;
+	internal BasePlayer needsUpdateFrom;
+	private PostProcessLayer postProcessLayer;
+	private bool wasOpen;
 
 
 	public static void Create() { }

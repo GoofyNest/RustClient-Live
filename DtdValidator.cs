@@ -1,12 +1,12 @@
 internal sealed class DtdValidator : BaseValidator // TypeDefIndex: 2243
 {
-	private static DtdValidator.NamespaceManager namespaceManager; 
-	private HWStack validationStack; 
-	private Hashtable attPresence; 
-	private XmlQualifiedName name; 
-	private Hashtable IDs; 
-	private IdRefNode idRefListHead; 
-	private bool processIdentityConstraints; 
+	private static DtdValidator.NamespaceManager namespaceManager;
+	private HWStack validationStack;
+	private Hashtable attPresence;
+	private XmlQualifiedName name;
+	private Hashtable IDs;
+	private IdRefNode idRefListHead;
+	private bool processIdentityConstraints;
 
 	public override bool PreserveWhitespace { get; }
 

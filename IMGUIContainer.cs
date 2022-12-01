@@ -1,27 +1,27 @@
 public class IMGUIContainer : VisualElement // TypeDefIndex: 4596
 {
-	private Action m_OnGUIHandler; 
-	private ObjectGUIState m_ObjectGUIState; 
-	internal bool useOwnerObjectGUIState; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private Rect <lastWorldClip>k__BackingField; 
-	private GUILayoutUtility.LayoutCache m_Cache; 
-	private Rect m_CachedClippingRect; 
-	private Matrix4x4 m_CachedTransform; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private ContextType <contextType>k__BackingField; 
-	private bool lostFocus; 
-	private bool receivedFocus; 
-	private FocusChangeDirection focusChangeDirection; 
-	private bool hasFocusableControls; 
-	private int newKeyboardFocusControlID; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <focusOnlyIfHasFocusableControls>k__BackingField; 
-	public static readonly string ussClassName; 
-	private IMGUIContainer.GUIGlobals m_GUIGlobals; 
+	private Action m_OnGUIHandler;
+	private ObjectGUIState m_ObjectGUIState;
+	internal bool useOwnerObjectGUIState;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private Rect <lastWorldClip>k__BackingField;
+	private GUILayoutUtility.LayoutCache m_Cache;
+	private Rect m_CachedClippingRect;
+	private Matrix4x4 m_CachedTransform;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private ContextType <contextType>k__BackingField;
+	private bool lostFocus;
+	private bool receivedFocus;
+	private FocusChangeDirection focusChangeDirection;
+	private bool hasFocusableControls;
+	private int newKeyboardFocusControlID;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <focusOnlyIfHasFocusableControls>k__BackingField;
+	public static readonly string ussClassName;
+	private IMGUIContainer.GUIGlobals m_GUIGlobals;
 
 	public Action onGUIHandler { get; }
 	internal ObjectGUIState guiState { get; }
@@ -37,7 +37,7 @@ public class IMGUIContainer : VisualElement // TypeDefIndex: 4596
 
 	internal ObjectGUIState get_guiState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal Rect get_lastWorldClip() { }
 
 	private GUILayoutUtility.LayoutCache get_cache() { }
@@ -46,10 +46,10 @@ public class IMGUIContainer : VisualElement // TypeDefIndex: 4596
 
 	private float get_layoutMeasuredHeight() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ContextType get_contextType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_focusOnlyIfHasFocusableControls() { }
 
 	private void SaveGlobals() { }
@@ -76,13 +76,13 @@ public class IMGUIContainer : VisualElement // TypeDefIndex: 4596
 
 private struct IMGUIContainer.GUIGlobals // TypeDefIndex: 4597
 {
-	public Matrix4x4 matrix; 
-	public Color color; 
-	public Color contentColor; 
-	public Color backgroundColor; 
-	public bool enabled; 
-	public bool changed; 
-	public int displayIndex; 
+	public Matrix4x4 matrix;
+	public Color color;
+	public Color contentColor;
+	public Color backgroundColor;
+	public bool enabled;
+	public bool changed;
+	public int displayIndex;
 
 }
 

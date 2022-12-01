@@ -1,26 +1,26 @@
 public struct ColorBlock : IEquatable<ColorBlock> // TypeDefIndex: 4917
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Color m_NormalColor; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Color m_HighlightedColor; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Color m_PressedColor; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Color m_SelectedColor; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Color m_DisabledColor; 
-	[RangeAttribute] 
-	[SerializeField] 
-	private float m_ColorMultiplier; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private float m_FadeDuration; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Color m_NormalColor;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Color m_HighlightedColor;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Color m_PressedColor;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Color m_SelectedColor;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Color m_DisabledColor;
+	[RangeAttribute]
+	[SerializeField]
+	private float m_ColorMultiplier;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private float m_FadeDuration;
 
 	public Color normalColor { get; set; }
 	public Color highlightedColor { get; set; }

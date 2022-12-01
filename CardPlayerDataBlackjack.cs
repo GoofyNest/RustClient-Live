@@ -1,9 +1,9 @@
-public class CardPlayerDataBlackjack : CardPlayerData // TypeDefIndex: 13811
+public class CardPlayerDataBlackjack : CardPlayerData // TypeDefIndex: 13827
 {
-	public List<PlayingCard> SplitCards; 
-	public int splitBetThisRound; 
-	public int insuranceBetThisRound; 
-	public bool playingSplitCards; 
+	public List<PlayingCard> SplitCards;
+	public int splitBetThisRound;
+	public int insuranceBetThisRound;
+	public bool playingSplitCards;
 
 
 	public void .ctor(int mountIndex, bool isServer) { }

@@ -1,6 +1,6 @@
-public enum SmpteFormat // TypeDefIndex: 7649
+public enum SmpteFormat // TypeDefIndex: 7651
 {
-	public byte value__; 
+	public byte value__;
 	public const SmpteFormat TwentyFour = 24;
 	public const SmpteFormat TwentyFive = 25;
 	public const SmpteFormat ThirtyDrop = 29;

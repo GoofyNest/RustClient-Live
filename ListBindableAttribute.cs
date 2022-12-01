@@ -1,10 +1,10 @@
 public sealed class ListBindableAttribute : Attribute // TypeDefIndex: 2724
 {
-	public static readonly ListBindableAttribute Yes; 
-	public static readonly ListBindableAttribute No; 
-	public static readonly ListBindableAttribute Default; 
-	private bool listBindable; 
-	private bool isDefault; 
+	public static readonly ListBindableAttribute Yes;
+	public static readonly ListBindableAttribute No;
+	public static readonly ListBindableAttribute Default;
+	private bool listBindable;
+	private bool isDefault;
 
 	public bool ListBindable { get; }
 

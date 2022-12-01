@@ -1,6 +1,6 @@
 public class AggregateException : Exception // TypeDefIndex: 141
 {
-	private ReadOnlyCollection<Exception> m_innerExceptions; 
+	private ReadOnlyCollection<Exception> m_innerExceptions;
 
 	public ReadOnlyCollection<Exception> InnerExceptions { get; }
 

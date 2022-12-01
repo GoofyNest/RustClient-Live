@@ -1,8 +1,8 @@
 public class Button : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler // TypeDefIndex: 4911
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Button.ButtonClickedEvent m_OnClick; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Button.ButtonClickedEvent m_OnClick;
 
 	public Button.ButtonClickedEvent onClick { get; set; }
 
@@ -19,7 +19,7 @@ public class Button : Selectable, IPointerClickHandler, IEventSystemHandler, ISu
 
 	public virtual void OnSubmit(BaseEventData eventData) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator OnFinishSubmit() { }
 
 }
@@ -33,38 +33,38 @@ public class Button.ButtonClickedEvent : UnityEvent // TypeDefIndex: 4912
 
 private sealed class Button.<OnFinishSubmit>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4913
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Button <>4__this; 
-	private float <fadeTime>5__2; 
-	private float <elapsedTime>5__3; 
+	private int <>1__state;
+	private object <>2__current;
+	public Button <>4__this;
+	private float <fadeTime>5__2;
+	private float <elapsedTime>5__3;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public enum BUTTON // TypeDefIndex: 11846
+public enum BUTTON // TypeDefIndex: 11853
 {
-	public int value__; 
+	public int value__;
 	public const BUTTON FORWARD = 2;
 	public const BUTTON BACKWARD = 4;
 	public const BUTTON LEFT = 8;

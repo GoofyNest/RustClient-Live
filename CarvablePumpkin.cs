@@ -1,20 +1,20 @@
-public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // TypeDefIndex: 10089
+public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // TypeDefIndex: 10091
 {
-	private Option __menuOption_Menu_ChangeText; 
-	private Option __menuOption_Menu_LockSign; 
-	private Option __menuOption_Menu_UnLockSign; 
+	private Option __menuOption_Menu_ChangeText;
+	private Option __menuOption_Menu_LockSign;
+	private Option __menuOption_Menu_UnLockSign;
 	private const float TextureRequestTimeout = 15;
-	public GameObjectRef changeTextDialog; 
-	public MeshPaintableSource[] paintableSources; 
-	public uint[] textureIDs; 
-	internal RealTimeSince[] timeSinceRequest; 
-	internal uint[] loadedTextures; 
-	[ClientVar] 
-	public static float textureRequestDistance; 
-	private bool textureRequestSent; 
-	[CompilerGeneratedAttribute] 
-	private bool <withinTextureRange>k__BackingField; 
-	private LODCell cell; 
+	public GameObjectRef changeTextDialog;
+	public MeshPaintableSource[] paintableSources;
+	public uint[] textureIDs;
+	internal RealTimeSince[] timeSinceRequest;
+	internal uint[] loadedTextures;
+	[ClientVar]
+	public static float textureRequestDistance;
+	private bool textureRequestSent;
+	[CompilerGeneratedAttribute]
+	private bool <withinTextureRange>k__BackingField;
+	private LODCell cell;
 
 	public override bool HasMenuOptions { get; }
 	public Vector2i TextureSize { get; }
@@ -42,20 +42,20 @@ public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // Ty
 
 	private void LoadTexture(int frame, uint id, byte[] data) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_ChangeText(BasePlayer player) { }
 
 	public virtual void OnTextureWasEdited(int frame, Texture2D texture, bool fromFile = False) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void RecieveTexture(BaseEntity.RPCMessage msg) { }
 
 	private void EnsureInitialized() { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	private static void SignDebugLog(string str) { }
 
 	public FileStorage.Type get_FileType() { }
@@ -72,10 +72,10 @@ public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // Ty
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected bool get_withinTextureRange() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_withinTextureRange(bool value) { }
 
 	protected override void ClientInit(Entity info) { }
@@ -90,16 +90,16 @@ public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // Ty
 
 	protected virtual void OnExitTextureRange() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_LockSign(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_UnLockSign(BasePlayer player) { }
 
 	public static void RebuildAll() { }
@@ -110,7 +110,7 @@ public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // Ty
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Menu_ChangeText>
 
 }

@@ -1,10 +1,10 @@
 internal class KeySequence // TypeDefIndex: 2151
 {
-	private TypedObject[] ks; 
-	private int dim; 
-	private int hashcode; 
-	private int posline; 
-	private int poscol; 
+	private TypedObject[] ks;
+	private int dim;
+	private int hashcode;
+	private int posline;
+	private int poscol;
 
 	public int PosLine { get; }
 	public int PosCol { get; }

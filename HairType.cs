@@ -1,6 +1,6 @@
-public enum HairType // TypeDefIndex: 12485
+public enum HairType // TypeDefIndex: 12493
 {
-	public int value__; 
+	public int value__;
 	public const HairType Head = 0;
 	public const HairType Eyebrow = 1;
 	public const HairType Facial = 2;

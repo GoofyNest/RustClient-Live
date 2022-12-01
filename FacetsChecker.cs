@@ -43,18 +43,18 @@ internal abstract class FacetsChecker // TypeDefIndex: 2245
 
 private struct FacetsChecker.FacetsCompiler // TypeDefIndex: 2246
 {
-	private DatatypeImplementation datatype; 
-	private RestrictionFacets derivedRestriction; 
-	private RestrictionFlags baseFlags; 
-	private RestrictionFlags baseFixedFlags; 
-	private RestrictionFlags validRestrictionFlags; 
-	private XmlSchemaDatatype nonNegativeInt; 
-	private XmlSchemaDatatype builtInType; 
-	private XmlTypeCode builtInEnum; 
-	private bool firstPattern; 
-	private StringBuilder regStr; 
-	private XmlSchemaPatternFacet pattern_facet; 
-	private static readonly FacetsChecker.FacetsCompiler.Map[] c_map; 
+	private DatatypeImplementation datatype;
+	private RestrictionFacets derivedRestriction;
+	private RestrictionFlags baseFlags;
+	private RestrictionFlags baseFixedFlags;
+	private RestrictionFlags validRestrictionFlags;
+	private XmlSchemaDatatype nonNegativeInt;
+	private XmlSchemaDatatype builtInType;
+	private XmlTypeCode builtInEnum;
+	private bool firstPattern;
+	private StringBuilder regStr;
+	private XmlSchemaPatternFacet pattern_facet;
+	private static readonly FacetsChecker.FacetsCompiler.Map[] c_map;
 
 
 	public void .ctor(DatatypeImplementation baseDatatype, RestrictionFacets restriction) { }
@@ -109,8 +109,8 @@ private struct FacetsChecker.FacetsCompiler // TypeDefIndex: 2246
 
 private struct FacetsChecker.FacetsCompiler.Map // TypeDefIndex: 2247
 {
-	internal char match; 
-	internal string replacement; 
+	internal char match;
+	internal string replacement;
 
 
 	internal void .ctor(char m, string r) { }

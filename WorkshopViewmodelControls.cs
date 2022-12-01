@@ -1,8 +1,8 @@
-public class WorkshopViewmodelControls : MonoBehaviour // TypeDefIndex: 7761
+public class WorkshopViewmodelControls : MonoBehaviour // TypeDefIndex: 7763
 {
-	public Toggle Enabled; 
-	public Toggle Ironsights; 
-	public Toggle admire; 
+	public Toggle Enabled;
+	public Toggle Ironsights;
+	public Toggle admire;
 
 
 	private void Clear() { }

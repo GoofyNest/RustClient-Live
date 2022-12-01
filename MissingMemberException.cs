@@ -1,8 +1,8 @@
 public class MissingMemberException : MemberAccessException, ISerializable // TypeDefIndex: 271
 {
-	protected string ClassName; 
-	protected string MemberName; 
-	protected byte[] Signature; 
+	protected string ClassName;
+	protected string MemberName;
+	protected byte[] Signature;
 
 	public override string Message { get; }
 

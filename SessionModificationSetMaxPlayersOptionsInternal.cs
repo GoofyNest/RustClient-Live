@@ -1,7 +1,7 @@
-internal struct SessionModificationSetMaxPlayersOptionsInternal : ISettable<SessionModificationSetMaxPlayersOptions>, IDisposable // TypeDefIndex: 8580
+internal struct SessionModificationSetMaxPlayersOptionsInternal : ISettable<SessionModificationSetMaxPlayersOptions>, IDisposable // TypeDefIndex: 8582
 {
-	private int m_ApiVersion; 
-	private uint m_MaxPlayers; 
+	private int m_ApiVersion;
+	private uint m_MaxPlayers;
 
 	public uint MaxPlayers { set; }
 

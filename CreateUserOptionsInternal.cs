@@ -1,9 +1,9 @@
-internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9329
+internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9331
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_DateOfBirth; 
-	private IntPtr m_ParentEmail; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_DateOfBirth;
+	private IntPtr m_ParentEmail;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String DateOfBirth { set; }
@@ -24,10 +24,10 @@ internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDispo
 
 }
 
-internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9572
+internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9574
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ContinuanceToken; 
+	private int m_ApiVersion;
+	private IntPtr m_ContinuanceToken;
 
 	public ContinuanceToken ContinuanceToken { set; }
 

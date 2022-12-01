@@ -1,24 +1,24 @@
-public struct OnMessageToServerCallbackInfo : ICallbackInfo // TypeDefIndex: 9836
+public struct OnMessageToServerCallbackInfo : ICallbackInfo // TypeDefIndex: 9838
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <MessageData>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <MessageData>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ArraySegment<byte> MessageData { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_MessageData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MessageData(ArraySegment<byte> value) { }
 
 	public Nullable<Result> GetResultCode() { }

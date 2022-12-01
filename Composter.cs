@@ -1,8 +1,8 @@
-public class Composter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6384
+public class Composter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6386
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float fertilizerProductionProgress; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float fertilizerProductionProgress;
 
 
 	public static void ResetToPool(Composter instance) { }
@@ -59,7 +59,7 @@ public class Composter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6384
 
 }
 
-public class Composter : StorageContainer // TypeDefIndex: 10406
+public class Composter : StorageContainer // TypeDefIndex: 10410
 {
 
 	public void .ctor() { }

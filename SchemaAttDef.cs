@@ -1,14 +1,14 @@
 internal sealed class SchemaAttDef : SchemaDeclBase, IDtdDefaultAttributeInfo, IDtdAttributeInfo // TypeDefIndex: 2269
 {
-	private string defExpanded; 
-	private int lineNum; 
-	private int linePos; 
-	private int valueLineNum; 
-	private int valueLinePos; 
-	private SchemaAttDef.Reserve reserved; 
-	private bool defaultValueChecked; 
-	private XmlSchemaAttribute schemaAttribute; 
-	public static readonly SchemaAttDef Empty; 
+	private string defExpanded;
+	private int lineNum;
+	private int linePos;
+	private int valueLineNum;
+	private int valueLinePos;
+	private SchemaAttDef.Reserve reserved;
+	private bool defaultValueChecked;
+	private XmlSchemaAttribute schemaAttribute;
+	public static readonly SchemaAttDef Empty;
 
 	private string System.Xml.IDtdAttributeInfo.Prefix { get; }
 	private string System.Xml.IDtdAttributeInfo.LocalName { get; }
@@ -104,7 +104,7 @@ internal sealed class SchemaAttDef : SchemaDeclBase, IDtdDefaultAttributeInfo, I
 
 internal enum SchemaAttDef.Reserve // TypeDefIndex: 2270
 {
-	public int value__; 
+	public int value__;
 	public const SchemaAttDef.Reserve None = 0;
 	public const SchemaAttDef.Reserve XmlSpace = 1;
 	public const SchemaAttDef.Reserve XmlLang = 2;

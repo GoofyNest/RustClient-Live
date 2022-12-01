@@ -1,27 +1,27 @@
-public class Culling : ConsoleSystem // TypeDefIndex: 13685
+public class Culling : ConsoleSystem // TypeDefIndex: 13701
 {
-	[ClientVar] 
-	public static float entityUpdateRate; 
-	[ClientVar] 
-	public static float entityMinCullDist; 
+	[ClientVar]
+	public static float entityUpdateRate;
+	[ClientVar]
+	public static float entityMinCullDist;
 	public const float entityMinAnimatorCullDist = 100;
-	[ClientVar] 
-	public static float entityMinShadowCullDist; 
-	[ClientVar] 
-	public static float entityMaxDist; 
-	private static bool _env; 
-	[ClientVar] 
-	public static float envMinDist; 
-	[ClientVar] 
-	public static bool noDataVisible; 
+	[ClientVar]
+	public static float entityMinShadowCullDist;
+	[ClientVar]
+	public static float entityMaxDist;
+	private static bool _env;
+	[ClientVar]
+	public static float envMinDist;
+	[ClientVar]
+	public static bool noDataVisible;
 
-	[ClientVar] 
+	[ClientVar]
 	public static bool toggle { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool safeMode { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static bool env { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static int debug { get; set; }
 
 

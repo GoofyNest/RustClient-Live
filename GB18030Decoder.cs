@@ -1,6 +1,6 @@
-internal class GB18030Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7848
+internal class GB18030Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7850
 {
-	private static DbcsConvert gb2312; 
+	private static DbcsConvert gb2312;
 
 
 	public void .ctor() { }

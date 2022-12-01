@@ -1,19 +1,19 @@
-public class ResourceDispenser : EntityComponent<BaseEntity>, IServerComponent // TypeDefIndex: 11239
+public class ResourceDispenser : EntityComponent<BaseEntity>, IServerComponent // TypeDefIndex: 11245
 {
-	public ResourceDispenser.GatherType gatherType; 
-	public List<ItemAmount> containedItems; 
-	public float maxDestroyFractionForFinishBonus; 
-	public List<ItemAmount> finishBonus; 
-	public float fractionRemaining; 
+	public ResourceDispenser.GatherType gatherType;
+	public List<ItemAmount> containedItems;
+	public float maxDestroyFractionForFinishBonus;
+	public List<ItemAmount> finishBonus;
+	public float fractionRemaining;
 
 
 	public void .ctor() { }
 
 }
 
-public enum ResourceDispenser.GatherType // TypeDefIndex: 11240
+public enum ResourceDispenser.GatherType // TypeDefIndex: 11246
 {
-	public int value__; 
+	public int value__;
 	public const ResourceDispenser.GatherType Tree = 0;
 	public const ResourceDispenser.GatherType Ore = 1;
 	public const ResourceDispenser.GatherType Flesh = 2;
@@ -22,22 +22,22 @@ public enum ResourceDispenser.GatherType // TypeDefIndex: 11240
 
 }
 
-public class ResourceDispenser.GatherPropertyEntry // TypeDefIndex: 11241
+public class ResourceDispenser.GatherPropertyEntry // TypeDefIndex: 11247
 {
-	public float gatherDamage; 
-	public float destroyFraction; 
-	public float conditionLost; 
+	public float gatherDamage;
+	public float destroyFraction;
+	public float conditionLost;
 
 
 	public void .ctor() { }
 
 }
 
-public class ResourceDispenser.GatherProperties // TypeDefIndex: 11242
+public class ResourceDispenser.GatherProperties // TypeDefIndex: 11248
 {
-	public ResourceDispenser.GatherPropertyEntry Tree; 
-	public ResourceDispenser.GatherPropertyEntry Ore; 
-	public ResourceDispenser.GatherPropertyEntry Flesh; 
+	public ResourceDispenser.GatherPropertyEntry Tree;
+	public ResourceDispenser.GatherPropertyEntry Ore;
+	public ResourceDispenser.GatherPropertyEntry Flesh;
 
 
 	public float GetProficiency() { }

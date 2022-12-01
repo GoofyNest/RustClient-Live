@@ -1,9 +1,9 @@
-public class AStarNode // TypeDefIndex: 13944
+public class AStarNode // TypeDefIndex: 13961
 {
-	public AStarNode Parent; 
-	public float G; 
-	public float H; 
-	public BasePathNode Node; 
+	public AStarNode Parent;
+	public float G;
+	public float H;
+	public BasePathNode Node;
 
 	public float F { get; }
 

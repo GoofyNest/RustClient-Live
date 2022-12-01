@@ -1,46 +1,46 @@
-public class PieMenu : UIBehaviour // TypeDefIndex: 12972
+public class PieMenu : UIBehaviour // TypeDefIndex: 12986
 {
-	public static PieMenu Instance; 
-	public Image middleBox; 
-	public PieShape pieBackgroundBlur; 
-	public PieShape pieBackground; 
-	public PieShape pieSelection; 
-	public GameObject pieOptionPrefab; 
-	public GameObject optionsCanvas; 
-	public PieMenu.MenuOption[] options; 
-	public GameObject scaleTarget; 
-	public float sliceGaps; 
-	[RangeAttribute] 
-	public float outerSize; 
-	[RangeAttribute] 
-	public float innerSize; 
-	[RangeAttribute] 
-	public float iconSize; 
-	[RangeAttribute] 
-	public float startRadius; 
-	[RangeAttribute] 
-	public float radiusSize; 
-	public Image middleImage; 
-	public TextMeshProUGUI middleTitle; 
-	public TextMeshProUGUI middleDesc; 
-	public TextMeshProUGUI middleRequired; 
-	public Color colorIconActive; 
-	public Color colorIconHovered; 
-	public Color colorIconDisabled; 
-	public Color colorBackgroundDisabled; 
-	public SoundDefinition clipOpen; 
-	public SoundDefinition clipCancel; 
-	public SoundDefinition clipChanged; 
-	public SoundDefinition clipSelected; 
-	public PieMenu.MenuOption defaultOption; 
-	private bool isClosing; 
-	private CanvasGroup canvasGroup; 
-	public bool IsOpen; 
-	public Material IconMaterial; 
-	internal PieMenu.MenuOption selectedOption; 
-	private static Color pieSelectionColor; 
-	private static Color middleImageColor; 
-	private static AnimationCurve easePunch; 
+	public static PieMenu Instance;
+	public Image middleBox;
+	public PieShape pieBackgroundBlur;
+	public PieShape pieBackground;
+	public PieShape pieSelection;
+	public GameObject pieOptionPrefab;
+	public GameObject optionsCanvas;
+	public PieMenu.MenuOption[] options;
+	public GameObject scaleTarget;
+	public float sliceGaps;
+	[RangeAttribute]
+	public float outerSize;
+	[RangeAttribute]
+	public float innerSize;
+	[RangeAttribute]
+	public float iconSize;
+	[RangeAttribute]
+	public float startRadius;
+	[RangeAttribute]
+	public float radiusSize;
+	public Image middleImage;
+	public TextMeshProUGUI middleTitle;
+	public TextMeshProUGUI middleDesc;
+	public TextMeshProUGUI middleRequired;
+	public Color colorIconActive;
+	public Color colorIconHovered;
+	public Color colorIconDisabled;
+	public Color colorBackgroundDisabled;
+	public SoundDefinition clipOpen;
+	public SoundDefinition clipCancel;
+	public SoundDefinition clipChanged;
+	public SoundDefinition clipSelected;
+	public PieMenu.MenuOption defaultOption;
+	private bool isClosing;
+	private CanvasGroup canvasGroup;
+	public bool IsOpen;
+	public Material IconMaterial;
+	internal PieMenu.MenuOption selectedOption;
+	private static Color pieSelectionColor;
+	private static Color middleImageColor;
+	private static AnimationCurve easePunch;
 
 
 	protected override void Start() { }
@@ -75,46 +75,46 @@ public class PieMenu : UIBehaviour // TypeDefIndex: 12972
 
 }
 
-public class PieMenu.MenuOption // TypeDefIndex: 12973
+public class PieMenu.MenuOption // TypeDefIndex: 12987
 {
-	public string name; 
-	public string desc; 
-	public string requirements; 
-	public Sprite sprite; 
-	public bool disabled; 
-	public int order; 
-	public Nullable<PieMenu.MenuOption.ColorMode> overrideColorMode; 
-	public Action<BasePlayer> action; 
-	public PieOption option; 
-	public bool selected; 
-	public bool allowMerge; 
-	public bool wantsMerge; 
+	public string name;
+	public string desc;
+	public string requirements;
+	public Sprite sprite;
+	public bool disabled;
+	public int order;
+	public Nullable<PieMenu.MenuOption.ColorMode> overrideColorMode;
+	public Action<BasePlayer> action;
+	public PieOption option;
+	public bool selected;
+	public bool allowMerge;
+	public bool wantsMerge;
 
 
 	public void .ctor() { }
 
 }
 
-public struct PieMenu.MenuOption.ColorMode // TypeDefIndex: 12974
+public struct PieMenu.MenuOption.ColorMode // TypeDefIndex: 12988
 {
-	public PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption Mode; 
-	public Color CustomColor; 
+	public PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption Mode;
+	public Color CustomColor;
 
 }
 
-public enum PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption // TypeDefIndex: 12975
+public enum PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption // TypeDefIndex: 12989
 {
-	public int value__; 
+	public int value__;
 	public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption CustomColor = 0;
 	public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption SpriteColor = 1;
 
 }
 
-private sealed class PieMenu.<>c // TypeDefIndex: 12976
+private sealed class PieMenu.<>c // TypeDefIndex: 12990
 {
-	public static readonly PieMenu.<>c <>9; 
-	public static Func<PieMenu.MenuOption, int> <>9__43_0; 
-	public static Func<PieMenu.MenuOption, bool> <>9__43_1; 
+	public static readonly PieMenu.<>c <>9;
+	public static Func<PieMenu.MenuOption, int> <>9__43_0;
+	public static Func<PieMenu.MenuOption, bool> <>9__43_1;
 
 
 	private static void .cctor() { }

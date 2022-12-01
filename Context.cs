@@ -1,21 +1,21 @@
 public class Context // TypeDefIndex: 1171
 {
-	private int domain_id; 
-	private int context_id; 
-	private UIntPtr static_data; 
-	private UIntPtr data; 
-	[ContextStaticAttribute] 
-	private static object[] local_slots; 
-	private static IMessageSink default_server_context_sink; 
-	private IMessageSink server_context_sink_chain; 
-	private IMessageSink client_context_sink_chain; 
-	private List<IContextProperty> context_properties; 
-	private static int global_count; 
-	private LocalDataStoreHolder _localDataStore; 
-	private static LocalDataStoreMgr _localDataStoreMgr; 
-	private static DynamicPropertyCollection global_dynamic_properties; 
-	private DynamicPropertyCollection context_dynamic_properties; 
-	private ContextCallbackObject callback_object; 
+	private int domain_id;
+	private int context_id;
+	private UIntPtr static_data;
+	private UIntPtr data;
+	[ContextStaticAttribute]
+	private static object[] local_slots;
+	private static IMessageSink default_server_context_sink;
+	private IMessageSink server_context_sink_chain;
+	private IMessageSink client_context_sink_chain;
+	private List<IContextProperty> context_properties;
+	private static int global_count;
+	private LocalDataStoreHolder _localDataStore;
+	private static LocalDataStoreMgr _localDataStoreMgr;
+	private static DynamicPropertyCollection global_dynamic_properties;
+	private DynamicPropertyCollection context_dynamic_properties;
+	private ContextCallbackObject callback_object;
 
 	public static Context DefaultContext { get; }
 	public virtual int ContextID { get; }

@@ -1,6 +1,6 @@
 internal class NullFileWatcher : IFileWatcher // TypeDefIndex: 2852
 {
-	private static IFileWatcher instance; 
+	private static IFileWatcher instance;
 
 
 	public void StartDispatching(FileSystemWatcher fsw) { }

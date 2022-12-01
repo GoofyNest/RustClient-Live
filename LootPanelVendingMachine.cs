@@ -1,10 +1,10 @@
-public class LootPanelVendingMachine : LootPanel, IVendingMachineInterface // TypeDefIndex: 10454
+public class LootPanelVendingMachine : LootPanel, IVendingMachineInterface // TypeDefIndex: 10458
 {
-	public GameObjectRef sellOrderPrefab; 
-	public GameObject sellOrderContainer; 
-	public GameObject busyOverlayPrefab; 
-	private GameObject busyOverlayInstance; 
-	public static LootPanelVendingMachine Instance; 
+	public GameObjectRef sellOrderPrefab;
+	public GameObject sellOrderContainer;
+	public GameObject busyOverlayPrefab;
+	private GameObject busyOverlayInstance;
+	public static LootPanelVendingMachine Instance;
 
 
 	public void OnEnable() { }

@@ -1,11 +1,11 @@
 public sealed class SerializationInfoEnumerator : IEnumerator // TypeDefIndex: 1060
 {
-	private string[] m_members; 
-	private object[] m_data; 
-	private Type[] m_types; 
-	private int m_numItems; 
-	private int m_currItem; 
-	private bool m_current; 
+	private string[] m_members;
+	private object[] m_data;
+	private Type[] m_types;
+	private int m_numItems;
+	private int m_currItem;
+	private bool m_current;
 
 	private object System.Collections.IEnumerator.Current { get; }
 	public SerializationEntry Current { get; }

@@ -1,7 +1,7 @@
-public static class Threading // TypeDefIndex: 6236
+public static class Threading // TypeDefIndex: 6238
 {
-	private static int mainThread; 
-	private static List<Action> actions; 
+	private static int mainThread;
+	private static List<Action> actions;
 
 	public static bool IsMainThread { get; }
 

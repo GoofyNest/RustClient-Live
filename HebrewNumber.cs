@@ -1,8 +1,8 @@
 internal class HebrewNumber // TypeDefIndex: 708
 {
-	private static HebrewNumber.HebrewValue[] HebrewValues; 
-	private static char maxHebrewNumberCh; 
-	private static readonly HebrewNumber.HS[][] NumberPasingState; 
+	private static HebrewNumber.HebrewValue[] HebrewValues;
+	private static char maxHebrewNumberCh;
+	private static readonly HebrewNumber.HS[][] NumberPasingState;
 
 
 	internal static string ToString(int Number) { }
@@ -17,7 +17,7 @@ internal class HebrewNumber // TypeDefIndex: 708
 
 private enum HebrewNumber.HebrewToken // TypeDefIndex: 709
 {
-	public int value__; 
+	public int value__;
 	public const HebrewNumber.HebrewToken Invalid = -1;
 	public const HebrewNumber.HebrewToken Digit400 = 0;
 	public const HebrewNumber.HebrewToken Digit200_300 = 1;
@@ -34,8 +34,8 @@ private enum HebrewNumber.HebrewToken // TypeDefIndex: 709
 
 private class HebrewNumber.HebrewValue // TypeDefIndex: 710
 {
-	internal HebrewNumber.HebrewToken token; 
-	internal int value; 
+	internal HebrewNumber.HebrewToken token;
+	internal int value;
 
 
 	internal void .ctor(HebrewNumber.HebrewToken token, int value) { }
@@ -44,7 +44,7 @@ private class HebrewNumber.HebrewValue // TypeDefIndex: 710
 
 internal enum HebrewNumber.HS // TypeDefIndex: 711
 {
-	public int value__; 
+	public int value__;
 	public const HebrewNumber.HS _err = -1;
 	public const HebrewNumber.HS Start = 0;
 	public const HebrewNumber.HS S400 = 1;

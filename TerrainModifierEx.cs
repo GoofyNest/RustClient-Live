@@ -1,10 +1,10 @@
-public static class TerrainModifierEx // TypeDefIndex: 12329
+public static class TerrainModifierEx // TypeDefIndex: 12337
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyTerrainModifiers(Transform transform, TerrainModifier[] modifiers, Vector3 pos, Quaternion rot, Vector3 scale) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyTerrainModifiers(Transform transform, TerrainModifier[] modifiers) { }
 
 }

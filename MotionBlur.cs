@@ -1,8 +1,8 @@
-public class MotionBlur : ImageEffectBase // TypeDefIndex: 8211
+public class MotionBlur : ImageEffectBase // TypeDefIndex: 8213
 {
-	public float blurAmount; 
-	public bool extraBlur; 
-	private RenderTexture accumTexture; 
+	public float blurAmount;
+	public bool extraBlur;
+	private RenderTexture accumTexture;
 
 
 	protected override void Start() { }
@@ -15,14 +15,14 @@ public class MotionBlur : ImageEffectBase // TypeDefIndex: 8211
 
 }
 
-public sealed class MotionBlur : PostProcessEffectSettings // TypeDefIndex: 13580
+public sealed class MotionBlur : PostProcessEffectSettings // TypeDefIndex: 13596
 {
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public FloatParameter shutterAngle; 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public IntParameter sampleCount; 
+	[RangeAttribute]
+	[TooltipAttribute]
+	public FloatParameter shutterAngle;
+	[RangeAttribute]
+	[TooltipAttribute]
+	public IntParameter sampleCount;
 
 
 	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }

@@ -1,22 +1,22 @@
-public class PlaceCliffs : ProceduralComponent // TypeDefIndex: 12279
+public class PlaceCliffs : ProceduralComponent // TypeDefIndex: 12287
 {
-	public SpawnFilter Filter; 
-	public string ResourceFolder; 
-	public int RetryMultiplier; 
-	public int CutoffSlope; 
-	public float MinScale; 
-	public float MaxScale; 
-	private static int target_count; 
-	private static int target_length; 
-	private static float min_scale_delta; 
-	private static int max_scale_attempts; 
-	private static int min_rotation; 
-	private static int max_rotation; 
-	private static int rotation_delta; 
-	private static float offset_c; 
-	private static float offset_l; 
-	private static float offset_r; 
-	private static Vector3[] offsets; 
+	public SpawnFilter Filter;
+	public string ResourceFolder;
+	public int RetryMultiplier;
+	public int CutoffSlope;
+	public float MinScale;
+	public float MaxScale;
+	private static int target_count;
+	private static int target_length;
+	private static float min_scale_delta;
+	private static int max_scale_attempts;
+	private static int min_rotation;
+	private static int max_rotation;
+	private static int rotation_delta;
+	private static float offset_c;
+	private static float offset_l;
+	private static float offset_r;
+	private static Vector3[] offsets;
 
 
 	public override void Process(uint seed) { }
@@ -39,27 +39,27 @@ public class PlaceCliffs : ProceduralComponent // TypeDefIndex: 12279
 
 }
 
-private class PlaceCliffs.CliffPlacement // TypeDefIndex: 12280
+private class PlaceCliffs.CliffPlacement // TypeDefIndex: 12288
 {
-	public int count; 
-	public int score; 
-	public Prefab prefab; 
-	public Vector3 pos; 
-	public Quaternion rot; 
-	public Vector3 scale; 
-	public PlaceCliffs.CliffPlacement next; 
+	public int count;
+	public int score;
+	public Prefab prefab;
+	public Vector3 pos;
+	public Quaternion rot;
+	public Vector3 scale;
+	public PlaceCliffs.CliffPlacement next;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class PlaceCliffs.<>c // TypeDefIndex: 12281
+private sealed class PlaceCliffs.<>c // TypeDefIndex: 12289
 {
-	public static readonly PlaceCliffs.<>c <>9; 
-	public static Func<Prefab, bool> <>9__17_0; 
-	public static Func<Prefab, bool> <>9__17_1; 
-	public static Func<Prefab, bool> <>9__17_2; 
+	public static readonly PlaceCliffs.<>c <>9;
+	public static Func<Prefab, bool> <>9__17_0;
+	public static Func<Prefab, bool> <>9__17_1;
+	public static Func<Prefab, bool> <>9__17_2;
 
 
 	private static void .cctor() { }

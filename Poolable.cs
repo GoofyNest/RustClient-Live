@@ -1,29 +1,29 @@
-public class Poolable : MonoBehaviour, IClientComponent, IPrefabPostProcess // TypeDefIndex: 13210
+public class Poolable : MonoBehaviour, IClientComponent, IPrefabPostProcess // TypeDefIndex: 13225
 {
-	[HideInInspector] 
-	public uint prefabID; 
-	[HideInInspector] 
-	public Behaviour[] behaviours; 
-	[HideInInspector] 
-	public Rigidbody[] rigidbodies; 
-	[HideInInspector] 
-	public Collider[] colliders; 
-	[HideInInspector] 
-	public LODGroup[] lodgroups; 
-	[HideInInspector] 
-	public Renderer[] renderers; 
-	[HideInInspector] 
-	public ParticleSystem[] particles; 
-	[HideInInspector] 
-	public bool[] behaviourStates; 
-	[HideInInspector] 
-	public bool[] rigidbodyStates; 
-	[HideInInspector] 
-	public bool[] colliderStates; 
-	[HideInInspector] 
-	public bool[] lodgroupStates; 
-	[HideInInspector] 
-	public bool[] rendererStates; 
+	[HideInInspector]
+	public uint prefabID;
+	[HideInInspector]
+	public Behaviour[] behaviours;
+	[HideInInspector]
+	public Rigidbody[] rigidbodies;
+	[HideInInspector]
+	public Collider[] colliders;
+	[HideInInspector]
+	public LODGroup[] lodgroups;
+	[HideInInspector]
+	public Renderer[] renderers;
+	[HideInInspector]
+	public ParticleSystem[] particles;
+	[HideInInspector]
+	public bool[] behaviourStates;
+	[HideInInspector]
+	public bool[] rigidbodyStates;
+	[HideInInspector]
+	public bool[] colliderStates;
+	[HideInInspector]
+	public bool[] lodgroupStates;
+	[HideInInspector]
+	public bool[] rendererStates;
 
 	public int ClientCount { get; }
 	public int ServerCount { get; }

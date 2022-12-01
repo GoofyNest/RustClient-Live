@@ -1,6 +1,6 @@
 public enum P2PSessionError // TypeDefIndex: 5163
 {
-	public int value__; 
+	public int value__;
 	public const P2PSessionError None = 0;
 	public const P2PSessionError NoRightsToApp = 2;
 	public const P2PSessionError Timeout = 4;

@@ -1,6 +1,6 @@
-public class ImpostorShadows : MonoBehaviour // TypeDefIndex: 12433
+public class ImpostorShadows : MonoBehaviour // TypeDefIndex: 12441
 {
-	private Light light; 
+	private Light light;
 
 
 	public static bool TryToggle(bool state) { }

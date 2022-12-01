@@ -1,13 +1,13 @@
 internal class InheritedStylesData : IEquatable<InheritedStylesData> // TypeDefIndex: 4726
 {
-	public static readonly InheritedStylesData none; 
-	public StyleColor color; 
-	public StyleFont font; 
-	public StyleLength fontSize; 
-	public StyleInt unityFontStyle; 
-	public StyleInt unityTextAlign; 
-	public StyleInt visibility; 
-	public StyleInt whiteSpace; 
+	public static readonly InheritedStylesData none;
+	public StyleColor color;
+	public StyleFont font;
+	public StyleLength fontSize;
+	public StyleInt unityFontStyle;
+	public StyleInt unityTextAlign;
+	public StyleInt visibility;
+	public StyleInt whiteSpace;
 
 
 	public void .ctor() { }

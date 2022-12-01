@@ -1,11 +1,11 @@
-public class RendererCell : Pool.IPooled // TypeDefIndex: 11655
+public class RendererCell : Pool.IPooled // TypeDefIndex: 11662
 {
-	public Vector3 position; 
-	public RendererGrid grid; 
-	public bool interrupt; 
-	public bool isInPool; 
-	public float Timestamp; 
-	private ListDictionary<RendererKey, RendererGroup> batches; 
+	public Vector3 position;
+	public RendererGrid grid;
+	public bool interrupt;
+	public bool isInPool;
+	public float Timestamp;
+	private ListDictionary<RendererKey, RendererGroup> batches;
 
 	public int Count { get; }
 
@@ -24,7 +24,7 @@ public class RendererCell : Pool.IPooled // TypeDefIndex: 11655
 
 	public void Refresh() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator RefreshAsync() { }
 
 	public RendererGroup FindBatchGroup(RendererBatch renderer) { }
@@ -41,36 +41,36 @@ public class RendererCell : Pool.IPooled // TypeDefIndex: 11655
 
 }
 
-private sealed class RendererCell.<RefreshAsync>d__14 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11656
+private sealed class RendererCell.<RefreshAsync>d__14 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11663
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public RendererCell <>4__this; 
-	private BufferList<RendererGroup> <batchGroups>5__2; 
-	private int <i>5__3; 
-	private IEnumerator <enumerator>5__4; 
-	private RendererGroup <batchGroup>5__5; 
-	private int <j>5__6; 
+	private int <>1__state;
+	private object <>2__current;
+	public RendererCell <>4__this;
+	private BufferList<RendererGroup> <batchGroups>5__2;
+	private int <i>5__3;
+	private IEnumerator <enumerator>5__4;
+	private RendererGroup <batchGroup>5__5;
+	private int <j>5__6;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

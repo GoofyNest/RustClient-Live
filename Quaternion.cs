@@ -1,47 +1,47 @@
 public struct Quaternion : IEquatable<Quaternion> // TypeDefIndex: 3469
 {
-	public float x; 
-	public float y; 
-	public float z; 
-	public float w; 
-	private static readonly Quaternion identityQuaternion; 
+	public float x;
+	public float y;
+	public float z;
+	public float w;
+	private static readonly Quaternion identityQuaternion;
 	public const float kEpsilon = 1E-06;
 
 	public static Quaternion identity { get; }
 	public Vector3 eulerAngles { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion FromToRotation(Vector3 fromDirection, Vector3 toDirection) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion Inverse(Quaternion rotation) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion Slerp(Quaternion a, Quaternion b, float t) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion SlerpUnclamped(Quaternion a, Quaternion b, float t) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion Lerp(Quaternion a, Quaternion b, float t) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion LerpUnclamped(Quaternion a, Quaternion b, float t) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Quaternion Internal_FromEulerRad(Vector3 euler) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Vector3 Internal_ToEulerRad(Quaternion rotation) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion AngleAxis(float angle, Vector3 axis) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion LookRotation(Vector3 forward, Vector3 upwards) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static Quaternion LookRotation(Vector3 forward) { }
 
 	public void .ctor(float x, float y, float z, float w) { }
@@ -106,13 +106,13 @@ public struct Quaternion : IEquatable<Quaternion> // TypeDefIndex: 3469
 
 }
 
-public struct quaternion : IEquatable<quaternion>, IFormattable // TypeDefIndex: 7152
+public struct quaternion : IEquatable<quaternion>, IFormattable // TypeDefIndex: 7154
 {
 
 [Serializable]
 public struct quaternion : IEquatable<quaternion>, IFormattable
-	public float4 value; 
-	public static readonly quaternion identity; 
+	public float4 value;
+	public static readonly quaternion identity;
 
 
 	public static Quaternion op_Implicit(quaternion q) { }

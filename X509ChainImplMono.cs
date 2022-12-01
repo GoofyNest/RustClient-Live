@@ -1,21 +1,21 @@
 internal class X509ChainImplMono : X509ChainImpl // TypeDefIndex: 2827
 {
-	private StoreLocation location; 
-	private X509ChainElementCollection elements; 
-	private X509ChainPolicy policy; 
-	private X509ChainStatus[] status; 
-	private static X509ChainStatus[] Empty; 
-	private int max_path_length; 
-	private X500DistinguishedName working_issuer_name; 
-	private AsymmetricAlgorithm working_public_key; 
-	private X509ChainElement bce_restriction; 
-	private X509Certificate2Collection roots; 
-	private X509Certificate2Collection cas; 
-	private X509Store root_store; 
-	private X509Store ca_store; 
-	private X509Store user_root_store; 
-	private X509Store user_ca_store; 
-	private X509Certificate2Collection collection; 
+	private StoreLocation location;
+	private X509ChainElementCollection elements;
+	private X509ChainPolicy policy;
+	private X509ChainStatus[] status;
+	private static X509ChainStatus[] Empty;
+	private int max_path_length;
+	private X500DistinguishedName working_issuer_name;
+	private AsymmetricAlgorithm working_public_key;
+	private X509ChainElement bce_restriction;
+	private X509Certificate2Collection roots;
+	private X509Certificate2Collection cas;
+	private X509Store root_store;
+	private X509Store ca_store;
+	private X509Store user_root_store;
+	private X509Store user_ca_store;
+	private X509Certificate2Collection collection;
 
 	public override bool IsValid { get; }
 	public override X509ChainPolicy ChainPolicy { get; set; }
@@ -39,7 +39,7 @@ internal class X509ChainImplMono : X509ChainImpl // TypeDefIndex: 2827
 
 	public override X509ChainStatus[] get_ChainStatus() { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override bool Build(X509Certificate2 certificate) { }
 
 	public override void Reset() { }

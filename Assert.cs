@@ -1,24 +1,24 @@
 public static class Assert // TypeDefIndex: 3909
 {
-	[ObsoleteAttribute] 
-	public static bool raiseExceptions; 
+	[ObsoleteAttribute]
+	public static bool raiseExceptions;
 
 
 	private static void Fail(string message, string userMessage) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsTrue(bool condition) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsTrue(bool condition, string message) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsFalse(bool condition) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsFalse(bool condition, string message) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void AreEqual<T>(T expected, T actual) { }
 	/* GenericInstMethod :
 	|
@@ -28,7 +28,7 @@ public static class Assert // TypeDefIndex: 3909
 	|-Assert.AreEqual<uint>
 	*/
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void AreEqual<T>(T expected, T actual, string message) { }
 	/* GenericInstMethod :
 	|
@@ -39,7 +39,7 @@ public static class Assert // TypeDefIndex: 3909
 	|-Assert.AreEqual<uint>
 	*/
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void AreEqual<T>(T expected, T actual, string message, IEqualityComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -50,10 +50,10 @@ public static class Assert // TypeDefIndex: 3909
 	|-Assert.AreEqual<uint>
 	*/
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void AreEqual(Object expected, Object actual, string message) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsNotNull<T>(T value) { }
 	/* GenericInstMethod :
 	|
@@ -67,7 +67,7 @@ public static class Assert // TypeDefIndex: 3909
 	|-Assert.IsNotNull<Texture>
 	*/
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsNotNull<T>(T value, string message) { }
 	/* GenericInstMethod :
 	|
@@ -80,13 +80,13 @@ public static class Assert // TypeDefIndex: 3909
 	|-Assert.IsNotNull<PostProcessEffectSettings>
 	*/
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void IsNotNull(Object value, string message) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void AreEqual(int expected, int actual) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void AreEqual(uint expected, uint actual) { }
 
 	private static void .cctor() { }

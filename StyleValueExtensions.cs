@@ -1,7 +1,7 @@
 internal static class StyleValueExtensions // TypeDefIndex: 4723
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static StyleEnum<T> ToStyleEnum<T>(StyleInt styleInt, T value) { }
 	/* GenericInstMethod :
 	|
@@ -11,13 +11,13 @@ internal static class StyleValueExtensions // TypeDefIndex: 4723
 	|-StyleValueExtensions.ToStyleEnum<Visibility>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static StyleLength ToStyleLength(StyleValue styleValue) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static StyleFloat ToStyleFloat(StyleValue styleValue) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	internal static string DebugString<T>(IStyleValue<T> styleValue) { }
 	/* GenericInstMethod :
 	|

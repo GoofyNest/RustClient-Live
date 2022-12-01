@@ -1,7 +1,7 @@
-public class SaveRestore : SingletonComponent<SaveRestore> // TypeDefIndex: 11730
+public class SaveRestore : SingletonComponent<SaveRestore> // TypeDefIndex: 11737
 {
-	public static bool IsSaving; 
-	public static DateTime SaveCreatedTime; 
+	public static bool IsSaving;
+	public static DateTime SaveCreatedTime;
 
 
 	public void .ctor() { }

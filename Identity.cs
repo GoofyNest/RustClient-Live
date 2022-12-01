@@ -1,12 +1,12 @@
 internal abstract class Identity // TypeDefIndex: 1133
 {
-	protected string _objectUri; 
-	protected IMessageSink _channelSink; 
-	protected IMessageSink _envoySink; 
-	private DynamicPropertyCollection _clientDynamicProperties; 
-	private DynamicPropertyCollection _serverDynamicProperties; 
-	protected ObjRef _objRef; 
-	private bool _disposed; 
+	protected string _objectUri;
+	protected IMessageSink _channelSink;
+	protected IMessageSink _envoySink;
+	private DynamicPropertyCollection _clientDynamicProperties;
+	private DynamicPropertyCollection _serverDynamicProperties;
+	protected ObjRef _objRef;
+	private bool _disposed;
 
 	public IMessageSink ChannelSink { get; set; }
 	public IMessageSink EnvoySink { get; }

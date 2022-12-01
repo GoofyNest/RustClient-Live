@@ -1,11 +1,11 @@
 internal class DigestSession // TypeDefIndex: 2993
 {
-	private static RandomNumberGenerator rng; 
-	private DateTime lastUse; 
-	private int _nc; 
-	private HashAlgorithm hash; 
-	private DigestHeaderParser parser; 
-	private string _cnonce; 
+	private static RandomNumberGenerator rng;
+	private DateTime lastUse;
+	private int _nc;
+	private HashAlgorithm hash;
+	private DigestHeaderParser parser;
+	private string _cnonce;
 
 	public string Algorithm { get; }
 	public string Realm { get; }

@@ -1,42 +1,42 @@
 public sealed class FtpWebRequest : WebRequest // TypeDefIndex: 3002
 {
-	private Uri requestUri; 
-	private string file_name; 
-	private ServicePoint servicePoint; 
-	private Stream origDataStream; 
-	private Stream dataStream; 
-	private Stream controlStream; 
-	private StreamReader controlReader; 
-	private NetworkCredential credentials; 
-	private IPHostEntry hostEntry; 
-	private IPEndPoint localEndPoint; 
-	private IPEndPoint remoteEndPoint; 
-	private IWebProxy proxy; 
-	private int timeout; 
-	private int rwTimeout; 
-	private long offset; 
-	private bool binary; 
-	private bool enableSsl; 
-	private bool usePassive; 
-	private bool keepAlive; 
-	private string method; 
-	private string renameTo; 
-	private object locker; 
-	private FtpWebRequest.RequestState requestState; 
-	private FtpAsyncResult asyncResult; 
-	private FtpWebResponse ftpResponse; 
-	private Stream requestStream; 
-	private string initial_path; 
-	private static readonly string[] supportedCommands; 
-	private Encoding dataEncoding; 
+	private Uri requestUri;
+	private string file_name;
+	private ServicePoint servicePoint;
+	private Stream origDataStream;
+	private Stream dataStream;
+	private Stream controlStream;
+	private StreamReader controlReader;
+	private NetworkCredential credentials;
+	private IPHostEntry hostEntry;
+	private IPEndPoint localEndPoint;
+	private IPEndPoint remoteEndPoint;
+	private IWebProxy proxy;
+	private int timeout;
+	private int rwTimeout;
+	private long offset;
+	private bool binary;
+	private bool enableSsl;
+	private bool usePassive;
+	private bool keepAlive;
+	private string method;
+	private string renameTo;
+	private object locker;
+	private FtpWebRequest.RequestState requestState;
+	private FtpAsyncResult asyncResult;
+	private FtpWebResponse ftpResponse;
+	private Stream requestStream;
+	private string initial_path;
+	private static readonly string[] supportedCommands;
+	private Encoding dataEncoding;
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override string ConnectionGroupName { set; }
 	public override string ContentType { get; set; }
 	public override long ContentLength { get; set; }
 	public override ICredentials Credentials { get; set; }
 	public bool EnableSsl { get; }
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override WebHeaderCollection Headers { get; set; }
 	public override string Method { get; set; }
 	public override bool PreAuthenticate { set; }
@@ -44,7 +44,7 @@ public sealed class FtpWebRequest : WebRequest // TypeDefIndex: 3002
 	public int ReadWriteTimeout { get; }
 	public override Uri RequestUri { get; }
 	public ServicePoint ServicePoint { get; }
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override bool UseDefaultCredentials { get; set; }
 	public override int Timeout { get; }
 	private string DataType { get; }
@@ -199,7 +199,7 @@ public sealed class FtpWebRequest : WebRequest // TypeDefIndex: 3002
 
 private enum FtpWebRequest.RequestState // TypeDefIndex: 3003
 {
-	public int value__; 
+	public int value__;
 	public const FtpWebRequest.RequestState Before = 0;
 	public const FtpWebRequest.RequestState Scheduled = 1;
 	public const FtpWebRequest.RequestState Connecting = 2;

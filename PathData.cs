@@ -1,23 +1,23 @@
-public class PathData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6520
+public class PathData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string name; 
-	public bool spline; 
-	public bool start; 
-	public bool end; 
-	public float width; 
-	public float innerPadding; 
-	public float outerPadding; 
-	public float innerFade; 
-	public float outerFade; 
-	public float randomScale; 
-	public float meshOffset; 
-	public float terrainOffset; 
-	public int splat; 
-	public int topology; 
-	public List<VectorData> nodes; 
-	public int hierarchy; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string name;
+	public bool spline;
+	public bool start;
+	public bool end;
+	public float width;
+	public float innerPadding;
+	public float outerPadding;
+	public float innerFade;
+	public float outerFade;
+	public float randomScale;
+	public float meshOffset;
+	public float terrainOffset;
+	public int splat;
+	public int topology;
+	public List<VectorData> nodes;
+	public int hierarchy;
 
 
 	public static void ResetToPool(PathData instance) { }

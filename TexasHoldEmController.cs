@@ -1,18 +1,18 @@
-public class TexasHoldEmController : CardGameController // TypeDefIndex: 13815
+public class TexasHoldEmController : CardGameController // TypeDefIndex: 13831
 {
-	public List<PlayingCard> communityCards; 
+	public List<PlayingCard> communityCards;
 	public const int SMALL_BLIND = 5;
 	public const int BIG_BLIND = 10;
 	public const string WON_HAND_STAT = "won_hand_texas_holdem";
-	[CompilerGeneratedAttribute] 
-	private TexasHoldEmController.PokerInputOption <LastAction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <LastActionTarget>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <LastActionValue>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <BiggestRaiseThisTurn>k__BackingField; 
-	private int dealerIndex; 
+	[CompilerGeneratedAttribute]
+	private TexasHoldEmController.PokerInputOption <LastAction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <LastActionTarget>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <LastActionValue>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <BiggestRaiseThisTurn>k__BackingField;
+	private int dealerIndex;
 
 	public override int MinPlayers { get; }
 	public override int MinBuyIn { get; }
@@ -32,28 +32,28 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13815
 
 	public override int get_MinToPlay() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TexasHoldEmController.PokerInputOption get_LastAction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastAction(TexasHoldEmController.PokerInputOption value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_LastActionTarget() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastActionTarget(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_LastActionValue() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastActionValue(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_BiggestRaiseThisTurn() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_BiggestRaiseThisTurn(int value) { }
 
 	public void .ctor(BaseCardGameEntity owner) { }
@@ -94,32 +94,32 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13815
 
 	public bool HasSecondaryWinners() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <SubGetAvailableInputs>
 
 }
 
-public enum TexasHoldEmController.PokerInputOption // TypeDefIndex: 13816
+public enum TexasHoldEmController.PokerInputOption // TypeDefIndex: 13832
 {
-	public int value__; 
+	public int value__;
 	public const TexasHoldEmController.PokerInputOption None = 0;
 	public const TexasHoldEmController.PokerInputOption Fold = 1;
 	public const TexasHoldEmController.PokerInputOption Call = 2;
@@ -131,9 +131,9 @@ public enum TexasHoldEmController.PokerInputOption // TypeDefIndex: 13816
 
 }
 
-public enum TexasHoldEmController.PokerRoundResult // TypeDefIndex: 13817
+public enum TexasHoldEmController.PokerRoundResult // TypeDefIndex: 13833
 {
-	public int value__; 
+	public int value__;
 	public const TexasHoldEmController.PokerRoundResult Loss = 0;
 	public const TexasHoldEmController.PokerRoundResult PrimaryWinner = 1;
 	public const TexasHoldEmController.PokerRoundResult SecondaryWinner = 2;

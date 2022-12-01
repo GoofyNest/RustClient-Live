@@ -1,33 +1,33 @@
-public struct SendAudioOptions // TypeDefIndex: 8706
+public struct SendAudioOptions // TypeDefIndex: 8708
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RoomName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<AudioBuffer> <Buffer>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RoomName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<AudioBuffer> <Buffer>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String RoomName { get; set; }
 	public Nullable<AudioBuffer> Buffer { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RoomName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RoomName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<AudioBuffer> get_Buffer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Buffer(Nullable<AudioBuffer> value) { }
 
 }

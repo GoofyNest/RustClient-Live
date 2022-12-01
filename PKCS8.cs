@@ -2,10 +2,10 @@ public class PKCS8.PrivateKeyInfo // TypeDefIndex: 72
 {
 
 public class PKCS8.PrivateKeyInfo
-	private int _version; 
-	private string _algorithm; 
-	private byte[] _key; 
-	private ArrayList _list; 
+	private int _version;
+	private string _algorithm;
+	private byte[] _key;
+	private ArrayList _list;
 
 	public byte[] PrivateKey { get; }
 
@@ -30,10 +30,10 @@ public class PKCS8.PrivateKeyInfo
 
 public class PKCS8.EncryptedPrivateKeyInfo // TypeDefIndex: 73
 {
-	private string _algorithm; 
-	private byte[] _salt; 
-	private int _iterations; 
-	private byte[] _data; 
+	private string _algorithm;
+	private byte[] _salt;
+	private int _iterations;
+	private byte[] _data;
 
 	public string Algorithm { get; }
 	public byte[] EncryptedData { get; }
@@ -61,10 +61,10 @@ public class PKCS8.PrivateKeyInfo // TypeDefIndex: 1759
 {
 
 public class PKCS8.PrivateKeyInfo
-	private int _version; 
-	private string _algorithm; 
-	private byte[] _key; 
-	private ArrayList _list; 
+	private int _version;
+	private string _algorithm;
+	private byte[] _key;
+	private ArrayList _list;
 
 	public byte[] PrivateKey { get; }
 
@@ -95,10 +95,10 @@ public class PKCS8.PrivateKeyInfo
 
 public class PKCS8.EncryptedPrivateKeyInfo // TypeDefIndex: 1760
 {
-	private string _algorithm; 
-	private byte[] _salt; 
-	private int _iterations; 
-	private byte[] _data; 
+	private string _algorithm;
+	private byte[] _salt;
+	private int _iterations;
+	private byte[] _data;
 
 	public string Algorithm { get; }
 	public byte[] EncryptedData { get; }

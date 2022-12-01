@@ -1,11 +1,11 @@
-public class runtimeScript : MonoBehaviour // TypeDefIndex: 13275
+public class runtimeScript : MonoBehaviour // TypeDefIndex: 13290
 {
-	public ERRoadNetwork roadNetwork; 
-	public ERRoad road; 
-	public GameObject go; 
-	public int currentElement; 
-	public float distance; 
-	public float speed; 
+	public ERRoadNetwork roadNetwork;
+	public ERRoad road;
+	public GameObject go;
+	public int currentElement;
+	public float distance;
+	public float speed;
 
 
 	private void Start() { }

@@ -23,8 +23,8 @@ public interface IConfigurationSectionHandler
 
 public sealed class BypassElement : ConfigurationElement
 
-[DefaultMemberAttribute] 
-[ConfigurationCollectionAttribute] 
+[DefaultMemberAttribute]
+[ConfigurationCollectionAttribute]
 public sealed class BypassElementCollection : ConfigurationElementCollection
 
 	public void .ctor() { }

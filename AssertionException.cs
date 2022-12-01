@@ -1,6 +1,6 @@
 public class AssertionException : Exception // TypeDefIndex: 3910
 {
-	private string m_UserMessage; 
+	private string m_UserMessage;
 
 	public override string Message { get; }
 

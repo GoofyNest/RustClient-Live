@@ -1,27 +1,27 @@
-public class BaseAIEvent // TypeDefIndex: 11127
+public class BaseAIEvent // TypeDefIndex: 11133
 {
-	[CompilerGeneratedAttribute] 
-	private AIEventType <EventType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <TriggerStateContainerID>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BaseAIEvent.ExecuteRate <Rate>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ShouldExecute>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Result>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Inverted>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <OutputEntityMemorySlot>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <InputEntityMemorySlot>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ID>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BaseEntity <Owner>k__BackingField; 
-	private float executeTimer; 
-	protected float deltaTime; 
+	[CompilerGeneratedAttribute]
+	private AIEventType <EventType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <TriggerStateContainerID>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BaseAIEvent.ExecuteRate <Rate>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ShouldExecute>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Result>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Inverted>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <OutputEntityMemorySlot>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <InputEntityMemorySlot>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ID>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BaseEntity <Owner>k__BackingField;
+	private float executeTimer;
+	protected float deltaTime;
 
 	public AIEventType EventType { get; set; }
 	public int TriggerStateContainerID { get; set; }
@@ -38,68 +38,68 @@ public class BaseAIEvent // TypeDefIndex: 11127
 	public bool HasValidTriggerState { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AIEventType get_EventType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_EventType(AIEventType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_TriggerStateContainerID() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_TriggerStateContainerID(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseAIEvent.ExecuteRate get_Rate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Rate(BaseAIEvent.ExecuteRate value) { }
 
 	public float get_ExecutionRate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ShouldExecute() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_ShouldExecute(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Result() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Result(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Inverted() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Inverted(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_OutputEntityMemorySlot() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_OutputEntityMemorySlot(int value) { }
 
 	public bool get_ShouldSetOutputEntityMemory() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_InputEntityMemorySlot() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_InputEntityMemorySlot(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ID() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_ID(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseEntity get_Owner() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Owner(BaseEntity value) { }
 
 	public bool get_HasValidTriggerState() { }
@@ -126,9 +126,9 @@ public class BaseAIEvent // TypeDefIndex: 11127
 
 }
 
-public enum BaseAIEvent.ExecuteRate // TypeDefIndex: 11128
+public enum BaseAIEvent.ExecuteRate // TypeDefIndex: 11134
 {
-	public int value__; 
+	public int value__;
 	public const BaseAIEvent.ExecuteRate Slow = 0;
 	public const BaseAIEvent.ExecuteRate Normal = 1;
 	public const BaseAIEvent.ExecuteRate Fast = 2;

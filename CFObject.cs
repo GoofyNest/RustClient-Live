@@ -1,7 +1,7 @@
 internal class CFObject : IDisposable // TypeDefIndex: 2513
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <Handle>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <Handle>k__BackingField;
 
 	public IntPtr Handle { get; set; }
 
@@ -20,10 +20,10 @@ internal class CFObject : IDisposable // TypeDefIndex: 2513
 
 	protected override void Finalize() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_Handle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Handle(IntPtr value) { }
 
 	internal static extern IntPtr CFRetain(IntPtr handle) { }

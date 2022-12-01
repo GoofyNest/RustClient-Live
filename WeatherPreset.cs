@@ -1,12 +1,12 @@
-public class WeatherPreset : ScriptableObject // TypeDefIndex: 11823
+public class WeatherPreset : ScriptableObject // TypeDefIndex: 11830
 {
-	public WeatherPresetType Type; 
-	public float Wind; 
-	public float Rain; 
-	public float Thunder; 
-	public float Rainbow; 
-	public TOD_AtmosphereParameters Atmosphere; 
-	public TOD_CloudParameters Clouds; 
+	public WeatherPresetType Type;
+	public float Wind;
+	public float Rain;
+	public float Thunder;
+	public float Rainbow;
+	public TOD_AtmosphereParameters Atmosphere;
+	public TOD_CloudParameters Clouds;
 
 
 	public void Apply(TOD_Sky sky) { }

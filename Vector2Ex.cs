@@ -1,28 +1,28 @@
-public static class Vector2Ex // TypeDefIndex: 6621
+public static class Vector2Ex // TypeDefIndex: 6623
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 WithX(Vector2 v, float x) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 WithY(Vector2 v, float y) { }
 
 	public static Vector2 Parse(string p) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 Rotate(Vector2 v, float degrees) { }
 
 	public static float Length(float x, float y) { }
 
 	public static float Length(Vector2 vec) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 X(Vector2 v, float x) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 Y(Vector2 v, float y) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 ToCanvas(Vector2 v, RectTransform target, Camera cam) { }
 
 }

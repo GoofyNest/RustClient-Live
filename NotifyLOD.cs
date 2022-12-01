@@ -1,11 +1,11 @@
-public class NotifyLOD : LODComponent // TypeDefIndex: 11685
+public class NotifyLOD : LODComponent // TypeDefIndex: 11692
 {
-	public float Distance; 
-	public float MinDistanceMultiplier; 
-	public GameObject TargetGameObject; 
-	private int curlod; 
-	private bool force; 
-	private INotifyLOD lodTarget; 
+	public float Distance;
+	public float MinDistanceMultiplier;
+	public GameObject TargetGameObject;
+	private int curlod;
+	private bool force;
+	private INotifyLOD lodTarget;
 
 
 	protected override void InitLOD() { }

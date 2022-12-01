@@ -1,6 +1,6 @@
 internal class PointerSpec : ModifierSpec // TypeDefIndex: 413
 {
-	private int pointer_level; 
+	private int pointer_level;
 
 
 	internal void .ctor(int pointer_level) { }

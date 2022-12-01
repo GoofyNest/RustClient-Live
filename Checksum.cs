@@ -1,6 +1,6 @@
 public class Checksum // TypeDefIndex: 4821
 {
-	private List<byte> values; 
+	private List<byte> values;
 
 
 	public void Add(float f, int bytes) { }

@@ -1,21 +1,21 @@
 public static class Lightmapping // TypeDefIndex: 3893
 {
-	[RequiredByNativeCodeAttribute] 
-	private static readonly Lightmapping.RequestLightsDelegate s_DefaultDelegate; 
-	[RequiredByNativeCodeAttribute] 
-	private static Lightmapping.RequestLightsDelegate s_RequestLightsDelegate; 
+	[RequiredByNativeCodeAttribute]
+	private static readonly Lightmapping.RequestLightsDelegate s_DefaultDelegate;
+	[RequiredByNativeCodeAttribute]
+	private static Lightmapping.RequestLightsDelegate s_RequestLightsDelegate;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static void SetDelegate(Lightmapping.RequestLightsDelegate del) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static Lightmapping.RequestLightsDelegate GetDelegate() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static void ResetDelegate() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RequestLights(Light[] lights, IntPtr outLightsPtr, int outLightsCount) { }
 
 	private static void .cctor() { }
@@ -37,7 +37,7 @@ public sealed class Lightmapping.RequestLightsDelegate : MulticastDelegate // Ty
 
 private sealed class Lightmapping.<>c // TypeDefIndex: 3895
 {
-	public static readonly Lightmapping.<>c <>9; 
+	public static readonly Lightmapping.<>c <>9;
 
 
 	private static void .cctor() { }

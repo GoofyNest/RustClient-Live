@@ -1,7 +1,7 @@
-internal struct LobbyModificationSetBucketIdOptionsInternal : ISettable<LobbyModificationSetBucketIdOptions>, IDisposable // TypeDefIndex: 9175
+internal struct LobbyModificationSetBucketIdOptionsInternal : ISettable<LobbyModificationSetBucketIdOptions>, IDisposable // TypeDefIndex: 9177
 {
-	private int m_ApiVersion; 
-	private IntPtr m_BucketId; 
+	private int m_ApiVersion;
+	private IntPtr m_BucketId;
 
 	public Utf8String BucketId { set; }
 

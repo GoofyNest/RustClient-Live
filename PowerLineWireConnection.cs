@@ -1,10 +1,10 @@
-public class PowerLineWireConnection // TypeDefIndex: 12120
+public class PowerLineWireConnection // TypeDefIndex: 12127
 {
-	public Vector3 inOffset; 
-	public Vector3 outOffset; 
-	public float radius; 
-	public Transform start; 
-	public Transform end; 
+	public Vector3 inOffset;
+	public Vector3 outOffset;
+	public float radius;
+	public Transform start;
+	public Transform end;
 
 
 	public void .ctor() { }

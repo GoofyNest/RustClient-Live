@@ -1,13 +1,13 @@
-public class Video : RustControl // TypeDefIndex: 7083
+public class Video : RustControl // TypeDefIndex: 7085
 {
-	public RawImage VideoCanvas; 
-	public VideoPlayer VideoPlayer; 
-	public CanvasGroup CanvasGroup; 
-	[RangeAttribute] 
-	public float FadeIn; 
-	private uint textureWidth; 
-	private uint textureHeight; 
-	private Vector2 playerSize; 
+	public RawImage VideoCanvas;
+	public VideoPlayer VideoPlayer;
+	public CanvasGroup CanvasGroup;
+	[RangeAttribute]
+	public float FadeIn;
+	private uint textureWidth;
+	private uint textureHeight;
+	private Vector2 playerSize;
 
 
 	protected override void Awake() { }

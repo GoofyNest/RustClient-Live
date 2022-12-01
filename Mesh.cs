@@ -1,7 +1,7 @@
 public sealed class Mesh : Object // TypeDefIndex: 3443
 {
 	public int blendShapeCount { get; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Matrix4x4[] bindposes { get; set; }
 	public bool isReadable { get; }
 	internal bool canAccess { get; }
@@ -21,99 +21,99 @@ public sealed class Mesh : Object // TypeDefIndex: 3443
 	public BoneWeight[] boneWeights { get; set; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_Create(Mesh mono) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetVertexBufferParams(int vertexCount, VertexAttributeDescriptor[] attributes) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void InternalSetVertexBufferDataFromArray(int stream, Array data, int dataStart, int meshBufferStart, int count, int elemSize, MeshUpdateFlags flags) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private uint GetIndexStartImpl(int submesh) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private uint GetIndexCountImpl(int submesh) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private uint GetBaseVertexImpl(int submesh) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private int[] GetTrianglesImpl(int submesh, bool applyBaseVertex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private int[] GetIndicesImpl(int submesh, bool applyBaseVertex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetIndicesImpl(int submesh, MeshTopology topology, IndexFormat indicesFormat, Array indices, int arrayStart, int arraySize, bool calculateBounds, int baseVertex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void PrintErrorCantAccessChannel(VertexAttribute ch) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool HasVertexAttribute(VertexAttribute attr) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetArrayForChannelImpl(VertexAttribute channel, VertexAttributeFormat format, int dim, Array values, int arraySize, int valuesStart, int valuesCount) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Array GetAllocArrayFromChannelImpl(VertexAttribute channel, VertexAttributeFormat format, int dim) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public int get_blendShapeCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private BoneWeight[] GetBoneWeightsImpl() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetBoneWeightsImpl(BoneWeight[] weights) { }
 
 	public Matrix4x4[] get_bindposes() { }
 
 	public void set_bindposes(Matrix4x4[] value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isReadable() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	internal bool get_canAccess() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public int get_vertexCount() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public int get_subMeshCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_subMeshCount(int value) { }
 
 	public Bounds get_bounds() { }
 
 	public void set_bounds(Bounds value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void ClearImpl(bool keepVertexLayout) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void RecalculateBoundsImpl() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void RecalculateNormalsImpl() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void RecalculateTangentsImpl() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void MarkDynamicImpl() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void UploadMeshDataImpl(bool markNoLongerReadable) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private MeshTopology GetTopologyImpl(int submesh) { }
 
 	internal VertexAttribute GetUVChannel(int uvIndex) { }
@@ -278,7 +278,7 @@ public sealed class Mesh : Object // TypeDefIndex: 3443
 
 	public int[] GetTriangles(int submesh, bool applyBaseVertex) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public int[] GetIndices(int submesh) { }
 
 	public int[] GetIndices(int submesh, bool applyBaseVertex) { }
@@ -293,24 +293,24 @@ public sealed class Mesh : Object // TypeDefIndex: 3443
 
 	private void SetTrianglesImpl(int submesh, IndexFormat indicesFormat, Array triangles, int trianglesArrayLength, int start, int length, bool calculateBounds, int baseVertex) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void SetTriangles(int[] triangles, int submesh) { }
 
 	public void SetTriangles(int[] triangles, int submesh, bool calculateBounds, int baseVertex) { }
 
 	public void SetTriangles(int[] triangles, int trianglesStart, int trianglesLength, int submesh, bool calculateBounds = True, int baseVertex = 0) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void SetTriangles(List<int> triangles, int submesh) { }
 
 	public void SetTriangles(List<int> triangles, int submesh, bool calculateBounds, int baseVertex) { }
 
 	public void SetTriangles(List<int> triangles, int trianglesStart, int trianglesLength, int submesh, bool calculateBounds = True, int baseVertex = 0) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void SetIndices(int[] indices, MeshTopology topology, int submesh) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void SetIndices(int[] indices, MeshTopology topology, int submesh, bool calculateBounds) { }
 
 	public void SetIndices(int[] indices, MeshTopology topology, int submesh, bool calculateBounds, int baseVertex) { }
@@ -325,7 +325,7 @@ public sealed class Mesh : Object // TypeDefIndex: 3443
 
 	public void set_boneWeights(BoneWeight[] value) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void Clear() { }
 
 	public void RecalculateBounds() { }
@@ -346,18 +346,18 @@ public sealed class Mesh : Object // TypeDefIndex: 3443
 
 }
 
-public static class Mesh // TypeDefIndex: 5613
+public static class Mesh // TypeDefIndex: 5615
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void Export(Mesh mesh, string filename) { }
 
 }
 
-public struct Mesh_Extents // TypeDefIndex: 6802
+public struct Mesh_Extents // TypeDefIndex: 6804
 {
-	public Vector2 min; 
-	public Vector2 max; 
+	public Vector2 min;
+	public Vector2 max;
 
 
 	public void .ctor(Vector2 min, Vector2 max) { }
@@ -366,11 +366,11 @@ public struct Mesh_Extents // TypeDefIndex: 6802
 
 }
 
-public class Mesh : ConsoleSystem // TypeDefIndex: 13733
+public class Mesh : ConsoleSystem // TypeDefIndex: 13749
 {
-	private static float m_quality; 
+	private static float m_quality;
 
-	[ClientVar] 
+	[ClientVar]
 	public static float quality { get; set; }
 	public static float lod { get; }
 	public static float cull { get; }

@@ -1,4 +1,4 @@
-public sealed class SessionsInterface : Handle // TypeDefIndex: 8604
+public sealed class SessionsInterface : Handle // TypeDefIndex: 8606
 {
 	public const int AddnotifyjoinsessionacceptedApiLatest = 1;
 	public const int AddnotifysessioninviteacceptedApiLatest = 1;
@@ -23,10 +23,10 @@ public sealed class SessionsInterface : Handle // TypeDefIndex: 8604
 	public const int QueryinvitesApiLatest = 1;
 	public const int RegisterplayersApiLatest = 2;
 	public const int RejectinviteApiLatest = 1;
-	public static readonly Utf8String SearchBucketId; 
-	public static readonly Utf8String SearchEmptyServersOnly; 
-	public static readonly Utf8String SearchMinslotsavailable; 
-	public static readonly Utf8String SearchNonemptyServersOnly; 
+	public static readonly Utf8String SearchBucketId;
+	public static readonly Utf8String SearchEmptyServersOnly;
+	public static readonly Utf8String SearchMinslotsavailable;
+	public static readonly Utf8String SearchNonemptyServersOnly;
 	public const int SendinviteApiLatest = 1;
 	public const int SessionattributeApiLatest = 1;
 	public const int SessionattributedataApiLatest = 1;
@@ -94,43 +94,43 @@ public sealed class SessionsInterface : Handle // TypeDefIndex: 8604
 
 	public Result UpdateSessionModification(ref UpdateSessionModificationOptions options, out SessionModification outSessionModificationHandle) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnDestroySessionCallbackInternalImplementation(ref DestroySessionCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnEndSessionCallbackInternalImplementation(ref EndSessionCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinSessionAcceptedCallbackInternalImplementation(ref JoinSessionAcceptedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinSessionCallbackInternalImplementation(ref JoinSessionCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryInvitesCallbackInternalImplementation(ref QueryInvitesCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnRegisterPlayersCallbackInternalImplementation(ref RegisterPlayersCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnRejectInviteCallbackInternalImplementation(ref RejectInviteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSendInviteCallbackInternalImplementation(ref SendInviteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSessionInviteAcceptedCallbackInternalImplementation(ref SessionInviteAcceptedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSessionInviteReceivedCallbackInternalImplementation(ref SessionInviteReceivedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnStartSessionCallbackInternalImplementation(ref StartSessionCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnUnregisterPlayersCallbackInternalImplementation(ref UnregisterPlayersCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnUpdateSessionCallbackInternalImplementation(ref UpdateSessionCallbackInfoInternal data) { }
 
 	private static void .cctor() { }

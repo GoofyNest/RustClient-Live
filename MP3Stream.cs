@@ -1,15 +1,15 @@
-public class MP3Stream : Stream // TypeDefIndex: 7393
+public class MP3Stream : Stream // TypeDefIndex: 7395
 {
-	private readonly Bitstream _BitStream; 
-	private readonly Decoder _Decoder; 
-	private readonly Buffer16BitStereo _Buffer; 
-	private readonly Stream _SourceStream; 
+	private readonly Bitstream _BitStream;
+	private readonly Decoder _Decoder;
+	private readonly Buffer16BitStereo _Buffer;
+	private readonly Stream _SourceStream;
 	private const int BACK_STREAM_BYTE_COUNT_REP = 0;
-	private short _ChannelCountRep; 
-	private readonly SoundFormat FormatRep; 
-	private int _FrequencyRep; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsEOF>k__BackingField; 
+	private short _ChannelCountRep;
+	private readonly SoundFormat FormatRep;
+	private int _FrequencyRep;
+	[CompilerGeneratedAttribute]
+	private bool <IsEOF>k__BackingField;
 
 	public bool IsEOF { get; set; }
 	public override bool CanRead { get; }
@@ -20,10 +20,10 @@ public class MP3Stream : Stream // TypeDefIndex: 7393
 	public int Frequency { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsEOF() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_IsEOF(bool value) { }
 
 	public void .ctor(Stream sourceStream) { }

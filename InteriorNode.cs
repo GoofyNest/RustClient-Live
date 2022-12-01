@@ -1,7 +1,7 @@
 internal abstract class InteriorNode : SyntaxTreeNode // TypeDefIndex: 2159
 {
-	private SyntaxTreeNode leftChild; 
-	private SyntaxTreeNode rightChild; 
+	private SyntaxTreeNode leftChild;
+	private SyntaxTreeNode rightChild;
 
 	public SyntaxTreeNode LeftChild { get; set; }
 	public SyntaxTreeNode RightChild { get; set; }

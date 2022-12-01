@@ -1,6 +1,6 @@
 public sealed class DBNull : ISerializable, IConvertible // TypeDefIndex: 201
 {
-	public static readonly DBNull Value; 
+	public static readonly DBNull Value;
 
 
 	private void .ctor() { }
@@ -51,19 +51,19 @@ public sealed class DBNull : ISerializable, IConvertible // TypeDefIndex: 201
 
 internal struct DataCollector // TypeDefIndex: 1509
 {
-	[ThreadStaticAttribute] 
-	internal static DataCollector ThreadInstance; 
-	private byte* scratchEnd; 
-	private EventSource.EventData* datasEnd; 
-	private GCHandle* pinsEnd; 
-	private EventSource.EventData* datasStart; 
-	private byte* scratch; 
-	private EventSource.EventData* datas; 
-	private GCHandle* pins; 
-	private byte[] buffer; 
-	private int bufferPos; 
-	private int bufferNesting; 
-	private bool writingScalars; 
+	[ThreadStaticAttribute]
+	internal static DataCollector ThreadInstance;
+	private byte* scratchEnd;
+	private EventSource.EventData* datasEnd;
+	private GCHandle* pinsEnd;
+	private EventSource.EventData* datasStart;
+	private byte* scratch;
+	private EventSource.EventData* datas;
+	private GCHandle* pins;
+	private byte[] buffer;
+	private int bufferPos;
+	private int bufferNesting;
+	private bool writingScalars;
 
 
 	internal void Enable(byte* scratch, int scratchSize, EventSource.EventData* datas, int dataCount, GCHandle* pins, int pinCount) { }
@@ -104,97 +104,97 @@ internal struct DataCollector // TypeDefIndex: 1509
 
 internal abstract class DatatypeImplementation : XmlSchemaDatatype // TypeDefIndex: 2179
 {
-	private XmlSchemaDatatypeVariety variety; 
-	private RestrictionFacets restriction; 
-	private DatatypeImplementation baseType; 
-	private XmlValueConverter valueConverter; 
-	private XmlSchemaType parentSchemaType; 
-	private static Hashtable builtinTypes; 
-	private static XmlSchemaSimpleType[] enumToTypeCode; 
-	private static XmlSchemaSimpleType anySimpleType; 
-	private static XmlSchemaSimpleType anyAtomicType; 
-	private static XmlSchemaSimpleType untypedAtomicType; 
-	private static XmlSchemaSimpleType yearMonthDurationType; 
-	private static XmlSchemaSimpleType dayTimeDurationType; 
-	private static XmlSchemaSimpleType normalizedStringTypeV1Compat; 
-	private static XmlSchemaSimpleType tokenTypeV1Compat; 
-	internal static XmlQualifiedName QnAnySimpleType; 
-	internal static XmlQualifiedName QnAnyType; 
-	internal static FacetsChecker stringFacetsChecker; 
-	internal static FacetsChecker miscFacetsChecker; 
-	internal static FacetsChecker numeric2FacetsChecker; 
-	internal static FacetsChecker binaryFacetsChecker; 
-	internal static FacetsChecker dateTimeFacetsChecker; 
-	internal static FacetsChecker durationFacetsChecker; 
-	internal static FacetsChecker listFacetsChecker; 
-	internal static FacetsChecker qnameFacetsChecker; 
-	internal static FacetsChecker unionFacetsChecker; 
-	private static readonly DatatypeImplementation c_anySimpleType; 
-	private static readonly DatatypeImplementation c_anyURI; 
-	private static readonly DatatypeImplementation c_base64Binary; 
-	private static readonly DatatypeImplementation c_boolean; 
-	private static readonly DatatypeImplementation c_byte; 
-	private static readonly DatatypeImplementation c_char; 
-	private static readonly DatatypeImplementation c_date; 
-	private static readonly DatatypeImplementation c_dateTime; 
-	private static readonly DatatypeImplementation c_dateTimeNoTz; 
-	private static readonly DatatypeImplementation c_dateTimeTz; 
-	private static readonly DatatypeImplementation c_day; 
-	private static readonly DatatypeImplementation c_decimal; 
-	private static readonly DatatypeImplementation c_double; 
-	private static readonly DatatypeImplementation c_doubleXdr; 
-	private static readonly DatatypeImplementation c_duration; 
-	private static readonly DatatypeImplementation c_ENTITY; 
-	private static readonly DatatypeImplementation c_ENTITIES; 
-	private static readonly DatatypeImplementation c_ENUMERATION; 
-	private static readonly DatatypeImplementation c_fixed; 
-	private static readonly DatatypeImplementation c_float; 
-	private static readonly DatatypeImplementation c_floatXdr; 
-	private static readonly DatatypeImplementation c_hexBinary; 
-	private static readonly DatatypeImplementation c_ID; 
-	private static readonly DatatypeImplementation c_IDREF; 
-	private static readonly DatatypeImplementation c_IDREFS; 
-	private static readonly DatatypeImplementation c_int; 
-	private static readonly DatatypeImplementation c_integer; 
-	private static readonly DatatypeImplementation c_language; 
-	private static readonly DatatypeImplementation c_long; 
-	private static readonly DatatypeImplementation c_month; 
-	private static readonly DatatypeImplementation c_monthDay; 
-	private static readonly DatatypeImplementation c_Name; 
-	private static readonly DatatypeImplementation c_NCName; 
-	private static readonly DatatypeImplementation c_negativeInteger; 
-	private static readonly DatatypeImplementation c_NMTOKEN; 
-	private static readonly DatatypeImplementation c_NMTOKENS; 
-	private static readonly DatatypeImplementation c_nonNegativeInteger; 
-	private static readonly DatatypeImplementation c_nonPositiveInteger; 
-	private static readonly DatatypeImplementation c_normalizedString; 
-	private static readonly DatatypeImplementation c_NOTATION; 
-	private static readonly DatatypeImplementation c_positiveInteger; 
-	private static readonly DatatypeImplementation c_QName; 
-	private static readonly DatatypeImplementation c_QNameXdr; 
-	private static readonly DatatypeImplementation c_short; 
-	private static readonly DatatypeImplementation c_string; 
-	private static readonly DatatypeImplementation c_time; 
-	private static readonly DatatypeImplementation c_timeNoTz; 
-	private static readonly DatatypeImplementation c_timeTz; 
-	private static readonly DatatypeImplementation c_token; 
-	private static readonly DatatypeImplementation c_unsignedByte; 
-	private static readonly DatatypeImplementation c_unsignedInt; 
-	private static readonly DatatypeImplementation c_unsignedLong; 
-	private static readonly DatatypeImplementation c_unsignedShort; 
-	private static readonly DatatypeImplementation c_uuid; 
-	private static readonly DatatypeImplementation c_year; 
-	private static readonly DatatypeImplementation c_yearMonth; 
-	internal static readonly DatatypeImplementation c_normalizedStringV1Compat; 
-	internal static readonly DatatypeImplementation c_tokenV1Compat; 
-	private static readonly DatatypeImplementation c_anyAtomicType; 
-	private static readonly DatatypeImplementation c_dayTimeDuration; 
-	private static readonly DatatypeImplementation c_untypedAtomicType; 
-	private static readonly DatatypeImplementation c_yearMonthDuration; 
-	private static readonly DatatypeImplementation[] c_tokenizedTypes; 
-	private static readonly DatatypeImplementation[] c_tokenizedTypesXsd; 
-	private static readonly DatatypeImplementation.SchemaDatatypeMap[] c_XdrTypes; 
-	private static readonly DatatypeImplementation.SchemaDatatypeMap[] c_XsdTypes; 
+	private XmlSchemaDatatypeVariety variety;
+	private RestrictionFacets restriction;
+	private DatatypeImplementation baseType;
+	private XmlValueConverter valueConverter;
+	private XmlSchemaType parentSchemaType;
+	private static Hashtable builtinTypes;
+	private static XmlSchemaSimpleType[] enumToTypeCode;
+	private static XmlSchemaSimpleType anySimpleType;
+	private static XmlSchemaSimpleType anyAtomicType;
+	private static XmlSchemaSimpleType untypedAtomicType;
+	private static XmlSchemaSimpleType yearMonthDurationType;
+	private static XmlSchemaSimpleType dayTimeDurationType;
+	private static XmlSchemaSimpleType normalizedStringTypeV1Compat;
+	private static XmlSchemaSimpleType tokenTypeV1Compat;
+	internal static XmlQualifiedName QnAnySimpleType;
+	internal static XmlQualifiedName QnAnyType;
+	internal static FacetsChecker stringFacetsChecker;
+	internal static FacetsChecker miscFacetsChecker;
+	internal static FacetsChecker numeric2FacetsChecker;
+	internal static FacetsChecker binaryFacetsChecker;
+	internal static FacetsChecker dateTimeFacetsChecker;
+	internal static FacetsChecker durationFacetsChecker;
+	internal static FacetsChecker listFacetsChecker;
+	internal static FacetsChecker qnameFacetsChecker;
+	internal static FacetsChecker unionFacetsChecker;
+	private static readonly DatatypeImplementation c_anySimpleType;
+	private static readonly DatatypeImplementation c_anyURI;
+	private static readonly DatatypeImplementation c_base64Binary;
+	private static readonly DatatypeImplementation c_boolean;
+	private static readonly DatatypeImplementation c_byte;
+	private static readonly DatatypeImplementation c_char;
+	private static readonly DatatypeImplementation c_date;
+	private static readonly DatatypeImplementation c_dateTime;
+	private static readonly DatatypeImplementation c_dateTimeNoTz;
+	private static readonly DatatypeImplementation c_dateTimeTz;
+	private static readonly DatatypeImplementation c_day;
+	private static readonly DatatypeImplementation c_decimal;
+	private static readonly DatatypeImplementation c_double;
+	private static readonly DatatypeImplementation c_doubleXdr;
+	private static readonly DatatypeImplementation c_duration;
+	private static readonly DatatypeImplementation c_ENTITY;
+	private static readonly DatatypeImplementation c_ENTITIES;
+	private static readonly DatatypeImplementation c_ENUMERATION;
+	private static readonly DatatypeImplementation c_fixed;
+	private static readonly DatatypeImplementation c_float;
+	private static readonly DatatypeImplementation c_floatXdr;
+	private static readonly DatatypeImplementation c_hexBinary;
+	private static readonly DatatypeImplementation c_ID;
+	private static readonly DatatypeImplementation c_IDREF;
+	private static readonly DatatypeImplementation c_IDREFS;
+	private static readonly DatatypeImplementation c_int;
+	private static readonly DatatypeImplementation c_integer;
+	private static readonly DatatypeImplementation c_language;
+	private static readonly DatatypeImplementation c_long;
+	private static readonly DatatypeImplementation c_month;
+	private static readonly DatatypeImplementation c_monthDay;
+	private static readonly DatatypeImplementation c_Name;
+	private static readonly DatatypeImplementation c_NCName;
+	private static readonly DatatypeImplementation c_negativeInteger;
+	private static readonly DatatypeImplementation c_NMTOKEN;
+	private static readonly DatatypeImplementation c_NMTOKENS;
+	private static readonly DatatypeImplementation c_nonNegativeInteger;
+	private static readonly DatatypeImplementation c_nonPositiveInteger;
+	private static readonly DatatypeImplementation c_normalizedString;
+	private static readonly DatatypeImplementation c_NOTATION;
+	private static readonly DatatypeImplementation c_positiveInteger;
+	private static readonly DatatypeImplementation c_QName;
+	private static readonly DatatypeImplementation c_QNameXdr;
+	private static readonly DatatypeImplementation c_short;
+	private static readonly DatatypeImplementation c_string;
+	private static readonly DatatypeImplementation c_time;
+	private static readonly DatatypeImplementation c_timeNoTz;
+	private static readonly DatatypeImplementation c_timeTz;
+	private static readonly DatatypeImplementation c_token;
+	private static readonly DatatypeImplementation c_unsignedByte;
+	private static readonly DatatypeImplementation c_unsignedInt;
+	private static readonly DatatypeImplementation c_unsignedLong;
+	private static readonly DatatypeImplementation c_unsignedShort;
+	private static readonly DatatypeImplementation c_uuid;
+	private static readonly DatatypeImplementation c_year;
+	private static readonly DatatypeImplementation c_yearMonth;
+	internal static readonly DatatypeImplementation c_normalizedStringV1Compat;
+	internal static readonly DatatypeImplementation c_tokenV1Compat;
+	private static readonly DatatypeImplementation c_anyAtomicType;
+	private static readonly DatatypeImplementation c_dayTimeDuration;
+	private static readonly DatatypeImplementation c_untypedAtomicType;
+	private static readonly DatatypeImplementation c_yearMonthDuration;
+	private static readonly DatatypeImplementation[] c_tokenizedTypes;
+	private static readonly DatatypeImplementation[] c_tokenizedTypesXsd;
+	private static readonly DatatypeImplementation.SchemaDatatypeMap[] c_XdrTypes;
+	private static readonly DatatypeImplementation.SchemaDatatypeMap[] c_XsdTypes;
 
 	internal static XmlSchemaSimpleType AnySimpleType { get; }
 	internal static XmlSchemaSimpleType UntypedAtomicType { get; }
@@ -305,9 +305,9 @@ internal abstract class DatatypeImplementation : XmlSchemaDatatype // TypeDefInd
 
 private class DatatypeImplementation.SchemaDatatypeMap : IComparable // TypeDefIndex: 2180
 {
-	private string name; 
-	private DatatypeImplementation type; 
-	private int parentIndex; 
+	private string name;
+	private DatatypeImplementation type;
+	private int parentIndex;
 
 	public string Name { get; }
 	public int ParentIndex { get; }
@@ -329,8 +329,8 @@ private class DatatypeImplementation.SchemaDatatypeMap : IComparable // TypeDefI
 
 internal class Datatype_List : Datatype_anySimpleType // TypeDefIndex: 2181
 {
-	private DatatypeImplementation itemType; 
-	private int minListSize; 
+	private DatatypeImplementation itemType;
+	private int minListSize;
 
 	public override Type ValueType { get; }
 	public override XmlTokenizedType TokenizedType { get; }
@@ -366,9 +366,9 @@ internal class Datatype_List : Datatype_anySimpleType // TypeDefIndex: 2181
 
 internal class Datatype_union : Datatype_anySimpleType // TypeDefIndex: 2182
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private XmlSchemaSimpleType[] types; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private XmlSchemaSimpleType[] types;
 
 	public override Type ValueType { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -410,8 +410,8 @@ internal class Datatype_union : Datatype_anySimpleType // TypeDefIndex: 2182
 
 internal class Datatype_anySimpleType : DatatypeImplementation // TypeDefIndex: 2183
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override Type ValueType { get; }
@@ -509,8 +509,8 @@ internal class Datatype_string : Datatype_anySimpleType // TypeDefIndex: 2186
 
 internal class Datatype_boolean : Datatype_anySimpleType // TypeDefIndex: 2187
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -546,8 +546,8 @@ internal class Datatype_boolean : Datatype_anySimpleType // TypeDefIndex: 2187
 
 internal class Datatype_float : Datatype_anySimpleType // TypeDefIndex: 2188
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -583,8 +583,8 @@ internal class Datatype_float : Datatype_anySimpleType // TypeDefIndex: 2188
 
 internal class Datatype_double : Datatype_anySimpleType // TypeDefIndex: 2189
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -620,9 +620,9 @@ internal class Datatype_double : Datatype_anySimpleType // TypeDefIndex: 2189
 
 internal class Datatype_decimal : Datatype_anySimpleType // TypeDefIndex: 2190
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -658,8 +658,8 @@ internal class Datatype_decimal : Datatype_anySimpleType // TypeDefIndex: 2190
 
 internal class Datatype_duration : Datatype_anySimpleType // TypeDefIndex: 2191
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -721,9 +721,9 @@ internal class Datatype_dayTimeDuration : Datatype_duration // TypeDefIndex: 219
 
 internal class Datatype_dateTimeBase : Datatype_anySimpleType // TypeDefIndex: 2194
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private XsdDateTimeFlags dateTimeFlags; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private XsdDateTimeFlags dateTimeFlags;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -871,8 +871,8 @@ internal class Datatype_month : Datatype_dateTimeBase // TypeDefIndex: 2206
 
 internal class Datatype_hexBinary : Datatype_anySimpleType // TypeDefIndex: 2207
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -908,8 +908,8 @@ internal class Datatype_hexBinary : Datatype_anySimpleType // TypeDefIndex: 2207
 
 internal class Datatype_base64Binary : Datatype_anySimpleType // TypeDefIndex: 2208
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -945,8 +945,8 @@ internal class Datatype_base64Binary : Datatype_anySimpleType // TypeDefIndex: 2
 
 internal class Datatype_anyURI : Datatype_anySimpleType // TypeDefIndex: 2209
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -985,8 +985,8 @@ internal class Datatype_anyURI : Datatype_anySimpleType // TypeDefIndex: 2209
 
 internal class Datatype_QName : Datatype_anySimpleType // TypeDefIndex: 2210
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1170,8 +1170,8 @@ internal class Datatype_ENTITY : Datatype_NCName // TypeDefIndex: 2221
 
 internal class Datatype_NOTATION : Datatype_anySimpleType // TypeDefIndex: 2222
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1223,7 +1223,7 @@ internal class Datatype_integer : Datatype_decimal // TypeDefIndex: 2223
 
 internal class Datatype_nonPositiveInteger : Datatype_integer // TypeDefIndex: 2224
 {
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1244,7 +1244,7 @@ internal class Datatype_nonPositiveInteger : Datatype_integer // TypeDefIndex: 2
 
 internal class Datatype_negativeInteger : Datatype_nonPositiveInteger // TypeDefIndex: 2225
 {
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1262,9 +1262,9 @@ internal class Datatype_negativeInteger : Datatype_nonPositiveInteger // TypeDef
 
 internal class Datatype_long : Datatype_integer // TypeDefIndex: 2226
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	internal override bool HasValueFacets { get; }
@@ -1295,9 +1295,9 @@ internal class Datatype_long : Datatype_integer // TypeDefIndex: 2226
 
 internal class Datatype_int : Datatype_long // TypeDefIndex: 2227
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1325,9 +1325,9 @@ internal class Datatype_int : Datatype_long // TypeDefIndex: 2227
 
 internal class Datatype_short : Datatype_int // TypeDefIndex: 2228
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1355,9 +1355,9 @@ internal class Datatype_short : Datatype_int // TypeDefIndex: 2228
 
 internal class Datatype_byte : Datatype_short // TypeDefIndex: 2229
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1385,7 +1385,7 @@ internal class Datatype_byte : Datatype_short // TypeDefIndex: 2229
 
 internal class Datatype_nonNegativeInteger : Datatype_integer // TypeDefIndex: 2230
 {
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1406,9 +1406,9 @@ internal class Datatype_nonNegativeInteger : Datatype_integer // TypeDefIndex: 2
 
 internal class Datatype_unsignedLong : Datatype_nonNegativeInteger // TypeDefIndex: 2231
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1436,9 +1436,9 @@ internal class Datatype_unsignedLong : Datatype_nonNegativeInteger // TypeDefInd
 
 internal class Datatype_unsignedInt : Datatype_unsignedLong // TypeDefIndex: 2232
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1466,9 +1466,9 @@ internal class Datatype_unsignedInt : Datatype_unsignedLong // TypeDefIndex: 223
 
 internal class Datatype_unsignedShort : Datatype_unsignedInt // TypeDefIndex: 2233
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1496,9 +1496,9 @@ internal class Datatype_unsignedShort : Datatype_unsignedInt // TypeDefIndex: 22
 
 internal class Datatype_unsignedByte : Datatype_unsignedShort // TypeDefIndex: 2234
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1526,7 +1526,7 @@ internal class Datatype_unsignedByte : Datatype_unsignedShort // TypeDefIndex: 2
 
 internal class Datatype_positiveInteger : Datatype_nonNegativeInteger // TypeDefIndex: 2235
 {
-	private static readonly FacetsChecker numeric10FacetsChecker; 
+	private static readonly FacetsChecker numeric10FacetsChecker;
 
 	internal override FacetsChecker FacetsChecker { get; }
 	public override XmlTypeCode TypeCode { get; }
@@ -1562,8 +1562,8 @@ internal class Datatype_floatXdr : Datatype_float // TypeDefIndex: 2237
 
 internal class Datatype_QNameXdr : Datatype_anySimpleType // TypeDefIndex: 2238
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	public override XmlTokenizedType TokenizedType { get; }
 	public override Type ValueType { get; }
@@ -1597,8 +1597,8 @@ internal class Datatype_ENUMERATION : Datatype_NMTOKEN // TypeDefIndex: 2239
 
 internal class Datatype_char : Datatype_anySimpleType // TypeDefIndex: 2240
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	public override Type ValueType { get; }
 	internal override Type ListValueType { get; }
@@ -1636,8 +1636,8 @@ internal class Datatype_fixed : Datatype_decimal // TypeDefIndex: 2241
 
 internal class Datatype_uuid : Datatype_anySimpleType // TypeDefIndex: 2242
 {
-	private static readonly Type atomicValueType; 
-	private static readonly Type listValueType; 
+	private static readonly Type atomicValueType;
+	private static readonly Type listValueType;
 
 	public override Type ValueType { get; }
 	internal override Type ListValueType { get; }
@@ -1677,14 +1677,14 @@ public sealed class DataUtility // TypeDefIndex: 3579
 
 internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 {
-	internal static readonly DataCommonEventSource Log; 
-	private static long s_nextScopeId; 
+	internal static readonly DataCommonEventSource Log;
+	private static long s_nextScopeId;
 
 
-	[EventAttribute] 
+	[EventAttribute]
 	internal void Trace(string message) { }
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal void Trace<T0>(string format, T0 arg0) { }
 	/* GenericInstMethod :
 	|
@@ -1694,7 +1694,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.Trace<int>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal void Trace<T0, T1>(string format, T0 arg0, T1 arg1) { }
 	/* GenericInstMethod :
 	|
@@ -1714,7 +1714,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.Trace<object, object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal void Trace<T0, T1, T2>(string format, T0 arg0, T1 arg1, T2 arg2) { }
 	/* GenericInstMethod :
 	|
@@ -1734,7 +1734,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.Trace<object, object, object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal void Trace<T0, T1, T2, T3>(string format, T0 arg0, T1 arg1, T2 arg2, T3 arg3) { }
 	/* GenericInstMethod :
 	|
@@ -1748,7 +1748,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.Trace<object, object, object, object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal void Trace<T0, T1, T2, T3, T4>(string format, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
@@ -1758,7 +1758,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.Trace<object, object, object, object, object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal void Trace<T0, T1, T2, T3, T4, T5, T6>(string format, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6) { }
 	/* GenericInstMethod :
 	|
@@ -1768,10 +1768,10 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.Trace<object, object, object, object, object, object, object>
 	*/
 
-	[EventAttribute] 
+	[EventAttribute]
 	internal long EnterScope(string message) { }
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal long EnterScope<T1>(string format, T1 arg1) { }
 	/* GenericInstMethod :
 	|
@@ -1780,7 +1780,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.EnterScope<object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal long EnterScope<T1, T2>(string format, T1 arg1, T2 arg2) { }
 	/* GenericInstMethod :
 	|
@@ -1799,7 +1799,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.EnterScope<object, object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal long EnterScope<T1, T2, T3>(string format, T1 arg1, T2 arg2, T3 arg3) { }
 	/* GenericInstMethod :
 	|
@@ -1817,7 +1817,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.EnterScope<object, object, object>
 	*/
 
-	[NonEventAttribute] 
+	[NonEventAttribute]
 	internal long EnterScope<T1, T2, T3, T4>(string format, T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
@@ -1827,7 +1827,7 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 	|-DataCommonEventSource.EnterScope<object, object, object, object>
 	*/
 
-	[EventAttribute] 
+	[EventAttribute]
 	internal void ExitScope(long scopeId) { }
 
 	public void .ctor() { }
@@ -1838,81 +1838,81 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4176
 
 public class DataColumn : MarshalByValueComponent // TypeDefIndex: 4186
 {
-	private bool _allowNull; 
-	private string _caption; 
-	private string _columnName; 
-	private Type _dataType; 
-	private StorageType _storageType; 
-	internal object _defaultValue; 
-	private DataSetDateTime _dateTimeMode; 
-	private DataExpression _expression; 
-	private int _maxLength; 
-	private int _ordinal; 
-	private bool _readOnly; 
-	internal Index _sortIndex; 
-	internal DataTable _table; 
-	private bool _unique; 
-	internal MappingType _columnMapping; 
-	internal int _hashCode; 
-	internal int _errors; 
-	private bool _isSqlType; 
-	private bool _implementsINullable; 
-	private bool _implementsIChangeTracking; 
-	private bool _implementsIRevertibleChangeTracking; 
-	private bool _implementsIXMLSerializable; 
-	private bool _defaultValueIsNull; 
-	internal List<DataColumn> _dependentColumns; 
-	internal PropertyCollection _extendedProperties; 
-	private DataStorage _storage; 
-	private AutoIncrementValue _autoInc; 
-	internal string _columnUri; 
-	private string _columnPrefix; 
-	internal string _encodedColumnName; 
-	internal SimpleType _simpleType; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
-	[CompilerGeneratedAttribute] 
-	private string <XmlDataType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PropertyChangedEventHandler PropertyChanging; 
+	private bool _allowNull;
+	private string _caption;
+	private string _columnName;
+	private Type _dataType;
+	private StorageType _storageType;
+	internal object _defaultValue;
+	private DataSetDateTime _dateTimeMode;
+	private DataExpression _expression;
+	private int _maxLength;
+	private int _ordinal;
+	private bool _readOnly;
+	internal Index _sortIndex;
+	internal DataTable _table;
+	private bool _unique;
+	internal MappingType _columnMapping;
+	internal int _hashCode;
+	internal int _errors;
+	private bool _isSqlType;
+	private bool _implementsINullable;
+	private bool _implementsIChangeTracking;
+	private bool _implementsIRevertibleChangeTracking;
+	private bool _implementsIXMLSerializable;
+	private bool _defaultValueIsNull;
+	internal List<DataColumn> _dependentColumns;
+	internal PropertyCollection _extendedProperties;
+	private DataStorage _storage;
+	private AutoIncrementValue _autoInc;
+	internal string _columnUri;
+	private string _columnPrefix;
+	internal string _encodedColumnName;
+	internal SimpleType _simpleType;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
+	[CompilerGeneratedAttribute]
+	private string <XmlDataType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PropertyChangedEventHandler PropertyChanging;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool AllowDBNull { get; set; }
-	[DefaultValueAttribute] 
-	[RefreshPropertiesAttribute] 
+	[DefaultValueAttribute]
+	[RefreshPropertiesAttribute]
 	public bool AutoIncrement { get; set; }
 	internal object AutoIncrementCurrent { get; set; }
 	internal AutoIncrementValue AutoInc { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public long AutoIncrementSeed { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public long AutoIncrementStep { get; set; }
 	public string Caption { get; set; }
-	[DefaultValueAttribute] 
-	[RefreshPropertiesAttribute] 
+	[DefaultValueAttribute]
+	[RefreshPropertiesAttribute]
 	public string ColumnName { get; set; }
 	internal string EncodedColumnName { get; }
 	internal IFormatProvider FormatProvider { get; }
 	internal CultureInfo Locale { get; }
 	internal int ObjectID { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string Prefix { get; set; }
 	internal bool Computed { get; }
 	internal DataExpression DataExpression { get; }
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
-	[TypeConverterAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
+	[TypeConverterAttribute]
 	public Type DataType { get; set; }
-	[DefaultValueAttribute] 
-	[RefreshPropertiesAttribute] 
+	[DefaultValueAttribute]
+	[RefreshPropertiesAttribute]
 	public DataSetDateTime DateTimeMode { get; set; }
-	[TypeConverterAttribute] 
+	[TypeConverterAttribute]
 	public object DefaultValue { get; set; }
 	internal bool DefaultValueIsNull { get; }
-	[DefaultValueAttribute] 
-	[RefreshPropertiesAttribute] 
+	[DefaultValueAttribute]
+	[RefreshPropertiesAttribute]
 	public string Expression { get; set; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public PropertyCollection ExtendedProperties { get; }
 	internal bool HasData { get; }
 	internal bool ImplementsINullable { get; }
@@ -1920,26 +1920,26 @@ public class DataColumn : MarshalByValueComponent // TypeDefIndex: 4186
 	internal bool ImplementsIRevertibleChangeTracking { get; }
 	internal bool IsValueType { get; }
 	internal bool IsSqlType { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public int MaxLength { get; set; }
 	public string Namespace { get; set; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public int Ordinal { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool ReadOnly { get; set; }
-	[DebuggerBrowsableAttribute] 
+	[DebuggerBrowsableAttribute]
 	private Index SortIndex { get; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DataTable Table { get; }
 	internal object Item { get; set; }
-	[DesignerSerializationVisibilityAttribute] 
-	[DefaultValueAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[DefaultValueAttribute]
 	public bool Unique { get; set; }
 	internal string XmlDataType { get; set; }
 	internal SimpleType SimpleType { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual MappingType ColumnMapping { get; set; }
 	internal bool IsCustomType { get; }
 	internal bool ImplementsIXMLSerializable { get; }
@@ -2075,10 +2075,10 @@ public class DataColumn : MarshalByValueComponent // TypeDefIndex: 4186
 
 	internal void InternalUnique(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal string get_XmlDataType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_XmlDataType(string value) { }
 
 	internal SimpleType get_SimpleType() { }
@@ -2171,11 +2171,11 @@ public class DataColumn : MarshalByValueComponent // TypeDefIndex: 4186
 
 public class DataColumnChangeEventArgs : EventArgs // TypeDefIndex: 4190
 {
-	private DataColumn _column; 
-	[CompilerGeneratedAttribute] 
-	private readonly DataRow <Row>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ProposedValue>k__BackingField; 
+	private DataColumn _column;
+	[CompilerGeneratedAttribute]
+	private readonly DataRow <Row>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ProposedValue>k__BackingField;
 
 	public object ProposedValue { get; set; }
 
@@ -2184,10 +2184,10 @@ public class DataColumnChangeEventArgs : EventArgs // TypeDefIndex: 4190
 
 	public void .ctor(DataRow row, DataColumn column, object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ProposedValue() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProposedValue(object value) { }
 
 	internal void InitializeColumnChangeEvent(DataColumn column, object value) { }
@@ -2209,21 +2209,21 @@ public sealed class DataColumnChangeEventHandler : MulticastDelegate // TypeDefI
 
 public sealed class DataColumnCollection : InternalDataCollectionBase // TypeDefIndex: 4192
 {
-	private readonly DataTable _table; 
-	private readonly ArrayList _list; 
-	private int _defaultNameIndex; 
-	private DataColumn[] _delayedAddRangeColumns; 
-	private readonly Dictionary<string, DataColumn> _columnFromName; 
-	private bool _fInClear; 
-	private DataColumn[] _columnsImplementingIChangeTracking; 
-	private int _nColumnsImplementingIChangeTracking; 
-	private int _nColumnsImplementingIRevertibleChangeTracking; 
-	[CompilerGeneratedAttribute] 
-	private CollectionChangeEventHandler CollectionChanged; 
-	[CompilerGeneratedAttribute] 
-	private CollectionChangeEventHandler CollectionChanging; 
-	[CompilerGeneratedAttribute] 
-	private CollectionChangeEventHandler ColumnPropertyChanged; 
+	private readonly DataTable _table;
+	private readonly ArrayList _list;
+	private int _defaultNameIndex;
+	private DataColumn[] _delayedAddRangeColumns;
+	private readonly Dictionary<string, DataColumn> _columnFromName;
+	private bool _fInClear;
+	private DataColumn[] _columnsImplementingIChangeTracking;
+	private int _nColumnsImplementingIChangeTracking;
+	private int _nColumnsImplementingIRevertibleChangeTracking;
+	[CompilerGeneratedAttribute]
+	private CollectionChangeEventHandler CollectionChanged;
+	[CompilerGeneratedAttribute]
+	private CollectionChangeEventHandler CollectionChanging;
+	[CompilerGeneratedAttribute]
+	private CollectionChangeEventHandler ColumnPropertyChanged;
 
 	protected override ArrayList List { get; }
 	internal DataColumn[] ColumnsImplementingIChangeTracking { get; }
@@ -2256,16 +2256,16 @@ public sealed class DataColumnCollection : InternalDataCollectionBase // TypeDef
 
 	public DataColumn Add(string columnName, Type type) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_CollectionChanged(CollectionChangeEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_CollectionChanged(CollectionChangeEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void add_ColumnPropertyChanged(CollectionChangeEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void remove_ColumnPropertyChanged(CollectionChangeEventHandler value) { }
 
 	private void ArrayAdd(DataColumn column) { }
@@ -2320,8 +2320,8 @@ public sealed class DataColumnCollection : InternalDataCollectionBase // TypeDef
 
 internal sealed class DataColumnPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 4193
 {
-	[CompilerGeneratedAttribute] 
-	private readonly DataColumn <Column>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly DataColumn <Column>k__BackingField;
 
 	public override AttributeCollection Attributes { get; }
 	internal DataColumn Column { get; }
@@ -2334,7 +2334,7 @@ internal sealed class DataColumnPropertyDescriptor : PropertyDescriptor // TypeD
 
 	public override AttributeCollection get_Attributes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal DataColumn get_Column() { }
 
 	public override Type get_ComponentType() { }
@@ -2357,9 +2357,9 @@ internal sealed class DataColumnPropertyDescriptor : PropertyDescriptor // TypeD
 
 internal sealed class DataError // TypeDefIndex: 4194
 {
-	private string _rowError; 
-	private int _count; 
-	private DataError.ColumnError[] _errorList; 
+	private string _rowError;
+	private int _count;
+	private DataError.ColumnError[] _errorList;
 
 	internal string Text { get; set; }
 	internal bool HasErrors { get; }
@@ -2393,8 +2393,8 @@ internal sealed class DataError // TypeDefIndex: 4194
 
 internal struct DataError.ColumnError // TypeDefIndex: 4195
 {
-	internal DataColumn _column; 
-	internal string _error; 
+	internal DataColumn _column;
+	internal string _error;
 
 }
 
@@ -2413,7 +2413,7 @@ public class DataException : SystemException // TypeDefIndex: 4196
 
 internal struct DataKey // TypeDefIndex: 4207
 {
-	private readonly DataColumn[] _columns; 
+	private readonly DataColumn[] _columns;
 
 	internal DataColumn[] ColumnsReference { get; }
 	internal bool HasValue { get; }
@@ -2458,39 +2458,39 @@ internal struct DataKey // TypeDefIndex: 4207
 
 public class DataRelation // TypeDefIndex: 4208
 {
-	private DataSet _dataSet; 
-	internal PropertyCollection _extendedProperties; 
-	internal string _relationName; 
-	private DataKey _childKey; 
-	private DataKey _parentKey; 
-	private UniqueConstraint _parentKeyConstraint; 
-	private ForeignKeyConstraint _childKeyConstraint; 
-	internal bool _nested; 
-	internal bool _createConstraints; 
-	private bool _checkMultipleNested; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
-	[CompilerGeneratedAttribute] 
-	private PropertyChangedEventHandler PropertyChanging; 
+	private DataSet _dataSet;
+	internal PropertyCollection _extendedProperties;
+	internal string _relationName;
+	private DataKey _childKey;
+	private DataKey _parentKey;
+	private UniqueConstraint _parentKeyConstraint;
+	private ForeignKeyConstraint _childKeyConstraint;
+	internal bool _nested;
+	internal bool _createConstraints;
+	private bool _checkMultipleNested;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
+	[CompilerGeneratedAttribute]
+	private PropertyChangedEventHandler PropertyChanging;
 
 	public virtual DataColumn[] ChildColumns { get; }
 	internal DataColumn[] ChildColumnsReference { get; }
 	internal DataKey ChildKey { get; }
 	public virtual DataTable ChildTable { get; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public virtual DataSet DataSet { get; }
 	public virtual DataColumn[] ParentColumns { get; }
 	internal DataColumn[] ParentColumnsReference { get; }
 	internal DataKey ParentKey { get; }
 	public virtual DataTable ParentTable { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual string RelationName { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual bool Nested { get; set; }
 	public virtual UniqueConstraint ParentKeyConstraint { get; }
 	public virtual ForeignKeyConstraint ChildKeyConstraint { get; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public PropertyCollection ExtendedProperties { get; }
 	internal bool CheckMultipleNested { get; set; }
 	internal int ObjectID { get; }
@@ -2578,12 +2578,12 @@ public class DataRelation // TypeDefIndex: 4208
 
 public abstract class DataRelationCollection : InternalDataCollectionBase // TypeDefIndex: 4209
 {
-	private DataRelation _inTransition; 
-	private int _defaultNameIndex; 
-	private CollectionChangeEventHandler _onCollectionChangedDelegate; 
-	private CollectionChangeEventHandler _onCollectionChangingDelegate; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
+	private DataRelation _inTransition;
+	private int _defaultNameIndex;
+	private CollectionChangeEventHandler _onCollectionChangedDelegate;
+	private CollectionChangeEventHandler _onCollectionChangingDelegate;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
 
 	internal int ObjectID { get; }
 	public abstract DataRelation Item { get; }
@@ -2636,11 +2636,11 @@ public abstract class DataRelationCollection : InternalDataCollectionBase // Typ
 
 internal sealed class DataRelationCollection.DataTableRelationCollection : DataRelationCollection // TypeDefIndex: 4210
 {
-	private readonly DataTable _table; 
-	private readonly ArrayList _relations; 
-	private readonly bool _fParentCollection; 
-	[CompilerGeneratedAttribute] 
-	private CollectionChangeEventHandler RelationPropertyChanged; 
+	private readonly DataTable _table;
+	private readonly ArrayList _relations;
+	private readonly bool _fParentCollection;
+	[CompilerGeneratedAttribute]
+	private CollectionChangeEventHandler RelationPropertyChanged;
 
 	protected override ArrayList List { get; }
 	public override DataRelation Item { get; }
@@ -2659,10 +2659,10 @@ internal sealed class DataRelationCollection.DataTableRelationCollection : DataR
 
 	public override DataRelation get_Item(string name) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void add_RelationPropertyChanged(CollectionChangeEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void remove_RelationPropertyChanged(CollectionChangeEventHandler value) { }
 
 	private void AddCache(DataRelation relation) { }
@@ -2677,9 +2677,9 @@ internal sealed class DataRelationCollection.DataTableRelationCollection : DataR
 
 internal sealed class DataRelationCollection.DataSetRelationCollection : DataRelationCollection // TypeDefIndex: 4211
 {
-	private readonly DataSet _dataSet; 
-	private readonly ArrayList _relations; 
-	private DataRelation[] _delayLoadingRelations; 
+	private readonly DataSet _dataSet;
+	private readonly ArrayList _relations;
+	private DataRelation[] _delayLoadingRelations;
 
 	protected override ArrayList List { get; }
 	public override DataRelation Item { get; }
@@ -2706,8 +2706,8 @@ internal sealed class DataRelationCollection.DataSetRelationCollection : DataRel
 
 internal sealed class DataRelationPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 4212
 {
-	[CompilerGeneratedAttribute] 
-	private readonly DataRelation <Relation>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly DataRelation <Relation>k__BackingField;
 
 	internal DataRelation Relation { get; }
 	public override Type ComponentType { get; }
@@ -2717,7 +2717,7 @@ internal sealed class DataRelationPropertyDescriptor : PropertyDescriptor // Typ
 
 	internal void .ctor(DataRelation dataRelation) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal DataRelation get_Relation() { }
 
 	public override Type get_ComponentType() { }
@@ -2740,22 +2740,22 @@ internal sealed class DataRelationPropertyDescriptor : PropertyDescriptor // Typ
 
 public class DataRow // TypeDefIndex: 4213
 {
-	private readonly DataTable _table; 
-	private readonly DataColumnCollection _columns; 
-	internal int _oldRecord; 
-	internal int _newRecord; 
-	internal int _tempRecord; 
-	internal long _rowID; 
-	internal DataRowAction _action; 
-	internal bool _inChangingEvent; 
-	internal bool _inDeletingEvent; 
-	internal bool _inCascade; 
-	private DataColumn _lastChangedColumn; 
-	private int _countColumnChange; 
-	private DataError _error; 
-	private int _rbTreeNodeId; 
-	private static int s_objectTypeCount; 
-	internal readonly int _objectID; 
+	private readonly DataTable _table;
+	private readonly DataColumnCollection _columns;
+	internal int _oldRecord;
+	internal int _newRecord;
+	internal int _tempRecord;
+	internal long _rowID;
+	internal DataRowAction _action;
+	internal bool _inChangingEvent;
+	internal bool _inDeletingEvent;
+	internal bool _inCascade;
+	private DataColumn _lastChangedColumn;
+	private int _countColumnChange;
+	private DataError _error;
+	private int _rbTreeNodeId;
+	private static int s_objectTypeCount;
+	internal readonly int _objectID;
 
 	internal DataColumn LastChangedColumn { get; set; }
 	internal bool HasPropertyChanged { get; }
@@ -2822,12 +2822,12 @@ public class DataRow // TypeDefIndex: 4213
 
 	public void AcceptChanges() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public void BeginEdit() { }
 
 	private bool BeginEditInternal() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public void CancelEdit() { }
 
 	private void CheckColumn(DataColumn column) { }
@@ -2836,7 +2836,7 @@ public class DataRow // TypeDefIndex: 4213
 
 	public void Delete() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public void EndEdit() { }
 
 	public void SetColumnError(int columnIndex, string error) { }
@@ -2921,8 +2921,8 @@ public class DataRow // TypeDefIndex: 4213
 
 public sealed class DataRowBuilder // TypeDefIndex: 4214
 {
-	internal readonly DataTable _table; 
-	internal int _record; 
+	internal readonly DataTable _table;
+	internal int _record;
 
 
 	internal void .ctor(DataTable table, int record) { }
@@ -2931,7 +2931,7 @@ public sealed class DataRowBuilder // TypeDefIndex: 4214
 
 public enum DataRowAction // TypeDefIndex: 4215
 {
-	public int value__; 
+	public int value__;
 	public const DataRowAction Nothing = 0;
 	public const DataRowAction Delete = 1;
 	public const DataRowAction Change = 2;
@@ -2945,10 +2945,10 @@ public enum DataRowAction // TypeDefIndex: 4215
 
 public class DataRowChangeEventArgs : EventArgs // TypeDefIndex: 4216
 {
-	[CompilerGeneratedAttribute] 
-	private readonly DataRow <Row>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly DataRowAction <Action>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly DataRow <Row>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly DataRowAction <Action>k__BackingField;
 
 
 	public void .ctor(DataRow row, DataRowAction action) { }
@@ -2970,9 +2970,9 @@ public sealed class DataRowChangeEventHandler : MulticastDelegate // TypeDefInde
 
 public sealed class DataRowCollection : InternalDataCollectionBase // TypeDefIndex: 4218
 {
-	private readonly DataTable _table; 
-	private readonly DataRowCollection.DataRowTree _list; 
-	internal int _nullInList; 
+	private readonly DataTable _table;
+	private readonly DataRowCollection.DataRowTree _list;
+	internal int _nullInList;
 
 	public override int Count { get; }
 	public DataRow Item { get; }
@@ -3053,7 +3053,7 @@ internal sealed class DataSetClearEventhandler : MulticastDelegate // TypeDefInd
 
 public enum DataRowState // TypeDefIndex: 4222
 {
-	public int value__; 
+	public int value__;
 	public const DataRowState Detached = 1;
 	public const DataRowState Unchanged = 2;
 	public const DataRowState Added = 4;
@@ -3064,7 +3064,7 @@ public enum DataRowState // TypeDefIndex: 4222
 
 public enum DataRowVersion // TypeDefIndex: 4223
 {
-	public int value__; 
+	public int value__;
 	public const DataRowVersion Original = 256;
 	public const DataRowVersion Current = 512;
 	public const DataRowVersion Proposed = 1024;
@@ -3074,12 +3074,12 @@ public enum DataRowVersion // TypeDefIndex: 4223
 
 public class DataRowView : ICustomTypeDescriptor // TypeDefIndex: 4224
 {
-	private readonly DataView _dataView; 
-	private readonly DataRow _row; 
-	private bool _delayBeginEdit; 
-	private static readonly PropertyDescriptorCollection s_zeroPropertyDescriptorCollection; 
-	[CompilerGeneratedAttribute] 
-	private PropertyChangedEventHandler PropertyChanged; 
+	private readonly DataView _dataView;
+	private readonly DataRow _row;
+	private bool _delayBeginEdit;
+	private static readonly PropertyDescriptorCollection s_zeroPropertyDescriptorCollection;
+	[CompilerGeneratedAttribute]
+	private PropertyChangedEventHandler PropertyChanged;
 
 	public DataView DataView { get; }
 	private DataRowVersion RowVersionDefault { get; }
@@ -3133,64 +3133,64 @@ public class DataRowView : ICustomTypeDescriptor // TypeDefIndex: 4224
 
 public class DataSet : MarshalByValueComponent, IXmlSerializable, ISerializable // TypeDefIndex: 4226
 {
-	private DataViewManager _defaultViewManager; 
-	private readonly DataTableCollection _tableCollection; 
-	private readonly DataRelationCollection _relationCollection; 
-	internal PropertyCollection _extendedProperties; 
-	private string _dataSetName; 
-	private string _datasetPrefix; 
-	internal string _namespaceURI; 
-	private bool _enforceConstraints; 
-	private bool _caseSensitive; 
-	private CultureInfo _culture; 
-	private bool _cultureUserSet; 
-	internal bool _fInReadXml; 
-	internal bool _fInLoadDiffgram; 
-	internal bool _fTopLevelTable; 
-	internal bool _fInitInProgress; 
-	internal bool _fEnableCascading; 
-	internal bool _fIsSchemaLoading; 
-	internal string _mainTableName; 
-	private SerializationFormat _remotingFormat; 
-	private object _defaultViewManagerLock; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
-	private static XmlSchemaComplexType s_schemaTypeForWSDL; 
-	internal bool _useDataSetSchemaOnly; 
-	internal bool _udtIsWrapped; 
-	[CompilerGeneratedAttribute] 
-	private PropertyChangedEventHandler PropertyChanging; 
-	[CompilerGeneratedAttribute] 
-	private MergeFailedEventHandler MergeFailed; 
-	[CompilerGeneratedAttribute] 
-	private DataRowCreatedEventHandler DataRowCreated; 
-	[CompilerGeneratedAttribute] 
-	private DataSetClearEventhandler ClearFunctionCalled; 
+	private DataViewManager _defaultViewManager;
+	private readonly DataTableCollection _tableCollection;
+	private readonly DataRelationCollection _relationCollection;
+	internal PropertyCollection _extendedProperties;
+	private string _dataSetName;
+	private string _datasetPrefix;
+	internal string _namespaceURI;
+	private bool _enforceConstraints;
+	private bool _caseSensitive;
+	private CultureInfo _culture;
+	private bool _cultureUserSet;
+	internal bool _fInReadXml;
+	internal bool _fInLoadDiffgram;
+	internal bool _fTopLevelTable;
+	internal bool _fInitInProgress;
+	internal bool _fEnableCascading;
+	internal bool _fIsSchemaLoading;
+	internal string _mainTableName;
+	private SerializationFormat _remotingFormat;
+	private object _defaultViewManagerLock;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
+	private static XmlSchemaComplexType s_schemaTypeForWSDL;
+	internal bool _useDataSetSchemaOnly;
+	internal bool _udtIsWrapped;
+	[CompilerGeneratedAttribute]
+	private PropertyChangedEventHandler PropertyChanging;
+	[CompilerGeneratedAttribute]
+	private MergeFailedEventHandler MergeFailed;
+	[CompilerGeneratedAttribute]
+	private DataRowCreatedEventHandler DataRowCreated;
+	[CompilerGeneratedAttribute]
+	private DataSetClearEventhandler ClearFunctionCalled;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public SerializationFormat RemotingFormat { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public virtual SchemaSerializationMode SchemaSerializationMode { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool CaseSensitive { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool EnforceConstraints { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string DataSetName { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string Namespace { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string Prefix { get; set; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public PropertyCollection ExtendedProperties { get; }
 	public CultureInfo Locale { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public override ISite Site { get; }
-	[DesignerSerializationVisibilityAttribute] 
+	[DesignerSerializationVisibilityAttribute]
 	public DataRelationCollection Relations { get; }
-	[DesignerSerializationVisibilityAttribute] 
+	[DesignerSerializationVisibilityAttribute]
 	public DataTableCollection Tables { get; }
 	internal string MainTableName { get; set; }
 	internal int ObjectID { get; }
@@ -3368,7 +3368,7 @@ public class DataSet : MarshalByValueComponent, IXmlSerializable, ISerializable 
 
 public enum DataSetDateTime // TypeDefIndex: 4227
 {
-	public int value__; 
+	public int value__;
 	public const DataSetDateTime Local = 1;
 	public const DataSetDateTime Unspecified = 2;
 	public const DataSetDateTime UnspecifiedLocal = 3;
@@ -3378,136 +3378,136 @@ public enum DataSetDateTime // TypeDefIndex: 4227
 
 public class DataTable : MarshalByValueComponent, ISerializable, IXmlSerializable // TypeDefIndex: 4228
 {
-	private DataSet _dataSet; 
-	private DataView _defaultView; 
-	internal long _nextRowID; 
-	internal readonly DataRowCollection _rowCollection; 
-	internal readonly DataColumnCollection _columnCollection; 
-	private readonly ConstraintCollection _constraintCollection; 
-	private int _elementColumnCount; 
-	internal DataRelationCollection _parentRelationsCollection; 
-	internal DataRelationCollection _childRelationsCollection; 
-	internal readonly RecordManager _recordManager; 
-	internal readonly List<Index> _indexes; 
-	private List<Index> _shadowIndexes; 
-	private int _shadowCount; 
-	internal PropertyCollection _extendedProperties; 
-	private string _tableName; 
-	internal string _tableNamespace; 
-	private string _tablePrefix; 
-	internal DataExpression _displayExpression; 
-	internal bool _fNestedInDataset; 
-	private CultureInfo _culture; 
-	private bool _cultureUserSet; 
-	private CompareInfo _compareInfo; 
-	private CompareOptions _compareFlags; 
-	private IFormatProvider _formatProvider; 
-	private StringComparer _hashCodeProvider; 
-	private bool _caseSensitive; 
-	private bool _caseSensitiveUserSet; 
-	internal string _encodedTableName; 
-	internal DataColumn _xmlText; 
-	internal DataColumn _colUnique; 
-	internal Decimal _minOccurs; 
-	internal Decimal _maxOccurs; 
-	internal bool _repeatableElement; 
-	private object _typeName; 
-	internal UniqueConstraint _primaryKey; 
-	internal IndexField[] _primaryIndex; 
-	private DataColumn[] _delayedSetPrimaryKey; 
-	private Index _loadIndex; 
-	private Index _loadIndexwithOriginalAdded; 
-	private Index _loadIndexwithCurrentDeleted; 
-	private int _suspendIndexEvents; 
-	private bool _savedEnforceConstraints; 
-	private bool _inDataLoad; 
-	private bool _initialLoad; 
-	private bool _schemaLoading; 
-	private bool _enforceConstraints; 
-	internal bool _suspendEnforceConstraints; 
-	protected internal bool fInitInProgress; 
-	private bool _inLoad; 
-	internal bool _fInLoadDiffgram; 
-	private byte _isTypedDataTable; 
-	private DataRow[] _emptyDataRowArray; 
-	private PropertyDescriptorCollection _propertyDescriptorCollectionCache; 
-	private DataRelation[] _nestedParentRelations; 
-	internal List<DataColumn> _dependentColumns; 
-	private bool _mergingData; 
-	private DataRowChangeEventHandler _onRowChangedDelegate; 
-	private DataRowChangeEventHandler _onRowChangingDelegate; 
-	private DataRowChangeEventHandler _onRowDeletingDelegate; 
-	private DataRowChangeEventHandler _onRowDeletedDelegate; 
-	private DataColumnChangeEventHandler _onColumnChangedDelegate; 
-	private DataColumnChangeEventHandler _onColumnChangingDelegate; 
-	private DataTableClearEventHandler _onTableClearingDelegate; 
-	private DataTableClearEventHandler _onTableClearedDelegate; 
-	private DataTableNewRowEventHandler _onTableNewRowDelegate; 
-	private PropertyChangedEventHandler _onPropertyChangingDelegate; 
-	private readonly DataRowBuilder _rowBuilder; 
-	internal readonly List<DataView> _delayedViews; 
-	private readonly List<DataViewListener> _dataViewListeners; 
-	internal Hashtable _rowDiffId; 
-	internal readonly ReaderWriterLockSlim _indexesLock; 
-	internal int _ukColumnPositionForInference; 
-	private SerializationFormat _remotingFormat; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
+	private DataSet _dataSet;
+	private DataView _defaultView;
+	internal long _nextRowID;
+	internal readonly DataRowCollection _rowCollection;
+	internal readonly DataColumnCollection _columnCollection;
+	private readonly ConstraintCollection _constraintCollection;
+	private int _elementColumnCount;
+	internal DataRelationCollection _parentRelationsCollection;
+	internal DataRelationCollection _childRelationsCollection;
+	internal readonly RecordManager _recordManager;
+	internal readonly List<Index> _indexes;
+	private List<Index> _shadowIndexes;
+	private int _shadowCount;
+	internal PropertyCollection _extendedProperties;
+	private string _tableName;
+	internal string _tableNamespace;
+	private string _tablePrefix;
+	internal DataExpression _displayExpression;
+	internal bool _fNestedInDataset;
+	private CultureInfo _culture;
+	private bool _cultureUserSet;
+	private CompareInfo _compareInfo;
+	private CompareOptions _compareFlags;
+	private IFormatProvider _formatProvider;
+	private StringComparer _hashCodeProvider;
+	private bool _caseSensitive;
+	private bool _caseSensitiveUserSet;
+	internal string _encodedTableName;
+	internal DataColumn _xmlText;
+	internal DataColumn _colUnique;
+	internal Decimal _minOccurs;
+	internal Decimal _maxOccurs;
+	internal bool _repeatableElement;
+	private object _typeName;
+	internal UniqueConstraint _primaryKey;
+	internal IndexField[] _primaryIndex;
+	private DataColumn[] _delayedSetPrimaryKey;
+	private Index _loadIndex;
+	private Index _loadIndexwithOriginalAdded;
+	private Index _loadIndexwithCurrentDeleted;
+	private int _suspendIndexEvents;
+	private bool _savedEnforceConstraints;
+	private bool _inDataLoad;
+	private bool _initialLoad;
+	private bool _schemaLoading;
+	private bool _enforceConstraints;
+	internal bool _suspendEnforceConstraints;
+	protected internal bool fInitInProgress;
+	private bool _inLoad;
+	internal bool _fInLoadDiffgram;
+	private byte _isTypedDataTable;
+	private DataRow[] _emptyDataRowArray;
+	private PropertyDescriptorCollection _propertyDescriptorCollectionCache;
+	private DataRelation[] _nestedParentRelations;
+	internal List<DataColumn> _dependentColumns;
+	private bool _mergingData;
+	private DataRowChangeEventHandler _onRowChangedDelegate;
+	private DataRowChangeEventHandler _onRowChangingDelegate;
+	private DataRowChangeEventHandler _onRowDeletingDelegate;
+	private DataRowChangeEventHandler _onRowDeletedDelegate;
+	private DataColumnChangeEventHandler _onColumnChangedDelegate;
+	private DataColumnChangeEventHandler _onColumnChangingDelegate;
+	private DataTableClearEventHandler _onTableClearingDelegate;
+	private DataTableClearEventHandler _onTableClearedDelegate;
+	private DataTableNewRowEventHandler _onTableNewRowDelegate;
+	private PropertyChangedEventHandler _onPropertyChangingDelegate;
+	private readonly DataRowBuilder _rowBuilder;
+	internal readonly List<DataView> _delayedViews;
+	private readonly List<DataViewListener> _dataViewListeners;
+	internal Hashtable _rowDiffId;
+	internal readonly ReaderWriterLockSlim _indexesLock;
+	internal int _ukColumnPositionForInference;
+	private SerializationFormat _remotingFormat;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
 
 	public bool CaseSensitive { get; set; }
 	internal bool AreIndexEventsSuspended { get; }
 	private bool IsTypedDataTable { get; }
 	internal bool SelfNested { get; }
-	[DebuggerBrowsableAttribute] 
+	[DebuggerBrowsableAttribute]
 	internal List<Index> LiveIndexes { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public SerializationFormat RemotingFormat { get; set; }
 	internal int UKColumnPositionForInference { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DataRelationCollection ChildRelations { get; }
-	[DesignerSerializationVisibilityAttribute] 
+	[DesignerSerializationVisibilityAttribute]
 	public DataColumnCollection Columns { get; }
 	private CompareInfo CompareInfo { get; }
-	[DesignerSerializationVisibilityAttribute] 
+	[DesignerSerializationVisibilityAttribute]
 	public ConstraintCollection Constraints { get; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DataSet DataSet { get; }
 	internal string DisplayExpressionInternal { get; }
 	internal bool EnforceConstraints { get; set; }
 	internal bool SuspendEnforceConstraints { get; set; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public PropertyCollection ExtendedProperties { get; }
 	internal IFormatProvider FormatProvider { get; }
 	public CultureInfo Locale { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public int MinimumCapacity { get; set; }
 	internal int RecordCapacity { get; }
 	internal int ElementColumnCount { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DataRelationCollection ParentRelations { get; }
 	internal bool MergingData { get; set; }
 	internal DataRelation[] NestedParentRelations { get; }
 	internal bool SchemaLoading { get; }
 	internal int NestedParentsCount { get; }
-	[TypeConverterAttribute] 
+	[TypeConverterAttribute]
 	public DataColumn[] PrimaryKey { get; set; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public DataRowCollection Rows { get; }
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
 	public string TableName { get; set; }
 	internal string EncodedTableName { get; }
 	public string Namespace { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string Prefix { get; set; }
 	internal DataColumn XmlText { get; set; }
 	internal Decimal MaxOccurs { get; set; }
 	internal Decimal MinOccurs { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public override ISite Site { get; }
 	internal bool NeedColumnChangeEvents { get; }
 	internal XmlQualifiedName TypeName { get; set; }
@@ -3949,7 +3949,7 @@ public class DataTable : MarshalByValueComponent, ISerializable, IXmlSerializabl
 
 internal struct DataTable.RowDiffIdUsageSection // TypeDefIndex: 4229
 {
-	private DataTable _targetTable; 
+	private DataTable _targetTable;
 
 
 	internal void Prepare(DataTable table) { }
@@ -3958,7 +3958,7 @@ internal struct DataTable.RowDiffIdUsageSection // TypeDefIndex: 4229
 
 internal struct DataTable.DSRowDiffIdUsageSection // TypeDefIndex: 4230
 {
-	private DataSet _targetDS; 
+	private DataSet _targetDS;
 
 
 	internal void Prepare(DataSet ds) { }
@@ -3967,8 +3967,8 @@ internal struct DataTable.DSRowDiffIdUsageSection // TypeDefIndex: 4230
 
 public sealed class DataTableClearEventArgs : EventArgs // TypeDefIndex: 4231
 {
-	[CompilerGeneratedAttribute] 
-	private readonly DataTable <Table>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly DataTable <Table>k__BackingField;
 
 
 	public void .ctor(DataTable dataTable) { }
@@ -3990,14 +3990,14 @@ public sealed class DataTableClearEventHandler : MulticastDelegate // TypeDefInd
 
 public sealed class DataTableCollection : InternalDataCollectionBase // TypeDefIndex: 4233
 {
-	private readonly DataSet _dataSet; 
-	private readonly ArrayList _list; 
-	private int _defaultNameIndex; 
-	private DataTable[] _delayedAddRangeTables; 
-	private CollectionChangeEventHandler _onCollectionChangedDelegate; 
-	private CollectionChangeEventHandler _onCollectionChangingDelegate; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
+	private readonly DataSet _dataSet;
+	private readonly ArrayList _list;
+	private int _defaultNameIndex;
+	private DataTable[] _delayedAddRangeTables;
+	private CollectionChangeEventHandler _onCollectionChangedDelegate;
+	private CollectionChangeEventHandler _onCollectionChangingDelegate;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
 
 	protected override ArrayList List { get; }
 	internal int ObjectID { get; }
@@ -4072,8 +4072,8 @@ public sealed class DataTableCollection : InternalDataCollectionBase // TypeDefI
 
 public sealed class DataTableNewRowEventArgs : EventArgs // TypeDefIndex: 4234
 {
-	[CompilerGeneratedAttribute] 
-	private readonly DataRow <Row>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly DataRow <Row>k__BackingField;
 
 
 	public void .ctor(DataRow dataRow) { }
@@ -4096,57 +4096,57 @@ public sealed class DataTableNewRowEventHandler : MulticastDelegate // TypeDefIn
 public class DataView : MarshalByValueComponent, IBindingList, IList, ICollection, IEnumerable // TypeDefIndex: 4237
 {
 
-[DefaultEventAttribute] 
-[DefaultPropertyAttribute] 
-[DefaultMemberAttribute] 
+[DefaultEventAttribute]
+[DefaultPropertyAttribute]
+[DefaultMemberAttribute]
 public class DataView : MarshalByValueComponent, IBindingList, IList, ICollection, IEnumerable
-	private DataViewManager _dataViewManager; 
-	private DataTable _table; 
-	private bool _locked; 
-	private Index _index; 
-	private Dictionary<string, Index> _findIndexes; 
-	private string _sort; 
-	private Comparison<DataRow> _comparison; 
-	private IFilter _rowFilter; 
-	private DataViewRowState _recordStates; 
-	private bool _shouldOpen; 
-	private bool _open; 
-	private bool _allowNew; 
-	private bool _allowEdit; 
-	private bool _allowDelete; 
-	private bool _applyDefaultSort; 
-	internal DataRow _addNewRow; 
-	private ListChangedEventArgs _addNewMoved; 
-	private ListChangedEventHandler _onListChanged; 
-	internal static ListChangedEventArgs s_resetEventArgs; 
-	private DataViewRowState _delayedRecordStates; 
-	private bool _fEndInitInProgress; 
-	private Dictionary<DataRow, DataRowView> _rowViewCache; 
-	private readonly Dictionary<DataRow, DataRowView> _rowViewBuffer; 
-	private DataViewListener _dvListener; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
+	private DataViewManager _dataViewManager;
+	private DataTable _table;
+	private bool _locked;
+	private Index _index;
+	private Dictionary<string, Index> _findIndexes;
+	private string _sort;
+	private Comparison<DataRow> _comparison;
+	private IFilter _rowFilter;
+	private DataViewRowState _recordStates;
+	private bool _shouldOpen;
+	private bool _open;
+	private bool _allowNew;
+	private bool _allowEdit;
+	private bool _allowDelete;
+	private bool _applyDefaultSort;
+	internal DataRow _addNewRow;
+	private ListChangedEventArgs _addNewMoved;
+	private ListChangedEventHandler _onListChanged;
+	internal static ListChangedEventArgs s_resetEventArgs;
+	private DataViewRowState _delayedRecordStates;
+	private bool _fEndInitInProgress;
+	private Dictionary<DataRow, DataRowView> _rowViewCache;
+	private readonly Dictionary<DataRow, DataRowView> _rowViewBuffer;
+	private DataViewListener _dvListener;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool AllowDelete { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool AllowNew { get; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public int Count { get; }
 	private int CountFromIndex { get; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public DataViewManager DataViewManager { get; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	protected bool IsOpen { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public DataViewRowState RowStateFilter { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string Sort { get; }
 	internal Comparison<DataRow> SortComparison { get; }
 	private object System.Collections.ICollection.SyncRoot { get; }
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
-	[TypeConverterAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
+	[TypeConverterAttribute]
 	public DataTable Table { get; }
 	private object System.Collections.IList.Item { get; set; }
 	public DataRowView Item { get; }
@@ -4277,7 +4277,7 @@ public class DataView : MarshalByValueComponent, IBindingList, IList, ICollectio
 
 private sealed class DataView.DataRowReferenceComparer : IEqualityComparer<DataRow> // TypeDefIndex: 4238
 {
-	internal static readonly DataView.DataRowReferenceComparer s_default; 
+	internal static readonly DataView.DataRowReferenceComparer s_default;
 
 
 	private void .ctor() { }
@@ -4292,10 +4292,10 @@ private sealed class DataView.DataRowReferenceComparer : IEqualityComparer<DataR
 
 internal sealed class DataViewListener // TypeDefIndex: 4239
 {
-	private readonly WeakReference _dvWeak; 
-	private DataTable _table; 
-	private Index _index; 
-	internal readonly int _objectID; 
+	private readonly WeakReference _dvWeak;
+	private DataTable _table;
+	private Index _index;
+	internal readonly int _objectID;
 
 
 	internal void .ctor(DataView dv) { }
@@ -4328,11 +4328,11 @@ internal sealed class DataViewListener // TypeDefIndex: 4239
 
 public class DataViewManager : MarshalByValueComponent // TypeDefIndex: 4240
 {
-	private DataViewSettingCollection _dataViewSettingsCollection; 
-	internal int _nViews; 
-	private static NotSupportedException s_notSupported; 
+	private DataViewSettingCollection _dataViewSettingsCollection;
+	internal int _nViews;
+	private static NotSupportedException s_notSupported;
 
-	[DesignerSerializationVisibilityAttribute] 
+	[DesignerSerializationVisibilityAttribute]
 	public DataViewSettingCollection DataViewSettings { get; }
 
 
@@ -4344,7 +4344,7 @@ public class DataViewManager : MarshalByValueComponent // TypeDefIndex: 4240
 
 public enum DataViewRowState // TypeDefIndex: 4241
 {
-	public int value__; 
+	public int value__;
 	public const DataViewRowState None = 0;
 	public const DataViewRowState Unchanged = 2;
 	public const DataViewRowState Added = 4;
@@ -4358,12 +4358,12 @@ public enum DataViewRowState // TypeDefIndex: 4241
 
 public class DataViewSetting // TypeDefIndex: 4242
 {
-	private DataViewManager _dataViewManager; 
-	private DataTable _table; 
-	private string _sort; 
-	private string _rowFilter; 
-	private DataViewRowState _rowStateFilter; 
-	private bool _applyDefaultSort; 
+	private DataViewManager _dataViewManager;
+	private DataTable _table;
+	private string _sort;
+	private string _rowFilter;
+	private DataViewRowState _rowStateFilter;
+	private bool _applyDefaultSort;
 
 	public bool ApplyDefaultSort { get; }
 	public string RowFilter { get; }
@@ -4389,8 +4389,8 @@ public class DataViewSetting // TypeDefIndex: 4242
 
 public class DataViewSettingCollection // TypeDefIndex: 4243
 {
-	private readonly DataViewManager _dataViewManager; 
-	private readonly Hashtable _list; 
+	private readonly DataViewManager _dataViewManager;
+	private readonly Hashtable _list;
 
 	public virtual DataViewSetting Item { get; set; }
 
@@ -4405,7 +4405,7 @@ public class DataViewSettingCollection // TypeDefIndex: 4243
 
 public enum DbType // TypeDefIndex: 4244
 {
-	public int value__; 
+	public int value__;
 	public const DbType AnsiString = 0;
 	public const DbType Binary = 1;
 	public const DbType Byte = 2;
@@ -4438,14 +4438,14 @@ public enum DbType // TypeDefIndex: 4244
 
 internal sealed class DataExpression : IFilter // TypeDefIndex: 4252
 {
-	internal string _originalExpression; 
-	private bool _parsed; 
-	private bool _bound; 
-	private ExpressionNode _expr; 
-	private DataTable _table; 
-	private readonly StorageType _storageType; 
-	private readonly Type _dataType; 
-	private DataColumn[] _dependency; 
+	internal string _originalExpression;
+	private bool _parsed;
+	private bool _bound;
+	private ExpressionNode _expr;
+	private DataTable _table;
+	private readonly StorageType _storageType;
+	private readonly Type _dataType;
+	private DataColumn[] _dependency;
 
 	internal string Expression { get; }
 	internal ExpressionNode ExpressionNode { get; }
@@ -4488,7 +4488,7 @@ internal sealed class DataExpression : IFilter // TypeDefIndex: 4252
 
 internal sealed class DataTextWriter : XmlWriter // TypeDefIndex: 4338
 {
-	private XmlWriter _xmltextWriter; 
+	private XmlWriter _xmltextWriter;
 
 	internal Stream BaseStream { get; }
 	public override WriteState WriteState { get; }
@@ -4556,7 +4556,7 @@ internal sealed class DataTextWriter : XmlWriter // TypeDefIndex: 4338
 
 internal sealed class DataTextReader : XmlReader // TypeDefIndex: 4339
 {
-	private XmlReader _xmlreader; 
+	private XmlReader _xmlreader;
 
 	public override XmlReaderSettings Settings { get; }
 	public override XmlNodeType NodeType { get; }
@@ -4658,47 +4658,47 @@ internal sealed class DataTextReader : XmlReader // TypeDefIndex: 4339
 
 public abstract class DbCommandBuilder : Component // TypeDefIndex: 4374
 {
-	private DbDataAdapter _dataAdapter; 
-	private DbCommand _insertCommand; 
-	private DbCommand _updateCommand; 
-	private DbCommand _deleteCommand; 
-	private MissingMappingAction _missingMappingAction; 
-	private ConflictOption _conflictDetection; 
-	private bool _setAllValues; 
-	private bool _hasPartialPrimaryKey; 
-	private DataTable _dbSchemaTable; 
-	private DbSchemaRow[] _dbSchemaRows; 
-	private string[] _sourceColumnNames; 
-	private DbCommandBuilder.ParameterNames _parameterNames; 
-	private string _quotedBaseTableName; 
-	private CatalogLocation _catalogLocation; 
-	private string _catalogSeparator; 
-	private string _schemaSeparator; 
-	private string _quotePrefix; 
-	private string _quoteSuffix; 
-	private string _parameterNamePattern; 
-	private string _parameterMarkerFormat; 
-	private int _parameterNameMaxLength; 
+	private DbDataAdapter _dataAdapter;
+	private DbCommand _insertCommand;
+	private DbCommand _updateCommand;
+	private DbCommand _deleteCommand;
+	private MissingMappingAction _missingMappingAction;
+	private ConflictOption _conflictDetection;
+	private bool _setAllValues;
+	private bool _hasPartialPrimaryKey;
+	private DataTable _dbSchemaTable;
+	private DbSchemaRow[] _dbSchemaRows;
+	private string[] _sourceColumnNames;
+	private DbCommandBuilder.ParameterNames _parameterNames;
+	private string _quotedBaseTableName;
+	private CatalogLocation _catalogLocation;
+	private string _catalogSeparator;
+	private string _schemaSeparator;
+	private string _quotePrefix;
+	private string _quoteSuffix;
+	private string _parameterNamePattern;
+	private string _parameterMarkerFormat;
+	private int _parameterNameMaxLength;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual ConflictOption ConflictOption { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual CatalogLocation CatalogLocation { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual string CatalogSeparator { get; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public DbDataAdapter DataAdapter { get; set; }
 	internal int ParameterNameMaxLength { get; }
 	internal string ParameterNamePattern { get; }
 	private string QuotedBaseTableName { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual string QuotePrefix { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual string QuoteSuffix { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual string SchemaSeparator { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public bool SetAllValues { get; }
 	private DbCommand InsertCommand { get; set; }
 	private DbCommand UpdateCommand { get; set; }
@@ -4821,17 +4821,17 @@ public abstract class DbCommandBuilder : Component // TypeDefIndex: 4374
 
 private class DbCommandBuilder.ParameterNames // TypeDefIndex: 4375
 {
-	private string _originalPrefix; 
-	private string _isNullPrefix; 
-	private Regex _parameterNameParser; 
-	private DbCommandBuilder _dbCommandBuilder; 
-	private string[] _baseParameterNames; 
-	private string[] _originalParameterNames; 
-	private string[] _nullParameterNames; 
-	private bool[] _isMutatedName; 
-	private int _count; 
-	private int _genericParameterCount; 
-	private int _adjustedParameterNameMaxLength; 
+	private string _originalPrefix;
+	private string _isNullPrefix;
+	private Regex _parameterNameParser;
+	private DbCommandBuilder _dbCommandBuilder;
+	private string[] _baseParameterNames;
+	private string[] _originalParameterNames;
+	private string[] _nullParameterNames;
+	private bool[] _isMutatedName;
+	private int _count;
+	private int _genericParameterCount;
+	private int _adjustedParameterNameMaxLength;
 
 
 	internal void .ctor(DbCommandBuilder dbCommandBuilder, DbSchemaRow[] schemaRows) { }
@@ -4858,8 +4858,8 @@ private class DbCommandBuilder.ParameterNames // TypeDefIndex: 4375
 
 internal sealed class DbSchemaRow // TypeDefIndex: 4376
 {
-	private DbSchemaTable _schemaTable; 
-	private DataRow _dataRow; 
+	private DbSchemaTable _schemaTable;
+	private DataRow _dataRow;
 
 	internal DataRow DataRow { get; }
 	internal string ColumnName { get; }
@@ -4919,11 +4919,11 @@ internal sealed class DbSchemaRow // TypeDefIndex: 4376
 
 internal sealed class DbSchemaTable // TypeDefIndex: 4377
 {
-	private static readonly string[] s_DBCOLUMN_NAME; 
-	internal DataTable _dataTable; 
-	private DataColumnCollection _columns; 
-	private DataColumn[] _columnCache; 
-	private bool _returnProviderSpecificTypes; 
+	private static readonly string[] s_DBCOLUMN_NAME;
+	internal DataTable _dataTable;
+	private DataColumnCollection _columns;
+	private DataColumn[] _columnCache;
+	private bool _returnProviderSpecificTypes;
 
 	internal DataColumn ColumnName { get; }
 	internal DataColumn BaseServerName { get; }
@@ -4984,7 +4984,7 @@ internal sealed class DbSchemaTable // TypeDefIndex: 4377
 
 private enum DbSchemaTable.ColumnEnum // TypeDefIndex: 4378
 {
-	public int value__; 
+	public int value__;
 	public const DbSchemaTable.ColumnEnum ColumnName = 0;
 	public const DbSchemaTable.ColumnEnum ColumnOrdinal = 1;
 	public const DbSchemaTable.ColumnEnum ColumnSize = 2;
@@ -5011,10 +5011,10 @@ private enum DbSchemaTable.ColumnEnum // TypeDefIndex: 4378
 
 public class DataAdapter : Component // TypeDefIndex: 4379
 {
-	private static readonly object s_eventFillError; 
-	private MissingMappingAction _missingMappingAction; 
+	private static readonly object s_eventFillError;
+	private MissingMappingAction _missingMappingAction;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public MissingMappingAction MissingMappingAction { get; }
 
 
@@ -5026,12 +5026,12 @@ public class DataAdapter : Component // TypeDefIndex: 4379
 
 public sealed class DataColumnMapping : MarshalByRefObject // TypeDefIndex: 4380
 {
-	private string _dataSetColumnName; 
-	private string _sourceColumnName; 
+	private string _dataSetColumnName;
+	private string _sourceColumnName;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string DataSetColumn { get; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public string SourceColumn { get; }
 
 
@@ -5039,10 +5039,10 @@ public sealed class DataColumnMapping : MarshalByRefObject // TypeDefIndex: 4380
 
 	public string get_SourceColumn() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public DataColumn GetDataColumnBySchemaAction(DataTable dataTable, Type dataType, MissingSchemaAction schemaAction) { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public static DataColumn GetDataColumnBySchemaAction(string sourceColumn, string dataSetColumn, DataTable dataTable, Type dataType, MissingSchemaAction schemaAction) { }
 
 	internal static DataColumn CreateDataColumnBySchemaAction(string sourceColumn, string dataSetColumn, DataTable dataTable, Type dataType, MissingSchemaAction schemaAction) { }
@@ -5052,12 +5052,12 @@ public sealed class DataColumnMapping : MarshalByRefObject // TypeDefIndex: 4380
 public sealed class DataColumnMappingCollection : MarshalByRefObject // TypeDefIndex: 4382
 {
 
-[DefaultMemberAttribute] 
+[DefaultMemberAttribute]
 public sealed class DataColumnMappingCollection : MarshalByRefObject
-	private List<DataColumnMapping> _items; 
+	private List<DataColumnMapping> _items;
 
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public int Count { get; }
 
 
@@ -5065,17 +5065,17 @@ public sealed class DataColumnMappingCollection : MarshalByRefObject
 
 	public int IndexOf(string sourceColumn) { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public static DataColumn GetDataColumn(DataColumnMappingCollection columnMappings, string sourceColumn, Type dataType, DataTable dataTable, MissingMappingAction mappingAction, MissingSchemaAction schemaAction) { }
 
 }
 
 internal sealed class DataRecordInternal : DbDataRecord, ICustomTypeDescriptor // TypeDefIndex: 4383
 {
-	private SchemaInfo[] _schemaInfo; 
-	private object[] _values; 
-	private PropertyDescriptorCollection _propertyDescriptors; 
-	private FieldNameLookup _fieldNameLookup; 
+	private SchemaInfo[] _schemaInfo;
+	private object[] _values;
+	private PropertyDescriptorCollection _propertyDescriptors;
+	private FieldNameLookup _fieldNameLookup;
 
 	public override int FieldCount { get; }
 	public override object Item { get; }
@@ -5111,20 +5111,20 @@ internal sealed class DataRecordInternal : DbDataRecord, ICustomTypeDescriptor /
 
 internal abstract class DataStorage // TypeDefIndex: 4386
 {
-	private static readonly Type[] s_storageClassType; 
-	internal readonly DataColumn _column; 
-	internal readonly DataTable _table; 
-	internal readonly Type _dataType; 
-	internal readonly StorageType _storageTypeCode; 
-	private BitArray _dbNullBits; 
-	private readonly object _defaultValue; 
-	internal readonly object _nullValue; 
-	internal readonly bool _isCloneable; 
-	internal readonly bool _isCustomDefinedType; 
-	internal readonly bool _isStringType; 
-	internal readonly bool _isValueType; 
-	private static readonly Func<Type, Tuple<bool, bool, bool, bool>> s_inspectTypeForInterfaces; 
-	private static readonly ConcurrentDictionary<Type, Tuple<bool, bool, bool, bool>> s_typeImplementsInterface; 
+	private static readonly Type[] s_storageClassType;
+	internal readonly DataColumn _column;
+	internal readonly DataTable _table;
+	internal readonly Type _dataType;
+	internal readonly StorageType _storageTypeCode;
+	private BitArray _dbNullBits;
+	private readonly object _defaultValue;
+	internal readonly object _nullValue;
+	internal readonly bool _isCloneable;
+	internal readonly bool _isCustomDefinedType;
+	internal readonly bool _isStringType;
+	internal readonly bool _isValueType;
+	private static readonly Func<Type, Tuple<bool, bool, bool, bool>> s_inspectTypeForInterfaces;
+	private static readonly ConcurrentDictionary<Type, Tuple<bool, bool, bool, bool>> s_typeImplementsInterface;
 
 	internal DataSetDateTime DateTimeMode { get; }
 	internal IFormatProvider FormatProvider { get; }
@@ -5230,43 +5230,43 @@ internal abstract class DataStorage // TypeDefIndex: 4386
 
 public sealed class DataTableMapping : MarshalByRefObject // TypeDefIndex: 4387
 {
-	private DataColumnMappingCollection _columnMappings; 
+	private DataColumnMappingCollection _columnMappings;
 
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public DataColumn GetDataColumn(string sourceColumn, Type dataType, DataTable dataTable, MissingMappingAction mappingAction, MissingSchemaAction schemaAction) { }
 
 }
 
 public abstract class DbCommand : Component, IDbCommand, IDisposable // TypeDefIndex: 4391
 {
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
 	public abstract string CommandText { get; set; }
 	public abstract int CommandTimeout { get; set; }
-	[DefaultValueAttribute] 
-	[RefreshPropertiesAttribute] 
+	[DefaultValueAttribute]
+	[RefreshPropertiesAttribute]
 	public abstract CommandType CommandType { set; }
-	[DefaultValueAttribute] 
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[DefaultValueAttribute]
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DbConnection Connection { get; set; }
 	protected abstract DbConnection DbConnection { get; set; }
 	protected abstract DbParameterCollection DbParameterCollection { get; }
 	protected abstract DbTransaction DbTransaction { get; set; }
-	[EditorBrowsableAttribute] 
-	[DefaultValueAttribute] 
-	[DesignOnlyAttribute] 
-	[BrowsableAttribute] 
+	[EditorBrowsableAttribute]
+	[DefaultValueAttribute]
+	[DesignOnlyAttribute]
+	[BrowsableAttribute]
 	public abstract bool DesignTimeVisible { get; set; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public DbParameterCollection Parameters { get; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
-	[DefaultValueAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
+	[DefaultValueAttribute]
 	public DbTransaction Transaction { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public abstract UpdateRowSource UpdatedRowSource { get; set; }
 
 
@@ -5326,12 +5326,12 @@ public abstract class DbCommand : Component, IDbCommand, IDisposable // TypeDefI
 
 public abstract class DbConnection : Component, IDisposable // TypeDefIndex: 4392
 {
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
-	[RecommendedAsConfigurableAttribute] 
-	[SettingsBindableAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
+	[RecommendedAsConfigurableAttribute]
+	[SettingsBindableAttribute]
 	public abstract string ConnectionString { get; set; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public abstract ConnectionState State { get; }
 
 
@@ -5363,21 +5363,21 @@ public abstract class DbConnection : Component, IDisposable // TypeDefIndex: 439
 
 public abstract class DbDataAdapter : DataAdapter // TypeDefIndex: 4393
 {
-	internal static readonly object s_parameterValueNonNullValue; 
-	internal static readonly object s_parameterValueNullValue; 
+	internal static readonly object s_parameterValueNonNullValue;
+	internal static readonly object s_parameterValueNullValue;
 
 	private IDbDataAdapter _IDbDataAdapter { get; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DbCommand DeleteCommand { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DbCommand InsertCommand { get; set; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public DbCommand SelectCommand { get; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public DbCommand UpdateCommand { get; set; }
 
 
@@ -5421,14 +5421,14 @@ public abstract class DbDataReader : MarshalByRefObject, IDataReader, IDisposabl
 
 	public virtual void Close() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public void Dispose() { }
 
 	protected virtual void Dispose(bool disposing) { }
 
 	public abstract string GetDataTypeName(int ordinal);
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public abstract IEnumerator GetEnumerator();
 
 	public abstract Type GetFieldType(int ordinal);
@@ -5493,12 +5493,12 @@ public abstract class DbDataRecord : ICustomTypeDescriptor, IDataRecord // TypeD
 
 public class DbEnumerator : IEnumerator // TypeDefIndex: 4396
 {
-	internal IDataReader _reader; 
-	internal DbDataRecord _current; 
-	internal SchemaInfo[] _schemaInfo; 
-	internal PropertyDescriptorCollection _descriptors; 
-	private FieldNameLookup _fieldNameLookup; 
-	private bool _closeReader; 
+	internal IDataReader _reader;
+	internal DbDataRecord _current;
+	internal SchemaInfo[] _schemaInfo;
+	internal PropertyDescriptorCollection _descriptors;
+	private FieldNameLookup _fieldNameLookup;
+	private bool _closeReader;
 
 	public object Current { get; }
 
@@ -5511,7 +5511,7 @@ public class DbEnumerator : IEnumerator // TypeDefIndex: 4396
 
 	public bool MoveNext() { }
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public void Reset() { }
 
 	private void BuildSchemaInfo() { }
@@ -5520,8 +5520,8 @@ public class DbEnumerator : IEnumerator // TypeDefIndex: 4396
 
 private sealed class DbEnumerator.DbColumnDescriptor : PropertyDescriptor // TypeDefIndex: 4397
 {
-	private int _ordinal; 
-	private Type _type; 
+	private int _ordinal;
+	private Type _type;
 
 	public override Type ComponentType { get; }
 	public override bool IsReadOnly { get; }
@@ -5557,11 +5557,11 @@ public abstract class DbException : ExternalException // TypeDefIndex: 4398
 
 public static class DbMetaDataCollectionNames // TypeDefIndex: 4399
 {
-	public static readonly string MetaDataCollections; 
-	public static readonly string DataSourceInformation; 
-	public static readonly string DataTypes; 
-	public static readonly string Restrictions; 
-	public static readonly string ReservedWords; 
+	public static readonly string MetaDataCollections;
+	public static readonly string DataSourceInformation;
+	public static readonly string DataTypes;
+	public static readonly string Restrictions;
+	public static readonly string ReservedWords;
 
 
 	private static void .cctor() { }
@@ -5570,49 +5570,49 @@ public static class DbMetaDataCollectionNames // TypeDefIndex: 4399
 
 public static class DbMetaDataColumnNames // TypeDefIndex: 4400
 {
-	public static readonly string CollectionName; 
-	public static readonly string ColumnSize; 
-	public static readonly string CompositeIdentifierSeparatorPattern; 
-	public static readonly string CreateFormat; 
-	public static readonly string CreateParameters; 
-	public static readonly string DataSourceProductName; 
-	public static readonly string DataSourceProductVersion; 
-	public static readonly string DataType; 
-	public static readonly string DataSourceProductVersionNormalized; 
-	public static readonly string GroupByBehavior; 
-	public static readonly string IdentifierCase; 
-	public static readonly string IdentifierPattern; 
-	public static readonly string IsAutoIncrementable; 
-	public static readonly string IsBestMatch; 
-	public static readonly string IsCaseSensitive; 
-	public static readonly string IsConcurrencyType; 
-	public static readonly string IsFixedLength; 
-	public static readonly string IsFixedPrecisionScale; 
-	public static readonly string IsLiteralSupported; 
-	public static readonly string IsLong; 
-	public static readonly string IsNullable; 
-	public static readonly string IsSearchable; 
-	public static readonly string IsSearchableWithLike; 
-	public static readonly string IsUnsigned; 
-	public static readonly string LiteralPrefix; 
-	public static readonly string LiteralSuffix; 
-	public static readonly string MaximumScale; 
-	public static readonly string MinimumScale; 
-	public static readonly string NumberOfIdentifierParts; 
-	public static readonly string NumberOfRestrictions; 
-	public static readonly string OrderByColumnsInSelect; 
-	public static readonly string ParameterMarkerFormat; 
-	public static readonly string ParameterMarkerPattern; 
-	public static readonly string ParameterNameMaxLength; 
-	public static readonly string ParameterNamePattern; 
-	public static readonly string ProviderDbType; 
-	public static readonly string QuotedIdentifierCase; 
-	public static readonly string QuotedIdentifierPattern; 
-	public static readonly string ReservedWord; 
-	public static readonly string StatementSeparatorPattern; 
-	public static readonly string StringLiteralPattern; 
-	public static readonly string SupportedJoinOperators; 
-	public static readonly string TypeName; 
+	public static readonly string CollectionName;
+	public static readonly string ColumnSize;
+	public static readonly string CompositeIdentifierSeparatorPattern;
+	public static readonly string CreateFormat;
+	public static readonly string CreateParameters;
+	public static readonly string DataSourceProductName;
+	public static readonly string DataSourceProductVersion;
+	public static readonly string DataType;
+	public static readonly string DataSourceProductVersionNormalized;
+	public static readonly string GroupByBehavior;
+	public static readonly string IdentifierCase;
+	public static readonly string IdentifierPattern;
+	public static readonly string IsAutoIncrementable;
+	public static readonly string IsBestMatch;
+	public static readonly string IsCaseSensitive;
+	public static readonly string IsConcurrencyType;
+	public static readonly string IsFixedLength;
+	public static readonly string IsFixedPrecisionScale;
+	public static readonly string IsLiteralSupported;
+	public static readonly string IsLong;
+	public static readonly string IsNullable;
+	public static readonly string IsSearchable;
+	public static readonly string IsSearchableWithLike;
+	public static readonly string IsUnsigned;
+	public static readonly string LiteralPrefix;
+	public static readonly string LiteralSuffix;
+	public static readonly string MaximumScale;
+	public static readonly string MinimumScale;
+	public static readonly string NumberOfIdentifierParts;
+	public static readonly string NumberOfRestrictions;
+	public static readonly string OrderByColumnsInSelect;
+	public static readonly string ParameterMarkerFormat;
+	public static readonly string ParameterMarkerPattern;
+	public static readonly string ParameterNameMaxLength;
+	public static readonly string ParameterNamePattern;
+	public static readonly string ProviderDbType;
+	public static readonly string QuotedIdentifierCase;
+	public static readonly string QuotedIdentifierPattern;
+	public static readonly string ReservedWord;
+	public static readonly string StatementSeparatorPattern;
+	public static readonly string StringLiteralPattern;
+	public static readonly string SupportedJoinOperators;
+	public static readonly string TypeName;
 
 
 	private static void .cctor() { }
@@ -5621,30 +5621,30 @@ public static class DbMetaDataColumnNames // TypeDefIndex: 4400
 
 public abstract class DbParameter : MarshalByRefObject // TypeDefIndex: 4401
 {
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
-	[RefreshPropertiesAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
+	[RefreshPropertiesAttribute]
 	public abstract DbType DbType { get; set; }
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
 	public abstract ParameterDirection Direction { get; set; }
-	[DesignOnlyAttribute] 
-	[BrowsableAttribute] 
-	[EditorBrowsableAttribute] 
+	[DesignOnlyAttribute]
+	[BrowsableAttribute]
+	[EditorBrowsableAttribute]
 	public abstract bool IsNullable { get; set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public abstract string ParameterName { get; set; }
 	public abstract int Size { set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public abstract string SourceColumn { get; set; }
-	[EditorBrowsableAttribute] 
-	[DefaultValueAttribute] 
-	[RefreshPropertiesAttribute] 
+	[EditorBrowsableAttribute]
+	[DefaultValueAttribute]
+	[RefreshPropertiesAttribute]
 	public abstract bool SourceColumnNullMapping { set; }
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual DataRowVersion SourceVersion { get; set; }
-	[RefreshPropertiesAttribute] 
-	[DefaultValueAttribute] 
+	[RefreshPropertiesAttribute]
+	[DefaultValueAttribute]
 	public abstract object Value { get; set; }
 
 
@@ -5686,20 +5686,20 @@ public abstract class DbParameter : MarshalByRefObject // TypeDefIndex: 4401
 
 public abstract class DbParameterCollection : MarshalByRefObject, IList, ICollection, IEnumerable // TypeDefIndex: 4402
 {
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public abstract int Count { get; }
-	[EditorBrowsableAttribute] 
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[EditorBrowsableAttribute]
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public virtual bool IsFixedSize { get; }
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
-	[EditorBrowsableAttribute] 
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
+	[EditorBrowsableAttribute]
 	public virtual bool IsReadOnly { get; }
-	[EditorBrowsableAttribute] 
-	[BrowsableAttribute] 
-	[DesignerSerializationVisibilityAttribute] 
+	[EditorBrowsableAttribute]
+	[BrowsableAttribute]
+	[DesignerSerializationVisibilityAttribute]
 	public abstract object SyncRoot { get; }
 	private object System.Collections.IList.Item { get; set; }
 	public DbParameter Item { get; }
@@ -5729,7 +5729,7 @@ public abstract class DbParameterCollection : MarshalByRefObject, IList, ICollec
 
 	public abstract void Clear();
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public abstract IEnumerator GetEnumerator();
 
 	protected abstract DbParameter GetParameter(int index);
@@ -5757,8 +5757,8 @@ public abstract class DbProviderFactory // TypeDefIndex: 4403
 
 public sealed class DbProviderSpecificTypePropertyAttribute : Attribute // TypeDefIndex: 4404
 {
-	[CompilerGeneratedAttribute] 
-	private readonly bool <IsProviderSpecificTypeProperty>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly bool <IsProviderSpecificTypeProperty>k__BackingField;
 
 
 	public void .ctor(bool isProviderSpecificTypeProperty) { }
@@ -5780,12 +5780,12 @@ public abstract class DbTransaction : MarshalByRefObject, IDisposable // TypeDef
 
 }
 
-public sealed class DataContractAttribute : Attribute // TypeDefIndex: 5712
+public sealed class DataContractAttribute : Attribute // TypeDefIndex: 5714
 {
 
-[AttributeUsageAttribute] 
+[AttributeUsageAttribute]
 public sealed class DataContractAttribute : Attribute
-	private bool isReference; 
+	private bool isReference;
 
 	public bool IsReference { get; }
 
@@ -5794,12 +5794,12 @@ public sealed class DataContractAttribute : Attribute
 
 }
 
-public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5713
+public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5715
 {
-	private string name; 
-	private int order; 
-	private bool isRequired; 
-	private bool emitDefaultValue; 
+	private string name;
+	private int order;
+	private bool isRequired;
+	private bool emitDefaultValue;
 
 	public string Name { get; }
 	public int Order { get; }
@@ -5817,7 +5817,7 @@ public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5713
 
 }
 
-public static class Database // TypeDefIndex: 6188
+public static class Database // TypeDefIndex: 6190
 {
 
 	public static void Insert(string parent, object contents, Action<bool> onFinished) { }
@@ -5836,9 +5836,9 @@ public static class Database // TypeDefIndex: 6188
 
 }
 
-private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6189
+private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6191
 {
-	public Action<bool> onFinished; 
+	public Action<bool> onFinished;
 
 
 	public void .ctor() { }
@@ -5847,9 +5847,9 @@ private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6189
 
 }
 
-private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6190
+private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6192
 {
-	public Action<bool, string> onFinished; 
+	public Action<bool, string> onFinished;
 
 
 	public void .ctor() { }
@@ -5858,9 +5858,9 @@ private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6190
 
 }
 
-private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6191
+private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6193
 {
-	public Action<bool> onFinished; 
+	public Action<bool> onFinished;
 
 
 	public void .ctor() { }
@@ -5869,11 +5869,11 @@ private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6191
 
 }
 
-private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6192
+private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6194
 {
-	public Result<T> result; 
-	public Action<Result<T>> onFinished; 
-	public Action <>9__1; 
+	public Result<T> result;
+	public Action<Result<T>> onFinished;
+	public Action <>9__1;
 
 
 	public void .ctor() { }
@@ -5896,10 +5896,10 @@ private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6192
 
 }
 
-private sealed class Database.<>c__3<T> // TypeDefIndex: 6193
+private sealed class Database.<>c__3<T> // TypeDefIndex: 6195
 {
 	public static readonly Database.<>
-	public static Func<QueryResponse, Result.Entry<T>> <>9__3_2; 
+	public static Func<QueryResponse, Result.Entry<T>> <>9__3_2;
 
 
 	private static void .cctor() { }
@@ -5922,9 +5922,9 @@ private sealed class Database.<>c__3<T> // TypeDefIndex: 6193
 
 }
 
-private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6194
+private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6196
 {
-	public Action<int> onResult; 
+	public Action<int> onResult;
 
 
 	public void .ctor() { }
@@ -5933,9 +5933,9 @@ private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6194
 
 }
 
-private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6195
+private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6197
 {
-	public int count; 
+	public int count;
 	public Database.<>c
 
 
@@ -5945,22 +5945,22 @@ private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6195
 
 }
 
-public class Database // TypeDefIndex: 7368
+public class Database // TypeDefIndex: 7370
 {
 
 public class Database
-	private IntPtr _connection; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsConnectionOpen>k__BackingField; 
+	private IntPtr _connection;
+	[CompilerGeneratedAttribute]
+	private bool <IsConnectionOpen>k__BackingField;
 
 	private bool IsConnectionOpen { get; set; }
 	public int AffectedRows { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool get_IsConnectionOpen() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsConnectionOpen(bool value) { }
 
 	public void Open(string path, bool fastMode = False) { }
@@ -6094,7 +6094,7 @@ public class Database
 	|-Database.ExecuteAndReadQueryResult<long>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	protected IEnumerable<T> ExecuteAndReadQueryResults<T>(IntPtr stmHandle, Func<IntPtr, T> rowReader, bool finalize = True) { }
 	/* GenericInstMethod :
 	|
@@ -6111,7 +6111,7 @@ public class Database
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static Exception <GetColumnValue>g__TypeError|19_0<T>(ref Database.<>c
 	/* GenericInstMethod :
 	|
@@ -6124,37 +6124,37 @@ public class Database
 
 }
 
-private struct Database.<>c__DisplayClass19_0<T> // TypeDefIndex: 7369
+private struct Database.<>c__DisplayClass19_0<T> // TypeDefIndex: 7371
 {
-	public int type; 
+	public int type;
 
 }
 
-private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 7370
+private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 7372
 {
-	private int <>1__state; 
-	private T <>2__current; 
-	private int <>l__initialThreadId; 
-	private Func<IntPtr, T> rowReader; 
-	public Func<IntPtr, T> <>3__rowReader; 
-	private IntPtr stmHandle; 
-	public IntPtr <>3__stmHandle; 
-	public Database <>4__this; 
-	private bool finalize; 
-	public bool <>3__finalize; 
+	private int <>1__state;
+	private T <>2__current;
+	private int <>l__initialThreadId;
+	private Func<IntPtr, T> rowReader;
+	public Func<IntPtr, T> <>3__rowReader;
+	private IntPtr stmHandle;
+	public IntPtr <>3__stmHandle;
+	public Database <>4__this;
+	private bool finalize;
+	public bool <>3__finalize;
 
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -6173,35 +6173,35 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -6210,34 +6210,34 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 
 }
 
-internal static class DataTypesUtilities // TypeDefIndex: 7636
+internal static class DataTypesUtilities // TypeDefIndex: 7638
 {
 
 	public static ushort Combine(SevenBitNumber head, SevenBitNumber tail) { }
 
 	public static ushort CombineAsSevenBitNumbers(byte head, byte tail) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static FourBitNumber GetTail(byte number) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static SevenBitNumber GetTail(ushort number) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static byte GetTail(short number) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static FourBitNumber GetHead(byte number) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static SevenBitNumber GetHead(ushort number) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static byte GetHead(short number) { }
 
 }
 
-internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7842
+internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7844
 {
 	public override bool IsBrowserDisplay { get; }
 	public override bool IsBrowserSave { get; }
@@ -6271,9 +6271,9 @@ internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7842
 
 }
 
-internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7843
+internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7845
 {
-	protected DbcsConvert convert; 
+	protected DbcsConvert convert;
 
 
 	public void .ctor(DbcsConvert convert) { }
@@ -6284,13 +6284,13 @@ internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7843
 
 }
 
-internal class DbcsConvert // TypeDefIndex: 7844
+internal class DbcsConvert // TypeDefIndex: 7846
 {
-	public byte[] n2u; 
-	public byte[] u2n; 
-	internal static readonly DbcsConvert Gb2312; 
-	internal static readonly DbcsConvert Big5; 
-	internal static readonly DbcsConvert KS; 
+	public byte[] n2u;
+	public byte[] u2n;
+	internal static readonly DbcsConvert Gb2312;
+	internal static readonly DbcsConvert Big5;
+	internal static readonly DbcsConvert KS;
 
 
 	internal void .ctor(string fileName) { }
@@ -6299,38 +6299,38 @@ internal class DbcsConvert // TypeDefIndex: 7844
 
 }
 
-public struct DataRecord // TypeDefIndex: 8825
+public struct DataRecord // TypeDefIndex: 8827
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Key>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Value>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <Key>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Value>k__BackingField;
 
 	public Utf8String Key { get; set; }
 	public Utf8String Value { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Key() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Key(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Value() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Value(Utf8String value) { }
 
 	internal void Set(ref DataRecordInternal other) { }
 
 }
 
-internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord>, IDisposable // TypeDefIndex: 8826
+internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord>, IDisposable // TypeDefIndex: 8828
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Key; 
-	private IntPtr m_Value; 
+	private int m_ApiVersion;
+	private IntPtr m_Key;
+	private IntPtr m_Value;
 
 	public Utf8String Key { get; set; }
 	public Utf8String Value { get; set; }
@@ -6354,11 +6354,11 @@ internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord
 
 }
 
-public class Data : ConsoleSystem // TypeDefIndex: 13686
+public class Data : ConsoleSystem // TypeDefIndex: 13702
 {
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void export(ConsoleSystem.Arg args) { }
 
 	public void .ctor() { }

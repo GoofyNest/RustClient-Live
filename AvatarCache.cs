@@ -1,7 +1,7 @@
-public class AvatarCache // TypeDefIndex: 5691
+public class AvatarCache // TypeDefIndex: 5693
 {
-	private readonly Dictionary<ulong, AvatarCache.Entry> _entries; 
-	private readonly Action<ulong, Texture2D> _loadAvatar; 
+	private readonly Dictionary<ulong, AvatarCache.Entry> _entries;
+	private readonly Action<ulong, Texture2D> _loadAvatar;
 
 
 	public void .ctor(Action<ulong, Texture2D> loadAvatar) { }
@@ -10,10 +10,10 @@ public class AvatarCache // TypeDefIndex: 5691
 
 }
 
-private struct AvatarCache.Entry // TypeDefIndex: 5692
+private struct AvatarCache.Entry // TypeDefIndex: 5694
 {
-	public readonly ulong UserId; 
-	public readonly Texture2D Texture; 
+	public readonly ulong UserId;
+	public readonly Texture2D Texture;
 
 
 	public void .ctor(ulong userId, Texture2D texture) { }

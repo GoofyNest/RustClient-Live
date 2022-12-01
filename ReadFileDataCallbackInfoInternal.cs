@@ -1,12 +1,12 @@
-internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8420
+internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8422
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Filename; 
-	private uint m_TotalFileSizeBytes; 
-	private int m_IsLastChunk; 
-	private uint m_DataChunkLengthBytes; 
-	private IntPtr m_DataChunk; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Filename;
+	private uint m_TotalFileSizeBytes;
+	private int m_IsLastChunk;
+	private uint m_DataChunkLengthBytes;
+	private IntPtr m_DataChunk;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }
@@ -53,15 +53,15 @@ internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGetta
 
 }
 
-internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8923
+internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8925
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Filename; 
-	private uint m_TotalFileSizeBytes; 
-	private int m_IsLastChunk; 
-	private uint m_DataChunkLengthBytes; 
-	private IntPtr m_DataChunk; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Filename;
+	private uint m_TotalFileSizeBytes;
+	private int m_IsLastChunk;
+	private uint m_DataChunkLengthBytes;
+	private IntPtr m_DataChunk;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

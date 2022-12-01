@@ -1,11 +1,11 @@
-public class PowerBar : MonoBehaviour // TypeDefIndex: 12984
+public class PowerBar : MonoBehaviour // TypeDefIndex: 12998
 {
-	public static PowerBar Instance; 
-	public Image powerInner; 
-	public float fullSize; 
-	public CanvasGroup group; 
-	private bool visible; 
-	private float progress; 
+	public static PowerBar Instance;
+	public Image powerInner;
+	public float fullSize;
+	public CanvasGroup group;
+	private bool visible;
+	private float progress;
 
 
 	public void Awake() { }

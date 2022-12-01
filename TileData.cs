@@ -1,11 +1,11 @@
 public struct TileData // TypeDefIndex: 4577
 {
-	private Sprite m_Sprite; 
-	private Color m_Color; 
-	private Matrix4x4 m_Transform; 
-	private GameObject m_GameObject; 
-	private TileFlags m_Flags; 
-	private Tile.ColliderType m_ColliderType; 
+	private Sprite m_Sprite;
+	private Color m_Color;
+	private Matrix4x4 m_Transform;
+	private GameObject m_GameObject;
+	private TileFlags m_Flags;
+	private Tile.ColliderType m_ColliderType;
 
 	public Sprite sprite { set; }
 	public Color color { set; }

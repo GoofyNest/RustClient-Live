@@ -1,7 +1,7 @@
-internal struct RegisterPlatformAudioUserOptionsInternal : ISettable<RegisterPlatformAudioUserOptions>, IDisposable // TypeDefIndex: 8705
+internal struct RegisterPlatformAudioUserOptionsInternal : ISettable<RegisterPlatformAudioUserOptions>, IDisposable // TypeDefIndex: 8707
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
 
 	public Utf8String UserId { set; }
 

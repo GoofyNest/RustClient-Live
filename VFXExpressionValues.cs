@@ -1,20 +1,20 @@
 public class VFXExpressionValues // TypeDefIndex: 4765
 {
 
-[RequiredByNativeCodeAttribute] 
-[NativeTypeAttribute] 
-[StaticAccessorAttribute] 
+[RequiredByNativeCodeAttribute]
+[NativeTypeAttribute]
+[StaticAccessorAttribute]
 internal class VFXExpressionNoise
 
-[RequiredByNativeCodeAttribute] 
-[NativeTypeAttribute] 
+[RequiredByNativeCodeAttribute]
+[NativeTypeAttribute]
 public class VFXExpressionValues
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 
 	private void .ctor() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static VFXExpressionValues CreateExpressionValuesWrapper(IntPtr ptr) { }
 
 }

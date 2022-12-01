@@ -1,17 +1,17 @@
-internal struct LobbyDetailsInfoInternal : IGettable<LobbyDetailsInfo>, ISettable<LobbyDetailsInfo>, IDisposable // TypeDefIndex: 9152
+internal struct LobbyDetailsInfoInternal : IGettable<LobbyDetailsInfo>, ISettable<LobbyDetailsInfo>, IDisposable // TypeDefIndex: 9154
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyId; 
-	private IntPtr m_LobbyOwnerUserId; 
-	private LobbyPermissionLevel m_PermissionLevel; 
-	private uint m_AvailableSlots; 
-	private uint m_MaxMembers; 
-	private int m_AllowInvites; 
-	private IntPtr m_BucketId; 
-	private int m_AllowHostMigration; 
-	private int m_RTCRoomEnabled; 
-	private int m_AllowJoinById; 
-	private int m_RejoinAfterKickRequiresInvite; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyId;
+	private IntPtr m_LobbyOwnerUserId;
+	private LobbyPermissionLevel m_PermissionLevel;
+	private uint m_AvailableSlots;
+	private uint m_MaxMembers;
+	private int m_AllowInvites;
+	private IntPtr m_BucketId;
+	private int m_AllowHostMigration;
+	private int m_RTCRoomEnabled;
+	private int m_AllowJoinById;
+	private int m_RejoinAfterKickRequiresInvite;
 
 	public Utf8String LobbyId { get; set; }
 	public ProductUserId LobbyOwnerUserId { get; set; }

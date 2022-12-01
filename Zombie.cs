@@ -1,7 +1,7 @@
-public class Zombie : BaseAnimalNPC // TypeDefIndex: 10671
+public class Zombie : BaseAnimalNPC // TypeDefIndex: 10675
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override BaseEntity.TraitFlag Traits { get; }
 

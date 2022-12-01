@@ -1,6 +1,6 @@
 internal sealed class ObjectNull // TypeDefIndex: 1086
 {
-	internal int nullCount; 
+	internal int nullCount;
 
 
 	internal void .ctor() { }

@@ -1,14 +1,14 @@
 public class MatchCollection : ICollection, IEnumerable // TypeDefIndex: 2622
 {
-	internal Regex _regex; 
-	internal ArrayList _matches; 
-	internal bool _done; 
-	internal string _input; 
-	internal int _beginning; 
-	internal int _length; 
-	internal int _startat; 
-	internal int _prevlen; 
-	private static int infinite; 
+	internal Regex _regex;
+	internal ArrayList _matches;
+	internal bool _done;
+	internal string _input;
+	internal int _beginning;
+	internal int _length;
+	internal int _startat;
+	internal int _prevlen;
+	private static int infinite;
 
 	public int Count { get; }
 	public object SyncRoot { get; }

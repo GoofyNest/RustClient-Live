@@ -1,11 +1,11 @@
 public class StackTrace // TypeDefIndex: 1503
 {
 	public const int METHODS_TO_SKIP = 0;
-	private StackFrame[] frames; 
-	private readonly StackTrace[] captured_traces; 
-	private bool debug_info; 
-	private static bool isAotidSet; 
-	private static string aotid; 
+	private StackFrame[] frames;
+	private readonly StackTrace[] captured_traces;
+	private bool debug_info;
+	private static bool isAotidSet;
+	private static string aotid;
 
 	public virtual int FrameCount { get; }
 
@@ -28,7 +28,7 @@ public class StackTrace // TypeDefIndex: 1503
 
 	public virtual StackFrame GetFrame(int index) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual StackFrame[] GetFrames() { }
 
 	private static string GetAotId() { }
@@ -45,7 +45,7 @@ public class StackTrace // TypeDefIndex: 1503
 
 internal enum StackTrace.TraceFormat // TypeDefIndex: 1504
 {
-	public int value__; 
+	public int value__;
 	public const StackTrace.TraceFormat Normal = 0;
 	public const StackTrace.TraceFormat TrailingNewLine = 1;
 	public const StackTrace.TraceFormat NoResourceLookup = 2;

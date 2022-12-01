@@ -1,7 +1,7 @@
-internal static class BurstExtensions // TypeDefIndex: 7325
+internal static class BurstExtensions // TypeDefIndex: 7327
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static ref T GetReadonly<T>(NativeArray<T> array, int index) { }
 	/* GenericInstMethod :
 	|
@@ -14,7 +14,7 @@ internal static class BurstExtensions // TypeDefIndex: 7325
 	|-BurstExtensions.GetReadonly<ColliderState>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static ref T Get<T>(NativeArray<T> array, int index) { }
 	/* GenericInstMethod :
 	|

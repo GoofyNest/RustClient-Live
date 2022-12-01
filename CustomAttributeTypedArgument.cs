@@ -1,7 +1,7 @@
 public struct CustomAttributeTypedArgument // TypeDefIndex: 564
 {
-	private Type argumentType; 
-	private object value; 
+	private Type argumentType;
+	private object value;
 
 	public object Value { get; }
 

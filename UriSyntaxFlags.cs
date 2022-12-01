@@ -1,6 +1,6 @@
 internal enum UriSyntaxFlags // TypeDefIndex: 2590
 {
-	public int value__; 
+	public int value__;
 	public const UriSyntaxFlags None = 0;
 	public const UriSyntaxFlags MustHaveAuthority = 1;
 	public const UriSyntaxFlags OptionalAuthority = 2;

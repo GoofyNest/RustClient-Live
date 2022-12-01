@@ -1,17 +1,17 @@
-public class SegmentMaskPositioning : MonoBehaviour // TypeDefIndex: 12981
+public class SegmentMaskPositioning : MonoBehaviour // TypeDefIndex: 12995
 {
-	public PlayerModel source; 
-	public GameObject headMask; 
-	public GameObject chestMask; 
-	public GameObject legsMask; 
-	public float xOffset; 
-	private Transform headRootBone; 
-	private int headRootBoneId; 
-	private Transform chestRootBone; 
-	private int chestRootBoneId; 
+	public PlayerModel source;
+	public GameObject headMask;
+	public GameObject chestMask;
+	public GameObject legsMask;
+	public float xOffset;
+	private Transform headRootBone;
+	private int headRootBoneId;
+	private Transform chestRootBone;
+	private int chestRootBoneId;
 
 
-	[ContextMenu] 
+	[ContextMenu]
 	public void Refresh() { }
 
 	public void .ctor() { }

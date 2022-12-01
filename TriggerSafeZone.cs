@@ -1,18 +1,18 @@
-public class TriggerSafeZone : TriggerBase // TypeDefIndex: 11789
+public class TriggerSafeZone : TriggerBase // TypeDefIndex: 11796
 {
-	public static List<TriggerSafeZone> allSafeZones; 
-	public float maxDepth; 
-	public float maxAltitude; 
-	[CompilerGeneratedAttribute] 
-	private Collider <triggerCollider>k__BackingField; 
+	public static List<TriggerSafeZone> allSafeZones;
+	public float maxDepth;
+	public float maxAltitude;
+	[CompilerGeneratedAttribute]
+	private Collider <triggerCollider>k__BackingField;
 
 	public Collider triggerCollider { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Collider get_triggerCollider() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_triggerCollider(Collider value) { }
 
 	protected void Awake() { }

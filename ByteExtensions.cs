@@ -1,7 +1,7 @@
 public static class ByteExtensions // TypeDefIndex: 4847
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T ReadUnsafe<T>(byte[] buffer, int iOffset = 0) { }
 	/* GenericInstMethod :
 	|
@@ -29,7 +29,7 @@ public static class ByteExtensions // TypeDefIndex: 4847
 	|-ByteExtensions.ReadUnsafe<Vector3>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void WriteUnsafe<T>(byte[] buffer, in T value, int iOffset = 0) { }
 	/* GenericInstMethod :
 	|

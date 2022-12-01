@@ -1,19 +1,19 @@
-public class GlobalMessages // TypeDefIndex: 13166
+public class GlobalMessages // TypeDefIndex: 13181
 {
-	public static ListHashSet<IInventoryChanged> onInventoryChanged; 
-	public static Action OnInventoryChangedAction; 
-	public static ListHashSet<IViewModeChanged> onViewModeChanged; 
-	public static Action OnViewModeChangedAction; 
-	public static ListHashSet<IClothingChanged> onClothingChanged; 
-	public static Action OnClothingChangedAction; 
-	public static ListHashSet<IViewModelUpdated> onViewModelUpdated; 
-	public static Action OnViewModelUpdatedAction; 
-	public static ListHashSet<IBlueprintsChanged> onBlueprintsChanged; 
-	public static Action OnBlueprintsChangedAction; 
-	public static ListHashSet<IItemAmountChanged> onItemAmountChanged; 
-	public static Action OnItemAmountChangedAction; 
-	public static ListHashSet<IItemIconChanged> onItemIconChanged; 
-	public static Action OnItemIconChangedAction; 
+	public static ListHashSet<IInventoryChanged> onInventoryChanged;
+	public static Action OnInventoryChangedAction;
+	public static ListHashSet<IViewModeChanged> onViewModeChanged;
+	public static Action OnViewModeChangedAction;
+	public static ListHashSet<IClothingChanged> onClothingChanged;
+	public static Action OnClothingChangedAction;
+	public static ListHashSet<IViewModelUpdated> onViewModelUpdated;
+	public static Action OnViewModelUpdatedAction;
+	public static ListHashSet<IBlueprintsChanged> onBlueprintsChanged;
+	public static Action OnBlueprintsChangedAction;
+	public static ListHashSet<IItemAmountChanged> onItemAmountChanged;
+	public static Action OnItemAmountChangedAction;
+	public static ListHashSet<IItemIconChanged> onItemIconChanged;
+	public static Action OnItemIconChangedAction;
 
 
 	public static void OnInventoryChanged() { }

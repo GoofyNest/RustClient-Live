@@ -1,4 +1,4 @@
-public sealed class OnSendPlayerBehaviorReportCompleteCallback : MulticastDelegate // TypeDefIndex: 8632
+public sealed class OnSendPlayerBehaviorReportCompleteCallback : MulticastDelegate // TypeDefIndex: 8634
 {
 
 	public void .ctor(object object, IntPtr method) { }

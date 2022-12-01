@@ -1,7 +1,7 @@
 public class ActivatedClientTypeEntry : TypeEntry // TypeDefIndex: 1127
 {
-	private string applicationUrl; 
-	private Type obj_type; 
+	private string applicationUrl;
+	private Type obj_type;
 
 	public string ApplicationUrl { get; }
 	public IContextAttribute[] ContextAttributes { get; }

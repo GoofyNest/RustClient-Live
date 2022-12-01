@@ -1,4 +1,4 @@
-public class AfterDecode : Attribute // TypeDefIndex: 13363
+public class AfterDecode : Attribute // TypeDefIndex: 13378
 {
 
 	public void .ctor() { }

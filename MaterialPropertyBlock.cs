@@ -1,41 +1,41 @@
 public sealed class MaterialPropertyBlock // TypeDefIndex: 3403
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 	public bool isEmpty { get; }
 
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private Texture GetTextureImpl(int name) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetFloatImpl(int name, float value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetVectorImpl(int name, Vector4 value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetColorImpl(int name, Color value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetMatrixImpl(int name, Matrix4x4 value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetTextureImpl(int name, Texture value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetBufferImpl(int name, ComputeBuffer value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static void Internal_CopySHCoefficientArraysFrom(MaterialPropertyBlock properties, SphericalHarmonicsL2[] lightProbes, int sourceStart, int destStart, int count) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static IntPtr CreateImpl() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static void DestroyImpl(IntPtr mpb) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isEmpty() { }
 
 	private void Clear(bool keepMemory) { }

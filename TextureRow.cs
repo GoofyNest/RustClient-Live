@@ -1,14 +1,14 @@
-public class TextureRow : MaterialRow // TypeDefIndex: 7773
+public class TextureRow : MaterialRow // TypeDefIndex: 7775
 {
-	private string Filename; 
-	public bool IsNormalMap; 
-	public RawImage TargetImage; 
-	public Text FilenameLabel; 
-	public Button Reset; 
-	public Button Clear; 
-	public bool HasChanges; 
-	private Texture Default; 
-	private FileSystemWatcher watcher; 
+	private string Filename;
+	public bool IsNormalMap;
+	public RawImage TargetImage;
+	public Text FilenameLabel;
+	public Button Reset;
+	public Button Clear;
+	public bool HasChanges;
+	private Texture Default;
+	private FileSystemWatcher watcher;
 
 	public bool IsDefault { get; }
 	public bool IsClear { get; }
@@ -22,7 +22,7 @@ public class TextureRow : MaterialRow // TypeDefIndex: 7773
 
 	public void OpenFileBrowser() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator BrowseForTexture() { }
 
 	public void Load(string fullname) { }
@@ -39,7 +39,7 @@ public class TextureRow : MaterialRow // TypeDefIndex: 7773
 
 	public void SaveFile() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator DoSaveFile() { }
 
 	public void ResetToDefault() { }
@@ -54,65 +54,65 @@ public class TextureRow : MaterialRow // TypeDefIndex: 7773
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <StartWatching>
 
 }
 
-private sealed class TextureRow.<BrowseForTexture>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7774
+private sealed class TextureRow.<BrowseForTexture>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7776
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public TextureRow <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public TextureRow <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class TextureRow.<DoSaveFile>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7775
+private sealed class TextureRow.<DoSaveFile>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7777
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public TextureRow <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public TextureRow <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

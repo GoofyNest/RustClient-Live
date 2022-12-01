@@ -1,6 +1,6 @@
 internal class LeaseSink : IMessageSink // TypeDefIndex: 1168
 {
-	private IMessageSink _nextSink; 
+	private IMessageSink _nextSink;
 
 
 	public void .ctor(IMessageSink nextSink) { }

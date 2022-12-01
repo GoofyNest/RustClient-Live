@@ -1,15 +1,15 @@
-public struct UserLoginInfo // TypeDefIndex: 9639
+public struct UserLoginInfo // TypeDefIndex: 9641
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
 
 	public Utf8String DisplayName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
 	internal void Set(ref UserLoginInfoInternal other) { }

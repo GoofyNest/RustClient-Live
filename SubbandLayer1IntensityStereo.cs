@@ -1,6 +1,6 @@
-public class SubbandLayer1IntensityStereo : SubbandLayer1 // TypeDefIndex: 7418
+public class SubbandLayer1IntensityStereo : SubbandLayer1 // TypeDefIndex: 7420
 {
-	protected float Channel2Scalefactor; 
+	protected float Channel2Scalefactor;
 
 
 	internal void .ctor(int subbandnumber) { }

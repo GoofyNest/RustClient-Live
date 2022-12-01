@@ -1,11 +1,11 @@
-public class StashContainer : StorageContainer // TypeDefIndex: 10173
+public class StashContainer : StorageContainer // TypeDefIndex: 10175
 {
-	private Option __menuOption_Menu_HideStash; 
-	public Transform visuals; 
-	public float burriedOffset; 
-	public float raisedOffset; 
-	public GameObjectRef buryEffect; 
-	public float uncoverRange; 
+	private Option __menuOption_Menu_HideStash;
+	public Transform visuals;
+	public float burriedOffset;
+	public float raisedOffset;
+	public GameObjectRef buryEffect;
+	public float uncoverRange;
 
 	public override bool HasMenuOptions { get; }
 
@@ -26,10 +26,10 @@ public class StashContainer : StorageContainer // TypeDefIndex: 10173
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_HideStash(BasePlayer player) { }
 
 	public bool Menu_HideStash_ShowIf(BasePlayer player) { }
@@ -42,7 +42,7 @@ public class StashContainer : StorageContainer // TypeDefIndex: 10173
 
 }
 
-public static class StashContainer.StashContainerFlags // TypeDefIndex: 10174
+public static class StashContainer.StashContainerFlags // TypeDefIndex: 10176
 {
 	public const BaseEntity.Flags Hidden = 2048;
 

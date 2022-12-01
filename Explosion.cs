@@ -1,20 +1,20 @@
-public class Explosion_Bloom : MonoBehaviour // TypeDefIndex: 13278
+public class Explosion_Bloom : MonoBehaviour // TypeDefIndex: 13293
 {
-	[SerializeField] 
-	public Explosion_Bloom.Settings settings; 
-	[SerializeField] 
-	[HideInInspector] 
-	private Shader m_Shader; 
-	private Material m_Material; 
+	[SerializeField]
+	public Explosion_Bloom.Settings settings;
+	[SerializeField]
+	[HideInInspector]
+	private Shader m_Shader;
+	private Material m_Material;
 	private const int kMaxIterations = 16;
-	private RenderTexture[] m_blurBuffer1; 
-	private RenderTexture[] m_blurBuffer2; 
-	private int m_Threshold; 
-	private int m_Curve; 
-	private int m_PrefilterOffs; 
-	private int m_SampleScale; 
-	private int m_Intensity; 
-	private int m_BaseTex; 
+	private RenderTexture[] m_blurBuffer1;
+	private RenderTexture[] m_blurBuffer2;
+	private int m_Threshold;
+	private int m_Curve;
+	private int m_PrefilterOffs;
+	private int m_SampleScale;
+	private int m_Intensity;
+	private int m_BaseTex;
 
 	public Shader shader { get; }
 	public Material material { get; }
@@ -43,28 +43,28 @@ public class Explosion_Bloom : MonoBehaviour // TypeDefIndex: 13278
 
 }
 
-public struct Explosion_Bloom.Settings // TypeDefIndex: 13279
+public struct Explosion_Bloom.Settings // TypeDefIndex: 13294
 {
-	[SerializeField] 
-	[TooltipAttribute] 
-	public float threshold; 
-	[SerializeField] 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public float softKnee; 
-	[SerializeField] 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public float radius; 
-	[SerializeField] 
-	[TooltipAttribute] 
-	public float intensity; 
-	[SerializeField] 
-	[TooltipAttribute] 
-	public bool highQuality; 
-	[SerializeField] 
-	[TooltipAttribute] 
-	public bool antiFlicker; 
+	[SerializeField]
+	[TooltipAttribute]
+	public float threshold;
+	[SerializeField]
+	[RangeAttribute]
+	[TooltipAttribute]
+	public float softKnee;
+	[SerializeField]
+	[RangeAttribute]
+	[TooltipAttribute]
+	public float radius;
+	[SerializeField]
+	[TooltipAttribute]
+	public float intensity;
+	[SerializeField]
+	[TooltipAttribute]
+	public bool highQuality;
+	[SerializeField]
+	[TooltipAttribute]
+	public bool antiFlicker;
 
 	public float thresholdGamma { get; set; }
 	public float thresholdLinear { get; set; }
@@ -83,16 +83,16 @@ public struct Explosion_Bloom.Settings // TypeDefIndex: 13279
 
 }
 
-public class ExplosionDemoGUI : MonoBehaviour // TypeDefIndex: 13280
+public class ExplosionDemoGUI : MonoBehaviour // TypeDefIndex: 13295
 {
-	public GameObject[] Prefabs; 
-	public float reactivateTime; 
-	public Light Sun; 
-	private int currentNomber; 
-	private GameObject currentInstance; 
-	private GUIStyle guiStyleHeader; 
-	private float sunIntensity; 
-	private float dpiScale; 
+	public GameObject[] Prefabs;
+	public float reactivateTime;
+	public Light Sun;
+	private int currentNomber;
+	private GameObject currentInstance;
+	private GUIStyle guiStyleHeader;
+	private float sunIntensity;
+	private float dpiScale;
 
 
 	private void Start() { }
@@ -105,9 +105,9 @@ public class ExplosionDemoGUI : MonoBehaviour // TypeDefIndex: 13280
 
 }
 
-public class ExplosionDemoReactivator : MonoBehaviour // TypeDefIndex: 13281
+public class ExplosionDemoReactivator : MonoBehaviour // TypeDefIndex: 13296
 {
-	public float TimeDelayToReactivate; 
+	public float TimeDelayToReactivate;
 
 
 	private void Start() { }
@@ -118,15 +118,15 @@ public class ExplosionDemoReactivator : MonoBehaviour // TypeDefIndex: 13281
 
 }
 
-public class ExplosionPlatformActivator : MonoBehaviour // TypeDefIndex: 13282
+public class ExplosionPlatformActivator : MonoBehaviour // TypeDefIndex: 13297
 {
-	public GameObject Effect; 
-	public float TimeDelay; 
-	public float DefaultRepeatTime; 
-	public float NearRepeatTime; 
-	private float currentTime; 
-	private float currentRepeatTime; 
-	private bool canUpdate; 
+	public GameObject Effect;
+	public float TimeDelay;
+	public float DefaultRepeatTime;
+	public float NearRepeatTime;
+	private float currentTime;
+	private float currentRepeatTime;
+	private bool canUpdate;
 
 
 	private void Start() { }
@@ -143,12 +143,12 @@ public class ExplosionPlatformActivator : MonoBehaviour // TypeDefIndex: 13282
 
 }
 
-public class ExplosionsFPS : MonoBehaviour // TypeDefIndex: 13283
+public class ExplosionsFPS : MonoBehaviour // TypeDefIndex: 13298
 {
-	private readonly GUIStyle guiStyleHeader; 
-	private float timeleft; 
-	private float fps; 
-	private int frames; 
+	private readonly GUIStyle guiStyleHeader;
+	private float timeleft;
+	private float fps;
+	private int frames;
 
 
 	private void Awake() { }
@@ -161,15 +161,15 @@ public class ExplosionsFPS : MonoBehaviour // TypeDefIndex: 13283
 
 }
 
-public class ExplosionsBillboard : MonoBehaviour // TypeDefIndex: 13284
+public class ExplosionsBillboard : MonoBehaviour // TypeDefIndex: 13299
 {
-	public Camera Camera; 
-	public bool Active; 
-	public bool AutoInitCamera; 
-	private GameObject myContainer; 
-	private Transform t; 
-	private Transform camT; 
-	private Transform contT; 
+	public Camera Camera;
+	public bool Active;
+	public bool AutoInitCamera;
+	private GameObject myContainer;
+	private Transform t;
+	private Transform camT;
+	private Transform contT;
 
 
 	private void Awake() { }
@@ -180,10 +180,10 @@ public class ExplosionsBillboard : MonoBehaviour // TypeDefIndex: 13284
 
 }
 
-public class ExplosionsDeactivateRendererByTime : MonoBehaviour // TypeDefIndex: 13285
+public class ExplosionsDeactivateRendererByTime : MonoBehaviour // TypeDefIndex: 13300
 {
-	public float TimeDelay; 
-	private Renderer rend; 
+	public float TimeDelay;
+	private Renderer rend;
 
 
 	private void Awake() { }
@@ -196,14 +196,14 @@ public class ExplosionsDeactivateRendererByTime : MonoBehaviour // TypeDefIndex:
 
 }
 
-public class ExplosionsLightCurves : MonoBehaviour // TypeDefIndex: 13286
+public class ExplosionsLightCurves : MonoBehaviour // TypeDefIndex: 13301
 {
-	public AnimationCurve LightCurve; 
-	public float GraphTimeMultiplier; 
-	public float GraphIntensityMultiplier; 
-	private bool canUpdate; 
-	private float startTime; 
-	private Light lightSource; 
+	public AnimationCurve LightCurve;
+	public float GraphTimeMultiplier;
+	public float GraphIntensityMultiplier;
+	private bool canUpdate;
+	private float startTime;
+	private Light lightSource;
 
 
 	private void Awake() { }
@@ -216,9 +216,9 @@ public class ExplosionsLightCurves : MonoBehaviour // TypeDefIndex: 13286
 
 }
 
-public class ExplosionsParticleSystemScaler : MonoBehaviour // TypeDefIndex: 13287
+public class ExplosionsParticleSystemScaler : MonoBehaviour // TypeDefIndex: 13302
 {
-	public float particlesScale; 
+	public float particlesScale;
 
 
 	private void Start() { }
@@ -229,18 +229,18 @@ public class ExplosionsParticleSystemScaler : MonoBehaviour // TypeDefIndex: 132
 
 }
 
-public class ExplosionsScaleCurves : MonoBehaviour // TypeDefIndex: 13288
+public class ExplosionsScaleCurves : MonoBehaviour // TypeDefIndex: 13303
 {
-	public AnimationCurve ScaleCurveX; 
-	public AnimationCurve ScaleCurveY; 
-	public AnimationCurve ScaleCurveZ; 
-	public Vector3 GraphTimeMultiplier; 
-	public Vector3 GraphScaleMultiplier; 
-	private float startTime; 
-	private Transform t; 
-	private float evalX; 
-	private float evalY; 
-	private float evalZ; 
+	public AnimationCurve ScaleCurveX;
+	public AnimationCurve ScaleCurveY;
+	public AnimationCurve ScaleCurveZ;
+	public Vector3 GraphTimeMultiplier;
+	public Vector3 GraphScaleMultiplier;
+	private float startTime;
+	private Transform t;
+	private float evalX;
+	private float evalY;
+	private float evalZ;
 
 
 	private void Awake() { }
@@ -253,17 +253,17 @@ public class ExplosionsScaleCurves : MonoBehaviour // TypeDefIndex: 13288
 
 }
 
-public class ExplosionsShaderColorGradient : MonoBehaviour // TypeDefIndex: 13289
+public class ExplosionsShaderColorGradient : MonoBehaviour // TypeDefIndex: 13304
 {
-	public string ShaderProperty; 
-	public int MaterialID; 
-	public Gradient Color; 
-	public float TimeMultiplier; 
-	private bool canUpdate; 
-	private Material matInstance; 
-	private int propertyID; 
-	private float startTime; 
-	private Color oldColor; 
+	public string ShaderProperty;
+	public int MaterialID;
+	public Gradient Color;
+	public float TimeMultiplier;
+	private bool canUpdate;
+	private Material matInstance;
+	private int propertyID;
+	private float startTime;
+	private Color oldColor;
 
 
 	private void Start() { }
@@ -276,17 +276,17 @@ public class ExplosionsShaderColorGradient : MonoBehaviour // TypeDefIndex: 1328
 
 }
 
-public class ExplosionsShaderFloatCurves : MonoBehaviour // TypeDefIndex: 13290
+public class ExplosionsShaderFloatCurves : MonoBehaviour // TypeDefIndex: 13305
 {
-	public string ShaderProperty; 
-	public int MaterialID; 
-	public AnimationCurve FloatPropertyCurve; 
-	public float GraphTimeMultiplier; 
-	public float GraphScaleMultiplier; 
-	private bool canUpdate; 
-	private Material matInstance; 
-	private int propertyID; 
-	private float startTime; 
+	public string ShaderProperty;
+	public int MaterialID;
+	public AnimationCurve FloatPropertyCurve;
+	public float GraphTimeMultiplier;
+	public float GraphScaleMultiplier;
+	private bool canUpdate;
+	private Material matInstance;
+	private int propertyID;
+	private float startTime;
 
 
 	private void Start() { }
@@ -299,10 +299,10 @@ public class ExplosionsShaderFloatCurves : MonoBehaviour // TypeDefIndex: 13290
 
 }
 
-public class ExplosionsShaderQueue : MonoBehaviour // TypeDefIndex: 13291
+public class ExplosionsShaderQueue : MonoBehaviour // TypeDefIndex: 13306
 {
-	public int AddQueue; 
-	private Renderer rend; 
+	public int AddQueue;
+	private Renderer rend;
 
 
 	private void Start() { }
@@ -315,28 +315,28 @@ public class ExplosionsShaderQueue : MonoBehaviour // TypeDefIndex: 13291
 
 }
 
-internal class ExplosionsSpriteSheetAnimation : MonoBehaviour // TypeDefIndex: 13292
+internal class ExplosionsSpriteSheetAnimation : MonoBehaviour // TypeDefIndex: 13307
 {
-	public int TilesX; 
-	public int TilesY; 
-	public float AnimationFPS; 
-	public bool IsInterpolateFrames; 
-	public int StartFrameOffset; 
-	public bool IsLoop; 
-	public float StartDelay; 
-	public AnimationCurve FrameOverTime; 
-	private bool isInizialised; 
-	private int index; 
-	private int count; 
-	private int allCount; 
-	private float animationLifeTime; 
-	private bool isVisible; 
-	private bool isCorutineStarted; 
-	private Renderer currentRenderer; 
-	private Material instanceMaterial; 
-	private float currentInterpolatedTime; 
-	private float animationStartTime; 
-	private bool animationStoped; 
+	public int TilesX;
+	public int TilesY;
+	public float AnimationFPS;
+	public bool IsInterpolateFrames;
+	public int StartFrameOffset;
+	public bool IsLoop;
+	public float StartDelay;
+	public AnimationCurve FrameOverTime;
+	private bool isInizialised;
+	private int index;
+	private int count;
+	private int allCount;
+	private float animationLifeTime;
+	private bool isVisible;
+	private bool isCorutineStarted;
+	private Renderer currentRenderer;
+	private Material instanceMaterial;
+	private float currentInterpolatedTime;
+	private float animationStartTime;
+	private bool animationStoped;
 
 
 	private void Start() { }
@@ -351,7 +351,7 @@ internal class ExplosionsSpriteSheetAnimation : MonoBehaviour // TypeDefIndex: 1
 
 	private void OnDisable() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator UpdateCorutine() { }
 
 	private void UpdateFrame() { }
@@ -364,31 +364,31 @@ internal class ExplosionsSpriteSheetAnimation : MonoBehaviour // TypeDefIndex: 1
 
 }
 
-private sealed class ExplosionsSpriteSheetAnimation.<UpdateCorutine>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13293
+private sealed class ExplosionsSpriteSheetAnimation.<UpdateCorutine>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13308
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ExplosionsSpriteSheetAnimation <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public ExplosionsSpriteSheetAnimation <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

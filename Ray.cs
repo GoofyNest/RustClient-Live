@@ -1,7 +1,7 @@
 public struct Ray // TypeDefIndex: 3375
 {
-	private Vector3 m_Origin; 
-	private Vector3 m_Direction; 
+	private Vector3 m_Origin;
+	private Vector3 m_Direction;
 
 	public Vector3 origin { get; set; }
 	public Vector3 direction { get; set; }

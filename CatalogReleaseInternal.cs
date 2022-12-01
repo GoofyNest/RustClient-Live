@@ -1,11 +1,11 @@
-internal struct CatalogReleaseInternal : IGettable<CatalogRelease>, ISettable<CatalogRelease>, IDisposable // TypeDefIndex: 9422
+internal struct CatalogReleaseInternal : IGettable<CatalogRelease>, ISettable<CatalogRelease>, IDisposable // TypeDefIndex: 9424
 {
-	private int m_ApiVersion; 
-	private uint m_CompatibleAppIdCount; 
-	private IntPtr m_CompatibleAppIds; 
-	private uint m_CompatiblePlatformCount; 
-	private IntPtr m_CompatiblePlatforms; 
-	private IntPtr m_ReleaseNote; 
+	private int m_ApiVersion;
+	private uint m_CompatibleAppIdCount;
+	private IntPtr m_CompatibleAppIds;
+	private uint m_CompatiblePlatformCount;
+	private IntPtr m_CompatiblePlatforms;
+	private IntPtr m_ReleaseNote;
 
 	public Utf8String[] CompatibleAppIds { get; set; }
 	public Utf8String[] CompatiblePlatforms { get; set; }

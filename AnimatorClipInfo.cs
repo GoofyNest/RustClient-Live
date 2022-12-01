@@ -1,7 +1,7 @@
 public struct AnimatorClipInfo // TypeDefIndex: 4489
 {
-	private int m_ClipInstanceID; 
-	private float m_Weight; 
+	private int m_ClipInstanceID;
+	private float m_Weight;
 
 	public AnimationClip clip { get; }
 	public float weight { get; }
@@ -11,7 +11,7 @@ public struct AnimatorClipInfo // TypeDefIndex: 4489
 
 	public float get_weight() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static AnimationClip InstanceIDToAnimationClipPPtr(int instanceID) { }
 
 }

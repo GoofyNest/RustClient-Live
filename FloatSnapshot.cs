@@ -1,16 +1,16 @@
-public struct FloatSnapshot : ISnapshot<FloatSnapshot> // TypeDefIndex: 13923
+public struct FloatSnapshot : ISnapshot<FloatSnapshot> // TypeDefIndex: 13940
 {
-	[CompilerGeneratedAttribute] 
-	private float <Time>k__BackingField; 
-	public float value; 
+	[CompilerGeneratedAttribute]
+	private float <Time>k__BackingField;
+	public float value;
 
 	public float Time { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Time() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Time(float value) { }
 
 	public void .ctor(float time, float value) { }

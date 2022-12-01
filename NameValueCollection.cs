@@ -1,7 +1,7 @@
 public class NameValueCollection : NameObjectCollectionBase // TypeDefIndex: 3106
 {
-	private string[] _all; 
-	private string[] _allKeys; 
+	private string[] _all;
+	private string[] _allKeys;
 
 	public string Item { get; set; }
 	public string Item { get; }

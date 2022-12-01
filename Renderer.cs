@@ -1,6 +1,6 @@
 public class Renderer : Component // TypeDefIndex: 3404
 {
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public bool motionVectors { set; }
 	public Bounds bounds { get; }
 	public bool enabled { get; set; }
@@ -21,40 +21,40 @@ public class Renderer : Component // TypeDefIndex: 3404
 
 	public void set_motionVectors(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Bounds get_bounds() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Material GetMaterial() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Material GetSharedMaterial() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetMaterial(Material m) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Material[] GetMaterialArray() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void CopySharedMaterialArray([Out] Material[] m) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetMaterialArray(Material[] m) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal void Internal_SetPropertyBlock(MaterialPropertyBlock properties) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal void Internal_GetPropertyBlock(MaterialPropertyBlock dest) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal void Internal_SetPropertyBlockMaterialIndex(MaterialPropertyBlock properties, int materialIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal void Internal_GetPropertyBlockMaterialIndex(MaterialPropertyBlock dest, int materialIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool HasPropertyBlock() { }
 
 	public void SetPropertyBlock(MaterialPropertyBlock properties) { }
@@ -69,7 +69,7 @@ public class Renderer : Component // TypeDefIndex: 3404
 
 	public void set_enabled(bool value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isVisible() { }
 
 	public ShadowCastingMode get_shadowCastingMode() { }
@@ -102,7 +102,7 @@ public class Renderer : Component // TypeDefIndex: 3404
 
 	private int GetMaterialCount() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private Material[] GetSharedMaterialArray() { }
 
 	public Material[] get_materials() { }

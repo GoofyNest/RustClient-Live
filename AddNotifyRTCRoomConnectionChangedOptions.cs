@@ -1,24 +1,24 @@
-public struct AddNotifyRTCRoomConnectionChangedOptions // TypeDefIndex: 9073
+public struct AddNotifyRTCRoomConnectionChangedOptions // TypeDefIndex: 9075
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LobbyId_DEPRECATED>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId_DEPRECATED>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LobbyId_DEPRECATED>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId_DEPRECATED>k__BackingField;
 
 	public Utf8String LobbyId_DEPRECATED { get; set; }
 	public ProductUserId LocalUserId_DEPRECATED { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LobbyId_DEPRECATED() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyId_DEPRECATED(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId_DEPRECATED() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId_DEPRECATED(ProductUserId value) { }
 
 }

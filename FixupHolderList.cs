@@ -1,7 +1,7 @@
 internal class FixupHolderList // TypeDefIndex: 1040
 {
-	internal FixupHolder[] m_values; 
-	internal int m_count; 
+	internal FixupHolder[] m_values;
+	internal int m_count;
 
 
 	internal void .ctor() { }

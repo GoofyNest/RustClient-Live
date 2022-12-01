@@ -4,28 +4,28 @@ public class Material : Object // TypeDefIndex: 3407
 	public Color color { get; set; }
 	public Texture mainTexture { get; }
 	public int renderQueue { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool enableInstancing { get; set; }
 	public int passCount { get; }
 	public string[] shaderKeywords { get; set; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void CreateWithShader(Material self, Shader shader) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void CreateWithMaterial(Material self, Material source) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void CreateWithString(Material self) { }
 
 	public void .ctor(Shader shader) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor(Material source) { }
 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public void .ctor(string contents) { }
 
 	public Shader get_shader() { }
@@ -38,18 +38,18 @@ public class Material : Object // TypeDefIndex: 3407
 
 	public Texture get_mainTexture() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private int GetFirstPropertyNameIdByAttribute(ShaderPropertyFlags attributeFlag) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool HasProperty(int nameID) { }
 
 	public bool HasProperty(string name) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public int get_renderQueue() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public void set_renderQueue(int value) { }
 
 	public void EnableKeyword(string keyword) { }
@@ -64,7 +64,7 @@ public class Material : Object // TypeDefIndex: 3407
 
 	public int get_passCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool GetShaderPassEnabled(string passName) { }
 
 	public string GetPassName(int pass) { }
@@ -73,60 +73,60 @@ public class Material : Object // TypeDefIndex: 3407
 
 	public void SetOverrideTag(string tag, string val) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private string GetTagImpl(string tag, bool currentSubShaderOnly, string defaultValue) { }
 
 	public string GetTag(string tag, bool searchFallbacks, string defaultValue) { }
 
 	public string GetTag(string tag, bool searchFallbacks) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool SetPass(int pass) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void CopyPropertiesFromMaterial(Material mat) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private string[] GetShaderKeywords() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetShaderKeywords(string[] names) { }
 
 	public string[] get_shaderKeywords() { }
 
 	public void set_shaderKeywords(string[] value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetFloatImpl(int name, float value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetColorImpl(int name, Color value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetMatrixImpl(int name, Matrix4x4 value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetTextureImpl(int name, Texture value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetBufferImpl(int name, ComputeBuffer value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private float GetFloatImpl(int name) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private Color GetColorImpl(int name) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private Texture GetTextureImpl(int name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetFloatArrayImpl(int name, float[] values, int count) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetTextureOffsetImpl(int name, Vector2 offset) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void SetTextureScaleImpl(int name, Vector2 scale) { }
 
 	private void SetFloatArray(int name, float[] values, int count) { }

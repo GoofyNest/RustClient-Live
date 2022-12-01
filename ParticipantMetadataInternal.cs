@@ -1,8 +1,8 @@
-internal struct ParticipantMetadataInternal : IGettable<ParticipantMetadata>, ISettable<ParticipantMetadata>, IDisposable // TypeDefIndex: 8789
+internal struct ParticipantMetadataInternal : IGettable<ParticipantMetadata>, ISettable<ParticipantMetadata>, IDisposable // TypeDefIndex: 8791
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Key; 
-	private IntPtr m_Value; 
+	private int m_ApiVersion;
+	private IntPtr m_Key;
+	private IntPtr m_Value;
 
 	public Utf8String Key { get; set; }
 	public Utf8String Value { get; set; }

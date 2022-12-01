@@ -1,11 +1,11 @@
 public class UploadHandler : IDisposable // TypeDefIndex: 4139
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 	public string contentType { set; }
 
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Release() { }
 
 	internal void .ctor() { }
@@ -18,7 +18,7 @@ public class UploadHandler : IDisposable // TypeDefIndex: 4139
 
 	internal virtual void SetContentType(string newContentType) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void InternalSetContentType(string newContentType) { }
 
 }

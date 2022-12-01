@@ -1,4 +1,4 @@
-public sealed class PresenceInterface : Handle // TypeDefIndex: 8843
+public sealed class PresenceInterface : Handle // TypeDefIndex: 8845
 {
 	public const int AddnotifyjoingameacceptedApiLatest = 2;
 	public const int AddnotifyonpresencechangedApiLatest = 1;
@@ -12,7 +12,7 @@ public sealed class PresenceInterface : Handle // TypeDefIndex: 8843
 	public const int GetjoininfoApiLatest = 1;
 	public const int HaspresenceApiLatest = 1;
 	public const int InfoApiLatest = 3;
-	public static readonly Utf8String KeyPlatformPresence; 
+	public static readonly Utf8String KeyPlatformPresence;
 	public const int QuerypresenceApiLatest = 1;
 	public const int RichTextMaxValueLength = 255;
 	public const int SetdataApiLatest = 1;
@@ -45,16 +45,16 @@ public sealed class PresenceInterface : Handle // TypeDefIndex: 8843
 
 	public void SetPresence(ref SetPresenceOptions options, object clientData, SetPresenceCompleteCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnJoinGameAcceptedCallbackInternalImplementation(ref JoinGameAcceptedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnPresenceChangedCallbackInternalImplementation(ref PresenceChangedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryPresenceCompleteCallbackInternalImplementation(ref QueryPresenceCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void SetPresenceCompleteCallbackInternalImplementation(ref SetPresenceCallbackInfoInternal data) { }
 
 	private static void .cctor() { }

@@ -1,11 +1,11 @@
-public class Cassette : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6396
+public class Cassette : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6398
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint audioId; 
-	public uint holder; 
-	public ulong creatorSteamId; 
-	public int preloadAudioId; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint audioId;
+	public uint holder;
+	public ulong creatorSteamId;
+	public int preloadAudioId;
 
 
 	public static void ResetToPool(Cassette instance) { }
@@ -62,27 +62,27 @@ public class Cassette : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6396
 
 }
 
-public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10264
+public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10267
 {
-	private static List<Cassette.LoadRequest> loadQueue; 
-	private static bool isLoading; 
-	public float MaxCassetteLength; 
-	[ReplicatedVar] 
-	public static float MaxCassetteFileSizeMB; 
-	[CompilerGeneratedAttribute] 
-	private uint <AudioId>k__BackingField; 
-	public ulong CreatorSteamId; 
-	public PreloadedCassetteContent.PreloadType PreloadType; 
-	public PreloadedCassetteContent PreloadContent; 
-	public SoundDefinition InsertCassetteSfx; 
-	public int ViewmodelIndex; 
-	public Sprite HudSprite; 
-	public int MaximumVoicemailSlots; 
-	private int preloadedAudioId; 
-	private uint cachedId; 
-	private AudioClip cachedClip; 
-	private bool notifyOnLoad; 
-	private Action<AudioClip> audioLoadFromServerCallback; 
+	private static List<Cassette.LoadRequest> loadQueue;
+	private static bool isLoading;
+	public float MaxCassetteLength;
+	[ReplicatedVar]
+	public static float MaxCassetteFileSizeMB;
+	[CompilerGeneratedAttribute]
+	private uint <AudioId>k__BackingField;
+	public ulong CreatorSteamId;
+	public PreloadedCassetteContent.PreloadType PreloadType;
+	public PreloadedCassetteContent PreloadContent;
+	public SoundDefinition InsertCassetteSfx;
+	public int ViewmodelIndex;
+	public Sprite HudSprite;
+	public int MaximumVoicemailSlots;
+	private int preloadedAudioId;
+	private uint cachedId;
+	private AudioClip cachedClip;
+	private bool notifyOnLoad;
+	private Action<AudioClip> audioLoadFromServerCallback;
 
 	public uint AudioId { get; set; }
 	public SoundDefinition PreloadedAudio { get; }
@@ -96,10 +96,10 @@ public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10264
 
 	public static void LoadAudio(byte[] data, Action<AudioClip, bool> onComplete) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AudioId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_AudioId(uint value) { }
 
 	public SoundDefinition get_PreloadedAudio() { }
@@ -114,10 +114,10 @@ public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10264
 
 	public void RequestFileUpdate(Action<AudioClip> onAudioReady) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_ReceiveAudio(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void FailedNetworkFileRequest(BaseEntity.RPCMessage msg) { }
 
 	public static bool IsOggValid(byte[] data, Cassette c) { }
@@ -132,23 +132,23 @@ public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10264
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Client_ReceiveAudio>
 
 }
 
-private struct Cassette.LoadRequest // TypeDefIndex: 10265
+private struct Cassette.LoadRequest // TypeDefIndex: 10268
 {
-	public byte[] Data; 
-	public Action<AudioClip, bool> Callback; 
-	public BaseEntity ForEntity; 
+	public byte[] Data;
+	public Action<AudioClip, bool> Callback;
+	public BaseEntity ForEntity;
 
 }
 
-private sealed class Cassette.<>c__DisplayClass29_0 // TypeDefIndex: 10266
+private sealed class Cassette.<>c__DisplayClass29_0 // TypeDefIndex: 10269
 {
-	public Cassette <>4__this; 
-	public Action<AudioClip> onAudioReady; 
+	public Cassette <>4__this;
+	public Action<AudioClip> onAudioReady;
 
 
 	public void .ctor() { }
@@ -157,11 +157,11 @@ private sealed class Cassette.<>c__DisplayClass29_0 // TypeDefIndex: 10266
 
 }
 
-private sealed class Cassette.<>c__DisplayClass31_0 // TypeDefIndex: 10267
+private sealed class Cassette.<>c__DisplayClass31_0 // TypeDefIndex: 10270
 {
-	public Cassette <>4__this; 
-	public byte[] data; 
-	public Action<AudioClip> onAudioReady; 
+	public Cassette <>4__this;
+	public byte[] data;
+	public Action<AudioClip> onAudioReady;
 
 
 	public void .ctor() { }

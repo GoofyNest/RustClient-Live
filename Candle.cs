@@ -1,7 +1,7 @@
-public class Candle : BaseCombatEntity, ISplashable, IIgniteable // TypeDefIndex: 10086
+public class Candle : BaseCombatEntity, ISplashable, IIgniteable // TypeDefIndex: 10088
 {
-	private Option __menuOption_Menu_Extinguish; 
-	private Option __menuOption_Menu_Ignite; 
+	private Option __menuOption_Menu_Extinguish;
+	private Option __menuOption_Menu_Ignite;
 
 	public override bool HasMenuOptions { get; }
 
@@ -12,18 +12,18 @@ public class Candle : BaseCombatEntity, ISplashable, IIgniteable // TypeDefIndex
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Ignite(BasePlayer player) { }
 
 	public bool Menu_Ignite_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Extinguish(BasePlayer player) { }
 
 	public bool Menu_Extinguish_ShowIf(BasePlayer player) { }

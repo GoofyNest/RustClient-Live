@@ -1,12 +1,12 @@
 public abstract class HMAC : KeyedHashAlgorithm // TypeDefIndex: 960
 {
-	private int blockSizeValue; 
-	internal string m_hashName; 
-	internal HashAlgorithm m_hash1; 
-	internal HashAlgorithm m_hash2; 
-	private byte[] m_inner; 
-	private byte[] m_outer; 
-	private bool m_hashing; 
+	private int blockSizeValue;
+	internal string m_hashName;
+	internal HashAlgorithm m_hash1;
+	internal HashAlgorithm m_hash2;
+	private byte[] m_inner;
+	private byte[] m_outer;
+	private bool m_hashing;
 
 	protected int BlockSizeValue { get; set; }
 	public override byte[] Key { get; set; }

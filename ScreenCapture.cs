@@ -1,7 +1,7 @@
 public static class ScreenCapture // TypeDefIndex: 4563
 {
 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
 public static class ScreenCapture
 
 	public static void CaptureScreenshot(string filename, int superSize) { }
@@ -12,7 +12,7 @@ public static class ScreenCapture
 
 public enum ScreenCapture.StereoScreenCaptureMode // TypeDefIndex: 4564
 {
-	public int value__; 
+	public int value__;
 	public const ScreenCapture.StereoScreenCaptureMode LeftEye = 1;
 	public const ScreenCapture.StereoScreenCaptureMode RightEye = 2;
 	public const ScreenCapture.StereoScreenCaptureMode BothEyes = 3;

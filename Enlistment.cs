@@ -1,6 +1,6 @@
 public class Enlistment // TypeDefIndex: 3981
 {
-	internal bool done; 
+	internal bool done;
 
 
 	internal void .ctor() { }

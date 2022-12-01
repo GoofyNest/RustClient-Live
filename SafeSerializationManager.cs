@@ -1,11 +1,11 @@
 internal sealed class SafeSerializationManager : IObjectReference, ISerializable // TypeDefIndex: 1047
 {
-	private IList<object> m_serializedStates; 
-	private SerializationInfo m_savedSerializationInfo; 
-	private object m_realObject; 
-	private RuntimeType m_realType; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler<SafeSerializationEventArgs> SerializeObjectState; 
+	private IList<object> m_serializedStates;
+	private SerializationInfo m_savedSerializationInfo;
+	private object m_realObject;
+	private RuntimeType m_realType;
+	[CompilerGeneratedAttribute]
+	private EventHandler<SafeSerializationEventArgs> SerializeObjectState;
 	private const string RealTypeSerializationName = "CLR_SafeSerializationManager_RealType";
 
 	internal bool IsActive { get; }
@@ -25,7 +25,7 @@ internal sealed class SafeSerializationManager : IObjectReference, ISerializable
 
 	private object System.Runtime.Serialization.IObjectReference.GetRealObject(StreamingContext context) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext context) { }
 
 }

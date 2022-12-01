@@ -1,28 +1,28 @@
-public class Kayak : BaseBoat, IPoolVehicle // TypeDefIndex: 10313
+public class Kayak : BaseBoat, IPoolVehicle // TypeDefIndex: 10316
 {
-	public ItemDefinition OarItem; 
-	public float maxPaddleFrequency; 
-	public float forwardPaddleForce; 
-	public float multiDriverPaddleForceMultiplier; 
-	public float rotatePaddleForce; 
-	public GameObjectRef forwardSplashEffect; 
-	public GameObjectRef backSplashEffect; 
-	public ParticleSystem moveSplashEffect; 
-	public float animationLerpSpeed; 
-	[HeaderAttribute] 
-	public BlendedSoundLoops waterLoops; 
-	public float waterSoundSpeedDivisor; 
-	public GameObjectRef pushLandEffect; 
-	public GameObjectRef pushWaterEffect; 
-	public PlayerModel.MountPoses noPaddlePose; 
-	private TimeSince splashEffectCooldown; 
-	private Kayak.PlayerAnimationState[] animationStates; 
-	private float lastSoundUpdate; 
+	public ItemDefinition OarItem;
+	public float maxPaddleFrequency;
+	public float forwardPaddleForce;
+	public float multiDriverPaddleForceMultiplier;
+	public float rotatePaddleForce;
+	public GameObjectRef forwardSplashEffect;
+	public GameObjectRef backSplashEffect;
+	public ParticleSystem moveSplashEffect;
+	public float animationLerpSpeed;
+	[HeaderAttribute]
+	public BlendedSoundLoops waterLoops;
+	public float waterSoundSpeedDivisor;
+	public GameObjectRef pushLandEffect;
+	public GameObjectRef pushWaterEffect;
+	public PlayerModel.MountPoses noPaddlePose;
+	private TimeSince splashEffectCooldown;
+	private Kayak.PlayerAnimationState[] animationStates;
+	private float lastSoundUpdate;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void OnPaddled(BaseEntity.RPCMessage msg) { }
 
 	protected override void ClientInit(Entity info) { }
@@ -57,17 +57,17 @@ public class Kayak : BaseBoat, IPoolVehicle // TypeDefIndex: 10313
 
 }
 
-private struct Kayak.PlayerAnimationState // TypeDefIndex: 10314
+private struct Kayak.PlayerAnimationState // TypeDefIndex: 10317
 {
-	public Vector3 smoothedAnimDirection; 
-	public TimeSince lastPaddle; 
-	public Kayak.PaddleDirection lastPaddleDirection; 
+	public Vector3 smoothedAnimDirection;
+	public TimeSince lastPaddle;
+	public Kayak.PaddleDirection lastPaddleDirection;
 
 }
 
-private enum Kayak.PaddleDirection // TypeDefIndex: 10315
+private enum Kayak.PaddleDirection // TypeDefIndex: 10318
 {
-	public int value__; 
+	public int value__;
 	public const Kayak.PaddleDirection Left = 0;
 	public const Kayak.PaddleDirection Right = 1;
 	public const Kayak.PaddleDirection LeftBack = 2;

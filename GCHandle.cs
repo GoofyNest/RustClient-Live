@@ -1,6 +1,6 @@
 public struct GCHandle // TypeDefIndex: 1353
 {
-	private int handle; 
+	private int handle;
 
 	public bool IsAllocated { get; }
 	public object Target { get; set; }

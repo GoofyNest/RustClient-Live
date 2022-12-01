@@ -1,11 +1,11 @@
-internal struct ExternalAccountInfoInternal : IGettable<ExternalAccountInfo>, ISettable<ExternalAccountInfo>, IDisposable // TypeDefIndex: 9580
+internal struct ExternalAccountInfoInternal : IGettable<ExternalAccountInfo>, ISettable<ExternalAccountInfo>, IDisposable // TypeDefIndex: 9582
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ProductUserId; 
-	private IntPtr m_DisplayName; 
-	private IntPtr m_AccountId; 
-	private ExternalAccountType m_AccountIdType; 
-	private long m_LastLoginTime; 
+	private int m_ApiVersion;
+	private IntPtr m_ProductUserId;
+	private IntPtr m_DisplayName;
+	private IntPtr m_AccountId;
+	private ExternalAccountType m_AccountIdType;
+	private long m_LastLoginTime;
 
 	public ProductUserId ProductUserId { get; set; }
 	public Utf8String DisplayName { get; set; }

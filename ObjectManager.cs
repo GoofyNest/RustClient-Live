@@ -1,13 +1,13 @@
 public class ObjectManager // TypeDefIndex: 1037
 {
-	private DeserializationEventHandler m_onDeserializationHandler; 
-	private SerializationEventHandler m_onDeserializedHandler; 
-	internal ObjectHolder[] m_objects; 
-	internal object m_topObject; 
-	internal ObjectHolderList m_specialFixupObjects; 
-	internal long m_fixupCount; 
-	internal ISurrogateSelector m_selector; 
-	internal StreamingContext m_context; 
+	private DeserializationEventHandler m_onDeserializationHandler;
+	private SerializationEventHandler m_onDeserializedHandler;
+	internal ObjectHolder[] m_objects;
+	internal object m_topObject;
+	internal ObjectHolderList m_specialFixupObjects;
+	internal long m_fixupCount;
+	internal ISurrogateSelector m_selector;
+	internal StreamingContext m_context;
 
 	internal object TopObject { get; set; }
 	internal ObjectHolderList SpecialFixupObjects { get; }

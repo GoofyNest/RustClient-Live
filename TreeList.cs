@@ -1,8 +1,8 @@
-public class TreeList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6507
+public class TreeList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6509
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<Tree> trees; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<Tree> trees;
 
 
 	public static void ResetToPool(TreeList instance) { }

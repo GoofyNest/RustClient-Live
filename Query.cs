@@ -1,30 +1,30 @@
 public struct Query // TypeDefIndex: 5285
 {
-	private UgcType matchingType; 
-	private UGCQuery queryType; 
-	private AppId consumerApp; 
-	private AppId creatorApp; 
-	private string searchText; 
-	private Nullable<SteamId> steamid; 
-	private UserUGCList userType; 
-	private UserUGCListSortOrder userSort; 
-	private PublishedFileId[] Files; 
-	private Nullable<int> maxCacheAge; 
-	private string language; 
-	private Nullable<int> trendDays; 
-	private List<string> requiredTags; 
-	private Nullable<bool> matchAnyTag; 
-	private List<string> excludedTags; 
-	private Dictionary<string, string> requiredKv; 
-	private Nullable<bool> WantsReturnOnlyIDs; 
-	private Nullable<bool> WantsReturnKeyValueTags; 
-	private Nullable<bool> WantsReturnLongDescription; 
-	private Nullable<bool> WantsReturnMetadata; 
-	private Nullable<bool> WantsReturnChildren; 
-	private Nullable<bool> WantsReturnAdditionalPreviews; 
-	private Nullable<bool> WantsReturnTotalOnly; 
-	private Nullable<uint> WantsReturnPlaytimeStats; 
-	private Nullable<bool> WantsDefaultStats; 
+	private UgcType matchingType;
+	private UGCQuery queryType;
+	private AppId consumerApp;
+	private AppId creatorApp;
+	private string searchText;
+	private Nullable<SteamId> steamid;
+	private UserUGCList userType;
+	private UserUGCListSortOrder userSort;
+	private PublishedFileId[] Files;
+	private Nullable<int> maxCacheAge;
+	private string language;
+	private Nullable<int> trendDays;
+	private List<string> requiredTags;
+	private Nullable<bool> matchAnyTag;
+	private List<string> excludedTags;
+	private Dictionary<string, string> requiredKv;
+	private Nullable<bool> WantsReturnOnlyIDs;
+	private Nullable<bool> WantsReturnKeyValueTags;
+	private Nullable<bool> WantsReturnLongDescription;
+	private Nullable<bool> WantsReturnMetadata;
+	private Nullable<bool> WantsReturnChildren;
+	private Nullable<bool> WantsReturnAdditionalPreviews;
+	private Nullable<bool> WantsReturnTotalOnly;
+	private Nullable<uint> WantsReturnPlaytimeStats;
+	private Nullable<bool> WantsDefaultStats;
 
 	public static Query All { get; }
 
@@ -45,7 +45,7 @@ public struct Query // TypeDefIndex: 5285
 
 	public Query WithFileId(PublishedFileId[] files) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<Nullable<ResultPage>> GetPageAsync(int page) { }
 
 	public Query WithTrendDays(int days) { }
@@ -62,16 +62,16 @@ public struct Query // TypeDefIndex: 5285
 
 private struct Query.<GetPageAsync>d__76 : IAsyncStateMachine // TypeDefIndex: 5286
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Nullable<ResultPage>> <>t__builder; 
-	public int page; 
-	public Query <>4__this; 
-	private CallResult<SteamUGCQueryCompleted_t> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Nullable<ResultPage>> <>t__builder;
+	public int page;
+	public Query <>4__this;
+	private CallResult<SteamUGCQueryCompleted_t> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

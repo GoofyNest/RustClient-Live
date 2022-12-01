@@ -1,28 +1,28 @@
-public class ImageEffectComposite : MonoBehaviour // TypeDefIndex: 8048
+public class ImageEffectComposite : MonoBehaviour // TypeDefIndex: 8050
 {
-	public RenderTextureFormat format; 
-	public RenderTextureReadWrite readWrite; 
-	private List<ImageEffectLayer> layers; 
-	private Comparison<ImageEffectLayer> layerSort; 
-	private List<IImageEffect> effects; 
-	private bool sorted; 
+	public RenderTextureFormat format;
+	public RenderTextureReadWrite readWrite;
+	private List<ImageEffectLayer> layers;
+	private Comparison<ImageEffectLayer> layerSort;
+	private List<IImageEffect> effects;
+	private bool sorted;
 
 
 	public void Add(ImageEffectLayer effect) { }
 
 	public void Remove(ImageEffectLayer effect) { }
 
-	[ImageEffectTransformsToLDR] 
+	[ImageEffectTransformsToLDR]
 	private void OnRenderImage(RenderTexture src, RenderTexture dst) { }
 
 	public void .ctor() { }
 
 }
 
-private sealed class ImageEffectComposite.<>c // TypeDefIndex: 8049
+private sealed class ImageEffectComposite.<>c // TypeDefIndex: 8051
 {
-	public static readonly ImageEffectComposite.<>c <>9; 
-	public static Comparison<ImageEffectLayer> <>9__9_0; 
+	public static readonly ImageEffectComposite.<>c <>9;
+	public static Comparison<ImageEffectLayer> <>9__9_0;
 
 
 	private static void .cctor() { }

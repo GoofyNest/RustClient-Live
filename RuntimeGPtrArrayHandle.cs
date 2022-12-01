@@ -1,6 +1,6 @@
 internal struct RuntimeGPtrArrayHandle // TypeDefIndex: 10
 {
-	private RuntimeStructs.GPtrArray* value; 
+	private RuntimeStructs.GPtrArray* value;
 
 	internal int Length { get; }
 	internal IntPtr Item { get; }

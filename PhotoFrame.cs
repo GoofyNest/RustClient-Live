@@ -1,10 +1,10 @@
-public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6391
+public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6393
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint photoEntityId; 
-	public uint overlayImageCrc; 
-	public List<ulong> editHistory; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint photoEntityId;
+	public uint overlayImageCrc;
+	public List<ulong> editHistory;
 
 
 	public static void ResetToPool(PhotoFrame instance) { }
@@ -61,20 +61,20 @@ public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 639
 
 }
 
-public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10145
+public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10147
 {
-	private Option __menuOption_Menu_ChangeText; 
-	private Option __menuOption_Menu_LockSign; 
-	private Option __menuOption_Menu_UnLockSign; 
-	public GameObjectRef SignEditorDialog; 
-	public OverlayMeshPaintableSource PaintableSource; 
+	private Option __menuOption_Menu_ChangeText;
+	private Option __menuOption_Menu_LockSign;
+	private Option __menuOption_Menu_UnLockSign;
+	public GameObjectRef SignEditorDialog;
+	public OverlayMeshPaintableSource PaintableSource;
 	private const float TextureRequestDistance = 100;
-	private EntityRef _photoEntity; 
-	private uint _overlayTextureCrc; 
-	private LODCell _cell; 
-	private Texture2D _photoTexture; 
-	private uint _loadedPhotoEntityId; 
-	private uint _loadedOverlayCrc; 
+	private EntityRef _photoEntity;
+	private uint _overlayTextureCrc;
+	private LODCell _cell;
+	private Texture2D _photoTexture;
+	private uint _loadedPhotoEntityId;
+	private uint _loadedOverlayCrc;
 
 	public override bool HasMenuOptions { get; }
 	public Vector2i TextureSize { get; }
@@ -107,27 +107,27 @@ public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGC
 
 	private void FreeOverlayTexture() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_ChangeText(BasePlayer player) { }
 
 	public void OnTextureWasEdited(int frame, Texture2D texture, bool fromFile = False) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void RecieveOverlayTexture(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_LockSign(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_UnLockSign(BasePlayer player) { }
 
 	public override string Categorize() { }
@@ -168,7 +168,7 @@ public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGC
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Menu_ChangeText>
 
 }

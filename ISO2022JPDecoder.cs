@@ -1,10 +1,10 @@
-internal class ISO2022JPDecoder : Decoder // TypeDefIndex: 7823
+internal class ISO2022JPDecoder : Decoder // TypeDefIndex: 7825
 {
-	private static JISConvert convert; 
-	private readonly bool allow_shift_io; 
-	private ISO2022JPMode m; 
-	private bool shifted_in_conv; 
-	private bool shifted_in_count; 
+	private static JISConvert convert;
+	private readonly bool allow_shift_io;
+	private ISO2022JPMode m;
+	private bool shifted_in_conv;
+	private bool shifted_in_count;
 
 
 	public void .ctor(bool allow1ByteKana, bool allowShiftIO) { }

@@ -1,8 +1,8 @@
 public static class GarbageCollector // TypeDefIndex: 3653
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<GarbageCollector.Mode> GCModeChanged; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<GarbageCollector.Mode> GCModeChanged;
 
 	public static GarbageCollector.Mode GCMode { get; set; }
 	public static bool isIncremental { get; }
@@ -13,12 +13,12 @@ public static class GarbageCollector // TypeDefIndex: 3653
 
 	public static void set_GCMode(GarbageCollector.Mode value) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private static void SetMode(GarbageCollector.Mode mode) { }
 
 	private static GarbageCollector.Mode GetMode() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static bool get_isIncremental() { }
 
 	public static ulong get_incrementalTimeSliceNanoseconds() { }
@@ -29,7 +29,7 @@ public static class GarbageCollector // TypeDefIndex: 3653
 
 public enum GarbageCollector.Mode // TypeDefIndex: 3654
 {
-	public int value__; 
+	public int value__;
 	public const GarbageCollector.Mode Disabled = 0;
 	public const GarbageCollector.Mode Enabled = 1;
 

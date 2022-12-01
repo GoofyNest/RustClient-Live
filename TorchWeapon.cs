@@ -1,11 +1,11 @@
-public class TorchWeapon : BaseMelee // TypeDefIndex: 10377
+public class TorchWeapon : BaseMelee // TypeDefIndex: 10381
 {
-	public float fuelTickAmount; 
-	[HeaderAttribute] 
-	public AnimatorOverrideController LitHoldAnimationOverride; 
-	public GameObjectRef litStrikeFX; 
-	private bool specVmWasOn; 
-	private TimeUntil blockVmUpdates; 
+	public float fuelTickAmount;
+	[HeaderAttribute]
+	public AnimatorOverrideController LitHoldAnimationOverride;
+	public GameObjectRef litStrikeFX;
+	private bool specVmWasOn;
+	private TimeUntil blockVmUpdates;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

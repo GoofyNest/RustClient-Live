@@ -1,19 +1,19 @@
 public abstract class Constraint // TypeDefIndex: 4179
 {
-	private string _schemaName; 
-	private bool _inCollection; 
-	private DataSet _dataSet; 
-	internal string _name; 
-	internal PropertyCollection _extendedProperties; 
+	private string _schemaName;
+	private bool _inCollection;
+	private DataSet _dataSet;
+	internal string _name;
+	internal PropertyCollection _extendedProperties;
 
-	[DefaultValueAttribute] 
+	[DefaultValueAttribute]
 	public virtual string ConstraintName { get; set; }
 	internal string SchemaName { get; set; }
 	internal virtual bool InCollection { get; set; }
 	public abstract DataTable Table { get; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public PropertyCollection ExtendedProperties { get; }
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	protected virtual DataSet _DataSet { get; }
 
 

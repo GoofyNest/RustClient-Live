@@ -1,22 +1,22 @@
-public class TextContainer : UIBehaviour // TypeDefIndex: 6809
+public class TextContainer : UIBehaviour // TypeDefIndex: 6811
 {
-	private bool m_hasChanged; 
-	[SerializeField] 
-	private Vector2 m_pivot; 
-	[SerializeField] 
-	private TextContainerAnchors m_anchorPosition; 
-	[SerializeField] 
-	private Rect m_rect; 
-	private bool m_isDefaultWidth; 
-	private bool m_isDefaultHeight; 
-	private bool m_isAutoFitting; 
-	private Vector3[] m_corners; 
-	private Vector3[] m_worldCorners; 
-	[SerializeField] 
-	private Vector4 m_margins; 
-	private RectTransform m_rectTransform; 
-	private static Vector2 k_defaultSize; 
-	private TextMeshPro m_textMeshPro; 
+	private bool m_hasChanged;
+	[SerializeField]
+	private Vector2 m_pivot;
+	[SerializeField]
+	private TextContainerAnchors m_anchorPosition;
+	[SerializeField]
+	private Rect m_rect;
+	private bool m_isDefaultWidth;
+	private bool m_isDefaultHeight;
+	private bool m_isAutoFitting;
+	private Vector3[] m_corners;
+	private Vector3[] m_worldCorners;
+	[SerializeField]
+	private Vector4 m_margins;
+	private RectTransform m_rectTransform;
+	private static Vector2 k_defaultSize;
+	private TextMeshPro m_textMeshPro;
 
 	public bool hasChanged { get; set; }
 	public Vector2 pivot { get; set; }

@@ -1,20 +1,20 @@
-public class IconSkin : MonoBehaviour, IItemIconChanged, IClientComponent // TypeDefIndex: 10918
+public class IconSkin : MonoBehaviour, IItemIconChanged, IClientComponent // TypeDefIndex: 10924
 {
-	public Image icon; 
-	public Text text; 
-	public Action<int> onChanged; 
-	internal ItemDefinition item; 
-	internal int skinId; 
-	[CompilerGeneratedAttribute] 
-	private string <searchString>k__BackingField; 
+	public Image icon;
+	public Text text;
+	public Action<int> onChanged;
+	internal ItemDefinition item;
+	internal int skinId;
+	[CompilerGeneratedAttribute]
+	private string <searchString>k__BackingField;
 
 	public string searchString { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_searchString() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_searchString(string value) { }
 
 	protected void OnEnable() { }

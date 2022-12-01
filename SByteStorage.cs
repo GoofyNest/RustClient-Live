@@ -1,6 +1,6 @@
 internal sealed class SByteStorage : DataStorage // TypeDefIndex: 4415
 {
-	private sbyte[] _values; 
+	private sbyte[] _values;
 
 
 	public void .ctor(DataColumn column) { }

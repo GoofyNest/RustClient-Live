@@ -1,9 +1,9 @@
-public class HorseEquipmentInformationPanel : ItemInformationPanel // TypeDefIndex: 12771
+public class HorseEquipmentInformationPanel : ItemInformationPanel // TypeDefIndex: 12785
 {
-	public ItemTextValue horseProtectionDisplay; 
-	public ItemTextValue riderProtectionDisplay; 
-	public ItemTextValue maxSpeedDisplay; 
-	public ItemTextValue storageAmountDisplay; 
+	public ItemTextValue horseProtectionDisplay;
+	public ItemTextValue riderProtectionDisplay;
+	public ItemTextValue maxSpeedDisplay;
+	public ItemTextValue storageAmountDisplay;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

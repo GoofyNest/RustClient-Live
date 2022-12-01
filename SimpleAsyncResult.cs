@@ -1,14 +1,14 @@
 internal class SimpleAsyncResult : IAsyncResult // TypeDefIndex: 3022
 {
-	private ManualResetEvent handle; 
-	private bool synch; 
-	private bool isCompleted; 
-	private readonly SimpleAsyncCallback cb; 
-	private object state; 
-	private bool callbackDone; 
-	private Exception exc; 
-	private object locker; 
-	private Nullable<bool> user_read_synch; 
+	private ManualResetEvent handle;
+	private bool synch;
+	private bool isCompleted;
+	private readonly SimpleAsyncCallback cb;
+	private object state;
+	private bool callbackDone;
+	private Exception exc;
+	private object locker;
+	private Nullable<bool> user_read_synch;
 
 	public object AsyncState { get; }
 	public WaitHandle AsyncWaitHandle { get; }
@@ -63,8 +63,8 @@ internal class SimpleAsyncResult : IAsyncResult // TypeDefIndex: 3022
 
 private sealed class SimpleAsyncResult.<>c__DisplayClass9_0 // TypeDefIndex: 3023
 {
-	public AsyncCallback cb; 
-	public SimpleAsyncResult <>4__this; 
+	public AsyncCallback cb;
+	public SimpleAsyncResult <>4__this;
 
 
 	public void .ctor() { }
@@ -75,9 +75,9 @@ private sealed class SimpleAsyncResult.<>c__DisplayClass9_0 // TypeDefIndex: 302
 
 private sealed class SimpleAsyncResult.<>c__DisplayClass11_0 // TypeDefIndex: 3024
 {
-	public Func<SimpleAsyncResult, bool> func; 
-	public object locker; 
-	public SimpleAsyncCallback callback; 
+	public Func<SimpleAsyncResult, bool> func;
+	public object locker;
+	public SimpleAsyncCallback callback;
 
 
 	public void .ctor() { }

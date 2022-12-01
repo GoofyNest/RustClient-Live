@@ -1,4 +1,4 @@
-public class BestTargetDetectedEventUI : BaseEventUI // TypeDefIndex: 12546
+public class BestTargetDetectedEventUI : BaseEventUI // TypeDefIndex: 12559
 {
 
 	public void .ctor() { }

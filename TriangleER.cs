@@ -1,8 +1,8 @@
-public class TriangleER // TypeDefIndex: 6914
+public class TriangleER // TypeDefIndex: 6916
 {
-	public PointER Vertex1; 
-	public PointER Vertex2; 
-	public PointER Vertex3; 
+	public PointER Vertex1;
+	public PointER Vertex2;
+	public PointER Vertex3;
 
 
 	public void .ctor(PointER vertex1, PointER vertex2, PointER vertex3) { }

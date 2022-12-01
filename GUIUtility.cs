@@ -1,93 +1,93 @@
 public class GUIUtility // TypeDefIndex: 4056
 {
-	[VisibleToOtherModulesAttribute] 
-	internal static int s_SkinMode; 
-	[VisibleToOtherModulesAttribute] 
-	internal static int s_OriginalID; 
-	[VisibleToOtherModulesAttribute] 
-	internal static Action takeCapture; 
-	[VisibleToOtherModulesAttribute] 
-	internal static Action releaseCapture; 
-	[VisibleToOtherModulesAttribute] 
-	internal static Func<int, IntPtr, bool> processEvent; 
-	[VisibleToOtherModulesAttribute] 
-	internal static Action cleanupRoots; 
-	[VisibleToOtherModulesAttribute] 
-	internal static Func<Exception, bool> endContainerGUIFromException; 
-	[VisibleToOtherModulesAttribute] 
-	internal static Action guiChanged; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static bool <guiIsExiting>k__BackingField; 
-	internal static Func<bool> s_HasCurrentWindowKeyFocusFunc; 
+	[VisibleToOtherModulesAttribute]
+	internal static int s_SkinMode;
+	[VisibleToOtherModulesAttribute]
+	internal static int s_OriginalID;
+	[VisibleToOtherModulesAttribute]
+	internal static Action takeCapture;
+	[VisibleToOtherModulesAttribute]
+	internal static Action releaseCapture;
+	[VisibleToOtherModulesAttribute]
+	internal static Func<int, IntPtr, bool> processEvent;
+	[VisibleToOtherModulesAttribute]
+	internal static Action cleanupRoots;
+	[VisibleToOtherModulesAttribute]
+	internal static Func<Exception, bool> endContainerGUIFromException;
+	[VisibleToOtherModulesAttribute]
+	internal static Action guiChanged;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static bool <guiIsExiting>k__BackingField;
+	internal static Func<bool> s_HasCurrentWindowKeyFocusFunc;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	internal static float pixelsPerPoint { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	internal static int guiDepth { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	internal static bool mouseUsed { set; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	internal static bool textFieldInput { set; }
 	public static string systemCopyBuffer { get; set; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	internal static string compositionString { get; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	internal static Vector2 compositionCursorPos { set; }
 	internal static bool guiIsExiting { set; }
 	public static int hotControl { get; set; }
 	public static int keyboardControl { get; set; }
 
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static float get_pixelsPerPoint() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static int get_guiDepth() { }
 
 	internal static void set_mouseUsed(bool value) { }
 
 	internal static void set_textFieldInput(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_systemCopyBuffer() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void set_systemCopyBuffer(string value) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static int GetControlID(int hint, FocusType focusType, Rect rect) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void BeginContainerFromOwner(ScriptableObject owner) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void BeginContainer(ObjectGUIState objectGUIState) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	internal static void Internal_EndContainer() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static int CheckForTabEvent(Event evt) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void SetKeyboardControlToFirstControlId() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void SetKeyboardControlToLastControlId() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static bool HasFocusableControls() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static bool OwnsId(int id) { }
 
 	public static Rect AlignRectToDevice(Rect rect, out int widthInPixels, out int heightInPixels) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static string get_compositionString() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void set_compositionCursorPos(Vector2 value) { }
 
 	private static int Internal_GetHotControl() { }
@@ -102,7 +102,7 @@ public class GUIUtility // TypeDefIndex: 4056
 
 	private static void Internal_ExitGUI() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void MarkGUIChanged() { }
 
 	public static int GetControlID(FocusType focus) { }
@@ -111,17 +111,17 @@ public class GUIUtility // TypeDefIndex: 4056
 
 	public static object GetStateObject(Type t, int controlID) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_guiIsExiting(bool value) { }
 
 	public static int get_hotControl() { }
 
 	public static void set_hotControl(int value) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void TakeCapture() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RemoveCapture() { }
 
 	public static int get_keyboardControl() { }
@@ -134,31 +134,31 @@ public class GUIUtility // TypeDefIndex: 4056
 
 	internal static GUISkin GetDefaultSkin() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static bool ProcessEvent(int instanceID, IntPtr nativeEventPtr) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void EndContainer() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void BeginGUI(int skinMode, int instanceID, int useGUILayout) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void EndGUI(int layoutType) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static bool EndGUIFromException(Exception exception) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static bool EndContainerGUIFromException(Exception exception) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void ResetGlobalState() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static bool IsExitGUIException(Exception exception) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static bool ShouldRethrowException(Exception exception) { }
 
 	internal static void CheckOnGUI() { }

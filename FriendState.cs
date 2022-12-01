@@ -1,6 +1,6 @@
 public enum FriendState // TypeDefIndex: 5152
 {
-	public int value__; 
+	public int value__;
 	public const FriendState Offline = 0;
 	public const FriendState Online = 1;
 	public const FriendState Busy = 2;

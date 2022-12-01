@@ -1,8 +1,8 @@
 public sealed class EditorAttribute : Attribute // TypeDefIndex: 2698
 {
-	private string baseTypeName; 
-	private string typeName; 
-	private string typeId; 
+	private string baseTypeName;
+	private string typeName;
+	private string typeId;
 
 	public override object TypeId { get; }
 

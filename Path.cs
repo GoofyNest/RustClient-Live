@@ -1,16 +1,16 @@
 public static class Path // TypeDefIndex: 678
 {
-	[ObsoleteAttribute] 
-	public static readonly char[] InvalidPathChars; 
-	public static readonly char AltDirectorySeparatorChar; 
-	public static readonly char DirectorySeparatorChar; 
-	public static readonly char PathSeparator; 
-	internal static readonly string DirectorySeparatorStr; 
-	public static readonly char VolumeSeparatorChar; 
-	internal static readonly char[] PathSeparatorChars; 
-	private static readonly bool dirEqualsVolume; 
-	internal static readonly char[] trimEndCharsWindows; 
-	internal static readonly char[] trimEndCharsUnix; 
+	[ObsoleteAttribute]
+	public static readonly char[] InvalidPathChars;
+	public static readonly char AltDirectorySeparatorChar;
+	public static readonly char DirectorySeparatorChar;
+	public static readonly char PathSeparator;
+	internal static readonly string DirectorySeparatorStr;
+	public static readonly char VolumeSeparatorChar;
+	internal static readonly char[] PathSeparatorChars;
+	private static readonly bool dirEqualsVolume;
+	internal static readonly char[] trimEndCharsWindows;
+	internal static readonly char[] trimEndCharsUnix;
 
 	internal static string DirectorySeparatorCharAsString { get; }
 	internal static char[] TrimEndChars { get; }

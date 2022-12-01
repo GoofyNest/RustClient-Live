@@ -1,16 +1,16 @@
 internal sealed class SchemaCollectionPreprocessor : BaseProcessor // TypeDefIndex: 2273
 {
-	private XmlSchema schema; 
-	private string targetNamespace; 
-	private bool buildinIncluded; 
-	private XmlSchemaForm elementFormDefault; 
-	private XmlSchemaForm attributeFormDefault; 
-	private XmlSchemaDerivationMethod blockDefault; 
-	private XmlSchemaDerivationMethod finalDefault; 
-	private Hashtable schemaLocations; 
-	private Hashtable referenceNamespaces; 
-	private string Xmlns; 
-	private XmlResolver xmlResolver; 
+	private XmlSchema schema;
+	private string targetNamespace;
+	private bool buildinIncluded;
+	private XmlSchemaForm elementFormDefault;
+	private XmlSchemaForm attributeFormDefault;
+	private XmlSchemaDerivationMethod blockDefault;
+	private XmlSchemaDerivationMethod finalDefault;
+	private Hashtable schemaLocations;
+	private Hashtable referenceNamespaces;
+	private string Xmlns;
+	private XmlResolver xmlResolver;
 
 	internal XmlResolver XmlResolver { set; }
 
@@ -87,7 +87,7 @@ internal sealed class SchemaCollectionPreprocessor : BaseProcessor // TypeDefInd
 
 private enum SchemaCollectionPreprocessor.Compositor // TypeDefIndex: 2274
 {
-	public int value__; 
+	public int value__;
 	public const SchemaCollectionPreprocessor.Compositor Root = 0;
 	public const SchemaCollectionPreprocessor.Compositor Include = 1;
 	public const SchemaCollectionPreprocessor.Compositor Import = 2;

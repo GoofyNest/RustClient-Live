@@ -1,17 +1,17 @@
 internal struct GlyphValueRecord // TypeDefIndex: 4118
 {
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_XPlacement; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_YPlacement; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_XAdvance; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_YAdvance; 
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_XPlacement;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_YPlacement;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_XAdvance;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_YAdvance;
 
 	public float xPlacement { get; }
 	public float yPlacement { get; }
@@ -33,12 +33,12 @@ internal struct GlyphValueRecord // TypeDefIndex: 4118
 
 }
 
-public struct GlyphValueRecord_Legacy // TypeDefIndex: 6707
+public struct GlyphValueRecord_Legacy // TypeDefIndex: 6709
 {
-	public float xPlacement; 
-	public float yPlacement; 
-	public float xAdvance; 
-	public float yAdvance; 
+	public float xPlacement;
+	public float yPlacement;
+	public float xAdvance;
+	public float yAdvance;
 
 
 	internal void .ctor(GlyphValueRecord valueRecord) { }

@@ -1,6 +1,6 @@
 internal enum ByteEnum // TypeDefIndex: 364
 {
-	public byte value__; 
+	public byte value__;
 
 }
 

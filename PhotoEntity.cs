@@ -1,25 +1,25 @@
-public class PhotoEntity : ImageStorageEntity, IUGCBrowserEntity // TypeDefIndex: 10537
+public class PhotoEntity : ImageStorageEntity, IUGCBrowserEntity // TypeDefIndex: 10541
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <PhotographerSteamId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <ImageCrc>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ulong <PhotographerSteamId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <ImageCrc>k__BackingField;
 
 	public ulong PhotographerSteamId { get; set; }
 	public uint ImageCrc { get; set; }
 	protected override uint CrcToLoad { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_PhotographerSteamId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_PhotographerSteamId(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_ImageCrc() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ImageCrc(uint value) { }
 
 	protected override uint get_CrcToLoad() { }

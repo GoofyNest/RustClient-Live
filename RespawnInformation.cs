@@ -1,10 +1,10 @@
-public class RespawnInformation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6501
+public class RespawnInformation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6503
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<RespawnInformation.SpawnOptions> spawnOptions; 
-	public PlayerLifeStory previousLife; 
-	public bool fadeIn; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<RespawnInformation.SpawnOptions> spawnOptions;
+	public PlayerLifeStory previousLife;
+	public bool fadeIn;
 
 
 	public static void ResetToPool(RespawnInformation instance) { }
@@ -61,16 +61,16 @@ public class RespawnInformation : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class RespawnInformation.SpawnOptions : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6502
+public class RespawnInformation.SpawnOptions : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6504
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public RespawnInformation.SpawnOptions.RespawnType type; 
-	public uint id; 
-	public string name; 
-	public float unlockSeconds; 
-	public Vector3 worldPosition; 
-	public bool occupied; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public RespawnInformation.SpawnOptions.RespawnType type;
+	public uint id;
+	public string name;
+	public float unlockSeconds;
+	public Vector3 worldPosition;
+	public bool occupied;
 
 
 	public static void ResetToPool(RespawnInformation.SpawnOptions instance) { }
@@ -127,9 +127,9 @@ public class RespawnInformation.SpawnOptions : IDisposable, Pool.IPooled, IProto
 
 }
 
-public enum RespawnInformation.SpawnOptions.RespawnType // TypeDefIndex: 6503
+public enum RespawnInformation.SpawnOptions.RespawnType // TypeDefIndex: 6505
 {
-	public int value__; 
+	public int value__;
 	public const RespawnInformation.SpawnOptions.RespawnType SleepingBag = 1;
 	public const RespawnInformation.SpawnOptions.RespawnType Bed = 2;
 	public const RespawnInformation.SpawnOptions.RespawnType BeachTowel = 3;

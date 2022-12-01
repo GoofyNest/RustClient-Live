@@ -1,8 +1,8 @@
-internal struct GSClientApprove_t : ICallbackData // TypeDefIndex: 5496
+internal struct GSClientApprove_t : ICallbackData // TypeDefIndex: 5498
 {
-	internal ulong SteamID; 
-	internal ulong OwnerSteamID; 
-	public static int _datasize; 
+	internal ulong SteamID;
+	internal ulong OwnerSteamID;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,10 +1,10 @@
 public class RawImage : MaskableGraphic // TypeDefIndex: 4998
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Texture m_Texture; 
-	[SerializeField] 
-	private Rect m_UVRect; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Texture m_Texture;
+	[SerializeField]
+	private Rect m_UVRect;
 
 	public override Texture mainTexture { get; }
 	public Texture texture { get; set; }

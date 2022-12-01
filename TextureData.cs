@@ -1,8 +1,8 @@
-public struct TextureData // TypeDefIndex: 12065
+public struct TextureData // TypeDefIndex: 12072
 {
-	public int width; 
-	public int height; 
-	public Color32[] colors; 
+	public int width;
+	public int height;
+	public Color32[] colors;
 
 
 	public void .ctor(Texture2D tex) { }

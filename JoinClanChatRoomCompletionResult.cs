@@ -1,8 +1,8 @@
 internal struct JoinClanChatRoomCompletionResult_t : ICallbackData // TypeDefIndex: 5325
 {
-	internal ulong SteamIDClanChat; 
-	internal RoomEnter ChatRoomEnterResponse; 
-	public static int _datasize; 
+	internal ulong SteamIDClanChat;
+	internal RoomEnter ChatRoomEnterResponse;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,6 +1,6 @@
 public enum Result // TypeDefIndex: 5141
 {
-	public int value__; 
+	public int value__;
 	public const Result None = 0;
 	public const Result OK = 1;
 	public const Result Fail = 2;
@@ -124,18 +124,22 @@ public enum Result // TypeDefIndex: 5141
 	public const Result InvalidSignature = 121;
 	public const Result ParseFailure = 122;
 	public const Result NoVerifiedPhone = 123;
+	public const Result InsufficientBattery = 124;
+	public const Result ChargerRequired = 125;
+	public const Result CachedCredentialInvalid = 126;
+	public const Result K_EResultPhoneNumberIsVOIP = 127;
 
 }
 
-public class Result.Entry<T> // TypeDefIndex: 6268
+public class Result.Entry<T> // TypeDefIndex: 6270
 {
-	public T Content; 
-	public string Id; 
-	public DateTime Created; 
-	public DateTime Updated; 
-	public string AuthorId; 
-	public string AuthorName; 
-	public string AuthType; 
+	public T Content;
+	public string Id;
+	public DateTime Created;
+	public DateTime Updated;
+	public string AuthorId;
+	public string AuthorName;
+	public string AuthType;
 
 
 	public void .ctor() { }
@@ -146,9 +150,9 @@ public class Result.Entry<T> // TypeDefIndex: 6268
 
 }
 
-public enum Result // TypeDefIndex: 8294
+public enum Result // TypeDefIndex: 8296
 {
-	public int value__; 
+	public int value__;
 	public const Result Success = 0;
 	public const Result NoConnection = 1;
 	public const Result InvalidCredentials = 2;

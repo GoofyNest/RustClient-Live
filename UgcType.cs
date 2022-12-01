@@ -1,6 +1,6 @@
 public enum UgcType // TypeDefIndex: 5165
 {
-	public int value__; 
+	public int value__;
 	public const UgcType Items = 0;
 	public const UgcType Items_Mtx = 1;
 	public const UgcType Items_ReadyToUse = 2;
@@ -18,11 +18,11 @@ public enum UgcType // TypeDefIndex: 5165
 
 }
 
-public enum UGCType // TypeDefIndex: 11254
+public enum UGCType // TypeDefIndex: 11260
 {
 
 public enum UGCType
-	public int value__; 
+	public int value__;
 	public const UGCType ImageJpg = 0;
 	public const UGCType ImagePng = 1;
 	public const UGCType AudioOgg = 2;

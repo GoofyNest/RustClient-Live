@@ -1,33 +1,33 @@
-public struct PageResult // TypeDefIndex: 8291
+public struct PageResult // TypeDefIndex: 8293
 {
-	[CompilerGeneratedAttribute] 
-	private int <StartIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Count>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <TotalCount>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private int <StartIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Count>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <TotalCount>k__BackingField;
 
 	public int StartIndex { get; set; }
 	public int Count { get; set; }
 	public int TotalCount { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_StartIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StartIndex(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Count() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Count(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_TotalCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TotalCount(int value) { }
 
 	internal void Set(ref PageResultInternal other) { }

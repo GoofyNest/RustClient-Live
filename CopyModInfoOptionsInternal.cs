@@ -1,8 +1,8 @@
-internal struct CopyModInfoOptionsInternal : ISettable<CopyModInfoOptions>, IDisposable // TypeDefIndex: 9010
+internal struct CopyModInfoOptionsInternal : ISettable<CopyModInfoOptions>, IDisposable // TypeDefIndex: 9012
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private ModEnumerationType m_Type; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private ModEnumerationType m_Type;
 
 	public EpicAccountId LocalUserId { set; }
 	public ModEnumerationType Type { set; }

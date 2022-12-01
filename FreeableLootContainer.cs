@@ -1,11 +1,11 @@
-public class FreeableLootContainer : LootContainer // TypeDefIndex: 10111
+public class FreeableLootContainer : LootContainer // TypeDefIndex: 10113
 {
-	private Option __menuOption_Menu_FreeCrate; 
+	private Option __menuOption_Menu_FreeCrate;
 	private const BaseEntity.Flags tiedDown = 65536;
-	public Buoyancy buoyancy; 
-	public GameObjectRef freedEffect; 
-	private Rigidbody rb; 
-	public uint skinOverride; 
+	public Buoyancy buoyancy;
+	public GameObjectRef freedEffect;
+	private Rigidbody rb;
+	public uint skinOverride;
 
 	public override bool HasMenuOptions { get; }
 
@@ -22,10 +22,10 @@ public class FreeableLootContainer : LootContainer // TypeDefIndex: 10111
 
 	public override bool ShouldShowLootMenus() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_FreeCrate(BasePlayer player) { }
 
 	public void Menu_FreeCrate_Start() { }

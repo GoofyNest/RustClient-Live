@@ -1,14 +1,14 @@
-public class DeployableBoomBox : ContainerIOEntity, ICassettePlayer, IAudioConnectionSource // TypeDefIndex: 10096
+public class DeployableBoomBox : ContainerIOEntity, ICassettePlayer, IAudioConnectionSource // TypeDefIndex: 10098
 {
-	private Option __menuOption_ChangeRadioSettings; 
-	private Option __menuOption_Play; 
-	private Option __menuOption_Stop; 
-	public BoomBox BoxController; 
-	public int PowerUsageWhilePlaying; 
+	private Option __menuOption_ChangeRadioSettings;
+	private Option __menuOption_Play;
+	private Option __menuOption_Stop;
+	public BoomBox BoxController;
+	public int PowerUsageWhilePlaying;
 	public const int MaxBacktrackHopsClient = 30;
-	public bool IsStatic; 
-	private List<Vector3> connectedPositions; 
-	private int lastConnectCount; 
+	public bool IsStatic;
+	private List<Vector3> connectedPositions;
+	private int lastConnectCount;
 
 	public override bool HasMenuOptions { get; }
 	public BaseEntity ToBaseEntity { get; }
@@ -23,39 +23,39 @@ public class DeployableBoomBox : ContainerIOEntity, ICassettePlayer, IAudioConne
 
 	public BaseEntity get_ToBaseEntity() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Play(BasePlayer forPlayer) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Stop(BasePlayer forPlayer) { }
 
 	private bool CanStop(BasePlayer forPlayer) { }
 
 	private bool CanStart(BasePlayer forPlayer) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void ChangeRadioSettings(BasePlayer player) { }
 
 	private bool CanChangeRadioSettings(BasePlayer player) { }
 
 	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void OnRadioIPChanged(BaseEntity.RPCMessage msg) { }
 
 	public void WaitForShoutcastLoad() { }

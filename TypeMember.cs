@@ -1,7 +1,7 @@
 internal sealed class TypeMember // TypeDefIndex: 2063
 {
-	private Type type; 
-	private string member; 
+	private Type type;
+	private string member;
 
 
 	internal void .ctor(Type type, string member) { }

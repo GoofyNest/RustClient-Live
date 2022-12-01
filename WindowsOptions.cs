@@ -1,33 +1,33 @@
-public struct WindowsOptions // TypeDefIndex: 9882
+public struct WindowsOptions // TypeDefIndex: 9884
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <Reserved>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SandboxId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ClientCredentials <ClientCredentials>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsServer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <EncryptionKey>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <OverrideCountryCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <OverrideLocaleCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeploymentId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PlatformFlags <Flags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <CacheDirectory>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TickBudgetInMilliseconds>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<WindowsRTCOptions> <RTCOptions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntegratedPlatformOptionsContainer <IntegratedPlatformOptionsContainerHandle>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <Reserved>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <SandboxId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ClientCredentials <ClientCredentials>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsServer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <EncryptionKey>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <OverrideCountryCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <OverrideLocaleCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeploymentId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PlatformFlags <Flags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <CacheDirectory>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TickBudgetInMilliseconds>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<WindowsRTCOptions> <RTCOptions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntegratedPlatformOptionsContainer <IntegratedPlatformOptionsContainerHandle>k__BackingField;
 
 	public IntPtr Reserved { get; set; }
 	public Utf8String ProductId { get; set; }
@@ -45,88 +45,88 @@ public struct WindowsOptions // TypeDefIndex: 9882
 	public IntegratedPlatformOptionsContainer IntegratedPlatformOptionsContainerHandle { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_Reserved() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Reserved(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SandboxId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SandboxId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ClientCredentials get_ClientCredentials() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientCredentials(ClientCredentials value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsServer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsServer(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_EncryptionKey() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EncryptionKey(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_OverrideCountryCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverrideCountryCode(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_OverrideLocaleCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverrideLocaleCode(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeploymentId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeploymentId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PlatformFlags get_Flags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Flags(PlatformFlags value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_CacheDirectory() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CacheDirectory(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TickBudgetInMilliseconds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TickBudgetInMilliseconds(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<WindowsRTCOptions> get_RTCOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RTCOptions(Nullable<WindowsRTCOptions> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntegratedPlatformOptionsContainer get_IntegratedPlatformOptionsContainerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IntegratedPlatformOptionsContainerHandle(IntegratedPlatformOptionsContainer value) { }
 
 }

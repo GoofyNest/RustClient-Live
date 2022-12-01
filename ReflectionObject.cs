@@ -1,24 +1,24 @@
-internal class ReflectionObject // TypeDefIndex: 5939
+internal class ReflectionObject // TypeDefIndex: 5941
 {
-	[CompilerGeneratedAttribute] 
-	private ObjectConstructor<object> <Creator>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IDictionary<string, ReflectionMember> <Members>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ObjectConstructor<object> <Creator>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IDictionary<string, ReflectionMember> <Members>k__BackingField;
 
 	public ObjectConstructor<object> Creator { get; set; }
 	public IDictionary<string, ReflectionMember> Members { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ObjectConstructor<object> get_Creator() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Creator(ObjectConstructor<object> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IDictionary<string, ReflectionMember> get_Members() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Members(IDictionary<string, ReflectionMember> value) { }
 
 	public void .ctor() { }
@@ -33,9 +33,9 @@ internal class ReflectionObject // TypeDefIndex: 5939
 
 }
 
-private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 5940
+private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 5942
 {
-	public Func<object> ctor; 
+	public Func<object> ctor;
 
 
 	public void .ctor() { }
@@ -44,9 +44,9 @@ private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 594
 
 }
 
-private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 5941
+private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 5943
 {
-	public MethodCall<object, object> call; 
+	public MethodCall<object, object> call;
 
 
 	public void .ctor() { }
@@ -55,9 +55,9 @@ private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 594
 
 }
 
-private sealed class ReflectionObject.<>c__DisplayClass13_2 // TypeDefIndex: 5942
+private sealed class ReflectionObject.<>c__DisplayClass13_2 // TypeDefIndex: 5944
 {
-	public MethodCall<object, object> call; 
+	public MethodCall<object, object> call;
 
 
 	public void .ctor() { }

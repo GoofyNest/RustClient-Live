@@ -1,8 +1,8 @@
 public struct StyleInt : IStyleValue<int>, IEquatable<StyleInt> // TypeDefIndex: 4719
 {
-	private StyleKeyword m_Keyword; 
-	private int m_Value; 
-	private int m_Specificity; 
+	private StyleKeyword m_Keyword;
+	private int m_Value;
+	private int m_Specificity;
 
 	public int value { get; }
 	internal int specificity { get; }

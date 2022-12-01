@@ -1,6 +1,6 @@
-public class KayakSeat : BaseVehicleSeat // TypeDefIndex: 11438
+public class KayakSeat : BaseVehicleSeat // TypeDefIndex: 11444
 {
-	public ItemDefinition PaddleItem; 
+	public ItemDefinition PaddleItem;
 
 
 	public override bool ForceUpdatePlayerModel(BasePlayer p) { }

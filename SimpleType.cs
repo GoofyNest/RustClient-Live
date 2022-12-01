@@ -1,19 +1,19 @@
 internal sealed class SimpleType : ISerializable // TypeDefIndex: 4312
 {
-	private string _baseType; 
-	private SimpleType _baseSimpleType; 
-	private XmlQualifiedName _xmlBaseType; 
-	private string _name; 
-	private int _length; 
-	private int _minLength; 
-	private int _maxLength; 
-	private string _pattern; 
-	private string _ns; 
-	private string _maxExclusive; 
-	private string _maxInclusive; 
-	private string _minExclusive; 
-	private string _minInclusive; 
-	internal string _enumeration; 
+	private string _baseType;
+	private SimpleType _baseSimpleType;
+	private XmlQualifiedName _xmlBaseType;
+	private string _name;
+	private int _length;
+	private int _minLength;
+	private int _maxLength;
+	private string _pattern;
+	private string _ns;
+	private string _maxExclusive;
+	private string _maxInclusive;
+	private string _minExclusive;
+	private string _minInclusive;
+	internal string _enumeration;
 
 	internal string BaseType { get; }
 	internal XmlQualifiedName XmlBaseType { get; }

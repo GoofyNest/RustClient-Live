@@ -1,21 +1,21 @@
 public sealed class Font : Object // TypeDefIndex: 3964
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<Font> textureRebuilt; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private Font.FontTextureRebuildCallback m_FontTextureRebuildCallback; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<Font> textureRebuilt;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private Font.FontTextureRebuildCallback m_FontTextureRebuildCallback;
 
 	public Material material { get; }
 	public bool dynamic { get; }
 	public int fontSize { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_textureRebuilt(Action<Font> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_textureRebuilt(Action<Font> value) { }
 
 	public Material get_material() { }
@@ -26,7 +26,7 @@ public sealed class Font : Object // TypeDefIndex: 3964
 
 	public void .ctor() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void InvokeTextureRebuilt_Internal(Font font) { }
 
 	public bool HasCharacter(char c) { }

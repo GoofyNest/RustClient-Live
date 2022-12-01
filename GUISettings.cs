@@ -1,15 +1,15 @@
 public sealed class GUISettings // TypeDefIndex: 4048
 {
-	[SerializeField] 
-	private bool m_DoubleClickSelectsWord; 
-	[SerializeField] 
-	private bool m_TripleClickSelectsLine; 
-	[SerializeField] 
-	private Color m_CursorColor; 
-	[SerializeField] 
-	private float m_CursorFlashSpeed; 
-	[SerializeField] 
-	private Color m_SelectionColor; 
+	[SerializeField]
+	private bool m_DoubleClickSelectsWord;
+	[SerializeField]
+	private bool m_TripleClickSelectsLine;
+	[SerializeField]
+	private Color m_CursorColor;
+	[SerializeField]
+	private float m_CursorFlashSpeed;
+	[SerializeField]
+	private Color m_SelectionColor;
 
 	public bool doubleClickSelectsWord { get; }
 	public bool tripleClickSelectsLine { get; }

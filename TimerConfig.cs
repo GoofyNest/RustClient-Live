@@ -1,9 +1,9 @@
-public class TimerConfig : UIDialog // TypeDefIndex: 10458
+public class TimerConfig : UIDialog // TypeDefIndex: 10462
 {
-	private CustomTimerSwitch timerSwitch; 
-	public InputField input; 
-	public static float minTime; 
-	public float seconds; 
+	private CustomTimerSwitch timerSwitch;
+	public InputField input;
+	public static float minTime;
+	public float seconds;
 
 
 	public override void OpenDialog() { }

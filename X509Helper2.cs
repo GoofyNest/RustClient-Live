@@ -9,7 +9,7 @@ internal static class X509Helper2 // TypeDefIndex: 2834
 
 	internal static X509Certificate2Impl Import(X509Certificate cert, bool disableProvider = False) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	internal static X509Certificate GetMonoCertificate(X509Certificate2 certificate) { }
 
 	internal static X509ChainImpl CreateChainImpl(bool useMachineContext) { }

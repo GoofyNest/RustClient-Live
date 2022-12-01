@@ -1,8 +1,8 @@
 internal sealed class InternalDecoderBestFitFallback : DecoderFallback // TypeDefIndex: 434
 {
-	internal Encoding encoding; 
-	internal char[] arrayBestFit; 
-	internal char cReplacement; 
+	internal Encoding encoding;
+	internal char[] arrayBestFit;
+	internal char cReplacement;
 
 	public override int MaxCharCount { get; }
 

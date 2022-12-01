@@ -1,6 +1,6 @@
 public enum TaskStatus // TypeDefIndex: 852
 {
-	public int value__; 
+	public int value__;
 	public const TaskStatus Created = 0;
 	public const TaskStatus WaitingForActivation = 1;
 	public const TaskStatus WaitingToRun = 2;

@@ -1,22 +1,22 @@
 public class StreamReader : TextReader // TypeDefIndex: 646
 {
-	public static readonly StreamReader Null; 
-	private Stream stream; 
-	private Encoding encoding; 
-	private Decoder decoder; 
-	private byte[] byteBuffer; 
-	private char[] charBuffer; 
-	private byte[] _preamble; 
-	private int charPos; 
-	private int charLen; 
-	private int byteLen; 
-	private int bytePos; 
-	private int _maxCharsPerBuffer; 
-	private bool _detectEncoding; 
-	private bool _checkPreamble; 
-	private bool _isBlocked; 
-	private bool _closable; 
-	private Task _asyncReadTask; 
+	public static readonly StreamReader Null;
+	private Stream stream;
+	private Encoding encoding;
+	private Decoder decoder;
+	private byte[] byteBuffer;
+	private char[] charBuffer;
+	private byte[] _preamble;
+	private int charPos;
+	private int charLen;
+	private int byteLen;
+	private int bytePos;
+	private int _maxCharsPerBuffer;
+	private bool _detectEncoding;
+	private bool _checkPreamble;
+	private bool _isBlocked;
+	private bool _closable;
+	private Task _asyncReadTask;
 
 	internal static int DefaultBufferSize { get; }
 	public virtual Encoding CurrentEncoding { get; }

@@ -1,7 +1,7 @@
 public class TypeEntry // TypeDefIndex: 1152
 {
-	private string assembly_name; 
-	private string type_name; 
+	private string assembly_name;
+	private string type_name;
 
 	public string AssemblyName { get; set; }
 	public string TypeName { get; set; }

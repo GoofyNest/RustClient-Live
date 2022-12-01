@@ -3,9 +3,9 @@ public class SkinnedMeshRenderer : Renderer // TypeDefIndex: 3437
 	public bool updateWhenOffscreen { get; set; }
 	public Transform rootBone { get; set; }
 	public Transform[] bones { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Mesh sharedMesh { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool skinnedMotionVectors { get; set; }
 	public Bounds localBounds { get; set; }
 
@@ -30,7 +30,7 @@ public class SkinnedMeshRenderer : Renderer // TypeDefIndex: 3437
 
 	public void set_skinnedMotionVectors(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Bounds GetLocalAABB() { }
 
 	private void SetLocalAABB(Bounds b) { }

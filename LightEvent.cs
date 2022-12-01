@@ -1,6 +1,6 @@
 public enum LightEvent // TypeDefIndex: 3821
 {
-	public int value__; 
+	public int value__;
 	public const LightEvent BeforeShadowMap = 0;
 	public const LightEvent AfterShadowMap = 1;
 	public const LightEvent BeforeScreenspaceMask = 2;

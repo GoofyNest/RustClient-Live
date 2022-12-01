@@ -1,8 +1,8 @@
-internal struct UserStatsStored_t : ICallbackData // TypeDefIndex: 5393
+internal struct UserStatsStored_t : ICallbackData // TypeDefIndex: 5395
 {
-	internal ulong GameID; 
-	internal Result Result; 
-	public static int _datasize; 
+	internal ulong GameID;
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

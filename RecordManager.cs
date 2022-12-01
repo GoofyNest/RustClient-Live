@@ -1,11 +1,11 @@
 internal sealed class RecordManager // TypeDefIndex: 4297
 {
-	private readonly DataTable _table; 
-	private int _lastFreeRecord; 
-	private int _minimumCapacity; 
-	private int _recordCapacity; 
-	private readonly List<int> _freeRecordList; 
-	private DataRow[] _rows; 
+	private readonly DataTable _table;
+	private int _lastFreeRecord;
+	private int _minimumCapacity;
+	private int _recordCapacity;
+	private readonly List<int> _freeRecordList;
+	private DataRow[] _rows;
 
 	internal int LastFreeRecord { get; }
 	internal int MinimumCapacity { get; set; }

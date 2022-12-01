@@ -1,7 +1,7 @@
-public class Skeleton : MonoBehaviour // TypeDefIndex: 7356
+public class Skeleton : MonoBehaviour // TypeDefIndex: 7358
 {
-	public SkeletonDefinition Source; 
-	public GameObject[] Bones; 
+	public SkeletonDefinition Source;
+	public GameObject[] Bones;
 
 
 	public Transform GetTransform(int id) { }
@@ -36,15 +36,15 @@ public class Skeleton : MonoBehaviour // TypeDefIndex: 7356
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private Transform <GetTransforms>
 
 }
 
-private sealed class Skeleton.<>c__DisplayClass15_0 // TypeDefIndex: 7357
+private sealed class Skeleton.<>c__DisplayClass15_0 // TypeDefIndex: 7359
 {
-	public Skeleton <>4__this; 
-	public Transform[] allChildren; 
+	public Skeleton <>4__this;
+	public Transform[] allChildren;
 
 
 	public void .ctor() { }

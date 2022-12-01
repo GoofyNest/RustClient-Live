@@ -1,11 +1,11 @@
-internal struct ComputeNewPlayerCompatibilityResult_t : ICallbackData // TypeDefIndex: 5505
+internal struct ComputeNewPlayerCompatibilityResult_t : ICallbackData // TypeDefIndex: 5507
 {
-	internal Result Result; 
-	internal int CPlayersThatDontLikeCandidate; 
-	internal int CPlayersThatCandidateDoesntLike; 
-	internal int CClanPlayersThatDontLikeCandidate; 
-	internal ulong SteamIDCandidate; 
-	public static int _datasize; 
+	internal Result Result;
+	internal int CPlayersThatDontLikeCandidate;
+	internal int CPlayersThatCandidateDoesntLike;
+	internal int CClanPlayersThatDontLikeCandidate;
+	internal ulong SteamIDCandidate;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

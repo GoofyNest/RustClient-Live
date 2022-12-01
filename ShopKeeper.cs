@@ -1,8 +1,8 @@
-public class ShopKeeper : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6388
+public class ShopKeeper : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6390
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint vendingRef; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint vendingRef;
 
 
 	public static void ResetToPool(ShopKeeper instance) { }

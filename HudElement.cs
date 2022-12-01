@@ -1,9 +1,9 @@
-public class HudElement : MonoBehaviour // TypeDefIndex: 12696
+public class HudElement : MonoBehaviour // TypeDefIndex: 12710
 {
-	public Text[] ValueText; 
-	public Image[] FilledImage; 
-	private float lastValue; 
-	private float lastMax; 
+	public Text[] ValueText;
+	public Image[] FilledImage;
+	private float lastValue;
+	private float lastMax;
 
 
 	public void SetValue(float value, float max = 1) { }

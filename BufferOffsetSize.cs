@@ -1,10 +1,10 @@
 internal class BufferOffsetSize // TypeDefIndex: 2530
 {
-	public byte[] Buffer; 
-	public int Offset; 
-	public int Size; 
-	public int TotalBytes; 
-	public bool Complete; 
+	public byte[] Buffer;
+	public int Offset;
+	public int Size;
+	public int TotalBytes;
+	public bool Complete;
 
 	public int EndOffset { get; }
 	public int Remaining { get; }
@@ -22,9 +22,9 @@ internal class BufferOffsetSize // TypeDefIndex: 2530
 
 internal class BufferOffsetSize // TypeDefIndex: 2913
 {
-	internal byte[] Buffer; 
-	internal int Offset; 
-	internal int Size; 
+	internal byte[] Buffer;
+	internal int Offset;
+	internal int Size;
 
 
 	internal void .ctor(byte[] buffer, int offset, int size, bool copyBuffer) { }

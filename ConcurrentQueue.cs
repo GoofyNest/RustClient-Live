@@ -1,11 +1,11 @@
 private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 {
-	internal readonly ConcurrentQueue.Segment.Slot<T>[] _slots; 
-	internal readonly int _slotsMask; 
-	internal PaddedHeadAndTail _headAndTail; 
-	internal bool _preservedForObservation; 
-	internal bool _frozenForEnqueues; 
-	internal ConcurrentQueue.Segment<T> _nextSegment; 
+	internal readonly ConcurrentQueue.Segment.Slot<T>[] _slots;
+	internal readonly int _slotsMask;
+	internal PaddedHeadAndTail _headAndTail;
+	internal bool _preservedForObservation;
+	internal bool _frozenForEnqueues;
+	internal ConcurrentQueue.Segment<T> _nextSegment;
 
 	internal int Capacity { get; }
 	internal int FreezeOffset { get; }
@@ -68,34 +68,34 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 
 internal struct ConcurrentQueue.Segment.Slot<T> // TypeDefIndex: 1438
 {
-	public T Item; 
-	public int SequenceNumber; 
+	public T Item;
+	public int SequenceNumber;
 
 }
 
 private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 1439
 {
-	private int <>1__state; 
-	private T <>2__current; 
-	public ConcurrentQueue.Segment<T> head; 
-	public ConcurrentQueue.Segment<T> tail; 
-	public int tailTail; 
-	public int headHead; 
-	public ConcurrentQueue<T> <>4__this; 
-	private int <i>5__1; 
-	private int <headTail>5__2; 
-	private int <i>5__3; 
-	private int <i>5__4; 
-	private ConcurrentQueue.Segment<T> <s>5__5; 
-	private int <i>5__6; 
-	private int <sTail>5__7; 
-	private int <i>5__8; 
+	private int <>1__state;
+	private T <>2__current;
+	public ConcurrentQueue.Segment<T> head;
+	public ConcurrentQueue.Segment<T> tail;
+	public int tailTail;
+	public int headHead;
+	public ConcurrentQueue<T> <>4__this;
+	private int <i>5__1;
+	private int <headTail>5__2;
+	private int <i>5__3;
+	private int <i>5__4;
+	private ConcurrentQueue.Segment<T> <s>5__5;
+	private int <i>5__6;
+	private int <sTail>5__7;
+	private int <i>5__8;
 
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -103,7 +103,7 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	|-ConcurrentQueue.<Enumerate>d__27<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -119,7 +119,7 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	|-ConcurrentQueue.<Enumerate>d__27<object>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -128,7 +128,7 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -137,7 +137,7 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

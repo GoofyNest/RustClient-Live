@@ -3,12 +3,12 @@ public class CompareInfo : IDeserializationCallback // TypeDefIndex: 690
 	private const CompareOptions ValidIndexMaskOffFlags = -32;
 	private const CompareOptions ValidCompareMaskOffFlags = -536870944;
 	private const CompareOptions ValidHashCodeOfStringMaskOffFlags = -32;
-	[OptionalFieldAttribute] 
-	private string m_name; 
-	private string m_sortName; 
-	[OptionalFieldAttribute] 
-	private int win32LCID; 
-	private int culture; 
+	[OptionalFieldAttribute]
+	private string m_name;
+	private string m_sortName;
+	[OptionalFieldAttribute]
+	private int win32LCID;
+	private int culture;
 	private const int LINGUISTIC_IGNORECASE = 16;
 	private const int NORM_IGNORECASE = 1;
 	private const int NORM_IGNOREKANATYPE = 65536;
@@ -22,14 +22,14 @@ public class CompareInfo : IDeserializationCallback // TypeDefIndex: 690
 	private const int RESERVED_FIND_ASCII_STRING = 536870912;
 	private const int SORT_VERSION_WHIDBEY = 4096;
 	private const int SORT_VERSION_V4 = 393473;
-	[OptionalFieldAttribute] 
-	private SortVersion m_SortVersion; 
-	private SimpleCollator collator; 
-	private static Dictionary<string, SimpleCollator> collators; 
-	private static bool managedCollation; 
-	private static bool managedCollationChecked; 
+	[OptionalFieldAttribute]
+	private SortVersion m_SortVersion;
+	private SimpleCollator collator;
+	private static Dictionary<string, SimpleCollator> collators;
+	private static bool managedCollation;
+	private static bool managedCollationChecked;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual string Name { get; }
 	private static bool UseManagedCollation { get; }
 
@@ -38,15 +38,15 @@ public class CompareInfo : IDeserializationCallback // TypeDefIndex: 690
 
 	public static CompareInfo GetCompareInfo(string name) { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
 	private void OnDeserialized() { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
 	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }

@@ -1,11 +1,11 @@
-public class PaintedItemStorageEntity : BaseEntity, IServerFileReceiver, IUGCBrowserEntity // TypeDefIndex: 10332
+public class PaintedItemStorageEntity : BaseEntity, IServerFileReceiver, IUGCBrowserEntity // TypeDefIndex: 10335
 {
-	private uint _currentImageCrc; 
-	public List<PaintableItem> Targets; 
-	private uint _loadingCrc; 
-	private byte[] _loadedImage; 
-	private uint _loadedImageCrc; 
-	private Action _timeoutAction; 
+	private uint _currentImageCrc;
+	public List<PaintableItem> Targets;
+	private uint _loadingCrc;
+	private byte[] _loadedImage;
+	private uint _loadedImageCrc;
+	private Action _timeoutAction;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -32,17 +32,17 @@ public class PaintedItemStorageEntity : BaseEntity, IServerFileReceiver, IUGCBro
 
 	public static void RebuildAll() { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	private void DebugOnlyLog(string str) { }
 
 	public void .ctor() { }
 
 }
 
-private sealed class PaintedItemStorageEntity.<>c // TypeDefIndex: 10333
+private sealed class PaintedItemStorageEntity.<>c // TypeDefIndex: 10336
 {
-	public static readonly PaintedItemStorageEntity.<>c <>9; 
-	public static Predicate<PaintableItem> <>9__16_0; 
+	public static readonly PaintedItemStorageEntity.<>c <>9;
+	public static Predicate<PaintableItem> <>9__16_0;
 
 
 	private static void .cctor() { }

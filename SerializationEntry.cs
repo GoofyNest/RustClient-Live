@@ -1,8 +1,8 @@
 public struct SerializationEntry // TypeDefIndex: 1059
 {
-	private Type m_type; 
-	private object m_value; 
-	private string m_name; 
+	private Type m_type;
+	private object m_value;
+	private string m_name;
 
 	public object Value { get; }
 	public string Name { get; }

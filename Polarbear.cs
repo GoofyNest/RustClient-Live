@@ -1,7 +1,7 @@
-public class Polarbear : BaseAnimalNPC // TypeDefIndex: 10648
+public class Polarbear : BaseAnimalNPC // TypeDefIndex: 10652
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override float RealisticMass { get; }
 	public override BaseEntity.TraitFlag Traits { get; }

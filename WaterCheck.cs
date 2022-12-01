@@ -1,6 +1,6 @@
-public class WaterCheck : PrefabAttribute // TypeDefIndex: 12385
+public class WaterCheck : PrefabAttribute // TypeDefIndex: 12393
 {
-	public bool Rotate; 
+	public bool Rotate;
 
 
 	protected void OnDrawGizmosSelected() { }

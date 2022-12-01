@@ -1,9 +1,9 @@
-public sealed class UnknownMetaEvent : MetaEvent // TypeDefIndex: 7565
+public sealed class UnknownMetaEvent : MetaEvent // TypeDefIndex: 7567
 {
-	[CompilerGeneratedAttribute] 
-	private readonly byte <StatusByte>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte[] <Data>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly byte <StatusByte>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte[] <Data>k__BackingField;
 
 	public byte StatusByte { get; }
 	public byte[] Data { get; set; }
@@ -13,13 +13,13 @@ public sealed class UnknownMetaEvent : MetaEvent // TypeDefIndex: 7565
 
 	internal void .ctor(byte statusByte, byte[] data) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_StatusByte() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte[] get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Data(byte[] value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }

@@ -1,13 +1,13 @@
 internal class ChainValidationHelper : ICertificateValidator2, ICertificateValidator // TypeDefIndex: 2543
 {
-	private readonly object sender; 
-	private readonly MonoTlsSettings settings; 
-	private readonly MonoTlsProvider provider; 
-	private readonly ServerCertValidationCallback certValidationCallback; 
-	private readonly LocalCertSelectionCallback certSelectionCallback; 
-	private readonly ServerCertValidationCallbackWrapper callbackWrapper; 
-	private readonly MonoTlsStream tlsStream; 
-	private readonly HttpWebRequest request; 
+	private readonly object sender;
+	private readonly MonoTlsSettings settings;
+	private readonly MonoTlsProvider provider;
+	private readonly ServerCertValidationCallback certValidationCallback;
+	private readonly LocalCertSelectionCallback certSelectionCallback;
+	private readonly ServerCertValidationCallbackWrapper callbackWrapper;
+	private readonly MonoTlsStream tlsStream;
+	private readonly HttpWebRequest request;
 
 	public MonoTlsSettings Settings { get; }
 

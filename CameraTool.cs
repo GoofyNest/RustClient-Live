@@ -1,9 +1,9 @@
-public class CameraTool : HeldEntity // TypeDefIndex: 10262
+public class CameraTool : HeldEntity // TypeDefIndex: 10265
 {
-	public GameObjectRef screenshotEffect; 
-	public float cameraFOV; 
-	public float focalDistance; 
-	internal float focalDistanceSmooth; 
+	public GameObjectRef screenshotEffect;
+	public float cameraFOV;
+	public float focalDistance;
+	internal float focalDistanceSmooth;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

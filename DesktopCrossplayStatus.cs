@@ -1,6 +1,6 @@
-public enum DesktopCrossplayStatus // TypeDefIndex: 9865
+public enum DesktopCrossplayStatus // TypeDefIndex: 9867
 {
-	public int value__; 
+	public int value__;
 	public const DesktopCrossplayStatus Ok = 0;
 	public const DesktopCrossplayStatus ApplicationNotBootstrapped = 1;
 	public const DesktopCrossplayStatus ServiceNotInstalled = 2;

@@ -1,6 +1,6 @@
 public sealed class ErrorWrapper // TypeDefIndex: 1346
 {
-	private int m_ErrorCode; 
+	private int m_ErrorCode;
 
 }
 

@@ -1,9 +1,9 @@
-public enum ClipCaps // TypeDefIndex: 7805
+public enum ClipCaps // TypeDefIndex: 7807
 {
 
-[FlagsAttribute] 
+[FlagsAttribute]
 public enum ClipCaps
-	public int value__; 
+	public int value__;
 	public const ClipCaps None = 0;
 	public const ClipCaps Looping = 1;
 	public const ClipCaps Extrapolation = 2;

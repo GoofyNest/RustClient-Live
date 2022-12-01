@@ -1,19 +1,19 @@
 public abstract class HorizontalOrVerticalLayoutGroup : LayoutGroup // TypeDefIndex: 4976
 {
-	[SerializeField] 
-	protected float m_Spacing; 
-	[SerializeField] 
-	protected bool m_ChildForceExpandWidth; 
-	[SerializeField] 
-	protected bool m_ChildForceExpandHeight; 
-	[SerializeField] 
-	protected bool m_ChildControlWidth; 
-	[SerializeField] 
-	protected bool m_ChildControlHeight; 
-	[SerializeField] 
-	protected bool m_ChildScaleWidth; 
-	[SerializeField] 
-	protected bool m_ChildScaleHeight; 
+	[SerializeField]
+	protected float m_Spacing;
+	[SerializeField]
+	protected bool m_ChildForceExpandWidth;
+	[SerializeField]
+	protected bool m_ChildForceExpandHeight;
+	[SerializeField]
+	protected bool m_ChildControlWidth;
+	[SerializeField]
+	protected bool m_ChildControlHeight;
+	[SerializeField]
+	protected bool m_ChildScaleWidth;
+	[SerializeField]
+	protected bool m_ChildScaleHeight;
 
 	public float spacing { get; set; }
 	public bool childForceExpandWidth { get; set; }

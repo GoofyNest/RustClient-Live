@@ -1,6 +1,6 @@
 internal class Ucs4Encoding : Encoding // TypeDefIndex: 2014
 {
-	internal Ucs4Decoder ucs4Decoder; 
+	internal Ucs4Decoder ucs4Decoder;
 
 	public override string WebName { get; }
 	public override int CodePage { get; }

@@ -1,11 +1,11 @@
-public class Tree : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6506
+public class Tree : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6508
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint netId; 
-	public uint prefabId; 
-	public Half3 position; 
-	public float scale; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint netId;
+	public uint prefabId;
+	public Half3 position;
+	public float scale;
 
 
 	public static void ResetToPool(Tree instance) { }
@@ -62,20 +62,20 @@ public class Tree : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6506
 
 }
 
-internal sealed class Tree // TypeDefIndex: 6991
+internal sealed class Tree // TypeDefIndex: 6993
 {
-	private static readonly int HEAP_SIZE; 
-	internal static readonly int[] ExtraLengthBits; 
-	internal static readonly int[] ExtraDistanceBits; 
-	internal static readonly int[] extra_blbits; 
-	internal static readonly sbyte[] bl_order; 
-	private static readonly sbyte[] _dist_code; 
-	internal static readonly sbyte[] LengthCode; 
-	internal static readonly int[] LengthBase; 
-	internal static readonly int[] DistanceBase; 
-	internal short[] dyn_tree; 
-	internal int max_code; 
-	internal StaticTree staticTree; 
+	private static readonly int HEAP_SIZE;
+	internal static readonly int[] ExtraLengthBits;
+	internal static readonly int[] ExtraDistanceBits;
+	internal static readonly int[] extra_blbits;
+	internal static readonly sbyte[] bl_order;
+	private static readonly sbyte[] _dist_code;
+	internal static readonly sbyte[] LengthCode;
+	internal static readonly int[] LengthBase;
+	internal static readonly int[] DistanceBase;
+	internal short[] dyn_tree;
+	internal int max_code;
+	internal StaticTree staticTree;
 
 
 	internal static int DistanceCode(int dist) { }
@@ -94,16 +94,16 @@ internal sealed class Tree // TypeDefIndex: 6991
 
 }
 
-public class Tree : ConsoleSystem // TypeDefIndex: 13758
+public class Tree : ConsoleSystem // TypeDefIndex: 13774
 {
-	private static float m_quality; 
-	private static int m_meshes; 
+	private static float m_quality;
+	private static int m_meshes;
 
-	[ClientVar] 
+	[ClientVar]
 	public static float quality { get; set; }
 	public static float lod { get; }
 	public static float cull { get; }
-	[ClientVar] 
+	[ClientVar]
 	public static int meshes { get; set; }
 
 

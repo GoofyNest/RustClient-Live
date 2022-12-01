@@ -1,6 +1,6 @@
-public class Speargun : CrossbowWeapon // TypeDefIndex: 11207
+public class Speargun : CrossbowWeapon // TypeDefIndex: 11213
 {
-	public GameObject worldAmmoModel; 
+	public GameObject worldAmmoModel;
 
 
 	public override bool CanBeUsedInWater() { }

@@ -1,20 +1,20 @@
 public class Glyph // TypeDefIndex: 4117
 {
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private uint m_Index; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private GlyphMetrics m_Metrics; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private GlyphRect m_GlyphRect; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_Scale; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private int m_AtlasIndex; 
+	[NativeNameAttribute]
+	[SerializeField]
+	private uint m_Index;
+	[SerializeField]
+	[NativeNameAttribute]
+	private GlyphMetrics m_Metrics;
+	[SerializeField]
+	[NativeNameAttribute]
+	private GlyphRect m_GlyphRect;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_Scale;
+	[NativeNameAttribute]
+	[SerializeField]
+	private int m_AtlasIndex;
 
 	public uint index { get; set; }
 	public GlyphMetrics metrics { get; set; }

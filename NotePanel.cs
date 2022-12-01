@@ -1,7 +1,7 @@
-public class NotePanel : MonoBehaviour // TypeDefIndex: 10531
+public class NotePanel : MonoBehaviour // TypeDefIndex: 10535
 {
-	public InputField input; 
-	private Item item; 
+	public InputField input;
+	private Item item;
 
 
 	protected virtual void OnItem(Item item) { }

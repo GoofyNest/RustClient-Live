@@ -1,24 +1,24 @@
-public class GrowableGene // TypeDefIndex: 11275
+public class GrowableGene // TypeDefIndex: 11281
 {
-	[CompilerGeneratedAttribute] 
-	private GrowableGenetics.GeneType <Type>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private GrowableGenetics.GeneType <PreviousType>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private GrowableGenetics.GeneType <Type>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private GrowableGenetics.GeneType <PreviousType>k__BackingField;
 
 	public GrowableGenetics.GeneType Type { get; set; }
 	public GrowableGenetics.GeneType PreviousType { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public GrowableGenetics.GeneType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Type(GrowableGenetics.GeneType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public GrowableGenetics.GeneType get_PreviousType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_PreviousType(GrowableGenetics.GeneType value) { }
 
 	public void Set(GrowableGenetics.GeneType geneType, bool firstSet = False) { }

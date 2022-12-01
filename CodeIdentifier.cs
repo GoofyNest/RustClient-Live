@@ -1,6 +1,6 @@
 public class CodeIdentifier // TypeDefIndex: 2044
 {
-	internal static CodeDomProvider csharp; 
+	internal static CodeDomProvider csharp;
 
 
 	public static string MakePascal(string identifier) { }

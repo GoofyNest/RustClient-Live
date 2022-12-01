@@ -1,4 +1,4 @@
-internal sealed class ChannelEventReader : IEventReader // TypeDefIndex: 7566
+internal sealed class ChannelEventReader : IEventReader // TypeDefIndex: 7568
 {
 
 	public MidiEvent Read(MidiReader reader, ReadingSettings settings, byte currentStatusByte) { }

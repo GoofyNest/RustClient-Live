@@ -1,25 +1,25 @@
-public class ViewShake // TypeDefIndex: 10981
+public class ViewShake // TypeDefIndex: 10987
 {
-	[CompilerGeneratedAttribute] 
-	private Vector3 <PositionOffset>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <AnglesOffset>k__BackingField; 
-	protected List<ViewShake.ShakeParameters> Entries; 
+	[CompilerGeneratedAttribute]
+	private Vector3 <PositionOffset>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <AnglesOffset>k__BackingField;
+	protected List<ViewShake.ShakeParameters> Entries;
 
 	public Vector3 PositionOffset { get; set; }
 	public Vector3 AnglesOffset { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_PositionOffset() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_PositionOffset(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_AnglesOffset() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_AnglesOffset(Vector3 value) { }
 
 	public void AddShake(float amplitude, float frequency, float duration) { }
@@ -32,10 +32,10 @@ public class ViewShake // TypeDefIndex: 10981
 
 }
 
-private sealed class ViewShake.<>c // TypeDefIndex: 10983
+private sealed class ViewShake.<>c // TypeDefIndex: 10989
 {
-	public static readonly ViewShake.<>c <>9; 
-	public static Predicate<ViewShake.ShakeParameters> <>9__11_0; 
+	public static readonly ViewShake.<>c <>9;
+	public static Predicate<ViewShake.ShakeParameters> <>9__11_0;
 
 
 	private static void .cctor() { }

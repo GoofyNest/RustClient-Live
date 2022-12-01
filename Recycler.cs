@@ -1,14 +1,14 @@
-public class Recycler : StorageContainer // TypeDefIndex: 10152
+public class Recycler : StorageContainer // TypeDefIndex: 10154
 {
-	private Option __menuOption_Menu_TurnOff; 
-	private Option __menuOption_Menu_TurnOn; 
-	public float recycleEfficiency; 
-	public SoundDefinition grindingLoopDef; 
-	public GameObjectRef startSound; 
-	public GameObjectRef stopSound; 
-	private bool lastFrameOn; 
-	private SoundModulation.Modulator grindingSoundModulator; 
-	private Sound grindingLoop; 
+	private Option __menuOption_Menu_TurnOff;
+	private Option __menuOption_Menu_TurnOn;
+	public float recycleEfficiency;
+	public SoundDefinition grindingLoopDef;
+	public GameObjectRef startSound;
+	public GameObjectRef stopSound;
+	private bool lastFrameOn;
+	private SoundModulation.Modulator grindingSoundModulator;
+	private Sound grindingLoop;
 
 	public override bool HasMenuOptions { get; }
 
@@ -23,18 +23,18 @@ public class Recycler : StorageContainer // TypeDefIndex: 10152
 
 	private bool CanBeRecycled(Item item) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOn(BasePlayer player) { }
 
 	public bool Menu_TurnOn_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_TurnOff(BasePlayer player) { }
 
 	public bool Menu_TurnOff_ShowIf(BasePlayer player) { }

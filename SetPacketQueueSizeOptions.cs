@@ -1,24 +1,24 @@
-public struct SetPacketQueueSizeOptions // TypeDefIndex: 9001
+public struct SetPacketQueueSizeOptions // TypeDefIndex: 9003
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <IncomingPacketQueueMaxSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <OutgoingPacketQueueMaxSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ulong <IncomingPacketQueueMaxSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <OutgoingPacketQueueMaxSizeBytes>k__BackingField;
 
 	public ulong IncomingPacketQueueMaxSizeBytes { get; set; }
 	public ulong OutgoingPacketQueueMaxSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_IncomingPacketQueueMaxSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IncomingPacketQueueMaxSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_OutgoingPacketQueueMaxSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OutgoingPacketQueueMaxSizeBytes(ulong value) { }
 
 }

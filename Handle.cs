@@ -1,15 +1,15 @@
-public abstract class Handle : IEquatable<Handle>, IFormattable // TypeDefIndex: 8266
+public abstract class Handle : IEquatable<Handle>, IFormattable // TypeDefIndex: 8268
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <InnerHandle>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <InnerHandle>k__BackingField;
 
 	public IntPtr InnerHandle { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_InnerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_InnerHandle(IntPtr value) { }
 
 	public void .ctor() { }

@@ -1,8 +1,8 @@
 internal class LocatedActiveAxis : ActiveAxis // TypeDefIndex: 2146
 {
-	private int column; 
-	internal bool isMatched; 
-	internal KeySequence Ks; 
+	private int column;
+	internal bool isMatched;
+	internal KeySequence Ks;
 
 	internal int Column { get; }
 

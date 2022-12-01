@@ -1,6 +1,6 @@
-public class DeployShell : PrefabAttribute // TypeDefIndex: 11579
+public class DeployShell : PrefabAttribute // TypeDefIndex: 11586
 {
-	public Bounds bounds; 
+	public Bounds bounds;
 
 
 	public OBB WorldSpaceBounds(Transform transform) { }

@@ -13,11 +13,11 @@ private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=176
 
 internal class <Module>
 
-[NativeHeaderAttribute] 
-[MovedFromAttribute] 
+[NativeHeaderAttribute]
+[MovedFromAttribute]
 public sealed class NavMeshPath
-	internal IntPtr m_Ptr; 
-	internal Vector3[] m_Corners; 
+	internal IntPtr m_Ptr;
+	internal Vector3[] m_Corners;
 
 }
 
@@ -51,7 +51,7 @@ public sealed class NavMeshAgent : Behaviour // TypeDefIndex: 4451
 	public bool isOnOffMeshLink { get; }
 
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isOnOffMeshLink() { }
 
 }
@@ -59,13 +59,13 @@ public sealed class NavMeshAgent : Behaviour // TypeDefIndex: 4451
 public struct NavMeshHit // TypeDefIndex: 4453
 {
 
-[MovedFromAttribute] 
+[MovedFromAttribute]
 public struct NavMeshHit
-	private Vector3 m_Position; 
-	private Vector3 m_Normal; 
-	private float m_Distance; 
-	private int m_Mask; 
-	private int m_Hit; 
+	private Vector3 m_Position;
+	private Vector3 m_Normal;
+	private float m_Distance;
+	private int m_Mask;
+	private int m_Hit;
 
 	public Vector3 position { get; }
 	public Vector3 normal { get; }
@@ -85,7 +85,7 @@ public sealed class NavMeshData : Object // TypeDefIndex: 4454
 
 	public void .ctor(int agentTypeID) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static void Internal_Create(NavMeshData mono, int agentTypeID) { }
 
 	public void set_position(Vector3 value) { }
@@ -100,9 +100,9 @@ public sealed class NavMeshData : Object // TypeDefIndex: 4454
 
 public struct NavMeshDataInstance // TypeDefIndex: 4455
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <id>k__BackingField; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <id>k__BackingField;
 
 	public bool valid { get; }
 	internal int id { get; set; }
@@ -111,10 +111,10 @@ public struct NavMeshDataInstance // TypeDefIndex: 4455
 
 	public bool get_valid() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal int get_id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_id(int value) { }
 
 	public void Remove() { }
@@ -125,13 +125,13 @@ public struct NavMeshDataInstance // TypeDefIndex: 4455
 
 public struct NavMeshLinkData // TypeDefIndex: 4456
 {
-	private Vector3 m_StartPosition; 
-	private Vector3 m_EndPosition; 
-	private float m_CostModifier; 
-	private int m_Bidirectional; 
-	private float m_Width; 
-	private int m_Area; 
-	private int m_AgentTypeID; 
+	private Vector3 m_StartPosition;
+	private Vector3 m_EndPosition;
+	private float m_CostModifier;
+	private int m_Bidirectional;
+	private float m_Width;
+	private int m_Area;
+	private int m_AgentTypeID;
 
 	public Vector3 startPosition { set; }
 	public Vector3 endPosition { set; }
@@ -160,9 +160,9 @@ public struct NavMeshLinkData // TypeDefIndex: 4456
 
 public struct NavMeshLinkInstance // TypeDefIndex: 4457
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <id>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <id>k__BackingField;
 
 	public bool valid { get; }
 	internal int id { get; set; }
@@ -171,10 +171,10 @@ public struct NavMeshLinkInstance // TypeDefIndex: 4457
 
 	public bool get_valid() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal int get_id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_id(int value) { }
 
 	public void Remove() { }
@@ -186,65 +186,65 @@ public struct NavMeshLinkInstance // TypeDefIndex: 4457
 public struct NavMeshQueryFilter // TypeDefIndex: 4458
 {
 	private const int k_AreaCostElementCount = 32;
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private float[] <costs>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <areaMask>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <agentTypeID>k__BackingField; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private float[] <costs>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <areaMask>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <agentTypeID>k__BackingField;
 
 }
 
 public static class NavMesh // TypeDefIndex: 4459
 {
-	public static NavMesh.OnNavMeshPreUpdate onPreUpdate; 
+	public static NavMesh.OnNavMeshPreUpdate onPreUpdate;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_CallOnNavMeshPreUpdate() { }
 
 	public static NavMeshDataInstance AddNavMeshData(NavMeshData navMeshData) { }
 
 	public static NavMeshDataInstance AddNavMeshData(NavMeshData navMeshData, Vector3 position, Quaternion rotation) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	internal static bool IsValidNavMeshDataHandle(int handle) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	internal static bool IsValidLinkHandle(int handle) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	internal static bool InternalSetOwner(int dataID, int ownerID) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	internal static bool InternalSetLinkOwner(int linkID, int ownerID) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	internal static int AddNavMeshDataInternal(NavMeshData navMeshData) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	internal static int AddNavMeshDataTransformedInternal(NavMeshData navMeshData, Vector3 position, Quaternion rotation) { }
 
-	[NativeNameAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeNameAttribute]
+	[StaticAccessorAttribute]
 	internal static void RemoveNavMeshDataInternal(int handle) { }
 
 	public static NavMeshLinkInstance AddLink(NavMeshLinkData link, Vector3 position, Quaternion rotation) { }
 
-	[NativeNameAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeNameAttribute]
+	[StaticAccessorAttribute]
 	internal static int AddLinkInternal(NavMeshLinkData link, Vector3 position, Quaternion rotation) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	internal static void RemoveLinkInternal(int handle) { }
 
 	public static NavMeshBuildSettings GetSettingsByID(int agentTypeID) { }
@@ -272,7 +272,7 @@ public sealed class NavMesh.OnNavMeshPreUpdate : MulticastDelegate // TypeDefInd
 
 public enum NavMeshBuildSourceShape // TypeDefIndex: 4461
 {
-	public int value__; 
+	public int value__;
 	public const NavMeshBuildSourceShape Mesh = 0;
 	public const NavMeshBuildSourceShape Terrain = 1;
 	public const NavMeshBuildSourceShape Box = 2;
@@ -284,7 +284,7 @@ public enum NavMeshBuildSourceShape // TypeDefIndex: 4461
 
 public enum NavMeshCollectGeometry // TypeDefIndex: 4462
 {
-	public int value__; 
+	public int value__;
 	public const NavMeshCollectGeometry RenderMeshes = 0;
 	public const NavMeshCollectGeometry PhysicsColliders = 1;
 
@@ -292,12 +292,12 @@ public enum NavMeshCollectGeometry // TypeDefIndex: 4462
 
 public struct NavMeshBuildSource // TypeDefIndex: 4463
 {
-	private Matrix4x4 m_Transform; 
-	private Vector3 m_Size; 
-	private NavMeshBuildSourceShape m_Shape; 
-	private int m_Area; 
-	private int m_InstanceID; 
-	private int m_ComponentID; 
+	private Matrix4x4 m_Transform;
+	private Vector3 m_Size;
+	private NavMeshBuildSourceShape m_Shape;
+	private int m_Area;
+	private int m_InstanceID;
+	private int m_ComponentID;
 
 	public Matrix4x4 transform { get; set; }
 	public Vector3 size { get; set; }
@@ -327,20 +327,20 @@ public struct NavMeshBuildSource // TypeDefIndex: 4463
 
 	public Component get_component() { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static Component InternalGetComponent(int instanceID) { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	private static Object InternalGetObject(int instanceID) { }
 
 }
 
 public struct NavMeshBuildMarkup // TypeDefIndex: 4464
 {
-	private int m_OverrideArea; 
-	private int m_Area; 
-	private int m_IgnoreFromBuild; 
-	private int m_InstanceID; 
+	private int m_OverrideArea;
+	private int m_Area;
+	private int m_IgnoreFromBuild;
+	private int m_InstanceID;
 
 	public bool overrideArea { set; }
 	public int area { set; }
@@ -360,20 +360,20 @@ public struct NavMeshBuildMarkup // TypeDefIndex: 4464
 
 public struct NavMeshBuildSettings // TypeDefIndex: 4465
 {
-	private int m_AgentTypeID; 
-	private float m_AgentRadius; 
-	private float m_AgentHeight; 
-	private float m_AgentSlope; 
-	private float m_AgentClimb; 
-	private float m_LedgeDropHeight; 
-	private float m_MaxJumpAcrossDistance; 
-	private float m_MinRegionArea; 
-	private int m_OverrideVoxelSize; 
-	private float m_VoxelSize; 
-	private int m_OverrideTileSize; 
-	private int m_TileSize; 
-	private int m_AccuratePlacement; 
-	private NavMeshBuildDebugSettings m_Debug; 
+	private int m_AgentTypeID;
+	private float m_AgentRadius;
+	private float m_AgentHeight;
+	private float m_AgentSlope;
+	private float m_AgentClimb;
+	private float m_LedgeDropHeight;
+	private float m_MaxJumpAcrossDistance;
+	private float m_MinRegionArea;
+	private int m_OverrideVoxelSize;
+	private float m_VoxelSize;
+	private int m_OverrideTileSize;
+	private int m_TileSize;
+	private int m_AccuratePlacement;
+	private NavMeshBuildDebugSettings m_Debug;
 
 	public int agentTypeID { get; set; }
 	public bool overrideVoxelSize { set; }
@@ -398,34 +398,34 @@ public struct NavMeshBuildSettings // TypeDefIndex: 4465
 
 public struct NavMeshBuildDebugSettings // TypeDefIndex: 4466
 {
-	private byte m_Flags; 
+	private byte m_Flags;
 
 }
 
-public class NavMeshLink : MonoBehaviour // TypeDefIndex: 8161
+public class NavMeshLink : MonoBehaviour // TypeDefIndex: 8163
 {
-	[CompilerGeneratedAttribute] 
-	private bool <UpdateOnTransformChanged>k__BackingField; 
-	[SerializeField] 
-	private int m_AgentTypeID; 
-	[SerializeField] 
-	private Vector3 m_StartPoint; 
-	[SerializeField] 
-	private Vector3 m_EndPoint; 
-	[SerializeField] 
-	private float m_Width; 
-	[SerializeField] 
-	private int m_CostModifier; 
-	[SerializeField] 
-	private bool m_Bidirectional; 
-	[SerializeField] 
-	private bool m_AutoUpdatePosition; 
-	[SerializeField] 
-	private int m_Area; 
-	private NavMeshLinkInstance m_LinkInstance; 
-	private Vector3 m_LastPosition; 
-	private Quaternion m_LastRotation; 
-	private static readonly List<NavMeshLink> s_Tracked; 
+	[CompilerGeneratedAttribute]
+	private bool <UpdateOnTransformChanged>k__BackingField;
+	[SerializeField]
+	private int m_AgentTypeID;
+	[SerializeField]
+	private Vector3 m_StartPoint;
+	[SerializeField]
+	private Vector3 m_EndPoint;
+	[SerializeField]
+	private float m_Width;
+	[SerializeField]
+	private int m_CostModifier;
+	[SerializeField]
+	private bool m_Bidirectional;
+	[SerializeField]
+	private bool m_AutoUpdatePosition;
+	[SerializeField]
+	private int m_Area;
+	private NavMeshLinkInstance m_LinkInstance;
+	private Vector3 m_LastPosition;
+	private Quaternion m_LastRotation;
+	private static readonly List<NavMeshLink> s_Tracked;
 
 	public bool UpdateOnTransformChanged { get; set; }
 	public int agentTypeID { get; set; }
@@ -438,10 +438,10 @@ public class NavMeshLink : MonoBehaviour // TypeDefIndex: 8161
 	public int area { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_UpdateOnTransformChanged() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UpdateOnTransformChanged(bool value) { }
 
 	public int get_agentTypeID() { }
@@ -502,17 +502,17 @@ public class NavMeshLink : MonoBehaviour // TypeDefIndex: 8161
 
 }
 
-public class NavMeshModifier : MonoBehaviour // TypeDefIndex: 8162
+public class NavMeshModifier : MonoBehaviour // TypeDefIndex: 8164
 {
-	[SerializeField] 
-	private bool m_OverrideArea; 
-	[SerializeField] 
-	private int m_Area; 
-	[SerializeField] 
-	private bool m_IgnoreFromBuild; 
-	[SerializeField] 
-	private List<int> m_AffectedAgents; 
-	private static readonly List<NavMeshModifier> s_NavMeshModifiers; 
+	[SerializeField]
+	private bool m_OverrideArea;
+	[SerializeField]
+	private int m_Area;
+	[SerializeField]
+	private bool m_IgnoreFromBuild;
+	[SerializeField]
+	private List<int> m_AffectedAgents;
+	private static readonly List<NavMeshModifier> s_NavMeshModifiers;
 
 	public bool overrideArea { get; set; }
 	public int area { get; set; }
@@ -546,17 +546,17 @@ public class NavMeshModifier : MonoBehaviour // TypeDefIndex: 8162
 
 }
 
-public class NavMeshModifierVolume : MonoBehaviour // TypeDefIndex: 8163
+public class NavMeshModifierVolume : MonoBehaviour // TypeDefIndex: 8165
 {
-	[SerializeField] 
-	private Vector3 m_Size; 
-	[SerializeField] 
-	private Vector3 m_Center; 
-	[SerializeField] 
-	private int m_Area; 
-	[SerializeField] 
-	private List<int> m_AffectedAgents; 
-	private static readonly List<NavMeshModifierVolume> s_NavMeshModifiers; 
+	[SerializeField]
+	private Vector3 m_Size;
+	[SerializeField]
+	private Vector3 m_Center;
+	[SerializeField]
+	private int m_Area;
+	[SerializeField]
+	private List<int> m_AffectedAgents;
+	private static readonly List<NavMeshModifierVolume> s_NavMeshModifiers;
 
 	public Vector3 size { get; set; }
 	public Vector3 center { get; set; }
@@ -594,45 +594,45 @@ public class NavMeshModifierVolume : MonoBehaviour // TypeDefIndex: 8163
 
 }
 
-public class NavMeshSurface : MonoBehaviour // TypeDefIndex: 8165
+public class NavMeshSurface : MonoBehaviour // TypeDefIndex: 8167
 {
-	[CompilerGeneratedAttribute] 
-	private bool <UpdateOnTransformChanged>k__BackingField; 
-	[SerializeField] 
-	private int m_AgentTypeID; 
-	[SerializeField] 
-	private CollectObjects m_CollectObjects; 
-	[SerializeField] 
-	private Vector3 m_Size; 
-	[SerializeField] 
-	private Vector3 m_Center; 
-	[SerializeField] 
-	private LayerMask m_LayerMask; 
-	[SerializeField] 
-	private NavMeshCollectGeometry m_UseGeometry; 
-	[SerializeField] 
-	private int m_DefaultArea; 
-	[SerializeField] 
-	private bool m_IgnoreNavMeshAgent; 
-	[SerializeField] 
-	private bool m_IgnoreNavMeshObstacle; 
-	[SerializeField] 
-	private bool m_OverrideTileSize; 
-	[SerializeField] 
-	private int m_TileSize; 
-	[SerializeField] 
-	private bool m_OverrideVoxelSize; 
-	[SerializeField] 
-	private float m_VoxelSize; 
-	[SerializeField] 
-	private bool m_BuildHeightMesh; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private NavMeshData m_NavMeshData; 
-	private NavMeshDataInstance m_NavMeshDataInstance; 
-	private Vector3 m_LastPosition; 
-	private Quaternion m_LastRotation; 
-	private static readonly List<NavMeshSurface> s_NavMeshSurfaces; 
+	[CompilerGeneratedAttribute]
+	private bool <UpdateOnTransformChanged>k__BackingField;
+	[SerializeField]
+	private int m_AgentTypeID;
+	[SerializeField]
+	private CollectObjects m_CollectObjects;
+	[SerializeField]
+	private Vector3 m_Size;
+	[SerializeField]
+	private Vector3 m_Center;
+	[SerializeField]
+	private LayerMask m_LayerMask;
+	[SerializeField]
+	private NavMeshCollectGeometry m_UseGeometry;
+	[SerializeField]
+	private int m_DefaultArea;
+	[SerializeField]
+	private bool m_IgnoreNavMeshAgent;
+	[SerializeField]
+	private bool m_IgnoreNavMeshObstacle;
+	[SerializeField]
+	private bool m_OverrideTileSize;
+	[SerializeField]
+	private int m_TileSize;
+	[SerializeField]
+	private bool m_OverrideVoxelSize;
+	[SerializeField]
+	private float m_VoxelSize;
+	[SerializeField]
+	private bool m_BuildHeightMesh;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private NavMeshData m_NavMeshData;
+	private NavMeshDataInstance m_NavMeshDataInstance;
+	private Vector3 m_LastPosition;
+	private Quaternion m_LastRotation;
+	private static readonly List<NavMeshSurface> s_NavMeshSurfaces;
 
 	public bool UpdateOnTransformChanged { get; set; }
 	public int agentTypeID { get; set; }
@@ -653,10 +653,10 @@ public class NavMeshSurface : MonoBehaviour // TypeDefIndex: 8165
 	public static List<NavMeshSurface> activeSurfaces { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_UpdateOnTransformChanged() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UpdateOnTransformChanged(bool value) { }
 
 	public int get_agentTypeID() { }
@@ -767,13 +767,13 @@ public class NavMeshSurface : MonoBehaviour // TypeDefIndex: 8165
 
 }
 
-private sealed class NavMeshSurface.<>c // TypeDefIndex: 8166
+private sealed class NavMeshSurface.<>c // TypeDefIndex: 8168
 {
-	public static readonly NavMeshSurface.<>c <>9; 
-	public static Predicate<NavMeshModifierVolume> <>9__83_0; 
-	public static Predicate<NavMeshModifier> <>9__84_0; 
-	public static Predicate<NavMeshBuildSource> <>9__84_1; 
-	public static Predicate<NavMeshBuildSource> <>9__84_2; 
+	public static readonly NavMeshSurface.<>c <>9;
+	public static Predicate<NavMeshModifierVolume> <>9__83_0;
+	public static Predicate<NavMeshModifier> <>9__84_0;
+	public static Predicate<NavMeshBuildSource> <>9__84_1;
+	public static Predicate<NavMeshBuildSource> <>9__84_2;
 
 
 	private static void .cctor() { }
@@ -790,7 +790,7 @@ private sealed class NavMeshSurface.<>c // TypeDefIndex: 8166
 
 }
 
-public class NavMeshTester : MonoBehaviour // TypeDefIndex: 10689
+public class NavMeshTester : MonoBehaviour // TypeDefIndex: 10693
 {
 
 	public void .ctor() { }

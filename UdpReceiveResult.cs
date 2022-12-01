@@ -1,7 +1,7 @@
 public struct UdpReceiveResult : IEquatable<UdpReceiveResult> // TypeDefIndex: 3061
 {
-	private byte[] m_buffer; 
-	private IPEndPoint m_remoteEndPoint; 
+	private byte[] m_buffer;
+	private IPEndPoint m_remoteEndPoint;
 
 	public byte[] Buffer { get; }
 

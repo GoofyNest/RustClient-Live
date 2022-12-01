@@ -1,7 +1,7 @@
-internal struct SessionSearchCopySearchResultByIndexOptionsInternal : ISettable<SessionSearchCopySearchResultByIndexOptions>, IDisposable // TypeDefIndex: 8585
+internal struct SessionSearchCopySearchResultByIndexOptionsInternal : ISettable<SessionSearchCopySearchResultByIndexOptions>, IDisposable // TypeDefIndex: 8587
 {
-	private int m_ApiVersion; 
-	private uint m_SessionIndex; 
+	private int m_ApiVersion;
+	private uint m_SessionIndex;
 
 	public uint SessionIndex { set; }
 

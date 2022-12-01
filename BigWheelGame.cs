@@ -1,8 +1,8 @@
-public class BigWheelGame : SpinnerWheel // TypeDefIndex: 10466
+public class BigWheelGame : SpinnerWheel // TypeDefIndex: 10470
 {
-	public HitNumber[] hitNumbers; 
-	public GameObject indicator; 
-	public GameObjectRef winEffect; 
+	public HitNumber[] hitNumbers;
+	public GameObject indicator;
+	public GameObjectRef winEffect;
 
 
 	public override bool AllowPlayerSpins() { }
@@ -11,7 +11,7 @@ public class BigWheelGame : SpinnerWheel // TypeDefIndex: 10466
 
 	public HitNumber GetCurrentHitType() { }
 
-	[ContextMenu] 
+	[ContextMenu]
 	private void LoadHitNumbers() { }
 
 	public void .ctor() { }

@@ -1,24 +1,24 @@
 public struct IntPtr : ISerializable // TypeDefIndex: 369
 {
-	private void* m_value; 
-	public static readonly IntPtr Zero; 
+	private void* m_value;
+	public static readonly IntPtr Zero;
 
 	public static int Size { get; }
 
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void .ctor(int value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void .ctor(long value) { }
 
-	[ReliabilityContractAttribute] 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public void .ctor(void* value) { }
 
 	private void .ctor(SerializationInfo info, StreamingContext context) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int get_Size() { }
 
 	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
@@ -27,44 +27,44 @@ public struct IntPtr : ISerializable // TypeDefIndex: 369
 
 	public override int GetHashCode() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public long ToInt64() { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public void* ToPointer() { }
 
 	public override string ToString() { }
 
 	public string ToString(string format) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool op_Equality(IntPtr value1, IntPtr value2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool op_Inequality(IntPtr value1, IntPtr value2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr op_Explicit(int value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr op_Explicit(long value) { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public static IntPtr op_Explicit(void* value) { }
 
 	public static int op_Explicit(IntPtr value) { }
 
 	public static long op_Explicit(IntPtr value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static void* op_Explicit(IntPtr value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr Add(IntPtr pointer, int offset) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal bool IsNull() { }
 
 }

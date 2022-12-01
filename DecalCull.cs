@@ -1,9 +1,9 @@
-public class DecalCull : LODComponent // TypeDefIndex: 11664
+public class DecalCull : LODComponent // TypeDefIndex: 11671
 {
-	public float Distance; 
-	private DeferredDecal decal; 
-	private int curlod; 
-	private bool force; 
+	public float Distance;
+	private DeferredDecal decal;
+	private int curlod;
+	private bool force;
 
 
 	protected override void InitLOD() { }

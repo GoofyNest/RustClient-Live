@@ -1,10 +1,10 @@
 internal sealed class InternalEncoderBestFitFallbackBuffer : EncoderFallbackBuffer // TypeDefIndex: 446
 {
-	private char cBestFit; 
-	private InternalEncoderBestFitFallback oFallback; 
-	private int iCount; 
-	private int iSize; 
-	private static object s_InternalSyncObject; 
+	private char cBestFit;
+	private InternalEncoderBestFitFallback oFallback;
+	private int iCount;
+	private int iSize;
+	private static object s_InternalSyncObject;
 
 	private static object InternalSyncObject { get; }
 	public override int Remaining { get; }

@@ -1,6 +1,6 @@
 internal enum InternalPrimitiveTypeE // TypeDefIndex: 1101
 {
-	public int value__; 
+	public int value__;
 	public const InternalPrimitiveTypeE Invalid = 0;
 	public const InternalPrimitiveTypeE Boolean = 1;
 	public const InternalPrimitiveTypeE Byte = 2;

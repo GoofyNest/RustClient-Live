@@ -1,30 +1,30 @@
-public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // TypeDefIndex: 7764
+public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // TypeDefIndex: 7766
 {
-	[CompilerGeneratedAttribute] 
-	private GameObject <Prefab>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private GameObject <ViewModel>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Skinnable <Skinnable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Skin <Skin>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <ItemId>k__BackingField; 
-	public static Action<bool, string> OnLoading; 
-	public Dropdown ItemTypeSelector; 
-	public InputField ItemTitleLabel; 
-	public WorkshopViewmodelControls ViewmodelControls; 
-	public GameObject MaterialTabHolder; 
-	public GameObject FileDialogObject; 
-	public GameObject[] EditorElements; 
-	public GameObject[] ClothOnlyElements; 
-	public GameObject[] DetailOnlyElements; 
-	public GameObject[] DirtOnlyElements; 
-	public Toggle[] MaterialTabs; 
-	public int EditingMaterial; 
-	public GameObject item_position_a; 
-	public GameObject item_position_b; 
-	private static readonly Regex ModelCleanup; 
+	[CompilerGeneratedAttribute]
+	private GameObject <Prefab>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private GameObject <ViewModel>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Skinnable <Skinnable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Skin <Skin>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <ItemId>k__BackingField;
+	public static Action<bool, string> OnLoading;
+	public Dropdown ItemTypeSelector;
+	public InputField ItemTitleLabel;
+	public WorkshopViewmodelControls ViewmodelControls;
+	public GameObject MaterialTabHolder;
+	public GameObject FileDialogObject;
+	public GameObject[] EditorElements;
+	public GameObject[] ClothOnlyElements;
+	public GameObject[] DetailOnlyElements;
+	public GameObject[] DirtOnlyElements;
+	public Toggle[] MaterialTabs;
+	public int EditingMaterial;
+	public GameObject item_position_a;
+	public GameObject item_position_b;
+	private static readonly Regex ModelCleanup;
 
 	internal GameObject Prefab { get; set; }
 	internal GameObject ViewModel { get; set; }
@@ -38,34 +38,34 @@ public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // Type
 	public string ChangeLog { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal GameObject get_Prefab() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Prefab(GameObject value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal GameObject get_ViewModel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_ViewModel(GameObject value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal Skinnable get_Skinnable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Skinnable(Skinnable value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal Skin get_Skin() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Skin(Skin value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal ulong get_ItemId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_ItemId(ulong value) { }
 
 	protected WorkshopInterface get_Interface() { }
@@ -90,17 +90,17 @@ public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // Type
 
 	public void StartNewItem(string type = "TShirt") { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator StartViewingItem(IWorkshopContent item) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator StartEditingItem(IWorkshopContent item) { }
 
 	private void HideEditor() { }
 
 	private void ShowEditor() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	internal IEnumerator OpenItem(IWorkshopContent item) { }
 
 	private void OnImportFinished() { }
@@ -144,7 +144,7 @@ public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // Type
 	|-WorkshopItemEditor.RemoveComponents<Rigidbody>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator DoDownloadModel() { }
 
 	private void Update() { }
@@ -157,17 +157,17 @@ public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // Type
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <LoadItemType>
 
 }
 
-private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7765
+private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7767
 {
-	public static readonly WorkshopItemEditor.<>c <>9; 
-	public static Func<Skinnable, bool> <>9__47_0; 
-	public static Func<Skinnable, string> <>9__47_1; 
-	public static Func<string, string> <>9__47_2; 
+	public static readonly WorkshopItemEditor.<>c <>9;
+	public static Func<Skinnable, bool> <>9__47_0;
+	public static Func<Skinnable, string> <>9__47_1;
+	public static Func<string, string> <>9__47_2;
 
 
 	private static void .cctor() { }
@@ -182,122 +182,122 @@ private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7765
 
 }
 
-private sealed class WorkshopItemEditor.<StartViewingItem>d__50 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7766
+private sealed class WorkshopItemEditor.<StartViewingItem>d__50 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7768
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public WorkshopItemEditor <>4__this; 
-	public IWorkshopContent item; 
+	private int <>1__state;
+	private object <>2__current;
+	public WorkshopItemEditor <>4__this;
+	public IWorkshopContent item;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class WorkshopItemEditor.<StartEditingItem>d__51 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7767
+private sealed class WorkshopItemEditor.<StartEditingItem>d__51 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7769
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public WorkshopItemEditor <>4__this; 
-	public IWorkshopContent item; 
+	private int <>1__state;
+	private object <>2__current;
+	public WorkshopItemEditor <>4__this;
+	public IWorkshopContent item;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class WorkshopItemEditor.<OpenItem>d__54 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7768
+private sealed class WorkshopItemEditor.<OpenItem>d__54 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7770
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public WorkshopItemEditor <>4__this; 
-	public IWorkshopContent item; 
-	private Task<IPlayerInfo> <t>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public WorkshopItemEditor <>4__this;
+	public IWorkshopContent item;
+	private Task<IPlayerInfo> <t>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class WorkshopItemEditor.<DoDownloadModel>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7769
+private sealed class WorkshopItemEditor.<DoDownloadModel>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7771
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public WorkshopItemEditor <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public WorkshopItemEditor <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

@@ -1,9 +1,9 @@
 public class Texture : Object // TypeDefIndex: 3445
 {
-	public static readonly int GenerateAllMips; 
+	public static readonly int GenerateAllMips;
 
 	public int mipmapCount { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static AnisotropicFiltering anisotropicFiltering { set; }
 	public virtual GraphicsFormat graphicsFormat { get; }
 	public virtual int width { get; set; }
@@ -31,12 +31,12 @@ public class Texture : Object // TypeDefIndex: 3445
 
 	protected void .ctor() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public int get_mipmapCount() { }
 
 	public static void set_anisotropicFiltering(AnisotropicFiltering value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void SetGlobalAnisotropicFilteringLimits(int forcedMin, int globalMax) { }
 
 	public virtual GraphicsFormat get_graphicsFormat() { }
@@ -61,7 +61,7 @@ public class Texture : Object // TypeDefIndex: 3445
 
 	public virtual bool get_isReadable() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public TextureWrapMode get_wrapMode() { }
 
 	public void set_wrapMode(TextureWrapMode value) { }
@@ -72,51 +72,51 @@ public class Texture : Object // TypeDefIndex: 3445
 
 	public void set_mipMapBias(float value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Vector2 get_texelSize() { }
 
 	public IntPtr GetNativeTexturePtr() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_totalTextureMemory() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_desiredTextureMemory() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_targetTextureMemory() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_currentTextureMemory() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_nonStreamingTextureMemory() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_streamingMipmapUploadCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_streamingTextureCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_nonStreamingTextureCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_streamingTexturePendingLoadCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ulong get_streamingTextureLoadingCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool get_streamingTextureForceLoadAll() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void set_streamingTextureForceLoadAll(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool get_streamingTextureDiscardUnusedMips() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void set_streamingTextureDiscardUnusedMips(bool value) { }
 
 	internal bool ValidateFormat(TextureFormat format) { }
@@ -131,16 +131,16 @@ public class Texture : Object // TypeDefIndex: 3445
 
 }
 
-public static class Texture // TypeDefIndex: 5618
+public static class Texture // TypeDefIndex: 5620
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void CompressNormals(Texture2D tex) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void DecompressNormals(Texture2D tex) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool SaveAsPng(Texture texture, string fileName) { }
 
 	public static Texture2D CreateReadableCopy(Texture2D texture, int width = 0, int height = 0) { }
@@ -151,12 +151,12 @@ public static class Texture // TypeDefIndex: 5618
 
 }
 
-public class Texture : ConsoleSystem // TypeDefIndex: 13756
+public class Texture : ConsoleSystem // TypeDefIndex: 13772
 {
-	[ClientVar] 
-	public static int streamingBudgetOverride; 
+	[ClientVar]
+	public static int streamingBudgetOverride;
 
-	[ClientVar] 
+	[ClientVar]
 	public static bool streaming { get; set; }
 
 
@@ -164,7 +164,7 @@ public class Texture : ConsoleSystem // TypeDefIndex: 13756
 
 	public static void set_streaming(bool value) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void stats(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }

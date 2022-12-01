@@ -1,6 +1,6 @@
-public class DiveSite : JunkPile // TypeDefIndex: 10500
+public class DiveSite : JunkPile // TypeDefIndex: 10504
 {
-	public Transform bobber; 
+	public Transform bobber;
 
 
 	protected override void ClientInit(Entity info) { }

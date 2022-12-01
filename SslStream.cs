@@ -1,7 +1,7 @@
 public class SslStream : AuthenticatedStream // TypeDefIndex: 3072
 {
-	private MonoTlsProvider provider; 
-	private IMonoSslStream impl; 
+	private MonoTlsProvider provider;
+	private IMonoSslStream impl;
 
 	internal IMonoSslStream Impl { get; }
 	public override bool IsAuthenticated { get; }

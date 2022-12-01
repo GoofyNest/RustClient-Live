@@ -19,10 +19,10 @@ public sealed class SystemInfo // TypeDefIndex: 3559
 	public static string graphicsDeviceVersion { get; }
 	public static int graphicsShaderLevel { get; }
 	public static bool graphicsMultiThreaded { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static bool supportsRenderTextures { get; }
 	public static bool supportsMotionVectors { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static bool supportsImageEffects { get; }
 	public static bool supports3DTextures { get; }
 	public static bool supports3DRenderTextures { get; }
@@ -106,109 +106,109 @@ public sealed class SystemInfo // TypeDefIndex: 3559
 
 	public static bool get_supportsMipStreaming() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static BatteryStatus GetBatteryStatus() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetOperatingSystem() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static OperatingSystemFamily GetOperatingSystemFamily() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetProcessorType() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetProcessorFrequencyMHz() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetProcessorCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetPhysicalMemoryMB() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetDeviceUniqueIdentifier() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetDeviceName() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetDeviceModel() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static DeviceType GetDeviceType() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetGraphicsMemorySize() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetGraphicsDeviceName() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetGraphicsDeviceVendor() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static GraphicsDeviceType GetGraphicsDeviceType() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool GetGraphicsUVStartsAtTop() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetGraphicsDeviceVersion() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetGraphicsShaderLevel() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool GetGraphicsMultiThreaded() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool SupportsMotionVectors() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Supports3DTextures() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Supports3DRenderTextures() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static CopyTextureSupport GetCopyTextureSupport() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool SupportsComputeShaders() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool SupportsInstancing() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int SupportedRenderTargetCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int SupportedRandomWriteTargetCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool UsesReversedZBuffer() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool HasRenderTextureNative(RenderTextureFormat format) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool SupportsTextureFormatNative(TextureFormat format) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool SupportsAsyncGPUReadback() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool SupportsMipStreaming() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool IsFormatSupported(GraphicsFormat format, FormatUsage usage) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static GraphicsFormat GetCompatibleFormat(GraphicsFormat format, FormatUsage usage) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static GraphicsFormat GetGraphicsFormat(DefaultFormat format) { }
 
 }

@@ -1,23 +1,23 @@
-public struct Info // TypeDefIndex: 8831
+public struct Info // TypeDefIndex: 8833
 {
-	[CompilerGeneratedAttribute] 
-	private Status <Status>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <UserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Platform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RichText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private DataRecord[] <Records>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <IntegratedPlatform>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Status <Status>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <UserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Platform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RichText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private DataRecord[] <Records>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <IntegratedPlatform>k__BackingField;
 
 	public Status Status { get; set; }
 	public EpicAccountId UserId { get; set; }
@@ -30,71 +30,71 @@ public struct Info // TypeDefIndex: 8831
 	public Utf8String IntegratedPlatform { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Status get_Status() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Status(Status value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductVersion(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Platform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Platform(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RichText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RichText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public DataRecord[] get_Records() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Records(DataRecord[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_IntegratedPlatform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IntegratedPlatform(Utf8String value) { }
 
 	internal void Set(ref InfoInternal other) { }
 
 }
 
-public struct Info // TypeDefIndex: 13461
+public struct Info // TypeDefIndex: 13477
 {
-	public string action; 
-	public string icon; 
-	public bool hasMoreOptions; 
-	public string entityName; 
-	public Sprite iconSprite; 
+	public string action;
+	public string icon;
+	public bool hasMoreOptions;
+	public string entityName;
+	public Sprite iconSprite;
 
 	public bool IsValid { get; }
 

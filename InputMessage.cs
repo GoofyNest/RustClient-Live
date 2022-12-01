@@ -1,10 +1,10 @@
-public class InputMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6283
+public class InputMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6285
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int buttons; 
-	public Vector3 aimAngles; 
-	public Vector3 mouseDelta; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int buttons;
+	public Vector3 aimAngles;
+	public Vector3 mouseDelta;
 
 
 	public static void ResetToPool(InputMessage instance) { }

@@ -1,7 +1,7 @@
 public class ValidationEventArgs : EventArgs // TypeDefIndex: 2287
 {
-	private XmlSchemaException ex; 
-	private XmlSeverityType severity; 
+	private XmlSchemaException ex;
+	private XmlSeverityType severity;
 
 	public XmlSeverityType Severity { get; }
 	public XmlSchemaException Exception { get; }

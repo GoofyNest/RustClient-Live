@@ -1,11 +1,11 @@
-public class MonumentSign : LODComponent // TypeDefIndex: 10530
+public class MonumentSign : LODComponent // TypeDefIndex: 10534
 {
-	public float viewDistance; 
-	public GameObject uiRoot; 
-	public RustText signText; 
-	private MonumentInfo closestMonument; 
-	private int currentLod; 
-	private bool force; 
+	public float viewDistance;
+	public GameObject uiRoot;
+	public RustText signText;
+	private MonumentInfo closestMonument;
+	private int currentLod;
+	private bool force;
 
 
 	private void UpdateText() { }

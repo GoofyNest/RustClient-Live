@@ -1,8 +1,8 @@
-internal struct SubmitSnapshotCallbackInfoInternal : ICallbackInfoInternal, IGettable<SubmitSnapshotCallbackInfo>, ISettable<SubmitSnapshotCallbackInfo>, IDisposable // TypeDefIndex: 8814
+internal struct SubmitSnapshotCallbackInfoInternal : ICallbackInfoInternal, IGettable<SubmitSnapshotCallbackInfo>, ISettable<SubmitSnapshotCallbackInfo>, IDisposable // TypeDefIndex: 8816
 {
-	private Result m_ResultCode; 
-	private uint m_SnapshotId; 
-	private IntPtr m_ClientData; 
+	private Result m_ResultCode;
+	private uint m_SnapshotId;
+	private IntPtr m_ClientData;
 
 	public Result ResultCode { get; set; }
 	public uint SnapshotId { get; set; }

@@ -1,10 +1,10 @@
 internal class CADMessageBase // TypeDefIndex: 1227
 {
-	protected object[] _args; 
-	protected byte[] _serializedArgs; 
-	protected int _propertyCount; 
-	protected CADArgHolder _callContext; 
-	internal byte[] serializedMethod; 
+	protected object[] _args;
+	protected byte[] _serializedArgs;
+	protected int _propertyCount;
+	protected CADArgHolder _callContext;
+	internal byte[] serializedMethod;
 
 
 	public void .ctor(IMethodMessage msg) { }

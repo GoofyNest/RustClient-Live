@@ -1,6 +1,6 @@
 public class TransactionEventArgs : EventArgs // TypeDefIndex: 3989
 {
-	private Transaction transaction; 
+	private Transaction transaction;
 
 
 	public void .ctor() { }

@@ -1,10 +1,10 @@
 public struct Vector3b : IEquatable<Vector3b> // TypeDefIndex: 4828
 {
-	public static readonly Vector3b alltrue; 
-	public static readonly Vector3b allfalse; 
-	public bool x; 
-	public bool y; 
-	public bool z; 
+	public static readonly Vector3b alltrue;
+	public static readonly Vector3b allfalse;
+	public bool x;
+	public bool y;
+	public bool z;
 
 
 	public void .ctor(bool x, bool y, bool z) { }

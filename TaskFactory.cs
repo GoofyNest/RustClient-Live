@@ -1,8 +1,8 @@
 private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task<TResult> // TypeDefIndex: 846
 {
-	internal static readonly AsyncCallback s_completeFromAsyncResult; 
-	private TInstance m_thisRef; 
-	private Func<TInstance, IAsyncResult, TResult> m_endMethod; 
+	internal static readonly AsyncCallback s_completeFromAsyncResult;
+	private TInstance m_thisRef;
+	private Func<TInstance, IAsyncResult, TResult> m_endMethod;
 
 
 	internal void .ctor(TInstance thisRef, Func<TInstance, IAsyncResult, TResult> endMethod) { }
@@ -47,9 +47,9 @@ private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task
 
 private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex: 847
 {
-	public Func<IAsyncResult, TResult> endFunction; 
-	public Action<IAsyncResult> endAction; 
-	public Task<TResult> promise; 
+	public Func<IAsyncResult, TResult> endFunction;
+	public Action<IAsyncResult> endAction;
+	public Task<TResult> promise;
 
 
 	public void .ctor() { }
@@ -94,7 +94,7 @@ private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex:
 
 private sealed class TaskFactory.<>c__DisplayClass35_1<TResult> // TypeDefIndex: 848
 {
-	public AtomicBoolean invoked; 
+	public AtomicBoolean invoked;
 	public TaskFactory.<>c
 
 
@@ -140,9 +140,9 @@ private sealed class TaskFactory.<>c__DisplayClass35_1<TResult> // TypeDefIndex:
 
 private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> // TypeDefIndex: 849
 {
-	public Func<IAsyncResult, TResult> endFunction; 
-	public Action<IAsyncResult> endAction; 
-	public Task<TResult> promise; 
+	public Func<IAsyncResult, TResult> endFunction;
+	public Action<IAsyncResult> endAction;
+	public Task<TResult> promise;
 
 
 	public void .ctor() { }
@@ -163,7 +163,7 @@ private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> //
 
 private sealed class TaskFactory.<>c__DisplayClass41_1<TResult, TArg1, TArg2> // TypeDefIndex: 850
 {
-	public AtomicBoolean invoked; 
+	public AtomicBoolean invoked;
 	public TaskFactory.<>c
 
 
@@ -185,10 +185,10 @@ private sealed class TaskFactory.<>c__DisplayClass41_1<TResult, TArg1, TArg2> //
 
 public class TaskFactory // TypeDefIndex: 884
 {
-	private CancellationToken m_defaultCancellationToken; 
-	private TaskScheduler m_defaultScheduler; 
-	private TaskCreationOptions m_defaultCreationOptions; 
-	private TaskContinuationOptions m_defaultContinuationOptions; 
+	private CancellationToken m_defaultCancellationToken;
+	private TaskScheduler m_defaultScheduler;
+	private TaskCreationOptions m_defaultCreationOptions;
+	private TaskContinuationOptions m_defaultContinuationOptions;
 
 
 	public void .ctor() { }
@@ -220,8 +220,8 @@ public class TaskFactory // TypeDefIndex: 884
 
 internal sealed class TaskFactory.CompleteOnInvokePromise : Task<Task>, ITaskCompletionAction // TypeDefIndex: 885
 {
-	private IList<Task> _tasks; 
-	private int m_firstTaskAlreadyCompleted; 
+	private IList<Task> _tasks;
+	private int m_firstTaskAlreadyCompleted;
 
 
 	public void .ctor(IList<Task> tasks) { }

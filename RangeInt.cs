@@ -1,7 +1,7 @@
 public struct RangeInt // TypeDefIndex: 3523
 {
-	public int start; 
-	public int length; 
+	public int start;
+	public int length;
 
 	public int end { get; }
 

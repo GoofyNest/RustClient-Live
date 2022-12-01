@@ -1,14 +1,14 @@
-public class BossFormController : ArcadeEntityController // TypeDefIndex: 10485
+public class BossFormController : ArcadeEntityController // TypeDefIndex: 10489
 {
-	public float animationSpeed; 
-	public Sprite[] animationFrames; 
-	public Vector2 roamDistance; 
-	public Transform colliderParent; 
-	public BossFormController.BossDamagePoint[] damagePoints; 
-	public ArcadeEntityController flashController; 
-	public float health; 
-	private int currentFrame; 
-	private int animDirection; 
+	public float animationSpeed;
+	public Sprite[] animationFrames;
+	public Vector2 roamDistance;
+	public Transform colliderParent;
+	public BossFormController.BossDamagePoint[] damagePoints;
+	public ArcadeEntityController flashController;
+	public float health;
+	private int currentFrame;
+	private int animDirection;
 
 
 	public override void Initialize() { }
@@ -33,13 +33,13 @@ public class BossFormController : ArcadeEntityController // TypeDefIndex: 10485
 
 }
 
-public class BossFormController.BossDamagePoint // TypeDefIndex: 10486
+public class BossFormController.BossDamagePoint // TypeDefIndex: 10490
 {
-	public BoxCollider hitBox; 
-	public float health; 
-	public ArcadeEntityController damagePrefab; 
-	public ArcadeEntityController damageInstance; 
-	public bool destroyed; 
+	public BoxCollider hitBox;
+	public float health;
+	public ArcadeEntityController damagePrefab;
+	public ArcadeEntityController damageInstance;
+	public bool destroyed;
 
 
 	public void .ctor() { }

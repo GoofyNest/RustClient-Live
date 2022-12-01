@@ -1,10 +1,10 @@
-public class PlayingCard // TypeDefIndex: 13814
+public class PlayingCard // TypeDefIndex: 13830
 {
-	public readonly bool IsUnknownCard; 
-	public readonly Suit Suit; 
-	public readonly Rank Rank; 
-	public static PlayingCard[] cards; 
-	public static PlayingCard unknownCard; 
+	public readonly bool IsUnknownCard;
+	public readonly Suit Suit;
+	public readonly Rank Rank;
+	public static PlayingCard[] cards;
+	public static PlayingCard unknownCard;
 
 
 	private void .ctor(Suit suit, Rank rank) { }

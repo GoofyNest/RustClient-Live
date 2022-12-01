@@ -1,8 +1,8 @@
-internal struct CopyProductUserExternalAccountByIndexOptionsInternal : ISettable<CopyProductUserExternalAccountByIndexOptions>, IDisposable // TypeDefIndex: 9562
+internal struct CopyProductUserExternalAccountByIndexOptionsInternal : ISettable<CopyProductUserExternalAccountByIndexOptions>, IDisposable // TypeDefIndex: 9564
 {
-	private int m_ApiVersion; 
-	private IntPtr m_TargetUserId; 
-	private uint m_ExternalAccountInfoIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_TargetUserId;
+	private uint m_ExternalAccountInfoIndex;
 
 	public ProductUserId TargetUserId { set; }
 	public uint ExternalAccountInfoIndex { set; }

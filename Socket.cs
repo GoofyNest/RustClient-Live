@@ -1,9 +1,9 @@
 public class SocketAddress // TypeDefIndex: 2895
 {
-	internal int m_Size; 
-	internal byte[] m_Buffer; 
-	private bool m_changed; 
-	private int m_hash; 
+	internal int m_Size;
+	internal byte[] m_Buffer;
+	private bool m_changed;
+	private int m_hash;
 
 	public AddressFamily Family { get; }
 	public int Size { get; }
@@ -36,7 +36,7 @@ public class SocketAddress // TypeDefIndex: 2895
 
 public class SocketException : Win32Exception // TypeDefIndex: 3038
 {
-	private EndPoint m_EndPoint; 
+	private EndPoint m_EndPoint;
 
 	public override string Message { get; }
 	public SocketError SocketErrorCode { get; }
@@ -62,48 +62,48 @@ public class SocketException : Win32Exception // TypeDefIndex: 3038
 
 public class Socket : IDisposable // TypeDefIndex: 3047
 {
-	private static object s_InternalSyncObject; 
-	internal static bool s_SupportsIPv4; 
-	internal static bool s_SupportsIPv6; 
-	internal static bool s_OSSupportsIPv6; 
-	internal static bool s_Initialized; 
-	private static bool s_LoggingEnabled; 
-	private bool is_closed; 
-	private bool is_listening; 
-	private bool useOverlappedIO; 
-	private int linger_timeout; 
-	private AddressFamily addressFamily; 
-	private SocketType socketType; 
-	private ProtocolType protocolType; 
-	internal SafeSocketHandle m_Handle; 
-	internal EndPoint seed_endpoint; 
-	internal SemaphoreSlim ReadSem; 
-	internal SemaphoreSlim WriteSem; 
-	internal bool is_blocking; 
-	internal bool is_bound; 
-	internal bool is_connected; 
-	private int m_IntCleanedUp; 
-	internal bool connect_in_progress; 
-	private static AsyncCallback AcceptAsyncCallback; 
-	private static IOAsyncCallback BeginAcceptCallback; 
-	private static IOAsyncCallback BeginAcceptReceiveCallback; 
-	private static AsyncCallback ConnectAsyncCallback; 
-	private static IOAsyncCallback BeginConnectCallback; 
-	private static AsyncCallback DisconnectAsyncCallback; 
-	private static IOAsyncCallback BeginDisconnectCallback; 
-	private static AsyncCallback ReceiveAsyncCallback; 
-	private static IOAsyncCallback BeginReceiveCallback; 
-	private static IOAsyncCallback BeginReceiveGenericCallback; 
-	private static AsyncCallback ReceiveFromAsyncCallback; 
-	private static IOAsyncCallback BeginReceiveFromCallback; 
-	private static AsyncCallback SendAsyncCallback; 
-	private static IOAsyncCallback BeginSendGenericCallback; 
-	private static AsyncCallback SendToAsyncCallback; 
+	private static object s_InternalSyncObject;
+	internal static bool s_SupportsIPv4;
+	internal static bool s_SupportsIPv6;
+	internal static bool s_OSSupportsIPv6;
+	internal static bool s_Initialized;
+	private static bool s_LoggingEnabled;
+	private bool is_closed;
+	private bool is_listening;
+	private bool useOverlappedIO;
+	private int linger_timeout;
+	private AddressFamily addressFamily;
+	private SocketType socketType;
+	private ProtocolType protocolType;
+	internal SafeSocketHandle m_Handle;
+	internal EndPoint seed_endpoint;
+	internal SemaphoreSlim ReadSem;
+	internal SemaphoreSlim WriteSem;
+	internal bool is_blocking;
+	internal bool is_bound;
+	internal bool is_connected;
+	private int m_IntCleanedUp;
+	internal bool connect_in_progress;
+	private static AsyncCallback AcceptAsyncCallback;
+	private static IOAsyncCallback BeginAcceptCallback;
+	private static IOAsyncCallback BeginAcceptReceiveCallback;
+	private static AsyncCallback ConnectAsyncCallback;
+	private static IOAsyncCallback BeginConnectCallback;
+	private static AsyncCallback DisconnectAsyncCallback;
+	private static IOAsyncCallback BeginDisconnectCallback;
+	private static AsyncCallback ReceiveAsyncCallback;
+	private static IOAsyncCallback BeginReceiveCallback;
+	private static IOAsyncCallback BeginReceiveGenericCallback;
+	private static AsyncCallback ReceiveFromAsyncCallback;
+	private static IOAsyncCallback BeginReceiveFromCallback;
+	private static AsyncCallback SendAsyncCallback;
+	private static IOAsyncCallback BeginSendGenericCallback;
+	private static AsyncCallback SendToAsyncCallback;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static bool SupportsIPv4 { get; }
 	public static bool OSSupportsIPv4 { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static bool SupportsIPv6 { get; }
 	public static bool OSSupportsIPv6 { get; }
 	public IntPtr Handle { get; }
@@ -288,7 +288,7 @@ public class Socket : IDisposable // TypeDefIndex: 3047
 
 	public int Receive(byte[] buffer, int offset, int size, SocketFlags socketFlags, out SocketError errorCode) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public int Receive(IList<ArraySegment<byte>> buffers, SocketFlags socketFlags, out SocketError errorCode) { }
 
 	public IAsyncResult BeginReceive(byte[] buffer, int offset, int size, SocketFlags socketFlags, out SocketError errorCode, AsyncCallback callback, object state) { }
@@ -315,7 +315,7 @@ public class Socket : IDisposable // TypeDefIndex: 3047
 
 	public int Send(byte[] buffer, int offset, int size, SocketFlags socketFlags, out SocketError errorCode) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public int Send(IList<ArraySegment<byte>> buffers, SocketFlags socketFlags, out SocketError errorCode) { }
 
 	public IAsyncResult BeginSend(byte[] buffer, int offset, int size, SocketFlags socketFlags, out SocketError errorCode, AsyncCallback callback, object state) { }
@@ -406,16 +406,16 @@ public class Socket : IDisposable // TypeDefIndex: 3047
 
 private struct Socket.WSABUF // TypeDefIndex: 3048
 {
-	public int len; 
-	public IntPtr buf; 
+	public int len;
+	public IntPtr buf;
 
 }
 
 private sealed class Socket.<>c // TypeDefIndex: 3049
 {
-	public static readonly Socket.<>c <>9; 
-	public static IOAsyncCallback <>9__241_0; 
-	public static IOAsyncCallback <>9__253_0; 
+	public static readonly Socket.<>c <>9;
+	public static IOAsyncCallback <>9__241_0;
+	public static IOAsyncCallback <>9__253_0;
 
 
 	private static void .cctor() { }
@@ -460,7 +460,7 @@ private sealed class Socket.<>c // TypeDefIndex: 3049
 
 private sealed class Socket.<>c__DisplayClass242_0 // TypeDefIndex: 3050
 {
-	public int sent_so_far; 
+	public int sent_so_far;
 
 
 	public void .ctor() { }
@@ -471,7 +471,7 @@ private sealed class Socket.<>c__DisplayClass242_0 // TypeDefIndex: 3050
 
 private sealed class Socket.<>c__DisplayClass254_0 // TypeDefIndex: 3051
 {
-	public int sent_so_far; 
+	public int sent_so_far;
 
 
 	public void .ctor() { }
@@ -482,9 +482,9 @@ private sealed class Socket.<>c__DisplayClass254_0 // TypeDefIndex: 3051
 
 private sealed class Socket.<>c__DisplayClass298_0 // TypeDefIndex: 3052
 {
-	public Socket <>4__this; 
-	public IOSelectorJob job; 
-	public IntPtr handle; 
+	public Socket <>4__this;
+	public IOSelectorJob job;
+	public IntPtr handle;
 
 
 	public void .ctor() { }
@@ -495,7 +495,7 @@ private sealed class Socket.<>c__DisplayClass298_0 // TypeDefIndex: 3052
 
 public enum SocketError // TypeDefIndex: 3053
 {
-	public int value__; 
+	public int value__;
 	public const SocketError Success = 0;
 	public const SocketError SocketError = -1;
 	public const SocketError Interrupted = 10004;
@@ -548,7 +548,7 @@ public enum SocketError // TypeDefIndex: 3053
 
 public enum SocketFlags // TypeDefIndex: 3054
 {
-	public int value__; 
+	public int value__;
 	public const SocketFlags None = 0;
 	public const SocketFlags OutOfBand = 1;
 	public const SocketFlags Peek = 2;
@@ -564,7 +564,7 @@ public enum SocketFlags // TypeDefIndex: 3054
 
 public enum SocketOptionLevel // TypeDefIndex: 3055
 {
-	public int value__; 
+	public int value__;
 	public const SocketOptionLevel Socket = 65535;
 	public const SocketOptionLevel IP = 0;
 	public const SocketOptionLevel IPv6 = 41;
@@ -575,7 +575,7 @@ public enum SocketOptionLevel // TypeDefIndex: 3055
 
 public enum SocketOptionName // TypeDefIndex: 3056
 {
-	public int value__; 
+	public int value__;
 	public const SocketOptionName Debug = 1;
 	public const SocketOptionName AcceptConnection = 2;
 	public const SocketOptionName ReuseAddress = 4;
@@ -627,7 +627,7 @@ public enum SocketOptionName // TypeDefIndex: 3056
 
 public enum SocketShutdown // TypeDefIndex: 3057
 {
-	public int value__; 
+	public int value__;
 	public const SocketShutdown Receive = 0;
 	public const SocketShutdown Send = 1;
 	public const SocketShutdown Both = 2;
@@ -636,7 +636,7 @@ public enum SocketShutdown // TypeDefIndex: 3057
 
 public enum SocketType // TypeDefIndex: 3058
 {
-	public int value__; 
+	public int value__;
 	public const SocketType Stream = 1;
 	public const SocketType Dgram = 2;
 	public const SocketType Raw = 3;
@@ -648,33 +648,33 @@ public enum SocketType // TypeDefIndex: 3058
 
 public class SocketAsyncEventArgs : EventArgs // TypeDefIndex: 3063
 {
-	internal int in_progress; 
-	internal EndPoint remote_ep; 
-	internal Socket current_socket; 
-	[CompilerGeneratedAttribute] 
-	private Socket <AcceptSocket>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <BytesTransferred>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private SocketError <SocketError>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler<SocketAsyncEventArgs> Completed; 
+	internal int in_progress;
+	internal EndPoint remote_ep;
+	internal Socket current_socket;
+	[CompilerGeneratedAttribute]
+	private Socket <AcceptSocket>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <BytesTransferred>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private SocketError <SocketError>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventHandler<SocketAsyncEventArgs> Completed;
 
 	public Socket AcceptSocket { get; set; }
 	internal int BytesTransferred { set; }
 	public SocketError SocketError { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Socket get_AcceptSocket() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AcceptSocket(Socket value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_BytesTransferred(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketError(SocketError value) { }
 
 	internal void Complete() { }
@@ -685,24 +685,24 @@ public class SocketAsyncEventArgs : EventArgs // TypeDefIndex: 3063
 
 internal sealed class SocketAsyncResult : IOAsyncResult // TypeDefIndex: 3064
 {
-	public Socket socket; 
-	public SocketOperation operation; 
-	private Exception DelayedException; 
-	public EndPoint EndPoint; 
-	public byte[] Buffer; 
-	public int Offset; 
-	public int Size; 
-	public SocketFlags SockFlags; 
-	public Socket AcceptSocket; 
-	public IPAddress[] Addresses; 
-	public int Port; 
-	public IList<ArraySegment<byte>> Buffers; 
-	public bool ReuseSocket; 
-	public int CurrentAddress; 
-	public Socket AcceptedSocket; 
-	public int Total; 
-	internal int error; 
-	public int EndCalled; 
+	public Socket socket;
+	public SocketOperation operation;
+	private Exception DelayedException;
+	public EndPoint EndPoint;
+	public byte[] Buffer;
+	public int Offset;
+	public int Size;
+	public SocketFlags SockFlags;
+	public Socket AcceptSocket;
+	public IPAddress[] Addresses;
+	public int Port;
+	public IList<ArraySegment<byte>> Buffers;
+	public bool ReuseSocket;
+	public int CurrentAddress;
+	public Socket AcceptedSocket;
+	public int Total;
+	internal int error;
+	public int EndCalled;
 
 	public IntPtr Handle { get; }
 	public SocketError ErrorCode { get; }
@@ -736,8 +736,8 @@ internal sealed class SocketAsyncResult : IOAsyncResult // TypeDefIndex: 3064
 
 private sealed class SocketAsyncResult.<>c // TypeDefIndex: 3065
 {
-	public static readonly SocketAsyncResult.<>c <>9; 
-	public static WaitCallback <>9__27_0; 
+	public static readonly SocketAsyncResult.<>c <>9;
+	public static WaitCallback <>9__27_0;
 
 
 	private static void .cctor() { }
@@ -750,7 +750,7 @@ private sealed class SocketAsyncResult.<>c // TypeDefIndex: 3065
 
 internal enum SocketOperation // TypeDefIndex: 3066
 {
-	public int value__; 
+	public int value__;
 	public const SocketOperation Accept = 0;
 	public const SocketOperation Connect = 1;
 	public const SocketOperation Receive = 2;
@@ -779,28 +779,28 @@ public sealed class SocketElement : ConfigurationElement // TypeDefIndex: 3180
 
 public class SocketManager // TypeDefIndex: 5188
 {
-	[CompilerGeneratedAttribute] 
-	private ISocketManager <Interface>k__BackingField; 
-	public HashSet<Connection> Connecting; 
-	public HashSet<Connection> Connected; 
-	[CompilerGeneratedAttribute] 
-	private Socket <Socket>k__BackingField; 
-	internal HSteamNetPollGroup pollGroup; 
+	[CompilerGeneratedAttribute]
+	private ISocketManager <Interface>k__BackingField;
+	public HashSet<Connection> Connecting;
+	public HashSet<Connection> Connected;
+	[CompilerGeneratedAttribute]
+	private Socket <Socket>k__BackingField;
+	internal HSteamNetPollGroup pollGroup;
 
 	public ISocketManager Interface { get; set; }
 	public Socket Socket { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ISocketManager get_Interface() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Interface(ISocketManager value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Socket get_Socket() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Socket(Socket value) { }
 
 	public override string ToString() { }
@@ -827,9 +827,9 @@ public class SocketManager // TypeDefIndex: 5188
 
 }
 
-public struct Socket // TypeDefIndex: 5553
+public struct Socket // TypeDefIndex: 5555
 {
-	internal uint Id; 
+	internal uint Id;
 
 
 	public override string ToString() { }
@@ -840,14 +840,14 @@ public struct Socket // TypeDefIndex: 5553
 
 }
 
-public class SocketWrapper : ISocket // TypeDefIndex: 6959
+public class SocketWrapper : ISocket // TypeDefIndex: 6961
 {
-	private static readonly byte[] keepAliveValues; 
-	private readonly Socket _socket; 
-	private CancellationTokenSource _tokenSource; 
-	private TaskFactory _taskFactory; 
-	[CompilerGeneratedAttribute] 
-	private Stream <Stream>k__BackingField; 
+	private static readonly byte[] keepAliveValues;
+	private readonly Socket _socket;
+	private CancellationTokenSource _tokenSource;
+	private TaskFactory _taskFactory;
+	[CompilerGeneratedAttribute]
+	private Stream <Stream>k__BackingField;
 
 	public IPAddress RemoteIpAddress { get; }
 	public int RemotePort { get; }
@@ -873,10 +873,10 @@ public class SocketWrapper : ISocket // TypeDefIndex: 6959
 
 	public bool get_Connected() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Stream get_Stream() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Stream(Stream value) { }
 
 	public void set_NoDelay(bool value) { }
@@ -891,13 +891,13 @@ public class SocketWrapper : ISocket // TypeDefIndex: 6959
 
 }
 
-private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6960
+private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6962
 {
-	public SslStream ssl; 
-	public X509Certificate2 certificate; 
-	public SslProtocols enabledSslProtocols; 
-	public Action callback; 
-	public Action<Exception> error; 
+	public SslStream ssl;
+	public X509Certificate2 certificate;
+	public SslProtocols enabledSslProtocols;
+	public Action callback;
+	public Action<Exception> error;
 
 
 	public void .ctor() { }
@@ -912,11 +912,11 @@ private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6960
 
 }
 
-private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6961
+private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6963
 {
-	public SocketWrapper <>4__this; 
-	public Action<ISocket> callback; 
-	public Action<Exception> error; 
+	public SocketWrapper <>4__this;
+	public Action<ISocket> callback;
+	public Action<Exception> error;
 
 
 	public void .ctor() { }
@@ -931,28 +931,28 @@ private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6961
 
 }
 
-public struct SocketId // TypeDefIndex: 9007
+public struct SocketId // TypeDefIndex: 9009
 {
-	[CompilerGeneratedAttribute] 
-	private string <SocketName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <SocketName>k__BackingField;
 
 	public string SocketName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_SocketName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketName(string value) { }
 
 	internal void Set(ref SocketIdInternal other) { }
 
 }
 
-internal struct SocketIdInternal : IGettable<SocketId>, ISettable<SocketId>, IDisposable // TypeDefIndex: 9008
+internal struct SocketIdInternal : IGettable<SocketId>, ISettable<SocketId>, IDisposable // TypeDefIndex: 9010
 {
-	private int m_ApiVersion; 
-	private byte[] m_SocketName; 
+	private int m_ApiVersion;
+	private byte[] m_SocketName;
 
 	public string SocketName { get; set; }
 
@@ -971,7 +971,7 @@ internal struct SocketIdInternal : IGettable<SocketId>, ISettable<SocketId>, IDi
 
 }
 
-public class SocketHandle : PrefabAttribute // TypeDefIndex: 10815
+public class SocketHandle : PrefabAttribute // TypeDefIndex: 10819
 {
 
 	protected override Type GetIndexedType() { }
@@ -982,10 +982,10 @@ public class SocketHandle : PrefabAttribute // TypeDefIndex: 10815
 
 }
 
-public class SocketMod : PrefabAttribute // TypeDefIndex: 10816
+public class SocketMod : PrefabAttribute // TypeDefIndex: 10820
 {
-	public Socket_Base baseSocket; 
-	public Translate.Phrase FailedPhrase; 
+	public Socket_Base baseSocket;
+	public Translate.Phrase FailedPhrase;
 
 
 	public virtual bool DoCheck(Construction.Placement place) { }
@@ -998,12 +998,12 @@ public class SocketMod : PrefabAttribute // TypeDefIndex: 10816
 
 }
 
-public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 10817
+public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 10821
 {
-	public bool wantsAngle; 
-	public Vector3 worldNormal; 
-	public float withinDegrees; 
-	public static Translate.Phrase ErrorPhrase; 
+	public bool wantsAngle;
+	public Vector3 worldNormal;
+	public float withinDegrees;
+	public static Translate.Phrase ErrorPhrase;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1016,11 +1016,11 @@ public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 10817
 
 }
 
-public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 10818
+public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 10822
 {
-	public Bounds bounds; 
-	public LayerMask layerMask; 
-	public bool wantsInside; 
+	public Bounds bounds;
+	public LayerMask layerMask;
+	public bool wantsInside;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1035,14 +1035,14 @@ public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 10818
 
 }
 
-public class SocketMod_Attraction : SocketMod // TypeDefIndex: 10819
+public class SocketMod_Attraction : SocketMod // TypeDefIndex: 10823
 {
-	public float outerRadius; 
-	public float innerRadius; 
-	public string groupName; 
-	public bool lockRotation; 
-	public bool ignoreRotationForRadiusCheck; 
-	public static TimeSince LastSnap; 
+	public float outerRadius;
+	public float innerRadius;
+	public string groupName;
+	public bool lockRotation;
+	public bool ignoreRotationForRadiusCheck;
+	public static TimeSince LastSnap;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1055,12 +1055,12 @@ public class SocketMod_Attraction : SocketMod // TypeDefIndex: 10819
 
 }
 
-public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 10820
+public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 10824
 {
-	public float sphereRadius; 
-	public LayerMask layerMask; 
-	public QueryTriggerInteraction queryTriggers; 
-	public bool wantsCollide; 
+	public float sphereRadius;
+	public LayerMask layerMask;
+	public QueryTriggerInteraction queryTriggers;
+	public bool wantsCollide;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1071,13 +1071,13 @@ public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 10820
 
 }
 
-public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 10821
+public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 10825
 {
-	public float sphereRadius; 
-	public LayerMask layerMask; 
-	public QueryTriggerInteraction queryTriggers; 
-	public BaseEntity[] entityTypes; 
-	public bool wantsCollide; 
+	public float sphereRadius;
+	public LayerMask layerMask;
+	public QueryTriggerInteraction queryTriggers;
+	public BaseEntity[] entityTypes;
+	public bool wantsCollide;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1088,9 +1088,9 @@ public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 10821
 
 }
 
-private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex: 10822
+private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex: 10826
 {
-	public BaseEntity ent; 
+	public BaseEntity ent;
 
 
 	public void .ctor() { }
@@ -1099,13 +1099,13 @@ private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex:
 
 }
 
-public class SocketMod_EntityType : SocketMod // TypeDefIndex: 10823
+public class SocketMod_EntityType : SocketMod // TypeDefIndex: 10827
 {
-	public float sphereRadius; 
-	public LayerMask layerMask; 
-	public QueryTriggerInteraction queryTriggers; 
-	public BaseEntity searchType; 
-	public bool wantsCollide; 
+	public float sphereRadius;
+	public LayerMask layerMask;
+	public QueryTriggerInteraction queryTriggers;
+	public BaseEntity searchType;
+	public bool wantsCollide;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1116,9 +1116,9 @@ public class SocketMod_EntityType : SocketMod // TypeDefIndex: 10823
 
 }
 
-public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 10824
+public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 10828
 {
-	public float spotSize; 
+	public float spotSize;
 
 
 	private void OnDrawGizmos() { }
@@ -1129,11 +1129,11 @@ public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 10824
 
 }
 
-public class SocketMod_InWater : SocketMod // TypeDefIndex: 10825
+public class SocketMod_InWater : SocketMod // TypeDefIndex: 10829
 {
-	public bool wantsInWater; 
-	public static Translate.Phrase WantsWaterPhrase; 
-	public static Translate.Phrase NoWaterPhrase; 
+	public bool wantsInWater;
+	public static Translate.Phrase WantsWaterPhrase;
+	public static Translate.Phrase NoWaterPhrase;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1146,10 +1146,10 @@ public class SocketMod_InWater : SocketMod // TypeDefIndex: 10825
 
 }
 
-public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 10826
+public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 10830
 {
-	public PhysicMaterial[] ValidMaterials; 
-	private PhysicMaterial foundMaterial; 
+	public PhysicMaterial[] ValidMaterials;
+	private PhysicMaterial foundMaterial;
 
 
 	public override bool DoCheck(Construction.Placement place) { }
@@ -1158,12 +1158,12 @@ public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 10826
 
 }
 
-public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 10827
+public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 10831
 {
-	public float sphereRadius; 
-	public LayerMask layerMask; 
-	public QueryTriggerInteraction queryTriggers; 
-	public bool wantsCollide; 
+	public float sphereRadius;
+	public LayerMask layerMask;
+	public QueryTriggerInteraction queryTriggers;
+	public bool wantsCollide;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1174,13 +1174,13 @@ public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 10827
 
 }
 
-public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 10828
+public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 10832
 {
-	public float sphereRadius; 
-	public LayerMask layerMask; 
-	public bool wantsCollide; 
-	public static Translate.Phrase Error_WantsCollideConstruction; 
-	public static Translate.Phrase Error_DoesNotWantCollideConstruction; 
+	public float sphereRadius;
+	public LayerMask layerMask;
+	public bool wantsCollide;
+	public static Translate.Phrase Error_WantsCollideConstruction;
+	public static Translate.Phrase Error_DoesNotWantCollideConstruction;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1193,9 +1193,9 @@ public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 10828
 
 }
 
-public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 10829
+public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 10833
 {
-	public bool wantsInTerrain; 
+	public bool wantsInTerrain;
 
 
 	private void OnDrawGizmos() { }
@@ -1208,13 +1208,13 @@ public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 10829
 
 }
 
-public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 10830
+public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 10834
 {
-	public float MinimumWaterDepth; 
-	public float MaximumWaterDepth; 
-	public bool AllowWaterVolumes; 
-	public static Translate.Phrase TooDeepPhrase; 
-	public static Translate.Phrase TooShallowPhrase; 
+	public float MinimumWaterDepth;
+	public float MaximumWaterDepth;
+	public bool AllowWaterVolumes;
+	public static Translate.Phrase TooDeepPhrase;
+	public static Translate.Phrase TooShallowPhrase;
 
 
 	public override bool DoCheck(Construction.Placement place) { }
@@ -1225,20 +1225,22 @@ public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 10830
 
 }
 
-public class Socket_Base : PrefabAttribute // TypeDefIndex: 10831
+public class Socket_Base : PrefabAttribute // TypeDefIndex: 10835
 {
-	public bool male; 
-	public bool maleDummy; 
-	public bool female; 
-	public bool femaleDummy; 
-	public bool monogamous; 
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 selectSize; 
-	public Vector3 selectCenter; 
-	[ReadOnlyAttribute] 
-	public string socketName; 
-	public SocketMod[] socketMods; 
+	public bool male;
+	public bool maleDummy;
+	public bool female;
+	public bool femaleDummy;
+	public bool femaleNoStability;
+	public bool monogamous;
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 selectSize;
+	public Vector3 selectCenter;
+	[ReadOnlyAttribute]
+	public string socketName;
+	public SocketMod[] socketMods;
+	public Socket_Base.OccupiedSocketCheck[] checkOccupiedSockets;
 
 
 	public Vector3 GetSelectPivot(Vector3 position, Quaternion rotation) { }
@@ -1263,11 +1265,21 @@ public class Socket_Base : PrefabAttribute // TypeDefIndex: 10831
 
 }
 
-public class Socket_Free : Socket_Base // TypeDefIndex: 10832
+public class Socket_Base.OccupiedSocketCheck // TypeDefIndex: 10836
 {
-	public Vector3 idealPlacementNormal; 
-	public bool useTargetNormal; 
-	public bool blendAimAngle; 
+	public Socket_Base Socket;
+	public bool FemaleDummy;
+
+
+	public void .ctor() { }
+
+}
+
+public class Socket_Free : Socket_Base // TypeDefIndex: 10837
+{
+	public Vector3 idealPlacementNormal;
+	public bool useTargetNormal;
+	public bool blendAimAngle;
 
 
 	private void OnDrawGizmosSelected() { }
@@ -1280,10 +1292,10 @@ public class Socket_Free : Socket_Base // TypeDefIndex: 10832
 
 }
 
-public class Socket_Specific : Socket_Base // TypeDefIndex: 10833
+public class Socket_Specific : Socket_Base // TypeDefIndex: 10838
 {
-	public bool useFemaleRotation; 
-	public string targetSocketName; 
+	public bool useFemaleRotation;
+	public string targetSocketName;
 
 
 	private void OnDrawGizmos() { }
@@ -1296,11 +1308,11 @@ public class Socket_Specific : Socket_Base // TypeDefIndex: 10833
 
 }
 
-public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 10834
+public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 10839
 {
-	public int rotationDegrees; 
-	public int rotationOffset; 
-	public string[] allowedMaleSockets; 
+	public int rotationDegrees;
+	public int rotationOffset;
+	public string[] allowedMaleSockets;
 
 
 	private void OnDrawGizmos() { }
@@ -1313,10 +1325,10 @@ public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 10834
 
 }
 
-public class Socket_Terrain : Socket_Base // TypeDefIndex: 10835
+public class Socket_Terrain : Socket_Base // TypeDefIndex: 10840
 {
-	public float placementHeight; 
-	public bool alignToNormal; 
+	public float placementHeight;
+	public bool alignToNormal;
 
 
 	private void OnDrawGizmos() { }

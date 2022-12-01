@@ -1,12 +1,12 @@
-public class FlasherLight : IOEntity // TypeDefIndex: 10436
+public class FlasherLight : IOEntity // TypeDefIndex: 10440
 {
-	public EmissionToggle toggler; 
-	public Light myLight; 
-	public float flashSpacing; 
-	public float flashBurstSpacing; 
-	public float flashOnTime; 
-	public int numFlashesPerBurst; 
-	private int flashBurstCount; 
+	public EmissionToggle toggler;
+	public Light myLight;
+	public float flashSpacing;
+	public float flashBurstSpacing;
+	public float flashOnTime;
+	public int numFlashesPerBurst;
+	private int flashBurstCount;
 
 
 	public override void ResetState() { }

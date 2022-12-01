@@ -1,8 +1,8 @@
 public class GroupCollection : ICollection, IEnumerable // TypeDefIndex: 2617
 {
-	internal Match _match; 
-	internal Hashtable _captureMap; 
-	internal Group[] _groups; 
+	internal Match _match;
+	internal Hashtable _captureMap;
+	internal Group[] _groups;
 
 	public object SyncRoot { get; }
 	public int Count { get; }

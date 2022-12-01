@@ -1,11 +1,11 @@
-public class SkeletonSkin : MonoBehaviour // TypeDefIndex: 7365
+public class SkeletonSkin : MonoBehaviour // TypeDefIndex: 7367
 {
-	public SkinnedMeshRenderer SkinnedMeshRenderer; 
-	public SkeletonDefinition SkeletonDefinition; 
-	public int LOD; 
-	public int RootBone; 
-	public int[] TargetBones; 
-	public Transform[] BoneTransforms; 
+	public SkinnedMeshRenderer SkinnedMeshRenderer;
+	public SkeletonDefinition SkeletonDefinition;
+	public int LOD;
+	public int RootBone;
+	public int[] TargetBones;
+	public Transform[] BoneTransforms;
 
 
 	public void Retarget(Skeleton target) { }

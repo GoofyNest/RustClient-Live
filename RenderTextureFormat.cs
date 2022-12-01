@@ -1,6 +1,6 @@
 public enum RenderTextureFormat // TypeDefIndex: 3429
 {
-	public int value__; 
+	public int value__;
 	public const RenderTextureFormat ARGB32 = 0;
 	public const RenderTextureFormat Depth = 1;
 	public const RenderTextureFormat ARGBHalf = 2;

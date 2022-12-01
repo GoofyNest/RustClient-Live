@@ -1,23 +1,23 @@
 internal sealed class ExpressionParser // TypeDefIndex: 4256
 {
-	private static readonly ExpressionParser.ReservedWords[] s_reservedwords; 
-	private char _escape; 
-	private char _decimalSeparator; 
-	private char _listSeparator; 
-	private char _exponentL; 
-	private char _exponentU; 
-	internal char[] _text; 
-	internal int _pos; 
-	internal int _start; 
-	internal Tokens _token; 
-	internal int _op; 
-	internal OperatorInfo[] _ops; 
-	internal int _topOperator; 
-	internal int _topNode; 
-	private readonly DataTable _table; 
-	internal ExpressionNode[] _nodeStack; 
-	internal int _prevOperand; 
-	internal ExpressionNode _expression; 
+	private static readonly ExpressionParser.ReservedWords[] s_reservedwords;
+	private char _escape;
+	private char _decimalSeparator;
+	private char _listSeparator;
+	private char _exponentL;
+	private char _exponentU;
+	internal char[] _text;
+	internal int _pos;
+	internal int _start;
+	internal Tokens _token;
+	internal int _op;
+	internal OperatorInfo[] _ops;
+	internal int _topOperator;
+	internal int _topNode;
+	private readonly DataTable _table;
+	internal ExpressionNode[] _nodeStack;
+	internal int _prevOperand;
+	internal ExpressionNode _expression;
 
 
 	internal void .ctor(DataTable table) { }
@@ -74,9 +74,9 @@ internal sealed class ExpressionParser // TypeDefIndex: 4256
 
 private struct ExpressionParser.ReservedWords // TypeDefIndex: 4257
 {
-	internal readonly string _word; 
-	internal readonly Tokens _token; 
-	internal readonly int _op; 
+	internal readonly string _word;
+	internal readonly Tokens _token;
+	internal readonly int _op;
 
 
 	internal void .ctor(string word, Tokens token, int op) { }

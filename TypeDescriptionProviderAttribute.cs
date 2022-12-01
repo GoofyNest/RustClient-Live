@@ -1,6 +1,6 @@
 public sealed class TypeDescriptionProviderAttribute : Attribute // TypeDefIndex: 2757
 {
-	private string _typeName; 
+	private string _typeName;
 
 	public string TypeName { get; }
 

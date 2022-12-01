@@ -1,7 +1,7 @@
 internal sealed class SharedReference // TypeDefIndex: 2603
 {
-	private WeakReference _ref; 
-	private int _locked; 
+	private WeakReference _ref;
+	private int _locked;
 
 
 	internal object Get() { }

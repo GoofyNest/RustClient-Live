@@ -1,10 +1,10 @@
-public class WaterVolume : TriggerBase // TypeDefIndex: 11801
+public class WaterVolume : TriggerBase // TypeDefIndex: 11808
 {
-	public Bounds WaterBounds; 
-	private OBB cachedBounds; 
-	private Transform cachedTransform; 
-	public Transform[] cutOffPlanes; 
-	public bool waterEnabled; 
+	public Bounds WaterBounds;
+	private OBB cachedBounds;
+	private Transform cachedTransform;
+	public Transform[] cutOffPlanes;
+	public bool waterEnabled;
 
 
 	private void OnEnable() { }

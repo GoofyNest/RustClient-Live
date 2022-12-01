@@ -1,6 +1,6 @@
-public static class ManagedNoise // TypeDefIndex: 12038
+public static class ManagedNoise // TypeDefIndex: 12045
 {
-	private static readonly int[] hash; 
+	private static readonly int[] hash;
 	private const int hashMask = 255;
 	private const double sqrt2 = 1,4142135623731;
 	private const double rsqrt2 = 0,707106781186548;
@@ -9,10 +9,10 @@ public static class ManagedNoise // TypeDefIndex: 12038
 	private const double simplexScale1D = 2,40740740740741;
 	private const double simplexScale2D = 32,9907739830396;
 	private const double gradientScale2D = 4;
-	private static double[] gradients1D; 
+	private static double[] gradients1D;
 	private const int gradientsMask1D = 1;
-	private static double[] gradients2Dx; 
-	private static double[] gradients2Dy; 
+	private static double[] gradients2Dx;
+	private static double[] gradients2Dy;
 	private const int gradientsMask2D = 7;
 
 

@@ -1,8 +1,8 @@
-public class ComputerStation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6383
+public class ComputerStation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6385
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string bookmarks; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string bookmarks;
 
 
 	public static void ResetToPool(ComputerStation instance) { }
@@ -59,21 +59,21 @@ public class ComputerStation : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class ComputerStation : BaseMountable // TypeDefIndex: 10282
+public class ComputerStation : BaseMountable // TypeDefIndex: 10285
 {
-	[HeaderAttribute] 
-	public GameObjectRef menuPrefab; 
-	public ComputerMenu computerMenu; 
-	public EntityRef currentlyControllingEnt; 
-	public Dictionary<string, uint> controlBookmarks; 
-	public Transform leftHandIKPosition; 
-	public Transform rightHandIKPosition; 
-	public SoundDefinition turnOnSoundDef; 
-	public SoundDefinition turnOffSoundDef; 
-	public SoundDefinition onLoopSoundDef; 
-	public bool isStatic; 
-	public float autoGatherRadius; 
-	private Sound onLoopSound; 
+	[HeaderAttribute]
+	public GameObjectRef menuPrefab;
+	public ComputerMenu computerMenu;
+	public EntityRef currentlyControllingEnt;
+	public Dictionary<string, uint> controlBookmarks;
+	public Transform leftHandIKPosition;
+	public Transform rightHandIKPosition;
+	public SoundDefinition turnOnSoundDef;
+	public SoundDefinition turnOffSoundDef;
+	public SoundDefinition onLoopSoundDef;
+	public bool isStatic;
+	public float autoGatherRadius;
+	private Sound onLoopSound;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -86,7 +86,7 @@ public class ComputerStation : BaseMountable // TypeDefIndex: 10282
 
 	public override Quaternion GetMountedRotation() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void ReceiveBookmarks(BaseEntity.RPCMessage msg) { }
 
 	public override void PlayerDismounted(BasePlayer player, bool wasSwap) { }

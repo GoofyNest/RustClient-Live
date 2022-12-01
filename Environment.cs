@@ -1,8 +1,8 @@
 public static class Environment // TypeDefIndex: 340
 {
 	private const int mono_corlib_version = 1051100001;
-	private static string nl; 
-	private static OperatingSystem os; 
+	private static string nl;
+	private static OperatingSystem os;
 
 	public static string CurrentDirectory { get; }
 	public static int CurrentManagedThreadId { get; }
@@ -113,7 +113,7 @@ public static class Environment // TypeDefIndex: 340
 
 public enum Environment.SpecialFolder // TypeDefIndex: 341
 {
-	public int value__; 
+	public int value__;
 	public const Environment.SpecialFolder MyDocuments = 5;
 	public const Environment.SpecialFolder Desktop = 0;
 	public const Environment.SpecialFolder MyComputer = 17;
@@ -166,23 +166,23 @@ public enum Environment.SpecialFolder // TypeDefIndex: 341
 
 public enum Environment.SpecialFolderOption // TypeDefIndex: 342
 {
-	public int value__; 
+	public int value__;
 	public const Environment.SpecialFolderOption None = 0;
 	public const Environment.SpecialFolderOption DoNotVerify = 16384;
 	public const Environment.SpecialFolderOption Create = 32768;
 
 }
 
-public class Environment : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
+public class Environment : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6307
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public long dateTime; 
-	public float clouds; 
-	public float fog; 
-	public float wind; 
-	public float rain; 
-	public float engineTime; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public long dateTime;
+	public float clouds;
+	public float fog;
+	public float wind;
+	public float rain;
+	public float engineTime;
 
 
 	public static void ResetToPool(Environment instance) { }

@@ -1,10 +1,10 @@
-internal struct KeyImageInfoInternal : IGettable<KeyImageInfo>, ISettable<KeyImageInfo>, IDisposable // TypeDefIndex: 9480
+internal struct KeyImageInfoInternal : IGettable<KeyImageInfo>, ISettable<KeyImageInfo>, IDisposable // TypeDefIndex: 9482
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Type; 
-	private IntPtr m_Url; 
-	private uint m_Width; 
-	private uint m_Height; 
+	private int m_ApiVersion;
+	private IntPtr m_Type;
+	private IntPtr m_Url;
+	private uint m_Width;
+	private uint m_Height;
 
 	public Utf8String Type { get; set; }
 	public Utf8String Url { get; set; }

@@ -1,6 +1,6 @@
 public static class SecurityManager // TypeDefIndex: 908
 {
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static bool SecurityEnabled { get; }
 
 

@@ -1,6 +1,6 @@
 internal static class UnityTls // TypeDefIndex: 2457
 {
-	private static UnityTls.unitytls_interface_struct marshalledInterface; 
+	private static UnityTls.unitytls_interface_struct marshalledInterface;
 
 	public static bool IsSupported { get; }
 	public static UnityTls.unitytls_interface_struct NativeInterface { get; }
@@ -16,7 +16,7 @@ internal static class UnityTls // TypeDefIndex: 2457
 
 public enum UnityTls.unitytls_error_code // TypeDefIndex: 2458
 {
-	public uint value__; 
+	public uint value__;
 	public const UnityTls.unitytls_error_code UNITYTLS_SUCCESS = 0;
 	public const UnityTls.unitytls_error_code UNITYTLS_INVALID_ARGUMENT = 1;
 	public const UnityTls.unitytls_error_code UNITYTLS_INVALID_FORMAT = 2;
@@ -39,9 +39,9 @@ public enum UnityTls.unitytls_error_code // TypeDefIndex: 2458
 
 public struct UnityTls.unitytls_errorstate // TypeDefIndex: 2459
 {
-	private uint magic; 
-	public UnityTls.unitytls_error_code code; 
-	private ulong reserved; 
+	private uint magic;
+	public UnityTls.unitytls_error_code code;
+	private ulong reserved;
 
 }
 
@@ -49,13 +49,13 @@ public struct UnityTls.unitytls_key_ref // TypeDefIndex: 2461
 {
 
 public struct UnityTls.unitytls_key_ref
-	public ulong handle; 
+	public ulong handle;
 
 }
 
 public struct UnityTls.unitytls_x509_ref // TypeDefIndex: 2462
 {
-	public ulong handle; 
+	public ulong handle;
 
 }
 
@@ -63,13 +63,13 @@ public struct UnityTls.unitytls_x509list_ref // TypeDefIndex: 2464
 {
 
 public struct UnityTls.unitytls_x509list_ref
-	public ulong handle; 
+	public ulong handle;
 
 }
 
 public enum UnityTls.unitytls_x509verify_result // TypeDefIndex: 2465
 {
-	public uint value__; 
+	public uint value__;
 	public const UnityTls.unitytls_x509verify_result UNITYTLS_X509VERIFY_SUCCESS = 0;
 	public const UnityTls.unitytls_x509verify_result UNITYTLS_X509VERIFY_NOT_DONE = 2147483648;
 	public const UnityTls.unitytls_x509verify_result UNITYTLS_X509VERIFY_FATAL_ERROR = 4294967295;
@@ -108,14 +108,14 @@ public enum UnityTls.unitytls_ciphersuite // TypeDefIndex: 2469
 public struct UnityTls.unitytls_x509name
 
 public enum UnityTls.unitytls_ciphersuite
-	public uint value__; 
+	public uint value__;
 	public const UnityTls.unitytls_ciphersuite UNITYTLS_CIPHERSUITE_INVALID = 16777215;
 
 }
 
 public enum UnityTls.unitytls_protocol // TypeDefIndex: 2470
 {
-	public uint value__; 
+	public uint value__;
 	public const UnityTls.unitytls_protocol UNITYTLS_PROTOCOL_TLS_1_0 = 0;
 	public const UnityTls.unitytls_protocol UNITYTLS_PROTOCOL_TLS_1_1 = 1;
 	public const UnityTls.unitytls_protocol UNITYTLS_PROTOCOL_TLS_1_2 = 2;
@@ -125,8 +125,8 @@ public enum UnityTls.unitytls_protocol // TypeDefIndex: 2470
 
 public struct UnityTls.unitytls_tlsctx_protocolrange // TypeDefIndex: 2471
 {
-	public UnityTls.unitytls_protocol min; 
-	public UnityTls.unitytls_protocol max; 
+	public UnityTls.unitytls_protocol min;
+	public UnityTls.unitytls_protocol max;
 
 }
 
@@ -197,47 +197,47 @@ public sealed class UnityTls.unitytls_tlsctx_x509verify_callback : MulticastDele
 
 public struct UnityTls.unitytls_tlsctx_callbacks // TypeDefIndex: 2477
 {
-	public UnityTls.unitytls_tlsctx_read_callback read; 
-	public UnityTls.unitytls_tlsctx_write_callback write; 
-	public void* data; 
+	public UnityTls.unitytls_tlsctx_read_callback read;
+	public UnityTls.unitytls_tlsctx_write_callback write;
+	public void* data;
 
 }
 
 public class UnityTls.unitytls_interface_struct // TypeDefIndex: 2478
 {
-	public readonly ulong UNITYTLS_INVALID_HANDLE; 
-	public readonly UnityTls.unitytls_tlsctx_protocolrange UNITYTLS_TLSCTX_PROTOCOLRANGE_DEFAULT; 
-	public UnityTls.unitytls_interface_struct.unitytls_errorstate_create_t unitytls_errorstate_create; 
-	public UnityTls.unitytls_interface_struct.unitytls_errorstate_raise_error_t unitytls_errorstate_raise_error; 
-	public UnityTls.unitytls_interface_struct.unitytls_key_get_ref_t unitytls_key_get_ref; 
-	public UnityTls.unitytls_interface_struct.unitytls_key_parse_der_t unitytls_key_parse_der; 
-	public UnityTls.unitytls_interface_struct.unitytls_key_parse_pem_t unitytls_key_parse_pem; 
-	public UnityTls.unitytls_interface_struct.unitytls_key_free_t unitytls_key_free; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509_export_der_t unitytls_x509_export_der; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_get_ref_t unitytls_x509list_get_ref; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_get_x509_t unitytls_x509list_get_x509; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_create_t unitytls_x509list_create; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_append_t unitytls_x509list_append; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_append_der_t unitytls_x509list_append_der; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_append_der_t unitytls_x509list_append_pem; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509list_free_t unitytls_x509list_free; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509verify_default_ca_t unitytls_x509verify_default_ca; 
-	public UnityTls.unitytls_interface_struct.unitytls_x509verify_explicit_ca_t unitytls_x509verify_explicit_ca; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_server_t unitytls_tlsctx_create_server; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_client_t unitytls_tlsctx_create_client; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_server_require_client_authentication_t unitytls_tlsctx_server_require_client_authentication; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_certificate_callback_t unitytls_tlsctx_set_certificate_callback; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_trace_callback_t unitytls_tlsctx_set_trace_callback; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_x509verify_callback_t unitytls_tlsctx_set_x509verify_callback; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_supported_ciphersuites_t unitytls_tlsctx_set_supported_ciphersuites; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_ciphersuite_t unitytls_tlsctx_get_ciphersuite; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_protocol_t unitytls_tlsctx_get_protocol; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_process_handshake_t unitytls_tlsctx_process_handshake; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_read_t unitytls_tlsctx_read; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_write_t unitytls_tlsctx_write; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_notify_close_t unitytls_tlsctx_notify_close; 
-	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_free_t unitytls_tlsctx_free; 
-	public UnityTls.unitytls_interface_struct.unitytls_random_generate_bytes_t unitytls_random_generate_bytes; 
+	public readonly ulong UNITYTLS_INVALID_HANDLE;
+	public readonly UnityTls.unitytls_tlsctx_protocolrange UNITYTLS_TLSCTX_PROTOCOLRANGE_DEFAULT;
+	public UnityTls.unitytls_interface_struct.unitytls_errorstate_create_t unitytls_errorstate_create;
+	public UnityTls.unitytls_interface_struct.unitytls_errorstate_raise_error_t unitytls_errorstate_raise_error;
+	public UnityTls.unitytls_interface_struct.unitytls_key_get_ref_t unitytls_key_get_ref;
+	public UnityTls.unitytls_interface_struct.unitytls_key_parse_der_t unitytls_key_parse_der;
+	public UnityTls.unitytls_interface_struct.unitytls_key_parse_pem_t unitytls_key_parse_pem;
+	public UnityTls.unitytls_interface_struct.unitytls_key_free_t unitytls_key_free;
+	public UnityTls.unitytls_interface_struct.unitytls_x509_export_der_t unitytls_x509_export_der;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_get_ref_t unitytls_x509list_get_ref;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_get_x509_t unitytls_x509list_get_x509;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_create_t unitytls_x509list_create;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_append_t unitytls_x509list_append;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_append_der_t unitytls_x509list_append_der;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_append_der_t unitytls_x509list_append_pem;
+	public UnityTls.unitytls_interface_struct.unitytls_x509list_free_t unitytls_x509list_free;
+	public UnityTls.unitytls_interface_struct.unitytls_x509verify_default_ca_t unitytls_x509verify_default_ca;
+	public UnityTls.unitytls_interface_struct.unitytls_x509verify_explicit_ca_t unitytls_x509verify_explicit_ca;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_server_t unitytls_tlsctx_create_server;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_client_t unitytls_tlsctx_create_client;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_server_require_client_authentication_t unitytls_tlsctx_server_require_client_authentication;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_certificate_callback_t unitytls_tlsctx_set_certificate_callback;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_trace_callback_t unitytls_tlsctx_set_trace_callback;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_x509verify_callback_t unitytls_tlsctx_set_x509verify_callback;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_supported_ciphersuites_t unitytls_tlsctx_set_supported_ciphersuites;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_ciphersuite_t unitytls_tlsctx_get_ciphersuite;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_protocol_t unitytls_tlsctx_get_protocol;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_process_handshake_t unitytls_tlsctx_process_handshake;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_read_t unitytls_tlsctx_read;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_write_t unitytls_tlsctx_write;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_notify_close_t unitytls_tlsctx_notify_close;
+	public UnityTls.unitytls_interface_struct.unitytls_tlsctx_free_t unitytls_tlsctx_free;
+	public UnityTls.unitytls_interface_struct.unitytls_random_generate_bytes_t unitytls_random_generate_bytes;
 
 
 	public void .ctor() { }

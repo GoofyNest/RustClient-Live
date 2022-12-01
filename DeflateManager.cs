@@ -1,79 +1,79 @@
-internal sealed class DeflateManager // TypeDefIndex: 6980
+internal sealed class DeflateManager // TypeDefIndex: 6982
 {
-	private static readonly int MEM_LEVEL_MAX; 
-	private static readonly int MEM_LEVEL_DEFAULT; 
-	private DeflateManager.CompressFunc DeflateFunction; 
-	private static readonly string[] _ErrorMessage; 
-	private static readonly int PRESET_DICT; 
-	private static readonly int INIT_STATE; 
-	private static readonly int BUSY_STATE; 
-	private static readonly int FINISH_STATE; 
-	private static readonly int Z_DEFLATED; 
-	private static readonly int STORED_BLOCK; 
-	private static readonly int STATIC_TREES; 
-	private static readonly int DYN_TREES; 
-	private static readonly int Z_BINARY; 
-	private static readonly int Z_ASCII; 
-	private static readonly int Z_UNKNOWN; 
-	private static readonly int Buf_size; 
-	private static readonly int MIN_MATCH; 
-	private static readonly int MAX_MATCH; 
-	private static readonly int MIN_LOOKAHEAD; 
-	private static readonly int HEAP_SIZE; 
-	private static readonly int END_BLOCK; 
-	internal ZlibCodec _codec; 
-	internal int status; 
-	internal byte[] pending; 
-	internal int nextPending; 
-	internal int pendingCount; 
-	internal sbyte data_type; 
-	internal int last_flush; 
-	internal int w_size; 
-	internal int w_bits; 
-	internal int w_mask; 
-	internal byte[] window; 
-	internal int window_size; 
-	internal short[] prev; 
-	internal short[] head; 
-	internal int ins_h; 
-	internal int hash_size; 
-	internal int hash_bits; 
-	internal int hash_mask; 
-	internal int hash_shift; 
-	internal int block_start; 
-	private DeflateManager.Config config; 
-	internal int match_length; 
-	internal int prev_match; 
-	internal int match_available; 
-	internal int strstart; 
-	internal int match_start; 
-	internal int lookahead; 
-	internal int prev_length; 
-	internal CompressionLevel compressionLevel; 
-	internal CompressionStrategy compressionStrategy; 
-	internal short[] dyn_ltree; 
-	internal short[] dyn_dtree; 
-	internal short[] bl_tree; 
-	internal Tree treeLiterals; 
-	internal Tree treeDistances; 
-	internal Tree treeBitLengths; 
-	internal short[] bl_count; 
-	internal int[] heap; 
-	internal int heap_len; 
-	internal int heap_max; 
-	internal sbyte[] depth; 
-	internal int _lengthOffset; 
-	internal int lit_bufsize; 
-	internal int last_lit; 
-	internal int _distanceOffset; 
-	internal int opt_len; 
-	internal int static_len; 
-	internal int matches; 
-	internal int last_eob_len; 
-	internal short bi_buf; 
-	internal int bi_valid; 
-	private bool Rfc1950BytesEmitted; 
-	private bool _WantRfc1950HeaderBytes; 
+	private static readonly int MEM_LEVEL_MAX;
+	private static readonly int MEM_LEVEL_DEFAULT;
+	private DeflateManager.CompressFunc DeflateFunction;
+	private static readonly string[] _ErrorMessage;
+	private static readonly int PRESET_DICT;
+	private static readonly int INIT_STATE;
+	private static readonly int BUSY_STATE;
+	private static readonly int FINISH_STATE;
+	private static readonly int Z_DEFLATED;
+	private static readonly int STORED_BLOCK;
+	private static readonly int STATIC_TREES;
+	private static readonly int DYN_TREES;
+	private static readonly int Z_BINARY;
+	private static readonly int Z_ASCII;
+	private static readonly int Z_UNKNOWN;
+	private static readonly int Buf_size;
+	private static readonly int MIN_MATCH;
+	private static readonly int MAX_MATCH;
+	private static readonly int MIN_LOOKAHEAD;
+	private static readonly int HEAP_SIZE;
+	private static readonly int END_BLOCK;
+	internal ZlibCodec _codec;
+	internal int status;
+	internal byte[] pending;
+	internal int nextPending;
+	internal int pendingCount;
+	internal sbyte data_type;
+	internal int last_flush;
+	internal int w_size;
+	internal int w_bits;
+	internal int w_mask;
+	internal byte[] window;
+	internal int window_size;
+	internal short[] prev;
+	internal short[] head;
+	internal int ins_h;
+	internal int hash_size;
+	internal int hash_bits;
+	internal int hash_mask;
+	internal int hash_shift;
+	internal int block_start;
+	private DeflateManager.Config config;
+	internal int match_length;
+	internal int prev_match;
+	internal int match_available;
+	internal int strstart;
+	internal int match_start;
+	internal int lookahead;
+	internal int prev_length;
+	internal CompressionLevel compressionLevel;
+	internal CompressionStrategy compressionStrategy;
+	internal short[] dyn_ltree;
+	internal short[] dyn_dtree;
+	internal short[] bl_tree;
+	internal Tree treeLiterals;
+	internal Tree treeDistances;
+	internal Tree treeBitLengths;
+	internal short[] bl_count;
+	internal int[] heap;
+	internal int heap_len;
+	internal int heap_max;
+	internal sbyte[] depth;
+	internal int _lengthOffset;
+	internal int lit_bufsize;
+	internal int last_lit;
+	internal int _distanceOffset;
+	internal int opt_len;
+	internal int static_len;
+	internal int matches;
+	internal int last_eob_len;
+	internal short bi_buf;
+	internal int bi_valid;
+	private bool Rfc1950BytesEmitted;
+	private bool _WantRfc1950HeaderBytes;
 
 	internal bool WantRfc1950HeaderBytes { get; set; }
 
@@ -152,7 +152,7 @@ internal sealed class DeflateManager // TypeDefIndex: 6980
 
 }
 
-internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDefIndex: 6981
+internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDefIndex: 6983
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -165,14 +165,14 @@ internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDef
 
 }
 
-internal class DeflateManager.Config // TypeDefIndex: 6982
+internal class DeflateManager.Config // TypeDefIndex: 6984
 {
-	internal int GoodLength; 
-	internal int MaxLazy; 
-	internal int NiceLength; 
-	internal int MaxChainLength; 
-	internal DeflateFlavor Flavor; 
-	private static readonly DeflateManager.Config[] Table; 
+	internal int GoodLength;
+	internal int MaxLazy;
+	internal int NiceLength;
+	internal int MaxChainLength;
+	internal DeflateFlavor Flavor;
+	private static readonly DeflateManager.Config[] Table;
 
 
 	private void .ctor(int goodLength, int maxLazy, int niceLength, int maxChainLength, DeflateFlavor flavor) { }

@@ -1,6 +1,6 @@
-internal class DefaultReferenceResolver : IReferenceResolver // TypeDefIndex: 5994
+internal class DefaultReferenceResolver : IReferenceResolver // TypeDefIndex: 5996
 {
-	private int _referenceCount; 
+	private int _referenceCount;
 
 
 	private BidirectionalDictionary<string, object> GetMappings(object context) { }

@@ -1,15 +1,15 @@
-public struct GetUnlockedAchievementCountOptions // TypeDefIndex: 9917
+public struct GetUnlockedAchievementCountOptions // TypeDefIndex: 9919
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <UserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <UserId>k__BackingField;
 
 	public ProductUserId UserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(ProductUserId value) { }
 
 }

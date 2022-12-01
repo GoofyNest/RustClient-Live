@@ -1,16 +1,16 @@
-public class RandomRendererEnable : MonoBehaviour // TypeDefIndex: 10508
+public class RandomRendererEnable : MonoBehaviour // TypeDefIndex: 10512
 {
-	public Renderer[] randoms; 
-	[CompilerGeneratedAttribute] 
-	private int <EnabledIndex>k__BackingField; 
+	public Renderer[] randoms;
+	[CompilerGeneratedAttribute]
+	private int <EnabledIndex>k__BackingField;
 
 	public int EnabledIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_EnabledIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_EnabledIndex(int value) { }
 
 	public void OnEnable() { }

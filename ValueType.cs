@@ -19,7 +19,7 @@ public abstract class ValueType // TypeDefIndex: 417
 
 internal enum ValueType // TypeDefIndex: 4254
 {
-	public int value__; 
+	public int value__;
 	public const ValueType Unknown = -1;
 	public const ValueType Null = 0;
 	public const ValueType Bool = 1;
@@ -32,9 +32,9 @@ internal enum ValueType // TypeDefIndex: 4254
 
 }
 
-public enum ValueType // TypeDefIndex: 8156
+public enum ValueType // TypeDefIndex: 8158
 {
-	public int value__; 
+	public int value__;
 	public const ValueType String = 0;
 	public const ValueType Number = 1;
 	public const ValueType Object = 2;

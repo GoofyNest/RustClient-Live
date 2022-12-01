@@ -1,63 +1,63 @@
-public class WaterSystem : MonoBehaviour // TypeDefIndex: 12377
+public class WaterSystem : MonoBehaviour // TypeDefIndex: 12385
 {
-	public WaterQuality Quality; 
-	public bool ShowDebug; 
-	public bool ShowGizmos; 
-	public bool ProgressTime; 
-	public GameObject FallbackPlane; 
-	public WaterSystem.SimulationSettings Simulation; 
-	public WaterSystem.RenderingSettings Rendering; 
-	private WaterGerstner.PrecomputedWave[] precomputedWaves; 
-	private WaterGerstner.PrecomputedShoreWaves precomputedShoreWaves; 
-	private Vector4[] waveArray; 
-	private Vector4[] shoreWaveArray; 
-	private Vector4 global0; 
-	private Vector4 global1; 
-	[CompilerGeneratedAttribute] 
-	private float <ShoreWavesRcpFadeDistance>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <TerrainRcpFadeDistance>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsInitialized>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static WaterCollision <Collision>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static WaterDynamics <Dynamics>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static WaterBody <Ocean>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static HashSet<WaterBody> <WaterBodies>k__BackingField; 
-	private static float oceanLevel; 
-	[CompilerGeneratedAttribute] 
-	private static float <WaveTime>k__BackingField; 
-	public static readonly int[] QualityToMaxVertices; 
-	private WaterQuality prevQuality; 
-	private ReflectionProbeEx reflectionProbe; 
-	private float reflectionProbeUpdateTime; 
-	private bool reflectionProbeReady; 
-	private Texture2D defaultHeightSlopeMap; 
-	private bool hasValidCausticsAnims; 
-	private List<WaterRuntime> runtimeCleanup; 
-	[CompilerGeneratedAttribute] 
-	private static Dictionary<WaterCamera, WaterRuntime> <Runtimes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static HashSet<WaterDepthMask> <DepthMasks>k__BackingField; 
-	private static WaterSystem instance; 
-	private static Vector3[] emptyShoreMap; 
-	private static short[] emptyWaterMap; 
-	private static short[] emptyHeightMap; 
-	private static WaterSystem.NativePathState nativePathState; 
-	private static Vector3[] currentShoreMap; 
-	private static GCHandle currentShoreMapHandle; 
-	private static short[] currentWaterMap; 
-	private static GCHandle currentWaterMapHandle; 
-	private static short[] currentHeightMap; 
-	private static GCHandle currentHeightMapHandle; 
-	private static Vector4[] currentOpenWaves; 
-	private static GCHandle currentOpenWavesHandle; 
-	private static Vector4[] currentShoreWaves; 
-	private static GCHandle currentShoreWavesHandle; 
-	private float lastQualityChange; 
+	public WaterQuality Quality;
+	public bool ShowDebug;
+	public bool ShowGizmos;
+	public bool ProgressTime;
+	public GameObject FallbackPlane;
+	public WaterSystem.SimulationSettings Simulation;
+	public WaterSystem.RenderingSettings Rendering;
+	private WaterGerstner.PrecomputedWave[] precomputedWaves;
+	private WaterGerstner.PrecomputedShoreWaves precomputedShoreWaves;
+	private Vector4[] waveArray;
+	private Vector4[] shoreWaveArray;
+	private Vector4 global0;
+	private Vector4 global1;
+	[CompilerGeneratedAttribute]
+	private float <ShoreWavesRcpFadeDistance>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <TerrainRcpFadeDistance>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsInitialized>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static WaterCollision <Collision>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static WaterDynamics <Dynamics>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static WaterBody <Ocean>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static HashSet<WaterBody> <WaterBodies>k__BackingField;
+	private static float oceanLevel;
+	[CompilerGeneratedAttribute]
+	private static float <WaveTime>k__BackingField;
+	public static readonly int[] QualityToMaxVertices;
+	private WaterQuality prevQuality;
+	private ReflectionProbeEx reflectionProbe;
+	private float reflectionProbeUpdateTime;
+	private bool reflectionProbeReady;
+	private Texture2D defaultHeightSlopeMap;
+	private bool hasValidCausticsAnims;
+	private List<WaterRuntime> runtimeCleanup;
+	[CompilerGeneratedAttribute]
+	private static Dictionary<WaterCamera, WaterRuntime> <Runtimes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static HashSet<WaterDepthMask> <DepthMasks>k__BackingField;
+	private static WaterSystem instance;
+	private static Vector3[] emptyShoreMap;
+	private static short[] emptyWaterMap;
+	private static short[] emptyHeightMap;
+	private static WaterSystem.NativePathState nativePathState;
+	private static Vector3[] currentShoreMap;
+	private static GCHandle currentShoreMapHandle;
+	private static short[] currentWaterMap;
+	private static GCHandle currentWaterMapHandle;
+	private static short[] currentHeightMap;
+	private static GCHandle currentHeightMapHandle;
+	private static Vector4[] currentOpenWaves;
+	private static GCHandle currentOpenWavesHandle;
+	private static Vector4[] currentShoreWaves;
+	private static GCHandle currentShoreWavesHandle;
+	private float lastQualityChange;
 
 	public WaterGerstner.PrecomputedWave[] PrecomputedWaves { get; }
 	public WaterGerstner.PrecomputedShoreWaves PrecomputedShoreWaves { get; }
@@ -86,70 +86,70 @@ public class WaterSystem : MonoBehaviour // TypeDefIndex: 12377
 
 	public Vector4 get_Global1() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_ShoreWavesRcpFadeDistance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ShoreWavesRcpFadeDistance(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_TerrainRcpFadeDistance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_TerrainRcpFadeDistance(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsInitialized(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsInitialized() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static WaterCollision get_Collision() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_Collision(WaterCollision value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_Dynamics(WaterDynamics value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static WaterDynamics get_Dynamics() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_Ocean(WaterBody value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static WaterBody get_Ocean() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_WaterBodies(HashSet<WaterBody> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static HashSet<WaterBody> get_WaterBodies() { }
 
 	public static float get_OceanLevel() { }
 
 	public static void set_OceanLevel(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static float get_WaveTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_WaveTime(float value) { }
 
 	public bool get_HasCaustics() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_Runtimes(Dictionary<WaterCamera, WaterRuntime> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static Dictionary<WaterCamera, WaterRuntime> get_Runtimes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_DepthMasks(HashSet<WaterDepthMask> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static HashSet<WaterDepthMask> get_DepthMasks() { }
 
 	public static WaterSystem get_Instance() { }
@@ -265,83 +265,83 @@ public class WaterSystem : MonoBehaviour // TypeDefIndex: 12377
 
 }
 
-public class WaterSystem.SimulationSettings // TypeDefIndex: 12378
+public class WaterSystem.SimulationSettings // TypeDefIndex: 12386
 {
-	public Vector3 Wind; 
-	public int SolverResolution; 
-	public float SolverSizeInWorld; 
-	public float Gravity; 
-	public float Amplitude; 
-	public Texture2D PerlinNoise; 
-	public WaterGerstner.WaveParams[] OpenSeaWaves; 
-	public WaterGerstner.ShoreWaveParams ShoreWaves; 
-	[RangeAttribute] 
-	public float ShoreWavesFadeDistance; 
-	[RangeAttribute] 
-	public float TerrainFadeDistance; 
-	[RangeAttribute] 
-	public float OpenSeaCrestFoamThreshold; 
-	[RangeAttribute] 
-	public float ShoreCrestFoamThreshold; 
-	[RangeAttribute] 
-	public float ShoreCrestFoamFarThreshold; 
-	[RangeAttribute] 
-	public float ShoreCrestFoamFadeDistance; 
+	public Vector3 Wind;
+	public int SolverResolution;
+	public float SolverSizeInWorld;
+	public float Gravity;
+	public float Amplitude;
+	public Texture2D PerlinNoise;
+	public WaterGerstner.WaveParams[] OpenSeaWaves;
+	public WaterGerstner.ShoreWaveParams ShoreWaves;
+	[RangeAttribute]
+	public float ShoreWavesFadeDistance;
+	[RangeAttribute]
+	public float TerrainFadeDistance;
+	[RangeAttribute]
+	public float OpenSeaCrestFoamThreshold;
+	[RangeAttribute]
+	public float ShoreCrestFoamThreshold;
+	[RangeAttribute]
+	public float ShoreCrestFoamFarThreshold;
+	[RangeAttribute]
+	public float ShoreCrestFoamFadeDistance;
 
 
 	public void .ctor() { }
 
 }
 
-public class WaterSystem.RenderingSettings // TypeDefIndex: 12379
+public class WaterSystem.RenderingSettings // TypeDefIndex: 12387
 {
-	public float MaxDisplacementDistance; 
-	public WaterSystem.RenderingSettings.SkyProbe SkyReflections; 
-	public WaterSystem.RenderingSettings.SSR ScreenSpaceReflections; 
-	public WaterSystem.RenderingSettings.Caustics CausticsAnimation; 
+	public float MaxDisplacementDistance;
+	public WaterSystem.RenderingSettings.SkyProbe SkyReflections;
+	public WaterSystem.RenderingSettings.SSR ScreenSpaceReflections;
+	public WaterSystem.RenderingSettings.Caustics CausticsAnimation;
 
 
 	public void .ctor() { }
 
 }
 
-public class WaterSystem.RenderingSettings.SkyProbe // TypeDefIndex: 12380
+public class WaterSystem.RenderingSettings.SkyProbe // TypeDefIndex: 12388
 {
-	public float ProbeUpdateInterval; 
-	public bool TimeSlicing; 
+	public float ProbeUpdateInterval;
+	public bool TimeSlicing;
 
 
 	public void .ctor() { }
 
 }
 
-public class WaterSystem.RenderingSettings.SSR // TypeDefIndex: 12381
+public class WaterSystem.RenderingSettings.SSR // TypeDefIndex: 12389
 {
-	public float FresnelCutoff; 
-	public float ThicknessMin; 
-	public float ThicknessMax; 
-	public float ThicknessStartDist; 
-	public float ThicknessEndDist; 
+	public float FresnelCutoff;
+	public float ThicknessMin;
+	public float ThicknessMax;
+	public float ThicknessStartDist;
+	public float ThicknessEndDist;
 
 
 	public void .ctor() { }
 
 }
 
-public class WaterSystem.RenderingSettings.Caustics // TypeDefIndex: 12382
+public class WaterSystem.RenderingSettings.Caustics // TypeDefIndex: 12390
 {
-	public float FrameRate; 
-	public Texture2D[] FramesShallow; 
-	public Texture2D[] FramesDeep; 
+	public float FrameRate;
+	public Texture2D[] FramesShallow;
+	public Texture2D[] FramesDeep;
 
 
 	public void .ctor() { }
 
 }
 
-private enum WaterSystem.NativePathState // TypeDefIndex: 12383
+private enum WaterSystem.NativePathState // TypeDefIndex: 12391
 {
-	public int value__; 
+	public int value__;
 	public const WaterSystem.NativePathState Initializing = 0;
 	public const WaterSystem.NativePathState Failed = 1;
 	public const WaterSystem.NativePathState Ready = 2;

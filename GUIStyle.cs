@@ -1,45 +1,45 @@
 public sealed class GUIStyle // TypeDefIndex: 4053
 {
-	internal IntPtr m_Ptr; 
-	private GUIStyleState m_Normal; 
-	private GUIStyleState m_Hover; 
-	private GUIStyleState m_Active; 
-	private GUIStyleState m_Focused; 
-	private GUIStyleState m_OnNormal; 
-	private GUIStyleState m_OnHover; 
-	private GUIStyleState m_OnActive; 
-	private GUIStyleState m_OnFocused; 
-	private RectOffset m_Border; 
-	private RectOffset m_Padding; 
-	private RectOffset m_Margin; 
-	private RectOffset m_Overflow; 
-	private string m_Name; 
-	internal static bool showKeyboardFocus; 
-	private static GUIStyle s_None; 
+	internal IntPtr m_Ptr;
+	private GUIStyleState m_Normal;
+	private GUIStyleState m_Hover;
+	private GUIStyleState m_Active;
+	private GUIStyleState m_Focused;
+	private GUIStyleState m_OnNormal;
+	private GUIStyleState m_OnHover;
+	private GUIStyleState m_OnActive;
+	private GUIStyleState m_OnFocused;
+	private RectOffset m_Border;
+	private RectOffset m_Padding;
+	private RectOffset m_Margin;
+	private RectOffset m_Overflow;
+	private string m_Name;
+	internal static bool showKeyboardFocus;
+	private static GUIStyle s_None;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	internal string rawName { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Font font { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public ImagePosition imagePosition { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public TextAnchor alignment { set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool wordWrap { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Vector2 contentOffset { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float fixedWidth { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float fixedHeight { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool stretchWidth { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool stretchHeight { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int fontSize { set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	internal Vector2 Internal_clipOffset { set; }
 	public string name { get; set; }
 	public GUIStyleState normal { get; }
@@ -82,64 +82,64 @@ public sealed class GUIStyle // TypeDefIndex: 4053
 
 	internal void set_Internal_clipOffset(Vector2 value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Internal_Create(GUIStyle self) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Internal_Copy(GUIStyle self, GUIStyle other) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_Destroy(IntPtr self) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private IntPtr GetStyleStatePtr(int idx) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private IntPtr GetRectOffsetPtr(int idx) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static float Internal_GetLineHeight(IntPtr target) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_Draw(Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_Draw2(Rect position, GUIContent content, int controlID, bool on) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_DrawCursor(Rect position, GUIContent content, int pos, Color cursorColor) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_DrawWithTextSelection(Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus, bool drawSelectionAsComposition, int cursorFirst, int cursorLast, Color cursorColor, Color selectionColor) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal Vector2 Internal_GetCursorPixelPosition(Rect position, GUIContent content, int cursorStringIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal int Internal_GetCursorStringIndex(Rect position, GUIContent content, Vector2 cursorPixelPosition) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal string Internal_GetSelectedRenderedText(Rect localPosition, GUIContent mContent, int selectIndex, int cursorIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal Vector2 Internal_CalcSize(GUIContent content) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal Vector2 Internal_CalcSizeWithConstraints(GUIContent content, Vector2 maxSize) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private float Internal_CalcHeight(GUIContent content, float width) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Vector2 Internal_CalcMinMaxWidth(GUIContent content) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static void SetMouseTooltip(string tooltip, Rect screenRect) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static float Internal_GetCursorFlashOffset() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static void SetDefaultFont(Font font) { }
 
 	public void .ctor() { }

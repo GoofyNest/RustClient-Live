@@ -1,6 +1,6 @@
-internal sealed class Dithering // TypeDefIndex: 13573
+internal sealed class Dithering // TypeDefIndex: 13589
 {
-	private int m_NoiseTextureIndex; 
+	private int m_NoiseTextureIndex;
 
 
 	internal void Render(PostProcessRenderContext context) { }

@@ -1,10 +1,10 @@
 public static class StencilMaterial // TypeDefIndex: 5018
 {
-	private static List<StencilMaterial.MatEntry> m_List; 
+	private static List<StencilMaterial.MatEntry> m_List;
 
 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public static Material Add(Material baseMat, int stencilID) { }
 
 	public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask) { }
@@ -21,16 +21,16 @@ public static class StencilMaterial // TypeDefIndex: 5018
 
 private class StencilMaterial.MatEntry // TypeDefIndex: 5019
 {
-	public Material baseMat; 
-	public Material customMat; 
-	public int count; 
-	public int stencilId; 
-	public StencilOp operation; 
-	public CompareFunction compareFunction; 
-	public int readMask; 
-	public int writeMask; 
-	public bool useAlphaClip; 
-	public ColorWriteMask colorMask; 
+	public Material baseMat;
+	public Material customMat;
+	public int count;
+	public int stencilId;
+	public StencilOp operation;
+	public CompareFunction compareFunction;
+	public int readMask;
+	public int writeMask;
+	public bool useAlphaClip;
+	public ColorWriteMask colorMask;
 
 
 	public void .ctor() { }

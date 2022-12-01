@@ -1,25 +1,25 @@
 internal class NativeInputSystem // TypeDefIndex: 4528
 {
-	public static NativeUpdateCallback onUpdate; 
-	public static Action<NativeInputUpdateType> onBeforeUpdate; 
-	public static Func<NativeInputUpdateType, bool> onShouldRunUpdate; 
-	private static Action<int, string> s_OnDeviceDiscoveredCallback; 
+	public static NativeUpdateCallback onUpdate;
+	public static Action<NativeInputUpdateType> onBeforeUpdate;
+	public static Func<NativeInputUpdateType, bool> onShouldRunUpdate;
+	private static Action<int, string> s_OnDeviceDiscoveredCallback;
 
 	internal static bool hasDeviceDiscoveredCallback { set; }
 
 
 	private static void .cctor() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void NotifyBeforeUpdate(NativeInputUpdateType updateType) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void NotifyUpdate(NativeInputUpdateType updateType, IntPtr eventBuffer) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void NotifyDeviceDiscovered(int deviceId, string deviceDescriptor) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void ShouldRunUpdate(NativeInputUpdateType updateType, out bool retval) { }
 
 	internal static void set_hasDeviceDiscoveredCallback(bool value) { }

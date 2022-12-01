@@ -1,33 +1,33 @@
-public struct CloseConnectionOptions // TypeDefIndex: 8948
+public struct CloseConnectionOptions // TypeDefIndex: 8950
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <RemoteUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SocketId> <SocketId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <RemoteUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SocketId> <SocketId>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ProductUserId RemoteUserId { get; set; }
 	public Nullable<SocketId> SocketId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_RemoteUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RemoteUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SocketId> get_SocketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketId(Nullable<SocketId> value) { }
 
 }

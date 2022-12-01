@@ -1,30 +1,31 @@
-public class CameraMan : SingletonComponent<CameraMan> // TypeDefIndex: 10867
+public class CameraMan : SingletonComponent<CameraMan> // TypeDefIndex: 10873
 {
-	public static string DefaultSaveName; 
+	public static string DefaultSaveName;
 	public const string SavePositionExtension = ".cam";
 	public const string SavePositionDirectory = "camsaves";
-	public bool OnlyControlWhenCursorHidden; 
-	public bool NeedBothMouseButtonsToZoom; 
-	public float LookSensitivity; 
-	public float MoveSpeed; 
-	public static float GuideAspect; 
-	public static float GuideRatio; 
-	public Canvas canvas; 
-	public Graphic[] guides; 
-	private Color _guideColor; 
-	private int _guide; 
-	private bool startCulling; 
-	private static Dictionary<string, CameraMan.CameraState> stateDictionary; 
-	private readonly ViewShake viewShake; 
-	public BaseEntity TargetEntity; 
-	private float targetDistance; 
-	private float targetDistancePrev; 
-	private Vector3 wishMove; 
-	private Vector3 view; 
-	private Vector3 viewPrev; 
-	private Vector3 velocity; 
-	[CompilerGeneratedAttribute] 
-	private float <Zoom>k__BackingField; 
+	public bool OnlyControlWhenCursorHidden;
+	public bool NeedBothMouseButtonsToZoom;
+	public float LookSensitivity;
+	public float MoveSpeed;
+	public static float GuideAspect;
+	public static float GuideRatio;
+	public Canvas canvas;
+	public Graphic[] guides;
+	private Color _guideColor;
+	private int _guide;
+	private bool startCulling;
+	private bool hasSetFov;
+	private static Dictionary<string, CameraMan.CameraState> stateDictionary;
+	private readonly ViewShake viewShake;
+	public BaseEntity TargetEntity;
+	private float targetDistance;
+	private float targetDistancePrev;
+	private Vector3 wishMove;
+	private Vector3 view;
+	private Vector3 viewPrev;
+	private Vector3 velocity;
+	[CompilerGeneratedAttribute]
+	private float <Zoom>k__BackingField;
 
 	public Color GuideColor { get; set; }
 	public int Guide { get; set; }
@@ -76,10 +77,10 @@ public class CameraMan : SingletonComponent<CameraMan> // TypeDefIndex: 10867
 
 	private CameraMan.MovementType get_currentMovementType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Zoom() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Zoom(float value) { }
 
 	public float get_Fov() { }
@@ -110,18 +111,18 @@ public class CameraMan : SingletonComponent<CameraMan> // TypeDefIndex: 10867
 
 }
 
-public struct CameraMan.CameraState // TypeDefIndex: 10868
+public struct CameraMan.CameraState // TypeDefIndex: 10874
 {
-	public Vector3 position; 
-	public Vector3 rotation; 
-	public float zoom; 
-	public float dof; 
+	public Vector3 position;
+	public Vector3 rotation;
+	public float zoom;
+	public float dof;
 
 }
 
-private enum CameraMan.MovementType // TypeDefIndex: 10869
+private enum CameraMan.MovementType // TypeDefIndex: 10875
 {
-	public int value__; 
+	public int value__;
 	public const CameraMan.MovementType Free = 0;
 	public const CameraMan.MovementType Target = 1;
 	public const CameraMan.MovementType LookAtPlayer = 2;

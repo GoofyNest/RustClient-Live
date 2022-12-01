@@ -1,13 +1,13 @@
-public struct UpdateReceivingOptions // TypeDefIndex: 8720
+public struct UpdateReceivingOptions // TypeDefIndex: 8722
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RoomName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ParticipantId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AudioEnabled>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RoomName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ParticipantId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AudioEnabled>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String RoomName { get; set; }
@@ -15,28 +15,28 @@ public struct UpdateReceivingOptions // TypeDefIndex: 8720
 	public bool AudioEnabled { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RoomName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RoomName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ParticipantId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AudioEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AudioEnabled(bool value) { }
 
 }

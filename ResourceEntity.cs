@@ -1,11 +1,11 @@
-public class ResourceEntity : BaseEntity // TypeDefIndex: 11411
+public class ResourceEntity : BaseEntity // TypeDefIndex: 11417
 {
-	[FormerlySerializedAsAttribute] 
-	public float startHealth; 
-	[FormerlySerializedAsAttribute] 
-	public ProtectionProperties baseProtection; 
-	protected float health; 
-	protected bool isKilled; 
+	[FormerlySerializedAsAttribute]
+	public float startHealth;
+	[FormerlySerializedAsAttribute]
+	public ProtectionProperties baseProtection;
+	protected float health;
+	protected bool isKilled;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

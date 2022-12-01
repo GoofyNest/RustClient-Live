@@ -1,25 +1,25 @@
-public class SoundManager : SingletonComponent<SoundManager>, IClientComponent // TypeDefIndex: 10759
+public class SoundManager : SingletonComponent<SoundManager>, IClientComponent // TypeDefIndex: 10763
 {
-	public SoundClass defaultSoundClass; 
-	public Dictionary<SoundDefinition, List<Sound>> activeSoundsByDef; 
-	public List<ISoundBudgetedUpdate> budgetUpdatables; 
-	public List<SoundPlayer> pendingSoundPlayers; 
-	private List<SoundManager.ScheduledSound> scheduledSounds; 
-	private int updatableIndex; 
-	private Stopwatch watch; 
-	private Vector3 prevCameraPos; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <smoothedCameraVel>k__BackingField; 
-	private float cameraVelSmoothSpeed; 
-	private List<Sound> otherLocalSounds; 
+	public SoundClass defaultSoundClass;
+	public Dictionary<SoundDefinition, List<Sound>> activeSoundsByDef;
+	public List<ISoundBudgetedUpdate> budgetUpdatables;
+	public List<SoundPlayer> pendingSoundPlayers;
+	private List<SoundManager.ScheduledSound> scheduledSounds;
+	private int updatableIndex;
+	private Stopwatch watch;
+	private Vector3 prevCameraPos;
+	[CompilerGeneratedAttribute]
+	private Vector3 <smoothedCameraVel>k__BackingField;
+	private float cameraVelSmoothSpeed;
+	private List<Sound> otherLocalSounds;
 
 	public Vector3 smoothedCameraVel { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_smoothedCameraVel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_smoothedCameraVel(Vector3 value) { }
 
 	protected override void Awake() { }
@@ -58,12 +58,12 @@ public class SoundManager : SingletonComponent<SoundManager>, IClientComponent /
 
 }
 
-public class SoundManager.ScheduledSound // TypeDefIndex: 10760
+public class SoundManager.ScheduledSound // TypeDefIndex: 10764
 {
-	public SoundDefinition def; 
-	public float startTime; 
-	public Vector3 position; 
-	public float volumeMod; 
+	public SoundDefinition def;
+	public float startTime;
+	public Vector3 position;
+	public float volumeMod;
 
 
 	public void .ctor(SoundDefinition def, float startTime, Vector3 position, float volumeMod = 1) { }

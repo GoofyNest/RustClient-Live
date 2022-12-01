@@ -1,22 +1,22 @@
 public class CancellationTokenSource : IDisposable // TypeDefIndex: 751
 {
-	private static readonly CancellationTokenSource _staticSource_Set; 
-	private static readonly CancellationTokenSource _staticSource_NotCancelable; 
-	private static readonly int s_nLists; 
-	private ManualResetEvent m_kernelEvent; 
-	private SparselyPopulatedArray<CancellationCallbackInfo>[] m_registeredCallbacksLists; 
+	private static readonly CancellationTokenSource _staticSource_Set;
+	private static readonly CancellationTokenSource _staticSource_NotCancelable;
+	private static readonly int s_nLists;
+	private ManualResetEvent m_kernelEvent;
+	private SparselyPopulatedArray<CancellationCallbackInfo>[] m_registeredCallbacksLists;
 	private const int CANNOT_BE_CANCELED = 0;
 	private const int NOT_CANCELED = 1;
 	private const int NOTIFYING = 2;
 	private const int NOTIFYINGCOMPLETE = 3;
-	private int m_state; 
-	private int m_threadIDExecutingCallbacks; 
-	private bool m_disposed; 
-	private CancellationTokenRegistration[] m_linkingRegistrations; 
-	private static readonly Action<object> s_LinkedTokenCancelDelegate; 
-	private CancellationCallbackInfo m_executingCallback; 
-	private Timer m_timer; 
-	private static readonly TimerCallback s_timerCallback; 
+	private int m_state;
+	private int m_threadIDExecutingCallbacks;
+	private bool m_disposed;
+	private CancellationTokenRegistration[] m_linkingRegistrations;
+	private static readonly Action<object> s_LinkedTokenCancelDelegate;
+	private CancellationCallbackInfo m_executingCallback;
+	private Timer m_timer;
+	private static readonly TimerCallback s_timerCallback;
 
 	public bool IsCancellationRequested { get; }
 	internal bool IsCancellationCompleted { get; }

@@ -1,9 +1,9 @@
-public class FrankensteinPartInformationPanel : ItemInformationPanel // TypeDefIndex: 12769
+public class FrankensteinPartInformationPanel : ItemInformationPanel // TypeDefIndex: 12783
 {
-	public ItemTextValue healthDisplay; 
-	public ItemTextValue speedDisplay; 
-	public ItemTextValue attackRateDisplay; 
-	public ItemTextValue attackDamageDisplay; 
+	public ItemTextValue healthDisplay;
+	public ItemTextValue speedDisplay;
+	public ItemTextValue attackRateDisplay;
+	public ItemTextValue attackDamageDisplay;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

@@ -1,6 +1,6 @@
 public enum AlertDescription // TypeDefIndex: 1735
 {
-	public byte value__; 
+	public byte value__;
 	public const AlertDescription CloseNotify = 0;
 	public const AlertDescription UnexpectedMessage = 10;
 	public const AlertDescription BadRecordMAC = 20;

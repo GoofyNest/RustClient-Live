@@ -1,9 +1,9 @@
 internal class Operator : AstNode // TypeDefIndex: 1796
 {
-	private static Operator.Op[] invertOp; 
-	private Operator.Op opType; 
-	private AstNode opnd1; 
-	private AstNode opnd2; 
+	private static Operator.Op[] invertOp;
+	private Operator.Op opType;
+	private AstNode opnd1;
+	private AstNode opnd2;
 
 	public override AstNode.AstType Type { get; }
 	public override XPathResultType ReturnType { get; }
@@ -21,7 +21,7 @@ internal class Operator : AstNode // TypeDefIndex: 1796
 
 public enum Operator.Op // TypeDefIndex: 1797
 {
-	public int value__; 
+	public int value__;
 	public const Operator.Op INVALID = 0;
 	public const Operator.Op OR = 1;
 	public const Operator.Op AND = 2;

@@ -1,13 +1,13 @@
-public class ViaHeaderValue : ICloneable // TypeDefIndex: 5817
+public class ViaHeaderValue : ICloneable // TypeDefIndex: 5819
 {
-	[CompilerGeneratedAttribute] 
-	private string <Comment>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <ProtocolName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <ProtocolVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <ReceivedBy>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Comment>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <ProtocolName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <ProtocolVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <ReceivedBy>k__BackingField;
 
 	public string Comment { get; set; }
 	public string ProtocolName { get; set; }
@@ -17,28 +17,28 @@ public class ViaHeaderValue : ICloneable // TypeDefIndex: 5817
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Comment() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Comment(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ProtocolName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ProtocolName(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ProtocolVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ProtocolVersion(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ReceivedBy() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ReceivedBy(string value) { }
 
 	private object System.ICloneable.Clone() { }

@@ -1,6 +1,6 @@
 public enum MoveDirection // TypeDefIndex: 5094
 {
-	public int value__; 
+	public int value__;
 	public const MoveDirection Left = 0;
 	public const MoveDirection Up = 1;
 	public const MoveDirection Right = 2;

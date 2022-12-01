@@ -1,13 +1,13 @@
-public class StatusLightRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 10969
+public class StatusLightRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 10975
 {
-	public Material offMaterial; 
-	public Material onMaterial; 
-	private MaterialPropertyBlock propertyBlock; 
-	private Renderer targetRenderer; 
-	private Color lightColor; 
-	private Light targetLight; 
-	private int colorID; 
-	private int emissionID; 
+	public Material offMaterial;
+	public Material onMaterial;
+	private MaterialPropertyBlock propertyBlock;
+	private Renderer targetRenderer;
+	private Color lightColor;
+	private Light targetLight;
+	private int colorID;
+	private int emissionID;
 
 
 	protected void Awake() { }

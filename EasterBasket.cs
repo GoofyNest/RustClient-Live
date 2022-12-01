@@ -1,11 +1,11 @@
-public class EasterBasket : AttackEntity // TypeDefIndex: 10287
+public class EasterBasket : AttackEntity // TypeDefIndex: 10290
 {
-	public GameObjectRef eggProjectile; 
-	public ItemDefinition ammoType; 
-	public int lastCollectedIndex; 
-	private bool aiming; 
-	private float nextAmmoCheckTime; 
-	private bool didHaveAmmo; 
+	public GameObjectRef eggProjectile;
+	public ItemDefinition ammoType;
+	public int lastCollectedIndex;
+	private bool aiming;
+	private float nextAmmoCheckTime;
+	private bool didHaveAmmo;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

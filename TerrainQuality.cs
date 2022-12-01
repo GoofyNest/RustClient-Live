@@ -1,10 +1,10 @@
-public class TerrainQuality : TerrainExtension // TypeDefIndex: 12181
+public class TerrainQuality : TerrainExtension // TypeDefIndex: 12188
 {
-	internal float HeightMapError; 
-	internal float BaseMapDistance; 
-	internal int TerrainShaderLod; 
-	private ConsoleSystem.Command terrain_quality; 
-	private ConsoleSystem.Command graphics_shaderlod; 
+	internal float HeightMapError;
+	internal float BaseMapDistance;
+	internal int TerrainShaderLod;
+	private ConsoleSystem.Command terrain_quality;
+	private ConsoleSystem.Command graphics_shaderlod;
 
 
 	public override void Setup() { }

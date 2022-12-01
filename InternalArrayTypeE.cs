@@ -1,6 +1,6 @@
 internal enum InternalArrayTypeE // TypeDefIndex: 1098
 {
-	public int value__; 
+	public int value__;
 	public const InternalArrayTypeE Empty = 0;
 	public const InternalArrayTypeE Single = 1;
 	public const InternalArrayTypeE Jagged = 2;

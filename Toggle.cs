@@ -1,13 +1,13 @@
 public class Toggle : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler, ICanvasElement // TypeDefIndex: 5021
 {
-	public Toggle.ToggleTransition toggleTransition; 
-	public Graphic graphic; 
-	[SerializeField] 
-	private ToggleGroup m_Group; 
-	public Toggle.ToggleEvent onValueChanged; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	private bool m_IsOn; 
+	public Toggle.ToggleTransition toggleTransition;
+	public Graphic graphic;
+	[SerializeField]
+	private ToggleGroup m_Group;
+	public Toggle.ToggleEvent onValueChanged;
+	[TooltipAttribute]
+	[SerializeField]
+	private bool m_IsOn;
 
 	public ToggleGroup group { get; set; }
 	public bool isOn { get; set; }
@@ -59,7 +59,7 @@ public class Toggle : Selectable, IPointerClickHandler, IEventSystemHandler, ISu
 
 public enum Toggle.ToggleTransition // TypeDefIndex: 5022
 {
-	public int value__; 
+	public int value__;
 	public const Toggle.ToggleTransition None = 0;
 	public const Toggle.ToggleTransition Fade = 1;
 

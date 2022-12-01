@@ -1,6 +1,6 @@
-public abstract class BaseMeshPaintable : MonoBehaviour, IClientComponent // TypeDefIndex: 10931
+public abstract class BaseMeshPaintable : MonoBehaviour, IClientComponent // TypeDefIndex: 10937
 {
-	private static MaterialPropertyBlock _block; 
+	private static MaterialPropertyBlock _block;
 
 	protected static MaterialPropertyBlock Block { get; }
 	public abstract Texture2D TargetTexture { get; set; }

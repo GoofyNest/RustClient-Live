@@ -1,11 +1,11 @@
-public class LightPulse : MonoBehaviour, IClientComponent // TypeDefIndex: 11085
+public class LightPulse : MonoBehaviour, IClientComponent // TypeDefIndex: 11091
 {
-	public Light TargetLight; 
-	public float PulseSpeed; 
-	public float Lifetime; 
-	public float MaxIntensity; 
-	public float FadeOutSpeed; 
-	private TimeSince timeAlive; 
+	public Light TargetLight;
+	public float PulseSpeed;
+	public float Lifetime;
+	public float MaxIntensity;
+	public float FadeOutSpeed;
+	private TimeSince timeAlive;
 
 
 	private void OnEnable() { }

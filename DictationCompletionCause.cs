@@ -1,6 +1,6 @@
 public enum DictationCompletionCause // TypeDefIndex: 3607
 {
-	public int value__; 
+	public int value__;
 	public const DictationCompletionCause Complete = 0;
 	public const DictationCompletionCause AudioQualityFailure = 1;
 	public const DictationCompletionCause Canceled = 2;

@@ -1,16 +1,16 @@
-public struct RemotePlaySession // TypeDefIndex: 5561
+public struct RemotePlaySession // TypeDefIndex: 5563
 {
-	[CompilerGeneratedAttribute] 
-	private uint <Id>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <Id>k__BackingField;
 
 	public uint Id { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public uint get_Id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Id(uint value) { }
 
 	public override string ToString() { }

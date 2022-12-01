@@ -1,6 +1,6 @@
-internal struct HServerListRequest : IEquatable<HServerListRequest>, IComparable<HServerListRequest> // TypeDefIndex: 5531
+internal struct HServerListRequest : IEquatable<HServerListRequest>, IComparable<HServerListRequest> // TypeDefIndex: 5533
 {
-	public IntPtr Value; 
+	public IntPtr Value;
 
 
 	public static HServerListRequest op_Implicit(IntPtr value) { }

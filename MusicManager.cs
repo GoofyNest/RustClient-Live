@@ -1,37 +1,37 @@
-public class MusicManager : SingletonComponent<MusicManager>, IClientComponent // TypeDefIndex: 10731
+public class MusicManager : SingletonComponent<MusicManager>, IClientComponent // TypeDefIndex: 10735
 {
-	public AudioMixerGroup mixerGroup; 
-	public List<MusicTheme> themes; 
-	public MusicTheme currentTheme; 
-	public List<AudioSource> sources; 
-	public double nextMusic; 
-	public double nextMusicFromIntensityRaise; 
-	[RangeAttribute] 
-	public float intensity; 
-	public Dictionary<MusicTheme.PositionedClip, MusicManager.ClipPlaybackData> clipPlaybackData; 
-	public int holdIntensityUntilBar; 
-	public bool musicPlaying; 
-	public bool loadingFirstClips; 
-	public MusicTheme nextTheme; 
-	public double lastClipUpdate; 
-	public float clipUpdateInterval; 
-	public double themeStartTime; 
-	public int lastActiveClipRefresh; 
-	public int activeClipRefreshInterval; 
-	public bool forceThemeChange; 
-	public float randomIntensityJumpChance; 
-	public int clipScheduleBarsEarly; 
-	public List<MusicTheme.PositionedClip> activeClips; 
-	public List<MusicTheme.PositionedClip> activeMusicClips; 
-	public List<MusicTheme.PositionedClip> activeControlClips; 
-	public List<MusicZone> currentMusicZones; 
-	public int currentBar; 
-	public int barOffset; 
-	private AudioSource syncSource; 
-	private bool needsResync; 
-	private int fadingClipCount; 
-	private MusicClipLoader clipLoader; 
-	private List<MusicTheme> validThemes; 
+	public AudioMixerGroup mixerGroup;
+	public List<MusicTheme> themes;
+	public MusicTheme currentTheme;
+	public List<AudioSource> sources;
+	public double nextMusic;
+	public double nextMusicFromIntensityRaise;
+	[RangeAttribute]
+	public float intensity;
+	public Dictionary<MusicTheme.PositionedClip, MusicManager.ClipPlaybackData> clipPlaybackData;
+	public int holdIntensityUntilBar;
+	public bool musicPlaying;
+	public bool loadingFirstClips;
+	public MusicTheme nextTheme;
+	public double lastClipUpdate;
+	public float clipUpdateInterval;
+	public double themeStartTime;
+	public int lastActiveClipRefresh;
+	public int activeClipRefreshInterval;
+	public bool forceThemeChange;
+	public float randomIntensityJumpChance;
+	public int clipScheduleBarsEarly;
+	public List<MusicTheme.PositionedClip> activeClips;
+	public List<MusicTheme.PositionedClip> activeMusicClips;
+	public List<MusicTheme.PositionedClip> activeControlClips;
+	public List<MusicZone> currentMusicZones;
+	public int currentBar;
+	public int barOffset;
+	private AudioSource syncSource;
+	private bool needsResync;
+	private int fadingClipCount;
+	private MusicClipLoader clipLoader;
+	private List<MusicTheme> validThemes;
 
 	public double currentThemeTime { get; }
 	public int themeBar { get; }
@@ -105,25 +105,25 @@ public class MusicManager : SingletonComponent<MusicManager>, IClientComponent /
 
 }
 
-public class MusicManager.ClipPlaybackData // TypeDefIndex: 10732
+public class MusicManager.ClipPlaybackData // TypeDefIndex: 10736
 {
-	public AudioSource source; 
-	public MusicTheme.PositionedClip positionedClip; 
-	public bool isActive; 
-	public bool fadingIn; 
-	public bool fadingOut; 
-	public double fadeStarted; 
-	public bool needsSync; 
+	public AudioSource source;
+	public MusicTheme.PositionedClip positionedClip;
+	public bool isActive;
+	public bool fadingIn;
+	public bool fadingOut;
+	public double fadeStarted;
+	public bool needsSync;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class MusicManager.<>c // TypeDefIndex: 10733
+private sealed class MusicManager.<>c // TypeDefIndex: 10737
 {
-	public static readonly MusicManager.<>c <>9; 
-	public static Func<MusicTheme, float> <>9__60_0; 
+	public static readonly MusicManager.<>c <>9;
+	public static Func<MusicTheme, float> <>9__60_0;
 
 
 	private static void .cctor() { }

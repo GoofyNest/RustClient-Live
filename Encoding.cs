@@ -1,11 +1,11 @@
 public abstract class Encoder // TypeDefIndex: 444
 {
-	internal EncoderFallback m_fallback; 
-	internal EncoderFallbackBuffer m_fallbackBuffer; 
+	internal EncoderFallback m_fallback;
+	internal EncoderFallbackBuffer m_fallbackBuffer;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public EncoderFallback Fallback { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public EncoderFallbackBuffer FallbackBuffer { get; }
 	internal bool InternalHasFallbackBuffer { get; }
 
@@ -20,26 +20,26 @@ public abstract class Encoder // TypeDefIndex: 444
 
 	internal bool get_InternalHasFallbackBuffer() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual void Reset() { }
 
 	public abstract int GetByteCount(char[] chars, int index, int count, bool flush);
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetByteCount(char* chars, int count, bool flush) { }
 
 	public abstract int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex, bool flush);
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public virtual int GetBytes(char* chars, int charCount, byte* bytes, int byteCount, bool flush) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual void Convert(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex, int byteCount, bool flush, out int charsUsed, out int bytesUsed, out bool completed) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual void Convert(char* chars, int charCount, byte* bytes, int byteCount, bool flush, out int charsUsed, out int bytesUsed, out bool completed) { }
 
 }
@@ -82,10 +82,10 @@ public sealed class EncoderExceptionFallbackBuffer : EncoderFallbackBuffer // Ty
 
 public sealed class EncoderFallbackException : ArgumentException // TypeDefIndex: 449
 {
-	private char charUnknown; 
-	private char charUnknownHigh; 
-	private char charUnknownLow; 
-	private int index; 
+	private char charUnknown;
+	private char charUnknownHigh;
+	private char charUnknownLow;
+	private int index;
 
 
 	public void .ctor() { }
@@ -100,10 +100,10 @@ public sealed class EncoderFallbackException : ArgumentException // TypeDefIndex
 
 public abstract class EncoderFallback // TypeDefIndex: 450
 {
-	internal bool bIsMicrosoftBestFitFallback; 
-	private static EncoderFallback replacementFallback; 
-	private static EncoderFallback exceptionFallback; 
-	private static object s_InternalSyncObject; 
+	internal bool bIsMicrosoftBestFitFallback;
+	private static EncoderFallback replacementFallback;
+	private static EncoderFallback exceptionFallback;
+	private static object s_InternalSyncObject;
 
 	private static object InternalSyncObject { get; }
 	public static EncoderFallback ReplacementFallback { get; }
@@ -127,13 +127,13 @@ public abstract class EncoderFallback // TypeDefIndex: 450
 
 public abstract class EncoderFallbackBuffer // TypeDefIndex: 451
 {
-	internal char* charStart; 
-	internal char* charEnd; 
-	internal EncoderNLS encoder; 
-	internal bool setEncoder; 
-	internal bool bUsedEncoder; 
-	internal bool bFallingBack; 
-	internal int iRecursionCount; 
+	internal char* charStart;
+	internal char* charEnd;
+	internal EncoderNLS encoder;
+	internal bool setEncoder;
+	internal bool bUsedEncoder;
+	internal bool bFallingBack;
+	internal int iRecursionCount;
 	private const int iMaxRecursion = 250;
 
 	public abstract int Remaining { get; }
@@ -167,11 +167,11 @@ public abstract class EncoderFallbackBuffer // TypeDefIndex: 451
 
 internal class EncoderNLS : Encoder, ISerializable // TypeDefIndex: 452
 {
-	internal char charLeftOver; 
-	protected Encoding m_encoding; 
-	protected bool m_mustFlush; 
-	internal bool m_throwOnOverflow; 
-	internal int m_charsUsed; 
+	internal char charLeftOver;
+	protected Encoding m_encoding;
+	protected bool m_mustFlush;
+	internal bool m_throwOnOverflow;
+	internal int m_charsUsed;
 
 	public Encoding Encoding { get; }
 	public bool MustFlush { get; }
@@ -212,7 +212,7 @@ internal class EncoderNLS : Encoder, ISerializable // TypeDefIndex: 452
 
 public sealed class EncoderReplacementFallback : EncoderFallback // TypeDefIndex: 453
 {
-	private string strDefault; 
+	private string strDefault;
 
 	public string DefaultString { get; }
 	public override int MaxCharCount { get; }
@@ -236,9 +236,9 @@ public sealed class EncoderReplacementFallback : EncoderFallback // TypeDefIndex
 
 public sealed class EncoderReplacementFallbackBuffer : EncoderFallbackBuffer // TypeDefIndex: 454
 {
-	private string strDefault; 
-	private int fallbackCount; 
-	private int fallbackIndex; 
+	private string strDefault;
+	private int fallbackCount;
+	private int fallbackIndex;
 
 	public override int Remaining { get; }
 
@@ -261,15 +261,15 @@ public sealed class EncoderReplacementFallbackBuffer : EncoderFallbackBuffer // 
 
 public abstract class Encoding : ICloneable // TypeDefIndex: 455
 {
-	private static Encoding defaultEncoding; 
-	private static Encoding unicodeEncoding; 
-	private static Encoding bigEndianUnicode; 
-	private static Encoding utf7Encoding; 
-	private static Encoding utf8Encoding; 
-	private static Encoding utf32Encoding; 
-	private static Encoding asciiEncoding; 
-	private static Encoding latin1Encoding; 
-	private static Hashtable encodings; 
+	private static Encoding defaultEncoding;
+	private static Encoding unicodeEncoding;
+	private static Encoding bigEndianUnicode;
+	private static Encoding utf7Encoding;
+	private static Encoding utf8Encoding;
+	private static Encoding utf32Encoding;
+	private static Encoding asciiEncoding;
+	private static Encoding latin1Encoding;
+	private static Hashtable encodings;
 	private const int MIMECONTF_MAILNEWS = 1;
 	private const int MIMECONTF_BROWSER = 2;
 	private const int MIMECONTF_SAVABLE_MAILNEWS = 256;
@@ -316,16 +316,16 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 	private const int CodePageUTF8 = 65001;
 	private const int CodePageUTF32 = 12000;
 	private const int CodePageUTF32BE = 12001;
-	internal int m_codePage; 
-	internal CodePageDataItem dataItem; 
-	internal bool m_deserializedFromEverett; 
-	[OptionalFieldAttribute] 
-	private bool m_isReadOnly; 
-	[OptionalFieldAttribute] 
-	internal EncoderFallback encoderFallback; 
-	[OptionalFieldAttribute] 
-	internal DecoderFallback decoderFallback; 
-	private static object s_InternalSyncObject; 
+	internal int m_codePage;
+	internal CodePageDataItem dataItem;
+	internal bool m_deserializedFromEverett;
+	[OptionalFieldAttribute]
+	private bool m_isReadOnly;
+	[OptionalFieldAttribute]
+	internal EncoderFallback encoderFallback;
+	[OptionalFieldAttribute]
+	internal DecoderFallback decoderFallback;
+	private static object s_InternalSyncObject;
 
 	private static object InternalSyncObject { get; }
 	public virtual string BodyName { get; }
@@ -337,13 +337,13 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 	public virtual bool IsBrowserSave { get; }
 	public virtual bool IsMailNewsDisplay { get; }
 	public virtual bool IsMailNewsSave { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual bool IsSingleByte { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public EncoderFallback EncoderFallback { get; set; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public DecoderFallback DecoderFallback { get; set; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public bool IsReadOnly { get; }
 	public static Encoding ASCII { get; }
 	private static Encoding Latin1 { get; }
@@ -366,13 +366,13 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 
 	internal void OnDeserialized() { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
 	internal void DeserializeEncoding(SerializationInfo info, StreamingContext context) { }
@@ -417,7 +417,7 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 
 	public void set_DecoderFallback(DecoderFallback value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual object Clone() { }
 
 	public bool get_IsReadOnly() { }
@@ -430,8 +430,8 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 
 	public abstract int GetByteCount(char[] chars, int index, int count);
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetByteCount(char* chars, int count) { }
 
 	internal virtual int GetByteCount(char* chars, int count, EncoderNLS encoder) { }
@@ -448,14 +448,14 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 
 	internal virtual int GetBytes(char* chars, int charCount, byte* bytes, int byteCount, EncoderNLS encoder) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public abstract int GetCharCount(byte[] bytes, int index, int count);
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetCharCount(byte* bytes, int count) { }
 
 	internal virtual int GetCharCount(byte* bytes, int count, DecoderNLS decoder) { }
@@ -464,19 +464,19 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 
 	public abstract int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex);
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public virtual int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
 	internal virtual int GetChars(byte* bytes, int byteCount, char* chars, int charCount, DecoderNLS decoder) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public string GetString(byte* bytes, int byteCount) { }
 
 	public virtual int get_CodePage() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual bool IsAlwaysNormalized(NormalizationForm form) { }
 
 	public virtual Decoder GetDecoder() { }
@@ -527,9 +527,9 @@ public abstract class Encoding : ICloneable // TypeDefIndex: 455
 
 internal class Encoding.DefaultEncoder : Encoder, ISerializable, IObjectReference // TypeDefIndex: 456
 {
-	private Encoding m_encoding; 
-	private bool m_hasInitializedEncoding; 
-	internal char charLeftOver; 
+	private Encoding m_encoding;
+	private bool m_hasInitializedEncoding;
+	internal char charLeftOver;
 
 
 	public void .ctor(Encoding encoding) { }
@@ -552,8 +552,8 @@ internal class Encoding.DefaultEncoder : Encoder, ISerializable, IObjectReferenc
 
 internal class Encoding.DefaultDecoder : Decoder, ISerializable, IObjectReference // TypeDefIndex: 457
 {
-	private Encoding m_encoding; 
-	private bool m_hasInitializedEncoding; 
+	private Encoding m_encoding;
+	private bool m_hasInitializedEncoding;
 
 
 	public void .ctor(Encoding encoding) { }
@@ -580,16 +580,16 @@ internal class Encoding.DefaultDecoder : Decoder, ISerializable, IObjectReferenc
 
 internal class Encoding.EncodingCharBuffer // TypeDefIndex: 458
 {
-	private char* chars; 
-	private char* charStart; 
-	private char* charEnd; 
-	private int charCountResult; 
-	private Encoding enc; 
-	private DecoderNLS decoder; 
-	private byte* byteStart; 
-	private byte* byteEnd; 
-	private byte* bytes; 
-	private DecoderFallbackBuffer fallbackBuffer; 
+	private char* chars;
+	private char* charStart;
+	private char* charEnd;
+	private int charCountResult;
+	private Encoding enc;
+	private DecoderNLS decoder;
+	private byte* byteStart;
+	private byte* byteEnd;
+	private byte* bytes;
+	private DecoderFallbackBuffer fallbackBuffer;
 
 	internal bool MoreData { get; }
 	internal int BytesUsed { get; }
@@ -620,16 +620,16 @@ internal class Encoding.EncodingCharBuffer // TypeDefIndex: 458
 
 internal class Encoding.EncodingByteBuffer // TypeDefIndex: 459
 {
-	private byte* bytes; 
-	private byte* byteStart; 
-	private byte* byteEnd; 
-	private char* chars; 
-	private char* charStart; 
-	private char* charEnd; 
-	private int byteCountResult; 
-	private Encoding enc; 
-	private EncoderNLS encoder; 
-	internal EncoderFallbackBuffer fallbackBuffer; 
+	private byte* bytes;
+	private byte* byteStart;
+	private byte* byteEnd;
+	private char* chars;
+	private char* charStart;
+	private char* charEnd;
+	private int byteCountResult;
+	private Encoding enc;
+	private EncoderNLS encoder;
+	internal EncoderFallbackBuffer fallbackBuffer;
 
 	internal bool MoreData { get; }
 	internal int CharsUsed { get; }
@@ -693,8 +693,8 @@ internal abstract class EncodingNLS : Encoding // TypeDefIndex: 460
 
 public abstract class EncodingProvider // TypeDefIndex: 461
 {
-	private static object s_InternalSyncObject; 
-	private static EncodingProvider[] s_providers; 
+	private static object s_InternalSyncObject;
+	private static EncodingProvider[] s_providers;
 
 
 	public abstract Encoding GetEncoding(string name);
@@ -711,10 +711,10 @@ public abstract class EncodingProvider // TypeDefIndex: 461
 
 internal static class EncodingHelper // TypeDefIndex: 479
 {
-	private static Encoding utf8EncodingWithoutMarkers; 
-	private static readonly object lockobj; 
-	private static Assembly i18nAssembly; 
-	private static bool i18nDisabled; 
+	private static Encoding utf8EncodingWithoutMarkers;
+	private static readonly object lockobj;
+	private static Assembly i18nAssembly;
+	private static bool i18nDisabled;
 
 	internal static Encoding UTF8Unmarked { get; }
 
@@ -733,11 +733,11 @@ internal static class EncodingHelper // TypeDefIndex: 479
 
 internal static class EncodingTable // TypeDefIndex: 736
 {
-	internal static InternalEncodingDataItem[] encodingDataPtr; 
-	internal static InternalCodePageDataItem[] codePageDataPtr; 
-	private static int lastEncodingItem; 
-	private static Hashtable hashByName; 
-	private static Hashtable hashByCodePage; 
+	internal static InternalEncodingDataItem[] encodingDataPtr;
+	internal static InternalCodePageDataItem[] codePageDataPtr;
+	private static int lastEncodingItem;
+	private static Hashtable hashByName;
+	private static Hashtable hashByCodePage;
 
 
 	private static int GetNumEncodingItems() { }
@@ -756,609 +756,609 @@ internal static class EncodingTable // TypeDefIndex: 736
 
 }
 
-public class ENCshift_jis : CP932 // TypeDefIndex: 7816
+public class ENCshift_jis : CP932 // TypeDefIndex: 7818
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_2022_jp : CP50220 // TypeDefIndex: 7824
+public class ENCiso_2022_jp : CP50220 // TypeDefIndex: 7826
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCeuc_jp : CP51932 // TypeDefIndex: 7828
+public class ENCeuc_jp : CP51932 // TypeDefIndex: 7830
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCgb2312 : CP936 // TypeDefIndex: 7831
+internal class ENCgb2312 : CP936 // TypeDefIndex: 7833
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCuhc : CP949 // TypeDefIndex: 7836
+internal class ENCuhc : CP949 // TypeDefIndex: 7838
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCeuc_kr : CP51949 // TypeDefIndex: 7837
+internal class ENCeuc_kr : CP51949 // TypeDefIndex: 7839
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCbig5 : CP950 // TypeDefIndex: 7840
+internal class ENCbig5 : CP950 // TypeDefIndex: 7842
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCgb18030 : GB18030Encoding // TypeDefIndex: 7845
+internal class ENCgb18030 : GB18030Encoding // TypeDefIndex: 7847
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1254 : CP1254 // TypeDefIndex: 7858
+public class ENCwindows_1254 : CP1254 // TypeDefIndex: 7860
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1255 : CP1255 // TypeDefIndex: 7860
+public class ENCwindows_1255 : CP1255 // TypeDefIndex: 7862
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1256 : CP1256 // TypeDefIndex: 7862
+public class ENCwindows_1256 : CP1256 // TypeDefIndex: 7864
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_6 : CP28596 // TypeDefIndex: 7864
+public class ENCiso_8859_6 : CP28596 // TypeDefIndex: 7866
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_8 : CP28598 // TypeDefIndex: 7866
+public class ENCiso_8859_8 : CP28598 // TypeDefIndex: 7868
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_9 : CP28599 // TypeDefIndex: 7868
+public class ENCiso_8859_9 : CP28599 // TypeDefIndex: 7870
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_38598 : CP38598 // TypeDefIndex: 7870
+public class ENCwindows_38598 : CP38598 // TypeDefIndex: 7872
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1251 : CP1251 // TypeDefIndex: 7876
+public class ENCwindows_1251 : CP1251 // TypeDefIndex: 7878
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1257 : CP1257 // TypeDefIndex: 7878
+public class ENCwindows_1257 : CP1257 // TypeDefIndex: 7880
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1258 : CP1258 // TypeDefIndex: 7880
+public class ENCwindows_1258 : CP1258 // TypeDefIndex: 7882
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCkoi8_r : CP20866 // TypeDefIndex: 7882
+public class ENCkoi8_r : CP20866 // TypeDefIndex: 7884
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCkoi8_u : CP21866 // TypeDefIndex: 7884
+public class ENCkoi8_u : CP21866 // TypeDefIndex: 7886
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_4 : CP28594 // TypeDefIndex: 7886
+public class ENCiso_8859_4 : CP28594 // TypeDefIndex: 7888
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_5 : CP28595 // TypeDefIndex: 7888
+public class ENCiso_8859_5 : CP28595 // TypeDefIndex: 7890
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_de : CP57002 // TypeDefIndex: 7900
+public class ENCx_iscii_de : CP57002 // TypeDefIndex: 7902
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_be : CP57003 // TypeDefIndex: 7901
+public class ENCx_iscii_be : CP57003 // TypeDefIndex: 7903
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_ta : CP57004 // TypeDefIndex: 7902
+public class ENCx_iscii_ta : CP57004 // TypeDefIndex: 7904
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_te : CP57005 // TypeDefIndex: 7903
+public class ENCx_iscii_te : CP57005 // TypeDefIndex: 7905
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_as : CP57006 // TypeDefIndex: 7904
+public class ENCx_iscii_as : CP57006 // TypeDefIndex: 7906
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_or : CP57007 // TypeDefIndex: 7905
+public class ENCx_iscii_or : CP57007 // TypeDefIndex: 7907
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_ka : CP57008 // TypeDefIndex: 7906
+public class ENCx_iscii_ka : CP57008 // TypeDefIndex: 7908
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_ma : CP57009 // TypeDefIndex: 7907
+public class ENCx_iscii_ma : CP57009 // TypeDefIndex: 7909
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_gu : CP57010 // TypeDefIndex: 7908
+public class ENCx_iscii_gu : CP57010 // TypeDefIndex: 7910
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_pa : CP57011 // TypeDefIndex: 7909
+public class ENCx_iscii_pa : CP57011 // TypeDefIndex: 7911
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_874 : CP874 // TypeDefIndex: 7911
+public class ENCwindows_874 : CP874 // TypeDefIndex: 7913
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm866 : CP866 // TypeDefIndex: 7917
+public class ENCibm866 : CP866 // TypeDefIndex: 7919
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1026 : CP1026 // TypeDefIndex: 7919
+public class ENCibm1026 : CP1026 // TypeDefIndex: 7921
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm869 : CP869 // TypeDefIndex: 7921
+public class ENCibm869 : CP869 // TypeDefIndex: 7923
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm870 : CP870 // TypeDefIndex: 7923
+public class ENCibm870 : CP870 // TypeDefIndex: 7925
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm875 : CP875 // TypeDefIndex: 7925
+public class ENCibm875 : CP875 // TypeDefIndex: 7927
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1047 : CP1047 // TypeDefIndex: 7927
+public class ENCibm1047 : CP1047 // TypeDefIndex: 7929
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01140 : CP1140 // TypeDefIndex: 7929
+public class ENCibm01140 : CP1140 // TypeDefIndex: 7931
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01141 : CP1141 // TypeDefIndex: 7931
+public class ENCibm01141 : CP1141 // TypeDefIndex: 7933
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01142 : CP1142 // TypeDefIndex: 7933
+public class ENCibm01142 : CP1142 // TypeDefIndex: 7935
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01143 : CP1143 // TypeDefIndex: 7935
+public class ENCibm01143 : CP1143 // TypeDefIndex: 7937
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1144 : CP1144 // TypeDefIndex: 7937
+public class ENCibm1144 : CP1144 // TypeDefIndex: 7939
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1145 : CP1145 // TypeDefIndex: 7939
+public class ENCibm1145 : CP1145 // TypeDefIndex: 7941
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1146 : CP1146 // TypeDefIndex: 7941
+public class ENCibm1146 : CP1146 // TypeDefIndex: 7943
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1147 : CP1147 // TypeDefIndex: 7943
+public class ENCibm1147 : CP1147 // TypeDefIndex: 7945
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1148 : CP1148 // TypeDefIndex: 7945
+public class ENCibm1148 : CP1148 // TypeDefIndex: 7947
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1149 : CP1149 // TypeDefIndex: 7947
+public class ENCibm1149 : CP1149 // TypeDefIndex: 7949
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm273 : CP20273 // TypeDefIndex: 7949
+public class ENCibm273 : CP20273 // TypeDefIndex: 7951
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm277 : CP20277 // TypeDefIndex: 7951
+public class ENCibm277 : CP20277 // TypeDefIndex: 7953
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm278 : CP20278 // TypeDefIndex: 7953
+public class ENCibm278 : CP20278 // TypeDefIndex: 7955
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm280 : CP20280 // TypeDefIndex: 7955
+public class ENCibm280 : CP20280 // TypeDefIndex: 7957
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm284 : CP20284 // TypeDefIndex: 7957
+public class ENCibm284 : CP20284 // TypeDefIndex: 7959
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm285 : CP20285 // TypeDefIndex: 7959
+public class ENCibm285 : CP20285 // TypeDefIndex: 7961
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm290 : CP20290 // TypeDefIndex: 7961
+public class ENCibm290 : CP20290 // TypeDefIndex: 7963
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm297 : CP20297 // TypeDefIndex: 7963
+public class ENCibm297 : CP20297 // TypeDefIndex: 7965
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm420 : CP20420 // TypeDefIndex: 7965
+public class ENCibm420 : CP20420 // TypeDefIndex: 7967
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm424 : CP20424 // TypeDefIndex: 7967
+public class ENCibm424 : CP20424 // TypeDefIndex: 7969
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm871 : CP20871 // TypeDefIndex: 7969
+public class ENCibm871 : CP20871 // TypeDefIndex: 7971
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1025 : CP21025 // TypeDefIndex: 7971
+public class ENCibm1025 : CP21025 // TypeDefIndex: 7973
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm037 : CP37 // TypeDefIndex: 7973
+public class ENCibm037 : CP37 // TypeDefIndex: 7975
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm500 : CP500 // TypeDefIndex: 7975
+public class ENCibm500 : CP500 // TypeDefIndex: 7977
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCasmo_708 : CP708 // TypeDefIndex: 7977
+public class ENCasmo_708 : CP708 // TypeDefIndex: 7979
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm852 : CP852 // TypeDefIndex: 7979
+public class ENCibm852 : CP852 // TypeDefIndex: 7981
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm855 : CP855 // TypeDefIndex: 7981
+public class ENCibm855 : CP855 // TypeDefIndex: 7983
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm857 : CP857 // TypeDefIndex: 7983
+public class ENCibm857 : CP857 // TypeDefIndex: 7985
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm00858 : CP858 // TypeDefIndex: 7985
+public class ENCibm00858 : CP858 // TypeDefIndex: 7987
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm862 : CP862 // TypeDefIndex: 7987
+public class ENCibm862 : CP862 // TypeDefIndex: 7989
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm864 : CP864 // TypeDefIndex: 7989
+public class ENCibm864 : CP864 // TypeDefIndex: 7991
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCmacintosh : CP10000 // TypeDefIndex: 7995
+public class ENCmacintosh : CP10000 // TypeDefIndex: 7997
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_mac_icelandic : CP10079 // TypeDefIndex: 7997
+public class ENCx_mac_icelandic : CP10079 // TypeDefIndex: 7999
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1250 : CP1250 // TypeDefIndex: 7999
+public class ENCwindows_1250 : CP1250 // TypeDefIndex: 8001
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1252 : CP1252 // TypeDefIndex: 8001
+public class ENCwindows_1252 : CP1252 // TypeDefIndex: 8003
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1253 : CP1253 // TypeDefIndex: 8003
+public class ENCwindows_1253 : CP1253 // TypeDefIndex: 8005
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_2 : CP28592 // TypeDefIndex: 8005
+public class ENCiso_8859_2 : CP28592 // TypeDefIndex: 8007
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_3 : CP28593 // TypeDefIndex: 8007
+public class ENCiso_8859_3 : CP28593 // TypeDefIndex: 8009
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_7 : CP28597 // TypeDefIndex: 8009
+public class ENCiso_8859_7 : CP28597 // TypeDefIndex: 8011
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_15 : CP28605 // TypeDefIndex: 8011
+public class ENCiso_8859_15 : CP28605 // TypeDefIndex: 8013
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm437 : CP437 // TypeDefIndex: 8013
+public class ENCibm437 : CP437 // TypeDefIndex: 8015
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm850 : CP850 // TypeDefIndex: 8015
+public class ENCibm850 : CP850 // TypeDefIndex: 8017
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm860 : CP860 // TypeDefIndex: 8017
+public class ENCibm860 : CP860 // TypeDefIndex: 8019
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm861 : CP861 // TypeDefIndex: 8019
+public class ENCibm861 : CP861 // TypeDefIndex: 8021
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm863 : CP863 // TypeDefIndex: 8021
+public class ENCibm863 : CP863 // TypeDefIndex: 8023
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm865 : CP865 // TypeDefIndex: 8023
+public class ENCibm865 : CP865 // TypeDefIndex: 8025
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class Encoder // TypeDefIndex: 13359
+public sealed class Encoder // TypeDefIndex: 13374
 {
-	private static readonly Type includeAttrType; 
-	private static readonly Type excludeAttrType; 
-	private static readonly Type typeHintAttrType; 
-	private readonly StringBuilder builder; 
-	private readonly EncodeOptions options; 
-	private int indent; 
+	private static readonly Type includeAttrType;
+	private static readonly Type excludeAttrType;
+	private static readonly Type typeHintAttrType;
+	private readonly StringBuilder builder;
+	private readonly EncodeOptions options;
+	private int indent;
 
 	private bool PrettyPrintEnabled { get; }
 	private bool TypeHintsEnabled { get; }

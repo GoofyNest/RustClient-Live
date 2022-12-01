@@ -1,6 +1,6 @@
 public enum CallbackType // TypeDefIndex: 5119
 {
-	public int value__; 
+	public int value__;
 	public const CallbackType SteamServersConnected = 101;
 	public const CallbackType SteamServerConnectFailure = 102;
 	public const CallbackType SteamServersDisconnected = 103;
@@ -45,6 +45,8 @@ public enum CallbackType // TypeDefIndex: 5119
 	public const CallbackType SetPersonaNameResponse = 347;
 	public const CallbackType UnreadChatMessagesChanged = 348;
 	public const CallbackType OverlayBrowserProtocolNavigation = 349;
+	public const CallbackType EquippedProfileItemsChanged = 350;
+	public const CallbackType EquippedProfileItems = 351;
 	public const CallbackType FavoritesListChanged = 502;
 	public const CallbackType LobbyInvite = 503;
 	public const CallbackType LobbyEnter = 504;

@@ -1,6 +1,6 @@
 public sealed class RuntimeCompatibilityAttribute : Attribute // TypeDefIndex: 1287
 {
-	private bool m_wrapNonExceptionThrows; 
+	private bool m_wrapNonExceptionThrows;
 
 	public bool WrapNonExceptionThrows { set; }
 

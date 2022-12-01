@@ -1,32 +1,32 @@
-public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 11500
+public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 11507
 {
-	[HeaderAttribute] 
-	[SerializeField] 
-	private TrainEngine trainEngine; 
-	[SerializeField] 
-	private Transform needleA; 
-	[SerializeField] 
-	private Transform needleB; 
-	[SerializeField] 
-	private Transform needleC; 
-	[SerializeField] 
-	private float maxAngle; 
-	[SerializeField] 
-	private float speedoMoveSpeed; 
-	[SerializeField] 
-	private float pressureMoveSpeed; 
-	[SerializeField] 
-	private float fanAcceleration; 
-	[SerializeField] 
-	private float fanMaxSpeed; 
-	[SerializeField] 
-	private float speedoMax; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private Transform[] engineFans; 
-	private Vector3 _v3; 
-	private float fanPrevSpeed; 
-	private float[] fanSpeedVariation; 
+	[HeaderAttribute]
+	[SerializeField]
+	private TrainEngine trainEngine;
+	[SerializeField]
+	private Transform needleA;
+	[SerializeField]
+	private Transform needleB;
+	[SerializeField]
+	private Transform needleC;
+	[SerializeField]
+	private float maxAngle;
+	[SerializeField]
+	private float speedoMoveSpeed;
+	[SerializeField]
+	private float pressureMoveSpeed;
+	[SerializeField]
+	private float fanAcceleration;
+	[SerializeField]
+	private float fanMaxSpeed;
+	[SerializeField]
+	private float speedoMax;
+	[HeaderAttribute]
+	[SerializeField]
+	private Transform[] engineFans;
+	private Vector3 _v3;
+	private float fanPrevSpeed;
+	private float[] fanSpeedVariation;
 
 
 	public void UpdateTick() { }
@@ -43,9 +43,9 @@ public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 11500
 
 }
 
-private enum LocomotiveExtraVisuals.NeedleType // TypeDefIndex: 11501
+private enum LocomotiveExtraVisuals.NeedleType // TypeDefIndex: 11508
 {
-	public int value__; 
+	public int value__;
 	public const LocomotiveExtraVisuals.NeedleType Speed = 0;
 	public const LocomotiveExtraVisuals.NeedleType Pressure = 1;
 

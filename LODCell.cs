@@ -1,12 +1,12 @@
-public class LODCell : Pool.IPooled // TypeDefIndex: 11668
+public class LODCell : Pool.IPooled // TypeDefIndex: 11675
 {
-	public Vector3 Position; 
-	public float Size; 
-	public float Distance; 
-	public float DistanceY; 
-	public float Timestamp; 
-	public EnvironmentType Environment; 
-	private ListHashSet<ILOD> members; 
+	public Vector3 Position;
+	public float Size;
+	public float Distance;
+	public float DistanceY;
+	public float Timestamp;
+	public EnvironmentType Environment;
+	private ListHashSet<ILOD> members;
 
 	public int Count { get; }
 

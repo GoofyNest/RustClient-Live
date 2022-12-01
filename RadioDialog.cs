@@ -1,13 +1,13 @@
-public class RadioDialog : UIDialog // TypeDefIndex: 12666
+public class RadioDialog : UIDialog // TypeDefIndex: 12680
 {
-	public RustInput IpInput; 
-	public GameObjectRef FavouritePrefab; 
-	public Transform FavouritesContainer; 
-	public GameObject HasCassetteRoot; 
-	public static RadioDialog Instance; 
-	private BoomBox currentBox; 
-	private List<FavouriteRadioStation> spawnedFavourites; 
-	private string selectedUrl; 
+	public RustInput IpInput;
+	public GameObjectRef FavouritePrefab;
+	public Transform FavouritesContainer;
+	public GameObject HasCassetteRoot;
+	public static RadioDialog Instance;
+	private BoomBox currentBox;
+	private List<FavouriteRadioStation> spawnedFavourites;
+	private string selectedUrl;
 
 
 	public void SetBoomBox(BoomBox box) { }
@@ -28,10 +28,10 @@ public class RadioDialog : UIDialog // TypeDefIndex: 12666
 
 }
 
-private sealed class RadioDialog.<>c__DisplayClass12_0 // TypeDefIndex: 12667
+private sealed class RadioDialog.<>c__DisplayClass12_0 // TypeDefIndex: 12681
 {
-	public KeyValuePair<string, string> favourite; 
-	public RadioDialog <>4__this; 
+	public KeyValuePair<string, string> favourite;
+	public RadioDialog <>4__this;
 
 
 	public void .ctor() { }

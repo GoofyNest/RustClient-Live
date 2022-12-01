@@ -1,12 +1,12 @@
-public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5744
+public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5746
 {
-	private static readonly TimeSpan TimeoutDefault; 
-	private Uri base_address; 
-	private CancellationTokenSource cts; 
-	private bool disposed; 
-	private HttpRequestHeaders headers; 
-	private long buffer_size; 
-	private TimeSpan timeout; 
+	private static readonly TimeSpan TimeoutDefault;
+	private Uri base_address;
+	private CancellationTokenSource cts;
+	private bool disposed;
+	private HttpRequestHeaders headers;
+	private long buffer_size;
+	private TimeSpan timeout;
 
 	public long MaxResponseContentBufferSize { get; }
 	public TimeSpan Timeout { set; }
@@ -34,55 +34,55 @@ public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5744
 
 	public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task<HttpResponseMessage> SendAsyncWorker(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<string> GetStringAsync(string requestUri) { }
 
 	private static void .cctor() { }
 
-	[DebuggerHiddenAttribute] 
-	[CompilerGeneratedAttribute] 
+	[DebuggerHiddenAttribute]
+	[CompilerGeneratedAttribute]
 	private Task<HttpResponseMessage> <>n__0(HttpRequestMessage request, CancellationToken cancellationToken) { }
 
 }
 
-private struct HttpClient.<SendAsyncWorker>d__47 : IAsyncStateMachine // TypeDefIndex: 5745
+private struct HttpClient.<SendAsyncWorker>d__47 : IAsyncStateMachine // TypeDefIndex: 5747
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<HttpResponseMessage> <>t__builder; 
-	public HttpClient <>4__this; 
-	public CancellationToken cancellationToken; 
-	public HttpRequestMessage request; 
-	public HttpCompletionOption completionOption; 
-	private HttpResponseMessage <response>5__1; 
-	private CancellationTokenSource <lcts>5__2; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<HttpResponseMessage> <>u__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<HttpResponseMessage> <>t__builder;
+	public HttpClient <>4__this;
+	public CancellationToken cancellationToken;
+	public HttpRequestMessage request;
+	public HttpCompletionOption completionOption;
+	private HttpResponseMessage <response>5__1;
+	private CancellationTokenSource <lcts>5__2;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<HttpResponseMessage> <>u__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct HttpClient.<GetStringAsync>d__52 : IAsyncStateMachine // TypeDefIndex: 5746
+private struct HttpClient.<GetStringAsync>d__52 : IAsyncStateMachine // TypeDefIndex: 5748
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<string> <>t__builder; 
-	public HttpClient <>4__this; 
-	public string requestUri; 
-	private HttpResponseMessage <resp>5__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<HttpResponseMessage> <>u__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<string> <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<string> <>t__builder;
+	public HttpClient <>4__this;
+	public string requestUri;
+	private HttpResponseMessage <resp>5__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<HttpResponseMessage> <>u__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<string> <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

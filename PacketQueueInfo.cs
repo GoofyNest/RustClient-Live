@@ -1,17 +1,17 @@
-public struct PacketQueueInfo // TypeDefIndex: 8991
+public struct PacketQueueInfo // TypeDefIndex: 8993
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <IncomingPacketQueueMaxSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <IncomingPacketQueueCurrentSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <IncomingPacketQueueCurrentPacketCount>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <OutgoingPacketQueueMaxSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <OutgoingPacketQueueCurrentSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <OutgoingPacketQueueCurrentPacketCount>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ulong <IncomingPacketQueueMaxSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <IncomingPacketQueueCurrentSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <IncomingPacketQueueCurrentPacketCount>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <OutgoingPacketQueueMaxSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <OutgoingPacketQueueCurrentSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <OutgoingPacketQueueCurrentPacketCount>k__BackingField;
 
 	public ulong IncomingPacketQueueMaxSizeBytes { get; set; }
 	public ulong IncomingPacketQueueCurrentSizeBytes { get; set; }
@@ -21,40 +21,40 @@ public struct PacketQueueInfo // TypeDefIndex: 8991
 	public ulong OutgoingPacketQueueCurrentPacketCount { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_IncomingPacketQueueMaxSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IncomingPacketQueueMaxSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_IncomingPacketQueueCurrentSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IncomingPacketQueueCurrentSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_IncomingPacketQueueCurrentPacketCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IncomingPacketQueueCurrentPacketCount(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_OutgoingPacketQueueMaxSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OutgoingPacketQueueMaxSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_OutgoingPacketQueueCurrentSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OutgoingPacketQueueCurrentSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_OutgoingPacketQueueCurrentPacketCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OutgoingPacketQueueCurrentPacketCount(ulong value) { }
 
 	internal void Set(ref PacketQueueInfoInternal other) { }

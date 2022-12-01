@@ -1,12 +1,12 @@
-public class DiagnosticsTraceWriter : ITraceWriter // TypeDefIndex: 5981
+public class DiagnosticsTraceWriter : ITraceWriter // TypeDefIndex: 5983
 {
-	[CompilerGeneratedAttribute] 
-	private TraceLevel <LevelFilter>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private TraceLevel <LevelFilter>k__BackingField;
 
 	public TraceLevel LevelFilter { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TraceLevel get_LevelFilter() { }
 
 	private TraceEventType GetTraceEventType(TraceLevel level) { }

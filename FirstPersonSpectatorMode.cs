@@ -1,14 +1,14 @@
-public static class FirstPersonSpectatorMode // TypeDefIndex: 10915
+public static class FirstPersonSpectatorMode // TypeDefIndex: 10921
 {
-	private static ViewModel createdViewmodel; 
-	private static BaseViewModel createdViewmodelInstance; 
-	private static BasePlayer lastPlayer; 
-	private static Vector3 smoothLookDir; 
-	private static bool wasParented; 
-	private static Item lastHeldItem; 
-	private static TimeUntil reloadEnds; 
-	private static float duckTarget; 
-	private static TimeSince timeOnCurrentPlayer; 
+	private static ViewModel createdViewmodel;
+	private static BaseViewModel createdViewmodelInstance;
+	private static BasePlayer lastPlayer;
+	private static Vector3 smoothLookDir;
+	private static bool wasParented;
+	private static Item lastHeldItem;
+	private static TimeUntil reloadEnds;
+	private static float duckTarget;
+	private static TimeSince timeOnCurrentPlayer;
 
 
 	public static void Apply(Camera cam, BaseEntity target) { }

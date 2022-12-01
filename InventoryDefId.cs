@@ -1,6 +1,6 @@
-public struct InventoryDefId : IEquatable<InventoryDefId>, IComparable<InventoryDefId> // TypeDefIndex: 5544
+public struct InventoryDefId : IEquatable<InventoryDefId>, IComparable<InventoryDefId> // TypeDefIndex: 5546
 {
-	public int Value; 
+	public int Value;
 
 
 	public static InventoryDefId op_Implicit(int value) { }

@@ -1,4 +1,4 @@
-public sealed class ResolutionTypeParameter : ParameterOverride<ResolutionType> // TypeDefIndex: 12005
+public sealed class ResolutionTypeParameter : ParameterOverride<ResolutionType> // TypeDefIndex: 12012
 {
 
 	public void .ctor() { }

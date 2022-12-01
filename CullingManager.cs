@@ -1,6 +1,6 @@
-public class CullingManager : SingletonComponent<CullingManager> // TypeDefIndex: 11577
+public class CullingManager : SingletonComponent<CullingManager> // TypeDefIndex: 11584
 {
-	private List<CullingVolume> volumes; 
+	private List<CullingVolume> volumes;
 
 
 	public void MarkSeen(Vector3 pos) { }

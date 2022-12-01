@@ -1,8 +1,8 @@
 internal static class CFNetwork // TypeDefIndex: 2525
 {
-	private static object lock_obj; 
-	private static Queue<CFNetwork.GetProxyData> get_proxy_queue; 
-	private static AutoResetEvent proxy_event; 
+	private static object lock_obj;
+	private static Queue<CFNetwork.GetProxyData> get_proxy_queue;
+	private static AutoResetEvent proxy_event;
 
 
 	private static extern IntPtr CFNetworkCopyProxiesForAutoConfigurationScriptSequential(IntPtr proxyAutoConfigurationScript, IntPtr targetURL, out IntPtr error) { }
@@ -41,11 +41,11 @@ internal static class CFNetwork // TypeDefIndex: 2525
 
 private class CFNetwork.GetProxyData : IDisposable // TypeDefIndex: 2526
 {
-	public IntPtr script; 
-	public IntPtr targetUri; 
-	public IntPtr error; 
-	public IntPtr result; 
-	public ManualResetEvent evt; 
+	public IntPtr script;
+	public IntPtr targetUri;
+	public IntPtr error;
+	public IntPtr result;
+	public ManualResetEvent evt;
 
 
 	public void Dispose() { }
@@ -69,8 +69,8 @@ private sealed class CFNetwork.CFProxyAutoConfigurationResultCallback : Multicas
 
 private class CFNetwork.CFWebProxy : IWebProxy // TypeDefIndex: 2528
 {
-	private ICredentials credentials; 
-	private bool userSpecified; 
+	private ICredentials credentials;
+	private bool userSpecified;
 
 	public ICredentials Credentials { get; }
 
@@ -95,8 +95,8 @@ private class CFNetwork.CFWebProxy : IWebProxy // TypeDefIndex: 2528
 
 private sealed class CFNetwork.<>c__DisplayClass13_0 // TypeDefIndex: 2529
 {
-	public CFProxy[] proxies; 
-	public CFRunLoop runLoop; 
+	public CFProxy[] proxies;
+	public CFRunLoop runLoop;
 
 
 	public void .ctor() { }

@@ -1,30 +1,30 @@
 public sealed class DictationRecognizer // TypeDefIndex: 3599
 {
-	private IntPtr m_Recognizer; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private DictationRecognizer.DictationHypothesisDelegate DictationHypothesis; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private DictationRecognizer.DictationResultDelegate DictationResult; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private DictationRecognizer.DictationCompletedDelegate DictationComplete; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private DictationRecognizer.DictationErrorHandler DictationError; 
+	private IntPtr m_Recognizer;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private DictationRecognizer.DictationHypothesisDelegate DictationHypothesis;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private DictationRecognizer.DictationResultDelegate DictationResult;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private DictationRecognizer.DictationCompletedDelegate DictationComplete;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private DictationRecognizer.DictationErrorHandler DictationError;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DictationRecognizer_InvokeHypothesisGeneratedEvent(string keyword) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DictationRecognizer_InvokeResultGeneratedEvent(string keyword, ConfidenceLevel minimumConfidence) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DictationRecognizer_InvokeCompletedEvent(DictationCompletionCause cause) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DictationRecognizer_InvokeErrorEvent(string error, int hresult) { }
 
 }

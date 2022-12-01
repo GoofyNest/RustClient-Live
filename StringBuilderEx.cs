@@ -1,7 +1,7 @@
-public static class StringBuilderEx // TypeDefIndex: 6581
+public static class StringBuilderEx // TypeDefIndex: 6583
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void Clear(StringBuilder value) { }
 
 }

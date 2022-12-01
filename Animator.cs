@@ -13,7 +13,7 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 	public bool fireEvents { set; }
 
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isInitialized() { }
 
 	public float GetFloat(string name) { }
@@ -74,14 +74,14 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 
 	public void SetLookAtPosition(Vector3 lookAtPosition) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void SetLookAtPositionInternal(Vector3 lookAtPosition) { }
 
 	public void SetLookAtWeight(float weight) { }
 
 	public void SetLookAtWeight(float weight, float bodyWeight, float headWeight, float eyesWeight, float clampWeight) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void SetLookAtWeightInternal(float weight, float bodyWeight, float headWeight, float eyesWeight, float clampWeight) { }
 
 	public int get_layerCount() { }
@@ -98,10 +98,10 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 
 	public AnimatorStateInfo GetNextAnimatorStateInfo(int layerIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public AnimatorClipInfo[] GetCurrentAnimatorClipInfo(int layerIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public AnimatorClipInfo[] GetNextAnimatorClipInfo(int layerIndex) { }
 
 	public bool IsInTransition(int layerIndex) { }
@@ -114,7 +114,7 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 
 	public void CrossFade(string stateName, float normalizedTransitionDuration, int layer, float normalizedTimeOffset, float normalizedTransitionTime) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void CrossFade(int stateHashName, float normalizedTransitionDuration, int layer, float normalizedTimeOffset, float normalizedTransitionTime) { }
 
 	public void CrossFade(int stateHashName, float normalizedTransitionDuration, int layer, float normalizedTimeOffset) { }
@@ -127,7 +127,7 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 
 	public void Play(string stateName, int layer, float normalizedTime) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Play(int stateNameHash, int layer, float normalizedTime) { }
 
 	public void Play(int stateNameHash, int layer) { }
@@ -142,12 +142,12 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 
 	public void set_runtimeAnimatorController(RuntimeAnimatorController value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_hasBoundPlayables() { }
 
 	public bool HasState(int layerIndex, int stateID) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static int StringToHash(string name) { }
 
 	public void set_avatar(Avatar value) { }
@@ -156,55 +156,55 @@ public class Animator : Behaviour // TypeDefIndex: 4492
 
 	private bool IsInIKPass() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetFloatString(string name, float value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetFloatID(int id, float value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private float GetFloatString(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private float GetFloatID(int id) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetBoolString(string name, bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetBoolID(int id, bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private bool GetBoolID(int id) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetIntegerString(string name, int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetIntegerID(int id, int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private int GetIntegerString(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetTriggerString(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetTriggerID(int id) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void ResetTriggerString(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void ResetTriggerID(int id) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetFloatStringDamp(string name, float value, float dampTime, float deltaTime) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetFloatIDDamp(int id, float value, float dampTime, float deltaTime) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void Update(float deltaTime) { }
 
 	public bool get_logWarnings() { }

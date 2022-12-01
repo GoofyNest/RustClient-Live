@@ -1,17 +1,17 @@
-public class CinematicEntity : BaseEntity // TypeDefIndex: 11004
+public class CinematicEntity : BaseEntity // TypeDefIndex: 11010
 {
 	private const BaseEntity.Flags HideMesh = 128;
-	public GameObject[] DisableObjects; 
-	private static List<CinematicEntity> clientList; 
-	public static Nullable<bool> demoOverride; 
+	public GameObject[] DisableObjects;
+	private static List<CinematicEntity> clientList;
+	public static Nullable<bool> demoOverride;
 
 
 	public override void ClientOnEnable() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void DemoHideObjects(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void RemoveDemoOverride() { }
 
 	public override void DestroyShared() { }

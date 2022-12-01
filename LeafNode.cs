@@ -1,6 +1,6 @@
 internal class LeafNode : SyntaxTreeNode // TypeDefIndex: 2157
 {
-	private int pos; 
+	private int pos;
 
 	public int Pos { get; set; }
 	public override bool IsNullable { get; }

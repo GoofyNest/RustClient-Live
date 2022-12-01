@@ -1,6 +1,6 @@
 public enum UnicodeCategory // TypeDefIndex: 732
 {
-	public int value__; 
+	public int value__;
 	public const UnicodeCategory UppercaseLetter = 0;
 	public const UnicodeCategory LowercaseLetter = 1;
 	public const UnicodeCategory TitlecaseLetter = 2;

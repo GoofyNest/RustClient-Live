@@ -15,7 +15,7 @@ public sealed class AndroidJavaRunnable : MulticastDelegate
 
 public sealed class AndroidJavaException : Exception // TypeDefIndex: 4469
 {
-	private string mJavaStackTrace; 
+	private string mJavaStackTrace;
 
 	public override string StackTrace { get; }
 
@@ -28,7 +28,7 @@ public sealed class AndroidJavaException : Exception // TypeDefIndex: 4469
 
 internal class AndroidJavaRunnableProxy : AndroidJavaProxy // TypeDefIndex: 4471
 {
-	private AndroidJavaRunnable mRunnable; 
+	private AndroidJavaRunnable mRunnable;
 
 
 	public void .ctor(AndroidJavaRunnable runnable) { }
@@ -37,10 +37,10 @@ internal class AndroidJavaRunnableProxy : AndroidJavaProxy // TypeDefIndex: 4471
 
 public class AndroidJavaProxy // TypeDefIndex: 4472
 {
-	public readonly AndroidJavaClass javaInterface; 
-	internal IntPtr proxyObject; 
-	private static readonly GlobalJavaObjectRef s_JavaLangSystemClass; 
-	private static readonly IntPtr s_HashCodeMethodID; 
+	public readonly AndroidJavaClass javaInterface;
+	internal IntPtr proxyObject;
+	private static readonly GlobalJavaObjectRef s_JavaLangSystemClass;
+	private static readonly IntPtr s_HashCodeMethodID;
 
 
 	public void .ctor(string javaInterface) { }
@@ -63,9 +63,9 @@ public class AndroidJavaProxy // TypeDefIndex: 4472
 
 public class AndroidJavaObject : IDisposable // TypeDefIndex: 4473
 {
-	private static bool enableDebugPrints; 
-	internal GlobalJavaObjectRef m_jobject; 
-	internal GlobalJavaObjectRef m_jclass; 
+	private static bool enableDebugPrints;
+	internal GlobalJavaObjectRef m_jobject;
+	internal GlobalJavaObjectRef m_jclass;
 
 
 	public void .ctor(string className, object[] args) { }
@@ -167,14 +167,14 @@ public class AndroidJavaClass : AndroidJavaObject // TypeDefIndex: 4474
 
 internal class AndroidReflection // TypeDefIndex: 4475
 {
-	private static readonly GlobalJavaObjectRef s_ReflectionHelperClass; 
-	private static readonly IntPtr s_ReflectionHelperGetConstructorID; 
-	private static readonly IntPtr s_ReflectionHelperGetMethodID; 
-	private static readonly IntPtr s_ReflectionHelperGetFieldID; 
-	private static readonly IntPtr s_ReflectionHelperGetFieldSignature; 
-	private static readonly IntPtr s_ReflectionHelperNewProxyInstance; 
-	private static readonly IntPtr s_ReflectionHelperSetNativeExceptionOnProxy; 
-	private static readonly IntPtr s_FieldGetDeclaringClass; 
+	private static readonly GlobalJavaObjectRef s_ReflectionHelperClass;
+	private static readonly IntPtr s_ReflectionHelperGetConstructorID;
+	private static readonly IntPtr s_ReflectionHelperGetMethodID;
+	private static readonly IntPtr s_ReflectionHelperGetFieldID;
+	private static readonly IntPtr s_ReflectionHelperGetFieldSignature;
+	private static readonly IntPtr s_ReflectionHelperNewProxyInstance;
+	private static readonly IntPtr s_ReflectionHelperSetNativeExceptionOnProxy;
+	private static readonly IntPtr s_FieldGetDeclaringClass;
 
 
 	public static bool IsPrimitive(Type t) { }
@@ -247,188 +247,188 @@ public static class AndroidJNIHelper // TypeDefIndex: 4478
 public static class AndroidJNI // TypeDefIndex: 4479
 {
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr FindClass(string name) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr FromReflectedMethod(IntPtr refMethod) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ExceptionOccurred() { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void ExceptionClear() { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr NewGlobalRef(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void DeleteGlobalRef(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr NewWeakGlobalRef(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void DeleteWeakGlobalRef(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr NewLocalRef(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void DeleteLocalRef(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr NewObject(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr GetObjectClass(IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr GetMethodID(IntPtr clazz, string name, string sig) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr GetStaticMethodID(IntPtr clazz, string name, string sig) { }
 
 	public static IntPtr NewString(string chars) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	private static IntPtr NewStringFromStr(string chars) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static string GetStringChars(IntPtr str) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static string CallStringMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr CallObjectMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static int CallIntMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static bool CallBooleanMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static short CallShortMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static sbyte CallSByteMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static char CallCharMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static float CallFloatMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static double CallDoubleMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static long CallLongMethod(IntPtr obj, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static string CallStaticStringMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr CallStaticObjectMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static int CallStaticIntMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static bool CallStaticBooleanMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static short CallStaticShortMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static sbyte CallStaticSByteMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static char CallStaticCharMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static float CallStaticFloatMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static double CallStaticDoubleMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static long CallStaticLongMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void CallStaticVoidMethod(IntPtr clazz, IntPtr methodID, jvalue[] args) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToBooleanArray(bool[] array) { }
 
-	[ThreadSafeAttribute] 
-	[ObsoleteAttribute] 
+	[ThreadSafeAttribute]
+	[ObsoleteAttribute]
 	public static IntPtr ToByteArray(byte[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToSByteArray(sbyte[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToCharArray(char[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToShortArray(short[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToIntArray(int[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToLongArray(long[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToFloatArray(float[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToDoubleArray(double[] array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr ToObjectArray(IntPtr[] array, IntPtr arrayClass) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static bool[] FromBooleanArray(IntPtr array) { }
 
-	[ObsoleteAttribute] 
-	[ThreadSafeAttribute] 
+	[ObsoleteAttribute]
+	[ThreadSafeAttribute]
 	public static byte[] FromByteArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static sbyte[] FromSByteArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static char[] FromCharArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static short[] FromShortArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static int[] FromIntArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static long[] FromLongArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static float[] FromFloatArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static double[] FromDoubleArray(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static int GetArrayLength(IntPtr array) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr NewObjectArray(int size, IntPtr clazz, IntPtr obj) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static IntPtr GetObjectArrayElement(IntPtr array, int index) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static void SetObjectArrayElement(IntPtr array, int index, IntPtr obj) { }
 
 }
@@ -546,31 +546,31 @@ internal class AndroidJNISafe // TypeDefIndex: 4480
 
 }
 
-public static class AndroidBindings // TypeDefIndex: 8278
+public static class AndroidBindings // TypeDefIndex: 8280
 {
 
 	internal static extern Result EOS_Initialize(ref AndroidInitializeOptionsInternal options) { }
 
 }
 
-public struct AndroidInitializeOptions // TypeDefIndex: 9856
+public struct AndroidInitializeOptions // TypeDefIndex: 9858
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <AllocateMemoryFunction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ReallocateMemoryFunction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ReleaseMemoryFunction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <Reserved>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<AndroidInitializeOptionsSystemInitializeOptions> <SystemInitializeOptions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<InitializeThreadAffinity> <OverrideThreadAffinity>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <AllocateMemoryFunction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <ReallocateMemoryFunction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <ReleaseMemoryFunction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <Reserved>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<AndroidInitializeOptionsSystemInitializeOptions> <SystemInitializeOptions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<InitializeThreadAffinity> <OverrideThreadAffinity>k__BackingField;
 
 	public IntPtr AllocateMemoryFunction { get; set; }
 	public IntPtr ReallocateMemoryFunction { get; set; }
@@ -582,67 +582,67 @@ public struct AndroidInitializeOptions // TypeDefIndex: 9856
 	public Nullable<InitializeThreadAffinity> OverrideThreadAffinity { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_AllocateMemoryFunction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllocateMemoryFunction(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ReallocateMemoryFunction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReallocateMemoryFunction(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ReleaseMemoryFunction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReleaseMemoryFunction(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductVersion(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_Reserved() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Reserved(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<AndroidInitializeOptionsSystemInitializeOptions> get_SystemInitializeOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SystemInitializeOptions(Nullable<AndroidInitializeOptionsSystemInitializeOptions> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<InitializeThreadAffinity> get_OverrideThreadAffinity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverrideThreadAffinity(Nullable<InitializeThreadAffinity> value) { }
 
 }
 
-internal struct AndroidInitializeOptionsInternal : ISettable<AndroidInitializeOptions>, IDisposable // TypeDefIndex: 9857
+internal struct AndroidInitializeOptionsInternal : ISettable<AndroidInitializeOptions>, IDisposable // TypeDefIndex: 9859
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AllocateMemoryFunction; 
-	private IntPtr m_ReallocateMemoryFunction; 
-	private IntPtr m_ReleaseMemoryFunction; 
-	private IntPtr m_ProductName; 
-	private IntPtr m_ProductVersion; 
-	private IntPtr m_Reserved; 
-	private IntPtr m_SystemInitializeOptions; 
-	private IntPtr m_OverrideThreadAffinity; 
+	private int m_ApiVersion;
+	private IntPtr m_AllocateMemoryFunction;
+	private IntPtr m_ReallocateMemoryFunction;
+	private IntPtr m_ReleaseMemoryFunction;
+	private IntPtr m_ProductName;
+	private IntPtr m_ProductVersion;
+	private IntPtr m_Reserved;
+	private IntPtr m_SystemInitializeOptions;
+	private IntPtr m_OverrideThreadAffinity;
 
 	public IntPtr AllocateMemoryFunction { set; }
 	public IntPtr ReallocateMemoryFunction { set; }
@@ -678,48 +678,48 @@ internal struct AndroidInitializeOptionsInternal : ISettable<AndroidInitializeOp
 
 }
 
-public struct AndroidInitializeOptionsSystemInitializeOptions // TypeDefIndex: 9858
+public struct AndroidInitializeOptionsSystemInitializeOptions // TypeDefIndex: 9860
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <Reserved>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <OptionalInternalDirectory>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <OptionalExternalDirectory>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <Reserved>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <OptionalInternalDirectory>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <OptionalExternalDirectory>k__BackingField;
 
 	public IntPtr Reserved { get; set; }
 	public Utf8String OptionalInternalDirectory { get; set; }
 	public Utf8String OptionalExternalDirectory { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_Reserved() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Reserved(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_OptionalInternalDirectory() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OptionalInternalDirectory(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_OptionalExternalDirectory() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OptionalExternalDirectory(Utf8String value) { }
 
 	internal void Set(ref AndroidInitializeOptionsSystemInitializeOptionsInternal other) { }
 
 }
 
-internal struct AndroidInitializeOptionsSystemInitializeOptionsInternal : IGettable<AndroidInitializeOptionsSystemInitializeOptions>, ISettable<AndroidInitializeOptionsSystemInitializeOptions>, IDisposable // TypeDefIndex: 9859
+internal struct AndroidInitializeOptionsSystemInitializeOptionsInternal : IGettable<AndroidInitializeOptionsSystemInitializeOptions>, ISettable<AndroidInitializeOptionsSystemInitializeOptions>, IDisposable // TypeDefIndex: 9861
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Reserved; 
-	private IntPtr m_OptionalInternalDirectory; 
-	private IntPtr m_OptionalExternalDirectory; 
+	private int m_ApiVersion;
+	private IntPtr m_Reserved;
+	private IntPtr m_OptionalInternalDirectory;
+	private IntPtr m_OptionalExternalDirectory;
 
 	public IntPtr Reserved { get; set; }
 	public Utf8String OptionalInternalDirectory { get; set; }

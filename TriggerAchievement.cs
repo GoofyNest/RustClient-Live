@@ -1,11 +1,11 @@
-public class TriggerAchievement : TriggerBase // TypeDefIndex: 11760
+public class TriggerAchievement : TriggerBase // TypeDefIndex: 11767
 {
-	public string statToIncrease; 
-	public string achievementOnEnter; 
-	public string requiredVehicleName; 
-	[TooltipAttribute] 
-	public bool serverSide; 
-	private List<ulong> triggeredPlayers; 
+	public string statToIncrease;
+	public string achievementOnEnter;
+	public string requiredVehicleName;
+	[TooltipAttribute]
+	public bool serverSide;
+	private List<ulong> triggeredPlayers;
 
 
 	public void OnPuzzleReset() { }

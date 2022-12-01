@@ -1,6 +1,6 @@
 internal static class WebExceptionMapping // TypeDefIndex: 2900
 {
-	private static readonly string[] s_Mapping; 
+	private static readonly string[] s_Mapping;
 
 
 	internal static string GetWebStatusString(WebExceptionStatus status) { }

@@ -1,6 +1,6 @@
 internal sealed class VisualTreeUpdater // TypeDefIndex: 4623
 {
-	private VisualTreeUpdater.UpdaterArray m_UpdaterArray; 
+	private VisualTreeUpdater.UpdaterArray m_UpdaterArray;
 
 
 	public void UpdateVisualTreePhase(VisualTreeUpdatePhase phase) { }
@@ -11,7 +11,7 @@ internal sealed class VisualTreeUpdater // TypeDefIndex: 4623
 
 private class VisualTreeUpdater.UpdaterArray // TypeDefIndex: 4624
 {
-	private IVisualTreeUpdater[] m_VisualTreeUpdaters; 
+	private IVisualTreeUpdater[] m_VisualTreeUpdaters;
 
 	public IVisualTreeUpdater Item { get; }
 	public IVisualTreeUpdater Item { get; }

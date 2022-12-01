@@ -1,6 +1,6 @@
-public class LiquidVessel : HeldEntity // TypeDefIndex: 10316
+public class LiquidVessel : HeldEntity // TypeDefIndex: 10319
 {
-	private float busyTime; 
+	private float busyTime;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

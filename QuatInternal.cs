@@ -1,9 +1,9 @@
-internal struct QuatInternal : IGettable<Quat>, ISettable<Quat>, IDisposable // TypeDefIndex: 9796
+internal struct QuatInternal : IGettable<Quat>, ISettable<Quat>, IDisposable // TypeDefIndex: 9798
 {
-	private float m_w; 
-	private float m_x; 
-	private float m_y; 
-	private float m_z; 
+	private float m_w;
+	private float m_x;
+	private float m_y;
+	private float m_z;
 
 	public float w { get; set; }
 	public float x { get; set; }

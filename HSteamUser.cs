@@ -1,6 +1,6 @@
-internal struct HSteamUser : IEquatable<HSteamUser>, IComparable<HSteamUser> // TypeDefIndex: 5529
+internal struct HSteamUser : IEquatable<HSteamUser>, IComparable<HSteamUser> // TypeDefIndex: 5531
 {
-	public int Value; 
+	public int Value;
 
 
 	public override string ToString() { }

@@ -1,6 +1,6 @@
 internal class EnvoyTerminatorSink : IMessageSink // TypeDefIndex: 1235
 {
-	public static EnvoyTerminatorSink Instance; 
+	public static EnvoyTerminatorSink Instance;
 
 
 	public IMessage SyncProcessMessage(IMessage msg) { }

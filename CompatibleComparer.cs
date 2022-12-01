@@ -1,7 +1,7 @@
 internal class CompatibleComparer : IEqualityComparer // TypeDefIndex: 1386
 {
-	private IComparer _comparer; 
-	private IHashCodeProvider _hcp; 
+	private IComparer _comparer;
+	private IHashCodeProvider _hcp;
 
 	internal IComparer Comparer { get; }
 	internal IHashCodeProvider HashCodeProvider { get; }
@@ -23,10 +23,10 @@ internal class CompatibleComparer : IEqualityComparer // TypeDefIndex: 1386
 
 internal class CompatibleComparer : IEqualityComparer // TypeDefIndex: 3105
 {
-	private IComparer _comparer; 
-	private static IComparer defaultComparer; 
-	private IHashCodeProvider _hcp; 
-	private static IHashCodeProvider defaultHashProvider; 
+	private IComparer _comparer;
+	private static IComparer defaultComparer;
+	private IHashCodeProvider _hcp;
+	private static IHashCodeProvider defaultHashProvider;
 
 	public IComparer Comparer { get; }
 	public IHashCodeProvider HashCodeProvider { get; }

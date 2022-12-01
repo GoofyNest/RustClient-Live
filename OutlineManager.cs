@@ -1,12 +1,12 @@
-public class OutlineManager : MonoBehaviour, IClientComponent // TypeDefIndex: 11838
+public class OutlineManager : MonoBehaviour, IClientComponent // TypeDefIndex: 11845
 {
-	public static Material blurMat; 
-	public List<OutlineObject> objectsToRender; 
-	public float blurAmount; 
-	public Material glowSolidMaterial; 
-	public Material blendGlowMaterial; 
-	public static float worldModelDistance; 
-	private float nextUpdateTime; 
+	public static Material blurMat;
+	public List<OutlineObject> objectsToRender;
+	public float blurAmount;
+	public Material glowSolidMaterial;
+	public Material blendGlowMaterial;
+	public static float worldModelDistance;
+	private float nextUpdateTime;
 
 
 	private void BlurCreate() { }
@@ -27,7 +27,7 @@ public class OutlineManager : MonoBehaviour, IClientComponent // TypeDefIndex: 1
 
 	public void CleanupOutlines() { }
 
-	[ImageEffectOpaque] 
+	[ImageEffectOpaque]
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
 	public void .ctor() { }

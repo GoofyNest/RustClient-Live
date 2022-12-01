@@ -1,13 +1,13 @@
-public class Water : ConsoleSystem // TypeDefIndex: 13763
+public class Water : ConsoleSystem // TypeDefIndex: 13779
 {
-	[ClientVar] 
-	public static int quality; 
-	public static int MaxQuality; 
-	public static int MinQuality; 
-	[ClientVar] 
-	public static int reflections; 
-	public static int MaxReflections; 
-	public static int MinReflections; 
+	[ClientVar]
+	public static int quality;
+	public static int MaxQuality;
+	public static int MinQuality;
+	[ClientVar]
+	public static int reflections;
+	public static int MaxReflections;
+	public static int MinReflections;
 
 
 	public void .ctor() { }

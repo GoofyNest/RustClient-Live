@@ -1,11 +1,11 @@
-internal struct RegisterPlayersCallbackInfoInternal : ICallbackInfoInternal, IGettable<RegisterPlayersCallbackInfo>, ISettable<RegisterPlayersCallbackInfo>, IDisposable // TypeDefIndex: 8535
+internal struct RegisterPlayersCallbackInfoInternal : ICallbackInfoInternal, IGettable<RegisterPlayersCallbackInfo>, ISettable<RegisterPlayersCallbackInfo>, IDisposable // TypeDefIndex: 8537
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_RegisteredPlayers; 
-	private uint m_RegisteredPlayersCount; 
-	private IntPtr m_SanctionedPlayers; 
-	private uint m_SanctionedPlayersCount; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_RegisteredPlayers;
+	private uint m_RegisteredPlayersCount;
+	private IntPtr m_SanctionedPlayers;
+	private uint m_SanctionedPlayersCount;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

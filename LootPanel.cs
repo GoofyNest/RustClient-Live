@@ -1,11 +1,11 @@
-public class LootPanel : MonoBehaviour // TypeDefIndex: 12790
+public class LootPanel : MonoBehaviour // TypeDefIndex: 12804
 {
-	public Text Title; 
-	public RustText TitleText; 
-	public bool hideInvalidIcons; 
-	[TooltipAttribute] 
-	public CanvasGroup canvasGroup; 
-	private ItemIcon[] allIcons; 
+	public Text Title;
+	public RustText TitleText;
+	public bool hideInvalidIcons;
+	[TooltipAttribute]
+	public CanvasGroup canvasGroup;
+	private ItemIcon[] allIcons;
 
 	public ItemContainer Container_00 { get; }
 	public ItemContainer Container_01 { get; }

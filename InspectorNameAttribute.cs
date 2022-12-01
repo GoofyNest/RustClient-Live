@@ -1,15 +1,15 @@
 public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 3480
 {
-	public readonly string displayName; 
+	public readonly string displayName;
 
 
 	public void .ctor(string displayName) { }
 
 }
 
-public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 13072
+public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 13087
 {
-	public string name; 
+	public string name;
 
 
 	public void .ctor(string name) { }

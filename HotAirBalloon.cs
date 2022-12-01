@@ -1,9 +1,9 @@
-public class HotAirBalloon : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6351
+public class HotAirBalloon : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6353
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float inflationAmount; 
-	public Vector3 velocity; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float inflationAmount;
+	public Vector3 velocity;
 
 
 	public static void ResetToPool(HotAirBalloon instance) { }
@@ -60,48 +60,48 @@ public class HotAirBalloon : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class HotAirBalloon : BaseCombatEntity // TypeDefIndex: 10116
+public class HotAirBalloon : BaseCombatEntity // TypeDefIndex: 10118
 {
-	private Option __menuOption_Menu_BurnOff; 
-	private Option __menuOption_Menu_BurnOn; 
-	private Option __menuOption_Menu_FuelStorage; 
+	private Option __menuOption_Menu_BurnOff;
+	private Option __menuOption_Menu_BurnOn;
+	private Option __menuOption_Menu_FuelStorage;
 	protected const BaseEntity.Flags Flag_HasFuel = 16384;
 	protected const BaseEntity.Flags Flag_HalfInflated = 128;
 	protected const BaseEntity.Flags Flag_FullInflated = 256;
-	public Transform centerOfMass; 
-	public Rigidbody myRigidbody; 
-	public Transform buoyancyPoint; 
-	public float liftAmount; 
-	public Transform windSock; 
-	public Transform[] windFlags; 
-	public GameObject staticBalloonDeflated; 
-	public GameObject staticBalloon; 
-	public GameObject animatedBalloon; 
-	public Animator balloonAnimator; 
-	public Transform groundSample; 
-	public float inflationLevel; 
-	[HeaderAttribute] 
-	public GameObjectRef fuelStoragePrefab; 
-	public float fuelPerSec; 
-	[HeaderAttribute] 
-	public GameObjectRef storageUnitPrefab; 
-	public EntityRef<StorageContainer> storageUnitInstance; 
-	[HeaderAttribute] 
-	public DamageRenderer damageRenderer; 
-	public Transform engineHeight; 
-	public GameObject[] killTriggers; 
-	private EntityFuelSystem fuelSystem; 
-	[ServerVar] 
-	public static float population; 
-	[ServerVar] 
-	public static float outsidedecayminutes; 
-	public float windForce; 
-	public Vector3 currentWindVec; 
-	public Bounds collapsedBounds; 
-	public Bounds raisedBounds; 
-	public GameObject[] balloonColliders; 
-	private float currentClientInflationLevel; 
-	private Vector3 windSockVec; 
+	public Transform centerOfMass;
+	public Rigidbody myRigidbody;
+	public Transform buoyancyPoint;
+	public float liftAmount;
+	public Transform windSock;
+	public Transform[] windFlags;
+	public GameObject staticBalloonDeflated;
+	public GameObject staticBalloon;
+	public GameObject animatedBalloon;
+	public Animator balloonAnimator;
+	public Transform groundSample;
+	public float inflationLevel;
+	[HeaderAttribute]
+	public GameObjectRef fuelStoragePrefab;
+	public float fuelPerSec;
+	[HeaderAttribute]
+	public GameObjectRef storageUnitPrefab;
+	public EntityRef<StorageContainer> storageUnitInstance;
+	[HeaderAttribute]
+	public DamageRenderer damageRenderer;
+	public Transform engineHeight;
+	public GameObject[] killTriggers;
+	private EntityFuelSystem fuelSystem;
+	[ServerVar]
+	public static float population;
+	[ServerVar]
+	public static float outsidedecayminutes;
+	public float windForce;
+	public Vector3 currentWindVec;
+	public Bounds collapsedBounds;
+	public Bounds raisedBounds;
+	public GameObject[] balloonColliders;
+	private float currentClientInflationLevel;
+	private Vector3 windSockVec;
 
 	public override bool HasMenuOptions { get; }
 	public bool IsFullyInflated { get; }
@@ -121,26 +121,26 @@ public class HotAirBalloon : BaseCombatEntity // TypeDefIndex: 10116
 
 	public bool WaterLogged() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_BurnOn(BasePlayer player) { }
 
 	public bool Menu_BurnOn_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_BurnOff(BasePlayer player) { }
 
 	public bool Menu_BurnOff_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_FuelStorage(BasePlayer player) { }
 
 	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }

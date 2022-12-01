@@ -1,12 +1,13 @@
-public class PickAFriend : UIDialog // TypeDefIndex: 12663
+public class PickAFriend : UIDialog // TypeDefIndex: 12677
 {
-	public InputField input; 
-	public RustText headerText; 
-	public bool AutoSelectInputField; 
-	public Action<ulong, string> onSelected; 
-	public Translate.Phrase sleepingBagHeaderPhrase; 
-	public Translate.Phrase turretHeaderPhrase; 
-	public SteamFriendsList friendsList; 
+	public InputField input;
+	public RustText headerText;
+	public bool AutoSelectInputField;
+	public bool AllowMultiple;
+	public Action<ulong, string> onSelected;
+	public Translate.Phrase sleepingBagHeaderPhrase;
+	public Translate.Phrase turretHeaderPhrase;
+	public SteamFriendsList friendsList;
 
 	public Func<ulong, bool> shouldShowPlayer { set; }
 
@@ -29,9 +30,9 @@ public class PickAFriend : UIDialog // TypeDefIndex: 12663
 
 }
 
-public enum PickAFriend.PickFriendMode // TypeDefIndex: 12664
+public enum PickAFriend.PickFriendMode // TypeDefIndex: 12678
 {
-	public int value__; 
+	public int value__;
 	public const PickAFriend.PickFriendMode SleepingBag = 0;
 	public const PickAFriend.PickFriendMode AutoTurret = 1;
 

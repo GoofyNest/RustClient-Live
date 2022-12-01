@@ -1,17 +1,17 @@
 internal class X509Certificate2ImplMono : X509Certificate2Impl // TypeDefIndex: 2818
 {
-	private bool _archived; 
-	private X509ExtensionCollection _extensions; 
-	private PublicKey _publicKey; 
-	private X500DistinguishedName issuer_name; 
-	private X500DistinguishedName subject_name; 
-	private Oid signature_algorithm; 
-	private X509CertificateImplCollection intermediateCerts; 
-	private X509Certificate _cert; 
-	private static string empty_error; 
-	private static byte[] commonName; 
-	private static byte[] email; 
-	private static byte[] signedData; 
+	private bool _archived;
+	private X509ExtensionCollection _extensions;
+	private PublicKey _publicKey;
+	private X500DistinguishedName issuer_name;
+	private X500DistinguishedName subject_name;
+	private Oid signature_algorithm;
+	private X509CertificateImplCollection intermediateCerts;
+	private X509Certificate _cert;
+	private static string empty_error;
+	private static byte[] commonName;
+	private static byte[] email;
+	private static byte[] signedData;
 
 	public override bool IsValid { get; }
 	public override X509ExtensionCollection Extensions { get; }
@@ -68,7 +68,7 @@ internal class X509Certificate2ImplMono : X509Certificate2Impl // TypeDefIndex: 
 
 	public override int get_Version() { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override string GetNameInfo(X509NameType nameType, bool forIssuer) { }
 
 	private ASN1 Find(byte[] oid, ASN1 dn) { }
@@ -77,7 +77,7 @@ internal class X509Certificate2ImplMono : X509Certificate2Impl // TypeDefIndex: 
 
 	private X509Certificate ImportPkcs12(byte[] rawData, string password) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags) { }
 
 	public override void Reset() { }
@@ -88,7 +88,7 @@ internal class X509Certificate2ImplMono : X509Certificate2Impl // TypeDefIndex: 
 
 	private static void AppendBuffer(StringBuilder sb, byte[] buffer) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public override bool Verify(X509Certificate2 thisCertificate) { }
 
 	internal override X509CertificateImplCollection get_IntermediateCertificates() { }

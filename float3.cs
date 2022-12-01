@@ -1,16 +1,16 @@
-public struct float3 : IEquatable<float3>, IFormattable // TypeDefIndex: 7143
+public struct float3 : IEquatable<float3>, IFormattable // TypeDefIndex: 7145
 {
 
-[DebuggerTypeProxyAttribute] 
-[DefaultMemberAttribute] 
+[DebuggerTypeProxyAttribute]
+[DefaultMemberAttribute]
 [Serializable]
 public struct float3 : IEquatable<float3>, IFormattable
-	public float x; 
-	public float y; 
-	public float z; 
-	public static readonly float3 zero; 
+	public float x;
+	public float y;
+	public float z;
+	public static readonly float3 zero;
 
-	[EditorBrowsableAttribute] 
+	[EditorBrowsableAttribute]
 	public float3 yzx { get; }
 
 

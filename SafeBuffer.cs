@@ -1,13 +1,13 @@
 public abstract class SafeBuffer : SafeHandleZeroOrMinusOneIsInvalid // TypeDefIndex: 1357
 {
-	private bool inited; 
+	private bool inited;
 
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public void AcquirePointer(ref byte* pointer) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void ReleasePointer() { }
 
 }

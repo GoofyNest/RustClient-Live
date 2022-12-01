@@ -1,16 +1,16 @@
-public class Underwear : ScriptableObject // TypeDefIndex: 12524
+public class Underwear : ScriptableObject // TypeDefIndex: 12532
 {
-	public string shortname; 
-	public Translate.Phrase displayName; 
-	public Sprite icon; 
-	public Sprite iconFemale; 
-	public SkinReplacement[] replacementsMale; 
-	public SkinReplacement[] replacementsFemale; 
-	[TooltipAttribute] 
-	public SteamInventoryItem steamItem; 
-	[TooltipAttribute] 
-	public SteamDLCItem steamDLC; 
-	public bool adminOnly; 
+	public string shortname;
+	public Translate.Phrase displayName;
+	public Sprite icon;
+	public Sprite iconFemale;
+	public SkinReplacement[] replacementsMale;
+	public SkinReplacement[] replacementsFemale;
+	[TooltipAttribute]
+	public SteamInventoryItem steamItem;
+	[TooltipAttribute]
+	public SteamDLCItem steamDLC;
+	public bool adminOnly;
 
 
 	public uint GetID() { }

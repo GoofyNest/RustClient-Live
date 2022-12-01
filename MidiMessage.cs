@@ -1,9 +1,9 @@
-public struct MidiMessage // TypeDefIndex: 7655
+public struct MidiMessage // TypeDefIndex: 7657
 {
-	public uint source; 
-	public byte status; 
-	public byte data1; 
-	public byte data2; 
+	public uint source;
+	public byte status;
+	public byte data1;
+	public byte data2;
 
 
 	public void .ctor(ulong data) { }

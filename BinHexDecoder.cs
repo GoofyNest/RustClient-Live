@@ -1,10 +1,10 @@
 internal class BinHexDecoder : IncrementalReadDecoder // TypeDefIndex: 1816
 {
-	private byte[] buffer; 
-	private int curIndex; 
-	private int endIndex; 
-	private bool hasHalfByteCached; 
-	private byte cachedHalfByte; 
+	private byte[] buffer;
+	private int curIndex;
+	private int endIndex;
+	private bool hasHalfByteCached;
+	private byte cachedHalfByte;
 
 	internal override bool IsFull { get; }
 

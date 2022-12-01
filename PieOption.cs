@@ -1,7 +1,7 @@
-public class PieOption : MonoBehaviour // TypeDefIndex: 12978
+public class PieOption : MonoBehaviour // TypeDefIndex: 12992
 {
-	public PieShape background; 
-	public Image imageIcon; 
+	public PieShape background;
+	public Image imageIcon;
 
 	internal float midRadius { get; }
 	internal float sliceSize { get; }

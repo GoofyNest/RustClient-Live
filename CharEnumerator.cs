@@ -1,8 +1,8 @@
 public sealed class CharEnumerator : IEnumerator, ICloneable, IEnumerator<char>, IDisposable // TypeDefIndex: 184
 {
-	private string str; 
-	private int index; 
-	private char currentElement; 
+	private string str;
+	private int index;
+	private char currentElement;
 
 	private object System.Collections.IEnumerator.Current { get; }
 	public char Current { get; }

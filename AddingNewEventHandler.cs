@@ -1,4 +1,4 @@
-public sealed class AddingNewEventHandler : MulticastDelegate // TypeDefIndex: 5863
+public sealed class AddingNewEventHandler : MulticastDelegate // TypeDefIndex: 5865
 {
 
 	public void .ctor(object object, IntPtr method) { }

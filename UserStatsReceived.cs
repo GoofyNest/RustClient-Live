@@ -1,9 +1,9 @@
-internal struct UserStatsReceived_t : ICallbackData // TypeDefIndex: 5392
+internal struct UserStatsReceived_t : ICallbackData // TypeDefIndex: 5394
 {
-	internal ulong GameID; 
-	internal Result Result; 
-	internal ulong SteamIDUser; 
-	public static int _datasize; 
+	internal ulong GameID;
+	internal Result Result;
+	internal ulong SteamIDUser;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

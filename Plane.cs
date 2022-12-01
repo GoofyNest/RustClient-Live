@@ -1,8 +1,8 @@
 public struct Plane // TypeDefIndex: 3374
 {
 	internal const int size = 16;
-	private Vector3 m_Normal; 
-	private float m_Distance; 
+	private Vector3 m_Normal;
+	private float m_Distance;
 
 	public Vector3 normal { get; set; }
 	public float distance { get; set; }

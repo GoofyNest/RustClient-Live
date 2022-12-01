@@ -1,24 +1,24 @@
-public struct PageQuery // TypeDefIndex: 8289
+public struct PageQuery // TypeDefIndex: 8291
 {
-	[CompilerGeneratedAttribute] 
-	private int <StartIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <MaxCount>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private int <StartIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <MaxCount>k__BackingField;
 
 	public int StartIndex { get; set; }
 	public int MaxCount { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_StartIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StartIndex(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_MaxCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxCount(int value) { }
 
 	internal void Set(ref PageQueryInternal other) { }

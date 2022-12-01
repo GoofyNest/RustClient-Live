@@ -1,13 +1,13 @@
-internal class GAHTTPApi // TypeDefIndex: 5680
+internal class GAHTTPApi // TypeDefIndex: 5682
 {
-	private static readonly GAHTTPApi _instance; 
-	private static string protocol; 
-	private static string hostName; 
-	private static string version; 
-	private static string baseUrl; 
-	private static string initializeUrlPath; 
-	private static string eventsUrlPath; 
-	private bool useGzip; 
+	private static readonly GAHTTPApi _instance;
+	private static string protocol;
+	private static string hostName;
+	private static string version;
+	private static string baseUrl;
+	private static string initializeUrlPath;
+	private static string eventsUrlPath;
+	private bool useGzip;
 
 	public static GAHTTPApi Instance { get; }
 

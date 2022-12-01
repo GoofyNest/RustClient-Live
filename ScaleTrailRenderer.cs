@@ -1,10 +1,10 @@
-public class ScaleTrailRenderer : ScaleRenderer // TypeDefIndex: 11097
+public class ScaleTrailRenderer : ScaleRenderer // TypeDefIndex: 11103
 {
-	private TrailRenderer trailRenderer; 
-	private float startWidth; 
-	private float endWidth; 
-	private float duration; 
-	private float startMultiplier; 
+	private TrailRenderer trailRenderer;
+	private float startWidth;
+	private float endWidth;
+	private float duration;
+	private float startMultiplier;
 
 
 	public override void GatherInitialValues() { }

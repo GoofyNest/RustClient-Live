@@ -1,12 +1,12 @@
-public class WorldSplineSharedData : ScriptableObject // TypeDefIndex: 13203
+public class WorldSplineSharedData : ScriptableObject // TypeDefIndex: 13218
 {
-	[SerializeField] 
-	private List<WorldSplineData> dataList; 
-	public static WorldSplineSharedData instance; 
-	private static string[] worldSplineFolders; 
+	[SerializeField]
+	private List<WorldSplineData> dataList;
+	public static WorldSplineSharedData instance;
+	private static string[] worldSplineFolders;
 
 
-	[RuntimeInitializeOnLoadMethodAttribute] 
+	[RuntimeInitializeOnLoadMethodAttribute]
 	private static void Init() { }
 
 	public static bool TryGetDataFor(WorldSpline worldSpline, out WorldSplineData data) { }

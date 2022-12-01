@@ -1,11 +1,11 @@
 public sealed class DesignerCategoryAttribute : Attribute // TypeDefIndex: 2693
 {
-	private string category; 
-	private string typeId; 
-	public static readonly DesignerCategoryAttribute Component; 
-	public static readonly DesignerCategoryAttribute Default; 
-	public static readonly DesignerCategoryAttribute Form; 
-	public static readonly DesignerCategoryAttribute Generic; 
+	private string category;
+	private string typeId;
+	public static readonly DesignerCategoryAttribute Component;
+	public static readonly DesignerCategoryAttribute Default;
+	public static readonly DesignerCategoryAttribute Form;
+	public static readonly DesignerCategoryAttribute Generic;
 
 	public string Category { get; }
 	public override object TypeId { get; }

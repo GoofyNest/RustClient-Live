@@ -1,8 +1,8 @@
 public class Capture // TypeDefIndex: 2605
 {
-	internal string _text; 
-	internal int _index; 
-	internal int _length; 
+	internal string _text;
+	internal int _index;
+	internal int _length;
 
 	public int Index { get; }
 	public int Length { get; }

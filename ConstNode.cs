@@ -1,6 +1,6 @@
 internal sealed class ConstNode : ExpressionNode // TypeDefIndex: 4251
 {
-	internal readonly object _val; 
+	internal readonly object _val;
 
 
 	internal void .ctor(DataTable table, ValueType type, object constant) { }

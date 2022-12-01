@@ -1,9 +1,9 @@
-public class CardTableSeat : BaseChair // TypeDefIndex: 11318
+public class CardTableSeat : BaseChair // TypeDefIndex: 11324
 {
-	public Transform CardsMesh; 
-	private CardTable table; 
-	private Transform boneTarget; 
-	private bool wasShowingCards; 
+	public Transform CardsMesh;
+	private CardTable table;
+	private Transform boneTarget;
+	private bool wasShowingCards;
 
 
 	public override void ClientOnEnable() { }

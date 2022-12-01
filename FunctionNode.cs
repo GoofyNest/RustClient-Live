@@ -1,10 +1,10 @@
 internal sealed class FunctionNode : ExpressionNode // TypeDefIndex: 4264
 {
-	internal readonly string _name; 
-	internal readonly int _info; 
-	internal int _argumentCount; 
-	internal ExpressionNode[] _arguments; 
-	private static readonly Function[] s_funcs; 
+	internal readonly string _name;
+	internal readonly int _info;
+	internal int _argumentCount;
+	internal ExpressionNode[] _arguments;
+	private static readonly Function[] s_funcs;
 
 	internal FunctionId Aggregate { get; }
 	internal bool IsAggregate { get; }

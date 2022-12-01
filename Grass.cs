@@ -1,20 +1,20 @@
-public class Grass : ConsoleSystem // TypeDefIndex: 13718
+public class Grass : ConsoleSystem // TypeDefIndex: 13734
 {
-	[ClientVar] 
-	public static bool displacement; 
-	private static float m_quality; 
-	private static float m_distance; 
-	private static int m_maxthreads; 
-	private static float m_refresh_budget; 
+	[ClientVar]
+	public static bool displacement;
+	private static float m_quality;
+	private static float m_distance;
+	private static int m_maxthreads;
+	private static float m_refresh_budget;
 
-	[ClientVar] 
+	[ClientVar]
 	public static float quality { get; set; }
 	public static float quality01 { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float distance { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static int maxthreads { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float refresh_budget { get; set; }
 
 
@@ -38,7 +38,7 @@ public class Grass : ConsoleSystem // TypeDefIndex: 13718
 
 	public static void set_refresh_budget(float value) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void print_foliage(ConsoleSystem.Arg args) { }
 
 	public void .ctor() { }

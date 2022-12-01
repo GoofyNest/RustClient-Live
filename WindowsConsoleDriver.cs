@@ -1,8 +1,8 @@
 internal class WindowsConsoleDriver : IConsoleDriver // TypeDefIndex: 428
 {
-	private IntPtr inputHandle; 
-	private IntPtr outputHandle; 
-	private short defaultAttribute; 
+	private IntPtr inputHandle;
+	private IntPtr outputHandle;
+	private short defaultAttribute;
 
 	public ConsoleColor BackgroundColor { get; set; }
 	public int BufferWidth { get; }

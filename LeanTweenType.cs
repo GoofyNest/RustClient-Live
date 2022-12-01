@@ -1,6 +1,6 @@
-public enum LeanTweenType // TypeDefIndex: 5586
+public enum LeanTweenType // TypeDefIndex: 5588
 {
-	public int value__; 
+	public int value__;
 	public const LeanTweenType notUsed = 0;
 	public const LeanTweenType linear = 1;
 	public const LeanTweenType easeOutQuad = 2;

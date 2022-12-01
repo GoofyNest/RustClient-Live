@@ -3,7 +3,7 @@ public abstract class SafeHandleZeroOrMinusOneIsInvalid : SafeHandle // TypeDefI
 	public override bool IsInvalid { get; }
 
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected void .ctor(bool ownsHandle) { }
 
 	public override bool get_IsInvalid() { }

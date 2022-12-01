@@ -1,19 +1,19 @@
-internal static class StringUtils // TypeDefIndex: 5976
+internal static class StringUtils // TypeDefIndex: 5978
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatWith(string format, IFormatProvider provider, object arg0) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatWith(string format, IFormatProvider provider, object arg0, object arg1) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatWith(string format, IFormatProvider provider, object arg0, object arg1, object arg2) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatWith(string format, IFormatProvider provider, object arg0, object arg1, object arg2, object arg3) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	private static string FormatWith(string format, IFormatProvider provider, object[] args) { }
 
 	public static StringWriter CreateStringWriter(int capacity) { }
@@ -22,7 +22,7 @@ internal static class StringUtils // TypeDefIndex: 5976
 
 	public static void ToCharAsUnicode(char c, char[] buffer) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource ForgivingCaseSensitiveFind<TSource>(IEnumerable<TSource> source, Func<TSource, string> valueSelector, string testValue) { }
 	/* GenericInstMethod :
 	|
@@ -36,18 +36,18 @@ internal static class StringUtils // TypeDefIndex: 5976
 
 	public static bool IsLowSurrogate(char c) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool StartsWith(string source, char value) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool EndsWith(string source, char value) { }
 
 }
 
-private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex: 5977
+private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex: 5979
 {
-	public Func<TSource, string> valueSelector; 
-	public string testValue; 
+	public Func<TSource, string> valueSelector;
+	public string testValue;
 
 
 	public void .ctor() { }

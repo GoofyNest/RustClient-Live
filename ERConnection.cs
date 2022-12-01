@@ -1,10 +1,10 @@
-public class ERConnection // TypeDefIndex: 7269
+public class ERConnection // TypeDefIndex: 7271
 {
-	public string name; 
-	public ERCrossingPrefabs prefabScript; 
-	public GameObject gameObject; 
-	public ERConnectionData[] connectionData; 
-	public static string str; 
+	public string name;
+	public ERCrossingPrefabs prefabScript;
+	public GameObject gameObject;
+	public ERConnectionData[] connectionData;
+	public static string str;
 
 
 	public void .ctor(GameObject go, string g_name) { }

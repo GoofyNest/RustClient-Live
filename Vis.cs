@@ -1,7 +1,7 @@
-public static class Vis // TypeDefIndex: 11797
+public static class Vis // TypeDefIndex: 11804
 {
-	private static int colCount; 
-	private static Collider[] colBuffer; 
+	private static int colCount;
+	private static Collider[] colBuffer;
 
 
 	private static void Buffer(Vector3 position, float radius, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
@@ -82,37 +82,37 @@ public static class Vis // TypeDefIndex: 11797
 
 }
 
-public class Vis : ConsoleSystem // TypeDefIndex: 13761
+public class Vis : ConsoleSystem // TypeDefIndex: 13777
 {
-	[ClientVar] 
-	[HelpAttribute] 
-	public static bool lerp; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static bool damage; 
-	[ServerVar] 
-	[ClientVar] 
-	[HelpAttribute] 
-	public static bool attack; 
-	[ServerVar] 
-	[ClientVar] 
-	[HelpAttribute] 
-	public static bool protection; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static bool weakspots; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static bool triggers; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static bool hitboxes; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static bool lineofsight; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static bool sense; 
+	[ClientVar]
+	[HelpAttribute]
+	public static bool lerp;
+	[ServerVar]
+	[HelpAttribute]
+	public static bool damage;
+	[ServerVar]
+	[ClientVar]
+	[HelpAttribute]
+	public static bool attack;
+	[ServerVar]
+	[ClientVar]
+	[HelpAttribute]
+	public static bool protection;
+	[ServerVar]
+	[HelpAttribute]
+	public static bool weakspots;
+	[ServerVar]
+	[HelpAttribute]
+	public static bool triggers;
+	[ServerVar]
+	[HelpAttribute]
+	public static bool hitboxes;
+	[ServerVar]
+	[HelpAttribute]
+	public static bool lineofsight;
+	[ServerVar]
+	[HelpAttribute]
+	public static bool sense;
 
 
 	public void .ctor() { }

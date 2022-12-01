@@ -35,10 +35,10 @@ internal sealed class NoAllocHelpers // TypeDefIndex: 3522
 	|-NoAllocHelpers.ExtractArrayFromListT<Material>
 	*/
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static void Internal_ResizeList(object list, int size) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Array ExtractArrayFromList(object list) { }
 
 }

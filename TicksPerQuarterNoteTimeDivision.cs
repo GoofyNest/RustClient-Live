@@ -1,7 +1,7 @@
-public sealed class TicksPerQuarterNoteTimeDivision : TimeDivision // TypeDefIndex: 7626
+public sealed class TicksPerQuarterNoteTimeDivision : TimeDivision // TypeDefIndex: 7628
 {
-	[CompilerGeneratedAttribute] 
-	private readonly short <TicksPerQuarterNote>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly short <TicksPerQuarterNote>k__BackingField;
 
 	public short TicksPerQuarterNote { get; }
 
@@ -10,7 +10,7 @@ public sealed class TicksPerQuarterNoteTimeDivision : TimeDivision // TypeDefInd
 
 	public void .ctor(short ticksPerQuarterNote) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public short get_TicksPerQuarterNote() { }
 
 	public static bool op_Equality(TicksPerQuarterNoteTimeDivision timeDivision1, TicksPerQuarterNoteTimeDivision timeDivision2) { }

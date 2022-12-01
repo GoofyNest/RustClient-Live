@@ -1,23 +1,23 @@
 internal sealed class ReadObjectInfo // TypeDefIndex: 1108
 {
-	internal int objectInfoId; 
-	internal static int readObjectInfoCounter; 
-	internal Type objectType; 
-	internal ObjectManager objectManager; 
-	internal int count; 
-	internal bool isSi; 
-	internal bool isNamed; 
-	internal bool isTyped; 
-	internal bool bSimpleAssembly; 
-	internal SerObjectInfoCache cache; 
-	internal string[] wireMemberNames; 
-	internal Type[] wireMemberTypes; 
-	private int lastPosition; 
-	internal ISerializationSurrogate serializationSurrogate; 
-	internal StreamingContext context; 
-	internal List<Type> memberTypesList; 
-	internal SerObjectInfoInit serObjectInfoInit; 
-	internal IFormatterConverter formatterConverter; 
+	internal int objectInfoId;
+	internal static int readObjectInfoCounter;
+	internal Type objectType;
+	internal ObjectManager objectManager;
+	internal int count;
+	internal bool isSi;
+	internal bool isNamed;
+	internal bool isTyped;
+	internal bool bSimpleAssembly;
+	internal SerObjectInfoCache cache;
+	internal string[] wireMemberNames;
+	internal Type[] wireMemberTypes;
+	private int lastPosition;
+	internal ISerializationSurrogate serializationSurrogate;
+	internal StreamingContext context;
+	internal List<Type> memberTypesList;
+	internal SerObjectInfoInit serObjectInfoInit;
+	internal IFormatterConverter formatterConverter;
 
 
 	internal void .ctor() { }

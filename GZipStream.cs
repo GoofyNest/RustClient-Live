@@ -1,6 +1,6 @@
 public class GZipStream : Stream // TypeDefIndex: 2861
 {
-	private DeflateStream _deflateStream; 
+	private DeflateStream _deflateStream;
 
 	public override bool CanRead { get; }
 	public override bool CanWrite { get; }
@@ -59,18 +59,18 @@ public class GZipStream : Stream // TypeDefIndex: 2861
 
 }
 
-public class GZipStream : Stream // TypeDefIndex: 6983
+public class GZipStream : Stream // TypeDefIndex: 6985
 {
-	public Nullable<DateTime> LastModified; 
-	private int _headerByteCount; 
-	internal ZlibBaseStream _baseStream; 
-	private bool _disposed; 
-	private bool _firstReadDone; 
-	private string _FileName; 
-	private string _Comment; 
-	private int _Crc32; 
-	internal static readonly DateTime _unixEpoch; 
-	internal static readonly Encoding iso8859dash1; 
+	public Nullable<DateTime> LastModified;
+	private int _headerByteCount;
+	internal ZlibBaseStream _baseStream;
+	private bool _disposed;
+	private bool _firstReadDone;
+	private string _FileName;
+	private string _Comment;
+	private int _Crc32;
+	internal static readonly DateTime _unixEpoch;
+	internal static readonly Encoding iso8859dash1;
 
 	public string Comment { get; set; }
 	public string FileName { get; set; }

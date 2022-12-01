@@ -1,11 +1,11 @@
 internal struct StyleValue // TypeDefIndex: 4731
 {
-	public StylePropertyID id; 
-	public StyleKeyword keyword; 
-	public float number; 
-	public Length length; 
-	public Color color; 
-	public GCHandle resource; 
+	public StylePropertyID id;
+	public StyleKeyword keyword;
+	public float number;
+	public Length length;
+	public Color color;
+	public GCHandle resource;
 
 
 	public static StyleValue Create(StylePropertyID id) { }

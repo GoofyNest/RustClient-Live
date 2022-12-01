@@ -1,6 +1,6 @@
 public class SecurityException : SystemException // TypeDefIndex: 907
 {
-	private string permissionState; 
+	private string permissionState;
 
 
 	public void .ctor() { }

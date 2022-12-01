@@ -1,8 +1,8 @@
-public sealed class ChunksCollection : ICollection<MidiChunk>, IEnumerable<MidiChunk>, IEnumerable // TypeDefIndex: 7527
+public sealed class ChunksCollection : ICollection<MidiChunk>, IEnumerable<MidiChunk>, IEnumerable // TypeDefIndex: 7529
 {
-	private readonly List<MidiChunk> _chunks; 
-	[CompilerGeneratedAttribute] 
-	private readonly bool <IsReadOnly>k__BackingField; 
+	private readonly List<MidiChunk> _chunks;
+	[CompilerGeneratedAttribute]
+	private readonly bool <IsReadOnly>k__BackingField;
 
 	public int Count { get; }
 	public bool IsReadOnly { get; }
@@ -10,7 +10,7 @@ public sealed class ChunksCollection : ICollection<MidiChunk>, IEnumerable<MidiC
 
 	public int get_Count() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsReadOnly() { }
 
 	public void Add(MidiChunk chunk) { }

@@ -1,8 +1,8 @@
-internal class GAEvents // TypeDefIndex: 5681
+internal class GAEvents // TypeDefIndex: 5683
 {
-	private static readonly GAEvents _instance; 
-	private bool isRunning; 
-	private bool keepRunning; 
+	private static readonly GAEvents _instance;
+	private bool isRunning;
+	private bool keepRunning;
 
 	private static GAEvents Instance { get; }
 

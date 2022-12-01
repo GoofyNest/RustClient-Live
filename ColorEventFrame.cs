@@ -1,16 +1,16 @@
-internal struct ColorEventFrame // TypeDefIndex: 7716
+internal struct ColorEventFrame // TypeDefIndex: 7718
 {
-	[CompilerGeneratedAttribute] 
-	private ColorData <Color>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ColorData <Color>k__BackingField;
 
-	[JsonPropertyAttribute] 
+	[JsonPropertyAttribute]
 	public ColorData Color { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ColorData get_Color() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Color(ColorData value) { }
 
 }

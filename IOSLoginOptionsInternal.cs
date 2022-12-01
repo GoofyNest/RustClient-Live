@@ -1,8 +1,8 @@
-internal struct IOSLoginOptionsInternal : ISettable<IOSLoginOptions>, IDisposable // TypeDefIndex: 9717
+internal struct IOSLoginOptionsInternal : ISettable<IOSLoginOptions>, IDisposable // TypeDefIndex: 9719
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Credentials; 
-	private AuthScopeFlags m_ScopeFlags; 
+	private int m_ApiVersion;
+	private IntPtr m_Credentials;
+	private AuthScopeFlags m_ScopeFlags;
 
 	public Nullable<IOSCredentials> Credentials { set; }
 	public AuthScopeFlags ScopeFlags { set; }

@@ -1,10 +1,10 @@
-public class InstancingBuffer // TypeDefIndex: 13151
+public class InstancingBuffer // TypeDefIndex: 13166
 {
-	private BufferList<Matrix4x4> matrices; 
-	private Mesh mesh; 
-	private Material material; 
-	private int submeshIndex; 
-	private int shaderPass; 
+	private BufferList<Matrix4x4> matrices;
+	private Mesh mesh;
+	private Material material;
+	private int submeshIndex;
+	private int shaderPass;
 
 
 	public void .ctor(InstancingKey key, int capacity) { }

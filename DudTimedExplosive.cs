@@ -1,13 +1,14 @@
-public class DudTimedExplosive : TimedExplosive, IIgniteable, ISplashable // TypeDefIndex: 10102
+public class DudTimedExplosive : TimedExplosive, IIgniteable, ISplashable // TypeDefIndex: 10104
 {
-	private Option __menuOption_Menu_Pickup; 
-	public GameObjectRef fizzleEffect; 
-	public GameObject wickSpark; 
-	public AudioSource wickSound; 
-	public float dudChance; 
-	[ItemSelector] 
-	public ItemDefinition itemToGive; 
-	private float explodeTime; 
+	private Option __menuOption_Menu_Pickup;
+	public GameObjectRef fizzleEffect;
+	public GameObject wickSpark;
+	public AudioSource wickSound;
+	public float dudChance;
+	[ItemSelector]
+	public ItemDefinition itemToGive;
+	private float explodeTime;
+	public bool becomeDudInWater;
 
 	public override bool HasMenuOptions { get; }
 
@@ -24,10 +25,10 @@ public class DudTimedExplosive : TimedExplosive, IIgniteable, ISplashable // Typ
 
 	public void Update() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Pickup(BasePlayer player) { }
 
 	public bool Menu_PickupDud_ShowIf(BasePlayer player) { }

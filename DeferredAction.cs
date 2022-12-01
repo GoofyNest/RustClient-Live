@@ -1,19 +1,19 @@
-public class DeferredAction // TypeDefIndex: 13093
+public class DeferredAction // TypeDefIndex: 13108
 {
-	private Object sender; 
-	private Action action; 
-	private ActionPriority priority; 
-	[CompilerGeneratedAttribute] 
-	private bool <Idle>k__BackingField; 
+	private Object sender;
+	private Action action;
+	private ActionPriority priority;
+	[CompilerGeneratedAttribute]
+	private bool <Idle>k__BackingField;
 
 	public bool Idle { get; set; }
 	public int Index { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Idle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Idle(bool value) { }
 
 	public int get_Index() { }

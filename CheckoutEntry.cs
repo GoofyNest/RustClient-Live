@@ -1,15 +1,15 @@
-public struct CheckoutEntry // TypeDefIndex: 9425
+public struct CheckoutEntry // TypeDefIndex: 9427
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <OfferId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <OfferId>k__BackingField;
 
 	public Utf8String OfferId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_OfferId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OfferId(Utf8String value) { }
 
 	internal void Set(ref CheckoutEntryInternal other) { }

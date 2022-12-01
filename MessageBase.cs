@@ -1,8 +1,8 @@
 public abstract class MessageBase // TypeDefIndex: 1727
 {
-	private static byte[] header; 
-	private int _type; 
-	private NtlmFlags _flags; 
+	private static byte[] header;
+	private int _type;
+	private NtlmFlags _flags;
 
 	public NtlmFlags Flags { get; set; }
 	public int Type { get; }

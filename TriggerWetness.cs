@@ -1,10 +1,10 @@
-public class TriggerWetness : TriggerBase // TypeDefIndex: 11794
+public class TriggerWetness : TriggerBase // TypeDefIndex: 11801
 {
-	public float Wetness; 
-	public SphereCollider TargetCollider; 
-	public Transform OriginTransform; 
-	public bool ApplyLocalHeightCheck; 
-	public float MinLocalHeight; 
+	public float Wetness;
+	public SphereCollider TargetCollider;
+	public Transform OriginTransform;
+	public bool ApplyLocalHeightCheck;
+	public float MinLocalHeight;
 
 
 	public void .ctor() { }

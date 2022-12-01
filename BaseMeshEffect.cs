@@ -1,6 +1,6 @@
 public abstract class BaseMeshEffect : UIBehaviour, IMeshModifier // TypeDefIndex: 5037
 {
-	private Graphic m_Graphic; 
+	private Graphic m_Graphic;
 
 	protected Graphic graphic { get; }
 

@@ -1,9 +1,9 @@
-public class StringPool // TypeDefIndex: 12523
+public class StringPool // TypeDefIndex: 12531
 {
-	private static Dictionary<uint, string> toString; 
-	private static Dictionary<string, uint> toNumber; 
-	private static bool initialized; 
-	public static uint closest; 
+	private static Dictionary<uint, string> toString;
+	private static Dictionary<string, uint> toNumber;
+	private static bool initialized;
+	public static uint closest;
 
 
 	private static void Init() { }

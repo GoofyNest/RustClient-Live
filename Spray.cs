@@ -1,9 +1,9 @@
-public class Spray : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6439
+public class Spray : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6441
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong sprayedBy; 
-	public long timestamp; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong sprayedBy;
+	public long timestamp;
 
 
 	public static void ResetToPool(Spray instance) { }

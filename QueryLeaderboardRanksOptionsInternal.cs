@@ -1,8 +1,8 @@
-internal struct QueryLeaderboardRanksOptionsInternal : ISettable<QueryLeaderboardRanksOptions>, IDisposable // TypeDefIndex: 9317
+internal struct QueryLeaderboardRanksOptionsInternal : ISettable<QueryLeaderboardRanksOptions>, IDisposable // TypeDefIndex: 9319
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LeaderboardId; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LeaderboardId;
+	private IntPtr m_LocalUserId;
 
 	public Utf8String LeaderboardId { set; }
 	public ProductUserId LocalUserId { set; }

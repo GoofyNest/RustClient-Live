@@ -1,22 +1,22 @@
-public class Reader // TypeDefIndex: 6659
+public class Reader // TypeDefIndex: 6661
 {
-	[CompilerGeneratedAttribute] 
-	private static Reader <Active>k__BackingField; 
-	private Stream stream; 
-	private BinaryReader reader; 
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <CurrentTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Indexer <Index>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private DemoHeader <Header>k__BackingField; 
-	public Action<Indexer.Keyframe, HashSet<uint>> OnScrubToKeyframe; 
-	[CompilerGeneratedAttribute] 
-	private long <startPosition>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsPaused>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private static Reader <Active>k__BackingField;
+	private Stream stream;
+	private BinaryReader reader;
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <CurrentTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Indexer <Index>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private DemoHeader <Header>k__BackingField;
+	public Action<Indexer.Keyframe, HashSet<uint>> OnScrubToKeyframe;
+	[CompilerGeneratedAttribute]
+	private long <startPosition>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsPaused>k__BackingField;
 
 	public static Reader Active { get; set; }
 	public string Name { get; set; }
@@ -28,40 +28,40 @@ public class Reader // TypeDefIndex: 6659
 	public bool IsPaused { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static Reader get_Active() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_Active(Reader value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Name(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_CurrentTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentTime(long value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Indexer get_Index() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Index(Indexer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public DemoHeader get_Header() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Header(DemoHeader value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private long get_startPosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_startPosition(long value) { }
 
 	public void Play() { }
@@ -80,10 +80,10 @@ public class Reader // TypeDefIndex: 6659
 
 	public bool get_IsFinished() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsPaused() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_IsPaused(bool value) { }
 
 	public static Reader FromFile(string filename) { }

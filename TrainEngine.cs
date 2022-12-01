@@ -1,12 +1,12 @@
-public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6401
+public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6403
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int throttleSetting; 
-	public uint fuelStorageID; 
-	public int fuelAmount; 
-	public int numConnectedCars; 
-	public int linedUpToUnload; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int throttleSetting;
+	public uint fuelStorageID;
+	public int fuelAmount;
+	public int numConnectedCars;
+	public int linedUpToUnload;
 
 
 	public static void ResetToPool(TrainEngine instance) { }
@@ -63,100 +63,100 @@ public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIndex: 10190
+public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIndex: 10192
 {
-	private Option __menuOption_Menu_FuelStorage; 
-	private int clientFuelAmount; 
-	private int clientNumConnectedCars; 
-	private int clientLinedUpToUnload; 
-	private float lastUpdateHealth; 
-	private StringBuilder monitorTextStr; 
-	private bool wasBraking; 
-	private bool highlightCouplingInfo; 
-	private TrainEngine.TrainMovementState movementState; 
-	private Nullable<TrainEngine.TrainMovementState> prevLightVisualsState; 
-	private Nullable<bool> prevLightVisualsOnState; 
-	private Nullable<bool> prevLightVisualsHeadlightOnState; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private Transform leftHandLever; 
-	[SerializeField] 
-	private Transform rightHandLever; 
-	[SerializeField] 
-	private Transform leftHandGrip; 
-	[SerializeField] 
-	private Transform rightHandGrip; 
-	[SerializeField] 
-	private TrainEngine.LeverStyle leverStyle; 
-	[SerializeField] 
-	private Canvas monitorCanvas; 
-	[SerializeField] 
-	private RustText monitorText; 
-	[SerializeField] 
-	private LocomotiveExtraVisuals gauges; 
-	[SerializeField] 
-	private float engineForce; 
-	[SerializeField] 
-	private float maxSpeed; 
-	[SerializeField] 
-	private float engineStartupTime; 
-	[SerializeField] 
-	private GameObjectRef fuelStoragePrefab; 
-	[SerializeField] 
-	private float idleFuelPerSec; 
-	[SerializeField] 
-	private float maxFuelPerSec; 
-	[SerializeField] 
-	private ProtectionProperties driverProtection; 
-	[SerializeField] 
-	private bool lootablesAreOnPlatform; 
-	[SerializeField] 
-	private bool mustMountFromPlatform; 
-	[SerializeField] 
-	private VehicleLight[] onLights; 
-	[SerializeField] 
-	private VehicleLight[] headlights; 
-	[SerializeField] 
-	private VehicleLight[] notMovingLights; 
-	[SerializeField] 
-	private VehicleLight[] movingForwardLights; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private VehicleLight[] movingBackwardLights; 
-	[SerializeField] 
-	private ParticleSystemContainer fxEngineOn; 
-	[SerializeField] 
-	private ParticleSystemContainer fxLightDamage; 
-	[SerializeField] 
-	private ParticleSystemContainer fxMediumDamage; 
-	[SerializeField] 
-	private ParticleSystemContainer fxHeavyDamage; 
-	[SerializeField] 
-	private ParticleSystemContainer fxEngineTrouble; 
-	[SerializeField] 
-	private BoxCollider engineWorldCol; 
-	[SerializeField] 
-	private float engineDamageToSlow; 
-	[SerializeField] 
-	private float engineDamageTimeframe; 
-	[SerializeField] 
-	private float engineSlowedTime; 
-	[SerializeField] 
-	private float engineSlowedMaxVel; 
-	[SerializeField] 
-	private ParticleSystemContainer[] sparks; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Light[] sparkLights; 
-	[SerializeField] 
-	private TrainEngineAudio trainAudio; 
+	private Option __menuOption_Menu_FuelStorage;
+	private int clientFuelAmount;
+	private int clientNumConnectedCars;
+	private int clientLinedUpToUnload;
+	private float lastUpdateHealth;
+	private StringBuilder monitorTextStr;
+	private bool wasBraking;
+	private bool highlightCouplingInfo;
+	private TrainEngine.TrainMovementState movementState;
+	private Nullable<TrainEngine.TrainMovementState> prevLightVisualsState;
+	private Nullable<bool> prevLightVisualsOnState;
+	private Nullable<bool> prevLightVisualsHeadlightOnState;
+	[HeaderAttribute]
+	[SerializeField]
+	private Transform leftHandLever;
+	[SerializeField]
+	private Transform rightHandLever;
+	[SerializeField]
+	private Transform leftHandGrip;
+	[SerializeField]
+	private Transform rightHandGrip;
+	[SerializeField]
+	private TrainEngine.LeverStyle leverStyle;
+	[SerializeField]
+	private Canvas monitorCanvas;
+	[SerializeField]
+	private RustText monitorText;
+	[SerializeField]
+	private LocomotiveExtraVisuals gauges;
+	[SerializeField]
+	private float engineForce;
+	[SerializeField]
+	private float maxSpeed;
+	[SerializeField]
+	private float engineStartupTime;
+	[SerializeField]
+	private GameObjectRef fuelStoragePrefab;
+	[SerializeField]
+	private float idleFuelPerSec;
+	[SerializeField]
+	private float maxFuelPerSec;
+	[SerializeField]
+	private ProtectionProperties driverProtection;
+	[SerializeField]
+	private bool lootablesAreOnPlatform;
+	[SerializeField]
+	private bool mustMountFromPlatform;
+	[SerializeField]
+	private VehicleLight[] onLights;
+	[SerializeField]
+	private VehicleLight[] headlights;
+	[SerializeField]
+	private VehicleLight[] notMovingLights;
+	[SerializeField]
+	private VehicleLight[] movingForwardLights;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private VehicleLight[] movingBackwardLights;
+	[SerializeField]
+	private ParticleSystemContainer fxEngineOn;
+	[SerializeField]
+	private ParticleSystemContainer fxLightDamage;
+	[SerializeField]
+	private ParticleSystemContainer fxMediumDamage;
+	[SerializeField]
+	private ParticleSystemContainer fxHeavyDamage;
+	[SerializeField]
+	private ParticleSystemContainer fxEngineTrouble;
+	[SerializeField]
+	private BoxCollider engineWorldCol;
+	[SerializeField]
+	private float engineDamageToSlow;
+	[SerializeField]
+	private float engineDamageTimeframe;
+	[SerializeField]
+	private float engineSlowedTime;
+	[SerializeField]
+	private float engineSlowedMaxVel;
+	[SerializeField]
+	private ParticleSystemContainer[] sparks;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Light[] sparkLights;
+	[SerializeField]
+	private TrainEngineAudio trainAudio;
 	public const BaseEntity.Flags Flag_HazardAhead = 16384;
 	private const BaseEntity.Flags Flag_Horn = 65536;
 	public const BaseEntity.Flags Flag_AltColor = 131072;
 	public const BaseEntity.Flags Flag_EngineSlowed = 262144;
-	private VehicleEngineController<TrainEngine> engineController; 
-	[CompilerGeneratedAttribute] 
-	private TrainEngine.EngineSpeeds <CurThrottleSetting>k__BackingField; 
+	private VehicleEngineController<TrainEngine> engineController;
+	[CompilerGeneratedAttribute]
+	private TrainEngine.EngineSpeeds <CurThrottleSetting>k__BackingField;
 
 	public override bool HasMenuOptions { get; }
 	public bool LightsAreOn { get; }
@@ -214,18 +214,18 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 
 	private void UpdateEngineFX() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_FuelStorage(BasePlayer player) { }
 
 	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SetThrottle(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SetFuelAmount(BaseEntity.RPCMessage msg) { }
 
 	public bool get_LightsAreOn() { }
@@ -234,10 +234,10 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 
 	public bool get_EngineIsSlowed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TrainEngine.EngineSpeeds get_CurThrottleSetting() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_CurThrottleSetting(TrainEngine.EngineSpeeds value) { }
 
 	public override TrainCar.TrainCarType get_CarType() { }
@@ -266,26 +266,26 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 
 }
 
-private enum TrainEngine.TrainMovementState // TypeDefIndex: 10191
+private enum TrainEngine.TrainMovementState // TypeDefIndex: 10193
 {
-	public int value__; 
+	public int value__;
 	public const TrainEngine.TrainMovementState Stationary = 0;
 	public const TrainEngine.TrainMovementState MovingForwards = 1;
 	public const TrainEngine.TrainMovementState MovingBackwards = 2;
 
 }
 
-private enum TrainEngine.LeverStyle // TypeDefIndex: 10192
+private enum TrainEngine.LeverStyle // TypeDefIndex: 10194
 {
-	public int value__; 
+	public int value__;
 	public const TrainEngine.LeverStyle WorkCart = 0;
 	public const TrainEngine.LeverStyle Locomotive = 1;
 
 }
 
-public enum TrainEngine.EngineSpeeds // TypeDefIndex: 10193
+public enum TrainEngine.EngineSpeeds // TypeDefIndex: 10195
 {
-	public int value__; 
+	public int value__;
 	public const TrainEngine.EngineSpeeds Rev_Hi = 0;
 	public const TrainEngine.EngineSpeeds Rev_Med = 1;
 	public const TrainEngine.EngineSpeeds Rev_Lo = 2;

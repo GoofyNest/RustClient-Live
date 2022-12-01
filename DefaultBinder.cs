@@ -47,9 +47,9 @@ internal class DefaultBinder : Binder // TypeDefIndex: 203
 
 internal class DefaultBinder.BinderState // TypeDefIndex: 204
 {
-	internal int[] m_argsMap; 
-	internal int m_originalSize; 
-	internal bool m_isParamArray; 
+	internal int[] m_argsMap;
+	internal int m_originalSize;
+	internal bool m_isParamArray;
 
 
 	internal void .ctor(int[] argsMap, int originalSize, bool isParamArray) { }
@@ -58,8 +58,8 @@ internal class DefaultBinder.BinderState // TypeDefIndex: 204
 
 private sealed class DefaultBinder.<>c // TypeDefIndex: 205
 {
-	public static readonly DefaultBinder.<>c <>9; 
-	public static Predicate<Type> <>9__3_0; 
+	public static readonly DefaultBinder.<>c <>9;
+	public static Predicate<Type> <>9__3_0;
 
 
 	private static void .cctor() { }

@@ -1,24 +1,24 @@
 internal class MSCompatUnicodeTable // TypeDefIndex: 35
 {
-	public static int MaxExpansionLength; 
-	private static readonly byte* ignorableFlags; 
-	private static readonly byte* categories; 
-	private static readonly byte* level1; 
-	private static readonly byte* level2; 
-	private static readonly byte* level3; 
-	private static byte* cjkCHScategory; 
-	private static byte* cjkCHTcategory; 
-	private static byte* cjkJAcategory; 
-	private static byte* cjkKOcategory; 
-	private static byte* cjkCHSlv1; 
-	private static byte* cjkCHTlv1; 
-	private static byte* cjkJAlv1; 
-	private static byte* cjkKOlv1; 
-	private static byte* cjkKOlv2; 
-	private static readonly char[] tailoringArr; 
-	private static readonly TailoringInfo[] tailoringInfos; 
-	private static object forLock; 
-	public static readonly bool isReady; 
+	public static int MaxExpansionLength;
+	private static readonly byte* ignorableFlags;
+	private static readonly byte* categories;
+	private static readonly byte* level1;
+	private static readonly byte* level2;
+	private static readonly byte* level3;
+	private static byte* cjkCHScategory;
+	private static byte* cjkCHTcategory;
+	private static byte* cjkJAcategory;
+	private static byte* cjkKOcategory;
+	private static byte* cjkCHSlv1;
+	private static byte* cjkCHTlv1;
+	private static byte* cjkJAlv1;
+	private static byte* cjkKOlv1;
+	private static byte* cjkKOlv2;
+	private static readonly char[] tailoringArr;
+	private static readonly TailoringInfo[] tailoringInfos;
+	private static object forLock;
+	public static readonly bool isReady;
 
 	public static bool IsReady { get; }
 
@@ -69,8 +69,8 @@ internal class MSCompatUnicodeTable // TypeDefIndex: 35
 
 private sealed class MSCompatUnicodeTable.<>c // TypeDefIndex: 36
 {
-	public static readonly MSCompatUnicodeTable.<>c <>9; 
-	public static Comparison<Level2Map> <>9__17_0; 
+	public static readonly MSCompatUnicodeTable.<>c <>9;
+	public static Comparison<Level2Map> <>9__17_0;
 
 
 	private static void .cctor() { }

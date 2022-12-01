@@ -1,10 +1,10 @@
-public sealed class Utf8String // TypeDefIndex: 8277
+public sealed class Utf8String // TypeDefIndex: 8279
 {
-	public static Utf8String EmptyString; 
-	[CompilerGeneratedAttribute] 
-	private int <Length>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte[] <Bytes>k__BackingField; 
+	public static Utf8String EmptyString;
+	[CompilerGeneratedAttribute]
+	private int <Length>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte[] <Bytes>k__BackingField;
 
 	public int Length { get; set; }
 	public byte[] Bytes { get; set; }
@@ -12,16 +12,16 @@ public sealed class Utf8String // TypeDefIndex: 8277
 	public byte Item { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Length() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Length(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte[] get_Bytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Bytes(byte[] value) { }
 
 	private string get_Utf16() { }

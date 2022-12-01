@@ -1,22 +1,22 @@
-public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10036
+public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10038
 {
-	private Option __menuOption_Menu_Pickup; 
-	[HeaderAttribute] 
-	public SkeletonProperties skeletonProperties; 
-	public ProtectionProperties baseProtection; 
-	public float startHealth; 
-	public BaseCombatEntity.Pickup pickup; 
-	public BaseCombatEntity.Repair repair; 
-	public bool ShowHealthInfo; 
-	public BaseCombatEntity.LifeState lifestate; 
-	public bool sendsHitNotification; 
-	public bool sendsMeleeHitNotification; 
-	public bool markAttackerHostile; 
-	protected float _health; 
-	protected float _maxHealth; 
-	public BaseCombatEntity.Faction faction; 
-	protected float deathTime; 
-	private int lastNotifyFrame; 
+	private Option __menuOption_Menu_Pickup;
+	[HeaderAttribute]
+	public SkeletonProperties skeletonProperties;
+	public ProtectionProperties baseProtection;
+	public float startHealth;
+	public BaseCombatEntity.Pickup pickup;
+	public BaseCombatEntity.Repair repair;
+	public bool ShowHealthInfo;
+	public BaseCombatEntity.LifeState lifestate;
+	public bool sendsHitNotification;
+	public bool sendsMeleeHitNotification;
+	public bool markAttackerHostile;
+	protected float _health;
+	protected float _maxHealth;
+	public BaseCombatEntity.Faction faction;
+	protected float deathTime;
+	private int lastNotifyFrame;
 
 	public override bool HasMenuOptions { get; }
 	public float SecondsSinceDeath { get; }
@@ -30,7 +30,7 @@ public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10036
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void HitNotify(BaseEntity.RPCMessage rpc) { }
 
 	protected override void ClientInit(Entity info) { }
@@ -49,10 +49,10 @@ public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10036
 
 	public virtual void OnPickedUpPreItemMove(Item createdItem, BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Pickup(BasePlayer player) { }
 
 	public void Menu_Pickup_TimeStart() { }
@@ -109,47 +109,47 @@ public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10036
 
 }
 
-public struct BaseCombatEntity.Pickup // TypeDefIndex: 10037
+public struct BaseCombatEntity.Pickup // TypeDefIndex: 10039
 {
-	public bool enabled; 
-	[ItemSelector] 
-	public ItemDefinition itemTarget; 
-	public int itemCount; 
-	[TooltipAttribute] 
-	public bool setConditionFromHealth; 
-	[TooltipAttribute] 
-	public float subtractCondition; 
-	[TooltipAttribute] 
-	public bool requireBuildingPrivilege; 
-	[TooltipAttribute] 
-	public bool requireHammer; 
-	[TooltipAttribute] 
-	public bool requireEmptyInv; 
+	public bool enabled;
+	[ItemSelector]
+	public ItemDefinition itemTarget;
+	public int itemCount;
+	[TooltipAttribute]
+	public bool setConditionFromHealth;
+	[TooltipAttribute]
+	public float subtractCondition;
+	[TooltipAttribute]
+	public bool requireBuildingPrivilege;
+	[TooltipAttribute]
+	public bool requireHammer;
+	[TooltipAttribute]
+	public bool requireEmptyInv;
 
 }
 
-public struct BaseCombatEntity.Repair // TypeDefIndex: 10038
+public struct BaseCombatEntity.Repair // TypeDefIndex: 10040
 {
-	public bool enabled; 
-	[ItemSelector] 
-	public ItemDefinition itemTarget; 
-	public GameObjectRef repairEffect; 
-	public GameObjectRef repairFullEffect; 
-	public GameObjectRef repairFailedEffect; 
+	public bool enabled;
+	[ItemSelector]
+	public ItemDefinition itemTarget;
+	public GameObjectRef repairEffect;
+	public GameObjectRef repairFullEffect;
+	public GameObjectRef repairFailedEffect;
 
 }
 
-public enum BaseCombatEntity.LifeState // TypeDefIndex: 10039
+public enum BaseCombatEntity.LifeState // TypeDefIndex: 10041
 {
-	public int value__; 
+	public int value__;
 	public const BaseCombatEntity.LifeState Alive = 0;
 	public const BaseCombatEntity.LifeState Dead = 1;
 
 }
 
-public enum BaseCombatEntity.Faction // TypeDefIndex: 10040
+public enum BaseCombatEntity.Faction // TypeDefIndex: 10042
 {
-	public int value__; 
+	public int value__;
 	public const BaseCombatEntity.Faction Default = 0;
 	public const BaseCombatEntity.Faction Player = 1;
 	public const BaseCombatEntity.Faction Bandit = 2;

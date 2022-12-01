@@ -1,10 +1,10 @@
 public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 {
-	[OptionalFieldAttribute] 
-	internal bool isThrowException; 
-	internal bool bigEndian; 
-	internal bool byteOrderMark; 
-	private static readonly ulong highLowPatternMask; 
+	[OptionalFieldAttribute]
+	internal bool isThrowException;
+	internal bool bigEndian;
+	internal bool byteOrderMark;
+	private static readonly ulong highLowPatternMask;
 
 
 	public void .ctor() { }
@@ -13,7 +13,7 @@ public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 
 	public void .ctor(bool bigEndian, bool byteOrderMark, bool throwOnInvalidBytes) { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
 	internal override void SetDefaultFallbacks() { }
@@ -22,31 +22,31 @@ public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 
 	public override int GetByteCount(string s) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetByteCount(char* chars, int count) { }
 
 	public override int GetBytes(string s, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override string GetString(byte[] bytes, int index, int count) { }
 
 	internal override int GetByteCount(char* chars, int count, EncoderNLS encoder) { }
@@ -57,7 +57,7 @@ public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 
 	internal override int GetChars(byte* bytes, int byteCount, char* chars, int charCount, DecoderNLS baseDecoder) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Encoder GetEncoder() { }
 
 	public override Decoder GetDecoder() { }
@@ -78,8 +78,8 @@ public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 
 private class UnicodeEncoding.Decoder : DecoderNLS, ISerializable // TypeDefIndex: 466
 {
-	internal int lastByte; 
-	internal char lastChar; 
+	internal int lastByte;
+	internal char lastChar;
 
 	internal override bool HasState { get; }
 

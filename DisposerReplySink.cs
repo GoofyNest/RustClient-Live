@@ -1,7 +1,7 @@
 internal class DisposerReplySink : IMessageSink // TypeDefIndex: 1149
 {
-	private IMessageSink _next; 
-	private IDisposable _disposable; 
+	private IMessageSink _next;
+	private IDisposable _disposable;
 
 
 	public void .ctor(IMessageSink next, IDisposable disposable) { }

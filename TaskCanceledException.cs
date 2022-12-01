@@ -1,6 +1,6 @@
 public class TaskCanceledException : OperationCanceledException // TypeDefIndex: 870
 {
-	private Task m_canceledTask; 
+	private Task m_canceledTask;
 
 
 	public void .ctor() { }

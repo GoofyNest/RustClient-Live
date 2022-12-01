@@ -1,6 +1,6 @@
-public enum PlatformFlags // TypeDefIndex: 9877
+public enum PlatformFlags // TypeDefIndex: 9879
 {
-	public ulong value__; 
+	public ulong value__;
 	public const PlatformFlags None = 0;
 	public const PlatformFlags LoadingInEditor = 1;
 	public const PlatformFlags DisableOverlay = 2;

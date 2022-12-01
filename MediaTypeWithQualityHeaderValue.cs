@@ -1,4 +1,4 @@
-public sealed class MediaTypeWithQualityHeaderValue : MediaTypeHeaderValue // TypeDefIndex: 5793
+public sealed class MediaTypeWithQualityHeaderValue : MediaTypeHeaderValue // TypeDefIndex: 5795
 {
 
 	private void .ctor() { }

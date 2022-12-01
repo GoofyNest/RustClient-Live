@@ -1,15 +1,15 @@
-public struct UpdateLobbyOptions // TypeDefIndex: 9274
+public struct UpdateLobbyOptions // TypeDefIndex: 9276
 {
-	[CompilerGeneratedAttribute] 
-	private LobbyModification <LobbyModificationHandle>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private LobbyModification <LobbyModificationHandle>k__BackingField;
 
 	public LobbyModification LobbyModificationHandle { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LobbyModification get_LobbyModificationHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyModificationHandle(LobbyModification value) { }
 
 }

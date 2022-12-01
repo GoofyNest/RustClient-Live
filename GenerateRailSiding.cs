@@ -1,4 +1,4 @@
-public class GenerateRailSiding : ProceduralComponent // TypeDefIndex: 12243
+public class GenerateRailSiding : ProceduralComponent // TypeDefIndex: 12251
 {
 	public const float Width = 4;
 	public const float InnerPadding = 1;
@@ -8,8 +8,8 @@ public class GenerateRailSiding : ProceduralComponent // TypeDefIndex: 12243
 	public const float RandomScale = 1;
 	public const float MeshOffset = 0;
 	public const float TerrainOffset = -0,125;
-	private static Quaternion rotRight; 
-	private static Quaternion rotLeft; 
+	private static Quaternion rotRight;
+	private static Quaternion rotLeft;
 	private const int MaxDepth = 250000;
 
 

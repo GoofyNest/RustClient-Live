@@ -1,15 +1,15 @@
 public sealed class DSACryptoServiceProvider : DSA // TypeDefIndex: 1005
 {
-	private KeyPairPersistence store; 
-	private bool persistKey; 
-	private bool persisted; 
-	private bool privateKeyExportable; 
-	private bool m_disposed; 
-	private DSAManaged dsa; 
-	private static bool useMachineKeyStore; 
+	private KeyPairPersistence store;
+	private bool persistKey;
+	private bool persisted;
+	private bool privateKeyExportable;
+	private bool m_disposed;
+	private DSAManaged dsa;
+	private static bool useMachineKeyStore;
 
 	public override int KeySize { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public bool PublicOnly { get; }
 
 

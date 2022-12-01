@@ -1,21 +1,21 @@
 public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent> reflectionProbeChanged; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action<Cubemap> defaultReflectionSet; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent> reflectionProbeChanged;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action<Cubemap> defaultReflectionSet;
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public Vector3 size { set; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public float nearClipPlane { get; set; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public float farClipPlane { get; set; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public float intensity { get; set; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool hdr { get; }
 	public float shadowDistance { get; }
 	public int resolution { get; set; }
@@ -93,14 +93,14 @@ public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 
 	private int ScheduleRender(ReflectionProbeTimeSlicingMode timeSlicingMode, RenderTexture targetTexture) { }
 
-	[NativeHeaderAttribute] 
-	[FreeFunctionAttribute] 
+	[NativeHeaderAttribute]
+	[FreeFunctionAttribute]
 	public static bool BlendCubemap(Texture src, Texture dst, float blend, RenderTexture target) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void CallReflectionProbeEvent(ReflectionProbe probe, ReflectionProbe.ReflectionProbeEvent probeEvent) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void CallSetDefaultReflection(Cubemap defaultReflectionCubemap) { }
 
 	private void set_size_Injected(ref Vector3 value) { }
@@ -113,7 +113,7 @@ public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 
 public enum ReflectionProbe.ReflectionProbeEvent // TypeDefIndex: 3369
 {
-	public int value__; 
+	public int value__;
 	public const ReflectionProbe.ReflectionProbeEvent ReflectionProbeAdded = 0;
 	public const ReflectionProbe.ReflectionProbeEvent ReflectionProbeRemoved = 1;
 

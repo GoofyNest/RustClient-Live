@@ -1,15 +1,15 @@
-public class QuickCraftButton : MonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler // TypeDefIndex: 12821
+public class QuickCraftButton : MonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler // TypeDefIndex: 12835
 {
-	public Image icon; 
-	public Image favourite; 
-	public Tooltip tooltip; 
-	public Text CraftCount; 
-	public Image FavouriteIcon; 
-	private ItemBlueprint bp; 
-	private int skinId; 
-	private int oldCount; 
-	private bool favourited; 
-	private static int lastClickedItemID; 
+	public Image icon;
+	public Image favourite;
+	public Tooltip tooltip;
+	public Text CraftCount;
+	public Image FavouriteIcon;
+	private ItemBlueprint bp;
+	private int skinId;
+	private int oldCount;
+	private bool favourited;
+	private static int lastClickedItemID;
 
 
 	internal void Setup(ItemBlueprint item) { }

@@ -1,8 +1,8 @@
 internal class WebRequestPrefixElement // TypeDefIndex: 2890
 {
-	public string Prefix; 
-	internal IWebRequestCreate creator; 
-	internal Type creatorType; 
+	public string Prefix;
+	internal IWebRequestCreate creator;
+	internal Type creatorType;
 
 	public IWebRequestCreate Creator { get; set; }
 

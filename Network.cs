@@ -1,9 +1,9 @@
 internal sealed class QueueUserWorkItemCallback : IThreadPoolWorkItem // TypeDefIndex: 815
 {
-	private WaitCallback callback; 
-	private ExecutionContext context; 
-	private object state; 
-	internal static ContextCallback ccb; 
+	private WaitCallback callback;
+	private ExecutionContext context;
+	private object state;
+	internal static ContextCallback ccb;
 
 
 	private static void .cctor() { }
@@ -29,13 +29,13 @@ public class ProxyAttribute : Attribute // TypeDefIndex: 1159
 
 public class Queue : ICollection, IEnumerable, ICloneable // TypeDefIndex: 1413
 {
-	private object[] _array; 
-	private int _head; 
-	private int _tail; 
-	private int _size; 
-	private int _growFactor; 
-	private int _version; 
-	private object _syncRoot; 
+	private object[] _array;
+	private int _head;
+	private int _tail;
+	private int _size;
+	private int _growFactor;
+	private int _version;
+	private object _syncRoot;
 
 	public virtual int Count { get; }
 	public virtual object SyncRoot { get; }
@@ -77,10 +77,10 @@ public class Queue : ICollection, IEnumerable, ICloneable // TypeDefIndex: 1413
 
 private class Queue.QueueEnumerator : IEnumerator, ICloneable // TypeDefIndex: 1414
 {
-	private Queue _q; 
-	private int _index; 
-	private int _version; 
-	private object currentElement; 
+	private Queue _q;
+	private int _index;
+	private int _version;
+	private object currentElement;
 
 	public virtual object Current { get; }
 
@@ -99,9 +99,9 @@ private class Queue.QueueEnumerator : IEnumerator, ICloneable // TypeDefIndex: 1
 
 public class NetworkCredential : ICredentials // TypeDefIndex: 2893
 {
-	private string m_domain; 
-	private string m_userName; 
-	private SecureString m_password; 
+	private string m_domain;
+	private string m_userName;
+	private SecureString m_password;
 
 	public string UserName { get; set; }
 	public string Password { get; set; }
@@ -147,14 +147,14 @@ public class NetworkStream : Stream // TypeDefIndex: 3044
 {
 
 public class NetworkStream : Stream
-	private Socket m_StreamSocket; 
-	private bool m_Readable; 
-	private bool m_Writeable; 
-	private bool m_OwnsSocket; 
-	private int m_CloseTimeout; 
-	private bool m_CleanedUp; 
-	private int m_CurrentReadTimeout; 
-	private int m_CurrentWriteTimeout; 
+	private Socket m_StreamSocket;
+	private bool m_Readable;
+	private bool m_Writeable;
+	private bool m_OwnsSocket;
+	private int m_CloseTimeout;
+	private bool m_CleanedUp;
+	private int m_CurrentReadTimeout;
+	private int m_CurrentWriteTimeout;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }
@@ -222,7 +222,7 @@ public class NetworkInformationException : Win32Exception // TypeDefIndex: 3074
 
 public enum NetworkInterfaceComponent // TypeDefIndex: 3075
 {
-	public int value__; 
+	public int value__;
 	public const NetworkInterfaceComponent IPv4 = 0;
 	public const NetworkInterfaceComponent IPv6 = 1;
 
@@ -230,7 +230,7 @@ public enum NetworkInterfaceComponent // TypeDefIndex: 3075
 
 public enum NetBiosNodeType // TypeDefIndex: 3076
 {
-	public int value__; 
+	public int value__;
 	public const NetBiosNodeType Unknown = 0;
 	public const NetBiosNodeType Broadcast = 1;
 	public const NetBiosNodeType Peer2Peer = 2;
@@ -241,12 +241,12 @@ public enum NetBiosNodeType // TypeDefIndex: 3076
 
 public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T> // TypeDefIndex: 3118
 {
-	private T[] _array; 
-	private int _head; 
-	private int _tail; 
-	private int _size; 
-	private int _version; 
-	private object _syncRoot; 
+	private T[] _array;
+	private int _head;
+	private int _tail;
+	private int _size;
+	private int _version;
+	private object _syncRoot;
 	private const int MinimumGrow = 4;
 	private const int GrowFactor = 200;
 
@@ -571,10 +571,10 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 
 public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 3119
 {
-	private readonly Queue<T> _q; 
-	private readonly int _version; 
-	private int _index; 
-	private T _currentElement; 
+	private readonly Queue<T> _q;
+	private readonly int _version;
+	private int _index;
+	private T _currentElement;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -722,8 +722,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 public sealed class ConnectionManagementElementCollection : ConfigurationElementCollection // TypeDefIndex: 3170
 {
 
-[ConfigurationCollectionAttribute] 
-[DefaultMemberAttribute] 
+[ConfigurationCollectionAttribute]
+[DefaultMemberAttribute]
 public sealed class ConnectionManagementElementCollection : ConfigurationElementCollection
 
 	public void .ctor() { }
@@ -761,7 +761,7 @@ public sealed class NetSectionGroup : ConfigurationSectionGroup // TypeDefIndex:
 
 public enum NetworkReachability // TypeDefIndex: 3358
 {
-	public int value__; 
+	public int value__;
 	public const NetworkReachability NotReachable = 0;
 	public const NetworkReachability ReachableViaCarrierDataNetwork = 1;
 	public const NetworkReachability ReachableViaLocalAreaNetwork = 2;
@@ -770,7 +770,7 @@ public enum NetworkReachability // TypeDefIndex: 3358
 
 internal enum ConnectionChangeType // TypeDefIndex: 4148
 {
-	public uint value__; 
+	public uint value__;
 	public const ConnectionChangeType Connected = 0;
 	public const ConnectionChangeType Disconnected = 1;
 	public const ConnectionChangeType ConfigChange = 2;
@@ -779,7 +779,7 @@ internal enum ConnectionChangeType // TypeDefIndex: 4148
 
 public enum ConnectionState // TypeDefIndex: 4178
 {
-	public int value__; 
+	public int value__;
 	public const ConnectionState Closed = 0;
 	public const ConnectionState Open = 1;
 	public const ConnectionState Connecting = 2;
@@ -791,7 +791,7 @@ public enum ConnectionState // TypeDefIndex: 4178
 
 public enum ConnectionState // TypeDefIndex: 5175
 {
-	public int value__; 
+	public int value__;
 	public const ConnectionState None = 0;
 	public const ConnectionState Connecting = 1;
 	public const ConnectionState FindingRoute = 2;
@@ -806,7 +806,7 @@ public enum ConnectionState // TypeDefIndex: 5175
 
 internal enum NetConfigScope // TypeDefIndex: 5176
 {
-	public int value__; 
+	public int value__;
 	public const NetConfigScope Global = 1;
 	public const NetConfigScope SocketsInterface = 2;
 	public const NetConfigScope ListenSocket = 3;
@@ -816,7 +816,7 @@ internal enum NetConfigScope // TypeDefIndex: 5176
 
 internal enum NetConfigType // TypeDefIndex: 5177
 {
-	public int value__; 
+	public int value__;
 	public const NetConfigType Int32 = 1;
 	public const NetConfigType Int64 = 2;
 	public const NetConfigType Float = 3;
@@ -827,7 +827,7 @@ internal enum NetConfigType // TypeDefIndex: 5177
 
 internal enum NetConfig // TypeDefIndex: 5178
 {
-	public int value__; 
+	public int value__;
 	public const NetConfig Invalid = 0;
 	public const NetConfig TimeoutInitial = 24;
 	public const NetConfig TimeoutConnected = 25;
@@ -870,6 +870,10 @@ internal enum NetConfig // TypeDefIndex: 5178
 	public const NetConfig P2P_Transport_ICE_Enable = 104;
 	public const NetConfig P2P_Transport_ICE_Penalty = 105;
 	public const NetConfig P2P_Transport_SDR_Penalty = 106;
+	public const NetConfig P2P_TURN_ServerList = 107;
+	public const NetConfig P2P_TURN_UserList = 108;
+	public const NetConfig P2P_TURN_PassList = 109;
+	public const NetConfig P2P_Transport_ICE_Implementation = 110;
 	public const NetConfig SDRClient_ConsecutitivePingTimeoutsFailInitial = 19;
 	public const NetConfig SDRClient_ConsecutitivePingTimeoutsFail = 20;
 	public const NetConfig SDRClient_MinPingsBeforePingAccurate = 21;
@@ -890,7 +894,7 @@ internal enum NetConfig // TypeDefIndex: 5178
 
 internal enum NetConfigResult // TypeDefIndex: 5179
 {
-	public int value__; 
+	public int value__;
 	public const NetConfigResult BadValue = -1;
 	public const NetConfigResult BadScopeObj = -2;
 	public const NetConfigResult BufferTooSmall = -3;
@@ -901,7 +905,7 @@ internal enum NetConfigResult // TypeDefIndex: 5179
 
 public enum NetDebugOutput // TypeDefIndex: 5180
 {
-	public int value__; 
+	public int value__;
 	public const NetDebugOutput None = 0;
 	public const NetDebugOutput Bug = 1;
 	public const NetDebugOutput Error = 2;
@@ -916,25 +920,25 @@ public enum NetDebugOutput // TypeDefIndex: 5180
 
 public class ConnectionManager // TypeDefIndex: 5184
 {
-	[CompilerGeneratedAttribute] 
-	private IConnectionManager <Interface>k__BackingField; 
-	public Connection Connection; 
-	[CompilerGeneratedAttribute] 
-	private ConnectionInfo <ConnectionInfo>k__BackingField; 
-	public bool Connected; 
-	public bool Connecting; 
+	[CompilerGeneratedAttribute]
+	private IConnectionManager <Interface>k__BackingField;
+	public Connection Connection;
+	[CompilerGeneratedAttribute]
+	private ConnectionInfo <ConnectionInfo>k__BackingField;
+	public bool Connected;
+	public bool Connecting;
 
 	public IConnectionManager Interface { get; set; }
 	internal ConnectionInfo ConnectionInfo { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IConnectionManager get_Interface() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Interface(IConnectionManager value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_ConnectionInfo(ConnectionInfo value) { }
 
 	public void Close(bool linger = False, int reasonCode = 0, string debugString = "Closing Connection") { }
@@ -972,32 +976,32 @@ internal sealed class NetDebugFunc : MulticastDelegate // TypeDefIndex: 5185
 
 }
 
-internal struct NetKeyValue // TypeDefIndex: 5513
+internal struct NetKeyValue // TypeDefIndex: 5515
 {
-	internal NetConfig Value; 
-	internal NetConfigType DataType; 
-	internal long Int64Value; 
-	internal int Int32Value; 
-	internal float FloatValue; 
-	internal IntPtr PointerValue; 
+	internal NetConfig Value;
+	internal NetConfigType DataType;
+	internal long Int64Value;
+	internal int Int32Value;
+	internal float FloatValue;
+	internal IntPtr PointerValue;
 
 }
 
-public struct NetIdentity // TypeDefIndex: 5514
+public struct NetIdentity // TypeDefIndex: 5516
 {
-	internal NetIdentity.IdentityType type; 
-	internal int size; 
-	internal ulong steamid; 
-	internal NetAddress netaddress; 
+	internal NetIdentity.IdentityType type;
+	internal int size;
+	internal ulong steamid;
+	internal NetAddress netaddress;
 
 
 	public override string ToString() { }
 
 }
 
-internal enum NetIdentity.IdentityType // TypeDefIndex: 5515
+internal enum NetIdentity.IdentityType // TypeDefIndex: 5517
 {
-	public int value__; 
+	public int value__;
 	public const NetIdentity.IdentityType Invalid = 0;
 	public const NetIdentity.IdentityType IPAddress = 1;
 	public const NetIdentity.IdentityType GenericString = 2;
@@ -1006,10 +1010,10 @@ internal enum NetIdentity.IdentityType // TypeDefIndex: 5515
 
 }
 
-public struct NetAddress // TypeDefIndex: 5516
+public struct NetAddress // TypeDefIndex: 5518
 {
-	internal NetAddress.IPV4 ip; 
-	internal ushort port; 
+	internal NetAddress.IPV4 ip;
+	internal ushort port;
 
 	public static NetAddress Cleared { get; }
 
@@ -1032,53 +1036,53 @@ public struct NetAddress // TypeDefIndex: 5516
 
 }
 
-internal struct NetAddress.IPV4 // TypeDefIndex: 5517
+internal struct NetAddress.IPV4 // TypeDefIndex: 5519
 {
-	internal ulong m_8zeros; 
-	internal ushort m_0000; 
-	internal ushort m_ffff; 
-	internal byte ip0; 
-	internal byte ip1; 
-	internal byte ip2; 
-	internal byte ip3; 
+	internal ulong m_8zeros;
+	internal ushort m_0000;
+	internal ushort m_ffff;
+	internal byte ip0;
+	internal byte ip1;
+	internal byte ip2;
+	internal byte ip3;
 
 }
 
-internal struct NetMsg // TypeDefIndex: 5518
+internal struct NetMsg // TypeDefIndex: 5520
 {
-	internal IntPtr DataPtr; 
-	internal int DataSize; 
-	internal Connection Connection; 
-	internal NetIdentity Identity; 
-	internal long ConnectionUserData; 
-	internal long RecvTime; 
-	internal long MessageNumber; 
-	internal IntPtr FreeDataPtr; 
-	internal IntPtr ReleasePtr; 
-	internal int Channel; 
-	internal SendType Flags; 
-	internal long UserData; 
-	internal ushort IdxLane; 
-	internal ushort _pad1__; 
+	internal IntPtr DataPtr;
+	internal int DataSize;
+	internal Connection Connection;
+	internal NetIdentity Identity;
+	internal long ConnectionUserData;
+	internal long RecvTime;
+	internal long MessageNumber;
+	internal IntPtr FreeDataPtr;
+	internal IntPtr ReleasePtr;
+	internal int Channel;
+	internal SendType Flags;
+	internal long UserData;
+	internal ushort IdxLane;
+	internal ushort _pad1__;
 
 
 	internal static extern void InternalRelease(NetMsg* self) { }
 
 }
 
-public struct Connection : IEquatable<Connection> // TypeDefIndex: 5549
+public struct Connection : IEquatable<Connection> // TypeDefIndex: 5551
 {
-	[CompilerGeneratedAttribute] 
-	private uint <Id>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <Id>k__BackingField;
 
 	public uint Id { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public uint get_Id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Id(uint value) { }
 
 	public bool Equals(Connection other) { }
@@ -1109,19 +1113,19 @@ public struct Connection : IEquatable<Connection> // TypeDefIndex: 5549
 
 }
 
-public struct ConnectionInfo // TypeDefIndex: 5550
+public struct ConnectionInfo // TypeDefIndex: 5552
 {
-	internal NetIdentity identity; 
-	internal long userData; 
-	internal Socket listenSocket; 
-	internal NetAddress address; 
-	internal ushort pad; 
-	internal SteamNetworkingPOPID popRemote; 
-	internal SteamNetworkingPOPID popRelay; 
-	internal ConnectionState state; 
-	internal int endReason; 
-	internal string endDebug; 
-	internal string connectionDescription; 
+	internal NetIdentity identity;
+	internal long userData;
+	internal Socket listenSocket;
+	internal NetAddress address;
+	internal ushort pad;
+	internal SteamNetworkingPOPID popRemote;
+	internal SteamNetworkingPOPID popRelay;
+	internal ConnectionState state;
+	internal int endReason;
+	internal string endDebug;
+	internal string connectionDescription;
 
 	public ConnectionState State { get; }
 	public NetAddress Address { get; }
@@ -1133,33 +1137,33 @@ public struct ConnectionInfo // TypeDefIndex: 5550
 
 }
 
-public struct ConnectionLaneStatus // TypeDefIndex: 5551
+public struct ConnectionLaneStatus // TypeDefIndex: 5553
 {
-	internal int cbPendingUnreliable; 
-	internal int cbPendingReliable; 
-	internal int cbSentUnackedReliable; 
-	internal int _reservePad1; 
-	internal long ecQueueTime; 
-	internal uint[] reserved; 
+	internal int cbPendingUnreliable;
+	internal int cbPendingReliable;
+	internal int cbSentUnackedReliable;
+	internal int _reservePad1;
+	internal long ecQueueTime;
+	internal uint[] reserved;
 
 }
 
-public struct ConnectionStatus // TypeDefIndex: 5552
+public struct ConnectionStatus // TypeDefIndex: 5554
 {
-	internal ConnectionState state; 
-	internal int ping; 
-	internal float connectionQualityLocal; 
-	internal float connectionQualityRemote; 
-	internal float outPacketsPerSec; 
-	internal float outBytesPerSec; 
-	internal float inPacketsPerSec; 
-	internal float inBytesPerSec; 
-	internal int sendRateBytesPerSecond; 
-	internal int cbPendingUnreliable; 
-	internal int cbPendingReliable; 
-	internal int cbSentUnackedReliable; 
-	internal long ecQueueTime; 
-	internal uint[] reserved; 
+	internal ConnectionState state;
+	internal int ping;
+	internal float connectionQualityLocal;
+	internal float connectionQualityRemote;
+	internal float outPacketsPerSec;
+	internal float outBytesPerSec;
+	internal float inPacketsPerSec;
+	internal float inBytesPerSec;
+	internal int sendRateBytesPerSecond;
+	internal int cbPendingUnreliable;
+	internal int cbPendingReliable;
+	internal int cbSentUnackedReliable;
+	internal long ecQueueTime;
+	internal uint[] reserved;
 
 	public int Ping { get; }
 	public float OutBytesPerSec { get; }
@@ -1183,38 +1187,38 @@ public struct ConnectionStatus // TypeDefIndex: 5552
 
 }
 
-public class Connection // TypeDefIndex: 6856
+public class Connection // TypeDefIndex: 6858
 {
-	private static MemoryStream reusableStream; 
-	protected MemoryStream recordStream; 
-	protected BinaryWriter recordWriter; 
-	protected Stopwatch recordTime; 
-	protected string recordFilename; 
-	protected IDemoHeader recordHeader; 
-	public Connection.State state; 
-	public bool active; 
-	public bool connected; 
-	public uint authLevel; 
-	public uint encryptionLevel; 
-	public bool decryptIncoming; 
-	public bool encryptOutgoing; 
-	public bool trusted; 
-	public bool rejected; 
-	public string authStatus; 
-	public byte[] token; 
-	public bool hasRequestedWorld; 
-	public ulong guid; 
-	public ulong userid; 
-	public ulong ownerid; 
-	public string username; 
-	public string os; 
-	public uint protocol; 
-	private TimeAverageValueData[] packetsPerSecond; 
-	public double connectionTime; 
-	public string ipaddress; 
-	public MonoBehaviour player; 
-	public Connection.Validation validate; 
-	public Connection.ClientInfo info; 
+	private static MemoryStream reusableStream;
+	protected MemoryStream recordStream;
+	protected BinaryWriter recordWriter;
+	protected Stopwatch recordTime;
+	protected string recordFilename;
+	protected IDemoHeader recordHeader;
+	public Connection.State state;
+	public bool active;
+	public bool connected;
+	public uint authLevel;
+	public uint encryptionLevel;
+	public bool decryptIncoming;
+	public bool encryptOutgoing;
+	public bool trusted;
+	public bool rejected;
+	public string authStatus;
+	public byte[] token;
+	public bool hasRequestedWorld;
+	public ulong guid;
+	public ulong userid;
+	public ulong ownerid;
+	public string username;
+	public string os;
+	public uint protocol;
+	private TimeAverageValueData[] packetsPerSecond;
+	public double connectionTime;
+	public string ipaddress;
+	public MonoBehaviour player;
+	public Connection.Validation validate;
+	public Connection.ClientInfo info;
 
 	public TimeSpan RecordTimeElapsed { get; }
 	public string RecordFilename { get; }
@@ -1265,9 +1269,9 @@ public class Connection // TypeDefIndex: 6856
 
 }
 
-public enum Connection.State // TypeDefIndex: 6857
+public enum Connection.State // TypeDefIndex: 6859
 {
-	public int value__; 
+	public int value__;
 	public const Connection.State Unconnected = 0;
 	public const Connection.State Connecting = 1;
 	public const Connection.State InQueue = 2;
@@ -1277,15 +1281,15 @@ public enum Connection.State // TypeDefIndex: 6857
 
 }
 
-public struct Connection.Validation // TypeDefIndex: 6858
+public struct Connection.Validation // TypeDefIndex: 6860
 {
-	public uint entityUpdates; 
+	public uint entityUpdates;
 
 }
 
-public class Connection.ClientInfo // TypeDefIndex: 6859
+public class Connection.ClientInfo // TypeDefIndex: 6861
 {
-	public Dictionary<string, string> info; 
+	public Dictionary<string, string> info;
 
 
 	public void Set(string k, string v) { }
@@ -1302,16 +1306,16 @@ public class Connection.ClientInfo // TypeDefIndex: 6859
 
 }
 
-public class NetRead : Stream // TypeDefIndex: 6869
+public class NetRead : Stream // TypeDefIndex: 6871
 {
 	public const int MaxPacketSize = 6291456;
 	public const int MaxBufferSize = 8388608;
-	public byte[] Data; 
-	public long _length; 
-	public long _position; 
+	public byte[] Data;
+	public long _length;
+	public long _position;
 	private const int bufferSize = 8388608;
-	private static byte[] byteBuffer; 
-	private static char[] charBuffer; 
+	private static byte[] byteBuffer;
+	private static char[] charBuffer;
 
 	public int Unread { get; }
 	public override bool CanRead { get; }
@@ -1434,13 +1438,13 @@ public class NetRead : Stream // TypeDefIndex: 6869
 
 }
 
-public class NetWrite : MemoryStream // TypeDefIndex: 6870
+public class NetWrite : MemoryStream // TypeDefIndex: 6872
 {
-	private static MemoryStream buffer; 
-	private BaseNetwork netwrite; 
-	private byte[] data; 
-	private int position; 
-	private int length; 
+	private static MemoryStream buffer;
+	private BaseNetwork netwrite;
+	private byte[] data;
+	private int position;
+	private int length;
 
 	public override bool CanSeek { get; }
 	public override bool CanRead { get; }
@@ -1555,26 +1559,26 @@ public class NetWrite : MemoryStream // TypeDefIndex: 6870
 
 }
 
-public class Networkable : Pool.IPooled // TypeDefIndex: 6874
+public class Networkable : Pool.IPooled // TypeDefIndex: 6876
 {
-	public uint ID; 
-	[CompilerGeneratedAttribute] 
-	private Connection <connection>k__BackingField; 
-	public Group group; 
-	public Group secondaryGroup; 
-	public Subscriber subscriber; 
-	public NetworkHandler handler; 
-	private bool updateSubscriptions; 
-	internal Server sv; 
-	internal Client cl; 
+	public uint ID;
+	[CompilerGeneratedAttribute]
+	private Connection <connection>k__BackingField;
+	public Group group;
+	public Group secondaryGroup;
+	public Subscriber subscriber;
+	public NetworkHandler handler;
+	private bool updateSubscriptions;
+	internal Server sv;
+	internal Client cl;
 
 	public Connection connection { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Connection get_connection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_connection(Connection value) { }
 
 	public void Destroy() { }
@@ -1611,12 +1615,12 @@ public class Networkable : Pool.IPooled // TypeDefIndex: 6874
 
 }
 
-public class QueuedStream : Stream // TypeDefIndex: 6954
+public class QueuedStream : Stream // TypeDefIndex: 6956
 {
-	private readonly Stream _stream; 
-	private readonly Queue<QueuedStream.WriteData> _queue; 
-	private int _pendingWrite; 
-	private bool _disposed; 
+	private readonly Stream _stream;
+	private readonly Queue<QueuedStream.WriteData> _queue;
+	private int _pendingWrite;
+	private bool _disposed;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }
@@ -1665,27 +1669,27 @@ public class QueuedStream : Stream // TypeDefIndex: 6954
 
 }
 
-private class QueuedStream.WriteData // TypeDefIndex: 6955
+private class QueuedStream.WriteData // TypeDefIndex: 6957
 {
-	public readonly byte[] Buffer; 
-	public readonly int Offset; 
-	public readonly int Count; 
-	public readonly AsyncCallback Callback; 
-	public readonly object State; 
-	public readonly QueuedStream.QueuedWriteResult AsyncResult; 
+	public readonly byte[] Buffer;
+	public readonly int Offset;
+	public readonly int Count;
+	public readonly AsyncCallback Callback;
+	public readonly object State;
+	public readonly QueuedStream.QueuedWriteResult AsyncResult;
 
 
 	public void .ctor(byte[] buffer, int offset, int count, AsyncCallback callback, object state) { }
 
 }
 
-private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 6956
+private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 6958
 {
-	private readonly object _state; 
-	[CompilerGeneratedAttribute] 
-	private Exception <Exception>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IAsyncResult <ActualResult>k__BackingField; 
+	private readonly object _state;
+	[CompilerGeneratedAttribute]
+	private Exception <Exception>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IAsyncResult <ActualResult>k__BackingField;
 
 	public Exception Exception { get; set; }
 	public IAsyncResult ActualResult { get; set; }
@@ -1697,16 +1701,16 @@ private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 695
 
 	public void .ctor(object state) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Exception get_Exception() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Exception(Exception value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IAsyncResult get_ActualResult() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ActualResult(IAsyncResult value) { }
 
 	public object get_AsyncState() { }
@@ -1719,11 +1723,11 @@ private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 695
 
 }
 
-private sealed class QueuedStream.<>c__DisplayClass27_0 // TypeDefIndex: 6957
+private sealed class QueuedStream.<>c__DisplayClass27_0 // TypeDefIndex: 6959
 {
-	public QueuedStream.WriteData queued; 
-	public QueuedStream <>4__this; 
-	public AsyncCallback callback; 
+	public QueuedStream.WriteData queued;
+	public QueuedStream <>4__this;
+	public AsyncCallback callback;
 
 
 	public void .ctor() { }
@@ -1732,11 +1736,11 @@ private sealed class QueuedStream.<>c__DisplayClass27_0 // TypeDefIndex: 6957
 
 }
 
-public class NetGraph : SingletonComponent<NetGraph> // TypeDefIndex: 7115
+public class NetGraph : SingletonComponent<NetGraph> // TypeDefIndex: 7117
 {
-	public CanvasGroup group; 
-	public GameObject rootPanel; 
-	private NetGraphRow[] rows; 
+	public CanvasGroup group;
+	public GameObject rootPanel;
+	private NetGraphRow[] rows;
 
 	public bool Enabled { set; }
 
@@ -1751,10 +1755,10 @@ public class NetGraph : SingletonComponent<NetGraph> // TypeDefIndex: 7115
 
 }
 
-private sealed class NetGraph.<>c // TypeDefIndex: 7116
+private sealed class NetGraph.<>c // TypeDefIndex: 7118
 {
-	public static readonly NetGraph.<>c <>9; 
-	public static Func<KeyValuePair<string, Stats.Node>, long> <>9__6_0; 
+	public static readonly NetGraph.<>c <>9;
+	public static Func<KeyValuePair<string, Stats.Node>, long> <>9__6_0;
 
 
 	private static void .cctor() { }
@@ -1765,13 +1769,13 @@ private sealed class NetGraph.<>c // TypeDefIndex: 7116
 
 }
 
-public class NetGraphItem : MonoBehaviour // TypeDefIndex: 7117
+public class NetGraphItem : MonoBehaviour // TypeDefIndex: 7119
 {
-	public CanvasGroup group; 
-	public LayoutElement element; 
-	public Text countTotal; 
-	public Text label; 
-	public Text bytes; 
+	public CanvasGroup group;
+	public LayoutElement element;
+	public Text countTotal;
+	public Text label;
+	public Text bytes;
 
 
 	internal void Hide() { }
@@ -1782,16 +1786,16 @@ public class NetGraphItem : MonoBehaviour // TypeDefIndex: 7117
 
 }
 
-public class NetGraphRow : MonoBehaviour // TypeDefIndex: 7118
+public class NetGraphRow : MonoBehaviour // TypeDefIndex: 7120
 {
-	public CanvasGroup group; 
-	public Text countTotal; 
-	public Text countUnique; 
-	public Text label; 
-	public Text bytes; 
-	public GameObject RowContainer; 
-	public NetGraphItem[] Items; 
-	public GameObject RowSpacer; 
+	public CanvasGroup group;
+	public Text countTotal;
+	public Text countUnique;
+	public Text label;
+	public Text bytes;
+	public GameObject RowContainer;
+	public NetGraphItem[] Items;
+	public GameObject RowSpacer;
 
 
 	private void Awake() { }
@@ -1804,10 +1808,10 @@ public class NetGraphRow : MonoBehaviour // TypeDefIndex: 7118
 
 }
 
-private sealed class NetGraphRow.<>c // TypeDefIndex: 7119
+private sealed class NetGraphRow.<>c // TypeDefIndex: 7121
 {
-	public static readonly NetGraphRow.<>c <>9; 
-	public static Func<KeyValuePair<string, Stats.Node>, long> <>9__10_0; 
+	public static readonly NetGraphRow.<>c <>9;
+	public static Func<KeyValuePair<string, Stats.Node>, long> <>9__10_0;
 
 
 	private static void .cctor() { }
@@ -1818,20 +1822,20 @@ private sealed class NetGraphRow.<>c // TypeDefIndex: 7119
 
 }
 
-public class Net // TypeDefIndex: 8246
+public class Net // TypeDefIndex: 8248
 {
-	[CompilerGeneratedAttribute] 
-	private static Client <cl>k__BackingField; 
-	public static Client ClientNetwork; 
-	public static DemoClient DemoClientNetwork; 
+	[CompilerGeneratedAttribute]
+	private static Client <cl>k__BackingField;
+	public static Client ClientNetwork;
+	public static DemoClient DemoClientNetwork;
 
 	public static Client cl { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static Client get_cl() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_cl(Client value) { }
 
 	public static void ClientInit(Client newclient) { }
@@ -1844,9 +1848,9 @@ public class Net // TypeDefIndex: 8246
 
 }
 
-public enum ConnectionClosedReason // TypeDefIndex: 8952
+public enum ConnectionClosedReason // TypeDefIndex: 8954
 {
-	public int value__; 
+	public int value__;
 	public const ConnectionClosedReason Unknown = 0;
 	public const ConnectionClosedReason ClosedByLocalUser = 1;
 	public const ConnectionClosedReason ClosedByPeer = 2;
@@ -1861,35 +1865,35 @@ public enum ConnectionClosedReason // TypeDefIndex: 8952
 
 }
 
-public enum ConnectionEstablishedType // TypeDefIndex: 8953
+public enum ConnectionEstablishedType // TypeDefIndex: 8955
 {
-	public int value__; 
+	public int value__;
 	public const ConnectionEstablishedType NewConnection = 0;
 	public const ConnectionEstablishedType Reconnection = 1;
 
 }
 
-public enum NetworkConnectionType // TypeDefIndex: 8965
+public enum NetworkConnectionType // TypeDefIndex: 8967
 {
-	public int value__; 
+	public int value__;
 	public const NetworkConnectionType NoConnection = 0;
 	public const NetworkConnectionType DirectConnection = 1;
 	public const NetworkConnectionType RelayedConnection = 2;
 
 }
 
-public enum NetworkStatus // TypeDefIndex: 9874
+public enum NetworkStatus // TypeDefIndex: 9876
 {
-	public int value__; 
+	public int value__;
 	public const NetworkStatus Disabled = 0;
 	public const NetworkStatus Offline = 1;
 	public const NetworkStatus Online = 2;
 
 }
 
-public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 11018
+public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 11024
 {
-	public TextMeshProUGUI text; 
+	public TextMeshProUGUI text;
 
 
 	private void Update() { }
@@ -1902,9 +1906,9 @@ public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 11018
 
 }
 
-public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex: 11983
+public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex: 11990
 {
-	private byte[] buffer; 
+	private byte[] buffer;
 
 
 	public ArraySegment<byte> EncryptCopy(Connection connection, ArraySegment<byte> data) { }
@@ -1927,7 +1931,7 @@ public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex
 
 }
 
-public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 11984
+public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 11991
 {
 
 	protected override void EncryptionHandler(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst) { }
@@ -1938,43 +1942,51 @@ public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 11
 
 }
 
-public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 11985
+public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 11992
 {
-	public int startID; 
-	public int gridSize; 
-	public int cellCount; 
-	[FormerlySerializedAsAttribute] 
-	public int visibilityRadiusFar; 
-	public int visibilityRadiusNear; 
-	public float switchTolerance; 
+	public const int overworldLayer = 0;
+	public const int cavesLayer = 1;
+	public const int tunnelsLayer = 2;
+	public const int dynamicDungeonsFirstLayer = 10;
+	public int startID;
+	public int gridSize;
+	public int cellCount;
+	[FormerlySerializedAsAttribute]
+	public int visibilityRadiusFar;
+	public int visibilityRadiusNear;
+	public float switchTolerance;
+	public float cavesThreshold;
+	public float tunnelsThreshold;
+	public float dynamicDungeonsThreshold;
+	public float dynamicDungeonsInterval;
 
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionAuth : MonoBehaviour // TypeDefIndex: 12459
+public class ConnectionAuth : MonoBehaviour // TypeDefIndex: 12467
 {
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionQueue // TypeDefIndex: 12460
+public class ConnectionQueue // TypeDefIndex: 12468
 {
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefIndex: 12872
+public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefIndex: 12886
 {
-	public Text statusText; 
-	public GameObject disconnectButton; 
-	public GameObject retryButton; 
-	public ServerBrowserInfo browserInfo; 
-	internal Nullable<ServerInfo> currentServer; 
-	internal Dictionary<string, string> currentServerRules; 
+	public Text statusText;
+	public GameObject disconnectButton;
+	public GameObject retryButton;
+	public ServerBrowserInfo browserInfo;
+	internal Nullable<ServerInfo> currentServer;
+	internal Dictionary<string, string> currentServerRules;
 
 
 	public static void Show() { }
@@ -1991,10 +2003,10 @@ public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefI
 
 	public void RetryConnection() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static void LoadServerInfo(string address, int port, bool addToHistory = False) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private static void LoadServerRules() { }
 
 	private static void OnServerInfoChanged() { }
@@ -2003,45 +2015,45 @@ public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefI
 
 }
 
-private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // TypeDefIndex: 12873
+private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // TypeDefIndex: 12887
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public string address; 
-	public int port; 
-	public bool addToHistory; 
-	private TaskAwaiter<Nullable<ServerInfo>> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public string address;
+	public int port;
+	public bool addToHistory;
+	private TaskAwaiter<Nullable<ServerInfo>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // TypeDefIndex: 12874
+private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // TypeDefIndex: 12888
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	private TaskAwaiter<Dictionary<string, string>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public class NetworkSleep : MonoBehaviour // TypeDefIndex: 13102
+public class NetworkSleep : MonoBehaviour // TypeDefIndex: 13117
 {
-	public static int totalBehavioursDisabled; 
-	public static int totalCollidersDisabled; 
-	public Behaviour[] behaviours; 
-	public Collider[] colliders; 
-	internal int BehavioursDisabled; 
-	internal int CollidersDisabled; 
+	public static int totalBehavioursDisabled;
+	public static int totalCollidersDisabled;
+	public Behaviour[] behaviours;
+	public Collider[] colliders;
+	internal int BehavioursDisabled;
+	internal int CollidersDisabled;
 
 
 	public void .ctor() { }
@@ -2050,10 +2062,10 @@ public class NetworkSleep : MonoBehaviour // TypeDefIndex: 13102
 
 }
 
-public static class NetworkWriteEx // TypeDefIndex: 13137
+public static class NetworkWriteEx // TypeDefIndex: 13152
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void WriteObject<T>(NetWrite write, T obj) { }
 	/* GenericInstMethod :
 	|
@@ -2082,10 +2094,10 @@ public static class NetworkWriteEx // TypeDefIndex: 13137
 
 }
 
-public class NetworkedProperty<T> // TypeDefIndex: 13218
+public class NetworkedProperty<T> // TypeDefIndex: 13233
 {
-	private T val; 
-	private BaseEntity entity; 
+	private T val;
+	private BaseEntity entity;
 
 	public T Value { get; set; }
 
@@ -2122,9 +2134,9 @@ public class NetworkedProperty<T> // TypeDefIndex: 13218
 
 }
 
-public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // TypeDefIndex: 13371
+public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // TypeDefIndex: 13386
 {
-	private readonly List<Variant> list; 
+	private readonly List<Variant> list;
 
 	public override Variant Item { get; set; }
 	public int Count { get; }
@@ -2150,9 +2162,9 @@ public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // T
 
 }
 
-public sealed class ProxyBoolean : Variant // TypeDefIndex: 13372
+public sealed class ProxyBoolean : Variant // TypeDefIndex: 13387
 {
-	private readonly bool value; 
+	private readonly bool value;
 
 
 	public void .ctor(bool value) { }
@@ -2163,10 +2175,10 @@ public sealed class ProxyBoolean : Variant // TypeDefIndex: 13372
 
 }
 
-public sealed class ProxyNumber : Variant // TypeDefIndex: 13373
+public sealed class ProxyNumber : Variant // TypeDefIndex: 13388
 {
-	private static readonly char[] floatingPointCharacters; 
-	private readonly IConvertible value; 
+	private static readonly char[] floatingPointCharacters;
+	private readonly IConvertible value;
 
 
 	public void .ctor(IConvertible value) { }
@@ -2205,10 +2217,10 @@ public sealed class ProxyNumber : Variant // TypeDefIndex: 13373
 
 }
 
-public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Variant>>, IEnumerable // TypeDefIndex: 13374
+public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Variant>>, IEnumerable // TypeDefIndex: 13389
 {
 	public const string TypeHintKey = "@type";
-	private readonly Dictionary<string, Variant> dict; 
+	private readonly Dictionary<string, Variant> dict;
 
 	public string TypeHint { get; }
 	public override Variant Item { get; set; }
@@ -2241,9 +2253,9 @@ public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Vari
 
 }
 
-public sealed class ProxyString : Variant // TypeDefIndex: 13375
+public sealed class ProxyString : Variant // TypeDefIndex: 13390
 {
-	private readonly string value; 
+	private readonly string value;
 
 
 	public void .ctor(string value) { }
@@ -2252,11 +2264,11 @@ public sealed class ProxyString : Variant // TypeDefIndex: 13375
 
 }
 
-public class ConnectionLimiter // TypeDefIndex: 13433
+public class ConnectionLimiter // TypeDefIndex: 13449
 {
-	private readonly object _sync; 
-	private readonly Dictionary<IPAddress, int> _addressCounts; 
-	private int _overallCount; 
+	private readonly object _sync;
+	private readonly Dictionary<IPAddress, int> _addressCounts;
+	private int _overallCount;
 
 
 	public void .ctor() { }
@@ -2271,10 +2283,10 @@ public class ConnectionLimiter // TypeDefIndex: 13433
 
 }
 
-private sealed class ConnectionLimiter.<>c // TypeDefIndex: 13434
+private sealed class ConnectionLimiter.<>c // TypeDefIndex: 13450
 {
-	public static readonly ConnectionLimiter.<>c <>9; 
-	public static Func<KeyValuePair<IPAddress, int>, int> <>9__7_0; 
+	public static readonly ConnectionLimiter.<>c <>9;
+	public static Func<KeyValuePair<IPAddress, int>, int> <>9__7_0;
 
 
 	private static void .cctor() { }
@@ -2285,27 +2297,27 @@ private sealed class ConnectionLimiter.<>c // TypeDefIndex: 13434
 
 }
 
-public static class NetworkPacketEx // TypeDefIndex: 13491
+public static class NetworkPacketEx // TypeDefIndex: 13507
 {
 
-[ExtensionAttribute] 
+[ExtensionAttribute]
 public static class NetworkPacketEx
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BasePlayer Player(Message v) { }
 
 }
 
-public class Net : ConsoleSystem // TypeDefIndex: 13735
+public class Net : ConsoleSystem // TypeDefIndex: 13751
 {
-	[ServerVar] 
-	public static bool visdebug; 
-	[ClientVar] 
-	public static bool debug; 
-	[ServerVar] 
-	public static int visibilityRadiusFarOverride; 
-	[ServerVar] 
-	public static int visibilityRadiusNearOverride; 
+	[ServerVar]
+	public static bool visdebug;
+	[ClientVar]
+	public static bool debug;
+	[ServerVar]
+	public static int visibilityRadiusFarOverride;
+	[ServerVar]
+	public static int visibilityRadiusNearOverride;
 
 
 	public void .ctor() { }
@@ -2314,16 +2326,16 @@ public class Net : ConsoleSystem // TypeDefIndex: 13735
 
 }
 
-public class Netgraph : ConsoleSystem // TypeDefIndex: 13736
+public class Netgraph : ConsoleSystem // TypeDefIndex: 13752
 {
-	[ClientVar] 
-	public static bool enabled; 
-	[ClientVar] 
-	public static float updatespeed; 
-	[ClientVar] 
-	public static string typefilter; 
-	[ClientVar] 
-	public static string entityfilter; 
+	[ClientVar]
+	public static bool enabled;
+	[ClientVar]
+	public static float updatespeed;
+	[ClientVar]
+	public static string typefilter;
+	[ClientVar]
+	public static string entityfilter;
 
 
 	public void .ctor() { }

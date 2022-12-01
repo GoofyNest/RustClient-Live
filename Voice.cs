@@ -1,7 +1,7 @@
-public class Voice : ConsoleSystem // TypeDefIndex: 13762
+public class Voice : ConsoleSystem // TypeDefIndex: 13778
 {
-	[ClientVar] 
-	public static bool loopback; 
+	[ClientVar]
+	public static bool loopback;
 
 
 	public void .ctor() { }

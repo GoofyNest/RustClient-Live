@@ -1,8 +1,8 @@
-internal struct StatThresholdsInternal : IGettable<StatThresholds>, ISettable<StatThresholds>, IDisposable // TypeDefIndex: 9948
+internal struct StatThresholdsInternal : IGettable<StatThresholds>, ISettable<StatThresholds>, IDisposable // TypeDefIndex: 9950
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Name; 
-	private int m_Threshold; 
+	private int m_ApiVersion;
+	private IntPtr m_Name;
+	private int m_Threshold;
 
 	public Utf8String Name { get; set; }
 	public int Threshold { get; set; }

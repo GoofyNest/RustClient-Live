@@ -1,15 +1,15 @@
-public static class Output // TypeDefIndex: 13776
+public static class Output // TypeDefIndex: 13792
 {
-	[CompilerGeneratedAttribute] 
-	private static Action<string, string, LogType> OnMessage; 
-	public static bool installed; 
-	public static List<Output.Entry> HistoryOutput; 
+	[CompilerGeneratedAttribute]
+	private static Action<string, string, LogType> OnMessage;
+	public static bool installed;
+	public static List<Output.Entry> HistoryOutput;
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_OnMessage(Action<string, string, LogType> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_OnMessage(Action<string, string, LogType> value) { }
 
 	public static void Install() { }
@@ -20,12 +20,12 @@ public static class Output // TypeDefIndex: 13776
 
 }
 
-public struct Output.Entry // TypeDefIndex: 13777
+public struct Output.Entry // TypeDefIndex: 13793
 {
-	public string Message; 
-	public string Stacktrace; 
-	public string Type; 
-	public int Time; 
+	public string Message;
+	public string Stacktrace;
+	public string Type;
+	public int Time;
 
 }
 

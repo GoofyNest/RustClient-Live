@@ -1,6 +1,6 @@
 public enum RenderTextureMemoryless // TypeDefIndex: 3433
 {
-	public int value__; 
+	public int value__;
 	public const RenderTextureMemoryless None = 0;
 	public const RenderTextureMemoryless Color = 1;
 	public const RenderTextureMemoryless Depth = 2;

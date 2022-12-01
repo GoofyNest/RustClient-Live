@@ -1,10 +1,10 @@
-public class TakeDamage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6490
+public class TakeDamage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6492
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float amount; 
-	public Vector3 direction; 
-	public int type; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float amount;
+	public Vector3 direction;
+	public int type;
 
 
 	public static void ResetToPool(TakeDamage instance) { }

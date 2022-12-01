@@ -1,8 +1,8 @@
-public class Loot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6320
+public class Loot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ItemContainer contents; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ItemContainer contents;
 
 
 	public static void ResetToPool(Loot instance) { }

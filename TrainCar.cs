@@ -1,88 +1,88 @@
-public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapshot>, ILerpInfo, ITrainCollidable, IPrefabPreProcess // TypeDefIndex: 10185
+public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapshot>, ILerpInfo, ITrainCollidable, IPrefabPreProcess // TypeDefIndex: 10187
 {
-	private Option __menuOption_Menu_Uncouple; 
-	private GenericLerp<TrainCar.TrainCarSnapshot> animInterp; 
-	protected bool runningClientTick; 
-	private Vector3 bogieRotation; 
-	private Vector3 prevWheelRotation; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private float corpseSeconds; 
-	[SerializeField] 
-	private TriggerTrainCollisions frontCollisionTrigger; 
-	[SerializeField] 
-	private TriggerTrainCollisions rearCollisionTrigger; 
-	[SerializeField] 
-	private float collisionDamageDivide; 
-	[SerializeField] 
-	private float derailCollisionForce; 
-	[SerializeField] 
-	private TriggerHurtNotChild hurtTriggerFront; 
-	[SerializeField] 
-	private TriggerHurtNotChild hurtTriggerRear; 
-	[SerializeField] 
-	private GameObject[] hurtOrRepelTriggersInternal; 
-	[SerializeField] 
-	private float hurtTriggerMinSpeed; 
-	[SerializeField] 
-	private Transform centreOfMassTransform; 
-	[SerializeField] 
-	private Transform frontBogiePivot; 
-	[SerializeField] 
-	private bool frontBogieCanRotate; 
-	[SerializeField] 
-	private Transform rearBogiePivot; 
-	[SerializeField] 
-	private bool rearBogieCanRotate; 
-	[SerializeField] 
-	private Transform[] wheelVisuals; 
-	[SerializeField] 
-	private float wheelRadius; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private GameObjectRef fxDestroyed; 
-	[SerializeField] 
-	protected TriggerParent platformParentTrigger; 
-	public GameObjectRef collisionEffect; 
-	public Transform frontCoupling; 
-	public Transform frontCouplingPivot; 
-	public Transform rearCoupling; 
-	public Transform rearCouplingPivot; 
-	[SerializeField] 
-	private SoundDefinition coupleSound; 
-	[SerializeField] 
-	private SoundDefinition uncoupleSound; 
-	[SerializeField] 
-	private TrainCarAudio trainCarAudio; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private ParticleSystem frontCouplingChangedFx; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private ParticleSystem rearCouplingChangedFx; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private ParticleSystem newCouplingFX; 
-	[SerializeField] 
-	private float decayTimeMultiplier; 
-	[SerializeField] 
-	[ReadOnlyAttribute] 
-	private Vector3 frontBogieLocalOffset; 
-	[SerializeField] 
-	[ReadOnlyAttribute] 
-	private Vector3 rearBogieLocalOffset; 
-	[ServerVar] 
-	public static float population; 
-	[ServerVar] 
-	public static int wagons_per_engine; 
-	[ServerVar] 
-	public static float decayminutes; 
-	[ReadOnlyAttribute] 
-	public float DistFrontWheelToFrontCoupling; 
-	[ReadOnlyAttribute] 
-	public float DistFrontWheelToBackCoupling; 
-	public TrainCouplingController coupling; 
-	public TrainTrackSpline.TrackSelection localTrackSelection; 
+	private Option __menuOption_Menu_Uncouple;
+	private GenericLerp<TrainCar.TrainCarSnapshot> animInterp;
+	protected bool runningClientTick;
+	private Vector3 bogieRotation;
+	private Vector3 prevWheelRotation;
+	[HeaderAttribute]
+	[SerializeField]
+	private float corpseSeconds;
+	[SerializeField]
+	private TriggerTrainCollisions frontCollisionTrigger;
+	[SerializeField]
+	private TriggerTrainCollisions rearCollisionTrigger;
+	[SerializeField]
+	private float collisionDamageDivide;
+	[SerializeField]
+	private float derailCollisionForce;
+	[SerializeField]
+	private TriggerHurtNotChild hurtTriggerFront;
+	[SerializeField]
+	private TriggerHurtNotChild hurtTriggerRear;
+	[SerializeField]
+	private GameObject[] hurtOrRepelTriggersInternal;
+	[SerializeField]
+	private float hurtTriggerMinSpeed;
+	[SerializeField]
+	private Transform centreOfMassTransform;
+	[SerializeField]
+	private Transform frontBogiePivot;
+	[SerializeField]
+	private bool frontBogieCanRotate;
+	[SerializeField]
+	private Transform rearBogiePivot;
+	[SerializeField]
+	private bool rearBogieCanRotate;
+	[SerializeField]
+	private Transform[] wheelVisuals;
+	[SerializeField]
+	private float wheelRadius;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private GameObjectRef fxDestroyed;
+	[SerializeField]
+	protected TriggerParent platformParentTrigger;
+	public GameObjectRef collisionEffect;
+	public Transform frontCoupling;
+	public Transform frontCouplingPivot;
+	public Transform rearCoupling;
+	public Transform rearCouplingPivot;
+	[SerializeField]
+	private SoundDefinition coupleSound;
+	[SerializeField]
+	private SoundDefinition uncoupleSound;
+	[SerializeField]
+	private TrainCarAudio trainCarAudio;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private ParticleSystem frontCouplingChangedFx;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private ParticleSystem rearCouplingChangedFx;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private ParticleSystem newCouplingFX;
+	[SerializeField]
+	private float decayTimeMultiplier;
+	[SerializeField]
+	[ReadOnlyAttribute]
+	private Vector3 frontBogieLocalOffset;
+	[SerializeField]
+	[ReadOnlyAttribute]
+	private Vector3 rearBogieLocalOffset;
+	[ServerVar]
+	public static float population;
+	[ServerVar]
+	public static int wagons_per_engine;
+	[ServerVar]
+	public static float decayminutes;
+	[ReadOnlyAttribute]
+	public float DistFrontWheelToFrontCoupling;
+	[ReadOnlyAttribute]
+	public float DistFrontWheelToBackCoupling;
+	public TrainCouplingController coupling;
+	public TrainTrackSpline.TrackSelection localTrackSelection;
 	public const BaseEntity.Flags Flag_LinedUpToUnload = 1024;
 
 	public override bool HasMenuOptions { get; }
@@ -124,16 +124,16 @@ public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapsho
 
 	public void DebugInterpolationState(Interpolator.Segment<TrainCar.TrainCarSnapshot> segment, List<TrainCar.TrainCarSnapshot> entries) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SetTrackSelection(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void BaseTrainUpdate(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Uncouple(BasePlayer player) { }
 
 	public virtual bool Menu_Uncouple_ShowIf(BasePlayer player) { }
@@ -166,25 +166,25 @@ public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapsho
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <UpdateWheelVisuals>g__SetBogieRotation|19_0(Transform pivot, float yAngle, bool canRotate) { }
 
 }
 
-public struct TrainCar.TrainCarSnapshot : ISnapshot<TrainCar.TrainCarSnapshot> // TypeDefIndex: 10186
+public struct TrainCar.TrainCarSnapshot : ISnapshot<TrainCar.TrainCarSnapshot> // TypeDefIndex: 10188
 {
-	[CompilerGeneratedAttribute] 
-	private float <Time>k__BackingField; 
-	public float frontBogieY; 
-	public float rearBogieY; 
+	[CompilerGeneratedAttribute]
+	private float <Time>k__BackingField;
+	public float frontBogieY;
+	public float rearBogieY;
 
 	public float Time { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Time() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Time(float value) { }
 
 	public void .ctor(float time, float frontBogieY, float rearBogieY) { }
@@ -197,9 +197,9 @@ public struct TrainCar.TrainCarSnapshot : ISnapshot<TrainCar.TrainCarSnapshot> /
 
 }
 
-public enum TrainCar.TrainCarType // TypeDefIndex: 10187
+public enum TrainCar.TrainCarType // TypeDefIndex: 10189
 {
-	public int value__; 
+	public int value__;
 	public const TrainCar.TrainCarType Wagon = 0;
 	public const TrainCar.TrainCarType Engine = 1;
 	public const TrainCar.TrainCarType Other = 2;

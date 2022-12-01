@@ -1,6 +1,6 @@
 public sealed class X509ChainElementCollection : ICollection, IEnumerable // TypeDefIndex: 2824
 {
-	private ArrayList _list; 
+	private ArrayList _list;
 
 	public int Count { get; }
 	public X509ChainElement Item { get; }

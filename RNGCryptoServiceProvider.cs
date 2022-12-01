@@ -1,7 +1,7 @@
 public sealed class RNGCryptoServiceProvider : RandomNumberGenerator // TypeDefIndex: 1008
 {
-	private static object _lock; 
-	private IntPtr _handle; 
+	private static object _lock;
+	private IntPtr _handle;
 
 
 	private static void .cctor() { }

@@ -1,10 +1,10 @@
-public class TreadEffects : MonoBehaviour // TypeDefIndex: 10593
+public class TreadEffects : MonoBehaviour // TypeDefIndex: 10597
 {
-	public ParticleSystem[] rearTreadDirt; 
-	public ParticleSystem[] rearTreadSmoke; 
-	public ParticleSystem[] middleTreadSmoke; 
-	private Vector3 vecLastPosition; 
-	private float forwardSpeed; 
+	public ParticleSystem[] rearTreadDirt;
+	public ParticleSystem[] rearTreadSmoke;
+	public ParticleSystem[] middleTreadSmoke;
+	private Vector3 vecLastPosition;
+	private float forwardSpeed;
 
 
 	private void Start() { }

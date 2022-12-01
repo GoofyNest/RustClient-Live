@@ -1,7 +1,7 @@
-internal struct UnregisterClientOptionsInternal : ISettable<UnregisterClientOptions>, IDisposable // TypeDefIndex: 9748
+internal struct UnregisterClientOptionsInternal : ISettable<UnregisterClientOptions>, IDisposable // TypeDefIndex: 9750
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ClientHandle; 
+	private int m_ApiVersion;
+	private IntPtr m_ClientHandle;
 
 	public IntPtr ClientHandle { set; }
 

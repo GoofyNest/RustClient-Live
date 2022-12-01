@@ -1,14 +1,14 @@
-public sealed class UnknownChunk : MidiChunk // TypeDefIndex: 7526
+public sealed class UnknownChunk : MidiChunk // TypeDefIndex: 7528
 {
-	[CompilerGeneratedAttribute] 
-	private byte[] <Data>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte[] <Data>k__BackingField;
 
 	private byte[] Data { set; }
 
 
 	internal void .ctor(string id) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Data(byte[] value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, uint size) { }

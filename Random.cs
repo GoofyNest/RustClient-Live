@@ -3,9 +3,9 @@ public class Random // TypeDefIndex: 288
 	private const int MBIG = 2147483647;
 	private const int MSEED = 161803398;
 	private const int MZ = 0;
-	private int inext; 
-	private int inextp; 
-	private int[] SeedArray; 
+	private int inext;
+	private int inextp;
+	private int[] SeedArray;
 
 
 	public void .ctor() { }
@@ -30,7 +30,7 @@ public class Random // TypeDefIndex: 288
 
 public sealed class Random // TypeDefIndex: 3490
 {
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static Random.State state { get; set; }
 	public static float value { get; }
 	public static Vector3 insideUnitSphere { get; }
@@ -39,40 +39,40 @@ public sealed class Random // TypeDefIndex: 3490
 	public static Quaternion rotation { get; }
 
 
-	[StaticAccessorAttribute] 
-	[NativeMethodAttribute] 
+	[StaticAccessorAttribute]
+	[NativeMethodAttribute]
 	public static void InitState(int seed) { }
 
 	public static Random.State get_state() { }
 
 	public static void set_state(Random.State value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float Range(float min, float max) { }
 
 	public static int Range(int min, int max) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int RandomRangeInt(int min, int max) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float get_value() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Vector3 get_insideUnitSphere() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GetRandomUnitCircle(out Vector2 output) { }
 
 	public static Vector2 get_insideUnitCircle() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Vector3 get_onUnitSphere() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Quaternion get_rotation() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static int RandomRange(int min, int max) { }
 
 	public static Color ColorHSV(float hueMin, float hueMax, float saturationMin, float saturationMax, float valueMin, float valueMax, float alphaMin, float alphaMax) { }
@@ -91,14 +91,14 @@ public sealed class Random // TypeDefIndex: 3490
 
 public struct Random.State // TypeDefIndex: 3491
 {
-	[SerializeField] 
-	private int s0; 
-	[SerializeField] 
-	private int s1; 
-	[SerializeField] 
-	private int s2; 
-	[SerializeField] 
-	private int s3; 
+	[SerializeField]
+	private int s0;
+	[SerializeField]
+	private int s1;
+	[SerializeField]
+	private int s2;
+	[SerializeField]
+	private int s3;
 
 }
 

@@ -1,6 +1,6 @@
-internal enum ParsingStatus // TypeDefIndex: 7645
+internal enum ParsingStatus // TypeDefIndex: 7647
 {
-	public int value__; 
+	public int value__;
 	public const ParsingStatus Parsed = 0;
 	public const ParsingStatus EmptyInputString = 1;
 	public const ParsingStatus NotMatched = 2;

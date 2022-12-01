@@ -1,17 +1,17 @@
-public class OreResourceEntity : StagedResourceEntity // TypeDefIndex: 10330
+public class OreResourceEntity : StagedResourceEntity // TypeDefIndex: 10333
 {
-	public GameObjectRef bonusPrefab; 
-	public GameObjectRef finishEffect; 
-	public GameObjectRef bonusFailEffect; 
-	public OreHotSpot _hotSpot; 
-	public SoundPlayer bonusSound; 
+	public GameObjectRef bonusPrefab;
+	public GameObjectRef finishEffect;
+	public GameObjectRef bonusFailEffect;
+	public OreHotSpot _hotSpot;
+	public SoundPlayer bonusSound;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	protected override void ClientInit(Entity info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void PlayBonusLevelSound(BaseEntity.RPCMessage msg) { }
 
 	public Vector3 RandomCircle(float distance = 1, bool allowInside = False) { }

@@ -1,6 +1,6 @@
-public static class Craptography // TypeDefIndex: 13156
+public static class Craptography // TypeDefIndex: 13171
 {
-	private static readonly byte[] hash; 
+	private static readonly byte[] hash;
 
 
 	public static void XOR(uint seed, ArraySegment<byte> src, ref ArraySegment<byte> dst) { }

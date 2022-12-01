@@ -1,15 +1,15 @@
-internal sealed class InflateManager // TypeDefIndex: 6988
+internal sealed class InflateManager // TypeDefIndex: 6990
 {
-	private InflateManager.InflateManagerMode mode; 
-	internal ZlibCodec _codec; 
-	internal int method; 
-	internal uint computedCheck; 
-	internal uint expectedCheck; 
-	internal int marker; 
-	private bool _handleRfc1950HeaderBytes; 
-	internal int wbits; 
-	internal InflateBlocks blocks; 
-	private static readonly byte[] mark; 
+	private InflateManager.InflateManagerMode mode;
+	internal ZlibCodec _codec;
+	internal int method;
+	internal uint computedCheck;
+	internal uint expectedCheck;
+	internal int marker;
+	private bool _handleRfc1950HeaderBytes;
+	internal int wbits;
+	internal InflateBlocks blocks;
+	private static readonly byte[] mark;
 
 	internal bool HandleRfc1950HeaderBytes { get; }
 
@@ -30,9 +30,9 @@ internal sealed class InflateManager // TypeDefIndex: 6988
 
 }
 
-private enum InflateManager.InflateManagerMode // TypeDefIndex: 6989
+private enum InflateManager.InflateManagerMode // TypeDefIndex: 6991
 {
-	public int value__; 
+	public int value__;
 	public const InflateManager.InflateManagerMode METHOD = 0;
 	public const InflateManager.InflateManagerMode FLAG = 1;
 	public const InflateManager.InflateManagerMode DICT4 = 2;

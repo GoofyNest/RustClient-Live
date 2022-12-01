@@ -1,6 +1,6 @@
 internal sealed class LocalDataStoreHolder // TypeDefIndex: 144
 {
-	private LocalDataStore m_Store; 
+	private LocalDataStore m_Store;
 
 	public LocalDataStore Store { get; }
 

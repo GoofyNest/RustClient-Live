@@ -1,6 +1,6 @@
-public enum ValueTaskSourceOnCompletedFlags // TypeDefIndex: 7127
+public enum ValueTaskSourceOnCompletedFlags // TypeDefIndex: 7129
 {
-	public int value__; 
+	public int value__;
 	public const ValueTaskSourceOnCompletedFlags None = 0;
 	public const ValueTaskSourceOnCompletedFlags UseSchedulingContext = 1;
 	public const ValueTaskSourceOnCompletedFlags FlowExecutionContext = 2;

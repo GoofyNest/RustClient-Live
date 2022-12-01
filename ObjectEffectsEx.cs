@@ -1,13 +1,13 @@
-public static class ObjectEffectsEx // TypeDefIndex: 13492
+public static class ObjectEffectsEx // TypeDefIndex: 13508
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SingleGib(GameObject obj, GameObject model, GameObject physics) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void CustomGib(GameObject obj, uint id, Gibbable.ParentingType parentingType = 1) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SpawnConditionalGibs(GameObject obj, uint id, Gibbable.ParentingType parentingType = 1) { }
 
 }

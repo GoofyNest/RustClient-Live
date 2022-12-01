@@ -1,15 +1,15 @@
 public class PropertyDescriptorCollection : ICollection, IEnumerable, IList, IDictionary // TypeDefIndex: 2735
 {
-	public static readonly PropertyDescriptorCollection Empty; 
-	private IDictionary cachedFoundProperties; 
-	private bool cachedIgnoreCase; 
-	private PropertyDescriptor[] properties; 
-	private int propCount; 
-	private string[] namedSort; 
-	private IComparer comparer; 
-	private bool propsOwned; 
-	private bool needSort; 
-	private bool readOnly; 
+	public static readonly PropertyDescriptorCollection Empty;
+	private IDictionary cachedFoundProperties;
+	private bool cachedIgnoreCase;
+	private PropertyDescriptor[] properties;
+	private int propCount;
+	private string[] namedSort;
+	private IComparer comparer;
+	private bool propsOwned;
+	private bool needSort;
+	private bool readOnly;
 
 	public int Count { get; }
 	public virtual PropertyDescriptor Item { get; }
@@ -121,8 +121,8 @@ public class PropertyDescriptorCollection : ICollection, IEnumerable, IList, IDi
 
 private class PropertyDescriptorCollection.PropertyDescriptorEnumerator : IDictionaryEnumerator, IEnumerator // TypeDefIndex: 2736
 {
-	private PropertyDescriptorCollection owner; 
-	private int index; 
+	private PropertyDescriptorCollection owner;
+	private int index;
 
 	public object Current { get; }
 	public DictionaryEntry Entry { get; }

@@ -1,16 +1,16 @@
 public abstract class Delegate : ICloneable, ISerializable // TypeDefIndex: 356
 {
-	private IntPtr method_ptr; 
-	private IntPtr invoke_impl; 
-	private object m_target; 
-	private IntPtr method; 
-	private IntPtr delegate_trampoline; 
-	private IntPtr extra_arg; 
-	private IntPtr method_code; 
-	private MethodInfo method_info; 
-	private MethodInfo original_method_info; 
-	private DelegateData data; 
-	private bool method_is_virtual; 
+	private IntPtr method_ptr;
+	private IntPtr invoke_impl;
+	private object m_target;
+	private IntPtr method;
+	private IntPtr delegate_trampoline;
+	private IntPtr extra_arg;
+	private IntPtr method_code;
+	private MethodInfo method_info;
+	private MethodInfo original_method_info;
+	private DelegateData data;
+	private bool method_is_virtual;
 
 	public MethodInfo Method { get; }
 	public object Target { get; }
@@ -66,7 +66,7 @@ public abstract class Delegate : ICloneable, ISerializable // TypeDefIndex: 356
 
 	public static Delegate Combine(Delegate a, Delegate b) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static Delegate Combine(Delegate[] delegates) { }
 
 	protected virtual Delegate CombineImpl(Delegate d) { }

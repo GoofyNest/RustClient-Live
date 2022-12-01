@@ -5,10 +5,10 @@ public class Object // TypeDefIndex: 383
 
 	public static bool Equals(object objA, object objB) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void .ctor() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected virtual void Finalize() { }
 
 	public virtual int GetHashCode() { }
@@ -29,8 +29,8 @@ public class Object // TypeDefIndex: 383
 
 public class Object // TypeDefIndex: 3538
 {
-	private IntPtr m_CachedPtr; 
-	internal static int OffsetOfInstanceIDInCPlusPlusObject; 
+	private IntPtr m_CachedPtr;
+	internal static int OffsetOfInstanceIDInCPlusPlusObject;
 	private const string objectIsNullMessage = "The Object you want to instantiate is null.";
 	private const string cloneDestroyedMessage = "Instantiate failed because the clone was destroyed during creation. This can happen if DestroyImmediate is called in MonoBehaviour.Awake.";
 
@@ -56,16 +56,16 @@ public class Object // TypeDefIndex: 3538
 
 	public void set_name(string value) { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public static Object Instantiate(Object original, Vector3 position, Quaternion rotation) { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public static Object Instantiate(Object original, Vector3 position, Quaternion rotation, Transform parent) { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public static Object Instantiate(Object original) { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public static Object Instantiate(Object original, Transform parent, bool instantiateInWorldSpace) { }
 
 	public static T Instantiate<T>(T original) { }
@@ -128,23 +128,23 @@ public class Object // TypeDefIndex: 3538
 	|-Object.Instantiate<object>
 	*/
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static void Destroy(Object obj, float t) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static void Destroy(Object obj) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static void DestroyImmediate(Object obj, bool allowDestroyingAssets) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static void DestroyImmediate(Object obj) { }
 
-	[TypeInferenceRuleAttribute] 
-	[FreeFunctionAttribute] 
+	[TypeInferenceRuleAttribute]
+	[FreeFunctionAttribute]
 	public static Object[] FindObjectsOfType(Type type) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void DontDestroyOnLoad(Object target) { }
 
 	public HideFlags get_hideFlags() { }
@@ -196,7 +196,7 @@ public class Object // TypeDefIndex: 3538
 
 	private static void CheckNullArgument(object arg, string message) { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public static Object FindObjectOfType(Type type) { }
 
 	public override string ToString() { }
@@ -205,32 +205,32 @@ public class Object // TypeDefIndex: 3538
 
 	public static bool op_Inequality(Object x, Object y) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static int GetOffsetOfInstanceIDInCPlusPlusObject() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Object Internal_CloneSingle(Object data) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Object Internal_CloneSingleWithParent(Object data, Transform parent, bool worldPositionStays) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Object Internal_InstantiateSingle(Object data, Vector3 pos, Quaternion rot) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Object Internal_InstantiateSingleWithParent(Object data, Transform parent, Vector3 pos, Quaternion rot) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string ToString(Object obj) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static string GetName(Object obj) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void SetName(Object obj, string name) { }
 
-	[VisibleToOtherModulesAttribute] 
-	[FreeFunctionAttribute] 
+	[VisibleToOtherModulesAttribute]
+	[FreeFunctionAttribute]
 	internal static Object FindObjectFromInstanceID(int instanceID) { }
 
 	public void .ctor() { }
@@ -243,9 +243,9 @@ public class Object // TypeDefIndex: 3538
 
 }
 
-public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8159
+public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8161
 {
-	private readonly IDictionary<string, Value> values; 
+	private readonly IDictionary<string, Value> values;
 
 	public Value Item { get; set; }
 
@@ -304,9 +304,9 @@ public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // T
 
 }
 
-private enum Object.ParsingState // TypeDefIndex: 8160
+private enum Object.ParsingState // TypeDefIndex: 8162
 {
-	public int value__; 
+	public int value__;
 	public const Object.ParsingState Object = 0;
 	public const Object.ParsingState Array = 1;
 	public const Object.ParsingState EndObject = 2;

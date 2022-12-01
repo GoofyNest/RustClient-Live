@@ -1,15 +1,15 @@
-public class MidiDriver // TypeDefIndex: 7656
+public class MidiDriver // TypeDefIndex: 7658
 {
-	private MidiDriver.ChannelState[] _channelArray; 
-	private int _lastFrame; 
-	private bool enabled; 
-	[CompilerGeneratedAttribute] 
-	private MidiDriver.NoteOnDelegate <noteOnDelegate>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MidiDriver.NoteOffDelegate <noteOffDelegate>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MidiDriver.KnobDelegate <knobDelegate>k__BackingField; 
-	private static MidiDriver _instance; 
+	private MidiDriver.ChannelState[] _channelArray;
+	private int _lastFrame;
+	private bool enabled;
+	[CompilerGeneratedAttribute]
+	private MidiDriver.NoteOnDelegate <noteOnDelegate>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MidiDriver.NoteOffDelegate <noteOffDelegate>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MidiDriver.KnobDelegate <knobDelegate>k__BackingField;
+	private static MidiDriver _instance;
 
 	public MidiDriver.NoteOnDelegate noteOnDelegate { get; set; }
 	public MidiDriver.NoteOffDelegate noteOffDelegate { get; set; }
@@ -27,22 +27,22 @@ public class MidiDriver // TypeDefIndex: 7656
 
 	public float GetKnob(MidiChannel channel, int knobNumber, float defaultValue) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MidiDriver.NoteOnDelegate get_noteOnDelegate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_noteOnDelegate(MidiDriver.NoteOnDelegate value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MidiDriver.NoteOffDelegate get_noteOffDelegate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_noteOffDelegate(MidiDriver.NoteOffDelegate value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MidiDriver.KnobDelegate get_knobDelegate() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_knobDelegate(MidiDriver.KnobDelegate value) { }
 
 	private void .ctor() { }
@@ -61,17 +61,17 @@ public class MidiDriver // TypeDefIndex: 7656
 
 }
 
-private class MidiDriver.ChannelState // TypeDefIndex: 7657
+private class MidiDriver.ChannelState // TypeDefIndex: 7659
 {
-	public float[] _noteArray; 
-	public Dictionary<int, float> _knobMap; 
+	public float[] _noteArray;
+	public Dictionary<int, float> _knobMap;
 
 
 	public void .ctor() { }
 
 }
 
-public sealed class MidiDriver.NoteOnDelegate : MulticastDelegate // TypeDefIndex: 7658
+public sealed class MidiDriver.NoteOnDelegate : MulticastDelegate // TypeDefIndex: 7660
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -84,7 +84,7 @@ public sealed class MidiDriver.NoteOnDelegate : MulticastDelegate // TypeDefInde
 
 }
 
-public sealed class MidiDriver.NoteOffDelegate : MulticastDelegate // TypeDefIndex: 7659
+public sealed class MidiDriver.NoteOffDelegate : MulticastDelegate // TypeDefIndex: 7661
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -97,7 +97,7 @@ public sealed class MidiDriver.NoteOffDelegate : MulticastDelegate // TypeDefInd
 
 }
 
-public sealed class MidiDriver.KnobDelegate : MulticastDelegate // TypeDefIndex: 7660
+public sealed class MidiDriver.KnobDelegate : MulticastDelegate // TypeDefIndex: 7662
 {
 
 	public void .ctor(object object, IntPtr method) { }

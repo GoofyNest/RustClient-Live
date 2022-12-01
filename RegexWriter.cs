@@ -1,15 +1,15 @@
 internal sealed class RegexWriter // TypeDefIndex: 2632
 {
-	internal int[] _intStack; 
-	internal int _depth; 
-	internal int[] _emitted; 
-	internal int _curpos; 
-	internal Dictionary<string, int> _stringhash; 
-	internal List<string> _stringtable; 
-	internal bool _counting; 
-	internal int _count; 
-	internal int _trackcount; 
-	internal Hashtable _caps; 
+	internal int[] _intStack;
+	internal int _depth;
+	internal int[] _emitted;
+	internal int _curpos;
+	internal Dictionary<string, int> _stringhash;
+	internal List<string> _stringtable;
+	internal bool _counting;
+	internal int _count;
+	internal int _trackcount;
+	internal Hashtable _caps;
 
 
 	internal static RegexCode Write(RegexTree t) { }

@@ -1,8 +1,8 @@
-internal struct AddNotifyRTCRoomConnectionChangedOptionsInternal : ISettable<AddNotifyRTCRoomConnectionChangedOptions>, IDisposable // TypeDefIndex: 9074
+internal struct AddNotifyRTCRoomConnectionChangedOptionsInternal : ISettable<AddNotifyRTCRoomConnectionChangedOptions>, IDisposable // TypeDefIndex: 9076
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyId_DEPRECATED; 
-	private IntPtr m_LocalUserId_DEPRECATED; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyId_DEPRECATED;
+	private IntPtr m_LocalUserId_DEPRECATED;
 
 	public Utf8String LobbyId_DEPRECATED { set; }
 	public ProductUserId LocalUserId_DEPRECATED { set; }

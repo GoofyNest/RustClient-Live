@@ -1,6 +1,6 @@
 public class OperationCanceledException : SystemException // TypeDefIndex: 282
 {
-	private CancellationToken _cancellationToken; 
+	private CancellationToken _cancellationToken;
 
 	public CancellationToken CancellationToken { get; set; }
 

@@ -1,43 +1,43 @@
 public static class Interlocked // TypeDefIndex: 824
 {
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int CompareExchange(ref int location1, int value, int comparand) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal static int CompareExchange(ref int location1, int value, int comparand, ref bool succeeded) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static object CompareExchange(ref object location1, object value, object comparand) { }
 
 	public static float CompareExchange(ref float location1, float value, float comparand) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Decrement(ref int location) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Increment(ref int location) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static long Increment(ref long location) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Exchange(ref int location1, int value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static object Exchange(ref object location1, object value) { }
 
 	public static float Exchange(ref float location1, float value) { }
 
 	public static long CompareExchange(ref long location1, long value, long comparand) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr CompareExchange(ref IntPtr location1, IntPtr value, IntPtr comparand) { }
 
 	public static double CompareExchange(ref double location1, double value, double comparand) { }
 
-	[ReliabilityContractAttribute] 
-	[ComVisibleAttribute] 
+	[ReliabilityContractAttribute]
+	[ComVisibleAttribute]
 	public static T CompareExchange<T>(ref T location1, T value, T comparand) { }
 	/* GenericInstMethod :
 	|
@@ -46,13 +46,13 @@ public static class Interlocked // TypeDefIndex: 824
 
 	public static long Exchange(ref long location1, long value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr Exchange(ref IntPtr location1, IntPtr value) { }
 
 	public static double Exchange(ref double location1, double value) { }
 
-	[ReliabilityContractAttribute] 
-	[ComVisibleAttribute] 
+	[ReliabilityContractAttribute]
+	[ComVisibleAttribute]
 	public static T Exchange<T>(ref T location1, T value) { }
 	/* GenericInstMethod :
 	|
@@ -61,7 +61,7 @@ public static class Interlocked // TypeDefIndex: 824
 
 	public static long Read(ref long location) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Add(ref int location1, int value) { }
 
 	public static void MemoryBarrier() { }

@@ -1,12 +1,12 @@
 public class ConstructionCall : MethodCall, IConstructionCallMessage, IMessage, IMethodCallMessage, IMethodMessage // TypeDefIndex: 1232
 {
-	private IActivator _activator; 
-	private object[] _activationAttributes; 
-	private IList _contextProperties; 
-	private Type _activationType; 
-	private string _activationTypeName; 
-	private bool _isContextOk; 
-	private RemotingProxy _sourceProxy; 
+	private IActivator _activator;
+	private object[] _activationAttributes;
+	private IList _contextProperties;
+	private Type _activationType;
+	private string _activationTypeName;
+	private bool _isContextOk;
+	private RemotingProxy _sourceProxy;
 
 	internal bool IsContextOk { get; set; }
 	public Type ActivationType { get; }

@@ -11,8 +11,8 @@ public static class RuntimeHelpers // TypeDefIndex: 1317
 
 	public static int GetHashCode(object o) { }
 
-	[ReliabilityContractAttribute] 
-	[MonoTODOAttribute] 
+	[ReliabilityContractAttribute]
+	[MonoTODOAttribute]
 	public static void PrepareConstrainedRegions() { }
 
 	public static bool IsReferenceOrContainsReferences<T>() { }

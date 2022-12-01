@@ -1,20 +1,20 @@
 public class GregorianCalendar : Calendar // TypeDefIndex: 702
 {
-	internal GregorianCalendarTypes m_type; 
-	internal static readonly int[] DaysToMonth365; 
-	internal static readonly int[] DaysToMonth366; 
-	private static Calendar s_defaultInstance; 
+	internal GregorianCalendarTypes m_type;
+	internal static readonly int[] DaysToMonth365;
+	internal static readonly int[] DaysToMonth366;
+	private static Calendar s_defaultInstance;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override DateTime MinSupportedDateTime { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override DateTime MaxSupportedDateTime { get; }
 	internal override int ID { get; }
 	public override int[] Eras { get; }
 	public override int TwoDigitYearMax { get; }
 
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
 	public override DateTime get_MinSupportedDateTime() { }

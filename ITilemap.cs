@@ -1,29 +1,29 @@
 public class ITilemap // TypeDefIndex: 4570
 {
 
-[NativeHeaderAttribute] 
-[RequireComponent] 
+[NativeHeaderAttribute]
+[RequireComponent]
 public class StreamingController : Behaviour
 
 internal class <Module>
 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
 public class TerrainCollider : Collider
 
 internal class <Module>
 
-[RequiredByNativeCodeAttribute] 
+[RequiredByNativeCodeAttribute]
 public class ITilemap
-	internal static ITilemap s_Instance; 
-	internal Tilemap m_Tilemap; 
+	internal static ITilemap s_Instance;
+	internal Tilemap m_Tilemap;
 
 
 	internal void .ctor() { }
 
 	public void RefreshTile(Vector3Int position) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static ITilemap CreateInstance() { }
 
 }

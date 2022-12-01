@@ -1,6 +1,6 @@
 public enum StyleKeyword // TypeDefIndex: 4722
 {
-	public int value__; 
+	public int value__;
 	public const StyleKeyword Undefined = 0;
 	public const StyleKeyword Null = 1;
 	public const StyleKeyword Auto = 2;

@@ -1,6 +1,6 @@
-internal struct UGCHandle_t : IEquatable<UGCHandle_t>, IComparable<UGCHandle_t> // TypeDefIndex: 5532
+internal struct UGCHandle_t : IEquatable<UGCHandle_t>, IComparable<UGCHandle_t> // TypeDefIndex: 5534
 {
-	public ulong Value; 
+	public ulong Value;
 
 
 	public static UGCHandle_t op_Implicit(ulong value) { }

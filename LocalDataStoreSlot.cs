@@ -1,8 +1,8 @@
 public sealed class LocalDataStoreSlot // TypeDefIndex: 147
 {
-	private LocalDataStoreMgr m_mgr; 
-	private int m_slot; 
-	private long m_cookie; 
+	private LocalDataStoreMgr m_mgr;
+	private int m_slot;
+	private long m_cookie;
 
 	internal LocalDataStoreMgr Manager { get; }
 	internal int Slot { get; }

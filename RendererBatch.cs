@@ -1,38 +1,38 @@
-public class RendererBatch : MonoBehaviour, IClientComponent // TypeDefIndex: 11654
+public class RendererBatch : MonoBehaviour, IClientComponent // TypeDefIndex: 11661
 {
 
 public class RendererBatch : MonoBehaviour, IClientComponent
-	[CompilerGeneratedAttribute] 
-	private Transform <BatchTransform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshRenderer <BatchRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <BatchFilter>k__BackingField; 
-	private bool disabled; 
-	private RendererGroup batchGroup; 
-	private MeshRendererInstance batchInstance; 
+	[CompilerGeneratedAttribute]
+	private Transform <BatchTransform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshRenderer <BatchRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <BatchFilter>k__BackingField;
+	private bool disabled;
+	private RendererGroup batchGroup;
+	private MeshRendererInstance batchInstance;
 
 	public Transform BatchTransform { get; set; }
 	public MeshRenderer BatchRenderer { get; set; }
 	public MeshFilter BatchFilter { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Transform get_BatchTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BatchTransform(Transform value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshRenderer get_BatchRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BatchRenderer(MeshRenderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_BatchFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BatchFilter(MeshFilter value) { }
 
 	protected void OnEnable() { }

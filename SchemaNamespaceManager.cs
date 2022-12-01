@@ -1,6 +1,6 @@
 internal class SchemaNamespaceManager : XmlNamespaceManager // TypeDefIndex: 2283
 {
-	private XmlSchemaObject node; 
+	private XmlSchemaObject node;
 
 
 	public void .ctor(XmlSchemaObject node) { }

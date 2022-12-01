@@ -1,11 +1,11 @@
 internal class DeflateStreamNative // TypeDefIndex: 2865
 {
-	private DeflateStreamNative.UnmanagedReadOrWrite feeder; 
-	private Stream base_stream; 
-	private DeflateStreamNative.SafeDeflateStreamHandle z_stream; 
-	private GCHandle data; 
-	private bool disposed; 
-	private byte[] io_buffer; 
+	private DeflateStreamNative.UnmanagedReadOrWrite feeder;
+	private Stream base_stream;
+	private DeflateStreamNative.SafeDeflateStreamHandle z_stream;
+	private GCHandle data;
+	private bool disposed;
+	private byte[] io_buffer;
 
 
 	private void .ctor() { }
@@ -22,12 +22,12 @@ internal class DeflateStreamNative // TypeDefIndex: 2865
 
 	public void WriteZStream(IntPtr buffer, int length) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	private static int UnmanagedRead(IntPtr buffer, int length, IntPtr data) { }
 
 	private int UnmanagedRead(IntPtr buffer, int length) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	private static int UnmanagedWrite(IntPtr buffer, int length, IntPtr data) { }
 
 	private int UnmanagedWrite(IntPtr buffer, int length) { }

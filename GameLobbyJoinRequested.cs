@@ -1,8 +1,8 @@
 internal struct GameLobbyJoinRequested_t : ICallbackData // TypeDefIndex: 5316
 {
-	internal ulong SteamIDLobby; 
-	internal ulong SteamIDFriend; 
-	public static int _datasize; 
+	internal ulong SteamIDLobby;
+	internal ulong SteamIDFriend;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

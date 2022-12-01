@@ -1,6 +1,6 @@
 public enum CompareFunction // TypeDefIndex: 3814
 {
-	public int value__; 
+	public int value__;
 	public const CompareFunction Disabled = 0;
 	public const CompareFunction Never = 1;
 	public const CompareFunction Less = 2;

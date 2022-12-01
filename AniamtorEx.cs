@@ -1,10 +1,10 @@
-public static class AniamtorEx // TypeDefIndex: 13482
+public static class AniamtorEx // TypeDefIndex: 13498
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetFloatFixed(Animator animator, int id, float value, float dampTime, float deltaTime) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetBoolChecked(Animator animator, int id, bool value) { }
 
 }

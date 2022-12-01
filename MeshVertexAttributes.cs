@@ -1,6 +1,6 @@
 public enum MeshVertexAttributes // TypeDefIndex: 4165
 {
-	public int value__; 
+	public int value__;
 	public const MeshVertexAttributes None = 0;
 	public const MeshVertexAttributes Normals = 1;
 	public const MeshVertexAttributes Tangents = 2;

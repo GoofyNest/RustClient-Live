@@ -1,9 +1,9 @@
 public class StrongNameKeyPair : ISerializable, IDeserializationCallback // TypeDefIndex: 598
 {
-	private byte[] _publicKey; 
-	private string _keyPairContainer; 
-	private bool _keyPairExported; 
-	private byte[] _keyPairArray; 
+	private byte[] _publicKey;
+	private string _keyPairContainer;
+	private bool _keyPairExported;
+	private byte[] _keyPairArray;
 
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

@@ -1,9 +1,9 @@
-public class ConstructionGrade : PrefabAttribute // TypeDefIndex: 10784
+public class ConstructionGrade : PrefabAttribute // TypeDefIndex: 10788
 {
-	public Construction construction; 
-	public BuildingGrade gradeBase; 
-	public GameObjectRef skinObject; 
-	internal List<ItemAmount> _costToBuild; 
+	public Construction construction;
+	public BuildingGrade gradeBase;
+	public GameObjectRef skinObject;
+	internal List<ItemAmount> _costToBuild;
 
 	public float maxHealth { get; }
 	public List<ItemAmount> costToBuild { get; }

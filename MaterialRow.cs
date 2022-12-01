@@ -1,6 +1,6 @@
-public class MaterialRow : MonoBehaviour // TypeDefIndex: 7772
+public class MaterialRow : MonoBehaviour // TypeDefIndex: 7774
 {
-	public string ParamName; 
+	public string ParamName;
 
 	protected WorkshopItemEditor Editor { get; }
 

@@ -1,27 +1,27 @@
-public struct LobbyDetailsInfo // TypeDefIndex: 9151
+public struct LobbyDetailsInfo // TypeDefIndex: 9153
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LobbyId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LobbyOwnerUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LobbyPermissionLevel <PermissionLevel>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AvailableSlots>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <MaxMembers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AllowInvites>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <BucketId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AllowHostMigration>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <RTCRoomEnabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AllowJoinById>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <RejoinAfterKickRequiresInvite>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LobbyId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LobbyOwnerUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LobbyPermissionLevel <PermissionLevel>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AvailableSlots>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <MaxMembers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AllowInvites>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <BucketId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AllowHostMigration>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <RTCRoomEnabled>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AllowJoinById>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <RejoinAfterKickRequiresInvite>k__BackingField;
 
 	public Utf8String LobbyId { get; set; }
 	public ProductUserId LobbyOwnerUserId { get; set; }
@@ -36,70 +36,70 @@ public struct LobbyDetailsInfo // TypeDefIndex: 9151
 	public bool RejoinAfterKickRequiresInvite { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LobbyId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LobbyOwnerUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyOwnerUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LobbyPermissionLevel get_PermissionLevel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PermissionLevel(LobbyPermissionLevel value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AvailableSlots() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AvailableSlots(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_MaxMembers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxMembers(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AllowInvites() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllowInvites(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_BucketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BucketId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AllowHostMigration() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllowHostMigration(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_RTCRoomEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RTCRoomEnabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AllowJoinById() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllowJoinById(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_RejoinAfterKickRequiresInvite() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RejoinAfterKickRequiresInvite(bool value) { }
 
 	internal void Set(ref LobbyDetailsInfoInternal other) { }

@@ -1,7 +1,7 @@
 internal class SafeBag // TypeDefIndex: 54
 {
-	private string _bagOID; 
-	private ASN1 _asn1; 
+	private string _bagOID;
+	private ASN1 _asn1;
 
 	public string BagOID { get; }
 	public ASN1 ASN1 { get; }
@@ -17,8 +17,8 @@ internal class SafeBag // TypeDefIndex: 54
 
 internal class SafeBag // TypeDefIndex: 1710
 {
-	private string _bagOID; 
-	private ASN1 _asn1; 
+	private string _bagOID;
+	private ASN1 _asn1;
 
 	public string BagOID { get; }
 	public ASN1 ASN1 { get; }

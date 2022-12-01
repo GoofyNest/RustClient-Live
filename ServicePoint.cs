@@ -1,26 +1,26 @@
 public class ServicePoint // TypeDefIndex: 3018
 {
-	private readonly Uri uri; 
-	private int connectionLimit; 
-	private int maxIdleTime; 
-	private int currentConnections; 
-	private DateTime idleSince; 
-	private DateTime lastDnsResolve; 
-	private Version protocolVersion; 
-	private IPHostEntry host; 
-	private bool usesProxy; 
-	private Dictionary<string, WebConnectionGroup> groups; 
-	private bool sendContinue; 
-	private bool useConnect; 
-	private object hostE; 
-	private bool useNagle; 
-	private BindIPEndPoint endPointCallback; 
-	private bool tcp_keepalive; 
-	private int tcp_keepalive_time; 
-	private int tcp_keepalive_interval; 
-	private Timer idleTimer; 
-	private object m_ServerCertificateOrBytes; 
-	private object m_ClientCertificateOrBytes; 
+	private readonly Uri uri;
+	private int connectionLimit;
+	private int maxIdleTime;
+	private int currentConnections;
+	private DateTime idleSince;
+	private DateTime lastDnsResolve;
+	private Version protocolVersion;
+	private IPHostEntry host;
+	private bool usesProxy;
+	private Dictionary<string, WebConnectionGroup> groups;
+	private bool sendContinue;
+	private bool useConnect;
+	private object hostE;
+	private bool useNagle;
+	private BindIPEndPoint endPointCallback;
+	private bool tcp_keepalive;
+	private int tcp_keepalive_time;
+	private int tcp_keepalive_interval;
+	private Timer idleTimer;
+	private object m_ServerCertificateOrBytes;
+	private object m_ClientCertificateOrBytes;
 
 	public Uri Address { get; }
 	public int ConnectionLimit { get; }
@@ -90,7 +90,7 @@ public class ServicePoint // TypeDefIndex: 3018
 
 	internal bool CallEndPointDelegate(Socket sock, IPEndPoint remote) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <GetConnectionGroup>
 
 }

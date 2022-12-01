@@ -1,9 +1,9 @@
-public class AlignedLineDrawerDecal : AlignedLineDrawer, INotifyLOD // TypeDefIndex: 10606
+public class AlignedLineDrawerDecal : AlignedLineDrawer, INotifyLOD // TypeDefIndex: 10610
 {
-	public DeferredDecal decalComponent; 
-	private static Dictionary<Color, Material> colouredVariants; 
-	private Color cachedColour; 
-	private bool isLodShowing; 
+	public DeferredDecal decalComponent;
+	private static Dictionary<Color, Material> colouredVariants;
+	private Color cachedColour;
+	private bool isLodShowing;
 
 
 	protected override void AssignMesh() { }

@@ -1,22 +1,22 @@
-public static class RaycastHitEx // TypeDefIndex: 13140
+public static class RaycastHitEx // TypeDefIndex: 13155
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Transform GetTransform(RaycastHit hit) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Rigidbody GetRigidbody(RaycastHit hit) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Collider GetCollider(RaycastHit hit) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BaseEntity GetEntity(RaycastHit hit) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsOnLayer(RaycastHit hit, Layer rustLayer) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsOnLayer(RaycastHit hit, int layer) { }
 
 }

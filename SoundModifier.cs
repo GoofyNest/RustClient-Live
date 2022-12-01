@@ -1,7 +1,7 @@
-public class SoundModifier : MonoBehaviour // TypeDefIndex: 10761
+public class SoundModifier : MonoBehaviour // TypeDefIndex: 10765
 {
-	[HideInInspector] 
-	public Sound sound; 
+	[HideInInspector]
+	public Sound sound;
 
 
 	public virtual void Init(Sound targetSound) { }

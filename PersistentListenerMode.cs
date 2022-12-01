@@ -1,6 +1,6 @@
 public enum PersistentListenerMode // TypeDefIndex: 3628
 {
-	public int value__; 
+	public int value__;
 	public const PersistentListenerMode EventDefined = 0;
 	public const PersistentListenerMode Void = 1;
 	public const PersistentListenerMode Object = 2;

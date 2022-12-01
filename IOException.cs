@@ -1,6 +1,6 @@
 public class IOException : SystemException // TypeDefIndex: 634
 {
-	private string _maybeFullPath; 
+	private string _maybeFullPath;
 
 
 	public void .ctor() { }

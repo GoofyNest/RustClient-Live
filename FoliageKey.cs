@@ -1,6 +1,6 @@
-public struct FoliageKey : IEquatable<FoliageKey> // TypeDefIndex: 11613
+public struct FoliageKey : IEquatable<FoliageKey> // TypeDefIndex: 11620
 {
-	public Material material; 
+	public Material material;
 
 
 	public void .ctor(Material material) { }

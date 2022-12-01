@@ -1,15 +1,15 @@
-public struct CopyAchievementDefinitionByAchievementIdOptions // TypeDefIndex: 9893
+public struct CopyAchievementDefinitionByAchievementIdOptions // TypeDefIndex: 9895
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AchievementId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <AchievementId>k__BackingField;
 
 	public Utf8String AchievementId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AchievementId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementId(Utf8String value) { }
 
 }

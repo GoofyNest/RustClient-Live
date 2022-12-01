@@ -1,9 +1,9 @@
 internal sealed class ThreadPoolWorkQueue // TypeDefIndex: 809
 {
-	internal ThreadPoolWorkQueue.QueueSegment queueHead; 
-	internal ThreadPoolWorkQueue.QueueSegment queueTail; 
-	internal static ThreadPoolWorkQueue.SparseArray<ThreadPoolWorkQueue.WorkStealingQueue> allThreadQueues; 
-	private int numOutstandingThreadRequests; 
+	internal ThreadPoolWorkQueue.QueueSegment queueHead;
+	internal ThreadPoolWorkQueue.QueueSegment queueTail;
+	internal static ThreadPoolWorkQueue.SparseArray<ThreadPoolWorkQueue.WorkStealingQueue> allThreadQueues;
+	private int numOutstandingThreadRequests;
 
 
 	public void .ctor() { }
@@ -28,7 +28,7 @@ internal sealed class ThreadPoolWorkQueue // TypeDefIndex: 809
 
 internal class ThreadPoolWorkQueue.SparseArray<T> // TypeDefIndex: 810
 {
-	private T[] m_array; 
+	private T[] m_array;
 
 	internal T[] Current { get; }
 
@@ -65,11 +65,11 @@ internal class ThreadPoolWorkQueue.SparseArray<T> // TypeDefIndex: 810
 
 internal class ThreadPoolWorkQueue.WorkStealingQueue // TypeDefIndex: 811
 {
-	internal IThreadPoolWorkItem[] m_array; 
-	private int m_mask; 
-	private int m_headIndex; 
-	private int m_tailIndex; 
-	private SpinLock m_foreignLock; 
+	internal IThreadPoolWorkItem[] m_array;
+	private int m_mask;
+	private int m_headIndex;
+	private int m_tailIndex;
+	private SpinLock m_foreignLock;
 
 
 	public void LocalPush(IThreadPoolWorkItem obj) { }
@@ -88,16 +88,16 @@ internal class ThreadPoolWorkQueue.WorkStealingQueue // TypeDefIndex: 811
 
 internal class ThreadPoolWorkQueue.QueueSegment // TypeDefIndex: 812
 {
-	internal readonly IThreadPoolWorkItem[] nodes; 
-	private int indexes; 
-	public ThreadPoolWorkQueue.QueueSegment Next; 
+	internal readonly IThreadPoolWorkItem[] nodes;
+	private int indexes;
+	public ThreadPoolWorkQueue.QueueSegment Next;
 
 
 	private void GetIndexes(out int upper, out int lower) { }
 
 	private bool CompareExchangeIndexes(ref int prevUpper, int newUpper, ref int prevLower, int newLower) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void .ctor() { }
 
 	public bool IsUsedUp() { }

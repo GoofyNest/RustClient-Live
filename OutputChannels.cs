@@ -1,14 +1,14 @@
-public class OutputChannels // TypeDefIndex: 7408
+public class OutputChannels // TypeDefIndex: 7410
 {
 	internal const int BOTH_CHANNELS = 0;
 	internal const int LEFT_CHANNEL = 1;
 	internal const int RIGHT_CHANNEL = 2;
 	internal const int DOWNMIX_CHANNELS = 3;
-	internal static readonly OutputChannels Left; 
-	internal static readonly OutputChannels Right; 
-	internal static readonly OutputChannels Both; 
-	internal static readonly OutputChannels DownMix; 
-	private readonly int _OutputChannels; 
+	internal static readonly OutputChannels Left;
+	internal static readonly OutputChannels Right;
+	internal static readonly OutputChannels Both;
+	internal static readonly OutputChannels DownMix;
+	private readonly int _OutputChannels;
 
 
 	private void .ctor(int channels) { }

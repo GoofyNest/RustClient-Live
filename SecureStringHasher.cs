@@ -1,7 +1,7 @@
 internal class SecureStringHasher : IEqualityComparer<string> // TypeDefIndex: 1866
 {
-	private static SecureStringHasher.HashCodeOfStringDelegate hashCodeDelegate; 
-	private int hashCodeRandomizer; 
+	private static SecureStringHasher.HashCodeOfStringDelegate hashCodeDelegate;
+	private int hashCodeRandomizer;
 
 
 	public void .ctor() { }

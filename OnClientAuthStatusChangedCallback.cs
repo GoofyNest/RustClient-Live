@@ -1,4 +1,4 @@
-public sealed class OnClientAuthStatusChangedCallback : MulticastDelegate // TypeDefIndex: 9733
+public sealed class OnClientAuthStatusChangedCallback : MulticastDelegate // TypeDefIndex: 9735
 {
 
 	public void .ctor(object object, IntPtr method) { }

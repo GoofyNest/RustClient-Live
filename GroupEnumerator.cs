@@ -1,7 +1,7 @@
 internal class GroupEnumerator : IEnumerator // TypeDefIndex: 2618
 {
-	internal GroupCollection _rgc; 
-	internal int _curindex; 
+	internal GroupCollection _rgc;
+	internal int _curindex;
 
 	public object Current { get; }
 	public Capture Capture { get; }

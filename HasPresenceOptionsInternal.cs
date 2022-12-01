@@ -1,8 +1,8 @@
-internal struct HasPresenceOptionsInternal : ISettable<HasPresenceOptions>, IDisposable // TypeDefIndex: 8830
+internal struct HasPresenceOptionsInternal : ISettable<HasPresenceOptions>, IDisposable // TypeDefIndex: 8832
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
 
 	public EpicAccountId LocalUserId { set; }
 	public EpicAccountId TargetUserId { set; }

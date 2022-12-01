@@ -1,18 +1,18 @@
-public class ResearchTablePanel : LootPanel // TypeDefIndex: 12823
+public class ResearchTablePanel : LootPanel // TypeDefIndex: 12837
 {
-	public Button researchButton; 
-	public Text timerText; 
-	public GameObject itemDescNoItem; 
-	public GameObject itemDescTooBroken; 
-	public GameObject itemDescNotResearchable; 
-	public GameObject itemDescTooMany; 
-	public GameObject itemTakeBlueprint; 
-	public GameObject itemDescAlreadyResearched; 
-	public Text successChanceText; 
-	public ItemIcon scrapIcon; 
-	public bool wasResearching; 
-	public GameObject[] workbenchReqs; 
-	private Item _researchItem; 
+	public Button researchButton;
+	public Text timerText;
+	public GameObject itemDescNoItem;
+	public GameObject itemDescTooBroken;
+	public GameObject itemDescNotResearchable;
+	public GameObject itemDescTooMany;
+	public GameObject itemTakeBlueprint;
+	public GameObject itemDescAlreadyResearched;
+	public Text successChanceText;
+	public ItemIcon scrapIcon;
+	public bool wasResearching;
+	public GameObject[] workbenchReqs;
+	private Item _researchItem;
 
 	public Item researchItem { get; }
 

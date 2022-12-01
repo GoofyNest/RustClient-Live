@@ -1,7 +1,7 @@
 public sealed class ReflectionTypeLoadException : SystemException, ISerializable // TypeDefIndex: 548
 {
-	private Type[] _classes; 
-	private Exception[] _exceptions; 
+	private Type[] _classes;
+	private Exception[] _exceptions;
 
 	public Type[] Types { get; }
 

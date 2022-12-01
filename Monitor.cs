@@ -7,7 +7,7 @@ public static class Monitor // TypeDefIndex: 788
 
 	private static void ThrowLockTakenException() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void Exit(object obj) { }
 
 	public static void TryEnter(object obj, ref bool lockTaken) { }
@@ -42,19 +42,19 @@ public static class Monitor // TypeDefIndex: 788
 
 }
 
-public abstract class Monitor // TypeDefIndex: 13609
+public abstract class Monitor // TypeDefIndex: 13625
 {
-	[CompilerGeneratedAttribute] 
-	private RenderTexture <output>k__BackingField; 
-	internal bool requested; 
+	[CompilerGeneratedAttribute]
+	private RenderTexture <output>k__BackingField;
+	internal bool requested;
 
 	public RenderTexture output { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public RenderTexture get_output() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_output(RenderTexture value) { }
 
 	public bool IsRequestedAndSupported(PostProcessRenderContext context) { }

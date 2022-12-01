@@ -1,59 +1,59 @@
-public class ScrollRectEx : UIBehaviour, IInitializePotentialDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, ICanvasElement, ILayoutGroup, ILayoutController // TypeDefIndex: 13499
+public class ScrollRectEx : UIBehaviour, IInitializePotentialDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, ICanvasElement, ILayoutGroup, ILayoutController // TypeDefIndex: 13515
 {
-	public PointerEventData.InputButton scrollButton; 
-	public PointerEventData.InputButton altScrollButton; 
-	[SerializeField] 
-	private RectTransform m_Content; 
-	[SerializeField] 
-	private bool m_Horizontal; 
-	[SerializeField] 
-	private bool m_Vertical; 
-	[SerializeField] 
-	private ScrollRectEx.MovementType m_MovementType; 
-	[SerializeField] 
-	private float m_Elasticity; 
-	[SerializeField] 
-	private bool m_Inertia; 
-	[SerializeField] 
-	private float m_DecelerationRate; 
-	[SerializeField] 
-	private float m_ScrollSensitivity; 
-	[SerializeField] 
-	private RectTransform m_Viewport; 
-	[SerializeField] 
-	private Scrollbar m_HorizontalScrollbar; 
-	[SerializeField] 
-	private Scrollbar m_VerticalScrollbar; 
-	[SerializeField] 
-	private ScrollRectEx.ScrollbarVisibility m_HorizontalScrollbarVisibility; 
-	[SerializeField] 
-	private ScrollRectEx.ScrollbarVisibility m_VerticalScrollbarVisibility; 
-	[SerializeField] 
-	private float m_HorizontalScrollbarSpacing; 
-	[SerializeField] 
-	private float m_VerticalScrollbarSpacing; 
-	[SerializeField] 
-	private ScrollRectEx.ScrollRectEvent m_OnValueChanged; 
-	private Vector2 m_PointerStartLocalCursor; 
-	private Vector2 m_ContentStartPosition; 
-	private RectTransform m_ViewRect; 
-	private Bounds m_ContentBounds; 
-	private Bounds m_ViewBounds; 
-	private Vector2 m_Velocity; 
-	private bool m_Dragging; 
-	private Vector2 m_PrevPosition; 
-	private Bounds m_PrevContentBounds; 
-	private Bounds m_PrevViewBounds; 
-	private bool m_HasRebuiltLayout; 
-	private bool m_HSliderExpand; 
-	private bool m_VSliderExpand; 
-	private float m_HSliderHeight; 
-	private float m_VSliderWidth; 
-	private RectTransform m_Rect; 
-	private RectTransform m_HorizontalScrollbarRect; 
-	private RectTransform m_VerticalScrollbarRect; 
-	private DrivenRectTransformTracker m_Tracker; 
-	private readonly Vector3[] m_Corners; 
+	public PointerEventData.InputButton scrollButton;
+	public PointerEventData.InputButton altScrollButton;
+	[SerializeField]
+	private RectTransform m_Content;
+	[SerializeField]
+	private bool m_Horizontal;
+	[SerializeField]
+	private bool m_Vertical;
+	[SerializeField]
+	private ScrollRectEx.MovementType m_MovementType;
+	[SerializeField]
+	private float m_Elasticity;
+	[SerializeField]
+	private bool m_Inertia;
+	[SerializeField]
+	private float m_DecelerationRate;
+	[SerializeField]
+	private float m_ScrollSensitivity;
+	[SerializeField]
+	private RectTransform m_Viewport;
+	[SerializeField]
+	private Scrollbar m_HorizontalScrollbar;
+	[SerializeField]
+	private Scrollbar m_VerticalScrollbar;
+	[SerializeField]
+	private ScrollRectEx.ScrollbarVisibility m_HorizontalScrollbarVisibility;
+	[SerializeField]
+	private ScrollRectEx.ScrollbarVisibility m_VerticalScrollbarVisibility;
+	[SerializeField]
+	private float m_HorizontalScrollbarSpacing;
+	[SerializeField]
+	private float m_VerticalScrollbarSpacing;
+	[SerializeField]
+	private ScrollRectEx.ScrollRectEvent m_OnValueChanged;
+	private Vector2 m_PointerStartLocalCursor;
+	private Vector2 m_ContentStartPosition;
+	private RectTransform m_ViewRect;
+	private Bounds m_ContentBounds;
+	private Bounds m_ViewBounds;
+	private Vector2 m_Velocity;
+	private bool m_Dragging;
+	private Vector2 m_PrevPosition;
+	private Bounds m_PrevContentBounds;
+	private Bounds m_PrevViewBounds;
+	private bool m_HasRebuiltLayout;
+	private bool m_HSliderExpand;
+	private bool m_VSliderExpand;
+	private float m_HSliderHeight;
+	private float m_VSliderWidth;
+	private RectTransform m_Rect;
+	private RectTransform m_HorizontalScrollbarRect;
+	private RectTransform m_VerticalScrollbarRect;
+	private DrivenRectTransformTracker m_Tracker;
+	private readonly Vector3[] m_Corners;
 
 	public RectTransform content { get; set; }
 	public bool horizontal { get; set; }
@@ -241,25 +241,25 @@ public class ScrollRectEx : UIBehaviour, IInitializePotentialDragHandler, IEvent
 
 }
 
-public enum ScrollRectEx.MovementType // TypeDefIndex: 13500
+public enum ScrollRectEx.MovementType // TypeDefIndex: 13516
 {
-	public int value__; 
+	public int value__;
 	public const ScrollRectEx.MovementType Unrestricted = 0;
 	public const ScrollRectEx.MovementType Elastic = 1;
 	public const ScrollRectEx.MovementType Clamped = 2;
 
 }
 
-public enum ScrollRectEx.ScrollbarVisibility // TypeDefIndex: 13501
+public enum ScrollRectEx.ScrollbarVisibility // TypeDefIndex: 13517
 {
-	public int value__; 
+	public int value__;
 	public const ScrollRectEx.ScrollbarVisibility Permanent = 0;
 	public const ScrollRectEx.ScrollbarVisibility AutoHide = 1;
 	public const ScrollRectEx.ScrollbarVisibility AutoHideAndExpandViewport = 2;
 
 }
 
-public class ScrollRectEx.ScrollRectEvent : UnityEvent<Vector2> // TypeDefIndex: 13502
+public class ScrollRectEx.ScrollRectEvent : UnityEvent<Vector2> // TypeDefIndex: 13518
 {
 
 	public void .ctor() { }

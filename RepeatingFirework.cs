@@ -1,11 +1,11 @@
-public class RepeatingFirework : BaseFirework // TypeDefIndex: 9993
+public class RepeatingFirework : BaseFirework // TypeDefIndex: 9995
 {
-	public float timeBetweenRepeats; 
-	public int maxRepeats; 
-	public SoundPlayer launchSound; 
+	public float timeBetweenRepeats;
+	public int maxRepeats;
+	public SoundPlayer launchSound;
 
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void RPCFire(BaseEntity.RPCMessage msg) { }
 
 	public virtual void Fire() { }

@@ -1,7 +1,7 @@
 private sealed class IdentityFunction.<>c<TElement> // TypeDefIndex: 3223
 {
-	public static readonly IdentityFunction.<>c<TElement> <>9; 
-	public static Func<TElement, TElement> <>9__1_0; 
+	public static readonly IdentityFunction.<>c<TElement> <>9;
+	public static Func<TElement, TElement> <>9__1_0;
 
 
 	private static void .cctor() { }

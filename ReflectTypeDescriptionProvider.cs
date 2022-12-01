@@ -1,19 +1,19 @@
 internal sealed class ReflectTypeDescriptionProvider : TypeDescriptionProvider // TypeDefIndex: 2742
 {
-	private Hashtable _typeData; 
-	private static Type[] _typeConstructor; 
-	private static Hashtable _intrinsicTypeConverters; 
-	private static object _intrinsicReferenceKey; 
-	private static object _intrinsicNullableKey; 
-	private static object _dictionaryKey; 
-	private static Hashtable _propertyCache; 
-	private static Hashtable _attributeCache; 
-	private static Hashtable _extendedPropertyCache; 
-	private static readonly Guid _extenderProviderKey; 
-	private static readonly Guid _extenderPropertiesKey; 
-	private static readonly Guid _extenderProviderPropertiesKey; 
-	private static readonly Type[] _skipInterfaceAttributeList; 
-	private static object _internalSyncObject; 
+	private Hashtable _typeData;
+	private static Type[] _typeConstructor;
+	private static Hashtable _intrinsicTypeConverters;
+	private static object _intrinsicReferenceKey;
+	private static object _intrinsicNullableKey;
+	private static object _dictionaryKey;
+	private static Hashtable _propertyCache;
+	private static Hashtable _attributeCache;
+	private static Hashtable _extendedPropertyCache;
+	private static readonly Guid _extenderProviderKey;
+	private static readonly Guid _extenderPropertiesKey;
+	private static readonly Guid _extenderProviderPropertiesKey;
+	private static readonly Type[] _skipInterfaceAttributeList;
+	private static object _internalSyncObject;
 
 	private static Hashtable IntrinsicTypeConverters { get; }
 
@@ -78,14 +78,14 @@ internal sealed class ReflectTypeDescriptionProvider : TypeDescriptionProvider /
 
 private class ReflectTypeDescriptionProvider.ReflectedTypeData // TypeDefIndex: 2743
 {
-	private Type _type; 
-	private AttributeCollection _attributes; 
-	private EventDescriptorCollection _events; 
-	private PropertyDescriptorCollection _properties; 
-	private TypeConverter _converter; 
-	private object[] _editors; 
-	private Type[] _editorTypes; 
-	private int _editorCount; 
+	private Type _type;
+	private AttributeCollection _attributes;
+	private EventDescriptorCollection _events;
+	private PropertyDescriptorCollection _properties;
+	private TypeConverter _converter;
+	private object[] _editors;
+	private Type[] _editorTypes;
+	private int _editorCount;
 
 	internal bool IsPopulated { get; }
 

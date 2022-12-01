@@ -1,10 +1,10 @@
-public class ERLaneData // TypeDefIndex: 7210
+public class ERLaneData // TypeDefIndex: 7212
 {
-	public Vector3[] points; 
-	public List<ERLaneConnector> connectors; 
-	public ERLane laneType; 
-	public int laneIndex; 
-	public ERLaneDirection direction; 
+	public Vector3[] points;
+	public List<ERLaneConnector> connectors;
+	public ERLane laneType;
+	public int laneIndex;
+	public ERLaneDirection direction;
 
 
 	public static ERLaneData CreateInstance() { }

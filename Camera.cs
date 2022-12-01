@@ -1,20 +1,20 @@
 public sealed class Camera : Behaviour // TypeDefIndex: 3360
 {
-	public static Camera.CameraCallback onPreCull; 
-	public static Camera.CameraCallback onPreRender; 
-	public static Camera.CameraCallback onPostRender; 
+	public static Camera.CameraCallback onPreCull;
+	public static Camera.CameraCallback onPreRender;
+	public static Camera.CameraCallback onPostRender;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float nearClipPlane { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float farClipPlane { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float fieldOfView { get; set; }
 	public RenderingPath renderingPath { set; }
 	public RenderingPath actualRenderingPath { get; }
 	public bool allowHDR { get; set; }
 	public bool allowMSAA { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool forceIntoRenderTexture { set; }
 	public float orthographicSize { get; set; }
 	public bool orthographic { get; set; }
@@ -30,9 +30,9 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 	public bool usePhysicalProperties { get; set; }
 	public Vector2 sensorSize { get; set; }
 	public float focalLength { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Rect rect { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Rect pixelRect { get; set; }
 	public int pixelWidth { get; }
 	public int pixelHeight { get; }
@@ -41,7 +41,7 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 	public Matrix4x4 worldToCameraMatrix { get; }
 	public Matrix4x4 projectionMatrix { get; set; }
 	public Matrix4x4 nonJitteredProjectionMatrix { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool useJitteredProjectionMatrixForTransparentRendering { set; }
 	public static Camera main { get; }
 	public static Camera current { get; }
@@ -65,7 +65,7 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 
 	public void set_renderingPath(RenderingPath value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public RenderingPath get_actualRenderingPath() { }
 
 	public bool get_allowHDR() { }
@@ -100,10 +100,10 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 
 	public CameraType get_cameraType() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private float[] GetLayerCullDistances() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetLayerCullDistances(float[] d) { }
 
 	public float[] get_layerCullDistances() { }
@@ -144,10 +144,10 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 
 	public void set_pixelRect(Rect value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public int get_pixelWidth() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public int get_pixelHeight() { }
 
 	public RenderTexture get_targetTexture() { }
@@ -194,22 +194,22 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 
 	public Ray ScreenPointToRay(Vector3 pos) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void CalculateFrustumCornersInternal(Rect viewport, float z, Camera.MonoOrStereoscopicEye eye, [Out] Vector3[] outCorners) { }
 
 	public void CalculateFrustumCorners(Rect viewport, float z, Camera.MonoOrStereoscopicEye eye, Vector3[] outCorners) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Camera get_main() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Camera get_current() { }
 
 	public bool get_stereoEnabled() { }
 
 	public StereoTargetEyeMask get_stereoTargetEye() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Camera.MonoOrStereoscopicEye get_stereoActiveEye() { }
 
 	public Matrix4x4 GetStereoNonJitteredProjectionMatrix(Camera.StereoscopicEye eye) { }
@@ -224,49 +224,49 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 
 	public void ResetStereoProjectionMatrices() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetAllCamerasCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int GetAllCamerasImpl([Out] Camera[] cam) { }
 
 	public static int get_allCamerasCount() { }
 
 	public static int GetAllCameras(Camera[] cameras) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Render() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void RenderWithShader(Shader shader, string replacementTag) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void CopyFrom(Camera other) { }
 
 	public void RemoveCommandBuffers(CameraEvent evt) { }
 
 	public void RemoveAllCommandBuffers() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void AddCommandBufferImpl(CameraEvent evt, CommandBuffer buffer) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void RemoveCommandBufferImpl(CameraEvent evt, CommandBuffer buffer) { }
 
 	public void AddCommandBuffer(CameraEvent evt, CommandBuffer buffer) { }
 
 	public void RemoveCommandBuffer(CameraEvent evt, CommandBuffer buffer) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public CommandBuffer[] GetCommandBuffers(CameraEvent evt) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void FireOnPreCull(Camera cam) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void FireOnPreRender(Camera cam) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void FireOnPostRender(Camera cam) { }
 
 	public void .ctor() { }
@@ -323,7 +323,7 @@ public sealed class Camera : Behaviour // TypeDefIndex: 3360
 
 public enum Camera.StereoscopicEye // TypeDefIndex: 3361
 {
-	public int value__; 
+	public int value__;
 	public const Camera.StereoscopicEye Left = 0;
 	public const Camera.StereoscopicEye Right = 1;
 
@@ -331,7 +331,7 @@ public enum Camera.StereoscopicEye // TypeDefIndex: 3361
 
 public enum Camera.MonoOrStereoscopicEye // TypeDefIndex: 3362
 {
-	public int value__; 
+	public int value__;
 	public const Camera.MonoOrStereoscopicEye Left = 0;
 	public const Camera.MonoOrStereoscopicEye Right = 1;
 	public const Camera.MonoOrStereoscopicEye Mono = 2;

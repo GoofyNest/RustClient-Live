@@ -1,6 +1,6 @@
 public enum CipherSuiteCode // TypeDefIndex: 1741
 {
-	public ushort value__; 
+	public ushort value__;
 	public const CipherSuiteCode TLS_NULL_WITH_NULL_NULL = 0;
 	public const CipherSuiteCode TLS_RSA_WITH_NULL_MD5 = 1;
 	public const CipherSuiteCode TLS_RSA_WITH_NULL_SHA = 2;

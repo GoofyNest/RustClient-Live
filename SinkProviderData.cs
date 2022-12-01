@@ -1,8 +1,8 @@
 public class SinkProviderData // TypeDefIndex: 1201
 {
-	private string sinkName; 
-	private ArrayList children; 
-	private Hashtable properties; 
+	private string sinkName;
+	private ArrayList children;
+	private Hashtable properties;
 
 	public IList Children { get; }
 	public IDictionary Properties { get; }

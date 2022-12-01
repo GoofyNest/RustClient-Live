@@ -1,15 +1,15 @@
-internal sealed class MultiScaleVO : IAmbientOcclusionMethod // TypeDefIndex: 13583
+internal sealed class MultiScaleVO : IAmbientOcclusionMethod // TypeDefIndex: 13599
 {
-	private readonly float[] m_SampleThickness; 
-	private readonly float[] m_InvThicknessTable; 
-	private readonly float[] m_SampleWeightTable; 
-	private readonly int[] m_Widths; 
-	private readonly int[] m_Heights; 
-	private AmbientOcclusion m_Settings; 
-	private PropertySheet m_PropertySheet; 
-	private PostProcessResources m_Resources; 
-	private RenderTexture m_AmbientOnlyAO; 
-	private readonly RenderTargetIdentifier[] m_MRT; 
+	private readonly float[] m_SampleThickness;
+	private readonly float[] m_InvThicknessTable;
+	private readonly float[] m_SampleWeightTable;
+	private readonly int[] m_Widths;
+	private readonly int[] m_Heights;
+	private AmbientOcclusion m_Settings;
+	private PropertySheet m_PropertySheet;
+	private PostProcessResources m_Resources;
+	private RenderTexture m_AmbientOnlyAO;
+	private readonly RenderTargetIdentifier[] m_MRT;
 
 
 	public void .ctor(AmbientOcclusion settings) { }
@@ -60,9 +60,9 @@ internal sealed class MultiScaleVO : IAmbientOcclusionMethod // TypeDefIndex: 13
 
 }
 
-internal enum MultiScaleVO.MipLevel // TypeDefIndex: 13584
+internal enum MultiScaleVO.MipLevel // TypeDefIndex: 13600
 {
-	public int value__; 
+	public int value__;
 	public const MultiScaleVO.MipLevel Original = 0;
 	public const MultiScaleVO.MipLevel L1 = 1;
 	public const MultiScaleVO.MipLevel L2 = 2;
@@ -73,9 +73,9 @@ internal enum MultiScaleVO.MipLevel // TypeDefIndex: 13584
 
 }
 
-private enum MultiScaleVO.Pass // TypeDefIndex: 13585
+private enum MultiScaleVO.Pass // TypeDefIndex: 13601
 {
-	public int value__; 
+	public int value__;
 	public const MultiScaleVO.Pass DepthCopy = 0;
 	public const MultiScaleVO.Pass CompositionDeferred = 1;
 	public const MultiScaleVO.Pass CompositionForward = 2;

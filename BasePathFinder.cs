@@ -1,8 +1,8 @@
-public class BasePathFinder // TypeDefIndex: 10693
+public class BasePathFinder // TypeDefIndex: 10697
 {
-	private static Vector3[] preferedTopologySamples; 
-	private static Vector3[] topologySamples; 
-	private Vector3 chosenPosition; 
+	private static Vector3[] preferedTopologySamples;
+	private static Vector3[] topologySamples;
+	private Vector3 chosenPosition;
 	private const float halfPI = 0,01745329;
 
 

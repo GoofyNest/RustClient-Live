@@ -1,10 +1,10 @@
 public class MACTripleDES : KeyedHashAlgorithm // TypeDefIndex: 969
 {
-	private ICryptoTransform m_encryptor; 
-	private CryptoStream _cs; 
-	private TailStream _ts; 
-	private int m_bytesPerBlock; 
-	private TripleDES des; 
+	private ICryptoTransform m_encryptor;
+	private CryptoStream _cs;
+	private TailStream _ts;
+	private int m_bytesPerBlock;
+	private TripleDES des;
 
 
 	public void .ctor() { }

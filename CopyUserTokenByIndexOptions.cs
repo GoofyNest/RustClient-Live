@@ -1,24 +1,24 @@
-public struct CopyUserTokenByIndexOptions // TypeDefIndex: 8734
+public struct CopyUserTokenByIndexOptions // TypeDefIndex: 8736
 {
-	[CompilerGeneratedAttribute] 
-	private uint <UserTokenIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <QueryId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <UserTokenIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <QueryId>k__BackingField;
 
 	public uint UserTokenIndex { get; set; }
 	public uint QueryId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_UserTokenIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserTokenIndex(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_QueryId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_QueryId(uint value) { }
 
 }

@@ -1,6 +1,6 @@
 public class StringCollection : IList, ICollection, IEnumerable // TypeDefIndex: 3110
 {
-	private ArrayList data; 
+	private ArrayList data;
 
 	public string Item { get; set; }
 	public int Count { get; }

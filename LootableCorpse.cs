@@ -1,11 +1,11 @@
-public class LootableCorpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6307
+public class LootableCorpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public LootableCorpse.Private privateData; 
-	public ulong playerID; 
-	public string playerName; 
-	public uint underwearSkin; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public LootableCorpse.Private privateData;
+	public ulong playerID;
+	public string playerName;
+	public uint underwearSkin;
 
 
 	public static void ResetToPool(LootableCorpse instance) { }
@@ -62,11 +62,11 @@ public class LootableCorpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class LootableCorpse.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6308
+public class LootableCorpse.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6310
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<ItemContainer> container; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<ItemContainer> container;
 
 
 	public static void ResetToPool(LootableCorpse.Private instance) { }
@@ -123,12 +123,12 @@ public class LootableCorpse.Private : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class LootableCorpse : BaseCorpse, LootPanel.IHasLootPanel // TypeDefIndex: 10123
+public class LootableCorpse : BaseCorpse, LootPanel.IHasLootPanel // TypeDefIndex: 10125
 {
-	private Option __menuOption_Menu_Open; 
-	public string lootPanelName; 
-	public ulong playerSteamID; 
-	public string _playerName; 
+	private Option __menuOption_Menu_Open;
+	public string lootPanelName;
+	public ulong playerSteamID;
+	public string _playerName;
 
 	public override bool HasMenuOptions { get; }
 	public virtual string playerName { get; set; }
@@ -152,12 +152,12 @@ public class LootableCorpse : BaseCorpse, LootPanel.IHasLootPanel // TypeDefInde
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void RPC_ClientLootCorpse(BaseEntity.RPCMessage rpc) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
 	public void Menu_Open(BasePlayer player) { }
 
 	public void .ctor() { }

@@ -3,33 +3,33 @@ internal sealed class GUIClip // TypeDefIndex: 4038
 	internal static Rect visibleRect { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static Rect get_visibleRect() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void Internal_Push(Rect screenRect, Vector2 scrollOffset, Vector2 renderOffset, bool resetOffset) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void Internal_Pop() { }
 
-	[FreeFunctionAttribute] 
-	[VisibleToOtherModulesAttribute] 
+	[FreeFunctionAttribute]
+	[VisibleToOtherModulesAttribute]
 	internal static int Internal_GetCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Vector2 Unclip_Vector2(Vector2 pos) { }
 
-	[VisibleToOtherModulesAttribute] 
-	[FreeFunctionAttribute] 
+	[VisibleToOtherModulesAttribute]
+	[FreeFunctionAttribute]
 	internal static Matrix4x4 GetMatrix() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void SetMatrix(Matrix4x4 m) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void Internal_PushParentClip(Matrix4x4 objectTransform, Rect clipRect) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void Internal_PopParentClip() { }
 
 	internal static void Push(Rect screenRect, Vector2 scrollOffset, Vector2 renderOffset, bool resetOffset) { }
@@ -52,7 +52,7 @@ internal sealed class GUIClip // TypeDefIndex: 4038
 
 internal struct GUIClip.ParentClipScope : IDisposable // TypeDefIndex: 4039
 {
-	private bool m_Disposed; 
+	private bool m_Disposed;
 
 
 	public void .ctor(Matrix4x4 objectTransform, Rect clipRect) { }

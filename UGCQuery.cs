@@ -1,6 +1,6 @@
 internal enum UGCQuery // TypeDefIndex: 5168
 {
-	public int value__; 
+	public int value__;
 	public const UGCQuery RankedByVote = 0;
 	public const UGCQuery RankedByPublicationDate = 1;
 	public const UGCQuery AcceptedForGameRankedByAcceptanceDate = 2;

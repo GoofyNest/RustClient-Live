@@ -1,11 +1,11 @@
-public class FlintStrikeWeapon : BaseProjectile // TypeDefIndex: 11198
+public class FlintStrikeWeapon : BaseProjectile // TypeDefIndex: 11204
 {
-	public float successFraction; 
-	public RecoilProperties strikeRecoil; 
-	private bool _didSparkThisFrame; 
-	private bool _isStriking; 
-	private int strikes; 
-	private TimeSince lastSpectatorAttack; 
+	public float successFraction;
+	public RecoilProperties strikeRecoil;
+	private bool _didSparkThisFrame;
+	private bool _isStriking;
+	private int strikes;
+	private TimeSince lastSpectatorAttack;
 
 
 	public override RecoilProperties GetRecoil() { }

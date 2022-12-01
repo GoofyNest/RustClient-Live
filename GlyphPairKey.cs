@@ -1,8 +1,8 @@
-public struct GlyphPairKey // TypeDefIndex: 6722
+public struct GlyphPairKey // TypeDefIndex: 6724
 {
-	public uint firstGlyphIndex; 
-	public uint secondGlyphIndex; 
-	public long key; 
+	public uint firstGlyphIndex;
+	public uint secondGlyphIndex;
+	public long key;
 
 
 	public void .ctor(uint firstGlyphIndex, uint secondGlyphIndex) { }

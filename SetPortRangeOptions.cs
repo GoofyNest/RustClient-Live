@@ -1,24 +1,24 @@
-public struct SetPortRangeOptions // TypeDefIndex: 9003
+public struct SetPortRangeOptions // TypeDefIndex: 9005
 {
-	[CompilerGeneratedAttribute] 
-	private ushort <Port>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ushort <MaxAdditionalPortsToTry>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ushort <Port>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ushort <MaxAdditionalPortsToTry>k__BackingField;
 
 	public ushort Port { get; set; }
 	public ushort MaxAdditionalPortsToTry { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_Port() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Port(ushort value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_MaxAdditionalPortsToTry() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxAdditionalPortsToTry(ushort value) { }
 
 }

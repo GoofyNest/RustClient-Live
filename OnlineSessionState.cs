@@ -1,6 +1,6 @@
-public enum OnlineSessionState // TypeDefIndex: 8529
+public enum OnlineSessionState // TypeDefIndex: 8531
 {
-	public int value__; 
+	public int value__;
 	public const OnlineSessionState NoSession = 0;
 	public const OnlineSessionState Creating = 1;
 	public const OnlineSessionState Pending = 2;

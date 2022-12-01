@@ -1,9 +1,9 @@
-public sealed class Fog // TypeDefIndex: 13575
+public sealed class Fog // TypeDefIndex: 13591
 {
-	[TooltipAttribute] 
-	public bool enabled; 
-	[TooltipAttribute] 
-	public bool excludeSkybox; 
+	[TooltipAttribute]
+	public bool enabled;
+	[TooltipAttribute]
+	public bool excludeSkybox;
 
 
 	internal DepthTextureMode GetCameraFlags() { }

@@ -1,6 +1,6 @@
-public class CH47Helicopter : BaseHelicopterVehicle // TypeDefIndex: 11450
+public class CH47Helicopter : BaseHelicopterVehicle // TypeDefIndex: 11456
 {
-	public GameObjectRef mapMarkerEntityPrefab; 
+	public GameObjectRef mapMarkerEntityPrefab;
 
 
 	protected override bool CanPushNow(BasePlayer pusher) { }

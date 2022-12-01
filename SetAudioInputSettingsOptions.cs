@@ -1,13 +1,13 @@
-public struct SetAudioInputSettingsOptions // TypeDefIndex: 8708
+public struct SetAudioInputSettingsOptions // TypeDefIndex: 8710
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeviceId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Volume>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PlatformAEC>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeviceId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Volume>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PlatformAEC>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String DeviceId { get; set; }
@@ -15,28 +15,28 @@ public struct SetAudioInputSettingsOptions // TypeDefIndex: 8708
 	public bool PlatformAEC { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeviceId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeviceId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Volume() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Volume(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PlatformAEC() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlatformAEC(bool value) { }
 
 }

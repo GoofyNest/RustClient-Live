@@ -1,8 +1,8 @@
-internal struct GamepadTextInputDismissed_t : ICallbackData // TypeDefIndex: 5338
+internal struct GamepadTextInputDismissed_t : ICallbackData // TypeDefIndex: 5340
 {
-	internal bool Submitted; 
-	internal uint SubmittedText; 
-	public static int _datasize; 
+	internal bool Submitted;
+	internal uint SubmittedText;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

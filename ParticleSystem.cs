@@ -1,32 +1,32 @@
 public sealed class ParticleSystem : Component // TypeDefIndex: 4532
 {
 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[RequireComponent] 
-[UsedByNativeCodeAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[RequireComponent]
+[UsedByNativeCodeAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
 public sealed class ParticleSystem : Component
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public bool playOnAwake { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float duration { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public bool enableEmission { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float emissionRate { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float startSpeed { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float startSize { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float startLifetime { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float gravityModifier { get; set; }
 	public bool isPlaying { get; }
 	public bool isStopped { get; }
@@ -39,10 +39,10 @@ public sealed class ParticleSystem : Component
 	public ParticleSystem.CollisionModule collision { get; }
 
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void Emit(Vector3 position, Vector3 velocity, float size, float lifetime, Color32 color) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void Emit(ParticleSystem.Particle particle) { }
 
 	public bool get_playOnAwake() { }
@@ -73,19 +73,19 @@ public sealed class ParticleSystem : Component
 
 	public void set_gravityModifier(float value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isPlaying() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isStopped() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public int get_particleCount() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public void set_useAutoRandomSeed(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Simulate(float t, bool withChildren, bool restart, bool fixedTimeStep) { }
 
 	public void Simulate(float t, bool withChildren, bool restart) { }
@@ -94,38 +94,38 @@ public sealed class ParticleSystem : Component
 
 	public void Simulate(float t) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Play(bool withChildren) { }
 
 	public void Play() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Pause(bool withChildren) { }
 
 	public void Pause() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Stop(bool withChildren, ParticleSystemStopBehavior stopBehavior) { }
 
 	public void Stop(bool withChildren) { }
 
 	public void Stop() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void Clear(bool withChildren) { }
 
 	public void Clear() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void Emit(int count) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void Emit_Internal(int count) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public void Emit(ParticleSystem.EmitParams emitParams, int count) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private void EmitOld_Internal(ref ParticleSystem.Particle particle) { }
 
 	internal void* GetManagedJobData() { }
@@ -134,10 +134,10 @@ public sealed class ParticleSystem : Component
 
 	internal void SetManagedJobHandle(JobHandle handle) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static JobHandle ScheduleManagedJob(ref JobsUtility.JobScheduleParameters parameters, void* additionalData) { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	internal static void CopyManagedJobData(void* systemPtr, out NativeParticleData particleData) { }
 
 	public ParticleSystem.MainModule get_main() { }
@@ -162,16 +162,16 @@ public sealed class ParticleSystem : Component
 
 public struct ParticleSystem.MainModule // TypeDefIndex: 4533
 {
-	internal ParticleSystem m_ParticleSystem; 
+	internal ParticleSystem m_ParticleSystem;
 
 	public float duration { get; }
 	public ParticleSystem.MinMaxCurve startLifetime { get; set; }
 	public float startLifetimeMultiplier { get; set; }
 	public ParticleSystem.MinMaxCurve startSpeed { get; set; }
 	public float startSpeedMultiplier { get; set; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public ParticleSystem.MinMaxCurve startSize { get; set; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public float startSizeMultiplier { get; set; }
 	public ParticleSystem.MinMaxGradient startColor { get; set; }
 	public float gravityModifierMultiplier { get; set; }
@@ -275,9 +275,9 @@ public struct ParticleSystem.MainModule // TypeDefIndex: 4533
 
 public struct ParticleSystem.EmissionModule // TypeDefIndex: 4534
 {
-	internal ParticleSystem m_ParticleSystem; 
+	internal ParticleSystem m_ParticleSystem;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public ParticleSystem.MinMaxCurve rate { set; }
 	public bool enabled { get; set; }
 	public ParticleSystem.MinMaxCurve rateOverTime { get; set; }
@@ -324,7 +324,7 @@ public struct ParticleSystem.EmissionModule // TypeDefIndex: 4534
 
 public struct ParticleSystem.ShapeModule // TypeDefIndex: 4535
 {
-	internal ParticleSystem m_ParticleSystem; 
+	internal ParticleSystem m_ParticleSystem;
 
 	public ParticleSystemShapeType shapeType { set; }
 	public float randomDirectionAmount { set; }
@@ -388,25 +388,25 @@ public struct ParticleSystem.ShapeModule // TypeDefIndex: 4535
 
 public struct ParticleSystem.Particle // TypeDefIndex: 4536
 {
-	private Vector3 m_Position; 
-	private Vector3 m_Velocity; 
-	private Vector3 m_AnimatedVelocity; 
-	private Vector3 m_InitialVelocity; 
-	private Vector3 m_AxisOfRotation; 
-	private Vector3 m_Rotation; 
-	private Vector3 m_AngularVelocity; 
-	private Vector3 m_StartSize; 
-	private Color32 m_StartColor; 
-	private uint m_RandomSeed; 
-	private uint m_ParentRandomSeed; 
-	private float m_Lifetime; 
-	private float m_StartLifetime; 
-	private int m_MeshIndex; 
-	private float m_EmitAccumulator0; 
-	private float m_EmitAccumulator1; 
-	private uint m_Flags; 
+	private Vector3 m_Position;
+	private Vector3 m_Velocity;
+	private Vector3 m_AnimatedVelocity;
+	private Vector3 m_InitialVelocity;
+	private Vector3 m_AxisOfRotation;
+	private Vector3 m_Rotation;
+	private Vector3 m_AngularVelocity;
+	private Vector3 m_StartSize;
+	private Color32 m_StartColor;
+	private uint m_RandomSeed;
+	private uint m_ParentRandomSeed;
+	private float m_Lifetime;
+	private float m_StartLifetime;
+	private int m_MeshIndex;
+	private float m_EmitAccumulator0;
+	private float m_EmitAccumulator1;
+	private uint m_Flags;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float lifetime { set; }
 	public Vector3 position { set; }
 	public Vector3 velocity { set; }
@@ -443,11 +443,11 @@ public struct ParticleSystem.Particle // TypeDefIndex: 4536
 
 public struct ParticleSystem.Burst // TypeDefIndex: 4537
 {
-	private float m_Time; 
-	private ParticleSystem.MinMaxCurve m_Count; 
-	private int m_RepeatCount; 
-	private float m_RepeatInterval; 
-	private float m_InvProbability; 
+	private float m_Time;
+	private ParticleSystem.MinMaxCurve m_Count;
+	private int m_RepeatCount;
+	private float m_RepeatInterval;
+	private float m_InvProbability;
 
 	public float probability { set; }
 
@@ -458,18 +458,18 @@ public struct ParticleSystem.Burst // TypeDefIndex: 4537
 
 public struct ParticleSystem.MinMaxCurve // TypeDefIndex: 4538
 {
-	[SerializeField] 
-	private ParticleSystemCurveMode m_Mode; 
-	[SerializeField] 
-	private float m_CurveMultiplier; 
-	[SerializeField] 
-	private AnimationCurve m_CurveMin; 
-	[SerializeField] 
-	private AnimationCurve m_CurveMax; 
-	[SerializeField] 
-	private float m_ConstantMin; 
-	[SerializeField] 
-	private float m_ConstantMax; 
+	[SerializeField]
+	private ParticleSystemCurveMode m_Mode;
+	[SerializeField]
+	private float m_CurveMultiplier;
+	[SerializeField]
+	private AnimationCurve m_CurveMin;
+	[SerializeField]
+	private AnimationCurve m_CurveMax;
+	[SerializeField]
+	private float m_ConstantMin;
+	[SerializeField]
+	private float m_ConstantMax;
 
 	public ParticleSystemCurveMode mode { set; }
 	public float constantMax { get; set; }
@@ -497,16 +497,16 @@ public struct ParticleSystem.MinMaxCurve // TypeDefIndex: 4538
 
 public struct ParticleSystem.MinMaxGradient // TypeDefIndex: 4539
 {
-	[SerializeField] 
-	private ParticleSystemGradientMode m_Mode; 
-	[SerializeField] 
-	private Gradient m_GradientMin; 
-	[SerializeField] 
-	private Gradient m_GradientMax; 
-	[SerializeField] 
-	private Color m_ColorMin; 
-	[SerializeField] 
-	private Color m_ColorMax; 
+	[SerializeField]
+	private ParticleSystemGradientMode m_Mode;
+	[SerializeField]
+	private Gradient m_GradientMin;
+	[SerializeField]
+	private Gradient m_GradientMax;
+	[SerializeField]
+	private Color m_ColorMin;
+	[SerializeField]
+	private Color m_ColorMax;
 
 	public ParticleSystemGradientMode mode { set; }
 	public Color color { get; set; }
@@ -533,30 +533,30 @@ public struct ParticleSystem.MinMaxGradient // TypeDefIndex: 4539
 
 public struct ParticleSystem.EmitParams // TypeDefIndex: 4540
 {
-	[NativeNameAttribute] 
-	private ParticleSystem.Particle m_Particle; 
-	[NativeNameAttribute] 
-	private bool m_PositionSet; 
-	[NativeNameAttribute] 
-	private bool m_VelocitySet; 
-	[NativeNameAttribute] 
-	private bool m_AxisOfRotationSet; 
-	[NativeNameAttribute] 
-	private bool m_RotationSet; 
-	[NativeNameAttribute] 
-	private bool m_AngularVelocitySet; 
-	[NativeNameAttribute] 
-	private bool m_StartSizeSet; 
-	[NativeNameAttribute] 
-	private bool m_StartColorSet; 
-	[NativeNameAttribute] 
-	private bool m_RandomSeedSet; 
-	[NativeNameAttribute] 
-	private bool m_StartLifetimeSet; 
-	[NativeNameAttribute] 
-	private bool m_MeshIndexSet; 
-	[NativeNameAttribute] 
-	private bool m_ApplyShapeToPosition; 
+	[NativeNameAttribute]
+	private ParticleSystem.Particle m_Particle;
+	[NativeNameAttribute]
+	private bool m_PositionSet;
+	[NativeNameAttribute]
+	private bool m_VelocitySet;
+	[NativeNameAttribute]
+	private bool m_AxisOfRotationSet;
+	[NativeNameAttribute]
+	private bool m_RotationSet;
+	[NativeNameAttribute]
+	private bool m_AngularVelocitySet;
+	[NativeNameAttribute]
+	private bool m_StartSizeSet;
+	[NativeNameAttribute]
+	private bool m_StartColorSet;
+	[NativeNameAttribute]
+	private bool m_RandomSeedSet;
+	[NativeNameAttribute]
+	private bool m_StartLifetimeSet;
+	[NativeNameAttribute]
+	private bool m_MeshIndexSet;
+	[NativeNameAttribute]
+	private bool m_ApplyShapeToPosition;
 
 	public Vector3 position { set; }
 	public float startSize { set; }
@@ -573,7 +573,7 @@ public struct ParticleSystem.EmitParams // TypeDefIndex: 4540
 
 public struct ParticleSystem.ColorOverLifetimeModule // TypeDefIndex: 4541
 {
-	internal ParticleSystem m_ParticleSystem; 
+	internal ParticleSystem m_ParticleSystem;
 
 	public ParticleSystem.MinMaxGradient color { set; }
 
@@ -588,7 +588,7 @@ public struct ParticleSystem.ColorOverLifetimeModule // TypeDefIndex: 4541
 
 public struct ParticleSystem.CollisionModule // TypeDefIndex: 4542
 {
-	internal ParticleSystem m_ParticleSystem; 
+	internal ParticleSystem m_ParticleSystem;
 
 	public bool enabled { get; set; }
 	public ParticleSystemCollisionQuality quality { set; }

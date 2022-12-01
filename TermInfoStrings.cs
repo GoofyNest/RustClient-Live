@@ -1,6 +1,6 @@
 internal enum TermInfoStrings // TypeDefIndex: 400
 {
-	public int value__; 
+	public int value__;
 	public const TermInfoStrings BackTab = 0;
 	public const TermInfoStrings Bell = 1;
 	public const TermInfoStrings CarriageReturn = 2;

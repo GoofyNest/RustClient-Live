@@ -1,29 +1,29 @@
-public class TextMeshProUGUI : TMP_Text, ILayoutElement // TypeDefIndex: 6807
+public class TextMeshProUGUI : TMP_Text, ILayoutElement // TypeDefIndex: 6809
 {
-	[SerializeField] 
-	private bool m_hasFontAssetChanged; 
-	[SerializeField] 
-	protected TMP_SubMeshUI[] m_subTextObjects; 
-	private float m_previousLossyScaleY; 
-	private Vector3[] m_RectTransformCorners; 
-	private CanvasRenderer m_canvasRenderer; 
-	private Canvas m_canvas; 
-	private bool m_isFirstAllocation; 
-	private int m_max_characters; 
-	private bool m_isMaskingEnabled; 
-	[SerializeField] 
-	private Material m_baseMaterial; 
-	private bool m_isScrollRegionSet; 
-	private int m_stencilID; 
-	[SerializeField] 
-	private Vector4 m_maskOffset; 
-	private Matrix4x4 m_EnvMapMatrix; 
-	private bool m_isRegisteredForEvents; 
-	private int m_recursiveCountA; 
-	private int loopCountA; 
-	[CompilerGeneratedAttribute] 
-	private bool <blockRectTransformChange>k__BackingField; 
-	private bool m_isRebuildingLayout; 
+	[SerializeField]
+	private bool m_hasFontAssetChanged;
+	[SerializeField]
+	protected TMP_SubMeshUI[] m_subTextObjects;
+	private float m_previousLossyScaleY;
+	private Vector3[] m_RectTransformCorners;
+	private CanvasRenderer m_canvasRenderer;
+	private Canvas m_canvas;
+	private bool m_isFirstAllocation;
+	private int m_max_characters;
+	private bool m_isMaskingEnabled;
+	[SerializeField]
+	private Material m_baseMaterial;
+	private bool m_isScrollRegionSet;
+	private int m_stencilID;
+	[SerializeField]
+	private Vector4 m_maskOffset;
+	private Matrix4x4 m_EnvMapMatrix;
+	private bool m_isRegisteredForEvents;
+	private int m_recursiveCountA;
+	private int loopCountA;
+	[CompilerGeneratedAttribute]
+	private bool <blockRectTransformChange>k__BackingField;
+	private bool m_isRebuildingLayout;
 
 	public bool blockRectTransformChange { get; set; }
 	public override Material materialForRendering { get; }
@@ -91,10 +91,10 @@ public class TextMeshProUGUI : TMP_Text, ILayoutElement // TypeDefIndex: 6807
 
 	protected override void OnRectTransformDimensionsChange() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_blockRectTransformChange() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_blockRectTransformChange(bool value) { }
 
 	internal override void InternalUpdate() { }

@@ -1,13 +1,13 @@
-public struct JoinLobbyByIdOptions // TypeDefIndex: 9115
+public struct JoinLobbyByIdOptions // TypeDefIndex: 9117
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LobbyId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PresenceEnabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<LocalRTCOptions> <LocalRTCOptions>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LobbyId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PresenceEnabled>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<LocalRTCOptions> <LocalRTCOptions>k__BackingField;
 
 	public Utf8String LobbyId { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -15,28 +15,28 @@ public struct JoinLobbyByIdOptions // TypeDefIndex: 9115
 	public Nullable<LocalRTCOptions> LocalRTCOptions { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LobbyId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PresenceEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PresenceEnabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<LocalRTCOptions> get_LocalRTCOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalRTCOptions(Nullable<LocalRTCOptions> value) { }
 
 }

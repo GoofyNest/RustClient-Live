@@ -1,17 +1,17 @@
-public class CCTV_RC : PoweredRemoteControlEntity // TypeDefIndex: 10090
+public class CCTV_RC : PoweredRemoteControlEntity // TypeDefIndex: 10092
 {
-	private Option __menuOption_Menu_SetDir; 
-	public Transform pivotOrigin; 
-	public Transform yaw; 
-	public Transform pitch; 
-	public Vector2 pitchClamp; 
-	public Vector2 yawClamp; 
-	public float turnSpeed; 
-	public float serverLerpSpeed; 
-	public float clientLerpSpeed; 
-	private float pitchAmount; 
-	private float yawAmount; 
-	public bool hasPTZ; 
+	private Option __menuOption_Menu_SetDir;
+	public Transform pivotOrigin;
+	public Transform yaw;
+	public Transform pitch;
+	public Vector2 pitchClamp;
+	public Vector2 yawClamp;
+	public float turnSpeed;
+	public float serverLerpSpeed;
+	public float clientLerpSpeed;
+	private float pitchAmount;
+	private float yawAmount;
+	public bool hasPTZ;
 	public const BaseEntity.Flags Flag_HasViewer = 2048;
 
 	public override bool HasMenuOptions { get; }
@@ -33,10 +33,10 @@ public class CCTV_RC : PoweredRemoteControlEntity // TypeDefIndex: 10090
 
 	public void Update() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_SetDir(BasePlayer player) { }
 
 	public bool Menu_SetDir_ShowIf(BasePlayer player) { }

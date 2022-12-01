@@ -1,4 +1,4 @@
-public class WaterGerstner // TypeDefIndex: 12361
+public class WaterGerstner // TypeDefIndex: 12369
 {
 	public const int WaveCount = 6;
 
@@ -33,67 +33,67 @@ public class WaterGerstner // TypeDefIndex: 12361
 
 }
 
-public class WaterGerstner.WaveParams // TypeDefIndex: 12362
+public class WaterGerstner.WaveParams // TypeDefIndex: 12370
 {
-	[RangeAttribute] 
-	public float Angle; 
-	[RangeAttribute] 
-	public float Steepness; 
-	[RangeAttribute] 
-	public float Length; 
-	[RangeAttribute] 
-	public float Speed; 
+	[RangeAttribute]
+	public float Angle;
+	[RangeAttribute]
+	public float Steepness;
+	[RangeAttribute]
+	public float Length;
+	[RangeAttribute]
+	public float Speed;
 
 
 	public void .ctor() { }
 
 }
 
-public class WaterGerstner.ShoreWaveParams // TypeDefIndex: 12363
+public class WaterGerstner.ShoreWaveParams // TypeDefIndex: 12371
 {
-	[RangeAttribute] 
-	public float Steepness; 
-	[RangeAttribute] 
-	public float Amplitude; 
-	[RangeAttribute] 
-	public float Length; 
-	[RangeAttribute] 
-	public float Speed; 
-	public float[] DirectionAngles; 
-	public float DirectionVarFreq; 
-	public float DirectionVarAmp; 
+	[RangeAttribute]
+	public float Steepness;
+	[RangeAttribute]
+	public float Amplitude;
+	[RangeAttribute]
+	public float Length;
+	[RangeAttribute]
+	public float Speed;
+	public float[] DirectionAngles;
+	public float DirectionVarFreq;
+	public float DirectionVarAmp;
 
 
 	public void .ctor() { }
 
 }
 
-public struct WaterGerstner.PrecomputedWave // TypeDefIndex: 12364
+public struct WaterGerstner.PrecomputedWave // TypeDefIndex: 12372
 {
-	public float Angle; 
-	public Vector2 Direction; 
-	public float Steepness; 
-	public float K; 
-	public float C; 
-	public float A; 
-	public static WaterGerstner.PrecomputedWave Default; 
+	public float Angle;
+	public Vector2 Direction;
+	public float Steepness;
+	public float K;
+	public float C;
+	public float A;
+	public static WaterGerstner.PrecomputedWave Default;
 
 
 	private static void .cctor() { }
 
 }
 
-public struct WaterGerstner.PrecomputedShoreWaves // TypeDefIndex: 12365
+public struct WaterGerstner.PrecomputedShoreWaves // TypeDefIndex: 12373
 {
-	public Vector2[] Directions; 
-	public float Steepness; 
-	public float Amplitude; 
-	public float K; 
-	public float C; 
-	public float A; 
-	public float DirectionVarFreq; 
-	public float DirectionVarAmp; 
-	public static WaterGerstner.PrecomputedShoreWaves Default; 
+	public Vector2[] Directions;
+	public float Steepness;
+	public float Amplitude;
+	public float K;
+	public float C;
+	public float A;
+	public float DirectionVarFreq;
+	public float DirectionVarAmp;
+	public static WaterGerstner.PrecomputedShoreWaves Default;
 
 
 	private static void .cctor() { }

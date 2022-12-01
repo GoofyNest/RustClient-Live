@@ -1,6 +1,6 @@
 internal sealed class Empty : ISerializable // TypeDefIndex: 209
 {
-	public static readonly Empty Value; 
+	public static readonly Empty Value;
 
 
 	private void .ctor() { }

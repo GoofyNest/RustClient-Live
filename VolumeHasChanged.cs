@@ -1,7 +1,7 @@
-internal struct VolumeHasChanged_t : ICallbackData // TypeDefIndex: 5415
+internal struct VolumeHasChanged_t : ICallbackData // TypeDefIndex: 5417
 {
-	internal float NewVolume; 
-	public static int _datasize; 
+	internal float NewVolume;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

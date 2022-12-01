@@ -1,17 +1,17 @@
-public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8419
+public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8421
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TotalFileSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsLastChunk>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <DataChunk>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TotalFileSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsLastChunk>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <DataChunk>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -21,40 +21,40 @@ public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8419
 	public ArraySegment<byte> DataChunk { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TotalFileSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TotalFileSizeBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsLastChunk() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsLastChunk(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_DataChunk() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DataChunk(ArraySegment<byte> value) { }
 
 	public Nullable<Result> GetResultCode() { }
@@ -63,20 +63,20 @@ public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8419
 
 }
 
-public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8922
+public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8924
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TotalFileSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsLastChunk>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <DataChunk>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TotalFileSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsLastChunk>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <DataChunk>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -86,40 +86,40 @@ public struct ReadFileDataCallbackInfo : ICallbackInfo // TypeDefIndex: 8922
 	public ArraySegment<byte> DataChunk { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TotalFileSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TotalFileSizeBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsLastChunk() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsLastChunk(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_DataChunk() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DataChunk(ArraySegment<byte> value) { }
 
 	public Nullable<Result> GetResultCode() { }

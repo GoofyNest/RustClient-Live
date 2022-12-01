@@ -1,37 +1,37 @@
 public class ResourceManager // TypeDefIndex: 491
 {
-	protected string BaseNameField; 
-	[ObsoleteAttribute] 
-	protected Hashtable ResourceSets; 
-	private Dictionary<string, ResourceSet> _resourceSets; 
-	private string moduleDir; 
-	protected Assembly MainAssembly; 
-	private Type _locationInfo; 
-	private Type _userResourceSet; 
-	private CultureInfo _neutralResourcesCulture; 
-	private ResourceManager.CultureNameResourceSetPair _lastUsedResourceCache; 
-	private bool _ignoreCase; 
-	private bool UseManifest; 
-	[OptionalFieldAttribute] 
-	private bool UseSatelliteAssem; 
-	[OptionalFieldAttribute] 
-	private UltimateResourceFallbackLocation _fallbackLoc; 
-	[OptionalFieldAttribute] 
-	private Version _satelliteContractVersion; 
-	[OptionalFieldAttribute] 
-	private bool _lookedForSatelliteContractVersion; 
-	[OptionalFieldAttribute] 
-	private Assembly _callingAssembly; 
-	[OptionalFieldAttribute] 
-	private RuntimeAssembly m_callingAssembly; 
-	private IResourceGroveler resourceGroveler; 
-	public static readonly int MagicNumber; 
-	public static readonly int HeaderVersionNumber; 
-	private static readonly Type _minResourceSet; 
-	internal static readonly string ResReaderTypeName; 
-	internal static readonly string ResSetTypeName; 
-	internal static readonly string MscorlibName; 
-	internal static readonly int DEBUG; 
+	protected string BaseNameField;
+	[ObsoleteAttribute]
+	protected Hashtable ResourceSets;
+	private Dictionary<string, ResourceSet> _resourceSets;
+	private string moduleDir;
+	protected Assembly MainAssembly;
+	private Type _locationInfo;
+	private Type _userResourceSet;
+	private CultureInfo _neutralResourcesCulture;
+	private ResourceManager.CultureNameResourceSetPair _lastUsedResourceCache;
+	private bool _ignoreCase;
+	private bool UseManifest;
+	[OptionalFieldAttribute]
+	private bool UseSatelliteAssem;
+	[OptionalFieldAttribute]
+	private UltimateResourceFallbackLocation _fallbackLoc;
+	[OptionalFieldAttribute]
+	private Version _satelliteContractVersion;
+	[OptionalFieldAttribute]
+	private bool _lookedForSatelliteContractVersion;
+	[OptionalFieldAttribute]
+	private Assembly _callingAssembly;
+	[OptionalFieldAttribute]
+	private RuntimeAssembly m_callingAssembly;
+	private IResourceGroveler resourceGroveler;
+	public static readonly int MagicNumber;
+	public static readonly int HeaderVersionNumber;
+	private static readonly Type _minResourceSet;
+	internal static readonly string ResReaderTypeName;
+	internal static readonly string ResSetTypeName;
+	internal static readonly string MscorlibName;
+	internal static readonly int DEBUG;
 
 	public virtual string BaseName { get; }
 	protected UltimateResourceFallbackLocation FallbackLocation { get; }
@@ -45,13 +45,13 @@ public class ResourceManager // TypeDefIndex: 491
 
 	public void .ctor(Type resourceSource) { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
 	private void CommonAssemblyInit() { }
@@ -88,8 +88,8 @@ public class ResourceManager // TypeDefIndex: 491
 
 internal class ResourceManager.CultureNameResourceSetPair // TypeDefIndex: 492
 {
-	public string lastCultureName; 
-	public ResourceSet lastResourceSet; 
+	public string lastCultureName;
+	public ResourceSet lastResourceSet;
 
 
 	public void .ctor() { }
@@ -98,7 +98,7 @@ internal class ResourceManager.CultureNameResourceSetPair // TypeDefIndex: 492
 
 internal class ResourceManager.ResourceManagerMediator // TypeDefIndex: 493
 {
-	private ResourceManager _rm; 
+	private ResourceManager _rm;
 
 	internal string ModuleDir { get; }
 	internal Type LocationInfo { get; }

@@ -1,17 +1,17 @@
 public class InputDevices // TypeDefIndex: 4154
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<InputDevice> deviceConnected; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<InputDevice> deviceDisconnected; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<InputDevice> deviceConfigChanged; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<InputDevice> deviceConnected;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<InputDevice> deviceDisconnected;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<InputDevice> deviceConfigChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeConnectionEvent(ulong deviceId, ConnectionChangeType change) { }
 
 }

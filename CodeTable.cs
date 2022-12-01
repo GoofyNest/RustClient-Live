@@ -1,6 +1,6 @@
-internal sealed class CodeTable : IDisposable // TypeDefIndex: 7841
+internal sealed class CodeTable : IDisposable // TypeDefIndex: 7843
 {
-	private Stream stream; 
+	private Stream stream;
 
 
 	public void .ctor(string name) { }

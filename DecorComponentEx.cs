@@ -1,13 +1,13 @@
-public static class DecorComponentEx // TypeDefIndex: 12072
+public static class DecorComponentEx // TypeDefIndex: 12079
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyDecorComponents(Transform transform, DecorComponent[] components, ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyDecorComponents(Transform transform, DecorComponent[] components) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyDecorComponentsScaleOnly(Transform transform, DecorComponent[] components) { }
 
 }

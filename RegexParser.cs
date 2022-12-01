@@ -1,25 +1,25 @@
 internal sealed class RegexParser // TypeDefIndex: 2627
 {
-	internal RegexNode _stack; 
-	internal RegexNode _group; 
-	internal RegexNode _alternation; 
-	internal RegexNode _concatenation; 
-	internal RegexNode _unit; 
-	internal string _pattern; 
-	internal int _currentPos; 
-	internal CultureInfo _culture; 
-	internal int _autocap; 
-	internal int _capcount; 
-	internal int _captop; 
-	internal int _capsize; 
-	internal Hashtable _caps; 
-	internal Hashtable _capnames; 
-	internal int[] _capnumlist; 
-	internal List<string> _capnamelist; 
-	internal RegexOptions _options; 
-	internal List<RegexOptions> _optionsStack; 
-	internal bool _ignoreNextParen; 
-	internal static readonly byte[] _category; 
+	internal RegexNode _stack;
+	internal RegexNode _group;
+	internal RegexNode _alternation;
+	internal RegexNode _concatenation;
+	internal RegexNode _unit;
+	internal string _pattern;
+	internal int _currentPos;
+	internal CultureInfo _culture;
+	internal int _autocap;
+	internal int _capcount;
+	internal int _captop;
+	internal int _capsize;
+	internal Hashtable _caps;
+	internal Hashtable _capnames;
+	internal int[] _capnumlist;
+	internal List<string> _capnamelist;
+	internal RegexOptions _options;
+	internal List<RegexOptions> _optionsStack;
+	internal bool _ignoreNextParen;
+	internal static readonly byte[] _category;
 
 
 	internal static RegexTree Parse(string re, RegexOptions op) { }

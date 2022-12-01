@@ -1,11 +1,11 @@
-public class GestureCollection : ScriptableObject // TypeDefIndex: 11831
+public class GestureCollection : ScriptableObject // TypeDefIndex: 11838
 {
-	public GestureConfig[] AllGestures; 
-	public float GestureVmInDuration; 
-	public AnimationCurve GestureInCurve; 
-	public float GestureVmOutDuration; 
-	public AnimationCurve GestureOutCurve; 
-	public float GestureViewmodelDeployDelay; 
+	public GestureConfig[] AllGestures;
+	public float GestureVmInDuration;
+	public AnimationCurve GestureInCurve;
+	public float GestureVmOutDuration;
+	public AnimationCurve GestureOutCurve;
+	public float GestureViewmodelDeployDelay;
 
 
 	public GestureConfig IdToGesture(uint id) { }

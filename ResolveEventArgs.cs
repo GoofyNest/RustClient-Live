@@ -1,7 +1,7 @@
 public class ResolveEventArgs : EventArgs // TypeDefIndex: 386
 {
-	private string m_Name; 
-	private Assembly m_Requesting; 
+	private string m_Name;
+	private Assembly m_Requesting;
 
 
 	public void .ctor(string name) { }

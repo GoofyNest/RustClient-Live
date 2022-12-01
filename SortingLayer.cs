@@ -1,18 +1,18 @@
 public struct SortingLayer // TypeDefIndex: 3350
 {
-	private int m_Id; 
+	private int m_Id;
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static int GetLayerValueFromID(int id) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static int NameToID(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string IDToName(int id) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool IsValid(int id) { }
 
 }

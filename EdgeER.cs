@@ -1,9 +1,9 @@
-public class EdgeER // TypeDefIndex: 6911
+public class EdgeER // TypeDefIndex: 6913
 {
 
 public class EdgeER
-	public PointER StartPoint; 
-	public PointER EndPoint; 
+	public PointER StartPoint;
+	public PointER EndPoint;
 
 
 	public void .ctor(PointER startPoint, PointER endPoint) { }

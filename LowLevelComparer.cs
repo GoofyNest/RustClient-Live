@@ -1,6 +1,6 @@
 internal sealed class LowLevelComparer : IComparer // TypeDefIndex: 1374
 {
-	internal static readonly LowLevelComparer Default; 
+	internal static readonly LowLevelComparer Default;
 
 
 	private void .ctor() { }

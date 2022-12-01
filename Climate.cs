@@ -1,52 +1,52 @@
-public class Climate : SingletonComponent<Climate> // TypeDefIndex: 11565
+public class Climate : SingletonComponent<Climate> // TypeDefIndex: 11572
 {
 	private const float fadeAngle = 20;
 	private const float defaultTemp = 15;
 	private const int weatherDurationHours = 18;
 	private const int weatherFadeHours = 6;
-	[RangeAttribute] 
-	public float BlendingSpeed; 
-	[RangeAttribute] 
-	public float FogMultiplier; 
-	public float FogDarknessDistance; 
-	public bool DebugLUTBlending; 
-	public Climate.WeatherParameters Weather; 
-	public WeatherPreset[] WeatherPresets; 
-	public Climate.ClimateParameters Arid; 
-	public Climate.ClimateParameters Temperate; 
-	public Climate.ClimateParameters Tundra; 
-	public Climate.ClimateParameters Arctic; 
-	[CompilerGeneratedAttribute] 
-	private float <WeatherStateBlend>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <WeatherSeedPrevious>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <WeatherSeedTarget>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <WeatherSeedNext>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherStatePrevious>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherStateTarget>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherStateNext>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherState>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherClampsMin>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherClampsMax>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WeatherPreset <WeatherOverrides>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LegacyWeatherState <Overrides>k__BackingField; 
-	private Camera cam; 
-	private TOD_Scattering scattering; 
-	private WindZone windZone; 
-	private Climate.ClimateParameters currentClimate; 
-	private Climate.ClimateParameters prevClimate; 
-	private Dictionary<WeatherPresetType, WeatherPreset[]> presetLookup; 
-	private Climate.ClimateParameters[] climateLookup; 
+	[RangeAttribute]
+	public float BlendingSpeed;
+	[RangeAttribute]
+	public float FogMultiplier;
+	public float FogDarknessDistance;
+	public bool DebugLUTBlending;
+	public Climate.WeatherParameters Weather;
+	public WeatherPreset[] WeatherPresets;
+	public Climate.ClimateParameters Arid;
+	public Climate.ClimateParameters Temperate;
+	public Climate.ClimateParameters Tundra;
+	public Climate.ClimateParameters Arctic;
+	[CompilerGeneratedAttribute]
+	private float <WeatherStateBlend>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <WeatherSeedPrevious>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <WeatherSeedTarget>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <WeatherSeedNext>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherStatePrevious>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherStateTarget>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherStateNext>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherState>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherClampsMin>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherClampsMax>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WeatherPreset <WeatherOverrides>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LegacyWeatherState <Overrides>k__BackingField;
+	private Camera cam;
+	private TOD_Scattering scattering;
+	private WindZone windZone;
+	private Climate.ClimateParameters currentClimate;
+	private Climate.ClimateParameters prevClimate;
+	private Dictionary<WeatherPresetType, WeatherPreset[]> presetLookup;
+	private Climate.ClimateParameters[] climateLookup;
 
 	public float WeatherStateBlend { get; set; }
 	public uint WeatherSeedPrevious { get; set; }
@@ -62,76 +62,76 @@ public class Climate : SingletonComponent<Climate> // TypeDefIndex: 11565
 	public LegacyWeatherState Overrides { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_WeatherStateBlend() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherStateBlend(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_WeatherSeedPrevious() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherSeedPrevious(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_WeatherSeedTarget() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherSeedTarget(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_WeatherSeedNext() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherSeedNext(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherStatePrevious() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherStatePrevious(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherStateTarget() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherStateTarget(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherStateNext() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherStateNext(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherState(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherClampsMin() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherClampsMin(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherClampsMax() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherClampsMax(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WeatherPreset get_WeatherOverrides() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WeatherOverrides(WeatherPreset value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LegacyWeatherState get_Overrides() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Overrides(LegacyWeatherState value) { }
 
 	protected override void Awake() { }
@@ -176,47 +176,47 @@ public class Climate : SingletonComponent<Climate> // TypeDefIndex: 11565
 
 }
 
-public class Climate.ClimateParameters // TypeDefIndex: 11566
+public class Climate.ClimateParameters // TypeDefIndex: 11573
 {
-	public AnimationCurve Temperature; 
-	[HorizontalAttribute] 
-	public Climate.Float4 AerialDensity; 
-	[HorizontalAttribute] 
-	public Climate.Float4 FogDensity; 
-	[HorizontalAttribute] 
-	public Climate.Texture2D4 LUT; 
+	public AnimationCurve Temperature;
+	[HorizontalAttribute]
+	public Climate.Float4 AerialDensity;
+	[HorizontalAttribute]
+	public Climate.Float4 FogDensity;
+	[HorizontalAttribute]
+	public Climate.Texture2D4 LUT;
 
 
 	public void .ctor() { }
 
 }
 
-public class Climate.WeatherParameters // TypeDefIndex: 11567
+public class Climate.WeatherParameters // TypeDefIndex: 11574
 {
-	[RangeAttribute] 
-	public float ClearChance; 
-	[RangeAttribute] 
-	public float DustChance; 
-	[RangeAttribute] 
-	public float FogChance; 
-	[RangeAttribute] 
-	public float OvercastChance; 
-	[RangeAttribute] 
-	public float StormChance; 
-	[RangeAttribute] 
-	public float RainChance; 
+	[RangeAttribute]
+	public float ClearChance;
+	[RangeAttribute]
+	public float DustChance;
+	[RangeAttribute]
+	public float FogChance;
+	[RangeAttribute]
+	public float OvercastChance;
+	[RangeAttribute]
+	public float StormChance;
+	[RangeAttribute]
+	public float RainChance;
 
 
 	public void .ctor() { }
 
 }
 
-public class Climate.Value4<T> // TypeDefIndex: 11568
+public class Climate.Value4<T> // TypeDefIndex: 11575
 {
-	public T Dawn; 
-	public T Noon; 
-	public T Dusk; 
-	public T Night; 
+	public T Dawn;
+	public T Noon;
+	public T Dusk;
+	public T Night;
 
 
 	public float FindBlendParameters(TOD_Sky sky, out T src, out T dst) { }
@@ -240,30 +240,30 @@ public class Climate.Value4<T> // TypeDefIndex: 11568
 
 }
 
-public class Climate.Float4 : Climate.Value4<float> // TypeDefIndex: 11569
+public class Climate.Float4 : Climate.Value4<float> // TypeDefIndex: 11576
 {
 
 	public void .ctor() { }
 
 }
 
-public class Climate.Color4 : Climate.Value4<Color> // TypeDefIndex: 11570
+public class Climate.Color4 : Climate.Value4<Color> // TypeDefIndex: 11577
 {
 
 	public void .ctor() { }
 
 }
 
-public class Climate.Texture2D4 : Climate.Value4<Texture2D> // TypeDefIndex: 11571
+public class Climate.Texture2D4 : Climate.Value4<Texture2D> // TypeDefIndex: 11578
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class Climate.<>c__DisplayClass87_0 // TypeDefIndex: 11572
+private sealed class Climate.<>c__DisplayClass87_0 // TypeDefIndex: 11579
 {
-	public WeatherPresetType type; 
+	public WeatherPresetType type;
 
 
 	public void .ctor() { }

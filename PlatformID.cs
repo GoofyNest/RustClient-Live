@@ -1,6 +1,6 @@
 public enum PlatformID // TypeDefIndex: 385
 {
-	public int value__; 
+	public int value__;
 	public const PlatformID Win32S = 0;
 	public const PlatformID Win32Windows = 1;
 	public const PlatformID Win32NT = 2;

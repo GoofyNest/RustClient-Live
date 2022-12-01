@@ -1,14 +1,14 @@
-public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6432
+public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6434
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float steerInput; 
-	public float driveWheelVel; 
-	public float throttleInput; 
-	public float brakeInput; 
-	public uint storageID; 
-	public uint fuelStorageID; 
-	public float fuelFraction; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float steerInput;
+	public float driveWheelVel;
+	public float throttleInput;
+	public float brakeInput;
+	public uint storageID;
+	public uint fuelStorageID;
+	public float fuelFraction;
 
 
 	public static void ResetToPool(Snowmobile instance) { }
@@ -65,99 +65,99 @@ public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 643
 
 }
 
-public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<Snowmobile>, IPrefabPreProcess // TypeDefIndex: 10169
+public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<Snowmobile>, IPrefabPreProcess // TypeDefIndex: 10171
 {
-	private Option __menuOption_Menu_FuelStorage; 
-	private Option __menuOption_Menu_ItemStorage; 
-	private Option __menuOption_Menu_Push; 
-	public TimeSince timeSinceLastUpdate; 
-	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadFLData; 
-	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadFRData; 
-	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadRLData; 
-	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadRRData; 
-	public VehicleChassisVisuals.ClientWheelData<Snowmobile> skiLData; 
-	public VehicleChassisVisuals.ClientWheelData<Snowmobile> skiRData; 
-	private float clientSteerInput; 
-	private float clientDriveWheelVelocity; 
-	private float clientDriveWheelSlip; 
-	private bool wasBraking; 
-	private Vector3 leanVector; 
-	private Vector3[] recentVels; 
-	private int recentVelsIndex; 
-	private TimeSince timeSinceFailedStartAttempt; 
+	private Option __menuOption_Menu_FuelStorage;
+	private Option __menuOption_Menu_ItemStorage;
+	private Option __menuOption_Menu_Push;
+	public TimeSince timeSinceLastUpdate;
+	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadFLData;
+	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadFRData;
+	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadRLData;
+	public VehicleChassisVisuals.ClientWheelData<Snowmobile> treadRRData;
+	public VehicleChassisVisuals.ClientWheelData<Snowmobile> skiLData;
+	public VehicleChassisVisuals.ClientWheelData<Snowmobile> skiRData;
+	private float clientSteerInput;
+	private float clientDriveWheelVelocity;
+	private float clientDriveWheelSlip;
+	private bool wasBraking;
+	private Vector3 leanVector;
+	private Vector3[] recentVels;
+	private int recentVelsIndex;
+	private TimeSince timeSinceFailedStartAttempt;
 	private const float FAILED_START_MIN_TIME = 1;
-	[HeaderAttribute] 
-	[SerializeField] 
-	private Transform centreOfMassTransform; 
-	[SerializeField] 
-	private GameObjectRef itemStoragePrefab; 
-	[SerializeField] 
-	private VisualCarWheel wheelSkiFL; 
-	[SerializeField] 
-	private VisualCarWheel wheelSkiFR; 
-	[SerializeField] 
-	private VisualCarWheel wheelTreadFL; 
-	[SerializeField] 
-	private VisualCarWheel wheelTreadFR; 
-	[SerializeField] 
-	private VisualCarWheel wheelTreadRL; 
-	[SerializeField] 
-	private VisualCarWheel wheelTreadRR; 
-	[SerializeField] 
-	private CarSettings carSettings; 
-	[SerializeField] 
-	private int engineKW; 
-	[SerializeField] 
-	private float idleFuelPerSec; 
-	[SerializeField] 
-	private float maxFuelPerSec; 
-	[SerializeField] 
-	private float airControlStability; 
-	[SerializeField] 
-	private float airControlPower; 
-	[SerializeField] 
-	private float badTerrainDrag; 
-	[SerializeField] 
-	private ProtectionProperties riderProtection; 
-	[SerializeField] 
-	private float hurtTriggerMinSpeed; 
-	[SerializeField] 
-	private TriggerHurtNotChild hurtTriggerFront; 
-	[SerializeField] 
-	private TriggerHurtNotChild hurtTriggerRear; 
-	[HeaderAttribute] 
-	public float minGroundFXSpeed; 
-	[SerializeField] 
-	private SnowmobileChassisVisuals chassisVisuals; 
-	[SerializeField] 
-	private VehicleLight[] lights; 
-	[SerializeField] 
-	private Transform steeringLeftIK; 
-	[SerializeField] 
-	private Transform steeringRightIK; 
-	[SerializeField] 
-	private Transform leftFootIK; 
-	[SerializeField] 
-	private Transform rightFootIK; 
-	[SerializeField] 
-	private Transform starterKey; 
-	[SerializeField] 
-	private Vector3 engineOffKeyRot; 
-	[SerializeField] 
-	private Vector3 engineOnKeyRot; 
-	[ServerVar] 
-	public static float outsideDecayMinutes; 
-	[ServerVar] 
-	public static bool allowPassengerOnly; 
-	[ServerVar] 
-	public static bool allTerrain; 
-	private float _throttle; 
-	private float _brake; 
-	private float _steer; 
-	private float _mass; 
+	[HeaderAttribute]
+	[SerializeField]
+	private Transform centreOfMassTransform;
+	[SerializeField]
+	private GameObjectRef itemStoragePrefab;
+	[SerializeField]
+	private VisualCarWheel wheelSkiFL;
+	[SerializeField]
+	private VisualCarWheel wheelSkiFR;
+	[SerializeField]
+	private VisualCarWheel wheelTreadFL;
+	[SerializeField]
+	private VisualCarWheel wheelTreadFR;
+	[SerializeField]
+	private VisualCarWheel wheelTreadRL;
+	[SerializeField]
+	private VisualCarWheel wheelTreadRR;
+	[SerializeField]
+	private CarSettings carSettings;
+	[SerializeField]
+	private int engineKW;
+	[SerializeField]
+	private float idleFuelPerSec;
+	[SerializeField]
+	private float maxFuelPerSec;
+	[SerializeField]
+	private float airControlStability;
+	[SerializeField]
+	private float airControlPower;
+	[SerializeField]
+	private float badTerrainDrag;
+	[SerializeField]
+	private ProtectionProperties riderProtection;
+	[SerializeField]
+	private float hurtTriggerMinSpeed;
+	[SerializeField]
+	private TriggerHurtNotChild hurtTriggerFront;
+	[SerializeField]
+	private TriggerHurtNotChild hurtTriggerRear;
+	[HeaderAttribute]
+	public float minGroundFXSpeed;
+	[SerializeField]
+	private SnowmobileChassisVisuals chassisVisuals;
+	[SerializeField]
+	private VehicleLight[] lights;
+	[SerializeField]
+	private Transform steeringLeftIK;
+	[SerializeField]
+	private Transform steeringRightIK;
+	[SerializeField]
+	private Transform leftFootIK;
+	[SerializeField]
+	private Transform rightFootIK;
+	[SerializeField]
+	private Transform starterKey;
+	[SerializeField]
+	private Vector3 engineOffKeyRot;
+	[SerializeField]
+	private Vector3 engineOnKeyRot;
+	[ServerVar]
+	public static float outsideDecayMinutes;
+	[ServerVar]
+	public static bool allowPassengerOnly;
+	[ServerVar]
+	public static bool allTerrain;
+	private float _throttle;
+	private float _brake;
+	private float _steer;
+	private float _mass;
 	public const BaseEntity.Flags Flag_Slowmode = 65536;
-	private EntityRef<StorageContainer> itemStorageInstance; 
-	private float cachedFuelFraction; 
+	private EntityRef<StorageContainer> itemStorageInstance;
+	private float cachedFuelFraction;
 	private const float FORCE_MULTIPLIER = 10;
 
 	public override bool HasMenuOptions { get; }
@@ -195,32 +195,32 @@ public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<
 
 	protected override void OnClientTickStopped() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_FuelStorage(BasePlayer player) { }
 
 	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_ItemStorage(BasePlayer player) { }
 
 	public bool Menu_ItemStorage_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Push(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void SnowmobileUpdate(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void EngineStartFailed(BaseEntity.RPCMessage msg) { }
 
 	public float get_ThrottleInput() { }

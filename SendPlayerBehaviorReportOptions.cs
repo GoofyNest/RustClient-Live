@@ -1,15 +1,15 @@
-public struct SendPlayerBehaviorReportOptions // TypeDefIndex: 8638
+public struct SendPlayerBehaviorReportOptions // TypeDefIndex: 8640
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ReporterUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ReportedUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PlayerReportsCategory <Category>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Message>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Context>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ReporterUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ReportedUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PlayerReportsCategory <Category>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Message>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Context>k__BackingField;
 
 	public ProductUserId ReporterUserId { get; set; }
 	public ProductUserId ReportedUserId { get; set; }
@@ -18,34 +18,34 @@ public struct SendPlayerBehaviorReportOptions // TypeDefIndex: 8638
 	public Utf8String Context { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ReporterUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReporterUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ReportedUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReportedUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PlayerReportsCategory get_Category() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Category(PlayerReportsCategory value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Message() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Message(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Context() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Context(Utf8String value) { }
 
 }

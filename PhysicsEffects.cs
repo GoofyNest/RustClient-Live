@@ -1,14 +1,14 @@
-public class PhysicsEffects : MonoBehaviour // TypeDefIndex: 11092
+public class PhysicsEffects : MonoBehaviour // TypeDefIndex: 11098
 {
-	public BaseEntity entity; 
-	public SoundDefinition physImpactSoundDef; 
-	public float minTimeBetweenEffects; 
-	public float minDistBetweenEffects; 
-	public float hardnessScale; 
-	public float lowMedThreshold; 
-	public float medHardThreshold; 
-	public float enableDelay; 
-	public LayerMask ignoreLayers; 
+	public BaseEntity entity;
+	public SoundDefinition physImpactSoundDef;
+	public float minTimeBetweenEffects;
+	public float minDistBetweenEffects;
+	public float hardnessScale;
+	public float lowMedThreshold;
+	public float medHardThreshold;
+	public float enableDelay;
+	public LayerMask ignoreLayers;
 
 
 	public void PlayImpactSound(float hardness) { }

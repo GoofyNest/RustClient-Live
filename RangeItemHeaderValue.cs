@@ -1,9 +1,9 @@
-public class RangeItemHeaderValue : ICloneable // TypeDefIndex: 5812
+public class RangeItemHeaderValue : ICloneable // TypeDefIndex: 5814
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<long> <From>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<long> <To>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<long> <From>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<long> <To>k__BackingField;
 
 	public Nullable<long> From { get; set; }
 	public Nullable<long> To { get; set; }
@@ -11,16 +11,16 @@ public class RangeItemHeaderValue : ICloneable // TypeDefIndex: 5812
 
 	public void .ctor(Nullable<long> from, Nullable<long> to) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<long> get_From() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_From(Nullable<long> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<long> get_To() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_To(Nullable<long> value) { }
 
 	private object System.ICloneable.Clone() { }

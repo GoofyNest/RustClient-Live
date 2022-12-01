@@ -1,4 +1,4 @@
-public sealed class IntegratedPlatformOptionsContainer : Handle // TypeDefIndex: 9372
+public sealed class IntegratedPlatformOptionsContainer : Handle // TypeDefIndex: 9374
 {
 	public const int IntegratedplatformoptionscontainerAddApiLatest = 1;
 

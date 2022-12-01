@@ -1,6 +1,6 @@
 public class EventArgs // TypeDefIndex: 215
 {
-	public static readonly EventArgs Empty; 
+	public static readonly EventArgs Empty;
 
 
 	public void .ctor() { }
@@ -62,7 +62,7 @@ public sealed class EventHandler<TEventArgs> : MulticastDelegate // TypeDefIndex
 
 public enum EventAttributes // TypeDefIndex: 524
 {
-	public int value__; 
+	public int value__;
 	public const EventAttributes None = 0;
 	public const EventAttributes SpecialName = 512;
 	public const EventAttributes ReservedMask = 1024;
@@ -72,7 +72,7 @@ public enum EventAttributes // TypeDefIndex: 524
 
 public abstract class EventInfo : MemberInfo, _EventInfo // TypeDefIndex: 565
 {
-	private EventInfo.AddEventAdapter cached_add_event; 
+	private EventInfo.AddEventAdapter cached_add_event;
 
 	public virtual Type EventHandlerType { get; }
 	public override MemberTypes MemberType { get; }
@@ -119,7 +119,7 @@ private sealed class EventInfo.AddEventAdapter : MulticastDelegate // TypeDefInd
 
 public enum EventResetMode // TypeDefIndex: 778
 {
-	public int value__; 
+	public int value__;
 	public const EventResetMode AutoReset = 0;
 	public const EventResetMode ManualReset = 1;
 
@@ -140,39 +140,39 @@ public class EventWaitHandle : WaitHandle // TypeDefIndex: 779
 
 public enum EventFieldTags // TypeDefIndex: 1516
 {
-	public int value__; 
+	public int value__;
 	public const EventFieldTags None = 0;
 
 }
 
 public class EventFieldAttribute : Attribute // TypeDefIndex: 1517
 {
-	[CompilerGeneratedAttribute] 
-	private EventFieldTags <Tags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventFieldFormat <Format>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EventFieldTags <Tags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventFieldFormat <Format>k__BackingField;
 
 	public EventFieldTags Tags { get; }
 	internal string Name { get; }
 	public EventFieldFormat Format { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventFieldTags get_Tags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventFieldFormat get_Format() { }
 
 }
 
 public enum EventFieldFormat // TypeDefIndex: 1518
 {
-	public int value__; 
+	public int value__;
 	public const EventFieldFormat Default = 0;
 	public const EventFieldFormat String = 2;
 	public const EventFieldFormat Boolean = 3;
@@ -186,10 +186,10 @@ public enum EventFieldFormat // TypeDefIndex: 1518
 internal class EventPayload : IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>>, IEnumerable // TypeDefIndex: 1520
 {
 
-[DefaultMemberAttribute] 
+[DefaultMemberAttribute]
 internal class EventPayload : IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>>, IEnumerable
-	private List<string> m_names; 
-	private List<object> m_values; 
+	private List<string> m_names;
+	private List<object> m_values;
 
 	public ICollection<string> Keys { get; }
 	public ICollection<object> Values { get; }
@@ -222,7 +222,7 @@ internal class EventPayload : IDictionary<string, object>, ICollection<KeyValueP
 
 	public bool get_IsReadOnly() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator<KeyValuePair<string, object>> GetEnumerator() { }
 
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
@@ -239,42 +239,42 @@ internal class EventPayload : IDictionary<string, object>, ICollection<KeyValueP
 
 private sealed class EventPayload.<GetEnumerator>d__17 : IEnumerator<KeyValuePair<string, object>>, IDisposable, IEnumerator // TypeDefIndex: 1521
 {
-	private int <>1__state; 
-	private KeyValuePair<string, object> <>2__current; 
-	public EventPayload <>4__this; 
-	private int <i>5__1; 
+	private int <>1__state;
+	private KeyValuePair<string, object> <>2__current;
+	public EventPayload <>4__this;
+	private int <i>5__1;
 
 	private KeyValuePair<string, object> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private KeyValuePair<string, object> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
 public struct EventSourceOptions // TypeDefIndex: 1522
 {
-	internal EventKeywords keywords; 
-	internal EventTags tags; 
-	internal EventActivityOptions activityOptions; 
-	internal byte level; 
-	internal byte opcode; 
-	internal byte valuesSet; 
+	internal EventKeywords keywords;
+	internal EventTags tags;
+	internal EventActivityOptions activityOptions;
+	internal byte level;
+	internal byte opcode;
+	internal byte valuesSet;
 
 	public EventLevel Level { set; }
 	public EventOpcode Opcode { set; }
@@ -291,36 +291,36 @@ public struct EventSourceOptions // TypeDefIndex: 1522
 
 public class EventSource : IDisposable // TypeDefIndex: 1580
 {
-	private byte[] providerMetadata; 
-	private string m_name; 
-	internal int m_id; 
-	private Guid m_guid; 
-	internal EventSource.EventMetadata[] m_eventData; 
-	private byte[] m_rawManifest; 
-	private EventHandler<EventCommandEventArgs> m_eventCommandExecuted; 
-	private EventSourceSettings m_config; 
-	private bool m_eventSourceEnabled; 
-	internal EventLevel m_level; 
-	internal EventKeywords m_matchAnyKeyword; 
-	internal EventDispatcher m_Dispatchers; 
-	private EventSource.OverideEventProvider m_provider; 
-	private bool m_completelyInited; 
-	private Exception m_constructionException; 
-	private byte m_outOfBandMessageCount; 
-	private EventCommandEventArgs m_deferredCommands; 
-	private string[] m_traits; 
-	internal static uint s_currentPid; 
-	[ThreadStaticAttribute] 
-	private static byte m_EventSourceExceptionRecurenceCount; 
-	private SessionMask m_curLiveSessions; 
-	private EtwSession[] m_etwSessionIdMap; 
-	private List<EtwSession> m_legacySessions; 
-	internal long m_keywordTriggers; 
-	internal SessionMask m_activityFilteringForETWEnabled; 
-	internal static Action<Guid> s_activityDying; 
-	private ActivityTracker m_activityTracker; 
-	private static readonly byte[] namespaceBytes; 
-	private static readonly Guid AspNetEventSourceGuid; 
+	private byte[] providerMetadata;
+	private string m_name;
+	internal int m_id;
+	private Guid m_guid;
+	internal EventSource.EventMetadata[] m_eventData;
+	private byte[] m_rawManifest;
+	private EventHandler<EventCommandEventArgs> m_eventCommandExecuted;
+	private EventSourceSettings m_config;
+	private bool m_eventSourceEnabled;
+	internal EventLevel m_level;
+	internal EventKeywords m_matchAnyKeyword;
+	internal EventDispatcher m_Dispatchers;
+	private EventSource.OverideEventProvider m_provider;
+	private bool m_completelyInited;
+	private Exception m_constructionException;
+	private byte m_outOfBandMessageCount;
+	private EventCommandEventArgs m_deferredCommands;
+	private string[] m_traits;
+	internal static uint s_currentPid;
+	[ThreadStaticAttribute]
+	private static byte m_EventSourceExceptionRecurenceCount;
+	private SessionMask m_curLiveSessions;
+	private EtwSession[] m_etwSessionIdMap;
+	private List<EtwSession> m_legacySessions;
+	internal long m_keywordTriggers;
+	internal SessionMask m_activityFilteringForETWEnabled;
+	internal static Action<Guid> s_activityDying;
+	private ActivityTracker m_activityTracker;
+	private static readonly byte[] namespaceBytes;
+	private static readonly Guid AspNetEventSourceGuid;
 
 	public string Name { get; }
 	public Guid Guid { get; }
@@ -338,8 +338,8 @@ public class EventSource : IDisposable // TypeDefIndex: 1580
 
 	internal void WriteMultiMerge(string eventName, ref EventSourceOptions options, TraceLoggingEventTypes eventTypes, Guid* activityID, Guid* childActivityID, EventSource.EventData* data) { }
 
-	[NonEventAttribute] 
-	[ReliabilityContractAttribute] 
+	[NonEventAttribute]
+	[ReliabilityContractAttribute]
 	private void WriteCleanup(GCHandle* pPins, int cPins) { }
 
 	private void InitializeProviderMetadata() { }
@@ -396,10 +396,10 @@ public class EventSource : IDisposable // TypeDefIndex: 1580
 
 	protected void WriteEvent(int eventId, long arg1, string arg2) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	protected void WriteEventCore(int eventId, int eventDataCount, EventSource.EventData* data) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	protected void WriteEventWithRelatedActivityIdCore(int eventId, Guid* relatedActivityId, int eventDataCount, EventSource.EventData* data) { }
 
 	protected void WriteEvent(int eventId, object[] args) { }
@@ -512,9 +512,9 @@ public class EventSource : IDisposable // TypeDefIndex: 1580
 
 private struct EventSource.Sha1ForNonSecretPurposes // TypeDefIndex: 1582
 {
-	private long length; 
-	private uint[] w; 
-	private int pos; 
+	private long length;
+	private uint[] w;
+	private int pos;
 
 
 	public void Start() { }
@@ -537,7 +537,7 @@ private struct EventSource.Sha1ForNonSecretPurposes // TypeDefIndex: 1582
 
 private class EventSource.OverideEventProvider : EventProvider // TypeDefIndex: 1583
 {
-	private EventSource m_eventSource; 
+	private EventSource m_eventSource;
 
 
 	public void .ctor(EventSource eventSource) { }
@@ -548,30 +548,30 @@ private class EventSource.OverideEventProvider : EventProvider // TypeDefIndex: 
 
 internal struct EventSource.EventMetadata // TypeDefIndex: 1584
 {
-	public EventDescriptor Descriptor; 
-	public EventTags Tags; 
-	public bool EnabledForAnyListener; 
-	public bool EnabledForETW; 
-	public bool HasRelatedActivityID; 
-	public byte TriggersActivityTracking; 
-	public string Name; 
-	public string Message; 
-	public ParameterInfo[] Parameters; 
-	public TraceLoggingEventTypes TraceLoggingEventTypes; 
-	public EventActivityOptions ActivityOptions; 
+	public EventDescriptor Descriptor;
+	public EventTags Tags;
+	public bool EnabledForAnyListener;
+	public bool EnabledForETW;
+	public bool HasRelatedActivityID;
+	public byte TriggersActivityTracking;
+	public string Name;
+	public string Message;
+	public ParameterInfo[] Parameters;
+	public TraceLoggingEventTypes TraceLoggingEventTypes;
+	public EventActivityOptions ActivityOptions;
 
 }
 
 public enum EventTags // TypeDefIndex: 1585
 {
-	public int value__; 
+	public int value__;
 	public const EventTags None = 0;
 
 }
 
 public enum EventActivityOptions // TypeDefIndex: 1596
 {
-	public int value__; 
+	public int value__;
 	public const EventActivityOptions None = 0;
 	public const EventActivityOptions Disable = 2;
 	public const EventActivityOptions Recursive = 4;
@@ -581,14 +581,14 @@ public enum EventActivityOptions // TypeDefIndex: 1596
 
 internal struct EventDescriptor // TypeDefIndex: 1597
 {
-	private int m_traceloggingId; 
-	private ushort m_id; 
-	private byte m_version; 
-	private byte m_channel; 
-	private byte m_level; 
-	private byte m_opcode; 
-	private ushort m_task; 
-	private long m_keywords; 
+	private int m_traceloggingId;
+	private ushort m_id;
+	private byte m_version;
+	private byte m_channel;
+	private byte m_level;
+	private byte m_opcode;
+	private ushort m_task;
+	private long m_keywords;
 
 	public int EventId { get; }
 	public byte Version { get; }
@@ -627,20 +627,20 @@ internal struct EventDescriptor // TypeDefIndex: 1597
 
 internal class EventProvider : IDisposable // TypeDefIndex: 1599
 {
-	private static bool m_setInformationMissing; 
-	private UnsafeNativeMethods.ManifestEtw.EtwEnableCallback m_etwCallback; 
-	private GCHandle m_thisGCHandle; 
-	private long m_regHandle; 
-	private byte m_level; 
-	private long m_anyKeywordMask; 
-	private long m_allKeywordMask; 
-	private List<EventProvider.SessionInfo> m_liveSessions; 
-	private bool m_enabled; 
-	private Guid m_providerId; 
-	internal bool m_disposed; 
-	[ThreadStaticAttribute] 
-	private static EventProvider.WriteEventErrorCode s_returnCode; 
-	private static int[] nibblebits; 
+	private static bool m_setInformationMissing;
+	private UnsafeNativeMethods.ManifestEtw.EtwEnableCallback m_etwCallback;
+	private GCHandle m_thisGCHandle;
+	private long m_regHandle;
+	private byte m_level;
+	private long m_anyKeywordMask;
+	private long m_allKeywordMask;
+	private List<EventProvider.SessionInfo> m_liveSessions;
+	private bool m_enabled;
+	private Guid m_providerId;
+	internal bool m_disposed;
+	[ThreadStaticAttribute]
+	private static EventProvider.WriteEventErrorCode s_returnCode;
+	private static int[] nibblebits;
 
 	protected EventLevel Level { get; }
 	protected EventKeywords MatchAnyKeyword { get; }
@@ -660,7 +660,7 @@ internal class EventProvider : IDisposable // TypeDefIndex: 1599
 
 	private void Deregister() { }
 
-	[EventProvider.MonoPInvokeCallbackAttribute] 
+	[EventProvider.MonoPInvokeCallbackAttribute]
 	private static void EtwEnableCallBack(in Guid sourceId, [In] int controlCode, [In] byte setLevel, [In] long anyKeyword, [In] long allKeyword, [In] UnsafeNativeMethods.ManifestEtw.EVENT_FILTER_DESCRIPTOR* filterData, [In] void* callbackContext) { }
 
 	private void EtwEnableCallBackImpl([In] int controlCode, [In] byte setLevel, [In] long anyKeyword, [In] long allKeyword, [In] UnsafeNativeMethods.ManifestEtw.EVENT_FILTER_DESCRIPTOR* filterData) { }
@@ -711,16 +711,16 @@ internal class EventProvider : IDisposable // TypeDefIndex: 1599
 
 public struct EventProvider.EventData // TypeDefIndex: 1600
 {
-	internal ulong Ptr; 
-	internal uint Size; 
-	internal uint Reserved; 
+	internal ulong Ptr;
+	internal uint Size;
+	internal uint Reserved;
 
 }
 
 public struct EventProvider.SessionInfo // TypeDefIndex: 1601
 {
-	internal int sessionIdBit; 
-	internal int etwSessionId; 
+	internal int sessionIdBit;
+	internal int etwSessionId;
 
 
 	internal void .ctor(int sessionIdBit_, int etwSessionId_) { }
@@ -729,7 +729,7 @@ public struct EventProvider.SessionInfo // TypeDefIndex: 1601
 
 public enum EventProvider.WriteEventErrorCode // TypeDefIndex: 1602
 {
-	public int value__; 
+	public int value__;
 	public const EventProvider.WriteEventErrorCode NoError = 0;
 	public const EventProvider.WriteEventErrorCode NoFreeBuffers = 1;
 	public const EventProvider.WriteEventErrorCode EventTooBig = 2;
@@ -748,7 +748,7 @@ private sealed class EventProvider.MonoPInvokeCallbackAttribute : Attribute // T
 
 private sealed class EventProvider.<>c__DisplayClass44_0 // TypeDefIndex: 1604
 {
-	public List<EventProvider.SessionInfo> liveSessionList; 
+	public List<EventProvider.SessionInfo> liveSessionList;
 
 
 	public void .ctor() { }
@@ -759,7 +759,7 @@ private sealed class EventProvider.<>c__DisplayClass44_0 // TypeDefIndex: 1604
 
 public enum EventSourceSettings // TypeDefIndex: 1605
 {
-	public int value__; 
+	public int value__;
 	public const EventSourceSettings Default = 0;
 	public const EventSourceSettings ThrowOnEventWriteErrors = 1;
 	public const EventSourceSettings EtwManifestEventFormat = 4;
@@ -769,17 +769,17 @@ public enum EventSourceSettings // TypeDefIndex: 1605
 
 public class EventListener // TypeDefIndex: 1606
 {
-	private static readonly object s_EventSourceCreatedLock; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler<EventSourceCreatedEventArgs> _EventSourceCreated; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler<EventWrittenEventArgs> EventWritten; 
-	internal EventListener m_Next; 
-	internal ActivityFilter m_activityFilter; 
-	internal static EventListener s_Listeners; 
-	internal static List<WeakReference> s_EventSources; 
-	private static bool s_CreatingListener; 
-	private static bool s_EventSourceShutdownRegistered; 
+	private static readonly object s_EventSourceCreatedLock;
+	[CompilerGeneratedAttribute]
+	private EventHandler<EventSourceCreatedEventArgs> _EventSourceCreated;
+	[CompilerGeneratedAttribute]
+	private EventHandler<EventWrittenEventArgs> EventWritten;
+	internal EventListener m_Next;
+	internal ActivityFilter m_activityFilter;
+	internal static EventListener s_Listeners;
+	internal static List<WeakReference> s_EventSources;
+	private static bool s_CreatingListener;
+	private static bool s_EventSourceShutdownRegistered;
 
 	internal static object EventListenersLock { get; }
 
@@ -800,34 +800,34 @@ public class EventListener // TypeDefIndex: 1606
 
 public class EventCommandEventArgs : EventArgs // TypeDefIndex: 1607
 {
-	[CompilerGeneratedAttribute] 
-	private EventCommand <Command>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IDictionary<string, string> <Arguments>k__BackingField; 
-	internal EventSource eventSource; 
-	internal EventDispatcher dispatcher; 
-	internal EventListener listener; 
-	internal int perEventSourceSessionId; 
-	internal int etwSessionId; 
-	internal bool enable; 
-	internal EventLevel level; 
-	internal EventKeywords matchAnyKeyword; 
-	internal EventCommandEventArgs nextCommand; 
+	[CompilerGeneratedAttribute]
+	private EventCommand <Command>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IDictionary<string, string> <Arguments>k__BackingField;
+	internal EventSource eventSource;
+	internal EventDispatcher dispatcher;
+	internal EventListener listener;
+	internal int perEventSourceSessionId;
+	internal int etwSessionId;
+	internal bool enable;
+	internal EventLevel level;
+	internal EventKeywords matchAnyKeyword;
+	internal EventCommandEventArgs nextCommand;
 
 	public EventCommand Command { get; set; }
 	public IDictionary<string, string> Arguments { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventCommand get_Command() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Command(EventCommand value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IDictionary<string, string> get_Arguments() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Arguments(IDictionary<string, string> value) { }
 
 	internal void .ctor(EventCommand command, IDictionary<string, string> arguments, EventSource eventSource, EventListener listener, int perEventSourceSessionId, int etwSessionId, bool enable, EventLevel level, EventKeywords matchAnyKeyword) { }
@@ -836,13 +836,13 @@ public class EventCommandEventArgs : EventArgs // TypeDefIndex: 1607
 
 public class EventSourceCreatedEventArgs : EventArgs // TypeDefIndex: 1608
 {
-	[CompilerGeneratedAttribute] 
-	private EventSource <EventSource>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EventSource <EventSource>k__BackingField;
 
 	internal EventSource EventSource { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_EventSource(EventSource value) { }
 
 	public void .ctor() { }
@@ -851,16 +851,16 @@ public class EventSourceCreatedEventArgs : EventArgs // TypeDefIndex: 1608
 
 public class EventWrittenEventArgs : EventArgs // TypeDefIndex: 1609
 {
-	[CompilerGeneratedAttribute] 
-	private int <EventId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Guid <RelatedActivityId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ReadOnlyCollection<object> <Payload>k__BackingField; 
-	private string m_message; 
-	private string m_eventName; 
-	private EventSource m_eventSource; 
-	private ReadOnlyCollection<string> m_payloadNames; 
+	[CompilerGeneratedAttribute]
+	private int <EventId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Guid <RelatedActivityId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ReadOnlyCollection<object> <Payload>k__BackingField;
+	private string m_message;
+	private string m_eventName;
+	private EventSource m_eventSource;
+	private ReadOnlyCollection<string> m_payloadNames;
 
 	internal string EventName { set; }
 	internal int EventId { set; }
@@ -872,13 +872,13 @@ public class EventWrittenEventArgs : EventArgs // TypeDefIndex: 1609
 
 	internal void set_EventName(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_EventId(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_RelatedActivityId(Guid value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Payload(ReadOnlyCollection<object> value) { }
 
 	internal void set_PayloadNames(ReadOnlyCollection<string> value) { }
@@ -891,31 +891,31 @@ public class EventWrittenEventArgs : EventArgs // TypeDefIndex: 1609
 
 public sealed class EventSourceAttribute : Attribute // TypeDefIndex: 1610
 {
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Guid>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <LocalizationResources>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Guid>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <LocalizationResources>k__BackingField;
 
 	public string Name { get; set; }
 	public string Guid { get; set; }
 	public string LocalizationResources { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Name(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Guid() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Guid(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_LocalizationResources() { }
 
 	public void .ctor() { }
@@ -924,24 +924,24 @@ public sealed class EventSourceAttribute : Attribute // TypeDefIndex: 1610
 
 public sealed class EventAttribute : Attribute // TypeDefIndex: 1611
 {
-	[CompilerGeneratedAttribute] 
-	private int <EventId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventLevel <Level>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventKeywords <Keywords>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventTask <Task>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <Version>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Message>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventTags <Tags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventActivityOptions <ActivityOptions>k__BackingField; 
-	private EventOpcode m_opcode; 
-	private bool m_opcodeSet; 
+	[CompilerGeneratedAttribute]
+	private int <EventId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventLevel <Level>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventKeywords <Keywords>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventTask <Task>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <Version>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Message>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventTags <Tags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventActivityOptions <ActivityOptions>k__BackingField;
+	private EventOpcode m_opcode;
+	private bool m_opcodeSet;
 
 	public int EventId { get; set; }
 	public EventLevel Level { get; set; }
@@ -957,19 +957,19 @@ public sealed class EventAttribute : Attribute // TypeDefIndex: 1611
 
 	public void .ctor(int eventId) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_EventId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_EventId(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventLevel get_Level() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Level(EventLevel value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventKeywords get_Keywords() { }
 
 	public EventOpcode get_Opcode() { }
@@ -978,35 +978,35 @@ public sealed class EventAttribute : Attribute // TypeDefIndex: 1611
 
 	internal bool get_IsOpcodeSet() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventTask get_Task() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Task(EventTask value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Version() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Message() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Message(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventTags get_Tags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventActivityOptions get_ActivityOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ActivityOptions(EventActivityOptions value) { }
 
 }
 
 public enum EventCommand // TypeDefIndex: 1613
 {
-	public int value__; 
+	public int value__;
 	public const EventCommand Update = 0;
 	public const EventCommand SendManifest = -1;
 	public const EventCommand Enable = -2;
@@ -1016,10 +1016,10 @@ public enum EventCommand // TypeDefIndex: 1613
 
 internal class EventDispatcher // TypeDefIndex: 1622
 {
-	internal readonly EventListener m_Listener; 
-	internal bool[] m_EventEnabled; 
-	internal bool m_activityFilteringEnabled; 
-	internal EventDispatcher m_Next; 
+	internal readonly EventListener m_Listener;
+	internal bool[] m_EventEnabled;
+	internal bool m_activityFilteringEnabled;
+	internal EventDispatcher m_Next;
 
 
 	internal void .ctor(EventDispatcher next, bool[] eventEnabled, EventListener listener) { }
@@ -1028,7 +1028,7 @@ internal class EventDispatcher // TypeDefIndex: 1622
 
 public enum EventManifestOptions // TypeDefIndex: 1623
 {
-	public int value__; 
+	public int value__;
 	public const EventManifestOptions None = 0;
 	public const EventManifestOptions Strict = 1;
 	public const EventManifestOptions AllCultures = 2;
@@ -1052,7 +1052,7 @@ public class EventSourceException : Exception // TypeDefIndex: 1629
 
 public enum EventLevel // TypeDefIndex: 1630
 {
-	public int value__; 
+	public int value__;
 	public const EventLevel LogAlways = 0;
 	public const EventLevel Critical = 1;
 	public const EventLevel Error = 2;
@@ -1064,14 +1064,14 @@ public enum EventLevel // TypeDefIndex: 1630
 
 public enum EventTask // TypeDefIndex: 1631
 {
-	public int value__; 
+	public int value__;
 	public const EventTask None = 0;
 
 }
 
 public enum EventOpcode // TypeDefIndex: 1632
 {
-	public int value__; 
+	public int value__;
 	public const EventOpcode Info = 0;
 	public const EventOpcode Start = 1;
 	public const EventOpcode Stop = 2;
@@ -1088,7 +1088,7 @@ public enum EventOpcode // TypeDefIndex: 1632
 
 public enum EventChannel // TypeDefIndex: 1633
 {
-	public byte value__; 
+	public byte value__;
 	public const EventChannel None = 0;
 	public const EventChannel Admin = 16;
 	public const EventChannel Operational = 17;
@@ -1099,7 +1099,7 @@ public enum EventChannel // TypeDefIndex: 1633
 
 public enum EventKeywords // TypeDefIndex: 1634
 {
-	public long value__; 
+	public long value__;
 	public const EventKeywords None = 0;
 	public const EventKeywords All = -1;
 	public const EventKeywords MicrosoftTelemetry = 562949953421312;
@@ -1116,17 +1116,17 @@ public enum EventKeywords // TypeDefIndex: 1634
 public class EventDescriptorCollection : ICollection, IEnumerable, IList // TypeDefIndex: 2703
 {
 
-[DefaultMemberAttribute] 
-[ComVisibleAttribute] 
+[DefaultMemberAttribute]
+[ComVisibleAttribute]
 public class EventDescriptorCollection : ICollection, IEnumerable, IList
-	private EventDescriptor[] events; 
-	private string[] namedSort; 
-	private IComparer comparer; 
-	private bool eventsOwned; 
-	private bool needSort; 
-	private int eventCount; 
-	private bool readOnly; 
-	public static readonly EventDescriptorCollection Empty; 
+	private EventDescriptor[] events;
+	private string[] namedSort;
+	private IComparer comparer;
+	private bool eventsOwned;
+	private bool needSort;
+	private int eventCount;
+	private bool readOnly;
+	public static readonly EventDescriptorCollection Empty;
 
 	public int Count { get; }
 	public virtual EventDescriptor Item { get; }
@@ -1205,8 +1205,8 @@ public class EventDescriptorCollection : ICollection, IEnumerable, IList
 
 public sealed class EventHandlerList : IDisposable // TypeDefIndex: 2704
 {
-	private EventHandlerList.ListEntry head; 
-	private Component parent; 
+	private EventHandlerList.ListEntry head;
+	private Component parent;
 
 	public Delegate Item { get; }
 
@@ -1227,9 +1227,9 @@ public sealed class EventHandlerList : IDisposable // TypeDefIndex: 2704
 
 private sealed class EventHandlerList.ListEntry // TypeDefIndex: 2705
 {
-	internal EventHandlerList.ListEntry next; 
-	internal object key; 
-	internal Delegate handler; 
+	internal EventHandlerList.ListEntry next;
+	internal object key;
+	internal Delegate handler;
 
 
 	public void .ctor(object key, Delegate handler, EventHandlerList.ListEntry next) { }
@@ -1239,34 +1239,34 @@ private sealed class EventHandlerList.ListEntry // TypeDefIndex: 2705
 public sealed class Event // TypeDefIndex: 4030
 {
 
-[NativeHeaderAttribute] 
-[StaticAccessorAttribute] 
+[NativeHeaderAttribute]
+[StaticAccessorAttribute]
 public sealed class Event
-	internal IntPtr m_Ptr; 
-	private static Event s_Current; 
-	private static Event s_MasterEvent; 
+	internal IntPtr m_Ptr;
+	private static Event s_Current;
+	private static Event s_MasterEvent;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public EventType rawType { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Vector2 mousePosition { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Vector2 delta { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public PointerType pointerType { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int button { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public EventModifiers modifiers { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float pressure { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int clickCount { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public char character { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public KeyCode keyCode { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int displayIndex { get; set; }
 	public EventType type { get; set; }
 	public string commandName { get; set; }
@@ -1312,42 +1312,42 @@ public sealed class Event
 
 	public void set_displayIndex(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public EventType get_type() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_type(EventType value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public string get_commandName() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_commandName(string value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Internal_Use() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Internal_Create(int displayIndex) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_Destroy(IntPtr ptr) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Internal_Copy(IntPtr otherPtr) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public EventType GetTypeForControl(int controlID) { }
 
-	[FreeFunctionAttribute] 
-	[VisibleToOtherModulesAttribute] 
+	[FreeFunctionAttribute]
+	[VisibleToOtherModulesAttribute]
 	internal void CopyFromPtr(IntPtr ptr) { }
 
 	public static bool PopEvent(Event outEvent) { }
 
 	private static void Internal_SetNativeEvent(IntPtr ptr) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void Internal_MakeMasterEventCurrent(int displayIndex) { }
 
 	public void .ctor() { }
@@ -1358,7 +1358,7 @@ public sealed class Event
 
 	protected override void Finalize() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal void CopyFrom(Event e) { }
 
 	public bool get_shift() { }
@@ -1377,7 +1377,7 @@ public sealed class Event
 
 	public bool get_isMouse() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal bool get_isDirectManipulationDevice() { }
 
 	public static Event KeyboardEvent(string key) { }
@@ -1400,7 +1400,7 @@ public sealed class Event
 
 public enum EventType // TypeDefIndex: 4031
 {
-	public int value__; 
+	public int value__;
 	public const EventType MouseDown = 0;
 	public const EventType MouseUp = 1;
 	public const EventType MouseMove = 2;
@@ -1420,51 +1420,51 @@ public enum EventType // TypeDefIndex: 4031
 	public const EventType ContextClick = 16;
 	public const EventType MouseEnterWindow = 20;
 	public const EventType MouseLeaveWindow = 21;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType mouseDown = 0;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const EventType mouseUp = 1;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType mouseMove = 2;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType mouseDrag = 3;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType keyDown = 4;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const EventType keyUp = 5;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const EventType scrollWheel = 6;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType repaint = 7;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const EventType layout = 8;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const EventType dragUpdated = 9;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType dragPerform = 10;
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public const EventType ignore = 11;
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const EventType used = 12;
 
 }
 
 public enum EventModifiers // TypeDefIndex: 4032
 {
-	public int value__; 
+	public int value__;
 	public const EventModifiers None = 0;
 	public const EventModifiers Shift = 1;
 	public const EventModifiers Control = 2;
@@ -1478,21 +1478,21 @@ public enum EventModifiers // TypeDefIndex: 4032
 
 internal struct EventInterests // TypeDefIndex: 4034
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <wantsMouseMove>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <wantsMouseEnterLeaveWindow>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <wantsMouseMove>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <wantsMouseEnterLeaveWindow>k__BackingField;
 
 	public bool wantsMouseMove { get; }
 	public bool wantsMouseEnterLeaveWindow { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_wantsMouseMove() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_wantsMouseEnterLeaveWindow() { }
 
 	public bool WantsEvent(EventType type) { }
@@ -1501,7 +1501,7 @@ internal struct EventInterests // TypeDefIndex: 4034
 
 public struct EventDispatcherGate : IDisposable, IEquatable<EventDispatcherGate> // TypeDefIndex: 4587
 {
-	private readonly EventDispatcher m_Dispatcher; 
+	private readonly EventDispatcher m_Dispatcher;
 
 
 	public void .ctor(EventDispatcher d) { }
@@ -1518,21 +1518,21 @@ public struct EventDispatcherGate : IDisposable, IEquatable<EventDispatcherGate>
 
 public sealed class EventDispatcher // TypeDefIndex: 4588
 {
-	private List<IEventDispatchingStrategy> m_DispatchingStrategies; 
-	private static readonly ObjectPool<Queue<EventDispatcher.EventRecord>> k_EventQueuePool; 
-	private Queue<EventDispatcher.EventRecord> m_Queue; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private readonly PointerDispatchState <pointerState>k__BackingField; 
-	private uint m_GateCount; 
-	private Stack<EventDispatcher.DispatchContext> m_DispatchContexts; 
-	private bool m_Immediate; 
+	private List<IEventDispatchingStrategy> m_DispatchingStrategies;
+	private static readonly ObjectPool<Queue<EventDispatcher.EventRecord>> k_EventQueuePool;
+	private Queue<EventDispatcher.EventRecord> m_Queue;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private readonly PointerDispatchState <pointerState>k__BackingField;
+	private uint m_GateCount;
+	private Stack<EventDispatcher.DispatchContext> m_DispatchContexts;
+	private bool m_Immediate;
 
 	internal PointerDispatchState pointerState { get; }
 	private bool dispatchImmediately { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal PointerDispatchState get_pointerState() { }
 
 	internal void .ctor() { }
@@ -1557,53 +1557,53 @@ public sealed class EventDispatcher // TypeDefIndex: 4588
 
 private struct EventDispatcher.EventRecord // TypeDefIndex: 4589
 {
-	public EventBase m_Event; 
-	public IPanel m_Panel; 
+	public EventBase m_Event;
+	public IPanel m_Panel;
 
 }
 
 private struct EventDispatcher.DispatchContext // TypeDefIndex: 4590
 {
-	public uint m_GateCount; 
-	public Queue<EventDispatcher.EventRecord> m_Queue; 
+	public uint m_GateCount;
+	public Queue<EventDispatcher.EventRecord> m_Queue;
 
 }
 
 public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 {
-	private static long s_LastTypeId; 
-	private static ulong s_NextEventId; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private long <timestamp>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private ulong <eventId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private ulong <triggerEventId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private EventBase.EventPropagation <propagation>k__BackingField; 
-	private PropagationPaths m_Path; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private EventBase.LifeCycleStatus <lifeCycleStatus>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private IEventHandler <leafTarget>k__BackingField; 
-	private IEventHandler m_Target; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private readonly List<IEventHandler> <skipElements>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private PropagationPhase <propagationPhase>k__BackingField; 
-	private IEventHandler m_CurrentTarget; 
-	private Event m_ImguiEvent; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private Vector2 <originalMousePosition>k__BackingField; 
+	private static long s_LastTypeId;
+	private static ulong s_NextEventId;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private long <timestamp>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private ulong <eventId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private ulong <triggerEventId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private EventBase.EventPropagation <propagation>k__BackingField;
+	private PropagationPaths m_Path;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private EventBase.LifeCycleStatus <lifeCycleStatus>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private IEventHandler <leafTarget>k__BackingField;
+	private IEventHandler m_Target;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private readonly List<IEventHandler> <skipElements>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private PropagationPhase <propagationPhase>k__BackingField;
+	private IEventHandler m_CurrentTarget;
+	private Event m_ImguiEvent;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private Vector2 <originalMousePosition>k__BackingField;
 
 	public virtual long eventTypeId { get; }
 	private long timestamp { set; }
@@ -1637,42 +1637,42 @@ public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 
 	public virtual long get_eventTypeId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_timestamp(long value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal ulong get_eventId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_eventId(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_triggerEventId(ulong value) { }
 
 	internal void SetTriggerEventId(ulong id) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal EventBase.EventPropagation get_propagation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_propagation(EventBase.EventPropagation value) { }
 
 	internal PropagationPaths get_path() { }
 
 	internal void set_path(PropagationPaths value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private EventBase.LifeCycleStatus get_lifeCycleStatus() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_lifeCycleStatus(EventBase.LifeCycleStatus value) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected virtual void PreDispatch() { }
 
 	protected internal virtual void PreDispatch(IPanel panel) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected virtual void PostDispatch() { }
 
 	protected internal virtual void PostDispatch(IPanel panel) { }
@@ -1681,17 +1681,17 @@ public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 
 	public bool get_tricklesDown() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal IEventHandler get_leafTarget() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_leafTarget(IEventHandler value) { }
 
 	public IEventHandler get_target() { }
 
 	public void set_target(IEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal List<IEventHandler> get_skipElements() { }
 
 	internal bool Skip(IEventHandler h) { }
@@ -1714,10 +1714,10 @@ public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 
 	public void PreventDefault() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PropagationPhase get_propagationPhase() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_propagationPhase(PropagationPhase value) { }
 
 	public virtual IEventHandler get_currentTarget() { }
@@ -1754,10 +1754,10 @@ public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 
 	protected void set_imguiEvent(Event value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector2 get_originalMousePosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_originalMousePosition(Vector2 value) { }
 
 	protected virtual void Init() { }
@@ -1780,7 +1780,7 @@ public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 
 internal enum EventBase.EventPropagation // TypeDefIndex: 4646
 {
-	public int value__; 
+	public int value__;
 	public const EventBase.EventPropagation None = 0;
 	public const EventBase.EventPropagation Bubbles = 1;
 	public const EventBase.EventPropagation TricklesDown = 2;
@@ -1790,7 +1790,7 @@ internal enum EventBase.EventPropagation // TypeDefIndex: 4646
 
 private enum EventBase.LifeCycleStatus // TypeDefIndex: 4647
 {
-	public int value__; 
+	public int value__;
 	public const EventBase.LifeCycleStatus None = 0;
 	public const EventBase.LifeCycleStatus PropagationStopped = 1;
 	public const EventBase.LifeCycleStatus ImmediatePropagationStopped = 2;
@@ -1807,14 +1807,14 @@ private enum EventBase.LifeCycleStatus // TypeDefIndex: 4647
 
 internal abstract class EventCallbackFunctorBase // TypeDefIndex: 4649
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private CallbackPhase <phase>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private CallbackPhase <phase>k__BackingField;
 
 	public CallbackPhase phase { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public CallbackPhase get_phase() { }
 
 	public abstract void Invoke(EventBase evt);
@@ -1823,7 +1823,7 @@ internal abstract class EventCallbackFunctorBase // TypeDefIndex: 4649
 
 internal class EventCallbackListPool // TypeDefIndex: 4651
 {
-	private readonly Stack<EventCallbackList> m_Stack; 
+	private readonly Stack<EventCallbackList> m_Stack;
 
 
 	public EventCallbackList Get(EventCallbackList initializer) { }
@@ -1836,13 +1836,13 @@ internal class EventCallbackListPool // TypeDefIndex: 4651
 
 internal class EventCallbackList // TypeDefIndex: 4652
 {
-	private List<EventCallbackFunctorBase> m_List; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <trickleDownCallbackCount>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <bubbleUpCallbackCount>k__BackingField; 
+	private List<EventCallbackFunctorBase> m_List;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <trickleDownCallbackCount>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <bubbleUpCallbackCount>k__BackingField;
 
 	public int trickleDownCallbackCount { get; set; }
 	public int bubbleUpCallbackCount { get; set; }
@@ -1850,16 +1850,16 @@ internal class EventCallbackList // TypeDefIndex: 4652
 	public EventCallbackFunctorBase Item { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_trickleDownCallbackCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_trickleDownCallbackCount(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_bubbleUpCallbackCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_bubbleUpCallbackCount(int value) { }
 
 	public void .ctor() { }
@@ -1878,10 +1878,10 @@ internal class EventCallbackList // TypeDefIndex: 4652
 
 internal class EventCallbackRegistry // TypeDefIndex: 4653
 {
-	private static readonly EventCallbackListPool s_ListPool; 
-	private EventCallbackList m_Callbacks; 
-	private EventCallbackList m_TemporaryCallbacks; 
-	private int m_IsInvoking; 
+	private static readonly EventCallbackListPool s_ListPool;
+	private EventCallbackList m_Callbacks;
+	private EventCallbackList m_TemporaryCallbacks;
+	private int m_IsInvoking;
 
 
 	private static EventCallbackList GetCallbackList(EventCallbackList initializer) { }
@@ -1936,7 +1936,7 @@ internal class EventDebugger // TypeDefIndex: 4710
 
 public enum EventHandle // TypeDefIndex: 5058
 {
-	public int value__; 
+	public int value__;
 	public const EventHandle Unused = 0;
 	public const EventHandle Used = 1;
 
@@ -1944,21 +1944,21 @@ public enum EventHandle // TypeDefIndex: 5058
 
 public class EventSystem : UIBehaviour // TypeDefIndex: 5077
 {
-	private List<BaseInputModule> m_SystemInputModules; 
-	private BaseInputModule m_CurrentInputModule; 
-	private static List<EventSystem> m_EventSystems; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private GameObject m_FirstSelected; 
-	[SerializeField] 
-	private bool m_sendNavigationEvents; 
-	[SerializeField] 
-	private int m_DragThreshold; 
-	private GameObject m_CurrentSelected; 
-	private bool m_HasFocus; 
-	private bool m_SelectionGuard; 
-	private BaseEventData m_DummyData; 
-	private static readonly Comparison<RaycastResult> s_RaycastComparer; 
+	private List<BaseInputModule> m_SystemInputModules;
+	private BaseInputModule m_CurrentInputModule;
+	private static List<EventSystem> m_EventSystems;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private GameObject m_FirstSelected;
+	[SerializeField]
+	private bool m_sendNavigationEvents;
+	[SerializeField]
+	private int m_DragThreshold;
+	private GameObject m_CurrentSelected;
+	private bool m_HasFocus;
+	private bool m_SelectionGuard;
+	private BaseEventData m_DummyData;
+	private static readonly Comparison<RaycastResult> s_RaycastComparer;
 
 	public static EventSystem current { get; set; }
 	public bool sendNavigationEvents { get; set; }
@@ -1966,7 +1966,7 @@ public class EventSystem : UIBehaviour // TypeDefIndex: 5077
 	public BaseInputModule currentInputModule { get; }
 	public GameObject firstSelectedGameObject { get; set; }
 	public GameObject currentSelectedGameObject { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public GameObject lastSelectedGameObject { get; }
 	public bool isFocused { get; }
 	public bool alreadySelecting { get; }
@@ -2037,12 +2037,12 @@ public class EventSystem : UIBehaviour // TypeDefIndex: 5077
 
 public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IScrollHandler, IUpdateSelectedHandler, ISelectHandler, IDeselectHandler, IMoveHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 5078
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private List<EventTrigger.Entry> m_Delegates; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private List<EventTrigger.Entry> m_Delegates;
 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public List<EventTrigger.Entry> delegates { get; set; }
 	public List<EventTrigger.Entry> triggers { get; set; }
 
@@ -2104,8 +2104,8 @@ public class EventTrigger.TriggerEvent : UnityEvent<BaseEventData> // TypeDefInd
 
 public class EventTrigger.Entry // TypeDefIndex: 5080
 {
-	public EventTriggerType eventID; 
-	public EventTrigger.TriggerEvent callback; 
+	public EventTriggerType eventID;
+	public EventTrigger.TriggerEvent callback;
 
 
 	public void .ctor() { }
@@ -2114,7 +2114,7 @@ public class EventTrigger.Entry // TypeDefIndex: 5080
 
 public enum EventTriggerType // TypeDefIndex: 5081
 {
-	public int value__; 
+	public int value__;
 	public const EventTriggerType PointerEnter = 0;
 	public const EventTriggerType PointerExit = 1;
 	public const EventTriggerType PointerDown = 2;
@@ -2135,11 +2135,11 @@ public enum EventTriggerType // TypeDefIndex: 5081
 
 }
 
-public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7528
+public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7530
 {
-	internal readonly List<MidiEvent> _events; 
-	[CompilerGeneratedAttribute] 
-	private readonly bool <IsReadOnly>k__BackingField; 
+	internal readonly List<MidiEvent> _events;
+	[CompilerGeneratedAttribute]
+	private readonly bool <IsReadOnly>k__BackingField;
 
 	public MidiEvent Item { get; }
 	public int Count { get; }
@@ -2152,7 +2152,7 @@ public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiE
 
 	public int get_Count() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsReadOnly() { }
 
 	public void Add(MidiEvent midiEvent) { }
@@ -2171,22 +2171,22 @@ public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiE
 
 }
 
-public sealed class EventTypesCollection // TypeDefIndex: 7544
+public sealed class EventTypesCollection // TypeDefIndex: 7546
 {
-	private readonly Dictionary<byte, Type> _types; 
+	private readonly Dictionary<byte, Type> _types;
 
 
 	public bool TryGetType(byte statusByte, out Type type) { }
 
 }
 
-internal static class EventReaderFactory // TypeDefIndex: 7567
+internal static class EventReaderFactory // TypeDefIndex: 7569
 {
-	private static readonly IEventReader MetaEventReader; 
-	private static readonly IEventReader ChannelEventReader; 
-	private static readonly IEventReader SysExEventReader; 
-	private static readonly IEventReader SystemRealTimeEventReader; 
-	private static readonly IEventReader SystemCommonEventReader; 
+	private static readonly IEventReader MetaEventReader;
+	private static readonly IEventReader ChannelEventReader;
+	private static readonly IEventReader SysExEventReader;
+	private static readonly IEventReader SystemRealTimeEventReader;
+	private static readonly IEventReader SystemCommonEventReader;
 
 
 	internal static IEventReader GetReader(byte statusByte, bool smfOnly) { }
@@ -2195,12 +2195,12 @@ internal static class EventReaderFactory // TypeDefIndex: 7567
 
 }
 
-public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11553
+public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11560
 {
-	[TooltipAttribute] 
-	public float minimumHoursBetween; 
-	[TooltipAttribute] 
-	public float maxmumHoursBetween; 
+	[TooltipAttribute]
+	public float minimumHoursBetween;
+	[TooltipAttribute]
+	public float maxmumHoursBetween;
 
 
 	public void .ctor() { }

@@ -1,53 +1,53 @@
 public class SceneManager // TypeDefIndex: 3659
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static UnityAction<Scene, LoadSceneMode> sceneLoaded; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static UnityAction<Scene> sceneUnloaded; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static UnityAction<Scene, Scene> activeSceneChanged; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static UnityAction<Scene, LoadSceneMode> sceneLoaded;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static UnityAction<Scene> sceneUnloaded;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static UnityAction<Scene, Scene> activeSceneChanged;
 
 	public static int sceneCount { get; }
 
 
-	[NativeHeaderAttribute] 
-	[NativeMethodAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeHeaderAttribute]
+	[NativeMethodAttribute]
+	[StaticAccessorAttribute]
 	public static int get_sceneCount() { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static Scene GetActiveScene() { }
 
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static Scene GetSceneByName(string name) { }
 
-	[StaticAccessorAttribute] 
-	[NativeThrowsAttribute] 
+	[StaticAccessorAttribute]
+	[NativeThrowsAttribute]
 	public static Scene GetSceneAt(int index) { }
 
-	[NativeThrowsAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeThrowsAttribute]
+	[StaticAccessorAttribute]
 	public static Scene CreateScene(string sceneName, CreateSceneParameters parameters) { }
 
-	[StaticAccessorAttribute] 
-	[NativeThrowsAttribute] 
+	[StaticAccessorAttribute]
+	[NativeThrowsAttribute]
 	private static AsyncOperation UnloadSceneAsyncInternal(Scene scene, UnloadSceneOptions options) { }
 
-	[NativeThrowsAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeThrowsAttribute]
+	[StaticAccessorAttribute]
 	private static AsyncOperation LoadSceneAsyncNameIndexInternal(string sceneName, int sceneBuildIndex, LoadSceneParameters parameters, bool mustCompleteNextFrame) { }
 
-	[NativeThrowsAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeThrowsAttribute]
+	[StaticAccessorAttribute]
 	public static void MoveGameObjectToScene(GameObject go, Scene scene) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_sceneLoaded(UnityAction<Scene, LoadSceneMode> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_sceneLoaded(UnityAction<Scene, LoadSceneMode> value) { }
 
 	public static Scene CreateScene(string sceneName) { }
@@ -58,20 +58,20 @@ public class SceneManager // TypeDefIndex: 3659
 
 	public static AsyncOperation LoadSceneAsync(string sceneName, LoadSceneMode mode) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static AsyncOperation LoadSceneAsync(string sceneName) { }
 
 	public static AsyncOperation LoadSceneAsync(string sceneName, LoadSceneParameters parameters) { }
 
 	public static AsyncOperation UnloadSceneAsync(Scene scene) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_SceneLoaded(Scene scene, LoadSceneMode mode) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_SceneUnloaded(Scene scene) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_ActiveSceneChanged(Scene previousActiveScene, Scene newActiveScene) { }
 
 	private static void GetActiveScene_Injected(out Scene ret) { }

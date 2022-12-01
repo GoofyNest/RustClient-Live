@@ -1,14 +1,14 @@
 internal sealed class RegexBoyerMoore // TypeDefIndex: 2604
 {
-	internal int[] _positive; 
-	internal int[] _negativeASCII; 
-	internal int[][] _negativeUnicode; 
-	internal string _pattern; 
-	internal int _lowASCII; 
-	internal int _highASCII; 
-	internal bool _rightToLeft; 
-	internal bool _caseInsensitive; 
-	internal CultureInfo _culture; 
+	internal int[] _positive;
+	internal int[] _negativeASCII;
+	internal int[][] _negativeUnicode;
+	internal string _pattern;
+	internal int _lowASCII;
+	internal int _highASCII;
+	internal bool _rightToLeft;
+	internal bool _caseInsensitive;
+	internal CultureInfo _culture;
 	internal const int infinite = 2147483647;
 
 

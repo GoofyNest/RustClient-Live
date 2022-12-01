@@ -1,17 +1,17 @@
-public struct LogPlayerTickOptions // TypeDefIndex: 9781
+public struct LogPlayerTickOptions // TypeDefIndex: 9783
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <PlayerHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Vec3f> <PlayerPosition>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Quat> <PlayerViewRotation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsPlayerViewZoomed>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <PlayerHealth>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonPlayerMovementState <PlayerMovementState>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <PlayerHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Vec3f> <PlayerPosition>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Quat> <PlayerViewRotation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsPlayerViewZoomed>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <PlayerHealth>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonPlayerMovementState <PlayerMovementState>k__BackingField;
 
 	public IntPtr PlayerHandle { get; set; }
 	public Nullable<Vec3f> PlayerPosition { get; set; }
@@ -21,40 +21,40 @@ public struct LogPlayerTickOptions // TypeDefIndex: 9781
 	public AntiCheatCommonPlayerMovementState PlayerMovementState { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_PlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Vec3f> get_PlayerPosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerPosition(Nullable<Vec3f> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Quat> get_PlayerViewRotation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerViewRotation(Nullable<Quat> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsPlayerViewZoomed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsPlayerViewZoomed(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_PlayerHealth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerHealth(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonPlayerMovementState get_PlayerMovementState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerMovementState(AntiCheatCommonPlayerMovementState value) { }
 
 }

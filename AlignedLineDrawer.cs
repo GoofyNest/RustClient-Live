@@ -1,31 +1,31 @@
-public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex: 10602
+public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex: 10606
 {
-	public MeshFilter Filter; 
-	public MeshRenderer Renderer; 
-	public float LineWidth; 
-	public float SurfaceOffset; 
-	public float SprayThickness; 
-	public float uvTilingFactor; 
-	public bool DrawEndCaps; 
-	public bool DrawSideMesh; 
-	public bool DrawBackMesh; 
-	public SprayCanSpray_Freehand Spray; 
-	private static MaterialPropertyBlock propertyBlock; 
-	[CompilerGeneratedAttribute] 
-	private Mesh <CreatedMesh>k__BackingField; 
-	private bool isQueued; 
-	private bool queuedFinal; 
-	public static AlignedLineDrawer.LineDrawerQueue WorkQueue; 
-	private Action meshUpdateCompleteAction; 
+	public MeshFilter Filter;
+	public MeshRenderer Renderer;
+	public float LineWidth;
+	public float SurfaceOffset;
+	public float SprayThickness;
+	public float uvTilingFactor;
+	public bool DrawEndCaps;
+	public bool DrawSideMesh;
+	public bool DrawBackMesh;
+	public SprayCanSpray_Freehand Spray;
+	private static MaterialPropertyBlock propertyBlock;
+	[CompilerGeneratedAttribute]
+	private Mesh <CreatedMesh>k__BackingField;
+	private bool isQueued;
+	private bool queuedFinal;
+	public static AlignedLineDrawer.LineDrawerQueue WorkQueue;
+	private Action meshUpdateCompleteAction;
 
 	public Mesh CreatedMesh { get; set; }
 	private List<AlignedLineDrawer.LinePoint> Points { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Mesh get_CreatedMesh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CreatedMesh(Mesh value) { }
 
 	private List<AlignedLineDrawer.LinePoint> get_Points() { }
@@ -54,19 +54,19 @@ public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <UpdateMesh>g__GenerateLineSegment|24_0(int startPoint, int endPoint, ref AlignedLineDrawer.<>c
 
 }
 
-public struct AlignedLineDrawer.LinePoint // TypeDefIndex: 10603
+public struct AlignedLineDrawer.LinePoint // TypeDefIndex: 10607
 {
-	public Vector3 LocalPosition; 
-	public Vector3 WorldNormal; 
+	public Vector3 LocalPosition;
+	public Vector3 WorldNormal;
 
 }
 
-public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDrawer> // TypeDefIndex: 10604
+public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDrawer> // TypeDefIndex: 10608
 {
 
 	protected override void RunJob(AlignedLineDrawer entity) { }
@@ -77,16 +77,16 @@ public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDraw
 
 }
 
-private struct AlignedLineDrawer.<>c__DisplayClass24_0 // TypeDefIndex: 10605
+private struct AlignedLineDrawer.<>c__DisplayClass24_0 // TypeDefIndex: 10609
 {
-	public List<Vector3> verts; 
-	public AlignedLineDrawer <>4__this; 
-	public float distanceTravelled; 
-	public Vector3 leftVertOffset; 
-	public Vector3 rightVertOffset; 
-	public List<Vector2> uvs; 
-	public List<int> tris; 
-	public bool isFinal; 
+	public List<Vector3> verts;
+	public AlignedLineDrawer <>4__this;
+	public float distanceTravelled;
+	public Vector3 leftVertOffset;
+	public Vector3 rightVertOffset;
+	public List<Vector2> uvs;
+	public List<int> tris;
+	public bool isFinal;
 
 }
 

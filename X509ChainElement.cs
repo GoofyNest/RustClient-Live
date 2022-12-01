@@ -1,9 +1,9 @@
 public class X509ChainElement // TypeDefIndex: 2823
 {
-	private X509Certificate2 certificate; 
-	private X509ChainStatus[] status; 
-	private string info; 
-	private X509ChainStatusFlags compressed_status_flags; 
+	private X509Certificate2 certificate;
+	private X509ChainStatus[] status;
+	private string info;
+	private X509ChainStatusFlags compressed_status_flags;
 
 	public X509Certificate2 Certificate { get; }
 	public X509ChainStatus[] ChainElementStatus { get; }

@@ -1,8 +1,8 @@
-public class DepthAwareBackgroundBlur : DepthOfField // TypeDefIndex: 8195
+public class DepthAwareBackgroundBlur : DepthOfField // TypeDefIndex: 8197
 {
-	public float StartDistance; 
-	public float BlurSize; 
-	public DepthOfField.BlurSampleCount BlurQuality; 
+	public float StartDistance;
+	public float BlurSize;
+	public DepthOfField.BlurSampleCount BlurQuality;
 
 
 	private void Awake() { }

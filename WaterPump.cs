@@ -1,9 +1,9 @@
-public class WaterPump : LiquidContainer // TypeDefIndex: 11256
+public class WaterPump : LiquidContainer // TypeDefIndex: 11262
 {
-	public Transform WaterResourceLocation; 
-	public float PumpInterval; 
-	public int AmountPerPump; 
-	public int PowerConsumption; 
+	public Transform WaterResourceLocation;
+	public float PumpInterval;
+	public int AmountPerPump;
+	public int PowerConsumption;
 
 
 	public override int ConsumptionAmount() { }

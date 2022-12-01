@@ -1,6 +1,6 @@
-public enum StyleGroup // TypeDefIndex: 7071
+public enum StyleGroup // TypeDefIndex: 7073
 {
-	public int value__; 
+	public int value__;
 	public const StyleGroup Normal = 0;
 	public const StyleGroup Hovered = 1;
 	public const StyleGroup Presed = 2;

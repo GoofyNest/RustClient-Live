@@ -1,6 +1,6 @@
-public enum FrameRateCategory // TypeDefIndex: 6216
+public enum FrameRateCategory // TypeDefIndex: 6218
 {
-	public int value__; 
+	public int value__;
 	public const FrameRateCategory Unplayable = 0;
 	public const FrameRateCategory VeryBad = 1;
 	public const FrameRateCategory Bad = 2;

@@ -1,7 +1,7 @@
-public class ScrollRectDisable : ListComponent<ScrollRectDisable> // TypeDefIndex: 12996
+public class ScrollRectDisable : ListComponent<ScrollRectDisable> // TypeDefIndex: 13010
 {
-	private static bool wasVisible; 
-	private ScrollRect targetRect; 
+	private static bool wasVisible;
+	private ScrollRect targetRect;
 
 
 	public static void UpdateScrollRects() { }

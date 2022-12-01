@@ -1,9 +1,9 @@
-internal struct SetAudioOutputSettingsOptionsInternal : ISettable<SetAudioOutputSettingsOptions>, IDisposable // TypeDefIndex: 8711
+internal struct SetAudioOutputSettingsOptionsInternal : ISettable<SetAudioOutputSettingsOptions>, IDisposable // TypeDefIndex: 8713
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_DeviceId; 
-	private float m_Volume; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_DeviceId;
+	private float m_Volume;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String DeviceId { set; }

@@ -1,12 +1,12 @@
 public class WindowsIdentity : ClaimsIdentity, IIdentity, IDeserializationCallback, ISerializable, IDisposable // TypeDefIndex: 932
 {
-	private IntPtr _token; 
-	private string _type; 
-	private WindowsAccountType _account; 
-	private bool _authenticated; 
-	private string _name; 
-	private SerializationInfo _info; 
-	private static IntPtr invalidWindows; 
+	private IntPtr _token;
+	private string _type;
+	private WindowsAccountType _account;
+	private bool _authenticated;
+	private string _name;
+	private SerializationInfo _info;
+	private static IntPtr invalidWindows;
 
 	public sealed override string AuthenticationType { get; }
 	public override string Name { get; }
@@ -16,7 +16,7 @@ public class WindowsIdentity : ClaimsIdentity, IIdentity, IDeserializationCallba
 
 	public void .ctor(SerializationInfo info, StreamingContext context) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public void Dispose() { }
 
 	public static WindowsIdentity GetCurrent() { }

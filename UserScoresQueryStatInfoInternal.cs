@@ -1,8 +1,8 @@
-internal struct UserScoresQueryStatInfoInternal : IGettable<UserScoresQueryStatInfo>, ISettable<UserScoresQueryStatInfo>, IDisposable // TypeDefIndex: 9321
+internal struct UserScoresQueryStatInfoInternal : IGettable<UserScoresQueryStatInfo>, ISettable<UserScoresQueryStatInfo>, IDisposable // TypeDefIndex: 9323
 {
-	private int m_ApiVersion; 
-	private IntPtr m_StatName; 
-	private LeaderboardAggregation m_Aggregation; 
+	private int m_ApiVersion;
+	private IntPtr m_StatName;
+	private LeaderboardAggregation m_Aggregation;
 
 	public Utf8String StatName { get; set; }
 	public LeaderboardAggregation Aggregation { get; set; }

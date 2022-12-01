@@ -1,10 +1,10 @@
 public sealed class LifetimeServices // TypeDefIndex: 1170
 {
-	private static TimeSpan _leaseManagerPollTime; 
-	private static TimeSpan _leaseTime; 
-	private static TimeSpan _renewOnCallTime; 
-	private static TimeSpan _sponsorshipTimeout; 
-	private static LeaseManager _leaseManager; 
+	private static TimeSpan _leaseManagerPollTime;
+	private static TimeSpan _leaseTime;
+	private static TimeSpan _renewOnCallTime;
+	private static TimeSpan _sponsorshipTimeout;
+	private static LeaseManager _leaseManager;
 
 	public static TimeSpan LeaseManagerPollTime { get; set; }
 	public static TimeSpan LeaseTime { get; set; }

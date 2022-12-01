@@ -1,7 +1,7 @@
-public class RustIcon : TextMeshProUGUI // TypeDefIndex: 7059
+public class RustIcon : TextMeshProUGUI // TypeDefIndex: 7061
 {
-	[SerializeField] 
-	private Icons _icon; 
+	[SerializeField]
+	private Icons _icon;
 
 	public Icons Icon { get; set; }
 

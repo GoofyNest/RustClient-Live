@@ -1,29 +1,29 @@
-public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9641
+public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9643
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ProductUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsAccountInfoPresent>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalAccountType <AccountIdType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AccountId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Platform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeviceType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ClientId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SandboxId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeploymentId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ProductUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsAccountInfoPresent>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalAccountType <AccountIdType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <AccountId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Platform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeviceType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ClientId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <SandboxId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeploymentId>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -39,76 +39,76 @@ public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9641
 	public Utf8String DeploymentId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ProductUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsAccountInfoPresent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsAccountInfoPresent(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalAccountType get_AccountIdType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountIdType(ExternalAccountType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Platform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Platform(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeviceType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeviceType(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ClientId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SandboxId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SandboxId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeploymentId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeploymentId(Utf8String value) { }
 
 	public Nullable<Result> GetResultCode() { }
@@ -117,34 +117,34 @@ public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9641
 
 }
 
-public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9704
+public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9706
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ApplicationId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ClientId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ProductId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SandboxId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeploymentId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsExternalAccountInfoPresent>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalAccountType <ExternalAccountIdType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ExternalAccountId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ExternalAccountDisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Platform>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ApplicationId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ClientId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ProductId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <SandboxId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeploymentId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsExternalAccountInfoPresent>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalAccountType <ExternalAccountIdType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ExternalAccountId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ExternalAccountDisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Platform>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }
@@ -161,82 +161,82 @@ public struct VerifyIdTokenCallbackInfo : ICallbackInfo // TypeDefIndex: 9704
 	public Utf8String Platform { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ApplicationId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ApplicationId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ClientId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ProductId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SandboxId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SandboxId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeploymentId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeploymentId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsExternalAccountInfoPresent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsExternalAccountInfoPresent(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalAccountType get_ExternalAccountIdType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExternalAccountIdType(ExternalAccountType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ExternalAccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExternalAccountId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ExternalAccountDisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExternalAccountDisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Platform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Platform(Utf8String value) { }
 
 	public Nullable<Result> GetResultCode() { }

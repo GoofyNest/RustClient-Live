@@ -1,6 +1,6 @@
-public class IronsightAimPoint : MonoBehaviour // TypeDefIndex: 13229
+public class IronsightAimPoint : MonoBehaviour // TypeDefIndex: 13244
 {
-	public Transform targetPoint; 
+	public Transform targetPoint;
 
 
 	private void OnDrawGizmos() { }

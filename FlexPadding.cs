@@ -1,9 +1,9 @@
-public struct FlexPadding // TypeDefIndex: 6829
+public struct FlexPadding // TypeDefIndex: 6831
 {
-	public float left; 
-	public float right; 
-	public float top; 
-	public float bottom; 
+	public float left;
+	public float right;
+	public float top;
+	public float bottom;
 
 
 	public void .ctor(float value) { }

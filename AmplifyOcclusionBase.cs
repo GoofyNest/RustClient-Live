@@ -1,120 +1,120 @@
-public class AmplifyOcclusionBase : MonoBehaviour // TypeDefIndex: 13256
+public class AmplifyOcclusionBase : MonoBehaviour // TypeDefIndex: 13271
 {
-	[HeaderAttribute] 
-	public AmplifyOcclusionBase.ApplicationMethod ApplyMethod; 
-	[TooltipAttribute] 
-	public AmplifyOcclusionBase.SampleCountLevel SampleCount; 
-	public AmplifyOcclusionBase.PerPixelNormalSource PerPixelNormals; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Intensity; 
-	public Color Tint; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Radius; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public int PixelRadiusLimit; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float RadiusIntensity; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float PowerExponent; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Bias; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Thickness; 
-	[TooltipAttribute] 
-	public bool Downsample; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public bool FadeEnabled; 
-	[TooltipAttribute] 
-	public float FadeStart; 
-	[TooltipAttribute] 
-	public float FadeLength; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float FadeToIntensity; 
-	public Color FadeToTint; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float FadeToRadius; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float FadeToPowerExponent; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float FadeToThickness; 
-	[HeaderAttribute] 
-	public bool BlurEnabled; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public int BlurRadius; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public int BlurPasses; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float BlurSharpness; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public bool FilterEnabled; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float FilterBlending; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float FilterResponse; 
-	[TooltipAttribute] 
-	public bool TemporalDirections; 
-	[TooltipAttribute] 
-	public bool TemporalOffsets; 
-	[TooltipAttribute] 
-	public bool TemporalDilation; 
-	[TooltipAttribute] 
-	public bool UseMotionVectors; 
-	private AmplifyOcclusionBase.PerPixelNormalSource m_prevPerPixelNormals; 
-	private AmplifyOcclusionBase.ApplicationMethod m_prevApplyMethod; 
-	private bool m_prevDeferredReflections; 
-	private AmplifyOcclusionBase.SampleCountLevel m_prevSampleCount; 
-	private bool m_prevDownsample; 
-	private bool m_prevBlurEnabled; 
-	private int m_prevBlurRadius; 
-	private int m_prevBlurPasses; 
-	private Camera m_targetCamera; 
-	private RenderTargetIdentifier[] applyDebugTargetsTemporal; 
-	private RenderTargetIdentifier[] applyPostEffectTargetsTemporal; 
-	private RenderTargetIdentifier[] applyDeferredTargets_Log_Temporal; 
-	private RenderTargetIdentifier[] applyDeferredTargetsTemporal; 
-	private AmplifyOcclusionBase.CmdBuffer m_commandBuffer_Occlusion; 
-	private AmplifyOcclusionBase.CmdBuffer m_commandBuffer_Apply; 
-	private static Mesh m_quadMesh; 
-	private static Material m_occlusionMat; 
-	private static Material m_blurMat; 
-	private static Material m_applyOcclusionMat; 
-	private RenderTextureFormat m_occlusionRTFormat; 
-	private RenderTextureFormat m_accumTemporalRTFormat; 
-	private RenderTextureFormat m_temporaryEmissionRTFormat; 
-	private bool m_paramsChanged; 
-	private RenderTexture m_occlusionDepthRT; 
-	private RenderTexture[] m_temporalAccumRT; 
-	private uint m_sampleStep; 
-	private uint m_curStepIdx; 
-	private static readonly uint m_maxSampleSteps; 
-	private static readonly int PerPixelNormalSourceCount; 
-	private Matrix4x4 m_prevViewProjMatrixLeft; 
-	private Matrix4x4 m_prevInvViewProjMatrixLeft; 
-	private Matrix4x4 m_prevViewProjMatrixRight; 
-	private Matrix4x4 m_prevInvViewProjMatrixRight; 
-	private static readonly float[] m_temporalRotations; 
-	private static readonly float[] m_spatialOffsets; 
-	private readonly RenderTargetIdentifier[] m_applyDeferredTargets; 
-	private readonly RenderTargetIdentifier[] m_applyDeferredTargets_Log; 
-	private AmplifyOcclusionBase.TargetDesc m_target; 
+	[HeaderAttribute]
+	public AmplifyOcclusionBase.ApplicationMethod ApplyMethod;
+	[TooltipAttribute]
+	public AmplifyOcclusionBase.SampleCountLevel SampleCount;
+	public AmplifyOcclusionBase.PerPixelNormalSource PerPixelNormals;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Intensity;
+	public Color Tint;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Radius;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public int PixelRadiusLimit;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float RadiusIntensity;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float PowerExponent;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Bias;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Thickness;
+	[TooltipAttribute]
+	public bool Downsample;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public bool FadeEnabled;
+	[TooltipAttribute]
+	public float FadeStart;
+	[TooltipAttribute]
+	public float FadeLength;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float FadeToIntensity;
+	public Color FadeToTint;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float FadeToRadius;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float FadeToPowerExponent;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float FadeToThickness;
+	[HeaderAttribute]
+	public bool BlurEnabled;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public int BlurRadius;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public int BlurPasses;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float BlurSharpness;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public bool FilterEnabled;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float FilterBlending;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float FilterResponse;
+	[TooltipAttribute]
+	public bool TemporalDirections;
+	[TooltipAttribute]
+	public bool TemporalOffsets;
+	[TooltipAttribute]
+	public bool TemporalDilation;
+	[TooltipAttribute]
+	public bool UseMotionVectors;
+	private AmplifyOcclusionBase.PerPixelNormalSource m_prevPerPixelNormals;
+	private AmplifyOcclusionBase.ApplicationMethod m_prevApplyMethod;
+	private bool m_prevDeferredReflections;
+	private AmplifyOcclusionBase.SampleCountLevel m_prevSampleCount;
+	private bool m_prevDownsample;
+	private bool m_prevBlurEnabled;
+	private int m_prevBlurRadius;
+	private int m_prevBlurPasses;
+	private Camera m_targetCamera;
+	private RenderTargetIdentifier[] applyDebugTargetsTemporal;
+	private RenderTargetIdentifier[] applyPostEffectTargetsTemporal;
+	private RenderTargetIdentifier[] applyDeferredTargets_Log_Temporal;
+	private RenderTargetIdentifier[] applyDeferredTargetsTemporal;
+	private AmplifyOcclusionBase.CmdBuffer m_commandBuffer_Occlusion;
+	private AmplifyOcclusionBase.CmdBuffer m_commandBuffer_Apply;
+	private static Mesh m_quadMesh;
+	private static Material m_occlusionMat;
+	private static Material m_blurMat;
+	private static Material m_applyOcclusionMat;
+	private RenderTextureFormat m_occlusionRTFormat;
+	private RenderTextureFormat m_accumTemporalRTFormat;
+	private RenderTextureFormat m_temporaryEmissionRTFormat;
+	private bool m_paramsChanged;
+	private RenderTexture m_occlusionDepthRT;
+	private RenderTexture[] m_temporalAccumRT;
+	private uint m_sampleStep;
+	private uint m_curStepIdx;
+	private static readonly uint m_maxSampleSteps;
+	private static readonly int PerPixelNormalSourceCount;
+	private Matrix4x4 m_prevViewProjMatrixLeft;
+	private Matrix4x4 m_prevInvViewProjMatrixLeft;
+	private Matrix4x4 m_prevViewProjMatrixRight;
+	private Matrix4x4 m_prevInvViewProjMatrixRight;
+	private static readonly float[] m_temporalRotations;
+	private static readonly float[] m_spatialOffsets;
+	private readonly RenderTargetIdentifier[] m_applyDeferredTargets;
+	private readonly RenderTargetIdentifier[] m_applyDeferredTargets_Log;
+	private AmplifyOcclusionBase.TargetDesc m_target;
 
 
 	private void createCommandBuffer(ref AmplifyOcclusionBase.CmdBuffer aCmdBuffer, string aCmdBufferName, CameraEvent aCameraEvent) { }
@@ -189,18 +189,18 @@ public class AmplifyOcclusionBase : MonoBehaviour // TypeDefIndex: 13256
 
 }
 
-public enum AmplifyOcclusionBase.ApplicationMethod // TypeDefIndex: 13257
+public enum AmplifyOcclusionBase.ApplicationMethod // TypeDefIndex: 13272
 {
-	public int value__; 
+	public int value__;
 	public const AmplifyOcclusionBase.ApplicationMethod PostEffect = 0;
 	public const AmplifyOcclusionBase.ApplicationMethod Deferred = 1;
 	public const AmplifyOcclusionBase.ApplicationMethod Debug = 2;
 
 }
 
-public enum AmplifyOcclusionBase.PerPixelNormalSource // TypeDefIndex: 13258
+public enum AmplifyOcclusionBase.PerPixelNormalSource // TypeDefIndex: 13273
 {
-	public int value__; 
+	public int value__;
 	public const AmplifyOcclusionBase.PerPixelNormalSource None = 0;
 	public const AmplifyOcclusionBase.PerPixelNormalSource Camera = 1;
 	public const AmplifyOcclusionBase.PerPixelNormalSource GBuffer = 2;
@@ -208,9 +208,9 @@ public enum AmplifyOcclusionBase.PerPixelNormalSource // TypeDefIndex: 13258
 
 }
 
-public enum AmplifyOcclusionBase.SampleCountLevel // TypeDefIndex: 13259
+public enum AmplifyOcclusionBase.SampleCountLevel // TypeDefIndex: 13274
 {
-	public int value__; 
+	public int value__;
 	public const AmplifyOcclusionBase.SampleCountLevel Low = 0;
 	public const AmplifyOcclusionBase.SampleCountLevel Medium = 1;
 	public const AmplifyOcclusionBase.SampleCountLevel High = 2;
@@ -218,27 +218,27 @@ public enum AmplifyOcclusionBase.SampleCountLevel // TypeDefIndex: 13259
 
 }
 
-private struct AmplifyOcclusionBase.CmdBuffer // TypeDefIndex: 13260
+private struct AmplifyOcclusionBase.CmdBuffer // TypeDefIndex: 13275
 {
-	public CommandBuffer cmdBuffer; 
-	public CameraEvent cmdBufferEvent; 
-	public string cmdBufferName; 
+	public CommandBuffer cmdBuffer;
+	public CameraEvent cmdBufferEvent;
+	public string cmdBufferName;
 
 }
 
-private struct AmplifyOcclusionBase.TargetDesc // TypeDefIndex: 13261
+private struct AmplifyOcclusionBase.TargetDesc // TypeDefIndex: 13276
 {
-	public int fullWidth; 
-	public int fullHeight; 
-	public RenderTextureFormat format; 
-	public int width; 
-	public int height; 
-	public float oneOverWidth; 
-	public float oneOverHeight; 
+	public int fullWidth;
+	public int fullHeight;
+	public RenderTextureFormat format;
+	public int width;
+	public int height;
+	public float oneOverWidth;
+	public float oneOverHeight;
 
 }
 
-private static class AmplifyOcclusionBase.ShaderPass // TypeDefIndex: 13262
+private static class AmplifyOcclusionBase.ShaderPass // TypeDefIndex: 13277
 {
 	public const int CombineDownsampledOcclusionDepth = 16;
 	public const int CombineEmission = 17;
@@ -267,44 +267,44 @@ private static class AmplifyOcclusionBase.ShaderPass // TypeDefIndex: 13262
 
 }
 
-private static class AmplifyOcclusionBase.PropertyID // TypeDefIndex: 13263
+private static class AmplifyOcclusionBase.PropertyID // TypeDefIndex: 13278
 {
-	public static readonly int _AO_Radius; 
-	public static readonly int _AO_PixelRadiusLimit; 
-	public static readonly int _AO_RadiusIntensity; 
-	public static readonly int _AO_PowExponent; 
-	public static readonly int _AO_Bias; 
-	public static readonly int _AO_Levels; 
-	public static readonly int _AO_ThicknessDecay; 
-	public static readonly int _AO_BlurSharpness; 
-	public static readonly int _AO_CameraViewLeft; 
-	public static readonly int _AO_CameraViewRight; 
-	public static readonly int _AO_ProjMatrixLeft; 
-	public static readonly int _AO_ProjMatrixRight; 
-	public static readonly int _AO_InvViewProjMatrixLeft; 
-	public static readonly int _AO_PrevViewProjMatrixLeft; 
-	public static readonly int _AO_PrevInvViewProjMatrixLeft; 
-	public static readonly int _AO_InvViewProjMatrixRight; 
-	public static readonly int _AO_PrevViewProjMatrixRight; 
-	public static readonly int _AO_PrevInvViewProjMatrixRight; 
-	public static readonly int _AO_GBufferNormals; 
-	public static readonly int _AO_Target_TexelSize; 
-	public static readonly int _AO_TemporalCurveAdj; 
-	public static readonly int _AO_TemporalMotionSensibility; 
-	public static readonly int _AO_CurrOcclusionDepth; 
-	public static readonly int _AO_TemporalAccumm; 
-	public static readonly int _AO_TemporalDirections; 
-	public static readonly int _AO_TemporalOffsets; 
-	public static readonly int _AO_OcclusionTexture; 
-	public static readonly int _AO_GBufferAlbedo; 
-	public static readonly int _AO_GBufferEmission; 
-	public static readonly int _AO_UVToView; 
-	public static readonly int _AO_HalfProjScale; 
-	public static readonly int _AO_FadeParams; 
-	public static readonly int _AO_FadeValues; 
-	public static readonly int _AO_FadeToTint; 
-	public static readonly int _AO_Source_TexelSize; 
-	public static readonly int _AO_Source; 
+	public static readonly int _AO_Radius;
+	public static readonly int _AO_PixelRadiusLimit;
+	public static readonly int _AO_RadiusIntensity;
+	public static readonly int _AO_PowExponent;
+	public static readonly int _AO_Bias;
+	public static readonly int _AO_Levels;
+	public static readonly int _AO_ThicknessDecay;
+	public static readonly int _AO_BlurSharpness;
+	public static readonly int _AO_CameraViewLeft;
+	public static readonly int _AO_CameraViewRight;
+	public static readonly int _AO_ProjMatrixLeft;
+	public static readonly int _AO_ProjMatrixRight;
+	public static readonly int _AO_InvViewProjMatrixLeft;
+	public static readonly int _AO_PrevViewProjMatrixLeft;
+	public static readonly int _AO_PrevInvViewProjMatrixLeft;
+	public static readonly int _AO_InvViewProjMatrixRight;
+	public static readonly int _AO_PrevViewProjMatrixRight;
+	public static readonly int _AO_PrevInvViewProjMatrixRight;
+	public static readonly int _AO_GBufferNormals;
+	public static readonly int _AO_Target_TexelSize;
+	public static readonly int _AO_TemporalCurveAdj;
+	public static readonly int _AO_TemporalMotionSensibility;
+	public static readonly int _AO_CurrOcclusionDepth;
+	public static readonly int _AO_TemporalAccumm;
+	public static readonly int _AO_TemporalDirections;
+	public static readonly int _AO_TemporalOffsets;
+	public static readonly int _AO_OcclusionTexture;
+	public static readonly int _AO_GBufferAlbedo;
+	public static readonly int _AO_GBufferEmission;
+	public static readonly int _AO_UVToView;
+	public static readonly int _AO_HalfProjScale;
+	public static readonly int _AO_FadeParams;
+	public static readonly int _AO_FadeValues;
+	public static readonly int _AO_FadeToTint;
+	public static readonly int _AO_Source_TexelSize;
+	public static readonly int _AO_Source;
 
 
 	private static void .cctor() { }

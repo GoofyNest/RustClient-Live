@@ -1,12 +1,12 @@
-internal struct SessionDetailsSettingsInternal : IGettable<SessionDetailsSettings>, ISettable<SessionDetailsSettings>, IDisposable // TypeDefIndex: 8561
+internal struct SessionDetailsSettingsInternal : IGettable<SessionDetailsSettings>, ISettable<SessionDetailsSettings>, IDisposable // TypeDefIndex: 8563
 {
-	private int m_ApiVersion; 
-	private IntPtr m_BucketId; 
-	private uint m_NumPublicConnections; 
-	private int m_AllowJoinInProgress; 
-	private OnlineSessionPermissionLevel m_PermissionLevel; 
-	private int m_InvitesAllowed; 
-	private int m_SanctionsEnabled; 
+	private int m_ApiVersion;
+	private IntPtr m_BucketId;
+	private uint m_NumPublicConnections;
+	private int m_AllowJoinInProgress;
+	private OnlineSessionPermissionLevel m_PermissionLevel;
+	private int m_InvitesAllowed;
+	private int m_SanctionsEnabled;
 
 	public Utf8String BucketId { get; set; }
 	public uint NumPublicConnections { get; set; }

@@ -1,8 +1,8 @@
 internal sealed class RegexReplacement // TypeDefIndex: 2628
 {
-	internal string _rep; 
-	internal List<string> _strings; 
-	internal List<int> _rules; 
+	internal string _rep;
+	internal List<string> _strings;
+	internal List<int> _rules;
 
 	internal string Pattern { get; }
 

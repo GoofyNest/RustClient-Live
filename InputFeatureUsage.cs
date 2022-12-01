@@ -1,8 +1,8 @@
 public struct InputFeatureUsage : IEquatable<InputFeatureUsage> // TypeDefIndex: 4149
 {
-	internal string m_Name; 
-	[NativeNameAttribute] 
-	internal InputFeatureType m_InternalType; 
+	internal string m_Name;
+	[NativeNameAttribute]
+	internal InputFeatureType m_InternalType;
 
 	public string name { get; }
 	internal InputFeatureType internalType { get; }

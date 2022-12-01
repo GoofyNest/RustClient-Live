@@ -1,20 +1,20 @@
 internal sealed class X501 // TypeDefIndex: 57
 {
-	private static byte[] countryName; 
-	private static byte[] organizationName; 
-	private static byte[] organizationalUnitName; 
-	private static byte[] commonName; 
-	private static byte[] localityName; 
-	private static byte[] stateOrProvinceName; 
-	private static byte[] streetAddress; 
-	private static byte[] domainComponent; 
-	private static byte[] userid; 
-	private static byte[] email; 
-	private static byte[] dnQualifier; 
-	private static byte[] title; 
-	private static byte[] surname; 
-	private static byte[] givenName; 
-	private static byte[] initial; 
+	private static byte[] countryName;
+	private static byte[] organizationName;
+	private static byte[] organizationalUnitName;
+	private static byte[] commonName;
+	private static byte[] localityName;
+	private static byte[] stateOrProvinceName;
+	private static byte[] streetAddress;
+	private static byte[] domainComponent;
+	private static byte[] userid;
+	private static byte[] email;
+	private static byte[] dnQualifier;
+	private static byte[] title;
+	private static byte[] surname;
+	private static byte[] givenName;
+	private static byte[] initial;
 
 
 	public static string ToString(ASN1 seq) { }
@@ -29,21 +29,21 @@ internal sealed class X501 // TypeDefIndex: 57
 
 public sealed class X501 // TypeDefIndex: 1713
 {
-	private static byte[] countryName; 
-	private static byte[] organizationName; 
-	private static byte[] organizationalUnitName; 
-	private static byte[] commonName; 
-	private static byte[] localityName; 
-	private static byte[] stateOrProvinceName; 
-	private static byte[] streetAddress; 
-	private static byte[] domainComponent; 
-	private static byte[] userid; 
-	private static byte[] email; 
-	private static byte[] dnQualifier; 
-	private static byte[] title; 
-	private static byte[] surname; 
-	private static byte[] givenName; 
-	private static byte[] initial; 
+	private static byte[] countryName;
+	private static byte[] organizationName;
+	private static byte[] organizationalUnitName;
+	private static byte[] commonName;
+	private static byte[] localityName;
+	private static byte[] stateOrProvinceName;
+	private static byte[] streetAddress;
+	private static byte[] domainComponent;
+	private static byte[] userid;
+	private static byte[] email;
+	private static byte[] dnQualifier;
+	private static byte[] title;
+	private static byte[] surname;
+	private static byte[] givenName;
+	private static byte[] initial;
 
 
 	public static string ToString(ASN1 seq) { }

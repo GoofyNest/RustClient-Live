@@ -1,15 +1,15 @@
 public class X509Crl // TypeDefIndex: 1714
 {
-	private string issuer; 
-	private byte version; 
-	private DateTime thisUpdate; 
-	private DateTime nextUpdate; 
-	private ArrayList entries; 
-	private string signatureOID; 
-	private byte[] signature; 
-	private X509ExtensionCollection extensions; 
-	private byte[] encoded; 
-	private byte[] hash_value; 
+	private string issuer;
+	private byte version;
+	private DateTime thisUpdate;
+	private DateTime nextUpdate;
+	private ArrayList entries;
+	private string signatureOID;
+	private byte[] signature;
+	private X509ExtensionCollection extensions;
+	private byte[] encoded;
+	private byte[] hash_value;
 
 	public X509ExtensionCollection Extensions { get; }
 	public byte[] Hash { get; }
@@ -45,9 +45,9 @@ public class X509Crl // TypeDefIndex: 1714
 
 public class X509Crl.X509CrlEntry // TypeDefIndex: 1715
 {
-	private byte[] sn; 
-	private DateTime revocationDate; 
-	private X509ExtensionCollection extensions; 
+	private byte[] sn;
+	private DateTime revocationDate;
+	private X509ExtensionCollection extensions;
 
 	public byte[] SerialNumber { get; }
 	public DateTime RevocationDate { get; }

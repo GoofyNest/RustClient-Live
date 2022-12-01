@@ -1,14 +1,14 @@
-public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // TypeDefIndex: 11828
+public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // TypeDefIndex: 11835
 {
-	public static bool Paused; 
-	public float CellSize; 
-	public float MaxMilliseconds; 
+	public static bool Paused;
+	public float CellSize;
+	public float MaxMilliseconds;
 	public const float MaxRefreshDistance = 500;
 	public const float MinTimeBetweenRefreshes = 1;
-	private List<GameObject> tempInstances; 
-	private WorldSpaceGrid<WorldCell> grid; 
-	private Vector2i curCell; 
-	private Stopwatch watch; 
+	private List<GameObject> tempInstances;
+	private WorldSpaceGrid<WorldCell> grid;
+	private Vector2i curCell;
+	private Stopwatch watch;
 
 	public bool NeedsTimeout { get; }
 
@@ -27,7 +27,7 @@ public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // Type
 
 	public void ResetTimeout() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator UpdateCoroutine() { }
 
 	private Vector2i GetCurrentCellCoordinates() { }
@@ -38,37 +38,37 @@ public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // Type
 
 }
 
-private sealed class WorldGrid.<UpdateCoroutine>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11829
+private sealed class WorldGrid.<UpdateCoroutine>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11836
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public WorldGrid <>4__this; 
-	private Vector2i <newCell>5__2; 
-	private int <maxLeaveX>5__3; 
-	private int <minLeaveZ>5__4; 
-	private int <maxLeaveZ>5__5; 
-	private int <x>5__6; 
-	private int <z>5__7; 
+	private int <>1__state;
+	private object <>2__current;
+	public WorldGrid <>4__this;
+	private Vector2i <newCell>5__2;
+	private int <maxLeaveX>5__3;
+	private int <minLeaveZ>5__4;
+	private int <maxLeaveZ>5__5;
+	private int <x>5__6;
+	private int <z>5__7;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

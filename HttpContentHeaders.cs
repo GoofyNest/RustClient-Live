@@ -1,6 +1,6 @@
-public sealed class HttpContentHeaders : HttpHeaders // TypeDefIndex: 5779
+public sealed class HttpContentHeaders : HttpHeaders // TypeDefIndex: 5781
 {
-	private readonly HttpContent content; 
+	private readonly HttpContent content;
 
 	public Nullable<long> ContentLength { get; }
 	public MediaTypeHeaderValue ContentType { get; set; }

@@ -1,6 +1,6 @@
 internal class ChannelInfo : IChannelInfo // TypeDefIndex: 1126
 {
-	private object[] channelData; 
+	private object[] channelData;
 
 	public object[] ChannelData { get; }
 

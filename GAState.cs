@@ -1,48 +1,48 @@
-internal class GAState // TypeDefIndex: 5677
+internal class GAState // TypeDefIndex: 5679
 {
-	private static readonly GAState _instance; 
-	private string _userId; 
-	private string _identifier; 
-	private bool _initialized; 
-	private long _sessionStart; 
-	private int _sessionNum; 
-	private int _transactionNum; 
-	private string _sessionId; 
-	private string _currentCustomDimension01; 
-	private string _currentCustomDimension02; 
-	private string _currentCustomDimension03; 
-	private string _gameKey; 
-	private string _gameSecret; 
-	private string[] _availableCustomDimensions01; 
-	private string[] _availableCustomDimensions02; 
-	private string[] _availableCustomDimensions03; 
-	private string[] _availableResourceCurrencies; 
-	private string[] _availableResourceItemTypes; 
-	private string _build; 
-	private bool _isEventSubmissionEnabled; 
-	[CompilerGeneratedAttribute] 
-	private bool <Enabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <FacebookId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Gender>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <BirthYear>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private JSONNode <SdkConfigCached>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <InitAuthorized>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <ClientServerTimeOffset>k__BackingField; 
-	private string _defaultUserId; 
-	private Dictionary<string, int> progressionTries; 
-	private JSONNode sdkConfigDefault; 
-	private JSONNode sdkConfig; 
-	private JSONNode sdkConfigCached; 
-	private JSONNode configurations; 
-	private bool commandCenterIsReady; 
-	private readonly List<ICommandCenterListener> commandCenterListeners; 
-	private readonly object configurationsLock; 
+	private static readonly GAState _instance;
+	private string _userId;
+	private string _identifier;
+	private bool _initialized;
+	private long _sessionStart;
+	private int _sessionNum;
+	private int _transactionNum;
+	private string _sessionId;
+	private string _currentCustomDimension01;
+	private string _currentCustomDimension02;
+	private string _currentCustomDimension03;
+	private string _gameKey;
+	private string _gameSecret;
+	private string[] _availableCustomDimensions01;
+	private string[] _availableCustomDimensions02;
+	private string[] _availableCustomDimensions03;
+	private string[] _availableResourceCurrencies;
+	private string[] _availableResourceItemTypes;
+	private string _build;
+	private bool _isEventSubmissionEnabled;
+	[CompilerGeneratedAttribute]
+	private bool <Enabled>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <FacebookId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Gender>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <BirthYear>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private JSONNode <SdkConfigCached>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <InitAuthorized>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <ClientServerTimeOffset>k__BackingField;
+	private string _defaultUserId;
+	private Dictionary<string, int> progressionTries;
+	private JSONNode sdkConfigDefault;
+	private JSONNode sdkConfig;
+	private JSONNode sdkConfigCached;
+	private JSONNode configurations;
+	private bool commandCenterIsReady;
+	private readonly List<ICommandCenterListener> commandCenterListeners;
+	private readonly object configurationsLock;
 
 	private static GAState Instance { get; }
 	private static string UserId { get; set; }
@@ -135,43 +135,43 @@ internal class GAState // TypeDefIndex: 5677
 
 	public static bool get_IsEventSubmissionEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool get_Enabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Enabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private string get_FacebookId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_FacebookId(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private string get_Gender() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Gender(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private int get_BirthYear() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_BirthYear(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SdkConfigCached(JSONNode value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool get_InitAuthorized() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_InitAuthorized(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private long get_ClientServerTimeOffset() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ClientServerTimeOffset(long value) { }
 
 	private string get_DefaultUserId() { }

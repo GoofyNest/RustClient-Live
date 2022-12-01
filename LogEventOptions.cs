@@ -1,33 +1,33 @@
-public struct LogEventOptions // TypeDefIndex: 9763
+public struct LogEventOptions // TypeDefIndex: 9765
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ClientHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <EventId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LogEventParamPair[] <Params>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <ClientHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <EventId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LogEventParamPair[] <Params>k__BackingField;
 
 	public IntPtr ClientHandle { get; set; }
 	public uint EventId { get; set; }
 	public LogEventParamPair[] Params { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ClientHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_EventId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EventId(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LogEventParamPair[] get_Params() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Params(LogEventParamPair[] value) { }
 
 }

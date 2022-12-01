@@ -1,6 +1,6 @@
 public sealed class ComputeBuffer : IDisposable // TypeDefIndex: 3552
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 	public int count { get; }
 
@@ -11,10 +11,10 @@ public sealed class ComputeBuffer : IDisposable // TypeDefIndex: 3552
 
 	private void Dispose(bool disposing) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr InitBuffer(int count, int stride, ComputeBufferType type, ComputeBufferMode usage) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void DestroyBuffer(ComputeBuffer buf) { }
 
 	public void .ctor(int count, int stride) { }
@@ -39,15 +39,15 @@ public sealed class ComputeBuffer : IDisposable // TypeDefIndex: 3552
 	|-ComputeBuffer.SetData<Vector4>
 	*/
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void InternalSetNativeData(IntPtr data, int nativeBufferStartIndex, int computeBufferStartIndex, int count, int elemSize) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void InternalSetData(Array data, int managedBufferStartIndex, int computeBufferStartIndex, int count, int elemSize) { }
 
 	public void GetData(Array data) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void InternalGetData(Array data, int managedBufferStartIndex, int computeBufferStartIndex, int count, int elemSize) { }
 
 	public static void CopyCount(ComputeBuffer src, ComputeBuffer dst, int dstOffsetBytes) { }

@@ -1,6 +1,6 @@
-public class ColorCorrectionRamp : ImageEffectBase // TypeDefIndex: 8191
+public class ColorCorrectionRamp : ImageEffectBase // TypeDefIndex: 8193
 {
-	public Texture textureRamp; 
+	public Texture textureRamp;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }

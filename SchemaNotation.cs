@@ -1,8 +1,8 @@
 internal sealed class SchemaNotation // TypeDefIndex: 2284
 {
-	private XmlQualifiedName name; 
-	private string systemLiteral; 
-	private string pubid; 
+	private XmlQualifiedName name;
+	private string systemLiteral;
+	private string pubid;
 
 	internal XmlQualifiedName Name { get; }
 	internal string SystemLiteral { get; set; }

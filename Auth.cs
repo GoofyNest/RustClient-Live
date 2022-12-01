@@ -1,9 +1,9 @@
-public class Auth // TypeDefIndex: 6248
+public class Auth // TypeDefIndex: 6250
 {
-	public string Type; 
-	public string Id; 
-	public string Ticket; 
-	public string Name; 
+	public string Type;
+	public string Id;
+	public string Ticket;
+	public string Name;
 
 
 	public static Auth Steam(string ticket, ulong steamId, string username) { }

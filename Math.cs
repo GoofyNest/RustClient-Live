@@ -1,8 +1,8 @@
 public static class Math // TypeDefIndex: 266
 {
-	private static double doubleRoundLimit; 
+	private static double doubleRoundLimit;
 	private const int maxRoundingDigits = 15;
-	private static double[] roundPower10Double; 
+	private static double[] roundPower10Double;
 	public const double PI = 3,14159265358979;
 	public const double E = 2,71828182845905;
 
@@ -47,7 +47,7 @@ public static class Math // TypeDefIndex: 266
 
 	public static double Truncate(double d) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static double Sqrt(double d) { }
 
 	public static double Log(double d) { }
@@ -70,78 +70,78 @@ public static class Math // TypeDefIndex: 266
 
 	public static double Abs(double value) { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public static sbyte Max(sbyte val1, sbyte val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static byte Max(byte val1, byte val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static short Max(short val1, short val2) { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public static ushort Max(ushort val1, ushort val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Max(int val1, int val2) { }
 
-	[ReliabilityContractAttribute] 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public static uint Max(uint val1, uint val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static long Max(long val1, long val2) { }
 
-	[ReliabilityContractAttribute] 
-	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute]
+	[CLSCompliantAttribute]
 	public static ulong Max(ulong val1, ulong val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static float Max(float val1, float val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static double Max(double val1, double val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static Decimal Max(Decimal val1, Decimal val2) { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
+	[CLSCompliantAttribute]
 	public static sbyte Min(sbyte val1, sbyte val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static byte Min(byte val1, byte val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static short Min(short val1, short val2) { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute]
+	[ReliabilityContractAttribute]
 	public static ushort Min(ushort val1, ushort val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Min(int val1, int val2) { }
 
-	[ReliabilityContractAttribute] 
-	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute]
+	[CLSCompliantAttribute]
 	public static uint Min(uint val1, uint val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static long Min(long val1, long val2) { }
 
-	[CLSCompliantAttribute] 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
+	[CLSCompliantAttribute]
 	public static ulong Min(ulong val1, ulong val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static float Min(float val1, float val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static double Min(double val1, double val2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static Decimal Min(Decimal val1, Decimal val2) { }
 
 	public static double Log(double a, double newBase) { }
@@ -158,7 +158,7 @@ public static class Math // TypeDefIndex: 266
 
 }
 
-public static class math // TypeDefIndex: 7139
+public static class math // TypeDefIndex: 7141
 {
 
 public static class math
@@ -299,10 +299,10 @@ public static class math
 
 }
 
-internal struct math.IntFloatUnion // TypeDefIndex: 7140
+internal struct math.IntFloatUnion // TypeDefIndex: 7142
 {
-	public int intValue; 
-	public float floatValue; 
+	public int intValue;
+	public float floatValue;
 
 }
 

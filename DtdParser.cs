@@ -1,38 +1,38 @@
 internal class DtdParser : IDtdParser // TypeDefIndex: 1993
 {
-	private IDtdParserAdapter readerAdapter; 
-	private IDtdParserAdapterWithValidation readerAdapterWithValidation; 
-	private XmlNameTable nameTable; 
-	private SchemaInfo schemaInfo; 
-	private XmlCharType xmlCharType; 
-	private string systemId; 
-	private string publicId; 
-	private bool normalize; 
-	private bool validate; 
-	private bool supportNamespaces; 
-	private bool v1Compat; 
-	private char[] chars; 
-	private int charsUsed; 
-	private int curPos; 
-	private DtdParser.ScanningFunction scanningFunction; 
-	private DtdParser.ScanningFunction nextScaningFunction; 
-	private DtdParser.ScanningFunction savedScanningFunction; 
-	private bool whitespaceSeen; 
-	private int tokenStartPos; 
-	private int colonPos; 
-	private StringBuilder internalSubsetValueSb; 
-	private int externalEntitiesDepth; 
-	private int currentEntityId; 
-	private bool freeFloatingDtd; 
-	private bool hasFreeFloatingInternalSubset; 
-	private StringBuilder stringBuilder; 
-	private int condSectionDepth; 
-	private LineInfo literalLineInfo; 
-	private char literalQuoteChar; 
-	private string documentBaseUri; 
-	private string externalDtdBaseUri; 
-	private Dictionary<string, DtdParser.UndeclaredNotation> undeclaredNotations; 
-	private int[] condSectionEntityIds; 
+	private IDtdParserAdapter readerAdapter;
+	private IDtdParserAdapterWithValidation readerAdapterWithValidation;
+	private XmlNameTable nameTable;
+	private SchemaInfo schemaInfo;
+	private XmlCharType xmlCharType;
+	private string systemId;
+	private string publicId;
+	private bool normalize;
+	private bool validate;
+	private bool supportNamespaces;
+	private bool v1Compat;
+	private char[] chars;
+	private int charsUsed;
+	private int curPos;
+	private DtdParser.ScanningFunction scanningFunction;
+	private DtdParser.ScanningFunction nextScaningFunction;
+	private DtdParser.ScanningFunction savedScanningFunction;
+	private bool whitespaceSeen;
+	private int tokenStartPos;
+	private int colonPos;
+	private StringBuilder internalSubsetValueSb;
+	private int externalEntitiesDepth;
+	private int currentEntityId;
+	private bool freeFloatingDtd;
+	private bool hasFreeFloatingInternalSubset;
+	private StringBuilder stringBuilder;
+	private int condSectionDepth;
+	private LineInfo literalLineInfo;
+	private char literalQuoteChar;
+	private string documentBaseUri;
+	private string externalDtdBaseUri;
+	private Dictionary<string, DtdParser.UndeclaredNotation> undeclaredNotations;
+	private int[] condSectionEntityIds;
 
 	private bool ParsingInternalSubset { get; }
 	private bool IgnoreEntityReferences { get; }
@@ -257,7 +257,7 @@ internal class DtdParser : IDtdParser // TypeDefIndex: 1993
 
 private enum DtdParser.Token // TypeDefIndex: 1994
 {
-	public int value__; 
+	public int value__;
 	public const DtdParser.Token CDATA = 0;
 	public const DtdParser.Token ID = 1;
 	public const DtdParser.Token IDREF = 2;
@@ -311,7 +311,7 @@ private enum DtdParser.Token // TypeDefIndex: 1994
 
 private enum DtdParser.ScanningFunction // TypeDefIndex: 1995
 {
-	public int value__; 
+	public int value__;
 	public const DtdParser.ScanningFunction SubsetContent = 0;
 	public const DtdParser.ScanningFunction Name = 1;
 	public const DtdParser.ScanningFunction QName = 2;
@@ -351,7 +351,7 @@ private enum DtdParser.ScanningFunction // TypeDefIndex: 1995
 
 private enum DtdParser.LiteralType // TypeDefIndex: 1996
 {
-	public int value__; 
+	public int value__;
 	public const DtdParser.LiteralType AttributeValue = 0;
 	public const DtdParser.LiteralType EntityReplText = 1;
 	public const DtdParser.LiteralType SystemOrPublicID = 2;
@@ -360,10 +360,10 @@ private enum DtdParser.LiteralType // TypeDefIndex: 1996
 
 private class DtdParser.UndeclaredNotation // TypeDefIndex: 1997
 {
-	internal string name; 
-	internal int lineNo; 
-	internal int linePos; 
-	internal DtdParser.UndeclaredNotation next; 
+	internal string name;
+	internal int lineNo;
+	internal int linePos;
+	internal DtdParser.UndeclaredNotation next;
 
 
 	internal void .ctor(string name, int lineNo, int linePos) { }
@@ -372,8 +372,8 @@ private class DtdParser.UndeclaredNotation // TypeDefIndex: 1997
 
 private class DtdParser.ParseElementOnlyContent_LocalFrame // TypeDefIndex: 1998
 {
-	public int startParenEntityId; 
-	public DtdParser.Token parsingSchema; 
+	public int startParenEntityId;
+	public DtdParser.Token parsingSchema;
 
 
 	public void .ctor(int startParentEntityIdParam) { }

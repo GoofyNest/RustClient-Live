@@ -1,6 +1,6 @@
-public class Deployer : HeldEntity // TypeDefIndex: 10284
+public class Deployer : HeldEntity // TypeDefIndex: 10287
 {
-	private string placementError; 
+	private string placementError;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

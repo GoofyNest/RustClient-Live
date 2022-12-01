@@ -1,6 +1,6 @@
-public enum LZ4StreamFlags // TypeDefIndex: 7021
+public enum LZ4StreamFlags // TypeDefIndex: 7023
 {
-	public int value__; 
+	public int value__;
 	public const LZ4StreamFlags None = 0;
 	public const LZ4StreamFlags InteractiveRead = 1;
 	public const LZ4StreamFlags HighCompression = 2;

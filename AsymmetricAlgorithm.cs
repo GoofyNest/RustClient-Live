@@ -1,7 +1,7 @@
 public abstract class AsymmetricAlgorithm : IDisposable // TypeDefIndex: 938
 {
-	protected int KeySizeValue; 
-	protected KeySizes[] LegalKeySizesValue; 
+	protected int KeySizeValue;
+	protected KeySizes[] LegalKeySizesValue;
 
 	public virtual int KeySize { get; set; }
 

@@ -1,18 +1,18 @@
-public class Recipe : ScriptableObject // TypeDefIndex: 12502
+public class Recipe : ScriptableObject // TypeDefIndex: 12510
 {
-	[HeaderAttribute] 
-	public ItemDefinition ProducedItem; 
-	public int ProducedItemCount; 
-	public bool CanQueueMultiple; 
-	[HeaderAttribute] 
-	public GameObjectRef SpawnedItem; 
-	public string SpawnedItemName; 
-	public string SpawnedItemDescription; 
-	public Sprite SpawnedItemIcon; 
-	[HeaderAttribute] 
-	public bool RequiresBlueprint; 
-	public Recipe.RecipeIngredient[] Ingredients; 
-	public float MixingDuration; 
+	[HeaderAttribute]
+	public ItemDefinition ProducedItem;
+	public int ProducedItemCount;
+	public bool CanQueueMultiple;
+	[HeaderAttribute]
+	public GameObjectRef SpawnedItem;
+	public string SpawnedItemName;
+	public string SpawnedItemDescription;
+	public Sprite SpawnedItemIcon;
+	[HeaderAttribute]
+	public bool RequiresBlueprint;
+	public Recipe.RecipeIngredient[] Ingredients;
+	public float MixingDuration;
 
 	public string DisplayName { get; }
 	public string DisplayDescription { get; }
@@ -31,10 +31,10 @@ public class Recipe : ScriptableObject // TypeDefIndex: 12502
 
 }
 
-public struct Recipe.RecipeIngredient // TypeDefIndex: 12503
+public struct Recipe.RecipeIngredient // TypeDefIndex: 12511
 {
-	public ItemDefinition Ingredient; 
-	public int Count; 
+	public ItemDefinition Ingredient;
+	public int Count;
 
 }
 

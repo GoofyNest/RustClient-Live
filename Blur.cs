@@ -1,9 +1,9 @@
-public class Blur : MonoBehaviour, IImageEffect // TypeDefIndex: 8183
+public class Blur : MonoBehaviour, IImageEffect // TypeDefIndex: 8185
 {
-	public int iterations; 
-	public float blurSpread; 
-	public Shader blurShader; 
-	private static Material m_Material; 
+	public int iterations;
+	public float blurSpread;
+	public Shader blurShader;
+	private static Material m_Material;
 
 	protected Material material { get; }
 

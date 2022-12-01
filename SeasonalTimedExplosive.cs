@@ -1,6 +1,6 @@
-public class SeasonalTimedExplosive : TimedExplosive // TypeDefIndex: 11416
+public class SeasonalTimedExplosive : TimedExplosive // TypeDefIndex: 11422
 {
-	public RandomRendererEnable randomRenderer; 
+	public RandomRendererEnable randomRenderer;
 
 
 	protected override void SpawnGibs() { }

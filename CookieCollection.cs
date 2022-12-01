@@ -1,11 +1,11 @@
 public class CookieCollection : ICollection, IEnumerable // TypeDefIndex: 2940
 {
-	internal int m_version; 
-	private ArrayList m_list; 
-	private DateTime m_TimeStamp; 
-	private bool m_has_other_versions; 
-	[OptionalFieldAttribute] 
-	private bool m_IsReadOnly; 
+	internal int m_version;
+	private ArrayList m_list;
+	private DateTime m_TimeStamp;
+	private bool m_has_other_versions;
+	[OptionalFieldAttribute]
+	private bool m_IsReadOnly;
 
 	public Cookie Item { get; }
 	public int Count { get; }
@@ -43,7 +43,7 @@ public class CookieCollection : ICollection, IEnumerable // TypeDefIndex: 2940
 
 internal enum CookieCollection.Stamp // TypeDefIndex: 2941
 {
-	public int value__; 
+	public int value__;
 	public const CookieCollection.Stamp Check = 0;
 	public const CookieCollection.Stamp Set = 1;
 	public const CookieCollection.Stamp SetToUnused = 2;
@@ -53,10 +53,10 @@ internal enum CookieCollection.Stamp // TypeDefIndex: 2941
 
 private class CookieCollection.CookieCollectionEnumerator : IEnumerator // TypeDefIndex: 2942
 {
-	private CookieCollection m_cookies; 
-	private int m_count; 
-	private int m_index; 
-	private int m_version; 
+	private CookieCollection m_cookies;
+	private int m_count;
+	private int m_index;
+	private int m_version;
 
 	private object System.Collections.IEnumerator.Current { get; }
 

@@ -1,8 +1,8 @@
 public class WellKnownClientTypeEntry : TypeEntry // TypeDefIndex: 1154
 {
-	private Type obj_type; 
-	private string obj_url; 
-	private string app_url; 
+	private Type obj_type;
+	private string obj_url;
+	private string app_url;
 
 	public string ApplicationUrl { get; }
 	public Type ObjectType { get; }

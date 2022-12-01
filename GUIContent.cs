@@ -1,15 +1,15 @@
 public class GUIContent // TypeDefIndex: 4040
 {
-	[SerializeField] 
-	private string m_Text; 
-	[SerializeField] 
-	private Texture m_Image; 
-	[SerializeField] 
-	private string m_Tooltip; 
-	private static readonly GUIContent s_Text; 
-	private static readonly GUIContent s_Image; 
-	private static readonly GUIContent s_TextImage; 
-	public static GUIContent none; 
+	[SerializeField]
+	private string m_Text;
+	[SerializeField]
+	private Texture m_Image;
+	[SerializeField]
+	private string m_Tooltip;
+	private static readonly GUIContent s_Text;
+	private static readonly GUIContent s_Image;
+	private static readonly GUIContent s_TextImage;
+	public static GUIContent none;
 
 	public string text { get; set; }
 	public Texture image { set; }
@@ -38,7 +38,7 @@ public class GUIContent // TypeDefIndex: 4040
 
 	internal static GUIContent Temp(string t) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void ClearStaticCache() { }
 
 	internal static GUIContent[] Temp(string[] texts) { }

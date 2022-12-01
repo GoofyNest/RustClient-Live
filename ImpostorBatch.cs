@@ -1,18 +1,18 @@
-public class ImpostorBatch // TypeDefIndex: 12431
+public class ImpostorBatch // TypeDefIndex: 12439
 {
-	[CompilerGeneratedAttribute] 
-	private Mesh <Mesh>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <Material>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ComputeBuffer <PositionBuffer>k__BackingField; 
-	public FPNativeList<Vector4> Positions; 
-	[CompilerGeneratedAttribute] 
-	private ComputeBuffer <ArgsBuffer>k__BackingField; 
-	private FPNativeList<uint> args; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsDirty>k__BackingField; 
-	private Queue<int> recycle; 
+	[CompilerGeneratedAttribute]
+	private Mesh <Mesh>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <Material>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ComputeBuffer <PositionBuffer>k__BackingField;
+	public FPNativeList<Vector4> Positions;
+	[CompilerGeneratedAttribute]
+	private ComputeBuffer <ArgsBuffer>k__BackingField;
+	private FPNativeList<uint> args;
+	[CompilerGeneratedAttribute]
+	private bool <IsDirty>k__BackingField;
+	private Queue<int> recycle;
 
 	public Mesh Mesh { get; set; }
 	public Material Material { get; set; }
@@ -23,34 +23,34 @@ public class ImpostorBatch // TypeDefIndex: 12431
 	public bool Visible { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Mesh(Mesh value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Mesh get_Mesh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Material(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_Material() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_PositionBuffer(ComputeBuffer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ComputeBuffer get_PositionBuffer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ArgsBuffer(ComputeBuffer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ComputeBuffer get_ArgsBuffer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsDirty() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsDirty(bool value) { }
 
 	public int get_Count() { }

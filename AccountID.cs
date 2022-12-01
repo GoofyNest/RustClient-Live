@@ -1,6 +1,6 @@
-internal struct AccountID_t : IEquatable<AccountID_t>, IComparable<AccountID_t> // TypeDefIndex: 5525
+internal struct AccountID_t : IEquatable<AccountID_t>, IComparable<AccountID_t> // TypeDefIndex: 5527
 {
-	public uint Value; 
+	public uint Value;
 
 
 	public static AccountID_t op_Implicit(uint value) { }

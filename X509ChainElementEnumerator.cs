@@ -1,6 +1,6 @@
 public sealed class X509ChainElementEnumerator : IEnumerator // TypeDefIndex: 2825
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public X509ChainElement Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

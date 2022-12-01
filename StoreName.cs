@@ -1,6 +1,6 @@
 public enum StoreName // TypeDefIndex: 2800
 {
-	public int value__; 
+	public int value__;
 	public const StoreName AddressBook = 1;
 	public const StoreName AuthRoot = 2;
 	public const StoreName CertificateAuthority = 3;

@@ -1,10 +1,10 @@
 internal class CharEntityEncoderFallback : EncoderFallback // TypeDefIndex: 1834
 {
-	private CharEntityEncoderFallbackBuffer fallbackBuffer; 
-	private int[] textContentMarks; 
-	private int endMarkPos; 
-	private int curMarkPos; 
-	private int startOffset; 
+	private CharEntityEncoderFallbackBuffer fallbackBuffer;
+	private int[] textContentMarks;
+	private int endMarkPos;
+	private int curMarkPos;
+	private int startOffset;
 
 	public override int MaxCharCount { get; }
 	internal int StartOffset { set; }

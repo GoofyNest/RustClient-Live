@@ -1,12 +1,12 @@
-public class GunModInformationPanel : ItemInformationPanel // TypeDefIndex: 12770
+public class GunModInformationPanel : ItemInformationPanel // TypeDefIndex: 12784
 {
-	public ItemTextValue fireRateDisplay; 
-	public ItemTextValue velocityDisplay; 
-	public ItemTextValue damageDisplay; 
-	public ItemTextValue accuracyDisplay; 
-	public ItemTextValue recoilDisplay; 
-	public ItemTextValue zoomDisplay; 
-	public ItemTextValue ammoDisplay; 
+	public ItemTextValue fireRateDisplay;
+	public ItemTextValue velocityDisplay;
+	public ItemTextValue damageDisplay;
+	public ItemTextValue accuracyDisplay;
+	public ItemTextValue recoilDisplay;
+	public ItemTextValue zoomDisplay;
+	public ItemTextValue ammoDisplay;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

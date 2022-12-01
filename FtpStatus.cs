@@ -1,7 +1,7 @@
 internal class FtpStatus // TypeDefIndex: 3001
 {
-	private readonly FtpStatusCode statusCode; 
-	private readonly string statusDescription; 
+	private readonly FtpStatusCode statusCode;
+	private readonly string statusDescription;
 
 	public FtpStatusCode StatusCode { get; }
 	public string StatusDescription { get; }

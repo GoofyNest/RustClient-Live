@@ -1,11 +1,11 @@
-public abstract class WeatherEffect : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 11814
+public abstract class WeatherEffect : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 11821
 {
-	public ParticleSystem[] emitOnStart; 
-	public ParticleSystem[] emitOnStop; 
-	public ParticleSystem[] emitOnLoop; 
-	private float currentIntensity; 
-	private float[] maxEmissionRates; 
-	private Action invokeUpdate; 
+	public ParticleSystem[] emitOnStart;
+	public ParticleSystem[] emitOnStop;
+	public ParticleSystem[] emitOnLoop;
+	private float currentIntensity;
+	private float[] maxEmissionRates;
+	private Action invokeUpdate;
 
 
 	protected void Awake() { }

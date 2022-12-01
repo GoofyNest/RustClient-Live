@@ -1,14 +1,14 @@
 public struct InventoryResult : IDisposable // TypeDefIndex: 5256
 {
-	internal SteamInventoryResult_t _id; 
-	[CompilerGeneratedAttribute] 
-	private bool <Expired>k__BackingField; 
+	internal SteamInventoryResult_t _id;
+	[CompilerGeneratedAttribute]
+	private bool <Expired>k__BackingField;
 
 	internal bool Expired { set; }
 	public int ItemCount { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Expired(bool value) { }
 
 	internal void .ctor(SteamInventoryResult_t id, bool expired) { }
@@ -21,7 +21,7 @@ public struct InventoryResult : IDisposable // TypeDefIndex: 5256
 
 	public void Dispose() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	internal static Task<Nullable<InventoryResult>> GetAsync(SteamInventoryResult_t sresult) { }
 
 	public byte[] Serialize() { }
@@ -30,16 +30,16 @@ public struct InventoryResult : IDisposable // TypeDefIndex: 5256
 
 private struct InventoryResult.<GetAsync>d__11 : IAsyncStateMachine // TypeDefIndex: 5257
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
-	public SteamInventoryResult_t sresult; 
-	private Result <_result>5__2; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder;
+	public SteamInventoryResult_t sresult;
+	private Result <_result>5__2;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

@@ -1,15 +1,15 @@
-public struct WriteFileOptions // TypeDefIndex: 8931
+public struct WriteFileOptions // TypeDefIndex: 8933
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <ChunkLengthBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnWriteFileDataCallback <WriteFileDataCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnFileTransferProgressCallback <FileTransferProgressCallback>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <ChunkLengthBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnWriteFileDataCallback <WriteFileDataCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnFileTransferProgressCallback <FileTransferProgressCallback>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String Filename { get; set; }
@@ -18,34 +18,34 @@ public struct WriteFileOptions // TypeDefIndex: 8931
 	public OnFileTransferProgressCallback FileTransferProgressCallback { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_ChunkLengthBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ChunkLengthBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnWriteFileDataCallback get_WriteFileDataCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_WriteFileDataCallback(OnWriteFileDataCallback value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnFileTransferProgressCallback get_FileTransferProgressCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FileTransferProgressCallback(OnFileTransferProgressCallback value) { }
 
 }

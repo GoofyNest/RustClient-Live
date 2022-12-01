@@ -1,8 +1,8 @@
 internal sealed class RegexFC // TypeDefIndex: 2614
 {
-	internal RegexCharClass _cc; 
-	internal bool _nullable; 
-	internal bool _caseInsensitive; 
+	internal RegexCharClass _cc;
+	internal bool _nullable;
+	internal bool _caseInsensitive;
 
 
 	internal void .ctor(bool nullable) { }

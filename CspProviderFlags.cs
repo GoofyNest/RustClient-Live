@@ -1,6 +1,6 @@
 public enum CspProviderFlags // TypeDefIndex: 946
 {
-	public int value__; 
+	public int value__;
 	public const CspProviderFlags NoFlags = 0;
 	public const CspProviderFlags UseMachineKeyStore = 1;
 	public const CspProviderFlags UseDefaultKeyContainer = 2;

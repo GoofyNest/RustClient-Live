@@ -1,16 +1,16 @@
 internal struct ExecutionContextSwitcher // TypeDefIndex: 781
 {
-	internal ExecutionContext.Reader outerEC; 
-	internal bool outerECBelongsToScope; 
-	internal object hecsw; 
-	internal Thread thread; 
+	internal ExecutionContext.Reader outerEC;
+	internal bool outerECBelongsToScope;
+	internal object hecsw;
+	internal Thread thread;
 
 
-	[ReliabilityContractAttribute] 
-	[HandleProcessCorruptedStateExceptionsAttribute] 
+	[ReliabilityContractAttribute]
+	[HandleProcessCorruptedStateExceptionsAttribute]
 	internal bool UndoNoThrow() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal void Undo() { }
 
 }

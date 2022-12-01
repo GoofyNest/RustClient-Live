@@ -1,8 +1,8 @@
-internal struct SessionSearchSetParameterOptionsInternal : ISettable<SessionSearchSetParameterOptions>, IDisposable // TypeDefIndex: 8599
+internal struct SessionSearchSetParameterOptionsInternal : ISettable<SessionSearchSetParameterOptions>, IDisposable // TypeDefIndex: 8601
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Parameter; 
-	private ComparisonOp m_ComparisonOp; 
+	private int m_ApiVersion;
+	private IntPtr m_Parameter;
+	private ComparisonOp m_ComparisonOp;
 
 	public Nullable<AttributeData> Parameter { set; }
 	public ComparisonOp ComparisonOp { set; }

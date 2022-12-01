@@ -1,7 +1,7 @@
-public class SoundVoiceLimiter : MonoBehaviour, IClientComponent // TypeDefIndex: 10772
+public class SoundVoiceLimiter : MonoBehaviour, IClientComponent // TypeDefIndex: 10776
 {
-	public int maxSimultaneousSounds; 
-	private List<Sound> sounds; 
+	public int maxSimultaneousSounds;
+	private List<Sound> sounds;
 
 
 	public void EnforceSoundLimit() { }

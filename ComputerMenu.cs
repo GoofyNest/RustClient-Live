@@ -1,9 +1,9 @@
-public class ComputerMenu : UIDialog // TypeDefIndex: 10407
+public class ComputerMenu : UIDialog // TypeDefIndex: 10411
 {
-	public RectTransform bookmarkContainer; 
-	public GameObject bookmarkPrefab; 
-	public List<RCBookmarkEntry> activeEntries; 
-	public EntityRef ownerComputer; 
+	public RectTransform bookmarkContainer;
+	public GameObject bookmarkPrefab;
+	public List<RCBookmarkEntry> activeEntries;
+	public EntityRef ownerComputer;
 
 
 	public virtual void InitMenu(BaseEntity computer) { }

@@ -1,8 +1,8 @@
-public class RigidbodyInfo : PrefabAttribute, IClientComponent // TypeDefIndex: 13121
+public class RigidbodyInfo : PrefabAttribute, IClientComponent // TypeDefIndex: 13136
 {
-	public float mass; 
-	public float drag; 
-	public float angularDrag; 
+	public float mass;
+	public float drag;
+	public float angularDrag;
 
 
 	protected override Type GetIndexedType() { }

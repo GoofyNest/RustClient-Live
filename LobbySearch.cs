@@ -1,4 +1,4 @@
-public sealed class LobbySearch : Handle // TypeDefIndex: 9183
+public sealed class LobbySearch : Handle // TypeDefIndex: 9185
 {
 	public const int LobbysearchCopysearchresultbyindexApiLatest = 1;
 	public const int LobbysearchFindApiLatest = 1;
@@ -32,7 +32,7 @@ public sealed class LobbySearch : Handle // TypeDefIndex: 9183
 
 	public Result SetTargetUserId(ref LobbySearchSetTargetUserIdOptions options) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnFindCallbackInternalImplementation(ref LobbySearchFindCallbackInfoInternal data) { }
 
 }

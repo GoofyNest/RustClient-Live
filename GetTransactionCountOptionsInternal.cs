@@ -1,7 +1,7 @@
-internal struct GetTransactionCountOptionsInternal : ISettable<GetTransactionCountOptions>, IDisposable // TypeDefIndex: 9476
+internal struct GetTransactionCountOptionsInternal : ISettable<GetTransactionCountOptions>, IDisposable // TypeDefIndex: 9478
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
 
 	public EpicAccountId LocalUserId { set; }
 

@@ -1,10 +1,10 @@
-internal struct LeaderboardRecordInternal : IGettable<LeaderboardRecord>, ISettable<LeaderboardRecord>, IDisposable // TypeDefIndex: 9298
+internal struct LeaderboardRecordInternal : IGettable<LeaderboardRecord>, ISettable<LeaderboardRecord>, IDisposable // TypeDefIndex: 9300
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
-	private uint m_Rank; 
-	private int m_Score; 
-	private IntPtr m_UserDisplayName; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
+	private uint m_Rank;
+	private int m_Score;
+	private IntPtr m_UserDisplayName;
 
 	public ProductUserId UserId { get; set; }
 	public uint Rank { get; set; }

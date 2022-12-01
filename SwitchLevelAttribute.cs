@@ -1,6 +1,6 @@
 public sealed class SwitchLevelAttribute : Attribute // TypeDefIndex: 2636
 {
-	private Type type; 
+	private Type type;
 
 	public Type SwitchLevelType { set; }
 

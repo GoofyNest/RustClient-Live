@@ -1,6 +1,6 @@
 public enum MeshTopology // TypeDefIndex: 3423
 {
-	public int value__; 
+	public int value__;
 	public const MeshTopology Triangles = 0;
 	public const MeshTopology Quads = 2;
 	public const MeshTopology Lines = 3;

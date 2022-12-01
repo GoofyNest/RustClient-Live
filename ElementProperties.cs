@@ -1,6 +1,6 @@
 internal enum ElementProperties // TypeDefIndex: 1862
 {
-	public uint value__; 
+	public uint value__;
 	public const ElementProperties DEFAULT = 0;
 	public const ElementProperties URI_PARENT = 1;
 	public const ElementProperties BOOL_PARENT = 2;

@@ -1,23 +1,23 @@
-public class WaterRuntime // TypeDefIndex: 12372
+public class WaterRuntime // TypeDefIndex: 12380
 {
-	[CompilerGeneratedAttribute] 
-	private WaterCamera <WaterCamera>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Camera <Camera>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PostOpaqueDepth <PostOpaqueDepth>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private CommandBufferManager <CommandBufferManager>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <SimulateNextFrame>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WaterSimulation <Simulation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private WaterRendering <Rendering>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <VisibilityMask>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsInitialized>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private WaterCamera <WaterCamera>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Camera <Camera>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PostOpaqueDepth <PostOpaqueDepth>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private CommandBufferManager <CommandBufferManager>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <SimulateNextFrame>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WaterSimulation <Simulation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private WaterRendering <Rendering>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <VisibilityMask>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsInitialized>k__BackingField;
 
 	public WaterCamera WaterCamera { get; set; }
 	public Camera Camera { get; set; }
@@ -30,58 +30,58 @@ public class WaterRuntime // TypeDefIndex: 12372
 	public bool IsInitialized { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WaterCamera(WaterCamera value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WaterCamera get_WaterCamera() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Camera(Camera value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Camera get_Camera() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_PostOpaqueDepth(PostOpaqueDepth value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PostOpaqueDepth get_PostOpaqueDepth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CommandBufferManager(CommandBufferManager value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public CommandBufferManager get_CommandBufferManager() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SimulateNextFrame(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_SimulateNextFrame() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Simulation(WaterSimulation value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WaterSimulation get_Simulation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Rendering(WaterRendering value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public WaterRendering get_Rendering() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_VisibilityMask(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_VisibilityMask() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsInitialized(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsInitialized() { }
 
 	public void .ctor(WaterCamera camera) { }

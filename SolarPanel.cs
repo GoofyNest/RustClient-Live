@@ -1,10 +1,10 @@
-public class SolarPanel : IOEntity // TypeDefIndex: 10434
+public class SolarPanel : IOEntity // TypeDefIndex: 10438
 {
-	public Transform sunSampler; 
+	public Transform sunSampler;
 	private const int tickrateSeconds = 60;
-	public int maximalPowerOutput; 
-	public float dot_minimum; 
-	public float dot_maximum; 
+	public int maximalPowerOutput;
+	public float dot_minimum;
+	public float dot_maximum;
 
 
 	public override bool IsRootEntity() { }

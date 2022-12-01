@@ -1,9 +1,9 @@
-internal struct RemoveUGCDependencyResult_t : ICallbackData // TypeDefIndex: 5448
+internal struct RemoveUGCDependencyResult_t : ICallbackData // TypeDefIndex: 5450
 {
-	internal Result Result; 
-	internal PublishedFileId PublishedFileId; 
-	internal PublishedFileId ChildPublishedFileId; 
-	public static int _datasize; 
+	internal Result Result;
+	internal PublishedFileId PublishedFileId;
+	internal PublishedFileId ChildPublishedFileId;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,9 +1,9 @@
 public class GUITargetAttribute : Attribute // TypeDefIndex: 4055
 {
-	internal int displayMask; 
+	internal int displayMask;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static int GetGUITargetAttrValue(Type klass, string methodName) { }
 
 }

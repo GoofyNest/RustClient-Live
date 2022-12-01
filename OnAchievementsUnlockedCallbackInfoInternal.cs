@@ -1,9 +1,9 @@
-internal struct OnAchievementsUnlockedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnAchievementsUnlockedCallbackInfo>, ISettable<OnAchievementsUnlockedCallbackInfo>, IDisposable // TypeDefIndex: 9922
+internal struct OnAchievementsUnlockedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnAchievementsUnlockedCallbackInfo>, ISettable<OnAchievementsUnlockedCallbackInfo>, IDisposable // TypeDefIndex: 9924
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_UserId; 
-	private uint m_AchievementsCount; 
-	private IntPtr m_AchievementIds; 
+	private IntPtr m_ClientData;
+	private IntPtr m_UserId;
+	private uint m_AchievementsCount;
+	private IntPtr m_AchievementIds;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

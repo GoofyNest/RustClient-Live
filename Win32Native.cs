@@ -11,8 +11,8 @@ internal static class Win32Native // TypeDefIndex: 111
 
 internal class Win32Native.WIN32_FIND_DATA // TypeDefIndex: 112
 {
-	internal int dwFileAttributes; 
-	internal string cFileName; 
+	internal int dwFileAttributes;
+	internal string cFileName;
 
 
 	public void .ctor() { }

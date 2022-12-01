@@ -1,8 +1,8 @@
 public class RegexMatchTimeoutException : TimeoutException, ISerializable // TypeDefIndex: 2624
 {
-	private string regexInput; 
-	private string regexPattern; 
-	private TimeSpan matchTimeout; 
+	private string regexInput;
+	private string regexPattern;
+	private TimeSpan matchTimeout;
 
 
 	public void .ctor(string regexInput, string regexPattern, TimeSpan matchTimeout) { }

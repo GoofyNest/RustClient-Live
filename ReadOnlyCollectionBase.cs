@@ -1,10 +1,10 @@
 public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable // TypeDefIndex: 1416
 {
 
-[ComVisibleAttribute] 
+[ComVisibleAttribute]
 [Serializable]
 public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable
-	private ArrayList list; 
+	private ArrayList list;
 
 	protected ArrayList InnerList { get; }
 	public virtual int Count { get; }

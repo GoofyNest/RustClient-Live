@@ -1,6 +1,6 @@
-public static class ContextMenuUI // TypeDefIndex: 12594
+public static class ContextMenuUI // TypeDefIndex: 12607
 {
-	public static ContextMenuUI.MenuType type; 
+	public static ContextMenuUI.MenuType type;
 
 
 	public static void Start(ContextMenuUI.MenuType menuType) { }
@@ -23,9 +23,9 @@ public static class ContextMenuUI // TypeDefIndex: 12594
 
 }
 
-public enum ContextMenuUI.MenuType // TypeDefIndex: 12595
+public enum ContextMenuUI.MenuType // TypeDefIndex: 12608
 {
-	public int value__; 
+	public int value__;
 	public const ContextMenuUI.MenuType Use = 0;
 	public const ContextMenuUI.MenuType RightClick = 1;
 	public const ContextMenuUI.MenuType Reload = 2;

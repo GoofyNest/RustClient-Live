@@ -1,33 +1,33 @@
-public struct GetExternalAccountMappingsOptions // TypeDefIndex: 9581
+public struct GetExternalAccountMappingsOptions // TypeDefIndex: 9583
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalAccountType <AccountIdType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <TargetExternalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalAccountType <AccountIdType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <TargetExternalUserId>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ExternalAccountType AccountIdType { get; set; }
 	public Utf8String TargetExternalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalAccountType get_AccountIdType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountIdType(ExternalAccountType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_TargetExternalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetExternalUserId(Utf8String value) { }
 
 }

@@ -1,7 +1,7 @@
 internal sealed class Operators // TypeDefIndex: 4270
 {
-	private static readonly int[] s_priority; 
-	private static readonly string[] s_looks; 
+	private static readonly int[] s_priority;
+	private static readonly string[] s_looks;
 
 
 	internal static bool IsArithmetical(int op) { }

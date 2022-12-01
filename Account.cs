@@ -1,89 +1,89 @@
-public static class Account // TypeDefIndex: 6179
+public static class Account // TypeDefIndex: 6181
 {
-	public static RealTimeSince LastUpdated; 
-	public static int UnreadNotices; 
-	public static AccountNotice[] Notices; 
+	public static RealTimeSince LastUpdated;
+	public static int UnreadNotices;
+	public static AccountNotice[] Notices;
 
 	public static bool IsReachable { get; }
 
 
 	public static bool get_IsReachable() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task Refresh() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task ReadAllNotices() { }
 
 	private static void .cctor() { }
 
 }
 
-public class Account.AccountJson // TypeDefIndex: 6180
+public class Account.AccountJson // TypeDefIndex: 6182
 {
-	[CompilerGeneratedAttribute] 
-	private string <SteamId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <UnreadNotices>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AccountNotice[] <Notices>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <SteamId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <UnreadNotices>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AccountNotice[] <Notices>k__BackingField;
 
 	public string SteamId { get; set; }
 	public int UnreadNotices { get; set; }
 	public AccountNotice[] Notices { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_SteamId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SteamId(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_UnreadNotices() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnreadNotices(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AccountNotice[] get_Notices() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Notices(AccountNotice[] value) { }
 
 	public void .ctor() { }
 
 }
 
-private struct Account.<Refresh>d__6 : IAsyncStateMachine // TypeDefIndex: 6181
+private struct Account.<Refresh>d__6 : IAsyncStateMachine // TypeDefIndex: 6183
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	private IAuthTicket <ticket>5__2; 
-	private TaskAwaiter<IAuthTicket> <>u__1; 
-	private TaskAwaiter<string> <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	private IAuthTicket <ticket>5__2;
+	private TaskAwaiter<IAuthTicket> <>u__1;
+	private TaskAwaiter<string> <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct Account.<ReadAllNotices>d__7 : IAsyncStateMachine // TypeDefIndex: 6182
+private struct Account.<ReadAllNotices>d__7 : IAsyncStateMachine // TypeDefIndex: 6184
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	private IAuthTicket <ticket>5__2; 
-	private TaskAwaiter<IAuthTicket> <>u__1; 
-	private TaskAwaiter<string> <>u__2; 
-	private TaskAwaiter <>u__3; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	private IAuthTicket <ticket>5__2;
+	private TaskAwaiter<IAuthTicket> <>u__1;
+	private TaskAwaiter<string> <>u__2;
+	private TaskAwaiter <>u__3;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

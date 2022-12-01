@@ -1,6 +1,6 @@
 public abstract class MarshalByRefObject // TypeDefIndex: 371
 {
-	private object _identity; 
+	private object _identity;
 
 	internal ServerIdentity ObjectIdentity { get; set; }
 

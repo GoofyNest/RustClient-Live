@@ -1,6 +1,6 @@
-internal sealed class NameSerializer : IObjectReference, ISerializable // TypeDefIndex: 5823
+internal sealed class NameSerializer : IObjectReference, ISerializable // TypeDefIndex: 5825
 {
-	private string expandedName; 
+	private string expandedName;
 
 
 	private void .ctor(SerializationInfo info, StreamingContext context) { }

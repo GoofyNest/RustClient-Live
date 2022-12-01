@@ -1,8 +1,8 @@
-public class NameValueHeaderValue : ICloneable // TypeDefIndex: 5794
+public class NameValueHeaderValue : ICloneable // TypeDefIndex: 5796
 {
-	internal string value; 
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
+	internal string value;
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
 
 	public string Name { get; set; }
 	public string Value { get; set; }
@@ -14,10 +14,10 @@ public class NameValueHeaderValue : ICloneable // TypeDefIndex: 5794
 
 	internal void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Name(string value) { }
 
 	public string get_Value() { }

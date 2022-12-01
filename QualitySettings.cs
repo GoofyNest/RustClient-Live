@@ -3,9 +3,9 @@ public sealed class QualitySettings : Object // TypeDefIndex: 3396
 	public static int pixelLightCount { get; }
 	public static int shadowCascades { get; set; }
 	public static float shadowDistance { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static float lodBias { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static AnisotropicFiltering anisotropicFiltering { get; set; }
 	public static int masterTextureLimit { get; }
 	public static int maximumLODLevel { get; }
@@ -17,7 +17,7 @@ public sealed class QualitySettings : Object // TypeDefIndex: 3396
 	public static bool streamingMipmapsActive { get; set; }
 	public static float streamingMipmapsMemoryBudget { get; set; }
 	public static int streamingMipmapsMaxLevelReduction { get; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static int maxQueuedFrames { get; set; }
 	public static ColorSpace activeColorSpace { get; }
 
@@ -72,14 +72,14 @@ public sealed class QualitySettings : Object // TypeDefIndex: 3396
 
 	public static void set_maxQueuedFrames(int value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static int GetQualityLevel() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void SetQualityLevel(int index, bool applyExpensiveChanges) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	public static ColorSpace get_activeColorSpace() { }
 
 }

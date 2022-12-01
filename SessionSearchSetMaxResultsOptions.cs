@@ -1,15 +1,15 @@
-public struct SessionSearchSetMaxResultsOptions // TypeDefIndex: 8596
+public struct SessionSearchSetMaxResultsOptions // TypeDefIndex: 8598
 {
-	[CompilerGeneratedAttribute] 
-	private uint <MaxSearchResults>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <MaxSearchResults>k__BackingField;
 
 	public uint MaxSearchResults { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_MaxSearchResults() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxSearchResults(uint value) { }
 
 }

@@ -1,6 +1,6 @@
-internal struct LogEventParamPairInternal : IGettable<LogEventParamPair>, ISettable<LogEventParamPair>, IDisposable // TypeDefIndex: 9766
+internal struct LogEventParamPairInternal : IGettable<LogEventParamPair>, ISettable<LogEventParamPair>, IDisposable // TypeDefIndex: 9768
 {
-	private LogEventParamPairParamValueInternal m_ParamValue; 
+	private LogEventParamPairParamValueInternal m_ParamValue;
 
 	public LogEventParamPairParamValue ParamValue { get; set; }
 

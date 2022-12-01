@@ -1,9 +1,9 @@
-public struct Half4 // TypeDefIndex: 13209
+public struct Half4 // TypeDefIndex: 13224
 {
-	public ushort x; 
-	public ushort y; 
-	public ushort z; 
-	public ushort w; 
+	public ushort x;
+	public ushort y;
+	public ushort z;
+	public ushort w;
 
 
 	public void .ctor(Vector4 vec) { }

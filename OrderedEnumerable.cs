@@ -1,17 +1,17 @@
 private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerator<TElement>, IDisposable, IEnumerator // TypeDefIndex: 3234
 {
-	private int <>1__state; 
-	private TElement <>2__current; 
-	public OrderedEnumerable<TElement> <>4__this; 
-	private Buffer<TElement> <buffer>5__1; 
-	private int[] <map>5__2; 
-	private int <i>5__3; 
+	private int <>1__state;
+	private TElement <>2__current;
+	public OrderedEnumerable<TElement> <>4__this;
+	private Buffer<TElement> <buffer>5__1;
+	private int[] <map>5__2;
+	private int <i>5__3;
 
 	private TElement System.Collections.Generic.IEnumerator<TElement>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -26,7 +26,7 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	|-OrderedEnumerable.<GetEnumerator>d__1<Resolution>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -63,7 +63,7 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	|-OrderedEnumerable.<GetEnumerator>d__1<Resolution>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TElement System.Collections.Generic.IEnumerator<TElement>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -84,7 +84,7 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	|-OrderedEnumerable.<GetEnumerator>d__1<Resolution>.System.Collections.Generic.IEnumerator<TElement>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -107,7 +107,7 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	|-OrderedEnumerable.<GetEnumerator>d__1<Resolution>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

@@ -1,13 +1,13 @@
-public class ElectricBattery : IOEntity, IInstanceDataReceiver // TypeDefIndex: 10422
+public class ElectricBattery : IOEntity, IInstanceDataReceiver // TypeDefIndex: 10426
 {
-	public int maxOutput; 
-	public float maxCapactiySeconds; 
-	public float rustWattSeconds; 
-	private int activeDrain; 
-	public bool rechargable; 
-	[TooltipAttribute] 
-	public float maximumInboundEnergyRatio; 
-	public float chargeRatio; 
+	public int maxOutput;
+	public float maxCapactiySeconds;
+	public float rustWattSeconds;
+	private int activeDrain;
+	public bool rechargable;
+	[TooltipAttribute]
+	public float maximumInboundEnergyRatio;
+	public float chargeRatio;
 	private const float tickRateSeconds = 1;
 	public const BaseEntity.Flags Flag_HalfFull = 2048;
 	public const BaseEntity.Flags Flag_VeryFull = 16384;

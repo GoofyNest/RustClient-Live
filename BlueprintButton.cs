@@ -1,18 +1,18 @@
-public class BlueprintButton : MonoBehaviour, IClientComponent, IInventoryChanged, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler // TypeDefIndex: 12745
+public class BlueprintButton : MonoBehaviour, IClientComponent, IInventoryChanged, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler // TypeDefIndex: 12759
 {
-	public Image image; 
-	public Image imageFavourite; 
-	public Button button; 
-	public CanvasGroup group; 
-	public GameObject newNotification; 
-	public GameObject lockedOverlay; 
-	public Tooltip Tip; 
-	public Image FavouriteIcon; 
-	internal bool needsRefresh; 
-	internal ItemBlueprint blueprint; 
-	private UIBlueprints parentBlueprints; 
-	private bool favourited; 
-	private bool hovered; 
+	public Image image;
+	public Image imageFavourite;
+	public Button button;
+	public CanvasGroup group;
+	public GameObject newNotification;
+	public GameObject lockedOverlay;
+	public Tooltip Tip;
+	public Image FavouriteIcon;
+	internal bool needsRefresh;
+	internal ItemBlueprint blueprint;
+	private UIBlueprints parentBlueprints;
+	private bool favourited;
+	private bool hovered;
 
 
 	public void Setup(ItemBlueprint bp, UIBlueprints parent) { }

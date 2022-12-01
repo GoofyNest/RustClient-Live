@@ -1,10 +1,10 @@
-public class PlanterBox : StorageContainer, ISplashable // TypeDefIndex: 10339
+public class PlanterBox : StorageContainer, ISplashable // TypeDefIndex: 10343
 {
-	public int soilSaturation; 
-	public int soilSaturationMax; 
-	public MeshRenderer soilRenderer; 
-	private MaterialPropertyBlock block; 
-	private TimeSince saturationUpdate; 
+	public int soilSaturation;
+	public int soilSaturationMax;
+	public MeshRenderer soilRenderer;
+	private MaterialPropertyBlock block;
+	private TimeSince saturationUpdate;
 
 	public float soilSaturationFraction { get; }
 
@@ -25,7 +25,7 @@ public class PlanterBox : StorageContainer, ISplashable // TypeDefIndex: 10339
 
 	public override void LookingAtTick() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void RPC_ReceiveSaturationUpdate(BaseEntity.RPCMessage msg) { }
 
 	public override bool SupportsChildDeployables() { }

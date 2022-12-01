@@ -1,9 +1,9 @@
-public static class DirectoryEx // TypeDefIndex: 13134
+public static class DirectoryEx // TypeDefIndex: 13149
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool MoveToSafe(DirectoryInfo parent, string target, int retries = 10) { }
 
 	public static void Backup(string[] names) { }

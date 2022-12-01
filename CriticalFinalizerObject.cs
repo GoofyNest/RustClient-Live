@@ -1,10 +1,10 @@
 public abstract class CriticalFinalizerObject // TypeDefIndex: 1266
 {
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected void .ctor() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected override void Finalize() { }
 
 }

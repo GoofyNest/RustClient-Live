@@ -1,10 +1,10 @@
 internal struct FloatTween : ITweenValue // TypeDefIndex: 5048
 {
-	private FloatTween.FloatTweenCallback m_Target; 
-	private float m_StartValue; 
-	private float m_TargetValue; 
-	private float m_Duration; 
-	private bool m_IgnoreTimeScale; 
+	private FloatTween.FloatTweenCallback m_Target;
+	private float m_StartValue;
+	private float m_TargetValue;
+	private float m_Duration;
+	private bool m_IgnoreTimeScale;
 
 	public float startValue { get; set; }
 	public float targetValue { get; set; }
@@ -47,13 +47,13 @@ public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 
 
 }
 
-internal struct FloatTween : ITweenValue // TypeDefIndex: 6693
+internal struct FloatTween : ITweenValue // TypeDefIndex: 6695
 {
-	private FloatTween.FloatTweenCallback m_Target; 
-	private float m_StartValue; 
-	private float m_TargetValue; 
-	private float m_Duration; 
-	private bool m_IgnoreTimeScale; 
+	private FloatTween.FloatTweenCallback m_Target;
+	private float m_StartValue;
+	private float m_TargetValue;
+	private float m_Duration;
+	private bool m_IgnoreTimeScale;
 
 	public float startValue { get; set; }
 	public float targetValue { get; set; }
@@ -89,7 +89,7 @@ internal struct FloatTween : ITweenValue // TypeDefIndex: 6693
 
 }
 
-public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 6694
+public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 6696
 {
 
 	public void .ctor() { }

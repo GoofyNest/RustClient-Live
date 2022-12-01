@@ -1,6 +1,6 @@
 public enum NumberStyles // TypeDefIndex: 714
 {
-	public int value__; 
+	public int value__;
 	public const NumberStyles None = 0;
 	public const NumberStyles AllowLeadingWhite = 1;
 	public const NumberStyles AllowTrailingWhite = 2;

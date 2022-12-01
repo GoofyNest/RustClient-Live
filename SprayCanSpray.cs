@@ -1,6 +1,6 @@
-public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 10172
+public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 10174
 {
-	private Option __menuOption_Menu_WaterClear; 
+	private Option __menuOption_Menu_WaterClear;
 
 	public override bool HasMenuOptions { get; }
 
@@ -11,10 +11,10 @@ public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 10172
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	private void Menu_WaterClear(BasePlayer player) { }
 
 	private bool Menu_WaterClear_ShowIf(BasePlayer player) { }
@@ -23,21 +23,21 @@ public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 10172
 
 }
 
-public class SprayCanSpray_Freehand : SprayCanSpray // TypeDefIndex: 10370
+public class SprayCanSpray_Freehand : SprayCanSpray // TypeDefIndex: 10374
 {
-	public AlignedLineDrawer LineDrawer; 
-	public List<AlignedLineDrawer.LinePoint> LinePoints; 
-	private Color colour; 
-	private float width; 
-	private EntityRef<BasePlayer> editingPlayer; 
-	public GroundWatch groundWatch; 
-	public MeshCollider meshCollider; 
+	public AlignedLineDrawer LineDrawer;
+	public List<AlignedLineDrawer.LinePoint> LinePoints;
+	private Color colour;
+	private float width;
+	private EntityRef<BasePlayer> editingPlayer;
+	public GroundWatch groundWatch;
+	public MeshCollider meshCollider;
 	public const int MaxLinePointLength = 60;
 	public const float SimplifyTolerance = 0,008;
-	private SprayCan attachedToCan; 
-	private bool hasAttachedToSpray; 
-	private TimeSince lastServerUpdate; 
-	private bool firstSpray; 
+	private SprayCan attachedToCan;
+	private bool hasAttachedToSpray;
+	private TimeSince lastServerUpdate;
+	private bool firstSpray;
 
 	private bool CanDrawSpray { get; }
 
@@ -70,11 +70,11 @@ public class SprayCanSpray_Freehand : SprayCanSpray // TypeDefIndex: 10370
 
 }
 
-public class SprayCanSpray_Decal : SprayCanSpray, ICustomMaterialReplacer, IPropRenderNotify, INotifyLOD // TypeDefIndex: 10610
+public class SprayCanSpray_Decal : SprayCanSpray, ICustomMaterialReplacer, IPropRenderNotify, INotifyLOD // TypeDefIndex: 10614
 {
-	public DeferredDecal DecalComponent; 
-	public GameObject IconPreviewRoot; 
-	public Material DefaultMaterial; 
+	public DeferredDecal DecalComponent;
+	public GameObject IconPreviewRoot;
+	public Material DefaultMaterial;
 
 
 	public void WorkshopMode() { }

@@ -1,13 +1,13 @@
-public class MLRSUIDialog : UIDialog // TypeDefIndex: 11462
+public class MLRSUIDialog : UIDialog // TypeDefIndex: 11468
 {
-	[SerializeField] 
-	private MLRSMainUI mainUI; 
-	[SerializeField] 
-	private TokenisedPhrase howToUsePhrase; 
-	[SerializeField] 
-	private float titleChangeInterval; 
-	private MLRS owner; 
-	private string baseTitleText; 
+	[SerializeField]
+	private MLRSMainUI mainUI;
+	[SerializeField]
+	private TokenisedPhrase howToUsePhrase;
+	[SerializeField]
+	private float titleChangeInterval;
+	private MLRS owner;
+	private string baseTitleText;
 
 
 	protected void Start() { }

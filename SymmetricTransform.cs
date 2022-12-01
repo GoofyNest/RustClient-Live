@@ -1,17 +1,17 @@
 internal abstract class SymmetricTransform : ICryptoTransform, IDisposable // TypeDefIndex: 77
 {
-	protected SymmetricAlgorithm algo; 
-	protected bool encrypt; 
-	protected int BlockSizeByte; 
-	protected byte[] temp; 
-	protected byte[] temp2; 
-	private byte[] workBuff; 
-	private byte[] workout; 
-	protected PaddingMode padmode; 
-	protected int FeedBackByte; 
-	private bool m_disposed; 
-	protected bool lastBlock; 
-	private RandomNumberGenerator _rng; 
+	protected SymmetricAlgorithm algo;
+	protected bool encrypt;
+	protected int BlockSizeByte;
+	protected byte[] temp;
+	protected byte[] temp2;
+	private byte[] workBuff;
+	private byte[] workout;
+	protected PaddingMode padmode;
+	protected int FeedBackByte;
+	private bool m_disposed;
+	protected bool lastBlock;
+	private RandomNumberGenerator _rng;
 
 	public virtual bool CanTransformMultipleBlocks { get; }
 	public virtual int InputBlockSize { get; }

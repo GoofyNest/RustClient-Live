@@ -1,7 +1,7 @@
 internal sealed class DecimalStorage : DataStorage // TypeDefIndex: 4406
 {
-	private static readonly Decimal s_defaultValue; 
-	private Decimal[] _values; 
+	private static readonly Decimal s_defaultValue;
+	private Decimal[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

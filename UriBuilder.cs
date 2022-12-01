@@ -1,16 +1,16 @@
 public class UriBuilder // TypeDefIndex: 2564
 {
-	private bool _changed; 
-	private string _fragment; 
-	private string _host; 
-	private string _password; 
-	private string _path; 
-	private int _port; 
-	private string _query; 
-	private string _scheme; 
-	private string _schemeDelimiter; 
-	private Uri _uri; 
-	private string _username; 
+	private bool _changed;
+	private string _fragment;
+	private string _host;
+	private string _password;
+	private string _path;
+	private int _port;
+	private string _query;
+	private string _scheme;
+	private string _schemeDelimiter;
+	private Uri _uri;
+	private string _username;
 
 	public string Host { set; }
 	public string Path { set; }

@@ -1,12 +1,12 @@
-public class MetabolismAttribute // TypeDefIndex: 11300
+public class MetabolismAttribute // TypeDefIndex: 11306
 {
-	public float startMin; 
-	public float startMax; 
-	public float min; 
-	public float max; 
-	public float value; 
-	internal float lastValue; 
-	internal float lastGreatFraction; 
+	public float startMin;
+	public float startMax;
+	public float min;
+	public float max;
+	public float value;
+	internal float lastValue;
+	internal float lastGreatFraction;
 	private const float greatInterval = 0,1;
 
 	public float greatFraction { get; }
@@ -38,9 +38,9 @@ public class MetabolismAttribute // TypeDefIndex: 11300
 
 }
 
-public enum MetabolismAttribute.Type // TypeDefIndex: 11301
+public enum MetabolismAttribute.Type // TypeDefIndex: 11307
 {
-	public int value__; 
+	public int value__;
 	public const MetabolismAttribute.Type Calories = 0;
 	public const MetabolismAttribute.Type Hydration = 1;
 	public const MetabolismAttribute.Type Heartrate = 2;

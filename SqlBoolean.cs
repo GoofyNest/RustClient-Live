@@ -1,11 +1,11 @@
 public struct SqlBoolean : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4343
 {
-	private byte m_value; 
-	public static readonly SqlBoolean True; 
-	public static readonly SqlBoolean False; 
-	public static readonly SqlBoolean Null; 
-	public static readonly SqlBoolean Zero; 
-	public static readonly SqlBoolean One; 
+	private byte m_value;
+	public static readonly SqlBoolean True;
+	public static readonly SqlBoolean False;
+	public static readonly SqlBoolean Null;
+	public static readonly SqlBoolean Zero;
+	public static readonly SqlBoolean One;
 
 	public bool IsNull { get; }
 	public bool Value { get; }

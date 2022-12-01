@@ -1,23 +1,23 @@
-public class QDDDQODDQDQDQDD : MonoBehaviour // TypeDefIndex: 7273
+public class QDDDQODDQDQDQDD : MonoBehaviour // TypeDefIndex: 7275
 {
-	public static Vector3 testPoint; 
-	public static ERCrossings cScr; 
-	public static List<Vector3> ll1; 
-	public static List<Vector3> ll2; 
-	public static List<Vector3> ll3; 
-	public static List<Vector3> ll4; 
-	public static int crossingStructure; 
-	public static List<QDQDOOQQDQODD> roadTypesDynamic; 
-	public static ERModularBase baseScript; 
-	public static List<ERConnectionSibling> siblings; 
-	public static Vector3 crossPointCenter; 
-	public static ERCrossingPrefabs prefabScript; 
-	public static ERConnectionSibling primaryPriorityConnection; 
-	public static ERConnectionSibling secondPriorityConnection; 
-	private static float ᙃ; 
-	private static float ᙄ; 
-	public static List<Vector3> debugEdges; 
-	public static List<Vector3> debugvecs; 
+	public static Vector3 testPoint;
+	public static ERCrossings cScr;
+	public static List<Vector3> ll1;
+	public static List<Vector3> ll2;
+	public static List<Vector3> ll3;
+	public static List<Vector3> ll4;
+	public static int crossingStructure;
+	public static List<QDQDOOQQDQODD> roadTypesDynamic;
+	public static ERModularBase baseScript;
+	public static List<ERConnectionSibling> siblings;
+	public static Vector3 crossPointCenter;
+	public static ERCrossingPrefabs prefabScript;
+	public static ERConnectionSibling primaryPriorityConnection;
+	public static ERConnectionSibling secondPriorityConnection;
+	private static float ᙃ;
+	private static float ᙄ;
+	public static List<Vector3> debugEdges;
+	public static List<Vector3> debugvecs;
 
 
 	public static List<QDQDOOQQDQODD> OQQCDQOQCD(List<QDQDOOQQDQODD> roadTypes, bool all) { }

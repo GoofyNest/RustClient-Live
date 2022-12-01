@@ -1,7 +1,7 @@
 public class RSAPKCS1SignatureDeformatter : AsymmetricSignatureDeformatter // TypeDefIndex: 1009
 {
-	private RSA rsa; 
-	private string hashName; 
+	private RSA rsa;
+	private string hashName;
 
 
 	public void .ctor() { }

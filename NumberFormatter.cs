@@ -1,33 +1,33 @@
 internal sealed class NumberFormatter // TypeDefIndex: 381
 {
-	private static readonly ulong* MantissaBitsTable; 
-	private static readonly int* TensExponentTable; 
-	private static readonly char* DigitLowerTable; 
-	private static readonly char* DigitUpperTable; 
-	private static readonly long* TenPowersList; 
-	private static readonly int* DecHexDigits; 
-	private NumberFormatInfo _nfi; 
-	private char[] _cbuf; 
-	private bool _NaN; 
-	private bool _infinity; 
-	private bool _isCustomFormat; 
-	private bool _specifierIsUpper; 
-	private bool _positive; 
-	private char _specifier; 
-	private int _precision; 
-	private int _defPrecision; 
-	private int _digitsLen; 
-	private int _offset; 
-	private int _decPointPos; 
-	private uint _val1; 
-	private uint _val2; 
-	private uint _val3; 
-	private uint _val4; 
-	private int _ind; 
-	[ThreadStaticAttribute] 
-	private static NumberFormatter threadNumberFormatter; 
-	[ThreadStaticAttribute] 
-	private static NumberFormatter userFormatProvider; 
+	private static readonly ulong* MantissaBitsTable;
+	private static readonly int* TensExponentTable;
+	private static readonly char* DigitLowerTable;
+	private static readonly char* DigitUpperTable;
+	private static readonly long* TenPowersList;
+	private static readonly int* DecHexDigits;
+	private NumberFormatInfo _nfi;
+	private char[] _cbuf;
+	private bool _NaN;
+	private bool _infinity;
+	private bool _isCustomFormat;
+	private bool _specifierIsUpper;
+	private bool _positive;
+	private char _specifier;
+	private int _precision;
+	private int _defPrecision;
+	private int _digitsLen;
+	private int _offset;
+	private int _decPointPos;
+	private uint _val1;
+	private uint _val2;
+	private uint _val3;
+	private uint _val4;
+	private int _ind;
+	[ThreadStaticAttribute]
+	private static NumberFormatter threadNumberFormatter;
+	[ThreadStaticAttribute]
+	private static NumberFormatter userFormatProvider;
 
 	private CultureInfo CurrentCulture { set; }
 	private int IntegerDigits { get; }
@@ -203,20 +203,20 @@ internal sealed class NumberFormatter // TypeDefIndex: 381
 
 private class NumberFormatter.CustomInfo // TypeDefIndex: 382
 {
-	public bool UseGroup; 
-	public int DecimalDigits; 
-	public int DecimalPointPos; 
-	public int DecimalTailSharpDigits; 
-	public int IntegerDigits; 
-	public int IntegerHeadSharpDigits; 
-	public int IntegerHeadPos; 
-	public bool UseExponent; 
-	public int ExponentDigits; 
-	public int ExponentTailSharpDigits; 
-	public bool ExponentNegativeSignOnly; 
-	public int DividePlaces; 
-	public int Percents; 
-	public int Permilles; 
+	public bool UseGroup;
+	public int DecimalDigits;
+	public int DecimalPointPos;
+	public int DecimalTailSharpDigits;
+	public int IntegerDigits;
+	public int IntegerHeadSharpDigits;
+	public int IntegerHeadPos;
+	public bool UseExponent;
+	public int ExponentDigits;
+	public int ExponentTailSharpDigits;
+	public bool ExponentNegativeSignOnly;
+	public int DividePlaces;
+	public int Percents;
+	public int Permilles;
 
 
 	public static void GetActiveSection(string format, ref bool positive, bool zero, ref int offset, ref int length) { }

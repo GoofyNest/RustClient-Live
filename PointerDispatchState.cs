@@ -1,8 +1,8 @@
 internal class PointerDispatchState // TypeDefIndex: 4609
 {
-	private IEventHandler[] m_PendingPointerCapture; 
-	private IEventHandler[] m_PointerCapture; 
-	private bool[] m_ShouldSendCompatibilityMouseEvents; 
+	private IEventHandler[] m_PendingPointerCapture;
+	private IEventHandler[] m_PointerCapture;
+	private bool[] m_ShouldSendCompatibilityMouseEvents;
 
 
 	public void .ctor() { }

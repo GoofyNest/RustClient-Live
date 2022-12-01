@@ -1,7 +1,7 @@
-public class DeployVolumeSphere : DeployVolume // TypeDefIndex: 11586
+public class DeployVolumeSphere : DeployVolume // TypeDefIndex: 11593
 {
-	public Vector3 center; 
-	public float radius; 
+	public Vector3 center;
+	public float radius;
 
 
 	protected override bool Check(Vector3 position, Quaternion rotation, int mask = -1) { }

@@ -1,6 +1,6 @@
-public enum UnknownChannelEventPolicy // TypeDefIndex: 7621
+public enum UnknownChannelEventPolicy // TypeDefIndex: 7623
 {
-	public int value__; 
+	public int value__;
 	public const UnknownChannelEventPolicy Abort = 0;
 	public const UnknownChannelEventPolicy SkipStatusByte = 1;
 	public const UnknownChannelEventPolicy SkipStatusByteAndOneDataByte = 2;

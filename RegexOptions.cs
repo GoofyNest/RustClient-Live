@@ -1,6 +1,6 @@
 public enum RegexOptions // TypeDefIndex: 2626
 {
-	public int value__; 
+	public int value__;
 	public const RegexOptions None = 0;
 	public const RegexOptions IgnoreCase = 1;
 	public const RegexOptions Multiline = 2;

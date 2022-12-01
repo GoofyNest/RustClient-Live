@@ -1,6 +1,6 @@
 internal enum AvailableTrackingData // TypeDefIndex: 4145
 {
-	public int value__; 
+	public int value__;
 	public const AvailableTrackingData None = 0;
 	public const AvailableTrackingData PositionAvailable = 1;
 	public const AvailableTrackingData RotationAvailable = 2;

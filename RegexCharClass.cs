@@ -1,24 +1,24 @@
 internal sealed class RegexCharClass // TypeDefIndex: 2608
 {
-	private List<RegexCharClass.SingleRange> _rangelist; 
-	private StringBuilder _categories; 
-	private bool _canonical; 
-	private bool _negate; 
-	private RegexCharClass _subtractor; 
-	private static readonly string InternalRegexIgnoreCase; 
-	private static readonly string Space; 
-	private static readonly string NotSpace; 
-	private static readonly string Word; 
-	private static readonly string NotWord; 
-	internal static readonly string SpaceClass; 
-	internal static readonly string NotSpaceClass; 
-	internal static readonly string WordClass; 
-	internal static readonly string NotWordClass; 
-	internal static readonly string DigitClass; 
-	internal static readonly string NotDigitClass; 
-	private static Dictionary<string, string> _definedCategories; 
-	private static readonly string[,] _propTable; 
-	private static readonly RegexCharClass.LowerCaseMapping[] _lcTable; 
+	private List<RegexCharClass.SingleRange> _rangelist;
+	private StringBuilder _categories;
+	private bool _canonical;
+	private bool _negate;
+	private RegexCharClass _subtractor;
+	private static readonly string InternalRegexIgnoreCase;
+	private static readonly string Space;
+	private static readonly string NotSpace;
+	private static readonly string Word;
+	private static readonly string NotWord;
+	internal static readonly string SpaceClass;
+	internal static readonly string NotSpaceClass;
+	internal static readonly string WordClass;
+	internal static readonly string NotWordClass;
+	internal static readonly string DigitClass;
+	internal static readonly string NotDigitClass;
+	private static Dictionary<string, string> _definedCategories;
+	private static readonly string[,] _propTable;
+	private static readonly RegexCharClass.LowerCaseMapping[] _lcTable;
 
 	internal bool CanMerge { get; }
 	internal bool Negate { set; }
@@ -106,10 +106,10 @@ internal sealed class RegexCharClass // TypeDefIndex: 2608
 
 private struct RegexCharClass.LowerCaseMapping // TypeDefIndex: 2609
 {
-	internal char _chMin; 
-	internal char _chMax; 
-	internal int _lcOp; 
-	internal int _data; 
+	internal char _chMin;
+	internal char _chMax;
+	internal int _lcOp;
+	internal int _data;
 
 
 	internal void .ctor(char chMin, char chMax, int lcOp, int data) { }
@@ -127,8 +127,8 @@ private sealed class RegexCharClass.SingleRangeComparer : IComparer<RegexCharCla
 
 private sealed class RegexCharClass.SingleRange // TypeDefIndex: 2611
 {
-	internal char _first; 
-	internal char _last; 
+	internal char _first;
+	internal char _last;
 
 
 	internal void .ctor(char first, char last) { }

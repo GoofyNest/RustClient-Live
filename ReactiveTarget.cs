@@ -1,13 +1,13 @@
-public class ReactiveTarget : IOEntity // TypeDefIndex: 10151
+public class ReactiveTarget : IOEntity // TypeDefIndex: 10153
 {
-	private Option __menuOption_Lower_Target; 
-	private Option __menuOption_Reset_target; 
-	public Animator myAnimator; 
-	public GameObjectRef bullseyeEffect; 
-	public GameObjectRef knockdownEffect; 
-	public float activationPowerTime; 
-	public int activationPowerAmount; 
-	private float lastToggleTime; 
+	private Option __menuOption_Lower_Target;
+	private Option __menuOption_Reset_target;
+	public Animator myAnimator;
+	public GameObjectRef bullseyeEffect;
+	public GameObjectRef knockdownEffect;
+	public float activationPowerTime;
+	public int activationPowerAmount;
+	private float lastToggleTime;
 
 	public override bool HasMenuOptions { get; }
 
@@ -28,7 +28,7 @@ public class ReactiveTarget : IOEntity // TypeDefIndex: 10151
 
 	public bool CanToggle() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void HitEffect(BaseEntity.RPCMessage msg) { }
 
 	public override void ClientOnEnable() { }
@@ -37,18 +37,18 @@ public class ReactiveTarget : IOEntity // TypeDefIndex: 10151
 
 	private void UpdateAnimationParameters(bool isOn) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Reset_target(BasePlayer player) { }
 
 	public bool Menu_Reset_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Lower_Target(BasePlayer player) { }
 
 	public bool Menu_Lower_ShowIf(BasePlayer player) { }

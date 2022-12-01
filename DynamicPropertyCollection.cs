@@ -1,6 +1,6 @@
 internal class DynamicPropertyCollection // TypeDefIndex: 1172
 {
-	private ArrayList _properties; 
+	private ArrayList _properties;
 
 	public bool HasProperties { get; }
 
@@ -21,8 +21,8 @@ internal class DynamicPropertyCollection // TypeDefIndex: 1172
 
 private class DynamicPropertyCollection.DynamicPropertyReg // TypeDefIndex: 1173
 {
-	public IDynamicProperty Property; 
-	public IDynamicMessageSink Sink; 
+	public IDynamicProperty Property;
+	public IDynamicMessageSink Sink;
 
 
 	public void .ctor() { }

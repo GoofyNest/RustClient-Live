@@ -1,9 +1,9 @@
-internal struct SetClientDetailsOptionsInternal : ISettable<SetClientDetailsOptions>, IDisposable // TypeDefIndex: 9802
+internal struct SetClientDetailsOptionsInternal : ISettable<SetClientDetailsOptions>, IDisposable // TypeDefIndex: 9804
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ClientHandle; 
-	private AntiCheatCommonClientFlags m_ClientFlags; 
-	private AntiCheatCommonClientInput m_ClientInputMethod; 
+	private int m_ApiVersion;
+	private IntPtr m_ClientHandle;
+	private AntiCheatCommonClientFlags m_ClientFlags;
+	private AntiCheatCommonClientInput m_ClientInputMethod;
 
 	public IntPtr ClientHandle { set; }
 	public AntiCheatCommonClientFlags ClientFlags { set; }

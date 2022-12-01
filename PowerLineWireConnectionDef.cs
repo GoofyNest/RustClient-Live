@@ -1,9 +1,9 @@
-public class PowerLineWireConnectionDef // TypeDefIndex: 12119
+public class PowerLineWireConnectionDef // TypeDefIndex: 12126
 {
-	public Vector3 inOffset; 
-	public Vector3 outOffset; 
-	public float radius; 
-	public bool hidden; 
+	public Vector3 inOffset;
+	public Vector3 outOffset;
+	public float radius;
+	public bool hidden;
 
 
 	public void .ctor() { }

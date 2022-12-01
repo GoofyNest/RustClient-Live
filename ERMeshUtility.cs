@@ -1,8 +1,8 @@
-public class ERMeshUtility : MonoBehaviour // TypeDefIndex: 7284
+public class ERMeshUtility : MonoBehaviour // TypeDefIndex: 7286
 {
-	public ERModularBase baseScript; 
-	public int sourceInt; 
-	public string name; 
+	public ERModularBase baseScript;
+	public int sourceInt;
+	public string name;
 
 
 	public void OCQOQCDCQC() { }

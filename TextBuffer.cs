@@ -1,13 +1,13 @@
-public class TextBuffer // TypeDefIndex: 6605
+public class TextBuffer // TypeDefIndex: 6607
 {
-	private Queue<string> buffer; 
-	private StringBuilder builder; 
-	private string text; 
-	private bool dirty; 
-	private int curlines; 
-	private int maxlines; 
-	private int curchars; 
-	private int maxchars; 
+	private Queue<string> buffer;
+	private StringBuilder builder;
+	private string text;
+	private bool dirty;
+	private int curlines;
+	private int maxlines;
+	private int curchars;
+	private int maxchars;
 
 	public int Count { get; }
 

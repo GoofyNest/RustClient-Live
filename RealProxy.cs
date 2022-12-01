@@ -1,13 +1,13 @@
 public abstract class RealProxy // TypeDefIndex: 1161
 {
-	private Type class_to_proxy; 
-	internal Context _targetContext; 
-	internal MarshalByRefObject _server; 
-	private int _targetDomainId; 
-	internal string _targetUri; 
-	internal Identity _objectIdentity; 
-	private object _objTP; 
-	private object _stubData; 
+	private Type class_to_proxy;
+	internal Context _targetContext;
+	internal MarshalByRefObject _server;
+	private int _targetDomainId;
+	internal string _targetUri;
+	internal Identity _objectIdentity;
+	private object _objTP;
+	private object _stubData;
 
 	internal Identity ObjectIdentity { get; set; }
 

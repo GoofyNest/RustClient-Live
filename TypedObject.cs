@@ -1,11 +1,11 @@
 internal class TypedObject // TypeDefIndex: 2149
 {
-	private TypedObject.DecimalStruct dstruct; 
-	private object ovalue; 
-	private string svalue; 
-	private XmlSchemaDatatype xsdtype; 
-	private int dim; 
-	private bool isList; 
+	private TypedObject.DecimalStruct dstruct;
+	private object ovalue;
+	private string svalue;
+	private XmlSchemaDatatype xsdtype;
+	private int dim;
+	private bool isList;
 
 	public int Dim { get; }
 	public bool IsList { get; }
@@ -41,8 +41,8 @@ internal class TypedObject // TypeDefIndex: 2149
 
 private class TypedObject.DecimalStruct // TypeDefIndex: 2150
 {
-	private bool isDecimal; 
-	private Decimal[] dvalue; 
+	private bool isDecimal;
+	private Decimal[] dvalue;
 
 	public bool IsDecimal { get; set; }
 	public Decimal[] Dvalue { get; }

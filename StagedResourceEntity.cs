@@ -1,9 +1,9 @@
-public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10371
+public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10375
 {
-	public List<StagedResourceEntity.ResourceStage> stages; 
-	public int stage; 
-	public GameObjectRef changeStageEffect; 
-	public GameObject gibSourceTest; 
+	public List<StagedResourceEntity.ResourceStage> stages;
+	public int stage;
+	public GameObjectRef changeStageEffect;
+	public GameObject gibSourceTest;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -14,7 +14,7 @@ public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10371
 
 	protected override void ClientInit(Entity info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ResourceUpdate(BaseEntity.RPCMessage packet) { }
 
 	public T GetStageComponent<T>() { }
@@ -30,10 +30,10 @@ public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10371
 
 }
 
-public class StagedResourceEntity.ResourceStage // TypeDefIndex: 10372
+public class StagedResourceEntity.ResourceStage // TypeDefIndex: 10376
 {
-	public float health; 
-	public GameObject instance; 
+	public float health;
+	public GameObject instance;
 
 
 	public void .ctor() { }

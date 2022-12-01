@@ -1,9 +1,9 @@
-public class ArcadeEntityController : BaseMonoBehaviour // TypeDefIndex: 10482
+public class ArcadeEntityController : BaseMonoBehaviour // TypeDefIndex: 10486
 {
-	public BaseArcadeGame parentGame; 
-	public ArcadeEntity arcadeEntity; 
-	public ArcadeEntity sourceEntity; 
-	private bool authorative; 
+	public BaseArcadeGame parentGame;
+	public ArcadeEntity arcadeEntity;
+	public ArcadeEntity sourceEntity;
+	private bool authorative;
 
 	public Vector3 heading { get; set; }
 	public Vector3 positionLocal { get; set; }

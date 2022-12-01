@@ -1,7 +1,7 @@
-public sealed class ChannelPrefixEvent : MetaEvent // TypeDefIndex: 7546
+public sealed class ChannelPrefixEvent : MetaEvent // TypeDefIndex: 7548
 {
-	[CompilerGeneratedAttribute] 
-	private byte <Channel>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte <Channel>k__BackingField;
 
 	public byte Channel { get; set; }
 
@@ -10,10 +10,10 @@ public sealed class ChannelPrefixEvent : MetaEvent // TypeDefIndex: 7546
 
 	public void .ctor(byte channel) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Channel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Channel(byte value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }

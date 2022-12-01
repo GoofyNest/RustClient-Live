@@ -1,17 +1,17 @@
-public struct TransformSnapshot : ISnapshot<TransformSnapshot> // TypeDefIndex: 13922
+public struct TransformSnapshot : ISnapshot<TransformSnapshot> // TypeDefIndex: 13939
 {
-	[CompilerGeneratedAttribute] 
-	private float <Time>k__BackingField; 
-	public Vector3 pos; 
-	public Quaternion rot; 
+	[CompilerGeneratedAttribute]
+	private float <Time>k__BackingField;
+	public Vector3 pos;
+	public Quaternion rot;
 
 	public float Time { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Time() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Time(float value) { }
 
 	public void .ctor(float time, Vector3 pos, Quaternion rot) { }

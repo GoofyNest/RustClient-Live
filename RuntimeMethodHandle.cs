@@ -1,6 +1,6 @@
 public struct RuntimeMethodHandle : ISerializable // TypeDefIndex: 390
 {
-	private IntPtr value; 
+	private IntPtr value;
 
 	public IntPtr Value { get; }
 
@@ -13,7 +13,7 @@ public struct RuntimeMethodHandle : ISerializable // TypeDefIndex: 390
 
 	public void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public override bool Equals(object obj) { }
 
 	public override int GetHashCode() { }

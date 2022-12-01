@@ -1,16 +1,16 @@
-public class MainCamera : RustCamera<MainCamera> // TypeDefIndex: 10928
+public class MainCamera : RustCamera<MainCamera> // TypeDefIndex: 10934
 {
-	public static Camera mainCamera; 
-	public static Transform mainCameraTransform; 
-	[CompilerGeneratedAttribute] 
-	private static Vector3 <velocity>k__BackingField; 
-	private static long[] MipStreamingBudget; 
-	private double totalFrameTime; 
-	private double lowestFrameTime; 
-	private double highestFrameTime; 
-	private int totalFrames; 
-	private RealTimeSince timeSinceFrameSubmit; 
-	private Stopwatch frameTime; 
+	public static Camera mainCamera;
+	public static Transform mainCameraTransform;
+	[CompilerGeneratedAttribute]
+	private static Vector3 <velocity>k__BackingField;
+	private static long[] MipStreamingBudget;
+	private double totalFrameTime;
+	private double lowestFrameTime;
+	private double highestFrameTime;
+	private int totalFrames;
+	private RealTimeSince timeSinceFrameSubmit;
+	private Stopwatch frameTime;
 	protected const float defaultSqrDistance = 1,677722E+07;
 
 	public static bool isValid { get; }
@@ -26,10 +26,10 @@ public class MainCamera : RustCamera<MainCamera> // TypeDefIndex: 10928
 
 	public static bool get_isValid() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static Vector3 get_velocity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_velocity(Vector3 value) { }
 
 	public static Vector3 get_position() { }

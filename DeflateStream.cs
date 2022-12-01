@@ -1,10 +1,10 @@
 public class DeflateStream : Stream // TypeDefIndex: 2862
 {
-	private Stream base_stream; 
-	private CompressionMode mode; 
-	private bool leaveOpen; 
-	private bool disposed; 
-	private DeflateStreamNative native; 
+	private Stream base_stream;
+	private CompressionMode mode;
+	private bool leaveOpen;
+	private bool disposed;
+	private DeflateStreamNative native;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }

@@ -1,7 +1,7 @@
 internal sealed class BitSet // TypeDefIndex: 2141
 {
-	private int count; 
-	private uint[] bits; 
+	private int count;
+	private uint[] bits;
 
 	public int Count { get; }
 	public bool Item { get; }

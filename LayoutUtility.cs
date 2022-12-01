@@ -27,15 +27,15 @@ public static class LayoutUtility // TypeDefIndex: 4987
 
 private sealed class LayoutUtility.<>c // TypeDefIndex: 4988
 {
-	public static readonly LayoutUtility.<>c <>9; 
-	public static Func<ILayoutElement, float> <>9__3_0; 
-	public static Func<ILayoutElement, float> <>9__4_0; 
-	public static Func<ILayoutElement, float> <>9__4_1; 
-	public static Func<ILayoutElement, float> <>9__5_0; 
-	public static Func<ILayoutElement, float> <>9__6_0; 
-	public static Func<ILayoutElement, float> <>9__7_0; 
-	public static Func<ILayoutElement, float> <>9__7_1; 
-	public static Func<ILayoutElement, float> <>9__8_0; 
+	public static readonly LayoutUtility.<>c <>9;
+	public static Func<ILayoutElement, float> <>9__3_0;
+	public static Func<ILayoutElement, float> <>9__4_0;
+	public static Func<ILayoutElement, float> <>9__4_1;
+	public static Func<ILayoutElement, float> <>9__5_0;
+	public static Func<ILayoutElement, float> <>9__6_0;
+	public static Func<ILayoutElement, float> <>9__7_0;
+	public static Func<ILayoutElement, float> <>9__7_1;
+	public static Func<ILayoutElement, float> <>9__8_0;
 
 
 	private static void .cctor() { }

@@ -1,21 +1,21 @@
-public class LaserLight : AudioVisualisationEntity // TypeDefIndex: 11181
+public class LaserLight : AudioVisualisationEntity // TypeDefIndex: 11187
 {
-	public Animator LaserAnimator; 
-	public LineRenderer[] LineRenderers; 
-	public MeshRenderer[] DotRenderers; 
-	public MeshRenderer FlareRenderer; 
-	public Light[] LightSources; 
-	public LaserLight.ColourSetting RedSettings; 
-	public LaserLight.ColourSetting GreenSettings; 
-	public LaserLight.ColourSetting BlueSettings; 
-	public LaserLight.ColourSetting YellowSettings; 
-	public LaserLight.ColourSetting PinkSettings; 
-	private static int AnimSpeedParameter; 
-	private static readonly int TintColor; 
-	private static MaterialPropertyBlock laserBlock; 
-	private float lookingAtTime; 
-	private TimeSince lastLookAtTick; 
-	private static bool hasAwardedLookAtAchievement; 
+	public Animator LaserAnimator;
+	public LineRenderer[] LineRenderers;
+	public MeshRenderer[] DotRenderers;
+	public MeshRenderer FlareRenderer;
+	public Light[] LightSources;
+	public LaserLight.ColourSetting RedSettings;
+	public LaserLight.ColourSetting GreenSettings;
+	public LaserLight.ColourSetting BlueSettings;
+	public LaserLight.ColourSetting YellowSettings;
+	public LaserLight.ColourSetting PinkSettings;
+	private static int AnimSpeedParameter;
+	private static readonly int TintColor;
+	private static MaterialPropertyBlock laserBlock;
+	private float lookingAtTime;
+	private TimeSince lastLookAtTick;
+	private static bool hasAwardedLookAtAchievement;
 
 	public override bool ShowColourOption { get; }
 	public override bool ShowSpeedOption { get; }
@@ -50,12 +50,12 @@ public class LaserLight : AudioVisualisationEntity // TypeDefIndex: 11181
 
 }
 
-public struct LaserLight.ColourSetting // TypeDefIndex: 11182
+public struct LaserLight.ColourSetting // TypeDefIndex: 11188
 {
-	public Color PointLightColour; 
-	public Material LaserMaterial; 
-	public Color DotColour; 
-	public Color FlareColour; 
+	public Color PointLightColour;
+	public Material LaserMaterial;
+	public Color DotColour;
+	public Color FlareColour;
 
 }
 

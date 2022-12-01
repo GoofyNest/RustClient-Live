@@ -1,9 +1,9 @@
 public abstract class SafeHandle : CriticalFinalizerObject, IDisposable // TypeDefIndex: 1351
 {
-	protected IntPtr handle; 
-	private int _state; 
-	private bool _ownsHandle; 
-	private bool _fullyInitialized; 
+	protected IntPtr handle;
+	private int _state;
+	private bool _ownsHandle;
+	private bool _fullyInitialized;
 	private const int RefCount_Mask = 2147483644;
 	private const int RefCount_One = 4;
 
@@ -11,42 +11,42 @@ public abstract class SafeHandle : CriticalFinalizerObject, IDisposable // TypeD
 	public abstract bool IsInvalid { get; }
 
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected void .ctor(IntPtr invalidHandleValue, bool ownsHandle) { }
 
 	protected override void Finalize() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected void SetHandle(IntPtr handle) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public IntPtr DangerousGetHandle() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public bool get_IsClosed() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public abstract bool get_IsInvalid();
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void Close() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void Dispose() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected virtual void Dispose(bool disposing) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	protected abstract bool ReleaseHandle();
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void SetHandleAsInvalid() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void DangerousAddRef(ref bool success) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void DangerousRelease() { }
 
 	private void InternalDispose() { }

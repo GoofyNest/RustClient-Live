@@ -1,15 +1,15 @@
-internal class Hybi13Handler : IHandler, IDisposable // TypeDefIndex: 6973
+internal class Hybi13Handler : IHandler, IDisposable // TypeDefIndex: 6975
 {
-	private static readonly Encoding UTF8; 
-	private static readonly SHA1 SHA1; 
-	private static readonly ThreadLocal<StringBuilder> StringBuilder; 
-	private readonly WebSocketHttpRequest _request; 
-	private readonly IWebSocketConnection _connection; 
-	private byte[] _data; 
-	private int _dataLen; 
-	private Nullable<FrameType> _frameType; 
-	private byte[] _message; 
-	private int _messageLen; 
+	private static readonly Encoding UTF8;
+	private static readonly SHA1 SHA1;
+	private static readonly ThreadLocal<StringBuilder> StringBuilder;
+	private readonly WebSocketHttpRequest _request;
+	private readonly IWebSocketConnection _connection;
+	private byte[] _data;
+	private int _dataLen;
+	private Nullable<FrameType> _frameType;
+	private byte[] _message;
+	private int _messageLen;
 
 
 	public void .ctor(WebSocketHttpRequest request, IWebSocketConnection connection) { }
@@ -44,9 +44,9 @@ internal class Hybi13Handler : IHandler, IDisposable // TypeDefIndex: 6973
 
 }
 
-private sealed class Hybi13Handler.<>c // TypeDefIndex: 6974
+private sealed class Hybi13Handler.<>c // TypeDefIndex: 6976
 {
-	public static readonly Hybi13Handler.<>c <>9; 
+	public static readonly Hybi13Handler.<>c <>9;
 
 
 	private static void .cctor() { }

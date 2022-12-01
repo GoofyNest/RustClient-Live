@@ -1,9 +1,9 @@
-internal struct QueryLeaderboardDefinitionsOptionsInternal : ISettable<QueryLeaderboardDefinitionsOptions>, IDisposable // TypeDefIndex: 9315
+internal struct QueryLeaderboardDefinitionsOptionsInternal : ISettable<QueryLeaderboardDefinitionsOptions>, IDisposable // TypeDefIndex: 9317
 {
-	private int m_ApiVersion; 
-	private long m_StartTime; 
-	private long m_EndTime; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private long m_StartTime;
+	private long m_EndTime;
+	private IntPtr m_LocalUserId;
 
 	public Nullable<DateTimeOffset> StartTime { set; }
 	public Nullable<DateTimeOffset> EndTime { set; }

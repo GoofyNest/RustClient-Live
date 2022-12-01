@@ -1,19 +1,19 @@
-public class Value // TypeDefIndex: 8157
+public class Value // TypeDefIndex: 8159
 {
-	[CompilerGeneratedAttribute] 
-	private ValueType <Type>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Str>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private double <Number>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Object <Obj>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Array <Array>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Boolean>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Value <Parent>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ValueType <Type>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Str>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private double <Number>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Object <Obj>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Array <Array>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Boolean>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Value <Parent>k__BackingField;
 
 	public ValueType Type { get; set; }
 	public string Str { get; set; }
@@ -38,46 +38,46 @@ public class Value // TypeDefIndex: 8157
 
 	public void .ctor(Value value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ValueType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Type(ValueType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Str() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Str(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public double get_Number() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Number(double value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Object get_Obj() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Obj(Object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Array get_Array() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Array(Array value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Boolean() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Boolean(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Value get_Parent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Parent(Value value) { }
 
 	public static Value op_Implicit(string str) { }

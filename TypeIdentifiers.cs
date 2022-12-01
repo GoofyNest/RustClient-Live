@@ -7,8 +7,8 @@ internal class TypeIdentifiers // TypeDefIndex: 409
 
 private class TypeIdentifiers.Display : TypeNames.ATypeName, TypeIdentifier, TypeName, IEquatable<TypeName> // TypeDefIndex: 410
 {
-	private string displayName; 
-	private string internal_name; 
+	private string displayName;
+	private string internal_name;
 
 	public override string DisplayName { get; }
 	public string InternalName { get; }

@@ -1,8 +1,8 @@
-public class OverlayMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 10937
+public class OverlayMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 10943
 {
-	private static readonly Memoized<string, string> STPrefixed; 
-	public string baseTextureName; 
-	public Texture2D baseTexture; 
+	private static readonly Memoized<string, string> STPrefixed;
+	public string baseTextureName;
+	public Texture2D baseTexture;
 
 
 	public override void UpdateMaterials(MaterialPropertyBlock block, Texture2D textureOverride, bool forEditing = False, bool isSelected = False) { }
@@ -13,9 +13,9 @@ public class OverlayMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 1
 
 }
 
-private sealed class OverlayMeshPaintableSource.<>c // TypeDefIndex: 10938
+private sealed class OverlayMeshPaintableSource.<>c // TypeDefIndex: 10944
 {
-	public static readonly OverlayMeshPaintableSource.<>c <>9; 
+	public static readonly OverlayMeshPaintableSource.<>c <>9;
 
 
 	private static void .cctor() { }

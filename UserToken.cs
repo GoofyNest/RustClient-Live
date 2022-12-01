@@ -1,24 +1,24 @@
-public struct UserToken // TypeDefIndex: 8757
+public struct UserToken // TypeDefIndex: 8759
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ProductUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Token>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ProductUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Token>k__BackingField;
 
 	public ProductUserId ProductUserId { get; set; }
 	public Utf8String Token { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ProductUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Token() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Token(Utf8String value) { }
 
 	internal void Set(ref UserTokenInternal other) { }

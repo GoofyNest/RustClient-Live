@@ -1,8 +1,8 @@
-public class SimpleFloat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6358
+public class SimpleFloat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6360
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float value; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float value;
 
 
 	public static void ResetToPool(SimpleFloat instance) { }

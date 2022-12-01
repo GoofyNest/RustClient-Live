@@ -1,11 +1,11 @@
 internal sealed class ObjectStorage : DataStorage // TypeDefIndex: 4411
 {
-	private static readonly object s_defaultValue; 
-	private object[] _values; 
-	private readonly bool _implementsIXmlSerializable; 
-	private static readonly object s_tempAssemblyCacheLock; 
-	private static Dictionary<KeyValuePair<Type, XmlRootAttribute>, XmlSerializer> s_tempAssemblyCache; 
-	private static readonly XmlSerializerFactory s_serializerFactory; 
+	private static readonly object s_defaultValue;
+	private object[] _values;
+	private readonly bool _implementsIXmlSerializable;
+	private static readonly object s_tempAssemblyCacheLock;
+	private static Dictionary<KeyValuePair<Type, XmlRootAttribute>, XmlSerializer> s_tempAssemblyCache;
+	private static readonly XmlSerializerFactory s_serializerFactory;
 
 
 	internal void .ctor(DataColumn column, Type type) { }
@@ -58,7 +58,7 @@ internal sealed class ObjectStorage : DataStorage // TypeDefIndex: 4411
 
 private enum ObjectStorage.Families // TypeDefIndex: 4412
 {
-	public int value__; 
+	public int value__;
 	public const ObjectStorage.Families DATETIME = 0;
 	public const ObjectStorage.Families NUMBER = 1;
 	public const ObjectStorage.Families STRING = 2;
@@ -69,7 +69,7 @@ private enum ObjectStorage.Families // TypeDefIndex: 4412
 
 private class ObjectStorage.TempAssemblyComparer : IEqualityComparer<KeyValuePair<Type, XmlRootAttribute>> // TypeDefIndex: 4413
 {
-	internal static readonly IEqualityComparer<KeyValuePair<Type, XmlRootAttribute>> s_default; 
+	internal static readonly IEqualityComparer<KeyValuePair<Type, XmlRootAttribute>> s_default;
 
 
 	private void .ctor() { }

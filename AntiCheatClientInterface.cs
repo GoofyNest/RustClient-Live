@@ -1,6 +1,6 @@
-public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9819
+public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9821
 {
-	private static byte[] PollStatusStaticBuffer; 
+	private static byte[] PollStatusStaticBuffer;
 	public const int AddexternalintegritycatalogApiLatest = 1;
 	public const int AddnotifyclientintegrityviolatedApiLatest = 1;
 	public const int AddnotifymessagetopeerApiLatest = 1;
@@ -10,7 +10,7 @@ public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9819
 	public const int BeginsessionApiLatest = 3;
 	public const int EndsessionApiLatest = 1;
 	public const int GetprotectmessageoutputlengthApiLatest = 1;
-	public IntPtr PeerSelf; 
+	public IntPtr PeerSelf;
 	public const int PollstatusApiLatest = 1;
 	public const int ProtectmessageApiLatest = 1;
 	public const int ReceivemessagefrompeerApiLatest = 1;
@@ -68,19 +68,19 @@ public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9819
 
 	public Result UnregisterPeer(ref UnregisterPeerOptions options) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnClientIntegrityViolatedCallbackInternalImplementation(ref OnClientIntegrityViolatedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnMessageToPeerCallbackInternalImplementation(ref OnMessageToClientCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnMessageToServerCallbackInternalImplementation(ref OnMessageToServerCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnPeerActionRequiredCallbackInternalImplementation(ref OnClientActionRequiredCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnPeerAuthStatusChangedCallbackInternalImplementation(ref OnClientAuthStatusChangedCallbackInfoInternal data) { }
 
 	private static void .cctor() { }

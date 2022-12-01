@@ -1,17 +1,17 @@
-public class OvenLineRow : MonoBehaviour // TypeDefIndex: 12811
+public class OvenLineRow : MonoBehaviour // TypeDefIndex: 12825
 {
-	public LootGrid Above; 
-	public LootGrid Below; 
-	public Transform Container; 
-	public Color Color; 
-	public Sprite TriangleSprite; 
-	public int LineWidth; 
-	public int ArrowWidth; 
-	public int ArrowHeight; 
-	public int Padding; 
-	private int _topCount; 
-	private int _bottomCount; 
-	private List<GameObject> images; 
+	public LootGrid Above;
+	public LootGrid Below;
+	public Transform Container;
+	public Color Color;
+	public Sprite TriangleSprite;
+	public int LineWidth;
+	public int ArrowWidth;
+	public int ArrowHeight;
+	public int Padding;
+	private int _topCount;
+	private int _bottomCount;
+	private List<GameObject> images;
 
 
 	private void Update() { }

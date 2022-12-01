@@ -1,21 +1,21 @@
-public class TerrainPath : TerrainExtension // TypeDefIndex: 12178
+public class TerrainPath : TerrainExtension // TypeDefIndex: 12185
 {
-	internal List<PathList> Roads; 
-	internal List<PathList> Rails; 
-	internal List<PathList> Rivers; 
-	internal List<PathList> Powerlines; 
-	internal List<LandmarkInfo> Landmarks; 
-	internal List<MonumentInfo> Monuments; 
-	internal List<RiverInfo> RiverObjs; 
-	internal List<LakeInfo> LakeObjs; 
-	internal GameObject DungeonGridRoot; 
-	internal List<DungeonGridInfo> DungeonGridEntrances; 
-	internal List<DungeonGridCell> DungeonGridCells; 
-	internal GameObject DungeonBaseRoot; 
-	internal List<DungeonBaseInfo> DungeonBaseEntrances; 
-	internal List<Vector3> OceanPatrolClose; 
-	internal List<Vector3> OceanPatrolFar; 
-	private Dictionary<string, List<PowerlineNode>> wires; 
+	internal List<PathList> Roads;
+	internal List<PathList> Rails;
+	internal List<PathList> Rivers;
+	internal List<PathList> Powerlines;
+	internal List<LandmarkInfo> Landmarks;
+	internal List<MonumentInfo> Monuments;
+	internal List<RiverInfo> RiverObjs;
+	internal List<LakeInfo> LakeObjs;
+	internal GameObject DungeonGridRoot;
+	internal List<DungeonGridInfo> DungeonGridEntrances;
+	internal List<DungeonGridCell> DungeonGridCells;
+	internal GameObject DungeonBaseRoot;
+	internal List<DungeonBaseInfo> DungeonBaseEntrances;
+	internal List<Vector3> OceanPatrolClose;
+	internal List<Vector3> OceanPatrolFar;
+	private Dictionary<string, List<PowerlineNode>> wires;
 
 
 	public override void PostSetup() { }

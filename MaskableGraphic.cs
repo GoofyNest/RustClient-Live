@@ -1,19 +1,19 @@
 public abstract class MaskableGraphic : Graphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 4992
 {
-	protected bool m_ShouldRecalculateStencil; 
-	protected Material m_MaskMaterial; 
-	private RectMask2D m_ParentMask; 
-	private bool m_Maskable; 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
-	protected bool m_IncludeForMasking; 
-	[SerializeField] 
-	private MaskableGraphic.CullStateChangedEvent m_OnCullStateChanged; 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
-	protected bool m_ShouldRecalculate; 
-	protected int m_StencilValue; 
-	private readonly Vector3[] m_Corners; 
+	protected bool m_ShouldRecalculateStencil;
+	protected Material m_MaskMaterial;
+	private RectMask2D m_ParentMask;
+	private bool m_Maskable;
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
+	protected bool m_IncludeForMasking;
+	[SerializeField]
+	private MaskableGraphic.CullStateChangedEvent m_OnCullStateChanged;
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
+	protected bool m_ShouldRecalculate;
+	protected int m_StencilValue;
+	private readonly Vector3[] m_Corners;
 
 	public MaskableGraphic.CullStateChangedEvent onCullStateChanged { get; set; }
 	public bool maskable { get; set; }
@@ -42,8 +42,8 @@ public abstract class MaskableGraphic : Graphic, IClippable, IMaskable, IMateria
 
 	protected override void OnTransformParentChanged() { }
 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public virtual void ParentMaskStateChanged() { }
 
 	protected override void OnCanvasHierarchyChanged() { }

@@ -1,13 +1,13 @@
 public class JapaneseCalendar : Calendar // TypeDefIndex: 712
 {
-	internal static readonly DateTime calendarMinValue; 
-	internal static EraInfo[] japaneseEraInfo; 
-	internal static Calendar s_defaultInstance; 
-	internal GregorianCalendarHelper helper; 
+	internal static readonly DateTime calendarMinValue;
+	internal static EraInfo[] japaneseEraInfo;
+	internal static Calendar s_defaultInstance;
+	internal GregorianCalendarHelper helper;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override DateTime MinSupportedDateTime { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override DateTime MaxSupportedDateTime { get; }
 	internal override int ID { get; }
 	public override int[] Eras { get; }

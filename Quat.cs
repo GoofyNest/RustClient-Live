@@ -1,13 +1,13 @@
-public struct Quat // TypeDefIndex: 9795
+public struct Quat // TypeDefIndex: 9797
 {
-	[CompilerGeneratedAttribute] 
-	private float <w>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <x>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <y>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <z>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private float <w>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <x>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <y>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <z>k__BackingField;
 
 	public float w { get; set; }
 	public float x { get; set; }
@@ -15,28 +15,28 @@ public struct Quat // TypeDefIndex: 9795
 	public float z { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_w() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_w(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_x() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_x(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_y() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_y(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_z() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_z(float value) { }
 
 	internal void Set(ref QuatInternal other) { }

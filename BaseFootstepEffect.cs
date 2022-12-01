@@ -1,11 +1,11 @@
-public abstract class BaseFootstepEffect : MonoBehaviour, IClientComponent // TypeDefIndex: 11061
+public abstract class BaseFootstepEffect : MonoBehaviour, IClientComponent // TypeDefIndex: 11067
 {
-	public LayerMask validImpactLayers; 
+	public LayerMask validImpactLayers;
 	private const float minTimeBetweenSteps = 0,05;
-	private float lastFootstepTime; 
+	private float lastFootstepTime;
 	private const float minDistanceBetweenSteps = 0,5;
 	private const float minDistanceBetweenStepsSqr = 0,25;
-	protected Vector3 lastFootstepPos; 
+	protected Vector3 lastFootstepPos;
 	private const float maxDistanceToCamera = 75;
 
 

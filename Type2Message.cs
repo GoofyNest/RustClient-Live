@@ -1,8 +1,8 @@
 public class Type2Message : MessageBase // TypeDefIndex: 1732
 {
-	private byte[] _nonce; 
-	private string _targetName; 
-	private byte[] _targetInfo; 
+	private byte[] _nonce;
+	private string _targetName;
+	private byte[] _targetInfo;
 
 	public byte[] Nonce { get; }
 	public string TargetName { get; }

@@ -27,13 +27,13 @@ public class LODGroup : Component // TypeDefIndex: 3442
 
 	public void set_enabled(bool value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void RecalculateBounds() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public LOD[] GetLODs() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetLODs(LOD[] lods) { }
 
 	private void get_localReferencePoint_Injected(out Vector3 ret) { }

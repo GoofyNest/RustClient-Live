@@ -1,18 +1,18 @@
 internal class TypeData // TypeDefIndex: 2062
 {
-	private Type type; 
-	private string elementName; 
-	private SchemaTypes sType; 
-	private Type listItemType; 
-	private string typeName; 
-	private string fullTypeName; 
-	private TypeData listItemTypeData; 
-	private TypeData mappedType; 
-	private XmlSchemaPatternFacet facet; 
-	private MethodInfo typeConvertor; 
-	private bool hasPublicConstructor; 
-	private bool nullableOverride; 
-	private static string[] keywords; 
+	private Type type;
+	private string elementName;
+	private SchemaTypes sType;
+	private Type listItemType;
+	private string typeName;
+	private string fullTypeName;
+	private TypeData listItemTypeData;
+	private TypeData mappedType;
+	private XmlSchemaPatternFacet facet;
+	private MethodInfo typeConvertor;
+	private bool hasPublicConstructor;
+	private bool nullableOverride;
+	private static string[] keywords;
 
 	public string TypeName { get; }
 	public string XmlType { get; }

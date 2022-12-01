@@ -1,8 +1,8 @@
-internal struct GSStatsReceived_t : ICallbackData // TypeDefIndex: 5506
+internal struct GSStatsReceived_t : ICallbackData // TypeDefIndex: 5508
 {
-	internal Result Result; 
-	internal ulong SteamIDUser; 
-	public static int _datasize; 
+	internal Result Result;
+	internal ulong SteamIDUser;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

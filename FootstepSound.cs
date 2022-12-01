@@ -1,8 +1,8 @@
-public class FootstepSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10719
+public class FootstepSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10723
 {
-	public SoundDefinition lightSound; 
-	public SoundDefinition medSound; 
-	public SoundDefinition hardSound; 
+	public SoundDefinition lightSound;
+	public SoundDefinition medSound;
+	public SoundDefinition hardSound;
 	private const float panAmount = 0,05;
 
 
@@ -14,9 +14,9 @@ public class FootstepSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10
 
 }
 
-public enum FootstepSound.Hardness // TypeDefIndex: 10720
+public enum FootstepSound.Hardness // TypeDefIndex: 10724
 {
-	public int value__; 
+	public int value__;
 	public const FootstepSound.Hardness Light = 1;
 	public const FootstepSound.Hardness Medium = 2;
 	public const FootstepSound.Hardness Hard = 3;

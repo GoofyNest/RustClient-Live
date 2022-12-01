@@ -1,9 +1,9 @@
-public class PlaceDecorValueNoise : ProceduralComponent // TypeDefIndex: 12283
+public class PlaceDecorValueNoise : ProceduralComponent // TypeDefIndex: 12291
 {
-	public SpawnFilter Filter; 
-	public string ResourceFolder; 
-	public NoiseParameters Cluster; 
-	public float ObjectDensity; 
+	public SpawnFilter Filter;
+	public string ResourceFolder;
+	public NoiseParameters Cluster;
+	public float ObjectDensity;
 
 
 	public override void Process(uint seed) { }

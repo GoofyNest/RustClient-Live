@@ -1,12 +1,12 @@
 public class WindowsImpersonationContext : IDisposable // TypeDefIndex: 933
 {
-	private IntPtr _token; 
-	private bool undo; 
+	private IntPtr _token;
+	private bool undo;
 
 
 	internal void .ctor(IntPtr token) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public void Dispose() { }
 
 	public void Undo() { }

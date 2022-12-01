@@ -1,7 +1,7 @@
 internal class UTF16Decoder : Decoder // TypeDefIndex: 2012
 {
-	private bool bigEndian; 
-	private int lastByte; 
+	private bool bigEndian;
+	private int lastByte;
 
 
 	public void .ctor(bool bigEndian) { }

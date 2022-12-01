@@ -1,24 +1,24 @@
-public struct SendCustomInviteOptions // TypeDefIndex: 9544
+public struct SendCustomInviteOptions // TypeDefIndex: 9546
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <TargetUserIds>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <TargetUserIds>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ProductUserId[] TargetUserIds { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_TargetUserIds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserIds(ProductUserId[] value) { }
 
 }

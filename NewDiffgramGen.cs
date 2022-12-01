@@ -1,14 +1,14 @@
 internal sealed class NewDiffgramGen // TypeDefIndex: 4336
 {
-	internal XmlDocument _doc; 
-	internal DataSet _ds; 
-	internal DataTable _dt; 
-	internal XmlWriter _xmlw; 
-	private bool _fBefore; 
-	private bool _fErrors; 
-	internal Hashtable _rowsOrder; 
-	private ArrayList _tables; 
-	private bool _writeHierarchy; 
+	internal XmlDocument _doc;
+	internal DataSet _ds;
+	internal DataTable _dt;
+	internal XmlWriter _xmlw;
+	private bool _fBefore;
+	private bool _fErrors;
+	internal Hashtable _rowsOrder;
+	private ArrayList _tables;
+	private bool _writeHierarchy;
 
 
 	internal void .ctor(DataSet ds) { }

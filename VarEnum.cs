@@ -1,6 +1,6 @@
 public enum VarEnum // TypeDefIndex: 1328
 {
-	public int value__; 
+	public int value__;
 	public const VarEnum VT_EMPTY = 0;
 	public const VarEnum VT_NULL = 1;
 	public const VarEnum VT_I2 = 2;

@@ -1,17 +1,17 @@
 public class FtpWebResponse : WebResponse // TypeDefIndex: 3004
 {
-	private Stream stream; 
-	private Uri uri; 
-	private FtpStatusCode statusCode; 
-	private DateTime lastModified; 
-	private string bannerMessage; 
-	private string welcomeMessage; 
-	private string exitMessage; 
-	private string statusDescription; 
-	private string method; 
-	private bool disposed; 
-	private FtpWebRequest request; 
-	internal long contentLength; 
+	private Stream stream;
+	private Uri uri;
+	private FtpStatusCode statusCode;
+	private DateTime lastModified;
+	private string bannerMessage;
+	private string welcomeMessage;
+	private string exitMessage;
+	private string statusDescription;
+	private string method;
+	private bool disposed;
+	private FtpWebRequest request;
+	internal long contentLength;
 
 	public override long ContentLength { get; }
 	public override WebHeaderCollection Headers { get; }

@@ -1,15 +1,15 @@
-public class HairDye // TypeDefIndex: 12479
+public class HairDye // TypeDefIndex: 12487
 {
-	[ColorUsageAttribute] 
-	public Color capBaseColor; 
-	public Material sourceMaterial; 
-	[InspectorFlagsAttribute] 
-	public HairDye.CopyPropertyMask copyProperties; 
-	private static MaterialPropertyDesc[] transferableProps; 
-	private static int _HairBaseColorUV1; 
-	private static int _HairBaseColorUV2; 
-	private static int _HairPackedMapUV1; 
-	private static int _HairPackedMapUV2; 
+	[ColorUsageAttribute]
+	public Color capBaseColor;
+	public Material sourceMaterial;
+	[InspectorFlagsAttribute]
+	public HairDye.CopyPropertyMask copyProperties;
+	private static MaterialPropertyDesc[] transferableProps;
+	private static int _HairBaseColorUV1;
+	private static int _HairBaseColorUV2;
+	private static int _HairPackedMapUV1;
+	private static int _HairPackedMapUV2;
 
 
 	public void Apply(HairDyeCollection collection, MaterialPropertyBlock block) { }
@@ -22,9 +22,9 @@ public class HairDye // TypeDefIndex: 12479
 
 }
 
-public enum HairDye.CopyProperty // TypeDefIndex: 12480
+public enum HairDye.CopyProperty // TypeDefIndex: 12488
 {
-	public int value__; 
+	public int value__;
 	public const HairDye.CopyProperty DyeColor = 0;
 	public const HairDye.CopyProperty RootColor = 1;
 	public const HairDye.CopyProperty TipColor = 2;
@@ -37,9 +37,9 @@ public enum HairDye.CopyProperty // TypeDefIndex: 12480
 
 }
 
-public enum HairDye.CopyPropertyMask // TypeDefIndex: 12481
+public enum HairDye.CopyPropertyMask // TypeDefIndex: 12489
 {
-	public int value__; 
+	public int value__;
 	public const HairDye.CopyPropertyMask DyeColor = 1;
 	public const HairDye.CopyPropertyMask RootColor = 2;
 	public const HairDye.CopyPropertyMask TipColor = 4;

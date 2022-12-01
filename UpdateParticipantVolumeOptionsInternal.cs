@@ -1,10 +1,10 @@
-internal struct UpdateParticipantVolumeOptionsInternal : ISettable<UpdateParticipantVolumeOptions>, IDisposable // TypeDefIndex: 8717
+internal struct UpdateParticipantVolumeOptionsInternal : ISettable<UpdateParticipantVolumeOptions>, IDisposable // TypeDefIndex: 8719
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_ParticipantId; 
-	private float m_Volume; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private IntPtr m_ParticipantId;
+	private float m_Volume;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String RoomName { set; }

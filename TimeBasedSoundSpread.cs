@@ -1,10 +1,10 @@
-public class TimeBasedSoundSpread : SoundModifier // TypeDefIndex: 10773
+public class TimeBasedSoundSpread : SoundModifier // TypeDefIndex: 10777
 {
-	public AnimationCurve spreadCurve; 
-	public AnimationCurve wanderIntensityCurve; 
-	private float startTime; 
-	private float wanderTime; 
-	private SoundModulation.Modulator modulator; 
+	public AnimationCurve spreadCurve;
+	public AnimationCurve wanderIntensityCurve;
+	private float startTime;
+	private float wanderTime;
+	private SoundModulation.Modulator modulator;
 
 
 	public override void Init(Sound targetSound) { }

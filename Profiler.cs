@@ -1,10 +1,10 @@
 public sealed class Profiler // TypeDefIndex: 3583
 {
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static int GetRuntimeMemorySize(Object o) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static long GetRuntimeMemorySizeLong(Object o) { }
 
 }

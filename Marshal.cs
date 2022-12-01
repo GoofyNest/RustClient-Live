@@ -1,15 +1,15 @@
 public static class Marshal // TypeDefIndex: 1355
 {
-	public static readonly int SystemMaxDBCSCharSize; 
-	public static readonly int SystemDefaultCharSize; 
+	public static readonly int SystemMaxDBCSCharSize;
+	public static readonly int SystemDefaultCharSize;
 
 
 	public static IntPtr AllocCoTaskMem(int cb) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr AllocHGlobal(IntPtr cb) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr AllocHGlobal(int cb) { }
 
 	internal static void copy_to_unmanaged(Array source, int startIndex, IntPtr destination, int length) { }
@@ -30,7 +30,7 @@ public static class Marshal // TypeDefIndex: 1355
 
 	public static void FreeBSTR(IntPtr ptr) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void FreeHGlobal(IntPtr hglobal) { }
 
 	private static void ClearUnicode(IntPtr ptr) { }
@@ -39,7 +39,7 @@ public static class Marshal // TypeDefIndex: 1355
 
 	public static int GetHRForException(Exception e) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int GetLastWin32Error() { }
 
 	public static string PtrToStringAnsi(IntPtr ptr) { }
@@ -48,7 +48,7 @@ public static class Marshal // TypeDefIndex: 1355
 
 	public static string PtrToStringUni(IntPtr ptr, int len) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object PtrToStructure(IntPtr ptr, Type structureType) { }
 
 	public static T PtrToStructure<T>(IntPtr ptr) { }
@@ -66,27 +66,27 @@ public static class Marshal // TypeDefIndex: 1355
 
 	public static short ReadInt16(IntPtr ptr, int ofs) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int ReadInt32(IntPtr ptr) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int ReadInt32(IntPtr ptr, int ofs) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static long ReadInt64(IntPtr ptr) { }
 
 	public static long ReadInt64(IntPtr ptr, int ofs) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr ReadIntPtr(IntPtr ptr) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static IntPtr ReadIntPtr(IntPtr ptr, int ofs) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private static int ReleaseInternal(IntPtr pUnk) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Release(IntPtr pUnk) { }
 
 	public static int SizeOf(Type t) { }
@@ -105,8 +105,8 @@ public static class Marshal // TypeDefIndex: 1355
 
 	public static IntPtr SecureStringToGlobalAllocUnicode(SecureString s) { }
 
-	[ComVisibleAttribute] 
-	[ReliabilityContractAttribute] 
+	[ComVisibleAttribute]
+	[ReliabilityContractAttribute]
 	public static void StructureToPtr(object structure, IntPtr ptr, bool fDeleteOld) { }
 
 	public static void StructureToPtr<T>(T structure, IntPtr ptr, bool fDeleteOld) { }

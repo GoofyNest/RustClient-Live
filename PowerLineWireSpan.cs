@@ -1,10 +1,10 @@
-public class PowerLineWireSpan : MonoBehaviour // TypeDefIndex: 12122
+public class PowerLineWireSpan : MonoBehaviour // TypeDefIndex: 12129
 {
-	public GameObjectRef wirePrefab; 
-	public Transform start; 
-	public Transform end; 
-	public float WireLength; 
-	public List<PowerLineWireConnection> connections; 
+	public GameObjectRef wirePrefab;
+	public Transform start;
+	public Transform end;
+	public float WireLength;
+	public List<PowerLineWireConnection> connections;
 
 
 	public void Init(PowerLineWire wire) { }

@@ -1,6 +1,6 @@
-public class DecoderException : MP3SharpException // TypeDefIndex: 7404
+public class DecoderException : MP3SharpException // TypeDefIndex: 7406
 {
-	private int _ErrorCode; 
+	private int _ErrorCode;
 
 
 	internal void .ctor(string message, Exception inner) { }

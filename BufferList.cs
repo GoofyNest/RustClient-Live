@@ -1,7 +1,7 @@
 public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4800
 {
-	private readonly BufferList<T> list; 
-	private int index; 
+	private readonly BufferList<T> list;
+	private int index;
 
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

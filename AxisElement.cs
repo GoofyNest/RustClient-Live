@@ -1,9 +1,9 @@
 internal class AxisElement // TypeDefIndex: 2132
 {
-	internal DoubleLinkAxis curNode; 
-	internal int rootDepth; 
-	internal int curDepth; 
-	internal bool isMatch; 
+	internal DoubleLinkAxis curNode;
+	internal int rootDepth;
+	internal int curDepth;
+	internal bool isMatch;
 
 	internal DoubleLinkAxis CurNode { get; }
 

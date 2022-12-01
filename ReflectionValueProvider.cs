@@ -1,6 +1,6 @@
-public class ReflectionValueProvider : IValueProvider // TypeDefIndex: 6040
+public class ReflectionValueProvider : IValueProvider // TypeDefIndex: 6042
 {
-	private readonly MemberInfo _memberInfo; 
+	private readonly MemberInfo _memberInfo;
 
 
 	public void .ctor(MemberInfo memberInfo) { }

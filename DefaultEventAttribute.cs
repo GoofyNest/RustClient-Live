@@ -1,7 +1,7 @@
 public sealed class DefaultEventAttribute : Attribute // TypeDefIndex: 2685
 {
-	private readonly string name; 
-	public static readonly DefaultEventAttribute Default; 
+	private readonly string name;
+	public static readonly DefaultEventAttribute Default;
 
 	public string Name { get; }
 

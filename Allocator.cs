@@ -1,6 +1,6 @@
 public enum Allocator // TypeDefIndex: 3321
 {
-	public int value__; 
+	public int value__;
 	public const Allocator Invalid = 0;
 	public const Allocator None = 1;
 	public const Allocator Temp = 2;

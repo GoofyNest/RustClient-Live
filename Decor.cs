@@ -1,8 +1,8 @@
-public class Decor : ConsoleSystem // TypeDefIndex: 13694
+public class Decor : ConsoleSystem // TypeDefIndex: 13710
 {
-	private static float m_quality; 
+	private static float m_quality;
 
-	[ClientVar] 
+	[ClientVar]
 	public static float quality { get; set; }
 	public static float quality01 { get; set; }
 

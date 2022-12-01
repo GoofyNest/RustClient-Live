@@ -1,39 +1,39 @@
 public class VideoCapture : IDisposable // TypeDefIndex: 3619
 {
-	internal IntPtr m_NativePtr; 
-	private static readonly long HR_SUCCESS; 
+	internal IntPtr m_NativePtr;
+	private static readonly long HR_SUCCESS;
 
 
 	private static VideoCapture.VideoCaptureResult MakeCaptureResult(long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnCreatedVideoCaptureResourceDelegate(VideoCapture.OnVideoCaptureResourceCreatedCallback callback, IntPtr nativePtr) { }
 
 	private void .ctor(IntPtr nativeCaptureObject) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnVideoModeStartedDelegate(VideoCapture.OnVideoModeStartedCallback callback, long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnVideoModeStoppedDelegate(VideoCapture.OnVideoModeStoppedCallback callback, long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnStartedRecordingVideoToDiskDelegate(VideoCapture.OnStartedRecordingVideoCallback callback, long hResult) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void InvokeOnStoppedRecordingVideoToDiskDelegate(VideoCapture.OnStoppedRecordingVideoCallback callback, long hResult) { }
 
 	public void Dispose() { }
 
-	[NativeConditionalAttribute] 
-	[NativeMethodAttribute] 
+	[NativeConditionalAttribute]
+	[NativeMethodAttribute]
 	private void Dispose_Internal() { }
 
 	protected override void Finalize() { }
 
-	[ThreadAndSerializationSafeAttribute] 
-	[NativeMethodAttribute] 
-	[NativeConditionalAttribute] 
+	[ThreadAndSerializationSafeAttribute]
+	[NativeMethodAttribute]
+	[NativeConditionalAttribute]
 	private void DisposeThreaded_Internal() { }
 
 	private static void .cctor() { }
@@ -42,7 +42,7 @@ public class VideoCapture : IDisposable // TypeDefIndex: 3619
 
 public enum VideoCapture.CaptureResultType // TypeDefIndex: 3620
 {
-	public int value__; 
+	public int value__;
 	public const VideoCapture.CaptureResultType Success = 0;
 	public const VideoCapture.CaptureResultType UnknownError = 1;
 
@@ -50,8 +50,8 @@ public enum VideoCapture.CaptureResultType // TypeDefIndex: 3620
 
 public struct VideoCapture.VideoCaptureResult // TypeDefIndex: 3621
 {
-	public VideoCapture.CaptureResultType resultType; 
-	public long hResult; 
+	public VideoCapture.CaptureResultType resultType;
+	public long hResult;
 
 }
 

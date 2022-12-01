@@ -1,15 +1,15 @@
 internal class WebAsyncResult : SimpleAsyncResult // TypeDefIndex: 3025
 {
-	private int nbytes; 
-	private IAsyncResult innerAsyncResult; 
-	private HttpWebResponse response; 
-	private Stream writeStream; 
-	private byte[] buffer; 
-	private int offset; 
-	private int size; 
-	public bool EndCalled; 
-	public bool AsyncWriteAll; 
-	public HttpWebRequest AsyncObject; 
+	private int nbytes;
+	private IAsyncResult innerAsyncResult;
+	private HttpWebResponse response;
+	private Stream writeStream;
+	private byte[] buffer;
+	private int offset;
+	private int size;
+	public bool EndCalled;
+	public bool AsyncWriteAll;
+	public HttpWebRequest AsyncObject;
 
 	internal int NBytes { get; set; }
 	internal IAsyncResult InnerAsyncResult { get; set; }

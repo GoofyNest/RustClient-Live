@@ -11,7 +11,7 @@ internal class Utf8StringToNative : ICustomMarshaler // TypeDefIndex: 5276
 
 	public int GetNativeDataSize() { }
 
-	[PreserveAttribute] 
+	[PreserveAttribute]
 	public static ICustomMarshaler GetInstance(string cookie) { }
 
 	public void .ctor() { }

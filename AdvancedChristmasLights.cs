@@ -1,25 +1,25 @@
-public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 10015
+public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 10017
 {
-	private Option __menuOption_Menu_Lightmode_Chasing; 
-	private Option __menuOption_Menu_Lightmode_Fade; 
-	private Option __menuOption_Menu_Lightmode_Flashing; 
-	private Option __menuOption_Menu_Lightmode_SlowGlow; 
-	private Option __menuOption_Menu_Lightmode_SteadyOn; 
-	public GameObjectRef bulbPrefab; 
-	public LineRenderer lineRenderer; 
-	public List<AdvancedChristmasLights.pointEntry> points; 
-	public List<BaseBulb> bulbs; 
-	public float bulbSpacing; 
-	public float wireThickness; 
-	public Transform wireEmission; 
-	public AdvancedChristmasLights.AnimationType animationStyle; 
-	public RendererLOD _lod; 
-	[TooltipAttribute] 
-	public float lengthToPowerRatio; 
-	private bool finalized; 
-	private int lengthUsed; 
-	private int oldAnimationStyle; 
-	private int oldPointCount; 
+	private Option __menuOption_Menu_Lightmode_Chasing;
+	private Option __menuOption_Menu_Lightmode_Fade;
+	private Option __menuOption_Menu_Lightmode_Flashing;
+	private Option __menuOption_Menu_Lightmode_SlowGlow;
+	private Option __menuOption_Menu_Lightmode_SteadyOn;
+	public GameObjectRef bulbPrefab;
+	public LineRenderer lineRenderer;
+	public List<AdvancedChristmasLights.pointEntry> points;
+	public List<BaseBulb> bulbs;
+	public float bulbSpacing;
+	public float wireThickness;
+	public Transform wireEmission;
+	public AdvancedChristmasLights.AnimationType animationStyle;
+	public RendererLOD _lod;
+	[TooltipAttribute]
+	public float lengthToPowerRatio;
+	private bool finalized;
+	private int lengthUsed;
+	private int oldAnimationStyle;
+	private int oldPointCount;
 
 	public override bool HasMenuOptions { get; }
 
@@ -52,42 +52,42 @@ public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 10015
 
 	public void RegenerateLights() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lightmode_SteadyOn(BasePlayer player) { }
 
 	public bool Menu_Lightmode_SteadyOn_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lightmode_Flashing(BasePlayer player) { }
 
 	public bool Menu_Lightmode_Flashing_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lightmode_Chasing(BasePlayer player) { }
 
 	public bool Menu_Lightmode_Chasing_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lightmode_Fade(BasePlayer player) { }
 
 	public bool Menu_Lightmode_Fade_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lightmode_SlowGlow(BasePlayer player) { }
 
 	public bool Menu_Lightmode_slowglow_ShowIf(BasePlayer player) { }
@@ -100,16 +100,16 @@ public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 10015
 
 }
 
-public struct AdvancedChristmasLights.pointEntry // TypeDefIndex: 10016
+public struct AdvancedChristmasLights.pointEntry // TypeDefIndex: 10018
 {
-	public Vector3 point; 
-	public Vector3 normal; 
+	public Vector3 point;
+	public Vector3 normal;
 
 }
 
-public enum AdvancedChristmasLights.AnimationType // TypeDefIndex: 10017
+public enum AdvancedChristmasLights.AnimationType // TypeDefIndex: 10019
 {
-	public int value__; 
+	public int value__;
 	public const AdvancedChristmasLights.AnimationType ON = 1;
 	public const AdvancedChristmasLights.AnimationType FLASHING = 2;
 	public const AdvancedChristmasLights.AnimationType CHASING = 3;

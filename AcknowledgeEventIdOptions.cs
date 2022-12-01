@@ -1,24 +1,24 @@
-public struct AcknowledgeEventIdOptions // TypeDefIndex: 8330
+public struct AcknowledgeEventIdOptions // TypeDefIndex: 8332
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <UiEventId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Result <Result>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ulong <UiEventId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Result <Result>k__BackingField;
 
 	public ulong UiEventId { get; set; }
 	public Result Result { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_UiEventId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UiEventId(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_Result() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Result(Result value) { }
 
 }

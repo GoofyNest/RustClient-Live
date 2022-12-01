@@ -1,6 +1,6 @@
 public enum VertexAttribute // TypeDefIndex: 3810
 {
-	public int value__; 
+	public int value__;
 	public const VertexAttribute Position = 0;
 	public const VertexAttribute Normal = 1;
 	public const VertexAttribute Tangent = 2;

@@ -1,8 +1,8 @@
-public class AnimatedBuildingBlock : StabilityEntity // TypeDefIndex: 11216
+public class AnimatedBuildingBlock : StabilityEntity // TypeDefIndex: 11222
 {
-	private bool animatorNeedsInitializing; 
-	private bool animatorIsOpen; 
-	private bool isAnimating; 
+	private bool animatorNeedsInitializing;
+	private bool animatorIsOpen;
+	private bool isAnimating;
 
 
 	public override void ClientOnEnable() { }

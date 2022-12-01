@@ -1,9 +1,9 @@
-public class TweakUIToggle : TweakUIBase // TypeDefIndex: 12926
+public class TweakUIToggle : TweakUIBase // TypeDefIndex: 12940
 {
-	public Toggle toggleControl; 
-	public bool inverse; 
-	public static string lastConVarChanged; 
-	public static TimeSince timeSinceLastConVarChange; 
+	public Toggle toggleControl;
+	public bool inverse;
+	public static string lastConVarChanged;
+	public static TimeSince timeSinceLastConVarChange;
 
 
 	protected override void Init() { }

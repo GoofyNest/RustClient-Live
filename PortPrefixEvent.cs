@@ -1,7 +1,7 @@
-public sealed class PortPrefixEvent : MetaEvent // TypeDefIndex: 7555
+public sealed class PortPrefixEvent : MetaEvent // TypeDefIndex: 7557
 {
-	[CompilerGeneratedAttribute] 
-	private byte <Port>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte <Port>k__BackingField;
 
 	public byte Port { get; set; }
 
@@ -10,10 +10,10 @@ public sealed class PortPrefixEvent : MetaEvent // TypeDefIndex: 7555
 
 	public void .ctor(byte port) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Port() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Port(byte value) { }
 
 	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }

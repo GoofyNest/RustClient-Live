@@ -1,7 +1,7 @@
-public static class ObjectEx // TypeDefIndex: 13138
+public static class ObjectEx // TypeDefIndex: 13153
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsUnityNull<T>(T obj) { }
 	/* GenericInstMethod :
 	|

@@ -1,12 +1,12 @@
 public struct Keyframe // TypeDefIndex: 3351
 {
-	private float m_Time; 
-	private float m_Value; 
-	private float m_InTangent; 
-	private float m_OutTangent; 
-	private int m_WeightedMode; 
-	private float m_InWeight; 
-	private float m_OutWeight; 
+	private float m_Time;
+	private float m_Value;
+	private float m_InTangent;
+	private float m_OutTangent;
+	private int m_WeightedMode;
+	private float m_InWeight;
+	private float m_OutWeight;
 
 	public float time { get; set; }
 	public float value { get; }

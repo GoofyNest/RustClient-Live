@@ -1,8 +1,8 @@
 public sealed class SettingsBindableAttribute : Attribute // TypeDefIndex: 2747
 {
-	public static readonly SettingsBindableAttribute Yes; 
-	public static readonly SettingsBindableAttribute No; 
-	private bool _bindable; 
+	public static readonly SettingsBindableAttribute Yes;
+	public static readonly SettingsBindableAttribute No;
+	private bool _bindable;
 
 	public bool Bindable { get; }
 

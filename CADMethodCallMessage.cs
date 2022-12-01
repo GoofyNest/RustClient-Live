@@ -1,6 +1,6 @@
 internal class CADMethodCallMessage : CADMessageBase // TypeDefIndex: 1228
 {
-	private string _uri; 
+	private string _uri;
 
 	internal string Uri { get; }
 	internal int PropertiesCount { get; }

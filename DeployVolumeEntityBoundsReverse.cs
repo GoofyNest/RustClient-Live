@@ -1,7 +1,7 @@
-public class DeployVolumeEntityBoundsReverse : DeployVolume // TypeDefIndex: 11584
+public class DeployVolumeEntityBoundsReverse : DeployVolume // TypeDefIndex: 11591
 {
-	private Bounds bounds; 
-	private int layer; 
+	private Bounds bounds;
+	private int layer;
 
 
 	protected override bool Check(Vector3 position, Quaternion rotation, int mask = -1) { }

@@ -1,16 +1,16 @@
 internal abstract class SchemaDeclBase // TypeDefIndex: 2275
 {
-	protected XmlQualifiedName name; 
-	protected string prefix; 
-	protected bool isDeclaredInExternal; 
-	protected SchemaDeclBase.Use presence; 
-	protected XmlSchemaType schemaType; 
-	protected XmlSchemaDatatype datatype; 
-	protected string defaultValueRaw; 
-	protected object defaultValueTyped; 
-	protected long maxLength; 
-	protected long minLength; 
-	protected List<string> values; 
+	protected XmlQualifiedName name;
+	protected string prefix;
+	protected bool isDeclaredInExternal;
+	protected SchemaDeclBase.Use presence;
+	protected XmlSchemaType schemaType;
+	protected XmlSchemaDatatype datatype;
+	protected string defaultValueRaw;
+	protected object defaultValueTyped;
+	protected long maxLength;
+	protected long minLength;
+	protected List<string> values;
 
 	internal XmlQualifiedName Name { get; set; }
 	internal string Prefix { get; set; }
@@ -83,7 +83,7 @@ internal abstract class SchemaDeclBase // TypeDefIndex: 2275
 
 internal enum SchemaDeclBase.Use // TypeDefIndex: 2276
 {
-	public int value__; 
+	public int value__;
 	public const SchemaDeclBase.Use Default = 0;
 	public const SchemaDeclBase.Use Required = 1;
 	public const SchemaDeclBase.Use Implied = 2;

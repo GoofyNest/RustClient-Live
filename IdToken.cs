@@ -1,51 +1,51 @@
-public struct IdToken // TypeDefIndex: 9587
+public struct IdToken // TypeDefIndex: 9589
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ProductUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <JsonWebToken>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ProductUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <JsonWebToken>k__BackingField;
 
 	public ProductUserId ProductUserId { get; set; }
 	public Utf8String JsonWebToken { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ProductUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_JsonWebToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_JsonWebToken(Utf8String value) { }
 
 	internal void Set(ref IdTokenInternal other) { }
 
 }
 
-public struct IdToken // TypeDefIndex: 9662
+public struct IdToken // TypeDefIndex: 9664
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <AccountId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <JsonWebToken>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <AccountId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <JsonWebToken>k__BackingField;
 
 	public EpicAccountId AccountId { get; set; }
 	public Utf8String JsonWebToken { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_JsonWebToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_JsonWebToken(Utf8String value) { }
 
 	internal void Set(ref IdTokenInternal other) { }

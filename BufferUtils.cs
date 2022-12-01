@@ -1,7 +1,7 @@
-internal static class BufferUtils // TypeDefIndex: 5965
+internal static class BufferUtils // TypeDefIndex: 5967
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 internal static class BufferUtils
 
 	public static char[] RentBuffer(IArrayPool<char> bufferPool, int minSize) { }

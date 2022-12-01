@@ -1,14 +1,14 @@
-public class MaterialParameterToggle : MonoBehaviour // TypeDefIndex: 10929
+public class MaterialParameterToggle : MonoBehaviour // TypeDefIndex: 10935
 {
-	[InspectorFlagsAttribute] 
-	public MaterialParameterToggle.ToggleMode Toggle; 
-	public Renderer[] TargetRenderers; 
-	[ColorUsageAttribute] 
-	public Color EmissionColor; 
-	private Material originalMaterial; 
-	private Material modifiedMaterial; 
-	private static readonly int DetailLayer; 
-	private static readonly int EmissionColor1; 
+	[InspectorFlagsAttribute]
+	public MaterialParameterToggle.ToggleMode Toggle;
+	public Renderer[] TargetRenderers;
+	[ColorUsageAttribute]
+	public Color EmissionColor;
+	private Material originalMaterial;
+	private Material modifiedMaterial;
+	private static readonly int DetailLayer;
+	private static readonly int EmissionColor1;
 
 
 	private void Setup() { }
@@ -23,9 +23,9 @@ public class MaterialParameterToggle : MonoBehaviour // TypeDefIndex: 10929
 
 }
 
-public enum MaterialParameterToggle.ToggleMode // TypeDefIndex: 10930
+public enum MaterialParameterToggle.ToggleMode // TypeDefIndex: 10936
 {
-	public int value__; 
+	public int value__;
 	public const MaterialParameterToggle.ToggleMode Detail = 0;
 	public const MaterialParameterToggle.ToggleMode Emission = 1;
 

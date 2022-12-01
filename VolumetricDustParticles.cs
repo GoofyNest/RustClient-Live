@@ -1,24 +1,24 @@
-public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13344
+public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13359
 {
-	[RangeAttribute] 
-	public float alpha; 
-	[RangeAttribute] 
-	public float size; 
-	public VolumetricDustParticles.Direction direction; 
-	public float speed; 
-	public float density; 
-	[RangeAttribute] 
-	public float spawnMaxDistance; 
-	public bool cullingEnabled; 
-	public float cullingMaxDistance; 
-	[CompilerGeneratedAttribute] 
-	private bool <isCulled>k__BackingField; 
-	public static bool isFeatureSupported; 
-	private ParticleSystem m_Particles; 
-	private ParticleSystemRenderer m_Renderer; 
-	private static bool ms_NoMainCameraLogged; 
-	private static Camera ms_MainCamera; 
-	private VolumetricLightBeam m_Master; 
+	[RangeAttribute]
+	public float alpha;
+	[RangeAttribute]
+	public float size;
+	public VolumetricDustParticles.Direction direction;
+	public float speed;
+	public float density;
+	[RangeAttribute]
+	public float spawnMaxDistance;
+	public bool cullingEnabled;
+	public float cullingMaxDistance;
+	[CompilerGeneratedAttribute]
+	private bool <isCulled>k__BackingField;
+	public static bool isFeatureSupported;
+	private ParticleSystem m_Particles;
+	private ParticleSystemRenderer m_Renderer;
+	private static bool ms_NoMainCameraLogged;
+	private static Camera ms_MainCamera;
+	private VolumetricLightBeam m_Master;
 
 	public bool isCulled { get; set; }
 	public bool particlesAreInstantiated { get; }
@@ -27,10 +27,10 @@ public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13344
 	public Camera mainCamera { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_isCulled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_isCulled(bool value) { }
 
 	public bool get_particlesAreInstantiated() { }
@@ -65,9 +65,9 @@ public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13344
 
 }
 
-public enum VolumetricDustParticles.Direction // TypeDefIndex: 13345
+public enum VolumetricDustParticles.Direction // TypeDefIndex: 13360
 {
-	public int value__; 
+	public int value__;
 	public const VolumetricDustParticles.Direction Beam = 0;
 	public const VolumetricDustParticles.Direction Random = 1;
 

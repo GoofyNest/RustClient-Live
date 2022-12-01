@@ -1,8 +1,8 @@
 public struct StyleLength : IStyleValue<Length>, IEquatable<StyleLength> // TypeDefIndex: 4720
 {
-	private StyleKeyword m_Keyword; 
-	private Length m_Value; 
-	private int m_Specificity; 
+	private StyleKeyword m_Keyword;
+	private Length m_Value;
+	private int m_Specificity;
 
 	public Length value { get; }
 	public StyleKeyword keyword { get; }

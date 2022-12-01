@@ -1,15 +1,15 @@
-public class Menu : RustControl // TypeDefIndex: 7047
+public class Menu : RustControl // TypeDefIndex: 7049
 {
-	public bool AllowFiltering; 
-	public int MaxResults; 
-	public Image Border; 
-	public Image Background; 
-	public Option[] Options; 
-	public RectTransform OptionCanvas; 
-	public RustInput FilterField; 
-	public Option SelectedOption; 
-	public Menu.ChangedEvent OnSelected; 
-	public Blocker Blocker; 
+	public bool AllowFiltering;
+	public int MaxResults;
+	public Image Border;
+	public Image Background;
+	public Option[] Options;
+	public RectTransform OptionCanvas;
+	public RustInput FilterField;
+	public Option SelectedOption;
+	public Menu.ChangedEvent OnSelected;
+	public Blocker Blocker;
 
 
 	protected override void Awake() { }
@@ -28,22 +28,22 @@ public class Menu : RustControl // TypeDefIndex: 7047
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Awake>
 
 }
 
-public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7048
+public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7050
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7049
+private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7051
 {
-	public Option option; 
-	public Menu <>4__this; 
+	public Option option;
+	public Menu <>4__this;
 
 
 	public void .ctor() { }
@@ -52,9 +52,9 @@ private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7049
 
 }
 
-private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7050
+private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7052
 {
-	public string searchString; 
+	public string searchString;
 
 
 	public void .ctor() { }
@@ -63,10 +63,10 @@ private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7050
 
 }
 
-private sealed class Menu.<>c // TypeDefIndex: 7051
+private sealed class Menu.<>c // TypeDefIndex: 7053
 {
-	public static readonly Menu.<>c <>9; 
-	public static Func<Option, Option> <>9__14_0; 
+	public static readonly Menu.<>c <>9;
+	public static Func<Option, Option> <>9__14_0;
 
 
 	private static void .cctor() { }

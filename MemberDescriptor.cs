@@ -1,17 +1,17 @@
 public abstract class MemberDescriptor // TypeDefIndex: 2729
 {
-	private string name; 
-	private string displayName; 
-	private int nameHash; 
-	private AttributeCollection attributeCollection; 
-	private Attribute[] attributes; 
-	private Attribute[] originalAttributes; 
-	private bool attributesFiltered; 
-	private bool attributesFilled; 
-	private int metadataVersion; 
-	private string category; 
-	private string description; 
-	private object lockCookie; 
+	private string name;
+	private string displayName;
+	private int nameHash;
+	private AttributeCollection attributeCollection;
+	private Attribute[] attributes;
+	private Attribute[] originalAttributes;
+	private bool attributesFiltered;
+	private bool attributesFilled;
+	private int metadataVersion;
+	private string category;
+	private string description;
+	private object lockCookie;
 
 	protected virtual Attribute[] AttributeArray { get; set; }
 	public virtual AttributeCollection Attributes { get; }

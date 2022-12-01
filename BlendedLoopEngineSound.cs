@@ -1,11 +1,11 @@
-public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10710
+public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10714
 {
-	public BlendedEngineLoopDefinition loopDefinition; 
-	public bool engineOn; 
-	[RangeAttribute] 
-	public float RPMControl; 
-	public float smoothedRPMControl; 
-	private BlendedLoopEngineSound.EngineLoop[] engineLoops; 
+	public BlendedEngineLoopDefinition loopDefinition;
+	public bool engineOn;
+	[RangeAttribute]
+	public float RPMControl;
+	public float smoothedRPMControl;
+	private BlendedLoopEngineSound.EngineLoop[] engineLoops;
 
 	public float maxDistance { get; }
 
@@ -26,13 +26,13 @@ public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDef
 
 }
 
-public class BlendedLoopEngineSound.EngineLoop // TypeDefIndex: 10711
+public class BlendedLoopEngineSound.EngineLoop // TypeDefIndex: 10715
 {
-	public BlendedEngineLoopDefinition.EngineLoopDefinition definition; 
-	public BlendedLoopEngineSound parent; 
-	public Sound sound; 
-	public SoundModulation.Modulator gainMod; 
-	public SoundModulation.Modulator pitchMod; 
+	public BlendedEngineLoopDefinition.EngineLoopDefinition definition;
+	public BlendedLoopEngineSound parent;
+	public Sound sound;
+	public SoundModulation.Modulator gainMod;
+	public SoundModulation.Modulator pitchMod;
 
 
 	public void .ctor(BlendedEngineLoopDefinition.EngineLoopDefinition definition, BlendedLoopEngineSound parent) { }

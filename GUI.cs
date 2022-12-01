@@ -1,24 +1,24 @@
 public class GUI // TypeDefIndex: 4035
 {
-	private static int s_HotTextField; 
-	private static readonly int s_BoxHash; 
-	private static readonly int s_ButonHash; 
-	private static readonly int s_RepeatButtonHash; 
-	private static readonly int s_ToggleHash; 
-	private static readonly int s_ButtonGridHash; 
-	private static readonly int s_SliderHash; 
-	private static readonly int s_BeginGroupHash; 
-	private static readonly int s_ScrollviewHash; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static int <scrollTroughSide>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static DateTime <nextScrollStepTime>k__BackingField; 
-	private static GUISkin s_Skin; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static GenericStack <scrollViewStates>k__BackingField; 
+	private static int s_HotTextField;
+	private static readonly int s_BoxHash;
+	private static readonly int s_ButonHash;
+	private static readonly int s_RepeatButtonHash;
+	private static readonly int s_ToggleHash;
+	private static readonly int s_ButtonGridHash;
+	private static readonly int s_SliderHash;
+	private static readonly int s_BeginGroupHash;
+	private static readonly int s_ScrollviewHash;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static int <scrollTroughSide>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static DateTime <nextScrollStepTime>k__BackingField;
+	private static GUISkin s_Skin;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static GenericStack <scrollViewStates>k__BackingField;
 
 	public static Color color { get; set; }
 	public static Color backgroundColor { get; set; }
@@ -59,16 +59,16 @@ public class GUI // TypeDefIndex: 4035
 
 	internal static bool get_usePageScrollbars() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static Material get_blendMaterial() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static Material get_blitMaterial() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static Material get_roundedRectMaterial() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static Material get_roundedRectWithColorPerBorderMaterial() { }
 
 	internal static void GrabMouseControl(int id) { }
@@ -77,23 +77,23 @@ public class GUI // TypeDefIndex: 4035
 
 	internal static void ReleaseMouseControl() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void SetNextControlName(string name) { }
 
 	internal static void InternalRepaintEditorWindow() { }
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static int get_scrollTroughSide() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_scrollTroughSide(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static DateTime get_nextScrollStepTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_nextScrollStepTime(DateTime value) { }
 
 	public static void set_skin(GUISkin value) { }
@@ -186,10 +186,10 @@ public class GUI // TypeDefIndex: 4035
 
 	public static void EndGroup() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static GenericStack get_scrollViewStates() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void CallWindowDelegate(GUI.WindowFunction func, int id, int instanceID, GUISkin _skin, int forceRect, float width, float height, GUIStyle style) { }
 
 	private static void get_color_Injected(out Color ret) { }
@@ -208,7 +208,7 @@ public class GUI // TypeDefIndex: 4035
 
 public enum GUI.ToolbarButtonSize // TypeDefIndex: 4036
 {
-	public int value__; 
+	public int value__;
 	public const GUI.ToolbarButtonSize Fixed = 0;
 	public const GUI.ToolbarButtonSize FitToContents = 1;
 

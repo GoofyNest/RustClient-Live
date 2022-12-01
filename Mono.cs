@@ -1,31 +1,31 @@
 internal struct MonoAssemblyName // TypeDefIndex: 19
 {
-	internal IntPtr name; 
-	internal IntPtr culture; 
-	internal IntPtr hash_value; 
-	internal IntPtr public_key; 
-	[FixedBufferAttribute] 
-	internal MonoAssemblyName.<public_key_token>e__FixedBuffer public_key_token; 
-	internal uint hash_alg; 
-	internal uint hash_len; 
-	internal uint flags; 
-	internal ushort major; 
-	internal ushort minor; 
-	internal ushort build; 
-	internal ushort revision; 
-	internal ushort arch; 
+	internal IntPtr name;
+	internal IntPtr culture;
+	internal IntPtr hash_value;
+	internal IntPtr public_key;
+	[FixedBufferAttribute]
+	internal MonoAssemblyName.<public_key_token>e__FixedBuffer public_key_token;
+	internal uint hash_alg;
+	internal uint hash_len;
+	internal uint flags;
+	internal ushort major;
+	internal ushort minor;
+	internal ushort build;
+	internal ushort revision;
+	internal ushort arch;
 
 }
 
 public struct MonoAssemblyName.<public_key_token>e__FixedBuffer // TypeDefIndex: 20
 {
-	public byte FixedElementField; 
+	public byte FixedElementField;
 
 }
 
 internal class MonoTODOAttribute : Attribute // TypeDefIndex: 139
 {
-	private string comment; 
+	private string comment;
 
 
 	public void .ctor() { }
@@ -43,8 +43,8 @@ internal class MonoLimitationAttribute : MonoTODOAttribute // TypeDefIndex: 140
 
 internal class MonoTypeInfo // TypeDefIndex: 344
 {
-	public string full_name; 
-	public MonoCMethod default_ctor; 
+	public string full_name;
+	public MonoCMethod default_ctor;
 
 
 	public void .ctor() { }
@@ -53,12 +53,12 @@ internal class MonoTypeInfo // TypeDefIndex: 344
 
 internal class MonoAsyncCall // TypeDefIndex: 372
 {
-	private object msg; 
-	private IntPtr cb_method; 
-	private object cb_target; 
-	private object state; 
-	private object res; 
-	private object out_args; 
+	private object msg;
+	private IntPtr cb_method;
+	private object cb_target;
+	private object state;
+	private object res;
+	private object out_args;
 
 
 	public void .ctor() { }
@@ -67,10 +67,10 @@ internal class MonoAsyncCall // TypeDefIndex: 372
 
 internal static class MonoCustomAttrs // TypeDefIndex: 373
 {
-	private static Assembly corlib; 
-	[ThreadStaticAttribute] 
-	private static Dictionary<Type, AttributeUsageAttribute> usage_cache; 
-	private static readonly AttributeUsageAttribute DefaultAttributeUsage; 
+	private static Assembly corlib;
+	[ThreadStaticAttribute]
+	private static Dictionary<Type, AttributeUsageAttribute> usage_cache;
+	private static readonly AttributeUsageAttribute DefaultAttributeUsage;
 
 
 	private static bool IsUserCattrProvider(object obj) { }
@@ -111,8 +111,8 @@ internal static class MonoCustomAttrs // TypeDefIndex: 373
 
 private class MonoCustomAttrs.AttributeInfo // TypeDefIndex: 374
 {
-	private AttributeUsageAttribute _usage; 
-	private int _inheritanceLevel; 
+	private AttributeUsageAttribute _usage;
+	private int _inheritanceLevel;
 
 	public AttributeUsageAttribute Usage { get; }
 	public int InheritanceLevel { get; }
@@ -128,8 +128,8 @@ private class MonoCustomAttrs.AttributeInfo // TypeDefIndex: 374
 
 internal sealed class MonoListItem // TypeDefIndex: 375
 {
-	private MonoListItem next; 
-	private object data; 
+	private MonoListItem next;
+	private object data;
 
 
 	public void .ctor() { }
@@ -153,14 +153,14 @@ internal class MonoAssembly : RuntimeAssembly // TypeDefIndex: 573
 
 internal struct MonoEventInfo // TypeDefIndex: 574
 {
-	public Type declaring_type; 
-	public Type reflected_type; 
-	public string name; 
-	public MethodInfo add_method; 
-	public MethodInfo remove_method; 
-	public MethodInfo raise_method; 
-	public EventAttributes attrs; 
-	public MethodInfo[] other_methods; 
+	public Type declaring_type;
+	public Type reflected_type;
+	public string name;
+	public MethodInfo add_method;
+	public MethodInfo remove_method;
+	public MethodInfo raise_method;
+	public EventAttributes attrs;
+	public MethodInfo[] other_methods;
 
 
 	private static void get_event_info(MonoEvent ev, out MonoEventInfo info) { }
@@ -171,8 +171,8 @@ internal struct MonoEventInfo // TypeDefIndex: 574
 
 internal sealed class MonoEvent : RuntimeEventInfo // TypeDefIndex: 576
 {
-	private IntPtr klass; 
-	private IntPtr handle; 
+	private IntPtr klass;
+	private IntPtr handle;
 
 	public override Type DeclaringType { get; }
 	public override Type ReflectedType { get; }
@@ -207,11 +207,11 @@ internal sealed class MonoEvent : RuntimeEventInfo // TypeDefIndex: 576
 
 internal class MonoField : RtFieldInfo // TypeDefIndex: 579
 {
-	internal IntPtr klass; 
-	internal RuntimeFieldHandle fhandle; 
-	private string name; 
-	private Type type; 
-	private FieldAttributes attrs; 
+	internal IntPtr klass;
+	internal RuntimeFieldHandle fhandle;
+	private string name;
+	private Type type;
+	private FieldAttributes attrs;
 
 	public override FieldAttributes Attributes { get; }
 	public override RuntimeFieldHandle FieldHandle { get; }
@@ -267,11 +267,11 @@ internal class MonoField : RtFieldInfo // TypeDefIndex: 579
 
 internal struct MonoMethodInfo // TypeDefIndex: 580
 {
-	private Type parent; 
-	private Type ret; 
-	internal MethodAttributes attrs; 
-	internal MethodImplAttributes iattrs; 
-	private CallingConventions callconv; 
+	private Type parent;
+	private Type ret;
+	internal MethodAttributes attrs;
+	internal MethodImplAttributes iattrs;
+	private CallingConventions callconv;
 
 
 	private static void get_method_info(IntPtr handle, out MonoMethodInfo info) { }
@@ -298,9 +298,9 @@ internal struct MonoMethodInfo // TypeDefIndex: 580
 
 internal class MonoMethod : RuntimeMethodInfo // TypeDefIndex: 582
 {
-	internal IntPtr mhandle; 
-	private string name; 
-	private Type reftype; 
+	internal IntPtr mhandle;
+	private string name;
+	private Type reftype;
 
 	public override Type ReturnType { get; }
 	public override RuntimeMethodHandle MethodHandle { get; }
@@ -337,8 +337,8 @@ internal class MonoMethod : RuntimeMethodInfo // TypeDefIndex: 582
 
 	internal object InternalInvoke(object obj, object[] parameters, out Exception exc) { }
 
-	[DebuggerHiddenAttribute] 
-	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute]
+	[DebuggerStepThroughAttribute]
 	public override object Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture) { }
 
 	internal static void ConvertValues(Binder binder, object[] args, ParameterInfo[] pinfo, CultureInfo culture, BindingFlags invokeAttr) { }
@@ -393,9 +393,9 @@ internal class MonoMethod : RuntimeMethodInfo // TypeDefIndex: 582
 
 internal class MonoCMethod : RuntimeConstructorInfo // TypeDefIndex: 584
 {
-	internal IntPtr mhandle; 
-	private string name; 
-	private Type reftype; 
+	internal IntPtr mhandle;
+	private string name;
+	private Type reftype;
 
 	public override RuntimeMethodHandle MethodHandle { get; }
 	public override MethodAttributes Attributes { get; }
@@ -417,16 +417,16 @@ internal class MonoCMethod : RuntimeConstructorInfo // TypeDefIndex: 584
 
 	internal object InternalInvoke(object obj, object[] parameters, out Exception exc) { }
 
-	[DebuggerStepThroughAttribute] 
-	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute]
+	[DebuggerHiddenAttribute]
 	public override object Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture) { }
 
 	private object DoInvoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture) { }
 
 	public object InternalInvoke(object obj, object[] parameters) { }
 
-	[DebuggerStepThroughAttribute] 
-	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute]
+	[DebuggerHiddenAttribute]
 	public override object Invoke(BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture) { }
 
 	public override RuntimeMethodHandle get_MethodHandle() { }
@@ -511,12 +511,12 @@ internal class MonoParameterInfo : RuntimeParameterInfo // TypeDefIndex: 588
 
 internal struct MonoPropertyInfo // TypeDefIndex: 589
 {
-	public Type parent; 
-	public Type declaring_type; 
-	public string name; 
-	public MethodInfo get_method; 
-	public MethodInfo set_method; 
-	public PropertyAttributes attrs; 
+	public Type parent;
+	public Type declaring_type;
+	public string name;
+	public MethodInfo get_method;
+	public MethodInfo set_method;
+	public PropertyAttributes attrs;
 
 
 	internal static void get_property_info(MonoProperty prop, ref MonoPropertyInfo info, PInfo req_info) { }
@@ -529,11 +529,11 @@ internal struct MonoPropertyInfo // TypeDefIndex: 589
 
 internal class MonoProperty : RuntimePropertyInfo // TypeDefIndex: 592
 {
-	internal IntPtr klass; 
-	internal IntPtr prop; 
-	private MonoPropertyInfo info; 
-	private PInfo cached; 
-	private MonoProperty.GetterAdapter cached_getter; 
+	internal IntPtr klass;
+	internal IntPtr prop;
+	private MonoPropertyInfo info;
+	private PInfo cached;
+	private MonoProperty.GetterAdapter cached_getter;
 
 	public override PropertyAttributes Attributes { get; }
 	public override bool CanRead { get; }
@@ -681,7 +681,7 @@ private sealed class MonoProperty.StaticGetter<R> : MulticastDelegate // TypeDef
 
 internal enum MonoFileType // TypeDefIndex: 674
 {
-	public int value__; 
+	public int value__;
 	public const MonoFileType Unknown = 0;
 	public const MonoFileType Disk = 1;
 	public const MonoFileType Char = 2;
@@ -692,8 +692,8 @@ internal enum MonoFileType // TypeDefIndex: 674
 
 internal static class MonoIO // TypeDefIndex: 675
 {
-	public static readonly IntPtr InvalidHandle; 
-	private static bool dump_handles; 
+	public static readonly IntPtr InvalidHandle;
+	private static bool dump_handles;
 
 	public static IntPtr ConsoleOutput { get; }
 	public static IntPtr ConsoleInput { get; }
@@ -822,7 +822,7 @@ internal static class MonoIO // TypeDefIndex: 675
 
 internal enum MonoIOError // TypeDefIndex: 676
 {
-	public int value__; 
+	public int value__;
 	public const MonoIOError ERROR_SUCCESS = 0;
 	public const MonoIOError ERROR_FILE_NOT_FOUND = 2;
 	public const MonoIOError ERROR_PATH_NOT_FOUND = 3;
@@ -854,31 +854,31 @@ internal enum MonoIOError // TypeDefIndex: 676
 
 internal struct MonoIOStat // TypeDefIndex: 677
 {
-	public FileAttributes fileAttributes; 
-	public long Length; 
-	public long CreationTime; 
-	public long LastAccessTime; 
-	public long LastWriteTime; 
+	public FileAttributes fileAttributes;
+	public long Length;
+	public long CreationTime;
+	public long LastAccessTime;
+	public long LastWriteTime;
 
 }
 
 internal class MonoMethodMessage : IMethodCallMessage, IMethodMessage, IMessage, IMethodReturnMessage, IInternalMessage // TypeDefIndex: 1252
 {
-	private MonoMethod method; 
-	private object[] args; 
-	private string[] names; 
-	private byte[] arg_types; 
-	public LogicalCallContext ctx; 
-	public object rval; 
-	public Exception exc; 
-	private AsyncResult asyncResult; 
-	private CallType call_type; 
-	private string uri; 
-	private MCMDictionary properties; 
-	private Type[] methodSignature; 
-	private Identity identity; 
-	internal static string CallContextKey; 
-	internal static string UriKey; 
+	private MonoMethod method;
+	private object[] args;
+	private string[] names;
+	private byte[] arg_types;
+	public LogicalCallContext ctx;
+	public object rval;
+	public Exception exc;
+	private AsyncResult asyncResult;
+	private CallType call_type;
+	private string uri;
+	private MCMDictionary properties;
+	private Type[] methodSignature;
+	private Identity identity;
+	internal static string CallContextKey;
+	internal static string UriKey;
 
 	public IDictionary Properties { get; }
 	public int ArgCount { get; }
@@ -956,32 +956,32 @@ internal class MonoMethodMessage : IMethodCallMessage, IMethodMessage, IMessage,
 
 public class MonoTlsConnectionInfo // TypeDefIndex: 1743
 {
-	[CompilerGeneratedAttribute] 
-	private CipherSuiteCode <CipherSuiteCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TlsProtocols <ProtocolVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <PeerDomainName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private CipherSuiteCode <CipherSuiteCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TlsProtocols <ProtocolVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <PeerDomainName>k__BackingField;
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public CipherSuiteCode CipherSuiteCode { get; set; }
 	public TlsProtocols ProtocolVersion { get; set; }
 	public string PeerDomainName { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public CipherSuiteCode get_CipherSuiteCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CipherSuiteCode(CipherSuiteCode value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TlsProtocols get_ProtocolVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProtocolVersion(TlsProtocols value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PeerDomainName(string value) { }
 
 	public override string ToString() { }
@@ -992,7 +992,7 @@ public class MonoTlsConnectionInfo // TypeDefIndex: 1743
 
 public enum MonoSslPolicyErrors // TypeDefIndex: 1744
 {
-	public int value__; 
+	public int value__;
 	public const MonoSslPolicyErrors None = 0;
 	public const MonoSslPolicyErrors RemoteCertificateNotAvailable = 1;
 	public const MonoSslPolicyErrors RemoteCertificateNameMismatch = 2;
@@ -1070,32 +1070,32 @@ public static class MonoTlsProviderFactory // TypeDefIndex: 1748
 
 public sealed class MonoTlsSettings // TypeDefIndex: 1749
 {
-	[CompilerGeneratedAttribute] 
-	private MonoRemoteCertificateValidationCallback <RemoteCertificateValidationCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MonoLocalCertificateSelectionCallback <ClientCertificateSelectionCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTime> <CertificateValidationTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private X509CertificateCollection <TrustAnchors>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <UserSettings>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string[] <CertificateSearchPaths>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <SendCloseNotify>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<TlsProtocols> <EnabledProtocols>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private CipherSuiteCode[] <EnabledCiphers>k__BackingField; 
-	private bool cloned; 
-	private bool checkCertName; 
-	private bool checkCertRevocationStatus; 
-	private Nullable<bool> useServicePointManagerCallback; 
-	private bool skipSystemValidators; 
-	private bool callbackNeedsChain; 
-	private ICertificateValidator certificateValidator; 
-	private static MonoTlsSettings defaultSettings; 
+	[CompilerGeneratedAttribute]
+	private MonoRemoteCertificateValidationCallback <RemoteCertificateValidationCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MonoLocalCertificateSelectionCallback <ClientCertificateSelectionCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTime> <CertificateValidationTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private X509CertificateCollection <TrustAnchors>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <UserSettings>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string[] <CertificateSearchPaths>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <SendCloseNotify>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<TlsProtocols> <EnabledProtocols>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private CipherSuiteCode[] <EnabledCiphers>k__BackingField;
+	private bool cloned;
+	private bool checkCertName;
+	private bool checkCertRevocationStatus;
+	private Nullable<bool> useServicePointManagerCallback;
+	private bool skipSystemValidators;
+	private bool callbackNeedsChain;
+	private ICertificateValidator certificateValidator;
+	private static MonoTlsSettings defaultSettings;
 
 	public MonoRemoteCertificateValidationCallback RemoteCertificateValidationCallback { get; set; }
 	public MonoLocalCertificateSelectionCallback ClientCertificateSelectionCallback { get; set; }
@@ -1107,23 +1107,23 @@ public sealed class MonoTlsSettings // TypeDefIndex: 1749
 	internal string[] CertificateSearchPaths { get; set; }
 	internal bool SendCloseNotify { get; set; }
 	public Nullable<TlsProtocols> EnabledProtocols { get; set; }
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public CipherSuiteCode[] EnabledCiphers { get; set; }
 	public static MonoTlsSettings DefaultSettings { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public ICertificateValidator CertificateValidator { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MonoRemoteCertificateValidationCallback get_RemoteCertificateValidationCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RemoteCertificateValidationCallback(MonoRemoteCertificateValidationCallback value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MonoLocalCertificateSelectionCallback get_ClientCertificateSelectionCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientCertificateSelectionCallback(MonoLocalCertificateSelectionCallback value) { }
 
 	public Nullable<bool> get_UseServicePointManagerCallback() { }
@@ -1132,46 +1132,46 @@ public sealed class MonoTlsSettings // TypeDefIndex: 1749
 
 	public bool get_CallbackNeedsCertificateChain() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTime> get_CertificateValidationTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CertificateValidationTime(Nullable<DateTime> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public X509CertificateCollection get_TrustAnchors() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TrustAnchors(X509CertificateCollection value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_UserSettings() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserSettings(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal string[] get_CertificateSearchPaths() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_CertificateSearchPaths(string[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_SendCloseNotify() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_SendCloseNotify(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<TlsProtocols> get_EnabledProtocols() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EnabledProtocols(Nullable<TlsProtocols> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public CipherSuiteCode[] get_EnabledCiphers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EnabledCiphers(CipherSuiteCode[] value) { }
 
 	public void .ctor() { }
@@ -1182,7 +1182,7 @@ public sealed class MonoTlsSettings // TypeDefIndex: 1749
 
 	public ICertificateValidator get_CertificateValidator() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public MonoTlsSettings CloneWithValidator(ICertificateValidator validator) { }
 
 	public MonoTlsSettings Clone() { }
@@ -1207,15 +1207,15 @@ internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 
 
 internal static class MonoTlsProviderFactory // TypeDefIndex: 2552
 {
-	private static object locker; 
-	private static bool initialized; 
-	private static MonoTlsProvider defaultProvider; 
-	private static Dictionary<string, Tuple<Guid, string>> providerRegistration; 
-	private static Dictionary<Guid, MonoTlsProvider> providerCache; 
-	internal static readonly Guid UnityTlsId; 
-	internal static readonly Guid AppleTlsId; 
-	internal static readonly Guid BtlsId; 
-	internal static readonly Guid LegacyId; 
+	private static object locker;
+	private static bool initialized;
+	private static MonoTlsProvider defaultProvider;
+	private static Dictionary<string, Tuple<Guid, string>> providerRegistration;
+	private static Dictionary<Guid, MonoTlsProvider> providerCache;
+	internal static readonly Guid UnityTlsId;
+	internal static readonly Guid AppleTlsId;
+	internal static readonly Guid BtlsId;
+	internal static readonly Guid LegacyId;
 
 
 	internal static MonoTlsProvider GetProviderInternal() { }
@@ -1236,14 +1236,14 @@ internal static class MonoTlsProviderFactory // TypeDefIndex: 2552
 
 internal class MonoTlsStream // TypeDefIndex: 2553
 {
-	private readonly MonoTlsProvider provider; 
-	private readonly NetworkStream networkStream; 
-	private readonly HttpWebRequest request; 
-	private readonly MonoTlsSettings settings; 
-	private IMonoSslStream sslStream; 
-	private WebExceptionStatus status; 
-	[CompilerGeneratedAttribute] 
-	private bool <CertificateValidationFailed>k__BackingField; 
+	private readonly MonoTlsProvider provider;
+	private readonly NetworkStream networkStream;
+	private readonly HttpWebRequest request;
+	private readonly MonoTlsSettings settings;
+	private IMonoSslStream sslStream;
+	private WebExceptionStatus status;
+	[CompilerGeneratedAttribute]
+	private bool <CertificateValidationFailed>k__BackingField;
 
 	internal HttpWebRequest Request { get; }
 	internal WebExceptionStatus ExceptionStatus { get; }
@@ -1254,10 +1254,10 @@ internal class MonoTlsStream // TypeDefIndex: 2553
 
 	internal WebExceptionStatus get_ExceptionStatus() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_CertificateValidationFailed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_CertificateValidationFailed(bool value) { }
 
 	public void .ctor(HttpWebRequest request, NetworkStream networkStream) { }
@@ -1268,16 +1268,16 @@ internal class MonoTlsStream // TypeDefIndex: 2553
 
 internal class MonoChunkStream // TypeDefIndex: 3014
 {
-	internal WebHeaderCollection headers; 
-	private int chunkSize; 
-	private int chunkRead; 
-	private int totalWritten; 
-	private MonoChunkStream.State state; 
-	private StringBuilder saved; 
-	private bool sawCR; 
-	private bool gotit; 
-	private int trailerState; 
-	private ArrayList chunks; 
+	internal WebHeaderCollection headers;
+	private int chunkSize;
+	private int chunkRead;
+	private int totalWritten;
+	private MonoChunkStream.State state;
+	private StringBuilder saved;
+	private bool sawCR;
+	private bool gotit;
+	private int trailerState;
+	private ArrayList chunks;
 
 	public bool WantMore { get; }
 	public bool DataAvailable { get; }
@@ -1322,7 +1322,7 @@ internal class MonoChunkStream // TypeDefIndex: 3014
 
 private enum MonoChunkStream.State // TypeDefIndex: 3015
 {
-	public int value__; 
+	public int value__;
 	public const MonoChunkStream.State None = 0;
 	public const MonoChunkStream.State PartialSize = 1;
 	public const MonoChunkStream.State Body = 2;
@@ -1333,8 +1333,8 @@ private enum MonoChunkStream.State // TypeDefIndex: 3015
 
 private class MonoChunkStream.Chunk // TypeDefIndex: 3016
 {
-	public byte[] Bytes; 
-	public int Offset; 
+	public byte[] Bytes;
+	public int Offset;
 
 
 	public void .ctor(byte[] chunk) { }
@@ -1360,14 +1360,14 @@ public class MonoBehaviour : Behaviour // TypeDefIndex: 3521
 
 	public bool IsInvoking(string methodName) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public Coroutine StartCoroutine(string methodName) { }
 
 	public Coroutine StartCoroutine(string methodName, object value) { }
 
 	public Coroutine StartCoroutine(IEnumerator routine) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public Coroutine StartCoroutine_Auto(IEnumerator routine) { }
 
 	public void StopCoroutine(IEnumerator routine) { }
@@ -1384,22 +1384,22 @@ public class MonoBehaviour : Behaviour // TypeDefIndex: 3521
 
 	public static void print(object message) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_CancelInvokeAll(MonoBehaviour self) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Internal_IsInvokingAll(MonoBehaviour self) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void InvokeDelayed(MonoBehaviour self, string methodName, float time, float repeatRate) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void CancelInvoke(MonoBehaviour self, string methodName) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool IsInvoking(MonoBehaviour self, string methodName) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool IsObjectMonoBehaviour(Object obj) { }
 
 	private Coroutine StartCoroutineManaged(string methodName, object value) { }
@@ -1419,9 +1419,9 @@ public class MonoBehaviour : Behaviour // TypeDefIndex: 3521
 internal class MonoTODOAttribute : Attribute // TypeDefIndex: 3979
 {
 
-[AttributeUsageAttribute] 
+[AttributeUsageAttribute]
 internal class MonoTODOAttribute : Attribute
-	private string comment; 
+	private string comment;
 
 
 	public void .ctor() { }
@@ -1437,17 +1437,17 @@ internal class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 5262
 
 }
 
-internal static class Mono // TypeDefIndex: 6234
+internal static class Mono // TypeDefIndex: 6236
 {
 
 	internal static void FixHttpsValidation() { }
 
 }
 
-private sealed class Mono.<>c // TypeDefIndex: 6235
+private sealed class Mono.<>c // TypeDefIndex: 6237
 {
-	public static readonly Mono.<>c <>9; 
-	public static RemoteCertificateValidationCallback <>9__0_0; 
+	public static readonly Mono.<>c <>9;
+	public static RemoteCertificateValidationCallback <>9__0_0;
 
 
 	private static void .cctor() { }
@@ -1458,9 +1458,9 @@ private sealed class Mono.<>c // TypeDefIndex: 6235
 
 }
 
-public abstract class MonoEncoding : Encoding // TypeDefIndex: 7387
+public abstract class MonoEncoding : Encoding // TypeDefIndex: 7389
 {
-	private readonly int win_code_page; 
+	private readonly int win_code_page;
 
 	public override int WindowsCodePage { get; }
 
@@ -1489,9 +1489,9 @@ public abstract class MonoEncoding : Encoding // TypeDefIndex: 7387
 
 }
 
-public abstract class MonoEncoder : Encoder // TypeDefIndex: 7388
+public abstract class MonoEncoder : Encoder // TypeDefIndex: 7390
 {
-	private MonoEncoding encoding; 
+	private MonoEncoding encoding;
 
 
 	public void .ctor(MonoEncoding encoding) { }
@@ -1510,7 +1510,7 @@ public abstract class MonoEncoder : Encoder // TypeDefIndex: 7388
 
 }
 
-internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8276
+internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8278
 {
 
 	public void .ctor(Type type) { }

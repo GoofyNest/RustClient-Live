@@ -6,25 +6,25 @@ public sealed class Texture2DArray : Texture // TypeDefIndex: 3449
 	public override bool isReadable { get; }
 
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static int get_allSlices() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public int get_depth() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public TextureFormat get_format() { }
 
 	public override bool get_isReadable() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Internal_CreateImpl(Texture2DArray mono, int w, int h, int d, int mipCount, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	private static void Internal_Create(Texture2DArray mono, int w, int h, int d, int mipCount, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	public void .ctor(int width, int height, int depth, DefaultFormat format, TextureCreationFlags flags) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor(int width, int height, int depth, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	public void .ctor(int width, int height, int depth, GraphicsFormat format, TextureCreationFlags flags, int mipCount) { }

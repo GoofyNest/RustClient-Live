@@ -1,9 +1,9 @@
-internal struct ModInfoInternal : IGettable<ModInfo>, ISettable<ModInfo>, IDisposable // TypeDefIndex: 9023
+internal struct ModInfoInternal : IGettable<ModInfo>, ISettable<ModInfo>, IDisposable // TypeDefIndex: 9025
 {
-	private int m_ApiVersion; 
-	private int m_ModsCount; 
-	private IntPtr m_Mods; 
-	private ModEnumerationType m_Type; 
+	private int m_ApiVersion;
+	private int m_ModsCount;
+	private IntPtr m_Mods;
+	private ModEnumerationType m_Type;
 
 	public ModIdentifier[] Mods { get; set; }
 	public ModEnumerationType Type { get; set; }

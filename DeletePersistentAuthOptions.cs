@@ -1,15 +1,15 @@
-public struct DeletePersistentAuthOptions // TypeDefIndex: 9660
+public struct DeletePersistentAuthOptions // TypeDefIndex: 9662
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RefreshToken>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <RefreshToken>k__BackingField;
 
 	public Utf8String RefreshToken { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RefreshToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RefreshToken(Utf8String value) { }
 
 }

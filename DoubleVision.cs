@@ -1,9 +1,9 @@
-public class DoubleVision : PostProcessEffectSettings // TypeDefIndex: 11996
+public class DoubleVision : PostProcessEffectSettings // TypeDefIndex: 12003
 {
-	[RangeAttribute] 
-	public Vector2Parameter displace; 
-	[RangeAttribute] 
-	public FloatParameter amount; 
+	[RangeAttribute]
+	public Vector2Parameter displace;
+	[RangeAttribute]
+	public FloatParameter amount;
 
 
 	public void .ctor() { }

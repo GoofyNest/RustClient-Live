@@ -1,8 +1,8 @@
-internal struct SessionModificationAddAttributeOptionsInternal : ISettable<SessionModificationAddAttributeOptions>, IDisposable // TypeDefIndex: 8568
+internal struct SessionModificationAddAttributeOptionsInternal : ISettable<SessionModificationAddAttributeOptions>, IDisposable // TypeDefIndex: 8570
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionAttribute; 
-	private SessionAttributeAdvertisementType m_AdvertisementType; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionAttribute;
+	private SessionAttributeAdvertisementType m_AdvertisementType;
 
 	public Nullable<AttributeData> SessionAttribute { set; }
 	public SessionAttributeAdvertisementType AdvertisementType { set; }

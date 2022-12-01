@@ -1,8 +1,8 @@
 internal sealed class SerStack // TypeDefIndex: 1118
 {
-	internal object[] objects; 
-	internal string stackId; 
-	internal int top; 
+	internal object[] objects;
+	internal string stackId;
+	internal int top;
 
 
 	internal void .ctor(string stackId) { }

@@ -1,44 +1,44 @@
-public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // TypeDefIndex: 11447
+public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // TypeDefIndex: 11453
 {
-	[SerializeField] 
-	protected GroundVehicle groundVehicle; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition engineStartSound; 
-	[SerializeField] 
-	private SoundDefinition engineStopSound; 
-	[SerializeField] 
-	private SoundDefinition engineStartFailSound; 
-	[SerializeField] 
-	private BlendedLoopEngineSound blendedEngineLoops; 
-	[SerializeField] 
-	private float wheelRatioMultiplier; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition waterSplashSoundDef; 
-	[SerializeField] 
-	private BlendedSoundLoops waterLoops; 
-	[SerializeField] 
-	private float waterSoundsMaxSpeed; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition brakeSoundDef; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private SoundDefinition lightsToggleSound; 
-	[CompilerGeneratedAttribute] 
-	private float <CameraDistance>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <inWater>k__BackingField; 
-	private Sound brakeSound; 
-	private bool wasInWater; 
-	[CompilerGeneratedAttribute] 
-	private float <engineRpm>k__BackingField; 
-	private float engineRpmDamp; 
-	private float wheelsRpm; 
+	[SerializeField]
+	protected GroundVehicle groundVehicle;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition engineStartSound;
+	[SerializeField]
+	private SoundDefinition engineStopSound;
+	[SerializeField]
+	private SoundDefinition engineStartFailSound;
+	[SerializeField]
+	private BlendedLoopEngineSound blendedEngineLoops;
+	[SerializeField]
+	private float wheelRatioMultiplier;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition waterSplashSoundDef;
+	[SerializeField]
+	private BlendedSoundLoops waterLoops;
+	[SerializeField]
+	private float waterSoundsMaxSpeed;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition brakeSoundDef;
+	[HeaderAttribute]
+	[SerializeField]
+	private SoundDefinition lightsToggleSound;
+	[CompilerGeneratedAttribute]
+	private float <CameraDistance>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <inWater>k__BackingField;
+	private Sound brakeSound;
+	private bool wasInWater;
+	[CompilerGeneratedAttribute]
+	private float <engineRpm>k__BackingField;
+	private float engineRpmDamp;
+	private float wheelsRpm;
 	private const float WHEELS_RPM_CHANGE_RATE_LIMIT = 400;
-	private int gear; 
-	private int prevGear; 
+	private int gear;
+	private int prevGear;
 
 	protected float CameraDistance { get; set; }
 	protected bool inWater { get; set; }
@@ -46,26 +46,26 @@ public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // Ty
 	public float engineRpm { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected float get_CameraDistance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CameraDistance(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected bool get_inWater() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_inWater(bool value) { }
 
 	protected abstract EngineAudioSet get_EngineAudioSet();
 
 	protected abstract void set_EngineAudioSet(EngineAudioSet value);
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_engineRpm() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_engineRpm(float value) { }
 
 	protected virtual void Awake() { }

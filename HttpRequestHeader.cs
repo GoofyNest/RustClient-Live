@@ -1,6 +1,6 @@
 public enum HttpRequestHeader // TypeDefIndex: 2876
 {
-	public int value__; 
+	public int value__;
 	public const HttpRequestHeader CacheControl = 0;
 	public const HttpRequestHeader Connection = 1;
 	public const HttpRequestHeader Date = 2;

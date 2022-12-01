@@ -1,8 +1,8 @@
-internal struct IsRTCRoomConnectedOptionsInternal : ISettable<IsRTCRoomConnectedOptions>, IDisposable // TypeDefIndex: 9110
+internal struct IsRTCRoomConnectedOptionsInternal : ISettable<IsRTCRoomConnectedOptions>, IDisposable // TypeDefIndex: 9112
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyId; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyId;
+	private IntPtr m_LocalUserId;
 
 	public Utf8String LobbyId { set; }
 	public ProductUserId LocalUserId { set; }

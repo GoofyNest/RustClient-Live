@@ -1,8 +1,8 @@
-public sealed class WaveformMonitor : Monitor // TypeDefIndex: 13611
+public sealed class WaveformMonitor : Monitor // TypeDefIndex: 13627
 {
-	public float exposure; 
-	public int height; 
-	private ComputeBuffer m_Data; 
+	public float exposure;
+	public int height;
+	private ComputeBuffer m_Data;
 	private const int k_ThreadGroupSize = 256;
 	private const int k_ThreadGroupSizeX = 16;
 	private const int k_ThreadGroupSizeY = 16;

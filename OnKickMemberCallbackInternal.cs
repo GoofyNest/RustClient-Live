@@ -1,4 +1,4 @@
-internal sealed class OnKickMemberCallbackInternal : MulticastDelegate // TypeDefIndex: 9221
+internal sealed class OnKickMemberCallbackInternal : MulticastDelegate // TypeDefIndex: 9223
 {
 
 	public void .ctor(object object, IntPtr method) { }

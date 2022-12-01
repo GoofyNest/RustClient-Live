@@ -1,9 +1,9 @@
 public struct Vector2b : IEquatable<Vector2b> // TypeDefIndex: 4826
 {
-	public static readonly Vector2b alltrue; 
-	public static readonly Vector2b allfalse; 
-	public bool x; 
-	public bool y; 
+	public static readonly Vector2b alltrue;
+	public static readonly Vector2b allfalse;
+	public bool x;
+	public bool y;
 
 
 	public void .ctor(bool x, bool y) { }

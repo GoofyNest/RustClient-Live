@@ -1,7 +1,7 @@
 public sealed class SafeSerializationEventArgs : EventArgs // TypeDefIndex: 1045
 {
-	private StreamingContext m_streamingContext; 
-	private List<object> m_serializedStates; 
+	private StreamingContext m_streamingContext;
+	private List<object> m_serializedStates;
 
 	internal IList<object> SerializedStates { get; }
 

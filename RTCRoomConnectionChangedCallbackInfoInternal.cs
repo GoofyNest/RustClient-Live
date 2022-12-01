@@ -1,10 +1,10 @@
-internal struct RTCRoomConnectionChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<RTCRoomConnectionChangedCallbackInfo>, ISettable<RTCRoomConnectionChangedCallbackInfo>, IDisposable // TypeDefIndex: 9259
+internal struct RTCRoomConnectionChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<RTCRoomConnectionChangedCallbackInfo>, ISettable<RTCRoomConnectionChangedCallbackInfo>, IDisposable // TypeDefIndex: 9261
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LobbyId; 
-	private IntPtr m_LocalUserId; 
-	private int m_IsConnected; 
-	private Result m_DisconnectReason; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LobbyId;
+	private IntPtr m_LocalUserId;
+	private int m_IsConnected;
+	private Result m_DisconnectReason;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

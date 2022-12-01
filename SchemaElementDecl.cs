@@ -1,20 +1,20 @@
 internal sealed class SchemaElementDecl : SchemaDeclBase, IDtdAttributeListInfo // TypeDefIndex: 2277
 {
-	private Dictionary<XmlQualifiedName, SchemaAttDef> attdefs; 
-	private List<IDtdDefaultAttributeInfo> defaultAttdefs; 
-	private bool isIdDeclared; 
-	private bool hasNonCDataAttribute; 
-	private bool isAbstract; 
-	private bool isNillable; 
-	private bool hasRequiredAttribute; 
-	private bool isNotationDeclared; 
-	private Dictionary<XmlQualifiedName, XmlQualifiedName> prohibitedAttributes; 
-	private ContentValidator contentValidator; 
-	private XmlSchemaAnyAttribute anyAttribute; 
-	private XmlSchemaDerivationMethod block; 
-	private CompiledIdentityConstraint[] constraints; 
-	private XmlSchemaElement schemaElement; 
-	internal static readonly SchemaElementDecl Empty; 
+	private Dictionary<XmlQualifiedName, SchemaAttDef> attdefs;
+	private List<IDtdDefaultAttributeInfo> defaultAttdefs;
+	private bool isIdDeclared;
+	private bool hasNonCDataAttribute;
+	private bool isAbstract;
+	private bool isNillable;
+	private bool hasRequiredAttribute;
+	private bool isNotationDeclared;
+	private Dictionary<XmlQualifiedName, XmlQualifiedName> prohibitedAttributes;
+	private ContentValidator contentValidator;
+	private XmlSchemaAnyAttribute anyAttribute;
+	private XmlSchemaDerivationMethod block;
+	private CompiledIdentityConstraint[] constraints;
+	private XmlSchemaElement schemaElement;
+	internal static readonly SchemaElementDecl Empty;
 
 	private bool System.Xml.IDtdAttributeListInfo.HasNonCDataAttributes { get; }
 	internal bool IsIdDeclared { get; set; }

@@ -1,8 +1,8 @@
 public struct Resolution // TypeDefIndex: 3394
 {
-	private int m_Width; 
-	private int m_Height; 
-	private int m_RefreshRate; 
+	private int m_Width;
+	private int m_Height;
+	private int m_RefreshRate;
 
 	public int width { get; }
 	public int height { get; }

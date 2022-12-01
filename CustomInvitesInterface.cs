@@ -1,4 +1,4 @@
-public sealed class CustomInvitesInterface : Handle // TypeDefIndex: 9527
+public sealed class CustomInvitesInterface : Handle // TypeDefIndex: 9529
 {
 	public const int AddnotifycustominviteacceptedApiLatest = 1;
 	public const int AddnotifycustominvitereceivedApiLatest = 1;
@@ -31,16 +31,16 @@ public sealed class CustomInvitesInterface : Handle // TypeDefIndex: 9527
 
 	public Result SetCustomInvite(ref SetCustomInviteOptions options) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnCustomInviteAcceptedCallbackInternalImplementation(ref OnCustomInviteAcceptedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnCustomInviteReceivedCallbackInternalImplementation(ref OnCustomInviteReceivedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnCustomInviteRejectedCallbackInternalImplementation(ref CustomInviteRejectedCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSendCustomInviteCallbackInternalImplementation(ref SendCustomInviteCallbackInfoInternal data) { }
 
 }

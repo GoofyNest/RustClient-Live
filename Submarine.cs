@@ -1,15 +1,15 @@
-public class Submarine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6427
+public class Submarine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6429
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float throttle; 
-	public float upDown; 
-	public float rudder; 
-	public uint fuelStorageID; 
-	public float fuelAmount; 
-	public uint torpedoStorageID; 
-	public float oxygen; 
-	public uint itemStorageID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float throttle;
+	public float upDown;
+	public float rudder;
+	public uint fuelStorageID;
+	public float fuelAmount;
+	public uint torpedoStorageID;
+	public float oxygen;
+	public uint itemStorageID;
 
 
 	public static void ResetToPool(Submarine instance) { }

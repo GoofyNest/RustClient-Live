@@ -1,10 +1,10 @@
-internal abstract class PathFilter // TypeDefIndex: 6097
+internal abstract class PathFilter // TypeDefIndex: 6099
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 internal class JPath
 
-[PreserveAttribute] 
+[PreserveAttribute]
 internal abstract class PathFilter
 
 	protected void .ctor() { }

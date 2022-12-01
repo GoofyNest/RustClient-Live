@@ -1,9 +1,9 @@
 public sealed class RefreshPropertiesAttribute : Attribute // TypeDefIndex: 2775
 {
-	public static readonly RefreshPropertiesAttribute All; 
-	public static readonly RefreshPropertiesAttribute Repaint; 
-	public static readonly RefreshPropertiesAttribute Default; 
-	private RefreshProperties refresh; 
+	public static readonly RefreshPropertiesAttribute All;
+	public static readonly RefreshPropertiesAttribute Repaint;
+	public static readonly RefreshPropertiesAttribute Default;
+	private RefreshProperties refresh;
 
 	public RefreshProperties RefreshProperties { get; }
 

@@ -1,14 +1,14 @@
 internal class InvokableCall : BaseInvokableCall // TypeDefIndex: 3631
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private UnityAction Delegate; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private UnityAction Delegate;
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void add_Delegate(UnityAction value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void remove_Delegate(UnityAction value) { }
 
 	public void .ctor(object target, MethodInfo theFunction) { }

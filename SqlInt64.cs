@@ -1,13 +1,13 @@
 public struct SqlInt64 : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4354
 {
-	private bool m_fNotNull; 
-	private long m_value; 
-	private static readonly long s_lLowIntMask; 
-	private static readonly long s_lHighIntMask; 
-	public static readonly SqlInt64 Null; 
-	public static readonly SqlInt64 Zero; 
-	public static readonly SqlInt64 MinValue; 
-	public static readonly SqlInt64 MaxValue; 
+	private bool m_fNotNull;
+	private long m_value;
+	private static readonly long s_lLowIntMask;
+	private static readonly long s_lHighIntMask;
+	public static readonly SqlInt64 Null;
+	public static readonly SqlInt64 Zero;
+	public static readonly SqlInt64 MinValue;
+	public static readonly SqlInt64 MaxValue;
 
 	public bool IsNull { get; }
 	public long Value { get; }

@@ -1,7 +1,7 @@
-public class PressurePad : BaseDetector // TypeDefIndex: 10426
+public class PressurePad : BaseDetector // TypeDefIndex: 10430
 {
-	public float pressPowerTime; 
-	public int pressPowerAmount; 
+	public float pressPowerTime;
+	public int pressPowerAmount;
 	public const BaseEntity.Flags Flag_EmittingPower = 512;
 
 

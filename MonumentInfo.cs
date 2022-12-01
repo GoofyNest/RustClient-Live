@@ -1,19 +1,19 @@
-public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 11707
+public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 11714
 {
-	[HeaderAttribute] 
-	public MonumentType Type; 
-	[InspectorFlagsAttribute] 
-	public MonumentTier Tier; 
-	public int MinWorldSize; 
-	public Bounds Bounds; 
-	public bool HasNavmesh; 
-	public bool IsSafeZone; 
-	[HideInInspector] 
-	public bool WantsDungeonLink; 
-	[HideInInspector] 
-	public bool HasDungeonLink; 
-	[HideInInspector] 
-	public DungeonGridInfo DungeonEntrance; 
+	[HeaderAttribute]
+	public MonumentType Type;
+	[InspectorFlagsAttribute]
+	public MonumentTier Tier;
+	public int MinWorldSize;
+	public Bounds Bounds;
+	public bool HasNavmesh;
+	public bool IsSafeZone;
+	[HideInInspector]
+	public bool WantsDungeonLink;
+	[HideInInspector]
+	public bool HasDungeonLink;
+	[HideInInspector]
+	public DungeonGridInfo DungeonEntrance;
 
 
 	protected override void Awake() { }

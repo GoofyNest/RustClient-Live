@@ -1,14 +1,14 @@
 public sealed class DllImportAttribute : Attribute // TypeDefIndex: 1338
 {
-	internal string _val; 
-	public string EntryPoint; 
-	public CharSet CharSet; 
-	public bool SetLastError; 
-	public bool ExactSpelling; 
-	public bool PreserveSig; 
-	public CallingConvention CallingConvention; 
-	public bool BestFitMapping; 
-	public bool ThrowOnUnmappableChar; 
+	internal string _val;
+	public string EntryPoint;
+	public CharSet CharSet;
+	public bool SetLastError;
+	public bool ExactSpelling;
+	public bool PreserveSig;
+	public CallingConvention CallingConvention;
+	public bool BestFitMapping;
+	public bool ThrowOnUnmappableChar;
 
 	public string Value { get; }
 

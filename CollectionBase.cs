@@ -1,6 +1,6 @@
 public abstract class CollectionBase : IList, ICollection, IEnumerable // TypeDefIndex: 1384
 {
-	private ArrayList list; 
+	private ArrayList list;
 
 	protected ArrayList InnerList { get; }
 	protected IList List { get; }

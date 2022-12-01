@@ -1,14 +1,14 @@
 public struct VideoClipPlayable : IEquatable<VideoClipPlayable> // TypeDefIndex: 4779
 {
 
-[StaticAccessorAttribute] 
-[RequiredByNativeCodeAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
+[StaticAccessorAttribute]
+[RequiredByNativeCodeAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
 public struct VideoClipPlayable : IEquatable<VideoClipPlayable>
-	private PlayableHandle m_Handle; 
+	private PlayableHandle m_Handle;
 
 
 	public PlayableHandle GetHandle() { }

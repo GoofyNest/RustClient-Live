@@ -1,58 +1,58 @@
-public struct LinkAccountOptions // TypeDefIndex: 9591
+public struct LinkAccountOptions // TypeDefIndex: 9593
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ContinuanceToken <ContinuanceToken>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ContinuanceToken <ContinuanceToken>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ContinuanceToken ContinuanceToken { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ContinuanceToken get_ContinuanceToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ContinuanceToken(ContinuanceToken value) { }
 
 }
 
-public struct LinkAccountOptions // TypeDefIndex: 9667
+public struct LinkAccountOptions // TypeDefIndex: 9669
 {
-	[CompilerGeneratedAttribute] 
-	private LinkAccountFlags <LinkAccountFlags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ContinuanceToken <ContinuanceToken>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private LinkAccountFlags <LinkAccountFlags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ContinuanceToken <ContinuanceToken>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
 
 	public LinkAccountFlags LinkAccountFlags { get; set; }
 	public ContinuanceToken ContinuanceToken { get; set; }
 	public EpicAccountId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LinkAccountFlags get_LinkAccountFlags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LinkAccountFlags(LinkAccountFlags value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ContinuanceToken get_ContinuanceToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ContinuanceToken(ContinuanceToken value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
 }

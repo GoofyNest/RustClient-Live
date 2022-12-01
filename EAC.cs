@@ -1,10 +1,10 @@
-public static class EAC // TypeDefIndex: 10913
+public static class EAC // TypeDefIndex: 10919
 {
-	public static bool isLoading; 
-	public static string lastError; 
-	public static string steamTicket; 
-	public static ProductUserId LocalUserId; 
-	public static AntiCheatClientInterface Interface; 
+	public static bool isLoading;
+	public static string lastError;
+	public static string steamTicket;
+	public static ProductUserId LocalUserId;
+	public static AntiCheatClientInterface Interface;
 
 	public static bool IsEncryptionSupported { get; }
 
@@ -29,7 +29,7 @@ public static class EAC // TypeDefIndex: 10913
 
 	public static void DoUpdate() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task OnJoinServer() { }
 
 	public static void OnLeaveServer() { }
@@ -40,17 +40,17 @@ public static class EAC // TypeDefIndex: 10913
 
 }
 
-private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 10914
+private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 10920
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	private TaskAwaiter<byte[]> <>u__1; 
-	private TaskAwaiter <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	private TaskAwaiter<byte[]> <>u__1;
+	private TaskAwaiter <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

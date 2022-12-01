@@ -1,14 +1,14 @@
 public class Logger : ILogger, ILogHandler // TypeDefIndex: 3459
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private ILogHandler <logHandler>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private bool <logEnabled>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private LogType <filterLogType>k__BackingField; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private ILogHandler <logHandler>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private bool <logEnabled>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private LogType <filterLogType>k__BackingField;
 
 	public ILogHandler logHandler { get; set; }
 	public bool logEnabled { get; set; }
@@ -17,22 +17,22 @@ public class Logger : ILogger, ILogHandler // TypeDefIndex: 3459
 
 	public void .ctor(ILogHandler logHandler) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ILogHandler get_logHandler() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_logHandler(ILogHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_logEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_logEnabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LogType get_filterLogType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_filterLogType(LogType value) { }
 
 	public bool IsLogTypeAllowed(LogType logType) { }

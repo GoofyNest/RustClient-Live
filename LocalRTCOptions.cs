@@ -1,13 +1,13 @@
-public struct LocalRTCOptions // TypeDefIndex: 9206
+public struct LocalRTCOptions // TypeDefIndex: 9208
 {
-	[CompilerGeneratedAttribute] 
-	private uint <Flags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <UseManualAudioInput>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <UseManualAudioOutput>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <LocalAudioDeviceInputStartsMuted>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <Flags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <UseManualAudioInput>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <UseManualAudioOutput>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <LocalAudioDeviceInputStartsMuted>k__BackingField;
 
 	public uint Flags { get; set; }
 	public bool UseManualAudioInput { get; set; }
@@ -15,28 +15,28 @@ public struct LocalRTCOptions // TypeDefIndex: 9206
 	public bool LocalAudioDeviceInputStartsMuted { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_Flags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Flags(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_UseManualAudioInput() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UseManualAudioInput(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_UseManualAudioOutput() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UseManualAudioOutput(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_LocalAudioDeviceInputStartsMuted() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalAudioDeviceInputStartsMuted(bool value) { }
 
 	internal void Set(ref LocalRTCOptionsInternal other) { }

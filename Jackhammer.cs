@@ -1,8 +1,8 @@
-public class Jackhammer : BaseMelee // TypeDefIndex: 10311
+public class Jackhammer : BaseMelee // TypeDefIndex: 10314
 {
-	public float HotspotBonusScale; 
-	private bool lastEngineStatus; 
-	private float nextReleaseTime; 
+	public float HotspotBonusScale;
+	private bool lastEngineStatus;
+	private float nextReleaseTime;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

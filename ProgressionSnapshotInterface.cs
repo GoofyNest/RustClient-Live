@@ -1,4 +1,4 @@
-public sealed class ProgressionSnapshotInterface : Handle // TypeDefIndex: 8812
+public sealed class ProgressionSnapshotInterface : Handle // TypeDefIndex: 8814
 {
 	public const int AddprogressionApiLatest = 1;
 	public const int BeginsnapshotApiLatest = 1;
@@ -22,10 +22,10 @@ public sealed class ProgressionSnapshotInterface : Handle // TypeDefIndex: 8812
 
 	public void SubmitSnapshot(ref SubmitSnapshotOptions options, object clientData, OnSubmitSnapshotCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnDeleteSnapshotCallbackInternalImplementation(ref DeleteSnapshotCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSubmitSnapshotCallbackInternalImplementation(ref SubmitSnapshotCallbackInfoInternal data) { }
 
 }

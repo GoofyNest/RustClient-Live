@@ -1,4 +1,4 @@
-public class XMas : ConsoleSystem // TypeDefIndex: 13768
+public class XMas : ConsoleSystem // TypeDefIndex: 13784
 {
 
 	public void .ctor() { }

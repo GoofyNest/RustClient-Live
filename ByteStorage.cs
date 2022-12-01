@@ -1,6 +1,6 @@
 internal sealed class ByteStorage : DataStorage // TypeDefIndex: 4372
 {
-	private byte[] _values; 
+	private byte[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

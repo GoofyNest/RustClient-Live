@@ -1,9 +1,9 @@
 internal static class AppContextSwitches // TypeDefIndex: 142
 {
-	public static readonly bool ThrowExceptionIfDisposedCancellationTokenSource; 
-	public static readonly bool SetActorAsReferenceWhenCopyingClaimsIdentity; 
-	public static readonly bool NoAsyncCurrentCulture; 
-	public static readonly bool PreserveEventListnerObjectIdentity; 
+	public static readonly bool ThrowExceptionIfDisposedCancellationTokenSource;
+	public static readonly bool SetActorAsReferenceWhenCopyingClaimsIdentity;
+	public static readonly bool NoAsyncCurrentCulture;
+	public static readonly bool PreserveEventListnerObjectIdentity;
 
 }
 
@@ -31,42 +31,42 @@ public class ApplicationException : Exception // TypeDefIndex: 165
 
 public sealed class AppDomain : MarshalByRefObject // TypeDefIndex: 337
 {
-	private IntPtr _mono_app_domain; 
-	private static string _process_guid; 
-	[ThreadStaticAttribute] 
-	private static Dictionary<string, object> type_resolve_in_progress; 
-	[ThreadStaticAttribute] 
-	private static Dictionary<string, object> assembly_resolve_in_progress; 
-	[ThreadStaticAttribute] 
-	private static Dictionary<string, object> assembly_resolve_in_progress_refonly; 
-	private object _evidence; 
-	private object _granted; 
-	private int _principalPolicy; 
-	[ThreadStaticAttribute] 
-	private static object _principal; 
-	private static AppDomain default_domain; 
-	[CompilerGeneratedAttribute] 
-	private AssemblyLoadEventHandler AssemblyLoad; 
-	[CompilerGeneratedAttribute] 
-	private ResolveEventHandler AssemblyResolve; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler DomainUnload; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler ProcessExit; 
-	[CompilerGeneratedAttribute] 
-	private ResolveEventHandler ResourceResolve; 
-	[CompilerGeneratedAttribute] 
-	private ResolveEventHandler TypeResolve; 
-	[CompilerGeneratedAttribute] 
-	private UnhandledExceptionEventHandler UnhandledException; 
-	[CompilerGeneratedAttribute] 
-	private EventHandler<FirstChanceExceptionEventArgs> FirstChanceException; 
-	private object _domain_manager; 
-	[CompilerGeneratedAttribute] 
-	private ResolveEventHandler ReflectionOnlyAssemblyResolve; 
-	private object _activation; 
-	private object _applicationIdentity; 
-	private List<string> compatibility_switch; 
+	private IntPtr _mono_app_domain;
+	private static string _process_guid;
+	[ThreadStaticAttribute]
+	private static Dictionary<string, object> type_resolve_in_progress;
+	[ThreadStaticAttribute]
+	private static Dictionary<string, object> assembly_resolve_in_progress;
+	[ThreadStaticAttribute]
+	private static Dictionary<string, object> assembly_resolve_in_progress_refonly;
+	private object _evidence;
+	private object _granted;
+	private int _principalPolicy;
+	[ThreadStaticAttribute]
+	private static object _principal;
+	private static AppDomain default_domain;
+	[CompilerGeneratedAttribute]
+	private AssemblyLoadEventHandler AssemblyLoad;
+	[CompilerGeneratedAttribute]
+	private ResolveEventHandler AssemblyResolve;
+	[CompilerGeneratedAttribute]
+	private EventHandler DomainUnload;
+	[CompilerGeneratedAttribute]
+	private EventHandler ProcessExit;
+	[CompilerGeneratedAttribute]
+	private ResolveEventHandler ResourceResolve;
+	[CompilerGeneratedAttribute]
+	private ResolveEventHandler TypeResolve;
+	[CompilerGeneratedAttribute]
+	private UnhandledExceptionEventHandler UnhandledException;
+	[CompilerGeneratedAttribute]
+	private EventHandler<FirstChanceExceptionEventArgs> FirstChanceException;
+	private object _domain_manager;
+	[CompilerGeneratedAttribute]
+	private ResolveEventHandler ReflectionOnlyAssemblyResolve;
+	private object _activation;
+	private object _applicationIdentity;
+	private List<string> compatibility_switch;
 
 	internal AppDomainSetup SetupInformationNoCopy { get; }
 	public string BaseDirectory { get; }
@@ -104,7 +104,7 @@ public sealed class AppDomain : MarshalByRefObject // TypeDefIndex: 337
 
 	internal Assembly LoadSatellite(AssemblyName assemblyRef, bool throwOnError) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public Assembly Load(AssemblyName assemblyRef, Evidence assemblySecurity) { }
 
 	public Assembly Load(string assemblyString) { }
@@ -137,7 +137,7 @@ public sealed class AppDomain : MarshalByRefObject // TypeDefIndex: 337
 
 	private int getDomainID() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static int GetCurrentThreadId() { }
 
 	public override string ToString() { }
@@ -156,52 +156,52 @@ public sealed class AppDomain : MarshalByRefObject // TypeDefIndex: 337
 
 	internal void ProcessMessageInDomain(byte[] arrRequest, CADMethodCallMessage cadMsg, out byte[] arrResponse, out CADMethodReturnMessage cadMrm) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_DomainUnload(EventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_DomainUnload(EventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_ProcessExit(EventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_ProcessExit(EventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_UnhandledException(UnhandledExceptionEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_UnhandledException(UnhandledExceptionEventHandler value) { }
 
 }
 
 public sealed class AppDomainSetup // TypeDefIndex: 346
 {
-	private string application_base; 
-	private string application_name; 
-	private string cache_path; 
-	private string configuration_file; 
-	private string dynamic_base; 
-	private string license_file; 
-	private string private_bin_path; 
-	private string private_bin_path_probe; 
-	private string shadow_copy_directories; 
-	private string shadow_copy_files; 
-	private bool publisher_policy; 
-	private bool path_changed; 
-	private int loader_optimization; 
-	private bool disallow_binding_redirects; 
-	private bool disallow_code_downloads; 
-	private object _activationArguments; 
-	private object domain_initializer; 
-	private object application_trust; 
-	private string[] domain_initializer_args; 
-	private bool disallow_appbase_probe; 
-	private byte[] configuration_bytes; 
-	private byte[] serialized_non_primitives; 
-	[CompilerGeneratedAttribute] 
-	private string <TargetFrameworkName>k__BackingField; 
+	private string application_base;
+	private string application_name;
+	private string cache_path;
+	private string configuration_file;
+	private string dynamic_base;
+	private string license_file;
+	private string private_bin_path;
+	private string private_bin_path_probe;
+	private string shadow_copy_directories;
+	private string shadow_copy_files;
+	private bool publisher_policy;
+	private bool path_changed;
+	private int loader_optimization;
+	private bool disallow_binding_redirects;
+	private bool disallow_code_downloads;
+	private object _activationArguments;
+	private object domain_initializer;
+	private object application_trust;
+	private string[] domain_initializer_args;
+	private bool disallow_appbase_probe;
+	private byte[] configuration_bytes;
+	private byte[] serialized_non_primitives;
+	[CompilerGeneratedAttribute]
+	private string <TargetFrameworkName>k__BackingField;
 
 	public string ApplicationBase { get; }
 
@@ -216,8 +216,8 @@ public sealed class AppDomainSetup // TypeDefIndex: 346
 
 internal class AppDomainLevelActivator : IActivator // TypeDefIndex: 1203
 {
-	private string _activationUrl; 
-	private IActivator _next; 
+	private string _activationUrl;
+	private IActivator _next;
 
 	public IActivator NextActivator { get; }
 
@@ -232,29 +232,29 @@ internal class AppDomainLevelActivator : IActivator // TypeDefIndex: 1203
 
 public class Application // TypeDefIndex: 3354
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Application.LowMemoryCallback lowMemory; 
-	private static Application.LogCallback s_LogCallbackHandler; 
-	private static Application.LogCallback s_LogCallbackHandlerThreaded; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action<bool> focusChanged; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action<string> deepLinkActivated; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Func<bool> wantsToQuit; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action quitting; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Application.LowMemoryCallback lowMemory;
+	private static Application.LogCallback s_LogCallbackHandler;
+	private static Application.LogCallback s_LogCallbackHandlerThreaded;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action<bool> focusChanged;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action<string> deepLinkActivated;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Func<bool> wantsToQuit;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action quitting;
 
 	public static bool isPlaying { get; }
 	public static bool isFocused { get; }
 	public static string dataPath { get; }
 	public static string streamingAssetsPath { get; }
-	[SecurityCriticalAttribute] 
+	[SecurityCriticalAttribute]
 	public static string persistentDataPath { get; }
 	public static string unityVersion { get; }
 	public static string version { get; }
@@ -266,105 +266,105 @@ public class Application // TypeDefIndex: 3354
 	public static bool isMobilePlatform { get; }
 	public static SystemLanguage systemLanguage { get; }
 	public static NetworkReachability internetReachability { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static string loadedLevelName { get; }
 	public static bool isEditor { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void Quit(int exitCode) { }
 
 	public static void Quit() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool CanStreamedLevelBeLoaded(string levelName) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool get_isPlaying() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool get_isFocused() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_dataPath() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_streamingAssetsPath() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_persistentDataPath() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_unityVersion() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_version() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_companyName() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void OpenURL(string url) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static int get_targetFrameRate() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void set_targetFrameRate(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void SetLogCallbackDefined(bool defined) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static StackTraceLogType GetStackTraceLogType(LogType logType) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void SetStackTraceLogType(LogType logType, StackTraceLogType stackTraceType) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static string get_consoleLogPath() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void set_backgroundLoadingPriority(ThreadPriority value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static RuntimePlatform get_platform() { }
 
 	public static bool get_isMobilePlatform() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static SystemLanguage get_systemLanguage() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static NetworkReachability get_internetReachability() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void CallLowMemory() { }
 
 	public static void add_logMessageReceived(Application.LogCallback value) { }
 
 	public static void remove_logMessageReceived(Application.LogCallback value) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void CallLogCallback(string logString, string stackTrace, LogType type, bool invokedOnMainThread) { }
 
 	public static void add_onBeforeRender(UnityAction value) { }
 
 	public static void remove_onBeforeRender(UnityAction value) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static bool Internal_ApplicationWantsToQuit() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_ApplicationQuit() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void InvokeOnBeforeRender() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void InvokeFocusChanged(bool focus) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void InvokeDeepLinkActivated(string url) { }
 
 	public static string get_loadedLevelName() { }
@@ -401,7 +401,7 @@ public sealed class Application.LogCallback : MulticastDelegate // TypeDefIndex:
 
 public struct AppId // TypeDefIndex: 5241
 {
-	public uint Value; 
+	public uint Value;
 
 
 	public override string ToString() { }
@@ -414,9 +414,9 @@ public struct AppId // TypeDefIndex: 5241
 
 }
 
-internal struct AppResumingFromSuspend_t : ICallbackData // TypeDefIndex: 5339
+internal struct AppResumingFromSuspend_t : ICallbackData // TypeDefIndex: 5341
 {
-	public static int _datasize; 
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -430,13 +430,13 @@ internal struct AppResumingFromSuspend_t : ICallbackData // TypeDefIndex: 5339
 
 }
 
-internal struct AppProofOfPurchaseKeyResponse_t : ICallbackData // TypeDefIndex: 5407
+internal struct AppProofOfPurchaseKeyResponse_t : ICallbackData // TypeDefIndex: 5409
 {
-	internal Result Result; 
-	internal uint AppID; 
-	internal uint CchKeyLength; 
-	internal byte[] Key; 
-	public static int _datasize; 
+	internal Result Result;
+	internal uint AppID;
+	internal uint CchKeyLength;
+	internal byte[] Key;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -450,13 +450,13 @@ internal struct AppProofOfPurchaseKeyResponse_t : ICallbackData // TypeDefIndex:
 
 }
 
-public static class Application // TypeDefIndex: 6183
+public static class Application // TypeDefIndex: 6185
 {
-	private static MonoBehaviour _controller; 
-	public static Manifest Manifest; 
-	public static Dictionary<IPEndPoint, int> ServerMetadata; 
-	[CompilerGeneratedAttribute] 
-	private static BaseIntegration <Integration>k__BackingField; 
+	private static MonoBehaviour _controller;
+	public static Manifest Manifest;
+	public static Dictionary<IPEndPoint, int> ServerMetadata;
+	[CompilerGeneratedAttribute]
+	private static BaseIntegration <Integration>k__BackingField;
 
 	public static MonoBehaviour Controller { get; }
 	public static BaseIntegration Integration { get; set; }
@@ -466,15 +466,15 @@ public static class Application // TypeDefIndex: 6183
 
 	public static void Initialize(BaseIntegration integration) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static BaseIntegration get_Integration() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Integration(BaseIntegration value) { }
 
 }
 
-internal class ApplicationControllerMonobehaviour : MonoBehaviour // TypeDefIndex: 6224
+internal class ApplicationControllerMonobehaviour : MonoBehaviour // TypeDefIndex: 6226
 {
 
 	public void OnApplicationQuit() { }
@@ -485,10 +485,10 @@ internal class ApplicationControllerMonobehaviour : MonoBehaviour // TypeDefInde
 
 }
 
-public struct AppInfo // TypeDefIndex: 6247
+public struct AppInfo // TypeDefIndex: 6249
 {
-	[CompilerGeneratedAttribute] 
-	private string <Image>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Image>k__BackingField;
 
 	public int Version { get; }
 	public BuildInfo Build { get; }
@@ -547,31 +547,31 @@ public struct AppInfo // TypeDefIndex: 6247
 
 	public int get_MinutesPlayed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Image() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Image(string value) { }
 
 }
 
-public class Approval : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6486
+public class Approval : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6488
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string level; 
-	public string hostname; 
-	public bool modded; 
-	public bool official; 
-	public ulong steamid; 
-	public uint ipaddress; 
-	public int port; 
-	public uint levelSeed; 
-	public uint levelSize; 
-	public string checksum; 
-	public uint encryption; 
-	public string levelUrl; 
-	public bool levelTransfer; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string level;
+	public string hostname;
+	public bool modded;
+	public bool official;
+	public ulong steamid;
+	public uint ipaddress;
+	public int port;
+	public uint levelSeed;
+	public uint levelSize;
+	public string checksum;
+	public uint encryption;
+	public string levelUrl;
+	public bool levelTransfer;
 
 
 	public static void ResetToPool(Approval instance) { }
@@ -628,26 +628,26 @@ public class Approval : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6486
 
 }
 
-public class AppRequest : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6521
+public class AppRequest : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6523
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint seq; 
-	public ulong playerId; 
-	public int playerToken; 
-	public uint entityId; 
-	public AppEmpty getInfo; 
-	public AppEmpty getTime; 
-	public AppEmpty getMap; 
-	public AppEmpty getTeamInfo; 
-	public AppEmpty getTeamChat; 
-	public AppSendMessage sendTeamMessage; 
-	public AppEmpty getEntityInfo; 
-	public AppSetEntityValue setEntityValue; 
-	public AppEmpty checkSubscription; 
-	public AppFlag setSubscription; 
-	public AppEmpty getMapMarkers; 
-	public AppPromoteToLeader promoteToLeader; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint seq;
+	public ulong playerId;
+	public int playerToken;
+	public uint entityId;
+	public AppEmpty getInfo;
+	public AppEmpty getTime;
+	public AppEmpty getMap;
+	public AppEmpty getTeamInfo;
+	public AppEmpty getTeamChat;
+	public AppSendMessage sendTeamMessage;
+	public AppEmpty getEntityInfo;
+	public AppSetEntityValue setEntityValue;
+	public AppEmpty checkSubscription;
+	public AppFlag setSubscription;
+	public AppEmpty getMapMarkers;
+	public AppPromoteToLeader promoteToLeader;
 
 
 	public static void ResetToPool(AppRequest instance) { }
@@ -704,12 +704,12 @@ public class AppRequest : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 652
 
 }
 
-public class AppMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
+public class AppMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6524
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public AppResponse response; 
-	public AppBroadcast broadcast; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public AppResponse response;
+	public AppBroadcast broadcast;
 
 
 	public static void ResetToPool(AppMessage instance) { }
@@ -766,21 +766,21 @@ public class AppMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 652
 
 }
 
-public class AppResponse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6523
+public class AppResponse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6525
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint seq; 
-	public AppSuccess success; 
-	public AppError error; 
-	public AppInfo info; 
-	public AppTime time; 
-	public AppMap map; 
-	public AppTeamInfo teamInfo; 
-	public AppTeamChat teamChat; 
-	public AppEntityInfo entityInfo; 
-	public AppFlag flag; 
-	public AppMapMarkers mapMarkers; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint seq;
+	public AppSuccess success;
+	public AppError error;
+	public AppInfo info;
+	public AppTime time;
+	public AppMap map;
+	public AppTeamInfo teamInfo;
+	public AppTeamChat teamChat;
+	public AppEntityInfo entityInfo;
+	public AppFlag flag;
+	public AppMapMarkers mapMarkers;
 
 
 	public static void ResetToPool(AppResponse instance) { }
@@ -837,13 +837,13 @@ public class AppResponse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class AppBroadcast : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6524
+public class AppBroadcast : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6526
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public AppTeamChanged teamChanged; 
-	public AppTeamMessage teamMessage; 
-	public AppEntityChanged entityChanged; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public AppTeamChanged teamChanged;
+	public AppTeamMessage teamMessage;
+	public AppEntityChanged entityChanged;
 
 
 	public static void ResetToPool(AppBroadcast instance) { }
@@ -900,10 +900,10 @@ public class AppBroadcast : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class AppEmpty : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6525
+public class AppEmpty : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6527
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
+	public bool ShouldPool;
+	private bool _disposed;
 
 
 	public static void ResetToPool(AppEmpty instance) { }
@@ -960,11 +960,11 @@ public class AppEmpty : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6525
 
 }
 
-public class AppSendMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6526
+public class AppSendMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6528
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string message; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string message;
 
 
 	public static void ResetToPool(AppSendMessage instance) { }
@@ -1021,11 +1021,11 @@ public class AppSendMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppSetEntityValue : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6527
+public class AppSetEntityValue : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6529
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public bool value; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public bool value;
 
 
 	public static void ResetToPool(AppSetEntityValue instance) { }
@@ -1082,11 +1082,11 @@ public class AppSetEntityValue : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class AppPromoteToLeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6528
+public class AppPromoteToLeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6530
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong steamId; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong steamId;
 
 
 	public static void ResetToPool(AppPromoteToLeader instance) { }
@@ -1143,10 +1143,10 @@ public class AppPromoteToLeader : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class AppSuccess : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6529
+public class AppSuccess : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6531
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
+	public bool ShouldPool;
+	private bool _disposed;
 
 
 	public static void ResetToPool(AppSuccess instance) { }
@@ -1203,11 +1203,11 @@ public class AppSuccess : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 652
 
 }
 
-public class AppError : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6530
+public class AppError : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6532
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string error; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string error;
 
 
 	public static void ResetToPool(AppError instance) { }
@@ -1264,11 +1264,11 @@ public class AppError : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6530
 
 }
 
-public class AppFlag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6531
+public class AppFlag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6533
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public bool value; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public bool value;
 
 
 	public static void ResetToPool(AppFlag instance) { }
@@ -1325,22 +1325,22 @@ public class AppFlag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6531
 
 }
 
-public class AppInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6532
+public class AppInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6534
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string name; 
-	public string headerImage; 
-	public string url; 
-	public string map; 
-	public uint mapSize; 
-	public uint wipeTime; 
-	public uint players; 
-	public uint maxPlayers; 
-	public uint queuedPlayers; 
-	public uint seed; 
-	public uint salt; 
-	public string logoImage; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string name;
+	public string headerImage;
+	public string url;
+	public string map;
+	public uint mapSize;
+	public uint wipeTime;
+	public uint players;
+	public uint maxPlayers;
+	public uint queuedPlayers;
+	public uint seed;
+	public uint salt;
+	public string logoImage;
 
 
 	public static void ResetToPool(AppInfo instance) { }
@@ -1397,15 +1397,15 @@ public class AppInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6532
 
 }
 
-public class AppTime : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6533
+public class AppTime : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6535
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float dayLengthMinutes; 
-	public float timeScale; 
-	public float sunrise; 
-	public float sunset; 
-	public float time; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float dayLengthMinutes;
+	public float timeScale;
+	public float sunrise;
+	public float sunset;
+	public float time;
 
 
 	public static void ResetToPool(AppTime instance) { }
@@ -1462,16 +1462,16 @@ public class AppTime : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6533
 
 }
 
-public class AppMap : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6534
+public class AppMap : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6536
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint width; 
-	public uint height; 
-	public byte[] jpgImage; 
-	public int oceanMargin; 
-	public List<AppMap.Monument> monuments; 
-	public string background; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint width;
+	public uint height;
+	public byte[] jpgImage;
+	public int oceanMargin;
+	public List<AppMap.Monument> monuments;
+	public string background;
 
 
 	public static void ResetToPool(AppMap instance) { }
@@ -1528,13 +1528,13 @@ public class AppMap : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6534
 
 }
 
-public class AppMap.Monument : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6535
+public class AppMap.Monument : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6537
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string token; 
-	public float x; 
-	public float y; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string token;
+	public float x;
+	public float y;
 
 
 	public static void ResetToPool(AppMap.Monument instance) { }
@@ -1591,12 +1591,12 @@ public class AppMap.Monument : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class AppEntityInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6536
+public class AppEntityInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6538
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public AppEntityType type; 
-	public AppEntityPayload payload; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public AppEntityType type;
+	public AppEntityPayload payload;
 
 
 	public static void ResetToPool(AppEntityInfo instance) { }
@@ -1653,15 +1653,15 @@ public class AppEntityInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class AppEntityPayload : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6537
+public class AppEntityPayload : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6539
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public bool value; 
-	public List<AppEntityPayload.Item> items; 
-	public int capacity; 
-	public bool hasProtection; 
-	public uint protectionExpiry; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public bool value;
+	public List<AppEntityPayload.Item> items;
+	public int capacity;
+	public bool hasProtection;
+	public uint protectionExpiry;
 
 
 	public static void ResetToPool(AppEntityPayload instance) { }
@@ -1718,13 +1718,13 @@ public class AppEntityPayload : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class AppEntityPayload.Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6538
+public class AppEntityPayload.Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6540
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int itemId; 
-	public int quantity; 
-	public bool itemIsBlueprint; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int itemId;
+	public int quantity;
+	public bool itemIsBlueprint;
 
 
 	public static void ResetToPool(AppEntityPayload.Item instance) { }
@@ -1781,14 +1781,14 @@ public class AppEntityPayload.Item : IDisposable, Pool.IPooled, IProto // TypeDe
 
 }
 
-public class AppTeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6539
+public class AppTeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6541
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong leaderSteamId; 
-	public List<AppTeamInfo.Member> members; 
-	public List<AppTeamInfo.Note> mapNotes; 
-	public List<AppTeamInfo.Note> leaderMapNotes; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong leaderSteamId;
+	public List<AppTeamInfo.Member> members;
+	public List<AppTeamInfo.Note> mapNotes;
+	public List<AppTeamInfo.Note> leaderMapNotes;
 
 
 	public static void ResetToPool(AppTeamInfo instance) { }
@@ -1845,18 +1845,18 @@ public class AppTeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class AppTeamInfo.Member : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6540
+public class AppTeamInfo.Member : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6542
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong steamId; 
-	public string name; 
-	public float x; 
-	public float y; 
-	public bool isOnline; 
-	public uint spawnTime; 
-	public bool isAlive; 
-	public uint deathTime; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong steamId;
+	public string name;
+	public float x;
+	public float y;
+	public bool isOnline;
+	public uint spawnTime;
+	public bool isAlive;
+	public uint deathTime;
 
 
 	public static void ResetToPool(AppTeamInfo.Member instance) { }
@@ -1913,13 +1913,13 @@ public class AppTeamInfo.Member : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class AppTeamInfo.Note : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6541
+public class AppTeamInfo.Note : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6543
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int type; 
-	public float x; 
-	public float y; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int type;
+	public float x;
+	public float y;
 
 
 	public static void ResetToPool(AppTeamInfo.Note instance) { }
@@ -1976,15 +1976,15 @@ public class AppTeamInfo.Note : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class AppChatMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6542
+public class AppChatMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6544
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong steamId; 
-	public string name; 
-	public string message; 
-	public string color; 
-	public uint time; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong steamId;
+	public string name;
+	public string message;
+	public string color;
+	public uint time;
 
 
 	public static void ResetToPool(AppChatMessage instance) { }
@@ -2041,11 +2041,11 @@ public class AppChatMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppTeamChat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6543
+public class AppTeamChat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6545
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<AppChatMessage> messages; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<AppChatMessage> messages;
 
 
 	public static void ResetToPool(AppTeamChat instance) { }
@@ -2102,23 +2102,23 @@ public class AppTeamChat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class AppMarker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6544
+public class AppMarker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6546
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint id; 
-	public AppMarkerType type; 
-	public float x; 
-	public float y; 
-	public ulong steamId; 
-	public float rotation; 
-	public float radius; 
-	public Vector4 color1; 
-	public Vector4 color2; 
-	public float alpha; 
-	public string name; 
-	public bool outOfStock; 
-	public List<AppMarker.SellOrder> sellOrders; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint id;
+	public AppMarkerType type;
+	public float x;
+	public float y;
+	public ulong steamId;
+	public float rotation;
+	public float radius;
+	public Vector4 color1;
+	public Vector4 color2;
+	public float alpha;
+	public string name;
+	public bool outOfStock;
+	public List<AppMarker.SellOrder> sellOrders;
 
 
 	public static void ResetToPool(AppMarker instance) { }
@@ -2175,19 +2175,19 @@ public class AppMarker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6544
 
 }
 
-public class AppMarker.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6545
+public class AppMarker.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6547
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int itemId; 
-	public int quantity; 
-	public int currencyId; 
-	public int costPerItem; 
-	public int amountInStock; 
-	public bool itemIsBlueprint; 
-	public bool currencyIsBlueprint; 
-	public float itemCondition; 
-	public float itemConditionMax; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int itemId;
+	public int quantity;
+	public int currencyId;
+	public int costPerItem;
+	public int amountInStock;
+	public bool itemIsBlueprint;
+	public bool currencyIsBlueprint;
+	public float itemCondition;
+	public float itemConditionMax;
 
 
 	public static void ResetToPool(AppMarker.SellOrder instance) { }
@@ -2244,11 +2244,11 @@ public class AppMarker.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class AppMapMarkers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6546
+public class AppMapMarkers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6548
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<AppMarker> markers; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<AppMarker> markers;
 
 
 	public static void ResetToPool(AppMapMarkers instance) { }
@@ -2305,12 +2305,12 @@ public class AppMapMarkers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class AppTeamChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6547
+public class AppTeamChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6549
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong playerId; 
-	public AppTeamInfo teamInfo; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong playerId;
+	public AppTeamInfo teamInfo;
 
 
 	public static void ResetToPool(AppTeamChanged instance) { }
@@ -2367,11 +2367,11 @@ public class AppTeamChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppTeamMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6548
+public class AppTeamMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6550
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public AppChatMessage message; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public AppChatMessage message;
 
 
 	public static void ResetToPool(AppTeamMessage instance) { }
@@ -2428,12 +2428,12 @@ public class AppTeamMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppEntityChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6549
+public class AppEntityChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6551
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint entityId; 
-	public AppEntityPayload payload; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint entityId;
+	public AppEntityPayload payload;
 
 
 	public static void ResetToPool(AppEntityChanged instance) { }
@@ -2490,18 +2490,18 @@ public class AppEntityChanged : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public enum AppEntityType // TypeDefIndex: 6567
+public enum AppEntityType // TypeDefIndex: 6569
 {
-	public int value__; 
+	public int value__;
 	public const AppEntityType Switch = 1;
 	public const AppEntityType Alarm = 2;
 	public const AppEntityType StorageMonitor = 3;
 
 }
 
-public enum AppMarkerType // TypeDefIndex: 6568
+public enum AppMarkerType // TypeDefIndex: 6570
 {
-	public int value__; 
+	public int value__;
 	public const AppMarkerType Undefined = 0;
 	public const AppMarkerType Player = 1;
 	public const AppMarkerType Explosion = 2;
@@ -2514,13 +2514,13 @@ public enum AppMarkerType // TypeDefIndex: 6568
 
 }
 
-public static class Application // TypeDefIndex: 6623
+public static class Application // TypeDefIndex: 6625
 {
-	public static bool isQuitting; 
-	public static bool isLoading; 
-	public static bool isReceiving; 
-	public static bool isLoadingSave; 
-	public static bool isLoadingPrefabs; 
+	public static bool isQuitting;
+	public static bool isLoading;
+	public static bool isReceiving;
+	public static bool isLoadingSave;
+	public static bool isLoadingPrefabs;
 
 	public static string installPath { get; }
 	public static string dataPath { get; }
@@ -2536,18 +2536,18 @@ public static class Application // TypeDefIndex: 6623
 
 }
 
-public enum AppCategory // TypeDefIndex: 7686
+public enum AppCategory // TypeDefIndex: 7688
 {
-	public int value__; 
+	public int value__;
 	public const AppCategory Invalid = 0;
 	public const AppCategory Utility = 1;
 	public const AppCategory Game = 2;
 
 }
 
-public static class Approved // TypeDefIndex: 7736
+public static class Approved // TypeDefIndex: 7738
 {
-	private static Dictionary<ulong, ApprovedSkinInfo> _all; 
+	private static Dictionary<ulong, ApprovedSkinInfo> _all;
 
 	public static IReadOnlyDictionary<ulong, ApprovedSkinInfo> All { get; }
 
@@ -3120,6 +3120,16 @@ public static class Approved // TypeDefIndex: 7736
 
 	private static void Add_2022() { }
 
+	private static void Add_November_24_2022() { }
+
+	private static void Add_november_18_CHARITABLERUST_FORSALE() { }
+
+	private static void Add_November_18_2022() { }
+
+	private static void Add_November_10_2022_CHARITABLERUST() { }
+
+	private static void Add_November_10_2022() { }
+
 	private static void Add_November_03_2022() { }
 
 	private static void Add_October_27_2022() { }
@@ -3236,30 +3246,30 @@ public static class Approved // TypeDefIndex: 7736
 
 }
 
-public class ApprovedSkinInfo // TypeDefIndex: 7752
+public class ApprovedSkinInfo // TypeDefIndex: 7754
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <InventoryId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Desc>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <WorkshopdId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Price <Price>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Tradable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private DropChance <DropChance>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Marketable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Skinnable <Skinnable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AllowInCrates>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsLimitedTimeOffer>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ulong <InventoryId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Desc>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <WorkshopdId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Price <Price>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Tradable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private DropChance <DropChance>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Marketable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Skinnable <Skinnable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AllowInCrates>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsLimitedTimeOffer>k__BackingField;
 
 	public ulong InventoryId { get; set; }
 	public string Desc { get; set; }
@@ -3274,70 +3284,70 @@ public class ApprovedSkinInfo // TypeDefIndex: 7752
 	public bool IsLimitedTimeOffer { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_InventoryId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_InventoryId(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Desc() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Desc(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Name(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_WorkshopdId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_WorkshopdId(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal Price get_Price() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Price(Price value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Tradable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Tradable(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public DropChance get_DropChance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_DropChance(DropChance value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Marketable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Marketable(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Skinnable get_Skinnable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Skinnable(Skinnable value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AllowInCrates() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_AllowInCrates(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsLimitedTimeOffer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsLimitedTimeOffer(bool value) { }
 
 	public void .ctor(ulong WorkshopdId, string Name, string Desc, string ItemName) { }
@@ -3358,9 +3368,9 @@ public class ApprovedSkinInfo // TypeDefIndex: 7752
 
 }
 
-private sealed class ApprovedSkinInfo.<>c__DisplayClass44_0 // TypeDefIndex: 7753
+private sealed class ApprovedSkinInfo.<>c__DisplayClass44_0 // TypeDefIndex: 7755
 {
-	public string ItemName; 
+	public string ItemName;
 
 
 	public void .ctor() { }
@@ -3369,9 +3379,9 @@ private sealed class ApprovedSkinInfo.<>c__DisplayClass44_0 // TypeDefIndex: 775
 
 }
 
-public enum ApplicationStatus // TypeDefIndex: 9862
+public enum ApplicationStatus // TypeDefIndex: 9864
 {
-	public int value__; 
+	public int value__;
 	public const ApplicationStatus BackgroundConstrained = 0;
 	public const ApplicationStatus BackgroundUnconstrained = 1;
 	public const ApplicationStatus BackgroundSuspended = 2;
@@ -3379,9 +3389,9 @@ public enum ApplicationStatus // TypeDefIndex: 9862
 
 }
 
-public abstract class AppIOEntity : IOEntity // TypeDefIndex: 10020
+public abstract class AppIOEntity : IOEntity // TypeDefIndex: 10022
 {
-	private Option __menuOption_Menu_Pair; 
+	private Option __menuOption_Menu_Pair;
 
 	public override bool HasMenuOptions { get; }
 
@@ -3392,10 +3402,10 @@ public abstract class AppIOEntity : IOEntity // TypeDefIndex: 10020
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Pair(BasePlayer player) { }
 
 	public bool Menu_ShowIf(BasePlayer player) { }
@@ -3404,7 +3414,7 @@ public abstract class AppIOEntity : IOEntity // TypeDefIndex: 10020
 
 }
 
-public class ApplyTerrainAnchors : MonoBehaviour // TypeDefIndex: 12123
+public class ApplyTerrainAnchors : MonoBehaviour // TypeDefIndex: 12130
 {
 
 	protected void Awake() { }
@@ -3413,7 +3423,7 @@ public class ApplyTerrainAnchors : MonoBehaviour // TypeDefIndex: 12123
 
 }
 
-public class ApplyTerrainModifiers : MonoBehaviour // TypeDefIndex: 12324
+public class ApplyTerrainModifiers : MonoBehaviour // TypeDefIndex: 12332
 {
 
 	protected void Awake() { }
@@ -3422,10 +3432,10 @@ public class ApplyTerrainModifiers : MonoBehaviour // TypeDefIndex: 12324
 
 }
 
-public class ApplyTweakUIChanges : MonoBehaviour // TypeDefIndex: 12911
+public class ApplyTweakUIChanges : MonoBehaviour // TypeDefIndex: 12925
 {
-	public Button ApplyButton; 
-	public TweakUIBase[] Options; 
+	public Button ApplyButton;
+	public TweakUIBase[] Options;
 
 
 	private void OnEnable() { }
@@ -3440,28 +3450,28 @@ public class ApplyTweakUIChanges : MonoBehaviour // TypeDefIndex: 12911
 
 }
 
-public class App : ConsoleSystem // TypeDefIndex: 13670
+public class App : ConsoleSystem // TypeDefIndex: 13686
 {
-	[ServerVar] 
-	public static string listenip; 
-	[ServerVar] 
-	public static int port; 
-	[ServerVar] 
-	public static string publicip; 
-	[ServerVar] 
-	public static bool update; 
-	[ServerVar] 
-	public static bool notifications; 
-	[ServerVar] 
-	public static int queuelimit; 
-	[ReplicatedVar] 
-	public static string serverid; 
-	[ServerVar] 
-	public static float alarmcooldown; 
-	[ServerVar] 
-	public static int maxconnections; 
-	[ServerVar] 
-	public static int maxconnectionsperip; 
+	[ServerVar]
+	public static string listenip;
+	[ServerVar]
+	public static int port;
+	[ServerVar]
+	public static string publicip;
+	[ServerVar]
+	public static bool update;
+	[ServerVar]
+	public static bool notifications;
+	[ServerVar]
+	public static int queuelimit;
+	[ReplicatedVar]
+	public static string serverid;
+	[ServerVar]
+	public static float alarmcooldown;
+	[ServerVar]
+	public static int maxconnections;
+	[ServerVar]
+	public static int maxconnectionsperip;
 
 
 	public void .ctor() { }

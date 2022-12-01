@@ -1,9 +1,9 @@
-public class WiggleRenderer : PostProcessEffectRenderer<Wiggle> // TypeDefIndex: 12022
+public class WiggleRenderer : PostProcessEffectRenderer<Wiggle> // TypeDefIndex: 12029
 {
-	private int timerProperty; 
-	private int scaleProperty; 
-	private Shader wiggleShader; 
-	private float timer; 
+	private int timerProperty;
+	private int scaleProperty;
+	private Shader wiggleShader;
+	private float timer;
 
 
 	public override void Init() { }

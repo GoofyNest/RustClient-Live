@@ -1,16 +1,16 @@
 internal class ValidatingReaderNodeData // TypeDefIndex: 1870
 {
-	private string localName; 
-	private string namespaceUri; 
-	private string prefix; 
-	private string nameWPrefix; 
-	private string rawValue; 
-	private string originalStringValue; 
-	private int depth; 
-	private AttributePSVIInfo attributePSVIInfo; 
-	private XmlNodeType nodeType; 
-	private int lineNo; 
-	private int linePos; 
+	private string localName;
+	private string namespaceUri;
+	private string prefix;
+	private string nameWPrefix;
+	private string rawValue;
+	private string originalStringValue;
+	private int depth;
+	private AttributePSVIInfo attributePSVIInfo;
+	private XmlNodeType nodeType;
+	private int lineNo;
+	private int linePos;
 
 	public string LocalName { get; set; }
 	public string Namespace { get; set; }

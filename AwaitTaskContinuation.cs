@@ -1,8 +1,8 @@
 internal class AwaitTaskContinuation : TaskContinuation, IThreadPoolWorkItem // TypeDefIndex: 881
 {
-	private readonly ExecutionContext m_capturedContext; 
-	protected readonly Action m_action; 
-	private static ContextCallback s_invokeActionCallback; 
+	private readonly ExecutionContext m_capturedContext;
+	protected readonly Action m_action;
+	private static ContextCallback s_invokeActionCallback;
 
 	internal static bool IsValidLocationForInlining { get; }
 
@@ -39,8 +39,8 @@ internal class AwaitTaskContinuation : TaskContinuation, IThreadPoolWorkItem // 
 
 private sealed class AwaitTaskContinuation.<>c // TypeDefIndex: 882
 {
-	public static readonly AwaitTaskContinuation.<>c <>9; 
-	public static WaitCallback <>9__17_0; 
+	public static readonly AwaitTaskContinuation.<>c <>9;
+	public static WaitCallback <>9__17_0;
 
 
 	private static void .cctor() { }

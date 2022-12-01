@@ -1,6 +1,6 @@
-public enum AntiCheatCommonClientActionReason // TypeDefIndex: 9750
+public enum AntiCheatCommonClientActionReason // TypeDefIndex: 9752
 {
-	public int value__; 
+	public int value__;
 	public const AntiCheatCommonClientActionReason Invalid = 0;
 	public const AntiCheatCommonClientActionReason InternalError = 1;
 	public const AntiCheatCommonClientActionReason InvalidMessage = 2;

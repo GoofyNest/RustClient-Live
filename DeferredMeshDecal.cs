@@ -1,9 +1,9 @@
-public class DeferredMeshDecal : MonoBehaviour, IClientComponent // TypeDefIndex: 12416
+public class DeferredMeshDecal : MonoBehaviour, IClientComponent // TypeDefIndex: 12424
 {
-	private bool isVisible; 
-	private Renderer renderer; 
-	private List<DeferredMeshDecal.MaterialLink> materialLinks; 
-	private List<DeferredMeshDecal.InstanceData> instanceData; 
+	private bool isVisible;
+	private Renderer renderer;
+	private List<DeferredMeshDecal.MaterialLink> materialLinks;
+	private List<DeferredMeshDecal.InstanceData> instanceData;
 
 
 	private void OnEnable() { }
@@ -28,12 +28,12 @@ public class DeferredMeshDecal : MonoBehaviour, IClientComponent // TypeDefIndex
 
 }
 
-public class DeferredMeshDecal.MaterialReplacement // TypeDefIndex: 12417
+public class DeferredMeshDecal.MaterialReplacement // TypeDefIndex: 12425
 {
-	public Material reference; 
-	public Material material; 
-	private int refCount; 
-	private static Dictionary<Material, DeferredMeshDecal.MaterialReplacement> pool; 
+	public Material reference;
+	public Material material;
+	private int refCount;
+	private static Dictionary<Material, DeferredMeshDecal.MaterialReplacement> pool;
 
 
 	private void .ctor(Material reference) { }
@@ -46,23 +46,23 @@ public class DeferredMeshDecal.MaterialReplacement // TypeDefIndex: 12417
 
 }
 
-public struct DeferredMeshDecal.MaterialLink // TypeDefIndex: 12418
+public struct DeferredMeshDecal.MaterialLink // TypeDefIndex: 12426
 {
-	public DeferredMeshDecal.MaterialReplacement replacement; 
-	public int submeshIndex; 
+	public DeferredMeshDecal.MaterialReplacement replacement;
+	public int submeshIndex;
 
 
 	public void .ctor(DeferredMeshDecal.MaterialReplacement replacement, int submeshIndex) { }
 
 }
 
-public class DeferredMeshDecal.InstanceData // TypeDefIndex: 12419
+public class DeferredMeshDecal.InstanceData // TypeDefIndex: 12427
 {
-	private Transform transform; 
-	private Material material; 
-	private Mesh mesh; 
-	private int submeshIndex; 
-	private int hash; 
+	private Transform transform;
+	private Material material;
+	private Mesh mesh;
+	private int submeshIndex;
+	private int hash;
 
 	public Material Material { get; }
 	public Mesh Mesh { get; }

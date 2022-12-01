@@ -1,14 +1,14 @@
-public class SearchLight : IOEntity // TypeDefIndex: 10161
+public class SearchLight : IOEntity // TypeDefIndex: 10163
 {
-	private Option __menuOption_StopUseLight; 
-	private Option __menuOption_UseLight; 
-	public GameObject pitchObject; 
-	public GameObject yawObject; 
-	public GameObject eyePoint; 
-	public SoundPlayer turnLoop; 
-	public bool needsBuildingPrivilegeToUse; 
-	private Vector3 aimDir; 
-	private bool wasMoving; 
+	private Option __menuOption_StopUseLight;
+	private Option __menuOption_UseLight;
+	public GameObject pitchObject;
+	public GameObject yawObject;
+	public GameObject eyePoint;
+	public SoundPlayer turnLoop;
+	public bool needsBuildingPrivilegeToUse;
+	private Vector3 aimDir;
+	private bool wasMoving;
 
 	public override bool HasMenuOptions { get; }
 
@@ -29,18 +29,18 @@ public class SearchLight : IOEntity // TypeDefIndex: 10161
 
 	private void UpdateAimpoint() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void UseLight(BasePlayer player) { }
 
 	public bool Menu_UseLight_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void StopUseLight(BasePlayer player) { }
 
 	public bool Menu_StopUseLight_ShowIf(BasePlayer player) { }
@@ -49,7 +49,7 @@ public class SearchLight : IOEntity // TypeDefIndex: 10161
 
 }
 
-public static class SearchLight.SearchLightFlags // TypeDefIndex: 10162
+public static class SearchLight.SearchLightFlags // TypeDefIndex: 10164
 {
 	public const BaseEntity.Flags PlayerUsing = 2048;
 

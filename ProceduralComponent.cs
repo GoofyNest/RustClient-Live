@@ -1,8 +1,8 @@
-public abstract class ProceduralComponent : MonoBehaviour // TypeDefIndex: 12195
+public abstract class ProceduralComponent : MonoBehaviour // TypeDefIndex: 12202
 {
-	[InspectorFlagsAttribute] 
-	public ProceduralComponent.Realm Mode; 
-	public string Description; 
+	[InspectorFlagsAttribute]
+	public ProceduralComponent.Realm Mode;
+	public string Description;
 
 	public virtual bool RunOnCache { get; }
 
@@ -17,9 +17,9 @@ public abstract class ProceduralComponent : MonoBehaviour // TypeDefIndex: 12195
 
 }
 
-public enum ProceduralComponent.Realm // TypeDefIndex: 12196
+public enum ProceduralComponent.Realm // TypeDefIndex: 12203
 {
-	public int value__; 
+	public int value__;
 	public const ProceduralComponent.Realm Client = 1;
 	public const ProceduralComponent.Realm Server = 2;
 

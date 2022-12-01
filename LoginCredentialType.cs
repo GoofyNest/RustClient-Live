@@ -1,6 +1,6 @@
-public enum LoginCredentialType // TypeDefIndex: 9671
+public enum LoginCredentialType // TypeDefIndex: 9673
 {
-	public int value__; 
+	public int value__;
 	public const LoginCredentialType Password = 0;
 	public const LoginCredentialType ExchangeCode = 1;
 	public const LoginCredentialType PersistentAuth = 2;

@@ -1,8 +1,8 @@
-public class IceFence : GraveyardFence // TypeDefIndex: 10544
+public class IceFence : GraveyardFence // TypeDefIndex: 10548
 {
-	public GameObject[] styles; 
-	private bool init; 
-	public AdaptMeshToTerrain snowMesh; 
+	public GameObject[] styles;
+	private bool init;
+	public AdaptMeshToTerrain snowMesh;
 
 
 	public int GetStyleFromID() { }

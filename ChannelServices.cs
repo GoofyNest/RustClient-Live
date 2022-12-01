@@ -1,10 +1,10 @@
 public sealed class ChannelServices // TypeDefIndex: 1187
 {
-	private static ArrayList registeredChannels; 
-	private static ArrayList delayedClientChannels; 
-	private static CrossContextChannel _crossContextSink; 
-	internal static string CrossContextUrl; 
-	private static IList oldStartModeTypes; 
+	private static ArrayList registeredChannels;
+	private static ArrayList delayedClientChannels;
+	private static CrossContextChannel _crossContextSink;
+	internal static string CrossContextUrl;
+	private static IList oldStartModeTypes;
 
 	internal static CrossContextChannel CrossContextChannel { get; }
 
@@ -15,7 +15,7 @@ public sealed class ChannelServices // TypeDefIndex: 1187
 
 	internal static IMessageSink CreateClientChannelSinkChain(IChannelSender sender, string url, object[] channelDataArray, out string objectUri) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void RegisterChannel(IChannel chnl) { }
 
 	public static void RegisterChannel(IChannel chnl, bool ensureSecurity) { }

@@ -1,9 +1,9 @@
-public static class StreamEx // TypeDefIndex: 13143
+public static class StreamEx // TypeDefIndex: 13158
 {
-	private static readonly byte[] StaticBuffer; 
+	private static readonly byte[] StaticBuffer;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void WriteToOtherStream(Stream self, Stream target) { }
 
 	private static void .cctor() { }

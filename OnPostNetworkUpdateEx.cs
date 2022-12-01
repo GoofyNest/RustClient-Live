@@ -1,10 +1,10 @@
-public static class OnPostNetworkUpdateEx // TypeDefIndex: 11648
+public static class OnPostNetworkUpdateEx // TypeDefIndex: 11655
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BroadcastOnPostNetworkUpdate(GameObject go, BaseEntity entity) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SendOnPostNetworkUpdate(GameObject go, BaseEntity entity) { }
 
 }

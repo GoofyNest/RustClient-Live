@@ -1,69 +1,69 @@
 public class CommandBuffer : IDisposable // TypeDefIndex: 3844
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 	public string name { get; set; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_SetSinglePassStereo(SinglePassStereoMode mode) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr InitBuffer() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void ReleaseBuffer() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetComputeVectorParam(ComputeShader computeShader, int nameID, Vector4 val) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_SetComputeFloats(ComputeShader computeShader, int nameID, float[] values) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_SetComputeTextureParam(ComputeShader computeShader, int kernelIndex, int nameID, ref RenderTargetIdentifier rt, int mipLevel, RenderTextureSubElement element) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetComputeBufferParam(ComputeShader computeShader, int kernelIndex, int nameID, ComputeBuffer buffer) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_DispatchCompute(ComputeShader computeShader, int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Internal_GenerateMips(RenderTexture rt) { }
 
 	public string get_name() { }
 
 	public void set_name(string value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void Clear() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Internal_DrawRenderer(Renderer renderer, Material material, int submeshIndex, int shaderPass) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_DrawMeshInstanced(Mesh mesh, int submeshIndex, Material material, int shaderPass, Matrix4x4[] matrices, int count, MaterialPropertyBlock properties) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, int shaderPass, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetViewport(Rect pixelRect) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void CopyTexture_Internal(ref RenderTargetIdentifier src, int srcElement, int srcMip, int srcX, int srcY, int srcWidth, int srcHeight, ref RenderTargetIdentifier dst, int dstElement, int dstMip, int dstX, int dstY, int mode) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Blit_Texture(Texture source, ref RenderTargetIdentifier dest, Material mat, int pass, Vector2 scale, Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Blit_Identifier(ref RenderTargetIdentifier source, ref RenderTargetIdentifier dest, Material mat, int pass, Vector2 scale, Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode, bool useDynamicScale) { }
 
 	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode) { }
@@ -90,70 +90,70 @@ public class CommandBuffer : IDisposable // TypeDefIndex: 3844
 
 	public void GetTemporaryRT(int nameID, int width, int height) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void GetTemporaryRTWithDescriptor(int nameID, RenderTextureDescriptor desc, FilterMode filter) { }
 
 	public void GetTemporaryRT(int nameID, RenderTextureDescriptor desc, FilterMode filter) { }
 
 	public void GetTemporaryRT(int nameID, RenderTextureDescriptor desc) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void ReleaseTemporaryRT(int nameID) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void ClearRenderTarget(bool clearDepth, bool clearColor, Color backgroundColor, float depth) { }
 
 	public void ClearRenderTarget(bool clearDepth, bool clearColor, Color backgroundColor) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalFloat(int nameID, float value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalInt(int nameID, int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalVector(int nameID, Vector4 value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalColor(int nameID, Color value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalMatrix(int nameID, Matrix4x4 value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void EnableShaderKeyword(string keyword) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void DisableShaderKeyword(string keyword) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetViewProjectionMatrices(Matrix4x4 view, Matrix4x4 proj) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private bool ValidateAgainstExecutionFlags(CommandBufferExecutionFlags requiredFlags, CommandBufferExecutionFlags invalidFlags) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalVectorArray(int nameID, Vector4[] values) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalMatrixArray(int nameID, Matrix4x4[] values) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetGlobalTexture_Impl(int nameID, ref RenderTargetIdentifier rt, RenderTextureSubElement element) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetGlobalBuffer(int nameID, ComputeBuffer value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetShadowSamplingMode_Impl(ref RenderTargetIdentifier shadowmap, ShadowSamplingMode mode) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void BeginSample(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void EndSample(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void IssuePluginEventAndDataInternal(IntPtr callback, int eventID, IntPtr data) { }
 
 	public void SetRenderTarget(RenderTargetIdentifier rt) { }

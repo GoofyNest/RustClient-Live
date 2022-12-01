@@ -1,6 +1,6 @@
 internal sealed class EmptyWebProxy : IWebProxy // TypeDefIndex: 2932
 {
-	private ICredentials m_credentials; 
+	private ICredentials m_credentials;
 
 	public ICredentials Credentials { get; }
 

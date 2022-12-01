@@ -1,17 +1,17 @@
 internal static class ADP // TypeDefIndex: 4368
 {
-	private static readonly Type s_stackOverflowType; 
-	private static readonly Type s_outOfMemoryType; 
-	private static readonly Type s_threadAbortType; 
-	private static readonly Type s_nullReferenceType; 
-	private static readonly Type s_accessViolationType; 
-	private static readonly Type s_securityType; 
-	internal static readonly bool IsWindowsNT; 
-	internal static readonly bool IsPlatformNT5; 
-	internal static readonly string StrEmpty; 
-	internal static readonly string[] AzureSqlServerEndpoints; 
-	internal static readonly IntPtr PtrZero; 
-	internal static readonly int PtrSize; 
+	private static readonly Type s_stackOverflowType;
+	private static readonly Type s_outOfMemoryType;
+	private static readonly Type s_threadAbortType;
+	private static readonly Type s_nullReferenceType;
+	private static readonly Type s_accessViolationType;
+	private static readonly Type s_securityType;
+	internal static readonly bool IsWindowsNT;
+	internal static readonly bool IsPlatformNT5;
+	internal static readonly string StrEmpty;
+	internal static readonly string[] AzureSqlServerEndpoints;
+	internal static readonly IntPtr PtrZero;
+	internal static readonly int PtrSize;
 
 
 	private static void TraceException(string trace, Exception e) { }

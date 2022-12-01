@@ -1,12 +1,12 @@
-public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11975
+public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11982
 {
-	private uint previousIntervalUs; 
-	private int previousMode; 
-	private bool hasSimulationStarted; 
-	private bool prevUseMarkersToOptimize; 
-	private CommandBufferManager commandBufferManager; 
-	private CommandBufferDesc renderSubmitStart; 
-	private CommandBufferDesc renderSubmitEnd; 
+	private uint previousIntervalUs;
+	private int previousMode;
+	private bool hasSimulationStarted;
+	private bool prevUseMarkersToOptimize;
+	private CommandBufferManager commandBufferManager;
+	private CommandBufferDesc renderSubmitStart;
+	private CommandBufferDesc renderSubmitEnd;
 
 	public int intervalUs { get; }
 
@@ -23,7 +23,7 @@ public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11975
 
 	private void LateUpdate() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator SleepCoroutine() { }
 
 	private void OnRenderSubmitStart(CommandBuffer cb) { }
@@ -64,18 +64,18 @@ public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11975
 
 }
 
-public enum NVidiaReflex.Mode // TypeDefIndex: 11976
+public enum NVidiaReflex.Mode // TypeDefIndex: 11983
 {
-	public int value__; 
+	public int value__;
 	public const NVidiaReflex.Mode OFF = 0;
 	public const NVidiaReflex.Mode ON = 1;
 	public const NVidiaReflex.Mode ON_PLUS_BOOST = 2;
 
 }
 
-public enum NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE // TypeDefIndex: 11977
+public enum NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE // TypeDefIndex: 11984
 {
-	public int value__; 
+	public int value__;
 	public const NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE SIMULATION_START = 0;
 	public const NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE SIMULATION_END = 1;
 	public const NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE RENDERSUBMIT_START = 2;
@@ -88,9 +88,9 @@ public enum NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE // TypeDefIndex: 11977
 
 }
 
-public enum NVidiaReflex.NvReflex_Status // TypeDefIndex: 11978
+public enum NVidiaReflex.NvReflex_Status // TypeDefIndex: 11985
 {
-	public int value__; 
+	public int value__;
 	public const NVidiaReflex.NvReflex_Status NvReflex_OK = 0;
 	public const NVidiaReflex.NvReflex_Status NvReflex_ERROR = -1;
 	public const NVidiaReflex.NvReflex_Status NvReflex_LIBRARY_NOT_FOUND = -2;
@@ -235,62 +235,62 @@ public enum NVidiaReflex.NvReflex_Status // TypeDefIndex: 11978
 
 }
 
-public struct NVidiaReflex.NvReflex_FrameReport // TypeDefIndex: 11979
+public struct NVidiaReflex.NvReflex_FrameReport // TypeDefIndex: 11986
 {
-	public ulong frameID; 
-	public ulong inputSampleTime; 
-	public ulong simStartTime; 
-	public ulong simEndTime; 
-	public ulong renderSubmitStartTime; 
-	public ulong renderSubmitEndTime; 
-	public ulong presentStartTime; 
-	public ulong presentEndTime; 
-	public ulong driverStartTime; 
-	public ulong driverEndTime; 
-	public ulong osRenderQueueStartTime; 
-	public ulong osRenderQueueEndTime; 
-	public ulong gpuRenderStartTime; 
-	public ulong gpuRenderEndTime; 
+	public ulong frameID;
+	public ulong inputSampleTime;
+	public ulong simStartTime;
+	public ulong simEndTime;
+	public ulong renderSubmitStartTime;
+	public ulong renderSubmitEndTime;
+	public ulong presentStartTime;
+	public ulong presentEndTime;
+	public ulong driverStartTime;
+	public ulong driverEndTime;
+	public ulong osRenderQueueStartTime;
+	public ulong osRenderQueueEndTime;
+	public ulong gpuRenderStartTime;
+	public ulong gpuRenderEndTime;
 
 }
 
-public struct NVidiaReflex.NvReflex_LATENCY_RESULT_PARAMS // TypeDefIndex: 11980
+public struct NVidiaReflex.NvReflex_LATENCY_RESULT_PARAMS // TypeDefIndex: 11987
 {
-	public NVidiaReflex.NvReflex_FrameReport[] frameReport; 
+	public NVidiaReflex.NvReflex_FrameReport[] frameReport;
 
 }
 
-public struct NVidiaReflex.NvReflex_GET_SLEEP_STATUS_PARAMS // TypeDefIndex: 11981
+public struct NVidiaReflex.NvReflex_GET_SLEEP_STATUS_PARAMS // TypeDefIndex: 11988
 {
-	public byte bLowLatencyMode; 
+	public byte bLowLatencyMode;
 
 }
 
-private sealed class NVidiaReflex.<SleepCoroutine>d__20 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11982
+private sealed class NVidiaReflex.<SleepCoroutine>d__20 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11989
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public NVidiaReflex <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public NVidiaReflex <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

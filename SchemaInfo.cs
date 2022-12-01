@@ -1,19 +1,19 @@
 internal class SchemaInfo : IDtdInfo // TypeDefIndex: 2280
 {
-	private Dictionary<XmlQualifiedName, SchemaElementDecl> elementDecls; 
-	private Dictionary<XmlQualifiedName, SchemaElementDecl> undeclaredElementDecls; 
-	private Dictionary<XmlQualifiedName, SchemaEntity> generalEntities; 
-	private Dictionary<XmlQualifiedName, SchemaEntity> parameterEntities; 
-	private XmlQualifiedName docTypeName; 
-	private string internalDtdSubset; 
-	private bool hasNonCDataAttributes; 
-	private bool hasDefaultAttributes; 
-	private Dictionary<string, bool> targetNamespaces; 
-	private Dictionary<XmlQualifiedName, SchemaAttDef> attributeDecls; 
-	private int errorCount; 
-	private SchemaType schemaType; 
-	private Dictionary<XmlQualifiedName, SchemaElementDecl> elementDeclsByType; 
-	private Dictionary<string, SchemaNotation> notations; 
+	private Dictionary<XmlQualifiedName, SchemaElementDecl> elementDecls;
+	private Dictionary<XmlQualifiedName, SchemaElementDecl> undeclaredElementDecls;
+	private Dictionary<XmlQualifiedName, SchemaEntity> generalEntities;
+	private Dictionary<XmlQualifiedName, SchemaEntity> parameterEntities;
+	private XmlQualifiedName docTypeName;
+	private string internalDtdSubset;
+	private bool hasNonCDataAttributes;
+	private bool hasDefaultAttributes;
+	private Dictionary<string, bool> targetNamespaces;
+	private Dictionary<XmlQualifiedName, SchemaAttDef> attributeDecls;
+	private int errorCount;
+	private SchemaType schemaType;
+	private Dictionary<XmlQualifiedName, SchemaElementDecl> elementDeclsByType;
+	private Dictionary<string, SchemaNotation> notations;
 
 	public XmlQualifiedName DocTypeName { get; set; }
 	internal string InternalDtdSubset { set; }
@@ -101,9 +101,9 @@ internal class SchemaInfo : IDtdInfo // TypeDefIndex: 2280
 
 internal struct SchemaInfo // TypeDefIndex: 4384
 {
-	public string name; 
-	public string typeName; 
-	public Type type; 
+	public string name;
+	public string typeName;
+	public Type type;
 
 }
 

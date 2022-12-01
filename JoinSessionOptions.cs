@@ -1,13 +1,13 @@
-public struct JoinSessionOptions // TypeDefIndex: 8500
+public struct JoinSessionOptions // TypeDefIndex: 8502
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private SessionDetails <SessionHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PresenceEnabled>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private SessionDetails <SessionHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PresenceEnabled>k__BackingField;
 
 	public Utf8String SessionName { get; set; }
 	public SessionDetails SessionHandle { get; set; }
@@ -15,28 +15,28 @@ public struct JoinSessionOptions // TypeDefIndex: 8500
 	public bool PresenceEnabled { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public SessionDetails get_SessionHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionHandle(SessionDetails value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PresenceEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PresenceEnabled(bool value) { }
 
 }

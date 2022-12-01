@@ -1,6 +1,6 @@
-public abstract class DecorComponent : PrefabAttribute // TypeDefIndex: 12071
+public abstract class DecorComponent : PrefabAttribute // TypeDefIndex: 12078
 {
-	internal bool isRoot; 
+	internal bool isRoot;
 
 
 	public abstract void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale);

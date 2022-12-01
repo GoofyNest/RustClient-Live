@@ -1,68 +1,72 @@
-public class BaseNavigator : BaseMonoBehaviour // TypeDefIndex: 10672
+public class BaseNavigator : BaseMonoBehaviour // TypeDefIndex: 10676
 {
-	[ServerVar] 
-	public static float maxStepUpDistance; 
-	[ServerVar] 
-	public static int baseNavMovementFrameInterval; 
-	[ServerVar] 
-	public static float stuckTriggerDuration; 
-	[ServerVar] 
-	public static float navTypeHeightOffset; 
-	[ServerVar] 
-	public static float navTypeDistance; 
-	[HeaderAttribute] 
-	public bool CanNavigateMounted; 
-	public bool CanUseNavMesh; 
-	public bool CanUseAStar; 
-	public bool CanUseBaseNav; 
-	public bool CanUseCustomNav; 
-	public float StoppingDistance; 
-	public string DefaultArea; 
-	[HeaderAttribute] 
-	public bool TriggerStuckEvent; 
-	public float StuckDistance; 
-	[HeaderAttribute] 
-	public float Speed; 
-	public float Acceleration; 
-	public float TurnSpeed; 
-	[HeaderAttribute] 
-	public float SlowestSpeedFraction; 
-	public float SlowSpeedFraction; 
-	public float NormalSpeedFraction; 
-	public float FastSpeedFraction; 
-	public float LowHealthSpeedReductionTriggerFraction; 
-	public float LowHealthMaxSpeedFraction; 
-	public float SwimmingSpeedMultiplier; 
-	[HeaderAttribute] 
-	public float BestMovementPointMaxDistance; 
-	public float BestCoverPointMaxDistance; 
-	public float BestRoamPointMaxDistance; 
-	public float MaxRoamDistanceFromHome; 
-	[HeaderAttribute] 
-	public float MaxWaterDepth; 
-	public bool SpeedBasedAvoidancePriority; 
-	private NavMeshPath path; 
-	private NavMeshQueryFilter navMeshQueryFilter; 
-	[CompilerGeneratedAttribute] 
-	private AIMovePointPath <Path>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePath <AStarGraph>k__BackingField; 
-	private int defaultAreaMask; 
-	[InspectorFlagsAttribute] 
-	public TerrainBiome.Enum biomePreference; 
-	public bool UseBiomePreference; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum topologyPreference; 
-	[CompilerGeneratedAttribute] 
-	private NavMeshAgent <Agent>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BaseCombatEntity <BaseEntity>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <Destination>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BaseNavigator.NavigationType <CurrentNavigationType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BaseNavigator.NavigationType <LastUsedNavigationType>k__BackingField; 
+	[ServerVar]
+	public static float maxStepUpDistance;
+	[ServerVar]
+	public static int baseNavMovementFrameInterval;
+	[ServerVar]
+	public static float stuckTriggerDuration;
+	[ServerVar]
+	public static float navTypeHeightOffset;
+	[ServerVar]
+	public static float navTypeDistance;
+	[HeaderAttribute]
+	public bool CanNavigateMounted;
+	public bool CanUseNavMesh;
+	public bool CanUseAStar;
+	public bool CanUseBaseNav;
+	public bool CanUseCustomNav;
+	public float StoppingDistance;
+	public string DefaultArea;
+	[HeaderAttribute]
+	public bool TriggerStuckEvent;
+	public float StuckDistance;
+	[HeaderAttribute]
+	public float Speed;
+	public float Acceleration;
+	public float TurnSpeed;
+	[HeaderAttribute]
+	public float SlowestSpeedFraction;
+	public float SlowSpeedFraction;
+	public float NormalSpeedFraction;
+	public float FastSpeedFraction;
+	public float LowHealthSpeedReductionTriggerFraction;
+	public float LowHealthMaxSpeedFraction;
+	public float SwimmingSpeedMultiplier;
+	[HeaderAttribute]
+	public float BestMovementPointMaxDistance;
+	public float BestCoverPointMaxDistance;
+	public float BestRoamPointMaxDistance;
+	public float MaxRoamDistanceFromHome;
+	[HeaderAttribute]
+	public float MaxWaterDepth;
+	public bool SpeedBasedAvoidancePriority;
+	private NavMeshPath path;
+	private NavMeshQueryFilter navMeshQueryFilter;
+	[CompilerGeneratedAttribute]
+	private AIMovePointPath <Path>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BasePath <AStarGraph>k__BackingField;
+	private int defaultAreaMask;
+	[InspectorFlagsAttribute]
+	public TerrainBiome.Enum biomePreference;
+	public bool UseBiomePreference;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum topologyPreference;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum topologyPrevent;
+	[InspectorFlagsAttribute]
+	public TerrainBiome.Enum biomeRequirement;
+	[CompilerGeneratedAttribute]
+	private NavMeshAgent <Agent>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BaseCombatEntity <BaseEntity>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Vector3 <Destination>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BaseNavigator.NavigationType <CurrentNavigationType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BaseNavigator.NavigationType <LastUsedNavigationType>k__BackingField;
 
 	public AIMovePointPath Path { get; set; }
 	public BasePath AStarGraph { get; set; }
@@ -75,52 +79,56 @@ public class BaseNavigator : BaseMonoBehaviour // TypeDefIndex: 10672
 	public BaseNavigator.NavigationType LastUsedNavigationType { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AIMovePointPath get_Path() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Path(AIMovePointPath value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BasePath get_AStarGraph() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AStarGraph(BasePath value) { }
 
 	public int TopologyPreference() { }
 
-	[CompilerGeneratedAttribute] 
+	public int TopologyPrevent() { }
+
+	public int BiomeRequirement() { }
+
+	[CompilerGeneratedAttribute]
 	public NavMeshAgent get_Agent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Agent(NavMeshAgent value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseCombatEntity get_BaseEntity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_BaseEntity(BaseCombatEntity value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_Destination() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Destination(Vector3 value) { }
 
 	public virtual bool get_IsOnNavMeshLink() { }
 
 	public bool get_Moving() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseNavigator.NavigationType get_CurrentNavigationType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentNavigationType(BaseNavigator.NavigationType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseNavigator.NavigationType get_LastUsedNavigationType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LastUsedNavigationType(BaseNavigator.NavigationType value) { }
 
 	public void .ctor() { }
@@ -129,9 +137,9 @@ public class BaseNavigator : BaseMonoBehaviour // TypeDefIndex: 10672
 
 }
 
-public enum BaseNavigator.NavigationType // TypeDefIndex: 10673
+public enum BaseNavigator.NavigationType // TypeDefIndex: 10677
 {
-	public int value__; 
+	public int value__;
 	public const BaseNavigator.NavigationType None = 0;
 	public const BaseNavigator.NavigationType NavMesh = 1;
 	public const BaseNavigator.NavigationType AStar = 2;
@@ -140,9 +148,9 @@ public enum BaseNavigator.NavigationType // TypeDefIndex: 10673
 
 }
 
-public enum BaseNavigator.NavigationSpeed // TypeDefIndex: 10674
+public enum BaseNavigator.NavigationSpeed // TypeDefIndex: 10678
 {
-	public int value__; 
+	public int value__;
 	public const BaseNavigator.NavigationSpeed Slowest = 0;
 	public const BaseNavigator.NavigationSpeed Slow = 1;
 	public const BaseNavigator.NavigationSpeed Normal = 2;

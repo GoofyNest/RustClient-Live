@@ -1,15 +1,15 @@
-public struct SetToggleFriendsKeyOptions // TypeDefIndex: 8372
+public struct SetToggleFriendsKeyOptions // TypeDefIndex: 8374
 {
-	[CompilerGeneratedAttribute] 
-	private KeyCombination <KeyCombination>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private KeyCombination <KeyCombination>k__BackingField;
 
 	public KeyCombination KeyCombination { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public KeyCombination get_KeyCombination() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_KeyCombination(KeyCombination value) { }
 
 }

@@ -1,7 +1,7 @@
-internal struct GetPlayerAchievementCountOptionsInternal : ISettable<GetPlayerAchievementCountOptions>, IDisposable // TypeDefIndex: 9916
+internal struct GetPlayerAchievementCountOptionsInternal : ISettable<GetPlayerAchievementCountOptions>, IDisposable // TypeDefIndex: 9918
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
 
 	public ProductUserId UserId { set; }
 

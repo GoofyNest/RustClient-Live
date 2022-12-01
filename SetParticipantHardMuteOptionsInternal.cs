@@ -1,9 +1,9 @@
-internal struct SetParticipantHardMuteOptionsInternal : ISettable<SetParticipantHardMuteOptions>, IDisposable // TypeDefIndex: 8756
+internal struct SetParticipantHardMuteOptionsInternal : ISettable<SetParticipantHardMuteOptions>, IDisposable // TypeDefIndex: 8758
 {
-	private int m_ApiVersion; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_TargetUserId; 
-	private int m_Mute; 
+	private int m_ApiVersion;
+	private IntPtr m_RoomName;
+	private IntPtr m_TargetUserId;
+	private int m_Mute;
 
 	public Utf8String RoomName { set; }
 	public ProductUserId TargetUserId { set; }

@@ -1,6 +1,6 @@
 public class TrackedReference // TypeDefIndex: 3533
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 
 	protected void .ctor() { }

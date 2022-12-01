@@ -1,32 +1,32 @@
-public class ScrapTransportHelicopter : MiniCopter // TypeDefIndex: 10009
+public class ScrapTransportHelicopter : MiniCopter // TypeDefIndex: 10011
 {
-	public Transform searchlightEye; 
-	public BoxCollider parentTriggerCollider; 
-	[HeaderAttribute] 
-	public ParticleSystemContainer tailDamageLight; 
-	public ParticleSystemContainer tailDamageHeavy; 
-	public ParticleSystemContainer mainEngineDamageLight; 
-	public ParticleSystemContainer mainEngineDamageHeavy; 
-	public ParticleSystemContainer cockpitSparks; 
-	public Transform tailDamageLightEffects; 
-	public Transform mainEngineDamageLightEffects; 
-	public SoundDefinition damagedFireSoundDef; 
-	public SoundDefinition damagedFireTailSoundDef; 
-	public SoundDefinition damagedSparksSoundDef; 
-	private Sound damagedFireSound; 
-	private Sound damagedFireTailSound; 
-	private Sound damagedSparksSound; 
-	public float pilotRotorScale; 
-	public float compassOffset; 
-	[ServerVar] 
-	public static float population; 
-	protected static int speedAnimationIndex; 
-	protected static int altitudeAnimationIndex; 
-	protected static int headingAnimationIndex; 
-	protected int speedShakeIndex; 
-	protected int altShakeIndex; 
-	private float lastSpeed; 
-	private float lastHealthFraction; 
+	public Transform searchlightEye;
+	public BoxCollider parentTriggerCollider;
+	[HeaderAttribute]
+	public ParticleSystemContainer tailDamageLight;
+	public ParticleSystemContainer tailDamageHeavy;
+	public ParticleSystemContainer mainEngineDamageLight;
+	public ParticleSystemContainer mainEngineDamageHeavy;
+	public ParticleSystemContainer cockpitSparks;
+	public Transform tailDamageLightEffects;
+	public Transform mainEngineDamageLightEffects;
+	public SoundDefinition damagedFireSoundDef;
+	public SoundDefinition damagedFireTailSoundDef;
+	public SoundDefinition damagedSparksSoundDef;
+	private Sound damagedFireSound;
+	private Sound damagedFireTailSound;
+	private Sound damagedSparksSound;
+	public float pilotRotorScale;
+	public float compassOffset;
+	[ServerVar]
+	public static float population;
+	protected static int speedAnimationIndex;
+	protected static int altitudeAnimationIndex;
+	protected static int headingAnimationIndex;
+	protected int speedShakeIndex;
+	protected int altShakeIndex;
+	private float lastSpeed;
+	private float lastHealthFraction;
 
 
 	protected override float GetMainRotorScale() { }

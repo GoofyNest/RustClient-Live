@@ -1,7 +1,7 @@
 internal sealed class SharedStatics // TypeDefIndex: 298
 {
-	private static readonly SharedStatics _sharedStatics; 
-	private Tokenizer.StringMaker _maker; 
+	private static readonly SharedStatics _sharedStatics;
+	private Tokenizer.StringMaker _maker;
 
 
 	private void .ctor() { }

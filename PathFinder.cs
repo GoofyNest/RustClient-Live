@@ -1,15 +1,15 @@
-public class PathFinder // TypeDefIndex: 13183
+public class PathFinder // TypeDefIndex: 13198
 {
-	private int[,] costmap; 
-	private int[,] visited; 
-	private PathFinder.Point[] neighbors; 
-	private bool directional; 
-	public PathFinder.Point PushPoint; 
-	public int PushRadius; 
-	public int PushDistance; 
-	public int PushMultiplier; 
-	private static PathFinder.Point[] mooreNeighbors; 
-	private static PathFinder.Point[] neumannNeighbors; 
+	private int[,] costmap;
+	private int[,] visited;
+	private PathFinder.Point[] neighbors;
+	private bool directional;
+	public PathFinder.Point PushPoint;
+	public int PushRadius;
+	public int PushDistance;
+	public int PushMultiplier;
+	private static PathFinder.Point[] mooreNeighbors;
+	private static PathFinder.Point[] neumannNeighbors;
 
 
 	public void .ctor(int[,] costmap, bool diagonals = True, bool directional = True) { }
@@ -52,10 +52,10 @@ public class PathFinder // TypeDefIndex: 13183
 
 }
 
-public struct PathFinder.Point : IEquatable<PathFinder.Point> // TypeDefIndex: 13184
+public struct PathFinder.Point : IEquatable<PathFinder.Point> // TypeDefIndex: 13199
 {
-	public int x; 
-	public int y; 
+	public int x;
+	public int y;
 
 
 	public void .ctor(int x, int y) { }
@@ -80,31 +80,31 @@ public struct PathFinder.Point : IEquatable<PathFinder.Point> // TypeDefIndex: 1
 
 }
 
-public class PathFinder.Node : IMinHeapNode<PathFinder.Node>, ILinkedListNode<PathFinder.Node> // TypeDefIndex: 13185
+public class PathFinder.Node : IMinHeapNode<PathFinder.Node>, ILinkedListNode<PathFinder.Node> // TypeDefIndex: 13200
 {
-	public PathFinder.Point point; 
-	public int cost; 
-	public int heuristic; 
-	[CompilerGeneratedAttribute] 
-	private PathFinder.Node <next>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PathFinder.Node <child>k__BackingField; 
+	public PathFinder.Point point;
+	public int cost;
+	public int heuristic;
+	[CompilerGeneratedAttribute]
+	private PathFinder.Node <next>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PathFinder.Node <child>k__BackingField;
 
 	public PathFinder.Node next { get; set; }
 	public PathFinder.Node child { get; set; }
 	public int order { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PathFinder.Node get_next() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_next(PathFinder.Node value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PathFinder.Node get_child() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_child(PathFinder.Node value) { }
 
 	public int get_order() { }

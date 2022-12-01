@@ -1,16 +1,16 @@
-public class WheelSwitch : IOEntity // TypeDefIndex: 10205
+public class WheelSwitch : IOEntity // TypeDefIndex: 10207
 {
-	private Option __menuOption_Menu_Turn; 
-	public Transform wheelObj; 
-	public float rotateSpeed; 
-	public BaseEntity.Flags BeingRotated; 
-	public BaseEntity.Flags RotatingLeft; 
-	public BaseEntity.Flags RotatingRight; 
-	public float rotateProgress; 
-	public Animator animator; 
-	public float kineticEnergyPerSec; 
-	private BasePlayer rotatorPlayer; 
-	private float animProgress; 
+	private Option __menuOption_Menu_Turn;
+	public Transform wheelObj;
+	public float rotateSpeed;
+	public BaseEntity.Flags BeingRotated;
+	public BaseEntity.Flags RotatingLeft;
+	public BaseEntity.Flags RotatingRight;
+	public float rotateProgress;
+	public Animator animator;
+	public float kineticEnergyPerSec;
+	private BasePlayer rotatorPlayer;
+	private float animProgress;
 
 	public override bool HasMenuOptions { get; }
 
@@ -27,10 +27,10 @@ public class WheelSwitch : IOEntity // TypeDefIndex: 10205
 
 	public void Update() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Turn(BasePlayer player) { }
 
 	public bool Menu_Turn_ShowIf(BasePlayer player) { }

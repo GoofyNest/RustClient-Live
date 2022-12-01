@@ -19,12 +19,12 @@ public struct TimeSpan : IComparable, IComparable<TimeSpan>, IEquatable<TimeSpan
 	internal const long MaxMilliSeconds = 922337203685477;
 	internal const long MinMilliSeconds = -922337203685477;
 	internal const long TicksPerTenthSecond = 1000000;
-	public static readonly TimeSpan Zero; 
-	public static readonly TimeSpan MaxValue; 
-	public static readonly TimeSpan MinValue; 
-	internal long _ticks; 
-	private static bool _legacyConfigChecked; 
-	private static bool _legacyMode; 
+	public static readonly TimeSpan Zero;
+	public static readonly TimeSpan MaxValue;
+	public static readonly TimeSpan MinValue;
+	internal long _ticks;
+	private static bool _legacyConfigChecked;
+	private static bool _legacyMode;
 
 	public long Ticks { get; }
 	public int Days { get; }

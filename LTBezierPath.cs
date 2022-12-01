@@ -1,13 +1,13 @@
-public class LTBezierPath // TypeDefIndex: 5590
+public class LTBezierPath // TypeDefIndex: 5592
 {
-	public Vector3[] pts; 
-	public float length; 
-	public bool orientToPath; 
-	public bool orientToPath2d; 
-	private LTBezier[] beziers; 
-	private float[] lengthRatio; 
-	private int currentBezier; 
-	private int previousBezier; 
+	public Vector3[] pts;
+	public float length;
+	public bool orientToPath;
+	public bool orientToPath2d;
+	private LTBezier[] beziers;
+	private float[] lengthRatio;
+	private int currentBezier;
+	private int previousBezier;
 
 	public float distance { get; }
 

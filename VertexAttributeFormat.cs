@@ -1,6 +1,6 @@
 public enum VertexAttributeFormat // TypeDefIndex: 3809
 {
-	public int value__; 
+	public int value__;
 	public const VertexAttributeFormat Float32 = 0;
 	public const VertexAttributeFormat Float16 = 1;
 	public const VertexAttributeFormat UNorm8 = 2;

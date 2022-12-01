@@ -1,13 +1,13 @@
-public sealed class ChromaticAberration : PostProcessEffectSettings // TypeDefIndex: 13559
+public sealed class ChromaticAberration : PostProcessEffectSettings // TypeDefIndex: 13575
 {
-	[TooltipAttribute] 
-	public TextureParameter spectralLut; 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public FloatParameter intensity; 
-	[FormerlySerializedAsAttribute] 
-	[TooltipAttribute] 
-	public BoolParameter fastMode; 
+	[TooltipAttribute]
+	public TextureParameter spectralLut;
+	[RangeAttribute]
+	[TooltipAttribute]
+	public FloatParameter intensity;
+	[FormerlySerializedAsAttribute]
+	[TooltipAttribute]
+	public BoolParameter fastMode;
 
 
 	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }

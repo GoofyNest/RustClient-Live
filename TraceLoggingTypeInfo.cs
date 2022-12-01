@@ -1,11 +1,11 @@
 internal abstract class TraceLoggingTypeInfo // TypeDefIndex: 1589
 {
-	private readonly string name; 
-	private readonly EventKeywords keywords; 
-	private readonly EventLevel level; 
-	private readonly EventOpcode opcode; 
-	private readonly EventTags tags; 
-	private readonly Type dataType; 
+	private readonly string name;
+	private readonly EventKeywords keywords;
+	private readonly EventLevel level;
+	private readonly EventOpcode opcode;
+	private readonly EventTags tags;
+	private readonly Type dataType;
 
 	public string Name { get; }
 	public EventLevel Level { get; }

@@ -1,20 +1,20 @@
-public class BasePet : NPCPlayer // TypeDefIndex: 10053
+public class BasePet : NPCPlayer // TypeDefIndex: 10055
 {
-	private Option __menuOption_MenuDesignAI; 
-	[ServerVar] 
-	public static bool queuedMovementsAllowed; 
-	[ServerVar] 
-	public static bool onlyQueueBaseNavMovements; 
-	[ServerVar] 
-	[HelpAttribute] 
-	public static float movementupdatebudgetms; 
-	public float BaseAttackRate; 
-	public float BaseAttackDamge; 
-	public DamageType AttackDamageType; 
-	[CompilerGeneratedAttribute] 
-	private PetBrain <Brain>k__BackingField; 
-	public GameObjectRef mapMarkerPrefab; 
-	private BaseEntity _mapMarkerInstance; 
+	private Option __menuOption_MenuDesignAI;
+	[ServerVar]
+	public static bool queuedMovementsAllowed;
+	[ServerVar]
+	public static bool onlyQueueBaseNavMovements;
+	[ServerVar]
+	[HelpAttribute]
+	public static float movementupdatebudgetms;
+	public float BaseAttackRate;
+	public float BaseAttackDamge;
+	public DamageType AttackDamageType;
+	[CompilerGeneratedAttribute]
+	private PetBrain <Brain>k__BackingField;
+	public GameObjectRef mapMarkerPrefab;
+	private BaseEntity _mapMarkerInstance;
 
 	public override bool HasMenuOptions { get; }
 	public PetBrain Brain { get; set; }
@@ -24,10 +24,10 @@ public class BasePet : NPCPlayer // TypeDefIndex: 10053
 
 	public override bool get_HasMenuOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PetBrain get_Brain() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_Brain(PetBrain value) { }
 
 	public override float StartHealth() { }
@@ -36,9 +36,9 @@ public class BasePet : NPCPlayer // TypeDefIndex: 10053
 
 	public override float MaxHealth() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDesignAI(BasePlayer ply) { }
 
 	public bool CanDesignAI(BasePlayer player) { }

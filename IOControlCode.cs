@@ -1,6 +1,6 @@
 public enum IOControlCode // TypeDefIndex: 3040
 {
-	public long value__; 
+	public long value__;
 	public const IOControlCode AsyncIO = 2147772029;
 	public const IOControlCode NonBlockingIO = 2147772030;
 	public const IOControlCode DataToRead = 1074030207;

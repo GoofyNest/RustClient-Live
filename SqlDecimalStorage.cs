@@ -1,6 +1,6 @@
 internal sealed class SqlDecimalStorage : DataStorage // TypeDefIndex: 4422
 {
-	private SqlDecimal[] _values; 
+	private SqlDecimal[] _values;
 
 
 	public void .ctor(DataColumn column) { }

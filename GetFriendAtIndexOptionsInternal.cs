@@ -1,8 +1,8 @@
-internal struct GetFriendAtIndexOptionsInternal : ISettable<GetFriendAtIndexOptions>, IDisposable // TypeDefIndex: 9388
+internal struct GetFriendAtIndexOptionsInternal : ISettable<GetFriendAtIndexOptions>, IDisposable // TypeDefIndex: 9390
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private int m_Index; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private int m_Index;
 
 	public EpicAccountId LocalUserId { set; }
 	public int Index { set; }

@@ -1,35 +1,35 @@
-public class Lerp : ConsoleSystem // TypeDefIndex: 13730
+public class Lerp : ConsoleSystem // TypeDefIndex: 13746
 {
-	[ClientVar] 
-	public static bool enabled; 
-	private static float inertia_cur; 
+	[ClientVar]
+	public static bool enabled;
+	private static float inertia_cur;
 	private const float inertia_def = 0;
 	private const float inertia_min = 0;
 	private const float inertia_max = 1;
-	private static float smoothing_cur; 
+	private static float smoothing_cur;
 	private const float smoothing_def = 0,1;
 	private const float smoothing_min = 0;
 	private const float smoothing_max = 1;
-	private static float interpolation_cur; 
+	private static float interpolation_cur;
 	private const float interpolation_def = 0,1;
 	private const float interpolation_min = 0;
 	private const float interpolation_max = 1;
-	private static float extrapolation_cur; 
+	private static float extrapolation_cur;
 	private const float extrapolation_def = 1;
 	private const float extrapolation_min = 0;
 	private const float extrapolation_max = 2;
 
-	[ClientVar] 
+	[ClientVar]
 	public static bool debug { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float inertia { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float smoothing { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float interpolation { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float extrapolation { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static int timeoffsetinterval { get; set; }
 
 

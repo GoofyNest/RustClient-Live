@@ -6,35 +6,35 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 	private const int ScaleMask = 16711680;
 	private const int ScaleShift = 16;
 	private const int MaxInt32Scale = 9;
-	private static uint[] Powers10; 
-	[DecimalConstantAttribute] 
-	public static readonly Decimal Zero; 
-	[DecimalConstantAttribute] 
-	public static readonly Decimal One; 
-	[DecimalConstantAttribute] 
-	public static readonly Decimal MinusOne; 
-	[DecimalConstantAttribute] 
-	public static readonly Decimal MaxValue; 
-	[DecimalConstantAttribute] 
-	public static readonly Decimal MinValue; 
-	[DecimalConstantAttribute] 
-	private static readonly Decimal NearNegativeZero; 
-	[DecimalConstantAttribute] 
-	private static readonly Decimal NearPositiveZero; 
-	private int flags; 
-	private int hi; 
-	private int lo; 
-	private int mid; 
+	private static uint[] Powers10;
+	[DecimalConstantAttribute]
+	public static readonly Decimal Zero;
+	[DecimalConstantAttribute]
+	public static readonly Decimal One;
+	[DecimalConstantAttribute]
+	public static readonly Decimal MinusOne;
+	[DecimalConstantAttribute]
+	public static readonly Decimal MaxValue;
+	[DecimalConstantAttribute]
+	public static readonly Decimal MinValue;
+	[DecimalConstantAttribute]
+	private static readonly Decimal NearNegativeZero;
+	[DecimalConstantAttribute]
+	private static readonly Decimal NearPositiveZero;
+	private int flags;
+	private int hi;
+	private int lo;
+	private int mid;
 
 
 	public void .ctor(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(uint value) { }
 
 	public void .ctor(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(ulong value) { }
 
 	public void .ctor(float value) { }
@@ -47,7 +47,7 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	public void .ctor(int lo, int mid, int hi, bool isNegative, byte scale) { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
 	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
@@ -58,10 +58,10 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	private static void FCallAddSub(ref Decimal d1, ref Decimal d2, byte bSign) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Compare(Decimal d1, Decimal d2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private static int FCallCompare(ref Decimal d1, ref Decimal d2) { }
 
 	public int CompareTo(object value) { }
@@ -96,10 +96,10 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	internal static Decimal ToDecimal(byte[] buffer) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal static Decimal Max(Decimal d1, Decimal d2) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal static Decimal Min(Decimal d1, Decimal d2) { }
 
 	public static Decimal Multiply(Decimal d1, Decimal d2) { }
@@ -114,7 +114,7 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	public static byte ToByte(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(Decimal value) { }
 
 	public static short ToInt16(Decimal value) { }
@@ -127,13 +127,13 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	public static long ToInt64(Decimal d) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(Decimal d) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(Decimal d) { }
 
 	public static float ToSingle(Decimal d) { }
@@ -144,24 +144,24 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	public static Decimal op_Implicit(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal op_Implicit(sbyte value) { }
 
 	public static Decimal op_Implicit(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal op_Implicit(ushort value) { }
 
 	public static Decimal op_Implicit(char value) { }
 
 	public static Decimal op_Implicit(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal op_Implicit(uint value) { }
 
 	public static Decimal op_Implicit(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal op_Implicit(ulong value) { }
 
 	public static Decimal op_Explicit(float value) { }
@@ -172,7 +172,7 @@ public struct Decimal : IFormattable, IComparable, IConvertible, IDeserializatio
 
 	public static long op_Explicit(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong op_Explicit(Decimal value) { }
 
 	public static float op_Explicit(Decimal value) { }

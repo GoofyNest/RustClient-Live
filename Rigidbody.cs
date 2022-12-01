@@ -64,7 +64,7 @@ public class Rigidbody : Component // TypeDefIndex: 3925
 
 	public void AddForce(Vector3 force, ForceMode mode) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void AddForce(Vector3 force) { }
 
 	public void AddRelativeTorque(Vector3 torque, ForceMode mode) { }

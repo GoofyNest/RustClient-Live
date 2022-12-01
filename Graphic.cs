@@ -1,31 +1,31 @@
 public abstract class Graphic : UIBehaviour, ICanvasElement // TypeDefIndex: 4936
 {
-	protected static Material s_DefaultUI; 
-	protected static Texture2D s_WhiteTexture; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	protected Material m_Material; 
-	[SerializeField] 
-	private Color m_Color; 
-	protected bool m_SkipLayoutUpdate; 
-	protected bool m_SkipMaterialUpdate; 
-	[SerializeField] 
-	private bool m_RaycastTarget; 
-	private RectTransform m_RectTransform; 
-	private CanvasRenderer m_CanvasRenderer; 
-	private Canvas m_Canvas; 
-	private bool m_VertsDirty; 
-	private bool m_MaterialDirty; 
-	protected UnityAction m_OnDirtyLayoutCallback; 
-	protected UnityAction m_OnDirtyVertsCallback; 
-	protected UnityAction m_OnDirtyMaterialCallback; 
-	protected static Mesh s_Mesh; 
-	private static readonly VertexHelper s_VertexHelper; 
-	protected Mesh m_CachedMesh; 
-	protected Vector2[] m_CachedUvs; 
-	private readonly TweenRunner<ColorTween> m_ColorTweenRunner; 
-	[CompilerGeneratedAttribute] 
-	private bool <useLegacyMeshGeneration>k__BackingField; 
+	protected static Material s_DefaultUI;
+	protected static Texture2D s_WhiteTexture;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	protected Material m_Material;
+	[SerializeField]
+	private Color m_Color;
+	protected bool m_SkipLayoutUpdate;
+	protected bool m_SkipMaterialUpdate;
+	[SerializeField]
+	private bool m_RaycastTarget;
+	private RectTransform m_RectTransform;
+	private CanvasRenderer m_CanvasRenderer;
+	private Canvas m_Canvas;
+	private bool m_VertsDirty;
+	private bool m_MaterialDirty;
+	protected UnityAction m_OnDirtyLayoutCallback;
+	protected UnityAction m_OnDirtyVertsCallback;
+	protected UnityAction m_OnDirtyMaterialCallback;
+	protected static Mesh s_Mesh;
+	private static readonly VertexHelper s_VertexHelper;
+	protected Mesh m_CachedMesh;
+	protected Vector2[] m_CachedUvs;
+	private readonly TweenRunner<ColorTween> m_ColorTweenRunner;
+	[CompilerGeneratedAttribute]
+	private bool <useLegacyMeshGeneration>k__BackingField;
 
 	public static Material defaultGraphicMaterial { get; }
 	public virtual Color color { get; set; }
@@ -52,10 +52,10 @@ public abstract class Graphic : UIBehaviour, ICanvasElement // TypeDefIndex: 493
 
 	public virtual void set_raycastTarget(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected bool get_useLegacyMeshGeneration() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void set_useLegacyMeshGeneration(bool value) { }
 
 	protected void .ctor() { }
@@ -120,11 +120,11 @@ public abstract class Graphic : UIBehaviour, ICanvasElement // TypeDefIndex: 493
 
 	protected static Mesh get_workerMesh() { }
 
-	[EditorBrowsableAttribute] 
-	[ObsoleteAttribute] 
+	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	protected virtual void OnFillVBO(List<UIVertex> vbo) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected virtual void OnPopulateMesh(Mesh m) { }
 
 	protected virtual void OnPopulateMesh(VertexHelper vh) { }

@@ -1,8 +1,8 @@
-public class TweakUIBase : MonoBehaviour // TypeDefIndex: 12919
+public class TweakUIBase : MonoBehaviour // TypeDefIndex: 12933
 {
-	public string convarName; 
-	public bool ApplyImmediatelyOnChange; 
-	internal ConsoleSystem.Command conVar; 
+	public string convarName;
+	public bool ApplyImmediatelyOnChange;
+	internal ConsoleSystem.Command conVar;
 
 
 	private void Awake() { }

@@ -1,8 +1,8 @@
-public class SleepingBagCamper : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6428
+public class SleepingBagCamper : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6430
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint seatID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint seatID;
 
 
 	public static void ResetToPool(SleepingBagCamper instance) { }
@@ -59,9 +59,9 @@ public class SleepingBagCamper : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class SleepingBagCamper : SleepingBag // TypeDefIndex: 10360
+public class SleepingBagCamper : SleepingBag // TypeDefIndex: 10364
 {
-	public EntityRef<BaseVehicleSeat> AssociatedSeat; 
+	public EntityRef<BaseVehicleSeat> AssociatedSeat;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

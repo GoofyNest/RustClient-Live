@@ -1,24 +1,24 @@
-public struct CopyPlayerSanctionByIndexOptions // TypeDefIndex: 8619
+public struct CopyPlayerSanctionByIndexOptions // TypeDefIndex: 8621
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <SanctionIndex>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <SanctionIndex>k__BackingField;
 
 	public ProductUserId TargetUserId { get; set; }
 	public uint SanctionIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_SanctionIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SanctionIndex(uint value) { }
 
 }

@@ -1,17 +1,17 @@
-public class TeamMemberElement : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerClickHandler // TypeDefIndex: 13012
+public class TeamMemberElement : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerClickHandler // TypeDefIndex: 13026
 {
-	public RustText nameText; 
-	public RawImage icon; 
-	public Color onlineColor; 
-	public Color offlineColor; 
-	public Color deadColor; 
-	public Color woundedColor; 
-	public GameObject hoverOverlay; 
-	public RawImage memberIcon; 
-	public RawImage leaderIcon; 
-	public RawImage deadIcon; 
-	public RawImage woundedIcon; 
-	public int teamIndex; 
+	public RustText nameText;
+	public RawImage icon;
+	public Color onlineColor;
+	public Color offlineColor;
+	public Color deadColor;
+	public Color woundedColor;
+	public GameObject hoverOverlay;
+	public RawImage memberIcon;
+	public RawImage leaderIcon;
+	public RawImage deadIcon;
+	public RawImage woundedIcon;
+	public int teamIndex;
 
 
 	public void UpdateState(string name, bool isOnline, bool isAlive = True, bool isLeader = False, bool isWounded = False) { }

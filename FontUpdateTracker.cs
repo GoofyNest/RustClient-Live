@@ -1,6 +1,6 @@
 public static class FontUpdateTracker // TypeDefIndex: 4935
 {
-	private static Dictionary<Font, HashSet<Text>> m_Tracked; 
+	private static Dictionary<Font, HashSet<Text>> m_Tracked;
 
 
 	public static void TrackText(Text t) { }

@@ -1,4 +1,4 @@
-public class ProceduralLiftCabin : MonoBehaviour // TypeDefIndex: 11217
+public class ProceduralLiftCabin : MonoBehaviour // TypeDefIndex: 11223
 {
 
 	public void .ctor() { }

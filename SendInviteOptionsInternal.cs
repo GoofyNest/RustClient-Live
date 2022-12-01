@@ -1,9 +1,9 @@
-internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDisposable // TypeDefIndex: 8545
+internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDisposable // TypeDefIndex: 8547
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionName; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionName;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
 
 	public Utf8String SessionName { set; }
 	public ProductUserId LocalUserId { set; }
@@ -24,12 +24,12 @@ internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDispo
 
 }
 
-internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDisposable // TypeDefIndex: 9267
+internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDisposable // TypeDefIndex: 9269
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyId; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyId;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
 
 	public Utf8String LobbyId { set; }
 	public ProductUserId LocalUserId { set; }
@@ -50,11 +50,11 @@ internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDispo
 
 }
 
-internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDisposable // TypeDefIndex: 9416
+internal struct SendInviteOptionsInternal : ISettable<SendInviteOptions>, IDisposable // TypeDefIndex: 9418
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
 
 	public EpicAccountId LocalUserId { set; }
 	public EpicAccountId TargetUserId { set; }

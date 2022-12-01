@@ -1,11 +1,11 @@
 public class ChallengeResponse : IDisposable // TypeDefIndex: 1725
 {
-	private static byte[] magic; 
-	private static byte[] nullEncMagic; 
-	private bool _disposed; 
-	private byte[] _challenge; 
-	private byte[] _lmpwd; 
-	private byte[] _ntpwd; 
+	private static byte[] magic;
+	private static byte[] nullEncMagic;
+	private bool _disposed;
+	private byte[] _challenge;
+	private byte[] _lmpwd;
+	private byte[] _ntpwd;
 
 	public string Password { set; }
 	public byte[] Challenge { set; }

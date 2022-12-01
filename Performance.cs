@@ -1,20 +1,20 @@
-public static class Performance // TypeDefIndex: 6215
+public static class Performance // TypeDefIndex: 6217
 {
-	public static Func<int> GetMemoryUsage; 
-	public static Func<int> GetGarbageCollections; 
-	private static Stopwatch Stopwatch; 
-	private static int frames; 
-	[CompilerGeneratedAttribute] 
-	private static int <FrameCountLastSecond>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static int <MemoryUsage>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static int <GarbageCollections>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static float <SecondsSinceLastConnection>k__BackingField; 
-	public static int TargetFrameRate; 
-	private static int[] frameBuckets; 
-	private static float[] frameBucketFractions; 
+	public static Func<int> GetMemoryUsage;
+	public static Func<int> GetGarbageCollections;
+	private static Stopwatch Stopwatch;
+	private static int frames;
+	[CompilerGeneratedAttribute]
+	private static int <FrameCountLastSecond>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static int <MemoryUsage>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static int <GarbageCollections>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static float <SecondsSinceLastConnection>k__BackingField;
+	public static int TargetFrameRate;
+	private static int[] frameBuckets;
+	private static float[] frameBucketFractions;
 
 	public static FrameRateCategory FrameRateCategory { get; }
 	public static int FrameCountLastSecond { get; set; }
@@ -27,30 +27,30 @@ public static class Performance // TypeDefIndex: 6215
 
 	public static FrameRateCategory get_FrameRateCategory() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static int get_FrameCountLastSecond() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_FrameCountLastSecond(int value) { }
 
 	public static double get_AvgFrameTimeLastSecond() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static int get_MemoryUsage() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_MemoryUsage(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static int get_GarbageCollections() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_GarbageCollections(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static float get_SecondsSinceLastConnection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_SecondsSinceLastConnection(float value) { }
 
 	public static int[] get_CategorizedFrameCount() { }
@@ -71,18 +71,18 @@ public static class Performance // TypeDefIndex: 6215
 
 }
 
-public class Performance : SingletonComponent<Performance> // TypeDefIndex: 11052
+public class Performance : SingletonComponent<Performance> // TypeDefIndex: 11058
 {
-	public static Performance.Tick current; 
-	public static Performance.Tick report; 
+	public static Performance.Tick current;
+	public static Performance.Tick report;
 	public const int FrameHistoryCount = 1000;
 	private const int HistoryLength = 60;
-	private static long cycles; 
-	private static int[] frameRateHistory; 
-	private static float[] frameTimeHistory; 
-	private static int[] frameTimes; 
-	private int frames; 
-	private float time; 
+	private static long cycles;
+	private static int[] frameRateHistory;
+	private static float[] frameTimeHistory;
+	private static int[] frameTimes;
+	private int frames;
+	private float time;
 
 
 	private void Update() { }
@@ -101,29 +101,29 @@ public class Performance : SingletonComponent<Performance> // TypeDefIndex: 1105
 
 }
 
-public struct Performance.Tick // TypeDefIndex: 11053
+public struct Performance.Tick // TypeDefIndex: 11059
 {
-	public int frameID; 
-	public int frameRate; 
-	public float frameTime; 
-	public float frameRateAverage; 
-	public float frameTimeAverage; 
-	public long memoryUsageSystem; 
-	public long memoryAllocations; 
-	public long memoryCollections; 
-	public long loadBalancerTasks; 
-	public long invokeHandlerTasks; 
-	public long workshopSkinsQueued; 
-	public int ping; 
-	public bool gcTriggered; 
-	public PerformanceSamplePoint performanceSample; 
+	public int frameID;
+	public int frameRate;
+	public float frameTime;
+	public float frameRateAverage;
+	public float frameTimeAverage;
+	public long memoryUsageSystem;
+	public long memoryAllocations;
+	public long memoryCollections;
+	public long loadBalancerTasks;
+	public long invokeHandlerTasks;
+	public long workshopSkinsQueued;
+	public int ping;
+	public bool gcTriggered;
+	public PerformanceSamplePoint performanceSample;
 
 }
 
-private struct Performance.LagSpike // TypeDefIndex: 11054
+private struct Performance.LagSpike // TypeDefIndex: 11060
 {
-	public int Index; 
-	public int Time; 
+	public int Index;
+	public int Time;
 
 }
 

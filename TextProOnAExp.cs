@@ -1,9 +1,9 @@
-public class TextProOnAExp : TextProOnACurve // TypeDefIndex: 7163
+public class TextProOnAExp : TextProOnACurve // TypeDefIndex: 7165
 {
-	[SerializeField] 
-	[TooltipAttribute] 
-	private float m_expBase; 
-	private float m_oldExpBase; 
+	[SerializeField]
+	[TooltipAttribute]
+	private float m_expBase;
+	private float m_oldExpBase;
 
 
 	protected override bool ParametersHaveChanged() { }

@@ -1,11 +1,11 @@
-public class ModuleMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6500
+public class ModuleMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6502
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint itemid; 
-	public int moduleid; 
-	public int type; 
-	public byte[] data; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint itemid;
+	public int moduleid;
+	public int type;
+	public byte[] data;
 
 
 	public static void ResetToPool(ModuleMessage instance) { }

@@ -1,26 +1,26 @@
 internal class CultureData // TypeDefIndex: 734
 {
-	private string sAM1159; 
-	private string sPM2359; 
-	private string sTimeSeparator; 
-	private string[] saLongTimes; 
-	private string[] saShortTimes; 
-	private int iFirstDayOfWeek; 
-	private int iFirstWeekOfYear; 
-	private int[] waCalendars; 
-	private CalendarData[] calendars; 
-	private string sISO639Language; 
-	private readonly string sRealName; 
-	private bool bUseOverrides; 
-	private int calendarId; 
-	private int numberIndex; 
-	private int iDefaultAnsiCodePage; 
-	private int iDefaultOemCodePage; 
-	private int iDefaultMacCodePage; 
-	private int iDefaultEbcdicCodePage; 
-	private bool isRightToLeft; 
-	private string sListSeparator; 
-	private static CultureData s_Invariant; 
+	private string sAM1159;
+	private string sPM2359;
+	private string sTimeSeparator;
+	private string[] saLongTimes;
+	private string[] saShortTimes;
+	private int iFirstDayOfWeek;
+	private int iFirstWeekOfYear;
+	private int[] waCalendars;
+	private CalendarData[] calendars;
+	private string sISO639Language;
+	private readonly string sRealName;
+	private bool bUseOverrides;
+	private int calendarId;
+	private int numberIndex;
+	private int iDefaultAnsiCodePage;
+	private int iDefaultOemCodePage;
+	private int iDefaultMacCodePage;
+	private int iDefaultEbcdicCodePage;
+	private bool isRightToLeft;
+	private string sListSeparator;
+	private static CultureData s_Invariant;
 
 	public static CultureData Invariant { get; }
 	internal string[] LongTimes { get; }

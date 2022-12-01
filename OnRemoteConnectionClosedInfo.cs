@@ -1,15 +1,15 @@
-public struct OnRemoteConnectionClosedInfo : ICallbackInfo // TypeDefIndex: 8988
+public struct OnRemoteConnectionClosedInfo : ICallbackInfo // TypeDefIndex: 8990
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <RemoteUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SocketId> <SocketId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ConnectionClosedReason <Reason>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <RemoteUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SocketId> <SocketId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ConnectionClosedReason <Reason>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -18,34 +18,34 @@ public struct OnRemoteConnectionClosedInfo : ICallbackInfo // TypeDefIndex: 8988
 	public ConnectionClosedReason Reason { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_RemoteUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RemoteUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SocketId> get_SocketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketId(Nullable<SocketId> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ConnectionClosedReason get_Reason() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Reason(ConnectionClosedReason value) { }
 
 	public Nullable<Result> GetResultCode() { }

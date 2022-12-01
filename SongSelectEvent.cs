@@ -1,7 +1,7 @@
-public sealed class SongSelectEvent : SystemCommonEvent // TypeDefIndex: 7578
+public sealed class SongSelectEvent : SystemCommonEvent // TypeDefIndex: 7580
 {
-	[CompilerGeneratedAttribute] 
-	private SevenBitNumber <Number>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private SevenBitNumber <Number>k__BackingField;
 
 	public SevenBitNumber Number { get; set; }
 
@@ -10,10 +10,10 @@ public sealed class SongSelectEvent : SystemCommonEvent // TypeDefIndex: 7578
 
 	public void .ctor(SevenBitNumber number) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public SevenBitNumber get_Number() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Number(SevenBitNumber value) { }
 
 	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }

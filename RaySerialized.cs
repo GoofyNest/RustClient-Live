@@ -1,4 +1,4 @@
-public class RaySerialized // TypeDefIndex: 6293
+public class RaySerialized // TypeDefIndex: 6295
 {
 
 	public static void ResetToPool(Ray instance) { }

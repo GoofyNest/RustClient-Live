@@ -1,58 +1,58 @@
-public struct ProtectMessageOptions // TypeDefIndex: 9737
+public struct ProtectMessageOptions // TypeDefIndex: 9739
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ClientHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <Data>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <OutBufferSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <ClientHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <Data>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <OutBufferSizeBytes>k__BackingField;
 
 	public IntPtr ClientHandle { get; set; }
 	public ArraySegment<byte> Data { get; set; }
 	public uint OutBufferSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ClientHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Data(ArraySegment<byte> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_OutBufferSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OutBufferSizeBytes(uint value) { }
 
 }
 
-public struct ProtectMessageOptions // TypeDefIndex: 9844
+public struct ProtectMessageOptions // TypeDefIndex: 9846
 {
-	[CompilerGeneratedAttribute] 
-	private ArraySegment<byte> <Data>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <OutBufferSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ArraySegment<byte> <Data>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <OutBufferSizeBytes>k__BackingField;
 
 	public ArraySegment<byte> Data { get; set; }
 	public uint OutBufferSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ArraySegment<byte> get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Data(ArraySegment<byte> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_OutBufferSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OutBufferSizeBytes(uint value) { }
 
 }

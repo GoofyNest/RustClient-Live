@@ -1,12 +1,12 @@
-public struct OBB // TypeDefIndex: 6600
+public struct OBB // TypeDefIndex: 6602
 {
-	public Quaternion rotation; 
-	public Vector3 position; 
-	public Vector3 extents; 
-	public Vector3 forward; 
-	public Vector3 right; 
-	public Vector3 up; 
-	public float reject; 
+	public Quaternion rotation;
+	public Vector3 position;
+	public Vector3 extents;
+	public Vector3 forward;
+	public Vector3 right;
+	public Vector3 up;
+	public float reject;
 
 
 	public void .ctor(Transform transform, Bounds bounds) { }

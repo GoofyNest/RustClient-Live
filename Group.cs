@@ -1,6 +1,6 @@
 internal class Group : AstNode // TypeDefIndex: 1794
 {
-	private AstNode groupNode; 
+	private AstNode groupNode;
 
 	public override AstNode.AstType Type { get; }
 	public override XPathResultType ReturnType { get; }
@@ -16,12 +16,12 @@ internal class Group : AstNode // TypeDefIndex: 1794
 
 public class Group : Capture // TypeDefIndex: 2616
 {
-	internal static Group _emptygroup; 
-	internal int[] _caps; 
-	internal int _capcount; 
-	internal CaptureCollection _capcoll; 
-	[OptionalFieldAttribute] 
-	internal string _name; 
+	internal static Group _emptygroup;
+	internal int[] _caps;
+	internal int _capcount;
+	internal CaptureCollection _capcoll;
+	[OptionalFieldAttribute]
+	internal string _name;
 
 	public bool Success { get; }
 	public CaptureCollection Captures { get; }
@@ -39,13 +39,13 @@ public class Group : Capture // TypeDefIndex: 2616
 
 }
 
-public class Group : IDisposable // TypeDefIndex: 6882
+public class Group : IDisposable // TypeDefIndex: 6884
 {
-	protected Manager manager; 
-	public uint ID; 
-	public Bounds bounds; 
-	public ListHashSet<Networkable> networkables; 
-	public List<Connection> subscribers; 
+	protected Manager manager;
+	public uint ID;
+	public Bounds bounds;
+	public ListHashSet<Networkable> networkables;
+	public List<Connection> subscribers;
 
 	public bool isGlobal { get; }
 

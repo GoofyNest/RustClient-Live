@@ -1,8 +1,8 @@
 internal class CharEntityEncoderFallbackBuffer : EncoderFallbackBuffer // TypeDefIndex: 1835
 {
-	private CharEntityEncoderFallback parent; 
-	private string charEntity; 
-	private int charEntityIndex; 
+	private CharEntityEncoderFallback parent;
+	private string charEntity;
+	private int charEntityIndex;
 
 	public override int Remaining { get; }
 

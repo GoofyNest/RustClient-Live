@@ -1,7 +1,7 @@
-public class ArmorProperties : ScriptableObject // TypeDefIndex: 11718
+public class ArmorProperties : ScriptableObject // TypeDefIndex: 11725
 {
-	[InspectorFlagsAttribute] 
-	public HitArea area; 
+	[InspectorFlagsAttribute]
+	public HitArea area;
 
 
 	public bool Contains(HitArea hitArea) { }

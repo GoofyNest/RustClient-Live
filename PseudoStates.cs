@@ -1,6 +1,6 @@
 internal enum PseudoStates // TypeDefIndex: 4615
 {
-	public int value__; 
+	public int value__;
 	public const PseudoStates Active = 1;
 	public const PseudoStates Hover = 2;
 	public const PseudoStates Checked = 8;

@@ -1,6 +1,6 @@
 public enum MethodImplAttributes // TypeDefIndex: 541
 {
-	public int value__; 
+	public int value__;
 	public const MethodImplAttributes CodeTypeMask = 3;
 	public const MethodImplAttributes IL = 0;
 	public const MethodImplAttributes Native = 1;
@@ -14,7 +14,7 @@ public enum MethodImplAttributes // TypeDefIndex: 541
 	public const MethodImplAttributes InternalCall = 4096;
 	public const MethodImplAttributes Synchronized = 32;
 	public const MethodImplAttributes NoInlining = 8;
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public const MethodImplAttributes AggressiveInlining = 256;
 	public const MethodImplAttributes NoOptimization = 64;
 	public const MethodImplAttributes MaxMethodImplVal = 65535;

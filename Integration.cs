@@ -1,11 +1,11 @@
-public class Integration : BaseIntegration // TypeDefIndex: 8247
+public class Integration : BaseIntegration // TypeDefIndex: 8249
 {
-	[CompilerGeneratedAttribute] 
-	private Action OnManifestUpdated; 
-	[CompilerGeneratedAttribute] 
-	private Action OnServerMetadataUpdated; 
-	private Auth _auth; 
-	private IAuthTicket _steamTicket; 
+	[CompilerGeneratedAttribute]
+	private Action OnManifestUpdated;
+	[CompilerGeneratedAttribute]
+	private Action OnServerMetadataUpdated;
+	private Auth _auth;
+	private IAuthTicket _steamTicket;
 
 	public override string PublicKey { get; }
 	public override string Bucket { get; }
@@ -20,18 +20,18 @@ public class Integration : BaseIntegration // TypeDefIndex: 8247
 
 	public override string get_Bucket() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnManifestUpdated(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnManifestUpdated(Action value) { }
 
 	public override void OnManifestFile(Manifest manifest) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnServerMetadataUpdated(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnServerMetadataUpdated(Action value) { }
 
 	public override void OnServerMetadata(Dictionary<IPEndPoint, int> metadata) { }

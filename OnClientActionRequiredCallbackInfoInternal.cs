@@ -1,10 +1,10 @@
-internal struct OnClientActionRequiredCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnClientActionRequiredCallbackInfo>, ISettable<OnClientActionRequiredCallbackInfo>, IDisposable // TypeDefIndex: 9790
+internal struct OnClientActionRequiredCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnClientActionRequiredCallbackInfo>, ISettable<OnClientActionRequiredCallbackInfo>, IDisposable // TypeDefIndex: 9792
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_ClientHandle; 
-	private AntiCheatCommonClientAction m_ClientAction; 
-	private AntiCheatCommonClientActionReason m_ActionReasonCode; 
-	private IntPtr m_ActionReasonDetailsString; 
+	private IntPtr m_ClientData;
+	private IntPtr m_ClientHandle;
+	private AntiCheatCommonClientAction m_ClientAction;
+	private AntiCheatCommonClientActionReason m_ActionReasonCode;
+	private IntPtr m_ActionReasonDetailsString;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

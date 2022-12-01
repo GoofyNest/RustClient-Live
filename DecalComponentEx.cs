@@ -1,10 +1,10 @@
-public static class DecalComponentEx // TypeDefIndex: 10901
+public static class DecalComponentEx // TypeDefIndex: 10907
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyDecalComponents(Transform transform, DecalComponent[] components, ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyDecalComponents(Transform transform, DecalComponent[] components) { }
 
 }

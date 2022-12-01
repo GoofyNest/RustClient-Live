@@ -1,8 +1,8 @@
-internal struct PermissionStatusInternal : IGettable<PermissionStatus>, ISettable<PermissionStatus>, IDisposable // TypeDefIndex: 9349
+internal struct PermissionStatusInternal : IGettable<PermissionStatus>, ISettable<PermissionStatus>, IDisposable // TypeDefIndex: 9351
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Name; 
-	private KWSPermissionStatus m_Status; 
+	private int m_ApiVersion;
+	private IntPtr m_Name;
+	private KWSPermissionStatus m_Status;
 
 	public Utf8String Name { get; set; }
 	public KWSPermissionStatus Status { get; set; }

@@ -1,9 +1,9 @@
 public sealed class DesignTimeVisibleAttribute : Attribute // TypeDefIndex: 2691
 {
-	private bool visible; 
-	public static readonly DesignTimeVisibleAttribute Yes; 
-	public static readonly DesignTimeVisibleAttribute No; 
-	public static readonly DesignTimeVisibleAttribute Default; 
+	private bool visible;
+	public static readonly DesignTimeVisibleAttribute Yes;
+	public static readonly DesignTimeVisibleAttribute No;
+	public static readonly DesignTimeVisibleAttribute Default;
 
 	public bool Visible { get; }
 

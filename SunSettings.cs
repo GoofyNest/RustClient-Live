@@ -1,6 +1,6 @@
-public class SunSettings : MonoBehaviour, IClientComponent // TypeDefIndex: 10970
+public class SunSettings : MonoBehaviour, IClientComponent // TypeDefIndex: 10976
 {
-	private Light light; 
+	private Light light;
 
 
 	private void OnEnable() { }

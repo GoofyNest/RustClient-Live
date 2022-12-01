@@ -1,12 +1,12 @@
-public class DofExposer : SingletonComponent<DofExposer> // TypeDefIndex: 11008
+public class DofExposer : SingletonComponent<DofExposer> // TypeDefIndex: 11014
 {
-	public PostProcessVolume PostVolume; 
-	public bool DofEnabled; 
-	public float FocalLength; 
-	public float Blur; 
-	public float FocalAperture; 
-	public bool debug; 
-	private PostProcessProfile profile; 
+	public PostProcessVolume PostVolume;
+	public bool DofEnabled;
+	public float FocalLength;
+	public float Blur;
+	public float FocalAperture;
+	public bool debug;
+	private PostProcessProfile profile;
 
 
 	private void Reset() { }

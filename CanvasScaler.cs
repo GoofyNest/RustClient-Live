@@ -1,40 +1,40 @@
 public class CanvasScaler : UIBehaviour // TypeDefIndex: 4965
 {
-	[TooltipAttribute] 
-	[SerializeField] 
-	private CanvasScaler.ScaleMode m_UiScaleMode; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected float m_ReferencePixelsPerUnit; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected float m_ScaleFactor; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected Vector2 m_ReferenceResolution; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected CanvasScaler.ScreenMatchMode m_ScreenMatchMode; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	[SerializeField] 
-	protected float m_MatchWidthOrHeight; 
+	[TooltipAttribute]
+	[SerializeField]
+	private CanvasScaler.ScaleMode m_UiScaleMode;
+	[TooltipAttribute]
+	[SerializeField]
+	protected float m_ReferencePixelsPerUnit;
+	[TooltipAttribute]
+	[SerializeField]
+	protected float m_ScaleFactor;
+	[TooltipAttribute]
+	[SerializeField]
+	protected Vector2 m_ReferenceResolution;
+	[TooltipAttribute]
+	[SerializeField]
+	protected CanvasScaler.ScreenMatchMode m_ScreenMatchMode;
+	[TooltipAttribute]
+	[RangeAttribute]
+	[SerializeField]
+	protected float m_MatchWidthOrHeight;
 	private const float kLogBase = 2;
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected CanvasScaler.Unit m_PhysicalUnit; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected float m_FallbackScreenDPI; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected float m_DefaultSpriteDPI; 
-	[TooltipAttribute] 
-	[SerializeField] 
-	protected float m_DynamicPixelsPerUnit; 
-	private Canvas m_Canvas; 
-	private float m_PrevScaleFactor; 
-	private float m_PrevReferencePixelsPerUnit; 
+	[TooltipAttribute]
+	[SerializeField]
+	protected CanvasScaler.Unit m_PhysicalUnit;
+	[TooltipAttribute]
+	[SerializeField]
+	protected float m_FallbackScreenDPI;
+	[TooltipAttribute]
+	[SerializeField]
+	protected float m_DefaultSpriteDPI;
+	[TooltipAttribute]
+	[SerializeField]
+	protected float m_DynamicPixelsPerUnit;
+	private Canvas m_Canvas;
+	private float m_PrevScaleFactor;
+	private float m_PrevReferencePixelsPerUnit;
 
 	public CanvasScaler.ScaleMode uiScaleMode { get; set; }
 	public float referencePixelsPerUnit { get; set; }
@@ -114,7 +114,7 @@ public class CanvasScaler : UIBehaviour // TypeDefIndex: 4965
 
 public enum CanvasScaler.ScaleMode // TypeDefIndex: 4966
 {
-	public int value__; 
+	public int value__;
 	public const CanvasScaler.ScaleMode ConstantPixelSize = 0;
 	public const CanvasScaler.ScaleMode ScaleWithScreenSize = 1;
 	public const CanvasScaler.ScaleMode ConstantPhysicalSize = 2;
@@ -123,7 +123,7 @@ public enum CanvasScaler.ScaleMode // TypeDefIndex: 4966
 
 public enum CanvasScaler.ScreenMatchMode // TypeDefIndex: 4967
 {
-	public int value__; 
+	public int value__;
 	public const CanvasScaler.ScreenMatchMode MatchWidthOrHeight = 0;
 	public const CanvasScaler.ScreenMatchMode Expand = 1;
 	public const CanvasScaler.ScreenMatchMode Shrink = 2;
@@ -132,7 +132,7 @@ public enum CanvasScaler.ScreenMatchMode // TypeDefIndex: 4967
 
 public enum CanvasScaler.Unit // TypeDefIndex: 4968
 {
-	public int value__; 
+	public int value__;
 	public const CanvasScaler.Unit Centimeters = 0;
 	public const CanvasScaler.Unit Millimeters = 1;
 	public const CanvasScaler.Unit Inches = 2;

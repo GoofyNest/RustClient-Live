@@ -1,13 +1,13 @@
 internal sealed class <>f__AnonymousType0<<message>j__TPar> // TypeDefIndex: 1
 {
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 internal sealed class <>f__AnonymousType0<<message>j__TPar>
-	[DebuggerBrowsableAttribute] 
-	private readonly <message>j__TPar <message>i__Field; 
+	[DebuggerBrowsableAttribute]
+	private readonly <message>j__TPar <message>i__Field;
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(<message>j__TPar message) { }
 	/* GenericInstMethod :
 	|
@@ -15,21 +15,21 @@ internal sealed class <>f__AnonymousType0<<message>j__TPar>
 	|-<>f__AnonymousType0<string>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public override bool Equals(object value) { }
 	/* GenericInstMethod :
 	|
 	|-<>f__AnonymousType0<object>.Equals
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public override int GetHashCode() { }
 	/* GenericInstMethod :
 	|
 	|-<>f__AnonymousType0<object>.GetHashCode
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public override string ToString() { }
 	/* GenericInstMethod :
 	|
@@ -40,7 +40,7 @@ internal sealed class <>f__AnonymousType0<<message>j__TPar>
 
 internal class __Filters // TypeDefIndex: 143
 {
-	internal static readonly __Filters Instance; 
+	internal static readonly __Filters Instance;
 
 
 	internal virtual bool FilterAttribute(MemberInfo m, object filterCriteria) { }
@@ -83,6 +83,7 @@ public sealed class Func<TResult> : MulticastDelegate // TypeDefIndex: 155
 	|-Func<ManualResetEvent>..ctor
 	|-Func<SemaphoreSlim>..ctor
 	|-Func<Task.ContingentProperties>..ctor
+	|-Func<Task>..ctor
 	|-Func<Task<Stream>>..ctor
 	|-Func<Task<WebResponse>>..ctor
 	|-Func<VoidTaskResult>..ctor
@@ -202,6 +203,7 @@ public sealed class Func<T, TResult> : MulticastDelegate // TypeDefIndex: 156
 	|-Func<Demos.DemoInfo, TimeSpan>..ctor
 	|-Func<DungeonBaseInfo, int>..ctor
 	|-Func<EZSoftBone.BoneChain, int>..ctor
+	|-Func<EntityLink, bool>..ctor
 	|-Func<AccountNotice, bool>..ctor
 	|-Func<AccountNotice, DateTime>..ctor
 	|-Func<BurstCloth.Chain, FourBitNumber>..ctor
@@ -239,6 +241,7 @@ public sealed class Func<T, TResult> : MulticastDelegate // TypeDefIndex: 156
 	|-Func<GameManifest.PrefabProperties, bool>..ctor
 	|-Func<GameManifest.PrefabProperties, string>..ctor
 	|-Func<GameStat.Stat, bool>..ctor
+	|-Func<GenerateDungeonBase.DungeonSegment, bool>..ctor
 	|-Func<GenerateDungeonBase.DungeonSegment, float>..ctor
 	|-Func<GenerateDungeonGrid.PathNode, PathFinder.Point>..ctor
 	|-Func<GenerateDungeonGrid.PathNode, bool>..ctor
@@ -2066,13 +2069,13 @@ public sealed class Converter<TInput, TOutput> : MulticastDelegate // TypeDefInd
 
 internal struct __DTString // TypeDefIndex: 231
 {
-	internal string Value; 
-	internal int Index; 
-	internal int len; 
-	internal char m_current; 
-	private CompareInfo m_info; 
-	private bool m_checkDigitToken; 
-	private static char[] WhiteSpaceChecks; 
+	internal string Value;
+	internal int Index;
+	internal int len;
+	internal char m_current;
+	private CompareInfo m_info;
+	private bool m_checkDigitToken;
+	private static char[] WhiteSpaceChecks;
 
 	internal CompareInfo CompareInfo { get; }
 
@@ -2171,9 +2174,9 @@ internal static class __Error // TypeDefIndex: 615
 
 internal abstract class Iterator<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 627
 {
-	private int threadId; 
-	internal int state; 
-	internal TSource current; 
+	private int threadId;
+	internal int state;
+	internal TSource current;
 
 	public TSource Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -2274,11 +2277,11 @@ internal static class _ThreadPoolWaitCallback // TypeDefIndex: 814
 
 public class Task<TResult> : Task // TypeDefIndex: 842
 {
-	internal TResult m_result; 
-	private static readonly TaskFactory<TResult> s_Factory; 
-	internal static readonly Func<Task<Task>, Task<TResult>> TaskWhenAnyCast; 
+	internal TResult m_result;
+	private static readonly TaskFactory<TResult> s_Factory;
+	internal static readonly Func<Task<Task>, Task<TResult>> TaskWhenAnyCast;
 
-	[DebuggerBrowsableAttribute] 
+	[DebuggerBrowsableAttribute]
 	public TResult Result { get; }
 	internal TResult ResultOnSuccess { get; }
 	public static TaskFactory<TResult> Factory { get; }
@@ -2791,6 +2794,7 @@ public class Task<TResult> : Task // TypeDefIndex: 842
 	|-Task<Nullable<int>>.get_Factory
 	|-Task<Nullable<Int32Enum>>.get_Factory
 	|-Task<object>.get_Factory
+	|-Task<Task>.get_Factory
 	|-Task<VoidTaskResult>.get_Factory
 	*/
 
@@ -2986,10 +2990,10 @@ public class TaskFactory<TResult> // TypeDefIndex: 845
 {
 
 public class TaskFactory<TResult>
-	private CancellationToken m_defaultCancellationToken; 
-	private TaskScheduler m_defaultScheduler; 
-	private TaskCreationOptions m_defaultCreationOptions; 
-	private TaskContinuationOptions m_defaultContinuationOptions; 
+	private CancellationToken m_defaultCancellationToken;
+	private TaskScheduler m_defaultScheduler;
+	private TaskCreationOptions m_defaultCreationOptions;
+	private TaskContinuationOptions m_defaultContinuationOptions;
 
 
 	public void .ctor() { }
@@ -3058,6 +3062,7 @@ public class TaskFactory<TResult>
 	|-TaskFactory<Nullable<Int32Enum>>.StartNew
 	|
 	|-TaskFactory<object>.StartNew
+	|-TaskFactory<Task>.StartNew
 	|
 	|-TaskFactory<VoidTaskResult>.StartNew
 	*/
@@ -3180,57 +3185,69 @@ public class TaskFactory<TResult>
 
 internal sealed class UnwrapPromise<TResult> : Task<TResult>, ITaskCompletionAction // TypeDefIndex: 868
 {
-	private byte _state; 
-	private readonly bool _lookForOce; 
+	private byte _state;
+	private readonly bool _lookForOce;
 
 
 	public void .ctor(Task outerTask, bool lookForOce) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>..ctor
+	|
+	|-UnwrapPromise<VoidTaskResult>..ctor
 	*/
 
 	public void Invoke(Task completingTask) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>.Invoke
+	|
+	|-UnwrapPromise<VoidTaskResult>.Invoke
 	*/
 
 	private void InvokeCore(Task completingTask) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>.InvokeCore
+	|-UnwrapPromise<VoidTaskResult>.InvokeCore
 	*/
 
 	private void InvokeCoreAsync(Task completingTask) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>.InvokeCoreAsync
+	|
+	|-UnwrapPromise<VoidTaskResult>.InvokeCoreAsync
 	*/
 
 	private void ProcessCompletedOuterTask(Task task) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>.ProcessCompletedOuterTask
+	|
+	|-UnwrapPromise<VoidTaskResult>.ProcessCompletedOuterTask
 	*/
 
 	private bool TrySetFromTask(Task task, bool lookForOce) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>.TrySetFromTask
+	|
+	|-UnwrapPromise<VoidTaskResult>.TrySetFromTask
 	*/
 
 	private void ProcessInnerTask(Task task) { }
 	/* GenericInstMethod :
 	|
 	|-UnwrapPromise<object>.ProcessInnerTask
+	|-UnwrapPromise<VoidTaskResult>.ProcessInnerTask
 	*/
 
 }
 
 public class TaskCompletionSource<TResult> // TypeDefIndex: 871
 {
-	private readonly Task<TResult> m_task; 
+	private readonly Task<TResult> m_task;
 
 	public Task<TResult> Task { get; }
 
@@ -3278,7 +3295,7 @@ public class TaskCompletionSource<TResult> // TypeDefIndex: 871
 
 internal sealed class ContinuationTaskFromResultTask<TAntecedentResult> : Task // TypeDefIndex: 873
 {
-	private Task<TAntecedentResult> m_antecedent; 
+	private Task<TAntecedentResult> m_antecedent;
 
 
 	public void .ctor(Task<TAntecedentResult> antecedent, Delegate action, object state, TaskCreationOptions creationOptions, InternalTaskOptions internalOptions, ref StackCrawlMark stackMark) { }
@@ -3336,7 +3353,7 @@ internal sealed class ContinuationTaskFromResultTask<TAntecedentResult> : Task /
 
 internal sealed class ContinuationResultTaskFromResultTask<TAntecedentResult, TResult> : Task<TResult> // TypeDefIndex: 874
 {
-	private Task<TAntecedentResult> m_antecedent; 
+	private Task<TAntecedentResult> m_antecedent;
 
 
 	public void .ctor(Task<TAntecedentResult> antecedent, Delegate function, object state, TaskCreationOptions creationOptions, InternalTaskOptions internalOptions, ref StackCrawlMark stackMark) { }
@@ -3355,27 +3372,27 @@ internal sealed class ContinuationResultTaskFromResultTask<TAntecedentResult, TR
 
 internal sealed class __BinaryWriter // TypeDefIndex: 1105
 {
-	internal Stream sout; 
-	internal FormatterTypeStyle formatterTypeStyle; 
-	internal Hashtable objectMapTable; 
-	internal ObjectWriter objectWriter; 
-	internal BinaryWriter dataWriter; 
-	internal int m_nestedObjectCount; 
-	private int nullCount; 
-	internal BinaryMethodCall binaryMethodCall; 
-	internal BinaryMethodReturn binaryMethodReturn; 
-	internal BinaryObject binaryObject; 
-	internal BinaryObjectWithMap binaryObjectWithMap; 
-	internal BinaryObjectWithMapTyped binaryObjectWithMapTyped; 
-	internal BinaryObjectString binaryObjectString; 
-	internal BinaryArray binaryArray; 
-	private byte[] byteBuffer; 
-	private int chunkSize; 
-	internal MemberPrimitiveUnTyped memberPrimitiveUnTyped; 
-	internal MemberPrimitiveTyped memberPrimitiveTyped; 
-	internal ObjectNull objectNull; 
-	internal MemberReference memberReference; 
-	internal BinaryAssembly binaryAssembly; 
+	internal Stream sout;
+	internal FormatterTypeStyle formatterTypeStyle;
+	internal Hashtable objectMapTable;
+	internal ObjectWriter objectWriter;
+	internal BinaryWriter dataWriter;
+	internal int m_nestedObjectCount;
+	private int nullCount;
+	internal BinaryMethodCall binaryMethodCall;
+	internal BinaryMethodReturn binaryMethodReturn;
+	internal BinaryObject binaryObject;
+	internal BinaryObjectWithMap binaryObjectWithMap;
+	internal BinaryObjectWithMapTyped binaryObjectWithMapTyped;
+	internal BinaryObjectString binaryObjectString;
+	internal BinaryArray binaryArray;
+	private byte[] byteBuffer;
+	private int chunkSize;
+	internal MemberPrimitiveUnTyped memberPrimitiveUnTyped;
+	internal MemberPrimitiveTyped memberPrimitiveTyped;
+	internal ObjectNull objectNull;
+	internal MemberReference memberReference;
+	internal BinaryAssembly binaryAssembly;
 
 
 	internal void .ctor(Stream sout, ObjectWriter objectWriter, FormatterTypeStyle formatterTypeStyle) { }
@@ -3476,31 +3493,31 @@ internal sealed class __BinaryWriter // TypeDefIndex: 1105
 
 internal sealed class __BinaryParser // TypeDefIndex: 1116
 {
-	internal ObjectReader objectReader; 
-	internal Stream input; 
-	internal long topId; 
-	internal long headerId; 
-	internal SizedArray objectMapIdTable; 
-	internal SizedArray assemIdToAssemblyTable; 
-	internal SerStack stack; 
-	internal BinaryTypeEnum expectedType; 
-	internal object expectedTypeInformation; 
-	internal ParseRecord PRS; 
-	private BinaryAssemblyInfo systemAssemblyInfo; 
-	private BinaryReader dataReader; 
-	private static Encoding encoding; 
-	private SerStack opPool; 
-	private BinaryObject binaryObject; 
-	private BinaryObjectWithMap bowm; 
-	private BinaryObjectWithMapTyped bowmt; 
-	internal BinaryObjectString objectString; 
-	internal BinaryCrossAppDomainString crossAppDomainString; 
-	internal MemberPrimitiveTyped memberPrimitiveTyped; 
-	private byte[] byteBuffer; 
-	internal MemberPrimitiveUnTyped memberPrimitiveUnTyped; 
-	internal MemberReference memberReference; 
-	internal ObjectNull objectNull; 
-	internal static MessageEnd messageEnd; 
+	internal ObjectReader objectReader;
+	internal Stream input;
+	internal long topId;
+	internal long headerId;
+	internal SizedArray objectMapIdTable;
+	internal SizedArray assemIdToAssemblyTable;
+	internal SerStack stack;
+	internal BinaryTypeEnum expectedType;
+	internal object expectedTypeInformation;
+	internal ParseRecord PRS;
+	private BinaryAssemblyInfo systemAssemblyInfo;
+	private BinaryReader dataReader;
+	private static Encoding encoding;
+	private SerStack opPool;
+	private BinaryObject binaryObject;
+	private BinaryObjectWithMap bowm;
+	private BinaryObjectWithMapTyped bowmt;
+	internal BinaryObjectString objectString;
+	internal BinaryCrossAppDomainString crossAppDomainString;
+	internal MemberPrimitiveTyped memberPrimitiveTyped;
+	private byte[] byteBuffer;
+	internal MemberPrimitiveUnTyped memberPrimitiveUnTyped;
+	internal MemberReference memberReference;
+	internal ObjectNull objectNull;
+	internal static MessageEnd messageEnd;
 
 	internal BinaryAssemblyInfo SystemAssemblyInfo { get; }
 	internal SizedArray ObjectMapIdTable { get; }
@@ -3606,7 +3623,7 @@ internal sealed class __BinaryParser // TypeDefIndex: 1116
 
 public struct TaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 1291
 {
-	private readonly Task<TResult> m_task; 
+	private readonly Task<TResult> m_task;
 
 	public bool IsCompleted { get; }
 
@@ -3747,7 +3764,7 @@ public struct TaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletio
 
 public struct ConfiguredTaskAwaitable<TResult> // TypeDefIndex: 1294
 {
-	private readonly ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> m_configuredTaskAwaiter; 
+	private readonly ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> m_configuredTaskAwaiter;
 
 
 	internal void .ctor(Task<TResult> task, bool continueOnCapturedContext) { }
@@ -3798,7 +3815,7 @@ public struct ConfiguredTaskAwaitable<TResult> // TypeDefIndex: 1294
 
 internal struct ConcurrentSet<KeyType, ItemType> // TypeDefIndex: 1507
 {
-	private ItemType[] items; 
+	private ItemType[] items;
 
 
 	public ItemType TryGet(KeyType key) { }
@@ -3847,8 +3864,8 @@ internal abstract class ConcurrentSetItem<KeyType, ItemType> // TypeDefIndex: 15
 
 internal sealed class InvokeTypeInfo<ContainerType> : TraceLoggingTypeInfo<ContainerType> // TypeDefIndex: 1524
 {
-	private readonly PropertyAnalysis[] properties; 
-	private readonly PropertyAccessor<ContainerType>[] accessors; 
+	private readonly PropertyAnalysis[] properties;
+	private readonly PropertyAccessor<ContainerType>[] accessors;
 
 
 	public void .ctor(TypeAnalysis typeAnalysis) { }
@@ -4110,8 +4127,8 @@ internal abstract class PropertyAccessor<ContainerType> // TypeDefIndex: 1526
 
 internal class NonGenericProperytWriter<ContainerType> : PropertyAccessor<ContainerType> // TypeDefIndex: 1527
 {
-	private readonly TraceLoggingTypeInfo typeInfo; 
-	private readonly MethodInfo getterInfo; 
+	private readonly TraceLoggingTypeInfo typeInfo;
+	private readonly MethodInfo getterInfo;
 
 
 	public void .ctor(PropertyAnalysis property) { }
@@ -4213,8 +4230,8 @@ internal class NonGenericProperytWriter<ContainerType> : PropertyAccessor<Contai
 
 internal class ClassPropertyWriter<ContainerType, ValueType> : PropertyAccessor<ContainerType> // TypeDefIndex: 1528
 {
-	private readonly TraceLoggingTypeInfo<ValueType> valueTypeInfo; 
-	private readonly ClassPropertyWriter.Getter<ContainerType, ValueType> getter; 
+	private readonly TraceLoggingTypeInfo<ValueType> valueTypeInfo;
+	private readonly ClassPropertyWriter.Getter<ContainerType, ValueType> getter;
 
 
 	public void .ctor(PropertyAnalysis property) { }
@@ -4564,7 +4581,7 @@ internal sealed class NullTypeInfo<DataType> : TraceLoggingTypeInfo<DataType> //
 
 internal abstract class TraceLoggingTypeInfo<DataType> : TraceLoggingTypeInfo // TypeDefIndex: 1590
 {
-	private static TraceLoggingTypeInfo<DataType> instance; 
+	private static TraceLoggingTypeInfo<DataType> instance;
 
 	public static TraceLoggingTypeInfo<DataType> Instance { get; }
 
@@ -4865,150 +4882,150 @@ internal abstract class TraceLoggingTypeInfo<DataType> : TraceLoggingTypeInfo //
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 1635
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 0392525BCB01691D1F319D89F2C12BF93A478467 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 0588059ACBD52F7EA2835882F977A9CF72EB9775 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=84 0A1ADB22C1D3E1F4B2448EE3F27DF9DE63329C4C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=240 121EC59E23F7559B28D338D562528F6299C2DE22 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 12D04472A8285260EA12FD3813CDFA9F2D2B548C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 13A35EF1A549297C70E2AD46045BBD2ECA17852D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 1730F09044E91DB8371B849EFF5E6D17BDE4AED0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 1A84029C80CB5518379F199F53FF08A7B764F8FD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 1AEF3D8DF416A46288C91C724CBF7B154D9E5BF3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 1E41C4CD0767AEA21C00DEABA2EA9407F1E6CEA5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 1FE6CE411858B3D864679DE2139FB081F08BFACD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 235D99572263B22ADFEE10FDA0C25E12F4D94FFC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 25420D0055076FA8D3E4DD96BC53AE24DE6E619F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1208 25CF935D2AE9EDF05DD75BCD47FF84D9255D6F6E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=42 29C1A61550F0E3260E1953D4FAD71C256218EF40 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 2B33BEC8C30DFDC49DAFE20D3BDE19487850D717 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 2BA840FF6020B8FF623DBCB7188248CF853FAF4F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 2C840AFA48C27B9C05593E468C1232CA1CC74AFD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 2D1DA5BB407F0C11C3B5116196C0C6374D932B20 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 2D3CF0F15AC2DDEC2956EA1B7BBE43FB8B923130 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 2F71D2DA12F3CD0A6A112F5A5A75B4FDC6FE8547 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 320B018758ECE3752FFEDBAEB1A6DB67C80B9359 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 34476C29F6F81C989CFCA42F7C06E84C66236834 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2382 35EED060772F2748D13B745DAEC8CD7BD3B87604 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 375F9AE9769A3D1DA789E9ACFE81F3A1BB14F0D3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1450 379C06C9E702D31469C29033F0DD63931EB349F5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 399BD13E240F33F808CA7940293D6EC4E6FD5A00 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 39C9CE73C7B0619D409EF28344F687C1B5C130FE 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=320 3C53AFB51FEC23491684C7BEDBC6D4E0F409F851 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 3E3442C7396F3F2BB4C7348F4A2074C7DC677D68 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 3E4BBF9D0CDD2E34F78AA7A9A3979DCE1F7B02BD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 3E823444D2DFECF0F90B436B88F02A533CB376F1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 3FE6C283BCF384FD2C8789880DFF59664E2AB4A1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1665 40981BAA39513E58B28DCF0103CC04DE2A0A0444 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 40E7C49413D261F3F38AD3A870C0AC69C8BDA048 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 421EC7E82F2967DF6CA8C3605514DC6F29EE5845 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 433175D38B13FFE177FDD661A309F1B528B3F6E2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 46232052BC757E030490D851F265FB47FA100902 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 4858DB4AA76D3933F1CA9E6712D4FDB16903F628 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 4E3B533C39447AAEB59A8E48FABD7E15B5B5D195 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 4F7A8890F332B22B8DE0BD29D36FA7364748D76A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 536422B321459B242ADED7240B7447E904E083E3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1080 5382CEF491F422BFE0D6FC46EFAFF9EF9D4C89F3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 56DFA5053B3131883637F53219E7D88CCEF35949 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 57218C316B6921E2CD61027A2387EDC31A2D9471 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 57F320D62696EC99727E0FE2045A05F1289CC0C6 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=212 594A33A00BC4F785DFD43E3C6C44FBA1242CCAF3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 5BBDF8058D4235C33F2E8DCF76004031B6187A2F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=288 5BCD21C341BE6DDF8FFFAE1A23ABA24DCBB612BF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 5BFE2819B4778217C56416C7585FF0E56EBACD89 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 609C0E8D8DA86A09D6013D301C86BA8782C16B8C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 62BAB0F245E66C3EB982CF5A7015F0A7C3382283 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 646036A65DECCD6835C914A46E6E44B729433B60 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 65E32B4E150FD8D24B93B0D42A17F1DAD146162B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 6770974FEF1E98B9C1864370E2B5B786EB0EA39E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 67EEAD805D708D9AA4E14BF747E44CED801744F3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 6C71197D228427B2864C69B357FEF73D8C9D59DF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 6CEE45445AFD150B047A5866FFA76AA651CDB7B7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 6D49C9D487D7AD3491ECE08732D68A593CC2038D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 6D797C11E1D4FB68B6570CF2A92B792433527065 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132 6E5DC824F803F8565AF31B42199DAE39FE7F4EA9 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 6FC754859E4EC74E447048364B216D825C6F8FE7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 704939CD172085D1295FCE3F1D92431D685D7AA2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 7088AAE49F0627B72729078DE6E3182DDCF8ED99 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 7341C933A70EAE383CC50C4B945ADB8E08F06737 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 736D39815215889F11249D9958F6ED12D37B9F57 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 7F42F2EDC974BE29B2746957416ED1AEFA605F47 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 7FE820C9CF0F0B90445A71F1D262D22E4F0C4C68 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=21252 811A927B7DADD378BE60BBDE794B9277AA9B50EC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 81917F1E21F3C22B9F916994547A614FB03E968E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 823566DA642D6EA356E15585921F2A4CA23D6760 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 82C2A59850B2E85BCE1A45A479537A384DF6098D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 82C383F8E6E4D3D87AEBB986A5D0077E8AD157C4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 86F4F563FA2C61798AE6238D789139739428463A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 871B9CF85DB352BAADF12BAE8F19857683E385AC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 89A040451C8CC5C8FB268BE44BDD74964C104155 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 8CAA092E783257106251246FF5C97F88D28517A6 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2100 8D231DD55FE1AD7631BBD0905A17D5EB616C2154 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 8E10AC2F34545DFBBF3FCBC06055D797A8C99991 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 8F22C9ECE1331718CBD268A9BBFD2F5E451441E3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=640 90A0542282A011472F94E97CEAE59F8B3B1A3291 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 93A63E90605400F34B49F0EB3361D23C89164BDA 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 94841DD2F330CCB1089BF413E4FA9B04505152E2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 95264589E48F94B7857CFF398FB72A537E13EEE2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 95C48758CAE1715783472FB073AB158AB8A0AB2A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 973417296623D8DC6961B09664E54039E44CA5D8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 97FB30C84FF4A41CD4625B44B2940BFC8DB43003 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 99E2E88877D14C7DDC4E957A0ED7079CA0E9EB24 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9A9C3962CD4753376E3507C8CB5FD8FCC4B4EDB5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 9BB00D1FCCBAF03165447FC8028E7CA07CA9FE88 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 A0074C15377C0C870B055927403EA9FA7A349D12 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=130 A1319B706116AB2C6D44483F60A7D0ACEA543396 
-	internal static readonly long A13AA52274D951A18029131A8DDECF76B569A15D = -44474084896931794; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 A323DB0813C4D072957BA6FDA79D9776674CD06B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=212 A5444763673307F6828C748D4B9708CFC02B0959 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 A6732F8E7FC23766AB329B492D6BF82E3B33233F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=174 A705A106D95282BD15E13EEA6B0AF583FF786D83 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1018 A8A491E4CED49AE0027560476C10D933CE70C8DF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 AC791C4F39504D1184B73478943D0636258DA7B1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 AFCD4E1211233E99373A3367B23105A3D624B1F2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 B472ED77CB3B2A66D49D179F1EE2081B70A6AB61 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 B4FBD02AAB5B16E0F4BD858DA5D9E348F3CE501D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 B53A2C6DF21FC88B17AEFC40EB895B8D63210CDF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 B6002BBF29B2704922EC3BBF0F9EE40ABF185D6B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=998 B881DA88BE0B68D8A6B6B6893822586B8B2CFC45 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=162 B8864ACB9DD69E3D42151513C840AAE270BF21C8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=360 B8F87834C3597B2EEF22BA6D3A392CC925636401 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 B9B670F134A59FB1107AF01A9FE8F8E3980B3093 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 BE1BDEC0AA74B4DCB079943E70528096CCA985F8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 BEBC9ECC660A13EFC359BA3383411F698CFF25DB 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 BEE1CFE5DFAA408E14CE4AF4DCD824FA2E42DCB7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 BF477463CE2F5EF38FC4C644BBBF4DF109E7670A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 BF5EB60806ECB74EE484105DD9D6F463BF994867 
-	internal static readonly long C1A1100642BA9685B30A84D97348484E14AA1865 = 23362753784184900; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 C6F364A0AD934EFED8909446C215752E565D77C1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=174 CE5835130F5277F63D716FC9115526B0AC68FFAD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 CE93C35B755802BC4B3D180716B048FC61701EF7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 CF0B42666EF5E37EDEA0AB8E173E42C196D03814 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 D002CBBE1FF33721AF7C4D1D3ECAD1B7DB5258B7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 D117188BE8D4609C0D531C51B0BB911A4219DEBE 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 D28E8ABDBD777A482CE0EE5C24814ACAE52AABFE 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 D2C5BAE967587C6F3D9F2C4551911E0575A1101F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=82 D76478B994B312CD022DCA207AA2254880D2FCC9 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 D78D08081C7A5AD6FBA7A8DC86BCD6D7A577C636 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 DA19DB47B583EFCF7825D2E39D661D2354F28219 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 DC2B830D8CD59AD6A4E4332D21CA0DCA2821AD82 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD3AEFEADB1CD615F3017763F1568179FEE640B0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 E1827270A5FE1C85F5352A66FD87BA747213D006 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 E45BAB43F7D5D038672B3E3431F92E34A7AF2571 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 E75835D001C843F156FBA01B001DFE1B8029AC17 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 E92B39D8233061927D9ACDE54665E68E7535635A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 EA9506959484C55CFE0C139C624DF6060E285866 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=262 EB5E9A80A40096AB74D2E226650C7258D7BC5E9D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 EBF68F411848D603D059DFDEA2321C5A5EA78044 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 EC5BB4F59D4B9B2E9ECD3904D44A8275F23AFB11 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 EC83FB16C20052BEE2B4025159BC2ED45C9C70C3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 EC89C317EA2BF49A70EFF5E89C691E34733D7C37 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 F06E829E62F3AFBC045D064E10A4F5DF7C969612 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=11614 F073AA332018FDA0D572E99448FFF1D6422BD520 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 F34B0E10653402E8F788F8BC3F7CD7090928A429 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 F37E34BEADB04F34FCC31078A59F49856CA83D5B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=94 F512A9ABF88066AAEB92684F95CC05D8101B462B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 F8FAABB821300AA500C2CEC6091B3782A7FB44A4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2350 FCBD2781A933F0828ED4AAF88FD8B08D76DDD49B 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 0392525BCB01691D1F319D89F2C12BF93A478467
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 0588059ACBD52F7EA2835882F977A9CF72EB9775
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=84 0A1ADB22C1D3E1F4B2448EE3F27DF9DE63329C4C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=240 121EC59E23F7559B28D338D562528F6299C2DE22
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 12D04472A8285260EA12FD3813CDFA9F2D2B548C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 13A35EF1A549297C70E2AD46045BBD2ECA17852D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 1730F09044E91DB8371B849EFF5E6D17BDE4AED0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 1A84029C80CB5518379F199F53FF08A7B764F8FD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 1AEF3D8DF416A46288C91C724CBF7B154D9E5BF3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 1E41C4CD0767AEA21C00DEABA2EA9407F1E6CEA5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 1FE6CE411858B3D864679DE2139FB081F08BFACD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 235D99572263B22ADFEE10FDA0C25E12F4D94FFC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 25420D0055076FA8D3E4DD96BC53AE24DE6E619F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1208 25CF935D2AE9EDF05DD75BCD47FF84D9255D6F6E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=42 29C1A61550F0E3260E1953D4FAD71C256218EF40
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 2B33BEC8C30DFDC49DAFE20D3BDE19487850D717
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 2BA840FF6020B8FF623DBCB7188248CF853FAF4F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 2C840AFA48C27B9C05593E468C1232CA1CC74AFD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 2D1DA5BB407F0C11C3B5116196C0C6374D932B20
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 2D3CF0F15AC2DDEC2956EA1B7BBE43FB8B923130
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 2F71D2DA12F3CD0A6A112F5A5A75B4FDC6FE8547
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 320B018758ECE3752FFEDBAEB1A6DB67C80B9359
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 34476C29F6F81C989CFCA42F7C06E84C66236834
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2382 35EED060772F2748D13B745DAEC8CD7BD3B87604
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 375F9AE9769A3D1DA789E9ACFE81F3A1BB14F0D3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1450 379C06C9E702D31469C29033F0DD63931EB349F5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 399BD13E240F33F808CA7940293D6EC4E6FD5A00
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 39C9CE73C7B0619D409EF28344F687C1B5C130FE
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=320 3C53AFB51FEC23491684C7BEDBC6D4E0F409F851
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 3E3442C7396F3F2BB4C7348F4A2074C7DC677D68
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 3E4BBF9D0CDD2E34F78AA7A9A3979DCE1F7B02BD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 3E823444D2DFECF0F90B436B88F02A533CB376F1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 3FE6C283BCF384FD2C8789880DFF59664E2AB4A1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1665 40981BAA39513E58B28DCF0103CC04DE2A0A0444
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 40E7C49413D261F3F38AD3A870C0AC69C8BDA048
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 421EC7E82F2967DF6CA8C3605514DC6F29EE5845
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 433175D38B13FFE177FDD661A309F1B528B3F6E2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 46232052BC757E030490D851F265FB47FA100902
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 4858DB4AA76D3933F1CA9E6712D4FDB16903F628
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 4E3B533C39447AAEB59A8E48FABD7E15B5B5D195
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 4F7A8890F332B22B8DE0BD29D36FA7364748D76A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 536422B321459B242ADED7240B7447E904E083E3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1080 5382CEF491F422BFE0D6FC46EFAFF9EF9D4C89F3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 56DFA5053B3131883637F53219E7D88CCEF35949
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 57218C316B6921E2CD61027A2387EDC31A2D9471
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 57F320D62696EC99727E0FE2045A05F1289CC0C6
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=212 594A33A00BC4F785DFD43E3C6C44FBA1242CCAF3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 5BBDF8058D4235C33F2E8DCF76004031B6187A2F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=288 5BCD21C341BE6DDF8FFFAE1A23ABA24DCBB612BF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 5BFE2819B4778217C56416C7585FF0E56EBACD89
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 609C0E8D8DA86A09D6013D301C86BA8782C16B8C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 62BAB0F245E66C3EB982CF5A7015F0A7C3382283
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 646036A65DECCD6835C914A46E6E44B729433B60
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 65E32B4E150FD8D24B93B0D42A17F1DAD146162B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 6770974FEF1E98B9C1864370E2B5B786EB0EA39E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 67EEAD805D708D9AA4E14BF747E44CED801744F3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 6C71197D228427B2864C69B357FEF73D8C9D59DF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 6CEE45445AFD150B047A5866FFA76AA651CDB7B7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 6D49C9D487D7AD3491ECE08732D68A593CC2038D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 6D797C11E1D4FB68B6570CF2A92B792433527065
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132 6E5DC824F803F8565AF31B42199DAE39FE7F4EA9
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 6FC754859E4EC74E447048364B216D825C6F8FE7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 704939CD172085D1295FCE3F1D92431D685D7AA2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 7088AAE49F0627B72729078DE6E3182DDCF8ED99
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 7341C933A70EAE383CC50C4B945ADB8E08F06737
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 736D39815215889F11249D9958F6ED12D37B9F57
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 7F42F2EDC974BE29B2746957416ED1AEFA605F47
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 7FE820C9CF0F0B90445A71F1D262D22E4F0C4C68
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=21252 811A927B7DADD378BE60BBDE794B9277AA9B50EC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 81917F1E21F3C22B9F916994547A614FB03E968E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 823566DA642D6EA356E15585921F2A4CA23D6760
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 82C2A59850B2E85BCE1A45A479537A384DF6098D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 82C383F8E6E4D3D87AEBB986A5D0077E8AD157C4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 86F4F563FA2C61798AE6238D789139739428463A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 871B9CF85DB352BAADF12BAE8F19857683E385AC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 89A040451C8CC5C8FB268BE44BDD74964C104155
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 8CAA092E783257106251246FF5C97F88D28517A6
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2100 8D231DD55FE1AD7631BBD0905A17D5EB616C2154
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 8E10AC2F34545DFBBF3FCBC06055D797A8C99991
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 8F22C9ECE1331718CBD268A9BBFD2F5E451441E3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=640 90A0542282A011472F94E97CEAE59F8B3B1A3291
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 93A63E90605400F34B49F0EB3361D23C89164BDA
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 94841DD2F330CCB1089BF413E4FA9B04505152E2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 95264589E48F94B7857CFF398FB72A537E13EEE2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 95C48758CAE1715783472FB073AB158AB8A0AB2A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 973417296623D8DC6961B09664E54039E44CA5D8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 97FB30C84FF4A41CD4625B44B2940BFC8DB43003
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 99E2E88877D14C7DDC4E957A0ED7079CA0E9EB24
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9A9C3962CD4753376E3507C8CB5FD8FCC4B4EDB5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 9BB00D1FCCBAF03165447FC8028E7CA07CA9FE88
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 A0074C15377C0C870B055927403EA9FA7A349D12
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=130 A1319B706116AB2C6D44483F60A7D0ACEA543396
+	internal static readonly long A13AA52274D951A18029131A8DDECF76B569A15D = -44474084896931794;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 A323DB0813C4D072957BA6FDA79D9776674CD06B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=212 A5444763673307F6828C748D4B9708CFC02B0959
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 A6732F8E7FC23766AB329B492D6BF82E3B33233F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=174 A705A106D95282BD15E13EEA6B0AF583FF786D83
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1018 A8A491E4CED49AE0027560476C10D933CE70C8DF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 AC791C4F39504D1184B73478943D0636258DA7B1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 AFCD4E1211233E99373A3367B23105A3D624B1F2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 B472ED77CB3B2A66D49D179F1EE2081B70A6AB61
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 B4FBD02AAB5B16E0F4BD858DA5D9E348F3CE501D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 B53A2C6DF21FC88B17AEFC40EB895B8D63210CDF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 B6002BBF29B2704922EC3BBF0F9EE40ABF185D6B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=998 B881DA88BE0B68D8A6B6B6893822586B8B2CFC45
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=162 B8864ACB9DD69E3D42151513C840AAE270BF21C8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=360 B8F87834C3597B2EEF22BA6D3A392CC925636401
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 B9B670F134A59FB1107AF01A9FE8F8E3980B3093
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 BE1BDEC0AA74B4DCB079943E70528096CCA985F8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 BEBC9ECC660A13EFC359BA3383411F698CFF25DB
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 BEE1CFE5DFAA408E14CE4AF4DCD824FA2E42DCB7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 BF477463CE2F5EF38FC4C644BBBF4DF109E7670A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 BF5EB60806ECB74EE484105DD9D6F463BF994867
+	internal static readonly long C1A1100642BA9685B30A84D97348484E14AA1865 = 23362753784184900;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 C6F364A0AD934EFED8909446C215752E565D77C1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=174 CE5835130F5277F63D716FC9115526B0AC68FFAD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 CE93C35B755802BC4B3D180716B048FC61701EF7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 CF0B42666EF5E37EDEA0AB8E173E42C196D03814
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 D002CBBE1FF33721AF7C4D1D3ECAD1B7DB5258B7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 D117188BE8D4609C0D531C51B0BB911A4219DEBE
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 D28E8ABDBD777A482CE0EE5C24814ACAE52AABFE
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 D2C5BAE967587C6F3D9F2C4551911E0575A1101F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=82 D76478B994B312CD022DCA207AA2254880D2FCC9
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 D78D08081C7A5AD6FBA7A8DC86BCD6D7A577C636
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 DA19DB47B583EFCF7825D2E39D661D2354F28219
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 DC2B830D8CD59AD6A4E4332D21CA0DCA2821AD82
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD3AEFEADB1CD615F3017763F1568179FEE640B0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 E1827270A5FE1C85F5352A66FD87BA747213D006
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 E45BAB43F7D5D038672B3E3431F92E34A7AF2571
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 E75835D001C843F156FBA01B001DFE1B8029AC17
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 E92B39D8233061927D9ACDE54665E68E7535635A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 EA9506959484C55CFE0C139C624DF6060E285866
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=262 EB5E9A80A40096AB74D2E226650C7258D7BC5E9D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 EBF68F411848D603D059DFDEA2321C5A5EA78044
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 EC5BB4F59D4B9B2E9ECD3904D44A8275F23AFB11
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 EC83FB16C20052BEE2B4025159BC2ED45C9C70C3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 EC89C317EA2BF49A70EFF5E89C691E34733D7C37
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 F06E829E62F3AFBC045D064E10A4F5DF7C969612
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=11614 F073AA332018FDA0D572E99448FFF1D6422BD520
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 F34B0E10653402E8F788F8BC3F7CD7090928A429
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 F37E34BEADB04F34FCC31078A59F49856CA83D5B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=94 F512A9ABF88066AAEB92684F95CC05D8101B462B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 F8FAABB821300AA500C2CEC6091B3782A7FB44A4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2350 FCBD2781A933F0828ED4AAF88FD8B08D76DDD49B
 
 
 	internal static uint ComputeStringHash(string s) { }
@@ -5031,34 +5048,34 @@ internal sealed class __Il2CppComDelegate : __Il2CppComObject // TypeDefIndex: 1
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 1772
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 12D04472A8285260EA12FD3813CDFA9F2D2B548C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 13A35EF1A549297C70E2AD46045BBD2ECA17852D 
-	internal static readonly long 16968835DEF6DD3BB86EABA9DEC53BF41851CD6D = -1295888024253181014; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 1A84029C80CB5518379F199F53FF08A7B764F8FD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 235D99572263B22ADFEE10FDA0C25E12F4D94FFC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 2D3CF0F15AC2DDEC2956EA1B7BBE43FB8B923130 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 320B018758ECE3752FFEDBAEB1A6DB67C80B9359 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 3E3442C7396F3F2BB4C7348F4A2074C7DC677D68 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 4E3B533C39447AAEB59A8E48FABD7E15B5B5D195 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 56DFA5053B3131883637F53219E7D88CCEF35949 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 6D49C9D487D7AD3491ECE08732D68A593CC2038D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132 6E5DC824F803F8565AF31B42199DAE39FE7F4EA9 
-	internal static readonly long 6FA00AC9FFFD87F82A38A7F9ECC8134F4A7052AF = 22609615381091406; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 736D39815215889F11249D9958F6ED12D37B9F57 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 86F4F563FA2C61798AE6238D789139739428463A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 97FB30C84FF4A41CD4625B44B2940BFC8DB43003 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9A9C3962CD4753376E3507C8CB5FD8FCC4B4EDB5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 9BB00D1FCCBAF03165447FC8028E7CA07CA9FE88 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 A323DB0813C4D072957BA6FDA79D9776674CD06B 
-	internal static readonly long AEA5F1CC5CFE1660539EDD691FE017F775F63A0D = 2676302836908902219; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 BE1BDEC0AA74B4DCB079943E70528096CCA985F8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 BF477463CE2F5EF38FC4C644BBBF4DF109E7670A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 CF0B42666EF5E37EDEA0AB8E173E42C196D03814 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 D28E8ABDBD777A482CE0EE5C24814ACAE52AABFE 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 D2C5BAE967587C6F3D9F2C4551911E0575A1101F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 E75835D001C843F156FBA01B001DFE1B8029AC17 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 EC5BB4F59D4B9B2E9ECD3904D44A8275F23AFB11 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 EC83FB16C20052BEE2B4025159BC2ED45C9C70C3 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 12D04472A8285260EA12FD3813CDFA9F2D2B548C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 13A35EF1A549297C70E2AD46045BBD2ECA17852D
+	internal static readonly long 16968835DEF6DD3BB86EABA9DEC53BF41851CD6D = -1295888024253181014;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 1A84029C80CB5518379F199F53FF08A7B764F8FD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 235D99572263B22ADFEE10FDA0C25E12F4D94FFC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 2D3CF0F15AC2DDEC2956EA1B7BBE43FB8B923130
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 320B018758ECE3752FFEDBAEB1A6DB67C80B9359
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 3E3442C7396F3F2BB4C7348F4A2074C7DC677D68
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 4E3B533C39447AAEB59A8E48FABD7E15B5B5D195
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 56DFA5053B3131883637F53219E7D88CCEF35949
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 6D49C9D487D7AD3491ECE08732D68A593CC2038D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132 6E5DC824F803F8565AF31B42199DAE39FE7F4EA9
+	internal static readonly long 6FA00AC9FFFD87F82A38A7F9ECC8134F4A7052AF = 22609615381091406;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 736D39815215889F11249D9958F6ED12D37B9F57
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 86F4F563FA2C61798AE6238D789139739428463A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 97FB30C84FF4A41CD4625B44B2940BFC8DB43003
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9A9C3962CD4753376E3507C8CB5FD8FCC4B4EDB5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 9BB00D1FCCBAF03165447FC8028E7CA07CA9FE88
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 A323DB0813C4D072957BA6FDA79D9776674CD06B
+	internal static readonly long AEA5F1CC5CFE1660539EDD691FE017F775F63A0D = 2676302836908902219;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 BE1BDEC0AA74B4DCB079943E70528096CCA985F8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 BF477463CE2F5EF38FC4C644BBBF4DF109E7670A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 CF0B42666EF5E37EDEA0AB8E173E42C196D03814
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 D28E8ABDBD777A482CE0EE5C24814ACAE52AABFE
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 D2C5BAE967587C6F3D9F2C4551911E0575A1101F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 E75835D001C843F156FBA01B001DFE1B8029AC17
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 EC5BB4F59D4B9B2E9ECD3904D44A8275F23AFB11
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 EC83FB16C20052BEE2B4025159BC2ED45C9C70C3
 
 
 	internal static uint ComputeStringHash(string s) { }
@@ -5067,45 +5084,45 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 1772
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 2431
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 0701435C4E2C38EFE43C51BD22C114AB8B80124D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 0EE6555EB2C89F29655BD23FAB0573D8D684331A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=68 0F6A1E2CEA2FA691D57F3F3FDCF9B82A3FBF6EE1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 161F91CE1721D8F16622810CBB39887D21C47031 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 2051D7520B96DCC12F2E4DE851CB9F203D623805 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 221CE291CD044114B4369175B9B91177F5932876 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 2A4F1BD548EC71F652E24985361CD72F0FE1BE7D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 360487BE4278986419B568EFD887F6145383168A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 42DDBEE388AB59C20A3D7D4D6555E78D74A45AE1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 485F43E332C2F7530815B17C08DAC169A8F697E0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=112 49C5BA13401986EC93E4677F52CBE2248184DFBD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 51E4CA1C2B009A2876C6E57D8E69E3502BCA3440 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=960 553E235E202D57C9F1156E7D232E02BBDC920165 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 574B9D4E4C39F6E8004181E5765B627B75EB1AD1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 5BE9DB9EEB9CBB4D22472CA9734B1FA1D36126BD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 5D100A87B697F3AE2015A5D3B2A7B5419E1BCA98 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=664 68D0F86889D5D656483EEE829BCEECDFEC91D8EA 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=416 6A0D50D692745A6663128CD315B71079584F3E59 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 702F6A3276CBE481D247A77C20B5459FB94D07D2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 7A32E1A19C182315E4263A65A72066492550D8CD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 8B4E5E81A88D29642679AFCE41DCA380F9000462 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=960 977375E4E1ED54F588076ACA36CC17E6C2195CB9 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 99F0664C2AC8464B51252D92FC24F3834C6FB90C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 9E31F24F64765FCAA589F589324D17C9FCF6A06D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 9E374D7263B2452E25DE3D6E617F6A728D98A439 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=68 A933F173482FF50754B4942AF8DFC584EF14A45B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 AB4EAD1DB94B8220FAAEDAA6A593B2E6DB0A8A9C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=416 B368804F0C6DAB083B253A6B106D0783D5C32E90 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 B9F0004E3873FDDCABFDA6174EA18F0859B637B4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 BAD037B714E1CD1052149B51238A3D4351DD10B5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 C2D6E36D84DDA5D661B95D7B32D3F47CD7ACBF6C 
-	internal static readonly long DB9F879BE80CC2DA24DEF633D23DBB2B1ADBCC81 = 361700859878507267; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 DCF398750721AA7A27A6BA56E99350329B06E8B1 
-	internal static readonly long EBC658B067B5C785A3F0BB67D73755F6FEE7F70C = 3659217647501344; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 ED18A4A1FF7C89B400D7CA156BA8D11BB09E1DE4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 EE3413A2C088FF9432054D6E60A7CB6A498D25F0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 F64F25EAE9A3D7A356813C4218000185541D7779 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1212 FB0C58D8B3094F018764CC6E3094B9576DB08069 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 FFE3F15642234E7FAD6951D432F1134D5AD15922 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 0701435C4E2C38EFE43C51BD22C114AB8B80124D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 0EE6555EB2C89F29655BD23FAB0573D8D684331A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=68 0F6A1E2CEA2FA691D57F3F3FDCF9B82A3FBF6EE1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 161F91CE1721D8F16622810CBB39887D21C47031
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 2051D7520B96DCC12F2E4DE851CB9F203D623805
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 221CE291CD044114B4369175B9B91177F5932876
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 2A4F1BD548EC71F652E24985361CD72F0FE1BE7D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 360487BE4278986419B568EFD887F6145383168A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 42DDBEE388AB59C20A3D7D4D6555E78D74A45AE1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 485F43E332C2F7530815B17C08DAC169A8F697E0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=112 49C5BA13401986EC93E4677F52CBE2248184DFBD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 51E4CA1C2B009A2876C6E57D8E69E3502BCA3440
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=960 553E235E202D57C9F1156E7D232E02BBDC920165
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 574B9D4E4C39F6E8004181E5765B627B75EB1AD1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 5BE9DB9EEB9CBB4D22472CA9734B1FA1D36126BD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 5D100A87B697F3AE2015A5D3B2A7B5419E1BCA98
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=664 68D0F86889D5D656483EEE829BCEECDFEC91D8EA
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=416 6A0D50D692745A6663128CD315B71079584F3E59
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 702F6A3276CBE481D247A77C20B5459FB94D07D2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 7A32E1A19C182315E4263A65A72066492550D8CD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 8B4E5E81A88D29642679AFCE41DCA380F9000462
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=960 977375E4E1ED54F588076ACA36CC17E6C2195CB9
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 99F0664C2AC8464B51252D92FC24F3834C6FB90C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 9E31F24F64765FCAA589F589324D17C9FCF6A06D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 9E374D7263B2452E25DE3D6E617F6A728D98A439
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=68 A933F173482FF50754B4942AF8DFC584EF14A45B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 AB4EAD1DB94B8220FAAEDAA6A593B2E6DB0A8A9C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=416 B368804F0C6DAB083B253A6B106D0783D5C32E90
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 B9F0004E3873FDDCABFDA6174EA18F0859B637B4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 BAD037B714E1CD1052149B51238A3D4351DD10B5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 C2D6E36D84DDA5D661B95D7B32D3F47CD7ACBF6C
+	internal static readonly long DB9F879BE80CC2DA24DEF633D23DBB2B1ADBCC81 = 361700859878507267;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 DCF398750721AA7A27A6BA56E99350329B06E8B1
+	internal static readonly long EBC658B067B5C785A3F0BB67D73755F6FEE7F70C = 3659217647501344;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 ED18A4A1FF7C89B400D7CA156BA8D11BB09E1DE4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 EE3413A2C088FF9432054D6E60A7CB6A498D25F0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 F64F25EAE9A3D7A356813C4218000185541D7779
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1212 FB0C58D8B3094F018764CC6E3094B9576DB08069
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 FFE3F15642234E7FAD6951D432F1134D5AD15922
 
 
 	internal static uint ComputeStringHash(string s) { }
@@ -5115,26 +5132,26 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 2431
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 3155
 {
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 internal sealed class <PrivateImplementationDetails>
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 0283A6AF88802AB45989B29549915BEA0F6CD515 
-	internal static readonly long 03F4297FCC30D0FD5E420E5D26E7FA711167C7EF = 2533317740920864; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 1A39764B112685485A5BA7B2880D878B858C1A7A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 1A84029C80CB5518379F199F53FF08A7B764F8FD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 3BE77BF818331C2D8400FFFFF9FADD3F16AD89AC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 53437C3B2572EDB9B8640C3195DF3BC2729C5EA1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 59F5BD34B6C013DEACC784F69C67E95150033A84 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 5BC3486B05BA8CF4689C7BDB198B3F477BB4E20C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 6D49C9D487D7AD3491ECE08732D68A593CC2038D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 6F3AD3DC3AF8047587C4C9D696EB68A01FEF796E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 8821BF2BDFF225D177372C9F3E0A8286EE241FF4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 8E0EF3D67A3EB1863224EE3CACB424BC2F8CFBA3 
-	internal static readonly long 98A44A6F8606AE6F23FE230286C1D6FBCC407226 = 11540663026319392; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 C02C28AFEBE998F767E4AF43E3BE8F5E9FA11536 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 CCEEADA43268372341F81AE0C9208C6856441C04 
-	internal static readonly long E5BC1BAFADE1862DD6E0B9FB632BFAA6C3873A78 = 2533330625626144; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 EC5842B3154E1AF94500B57220EB9F684BCCC42A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 EEAFE8C6E1AB017237567305EE925C976CDB6458 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 0283A6AF88802AB45989B29549915BEA0F6CD515
+	internal static readonly long 03F4297FCC30D0FD5E420E5D26E7FA711167C7EF = 2533317740920864;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 1A39764B112685485A5BA7B2880D878B858C1A7A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3 1A84029C80CB5518379F199F53FF08A7B764F8FD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 3BE77BF818331C2D8400FFFFF9FADD3F16AD89AC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 53437C3B2572EDB9B8640C3195DF3BC2729C5EA1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 59F5BD34B6C013DEACC784F69C67E95150033A84
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 5BC3486B05BA8CF4689C7BDB198B3F477BB4E20C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 6D49C9D487D7AD3491ECE08732D68A593CC2038D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 6F3AD3DC3AF8047587C4C9D696EB68A01FEF796E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 8821BF2BDFF225D177372C9F3E0A8286EE241FF4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 8E0EF3D67A3EB1863224EE3CACB424BC2F8CFBA3
+	internal static readonly long 98A44A6F8606AE6F23FE230286C1D6FBCC407226 = 11540663026319392;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 C02C28AFEBE998F767E4AF43E3BE8F5E9FA11536
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 CCEEADA43268372341F81AE0C9208C6856441C04
+	internal static readonly long E5BC1BAFADE1862DD6E0B9FB632BFAA6C3873A78 = 2533330625626144;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 EC5842B3154E1AF94500B57220EB9F684BCCC42A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 EEAFE8C6E1AB017237567305EE925C976CDB6458
 
 
 	internal static uint ComputeStringHash(string s) { }
@@ -5143,7 +5160,7 @@ internal sealed class <PrivateImplementationDetails>
 
 internal class EmptyEnumerable<TElement> // TypeDefIndex: 3221
 {
-	public static readonly TElement[] Instance; 
+	public static readonly TElement[] Instance;
 
 
 	private static void .cctor() { }
@@ -5172,11 +5189,11 @@ internal class IdentityFunction<TElement> // TypeDefIndex: 3222
 
 internal class Set<TElement> // TypeDefIndex: 3230
 {
-	private int[] buckets; 
-	private Set.Slot<TElement>[] slots; 
-	private int count; 
-	private int freeList; 
-	private IEqualityComparer<TElement> comparer; 
+	private int[] buckets;
+	private Set.Slot<TElement>[] slots;
+	private int count;
+	private int freeList;
+	private IEqualityComparer<TElement> comparer;
 
 
 	public void .ctor(IEqualityComparer<TElement> comparer) { }
@@ -5252,10 +5269,10 @@ internal class Set<TElement> // TypeDefIndex: 3230
 
 internal class GroupedEnumerable<TSource, TKey, TElement> : IEnumerable<IGrouping<TKey, TElement>>, IEnumerable // TypeDefIndex: 3232
 {
-	private IEnumerable<TSource> source; 
-	private Func<TSource, TKey> keySelector; 
-	private Func<TSource, TElement> elementSelector; 
-	private IEqualityComparer<TKey> comparer; 
+	private IEnumerable<TSource> source;
+	private Func<TSource, TKey> keySelector;
+	private Func<TSource, TElement> elementSelector;
+	private IEqualityComparer<TKey> comparer;
 
 
 	public void .ctor(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector, IEqualityComparer<TKey> comparer) { }
@@ -5300,10 +5317,10 @@ internal class GroupedEnumerable<TSource, TKey, TElement> : IEnumerable<IGroupin
 
 internal abstract class OrderedEnumerable<TElement> : IOrderedEnumerable<TElement>, IEnumerable<TElement>, IEnumerable // TypeDefIndex: 3233
 {
-	internal IEnumerable<TElement> source; 
+	internal IEnumerable<TElement> source;
 
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator<TElement> GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -5371,10 +5388,10 @@ internal abstract class OrderedEnumerable<TElement> : IOrderedEnumerable<TElemen
 
 internal class OrderedEnumerable<TElement, TKey> : OrderedEnumerable<TElement> // TypeDefIndex: 3235
 {
-	internal OrderedEnumerable<TElement> parent; 
-	internal Func<TElement, TKey> keySelector; 
-	internal IComparer<TKey> comparer; 
-	internal bool descending; 
+	internal OrderedEnumerable<TElement> parent;
+	internal Func<TElement, TKey> keySelector;
+	internal IComparer<TKey> comparer;
+	internal bool descending;
 
 
 	internal void .ctor(IEnumerable<TElement> source, Func<TElement, TKey> keySelector, IComparer<TKey> comparer, bool descending) { }
@@ -5453,8 +5470,8 @@ internal class OrderedEnumerable<TElement, TKey> : OrderedEnumerable<TElement> /
 
 internal struct Buffer<TElement> // TypeDefIndex: 3238
 {
-	internal TElement[] items; 
-	internal int count; 
+	internal TElement[] items;
+	internal int count;
 
 
 	internal void .ctor(IEnumerable<TElement> source) { }
@@ -5555,27 +5572,27 @@ internal struct Buffer<TElement> // TypeDefIndex: 3238
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 3258
 {
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 internal sealed class <PrivateImplementationDetails>
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 0AA802CD6847EB893FE786B5EA5168B2FDCD7B93 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 0C4110BC17D746F018F47B49E0EB0D6590F69939 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 20733E1283D873EBE47133A95C233E11B76F5F11 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 21F4CBF8283FF1CAEB4A39316A97FC1D6DF1D35E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 23DFDCA6F045D4257BF5AC8CB1CF2EFADAFE9B94 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 30A0358B25B1372DD598BB4B1AC56AD6B8F08A47 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 5B5DF5A459E902D96F7DB0FB235A25346CA85C5D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 5BE411F1438EAEF33726D855E99011D5FECDDD4E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 8F22C9ECE1331718CBD268A9BBFD2F5E451441E3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 A02DD1D8604EA8EC2D2BDA717A93A4EE85F13E53 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 AE2F76ECEF8B08F0BC7EA95DCFE945E1727927C9 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 0AA802CD6847EB893FE786B5EA5168B2FDCD7B93
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 0C4110BC17D746F018F47B49E0EB0D6590F69939
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 20733E1283D873EBE47133A95C233E11B76F5F11
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 21F4CBF8283FF1CAEB4A39316A97FC1D6DF1D35E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 23DFDCA6F045D4257BF5AC8CB1CF2EFADAFE9B94
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 30A0358B25B1372DD598BB4B1AC56AD6B8F08A47
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 5B5DF5A459E902D96F7DB0FB235A25346CA85C5D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 5BE411F1438EAEF33726D855E99011D5FECDDD4E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 8F22C9ECE1331718CBD268A9BBFD2F5E451441E3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 A02DD1D8604EA8EC2D2BDA717A93A4EE85F13E53
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 AE2F76ECEF8B08F0BC7EA95DCFE945E1727927C9
 
 }
 
 public struct BatchQueryJob<CommandT, ResultT> // TypeDefIndex: 3307
 {
-	[ReadOnlyAttribute] 
-	internal NativeArray<CommandT> commands; 
-	internal NativeArray<ResultT> results; 
+	[ReadOnlyAttribute]
+	internal NativeArray<CommandT> commands;
+	internal NativeArray<ResultT> results;
 
 
 	public void .ctor(NativeArray<CommandT> commands, NativeArray<ResultT> results) { }
@@ -5588,12 +5605,12 @@ public struct BatchQueryJob<CommandT, ResultT> // TypeDefIndex: 3307
 
 internal class InvokableCall<T1> : BaseInvokableCall // TypeDefIndex: 3632
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private UnityAction<T1> Delegate; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private UnityAction<T1> Delegate;
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void add_Delegate(UnityAction<T1> value) { }
 	/* GenericInstMethod :
 	|
@@ -5607,7 +5624,7 @@ internal class InvokableCall<T1> : BaseInvokableCall // TypeDefIndex: 3632
 	|-InvokableCall<Vector2>.add_Delegate
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	protected void remove_Delegate(UnityAction<T1> value) { }
 	/* GenericInstMethod :
 	|
@@ -5792,10 +5809,10 @@ public sealed class UnityAction<T0> : MulticastDelegate // TypeDefIndex: 3644
 
 public abstract class UnityEvent<T0> : UnityEventBase // TypeDefIndex: 3645
 {
-	private object[] m_InvokeArray; 
+	private object[] m_InvokeArray;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -5983,10 +6000,10 @@ public sealed class UnityAction<T0, T1> : MulticastDelegate // TypeDefIndex: 364
 
 public abstract class UnityEvent<T0, T1> : UnityEventBase // TypeDefIndex: 3647
 {
-	private object[] m_InvokeArray; 
+	private object[] m_InvokeArray;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -6070,10 +6087,10 @@ public sealed class UnityAction<T0, T1, T2> : MulticastDelegate // TypeDefIndex:
 
 public abstract class UnityEvent<T0, T1, T2> : UnityEventBase // TypeDefIndex: 3649
 {
-	private object[] m_InvokeArray; 
+	private object[] m_InvokeArray;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -6141,10 +6158,10 @@ public sealed class UnityAction<T0, T1, T2, T3> : MulticastDelegate // TypeDefIn
 
 public abstract class UnityEvent<T0, T1, T2, T3> : UnityEventBase // TypeDefIndex: 3651
 {
-	private object[] m_InvokeArray; 
+	private object[] m_InvokeArray;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -6202,15 +6219,15 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 4071
 
 internal abstract class RBTree<K> : IEnumerable // TypeDefIndex: 4291
 {
-	private RBTree.TreePage<K>[] _pageTable; 
-	private int[] _pageTableMap; 
-	private int _inUsePageCount; 
-	private int _nextFreePageLine; 
-	public int root; 
-	private int _version; 
-	private int _inUseNodeCount; 
-	private int _inUseSatelliteTreeCount; 
-	private readonly TreeAccessMethod _accessMethod; 
+	private RBTree.TreePage<K>[] _pageTable;
+	private int[] _pageTableMap;
+	private int _inUsePageCount;
+	private int _nextFreePageLine;
+	public int root;
+	private int _version;
+	private int _inUseNodeCount;
+	private int _inUseSatelliteTreeCount;
+	private readonly TreeAccessMethod _accessMethod;
 
 	public int Count { get; }
 	public bool HasDuplicates { get; }
@@ -6711,10 +6728,10 @@ internal abstract class RBTree<K> : IEnumerable // TypeDefIndex: 4291
 
 internal sealed class Listeners<TElem> // TypeDefIndex: 4309
 {
-	private readonly List<TElem> _listeners; 
-	private readonly Listeners.Func<TElem, TElem, bool> _filter; 
-	private readonly int _objectID; 
-	private int _listenerReaderCount; 
+	private readonly List<TElem> _listeners;
+	private readonly Listeners.Func<TElem, TElem, bool> _filter;
+	private readonly int _objectID;
+	private int _listenerReaderCount;
 
 	internal bool HasListeners { get; }
 
@@ -6775,16 +6792,16 @@ internal sealed class Listeners<TElem> // TypeDefIndex: 4309
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 4441
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 0EE6555EB2C89F29655BD23FAB0573D8D684331A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 229F48C8598232AD9236772DD710E64615D0EE51 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 2A4F1BD548EC71F652E24985361CD72F0FE1BE7D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 547FF12759F2EA9866F3E2095113686A6379ABBF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=176 57F92A12C48A0856350D3C95C4145F2AF4C9DEFF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 624B37B4C211942F3422DFFEAE9F44901E57339C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD3AEFEADB1CD615F3017763F1568179FEE640B0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 E92B39D8233061927D9ACDE54665E68E7535635A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 FA7899481F1198B5A3F90368A998C285FCE19878 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 FF8FD0AC7542FD42A8A7C8D145E120345BA51C56 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 0EE6555EB2C89F29655BD23FAB0573D8D684331A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 229F48C8598232AD9236772DD710E64615D0EE51
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 2A4F1BD548EC71F652E24985361CD72F0FE1BE7D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 547FF12759F2EA9866F3E2095113686A6379ABBF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=176 57F92A12C48A0856350D3C95C4145F2AF4C9DEFF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 624B37B4C211942F3422DFFEAE9F44901E57339C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD3AEFEADB1CD615F3017763F1568179FEE640B0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 E92B39D8233061927D9ACDE54665E68E7535635A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 FA7899481F1198B5A3F90368A998C285FCE19878
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=152 FF8FD0AC7542FD42A8A7C8D145E120345BA51C56
 
 }
 
@@ -6795,7 +6812,7 @@ internal sealed class _AndroidJNIHelper // TypeDefIndex: 4476
 
 	public static IntPtr CreateJavaRunnable(AndroidJavaRunnable jrunnable) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static IntPtr InvokeJavaProxyMethod(AndroidJavaProxy proxy, IntPtr jmethodName, IntPtr jargs) { }
 
 	public static jvalue[] CreateJNIArgArray(object[] args) { }
@@ -6884,8 +6901,8 @@ internal sealed class _AndroidJNIHelper // TypeDefIndex: 4476
 
 public class Memoized<TResult, TArgs> // TypeDefIndex: 4830
 {
-	private readonly Func<TArgs, TResult> _factory; 
-	private readonly Dictionary<TArgs, TResult> _cache; 
+	private readonly Func<TArgs, TResult> _factory;
+	private readonly Dictionary<TArgs, TResult> _cache;
 
 
 	public void .ctor(Func<TArgs, TResult> factory) { }
@@ -6918,16 +6935,16 @@ public class Memoized<TResult, TArgs> // TypeDefIndex: 4830
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 4855
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=146 062825E0D4AB4302B73500604BF9520511ACFD15 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=146 062825E0D4AB4302B73500604BF9520511ACFD15
 
 }
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 4905
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=104 1D1E8406C3A31F2298952B0976625EEDFB010FDC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 339A8BB625A037BA37DB4DF24A276E689D62172D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 48DE754CC0C776DAD1A85DB81BEFAAADE3A447E9 
-	internal static readonly long A5F5D64EF7BB696455C9841B907D2E09986EA902 = 2533317740920876; 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=104 1D1E8406C3A31F2298952B0976625EEDFB010FDC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 339A8BB625A037BA37DB4DF24A276E689D62172D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 48DE754CC0C776DAD1A85DB81BEFAAADE3A447E9
+	internal static readonly long A5F5D64EF7BB696455C9841B907D2E09986EA902 = 2533317740920876;
 
 
 	internal static uint ComputeStringHash(string s) { }
@@ -6936,28 +6953,28 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 4905
 
 internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5102
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5567
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5569
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=5 B1A9AA820F353E1BEF1F7D40CD3F58447AA91D123BC2539918BC70F8A66E75B9 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=5 B1A9AA820F353E1BEF1F7D40CD3F58447AA91D123BC2539918BC70F8A66E75B9
 
 
 	internal static uint ComputeStringHash(string s) { }
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5623
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5625
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 BA8C008E9A9CA9629B0D5A47EB9DFDC7E9E88D61 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 BA8C008E9A9CA9629B0D5A47EB9DFDC7E9E88D61
 
 }
 
-internal class PriorityQueue<TPriority, TItem> // TypeDefIndex: 5675
+internal class PriorityQueue<TPriority, TItem> // TypeDefIndex: 5677
 {
-	private readonly SortedDictionary<TPriority, Queue<TItem>> _subqueues; 
+	private readonly SortedDictionary<TPriority, Queue<TItem>> _subqueues;
 
 	public bool HasItems { get; }
 
@@ -7027,31 +7044,31 @@ internal class PriorityQueue<TPriority, TItem> // TypeDefIndex: 5675
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5684
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5686
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 00C40B3F013EDA60390F2E849C4581815A9419E4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 03B569C38E3CD6B720388919D43735A904012C52 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 1FDC8DB567F5AAA7068D0D2A601CD71657CBDF38 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 373B494F210C656134C5728D551D4C97B013EB33 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 6BC4EAB0D604C8D4599021AD611C5DBA7FF7E306 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 89CE0E8EA590FD37283D6BEFD9E6805C8C47ADBD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 DB7C763C9670DD0F6ED34B75B3410A39D835F964 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 ED032026472FF77A8A17BA4AFF3FC57AF4B4BF79 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 00C40B3F013EDA60390F2E849C4581815A9419E4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 03B569C38E3CD6B720388919D43735A904012C52
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 1FDC8DB567F5AAA7068D0D2A601CD71657CBDF38
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 373B494F210C656134C5728D551D4C97B013EB33
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 6BC4EAB0D604C8D4599021AD611C5DBA7FF7E306
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 89CE0E8EA590FD37283D6BEFD9E6805C8C47ADBD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 DB7C763C9670DD0F6ED34B75B3410A39D835F964
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 ED032026472FF77A8A17BA4AFF3FC57AF4B4BF79
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5819
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5821
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=127 A097044521F478B3A2A9A3AC52887BA733E4DE56 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=127 A097044521F478B3A2A9A3AC52887BA733E4DE56
 
 
 	internal static uint ComputeStringHash(string s) { }
 
 }
 
-internal sealed class XHashtable<TValue> // TypeDefIndex: 5825
+internal sealed class XHashtable<TValue> // TypeDefIndex: 5827
 {
-	private XHashtable.XHashtableState<TValue> state; 
+	private XHashtable.XHashtableState<TValue> state;
 
 
 	public void .ctor(XHashtable.ExtractKeyDelegate<TValue> extractKey, int capacity) { }
@@ -7080,17 +7097,17 @@ internal sealed class XHashtable<TValue> // TypeDefIndex: 5825
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5859
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 5861
 {
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 internal sealed class <PrivateImplementationDetails>
 
 	internal static uint ComputeStringHash(string s) { }
 
 }
 
-internal sealed class MethodCall<T, TResult> : MulticastDelegate // TypeDefIndex: 5937
+internal sealed class MethodCall<T, TResult> : MulticastDelegate // TypeDefIndex: 5939
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -7119,33 +7136,33 @@ internal sealed class MethodCall<T, TResult> : MulticastDelegate // TypeDefIndex
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6155
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6157
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 9E31F24F64765FCAA589F589324D17C9FCF6A06D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 ADFD2E1C801C825415DD53F4F2F72A13B389313C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 D40004AB0E92BF6C8DFE481B56BE3D04ABDA76EB 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD3AEFEADB1CD615F3017763F1568179FEE640B0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 E92B39D8233061927D9ACDE54665E68E7535635A 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 9E31F24F64765FCAA589F589324D17C9FCF6A06D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 ADFD2E1C801C825415DD53F4F2F72A13B389313C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 D40004AB0E92BF6C8DFE481B56BE3D04ABDA76EB
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD3AEFEADB1CD615F3017763F1568179FEE640B0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 E92B39D8233061927D9ACDE54665E68E7535635A
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6269
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6271
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 553AD71118F2B31C74BC988917343BADFA8F78EE 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 553AD71118F2B31C74BC988917343BADFA8F78EE
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6645
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6647
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 373B494F210C656134C5728D551D4C97B013EB33 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 E03C5B88B476F381E452F92C935A5B86131DFC4A 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 373B494F210C656134C5728D551D4C97B013EB33
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 E03C5B88B476F381E452F92C935A5B86131DFC4A
 
 }
 
-public class FastAction<A> // TypeDefIndex: 6678
+public class FastAction<A> // TypeDefIndex: 6680
 {
-	private LinkedList<Action<A>> delegates; 
-	private Dictionary<Action<A>, LinkedListNode<Action<A>>> lookup; 
+	private LinkedList<Action<A>> delegates;
+	private Dictionary<Action<A>, LinkedListNode<Action<A>>> lookup;
 
 
 	public void Add(Action<A> rhs) { }
@@ -7185,10 +7202,10 @@ public class FastAction<A> // TypeDefIndex: 6678
 
 }
 
-public class FastAction<A, B> // TypeDefIndex: 6679
+public class FastAction<A, B> // TypeDefIndex: 6681
 {
-	private LinkedList<Action<A, B>> delegates; 
-	private Dictionary<Action<A, B>, LinkedListNode<Action<A, B>>> lookup; 
+	private LinkedList<Action<A, B>> delegates;
+	private Dictionary<Action<A, B>, LinkedListNode<Action<A, B>>> lookup;
 
 
 	public void Add(Action<A, B> rhs) { }
@@ -7234,10 +7251,10 @@ public class FastAction<A, B> // TypeDefIndex: 6679
 
 }
 
-public class FastAction<A, B, C> // TypeDefIndex: 6680
+public class FastAction<A, B, C> // TypeDefIndex: 6682
 {
-	private LinkedList<Action<A, B, C>> delegates; 
-	private Dictionary<Action<A, B, C>, LinkedListNode<Action<A, B, C>>> lookup; 
+	private LinkedList<Action<A, B, C>> delegates;
+	private Dictionary<Action<A, B, C>, LinkedListNode<Action<A, B, C>>> lookup;
 
 
 	public void Add(Action<A, B, C> rhs) { }
@@ -7268,9 +7285,9 @@ public class FastAction<A, B, C> // TypeDefIndex: 6680
 
 }
 
-public enum _HorizontalAlignmentOptions // TypeDefIndex: 6767
+public enum _HorizontalAlignmentOptions // TypeDefIndex: 6769
 {
-	public int value__; 
+	public int value__;
 	public const _HorizontalAlignmentOptions Left = 1;
 	public const _HorizontalAlignmentOptions Center = 2;
 	public const _HorizontalAlignmentOptions Right = 4;
@@ -7280,9 +7297,9 @@ public enum _HorizontalAlignmentOptions // TypeDefIndex: 6767
 
 }
 
-public enum _VerticalAlignmentOptions // TypeDefIndex: 6768
+public enum _VerticalAlignmentOptions // TypeDefIndex: 6770
 {
-	public int value__; 
+	public int value__;
 	public const _VerticalAlignmentOptions Top = 256;
 	public const _VerticalAlignmentOptions Middle = 512;
 	public const _VerticalAlignmentOptions Bottom = 1024;
@@ -7292,65 +7309,65 @@ public enum _VerticalAlignmentOptions // TypeDefIndex: 6768
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6810
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6812
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46
 
 }
 
-internal class <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA} // TypeDefIndex: 6887
+internal class <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA} // TypeDefIndex: 6889
 {
-	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=32 $$method0x600002d-1 
-	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=32 $$method0x600002d-2 
-	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=128 $$method0x600002d-3 
-	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=256 $$method0x600002d-4 
+	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=32 $$method0x600002d-1
+	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=32 $$method0x600002d-2
+	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=128 $$method0x600002d-3
+	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=256 $$method0x600002d-4
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6975
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6977
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=18 B633673BF635D4C719EF5A0496BD28129A8CE5D3B76217371B6C1FDDFFDD780B 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=18 B633673BF635D4C719EF5A0496BD28129A8CE5D3B76217371B6C1FDDFFDD780B
 
 }
 
-internal class <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7} // TypeDefIndex: 7006
+internal class <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7} // TypeDefIndex: 7008
 {
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=76 $$method0x6000504-1 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=68 $$method0x6000505-1 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=6144 $$method0x6000507-1 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=384 $$method0x6000507-2 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=124 $$method0x6000507-3 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=124 $$method0x6000507-4 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000507-5 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000507-6 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=116 $$method0x6000509-1 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000509-2 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=76 $$method0x6000509-3 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=19 $$method0x6000509-4 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=512 $$method0x6000509-5 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=256 $$method0x6000509-6 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=116 $$method0x6000509-7 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000509-8 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=1152 $$method0x6000475-1 
-	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000475-2 
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=76 $$method0x6000504-1
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=68 $$method0x6000505-1
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=6144 $$method0x6000507-1
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=384 $$method0x6000507-2
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=124 $$method0x6000507-3
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=124 $$method0x6000507-4
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000507-5
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000507-6
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=116 $$method0x6000509-1
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000509-2
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=76 $$method0x6000509-3
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=19 $$method0x6000509-4
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=512 $$method0x6000509-5
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=256 $$method0x6000509-6
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=116 $$method0x6000509-7
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000509-8
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=1152 $$method0x6000475-1
+	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=120 $$method0x6000475-2
 
 }
 
-internal class <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8} // TypeDefIndex: 7031
+internal class <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8} // TypeDefIndex: 7033
 {
-	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=32 $$method0x600007d-1 
-	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=32 $$method0x600007d-2 
-	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=128 $$method0x600007d-3 
-	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=256 $$method0x600007d-4 
+	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=32 $$method0x600007d-1
+	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=32 $$method0x600007d-2
+	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=128 $$method0x600007d-3
+	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=256 $$method0x600007d-4
 
 }
 
-public struct ValueTask<TResult> : IEquatable<ValueTask<TResult>> // TypeDefIndex: 7126
+public struct ValueTask<TResult> : IEquatable<ValueTask<TResult>> // TypeDefIndex: 7128
 {
-	internal readonly object _obj; 
-	internal readonly TResult _result; 
-	internal readonly short _token; 
-	internal readonly bool _continueOnCapturedContext; 
+	internal readonly object _obj;
+	internal readonly TResult _result;
+	internal readonly short _token;
+	internal readonly bool _continueOnCapturedContext;
 
 	public bool IsCompleted { get; }
 	public bool IsCompletedSuccessfully { get; }
@@ -7439,9 +7456,9 @@ public struct ValueTask<TResult> : IEquatable<ValueTask<TResult>> // TypeDefInde
 
 }
 
-public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 7136
+public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 7138
 {
-	private readonly ValueTask<TResult> _value; 
+	private readonly ValueTask<TResult> _value;
 
 	public bool IsCompleted { get; }
 
@@ -7462,7 +7479,7 @@ public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyComp
 	|-ValueTaskAwaiter<object>.get_IsCompleted
 	*/
 
-	[StackTraceHiddenAttribute] 
+	[StackTraceHiddenAttribute]
 	public TResult GetResult() { }
 	/* GenericInstMethod :
 	|
@@ -7489,96 +7506,96 @@ public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyComp
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7378
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7380
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 C92FBDBB320D6C40BEB41D97EE6C7B301C4ADB1D 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 C92FBDBB320D6C40BEB41D97EE6C7B301C4ADB1D
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7429
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7431
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 021F8912B268BE164A590D1440F05920A3F2A63B9874F994402C7AFFC6F92F82 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 02E68C9160BF270CAF19E18D3A77BC2EAA90EFCB3ECA3C454B58CD5BBA5FF7ED 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 047D891CAC8D4F883998ACEFD1EB63F6A679046FFD19EC1276A057F847EE37F6 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 06ADCD404637282636289E77FA01C56630CB4945332C96D5FA2D9239FE0D6B04 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 06D49AE61368F7B7C195381125B5A5E8F6830EA024D49F5C1A62950E74DBAF3D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 091971E0756262C068D16B941EA6256855E94532833A9CE3374D9768E27E4596 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 124360CE49E1C84604EFA93F8F0C3292C1D216DB605CF153414D893922B18C9F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 13BE6783CC652C89CC0161446DBD67966CAC410DEA4DE4279FC767A259EFD546 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 1B8D49F1227D3FC61644822B9FC00CE70A3B2438A1064323BFBE6A022A26F042 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 1C01F69BD2391DE00F8F1B377D2D9E5991674702AD777030BA910AC531E4B0FE 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 22E5D3D9ABC124EE0214CEF7079F24CFF9BE30FD6AF6BA5BBE15920C57497EA1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 2A03DC27FE2EB4E5D0A4358E22435065F2FB1BBF8CC2C4D9F754A9F24089344E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=60 2A1C6CEE1B003A06B471AA7632C6B5C4ED18A4E1A4784BF8CA09BD4F38BA4BB5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 2BCE8E19B19AAD97CC510F21B5828CCB319639FA317FB59926A436ED3543F58D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 2C72B27AAD08F98379E9F3E0F6A2D625F895C9E55F61404790377FC196FA14B8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 2F4596419894C88417AC4DF5C99E98A374EFE4B57B7A4EB89CE65FEB92850A61 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 320B0930454D74130DD5E245B70DA1736A2C1B5E664DD5BB82B490E60F3ECA2A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 3229DAC3DA84FAC1A1018091DAF2A0C3D6B3624AC33BECF13A371238DAC95055 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 3543AE0E1ED6A92350687219F717764E126E06D4FA179DE5B0CB3E2BDFE4AC9E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 3554CE8BB09083C24D298DF77456CB67242E6EEE3DEDFE595E11B90D2F70C0FF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1500 3B42FF7B534B27868E300720C678882AF0698E9434D0FA135656E097480324FF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 3EDD050356C639DD16815E64CA19652B1B981F1BA2FF76176BB3995FF0DB860D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 4053901EA5134D137292C48A98E1382B09C1E49C98EEF77C2D00D8FF24481D4F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 419EB5F371A1171DBE8C085F1BB25D78AA0647C1365608E167054A37BFEAD834 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 4517AF16CD9D95D0B56C33292D289749B763021F170127ED439165498D243E69 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 4E7A2BE1E8600FA773FA4952A14AE27AD21E294C2C90F674BEA6BB8B089F39C1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 550560694565D72C91221BEE89B41C8AA412660E1CF28C626BC523BC959438A9 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=8748 5600405012DD0807E058E5A8F3F7A9AF31716C8560F552613672D0D770364603 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 56C5F192F58A478FC32D5428DA86D03B15A95E9A982E82BA5026E6EBE259FE48 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 57CD95842F6B0D5A0823F7A82A33632D2D4DA79615A834507722CBBBD054E3CF 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 58BB6050E828A1FDB65D46F61ADBE862543CF7261AA487580A1328D24E944BBD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 5ED52DA9C543DD730BD7056787DF87C0AED3189F42C3321C4196EA8B70C87D2A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=88 6547EC5EB178C3DBF6A302152A1FE3BDF747E8E5EB41343EECEA2F45D745E5D1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 673F8620472294A2666EB7018FC21EF377E5B15A76872E89803CBDBDBC17F1B8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 6807ED2269DB8E9A70F5D22C6D41806D26C51C306050C58861DEBD9B21D76D0B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 6810D47101B1F88C982302E36EF8DBDB344EAFDF31E058B2AE9B23522DA15D89 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 683133215F3906FE49DACDB11CE3F917EF1B439110BF4CE1092DB8F15D087E2F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 68F20C1D1F9AD9A40A6FF9C3879482F58AED8E4A58995CEB0F83B2575DCFD2BC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 6B6C31FF54224894CC66030691DB54C3EEE6BE4D42DB3DDA43EEC126F036360E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 70CBEAD43E82DC4CCC445D5552A983D797EEF8D2AD3665EB8FAAB2187F64F6FE 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 70CF9A93794FD166C020BBDF13AE34B6B43B3A2271EC768A35797C135FC62D20 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 79B6797C01D7827A0E35892156B642BD84A9FA528E603C743515D3822864A051 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 7A5DCFD7518F8A0A3FA422FA014FF84FE08070112345B17E00C0FB0AFC6D7461 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 7CC4C8FC1CA4B0FA871FEB4911499E0268FE161D01C6ADFD186B0378C4063EBA 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 8C6C0F60451FBE1D2DDDF80A2A9F0B7684893D5B0B8CEAB4CA837EE615B3954E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 941D4DCAADBEC3CC42B0F9F20212661AC83343F86BC7F873B237BC25AF1B195C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9742CA838C60363B639BEC16A2086253E96A532C05331B73181E45ED9D213F13 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=324 9F53690DAB4D28E43D6BB3EB96D00F76FAF99D7681A6E8F0061297C8DD5EFF33 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9FB71D398994B2E0C6CE3CE99EE4CBD26EE1524A81DDB919603C13A2885F5483 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 A28E77C3345C5351A69C7393656A759AABE24F2E59F5BFC49A771E190D9C9FCC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 A3F937EE796D2312148DDB921F1293E76047E426F9BF3864DD12817D66034E74 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 A4B3F75E2EA169B5351F2BAA4DBAB862A18EDFBAE5B1CB4DBEFAEC4E22DA6BD3 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 A84E72B8CD1EB5B569F80091ADA35B15F45C05E48515346C276DFBC7457817CD 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 AC808BDFC94A2720F9A403E96C598F28C4A82AACBF21E2A1A6347C32A66B6425 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 B107577D43B15DF28D27533ADF012E72BD63868C2A2E688AC15978DC38CD5677 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 B10D5342782BFD3820C0FFBD8DDCDF80BAA0ED5F0DF5746D2EA885110239AC7A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 B79C140A0DE10B238571FE854A6BC223D6D8C50F6ED4E227CCC677094DCB3558 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 B9C5D4C45600219530B355BB1786AA4E282347901A9E3BF35DC8EE98E1307DFB 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 BBDCD859D8A76172AF0C213EFB99A6F64E8AB028BECE6D313FA5B6BCF96CD15A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 C271A86BEFE71CEF20615946687F7A3A13E980C14FD4637951697CD4A6112156 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 C31F1438706DA962938E7F1D03470E164E0EA9EE1CD0F0D19CA29C7E932C91DC 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 C3FBE83D14A8E5B3DCCAF45D7AD6C35F769326FFAED483A102ACF50FB824C9C2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 C6D060549430A52150918BF2837FCCD94C6D727B74A5946A8F7EF51B940C3CF7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 C775F22681F0D15310756B294BB58FC4364A5DE6030B819E8D3EEC4E75454915 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 C807773510A04834C84A6A093A8267D127DC4413714AD99057315D8CABE1D467 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 C842A7F36E23186A8F55DC7D0E63E781469950969CB88357227234F95C35DEA9 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 CCC564D5CDB40E327F07151E33EF8AD040EEB5129CE505D00FE6EC11BD28C359 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 CD4DE47C20503BFF1B99694EAF6390723510293766C75243F8B3CA7B56C89359 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 D20525C66D9D2B26BC9D3A773951775A3813FC7F97CC4A2EADFF258D3C9D869E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 D3310F8730C74E00C7014874471A5E27574CD015457352EFB0373E8C5DA85FD1 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 DD54E6E73536232DFD682C64D36E265B59ACF8AD04FC6062A2EB7225BBDDDB02 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 DDC358E79464AB64B601CE4D8FBC308D787438D4CE92844B5FD77F2DE1E21575 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 DE26AA4452A148F1FCFF9D95EA656766D0DC19BDCEE086F85BC3F9BD8AB7F25B 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 E2AA696710083FEFF382491A86DF649DB1E8EE6AA4ECF99E8D98CFBF871BFCE4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=60 ED977BBA7102E7758BEF3DA21CD69B44B8864A1D6F43BB20E6BF59862487ECBA 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 EFC52C86FFF3F24CE6C0C14D161FCF00584AB329C5997334034F2B4D91225307 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 F1B0145A5F0D3E964A90201094730422F3013B94D7B9E73B6FFDED5643D486A2 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 F8756C1F7B8F886752A7B73230C5AC5397F7CE2B1BFDC5C139DBED513BD228C3 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 021F8912B268BE164A590D1440F05920A3F2A63B9874F994402C7AFFC6F92F82
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 02E68C9160BF270CAF19E18D3A77BC2EAA90EFCB3ECA3C454B58CD5BBA5FF7ED
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 047D891CAC8D4F883998ACEFD1EB63F6A679046FFD19EC1276A057F847EE37F6
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 06ADCD404637282636289E77FA01C56630CB4945332C96D5FA2D9239FE0D6B04
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 06D49AE61368F7B7C195381125B5A5E8F6830EA024D49F5C1A62950E74DBAF3D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 091971E0756262C068D16B941EA6256855E94532833A9CE3374D9768E27E4596
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 124360CE49E1C84604EFA93F8F0C3292C1D216DB605CF153414D893922B18C9F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 13BE6783CC652C89CC0161446DBD67966CAC410DEA4DE4279FC767A259EFD546
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 1B8D49F1227D3FC61644822B9FC00CE70A3B2438A1064323BFBE6A022A26F042
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 1C01F69BD2391DE00F8F1B377D2D9E5991674702AD777030BA910AC531E4B0FE
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 22E5D3D9ABC124EE0214CEF7079F24CFF9BE30FD6AF6BA5BBE15920C57497EA1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 2A03DC27FE2EB4E5D0A4358E22435065F2FB1BBF8CC2C4D9F754A9F24089344E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=60 2A1C6CEE1B003A06B471AA7632C6B5C4ED18A4E1A4784BF8CA09BD4F38BA4BB5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 2BCE8E19B19AAD97CC510F21B5828CCB319639FA317FB59926A436ED3543F58D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 2C72B27AAD08F98379E9F3E0F6A2D625F895C9E55F61404790377FC196FA14B8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 2F4596419894C88417AC4DF5C99E98A374EFE4B57B7A4EB89CE65FEB92850A61
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 320B0930454D74130DD5E245B70DA1736A2C1B5E664DD5BB82B490E60F3ECA2A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 3229DAC3DA84FAC1A1018091DAF2A0C3D6B3624AC33BECF13A371238DAC95055
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 3543AE0E1ED6A92350687219F717764E126E06D4FA179DE5B0CB3E2BDFE4AC9E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 3554CE8BB09083C24D298DF77456CB67242E6EEE3DEDFE595E11B90D2F70C0FF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1500 3B42FF7B534B27868E300720C678882AF0698E9434D0FA135656E097480324FF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 3EDD050356C639DD16815E64CA19652B1B981F1BA2FF76176BB3995FF0DB860D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 4053901EA5134D137292C48A98E1382B09C1E49C98EEF77C2D00D8FF24481D4F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 419EB5F371A1171DBE8C085F1BB25D78AA0647C1365608E167054A37BFEAD834
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 4517AF16CD9D95D0B56C33292D289749B763021F170127ED439165498D243E69
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 4E7A2BE1E8600FA773FA4952A14AE27AD21E294C2C90F674BEA6BB8B089F39C1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 550560694565D72C91221BEE89B41C8AA412660E1CF28C626BC523BC959438A9
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=8748 5600405012DD0807E058E5A8F3F7A9AF31716C8560F552613672D0D770364603
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 56C5F192F58A478FC32D5428DA86D03B15A95E9A982E82BA5026E6EBE259FE48
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 57CD95842F6B0D5A0823F7A82A33632D2D4DA79615A834507722CBBBD054E3CF
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 58BB6050E828A1FDB65D46F61ADBE862543CF7261AA487580A1328D24E944BBD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 5ED52DA9C543DD730BD7056787DF87C0AED3189F42C3321C4196EA8B70C87D2A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=88 6547EC5EB178C3DBF6A302152A1FE3BDF747E8E5EB41343EECEA2F45D745E5D1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 673F8620472294A2666EB7018FC21EF377E5B15A76872E89803CBDBDBC17F1B8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 6807ED2269DB8E9A70F5D22C6D41806D26C51C306050C58861DEBD9B21D76D0B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 6810D47101B1F88C982302E36EF8DBDB344EAFDF31E058B2AE9B23522DA15D89
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 683133215F3906FE49DACDB11CE3F917EF1B439110BF4CE1092DB8F15D087E2F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 68F20C1D1F9AD9A40A6FF9C3879482F58AED8E4A58995CEB0F83B2575DCFD2BC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 6B6C31FF54224894CC66030691DB54C3EEE6BE4D42DB3DDA43EEC126F036360E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 70CBEAD43E82DC4CCC445D5552A983D797EEF8D2AD3665EB8FAAB2187F64F6FE
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 70CF9A93794FD166C020BBDF13AE34B6B43B3A2271EC768A35797C135FC62D20
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 79B6797C01D7827A0E35892156B642BD84A9FA528E603C743515D3822864A051
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 7A5DCFD7518F8A0A3FA422FA014FF84FE08070112345B17E00C0FB0AFC6D7461
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 7CC4C8FC1CA4B0FA871FEB4911499E0268FE161D01C6ADFD186B0378C4063EBA
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 8C6C0F60451FBE1D2DDDF80A2A9F0B7684893D5B0B8CEAB4CA837EE615B3954E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 941D4DCAADBEC3CC42B0F9F20212661AC83343F86BC7F873B237BC25AF1B195C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9742CA838C60363B639BEC16A2086253E96A532C05331B73181E45ED9D213F13
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=324 9F53690DAB4D28E43D6BB3EB96D00F76FAF99D7681A6E8F0061297C8DD5EFF33
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 9FB71D398994B2E0C6CE3CE99EE4CBD26EE1524A81DDB919603C13A2885F5483
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 A28E77C3345C5351A69C7393656A759AABE24F2E59F5BFC49A771E190D9C9FCC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 A3F937EE796D2312148DDB921F1293E76047E426F9BF3864DD12817D66034E74
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 A4B3F75E2EA169B5351F2BAA4DBAB862A18EDFBAE5B1CB4DBEFAEC4E22DA6BD3
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 A84E72B8CD1EB5B569F80091ADA35B15F45C05E48515346C276DFBC7457817CD
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 AC808BDFC94A2720F9A403E96C598F28C4A82AACBF21E2A1A6347C32A66B6425
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 B107577D43B15DF28D27533ADF012E72BD63868C2A2E688AC15978DC38CD5677
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 B10D5342782BFD3820C0FFBD8DDCDF80BAA0ED5F0DF5746D2EA885110239AC7A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 B79C140A0DE10B238571FE854A6BC223D6D8C50F6ED4E227CCC677094DCB3558
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 B9C5D4C45600219530B355BB1786AA4E282347901A9E3BF35DC8EE98E1307DFB
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 BBDCD859D8A76172AF0C213EFB99A6F64E8AB028BECE6D313FA5B6BCF96CD15A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 C271A86BEFE71CEF20615946687F7A3A13E980C14FD4637951697CD4A6112156
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 C31F1438706DA962938E7F1D03470E164E0EA9EE1CD0F0D19CA29C7E932C91DC
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 C3FBE83D14A8E5B3DCCAF45D7AD6C35F769326FFAED483A102ACF50FB824C9C2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 C6D060549430A52150918BF2837FCCD94C6D727B74A5946A8F7EF51B940C3CF7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 C775F22681F0D15310756B294BB58FC4364A5DE6030B819E8D3EEC4E75454915
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 C807773510A04834C84A6A093A8267D127DC4413714AD99057315D8CABE1D467
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 C842A7F36E23186A8F55DC7D0E63E781469950969CB88357227234F95C35DEA9
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 CCC564D5CDB40E327F07151E33EF8AD040EEB5129CE505D00FE6EC11BD28C359
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 CD4DE47C20503BFF1B99694EAF6390723510293766C75243F8B3CA7B56C89359
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 D20525C66D9D2B26BC9D3A773951775A3813FC7F97CC4A2EADFF258D3C9D869E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 D3310F8730C74E00C7014874471A5E27574CD015457352EFB0373E8C5DA85FD1
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 DD54E6E73536232DFD682C64D36E265B59ACF8AD04FC6062A2EB7225BBDDDB02
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 DDC358E79464AB64B601CE4D8FBC308D787438D4CE92844B5FD77F2DE1E21575
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 DE26AA4452A148F1FCFF9D95EA656766D0DC19BDCEE086F85BC3F9BD8AB7F25B
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 E2AA696710083FEFF382491A86DF649DB1E8EE6AA4ECF99E8D98CFBF871BFCE4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=60 ED977BBA7102E7758BEF3DA21CD69B44B8864A1D6F43BB20E6BF59862487ECBA
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 EFC52C86FFF3F24CE6C0C14D161FCF00584AB329C5997334034F2B4D91225307
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 F1B0145A5F0D3E964A90201094730422F3013B94D7B9E73B6FFDED5643D486A2
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 F8756C1F7B8F886752A7B73230C5AC5397F7CE2B1BFDC5C139DBED513BD228C3
 
 }
 
-internal sealed class TimedObjectsComparer<TObject> : IComparer<TObject> // TypeDefIndex: 7478
+internal sealed class TimedObjectsComparer<TObject> : IComparer<TObject> // TypeDefIndex: 7480
 {
 
 	public int Compare(TObject x, TObject y) { }
@@ -7595,11 +7612,11 @@ internal sealed class TimedObjectsComparer<TObject> : IComparer<TObject> // Type
 
 }
 
-public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7518
+public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7520
 {
-	private readonly long _time; 
-	[CompilerGeneratedAttribute] 
-	private readonly TValue <Value>k__BackingField; 
+	private readonly long _time;
+	[CompilerGeneratedAttribute]
+	private readonly TValue <Value>k__BackingField;
 
 	public long Time { get; }
 	public TValue Value { get; }
@@ -7619,7 +7636,7 @@ public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7518
 	|-ValueChange<object>.get_Time
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TValue get_Value() { }
 	/* GenericInstMethod :
 	|
@@ -7660,18 +7677,18 @@ public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7518
 
 }
 
-public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnumerable // TypeDefIndex: 7519
+public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnumerable // TypeDefIndex: 7521
 {
-	[CompilerGeneratedAttribute] 
-	private EventHandler ValuesChanged; 
-	private readonly TimedObjectsComparer<ValueChange<TValue>> _comparer; 
-	private readonly List<ValueChange<TValue>> _valueChanges; 
-	private readonly TValue _defaultValue; 
-	private bool _valuesChanged; 
-	private long _maxTime; 
+	[CompilerGeneratedAttribute]
+	private EventHandler ValuesChanged;
+	private readonly TimedObjectsComparer<ValueChange<TValue>> _comparer;
+	private readonly List<ValueChange<TValue>> _valueChanges;
+	private readonly TValue _defaultValue;
+	private bool _valuesChanged;
+	private long _maxTime;
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void add_ValuesChanged(EventHandler value) { }
 	/* GenericInstMethod :
 	|
@@ -7680,7 +7697,7 @@ public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnume
 	|-ValueLine<object>.add_ValuesChanged
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void remove_ValuesChanged(EventHandler value) { }
 	/* GenericInstMethod :
 	|
@@ -7765,130 +7782,130 @@ public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnume
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7652
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7654
 {
-	internal static readonly int B52DDE3D967E604310620E80EFBFBED9B6FB8C0605B3CB29D31534DAA6181A7C = 505223448; 
+	internal static readonly int B52DDE3D967E604310620E80EFBFBED9B6FB8C0605B3CB29D31534DAA6181A7C = 505223448;
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7853
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7855
 {
-	internal static <PrivateImplementationDetails>.$ArrayType$132 $$field-0 
+	internal static <PrivateImplementationDetails>.$ArrayType$132 $$field-0
 
 
 	public void .ctor() { }
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7871
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7873
 {
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6 
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6
 
 
 	public void .ctor() { }
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7912
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7914
 {
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-7 
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-7
 
 
 	public void .ctor() { }
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7990
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7992
 {
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-7 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-8 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-9 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-10 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-11 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-12 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-13 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-14 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-15 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-16 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-17 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-18 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-19 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-20 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-21 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-22 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-23 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-24 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-25 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-26 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-27 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-28 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-29 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-30 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-31 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-32 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-33 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-34 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-35 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-36 
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-7
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-8
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-9
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-10
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-11
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-12
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-13
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-14
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-15
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-16
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-17
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-18
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-19
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-20
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-21
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-22
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-23
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-24
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-25
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-26
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-27
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-28
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-29
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-30
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-31
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-32
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-33
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-34
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-35
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-36
 
 
 	public void .ctor() { }
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 8024
+internal class <PrivateImplementationDetails> // TypeDefIndex: 8026
 {
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-7 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-8 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-9 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-10 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-11 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-12 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-13 
-	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-14 
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-2
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-3
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-4
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-5
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-6
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-7
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-8
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-9
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-10
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-11
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-12
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-13
+	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-14
 
 
 	public void .ctor() { }
 
 }
 
-public class CC_AnalogTV : CC_Base // TypeDefIndex: 8052
+public class CC_AnalogTV : CC_Base // TypeDefIndex: 8054
 {
-	public float phase; 
-	public bool grayscale; 
-	public float noiseIntensity; 
-	public float scanlinesIntensity; 
-	public float scanlinesCount; 
-	public float distortion; 
-	public float cubicDistortion; 
-	public float scale; 
+	public float phase;
+	public bool grayscale;
+	public float noiseIntensity;
+	public float scanlinesIntensity;
+	public float scanlinesCount;
+	public float distortion;
+	public float cubicDistortion;
+	public float scale;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -7897,10 +7914,10 @@ public class CC_AnalogTV : CC_Base // TypeDefIndex: 8052
 
 }
 
-public class CC_Base : MonoBehaviour // TypeDefIndex: 8053
+public class CC_Base : MonoBehaviour // TypeDefIndex: 8055
 {
-	public Shader shader; 
-	protected Material _material; 
+	public Shader shader;
+	protected Material _material;
 
 	protected Material material { get; }
 
@@ -7915,9 +7932,9 @@ public class CC_Base : MonoBehaviour // TypeDefIndex: 8053
 
 }
 
-public class CC_BleachBypass : CC_Base // TypeDefIndex: 8054
+public class CC_BleachBypass : CC_Base // TypeDefIndex: 8056
 {
-	public float amount; 
+	public float amount;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -7926,11 +7943,11 @@ public class CC_BleachBypass : CC_Base // TypeDefIndex: 8054
 
 }
 
-public class CC_Blend : CC_Base // TypeDefIndex: 8055
+public class CC_Blend : CC_Base // TypeDefIndex: 8057
 {
-	public Texture texture; 
-	public float amount; 
-	public int mode; 
+	public Texture texture;
+	public float amount;
+	public int mode;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -7939,14 +7956,14 @@ public class CC_Blend : CC_Base // TypeDefIndex: 8055
 
 }
 
-public class CC_BrightnessContrastGamma : CC_Base // TypeDefIndex: 8056
+public class CC_BrightnessContrastGamma : CC_Base // TypeDefIndex: 8058
 {
-	public float redCoeff; 
-	public float greenCoeff; 
-	public float blueCoeff; 
-	public float brightness; 
-	public float contrast; 
-	public float gamma; 
+	public float redCoeff;
+	public float greenCoeff;
+	public float blueCoeff;
+	public float brightness;
+	public float contrast;
+	public float gamma;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -7955,20 +7972,20 @@ public class CC_BrightnessContrastGamma : CC_Base // TypeDefIndex: 8056
 
 }
 
-public class CC_ChannelMixer : CC_Base // TypeDefIndex: 8057
+public class CC_ChannelMixer : CC_Base // TypeDefIndex: 8059
 {
-	public float redR; 
-	public float redG; 
-	public float redB; 
-	public float greenR; 
-	public float greenG; 
-	public float greenB; 
-	public float blueR; 
-	public float blueG; 
-	public float blueB; 
-	public float constantR; 
-	public float constantG; 
-	public float constantB; 
+	public float redR;
+	public float redG;
+	public float redB;
+	public float greenR;
+	public float greenG;
+	public float greenB;
+	public float blueR;
+	public float blueG;
+	public float blueB;
+	public float constantR;
+	public float constantG;
+	public float constantB;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -7977,13 +7994,13 @@ public class CC_ChannelMixer : CC_Base // TypeDefIndex: 8057
 
 }
 
-public class CC_Convolution3x3 : CC_Base // TypeDefIndex: 8058
+public class CC_Convolution3x3 : CC_Base // TypeDefIndex: 8060
 {
-	public Vector3 kernelTop; 
-	public Vector3 kernelMiddle; 
-	public Vector3 kernelBottom; 
-	public float divisor; 
-	public float amount; 
+	public Vector3 kernelTop;
+	public Vector3 kernelMiddle;
+	public Vector3 kernelBottom;
+	public float divisor;
+	public float amount;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -7992,12 +8009,12 @@ public class CC_Convolution3x3 : CC_Base // TypeDefIndex: 8058
 
 }
 
-public class CC_CrossStitch : CC_Base // TypeDefIndex: 8059
+public class CC_CrossStitch : CC_Base // TypeDefIndex: 8061
 {
-	public int size; 
-	public float brightness; 
-	public bool invert; 
-	public bool pixelize; 
+	public int size;
+	public float brightness;
+	public bool invert;
+	public bool pixelize;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8006,10 +8023,10 @@ public class CC_CrossStitch : CC_Base // TypeDefIndex: 8059
 
 }
 
-public class CC_DoubleVision : CC_Base, IImageEffect // TypeDefIndex: 8060
+public class CC_DoubleVision : CC_Base, IImageEffect // TypeDefIndex: 8062
 {
-	public Vector2 displace; 
-	public float amount; 
+	public Vector2 displace;
+	public float amount;
 
 
 	public bool IsActive() { }
@@ -8020,11 +8037,11 @@ public class CC_DoubleVision : CC_Base, IImageEffect // TypeDefIndex: 8060
 
 }
 
-public class CC_FastVignette : CC_Base // TypeDefIndex: 8061
+public class CC_FastVignette : CC_Base // TypeDefIndex: 8063
 {
-	public float sharpness; 
-	public float darkness; 
-	public bool desaturate; 
+	public float sharpness;
+	public float darkness;
+	public bool desaturate;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8033,12 +8050,12 @@ public class CC_FastVignette : CC_Base // TypeDefIndex: 8061
 
 }
 
-public class CC_Frost : CC_Base, IImageEffect // TypeDefIndex: 8062
+public class CC_Frost : CC_Base, IImageEffect // TypeDefIndex: 8064
 {
-	public float scale; 
-	public float sharpness; 
-	public float darkness; 
-	public bool enableVignette; 
+	public float scale;
+	public float sharpness;
+	public float darkness;
+	public bool enableVignette;
 
 
 	public bool IsActive() { }
@@ -8049,10 +8066,10 @@ public class CC_Frost : CC_Base, IImageEffect // TypeDefIndex: 8062
 
 }
 
-public class CC_GradientRamp : CC_Base // TypeDefIndex: 8063
+public class CC_GradientRamp : CC_Base // TypeDefIndex: 8065
 {
-	public Texture rampTexture; 
-	public float amount; 
+	public Texture rampTexture;
+	public float amount;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8061,12 +8078,12 @@ public class CC_GradientRamp : CC_Base // TypeDefIndex: 8063
 
 }
 
-public class CC_Grayscale : CC_Base, IImageEffect // TypeDefIndex: 8064
+public class CC_Grayscale : CC_Base, IImageEffect // TypeDefIndex: 8066
 {
-	public float redLuminance; 
-	public float greenLuminance; 
-	public float blueLuminance; 
-	public float amount; 
+	public float redLuminance;
+	public float greenLuminance;
+	public float blueLuminance;
+	public float amount;
 
 
 	public bool IsActive() { }
@@ -8077,12 +8094,12 @@ public class CC_Grayscale : CC_Base, IImageEffect // TypeDefIndex: 8064
 
 }
 
-public class CC_Halftone : CC_Base // TypeDefIndex: 8065
+public class CC_Halftone : CC_Base // TypeDefIndex: 8067
 {
-	public float density; 
-	public int mode; 
-	public bool antialiasing; 
-	public bool showOriginal; 
+	public float density;
+	public int mode;
+	public bool antialiasing;
+	public bool showOriginal;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8091,11 +8108,11 @@ public class CC_Halftone : CC_Base // TypeDefIndex: 8065
 
 }
 
-public class CC_HueSaturationValue : CC_Base // TypeDefIndex: 8066
+public class CC_HueSaturationValue : CC_Base // TypeDefIndex: 8068
 {
-	public float hue; 
-	public float saturation; 
-	public float value; 
+	public float hue;
+	public float saturation;
+	public float value;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8104,13 +8121,13 @@ public class CC_HueSaturationValue : CC_Base // TypeDefIndex: 8066
 
 }
 
-public class CC_Led : CC_Base // TypeDefIndex: 8067
+public class CC_Led : CC_Base // TypeDefIndex: 8069
 {
-	public float scale; 
-	public bool automaticRatio; 
-	public float ratio; 
-	public float brightness; 
-	public int mode; 
+	public float scale;
+	public bool automaticRatio;
+	public float ratio;
+	public float brightness;
+	public int mode;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8119,29 +8136,29 @@ public class CC_Led : CC_Base // TypeDefIndex: 8067
 
 }
 
-public class CC_Levels : CC_Base // TypeDefIndex: 8068
+public class CC_Levels : CC_Base // TypeDefIndex: 8070
 {
-	public int mode; 
-	public float inputMinL; 
-	public float inputMaxL; 
-	public float inputGammaL; 
-	public float inputMinR; 
-	public float inputMaxR; 
-	public float inputGammaR; 
-	public float inputMinG; 
-	public float inputMaxG; 
-	public float inputGammaG; 
-	public float inputMinB; 
-	public float inputMaxB; 
-	public float inputGammaB; 
-	public float outputMinL; 
-	public float outputMaxL; 
-	public float outputMinR; 
-	public float outputMaxR; 
-	public float outputMinG; 
-	public float outputMaxG; 
-	public float outputMinB; 
-	public float outputMaxB; 
+	public int mode;
+	public float inputMinL;
+	public float inputMaxL;
+	public float inputGammaL;
+	public float inputMinR;
+	public float inputMaxR;
+	public float inputGammaR;
+	public float inputMinG;
+	public float inputMaxG;
+	public float inputGammaG;
+	public float inputMinB;
+	public float inputMaxB;
+	public float inputGammaB;
+	public float outputMinL;
+	public float outputMaxL;
+	public float outputMinR;
+	public float outputMaxR;
+	public float outputMinG;
+	public float outputMaxG;
+	public float outputMinB;
+	public float outputMaxB;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8150,9 +8167,9 @@ public class CC_Levels : CC_Base // TypeDefIndex: 8068
 
 }
 
-public class CC_LookupFilter : CC_Base // TypeDefIndex: 8069
+public class CC_LookupFilter : CC_Base // TypeDefIndex: 8071
 {
-	public Texture lookupTexture; 
+	public Texture lookupTexture;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8161,9 +8178,9 @@ public class CC_LookupFilter : CC_Base // TypeDefIndex: 8069
 
 }
 
-public class CC_Negative : CC_Base // TypeDefIndex: 8070
+public class CC_Negative : CC_Base // TypeDefIndex: 8072
 {
-	public float amount; 
+	public float amount;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8172,10 +8189,10 @@ public class CC_Negative : CC_Base // TypeDefIndex: 8070
 
 }
 
-public class CC_PhotoFilter : CC_Base, IImageEffect // TypeDefIndex: 8071
+public class CC_PhotoFilter : CC_Base, IImageEffect // TypeDefIndex: 8073
 {
-	public Color color; 
-	public float density; 
+	public Color color;
+	public float density;
 
 
 	public bool IsActive() { }
@@ -8186,12 +8203,12 @@ public class CC_PhotoFilter : CC_Base, IImageEffect // TypeDefIndex: 8071
 
 }
 
-public class CC_Pixelate : CC_Base // TypeDefIndex: 8072
+public class CC_Pixelate : CC_Base // TypeDefIndex: 8074
 {
-	public float scale; 
-	public bool automaticRatio; 
-	public float ratio; 
-	public int mode; 
+	public float scale;
+	public bool automaticRatio;
+	public float ratio;
+	public int mode;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8200,9 +8217,9 @@ public class CC_Pixelate : CC_Base // TypeDefIndex: 8072
 
 }
 
-public class CC_Posterize : CC_Base // TypeDefIndex: 8073
+public class CC_Posterize : CC_Base // TypeDefIndex: 8075
 {
-	public int levels; 
+	public int levels;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8211,10 +8228,10 @@ public class CC_Posterize : CC_Base // TypeDefIndex: 8073
 
 }
 
-public class CC_RGBSplit : CC_Base // TypeDefIndex: 8074
+public class CC_RGBSplit : CC_Base // TypeDefIndex: 8076
 {
-	public float amount; 
-	public float angle; 
+	public float amount;
+	public float angle;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8223,11 +8240,11 @@ public class CC_RGBSplit : CC_Base // TypeDefIndex: 8074
 
 }
 
-public class CC_RadialBlur : CC_Base // TypeDefIndex: 8075
+public class CC_RadialBlur : CC_Base // TypeDefIndex: 8077
 {
-	public float amount; 
-	public Vector2 center; 
-	public int quality; 
+	public float amount;
+	public Vector2 center;
+	public int quality;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8236,10 +8253,10 @@ public class CC_RadialBlur : CC_Base // TypeDefIndex: 8075
 
 }
 
-public class CC_Sharpen : CC_Base // TypeDefIndex: 8076
+public class CC_Sharpen : CC_Base // TypeDefIndex: 8078
 {
-	public float strength; 
-	public float clamp; 
+	public float strength;
+	public float clamp;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8248,20 +8265,20 @@ public class CC_Sharpen : CC_Base // TypeDefIndex: 8076
 
 }
 
-public class CC_SharpenAndVignette : CC_Base, IImageEffect // TypeDefIndex: 8077
+public class CC_SharpenAndVignette : CC_Base, IImageEffect // TypeDefIndex: 8079
 {
-	[HeaderAttribute] 
-	public bool applySharpen; 
-	[RangeAttribute] 
-	public float strength; 
-	[RangeAttribute] 
-	public float clamp; 
-	[HeaderAttribute] 
-	public bool applyVignette; 
-	[RangeAttribute] 
-	public float sharpness; 
-	[RangeAttribute] 
-	public float darkness; 
+	[HeaderAttribute]
+	public bool applySharpen;
+	[RangeAttribute]
+	public float strength;
+	[RangeAttribute]
+	public float clamp;
+	[HeaderAttribute]
+	public bool applyVignette;
+	[RangeAttribute]
+	public float sharpness;
+	[RangeAttribute]
+	public float darkness;
 
 
 	public bool IsActive() { }
@@ -8272,11 +8289,11 @@ public class CC_SharpenAndVignette : CC_Base, IImageEffect // TypeDefIndex: 8077
 
 }
 
-public class CC_Threshold : CC_Base // TypeDefIndex: 8078
+public class CC_Threshold : CC_Base // TypeDefIndex: 8080
 {
-	public float threshold; 
-	public bool useNoise; 
-	public float noiseRange; 
+	public float threshold;
+	public bool useNoise;
+	public float noiseRange;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8285,9 +8302,9 @@ public class CC_Threshold : CC_Base // TypeDefIndex: 8078
 
 }
 
-public class CC_Vibrance : CC_Base // TypeDefIndex: 8079
+public class CC_Vibrance : CC_Base // TypeDefIndex: 8081
 {
-	public float amount; 
+	public float amount;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
@@ -8296,11 +8313,11 @@ public class CC_Vibrance : CC_Base // TypeDefIndex: 8079
 
 }
 
-public class CC_Wiggle : CC_Base, IImageEffect // TypeDefIndex: 8080
+public class CC_Wiggle : CC_Base, IImageEffect // TypeDefIndex: 8082
 {
-	public float timer; 
-	public float speed; 
-	public float scale; 
+	public float timer;
+	public float speed;
+	public float scale;
 
 
 	private void Update() { }
@@ -8313,18 +8330,18 @@ public class CC_Wiggle : CC_Base, IImageEffect // TypeDefIndex: 8080
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 9953
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 9955
 {
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=19552 1DC4C1B55DC0F7A09DD49557857282243A661721 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=420 4D97B7EA75C57A5C53C1E01B1C6253465DE43B65 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=15874 9B733B2872507920FB43A4A60F4CBE3E17200C8C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=15874 C01F4A345A0DC451B12954EDA4ED605D0075A2A5 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD09230AEF3C2384FBC6D4B1BC4EADBE9911368E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9776 F2AB9A53871DA3CF4444B73A4D38E5580D8F8ED3 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=19552 1DC4C1B55DC0F7A09DD49557857282243A661721
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=420 4D97B7EA75C57A5C53C1E01B1C6253465DE43B65
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=15874 9B733B2872507920FB43A4A60F4CBE3E17200C8C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=15874 C01F4A345A0DC451B12954EDA4ED605D0075A2A5
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 DD09230AEF3C2384FBC6D4B1BC4EADBE9911368E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9776 F2AB9A53871DA3CF4444B73A4D38E5580D8F8ED3
 
 }
 
-internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <State>j__TPar> // TypeDefIndex: 9960
+internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <State>j__TPar> // TypeDefIndex: 9962
 {
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=420
@@ -8337,14 +8354,14 @@ private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=19552
 
 internal class <Module>
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <State>j__TPar>
-	[DebuggerBrowsableAttribute] 
-	private readonly <Identifier>j__TPar <Identifier>i__Field; 
-	[DebuggerBrowsableAttribute] 
-	private readonly <Name>j__TPar <Name>i__Field; 
-	[DebuggerBrowsableAttribute] 
-	private readonly <State>j__TPar <State>i__Field; 
+	[DebuggerBrowsableAttribute]
+	private readonly <Identifier>j__TPar <Identifier>i__Field;
+	[DebuggerBrowsableAttribute]
+	private readonly <Name>j__TPar <Name>i__Field;
+	[DebuggerBrowsableAttribute]
+	private readonly <State>j__TPar <State>i__Field;
 
 	public <Identifier>j__TPar Identifier { get; }
 	public <Name>j__TPar Name { get; }
@@ -8373,7 +8390,7 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 	|-<>f__AnonymousType0<object, object, object>.get_State
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(<Identifier>j__TPar Identifier, <Name>j__TPar Name, <State>j__TPar State) { }
 	/* GenericInstMethod :
 	|
@@ -8383,7 +8400,7 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 	|-<>f__AnonymousType0<object, object, object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public override bool Equals(object value) { }
 	/* GenericInstMethod :
 	|
@@ -8392,7 +8409,7 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 	|-<>f__AnonymousType0<object, object, object>.Equals
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public override int GetHashCode() { }
 	/* GenericInstMethod :
 	|
@@ -8401,7 +8418,7 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 	|-<>f__AnonymousType0<object, object, object>.GetHashCode
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public override string ToString() { }
 	/* GenericInstMethod :
 	|
@@ -8412,32 +8429,32 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 
 }
 
-public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10623
+public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10627
 {
-	public bool bAttacking; 
-	public bool bHitMetal; 
-	public bool bHitWood; 
-	public bool bHitFlesh; 
-	public bool bEngineOn; 
-	public ParticleSystem[] hitMetalFX; 
-	public ParticleSystem[] hitWoodFX; 
-	public ParticleSystem[] hitFleshFX; 
-	public SoundDefinition hitMetalSoundDef; 
-	public SoundDefinition hitWoodSoundDef; 
-	public SoundDefinition hitFleshSoundDef; 
-	public Sound hitSound; 
-	public GameObject hitSoundTarget; 
-	public float hitSoundFadeTime; 
-	public ParticleSystem smokeEffect; 
-	public Animator chainsawAnimator; 
-	public Renderer chainRenderer; 
-	public Material chainlink; 
-	private MaterialPropertyBlock block; 
-	private Vector2 saveST; 
-	private float chainSpeed; 
-	private float chainAmount; 
-	public float temp1; 
-	public float temp2; 
+	public bool bAttacking;
+	public bool bHitMetal;
+	public bool bHitWood;
+	public bool bHitFlesh;
+	public bool bEngineOn;
+	public ParticleSystem[] hitMetalFX;
+	public ParticleSystem[] hitWoodFX;
+	public ParticleSystem[] hitFleshFX;
+	public SoundDefinition hitMetalSoundDef;
+	public SoundDefinition hitWoodSoundDef;
+	public SoundDefinition hitFleshSoundDef;
+	public Sound hitSound;
+	public GameObject hitSoundTarget;
+	public float hitSoundFadeTime;
+	public ParticleSystem smokeEffect;
+	public Animator chainsawAnimator;
+	public Renderer chainRenderer;
+	public Material chainlink;
+	private MaterialPropertyBlock block;
+	private Vector2 saveST;
+	private float chainSpeed;
+	private float chainAmount;
+	public float temp1;
+	public float temp2;
 
 
 	public void OnEnable() { }
@@ -8456,35 +8473,35 @@ public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10623
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 13951
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 13968
 {
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 internal sealed class <PrivateImplementationDetails>
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 08A598D3DC7ED63443A0CAF087F7CDF5BAA67E3D 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 0ED907628EE272F93737B500A23D77C9B1C88368 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 17ADC9F18EEFE619644F7B3C7C90D5FD8DCDE2BB 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 1C910D34886830DDE4A52B59726EB240ADBF9F34 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 2277B245F935EBA3EA2D03B6871C13871FD4D572 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 24F287DA5BA36E31C3946E2FBE95B8388C241662 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 386DD6935C2F38BB8114CA4DF96C8BC2D3E639DA 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 42A4001D1CFDC98C761C0CFE5497A75F739D92F8 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 43A214299CEA27B6A55E61A929FC7B62C5D4941E 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 44D235DAFB9C469EBDA7640EB1F2CC833B40E9E5 
-	internal static readonly long 4CAECE539B039B16E16206EA2478F8C5FFB2CA05 = 727905341920923785; 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 59E933D7501F1D8F431F5807AC6C357BBA5F2D58 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 6B8D5CC14D2709C84958ED5E3855C874DA314CB4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 6BA637A252B6BFA8895B67AD72DCCAE79715984C 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=80 6DBA8D05A3CD51B9E01E83FDDF49241693E5D4E4 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 843D396E2EE569B035A7AC2BEB7A8253FC4AEDA7 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 9365FDAD4BD75AEF9446E0B22483D217BE36E309 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=288 9EFF88EB2F3540C5CE20FEF36A8E3AA37629AF80 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 B9B198B061D08812F585C9E56641F4E897E88E38 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 C18072E27FC2B4816C8694EB22427195375388F0 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 C7F420F4B2F68D0B3647564554BA8DB99509F64F 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 D950356082C70AD4018410AD313BA99D655D4D4A 
-	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 E3D5EABE71635FCDE2C05162A6CDE245A9796318 
-	internal static readonly long FCBA60311CDE80DE090AE6F8834C9CEC477FA56A = 5927942488114331648; 
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 08A598D3DC7ED63443A0CAF087F7CDF5BAA67E3D
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 0ED907628EE272F93737B500A23D77C9B1C88368
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 17ADC9F18EEFE619644F7B3C7C90D5FD8DCDE2BB
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 1C910D34886830DDE4A52B59726EB240ADBF9F34
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 2277B245F935EBA3EA2D03B6871C13871FD4D572
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 24F287DA5BA36E31C3946E2FBE95B8388C241662
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 386DD6935C2F38BB8114CA4DF96C8BC2D3E639DA
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 42A4001D1CFDC98C761C0CFE5497A75F739D92F8
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 43A214299CEA27B6A55E61A929FC7B62C5D4941E
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 44D235DAFB9C469EBDA7640EB1F2CC833B40E9E5
+	internal static readonly long 4CAECE539B039B16E16206EA2478F8C5FFB2CA05 = 727905341920923785;
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 59E933D7501F1D8F431F5807AC6C357BBA5F2D58
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 6B8D5CC14D2709C84958ED5E3855C874DA314CB4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 6BA637A252B6BFA8895B67AD72DCCAE79715984C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=80 6DBA8D05A3CD51B9E01E83FDDF49241693E5D4E4
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 843D396E2EE569B035A7AC2BEB7A8253FC4AEDA7
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 9365FDAD4BD75AEF9446E0B22483D217BE36E309
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=288 9EFF88EB2F3540C5CE20FEF36A8E3AA37629AF80
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 B9B198B061D08812F585C9E56641F4E897E88E38
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 C18072E27FC2B4816C8694EB22427195375388F0
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 C7F420F4B2F68D0B3647564554BA8DB99509F64F
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 D950356082C70AD4018410AD313BA99D655D4D4A
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 E3D5EABE71635FCDE2C05162A6CDE245A9796318
+	internal static readonly long FCBA60311CDE80DE090AE6F8834C9CEC477FA56A = 5927942488114331648;
 
 
 	internal static uint ComputeStringHash(string s) { }

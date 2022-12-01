@@ -1,8 +1,8 @@
 public class StringReader : TextReader // TypeDefIndex: 649
 {
-	private string _s; 
-	private int _pos; 
-	private int _length; 
+	private string _s;
+	private int _pos;
+	private int _length;
 
 
 	public void .ctor(string s) { }

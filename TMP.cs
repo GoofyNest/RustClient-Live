@@ -1,15 +1,15 @@
-public class TMP_Asset : ScriptableObject // TypeDefIndex: 6683
+public class TMP_Asset : ScriptableObject // TypeDefIndex: 6685
 {
-	public int hashCode; 
-	public Material material; 
-	public int materialHashCode; 
+	public int hashCode;
+	public Material material;
+	public int materialHashCode;
 
 
 	public void .ctor() { }
 
 }
 
-public class TMP_Character : TMP_TextElement // TypeDefIndex: 6684
+public class TMP_Character : TMP_TextElement // TypeDefIndex: 6686
 {
 
 	public void .ctor() { }
@@ -20,64 +20,64 @@ public class TMP_Character : TMP_TextElement // TypeDefIndex: 6684
 
 }
 
-public struct TMP_Vertex // TypeDefIndex: 6685
+public struct TMP_Vertex // TypeDefIndex: 6687
 {
-	public Vector3 position; 
-	public Vector2 uv; 
-	public Vector2 uv2; 
-	public Vector2 uv4; 
-	public Color32 color; 
+	public Vector3 position;
+	public Vector2 uv;
+	public Vector2 uv2;
+	public Vector2 uv4;
+	public Color32 color;
 
 }
 
-public struct TMP_CharacterInfo // TypeDefIndex: 6686
+public struct TMP_CharacterInfo // TypeDefIndex: 6688
 {
-	public char character; 
-	public int index; 
-	public int stringLength; 
-	public TMP_TextElementType elementType; 
-	public TMP_TextElement textElement; 
-	public TMP_FontAsset fontAsset; 
-	public Material material; 
-	public int materialReferenceIndex; 
-	public bool isUsingAlternateTypeface; 
-	public float pointSize; 
-	public int lineNumber; 
-	public int pageNumber; 
-	public int vertexIndex; 
-	public TMP_Vertex vertex_BL; 
-	public TMP_Vertex vertex_TL; 
-	public TMP_Vertex vertex_TR; 
-	public TMP_Vertex vertex_BR; 
-	public Vector3 topLeft; 
-	public Vector3 bottomLeft; 
-	public Vector3 topRight; 
-	public Vector3 bottomRight; 
-	public float origin; 
-	public float ascender; 
-	public float baseLine; 
-	public float descender; 
-	public float xAdvance; 
-	public float aspectRatio; 
-	public float scale; 
-	public Color32 color; 
-	public Color32 underlineColor; 
-	public Color32 strikethroughColor; 
-	public Color32 highlightColor; 
-	public FontStyles style; 
-	public bool isVisible; 
+	public char character;
+	public int index;
+	public int stringLength;
+	public TMP_TextElementType elementType;
+	public TMP_TextElement textElement;
+	public TMP_FontAsset fontAsset;
+	public Material material;
+	public int materialReferenceIndex;
+	public bool isUsingAlternateTypeface;
+	public float pointSize;
+	public int lineNumber;
+	public int pageNumber;
+	public int vertexIndex;
+	public TMP_Vertex vertex_BL;
+	public TMP_Vertex vertex_TL;
+	public TMP_Vertex vertex_TR;
+	public TMP_Vertex vertex_BR;
+	public Vector3 topLeft;
+	public Vector3 bottomLeft;
+	public Vector3 topRight;
+	public Vector3 bottomRight;
+	public float origin;
+	public float ascender;
+	public float baseLine;
+	public float descender;
+	public float xAdvance;
+	public float aspectRatio;
+	public float scale;
+	public Color32 color;
+	public Color32 underlineColor;
+	public Color32 strikethroughColor;
+	public Color32 highlightColor;
+	public FontStyles style;
+	public bool isVisible;
 
 }
 
-public class TMP_ColorGradient : ScriptableObject // TypeDefIndex: 6688
+public class TMP_ColorGradient : ScriptableObject // TypeDefIndex: 6690
 {
-	public ColorMode colorMode; 
-	public Color topLeft; 
-	public Color topRight; 
-	public Color bottomLeft; 
-	public Color bottomRight; 
+	public ColorMode colorMode;
+	public Color topLeft;
+	public Color topRight;
+	public Color bottomLeft;
+	public Color bottomRight;
 	private const ColorMode k_DefaultColorMode = 3;
-	private static readonly Color k_DefaultColor; 
+	private static readonly Color k_DefaultColor;
 
 
 	public void .ctor() { }
@@ -90,15 +90,15 @@ public class TMP_ColorGradient : ScriptableObject // TypeDefIndex: 6688
 
 }
 
-public static class TMP_DefaultControls // TypeDefIndex: 6697
+public static class TMP_DefaultControls // TypeDefIndex: 6699
 {
 	private const float kWidth = 160;
 	private const float kThickHeight = 30;
 	private const float kThinHeight = 20;
-	private static Vector2 s_ThickElementSize; 
-	private static Vector2 s_ThinElementSize; 
-	private static Color s_DefaultSelectableColor; 
-	private static Color s_TextColor; 
+	private static Vector2 s_ThickElementSize;
+	private static Vector2 s_ThinElementSize;
+	private static Color s_DefaultSelectableColor;
+	private static Color s_TextColor;
 
 
 	private static GameObject CreateUIElementRoot(string name, Vector2 size) { }
@@ -125,89 +125,89 @@ public static class TMP_DefaultControls // TypeDefIndex: 6697
 
 }
 
-public struct TMP_DefaultControls.Resources // TypeDefIndex: 6698
+public struct TMP_DefaultControls.Resources // TypeDefIndex: 6700
 {
-	public Sprite standard; 
-	public Sprite background; 
-	public Sprite inputField; 
-	public Sprite knob; 
-	public Sprite checkmark; 
-	public Sprite dropdown; 
-	public Sprite mask; 
+	public Sprite standard;
+	public Sprite background;
+	public Sprite inputField;
+	public Sprite knob;
+	public Sprite checkmark;
+	public Sprite dropdown;
+	public Sprite mask;
 
 }
 
-public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6700
+public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6702
 {
-	[SerializeField] 
-	private string m_Version; 
-	[SerializeField] 
-	internal string m_SourceFontFileGUID; 
-	[SerializeField] 
-	private Font m_SourceFontFile; 
-	[SerializeField] 
-	private AtlasPopulationMode m_AtlasPopulationMode; 
-	[SerializeField] 
-	private FaceInfo m_FaceInfo; 
-	[SerializeField] 
-	private List<Glyph> m_GlyphTable; 
-	private Dictionary<uint, Glyph> m_GlyphLookupDictionary; 
-	[SerializeField] 
-	private List<TMP_Character> m_CharacterTable; 
-	private Dictionary<uint, TMP_Character> m_CharacterLookupDictionary; 
-	private Texture2D m_AtlasTexture; 
-	[SerializeField] 
-	private Texture2D[] m_AtlasTextures; 
-	[SerializeField] 
-	internal int m_AtlasTextureIndex; 
-	[SerializeField] 
-	private List<GlyphRect> m_UsedGlyphRects; 
-	[SerializeField] 
-	private List<GlyphRect> m_FreeGlyphRects; 
-	[SerializeField] 
-	private FaceInfo_Legacy m_fontInfo; 
-	[SerializeField] 
-	public Texture2D atlas; 
-	[SerializeField] 
-	private int m_AtlasWidth; 
-	[SerializeField] 
-	private int m_AtlasHeight; 
-	[SerializeField] 
-	private int m_AtlasPadding; 
-	[SerializeField] 
-	private GlyphRenderMode m_AtlasRenderMode; 
-	[SerializeField] 
-	internal List<TMP_Glyph> m_glyphInfoList; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	internal KerningTable m_KerningTable; 
-	[SerializeField] 
-	private TMP_FontFeatureTable m_FontFeatureTable; 
-	[SerializeField] 
-	private List<TMP_FontAsset> fallbackFontAssets; 
-	[SerializeField] 
-	public List<TMP_FontAsset> m_FallbackFontAssetTable; 
-	[SerializeField] 
-	internal FontAssetCreationSettings m_CreationSettings; 
-	[SerializeField] 
-	private TMP_FontWeightPair[] m_FontWeightTable; 
-	[SerializeField] 
-	private TMP_FontWeightPair[] fontWeights; 
-	public float normalStyle; 
-	public float normalSpacingOffset; 
-	public float boldStyle; 
-	public float boldSpacing; 
-	public byte italicStyle; 
-	public byte tabSize; 
-	private byte m_oldTabSize; 
-	internal bool m_IsFontAssetLookupTablesDirty; 
-	private List<Glyph> m_GlyphsToPack; 
-	private List<Glyph> m_GlyphsPacked; 
-	private List<Glyph> m_GlyphsToRender; 
-	private List<uint> m_GlyphIndexList; 
-	private List<TMP_Character> m_CharactersToAdd; 
-	internal static uint[] s_GlyphIndexArray; 
-	internal static List<uint> s_MissingCharacterList; 
+	[SerializeField]
+	private string m_Version;
+	[SerializeField]
+	internal string m_SourceFontFileGUID;
+	[SerializeField]
+	private Font m_SourceFontFile;
+	[SerializeField]
+	private AtlasPopulationMode m_AtlasPopulationMode;
+	[SerializeField]
+	private FaceInfo m_FaceInfo;
+	[SerializeField]
+	private List<Glyph> m_GlyphTable;
+	private Dictionary<uint, Glyph> m_GlyphLookupDictionary;
+	[SerializeField]
+	private List<TMP_Character> m_CharacterTable;
+	private Dictionary<uint, TMP_Character> m_CharacterLookupDictionary;
+	private Texture2D m_AtlasTexture;
+	[SerializeField]
+	private Texture2D[] m_AtlasTextures;
+	[SerializeField]
+	internal int m_AtlasTextureIndex;
+	[SerializeField]
+	private List<GlyphRect> m_UsedGlyphRects;
+	[SerializeField]
+	private List<GlyphRect> m_FreeGlyphRects;
+	[SerializeField]
+	private FaceInfo_Legacy m_fontInfo;
+	[SerializeField]
+	public Texture2D atlas;
+	[SerializeField]
+	private int m_AtlasWidth;
+	[SerializeField]
+	private int m_AtlasHeight;
+	[SerializeField]
+	private int m_AtlasPadding;
+	[SerializeField]
+	private GlyphRenderMode m_AtlasRenderMode;
+	[SerializeField]
+	internal List<TMP_Glyph> m_glyphInfoList;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	internal KerningTable m_KerningTable;
+	[SerializeField]
+	private TMP_FontFeatureTable m_FontFeatureTable;
+	[SerializeField]
+	private List<TMP_FontAsset> fallbackFontAssets;
+	[SerializeField]
+	public List<TMP_FontAsset> m_FallbackFontAssetTable;
+	[SerializeField]
+	internal FontAssetCreationSettings m_CreationSettings;
+	[SerializeField]
+	private TMP_FontWeightPair[] m_FontWeightTable;
+	[SerializeField]
+	private TMP_FontWeightPair[] fontWeights;
+	public float normalStyle;
+	public float normalSpacingOffset;
+	public float boldStyle;
+	public float boldSpacing;
+	public byte italicStyle;
+	public byte tabSize;
+	private byte m_oldTabSize;
+	internal bool m_IsFontAssetLookupTablesDirty;
+	private List<Glyph> m_GlyphsToPack;
+	private List<Glyph> m_GlyphsPacked;
+	private List<Glyph> m_GlyphsToRender;
+	private List<uint> m_GlyphIndexList;
+	private List<TMP_Character> m_CharactersToAdd;
+	internal static uint[] s_GlyphIndexArray;
+	internal static List<uint> s_MissingCharacterList;
 
 	public string version { get; set; }
 	public Font sourceFontFile { get; set; }
@@ -221,7 +221,7 @@ public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6700
 	public Texture2D[] atlasTextures { get; set; }
 	internal List<GlyphRect> usedGlyphRects { get; set; }
 	internal List<GlyphRect> freeGlyphRects { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public FaceInfo_Legacy fontInfo { get; }
 	public int atlasWidth { get; set; }
 	public int atlasHeight { get; set; }
@@ -373,11 +373,11 @@ public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6700
 
 }
 
-private sealed class TMP_FontAsset.<>c // TypeDefIndex: 6701
+private sealed class TMP_FontAsset.<>c // TypeDefIndex: 6703
 {
-	public static readonly TMP_FontAsset.<>c <>9; 
-	public static Func<TMP_Character, uint> <>9__100_0; 
-	public static Func<Glyph, uint> <>9__101_0; 
+	public static readonly TMP_FontAsset.<>c <>9;
+	public static Func<TMP_Character, uint> <>9__100_0;
+	public static Func<Glyph, uint> <>9__101_0;
 
 
 	private static void .cctor() { }
@@ -390,7 +390,7 @@ private sealed class TMP_FontAsset.<>c // TypeDefIndex: 6701
 
 }
 
-public class TMP_Glyph : TMP_TextElement_Legacy // TypeDefIndex: 6703
+public class TMP_Glyph : TMP_TextElement_Legacy // TypeDefIndex: 6705
 {
 
 	public static TMP_Glyph Clone(TMP_Glyph source) { }
@@ -399,16 +399,16 @@ public class TMP_Glyph : TMP_TextElement_Legacy // TypeDefIndex: 6703
 
 }
 
-public struct TMP_FontWeightPair // TypeDefIndex: 6705
+public struct TMP_FontWeightPair // TypeDefIndex: 6707
 {
-	public TMP_FontAsset regularTypeface; 
-	public TMP_FontAsset italicTypeface; 
+	public TMP_FontAsset regularTypeface;
+	public TMP_FontAsset italicTypeface;
 
 }
 
-public static class TMP_FontUtilities // TypeDefIndex: 6714
+public static class TMP_FontUtilities // TypeDefIndex: 6716
 {
-	private static List<int> k_searchedFontAssets; 
+	private static List<int> k_searchedFontAssets;
 
 
 	public static TMP_FontAsset SearchForCharacter(TMP_FontAsset font, uint unicode, out TMP_Character character) { }
@@ -421,11 +421,11 @@ public static class TMP_FontUtilities // TypeDefIndex: 6714
 
 }
 
-public class TMP_FontAssetUtilities // TypeDefIndex: 6715
+public class TMP_FontAssetUtilities // TypeDefIndex: 6717
 {
-	private static readonly TMP_FontAssetUtilities s_Instance; 
-	private static List<int> k_SearchedFontAssets; 
-	private static bool k_IsFontEngineInitialized; 
+	private static readonly TMP_FontAssetUtilities s_Instance;
+	private static List<int> k_SearchedFontAssets;
+	private static bool k_IsFontEngineInitialized;
 
 	public static TMP_FontAssetUtilities instance { get; }
 
@@ -448,11 +448,11 @@ public class TMP_FontAssetUtilities // TypeDefIndex: 6715
 
 }
 
-public class TMP_FontFeatureTable // TypeDefIndex: 6716
+public class TMP_FontFeatureTable // TypeDefIndex: 6718
 {
-	[SerializeField] 
-	internal List<TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecords; 
-	internal Dictionary<long, TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecordLookupDictionary; 
+	[SerializeField]
+	internal List<TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecords;
+	internal Dictionary<long, TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecordLookupDictionary;
 
 	internal List<TMP_GlyphPairAdjustmentRecord> glyphPairAdjustmentRecords { get; set; }
 
@@ -467,11 +467,11 @@ public class TMP_FontFeatureTable // TypeDefIndex: 6716
 
 }
 
-private sealed class TMP_FontFeatureTable.<>c // TypeDefIndex: 6717
+private sealed class TMP_FontFeatureTable.<>c // TypeDefIndex: 6719
 {
-	public static readonly TMP_FontFeatureTable.<>c <>9; 
-	public static Func<TMP_GlyphPairAdjustmentRecord, uint> <>9__6_0; 
-	public static Func<TMP_GlyphPairAdjustmentRecord, uint> <>9__6_1; 
+	public static readonly TMP_FontFeatureTable.<>c <>9;
+	public static Func<TMP_GlyphPairAdjustmentRecord, uint> <>9__6_0;
+	public static Func<TMP_GlyphPairAdjustmentRecord, uint> <>9__6_1;
 
 
 	private static void .cctor() { }
@@ -484,16 +484,16 @@ private sealed class TMP_FontFeatureTable.<>c // TypeDefIndex: 6717
 
 }
 
-public struct TMP_GlyphValueRecord // TypeDefIndex: 6719
+public struct TMP_GlyphValueRecord // TypeDefIndex: 6721
 {
-	[SerializeField] 
-	private float m_XPlacement; 
-	[SerializeField] 
-	private float m_YPlacement; 
-	[SerializeField] 
-	private float m_XAdvance; 
-	[SerializeField] 
-	private float m_YAdvance; 
+	[SerializeField]
+	private float m_XPlacement;
+	[SerializeField]
+	private float m_YPlacement;
+	[SerializeField]
+	private float m_XAdvance;
+	[SerializeField]
+	private float m_YAdvance;
 
 	public float xPlacement { get; set; }
 	public float yPlacement { get; set; }
@@ -527,12 +527,12 @@ public struct TMP_GlyphValueRecord // TypeDefIndex: 6719
 
 }
 
-public struct TMP_GlyphAdjustmentRecord // TypeDefIndex: 6720
+public struct TMP_GlyphAdjustmentRecord // TypeDefIndex: 6722
 {
-	[SerializeField] 
-	private uint m_GlyphIndex; 
-	[SerializeField] 
-	private TMP_GlyphValueRecord m_GlyphValueRecord; 
+	[SerializeField]
+	private uint m_GlyphIndex;
+	[SerializeField]
+	private TMP_GlyphValueRecord m_GlyphValueRecord;
 
 	public uint glyphIndex { get; set; }
 	public TMP_GlyphValueRecord glyphValueRecord { get; set; }
@@ -552,14 +552,14 @@ public struct TMP_GlyphAdjustmentRecord // TypeDefIndex: 6720
 
 }
 
-public class TMP_GlyphPairAdjustmentRecord // TypeDefIndex: 6721
+public class TMP_GlyphPairAdjustmentRecord // TypeDefIndex: 6723
 {
-	[SerializeField] 
-	private TMP_GlyphAdjustmentRecord m_FirstAdjustmentRecord; 
-	[SerializeField] 
-	private TMP_GlyphAdjustmentRecord m_SecondAdjustmentRecord; 
-	[SerializeField] 
-	private FontFeatureLookupFlags m_FeatureLookupFlags; 
+	[SerializeField]
+	private TMP_GlyphAdjustmentRecord m_FirstAdjustmentRecord;
+	[SerializeField]
+	private TMP_GlyphAdjustmentRecord m_SecondAdjustmentRecord;
+	[SerializeField]
+	private FontFeatureLookupFlags m_FeatureLookupFlags;
 
 	public TMP_GlyphAdjustmentRecord firstAdjustmentRecord { get; set; }
 	public TMP_GlyphAdjustmentRecord secondAdjustmentRecord { get; set; }
@@ -584,140 +584,140 @@ public class TMP_GlyphPairAdjustmentRecord // TypeDefIndex: 6721
 
 }
 
-public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement, IScrollHandler // TypeDefIndex: 6723
+public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement, IScrollHandler // TypeDefIndex: 6725
 {
-	protected TouchScreenKeyboard m_SoftKeyboard; 
-	private static readonly char[] kSeparators; 
-	[SerializeField] 
-	protected RectTransform m_TextViewport; 
-	[SerializeField] 
-	protected TMP_Text m_TextComponent; 
-	protected RectTransform m_TextComponentRectTransform; 
-	[SerializeField] 
-	protected Graphic m_Placeholder; 
-	[SerializeField] 
-	protected Scrollbar m_VerticalScrollbar; 
-	[SerializeField] 
-	protected TMP_ScrollbarEventHandler m_VerticalScrollbarEventHandler; 
-	private bool m_IsDrivenByLayoutComponents; 
-	private float m_ScrollPosition; 
-	[SerializeField] 
-	protected float m_ScrollSensitivity; 
-	[SerializeField] 
-	private TMP_InputField.ContentType m_ContentType; 
-	[SerializeField] 
-	private TMP_InputField.InputType m_InputType; 
-	[SerializeField] 
-	private char m_AsteriskChar; 
-	[SerializeField] 
-	private TouchScreenKeyboardType m_KeyboardType; 
-	[SerializeField] 
-	private TMP_InputField.LineType m_LineType; 
-	[SerializeField] 
-	private bool m_HideMobileInput; 
-	[SerializeField] 
-	private bool m_HideSoftKeyboard; 
-	[SerializeField] 
-	private TMP_InputField.CharacterValidation m_CharacterValidation; 
-	[SerializeField] 
-	private string m_RegexValue; 
-	[SerializeField] 
-	private float m_GlobalPointSize; 
-	[SerializeField] 
-	private int m_CharacterLimit; 
-	[SerializeField] 
-	private TMP_InputField.SubmitEvent m_OnEndEdit; 
-	[SerializeField] 
-	private TMP_InputField.SubmitEvent m_OnSubmit; 
-	[SerializeField] 
-	private TMP_InputField.SelectionEvent m_OnSelect; 
-	[SerializeField] 
-	private TMP_InputField.SelectionEvent m_OnDeselect; 
-	[SerializeField] 
-	private TMP_InputField.TextSelectionEvent m_OnTextSelection; 
-	[SerializeField] 
-	private TMP_InputField.TextSelectionEvent m_OnEndTextSelection; 
-	[SerializeField] 
-	private TMP_InputField.OnChangeEvent m_OnValueChanged; 
-	[SerializeField] 
-	private TMP_InputField.TouchScreenKeyboardEvent m_OnTouchScreenKeyboardStatusChanged; 
-	[SerializeField] 
-	private TMP_InputField.OnValidateInput m_OnValidateInput; 
-	[SerializeField] 
-	private Color m_CaretColor; 
-	[SerializeField] 
-	private bool m_CustomCaretColor; 
-	[SerializeField] 
-	private Color m_SelectionColor; 
-	[SerializeField] 
-	[TextAreaAttribute] 
-	protected string m_Text; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private float m_CaretBlinkRate; 
-	[SerializeField] 
-	[RangeAttribute] 
-	private int m_CaretWidth; 
-	[SerializeField] 
-	private bool m_ReadOnly; 
-	[SerializeField] 
-	private bool m_RichText; 
-	protected int m_StringPosition; 
-	protected int m_StringSelectPosition; 
-	protected int m_CaretPosition; 
-	protected int m_CaretSelectPosition; 
-	private RectTransform caretRectTrans; 
-	protected UIVertex[] m_CursorVerts; 
-	private CanvasRenderer m_CachedInputRenderer; 
-	private Vector2 m_LastPosition; 
-	protected Mesh m_Mesh; 
-	private bool m_AllowInput; 
-	private bool m_ShouldActivateNextUpdate; 
-	private bool m_UpdateDrag; 
-	private bool m_DragPositionOutOfBounds; 
+	protected TouchScreenKeyboard m_SoftKeyboard;
+	private static readonly char[] kSeparators;
+	[SerializeField]
+	protected RectTransform m_TextViewport;
+	[SerializeField]
+	protected TMP_Text m_TextComponent;
+	protected RectTransform m_TextComponentRectTransform;
+	[SerializeField]
+	protected Graphic m_Placeholder;
+	[SerializeField]
+	protected Scrollbar m_VerticalScrollbar;
+	[SerializeField]
+	protected TMP_ScrollbarEventHandler m_VerticalScrollbarEventHandler;
+	private bool m_IsDrivenByLayoutComponents;
+	private float m_ScrollPosition;
+	[SerializeField]
+	protected float m_ScrollSensitivity;
+	[SerializeField]
+	private TMP_InputField.ContentType m_ContentType;
+	[SerializeField]
+	private TMP_InputField.InputType m_InputType;
+	[SerializeField]
+	private char m_AsteriskChar;
+	[SerializeField]
+	private TouchScreenKeyboardType m_KeyboardType;
+	[SerializeField]
+	private TMP_InputField.LineType m_LineType;
+	[SerializeField]
+	private bool m_HideMobileInput;
+	[SerializeField]
+	private bool m_HideSoftKeyboard;
+	[SerializeField]
+	private TMP_InputField.CharacterValidation m_CharacterValidation;
+	[SerializeField]
+	private string m_RegexValue;
+	[SerializeField]
+	private float m_GlobalPointSize;
+	[SerializeField]
+	private int m_CharacterLimit;
+	[SerializeField]
+	private TMP_InputField.SubmitEvent m_OnEndEdit;
+	[SerializeField]
+	private TMP_InputField.SubmitEvent m_OnSubmit;
+	[SerializeField]
+	private TMP_InputField.SelectionEvent m_OnSelect;
+	[SerializeField]
+	private TMP_InputField.SelectionEvent m_OnDeselect;
+	[SerializeField]
+	private TMP_InputField.TextSelectionEvent m_OnTextSelection;
+	[SerializeField]
+	private TMP_InputField.TextSelectionEvent m_OnEndTextSelection;
+	[SerializeField]
+	private TMP_InputField.OnChangeEvent m_OnValueChanged;
+	[SerializeField]
+	private TMP_InputField.TouchScreenKeyboardEvent m_OnTouchScreenKeyboardStatusChanged;
+	[SerializeField]
+	private TMP_InputField.OnValidateInput m_OnValidateInput;
+	[SerializeField]
+	private Color m_CaretColor;
+	[SerializeField]
+	private bool m_CustomCaretColor;
+	[SerializeField]
+	private Color m_SelectionColor;
+	[SerializeField]
+	[TextAreaAttribute]
+	protected string m_Text;
+	[SerializeField]
+	[RangeAttribute]
+	private float m_CaretBlinkRate;
+	[SerializeField]
+	[RangeAttribute]
+	private int m_CaretWidth;
+	[SerializeField]
+	private bool m_ReadOnly;
+	[SerializeField]
+	private bool m_RichText;
+	protected int m_StringPosition;
+	protected int m_StringSelectPosition;
+	protected int m_CaretPosition;
+	protected int m_CaretSelectPosition;
+	private RectTransform caretRectTrans;
+	protected UIVertex[] m_CursorVerts;
+	private CanvasRenderer m_CachedInputRenderer;
+	private Vector2 m_LastPosition;
+	protected Mesh m_Mesh;
+	private bool m_AllowInput;
+	private bool m_ShouldActivateNextUpdate;
+	private bool m_UpdateDrag;
+	private bool m_DragPositionOutOfBounds;
 	private const float kHScrollSpeed = 0,05;
 	private const float kVScrollSpeed = 0,1;
-	protected bool m_CaretVisible; 
-	private Coroutine m_BlinkCoroutine; 
-	private float m_BlinkStartTime; 
-	private Coroutine m_DragCoroutine; 
-	private string m_OriginalText; 
-	private bool m_WasCanceled; 
-	private bool m_HasDoneFocusTransition; 
-	private WaitForSecondsRealtime m_WaitForSecondsRealtime; 
-	private bool m_PreventCallback; 
-	private bool m_TouchKeyboardAllowsInPlaceEditing; 
-	private bool m_IsTextComponentUpdateRequired; 
-	private bool m_IsScrollbarUpdateRequired; 
-	private bool m_IsUpdatingScrollbarValues; 
-	private bool m_isLastKeyBackspace; 
-	private float m_PointerDownClickStartTime; 
-	private float m_KeyDownStartTime; 
-	private float m_DoubleClickDelay; 
+	protected bool m_CaretVisible;
+	private Coroutine m_BlinkCoroutine;
+	private float m_BlinkStartTime;
+	private Coroutine m_DragCoroutine;
+	private string m_OriginalText;
+	private bool m_WasCanceled;
+	private bool m_HasDoneFocusTransition;
+	private WaitForSecondsRealtime m_WaitForSecondsRealtime;
+	private bool m_PreventCallback;
+	private bool m_TouchKeyboardAllowsInPlaceEditing;
+	private bool m_IsTextComponentUpdateRequired;
+	private bool m_IsScrollbarUpdateRequired;
+	private bool m_IsUpdatingScrollbarValues;
+	private bool m_isLastKeyBackspace;
+	private float m_PointerDownClickStartTime;
+	private float m_KeyDownStartTime;
+	private float m_DoubleClickDelay;
 	private const string kEmailSpecialCharacters = "!#$%&\'*+-/=?^_`{|}~";
-	[SerializeField] 
-	protected TMP_FontAsset m_GlobalFontAsset; 
-	[SerializeField] 
-	protected bool m_OnFocusSelectAll; 
-	protected bool m_isSelectAll; 
-	[SerializeField] 
-	protected bool m_ResetOnDeActivation; 
-	private bool m_SelectionStillActive; 
-	private bool m_ReleaseSelection; 
-	private GameObject m_SelectedObject; 
-	[SerializeField] 
-	private bool m_RestoreOriginalTextOnEscape; 
-	[SerializeField] 
-	protected bool m_isRichTextEditingAllowed; 
-	[SerializeField] 
-	protected int m_LineLimit; 
-	[SerializeField] 
-	protected TMP_InputValidator m_InputValidator; 
-	private bool m_isSelected; 
-	private bool m_IsStringPositionDirty; 
-	private bool m_IsCaretPositionDirty; 
-	private bool m_forceRectTransformAdjustment; 
-	private Event m_ProcessingEvent; 
+	[SerializeField]
+	protected TMP_FontAsset m_GlobalFontAsset;
+	[SerializeField]
+	protected bool m_OnFocusSelectAll;
+	protected bool m_isSelectAll;
+	[SerializeField]
+	protected bool m_ResetOnDeActivation;
+	private bool m_SelectionStillActive;
+	private bool m_ReleaseSelection;
+	private GameObject m_SelectedObject;
+	[SerializeField]
+	private bool m_RestoreOriginalTextOnEscape;
+	[SerializeField]
+	protected bool m_isRichTextEditingAllowed;
+	[SerializeField]
+	protected int m_LineLimit;
+	[SerializeField]
+	protected TMP_InputValidator m_InputValidator;
+	private bool m_isSelected;
+	private bool m_IsStringPositionDirty;
+	private bool m_IsCaretPositionDirty;
+	private bool m_forceRectTransformAdjustment;
+	private Event m_ProcessingEvent;
 
 	private BaseInput inputSystem { get; }
 	private string compositionString { get; }
@@ -1013,7 +1013,7 @@ public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHa
 
 	private void ON_TEXT_CHANGED(Object obj) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator CaretBlink() { }
 
 	private void SetCaretVisible() { }
@@ -1048,7 +1048,7 @@ public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHa
 
 	public virtual void OnDrag(PointerEventData eventData) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator MouseDragOutsideRect(PointerEventData eventData) { }
 
 	public virtual void OnEndDrag(PointerEventData eventData) { }
@@ -1233,9 +1233,9 @@ public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHa
 
 }
 
-public enum TMP_InputField.ContentType // TypeDefIndex: 6724
+public enum TMP_InputField.ContentType // TypeDefIndex: 6726
 {
-	public int value__; 
+	public int value__;
 	public const TMP_InputField.ContentType Standard = 0;
 	public const TMP_InputField.ContentType Autocorrected = 1;
 	public const TMP_InputField.ContentType IntegerNumber = 2;
@@ -1249,18 +1249,18 @@ public enum TMP_InputField.ContentType // TypeDefIndex: 6724
 
 }
 
-public enum TMP_InputField.InputType // TypeDefIndex: 6725
+public enum TMP_InputField.InputType // TypeDefIndex: 6727
 {
-	public int value__; 
+	public int value__;
 	public const TMP_InputField.InputType Standard = 0;
 	public const TMP_InputField.InputType AutoCorrect = 1;
 	public const TMP_InputField.InputType Password = 2;
 
 }
 
-public enum TMP_InputField.CharacterValidation // TypeDefIndex: 6726
+public enum TMP_InputField.CharacterValidation // TypeDefIndex: 6728
 {
-	public int value__; 
+	public int value__;
 	public const TMP_InputField.CharacterValidation None = 0;
 	public const TMP_InputField.CharacterValidation Digit = 1;
 	public const TMP_InputField.CharacterValidation Integer = 2;
@@ -1273,16 +1273,16 @@ public enum TMP_InputField.CharacterValidation // TypeDefIndex: 6726
 
 }
 
-public enum TMP_InputField.LineType // TypeDefIndex: 6727
+public enum TMP_InputField.LineType // TypeDefIndex: 6729
 {
-	public int value__; 
+	public int value__;
 	public const TMP_InputField.LineType SingleLine = 0;
 	public const TMP_InputField.LineType MultiLineSubmit = 1;
 	public const TMP_InputField.LineType MultiLineNewline = 2;
 
 }
 
-public sealed class TMP_InputField.OnValidateInput : MulticastDelegate // TypeDefIndex: 6728
+public sealed class TMP_InputField.OnValidateInput : MulticastDelegate // TypeDefIndex: 6730
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1295,101 +1295,101 @@ public sealed class TMP_InputField.OnValidateInput : MulticastDelegate // TypeDe
 
 }
 
-public class TMP_InputField.SubmitEvent : UnityEvent<string> // TypeDefIndex: 6729
+public class TMP_InputField.SubmitEvent : UnityEvent<string> // TypeDefIndex: 6731
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 6730
+public class TMP_InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 6732
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.SelectionEvent : UnityEvent<string> // TypeDefIndex: 6731
+public class TMP_InputField.SelectionEvent : UnityEvent<string> // TypeDefIndex: 6733
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.TextSelectionEvent : UnityEvent<string, int, int> // TypeDefIndex: 6732
+public class TMP_InputField.TextSelectionEvent : UnityEvent<string, int, int> // TypeDefIndex: 6734
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.TouchScreenKeyboardEvent : UnityEvent<TouchScreenKeyboard.Status> // TypeDefIndex: 6733
+public class TMP_InputField.TouchScreenKeyboardEvent : UnityEvent<TouchScreenKeyboard.Status> // TypeDefIndex: 6735
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class TMP_InputField.<CaretBlink>d__267 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6735
+private sealed class TMP_InputField.<CaretBlink>d__267 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6737
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public TMP_InputField <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public TMP_InputField <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class TMP_InputField.<MouseDragOutsideRect>d__285 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6736
+private sealed class TMP_InputField.<MouseDragOutsideRect>d__285 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6738
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public TMP_InputField <>4__this; 
-	public PointerEventData eventData; 
+	private int <>1__state;
+	private object <>2__current;
+	public TMP_InputField <>4__this;
+	public PointerEventData eventData;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public abstract class TMP_InputValidator : ScriptableObject // TypeDefIndex: 6738
+public abstract class TMP_InputValidator : ScriptableObject // TypeDefIndex: 6740
 {
 
 	public abstract char Validate(ref string text, ref int pos, char ch);
@@ -1398,34 +1398,34 @@ public abstract class TMP_InputValidator : ScriptableObject // TypeDefIndex: 673
 
 }
 
-public struct TMP_LineInfo // TypeDefIndex: 6739
+public struct TMP_LineInfo // TypeDefIndex: 6741
 {
-	internal int controlCharacterCount; 
-	public int characterCount; 
-	public int visibleCharacterCount; 
-	public int spaceCount; 
-	public int wordCount; 
-	public int firstCharacterIndex; 
-	public int firstVisibleCharacterIndex; 
-	public int lastCharacterIndex; 
-	public int lastVisibleCharacterIndex; 
-	public float length; 
-	public float lineHeight; 
-	public float ascender; 
-	public float baseline; 
-	public float descender; 
-	public float maxAdvance; 
-	public float width; 
-	public float marginLeft; 
-	public float marginRight; 
-	public TextAlignmentOptions alignment; 
-	public Extents lineExtents; 
+	internal int controlCharacterCount;
+	public int characterCount;
+	public int visibleCharacterCount;
+	public int spaceCount;
+	public int wordCount;
+	public int firstCharacterIndex;
+	public int firstVisibleCharacterIndex;
+	public int lastCharacterIndex;
+	public int lastVisibleCharacterIndex;
+	public float length;
+	public float lineHeight;
+	public float ascender;
+	public float baseline;
+	public float descender;
+	public float maxAdvance;
+	public float width;
+	public float marginLeft;
+	public float marginRight;
+	public TextAlignmentOptions alignment;
+	public Extents lineExtents;
 
 }
 
-internal static class TMP_ListPool<T> // TypeDefIndex: 6740
+internal static class TMP_ListPool<T> // TypeDefIndex: 6742
 {
-	private static readonly TMP_ObjectPool<List<T>> s_ListPool; 
+	private static readonly TMP_ObjectPool<List<T>> s_ListPool;
 
 
 	public static List<T> Get() { }
@@ -1454,9 +1454,9 @@ internal static class TMP_ListPool<T> // TypeDefIndex: 6740
 
 }
 
-private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6741
+private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6743
 {
-	public static readonly TMP_ListPool.<>c<T> <>9; 
+	public static readonly TMP_ListPool.<>c<T> <>9;
 
 
 	private static void .cctor() { }
@@ -1479,13 +1479,13 @@ private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6741
 
 }
 
-public static class TMP_MaterialManager // TypeDefIndex: 6742
+public static class TMP_MaterialManager // TypeDefIndex: 6744
 {
-	private static List<TMP_MaterialManager.MaskingMaterial> m_materialList; 
-	private static Dictionary<long, TMP_MaterialManager.FallbackMaterial> m_fallbackMaterials; 
-	private static Dictionary<int, long> m_fallbackMaterialLookup; 
-	private static List<TMP_MaterialManager.FallbackMaterial> m_fallbackCleanupList; 
-	private static bool isFallbackListDirty; 
+	private static List<TMP_MaterialManager.MaskingMaterial> m_materialList;
+	private static Dictionary<long, TMP_MaterialManager.FallbackMaterial> m_fallbackMaterials;
+	private static Dictionary<int, long> m_fallbackMaterialLookup;
+	private static List<TMP_MaterialManager.FallbackMaterial> m_fallbackCleanupList;
+	private static bool isFallbackListDirty;
 
 
 	private static void .cctor() { }
@@ -1530,34 +1530,34 @@ public static class TMP_MaterialManager // TypeDefIndex: 6742
 
 }
 
-private class TMP_MaterialManager.FallbackMaterial // TypeDefIndex: 6743
+private class TMP_MaterialManager.FallbackMaterial // TypeDefIndex: 6745
 {
-	public int baseID; 
-	public Material baseMaterial; 
-	public long fallbackID; 
-	public Material fallbackMaterial; 
-	public int count; 
+	public int baseID;
+	public Material baseMaterial;
+	public long fallbackID;
+	public Material fallbackMaterial;
+	public int count;
 
 
 	public void .ctor() { }
 
 }
 
-private class TMP_MaterialManager.MaskingMaterial // TypeDefIndex: 6744
+private class TMP_MaterialManager.MaskingMaterial // TypeDefIndex: 6746
 {
-	public Material baseMaterial; 
-	public Material stencilMaterial; 
-	public int count; 
-	public int stencilID; 
+	public Material baseMaterial;
+	public Material stencilMaterial;
+	public int count;
+	public int stencilID;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass10_0 // TypeDefIndex: 6745
+private sealed class TMP_MaterialManager.<>c__DisplayClass10_0 // TypeDefIndex: 6747
 {
-	public Material stencilMaterial; 
+	public Material stencilMaterial;
 
 
 	public void .ctor() { }
@@ -1566,9 +1566,9 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass10_0 // TypeDefIndex: 
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass12_0 // TypeDefIndex: 6746
+private sealed class TMP_MaterialManager.<>c__DisplayClass12_0 // TypeDefIndex: 6748
 {
-	public Material stencilMaterial; 
+	public Material stencilMaterial;
 
 
 	public void .ctor() { }
@@ -1577,9 +1577,9 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass12_0 // TypeDefIndex: 
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass13_0 // TypeDefIndex: 6747
+private sealed class TMP_MaterialManager.<>c__DisplayClass13_0 // TypeDefIndex: 6749
 {
-	public Material stencilMaterial; 
+	public Material stencilMaterial;
 
 
 	public void .ctor() { }
@@ -1588,9 +1588,9 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass13_0 // TypeDefIndex: 
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass14_0 // TypeDefIndex: 6748
+private sealed class TMP_MaterialManager.<>c__DisplayClass14_0 // TypeDefIndex: 6750
 {
-	public Material baseMaterial; 
+	public Material baseMaterial;
 
 
 	public void .ctor() { }
@@ -1599,21 +1599,21 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass14_0 // TypeDefIndex: 
 
 }
 
-public struct TMP_MeshInfo // TypeDefIndex: 6750
+public struct TMP_MeshInfo // TypeDefIndex: 6752
 {
-	private static readonly Color32 s_DefaultColor; 
-	private static readonly Vector3 s_DefaultNormal; 
-	private static readonly Vector4 s_DefaultTangent; 
-	private static readonly Bounds s_DefaultBounds; 
-	public Mesh mesh; 
-	public int vertexCount; 
-	public Vector3[] vertices; 
-	public Vector3[] normals; 
-	public Vector4[] tangents; 
-	public Vector2[] uvs0; 
-	public Vector2[] uvs2; 
-	public Color32[] colors32; 
-	public int[] triangles; 
+	private static readonly Color32 s_DefaultColor;
+	private static readonly Vector3 s_DefaultNormal;
+	private static readonly Vector4 s_DefaultTangent;
+	private static readonly Bounds s_DefaultBounds;
+	public Mesh mesh;
+	public int vertexCount;
+	public Vector3[] vertices;
+	public Vector3[] normals;
+	public Vector4[] tangents;
+	public Vector2[] uvs0;
+	public Vector2[] uvs2;
+	public Color32[] colors32;
+	public int[] triangles;
 
 
 	public void .ctor(Mesh mesh, int size) { }
@@ -1644,27 +1644,27 @@ public struct TMP_MeshInfo // TypeDefIndex: 6750
 
 }
 
-internal class TMP_ObjectPool<T> // TypeDefIndex: 6751
+internal class TMP_ObjectPool<T> // TypeDefIndex: 6753
 {
-	private readonly Stack<T> m_Stack; 
-	private readonly UnityAction<T> m_ActionOnGet; 
-	private readonly UnityAction<T> m_ActionOnRelease; 
-	[CompilerGeneratedAttribute] 
-	private int <countAll>k__BackingField; 
+	private readonly Stack<T> m_Stack;
+	private readonly UnityAction<T> m_ActionOnGet;
+	private readonly UnityAction<T> m_ActionOnRelease;
+	[CompilerGeneratedAttribute]
+	private int <countAll>k__BackingField;
 
 	public int countAll { get; set; }
 	public int countActive { get; }
 	public int countInactive { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_countAll() { }
 	/* GenericInstMethod :
 	|
 	|-TMP_ObjectPool<object>.get_countAll
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_countAll(int value) { }
 	/* GenericInstMethod :
 	|
@@ -1703,18 +1703,18 @@ internal class TMP_ObjectPool<T> // TypeDefIndex: 6751
 
 }
 
-public struct TMP_FontStyleStack // TypeDefIndex: 6752
+public struct TMP_FontStyleStack // TypeDefIndex: 6754
 {
-	public byte bold; 
-	public byte italic; 
-	public byte underline; 
-	public byte strikethrough; 
-	public byte highlight; 
-	public byte superscript; 
-	public byte subscript; 
-	public byte uppercase; 
-	public byte lowercase; 
-	public byte smallcaps; 
+	public byte bold;
+	public byte italic;
+	public byte underline;
+	public byte strikethrough;
+	public byte highlight;
+	public byte superscript;
+	public byte subscript;
+	public byte uppercase;
+	public byte lowercase;
+	public byte smallcaps;
 
 
 	public void Clear() { }
@@ -1725,12 +1725,12 @@ public struct TMP_FontStyleStack // TypeDefIndex: 6752
 
 }
 
-public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6753
+public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6755
 {
-	public T[] m_ItemStack; 
-	public int m_Index; 
-	private int m_Capacity; 
-	private T m_DefaultItem; 
+	public T[] m_ItemStack;
+	public int m_Index;
+	private int m_Capacity;
+	private T m_DefaultItem;
 	private const int k_DefaultCapacity = 4;
 
 
@@ -1899,9 +1899,9 @@ public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6753
 
 }
 
-public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, IEventSystemHandler, ISelectHandler, IDeselectHandler // TypeDefIndex: 6758
+public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, IEventSystemHandler, ISelectHandler, IDeselectHandler // TypeDefIndex: 6760
 {
-	public bool isSelected; 
+	public bool isSelected;
 
 
 	public void OnPointerClick(PointerEventData eventData) { }
@@ -1914,7 +1914,7 @@ public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, IE
 
 }
 
-public class TMP_SelectionCaret : MaskableGraphic // TypeDefIndex: 6759
+public class TMP_SelectionCaret : MaskableGraphic // TypeDefIndex: 6761
 {
 
 	public override void Cull(Rect clipRect, bool validRect) { }
@@ -1923,55 +1923,55 @@ public class TMP_SelectionCaret : MaskableGraphic // TypeDefIndex: 6759
 
 }
 
-public class TMP_Settings : ScriptableObject // TypeDefIndex: 6760
+public class TMP_Settings : ScriptableObject // TypeDefIndex: 6762
 {
-	private static TMP_Settings s_Instance; 
-	[SerializeField] 
-	private bool m_enableWordWrapping; 
-	[SerializeField] 
-	private bool m_enableKerning; 
-	[SerializeField] 
-	private bool m_enableExtraPadding; 
-	[SerializeField] 
-	private bool m_enableTintAllSprites; 
-	[SerializeField] 
-	private bool m_EnableRaycastTarget; 
-	[SerializeField] 
-	private bool m_GetFontFeaturesAtRuntime; 
-	[SerializeField] 
-	private int m_missingGlyphCharacter; 
-	[SerializeField] 
-	private bool m_warningsDisabled; 
-	[SerializeField] 
-	private TMP_FontAsset m_defaultFontAsset; 
-	[SerializeField] 
-	private string m_defaultFontAssetPath; 
-	[SerializeField] 
-	private float m_defaultFontSize; 
-	[SerializeField] 
-	private float m_defaultAutoSizeMinRatio; 
-	[SerializeField] 
-	private float m_defaultAutoSizeMaxRatio; 
-	[SerializeField] 
-	private Vector2 m_defaultTextMeshProTextContainerSize; 
-	[SerializeField] 
-	private Vector2 m_defaultTextMeshProUITextContainerSize; 
-	[SerializeField] 
-	private bool m_autoSizeTextContainer; 
-	[SerializeField] 
-	private List<TMP_FontAsset> m_fallbackFontAssets; 
-	[SerializeField] 
-	private bool m_matchMaterialPreset; 
-	[SerializeField] 
-	private string m_defaultColorGradientPresetsPath; 
-	[SerializeField] 
-	private bool m_enableEmojiSupport; 
-	[SerializeField] 
-	private TextAsset m_leadingCharacters; 
-	[SerializeField] 
-	private TextAsset m_followingCharacters; 
-	[SerializeField] 
-	private TMP_Settings.LineBreakingTable m_linebreakingRules; 
+	private static TMP_Settings s_Instance;
+	[SerializeField]
+	private bool m_enableWordWrapping;
+	[SerializeField]
+	private bool m_enableKerning;
+	[SerializeField]
+	private bool m_enableExtraPadding;
+	[SerializeField]
+	private bool m_enableTintAllSprites;
+	[SerializeField]
+	private bool m_EnableRaycastTarget;
+	[SerializeField]
+	private bool m_GetFontFeaturesAtRuntime;
+	[SerializeField]
+	private int m_missingGlyphCharacter;
+	[SerializeField]
+	private bool m_warningsDisabled;
+	[SerializeField]
+	private TMP_FontAsset m_defaultFontAsset;
+	[SerializeField]
+	private string m_defaultFontAssetPath;
+	[SerializeField]
+	private float m_defaultFontSize;
+	[SerializeField]
+	private float m_defaultAutoSizeMinRatio;
+	[SerializeField]
+	private float m_defaultAutoSizeMaxRatio;
+	[SerializeField]
+	private Vector2 m_defaultTextMeshProTextContainerSize;
+	[SerializeField]
+	private Vector2 m_defaultTextMeshProUITextContainerSize;
+	[SerializeField]
+	private bool m_autoSizeTextContainer;
+	[SerializeField]
+	private List<TMP_FontAsset> m_fallbackFontAssets;
+	[SerializeField]
+	private bool m_matchMaterialPreset;
+	[SerializeField]
+	private string m_defaultColorGradientPresetsPath;
+	[SerializeField]
+	private bool m_enableEmojiSupport;
+	[SerializeField]
+	private TextAsset m_leadingCharacters;
+	[SerializeField]
+	private TextAsset m_followingCharacters;
+	[SerializeField]
+	private TMP_Settings.LineBreakingTable m_linebreakingRules;
 
 	public static string version { get; }
 	public static bool enableWordWrapping { get; }
@@ -2068,38 +2068,38 @@ public class TMP_Settings : ScriptableObject // TypeDefIndex: 6760
 
 }
 
-public class TMP_Settings.LineBreakingTable // TypeDefIndex: 6761
+public class TMP_Settings.LineBreakingTable // TypeDefIndex: 6763
 {
-	public Dictionary<int, char> leadingCharacters; 
-	public Dictionary<int, char> followingCharacters; 
+	public Dictionary<int, char> leadingCharacters;
+	public Dictionary<int, char> followingCharacters;
 
 
 	public void .ctor() { }
 
 }
 
-public class TMP_SubMesh : MonoBehaviour // TypeDefIndex: 6763
+public class TMP_SubMesh : MonoBehaviour // TypeDefIndex: 6765
 {
-	[SerializeField] 
-	private TMP_FontAsset m_fontAsset; 
-	[SerializeField] 
-	private Material m_material; 
-	[SerializeField] 
-	private Material m_sharedMaterial; 
-	private Material m_fallbackMaterial; 
-	private Material m_fallbackSourceMaterial; 
-	[SerializeField] 
-	private bool m_isDefaultMaterial; 
-	[SerializeField] 
-	private float m_padding; 
-	[SerializeField] 
-	private Renderer m_renderer; 
-	[SerializeField] 
-	private MeshFilter m_meshFilter; 
-	private Mesh m_mesh; 
-	[SerializeField] 
-	private TextMeshPro m_TextComponent; 
-	private bool m_isRegisteredForEvents; 
+	[SerializeField]
+	private TMP_FontAsset m_fontAsset;
+	[SerializeField]
+	private Material m_material;
+	[SerializeField]
+	private Material m_sharedMaterial;
+	private Material m_fallbackMaterial;
+	private Material m_fallbackSourceMaterial;
+	[SerializeField]
+	private bool m_isDefaultMaterial;
+	[SerializeField]
+	private float m_padding;
+	[SerializeField]
+	private Renderer m_renderer;
+	[SerializeField]
+	private MeshFilter m_meshFilter;
+	private Mesh m_mesh;
+	[SerializeField]
+	private TextMeshPro m_TextComponent;
+	private bool m_isRegisteredForEvents;
 
 	public TMP_FontAsset fontAsset { get; set; }
 	public Material material { get; set; }
@@ -2181,29 +2181,29 @@ public class TMP_SubMesh : MonoBehaviour // TypeDefIndex: 6763
 
 }
 
-public class TMP_SubMeshUI : MaskableGraphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 6764
+public class TMP_SubMeshUI : MaskableGraphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 6766
 {
-	[SerializeField] 
-	private TMP_FontAsset m_fontAsset; 
-	[SerializeField] 
-	private Material m_material; 
-	[SerializeField] 
-	private Material m_sharedMaterial; 
-	private Material m_fallbackMaterial; 
-	private Material m_fallbackSourceMaterial; 
-	[SerializeField] 
-	private bool m_isDefaultMaterial; 
-	[SerializeField] 
-	private float m_padding; 
-	[SerializeField] 
-	private CanvasRenderer m_canvasRenderer; 
-	private Mesh m_mesh; 
-	[SerializeField] 
-	private TextMeshProUGUI m_TextComponent; 
-	private bool m_isRegisteredForEvents; 
-	private bool m_materialDirty; 
-	[SerializeField] 
-	private int m_materialReferenceIndex; 
+	[SerializeField]
+	private TMP_FontAsset m_fontAsset;
+	[SerializeField]
+	private Material m_material;
+	[SerializeField]
+	private Material m_sharedMaterial;
+	private Material m_fallbackMaterial;
+	private Material m_fallbackSourceMaterial;
+	[SerializeField]
+	private bool m_isDefaultMaterial;
+	[SerializeField]
+	private float m_padding;
+	[SerializeField]
+	private CanvasRenderer m_canvasRenderer;
+	private Mesh m_mesh;
+	[SerializeField]
+	private TextMeshProUGUI m_TextComponent;
+	private bool m_isRegisteredForEvents;
+	private bool m_materialDirty;
+	[SerializeField]
+	private int m_materialReferenceIndex;
 
 	public TMP_FontAsset fontAsset { get; set; }
 	public override Texture mainTexture { get; }
@@ -2312,272 +2312,272 @@ public class TMP_SubMeshUI : MaskableGraphic, IClippable, IMaskable, IMaterialMo
 
 }
 
-public enum TMP_TextElementType // TypeDefIndex: 6770
+public enum TMP_TextElementType // TypeDefIndex: 6772
 {
-	public int value__; 
+	public int value__;
 	public const TMP_TextElementType Character = 0;
 	public const TMP_TextElementType Unused = 1;
 
 }
 
-public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6777
+public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6779
 {
-	[SerializeField] 
-	[TextAreaAttribute] 
-	protected string m_text; 
-	[SerializeField] 
-	protected bool m_isRightToLeft; 
-	[SerializeField] 
-	protected TMP_FontAsset m_fontAsset; 
-	protected TMP_FontAsset m_currentFontAsset; 
-	protected bool m_isSDFShader; 
-	[SerializeField] 
-	protected Material m_sharedMaterial; 
-	protected Material m_currentMaterial; 
-	protected MaterialReference[] m_materialReferences; 
-	protected Dictionary<int, int> m_materialReferenceIndexLookup; 
-	protected TMP_RichTextTagStack<MaterialReference> m_materialReferenceStack; 
-	protected int m_currentMaterialIndex; 
-	[SerializeField] 
-	protected Material[] m_fontSharedMaterials; 
-	[SerializeField] 
-	protected Material m_fontMaterial; 
-	[SerializeField] 
-	protected Material[] m_fontMaterials; 
-	protected bool m_isMaterialDirty; 
-	[SerializeField] 
-	[ColorUsageAttribute] 
-	protected Color32 m_fontColor32; 
-	[SerializeField] 
-	[ColorUsageAttribute] 
-	protected Color m_fontColor; 
-	protected static Color32 s_colorWhite; 
-	protected Color32 m_underlineColor; 
-	protected Color32 m_strikethroughColor; 
-	protected Color32 m_highlightColor; 
-	protected Vector4 m_highlightPadding; 
-	[SerializeField] 
-	protected bool m_enableVertexGradient; 
-	[SerializeField] 
-	protected ColorMode m_colorMode; 
-	[SerializeField] 
-	protected VertexGradient m_fontColorGradient; 
-	[SerializeField] 
-	protected TMP_ColorGradient m_fontColorGradientPreset; 
-	[SerializeField] 
-	protected bool m_overrideHtmlColors; 
-	[SerializeField] 
-	protected Color32 m_faceColor; 
-	[SerializeField] 
-	protected Color32 m_outlineColor; 
-	protected float m_outlineWidth; 
-	[SerializeField] 
-	protected float m_fontSize; 
-	protected float m_currentFontSize; 
-	[SerializeField] 
-	protected float m_fontSizeBase; 
-	protected TMP_RichTextTagStack<float> m_sizeStack; 
-	[SerializeField] 
-	protected FontWeight m_fontWeight; 
-	protected FontWeight m_FontWeightInternal; 
-	protected TMP_RichTextTagStack<FontWeight> m_FontWeightStack; 
-	[SerializeField] 
-	protected bool m_enableAutoSizing; 
-	protected float m_maxFontSize; 
-	protected float m_minFontSize; 
-	[SerializeField] 
-	protected float m_fontSizeMin; 
-	[SerializeField] 
-	protected float m_fontSizeMax; 
-	[SerializeField] 
-	protected FontStyles m_fontStyle; 
-	protected FontStyles m_FontStyleInternal; 
-	protected TMP_FontStyleStack m_fontStyleStack; 
-	protected bool m_isUsingBold; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	protected TextAlignmentOptions m_textAlignment; 
-	protected TextAlignmentOptions m_lineJustification; 
-	protected TMP_RichTextTagStack<TextAlignmentOptions> m_lineJustificationStack; 
-	protected Vector3[] m_textContainerLocalCorners; 
-	[SerializeField] 
-	protected float m_characterSpacing; 
-	protected float m_cSpacing; 
-	protected float m_monoSpacing; 
-	[SerializeField] 
-	protected float m_wordSpacing; 
-	[SerializeField] 
-	protected float m_lineSpacing; 
-	protected float m_lineSpacingDelta; 
-	protected float m_lineHeight; 
-	[SerializeField] 
-	protected float m_lineSpacingMax; 
-	[SerializeField] 
-	protected float m_paragraphSpacing; 
-	[SerializeField] 
-	protected float m_charWidthMaxAdj; 
-	protected float m_charWidthAdjDelta; 
-	[SerializeField] 
-	protected bool m_enableWordWrapping; 
-	protected bool m_isCharacterWrappingEnabled; 
-	protected bool m_isNonBreakingSpace; 
-	protected bool m_isIgnoringAlignment; 
-	[SerializeField] 
-	protected float m_wordWrappingRatios; 
-	[SerializeField] 
-	protected TextOverflowModes m_overflowMode; 
-	[SerializeField] 
-	protected int m_firstOverflowCharacterIndex; 
-	[SerializeField] 
-	protected TMP_Text m_linkedTextComponent; 
-	[SerializeField] 
-	protected bool m_isLinkedTextComponent; 
-	[SerializeField] 
-	protected bool m_isTextTruncated; 
-	[SerializeField] 
-	protected bool m_enableKerning; 
-	[SerializeField] 
-	protected bool m_enableExtraPadding; 
-	[SerializeField] 
-	protected bool checkPaddingRequired; 
-	[SerializeField] 
-	protected bool m_isRichText; 
-	protected bool m_isOverlay; 
-	[SerializeField] 
-	protected bool m_isOrthographic; 
-	[SerializeField] 
-	protected bool m_isCullingEnabled; 
-	[SerializeField] 
-	protected bool m_ignoreRectMaskCulling; 
-	[SerializeField] 
-	protected bool m_ignoreCulling; 
-	[SerializeField] 
-	protected TextureMappingOptions m_horizontalMapping; 
-	[SerializeField] 
-	protected TextureMappingOptions m_verticalMapping; 
-	[SerializeField] 
-	protected float m_uvLineOffset; 
-	protected TextRenderFlags m_renderMode; 
-	[SerializeField] 
-	protected VertexSortingOrder m_geometrySortingOrder; 
-	[SerializeField] 
-	protected bool m_VertexBufferAutoSizeReduction; 
-	[SerializeField] 
-	protected int m_firstVisibleCharacter; 
-	protected int m_maxVisibleCharacters; 
-	protected int m_maxVisibleWords; 
-	protected int m_maxVisibleLines; 
-	[SerializeField] 
-	protected bool m_useMaxVisibleDescender; 
-	[SerializeField] 
-	protected int m_pageToDisplay; 
-	protected bool m_isNewPage; 
-	[SerializeField] 
-	protected Vector4 m_margin; 
-	protected float m_marginLeft; 
-	protected float m_marginRight; 
-	protected float m_marginWidth; 
-	protected float m_marginHeight; 
-	protected float m_width; 
-	[SerializeField] 
-	protected TMP_TextInfo m_textInfo; 
-	protected bool m_havePropertiesChanged; 
-	[SerializeField] 
-	protected bool m_isUsingLegacyAnimationComponent; 
-	protected Transform m_transform; 
-	protected RectTransform m_rectTransform; 
-	[CompilerGeneratedAttribute] 
-	private bool <autoSizeTextContainer>k__BackingField; 
-	protected bool m_autoSizeTextContainer; 
-	protected Mesh m_mesh; 
-	[SerializeField] 
-	protected bool m_isVolumetricText; 
-	protected float m_flexibleHeight; 
-	protected float m_flexibleWidth; 
-	protected float m_minWidth; 
-	protected float m_minHeight; 
-	protected float m_maxWidth; 
-	protected float m_maxHeight; 
-	protected LayoutElement m_LayoutElement; 
-	protected float m_preferredWidth; 
-	protected float m_renderedWidth; 
-	protected bool m_isPreferredWidthDirty; 
-	protected float m_preferredHeight; 
-	protected float m_renderedHeight; 
-	protected bool m_isPreferredHeightDirty; 
-	protected bool m_isCalculatingPreferredValues; 
-	private int m_recursiveCount; 
-	protected int m_layoutPriority; 
-	protected bool m_isCalculateSizeRequired; 
-	protected bool m_isLayoutDirty; 
-	protected bool m_verticesAlreadyDirty; 
-	protected bool m_layoutAlreadyDirty; 
-	protected bool m_isAwake; 
-	internal bool m_isWaitingOnResourceLoad; 
-	internal bool m_isInputParsingRequired; 
-	protected string old_text; 
-	protected float m_fontScale; 
-	protected float m_fontScaleMultiplier; 
-	protected char[] m_htmlTag; 
-	protected RichTextTagAttribute[] m_xmlAttribute; 
-	protected float[] m_attributeParameterValues; 
-	protected float tag_LineIndent; 
-	protected float tag_Indent; 
-	protected TMP_RichTextTagStack<float> m_indentStack; 
-	protected bool tag_NoParsing; 
-	protected bool m_isParsingText; 
-	protected Matrix4x4 m_FXMatrix; 
-	protected bool m_isFXMatrixSet; 
-	protected TMP_Text.UnicodeChar[] m_TextParsingBuffer; 
-	private TMP_CharacterInfo[] m_internalCharacterInfo; 
-	protected int m_totalCharacterCount; 
-	protected WordWrapState m_SavedWordWrapState; 
-	protected WordWrapState m_SavedLineState; 
-	protected int m_characterCount; 
-	protected int m_firstCharacterOfLine; 
-	protected int m_firstVisibleCharacterOfLine; 
-	protected int m_lastCharacterOfLine; 
-	protected int m_lastVisibleCharacterOfLine; 
-	protected int m_lineNumber; 
-	protected int m_lineVisibleCharacterCount; 
-	protected int m_pageNumber; 
-	protected float m_maxAscender; 
-	protected float m_maxCapHeight; 
-	protected float m_maxDescender; 
-	protected float m_maxLineAscender; 
-	protected float m_maxLineDescender; 
-	protected float m_startOfLineAscender; 
-	protected float m_lineOffset; 
-	protected Extents m_meshExtents; 
-	protected Color32 m_htmlColor; 
-	protected TMP_RichTextTagStack<Color32> m_colorStack; 
-	protected TMP_RichTextTagStack<Color32> m_underlineColorStack; 
-	protected TMP_RichTextTagStack<Color32> m_strikethroughColorStack; 
-	protected TMP_RichTextTagStack<Color32> m_highlightColorStack; 
-	protected TMP_ColorGradient m_colorGradientPreset; 
-	protected TMP_RichTextTagStack<TMP_ColorGradient> m_colorGradientStack; 
-	protected float m_tabSpacing; 
-	protected float m_spacing; 
-	protected TMP_RichTextTagStack<int> m_styleStack; 
-	protected TMP_RichTextTagStack<int> m_actionStack; 
-	protected float m_padding; 
-	protected float m_baselineOffset; 
-	protected TMP_RichTextTagStack<float> m_baselineOffsetStack; 
-	protected float m_xAdvance; 
-	protected TMP_TextElementType m_textElementType; 
-	protected TMP_TextElement m_cached_TextElement; 
-	protected TMP_Character m_cached_Underline_Character; 
-	protected TMP_Character m_cached_Ellipsis_Character; 
-	protected int m_spriteCount; 
-	protected int m_spriteIndex; 
-	protected int m_spriteAnimationID; 
-	protected bool m_ignoreActiveState; 
-	protected static Vector2 k_LargePositiveVector2; 
-	protected static Vector2 k_LargeNegativeVector2; 
-	protected static float k_LargePositiveFloat; 
-	protected static float k_LargeNegativeFloat; 
-	protected static int k_LargePositiveInt; 
-	protected static int k_LargeNegativeInt; 
+	[SerializeField]
+	[TextAreaAttribute]
+	protected string m_text;
+	[SerializeField]
+	protected bool m_isRightToLeft;
+	[SerializeField]
+	protected TMP_FontAsset m_fontAsset;
+	protected TMP_FontAsset m_currentFontAsset;
+	protected bool m_isSDFShader;
+	[SerializeField]
+	protected Material m_sharedMaterial;
+	protected Material m_currentMaterial;
+	protected MaterialReference[] m_materialReferences;
+	protected Dictionary<int, int> m_materialReferenceIndexLookup;
+	protected TMP_RichTextTagStack<MaterialReference> m_materialReferenceStack;
+	protected int m_currentMaterialIndex;
+	[SerializeField]
+	protected Material[] m_fontSharedMaterials;
+	[SerializeField]
+	protected Material m_fontMaterial;
+	[SerializeField]
+	protected Material[] m_fontMaterials;
+	protected bool m_isMaterialDirty;
+	[SerializeField]
+	[ColorUsageAttribute]
+	protected Color32 m_fontColor32;
+	[SerializeField]
+	[ColorUsageAttribute]
+	protected Color m_fontColor;
+	protected static Color32 s_colorWhite;
+	protected Color32 m_underlineColor;
+	protected Color32 m_strikethroughColor;
+	protected Color32 m_highlightColor;
+	protected Vector4 m_highlightPadding;
+	[SerializeField]
+	protected bool m_enableVertexGradient;
+	[SerializeField]
+	protected ColorMode m_colorMode;
+	[SerializeField]
+	protected VertexGradient m_fontColorGradient;
+	[SerializeField]
+	protected TMP_ColorGradient m_fontColorGradientPreset;
+	[SerializeField]
+	protected bool m_overrideHtmlColors;
+	[SerializeField]
+	protected Color32 m_faceColor;
+	[SerializeField]
+	protected Color32 m_outlineColor;
+	protected float m_outlineWidth;
+	[SerializeField]
+	protected float m_fontSize;
+	protected float m_currentFontSize;
+	[SerializeField]
+	protected float m_fontSizeBase;
+	protected TMP_RichTextTagStack<float> m_sizeStack;
+	[SerializeField]
+	protected FontWeight m_fontWeight;
+	protected FontWeight m_FontWeightInternal;
+	protected TMP_RichTextTagStack<FontWeight> m_FontWeightStack;
+	[SerializeField]
+	protected bool m_enableAutoSizing;
+	protected float m_maxFontSize;
+	protected float m_minFontSize;
+	[SerializeField]
+	protected float m_fontSizeMin;
+	[SerializeField]
+	protected float m_fontSizeMax;
+	[SerializeField]
+	protected FontStyles m_fontStyle;
+	protected FontStyles m_FontStyleInternal;
+	protected TMP_FontStyleStack m_fontStyleStack;
+	protected bool m_isUsingBold;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	protected TextAlignmentOptions m_textAlignment;
+	protected TextAlignmentOptions m_lineJustification;
+	protected TMP_RichTextTagStack<TextAlignmentOptions> m_lineJustificationStack;
+	protected Vector3[] m_textContainerLocalCorners;
+	[SerializeField]
+	protected float m_characterSpacing;
+	protected float m_cSpacing;
+	protected float m_monoSpacing;
+	[SerializeField]
+	protected float m_wordSpacing;
+	[SerializeField]
+	protected float m_lineSpacing;
+	protected float m_lineSpacingDelta;
+	protected float m_lineHeight;
+	[SerializeField]
+	protected float m_lineSpacingMax;
+	[SerializeField]
+	protected float m_paragraphSpacing;
+	[SerializeField]
+	protected float m_charWidthMaxAdj;
+	protected float m_charWidthAdjDelta;
+	[SerializeField]
+	protected bool m_enableWordWrapping;
+	protected bool m_isCharacterWrappingEnabled;
+	protected bool m_isNonBreakingSpace;
+	protected bool m_isIgnoringAlignment;
+	[SerializeField]
+	protected float m_wordWrappingRatios;
+	[SerializeField]
+	protected TextOverflowModes m_overflowMode;
+	[SerializeField]
+	protected int m_firstOverflowCharacterIndex;
+	[SerializeField]
+	protected TMP_Text m_linkedTextComponent;
+	[SerializeField]
+	protected bool m_isLinkedTextComponent;
+	[SerializeField]
+	protected bool m_isTextTruncated;
+	[SerializeField]
+	protected bool m_enableKerning;
+	[SerializeField]
+	protected bool m_enableExtraPadding;
+	[SerializeField]
+	protected bool checkPaddingRequired;
+	[SerializeField]
+	protected bool m_isRichText;
+	protected bool m_isOverlay;
+	[SerializeField]
+	protected bool m_isOrthographic;
+	[SerializeField]
+	protected bool m_isCullingEnabled;
+	[SerializeField]
+	protected bool m_ignoreRectMaskCulling;
+	[SerializeField]
+	protected bool m_ignoreCulling;
+	[SerializeField]
+	protected TextureMappingOptions m_horizontalMapping;
+	[SerializeField]
+	protected TextureMappingOptions m_verticalMapping;
+	[SerializeField]
+	protected float m_uvLineOffset;
+	protected TextRenderFlags m_renderMode;
+	[SerializeField]
+	protected VertexSortingOrder m_geometrySortingOrder;
+	[SerializeField]
+	protected bool m_VertexBufferAutoSizeReduction;
+	[SerializeField]
+	protected int m_firstVisibleCharacter;
+	protected int m_maxVisibleCharacters;
+	protected int m_maxVisibleWords;
+	protected int m_maxVisibleLines;
+	[SerializeField]
+	protected bool m_useMaxVisibleDescender;
+	[SerializeField]
+	protected int m_pageToDisplay;
+	protected bool m_isNewPage;
+	[SerializeField]
+	protected Vector4 m_margin;
+	protected float m_marginLeft;
+	protected float m_marginRight;
+	protected float m_marginWidth;
+	protected float m_marginHeight;
+	protected float m_width;
+	[SerializeField]
+	protected TMP_TextInfo m_textInfo;
+	protected bool m_havePropertiesChanged;
+	[SerializeField]
+	protected bool m_isUsingLegacyAnimationComponent;
+	protected Transform m_transform;
+	protected RectTransform m_rectTransform;
+	[CompilerGeneratedAttribute]
+	private bool <autoSizeTextContainer>k__BackingField;
+	protected bool m_autoSizeTextContainer;
+	protected Mesh m_mesh;
+	[SerializeField]
+	protected bool m_isVolumetricText;
+	protected float m_flexibleHeight;
+	protected float m_flexibleWidth;
+	protected float m_minWidth;
+	protected float m_minHeight;
+	protected float m_maxWidth;
+	protected float m_maxHeight;
+	protected LayoutElement m_LayoutElement;
+	protected float m_preferredWidth;
+	protected float m_renderedWidth;
+	protected bool m_isPreferredWidthDirty;
+	protected float m_preferredHeight;
+	protected float m_renderedHeight;
+	protected bool m_isPreferredHeightDirty;
+	protected bool m_isCalculatingPreferredValues;
+	private int m_recursiveCount;
+	protected int m_layoutPriority;
+	protected bool m_isCalculateSizeRequired;
+	protected bool m_isLayoutDirty;
+	protected bool m_verticesAlreadyDirty;
+	protected bool m_layoutAlreadyDirty;
+	protected bool m_isAwake;
+	internal bool m_isWaitingOnResourceLoad;
+	internal bool m_isInputParsingRequired;
+	protected string old_text;
+	protected float m_fontScale;
+	protected float m_fontScaleMultiplier;
+	protected char[] m_htmlTag;
+	protected RichTextTagAttribute[] m_xmlAttribute;
+	protected float[] m_attributeParameterValues;
+	protected float tag_LineIndent;
+	protected float tag_Indent;
+	protected TMP_RichTextTagStack<float> m_indentStack;
+	protected bool tag_NoParsing;
+	protected bool m_isParsingText;
+	protected Matrix4x4 m_FXMatrix;
+	protected bool m_isFXMatrixSet;
+	protected TMP_Text.UnicodeChar[] m_TextParsingBuffer;
+	private TMP_CharacterInfo[] m_internalCharacterInfo;
+	protected int m_totalCharacterCount;
+	protected WordWrapState m_SavedWordWrapState;
+	protected WordWrapState m_SavedLineState;
+	protected int m_characterCount;
+	protected int m_firstCharacterOfLine;
+	protected int m_firstVisibleCharacterOfLine;
+	protected int m_lastCharacterOfLine;
+	protected int m_lastVisibleCharacterOfLine;
+	protected int m_lineNumber;
+	protected int m_lineVisibleCharacterCount;
+	protected int m_pageNumber;
+	protected float m_maxAscender;
+	protected float m_maxCapHeight;
+	protected float m_maxDescender;
+	protected float m_maxLineAscender;
+	protected float m_maxLineDescender;
+	protected float m_startOfLineAscender;
+	protected float m_lineOffset;
+	protected Extents m_meshExtents;
+	protected Color32 m_htmlColor;
+	protected TMP_RichTextTagStack<Color32> m_colorStack;
+	protected TMP_RichTextTagStack<Color32> m_underlineColorStack;
+	protected TMP_RichTextTagStack<Color32> m_strikethroughColorStack;
+	protected TMP_RichTextTagStack<Color32> m_highlightColorStack;
+	protected TMP_ColorGradient m_colorGradientPreset;
+	protected TMP_RichTextTagStack<TMP_ColorGradient> m_colorGradientStack;
+	protected float m_tabSpacing;
+	protected float m_spacing;
+	protected TMP_RichTextTagStack<int> m_styleStack;
+	protected TMP_RichTextTagStack<int> m_actionStack;
+	protected float m_padding;
+	protected float m_baselineOffset;
+	protected TMP_RichTextTagStack<float> m_baselineOffsetStack;
+	protected float m_xAdvance;
+	protected TMP_TextElementType m_textElementType;
+	protected TMP_TextElement m_cached_TextElement;
+	protected TMP_Character m_cached_Underline_Character;
+	protected TMP_Character m_cached_Ellipsis_Character;
+	protected int m_spriteCount;
+	protected int m_spriteIndex;
+	protected int m_spriteAnimationID;
+	protected bool m_ignoreActiveState;
+	protected static Vector2 k_LargePositiveVector2;
+	protected static Vector2 k_LargeNegativeVector2;
+	protected static float k_LargePositiveFloat;
+	protected static float k_LargeNegativeFloat;
+	protected static int k_LargePositiveInt;
+	protected static int k_LargeNegativeInt;
 
 	public string text { get; set; }
 	public bool isRightToLeftText { get; set; }
@@ -2910,10 +2910,10 @@ public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6777
 
 	public RectTransform get_rectTransform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public virtual bool get_autoSizeTextContainer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public virtual void set_autoSizeTextContainer(bool value) { }
 
 	public virtual Mesh get_mesh() { }
@@ -3156,17 +3156,17 @@ public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6777
 
 }
 
-public class TMP_TextElement // TypeDefIndex: 6780
+public class TMP_TextElement // TypeDefIndex: 6782
 {
-	[SerializeField] 
-	protected TextElementType m_ElementType; 
-	[SerializeField] 
-	private uint m_Unicode; 
-	private Glyph m_Glyph; 
-	[SerializeField] 
-	private uint m_GlyphIndex; 
-	[SerializeField] 
-	private float m_Scale; 
+	[SerializeField]
+	protected TextElementType m_ElementType;
+	[SerializeField]
+	private uint m_Unicode;
+	private Glyph m_Glyph;
+	[SerializeField]
+	private uint m_GlyphIndex;
+	[SerializeField]
+	private float m_Scale;
 
 	public TextElementType elementType { get; }
 	public uint unicode { get; set; }
@@ -3197,43 +3197,43 @@ public class TMP_TextElement // TypeDefIndex: 6780
 
 }
 
-public class TMP_TextElement_Legacy // TypeDefIndex: 6781
+public class TMP_TextElement_Legacy // TypeDefIndex: 6783
 {
-	public int id; 
-	public float x; 
-	public float y; 
-	public float width; 
-	public float height; 
-	public float xOffset; 
-	public float yOffset; 
-	public float xAdvance; 
-	public float scale; 
+	public int id;
+	public float x;
+	public float y;
+	public float width;
+	public float height;
+	public float xOffset;
+	public float yOffset;
+	public float xAdvance;
+	public float scale;
 
 
 	public void .ctor() { }
 
 }
 
-public class TMP_TextInfo // TypeDefIndex: 6782
+public class TMP_TextInfo // TypeDefIndex: 6784
 {
-	private static Vector2 k_InfinityVectorPositive; 
-	private static Vector2 k_InfinityVectorNegative; 
-	public TMP_Text textComponent; 
-	public int characterCount; 
-	public int spriteCount; 
-	public int spaceCount; 
-	public int wordCount; 
-	public int linkCount; 
-	public int lineCount; 
-	public int pageCount; 
-	public int materialCount; 
-	public TMP_CharacterInfo[] characterInfo; 
-	public TMP_WordInfo[] wordInfo; 
-	public TMP_LinkInfo[] linkInfo; 
-	public TMP_LineInfo[] lineInfo; 
-	public TMP_PageInfo[] pageInfo; 
-	public TMP_MeshInfo[] meshInfo; 
-	private TMP_MeshInfo[] m_CachedMeshInfo; 
+	private static Vector2 k_InfinityVectorPositive;
+	private static Vector2 k_InfinityVectorNegative;
+	public TMP_Text textComponent;
+	public int characterCount;
+	public int spriteCount;
+	public int spaceCount;
+	public int wordCount;
+	public int linkCount;
+	public int lineCount;
+	public int pageCount;
+	public int materialCount;
+	public TMP_CharacterInfo[] characterInfo;
+	public TMP_WordInfo[] wordInfo;
+	public TMP_LinkInfo[] linkInfo;
+	public TMP_LineInfo[] lineInfo;
+	public TMP_PageInfo[] pageInfo;
+	public TMP_MeshInfo[] meshInfo;
+	private TMP_MeshInfo[] m_CachedMeshInfo;
 
 
 	public void .ctor() { }
@@ -3283,9 +3283,9 @@ public class TMP_TextInfo // TypeDefIndex: 6782
 
 }
 
-public class TMP_TextParsingUtilities // TypeDefIndex: 6783
+public class TMP_TextParsingUtilities // TypeDefIndex: 6785
 {
-	private static readonly TMP_TextParsingUtilities s_Instance; 
+	private static readonly TMP_TextParsingUtilities s_Instance;
 	private const string k_LookupStringL = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[-]^_`abcdefghijklmnopqrstuvwxyz{|}~-";
 	private const string k_LookupStringU = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[-]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~-";
 
@@ -3316,9 +3316,9 @@ public class TMP_TextParsingUtilities // TypeDefIndex: 6783
 
 }
 
-public static class TMP_TextUtilities // TypeDefIndex: 6786
+public static class TMP_TextUtilities // TypeDefIndex: 6788
 {
-	private static Vector3[] m_rectWorldCorners; 
+	private static Vector3[] m_rectWorldCorners;
 	private const string k_lookupStringL = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[-]^_`abcdefghijklmnopqrstuvwxyz{|}~-";
 	private const string k_lookupStringU = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[-]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~-";
 
@@ -3371,25 +3371,25 @@ public static class TMP_TextUtilities // TypeDefIndex: 6786
 
 }
 
-private struct TMP_TextUtilities.LineSegment // TypeDefIndex: 6787
+private struct TMP_TextUtilities.LineSegment // TypeDefIndex: 6789
 {
-	public Vector3 Point1; 
-	public Vector3 Point2; 
+	public Vector3 Point1;
+	public Vector3 Point2;
 
 
 	public void .ctor(Vector3 p1, Vector3 p2) { }
 
 }
 
-public class TMP_UpdateManager // TypeDefIndex: 6788
+public class TMP_UpdateManager // TypeDefIndex: 6790
 {
-	private static TMP_UpdateManager s_Instance; 
-	private readonly List<TMP_Text> m_LayoutRebuildQueue; 
-	private Dictionary<int, int> m_LayoutQueueLookup; 
-	private readonly List<TMP_Text> m_GraphicRebuildQueue; 
-	private Dictionary<int, int> m_GraphicQueueLookup; 
-	private readonly List<TMP_Text> m_InternalUpdateQueue; 
-	private Dictionary<int, int> m_InternalUpdateLookup; 
+	private static TMP_UpdateManager s_Instance;
+	private readonly List<TMP_Text> m_LayoutRebuildQueue;
+	private Dictionary<int, int> m_LayoutQueueLookup;
+	private readonly List<TMP_Text> m_GraphicRebuildQueue;
+	private Dictionary<int, int> m_GraphicQueueLookup;
+	private readonly List<TMP_Text> m_InternalUpdateQueue;
+	private Dictionary<int, int> m_InternalUpdateLookup;
 
 	public static TMP_UpdateManager instance { get; }
 
@@ -3428,13 +3428,13 @@ public class TMP_UpdateManager // TypeDefIndex: 6788
 
 }
 
-public class TMP_UpdateRegistry // TypeDefIndex: 6789
+public class TMP_UpdateRegistry // TypeDefIndex: 6791
 {
-	private static TMP_UpdateRegistry s_Instance; 
-	private readonly List<ICanvasElement> m_LayoutRebuildQueue; 
-	private Dictionary<int, int> m_LayoutQueueLookup; 
-	private readonly List<ICanvasElement> m_GraphicRebuildQueue; 
-	private Dictionary<int, int> m_GraphicQueueLookup; 
+	private static TMP_UpdateRegistry s_Instance;
+	private readonly List<ICanvasElement> m_LayoutRebuildQueue;
+	private Dictionary<int, int> m_LayoutQueueLookup;
+	private readonly List<ICanvasElement> m_GraphicRebuildQueue;
+	private Dictionary<int, int> m_GraphicQueueLookup;
 
 	public static TMP_UpdateRegistry instance { get; }
 
@@ -3463,7 +3463,7 @@ public class TMP_UpdateRegistry // TypeDefIndex: 6789
 
 }
 
-public static class TMP_Math // TypeDefIndex: 6794
+public static class TMP_Math // TypeDefIndex: 6796
 {
 	public const float FLOAT_MAX = 32767;
 	public const float FLOAT_MIN = -32767;
@@ -3471,8 +3471,8 @@ public static class TMP_Math // TypeDefIndex: 6794
 	public const int INT_MIN = -2147483647;
 	public const float FLOAT_UNSET = -32767;
 	public const int INT_UNSET = -32767;
-	public static Vector2 MAX_16BIT; 
-	public static Vector2 MIN_16BIT; 
+	public static Vector2 MAX_16BIT;
+	public static Vector2 MIN_16BIT;
 
 
 	public static bool Approximately(float a, float b) { }
@@ -3481,9 +3481,9 @@ public static class TMP_Math // TypeDefIndex: 6794
 
 }
 
-public enum TMP_VertexDataUpdateFlags // TypeDefIndex: 6795
+public enum TMP_VertexDataUpdateFlags // TypeDefIndex: 6797
 {
-	public int value__; 
+	public int value__;
 	public const TMP_VertexDataUpdateFlags None = 0;
 	public const TMP_VertexDataUpdateFlags Vertices = 1;
 	public const TMP_VertexDataUpdateFlags Uv0 = 2;
@@ -3494,25 +3494,25 @@ public enum TMP_VertexDataUpdateFlags // TypeDefIndex: 6795
 
 }
 
-public struct TMP_PageInfo // TypeDefIndex: 6797
+public struct TMP_PageInfo // TypeDefIndex: 6799
 {
-	public int firstCharacterIndex; 
-	public int lastCharacterIndex; 
-	public float ascender; 
-	public float baseLine; 
-	public float descender; 
+	public int firstCharacterIndex;
+	public int lastCharacterIndex;
+	public float ascender;
+	public float baseLine;
+	public float descender;
 
 }
 
-public struct TMP_LinkInfo // TypeDefIndex: 6798
+public struct TMP_LinkInfo // TypeDefIndex: 6800
 {
-	public TMP_Text textComponent; 
-	public int hashCode; 
-	public int linkIdFirstCharacterIndex; 
-	public int linkIdLength; 
-	public int linkTextfirstCharacterIndex; 
-	public int linkTextLength; 
-	internal char[] linkID; 
+	public TMP_Text textComponent;
+	public int hashCode;
+	public int linkIdFirstCharacterIndex;
+	public int linkIdLength;
+	public int linkTextfirstCharacterIndex;
+	public int linkTextLength;
+	internal char[] linkID;
 
 
 	internal void SetLinkID(char[] text, int startIndex, int length) { }
@@ -3523,23 +3523,23 @@ public struct TMP_LinkInfo // TypeDefIndex: 6798
 
 }
 
-public struct TMP_WordInfo // TypeDefIndex: 6799
+public struct TMP_WordInfo // TypeDefIndex: 6801
 {
-	public TMP_Text textComponent; 
-	public int firstCharacterIndex; 
-	public int lastCharacterIndex; 
-	public int characterCount; 
+	public TMP_Text textComponent;
+	public int firstCharacterIndex;
+	public int lastCharacterIndex;
+	public int characterCount;
 
 
 	public string GetWord() { }
 
 }
 
-public struct TMP_SpriteInfo // TypeDefIndex: 6800
+public struct TMP_SpriteInfo // TypeDefIndex: 6802
 {
-	public int spriteIndex; 
-	public int characterIndex; 
-	public int vertexIndex; 
+	public int spriteIndex;
+	public int characterIndex;
+	public int vertexIndex;
 
 }
 

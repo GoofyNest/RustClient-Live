@@ -1,11 +1,11 @@
 public struct SqlDouble : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4350
 {
-	private bool m_fNotNull; 
-	private double m_value; 
-	public static readonly SqlDouble Null; 
-	public static readonly SqlDouble Zero; 
-	public static readonly SqlDouble MinValue; 
-	public static readonly SqlDouble MaxValue; 
+	private bool m_fNotNull;
+	private double m_value;
+	public static readonly SqlDouble Null;
+	public static readonly SqlDouble Zero;
+	public static readonly SqlDouble MinValue;
+	public static readonly SqlDouble MaxValue;
 
 	public bool IsNull { get; }
 	public double Value { get; }

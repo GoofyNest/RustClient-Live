@@ -1,24 +1,24 @@
-public struct CopyEntitlementByIndexOptions // TypeDefIndex: 9431
+public struct CopyEntitlementByIndexOptions // TypeDefIndex: 9433
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <EntitlementIndex>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <EntitlementIndex>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public uint EntitlementIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_EntitlementIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EntitlementIndex(uint value) { }
 
 }

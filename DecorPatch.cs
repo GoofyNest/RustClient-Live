@@ -1,13 +1,13 @@
-public class DecorPatch // TypeDefIndex: 12083
+public class DecorPatch // TypeDefIndex: 12090
 {
-	private bool initialized; 
-	private float LOD; 
-	private float shift; 
-	private float extent; 
-	private Vector3 offset; 
-	private Vector3 position; 
-	private DecorSpawn decorSpawn; 
-	private List<GameObject> spawns; 
+	private bool initialized;
+	private float LOD;
+	private float shift;
+	private float extent;
+	private Vector3 offset;
+	private Vector3 position;
+	private DecorSpawn decorSpawn;
+	private List<GameObject> spawns;
 
 
 	public void DestroyInstances() { }

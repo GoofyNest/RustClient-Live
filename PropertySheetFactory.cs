@@ -1,11 +1,11 @@
-public sealed class PropertySheetFactory // TypeDefIndex: 13654
+public sealed class PropertySheetFactory // TypeDefIndex: 13670
 {
-	private readonly Dictionary<Shader, PropertySheet> m_Sheets; 
+	private readonly Dictionary<Shader, PropertySheet> m_Sheets;
 
 
 	public void .ctor() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public PropertySheet Get(string shaderName) { }
 
 	public PropertySheet Get(Shader shader) { }

@@ -1,18 +1,18 @@
 public static class RemotingConfiguration // TypeDefIndex: 1137
 {
-	private static string applicationID; 
-	private static string applicationName; 
-	private static string processGuid; 
-	private static bool defaultConfigRead; 
-	private static bool defaultDelayedConfigRead; 
-	private static string _errorMode; 
-	private static Hashtable wellKnownClientEntries; 
-	private static Hashtable activatedClientEntries; 
-	private static Hashtable wellKnownServiceEntries; 
-	private static Hashtable activatedServiceEntries; 
-	private static Hashtable channelTemplates; 
-	private static Hashtable clientProviderTemplates; 
-	private static Hashtable serverProviderTemplates; 
+	private static string applicationID;
+	private static string applicationName;
+	private static string processGuid;
+	private static bool defaultConfigRead;
+	private static bool defaultDelayedConfigRead;
+	private static string _errorMode;
+	private static Hashtable wellKnownClientEntries;
+	private static Hashtable activatedClientEntries;
+	private static Hashtable wellKnownServiceEntries;
+	private static Hashtable activatedServiceEntries;
+	private static Hashtable channelTemplates;
+	private static Hashtable clientProviderTemplates;
+	private static Hashtable serverProviderTemplates;
 
 	public static string ApplicationName { get; set; }
 	public static string ProcessId { get; }

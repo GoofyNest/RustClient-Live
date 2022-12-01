@@ -1,15 +1,15 @@
-public class flamethrowerFire : MonoBehaviour // TypeDefIndex: 13255
+public class flamethrowerFire : MonoBehaviour // TypeDefIndex: 13270
 {
-	public ParticleSystem pilotLightFX; 
-	public ParticleSystem[] flameFX; 
-	public FlameJet jet; 
-	public AudioSource oneShotSound; 
-	public AudioSource loopSound; 
-	public AudioClip pilotlightIdle; 
-	public AudioClip flameLoop; 
-	public AudioClip flameStart; 
-	public flamethrowerState flameState; 
-	private flamethrowerState previousflameState; 
+	public ParticleSystem pilotLightFX;
+	public ParticleSystem[] flameFX;
+	public FlameJet jet;
+	public AudioSource oneShotSound;
+	public AudioSource loopSound;
+	public AudioClip pilotlightIdle;
+	public AudioClip flameLoop;
+	public AudioClip flameStart;
+	public flamethrowerState flameState;
+	private flamethrowerState previousflameState;
 
 
 	public void PilotLightOn() { }

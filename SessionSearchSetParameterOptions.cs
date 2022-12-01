@@ -1,24 +1,24 @@
-public struct SessionSearchSetParameterOptions // TypeDefIndex: 8598
+public struct SessionSearchSetParameterOptions // TypeDefIndex: 8600
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<AttributeData> <Parameter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ComparisonOp <ComparisonOp>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<AttributeData> <Parameter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ComparisonOp <ComparisonOp>k__BackingField;
 
 	public Nullable<AttributeData> Parameter { get; set; }
 	public ComparisonOp ComparisonOp { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<AttributeData> get_Parameter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Parameter(Nullable<AttributeData> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ComparisonOp get_ComparisonOp() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ComparisonOp(ComparisonOp value) { }
 
 }

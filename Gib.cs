@@ -1,15 +1,15 @@
-public class Gib : ListComponent<Gib> // TypeDefIndex: 10917
+public class Gib : ListComponent<Gib> // TypeDefIndex: 10923
 {
-	public static int gibCount; 
-	public MeshFilter _meshFilter; 
-	public MeshRenderer _meshRenderer; 
-	public MeshCollider _meshCollider; 
-	public BoxCollider _boxCollider; 
-	public SphereCollider _sphereCollider; 
-	public CapsuleCollider _capsuleCollider; 
-	public Rigidbody _rigidbody; 
-	public static Vector2 InWaterDrag; 
-	public static Vector2 InWaterAngularDrag; 
+	public static int gibCount;
+	public MeshFilter _meshFilter;
+	public MeshRenderer _meshRenderer;
+	public MeshCollider _meshCollider;
+	public BoxCollider _boxCollider;
+	public SphereCollider _sphereCollider;
+	public CapsuleCollider _capsuleCollider;
+	public Rigidbody _rigidbody;
+	public static Vector2 InWaterDrag;
+	public static Vector2 InWaterAngularDrag;
 
 
 	public void DestroyViaConvar() { }

@@ -1,6 +1,6 @@
 internal enum ItemUpdateStatus // TypeDefIndex: 5169
 {
-	public int value__; 
+	public int value__;
 	public const ItemUpdateStatus Invalid = 0;
 	public const ItemUpdateStatus PreparingConfig = 1;
 	public const ItemUpdateStatus PreparingContent = 2;
@@ -12,7 +12,7 @@ internal enum ItemUpdateStatus // TypeDefIndex: 5169
 
 internal enum ItemState // TypeDefIndex: 5170
 {
-	public int value__; 
+	public int value__;
 	public const ItemState None = 0;
 	public const ItemState Subscribed = 1;
 	public const ItemState LegacyItem = 2;
@@ -25,7 +25,7 @@ internal enum ItemState // TypeDefIndex: 5170
 
 internal enum ItemStatistic // TypeDefIndex: 5171
 {
-	public int value__; 
+	public int value__;
 	public const ItemStatistic NumSubscriptions = 0;
 	public const ItemStatistic NumFavorites = 1;
 	public const ItemStatistic NumFollowers = 2;
@@ -44,7 +44,7 @@ internal enum ItemStatistic // TypeDefIndex: 5171
 
 public enum ItemPreviewType // TypeDefIndex: 5172
 {
-	public int value__; 
+	public int value__;
 	public const ItemPreviewType Image = 0;
 	public const ItemPreviewType YouTubeVideo = 1;
 	public const ItemPreviewType Sketchfab = 2;
@@ -56,49 +56,49 @@ public enum ItemPreviewType // TypeDefIndex: 5172
 
 public struct Item // TypeDefIndex: 5283
 {
-	internal SteamUGCDetails_t details; 
-	internal PublishedFileId _id; 
-	[CompilerGeneratedAttribute] 
-	private string <Title>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Description>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string[] <Tags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Dictionary<string, string> <KeyValueTags>k__BackingField; 
-	public PublishedFileId[] Children; 
-	[CompilerGeneratedAttribute] 
-	private UgcAdditionalPreview[] <AdditionalPreviews>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumSubscriptions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumFavorites>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumFollowers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumUniqueSubscriptions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumUniqueFavorites>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumUniqueFollowers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumUniqueWebsiteViews>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <ReportScore>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumSecondsPlayed>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumPlaytimeSessions>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumComments>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumSecondsPlayedDuringTimePeriod>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <NumPlaytimeSessionsDuringTimePeriod>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <PreviewImageUrl>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Metadata>k__BackingField; 
+	internal SteamUGCDetails_t details;
+	internal PublishedFileId _id;
+	[CompilerGeneratedAttribute]
+	private string <Title>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Description>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string[] <Tags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Dictionary<string, string> <KeyValueTags>k__BackingField;
+	public PublishedFileId[] Children;
+	[CompilerGeneratedAttribute]
+	private UgcAdditionalPreview[] <AdditionalPreviews>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumSubscriptions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumFavorites>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumFollowers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumUniqueSubscriptions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumUniqueFavorites>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumUniqueFollowers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumUniqueWebsiteViews>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <ReportScore>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumSecondsPlayed>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumPlaytimeSessions>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumComments>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumSecondsPlayedDuringTimePeriod>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <NumPlaytimeSessionsDuringTimePeriod>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <PreviewImageUrl>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Metadata>k__BackingField;
 
 	public PublishedFileId Id { get; }
 	public string Title { get; set; }
@@ -135,43 +135,43 @@ public struct Item // TypeDefIndex: 5283
 
 	public PublishedFileId get_Id() { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public string get_Title() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Title(string value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public string get_Description() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Description(string value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public string[] get_Tags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Tags(string[] value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public Dictionary<string, string> get_KeyValueTags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_KeyValueTags(Dictionary<string, string> value) { }
 
 	public Friend get_Owner() { }
 
 	public DateTime get_Updated() { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public UgcAdditionalPreview[] get_AdditionalPreviews() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_AdditionalPreviews(UgcAdditionalPreview[] value) { }
 
 	public bool get_IsInstalled() { }
@@ -188,83 +188,83 @@ public struct Item // TypeDefIndex: 5283
 
 	internal static Item From(SteamUGCDetails_t details) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<Nullable<Result>> Vote(bool up) { }
 
 	public string get_Url() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumSubscriptions(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumFavorites(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumFollowers(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumUniqueSubscriptions(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumUniqueFavorites(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumUniqueFollowers(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumUniqueWebsiteViews(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_ReportScore(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumSecondsPlayed(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumPlaytimeSessions(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumComments(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumSecondsPlayedDuringTimePeriod(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_NumPlaytimeSessionsDuringTimePeriod(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public string get_PreviewImageUrl() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_PreviewImageUrl(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Metadata(string value) { }
 
 }
 
 private struct Item.<Vote>d__83 : IAsyncStateMachine // TypeDefIndex: 5284
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Nullable<Result>> <>t__builder; 
-	public Item <>4__this; 
-	public bool up; 
-	private CallResult<SetUserItemVoteResult_t> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Nullable<Result>> <>t__builder;
+	public Item <>4__this;
+	public bool up;
+	private CallResult<SetUserItemVoteResult_t> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-internal struct ItemInstalled_t : ICallbackData // TypeDefIndex: 5440
+internal struct ItemInstalled_t : ICallbackData // TypeDefIndex: 5442
 {
-	internal AppId AppID; 
-	internal PublishedFileId PublishedFileId; 
-	public static int _datasize; 
+	internal AppId AppID;
+	internal PublishedFileId PublishedFileId;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }
@@ -278,19 +278,19 @@ internal struct ItemInstalled_t : ICallbackData // TypeDefIndex: 5440
 
 }
 
-public class ItemContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6449
+public class ItemContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6451
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint UID; 
-	public int slots; 
-	public float temperature; 
-	public int flags; 
-	public int allowedContents; 
-	public int maxStackSize; 
-	public List<int> allowedItems; 
-	public List<int> availableSlots; 
-	public List<Item> contents; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint UID;
+	public int slots;
+	public float temperature;
+	public int flags;
+	public int allowedContents;
+	public int maxStackSize;
+	public List<int> allowedItems;
+	public List<int> availableSlots;
+	public List<Item> contents;
 
 
 	public static void ResetToPool(ItemContainer instance) { }
@@ -347,26 +347,26 @@ public class ItemContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6450
+public class Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6452
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint UID; 
-	public int itemid; 
-	public int slot; 
-	public int amount; 
-	public int flags; 
-	public float removetime; 
-	public float locktime; 
-	public uint worldEntity; 
-	public Item.InstanceData instanceData; 
-	public uint heldEntity; 
-	public Item.ConditionData conditionData; 
-	public string name; 
-	public string text; 
-	public ulong skinid; 
-	public float cooktime; 
-	public ItemContainer contents; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint UID;
+	public int itemid;
+	public int slot;
+	public int amount;
+	public int flags;
+	public float removetime;
+	public float locktime;
+	public uint worldEntity;
+	public Item.InstanceData instanceData;
+	public uint heldEntity;
+	public Item.ConditionData conditionData;
+	public string name;
+	public string text;
+	public ulong skinid;
+	public float cooktime;
+	public ItemContainer contents;
 
 
 	public static void ResetToPool(Item instance) { }
@@ -423,14 +423,14 @@ public class Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6450
 
 }
 
-public class Item.InstanceData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6451
+public class Item.InstanceData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6453
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int dataInt; 
-	public int blueprintTarget; 
-	public int blueprintAmount; 
-	public uint subEntity; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int dataInt;
+	public int blueprintTarget;
+	public int blueprintAmount;
+	public uint subEntity;
 
 
 	public static void ResetToPool(Item.InstanceData instance) { }
@@ -487,12 +487,12 @@ public class Item.InstanceData : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class Item.ConditionData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6452
+public class Item.ConditionData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6454
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float condition; 
-	public float maxCondition; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float condition;
+	public float maxCondition;
 
 
 	public static void ResetToPool(Item.ConditionData instance) { }
@@ -549,12 +549,12 @@ public class Item.ConditionData : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class ItemAmountList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6516
+public class ItemAmountList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6518
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<int> itemID; 
-	public List<float> amount; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<int> itemID;
+	public List<float> amount;
 
 
 	public static void ResetToPool(ItemAmountList instance) { }
@@ -611,44 +611,44 @@ public class ItemAmountList : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class ItemSchema // TypeDefIndex: 7754
+public class ItemSchema // TypeDefIndex: 7756
 {
-	public int appid; 
-	public ItemSchema.Item[] items; 
+	public int appid;
+	public ItemSchema.Item[] items;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemSchema.Item // TypeDefIndex: 7755
+public class ItemSchema.Item // TypeDefIndex: 7757
 {
-	public string name; 
-	public uint itemdefid; 
-	public string type; 
-	public string price_category; 
-	public string icon_url; 
-	public string icon_url_large; 
-	public bool marketable; 
-	public bool tradable; 
-	public bool commodity; 
-	public string market_hash_name; 
-	public string market_name; 
-	public string bundle; 
-	public string description; 
-	public string workshopid; 
-	public string itemshortname; 
-	public string tags; 
-	public string store_tags; 
-	public string exchange; 
-	public bool store_hidden; 
-	public string background_color; 
-	public string name_color; 
-	public DropChance dropChance; 
-	public Price priceCategory; 
-	public string workshopdownload; 
+	public string name;
+	public uint itemdefid;
+	public string type;
+	public string price_category;
+	public string icon_url;
+	public string icon_url_large;
+	public bool marketable;
+	public bool tradable;
+	public bool commodity;
+	public string market_hash_name;
+	public string market_name;
+	public string bundle;
+	public string description;
+	public string workshopid;
+	public string itemshortname;
+	public string tags;
+	public string store_tags;
+	public string exchange;
+	public bool store_hidden;
+	public string background_color;
+	public string name_color;
+	public DropChance dropChance;
+	public Price priceCategory;
+	public string workshopdownload;
 
-	[JsonIgnoreAttribute] 
+	[JsonIgnoreAttribute]
 	public double Price { get; }
 
 
@@ -658,38 +658,38 @@ public class ItemSchema.Item // TypeDefIndex: 7755
 
 }
 
-public struct ItemOwnership // TypeDefIndex: 9477
+public struct ItemOwnership // TypeDefIndex: 9479
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Id>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OwnershipStatus <OwnershipStatus>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <Id>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OwnershipStatus <OwnershipStatus>k__BackingField;
 
 	public Utf8String Id { get; set; }
 	public OwnershipStatus OwnershipStatus { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Id(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OwnershipStatus get_OwnershipStatus() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OwnershipStatus(OwnershipStatus value) { }
 
 	internal void Set(ref ItemOwnershipInternal other) { }
 
 }
 
-internal struct ItemOwnershipInternal : IGettable<ItemOwnership>, ISettable<ItemOwnership>, IDisposable // TypeDefIndex: 9478
+internal struct ItemOwnershipInternal : IGettable<ItemOwnership>, ISettable<ItemOwnership>, IDisposable // TypeDefIndex: 9480
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Id; 
-	private OwnershipStatus m_OwnershipStatus; 
+	private int m_ApiVersion;
+	private IntPtr m_Id;
+	private OwnershipStatus m_OwnershipStatus;
 
 	public Utf8String Id { get; set; }
 	public OwnershipStatus OwnershipStatus { get; set; }
@@ -713,19 +713,19 @@ internal struct ItemOwnershipInternal : IGettable<ItemOwnership>, ISettable<Item
 
 }
 
-public class ItemBasedFlowRestrictor : IOEntity, IContainerSounds // TypeDefIndex: 10118
+public class ItemBasedFlowRestrictor : IOEntity, IContainerSounds // TypeDefIndex: 10120
 {
-	private Option __menuOption_Menu_Open; 
-	public ItemDefinition passthroughItem; 
-	public ItemContainer.ContentsType allowedContents; 
-	public int maxStackSize; 
-	public int numSlots; 
-	public string lootPanelName; 
+	private Option __menuOption_Menu_Open;
+	public ItemDefinition passthroughItem;
+	public ItemContainer.ContentsType allowedContents;
+	public int maxStackSize;
+	public int numSlots;
+	public string lootPanelName;
 	public const BaseEntity.Flags HasPassthrough = 128;
 	public const BaseEntity.Flags Sparks = 256;
-	public float passthroughItemConditionLossPerSec; 
-	public SoundDefinition openSound; 
-	public SoundDefinition closeSound; 
+	public float passthroughItemConditionLossPerSec;
+	public SoundDefinition openSound;
+	public SoundDefinition closeSound;
 
 	public override bool HasMenuOptions { get; }
 	public SoundDefinition OpenSound { get; }
@@ -738,10 +738,10 @@ public class ItemBasedFlowRestrictor : IOEntity, IContainerSounds // TypeDefInde
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Open(BasePlayer player) { }
 
 	public bool Menu_Open_ShowIf(BasePlayer player) { }
@@ -754,14 +754,14 @@ public class ItemBasedFlowRestrictor : IOEntity, IContainerSounds // TypeDefInde
 
 }
 
-public class ItemSearchEntry : MonoBehaviour // TypeDefIndex: 10453
+public class ItemSearchEntry : MonoBehaviour // TypeDefIndex: 10457
 {
-	public Button button; 
-	public Text text; 
-	public RawImage image; 
-	public RawImage bpImage; 
-	private ItemDefinition itemInfo; 
-	private AddSellOrderManager manager; 
+	public Button button;
+	public Text text;
+	public RawImage image;
+	public RawImage bpImage;
+	private ItemDefinition itemInfo;
+	private AddSellOrderManager manager;
 
 
 	public void Setup(ItemDefinition info, AddSellOrderManager mgr) { }
@@ -774,7 +774,7 @@ public class ItemSearchEntry : MonoBehaviour // TypeDefIndex: 10453
 
 }
 
-public class ItemModCrackOpen : ItemModUnwrap // TypeDefIndex: 10507
+public class ItemModCrackOpen : ItemModUnwrap // TypeDefIndex: 10511
 {
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -783,7 +783,7 @@ public class ItemModCrackOpen : ItemModUnwrap // TypeDefIndex: 10507
 
 }
 
-public class ItemModOpenLootBag : ItemModUnwrap // TypeDefIndex: 10515
+public class ItemModOpenLootBag : ItemModUnwrap // TypeDefIndex: 10519
 {
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -792,7 +792,7 @@ public class ItemModOpenLootBag : ItemModUnwrap // TypeDefIndex: 10515
 
 }
 
-public class ItemModPhoto : ItemModAssociatedEntity<PhotoEntity> // TypeDefIndex: 10536
+public class ItemModPhoto : ItemModAssociatedEntity<PhotoEntity> // TypeDefIndex: 10540
 {
 	protected override bool AllowNullParenting { get; }
 
@@ -803,12 +803,12 @@ public class ItemModPhoto : ItemModAssociatedEntity<PhotoEntity> // TypeDefIndex
 
 }
 
-public class ItemModUnwrap : ItemMod // TypeDefIndex: 10545
+public class ItemModUnwrap : ItemMod // TypeDefIndex: 10549
 {
-	public LootSpawn revealList; 
-	public GameObjectRef successEffect; 
-	public int minTries; 
-	public int maxTries; 
+	public LootSpawn revealList;
+	public GameObjectRef successEffect;
+	public int minTries;
+	public int maxTries;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -817,27 +817,11 @@ public class ItemModUnwrap : ItemMod // TypeDefIndex: 10545
 
 }
 
-public class ItemModOpenWrapped : ItemMod // TypeDefIndex: 10551
+public class ItemModOpenWrapped : ItemMod // TypeDefIndex: 10555
 {
-	public GameObjectRef successEffect; 
-	public static Translate.Phrase open_wrapped_gift; 
-	public static Translate.Phrase open_wrapped_gift_desc; 
-
-
-	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
-
-	public void .ctor() { }
-
-	private static void .cctor() { }
-
-}
-
-public class ItemModWrap : ItemMod // TypeDefIndex: 10552
-{
-	public GameObjectRef successEffect; 
-	public ItemDefinition wrappedDefinition; 
-	public static Translate.Phrase wrap_gift; 
-	public static Translate.Phrase wrap_gift_desc; 
+	public GameObjectRef successEffect;
+	public static Translate.Phrase open_wrapped_gift;
+	public static Translate.Phrase open_wrapped_gift_desc;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -848,18 +832,34 @@ public class ItemModWrap : ItemMod // TypeDefIndex: 10552
 
 }
 
-public class ItemModXMasTreeDecoration : ItemMod // TypeDefIndex: 10554
+public class ItemModWrap : ItemMod // TypeDefIndex: 10556
 {
-	public ItemModXMasTreeDecoration.xmasFlags flagsToChange; 
+	public GameObjectRef successEffect;
+	public ItemDefinition wrappedDefinition;
+	public static Translate.Phrase wrap_gift;
+	public static Translate.Phrase wrap_gift_desc;
+
+
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
+
+}
+
+public class ItemModXMasTreeDecoration : ItemMod // TypeDefIndex: 10558
+{
+	public ItemModXMasTreeDecoration.xmasFlags flagsToChange;
 
 
 	public void .ctor() { }
 
 }
 
-public enum ItemModXMasTreeDecoration.xmasFlags // TypeDefIndex: 10555
+public enum ItemModXMasTreeDecoration.xmasFlags // TypeDefIndex: 10559
 {
-	public int value__; 
+	public int value__;
 	public const ItemModXMasTreeDecoration.xmasFlags pineCones = 128;
 	public const ItemModXMasTreeDecoration.xmasFlags candyCanes = 256;
 	public const ItemModXMasTreeDecoration.xmasFlags gingerbreadMen = 512;
@@ -870,10 +870,10 @@ public enum ItemModXMasTreeDecoration.xmasFlags // TypeDefIndex: 10555
 
 }
 
-public class ItemModRFListener : ItemModAssociatedEntity<PagerEntity> // TypeDefIndex: 10601
+public class ItemModRFListener : ItemModAssociatedEntity<PagerEntity> // TypeDefIndex: 10605
 {
-	public GameObjectRef frequencyPanelPrefab; 
-	private uint pendingPagerID; 
+	public GameObjectRef frequencyPanelPrefab;
+	private uint pendingPagerID;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -884,10 +884,10 @@ public class ItemModRFListener : ItemModAssociatedEntity<PagerEntity> // TypeDef
 
 }
 
-public class ItemButtonTools : MonoBehaviour // TypeDefIndex: 11013
+public class ItemButtonTools : MonoBehaviour // TypeDefIndex: 11019
 {
-	public Image image; 
-	public ItemDefinition itemDef; 
+	public Image image;
+	public ItemDefinition itemDef;
 
 
 	public void GiveSelf(int amount) { }
@@ -900,14 +900,14 @@ public class ItemButtonTools : MonoBehaviour // TypeDefIndex: 11013
 
 }
 
-public class ItemListTools : MonoBehaviour // TypeDefIndex: 11014
+public class ItemListTools : MonoBehaviour // TypeDefIndex: 11020
 {
-	public GameObject categoryButton; 
-	public GameObject itemButton; 
-	public RustInput searchInputText; 
-	internal Button lastCategory; 
-	private IOrderedEnumerable<ItemDefinition> currentItems; 
-	private IOrderedEnumerable<ItemDefinition> allItems; 
+	public GameObject categoryButton;
+	public GameObject itemButton;
+	public RustInput searchInputText;
+	internal Button lastCategory;
+	private IOrderedEnumerable<ItemDefinition> currentItems;
+	private IOrderedEnumerable<ItemDefinition> allItems;
 
 
 	public void OnPanelOpened() { }
@@ -928,13 +928,13 @@ public class ItemListTools : MonoBehaviour // TypeDefIndex: 11014
 
 }
 
-private sealed class ItemListTools.<>c // TypeDefIndex: 11015
+private sealed class ItemListTools.<>c // TypeDefIndex: 11021
 {
-	public static readonly ItemListTools.<>c <>9; 
-	public static Func<ItemDefinition, string> <>9__8_0; 
-	public static Func<ItemDefinition, ItemCategory> <>9__10_0; 
-	public static Func<IGrouping<ItemCategory, ItemDefinition>, ItemCategory> <>9__10_1; 
-	public static Func<ItemDefinition, string> <>9__11_0; 
+	public static readonly ItemListTools.<>c <>9;
+	public static Func<ItemDefinition, string> <>9__8_0;
+	public static Func<ItemDefinition, ItemCategory> <>9__10_0;
+	public static Func<IGrouping<ItemCategory, ItemDefinition>, ItemCategory> <>9__10_1;
+	public static Func<ItemDefinition, string> <>9__11_0;
 
 
 	private static void .cctor() { }
@@ -951,11 +951,11 @@ private sealed class ItemListTools.<>c // TypeDefIndex: 11015
 
 }
 
-private sealed class ItemListTools.<>c__DisplayClass10_0 // TypeDefIndex: 11016
+private sealed class ItemListTools.<>c__DisplayClass10_0 // TypeDefIndex: 11022
 {
-	public Button btn; 
-	public ItemDefinition[] itemArray; 
-	public ItemListTools <>4__this; 
+	public Button btn;
+	public ItemDefinition[] itemArray;
+	public ItemListTools <>4__this;
 
 
 	public void .ctor() { }
@@ -964,7 +964,7 @@ private sealed class ItemListTools.<>c__DisplayClass10_0 // TypeDefIndex: 11016
 
 }
 
-public class ItemTools : MonoBehaviour // TypeDefIndex: 11046
+public class ItemTools : MonoBehaviour // TypeDefIndex: 11052
 {
 
 public class ItemTools : MonoBehaviour
@@ -973,7 +973,7 @@ public class ItemTools : MonoBehaviour
 
 }
 
-public class ItemModAssociatedEntityMobile : ItemModAssociatedEntity<MobileInventoryEntity> // TypeDefIndex: 11179
+public class ItemModAssociatedEntityMobile : ItemModAssociatedEntity<MobileInventoryEntity> // TypeDefIndex: 11185
 {
 	protected override bool AllowNullParenting { get; }
 
@@ -986,10 +986,10 @@ public class ItemModAssociatedEntityMobile : ItemModAssociatedEntity<MobileInven
 
 }
 
-public class ItemModCassette : ItemModAssociatedEntity<Cassette> // TypeDefIndex: 11180
+public class ItemModCassette : ItemModAssociatedEntity<Cassette> // TypeDefIndex: 11186
 {
-	public int noteSpriteIndex; 
-	public PreloadedCassetteContent PreloadedContent; 
+	public int noteSpriteIndex;
+	public PreloadedCassetteContent PreloadedContent;
 
 	protected override bool AllowNullParenting { get; }
 	protected override bool AllowHeldEntityParenting { get; }
@@ -1003,7 +1003,7 @@ public class ItemModCassette : ItemModAssociatedEntity<Cassette> // TypeDefIndex
 
 }
 
-public class ItemModSign : ItemModAssociatedEntity<SignContent> // TypeDefIndex: 11248
+public class ItemModSign : ItemModAssociatedEntity<SignContent> // TypeDefIndex: 11254
 {
 	protected override bool AllowNullParenting { get; }
 
@@ -1014,44 +1014,44 @@ public class ItemModSign : ItemModAssociatedEntity<SignContent> // TypeDefIndex:
 
 }
 
-public class ItemPickup : DroppedItem // TypeDefIndex: 11527
+public class ItemPickup : DroppedItem // TypeDefIndex: 11534
 {
-	public ItemDefinition itemDef; 
-	public int amount; 
-	public ulong skinOverride; 
+	public ItemDefinition itemDef;
+	public int amount;
+	public ulong skinOverride;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemCraftTask // TypeDefIndex: 11848
+public class ItemCraftTask // TypeDefIndex: 11855
 {
-	public ItemBlueprint blueprint; 
-	public float endTime; 
-	public int taskUID; 
-	public BasePlayer owner; 
-	public bool cancelled; 
-	public Item.InstanceData instanceData; 
-	public int amount; 
-	public int skinID; 
-	public List<ulong> potentialOwners; 
-	public List<Item> takenItems; 
-	public int numCrafted; 
-	public float conditionScale; 
-	public float workSecondsComplete; 
-	public float worksecondsRequired; 
+	public ItemBlueprint blueprint;
+	public float endTime;
+	public int taskUID;
+	public BasePlayer owner;
+	public bool cancelled;
+	public Item.InstanceData instanceData;
+	public int amount;
+	public int skinID;
+	public List<ulong> potentialOwners;
+	public List<Item> takenItems;
+	public int numCrafted;
+	public float conditionScale;
+	public float workSecondsComplete;
+	public float worksecondsRequired;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemCrafter : EntityComponent<BasePlayer> // TypeDefIndex: 11849
+public class ItemCrafter : EntityComponent<BasePlayer> // TypeDefIndex: 11856
 {
-	public List<ItemContainer> containers; 
-	public LinkedList<ItemCraftTask> queue; 
-	public int taskUID; 
+	public List<ItemContainer> containers;
+	public LinkedList<ItemCraftTask> queue;
+	public int taskUID;
 
 
 	public void AddContainer(ItemContainer container) { }
@@ -1068,13 +1068,13 @@ public class ItemCrafter : EntityComponent<BasePlayer> // TypeDefIndex: 11849
 
 }
 
-public class ItemEventFlag : MonoBehaviour, IItemUpdate // TypeDefIndex: 11850
+public class ItemEventFlag : MonoBehaviour, IItemUpdate // TypeDefIndex: 11857
 {
-	public Item.Flag flag; 
-	public UnityEvent onEnabled; 
-	public UnityEvent onDisable; 
-	internal bool firstRun; 
-	internal bool lastState; 
+	public Item.Flag flag;
+	public UnityEvent onEnabled;
+	public UnityEvent onDisable;
+	internal bool firstRun;
+	internal bool lastState;
 
 
 	public virtual void OnItemUpdate(Item item) { }
@@ -1083,35 +1083,35 @@ public class ItemEventFlag : MonoBehaviour, IItemUpdate // TypeDefIndex: 11850
 
 }
 
-public class Item // TypeDefIndex: 11851
+public class Item // TypeDefIndex: 11858
 {
-	public Nullable<int> amountOverride; 
-	private static readonly Memoized<string, ValueTuple<ItemDefinition.AmountType, int>> FormatAmountMemoized; 
+	public Nullable<int> amountOverride;
+	private static readonly Memoized<string, ValueTuple<ItemDefinition.AmountType, int>> FormatAmountMemoized;
 	private const string DefaultArmourBreakEffectPath = "assets/bundled/prefabs/fx/armor_break.prefab";
-	private float _condition; 
-	private float _maxCondition; 
-	public ItemDefinition info; 
-	public uint uid; 
-	public bool dirty; 
-	public int amount; 
-	public int position; 
-	public float busyTime; 
-	public float removeTime; 
-	public float fuel; 
-	public bool isServer; 
-	public Item.InstanceData instanceData; 
-	public ulong skin; 
-	public string name; 
-	public string text; 
-	public float cookTimeLeft; 
-	public float progressBar; 
-	[CompilerGeneratedAttribute] 
-	private Action<Item> OnDirty; 
-	public Item.Flag flags; 
-	public ItemContainer contents; 
-	public ItemContainer parent; 
-	private EntityRef worldEnt; 
-	private EntityRef heldEntity; 
+	private float _condition;
+	private float _maxCondition;
+	public ItemDefinition info;
+	public uint uid;
+	public bool dirty;
+	public int amount;
+	public int position;
+	public float busyTime;
+	public float removeTime;
+	public float fuel;
+	public bool isServer;
+	public Item.InstanceData instanceData;
+	public ulong skin;
+	public string name;
+	public string text;
+	public float cookTimeLeft;
+	public float progressBar;
+	[CompilerGeneratedAttribute]
+	private Action<Item> OnDirty;
+	public Item.Flag flags;
+	public ItemContainer contents;
+	public ItemContainer parent;
+	private EntityRef worldEnt;
+	private EntityRef heldEntity;
 
 	public float condition { get; set; }
 	public float maxCondition { get; set; }
@@ -1168,10 +1168,10 @@ public class Item // TypeDefIndex: 11851
 
 	public bool IsBlueprint() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnDirty(Action<Item> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnDirty(Action<Item> value) { }
 
 	public bool HasFlag(Item.Flag f) { }
@@ -1260,17 +1260,17 @@ public class Item // TypeDefIndex: 11851
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <get_iconSprite>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <get_isLoadingIconSprite>
 
 }
 
-public enum Item.Flag // TypeDefIndex: 11852
+public enum Item.Flag // TypeDefIndex: 11859
 {
-	public int value__; 
+	public int value__;
 	public const Item.Flag None = 0;
 	public const Item.Flag Placeholder = 1;
 	public const Item.Flag IsOn = 2;
@@ -1280,9 +1280,9 @@ public enum Item.Flag // TypeDefIndex: 11852
 
 }
 
-private sealed class Item.<>c // TypeDefIndex: 11853
+private sealed class Item.<>c // TypeDefIndex: 11860
 {
-	public static readonly Item.<>c <>9; 
+	public static readonly Item.<>c <>9;
 
 
 	private static void .cctor() { }
@@ -1293,22 +1293,22 @@ private sealed class Item.<>c // TypeDefIndex: 11853
 
 }
 
-public sealed class ItemContainer // TypeDefIndex: 11856
+public sealed class ItemContainer // TypeDefIndex: 11863
 {
-	public ItemContainer.Flag flags; 
-	public ItemContainer.ContentsType allowedContents; 
-	public ItemDefinition[] onlyAllowedItems; 
-	public List<ItemSlot> availableSlots; 
-	public int capacity; 
-	public uint uid; 
-	public bool dirty; 
-	public List<Item> itemList; 
-	public float temperature; 
-	public Item parent; 
-	public BasePlayer playerOwner; 
-	public BaseEntity entityOwner; 
-	public bool isServer; 
-	public int maxStackSize; 
+	public ItemContainer.Flag flags;
+	public ItemContainer.ContentsType allowedContents;
+	public ItemDefinition[] onlyAllowedItems;
+	public List<ItemSlot> availableSlots;
+	public int capacity;
+	public uint uid;
+	public bool dirty;
+	public List<Item> itemList;
+	public float temperature;
+	public Item parent;
+	public BasePlayer playerOwner;
+	public BaseEntity entityOwner;
+	public bool isServer;
+	public int maxStackSize;
 
 	public bool HasLimitedAllowedItems { get; }
 
@@ -1389,9 +1389,9 @@ public sealed class ItemContainer // TypeDefIndex: 11856
 
 }
 
-public enum ItemContainer.Flag // TypeDefIndex: 11857
+public enum ItemContainer.Flag // TypeDefIndex: 11864
 {
-	public int value__; 
+	public int value__;
 	public const ItemContainer.Flag IsPlayer = 1;
 	public const ItemContainer.Flag Clothing = 2;
 	public const ItemContainer.Flag Belt = 4;
@@ -1404,26 +1404,26 @@ public enum ItemContainer.Flag // TypeDefIndex: 11857
 
 }
 
-public enum ItemContainer.ContentsType // TypeDefIndex: 11858
+public enum ItemContainer.ContentsType // TypeDefIndex: 11865
 {
-	public int value__; 
+	public int value__;
 	public const ItemContainer.ContentsType Generic = 1;
 	public const ItemContainer.ContentsType Liquid = 2;
 
 }
 
-public enum ItemContainer.CanAcceptResult // TypeDefIndex: 11859
+public enum ItemContainer.CanAcceptResult // TypeDefIndex: 11866
 {
-	public int value__; 
+	public int value__;
 	public const ItemContainer.CanAcceptResult CanAccept = 0;
 	public const ItemContainer.CanAcceptResult CannotAccept = 1;
 	public const ItemContainer.CanAcceptResult CannotAcceptRightNow = 2;
 
 }
 
-private sealed class ItemContainer.<>c__DisplayClass41_0 // TypeDefIndex: 11860
+private sealed class ItemContainer.<>c__DisplayClass41_0 // TypeDefIndex: 11867
 {
-	public int itemid; 
+	public int itemid;
 
 
 	public void .ctor() { }
@@ -1432,27 +1432,27 @@ private sealed class ItemContainer.<>c__DisplayClass41_0 // TypeDefIndex: 11860
 
 }
 
-public class ItemBlueprint : MonoBehaviour // TypeDefIndex: 11861
+public class ItemBlueprint : MonoBehaviour // TypeDefIndex: 11868
 {
-	public List<ItemAmount> ingredients; 
-	public List<ItemDefinition> additionalUnlocks; 
-	public bool defaultBlueprint; 
-	public bool userCraftable; 
-	public bool isResearchable; 
-	public Rarity rarity; 
-	[HeaderAttribute] 
-	public int workbenchLevelRequired; 
-	[HeaderAttribute] 
-	public int scrapRequired; 
-	public int scrapFromRecycle; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public bool NeedsSteamItem; 
-	public int blueprintStackSize; 
-	public float time; 
-	public int amountToCreate; 
-	public string UnlockAchievment; 
-	public string RecycleStat; 
+	public List<ItemAmount> ingredients;
+	public List<ItemDefinition> additionalUnlocks;
+	public bool defaultBlueprint;
+	public bool userCraftable;
+	public bool isResearchable;
+	public Rarity rarity;
+	[HeaderAttribute]
+	public int workbenchLevelRequired;
+	[HeaderAttribute]
+	public int scrapRequired;
+	public int scrapFromRecycle;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public bool NeedsSteamItem;
+	public int blueprintStackSize;
+	public float time;
+	public int amountToCreate;
+	public string UnlockAchievment;
+	public string RecycleStat;
 
 	public ItemDefinition targetItem { get; }
 	public bool NeedsSteamDLC { get; }
@@ -1468,64 +1468,65 @@ public class ItemBlueprint : MonoBehaviour // TypeDefIndex: 11861
 
 }
 
-public class ItemDefinition : MonoBehaviour // TypeDefIndex: 11862
+public class ItemDefinition : MonoBehaviour // TypeDefIndex: 11869
 {
-	[HeaderAttribute] 
-	[ReadOnlyAttribute] 
-	public int itemid; 
-	[TooltipAttribute] 
-	public string shortname; 
-	[HeaderAttribute] 
-	public Translate.Phrase displayName; 
-	public Translate.Phrase displayDescription; 
-	public Sprite iconSprite; 
-	public ItemCategory category; 
-	public ItemSelectionPanel selectionPanel; 
-	[HeaderAttribute] 
-	public int maxDraggable; 
-	public ItemContainer.ContentsType itemType; 
-	public ItemDefinition.AmountType amountType; 
-	[InspectorFlagsAttribute] 
-	public ItemSlot occupySlots; 
-	public int stackable; 
-	public bool quickDespawn; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	public Rarity rarity; 
-	public bool spawnAsBlueprint; 
-	[HeaderAttribute] 
-	public SoundDefinition inventoryGrabSound; 
-	public SoundDefinition inventoryDropSound; 
-	public SoundDefinition physImpactSoundDef; 
-	public ItemDefinition.Condition condition; 
-	[HeaderAttribute] 
-	public bool hidden; 
-	[InspectorFlagsAttribute] 
-	public ItemDefinition.Flag flags; 
-	[TooltipAttribute] 
-	public SteamInventoryItem steamItem; 
-	[TooltipAttribute] 
-	public SteamDLCItem steamDlc; 
-	[TooltipAttribute] 
-	public ItemDefinition Parent; 
-	public GameObjectRef worldModelPrefab; 
-	public ItemDefinition isRedirectOf; 
-	public ItemDefinition.RedirectVendingBehaviour redirectVendingBehaviour; 
-	public ItemMod[] itemMods; 
-	public BaseEntity.TraitFlag Traits; 
-	public ItemSkinDirectory.Skin[] skins; 
-	private IPlayerItemDefinition[] _skins2; 
-	[TooltipAttribute] 
-	public GameObject panel; 
-	[CompilerGeneratedAttribute] 
-	private ItemModWearable <ItemModWearable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <isHoldable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <isUsable>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <CraftableWithSkin>k__BackingField; 
-	public ItemDefinition[] Children; 
+	[HeaderAttribute]
+	[ReadOnlyAttribute]
+	public int itemid;
+	[TooltipAttribute]
+	public string shortname;
+	[HeaderAttribute]
+	public Translate.Phrase displayName;
+	public Translate.Phrase displayDescription;
+	public Sprite iconSprite;
+	public ItemCategory category;
+	public ItemSelectionPanel selectionPanel;
+	[HeaderAttribute]
+	public int maxDraggable;
+	public ItemContainer.ContentsType itemType;
+	public ItemDefinition.AmountType amountType;
+	[InspectorFlagsAttribute]
+	public ItemSlot occupySlots;
+	public int stackable;
+	public bool quickDespawn;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	public Rarity rarity;
+	public Rarity despawnRarity;
+	public bool spawnAsBlueprint;
+	[HeaderAttribute]
+	public SoundDefinition inventoryGrabSound;
+	public SoundDefinition inventoryDropSound;
+	public SoundDefinition physImpactSoundDef;
+	public ItemDefinition.Condition condition;
+	[HeaderAttribute]
+	public bool hidden;
+	[InspectorFlagsAttribute]
+	public ItemDefinition.Flag flags;
+	[TooltipAttribute]
+	public SteamInventoryItem steamItem;
+	[TooltipAttribute]
+	public SteamDLCItem steamDlc;
+	[TooltipAttribute]
+	public ItemDefinition Parent;
+	public GameObjectRef worldModelPrefab;
+	public ItemDefinition isRedirectOf;
+	public ItemDefinition.RedirectVendingBehaviour redirectVendingBehaviour;
+	public ItemMod[] itemMods;
+	public BaseEntity.TraitFlag Traits;
+	public ItemSkinDirectory.Skin[] skins;
+	private IPlayerItemDefinition[] _skins2;
+	[TooltipAttribute]
+	public GameObject panel;
+	[CompilerGeneratedAttribute]
+	private ItemModWearable <ItemModWearable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <isHoldable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <isUsable>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <CraftableWithSkin>k__BackingField;
+	public ItemDefinition[] Children;
 
 	public IPlayerItemDefinition[] skins2 { get; }
 	public ItemBlueprint Blueprint { get; }
@@ -1560,82 +1561,82 @@ public class ItemDefinition : MonoBehaviour // TypeDefIndex: 11862
 
 	public bool get_isWearable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ItemModWearable get_ItemModWearable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ItemModWearable(ItemModWearable value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_isHoldable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_isHoldable(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_isUsable() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_isUsable(bool value) { }
 
 	public bool get_HasSkins() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_CraftableWithSkin() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CraftableWithSkin(bool value) { }
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <Initialize>
 
 }
 
-public struct ItemDefinition.Condition // TypeDefIndex: 11863
+public struct ItemDefinition.Condition // TypeDefIndex: 11870
 {
-	public bool enabled; 
-	[TooltipAttribute] 
-	public float max; 
-	[TooltipAttribute] 
-	public bool repairable; 
-	[TooltipAttribute] 
-	public bool maintainMaxCondition; 
-	public bool ovenCondition; 
-	public ItemDefinition.Condition.WorldSpawnCondition foundCondition; 
+	public bool enabled;
+	[TooltipAttribute]
+	public float max;
+	[TooltipAttribute]
+	public bool repairable;
+	[TooltipAttribute]
+	public bool maintainMaxCondition;
+	public bool ovenCondition;
+	public ItemDefinition.Condition.WorldSpawnCondition foundCondition;
 
 }
 
-public class ItemDefinition.Condition.WorldSpawnCondition // TypeDefIndex: 11864
+public class ItemDefinition.Condition.WorldSpawnCondition // TypeDefIndex: 11871
 {
-	public float fractionMin; 
-	public float fractionMax; 
+	public float fractionMin;
+	public float fractionMax;
 
 
 	public void .ctor() { }
 
 }
 
-public enum ItemDefinition.RedirectVendingBehaviour // TypeDefIndex: 11865
+public enum ItemDefinition.RedirectVendingBehaviour // TypeDefIndex: 11872
 {
-	public int value__; 
+	public int value__;
 	public const ItemDefinition.RedirectVendingBehaviour NoListing = 0;
 	public const ItemDefinition.RedirectVendingBehaviour ListAsUniqueItem = 1;
 
 }
 
-public enum ItemDefinition.Flag // TypeDefIndex: 11866
+public enum ItemDefinition.Flag // TypeDefIndex: 11873
 {
-	public int value__; 
+	public int value__;
 	public const ItemDefinition.Flag NoDropping = 1;
 	public const ItemDefinition.Flag NotStraightToBelt = 2;
 
 }
 
-public enum ItemDefinition.AmountType // TypeDefIndex: 11867
+public enum ItemDefinition.AmountType // TypeDefIndex: 11874
 {
-	public int value__; 
+	public int value__;
 	public const ItemDefinition.AmountType Count = 0;
 	public const ItemDefinition.AmountType Millilitre = 1;
 	public const ItemDefinition.AmountType Feet = 2;
@@ -1646,10 +1647,10 @@ public enum ItemDefinition.AmountType // TypeDefIndex: 11867
 
 }
 
-private sealed class ItemDefinition.<>c__DisplayClass34_0 // TypeDefIndex: 11868
+private sealed class ItemDefinition.<>c__DisplayClass35_0 // TypeDefIndex: 11875
 {
-	public string prefabname; 
-	public ItemDefinition <>4__this; 
+	public string prefabname;
+	public ItemDefinition <>4__this;
 
 
 	public void .ctor() { }
@@ -1658,9 +1659,9 @@ private sealed class ItemDefinition.<>c__DisplayClass34_0 // TypeDefIndex: 11868
 
 }
 
-public enum ItemCategory // TypeDefIndex: 11869
+public enum ItemCategory // TypeDefIndex: 11876
 {
-	public int value__; 
+	public int value__;
 	public const ItemCategory Weapon = 0;
 	public const ItemCategory Construction = 1;
 	public const ItemCategory Items = 2;
@@ -1682,9 +1683,9 @@ public enum ItemCategory // TypeDefIndex: 11869
 
 }
 
-public enum ItemSlot // TypeDefIndex: 11870
+public enum ItemSlot // TypeDefIndex: 11877
 {
-	public int value__; 
+	public int value__;
 	public const ItemSlot None = 1;
 	public const ItemSlot Barrel = 2;
 	public const ItemSlot Silencer = 4;
@@ -1695,9 +1696,9 @@ public enum ItemSlot // TypeDefIndex: 11870
 
 }
 
-public enum ItemSelectionPanel // TypeDefIndex: 11871
+public enum ItemSelectionPanel // TypeDefIndex: 11878
 {
-	public int value__; 
+	public int value__;
 	public const ItemSelectionPanel None = 0;
 	public const ItemSelectionPanel Vessel = 1;
 	public const ItemSelectionPanel Modifications = 2;
@@ -1705,18 +1706,18 @@ public enum ItemSelectionPanel // TypeDefIndex: 11871
 
 }
 
-public class ItemSelector : PropertyAttribute // TypeDefIndex: 11872
+public class ItemSelector : PropertyAttribute // TypeDefIndex: 11879
 {
-	public ItemCategory category; 
+	public ItemCategory category;
 
 
 	public void .ctor(ItemCategory category = 11) { }
 
 }
 
-public class ItemMod : MonoBehaviour // TypeDefIndex: 11873
+public class ItemMod : MonoBehaviour // TypeDefIndex: 11880
 {
-	protected ItemMod[] siblingMods; 
+	protected ItemMod[] siblingMods;
 
 
 	public virtual void ModInit() { }
@@ -1747,9 +1748,9 @@ public class ItemMod : MonoBehaviour // TypeDefIndex: 11873
 
 }
 
-public class ItemModActionChange : ItemMod // TypeDefIndex: 11874
+public class ItemModActionChange : ItemMod // TypeDefIndex: 11881
 {
-	public ItemMod[] actions; 
+	public ItemMod[] actions;
 
 
 	private void OnValidate() { }
@@ -1758,9 +1759,9 @@ public class ItemModActionChange : ItemMod // TypeDefIndex: 11874
 
 }
 
-public class ItemModActionContainerChange : ItemMod // TypeDefIndex: 11875
+public class ItemModActionContainerChange : ItemMod // TypeDefIndex: 11882
 {
-	public ItemMod[] actions; 
+	public ItemMod[] actions;
 
 
 	private void OnValidate() { }
@@ -1769,34 +1770,34 @@ public class ItemModActionContainerChange : ItemMod // TypeDefIndex: 11875
 
 }
 
-public class ItemModAlterCondition : ItemMod // TypeDefIndex: 11876
+public class ItemModAlterCondition : ItemMod // TypeDefIndex: 11883
 {
-	public float conditionChange; 
+	public float conditionChange;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModAnimalEquipment : ItemMod // TypeDefIndex: 11877
+public class ItemModAnimalEquipment : ItemMod // TypeDefIndex: 11884
 {
-	public BaseEntity.Flags WearableFlag; 
-	public bool hideHair; 
-	public ProtectionProperties animalProtection; 
-	public ProtectionProperties riderProtection; 
-	public int additionalInventorySlots; 
-	public float speedModifier; 
-	public float staminaUseModifier; 
-	public ItemModAnimalEquipment.SlotType slot; 
+	public BaseEntity.Flags WearableFlag;
+	public bool hideHair;
+	public ProtectionProperties animalProtection;
+	public ProtectionProperties riderProtection;
+	public int additionalInventorySlots;
+	public float speedModifier;
+	public float staminaUseModifier;
+	public ItemModAnimalEquipment.SlotType slot;
 
 
 	public void .ctor() { }
 
 }
 
-public enum ItemModAnimalEquipment.SlotType // TypeDefIndex: 11878
+public enum ItemModAnimalEquipment.SlotType // TypeDefIndex: 11885
 {
-	public int value__; 
+	public int value__;
 	public const ItemModAnimalEquipment.SlotType Basic = 0;
 	public const ItemModAnimalEquipment.SlotType Armor = 1;
 	public const ItemModAnimalEquipment.SlotType Saddle = 2;
@@ -1805,9 +1806,9 @@ public enum ItemModAnimalEquipment.SlotType // TypeDefIndex: 11878
 
 }
 
-public abstract class ItemModAssociatedEntity<T> : ItemMod // TypeDefIndex: 11879
+public abstract class ItemModAssociatedEntity<T> : ItemMod // TypeDefIndex: 11886
 {
-	public GameObjectRef entityPrefab; 
+	public GameObjectRef entityPrefab;
 
 	protected virtual bool AllowNullParenting { get; }
 	protected virtual bool AllowHeldEntityParenting { get; }
@@ -1855,16 +1856,16 @@ public abstract class ItemModAssociatedEntity<T> : ItemMod // TypeDefIndex: 1187
 
 }
 
-public class ItemModBaitContainer : ItemModContainer // TypeDefIndex: 11880
+public class ItemModBaitContainer : ItemModContainer // TypeDefIndex: 11887
 {
 
 	public void .ctor() { }
 
 }
 
-public class ItemModBlueprintCraft : ItemMod // TypeDefIndex: 11881
+public class ItemModBlueprintCraft : ItemMod // TypeDefIndex: 11888
 {
-	public GameObjectRef successEffect; 
+	public GameObjectRef successEffect;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -1873,51 +1874,51 @@ public class ItemModBlueprintCraft : ItemMod // TypeDefIndex: 11881
 
 }
 
-public class ItemModBurnable : ItemMod // TypeDefIndex: 11882
+public class ItemModBurnable : ItemMod // TypeDefIndex: 11889
 {
-	public float fuelAmount; 
-	[ItemSelector] 
-	public ItemDefinition byproductItem; 
-	public int byproductAmount; 
-	public float byproductChance; 
+	public float fuelAmount;
+	[ItemSelector]
+	public ItemDefinition byproductItem;
+	public int byproductAmount;
+	public float byproductChance;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModCassetteContainer : ItemModContainer // TypeDefIndex: 11883
+public class ItemModCassetteContainer : ItemModContainer // TypeDefIndex: 11890
 {
-	public ItemDefinition[] CassetteItems; 
+	public ItemDefinition[] CassetteItems;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModChildIO : ItemMod // TypeDefIndex: 11884
+public class ItemModChildIO : ItemMod // TypeDefIndex: 11891
 {
-	public GameObjectRef TargetChildIO; 
+	public GameObjectRef TargetChildIO;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModCompostable : MonoBehaviour // TypeDefIndex: 11885
+public class ItemModCompostable : MonoBehaviour // TypeDefIndex: 11892
 {
-	public float TotalFertilizerProduced; 
-	public float BaitValue; 
+	public float TotalFertilizerProduced;
+	public float BaitValue;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModConditionContainerFlag : ItemMod // TypeDefIndex: 11886
+public class ItemModConditionContainerFlag : ItemMod // TypeDefIndex: 11893
 {
-	public ItemContainer.Flag flag; 
-	public bool requiredState; 
+	public ItemContainer.Flag flag;
+	public bool requiredState;
 
 
 	public override bool Passes(Item item) { }
@@ -1926,12 +1927,12 @@ public class ItemModConditionContainerFlag : ItemMod // TypeDefIndex: 11886
 
 }
 
-public class ItemModConditionHasCondition : ItemMod // TypeDefIndex: 11887
+public class ItemModConditionHasCondition : ItemMod // TypeDefIndex: 11894
 {
-	public float conditionTarget; 
-	[TooltipAttribute] 
-	public float conditionFractionTarget; 
-	public bool lessThan; 
+	public float conditionTarget;
+	[TooltipAttribute]
+	public float conditionFractionTarget;
+	public bool lessThan;
 
 
 	public override bool Passes(Item item) { }
@@ -1940,26 +1941,26 @@ public class ItemModConditionHasCondition : ItemMod // TypeDefIndex: 11887
 
 }
 
-public class ItemModConditionHasContents : ItemMod // TypeDefIndex: 11888
+public class ItemModConditionHasContents : ItemMod // TypeDefIndex: 11895
 {
-	[TooltipAttribute] 
-	public ItemDefinition itemDef; 
-	public bool requiredState; 
+	[TooltipAttribute]
+	public ItemDefinition itemDef;
+	public bool requiredState;
 
 
 	public override bool Passes(Item item) { }
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <Passes>
 
 }
 
-public class ItemModConditionHasFlag : ItemMod // TypeDefIndex: 11889
+public class ItemModConditionHasFlag : ItemMod // TypeDefIndex: 11896
 {
-	public Item.Flag flag; 
-	public bool requiredState; 
+	public Item.Flag flag;
+	public bool requiredState;
 
 
 	public override bool Passes(Item item) { }
@@ -1968,9 +1969,9 @@ public class ItemModConditionHasFlag : ItemMod // TypeDefIndex: 11889
 
 }
 
-public class ItemModConditionInWater : ItemMod // TypeDefIndex: 11890
+public class ItemModConditionInWater : ItemMod // TypeDefIndex: 11897
 {
-	public bool requiredState; 
+	public bool requiredState;
 
 
 	public override bool Passes(Item item) { }
@@ -1979,9 +1980,9 @@ public class ItemModConditionInWater : ItemMod // TypeDefIndex: 11890
 
 }
 
-public class ItemModConditionIsSleeping : ItemMod // TypeDefIndex: 11891
+public class ItemModConditionIsSleeping : ItemMod // TypeDefIndex: 11898
 {
-	public bool requiredState; 
+	public bool requiredState;
 
 
 	public override bool Passes(Item item) { }
@@ -1990,13 +1991,13 @@ public class ItemModConditionIsSleeping : ItemMod // TypeDefIndex: 11891
 
 }
 
-public class ItemModConsumable : MonoBehaviour // TypeDefIndex: 11892
+public class ItemModConsumable : MonoBehaviour // TypeDefIndex: 11899
 {
-	public int amountToConsume; 
-	public float conditionFractionToLose; 
-	public string achievementWhenEaten; 
-	public List<ItemModConsumable.ConsumableEffect> effects; 
-	public List<ModifierDefintion> modifiers; 
+	public int amountToConsume;
+	public float conditionFractionToLose;
+	public string achievementWhenEaten;
+	public List<ItemModConsumable.ConsumableEffect> effects;
+	public List<ModifierDefintion> modifiers;
 
 
 	public float GetIfType(MetabolismAttribute.Type typeToPick) { }
@@ -2005,25 +2006,25 @@ public class ItemModConsumable : MonoBehaviour // TypeDefIndex: 11892
 
 }
 
-public class ItemModConsumable.ConsumableEffect // TypeDefIndex: 11893
+public class ItemModConsumable.ConsumableEffect // TypeDefIndex: 11900
 {
-	public MetabolismAttribute.Type type; 
-	public float amount; 
-	public float time; 
-	public float onlyIfHealthLessThan; 
+	public MetabolismAttribute.Type type;
+	public float amount;
+	public float time;
+	public float onlyIfHealthLessThan;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModConsume : ItemMod // TypeDefIndex: 11894
+public class ItemModConsume : ItemMod // TypeDefIndex: 11901
 {
-	public GameObjectRef consumeEffect; 
-	public string eatGesture; 
-	[TooltipAttribute] 
-	public ItemAmountRandom[] product; 
-	public ItemModConsumable primaryConsumable; 
+	public GameObjectRef consumeEffect;
+	public string eatGesture;
+	[TooltipAttribute]
+	public ItemAmountRandom[] product;
+	public ItemModConsumable primaryConsumable;
 
 
 	public override void CL_DoAction(Item item, BasePlayer player) { }
@@ -2034,20 +2035,20 @@ public class ItemModConsume : ItemMod // TypeDefIndex: 11894
 
 }
 
-public class ItemModConsumeChance : ItemModConsume // TypeDefIndex: 11895
+public class ItemModConsumeChance : ItemModConsume // TypeDefIndex: 11902
 {
-	public float chanceForSecondaryConsume; 
-	public GameObjectRef secondaryConsumeEffect; 
-	public ItemModConsumable secondaryConsumable; 
+	public float chanceForSecondaryConsume;
+	public GameObjectRef secondaryConsumeEffect;
+	public ItemModConsumable secondaryConsumable;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModConsumeContents : ItemMod // TypeDefIndex: 11896
+public class ItemModConsumeContents : ItemMod // TypeDefIndex: 11903
 {
-	public GameObjectRef consumeEffect; 
+	public GameObjectRef consumeEffect;
 
 
 	public override void CL_DoAction(Item item, BasePlayer player) { }
@@ -2058,19 +2059,19 @@ public class ItemModConsumeContents : ItemMod // TypeDefIndex: 11896
 
 }
 
-public class ItemModContainer : ItemMod // TypeDefIndex: 11897
+public class ItemModContainer : ItemMod // TypeDefIndex: 11904
 {
-	public int capacity; 
-	public int maxStackSize; 
-	[InspectorFlagsAttribute] 
-	public ItemContainer.Flag containerFlags; 
-	public ItemContainer.ContentsType onlyAllowedContents; 
-	public ItemDefinition onlyAllowedItemType; 
-	public List<ItemSlot> availableSlots; 
-	public ItemDefinition[] validItemWhitelist; 
-	public bool openInDeployed; 
-	public bool openInInventory; 
-	public List<ItemAmount> defaultContents; 
+	public int capacity;
+	public int maxStackSize;
+	[InspectorFlagsAttribute]
+	public ItemContainer.Flag containerFlags;
+	public ItemContainer.ContentsType onlyAllowedContents;
+	public ItemDefinition onlyAllowedItemType;
+	public List<ItemSlot> availableSlots;
+	public ItemDefinition[] validItemWhitelist;
+	public bool openInDeployed;
+	public bool openInInventory;
+	public List<ItemAmount> defaultContents;
 
 
 	public override int GetTotalUISlots(Item item) { }
@@ -2081,10 +2082,10 @@ public class ItemModContainer : ItemMod // TypeDefIndex: 11897
 
 }
 
-public class ItemModContainerRestriction : ItemMod // TypeDefIndex: 11898
+public class ItemModContainerRestriction : ItemMod // TypeDefIndex: 11905
 {
-	[InspectorFlagsAttribute] 
-	public ItemModContainerRestriction.SlotFlags slotFlags; 
+	[InspectorFlagsAttribute]
+	public ItemModContainerRestriction.SlotFlags slotFlags;
 
 
 	public bool CanExistWith(ItemModContainerRestriction other) { }
@@ -2093,22 +2094,22 @@ public class ItemModContainerRestriction : ItemMod // TypeDefIndex: 11898
 
 }
 
-public enum ItemModContainerRestriction.SlotFlags // TypeDefIndex: 11899
+public enum ItemModContainerRestriction.SlotFlags // TypeDefIndex: 11906
 {
-	public int value__; 
+	public int value__;
 	public const ItemModContainerRestriction.SlotFlags Map = 1;
 
 }
 
-public class ItemModCookable : ItemMod // TypeDefIndex: 11900
+public class ItemModCookable : ItemMod // TypeDefIndex: 11907
 {
-	[ItemSelector] 
-	public ItemDefinition becomeOnCooked; 
-	public float cookTime; 
-	public int amountOfBecome; 
-	public int lowTemp; 
-	public int highTemp; 
-	public bool setCookingFlag; 
+	[ItemSelector]
+	public ItemDefinition becomeOnCooked;
+	public float cookTime;
+	public int amountOfBecome;
+	public int lowTemp;
+	public int highTemp;
+	public bool setCookingFlag;
 
 
 	public void OnValidate() { }
@@ -2119,12 +2120,12 @@ public class ItemModCookable : ItemMod // TypeDefIndex: 11900
 
 }
 
-public class ItemModCycle : ItemMod // TypeDefIndex: 11901
+public class ItemModCycle : ItemMod // TypeDefIndex: 11908
 {
-	public ItemMod[] actions; 
-	public float timeBetweenCycles; 
-	public float timerStart; 
-	public bool onlyAdvanceTimerWhenPass; 
+	public ItemMod[] actions;
+	public float timeBetweenCycles;
+	public float timerStart;
+	public bool onlyAdvanceTimerWhenPass;
 
 
 	private void OnValidate() { }
@@ -2133,12 +2134,12 @@ public class ItemModCycle : ItemMod // TypeDefIndex: 11901
 
 }
 
-public class ItemModDeployable : MonoBehaviour // TypeDefIndex: 11902
+public class ItemModDeployable : MonoBehaviour // TypeDefIndex: 11909
 {
-	public GameObjectRef entityPrefab; 
-	[HeaderAttribute] 
-	public bool showCrosshair; 
-	public string UnlockAchievement; 
+	public GameObjectRef entityPrefab;
+	[HeaderAttribute]
+	public bool showCrosshair;
+	public string UnlockAchievement;
 
 
 	public Deployable GetDeployable(BaseEntity entity) { }
@@ -2147,58 +2148,58 @@ public class ItemModDeployable : MonoBehaviour // TypeDefIndex: 11902
 
 }
 
-public class ItemModEntity : ItemMod // TypeDefIndex: 11903
+public class ItemModEntity : ItemMod // TypeDefIndex: 11910
 {
-	public GameObjectRef entityPrefab; 
-	public string defaultBone; 
+	public GameObjectRef entityPrefab;
+	public string defaultBone;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModEntityReference : MonoBehaviour // TypeDefIndex: 11904
+public class ItemModEntityReference : MonoBehaviour // TypeDefIndex: 11911
 {
-	public GameObjectRef entityPrefab; 
+	public GameObjectRef entityPrefab;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModFishable : ItemMod // TypeDefIndex: 11905
+public class ItemModFishable : ItemMod // TypeDefIndex: 11912
 {
-	public bool CanBeFished; 
-	[HeaderAttribute] 
-	public float StrainModifier; 
-	public float MoveMultiplier; 
-	public float ReelInSpeedMultiplier; 
-	public float CatchWaitTimeMultiplier; 
-	[HeaderAttribute] 
-	public float MinimumBaitLevel; 
-	public float MaximumBaitLevel; 
-	public float MinimumWaterDepth; 
-	public float MaximumWaterDepth; 
-	[InspectorFlagsAttribute] 
-	public WaterBody.FishingTag RequiredTag; 
-	[RangeAttribute] 
-	public float Chance; 
-	public string SteamStatName; 
+	public bool CanBeFished;
+	[HeaderAttribute]
+	public float StrainModifier;
+	public float MoveMultiplier;
+	public float ReelInSpeedMultiplier;
+	public float CatchWaitTimeMultiplier;
+	[HeaderAttribute]
+	public float MinimumBaitLevel;
+	public float MaximumBaitLevel;
+	public float MinimumWaterDepth;
+	public float MaximumWaterDepth;
+	[InspectorFlagsAttribute]
+	public WaterBody.FishingTag RequiredTag;
+	[RangeAttribute]
+	public float Chance;
+	public string SteamStatName;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModGiveOxygen : ItemMod, IAirSupply // TypeDefIndex: 11907
+public class ItemModGiveOxygen : ItemMod, IAirSupply // TypeDefIndex: 11914
 {
-	public ItemModGiveOxygen.AirSupplyType airType; 
-	public int amountToConsume; 
-	public GameObjectRef inhaleEffect; 
-	public GameObjectRef exhaleEffect; 
-	public GameObjectRef bubblesEffect; 
-	private float timeRemaining; 
-	private float cycleTime; 
+	public ItemModGiveOxygen.AirSupplyType airType;
+	public int amountToConsume;
+	public GameObjectRef inhaleEffect;
+	public GameObjectRef exhaleEffect;
+	public GameObjectRef bubblesEffect;
+	private float timeRemaining;
+	private float cycleTime;
 
 	public ItemModGiveOxygen.AirSupplyType AirType { get; }
 
@@ -2215,31 +2216,31 @@ public class ItemModGiveOxygen : ItemMod, IAirSupply // TypeDefIndex: 11907
 
 }
 
-public enum ItemModGiveOxygen.AirSupplyType // TypeDefIndex: 11908
+public enum ItemModGiveOxygen.AirSupplyType // TypeDefIndex: 11915
 {
-	public int value__; 
+	public int value__;
 	public const ItemModGiveOxygen.AirSupplyType Lungs = 0;
 	public const ItemModGiveOxygen.AirSupplyType ScubaTank = 1;
 	public const ItemModGiveOxygen.AirSupplyType Submarine = 2;
 
 }
 
-public class ItemModKeycard : ItemMod // TypeDefIndex: 11909
+public class ItemModKeycard : ItemMod // TypeDefIndex: 11916
 {
-	public int accessLevel; 
+	public int accessLevel;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModMenuOption : ItemMod // TypeDefIndex: 11910
+public class ItemModMenuOption : ItemMod // TypeDefIndex: 11917
 {
-	public string commandName; 
-	public ItemMod actionTarget; 
-	public BaseEntity.Menu.Option option; 
-	[TooltipAttribute] 
-	public bool isPrimaryOption; 
+	public string commandName;
+	public ItemMod actionTarget;
+	public BaseEntity.Menu.Option option;
+	[TooltipAttribute]
+	public bool isPrimaryOption;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -2252,11 +2253,11 @@ public class ItemModMenuOption : ItemMod // TypeDefIndex: 11910
 
 }
 
-public class ItemModPaintable : ItemModAssociatedEntity<PaintedItemStorageEntity> // TypeDefIndex: 11911
+public class ItemModPaintable : ItemModAssociatedEntity<PaintedItemStorageEntity> // TypeDefIndex: 11918
 {
-	public GameObjectRef ChangeSignTextDialog; 
-	public MeshPaintableSource[] PaintableSources; 
-	private EntityRef<PaintedItemStorageEntity> _paintStorage; 
+	public GameObjectRef ChangeSignTextDialog;
+	public MeshPaintableSource[] PaintableSources;
+	private EntityRef<PaintedItemStorageEntity> _paintStorage;
 
 	protected override bool AllowNullParenting { get; }
 
@@ -2265,55 +2266,55 @@ public class ItemModPaintable : ItemModAssociatedEntity<PaintedItemStorageEntity
 
 	public override void OnObjectSetup(Item item, GameObject obj) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator DeferredSetup(Item item, PaintableItem paintable) { }
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
 	private void PaintClicked(BasePlayer player) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator OpenPaintUI(EntityRef<PaintedItemStorageEntity> paintStorage) { }
 
 	public void .ctor() { }
 
 }
 
-private sealed class ItemModPaintable.<DeferredSetup>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11912
+private sealed class ItemModPaintable.<DeferredSetup>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11919
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Item item; 
-	public PaintableItem paintable; 
-	public ItemModPaintable <>4__this; 
-	private int <count>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public Item item;
+	public PaintableItem paintable;
+	public ItemModPaintable <>4__this;
+	private int <count>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class ItemModPaintable.<>c__DisplayClass9_0 // TypeDefIndex: 11913
+private sealed class ItemModPaintable.<>c__DisplayClass9_0 // TypeDefIndex: 11920
 {
-	public PaintedItemStorageEntity entity; 
+	public PaintedItemStorageEntity entity;
 
 
 	public void .ctor() { }
@@ -2322,67 +2323,67 @@ private sealed class ItemModPaintable.<>c__DisplayClass9_0 // TypeDefIndex: 1191
 
 }
 
-private sealed class ItemModPaintable.<OpenPaintUI>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11914
+private sealed class ItemModPaintable.<OpenPaintUI>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11921
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public EntityRef<PaintedItemStorageEntity> paintStorage; 
-	public ItemModPaintable <>4__this; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public EntityRef<PaintedItemStorageEntity> paintStorage;
+	public ItemModPaintable <>4__this;
+	private int <i>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class ItemModPetStats : ItemMod // TypeDefIndex: 11915
+public class ItemModPetStats : ItemMod // TypeDefIndex: 11922
 {
-	[TooltipAttribute] 
-	public float SpeedModifier; 
-	[TooltipAttribute] 
-	public float MaxHealthModifier; 
-	[TooltipAttribute] 
-	public float AttackDamageModifier; 
-	[TooltipAttribute] 
-	public float AttackRateModifier; 
+	[TooltipAttribute]
+	public float SpeedModifier;
+	[TooltipAttribute]
+	public float MaxHealthModifier;
+	[TooltipAttribute]
+	public float AttackDamageModifier;
+	[TooltipAttribute]
+	public float AttackRateModifier;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModProjectile : MonoBehaviour // TypeDefIndex: 11916
+public class ItemModProjectile : MonoBehaviour // TypeDefIndex: 11923
 {
-	public GameObjectRef projectileObject; 
-	public ItemModProjectileMod[] mods; 
-	public AmmoTypes ammoType; 
-	public int numProjectiles; 
-	public float projectileSpread; 
-	public float projectileVelocity; 
-	public float projectileVelocitySpread; 
-	public bool useCurve; 
-	public AnimationCurve spreadScalar; 
-	public GameObjectRef attackEffectOverride; 
-	public float barrelConditionLoss; 
-	public string category; 
+	public GameObjectRef projectileObject;
+	public ItemModProjectileMod[] mods;
+	public AmmoTypes ammoType;
+	public int numProjectiles;
+	public float projectileSpread;
+	public float projectileVelocity;
+	public float projectileVelocitySpread;
+	public bool useCurve;
+	public AnimationCurve spreadScalar;
+	public GameObjectRef attackEffectOverride;
+	public float barrelConditionLoss;
+	public string category;
 
 
 	public float GetRandomVelocity() { }
@@ -2405,7 +2406,7 @@ public class ItemModProjectile : MonoBehaviour // TypeDefIndex: 11916
 
 }
 
-public class ItemModProjectileMod : MonoBehaviour // TypeDefIndex: 11917
+public class ItemModProjectileMod : MonoBehaviour // TypeDefIndex: 11924
 {
 
 	public virtual void ServerProjectileHit(HitInfo info) { }
@@ -2414,38 +2415,38 @@ public class ItemModProjectileMod : MonoBehaviour // TypeDefIndex: 11917
 
 }
 
-public class ItemModProjectileRadialDamage : ItemModProjectileMod // TypeDefIndex: 11918
+public class ItemModProjectileRadialDamage : ItemModProjectileMod // TypeDefIndex: 11925
 {
-	public float radius; 
-	public DamageTypeEntry damage; 
-	public GameObjectRef effect; 
-	public bool ignoreHitObject; 
+	public float radius;
+	public DamageTypeEntry damage;
+	public GameObjectRef effect;
+	public bool ignoreHitObject;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModProjectileSpawn : ItemModProjectile // TypeDefIndex: 11919
+public class ItemModProjectileSpawn : ItemModProjectile // TypeDefIndex: 11926
 {
-	public float createOnImpactChance; 
-	public GameObjectRef createOnImpact; 
-	public float spreadAngle; 
-	public float spreadVelocityMin; 
-	public float spreadVelocityMax; 
-	public int numToCreateChances; 
+	public float createOnImpactChance;
+	public GameObjectRef createOnImpact;
+	public float spreadAngle;
+	public float spreadVelocityMin;
+	public float spreadVelocityMax;
+	public int numToCreateChances;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModRecycleInto : ItemMod // TypeDefIndex: 11920
+public class ItemModRecycleInto : ItemMod // TypeDefIndex: 11927
 {
-	public ItemDefinition recycleIntoItem; 
-	public int numRecycledItemMin; 
-	public int numRecycledItemMax; 
-	public GameObjectRef successEffect; 
+	public ItemDefinition recycleIntoItem;
+	public int numRecycledItemMin;
+	public int numRecycledItemMax;
+	public GameObjectRef successEffect;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -2454,11 +2455,11 @@ public class ItemModRecycleInto : ItemMod // TypeDefIndex: 11920
 
 }
 
-public class ItemModRepair : ItemMod // TypeDefIndex: 11921
+public class ItemModRepair : ItemMod // TypeDefIndex: 11928
 {
-	public float conditionLost; 
-	public GameObjectRef successEffect; 
-	public int workbenchLvlRequired; 
+	public float conditionLost;
+	public GameObjectRef successEffect;
+	public int workbenchLvlRequired;
 
 
 	public bool HasCraftLevel(BasePlayer player) { }
@@ -2469,13 +2470,13 @@ public class ItemModRepair : ItemMod // TypeDefIndex: 11921
 
 }
 
-public class ItemModReveal : ItemMod // TypeDefIndex: 11922
+public class ItemModReveal : ItemMod // TypeDefIndex: 11929
 {
-	public int numForReveal; 
-	public ItemDefinition revealedItemOverride; 
-	public int revealedItemAmount; 
-	public LootSpawn revealList; 
-	public GameObjectRef successEffect; 
+	public int numForReveal;
+	public ItemDefinition revealedItemOverride;
+	public int revealedItemAmount;
+	public LootSpawn revealList;
+	public GameObjectRef successEffect;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -2484,76 +2485,76 @@ public class ItemModReveal : ItemMod // TypeDefIndex: 11922
 
 }
 
-public class ItemModSound : ItemMod // TypeDefIndex: 11923
+public class ItemModSound : ItemMod // TypeDefIndex: 11930
 {
-	public GameObjectRef effect; 
-	public ItemModSound.Type actionType; 
+	public GameObjectRef effect;
+	public ItemModSound.Type actionType;
 
 
 	public void .ctor() { }
 
 }
 
-public enum ItemModSound.Type // TypeDefIndex: 11924
+public enum ItemModSound.Type // TypeDefIndex: 11931
 {
-	public int value__; 
+	public int value__;
 	public const ItemModSound.Type OnAttachToWeapon = 0;
 
 }
 
-public class ItemModStudyBlueprint : ItemMod // TypeDefIndex: 11925
+public class ItemModStudyBlueprint : ItemMod // TypeDefIndex: 11932
 {
-	public GameObjectRef studyEffect; 
+	public GameObjectRef studyEffect;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModSummerSunglassesEquip : ItemMod // TypeDefIndex: 11926
+public class ItemModSummerSunglassesEquip : ItemMod // TypeDefIndex: 11933
 {
-	public float SunsetTime; 
-	public float SunriseTime; 
-	public string AchivementName; 
+	public float SunsetTime;
+	public float SunriseTime;
+	public string AchivementName;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModSwap : ItemMod // TypeDefIndex: 11927
+public class ItemModSwap : ItemMod // TypeDefIndex: 11934
 {
-	public GameObjectRef actionEffect; 
-	public ItemAmount[] becomeItem; 
-	public bool sendPlayerPickupNotification; 
-	public bool sendPlayerDropNotification; 
-	public float xpScale; 
-	public ItemAmount[] RandomOptions; 
+	public GameObjectRef actionEffect;
+	public ItemAmount[] becomeItem;
+	public bool sendPlayerPickupNotification;
+	public bool sendPlayerDropNotification;
+	public float xpScale;
+	public ItemAmount[] RandomOptions;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModSwitchFlag : ItemMod // TypeDefIndex: 11928
+public class ItemModSwitchFlag : ItemMod // TypeDefIndex: 11935
 {
-	public Item.Flag flag; 
-	public bool state; 
+	public Item.Flag flag;
+	public bool state;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModUpgrade : ItemMod // TypeDefIndex: 11929
+public class ItemModUpgrade : ItemMod // TypeDefIndex: 11936
 {
-	public int numForUpgrade; 
-	public float upgradeSuccessChance; 
-	public int numToLoseOnFail; 
-	public ItemDefinition upgradedItem; 
-	public int numUpgradedItem; 
-	public GameObjectRef successEffect; 
-	public GameObjectRef failEffect; 
+	public int numForUpgrade;
+	public float upgradeSuccessChance;
+	public int numToLoseOnFail;
+	public ItemDefinition upgradedItem;
+	public int numUpgradedItem;
+	public GameObjectRef successEffect;
+	public GameObjectRef failEffect;
 
 
 	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
@@ -2562,33 +2563,33 @@ public class ItemModUpgrade : ItemMod // TypeDefIndex: 11929
 
 }
 
-public class ItemModUseContent : ItemMod // TypeDefIndex: 11930
+public class ItemModUseContent : ItemMod // TypeDefIndex: 11937
 {
-	public int amountToConsume; 
+	public int amountToConsume;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModWearable : ItemMod // TypeDefIndex: 11931
+public class ItemModWearable : ItemMod // TypeDefIndex: 11938
 {
-	public GameObjectRef entityPrefab; 
-	public GameObjectRef entityPrefabFemale; 
-	public ProtectionProperties protectionProperties; 
-	public ArmorProperties armorProperties; 
-	public ClothingMovementProperties movementProperties; 
-	public UIBlackoutOverlay.blackoutType occlusionType; 
-	public bool blocksAiming; 
-	public bool emissive; 
-	public float accuracyBonus; 
-	public bool blocksEquipping; 
-	public float eggVision; 
-	public float weight; 
-	public bool equipOnRightClick; 
-	public bool npcOnly; 
-	public GameObjectRef breakEffect; 
-	public GameObjectRef viewmodelAddition; 
+	public GameObjectRef entityPrefab;
+	public GameObjectRef entityPrefabFemale;
+	public ProtectionProperties protectionProperties;
+	public ArmorProperties armorProperties;
+	public ClothingMovementProperties movementProperties;
+	public UIBlackoutOverlay.blackoutType occlusionType;
+	public bool blocksAiming;
+	public bool emissive;
+	public float accuracyBonus;
+	public bool blocksEquipping;
+	public float eggVision;
+	public float weight;
+	public bool equipOnRightClick;
+	public bool npcOnly;
+	public GameObjectRef breakEffect;
+	public GameObjectRef viewmodelAddition;
 
 	public Wearable targetWearable { get; }
 
@@ -2623,9 +2624,9 @@ public class ItemModWearable : ItemMod // TypeDefIndex: 11931
 
 }
 
-private sealed class ItemModWearable.<>c__DisplayClass28_0 // TypeDefIndex: 11932
+private sealed class ItemModWearable.<>c__DisplayClass28_0 // TypeDefIndex: 11939
 {
-	public Item item; 
+	public Item item;
 
 
 	public void .ctor() { }
@@ -2634,10 +2635,10 @@ private sealed class ItemModWearable.<>c__DisplayClass28_0 // TypeDefIndex: 1193
 
 }
 
-public class ItemModXPWhenUsed : ItemMod // TypeDefIndex: 11933
+public class ItemModXPWhenUsed : ItemMod // TypeDefIndex: 11940
 {
-	public float xpPerUnit; 
-	public int unitSize; 
+	public float xpPerUnit;
+	public int unitSize;
 
 
 	public void GiveConsumeXP(Item item) { }
@@ -2646,21 +2647,21 @@ public class ItemModXPWhenUsed : ItemMod // TypeDefIndex: 11933
 
 }
 
-public class ItemFootstepSounds : MonoBehaviour // TypeDefIndex: 11934
+public class ItemFootstepSounds : MonoBehaviour // TypeDefIndex: 11941
 {
-	public string effectFolder; 
+	public string effectFolder;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemAmount : ISerializationCallbackReceiver // TypeDefIndex: 11935
+public class ItemAmount : ISerializationCallbackReceiver // TypeDefIndex: 11942
 {
-	[ItemSelector] 
-	public ItemDefinition itemDef; 
-	public float amount; 
-	public float startAmount; 
+	[ItemSelector]
+	public ItemDefinition itemDef;
+	public float amount;
+	public float startAmount;
 
 	public int itemid { get; }
 
@@ -2681,11 +2682,11 @@ public class ItemAmount : ISerializationCallbackReceiver // TypeDefIndex: 11935
 
 }
 
-public class ItemAmountRandom // TypeDefIndex: 11936
+public class ItemAmountRandom // TypeDefIndex: 11943
 {
-	[ItemSelector] 
-	public ItemDefinition itemDef; 
-	public AnimationCurve amount; 
+	[ItemSelector]
+	public ItemDefinition itemDef;
+	public AnimationCurve amount;
 
 
 	public int RandomAmount() { }
@@ -2694,9 +2695,9 @@ public class ItemAmountRandom // TypeDefIndex: 11936
 
 }
 
-public class ItemAmountRanged : ItemAmount // TypeDefIndex: 11937
+public class ItemAmountRanged : ItemAmount // TypeDefIndex: 11944
 {
-	public float maxAmount; 
+	public float maxAmount;
 
 
 	public override void OnAfterDeserialize() { }
@@ -2707,14 +2708,14 @@ public class ItemAmountRanged : ItemAmount // TypeDefIndex: 11937
 
 }
 
-public class ItemManager // TypeDefIndex: 11938
+public class ItemManager // TypeDefIndex: 11945
 {
-	public static List<ItemDefinition> itemList; 
-	public static Dictionary<int, ItemDefinition> itemDictionary; 
-	public static Dictionary<string, ItemDefinition> itemDictionaryByName; 
-	public static List<ItemBlueprint> bpList; 
-	public static int[] defaultBlueprints; 
-	public static ItemDefinition blueprintBaseDef; 
+	public static List<ItemDefinition> itemList;
+	public static Dictionary<int, ItemDefinition> itemDictionary;
+	public static Dictionary<string, ItemDefinition> itemDictionaryByName;
+	public static List<ItemBlueprint> bpList;
+	public static int[] defaultBlueprints;
+	public static ItemDefinition blueprintBaseDef;
 
 
 	public static void InvalidateWorkshopSkinCache() { }
@@ -2739,15 +2740,15 @@ public class ItemManager // TypeDefIndex: 11938
 
 }
 
-private sealed class ItemManager.<>c // TypeDefIndex: 11939
+private sealed class ItemManager.<>c // TypeDefIndex: 11946
 {
-	public static readonly ItemManager.<>c <>9; 
-	public static Func<GameObject, ItemDefinition> <>9__7_0; 
-	public static Func<ItemDefinition, bool> <>9__7_1; 
-	public static Func<GameObject, ItemBlueprint> <>9__7_2; 
-	public static Func<ItemBlueprint, bool> <>9__7_3; 
-	public static Func<ItemBlueprint, bool> <>9__7_4; 
-	public static Func<ItemBlueprint, int> <>9__7_5; 
+	public static readonly ItemManager.<>c <>9;
+	public static Func<GameObject, ItemDefinition> <>9__7_0;
+	public static Func<ItemDefinition, bool> <>9__7_1;
+	public static Func<GameObject, ItemBlueprint> <>9__7_2;
+	public static Func<ItemBlueprint, bool> <>9__7_3;
+	public static Func<ItemBlueprint, bool> <>9__7_4;
+	public static Func<ItemBlueprint, int> <>9__7_5;
 
 
 	private static void .cctor() { }
@@ -2768,13 +2769,13 @@ private sealed class ItemManager.<>c // TypeDefIndex: 11939
 
 }
 
-public class ItemSkin : SteamInventoryItem // TypeDefIndex: 12488
+public class ItemSkin : SteamInventoryItem // TypeDefIndex: 12496
 {
-	public Skinnable Skinnable; 
-	public Material[] Materials; 
-	[TooltipAttribute] 
-	public ItemDefinition Redirect; 
-	public SteamInventoryItem UnlockedViaSteamItem; 
+	public Skinnable Skinnable;
+	public Material[] Materials;
+	[TooltipAttribute]
+	public ItemDefinition Redirect;
+	public SteamInventoryItem UnlockedViaSteamItem;
 
 
 	public void ApplySkin(GameObject obj) { }
@@ -2785,10 +2786,10 @@ public class ItemSkin : SteamInventoryItem // TypeDefIndex: 12488
 
 }
 
-public class ItemSkinDirectory : ScriptableObject // TypeDefIndex: 12489
+public class ItemSkinDirectory : ScriptableObject // TypeDefIndex: 12497
 {
-	private static ItemSkinDirectory _Instance; 
-	public ItemSkinDirectory.Skin[] skins; 
+	private static ItemSkinDirectory _Instance;
+	public ItemSkinDirectory.Skin[] skins;
 
 	public static ItemSkinDirectory Instance { get; }
 
@@ -2803,13 +2804,13 @@ public class ItemSkinDirectory : ScriptableObject // TypeDefIndex: 12489
 
 }
 
-public struct ItemSkinDirectory.Skin // TypeDefIndex: 12490
+public struct ItemSkinDirectory.Skin // TypeDefIndex: 12498
 {
-	public int id; 
-	public int itemid; 
-	public string name; 
-	public bool isSkin; 
-	private SteamInventoryItem _invItem; 
+	public int id;
+	public int itemid;
+	public string name;
+	public bool isSkin;
+	private SteamInventoryItem _invItem;
 
 	public SteamInventoryItem invItem { get; }
 
@@ -2818,9 +2819,9 @@ public struct ItemSkinDirectory.Skin // TypeDefIndex: 12490
 
 }
 
-private sealed class ItemSkinDirectory.<>c__DisplayClass5_0 // TypeDefIndex: 12491
+private sealed class ItemSkinDirectory.<>c__DisplayClass5_0 // TypeDefIndex: 12499
 {
-	public ItemDefinition item; 
+	public ItemDefinition item;
 
 
 	public void .ctor() { }
@@ -2829,9 +2830,9 @@ private sealed class ItemSkinDirectory.<>c__DisplayClass5_0 // TypeDefIndex: 124
 
 }
 
-private sealed class ItemSkinDirectory.<>c__DisplayClass6_0 // TypeDefIndex: 12492
+private sealed class ItemSkinDirectory.<>c__DisplayClass6_0 // TypeDefIndex: 12500
 {
-	public int id; 
+	public int id;
 
 
 	public void .ctor() { }
@@ -2840,7 +2841,7 @@ private sealed class ItemSkinDirectory.<>c__DisplayClass6_0 // TypeDefIndex: 124
 
 }
 
-public abstract class ItemContainerSource : MonoBehaviour // TypeDefIndex: 12606
+public abstract class ItemContainerSource : MonoBehaviour // TypeDefIndex: 12619
 {
 
 	public abstract ItemContainer GetItemContainer();
@@ -2849,9 +2850,9 @@ public abstract class ItemContainerSource : MonoBehaviour // TypeDefIndex: 12606
 
 }
 
-public class ItemDropCommand : MonoBehaviour // TypeDefIndex: 12773
+public class ItemDropCommand : MonoBehaviour // TypeDefIndex: 12787
 {
-	public string command; 
+	public string command;
 
 
 	private void OnDroppedValue(ItemIcon.DragInfo dropInfo) { }
@@ -2860,57 +2861,57 @@ public class ItemDropCommand : MonoBehaviour // TypeDefIndex: 12773
 
 }
 
-public class ItemIcon : BaseMonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler, IDraggable, IInventoryChanged, IItemAmountChanged, IItemIconChanged // TypeDefIndex: 12774
+public class ItemIcon : BaseMonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler, IDraggable, IInventoryChanged, IItemAmountChanged, IItemIconChanged // TypeDefIndex: 12788
 {
-	private Color backgroundColor; 
-	public Color selectedBackgroundColor; 
-	public float unoccupiedAlpha; 
-	public Color unoccupiedColor; 
-	public ItemContainerSource containerSource; 
-	public int slotOffset; 
-	[RangeAttribute] 
-	public int slot; 
-	public bool setSlotFromSiblingIndex; 
-	public GameObject slots; 
-	public CanvasGroup iconContents; 
-	public CanvasGroup canvasGroup; 
-	public Image iconImage; 
-	public Image underlayImage; 
-	public Text amountText; 
-	public Text hoverText; 
-	public Image hoverOutline; 
-	public Image cornerIcon; 
-	public Image lockedImage; 
-	public Image progressImage; 
-	public Image backgroundImage; 
-	public Image backgroundUnderlayImage; 
-	public Image progressPanel; 
-	public Sprite emptySlotBackgroundSprite; 
-	public CanvasGroup conditionObject; 
-	public Image conditionFill; 
-	public Image maxConditionFill; 
-	public GameObject lightEnabled; 
-	public bool allowSelection; 
-	public bool allowDropping; 
-	public bool allowMove; 
-	public bool showCountDropShadow; 
-	public Item item; 
-	public bool invalidSlot; 
-	public SoundDefinition hoverSound; 
-	internal Image[] slotImages; 
-	private static Dictionary<uint, float> containerLootStartTimes; 
-	private bool queuedForLooting; 
+	private Color backgroundColor;
+	public Color selectedBackgroundColor;
+	public float unoccupiedAlpha;
+	public Color unoccupiedColor;
+	public ItemContainerSource containerSource;
+	public int slotOffset;
+	[RangeAttribute]
+	public int slot;
+	public bool setSlotFromSiblingIndex;
+	public GameObject slots;
+	public CanvasGroup iconContents;
+	public CanvasGroup canvasGroup;
+	public Image iconImage;
+	public Image underlayImage;
+	public Text amountText;
+	public Text hoverText;
+	public Image hoverOutline;
+	public Image cornerIcon;
+	public Image lockedImage;
+	public Image progressImage;
+	public Image backgroundImage;
+	public Image backgroundUnderlayImage;
+	public Image progressPanel;
+	public Sprite emptySlotBackgroundSprite;
+	public CanvasGroup conditionObject;
+	public Image conditionFill;
+	public Image maxConditionFill;
+	public GameObject lightEnabled;
+	public bool allowSelection;
+	public bool allowDropping;
+	public bool allowMove;
+	public bool showCountDropShadow;
+	public Item item;
+	public bool invalidSlot;
+	public SoundDefinition hoverSound;
+	internal Image[] slotImages;
+	private static Dictionary<uint, float> containerLootStartTimes;
+	private bool queuedForLooting;
 	private const float processLootQueueInterval = 0,2;
 	private const float lootItemDuration = 0,2;
-	private uint queuedQuickLootContainerID; 
-	private float queuedLootAtTime; 
-	private bool visible; 
-	private bool hovering; 
-	private CanvasGroup canvasGroupParent; 
-	private Coroutine currentCouroutine; 
-	private bool isSelected; 
-	public Action timedAction; 
-	public Nullable<Vector2> timedActionTime; 
+	private uint queuedQuickLootContainerID;
+	private float queuedLootAtTime;
+	private bool visible;
+	private bool hovering;
+	private CanvasGroup canvasGroupParent;
+	private Coroutine currentCouroutine;
+	private bool isSelected;
+	public Action timedAction;
+	public Nullable<Vector2> timedActionTime;
 
 	private Item iconValue { get; }
 
@@ -2977,7 +2978,7 @@ public class ItemIcon : BaseMonoBehaviour, IPointerClickHandler, IEventSystemHan
 
 	private float CalculateLootDelay(uint sourceContainer) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator StartTimedLootAction(float delay) { }
 
 	public void RunTimedAction() { }
@@ -2986,7 +2987,7 @@ public class ItemIcon : BaseMonoBehaviour, IPointerClickHandler, IEventSystemHan
 
 	private void RemoveFromLootQueue() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator UpdateTimedActionIcon() { }
 
 	public void TryToQuickMove() { }
@@ -3009,82 +3010,82 @@ public class ItemIcon : BaseMonoBehaviour, IPointerClickHandler, IEventSystemHan
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <TryToMove>
 
 }
 
-public class ItemIcon.DragInfo // TypeDefIndex: 12775
+public class ItemIcon.DragInfo // TypeDefIndex: 12789
 {
-	public Item item; 
-	public int amount; 
-	public bool canDrop; 
+	public Item item;
+	public int amount;
+	public bool canDrop;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class ItemIcon.<StartTimedLootAction>d__81 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12776
+private sealed class ItemIcon.<StartTimedLootAction>d__81 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12790
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ItemIcon <>4__this; 
-	public float delay; 
+	private int <>1__state;
+	private object <>2__current;
+	public ItemIcon <>4__this;
+	public float delay;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class ItemIcon.<UpdateTimedActionIcon>d__85 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12777
+private sealed class ItemIcon.<UpdateTimedActionIcon>d__85 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12791
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ItemIcon <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public ItemIcon <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class ItemInformationPanel : MonoBehaviour // TypeDefIndex: 12778
+public class ItemInformationPanel : MonoBehaviour // TypeDefIndex: 12792
 {
 
 	public virtual bool EligableForDisplay(ItemDefinition info) { }
@@ -3095,12 +3096,12 @@ public class ItemInformationPanel : MonoBehaviour // TypeDefIndex: 12778
 
 }
 
-public class ItemOptionButton : MonoBehaviour // TypeDefIndex: 12779
+public class ItemOptionButton : MonoBehaviour // TypeDefIndex: 12793
 {
-	public TextMeshProUGUI name; 
-	public Image icon; 
-	internal Item item; 
-	internal Option option; 
+	public TextMeshProUGUI name;
+	public Image icon;
+	internal Item item;
+	internal Option option;
 
 
 	public void Setup(Item item, Option option) { }
@@ -3111,9 +3112,9 @@ public class ItemOptionButton : MonoBehaviour // TypeDefIndex: 12779
 
 }
 
-public class ItemPanel : SingletonComponent<ItemPanel> // TypeDefIndex: 12780
+public class ItemPanel : SingletonComponent<ItemPanel> // TypeDefIndex: 12794
 {
-	private ItemIcon item; 
+	private ItemIcon item;
 
 
 	private void Start() { }
@@ -3126,18 +3127,18 @@ public class ItemPanel : SingletonComponent<ItemPanel> // TypeDefIndex: 12780
 
 }
 
-public class ItemPickupNotice : MonoBehaviour // TypeDefIndex: 12781
+public class ItemPickupNotice : MonoBehaviour // TypeDefIndex: 12795
 {
-	public TextMeshProUGUI Text; 
-	public TextMeshProUGUI Amount; 
-	private TimeSince enabledTime; 
-	private RectTransform targetRect; 
-	private CanvasGroup targetCanvas; 
-	private ItemDefinition def; 
-	private bool isReuse; 
-	private int cachedAmount; 
+	public TextMeshProUGUI Text;
+	public TextMeshProUGUI Amount;
+	private TimeSince enabledTime;
+	private RectTransform targetRect;
+	private CanvasGroup targetCanvas;
+	private ItemDefinition def;
+	private bool isReuse;
+	private int cachedAmount;
 	private const float pickupNoticeTime = 4;
-	private int scheduledTotal; 
+	private int scheduledTotal;
 
 	public ItemDefinition itemInfo { get; set; }
 	public int amount { get; set; }
@@ -3173,17 +3174,17 @@ public class ItemPickupNotice : MonoBehaviour // TypeDefIndex: 12781
 
 }
 
-public class ItemPreviewIcon : BaseMonoBehaviour, IInventoryChanged, IItemAmountChanged, IItemIconChanged // TypeDefIndex: 12782
+public class ItemPreviewIcon : BaseMonoBehaviour, IInventoryChanged, IItemAmountChanged, IItemIconChanged // TypeDefIndex: 12796
 {
-	public ItemContainerSource containerSource; 
-	[RangeAttribute] 
-	public int slot; 
-	public bool setSlotFromSiblingIndex; 
-	public CanvasGroup iconContents; 
-	public Image iconImage; 
-	public Text amountText; 
-	public Item item; 
-	private bool invalidSlot; 
+	public ItemContainerSource containerSource;
+	[RangeAttribute]
+	public int slot;
+	public bool setSlotFromSiblingIndex;
+	public CanvasGroup iconContents;
+	public Image iconImage;
+	public Text amountText;
+	public Item item;
+	private bool invalidSlot;
 
 	private Item iconValue { get; }
 
@@ -3208,14 +3209,14 @@ public class ItemPreviewIcon : BaseMonoBehaviour, IInventoryChanged, IItemAmount
 
 }
 
-public class ItemSplitter : MonoBehaviour // TypeDefIndex: 12783
+public class ItemSplitter : MonoBehaviour // TypeDefIndex: 12797
 {
-	public Slider slider; 
-	public TextMeshProUGUI textValue; 
-	public TextMeshProUGUI splitAmountText; 
-	public TMP_InputField amountInputField; 
-	private static bool isInputFieldOpen; 
-	private float oldAmount; 
+	public Slider slider;
+	public TextMeshProUGUI textValue;
+	public TextMeshProUGUI splitAmountText;
+	public TMP_InputField amountInputField;
+	private static bool isInputFieldOpen;
+	private float oldAmount;
 
 	public ItemIcon.DragInfo dragInfo { get; }
 
@@ -3248,17 +3249,17 @@ public class ItemSplitter : MonoBehaviour // TypeDefIndex: 12783
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Start>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Start>
 
 }
 
-public class ItemSplitterDragOut : MonoBehaviour, IDraggable // TypeDefIndex: 12784
+public class ItemSplitterDragOut : MonoBehaviour, IDraggable // TypeDefIndex: 12798
 {
-	public ItemSplitter rootSplitter; 
+	public ItemSplitter rootSplitter;
 
 
 	public object GetDragData() { }
@@ -3271,9 +3272,9 @@ public class ItemSplitterDragOut : MonoBehaviour, IDraggable // TypeDefIndex: 12
 
 }
 
-public class ItemSplitterSlider : MonoBehaviour, IPointerUpHandler, IEventSystemHandler, IPointerDownHandler // TypeDefIndex: 12785
+public class ItemSplitterSlider : MonoBehaviour, IPointerUpHandler, IEventSystemHandler, IPointerDownHandler // TypeDefIndex: 12799
 {
-	public ItemSplitter Splitter; 
+	public ItemSplitter Splitter;
 
 
 	public void OnPointerDown(PointerEventData eventData) { }
@@ -3284,13 +3285,13 @@ public class ItemSplitterSlider : MonoBehaviour, IPointerUpHandler, IEventSystem
 
 }
 
-public class ItemStatValue : MonoBehaviour // TypeDefIndex: 12786
+public class ItemStatValue : MonoBehaviour // TypeDefIndex: 12800
 {
-	public Text text; 
-	public Slider slider; 
-	public bool selectedItem; 
-	public bool smallerIsBetter; 
-	public bool asPercentage; 
+	public Text text;
+	public Slider slider;
+	public bool selectedItem;
+	public bool smallerIsBetter;
+	public bool asPercentage;
 
 
 	private void OnEnable() { }
@@ -3303,7 +3304,7 @@ public class ItemStatValue : MonoBehaviour // TypeDefIndex: 12786
 
 }
 
-public class ItemSubmitPanel : LootPanel // TypeDefIndex: 12787
+public class ItemSubmitPanel : LootPanel // TypeDefIndex: 12801
 {
 
 	public void SubmitClicked() { }
@@ -3312,17 +3313,17 @@ public class ItemSubmitPanel : LootPanel // TypeDefIndex: 12787
 
 }
 
-public class ItemTextValue : MonoBehaviour // TypeDefIndex: 12788
+public class ItemTextValue : MonoBehaviour // TypeDefIndex: 12802
 {
-	public Text text; 
-	public Color bad; 
-	public Color good; 
-	public bool negativestat; 
-	public bool asPercentage; 
-	public bool useColors; 
-	public bool signed; 
-	public string suffix; 
-	public float multiplier; 
+	public Text text;
+	public Color bad;
+	public Color good;
+	public bool negativestat;
+	public bool asPercentage;
+	public bool useColors;
+	public bool signed;
+	public string suffix;
+	public float multiplier;
 
 
 	public void SetValue(float val, int numDecimals = 0, string overrideText = "") { }
@@ -3331,31 +3332,31 @@ public class ItemTextValue : MonoBehaviour // TypeDefIndex: 12788
 
 }
 
-public class ItemStore : SingletonComponent<ItemStore>, VirtualScroll.IDataSource // TypeDefIndex: 12882
+public class ItemStore : SingletonComponent<ItemStore>, VirtualScroll.IDataSource // TypeDefIndex: 12896
 {
-	public static readonly Translate.Phrase CartEmptyPhrase; 
-	public static readonly Translate.Phrase CartSingularPhrase; 
-	public static readonly Translate.Phrase CartPluralPhrase; 
-	public GameObject ItemPrefab; 
-	[FormerlySerializedAsAttribute] 
-	public RectTransform LimitedItemParent; 
-	public RectTransform GeneralItemParent; 
-	public List<IPlayerItemDefinition> Cart; 
-	public ItemStoreItemInfoModal ItemStoreInfoModal; 
-	public GameObject BuyingModal; 
-	public ItemStoreBuyFailedModal ItemStoreBuyFailedModal; 
-	public ItemStoreBuySuccessModal ItemStoreBuySuccessModal; 
-	public SoundDefinition AddToCartSound; 
-	public RustText CartButtonLabel; 
-	public RustText QuantityValue; 
-	public RustText TotalValue; 
+	public static readonly Translate.Phrase CartEmptyPhrase;
+	public static readonly Translate.Phrase CartSingularPhrase;
+	public static readonly Translate.Phrase CartPluralPhrase;
+	public GameObject ItemPrefab;
+	[FormerlySerializedAsAttribute]
+	public RectTransform LimitedItemParent;
+	public RectTransform GeneralItemParent;
+	public List<IPlayerItemDefinition> Cart;
+	public ItemStoreItemInfoModal ItemStoreInfoModal;
+	public GameObject BuyingModal;
+	public ItemStoreBuyFailedModal ItemStoreBuyFailedModal;
+	public ItemStoreBuySuccessModal ItemStoreBuySuccessModal;
+	public SoundDefinition AddToCartSound;
+	public RustText CartButtonLabel;
+	public RustText QuantityValue;
+	public RustText TotalValue;
 
 
 	protected override void Awake() { }
 
 	private void OnPurchaseFinished(AppId appid, ulong orderid, bool success) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private void RefreshList() { }
 
 	private void AddItem(IPlayerItemDefinition item) { }
@@ -3370,7 +3371,7 @@ public class ItemStore : SingletonComponent<ItemStore>, VirtualScroll.IDataSourc
 
 	public void RemoveFromCart(int index) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public void Checkout() { }
 
 	public int GetItemCount() { }
@@ -3383,13 +3384,13 @@ public class ItemStore : SingletonComponent<ItemStore>, VirtualScroll.IDataSourc
 
 }
 
-private sealed class ItemStore.<>c // TypeDefIndex: 12883
+private sealed class ItemStore.<>c // TypeDefIndex: 12897
 {
-	public static readonly ItemStore.<>c <>9; 
-	public static Func<IPlayerItemDefinition, int> <>9__16_0; 
-	public static Func<IPlayerItemDefinition, int> <>9__17_0; 
-	public static Func<IPlayerItemDefinition, int> <>9__22_0; 
-	public static Func<SteamItemDefinition, InventoryDef> <>9__24_0; 
+	public static readonly ItemStore.<>c <>9;
+	public static Func<IPlayerItemDefinition, int> <>9__16_0;
+	public static Func<IPlayerItemDefinition, int> <>9__17_0;
+	public static Func<IPlayerItemDefinition, int> <>9__22_0;
+	public static Func<SteamItemDefinition, InventoryDef> <>9__24_0;
 
 
 	private static void .cctor() { }
@@ -3406,37 +3407,37 @@ private sealed class ItemStore.<>c // TypeDefIndex: 12883
 
 }
 
-private struct ItemStore.<RefreshList>d__17 : IAsyncStateMachine // TypeDefIndex: 12884
+private struct ItemStore.<RefreshList>d__17 : IAsyncStateMachine // TypeDefIndex: 12898
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public ItemStore <>4__this; 
-	private TaskAwaiter<List<IPlayerItemDefinition>> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public ItemStore <>4__this;
+	private TaskAwaiter<List<IPlayerItemDefinition>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct ItemStore.<Checkout>d__24 : IAsyncStateMachine // TypeDefIndex: 12885
+private struct ItemStore.<Checkout>d__24 : IAsyncStateMachine // TypeDefIndex: 12899
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public ItemStore <>4__this; 
-	private TaskAwaiter<Nullable<InventoryPurchaseResult>> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public ItemStore <>4__this;
+	private TaskAwaiter<Nullable<InventoryPurchaseResult>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public class ItemStoreBuyFailedModal : MonoBehaviour // TypeDefIndex: 12886
+public class ItemStoreBuyFailedModal : MonoBehaviour // TypeDefIndex: 12900
 {
 
 	public void Show(ulong orderid) { }
@@ -3445,12 +3446,12 @@ public class ItemStoreBuyFailedModal : MonoBehaviour // TypeDefIndex: 12886
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Hide>
 
 }
 
-public class ItemStoreBuySuccessModal : MonoBehaviour // TypeDefIndex: 12887
+public class ItemStoreBuySuccessModal : MonoBehaviour // TypeDefIndex: 12901
 {
 
 	public void Show(ulong orderId) { }
@@ -3459,16 +3460,16 @@ public class ItemStoreBuySuccessModal : MonoBehaviour // TypeDefIndex: 12887
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Hide>
 
 }
 
-public class ItemStoreCartItem : MonoBehaviour // TypeDefIndex: 12888
+public class ItemStoreCartItem : MonoBehaviour // TypeDefIndex: 12902
 {
-	public int Index; 
-	public TextMeshProUGUI Name; 
-	public TextMeshProUGUI Price; 
+	public int Index;
+	public TextMeshProUGUI Name;
+	public TextMeshProUGUI Price;
 
 
 	public void Init(int index, IPlayerItemDefinition def) { }
@@ -3479,14 +3480,14 @@ public class ItemStoreCartItem : MonoBehaviour // TypeDefIndex: 12888
 
 }
 
-public class ItemStoreItem : MonoBehaviour // TypeDefIndex: 12889
+public class ItemStoreItem : MonoBehaviour // TypeDefIndex: 12903
 {
-	public HttpImage Icon; 
-	public RustText Name; 
-	public TextMeshProUGUI Price; 
-	public RustText ItemName; 
-	public GameObject InCartTag; 
-	private IPlayerItemDefinition item; 
+	public HttpImage Icon;
+	public RustText Name;
+	public TextMeshProUGUI Price;
+	public RustText ItemName;
+	public GameObject InCartTag;
+	private IPlayerItemDefinition item;
 
 
 	internal void Init(IPlayerItemDefinition item, bool inCart) { }
@@ -3499,13 +3500,13 @@ public class ItemStoreItem : MonoBehaviour // TypeDefIndex: 12889
 
 }
 
-public class ItemStoreItemInfoModal : MonoBehaviour // TypeDefIndex: 12890
+public class ItemStoreItemInfoModal : MonoBehaviour // TypeDefIndex: 12904
 {
-	public HttpImage Icon; 
-	public TextMeshProUGUI Name; 
-	public TextMeshProUGUI Price; 
-	public TextMeshProUGUI Description; 
-	private IPlayerItemDefinition item; 
+	public HttpImage Icon;
+	public TextMeshProUGUI Name;
+	public TextMeshProUGUI Price;
+	public TextMeshProUGUI Description;
+	private IPlayerItemDefinition item;
 
 
 	public void Show(IPlayerItemDefinition item) { }
@@ -3516,27 +3517,27 @@ public class ItemStoreItemInfoModal : MonoBehaviour // TypeDefIndex: 12890
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Hide>
 
 }
 
-public class ItemModEngineItem : ItemMod // TypeDefIndex: 13910
+public class ItemModEngineItem : ItemMod // TypeDefIndex: 13927
 {
-	public EngineStorage.EngineItemTypes engineItemType; 
-	[RangeAttribute] 
-	public int tier; 
+	public EngineStorage.EngineItemTypes engineItemType;
+	[RangeAttribute]
+	public int tier;
 
 
 	public void .ctor() { }
 
 }
 
-public class ItemModVehicleChassis : ItemMod, VehicleModuleInformationPanel.IVehicleModuleInfo // TypeDefIndex: 13911
+public class ItemModVehicleChassis : ItemMod, VehicleModuleInformationPanel.IVehicleModuleInfo // TypeDefIndex: 13928
 {
-	public GameObjectRef entityPrefab; 
-	[RangeAttribute] 
-	public int socketsTaken; 
+	public GameObjectRef entityPrefab;
+	[RangeAttribute]
+	public int socketsTaken;
 
 	public int SocketsTaken { get; }
 
@@ -3551,12 +3552,12 @@ public class ItemModVehicleChassis : ItemMod, VehicleModuleInformationPanel.IVeh
 
 }
 
-public class ItemModVehicleModule : ItemMod, VehicleModuleInformationPanel.IVehicleModuleInfo // TypeDefIndex: 13912
+public class ItemModVehicleModule : ItemMod, VehicleModuleInformationPanel.IVehicleModuleInfo // TypeDefIndex: 13929
 {
-	public GameObjectRef entityPrefab; 
-	[RangeAttribute] 
-	public int socketsTaken; 
-	public bool doNonUserSpawn; 
+	public GameObjectRef entityPrefab;
+	[RangeAttribute]
+	public int socketsTaken;
+	public bool doNonUserSpawn;
 
 	public int SocketsTaken { get; }
 

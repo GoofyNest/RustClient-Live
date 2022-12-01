@@ -1,7 +1,7 @@
-public class Chicken : BaseAnimalNPC // TypeDefIndex: 10650
+public class Chicken : BaseAnimalNPC // TypeDefIndex: 10654
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override float RealisticMass { get; }
 	public override BaseEntity.TraitFlag Traits { get; }

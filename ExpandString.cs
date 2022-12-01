@@ -1,6 +1,6 @@
 internal class ExpandString // TypeDefIndex: 106
 {
-	private string value; 
+	private string value;
 
 
 	public void .ctor(string s) { }

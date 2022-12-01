@@ -1,8 +1,8 @@
-public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 9971
+public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 9973
 {
-	public string[] monumentPrefabs; 
-	public Transform[] vantagePoints; 
-	private bool isFinished; 
+	public string[] monumentPrefabs;
+	public Transform[] vantagePoints;
+	private bool isFinished;
 
 	public override bool SubmitsOwnResults { get; }
 
@@ -11,7 +11,7 @@ public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 9971
 
 	public override void StartBenchmark() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator DoMonumentBenchmark() { }
 
 	public override bool ShouldEnd() { }
@@ -20,42 +20,42 @@ public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 9971
 
 }
 
-private sealed class MonumentBenchmarkScene.<DoMonumentBenchmark>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9972
+private sealed class MonumentBenchmarkScene.<DoMonumentBenchmark>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9974
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public MonumentBenchmarkScene <>4__this; 
-	private int <prefabNum>5__2; 
-	private string <monumentName>5__3; 
-	private GameObject <monument>5__4; 
-	private Transform[] <>7__wrap4; 
-	private int <>7__wrap5; 
-	private Transform <vantage>5__7; 
-	private double <frameTimes>5__8; 
-	private int <frameCount>5__9; 
-	private string <ident>5__10; 
-	private Stopwatch <sw>5__11; 
-	private int <i>5__12; 
+	private int <>1__state;
+	private object <>2__current;
+	public MonumentBenchmarkScene <>4__this;
+	private int <prefabNum>5__2;
+	private string <monumentName>5__3;
+	private GameObject <monument>5__4;
+	private Transform[] <>7__wrap4;
+	private int <>7__wrap5;
+	private Transform <vantage>5__7;
+	private double <frameTimes>5__8;
+	private int <frameCount>5__9;
+	private string <ident>5__10;
+	private Stopwatch <sw>5__11;
+	private int <i>5__12;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

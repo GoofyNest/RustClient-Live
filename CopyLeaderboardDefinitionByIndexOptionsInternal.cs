@@ -1,7 +1,7 @@
-internal struct CopyLeaderboardDefinitionByIndexOptionsInternal : ISettable<CopyLeaderboardDefinitionByIndexOptions>, IDisposable // TypeDefIndex: 9277
+internal struct CopyLeaderboardDefinitionByIndexOptionsInternal : ISettable<CopyLeaderboardDefinitionByIndexOptions>, IDisposable // TypeDefIndex: 9279
 {
-	private int m_ApiVersion; 
-	private uint m_LeaderboardIndex; 
+	private int m_ApiVersion;
+	private uint m_LeaderboardIndex;
 
 	public uint LeaderboardIndex { set; }
 

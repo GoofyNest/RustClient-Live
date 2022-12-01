@@ -1,21 +1,21 @@
-public class RidableHorse : BaseRidableAnimal // TypeDefIndex: 10356
+public class RidableHorse : BaseRidableAnimal // TypeDefIndex: 10360
 {
-	[ServerVar] 
-	public static float Population; 
-	public string distanceStatName; 
-	public HorseBreed[] breeds; 
-	public SkinnedMeshRenderer[] bodyRenderers; 
-	public SkinnedMeshRenderer[] hairRenderers; 
-	private int currentBreed; 
-	private ProtectionProperties riderProtection; 
-	private ProtectionProperties baseHorseProtection; 
+	[ServerVar]
+	public static float Population;
+	public string distanceStatName;
+	public HorseBreed[] breeds;
+	public SkinnedMeshRenderer[] bodyRenderers;
+	public SkinnedMeshRenderer[] hairRenderers;
+	private int currentBreed;
+	private ProtectionProperties riderProtection;
+	private ProtectionProperties baseHorseProtection;
 	public const BaseEntity.Flags Flag_HideHair = 1024;
 	public const BaseEntity.Flags Flag_WoodArmor = 2048;
 	public const BaseEntity.Flags Flag_RoadsignArmor = 16384;
-	private float equipmentSpeedMod; 
-	private int numStorageSlots; 
-	private static Material[] breedAssignmentArray; 
-	private float clientRecievedRunSpeed; 
+	private float equipmentSpeedMod;
+	private int numStorageSlots;
+	private static Material[] breedAssignmentArray;
+	private float clientRecievedRunSpeed;
 
 	public override float RealisticMass { get; }
 
@@ -38,7 +38,7 @@ public class RidableHorse : BaseRidableAnimal // TypeDefIndex: 10356
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void GetDistanceTravelled(BaseEntity.RPCMessage msg) { }
 
 	protected override bool CanPushNow(BasePlayer pusher) { }

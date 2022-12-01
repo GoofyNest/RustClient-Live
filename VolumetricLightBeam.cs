@@ -1,67 +1,67 @@
-public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13346
+public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13361
 {
-	public bool colorFromLight; 
-	public ColorMode colorMode; 
-	[ColorUsageAttribute] 
-	[FormerlySerializedAsAttribute] 
-	public Color color; 
-	public Gradient colorGradient; 
-	[RangeAttribute] 
-	public float alphaInside; 
-	[FormerlySerializedAsAttribute] 
-	[RangeAttribute] 
-	public float alphaOutside; 
-	public BlendingMode blendingMode; 
-	[FormerlySerializedAsAttribute] 
-	public bool spotAngleFromLight; 
-	[RangeAttribute] 
-	public float spotAngle; 
-	[FormerlySerializedAsAttribute] 
-	public float coneRadiusStart; 
-	public MeshType geomMeshType; 
-	[FormerlySerializedAsAttribute] 
-	public int geomCustomSides; 
-	public int geomCustomSegments; 
-	public bool geomCap; 
-	public bool fadeEndFromLight; 
-	public AttenuationEquation attenuationEquation; 
-	[RangeAttribute] 
-	public float attenuationCustomBlending; 
-	public float fadeStart; 
-	public float fadeEnd; 
-	public float depthBlendDistance; 
-	public float cameraClippingDistance; 
-	[RangeAttribute] 
-	public float glareFrontal; 
-	[RangeAttribute] 
-	public float glareBehind; 
-	[ObsoleteAttribute] 
-	public float boostDistanceInside; 
-	[ObsoleteAttribute] 
-	public float fresnelPowInside; 
-	[FormerlySerializedAsAttribute] 
-	public float fresnelPow; 
-	public bool noiseEnabled; 
-	[RangeAttribute] 
-	public float noiseIntensity; 
-	public bool noiseScaleUseGlobal; 
-	[RangeAttribute] 
-	public float noiseScaleLocal; 
-	public bool noiseVelocityUseGlobal; 
-	public Vector3 noiseVelocityLocal; 
-	private Plane m_PlaneWS; 
-	[SerializeField] 
-	private int pluginVersion; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private bool _TrackChangesDuringPlaytime; 
-	[SerializeField] 
-	private int _SortingLayerID; 
-	[SerializeField] 
-	private int _SortingOrder; 
-	private BeamGeometry m_BeamGeom; 
-	private Coroutine m_CoPlaytimeUpdate; 
-	private Light _CachedLight; 
+	public bool colorFromLight;
+	public ColorMode colorMode;
+	[ColorUsageAttribute]
+	[FormerlySerializedAsAttribute]
+	public Color color;
+	public Gradient colorGradient;
+	[RangeAttribute]
+	public float alphaInside;
+	[FormerlySerializedAsAttribute]
+	[RangeAttribute]
+	public float alphaOutside;
+	public BlendingMode blendingMode;
+	[FormerlySerializedAsAttribute]
+	public bool spotAngleFromLight;
+	[RangeAttribute]
+	public float spotAngle;
+	[FormerlySerializedAsAttribute]
+	public float coneRadiusStart;
+	public MeshType geomMeshType;
+	[FormerlySerializedAsAttribute]
+	public int geomCustomSides;
+	public int geomCustomSegments;
+	public bool geomCap;
+	public bool fadeEndFromLight;
+	public AttenuationEquation attenuationEquation;
+	[RangeAttribute]
+	public float attenuationCustomBlending;
+	public float fadeStart;
+	public float fadeEnd;
+	public float depthBlendDistance;
+	public float cameraClippingDistance;
+	[RangeAttribute]
+	public float glareFrontal;
+	[RangeAttribute]
+	public float glareBehind;
+	[ObsoleteAttribute]
+	public float boostDistanceInside;
+	[ObsoleteAttribute]
+	public float fresnelPowInside;
+	[FormerlySerializedAsAttribute]
+	public float fresnelPow;
+	public bool noiseEnabled;
+	[RangeAttribute]
+	public float noiseIntensity;
+	public bool noiseScaleUseGlobal;
+	[RangeAttribute]
+	public float noiseScaleLocal;
+	public bool noiseVelocityUseGlobal;
+	public Vector3 noiseVelocityLocal;
+	private Plane m_PlaneWS;
+	[SerializeField]
+	private int pluginVersion;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private bool _TrackChangesDuringPlaytime;
+	[SerializeField]
+	private int _SortingLayerID;
+	[SerializeField]
+	private int _SortingOrder;
+	private BeamGeometry m_BeamGeom;
+	private Coroutine m_CoPlaytimeUpdate;
+	private Light _CachedLight;
 
 	public float coneAngle { get; }
 	public float coneRadiusEnd { get; }
@@ -147,7 +147,7 @@ public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13346
 
 	public float GetInsideBeamFactorFromObjectSpacePos(Vector3 posOS) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void Generate() { }
 
 	public virtual void GenerateGeometry() { }
@@ -162,7 +162,7 @@ public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13346
 
 	private void StartPlaytimeUpdateIfNeeded() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator CoPlaytimeUpdate() { }
 
 	private void OnDestroy() { }
@@ -181,31 +181,31 @@ public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13346
 
 }
 
-private sealed class VolumetricLightBeam.<CoPlaytimeUpdate>d__98 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13347
+private sealed class VolumetricLightBeam.<CoPlaytimeUpdate>d__98 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13362
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public VolumetricLightBeam <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public VolumetricLightBeam <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

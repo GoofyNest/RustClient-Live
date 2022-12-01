@@ -1,8 +1,8 @@
-public class FlashbangEffectRenderer : PostProcessEffectRenderer<FlashbangEffect> // TypeDefIndex: 11999
+public class FlashbangEffectRenderer : PostProcessEffectRenderer<FlashbangEffect> // TypeDefIndex: 12006
 {
-	public static bool needsCapture; 
-	private Shader flashbangEffectShader; 
-	private RenderTexture screenRT; 
+	public static bool needsCapture;
+	private Shader flashbangEffectShader;
+	private RenderTexture screenRT;
 
 
 	public override void Init() { }

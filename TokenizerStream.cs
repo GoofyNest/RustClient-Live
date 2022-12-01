@@ -1,13 +1,13 @@
 internal sealed class TokenizerStream // TypeDefIndex: 927
 {
-	private int m_countTokens; 
-	private TokenizerShortBlock m_headTokens; 
-	private TokenizerShortBlock m_lastTokens; 
-	private TokenizerShortBlock m_currentTokens; 
-	private int m_indexTokens; 
-	private TokenizerStringBlock m_headStrings; 
-	private TokenizerStringBlock m_currentStrings; 
-	private int m_indexStrings; 
+	private int m_countTokens;
+	private TokenizerShortBlock m_headTokens;
+	private TokenizerShortBlock m_lastTokens;
+	private TokenizerShortBlock m_currentTokens;
+	private int m_indexTokens;
+	private TokenizerStringBlock m_headStrings;
+	private TokenizerStringBlock m_currentStrings;
+	private int m_indexStrings;
 
 
 	internal void .ctor() { }

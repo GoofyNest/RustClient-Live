@@ -2,7 +2,7 @@ public enum IsolationLevel // TypeDefIndex: 3986
 {
 
 public enum IsolationLevel
-	public int value__; 
+	public int value__;
 	public const IsolationLevel Serializable = 0;
 	public const IsolationLevel RepeatableRead = 1;
 	public const IsolationLevel ReadCommitted = 2;
@@ -15,7 +15,7 @@ public enum IsolationLevel
 
 public enum IsolationLevel // TypeDefIndex: 4278
 {
-	public int value__; 
+	public int value__;
 	public const IsolationLevel Unspecified = -1;
 	public const IsolationLevel Chaos = 16;
 	public const IsolationLevel ReadUncommitted = 256;

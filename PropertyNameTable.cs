@@ -1,9 +1,9 @@
-internal class PropertyNameTable // TypeDefIndex: 5926
+internal class PropertyNameTable // TypeDefIndex: 5928
 {
-	private static readonly int HashCodeRandomizer; 
-	private int _count; 
-	private PropertyNameTable.Entry[] _entries; 
-	private int _mask; 
+	private static readonly int HashCodeRandomizer;
+	private int _count;
+	private PropertyNameTable.Entry[] _entries;
+	private int _mask;
 
 
 	private static void .cctor() { }
@@ -22,11 +22,11 @@ internal class PropertyNameTable // TypeDefIndex: 5926
 
 }
 
-private class PropertyNameTable.Entry // TypeDefIndex: 5927
+private class PropertyNameTable.Entry // TypeDefIndex: 5929
 {
-	internal readonly string Value; 
-	internal readonly int HashCode; 
-	internal PropertyNameTable.Entry Next; 
+	internal readonly string Value;
+	internal readonly int HashCode;
+	internal PropertyNameTable.Entry Next;
 
 
 	internal void .ctor(string value, int hashCode, PropertyNameTable.Entry next) { }

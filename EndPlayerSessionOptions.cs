@@ -1,15 +1,15 @@
-public struct EndPlayerSessionOptions // TypeDefIndex: 9045
+public struct EndPlayerSessionOptions // TypeDefIndex: 9047
 {
-	[CompilerGeneratedAttribute] 
-	private EndPlayerSessionOptionsAccountId <AccountId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EndPlayerSessionOptionsAccountId <AccountId>k__BackingField;
 
 	public EndPlayerSessionOptionsAccountId AccountId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EndPlayerSessionOptionsAccountId get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(EndPlayerSessionOptionsAccountId value) { }
 
 }

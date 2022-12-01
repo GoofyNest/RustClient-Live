@@ -1,7 +1,7 @@
 internal sealed class IntSizedArray : ICloneable // TypeDefIndex: 1120
 {
-	internal int[] objects; 
-	internal int[] negObjects; 
+	internal int[] objects;
+	internal int[] negObjects;
 
 	internal int Item { get; set; }
 

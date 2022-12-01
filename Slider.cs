@@ -1,31 +1,31 @@
 public class Slider : Selectable, IDragHandler, IEventSystemHandler, IInitializePotentialDragHandler, ICanvasElement // TypeDefIndex: 5013
 {
-	[SerializeField] 
-	private RectTransform m_FillRect; 
-	[SerializeField] 
-	private RectTransform m_HandleRect; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private Slider.Direction m_Direction; 
-	[SerializeField] 
-	private float m_MinValue; 
-	[SerializeField] 
-	private float m_MaxValue; 
-	[SerializeField] 
-	private bool m_WholeNumbers; 
-	[SerializeField] 
-	protected float m_Value; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private Slider.SliderEvent m_OnValueChanged; 
-	private Image m_FillImage; 
-	private Transform m_FillTransform; 
-	private RectTransform m_FillContainerRect; 
-	private Transform m_HandleTransform; 
-	private RectTransform m_HandleContainerRect; 
-	private Vector2 m_Offset; 
-	private DrivenRectTransformTracker m_Tracker; 
-	private bool m_DelayedUpdateVisuals; 
+	[SerializeField]
+	private RectTransform m_FillRect;
+	[SerializeField]
+	private RectTransform m_HandleRect;
+	[SpaceAttribute]
+	[SerializeField]
+	private Slider.Direction m_Direction;
+	[SerializeField]
+	private float m_MinValue;
+	[SerializeField]
+	private float m_MaxValue;
+	[SerializeField]
+	private bool m_WholeNumbers;
+	[SerializeField]
+	protected float m_Value;
+	[SpaceAttribute]
+	[SerializeField]
+	private Slider.SliderEvent m_OnValueChanged;
+	private Image m_FillImage;
+	private Transform m_FillTransform;
+	private RectTransform m_FillContainerRect;
+	private Transform m_HandleTransform;
+	private RectTransform m_HandleContainerRect;
+	private Vector2 m_Offset;
+	private DrivenRectTransformTracker m_Tracker;
+	private bool m_DelayedUpdateVisuals;
 
 	public RectTransform fillRect { get; set; }
 	public RectTransform handleRect { get; set; }
@@ -139,7 +139,7 @@ public class Slider : Selectable, IDragHandler, IEventSystemHandler, IInitialize
 
 public enum Slider.Direction // TypeDefIndex: 5014
 {
-	public int value__; 
+	public int value__;
 	public const Slider.Direction LeftToRight = 0;
 	public const Slider.Direction RightToLeft = 1;
 	public const Slider.Direction BottomToTop = 2;
@@ -156,7 +156,7 @@ public class Slider.SliderEvent : UnityEvent<float> // TypeDefIndex: 5015
 
 private enum Slider.Axis // TypeDefIndex: 5016
 {
-	public int value__; 
+	public int value__;
 	public const Slider.Axis Horizontal = 0;
 	public const Slider.Axis Vertical = 1;
 

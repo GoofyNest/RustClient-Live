@@ -1,14 +1,14 @@
-public class ERSideObjectLog : MonoBehaviour // TypeDefIndex: 7238
+public class ERSideObjectLog : MonoBehaviour // TypeDefIndex: 7240
 {
-	public List<SideObjectLog> QOQDQOOQDDQOOQ; 
-	public List<int> ints; 
-	public List<QDQDOOQQDQODD> roadPresets; 
-	public List<CrossingCornerClass> crossingCornerPresets; 
-	public List<ERSideWalk> sidewalkPresets; 
-	public List<ERTexture> textureData; 
-	public List<string> presetAssets; 
-	public int logIndex; 
-	public int updateInt; 
+	public List<SideObjectLog> QOQDQOOQDDQOOQ;
+	public List<int> ints;
+	public List<QDQDOOQQDQODD> roadPresets;
+	public List<CrossingCornerClass> crossingCornerPresets;
+	public List<ERSideWalk> sidewalkPresets;
+	public List<ERTexture> textureData;
+	public List<string> presetAssets;
+	public int logIndex;
+	public int updateInt;
 
 
 	public void AddRoadPreset(List<SideObject> sceneSideObjects, List<SideObjectLog> projectSideObjects, QDQDOOQQDQODD sourcePreset) { }

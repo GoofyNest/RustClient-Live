@@ -1,14 +1,14 @@
-public struct LogEventParamPairParamValue // TypeDefIndex: 9767
+public struct LogEventParamPairParamValue // TypeDefIndex: 9769
 {
-	private AntiCheatCommonEventParamType m_ParamValueType; 
-	private Nullable<IntPtr> m_ClientHandle; 
-	private Utf8String m_String; 
-	private Nullable<uint> m_UInt32; 
-	private Nullable<int> m_Int32; 
-	private Nullable<ulong> m_UInt64; 
-	private Nullable<long> m_Int64; 
-	private Vec3f m_Vec3f; 
-	private Quat m_Quat; 
+	private AntiCheatCommonEventParamType m_ParamValueType;
+	private Nullable<IntPtr> m_ClientHandle;
+	private Utf8String m_String;
+	private Nullable<uint> m_UInt32;
+	private Nullable<int> m_Int32;
+	private Nullable<ulong> m_UInt64;
+	private Nullable<long> m_Int64;
+	private Vec3f m_Vec3f;
+	private Quat m_Quat;
 
 	public AntiCheatCommonEventParamType ParamValueType { get; set; }
 	public Nullable<IntPtr> ClientHandle { get; set; }

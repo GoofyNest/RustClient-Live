@@ -1,9 +1,9 @@
-internal struct GSClientAchievementStatus_t : ICallbackData // TypeDefIndex: 5499
+internal struct GSClientAchievementStatus_t : ICallbackData // TypeDefIndex: 5501
 {
-	internal ulong SteamID; 
-	internal byte[] PchAchievement; 
-	internal bool Unlocked; 
-	public static int _datasize; 
+	internal ulong SteamID;
+	internal byte[] PchAchievement;
+	internal bool Unlocked;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

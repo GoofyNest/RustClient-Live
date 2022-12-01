@@ -1,8 +1,8 @@
-public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13105
+public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13120
 {
-	public bool precached; 
-	[HideInInspector] 
-	public ParticleSystemContainer.ParticleSystemGroup[] particleGroups; 
+	public bool precached;
+	[HideInInspector]
+	public ParticleSystemContainer.ParticleSystemGroup[] particleGroups;
 
 
 	public void Play() { }
@@ -19,10 +19,10 @@ public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeD
 
 }
 
-public struct ParticleSystemContainer.ParticleSystemGroup // TypeDefIndex: 13106
+public struct ParticleSystemContainer.ParticleSystemGroup // TypeDefIndex: 13121
 {
-	public ParticleSystem system; 
-	public LODComponentParticleSystem[] lodComponents; 
+	public ParticleSystem system;
+	public LODComponentParticleSystem[] lodComponents;
 
 }
 

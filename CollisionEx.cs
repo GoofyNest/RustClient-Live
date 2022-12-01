@@ -1,7 +1,7 @@
-public static class CollisionEx // TypeDefIndex: 13485
+public static class CollisionEx // TypeDefIndex: 13501
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BaseEntity GetEntity(Collision col) { }
 
 }

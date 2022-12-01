@@ -1,9 +1,9 @@
 internal class ActivityTracker // TypeDefIndex: 1592
 {
-	private AsyncLocal<ActivityTracker.ActivityInfo> m_current; 
-	private bool m_checkedForEnable; 
-	private static ActivityTracker s_activityTrackerInstance; 
-	private static long m_nextId; 
+	private AsyncLocal<ActivityTracker.ActivityInfo> m_current;
+	private bool m_checkedForEnable;
+	private static ActivityTracker s_activityTrackerInstance;
+	private static long m_nextId;
 
 	public static ActivityTracker Instance { get; }
 
@@ -30,16 +30,16 @@ internal class ActivityTracker // TypeDefIndex: 1592
 
 private class ActivityTracker.ActivityInfo // TypeDefIndex: 1593
 {
-	internal readonly string m_name; 
-	private readonly long m_uniqueId; 
-	internal readonly Guid m_guid; 
-	internal readonly int m_activityPathGuidOffset; 
-	internal readonly int m_level; 
-	internal readonly EventActivityOptions m_eventOptions; 
-	internal long m_lastChildID; 
-	internal int m_stopped; 
-	internal readonly ActivityTracker.ActivityInfo m_creator; 
-	internal readonly Guid m_activityIdToRestore; 
+	internal readonly string m_name;
+	private readonly long m_uniqueId;
+	internal readonly Guid m_guid;
+	internal readonly int m_activityPathGuidOffset;
+	internal readonly int m_level;
+	internal readonly EventActivityOptions m_eventOptions;
+	internal long m_lastChildID;
+	internal int m_stopped;
+	internal readonly ActivityTracker.ActivityInfo m_creator;
+	internal readonly Guid m_activityIdToRestore;
 
 	public Guid ActivityId { get; }
 

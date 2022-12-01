@@ -1,22 +1,22 @@
-public class DecorSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 12084
+public class DecorSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 12091
 {
-	public static List<DecorSpawn> Instances; 
-	private static bool Enabled; 
-	public SpawnFilter Filter; 
-	public string ResourceFolder; 
-	public uint Seed; 
-	public float ObjectCutoff; 
-	public float ObjectTapering; 
-	public int ObjectsPerPatch; 
-	public float ClusterRadius; 
-	public int ClusterSizeMin; 
-	public int ClusterSizeMax; 
-	public int PatchCount; 
-	public int PatchSize; 
-	public bool LOD; 
-	internal Transform Anchor; 
-	internal Prefab[] Prefabs; 
-	private DecorPatch[] patches; 
+	public static List<DecorSpawn> Instances;
+	private static bool Enabled;
+	public SpawnFilter Filter;
+	public string ResourceFolder;
+	public uint Seed;
+	public float ObjectCutoff;
+	public float ObjectTapering;
+	public int ObjectsPerPatch;
+	public float ClusterRadius;
+	public int ClusterSizeMin;
+	public int ClusterSizeMax;
+	public int PatchCount;
+	public int PatchSize;
+	public bool LOD;
+	internal Transform Anchor;
+	internal Prefab[] Prefabs;
+	private DecorPatch[] patches;
 
 
 	public static void SetEnabled(bool b) { }
@@ -29,10 +29,10 @@ public class DecorSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 12084
 
 	public void Refresh(bool force = False) { }
 
-	[ContextMenu] 
+	[ContextMenu]
 	private void RefreshAll_ContextMenu() { }
 
-	[ContextMenu] 
+	[ContextMenu]
 	private void Refresh_ContextMenu() { }
 
 	protected void OnEnable() { }
@@ -43,7 +43,7 @@ public class DecorSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 12084
 
 	private void FreePatches() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator UpdateCoroutine() { }
 
 	public void .ctor() { }
@@ -52,32 +52,32 @@ public class DecorSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 12084
 
 }
 
-private sealed class DecorSpawn.<UpdateCoroutine>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12085
+private sealed class DecorSpawn.<UpdateCoroutine>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12092
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public DecorSpawn <>4__this; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public DecorSpawn <>4__this;
+	private int <i>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

@@ -1,26 +1,26 @@
-public class RecorderTool : ThrownWeapon, ICassettePlayer // TypeDefIndex: 10347
+public class RecorderTool : ThrownWeapon, ICassettePlayer // TypeDefIndex: 10351
 {
-	[ClientVar] 
-	public static bool debugRecording; 
-	public AudioSource RecorderAudioSource; 
-	public SoundDefinition RecordStartSfx; 
-	public SoundDefinition RewindSfx; 
-	public SoundDefinition RecordFinishedSfx; 
-	public SoundDefinition PlayTapeSfx; 
-	public SoundDefinition StopTapeSfx; 
-	public float ThrowScale; 
-	private bool recording; 
-	public static bool IsRecording; 
-	private AudioInterceptComponent activeIntercept; 
-	private float recordStartTime; 
-	[CompilerGeneratedAttribute] 
-	private Cassette <cachedCassette>k__BackingField; 
-	private OggEncoder currentEncoder; 
-	[CompilerGeneratedAttribute] 
-	private int <StartCountdown>k__BackingField; 
-	private Sound rewindingSound; 
-	private uint cassetteToLoad; 
-	private static readonly int PlayAnimBool; 
+	[ClientVar]
+	public static bool debugRecording;
+	public AudioSource RecorderAudioSource;
+	public SoundDefinition RecordStartSfx;
+	public SoundDefinition RewindSfx;
+	public SoundDefinition RecordFinishedSfx;
+	public SoundDefinition PlayTapeSfx;
+	public SoundDefinition StopTapeSfx;
+	public float ThrowScale;
+	private bool recording;
+	public static bool IsRecording;
+	private AudioInterceptComponent activeIntercept;
+	private float recordStartTime;
+	[CompilerGeneratedAttribute]
+	private Cassette <cachedCassette>k__BackingField;
+	private OggEncoder currentEncoder;
+	[CompilerGeneratedAttribute]
+	private int <StartCountdown>k__BackingField;
+	private Sound rewindingSound;
+	private uint cassetteToLoad;
+	private static readonly int PlayAnimBool;
 
 	public Cassette cachedCassette { get; set; }
 	public Sprite LoadedCassetteIcon { get; }
@@ -32,10 +32,10 @@ public class RecorderTool : ThrownWeapon, ICassettePlayer // TypeDefIndex: 10347
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Cassette get_cachedCassette() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_cachedCassette(Cassette value) { }
 
 	public Sprite get_LoadedCassetteIcon() { }
@@ -50,10 +50,10 @@ public class RecorderTool : ThrownWeapon, ICassettePlayer // TypeDefIndex: 10347
 
 	internal override void DoNetworkDestroy() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_StartCountdown() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_StartCountdown(int value) { }
 
 	private bool get_IsCountingDown() { }
@@ -76,10 +76,10 @@ public class RecorderTool : ThrownWeapon, ICassettePlayer // TypeDefIndex: 10347
 
 	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
 	public void OnLoadedWithCassette(Cassette c) { }

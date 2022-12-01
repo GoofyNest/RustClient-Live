@@ -1,8 +1,8 @@
-internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9588
+internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9590
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ProductUserId; 
-	private IntPtr m_JsonWebToken; 
+	private int m_ApiVersion;
+	private IntPtr m_ProductUserId;
+	private IntPtr m_JsonWebToken;
 
 	public ProductUserId ProductUserId { get; set; }
 	public Utf8String JsonWebToken { get; set; }
@@ -26,11 +26,11 @@ internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDispo
 
 }
 
-internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9663
+internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9665
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AccountId; 
-	private IntPtr m_JsonWebToken; 
+	private int m_ApiVersion;
+	private IntPtr m_AccountId;
+	private IntPtr m_JsonWebToken;
 
 	public EpicAccountId AccountId { get; set; }
 	public Utf8String JsonWebToken { get; set; }

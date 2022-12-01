@@ -1,8 +1,8 @@
-public class RandomParameterNumberFloat : StateMachineBehaviour // TypeDefIndex: 13232
+public class RandomParameterNumberFloat : StateMachineBehaviour // TypeDefIndex: 13247
 {
-	public string parameterName; 
-	public int min; 
-	public int max; 
+	public string parameterName;
+	public int min;
+	public int max;
 
 
 	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }

@@ -1,6 +1,6 @@
 internal struct RuntimeClassHandle // TypeDefIndex: 5
 {
-	private RuntimeStructs.MonoClass* value; 
+	private RuntimeStructs.MonoClass* value;
 
 	internal RuntimeStructs.MonoClass* Value { get; }
 

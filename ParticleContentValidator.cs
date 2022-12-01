@@ -1,12 +1,12 @@
 internal sealed class ParticleContentValidator : ContentValidator // TypeDefIndex: 2168
 {
-	private SymbolsDictionary symbols; 
-	private Positions positions; 
-	private Stack stack; 
-	private SyntaxTreeNode contentNode; 
-	private bool isPartial; 
-	private int minMaxNodesCount; 
-	private bool enableUpaCheck; 
+	private SymbolsDictionary symbols;
+	private Positions positions;
+	private Stack stack;
+	private SyntaxTreeNode contentNode;
+	private bool isPartial;
+	private int minMaxNodesCount;
+	private bool enableUpaCheck;
 
 
 	public void .ctor(XmlSchemaContentType contentType) { }

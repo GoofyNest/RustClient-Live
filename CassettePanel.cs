@@ -1,6 +1,6 @@
-public class CassettePanel : NotePanel // TypeDefIndex: 10612
+public class CassettePanel : NotePanel // TypeDefIndex: 10616
 {
-	public GameObject[] CassetteSprites; 
+	public GameObject[] CassetteSprites;
 
 
 	protected override void OnItem(Item item) { }

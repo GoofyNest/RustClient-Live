@@ -1,16 +1,16 @@
-public class HealthBelowAIEvent : BaseAIEvent // TypeDefIndex: 11131
+public class HealthBelowAIEvent : BaseAIEvent // TypeDefIndex: 11137
 {
-	[CompilerGeneratedAttribute] 
-	private float <HealthFraction>k__BackingField; 
-	private BaseCombatEntity combatEntity; 
+	[CompilerGeneratedAttribute]
+	private float <HealthFraction>k__BackingField;
+	private BaseCombatEntity combatEntity;
 
 	public float HealthFraction { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_HealthFraction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HealthFraction(float value) { }
 
 	public void .ctor() { }

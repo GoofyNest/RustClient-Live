@@ -1,7 +1,7 @@
 internal class LockQueue // TypeDefIndex: 825
 {
-	private ReaderWriterLock rwlock; 
-	private int lockCount; 
+	private ReaderWriterLock rwlock;
+	private int lockCount;
 
 	public bool IsEmpty { get; }
 

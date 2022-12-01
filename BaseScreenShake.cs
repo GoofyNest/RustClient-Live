@@ -1,12 +1,12 @@
-public abstract class BaseScreenShake : MonoBehaviour // TypeDefIndex: 11099
+public abstract class BaseScreenShake : MonoBehaviour // TypeDefIndex: 11105
 {
-	public static List<BaseScreenShake> list; 
-	internal static float punchFadeScale; 
-	internal static float bobScale; 
-	internal static float animPunchMagnitude; 
-	public float length; 
-	internal float timeTaken; 
-	private int currentFrame; 
+	public static List<BaseScreenShake> list;
+	internal static float punchFadeScale;
+	internal static float bobScale;
+	internal static float animPunchMagnitude;
+	public float length;
+	internal float timeTaken;
+	private int currentFrame;
 
 
 	public static void Apply(Camera cam, BaseViewModel vm) { }

@@ -1,12 +1,12 @@
-public class Prefab : IComparable<Prefab> // TypeDefIndex: 11711
+public class Prefab : IComparable<Prefab> // TypeDefIndex: 11718
 {
-	public uint ID; 
-	public string Name; 
-	public string Folder; 
-	public GameObject Object; 
-	public GameManager Manager; 
-	public PrefabAttribute.Library Attribute; 
-	public PrefabParameters Parameters; 
+	public uint ID;
+	public string Name;
+	public string Folder;
+	public GameObject Object;
+	public GameManager Manager;
+	public PrefabAttribute.Library Attribute;
+	public PrefabParameters Parameters;
 
 	public static PrefabAttribute.Library DefaultAttribute { get; }
 	public static GameManager DefaultManager { get; }

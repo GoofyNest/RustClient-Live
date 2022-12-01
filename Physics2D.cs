@@ -1,9 +1,9 @@
 public class Physics2D // TypeDefIndex: 4085
 {
-	private static List<Rigidbody2D> m_LastDisabledRigidbody2D; 
+	private static List<Rigidbody2D> m_LastDisabledRigidbody2D;
 
 	public static PhysicsScene2D defaultPhysicsScene { get; }
-	[StaticAccessorAttribute] 
+	[StaticAccessorAttribute]
 	public static bool queriesHitTriggers { get; }
 
 
@@ -11,48 +11,48 @@ public class Physics2D // TypeDefIndex: 4085
 
 	public static bool get_queriesHitTriggers() { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit2D Raycast(Vector2 origin, Vector2 direction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit2D Raycast(Vector2 origin, Vector2 direction, float distance) { }
 
-	[ExcludeFromDocsAttribute] 
-	[RequiredByNativeCodeAttribute] 
+	[ExcludeFromDocsAttribute]
+	[RequiredByNativeCodeAttribute]
 	public static RaycastHit2D Raycast(Vector2 origin, Vector2 direction, float distance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit2D Raycast(Vector2 origin, Vector2 direction, float distance, int layerMask, float minDepth) { }
 
 	public static RaycastHit2D Raycast(Vector2 origin, Vector2 direction, float distance, int layerMask, float minDepth, float maxDepth) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int Raycast(Vector2 origin, Vector2 direction, ContactFilter2D contactFilter, RaycastHit2D[] results) { }
 
 	public static int Raycast(Vector2 origin, Vector2 direction, ContactFilter2D contactFilter, RaycastHit2D[] results, float distance) { }
 
 	public static int Raycast(Vector2 origin, Vector2 direction, ContactFilter2D contactFilter, List<RaycastHit2D> results, float distance = ∞) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit2D[] GetRayIntersectionAll(Ray ray) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit2D[] GetRayIntersectionAll(Ray ray, float distance) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static RaycastHit2D[] GetRayIntersectionAll(Ray ray, float distance, int layerMask) { }
 
-	[StaticAccessorAttribute] 
-	[NativeMethodAttribute] 
+	[StaticAccessorAttribute]
+	[NativeMethodAttribute]
 	private static RaycastHit2D[] GetRayIntersectionAll_Internal(PhysicsScene2D physicsScene, Vector3 origin, Vector3 direction, float distance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int GetRayIntersectionNonAlloc(Ray ray, RaycastHit2D[] results) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int GetRayIntersectionNonAlloc(Ray ray, RaycastHit2D[] results, float distance) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static int GetRayIntersectionNonAlloc(Ray ray, RaycastHit2D[] results, float distance, int layerMask) { }
 
 	private static void .cctor() { }

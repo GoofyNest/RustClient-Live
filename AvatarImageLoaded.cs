@@ -1,10 +1,10 @@
 internal struct AvatarImageLoaded_t : ICallbackData // TypeDefIndex: 5317
 {
-	internal ulong SteamID; 
-	internal int Image; 
-	internal int Wide; 
-	internal int Tall; 
-	public static int _datasize; 
+	internal ulong SteamID;
+	internal int Image;
+	internal int Wide;
+	internal int Tall;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

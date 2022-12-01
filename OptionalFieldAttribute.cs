@@ -1,6 +1,6 @@
 public sealed class OptionalFieldAttribute : Attribute // TypeDefIndex: 1048
 {
-	private int versionAdded; 
+	private int versionAdded;
 
 	public int VersionAdded { set; }
 

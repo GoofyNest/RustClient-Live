@@ -1,18 +1,18 @@
-public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 13245
+public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 13260
 {
-	public float bobSpeedWalk; 
-	public float bobSpeedRun; 
-	public float bobAmountWalk; 
-	public float bobAmountRun; 
-	public float leftOffsetRun; 
-	internal float bobAmountRotateYaw; 
-	internal float bobAmountRotateRoll; 
-	internal Vector3 velocity; 
-	internal Vector3 bobOffset; 
-	internal float bobRotateYaw; 
-	internal float bobRotateRoll; 
-	internal float bobCycle; 
-	internal ViewmodelBob.BobSettings smoothedBob; 
+	public float bobSpeedWalk;
+	public float bobSpeedRun;
+	public float bobAmountWalk;
+	public float bobAmountRun;
+	public float leftOffsetRun;
+	internal float bobAmountRotateYaw;
+	internal float bobAmountRotateRoll;
+	internal Vector3 velocity;
+	internal Vector3 bobOffset;
+	internal float bobRotateYaw;
+	internal float bobRotateRoll;
+	internal float bobCycle;
+	internal ViewmodelBob.BobSettings smoothedBob;
 
 
 	private ViewmodelBob.BobSettings WorkoutBobSettings(Vector3 newVelocity, float fov, bool isRunning, bool OnGround, bool isAiming, bool isDucked, bool isMounted) { }
@@ -25,13 +25,13 @@ public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 13245
 
 }
 
-public struct ViewmodelBob.BobSettings // TypeDefIndex: 13246
+public struct ViewmodelBob.BobSettings // TypeDefIndex: 13261
 {
-	public float bobSpeed; 
-	public float bobAmount; 
-	public float offsetLateral; 
-	public float bobRotate; 
-	public float effectAmount; 
+	public float bobSpeed;
+	public float bobAmount;
+	public float offsetLateral;
+	public float bobRotate;
+	public float effectAmount;
 
 }
 

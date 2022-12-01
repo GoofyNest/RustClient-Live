@@ -1,25 +1,25 @@
-public class TerrainConfig : ScriptableObject // TypeDefIndex: 12060
+public class TerrainConfig : ScriptableObject // TypeDefIndex: 12067
 {
-	public bool CastShadows; 
-	public LayerMask GroundMask; 
-	public LayerMask WaterMask; 
-	public PhysicMaterial GenericMaterial; 
-	public Material Material; 
-	public Material MarginMaterial; 
-	public Texture[] AlbedoArrays; 
-	public Texture[] NormalArrays; 
-	public float HeightMapErrorMin; 
-	public float HeightMapErrorMax; 
-	public float BaseMapDistanceMin; 
-	public float BaseMapDistanceMax; 
-	public float ShaderLodMin; 
-	public float ShaderLodMax; 
-	public TerrainConfig.SplatType[] Splats; 
-	private string snowMatName; 
-	private string grassMatName; 
-	private string sandMatName; 
-	private List<string> dirtMatNames; 
-	private List<string> stoneyMatNames; 
+	public bool CastShadows;
+	public LayerMask GroundMask;
+	public LayerMask WaterMask;
+	public PhysicMaterial GenericMaterial;
+	public Material Material;
+	public Material MarginMaterial;
+	public Texture[] AlbedoArrays;
+	public Texture[] NormalArrays;
+	public float HeightMapErrorMin;
+	public float HeightMapErrorMax;
+	public float BaseMapDistanceMin;
+	public float BaseMapDistanceMax;
+	public float ShaderLodMin;
+	public float ShaderLodMax;
+	public TerrainConfig.SplatType[] Splats;
+	private string snowMatName;
+	private string grassMatName;
+	private string sandMatName;
+	private List<string> dirtMatNames;
+	private List<string> stoneyMatNames;
 
 	public Texture AlbedoArray { get; }
 	public Texture NormalArray { get; }
@@ -61,53 +61,53 @@ public class TerrainConfig : ScriptableObject // TypeDefIndex: 12060
 
 }
 
-public class TerrainConfig.SplatOverlay // TypeDefIndex: 12061
+public class TerrainConfig.SplatOverlay // TypeDefIndex: 12068
 {
-	public Color Color; 
-	[RangeAttribute] 
-	public float Smoothness; 
-	[RangeAttribute] 
-	public float NormalIntensity; 
-	[RangeAttribute] 
-	public float BlendFactor; 
-	[RangeAttribute] 
-	public float BlendFalloff; 
+	public Color Color;
+	[RangeAttribute]
+	public float Smoothness;
+	[RangeAttribute]
+	public float NormalIntensity;
+	[RangeAttribute]
+	public float BlendFactor;
+	[RangeAttribute]
+	public float BlendFalloff;
 
 
 	public void .ctor() { }
 
 }
 
-public class TerrainConfig.SplatType // TypeDefIndex: 12062
+public class TerrainConfig.SplatType // TypeDefIndex: 12069
 {
-	public string Name; 
-	[FormerlySerializedAsAttribute] 
-	public Color AridColor; 
-	public TerrainConfig.SplatOverlay AridOverlay; 
-	[FormerlySerializedAsAttribute] 
-	public Color TemperateColor; 
-	public TerrainConfig.SplatOverlay TemperateOverlay; 
-	[FormerlySerializedAsAttribute] 
-	public Color TundraColor; 
-	public TerrainConfig.SplatOverlay TundraOverlay; 
-	[FormerlySerializedAsAttribute] 
-	public Color ArcticColor; 
-	public TerrainConfig.SplatOverlay ArcticOverlay; 
-	public PhysicMaterial Material; 
-	public float SplatTiling; 
-	[RangeAttribute] 
-	public float UVMIXMult; 
-	public float UVMIXStart; 
-	public float UVMIXDist; 
+	public string Name;
+	[FormerlySerializedAsAttribute]
+	public Color AridColor;
+	public TerrainConfig.SplatOverlay AridOverlay;
+	[FormerlySerializedAsAttribute]
+	public Color TemperateColor;
+	public TerrainConfig.SplatOverlay TemperateOverlay;
+	[FormerlySerializedAsAttribute]
+	public Color TundraColor;
+	public TerrainConfig.SplatOverlay TundraOverlay;
+	[FormerlySerializedAsAttribute]
+	public Color ArcticColor;
+	public TerrainConfig.SplatOverlay ArcticOverlay;
+	public PhysicMaterial Material;
+	public float SplatTiling;
+	[RangeAttribute]
+	public float UVMIXMult;
+	public float UVMIXStart;
+	public float UVMIXDist;
 
 
 	public void .ctor() { }
 
 }
 
-public enum TerrainConfig.GroundType // TypeDefIndex: 12063
+public enum TerrainConfig.GroundType // TypeDefIndex: 12070
 {
-	public int value__; 
+	public int value__;
 	public const TerrainConfig.GroundType None = 0;
 	public const TerrainConfig.GroundType HardSurface = 1;
 	public const TerrainConfig.GroundType Grass = 2;

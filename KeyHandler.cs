@@ -1,15 +1,15 @@
 internal class KeyHandler // TypeDefIndex: 108
 {
-	private static Hashtable key_to_handler; 
-	private static Hashtable dir_to_handler; 
-	public string Dir; 
-	private string ActualDir; 
-	public bool IsVolatile; 
-	private Hashtable values; 
-	private string file; 
-	private bool dirty; 
-	private static string user_store; 
-	private static string machine_store; 
+	private static Hashtable key_to_handler;
+	private static Hashtable dir_to_handler;
+	public string Dir;
+	private string ActualDir;
+	public bool IsVolatile;
+	private Hashtable values;
+	private string file;
+	private bool dirty;
+	private static string user_store;
+	private static string machine_store;
 
 	public bool IsMarkedForDeletion { get; }
 	private static string UserStore { get; }

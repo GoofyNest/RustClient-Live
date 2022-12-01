@@ -1,7 +1,7 @@
 internal sealed class DefaultProxySectionInternal // TypeDefIndex: 3085
 {
-	private IWebProxy webProxy; 
-	private static object classSyncObject; 
+	private IWebProxy webProxy;
+	private static object classSyncObject;
 
 	internal static object ClassSyncObject { get; }
 	internal IWebProxy WebProxy { get; }

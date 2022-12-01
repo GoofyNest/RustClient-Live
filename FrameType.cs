@@ -1,6 +1,6 @@
-public enum FrameType // TypeDefIndex: 6944
+public enum FrameType // TypeDefIndex: 6946
 {
-	public byte value__; 
+	public byte value__;
 	public const FrameType Continuation = 0;
 	public const FrameType Text = 1;
 	public const FrameType Binary = 2;

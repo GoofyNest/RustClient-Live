@@ -1,10 +1,10 @@
-public class ScreenBounce : BaseScreenShake // TypeDefIndex: 11100
+public class ScreenBounce : BaseScreenShake // TypeDefIndex: 11106
 {
-	public AnimationCurve bounceScale; 
-	public AnimationCurve bounceSpeed; 
-	public AnimationCurve bounceViewmodel; 
-	private float bounceTime; 
-	private Vector3 bounceVelocity; 
+	public AnimationCurve bounceScale;
+	public AnimationCurve bounceSpeed;
+	public AnimationCurve bounceViewmodel;
+	private float bounceTime;
+	private Vector3 bounceVelocity;
 
 
 	public override void Setup() { }

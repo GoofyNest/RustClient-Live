@@ -1,6 +1,6 @@
-public class ScaleTransform : ScaleRenderer // TypeDefIndex: 11098
+public class ScaleTransform : ScaleRenderer // TypeDefIndex: 11104
 {
-	private Vector3 initialScale; 
+	private Vector3 initialScale;
 
 
 	public override void SetScale_Internal(float scale) { }

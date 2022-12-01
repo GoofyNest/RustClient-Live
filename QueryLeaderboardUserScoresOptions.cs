@@ -1,15 +1,15 @@
-public struct QueryLeaderboardUserScoresOptions // TypeDefIndex: 9318
+public struct QueryLeaderboardUserScoresOptions // TypeDefIndex: 9320
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <UserIds>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private UserScoresQueryStatInfo[] <StatInfo>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <StartTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <EndTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <UserIds>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private UserScoresQueryStatInfo[] <StatInfo>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <StartTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <EndTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
 
 	public ProductUserId[] UserIds { get; set; }
 	public UserScoresQueryStatInfo[] StatInfo { get; set; }
@@ -18,34 +18,34 @@ public struct QueryLeaderboardUserScoresOptions // TypeDefIndex: 9318
 	public ProductUserId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_UserIds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserIds(ProductUserId[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public UserScoresQueryStatInfo[] get_StatInfo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StatInfo(UserScoresQueryStatInfo[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_StartTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StartTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_EndTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EndTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
 }

@@ -1,6 +1,6 @@
 internal enum SByteEnum // TypeDefIndex: 360
 {
-	public sbyte value__; 
+	public sbyte value__;
 
 }
 

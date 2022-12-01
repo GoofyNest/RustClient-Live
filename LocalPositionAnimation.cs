@@ -1,16 +1,16 @@
-public class LocalPositionAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 10926
+public class LocalPositionAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 10932
 {
-	public Vector3 centerPosition; 
-	public bool worldSpace; 
-	public float scaleX; 
-	public float timeScaleX; 
-	public AnimationCurve movementX; 
-	public float scaleY; 
-	public float timeScaleY; 
-	public AnimationCurve movementY; 
-	public float scaleZ; 
-	public float timeScaleZ; 
-	public AnimationCurve movementZ; 
+	public Vector3 centerPosition;
+	public bool worldSpace;
+	public float scaleX;
+	public float timeScaleX;
+	public AnimationCurve movementX;
+	public float scaleY;
+	public float timeScaleY;
+	public AnimationCurve movementY;
+	public float scaleZ;
+	public float timeScaleZ;
+	public AnimationCurve movementZ;
 	private const float maxDistSq = 10000;
 
 

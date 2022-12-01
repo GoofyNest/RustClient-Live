@@ -1,13 +1,13 @@
-internal sealed class SmpteData // TypeDefIndex: 7632
+internal sealed class SmpteData // TypeDefIndex: 7634
 {
-	private static readonly Dictionary<SmpteFormat, byte> MaxFrames; 
-	private static readonly SmpteFormat[] Formats; 
-	private SmpteFormat _format; 
-	private byte _hours; 
-	private byte _minutes; 
-	private byte _seconds; 
-	private byte _frames; 
-	private byte _subFrames; 
+	private static readonly Dictionary<SmpteFormat, byte> MaxFrames;
+	private static readonly SmpteFormat[] Formats;
+	private SmpteFormat _format;
+	private byte _hours;
+	private byte _minutes;
+	private byte _seconds;
+	private byte _frames;
+	private byte _subFrames;
 
 	public SmpteFormat Format { get; set; }
 	public byte Hours { get; set; }

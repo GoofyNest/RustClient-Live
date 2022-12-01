@@ -1,9 +1,9 @@
-public class MissionPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6461
+public class MissionPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6463
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string identifier; 
-	public Vector3 location; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string identifier;
+	public Vector3 location;
 
 
 	public static void ResetToPool(MissionPoint instance) { }
@@ -60,9 +60,9 @@ public class MissionPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class MissionPoint : MonoBehaviour // TypeDefIndex: 11961
+public class MissionPoint : MonoBehaviour // TypeDefIndex: 11968
 {
-	public bool dropToGround; 
+	public bool dropToGround;
 	public const int COUNT = 8;
 	public const int EVERYTHING = -1;
 	public const int NOTHING = 0;
@@ -79,7 +79,7 @@ public class MissionPoint : MonoBehaviour // TypeDefIndex: 11961
 	public const int ROADSIDE_IDX = 5;
 	public const int BEACH = 6;
 	public const int UNDERWATER_IDX = 7;
-	private static Dictionary<int, int> type2index; 
+	private static Dictionary<int, int> type2index;
 
 
 	public static int TypeToIndex(int id) { }
@@ -92,9 +92,9 @@ public class MissionPoint : MonoBehaviour // TypeDefIndex: 11961
 
 }
 
-public enum MissionPoint.MissionPointEnum // TypeDefIndex: 11962
+public enum MissionPoint.MissionPointEnum // TypeDefIndex: 11969
 {
-	public int value__; 
+	public int value__;
 	public const MissionPoint.MissionPointEnum EasyMonument = 1;
 	public const MissionPoint.MissionPointEnum MediumMonument = 2;
 	public const MissionPoint.MissionPointEnum HardMonument = 4;

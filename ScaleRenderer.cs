@@ -1,11 +1,11 @@
-public class ScaleRenderer : MonoBehaviour // TypeDefIndex: 11096
+public class ScaleRenderer : MonoBehaviour // TypeDefIndex: 11102
 {
-	public bool useRandomScale; 
-	public float scaleMin; 
-	public float scaleMax; 
-	private float lastScale; 
-	protected bool hasInitialValues; 
-	public Renderer myRenderer; 
+	public bool useRandomScale;
+	public float scaleMin;
+	public float scaleMax;
+	private float lastScale;
+	protected bool hasInitialValues;
+	public Renderer myRenderer;
 
 
 	private bool ScaleDifferent(float newScale) { }

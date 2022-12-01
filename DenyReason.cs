@@ -1,6 +1,6 @@
 internal enum DenyReason // TypeDefIndex: 5143
 {
-	public int value__; 
+	public int value__;
 	public const DenyReason Invalid = 0;
 	public const DenyReason InvalidVersion = 1;
 	public const DenyReason Generic = 2;

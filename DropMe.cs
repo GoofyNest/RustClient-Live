@@ -1,6 +1,6 @@
-public class DropMe : MonoBehaviour, IDropHandler, IEventSystemHandler // TypeDefIndex: 13052
+public class DropMe : MonoBehaviour, IDropHandler, IEventSystemHandler // TypeDefIndex: 13067
 {
-	public string[] droppableTypes; 
+	public string[] droppableTypes;
 
 
 	public bool Accepts(DragMe drag) { }

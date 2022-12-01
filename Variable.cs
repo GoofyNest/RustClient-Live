@@ -1,7 +1,7 @@
 internal class Variable : AstNode // TypeDefIndex: 1799
 {
-	private string localname; 
-	private string prefix; 
+	private string localname;
+	private string prefix;
 
 	public override AstNode.AstType Type { get; }
 	public override XPathResultType ReturnType { get; }

@@ -1,8 +1,8 @@
-public class BaseProjectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6325
+public class BaseProjectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6327
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Magazine primaryMagazine; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Magazine primaryMagazine;
 
 
 	public static void ResetToPool(BaseProjectile instance) { }
@@ -59,21 +59,21 @@ public class BaseProjectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class Attack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6493
+public class Attack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6495
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 pointStart; 
-	public Vector3 pointEnd; 
-	public uint hitID; 
-	public uint hitBone; 
-	public Vector3 hitNormalLocal; 
-	public Vector3 hitPositionLocal; 
-	public Vector3 hitNormalWorld; 
-	public Vector3 hitPositionWorld; 
-	public uint hitPartID; 
-	public uint hitMaterialID; 
-	public uint hitItem; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 pointStart;
+	public Vector3 pointEnd;
+	public uint hitID;
+	public uint hitBone;
+	public Vector3 hitNormalLocal;
+	public Vector3 hitPositionLocal;
+	public Vector3 hitNormalWorld;
+	public Vector3 hitPositionWorld;
+	public uint hitPartID;
+	public uint hitMaterialID;
+	public uint hitItem;
 
 
 	public static void ResetToPool(Attack instance) { }
@@ -130,12 +130,12 @@ public class Attack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6493
 
 }
 
-public class ProjectileShoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6498
+public class ProjectileShoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6500
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int ammoType; 
-	public List<ProjectileShoot.Projectile> projectiles; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int ammoType;
+	public List<ProjectileShoot.Projectile> projectiles;
 
 
 	public static void ResetToPool(ProjectileShoot instance) { }
@@ -192,14 +192,14 @@ public class ProjectileShoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class ProjectileShoot.Projectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6499
+public class ProjectileShoot.Projectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6501
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int projectileID; 
-	public Vector3 startPos; 
-	public Vector3 startVel; 
-	public int seed; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int projectileID;
+	public Vector3 startPos;
+	public Vector3 startVel;
+	public int seed;
 
 
 	public static void ResetToPool(ProjectileShoot.Projectile instance) { }
@@ -256,75 +256,83 @@ public class ProjectileShoot.Projectile : IDisposable, Pool.IPooled, IProto // T
 
 }
 
-public class BaseProjectile : AttackEntity // TypeDefIndex: 10249
+public class BaseProjectile : AttackEntity // TypeDefIndex: 10251
 {
-	[HeaderAttribute] 
-	public float NoiseRadius; 
-	[HeaderAttribute] 
-	public float damageScale; 
-	public float distanceScale; 
-	public float projectileVelocityScale; 
-	public bool automatic; 
-	public bool usableByTurret; 
-	[TooltipAttribute] 
-	public float turretDamageScale; 
-	[HeaderAttribute] 
-	public GameObjectRef attackFX; 
-	public GameObjectRef silencedAttack; 
-	public GameObjectRef muzzleBrakeAttack; 
-	public Transform MuzzlePoint; 
-	[HeaderAttribute] 
-	public float reloadTime; 
-	public bool canUnloadAmmo; 
-	public BaseProjectile.Magazine primaryMagazine; 
-	public bool fractionalReload; 
-	public float reloadStartDuration; 
-	public float reloadFractionDuration; 
-	public float reloadEndDuration; 
-	[HeaderAttribute] 
-	public float aimSway; 
-	public float aimSwaySpeed; 
-	public RecoilProperties recoil; 
-	[HeaderAttribute] 
-	public AnimationCurve aimconeCurve; 
-	public float aimCone; 
-	public float hipAimCone; 
-	public float aimconePenaltyPerShot; 
-	public float aimConePenaltyMax; 
-	public float aimconePenaltyRecoverTime; 
-	public float aimconePenaltyRecoverDelay; 
-	public float stancePenaltyScale; 
-	[HeaderAttribute] 
-	public bool hasADS; 
-	public bool noAimingWhileCycling; 
-	public bool manualCycle; 
-	protected bool needsCycle; 
-	protected bool isCycling; 
-	public bool aiming; 
-	public bool isBurstWeapon; 
-	public float resetDuration; 
-	public int numShotsFired; 
-	private float nextReloadTime; 
-	private float startReloadTime; 
-	private float stancePenalty; 
-	private float aimconePenalty; 
-	private uint cachedModHash; 
-	private float sightAimConeScale; 
-	private float sightAimConeOffset; 
-	private float hipAimConeScale; 
-	private float hipAimConeOffset; 
-	protected bool isReloading; 
-	private float swaySampleTime; 
-	private float lastShotTime; 
-	public float reloadPressTime; 
-	private ItemDefinition ammoTypePreReload; 
-	private int fractionalReloadDesiredCount; 
-	private int fractionalReloadNumAdded; 
-	private int currentBurst; 
-	private bool triggerReady; 
-	private float nextHeightCheckTime; 
-	private bool cachedUnderground; 
-	private List<Projectile> createdProjectiles; 
+	[HeaderAttribute]
+	public float NoiseRadius;
+	[HeaderAttribute]
+	public float damageScale;
+	public float distanceScale;
+	public float projectileVelocityScale;
+	public bool automatic;
+	public bool usableByTurret;
+	[TooltipAttribute]
+	public float turretDamageScale;
+	[HeaderAttribute]
+	public GameObjectRef attackFX;
+	public GameObjectRef silencedAttack;
+	public GameObjectRef muzzleBrakeAttack;
+	public Transform MuzzlePoint;
+	[HeaderAttribute]
+	public float reloadTime;
+	public bool canUnloadAmmo;
+	public BaseProjectile.Magazine primaryMagazine;
+	public bool fractionalReload;
+	public float reloadStartDuration;
+	public float reloadFractionDuration;
+	public float reloadEndDuration;
+	[HeaderAttribute]
+	public float aimSway;
+	public float aimSwaySpeed;
+	public RecoilProperties recoil;
+	[HeaderAttribute]
+	public AnimationCurve aimconeCurve;
+	public float aimCone;
+	public float hipAimCone;
+	public float aimconePenaltyPerShot;
+	public float aimConePenaltyMax;
+	public float aimconePenaltyRecoverTime;
+	public float aimconePenaltyRecoverDelay;
+	public float stancePenaltyScale;
+	[HeaderAttribute]
+	public bool hasADS;
+	public bool noAimingWhileCycling;
+	public bool manualCycle;
+	protected bool needsCycle;
+	protected bool isCycling;
+	public bool aiming;
+	[HeaderAttribute]
+	public bool isBurstWeapon;
+	public bool canChangeFireModes;
+	public bool defaultOn;
+	public float internalBurstRecoilScale;
+	public float internalBurstFireRateScale;
+	public float internalBurstAimConeScale;
+	public Translate.Phrase Toast_BurstDisabled;
+	public Translate.Phrase Toast_BurstEnabled;
+	public float resetDuration;
+	public int numShotsFired;
+	private float nextReloadTime;
+	private float startReloadTime;
+	private float stancePenalty;
+	private float aimconePenalty;
+	private uint cachedModHash;
+	private float sightAimConeScale;
+	private float sightAimConeOffset;
+	private float hipAimConeScale;
+	private float hipAimConeOffset;
+	protected bool isReloading;
+	private float swaySampleTime;
+	private float lastShotTime;
+	public float reloadPressTime;
+	private ItemDefinition ammoTypePreReload;
+	private int fractionalReloadDesiredCount;
+	private int fractionalReloadNumAdded;
+	private int currentBurst;
+	private bool triggerReady;
+	private float nextHeightCheckTime;
+	private bool cachedUnderground;
+	private List<Projectile> createdProjectiles;
 
 	public RecoilProperties recoilProperties { get; }
 	public bool isSemiAuto { get; }
@@ -364,6 +372,14 @@ public class BaseProjectile : AttackEntity // TypeDefIndex: 10249
 	public float ScaleRepeatDelay(float delay) { }
 
 	public Projectile.Modifier GetProjectileModifier() { }
+
+	public bool UsingBurstMode() { }
+
+	public bool UsingInternalBurstMode() { }
+
+	public bool IsBurstEligable() { }
+
+	public float TimeBetweenBursts() { }
 
 	public virtual void DidAttackClientside() { }
 
@@ -417,10 +433,6 @@ public class BaseProjectile : AttackEntity // TypeDefIndex: 10249
 
 	public int GetBurstModeCount() { }
 
-	public bool UsingBurstMode() { }
-
-	public float TimeBetweenBursts() { }
-
 	public virtual void DoAttack() { }
 
 	public void BeginCycle() { }
@@ -436,6 +448,8 @@ public class BaseProjectile : AttackEntity // TypeDefIndex: 10249
 	public float GetReloadDuration() { }
 
 	public int GetAvailableAmmo() { }
+
+	public bool IsBurstDisabled() { }
 
 	public bool IsSilenced() { }
 
@@ -457,13 +471,13 @@ public class BaseProjectile : AttackEntity // TypeDefIndex: 10249
 
 }
 
-public class BaseProjectile.Magazine // TypeDefIndex: 10250
+public class BaseProjectile.Magazine // TypeDefIndex: 10252
 {
-	public BaseProjectile.Magazine.Definition definition; 
-	public int capacity; 
-	public int contents; 
-	[ItemSelector] 
-	public ItemDefinition ammoType; 
+	public BaseProjectile.Magazine.Definition definition;
+	public int capacity;
+	public int contents;
+	[ItemSelector]
+	public ItemDefinition ammoType;
 
 
 	public void ServerInit() { }
@@ -478,62 +492,69 @@ public class BaseProjectile.Magazine // TypeDefIndex: 10250
 
 }
 
-public struct BaseProjectile.Magazine.Definition // TypeDefIndex: 10251
+public struct BaseProjectile.Magazine.Definition // TypeDefIndex: 10253
 {
-	[TooltipAttribute] 
-	public int builtInSize; 
-	[TooltipAttribute] 
-	[InspectorFlagsAttribute] 
-	public AmmoTypes ammoTypes; 
+	[TooltipAttribute]
+	public int builtInSize;
+	[TooltipAttribute]
+	[InspectorFlagsAttribute]
+	public AmmoTypes ammoTypes;
 
 }
 
-private sealed class BaseProjectile.<>c // TypeDefIndex: 10252
+public static class BaseProjectile.BaseProjectileFlags // TypeDefIndex: 10254
 {
-	public static readonly BaseProjectile.<>c <>9; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__64_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__64_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__64_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__64_3; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__64_4; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__64_5; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__64_6; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__64_7; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__65_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__65_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__65_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__65_3; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__66_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__66_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__66_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__66_3; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__66_4; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__66_5; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__66_6; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__66_7; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__73_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__73_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__73_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__73_3; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__73_4; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__73_5; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__73_6; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__73_7; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__77_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__77_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__77_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__77_3; 
-	public static Func<ProjectileWeaponMod, bool> <>9__100_0; 
-	public static Func<ProjectileWeaponMod, bool> <>9__101_0; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__104_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__104_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__104_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__104_3; 
-	public static Func<ProjectileWeaponMod, bool> <>9__116_0; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__118_0; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__118_1; 
-	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__118_2; 
-	public static Func<ProjectileWeaponMod.Modifier, float> <>9__118_3; 
+	public const BaseEntity.Flags BurstToggle = 16384;
+
+}
+
+private sealed class BaseProjectile.<>c // TypeDefIndex: 10255
+{
+	public static readonly BaseProjectile.<>c <>9;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__72_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__72_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__72_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__72_3;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__72_4;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__72_5;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__72_6;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__72_7;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__73_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__73_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__73_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__73_3;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__74_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__74_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__74_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__74_3;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__74_4;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__74_5;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__74_6;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__74_7;
+	public static Func<ProjectileWeaponMod, bool> <>9__75_0;
+	public static Func<ProjectileWeaponMod, bool> <>9__77_0;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__85_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__85_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__85_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__85_3;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__85_4;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__85_5;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__85_6;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__85_7;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__89_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__89_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__89_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__89_3;
+	public static Func<ProjectileWeaponMod, bool> <>9__112_0;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__114_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__114_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__114_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__114_3;
+	public static Func<ProjectileWeaponMod, bool> <>9__127_0;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__129_0;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__129_1;
+	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__129_2;
+	public static Func<ProjectileWeaponMod.Modifier, float> <>9__129_3;
 
 
 	private static void .cctor() { }
@@ -580,6 +601,10 @@ private sealed class BaseProjectile.<>c // TypeDefIndex: 10252
 
 	internal float <GetProjectileModifier>
 
+	internal bool <UsingBurstMode>
+
+	internal bool <IsBurstEligable>
+
 	internal ProjectileWeaponMod.Modifier <EditViewAngles>
 
 	internal float <EditViewAngles>
@@ -606,8 +631,6 @@ private sealed class BaseProjectile.<>c // TypeDefIndex: 10252
 
 	internal bool <GetBurstModeCount>
 
-	internal bool <UsingBurstMode>
-
 	internal ProjectileWeaponMod.Modifier <DoAttack>
 
 	internal float <DoAttack>
@@ -628,10 +651,10 @@ private sealed class BaseProjectile.<>c // TypeDefIndex: 10252
 
 }
 
-private sealed class BaseProjectile.<>c__DisplayClass85_0 // TypeDefIndex: 10253
+private sealed class BaseProjectile.<>c__DisplayClass97_0 // TypeDefIndex: 10256
 {
-	public BaseProjectile <>4__this; 
-	public ItemDefinition ammoType; 
+	public BaseProjectile <>4__this;
+	public ItemDefinition ammoType;
 
 
 	public void .ctor() { }
@@ -640,85 +663,85 @@ private sealed class BaseProjectile.<>c__DisplayClass85_0 // TypeDefIndex: 10253
 
 }
 
-public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10952
+public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10958
 {
 	public const float moveDeltaTime = 0,03125;
 	public const float lifeTime = 8;
-	[HeaderAttribute] 
-	public Vector3 initialVelocity; 
-	public float drag; 
-	public float gravityModifier; 
-	public float thickness; 
-	[TooltipAttribute] 
-	public float initialDistance; 
-	[HeaderAttribute] 
-	public bool remainInWorld; 
-	[RangeAttribute] 
-	public float stickProbability; 
-	[RangeAttribute] 
-	public float breakProbability; 
-	[RangeAttribute] 
-	public float conditionLoss; 
-	[RangeAttribute] 
-	public float ricochetChance; 
-	public float penetrationPower; 
-	[HeaderAttribute] 
-	public DamageProperties damageProperties; 
-	[HorizontalAttribute] 
-	public MinMax damageDistances; 
-	[HorizontalAttribute] 
-	public MinMax damageMultipliers; 
-	public List<DamageTypeEntry> damageTypes; 
-	[HeaderAttribute] 
-	public ScaleRenderer rendererToScale; 
-	public ScaleRenderer firstPersonRenderer; 
-	public bool createDecals; 
-	[HeaderAttribute] 
-	public bool doDefaultHitEffects; 
-	[HeaderAttribute] 
-	public SoundDefinition flybySound; 
-	public float flybySoundDistance; 
-	public SoundDefinition closeFlybySound; 
-	public float closeFlybyDistance; 
-	[HeaderAttribute] 
-	public float tumbleSpeed; 
-	public Vector3 tumbleAxis; 
-	[HeaderAttribute] 
-	public Vector3 swimScale; 
-	public Vector3 swimSpeed; 
-	public BasePlayer owner; 
-	public AttackEntity sourceWeaponPrefab; 
-	public Projectile sourceProjectilePrefab; 
-	public ItemModProjectile mod; 
-	public int projectileID; 
-	public int seed; 
-	public bool clientsideEffect; 
-	public bool clientsideAttack; 
-	public float integrity; 
-	public float maxDistance; 
-	public Projectile.Modifier modifier; 
-	public bool invisible; 
-	internal Vector3 currentVelocity; 
-	internal Vector3 currentPosition; 
-	private float traveledDistance; 
-	private float traveledTime; 
-	private float launchTime; 
-	private Vector3 sentPosition; 
-	private Vector3 previousPosition; 
-	private Vector3 previousVelocity; 
-	private float previousTraveledTime; 
-	private bool isRicochet; 
-	private bool isRetiring; 
-	private bool flybyPlayed; 
-	private bool wasFacingPlayer; 
-	private Plane flybyPlane; 
-	private Ray flybyRay; 
-	private Action cleanupAction; 
-	private HitTest hitTest; 
-	private float swimRandom; 
-	private static uint _fleshMaterialID; 
-	private static uint _waterMaterialID; 
-	private static uint cachedWaterString; 
+	[HeaderAttribute]
+	public Vector3 initialVelocity;
+	public float drag;
+	public float gravityModifier;
+	public float thickness;
+	[TooltipAttribute]
+	public float initialDistance;
+	[HeaderAttribute]
+	public bool remainInWorld;
+	[RangeAttribute]
+	public float stickProbability;
+	[RangeAttribute]
+	public float breakProbability;
+	[RangeAttribute]
+	public float conditionLoss;
+	[RangeAttribute]
+	public float ricochetChance;
+	public float penetrationPower;
+	[HeaderAttribute]
+	public DamageProperties damageProperties;
+	[HorizontalAttribute]
+	public MinMax damageDistances;
+	[HorizontalAttribute]
+	public MinMax damageMultipliers;
+	public List<DamageTypeEntry> damageTypes;
+	[HeaderAttribute]
+	public ScaleRenderer rendererToScale;
+	public ScaleRenderer firstPersonRenderer;
+	public bool createDecals;
+	[HeaderAttribute]
+	public bool doDefaultHitEffects;
+	[HeaderAttribute]
+	public SoundDefinition flybySound;
+	public float flybySoundDistance;
+	public SoundDefinition closeFlybySound;
+	public float closeFlybyDistance;
+	[HeaderAttribute]
+	public float tumbleSpeed;
+	public Vector3 tumbleAxis;
+	[HeaderAttribute]
+	public Vector3 swimScale;
+	public Vector3 swimSpeed;
+	public BasePlayer owner;
+	public AttackEntity sourceWeaponPrefab;
+	public Projectile sourceProjectilePrefab;
+	public ItemModProjectile mod;
+	public int projectileID;
+	public int seed;
+	public bool clientsideEffect;
+	public bool clientsideAttack;
+	public float integrity;
+	public float maxDistance;
+	public Projectile.Modifier modifier;
+	public bool invisible;
+	internal Vector3 currentVelocity;
+	internal Vector3 currentPosition;
+	private float traveledDistance;
+	private float traveledTime;
+	private float launchTime;
+	private Vector3 sentPosition;
+	private Vector3 previousPosition;
+	private Vector3 previousVelocity;
+	private float previousTraveledTime;
+	private bool isRicochet;
+	private bool isRetiring;
+	private bool flybyPlayed;
+	private bool wasFacingPlayer;
+	private Plane flybyPlane;
+	private Ray flybyRay;
+	private Action cleanupAction;
+	private HitTest hitTest;
+	private float swimRandom;
+	private static uint _fleshMaterialID;
+	private static uint _waterMaterialID;
+	private static uint cachedWaterString;
 
 	public bool isAuthoritative { get; }
 	private bool isAlive { get; }
@@ -786,81 +809,81 @@ public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10952
 
 }
 
-public struct Projectile.Modifier // TypeDefIndex: 10953
+public struct Projectile.Modifier // TypeDefIndex: 10959
 {
-	public float damageScale; 
-	public float damageOffset; 
-	public float distanceScale; 
-	public float distanceOffset; 
-	public static Projectile.Modifier Default; 
+	public float damageScale;
+	public float damageOffset;
+	public float distanceScale;
+	public float distanceOffset;
+	public static Projectile.Modifier Default;
 
 
 	private static void .cctor() { }
 
 }
 
-public class ProjectileTestSpawner : MonoBehaviour // TypeDefIndex: 11057
+public class ProjectileTestSpawner : MonoBehaviour // TypeDefIndex: 11063
 {
-	public Projectile TargetProjectile; 
-	public float RepeatTime; 
-	public float VelocityScale; 
+	public Projectile TargetProjectile;
+	public float RepeatTime;
+	public float VelocityScale;
 
 
 	public void .ctor() { }
 
 }
 
-public class AttackTickAIEvent : BaseAIEvent // TypeDefIndex: 11125
+public class AttackTickAIEvent : BaseAIEvent // TypeDefIndex: 11131
 {
 
 	public void .ctor() { }
 
 }
 
-public class AttackedAIEvent : BaseAIEvent // TypeDefIndex: 11126
+public class AttackedAIEvent : BaseAIEvent // TypeDefIndex: 11132
 {
-	protected float lastExecuteTime; 
-	private BaseCombatEntity combatEntity; 
+	protected float lastExecuteTime;
+	private BaseCombatEntity combatEntity;
 
 
 	public void .ctor() { }
 
 }
 
-public class AttackEntity : HeldEntity // TypeDefIndex: 11194
+public class AttackEntity : HeldEntity // TypeDefIndex: 11200
 {
-	[HeaderAttribute] 
-	public float deployDelay; 
-	public float repeatDelay; 
-	public float animationDelay; 
-	[HeaderAttribute] 
-	public float effectiveRange; 
-	public float npcDamageScale; 
-	public float attackLengthMin; 
-	public float attackLengthMax; 
-	public float attackSpacing; 
-	public float aiAimSwayOffset; 
-	public float aiAimCone; 
-	public bool aiOnlyInRange; 
-	public float CloseRangeAddition; 
-	public float MediumRangeAddition; 
-	public float LongRangeAddition; 
-	public bool CanUseAtMediumRange; 
-	public bool CanUseAtLongRange; 
-	public SoundDefinition[] reloadSounds; 
-	public SoundDefinition thirdPersonMeleeSound; 
-	[HeaderAttribute] 
-	public float recoilCompDelayOverride; 
-	public bool wantsRecoilComp; 
-	private float nextAttackTime; 
-	private float lastTickTime; 
-	private float nextTickTime; 
-	private float timeSinceDeploy; 
-	public static Vector3 reductionSpeedScalars; 
-	private float lastRecoilCompTime; 
-	private Vector3 startAimingDirection; 
-	private bool wasDoingRecoilComp; 
-	private Vector3 reductionSpeed; 
+	[HeaderAttribute]
+	public float deployDelay;
+	public float repeatDelay;
+	public float animationDelay;
+	[HeaderAttribute]
+	public float effectiveRange;
+	public float npcDamageScale;
+	public float attackLengthMin;
+	public float attackLengthMax;
+	public float attackSpacing;
+	public float aiAimSwayOffset;
+	public float aiAimCone;
+	public bool aiOnlyInRange;
+	public float CloseRangeAddition;
+	public float MediumRangeAddition;
+	public float LongRangeAddition;
+	public bool CanUseAtMediumRange;
+	public bool CanUseAtLongRange;
+	public SoundDefinition[] reloadSounds;
+	public SoundDefinition thirdPersonMeleeSound;
+	[HeaderAttribute]
+	public float recoilCompDelayOverride;
+	public bool wantsRecoilComp;
+	private float nextAttackTime;
+	private float lastTickTime;
+	private float nextTickTime;
+	private float timeSinceDeploy;
+	public static Vector3 reductionSpeedScalars;
+	private float lastRecoilCompTime;
+	private Vector3 startAimingDirection;
+	private bool wasDoingRecoilComp;
+	private Vector3 reductionSpeed;
 
 	public float NextAttackTime { get; }
 
@@ -909,38 +932,38 @@ public class AttackEntity : HeldEntity // TypeDefIndex: 11194
 
 }
 
-public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11361
+public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11367
 {
-	[HeaderAttribute] 
-	public GameObjectRef defaultSilencerEffect; 
-	public bool isSilencer; 
-	[HeaderAttribute] 
-	public ProjectileWeaponMod.Modifier repeatDelay; 
-	public ProjectileWeaponMod.Modifier projectileVelocity; 
-	public ProjectileWeaponMod.Modifier projectileDamage; 
-	public ProjectileWeaponMod.Modifier projectileDistance; 
-	[HeaderAttribute] 
-	public ProjectileWeaponMod.Modifier aimsway; 
-	public ProjectileWeaponMod.Modifier aimswaySpeed; 
-	public ProjectileWeaponMod.Modifier recoil; 
-	[HeaderAttribute] 
-	public ProjectileWeaponMod.Modifier sightAimCone; 
-	public ProjectileWeaponMod.Modifier hipAimCone; 
-	[HeaderAttribute] 
-	public bool isLight; 
-	[HeaderAttribute] 
-	public bool isMuzzleBrake; 
-	[HeaderAttribute] 
-	public bool isMuzzleBoost; 
-	[HeaderAttribute] 
-	public bool isScope; 
-	public float zoomAmountDisplayOnly; 
-	[HeaderAttribute] 
-	public ProjectileWeaponMod.Modifier magazineCapacity; 
-	public bool needsOnForEffects; 
-	[HeaderAttribute] 
-	public int burstCount; 
-	public float timeBetweenBursts; 
+	[HeaderAttribute]
+	public GameObjectRef defaultSilencerEffect;
+	public bool isSilencer;
+	[HeaderAttribute]
+	public ProjectileWeaponMod.Modifier repeatDelay;
+	public ProjectileWeaponMod.Modifier projectileVelocity;
+	public ProjectileWeaponMod.Modifier projectileDamage;
+	public ProjectileWeaponMod.Modifier projectileDistance;
+	[HeaderAttribute]
+	public ProjectileWeaponMod.Modifier aimsway;
+	public ProjectileWeaponMod.Modifier aimswaySpeed;
+	public ProjectileWeaponMod.Modifier recoil;
+	[HeaderAttribute]
+	public ProjectileWeaponMod.Modifier sightAimCone;
+	public ProjectileWeaponMod.Modifier hipAimCone;
+	[HeaderAttribute]
+	public bool isLight;
+	[HeaderAttribute]
+	public bool isMuzzleBrake;
+	[HeaderAttribute]
+	public bool isMuzzleBoost;
+	[HeaderAttribute]
+	public bool isScope;
+	public float zoomAmountDisplayOnly;
+	[HeaderAttribute]
+	public ProjectileWeaponMod.Modifier magazineCapacity;
+	public bool needsOnForEffects;
+	[HeaderAttribute]
+	public int burstCount;
+	public float timeBetweenBursts;
 
 
 	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
@@ -948,6 +971,8 @@ public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11361
 	protected override void DoClientDestroy() { }
 
 	public virtual void SetAiming(bool isAiming) { }
+
+	public virtual void SetInternalModOn(bool isOn) { }
 
 	public float GetZoomAmount() { }
 
@@ -969,22 +994,22 @@ public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11361
 
 }
 
-public struct ProjectileWeaponMod.Modifier // TypeDefIndex: 11362
+public struct ProjectileWeaponMod.Modifier // TypeDefIndex: 11368
 {
-	public bool enabled; 
-	[TooltipAttribute] 
-	public float scalar; 
-	[TooltipAttribute] 
-	public float offset; 
+	public bool enabled;
+	[TooltipAttribute]
+	public float scalar;
+	[TooltipAttribute]
+	public float offset;
 
 }
 
-private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11363
+private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11369
 {
-	public static readonly ProjectileWeaponMod.<>c <>9; 
-	public static Func<ProjectileWeaponMod, bool> <>9__30_0; 
-	public static Func<ProjectileWeaponMod.Modifier, bool> <>9__30_1; 
-	public static Func<ProjectileWeaponMod, bool> <>9__31_0; 
+	public static readonly ProjectileWeaponMod.<>c <>9;
+	public static Func<ProjectileWeaponMod, bool> <>9__31_0;
+	public static Func<ProjectileWeaponMod.Modifier, bool> <>9__31_1;
+	public static Func<ProjectileWeaponMod, bool> <>9__32_0;
 
 
 	private static void .cctor() { }
@@ -999,27 +1024,27 @@ private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11363
 
 }
 
-public class AttackTickEventUI : BaseEventUI // TypeDefIndex: 12541
+public class AttackTickEventUI : BaseEventUI // TypeDefIndex: 12554
 {
 
 	public void .ctor() { }
 
 }
 
-public class AttackedEventUI : BaseEventUI // TypeDefIndex: 12542
+public class AttackedEventUI : BaseEventUI // TypeDefIndex: 12555
 {
 
 	public void .ctor() { }
 
 }
 
-public class ProjectileWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12817
+public class ProjectileWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12831
 {
-	public ItemStatValue damageDisplay; 
-	public ItemStatValue recoilDisplay; 
-	public ItemStatValue rofDisplay; 
-	public ItemStatValue accuracyDisplay; 
-	public ItemStatValue rangeDisplay; 
+	public ItemStatValue damageDisplay;
+	public ItemStatValue recoilDisplay;
+	public ItemStatValue rofDisplay;
+	public ItemStatValue accuracyDisplay;
+	public ItemStatValue rangeDisplay;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

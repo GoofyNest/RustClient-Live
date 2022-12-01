@@ -1,13 +1,13 @@
 internal class ConfigHandler : SmallXmlParser.IContentHandler // TypeDefIndex: 1138
 {
-	private ArrayList typeEntries; 
-	private ArrayList channelInstances; 
-	private ChannelData currentChannel; 
-	private Stack currentProviderData; 
-	private string currentClientUrl; 
-	private string appName; 
-	private string currentXmlPath; 
-	private bool onlyDelayedChannels; 
+	private ArrayList typeEntries;
+	private ArrayList channelInstances;
+	private ChannelData currentChannel;
+	private Stack currentProviderData;
+	private string currentClientUrl;
+	private string appName;
+	private string currentXmlPath;
+	private bool onlyDelayedChannels;
 
 
 	public void .ctor(bool onlyDelayedChannels) { }

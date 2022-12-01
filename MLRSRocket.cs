@@ -1,13 +1,13 @@
-public class MLRSRocket : TimedExplosive // TypeDefIndex: 11460
+public class MLRSRocket : TimedExplosive // TypeDefIndex: 11466
 {
-	[SerializeField] 
-	private GameObjectRef mapMarkerPrefab; 
-	[SerializeField] 
-	private GameObjectRef launchBlastFXPrefab; 
-	[SerializeField] 
-	private GameObjectRef explosionGroundFXPrefab; 
-	[SerializeField] 
-	private ServerProjectile serverProjectile; 
+	[SerializeField]
+	private GameObjectRef mapMarkerPrefab;
+	[SerializeField]
+	private GameObjectRef launchBlastFXPrefab;
+	[SerializeField]
+	private GameObjectRef explosionGroundFXPrefab;
+	[SerializeField]
+	private ServerProjectile serverProjectile;
 
 
 	public void .ctor() { }

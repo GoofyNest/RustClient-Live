@@ -1,10 +1,10 @@
-public class SignPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 10539
+public class SignPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 10543
 {
-	public RawImage Image; 
-	public RectTransform ImageContainer; 
-	public RustText DisabledSignsMessage; 
-	private Item _item; 
-	private Texture2D _texture; 
+	public RawImage Image;
+	public RectTransform ImageContainer;
+	public RustText DisabledSignsMessage;
+	private Item _item;
+	private Texture2D _texture;
 
 
 	public void OnItem(Item item) { }

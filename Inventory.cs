@@ -1,32 +1,32 @@
-public class Inventory : ConsoleSystem // TypeDefIndex: 13726
+public class Inventory : ConsoleSystem // TypeDefIndex: 13742
 {
-	private static float _quickCraftDelay; 
+	private static float _quickCraftDelay;
 
-	[ClientVar] 
+	[ClientVar]
 	public static float quickcraftdelay { get; set; }
 
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void defs(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void reloaddefs(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void toggle() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void examineheld() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void togglecrafting() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void ResetCraftCounts() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void ListCraftCounts() { }
 
 	public static float get_quickcraftdelay() { }
@@ -39,10 +39,10 @@ public class Inventory : ConsoleSystem // TypeDefIndex: 13726
 
 }
 
-private sealed class Inventory.<>c // TypeDefIndex: 13727
+private sealed class Inventory.<>c // TypeDefIndex: 13743
 {
-	public static readonly Inventory.<>c <>9; 
-	public static Func<InventoryDef, string> <>9__0_0; 
+	public static readonly Inventory.<>c <>9;
+	public static Func<InventoryDef, string> <>9__0_0;
 
 
 	private static void .cctor() { }

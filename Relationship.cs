@@ -1,6 +1,6 @@
 public enum Relationship // TypeDefIndex: 5151
 {
-	public int value__; 
+	public int value__;
 	public const Relationship None = 0;
 	public const Relationship Blocked = 1;
 	public const Relationship RequestRecipient = 2;

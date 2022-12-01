@@ -1,16 +1,16 @@
 internal abstract class BaseVisualElementPanel : IPanel // TypeDefIndex: 4605
 {
-	private float m_PixelsPerPoint; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private bool <duringLayoutPhase>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private RepaintData <repaintData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <disposed>k__BackingField; 
-	internal ElementUnderPointer m_TopElementUnderPointers; 
+	private float m_PixelsPerPoint;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private bool <duringLayoutPhase>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private RepaintData <repaintData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <disposed>k__BackingField;
+	internal ElementUnderPointer m_TopElementUnderPointers;
 
 	public abstract EventInterests IMGUIEventInterests { get; }
 	public abstract ScriptableObject ownerObject { get; }
@@ -47,14 +47,14 @@ internal abstract class BaseVisualElementPanel : IPanel // TypeDefIndex: 4605
 
 	internal void set_pixelsPerPoint(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_duringLayoutPhase() { }
 
 	internal abstract uint get_version();
 
 	internal abstract void OnVersionChanged(VisualElement ele, VersionChangeType changeTypeFlag);
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal virtual RepaintData get_repaintData() { }
 
 	public abstract VisualElement get_visualTree();
@@ -67,10 +67,10 @@ internal abstract class BaseVisualElementPanel : IPanel // TypeDefIndex: 4605
 
 	public abstract VisualElement Pick(Vector2 point);
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_disposed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_disposed(bool value) { }
 
 	internal VisualElement GetTopElementUnderPointer(int pointerId) { }

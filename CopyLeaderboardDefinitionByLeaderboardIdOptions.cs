@@ -1,15 +1,15 @@
-public struct CopyLeaderboardDefinitionByLeaderboardIdOptions // TypeDefIndex: 9278
+public struct CopyLeaderboardDefinitionByLeaderboardIdOptions // TypeDefIndex: 9280
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LeaderboardId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LeaderboardId>k__BackingField;
 
 	public Utf8String LeaderboardId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LeaderboardId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LeaderboardId(Utf8String value) { }
 
 }

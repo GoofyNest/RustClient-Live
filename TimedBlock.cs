@@ -1,8 +1,8 @@
-internal class TimedBlock : IComparable<TimedBlock> // TypeDefIndex: 5641
+internal class TimedBlock : IComparable<TimedBlock> // TypeDefIndex: 5643
 {
-	public readonly DateTime deadline; 
-	public readonly Action block; 
-	public readonly string blockName; 
+	public readonly DateTime deadline;
+	public readonly Action block;
+	public readonly string blockName;
 
 
 	public void .ctor(DateTime deadline, Action block, string blockName) { }

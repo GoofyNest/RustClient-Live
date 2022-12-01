@@ -1,4 +1,4 @@
-internal sealed class OnDisplaySettingsUpdatedCallbackInternal : MulticastDelegate // TypeDefIndex: 8349
+internal sealed class OnDisplaySettingsUpdatedCallbackInternal : MulticastDelegate // TypeDefIndex: 8351
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,42 +1,42 @@
-public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10047
+public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10049
 {
-	private Option __menuOption_Menu_Mount; 
-	public static Translate.Phrase dismountPhrase; 
-	[HeaderAttribute] 
-	[FormerlySerializedAsAttribute] 
-	public Transform eyePositionOverride; 
-	[FormerlySerializedAsAttribute] 
-	public Transform eyeCenterOverride; 
-	public Vector2 pitchClamp; 
-	public Vector2 yawClamp; 
-	public bool canWieldItems; 
-	public bool relativeViewAngles; 
-	[HeaderAttribute] 
-	public Transform mountAnchor; 
-	public PlayerModel.MountPoses mountPose; 
-	public float maxMountDistance; 
-	public Transform[] dismountPositions; 
-	public bool checkPlayerLosOnMount; 
-	public bool disableMeshCullingForPlayers; 
-	public bool allowHeadLook; 
-	public bool ignoreVehicleParent; 
-	[FormerlySerializedAsAttribute] 
-	public bool modifiesPlayerCollider; 
-	public BasePlayer.CapsuleColliderInfo customPlayerCollider; 
-	public SoundDefinition mountSoundDef; 
-	public SoundDefinition swapSoundDef; 
-	public SoundDefinition dismountSoundDef; 
-	public BaseMountable.MountStatType mountTimeStatType; 
-	public BaseMountable.MountGestureType allowedGestures; 
-	public bool canDrinkWhileMounted; 
-	public bool allowSleeperMounting; 
-	[HelpAttribute] 
-	public bool animateClothInLocalSpace; 
-	[HeaderAttribute] 
-	public BasePlayer.CameraMode MountedCameraMode; 
-	[FormerlySerializedAsAttribute] 
-	public bool isMobile; 
-	public float SideLeanAmount; 
+	private Option __menuOption_Menu_Mount;
+	public static Translate.Phrase dismountPhrase;
+	[HeaderAttribute]
+	[FormerlySerializedAsAttribute]
+	public Transform eyePositionOverride;
+	[FormerlySerializedAsAttribute]
+	public Transform eyeCenterOverride;
+	public Vector2 pitchClamp;
+	public Vector2 yawClamp;
+	public bool canWieldItems;
+	public bool relativeViewAngles;
+	[HeaderAttribute]
+	public Transform mountAnchor;
+	public PlayerModel.MountPoses mountPose;
+	public float maxMountDistance;
+	public Transform[] dismountPositions;
+	public bool checkPlayerLosOnMount;
+	public bool disableMeshCullingForPlayers;
+	public bool allowHeadLook;
+	public bool ignoreVehicleParent;
+	[FormerlySerializedAsAttribute]
+	public bool modifiesPlayerCollider;
+	public BasePlayer.CapsuleColliderInfo customPlayerCollider;
+	public SoundDefinition mountSoundDef;
+	public SoundDefinition swapSoundDef;
+	public SoundDefinition dismountSoundDef;
+	public BaseMountable.MountStatType mountTimeStatType;
+	public BaseMountable.MountGestureType allowedGestures;
+	public bool canDrinkWhileMounted;
+	public bool allowSleeperMounting;
+	[HelpAttribute]
+	public bool animateClothInLocalSpace;
+	[HeaderAttribute]
+	public BasePlayer.CameraMode MountedCameraMode;
+	[FormerlySerializedAsAttribute]
+	public bool isMobile;
+	public float SideLeanAmount;
 
 	public override bool HasMenuOptions { get; }
 	public virtual bool DisableLegsMeshAtExtremeViewAnglesInFirstPersonWithEyes { get; }
@@ -141,10 +141,10 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10047
 
 	public void ClientRequestDismount() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Mount(BasePlayer player) { }
 
 	public virtual bool Menu_Mount_ShowIf(BasePlayer player) { }
@@ -161,14 +161,14 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10047
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <DoPlayerMovement>
 
 }
 
-public enum BaseMountable.MountStatType // TypeDefIndex: 10048
+public enum BaseMountable.MountStatType // TypeDefIndex: 10050
 {
-	public int value__; 
+	public int value__;
 	public const BaseMountable.MountStatType None = 0;
 	public const BaseMountable.MountStatType Boating = 1;
 	public const BaseMountable.MountStatType Flying = 2;
@@ -176,9 +176,9 @@ public enum BaseMountable.MountStatType // TypeDefIndex: 10048
 
 }
 
-public enum BaseMountable.MountGestureType // TypeDefIndex: 10049
+public enum BaseMountable.MountGestureType // TypeDefIndex: 10051
 {
-	public int value__; 
+	public int value__;
 	public const BaseMountable.MountGestureType None = 0;
 	public const BaseMountable.MountGestureType UpperBody = 1;
 

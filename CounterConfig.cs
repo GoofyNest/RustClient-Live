@@ -1,8 +1,8 @@
-public class CounterConfig : UIDialog // TypeDefIndex: 10452
+public class CounterConfig : UIDialog // TypeDefIndex: 10456
 {
-	private PowerCounter powerCounter; 
-	public InputField input; 
-	public int target; 
+	private PowerCounter powerCounter;
+	public InputField input;
+	public int target;
 
 
 	public override void OpenDialog() { }

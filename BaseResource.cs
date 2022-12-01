@@ -1,9 +1,9 @@
-public class BaseResource : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6304
+public class BaseResource : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6306
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int stage; 
-	public float health; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int stage;
+	public float health;
 
 
 	public static void ResetToPool(BaseResource instance) { }

@@ -1,7 +1,7 @@
-public class DistanceField // TypeDefIndex: 13149
+public class DistanceField // TypeDefIndex: 13164
 {
-	private static readonly int[] GaussOffsets; 
-	private static readonly float[] GaussWeights; 
+	private static readonly int[] GaussOffsets;
+	private static readonly float[] GaussWeights;
 
 
 	public static void Generate(in int size, in byte threshold, in byte[] image, ref float[] distanceField) { }

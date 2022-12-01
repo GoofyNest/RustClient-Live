@@ -1,26 +1,26 @@
-internal class Deflater // TypeDefIndex: 5663
+internal class Deflater // TypeDefIndex: 5665
 {
-	public static int BEST_COMPRESSION; 
-	public static int BEST_SPEED; 
-	public static int DEFAULT_COMPRESSION; 
-	public static int NO_COMPRESSION; 
-	public static int DEFLATED; 
-	private static int IS_SETDICT; 
-	private static int IS_FLUSHING; 
-	private static int IS_FINISHING; 
-	private static int INIT_STATE; 
-	private static int SETDICT_STATE; 
-	private static int BUSY_STATE; 
-	private static int FLUSHING_STATE; 
-	private static int FINISHING_STATE; 
-	private static int FINISHED_STATE; 
-	private static int CLOSED_STATE; 
-	private int level; 
-	private bool noZlibHeaderOrFooter; 
-	private int state; 
-	private long totalOut; 
-	private DeflaterPending pending; 
-	private DeflaterEngine engine; 
+	public static int BEST_COMPRESSION;
+	public static int BEST_SPEED;
+	public static int DEFAULT_COMPRESSION;
+	public static int NO_COMPRESSION;
+	public static int DEFLATED;
+	private static int IS_SETDICT;
+	private static int IS_FLUSHING;
+	private static int IS_FINISHING;
+	private static int INIT_STATE;
+	private static int SETDICT_STATE;
+	private static int BUSY_STATE;
+	private static int FLUSHING_STATE;
+	private static int FINISHING_STATE;
+	private static int FINISHED_STATE;
+	private static int CLOSED_STATE;
+	private int level;
+	private bool noZlibHeaderOrFooter;
+	private int state;
+	private long totalOut;
+	private DeflaterPending pending;
+	private DeflaterEngine engine;
 
 	public int TotalIn { get; }
 	public bool IsFinished { get; }

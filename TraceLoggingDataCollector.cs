@@ -1,6 +1,6 @@
 internal class TraceLoggingDataCollector // TypeDefIndex: 1578
 {
-	internal static readonly TraceLoggingDataCollector Instance; 
+	internal static readonly TraceLoggingDataCollector Instance;
 
 
 	private void .ctor() { }

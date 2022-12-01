@@ -1,13 +1,13 @@
 public struct Vector2i : IEquatable<Vector2i> // TypeDefIndex: 4827
 {
-	public static readonly Vector2i zero; 
-	public static readonly Vector2i one; 
-	public static readonly Vector2i left; 
-	public static readonly Vector2i right; 
-	public static readonly Vector2i forward; 
-	public static readonly Vector2i back; 
-	public int x; 
-	public int y; 
+	public static readonly Vector2i zero;
+	public static readonly Vector2i one;
+	public static readonly Vector2i left;
+	public static readonly Vector2i right;
+	public static readonly Vector2i forward;
+	public static readonly Vector2i back;
+	public int x;
+	public int y;
 
 
 	public void .ctor(int x, int y) { }

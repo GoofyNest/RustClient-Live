@@ -1,27 +1,27 @@
-public class SkinnedMultiMesh : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10965
+public class SkinnedMultiMesh : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10971
 {
-	public bool shadowOnly; 
-	internal bool IsVisible; 
-	public bool eyesView; 
-	public Skeleton skeleton; 
-	public SkeletonSkinLod skeletonSkinLod; 
-	public List<SkinnedMultiMesh.Part> parts; 
-	public List<SkinnedMultiMesh.Part> createdParts; 
-	public long lastBuildHash; 
-	public MaterialPropertyBlock sharedPropertyBlock; 
-	public MaterialPropertyBlock hairPropertyBlock; 
-	public float skinNumber; 
-	public float meshNumber; 
-	public float hairNumber; 
-	public int skinType; 
-	public SkinSetCollection SkinCollection; 
-	[CompilerGeneratedAttribute] 
-	private readonly List<Renderer> <Renderers>k__BackingField; 
+	public bool shadowOnly;
+	internal bool IsVisible;
+	public bool eyesView;
+	public Skeleton skeleton;
+	public SkeletonSkinLod skeletonSkinLod;
+	public List<SkinnedMultiMesh.Part> parts;
+	public List<SkinnedMultiMesh.Part> createdParts;
+	public long lastBuildHash;
+	public MaterialPropertyBlock sharedPropertyBlock;
+	public MaterialPropertyBlock hairPropertyBlock;
+	public float skinNumber;
+	public float meshNumber;
+	public float hairNumber;
+	public int skinType;
+	public SkinSetCollection SkinCollection;
+	[CompilerGeneratedAttribute]
+	private readonly List<Renderer> <Renderers>k__BackingField;
 
 	public List<Renderer> Renderers { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public List<Renderer> get_Renderers() { }
 
 	public void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
@@ -70,20 +70,20 @@ public class SkinnedMultiMesh : MonoBehaviour, IPrefabPreProcess // TypeDefIndex
 
 }
 
-public struct SkinnedMultiMesh.Part // TypeDefIndex: 10966
+public struct SkinnedMultiMesh.Part // TypeDefIndex: 10972
 {
-	public Wearable wearable; 
-	public GameObject gameObject; 
-	public string name; 
-	public Item item; 
+	public Wearable wearable;
+	public GameObject gameObject;
+	public string name;
+	public Item item;
 
 }
 
-private sealed class SkinnedMultiMesh.<>c // TypeDefIndex: 10967
+private sealed class SkinnedMultiMesh.<>c // TypeDefIndex: 10973
 {
-	public static readonly SkinnedMultiMesh.<>c <>9; 
-	public static Func<SkinnedMultiMesh.Part, long> <>9__21_0; 
-	public static Func<Renderer, bool> <>9__39_0; 
+	public static readonly SkinnedMultiMesh.<>c <>9;
+	public static Func<SkinnedMultiMesh.Part, long> <>9__21_0;
+	public static Func<Renderer, bool> <>9__39_0;
 
 
 	private static void .cctor() { }
@@ -96,9 +96,9 @@ private sealed class SkinnedMultiMesh.<>c // TypeDefIndex: 10967
 
 }
 
-private sealed class SkinnedMultiMesh.<>c__DisplayClass35_0 // TypeDefIndex: 10968
+private sealed class SkinnedMultiMesh.<>c__DisplayClass35_0 // TypeDefIndex: 10974
 {
-	public string name; 
+	public string name;
 
 
 	public void .ctor() { }

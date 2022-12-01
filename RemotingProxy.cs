@@ -1,10 +1,10 @@
 internal class RemotingProxy : RealProxy, IRemotingTypeInfo // TypeDefIndex: 1162
 {
-	private static MethodInfo _cache_GetTypeMethod; 
-	private static MethodInfo _cache_GetHashCodeMethod; 
-	private IMessageSink _sink; 
-	private bool _hasEnvoySink; 
-	private ConstructionCall _ctorCall; 
+	private static MethodInfo _cache_GetTypeMethod;
+	private static MethodInfo _cache_GetHashCodeMethod;
+	private IMessageSink _sink;
+	private bool _hasEnvoySink;
+	private ConstructionCall _ctorCall;
 
 	public string TypeName { get; }
 

@@ -1,7 +1,7 @@
-public class ScaleFactorData // TypeDefIndex: 7427
+public class ScaleFactorData // TypeDefIndex: 7429
 {
-	internal int[] L; 
-	internal int[][] S; 
+	internal int[] L;
+	internal int[][] S;
 
 
 	internal void .ctor() { }

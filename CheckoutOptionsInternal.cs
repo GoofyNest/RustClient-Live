@@ -1,10 +1,10 @@
-internal struct CheckoutOptionsInternal : ISettable<CheckoutOptions>, IDisposable // TypeDefIndex: 9428
+internal struct CheckoutOptionsInternal : ISettable<CheckoutOptions>, IDisposable // TypeDefIndex: 9430
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_OverrideCatalogNamespace; 
-	private uint m_EntryCount; 
-	private IntPtr m_Entries; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_OverrideCatalogNamespace;
+	private uint m_EntryCount;
+	private IntPtr m_Entries;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String OverrideCatalogNamespace { set; }

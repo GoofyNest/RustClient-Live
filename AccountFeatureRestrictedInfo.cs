@@ -1,15 +1,15 @@
-public struct AccountFeatureRestrictedInfo // TypeDefIndex: 9645
+public struct AccountFeatureRestrictedInfo // TypeDefIndex: 9647
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <VerificationURI>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <VerificationURI>k__BackingField;
 
 	public Utf8String VerificationURI { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_VerificationURI() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_VerificationURI(Utf8String value) { }
 
 	internal void Set(ref AccountFeatureRestrictedInfoInternal other) { }

@@ -1,6 +1,6 @@
-public class CrossbowWeapon : BaseProjectile // TypeDefIndex: 11197
+public class CrossbowWeapon : BaseProjectile // TypeDefIndex: 11203
 {
-	private SwapArrows swapArrows; 
+	private SwapArrows swapArrows;
 
 
 	protected override void ClientInit(Entity info) { }

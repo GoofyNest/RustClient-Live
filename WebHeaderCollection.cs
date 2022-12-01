@@ -1,14 +1,14 @@
 public class WebHeaderCollection : NameValueCollection, ISerializable // TypeDefIndex: 2902
 {
-	private static readonly HeaderInfoTable HInfo; 
-	private string[] m_CommonHeaders; 
-	private int m_NumCommonHeaders; 
-	private static readonly string[] s_CommonHeaderNames; 
-	private static readonly sbyte[] s_CommonHeaderHints; 
-	private NameValueCollection m_InnerCollection; 
-	private WebHeaderCollectionType m_Type; 
-	private static readonly char[] HttpTrimCharacters; 
-	private static WebHeaderCollection.RfcChar[] RfcCharMap; 
+	private static readonly HeaderInfoTable HInfo;
+	private string[] m_CommonHeaders;
+	private int m_NumCommonHeaders;
+	private static readonly string[] s_CommonHeaderNames;
+	private static readonly sbyte[] s_CommonHeaderHints;
+	private NameValueCollection m_InnerCollection;
+	private WebHeaderCollectionType m_Type;
+	private static readonly char[] HttpTrimCharacters;
+	private static WebHeaderCollection.RfcChar[] RfcCharMap;
 
 	private NameValueCollection InnerCollection { get; }
 	private bool AllowHttpRequestHeader { get; }
@@ -93,7 +93,7 @@ public class WebHeaderCollection : NameValueCollection, ISerializable // TypeDef
 
 private enum WebHeaderCollection.RfcChar // TypeDefIndex: 2903
 {
-	public byte value__; 
+	public byte value__;
 	public const WebHeaderCollection.RfcChar High = 0;
 	public const WebHeaderCollection.RfcChar Reg = 1;
 	public const WebHeaderCollection.RfcChar Ctl = 2;

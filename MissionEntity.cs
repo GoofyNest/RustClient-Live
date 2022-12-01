@@ -1,7 +1,7 @@
-public class MissionEntity : BaseMonoBehaviour, IOnParentDestroying // TypeDefIndex: 11957
+public class MissionEntity : BaseMonoBehaviour, IOnParentDestroying // TypeDefIndex: 11964
 {
-	public bool cleanupOnMissionSuccess; 
-	public bool cleanupOnMissionFailed; 
+	public bool cleanupOnMissionSuccess;
+	public bool cleanupOnMissionFailed;
 
 
 	public void OnParentDestroying() { }

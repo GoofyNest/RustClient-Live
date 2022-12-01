@@ -1,19 +1,19 @@
 internal sealed class ObjectHolder // TypeDefIndex: 1038
 {
-	private object m_object; 
-	internal long m_id; 
-	private int m_missingElementsRemaining; 
-	private int m_missingDecendents; 
-	internal SerializationInfo m_serInfo; 
-	internal ISerializationSurrogate m_surrogate; 
-	internal FixupHolderList m_missingElements; 
-	internal LongList m_dependentObjects; 
-	internal ObjectHolder m_next; 
-	internal int m_flags; 
-	private bool m_markForFixupWhenAvailable; 
-	private ValueTypeFixupInfo m_valueFixup; 
-	private TypeLoadExceptionHolder m_typeLoad; 
-	private bool m_reachable; 
+	private object m_object;
+	internal long m_id;
+	private int m_missingElementsRemaining;
+	private int m_missingDecendents;
+	internal SerializationInfo m_serInfo;
+	internal ISerializationSurrogate m_surrogate;
+	internal FixupHolderList m_missingElements;
+	internal LongList m_dependentObjects;
+	internal ObjectHolder m_next;
+	internal int m_flags;
+	private bool m_markForFixupWhenAvailable;
+	private ValueTypeFixupInfo m_valueFixup;
+	private TypeLoadExceptionHolder m_typeLoad;
+	private bool m_reachable;
 
 	internal bool IsIncompleteObjectReference { get; set; }
 	internal bool RequiresDelayedFixup { get; }

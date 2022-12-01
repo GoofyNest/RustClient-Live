@@ -1,9 +1,9 @@
 public abstract class StringComparer : IComparer, IEqualityComparer, IComparer<string>, IEqualityComparer<string> // TypeDefIndex: 303
 {
-	private static readonly StringComparer _invariantCulture; 
-	private static readonly StringComparer _invariantCultureIgnoreCase; 
-	private static readonly StringComparer _ordinal; 
-	private static readonly StringComparer _ordinalIgnoreCase; 
+	private static readonly StringComparer _invariantCulture;
+	private static readonly StringComparer _invariantCultureIgnoreCase;
+	private static readonly StringComparer _ordinal;
+	private static readonly StringComparer _ordinalIgnoreCase;
 
 	public static StringComparer InvariantCultureIgnoreCase { get; }
 	public static StringComparer CurrentCultureIgnoreCase { get; }

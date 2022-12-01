@@ -1,6 +1,6 @@
-public class HumanPathFinder : BasePathFinder // TypeDefIndex: 10658
+public class HumanPathFinder : BasePathFinder // TypeDefIndex: 10662
 {
-	private BaseEntity npc; 
+	private BaseEntity npc;
 
 
 	public void Init(BaseEntity npc) { }

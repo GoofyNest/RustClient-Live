@@ -1,9 +1,9 @@
 public class NameTable : XmlNameTable // TypeDefIndex: 1990
 {
-	private NameTable.Entry[] entries; 
-	private int count; 
-	private int mask; 
-	private int hashCodeRandomizer; 
+	private NameTable.Entry[] entries;
+	private int count;
+	private int mask;
+	private int hashCodeRandomizer;
 
 
 	public void .ctor() { }
@@ -24,9 +24,9 @@ public class NameTable : XmlNameTable // TypeDefIndex: 1990
 
 private class NameTable.Entry // TypeDefIndex: 1991
 {
-	internal string str; 
-	internal int hashCode; 
-	internal NameTable.Entry next; 
+	internal string str;
+	internal int hashCode;
+	internal NameTable.Entry next;
 
 
 	internal void .ctor(string str, int hashCode, NameTable.Entry next) { }

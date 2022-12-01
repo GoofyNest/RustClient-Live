@@ -1,4 +1,4 @@
-public sealed class NoHeaderChunkException : MidiException // TypeDefIndex: 7592
+public sealed class NoHeaderChunkException : MidiException // TypeDefIndex: 7594
 {
 
 	internal void .ctor() { }

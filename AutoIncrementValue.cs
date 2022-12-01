@@ -1,7 +1,7 @@
 internal abstract class AutoIncrementValue // TypeDefIndex: 4187
 {
-	[CompilerGeneratedAttribute] 
-	private bool <Auto>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <Auto>k__BackingField;
 
 	internal bool Auto { get; set; }
 	internal abstract object Current { get; set; }
@@ -10,10 +10,10 @@ internal abstract class AutoIncrementValue // TypeDefIndex: 4187
 	internal abstract Type DataType { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_Auto() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Auto(bool value) { }
 
 	internal abstract object get_Current();

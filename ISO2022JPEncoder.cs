@@ -1,12 +1,12 @@
-internal class ISO2022JPEncoder : MonoEncoder // TypeDefIndex: 7822
+internal class ISO2022JPEncoder : MonoEncoder // TypeDefIndex: 7824
 {
-	private static JISConvert convert; 
-	private readonly bool allow_1byte_kana; 
-	private readonly bool allow_shift_io; 
-	private ISO2022JPMode m; 
-	private bool shifted_in_count; 
-	private bool shifted_in_conv; 
-	private static readonly char[] full_width_map; 
+	private static JISConvert convert;
+	private readonly bool allow_1byte_kana;
+	private readonly bool allow_shift_io;
+	private ISO2022JPMode m;
+	private bool shifted_in_count;
+	private bool shifted_in_conv;
+	private static readonly char[] full_width_map;
 
 
 	public void .ctor(MonoEncoding owner, bool allow1ByteKana, bool allowShiftIO) { }

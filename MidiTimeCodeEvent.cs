@@ -1,10 +1,10 @@
-public sealed class MidiTimeCodeEvent : SystemCommonEvent // TypeDefIndex: 7576
+public sealed class MidiTimeCodeEvent : SystemCommonEvent // TypeDefIndex: 7578
 {
-	private static readonly Dictionary<MidiTimeCodeComponent, byte> ComponentValueMasks; 
-	[CompilerGeneratedAttribute] 
-	private MidiTimeCodeComponent <Component>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private FourBitNumber <ComponentValue>k__BackingField; 
+	private static readonly Dictionary<MidiTimeCodeComponent, byte> ComponentValueMasks;
+	[CompilerGeneratedAttribute]
+	private MidiTimeCodeComponent <Component>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private FourBitNumber <ComponentValue>k__BackingField;
 
 	public MidiTimeCodeComponent Component { get; set; }
 	public FourBitNumber ComponentValue { get; set; }
@@ -14,16 +14,16 @@ public sealed class MidiTimeCodeEvent : SystemCommonEvent // TypeDefIndex: 7576
 
 	public void .ctor(MidiTimeCodeComponent component, FourBitNumber componentValue) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MidiTimeCodeComponent get_Component() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Component(MidiTimeCodeComponent value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public FourBitNumber get_ComponentValue() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ComponentValue(FourBitNumber value) { }
 
 	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }

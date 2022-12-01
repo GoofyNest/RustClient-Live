@@ -1,9 +1,9 @@
-internal struct LeaderboardScoresDownloaded_t : ICallbackData // TypeDefIndex: 5396
+internal struct LeaderboardScoresDownloaded_t : ICallbackData // TypeDefIndex: 5398
 {
-	internal ulong SteamLeaderboard; 
-	internal ulong SteamLeaderboardEntries; 
-	internal int CEntryCount; 
-	public static int _datasize; 
+	internal ulong SteamLeaderboard;
+	internal ulong SteamLeaderboardEntries;
+	internal int CEntryCount;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

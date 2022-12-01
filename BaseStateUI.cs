@@ -1,49 +1,49 @@
-public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12544
+public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12557
 {
-	public Dropdown DropdownInputMemorySlot; 
-	public Transform PrefabAddNewEvent; 
-	public Transform PrefabTimerEvent; 
-	public Transform PrefabPlayerDetectedEvent; 
-	public Transform PrefabStateErrorEvent; 
-	public Transform PrefabStateFinishedEvent; 
-	public Transform PrefabAttackedEvent; 
-	public Transform PrefabInAttackRangeEvent; 
-	public Transform PrefabHealthBelowEvent; 
-	public Transform PrefabInRangeEvent; 
-	public Transform PrefabPerformedAttackEvent; 
-	public Transform PrefabTirednessAboveEvent; 
-	public Transform PrefabHungerAboveEvent; 
-	public Transform PrefabThreatDetectevEvent; 
-	public Transform PrefabTargetDetectevEvent; 
-	public Transform PrefabAmmoBelowEvent; 
-	public Transform PrefabBestTargetDetectedEvent; 
-	public Transform PrefabIsVisibleEvent; 
-	public Transform PrefabAttackTickEvent; 
-	public Transform PrefabIsMountedEvent; 
-	public Transform PrefabAndEvent; 
-	public Transform PrefabChanceEvent; 
-	public Transform PrefabTargetLostEvent; 
-	public Transform PrefabTimeSinceThreatEvent; 
-	public Transform PrefabOnPositionMemorySetEvent; 
-	public Transform PrefabAggressionTimerEvent; 
-	public Transform PrefabReloadingEvent; 
-	public Transform PrefabInRangeOfHomeEvent; 
-	public RustText TextStateName; 
-	public Transform EventContainer; 
-	public ScrollRect Scroll; 
-	public AIState StateType; 
-	public int StateContainerID; 
-	[CompilerGeneratedAttribute] 
-	private int <InputEntityMemorySlot>k__BackingField; 
-	private Transform addNewEventButton; 
+	public Dropdown DropdownInputMemorySlot;
+	public Transform PrefabAddNewEvent;
+	public Transform PrefabTimerEvent;
+	public Transform PrefabPlayerDetectedEvent;
+	public Transform PrefabStateErrorEvent;
+	public Transform PrefabStateFinishedEvent;
+	public Transform PrefabAttackedEvent;
+	public Transform PrefabInAttackRangeEvent;
+	public Transform PrefabHealthBelowEvent;
+	public Transform PrefabInRangeEvent;
+	public Transform PrefabPerformedAttackEvent;
+	public Transform PrefabTirednessAboveEvent;
+	public Transform PrefabHungerAboveEvent;
+	public Transform PrefabThreatDetectevEvent;
+	public Transform PrefabTargetDetectevEvent;
+	public Transform PrefabAmmoBelowEvent;
+	public Transform PrefabBestTargetDetectedEvent;
+	public Transform PrefabIsVisibleEvent;
+	public Transform PrefabAttackTickEvent;
+	public Transform PrefabIsMountedEvent;
+	public Transform PrefabAndEvent;
+	public Transform PrefabChanceEvent;
+	public Transform PrefabTargetLostEvent;
+	public Transform PrefabTimeSinceThreatEvent;
+	public Transform PrefabOnPositionMemorySetEvent;
+	public Transform PrefabAggressionTimerEvent;
+	public Transform PrefabReloadingEvent;
+	public Transform PrefabInRangeOfHomeEvent;
+	public RustText TextStateName;
+	public Transform EventContainer;
+	public ScrollRect Scroll;
+	public AIState StateType;
+	public int StateContainerID;
+	[CompilerGeneratedAttribute]
+	private int <InputEntityMemorySlot>k__BackingField;
+	private Transform addNewEventButton;
 
 	public int InputEntityMemorySlot { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_InputEntityMemorySlot() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_InputEntityMemorySlot(int value) { }
 
 	public virtual void Init(AIState stateType, int stateContainerID) { }
@@ -56,7 +56,7 @@ public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12544
 
 	private BaseEventUI GetEvent(int id) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator ScrollToBottom() { }
 
 	public void Load(AIStateContainer container) { }
@@ -81,31 +81,31 @@ public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12544
 
 }
 
-private sealed class BaseStateUI.<ScrollToBottom>d__43 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12545
+private sealed class BaseStateUI.<ScrollToBottom>d__43 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12558
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public BaseStateUI <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public BaseStateUI <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

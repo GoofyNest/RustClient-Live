@@ -1,24 +1,24 @@
-public sealed class PropertySheet // TypeDefIndex: 13653
+public sealed class PropertySheet // TypeDefIndex: 13669
 {
-	[CompilerGeneratedAttribute] 
-	private MaterialPropertyBlock <properties>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <material>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private MaterialPropertyBlock <properties>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <material>k__BackingField;
 
 	public MaterialPropertyBlock properties { get; set; }
 	internal Material material { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MaterialPropertyBlock get_properties() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_properties(MaterialPropertyBlock value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal Material get_material() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_material(Material value) { }
 
 	internal void .ctor(Material material) { }

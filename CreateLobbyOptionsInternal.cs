@@ -1,18 +1,18 @@
-internal struct CreateLobbyOptionsInternal : ISettable<CreateLobbyOptions>, IDisposable // TypeDefIndex: 9092
+internal struct CreateLobbyOptionsInternal : ISettable<CreateLobbyOptions>, IDisposable // TypeDefIndex: 9094
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private uint m_MaxLobbyMembers; 
-	private LobbyPermissionLevel m_PermissionLevel; 
-	private int m_PresenceEnabled; 
-	private int m_AllowInvites; 
-	private IntPtr m_BucketId; 
-	private int m_DisableHostMigration; 
-	private int m_EnableRTCRoom; 
-	private IntPtr m_LocalRTCOptions; 
-	private IntPtr m_LobbyId; 
-	private int m_EnableJoinById; 
-	private int m_RejoinAfterKickRequiresInvite; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private uint m_MaxLobbyMembers;
+	private LobbyPermissionLevel m_PermissionLevel;
+	private int m_PresenceEnabled;
+	private int m_AllowInvites;
+	private IntPtr m_BucketId;
+	private int m_DisableHostMigration;
+	private int m_EnableRTCRoom;
+	private IntPtr m_LocalRTCOptions;
+	private IntPtr m_LobbyId;
+	private int m_EnableJoinById;
+	private int m_RejoinAfterKickRequiresInvite;
 
 	public ProductUserId LocalUserId { set; }
 	public uint MaxLobbyMembers { set; }

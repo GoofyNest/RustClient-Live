@@ -250,8 +250,8 @@ public static class GenericsUtil // TypeDefIndex: 4823
 
 private static class GenericsUtil.CastImpl<TSrc, TDst> // TypeDefIndex: 4824
 {
-	[ThreadStaticAttribute] 
-	public static TSrc Value; 
+	[ThreadStaticAttribute]
+	public static TSrc Value;
 
 
 	private static void .cctor() { }

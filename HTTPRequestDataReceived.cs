@@ -1,10 +1,10 @@
-internal struct HTTPRequestDataReceived_t : ICallbackData // TypeDefIndex: 5432
+internal struct HTTPRequestDataReceived_t : ICallbackData // TypeDefIndex: 5434
 {
-	internal uint Request; 
-	internal ulong ContextValue; 
-	internal uint COffset; 
-	internal uint CBytesReceived; 
-	public static int _datasize; 
+	internal uint Request;
+	internal ulong ContextValue;
+	internal uint COffset;
+	internal uint CBytesReceived;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

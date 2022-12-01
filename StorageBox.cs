@@ -1,8 +1,8 @@
-public class StorageBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6318
+public class StorageBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6320
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ItemContainer contents; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ItemContainer contents;
 
 
 	public static void ResetToPool(StorageBox instance) { }

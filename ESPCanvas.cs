@@ -1,25 +1,25 @@
-public class ESPCanvas : MonoBehaviour // TypeDefIndex: 13794
+public class ESPCanvas : MonoBehaviour // TypeDefIndex: 13810
 {
-	[TooltipAttribute] 
-	public int MaxElements; 
-	[TooltipAttribute] 
-	public float RefreshRate; 
-	[TooltipAttribute] 
-	public ESPPlayerInfo Source; 
-	[TooltipAttribute] 
-	public float MaxDistance; 
-	[ClientVar] 
-	public static float OverrideMaxDisplayDistance; 
-	[ClientVar] 
-	public static bool DisableOcclusionChecks; 
-	[ClientVar] 
-	public static bool ShowHealth; 
-	[ClientVar] 
-	public static bool ColourCodeTeams; 
-	protected ESPPlayerInfo[] Elements; 
-	protected RealTimeSince timeSinceRefreshed; 
-	private static int lastCheckedZoomFrame; 
-	private static bool cachedUsingZoomItem; 
+	[TooltipAttribute]
+	public int MaxElements;
+	[TooltipAttribute]
+	public float RefreshRate;
+	[TooltipAttribute]
+	public ESPPlayerInfo Source;
+	[TooltipAttribute]
+	public float MaxDistance;
+	[ClientVar]
+	public static float OverrideMaxDisplayDistance;
+	[ClientVar]
+	public static bool DisableOcclusionChecks;
+	[ClientVar]
+	public static bool ShowHealth;
+	[ClientVar]
+	public static bool ColourCodeTeams;
+	protected ESPPlayerInfo[] Elements;
+	protected RealTimeSince timeSinceRefreshed;
+	private static int lastCheckedZoomFrame;
+	private static bool cachedUsingZoomItem;
 
 
 	public void Awake() { }

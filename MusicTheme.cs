@@ -1,28 +1,28 @@
-public class MusicTheme : ScriptableObject // TypeDefIndex: 10734
+public class MusicTheme : ScriptableObject // TypeDefIndex: 10738
 {
-	[HeaderAttribute] 
-	public float tempo; 
-	public int intensityHoldBars; 
-	public int lengthInBars; 
-	[HeaderAttribute] 
-	public bool canPlayInMenus; 
-	[HorizontalAttribute] 
-	public MusicTheme.ValueRange rain; 
-	[HorizontalAttribute] 
-	public MusicTheme.ValueRange wind; 
-	[HorizontalAttribute] 
-	public MusicTheme.ValueRange snow; 
-	[InspectorFlagsAttribute] 
-	public TerrainBiome.Enum biomes; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum topologies; 
-	public AnimationCurve time; 
-	[HeaderAttribute] 
-	public List<MusicTheme.PositionedClip> clips; 
-	public List<MusicTheme.Layer> layers; 
-	private Dictionary<int, List<MusicTheme.PositionedClip>> activeClips; 
-	private List<AudioClip> firstAudioClips; 
-	private Dictionary<AudioClip, bool> audioClipDict; 
+	[HeaderAttribute]
+	public float tempo;
+	public int intensityHoldBars;
+	public int lengthInBars;
+	[HeaderAttribute]
+	public bool canPlayInMenus;
+	[HorizontalAttribute]
+	public MusicTheme.ValueRange rain;
+	[HorizontalAttribute]
+	public MusicTheme.ValueRange wind;
+	[HorizontalAttribute]
+	public MusicTheme.ValueRange snow;
+	[InspectorFlagsAttribute]
+	public TerrainBiome.Enum biomes;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum topologies;
+	public AnimationCurve time;
+	[HeaderAttribute]
+	public List<MusicTheme.PositionedClip> clips;
+	public List<MusicTheme.Layer> layers;
+	private Dictionary<int, List<MusicTheme.PositionedClip>> activeClips;
+	private List<AudioClip> firstAudioClips;
+	private Dictionary<AudioClip, bool> audioClipDict;
 
 	public int layerCount { get; }
 	public int samplesPerBar { get; }
@@ -54,31 +54,31 @@ public class MusicTheme : ScriptableObject // TypeDefIndex: 10734
 
 }
 
-public class MusicTheme.Layer // TypeDefIndex: 10735
+public class MusicTheme.Layer // TypeDefIndex: 10739
 {
-	public string name; 
+	public string name;
 
 
 	public void .ctor() { }
 
 }
 
-public class MusicTheme.PositionedClip // TypeDefIndex: 10736
+public class MusicTheme.PositionedClip // TypeDefIndex: 10740
 {
-	public MusicTheme theme; 
-	public MusicClip musicClip; 
-	public int startingBar; 
-	public int layerId; 
-	public float minIntensity; 
-	public float maxIntensity; 
-	public bool allowFadeIn; 
-	public bool allowFadeOut; 
-	public float fadeInTime; 
-	public float fadeOutTime; 
-	public float intensityReduction; 
-	public int jumpBarCount; 
-	public float jumpMinimumIntensity; 
-	public float jumpMaximumIntensity; 
+	public MusicTheme theme;
+	public MusicClip musicClip;
+	public int startingBar;
+	public int layerId;
+	public float minIntensity;
+	public float maxIntensity;
+	public bool allowFadeIn;
+	public bool allowFadeOut;
+	public float fadeInTime;
+	public float fadeOutTime;
+	public float intensityReduction;
+	public int jumpBarCount;
+	public float jumpMinimumIntensity;
+	public float jumpMaximumIntensity;
 
 	public int endingBar { get; }
 	public bool isControlClip { get; }
@@ -96,10 +96,10 @@ public class MusicTheme.PositionedClip // TypeDefIndex: 10736
 
 }
 
-public class MusicTheme.ValueRange // TypeDefIndex: 10737
+public class MusicTheme.ValueRange // TypeDefIndex: 10741
 {
-	public float min; 
-	public float max; 
+	public float min;
+	public float max;
 
 
 	public void .ctor(float min, float max) { }

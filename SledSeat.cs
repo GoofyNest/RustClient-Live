@@ -1,9 +1,9 @@
-public class SledSeat : BaseVehicleSeat // TypeDefIndex: 10559
+public class SledSeat : BaseVehicleSeat // TypeDefIndex: 10563
 {
-	public Transform LeftHand; 
-	public Transform RightHand; 
-	public Transform LeftFoot; 
-	public Transform RightFoot; 
+	public Transform LeftHand;
+	public Transform RightHand;
+	public Transform LeftFoot;
+	public Transform RightFoot;
 
 
 	public override void UpdatePlayerModel(BasePlayer player) { }

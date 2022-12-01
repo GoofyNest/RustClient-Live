@@ -2,11 +2,11 @@ public sealed class LineRenderer : Renderer // TypeDefIndex: 3402
 {
 	public Color startColor { set; }
 	public Color endColor { set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int positionCount { get; set; }
 
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void SetColors(Color start, Color end) { }
 
 	public void set_startColor(Color value) { }
@@ -21,10 +21,10 @@ public sealed class LineRenderer : Renderer // TypeDefIndex: 3402
 
 	public Vector3 GetPosition(int index) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public int GetPositions([Out] Vector3[] positions) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetPositions(Vector3[] positions) { }
 
 	private void set_startColor_Injected(ref Color value) { }

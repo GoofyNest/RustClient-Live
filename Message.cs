@@ -1,8 +1,8 @@
-public class Message // TypeDefIndex: 6867
+public class Message // TypeDefIndex: 6869
 {
-	public Message.Type type; 
-	public BaseNetwork peer; 
-	public Connection connection; 
+	public Message.Type type;
+	public BaseNetwork peer;
+	public Connection connection;
 
 	public NetRead read { get; }
 	public NetWrite write { get; }
@@ -18,9 +18,9 @@ public class Message // TypeDefIndex: 6867
 
 }
 
-public enum Message.Type // TypeDefIndex: 6868
+public enum Message.Type // TypeDefIndex: 6870
 {
-	public byte value__; 
+	public byte value__;
 	public const Message.Type Welcome = 1;
 	public const Message.Type Auth = 2;
 	public const Message.Type Approved = 3;

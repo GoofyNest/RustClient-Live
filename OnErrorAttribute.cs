@@ -1,4 +1,4 @@
-public sealed class OnErrorAttribute : Attribute // TypeDefIndex: 6041
+public sealed class OnErrorAttribute : Attribute // TypeDefIndex: 6043
 {
 
 	public void .ctor() { }

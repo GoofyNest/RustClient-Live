@@ -1,13 +1,13 @@
-public class Horse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6373
+public class Horse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6375
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int runState; 
-	public int numStorageSlots; 
-	public int breedIndex; 
-	public float staminaSeconds; 
-	public float currentMaxStaminaSeconds; 
-	public float maxSpeed; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int runState;
+	public int numStorageSlots;
+	public int breedIndex;
+	public float staminaSeconds;
+	public float currentMaxStaminaSeconds;
+	public float maxSpeed;
 
 
 	public static void ResetToPool(Horse instance) { }
@@ -64,10 +64,10 @@ public class Horse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6373
 
 }
 
-public class Horse : BaseAnimalNPC // TypeDefIndex: 10654
+public class Horse : BaseAnimalNPC // TypeDefIndex: 10658
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override float RealisticMass { get; }
 	public override BaseEntity.TraitFlag Traits { get; }

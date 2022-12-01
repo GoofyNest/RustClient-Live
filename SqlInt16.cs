@@ -1,12 +1,12 @@
 public struct SqlInt16 : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4352
 {
-	private bool m_fNotNull; 
-	private short m_value; 
-	private static readonly int s_MASKI2; 
-	public static readonly SqlInt16 Null; 
-	public static readonly SqlInt16 Zero; 
-	public static readonly SqlInt16 MinValue; 
-	public static readonly SqlInt16 MaxValue; 
+	private bool m_fNotNull;
+	private short m_value;
+	private static readonly int s_MASKI2;
+	public static readonly SqlInt16 Null;
+	public static readonly SqlInt16 Zero;
+	public static readonly SqlInt16 MinValue;
+	public static readonly SqlInt16 MaxValue;
 
 	public bool IsNull { get; }
 	public short Value { get; }

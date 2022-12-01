@@ -1,8 +1,8 @@
 internal class ValueTypeFixupInfo // TypeDefIndex: 1064
 {
-	private long m_containerID; 
-	private FieldInfo m_parentField; 
-	private int[] m_parentIndex; 
+	private long m_containerID;
+	private FieldInfo m_parentField;
+	private int[] m_parentIndex;
 
 	public long ContainerID { get; }
 	public FieldInfo ParentField { get; }

@@ -1,10 +1,10 @@
-internal struct TimedTrialStatus_t : ICallbackData // TypeDefIndex: 5409
+internal struct TimedTrialStatus_t : ICallbackData // TypeDefIndex: 5411
 {
-	internal AppId AppID; 
-	internal bool IsOffline; 
-	internal uint SecondsAllowed; 
-	internal uint SecondsPlayed; 
-	public static int _datasize; 
+	internal AppId AppID;
+	internal bool IsOffline;
+	internal uint SecondsAllowed;
+	internal uint SecondsPlayed;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

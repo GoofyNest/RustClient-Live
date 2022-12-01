@@ -1,21 +1,21 @@
-public class Crosshair : BaseMonoBehaviour // TypeDefIndex: 12598
+public class Crosshair : BaseMonoBehaviour // TypeDefIndex: 12611
 {
-	public static bool Enabled; 
-	public Image Image; 
-	public RectTransform reticleTransform; 
-	public CanvasGroup reticleAlpha; 
-	public RectTransform hitNotifyMarker; 
-	public CanvasGroup hitNotifyAlpha; 
-	public static Crosshair instance; 
-	public static float lastHitTime; 
-	public float crosshairAlpha; 
-	internal RectTransform rectTransform; 
-	public float aimconeMultiplier; 
-	public float aimconeLerpSpeed; 
-	private Vector2 hitNotifyStartSize; 
-	private Vector2 originalReticleSize; 
-	public GameObjectRef pointsSplashEffect; 
-	internal int activePoints; 
+	public static bool Enabled;
+	public Image Image;
+	public RectTransform reticleTransform;
+	public CanvasGroup reticleAlpha;
+	public RectTransform hitNotifyMarker;
+	public CanvasGroup hitNotifyAlpha;
+	public static Crosshair instance;
+	public static float lastHitTime;
+	public float crosshairAlpha;
+	internal RectTransform rectTransform;
+	public float aimconeMultiplier;
+	public float aimconeLerpSpeed;
+	private Vector2 hitNotifyStartSize;
+	private Vector2 originalReticleSize;
+	public GameObjectRef pointsSplashEffect;
+	internal int activePoints;
 
 
 	private void Start() { }

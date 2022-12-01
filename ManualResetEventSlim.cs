@@ -2,9 +2,9 @@ public class ManualResetEventSlim : IDisposable // TypeDefIndex: 758
 {
 	private const int DEFAULT_SPIN_SP = 1;
 	private const int DEFAULT_SPIN_MP = 10;
-	private object m_lock; 
-	private ManualResetEvent m_eventObj; 
-	private int m_combinedState; 
+	private object m_lock;
+	private ManualResetEvent m_eventObj;
+	private int m_combinedState;
 	private const int SignalledState_BitMask = -2147483648;
 	private const int SignalledState_ShiftCount = 31;
 	private const int Dispose_BitMask = 1073741824;
@@ -14,7 +14,7 @@ public class ManualResetEventSlim : IDisposable // TypeDefIndex: 758
 	private const int NumWaitersState_BitMask = 524287;
 	private const int NumWaitersState_ShiftCount = 0;
 	private const int NumWaitersState_MaxValue = 524287;
-	private static Action<object> s_cancellationTokenCallback; 
+	private static Action<object> s_cancellationTokenCallback;
 
 	public WaitHandle WaitHandle { get; }
 	public bool IsSet { get; set; }

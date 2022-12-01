@@ -1,8 +1,8 @@
-public class FrequencyConfig : UIDialog // TypeDefIndex: 11548
+public class FrequencyConfig : UIDialog // TypeDefIndex: 11555
 {
-	private IRFObject rfObject; 
-	public InputField input; 
-	public int target; 
+	private IRFObject rfObject;
+	public InputField input;
+	public int target;
 
 
 	public override void OpenDialog() { }

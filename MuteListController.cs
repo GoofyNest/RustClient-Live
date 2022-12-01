@@ -1,8 +1,8 @@
-public class MuteListController : UIDialog // TypeDefIndex: 13838
+public class MuteListController : UIDialog // TypeDefIndex: 13854
 {
-	public RectTransform ListParent; 
-	public GameObjectRef UserWidget; 
-	public SteamFriendsList SearchList; 
+	public RectTransform ListParent;
+	public GameObjectRef UserWidget;
+	public SteamFriendsList SearchList;
 
 
 	protected override void OnEnable() { }
@@ -17,10 +17,10 @@ public class MuteListController : UIDialog // TypeDefIndex: 13838
 
 }
 
-private sealed class MuteListController.<>c // TypeDefIndex: 13839
+private sealed class MuteListController.<>c // TypeDefIndex: 13855
 {
-	public static readonly MuteListController.<>c <>9; 
-	public static Func<ulong, bool> <>9__3_0; 
+	public static readonly MuteListController.<>c <>9;
+	public static Func<ulong, bool> <>9__3_0;
 
 
 	private static void .cctor() { }
@@ -31,10 +31,10 @@ private sealed class MuteListController.<>c // TypeDefIndex: 13839
 
 }
 
-private sealed class MuteListController.<>c__DisplayClass4_0 // TypeDefIndex: 13840
+private sealed class MuteListController.<>c__DisplayClass4_0 // TypeDefIndex: 13856
 {
-	public Chat.MuteEntry muteEntry; 
-	public MuteListController <>4__this; 
+	public Chat.MuteEntry muteEntry;
+	public MuteListController <>4__this;
 
 
 	public void .ctor() { }

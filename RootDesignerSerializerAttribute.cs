@@ -1,9 +1,9 @@
 public sealed class RootDesignerSerializerAttribute : Attribute // TypeDefIndex: 2788
 {
-	private bool reloadable; 
-	private string serializerTypeName; 
-	private string serializerBaseTypeName; 
-	private string typeId; 
+	private bool reloadable;
+	private string serializerTypeName;
+	private string serializerBaseTypeName;
+	private string typeId;
 
 	public override object TypeId { get; }
 

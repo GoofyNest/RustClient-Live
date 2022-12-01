@@ -1,13 +1,13 @@
-public class SmokeGrenade : TimedExplosive // TypeDefIndex: 11343
+public class SmokeGrenade : TimedExplosive // TypeDefIndex: 11349
 {
-	public float smokeDuration; 
-	public GameObjectRef smokeEffectPrefab; 
-	public GameObjectRef igniteSound; 
-	public SoundPlayer soundLoop; 
-	private GameObject smokeEffectInstance; 
-	public static List<SmokeGrenade> activeGrenades; 
-	public float fieldMin; 
-	public float fieldMax; 
+	public float smokeDuration;
+	public GameObjectRef smokeEffectPrefab;
+	public GameObjectRef igniteSound;
+	public SoundPlayer soundLoop;
+	private GameObject smokeEffectInstance;
+	public static List<SmokeGrenade> activeGrenades;
+	public float fieldMin;
+	public float fieldMax;
 
 
 	public override void DestroyShared() { }

@@ -1,12 +1,12 @@
-public class Binocular : AttackEntity // TypeDefIndex: 11196
+public class Binocular : AttackEntity // TypeDefIndex: 11202
 {
-	public float[] fovs; 
-	public GameObjectRef fovChangeEffect; 
-	public float smoothSpeed; 
-	private bool vmVisible; 
-	private bool isAiming; 
-	private float timeAiming; 
-	private int currentFovIndex; 
+	public float[] fovs;
+	public GameObjectRef fovChangeEffect;
+	public float smoothSpeed;
+	private bool vmVisible;
+	private bool isAiming;
+	private float timeAiming;
+	private int currentFovIndex;
 
 
 	public bool IsAiming() { }

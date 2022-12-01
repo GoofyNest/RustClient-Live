@@ -1,8 +1,8 @@
 public abstract class TextReader : MarshalByRefObject, IDisposable // TypeDefIndex: 651
 {
-	private static Func<object, string> _ReadLineDelegate; 
-	private static Func<object, int> _ReadDelegate; 
-	public static readonly TextReader Null; 
+	private static Func<object, string> _ReadLineDelegate;
+	private static Func<object, int> _ReadDelegate;
+	public static readonly TextReader Null;
 
 
 	protected void .ctor() { }
@@ -42,7 +42,7 @@ private sealed class TextReader.NullTextReader : TextReader // TypeDefIndex: 652
 
 internal sealed class TextReader.SyncTextReader : TextReader // TypeDefIndex: 653
 {
-	internal TextReader _in; 
+	internal TextReader _in;
 
 
 	internal void .ctor(TextReader t) { }
@@ -65,7 +65,7 @@ internal sealed class TextReader.SyncTextReader : TextReader // TypeDefIndex: 65
 
 private sealed class TextReader.<>c // TypeDefIndex: 654
 {
-	public static readonly TextReader.<>c <>9; 
+	public static readonly TextReader.<>c <>9;
 
 
 	private static void .cctor() { }

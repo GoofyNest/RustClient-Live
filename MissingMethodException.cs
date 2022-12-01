@@ -1,6 +1,6 @@
 public class MissingMethodException : MissingMemberException, ISerializable // TypeDefIndex: 272
 {
-	private string signature; 
+	private string signature;
 
 	public override string Message { get; }
 

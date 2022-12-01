@@ -1,6 +1,6 @@
-public class TweakUIMultiSelect : TweakUIBase // TypeDefIndex: 12923
+public class TweakUIMultiSelect : TweakUIBase // TypeDefIndex: 12937
 {
-	public ToggleGroup toggleGroup; 
+	public ToggleGroup toggleGroup;
 
 
 	protected override void Init() { }
@@ -17,10 +17,10 @@ public class TweakUIMultiSelect : TweakUIBase // TypeDefIndex: 12923
 
 }
 
-private sealed class TweakUIMultiSelect.<>c // TypeDefIndex: 12924
+private sealed class TweakUIMultiSelect.<>c // TypeDefIndex: 12938
 {
-	public static readonly TweakUIMultiSelect.<>c <>9; 
-	public static Func<Toggle, bool> <>9__5_0; 
+	public static readonly TweakUIMultiSelect.<>c <>9;
+	public static Func<Toggle, bool> <>9__5_0;
 
 
 	private static void .cctor() { }

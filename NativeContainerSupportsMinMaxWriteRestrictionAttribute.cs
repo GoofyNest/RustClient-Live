@@ -1,12 +1,12 @@
 public sealed class NativeContainerSupportsMinMaxWriteRestrictionAttribute : Attribute // TypeDefIndex: 3330
 {
 
-[AttributeUsageAttribute] 
-[RequiredByNativeCodeAttribute] 
+[AttributeUsageAttribute]
+[RequiredByNativeCodeAttribute]
 public sealed class NativeContainerIsAtomicWriteOnlyAttribute : Attribute
 
-[AttributeUsageAttribute] 
-[RequiredByNativeCodeAttribute] 
+[AttributeUsageAttribute]
+[RequiredByNativeCodeAttribute]
 public sealed class NativeContainerSupportsMinMaxWriteRestrictionAttribute : Attribute
 
 	public void .ctor() { }

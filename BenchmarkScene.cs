@@ -1,14 +1,14 @@
-public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9973
+public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9975
 {
-	public string BenchmarkTitle; 
-	public string BenchmarkIdent; 
-	public int MaxNumberOfFrames; 
-	public int MaxNumberOfSeconds; 
-	protected int FrameCount; 
-	protected TimeSince TimeSinceStarted; 
-	protected TimeSince TimeSinceFrame; 
-	protected float FrameTimes; 
-	public static bool IsRunningInEditor; 
+	public string BenchmarkTitle;
+	public string BenchmarkIdent;
+	public int MaxNumberOfFrames;
+	public int MaxNumberOfSeconds;
+	protected int FrameCount;
+	protected TimeSince TimeSinceStarted;
+	protected TimeSince TimeSinceFrame;
+	protected float FrameTimes;
+	public static bool IsRunningInEditor;
 
 	public virtual bool SubmitsOwnResults { get; }
 
@@ -19,7 +19,7 @@ public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9973
 
 	public void Start() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator RunBenchmark() { }
 
 	public virtual float GetResult() { }
@@ -36,32 +36,32 @@ public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9973
 
 }
 
-private sealed class BenchmarkScene.<RunBenchmark>d__13 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9974
+private sealed class BenchmarkScene.<RunBenchmark>d__13 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9976
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public BenchmarkScene <>4__this; 
-	private Stopwatch <sw>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public BenchmarkScene <>4__this;
+	private Stopwatch <sw>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

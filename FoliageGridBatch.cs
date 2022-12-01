@@ -1,11 +1,11 @@
-public class FoliageGridBatch : MeshBatch // TypeDefIndex: 13163
+public class FoliageGridBatch : MeshBatch // TypeDefIndex: 13178
 {
-	private Vector3 position; 
-	private Mesh meshBatch; 
-	private MeshFilter meshFilter; 
-	private MeshRenderer meshRenderer; 
-	private FoliageGridMeshData meshData; 
-	private MeshGroup meshGroup; 
+	private Vector3 position;
+	private Mesh meshBatch;
+	private MeshFilter meshFilter;
+	private MeshRenderer meshRenderer;
+	private FoliageGridMeshData meshData;
+	private MeshGroup meshGroup;
 
 	public override int VertexCapacity { get; }
 	public override int VertexCutoff { get; }

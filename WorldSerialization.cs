@@ -1,26 +1,26 @@
-public class WorldSerialization // TypeDefIndex: 7801
+public class WorldSerialization // TypeDefIndex: 7803
 {
 	public const uint CurrentVersion = 9;
-	[CompilerGeneratedAttribute] 
-	private uint <Version>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Checksum>k__BackingField; 
-	public WorldData world; 
+	[CompilerGeneratedAttribute]
+	private uint <Version>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Checksum>k__BackingField;
+	public WorldData world;
 
 	public uint Version { get; set; }
 	public string Checksum { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_Version() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Version(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Checksum() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Checksum(string value) { }
 
 	public void .ctor() { }
@@ -53,9 +53,9 @@ public class WorldSerialization // TypeDefIndex: 7801
 
 }
 
-private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7802
+private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7804
 {
-	public string category; 
+	public string category;
 
 
 	public void .ctor() { }
@@ -64,9 +64,9 @@ private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7
 
 }
 
-private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7803
+private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7805
 {
-	public string name; 
+	public string name;
 
 
 	public void .ctor() { }

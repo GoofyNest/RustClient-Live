@@ -1,9 +1,9 @@
-public class SubbandLayer2IntensityStereo : SubbandLayer2 // TypeDefIndex: 7421
+public class SubbandLayer2IntensityStereo : SubbandLayer2 // TypeDefIndex: 7423
 {
-	protected float Channel2Scalefactor1; 
-	protected float Channel2Scalefactor2; 
-	protected float Channel2Scalefactor3; 
-	protected int Channel2Scfsi; 
+	protected float Channel2Scalefactor1;
+	protected float Channel2Scalefactor2;
+	protected float Channel2Scalefactor3;
+	protected int Channel2Scfsi;
 
 
 	internal void .ctor(int subbandnumber) { }

@@ -1,10 +1,10 @@
 public class InternalDataCollectionBase : ICollection, IEnumerable // TypeDefIndex: 4172
 {
-	internal static readonly CollectionChangeEventArgs s_refreshEventArgs; 
+	internal static readonly CollectionChangeEventArgs s_refreshEventArgs;
 
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public virtual int Count { get; }
-	[BrowsableAttribute] 
+	[BrowsableAttribute]
 	public object SyncRoot { get; }
 	protected virtual ArrayList List { get; }
 

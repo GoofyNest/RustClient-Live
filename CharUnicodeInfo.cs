@@ -1,10 +1,10 @@
 public static class CharUnicodeInfo // TypeDefIndex: 685
 {
-	private static ushort[] s_pCategoryLevel1Index; 
-	private static byte[] s_pCategoriesValue; 
-	private static ushort[] s_pNumericLevel1Index; 
-	private static byte[] s_pNumericValues; 
-	private static ushort[] s_pDigitValues; 
+	private static ushort[] s_pCategoryLevel1Index;
+	private static byte[] s_pCategoriesValue;
+	private static ushort[] s_pNumericLevel1Index;
+	private static byte[] s_pNumericValues;
+	private static ushort[] s_pDigitValues;
 
 
 	internal static int InternalConvertToUtf32(string s, int index) { }

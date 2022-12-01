@@ -1,16 +1,16 @@
-public class VoicemailDialog : MonoBehaviour // TypeDefIndex: 12661
+public class VoicemailDialog : MonoBehaviour // TypeDefIndex: 12675
 {
-	public GameObject RecordingRoot; 
-	public RustSlider RecordingProgress; 
-	public GameObject BrowsingRoot; 
-	public PhoneDialler ParentDialler; 
-	public GameObjectRef VoicemailEntry; 
-	public Transform VoicemailEntriesRoot; 
-	public GameObject NoVoicemailRoot; 
-	public GameObject NoCassetteRoot; 
-	private static float endTime; 
-	private float duration; 
-	private List<VoicemailEntry> toRetire; 
+	public GameObject RecordingRoot;
+	public RustSlider RecordingProgress;
+	public GameObject BrowsingRoot;
+	public PhoneDialler ParentDialler;
+	public GameObjectRef VoicemailEntry;
+	public Transform VoicemailEntriesRoot;
+	public GameObject NoVoicemailRoot;
+	public GameObject NoCassetteRoot;
+	private static float endTime;
+	private float duration;
+	private List<VoicemailEntry> toRetire;
 
 	public static bool IsRecordingVoicemail { get; }
 

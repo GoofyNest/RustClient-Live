@@ -1,7 +1,7 @@
-public static class SkinnedMeshRendererEx // TypeDefIndex: 13495
+public static class SkinnedMeshRendererEx // TypeDefIndex: 13511
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Transform FindRig(SkinnedMeshRenderer renderer) { }
 
 }

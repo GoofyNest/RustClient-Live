@@ -1,11 +1,11 @@
-public class PagerEntity : BaseEntity, IRFObject // TypeDefIndex: 10331
+public class PagerEntity : BaseEntity, IRFObject // TypeDefIndex: 10334
 {
-	public static BaseEntity.Flags Flag_Silent; 
-	private int frequency; 
-	public float beepRepeat; 
-	public GameObjectRef pagerEffect; 
-	public GameObjectRef silentEffect; 
-	private bool wasOn; 
+	public static BaseEntity.Flags Flag_Silent;
+	private int frequency;
+	public float beepRepeat;
+	public GameObjectRef pagerEffect;
+	public GameObjectRef silentEffect;
+	private bool wasOn;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

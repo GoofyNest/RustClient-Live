@@ -1,6 +1,6 @@
 public sealed class TlsException : Exception // TypeDefIndex: 1750
 {
-	private Alert alert; 
+	private Alert alert;
 
 
 	public void .ctor(Alert alert, string message) { }

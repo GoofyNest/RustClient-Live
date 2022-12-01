@@ -1,12 +1,12 @@
-internal struct EntitlementInternal : IGettable<Entitlement>, ISettable<Entitlement>, IDisposable // TypeDefIndex: 9458
+internal struct EntitlementInternal : IGettable<Entitlement>, ISettable<Entitlement>, IDisposable // TypeDefIndex: 9460
 {
-	private int m_ApiVersion; 
-	private IntPtr m_EntitlementName; 
-	private IntPtr m_EntitlementId; 
-	private IntPtr m_CatalogItemId; 
-	private int m_ServerIndex; 
-	private int m_Redeemed; 
-	private long m_EndTimestamp; 
+	private int m_ApiVersion;
+	private IntPtr m_EntitlementName;
+	private IntPtr m_EntitlementId;
+	private IntPtr m_CatalogItemId;
+	private int m_ServerIndex;
+	private int m_Redeemed;
+	private long m_EndTimestamp;
 
 	public Utf8String EntitlementName { get; set; }
 	public Utf8String EntitlementId { get; set; }

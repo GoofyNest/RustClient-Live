@@ -1,8 +1,8 @@
 public class StringWriter : TextWriter // TypeDefIndex: 650
 {
-	private static UnicodeEncoding m_encoding; 
-	private StringBuilder _sb; 
-	private bool _isOpen; 
+	private static UnicodeEncoding m_encoding;
+	private StringBuilder _sb;
+	private bool _isOpen;
 
 	public override Encoding Encoding { get; }
 

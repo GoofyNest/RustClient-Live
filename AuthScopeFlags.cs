@@ -1,6 +1,6 @@
-public enum AuthScopeFlags // TypeDefIndex: 9650
+public enum AuthScopeFlags // TypeDefIndex: 9652
 {
-	public int value__; 
+	public int value__;
 	public const AuthScopeFlags NoFlags = 0;
 	public const AuthScopeFlags BasicProfile = 1;
 	public const AuthScopeFlags FriendsList = 2;

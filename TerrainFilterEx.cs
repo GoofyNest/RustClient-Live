@@ -1,7 +1,7 @@
-public static class TerrainFilterEx // TypeDefIndex: 12192
+public static class TerrainFilterEx // TypeDefIndex: 12199
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ApplyTerrainFilters(Transform transform, TerrainFilter[] filters, Vector3 pos, Quaternion rot, Vector3 scale, SpawnFilter globalFilter) { }
 
 }

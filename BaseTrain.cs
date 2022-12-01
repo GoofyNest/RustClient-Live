@@ -1,16 +1,16 @@
-public class BaseTrain : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6446
+public class BaseTrain : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float time; 
-	public float frontBogieYRot; 
-	public float rearBogieYRot; 
-	public uint frontCouplingID; 
-	public bool frontCouplingToFront; 
-	public uint rearCouplingID; 
-	public bool rearCouplingToFront; 
-	public int lootTypeIndex; 
-	public float lootPercent; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float time;
+	public float frontBogieYRot;
+	public float rearBogieYRot;
+	public uint frontCouplingID;
+	public bool frontCouplingToFront;
+	public uint rearCouplingID;
+	public bool rearCouplingToFront;
+	public int lootTypeIndex;
+	public float lootPercent;
 
 
 	public static void ResetToPool(BaseTrain instance) { }

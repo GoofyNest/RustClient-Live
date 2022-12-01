@@ -1,21 +1,21 @@
-public static class RuntimeUtilities // TypeDefIndex: 13655
+public static class RuntimeUtilities // TypeDefIndex: 13671
 {
-	private static Texture2D m_WhiteTexture; 
-	private static Texture3D m_WhiteTexture3D; 
-	private static Texture2D m_BlackTexture; 
-	private static Texture3D m_BlackTexture3D; 
-	private static Texture2D m_TransparentTexture; 
-	private static Texture3D m_TransparentTexture3D; 
-	private static Dictionary<int, Texture2D> m_LutStrips; 
-	internal static PostProcessResources s_Resources; 
-	private static Mesh s_FullscreenTriangle; 
-	private static Material s_CopyStdMaterial; 
-	private static Material s_CopyStdFromDoubleWideMaterial; 
-	private static Material s_CopyMaterial; 
-	private static Material s_CopyFromTexArrayMaterial; 
-	private static PropertySheet s_CopySheet; 
-	private static PropertySheet s_CopyFromTexArraySheet; 
-	private static IEnumerable<Type> m_AssemblyTypes; 
+	private static Texture2D m_WhiteTexture;
+	private static Texture3D m_WhiteTexture3D;
+	private static Texture2D m_BlackTexture;
+	private static Texture3D m_BlackTexture3D;
+	private static Texture2D m_TransparentTexture;
+	private static Texture3D m_TransparentTexture3D;
+	private static Dictionary<int, Texture2D> m_LutStrips;
+	internal static PostProcessResources s_Resources;
+	private static Mesh s_FullscreenTriangle;
+	private static Material s_CopyStdMaterial;
+	private static Material s_CopyStdFromDoubleWideMaterial;
+	private static Material s_CopyMaterial;
+	private static Material s_CopyFromTexArrayMaterial;
+	private static PropertySheet s_CopySheet;
+	private static PropertySheet s_CopyFromTexArraySheet;
+	private static IEnumerable<Type> m_AssemblyTypes;
 
 	public static Texture2D whiteTexture { get; }
 	public static Texture3D whiteTexture3D { get; }
@@ -68,43 +68,43 @@ public static class RuntimeUtilities // TypeDefIndex: 13655
 
 	public static PropertySheet get_copyFromTexArraySheet() { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetRenderTargetWithLoadStoreAction(CommandBuffer cmd, RenderTargetIdentifier rt, RenderBufferLoadAction loadAction, RenderBufferStoreAction storeAction) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetRenderTargetWithLoadStoreAction(CommandBuffer cmd, RenderTargetIdentifier color, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderTargetIdentifier depth, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangle(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, bool clear = False, Nullable<Rect> viewport) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangle(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, PropertySheet propertySheet, int pass, RenderBufferLoadAction loadAction, Nullable<Rect> viewport) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangle(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, PropertySheet propertySheet, int pass, bool clear = False, Nullable<Rect> viewport) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangleFromDoubleWide(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, Material material, int pass, int eye) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangleToDoubleWide(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, PropertySheet propertySheet, int pass, int eye) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangleFromTexArray(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, PropertySheet propertySheet, int pass, bool clear = False, int depthSlice = -1) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangleToTexArray(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, PropertySheet propertySheet, int pass, bool clear = False, int depthSlice = -1) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangle(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, RenderTargetIdentifier depth, PropertySheet propertySheet, int pass, bool clear = False, Nullable<Rect> viewport) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BlitFullscreenTriangle(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier[] destinations, RenderTargetIdentifier depth, PropertySheet propertySheet, int pass, bool clear = False, Nullable<Rect> viewport) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BuiltinBlit(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void BuiltinBlit(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination, Material mat, int pass = 0) { }
 
 	public static void CopyTexture(CommandBuffer cmd, RenderTargetIdentifier source, RenderTargetIdentifier destination) { }
@@ -139,7 +139,7 @@ public static class RuntimeUtilities // TypeDefIndex: 13655
 
 	public static bool IsTemporalAntialiasingActive(PostProcessLayer layer) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerable<T> GetAllSceneObjects<T>() { }
 	/* GenericInstMethod :
 	|
@@ -174,7 +174,7 @@ public static class RuntimeUtilities // TypeDefIndex: 13655
 
 	public static IEnumerable<Type> GetAllAssemblyTypes() { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T GetAttribute<T>(Type type) { }
 	/* GenericInstMethod :
 	|
@@ -198,28 +198,28 @@ public static class RuntimeUtilities // TypeDefIndex: 13655
 
 }
 
-private sealed class RuntimeUtilities.<GetAllSceneObjects>d__79<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 13656
+private sealed class RuntimeUtilities.<GetAllSceneObjects>d__79<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 13672
 {
-	private int <>1__state; 
-	private T <>2__current; 
-	private int <>l__initialThreadId; 
-	private Queue<Transform> <queue>5__2; 
-	private GameObject[] <>7__wrap2; 
-	private int <>7__wrap3; 
-	private IEnumerator <>7__wrap4; 
+	private int <>1__state;
+	private T <>2__current;
+	private int <>l__initialThreadId;
+	private Queue<Transform> <queue>5__2;
+	private GameObject[] <>7__wrap2;
+	private int <>7__wrap3;
+	private IEnumerator <>7__wrap4;
 
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
 	|-RuntimeUtilities.<GetAllSceneObjects>d__79<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -238,35 +238,35 @@ private sealed class RuntimeUtilities.<GetAllSceneObjects>d__79<T> : IEnumerable
 	|-RuntimeUtilities.<GetAllSceneObjects>d__79<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-RuntimeUtilities.<GetAllSceneObjects>d__79<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
 	|-RuntimeUtilities.<GetAllSceneObjects>d__79<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-RuntimeUtilities.<GetAllSceneObjects>d__79<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
 	|-RuntimeUtilities.<GetAllSceneObjects>d__79<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -275,10 +275,10 @@ private sealed class RuntimeUtilities.<GetAllSceneObjects>d__79<T> : IEnumerable
 
 }
 
-private sealed class RuntimeUtilities.<>c // TypeDefIndex: 13657
+private sealed class RuntimeUtilities.<>c // TypeDefIndex: 13673
 {
-	public static readonly RuntimeUtilities.<>c <>9; 
-	public static Func<Assembly, IEnumerable<Type>> <>9__86_0; 
+	public static readonly RuntimeUtilities.<>c <>9;
+	public static Func<Assembly, IEnumerable<Type>> <>9__86_0;
 
 
 	private static void .cctor() { }

@@ -1,6 +1,6 @@
-public class RenderTextureUtility // TypeDefIndex: 13442
+public class RenderTextureUtility // TypeDefIndex: 13458
 {
-	private List<RenderTexture> m_TemporaryRTs; 
+	private List<RenderTexture> m_TemporaryRTs;
 
 
 	public RenderTexture GetTemporaryRenderTexture(int width, int height, int depthBuffer = 0, RenderTextureFormat format = 2, FilterMode filterMode = 1) { }

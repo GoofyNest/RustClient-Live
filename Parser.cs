@@ -1,7 +1,7 @@
 internal sealed class Parser // TypeDefIndex: 919
 {
-	private SecurityDocument _doc; 
-	private Tokenizer _t; 
+	private SecurityDocument _doc;
+	private Tokenizer _t;
 
 
 	internal SecurityElement GetTopElement() { }
@@ -20,26 +20,26 @@ internal sealed class Parser // TypeDefIndex: 919
 
 internal sealed class Parser // TypeDefIndex: 2265
 {
-	private SchemaType schemaType; 
-	private XmlNameTable nameTable; 
-	private SchemaNames schemaNames; 
-	private ValidationEventHandler eventHandler; 
-	private XmlNamespaceManager namespaceManager; 
-	private XmlReader reader; 
-	private PositionInfo positionInfo; 
-	private bool isProcessNamespaces; 
-	private int schemaXmlDepth; 
-	private int markupDepth; 
-	private SchemaBuilder builder; 
-	private XmlSchema schema; 
-	private SchemaInfo xdrSchema; 
-	private XmlResolver xmlResolver; 
-	private XmlDocument dummyDocument; 
-	private bool processMarkup; 
-	private XmlNode parentNode; 
-	private XmlNamespaceManager annotationNSManager; 
-	private string xmlns; 
-	private XmlCharType xmlCharType; 
+	private SchemaType schemaType;
+	private XmlNameTable nameTable;
+	private SchemaNames schemaNames;
+	private ValidationEventHandler eventHandler;
+	private XmlNamespaceManager namespaceManager;
+	private XmlReader reader;
+	private PositionInfo positionInfo;
+	private bool isProcessNamespaces;
+	private int schemaXmlDepth;
+	private int markupDepth;
+	private SchemaBuilder builder;
+	private XmlSchema schema;
+	private SchemaInfo xdrSchema;
+	private XmlResolver xmlResolver;
+	private XmlDocument dummyDocument;
+	private bool processMarkup;
+	private XmlNode parentNode;
+	private XmlNamespaceManager annotationNSManager;
+	private string xmlns;
+	private XmlCharType xmlCharType;
 
 	public XmlSchema XmlSchema { get; }
 	internal XmlResolver XmlResolver { set; }
@@ -76,7 +76,7 @@ internal sealed class Parser // TypeDefIndex: 2265
 
 }
 
-public static class Parser.Token // TypeDefIndex: 5797
+public static class Parser.Token // TypeDefIndex: 5799
 {
 
 public static class Parser.Token
@@ -87,9 +87,9 @@ public static class Parser.Token
 
 }
 
-public static class Parser.DateTime // TypeDefIndex: 5798
+public static class Parser.DateTime // TypeDefIndex: 5800
 {
-	public static readonly Func<object, string> ToString; 
+	public static readonly Func<object, string> ToString;
 
 
 	public static bool TryParse(string input, out DateTimeOffset result) { }
@@ -98,9 +98,9 @@ public static class Parser.DateTime // TypeDefIndex: 5798
 
 }
 
-private sealed class Parser.DateTime.<>c // TypeDefIndex: 5799
+private sealed class Parser.DateTime.<>c // TypeDefIndex: 5801
 {
-	public static readonly Parser.DateTime.<>c <>9; 
+	public static readonly Parser.DateTime.<>c <>9;
 
 
 	private static void .cctor() { }
@@ -111,37 +111,37 @@ private sealed class Parser.DateTime.<>c // TypeDefIndex: 5799
 
 }
 
-public static class Parser.EmailAddress // TypeDefIndex: 5800
+public static class Parser.EmailAddress // TypeDefIndex: 5802
 {
 
 	public static bool TryParse(string input, out string result) { }
 
 }
 
-public static class Parser.Host // TypeDefIndex: 5801
+public static class Parser.Host // TypeDefIndex: 5803
 {
 
 	public static bool TryParse(string input, out string result) { }
 
 }
 
-public static class Parser.Int // TypeDefIndex: 5802
+public static class Parser.Int // TypeDefIndex: 5804
 {
 
 	public static bool TryParse(string input, out int result) { }
 
 }
 
-public static class Parser.Long // TypeDefIndex: 5803
+public static class Parser.Long // TypeDefIndex: 5805
 {
 
 	public static bool TryParse(string input, out long result) { }
 
 }
 
-public static class Parser.MD5 // TypeDefIndex: 5804
+public static class Parser.MD5 // TypeDefIndex: 5806
 {
-	public static readonly Func<object, string> ToString; 
+	public static readonly Func<object, string> ToString;
 
 
 	public static bool TryParse(string input, out byte[] result) { }
@@ -150,9 +150,9 @@ public static class Parser.MD5 // TypeDefIndex: 5804
 
 }
 
-private sealed class Parser.MD5.<>c // TypeDefIndex: 5805
+private sealed class Parser.MD5.<>c // TypeDefIndex: 5807
 {
-	public static readonly Parser.MD5.<>c <>9; 
+	public static readonly Parser.MD5.<>c <>9;
 
 
 	private static void .cctor() { }
@@ -163,14 +163,14 @@ private sealed class Parser.MD5.<>c // TypeDefIndex: 5805
 
 }
 
-public static class Parser.TimeSpanSeconds // TypeDefIndex: 5806
+public static class Parser.TimeSpanSeconds // TypeDefIndex: 5808
 {
 
 	public static bool TryParse(string input, out TimeSpan result) { }
 
 }
 
-public static class Parser.Uri // TypeDefIndex: 5807
+public static class Parser.Uri // TypeDefIndex: 5809
 {
 
 	public static bool TryParse(string input, out Uri result) { }

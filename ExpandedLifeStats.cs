@@ -1,26 +1,26 @@
-public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12684
+public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12698
 {
-	public GameObject DisplayRoot; 
-	public GameObjectRef GenericStatRow; 
-	[HeaderAttribute] 
-	public Transform ResourcesStatRoot; 
-	public List<ExpandedLifeStats.GenericStatDisplay> ResourceStats; 
-	[HeaderAttribute] 
-	public GameObjectRef WeaponStatRow; 
-	public Transform WeaponsRoot; 
-	[HeaderAttribute] 
-	public Transform MiscRoot; 
-	public List<ExpandedLifeStats.GenericStatDisplay> MiscStats; 
-	public LifeInfographic Infographic; 
-	public RectTransform MoveRoot; 
-	public Vector2 OpenPosition; 
-	public Vector2 ClosedPosition; 
-	public GameObject OpenButtonRoot; 
-	public GameObject CloseButtonRoot; 
-	public GameObject ScrollGradient; 
-	public ScrollRect Scroller; 
-	private bool state; 
-	private List<GameObject> rowsToRetire; 
+	public GameObject DisplayRoot;
+	public GameObjectRef GenericStatRow;
+	[HeaderAttribute]
+	public Transform ResourcesStatRoot;
+	public List<ExpandedLifeStats.GenericStatDisplay> ResourceStats;
+	[HeaderAttribute]
+	public GameObjectRef WeaponStatRow;
+	public Transform WeaponsRoot;
+	[HeaderAttribute]
+	public Transform MiscRoot;
+	public List<ExpandedLifeStats.GenericStatDisplay> MiscStats;
+	public LifeInfographic Infographic;
+	public RectTransform MoveRoot;
+	public Vector2 OpenPosition;
+	public Vector2 ClosedPosition;
+	public GameObject OpenButtonRoot;
+	public GameObject CloseButtonRoot;
+	public GameObject ScrollGradient;
+	public ScrollRect Scroller;
+	private bool state;
+	private List<GameObject> rowsToRetire;
 
 
 	public void Toggle() { }
@@ -29,7 +29,7 @@ public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12684
 
 	private void PopulateDynamicStats() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator WaitAndRelayout() { }
 
 	private void PopulateGenericStats(List<ExpandedLifeStats.GenericStatDisplay> stats, Transform parent, PlayerLifeStory life) { }
@@ -42,18 +42,18 @@ public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12684
 
 }
 
-public struct ExpandedLifeStats.GenericStatDisplay // TypeDefIndex: 12685
+public struct ExpandedLifeStats.GenericStatDisplay // TypeDefIndex: 12699
 {
-	public string statKey; 
-	public Sprite statSprite; 
-	public Translate.Phrase displayPhrase; 
+	public string statKey;
+	public Sprite statSprite;
+	public Translate.Phrase displayPhrase;
 
 }
 
-private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 12686
+private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 12700
 {
-	public static readonly ExpandedLifeStats.<>c <>9; 
-	public static Comparison<PlayerLifeStory.WeaponStats> <>9__21_0; 
+	public static readonly ExpandedLifeStats.<>c <>9;
+	public static Comparison<PlayerLifeStory.WeaponStats> <>9__21_0;
 
 
 	private static void .cctor() { }
@@ -64,38 +64,38 @@ private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 12686
 
 }
 
-private sealed class ExpandedLifeStats.<WaitAndRelayout>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12687
+private sealed class ExpandedLifeStats.<WaitAndRelayout>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12701
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ExpandedLifeStats <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public ExpandedLifeStats <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class ExpandedLifeStats.<>c__DisplayClass23_0 // TypeDefIndex: 12688
+private sealed class ExpandedLifeStats.<>c__DisplayClass23_0 // TypeDefIndex: 12702
 {
-	public ExpandedLifeStats.GenericStatDisplay genericStatDisplay; 
+	public ExpandedLifeStats.GenericStatDisplay genericStatDisplay;
 
 
 	public void .ctor() { }

@@ -1,10 +1,10 @@
-public class EnvSync : PointEntity // TypeDefIndex: 11322
+public class EnvSync : PointEntity // TypeDefIndex: 11328
 {
 	private const float syncInterval = 5;
 	private const float syncIntervalInv = 0,2;
-	public static float EngineTimeClient; 
-	public static float EngineTimeServer; 
-	private TimeSpan timeSpan; 
+	public static float EngineTimeClient;
+	public static float EngineTimeServer;
+	private TimeSpan timeSpan;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

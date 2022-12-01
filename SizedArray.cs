@@ -1,7 +1,7 @@
 internal sealed class SizedArray : ICloneable // TypeDefIndex: 1119
 {
-	internal object[] objects; 
-	internal object[] negObjects; 
+	internal object[] objects;
+	internal object[] negObjects;
 
 	internal object Item { get; set; }
 

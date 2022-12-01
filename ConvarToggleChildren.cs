@@ -1,9 +1,9 @@
-public class ConvarToggleChildren : MonoBehaviour // TypeDefIndex: 12596
+public class ConvarToggleChildren : MonoBehaviour // TypeDefIndex: 12609
 {
-	public string ConvarName; 
-	public string ConvarEnabled; 
-	private bool state; 
-	private ConsoleSystem.Command Command; 
+	public string ConvarName;
+	public string ConvarEnabled;
+	private bool state;
+	private ConsoleSystem.Command Command;
 
 
 	protected void Awake() { }

@@ -1,8 +1,8 @@
-public class Lift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
+public class Lift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6347
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int floor; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int floor;
 
 
 	public static void ResetToPool(Lift instance) { }
@@ -59,12 +59,12 @@ public class Lift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
 
 }
 
-public class Lift : AnimatedBuildingBlock // TypeDefIndex: 10121
+public class Lift : AnimatedBuildingBlock // TypeDefIndex: 10123
 {
-	private Option __menuOption_Menu_UseLift; 
-	public GameObjectRef triggerPrefab; 
-	public string triggerBone; 
-	public float resetDelay; 
+	private Option __menuOption_Menu_UseLift;
+	public GameObjectRef triggerPrefab;
+	public string triggerBone;
+	public float resetDelay;
 
 	public override bool HasMenuOptions { get; }
 
@@ -75,10 +75,10 @@ public class Lift : AnimatedBuildingBlock // TypeDefIndex: 10121
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_UseLift(BasePlayer player) { }
 
 	public bool Menu_UseLift_ShowIf(BasePlayer player) { }

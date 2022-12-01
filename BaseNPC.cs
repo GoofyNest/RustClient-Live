@@ -1,8 +1,8 @@
-public class BaseNPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6302
+public class BaseNPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6304
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int flags; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int flags;
 
 
 	public static void ResetToPool(BaseNPC instance) { }
@@ -59,40 +59,40 @@ public class BaseNPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6302
 
 }
 
-public class BaseNpc : BaseCombatEntity // TypeDefIndex: 10245
+public class BaseNpc : BaseCombatEntity // TypeDefIndex: 10247
 {
-	public int agentTypeIndex; 
-	public bool NewAI; 
-	[SerializeField] 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum topologyPreference; 
-	public Quaternion NetworkRotation; 
-	private static List<BaseNpc> visibleNpcList; 
-	[InspectorFlagsAttribute] 
-	public BaseNpc.AiFlags aiFlags; 
-	[HeaderAttribute] 
-	public int ForgetUnseenEntityTime; 
-	public float SensesTickRate; 
-	private float nextVisThink; 
-	private float lastTimeSeen; 
-	private Vector3 lastPosition; 
-	[HeaderAttribute] 
-	public GameObjectRef CorpsePrefab; 
-	public BaseNpc.AiStatistics Stats; 
-	public Vector3 AttackOffset; 
-	public float AttackDamage; 
-	public DamageType AttackDamageType; 
-	[TooltipAttribute] 
-	public float AttackCost; 
-	[TooltipAttribute] 
-	public float AttackRate; 
-	[TooltipAttribute] 
-	public float AttackRange; 
-	public NavMeshAgent NavAgent; 
-	public LayerMask movementMask; 
-	public float stuckDuration; 
-	public float lastStuckTime; 
-	public float idleDuration; 
+	public int agentTypeIndex;
+	public bool NewAI;
+	[SerializeField]
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum topologyPreference;
+	public Quaternion NetworkRotation;
+	private static List<BaseNpc> visibleNpcList;
+	[InspectorFlagsAttribute]
+	public BaseNpc.AiFlags aiFlags;
+	[HeaderAttribute]
+	public int ForgetUnseenEntityTime;
+	public float SensesTickRate;
+	private float nextVisThink;
+	private float lastTimeSeen;
+	private Vector3 lastPosition;
+	[HeaderAttribute]
+	public GameObjectRef CorpsePrefab;
+	public BaseNpc.AiStatistics Stats;
+	public Vector3 AttackOffset;
+	public float AttackDamage;
+	public DamageType AttackDamageType;
+	[TooltipAttribute]
+	public float AttackCost;
+	[TooltipAttribute]
+	public float AttackRate;
+	[TooltipAttribute]
+	public float AttackRange;
+	public NavMeshAgent NavAgent;
+	public LayerMask movementMask;
+	public float stuckDuration;
+	public float lastStuckTime;
+	public float idleDuration;
 
 	public static List<BaseNpc> VisibleNpcList { get; }
 	public bool IsSitting { get; set; }
@@ -131,13 +131,13 @@ public class BaseNpc : BaseCombatEntity // TypeDefIndex: 10245
 
 	public override Quaternion GetNetworkRotation() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public virtual void Eat(Vector3 position) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public virtual void Attack(Vector3 position) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public virtual void Startled(Vector3 position) { }
 
 	public bool HasAiFlag(BaseNpc.AiFlags f) { }
@@ -182,100 +182,100 @@ public class BaseNpc : BaseCombatEntity // TypeDefIndex: 10245
 
 }
 
-public enum BaseNpc.AiFlags // TypeDefIndex: 10246
+public enum BaseNpc.AiFlags // TypeDefIndex: 10248
 {
-	public int value__; 
+	public int value__;
 	public const BaseNpc.AiFlags Sitting = 2;
 	public const BaseNpc.AiFlags Chasing = 4;
 	public const BaseNpc.AiFlags Sleeping = 8;
 
 }
 
-public struct BaseNpc.AiStatistics // TypeDefIndex: 10247
+public struct BaseNpc.AiStatistics // TypeDefIndex: 10249
 {
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Size; 
-	[TooltipAttribute] 
-	public float Speed; 
-	[TooltipAttribute] 
-	public float Acceleration; 
-	[TooltipAttribute] 
-	public float TurnSpeed; 
-	[TooltipAttribute] 
-	[RangeAttribute] 
-	public float Tolerance; 
-	[TooltipAttribute] 
-	public float VisionRange; 
-	[TooltipAttribute] 
-	public float VisionCone; 
-	[TooltipAttribute] 
-	public AnimationCurve DistanceVisibility; 
-	[TooltipAttribute] 
-	public float Hostility; 
-	[TooltipAttribute] 
-	public float Defensiveness; 
-	[TooltipAttribute] 
-	public float AggressionRange; 
-	[TooltipAttribute] 
-	public float DeaggroRange; 
-	[TooltipAttribute] 
-	public float DeaggroChaseTime; 
-	[TooltipAttribute] 
-	public float DeaggroCooldown; 
-	[TooltipAttribute] 
-	public float HealthThresholdForFleeing; 
-	[TooltipAttribute] 
-	public float HealthThresholdFleeChance; 
-	[TooltipAttribute] 
-	public float MinFleeRange; 
-	[TooltipAttribute] 
-	public float MaxFleeRange; 
-	[TooltipAttribute] 
-	public float MaxFleeTime; 
-	[TooltipAttribute] 
-	public float AfraidRange; 
-	[TooltipAttribute] 
-	public BaseNpc.AiStatistics.FamilyEnum Family; 
-	[TooltipAttribute] 
-	public BaseNpc.AiStatistics.FamilyEnum[] IsAfraidOf; 
-	[TooltipAttribute] 
-	public float MinRoamRange; 
-	[TooltipAttribute] 
-	public float MaxRoamRange; 
-	[TooltipAttribute] 
-	public float MinRoamDelay; 
-	[TooltipAttribute] 
-	public float MaxRoamDelay; 
-	[TooltipAttribute] 
-	public bool IsMobile; 
-	[TooltipAttribute] 
-	public AnimationCurve RoamDelayDistribution; 
-	[TooltipAttribute] 
-	public float AttackedMemoryTime; 
-	[TooltipAttribute] 
-	public float WakeupBlockMoveTime; 
-	[TooltipAttribute] 
-	public float MaxWaterDepth; 
-	[TooltipAttribute] 
-	public float WaterLevelNeck; 
-	public float WaterLevelNeckOffset; 
-	[TooltipAttribute] 
-	public float CloseRange; 
-	[TooltipAttribute] 
-	public float MediumRange; 
-	[TooltipAttribute] 
-	public float LongRange; 
-	[TooltipAttribute] 
-	public float OutOfRangeOfSpawnPointTimeout; 
-	[TooltipAttribute] 
-	public bool OnlyAggroMarkedTargets; 
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Size;
+	[TooltipAttribute]
+	public float Speed;
+	[TooltipAttribute]
+	public float Acceleration;
+	[TooltipAttribute]
+	public float TurnSpeed;
+	[TooltipAttribute]
+	[RangeAttribute]
+	public float Tolerance;
+	[TooltipAttribute]
+	public float VisionRange;
+	[TooltipAttribute]
+	public float VisionCone;
+	[TooltipAttribute]
+	public AnimationCurve DistanceVisibility;
+	[TooltipAttribute]
+	public float Hostility;
+	[TooltipAttribute]
+	public float Defensiveness;
+	[TooltipAttribute]
+	public float AggressionRange;
+	[TooltipAttribute]
+	public float DeaggroRange;
+	[TooltipAttribute]
+	public float DeaggroChaseTime;
+	[TooltipAttribute]
+	public float DeaggroCooldown;
+	[TooltipAttribute]
+	public float HealthThresholdForFleeing;
+	[TooltipAttribute]
+	public float HealthThresholdFleeChance;
+	[TooltipAttribute]
+	public float MinFleeRange;
+	[TooltipAttribute]
+	public float MaxFleeRange;
+	[TooltipAttribute]
+	public float MaxFleeTime;
+	[TooltipAttribute]
+	public float AfraidRange;
+	[TooltipAttribute]
+	public BaseNpc.AiStatistics.FamilyEnum Family;
+	[TooltipAttribute]
+	public BaseNpc.AiStatistics.FamilyEnum[] IsAfraidOf;
+	[TooltipAttribute]
+	public float MinRoamRange;
+	[TooltipAttribute]
+	public float MaxRoamRange;
+	[TooltipAttribute]
+	public float MinRoamDelay;
+	[TooltipAttribute]
+	public float MaxRoamDelay;
+	[TooltipAttribute]
+	public bool IsMobile;
+	[TooltipAttribute]
+	public AnimationCurve RoamDelayDistribution;
+	[TooltipAttribute]
+	public float AttackedMemoryTime;
+	[TooltipAttribute]
+	public float WakeupBlockMoveTime;
+	[TooltipAttribute]
+	public float MaxWaterDepth;
+	[TooltipAttribute]
+	public float WaterLevelNeck;
+	public float WaterLevelNeckOffset;
+	[TooltipAttribute]
+	public float CloseRange;
+	[TooltipAttribute]
+	public float MediumRange;
+	[TooltipAttribute]
+	public float LongRange;
+	[TooltipAttribute]
+	public float OutOfRangeOfSpawnPointTimeout;
+	[TooltipAttribute]
+	public bool OnlyAggroMarkedTargets;
 
 }
 
-public enum BaseNpc.AiStatistics.FamilyEnum // TypeDefIndex: 10248
+public enum BaseNpc.AiStatistics.FamilyEnum // TypeDefIndex: 10250
 {
-	public int value__; 
+	public int value__;
 	public const BaseNpc.AiStatistics.FamilyEnum Bear = 0;
 	public const BaseNpc.AiStatistics.FamilyEnum Wolf = 1;
 	public const BaseNpc.AiStatistics.FamilyEnum Deer = 2;

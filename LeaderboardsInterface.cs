@@ -1,4 +1,4 @@
-public sealed class LeaderboardsInterface : Handle // TypeDefIndex: 9301
+public sealed class LeaderboardsInterface : Handle // TypeDefIndex: 9303
 {
 	public const int CopyleaderboarddefinitionbyindexApiLatest = 1;
 	public const int CopyleaderboarddefinitionbyleaderboardidApiLatest = 1;
@@ -47,13 +47,13 @@ public sealed class LeaderboardsInterface : Handle // TypeDefIndex: 9301
 
 	public void QueryLeaderboardUserScores(ref QueryLeaderboardUserScoresOptions options, object clientData, OnQueryLeaderboardUserScoresCompleteCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryLeaderboardDefinitionsCompleteCallbackInternalImplementation(ref OnQueryLeaderboardDefinitionsCompleteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryLeaderboardRanksCompleteCallbackInternalImplementation(ref OnQueryLeaderboardRanksCompleteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryLeaderboardUserScoresCompleteCallbackInternalImplementation(ref OnQueryLeaderboardUserScoresCompleteCallbackInfoInternal data) { }
 
 }

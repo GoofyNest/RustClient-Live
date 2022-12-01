@@ -1,20 +1,20 @@
-internal struct WindowsOptionsInternal : ISettable<WindowsOptions>, IDisposable // TypeDefIndex: 9883
+internal struct WindowsOptionsInternal : ISettable<WindowsOptions>, IDisposable // TypeDefIndex: 9885
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Reserved; 
-	private IntPtr m_ProductId; 
-	private IntPtr m_SandboxId; 
-	private ClientCredentialsInternal m_ClientCredentials; 
-	private int m_IsServer; 
-	private IntPtr m_EncryptionKey; 
-	private IntPtr m_OverrideCountryCode; 
-	private IntPtr m_OverrideLocaleCode; 
-	private IntPtr m_DeploymentId; 
-	private PlatformFlags m_Flags; 
-	private IntPtr m_CacheDirectory; 
-	private uint m_TickBudgetInMilliseconds; 
-	private IntPtr m_RTCOptions; 
-	private IntPtr m_IntegratedPlatformOptionsContainerHandle; 
+	private int m_ApiVersion;
+	private IntPtr m_Reserved;
+	private IntPtr m_ProductId;
+	private IntPtr m_SandboxId;
+	private ClientCredentialsInternal m_ClientCredentials;
+	private int m_IsServer;
+	private IntPtr m_EncryptionKey;
+	private IntPtr m_OverrideCountryCode;
+	private IntPtr m_OverrideLocaleCode;
+	private IntPtr m_DeploymentId;
+	private PlatformFlags m_Flags;
+	private IntPtr m_CacheDirectory;
+	private uint m_TickBudgetInMilliseconds;
+	private IntPtr m_RTCOptions;
+	private IntPtr m_IntegratedPlatformOptionsContainerHandle;
 
 	public IntPtr Reserved { set; }
 	public Utf8String ProductId { set; }

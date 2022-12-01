@@ -1,6 +1,6 @@
 internal sealed class SqlMoneyStorage : DataStorage // TypeDefIndex: 4428
 {
-	private SqlMoney[] _values; 
+	private SqlMoney[] _values;
 
 
 	public void .ctor(DataColumn column) { }

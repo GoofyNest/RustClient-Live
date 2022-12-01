@@ -7,16 +7,16 @@ public static class TerrainUtility // TypeDefIndex: 4104
 
 	internal static TerrainUtility.TerrainGroups CollectTerrains(bool onlyAutoConnectedTerrains = True) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static void AutoConnect() { }
 
 }
 
 public class TerrainUtility.TerrainMap // TypeDefIndex: 4105
 {
-	private Vector3 m_patchSize; 
-	public TerrainUtility.TerrainMap.ErrorCode m_errorCode; 
-	public Dictionary<TerrainUtility.TerrainMap.TileCoord, Terrain> m_terrainTiles; 
+	private Vector3 m_patchSize;
+	public TerrainUtility.TerrainMap.ErrorCode m_errorCode;
+	public Dictionary<TerrainUtility.TerrainMap.TileCoord, Terrain> m_terrainTiles;
 
 
 	public Terrain GetTerrain(int tileX, int tileZ) { }
@@ -52,8 +52,8 @@ public sealed class TerrainUtility.TerrainMap.TerrainFilter : MulticastDelegate 
 
 public struct TerrainUtility.TerrainMap.TileCoord // TypeDefIndex: 4107
 {
-	public readonly int tileX; 
-	public readonly int tileZ; 
+	public readonly int tileX;
+	public readonly int tileZ;
 
 
 	public void .ctor(int tileX, int tileZ) { }
@@ -62,7 +62,7 @@ public struct TerrainUtility.TerrainMap.TileCoord // TypeDefIndex: 4107
 
 public enum TerrainUtility.TerrainMap.ErrorCode // TypeDefIndex: 4108
 {
-	public int value__; 
+	public int value__;
 	public const TerrainUtility.TerrainMap.ErrorCode OK = 0;
 	public const TerrainUtility.TerrainMap.ErrorCode Overlapping = 1;
 	public const TerrainUtility.TerrainMap.ErrorCode SizeMismatch = 4;
@@ -72,7 +72,7 @@ public enum TerrainUtility.TerrainMap.ErrorCode // TypeDefIndex: 4108
 
 private sealed class TerrainUtility.TerrainMap.<>c__DisplayClass4_0 // TypeDefIndex: 4109
 {
-	public int groupID; 
+	public int groupID;
 
 
 	public void .ctor() { }
@@ -90,7 +90,7 @@ public class TerrainUtility.TerrainGroups : Dictionary<int, TerrainUtility.Terra
 
 private sealed class TerrainUtility.<>c__DisplayClass4_0 // TypeDefIndex: 4111
 {
-	public bool onlyAutoConnectedTerrains; 
+	public bool onlyAutoConnectedTerrains;
 
 
 	public void .ctor() { }
@@ -99,7 +99,7 @@ private sealed class TerrainUtility.<>c__DisplayClass4_0 // TypeDefIndex: 4111
 
 private sealed class TerrainUtility.<>c__DisplayClass4_1 // TypeDefIndex: 4112
 {
-	public Terrain t; 
+	public Terrain t;
 	public TerrainUtility.<>c
 
 

@@ -1,8 +1,8 @@
 public sealed class RectTransform : Transform // TypeDefIndex: 3568
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static RectTransform.ReapplyDrivenProperties reapplyDrivenProperties; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static RectTransform.ReapplyDrivenProperties reapplyDrivenProperties;
 
 	public Rect rect { get; }
 	public Vector2 anchorMin { get; set; }
@@ -15,10 +15,10 @@ public sealed class RectTransform : Transform // TypeDefIndex: 3568
 	public Vector2 offsetMax { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_reapplyDrivenProperties(RectTransform.ReapplyDrivenProperties value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_reapplyDrivenProperties(RectTransform.ReapplyDrivenProperties value) { }
 
 	public Rect get_rect() { }
@@ -63,7 +63,7 @@ public sealed class RectTransform : Transform // TypeDefIndex: 3568
 
 	public void SetSizeWithCurrentAnchors(RectTransform.Axis axis, float size) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void SendReapplyDrivenProperties(RectTransform driven) { }
 
 	private Vector2 GetParentSize() { }
@@ -94,7 +94,7 @@ public sealed class RectTransform : Transform // TypeDefIndex: 3568
 
 public enum RectTransform.Edge // TypeDefIndex: 3569
 {
-	public int value__; 
+	public int value__;
 	public const RectTransform.Edge Left = 0;
 	public const RectTransform.Edge Right = 1;
 	public const RectTransform.Edge Top = 2;
@@ -104,7 +104,7 @@ public enum RectTransform.Edge // TypeDefIndex: 3569
 
 public enum RectTransform.Axis // TypeDefIndex: 3570
 {
-	public int value__; 
+	public int value__;
 	public const RectTransform.Axis Horizontal = 0;
 	public const RectTransform.Axis Vertical = 1;
 

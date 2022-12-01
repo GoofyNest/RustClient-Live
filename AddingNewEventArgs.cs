@@ -1,7 +1,7 @@
-public class AddingNewEventArgs // TypeDefIndex: 5862
+public class AddingNewEventArgs // TypeDefIndex: 5864
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 public class AddingNewEventArgs
 
 	public void .ctor() { }

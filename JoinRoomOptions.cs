@@ -1,21 +1,21 @@
-public struct JoinRoomOptions // TypeDefIndex: 8772
+public struct JoinRoomOptions // TypeDefIndex: 8774
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <RoomName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ClientBaseUrl>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ParticipantToken>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <ParticipantId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private JoinRoomFlags <Flags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ManualAudioInputEnabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ManualAudioOutputEnabled>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <RoomName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ClientBaseUrl>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ParticipantToken>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <ParticipantId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private JoinRoomFlags <Flags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ManualAudioInputEnabled>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ManualAudioOutputEnabled>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String RoomName { get; set; }
@@ -27,52 +27,52 @@ public struct JoinRoomOptions // TypeDefIndex: 8772
 	public bool ManualAudioOutputEnabled { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_RoomName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RoomName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ClientBaseUrl() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientBaseUrl(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ParticipantToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantToken(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_ParticipantId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParticipantId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public JoinRoomFlags get_Flags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Flags(JoinRoomFlags value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ManualAudioInputEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ManualAudioInputEnabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ManualAudioOutputEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ManualAudioOutputEnabled(bool value) { }
 
 }

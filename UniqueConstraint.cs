@@ -1,17 +1,17 @@
 public class UniqueConstraint : Constraint // TypeDefIndex: 4316
 {
-	private DataKey _key; 
-	private Index _constraintIndex; 
-	internal bool _bPrimaryKey; 
+	private DataKey _key;
+	private Index _constraintIndex;
+	internal bool _bPrimaryKey;
 
 	internal Index ConstraintIndex { get; }
-	[ReadOnlyAttribute] 
+	[ReadOnlyAttribute]
 	public virtual DataColumn[] Columns { get; }
 	internal DataColumn[] ColumnsReference { get; }
 	public bool IsPrimaryKey { get; }
 	internal override bool InCollection { set; }
 	internal DataKey Key { get; }
-	[ReadOnlyAttribute] 
+	[ReadOnlyAttribute]
 	public override DataTable Table { get; }
 
 

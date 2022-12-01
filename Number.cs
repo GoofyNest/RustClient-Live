@@ -77,19 +77,19 @@ internal class Number // TypeDefIndex: 278
 
 	internal static bool TryStringToNumber(string str, NumberStyles options, ref Number.NumberBuffer number, NumberFormatInfo numfmt, bool parseDecimal) { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static bool TryStringToNumber(string str, NumberStyles options, ref Number.NumberBuffer number, StringBuilder sb, NumberFormatInfo numfmt, bool parseDecimal) { }
 
 }
 
 internal struct Number.NumberBuffer // TypeDefIndex: 279
 {
-	public static readonly int NumberBufferBytes; 
-	private byte* baseAddress; 
-	public char* digits; 
-	public int precision; 
-	public int scale; 
-	public bool sign; 
+	public static readonly int NumberBufferBytes;
+	private byte* baseAddress;
+	public char* digits;
+	public int precision;
+	public int scale;
+	public bool sign;
 
 
 	public void .ctor(byte* stackBuffer) { }

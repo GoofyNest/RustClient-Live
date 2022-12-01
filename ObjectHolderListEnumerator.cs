@@ -1,9 +1,9 @@
 internal class ObjectHolderListEnumerator // TypeDefIndex: 1043
 {
-	private bool m_isFixupEnumerator; 
-	private ObjectHolderList m_list; 
-	private int m_startingVersion; 
-	private int m_currPos; 
+	private bool m_isFixupEnumerator;
+	private ObjectHolderList m_list;
+	private int m_startingVersion;
+	private int m_currPos;
 
 	internal ObjectHolder Current { get; }
 

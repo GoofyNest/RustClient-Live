@@ -1,7 +1,7 @@
-internal struct ElementWriter // TypeDefIndex: 5845
+internal struct ElementWriter // TypeDefIndex: 5847
 {
-	private XmlWriter writer; 
-	private NamespaceResolver resolver; 
+	private XmlWriter writer;
+	private NamespaceResolver resolver;
 
 
 	public void .ctor(XmlWriter writer) { }

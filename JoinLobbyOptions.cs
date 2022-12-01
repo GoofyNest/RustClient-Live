@@ -1,13 +1,13 @@
-public struct JoinLobbyOptions // TypeDefIndex: 9119
+public struct JoinLobbyOptions // TypeDefIndex: 9121
 {
-	[CompilerGeneratedAttribute] 
-	private LobbyDetails <LobbyDetailsHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PresenceEnabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<LocalRTCOptions> <LocalRTCOptions>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private LobbyDetails <LobbyDetailsHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PresenceEnabled>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<LocalRTCOptions> <LocalRTCOptions>k__BackingField;
 
 	public LobbyDetails LobbyDetailsHandle { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -15,28 +15,28 @@ public struct JoinLobbyOptions // TypeDefIndex: 9119
 	public Nullable<LocalRTCOptions> LocalRTCOptions { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LobbyDetails get_LobbyDetailsHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyDetailsHandle(LobbyDetails value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PresenceEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PresenceEnabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<LocalRTCOptions> get_LocalRTCOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalRTCOptions(Nullable<LocalRTCOptions> value) { }
 
 }

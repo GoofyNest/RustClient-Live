@@ -36,7 +36,7 @@ public abstract class TypeBuilder : TypeInfo
 
 	protected override ConstructorInfo GetConstructorImpl(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override ConstructorInfo[] GetConstructors(BindingFlags bindingAttr) { }
 
 	public override object[] GetCustomAttributes(bool inherit) { }

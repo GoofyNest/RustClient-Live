@@ -1,12 +1,12 @@
-internal struct LeaderboardScoreUploaded_t : ICallbackData // TypeDefIndex: 5397
+internal struct LeaderboardScoreUploaded_t : ICallbackData // TypeDefIndex: 5399
 {
-	internal byte Success; 
-	internal ulong SteamLeaderboard; 
-	internal int Score; 
-	internal byte ScoreChanged; 
-	internal int GlobalRankNew; 
-	internal int GlobalRankPrevious; 
-	public static int _datasize; 
+	internal byte Success;
+	internal ulong SteamLeaderboard;
+	internal int Score;
+	internal byte ScoreChanged;
+	internal int GlobalRankNew;
+	internal int GlobalRankPrevious;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,9 +1,9 @@
-public class HurtOverlay : MonoBehaviour // TypeDefIndex: 10858
+public class HurtOverlay : MonoBehaviour // TypeDefIndex: 10864
 {
-	public PostProcessVolume postProcessVolume; 
-	public float smoothTime; 
-	private float smoothCurrent; 
-	private float smoothVelocity; 
+	public PostProcessVolume postProcessVolume;
+	public float smoothTime;
+	private float smoothCurrent;
+	private float smoothVelocity;
 
 
 	public void Awake() { }

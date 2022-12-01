@@ -1,14 +1,14 @@
-internal static class ReflectionUtils // TypeDefIndex: 5972
+internal static class ReflectionUtils // TypeDefIndex: 5974
 {
-	public static readonly Type[] EmptyTypes; 
+	public static readonly Type[] EmptyTypes;
 
 
 	private static void .cctor() { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsVirtual(PropertyInfo propertyInfo) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static MethodInfo GetBaseDefinition(PropertyInfo propertyInfo) { }
 
 	public static bool IsPublic(PropertyInfo property) { }
@@ -98,7 +98,7 @@ internal static class ReflectionUtils // TypeDefIndex: 5972
 
 	public static IEnumerable<PropertyInfo> GetProperties(Type targetType, BindingFlags bindingAttr) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BindingFlags RemoveFlag(BindingFlags bindingAttr, BindingFlags flag) { }
 
 	private static void GetChildPrivateProperties(IList<PropertyInfo> initialProperties, Type targetType, BindingFlags bindingAttr) { }
@@ -107,13 +107,13 @@ internal static class ReflectionUtils // TypeDefIndex: 5972
 
 }
 
-private sealed class ReflectionUtils.<>c // TypeDefIndex: 5973
+private sealed class ReflectionUtils.<>c // TypeDefIndex: 5975
 {
-	public static readonly ReflectionUtils.<>c <>9; 
-	public static Func<ConstructorInfo, bool> <>9__10_0; 
-	public static Func<MemberInfo, string> <>9__29_0; 
-	public static Func<ParameterInfo, Type> <>9__37_0; 
-	public static Func<FieldInfo, bool> <>9__39_0; 
+	public static readonly ReflectionUtils.<>c <>9;
+	public static Func<ConstructorInfo, bool> <>9__10_0;
+	public static Func<MemberInfo, string> <>9__29_0;
+	public static Func<ParameterInfo, Type> <>9__37_0;
+	public static Func<FieldInfo, bool> <>9__39_0;
 
 
 	private static void .cctor() { }
@@ -130,9 +130,9 @@ private sealed class ReflectionUtils.<>c // TypeDefIndex: 5973
 
 }
 
-private sealed class ReflectionUtils.<>c__DisplayClass42_0 // TypeDefIndex: 5974
+private sealed class ReflectionUtils.<>c__DisplayClass42_0 // TypeDefIndex: 5976
 {
-	public PropertyInfo subTypeProperty; 
+	public PropertyInfo subTypeProperty;
 
 
 	public void .ctor() { }
@@ -145,7 +145,7 @@ private sealed class ReflectionUtils.<>c__DisplayClass42_0 // TypeDefIndex: 5974
 
 }
 
-private sealed class ReflectionUtils.<>c__DisplayClass43_0 // TypeDefIndex: 5975
+private sealed class ReflectionUtils.<>c__DisplayClass43_0 // TypeDefIndex: 5977
 {
 
 	public void .ctor() { }

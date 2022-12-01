@@ -1,8 +1,8 @@
-public class WaterPool : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6389
+public class WaterPool : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6391
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float fillAmount; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float fillAmount;
 
 
 	public static void ResetToPool(WaterPool instance) { }

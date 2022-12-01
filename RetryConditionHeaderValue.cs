@@ -1,9 +1,9 @@
-public class RetryConditionHeaderValue : ICloneable // TypeDefIndex: 5813
+public class RetryConditionHeaderValue : ICloneable // TypeDefIndex: 5815
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <Date>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<TimeSpan> <Delta>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <Date>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<TimeSpan> <Delta>k__BackingField;
 
 	public Nullable<DateTimeOffset> Date { get; set; }
 	public Nullable<TimeSpan> Delta { get; set; }
@@ -13,16 +13,16 @@ public class RetryConditionHeaderValue : ICloneable // TypeDefIndex: 5813
 
 	public void .ctor(TimeSpan delta) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_Date() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Date(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<TimeSpan> get_Delta() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Delta(Nullable<TimeSpan> value) { }
 
 	private object System.ICloneable.Clone() { }

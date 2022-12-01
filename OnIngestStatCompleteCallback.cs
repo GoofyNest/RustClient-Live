@@ -1,4 +1,4 @@
-public sealed class OnIngestStatCompleteCallback : MulticastDelegate // TypeDefIndex: 8438
+public sealed class OnIngestStatCompleteCallback : MulticastDelegate // TypeDefIndex: 8440
 {
 
 	public void .ctor(object object, IntPtr method) { }

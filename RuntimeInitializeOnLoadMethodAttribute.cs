@@ -1,6 +1,6 @@
 public class RuntimeInitializeOnLoadMethodAttribute : PreserveAttribute // TypeDefIndex: 3525
 {
-	private RuntimeInitializeLoadType m_LoadType; 
+	private RuntimeInitializeLoadType m_LoadType;
 
 	private RuntimeInitializeLoadType loadType { set; }
 

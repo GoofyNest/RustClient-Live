@@ -1,8 +1,8 @@
 public struct CullingGroupEvent // TypeDefIndex: 3365
 {
-	private int m_Index; 
-	private byte m_PrevState; 
-	private byte m_ThisState; 
+	private int m_Index;
+	private byte m_PrevState;
+	private byte m_ThisState;
 
 	public int index { get; }
 	public int currentDistance { get; }

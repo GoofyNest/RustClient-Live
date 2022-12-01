@@ -1,19 +1,19 @@
-public class DemoHeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6474
+public class DemoHeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6476
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint version; 
-	public string level; 
-	public uint levelSeed; 
-	public uint levelSize; 
-	public string checksum; 
-	public ulong localclient; 
-	public Vector3 position; 
-	public Vector3 rotation; 
-	public string levelUrl; 
-	public long recordedTime; 
-	public long length; 
-	public List<FileStorageCacheData> fileStorage; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint version;
+	public string level;
+	public uint levelSeed;
+	public uint levelSize;
+	public string checksum;
+	public ulong localclient;
+	public Vector3 position;
+	public Vector3 rotation;
+	public string levelUrl;
+	public long recordedTime;
+	public long length;
+	public List<FileStorageCacheData> fileStorage;
 
 
 	public static void ResetToPool(DemoHeader instance) { }
@@ -70,22 +70,22 @@ public class DemoHeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 647
 
 }
 
-public class DemoShot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6476
+public class DemoShot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6478
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string shotName; 
-	public string demoName; 
-	public float shotStart; 
-	public float shotLength; 
-	public DemoShotVectorTrack camPos; 
-	public DemoShotQuaternionTrack camRot; 
-	public DemoShotFloatTrack camFov; 
-	public DemoShotFloatTrack camDofDist; 
-	public DemoShotFloatTrack camDofFocalSize; 
-	public DemoShotFloatTrack camDofAperture; 
-	public DemoShotParentTrack camParent; 
-	public string folderName; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string shotName;
+	public string demoName;
+	public float shotStart;
+	public float shotLength;
+	public DemoShotVectorTrack camPos;
+	public DemoShotQuaternionTrack camRot;
+	public DemoShotFloatTrack camFov;
+	public DemoShotFloatTrack camDofDist;
+	public DemoShotFloatTrack camDofFocalSize;
+	public DemoShotFloatTrack camDofAperture;
+	public DemoShotParentTrack camParent;
+	public string folderName;
 
 
 	public static void ResetToPool(DemoShot instance) { }
@@ -142,12 +142,12 @@ public class DemoShot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6476
 
 }
 
-public class DemoShotVectorTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6477
+public class DemoShotVectorTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6479
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public long trackType; 
-	public List<DemoShotVectorKeyframe> keyframes; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public long trackType;
+	public List<DemoShotVectorKeyframe> keyframes;
 
 
 	public static void ResetToPool(DemoShotVectorTrack instance) { }
@@ -204,10 +204,10 @@ public class DemoShotVectorTrack : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public struct DemoShotVectorKeyframe : IProto // TypeDefIndex: 6478
+public struct DemoShotVectorKeyframe : IProto // TypeDefIndex: 6480
 {
-	public float keyframeTime; 
-	public Vector3 keyFrameValue; 
+	public float keyframeTime;
+	public Vector3 keyFrameValue;
 
 
 	public static void ResetToPool(DemoShotVectorKeyframe instance) { }
@@ -254,12 +254,12 @@ public struct DemoShotVectorKeyframe : IProto // TypeDefIndex: 6478
 
 }
 
-public class DemoShotFloatTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6479
+public class DemoShotFloatTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6481
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public long trackType; 
-	public List<DemoShotFloatKeyframe> keyframes; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public long trackType;
+	public List<DemoShotFloatKeyframe> keyframes;
 
 
 	public static void ResetToPool(DemoShotFloatTrack instance) { }
@@ -316,10 +316,10 @@ public class DemoShotFloatTrack : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public struct DemoShotFloatKeyframe : IProto // TypeDefIndex: 6480
+public struct DemoShotFloatKeyframe : IProto // TypeDefIndex: 6482
 {
-	public float keyframeTime; 
-	public float keyFrameValue; 
+	public float keyframeTime;
+	public float keyFrameValue;
 
 
 	public static void ResetToPool(DemoShotFloatKeyframe instance) { }
@@ -366,12 +366,12 @@ public struct DemoShotFloatKeyframe : IProto // TypeDefIndex: 6480
 
 }
 
-public class DemoShotQuaternionTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6481
+public class DemoShotQuaternionTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6483
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public long trackType; 
-	public List<DemoShotQuaternionKeyframe> keyframes; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public long trackType;
+	public List<DemoShotQuaternionKeyframe> keyframes;
 
 
 	public static void ResetToPool(DemoShotQuaternionTrack instance) { }
@@ -428,13 +428,13 @@ public class DemoShotQuaternionTrack : IDisposable, Pool.IPooled, IProto // Type
 
 }
 
-public struct DemoShotQuaternionKeyframe : IProto // TypeDefIndex: 6482
+public struct DemoShotQuaternionKeyframe : IProto // TypeDefIndex: 6484
 {
-	public float keyframeTime; 
-	public float keyFrameValueX; 
-	public float keyFrameValueY; 
-	public float keyFrameValueZ; 
-	public float keyFrameValueW; 
+	public float keyframeTime;
+	public float keyFrameValueX;
+	public float keyFrameValueY;
+	public float keyFrameValueZ;
+	public float keyFrameValueW;
 
 
 	public static void ResetToPool(DemoShotQuaternionKeyframe instance) { }
@@ -481,12 +481,12 @@ public struct DemoShotQuaternionKeyframe : IProto // TypeDefIndex: 6482
 
 }
 
-public class DemoShotParentTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6483
+public class DemoShotParentTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6485
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong parentId; 
-	public List<DemoShotParentKeyframe> keyframes; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong parentId;
+	public List<DemoShotParentKeyframe> keyframes;
 
 
 	public static void ResetToPool(DemoShotParentTrack instance) { }
@@ -543,11 +543,11 @@ public class DemoShotParentTrack : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public struct DemoShotParentKeyframe : IProto // TypeDefIndex: 6484
+public struct DemoShotParentKeyframe : IProto // TypeDefIndex: 6486
 {
-	public float keyframeTime; 
-	public uint keyFrameParentId; 
-	public string keyFrameParentName; 
+	public float keyframeTime;
+	public uint keyFrameParentId;
+	public string keyFrameParentName;
 
 
 	public static void ResetToPool(DemoShotParentKeyframe instance) { }
@@ -594,9 +594,9 @@ public struct DemoShotParentKeyframe : IProto // TypeDefIndex: 6484
 
 }
 
-public class DemoClient : Client, IDisposable // TypeDefIndex: 6866
+public class DemoClient : Client, IDisposable // TypeDefIndex: 6868
 {
-	protected Reader demoFile; 
+	protected Reader demoFile;
 
 	public override bool IsPlaying { get; }
 	public bool PlayingFinished { get; }
@@ -620,13 +620,13 @@ public class DemoClient : Client, IDisposable // TypeDefIndex: 6866
 
 }
 
-public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10906
+public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10912
 {
-	[CompilerGeneratedAttribute] 
-	private DemoShot <CurrentShot>k__BackingField; 
-	private bool playing; 
-	public static DemoShotPlayback Instance; 
-	public bool ShouldLoop; 
+	[CompilerGeneratedAttribute]
+	private DemoShot <CurrentShot>k__BackingField;
+	private bool playing;
+	public static DemoShotPlayback Instance;
+	public bool ShouldLoop;
 
 	public DemoShot CurrentShot { get; set; }
 	public static bool IsPlayingShot { get; }
@@ -641,10 +641,10 @@ public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10906
 	public bool HasDofData { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public DemoShot get_CurrentShot() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentShot(DemoShot value) { }
 
 	public static bool get_IsPlayingShot() { }
@@ -691,19 +691,19 @@ public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10906
 
 }
 
-public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefIndex: 10907
+public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefIndex: 10913
 {
-	private DemoShot recordingShot; 
-	private float lastKeyframe; 
-	private bool hasStarted; 
-	[CompilerGeneratedAttribute] 
-	private RealTimeUntil <CountdownEnds>k__BackingField; 
+	private DemoShot recordingShot;
+	private float lastKeyframe;
+	private bool hasStarted;
+	[CompilerGeneratedAttribute]
+	private RealTimeUntil <CountdownEnds>k__BackingField;
 	public const float CountdownDuration = 3;
-	private CameraMan.CameraState startSettings; 
-	private DemoShotRecorder.RecorderSettings settings; 
-	public static string lastSavedShotName; 
-	private string preRecordShotName; 
-	private float countdownStartTime; 
+	private CameraMan.CameraState startSettings;
+	private DemoShotRecorder.RecorderSettings settings;
+	public static string lastSavedShotName;
+	private string preRecordShotName;
+	private float countdownStartTime;
 
 	public RealTimeUntil CountdownEnds { get; set; }
 	public bool IsInCountdown { get; }
@@ -712,10 +712,10 @@ public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefI
 	public float ShotStartTime { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public RealTimeUntil get_CountdownEnds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CountdownEnds(RealTimeUntil value) { }
 
 	public bool get_IsInCountdown() { }
@@ -728,12 +728,18 @@ public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefI
 
 	public float get_ShotStartTime() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator StartRecording(string shotName, DemoShotRecorder.RecorderSettings withSettings) { }
 
 	public void CancelRecording() { }
 
 	public void FinishRecording() { }
+
+	private void CompressTrack(DemoShotVectorTrack track) { }
+
+	private void CompressTrack(DemoShotQuaternionTrack track) { }
+
+	private void CompressTrack(DemoShotFloatTrack track) { }
 
 	public static string GetShotDirectory(string demoName, bool createDirectory = False) { }
 
@@ -755,6 +761,10 @@ public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefI
 
 	private void RecordKeyframe(Quaternion value, DemoShotQuaternionTrack track) { }
 
+	private bool Approximately(Quaternion a, Quaternion b) { }
+
+	private bool Approximately(Vector3 a, Vector3 b) { }
+
 	private void RecordParent(BaseEntity parent, string bone, DemoShotParentTrack track) { }
 
 	private DemoShotVectorTrack InitialiseKeyframeVectorTrack() { }
@@ -771,84 +781,84 @@ public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefI
 
 }
 
-public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10908
+public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10914
 {
-	public bool Countdown; 
-	public bool PauseOnSave; 
-	public bool ReturnToShotStart; 
-	public string FolderName; 
-	public bool RecordDof; 
+	public bool Countdown;
+	public bool PauseOnSave;
+	public bool ReturnToShotStart;
+	public string FolderName;
+	public bool RecordDof;
 
 }
 
-private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10909
+private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10915
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public DemoShotRecorder <>4__this; 
-	public DemoShotRecorder.RecorderSettings withSettings; 
-	public string shotName; 
-	private float <waitTime>5__2; 
-	private float <leftover>5__3; 
+	private int <>1__state;
+	private object <>2__current;
+	public DemoShotRecorder <>4__this;
+	public DemoShotRecorder.RecorderSettings withSettings;
+	public string shotName;
+	private float <waitTime>5__2;
+	private float <leftover>5__3;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public static class DemoShotHelpers // TypeDefIndex: 10910
+public static class DemoShotHelpers // TypeDefIndex: 10916
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector3 GetVectorFromTrack(DemoShotVectorTrack track, float time) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Quaternion GetQuaternionFromTrack(DemoShotQuaternionTrack track, float time) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float GetFloatFromTrack(DemoShotFloatTrack track, float time) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static DemoShotParentKeyframe GetParentFromTrack(DemoShotParentTrack track, float time) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void GetKeyframesInRange(DemoShotVectorTrack track, float start, float end, List<KeyframeView.UIKeyframeValue> results) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void GetKeyframesInRange(DemoShotQuaternionTrack track, float start, float end, List<KeyframeView.UIKeyframeValue> results) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void GetKeyframesInRange(DemoShotFloatTrack track, float start, float end, List<KeyframeView.UIKeyframeValue> results) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Quaternion ToQuaternion(DemoShotQuaternionKeyframe keyframe) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static DemoShotQuaternionKeyframe ToKeyframe(Quaternion value, float time) { }
 
 }
 
-public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12530
+public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12543
 {
-	public PlayableDirector Director; 
+	public PlayableDirector Director;
 
 
 	private void Reset() { }
@@ -859,9 +869,9 @@ public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12530
 
 }
 
-public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12531
+public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12544
 {
-	public string DemoName; 
+	public string DemoName;
 
 	private bool IsValid { get; }
 
@@ -878,9 +888,9 @@ public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12531
 
 }
 
-public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex: 12609
+public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex: 12622
 {
-	public GameObject Root; 
+	public GameObject Root;
 
 
 	private void Start() { }
@@ -891,25 +901,25 @@ public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex
 
 }
 
-public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12610
+public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12623
 {
-	public RustSlider DemoProgress; 
-	public RustText DemoName; 
-	public RustText DemoDuration; 
-	public RustText DemoCurrentTime; 
-	public GameObject PausedRoot; 
-	public GameObject PlayingRoot; 
-	public RectTransform DemoPlaybackHandle; 
-	public RectTransform ShotPlaybackWindow; 
-	public RustButton LoopButton; 
-	public GameObject ShotButtonRoot; 
-	public RustText ShotNameText; 
-	public GameObject ShotNameRoot; 
-	public RectTransform ShotRecordWindow; 
-	private bool blockProgressInput; 
-	private bool isDraggingSlider; 
-	private RealTimeSince lastDrag; 
-	private bool pausedAtStartOfDrag; 
+	public RustSlider DemoProgress;
+	public RustText DemoName;
+	public RustText DemoDuration;
+	public RustText DemoCurrentTime;
+	public GameObject PausedRoot;
+	public GameObject PlayingRoot;
+	public RectTransform DemoPlaybackHandle;
+	public RectTransform ShotPlaybackWindow;
+	public RustButton LoopButton;
+	public GameObject ShotButtonRoot;
+	public RustText ShotNameText;
+	public GameObject ShotNameRoot;
+	public RectTransform ShotRecordWindow;
+	private bool blockProgressInput;
+	private bool isDraggingSlider;
+	private RealTimeSince lastDrag;
+	private bool pausedAtStartOfDrag;
 
 
 	private void Update() { }
@@ -934,7 +944,7 @@ public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12610
 
 	public void OnClickedNextFrame() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator WaitAndPause() { }
 
 	public void OnClickedPreviousFrame() { }
@@ -943,38 +953,38 @@ public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12610
 
 }
 
-private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12611
+private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12624
 {
-	private int <>1__state; 
-	private object <>2__current; 
+	private int <>1__state;
+	private object <>2__current;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12612
+public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12625
 {
-	public CanvasGroup Canvas; 
-	public static bool ToggleHide; 
+	public CanvasGroup Canvas;
+	public static bool ToggleHide;
 
 
 	private void Update() { }
@@ -985,9 +995,9 @@ public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12612
 
 }
 
-public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12613
+public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12626
 {
-	public bool FireEventOnClicked; 
+	public bool FireEventOnClicked;
 
 
 	public override void OnPointerDown(PointerEventData eventData) { }
@@ -1000,21 +1010,21 @@ public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHand
 
 }
 
-public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12614
+public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12627
 {
-	public RustButton PlayButton; 
-	public Sprite DragSprite; 
-	public RustInput RenameInput; 
-	[CompilerGeneratedAttribute] 
-	private DemoShot <CurrentShot>k__BackingField; 
+	public RustButton PlayButton;
+	public Sprite DragSprite;
+	public RustInput RenameInput;
+	[CompilerGeneratedAttribute]
+	private DemoShot <CurrentShot>k__BackingField;
 
 	public DemoShot CurrentShot { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public DemoShot get_CurrentShot() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentShot(DemoShot value) { }
 
 	public void Populate(DemoShot shot, string folder) { }
@@ -1043,35 +1053,35 @@ public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12614
 
 }
 
-public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12615
+public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12628
 {
-	public RustButton FolderName; 
-	public Transform ChildRoot; 
-	public GameObject UpArrow; 
-	public GameObject DownArrow; 
-	public RustText CountText; 
-	public GameObject OpenRoot; 
-	public GameObject ModifyRoot; 
-	public RustInput FolderRenameInput; 
-	[CompilerGeneratedAttribute] 
-	private bool <CurrentState>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <cachedFolderName>k__BackingField; 
+	public RustButton FolderName;
+	public Transform ChildRoot;
+	public GameObject UpArrow;
+	public GameObject DownArrow;
+	public RustText CountText;
+	public GameObject OpenRoot;
+	public GameObject ModifyRoot;
+	public RustInput FolderRenameInput;
+	[CompilerGeneratedAttribute]
+	private bool <CurrentState>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <cachedFolderName>k__BackingField;
 
 	public bool CurrentState { get; set; }
 	public string cachedFolderName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_CurrentState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentState(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_cachedFolderName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_cachedFolderName(string value) { }
 
 	public void Populate(string folderName, bool state) { }
@@ -1096,7 +1106,7 @@ public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12615
 
 }
 
-public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12616
+public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12629
 {
 
 	public void OnDroppedValue(object data) { }
@@ -1105,21 +1115,21 @@ public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12616
 
 }
 
-public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // TypeDefIndex: 12617
+public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // TypeDefIndex: 12630
 {
-	public GameObjectRef ShotListEntry; 
-	public GameObjectRef FolderEntry; 
-	public Transform ShotListParent; 
-	public RustInput FolderNameInput; 
-	public GameObject ShotsRoot; 
-	public GameObject NoShotsRoot; 
-	public GameObject TopUpArrow; 
-	public GameObject TopDownArrow; 
-	public Canvas DragCanvas; 
-	private Dictionary<string, List<DemoShot>> foundShots; 
-	private List<DemoShotEntry> spawnedEntries; 
-	private List<DemoShotListFolderWidget> spawnedFolders; 
-	private bool isOpen; 
+	public GameObjectRef ShotListEntry;
+	public GameObjectRef FolderEntry;
+	public Transform ShotListParent;
+	public RustInput FolderNameInput;
+	public GameObject ShotsRoot;
+	public GameObject NoShotsRoot;
+	public GameObject TopUpArrow;
+	public GameObject TopDownArrow;
+	public Canvas DragCanvas;
+	private Dictionary<string, List<DemoShot>> foundShots;
+	private List<DemoShotEntry> spawnedEntries;
+	private List<DemoShotListFolderWidget> spawnedFolders;
+	private bool isOpen;
 
 	private int TotalShotCount { get; }
 
@@ -1156,27 +1166,27 @@ public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // Type
 
 }
 
-public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12618
+public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12631
 {
-	public RustInput NameInput; 
-	public GameObject RecordingRoot; 
-	public GameObject PreRecordingRoot; 
-	public RustButton CountdownToggle; 
-	public RustButton PauseOnSaveToggle; 
-	public RustButton ReturnToStartToggle; 
-	public RustButton RecordDofToggle; 
-	public RustOption FolderDropdown; 
-	public GameObject RecordingUnderlay; 
-	public AudioSource CountdownAudio; 
-	public GameObject ShotRecordTime; 
-	public RustText ShotRecordTimeText; 
-	public RustText ShotNameText; 
-	public GameObject RecordingInProcessRoot; 
-	public GameObject CountdownActiveRoot; 
-	public GameObject CountdownActiveSliderRoot; 
-	public RustSlider CountdownActiveSlider; 
-	public RustText CountdownActiveText; 
-	public static DemoShotRecordWidget Instance; 
+	public RustInput NameInput;
+	public GameObject RecordingRoot;
+	public GameObject PreRecordingRoot;
+	public RustButton CountdownToggle;
+	public RustButton PauseOnSaveToggle;
+	public RustButton ReturnToStartToggle;
+	public RustButton RecordDofToggle;
+	public RustOption FolderDropdown;
+	public GameObject RecordingUnderlay;
+	public AudioSource CountdownAudio;
+	public GameObject ShotRecordTime;
+	public RustText ShotRecordTimeText;
+	public RustText ShotNameText;
+	public GameObject RecordingInProcessRoot;
+	public GameObject CountdownActiveRoot;
+	public GameObject CountdownActiveSliderRoot;
+	public RustSlider CountdownActiveSlider;
+	public RustText CountdownActiveText;
+	public static DemoShotRecordWidget Instance;
 
 
 	private void Start() { }
@@ -1199,18 +1209,18 @@ public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12618
 
 }
 
-public class DemoText : MonoBehaviour // TypeDefIndex: 12619
+public class DemoText : MonoBehaviour // TypeDefIndex: 12632
 {
-	public RustText TimeText; 
-	public RustText TotalSecondText; 
-	public RustText TimeScaleText; 
-	public RustText FilenameText; 
-	public RustText DateTimeText; 
-	public RustText ParentText; 
-	public RustText DofText; 
-	public GameObject InternalRoot; 
-	public GameObject ParentRoot; 
-	public GameObject DofRoot; 
+	public RustText TimeText;
+	public RustText TotalSecondText;
+	public RustText TimeScaleText;
+	public RustText FilenameText;
+	public RustText DateTimeText;
+	public RustText ParentText;
+	public RustText DofText;
+	public GameObject InternalRoot;
+	public GameObject ParentRoot;
+	public GameObject DofRoot;
 
 
 	private void Update() { }
@@ -1219,11 +1229,11 @@ public class DemoText : MonoBehaviour // TypeDefIndex: 12619
 
 }
 
-public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12624
+public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12637
 {
-	public RustInput Input; 
-	public GameObject RecordingUnderlay; 
-	private bool IsOpen; 
+	public RustInput Input;
+	public GameObject RecordingUnderlay;
+	private bool IsOpen;
 
 
 	protected override void Awake() { }
@@ -1240,18 +1250,18 @@ public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Close>
 
 }
 
-public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // TypeDefIndex: 12625
+public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // TypeDefIndex: 12638
 {
-	public RustText RecordingLabel; 
-	public RustText ProgressLabel; 
-	public GameObject RecordingUnderlay; 
-	private CanvasGroup canvasGroup; 
-	private NeedsCursor needsCursor; 
+	public RustText RecordingLabel;
+	public RustText ProgressLabel;
+	public GameObject RecordingUnderlay;
+	private CanvasGroup canvasGroup;
+	private NeedsCursor needsCursor;
 
 
 	protected override void Awake() { }
@@ -1270,13 +1280,13 @@ public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // 
 
 }
 
-public class DemoItem : RustButton // TypeDefIndex: 12875
+public class DemoItem : RustButton // TypeDefIndex: 12889
 {
-	public Demos demos; 
-	public int itemId; 
-	public RustText nameText; 
-	public RustText dateText; 
-	public RustText lengthText; 
+	public Demos demos;
+	public int itemId;
+	public RustText nameText;
+	public RustText dateText;
+	public RustText lengthText;
 
 
 	public void OnClicked() { }
@@ -1287,14 +1297,14 @@ public class DemoItem : RustButton // TypeDefIndex: 12875
 
 }
 
-public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // TypeDefIndex: 12876
+public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // TypeDefIndex: 12890
 {
-	public VirtualScroll virtualScroll; 
-	public GameObject deletePopup; 
-	private readonly List<Demos.DemoInfo> _demoInfo; 
-	private readonly List<Demos.DemoInfo> _sortedDemoInfo; 
-	private DemoItem _selectedItem; 
-	private string sortOrder; 
+	public VirtualScroll virtualScroll;
+	public GameObject deletePopup;
+	private readonly List<Demos.DemoInfo> _demoInfo;
+	private readonly List<Demos.DemoInfo> _sortedDemoInfo;
+	private DemoItem _selectedItem;
+	private string sortOrder;
 
 
 	protected override void Awake() { }
@@ -1329,28 +1339,28 @@ public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // Typ
 
 }
 
-private struct Demos.DemoInfo // TypeDefIndex: 12877
+private struct Demos.DemoInfo // TypeDefIndex: 12891
 {
-	public string path; 
-	public string name; 
-	public DateTime date; 
-	public TimeSpan length; 
+	public string path;
+	public string name;
+	public DateTime date;
+	public TimeSpan length;
 
 
 	public void .ctor(string path, string name, DateTime date, TimeSpan length) { }
 
 }
 
-private sealed class Demos.<>c // TypeDefIndex: 12878
+private sealed class Demos.<>c // TypeDefIndex: 12892
 {
-	public static readonly Demos.<>c <>9; 
-	public static Func<Demos.DemoInfo, string> <>9__14_0; 
-	public static Func<Demos.DemoInfo, string> <>9__14_1; 
-	public static Func<Demos.DemoInfo, DateTime> <>9__14_2; 
-	public static Func<Demos.DemoInfo, DateTime> <>9__14_3; 
-	public static Func<Demos.DemoInfo, TimeSpan> <>9__14_4; 
-	public static Func<Demos.DemoInfo, TimeSpan> <>9__14_5; 
-	public static Func<Demos.DemoInfo, string> <>9__14_6; 
+	public static readonly Demos.<>c <>9;
+	public static Func<Demos.DemoInfo, string> <>9__14_0;
+	public static Func<Demos.DemoInfo, string> <>9__14_1;
+	public static Func<Demos.DemoInfo, DateTime> <>9__14_2;
+	public static Func<Demos.DemoInfo, DateTime> <>9__14_3;
+	public static Func<Demos.DemoInfo, TimeSpan> <>9__14_4;
+	public static Func<Demos.DemoInfo, TimeSpan> <>9__14_5;
+	public static Func<Demos.DemoInfo, string> <>9__14_6;
 
 
 	private static void .cctor() { }
@@ -1373,9 +1383,9 @@ private sealed class Demos.<>c // TypeDefIndex: 12878
 
 }
 
-private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12879
+private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12893
 {
-	public Demos.DemoInfo demoInfo; 
+	public Demos.DemoInfo demoInfo;
 
 
 	public void .ctor() { }
@@ -1384,23 +1394,23 @@ private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12879
 
 }
 
-public class Demo : ConsoleSystem // TypeDefIndex: 13695
+public class Demo : ConsoleSystem // TypeDefIndex: 13711
 {
-	public static uint Version; 
-	private static bool _hud; 
-	[ClientVar] 
-	public static float timescale; 
-	private static bool renableNametags; 
-	[ClientVar] 
-	public static bool autoDebugCam; 
-	[ClientVar] 
-	public static bool compressShotKeyframes; 
-	[ClientVar] 
-	public static bool showLocalPlayerNameTag; 
-	[ClientVar] 
-	public static bool showCommunityUI; 
+	public static uint Version;
+	private static bool _hud;
+	[ClientVar]
+	public static float timescale;
+	private static bool renableNametags;
+	[ClientVar]
+	public static bool autoDebugCam;
+	[ClientVar]
+	public static bool compressShotKeyframes;
+	[ClientVar]
+	public static bool showLocalPlayerNameTag;
+	[ClientVar]
+	public static bool showCommunityUI;
 
-	[ClientVar] 
+	[ClientVar]
 	public static bool hud { get; set; }
 	public static float TimeScale { get; }
 	public static string lastRecordedDemoName { get; set; }
@@ -1410,53 +1420,53 @@ public class Demo : ConsoleSystem // TypeDefIndex: 13695
 
 	public static void set_hud(bool value) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void togglehud(ConsoleSystem.Arg arg) { }
 
 	public static float get_TimeScale() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string record(string filename) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void recorder() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string stop() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string play(string filename) { }
 
 	public static void TryRunDemoCfg(string demoName) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string skip(float seconds) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string jump(float seconds) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string playernames() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void browser() { }
 
 	public static string get_lastRecordedDemoName() { }
 
 	public static void set_lastRecordedDemoName(string value) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string toggleNVG(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string pause() { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static string resume() { }
 
 	public static string playShot(DemoShot shot) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void readcfg() { }
 
 	public void .ctor() { }
@@ -1465,7 +1475,7 @@ public class Demo : ConsoleSystem // TypeDefIndex: 13695
 
 }
 
-public class Demo.Header : DemoHeader, IDemoHeader // TypeDefIndex: 13696
+public class Demo.Header : DemoHeader, IDemoHeader // TypeDefIndex: 13712
 {
 	private long Network.IDemoHeader.Length { get; set; }
 

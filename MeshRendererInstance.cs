@@ -1,11 +1,11 @@
-public struct MeshRendererInstance // TypeDefIndex: 10893
+public struct MeshRendererInstance // TypeDefIndex: 10899
 {
-	public Renderer renderer; 
-	public OBB bounds; 
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 scale; 
-	public MeshCache.Data data; 
+	public Renderer renderer;
+	public OBB bounds;
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 scale;
+	public MeshCache.Data data;
 
 	public Mesh mesh { get; set; }
 

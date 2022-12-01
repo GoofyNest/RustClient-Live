@@ -1,27 +1,27 @@
 public struct ContactFilter2D // TypeDefIndex: 4086
 {
-	[NativeNameAttribute] 
-	public bool useTriggers; 
-	[NativeNameAttribute] 
-	public bool useLayerMask; 
-	[NativeNameAttribute] 
-	public bool useDepth; 
-	[NativeNameAttribute] 
-	public bool useOutsideDepth; 
-	[NativeNameAttribute] 
-	public bool useNormalAngle; 
-	[NativeNameAttribute] 
-	public bool useOutsideNormalAngle; 
-	[NativeNameAttribute] 
-	public LayerMask layerMask; 
-	[NativeNameAttribute] 
-	public float minDepth; 
-	[NativeNameAttribute] 
-	public float maxDepth; 
-	[NativeNameAttribute] 
-	public float minNormalAngle; 
-	[NativeNameAttribute] 
-	public float maxNormalAngle; 
+	[NativeNameAttribute]
+	public bool useTriggers;
+	[NativeNameAttribute]
+	public bool useLayerMask;
+	[NativeNameAttribute]
+	public bool useDepth;
+	[NativeNameAttribute]
+	public bool useOutsideDepth;
+	[NativeNameAttribute]
+	public bool useNormalAngle;
+	[NativeNameAttribute]
+	public bool useOutsideNormalAngle;
+	[NativeNameAttribute]
+	public LayerMask layerMask;
+	[NativeNameAttribute]
+	public float minDepth;
+	[NativeNameAttribute]
+	public float maxDepth;
+	[NativeNameAttribute]
+	public float minNormalAngle;
+	[NativeNameAttribute]
+	public float maxNormalAngle;
 
 
 	private void CheckConsistency() { }

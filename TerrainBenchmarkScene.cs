@@ -1,9 +1,9 @@
-public class TerrainBenchmarkScene : BenchmarkScene // TypeDefIndex: 9982
+public class TerrainBenchmarkScene : BenchmarkScene // TypeDefIndex: 9984
 {
-	public Terrain terrain; 
-	private TerrainMeta terrainMeta; 
-	public Transform viewpointA; 
-	public Transform viewpointB; 
+	public Terrain terrain;
+	private TerrainMeta terrainMeta;
+	public Transform viewpointA;
+	public Transform viewpointB;
 
 
 	private void Awake() { }

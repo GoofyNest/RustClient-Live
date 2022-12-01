@@ -1,6 +1,6 @@
 public enum BuiltinShaderType // TypeDefIndex: 3835
 {
-	public int value__; 
+	public int value__;
 	public const BuiltinShaderType DeferredShading = 0;
 	public const BuiltinShaderType DeferredReflections = 1;
 	public const BuiltinShaderType LegacyDeferredLighting = 2;

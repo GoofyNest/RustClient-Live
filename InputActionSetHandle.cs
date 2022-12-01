@@ -1,6 +1,6 @@
-internal struct InputActionSetHandle_t : IEquatable<InputActionSetHandle_t>, IComparable<InputActionSetHandle_t> // TypeDefIndex: 5538
+internal struct InputActionSetHandle_t : IEquatable<InputActionSetHandle_t>, IComparable<InputActionSetHandle_t> // TypeDefIndex: 5540
 {
-	public ulong Value; 
+	public ulong Value;
 
 
 	public override string ToString() { }

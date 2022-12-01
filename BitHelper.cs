@@ -1,9 +1,9 @@
 internal sealed class BitHelper // TypeDefIndex: 3253
 {
-	private readonly int _length; 
-	private readonly int* _arrayPtr; 
-	private readonly int[] _array; 
-	private readonly bool _useStackAlloc; 
+	private readonly int _length;
+	private readonly int* _arrayPtr;
+	private readonly int[] _array;
+	private readonly bool _useStackAlloc;
 
 
 	internal void .ctor(int* bitArrayPtr, int length) { }

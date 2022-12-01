@@ -1,10 +1,10 @@
-public static class Import // TypeDefIndex: 7808
+public static class Import // TypeDefIndex: 7810
 {
 
 internal class <Module>
 
 public static class Import
-	private static Regex regex; 
+	private static Regex regex;
 
 
 	public static T[] FromUrl<T>(string sheetId) { }
@@ -21,9 +21,9 @@ public static class Import
 
 }
 
-private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7809
+private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7811
 {
-	public string[] columnNames; 
+	public string[] columnNames;
 
 
 	public void .ctor() { }
@@ -34,11 +34,11 @@ private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7809
 
 }
 
-private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7810
+private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7812
 {
-	public int i; 
+	public int i;
 	public Import.<>c
-	public Func<PropertyInfo, bool> <>9__0; 
+	public Func<PropertyInfo, bool> <>9__0;
 
 
 	public void .ctor() { }
@@ -55,11 +55,11 @@ private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7810
 
 }
 
-private sealed class Import.<>c // TypeDefIndex: 7811
+private sealed class Import.<>c // TypeDefIndex: 7813
 {
-	public static readonly Import.<>c <>9; 
-	public static Func<Match, string> <>9__2_0; 
-	public static RemoteCertificateValidationCallback <>9__3_0; 
+	public static readonly Import.<>c <>9;
+	public static Func<Match, string> <>9__2_0;
+	public static RemoteCertificateValidationCallback <>9__3_0;
 
 
 	private static void .cctor() { }

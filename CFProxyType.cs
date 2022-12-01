@@ -1,6 +1,6 @@
 internal enum CFProxyType // TypeDefIndex: 2522
 {
-	public int value__; 
+	public int value__;
 	public const CFProxyType None = 0;
 	public const CFProxyType AutoConfigurationUrl = 1;
 	public const CFProxyType AutoConfigurationJavaScript = 2;

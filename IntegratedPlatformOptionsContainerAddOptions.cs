@@ -1,15 +1,15 @@
-public struct IntegratedPlatformOptionsContainerAddOptions // TypeDefIndex: 9373
+public struct IntegratedPlatformOptionsContainerAddOptions // TypeDefIndex: 9375
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<Options> <Options>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<Options> <Options>k__BackingField;
 
 	public Nullable<Options> Options { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Options> get_Options() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Options(Nullable<Options> value) { }
 
 }

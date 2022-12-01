@@ -1,9 +1,9 @@
 public abstract class HashAlgorithm : IDisposable, ICryptoTransform // TypeDefIndex: 959
 {
-	protected int HashSizeValue; 
-	protected internal byte[] HashValue; 
-	protected int State; 
-	private bool m_bDisposed; 
+	protected int HashSizeValue;
+	protected internal byte[] HashValue;
+	protected int State;
+	private bool m_bDisposed;
 
 	public virtual int HashSize { get; }
 	public virtual byte[] Hash { get; }

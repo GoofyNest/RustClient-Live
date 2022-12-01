@@ -1,8 +1,8 @@
-public class ArcadeGame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6510
+public class ArcadeGame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6512
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<ArcadeGame.arcadeEnt> arcadeEnts; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<ArcadeGame.arcadeEnt> arcadeEnts;
 
 
 	public static void ResetToPool(ArcadeGame instance) { }
@@ -59,23 +59,23 @@ public class ArcadeGame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 651
 
 }
 
-public class ArcadeGame.arcadeEnt : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6511
+public class ArcadeGame.arcadeEnt : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6513
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint id; 
-	public string name; 
-	public uint spriteID; 
-	public uint soundID; 
-	public bool visible; 
-	public Vector3 position; 
-	public Vector3 heading; 
-	public bool enabled; 
-	public Vector3 scale; 
-	public Vector3 colliderScale; 
-	public float alpha; 
-	public uint prefabID; 
-	public uint parentID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint id;
+	public string name;
+	public uint spriteID;
+	public uint soundID;
+	public bool visible;
+	public Vector3 position;
+	public Vector3 heading;
+	public bool enabled;
+	public Vector3 scale;
+	public Vector3 colliderScale;
+	public float alpha;
+	public uint prefabID;
+	public uint parentID;
 
 
 	public static void ResetToPool(ArcadeGame.arcadeEnt instance) { }

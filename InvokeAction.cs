@@ -1,10 +1,10 @@
-public struct InvokeAction : IEquatable<InvokeAction> // TypeDefIndex: 5575
+public struct InvokeAction : IEquatable<InvokeAction> // TypeDefIndex: 5577
 {
-	public Behaviour sender; 
-	public Action action; 
-	public float initial; 
-	public float repeat; 
-	public float random; 
+	public Behaviour sender;
+	public Action action;
+	public float initial;
+	public float repeat;
+	public float random;
 
 
 	public void .ctor(Behaviour sender, Action action, float initial = 0, float repeat = -1, float random = 0) { }

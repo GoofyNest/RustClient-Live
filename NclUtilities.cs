@@ -1,8 +1,8 @@
 internal static class NclUtilities // TypeDefIndex: 2887
 {
-	private static IPAddress[] _LocalAddresses; 
-	private static object _LocalAddressesLock; 
-	internal static string _LocalDomainName; 
+	private static IPAddress[] _LocalAddresses;
+	private static object _LocalAddressesLock;
+	internal static string _LocalDomainName;
 
 	internal static IPAddress[] LocalAddresses { get; }
 	private static object LocalAddressesLock { get; }

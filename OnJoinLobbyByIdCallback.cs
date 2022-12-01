@@ -1,4 +1,4 @@
-public sealed class OnJoinLobbyByIdCallback : MulticastDelegate // TypeDefIndex: 9216
+public sealed class OnJoinLobbyByIdCallback : MulticastDelegate // TypeDefIndex: 9218
 {
 
 	public void .ctor(object object, IntPtr method) { }

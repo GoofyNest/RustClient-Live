@@ -1,7 +1,7 @@
 internal sealed class LocalDataStoreElement // TypeDefIndex: 145
 {
-	private object m_value; 
-	private long m_cookie; 
+	private object m_value;
+	private long m_cookie;
 
 	public object Value { get; set; }
 	public long Cookie { get; }

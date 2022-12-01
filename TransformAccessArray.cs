@@ -1,6 +1,6 @@
 public struct TransformAccessArray : IDisposable // TypeDefIndex: 3593
 {
-	private IntPtr m_TransformArray; 
+	private IntPtr m_TransformArray;
 
 	public bool isCreated { get; }
 
@@ -17,19 +17,19 @@ public struct TransformAccessArray : IDisposable // TypeDefIndex: 3593
 
 	public void Add(Transform transform) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static IntPtr Create(int capacity, int desiredJobCount) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static void DestroyTransformAccessArray(IntPtr transformArray) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static void Add(IntPtr transformArrayIntPtr, Transform transform) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	internal static IntPtr GetSortedTransformAccess(IntPtr transformArrayIntPtr) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	internal static IntPtr GetSortedToUserIndex(IntPtr transformArrayIntPtr) { }
 
 }

@@ -1,9 +1,9 @@
-public class Profile // TypeDefIndex: 11110
+public class Profile // TypeDefIndex: 11116
 {
-	public Stopwatch watch; 
-	public string category; 
-	public string name; 
-	public float warnTime; 
+	public Stopwatch watch;
+	public string category;
+	public string name;
+	public float warnTime;
 
 
 	public void .ctor(string cat, string nam, float WarnTime = 1) { }
@@ -14,17 +14,17 @@ public class Profile // TypeDefIndex: 11110
 
 }
 
-public class Profile : ConsoleSystem // TypeDefIndex: 13745
+public class Profile : ConsoleSystem // TypeDefIndex: 13761
 {
 
 	private static void NeedProfileFolder() { }
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void start(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
-	[ClientVar] 
+	[ServerVar]
+	[ClientVar]
 	public static void stop(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }

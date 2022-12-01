@@ -1,9 +1,9 @@
-public sealed class SmpteTimeDivision : TimeDivision // TypeDefIndex: 7625
+public sealed class SmpteTimeDivision : TimeDivision // TypeDefIndex: 7627
 {
-	[CompilerGeneratedAttribute] 
-	private readonly SmpteFormat <Format>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly byte <Resolution>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly SmpteFormat <Format>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly byte <Resolution>k__BackingField;
 
 	public SmpteFormat Format { get; }
 	public byte Resolution { get; }
@@ -11,10 +11,10 @@ public sealed class SmpteTimeDivision : TimeDivision // TypeDefIndex: 7625
 
 	public void .ctor(SmpteFormat format, byte resolution) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public SmpteFormat get_Format() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_Resolution() { }
 
 	public static bool op_Equality(SmpteTimeDivision timeDivision1, SmpteTimeDivision timeDivision2) { }

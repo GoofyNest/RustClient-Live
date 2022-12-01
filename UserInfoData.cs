@@ -1,17 +1,17 @@
-public struct UserInfoData // TypeDefIndex: 8327
+public struct UserInfoData // TypeDefIndex: 8329
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <UserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Country>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <PreferredLanguage>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Nickname>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayNameSanitized>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <UserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Country>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <PreferredLanguage>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Nickname>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayNameSanitized>k__BackingField;
 
 	public EpicAccountId UserId { get; set; }
 	public Utf8String Country { get; set; }
@@ -21,40 +21,40 @@ public struct UserInfoData // TypeDefIndex: 8327
 	public Utf8String DisplayNameSanitized { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Country() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Country(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_PreferredLanguage() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PreferredLanguage(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Nickname() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Nickname(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayNameSanitized() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayNameSanitized(Utf8String value) { }
 
 	internal void Set(ref UserInfoDataInternal other) { }

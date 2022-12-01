@@ -1,8 +1,8 @@
 internal class CADMethodReturnMessage : CADMessageBase // TypeDefIndex: 1229
 {
-	private object _returnValue; 
-	private CADArgHolder _exception; 
-	private Type[] _sig; 
+	private object _returnValue;
+	private CADArgHolder _exception;
+	private Type[] _sig;
 
 	internal int PropertiesCount { get; }
 

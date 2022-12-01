@@ -1,10 +1,10 @@
-public class Magazine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6324
+public class Magazine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6326
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int capacity; 
-	public int contents; 
-	public int ammoType; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int capacity;
+	public int contents;
+	public int ammoType;
 
 
 	public static void ResetToPool(Magazine instance) { }

@@ -1,13 +1,13 @@
-public class WaterMesh // TypeDefIndex: 12367
+public class WaterMesh // TypeDefIndex: 12375
 {
-	private Mesh borderMesh; 
-	private Mesh centerPatch; 
-	private int borderRingCount; 
-	private float borderRingSpacingFalloff; 
-	private int resolution; 
-	private Vector3[] borderVerticesLocal; 
-	private Vector3[] borderVerticesWorld; 
-	private bool initialized; 
+	private Mesh borderMesh;
+	private Mesh centerPatch;
+	private int borderRingCount;
+	private float borderRingSpacingFalloff;
+	private int resolution;
+	private Vector3[] borderVerticesLocal;
+	private Vector3[] borderVerticesWorld;
+	private bool initialized;
 
 	public Mesh BorderMesh { get; }
 	public Mesh CenterPatch { get; }

@@ -1,6 +1,6 @@
-public class OggEncoder : IDisposable // TypeDefIndex: 10741
+public class OggEncoder : IDisposable // TypeDefIndex: 10745
 {
-	private IntPtr _nativeEncoder; 
+	private IntPtr _nativeEncoder;
 
 
 	private static extern IntPtr OGG_CreateEncoder(int sampleRate) { }

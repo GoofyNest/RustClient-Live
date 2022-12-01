@@ -1,18 +1,18 @@
-public abstract class ByteEncoding : MonoEncoding // TypeDefIndex: 7384
+public abstract class ByteEncoding : MonoEncoding // TypeDefIndex: 7386
 {
-	protected char[] toChars; 
-	protected string encodingName; 
-	protected string bodyName; 
-	protected string headerName; 
-	protected string webName; 
-	protected bool isBrowserDisplay; 
-	protected bool isBrowserSave; 
-	protected bool isMailNewsDisplay; 
-	protected bool isMailNewsSave; 
-	protected int windowsCodePage; 
-	private static byte[] isNormalized; 
-	private static byte[] isNormalizedComputed; 
-	private static byte[] normalization_bytes; 
+	protected char[] toChars;
+	protected string encodingName;
+	protected string bodyName;
+	protected string headerName;
+	protected string webName;
+	protected bool isBrowserDisplay;
+	protected bool isBrowserSave;
+	protected bool isMailNewsDisplay;
+	protected bool isMailNewsSave;
+	protected int windowsCodePage;
+	private static byte[] isNormalized;
+	private static byte[] isNormalizedComputed;
+	private static byte[] normalization_bytes;
 
 	public override bool IsSingleByte { get; }
 	public override string BodyName { get; }

@@ -1,10 +1,10 @@
-public class TreeMarker : BaseEntity // TypeDefIndex: 9983
+public class TreeMarker : BaseEntity // TypeDefIndex: 9985
 {
-	public GameObjectRef hitEffect; 
-	public SoundDefinition hitEffectSound; 
-	public GameObjectRef spawnEffect; 
-	private Vector3 initialPosition; 
-	public bool SpherecastOnInit; 
+	public GameObjectRef hitEffect;
+	public SoundDefinition hitEffectSound;
+	public GameObjectRef spawnEffect;
+	private Vector3 initialPosition;
+	public bool SpherecastOnInit;
 	private const float markerDistSq = 900;
 
 
@@ -12,7 +12,7 @@ public class TreeMarker : BaseEntity // TypeDefIndex: 9983
 
 	public override void PostNetworkUpdate() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void MarkerHit(BaseEntity.RPCMessage msg) { }
 
 	public void UpdatePositioning() { }

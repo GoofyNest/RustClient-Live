@@ -1,11 +1,11 @@
-public class MeshDataBatch : MeshBatch // TypeDefIndex: 13178
+public class MeshDataBatch : MeshBatch // TypeDefIndex: 13193
 {
-	private Vector3 position; 
-	private Mesh meshBatch; 
-	private MeshFilter meshFilter; 
-	private MeshRenderer meshRenderer; 
-	private MeshData meshData; 
-	private MeshGroup meshGroup; 
+	private Vector3 position;
+	private Mesh meshBatch;
+	private MeshFilter meshFilter;
+	private MeshRenderer meshRenderer;
+	private MeshData meshData;
+	private MeshGroup meshGroup;
 
 	public override int VertexCapacity { get; }
 	public override int VertexCutoff { get; }

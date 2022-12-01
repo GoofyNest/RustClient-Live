@@ -1,10 +1,10 @@
-public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6508
+public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6510
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public WorldMessage.MessageType status; 
-	public List<PrefabData> prefabs; 
-	public List<PathData> paths; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public WorldMessage.MessageType status;
+	public List<PrefabData> prefabs;
+	public List<PathData> paths;
 
 
 	public static void ResetToPool(WorldMessage instance) { }
@@ -61,9 +61,9 @@ public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public enum WorldMessage.MessageType // TypeDefIndex: 6509
+public enum WorldMessage.MessageType // TypeDefIndex: 6511
 {
-	public int value__; 
+	public int value__;
 	public const WorldMessage.MessageType Request = 1;
 	public const WorldMessage.MessageType Receive = 2;
 	public const WorldMessage.MessageType Done = 3;

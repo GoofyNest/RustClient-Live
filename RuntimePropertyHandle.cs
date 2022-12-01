@@ -1,6 +1,6 @@
 internal struct RuntimePropertyHandle // TypeDefIndex: 9
 {
-	private IntPtr value; 
+	private IntPtr value;
 
 	public IntPtr Value { get; }
 

@@ -1,17 +1,17 @@
 internal class CookieTokenizer // TypeDefIndex: 2936
 {
-	private bool m_eofCookie; 
-	private int m_index; 
-	private int m_length; 
-	private string m_name; 
-	private bool m_quoted; 
-	private int m_start; 
-	private CookieToken m_token; 
-	private int m_tokenLength; 
-	private string m_tokenStream; 
-	private string m_value; 
-	private static CookieTokenizer.RecognizedAttribute[] RecognizedAttributes; 
-	private static CookieTokenizer.RecognizedAttribute[] RecognizedServerAttributes; 
+	private bool m_eofCookie;
+	private int m_index;
+	private int m_length;
+	private string m_name;
+	private bool m_quoted;
+	private int m_start;
+	private CookieToken m_token;
+	private int m_tokenLength;
+	private string m_tokenStream;
+	private string m_value;
+	private static CookieTokenizer.RecognizedAttribute[] RecognizedAttributes;
+	private static CookieTokenizer.RecognizedAttribute[] RecognizedServerAttributes;
 
 	internal bool EndOfCookie { get; set; }
 	internal bool Eof { get; }
@@ -61,8 +61,8 @@ internal class CookieTokenizer // TypeDefIndex: 2936
 
 private struct CookieTokenizer.RecognizedAttribute // TypeDefIndex: 2937
 {
-	private string m_name; 
-	private CookieToken m_token; 
+	private string m_name;
+	private CookieToken m_token;
 
 	internal CookieToken Token { get; }
 

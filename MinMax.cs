@@ -1,7 +1,7 @@
-public class MinMax // TypeDefIndex: 13073
+public class MinMax // TypeDefIndex: 13088
 {
-	public float x; 
-	public float y; 
+	public float x;
+	public float y;
 
 
 	public void .ctor(float x, float y) { }

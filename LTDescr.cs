@@ -1,56 +1,56 @@
-public class LTDescr // TypeDefIndex: 5576
+public class LTDescr // TypeDefIndex: 5578
 {
-	public bool toggle; 
-	public bool useEstimatedTime; 
-	public bool useFrames; 
-	public bool useManualTime; 
-	public bool usesNormalDt; 
-	public bool hasInitiliazed; 
-	public bool hasExtraOnCompletes; 
-	public bool hasPhysics; 
-	public bool onCompleteOnRepeat; 
-	public bool onCompleteOnStart; 
-	public bool useRecursion; 
-	public float ratioPassed; 
-	public float passed; 
-	public float delay; 
-	public float time; 
-	public float speed; 
-	public float lastVal; 
-	private uint _id; 
-	public int loopCount; 
-	public uint counter; 
-	public float direction; 
-	public float directionLast; 
-	public float overshoot; 
-	public float period; 
-	public float scale; 
-	public bool destroyOnComplete; 
-	public Transform trans; 
-	public LTRect ltRect; 
-	internal Vector3 fromInternal; 
-	internal Vector3 toInternal; 
-	internal Vector3 diff; 
-	internal Vector3 diffDiv2; 
-	public TweenAction type; 
-	private LeanTweenType easeType; 
-	public LeanTweenType loopType; 
-	public bool hasUpdateCallback; 
-	public LTDescr.EaseTypeDelegate easeMethod; 
-	[CompilerGeneratedAttribute] 
-	private LTDescr.ActionMethodDelegate <easeInternal>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LTDescr.ActionMethodDelegate <initInternal>k__BackingField; 
-	public SpriteRenderer spriteRen; 
-	public RectTransform rectTransform; 
-	public Text uiText; 
-	public Image uiImage; 
-	public RawImage rawImage; 
-	public Sprite[] sprites; 
-	public LTDescrOptional _optional; 
-	public static float val; 
-	public static float dt; 
-	public static Vector3 newVect; 
+	public bool toggle;
+	public bool useEstimatedTime;
+	public bool useFrames;
+	public bool useManualTime;
+	public bool usesNormalDt;
+	public bool hasInitiliazed;
+	public bool hasExtraOnCompletes;
+	public bool hasPhysics;
+	public bool onCompleteOnRepeat;
+	public bool onCompleteOnStart;
+	public bool useRecursion;
+	public float ratioPassed;
+	public float passed;
+	public float delay;
+	public float time;
+	public float speed;
+	public float lastVal;
+	private uint _id;
+	public int loopCount;
+	public uint counter;
+	public float direction;
+	public float directionLast;
+	public float overshoot;
+	public float period;
+	public float scale;
+	public bool destroyOnComplete;
+	public Transform trans;
+	public LTRect ltRect;
+	internal Vector3 fromInternal;
+	internal Vector3 toInternal;
+	internal Vector3 diff;
+	internal Vector3 diffDiv2;
+	public TweenAction type;
+	private LeanTweenType easeType;
+	public LeanTweenType loopType;
+	public bool hasUpdateCallback;
+	public LTDescr.EaseTypeDelegate easeMethod;
+	[CompilerGeneratedAttribute]
+	private LTDescr.ActionMethodDelegate <easeInternal>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LTDescr.ActionMethodDelegate <initInternal>k__BackingField;
+	public SpriteRenderer spriteRen;
+	public RectTransform rectTransform;
+	public Text uiText;
+	public Image uiImage;
+	public RawImage rawImage;
+	public Sprite[] sprites;
+	public LTDescrOptional _optional;
+	public static float val;
+	public static float dt;
+	public static Vector3 newVect;
 
 	public Vector3 from { get; set; }
 	public Vector3 to { get; set; }
@@ -69,23 +69,23 @@ public class LTDescr // TypeDefIndex: 5576
 
 	public void set_to(Vector3 value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LTDescr.ActionMethodDelegate get_easeInternal() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_easeInternal(LTDescr.ActionMethodDelegate value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LTDescr.ActionMethodDelegate get_initInternal() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_initInternal(LTDescr.ActionMethodDelegate value) { }
 
 	public override string ToString() { }
 
 	public void .ctor() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public LTDescr cancel(GameObject gameObject) { }
 
 	public int get_uniqueId() { }
@@ -500,279 +500,279 @@ public class LTDescr // TypeDefIndex: 5576
 
 	public LTDescr setRecursive(bool useRecursion) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocalX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocalX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocalY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocalY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocalZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocalZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveCurved>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveCurvedLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveSpline>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveSplineLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScaleX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScaleX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScaleY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScaleY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScaleZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScaleZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateAround>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateAround>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateAroundLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateAroundLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setTextAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setTextAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setAlphaVertex>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setAlphaVertex>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCallbackColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCallbackColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setTextColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setTextColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasGroupAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasGroupAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasColor>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMoveX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMoveX>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMoveY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMoveY>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMoveZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMoveZ>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasRotateAround>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasRotateAroundLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasPlaySprite>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasPlaySprite>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMove>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasMove>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasScale>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasScale>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasSizeDelta>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setCanvasSizeDelta>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMove>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMove>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveToTransform>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setMoveToTransform>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotate>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotate>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setRotateLocal>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScale>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setScale>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIMove>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIMove>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIMoveMargin>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIMoveMargin>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIScale>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIScale>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIAlpha>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIRotate>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setGUIRotate>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <setDelayedSound>
 
 }
 
-public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex: 5577
+public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex: 5579
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -785,7 +785,7 @@ public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex
 
 }
 
-public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefIndex: 5578
+public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefIndex: 5580
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -798,11 +798,11 @@ public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefI
 
 }
 
-private sealed class LTDescr.<>c // TypeDefIndex: 5579
+private sealed class LTDescr.<>c // TypeDefIndex: 5581
 {
-	public static readonly LTDescr.<>c <>9; 
-	public static LTDescr.ActionMethodDelegate <>9__110_0; 
-	public static LTDescr.ActionMethodDelegate <>9__111_0; 
+	public static readonly LTDescr.<>c <>9;
+	public static LTDescr.ActionMethodDelegate <>9__110_0;
+	public static LTDescr.ActionMethodDelegate <>9__111_0;
 
 
 	private static void .cctor() { }

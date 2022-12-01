@@ -1,25 +1,25 @@
-public struct DefinitionV2 // TypeDefIndex: 9911
+public struct DefinitionV2 // TypeDefIndex: 9913
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AchievementId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <UnlockedDisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <UnlockedDescription>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LockedDisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LockedDescription>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <FlavorText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <UnlockedIconURL>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LockedIconURL>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsHidden>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private StatThresholds[] <StatThresholds>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <AchievementId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <UnlockedDisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <UnlockedDescription>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LockedDisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LockedDescription>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <FlavorText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <UnlockedIconURL>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LockedIconURL>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsHidden>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private StatThresholds[] <StatThresholds>k__BackingField;
 
 	public Utf8String AchievementId { get; set; }
 	public Utf8String UnlockedDisplayName { get; set; }
@@ -33,64 +33,64 @@ public struct DefinitionV2 // TypeDefIndex: 9911
 	public StatThresholds[] StatThresholds { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AchievementId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_UnlockedDisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnlockedDisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_UnlockedDescription() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnlockedDescription(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LockedDisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LockedDisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LockedDescription() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LockedDescription(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_FlavorText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FlavorText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_UnlockedIconURL() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnlockedIconURL(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LockedIconURL() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LockedIconURL(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsHidden() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsHidden(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public StatThresholds[] get_StatThresholds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StatThresholds(StatThresholds[] value) { }
 
 	internal void Set(ref DefinitionV2Internal other) { }

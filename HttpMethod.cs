@@ -1,13 +1,13 @@
-public class HttpMethod : IEquatable<HttpMethod> // TypeDefIndex: 5759
+public class HttpMethod : IEquatable<HttpMethod> // TypeDefIndex: 5761
 {
-	private static readonly HttpMethod delete_method; 
-	private static readonly HttpMethod get_method; 
-	private static readonly HttpMethod head_method; 
-	private static readonly HttpMethod options_method; 
-	private static readonly HttpMethod post_method; 
-	private static readonly HttpMethod put_method; 
-	private static readonly HttpMethod trace_method; 
-	private readonly string method; 
+	private static readonly HttpMethod delete_method;
+	private static readonly HttpMethod get_method;
+	private static readonly HttpMethod head_method;
+	private static readonly HttpMethod options_method;
+	private static readonly HttpMethod post_method;
+	private static readonly HttpMethod put_method;
+	private static readonly HttpMethod trace_method;
+	private readonly string method;
 
 	public static HttpMethod Get { get; }
 	public string Method { get; }

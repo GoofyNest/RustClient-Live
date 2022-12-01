@@ -1,11 +1,11 @@
-internal struct RegisterClientOptionsInternal : ISettable<RegisterClientOptions>, IDisposable // TypeDefIndex: 9742
+internal struct RegisterClientOptionsInternal : ISettable<RegisterClientOptions>, IDisposable // TypeDefIndex: 9744
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ClientHandle; 
-	private AntiCheatCommonClientType m_ClientType; 
-	private AntiCheatCommonClientPlatform m_ClientPlatform; 
-	private IntPtr m_AccountId; 
-	private IntPtr m_IpAddress; 
+	private int m_ApiVersion;
+	private IntPtr m_ClientHandle;
+	private AntiCheatCommonClientType m_ClientType;
+	private AntiCheatCommonClientPlatform m_ClientPlatform;
+	private IntPtr m_AccountId;
+	private IntPtr m_IpAddress;
 
 	public IntPtr ClientHandle { set; }
 	public AntiCheatCommonClientType ClientType { set; }

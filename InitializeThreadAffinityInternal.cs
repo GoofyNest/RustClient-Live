@@ -1,12 +1,12 @@
-internal struct InitializeThreadAffinityInternal : IGettable<InitializeThreadAffinity>, ISettable<InitializeThreadAffinity>, IDisposable // TypeDefIndex: 9873
+internal struct InitializeThreadAffinityInternal : IGettable<InitializeThreadAffinity>, ISettable<InitializeThreadAffinity>, IDisposable // TypeDefIndex: 9875
 {
-	private int m_ApiVersion; 
-	private ulong m_NetworkWork; 
-	private ulong m_StorageIo; 
-	private ulong m_WebSocketIo; 
-	private ulong m_P2PIo; 
-	private ulong m_HttpRequestIo; 
-	private ulong m_RTCIo; 
+	private int m_ApiVersion;
+	private ulong m_NetworkWork;
+	private ulong m_StorageIo;
+	private ulong m_WebSocketIo;
+	private ulong m_P2PIo;
+	private ulong m_HttpRequestIo;
+	private ulong m_RTCIo;
 
 	public ulong NetworkWork { get; set; }
 	public ulong StorageIo { get; set; }

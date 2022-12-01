@@ -1,25 +1,25 @@
 public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 {
-	internal IntPtr m_Ptr; 
-	internal DownloadHandler m_DownloadHandler; 
-	internal UploadHandler m_UploadHandler; 
-	internal CertificateHandler m_CertificateHandler; 
-	internal Uri m_Uri; 
+	internal IntPtr m_Ptr;
+	internal DownloadHandler m_DownloadHandler;
+	internal UploadHandler m_UploadHandler;
+	internal CertificateHandler m_CertificateHandler;
+	internal Uri m_Uri;
 	public const string kHttpVerbGET = "GET";
 	public const string kHttpVerbHEAD = "HEAD";
 	public const string kHttpVerbPOST = "POST";
 	public const string kHttpVerbPUT = "PUT";
 	public const string kHttpVerbCREATE = "CREATE";
 	public const string kHttpVerbDELETE = "DELETE";
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <disposeCertificateHandlerOnDispose>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private bool <disposeDownloadHandlerOnDispose>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private bool <disposeUploadHandlerOnDispose>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <disposeCertificateHandlerOnDispose>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private bool <disposeDownloadHandlerOnDispose>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private bool <disposeUploadHandlerOnDispose>k__BackingField;
 
 	public bool disposeCertificateHandlerOnDispose { get; set; }
 	public bool disposeDownloadHandlerOnDispose { get; set; }
@@ -33,7 +33,7 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 	public bool isNetworkError { get; }
 	public bool isHttpError { get; }
 	public float downloadProgress { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public bool chunkedTransfer { set; }
 	public UploadHandler uploadHandler { get; set; }
 	public DownloadHandler downloadHandler { get; set; }
@@ -41,34 +41,34 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 	public int timeout { set; }
 
 
-	[NativeMethodAttribute] 
-	[NativeConditionalAttribute] 
+	[NativeMethodAttribute]
+	[NativeConditionalAttribute]
 	private static string GetWebErrorString(UnityWebRequest.UnityWebRequestError err) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static string GetHTTPStatusString(long responseCode) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_disposeCertificateHandlerOnDispose() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_disposeCertificateHandlerOnDispose(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_disposeDownloadHandlerOnDispose() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_disposeDownloadHandlerOnDispose(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_disposeUploadHandlerOnDispose() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_disposeUploadHandlerOnDispose(bool value) { }
 
 	internal static IntPtr Create() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void Release() { }
 
 	internal void InternalDestroy() { }
@@ -87,15 +87,15 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 
 	private void DisposeHandlers() { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	internal UnityWebRequestAsyncOperation BeginWebRequest() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public AsyncOperation Send() { }
 
 	public UnityWebRequestAsyncOperation SendWebRequest() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void Abort() { }
 
 	private UnityWebRequest.UnityWebRequestError SetMethod(UnityWebRequest.UnityWebRequestMethod methodType) { }
@@ -126,16 +126,16 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 
 	private bool IsExecuting() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isModifiable() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isDone() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isNetworkError() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool get_isHttpError() { }
 
 	private float GetDownloadProgress() { }
@@ -146,7 +146,7 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 
 	public void set_chunkedTransfer(bool value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	internal UnityWebRequest.UnityWebRequestError InternalSetRequestHeader(string name, string value) { }
 
 	public void SetRequestHeader(string name, string value) { }
@@ -189,7 +189,7 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4133
 
 internal enum UnityWebRequest.UnityWebRequestMethod // TypeDefIndex: 4134
 {
-	public int value__; 
+	public int value__;
 	public const UnityWebRequest.UnityWebRequestMethod Get = 0;
 	public const UnityWebRequest.UnityWebRequestMethod Post = 1;
 	public const UnityWebRequest.UnityWebRequestMethod Put = 2;
@@ -200,7 +200,7 @@ internal enum UnityWebRequest.UnityWebRequestMethod // TypeDefIndex: 4134
 
 internal enum UnityWebRequest.UnityWebRequestError // TypeDefIndex: 4135
 {
-	public int value__; 
+	public int value__;
 	public const UnityWebRequest.UnityWebRequestError OK = 0;
 	public const UnityWebRequest.UnityWebRequestError Unknown = 1;
 	public const UnityWebRequest.UnityWebRequestError SDKError = 2;

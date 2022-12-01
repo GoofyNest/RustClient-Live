@@ -1,26 +1,26 @@
-public class TimerAIEvent : BaseAIEvent // TypeDefIndex: 11150
+public class TimerAIEvent : BaseAIEvent // TypeDefIndex: 11156
 {
-	[CompilerGeneratedAttribute] 
-	private float <DurationMin>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <DurationMax>k__BackingField; 
-	protected float currentDuration; 
-	protected float elapsedDuration; 
+	[CompilerGeneratedAttribute]
+	private float <DurationMin>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <DurationMax>k__BackingField;
+	protected float currentDuration;
+	protected float elapsedDuration;
 
 	public float DurationMin { get; set; }
 	public float DurationMax { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_DurationMin() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DurationMin(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_DurationMax() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DurationMax(float value) { }
 
 	public void .ctor() { }

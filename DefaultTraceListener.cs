@@ -1,11 +1,11 @@
 public class DefaultTraceListener : TraceListener // TypeDefIndex: 2655
 {
-	private static readonly bool OnWin32; 
-	private static readonly string MonoTracePrefix; 
-	private static readonly string MonoTraceFile; 
-	private string logFileName; 
+	private static readonly bool OnWin32;
+	private static readonly string MonoTracePrefix;
+	private static readonly string MonoTraceFile;
+	private string logFileName;
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public string LogFileName { get; }
 
 

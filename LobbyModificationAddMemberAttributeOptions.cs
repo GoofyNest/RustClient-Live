@@ -1,24 +1,24 @@
-public struct LobbyModificationAddMemberAttributeOptions // TypeDefIndex: 9168
+public struct LobbyModificationAddMemberAttributeOptions // TypeDefIndex: 9170
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<AttributeData> <Attribute>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LobbyAttributeVisibility <Visibility>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<AttributeData> <Attribute>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LobbyAttributeVisibility <Visibility>k__BackingField;
 
 	public Nullable<AttributeData> Attribute { get; set; }
 	public LobbyAttributeVisibility Visibility { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<AttributeData> get_Attribute() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Attribute(Nullable<AttributeData> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LobbyAttributeVisibility get_Visibility() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Visibility(LobbyAttributeVisibility value) { }
 
 }

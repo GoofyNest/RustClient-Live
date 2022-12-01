@@ -1,16 +1,16 @@
 public abstract class WebRequest : MarshalByRefObject, ISerializable // TypeDefIndex: 2905
 {
-	private static ArrayList s_PrefixList; 
-	private static object s_InternalSyncObject; 
-	private static TimerThread.Queue s_DefaultTimerQueue; 
-	private AuthenticationLevel m_AuthenticationLevel; 
-	private TokenImpersonationLevel m_ImpersonationLevel; 
-	private RequestCachePolicy m_CachePolicy; 
-	private RequestCacheProtocol m_CacheProtocol; 
-	private RequestCacheBinding m_CacheBinding; 
-	private static WebRequest.DesignerWebRequestCreate webRequestCreate; 
-	private static IWebProxy s_DefaultWebProxy; 
-	private static bool s_DefaultWebProxyInitialized; 
+	private static ArrayList s_PrefixList;
+	private static object s_InternalSyncObject;
+	private static TimerThread.Queue s_DefaultTimerQueue;
+	private AuthenticationLevel m_AuthenticationLevel;
+	private TokenImpersonationLevel m_ImpersonationLevel;
+	private RequestCachePolicy m_CachePolicy;
+	private RequestCacheProtocol m_CacheProtocol;
+	private RequestCacheBinding m_CacheBinding;
+	private static WebRequest.DesignerWebRequestCreate webRequestCreate;
+	private static IWebProxy s_DefaultWebProxy;
+	private static bool s_DefaultWebProxyInitialized;
 
 	private static object InternalSyncObject { get; }
 	internal static ArrayList PrefixList { get; }
@@ -121,10 +121,10 @@ public abstract class WebRequest : MarshalByRefObject, ISerializable // TypeDefI
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private Task<Stream> <GetRequestStreamAsync>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private Task<WebResponse> <GetResponseAsync>
 
 }
@@ -140,7 +140,7 @@ internal class WebRequest.DesignerWebRequestCreate : IWebRequestCreate // TypeDe
 
 internal class WebRequest.WebProxyWrapperOpaque : IWebProxy // TypeDefIndex: 2907
 {
-	protected readonly WebProxy webProxy; 
+	protected readonly WebProxy webProxy;
 
 	public ICredentials Credentials { get; }
 
@@ -164,8 +164,8 @@ internal class WebRequest.WebProxyWrapper : WebRequest.WebProxyWrapperOpaque // 
 
 private sealed class WebRequest.<>c__DisplayClass78_0 // TypeDefIndex: 2909
 {
-	public WindowsIdentity currentUser; 
-	public WebRequest <>4__this; 
+	public WindowsIdentity currentUser;
+	public WebRequest <>4__this;
 
 
 	public void .ctor() { }
@@ -176,8 +176,8 @@ private sealed class WebRequest.<>c__DisplayClass78_0 // TypeDefIndex: 2909
 
 private sealed class WebRequest.<>c__DisplayClass79_0 // TypeDefIndex: 2910
 {
-	public WindowsIdentity currentUser; 
-	public WebRequest <>4__this; 
+	public WindowsIdentity currentUser;
+	public WebRequest <>4__this;
 
 
 	public void .ctor() { }

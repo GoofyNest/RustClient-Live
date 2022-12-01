@@ -1,13 +1,13 @@
-public struct LeaderboardRecord // TypeDefIndex: 9297
+public struct LeaderboardRecord // TypeDefIndex: 9299
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <UserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <Rank>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Score>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <UserDisplayName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <UserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <Rank>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Score>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <UserDisplayName>k__BackingField;
 
 	public ProductUserId UserId { get; set; }
 	public uint Rank { get; set; }
@@ -15,28 +15,28 @@ public struct LeaderboardRecord // TypeDefIndex: 9297
 	public Utf8String UserDisplayName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_Rank() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Rank(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Score() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Score(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_UserDisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserDisplayName(Utf8String value) { }
 
 	internal void Set(ref LeaderboardRecordInternal other) { }

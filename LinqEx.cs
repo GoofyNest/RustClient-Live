@@ -1,7 +1,7 @@
-public static class LinqEx // TypeDefIndex: 13136
+public static class LinqEx // TypeDefIndex: 13151
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int MaxIndex<T>(IEnumerable<T> sequence) { }
 	/* GenericInstMethod :
 	|

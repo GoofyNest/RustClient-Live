@@ -3,22 +3,22 @@ public sealed class GL // TypeDefIndex: 3391
 	public static bool sRGBWrite { get; set; }
 
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void Vertex3(float x, float y, float z) { }
 
 	public static void Vertex(Vector3 v) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void TexCoord3(float x, float y, float z) { }
 
 	public static void TexCoord2(float x, float y) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void MultiTexCoord3(int unit, float x, float y, float z) { }
 
 	public static void MultiTexCoord2(int unit, float x, float y) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private static void ImmediateColor(float r, float g, float b, float a) { }
 
 	public static void Color(Color c) { }
@@ -29,52 +29,52 @@ public sealed class GL // TypeDefIndex: 3391
 
 	public static void Flush() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void MultMatrix(Matrix4x4 m) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void PushMatrix() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void PopMatrix() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void LoadIdentity() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void LoadOrtho() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void LoadPixelMatrix() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void LoadProjectionMatrix(Matrix4x4 mat) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 GetGPUProjectionMatrix(Matrix4x4 proj, bool renderIntoTexture) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GLLoadPixelMatrixScript(float left, float right, float bottom, float top) { }
 
 	public static void LoadPixelMatrix(float left, float right, float bottom, float top) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GLIssuePluginEvent(IntPtr callback, int eventID) { }
 
 	public static void IssuePluginEvent(IntPtr callback, int eventID) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void Begin(int mode) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void End() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GLClear(bool clearDepth, bool clearColor, Color backgroundColor, float depth) { }
 
 	public static void Clear(bool clearDepth, bool clearColor, Color backgroundColor) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void ClearWithSkybox(bool clearDepth, Camera camera) { }
 
 	private static void MultMatrix_Injected(ref Matrix4x4 m) { }

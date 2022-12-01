@@ -1,22 +1,22 @@
-public class DeferredDecal : MonoBehaviour // TypeDefIndex: 12399
+public class DeferredDecal : MonoBehaviour // TypeDefIndex: 12407
 {
-	public Mesh mesh; 
-	public Material material; 
-	public DeferredDecalQueue queue; 
-	public bool applyImmediately; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsDecalEnabled>k__BackingField; 
-	private bool cached; 
-	private Matrix4x4 localToWorldMatrix; 
+	public Mesh mesh;
+	public Material material;
+	public DeferredDecalQueue queue;
+	public bool applyImmediately;
+	[CompilerGeneratedAttribute]
+	private bool <IsDecalEnabled>k__BackingField;
+	private bool cached;
+	private Matrix4x4 localToWorldMatrix;
 
 	public bool IsDecalEnabled { get; set; }
 	public Matrix4x4 matrix { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsDecalEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsDecalEnabled(bool value) { }
 
 	public Matrix4x4 get_matrix() { }

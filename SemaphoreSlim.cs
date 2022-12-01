@@ -1,15 +1,15 @@
 public class SemaphoreSlim : IDisposable // TypeDefIndex: 759
 {
-	private int m_currentCount; 
-	private readonly int m_maxCount; 
-	private int m_waitCount; 
-	private object m_lockObj; 
-	private ManualResetEvent m_waitHandle; 
-	private SemaphoreSlim.TaskNode m_asyncHead; 
-	private SemaphoreSlim.TaskNode m_asyncTail; 
-	private static readonly Task<bool> s_trueTask; 
+	private int m_currentCount;
+	private readonly int m_maxCount;
+	private int m_waitCount;
+	private object m_lockObj;
+	private ManualResetEvent m_waitHandle;
+	private SemaphoreSlim.TaskNode m_asyncHead;
+	private SemaphoreSlim.TaskNode m_asyncTail;
+	private static readonly Task<bool> s_trueTask;
 	private const int NO_MAXIMUM = 2147483647;
-	private static Action<object> s_cancellationTokenCanceledEventHandler; 
+	private static Action<object> s_cancellationTokenCanceledEventHandler;
 
 
 	public void .ctor(int initialCount, int maxCount) { }
@@ -30,7 +30,7 @@ public class SemaphoreSlim : IDisposable // TypeDefIndex: 759
 
 	private bool RemoveAsyncWaiter(SemaphoreSlim.TaskNode task) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private Task<bool> WaitUntilCountOrTimeoutAsync(SemaphoreSlim.TaskNode asyncWaiter, int millisecondsTimeout, CancellationToken cancellationToken) { }
 
 	public int Release() { }
@@ -55,8 +55,8 @@ public class SemaphoreSlim : IDisposable // TypeDefIndex: 759
 
 private sealed class SemaphoreSlim.TaskNode : Task<bool>, IThreadPoolWorkItem // TypeDefIndex: 760
 {
-	internal SemaphoreSlim.TaskNode Prev; 
-	internal SemaphoreSlim.TaskNode Next; 
+	internal SemaphoreSlim.TaskNode Prev;
+	internal SemaphoreSlim.TaskNode Next;
 
 
 	internal void .ctor() { }
@@ -69,21 +69,21 @@ private sealed class SemaphoreSlim.TaskNode : Task<bool>, IThreadPoolWorkItem //
 
 private struct SemaphoreSlim.<WaitUntilCountOrTimeoutAsync>d__31 : IAsyncStateMachine // TypeDefIndex: 761
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<bool> <>t__builder; 
-	public CancellationToken cancellationToken; 
-	public SemaphoreSlim.TaskNode asyncWaiter; 
-	public int millisecondsTimeout; 
-	private CancellationTokenSource <cts>5__1; 
-	public SemaphoreSlim <>4__this; 
-	private object <>7__wrap1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Task> <>u__1; 
-	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool> <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<bool> <>t__builder;
+	public CancellationToken cancellationToken;
+	public SemaphoreSlim.TaskNode asyncWaiter;
+	public int millisecondsTimeout;
+	private CancellationTokenSource <cts>5__1;
+	public SemaphoreSlim <>4__this;
+	private object <>7__wrap1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Task> <>u__1;
+	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool> <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

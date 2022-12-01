@@ -1,7 +1,7 @@
-public class ERSORoadLog // TypeDefIndex: 7242
+public class ERSORoadLog // TypeDefIndex: 7244
 {
-	public double id; 
-	public bool active; 
+	public double id;
+	public bool active;
 
 
 	public void .ctor(double so) { }

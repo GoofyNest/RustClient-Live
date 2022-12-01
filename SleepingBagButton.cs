@@ -1,22 +1,22 @@
-public class SleepingBagButton : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12998
+public class SleepingBagButton : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 13012
 {
-	public GameObject TimeLockRoot; 
-	public GameObject LockRoot; 
-	public GameObject OccupiedRoot; 
-	public Button ClickButton; 
-	public TextMeshProUGUI BagName; 
-	public TextMeshProUGUI LockTime; 
-	public Image Icon; 
-	public Sprite SleepingBagSprite; 
-	public Sprite BedSprite; 
-	public Sprite BeachTowelSprite; 
-	public Sprite CamperSprite; 
-	public Image CircleRim; 
-	public Image CircleFill; 
-	public Image Background; 
-	public GameObject DeleteButton; 
-	internal RespawnInformation.SpawnOptions spawnOption; 
-	internal float releaseTime; 
+	public GameObject TimeLockRoot;
+	public GameObject LockRoot;
+	public GameObject OccupiedRoot;
+	public Button ClickButton;
+	public TextMeshProUGUI BagName;
+	public TextMeshProUGUI LockTime;
+	public Image Icon;
+	public Sprite SleepingBagSprite;
+	public Sprite BedSprite;
+	public Sprite BeachTowelSprite;
+	public Sprite CamperSprite;
+	public Image CircleRim;
+	public Image CircleFill;
+	public Image Background;
+	public GameObject DeleteButton;
+	internal RespawnInformation.SpawnOptions spawnOption;
+	internal float releaseTime;
 
 	public float timerSeconds { get; }
 	public string friendlyName { get; }

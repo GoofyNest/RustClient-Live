@@ -1,62 +1,62 @@
-public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 7168
+public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 7170
 {
 	public const float DeltaTime_Min = 1E-06;
 	public const int MaxInstanceCount = 12;
-	private static float CurrentFrame; 
-	private static int InstanceNumber; 
-	[FormerlySerializedAsAttribute] 
-	public List<Transform> rootBones; 
-	[FormerlySerializedAsAttribute] 
-	public List<Transform> endBones; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private EZSoftBoneMaterial _material; 
-	[FormerlySerializedAsAttribute] 
-	public int startDepth; 
-	public int stiffnessDepth; 
-	[FormerlySerializedAsAttribute] 
-	public EZSoftBone.UnificationMode siblingConstraints; 
-	[FormerlySerializedAsAttribute] 
-	public EZSoftBone.UnificationMode lengthUnification; 
-	[FormerlySerializedAsAttribute] 
-	public bool siblingRotationConstraints; 
-	[FormerlySerializedAsAttribute] 
-	public bool closedSiblings; 
-	[FormerlySerializedAsAttribute] 
-	public LayerMask collisionLayers; 
-	[FormerlySerializedAsAttribute] 
-	public float radius; 
-	[FormerlySerializedAsAttribute] 
-	[EZCurveRectAttribute] 
-	public AnimationCurve radiusCurve; 
-	public float deadZoneRadius; 
-	public float deadZoneExtent; 
-	[FormerlySerializedAsAttribute] 
-	public EZSoftBone.DeltaTimeMode deltaTimeMode; 
-	[FormerlySerializedAsAttribute] 
-	public float constantDeltaTime; 
-	[FormerlySerializedAsAttribute] 
-	[RangeAttribute] 
-	public int iterations; 
-	[FormerlySerializedAsAttribute] 
-	public float sleepThreshold; 
-	[FormerlySerializedAsAttribute] 
-	public Vector3 gravity; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private Transform _simulateSpace; 
-	public float globalRadius; 
-	public Vector3 globalForce; 
-	public bool collisionEnabled; 
-	[SerializeField] 
-	private EZSoftBone.BoneChain[] structures; 
-	private Vector3 origin; 
-	private Vector3 prevOrigin; 
-	private Vector3 originDelta; 
-	private bool simulationSpaceChanged; 
-	private Capsule deadZoneCapsule; 
-	private bool isVisible; 
-	private Vector3 forceDirection; 
+	private static float CurrentFrame;
+	private static int InstanceNumber;
+	[FormerlySerializedAsAttribute]
+	public List<Transform> rootBones;
+	[FormerlySerializedAsAttribute]
+	public List<Transform> endBones;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private EZSoftBoneMaterial _material;
+	[FormerlySerializedAsAttribute]
+	public int startDepth;
+	public int stiffnessDepth;
+	[FormerlySerializedAsAttribute]
+	public EZSoftBone.UnificationMode siblingConstraints;
+	[FormerlySerializedAsAttribute]
+	public EZSoftBone.UnificationMode lengthUnification;
+	[FormerlySerializedAsAttribute]
+	public bool siblingRotationConstraints;
+	[FormerlySerializedAsAttribute]
+	public bool closedSiblings;
+	[FormerlySerializedAsAttribute]
+	public LayerMask collisionLayers;
+	[FormerlySerializedAsAttribute]
+	public float radius;
+	[FormerlySerializedAsAttribute]
+	[EZCurveRectAttribute]
+	public AnimationCurve radiusCurve;
+	public float deadZoneRadius;
+	public float deadZoneExtent;
+	[FormerlySerializedAsAttribute]
+	public EZSoftBone.DeltaTimeMode deltaTimeMode;
+	[FormerlySerializedAsAttribute]
+	public float constantDeltaTime;
+	[FormerlySerializedAsAttribute]
+	[RangeAttribute]
+	public int iterations;
+	[FormerlySerializedAsAttribute]
+	public float sleepThreshold;
+	[FormerlySerializedAsAttribute]
+	public Vector3 gravity;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private Transform _simulateSpace;
+	public float globalRadius;
+	public Vector3 globalForce;
+	public bool collisionEnabled;
+	[SerializeField]
+	private EZSoftBone.BoneChain[] structures;
+	private Vector3 origin;
+	private Vector3 prevOrigin;
+	private Vector3 originDelta;
+	private bool simulationSpaceChanged;
+	private Capsule deadZoneCapsule;
+	private bool isVisible;
+	private Vector3 forceDirection;
 
 	public EZSoftBoneMaterial sharedMaterial { get; set; }
 	public Transform simulateSpace { get; set; }
@@ -112,23 +112,23 @@ public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // 
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static bool <SetSiblings>g__HasBoneAtDepth|55_1(EZSoftBone.BoneChain chain, int depth) { }
 
 }
 
-public enum EZSoftBone.UnificationMode // TypeDefIndex: 7169
+public enum EZSoftBone.UnificationMode // TypeDefIndex: 7171
 {
-	public int value__; 
+	public int value__;
 	public const EZSoftBone.UnificationMode None = 0;
 	public const EZSoftBone.UnificationMode Rooted = 1;
 	public const EZSoftBone.UnificationMode Unified = 2;
 
 }
 
-public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7170
+public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7172
 {
-	public int value__; 
+	public int value__;
 	public const EZSoftBone.DeltaTimeMode DeltaTime = 0;
 	public const EZSoftBone.DeltaTimeMode SmoothDeltaTime = 1;
 	public const EZSoftBone.DeltaTimeMode UnscaledDeltaTime = 2;
@@ -136,9 +136,9 @@ public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7170
 
 }
 
-private class EZSoftBone.BoneChain // TypeDefIndex: 7171
+private class EZSoftBone.BoneChain // TypeDefIndex: 7173
 {
-	public EZSoftBone.Bone[] childBones; 
+	public EZSoftBone.Bone[] childBones;
 
 
 	public void .ctor(Transform origin, Transform systemSpace, Transform transform, List<Transform> endBones, int startDepth) { }
@@ -147,33 +147,33 @@ private class EZSoftBone.BoneChain // TypeDefIndex: 7171
 
 }
 
-private class EZSoftBone.Bone // TypeDefIndex: 7172
+private class EZSoftBone.Bone // TypeDefIndex: 7174
 {
-	public EZSoftBone.Bone parentBone; 
-	public Vector3 localPosition; 
-	public Quaternion localRotation; 
-	public EZSoftBone.Bone childBone; 
-	public EZSoftBone.Bone leftBone; 
-	public Vector3 leftPosition; 
-	public EZSoftBone.Bone rightBone; 
-	public Vector3 rightPosition; 
-	public Transform transform; 
-	public Vector3 worldPosition; 
-	public Transform systemSpace; 
-	public Vector3 systemPosition; 
-	public int depth; 
-	public float boneLength; 
-	public float treeLength; 
-	public float normalizedLength; 
-	public float length; 
-	public float lengthToLeft; 
-	public float lengthToRight; 
-	public float radius; 
-	public float damping; 
-	public float stiffness; 
-	public float resistance; 
-	public float slackness; 
-	public Vector3 speed; 
+	public EZSoftBone.Bone parentBone;
+	public Vector3 localPosition;
+	public Quaternion localRotation;
+	public EZSoftBone.Bone childBone;
+	public EZSoftBone.Bone leftBone;
+	public Vector3 leftPosition;
+	public EZSoftBone.Bone rightBone;
+	public Vector3 rightPosition;
+	public Transform transform;
+	public Vector3 worldPosition;
+	public Transform systemSpace;
+	public Vector3 systemPosition;
+	public int depth;
+	public float boneLength;
+	public float treeLength;
+	public float normalizedLength;
+	public float length;
+	public float lengthToLeft;
+	public float lengthToRight;
+	public float radius;
+	public float damping;
+	public float stiffness;
+	public float resistance;
+	public float slackness;
+	public Vector3 speed;
 
 
 	public void .ctor(Transform systemSpace, Transform transform, int depth, float boneLength) { }
@@ -200,10 +200,10 @@ private class EZSoftBone.Bone // TypeDefIndex: 7172
 
 }
 
-private sealed class EZSoftBone.<>c // TypeDefIndex: 7173
+private sealed class EZSoftBone.<>c // TypeDefIndex: 7175
 {
-	public static readonly EZSoftBone.<>c <>9; 
-	public static Func<EZSoftBone.BoneChain, int> <>9__55_0; 
+	public static readonly EZSoftBone.<>c <>9;
+	public static Func<EZSoftBone.BoneChain, int> <>9__55_0;
 
 
 	private static void .cctor() { }

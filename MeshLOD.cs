@@ -1,14 +1,14 @@
-public class MeshLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11683
+public class MeshLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11690
 {
-	[HorizontalAttribute] 
-	public MeshLOD.State[] States; 
-	private RendererBatch meshBatch; 
-	private MeshRenderer meshRenderer; 
-	private MeshFilter meshFilter; 
-	private ShadowCastingMode meshShadowMode; 
-	private int curlod; 
-	private bool force; 
-	private bool isSmall; 
+	[HorizontalAttribute]
+	public MeshLOD.State[] States;
+	private RendererBatch meshBatch;
+	private MeshRenderer meshRenderer;
+	private MeshFilter meshFilter;
+	private ShadowCastingMode meshShadowMode;
+	private int curlod;
+	private bool force;
+	private bool isSmall;
 
 
 	protected override void InitLOD() { }
@@ -35,10 +35,10 @@ public class MeshLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11683
 
 }
 
-public class MeshLOD.State // TypeDefIndex: 11684
+public class MeshLOD.State // TypeDefIndex: 11691
 {
-	public float distance; 
-	public Mesh mesh; 
+	public float distance;
+	public Mesh mesh;
 
 
 	public void Show(MeshFilter filter, MeshRenderer renderer, RendererBatch batch, ShadowCastingMode shadowMode) { }

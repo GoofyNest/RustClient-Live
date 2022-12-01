@@ -1,6 +1,6 @@
-public enum FlushType // TypeDefIndex: 6992
+public enum FlushType // TypeDefIndex: 6994
 {
-	public int value__; 
+	public int value__;
 	public const FlushType None = 0;
 	public const FlushType Partial = 1;
 	public const FlushType Sync = 2;

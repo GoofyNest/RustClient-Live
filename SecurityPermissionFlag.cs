@@ -1,6 +1,6 @@
 public enum SecurityPermissionFlag // TypeDefIndex: 918
 {
-	public int value__; 
+	public int value__;
 	public const SecurityPermissionFlag NoFlags = 0;
 	public const SecurityPermissionFlag Assertion = 1;
 	public const SecurityPermissionFlag UnmanagedCode = 2;

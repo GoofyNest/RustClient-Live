@@ -1,15 +1,15 @@
-public class SpawnFilter // TypeDefIndex: 12059
+public class SpawnFilter // TypeDefIndex: 12066
 {
-	[InspectorFlagsAttribute] 
-	public TerrainSplat.Enum SplatType; 
-	[InspectorFlagsAttribute] 
-	public TerrainBiome.Enum BiomeType; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum TopologyAny; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum TopologyAll; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum TopologyNot; 
+	[InspectorFlagsAttribute]
+	public TerrainSplat.Enum SplatType;
+	[InspectorFlagsAttribute]
+	public TerrainBiome.Enum BiomeType;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum TopologyAny;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum TopologyAll;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum TopologyNot;
 
 
 	public bool Test(Vector3 worldPos) { }

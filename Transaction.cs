@@ -1,19 +1,19 @@
 public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3988
 {
-	[ThreadStaticAttribute] 
-	private static Transaction ambient; 
-	private IsolationLevel level; 
-	private TransactionInformation info; 
-	private ArrayList dependents; 
-	private List<IEnlistmentNotification> volatiles; 
-	private List<ISinglePhaseNotification> durables; 
-	private IPromotableSinglePhaseNotification pspe; 
-	private bool aborted; 
-	private TransactionScope scope; 
-	private Exception innerException; 
-	private Guid tag; 
-	[CompilerGeneratedAttribute] 
-	private TransactionCompletedEventHandler TransactionCompleted; 
+	[ThreadStaticAttribute]
+	private static Transaction ambient;
+	private IsolationLevel level;
+	private TransactionInformation info;
+	private ArrayList dependents;
+	private List<IEnlistmentNotification> volatiles;
+	private List<ISinglePhaseNotification> durables;
+	private IPromotableSinglePhaseNotification pspe;
+	private bool aborted;
+	private TransactionScope scope;
+	private Exception innerException;
+	private Guid tag;
+	[CompilerGeneratedAttribute]
+	private TransactionCompletedEventHandler TransactionCompleted;
 
 	internal List<IEnlistmentNotification> Volatiles { get; }
 	internal List<ISinglePhaseNotification> Durables { get; }
@@ -30,7 +30,7 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3988
 
 	internal void .ctor() { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 
 	public static Transaction get_Current() { }
@@ -41,7 +41,7 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3988
 
 	public void Dispose() { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public Enlistment EnlistVolatile(IEnlistmentNotification enlistmentNotification, EnlistmentOptions enlistmentOptions) { }
 
 	private Enlistment EnlistVolatileInternal(IEnlistmentNotification notification, EnlistmentOptions options) { }
@@ -72,7 +72,7 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3988
 
 }
 
-public sealed class Transaction : Handle // TypeDefIndex: 9514
+public sealed class Transaction : Handle // TypeDefIndex: 9516
 {
 	public const int TransactionCopyentitlementbyindexApiLatest = 1;
 	public const int TransactionGetentitlementscountApiLatest = 1;

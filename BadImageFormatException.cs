@@ -1,7 +1,7 @@
 public class BadImageFormatException : SystemException // TypeDefIndex: 177
 {
-	private string _fileName; 
-	private string _fusionLog; 
+	private string _fileName;
+	private string _fusionLog;
 
 	public override string Message { get; }
 	public string FusionLog { get; }

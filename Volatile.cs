@@ -1,26 +1,26 @@
 public static class Volatile // TypeDefIndex: 836
 {
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool Read(ref bool location) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int Read(ref int location) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static T Read<T>(ref T location) { }
 	/* GenericInstMethod :
 	|
 	|-Volatile.Read<object>
 	*/
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void Write(ref bool location, bool value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void Write(ref int location, int value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static void Write<T>(ref T location, T value) { }
 	/* GenericInstMethod :
 	|

@@ -1,10 +1,10 @@
-public class ViewmodelPunch : MonoBehaviour // TypeDefIndex: 13252
+public class ViewmodelPunch : MonoBehaviour // TypeDefIndex: 13267
 {
-	public AnimationCurve punchScale; 
-	public Vector3 punchDirection; 
-	public float punchDuration; 
-	public float punchMagnitude; 
-	private float punchStartTime; 
+	public AnimationCurve punchScale;
+	public Vector3 punchDirection;
+	public float punchDuration;
+	public float punchMagnitude;
+	private float punchStartTime;
 
 
 	public void DoPunch() { }

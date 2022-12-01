@@ -1,9 +1,9 @@
-public struct MeshInstance // TypeDefIndex: 10890
+public struct MeshInstance // TypeDefIndex: 10896
 {
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 scale; 
-	public MeshCache.Data data; 
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 scale;
+	public MeshCache.Data data;
 
 	public Mesh mesh { get; set; }
 

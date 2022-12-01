@@ -1,8 +1,8 @@
 internal class Numeric10FacetsChecker : FacetsChecker // TypeDefIndex: 2248
 {
-	private static readonly char[] signs; 
-	private Decimal maxValue; 
-	private Decimal minValue; 
+	private static readonly char[] signs;
+	private Decimal maxValue;
+	private Decimal minValue;
 
 
 	internal void .ctor(Decimal minVal, Decimal maxVal) { }

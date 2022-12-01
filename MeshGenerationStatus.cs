@@ -1,6 +1,6 @@
 public enum MeshGenerationStatus // TypeDefIndex: 4162
 {
-	public int value__; 
+	public int value__;
 	public const MeshGenerationStatus Success = 0;
 	public const MeshGenerationStatus InvalidMeshId = 1;
 	public const MeshGenerationStatus GenerationAlreadyInProgress = 2;

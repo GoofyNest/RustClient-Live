@@ -1,18 +1,18 @@
-public class CullingVolume : MonoBehaviour, IClientComponent // TypeDefIndex: 11578
+public class CullingVolume : MonoBehaviour, IClientComponent // TypeDefIndex: 11585
 {
-	[TooltipAttribute] 
-	public GameObject OccludeeRoot; 
-	[TooltipAttribute] 
-	public bool Invert; 
-	[TooltipAttribute] 
-	public bool Portal; 
-	[TooltipAttribute] 
-	public List<CullingVolume> Connections; 
-	private Transform root; 
-	private Bounds bounds; 
-	private List<LODComponent> components; 
-	private List<LightOccludee> lights; 
-	private float lastSeen; 
+	[TooltipAttribute]
+	public GameObject OccludeeRoot;
+	[TooltipAttribute]
+	public bool Invert;
+	[TooltipAttribute]
+	public bool Portal;
+	[TooltipAttribute]
+	public List<CullingVolume> Connections;
+	private Transform root;
+	private Bounds bounds;
+	private List<LODComponent> components;
+	private List<LightOccludee> lights;
+	private float lastSeen;
 
 
 	protected void Awake() { }

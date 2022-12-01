@@ -1,11 +1,11 @@
-internal class DeflaterOutputStream : Stream // TypeDefIndex: 5671
+internal class DeflaterOutputStream : Stream // TypeDefIndex: 5673
 {
-	protected byte[] buf; 
-	protected Deflater def; 
-	protected Stream baseOutputStream; 
-	private bool isClosed; 
-	private bool isStreamOwner; 
-	private uint[] keys; 
+	protected byte[] buf;
+	protected Deflater def;
+	protected Stream baseOutputStream;
+	private bool isClosed;
+	private bool isStreamOwner;
+	private uint[] keys;
 
 	public bool IsStreamOwner { get; }
 	public override bool CanRead { get; }

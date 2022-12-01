@@ -1,7 +1,7 @@
-public struct Line // TypeDefIndex: 6598
+public struct Line // TypeDefIndex: 6600
 {
-	public Vector3 point0; 
-	public Vector3 point1; 
+	public Vector3 point0;
+	public Vector3 point1;
 
 
 	public void .ctor(Vector3 point0, Vector3 point1) { }

@@ -1,6 +1,6 @@
 internal class MatchSparse : Match // TypeDefIndex: 2621
 {
-	internal Hashtable _caps; 
+	internal Hashtable _caps;
 
 	public override GroupCollection Groups { get; }
 

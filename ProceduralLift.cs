@@ -1,17 +1,17 @@
-public class ProceduralLift : BaseEntity // TypeDefIndex: 10150
+public class ProceduralLift : BaseEntity // TypeDefIndex: 10152
 {
-	private Option __menuOption_Menu_UseLift; 
-	public float movementSpeed; 
-	public float resetDelay; 
-	public ProceduralLiftCabin cabin; 
-	public ProceduralLiftStop[] stops; 
-	public GameObjectRef triggerPrefab; 
-	public string triggerBone; 
-	private int floorIndex; 
-	public SoundDefinition startSoundDef; 
-	public SoundDefinition stopSoundDef; 
-	public SoundDefinition movementLoopSoundDef; 
-	private Sound movementLoopSound; 
+	private Option __menuOption_Menu_UseLift;
+	public float movementSpeed;
+	public float resetDelay;
+	public ProceduralLiftCabin cabin;
+	public ProceduralLiftStop[] stops;
+	public GameObjectRef triggerPrefab;
+	public string triggerBone;
+	private int floorIndex;
+	public SoundDefinition startSoundDef;
+	public SoundDefinition stopSoundDef;
+	public SoundDefinition movementLoopSoundDef;
+	private Sound movementLoopSound;
 
 	public override bool HasMenuOptions { get; }
 
@@ -24,10 +24,10 @@ public class ProceduralLift : BaseEntity // TypeDefIndex: 10150
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_UseLift(BasePlayer player) { }
 
 	public bool Menu_UseLift_ShowIf(BasePlayer player) { }

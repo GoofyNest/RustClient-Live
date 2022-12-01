@@ -1,7 +1,7 @@
-public class Stag : BaseAnimalNPC // TypeDefIndex: 10669
+public class Stag : BaseAnimalNPC // TypeDefIndex: 10673
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override float RealisticMass { get; }
 	public override BaseEntity.TraitFlag Traits { get; }

@@ -1,19 +1,19 @@
 public struct LightDataGI // TypeDefIndex: 3891
 {
-	public int instanceID; 
-	public LinearColor color; 
-	public LinearColor indirectColor; 
-	public Quaternion orientation; 
-	public Vector3 position; 
-	public float range; 
-	public float coneAngle; 
-	public float innerConeAngle; 
-	public float shape0; 
-	public float shape1; 
-	public LightType type; 
-	public LightMode mode; 
-	public byte shadow; 
-	public FalloffType falloff; 
+	public int instanceID;
+	public LinearColor color;
+	public LinearColor indirectColor;
+	public Quaternion orientation;
+	public Vector3 position;
+	public float range;
+	public float coneAngle;
+	public float innerConeAngle;
+	public float shape0;
+	public float shape1;
+	public LightType type;
+	public LightMode mode;
+	public byte shadow;
+	public FalloffType falloff;
 
 
 	public void Init(ref DirectionalLight light) { }

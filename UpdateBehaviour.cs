@@ -1,7 +1,7 @@
-public abstract class UpdateBehaviour : MonoBehaviour // TypeDefIndex: 13128
+public abstract class UpdateBehaviour : MonoBehaviour // TypeDefIndex: 13143
 {
-	internal float lastUpdate; 
-	internal float nextUpdate; 
+	internal float lastUpdate;
+	internal float nextUpdate;
 
 
 	public abstract void DeltaUpdate(float deltaTime);

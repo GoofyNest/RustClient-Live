@@ -1,9 +1,9 @@
-internal struct InstallModOptionsInternal : ISettable<InstallModOptions>, IDisposable // TypeDefIndex: 9018
+internal struct InstallModOptionsInternal : ISettable<InstallModOptions>, IDisposable // TypeDefIndex: 9020
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Mod; 
-	private int m_RemoveAfterExit; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Mod;
+	private int m_RemoveAfterExit;
 
 	public EpicAccountId LocalUserId { set; }
 	public Nullable<ModIdentifier> Mod { set; }

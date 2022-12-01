@@ -1,12 +1,12 @@
-public class ObjectiveStatus : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6460
+public class ObjectiveStatus : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6462
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public bool started; 
-	public bool completed; 
-	public bool failed; 
-	public int genericInt1; 
-	public float genericFloat1; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public bool started;
+	public bool completed;
+	public bool failed;
+	public int genericInt1;
+	public float genericFloat1;
 
 
 	public static void ResetToPool(ObjectiveStatus instance) { }

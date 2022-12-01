@@ -1,12 +1,12 @@
-public class Particle : ConsoleSystem // TypeDefIndex: 13739
+public class Particle : ConsoleSystem // TypeDefIndex: 13755
 {
-	private static float m_quality; 
-	[ClientVar] 
-	public static bool simulationspace; 
-	[ClientVar] 
-	public static bool ik; 
+	private static float m_quality;
+	[ClientVar]
+	public static bool simulationspace;
+	[ClientVar]
+	public static bool ik;
 
-	[ClientVar] 
+	[ClientVar]
 	public static float quality { get; set; }
 	public static float lod { get; }
 	public static float cull { get; }

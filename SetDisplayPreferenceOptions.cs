@@ -1,15 +1,15 @@
-public struct SetDisplayPreferenceOptions // TypeDefIndex: 8370
+public struct SetDisplayPreferenceOptions // TypeDefIndex: 8372
 {
-	[CompilerGeneratedAttribute] 
-	private NotificationLocation <NotificationLocation>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private NotificationLocation <NotificationLocation>k__BackingField;
 
 	public NotificationLocation NotificationLocation { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public NotificationLocation get_NotificationLocation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NotificationLocation(NotificationLocation value) { }
 
 }

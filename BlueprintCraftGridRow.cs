@@ -1,11 +1,11 @@
-public class BlueprintCraftGridRow : MonoBehaviour // TypeDefIndex: 12747
+public class BlueprintCraftGridRow : MonoBehaviour // TypeDefIndex: 12761
 {
-	public GameObject amount; 
-	public GameObject itemName; 
-	public GameObject total; 
-	public GameObject have; 
-	public Color colorOK; 
-	public Color colorBad; 
+	public GameObject amount;
+	public GameObject itemName;
+	public GameObject total;
+	public GameObject have;
+	public Color colorOK;
+	public Color colorBad;
 
 
 	public void Clear() { }

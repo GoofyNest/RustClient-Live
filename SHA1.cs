@@ -9,10 +9,10 @@ public abstract class SHA1 : HashAlgorithm // TypeDefIndex: 984
 
 public class SHA1Managed : SHA1 // TypeDefIndex: 985
 {
-	private byte[] _buffer; 
-	private long _count; 
-	private uint[] _stateSHA1; 
-	private uint[] _expandedBuffer; 
+	private byte[] _buffer;
+	private long _count;
+	private uint[] _stateSHA1;
+	private uint[] _expandedBuffer;
 
 
 	public void .ctor() { }
@@ -46,11 +46,11 @@ public abstract class SHA256 : HashAlgorithm // TypeDefIndex: 986
 
 public class SHA256Managed : SHA256 // TypeDefIndex: 987
 {
-	private byte[] _buffer; 
-	private long _count; 
-	private uint[] _stateSHA256; 
-	private uint[] _W; 
-	private static readonly uint[] _K; 
+	private byte[] _buffer;
+	private long _count;
+	private uint[] _stateSHA256;
+	private uint[] _W;
+	private static readonly uint[] _K;
 
 
 	public void .ctor() { }
@@ -100,11 +100,11 @@ public abstract class SHA384 : HashAlgorithm // TypeDefIndex: 988
 
 public class SHA384Managed : SHA384 // TypeDefIndex: 989
 {
-	private byte[] _buffer; 
-	private ulong _count; 
-	private ulong[] _stateSHA384; 
-	private ulong[] _W; 
-	private static readonly ulong[] _K; 
+	private byte[] _buffer;
+	private ulong _count;
+	private ulong[] _stateSHA384;
+	private ulong[] _W;
+	private static readonly ulong[] _K;
 
 
 	public void .ctor() { }
@@ -154,11 +154,11 @@ public abstract class SHA512 : HashAlgorithm // TypeDefIndex: 990
 
 public class SHA512Managed : SHA512 // TypeDefIndex: 991
 {
-	private byte[] _buffer; 
-	private ulong _count; 
-	private ulong[] _stateSHA512; 
-	private ulong[] _W; 
-	private static readonly ulong[] _K; 
+	private byte[] _buffer;
+	private ulong _count;
+	private ulong[] _stateSHA512;
+	private ulong[] _W;
+	private static readonly ulong[] _K;
 
 
 	public void .ctor() { }
@@ -199,11 +199,11 @@ public class SHA512Managed : SHA512 // TypeDefIndex: 991
 
 internal class SHA1Internal // TypeDefIndex: 1011
 {
-	private uint[] _H; 
-	private ulong count; 
-	private byte[] _ProcessingBuffer; 
-	private int _ProcessingBufferCount; 
-	private uint[] buff; 
+	private uint[] _H;
+	private ulong count;
+	private byte[] _ProcessingBuffer;
+	private int _ProcessingBufferCount;
+	private uint[] buff;
 
 
 	public void .ctor() { }
@@ -228,7 +228,7 @@ internal class SHA1Internal // TypeDefIndex: 1011
 
 public sealed class SHA1CryptoServiceProvider : SHA1 // TypeDefIndex: 1012
 {
-	private SHA1Internal sha; 
+	private SHA1Internal sha;
 
 
 	public void .ctor() { }

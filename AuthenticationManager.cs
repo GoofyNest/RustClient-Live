@@ -1,8 +1,8 @@
 public class AuthenticationManager // TypeDefIndex: 2987
 {
-	private static ArrayList modules; 
-	private static object locker; 
-	private static ICredentialPolicy credential_policy; 
+	private static ArrayList modules;
+	private static object locker;
+	private static ICredentialPolicy credential_policy;
 
 
 	private static void EnsureModules() { }

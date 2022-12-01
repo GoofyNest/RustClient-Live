@@ -1,7 +1,7 @@
 public sealed class DirectoryInfo : FileSystemInfo // TypeDefIndex: 661
 {
-	private string current; 
-	private string parent; 
+	private string current;
+	private string parent;
 
 	public override bool Exists { get; }
 	public override string Name { get; }
@@ -44,7 +44,7 @@ public sealed class DirectoryInfo : FileSystemInfo // TypeDefIndex: 661
 
 	public IEnumerable<FileInfo> EnumerateFiles(string searchPattern, SearchOption searchOption) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerable<FileInfo> CreateEnumerateFilesIterator(string searchPattern, SearchOption searchOption) { }
 
 	internal void CheckPath(string path) { }
@@ -53,43 +53,43 @@ public sealed class DirectoryInfo : FileSystemInfo // TypeDefIndex: 661
 
 private sealed class DirectoryInfo.<CreateEnumerateFilesIterator>d__43 : IEnumerable<FileInfo>, IEnumerable, IEnumerator<FileInfo>, IDisposable, IEnumerator // TypeDefIndex: 662
 {
-	private int <>1__state; 
-	private FileInfo <>2__current; 
-	private int <>l__initialThreadId; 
-	public DirectoryInfo <>4__this; 
-	private string searchPattern; 
-	public string <>3__searchPattern; 
-	private SearchOption searchOption; 
-	public SearchOption <>3__searchOption; 
-	private IEnumerator<string> <>7__wrap1; 
+	private int <>1__state;
+	private FileInfo <>2__current;
+	private int <>l__initialThreadId;
+	public DirectoryInfo <>4__this;
+	private string searchPattern;
+	public string <>3__searchPattern;
+	private SearchOption searchOption;
+	public SearchOption <>3__searchOption;
+	private IEnumerator<string> <>7__wrap1;
 
 	private FileInfo System.Collections.Generic.IEnumerator<System.IO.FileInfo>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
 	private void <>m__Finally1() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private FileInfo System.Collections.Generic.IEnumerator<System.IO.FileInfo>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<FileInfo> System.Collections.Generic.IEnumerable<System.IO.FileInfo>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }

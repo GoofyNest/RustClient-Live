@@ -1,18 +1,18 @@
-public class PathInterpolator // TypeDefIndex: 13186
+public class PathInterpolator // TypeDefIndex: 13201
 {
-	public Vector3[] Points; 
-	public Vector3[] Tangents; 
-	[CompilerGeneratedAttribute] 
-	private int <MinIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <MaxIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Length>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <StepSize>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Circular>k__BackingField; 
-	protected bool initialized; 
+	public Vector3[] Points;
+	public Vector3[] Tangents;
+	[CompilerGeneratedAttribute]
+	private int <MinIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <MaxIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Length>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <StepSize>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Circular>k__BackingField;
+	protected bool initialized;
 
 	public int MinIndex { get; set; }
 	public int MaxIndex { get; set; }
@@ -25,34 +25,34 @@ public class PathInterpolator // TypeDefIndex: 13186
 	public float EndOffset { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_MinIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MinIndex(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_MaxIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxIndex(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public virtual float get_Length() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Length(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public virtual float get_StepSize() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_StepSize(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Circular() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Circular(bool value) { }
 
 	public int get_DefaultMinIndex() { }

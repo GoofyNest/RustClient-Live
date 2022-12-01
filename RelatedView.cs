@@ -1,9 +1,9 @@
 internal sealed class RelatedView : DataView, IFilter // TypeDefIndex: 4298
 {
-	private readonly Nullable<DataKey> _parentKey; 
-	private readonly DataKey _childKey; 
-	private readonly DataRowView _parentRowView; 
-	private readonly object[] _filterValues; 
+	private readonly Nullable<DataKey> _parentKey;
+	private readonly DataKey _childKey;
+	private readonly DataRowView _parentRowView;
+	private readonly object[] _filterValues;
 
 
 	public void .ctor(DataColumn[] columns, object[] values) { }

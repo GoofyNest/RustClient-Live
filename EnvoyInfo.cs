@@ -1,6 +1,6 @@
 internal class EnvoyInfo : IEnvoyInfo // TypeDefIndex: 1129
 {
-	private IMessageSink envoySinks; 
+	private IMessageSink envoySinks;
 
 	public IMessageSink EnvoySinks { get; }
 

@@ -1,10 +1,10 @@
 internal struct GameConnectedChatLeave_t : ICallbackData // TypeDefIndex: 5323
 {
-	internal ulong SteamIDClanChat; 
-	internal ulong SteamIDUser; 
-	internal bool Kicked; 
-	internal bool Dropped; 
-	public static int _datasize; 
+	internal ulong SteamIDClanChat;
+	internal ulong SteamIDUser;
+	internal bool Kicked;
+	internal bool Dropped;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

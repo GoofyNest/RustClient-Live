@@ -1,7 +1,7 @@
-internal struct CopyAchievementDefinitionV2ByAchievementIdOptionsInternal : ISettable<CopyAchievementDefinitionV2ByAchievementIdOptions>, IDisposable // TypeDefIndex: 9898
+internal struct CopyAchievementDefinitionV2ByAchievementIdOptionsInternal : ISettable<CopyAchievementDefinitionV2ByAchievementIdOptions>, IDisposable // TypeDefIndex: 9900
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AchievementId; 
+	private int m_ApiVersion;
+	private IntPtr m_AchievementId;
 
 	public Utf8String AchievementId { set; }
 

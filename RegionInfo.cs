@@ -1,31 +1,31 @@
 public class RegionInfo // TypeDefIndex: 746
 {
-	private static RegionInfo currentRegion; 
-	private int regionId; 
-	private string iso2Name; 
-	private string iso3Name; 
-	private string win3Name; 
-	private string englishName; 
-	private string nativeName; 
-	private string currencySymbol; 
-	private string isoCurrencySymbol; 
-	private string currencyEnglishName; 
-	private string currencyNativeName; 
+	private static RegionInfo currentRegion;
+	private int regionId;
+	private string iso2Name;
+	private string iso3Name;
+	private string win3Name;
+	private string englishName;
+	private string nativeName;
+	private string currencySymbol;
+	private string isoCurrencySymbol;
+	private string currencyEnglishName;
+	private string currencyNativeName;
 
 	public static RegionInfo CurrentRegion { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual string CurrencyEnglishName { get; }
 	public virtual string CurrencySymbol { get; }
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public virtual string DisplayName { get; }
 	public virtual string EnglishName { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual int GeoId { get; }
 	public virtual bool IsMetric { get; }
 	public virtual string ISOCurrencySymbol { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual string NativeName { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual string CurrencyNativeName { get; }
 	public virtual string Name { get; }
 	public virtual string ThreeLetterISORegionName { get; }

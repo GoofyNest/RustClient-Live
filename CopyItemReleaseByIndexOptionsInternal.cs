@@ -1,9 +1,9 @@
-internal struct CopyItemReleaseByIndexOptionsInternal : ISettable<CopyItemReleaseByIndexOptions>, IDisposable // TypeDefIndex: 9440
+internal struct CopyItemReleaseByIndexOptionsInternal : ISettable<CopyItemReleaseByIndexOptions>, IDisposable // TypeDefIndex: 9442
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ItemId; 
-	private uint m_ReleaseIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ItemId;
+	private uint m_ReleaseIndex;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String ItemId { set; }

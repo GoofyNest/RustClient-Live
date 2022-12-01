@@ -1,11 +1,11 @@
-public class PressButton : IOEntity // TypeDefIndex: 10148
+public class PressButton : IOEntity // TypeDefIndex: 10150
 {
-	private Option __menuOption_Menu_Press; 
-	public float pressDuration; 
-	public float pressPowerTime; 
-	public int pressPowerAmount; 
+	private Option __menuOption_Menu_Press;
+	public float pressDuration;
+	public float pressPowerTime;
+	public int pressPowerAmount;
 	public const BaseEntity.Flags Flag_EmittingPower = 512;
-	public bool smallBurst; 
+	public bool smallBurst;
 
 	public override bool HasMenuOptions { get; }
 	protected virtual bool ShowBasePressOption { get; }
@@ -19,10 +19,10 @@ public class PressButton : IOEntity // TypeDefIndex: 10148
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Press(BasePlayer player) { }
 
 	public bool Menu_Press_ShowIf(BasePlayer player) { }
@@ -33,9 +33,9 @@ public class PressButton : IOEntity // TypeDefIndex: 10148
 
 }
 
-public class PressButton_TrainTunnel : PressButton // TypeDefIndex: 10149
+public class PressButton_TrainTunnel : PressButton // TypeDefIndex: 10151
 {
-	private Option __menuOption_Menu_Press_TrainTunnel; 
+	private Option __menuOption_Menu_Press_TrainTunnel;
 
 	public override bool HasMenuOptions { get; }
 	protected override bool ShowBasePressOption { get; }
@@ -45,10 +45,10 @@ public class PressButton_TrainTunnel : PressButton // TypeDefIndex: 10149
 
 	public override bool get_HasMenuOptions() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Press_TrainTunnel(BasePlayer player) { }
 
 	public bool Menu_Press_ShowIf_TrainTunnel(BasePlayer player) { }

@@ -1,13 +1,13 @@
-public class DiamondGraph : UIPrimitiveBase // TypeDefIndex: 13503
+public class DiamondGraph : UIPrimitiveBase // TypeDefIndex: 13519
 {
-	[SerializeField] 
-	private float m_a; 
-	[SerializeField] 
-	private float m_b; 
-	[SerializeField] 
-	private float m_c; 
-	[SerializeField] 
-	private float m_d; 
+	[SerializeField]
+	private float m_a;
+	[SerializeField]
+	private float m_b;
+	[SerializeField]
+	private float m_c;
+	[SerializeField]
+	private float m_d;
 
 	public float A { get; set; }
 	public float B { get; set; }

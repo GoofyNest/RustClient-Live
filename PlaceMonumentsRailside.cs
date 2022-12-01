@@ -1,22 +1,22 @@
-public class PlaceMonumentsRailside : ProceduralComponent // TypeDefIndex: 12295
+public class PlaceMonumentsRailside : ProceduralComponent // TypeDefIndex: 12303
 {
-	public SpawnFilter Filter; 
-	public string ResourceFolder; 
-	public int TargetCount; 
-	public int PositionOffset; 
-	public int TangentInterval; 
-	[FormerlySerializedAsAttribute] 
-	public int MinDistanceSameType; 
-	public int MinDistanceDifferentType; 
-	[FormerlySerializedAsAttribute] 
-	public int MinWorldSize; 
-	[TooltipAttribute] 
-	public PlaceMonumentsRailside.DistanceMode DistanceSameType; 
-	[TooltipAttribute] 
-	public PlaceMonumentsRailside.DistanceMode DistanceDifferentType; 
+	public SpawnFilter Filter;
+	public string ResourceFolder;
+	public int TargetCount;
+	public int PositionOffset;
+	public int TangentInterval;
+	[FormerlySerializedAsAttribute]
+	public int MinDistanceSameType;
+	public int MinDistanceDifferentType;
+	[FormerlySerializedAsAttribute]
+	public int MinWorldSize;
+	[TooltipAttribute]
+	public PlaceMonumentsRailside.DistanceMode DistanceSameType;
+	[TooltipAttribute]
+	public PlaceMonumentsRailside.DistanceMode DistanceDifferentType;
 	private const int GroupCandidates = 8;
 	private const int IndividualCandidates = 8;
-	private static Quaternion rot90; 
+	private static Quaternion rot90;
 
 
 	public override void Process(uint seed) { }
@@ -29,48 +29,48 @@ public class PlaceMonumentsRailside : ProceduralComponent // TypeDefIndex: 12295
 
 }
 
-private struct PlaceMonumentsRailside.SpawnInfo // TypeDefIndex: 12296
+private struct PlaceMonumentsRailside.SpawnInfo // TypeDefIndex: 12304
 {
-	public Prefab<MonumentInfo> prefab; 
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 scale; 
+	public Prefab<MonumentInfo> prefab;
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 scale;
 
 }
 
-private class PlaceMonumentsRailside.SpawnInfoGroup // TypeDefIndex: 12297
+private class PlaceMonumentsRailside.SpawnInfoGroup // TypeDefIndex: 12305
 {
-	public bool processed; 
-	public Prefab<MonumentInfo> prefab; 
-	public List<PlaceMonumentsRailside.SpawnInfo> candidates; 
+	public bool processed;
+	public Prefab<MonumentInfo> prefab;
+	public List<PlaceMonumentsRailside.SpawnInfo> candidates;
 
 
 	public void .ctor() { }
 
 }
 
-private struct PlaceMonumentsRailside.DistanceInfo // TypeDefIndex: 12298
+private struct PlaceMonumentsRailside.DistanceInfo // TypeDefIndex: 12306
 {
-	public float minDistanceSameType; 
-	public float maxDistanceSameType; 
-	public float minDistanceDifferentType; 
-	public float maxDistanceDifferentType; 
+	public float minDistanceSameType;
+	public float maxDistanceSameType;
+	public float minDistanceDifferentType;
+	public float maxDistanceDifferentType;
 
 }
 
-public enum PlaceMonumentsRailside.DistanceMode // TypeDefIndex: 12299
+public enum PlaceMonumentsRailside.DistanceMode // TypeDefIndex: 12307
 {
-	public int value__; 
+	public int value__;
 	public const PlaceMonumentsRailside.DistanceMode Any = 0;
 	public const PlaceMonumentsRailside.DistanceMode Min = 1;
 	public const PlaceMonumentsRailside.DistanceMode Max = 2;
 
 }
 
-private sealed class PlaceMonumentsRailside.<>c // TypeDefIndex: 12300
+private sealed class PlaceMonumentsRailside.<>c // TypeDefIndex: 12308
 {
-	public static readonly PlaceMonumentsRailside.<>c <>9; 
-	public static Func<string, string> <>9__17_0; 
+	public static readonly PlaceMonumentsRailside.<>c <>9;
+	public static Func<string, string> <>9__17_0;
 
 
 	private static void .cctor() { }

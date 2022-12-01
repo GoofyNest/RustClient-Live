@@ -1,9 +1,9 @@
-public class BaseCorpse : BaseCombatEntity // TypeDefIndex: 11191
+public class BaseCorpse : BaseCombatEntity // TypeDefIndex: 11197
 {
-	public GameObjectRef prefabRagdoll; 
-	public BaseEntity parentEnt; 
-	internal ResourceDispenser resourceDispenser; 
-	internal GameObject ragdollObject; 
+	public GameObjectRef prefabRagdoll;
+	public BaseEntity parentEnt;
+	internal ResourceDispenser resourceDispenser;
+	internal GameObject ragdollObject;
 
 	public override BaseEntity.TraitFlag Traits { get; }
 

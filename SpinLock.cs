@@ -1,7 +1,7 @@
 public struct SpinLock // TypeDefIndex: 762
 {
-	private int m_owner; 
-	private static int MAXIMUM_WAITERS; 
+	private int m_owner;
+	private static int MAXIMUM_WAITERS;
 
 	public bool IsHeldByCurrentThread { get; }
 	public bool IsThreadOwnerTrackingEnabled { get; }
@@ -19,15 +19,15 @@ public struct SpinLock // TypeDefIndex: 762
 
 	private void ContinueTryEnterWithThreadTracking(int millisecondsTimeout, uint startTime, ref bool lockTaken) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void Exit(bool useMemoryBarrier) { }
 
 	private void ExitSlowPath(bool useMemoryBarrier) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public bool get_IsHeldByCurrentThread() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public bool get_IsThreadOwnerTrackingEnabled() { }
 
 	private static void .cctor() { }

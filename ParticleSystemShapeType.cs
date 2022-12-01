@@ -1,22 +1,22 @@
 public enum ParticleSystemShapeType // TypeDefIndex: 4546
 {
-	public int value__; 
+	public int value__;
 	public const ParticleSystemShapeType Sphere = 0;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const ParticleSystemShapeType SphereShell = 1;
 	public const ParticleSystemShapeType Hemisphere = 2;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const ParticleSystemShapeType HemisphereShell = 3;
 	public const ParticleSystemShapeType Cone = 4;
 	public const ParticleSystemShapeType Box = 5;
 	public const ParticleSystemShapeType Mesh = 6;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const ParticleSystemShapeType ConeShell = 7;
 	public const ParticleSystemShapeType ConeVolume = 8;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const ParticleSystemShapeType ConeVolumeShell = 9;
 	public const ParticleSystemShapeType Circle = 10;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const ParticleSystemShapeType CircleEdge = 11;
 	public const ParticleSystemShapeType SingleSidedEdge = 12;
 	public const ParticleSystemShapeType MeshRenderer = 13;

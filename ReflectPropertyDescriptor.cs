@@ -1,29 +1,29 @@
 internal sealed class ReflectPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 2741
 {
-	private static readonly Type[] argsNone; 
-	private static readonly object noValue; 
-	private static TraceSwitch PropDescCreateSwitch; 
-	private static TraceSwitch PropDescUsageSwitch; 
-	private static readonly int BitDefaultValueQueried; 
-	private static readonly int BitGetQueried; 
-	private static readonly int BitSetQueried; 
-	private static readonly int BitShouldSerializeQueried; 
-	private static readonly int BitResetQueried; 
-	private static readonly int BitChangedQueried; 
-	private static readonly int BitIPropChangedQueried; 
-	private static readonly int BitReadOnlyChecked; 
-	private static readonly int BitAmbientValueQueried; 
-	private static readonly int BitSetOnDemand; 
-	private BitVector32 state; 
-	private Type componentClass; 
-	private Type type; 
-	private object defaultValue; 
-	private PropertyInfo propInfo; 
-	private MethodInfo getMethod; 
-	private MethodInfo setMethod; 
-	private MethodInfo shouldSerializeMethod; 
-	private EventDescriptor realChangedEvent; 
-	private Type receiverType; 
+	private static readonly Type[] argsNone;
+	private static readonly object noValue;
+	private static TraceSwitch PropDescCreateSwitch;
+	private static TraceSwitch PropDescUsageSwitch;
+	private static readonly int BitDefaultValueQueried;
+	private static readonly int BitGetQueried;
+	private static readonly int BitSetQueried;
+	private static readonly int BitShouldSerializeQueried;
+	private static readonly int BitResetQueried;
+	private static readonly int BitChangedQueried;
+	private static readonly int BitIPropChangedQueried;
+	private static readonly int BitReadOnlyChecked;
+	private static readonly int BitAmbientValueQueried;
+	private static readonly int BitSetOnDemand;
+	private BitVector32 state;
+	private Type componentClass;
+	private Type type;
+	private object defaultValue;
+	private PropertyInfo propInfo;
+	private MethodInfo getMethod;
+	private MethodInfo setMethod;
+	private MethodInfo shouldSerializeMethod;
+	private EventDescriptor realChangedEvent;
+	private Type receiverType;
 
 	public override Type ComponentType { get; }
 	private object DefaultValue { get; }

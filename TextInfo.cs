@@ -1,27 +1,27 @@
 public class TextInfo : ICloneable, IDeserializationCallback // TypeDefIndex: 719
 {
-	[OptionalFieldAttribute] 
-	private string m_listSeparator; 
-	[OptionalFieldAttribute] 
-	private bool m_isReadOnly; 
-	[OptionalFieldAttribute] 
-	private string m_cultureName; 
-	private CultureData m_cultureData; 
-	private string m_textInfoName; 
-	private Nullable<bool> m_IsAsciiCasingSameAsInvariant; 
-	internal static TextInfo s_Invariant; 
-	[OptionalFieldAttribute] 
-	private string customCultureName; 
-	[OptionalFieldAttribute] 
-	internal int m_nDataItem; 
-	[OptionalFieldAttribute] 
-	internal bool m_useUserOverride; 
-	[OptionalFieldAttribute] 
-	internal int m_win32LangID; 
+	[OptionalFieldAttribute]
+	private string m_listSeparator;
+	[OptionalFieldAttribute]
+	private bool m_isReadOnly;
+	[OptionalFieldAttribute]
+	private string m_cultureName;
+	private CultureData m_cultureData;
+	private string m_textInfoName;
+	private Nullable<bool> m_IsAsciiCasingSameAsInvariant;
+	internal static TextInfo s_Invariant;
+	[OptionalFieldAttribute]
+	private string customCultureName;
+	[OptionalFieldAttribute]
+	internal int m_nDataItem;
+	[OptionalFieldAttribute]
+	internal bool m_useUserOverride;
+	[OptionalFieldAttribute]
+	internal int m_win32LangID;
 	private const int wordSeparatorMask = 536672256;
 
 	internal static TextInfo Invariant { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public string CultureName { get; }
 	private bool IsAsciiCasingSameAsInvariant { get; }
 
@@ -30,15 +30,15 @@ public class TextInfo : ICloneable, IDeserializationCallback // TypeDefIndex: 71
 
 	internal void .ctor(CultureData cultureData) { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
 	private void OnDeserialized() { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
 	internal static int GetHashCodeOrdinalIgnoreCase(string s) { }
@@ -55,7 +55,7 @@ public class TextInfo : ICloneable, IDeserializationCallback // TypeDefIndex: 71
 
 	public string get_CultureName() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual object Clone() { }
 
 	internal void SetReadOnlyState(bool readOnly) { }

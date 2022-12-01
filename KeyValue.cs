@@ -1,24 +1,24 @@
-public class KeyValue // TypeDefIndex: 6291
+public class KeyValue // TypeDefIndex: 6293
 {
-	[CompilerGeneratedAttribute] 
-	private Key <Key>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte[] <Value>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Key <Key>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte[] <Value>k__BackingField;
 
 	public Key Key { get; set; }
 	public byte[] Value { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Key get_Key() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Key(Key value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte[] get_Value() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Value(byte[] value) { }
 
 	public void .ctor(Key key, byte[] value) { }

@@ -1,19 +1,19 @@
-public class EnvironmentVolumeTrigger : MonoBehaviour // TypeDefIndex: 11604
+public class EnvironmentVolumeTrigger : MonoBehaviour // TypeDefIndex: 11611
 {
-	[CompilerGeneratedAttribute] 
-	private EnvironmentVolume <volume>k__BackingField; 
-	[HideInInspector] 
-	public Vector3 Center; 
-	[HideInInspector] 
-	public Vector3 Size; 
+	[CompilerGeneratedAttribute]
+	private EnvironmentVolume <volume>k__BackingField;
+	[HideInInspector]
+	public Vector3 Center;
+	[HideInInspector]
+	public Vector3 Size;
 
 	public EnvironmentVolume volume { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EnvironmentVolume get_volume() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_volume(EnvironmentVolume value) { }
 
 	protected void Awake() { }

@@ -1,8 +1,8 @@
-internal struct LobbySearchSetParameterOptionsInternal : ISettable<LobbySearchSetParameterOptions>, IDisposable // TypeDefIndex: 9201
+internal struct LobbySearchSetParameterOptionsInternal : ISettable<LobbySearchSetParameterOptions>, IDisposable // TypeDefIndex: 9203
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Parameter; 
-	private ComparisonOp m_ComparisonOp; 
+	private int m_ApiVersion;
+	private IntPtr m_Parameter;
+	private ComparisonOp m_ComparisonOp;
 
 	public Nullable<AttributeData> Parameter { set; }
 	public ComparisonOp ComparisonOp { set; }

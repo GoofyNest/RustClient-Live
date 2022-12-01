@@ -1,6 +1,6 @@
 public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible // TypeDefIndex: 211
 {
-	private static readonly char[] enumSeperatorCharArray; 
+	private static readonly char[] enumSeperatorCharArray;
 	private const string enumSeperator = ", ";
 
 
@@ -36,37 +36,37 @@ public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible 
 	|-Enum.TryParse<KeyCode>
 	*/
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object Parse(Type enumType, string value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object Parse(Type enumType, string value, bool ignoreCase) { }
 
 	private static bool TryParseEnum(Type enumType, string value, bool ignoreCase, ref Enum.EnumResult parseResult) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static Type GetUnderlyingType(Type enumType) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static Array GetValues(Type enumType) { }
 
 	internal static ulong[] InternalGetValues(RuntimeType enumType) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string GetName(Type enumType, object value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string[] GetNames(Type enumType) { }
 
 	internal static string[] InternalGetNames(RuntimeType enumType) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, object value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static bool IsDefined(Type enumType, object value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string Format(Type enumType, object value, string format) { }
 
 	private object get_value() { }
@@ -83,14 +83,14 @@ public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible 
 
 	public override string ToString() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public string ToString(string format, IFormatProvider provider) { }
 
 	public int CompareTo(object target) { }
 
 	public string ToString(string format) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public string ToString(IFormatProvider provider) { }
 
 	public bool HasFlag(Enum flag) { }
@@ -127,32 +127,32 @@ public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible 
 
 	private object System.IConvertible.ToType(Type type, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, sbyte value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, short value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, int value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, byte value) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, ushort value) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, uint value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, long value) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public static object ToObject(Type enumType, ulong value) { }
 
 	private static object ToObject(Type enumType, char value) { }
@@ -167,7 +167,7 @@ public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible 
 
 private enum Enum.ParseFailureKind // TypeDefIndex: 212
 {
-	public int value__; 
+	public int value__;
 	public const Enum.ParseFailureKind None = 0;
 	public const Enum.ParseFailureKind Argument = 1;
 	public const Enum.ParseFailureKind ArgumentNull = 2;
@@ -178,13 +178,13 @@ private enum Enum.ParseFailureKind // TypeDefIndex: 212
 
 private struct Enum.EnumResult // TypeDefIndex: 213
 {
-	internal object parsedEnum; 
-	internal bool canThrow; 
-	internal Enum.ParseFailureKind m_failure; 
-	internal string m_failureMessageID; 
-	internal string m_failureParameter; 
-	internal object m_failureMessageFormatArgument; 
-	internal Exception m_innerException; 
+	internal object parsedEnum;
+	internal bool canThrow;
+	internal Enum.ParseFailureKind m_failure;
+	internal string m_failureMessageID;
+	internal string m_failureParameter;
+	internal object m_failureMessageFormatArgument;
+	internal Exception m_innerException;
 
 
 	internal void Init(bool canMethodThrow) { }
@@ -201,8 +201,8 @@ private struct Enum.EnumResult // TypeDefIndex: 213
 
 private class Enum.ValuesAndNames // TypeDefIndex: 214
 {
-	public ulong[] Values; 
-	public string[] Names; 
+	public ulong[] Values;
+	public string[] Names;
 
 
 	public void .ctor(ulong[] values, string[] names) { }
@@ -245,7 +245,7 @@ public abstract class EnumBuilder : TypeInfo
 
 	protected override ConstructorInfo GetConstructorImpl(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override ConstructorInfo[] GetConstructors(BindingFlags bindingAttr) { }
 
 	public override object[] GetCustomAttributes(bool inherit) { }
@@ -292,7 +292,7 @@ internal static class EnumHelper<UnderlyingType> // TypeDefIndex: 1511
 {
 
 internal static class EnumHelper<UnderlyingType>
-	private static readonly MethodInfo IdentityInfo; 
+	private static readonly MethodInfo IdentityInfo;
 
 
 	public static UnderlyingType Cast<ValueType>(ValueType value) { }
@@ -1454,7 +1454,7 @@ private sealed class EnumHelper.Transformer<UnderlyingType, ValueType> : Multica
 
 private static class EnumHelper.Caster<UnderlyingType, ValueType> // TypeDefIndex: 1513
 {
-	public static readonly EnumHelper.Transformer<UnderlyingType, ValueType> Instance; 
+	public static readonly EnumHelper.Transformer<UnderlyingType, ValueType> Instance;
 
 
 	private static void .cctor() { }
@@ -1819,7 +1819,7 @@ private static class EnumHelper.Caster<UnderlyingType, ValueType> // TypeDefInde
 
 internal sealed class EnumerableTypeInfo<IterableType, ElementType> : TraceLoggingTypeInfo<IterableType> // TypeDefIndex: 1514
 {
-	private readonly TraceLoggingTypeInfo<ElementType> elementInfo; 
+	private readonly TraceLoggingTypeInfo<ElementType> elementInfo;
 
 
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
@@ -3078,11 +3078,11 @@ internal sealed class EnumUInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 
 internal class EnumMap : ObjectMap // TypeDefIndex: 2130
 {
-	private readonly EnumMap.EnumMapMember[] _members; 
-	private readonly bool _isFlags; 
-	private readonly string[] _enumNames; 
-	private readonly string[] _xmlNames; 
-	private readonly long[] _values; 
+	private readonly EnumMap.EnumMapMember[] _members;
+	private readonly bool _isFlags;
+	private readonly string[] _enumNames;
+	private readonly string[] _xmlNames;
+	private readonly long[] _values;
 
 	public bool IsFlags { get; }
 	public string[] EnumNames { get; }
@@ -3108,9 +3108,9 @@ internal class EnumMap : ObjectMap // TypeDefIndex: 2130
 
 public class EnumMap.EnumMapMember // TypeDefIndex: 2131
 {
-	private readonly string _xmlName; 
-	private readonly string _enumName; 
-	private readonly long _value; 
+	private readonly string _xmlName;
+	private readonly string _enumName;
+	private readonly long _value;
 
 	public string XmlName { get; }
 	public string EnumName { get; }
@@ -3129,8 +3129,8 @@ public class EnumMap.EnumMapMember // TypeDefIndex: 2131
 
 public class EnumConverter : TypeConverter // TypeDefIndex: 2701
 {
-	private TypeConverter.StandardValuesCollection values; 
-	private Type type; 
+	private TypeConverter.StandardValuesCollection values;
+	private Type type;
 
 	protected virtual IComparer Comparer { get; }
 
@@ -3160,7 +3160,7 @@ public class EnumConverter : TypeConverter // TypeDefIndex: 2701
 public static class Enumerable // TypeDefIndex: 3198
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Where<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -3245,7 +3245,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Where<Int32Enum>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TResult> Select<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -3799,7 +3799,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.CombineSelectors<object, uint, uint>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TResult> SelectMany<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, IEnumerable<TResult>> selector) { }
 	/* GenericInstMethod :
 	|
@@ -3817,7 +3817,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SelectMany<object, object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TResult> SelectManyIterator<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, IEnumerable<TResult>> selector) { }
 	/* GenericInstMethod :
 	|
@@ -3830,7 +3830,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SelectManyIterator<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Take<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -3852,7 +3852,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Take<double>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> TakeIterator<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -3866,7 +3866,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.TakeIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> TakeWhile<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -3874,14 +3874,14 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.TakeWhile<object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> TakeWhileIterator<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.TakeWhileIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Skip<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -3893,7 +3893,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Skip<byte>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> SkipIterator<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -3903,7 +3903,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SkipIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IOrderedEnumerable<TSource> OrderBy<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -3947,7 +3947,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.OrderBy<object, uint>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IOrderedEnumerable<TSource> OrderBy<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -3955,7 +3955,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.OrderBy<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IOrderedEnumerable<TSource> OrderByDescending<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -3996,7 +3996,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.OrderByDescending<object, float>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IOrderedEnumerable<TSource> ThenBy<TSource, TKey>(IOrderedEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -4011,7 +4011,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ThenBy<object, uint>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IOrderedEnumerable<TSource> ThenByDescending<TSource, TKey>(IOrderedEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -4026,7 +4026,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ThenByDescending<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<IGrouping<TKey, TSource>> GroupBy<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -4050,7 +4050,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.GroupBy<object, uint>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Concat<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -4061,7 +4061,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Concat<object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> ConcatIterator<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -4071,7 +4071,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ConcatIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TResult> Zip<TFirst, TSecond, TResult>(IEnumerable<TFirst> first, IEnumerable<TSecond> second, Func<TFirst, TSecond, TResult> resultSelector) { }
 	/* GenericInstMethod :
 	|
@@ -4080,7 +4080,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Zip<object, object, object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TResult> ZipIterator<TFirst, TSecond, TResult>(IEnumerable<TFirst> first, IEnumerable<TSecond> second, Func<TFirst, TSecond, TResult> resultSelector) { }
 	/* GenericInstMethod :
 	|
@@ -4088,7 +4088,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ZipIterator<object, object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Distinct<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4100,7 +4100,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Distinct<float>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Distinct<TSource>(IEnumerable<TSource> source, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4108,7 +4108,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Distinct<object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> DistinctIterator<TSource>(IEnumerable<TSource> source, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4119,7 +4119,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.DistinctIterator<float>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Union<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -4129,7 +4129,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Union<char>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> UnionIterator<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4138,7 +4138,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.UnionIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Except<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -4149,7 +4149,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Except<object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> ExceptIterator<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4159,7 +4159,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ExceptIterator<Vector2>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> Reverse<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4172,7 +4172,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Reverse<long>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TSource> ReverseIterator<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4182,7 +4182,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ReverseIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool SequenceEqual<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -4192,7 +4192,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SequenceEqual<Vector3>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool SequenceEqual<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4204,7 +4204,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SequenceEqual<Vector3>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TSource> AsEnumerable<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4214,7 +4214,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.AsEnumerable<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource[] ToArray<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4286,7 +4286,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ToArray<Int32Enum>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static List<TSource> ToList<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4334,7 +4334,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ToList<Vector2>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Dictionary<TKey, TSource> ToDictionary<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -4342,7 +4342,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ToDictionary<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector) { }
 	/* GenericInstMethod :
 	|
@@ -4359,7 +4359,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ToDictionary<object, uint, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector, IEqualityComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4376,7 +4376,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ToDictionary<object, uint, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TResult> OfType<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -4385,14 +4385,14 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.OfType<object>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TResult> OfTypeIterator<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.OfTypeIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TResult> Cast<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -4419,7 +4419,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Cast<int>
 	*/
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<TResult> CastIterator<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -4433,7 +4433,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.CastIterator<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource First<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4461,7 +4461,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.First<KeyValuePair<object, object>>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4469,7 +4469,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.First<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource FirstOrDefault<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4488,7 +4488,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.FirstOrDefault<InventoryRecipe>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource FirstOrDefault<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4507,7 +4507,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.FirstOrDefault<PetCommandList.PetCommandDesc>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource Last<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4516,7 +4516,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Last<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource LastOrDefault<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4525,7 +4525,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.LastOrDefault<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource LastOrDefault<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4533,7 +4533,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.LastOrDefault<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource Single<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4541,7 +4541,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Single<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource SingleOrDefault<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4550,7 +4550,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SingleOrDefault<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource SingleOrDefault<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4562,7 +4562,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.SingleOrDefault<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TSource ElementAt<TSource>(IEnumerable<TSource> source, int index) { }
 	/* GenericInstMethod :
 	|
@@ -4575,7 +4575,7 @@ public static class Enumerable // TypeDefIndex: 3198
 
 	public static IEnumerable<int> Range(int start, int count) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private static IEnumerable<int> RangeIterator(int start, int count) { }
 
 	public static IEnumerable<TResult> Empty<TResult>() { }
@@ -4586,7 +4586,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Empty<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Any<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4606,11 +4606,12 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Any<Vector2>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Any<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.Any<BaseEntity>
+	|-Enumerable.Any<EntityLink>
 	|-Enumerable.Any<CardPlayerData>
 	|-Enumerable.Any<PlayingCard>
 	|-Enumerable.Any<Manifest.Administrator>
@@ -4635,7 +4636,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Any<InventoryRecipe.Ingredient>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool All<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4647,7 +4648,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.All<Collider>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int Count<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -4681,19 +4682,20 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Count<float>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int Count<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.Count<RCon.BannedAddresses>
 	|
+	|-Enumerable.Count<GenerateDungeonBase.DungeonSegment>
 	|-Enumerable.Count<object>
 	|-Enumerable.Count<Collider>
 	|-Enumerable.Count<Renderer>
 	|-Enumerable.Count<Rigidbody>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Contains<TSource>(IEnumerable<TSource> source, TSource value) { }
 	/* GenericInstMethod :
 	|
@@ -4713,7 +4715,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Contains<ushort>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Contains<TSource>(IEnumerable<TSource> source, TSource value, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -4728,7 +4730,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Contains<ushort>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TAccumulate Aggregate<TSource, TAccumulate>(IEnumerable<TSource> source, TAccumulate seed, Func<TAccumulate, TSource, TAccumulate> func) { }
 	/* GenericInstMethod :
 	|
@@ -4737,16 +4739,16 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Aggregate<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int Sum(IEnumerable<int> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static long Sum(IEnumerable<long> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float Sum(IEnumerable<float> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int Sum<TSource>(IEnumerable<TSource> source, Func<TSource, int> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4764,7 +4766,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Sum<Transform>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static long Sum<TSource>(IEnumerable<TSource> source, Func<TSource, long> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4772,7 +4774,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Sum<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float Sum<TSource>(IEnumerable<TSource> source, Func<TSource, float> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4780,16 +4782,16 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Sum<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float Min(IEnumerable<float> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int Max(IEnumerable<int> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float Max(IEnumerable<float> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int Max<TSource>(IEnumerable<TSource> source, Func<TSource, int> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4800,19 +4802,19 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Max<FieldInfo>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float Average(IEnumerable<float> source) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static double Average(IEnumerable<double> source) { }
 
 }
 
 private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3199
 {
-	private int threadId; 
-	internal int state; 
-	internal TSource current; 
+	private int threadId;
+	internal int state;
+	internal TSource current;
 
 	public TSource Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -5206,9 +5208,9 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 
 private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<TSource> // TypeDefIndex: 3200
 {
-	private IEnumerable<TSource> source; 
-	private Func<TSource, bool> predicate; 
-	private IEnumerator<TSource> enumerator; 
+	private IEnumerable<TSource> source;
+	private Func<TSource, bool> predicate;
+	private IEnumerator<TSource> enumerator;
 
 
 	public void .ctor(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
@@ -5502,9 +5504,9 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 
 private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSource> // TypeDefIndex: 3201
 {
-	private TSource[] source; 
-	private Func<TSource, bool> predicate; 
-	private int index; 
+	private TSource[] source;
+	private Func<TSource, bool> predicate;
+	private int index;
 
 
 	public void .ctor(TSource[] source, Func<TSource, bool> predicate) { }
@@ -5670,9 +5672,9 @@ private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSour
 
 private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSource> // TypeDefIndex: 3202
 {
-	private List<TSource> source; 
-	private Func<TSource, bool> predicate; 
-	private List.Enumerator<TSource> enumerator; 
+	private List<TSource> source;
+	private Func<TSource, bool> predicate;
+	private List.Enumerator<TSource> enumerator;
 
 
 	public void .ctor(List<TSource> source, Func<TSource, bool> predicate) { }
@@ -5838,10 +5840,10 @@ private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSourc
 
 private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enumerable.Iterator<TResult> // TypeDefIndex: 3203
 {
-	private IEnumerable<TSource> source; 
-	private Func<TSource, bool> predicate; 
-	private Func<TSource, TResult> selector; 
-	private IEnumerator<TSource> enumerator; 
+	private IEnumerable<TSource> source;
+	private Func<TSource, bool> predicate;
+	private Func<TSource, TResult> selector;
+	private IEnumerator<TSource> enumerator;
 
 
 	public void .ctor(IEnumerable<TSource> source, Func<TSource, bool> predicate, Func<TSource, TResult> selector) { }
@@ -7518,10 +7520,10 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 
 private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable.Iterator<TResult> // TypeDefIndex: 3204
 {
-	private TSource[] source; 
-	private Func<TSource, bool> predicate; 
-	private Func<TSource, TResult> selector; 
-	private int index; 
+	private TSource[] source;
+	private Func<TSource, bool> predicate;
+	private Func<TSource, TResult> selector;
+	private int index;
 
 
 	public void .ctor(TSource[] source, Func<TSource, bool> predicate, Func<TSource, TResult> selector) { }
@@ -8679,10 +8681,10 @@ private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable
 
 private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.Iterator<TResult> // TypeDefIndex: 3205
 {
-	private List<TSource> source; 
-	private Func<TSource, bool> predicate; 
-	private Func<TSource, TResult> selector; 
-	private List.Enumerator<TSource> enumerator; 
+	private List<TSource> source;
+	private Func<TSource, bool> predicate;
+	private Func<TSource, TResult> selector;
+	private List.Enumerator<TSource> enumerator;
 
 
 	public void .ctor(List<TSource> source, Func<TSource, bool> predicate, Func<TSource, TResult> selector) { }
@@ -9869,8 +9871,8 @@ private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.
 
 private sealed class Enumerable.<>c__DisplayClass6_0<TSource> // TypeDefIndex: 3206
 {
-	public Func<TSource, bool> predicate1; 
-	public Func<TSource, bool> predicate2; 
+	public Func<TSource, bool> predicate1;
+	public Func<TSource, bool> predicate2;
 
 
 	public void .ctor() { }
@@ -9956,8 +9958,8 @@ private sealed class Enumerable.<>c__DisplayClass6_0<TSource> // TypeDefIndex: 3
 
 private sealed class Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult> // TypeDefIndex: 3207
 {
-	public Func<TMiddle, TResult> selector2; 
-	public Func<TSource, TMiddle> selector1; 
+	public Func<TMiddle, TResult> selector2;
+	public Func<TSource, TMiddle> selector1;
 
 
 	public void .ctor() { }
@@ -10783,21 +10785,21 @@ private sealed class Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult> 
 
 private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3208
 {
-	private int <>1__state; 
-	private TResult <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TSource> source; 
-	public IEnumerable<TSource> <>3__source; 
-	private Func<TSource, IEnumerable<TResult>> selector; 
-	public Func<TSource, IEnumerable<TResult>> <>3__selector; 
-	private IEnumerator<TSource> <>7__wrap1; 
-	private IEnumerator<TResult> <>7__wrap2; 
+	private int <>1__state;
+	private TResult <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TSource> source;
+	public IEnumerable<TSource> <>3__source;
+	private Func<TSource, IEnumerable<TResult>> selector;
+	public Func<TSource, IEnumerable<TResult>> <>3__selector;
+	private IEnumerator<TSource> <>7__wrap1;
+	private IEnumerator<TResult> <>7__wrap2;
 
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -10810,7 +10812,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -10856,7 +10858,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.<>m__Finally2
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -10869,7 +10871,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.System.Collections.Generic.IEnumerator<TResult>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -10882,7 +10884,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -10895,7 +10897,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -10908,7 +10910,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -10922,20 +10924,20 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 
 private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3209
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private int count; 
-	public int <>3__count; 
-	private IEnumerable<TSource> source; 
-	public IEnumerable<TSource> <>3__source; 
-	private IEnumerator<TSource> <>7__wrap1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private int count;
+	public int <>3__count;
+	private IEnumerable<TSource> source;
+	public IEnumerable<TSource> <>3__source;
+	private IEnumerator<TSource> <>7__wrap1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -10949,7 +10951,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -10993,7 +10995,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11009,7 +11011,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11026,7 +11028,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11042,7 +11044,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11056,7 +11058,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11072,27 +11074,27 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 
 private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3210
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TSource> source; 
-	public IEnumerable<TSource> <>3__source; 
-	private Func<TSource, bool> predicate; 
-	public Func<TSource, bool> <>3__predicate; 
-	private IEnumerator<TSource> <>7__wrap1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TSource> source;
+	public IEnumerable<TSource> <>3__source;
+	private Func<TSource, bool> predicate;
+	public Func<TSource, bool> <>3__predicate;
+	private IEnumerator<TSource> <>7__wrap1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<TakeWhileIterator>d__27<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11111,35 +11113,35 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	|-Enumerable.<TakeWhileIterator>d__27<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<TakeWhileIterator>d__27<object>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<TakeWhileIterator>d__27<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<TakeWhileIterator>d__27<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<TakeWhileIterator>d__27<object>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11150,20 +11152,20 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 
 private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3211
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TSource> source; 
-	public IEnumerable<TSource> <>3__source; 
-	private int count; 
-	public int <>3__count; 
-	private IEnumerator<TSource> <e>5__1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TSource> source;
+	public IEnumerable<TSource> <>3__source;
+	private int count;
+	public int <>3__count;
+	private IEnumerator<TSource> <e>5__1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11173,7 +11175,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11202,7 +11204,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11213,7 +11215,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11224,7 +11226,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11235,7 +11237,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11245,7 +11247,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11258,20 +11260,20 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 
 private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3212
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TSource> first; 
-	public IEnumerable<TSource> <>3__first; 
-	private IEnumerable<TSource> second; 
-	public IEnumerable<TSource> <>3__second; 
-	private IEnumerator<TSource> <>7__wrap1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TSource> first;
+	public IEnumerable<TSource> <>3__first;
+	private IEnumerable<TSource> second;
+	public IEnumerable<TSource> <>3__second;
+	private IEnumerator<TSource> <>7__wrap1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11281,7 +11283,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11320,7 +11322,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.<>m__Finally2
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11330,7 +11332,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11341,7 +11343,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11352,7 +11354,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11362,7 +11364,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11375,23 +11377,23 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 
 private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3213
 {
-	private int <>1__state; 
-	private TResult <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TFirst> first; 
-	public IEnumerable<TFirst> <>3__first; 
-	private IEnumerable<TSecond> second; 
-	public IEnumerable<TSecond> <>3__second; 
-	private Func<TFirst, TSecond, TResult> resultSelector; 
-	public Func<TFirst, TSecond, TResult> <>3__resultSelector; 
-	private IEnumerator<TFirst> <e1>5__1; 
-	private IEnumerator<TSecond> <e2>5__2; 
+	private int <>1__state;
+	private TResult <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TFirst> first;
+	public IEnumerable<TFirst> <>3__first;
+	private IEnumerable<TSecond> second;
+	public IEnumerable<TSecond> <>3__second;
+	private Func<TFirst, TSecond, TResult> resultSelector;
+	public Func<TFirst, TSecond, TResult> <>3__resultSelector;
+	private IEnumerator<TFirst> <e1>5__1;
+	private IEnumerator<TSecond> <e2>5__2;
 
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11399,7 +11401,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11431,7 +11433,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.<>m__Finally2
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11439,7 +11441,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.System.Collections.Generic.IEnumerator<TResult>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11448,7 +11450,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11456,7 +11458,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11464,7 +11466,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11476,21 +11478,21 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 
 private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3214
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEqualityComparer<TSource> comparer; 
-	public IEqualityComparer<TSource> <>3__comparer; 
-	private IEnumerable<TSource> source; 
-	public IEnumerable<TSource> <>3__source; 
-	private Set<TSource> <set>5__1; 
-	private IEnumerator<TSource> <>7__wrap1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEqualityComparer<TSource> comparer;
+	public IEqualityComparer<TSource> <>3__comparer;
+	private IEnumerable<TSource> source;
+	public IEnumerable<TSource> <>3__source;
+	private Set<TSource> <set>5__1;
+	private IEnumerator<TSource> <>7__wrap1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11501,7 +11503,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<float>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11530,7 +11532,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<float>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11541,7 +11543,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<float>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11552,7 +11554,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<float>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11563,7 +11565,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<float>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11574,7 +11576,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<float>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11587,23 +11589,23 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 
 private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3215
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEqualityComparer<TSource> comparer; 
-	public IEqualityComparer<TSource> <>3__comparer; 
-	private IEnumerable<TSource> first; 
-	public IEnumerable<TSource> <>3__first; 
-	private Set<TSource> <set>5__1; 
-	private IEnumerable<TSource> second; 
-	public IEnumerable<TSource> <>3__second; 
-	private IEnumerator<TSource> <>7__wrap1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEqualityComparer<TSource> comparer;
+	public IEqualityComparer<TSource> <>3__comparer;
+	private IEnumerable<TSource> first;
+	public IEnumerable<TSource> <>3__first;
+	private Set<TSource> <set>5__1;
+	private IEnumerable<TSource> second;
+	public IEnumerable<TSource> <>3__second;
+	private IEnumerator<TSource> <>7__wrap1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11612,7 +11614,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11644,7 +11646,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.<>m__Finally2
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11653,7 +11655,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11662,7 +11664,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11671,7 +11673,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11680,7 +11682,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11692,23 +11694,23 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 
 private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3216
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEqualityComparer<TSource> comparer; 
-	public IEqualityComparer<TSource> <>3__comparer; 
-	private IEnumerable<TSource> second; 
-	public IEnumerable<TSource> <>3__second; 
-	private IEnumerable<TSource> first; 
-	public IEnumerable<TSource> <>3__first; 
-	private Set<TSource> <set>5__1; 
-	private IEnumerator<TSource> <>7__wrap1; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEqualityComparer<TSource> comparer;
+	public IEqualityComparer<TSource> <>3__comparer;
+	private IEnumerable<TSource> second;
+	public IEnumerable<TSource> <>3__second;
+	private IEnumerable<TSource> first;
+	public IEnumerable<TSource> <>3__first;
+	private Set<TSource> <set>5__1;
+	private IEnumerator<TSource> <>7__wrap1;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11719,7 +11721,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11748,7 +11750,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11759,7 +11761,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11770,7 +11772,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11781,7 +11783,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11792,7 +11794,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11805,19 +11807,19 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 
 private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3217
 {
-	private int <>1__state; 
-	private TSource <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable<TSource> source; 
-	public IEnumerable<TSource> <>3__source; 
-	private Buffer<TSource> <buffer>5__1; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private TSource <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable<TSource> source;
+	public IEnumerable<TSource> <>3__source;
+	private Buffer<TSource> <buffer>5__1;
+	private int <i>5__2;
 
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -11827,7 +11829,7 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11846,7 +11848,7 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11856,7 +11858,7 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>.System.Collections.Generic.IEnumerator<TSource>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -11867,7 +11869,7 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -11878,7 +11880,7 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11888,7 +11890,7 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>.System.Collections.Generic.IEnumerable<TSource>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11901,25 +11903,25 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 
 private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3218
 {
-	private int <>1__state; 
-	private TResult <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable source; 
-	public IEnumerable <>3__source; 
-	private IEnumerator <>7__wrap1; 
+	private int <>1__state;
+	private TResult <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable source;
+	public IEnumerable <>3__source;
+	private IEnumerator <>7__wrap1;
 
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<OfTypeIterator>d__97<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -11938,35 +11940,35 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	|-Enumerable.<OfTypeIterator>d__97<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<OfTypeIterator>d__97<object>.System.Collections.Generic.IEnumerator<TResult>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<OfTypeIterator>d__97<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<OfTypeIterator>d__97<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
 	|-Enumerable.<OfTypeIterator>d__97<object>.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -11977,18 +11979,18 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 
 private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3219
 {
-	private int <>1__state; 
-	private TResult <>2__current; 
-	private int <>l__initialThreadId; 
-	private IEnumerable source; 
-	public IEnumerable <>3__source; 
-	private IEnumerator <>7__wrap1; 
+	private int <>1__state;
+	private TResult <>2__current;
+	private int <>l__initialThreadId;
+	private IEnumerable source;
+	public IEnumerable <>3__source;
+	private IEnumerator <>7__wrap1;
 
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -12002,7 +12004,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -12046,7 +12048,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -12062,7 +12064,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.System.Collections.Generic.IEnumerator<TResult>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -12079,7 +12081,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -12095,7 +12097,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -12109,7 +12111,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -12125,40 +12127,40 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 
 private sealed class Enumerable.<RangeIterator>d__115 : IEnumerable<int>, IEnumerable, IEnumerator<int>, IDisposable, IEnumerator // TypeDefIndex: 3220
 {
-	private int <>1__state; 
-	private int <>2__current; 
-	private int <>l__initialThreadId; 
-	private int start; 
-	public int <>3__start; 
-	private int <i>5__1; 
-	private int count; 
-	public int <>3__count; 
+	private int <>1__state;
+	private int <>2__current;
+	private int <>l__initialThreadId;
+	private int start;
+	public int <>3__start;
+	private int <i>5__1;
+	private int count;
+	public int <>3__count;
 
 	private int System.Collections.Generic.IEnumerator<System.Int32>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private int System.Collections.Generic.IEnumerator<System.Int32>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<int> System.Collections.Generic.IEnumerable<System.Int32>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
@@ -12232,11 +12234,11 @@ internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
 
 internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // TypeDefIndex: 3237
 {
-	internal Func<TElement, TKey> keySelector; 
-	internal IComparer<TKey> comparer; 
-	internal bool descending; 
-	internal EnumerableSorter<TElement> next; 
-	internal TKey[] keys; 
+	internal Func<TElement, TKey> keySelector;
+	internal IComparer<TKey> comparer;
+	internal bool descending;
+	internal EnumerableSorter<TElement> next;
+	internal TKey[] keys;
 
 
 	internal void .ctor(Func<TElement, TKey> keySelector, IComparer<TKey> comparer, bool descending, EnumerableSorter<TElement> next) { }
@@ -12340,9 +12342,9 @@ internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // 
 
 }
 
-public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5714
+public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5716
 {
-	private string value; 
+	private string value;
 
 	public string Value { get; }
 
@@ -12351,9 +12353,9 @@ public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5714
 
 }
 
-internal static class EnumUtils // TypeDefIndex: 5961
+internal static class EnumUtils // TypeDefIndex: 5963
 {
-	private static readonly ThreadSafeStore<Type, BidirectionalDictionary<string, string>> EnumMemberNamesPerType; 
+	private static readonly ThreadSafeStore<Type, BidirectionalDictionary<string, string>> EnumMemberNamesPerType;
 
 
 	private static BidirectionalDictionary<string, string> InitializeEnumType(Type type) { }
@@ -12370,11 +12372,11 @@ internal static class EnumUtils // TypeDefIndex: 5961
 
 }
 
-private sealed class EnumUtils.<>c // TypeDefIndex: 5962
+private sealed class EnumUtils.<>c // TypeDefIndex: 5964
 {
-	public static readonly EnumUtils.<>c <>9; 
-	public static Func<EnumMemberAttribute, string> <>9__1_0; 
-	public static Func<FieldInfo, bool> <>9__5_0; 
+	public static readonly EnumUtils.<>c <>9;
+	public static Func<EnumMemberAttribute, string> <>9__1_0;
+	public static Func<FieldInfo, bool> <>9__5_0;
 
 
 	private static void .cctor() { }
@@ -12387,7 +12389,7 @@ private sealed class EnumUtils.<>c // TypeDefIndex: 5962
 
 }
 
-private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5963
+private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5965
 {
 	public static readonly EnumUtils.<>
 
@@ -12398,16 +12400,16 @@ private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5963
 
 }
 
-public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9011
+public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9013
 {
-	[CompilerGeneratedAttribute] 
-	private Result <ResultCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ModEnumerationType <Type>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Result <ResultCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ModEnumerationType <Type>k__BackingField;
 
 	public Result ResultCode { get; set; }
 	public EpicAccountId LocalUserId { get; set; }
@@ -12415,28 +12417,28 @@ public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9011
 	public ModEnumerationType Type { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Result get_ResultCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ResultCode(Result value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ModEnumerationType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Type(ModEnumerationType value) { }
 
 	public Nullable<Result> GetResultCode() { }
@@ -12445,12 +12447,12 @@ public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9011
 
 }
 
-internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGettable<EnumerateModsCallbackInfo>, ISettable<EnumerateModsCallbackInfo>, IDisposable // TypeDefIndex: 9012
+internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGettable<EnumerateModsCallbackInfo>, ISettable<EnumerateModsCallbackInfo>, IDisposable // TypeDefIndex: 9014
 {
-	private Result m_ResultCode; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ClientData; 
-	private ModEnumerationType m_Type; 
+	private Result m_ResultCode;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ClientData;
+	private ModEnumerationType m_Type;
 
 	public Result ResultCode { get; set; }
 	public EpicAccountId LocalUserId { get; set; }
@@ -12487,36 +12489,36 @@ internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGett
 
 }
 
-public struct EnumerateModsOptions // TypeDefIndex: 9013
+public struct EnumerateModsOptions // TypeDefIndex: 9015
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ModEnumerationType <Type>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ModEnumerationType <Type>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public ModEnumerationType Type { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ModEnumerationType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Type(ModEnumerationType value) { }
 
 }
 
-internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, IDisposable // TypeDefIndex: 9014
+internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, IDisposable // TypeDefIndex: 9016
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private ModEnumerationType m_Type; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private ModEnumerationType m_Type;
 
 	public EpicAccountId LocalUserId { set; }
 	public ModEnumerationType Type { set; }
@@ -12534,11 +12536,11 @@ internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, 
 
 }
 
-public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12549
+public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12562
 {
-	public object Value; 
-	public RustText TextValue; 
-	private EnumListUI list; 
+	public object Value;
+	public RustText TextValue;
+	private EnumListUI list;
 
 
 	public void Init(object value, string valueText, EnumListUI list) { }
@@ -12549,12 +12551,12 @@ public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12549
 
 }
 
-public class EnumListUI : MonoBehaviour // TypeDefIndex: 12550
+public class EnumListUI : MonoBehaviour // TypeDefIndex: 12563
 {
-	public Transform PrefabItem; 
-	public Transform Container; 
-	private Action<object> clickedAction; 
-	private CanvasScaler canvasScaler; 
+	public Transform PrefabItem;
+	public Transform Container;
+	private Action<object> clickedAction;
+	private CanvasScaler canvasScaler;
 
 
 	private void Awake() { }

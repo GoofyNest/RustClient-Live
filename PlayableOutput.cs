@@ -1,10 +1,10 @@
 public struct PlayableOutput : IEquatable<PlayableOutput> // TypeDefIndex: 3875
 {
-	private PlayableOutputHandle m_Handle; 
-	private static readonly PlayableOutput m_NullPlayableOutput; 
+	private PlayableOutputHandle m_Handle;
+	private static readonly PlayableOutput m_NullPlayableOutput;
 
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal void .ctor(PlayableOutputHandle handle) { }
 
 	public PlayableOutputHandle GetHandle() { }

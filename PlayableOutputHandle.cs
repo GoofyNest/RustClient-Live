@@ -1,8 +1,8 @@
 public struct PlayableOutputHandle : IEquatable<PlayableOutputHandle> // TypeDefIndex: 3876
 {
-	internal IntPtr m_Handle; 
-	internal uint m_Version; 
-	private static readonly PlayableOutputHandle m_Null; 
+	internal IntPtr m_Handle;
+	internal uint m_Version;
+	private static readonly PlayableOutputHandle m_Null;
 
 	public static PlayableOutputHandle Null { get; }
 

@@ -1,8 +1,8 @@
-internal struct NumberOfCurrentPlayers_t : ICallbackData // TypeDefIndex: 5398
+internal struct NumberOfCurrentPlayers_t : ICallbackData // TypeDefIndex: 5400
 {
-	internal byte Success; 
-	internal int CPlayers; 
-	public static int _datasize; 
+	internal byte Success;
+	internal int CPlayers;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

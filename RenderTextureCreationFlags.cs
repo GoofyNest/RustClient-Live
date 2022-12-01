@@ -1,6 +1,6 @@
 public enum RenderTextureCreationFlags // TypeDefIndex: 3431
 {
-	public int value__; 
+	public int value__;
 	public const RenderTextureCreationFlags MipMap = 1;
 	public const RenderTextureCreationFlags AutoGenerateMips = 2;
 	public const RenderTextureCreationFlags SRGB = 4;

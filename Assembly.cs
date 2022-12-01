@@ -1,6 +1,6 @@
 public class AssemblyLoadEventArgs : EventArgs // TypeDefIndex: 348
 {
-	private Assembly m_loadedAssembly; 
+	private Assembly m_loadedAssembly;
 
 
 	public void .ctor(Assembly loadedAssembly) { }
@@ -22,7 +22,7 @@ public sealed class AssemblyLoadEventHandler : MulticastDelegate // TypeDefIndex
 
 public enum AssemblyHashAlgorithm // TypeDefIndex: 430
 {
-	public int value__; 
+	public int value__;
 	public const AssemblyHashAlgorithm None = 0;
 	public const AssemblyHashAlgorithm MD5 = 32771;
 	public const AssemblyHashAlgorithm SHA1 = 32772;
@@ -34,7 +34,7 @@ public enum AssemblyHashAlgorithm // TypeDefIndex: 430
 
 public enum AssemblyVersionCompatibility // TypeDefIndex: 431
 {
-	public int value__; 
+	public int value__;
 	public const AssemblyVersionCompatibility SameMachine = 1;
 	public const AssemblyVersionCompatibility SameProcess = 2;
 	public const AssemblyVersionCompatibility SameDomain = 3;
@@ -43,7 +43,7 @@ public enum AssemblyVersionCompatibility // TypeDefIndex: 431
 
 public sealed class AssemblyCopyrightAttribute : Attribute // TypeDefIndex: 504
 {
-	private string m_copyright; 
+	private string m_copyright;
 
 
 	public void .ctor(string copyright) { }
@@ -52,7 +52,7 @@ public sealed class AssemblyCopyrightAttribute : Attribute // TypeDefIndex: 504
 
 public sealed class AssemblyTrademarkAttribute : Attribute // TypeDefIndex: 505
 {
-	private string m_trademark; 
+	private string m_trademark;
 
 
 	public void .ctor(string trademark) { }
@@ -61,7 +61,7 @@ public sealed class AssemblyTrademarkAttribute : Attribute // TypeDefIndex: 505
 
 public sealed class AssemblyProductAttribute : Attribute // TypeDefIndex: 506
 {
-	private string m_product; 
+	private string m_product;
 
 
 	public void .ctor(string product) { }
@@ -70,7 +70,7 @@ public sealed class AssemblyProductAttribute : Attribute // TypeDefIndex: 506
 
 public sealed class AssemblyCompanyAttribute : Attribute // TypeDefIndex: 507
 {
-	private string m_company; 
+	private string m_company;
 
 
 	public void .ctor(string company) { }
@@ -79,7 +79,7 @@ public sealed class AssemblyCompanyAttribute : Attribute // TypeDefIndex: 507
 
 public sealed class AssemblyDescriptionAttribute : Attribute // TypeDefIndex: 508
 {
-	private string m_description; 
+	private string m_description;
 
 
 	public void .ctor(string description) { }
@@ -88,7 +88,7 @@ public sealed class AssemblyDescriptionAttribute : Attribute // TypeDefIndex: 50
 
 public sealed class AssemblyTitleAttribute : Attribute // TypeDefIndex: 509
 {
-	private string m_title; 
+	private string m_title;
 
 
 	public void .ctor(string title) { }
@@ -97,7 +97,7 @@ public sealed class AssemblyTitleAttribute : Attribute // TypeDefIndex: 509
 
 public sealed class AssemblyConfigurationAttribute : Attribute // TypeDefIndex: 510
 {
-	private string m_configuration; 
+	private string m_configuration;
 
 
 	public void .ctor(string configuration) { }
@@ -106,7 +106,7 @@ public sealed class AssemblyConfigurationAttribute : Attribute // TypeDefIndex: 
 
 public sealed class AssemblyDefaultAliasAttribute : Attribute // TypeDefIndex: 511
 {
-	private string m_defaultAlias; 
+	private string m_defaultAlias;
 
 
 	public void .ctor(string defaultAlias) { }
@@ -115,7 +115,7 @@ public sealed class AssemblyDefaultAliasAttribute : Attribute // TypeDefIndex: 5
 
 public sealed class AssemblyInformationalVersionAttribute : Attribute // TypeDefIndex: 512
 {
-	private string m_informationalVersion; 
+	private string m_informationalVersion;
 
 
 	public void .ctor(string informationalVersion) { }
@@ -124,7 +124,7 @@ public sealed class AssemblyInformationalVersionAttribute : Attribute // TypeDef
 
 public sealed class AssemblyFileVersionAttribute : Attribute // TypeDefIndex: 513
 {
-	private string _version; 
+	private string _version;
 
 
 	public void .ctor(string version) { }
@@ -133,7 +133,7 @@ public sealed class AssemblyFileVersionAttribute : Attribute // TypeDefIndex: 51
 
 public sealed class AssemblyKeyFileAttribute : Attribute // TypeDefIndex: 514
 {
-	private string m_keyFile; 
+	private string m_keyFile;
 
 
 	public void .ctor(string keyFile) { }
@@ -142,7 +142,7 @@ public sealed class AssemblyKeyFileAttribute : Attribute // TypeDefIndex: 514
 
 public sealed class AssemblyDelaySignAttribute : Attribute // TypeDefIndex: 515
 {
-	private bool m_delaySign; 
+	private bool m_delaySign;
 
 
 	public void .ctor(bool delaySign) { }
@@ -151,8 +151,8 @@ public sealed class AssemblyDelaySignAttribute : Attribute // TypeDefIndex: 515
 
 public sealed class AssemblyMetadataAttribute : Attribute // TypeDefIndex: 516
 {
-	private string m_key; 
-	private string m_value; 
+	private string m_key;
+	private string m_value;
 
 
 	public void .ctor(string key, string value) { }
@@ -161,7 +161,7 @@ public sealed class AssemblyMetadataAttribute : Attribute // TypeDefIndex: 516
 
 public enum AssemblyNameFlags // TypeDefIndex: 517
 {
-	public int value__; 
+	public int value__;
 	public const AssemblyNameFlags None = 0;
 	public const AssemblyNameFlags PublicKey = 1;
 	public const AssemblyNameFlags EnableJITcompileOptimizer = 16384;
@@ -172,7 +172,7 @@ public enum AssemblyNameFlags // TypeDefIndex: 517
 
 public enum AssemblyContentType // TypeDefIndex: 518
 {
-	public int value__; 
+	public int value__;
 	public const AssemblyContentType Default = 0;
 	public const AssemblyContentType WindowsRuntime = 1;
 
@@ -180,23 +180,23 @@ public enum AssemblyContentType // TypeDefIndex: 518
 
 public class Assembly : ICustomAttributeProvider, ISerializable, _Assembly // TypeDefIndex: 555
 {
-	internal IntPtr _mono_assembly; 
-	private Assembly.ResolveEventHolder resolve_event_holder; 
-	private object _evidence; 
-	private object _minimum; 
-	private object _optional; 
-	private object _refuse; 
-	private object _granted; 
-	private object _denied; 
-	private bool fromByteArray; 
-	private string assemblyName; 
+	internal IntPtr _mono_assembly;
+	private Assembly.ResolveEventHolder resolve_event_holder;
+	private object _evidence;
+	private object _minimum;
+	private object _optional;
+	private object _refuse;
+	private object _granted;
+	private object _denied;
+	private bool fromByteArray;
+	private string assemblyName;
 
 	public virtual string CodeBase { get; }
 	public virtual string FullName { get; }
 	public virtual string Location { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual bool ReflectionOnly { get; }
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public bool IsFullyTrusted { get; }
 
 
@@ -270,7 +270,7 @@ public class Assembly : ICustomAttributeProvider, ISerializable, _Assembly // Ty
 
 	public static Assembly LoadFrom(string assemblyFile) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static Assembly LoadFrom(string assemblyFile, Evidence securityEvidence) { }
 
 	public static Assembly Load(string assemblyString) { }
@@ -279,7 +279,7 @@ public class Assembly : ICustomAttributeProvider, ISerializable, _Assembly // Ty
 
 	private static Assembly load_with_partial_name(string name, Evidence e) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static Assembly LoadWithPartialName(string partialName, Evidence securityEvidence) { }
 
 	internal static Assembly LoadWithPartialName(string partialName, Evidence securityEvidence, bool oldBehavior) { }
@@ -333,7 +333,7 @@ internal class Assembly.ResolveEventHolder // TypeDefIndex: 556
 
 internal class Assembly.UnmanagedMemoryStreamForModule : UnmanagedMemoryStream // TypeDefIndex: 557
 {
-	private Module module; 
+	private Module module;
 
 
 	public void .ctor(byte* pointer, long length, Module module) { }
@@ -344,22 +344,22 @@ internal class Assembly.UnmanagedMemoryStreamForModule : UnmanagedMemoryStream /
 
 public sealed class AssemblyName : ICloneable, ISerializable, IDeserializationCallback, _AssemblyName // TypeDefIndex: 558
 {
-	private string name; 
-	private string codebase; 
-	private int major; 
-	private int minor; 
-	private int build; 
-	private int revision; 
-	private CultureInfo cultureinfo; 
-	private AssemblyNameFlags flags; 
-	private AssemblyHashAlgorithm hashalg; 
-	private StrongNameKeyPair keypair; 
-	private byte[] publicKey; 
-	private byte[] keyToken; 
-	private AssemblyVersionCompatibility versioncompat; 
-	private Version version; 
-	private ProcessorArchitecture processor_architecture; 
-	private AssemblyContentType contentType; 
+	private string name;
+	private string codebase;
+	private int major;
+	private int minor;
+	private int build;
+	private int revision;
+	private CultureInfo cultureinfo;
+	private AssemblyNameFlags flags;
+	private AssemblyHashAlgorithm hashalg;
+	private StrongNameKeyPair keypair;
+	private byte[] publicKey;
+	private byte[] keyToken;
+	private AssemblyVersionCompatibility versioncompat;
+	private Version version;
+	private ProcessorArchitecture processor_architecture;
+	private AssemblyContentType contentType;
 
 	public string Name { get; set; }
 	public string CodeBase { get; }

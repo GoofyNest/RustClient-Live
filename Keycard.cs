@@ -1,6 +1,6 @@
-public class Keycard : AttackEntity // TypeDefIndex: 11203
+public class Keycard : AttackEntity // TypeDefIndex: 11209
 {
-	private SwapKeycard worldKeycard; 
+	private SwapKeycard worldKeycard;
 
 	public int accessLevel { get; }
 

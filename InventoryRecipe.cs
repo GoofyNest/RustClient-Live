@@ -1,8 +1,8 @@
 public struct InventoryRecipe : IEquatable<InventoryRecipe> // TypeDefIndex: 5252
 {
-	public InventoryDef Result; 
-	public InventoryRecipe.Ingredient[] Ingredients; 
-	public string Source; 
+	public InventoryDef Result;
+	public InventoryRecipe.Ingredient[] Ingredients;
+	public string Source;
 
 
 	internal static InventoryRecipe FromString(string part, InventoryDef Result) { }
@@ -19,9 +19,9 @@ public struct InventoryRecipe : IEquatable<InventoryRecipe> // TypeDefIndex: 525
 
 public struct InventoryRecipe.Ingredient // TypeDefIndex: 5253
 {
-	public int DefinitionId; 
-	public InventoryDef Definition; 
-	public int Count; 
+	public int DefinitionId;
+	public InventoryDef Definition;
+	public int Count;
 
 
 	internal static InventoryRecipe.Ingredient FromString(string part) { }
@@ -30,9 +30,9 @@ public struct InventoryRecipe.Ingredient // TypeDefIndex: 5253
 
 private sealed class InventoryRecipe.<>c // TypeDefIndex: 5254
 {
-	public static readonly InventoryRecipe.<>c <>9; 
-	public static Func<string, InventoryRecipe.Ingredient> <>9__4_0; 
-	public static Func<InventoryRecipe.Ingredient, bool> <>9__4_1; 
+	public static readonly InventoryRecipe.<>c <>9;
+	public static Func<string, InventoryRecipe.Ingredient> <>9__4_0;
+	public static Func<InventoryRecipe.Ingredient, bool> <>9__4_1;
 
 
 	private static void .cctor() { }
@@ -47,7 +47,7 @@ private sealed class InventoryRecipe.<>c // TypeDefIndex: 5254
 
 private sealed class InventoryRecipe.<>c__DisplayClass5_0 // TypeDefIndex: 5255
 {
-	public InventoryDef inventoryDef; 
+	public InventoryDef inventoryDef;
 
 
 	public void .ctor() { }

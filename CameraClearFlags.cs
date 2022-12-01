@@ -1,6 +1,6 @@
 public enum CameraClearFlags // TypeDefIndex: 3420
 {
-	public int value__; 
+	public int value__;
 	public const CameraClearFlags Skybox = 1;
 	public const CameraClearFlags Color = 2;
 	public const CameraClearFlags SolidColor = 2;

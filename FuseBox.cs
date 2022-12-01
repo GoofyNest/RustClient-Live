@@ -1,4 +1,4 @@
-public class FuseBox : IOEntity // TypeDefIndex: 11537
+public class FuseBox : IOEntity // TypeDefIndex: 11544
 {
 
 	public void .ctor() { }

@@ -1,9 +1,9 @@
-public sealed class HistogramMonitor : Monitor // TypeDefIndex: 13605
+public sealed class HistogramMonitor : Monitor // TypeDefIndex: 13621
 {
-	public int width; 
-	public int height; 
-	public HistogramMonitor.Channel channel; 
-	private ComputeBuffer m_Data; 
+	public int width;
+	public int height;
+	public HistogramMonitor.Channel channel;
+	private ComputeBuffer m_Data;
 	private const int k_NumBins = 256;
 	private const int k_ThreadGroupSizeX = 16;
 	private const int k_ThreadGroupSizeY = 16;
@@ -21,9 +21,9 @@ public sealed class HistogramMonitor : Monitor // TypeDefIndex: 13605
 
 }
 
-public enum HistogramMonitor.Channel // TypeDefIndex: 13606
+public enum HistogramMonitor.Channel // TypeDefIndex: 13622
 {
-	public int value__; 
+	public int value__;
 	public const HistogramMonitor.Channel Red = 0;
 	public const HistogramMonitor.Channel Green = 1;
 	public const HistogramMonitor.Channel Blue = 2;

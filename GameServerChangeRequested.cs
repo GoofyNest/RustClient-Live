@@ -1,8 +1,8 @@
 internal struct GameServerChangeRequested_t : ICallbackData // TypeDefIndex: 5315
 {
-	internal byte[] Server; 
-	internal byte[] Password; 
-	public static int _datasize; 
+	internal byte[] Server;
+	internal byte[] Password;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

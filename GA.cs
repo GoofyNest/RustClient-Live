@@ -1,14 +1,14 @@
-public static class GA // TypeDefIndex: 5683
+public static class GA // TypeDefIndex: 5685
 {
-	internal static bool initialized; 
-	[CompilerGeneratedAttribute] 
-	private static bool <Logging>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <CustomUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <Build>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <Device>k__BackingField; 
+	internal static bool initialized;
+	[CompilerGeneratedAttribute]
+	private static bool <Logging>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <CustomUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <Build>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <Device>k__BackingField;
 
 	public static bool Logging { get; set; }
 	public static string CustomUserId { get; set; }
@@ -16,28 +16,28 @@ public static class GA // TypeDefIndex: 5683
 	public static string Device { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_Logging() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Logging(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_CustomUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_CustomUserId(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_Build() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Build(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_Device() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Device(string value) { }
 
 	public static void Initialize(string gameKey, string gameSecret) { }

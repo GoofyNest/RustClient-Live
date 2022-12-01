@@ -1,15 +1,15 @@
 public static class Dispatch // TypeDefIndex: 5110
 {
-	public static Action<CallbackType, string, bool> OnDebugCallback; 
-	public static Action<Exception> OnException; 
-	[CompilerGeneratedAttribute] 
-	private static HSteamPipe <ClientPipe>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static HSteamPipe <ServerPipe>k__BackingField; 
-	private static bool runningFrame; 
-	private static List<Action<IntPtr>> actionsToCall; 
-	private static Dictionary<ulong, Dispatch.ResultCallback> ResultCallbacks; 
-	private static Dictionary<CallbackType, List<Dispatch.Callback>> Callbacks; 
+	public static Action<CallbackType, string, bool> OnDebugCallback;
+	public static Action<Exception> OnException;
+	[CompilerGeneratedAttribute]
+	private static HSteamPipe <ClientPipe>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static HSteamPipe <ServerPipe>k__BackingField;
+	private static bool runningFrame;
+	private static List<Action<IntPtr>> actionsToCall;
+	private static Dictionary<ulong, Dispatch.ResultCallback> ResultCallbacks;
+	private static Dictionary<CallbackType, List<Dispatch.Callback>> Callbacks;
 
 	internal static HSteamPipe ClientPipe { get; set; }
 	internal static HSteamPipe ServerPipe { get; }
@@ -23,13 +23,13 @@ public static class Dispatch // TypeDefIndex: 5110
 
 	internal static extern bool SteamAPI_ManualDispatch_FreeLastCallback(HSteamPipe pipe) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static HSteamPipe get_ClientPipe() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static void set_ClientPipe(HSteamPipe value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static HSteamPipe get_ServerPipe() { }
 
 	internal static void Init() { }
@@ -42,7 +42,7 @@ public static class Dispatch // TypeDefIndex: 5110
 
 	private static void ProcessResult(Dispatch.CallbackMsg_t msg) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	internal static void LoopClientAsync() { }
 
 	internal static void OnCallComplete<T>(SteamAPICall_t call, Action continuation, bool server) { }
@@ -187,35 +187,35 @@ public static class Dispatch // TypeDefIndex: 5110
 
 internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5111
 {
-	public HSteamUser m_hSteamUser; 
-	public CallbackType Type; 
-	public IntPtr Data; 
-	public int DataSize; 
+	public HSteamUser m_hSteamUser;
+	public CallbackType Type;
+	public IntPtr Data;
+	public int DataSize;
 
 }
 
 private struct Dispatch.ResultCallback // TypeDefIndex: 5112
 {
-	public Action continuation; 
-	public bool server; 
+	public Action continuation;
+	public bool server;
 
 }
 
 private struct Dispatch.Callback // TypeDefIndex: 5113
 {
-	public Action<IntPtr> action; 
-	public bool server; 
+	public Action<IntPtr> action;
+	public bool server;
 
 }
 
 private sealed class Dispatch.<>c // TypeDefIndex: 5114
 {
-	public static readonly Dispatch.<>c <>9; 
-	public static Func<FieldInfo, int> <>9__20_0; 
-	public static Predicate<Dispatch.Callback> <>9__31_3; 
-	public static Func<KeyValuePair<ulong, Dispatch.ResultCallback>, bool> <>9__31_0; 
-	public static Func<KeyValuePair<ulong, Dispatch.ResultCallback>, ulong> <>9__31_1; 
-	public static Func<KeyValuePair<ulong, Dispatch.ResultCallback>, Dispatch.ResultCallback> <>9__31_2; 
+	public static readonly Dispatch.<>c <>9;
+	public static Func<FieldInfo, int> <>9__20_0;
+	public static Predicate<Dispatch.Callback> <>9__31_3;
+	public static Func<KeyValuePair<ulong, Dispatch.ResultCallback>, bool> <>9__31_0;
+	public static Func<KeyValuePair<ulong, Dispatch.ResultCallback>, ulong> <>9__31_1;
+	public static Func<KeyValuePair<ulong, Dispatch.ResultCallback>, Dispatch.ResultCallback> <>9__31_2;
 
 
 	private static void .cctor() { }
@@ -236,21 +236,21 @@ private sealed class Dispatch.<>c // TypeDefIndex: 5114
 
 private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5115
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 private sealed class Dispatch.<>c__DisplayClass29_0<T> // TypeDefIndex: 5116
 {
-	public Action<T> p; 
+	public Action<T> p;
 
 
 	public void .ctor() { }

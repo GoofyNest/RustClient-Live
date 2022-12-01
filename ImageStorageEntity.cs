@@ -1,6 +1,6 @@
-public class ImageStorageEntity : BaseEntity // TypeDefIndex: 10300
+public class ImageStorageEntity : BaseEntity // TypeDefIndex: 10303
 {
-	private List<ImageStorageEntity.ImageRequest> _requests; 
+	private List<ImageStorageEntity.ImageRequest> _requests;
 
 	protected virtual FileStorage.Type StorageType { get; }
 	protected virtual uint CrcToLoad { get; }
@@ -14,30 +14,30 @@ public class ImageStorageEntity : BaseEntity // TypeDefIndex: 10300
 
 	private void RequestImage(IImageReceiver receiver) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ReceiveImage(BaseEntity.RPCMessage msg) { }
 
 	private void LoadFromBytes(byte[] imageData) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerator LoadImage(uint imageStorageEntityId, IImageReceiver receiver) { }
 
 	public void .ctor() { }
 
 }
 
-private struct ImageStorageEntity.ImageRequest // TypeDefIndex: 10301
+private struct ImageStorageEntity.ImageRequest // TypeDefIndex: 10304
 {
-	public IImageReceiver Receiver; 
-	public float Time; 
+	public IImageReceiver Receiver;
+	public float Time;
 
 }
 
-private sealed class ImageStorageEntity.<>c // TypeDefIndex: 10302
+private sealed class ImageStorageEntity.<>c // TypeDefIndex: 10305
 {
-	public static readonly ImageStorageEntity.<>c <>9; 
-	public static Predicate<ImageStorageEntity.ImageRequest> <>9__7_0; 
-	public static Func<ImageStorageEntity.ImageRequest, IImageReceiver> <>9__7_1; 
+	public static readonly ImageStorageEntity.<>c <>9;
+	public static Predicate<ImageStorageEntity.ImageRequest> <>9__7_0;
+	public static Func<ImageStorageEntity.ImageRequest, IImageReceiver> <>9__7_1;
 
 
 	private static void .cctor() { }
@@ -50,33 +50,33 @@ private sealed class ImageStorageEntity.<>c // TypeDefIndex: 10302
 
 }
 
-private sealed class ImageStorageEntity.<LoadImage>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10303
+private sealed class ImageStorageEntity.<LoadImage>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10306
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public uint imageStorageEntityId; 
-	public IImageReceiver receiver; 
-	private RealTimeSince <sinceStart>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public uint imageStorageEntityId;
+	public IImageReceiver receiver;
+	private RealTimeSince <sinceStart>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

@@ -1,6 +1,6 @@
 public struct CameraPlayable : IEquatable<CameraPlayable> // TypeDefIndex: 3896
 {
-	private PlayableHandle m_Handle; 
+	private PlayableHandle m_Handle;
 
 
 	public PlayableHandle GetHandle() { }

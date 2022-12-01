@@ -1,15 +1,15 @@
 public abstract class PhraseRecognizer // TypeDefIndex: 3597
 {
-	protected IntPtr m_Recognizer; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private PhraseRecognizer.PhraseRecognizedDelegate OnPhraseRecognized; 
+	protected IntPtr m_Recognizer;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private PhraseRecognizer.PhraseRecognizedDelegate OnPhraseRecognized;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void InvokePhraseRecognizedEvent(string text, ConfidenceLevel confidence, SemanticMeaning[] semanticMeanings, long phraseStartFileTime, long phraseDurationTicks) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static SemanticMeaning[] MarshalSemanticMeaning(IntPtr keys, IntPtr values, IntPtr valueSizes, int valueCount) { }
 
 }

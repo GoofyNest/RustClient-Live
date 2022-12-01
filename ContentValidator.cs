@@ -1,12 +1,12 @@
 internal class ContentValidator // TypeDefIndex: 2167
 {
-	private XmlSchemaContentType contentType; 
-	private bool isOpen; 
-	private bool isEmptiable; 
-	public static readonly ContentValidator Empty; 
-	public static readonly ContentValidator TextOnly; 
-	public static readonly ContentValidator Mixed; 
-	public static readonly ContentValidator Any; 
+	private XmlSchemaContentType contentType;
+	private bool isOpen;
+	private bool isEmptiable;
+	public static readonly ContentValidator Empty;
+	public static readonly ContentValidator TextOnly;
+	public static readonly ContentValidator Mixed;
+	public static readonly ContentValidator Any;
 
 	public XmlSchemaContentType ContentType { get; }
 	public bool PreserveWhitespace { get; }

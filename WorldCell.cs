@@ -1,11 +1,11 @@
-public class WorldCell // TypeDefIndex: 11826
+public class WorldCell // TypeDefIndex: 11833
 {
-	public Vector3 Position; 
-	public float Size; 
-	public bool Visible; 
-	public float Timestamp; 
-	private List<WorldCell.PrefabInfo> prefabs; 
-	private List<GameObject> instances; 
+	public Vector3 Position;
+	public float Size;
+	public bool Visible;
+	public float Timestamp;
+	private List<WorldCell.PrefabInfo> prefabs;
+	private List<GameObject> instances;
 
 
 	public void .ctor(Vector3 position, float size) { }
@@ -24,13 +24,13 @@ public class WorldCell // TypeDefIndex: 11826
 
 }
 
-public class WorldCell.PrefabInfo // TypeDefIndex: 11827
+public class WorldCell.PrefabInfo // TypeDefIndex: 11834
 {
-	public string category; 
-	public Prefab prefab; 
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 scale; 
+	public string category;
+	public Prefab prefab;
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 scale;
 
 
 	public void .ctor(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }

@@ -1,6 +1,6 @@
 public enum ForceMode // TypeDefIndex: 3914
 {
-	public int value__; 
+	public int value__;
 	public const ForceMode Force = 0;
 	public const ForceMode Acceleration = 5;
 	public const ForceMode Impulse = 1;

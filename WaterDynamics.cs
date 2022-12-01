@@ -1,4 +1,4 @@
-public class WaterDynamics : MonoBehaviour // TypeDefIndex: 12353
+public class WaterDynamics : MonoBehaviour // TypeDefIndex: 12361
 {
 	private const int maxRasterSize = 1024;
 	private const int subStep = 256;
@@ -8,23 +8,23 @@ public class WaterDynamics : MonoBehaviour // TypeDefIndex: 12353
 	private const float interp_subStep = 65536;
 	private const int interp_subShift = 16;
 	private const int interp_subFracMask = 65535;
-	private WaterDynamics.ImageDesc imageDesc; 
-	private byte[] imagePixels; 
-	private WaterDynamics.TargetDesc targetDesc; 
-	private byte[] targetPixels; 
-	private byte[] targetDrawTileTable; 
-	private SimpleList<ushort> targetDrawTileList; 
-	public bool ShowDebug; 
-	private Material material; 
-	private MaterialPropertyBlock block; 
-	private Mesh mesh; 
-	private static Dictionary<Texture2D, WaterDynamics.InstanceBatch> Batches; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsInitialized>k__BackingField; 
-	public bool ForceFallback; 
-	private WaterDynamics.Target target; 
-	private bool useNativePath; 
-	private static HashSet<WaterInteraction> interactions; 
+	private WaterDynamics.ImageDesc imageDesc;
+	private byte[] imagePixels;
+	private WaterDynamics.TargetDesc targetDesc;
+	private byte[] targetPixels;
+	private byte[] targetDrawTileTable;
+	private SimpleList<ushort> targetDrawTileList;
+	public bool ShowDebug;
+	private Material material;
+	private MaterialPropertyBlock block;
+	private Mesh mesh;
+	private static Dictionary<Texture2D, WaterDynamics.InstanceBatch> Batches;
+	[CompilerGeneratedAttribute]
+	private bool <IsInitialized>k__BackingField;
+	public bool ForceFallback;
+	private WaterDynamics.Target target;
+	private bool useNativePath;
+	private static HashSet<WaterInteraction> interactions;
 
 	public bool IsInitialized { get; set; }
 
@@ -98,10 +98,10 @@ public class WaterDynamics : MonoBehaviour // TypeDefIndex: 12353
 	|-WaterDynamics.SafeRelease<ComputeBuffer>
 	*/
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsInitialized(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsInitialized() { }
 
 	public static void RegisterInteraction(WaterInteraction interaction) { }
@@ -132,13 +132,13 @@ public class WaterDynamics : MonoBehaviour // TypeDefIndex: 12353
 
 }
 
-public struct WaterDynamics.ImageDesc // TypeDefIndex: 12354
+public struct WaterDynamics.ImageDesc // TypeDefIndex: 12362
 {
-	public int width; 
-	public int height; 
-	public int maxWidth; 
-	public int maxHeight; 
-	public int widthShift; 
+	public int width;
+	public int height;
+	public int maxWidth;
+	public int maxHeight;
+	public int widthShift;
 
 
 	public void .ctor(Texture2D tex) { }
@@ -147,20 +147,20 @@ public struct WaterDynamics.ImageDesc // TypeDefIndex: 12354
 
 }
 
-public class WaterDynamics.Image // TypeDefIndex: 12355
+public class WaterDynamics.Image // TypeDefIndex: 12363
 {
-	public WaterDynamics.ImageDesc desc; 
-	[CompilerGeneratedAttribute] 
-	private Texture2D <texture>k__BackingField; 
-	public byte[] pixels; 
+	public WaterDynamics.ImageDesc desc;
+	[CompilerGeneratedAttribute]
+	private Texture2D <texture>k__BackingField;
+	public byte[] pixels;
 
 	public Texture2D texture { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Texture2D get_texture() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_texture(Texture2D value) { }
 
 	public void .ctor(Texture2D tex) { }
@@ -171,10 +171,10 @@ public class WaterDynamics.Image // TypeDefIndex: 12355
 
 }
 
-private struct WaterDynamics.Point2D // TypeDefIndex: 12356
+private struct WaterDynamics.Point2D // TypeDefIndex: 12364
 {
-	public int x; 
-	public int y; 
+	public int x;
+	public int y;
 
 
 	public void .ctor(int x, int y) { }
@@ -183,28 +183,28 @@ private struct WaterDynamics.Point2D // TypeDefIndex: 12356
 
 }
 
-public struct WaterDynamics.InstanceData // TypeDefIndex: 12357
+public struct WaterDynamics.InstanceData // TypeDefIndex: 12365
 {
-	public Vector4 PositionScale; 
-	public Vector4 RotationDispDist; 
+	public Vector4 PositionScale;
+	public Vector4 RotationDispDist;
 
 
 	public void .ctor(Vector2 pos, Vector2 scale, float rotation, float disp, float dist) { }
 
 }
 
-private class WaterDynamics.InstanceBatch // TypeDefIndex: 12358
+private class WaterDynamics.InstanceBatch // TypeDefIndex: 12366
 {
-	[CompilerGeneratedAttribute] 
-	private Mesh <Mesh>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Texture <Texture>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ComputeBuffer <ArgBuffer>k__BackingField; 
-	private uint[] args; 
-	[CompilerGeneratedAttribute] 
-	private ComputeBuffer <InstanceBuffer>k__BackingField; 
-	private SimpleList<WaterDynamics.InstanceData> instances; 
+	[CompilerGeneratedAttribute]
+	private Mesh <Mesh>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Texture <Texture>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ComputeBuffer <ArgBuffer>k__BackingField;
+	private uint[] args;
+	[CompilerGeneratedAttribute]
+	private ComputeBuffer <InstanceBuffer>k__BackingField;
+	private SimpleList<WaterDynamics.InstanceData> instances;
 
 	public Mesh Mesh { get; set; }
 	public Texture Texture { get; set; }
@@ -213,28 +213,28 @@ private class WaterDynamics.InstanceBatch // TypeDefIndex: 12358
 	public int Count { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Mesh(Mesh value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Mesh get_Mesh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Texture(Texture value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Texture get_Texture() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ArgBuffer(ComputeBuffer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ComputeBuffer get_ArgBuffer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_InstanceBuffer(ComputeBuffer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ComputeBuffer get_InstanceBuffer() { }
 
 	public int get_Count() { }
@@ -255,18 +255,18 @@ private class WaterDynamics.InstanceBatch // TypeDefIndex: 12358
 
 }
 
-public struct WaterDynamics.TargetDesc // TypeDefIndex: 12359
+public struct WaterDynamics.TargetDesc // TypeDefIndex: 12367
 {
-	public int size; 
-	public int maxSize; 
-	public int maxSizeSubStep; 
-	public Vector2 areaOffset; 
-	public Vector2 areaToMapUV; 
-	public Vector2 areaToMapXY; 
-	public int tileSize; 
-	public int tileSizeShift; 
-	public int tileCount; 
-	public int tileMaxCount; 
+	public int size;
+	public int maxSize;
+	public int maxSizeSubStep;
+	public Vector2 areaOffset;
+	public Vector2 areaToMapUV;
+	public Vector2 areaToMapXY;
+	public int tileSize;
+	public int tileSizeShift;
+	public int tileCount;
+	public int tileMaxCount;
 
 
 	public void .ctor(Vector3 areaPosition, Vector3 areaSize) { }
@@ -283,23 +283,23 @@ public struct WaterDynamics.TargetDesc // TypeDefIndex: 12359
 
 }
 
-public class WaterDynamics.Target // TypeDefIndex: 12360
+public class WaterDynamics.Target // TypeDefIndex: 12368
 {
-	public WaterDynamics owner; 
-	public WaterDynamics.TargetDesc desc; 
-	private byte[] pixels; 
-	private RenderTexture interactionTarget; 
-	private RenderTexture combinedTarget; 
-	private Camera commandBufferCamera; 
-	private CommandBuffer commandBuffer; 
-	private Material combineMaterial; 
-	private byte[] clearTileTable; 
-	private SimpleList<ushort> clearTileList; 
-	private byte[] drawTileTable; 
-	private SimpleList<ushort> drawTileList; 
+	public WaterDynamics owner;
+	public WaterDynamics.TargetDesc desc;
+	private byte[] pixels;
+	private RenderTexture interactionTarget;
+	private RenderTexture combinedTarget;
+	private Camera commandBufferCamera;
+	private CommandBuffer commandBuffer;
+	private Material combineMaterial;
+	private byte[] clearTileTable;
+	private SimpleList<ushort> clearTileList;
+	private byte[] drawTileTable;
+	private SimpleList<ushort> drawTileList;
 	private const int MaxInteractionOffset = 100;
-	private Vector3 prevCameraWorldPos; 
-	private Vector2i interactionOffset; 
+	private Vector3 prevCameraWorldPos;
+	private Vector2i interactionOffset;
 
 	public WaterDynamics.TargetDesc Desc { get; }
 	public byte[] Pixels { get; }

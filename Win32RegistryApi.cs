@@ -1,6 +1,6 @@
 internal class Win32RegistryApi : IRegistryApi // TypeDefIndex: 110
 {
-	private readonly int NativeBytesPerCharacter; 
+	private readonly int NativeBytesPerCharacter;
 
 
 	private static extern int RegCloseKey(IntPtr keyHandle) { }

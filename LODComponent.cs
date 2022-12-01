@@ -1,23 +1,23 @@
-public abstract class LODComponent : BaseMonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 11669
+public abstract class LODComponent : BaseMonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 11676
 {
-	public LODDistanceMode DistanceMode; 
-	public LODComponent.OccludeeParameters OccludeeParams; 
-	protected Transform cachedTransform; 
-	protected Impostor impostor; 
-	private LODEnvironmentMode EnvironmentMode; 
-	private bool culled; 
-	private LODCell cell; 
-	private float currentDistance; 
-	private bool occludeeCulled; 
-	private bool occludeeShadowsVisible; 
-	private float occludeeShadowRange; 
-	private OccludeeSphere occludee; 
+	public LODDistanceMode DistanceMode;
+	public LODComponent.OccludeeParameters OccludeeParams;
+	protected Transform cachedTransform;
+	protected Impostor impostor;
+	private LODEnvironmentMode EnvironmentMode;
+	private bool culled;
+	private LODCell cell;
+	private float currentDistance;
+	private bool occludeeCulled;
+	private bool occludeeShadowsVisible;
+	private float occludeeShadowRange;
+	private OccludeeSphere occludee;
 	private const float OccludeeMinTimeVisible = 0,1;
-	private static HashSet<LODComponent> occludeeSet; 
-	private static readonly int DynamicOccludeeLowPerFrame; 
-	private static readonly float DynamicOccludeeMinimumLowInterval; 
-	private static ListHashSet<LODComponent> dynamicOccludees; 
-	private static int dynamicOccludeeLowIndex; 
+	private static HashSet<LODComponent> occludeeSet;
+	private static readonly int DynamicOccludeeLowPerFrame;
+	private static readonly float DynamicOccludeeMinimumLowInterval;
+	private static ListHashSet<LODComponent> dynamicOccludees;
+	private static int dynamicOccludeeLowIndex;
 
 	public static HashSet<LODComponent> OccludeeSet { get; }
 	public float CurrentDistance { get; }
@@ -43,7 +43,7 @@ public abstract class LODComponent : BaseMonoBehaviour, IClientComponent, ILOD /
 
 	private void DisableCulling() { }
 
-	[ContextMenu] 
+	[ContextMenu]
 	public void RefreshLOD() { }
 
 	public void ChangeLOD() { }
@@ -106,23 +106,23 @@ public abstract class LODComponent : BaseMonoBehaviour, IClientComponent, ILOD /
 
 }
 
-public struct LODComponent.OccludeeParameters // TypeDefIndex: 11670
+public struct LODComponent.OccludeeParameters // TypeDefIndex: 11677
 {
-	[TooltipAttribute] 
-	public bool isDynamic; 
-	[TooltipAttribute] 
-	public float dynamicUpdateInterval; 
-	[TooltipAttribute] 
-	public float shadowRangeScale; 
-	[TooltipAttribute] 
-	public bool showBounds; 
+	[TooltipAttribute]
+	public bool isDynamic;
+	[TooltipAttribute]
+	public float dynamicUpdateInterval;
+	[TooltipAttribute]
+	public float shadowRangeScale;
+	[TooltipAttribute]
+	public bool showBounds;
 
 }
 
-private sealed class LODComponent.<>c // TypeDefIndex: 11671
+private sealed class LODComponent.<>c // TypeDefIndex: 11678
 {
-	public static readonly LODComponent.<>c <>9; 
-	public static Predicate<LODComponent> <>9__35_0; 
+	public static readonly LODComponent.<>c <>9;
+	public static Predicate<LODComponent> <>9__35_0;
 
 
 	private static void .cctor() { }

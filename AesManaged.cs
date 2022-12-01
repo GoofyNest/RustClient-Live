@@ -1,6 +1,6 @@
 public sealed class AesManaged : Aes // TypeDefIndex: 3194
 {
-	private RijndaelManaged m_rijndael; 
+	private RijndaelManaged m_rijndael;
 
 	public override int FeedbackSize { get; }
 	public override byte[] IV { get; set; }

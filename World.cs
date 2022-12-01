@@ -1,29 +1,29 @@
-public static class World // TypeDefIndex: 12066
+public static class World // TypeDefIndex: 12073
 {
-	[CompilerGeneratedAttribute] 
-	private static uint <Seed>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static uint <Size>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <Checksum>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <Url>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static bool <Procedural>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static bool <Cached>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static bool <Networked>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static bool <Receiving>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static bool <Transfer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static bool <LoadedFromSave>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static int <SpawnIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static WorldSerialization <Serialization>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private static uint <Seed>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static uint <Size>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <Checksum>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <Url>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static bool <Procedural>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static bool <Cached>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static bool <Networked>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static bool <Receiving>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static bool <Transfer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static bool <LoadedFromSave>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static int <SpawnIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static WorldSerialization <Serialization>k__BackingField;
 
 	public static uint Seed { get; set; }
 	public static uint Size { get; set; }
@@ -42,76 +42,76 @@ public static class World // TypeDefIndex: 12066
 	public static string MapFolderName { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static uint get_Seed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Seed(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static uint get_Size() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Size(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_Checksum() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Checksum(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_Url() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Url(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_Procedural() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Procedural(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_Cached() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Cached(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_Networked() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Networked(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_Receiving() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Receiving(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_Transfer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Transfer(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_LoadedFromSave() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_LoadedFromSave(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static int get_SpawnIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_SpawnIndex(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static WorldSerialization get_Serialization() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_Serialization(WorldSerialization value) { }
 
 	public static string get_Name() { }
@@ -152,10 +152,10 @@ public static class World // TypeDefIndex: 12066
 
 	public static void AddPath(PathList path) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerator SpawnAsync(float deltaTime, Action<string> statusFunction) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public static IEnumerator Spawn(float deltaTime, Action<string> statusFunction) { }
 
 	public static void Spawn() { }
@@ -178,10 +178,10 @@ public static class World // TypeDefIndex: 12066
 
 }
 
-private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 12067
+private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 12074
 {
-	public Regex regex1; 
-	public Regex regex2; 
+	public Regex regex1;
+	public Regex regex2;
 
 
 	public void .ctor() { }
@@ -190,10 +190,10 @@ private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 12067
 
 }
 
-private sealed class World.<>c // TypeDefIndex: 12068
+private sealed class World.<>c // TypeDefIndex: 12075
 {
-	public static readonly World.<>c <>9; 
-	public static Func<PathData, PathList> <>9__67_0; 
+	public static readonly World.<>c <>9;
+	public static Func<PathData, PathList> <>9__67_0;
 
 
 	private static void .cctor() { }
@@ -204,94 +204,94 @@ private sealed class World.<>c // TypeDefIndex: 12068
 
 }
 
-private sealed class World.<SpawnAsync>d__70 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12069
+private sealed class World.<SpawnAsync>d__70 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12076
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public float deltaTime; 
-	public Action<string> statusFunction; 
-	private int <totalCount>5__2; 
-	private Dictionary<string, List<PrefabData>> <assetGroups>5__3; 
-	private int <spawnedCount>5__4; 
-	private int <resultIndex>5__5; 
-	private Stopwatch <sw>5__6; 
-	private AssetPreloadResult <load>5__7; 
+	private int <>1__state;
+	private object <>2__current;
+	public float deltaTime;
+	public Action<string> statusFunction;
+	private int <totalCount>5__2;
+	private Dictionary<string, List<PrefabData>> <assetGroups>5__3;
+	private int <spawnedCount>5__4;
+	private int <resultIndex>5__5;
+	private Stopwatch <sw>5__6;
+	private AssetPreloadResult <load>5__7;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class World.<Spawn>d__71 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12070
+private sealed class World.<Spawn>d__71 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12077
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public float deltaTime; 
-	public Action<string> statusFunction; 
-	private Stopwatch <sw>5__2; 
-	private int <i>5__3; 
+	private int <>1__state;
+	private object <>2__current;
+	public float deltaTime;
+	public Action<string> statusFunction;
+	private Stopwatch <sw>5__2;
+	private int <i>5__3;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class World : ConsoleSystem // TypeDefIndex: 13767
+public class World : ConsoleSystem // TypeDefIndex: 13783
 {
-	[ServerVar] 
-	[ClientVar] 
-	public static bool cache; 
-	[ClientVar] 
-	public static bool streaming; 
+	[ServerVar]
+	[ClientVar]
+	public static bool cache;
+	[ClientVar]
+	public static bool streaming;
 
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void monuments(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void rendermap(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void rendertunnels(ConsoleSystem.Arg arg) { }
 
-	[ServerVar] 
+	[ServerVar]
 	public static void renderlabs(ConsoleSystem.Arg arg) { }
 
 	private static void RenderMapLayerToFile(ConsoleSystem.Arg arg, string name, MapLayer layer) { }

@@ -1,4 +1,4 @@
-public class WorldSpaceGrid // TypeDefIndex: 6578
+public class WorldSpaceGrid // TypeDefIndex: 6580
 {
 
 	public static Vector3 ClosestGridCell(Vector3 worldPos, float gridSize, float cellSize) { }

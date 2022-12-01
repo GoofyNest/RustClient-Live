@@ -1,13 +1,13 @@
-internal struct WriteFileOptionsInternal : ISettable<WriteFileOptions>, IDisposable // TypeDefIndex: 8932
+internal struct WriteFileOptionsInternal : ISettable<WriteFileOptions>, IDisposable // TypeDefIndex: 8934
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Filename; 
-	private uint m_ChunkLengthBytes; 
-	private IntPtr m_WriteFileDataCallback; 
-	private IntPtr m_FileTransferProgressCallback; 
-	private static OnWriteFileDataCallbackInternal s_WriteFileDataCallback; 
-	private static OnFileTransferProgressCallbackInternal s_FileTransferProgressCallback; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Filename;
+	private uint m_ChunkLengthBytes;
+	private IntPtr m_WriteFileDataCallback;
+	private IntPtr m_FileTransferProgressCallback;
+	private static OnWriteFileDataCallbackInternal s_WriteFileDataCallback;
+	private static OnFileTransferProgressCallbackInternal s_FileTransferProgressCallback;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String Filename { set; }

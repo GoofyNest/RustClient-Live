@@ -1,10 +1,10 @@
-public class ColorRow : MaterialRow // TypeDefIndex: 7770
+public class ColorRow : MaterialRow // TypeDefIndex: 7772
 {
-	public Button Reset; 
-	public Slider Red; 
-	public Slider Green; 
-	public Slider Blue; 
-	private Color Default; 
+	public Button Reset;
+	public Slider Red;
+	public Slider Green;
+	public Slider Blue;
+	private Color Default;
 
 	public bool IsDefault { get; }
 

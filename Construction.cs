@@ -1,35 +1,36 @@
-public class Construction : PrefabAttribute // TypeDefIndex: 10779
+public class Construction : PrefabAttribute // TypeDefIndex: 10783
 {
-	public static string lastPlacementError; 
-	public BaseEntity.Menu.Option info; 
-	public bool canBypassBuildingPermission; 
-	[FormerlySerializedAsAttribute] 
-	public bool canRotateBeforePlacement; 
-	[FormerlySerializedAsAttribute] 
-	public bool canRotateAfterPlacement; 
-	public bool checkVolumeOnRotate; 
-	public bool checkVolumeOnUpgrade; 
-	public bool canPlaceAtMaxDistance; 
-	public bool placeOnWater; 
-	public Vector3 rotationAmount; 
-	public Vector3 applyStartingRotation; 
-	[RangeAttribute] 
-	public float healthMultiplier; 
-	[RangeAttribute] 
-	public float costMultiplier; 
-	[RangeAttribute] 
-	public float maxplaceDistance; 
-	public Mesh guideMesh; 
-	public Socket_Base[] allSockets; 
-	public BuildingProximity[] allProximities; 
-	public ConstructionGrade defaultGrade; 
-	public SocketHandle socketHandle; 
-	public Bounds bounds; 
-	public bool isBuildingPrivilege; 
-	public bool isSleepingBag; 
-	public ConstructionGrade[] grades; 
-	public Deployable deployable; 
-	public ConstructionPlaceholder placeholder; 
+	public static string lastPlacementError;
+	public BaseEntity.Menu.Option info;
+	public bool canBypassBuildingPermission;
+	[FormerlySerializedAsAttribute]
+	public bool canRotateBeforePlacement;
+	[FormerlySerializedAsAttribute]
+	public bool canRotateAfterPlacement;
+	public bool checkVolumeOnRotate;
+	public bool checkVolumeOnUpgrade;
+	public bool canPlaceAtMaxDistance;
+	public bool placeOnWater;
+	public Vector3 rotationAmount;
+	public Vector3 applyStartingRotation;
+	public Transform deployOffset;
+	[RangeAttribute]
+	public float healthMultiplier;
+	[RangeAttribute]
+	public float costMultiplier;
+	[RangeAttribute]
+	public float maxplaceDistance;
+	public Mesh guideMesh;
+	public Socket_Base[] allSockets;
+	public BuildingProximity[] allProximities;
+	public ConstructionGrade defaultGrade;
+	public SocketHandle socketHandle;
+	public Bounds bounds;
+	public bool isBuildingPrivilege;
+	public bool isSleepingBag;
+	public ConstructionGrade[] grades;
+	public Deployable deployable;
+	public ConstructionPlaceholder placeholder;
 
 	public static bool DebugDraw { get; }
 
@@ -60,18 +61,18 @@ public class Construction : PrefabAttribute // TypeDefIndex: 10779
 
 }
 
-public struct Construction.Target // TypeDefIndex: 10780
+public struct Construction.Target // TypeDefIndex: 10784
 {
-	public bool valid; 
-	public Ray ray; 
-	public BaseEntity entity; 
-	public Socket_Base socket; 
-	public bool onTerrain; 
-	public Vector3 position; 
-	public Vector3 normal; 
-	public Vector3 rotation; 
-	public BasePlayer player; 
-	public bool inBuildingPrivilege; 
+	public bool valid;
+	public Ray ray;
+	public BaseEntity entity;
+	public Socket_Base socket;
+	public bool onTerrain;
+	public Vector3 position;
+	public Vector3 normal;
+	public Vector3 rotation;
+	public BasePlayer player;
+	public bool inBuildingPrivilege;
 
 
 	public Quaternion GetWorldRotation(bool female) { }
@@ -80,21 +81,21 @@ public struct Construction.Target // TypeDefIndex: 10780
 
 }
 
-public class Construction.Placement // TypeDefIndex: 10781
+public class Construction.Placement // TypeDefIndex: 10785
 {
-	public Vector3 position; 
-	public Quaternion rotation; 
+	public Vector3 position;
+	public Quaternion rotation;
 
 
 	public void .ctor() { }
 
 }
 
-public class Construction.Grade // TypeDefIndex: 10782
+public class Construction.Grade // TypeDefIndex: 10786
 {
-	public BuildingGrade grade; 
-	public float maxHealth; 
-	public List<ItemAmount> costToBuild; 
+	public BuildingGrade grade;
+	public float maxHealth;
+	public List<ItemAmount> costToBuild;
 
 	public PhysicMaterial physicMaterial { get; }
 	public ProtectionProperties damageProtecton { get; }
@@ -108,11 +109,11 @@ public class Construction.Grade // TypeDefIndex: 10782
 
 }
 
-private sealed class Construction.<>c // TypeDefIndex: 10783
+private sealed class Construction.<>c // TypeDefIndex: 10787
 {
-	public static readonly Construction.<>c <>9; 
-	public static Func<ConstructionGrade, bool> <>9__34_0; 
-	public static Func<ConstructionGrade, BuildingGrade.Enum> <>9__34_1; 
+	public static readonly Construction.<>c <>9;
+	public static Func<ConstructionGrade, bool> <>9__35_0;
+	public static Func<ConstructionGrade, BuildingGrade.Enum> <>9__35_1;
 
 
 	private static void .cctor() { }
@@ -125,9 +126,9 @@ private sealed class Construction.<>c // TypeDefIndex: 10783
 
 }
 
-public class Construction_SleepingBag : Construction // TypeDefIndex: 10790
+public class Construction_SleepingBag : Construction // TypeDefIndex: 10794
 {
-	public static bool ShowSleepingBagProximityWarning; 
+	public static bool ShowSleepingBagProximityWarning;
 
 
 	public override bool ShowAsNeutral(Construction.Target target) { }

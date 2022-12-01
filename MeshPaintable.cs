@@ -1,12 +1,12 @@
-public class MeshPaintable : BaseMeshPaintable // TypeDefIndex: 10933
+public class MeshPaintable : BaseMeshPaintable // TypeDefIndex: 10939
 {
-	public string replacementTextureName; 
-	public int textureWidth; 
-	public int textureHeight; 
-	public Color clearColor; 
-	public Texture2D targetTexture; 
-	public bool hasChanges; 
-	private RectInt areaClamp; 
+	public string replacementTextureName;
+	public int textureWidth;
+	public int textureHeight;
+	public Color clearColor;
+	public Texture2D targetTexture;
+	public bool hasChanges;
+	private RectInt areaClamp;
 
 	public override Texture2D TargetTexture { get; set; }
 	public override bool HasChanges { get; set; }

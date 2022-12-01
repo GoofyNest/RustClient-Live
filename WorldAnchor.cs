@@ -1,11 +1,11 @@
 public class WorldAnchor : Component // TypeDefIndex: 4774
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private WorldAnchor.OnTrackingChangedDelegate OnTrackingChanged; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private WorldAnchor.OnTrackingChangedDelegate OnTrackingChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void Internal_TriggerEventOnTrackingLost(WorldAnchor worldAnchor, bool located) { }
 
 }

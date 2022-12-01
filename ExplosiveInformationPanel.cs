@@ -1,12 +1,12 @@
-public class ExplosiveInformationPanel : ItemInformationPanel // TypeDefIndex: 12768
+public class ExplosiveInformationPanel : ItemInformationPanel // TypeDefIndex: 12782
 {
-	public ItemTextValue explosiveDmgDisplay; 
-	public ItemTextValue lethalDmgDisplay; 
-	public ItemTextValue throwDistanceDisplay; 
-	public ItemTextValue projectileDistanceDisplay; 
-	public ItemTextValue fuseLengthDisplay; 
-	public ItemTextValue blastRadiusDisplay; 
-	public Text unreliableText; 
+	public ItemTextValue explosiveDmgDisplay;
+	public ItemTextValue lethalDmgDisplay;
+	public ItemTextValue throwDistanceDisplay;
+	public ItemTextValue projectileDistanceDisplay;
+	public ItemTextValue fuseLengthDisplay;
+	public ItemTextValue blastRadiusDisplay;
+	public Text unreliableText;
 
 
 	public override bool EligableForDisplay(ItemDefinition info) { }

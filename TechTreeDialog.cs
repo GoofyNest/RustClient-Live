@@ -1,24 +1,24 @@
-public class TechTreeDialog : UIDialog, IInventoryChanged // TypeDefIndex: 12672
+public class TechTreeDialog : UIDialog, IInventoryChanged // TypeDefIndex: 12686
 {
-	public TechTreeData data; 
-	public float graphScale; 
-	public TechTreeEntry entryPrefab; 
-	public TechTreeGroup groupPrefab; 
-	public TechTreeLine linePrefab; 
-	public RectTransform contents; 
-	public RectTransform contentParent; 
-	public TechTreeSelectedNodeUI selectedNodeUI; 
-	public float nodeSize; 
-	public float gridSize; 
-	public GameObjectRef unlockEffect; 
-	public RustText scrapCount; 
-	private Vector2 startPos; 
-	public List<int> processed; 
-	public Dictionary<int, TechTreeWidget> widgets; 
-	public List<TechTreeLine> lines; 
-	public ScrollRectZoom zoom; 
-	private int selectedNodeID; 
-	private Workbench _attachedWorkbench; 
+	public TechTreeData data;
+	public float graphScale;
+	public TechTreeEntry entryPrefab;
+	public TechTreeGroup groupPrefab;
+	public TechTreeLine linePrefab;
+	public RectTransform contents;
+	public RectTransform contentParent;
+	public TechTreeSelectedNodeUI selectedNodeUI;
+	public float nodeSize;
+	public float gridSize;
+	public GameObjectRef unlockEffect;
+	public RustText scrapCount;
+	private Vector2 startPos;
+	public List<int> processed;
+	public Dictionary<int, TechTreeWidget> widgets;
+	public List<TechTreeLine> lines;
+	public ScrollRectZoom zoom;
+	private int selectedNodeID;
+	private Workbench _attachedWorkbench;
 
 
 	public override void OpenDialog() { }
@@ -71,15 +71,15 @@ public class TechTreeDialog : UIDialog, IInventoryChanged // TypeDefIndex: 12672
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OpenDialog>
 
 }
 
-private sealed class TechTreeDialog.<>c__DisplayClass37_0 // TypeDefIndex: 12673
+private sealed class TechTreeDialog.<>c__DisplayClass37_0 // TypeDefIndex: 12687
 {
-	public TechTreeDialog <>4__this; 
-	public TechTreeData.NodeInstance node; 
+	public TechTreeDialog <>4__this;
+	public TechTreeData.NodeInstance node;
 
 
 	public void .ctor() { }

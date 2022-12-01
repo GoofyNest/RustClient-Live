@@ -1,6 +1,6 @@
 public abstract class CallbackEventHandler : IEventHandler // TypeDefIndex: 4655
 {
-	private EventCallbackRegistry m_CallbackRegistry; 
+	private EventCallbackRegistry m_CallbackRegistry;
 
 
 	public abstract void SendEvent(EventBase e);

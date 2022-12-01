@@ -1,6 +1,6 @@
 public sealed class X509ExtensionEnumerator : IEnumerator // TypeDefIndex: 2833
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public X509Extension Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

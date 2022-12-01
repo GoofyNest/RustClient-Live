@@ -1,7 +1,7 @@
 internal class StringResultHandler : SearchResultHandler<string> // TypeDefIndex: 630
 {
-	private bool _includeFiles; 
-	private bool _includeDirs; 
+	private bool _includeFiles;
+	private bool _includeDirs;
 
 
 	internal void .ctor(bool includeFiles, bool includeDirs) { }

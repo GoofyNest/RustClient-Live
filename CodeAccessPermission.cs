@@ -3,13 +3,13 @@ public abstract class CodeAccessPermission : IPermission, ISecurityEncodable // 
 
 	protected void .ctor() { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public void Demand() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool Equals(object obj) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetHashCode() { }
 
 	public abstract bool IsSubsetOf(IPermission target);

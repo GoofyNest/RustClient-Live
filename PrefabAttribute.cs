@@ -1,19 +1,19 @@
-public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13118
+public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13133
 {
-	public Vector3 worldPosition; 
-	public Quaternion worldRotation; 
-	public Vector3 worldForward; 
-	public Vector3 localPosition; 
-	public Vector3 localScale; 
-	public Quaternion localRotation; 
-	public string fullName; 
-	public string hierachyName; 
-	public uint prefabID; 
-	public int instanceID; 
-	public PrefabAttribute.Library prefabAttribute; 
-	public GameManager gameManager; 
-	public bool isServer; 
-	public static PrefabAttribute.Library client; 
+	public Vector3 worldPosition;
+	public Quaternion worldRotation;
+	public Vector3 worldForward;
+	public Vector3 localPosition;
+	public Vector3 localScale;
+	public Quaternion localRotation;
+	public string fullName;
+	public string hierachyName;
+	public uint prefabID;
+	public int instanceID;
+	public PrefabAttribute.Library prefabAttribute;
+	public GameManager gameManager;
+	public bool isServer;
+	public static PrefabAttribute.Library client;
 
 	public bool isClient { get; }
 
@@ -46,10 +46,10 @@ public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // Type
 
 }
 
-public class PrefabAttribute.AttributeCollection // TypeDefIndex: 13119
+public class PrefabAttribute.AttributeCollection // TypeDefIndex: 13134
 {
-	private Dictionary<Type, List<PrefabAttribute>> attributes; 
-	private Dictionary<Type, object> cache; 
+	private Dictionary<Type, List<PrefabAttribute>> attributes;
+	private Dictionary<Type, object> cache;
 
 
 	internal List<PrefabAttribute> Find(Type t) { }
@@ -66,11 +66,11 @@ public class PrefabAttribute.AttributeCollection // TypeDefIndex: 13119
 
 }
 
-public class PrefabAttribute.Library // TypeDefIndex: 13120
+public class PrefabAttribute.Library // TypeDefIndex: 13135
 {
-	public bool clientside; 
-	public bool serverside; 
-	private Dictionary<uint, PrefabAttribute.AttributeCollection> prefabs; 
+	public bool clientside;
+	public bool serverside;
+	private Dictionary<uint, PrefabAttribute.AttributeCollection> prefabs;
 
 
 	public void .ctor(bool clientside, bool serverside) { }
@@ -114,6 +114,7 @@ public class PrefabAttribute.Library // TypeDefIndex: 13120
 	|-PrefabAttribute.Library.FindAll<TerrainModifier>
 	|-PrefabAttribute.Library.FindAll<TerrainPlacement>
 	|-PrefabAttribute.Library.FindAll<WaterCheck>
+	|-PrefabAttribute.Library.FindAll<WeakpointProperties>
 	*/
 
 	public void Add(uint prefabID, PrefabAttribute attribute) { }

@@ -1,6 +1,6 @@
-public class WorldModel : MonoBehaviour // TypeDefIndex: 11830
+public class WorldModel : MonoBehaviour // TypeDefIndex: 11837
 {
-	public float mass; 
+	public float mass;
 
 
 	public void .ctor() { }

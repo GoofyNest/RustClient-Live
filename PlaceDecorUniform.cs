@@ -1,9 +1,9 @@
-public class PlaceDecorUniform : ProceduralComponent // TypeDefIndex: 12282
+public class PlaceDecorUniform : ProceduralComponent // TypeDefIndex: 12290
 {
-	public SpawnFilter Filter; 
-	public string ResourceFolder; 
-	public float ObjectDistance; 
-	public float ObjectDithering; 
+	public SpawnFilter Filter;
+	public string ResourceFolder;
+	public float ObjectDistance;
+	public float ObjectDithering;
 
 
 	public override void Process(uint seed) { }

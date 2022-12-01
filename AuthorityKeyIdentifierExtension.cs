@@ -1,6 +1,6 @@
 public class AuthorityKeyIdentifierExtension : X509Extension // TypeDefIndex: 1724
 {
-	private byte[] aki; 
+	private byte[] aki;
 
 	public byte[] Identifier { get; }
 

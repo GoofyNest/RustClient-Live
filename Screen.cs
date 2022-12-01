@@ -8,26 +8,26 @@ public sealed class Screen // TypeDefIndex: 3387
 	public static Resolution[] resolutions { get; }
 
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static int get_width() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public static int get_height() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static float get_dpi() { }
 
 	public static Resolution get_currentResolution() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static bool get_fullScreen() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static void SetResolution(int width, int height, FullScreenMode fullscreenMode, int preferredRefreshRate) { }
 
 	public static void SetResolution(int width, int height, FullScreenMode fullscreenMode) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Resolution[] get_resolutions() { }
 
 	private static void get_currentResolution_Injected(out Resolution ret) { }

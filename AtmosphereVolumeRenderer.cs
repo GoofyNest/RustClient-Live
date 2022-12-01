@@ -1,17 +1,17 @@
-public class AtmosphereVolumeRenderer : MonoBehaviour // TypeDefIndex: 12391
+public class AtmosphereVolumeRenderer : MonoBehaviour // TypeDefIndex: 12399
 {
-	public FogMode Mode; 
-	public bool DistanceFog; 
-	public bool HeightFog; 
-	public AtmosphereVolume Volume; 
-	private Camera targetCamera; 
-	private CommandBufferManager commandBufferManager; 
-	private CommandBufferDesc commandBufferDesc; 
-	private Material fogMaterial; 
-	private Vector4[] matrixArray; 
-	private static Mesh volumeMesh; 
-	private static HashSet<AtmosphereVolume> registeredVolumes; 
-	private List<AtmosphereVolumeRenderer.CurrentVolumeEntry> currentVolumes; 
+	public FogMode Mode;
+	public bool DistanceFog;
+	public bool HeightFog;
+	public AtmosphereVolume Volume;
+	private Camera targetCamera;
+	private CommandBufferManager commandBufferManager;
+	private CommandBufferDesc commandBufferDesc;
+	private Material fogMaterial;
+	private Vector4[] matrixArray;
+	private static Mesh volumeMesh;
+	private static HashSet<AtmosphereVolume> registeredVolumes;
+	private List<AtmosphereVolumeRenderer.CurrentVolumeEntry> currentVolumes;
 
 	private static bool isSupported { get; }
 	public Camera TargetCamera { get; }
@@ -61,20 +61,20 @@ public class AtmosphereVolumeRenderer : MonoBehaviour // TypeDefIndex: 12391
 
 }
 
-private struct AtmosphereVolumeRenderer.CurrentVolumeEntry // TypeDefIndex: 12392
+private struct AtmosphereVolumeRenderer.CurrentVolumeEntry // TypeDefIndex: 12400
 {
-	public AtmosphereVolume volume; 
-	public float distanceSqr; 
+	public AtmosphereVolume volume;
+	public float distanceSqr;
 
 
 	public void .ctor(AtmosphereVolume volume, float distance) { }
 
 }
 
-private sealed class AtmosphereVolumeRenderer.<>c // TypeDefIndex: 12393
+private sealed class AtmosphereVolumeRenderer.<>c // TypeDefIndex: 12401
 {
-	public static readonly AtmosphereVolumeRenderer.<>c <>9; 
-	public static Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry> <>9__28_0; 
+	public static readonly AtmosphereVolumeRenderer.<>c <>9;
+	public static Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry> <>9__28_0;
 
 
 	private static void .cctor() { }

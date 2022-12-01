@@ -14,7 +14,7 @@ internal abstract class AstNode // TypeDefIndex: 1787
 
 public enum AstNode.AstType // TypeDefIndex: 1788
 {
-	public int value__; 
+	public int value__;
 	public const AstNode.AstType Axis = 0;
 	public const AstNode.AstType Operator = 1;
 	public const AstNode.AstType Filter = 2;

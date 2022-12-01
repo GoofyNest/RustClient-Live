@@ -1,17 +1,17 @@
-public class Report // TypeDefIndex: 6196
+public class Report // TypeDefIndex: 6198
 {
-	[CompilerGeneratedAttribute] 
-	private string <release>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <message>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <platform>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <event_id>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Dictionary<string, string> <tags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Report.StackTrace <stacktrace>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <release>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <message>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <platform>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <event_id>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Dictionary<string, string> <tags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Report.StackTrace <stacktrace>k__BackingField;
 
 	public string release { get; set; }
 	public string message { get; set; }
@@ -21,58 +21,58 @@ public class Report // TypeDefIndex: 6196
 	public Report.StackTrace stacktrace { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_release() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_release(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_message() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_message(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_platform() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_platform(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_event_id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_event_id(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Dictionary<string, string> get_tags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_tags(Dictionary<string, string> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Report.StackTrace get_stacktrace() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_stacktrace(Report.StackTrace value) { }
 
 	public void .ctor() { }
 
 }
 
-public class Report.StackTrace // TypeDefIndex: 6197
+public class Report.StackTrace // TypeDefIndex: 6199
 {
-	[CompilerGeneratedAttribute] 
-	private Report.StackTrace.StackFrame[] <frames>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Report.StackTrace.StackFrame[] <frames>k__BackingField;
 
 	public Report.StackTrace.StackFrame[] frames { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Report.StackTrace.StackFrame[] get_frames() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_frames(Report.StackTrace.StackFrame[] value) { }
 
 	public void .ctor() { }
@@ -81,22 +81,22 @@ public class Report.StackTrace // TypeDefIndex: 6197
 
 }
 
-public class Report.StackTrace.StackFrame // TypeDefIndex: 6198
+public class Report.StackTrace.StackFrame // TypeDefIndex: 6200
 {
-	[CompilerGeneratedAttribute] 
-	private int <colno>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <function>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <lineno>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <module>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <context_line>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <in_app>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private int <colno>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <function>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <lineno>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <module>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <context_line>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <in_app>k__BackingField;
 
 	public int colno { get; set; }
 	public string filename { get; set; }
@@ -107,46 +107,46 @@ public class Report.StackTrace.StackFrame // TypeDefIndex: 6198
 	public bool in_app { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_colno() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_colno(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_filename(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_function() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_function(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_lineno() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_lineno(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_module() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_module(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_context_line() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_context_line(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_in_app() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_in_app(bool value) { }
 
 	public void .ctor(StackFrame x) { }
@@ -157,11 +157,11 @@ public class Report.StackTrace.StackFrame // TypeDefIndex: 6198
 
 }
 
-private sealed class Report.StackTrace.<>c // TypeDefIndex: 6199
+private sealed class Report.StackTrace.<>c // TypeDefIndex: 6201
 {
-	public static readonly Report.StackTrace.<>c <>9; 
-	public static Func<StackFrame, Report.StackTrace.StackFrame> <>9__4_0; 
-	public static Func<string, Report.StackTrace.StackFrame> <>9__5_0; 
+	public static readonly Report.StackTrace.<>c <>9;
+	public static Func<StackFrame, Report.StackTrace.StackFrame> <>9__4_0;
+	public static Func<string, Report.StackTrace.StackFrame> <>9__5_0;
 
 
 	private static void .cctor() { }
@@ -174,9 +174,9 @@ private sealed class Report.StackTrace.<>c // TypeDefIndex: 6199
 
 }
 
-public enum ReportType // TypeDefIndex: 6250
+public enum ReportType // TypeDefIndex: 6252
 {
-	public int value__; 
+	public int value__;
 	public const ReportType General = 0;
 	public const ReportType Bug = 1;
 	public const ReportType Cheat = 2;
@@ -188,28 +188,28 @@ public enum ReportType // TypeDefIndex: 6250
 
 }
 
-public struct ReportKeyEventOptions // TypeDefIndex: 8368
+public struct ReportKeyEventOptions // TypeDefIndex: 8370
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <PlatformSpecificInputData>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <PlatformSpecificInputData>k__BackingField;
 
 	public IntPtr PlatformSpecificInputData { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_PlatformSpecificInputData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlatformSpecificInputData(IntPtr value) { }
 
 	internal void Set(ref ReportKeyEventOptionsInternal other) { }
 
 }
 
-internal struct ReportKeyEventOptionsInternal : IGettable<ReportKeyEventOptions>, ISettable<ReportKeyEventOptions>, IDisposable // TypeDefIndex: 8369
+internal struct ReportKeyEventOptionsInternal : IGettable<ReportKeyEventOptions>, ISettable<ReportKeyEventOptions>, IDisposable // TypeDefIndex: 8371
 {
-	private int m_ApiVersion; 
-	private IntPtr m_PlatformSpecificInputData; 
+	private int m_ApiVersion;
+	private IntPtr m_PlatformSpecificInputData;
 
 	public IntPtr PlatformSpecificInputData { get; set; }
 
@@ -228,7 +228,7 @@ internal struct ReportKeyEventOptionsInternal : IGettable<ReportKeyEventOptions>
 
 }
 
-public sealed class ReportsInterface : Handle // TypeDefIndex: 8635
+public sealed class ReportsInterface : Handle // TypeDefIndex: 8637
 {
 	public const int ReportcontextMaxLength = 4096;
 	public const int ReportmessageMaxLength = 512;
@@ -241,38 +241,38 @@ public sealed class ReportsInterface : Handle // TypeDefIndex: 8635
 
 	public void SendPlayerBehaviorReport(ref SendPlayerBehaviorReportOptions options, object clientData, OnSendPlayerBehaviorReportCompleteCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnSendPlayerBehaviorReportCompleteCallbackInternalImplementation(ref SendPlayerBehaviorReportCompleteCallbackInfoInternal data) { }
 
 }
 
-public class ReportBug : UIDialog // TypeDefIndex: 13841
+public class ReportBug : UIDialog // TypeDefIndex: 13857
 {
-	public GameObject GetInformation; 
-	public GameObject Finished; 
-	public RustInput Subject; 
-	public RustInput Message; 
-	public RustButton ReportButton; 
-	public RustButtonGroup Category; 
-	public RustIcon ProgressIcon; 
-	public RustText ProgressText; 
-	public RawImage ScreenshotImage; 
-	public GameObject ScreenshotRoot; 
-	public UIBackgroundBlur BlurController; 
-	public RustButton SubmitButton; 
-	public GameObject SubmitErrorRoot; 
-	public RustText CooldownText; 
-	public RustText ContentMissingText; 
-	private Texture2D reportScreenshot; 
-	private static TimeSince lastOffensiveContentReport; 
-	private static bool hasSubmittedOffensiveContentReport; 
+	public GameObject GetInformation;
+	public GameObject Finished;
+	public RustInput Subject;
+	public RustInput Message;
+	public RustButton ReportButton;
+	public RustButtonGroup Category;
+	public RustIcon ProgressIcon;
+	public RustText ProgressText;
+	public RawImage ScreenshotImage;
+	public GameObject ScreenshotRoot;
+	public UIBackgroundBlur BlurController;
+	public RustButton SubmitButton;
+	public GameObject SubmitErrorRoot;
+	public RustText CooldownText;
+	public RustText ContentMissingText;
+	private Texture2D reportScreenshot;
+	private static TimeSince lastOffensiveContentReport;
+	private static bool hasSubmittedOffensiveContentReport;
 	private const float MinimumTimeBetweenOffensiveContentReports = 180;
-	private BaseEntity possibleUgcCandidate; 
+	private BaseEntity possibleUgcCandidate;
 
 
 	public override void OpenDialog() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator CaptureScreenshot() { }
 
 	public void Cancel() { }
@@ -287,10 +287,12 @@ public class ReportBug : UIDialog // TypeDefIndex: 13841
 
 	public void ReportPlayer() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public void SendReport() { }
 
 	public void OnChangedSelectedOption(Option option) { }
+
+	private void GetUsersInRange(List<ulong> targetList, float range, int maxCount) { }
 
 	public void .ctor() { }
 
@@ -298,78 +300,92 @@ public class ReportBug : UIDialog // TypeDefIndex: 13841
 
 }
 
-public static class ReportBug.Phrases // TypeDefIndex: 13842
+public static class ReportBug.Phrases // TypeDefIndex: 13858
 {
-	public static Translate.Phrase Initializing; 
-	public static Translate.Phrase SendingReport; 
-	public static Translate.Phrase Success; 
+	public static Translate.Phrase Initializing;
+	public static Translate.Phrase SendingReport;
+	public static Translate.Phrase Success;
 
 
 	private static void .cctor() { }
 
 }
 
-private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13843
+private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13859
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ReportBug <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public ReportBug <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 13844
+private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 13860
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public ReportBug <>4__this; 
-	private Feedback <feedback>5__2; 
-	private TaskAwaiter<string> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public ReportBug <>4__this;
+	private Feedback <feedback>5__2;
+	private TaskAwaiter<string> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public class ReportPlayer : UIDialog // TypeDefIndex: 13845
+private sealed class ReportBug.<>c // TypeDefIndex: 13861
 {
-	public GameObject FindPlayer; 
-	public GameObject GetInformation; 
-	public GameObject Finished; 
-	public GameObject RecentlyReported; 
-	public Dropdown ReasonDropdown; 
-	public RustInput Subject; 
-	public RustInput Message; 
-	public RustButton ReportButton; 
-	public SteamUserButton SteamUserButton; 
-	public RustIcon ProgressIcon; 
-	public RustText ProgressText; 
-	public static Option[] ReportReasons; 
-	private ulong SteamId; 
-	private static Dictionary<ulong, TimeSince> reportTimes; 
+	public static readonly ReportBug.<>c <>9;
+	public static Comparison<BasePlayer> <>9__31_0;
+
+
+	private static void .cctor() { }
+
+	public void .ctor() { }
+
+	internal int <GetUsersInRange>
+
+}
+
+public class ReportPlayer : UIDialog // TypeDefIndex: 13862
+{
+	public GameObject FindPlayer;
+	public GameObject GetInformation;
+	public GameObject Finished;
+	public GameObject RecentlyReported;
+	public Dropdown ReasonDropdown;
+	public RustInput Subject;
+	public RustInput Message;
+	public RustButton ReportButton;
+	public SteamUserButton SteamUserButton;
+	public RustIcon ProgressIcon;
+	public RustText ProgressText;
+	public static Option[] ReportReasons;
+	private ulong SteamId;
+	private static Dictionary<ulong, TimeSince> reportTimes;
 
 
 	public override void OpenDialog() { }
@@ -384,7 +400,7 @@ public class ReportPlayer : UIDialog // TypeDefIndex: 13845
 
 	private bool HasRecentlyReported(ulong id) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public void SendReport() { }
 
 	public void .ctor() { }
@@ -393,29 +409,29 @@ public class ReportPlayer : UIDialog // TypeDefIndex: 13845
 
 }
 
-public static class ReportPlayer.Phrases // TypeDefIndex: 13846
+public static class ReportPlayer.Phrases // TypeDefIndex: 13863
 {
-	public static Translate.Phrase Initializing; 
-	public static Translate.Phrase SendingReport; 
-	public static Translate.Phrase Success; 
+	public static Translate.Phrase Initializing;
+	public static Translate.Phrase SendingReport;
+	public static Translate.Phrase Success;
 
 
 	private static void .cctor() { }
 
 }
 
-private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 13847
+private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 13864
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public ReportPlayer <>4__this; 
-	private Feedback <feedback>5__2; 
-	private TaskAwaiter<string> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public ReportPlayer <>4__this;
+	private Feedback <feedback>5__2;
+	private TaskAwaiter<string> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

@@ -1,6 +1,6 @@
 public class ASCIIEncoding : Encoding // TypeDefIndex: 432
 {
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool IsSingleByte { get; }
 
 
@@ -12,28 +12,28 @@ public class ASCIIEncoding : Encoding // TypeDefIndex: 432
 
 	public override int GetByteCount(string chars) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetByteCount(char* chars, int count) { }
 
 	public override int GetBytes(string chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
 	public override string GetString(byte[] bytes, int byteIndex, int byteCount) { }
@@ -52,10 +52,10 @@ public class ASCIIEncoding : Encoding // TypeDefIndex: 432
 
 	public override bool get_IsSingleByte() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Decoder GetDecoder() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override Encoder GetEncoder() { }
 
 }

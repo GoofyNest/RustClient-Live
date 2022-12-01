@@ -1,10 +1,10 @@
 internal class ScatterGatherBuffers // TypeDefIndex: 2922
 {
-	private ScatterGatherBuffers.MemoryChunk headChunk; 
-	private ScatterGatherBuffers.MemoryChunk currentChunk; 
-	private int nextChunkLength; 
-	private int totalLength; 
-	private int chunkCount; 
+	private ScatterGatherBuffers.MemoryChunk headChunk;
+	private ScatterGatherBuffers.MemoryChunk currentChunk;
+	private int nextChunkLength;
+	private int totalLength;
+	private int chunkCount;
 
 	private bool Empty { get; }
 	internal int Length { get; }
@@ -26,9 +26,9 @@ internal class ScatterGatherBuffers // TypeDefIndex: 2922
 
 private class ScatterGatherBuffers.MemoryChunk // TypeDefIndex: 2923
 {
-	internal byte[] Buffer; 
-	internal int FreeOffset; 
-	internal ScatterGatherBuffers.MemoryChunk Next; 
+	internal byte[] Buffer;
+	internal int FreeOffset;
+	internal ScatterGatherBuffers.MemoryChunk Next;
 
 
 	internal void .ctor(int bufferSize) { }

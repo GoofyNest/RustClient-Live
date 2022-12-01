@@ -1,7 +1,7 @@
 internal class MemberHolder // TypeDefIndex: 1035
 {
-	internal Type memberType; 
-	internal StreamingContext context; 
+	internal Type memberType;
+	internal StreamingContext context;
 
 
 	internal void .ctor(Type type, StreamingContext ctx) { }

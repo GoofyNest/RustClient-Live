@@ -1,9 +1,9 @@
-public class HideIfOwnerFirstPerson : EntityComponent<BaseEntity>, IClientComponent, IViewModeChanged // TypeDefIndex: 11235
+public class HideIfOwnerFirstPerson : EntityComponent<BaseEntity>, IClientComponent, IViewModeChanged // TypeDefIndex: 11241
 {
-	public GameObject[] disableGameObjects; 
-	public bool worldModelEffect; 
-	protected bool lastHidden; 
-	private Dictionary<Renderer, ShadowCastingMode> previousValues; 
+	public GameObject[] disableGameObjects;
+	public bool worldModelEffect;
+	protected bool lastHidden;
+	private Dictionary<Renderer, ShadowCastingMode> previousValues;
 
 	public bool IsHidden { get; }
 

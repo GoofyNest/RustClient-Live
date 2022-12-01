@@ -1,7 +1,7 @@
-public class TechTreeWidget : BaseMonoBehaviour // TypeDefIndex: 12678
+public class TechTreeWidget : BaseMonoBehaviour // TypeDefIndex: 12692
 {
-	public int id; 
-	private Vector3 originalPos; 
+	public int id;
+	private Vector3 originalPos;
 
 	public RectTransform rectTransform { get; }
 

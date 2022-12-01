@@ -1,34 +1,47 @@
-public class WireTool : HeldEntity // TypeDefIndex: 10383
+public class WireTool : HeldEntity // TypeDefIndex: 10387
 {
-	public Sprite InputSprite; 
-	public Sprite OutputSprite; 
-	public Sprite ClearSprite; 
-	public static float maxWireLength; 
+	public Sprite InputSprite;
+	public Sprite OutputSprite;
+	public Sprite ClearSprite;
+	public static float maxWireLength;
 	private const int maxLineNodes = 16;
-	public GameObjectRef plugEffect; 
-	public GameObjectRef ioLine; 
-	public IOEntity.IOType wireType; 
-	public static Translate.Phrase Default; 
-	public static Translate.Phrase DefaultDesc; 
-	public static Translate.Phrase Red; 
-	public static Translate.Phrase RedDesc; 
-	public static Translate.Phrase Green; 
-	public static Translate.Phrase GreenDesc; 
-	public static Translate.Phrase Blue; 
-	public static Translate.Phrase BlueDesc; 
-	public static Translate.Phrase Yellow; 
-	public static Translate.Phrase YellowDesc; 
-	public WireTool.PendingPlug_t pending; 
+	public GameObjectRef plugEffect;
+	public GameObjectRef ioLine;
+	public IOEntity.IOType wireType;
+	public float RadialMenuHoldTime;
+	public static Translate.Phrase Default;
+	public static Translate.Phrase DefaultDesc;
+	public static Translate.Phrase Red;
+	public static Translate.Phrase RedDesc;
+	public static Translate.Phrase Green;
+	public static Translate.Phrase GreenDesc;
+	public static Translate.Phrase Blue;
+	public static Translate.Phrase BlueDesc;
+	public static Translate.Phrase Yellow;
+	public static Translate.Phrase YellowDesc;
+	public static Translate.Phrase LightBlue;
+	public static Translate.Phrase LightBlueDesc;
+	public static Translate.Phrase Orange;
+	public static Translate.Phrase OrangeDesc;
+	public static Translate.Phrase Purple;
+	public static Translate.Phrase PurpleDesc;
+	public static Translate.Phrase White;
+	public static Translate.Phrase WhiteDesc;
+	public static Translate.Phrase Pink;
+	public static Translate.Phrase PinkDesc;
+	public WireTool.PendingPlug_t pending;
 	private const float lineThickness = 0,02;
-	private bool wantsCrosshair; 
-	private ClientIOLine pendingLine; 
-	private WireTool.WireColour currentColour; 
-	private float nextClearSendTime; 
-	private float remainingDist; 
-	private bool validSurface; 
-	private bool couldBuild; 
-	private bool isSolo; 
-	private float clearProgress; 
+	private bool wantsCrosshair;
+	private ClientIOLine pendingLine;
+	private WireTool.WireColour currentColour;
+	private float nextClearSendTime;
+	private float nextColorChangeTime;
+	private float remainingDist;
+	private bool validSurface;
+	private bool couldBuild;
+	private bool isSolo;
+	private float reloadDownTime;
+	private float clearProgress;
 
 	public bool CanChangeColours { get; }
 
@@ -70,6 +83,8 @@ public class WireTool : HeldEntity // TypeDefIndex: 10383
 	public bool ValidSurface() { }
 
 	public void ClientRequestClear(IOEntity ent, int slot, bool input) { }
+
+	public void ClientRequestColorChange(IOEntity ent, int slot, bool input, WireTool.WireColour color) { }
 
 	public IOEntity GetLookingAtIOEnt() { }
 
@@ -117,51 +132,72 @@ public class WireTool : HeldEntity // TypeDefIndex: 10383
 
 	private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <AddClearConnections>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnInput>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnInput>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnInput>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnInput>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
+	private void <OnInput>
+
+	[CompilerGeneratedAttribute]
+	private void <OnInput>
+
+	[CompilerGeneratedAttribute]
+	private void <OnInput>
+
+	[CompilerGeneratedAttribute]
+	private void <OnInput>
+
+	[CompilerGeneratedAttribute]
+	private void <OnInput>
+
+	[CompilerGeneratedAttribute]
 	private void <OnInput>
 
 }
 
-public enum WireTool.WireColour // TypeDefIndex: 10384
+public enum WireTool.WireColour // TypeDefIndex: 10388
 {
-	public int value__; 
+	public int value__;
 	public const WireTool.WireColour Default = 0;
 	public const WireTool.WireColour Red = 1;
 	public const WireTool.WireColour Green = 2;
 	public const WireTool.WireColour Blue = 3;
 	public const WireTool.WireColour Yellow = 4;
+	public const WireTool.WireColour Pink = 5;
+	public const WireTool.WireColour Purple = 6;
+	public const WireTool.WireColour Orange = 7;
+	public const WireTool.WireColour White = 8;
+	public const WireTool.WireColour LightBlue = 9;
+	public const WireTool.WireColour Count = 10;
 
 }
 
-public struct WireTool.PendingPlug_t // TypeDefIndex: 10385
+public struct WireTool.PendingPlug_t // TypeDefIndex: 10389
 {
-	public IOEntity ent; 
-	public bool input; 
-	public int index; 
-	public GameObject tempLine; 
+	public IOEntity ent;
+	public bool input;
+	public int index;
+	public GameObject tempLine;
 
 }
 
-private sealed class WireTool.<>c__DisplayClass4_0 // TypeDefIndex: 10386
+private sealed class WireTool.<>c__DisplayClass4_0 // TypeDefIndex: 10390
 {
-	public WireTool <>4__this; 
-	public bool input; 
-	public int index; 
+	public WireTool <>4__this;
+	public bool input;
+	public int index;
 
 
 	public void .ctor() { }
@@ -170,10 +206,10 @@ private sealed class WireTool.<>c__DisplayClass4_0 // TypeDefIndex: 10386
 
 }
 
-private sealed class WireTool.<>c // TypeDefIndex: 10387
+private sealed class WireTool.<>c // TypeDefIndex: 10391
 {
-	public static readonly WireTool.<>c <>9; 
-	public static Func<Collider, bool> <>9__33_0; 
+	public static readonly WireTool.<>c <>9;
+	public static Func<Collider, bool> <>9__44_0;
 
 
 	private static void .cctor() { }

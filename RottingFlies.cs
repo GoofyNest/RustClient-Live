@@ -1,12 +1,12 @@
-public class RottingFlies : MonoBehaviour, IClientComponent // TypeDefIndex: 11093
+public class RottingFlies : MonoBehaviour, IClientComponent // TypeDefIndex: 11099
 {
-	public GameObjectRef effect; 
-	public SoundDefinition soundDef; 
-	public Transform rootBone; 
-	[ClientVar] 
-	public static bool Hide; 
-	private GameObject particleInstance; 
-	private Sound sound; 
+	public GameObjectRef effect;
+	public SoundDefinition soundDef;
+	public Transform rootBone;
+	[ClientVar]
+	public static bool Hide;
+	private GameObject particleInstance;
+	private Sound sound;
 	private const float maxDistSq = 10000;
 
 

@@ -1,9 +1,9 @@
-public class LinePoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6442
+public class LinePoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6444
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 localPosition; 
-	public Vector3 worldNormal; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 localPosition;
+	public Vector3 worldNormal;
 
 
 	public static void ResetToPool(LinePoint instance) { }

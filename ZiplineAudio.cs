@@ -1,21 +1,21 @@
-public class ZiplineAudio : MonoBehaviour // TypeDefIndex: 10391
+public class ZiplineAudio : MonoBehaviour // TypeDefIndex: 10395
 {
-	public ZiplineMountable zipline; 
-	public SoundDefinition movementLoopDef; 
-	public SoundDefinition frictionLoopDef; 
-	public SoundDefinition sparksLoopDef; 
-	public AnimationCurve movementGainCurve; 
-	public AnimationCurve movementPitchCurve; 
-	public AnimationCurve frictionGainCurve; 
-	public AnimationCurve sparksGainCurve; 
-	private Sound movementLoop; 
-	private SoundModulation.Modulator movementLoopGain; 
-	private SoundModulation.Modulator movementLoopPitch; 
-	private Sound frictionLoop; 
-	private SoundModulation.Modulator frictionLoopGain; 
-	private Sound sparksLoop; 
-	private SoundModulation.Modulator sparksLoopGain; 
-	private bool sparksActive; 
+	public ZiplineMountable zipline;
+	public SoundDefinition movementLoopDef;
+	public SoundDefinition frictionLoopDef;
+	public SoundDefinition sparksLoopDef;
+	public AnimationCurve movementGainCurve;
+	public AnimationCurve movementPitchCurve;
+	public AnimationCurve frictionGainCurve;
+	public AnimationCurve sparksGainCurve;
+	private Sound movementLoop;
+	private SoundModulation.Modulator movementLoopGain;
+	private SoundModulation.Modulator movementLoopPitch;
+	private Sound frictionLoop;
+	private SoundModulation.Modulator frictionLoopGain;
+	private Sound sparksLoop;
+	private SoundModulation.Modulator sparksLoopGain;
+	private bool sparksActive;
 
 
 	private void Update() { }

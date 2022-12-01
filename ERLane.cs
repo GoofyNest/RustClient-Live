@@ -1,9 +1,9 @@
-public struct ERLane // TypeDefIndex: 7231
+public struct ERLane // TypeDefIndex: 7233
 {
-	public float position; 
-	public ERLaneDirection direction; 
-	public ERDirectionType turnDirection; 
-	public int laneIndex; 
+	public float position;
+	public ERLaneDirection direction;
+	public ERDirectionType turnDirection;
+	public int laneIndex;
 
 
 	public void .ctor(float position, ERLaneDirection direction, int index) { }

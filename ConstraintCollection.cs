@@ -1,11 +1,11 @@
 public sealed class ConstraintCollection : InternalDataCollectionBase // TypeDefIndex: 4180
 {
-	private readonly DataTable _table; 
-	private readonly ArrayList _list; 
-	private int _defaultNameIndex; 
-	private CollectionChangeEventHandler _onCollectionChanged; 
-	private Constraint[] _delayLoadingConstraints; 
-	private bool _fLoadForeignKeyConstraintsOnly; 
+	private readonly DataTable _table;
+	private readonly ArrayList _list;
+	private int _defaultNameIndex;
+	private CollectionChangeEventHandler _onCollectionChanged;
+	private Constraint[] _delayLoadingConstraints;
+	private bool _fLoadForeignKeyConstraintsOnly;
 
 	protected override ArrayList List { get; }
 	public Constraint Item { get; }

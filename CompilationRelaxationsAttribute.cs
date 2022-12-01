@@ -1,6 +1,6 @@
 public class CompilationRelaxationsAttribute : Attribute // TypeDefIndex: 1300
 {
-	private int m_relaxations; 
+	private int m_relaxations;
 
 	public int CompilationRelaxations { get; }
 

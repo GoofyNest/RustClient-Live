@@ -1,7 +1,7 @@
-public class FXAAPostEffectsBase : MonoBehaviour // TypeDefIndex: 13277
+public class FXAAPostEffectsBase : MonoBehaviour // TypeDefIndex: 13292
 {
-	protected bool supportHDRTextures; 
-	protected bool isSupported; 
+	protected bool supportHDRTextures;
+	protected bool isSupported;
 
 
 	public Material CheckShaderAndCreateMaterial(Shader s, Material m2Create) { }

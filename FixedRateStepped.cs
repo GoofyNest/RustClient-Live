@@ -1,8 +1,8 @@
-public class FixedRateStepped // TypeDefIndex: 13157
+public class FixedRateStepped // TypeDefIndex: 13172
 {
-	public float rate; 
-	public int maxSteps; 
-	internal float nextCall; 
+	public float rate;
+	public int maxSteps;
+	internal float nextCall;
 
 
 	public bool ShouldStep() { }

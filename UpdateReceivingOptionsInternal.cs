@@ -1,10 +1,10 @@
-internal struct UpdateReceivingOptionsInternal : ISettable<UpdateReceivingOptions>, IDisposable // TypeDefIndex: 8721
+internal struct UpdateReceivingOptionsInternal : ISettable<UpdateReceivingOptions>, IDisposable // TypeDefIndex: 8723
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_ParticipantId; 
-	private int m_AudioEnabled; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private IntPtr m_ParticipantId;
+	private int m_AudioEnabled;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String RoomName { set; }

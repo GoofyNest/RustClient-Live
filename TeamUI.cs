@@ -1,17 +1,17 @@
-public class TeamUI : MonoBehaviour // TypeDefIndex: 13013
+public class TeamUI : MonoBehaviour // TypeDefIndex: 13027
 {
-	public static Translate.Phrase invitePhrase; 
-	public RectTransform MemberPanel; 
-	public GameObject memberEntryPrefab; 
-	public TeamMemberElement[] elements; 
-	public GameObject NoTeamPanel; 
-	public GameObject TeamPanel; 
-	public GameObject LeaveTeamButton; 
-	public GameObject InviteAcceptPanel; 
-	public TextMeshProUGUI inviteText; 
-	public static bool dirty; 
-	public static ulong pendingTeamID; 
-	public static string pendingTeamLeaderName; 
+	public static Translate.Phrase invitePhrase;
+	public RectTransform MemberPanel;
+	public GameObject memberEntryPrefab;
+	public TeamMemberElement[] elements;
+	public GameObject NoTeamPanel;
+	public GameObject TeamPanel;
+	public GameObject LeaveTeamButton;
+	public GameObject InviteAcceptPanel;
+	public TextMeshProUGUI inviteText;
+	public static bool dirty;
+	public static ulong pendingTeamID;
+	public static string pendingTeamLeaderName;
 
 
 	public void Update() { }

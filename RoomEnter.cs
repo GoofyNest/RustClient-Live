@@ -1,6 +1,6 @@
 public enum RoomEnter // TypeDefIndex: 5146
 {
-	public int value__; 
+	public int value__;
 	public const RoomEnter Success = 1;
 	public const RoomEnter DoesntExist = 2;
 	public const RoomEnter NotAllowed = 3;

@@ -1,10 +1,10 @@
 public class MailAddress // TypeDefIndex: 3037
 {
-	private string address; 
-	private string displayName; 
-	private string host; 
-	private string user; 
-	private string to_string; 
+	private string address;
+	private string displayName;
+	private string host;
+	private string user;
+	private string to_string;
 
 	public string Address { get; }
 	public string DisplayName { get; }
@@ -14,7 +14,7 @@ public class MailAddress // TypeDefIndex: 3037
 
 	public void .ctor(string address, string displayName) { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public void .ctor(string address, string displayName, Encoding displayNameEncoding) { }
 
 	private void ParseAddress(string address) { }

@@ -1,24 +1,24 @@
-public struct UnlockAchievementsOptions // TypeDefIndex: 9949
+public struct UnlockAchievementsOptions // TypeDefIndex: 9951
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <UserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String[] <AchievementIds>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <UserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String[] <AchievementIds>k__BackingField;
 
 	public ProductUserId UserId { get; set; }
 	public Utf8String[] AchievementIds { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String[] get_AchievementIds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementIds(Utf8String[] value) { }
 
 }

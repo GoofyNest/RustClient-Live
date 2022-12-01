@@ -1,10 +1,10 @@
-public static class NoteEventUtilities // TypeDefIndex: 7630
+public static class NoteEventUtilities // TypeDefIndex: 7632
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static NoteName GetNoteName(NoteEvent noteEvent) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int GetNoteOctave(NoteEvent noteEvent) { }
 
 }

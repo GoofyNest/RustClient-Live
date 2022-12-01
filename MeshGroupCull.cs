@@ -1,9 +1,9 @@
-public class MeshGroupCull : LODComponent // TypeDefIndex: 11682
+public class MeshGroupCull : LODComponent // TypeDefIndex: 11689
 {
-	public float Distance; 
-	private Renderer[] meshRenderers; 
-	private int curlod; 
-	private bool force; 
+	public float Distance;
+	private Renderer[] meshRenderers;
+	private int curlod;
+	private bool force;
 
 
 	protected override void InitLOD() { }

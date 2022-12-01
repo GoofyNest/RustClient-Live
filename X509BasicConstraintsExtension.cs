@@ -2,10 +2,10 @@ public sealed class X509BasicConstraintsExtension : X509Extension // TypeDefInde
 {
 	internal const string oid = "2.5.29.19";
 	internal const string friendlyName = "Basic Constraints";
-	private bool _certificateAuthority; 
-	private bool _hasPathLengthConstraint; 
-	private int _pathLengthConstraint; 
-	private AsnDecodeStatus _status; 
+	private bool _certificateAuthority;
+	private bool _hasPathLengthConstraint;
+	private int _pathLengthConstraint;
+	private AsnDecodeStatus _status;
 
 	public bool CertificateAuthority { get; }
 	public bool HasPathLengthConstraint { get; }

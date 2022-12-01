@@ -1,12 +1,12 @@
-public class TabControl : RustControl // TypeDefIndex: 7078
+public class TabControl : RustControl // TypeDefIndex: 7080
 {
-	public RectTransform TabContainer; 
-	public RectTransform PanelContainer; 
-	public RustButton ButtonControl; 
-	public float InnerPadding; 
-	public bool AllowCloseAll; 
-	public Image Background; 
-	public Image Foreground; 
+	public RectTransform TabContainer;
+	public RectTransform PanelContainer;
+	public RustButton ButtonControl;
+	public float InnerPadding;
+	public bool AllowCloseAll;
+	public Image Background;
+	public Image Foreground;
 
 
 	public RustLayout Panel(string name) { }

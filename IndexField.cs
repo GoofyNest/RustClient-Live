@@ -1,7 +1,7 @@
 internal struct IndexField // TypeDefIndex: 4304
 {
-	public readonly DataColumn Column; 
-	public readonly bool IsDescending; 
+	public readonly DataColumn Column;
+	public readonly bool IsDescending;
 
 
 	internal void .ctor(DataColumn column, bool isDescending) { }

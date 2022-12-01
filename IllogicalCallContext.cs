@@ -1,7 +1,7 @@
 internal class IllogicalCallContext // TypeDefIndex: 1216
 {
-	private Hashtable m_Datastore; 
-	private object m_HostContext; 
+	private Hashtable m_Datastore;
+	private object m_HostContext;
 
 	private Hashtable Datastore { get; }
 	internal object HostContext { get; set; }

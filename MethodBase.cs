@@ -11,7 +11,7 @@ public abstract class MethodBase : MemberInfo, _MethodBase // TypeDefIndex: 539
 	public bool IsStatic { get; }
 	public bool IsVirtual { get; }
 	public bool IsAbstract { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public bool IsConstructor { get; }
 
 
@@ -41,7 +41,7 @@ public abstract class MethodBase : MemberInfo, _MethodBase // TypeDefIndex: 539
 
 	public virtual CallingConventions get_CallingConvention() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual Type[] GetGenericArguments() { }
 
 	public virtual bool get_IsGenericMethodDefinition() { }
@@ -52,8 +52,8 @@ public abstract class MethodBase : MemberInfo, _MethodBase // TypeDefIndex: 539
 
 	public virtual bool get_IsSecurityCritical() { }
 
-	[DebuggerStepThroughAttribute] 
-	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute]
+	[DebuggerHiddenAttribute]
 	public object Invoke(object obj, object[] parameters) { }
 
 	public bool get_IsPublic() { }

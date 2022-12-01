@@ -1,32 +1,32 @@
-public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6963
+public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6965
 {
-	[CompilerGeneratedAttribute] 
-	private ISocket <Socket>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IHandler <Handler>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action <OnOpen>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action <OnClose>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<string> <OnMessage>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BinaryDataHandler <OnBinary>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BinaryDataHandler <OnPing>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BinaryDataHandler <OnPong>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action<Exception> <OnError>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IWebSocketConnectionInfo <ConnectionInfo>k__BackingField; 
-	private readonly Action<IWebSocketConnection> _initialize; 
-	private readonly Func<IWebSocketConnection, WebSocketHttpRequest, IHandler> _handlerFactory; 
-	private readonly Func<ArraySegment<byte>, WebSocketHttpRequest> _parseRequest; 
-	private byte[] _receiveBuffer; 
-	private int _receiveOffset; 
-	private bool _closing; 
-	private bool _closed; 
+	[CompilerGeneratedAttribute]
+	private ISocket <Socket>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IHandler <Handler>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action <OnOpen>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action <OnClose>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<string> <OnMessage>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BinaryDataHandler <OnBinary>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BinaryDataHandler <OnPing>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BinaryDataHandler <OnPong>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action<Exception> <OnError>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IWebSocketConnectionInfo <ConnectionInfo>k__BackingField;
+	private readonly Action<IWebSocketConnection> _initialize;
+	private readonly Func<IWebSocketConnection, WebSocketHttpRequest, IHandler> _handlerFactory;
+	private readonly Func<ArraySegment<byte>, WebSocketHttpRequest> _parseRequest;
+	private byte[] _receiveBuffer;
+	private int _receiveOffset;
+	private bool _closing;
+	private bool _closed;
 
 	public ISocket Socket { get; set; }
 	public IHandler Handler { get; set; }
@@ -41,64 +41,64 @@ public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6963
 	public bool IsAvailable { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ISocket get_Socket() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Socket(ISocket value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IHandler get_Handler() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Handler(IHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action get_OnOpen() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnOpen(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action get_OnClose() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnClose(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<string> get_OnMessage() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnMessage(Action<string> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BinaryDataHandler get_OnBinary() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnBinary(BinaryDataHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BinaryDataHandler get_OnPing() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnPing(BinaryDataHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BinaryDataHandler get_OnPong() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnPong(BinaryDataHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Action<Exception> get_OnError() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OnError(Action<Exception> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IWebSocketConnectionInfo get_ConnectionInfo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ConnectionInfo(IWebSocketConnectionInfo value) { }
 
 	public bool get_IsAvailable() { }
@@ -131,19 +131,19 @@ public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6963
 
 }
 
-private sealed class WebSocketConnection.<>c // TypeDefIndex: 6964
+private sealed class WebSocketConnection.<>c // TypeDefIndex: 6966
 {
-	public static readonly WebSocketConnection.<>c <>9; 
-	public static Action <>9__50_0; 
-	public static Action <>9__50_1; 
-	public static Action<string> <>9__50_2; 
-	public static BinaryDataHandler <>9__50_3; 
-	public static BinaryDataHandler <>9__50_4; 
-	public static BinaryDataHandler <>9__50_5; 
-	public static Action<Exception> <>9__50_6; 
-	public static Action<WebSocketConnection, bool> <>9__58_0; 
-	public static Action<WebSocketConnection, bool> <>9__59_0; 
-	public static AsyncCallback <>9__63_0; 
+	public static readonly WebSocketConnection.<>c <>9;
+	public static Action <>9__50_0;
+	public static Action <>9__50_1;
+	public static Action<string> <>9__50_2;
+	public static BinaryDataHandler <>9__50_3;
+	public static BinaryDataHandler <>9__50_4;
+	public static BinaryDataHandler <>9__50_5;
+	public static Action<Exception> <>9__50_6;
+	public static Action<WebSocketConnection, bool> <>9__58_0;
+	public static Action<WebSocketConnection, bool> <>9__59_0;
+	public static AsyncCallback <>9__63_0;
 
 
 	private static void .cctor() { }
@@ -172,10 +172,10 @@ private sealed class WebSocketConnection.<>c // TypeDefIndex: 6964
 
 }
 
-private sealed class WebSocketConnection.<>c__DisplayClass65_0 // TypeDefIndex: 6965
+private sealed class WebSocketConnection.<>c__DisplayClass65_0 // TypeDefIndex: 6967
 {
-	public MemoryBuffer bytes; 
-	public Action<WebSocketConnection, bool> callback; 
+	public MemoryBuffer bytes;
+	public Action<WebSocketConnection, bool> callback;
 
 
 	public void .ctor() { }

@@ -1,10 +1,10 @@
-internal struct LocalRTCOptionsInternal : IGettable<LocalRTCOptions>, ISettable<LocalRTCOptions>, IDisposable // TypeDefIndex: 9207
+internal struct LocalRTCOptionsInternal : IGettable<LocalRTCOptions>, ISettable<LocalRTCOptions>, IDisposable // TypeDefIndex: 9209
 {
-	private int m_ApiVersion; 
-	private uint m_Flags; 
-	private int m_UseManualAudioInput; 
-	private int m_UseManualAudioOutput; 
-	private int m_LocalAudioDeviceInputStartsMuted; 
+	private int m_ApiVersion;
+	private uint m_Flags;
+	private int m_UseManualAudioInput;
+	private int m_UseManualAudioOutput;
+	private int m_LocalAudioDeviceInputStartsMuted;
 
 	public uint Flags { get; set; }
 	public bool UseManualAudioInput { get; set; }

@@ -1,6 +1,6 @@
 public enum TileFlags // TypeDefIndex: 4575
 {
-	public int value__; 
+	public int value__;
 	public const TileFlags None = 0;
 	public const TileFlags LockColor = 1;
 	public const TileFlags LockTransform = 2;

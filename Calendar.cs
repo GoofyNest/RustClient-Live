@@ -38,15 +38,15 @@ public abstract class Calendar : ICloneable // TypeDefIndex: 687
 	internal const int CAL_TAIWANLUNISOLAR = 21;
 	internal const int CAL_PERSIAN = 22;
 	internal const int CAL_UMALQURA = 23;
-	internal int m_currentEraValue; 
-	[OptionalFieldAttribute] 
-	private bool m_isReadOnly; 
+	internal int m_currentEraValue;
+	[OptionalFieldAttribute]
+	private bool m_isReadOnly;
 	public const int CurrentEra = 0;
-	internal int twoDigitYearMax; 
+	internal int twoDigitYearMax;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual DateTime MinSupportedDateTime { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual DateTime MaxSupportedDateTime { get; }
 	internal virtual int ID { get; }
 	internal virtual int BaseCalendarID { get; }
@@ -65,7 +65,7 @@ public abstract class Calendar : ICloneable // TypeDefIndex: 687
 
 	internal virtual int get_BaseCalendarID() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public virtual object Clone() { }
 
 	internal void SetReadOnlyState(bool readOnly) { }

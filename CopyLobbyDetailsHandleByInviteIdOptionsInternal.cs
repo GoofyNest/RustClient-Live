@@ -1,7 +1,7 @@
-internal struct CopyLobbyDetailsHandleByInviteIdOptionsInternal : ISettable<CopyLobbyDetailsHandleByInviteIdOptions>, IDisposable // TypeDefIndex: 9084
+internal struct CopyLobbyDetailsHandleByInviteIdOptionsInternal : ISettable<CopyLobbyDetailsHandleByInviteIdOptions>, IDisposable // TypeDefIndex: 9086
 {
-	private int m_ApiVersion; 
-	private IntPtr m_InviteId; 
+	private int m_ApiVersion;
+	private IntPtr m_InviteId;
 
 	public Utf8String InviteId { set; }
 

@@ -1,6 +1,6 @@
 public enum UnmanagedType // TypeDefIndex: 1329
 {
-	public int value__; 
+	public int value__;
 	public const UnmanagedType Bool = 2;
 	public const UnmanagedType I1 = 3;
 	public const UnmanagedType U1 = 4;
@@ -36,11 +36,11 @@ public enum UnmanagedType // TypeDefIndex: 1329
 	public const UnmanagedType LPStruct = 43;
 	public const UnmanagedType CustomMarshaler = 44;
 	public const UnmanagedType Error = 45;
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public const UnmanagedType IInspectable = 46;
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public const UnmanagedType HString = 47;
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public const UnmanagedType LPUTF8Str = 48;
 
 }

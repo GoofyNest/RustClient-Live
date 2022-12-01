@@ -1,7 +1,7 @@
 public struct X509ChainStatus // TypeDefIndex: 2829
 {
-	private X509ChainStatusFlags status; 
-	private string info; 
+	private X509ChainStatusFlags status;
+	private string info;
 
 	public X509ChainStatusFlags Status { get; set; }
 	public string StatusInformation { set; }

@@ -1,7 +1,7 @@
-public class DecorScale : DecorComponent // TypeDefIndex: 12078
+public class DecorScale : DecorComponent // TypeDefIndex: 12085
 {
-	public Vector3 MinScale; 
-	public Vector3 MaxScale; 
+	public Vector3 MinScale;
+	public Vector3 MaxScale;
 
 
 	public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }

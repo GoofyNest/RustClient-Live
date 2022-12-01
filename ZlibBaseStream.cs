@@ -1,23 +1,23 @@
-internal class ZlibBaseStream : Stream // TypeDefIndex: 7002
+internal class ZlibBaseStream : Stream // TypeDefIndex: 7004
 {
-	protected internal ZlibCodec _z; 
-	protected internal ZlibBaseStream.StreamMode _streamMode; 
-	protected internal FlushType _flushMode; 
-	protected internal ZlibStreamFlavor _flavor; 
-	protected internal CompressionMode _compressionMode; 
-	protected internal CompressionLevel _level; 
-	protected internal bool _leaveOpen; 
-	protected internal byte[] _workingBuffer; 
-	protected internal int _bufferSize; 
-	protected internal byte[] _buf1; 
-	protected internal Stream _stream; 
-	protected internal CompressionStrategy Strategy; 
-	private CRC32 crc; 
-	protected internal string _GzipFileName; 
-	protected internal string _GzipComment; 
-	protected internal DateTime _GzipMtime; 
-	protected internal int _gzipHeaderByteCount; 
-	private bool nomoreinput; 
+	protected internal ZlibCodec _z;
+	protected internal ZlibBaseStream.StreamMode _streamMode;
+	protected internal FlushType _flushMode;
+	protected internal ZlibStreamFlavor _flavor;
+	protected internal CompressionMode _compressionMode;
+	protected internal CompressionLevel _level;
+	protected internal bool _leaveOpen;
+	protected internal byte[] _workingBuffer;
+	protected internal int _bufferSize;
+	protected internal byte[] _buf1;
+	protected internal Stream _stream;
+	protected internal CompressionStrategy Strategy;
+	private CRC32 crc;
+	protected internal string _GzipFileName;
+	protected internal string _GzipComment;
+	protected internal DateTime _GzipMtime;
+	protected internal int _gzipHeaderByteCount;
+	private bool nomoreinput;
 
 	internal int Crc32 { get; }
 	protected internal bool _wantCompress { get; }
@@ -78,9 +78,9 @@ internal class ZlibBaseStream : Stream // TypeDefIndex: 7002
 
 }
 
-internal enum ZlibBaseStream.StreamMode // TypeDefIndex: 7003
+internal enum ZlibBaseStream.StreamMode // TypeDefIndex: 7005
 {
-	public int value__; 
+	public int value__;
 	public const ZlibBaseStream.StreamMode Writer = 0;
 	public const ZlibBaseStream.StreamMode Reader = 1;
 	public const ZlibBaseStream.StreamMode Undefined = 2;

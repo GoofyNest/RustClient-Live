@@ -1,12 +1,12 @@
-public class Modifier : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6458
+public class Modifier : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6460
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int type; 
-	public int source; 
-	public float value; 
-	public float timeRemaing; 
-	public float duration; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int type;
+	public int source;
+	public float value;
+	public float timeRemaing;
+	public float duration;
 
 
 	public static void ResetToPool(Modifier instance) { }
@@ -63,21 +63,21 @@ public class Modifier : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6458
 
 }
 
-public class Modifier // TypeDefIndex: 11358
+public class Modifier // TypeDefIndex: 11364
 {
-	[CompilerGeneratedAttribute] 
-	private Modifier.ModifierType <Type>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Modifier.ModifierSource <Source>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Value>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Duration>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <TimeRemaining>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Expired>k__BackingField; 
-	private float lastClientUpdateTimestamp; 
+	[CompilerGeneratedAttribute]
+	private Modifier.ModifierType <Type>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Modifier.ModifierSource <Source>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Value>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Duration>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <TimeRemaining>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Expired>k__BackingField;
+	private float lastClientUpdateTimestamp;
 
 	public Modifier.ModifierType Type { get; set; }
 	public Modifier.ModifierSource Source { get; set; }
@@ -88,40 +88,40 @@ public class Modifier // TypeDefIndex: 11358
 	public float ClientEstimatedTimeRemaining { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Modifier.ModifierType get_Type() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Type(Modifier.ModifierType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Modifier.ModifierSource get_Source() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Source(Modifier.ModifierSource value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Value() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Value(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Duration() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Duration(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_TimeRemaining() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_TimeRemaining(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Expired() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Expired(bool value) { }
 
 	public float get_ClientEstimatedTimeRemaining() { }
@@ -138,9 +138,9 @@ public class Modifier // TypeDefIndex: 11358
 
 }
 
-public enum Modifier.ModifierType // TypeDefIndex: 11359
+public enum Modifier.ModifierType // TypeDefIndex: 11365
 {
-	public int value__; 
+	public int value__;
 	public const Modifier.ModifierType Wood_Yield = 0;
 	public const Modifier.ModifierType Ore_Yield = 1;
 	public const Modifier.ModifierType Radiation_Resistance = 2;
@@ -150,9 +150,9 @@ public enum Modifier.ModifierType // TypeDefIndex: 11359
 
 }
 
-public enum Modifier.ModifierSource // TypeDefIndex: 11360
+public enum Modifier.ModifierSource // TypeDefIndex: 11366
 {
-	public int value__; 
+	public int value__;
 	public const Modifier.ModifierSource Tea = 0;
 
 }

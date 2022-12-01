@@ -1,15 +1,15 @@
 public class CharacterJoint : Joint // TypeDefIndex: 3935
 {
 
-[NativeHeaderAttribute] 
-[NativeClassAttribute] 
+[NativeHeaderAttribute]
+[NativeClassAttribute]
 public class CharacterJoint : Joint
-	[ObsoleteAttribute] 
-	public Quaternion targetRotation; 
-	[ObsoleteAttribute] 
-	public Vector3 targetAngularVelocity; 
-	[ObsoleteAttribute] 
-	public JointDrive rotationDrive; 
+	[ObsoleteAttribute]
+	public Quaternion targetRotation;
+	[ObsoleteAttribute]
+	public Vector3 targetAngularVelocity;
+	[ObsoleteAttribute]
+	public JointDrive rotationDrive;
 
 	public bool enableProjection { set; }
 

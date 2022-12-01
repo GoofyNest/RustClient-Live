@@ -1,7 +1,7 @@
 public class Type1Message : MessageBase // TypeDefIndex: 1731
 {
-	private string _host; 
-	private string _domain; 
+	private string _host;
+	private string _domain;
 
 	public string Domain { set; }
 	public string Host { set; }

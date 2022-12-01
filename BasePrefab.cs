@@ -1,9 +1,9 @@
-public class BasePrefab : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13076
+public class BasePrefab : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13091
 {
-	[HideInInspector] 
-	public uint prefabID; 
-	[HideInInspector] 
-	public bool isClient; 
+	[HideInInspector]
+	public uint prefabID;
+	[HideInInspector]
+	public bool isClient;
 
 	public bool isServer { get; }
 

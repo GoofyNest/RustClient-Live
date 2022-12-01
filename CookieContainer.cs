@@ -1,12 +1,12 @@
 public class CookieContainer // TypeDefIndex: 2944
 {
-	private static readonly HeaderVariantInfo[] HeaderInfo; 
-	private Hashtable m_domainTable; 
-	private int m_maxCookieSize; 
-	private int m_maxCookies; 
-	private int m_maxCookiesPerDomain; 
-	private int m_count; 
-	private string m_fqdnMyDomain; 
+	private static readonly HeaderVariantInfo[] HeaderInfo;
+	private Hashtable m_domainTable;
+	private int m_maxCookieSize;
+	private int m_maxCookies;
+	private int m_maxCookiesPerDomain;
+	private int m_count;
+	private string m_fqdnMyDomain;
 
 
 	public void .ctor() { }

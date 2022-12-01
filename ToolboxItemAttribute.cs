@@ -1,8 +1,8 @@
 public class ToolboxItemAttribute : Attribute // TypeDefIndex: 2776
 {
-	private string toolboxItemTypeName; 
-	public static readonly ToolboxItemAttribute Default; 
-	public static readonly ToolboxItemAttribute None; 
+	private string toolboxItemTypeName;
+	public static readonly ToolboxItemAttribute Default;
+	public static readonly ToolboxItemAttribute None;
 
 	public string ToolboxItemTypeName { get; }
 

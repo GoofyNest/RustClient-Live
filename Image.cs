@@ -1,38 +1,38 @@
 public class Image : MaskableGraphic, ISerializationCallbackReceiver, ILayoutElement, ICanvasRaycastFilter // TypeDefIndex: 4944
 {
-	protected static Material s_ETC1DefaultUI; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Sprite m_Sprite; 
-	private Sprite m_OverrideSprite; 
-	[SerializeField] 
-	private Image.Type m_Type; 
-	[SerializeField] 
-	private bool m_PreserveAspect; 
-	[SerializeField] 
-	private bool m_FillCenter; 
-	[SerializeField] 
-	private Image.FillMethod m_FillMethod; 
-	[RangeAttribute] 
-	[SerializeField] 
-	private float m_FillAmount; 
-	[SerializeField] 
-	private bool m_FillClockwise; 
-	[SerializeField] 
-	private int m_FillOrigin; 
-	private float m_AlphaHitTestMinimumThreshold; 
-	private bool m_Tracked; 
-	[SerializeField] 
-	private bool m_UseSpriteMesh; 
-	[SerializeField] 
-	private float m_PixelsPerUnitMultiplier; 
-	private float m_CachedReferencePixelsPerUnit; 
-	private static readonly Vector2[] s_VertScratch; 
-	private static readonly Vector2[] s_UVScratch; 
-	private static readonly Vector3[] s_Xy; 
-	private static readonly Vector3[] s_Uv; 
-	private static List<Image> m_TrackedTexturelessImages; 
-	private static bool s_Initialized; 
+	protected static Material s_ETC1DefaultUI;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Sprite m_Sprite;
+	private Sprite m_OverrideSprite;
+	[SerializeField]
+	private Image.Type m_Type;
+	[SerializeField]
+	private bool m_PreserveAspect;
+	[SerializeField]
+	private bool m_FillCenter;
+	[SerializeField]
+	private Image.FillMethod m_FillMethod;
+	[RangeAttribute]
+	[SerializeField]
+	private float m_FillAmount;
+	[SerializeField]
+	private bool m_FillClockwise;
+	[SerializeField]
+	private int m_FillOrigin;
+	private float m_AlphaHitTestMinimumThreshold;
+	private bool m_Tracked;
+	[SerializeField]
+	private bool m_UseSpriteMesh;
+	[SerializeField]
+	private float m_PixelsPerUnitMultiplier;
+	private float m_CachedReferencePixelsPerUnit;
+	private static readonly Vector2[] s_VertScratch;
+	private static readonly Vector2[] s_UVScratch;
+	private static readonly Vector3[] s_Xy;
+	private static readonly Vector3[] s_Uv;
+	private static List<Image> m_TrackedTexturelessImages;
+	private static bool s_Initialized;
 
 	public Sprite sprite { get; set; }
 	public Sprite overrideSprite { get; set; }
@@ -44,7 +44,7 @@ public class Image : MaskableGraphic, ISerializationCallbackReceiver, ILayoutEle
 	public float fillAmount { get; set; }
 	public bool fillClockwise { get; set; }
 	public int fillOrigin { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public float eventAlphaThreshold { get; set; }
 	public float alphaHitTestMinimumThreshold { get; set; }
 	public bool useSpriteMesh { get; set; }
@@ -216,7 +216,7 @@ public class Image : MaskableGraphic, ISerializationCallbackReceiver, ILayoutEle
 
 public enum Image.Type // TypeDefIndex: 4945
 {
-	public int value__; 
+	public int value__;
 	public const Image.Type Simple = 0;
 	public const Image.Type Sliced = 1;
 	public const Image.Type Tiled = 2;
@@ -226,7 +226,7 @@ public enum Image.Type // TypeDefIndex: 4945
 
 public enum Image.FillMethod // TypeDefIndex: 4946
 {
-	public int value__; 
+	public int value__;
 	public const Image.FillMethod Horizontal = 0;
 	public const Image.FillMethod Vertical = 1;
 	public const Image.FillMethod Radial90 = 2;
@@ -237,7 +237,7 @@ public enum Image.FillMethod // TypeDefIndex: 4946
 
 public enum Image.OriginHorizontal // TypeDefIndex: 4947
 {
-	public int value__; 
+	public int value__;
 	public const Image.OriginHorizontal Left = 0;
 	public const Image.OriginHorizontal Right = 1;
 
@@ -245,7 +245,7 @@ public enum Image.OriginHorizontal // TypeDefIndex: 4947
 
 public enum Image.OriginVertical // TypeDefIndex: 4948
 {
-	public int value__; 
+	public int value__;
 	public const Image.OriginVertical Bottom = 0;
 	public const Image.OriginVertical Top = 1;
 
@@ -253,7 +253,7 @@ public enum Image.OriginVertical // TypeDefIndex: 4948
 
 public enum Image.Origin90 // TypeDefIndex: 4949
 {
-	public int value__; 
+	public int value__;
 	public const Image.Origin90 BottomLeft = 0;
 	public const Image.Origin90 TopLeft = 1;
 	public const Image.Origin90 TopRight = 2;
@@ -263,7 +263,7 @@ public enum Image.Origin90 // TypeDefIndex: 4949
 
 public enum Image.Origin180 // TypeDefIndex: 4950
 {
-	public int value__; 
+	public int value__;
 	public const Image.Origin180 Bottom = 0;
 	public const Image.Origin180 Left = 1;
 	public const Image.Origin180 Top = 2;
@@ -273,7 +273,7 @@ public enum Image.Origin180 // TypeDefIndex: 4950
 
 public enum Image.Origin360 // TypeDefIndex: 4951
 {
-	public int value__; 
+	public int value__;
 	public const Image.Origin360 Bottom = 0;
 	public const Image.Origin360 Right = 1;
 	public const Image.Origin360 Top = 2;
@@ -281,11 +281,11 @@ public enum Image.Origin360 // TypeDefIndex: 4951
 
 }
 
-public struct Image // TypeDefIndex: 5557
+public struct Image // TypeDefIndex: 5559
 {
-	public uint Width; 
-	public uint Height; 
-	public byte[] Data; 
+	public uint Width;
+	public uint Height;
+	public byte[] Data;
 
 
 	public Color GetPixel(int x, int y) { }

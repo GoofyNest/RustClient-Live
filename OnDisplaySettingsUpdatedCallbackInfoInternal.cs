@@ -1,8 +1,8 @@
-internal struct OnDisplaySettingsUpdatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnDisplaySettingsUpdatedCallbackInfo>, ISettable<OnDisplaySettingsUpdatedCallbackInfo>, IDisposable // TypeDefIndex: 8351
+internal struct OnDisplaySettingsUpdatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnDisplaySettingsUpdatedCallbackInfo>, ISettable<OnDisplaySettingsUpdatedCallbackInfo>, IDisposable // TypeDefIndex: 8353
 {
-	private IntPtr m_ClientData; 
-	private int m_IsVisible; 
-	private int m_IsExclusiveInput; 
+	private IntPtr m_ClientData;
+	private int m_IsVisible;
+	private int m_IsExclusiveInput;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

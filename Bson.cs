@@ -1,16 +1,16 @@
 public class BinaryReader : IDisposable // TypeDefIndex: 616
 {
 	private const int MaxCharBytesSize = 128;
-	private Stream m_stream; 
-	private byte[] m_buffer; 
-	private Decoder m_decoder; 
-	private byte[] m_charBytes; 
-	private char[] m_singleChar; 
-	private char[] m_charBuffer; 
-	private int m_maxCharsSize; 
-	private bool m_2BytesPerChar; 
-	private bool m_isMemoryStream; 
-	private bool m_leaveOpen; 
+	private Stream m_stream;
+	private byte[] m_buffer;
+	private Decoder m_decoder;
+	private byte[] m_charBytes;
+	private char[] m_singleChar;
+	private char[] m_charBuffer;
+	private int m_maxCharsSize;
+	private bool m_2BytesPerChar;
+	private bool m_isMemoryStream;
+	private bool m_leaveOpen;
 
 	public virtual Stream BaseStream { get; }
 
@@ -35,24 +35,24 @@ public class BinaryReader : IDisposable // TypeDefIndex: 616
 
 	public virtual byte ReadByte() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual sbyte ReadSByte() { }
 
 	public virtual char ReadChar() { }
 
 	public virtual short ReadInt16() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual ushort ReadUInt16() { }
 
 	public virtual int ReadInt32() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual uint ReadUInt32() { }
 
 	public virtual long ReadInt64() { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual ulong ReadUInt64() { }
 
 	public virtual float ReadSingle() { }
@@ -81,17 +81,17 @@ public class BinaryReader : IDisposable // TypeDefIndex: 616
 
 public class BinaryWriter : IDisposable // TypeDefIndex: 617
 {
-	public static readonly BinaryWriter Null; 
-	protected Stream OutStream; 
-	private byte[] _buffer; 
-	private Encoding _encoding; 
-	private Encoder _encoder; 
-	[OptionalFieldAttribute] 
-	private bool _leaveOpen; 
-	[OptionalFieldAttribute] 
-	private char[] _tmpOneCharBuffer; 
-	private byte[] _largeByteBuffer; 
-	private int _maxChars; 
+	public static readonly BinaryWriter Null;
+	protected Stream OutStream;
+	private byte[] _buffer;
+	private Encoding _encoding;
+	private Encoder _encoder;
+	[OptionalFieldAttribute]
+	private bool _leaveOpen;
+	[OptionalFieldAttribute]
+	private char[] _tmpOneCharBuffer;
+	private byte[] _largeByteBuffer;
+	private int _maxChars;
 	private const int LargeByteBufferSize = 256;
 
 	public virtual Stream BaseStream { get; }
@@ -119,7 +119,7 @@ public class BinaryWriter : IDisposable // TypeDefIndex: 617
 
 	public virtual void Write(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual void Write(sbyte value) { }
 
 	public virtual void Write(byte[] buffer) { }
@@ -134,17 +134,17 @@ public class BinaryWriter : IDisposable // TypeDefIndex: 617
 
 	public virtual void Write(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual void Write(ushort value) { }
 
 	public virtual void Write(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual void Write(uint value) { }
 
 	public virtual void Write(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public virtual void Write(ulong value) { }
 
 	public virtual void Write(float value) { }
@@ -159,8 +159,8 @@ public class BinaryWriter : IDisposable // TypeDefIndex: 617
 
 internal static class BinaryCompatibility // TypeDefIndex: 1022
 {
-	public static readonly bool TargetsAtLeast_Desktop_V4_5; 
-	public static readonly bool TargetsAtLeast_Desktop_V4_5_1; 
+	public static readonly bool TargetsAtLeast_Desktop_V4_5;
+	public static readonly bool TargetsAtLeast_Desktop_V4_5_1;
 
 
 	private static void .cctor() { }
@@ -184,8 +184,8 @@ internal static class BinaryConverter // TypeDefIndex: 1068
 
 internal sealed class BinaryAssemblyInfo // TypeDefIndex: 1070
 {
-	internal string assemblyString; 
-	private Assembly assembly; 
+	internal string assemblyString;
+	private Assembly assembly;
 
 
 	internal void .ctor(string assemblyString) { }
@@ -198,8 +198,8 @@ internal sealed class BinaryAssemblyInfo // TypeDefIndex: 1070
 
 internal sealed class BinaryAssembly // TypeDefIndex: 1072
 {
-	internal int assemId; 
-	internal string assemblyString; 
+	internal int assemId;
+	internal string assemblyString;
 
 
 	internal void .ctor() { }
@@ -216,8 +216,8 @@ internal sealed class BinaryAssembly // TypeDefIndex: 1072
 
 internal sealed class BinaryCrossAppDomainAssembly // TypeDefIndex: 1073
 {
-	internal int assemId; 
-	internal int assemblyIndex; 
+	internal int assemId;
+	internal int assemblyIndex;
 
 
 	internal void .ctor() { }
@@ -230,8 +230,8 @@ internal sealed class BinaryCrossAppDomainAssembly // TypeDefIndex: 1073
 
 internal sealed class BinaryObject // TypeDefIndex: 1074
 {
-	internal int objectId; 
-	internal int mapId; 
+	internal int objectId;
+	internal int mapId;
 
 
 	internal void .ctor() { }
@@ -248,13 +248,13 @@ internal sealed class BinaryObject // TypeDefIndex: 1074
 
 internal sealed class BinaryMethodCall // TypeDefIndex: 1075
 {
-	private string methodName; 
-	private string typeName; 
-	private object[] args; 
-	private object callContext; 
-	private Type[] argTypes; 
-	private bool bArgsPrimitive; 
-	private MessageEnum messageEnum; 
+	private string methodName;
+	private string typeName;
+	private object[] args;
+	private object callContext;
+	private Type[] argTypes;
+	private bool bArgsPrimitive;
+	private MessageEnum messageEnum;
 
 
 	internal void Write(__BinaryWriter sout) { }
@@ -267,14 +267,14 @@ internal sealed class BinaryMethodCall // TypeDefIndex: 1075
 
 internal sealed class BinaryMethodReturn // TypeDefIndex: 1076
 {
-	private object returnValue; 
-	private object[] args; 
-	private object callContext; 
-	private Type[] argTypes; 
-	private bool bArgsPrimitive; 
-	private MessageEnum messageEnum; 
-	private Type returnType; 
-	private static object instanceOfVoid; 
+	private object returnValue;
+	private object[] args;
+	private object callContext;
+	private Type[] argTypes;
+	private bool bArgsPrimitive;
+	private MessageEnum messageEnum;
+	private Type returnType;
+	private static object instanceOfVoid;
 
 
 	private static void .cctor() { }
@@ -289,8 +289,8 @@ internal sealed class BinaryMethodReturn // TypeDefIndex: 1076
 
 internal sealed class BinaryObjectString // TypeDefIndex: 1077
 {
-	internal int objectId; 
-	internal string value; 
+	internal int objectId;
+	internal string value;
 
 
 	internal void .ctor() { }
@@ -307,8 +307,8 @@ internal sealed class BinaryObjectString // TypeDefIndex: 1077
 
 internal sealed class BinaryCrossAppDomainString // TypeDefIndex: 1078
 {
-	internal int objectId; 
-	internal int value; 
+	internal int objectId;
+	internal int value;
 
 
 	internal void .ctor() { }
@@ -321,7 +321,7 @@ internal sealed class BinaryCrossAppDomainString // TypeDefIndex: 1078
 
 internal sealed class BinaryCrossAppDomainMap // TypeDefIndex: 1079
 {
-	internal int crossAppDomainArrayIndex; 
+	internal int crossAppDomainArrayIndex;
 
 
 	internal void .ctor() { }
@@ -334,12 +334,12 @@ internal sealed class BinaryCrossAppDomainMap // TypeDefIndex: 1079
 
 internal sealed class BinaryObjectWithMap // TypeDefIndex: 1081
 {
-	internal BinaryHeaderEnum binaryHeaderEnum; 
-	internal int objectId; 
-	internal string name; 
-	internal int numMembers; 
-	internal string[] memberNames; 
-	internal int assemId; 
+	internal BinaryHeaderEnum binaryHeaderEnum;
+	internal int objectId;
+	internal string name;
+	internal int numMembers;
+	internal string[] memberNames;
+	internal int assemId;
 
 
 	internal void .ctor() { }
@@ -358,15 +358,15 @@ internal sealed class BinaryObjectWithMap // TypeDefIndex: 1081
 
 internal sealed class BinaryObjectWithMapTyped // TypeDefIndex: 1082
 {
-	internal BinaryHeaderEnum binaryHeaderEnum; 
-	internal int objectId; 
-	internal string name; 
-	internal int numMembers; 
-	internal string[] memberNames; 
-	internal BinaryTypeEnum[] binaryTypeEnumA; 
-	internal object[] typeInformationA; 
-	internal int[] memberAssemIds; 
-	internal int assemId; 
+	internal BinaryHeaderEnum binaryHeaderEnum;
+	internal int objectId;
+	internal string name;
+	internal int numMembers;
+	internal string[] memberNames;
+	internal BinaryTypeEnum[] binaryTypeEnumA;
+	internal object[] typeInformationA;
+	internal int[] memberAssemIds;
+	internal int assemId;
 
 
 	internal void .ctor() { }
@@ -383,15 +383,15 @@ internal sealed class BinaryObjectWithMapTyped // TypeDefIndex: 1082
 
 internal sealed class BinaryArray // TypeDefIndex: 1083
 {
-	internal int objectId; 
-	internal int rank; 
-	internal int[] lengthA; 
-	internal int[] lowerBoundA; 
-	internal BinaryTypeEnum binaryTypeEnum; 
-	internal object typeInformation; 
-	internal int assemId; 
-	private BinaryHeaderEnum binaryHeaderEnum; 
-	internal BinaryArrayTypeEnum binaryArrayTypeEnum; 
+	internal int objectId;
+	internal int rank;
+	internal int[] lengthA;
+	internal int[] lowerBoundA;
+	internal BinaryTypeEnum binaryTypeEnum;
+	internal object typeInformation;
+	internal int assemId;
+	private BinaryHeaderEnum binaryHeaderEnum;
+	internal BinaryArrayTypeEnum binaryArrayTypeEnum;
 
 
 	internal void .ctor() { }
@@ -408,7 +408,7 @@ internal sealed class BinaryArray // TypeDefIndex: 1083
 
 internal enum BinaryHeaderEnum // TypeDefIndex: 1091
 {
-	public int value__; 
+	public int value__;
 	public const BinaryHeaderEnum SerializedStreamHeader = 0;
 	public const BinaryHeaderEnum Object = 1;
 	public const BinaryHeaderEnum ObjectWithMap = 2;
@@ -437,7 +437,7 @@ internal enum BinaryHeaderEnum // TypeDefIndex: 1091
 
 internal enum BinaryTypeEnum // TypeDefIndex: 1092
 {
-	public int value__; 
+	public int value__;
 	public const BinaryTypeEnum Primitive = 0;
 	public const BinaryTypeEnum String = 1;
 	public const BinaryTypeEnum Object = 2;
@@ -451,7 +451,7 @@ internal enum BinaryTypeEnum // TypeDefIndex: 1092
 
 internal enum BinaryArrayTypeEnum // TypeDefIndex: 1093
 {
-	public int value__; 
+	public int value__;
 	public const BinaryArrayTypeEnum Single = 0;
 	public const BinaryArrayTypeEnum Jagged = 1;
 	public const BinaryArrayTypeEnum Rectangular = 2;
@@ -463,14 +463,14 @@ internal enum BinaryArrayTypeEnum // TypeDefIndex: 1093
 
 public sealed class BinaryFormatter // TypeDefIndex: 1104
 {
-	internal ISurrogateSelector m_surrogates; 
-	internal StreamingContext m_context; 
-	internal SerializationBinder m_binder; 
-	internal FormatterTypeStyle m_typeFormat; 
-	internal FormatterAssemblyStyle m_assemblyFormat; 
-	internal TypeFilterLevel m_securityLevel; 
-	internal object[] m_crossAppDomainArray; 
-	private static Dictionary<Type, TypeInformation> typeNameCache; 
+	internal ISurrogateSelector m_surrogates;
+	internal StreamingContext m_context;
+	internal SerializationBinder m_binder;
+	internal FormatterTypeStyle m_typeFormat;
+	internal FormatterAssemblyStyle m_assemblyFormat;
+	internal TypeFilterLevel m_securityLevel;
+	internal object[] m_crossAppDomainArray;
+	private static Dictionary<Type, TypeInformation> typeNameCache;
 
 	public FormatterAssemblyStyle AssemblyFormat { set; }
 	public ISurrogateSelector SurrogateSelector { set; }
@@ -504,7 +504,7 @@ public sealed class BinaryFormatter // TypeDefIndex: 1104
 
 internal static class BinaryCompatibility // TypeDefIndex: 1833
 {
-	private static bool _targetsAtLeast_Desktop_V4_5_2; 
+	private static bool _targetsAtLeast_Desktop_V4_5_2;
 
 	internal static bool TargetsAtLeast_Desktop_V4_5_2 { get; }
 
@@ -534,9 +534,9 @@ internal class BinaryFacetsChecker : FacetsChecker // TypeDefIndex: 2255
 
 internal class BinaryNode : ExpressionNode // TypeDefIndex: 4248
 {
-	internal int _op; 
-	internal ExpressionNode _left; 
-	internal ExpressionNode _right; 
+	internal int _op;
+	internal ExpressionNode _left;
+	internal ExpressionNode _right;
 
 
 	internal void .ctor(DataTable table, int op, ExpressionNode left, ExpressionNode right) { }
@@ -589,7 +589,7 @@ internal class BinaryNode : ExpressionNode // TypeDefIndex: 4248
 
 private enum BinaryNode.DataTypePrecedence // TypeDefIndex: 4249
 {
-	public int value__; 
+	public int value__;
 	public const BinaryNode.DataTypePrecedence SqlDateTime = 25;
 	public const BinaryNode.DataTypePrecedence DateTimeOffset = 24;
 	public const BinaryNode.DataTypePrecedence DateTime = 23;
@@ -627,12 +627,12 @@ private enum BinaryNode.DataTypePrecedence // TypeDefIndex: 4249
 
 }
 
-public class BinaryConverter : JsonConverter // TypeDefIndex: 6106
+public class BinaryConverter : JsonConverter // TypeDefIndex: 6108
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 public class BinaryConverter : JsonConverter
-	private ReflectionObject _reflectionObject; 
+	private ReflectionObject _reflectionObject;
 
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
@@ -651,7 +651,7 @@ public class BinaryConverter : JsonConverter
 
 }
 
-public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6111
+public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6113
 {
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
@@ -664,14 +664,14 @@ public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6111
 
 }
 
-internal enum BsonBinaryType // TypeDefIndex: 6139
+internal enum BsonBinaryType // TypeDefIndex: 6141
 {
-	public byte value__; 
+	public byte value__;
 	public const BsonBinaryType Binary = 0;
 	public const BsonBinaryType Function = 1;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const BsonBinaryType BinaryOld = 2;
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public const BsonBinaryType UuidOld = 3;
 	public const BsonBinaryType Uuid = 4;
 	public const BsonBinaryType Md5 = 5;
@@ -679,31 +679,31 @@ internal enum BsonBinaryType // TypeDefIndex: 6139
 
 }
 
-internal class BsonBinaryWriter // TypeDefIndex: 6140
+internal class BsonBinaryWriter // TypeDefIndex: 6142
 {
-	private static readonly Encoding Encoding; 
+	private static readonly Encoding Encoding;
 
 
 	private static void .cctor() { }
 
 }
 
-public class BsonReader : JsonReader // TypeDefIndex: 6141
+public class BsonReader : JsonReader // TypeDefIndex: 6143
 {
-	private static readonly byte[] SeqRange1; 
-	private static readonly byte[] SeqRange2; 
-	private static readonly byte[] SeqRange3; 
-	private static readonly byte[] SeqRange4; 
-	private readonly BinaryReader _reader; 
-	private readonly List<BsonReader.ContainerContext> _stack; 
-	private byte[] _byteBuffer; 
-	private char[] _charBuffer; 
-	private BsonType _currentElementType; 
-	private BsonReader.BsonReaderState _bsonReaderState; 
-	private BsonReader.ContainerContext _currentContext; 
-	private bool _readRootValueAsArray; 
-	private bool _jsonNet35BinaryCompatibility; 
-	private DateTimeKind _dateTimeKindHandling; 
+	private static readonly byte[] SeqRange1;
+	private static readonly byte[] SeqRange2;
+	private static readonly byte[] SeqRange3;
+	private static readonly byte[] SeqRange4;
+	private readonly BinaryReader _reader;
+	private readonly List<BsonReader.ContainerContext> _stack;
+	private byte[] _byteBuffer;
+	private char[] _charBuffer;
+	private BsonType _currentElementType;
+	private BsonReader.BsonReaderState _bsonReaderState;
+	private BsonReader.ContainerContext _currentContext;
+	private bool _readRootValueAsArray;
+	private bool _jsonNet35BinaryCompatibility;
+	private DateTimeKind _dateTimeKindHandling;
 
 	public DateTimeKind DateTimeKindHandling { get; }
 
@@ -758,9 +758,9 @@ public class BsonReader : JsonReader // TypeDefIndex: 6141
 
 }
 
-private enum BsonReader.BsonReaderState // TypeDefIndex: 6142
+private enum BsonReader.BsonReaderState // TypeDefIndex: 6144
 {
-	public int value__; 
+	public int value__;
 	public const BsonReader.BsonReaderState Normal = 0;
 	public const BsonReader.BsonReaderState ReferenceStart = 1;
 	public const BsonReader.BsonReaderState ReferenceRef = 2;
@@ -773,21 +773,21 @@ private enum BsonReader.BsonReaderState // TypeDefIndex: 6142
 
 }
 
-private class BsonReader.ContainerContext // TypeDefIndex: 6143
+private class BsonReader.ContainerContext // TypeDefIndex: 6145
 {
-	public readonly BsonType Type; 
-	public int Length; 
-	public int Position; 
+	public readonly BsonType Type;
+	public int Length;
+	public int Position;
 
 
 	public void .ctor(BsonType type) { }
 
 }
 
-internal abstract class BsonToken // TypeDefIndex: 6144
+internal abstract class BsonToken // TypeDefIndex: 6146
 {
-	[CompilerGeneratedAttribute] 
-	private BsonToken <Parent>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private BsonToken <Parent>k__BackingField;
 
 	public abstract BsonType Type { get; }
 	public BsonToken Parent { set; }
@@ -795,16 +795,16 @@ internal abstract class BsonToken // TypeDefIndex: 6144
 
 	public abstract BsonType get_Type();
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Parent(BsonToken value) { }
 
 	protected void .ctor() { }
 
 }
 
-internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable // TypeDefIndex: 6145
+internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable // TypeDefIndex: 6147
 {
-	private readonly List<BsonProperty> _children; 
+	private readonly List<BsonProperty> _children;
 
 	public override BsonType Type { get; }
 
@@ -821,9 +821,9 @@ internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable //
 
 }
 
-internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // TypeDefIndex: 6146
+internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // TypeDefIndex: 6148
 {
-	private readonly List<BsonToken> _children; 
+	private readonly List<BsonToken> _children;
 
 	public override BsonType Type { get; }
 
@@ -840,10 +840,10 @@ internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // Typ
 
 }
 
-internal class BsonValue : BsonToken // TypeDefIndex: 6147
+internal class BsonValue : BsonToken // TypeDefIndex: 6149
 {
-	private readonly object _value; 
-	private readonly BsonType _type; 
+	private readonly object _value;
+	private readonly BsonType _type;
 
 	public override BsonType Type { get; }
 
@@ -854,40 +854,40 @@ internal class BsonValue : BsonToken // TypeDefIndex: 6147
 
 }
 
-internal class BsonString : BsonValue // TypeDefIndex: 6148
+internal class BsonString : BsonValue // TypeDefIndex: 6150
 {
-	[CompilerGeneratedAttribute] 
-	private bool <IncludeLength>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <IncludeLength>k__BackingField;
 
 	public bool IncludeLength { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IncludeLength(bool value) { }
 
 	public void .ctor(object value, bool includeLength) { }
 
 }
 
-internal class BsonRegex : BsonToken // TypeDefIndex: 6150
+internal class BsonRegex : BsonToken // TypeDefIndex: 6152
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 internal class BsonRegex : BsonToken
-	[CompilerGeneratedAttribute] 
-	private BsonString <Pattern>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BsonString <Options>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private BsonString <Pattern>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BsonString <Options>k__BackingField;
 
 	public BsonString Pattern { set; }
 	public BsonString Options { set; }
 	public override BsonType Type { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Pattern(BsonString value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Options(BsonString value) { }
 
 	public void .ctor(string pattern, string options) { }
@@ -896,30 +896,30 @@ internal class BsonRegex : BsonToken
 
 }
 
-internal class BsonProperty // TypeDefIndex: 6151
+internal class BsonProperty // TypeDefIndex: 6153
 {
-	[CompilerGeneratedAttribute] 
-	private BsonString <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BsonToken <Value>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private BsonString <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private BsonToken <Value>k__BackingField;
 
 	public BsonString Name { set; }
 	public BsonToken Value { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Name(BsonString value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Value(BsonToken value) { }
 
 	public void .ctor() { }
 
 }
 
-internal enum BsonType // TypeDefIndex: 6152
+internal enum BsonType // TypeDefIndex: 6154
 {
-	public sbyte value__; 
+	public sbyte value__;
 	public const BsonType Number = 1;
 	public const BsonType String = 2;
 	public const BsonType Object = 3;
@@ -943,11 +943,11 @@ internal enum BsonType // TypeDefIndex: 6152
 
 }
 
-public class BsonWriter : JsonWriter // TypeDefIndex: 6153
+public class BsonWriter : JsonWriter // TypeDefIndex: 6155
 {
-	private BsonToken _root; 
-	private BsonToken _parent; 
-	private string _propertyName; 
+	private BsonToken _root;
+	private BsonToken _parent;
+	private string _propertyName;
 
 
 	private void AddValue(object value, BsonType type) { }
@@ -960,41 +960,41 @@ public class BsonWriter : JsonWriter // TypeDefIndex: 6153
 
 }
 
-public class BsonObjectId // TypeDefIndex: 6154
+public class BsonObjectId // TypeDefIndex: 6156
 {
-	[CompilerGeneratedAttribute] 
-	private byte[] <Value>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte[] <Value>k__BackingField;
 
 	public byte[] Value { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte[] get_Value() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Value(byte[] value) { }
 
 	public void .ctor(byte[] value) { }
 
 }
 
-public static class BinaryReaderExtensions // TypeDefIndex: 6228
+public static class BinaryReaderExtensions // TypeDefIndex: 6230
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector3 ReadVector3(BinaryReader o) { }
 
 }
 
-public static class BinaryWriterExtensions // TypeDefIndex: 6229
+public static class BinaryWriterExtensions // TypeDefIndex: 6231
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void Write(BinaryWriter o, Vector3 vec) { }
 
 }
 
-public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6949
+public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6951
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1007,7 +1007,7 @@ public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6949
 
 }
 
-public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7309
+public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7311
 {
 
 	public void .ctor() { }

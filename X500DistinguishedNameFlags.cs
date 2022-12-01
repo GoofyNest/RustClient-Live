@@ -1,6 +1,6 @@
 public enum X500DistinguishedNameFlags // TypeDefIndex: 2801
 {
-	public int value__; 
+	public int value__;
 	public const X500DistinguishedNameFlags None = 0;
 	public const X500DistinguishedNameFlags Reversed = 1;
 	public const X500DistinguishedNameFlags UseSemicolons = 16;

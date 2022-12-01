@@ -1,10 +1,10 @@
-public class RFBroadcaster : IOEntity, IRFObject // TypeDefIndex: 10155
+public class RFBroadcaster : IOEntity, IRFObject // TypeDefIndex: 10157
 {
-	private Option __menuOption_Menu_SetFreqency; 
-	public int frequency; 
-	public GameObjectRef frequencyPanelPrefab; 
+	private Option __menuOption_Menu_SetFreqency;
+	public int frequency;
+	public GameObjectRef frequencyPanelPrefab;
 	public const BaseEntity.Flags Flag_Broadcasting = 512;
-	public bool playerUsable; 
+	public bool playerUsable;
 
 	public override bool HasMenuOptions { get; }
 
@@ -19,10 +19,10 @@ public class RFBroadcaster : IOEntity, IRFObject // TypeDefIndex: 10155
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_SetFreqency(BasePlayer player) { }
 
 	public bool Menu_SetFrequency_ShowIf(BasePlayer player) { }

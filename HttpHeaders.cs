@@ -1,10 +1,10 @@
-public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable<string>>>, IEnumerable // TypeDefIndex: 5782
+public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable<string>>>, IEnumerable // TypeDefIndex: 5784
 {
-	private static readonly Dictionary<string, HeaderInfo> known_headers; 
-	private readonly Dictionary<string, HttpHeaders.HeaderBucket> headers; 
-	private readonly HttpHeaderKind HeaderKind; 
-	internal Nullable<bool> connectionclose; 
-	internal Nullable<bool> transferEncodingChunked; 
+	private static readonly Dictionary<string, HeaderInfo> known_headers;
+	private readonly Dictionary<string, HttpHeaders.HeaderBucket> headers;
+	private readonly HttpHeaderKind HeaderKind;
+	internal Nullable<bool> connectionclose;
+	internal Nullable<bool> transferEncodingChunked;
 
 
 	private static void .cctor() { }
@@ -21,7 +21,7 @@ public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable
 
 	private bool TryCheckName(string name, out HeaderInfo headerInfo) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator<KeyValuePair<string, IEnumerable<string>>> GetEnumerator() { }
 
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
@@ -71,11 +71,11 @@ public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable
 
 }
 
-private class HttpHeaders.HeaderBucket // TypeDefIndex: 5783
+private class HttpHeaders.HeaderBucket // TypeDefIndex: 5785
 {
-	public object Parsed; 
-	private List<string> values; 
-	public readonly Func<object, string> CustomToString; 
+	public object Parsed;
+	private List<string> values;
+	public readonly Func<object, string> CustomToString;
 
 	public bool HasStringValues { get; }
 	public List<string> Values { get; set; }
@@ -93,34 +93,34 @@ private class HttpHeaders.HeaderBucket // TypeDefIndex: 5783
 
 }
 
-private sealed class HttpHeaders.<GetEnumerator>d__19 : IEnumerator<KeyValuePair<string, IEnumerable<string>>>, IDisposable, IEnumerator // TypeDefIndex: 5784
+private sealed class HttpHeaders.<GetEnumerator>d__19 : IEnumerator<KeyValuePair<string, IEnumerable<string>>>, IDisposable, IEnumerator // TypeDefIndex: 5786
 {
-	private int <>1__state; 
-	private KeyValuePair<string, IEnumerable<string>> <>2__current; 
-	public HttpHeaders <>4__this; 
-	private Dictionary.Enumerator<string, HttpHeaders.HeaderBucket> <>7__wrap1; 
+	private int <>1__state;
+	private KeyValuePair<string, IEnumerable<string>> <>2__current;
+	public HttpHeaders <>4__this;
+	private Dictionary.Enumerator<string, HttpHeaders.HeaderBucket> <>7__wrap1;
 
 	private KeyValuePair<string, IEnumerable<string>> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Collections.Generic.IEnumerable<System.String>>>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
 	private void <>m__Finally1() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private KeyValuePair<string, IEnumerable<string>> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Collections.Generic.IEnumerable<System.String>>>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

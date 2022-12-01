@@ -1,8 +1,8 @@
-public class HolsterPaddleInput : BaseTip // TypeDefIndex: 13401
+public class HolsterPaddleInput : BaseTip // TypeDefIndex: 13416
 {
-	public static Translate.Phrase Phrase; 
-	[CompilerGeneratedAttribute] 
-	private static bool <hasPaddledWithEquippedEntity>k__BackingField; 
+	public static Translate.Phrase Phrase;
+	[CompilerGeneratedAttribute]
+	private static bool <hasPaddledWithEquippedEntity>k__BackingField;
 
 	public override bool ShouldShow { get; }
 	public static bool hasPaddledWithEquippedEntity { get; set; }
@@ -12,10 +12,10 @@ public class HolsterPaddleInput : BaseTip // TypeDefIndex: 13401
 
 	public override bool get_ShouldShow() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_hasPaddledWithEquippedEntity() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_hasPaddledWithEquippedEntity(bool value) { }
 
 	public void .ctor() { }

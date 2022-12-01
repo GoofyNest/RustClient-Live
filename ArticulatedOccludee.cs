@@ -1,15 +1,15 @@
-public class ArticulatedOccludee : BaseMonoBehaviour // TypeDefIndex: 11003
+public class ArticulatedOccludee : BaseMonoBehaviour // TypeDefIndex: 11009
 {
 	private const float UpdateBoundsFadeStart = 20;
 	private const float UpdateBoundsFadeLength = 1000;
 	private const float UpdateBoundsMaxFrequency = 15;
 	private const float UpdateBoundsMinFrequency = 0,5;
-	private LODGroup lodGroup; 
-	public List<Collider> colliders; 
-	private OccludeeSphere localOccludee; 
-	private List<Renderer> renderers; 
-	private bool isVisible; 
-	private Action TriggerUpdateVisibilityBoundsDelegate; 
+	private LODGroup lodGroup;
+	public List<Collider> colliders;
+	private OccludeeSphere localOccludee;
+	private List<Renderer> renderers;
+	private bool isVisible;
+	private Action TriggerUpdateVisibilityBoundsDelegate;
 
 	public bool IsVisible { get; }
 

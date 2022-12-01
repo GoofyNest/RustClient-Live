@@ -1,9 +1,9 @@
 public class ByteArrayStream : Stream // TypeDefIndex: 4839
 {
-	private byte[] _data; 
-	private int _base; 
-	private int _length; 
-	private int _position; 
+	private byte[] _data;
+	private int _base;
+	private int _length;
+	private int _position;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }

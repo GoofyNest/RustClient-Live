@@ -1,7 +1,7 @@
 public struct InputDevice : IEquatable<InputDevice> // TypeDefIndex: 4150
 {
-	private ulong m_DeviceId; 
-	private bool m_Initialized; 
+	private ulong m_DeviceId;
+	private bool m_Initialized;
 
 	private ulong deviceId { get; }
 

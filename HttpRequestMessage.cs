@@ -1,13 +1,13 @@
-public class HttpRequestMessage : IDisposable // TypeDefIndex: 5761
+public class HttpRequestMessage : IDisposable // TypeDefIndex: 5763
 {
-	private HttpRequestHeaders headers; 
-	private HttpMethod method; 
-	private Version version; 
-	private Uri uri; 
-	private bool is_used; 
-	private bool disposed; 
-	[CompilerGeneratedAttribute] 
-	private HttpContent <Content>k__BackingField; 
+	private HttpRequestHeaders headers;
+	private HttpMethod method;
+	private Version version;
+	private Uri uri;
+	private bool is_used;
+	private bool disposed;
+	[CompilerGeneratedAttribute]
+	private HttpContent <Content>k__BackingField;
 
 	public HttpContent Content { get; set; }
 	public HttpRequestHeaders Headers { get; }
@@ -20,10 +20,10 @@ public class HttpRequestMessage : IDisposable // TypeDefIndex: 5761
 
 	public void .ctor(HttpMethod method, Uri requestUri) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public HttpContent get_Content() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Content(HttpContent value) { }
 
 	public HttpRequestHeaders get_Headers() { }

@@ -1,17 +1,17 @@
-public class ErrorContext // TypeDefIndex: 6009
+public class ErrorContext // TypeDefIndex: 6011
 {
-	[CompilerGeneratedAttribute] 
-	private bool <Traced>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Exception <Error>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <OriginalObject>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <Member>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Path>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Handled>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <Traced>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Exception <Error>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <OriginalObject>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <Member>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Path>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Handled>k__BackingField;
 
 	internal bool Traced { get; set; }
 	public Exception Error { get; set; }
@@ -23,28 +23,28 @@ public class ErrorContext // TypeDefIndex: 6009
 
 	internal void .ctor(object originalObject, object member, string path, Exception error) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal bool get_Traced() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Traced(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Exception get_Error() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Error(Exception value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_OriginalObject(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Member(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Path(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_Handled() { }
 
 }

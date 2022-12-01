@@ -1,14 +1,14 @@
 public struct Vector3Int : IEquatable<Vector3Int> // TypeDefIndex: 3473
 {
-	private int m_X; 
-	private int m_Y; 
-	private int m_Z; 
-	private static readonly Vector3Int s_Zero; 
-	private static readonly Vector3Int s_One; 
-	private static readonly Vector3Int s_Up; 
-	private static readonly Vector3Int s_Down; 
-	private static readonly Vector3Int s_Left; 
-	private static readonly Vector3Int s_Right; 
+	private int m_X;
+	private int m_Y;
+	private int m_Z;
+	private static readonly Vector3Int s_Zero;
+	private static readonly Vector3Int s_One;
+	private static readonly Vector3Int s_Up;
+	private static readonly Vector3Int s_Down;
+	private static readonly Vector3Int s_Left;
+	private static readonly Vector3Int s_Right;
 
 	public int x { get; }
 	public int y { get; }

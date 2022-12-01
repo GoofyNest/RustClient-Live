@@ -1,11 +1,11 @@
-internal sealed class ParsingResult // TypeDefIndex: 7644
+internal sealed class ParsingResult // TypeDefIndex: 7646
 {
-	public static readonly ParsingResult Parsed; 
-	public static readonly ParsingResult EmptyInputString; 
-	public static readonly ParsingResult NotMatched; 
-	private readonly string _error; 
-	[CompilerGeneratedAttribute] 
-	private readonly ParsingStatus <Status>k__BackingField; 
+	public static readonly ParsingResult Parsed;
+	public static readonly ParsingResult EmptyInputString;
+	public static readonly ParsingResult NotMatched;
+	private readonly string _error;
+	[CompilerGeneratedAttribute]
+	private readonly ParsingStatus <Status>k__BackingField;
 
 
 	private void .ctor(string error) { }

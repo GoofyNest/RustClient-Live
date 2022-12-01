@@ -1,10 +1,10 @@
-internal struct JoinLobbyOptionsInternal : ISettable<JoinLobbyOptions>, IDisposable // TypeDefIndex: 9120
+internal struct JoinLobbyOptionsInternal : ISettable<JoinLobbyOptions>, IDisposable // TypeDefIndex: 9122
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyDetailsHandle; 
-	private IntPtr m_LocalUserId; 
-	private int m_PresenceEnabled; 
-	private IntPtr m_LocalRTCOptions; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyDetailsHandle;
+	private IntPtr m_LocalUserId;
+	private int m_PresenceEnabled;
+	private IntPtr m_LocalRTCOptions;
 
 	public LobbyDetails LobbyDetailsHandle { set; }
 	public ProductUserId LocalUserId { set; }

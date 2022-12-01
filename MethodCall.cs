@@ -1,16 +1,16 @@
 public class MethodCall : IMethodCallMessage, IMethodMessage, IMessage, ISerializable, IInternalMessage // TypeDefIndex: 1246
 {
-	private string _uri; 
-	private string _typeName; 
-	private string _methodName; 
-	private object[] _args; 
-	private Type[] _methodSignature; 
-	private MethodBase _methodBase; 
-	private LogicalCallContext _callContext; 
-	private Identity _targetIdentity; 
-	private Type[] _genericArguments; 
-	protected IDictionary ExternalProperties; 
-	protected IDictionary InternalProperties; 
+	private string _uri;
+	private string _typeName;
+	private string _methodName;
+	private object[] _args;
+	private Type[] _methodSignature;
+	private MethodBase _methodBase;
+	private LogicalCallContext _callContext;
+	private Identity _targetIdentity;
+	private Type[] _genericArguments;
+	protected IDictionary ExternalProperties;
+	protected IDictionary InternalProperties;
 
 	public int ArgCount { get; }
 	public object[] Args { get; }

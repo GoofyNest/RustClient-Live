@@ -1,4 +1,4 @@
-public sealed class SessionSearch : Handle // TypeDefIndex: 8583
+public sealed class SessionSearch : Handle // TypeDefIndex: 8585
 {
 	public const int SessionsearchCopysearchresultbyindexApiLatest = 1;
 	public const int SessionsearchFindApiLatest = 2;
@@ -32,7 +32,7 @@ public sealed class SessionSearch : Handle // TypeDefIndex: 8583
 
 	public Result SetTargetUserId(ref SessionSearchSetTargetUserIdOptions options) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnFindCallbackInternalImplementation(ref SessionSearchFindCallbackInfoInternal data) { }
 
 }

@@ -1,10 +1,10 @@
 public sealed class Evidence : ICollection, IEnumerable // TypeDefIndex: 910
 {
-	private bool _locked; 
-	private ArrayList hostEvidenceList; 
-	private ArrayList assemblyEvidenceList; 
+	private bool _locked;
+	private ArrayList hostEvidenceList;
+	private ArrayList assemblyEvidenceList;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public int Count { get; }
 	public object SyncRoot { get; }
 
@@ -15,19 +15,19 @@ public sealed class Evidence : ICollection, IEnumerable // TypeDefIndex: 910
 
 	public object get_SyncRoot() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void CopyTo(Array array, int index) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public IEnumerator GetEnumerator() { }
 
 }
 
 private class Evidence.EvidenceEnumerator : IEnumerator // TypeDefIndex: 911
 {
-	private IEnumerator currentEnum; 
-	private IEnumerator hostEnum; 
-	private IEnumerator assemblyEnum; 
+	private IEnumerator currentEnum;
+	private IEnumerator hostEnum;
+	private IEnumerator assemblyEnum;
 
 	public object Current { get; }
 

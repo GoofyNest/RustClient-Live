@@ -1,10 +1,10 @@
-public class StaticInstrument : BaseMountable // TypeDefIndex: 10373
+public class StaticInstrument : BaseMountable // TypeDefIndex: 10377
 {
-	public AnimatorOverrideController AnimatorOverride; 
-	public bool ShowDeployAnimation; 
-	public InstrumentKeyController KeyController; 
-	public bool ShouldSuppressHandsAnimationLayer; 
-	private BasePlayer lateUpdatePlayer; 
+	public AnimatorOverrideController AnimatorOverride;
+	public bool ShowDeployAnimation;
+	public InstrumentKeyController KeyController;
+	public bool ShouldSuppressHandsAnimationLayer;
+	private BasePlayer lateUpdatePlayer;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -29,10 +29,10 @@ public class StaticInstrument : BaseMountable // TypeDefIndex: 10373
 
 	public override void ResetState() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_PlayNote(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_StopNote(BaseEntity.RPCMessage msg) { }
 
 	public override bool IsInstrument() { }

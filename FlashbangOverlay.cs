@@ -1,15 +1,15 @@
-public class FlashbangOverlay : MonoBehaviour, IClientComponent // TypeDefIndex: 10856
+public class FlashbangOverlay : MonoBehaviour, IClientComponent // TypeDefIndex: 10862
 {
-	public static FlashbangOverlay Instance; 
-	public PostProcessVolume postProcessVolume; 
-	public AnimationCurve burnIntensityCurve; 
-	public AnimationCurve whiteoutIntensityCurve; 
-	public SoundDefinition deafLoopDef; 
-	private FlashbangEffect flashbangEffect; 
-	private float flashLength; 
-	private TimeSince flashTime; 
-	private Sound deafLoop; 
-	private SoundModulation.Modulator deafGain; 
+	public static FlashbangOverlay Instance;
+	public PostProcessVolume postProcessVolume;
+	public AnimationCurve burnIntensityCurve;
+	public AnimationCurve whiteoutIntensityCurve;
+	public SoundDefinition deafLoopDef;
+	private FlashbangEffect flashbangEffect;
+	private float flashLength;
+	private TimeSince flashTime;
+	private Sound deafLoop;
+	private SoundModulation.Modulator deafGain;
 
 
 	protected void Awake() { }

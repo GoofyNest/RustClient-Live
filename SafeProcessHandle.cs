@@ -1,6 +1,6 @@
 public sealed class SafeProcessHandle : SafeHandleZeroOrMinusOneIsInvalid // TypeDefIndex: 2563
 {
-	internal static SafeProcessHandle InvalidHandle; 
+	internal static SafeProcessHandle InvalidHandle;
 
 
 	internal void .ctor(IntPtr handle) { }

@@ -1,13 +1,13 @@
-internal struct QueryLeaderboardUserScoresOptionsInternal : ISettable<QueryLeaderboardUserScoresOptions>, IDisposable // TypeDefIndex: 9319
+internal struct QueryLeaderboardUserScoresOptionsInternal : ISettable<QueryLeaderboardUserScoresOptions>, IDisposable // TypeDefIndex: 9321
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserIds; 
-	private uint m_UserIdsCount; 
-	private IntPtr m_StatInfo; 
-	private uint m_StatInfoCount; 
-	private long m_StartTime; 
-	private long m_EndTime; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_UserIds;
+	private uint m_UserIdsCount;
+	private IntPtr m_StatInfo;
+	private uint m_StatInfoCount;
+	private long m_StartTime;
+	private long m_EndTime;
+	private IntPtr m_LocalUserId;
 
 	public ProductUserId[] UserIds { set; }
 	public UserScoresQueryStatInfo[] StatInfo { set; }

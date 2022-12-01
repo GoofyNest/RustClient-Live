@@ -1,6 +1,6 @@
-public enum NoteName // TypeDefIndex: 7448
+public enum NoteName // TypeDefIndex: 7450
 {
-	public int value__; 
+	public int value__;
 	public const NoteName C = 0;
 	public const NoteName CSharp = 1;
 	public const NoteName D = 2;

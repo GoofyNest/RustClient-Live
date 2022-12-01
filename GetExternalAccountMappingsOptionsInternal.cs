@@ -1,9 +1,9 @@
-internal struct GetExternalAccountMappingsOptionsInternal : ISettable<GetExternalAccountMappingsOptions>, IDisposable // TypeDefIndex: 9582
+internal struct GetExternalAccountMappingsOptionsInternal : ISettable<GetExternalAccountMappingsOptions>, IDisposable // TypeDefIndex: 9584
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private ExternalAccountType m_AccountIdType; 
-	private IntPtr m_TargetExternalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private ExternalAccountType m_AccountIdType;
+	private IntPtr m_TargetExternalUserId;
 
 	public ProductUserId LocalUserId { set; }
 	public ExternalAccountType AccountIdType { set; }

@@ -1,4 +1,4 @@
-internal class AllocationException : Exception // TypeDefIndex: 8267
+internal class AllocationException : Exception // TypeDefIndex: 8269
 {
 
 	public void .ctor(string message) { }

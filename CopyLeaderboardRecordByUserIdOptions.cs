@@ -1,15 +1,15 @@
-public struct CopyLeaderboardRecordByUserIdOptions // TypeDefIndex: 9282
+public struct CopyLeaderboardRecordByUserIdOptions // TypeDefIndex: 9284
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <UserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <UserId>k__BackingField;
 
 	public ProductUserId UserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_UserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UserId(ProductUserId value) { }
 
 }

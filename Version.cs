@@ -1,10 +1,10 @@
 public sealed class Version : ICloneable, IComparable, IComparable<Version>, IEquatable<Version> // TypeDefIndex: 334
 {
-	private int _Major; 
-	private int _Minor; 
-	private int _Build; 
-	private int _Revision; 
-	private static readonly char[] SeparatorsArray; 
+	private int _Major;
+	private int _Minor;
+	private int _Build;
+	private int _Revision;
+	private static readonly char[] SeparatorsArray;
 	private const int ZERO_CHAR_VALUE = 48;
 
 	public int Major { get; }
@@ -71,7 +71,7 @@ public sealed class Version : ICloneable, IComparable, IComparable<Version>, IEq
 
 internal enum Version.ParseFailureKind // TypeDefIndex: 335
 {
-	public int value__; 
+	public int value__;
 	public const Version.ParseFailureKind ArgumentNullException = 0;
 	public const Version.ParseFailureKind ArgumentException = 1;
 	public const Version.ParseFailureKind ArgumentOutOfRangeException = 2;
@@ -81,11 +81,11 @@ internal enum Version.ParseFailureKind // TypeDefIndex: 335
 
 internal struct Version.VersionResult // TypeDefIndex: 336
 {
-	internal Version m_parsedVersion; 
-	internal Version.ParseFailureKind m_failure; 
-	internal string m_exceptionArgument; 
-	internal string m_argumentName; 
-	internal bool m_canThrow; 
+	internal Version m_parsedVersion;
+	internal Version.ParseFailureKind m_failure;
+	internal string m_exceptionArgument;
+	internal string m_argumentName;
+	internal bool m_canThrow;
 
 
 	internal void Init(string argumentName, bool canThrow) { }
@@ -98,7 +98,7 @@ internal struct Version.VersionResult // TypeDefIndex: 336
 
 }
 
-public static class Version // TypeDefIndex: 13343
+public static class Version // TypeDefIndex: 13358
 {
 	public const int Current = 1510;
 

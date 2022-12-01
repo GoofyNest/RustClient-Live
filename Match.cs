@@ -1,15 +1,15 @@
 public class Match : Group // TypeDefIndex: 2620
 {
-	internal static Match _empty; 
-	internal GroupCollection _groupcoll; 
-	internal Regex _regex; 
-	internal int _textbeg; 
-	internal int _textpos; 
-	internal int _textend; 
-	internal int _textstart; 
-	internal int[][] _matches; 
-	internal int[] _matchcount; 
-	internal bool _balancing; 
+	internal static Match _empty;
+	internal GroupCollection _groupcoll;
+	internal Regex _regex;
+	internal int _textbeg;
+	internal int _textpos;
+	internal int _textend;
+	internal int _textstart;
+	internal int[][] _matches;
+	internal int[] _matchcount;
+	internal bool _balancing;
 
 	public static Match Empty { get; }
 	public virtual GroupCollection Groups { get; }

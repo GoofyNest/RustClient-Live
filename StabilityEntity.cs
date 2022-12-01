@@ -1,9 +1,9 @@
-public class StabilityEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6340
+public class StabilityEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float stability; 
-	public int distanceFromGround; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float stability;
+	public int distanceFromGround;
 
 
 	public static void ResetToPool(StabilityEntity instance) { }
@@ -60,11 +60,11 @@ public class StabilityEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class StabilityEntity : DecayEntity // TypeDefIndex: 11418
+public class StabilityEntity : DecayEntity // TypeDefIndex: 11424
 {
-	public bool grounded; 
-	public float cachedStability; 
-	public int cachedDistanceFromGround; 
+	public bool grounded;
+	public float cachedStability;
+	public int cachedDistanceFromGround;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

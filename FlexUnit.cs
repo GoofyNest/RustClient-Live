@@ -1,9 +1,9 @@
-public enum FlexUnit // TypeDefIndex: 6828
+public enum FlexUnit // TypeDefIndex: 6830
 {
-	public int value__; 
-	[InspectorNameAttribute] 
+	public int value__;
+	[InspectorNameAttribute]
 	public const FlexUnit Pixels = 0;
-	[InspectorNameAttribute] 
+	[InspectorNameAttribute]
 	public const FlexUnit Percent = 1;
 
 }

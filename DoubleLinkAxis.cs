@@ -1,6 +1,6 @@
 internal class DoubleLinkAxis : Axis // TypeDefIndex: 2135
 {
-	internal Axis next; 
+	internal Axis next;
 
 	internal Axis Next { get; set; }
 

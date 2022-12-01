@@ -1,10 +1,10 @@
 internal sealed class RuntimeResourceSet : ResourceSet, IEnumerable // TypeDefIndex: 499
 {
 	internal const int Version = 2;
-	private Dictionary<string, ResourceLocator> _resCache; 
-	private ResourceReader _defaultReader; 
-	private Dictionary<string, ResourceLocator> _caseInsensitiveTable; 
-	private bool _haveReadFromReader; 
+	private Dictionary<string, ResourceLocator> _resCache;
+	private ResourceReader _defaultReader;
+	private Dictionary<string, ResourceLocator> _caseInsensitiveTable;
+	private bool _haveReadFromReader;
 
 
 	internal void .ctor(string fileName) { }

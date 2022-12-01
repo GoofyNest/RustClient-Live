@@ -1,8 +1,8 @@
-public class BaseLock : BaseEntity // TypeDefIndex: 10044
+public class BaseLock : BaseEntity // TypeDefIndex: 10046
 {
-	private Option __menuOption_Menu_RemoveLock; 
-	[ItemSelector] 
-	public ItemDefinition itemType; 
+	private Option __menuOption_Menu_RemoveLock;
+	[ItemSelector]
+	public ItemDefinition itemType;
 
 	public override bool HasMenuOptions { get; }
 
@@ -13,10 +13,10 @@ public class BaseLock : BaseEntity // TypeDefIndex: 10044
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_RemoveLock(BasePlayer player) { }
 
 	public bool Menu_RemoveLock_ShowIf(BasePlayer player) { }

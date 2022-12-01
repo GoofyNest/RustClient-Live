@@ -1,7 +1,7 @@
 public class CullingGroup : IDisposable // TypeDefIndex: 3366
 {
-	internal IntPtr m_Ptr; 
-	private CullingGroup.StateChanged m_OnStateChanged; 
+	internal IntPtr m_Ptr;
+	private CullingGroup.StateChanged m_OnStateChanged;
 
 	public CullingGroup.StateChanged onStateChanged { set; }
 	public Camera targetCamera { get; set; }
@@ -11,7 +11,7 @@ public class CullingGroup : IDisposable // TypeDefIndex: 3366
 
 	protected override void Finalize() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void DisposeInternal() { }
 
 	public void Dispose() { }
@@ -26,21 +26,21 @@ public class CullingGroup : IDisposable // TypeDefIndex: 3366
 
 	public void SetBoundingSphereCount(int count) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetBoundingDistances(float[] distances) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private void SetDistanceReferencePoint_InternalTransform(Transform transform) { }
 
 	public void SetDistanceReferencePoint(Transform transform) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void SendEvents(CullingGroup cullingGroup, IntPtr eventsPtr, int count) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Init(object scripting) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void FinalizerFailure() { }
 
 }

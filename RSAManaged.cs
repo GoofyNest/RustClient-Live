@@ -1,19 +1,19 @@
 internal class RSAManaged : RSA // TypeDefIndex: 75
 {
-	private bool isCRTpossible; 
-	private bool keyBlinding; 
-	private bool keypairGenerated; 
-	private bool m_disposed; 
-	private BigInteger d; 
-	private BigInteger p; 
-	private BigInteger q; 
-	private BigInteger dp; 
-	private BigInteger dq; 
-	private BigInteger qInv; 
-	private BigInteger n; 
-	private BigInteger e; 
-	[CompilerGeneratedAttribute] 
-	private RSAManaged.KeyGeneratedEventHandler KeyGenerated; 
+	private bool isCRTpossible;
+	private bool keyBlinding;
+	private bool keypairGenerated;
+	private bool m_disposed;
+	private BigInteger d;
+	private BigInteger p;
+	private BigInteger q;
+	private BigInteger dp;
+	private BigInteger dq;
+	private BigInteger qInv;
+	private BigInteger n;
+	private BigInteger e;
+	[CompilerGeneratedAttribute]
+	private RSAManaged.KeyGeneratedEventHandler KeyGenerated;
 
 	public override int KeySize { get; }
 	public bool PublicOnly { get; }
@@ -37,10 +37,10 @@ internal class RSAManaged : RSA // TypeDefIndex: 75
 
 	protected override void Dispose(bool disposing) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_KeyGenerated(RSAManaged.KeyGeneratedEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_KeyGenerated(RSAManaged.KeyGeneratedEventHandler value) { }
 
 	public override string ToXmlString(bool includePrivateParameters) { }
@@ -64,19 +64,19 @@ public sealed class RSAManaged.KeyGeneratedEventHandler : MulticastDelegate // T
 
 public class RSAManaged : RSA // TypeDefIndex: 1761
 {
-	private bool isCRTpossible; 
-	private bool keypairGenerated; 
-	private bool m_disposed; 
-	private BigInteger d; 
-	private BigInteger p; 
-	private BigInteger q; 
-	private BigInteger dp; 
-	private BigInteger dq; 
-	private BigInteger qInv; 
-	private BigInteger n; 
-	private BigInteger e; 
-	[CompilerGeneratedAttribute] 
-	private RSAManaged.KeyGeneratedEventHandler KeyGenerated; 
+	private bool isCRTpossible;
+	private bool keypairGenerated;
+	private bool m_disposed;
+	private BigInteger d;
+	private BigInteger p;
+	private BigInteger q;
+	private BigInteger dp;
+	private BigInteger dq;
+	private BigInteger qInv;
+	private BigInteger n;
+	private BigInteger e;
+	[CompilerGeneratedAttribute]
+	private RSAManaged.KeyGeneratedEventHandler KeyGenerated;
 
 	public bool PublicOnly { get; }
 

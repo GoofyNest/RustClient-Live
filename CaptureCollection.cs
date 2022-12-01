@@ -1,8 +1,8 @@
 public class CaptureCollection : ICollection, IEnumerable // TypeDefIndex: 2606
 {
-	internal Group _group; 
-	internal int _capcount; 
-	internal Capture[] _captures; 
+	internal Group _group;
+	internal int _capcount;
+	internal Capture[] _captures;
 
 	public object SyncRoot { get; }
 	public int Count { get; }

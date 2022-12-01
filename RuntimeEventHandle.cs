@@ -1,6 +1,6 @@
 internal struct RuntimeEventHandle // TypeDefIndex: 8
 {
-	private IntPtr value; 
+	private IntPtr value;
 
 	public IntPtr Value { get; }
 

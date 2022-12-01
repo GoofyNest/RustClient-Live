@@ -1,8 +1,8 @@
 public sealed class Light : Behaviour // TypeDefIndex: 3409
 {
-	private int m_BakedIndex; 
+	private int m_BakedIndex;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public LightType type { get; set; }
 	public float spotAngle { get; }
 	public Color color { get; set; }
@@ -42,25 +42,25 @@ public sealed class Light : Behaviour // TypeDefIndex: 3409
 
 	public void set_cullingMask(int value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public LightShadows get_shadows() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_shadows(LightShadows value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void set_shadowStrength(float value) { }
 
 	public void AddCommandBuffer(LightEvent evt, CommandBuffer buffer) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void AddCommandBuffer(LightEvent evt, CommandBuffer buffer, ShadowMapPass shadowPassMask) { }
 
 	public void RemoveCommandBuffer(LightEvent evt, CommandBuffer buffer) { }
 
 	public void RemoveCommandBuffers(LightEvent evt) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public CommandBuffer[] GetCommandBuffers(LightEvent evt) { }
 
 	private void get_color_Injected(out Color ret) { }

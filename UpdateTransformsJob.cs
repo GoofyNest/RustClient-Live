@@ -1,11 +1,11 @@
-internal struct UpdateTransformsJob : IJobParallelForTransform // TypeDefIndex: 7333
+internal struct UpdateTransformsJob : IJobParallelForTransform // TypeDefIndex: 7335
 {
-	[ReadOnlyAttribute] 
-	[NativeMatchesParallelForLengthAttribute] 
-	public NativeArray<BoneData> Data; 
-	[ReadOnlyAttribute] 
-	[NativeMatchesParallelForLengthAttribute] 
-	public NativeArray<BoneState> State; 
+	[ReadOnlyAttribute]
+	[NativeMatchesParallelForLengthAttribute]
+	public NativeArray<BoneData> Data;
+	[ReadOnlyAttribute]
+	[NativeMatchesParallelForLengthAttribute]
+	public NativeArray<BoneState> State;
 
 
 	public void Execute(int index, TransformAccess transform) { }

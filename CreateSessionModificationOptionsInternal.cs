@@ -1,13 +1,13 @@
-internal struct CreateSessionModificationOptionsInternal : ISettable<CreateSessionModificationOptions>, IDisposable // TypeDefIndex: 8477
+internal struct CreateSessionModificationOptionsInternal : ISettable<CreateSessionModificationOptions>, IDisposable // TypeDefIndex: 8479
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionName; 
-	private IntPtr m_BucketId; 
-	private uint m_MaxPlayers; 
-	private IntPtr m_LocalUserId; 
-	private int m_PresenceEnabled; 
-	private IntPtr m_SessionId; 
-	private int m_SanctionsEnabled; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionName;
+	private IntPtr m_BucketId;
+	private uint m_MaxPlayers;
+	private IntPtr m_LocalUserId;
+	private int m_PresenceEnabled;
+	private IntPtr m_SessionId;
+	private int m_SanctionsEnabled;
 
 	public Utf8String SessionName { set; }
 	public Utf8String BucketId { set; }

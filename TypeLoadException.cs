@@ -1,9 +1,9 @@
 public class TypeLoadException : SystemException, ISerializable // TypeDefIndex: 325
 {
-	private string ClassName; 
-	private string AssemblyName; 
-	private string MessageArg; 
-	internal int ResourceId; 
+	private string ClassName;
+	private string AssemblyName;
+	private string MessageArg;
+	internal int ResourceId;
 
 	public override string Message { get; }
 

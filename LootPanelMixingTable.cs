@@ -1,12 +1,12 @@
-public class LootPanelMixingTable : LootPanel, IInventoryChanged // TypeDefIndex: 12798
+public class LootPanelMixingTable : LootPanel, IInventoryChanged // TypeDefIndex: 12812
 {
-	public GameObject controlsOn; 
-	public GameObject controlsOff; 
-	public Button StartMixingButton; 
-	public InfoBar ProgressBar; 
-	public GameObject recipeItemPrefab; 
-	public RectTransform recipeContentRect; 
-	private List<Item> inventoryItems; 
+	public GameObject controlsOn;
+	public GameObject controlsOff;
+	public Button StartMixingButton;
+	public InfoBar ProgressBar;
+	public GameObject recipeItemPrefab;
+	public RectTransform recipeContentRect;
+	private List<Item> inventoryItems;
 
 
 	private void OnEnable() { }

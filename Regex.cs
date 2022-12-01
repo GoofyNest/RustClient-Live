@@ -1,25 +1,25 @@
 public class Regex : ISerializable // TypeDefIndex: 2600
 {
-	protected internal string pattern; 
-	protected internal RegexRunnerFactory factory; 
-	protected internal RegexOptions roptions; 
-	private static readonly TimeSpan MaximumMatchTimeout; 
-	public static readonly TimeSpan InfiniteMatchTimeout; 
-	[OptionalFieldAttribute] 
-	protected internal TimeSpan internalMatchTimeout; 
+	protected internal string pattern;
+	protected internal RegexRunnerFactory factory;
+	protected internal RegexOptions roptions;
+	private static readonly TimeSpan MaximumMatchTimeout;
+	public static readonly TimeSpan InfiniteMatchTimeout;
+	[OptionalFieldAttribute]
+	protected internal TimeSpan internalMatchTimeout;
 	private const string DefaultMatchTimeout_ConfigKeyName = "REGEX_DEFAULT_MATCH_TIMEOUT";
-	internal static readonly TimeSpan FallbackDefaultMatchTimeout; 
-	internal static readonly TimeSpan DefaultMatchTimeout; 
-	protected internal Hashtable caps; 
-	protected internal Hashtable capnames; 
-	protected internal string[] capslist; 
-	protected internal int capsize; 
-	internal ExclusiveReference runnerref; 
-	internal SharedReference replref; 
-	internal RegexCode code; 
-	internal bool refsInitialized; 
-	internal static LinkedList<CachedCodeEntry> livecode; 
-	internal static int cacheSize; 
+	internal static readonly TimeSpan FallbackDefaultMatchTimeout;
+	internal static readonly TimeSpan DefaultMatchTimeout;
+	protected internal Hashtable caps;
+	protected internal Hashtable capnames;
+	protected internal string[] capslist;
+	protected internal int capsize;
+	internal ExclusiveReference runnerref;
+	internal SharedReference replref;
+	internal RegexCode code;
+	internal bool refsInitialized;
+	internal static LinkedList<CachedCodeEntry> livecode;
+	internal static int cacheSize;
 	internal const int MaxOptionShift = 10;
 
 	public RegexOptions Options { get; }

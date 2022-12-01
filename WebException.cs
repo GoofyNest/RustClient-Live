@@ -3,9 +3,9 @@ public class WebException : InvalidOperationException, ISerializable // TypeDefI
 
 [Serializable]
 public class WebException : InvalidOperationException, ISerializable
-	private WebExceptionStatus m_Status; 
-	private WebResponse m_Response; 
-	private WebExceptionInternalStatus m_InternalStatus; 
+	private WebExceptionStatus m_Status;
+	private WebResponse m_Response;
+	private WebExceptionInternalStatus m_InternalStatus;
 
 	public WebExceptionStatus Status { get; }
 	public WebResponse Response { get; }

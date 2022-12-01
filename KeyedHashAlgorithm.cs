@@ -1,6 +1,6 @@
 public abstract class KeyedHashAlgorithm : HashAlgorithm // TypeDefIndex: 968
 {
-	protected byte[] KeyValue; 
+	protected byte[] KeyValue;
 
 	public virtual byte[] Key { get; set; }
 

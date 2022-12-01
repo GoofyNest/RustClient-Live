@@ -1,7 +1,7 @@
-internal struct PrePresentOptionsInternal : IGettable<PrePresentOptions>, ISettable<PrePresentOptions>, IDisposable // TypeDefIndex: 8367
+internal struct PrePresentOptionsInternal : IGettable<PrePresentOptions>, ISettable<PrePresentOptions>, IDisposable // TypeDefIndex: 8369
 {
-	private int m_ApiVersion; 
-	private IntPtr m_PlatformSpecificData; 
+	private int m_ApiVersion;
+	private IntPtr m_PlatformSpecificData;
 
 	public IntPtr PlatformSpecificData { get; set; }
 

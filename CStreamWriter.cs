@@ -1,6 +1,6 @@
 internal class CStreamWriter : StreamWriter // TypeDefIndex: 684
 {
-	private TermInfoDriver driver; 
+	private TermInfoDriver driver;
 
 
 	public void .ctor(Stream stream, Encoding encoding, bool leaveOpen) { }

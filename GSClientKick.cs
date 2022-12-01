@@ -1,8 +1,8 @@
-internal struct GSClientKick_t : ICallbackData // TypeDefIndex: 5498
+internal struct GSClientKick_t : ICallbackData // TypeDefIndex: 5500
 {
-	internal ulong SteamID; 
-	internal DenyReason DenyReason; 
-	public static int _datasize; 
+	internal ulong SteamID;
+	internal DenyReason DenyReason;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

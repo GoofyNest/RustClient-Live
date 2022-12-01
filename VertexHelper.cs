@@ -1,17 +1,17 @@
 public class VertexHelper : IDisposable // TypeDefIndex: 5035
 {
-	private List<Vector3> m_Positions; 
-	private List<Color32> m_Colors; 
-	private List<Vector2> m_Uv0S; 
-	private List<Vector2> m_Uv1S; 
-	private List<Vector2> m_Uv2S; 
-	private List<Vector2> m_Uv3S; 
-	private List<Vector3> m_Normals; 
-	private List<Vector4> m_Tangents; 
-	private List<int> m_Indices; 
-	private static readonly Vector4 s_DefaultTangent; 
-	private static readonly Vector3 s_DefaultNormal; 
-	private bool m_ListsInitalized; 
+	private List<Vector3> m_Positions;
+	private List<Color32> m_Colors;
+	private List<Vector2> m_Uv0S;
+	private List<Vector2> m_Uv1S;
+	private List<Vector2> m_Uv2S;
+	private List<Vector2> m_Uv3S;
+	private List<Vector3> m_Normals;
+	private List<Vector4> m_Tangents;
+	private List<int> m_Indices;
+	private static readonly Vector4 s_DefaultTangent;
+	private static readonly Vector3 s_DefaultNormal;
+	private bool m_ListsInitalized;
 
 	public int currentVertCount { get; }
 	public int currentIndexCount { get; }

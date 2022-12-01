@@ -1,14 +1,14 @@
-public class ViewmodelSway : MonoBehaviour // TypeDefIndex: 13253
+public class ViewmodelSway : MonoBehaviour // TypeDefIndex: 13268
 {
-	public float positionalSwaySpeed; 
-	public float positionalSwayAmount; 
-	public float rotationSwaySpeed; 
-	public float rotationSwayAmount; 
-	internal Vector3 lastPosition; 
-	internal Vector3 smoothedVelocity; 
-	internal Vector3 lastRotation; 
-	internal Vector3 smoothedRotation; 
-	public float rotateAmountTest; 
+	public float positionalSwaySpeed;
+	public float positionalSwayAmount;
+	public float rotationSwaySpeed;
+	public float rotationSwayAmount;
+	internal Vector3 lastPosition;
+	internal Vector3 smoothedVelocity;
+	internal Vector3 lastRotation;
+	internal Vector3 smoothedRotation;
+	public float rotateAmountTest;
 
 
 	public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }

@@ -1,7 +1,7 @@
-internal struct LobbyModificationRemoveAttributeOptionsInternal : ISettable<LobbyModificationRemoveAttributeOptions>, IDisposable // TypeDefIndex: 9171
+internal struct LobbyModificationRemoveAttributeOptionsInternal : ISettable<LobbyModificationRemoveAttributeOptions>, IDisposable // TypeDefIndex: 9173
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Key; 
+	private int m_ApiVersion;
+	private IntPtr m_Key;
 
 	public Utf8String Key { set; }
 

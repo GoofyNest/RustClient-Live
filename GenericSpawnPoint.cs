@@ -1,12 +1,12 @@
-public class GenericSpawnPoint : BaseSpawnPoint // TypeDefIndex: 11742
+public class GenericSpawnPoint : BaseSpawnPoint // TypeDefIndex: 11749
 {
-	public bool dropToGround; 
-	public bool randomRot; 
-	[RangeAttribute] 
-	public float randomRotSnapDegrees; 
-	public GameObjectRef spawnEffect; 
-	public UnityEvent OnObjectSpawnedEvent; 
-	public UnityEvent OnObjectRetiredEvent; 
+	public bool dropToGround;
+	public bool randomRot;
+	[RangeAttribute]
+	public float randomRotSnapDegrees;
+	public GameObjectRef spawnEffect;
+	public UnityEvent OnObjectSpawnedEvent;
+	public UnityEvent OnObjectRetiredEvent;
 
 
 	public Quaternion GetRandomRotation() { }

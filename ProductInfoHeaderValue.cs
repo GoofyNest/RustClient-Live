@@ -1,9 +1,9 @@
-public class ProductInfoHeaderValue : ICloneable // TypeDefIndex: 5809
+public class ProductInfoHeaderValue : ICloneable // TypeDefIndex: 5811
 {
-	[CompilerGeneratedAttribute] 
-	private string <Comment>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductHeaderValue <Product>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Comment>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductHeaderValue <Product>k__BackingField;
 
 	public string Comment { get; set; }
 	public ProductHeaderValue Product { get; set; }
@@ -13,16 +13,16 @@ public class ProductInfoHeaderValue : ICloneable // TypeDefIndex: 5809
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Comment() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Comment(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductHeaderValue get_Product() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Product(ProductHeaderValue value) { }
 
 	private object System.ICloneable.Clone() { }

@@ -1,12 +1,12 @@
 internal class ReflectionMethodsCache // TypeDefIndex: 5028
 {
-	public ReflectionMethodsCache.Raycast3DCallback raycast3D; 
-	public ReflectionMethodsCache.RaycastAllCallback raycast3DAll; 
-	public ReflectionMethodsCache.Raycast2DCallback raycast2D; 
-	public ReflectionMethodsCache.GetRayIntersectionAllCallback getRayIntersectionAll; 
-	public ReflectionMethodsCache.GetRayIntersectionAllNonAllocCallback getRayIntersectionAllNonAlloc; 
-	public ReflectionMethodsCache.GetRaycastNonAllocCallback getRaycastNonAlloc; 
-	private static ReflectionMethodsCache s_ReflectionMethodsCache; 
+	public ReflectionMethodsCache.Raycast3DCallback raycast3D;
+	public ReflectionMethodsCache.RaycastAllCallback raycast3DAll;
+	public ReflectionMethodsCache.Raycast2DCallback raycast2D;
+	public ReflectionMethodsCache.GetRayIntersectionAllCallback getRayIntersectionAll;
+	public ReflectionMethodsCache.GetRayIntersectionAllNonAllocCallback getRayIntersectionAllNonAlloc;
+	public ReflectionMethodsCache.GetRaycastNonAllocCallback getRaycastNonAlloc;
+	private static ReflectionMethodsCache s_ReflectionMethodsCache;
 
 	public static ReflectionMethodsCache Singleton { get; }
 

@@ -1,41 +1,41 @@
-public struct LogPlayerTakeDamageOptions // TypeDefIndex: 9779
+public struct LogPlayerTakeDamageOptions // TypeDefIndex: 9781
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <VictimPlayerHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Vec3f> <VictimPlayerPosition>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Quat> <VictimPlayerViewRotation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <AttackerPlayerHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Vec3f> <AttackerPlayerPosition>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Quat> <AttackerPlayerViewRotation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsHitscanAttack>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <HasLineOfSight>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsCriticalHit>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <HitBoneId_DEPRECATED>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <DamageTaken>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <HealthRemaining>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonPlayerTakeDamageSource <DamageSource>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonPlayerTakeDamageType <DamageType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonPlayerTakeDamageResult <DamageResult>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<LogPlayerUseWeaponData> <PlayerUseWeaponData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <TimeSincePlayerUseWeaponMs>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<Vec3f> <DamagePosition>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <VictimPlayerHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Vec3f> <VictimPlayerPosition>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Quat> <VictimPlayerViewRotation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <AttackerPlayerHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Vec3f> <AttackerPlayerPosition>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Quat> <AttackerPlayerViewRotation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsHitscanAttack>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <HasLineOfSight>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsCriticalHit>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <HitBoneId_DEPRECATED>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <DamageTaken>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <HealthRemaining>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonPlayerTakeDamageSource <DamageSource>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonPlayerTakeDamageType <DamageType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonPlayerTakeDamageResult <DamageResult>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<LogPlayerUseWeaponData> <PlayerUseWeaponData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <TimeSincePlayerUseWeaponMs>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<Vec3f> <DamagePosition>k__BackingField;
 
 	public IntPtr VictimPlayerHandle { get; set; }
 	public Nullable<Vec3f> VictimPlayerPosition { get; set; }
@@ -57,112 +57,112 @@ public struct LogPlayerTakeDamageOptions // TypeDefIndex: 9779
 	public Nullable<Vec3f> DamagePosition { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_VictimPlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_VictimPlayerHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Vec3f> get_VictimPlayerPosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_VictimPlayerPosition(Nullable<Vec3f> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Quat> get_VictimPlayerViewRotation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_VictimPlayerViewRotation(Nullable<Quat> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_AttackerPlayerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AttackerPlayerHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Vec3f> get_AttackerPlayerPosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AttackerPlayerPosition(Nullable<Vec3f> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Quat> get_AttackerPlayerViewRotation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AttackerPlayerViewRotation(Nullable<Quat> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsHitscanAttack() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsHitscanAttack(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_HasLineOfSight() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HasLineOfSight(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsCriticalHit() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsCriticalHit(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_HitBoneId_DEPRECATED() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HitBoneId_DEPRECATED(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_DamageTaken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DamageTaken(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_HealthRemaining() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HealthRemaining(float value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonPlayerTakeDamageSource get_DamageSource() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DamageSource(AntiCheatCommonPlayerTakeDamageSource value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonPlayerTakeDamageType get_DamageType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DamageType(AntiCheatCommonPlayerTakeDamageType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonPlayerTakeDamageResult get_DamageResult() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DamageResult(AntiCheatCommonPlayerTakeDamageResult value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<LogPlayerUseWeaponData> get_PlayerUseWeaponData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayerUseWeaponData(Nullable<LogPlayerUseWeaponData> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_TimeSincePlayerUseWeaponMs() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TimeSincePlayerUseWeaponMs(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Vec3f> get_DamagePosition() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DamagePosition(Nullable<Vec3f> value) { }
 
 }

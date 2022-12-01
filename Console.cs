@@ -13,8 +13,8 @@ public sealed class ConsoleCancelEventHandler : MulticastDelegate // TypeDefInde
 
 public sealed class ConsoleCancelEventArgs : EventArgs // TypeDefIndex: 187
 {
-	private ConsoleSpecialKey _type; 
-	private bool _cancel; 
+	private ConsoleSpecialKey _type;
+	private bool _cancel;
 
 	public bool Cancel { get; }
 
@@ -29,7 +29,7 @@ public sealed class ConsoleCancelEventArgs : EventArgs // TypeDefIndex: 187
 
 public enum ConsoleColor // TypeDefIndex: 188
 {
-	public int value__; 
+	public int value__;
 	public const ConsoleColor Black = 0;
 	public const ConsoleColor DarkBlue = 1;
 	public const ConsoleColor DarkGreen = 2;
@@ -51,7 +51,7 @@ public enum ConsoleColor // TypeDefIndex: 188
 
 public enum ConsoleKey // TypeDefIndex: 189
 {
-	public int value__; 
+	public int value__;
 	public const ConsoleKey Backspace = 8;
 	public const ConsoleKey Tab = 9;
 	public const ConsoleKey Clear = 12;
@@ -201,9 +201,9 @@ public enum ConsoleKey // TypeDefIndex: 189
 
 public struct ConsoleKeyInfo // TypeDefIndex: 190
 {
-	private char _keyChar; 
-	private ConsoleKey _key; 
-	private ConsoleModifiers _mods; 
+	private char _keyChar;
+	private ConsoleKey _key;
+	private ConsoleModifiers _mods;
 
 	public char KeyChar { get; }
 	public ConsoleKey Key { get; }
@@ -225,7 +225,7 @@ public struct ConsoleKeyInfo // TypeDefIndex: 190
 
 public enum ConsoleModifiers // TypeDefIndex: 191
 {
-	public int value__; 
+	public int value__;
 	public const ConsoleModifiers Alt = 1;
 	public const ConsoleModifiers Shift = 2;
 	public const ConsoleModifiers Control = 4;
@@ -234,7 +234,7 @@ public enum ConsoleModifiers // TypeDefIndex: 191
 
 public enum ConsoleSpecialKey // TypeDefIndex: 192
 {
-	public int value__; 
+	public int value__;
 	public const ConsoleSpecialKey ControlC = 0;
 	public const ConsoleSpecialKey ControlBreak = 1;
 
@@ -242,13 +242,13 @@ public enum ConsoleSpecialKey // TypeDefIndex: 192
 
 public static class Console // TypeDefIndex: 350
 {
-	internal static TextWriter stdout; 
-	private static TextWriter stderr; 
-	private static TextReader stdin; 
-	private static Encoding inputEncoding; 
-	private static Encoding outputEncoding; 
-	private static ConsoleCancelEventHandler cancel_event; 
-	private static readonly Console.InternalCancelHandler cancel_handler; 
+	internal static TextWriter stdout;
+	private static TextWriter stderr;
+	private static TextReader stdin;
+	private static Encoding inputEncoding;
+	private static Encoding outputEncoding;
+	private static ConsoleCancelEventHandler cancel_event;
+	private static readonly Console.InternalCancelHandler cancel_handler;
 
 	public static TextWriter Error { get; }
 	public static TextWriter Out { get; }
@@ -320,8 +320,8 @@ public static class Console // TypeDefIndex: 350
 
 private class Console.WindowsConsole // TypeDefIndex: 351
 {
-	public static bool ctrlHandlerAdded; 
-	private static Console.WindowsConsole.WindowsCancelHandler cancelHandler; 
+	public static bool ctrlHandlerAdded;
+	private static Console.WindowsConsole.WindowsCancelHandler cancelHandler;
 
 
 	private static extern int GetConsoleCP() { }
@@ -366,9 +366,9 @@ private sealed class Console.InternalCancelHandler : MulticastDelegate // TypeDe
 
 internal static class ConsoleDriver // TypeDefIndex: 354
 {
-	internal static IConsoleDriver driver; 
-	private static bool is_console; 
-	private static bool called_isatty; 
+	internal static IConsoleDriver driver;
+	private static bool is_console;
+	private static bool called_isatty;
 
 	public static ConsoleColor BackgroundColor { get; set; }
 	public static int BufferWidth { get; }
@@ -421,36 +421,36 @@ internal static class ConsoleDriver // TypeDefIndex: 354
 
 internal struct ConsoleScreenBufferInfo // TypeDefIndex: 426
 {
-	public Coord Size; 
-	public Coord CursorPosition; 
-	public short Attribute; 
-	public SmallRect Window; 
-	public Coord MaxWindowSize; 
+	public Coord Size;
+	public Coord CursorPosition;
+	public short Attribute;
+	public SmallRect Window;
+	public Coord MaxWindowSize;
 
 }
 
-public class ConsoleSystem // TypeDefIndex: 6916
+public class ConsoleSystem // TypeDefIndex: 6918
 {
 
 public class ConsoleSystem
-	public static bool HasChanges; 
-	public static Func<bool> ClientCanRunAdminCommands; 
-	public static Func<string, bool> OnSendToServer; 
-	[CompilerGeneratedAttribute] 
-	private static Action<string, string> OnReplicatedVarChanged; 
-	public static string LastError; 
-	public static ConsoleSystem.Arg CurrentArgs; 
-	private static List<string> ignoredCommands; 
+	public static bool HasChanges;
+	public static Func<bool> ClientCanRunAdminCommands;
+	public static Func<string, bool> OnSendToServer;
+	[CompilerGeneratedAttribute]
+	private static Action<string, string> OnReplicatedVarChanged;
+	public static string LastError;
+	public static ConsoleSystem.Arg CurrentArgs;
+	private static List<string> ignoredCommands;
 
 
 	public static void UpdateValuesFromCommandLine() { }
 
 	internal static bool SendToServer(string command) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_OnReplicatedVarChanged(Action<string, string> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_OnReplicatedVarChanged(Action<string, string> value) { }
 
 	public static void RunFile(ConsoleSystem.Option options, string strFile) { }
@@ -469,14 +469,14 @@ public class ConsoleSystem
 
 }
 
-public class ConsoleSystem.Arg // TypeDefIndex: 6917
+public class ConsoleSystem.Arg // TypeDefIndex: 6919
 {
-	public ConsoleSystem.Option Option; 
-	public ConsoleSystem.Command cmd; 
-	public string FullString; 
-	public string[] Args; 
-	public bool Invalid; 
-	public string Reply; 
+	public ConsoleSystem.Option Option;
+	public ConsoleSystem.Command cmd;
+	public string FullString;
+	public string[] Args;
+	public bool Invalid;
+	public string Reply;
 
 	public bool IsClientside { get; }
 	public bool IsServerside { get; }
@@ -542,38 +542,38 @@ public class ConsoleSystem.Arg // TypeDefIndex: 6917
 
 }
 
-public class ConsoleSystem.Factory : Attribute // TypeDefIndex: 6918
+public class ConsoleSystem.Factory : Attribute // TypeDefIndex: 6920
 {
-	public string Name; 
+	public string Name;
 
 
 	public void .ctor(string systemName) { }
 
 }
 
-public class ConsoleSystem.Command // TypeDefIndex: 6919
+public class ConsoleSystem.Command // TypeDefIndex: 6921
 {
-	public string Name; 
-	public string Parent; 
-	public string FullName; 
-	public Func<string> GetOveride; 
-	public Action<string> SetOveride; 
-	public Action<ConsoleSystem.Arg> Call; 
-	public bool Variable; 
-	public string Default; 
-	public bool Saved; 
-	public bool ServerAdmin; 
-	public bool ServerUser; 
-	public bool Replicated; 
-	public bool ShowInAdminUI; 
-	public bool ClientAdmin; 
-	public bool Client; 
-	public bool ClientInfo; 
-	public bool AllowRunFromServer; 
-	public string Description; 
-	public string Arguments; 
-	[CompilerGeneratedAttribute] 
-	private Action<ConsoleSystem.Command> OnValueChanged; 
+	public string Name;
+	public string Parent;
+	public string FullName;
+	public Func<string> GetOveride;
+	public Action<string> SetOveride;
+	public Action<ConsoleSystem.Arg> Call;
+	public bool Variable;
+	public string Default;
+	public bool Saved;
+	public bool ServerAdmin;
+	public bool ServerUser;
+	public bool Replicated;
+	public bool ShowInAdminUI;
+	public bool ClientAdmin;
+	public bool Client;
+	public bool ClientInfo;
+	public bool AllowRunFromServer;
+	public string Description;
+	public string Arguments;
+	[CompilerGeneratedAttribute]
+	private Action<ConsoleSystem.Command> OnValueChanged;
 
 	public bool Server { get; }
 	public string String { get; }
@@ -585,10 +585,10 @@ public class ConsoleSystem.Command // TypeDefIndex: 6919
 
 	public bool get_Server() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnValueChanged(Action<ConsoleSystem.Command> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnValueChanged(Action<ConsoleSystem.Command> value) { }
 
 	public void .ctor() { }
@@ -615,12 +615,12 @@ public class ConsoleSystem.Command // TypeDefIndex: 6919
 
 }
 
-public static class ConsoleSystem.Index // TypeDefIndex: 6922
+public static class ConsoleSystem.Index // TypeDefIndex: 6924
 {
-	private static readonly Memoized<string, string> WithGlobal; 
-	private static readonly Memoized<string, string> WithoutGlobal; 
-	[CompilerGeneratedAttribute] 
-	private static ConsoleSystem.Command[] <All>k__BackingField; 
+	private static readonly Memoized<string, string> WithGlobal;
+	private static readonly Memoized<string, string> WithoutGlobal;
+	[CompilerGeneratedAttribute]
+	private static ConsoleSystem.Command[] <All>k__BackingField;
 
 	public static ConsoleSystem.Command[] All { get; set; }
 
@@ -629,21 +629,21 @@ public static class ConsoleSystem.Index // TypeDefIndex: 6922
 
 	public static void Reset() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static ConsoleSystem.Command[] get_All() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_All(ConsoleSystem.Command[] value) { }
 
 	private static void .cctor() { }
 
 }
 
-public static class ConsoleSystem.Index.Server // TypeDefIndex: 6923
+public static class ConsoleSystem.Index.Server // TypeDefIndex: 6925
 {
-	public static Dictionary<string, ConsoleSystem.Command> Dict; 
-	public static Dictionary<string, ConsoleSystem.Command> GlobalDict; 
-	public static List<ConsoleSystem.Command> Replicated; 
+	public static Dictionary<string, ConsoleSystem.Command> Dict;
+	public static Dictionary<string, ConsoleSystem.Command> GlobalDict;
+	public static List<ConsoleSystem.Command> Replicated;
 
 
 	public static ConsoleSystem.Command Find(string strName) { }
@@ -652,10 +652,10 @@ public static class ConsoleSystem.Index.Server // TypeDefIndex: 6923
 
 }
 
-public static class ConsoleSystem.Index.Client // TypeDefIndex: 6924
+public static class ConsoleSystem.Index.Client // TypeDefIndex: 6926
 {
-	public static Dictionary<string, ConsoleSystem.Command> Dict; 
-	public static Dictionary<string, ConsoleSystem.Command> GlobalDict; 
+	public static Dictionary<string, ConsoleSystem.Command> Dict;
+	public static Dictionary<string, ConsoleSystem.Command> GlobalDict;
 
 
 	public static ConsoleSystem.Command Find(string strName) { }
@@ -664,11 +664,11 @@ public static class ConsoleSystem.Index.Client // TypeDefIndex: 6924
 
 }
 
-private sealed class ConsoleSystem.Index.<>c // TypeDefIndex: 6925
+private sealed class ConsoleSystem.Index.<>c // TypeDefIndex: 6927
 {
-	public static readonly ConsoleSystem.Index.<>c <>9; 
-	public static Action<ConsoleSystem.Command> <>9__4_1; 
-	public static Action<string, bool> <>9__4_0; 
+	public static readonly ConsoleSystem.Index.<>c <>9;
+	public static Action<ConsoleSystem.Command> <>9__4_1;
+	public static Action<string, bool> <>9__4_0;
 
 
 	private static void .cctor() { }
@@ -685,24 +685,24 @@ private sealed class ConsoleSystem.Index.<>c // TypeDefIndex: 6925
 
 }
 
-public struct ConsoleSystem.Option // TypeDefIndex: 6926
+public struct ConsoleSystem.Option // TypeDefIndex: 6928
 {
-	[CompilerGeneratedAttribute] 
-	private bool <IsServer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsClient>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <ForwardtoServerOnMissing>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PrintOutput>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsUnrestricted>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <FromRcon>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsFromServer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Connection <Connection>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <IsServer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsClient>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <ForwardtoServerOnMissing>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PrintOutput>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsUnrestricted>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <FromRcon>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsFromServer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Connection <Connection>k__BackingField;
 
 	public static ConsoleSystem.Option Unrestricted { get; }
 	public static ConsoleSystem.Option Client { get; }
@@ -723,52 +723,52 @@ public struct ConsoleSystem.Option // TypeDefIndex: 6926
 
 	public static ConsoleSystem.Option get_Server() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsServer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsServer(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsClient() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsClient(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_ForwardtoServerOnMissing() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ForwardtoServerOnMissing(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PrintOutput() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PrintOutput(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsUnrestricted() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsUnrestricted(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_FromRcon() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FromRcon(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsFromServer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsFromServer(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Connection get_Connection() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Connection(Connection value) { }
 
 	public ConsoleSystem.Option Quiet() { }
@@ -779,11 +779,11 @@ public struct ConsoleSystem.Option // TypeDefIndex: 6926
 
 }
 
-private sealed class ConsoleSystem.<>c // TypeDefIndex: 6927
+private sealed class ConsoleSystem.<>c // TypeDefIndex: 6929
 {
-	public static readonly ConsoleSystem.<>c <>9; 
-	public static Func<ConsoleSystem.Command, bool> <>9__22_0; 
-	public static Func<ConsoleSystem.Command, bool> <>9__22_1; 
+	public static readonly ConsoleSystem.<>c <>9;
+	public static Func<ConsoleSystem.Command, bool> <>9__22_0;
+	public static Func<ConsoleSystem.Command, bool> <>9__22_1;
 
 
 	private static void .cctor() { }
@@ -796,32 +796,32 @@ private sealed class ConsoleSystem.<>c // TypeDefIndex: 6927
 
 }
 
-public class ConsoleVar : Attribute // TypeDefIndex: 6928
+public class ConsoleVar : Attribute // TypeDefIndex: 6930
 {
-	public string Name; 
-	public bool ClientAdmin; 
-	public bool ServerAdmin; 
-	public bool ServerUser; 
-	public bool Saved; 
-	public string Help; 
-	public bool ClientInfo; 
-	public bool Replicated; 
-	public bool Clientside; 
-	public bool Serverside; 
-	public bool EditorOnly; 
-	public bool AllowRunFromServer; 
-	public string Default; 
-	public string[] PreprocessorConditions; 
-	public bool ShowInAdminUI; 
+	public string Name;
+	public bool ClientAdmin;
+	public bool ServerAdmin;
+	public bool ServerUser;
+	public bool Saved;
+	public string Help;
+	public bool ClientInfo;
+	public bool Replicated;
+	public bool Clientside;
+	public bool Serverside;
+	public bool EditorOnly;
+	public bool AllowRunFromServer;
+	public string Default;
+	public string[] PreprocessorConditions;
+	public bool ShowInAdminUI;
 
 
 	public void .ctor() { }
 
 }
 
-public class ConsoleGen // TypeDefIndex: 10013
+public class ConsoleGen // TypeDefIndex: 10015
 {
-	public static ConsoleSystem.Command[] All; 
+	public static ConsoleSystem.Command[] All;
 
 
 	public void .ctor() { }
@@ -830,9 +830,9 @@ public class ConsoleGen // TypeDefIndex: 10013
 
 }
 
-private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
+private sealed class ConsoleGen.<>c // TypeDefIndex: 10016
 {
-	public static readonly ConsoleGen.<>c <>9; 
+	public static readonly ConsoleGen.<>c <>9;
 
 
 	private static void .cctor() { }
@@ -1067,6 +1067,10 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 
 	internal void <.cctor>
 
+	internal string <.cctor>
+
+	internal void <.cctor>
+
 	internal void <.cctor>
 
 	internal void <.cctor>
@@ -1684,6 +1688,10 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 	internal void <.cctor>
 
 	internal void <.cctor>
+
+	internal void <.cctor>
+
+	internal string <.cctor>
 
 	internal void <.cctor>
 
@@ -1705,6 +1713,10 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 
 	internal void <.cctor>
 
+	internal string <.cctor>
+
+	internal void <.cctor>
+
 	internal void <.cctor>
 
 	internal string <.cctor>
@@ -2912,6 +2924,10 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 	internal void <.cctor>
 
 	internal string <.cctor>
+
+	internal void <.cctor>
+
+	internal void <.cctor>
 
 	internal void <.cctor>
 
@@ -2919,13 +2935,21 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 
 	internal void <.cctor>
 
+	internal string <.cctor>
+
+	internal void <.cctor>
+
 	internal void <.cctor>
 
+	internal string <.cctor>
+
 	internal void <.cctor>
 
 	internal string <.cctor>
 
 	internal void <.cctor>
+
+	internal string <.cctor>
 
 	internal void <.cctor>
 
@@ -2973,6 +2997,8 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 
 	internal void <.cctor>
 
+	internal void <.cctor>
+
 	internal string <.cctor>
 
 	internal void <.cctor>
@@ -2980,6 +3006,8 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 	internal string <.cctor>
 
 	internal void <.cctor>
+
+	internal string <.cctor>
 
 	internal void <.cctor>
 
@@ -3006,6 +3034,10 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 	internal void <.cctor>
 
 	internal void <.cctor>
+
+	internal void <.cctor>
+
+	internal string <.cctor>
 
 	internal void <.cctor>
 
@@ -3171,7 +3203,7 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10014
 
 }
 
-public static class ConsoleNetwork // TypeDefIndex: 11104
+public static class ConsoleNetwork // TypeDefIndex: 11110
 {
 
 	internal static void Init() { }
@@ -3184,24 +3216,24 @@ public static class ConsoleNetwork // TypeDefIndex: 11104
 
 }
 
-public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12590
+public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12603
 {
-	public RustText text; 
-	public InputField outputField; 
-	public InputField inputField; 
-	public GameObject AutocompleteDropDown; 
-	public GameObject ItemTemplate; 
-	public Color errorColor; 
-	public Color warningColor; 
-	public Color inputColor; 
-	private TextBuffer buffer; 
-	private TextBuffer history; 
-	private string historyTemp; 
-	private string historyText; 
-	private int historyIndex; 
-	private Button[] autocompleteButtons; 
-	private int autocompleteIndex; 
-	private bool dirty; 
+	public RustText text;
+	public InputField outputField;
+	public InputField inputField;
+	public GameObject AutocompleteDropDown;
+	public GameObject ItemTemplate;
+	public Color errorColor;
+	public Color warningColor;
+	public Color inputColor;
+	private TextBuffer buffer;
+	private TextBuffer history;
+	private string historyTemp;
+	private string historyText;
+	private int historyIndex;
+	private Button[] autocompleteButtons;
+	private int autocompleteIndex;
+	private bool dirty;
 
 
 	protected override void Awake() { }
@@ -3234,7 +3266,7 @@ public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12590
 
 	private void SelectInputField(bool updateAutoComplete = False) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator SetSelected(bool updateAutoComplete = False) { }
 
 	public void ClearContents() { }
@@ -3249,10 +3281,10 @@ public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12590
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12591
+private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12604
 {
-	public Button btn; 
-	public ConsoleUI <>4__this; 
+	public Button btn;
+	public ConsoleUI <>4__this;
 
 
 	public void .ctor() { }
@@ -3261,9 +3293,9 @@ private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12591
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12592
+private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12605
 {
-	public string str; 
+	public string str;
 
 
 	public void .ctor() { }
@@ -3272,52 +3304,52 @@ private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12592
 
 }
 
-private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12593
+private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12606
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ConsoleUI <>4__this; 
-	public bool updateAutoComplete; 
+	private int <>1__state;
+	private object <>2__current;
+	public ConsoleUI <>4__this;
+	public bool updateAutoComplete;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class ConsoleInput // TypeDefIndex: 13469
+public class ConsoleInput // TypeDefIndex: 13485
 {
-	[CompilerGeneratedAttribute] 
-	private Action<string> OnInputText; 
-	public string inputString; 
-	public string[] statusText; 
-	internal float nextUpdate; 
+	[CompilerGeneratedAttribute]
+	private Action<string> OnInputText;
+	public string inputString;
+	public string[] statusText;
+	internal float nextUpdate;
 
 	public bool valid { get; }
 	public int lineWidth { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnInputText(Action<string> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnInputText(Action<string> value) { }
 
 	public bool get_valid() { }
@@ -3340,9 +3372,9 @@ public class ConsoleInput // TypeDefIndex: 13469
 
 }
 
-public class ConsoleWindow // TypeDefIndex: 13470
+public class ConsoleWindow // TypeDefIndex: 13486
 {
-	private TextWriter oldOutput; 
+	private TextWriter oldOutput;
 	private const int STD_INPUT_HANDLE = -10;
 	private const int STD_OUTPUT_HANDLE = -11;
 
@@ -3367,17 +3399,17 @@ public class ConsoleWindow // TypeDefIndex: 13470
 
 }
 
-public class Console : ConsoleSystem // TypeDefIndex: 13682
+public class Console : ConsoleSystem // TypeDefIndex: 13698
 {
-	[ClientVar] 
-	[HelpAttribute] 
-	public static bool erroroverlay; 
+	[ClientVar]
+	[HelpAttribute]
+	public static bool erroroverlay;
 
 
-	[ClientVar] 
+	[ClientVar]
 	public static void clear(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void copy(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }

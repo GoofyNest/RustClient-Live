@@ -1,8 +1,8 @@
-public class MusicZone : MonoBehaviour, IClientComponent // TypeDefIndex: 10739
+public class MusicZone : MonoBehaviour, IClientComponent // TypeDefIndex: 10743
 {
-	public List<MusicTheme> themes; 
-	public float priority; 
-	public bool suppressAutomaticMusic; 
+	public List<MusicTheme> themes;
+	public float priority;
+	public bool suppressAutomaticMusic;
 
 
 	private void OnTriggerEnter(Collider other) { }

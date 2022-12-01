@@ -1,6 +1,6 @@
 public enum LightType // TypeDefIndex: 3415
 {
-	public int value__; 
+	public int value__;
 	public const LightType Spot = 0;
 	public const LightType Directional = 1;
 	public const LightType Point = 2;
@@ -14,7 +14,7 @@ public enum LightType // TypeDefIndex: 3881
 {
 
 public enum LightType
-	public byte value__; 
+	public byte value__;
 	public const LightType Directional = 0;
 	public const LightType Point = 1;
 	public const LightType Spot = 2;

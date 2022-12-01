@@ -1,10 +1,10 @@
-public class Barricade : DecayEntity // TypeDefIndex: 11243
+public class Barricade : DecayEntity // TypeDefIndex: 11249
 {
-	public float reflectDamage; 
-	public GameObjectRef reflectEffect; 
-	public bool canNpcSmash; 
-	public NavMeshModifierVolume NavMeshVolumeAnimals; 
-	public NavMeshModifierVolume NavMeshVolumeHumanoids; 
+	public float reflectDamage;
+	public GameObjectRef reflectEffect;
+	public bool canNpcSmash;
+	public NavMeshModifierVolume NavMeshVolumeAnimals;
+	public NavMeshModifierVolume NavMeshVolumeHumanoids;
 
 
 	public void .ctor() { }

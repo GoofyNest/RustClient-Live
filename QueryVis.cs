@@ -1,11 +1,11 @@
-public class QueryVis : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 10954
+public class QueryVis : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 10960
 {
-	public Collider checkCollider; 
-	private CoverageQueries.Query query; 
-	public CoverageQueries.RadiusSpace coverageRadiusSpace; 
-	public float coverageRadius; 
-	private float nextCPUSampleTime; 
-	private float lastCPUSampleValue; 
+	public Collider checkCollider;
+	private CoverageQueries.Query query;
+	public CoverageQueries.RadiusSpace coverageRadiusSpace;
+	public float coverageRadius;
+	private float nextCPUSampleTime;
+	private float lastCPUSampleValue;
 
 
 	public void OnEnable() { }

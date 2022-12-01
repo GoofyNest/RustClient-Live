@@ -1,7 +1,7 @@
 internal class GlobalJavaObjectRef // TypeDefIndex: 4470
 {
-	private bool m_disposed; 
-	protected IntPtr m_jobject; 
+	private bool m_disposed;
+	protected IntPtr m_jobject;
 
 
 	public void .ctor(IntPtr jobject) { }

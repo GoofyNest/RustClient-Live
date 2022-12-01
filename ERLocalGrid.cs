@@ -1,19 +1,19 @@
-public class ERLocalGrid : ScriptableObject // TypeDefIndex: 7224
+public class ERLocalGrid : ScriptableObject // TypeDefIndex: 7226
 {
-	public int id; 
-	public string name; 
-	public bool gridActive; 
-	public bool gridGUIActive; 
-	public Color gridColor; 
-	public float gridSize; 
-	public float gridRadius; 
-	public float gridRotation; 
-	public Vector3 tl; 
-	public Vector3 bl; 
-	public Vector3 br; 
-	public float xOffset; 
-	public float yOffset; 
-	public Vector3 OOCDQCOOQC; 
+	public int id;
+	public string name;
+	public bool gridActive;
+	public bool gridGUIActive;
+	public Color gridColor;
+	public float gridSize;
+	public float gridRadius;
+	public float gridRotation;
+	public Vector3 tl;
+	public Vector3 bl;
+	public Vector3 br;
+	public float xOffset;
+	public float yOffset;
+	public Vector3 OOCDQCOOQC;
 
 
 	public void Init(ERModularBase scr) { }

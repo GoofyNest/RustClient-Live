@@ -1,13 +1,13 @@
-public class MissionsHUDToDo : BaseMonoBehaviour // TypeDefIndex: 12964
+public class MissionsHUDToDo : BaseMonoBehaviour // TypeDefIndex: 12978
 {
-	public Text text; 
-	public RectTransform checkIcon; 
-	public RectTransform checkBox; 
-	public Color AliveColor; 
-	public Color DeadColor; 
-	public Color HighlightColor; 
-	private int index; 
-	internal bool State; 
+	public Text text;
+	public RectTransform checkIcon;
+	public RectTransform checkBox;
+	public Color AliveColor;
+	public Color DeadColor;
+	public Color HighlightColor;
+	private int index;
+	internal bool State;
 
 
 	public void MissionsUpdated() { }

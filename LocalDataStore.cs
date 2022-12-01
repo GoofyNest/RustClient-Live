@@ -1,7 +1,7 @@
 internal sealed class LocalDataStore // TypeDefIndex: 146
 {
-	private LocalDataStoreElement[] m_DataTable; 
-	private LocalDataStoreMgr m_Manager; 
+	private LocalDataStoreElement[] m_DataTable;
+	private LocalDataStoreMgr m_Manager;
 
 
 	public void .ctor(LocalDataStoreMgr mgr, int InitialCapacity) { }

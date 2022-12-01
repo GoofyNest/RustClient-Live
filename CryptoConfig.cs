@@ -1,6 +1,6 @@
 public class CryptoConfig // TypeDefIndex: 1003
 {
-	[MonoLimitationAttribute] 
+	[MonoLimitationAttribute]
 	public static bool AllowOnlyFipsAlgorithms { get; }
 
 

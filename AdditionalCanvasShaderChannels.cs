@@ -1,6 +1,6 @@
 public enum AdditionalCanvasShaderChannels // TypeDefIndex: 4740
 {
-	public int value__; 
+	public int value__;
 	public const AdditionalCanvasShaderChannels None = 0;
 	public const AdditionalCanvasShaderChannels TexCoord1 = 1;
 	public const AdditionalCanvasShaderChannels TexCoord2 = 2;

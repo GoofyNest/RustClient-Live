@@ -1,9 +1,9 @@
 public sealed class DesignOnlyAttribute : Attribute // TypeDefIndex: 2690
 {
-	private bool isDesignOnly; 
-	public static readonly DesignOnlyAttribute Yes; 
-	public static readonly DesignOnlyAttribute No; 
-	public static readonly DesignOnlyAttribute Default; 
+	private bool isDesignOnly;
+	public static readonly DesignOnlyAttribute Yes;
+	public static readonly DesignOnlyAttribute No;
+	public static readonly DesignOnlyAttribute Default;
 
 	public bool IsDesignOnly { get; }
 

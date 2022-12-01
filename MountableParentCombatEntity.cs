@@ -1,7 +1,7 @@
-public class MountableParentCombatEntity : BaseCombatEntity // TypeDefIndex: 10141
+public class MountableParentCombatEntity : BaseCombatEntity // TypeDefIndex: 10143
 {
-	private Option __menuOption_Menu_Mount; 
-	private BaseMountable mountable; 
+	private Option __menuOption_Menu_Mount;
+	private BaseMountable mountable;
 
 	public override bool HasMenuOptions { get; }
 	private BaseMountable Mountable { get; }
@@ -13,10 +13,10 @@ public class MountableParentCombatEntity : BaseCombatEntity // TypeDefIndex: 101
 
 	private BaseMountable get_Mountable() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Mount(BasePlayer player) { }
 
 	public bool Menu_Mount_ShowIf(BasePlayer player) { }

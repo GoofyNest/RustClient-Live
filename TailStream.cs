@@ -1,9 +1,9 @@
 internal sealed class TailStream : Stream // TypeDefIndex: 970
 {
-	private byte[] _Buffer; 
-	private int _BufferSize; 
-	private int _BufferIndex; 
-	private bool _BufferFull; 
+	private byte[] _Buffer;
+	private int _BufferSize;
+	private int _BufferIndex;
+	private bool _BufferFull;
 
 	public byte[] Buffer { get; }
 	public override bool CanRead { get; }

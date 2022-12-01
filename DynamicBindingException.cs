@@ -1,4 +1,4 @@
-internal class DynamicBindingException : Exception // TypeDefIndex: 8271
+internal class DynamicBindingException : Exception // TypeDefIndex: 8273
 {
 
 	public void .ctor(string bindingName) { }

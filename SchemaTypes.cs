@@ -1,6 +1,6 @@
 internal enum SchemaTypes // TypeDefIndex: 2058
 {
-	public int value__; 
+	public int value__;
 	public const SchemaTypes NotSet = 0;
 	public const SchemaTypes Primitive = 1;
 	public const SchemaTypes Enum = 2;

@@ -1,7 +1,7 @@
 public struct Eyes : IEquatable<Eyes> // TypeDefIndex: 4152
 {
-	private ulong m_DeviceId; 
-	private uint m_FeatureIndex; 
+	private ulong m_DeviceId;
+	private uint m_FeatureIndex;
 
 	internal ulong deviceId { get; }
 	internal uint featureIndex { get; }

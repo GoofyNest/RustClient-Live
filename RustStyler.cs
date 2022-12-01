@@ -1,12 +1,12 @@
-public class RustStyler : MonoBehaviour // TypeDefIndex: 7072
+public class RustStyler : MonoBehaviour // TypeDefIndex: 7074
 {
-	[SerializeField] 
-	protected StyleAsset _styles; 
-	[SerializeField] 
-	protected StyleGroup _group; 
-	public Graphic[] Foreground; 
-	public Graphic[] Background; 
-	public Graphic[] Icon; 
+	[SerializeField]
+	protected StyleAsset _styles;
+	[SerializeField]
+	protected StyleGroup _group;
+	public Graphic[] Foreground;
+	public Graphic[] Background;
+	public Graphic[] Icon;
 
 	public StyleAsset Styles { get; set; }
 	public StyleGroup Group { get; set; }

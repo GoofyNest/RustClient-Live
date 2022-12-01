@@ -1,9 +1,9 @@
-internal struct SubmitItemUpdateResult_t : ICallbackData // TypeDefIndex: 5439
+internal struct SubmitItemUpdateResult_t : ICallbackData // TypeDefIndex: 5441
 {
-	internal Result Result; 
-	internal bool UserNeedsToAcceptWorkshopLegalAgreement; 
-	internal PublishedFileId PublishedFileId; 
-	public static int _datasize; 
+	internal Result Result;
+	internal bool UserNeedsToAcceptWorkshopLegalAgreement;
+	internal PublishedFileId PublishedFileId;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

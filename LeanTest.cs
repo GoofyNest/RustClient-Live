@@ -1,11 +1,11 @@
-public class LeanTest // TypeDefIndex: 5584
+public class LeanTest // TypeDefIndex: 5586
 {
-	public static int expected; 
-	private static int tests; 
-	private static int passes; 
-	public static float timeout; 
-	public static bool timeoutStarted; 
-	public static bool testsFinished; 
+	public static int expected;
+	private static int tests;
+	private static int passes;
+	public static float timeout;
+	public static bool timeoutStarted;
+	public static bool testsFinished;
 
 
 	public static void debug(string name, bool didPass, string failExplaination) { }

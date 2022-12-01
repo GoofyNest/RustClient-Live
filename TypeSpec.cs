@@ -1,12 +1,12 @@
 internal class TypeSpec // TypeDefIndex: 414
 {
-	private TypeIdentifier name; 
-	private string assembly_name; 
-	private List<TypeIdentifier> nested; 
-	private List<TypeSpec> generic_params; 
-	private List<ModifierSpec> modifier_spec; 
-	private bool is_byref; 
-	private string display_fullname; 
+	private TypeIdentifier name;
+	private string assembly_name;
+	private List<TypeIdentifier> nested;
+	private List<TypeSpec> generic_params;
+	private List<ModifierSpec> modifier_spec;
+	private bool is_byref;
+	private string display_fullname;
 
 	internal bool HasModifiers { get; }
 	internal string DisplayFullName { get; }
@@ -44,7 +44,7 @@ internal class TypeSpec // TypeDefIndex: 414
 
 internal enum TypeSpec.DisplayNameFormat // TypeDefIndex: 415
 {
-	public int value__; 
+	public int value__;
 	public const TypeSpec.DisplayNameFormat Default = 0;
 	public const TypeSpec.DisplayNameFormat WANT_ASSEMBLY = 1;
 	public const TypeSpec.DisplayNameFormat NO_MODIFIERS = 2;

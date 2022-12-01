@@ -1,19 +1,19 @@
-public class ProgressBar : UIBehaviour // TypeDefIndex: 12986
+public class ProgressBar : UIBehaviour // TypeDefIndex: 13000
 {
-	public static ProgressBar Instance; 
-	private Action<BasePlayer> action; 
-	private float timeFinished; 
-	private float timeCounter; 
-	public GameObject scaleTarget; 
-	public Image progressField; 
-	public Image iconField; 
-	public Text leftField; 
-	public Text rightField; 
-	public SoundDefinition clipOpen; 
-	public SoundDefinition clipCancel; 
-	public bool IsOpen; 
-	private bool isClosing; 
-	private CanvasGroup canvasGroup; 
+	public static ProgressBar Instance;
+	private Action<BasePlayer> action;
+	private float timeFinished;
+	private float timeCounter;
+	public GameObject scaleTarget;
+	public Image progressField;
+	public Image iconField;
+	public Text leftField;
+	public Text rightField;
+	public SoundDefinition clipOpen;
+	public SoundDefinition clipCancel;
+	public bool IsOpen;
+	private bool isClosing;
+	private CanvasGroup canvasGroup;
 
 
 	protected override void Start() { }

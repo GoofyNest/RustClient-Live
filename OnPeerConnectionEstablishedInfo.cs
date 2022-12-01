@@ -1,17 +1,17 @@
-public struct OnPeerConnectionEstablishedInfo : ICallbackInfo // TypeDefIndex: 8976
+public struct OnPeerConnectionEstablishedInfo : ICallbackInfo // TypeDefIndex: 8978
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <RemoteUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SocketId> <SocketId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ConnectionEstablishedType <ConnectionType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private NetworkConnectionType <NetworkType>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <RemoteUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SocketId> <SocketId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ConnectionEstablishedType <ConnectionType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private NetworkConnectionType <NetworkType>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ProductUserId LocalUserId { get; set; }
@@ -21,40 +21,40 @@ public struct OnPeerConnectionEstablishedInfo : ICallbackInfo // TypeDefIndex: 8
 	public NetworkConnectionType NetworkType { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_RemoteUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RemoteUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SocketId> get_SocketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SocketId(Nullable<SocketId> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ConnectionEstablishedType get_ConnectionType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ConnectionType(ConnectionEstablishedType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public NetworkConnectionType get_NetworkType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NetworkType(NetworkConnectionType value) { }
 
 	public Nullable<Result> GetResultCode() { }

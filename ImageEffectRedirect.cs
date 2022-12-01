@@ -1,6 +1,6 @@
-public class ImageEffectRedirect : MonoBehaviour // TypeDefIndex: 8051
+public class ImageEffectRedirect : MonoBehaviour // TypeDefIndex: 8053
 {
-	public IImageEffect target; 
+	public IImageEffect target;
 
 
 	private void OnRenderImage(RenderTexture src, RenderTexture dst) { }

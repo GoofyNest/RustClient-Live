@@ -1,7 +1,7 @@
-public static class TerrainCheckEx // TypeDefIndex: 12129
+public static class TerrainCheckEx // TypeDefIndex: 12136
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ApplyTerrainChecks(Transform transform, TerrainCheck[] anchors, Vector3 pos, Quaternion rot, Vector3 scale, SpawnFilter filter) { }
 
 }

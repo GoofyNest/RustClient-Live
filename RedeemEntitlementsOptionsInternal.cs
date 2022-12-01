@@ -1,9 +1,9 @@
-internal struct RedeemEntitlementsOptionsInternal : ISettable<RedeemEntitlementsOptions>, IDisposable // TypeDefIndex: 9513
+internal struct RedeemEntitlementsOptionsInternal : ISettable<RedeemEntitlementsOptions>, IDisposable // TypeDefIndex: 9515
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private uint m_EntitlementIdCount; 
-	private IntPtr m_EntitlementIds; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private uint m_EntitlementIdCount;
+	private IntPtr m_EntitlementIds;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String[] EntitlementIds { set; }

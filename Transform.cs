@@ -17,7 +17,7 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 	public Transform root { get; }
 	public int childCount { get; }
 	public Vector3 lossyScale { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public bool hasChanged { get; set; }
 
 
@@ -75,7 +75,7 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 	public void SetParent(Transform p) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetParent(Transform parent, bool worldPositionStays) { }
 
 	public Matrix4x4 get_worldToLocalMatrix() { }
@@ -94,7 +94,7 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 	public void Rotate(Vector3 eulers) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	internal void RotateAroundInternal(Vector3 axis, float angle) { }
 
 	public void Rotate(Vector3 axis, float angle, Space relativeTo) { }
@@ -109,7 +109,7 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 	public void LookAt(Vector3 worldPosition) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void Internal_LookAt(Vector3 worldPosition, Vector3 worldUp) { }
 
 	public Vector3 TransformDirection(Vector3 direction) { }
@@ -128,10 +128,10 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 	private Transform GetRoot() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public int get_childCount() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void DetachChildren() { }
 
 	public void SetAsFirstSibling() { }
@@ -142,15 +142,15 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 	public int GetSiblingIndex() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static Transform FindRelativeTransformWithPath(Transform transform, string path, bool isActiveOnly) { }
 
 	public Transform Find(string n) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public Vector3 get_lossyScale() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool IsChildOf(Transform parent) { }
 
 	public bool get_hasChanged() { }
@@ -159,8 +159,8 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 	public IEnumerator GetEnumerator() { }
 
-	[NativeThrowsAttribute] 
-	[FreeFunctionAttribute] 
+	[NativeThrowsAttribute]
+	[FreeFunctionAttribute]
 	public Transform GetChild(int index) { }
 
 	private void get_position_Injected(out Vector3 ret) { }
@@ -211,8 +211,8 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3572
 
 private class Transform.Enumerator : IEnumerator // TypeDefIndex: 3573
 {
-	private Transform outer; 
-	private int currentIndex; 
+	private Transform outer;
+	private int currentIndex;
 
 	public object Current { get; }
 

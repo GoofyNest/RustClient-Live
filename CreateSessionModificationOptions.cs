@@ -1,19 +1,19 @@
-public struct CreateSessionModificationOptions // TypeDefIndex: 8476
+public struct CreateSessionModificationOptions // TypeDefIndex: 8478
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <BucketId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <MaxPlayers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <PresenceEnabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <SanctionsEnabled>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <BucketId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <MaxPlayers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <PresenceEnabled>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <SanctionsEnabled>k__BackingField;
 
 	public Utf8String SessionName { get; set; }
 	public Utf8String BucketId { get; set; }
@@ -24,46 +24,46 @@ public struct CreateSessionModificationOptions // TypeDefIndex: 8476
 	public bool SanctionsEnabled { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_BucketId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BucketId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_MaxPlayers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxPlayers(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_PresenceEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PresenceEnabled(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_SanctionsEnabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SanctionsEnabled(bool value) { }
 
 }

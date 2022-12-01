@@ -1,8 +1,8 @@
 public class ToggleGroup : UIBehaviour // TypeDefIndex: 5024
 {
-	[SerializeField] 
-	private bool m_AllowSwitchOff; 
-	private List<Toggle> m_Toggles; 
+	[SerializeField]
+	private bool m_AllowSwitchOff;
+	private List<Toggle> m_Toggles;
 
 	public bool allowSwitchOff { get; set; }
 
@@ -35,9 +35,9 @@ public class ToggleGroup : UIBehaviour // TypeDefIndex: 5024
 
 private sealed class ToggleGroup.<>c // TypeDefIndex: 5025
 {
-	public static readonly ToggleGroup.<>c <>9; 
-	public static Predicate<Toggle> <>9__12_0; 
-	public static Func<Toggle, bool> <>9__13_0; 
+	public static readonly ToggleGroup.<>c <>9;
+	public static Predicate<Toggle> <>9__12_0;
+	public static Func<Toggle, bool> <>9__13_0;
 
 
 	private static void .cctor() { }

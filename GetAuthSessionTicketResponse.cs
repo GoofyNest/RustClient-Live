@@ -1,8 +1,8 @@
 internal struct GetAuthSessionTicketResponse_t : ICallbackData // TypeDefIndex: 5308
 {
-	internal uint AuthTicket; 
-	internal Result Result; 
-	public static int _datasize; 
+	internal uint AuthTicket;
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

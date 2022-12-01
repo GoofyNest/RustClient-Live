@@ -1,12 +1,12 @@
-public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6354
+public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6356
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint fuelStorageID; 
-	public float fuelFraction; 
-	public float pitch; 
-	public float roll; 
-	public float yaw; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint fuelStorageID;
+	public float fuelFraction;
+	public float pitch;
+	public float roll;
+	public float yaw;
 
 
 	public static void ResetToPool(Minicopter instance) { }
@@ -63,63 +63,63 @@ public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 635
 
 }
 
-public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 10006
+public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 10008
 {
-	[HeaderAttribute] 
-	public GameObjectRef fuelStoragePrefab; 
-	public float fuelPerSec; 
-	public float fuelGaugeMax; 
-	private float cachedFuelFraction; 
-	public Transform waterSample; 
-	public WheelCollider leftWheel; 
-	public WheelCollider rightWheel; 
-	public WheelCollider frontWheel; 
-	public Transform leftWheelTrans; 
-	public Transform rightWheelTrans; 
-	public Transform frontWheelTrans; 
-	public float cachedrotation_left; 
-	public float cachedrotation_right; 
-	public float cachedrotation_front; 
-	[HeaderAttribute] 
-	public Transform joystickPositionLeft; 
-	public Transform joystickPositionRight; 
-	public Transform leftFootPosition; 
-	public Transform rightFootPosition; 
-	public AnimationCurve bladeEngineCurve; 
-	public Animator animator; 
-	public float maxRotorSpeed; 
-	public float timeUntilMaxRotorSpeed; 
-	public float rotorBlurThreshold; 
-	public Transform mainRotorBlur; 
-	public Transform mainRotorBlades; 
-	public Transform rearRotorBlades; 
-	public Transform rearRotorBlur; 
-	public float motorForceConstant; 
-	public float brakeForceConstant; 
-	public GameObject preventBuildingObject; 
-	[ServerVar] 
-	public static float population; 
-	[ServerVar] 
-	public static float outsidedecayminutes; 
-	[ServerVar] 
-	public static float insidedecayminutes; 
-	private VehicleEngineController<MiniCopter> engineController; 
-	private float leftWheelVelocity; 
-	private float rightWheelVelocity; 
-	private float rotorSpeed; 
-	private float mainRotorBlurRotation; 
-	private float mainRotorRotation; 
-	private float rearRotorBlurRotation; 
-	private float rearRotorRotation; 
-	private float cachedPitch; 
-	private float cachedYaw; 
-	private float cachedRoll; 
-	protected static int fuelAnimationIndex; 
-	protected static int pitchAnimationIndex; 
-	protected static int rollAnimationIndex; 
-	protected static int yawAnimationIndex; 
-	protected int fuelShakeIndex; 
-	private Option __menuOption_Menu_FuelStorage; 
+	[HeaderAttribute]
+	public GameObjectRef fuelStoragePrefab;
+	public float fuelPerSec;
+	public float fuelGaugeMax;
+	private float cachedFuelFraction;
+	public Transform waterSample;
+	public WheelCollider leftWheel;
+	public WheelCollider rightWheel;
+	public WheelCollider frontWheel;
+	public Transform leftWheelTrans;
+	public Transform rightWheelTrans;
+	public Transform frontWheelTrans;
+	public float cachedrotation_left;
+	public float cachedrotation_right;
+	public float cachedrotation_front;
+	[HeaderAttribute]
+	public Transform joystickPositionLeft;
+	public Transform joystickPositionRight;
+	public Transform leftFootPosition;
+	public Transform rightFootPosition;
+	public AnimationCurve bladeEngineCurve;
+	public Animator animator;
+	public float maxRotorSpeed;
+	public float timeUntilMaxRotorSpeed;
+	public float rotorBlurThreshold;
+	public Transform mainRotorBlur;
+	public Transform mainRotorBlades;
+	public Transform rearRotorBlades;
+	public Transform rearRotorBlur;
+	public float motorForceConstant;
+	public float brakeForceConstant;
+	public GameObject preventBuildingObject;
+	[ServerVar]
+	public static float population;
+	[ServerVar]
+	public static float outsidedecayminutes;
+	[ServerVar]
+	public static float insidedecayminutes;
+	private VehicleEngineController<MiniCopter> engineController;
+	private float leftWheelVelocity;
+	private float rightWheelVelocity;
+	private float rotorSpeed;
+	private float mainRotorBlurRotation;
+	private float mainRotorRotation;
+	private float rearRotorBlurRotation;
+	private float rearRotorRotation;
+	private float cachedPitch;
+	private float cachedYaw;
+	private float cachedRoll;
+	protected static int fuelAnimationIndex;
+	protected static int pitchAnimationIndex;
+	protected static int rollAnimationIndex;
+	protected static int yawAnimationIndex;
+	protected int fuelShakeIndex;
+	private Option __menuOption_Menu_FuelStorage;
 
 	public bool IsStartingUp { get; }
 	public VehicleEngineController.EngineState<MiniCopter> CurEngineState { get; }
@@ -128,10 +128,10 @@ public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity 
 
 	public float GetFuelFraction() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_FuelStorage(BasePlayer player) { }
 
 	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }

@@ -1,9 +1,9 @@
-public class MicrophoneStand : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6426
+public class MicrophoneStand : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6428
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int microphoneMode; 
-	public uint IORef; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int microphoneMode;
+	public uint IORef;
 
 
 	public static void ResetToPool(MicrophoneStand instance) { }
@@ -60,24 +60,24 @@ public class MicrophoneStand : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class MicrophoneStand : BaseMountable // TypeDefIndex: 10325
+public class MicrophoneStand : BaseMountable // TypeDefIndex: 10328
 {
-	public VoiceProcessor VoiceProcessor; 
-	public AudioSource VoiceSource; 
-	private MicrophoneStand.SpeechMode currentSpeechMode; 
-	public AudioMixerGroup NormalMix; 
-	public AudioMixerGroup HighPitchMix; 
-	public AudioMixerGroup LowPitchMix; 
-	public Translate.Phrase NormalPhrase; 
-	public Translate.Phrase NormalDescPhrase; 
-	public Translate.Phrase HighPitchPhrase; 
-	public Translate.Phrase HighPitchDescPhrase; 
-	public Translate.Phrase LowPitchPhrase; 
-	public Translate.Phrase LowPitchDescPhrase; 
-	public GameObjectRef IOSubEntity; 
-	public Transform IOSubEntitySpawnPos; 
-	public bool IsStatic; 
-	public EntityRef<IOEntity> ioEntity; 
+	public VoiceProcessor VoiceProcessor;
+	public AudioSource VoiceSource;
+	private MicrophoneStand.SpeechMode currentSpeechMode;
+	public AudioMixerGroup NormalMix;
+	public AudioMixerGroup HighPitchMix;
+	public AudioMixerGroup LowPitchMix;
+	public Translate.Phrase NormalPhrase;
+	public Translate.Phrase NormalDescPhrase;
+	public Translate.Phrase HighPitchPhrase;
+	public Translate.Phrase HighPitchDescPhrase;
+	public Translate.Phrase LowPitchPhrase;
+	public Translate.Phrase LowPitchDescPhrase;
+	public GameObjectRef IOSubEntity;
+	public Transform IOSubEntitySpawnPos;
+	public bool IsStatic;
+	public EntityRef<IOEntity> ioEntity;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -94,20 +94,20 @@ public class MicrophoneStand : BaseMountable // TypeDefIndex: 10325
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnClientInput>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnClientInput>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <OnClientInput>
 
 }
 
-public enum MicrophoneStand.SpeechMode // TypeDefIndex: 10326
+public enum MicrophoneStand.SpeechMode // TypeDefIndex: 10329
 {
-	public int value__; 
+	public int value__;
 	public const MicrophoneStand.SpeechMode Normal = 0;
 	public const MicrophoneStand.SpeechMode HighPitch = 1;
 	public const MicrophoneStand.SpeechMode LowPitch = 2;

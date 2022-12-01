@@ -1,13 +1,13 @@
-public struct MeshColliderInstance // TypeDefIndex: 10884
+public struct MeshColliderInstance // TypeDefIndex: 10890
 {
-	public Transform transform; 
-	public Rigidbody rigidbody; 
-	public Collider collider; 
-	public OBB bounds; 
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 scale; 
-	public MeshCache.Data data; 
+	public Transform transform;
+	public Rigidbody rigidbody;
+	public Collider collider;
+	public OBB bounds;
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 scale;
+	public MeshCache.Data data;
 
 	public Mesh mesh { get; set; }
 

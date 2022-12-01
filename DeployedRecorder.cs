@@ -1,14 +1,14 @@
-public class DeployedRecorder : StorageContainer, ICassettePlayer // TypeDefIndex: 10097
+public class DeployedRecorder : StorageContainer, ICassettePlayer // TypeDefIndex: 10099
 {
-	private Option __menuOption_Play; 
-	private Option __menuOption_Stop; 
-	public AudioSource SoundSource; 
-	public ItemDefinition[] ValidCassettes; 
-	public SoundDefinition PlaySfx; 
-	public SoundDefinition StopSfx; 
-	public SwapKeycard TapeSwapper; 
-	private Cassette cachedCassette; 
-	private bool initialLoad; 
+	private Option __menuOption_Play;
+	private Option __menuOption_Stop;
+	public AudioSource SoundSource;
+	public ItemDefinition[] ValidCassettes;
+	public SoundDefinition PlaySfx;
+	public SoundDefinition StopSfx;
+	public SwapKeycard TapeSwapper;
+	private Cassette cachedCassette;
+	private bool initialLoad;
 
 	public override bool HasMenuOptions { get; }
 	public BaseEntity ToBaseEntity { get; }
@@ -24,16 +24,16 @@ public class DeployedRecorder : StorageContainer, ICassettePlayer // TypeDefInde
 
 	protected override void ClientInit(Entity info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Play(BasePlayer forPlayer) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Stop(BasePlayer forPlayer) { }
 
 	private bool CanStop(BasePlayer forPlayer) { }
@@ -46,10 +46,10 @@ public class DeployedRecorder : StorageContainer, ICassettePlayer // TypeDefInde
 
 	private void UpdateCassetteMesh() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
 	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }

@@ -1,13 +1,13 @@
 public static class RemotingServices // TypeDefIndex: 1143
 {
-	private static Hashtable uri_hash; 
-	private static BinaryFormatter _serializationFormatter; 
-	private static BinaryFormatter _deserializationFormatter; 
-	private static string app_id; 
-	private static readonly object app_id_lock; 
-	private static int next_id; 
-	private static readonly MethodInfo FieldSetterMethod; 
-	private static readonly MethodInfo FieldGetterMethod; 
+	private static Hashtable uri_hash;
+	private static BinaryFormatter _serializationFormatter;
+	private static BinaryFormatter _deserializationFormatter;
+	private static string app_id;
+	private static readonly object app_id_lock;
+	private static int next_id;
+	private static readonly MethodInfo FieldSetterMethod;
+	private static readonly MethodInfo FieldGetterMethod;
 
 
 	private static void .cctor() { }
@@ -20,10 +20,10 @@ public static class RemotingServices // TypeDefIndex: 1143
 
 	internal static IMethodReturnMessage InternalExecuteMessage(MarshalByRefObject target, IMethodCallMessage reqMsg) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object Connect(Type classToProxy, string url) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static object Connect(Type classToProxy, string url, object data) { }
 
 	public static Type GetServerTypeForUri(string URI) { }
@@ -38,7 +38,7 @@ public static class RemotingServices // TypeDefIndex: 1143
 
 	private static string NewUri() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static RealProxy GetRealProxy(object proxy) { }
 
 	public static MethodBase GetMethodBaseFromMethodMessage(IMethodMessage msg) { }
@@ -101,8 +101,8 @@ public static class RemotingServices // TypeDefIndex: 1143
 
 private class RemotingServices.CACD // TypeDefIndex: 1144
 {
-	public object d; 
-	public object c; 
+	public object d;
+	public object c;
 
 
 	public void .ctor() { }

@@ -1,8 +1,8 @@
-public class OwnerInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6341
+public class OwnerInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6343
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong steamid; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong steamid;
 
 
 	public static void ResetToPool(OwnerInfo instance) { }

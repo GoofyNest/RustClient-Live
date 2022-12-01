@@ -1,16 +1,16 @@
-public static class ColliderEx // TypeDefIndex: 13484
+public static class ColliderEx // TypeDefIndex: 13500
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static PhysicMaterial GetMaterialAt(Collider obj, Vector3 pos) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsOnLayer(Collider col, Layer rustLayer) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsOnLayer(Collider col, int layer) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static float GetRadius(Collider col, Vector3 transformScale) { }
 
 }

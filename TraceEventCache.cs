@@ -1,10 +1,10 @@
 public class TraceEventCache // TypeDefIndex: 2638
 {
-	private static int processId; 
-	private static string processName; 
-	private long timeStamp; 
-	private DateTime dateTime; 
-	private string stackTrace; 
+	private static int processId;
+	private static string processName;
+	private long timeStamp;
+	private DateTime dateTime;
+	private string stackTrace;
 
 	public string Callstack { get; }
 	public Stack LogicalOperationStack { get; }

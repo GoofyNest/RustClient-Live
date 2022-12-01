@@ -1,9 +1,9 @@
-public class FluidSwitch : ElectricSwitch // TypeDefIndex: 11536
+public class FluidSwitch : ElectricSwitch // TypeDefIndex: 11543
 {
-	private BaseEntity.Flags Flag_PumpPowered; 
-	public Animator PumpAnimator; 
-	private static int SwitchOnParam; 
-	private static int PowerParam; 
+	private BaseEntity.Flags Flag_PumpPowered;
+	public Animator PumpAnimator;
+	private static int SwitchOnParam;
+	private static int PowerParam;
 
 	public override bool IsGravitySource { get; }
 	protected override bool DisregardGravityRestrictionsOnLiquid { get; }

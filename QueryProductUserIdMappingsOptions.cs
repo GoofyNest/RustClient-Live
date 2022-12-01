@@ -1,33 +1,33 @@
-public struct QueryProductUserIdMappingsOptions // TypeDefIndex: 9629
+public struct QueryProductUserIdMappingsOptions // TypeDefIndex: 9631
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalAccountType <AccountIdType_DEPRECATED>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <ProductUserIds>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalAccountType <AccountIdType_DEPRECATED>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <ProductUserIds>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ExternalAccountType AccountIdType_DEPRECATED { get; set; }
 	public ProductUserId[] ProductUserIds { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalAccountType get_AccountIdType_DEPRECATED() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountIdType_DEPRECATED(ExternalAccountType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_ProductUserIds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ProductUserIds(ProductUserId[] value) { }
 
 }

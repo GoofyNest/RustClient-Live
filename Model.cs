@@ -1,18 +1,18 @@
-public class Model : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10939
+public class Model : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10945
 {
-	public SphereCollider collision; 
-	public Transform rootBone; 
-	public Transform headBone; 
-	public Transform eyeBone; 
-	public Animator animator; 
-	public Skeleton skeleton; 
-	[HideInInspector] 
-	public Transform[] boneTransforms; 
-	[HideInInspector] 
-	public string[] boneNames; 
-	internal BoneDictionary boneDict; 
-	internal int skin; 
-	private LODGroup _lodGroup; 
+	public SphereCollider collision;
+	public Transform rootBone;
+	public Transform headBone;
+	public Transform eyeBone;
+	public Animator animator;
+	public Skeleton skeleton;
+	[HideInInspector]
+	public Transform[] boneTransforms;
+	[HideInInspector]
+	public string[] boneNames;
+	internal BoneDictionary boneDict;
+	internal int skin;
+	private LODGroup _lodGroup;
 
 	public LODGroup lodGroup { get; }
 

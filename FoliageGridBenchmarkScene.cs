@@ -1,16 +1,16 @@
-public class FoliageGridBenchmarkScene : BenchmarkScene // TypeDefIndex: 9968
+public class FoliageGridBenchmarkScene : BenchmarkScene // TypeDefIndex: 9970
 {
-	private static TerrainMeta terrainMeta; 
-	public GameObjectRef foliagePrefab; 
-	private GameObject foliageInstance; 
-	public GameObjectRef lodPrefab; 
-	private GameObject lodInstance; 
-	public GameObjectRef batchingPrefab; 
-	private GameObject batchingInstance; 
-	public Terrain terrain; 
-	public Transform viewpointA; 
-	public Transform viewpointB; 
-	public bool moveVantangePoint; 
+	private static TerrainMeta terrainMeta;
+	public GameObjectRef foliagePrefab;
+	private GameObject foliageInstance;
+	public GameObjectRef lodPrefab;
+	private GameObject lodInstance;
+	public GameObjectRef batchingPrefab;
+	private GameObject batchingInstance;
+	public Terrain terrain;
+	public Transform viewpointA;
+	public Transform viewpointB;
+	public bool moveVantangePoint;
 
 
 	private void Awake() { }

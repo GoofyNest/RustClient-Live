@@ -1,6 +1,6 @@
 internal enum RegisterActivationCodeResult // TypeDefIndex: 5162
 {
-	public int value__; 
+	public int value__;
 	public const RegisterActivationCodeResult ResultOK = 0;
 	public const RegisterActivationCodeResult ResultFail = 1;
 	public const RegisterActivationCodeResult ResultAlreadyRegistered = 2;

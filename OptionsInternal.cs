@@ -1,9 +1,9 @@
-internal struct OptionsInternal : IGettable<Options>, ISettable<Options>, IDisposable // TypeDefIndex: 9376
+internal struct OptionsInternal : IGettable<Options>, ISettable<Options>, IDisposable // TypeDefIndex: 9378
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Type; 
-	private IntegratedPlatformManagementFlags m_Flags; 
-	private IntPtr m_InitOptions; 
+	private int m_ApiVersion;
+	private IntPtr m_Type;
+	private IntegratedPlatformManagementFlags m_Flags;
+	private IntPtr m_InitOptions;
 
 	public Utf8String Type { get; set; }
 	public IntegratedPlatformManagementFlags Flags { get; set; }
@@ -32,23 +32,23 @@ internal struct OptionsInternal : IGettable<Options>, ISettable<Options>, IDispo
 
 }
 
-internal struct OptionsInternal : ISettable<Options>, IDisposable // TypeDefIndex: 9876
+internal struct OptionsInternal : ISettable<Options>, IDisposable // TypeDefIndex: 9878
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Reserved; 
-	private IntPtr m_ProductId; 
-	private IntPtr m_SandboxId; 
-	private ClientCredentialsInternal m_ClientCredentials; 
-	private int m_IsServer; 
-	private IntPtr m_EncryptionKey; 
-	private IntPtr m_OverrideCountryCode; 
-	private IntPtr m_OverrideLocaleCode; 
-	private IntPtr m_DeploymentId; 
-	private PlatformFlags m_Flags; 
-	private IntPtr m_CacheDirectory; 
-	private uint m_TickBudgetInMilliseconds; 
-	private IntPtr m_RTCOptions; 
-	private IntPtr m_IntegratedPlatformOptionsContainerHandle; 
+	private int m_ApiVersion;
+	private IntPtr m_Reserved;
+	private IntPtr m_ProductId;
+	private IntPtr m_SandboxId;
+	private ClientCredentialsInternal m_ClientCredentials;
+	private int m_IsServer;
+	private IntPtr m_EncryptionKey;
+	private IntPtr m_OverrideCountryCode;
+	private IntPtr m_OverrideLocaleCode;
+	private IntPtr m_DeploymentId;
+	private PlatformFlags m_Flags;
+	private IntPtr m_CacheDirectory;
+	private uint m_TickBudgetInMilliseconds;
+	private IntPtr m_RTCOptions;
+	private IntPtr m_IntegratedPlatformOptionsContainerHandle;
 
 	public IntPtr Reserved { set; }
 	public Utf8String ProductId { set; }

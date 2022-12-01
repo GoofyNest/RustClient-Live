@@ -1,6 +1,6 @@
 public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 {
-	internal IntPtr m_Ptr; 
+	internal IntPtr m_Ptr;
 
 	public Keyframe[] keys { get; set; }
 	public Keyframe Item { get; }
@@ -9,18 +9,18 @@ public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 	public WrapMode postWrapMode { set; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_Destroy(IntPtr ptr) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static IntPtr Internal_Create(Keyframe[] keys) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private bool Internal_Equals(IntPtr other) { }
 
 	protected override void Finalize() { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public float Evaluate(float time) { }
 
 	public Keyframe[] get_keys() { }
@@ -29,22 +29,22 @@ public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 
 	public int AddKey(Keyframe key) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private int AddKey_Internal(Keyframe key) { }
 
 	public Keyframe get_Item(int index) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public int get_length() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetKeys(Keyframe[] keys) { }
 
-	[FreeFunctionAttribute] 
-	[NativeThrowsAttribute] 
+	[FreeFunctionAttribute]
+	[NativeThrowsAttribute]
 	private Keyframe GetKey(int index) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private Keyframe[] GetKeys() { }
 
 	public static AnimationCurve Constant(float timeStart, float timeEnd, float value) { }
@@ -53,15 +53,15 @@ public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 
 	public static AnimationCurve EaseInOut(float timeStart, float valueStart, float timeEnd, float valueEnd) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void set_preWrapMode(WrapMode value) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void set_postWrapMode(WrapMode value) { }
 
 	public void .ctor(Keyframe[] keys) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 
 	public override bool Equals(object o) { }
@@ -78,13 +78,13 @@ public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 
 public sealed class AnimationClip : Motion // TypeDefIndex: 4484
 {
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public float length { get; }
 
 
 	public void .ctor() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void Internal_CreateAnimationClip(AnimationClip self) { }
 
 	public float get_length() { }
@@ -93,7 +93,7 @@ public sealed class AnimationClip : Motion // TypeDefIndex: 4484
 
 internal enum AnimationEventSource // TypeDefIndex: 4501
 {
-	public int value__; 
+	public int value__;
 	public const AnimationEventSource NoSource = 0;
 	public const AnimationEventSource Legacy = 1;
 	public const AnimationEventSource Animator = 2;
@@ -102,17 +102,17 @@ internal enum AnimationEventSource // TypeDefIndex: 4501
 
 public sealed class AnimationEvent // TypeDefIndex: 4502
 {
-	internal float m_Time; 
-	internal string m_FunctionName; 
-	internal string m_StringParameter; 
-	internal Object m_ObjectReferenceParameter; 
-	internal float m_FloatParameter; 
-	internal int m_IntParameter; 
-	internal int m_MessageOptions; 
-	internal AnimationEventSource m_Source; 
-	internal AnimationState m_StateSender; 
-	internal AnimatorStateInfo m_AnimatorStateInfo; 
-	internal AnimatorClipInfo m_AnimatorClipInfo; 
+	internal float m_Time;
+	internal string m_FunctionName;
+	internal string m_StringParameter;
+	internal Object m_ObjectReferenceParameter;
+	internal float m_FloatParameter;
+	internal int m_IntParameter;
+	internal int m_MessageOptions;
+	internal AnimationEventSource m_Source;
+	internal AnimationState m_StateSender;
+	internal AnimatorStateInfo m_AnimatorStateInfo;
+	internal AnimatorClipInfo m_AnimatorClipInfo;
 
 	public string stringParameter { get; set; }
 	public int intParameter { get; }
@@ -142,45 +142,45 @@ public sealed class Animation : Behaviour, IEnumerable // TypeDefIndex: 4504
 
 	public void Stop() { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	private static void INTERNAL_CALL_Stop(Animation self) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	public bool get_isPlaying() { }
 
 	public AnimationState get_Item(string name) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public bool Play() { }
 
 	public bool Play(PlayMode mode) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	public bool Play(string animation, PlayMode mode) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public bool Play(string animation) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	private bool PlayDefaultAnimation(PlayMode mode) { }
 
 	public IEnumerator GetEnumerator() { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	internal AnimationState GetState(string name) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	internal AnimationState GetStateAtIndex(int index) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	internal int GetStateCount() { }
 
 }
 
 private sealed class Animation.Enumerator : IEnumerator // TypeDefIndex: 4505
 {
-	private Animation m_Outer; 
-	private int m_CurrentIndex; 
+	private Animation m_Outer;
+	private int m_CurrentIndex;
 
 	public object Current { get; }
 
@@ -202,16 +202,16 @@ public sealed class AnimationState : TrackedReference // TypeDefIndex: 4506
 	public float length { get; }
 
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	public void set_time(float value) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	public float get_speed() { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	public void set_speed(float value) { }
 
-	[GeneratedByOldBindingsGeneratorAttribute] 
+	[GeneratedByOldBindingsGeneratorAttribute]
 	public float get_length() { }
 
 	public void .ctor() { }
@@ -221,12 +221,12 @@ public sealed class AnimationState : TrackedReference // TypeDefIndex: 4506
 public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable> // TypeDefIndex: 4508
 {
 
-[NativeHeaderAttribute] 
-[RequiredByNativeCodeAttribute] 
-[StaticAccessorAttribute] 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
+[RequiredByNativeCodeAttribute]
+[StaticAccessorAttribute]
+[NativeHeaderAttribute]
 public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable>
-	private PlayableHandle m_Handle; 
+	private PlayableHandle m_Handle;
 
 
 	public PlayableHandle GetHandle() { }
@@ -237,14 +237,14 @@ public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable>
 
 public struct AnimationHumanStream // TypeDefIndex: 4509
 {
-	private IntPtr stream; 
+	private IntPtr stream;
 
 }
 
 public struct AnimationLayerMixerPlayable : IEquatable<AnimationLayerMixerPlayable> // TypeDefIndex: 4510
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationLayerMixerPlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationLayerMixerPlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }
@@ -259,8 +259,8 @@ public struct AnimationLayerMixerPlayable : IEquatable<AnimationLayerMixerPlayab
 
 public struct AnimationMixerPlayable : IEquatable<AnimationMixerPlayable> // TypeDefIndex: 4511
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationMixerPlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationMixerPlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }
@@ -275,8 +275,8 @@ public struct AnimationMixerPlayable : IEquatable<AnimationMixerPlayable> // Typ
 
 internal struct AnimationMotionXToDeltaPlayable : IEquatable<AnimationMotionXToDeltaPlayable> // TypeDefIndex: 4512
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationMotionXToDeltaPlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationMotionXToDeltaPlayable m_NullPlayable;
 
 
 	private void .ctor(PlayableHandle handle) { }
@@ -291,8 +291,8 @@ internal struct AnimationMotionXToDeltaPlayable : IEquatable<AnimationMotionXToD
 
 internal struct AnimationOffsetPlayable : IEquatable<AnimationOffsetPlayable> // TypeDefIndex: 4513
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationOffsetPlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationOffsetPlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }
@@ -307,14 +307,14 @@ internal struct AnimationOffsetPlayable : IEquatable<AnimationOffsetPlayable> //
 
 public struct AnimationPlayableOutput // TypeDefIndex: 4514
 {
-	private PlayableOutputHandle m_Handle; 
+	private PlayableOutputHandle m_Handle;
 
 }
 
 internal struct AnimationPosePlayable : IEquatable<AnimationPosePlayable> // TypeDefIndex: 4515
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationPosePlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationPosePlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }
@@ -329,8 +329,8 @@ internal struct AnimationPosePlayable : IEquatable<AnimationPosePlayable> // Typ
 
 internal struct AnimationRemoveScalePlayable : IEquatable<AnimationRemoveScalePlayable> // TypeDefIndex: 4516
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationRemoveScalePlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationRemoveScalePlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }
@@ -345,8 +345,8 @@ internal struct AnimationRemoveScalePlayable : IEquatable<AnimationRemoveScalePl
 
 public struct AnimationScriptPlayable : IEquatable<AnimationScriptPlayable> // TypeDefIndex: 4517
 {
-	private PlayableHandle m_Handle; 
-	private static readonly AnimationScriptPlayable m_NullPlayable; 
+	private PlayableHandle m_Handle;
+	private static readonly AnimationScriptPlayable m_NullPlayable;
 
 
 	internal void .ctor(PlayableHandle handle) { }
@@ -361,13 +361,13 @@ public struct AnimationScriptPlayable : IEquatable<AnimationScriptPlayable> // T
 
 public struct AnimationStream // TypeDefIndex: 4518
 {
-	private uint m_AnimatorBindingsVersion; 
-	private IntPtr constant; 
-	private IntPtr input; 
-	private IntPtr output; 
-	private IntPtr workspace; 
-	private IntPtr inputStreamAccessor; 
-	private IntPtr animationHandleBinder; 
+	private uint m_AnimatorBindingsVersion;
+	private IntPtr constant;
+	private IntPtr input;
+	private IntPtr output;
+	private IntPtr workspace;
+	private IntPtr inputStreamAccessor;
+	private IntPtr animationHandleBinder;
 
 }
 
@@ -387,21 +387,21 @@ public class AnimationTriggers
 	private const string kDefaultPressedAnimName = "Pressed";
 	private const string kDefaultSelectedAnimName = "Selected";
 	private const string kDefaultDisabledAnimName = "Disabled";
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_NormalTrigger; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_HighlightedTrigger; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_PressedTrigger; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_SelectedTrigger; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_DisabledTrigger; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_NormalTrigger;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_HighlightedTrigger;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_PressedTrigger;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_SelectedTrigger;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_DisabledTrigger;
 
 	public string normalTrigger { get; set; }
 	public string highlightedTrigger { get; set; }
@@ -434,9 +434,9 @@ public class AnimationTriggers
 
 }
 
-public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10505
+public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10509
 {
-	public Animator animator; 
+	public Animator animator;
 
 
 	public void SetBoolTrue(string name) { }
@@ -447,9 +447,9 @@ public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10505
 
 }
 
-public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10848
+public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10854
 {
-	public GameObject targetObject; 
+	public GameObject targetObject;
 
 
 	public void Event(string type) { }
@@ -458,19 +458,19 @@ public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10848
 
 }
 
-public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 11060
+public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 11066
 {
-	public Transform rootObject; 
-	public HeldEntity targetEntity; 
-	[TooltipAttribute] 
-	public string effectFolder; 
-	public bool enforceClipWeights; 
-	public string localFolder; 
-	[TooltipAttribute] 
-	public bool customLocalFolder; 
-	public bool IsBusy; 
-	private IAnimationEventReceiver cachedEventReceiver; 
-	private bool hasCachedEventReceiver; 
+	public Transform rootObject;
+	public HeldEntity targetEntity;
+	[TooltipAttribute]
+	public string effectFolder;
+	public bool enforceClipWeights;
+	public string localFolder;
+	[TooltipAttribute]
+	public bool customLocalFolder;
+	public bool IsBusy;
+	private IAnimationEventReceiver cachedEventReceiver;
+	private bool hasCachedEventReceiver;
 
 
 	protected void OnEnable() { }

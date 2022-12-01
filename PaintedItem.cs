@@ -1,9 +1,9 @@
-public class PaintedItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6438
+public class PaintedItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6440
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint imageCrc; 
-	public ulong editedBy; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint imageCrc;
+	public ulong editedBy;
 
 
 	public static void ResetToPool(PaintedItem instance) { }

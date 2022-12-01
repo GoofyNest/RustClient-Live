@@ -1,11 +1,11 @@
-public class DeliveryDrone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6405
+public class DeliveryDrone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6407
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint marketplaceId; 
-	public uint terminalId; 
-	public uint vendingMachineId; 
-	public int state; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint marketplaceId;
+	public uint terminalId;
+	public uint vendingMachineId;
+	public int state;
 
 
 	public static void ResetToPool(DeliveryDrone instance) { }
@@ -62,18 +62,18 @@ public class DeliveryDrone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class DeliveryDrone : Drone // TypeDefIndex: 10521
+public class DeliveryDrone : Drone // TypeDefIndex: 10525
 {
-	[HeaderAttribute] 
-	public float stateTimeout; 
-	public float targetPositionTolerance; 
-	public float preferredCruiseHeight; 
-	public float preferredHeightAboveObstacle; 
-	public float marginAbovePreferredHeight; 
-	public float obstacleHeightLockDuration; 
-	public int pickUpDelayInTicks; 
-	public DeliveryDroneConfig config; 
-	public GameObjectRef mapMarkerPrefab; 
+	[HeaderAttribute]
+	public float stateTimeout;
+	public float targetPositionTolerance;
+	public float preferredCruiseHeight;
+	public float preferredHeightAboveObstacle;
+	public float marginAbovePreferredHeight;
+	public float obstacleHeightLockDuration;
+	public int pickUpDelayInTicks;
+	public DeliveryDroneConfig config;
+	public GameObjectRef mapMarkerPrefab;
 
 
 	public void .ctor() { }

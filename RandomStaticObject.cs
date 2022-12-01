@@ -1,8 +1,8 @@
-public class RandomStaticObject : MonoBehaviour // TypeDefIndex: 12106
+public class RandomStaticObject : MonoBehaviour // TypeDefIndex: 12113
 {
-	public uint Seed; 
-	public float Probability; 
-	public GameObject[] Candidates; 
+	public uint Seed;
+	public float Probability;
+	public GameObject[] Candidates;
 
 
 	protected void Start() { }

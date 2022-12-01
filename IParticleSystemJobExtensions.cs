@@ -1,7 +1,7 @@
 public static class IParticleSystemJobExtensions // TypeDefIndex: 4552
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static JobHandle Schedule<T>(T jobData, ParticleSystem ps, JobHandle dependsOn) { }
 	/* GenericInstMethod :
 	|

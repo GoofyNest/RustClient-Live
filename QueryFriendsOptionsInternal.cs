@@ -1,7 +1,7 @@
-internal struct QueryFriendsOptionsInternal : ISettable<QueryFriendsOptions>, IDisposable // TypeDefIndex: 9408
+internal struct QueryFriendsOptionsInternal : ISettable<QueryFriendsOptions>, IDisposable // TypeDefIndex: 9410
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
 
 	public EpicAccountId LocalUserId { set; }
 

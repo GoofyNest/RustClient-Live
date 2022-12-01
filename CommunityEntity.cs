@@ -1,16 +1,16 @@
-public class CommunityEntity : PointEntity // TypeDefIndex: 10271
+public class CommunityEntity : PointEntity // TypeDefIndex: 10274
 {
-	private static Dictionary<uint, List<MaskableGraphic>> requestingTextureImages; 
-	private static Dictionary<uint, CommunityEntity.CachedTexture> _textureCache; 
-	private static List<GameObject> AllUi; 
-	private static Dictionary<string, GameObject> UiDict; 
-	public static CommunityEntity ServerInstance; 
-	public static CommunityEntity ClientInstance; 
+	private static Dictionary<uint, List<MaskableGraphic>> requestingTextureImages;
+	private static Dictionary<uint, CommunityEntity.CachedTexture> _textureCache;
+	private static List<GameObject> AllUi;
+	private static Dictionary<string, GameObject> UiDict;
+	public static CommunityEntity ServerInstance;
+	public static CommunityEntity ClientInstance;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CL_ReceiveFilePng(BaseEntity.RPCMessage msg) { }
 
 	private static CommunityEntity.CachedTexture GetCachedTexture(uint textureId) { }
@@ -29,7 +29,7 @@ public class CommunityEntity : PointEntity // TypeDefIndex: 10271
 
 	private static void RegisterUi(GameObject go) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void AddUI(BaseEntity.RPCMessage msg) { }
 
 	private GameObject FindPanel(string name) { }
@@ -48,10 +48,10 @@ public class CommunityEntity : PointEntity // TypeDefIndex: 10271
 
 	private void GraphicComponentCreated(Graphic c, Object obj) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator LoadTextureFromWWW(RawImage c, string p) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void DestroyUI(BaseEntity.RPCMessage msg) { }
 
 	private void DestroyPanel(string pnlName) { }
@@ -66,15 +66,15 @@ public class CommunityEntity : PointEntity // TypeDefIndex: 10271
 
 }
 
-private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 10272
+private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 10275
 {
-	public string command; 
-	public int endTime; 
-	public int startTime; 
-	public int step; 
-	private int sign; 
-	private string tempText; 
-	private Text textComponent; 
+	public string command;
+	public int endTime;
+	public int startTime;
+	public int step;
+	private int sign;
+	private string tempText;
+	private Text textComponent;
 
 
 	private void Start() { }
@@ -87,9 +87,9 @@ private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 10272
 
 }
 
-private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 10273
+private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 10276
 {
-	public float duration; 
+	public float duration;
 
 
 	public void FadeOutAndDestroy() { }
@@ -100,10 +100,10 @@ private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 10273
 
 }
 
-private class CommunityEntity.CachedTexture // TypeDefIndex: 10274
+private class CommunityEntity.CachedTexture // TypeDefIndex: 10277
 {
-	public Texture2D Texture; 
-	public Sprite Sprite; 
+	public Texture2D Texture;
+	public Sprite Sprite;
 
 
 	public void Destroy() { }
@@ -112,18 +112,18 @@ private class CommunityEntity.CachedTexture // TypeDefIndex: 10274
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_0 // TypeDefIndex: 10275
+private sealed class CommunityEntity.<>c__DisplayClass19_0 // TypeDefIndex: 10278
 {
-	public Image c; 
+	public Image c;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 10276
+private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 10279
 {
-	public ulong requestedSkin; 
+	public ulong requestedSkin;
 	public CommunityEntity.<>c
 
 
@@ -135,9 +135,9 @@ private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 1027
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 10277
+private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 10280
 {
-	public string cmd; 
+	public string cmd;
 
 
 	public void .ctor() { }
@@ -146,10 +146,10 @@ private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 1027
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 10278
+private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 10281
 {
-	public string pnlName; 
-	public CommunityEntity <>4__this; 
+	public string pnlName;
+	public CommunityEntity <>4__this;
 
 
 	public void .ctor() { }
@@ -158,9 +158,9 @@ private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 1027
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 10279
+private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 10282
 {
-	public string cmd; 
+	public string cmd;
 
 
 	public void .ctor() { }
@@ -169,33 +169,33 @@ private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 1027
 
 }
 
-private sealed class CommunityEntity.<LoadTextureFromWWW>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10280
+private sealed class CommunityEntity.<LoadTextureFromWWW>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10283
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string p; 
-	public RawImage c; 
-	private WWW <www>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public string p;
+	public RawImage c;
+	private WWW <www>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

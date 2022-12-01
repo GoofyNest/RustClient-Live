@@ -1,9 +1,9 @@
-public class MissionReward : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6462
+public class MissionReward : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6464
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int itemID; 
-	public int itemAmount; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int itemID;
+	public int itemAmount;
 
 
 	public static void ResetToPool(MissionReward instance) { }

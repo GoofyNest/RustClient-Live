@@ -1,7 +1,7 @@
 public class DescriptionAttribute : Attribute // TypeDefIndex: 2689
 {
-	public static readonly DescriptionAttribute Default; 
-	private string description; 
+	public static readonly DescriptionAttribute Default;
+	private string description;
 
 	public virtual string Description { get; }
 	protected string DescriptionValue { get; set; }

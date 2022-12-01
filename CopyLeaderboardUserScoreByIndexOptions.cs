@@ -1,24 +1,24 @@
-public struct CopyLeaderboardUserScoreByIndexOptions // TypeDefIndex: 9284
+public struct CopyLeaderboardUserScoreByIndexOptions // TypeDefIndex: 9286
 {
-	[CompilerGeneratedAttribute] 
-	private uint <LeaderboardUserScoreIndex>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <StatName>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private uint <LeaderboardUserScoreIndex>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <StatName>k__BackingField;
 
 	public uint LeaderboardUserScoreIndex { get; set; }
 	public Utf8String StatName { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_LeaderboardUserScoreIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LeaderboardUserScoreIndex(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_StatName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StatName(Utf8String value) { }
 
 }

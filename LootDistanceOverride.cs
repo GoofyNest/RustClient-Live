@@ -1,6 +1,6 @@
-public class LootDistanceOverride : MonoBehaviour // TypeDefIndex: 11238
+public class LootDistanceOverride : MonoBehaviour // TypeDefIndex: 11244
 {
-	public float amount; 
+	public float amount;
 
 
 	public void .ctor() { }

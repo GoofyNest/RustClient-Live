@@ -1,17 +1,17 @@
-public class CardGame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6414
+public class CardGame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6416
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<CardGame.CardPlayer> players; 
-	public int state; 
-	public int activePlayerIndex; 
-	public int pot; 
-	public int lastActionId; 
-	public ulong lastActionTarget; 
-	public int lastActionValue; 
-	public uint potRef; 
-	public CardGame.TexasHoldEm texasHoldEm; 
-	public CardGame.Blackjack blackjack; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<CardGame.CardPlayer> players;
+	public int state;
+	public int activePlayerIndex;
+	public int pot;
+	public int lastActionId;
+	public ulong lastActionTarget;
+	public int lastActionValue;
+	public uint potRef;
+	public CardGame.TexasHoldEm texasHoldEm;
+	public CardGame.Blackjack blackjack;
 
 
 	public static void ResetToPool(CardGame instance) { }
@@ -68,19 +68,19 @@ public class CardGame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6414
 
 }
 
-public class CardGame.CardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6415
+public class CardGame.CardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6417
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong userid; 
-	public List<int> cards; 
-	public int scrap; 
-	public int state; 
-	public int availableInputs; 
-	public int betThisRound; 
-	public int betThisTurn; 
-	public bool leftRoundEarly; 
-	public bool sendCardDetails; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong userid;
+	public List<int> cards;
+	public int scrap;
+	public int state;
+	public int availableInputs;
+	public int betThisRound;
+	public int betThisTurn;
+	public bool leftRoundEarly;
+	public bool sendCardDetails;
 
 
 	public static void ResetToPool(CardGame.CardPlayer instance) { }
@@ -137,13 +137,13 @@ public class CardGame.CardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class CardGame.TexasHoldEm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6416
+public class CardGame.TexasHoldEm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6418
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int dealerIndex; 
-	public List<int> communityCards; 
-	public int biggestRaiseThisTurn; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int dealerIndex;
+	public List<int> communityCards;
+	public int biggestRaiseThisTurn;
 
 
 	public static void ResetToPool(CardGame.TexasHoldEm instance) { }
@@ -200,12 +200,12 @@ public class CardGame.TexasHoldEm : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class CardGame.RoundResults : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6417
+public class CardGame.RoundResults : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6419
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<CardGame.RoundResults.Result> results; 
-	public int winningScore; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<CardGame.RoundResults.Result> results;
+	public int winningScore;
 
 
 	public static void ResetToPool(CardGame.RoundResults instance) { }
@@ -262,13 +262,13 @@ public class CardGame.RoundResults : IDisposable, Pool.IPooled, IProto // TypeDe
 
 }
 
-public class CardGame.RoundResults.Result : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6418
+public class CardGame.RoundResults.Result : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6420
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ulong ID; 
-	public int winnings; 
-	public int resultCode; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ulong ID;
+	public int winnings;
+	public int resultCode;
 
 
 	public static void ResetToPool(CardGame.RoundResults.Result instance) { }
@@ -325,12 +325,12 @@ public class CardGame.RoundResults.Result : IDisposable, Pool.IPooled, IProto //
 
 }
 
-public class CardGame.Blackjack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6419
+public class CardGame.Blackjack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6421
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<int> dealerCards; 
-	public List<CardGame.BlackjackCardPlayer> players; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<int> dealerCards;
+	public List<CardGame.BlackjackCardPlayer> players;
 
 
 	public static void ResetToPool(CardGame.Blackjack instance) { }
@@ -387,14 +387,14 @@ public class CardGame.Blackjack : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class CardGame.BlackjackCardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6420
+public class CardGame.BlackjackCardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6422
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<int> splitCards; 
-	public int splitBetThisRound; 
-	public int insuranceBetThisRound; 
-	public bool playingSplitCards; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<int> splitCards;
+	public int splitBetThisRound;
+	public int insuranceBetThisRound;
+	public bool playingSplitCards;
 
 
 	public static void ResetToPool(CardGame.BlackjackCardPlayer instance) { }
@@ -451,11 +451,11 @@ public class CardGame.BlackjackCardPlayer : IDisposable, Pool.IPooled, IProto //
 
 }
 
-public class CardGame.CardList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6421
+public class CardGame.CardList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6423
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<int> cards; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<int> cards;
 
 
 	public static void ResetToPool(CardGame.CardList instance) { }

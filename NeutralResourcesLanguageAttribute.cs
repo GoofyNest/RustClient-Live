@@ -1,7 +1,7 @@
 public sealed class NeutralResourcesLanguageAttribute : Attribute // TypeDefIndex: 488
 {
-	private string _culture; 
-	private UltimateResourceFallbackLocation _fallbackLoc; 
+	private string _culture;
+	private UltimateResourceFallbackLocation _fallbackLoc;
 
 	public string CultureName { get; }
 	public UltimateResourceFallbackLocation Location { get; }

@@ -1,6 +1,6 @@
 public sealed class TypeForwardedFromAttribute : Attribute // TypeDefIndex: 1296
 {
-	private string assemblyFullName; 
+	private string assemblyFullName;
 
 	public string AssemblyFullName { get; }
 

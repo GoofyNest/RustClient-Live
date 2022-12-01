@@ -1,9 +1,9 @@
-public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6350
+public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6352
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float pressure; 
-	public float waterLevel; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float pressure;
+	public float waterLevel;
 
 
 	public static void ResetToPool(WaterWell instance) { }
@@ -60,20 +60,20 @@ public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6350
 
 }
 
-public class WaterWell : LiquidContainer // TypeDefIndex: 10204
+public class WaterWell : LiquidContainer // TypeDefIndex: 10206
 {
-	private Option __menuOption_Menu_Pump; 
-	public Animator animator; 
+	private Option __menuOption_Menu_Pump;
+	public Animator animator;
 	private const BaseEntity.Flags Pumping = 256;
 	private const BaseEntity.Flags WaterFlow = 512;
-	public float caloriesPerPump; 
-	public float pressurePerPump; 
-	public float pressureForProduction; 
-	public float currentPressure; 
-	public int waterPerPump; 
-	public GameObject waterLevelObj; 
-	public float waterLevelObjFullOffset; 
-	private float cachedWaterLevel; 
+	public float caloriesPerPump;
+	public float pressurePerPump;
+	public float pressureForProduction;
+	public float currentPressure;
+	public int waterPerPump;
+	public GameObject waterLevelObj;
+	public float waterLevelObjFullOffset;
+	private float cachedWaterLevel;
 
 	public override bool HasMenuOptions { get; }
 
@@ -88,10 +88,10 @@ public class WaterWell : LiquidContainer // TypeDefIndex: 10204
 
 	public float GetWaterAmount() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Pump(BasePlayer player) { }
 
 	public bool Menu_Pump_ShowIf(BasePlayer player) { }

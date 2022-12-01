@@ -1,7 +1,7 @@
-internal struct CreateDeviceIdOptionsInternal : ISettable<CreateDeviceIdOptions>, IDisposable // TypeDefIndex: 9568
+internal struct CreateDeviceIdOptionsInternal : ISettable<CreateDeviceIdOptions>, IDisposable // TypeDefIndex: 9570
 {
-	private int m_ApiVersion; 
-	private IntPtr m_DeviceModel; 
+	private int m_ApiVersion;
+	private IntPtr m_DeviceModel;
 
 	public Utf8String DeviceModel { set; }
 

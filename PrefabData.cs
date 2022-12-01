@@ -1,12 +1,12 @@
-public class PrefabData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6519
+public class PrefabData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6521
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string category; 
-	public uint id; 
-	public VectorData position; 
-	public VectorData rotation; 
-	public VectorData scale; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string category;
+	public uint id;
+	public VectorData position;
+	public VectorData rotation;
+	public VectorData scale;
 
 
 	public static void ResetToPool(PrefabData instance) { }

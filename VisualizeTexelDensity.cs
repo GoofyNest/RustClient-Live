@@ -1,21 +1,21 @@
-public class VisualizeTexelDensity : MonoBehaviour // TypeDefIndex: 13321
+public class VisualizeTexelDensity : MonoBehaviour // TypeDefIndex: 13336
 {
-	public Shader shader; 
-	public string shaderTag; 
-	[RangeAttribute] 
-	public int texelsPerMeter; 
-	[RangeAttribute] 
-	public float overlayOpacity; 
-	public bool showHUD; 
-	private Camera mainCamera; 
-	private bool initialized; 
-	private int screenWidth; 
-	private int screenHeight; 
-	private Camera texelDensityCamera; 
-	private RenderTexture texelDensityRT; 
-	private Texture texelDensityGradTex; 
-	private Material texelDensityOverlayMat; 
-	private static VisualizeTexelDensity instance; 
+	public Shader shader;
+	public string shaderTag;
+	[RangeAttribute]
+	public int texelsPerMeter;
+	[RangeAttribute]
+	public float overlayOpacity;
+	public bool showHUD;
+	private Camera mainCamera;
+	private bool initialized;
+	private int screenWidth;
+	private int screenHeight;
+	private Camera texelDensityCamera;
+	private RenderTexture texelDensityRT;
+	private Texture texelDensityGradTex;
+	private Material texelDensityOverlayMat;
+	private static VisualizeTexelDensity instance;
 
 	public static VisualizeTexelDensity Instance { get; }
 

@@ -1,11 +1,11 @@
-public class ProtectionProperties : ScriptableObject // TypeDefIndex: 12501
+public class ProtectionProperties : ScriptableObject // TypeDefIndex: 12509
 {
-	[TextAreaAttribute] 
-	public string comments; 
-	[RangeAttribute] 
-	public float density; 
-	[ArrayIndexIsEnumRanged] 
-	public float[] amounts; 
+	[TextAreaAttribute]
+	public string comments;
+	[RangeAttribute]
+	public float density;
+	[ArrayIndexIsEnumRanged]
+	public float[] amounts;
 
 
 	public void OnValidate() { }

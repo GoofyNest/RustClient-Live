@@ -1,7 +1,7 @@
-public class PlaceMonument : ProceduralComponent // TypeDefIndex: 12285
+public class PlaceMonument : ProceduralComponent // TypeDefIndex: 12293
 {
-	public SpawnFilter Filter; 
-	public GameObjectRef Monument; 
+	public SpawnFilter Filter;
+	public GameObjectRef Monument;
 	private const int Attempts = 10000;
 
 
@@ -11,12 +11,12 @@ public class PlaceMonument : ProceduralComponent // TypeDefIndex: 12285
 
 }
 
-private struct PlaceMonument.SpawnInfo // TypeDefIndex: 12286
+private struct PlaceMonument.SpawnInfo // TypeDefIndex: 12294
 {
-	public Prefab prefab; 
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Vector3 scale; 
+	public Prefab prefab;
+	public Vector3 position;
+	public Quaternion rotation;
+	public Vector3 scale;
 
 }
 

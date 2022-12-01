@@ -1,21 +1,21 @@
-public class StringEnumConverter : JsonConverter // TypeDefIndex: 6113
+public class StringEnumConverter : JsonConverter // TypeDefIndex: 6115
 {
-	[CompilerGeneratedAttribute] 
-	private bool <CamelCaseText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <AllowIntegerValues>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <CamelCaseText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <AllowIntegerValues>k__BackingField;
 
 	public bool CamelCaseText { get; }
 	public bool AllowIntegerValues { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_CamelCaseText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_AllowIntegerValues() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AllowIntegerValues(bool value) { }
 
 	public void .ctor() { }

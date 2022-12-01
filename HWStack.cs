@@ -1,10 +1,10 @@
 internal class HWStack : ICloneable // TypeDefIndex: 1984
 {
-	private object[] stack; 
-	private int growthRate; 
-	private int used; 
-	private int size; 
-	private int limit; 
+	private object[] stack;
+	private int growthRate;
+	private int used;
+	private int size;
+	private int limit;
 
 	internal object Item { get; set; }
 	internal int Length { get; }

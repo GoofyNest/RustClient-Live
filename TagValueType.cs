@@ -1,6 +1,6 @@
-public enum TagValueType // TypeDefIndex: 6755
+public enum TagValueType // TypeDefIndex: 6757
 {
-	public int value__; 
+	public int value__;
 	public const TagValueType None = 0;
 	public const TagValueType NumericalValue = 1;
 	public const TagValueType StringValue = 2;

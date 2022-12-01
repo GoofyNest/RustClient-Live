@@ -1,13 +1,13 @@
-public class PlayingCardsViewmodel : MonoBehaviour // TypeDefIndex: 11319
+public class PlayingCardsViewmodel : MonoBehaviour // TypeDefIndex: 11325
 {
-	[SerializeField] 
-	private Canvas cardUICanvas; 
-	[SerializeField] 
-	private Image cardA; 
-	[SerializeField] 
-	private Image cardB; 
-	[SerializeField] 
-	private Sprite blankCard; 
+	[SerializeField]
+	private Canvas cardUICanvas;
+	[SerializeField]
+	private Image cardA;
+	[SerializeField]
+	private Image cardB;
+	[SerializeField]
+	private Sprite blankCard;
 
 
 	protected void Start() { }

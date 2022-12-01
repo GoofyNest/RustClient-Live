@@ -1,11 +1,11 @@
 internal class CompiledIdentityConstraint // TypeDefIndex: 2143
 {
-	internal XmlQualifiedName name; 
-	private CompiledIdentityConstraint.ConstraintRole role; 
-	private Asttree selector; 
-	private Asttree[] fields; 
-	internal XmlQualifiedName refer; 
-	public static readonly CompiledIdentityConstraint Empty; 
+	internal XmlQualifiedName name;
+	private CompiledIdentityConstraint.ConstraintRole role;
+	private Asttree selector;
+	private Asttree[] fields;
+	internal XmlQualifiedName refer;
+	public static readonly CompiledIdentityConstraint Empty;
 
 	public CompiledIdentityConstraint.ConstraintRole Role { get; }
 	public Asttree Selector { get; }
@@ -28,7 +28,7 @@ internal class CompiledIdentityConstraint // TypeDefIndex: 2143
 
 public enum CompiledIdentityConstraint.ConstraintRole // TypeDefIndex: 2144
 {
-	public int value__; 
+	public int value__;
 	public const CompiledIdentityConstraint.ConstraintRole Unique = 0;
 	public const CompiledIdentityConstraint.ConstraintRole Key = 1;
 	public const CompiledIdentityConstraint.ConstraintRole Keyref = 2;

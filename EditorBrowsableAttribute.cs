@@ -1,6 +1,6 @@
 public sealed class EditorBrowsableAttribute : Attribute // TypeDefIndex: 2699
 {
-	private EditorBrowsableState browsableState; 
+	private EditorBrowsableState browsableState;
 
 
 	public void .ctor(EditorBrowsableState state) { }

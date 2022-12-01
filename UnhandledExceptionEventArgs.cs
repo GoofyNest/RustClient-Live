@@ -1,7 +1,7 @@
 public class UnhandledExceptionEventArgs : EventArgs // TypeDefIndex: 330
 {
-	private object _Exception; 
-	private bool _IsTerminating; 
+	private object _Exception;
+	private bool _IsTerminating;
 
 	public object ExceptionObject { get; }
 	public bool IsTerminating { get; }
@@ -9,10 +9,10 @@ public class UnhandledExceptionEventArgs : EventArgs // TypeDefIndex: 330
 
 	public void .ctor(object exception, bool isTerminating) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public object get_ExceptionObject() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public bool get_IsTerminating() { }
 
 }

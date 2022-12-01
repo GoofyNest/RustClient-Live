@@ -1,39 +1,39 @@
 public struct Matrix4x4 : IEquatable<Matrix4x4> // TypeDefIndex: 3467
 {
-	[NativeNameAttribute] 
-	public float m00; 
-	[NativeNameAttribute] 
-	public float m10; 
-	[NativeNameAttribute] 
-	public float m20; 
-	[NativeNameAttribute] 
-	public float m30; 
-	[NativeNameAttribute] 
-	public float m01; 
-	[NativeNameAttribute] 
-	public float m11; 
-	[NativeNameAttribute] 
-	public float m21; 
-	[NativeNameAttribute] 
-	public float m31; 
-	[NativeNameAttribute] 
-	public float m02; 
-	[NativeNameAttribute] 
-	public float m12; 
-	[NativeNameAttribute] 
-	public float m22; 
-	[NativeNameAttribute] 
-	public float m32; 
-	[NativeNameAttribute] 
-	public float m03; 
-	[NativeNameAttribute] 
-	public float m13; 
-	[NativeNameAttribute] 
-	public float m23; 
-	[NativeNameAttribute] 
-	public float m33; 
-	private static readonly Matrix4x4 zeroMatrix; 
-	private static readonly Matrix4x4 identityMatrix; 
+	[NativeNameAttribute]
+	public float m00;
+	[NativeNameAttribute]
+	public float m10;
+	[NativeNameAttribute]
+	public float m20;
+	[NativeNameAttribute]
+	public float m30;
+	[NativeNameAttribute]
+	public float m01;
+	[NativeNameAttribute]
+	public float m11;
+	[NativeNameAttribute]
+	public float m21;
+	[NativeNameAttribute]
+	public float m31;
+	[NativeNameAttribute]
+	public float m02;
+	[NativeNameAttribute]
+	public float m12;
+	[NativeNameAttribute]
+	public float m22;
+	[NativeNameAttribute]
+	public float m32;
+	[NativeNameAttribute]
+	public float m03;
+	[NativeNameAttribute]
+	public float m13;
+	[NativeNameAttribute]
+	public float m23;
+	[NativeNameAttribute]
+	public float m33;
+	private static readonly Matrix4x4 zeroMatrix;
+	private static readonly Matrix4x4 identityMatrix;
 
 	public Quaternion rotation { get; }
 	public Vector3 lossyScale { get; }
@@ -45,13 +45,13 @@ public struct Matrix4x4 : IEquatable<Matrix4x4> // TypeDefIndex: 3467
 	public static Matrix4x4 identity { get; }
 
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	private Quaternion GetRotation() { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	private Vector3 GetLossyScale() { }
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	private FrustumPlanes DecomposeProjection() { }
 
 	public Quaternion get_rotation() { }
@@ -60,28 +60,28 @@ public struct Matrix4x4 : IEquatable<Matrix4x4> // TypeDefIndex: 3467
 
 	public FrustumPlanes get_decomposeProjection() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 TRS(Vector3 pos, Quaternion q, Vector3 s) { }
 
 	public void SetTRS(Vector3 pos, Quaternion q, Vector3 s) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 Inverse(Matrix4x4 m) { }
 
 	public Matrix4x4 get_inverse() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 Transpose(Matrix4x4 m) { }
 
 	public Matrix4x4 get_transpose() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 Ortho(float left, float right, float bottom, float top, float zNear, float zFar) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 Perspective(float fov, float aspect, float zNear, float zFar) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Matrix4x4 Frustum(float left, float right, float bottom, float top, float zNear, float zFar) { }
 
 	public static Matrix4x4 Frustum(FrustumPlanes fp) { }

@@ -1,6 +1,6 @@
-public enum ValueTaskSourceStatus // TypeDefIndex: 7128
+public enum ValueTaskSourceStatus // TypeDefIndex: 7130
 {
-	public int value__; 
+	public int value__;
 	public const ValueTaskSourceStatus Pending = 0;
 	public const ValueTaskSourceStatus Succeeded = 1;
 	public const ValueTaskSourceStatus Faulted = 2;

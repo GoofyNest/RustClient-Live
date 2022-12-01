@@ -1,7 +1,7 @@
 public struct ShaderTagId : IEquatable<ShaderTagId> // TypeDefIndex: 3856
 {
-	public static readonly ShaderTagId none; 
-	private int m_Id; 
+	public static readonly ShaderTagId none;
+	private int m_Id;
 
 	internal int id { get; set; }
 	public string name { get; }

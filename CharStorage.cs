@@ -1,6 +1,6 @@
 internal sealed class CharStorage : DataStorage // TypeDefIndex: 4373
 {
-	private char[] _values; 
+	private char[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

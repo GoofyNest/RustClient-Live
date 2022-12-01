@@ -1,8 +1,8 @@
-public abstract class ISCIIEncoding : MonoEncoding // TypeDefIndex: 7889
+public abstract class ISCIIEncoding : MonoEncoding // TypeDefIndex: 7891
 {
-	private int shift; 
-	private string encodingName; 
-	private string webName; 
+	private int shift;
+	private string encodingName;
+	private string webName;
 
 	public override string BodyName { get; }
 	public override string EncodingName { get; }

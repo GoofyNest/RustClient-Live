@@ -1,7 +1,7 @@
-internal struct StringBuffer // TypeDefIndex: 5967
+internal struct StringBuffer // TypeDefIndex: 5969
 {
-	private char[] _buffer; 
-	private int _position; 
+	private char[] _buffer;
+	private int _position;
 
 	public int Position { get; set; }
 	public bool IsEmpty { get; }

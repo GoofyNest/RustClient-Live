@@ -1,15 +1,15 @@
 public class StackFrame // TypeDefIndex: 1502
 {
 	public const int OFFSET_UNKNOWN = -1;
-	private int ilOffset; 
-	private int nativeOffset; 
-	private long methodAddress; 
-	private uint methodIndex; 
-	private MethodBase methodBase; 
-	private string fileName; 
-	private int lineNumber; 
-	private int columnNumber; 
-	private string internalMethodName; 
+	private int ilOffset;
+	private int nativeOffset;
+	private long methodAddress;
+	private uint methodIndex;
+	private MethodBase methodBase;
+	private string fileName;
+	private int lineNumber;
+	private int columnNumber;
+	private string internalMethodName;
 
 
 	private static bool get_frame_info(int skip, bool needFileInfo, out MethodBase method, out int iloffset, out int native_offset, out string file, out int line, out int column) { }

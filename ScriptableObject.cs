@@ -24,10 +24,10 @@ public class ScriptableObject : Object // TypeDefIndex: 3526
 	|-ScriptableObject.CreateInstance<PlayerConnection>
 	*/
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static void CreateScriptableObject(ScriptableObject self) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static ScriptableObject CreateScriptableObjectInstanceFromType(Type type, bool applyDefaultsAndReset) { }
 
 }

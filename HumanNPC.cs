@@ -1,15 +1,15 @@
-public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10117
+public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10119
 {
-	private Option __menuOption_MenuDesignAI; 
-	[HeaderAttribute] 
-	public int AdditionalLosBlockingLayer; 
-	[HeaderAttribute] 
-	public LootContainer.LootSpawnSlot[] LootSpawnSlots; 
-	[HeaderAttribute] 
-	public float aimConeScale; 
-	public float lastDismountTime; 
-	[CompilerGeneratedAttribute] 
-	private ScientistBrain <Brain>k__BackingField; 
+	private Option __menuOption_MenuDesignAI;
+	[HeaderAttribute]
+	public int AdditionalLosBlockingLayer;
+	[HeaderAttribute]
+	public LootContainer.LootSpawnSlot[] LootSpawnSlots;
+	[HeaderAttribute]
+	public float aimConeScale;
+	public float lastDismountTime;
+	[CompilerGeneratedAttribute]
+	private ScientistBrain <Brain>k__BackingField;
 
 	public override bool HasMenuOptions { get; }
 	public ScientistBrain Brain { get; set; }
@@ -25,15 +25,15 @@ public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10117
 
 	public override float MaxHealth() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ScientistBrain get_Brain() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Brain(ScientistBrain value) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuDesignAI(BasePlayer ply) { }
 
 	public bool CanDesignAI(BasePlayer player) { }

@@ -1,8 +1,8 @@
 internal sealed class SearchResult // TypeDefIndex: 631
 {
-	private string fullPath; 
-	private string userPath; 
-	private Win32Native.WIN32_FIND_DATA findData; 
+	private string fullPath;
+	private string userPath;
+	private Win32Native.WIN32_FIND_DATA findData;
 
 	internal string UserPath { get; }
 	internal Win32Native.WIN32_FIND_DATA FindData { get; }

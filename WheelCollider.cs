@@ -1,8 +1,8 @@
 public class WheelCollider : Collider // TypeDefIndex: 4777
 {
 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
 public class WheelCollider : Collider
 	public float radius { get; }
 	public float suspensionDistance { get; }
@@ -24,7 +24,7 @@ public class WheelCollider : Collider
 
 	public void set_steerAngle(float value) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public bool get_isGrounded() { }
 
 }

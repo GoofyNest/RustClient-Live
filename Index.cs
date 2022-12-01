@@ -1,19 +1,19 @@
 internal sealed class Index // TypeDefIndex: 4305
 {
-	private readonly DataTable _table; 
-	internal readonly IndexField[] _indexFields; 
-	private readonly Comparison<DataRow> _comparison; 
-	private readonly DataViewRowState _recordStates; 
-	private WeakReference _rowFilter; 
-	private Index.IndexTree _records; 
-	private int _recordCount; 
-	private int _refCount; 
-	private Listeners<DataViewListener> _listeners; 
-	private bool _suspendEvents; 
-	private readonly bool _isSharable; 
-	private readonly bool _hasRemoteAggregate; 
-	private static int s_objectTypeCount; 
-	private readonly int _objectID; 
+	private readonly DataTable _table;
+	internal readonly IndexField[] _indexFields;
+	private readonly Comparison<DataRow> _comparison;
+	private readonly DataViewRowState _recordStates;
+	private WeakReference _rowFilter;
+	private Index.IndexTree _records;
+	private int _recordCount;
+	private int _refCount;
+	private Listeners<DataViewListener> _listeners;
+	private bool _suspendEvents;
+	private readonly bool _isSharable;
+	private readonly bool _hasRemoteAggregate;
+	private static int s_objectTypeCount;
+	private readonly int _objectID;
 
 	internal bool HasRemoteAggregate { get; }
 	internal int ObjectID { get; }
@@ -163,7 +163,7 @@ internal sealed class Index // TypeDefIndex: 4305
 
 private sealed class Index.IndexTree : RBTree<int> // TypeDefIndex: 4306
 {
-	private readonly Index _index; 
+	private readonly Index _index;
 
 
 	internal void .ctor(Index index) { }
@@ -176,9 +176,9 @@ private sealed class Index.IndexTree : RBTree<int> // TypeDefIndex: 4306
 
 private sealed class Index.<>c // TypeDefIndex: 4307
 {
-	public static readonly Index.<>c <>9; 
-	public static Listeners.Func<DataViewListener, DataViewListener, bool> <>9__22_0; 
-	public static Listeners.Action<DataViewListener, DataViewListener, ListChangedEventArgs, bool, bool> <>9__85_0; 
+	public static readonly Index.<>c <>9;
+	public static Listeners.Func<DataViewListener, DataViewListener, bool> <>9__22_0;
+	public static Listeners.Action<DataViewListener, DataViewListener, ListChangedEventArgs, bool, bool> <>9__85_0;
 
 
 	private static void .cctor() { }
@@ -193,7 +193,7 @@ private sealed class Index.<>c // TypeDefIndex: 4307
 
 private sealed class Index.<>c__DisplayClass86_0 // TypeDefIndex: 4308
 {
-	public ListChangedType changedType; 
+	public ListChangedType changedType;
 
 
 	public void .ctor() { }

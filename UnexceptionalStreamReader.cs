@@ -1,7 +1,7 @@
 internal class UnexceptionalStreamReader : StreamReader // TypeDefIndex: 681
 {
-	private static bool[] newline; 
-	private static char newlineChar; 
+	private static bool[] newline;
+	private static char newlineChar;
 
 
 	private static void .cctor() { }

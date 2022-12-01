@@ -1,6 +1,6 @@
-public class AttractionPoint : PrefabAttribute // TypeDefIndex: 10775
+public class AttractionPoint : PrefabAttribute // TypeDefIndex: 10779
 {
-	public string groupName; 
+	public string groupName;
 
 
 	protected override Type GetIndexedType() { }

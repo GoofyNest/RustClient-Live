@@ -1,15 +1,15 @@
-public class NoticeArea : SingletonComponent<NoticeArea> // TypeDefIndex: 12806
+public class NoticeArea : SingletonComponent<NoticeArea> // TypeDefIndex: 12820
 {
-	public GameObjectRef itemPickupPrefab; 
-	public GameObjectRef itemPickupCondensedText; 
-	public GameObjectRef itemDroppedPrefab; 
-	public AnimationCurve pickupSizeCurve; 
-	public AnimationCurve pickupAlphaCurve; 
-	public AnimationCurve reuseAlphaCurve; 
-	public AnimationCurve reuseSizeCurve; 
-	private IVitalNotice[] notices; 
-	private List<ItemPickupNotice> pickups; 
-	private RealTimeSince timeSinceUpdatedNotices; 
+	public GameObjectRef itemPickupPrefab;
+	public GameObjectRef itemPickupCondensedText;
+	public GameObjectRef itemDroppedPrefab;
+	public AnimationCurve pickupSizeCurve;
+	public AnimationCurve pickupAlphaCurve;
+	public AnimationCurve reuseAlphaCurve;
+	public AnimationCurve reuseSizeCurve;
+	private IVitalNotice[] notices;
+	private List<ItemPickupNotice> pickups;
+	private RealTimeSince timeSinceUpdatedNotices;
 
 
 	protected override void Awake() { }

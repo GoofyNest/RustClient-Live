@@ -1,26 +1,26 @@
-public class CardGameSounds : PrefabAttribute // TypeDefIndex: 11316
+public class CardGameSounds : PrefabAttribute // TypeDefIndex: 11322
 {
-	public SoundDefinition ChipsSfx; 
-	public SoundDefinition DrawSfx; 
-	public SoundDefinition PlaySfx; 
-	public SoundDefinition ShuffleSfx; 
-	public SoundDefinition WinSfx; 
-	public SoundDefinition LoseSfx; 
-	public SoundDefinition YourTurnSfx; 
-	public SoundDefinition CheckSfx; 
-	public SoundDefinition HitSfx; 
-	public SoundDefinition StandSfx; 
-	public SoundDefinition BetSfx; 
-	public SoundDefinition IncreaseBetSfx; 
-	public SoundDefinition DecreaseBetSfx; 
-	public SoundDefinition AllInSfx; 
-	public SoundDefinition UIInteractSfx; 
-	[HeaderAttribute] 
-	public SoundDefinition DealerCoolSfx; 
-	public SoundDefinition DealerHappySfx; 
-	public SoundDefinition DealerLoveSfx; 
-	public SoundDefinition DealerSadSfx; 
-	public SoundDefinition DealerShockedSfx; 
+	public SoundDefinition ChipsSfx;
+	public SoundDefinition DrawSfx;
+	public SoundDefinition PlaySfx;
+	public SoundDefinition ShuffleSfx;
+	public SoundDefinition WinSfx;
+	public SoundDefinition LoseSfx;
+	public SoundDefinition YourTurnSfx;
+	public SoundDefinition CheckSfx;
+	public SoundDefinition HitSfx;
+	public SoundDefinition StandSfx;
+	public SoundDefinition BetSfx;
+	public SoundDefinition IncreaseBetSfx;
+	public SoundDefinition DecreaseBetSfx;
+	public SoundDefinition AllInSfx;
+	public SoundDefinition UIInteractSfx;
+	[HeaderAttribute]
+	public SoundDefinition DealerCoolSfx;
+	public SoundDefinition DealerHappySfx;
+	public SoundDefinition DealerLoveSfx;
+	public SoundDefinition DealerSadSfx;
+	public SoundDefinition DealerShockedSfx;
 
 
 	protected override Type GetIndexedType() { }
@@ -31,9 +31,9 @@ public class CardGameSounds : PrefabAttribute // TypeDefIndex: 11316
 
 }
 
-public enum CardGameSounds.SoundType // TypeDefIndex: 11317
+public enum CardGameSounds.SoundType // TypeDefIndex: 11323
 {
-	public int value__; 
+	public int value__;
 	public const CardGameSounds.SoundType Chips = 0;
 	public const CardGameSounds.SoundType Draw = 1;
 	public const CardGameSounds.SoundType Play = 2;

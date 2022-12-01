@@ -1,11 +1,11 @@
-public class SearchFilterInput : MonoBehaviour // TypeDefIndex: 10964
+public class SearchFilterInput : MonoBehaviour // TypeDefIndex: 10970
 {
-	public GameObject OpenRoot; 
-	public GameObject ClosedRoot; 
-	public RustInput InputField; 
-	[CompilerGeneratedAttribute] 
-	private string <CurrentSearchInput>k__BackingField; 
-	public Action<string> OnSearchFilterChanged; 
+	public GameObject OpenRoot;
+	public GameObject ClosedRoot;
+	public RustInput InputField;
+	[CompilerGeneratedAttribute]
+	private string <CurrentSearchInput>k__BackingField;
+	public Action<string> OnSearchFilterChanged;
 
 	public bool IsOpen { get; }
 	public string CurrentSearchInput { get; set; }
@@ -13,10 +13,10 @@ public class SearchFilterInput : MonoBehaviour // TypeDefIndex: 10964
 
 	public bool get_IsOpen() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_CurrentSearchInput() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentSearchInput(string value) { }
 
 	public void Toggle() { }

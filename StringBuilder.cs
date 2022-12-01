@@ -1,10 +1,10 @@
 public sealed class StringBuilder : ISerializable // TypeDefIndex: 463
 {
-	internal char[] m_ChunkChars; 
-	internal StringBuilder m_ChunkPrevious; 
-	internal int m_ChunkLength; 
-	internal int m_ChunkOffset; 
-	internal int m_MaxCapacity; 
+	internal char[] m_ChunkChars;
+	internal StringBuilder m_ChunkPrevious;
+	internal int m_ChunkLength;
+	internal int m_ChunkOffset;
+	internal int m_MaxCapacity;
 	internal const int DefaultCapacity = 16;
 	private const string CapacityField = "Capacity";
 	private const string MaxCapacityField = "m_MaxCapacity";
@@ -62,10 +62,10 @@ public sealed class StringBuilder : ISerializable // TypeDefIndex: 463
 
 	public StringBuilder Append(string value, int startIndex, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public StringBuilder AppendLine() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public StringBuilder AppendLine(string value) { }
 
 	public StringBuilder Insert(int index, string value, int count) { }
@@ -84,7 +84,7 @@ public sealed class StringBuilder : ISerializable // TypeDefIndex: 463
 
 	public StringBuilder Append(double value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public StringBuilder Append(uint value) { }
 
 	public StringBuilder Append(object value) { }
@@ -115,7 +115,7 @@ public sealed class StringBuilder : ISerializable // TypeDefIndex: 463
 
 	public StringBuilder Replace(string oldValue, string newValue, int startIndex, int count) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public StringBuilder Append(char* value, int valueCount) { }
 
 	private void Insert(int index, char* value, int valueCount) { }

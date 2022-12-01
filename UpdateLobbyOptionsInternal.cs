@@ -1,7 +1,7 @@
-internal struct UpdateLobbyOptionsInternal : ISettable<UpdateLobbyOptions>, IDisposable // TypeDefIndex: 9275
+internal struct UpdateLobbyOptionsInternal : ISettable<UpdateLobbyOptions>, IDisposable // TypeDefIndex: 9277
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyModificationHandle; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyModificationHandle;
 
 	public LobbyModification LobbyModificationHandle { set; }
 

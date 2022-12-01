@@ -1,12 +1,12 @@
-public class OreHotSpot : BaseCombatEntity, ILOD // TypeDefIndex: 10533
+public class OreHotSpot : BaseCombatEntity, ILOD // TypeDefIndex: 10537
 {
-	public float visualDistance; 
-	public GameObjectRef visualEffect; 
-	public GameObjectRef finishEffect; 
-	public GameObjectRef damageEffect; 
-	public OreResourceEntity owner; 
-	private GameObject visualInstance; 
-	private LODCell cell; 
+	public float visualDistance;
+	public GameObjectRef visualEffect;
+	public GameObjectRef finishEffect;
+	public GameObjectRef damageEffect;
+	public OreResourceEntity owner;
+	private GameObject visualInstance;
+	private LODCell cell;
 
 
 	protected override void ClientInit(Entity info) { }

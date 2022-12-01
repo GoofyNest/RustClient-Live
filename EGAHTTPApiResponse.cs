@@ -1,6 +1,6 @@
-internal enum EGAHTTPApiResponse // TypeDefIndex: 5679
+internal enum EGAHTTPApiResponse // TypeDefIndex: 5681
 {
-	public int value__; 
+	public int value__;
 	public const EGAHTTPApiResponse NoResponse = 0;
 	public const EGAHTTPApiResponse BadResponse = 1;
 	public const EGAHTTPApiResponse RequestTimeout = 2;

@@ -1,8 +1,8 @@
-public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6312
+public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6314
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int code; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int code;
 
 
 	public static void ResetToPool(KeyLock instance) { }
@@ -59,13 +59,13 @@ public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6312
 
 }
 
-public class KeyLock : BaseLock // TypeDefIndex: 10119
+public class KeyLock : BaseLock // TypeDefIndex: 10121
 {
-	private Option __menuOption_Menu_CreateKey; 
-	private Option __menuOption_Menu_Lock; 
-	private Option __menuOption_Menu_Unlock; 
-	[ItemSelector] 
-	public ItemDefinition keyItemType; 
+	private Option __menuOption_Menu_CreateKey;
+	private Option __menuOption_Menu_Lock;
+	private Option __menuOption_Menu_Unlock;
+	[ItemSelector]
+	public ItemDefinition keyItemType;
 
 	public override bool HasMenuOptions { get; }
 
@@ -76,25 +76,25 @@ public class KeyLock : BaseLock // TypeDefIndex: 10119
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Unlock(BasePlayer player) { }
 
 	public bool Menu_Unlock_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Lock(BasePlayer player) { }
 
 	public bool Menu_Lock_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
 	public void Menu_CreateKey(BasePlayer player) { }
 
 	public void Menu_CreateKey_Proxy(ref Option option) { }

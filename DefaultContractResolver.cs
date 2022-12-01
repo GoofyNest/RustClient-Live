@@ -1,22 +1,22 @@
-public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5998
+public class DefaultContractResolver : IContractResolver // TypeDefIndex: 6000
 {
-	private static readonly IContractResolver _instance; 
-	private static readonly JsonConverter[] BuiltInConverters; 
-	private static readonly object TypeContractCacheLock; 
-	private static readonly DefaultContractResolverState _sharedState; 
-	private readonly DefaultContractResolverState _instanceState; 
-	private readonly bool _sharedCache; 
-	[CompilerGeneratedAttribute] 
-	private BindingFlags <DefaultMembersSearchFlags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <SerializeCompilerGeneratedMembers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IgnoreSerializableInterface>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IgnoreSerializableAttribute>k__BackingField; 
+	private static readonly IContractResolver _instance;
+	private static readonly JsonConverter[] BuiltInConverters;
+	private static readonly object TypeContractCacheLock;
+	private static readonly DefaultContractResolverState _sharedState;
+	private readonly DefaultContractResolverState _instanceState;
+	private readonly bool _sharedCache;
+	[CompilerGeneratedAttribute]
+	private BindingFlags <DefaultMembersSearchFlags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <SerializeCompilerGeneratedMembers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IgnoreSerializableInterface>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IgnoreSerializableAttribute>k__BackingField;
 
 	internal static IContractResolver Instance { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public BindingFlags DefaultMembersSearchFlags { get; set; }
 	public bool SerializeCompilerGeneratedMembers { get; }
 	public bool IgnoreSerializableInterface { get; }
@@ -25,27 +25,27 @@ public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5998
 
 	internal static IContractResolver get_Instance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BindingFlags get_DefaultMembersSearchFlags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DefaultMembersSearchFlags(BindingFlags value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_SerializeCompilerGeneratedMembers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IgnoreSerializableInterface() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IgnoreSerializableAttribute() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IgnoreSerializableAttribute(bool value) { }
 
 	public void .ctor() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public void .ctor(bool shareCache) { }
 
 	internal DefaultContractResolverState GetState() { }
@@ -132,22 +132,22 @@ public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5998
 
 }
 
-private sealed class DefaultContractResolver.<>c // TypeDefIndex: 6001
+private sealed class DefaultContractResolver.<>c // TypeDefIndex: 6003
 {
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 private sealed class DefaultContractResolver.EnumerableDictionaryWrapper.<GetEnumerator>d__2<TEnumeratorKey, TEnumeratorValue>
 
-[CompilerGeneratedAttribute] 
+[CompilerGeneratedAttribute]
 [Serializable]
 private sealed class DefaultContractResolver.<>c
-	public static readonly DefaultContractResolver.<>c <>9; 
-	public static Func<MemberInfo, bool> <>9__30_0; 
-	public static Func<MemberInfo, bool> <>9__30_1; 
-	public static Func<Type, IEnumerable<MemberInfo>> <>9__33_0; 
-	public static Func<MemberInfo, bool> <>9__33_1; 
-	public static Func<ConstructorInfo, bool> <>9__36_0; 
-	public static Func<JsonProperty, int> <>9__60_0; 
+	public static readonly DefaultContractResolver.<>c <>9;
+	public static Func<MemberInfo, bool> <>9__30_0;
+	public static Func<MemberInfo, bool> <>9__30_1;
+	public static Func<Type, IEnumerable<MemberInfo>> <>9__33_0;
+	public static Func<MemberInfo, bool> <>9__33_1;
+	public static Func<ConstructorInfo, bool> <>9__36_0;
+	public static Func<JsonProperty, int> <>9__60_0;
 
 
 	private static void .cctor() { }
@@ -168,21 +168,21 @@ private sealed class DefaultContractResolver.<>c
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefIndex: 6002
+private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefIndex: 6004
 {
-	public Func<object, object> getExtensionDataDictionary; 
-	public MemberInfo member; 
+	public Func<object, object> getExtensionDataDictionary;
+	public MemberInfo member;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefIndex: 6003
+private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefIndex: 6005
 {
-	public Action<object, object> setExtensionDataDictionary; 
-	public Func<object> createExtensionDataDictionary; 
-	public MethodCall<object, object> setExtensionDataDictionaryValue; 
+	public Action<object, object> setExtensionDataDictionary;
+	public Func<object> createExtensionDataDictionary;
+	public MethodCall<object, object> setExtensionDataDictionaryValue;
 	public DefaultContractResolver.<>c
 
 
@@ -192,9 +192,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefIndex: 6004
+private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefIndex: 6006
 {
-	public ObjectConstructor<object> createEnumerableWrapper; 
+	public ObjectConstructor<object> createEnumerableWrapper;
 	public DefaultContractResolver.<>c
 
 
@@ -204,9 +204,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefIndex: 6005
+private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefIndex: 6007
 {
-	public MethodCall<object, object> shouldSerializeCall; 
+	public MethodCall<object, object> shouldSerializeCall;
 
 
 	public void .ctor() { }
@@ -215,9 +215,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefIndex: 6006
+private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefIndex: 6008
 {
-	public Func<object, object> specifiedPropertyGet; 
+	public Func<object, object> specifiedPropertyGet;
 
 
 	public void .ctor() { }

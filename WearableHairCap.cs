@@ -1,14 +1,14 @@
-public class WearableHairCap : MonoBehaviour // TypeDefIndex: 10985
+public class WearableHairCap : MonoBehaviour // TypeDefIndex: 10991
 {
-	public HairType Type; 
-	[ColorUsageAttribute] 
-	public Color BaseColor; 
-	public Texture Mask; 
-	private static MaterialPropertyBlock block; 
-	private static int _HairBaseColorUV1; 
-	private static int _HairBaseColorUV2; 
-	private static int _HairPackedMapUV1; 
-	private static int _HairPackedMapUV2; 
+	public HairType Type;
+	[ColorUsageAttribute]
+	public Color BaseColor;
+	public Texture Mask;
+	private static MaterialPropertyBlock block;
+	private static int _HairBaseColorUV1;
+	private static int _HairBaseColorUV2;
+	private static int _HairPackedMapUV1;
+	private static int _HairPackedMapUV2;
 
 
 	public void ApplyHairCap(MaterialPropertyBlock block) { }

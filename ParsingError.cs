@@ -1,6 +1,6 @@
 internal enum ParsingError // TypeDefIndex: 2579
 {
-	public int value__; 
+	public int value__;
 	public const ParsingError None = 0;
 	public const ParsingError BadFormat = 1;
 	public const ParsingError BadScheme = 2;

@@ -1,11 +1,11 @@
-internal struct OnIncomingPacketQueueFullInfoInternal : ICallbackInfoInternal, IGettable<OnIncomingPacketQueueFullInfo>, ISettable<OnIncomingPacketQueueFullInfo>, IDisposable // TypeDefIndex: 8973
+internal struct OnIncomingPacketQueueFullInfoInternal : ICallbackInfoInternal, IGettable<OnIncomingPacketQueueFullInfo>, ISettable<OnIncomingPacketQueueFullInfo>, IDisposable // TypeDefIndex: 8975
 {
-	private IntPtr m_ClientData; 
-	private ulong m_PacketQueueMaxSizeBytes; 
-	private ulong m_PacketQueueCurrentSizeBytes; 
-	private IntPtr m_OverflowPacketLocalUserId; 
-	private byte m_OverflowPacketChannel; 
-	private uint m_OverflowPacketSizeBytes; 
+	private IntPtr m_ClientData;
+	private ulong m_PacketQueueMaxSizeBytes;
+	private ulong m_PacketQueueCurrentSizeBytes;
+	private IntPtr m_OverflowPacketLocalUserId;
+	private byte m_OverflowPacketChannel;
+	private uint m_OverflowPacketSizeBytes;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

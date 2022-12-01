@@ -1,7 +1,7 @@
-public class ProcessedTexture // TypeDefIndex: 13153
+public class ProcessedTexture // TypeDefIndex: 13168
 {
-	protected RenderTexture result; 
-	protected Material material; 
+	protected RenderTexture result;
+	protected Material material;
 
 
 	public void Dispose() { }

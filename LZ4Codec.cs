@@ -1,11 +1,11 @@
-public static class LZ4Codec // TypeDefIndex: 6885
+public static class LZ4Codec // TypeDefIndex: 6887
 {
 
 public static class LZ4Codec
-	private static readonly int[] DECODER_TABLE_32; 
-	private static readonly int[] DECODER_TABLE_64; 
-	private static readonly int[] DEBRUIJN_TABLE_32; 
-	private static readonly int[] DEBRUIJN_TABLE_64; 
+	private static readonly int[] DECODER_TABLE_32;
+	private static readonly int[] DECODER_TABLE_64;
+	private static readonly int[] DEBRUIJN_TABLE_32;
+	private static readonly int[] DEBRUIJN_TABLE_64;
 
 
 	internal static void CheckArguments(byte[] input, int inputOffset, ref int inputLength, byte[] output, int outputOffset, ref int outputLength) { }
@@ -84,19 +84,19 @@ public static class LZ4Codec
 
 }
 
-private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6886
+private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6888
 {
-	public byte* src_base; 
-	public byte* nextToUpdate; 
-	public int[] hashTable; 
-	public ushort[] chainTable; 
+	public byte* src_base;
+	public byte* nextToUpdate;
+	public int[] hashTable;
+	public ushort[] chainTable;
 
 
 	public void .ctor() { }
 
 }
 
-public static class LZ4Codec // TypeDefIndex: 7019
+public static class LZ4Codec // TypeDefIndex: 7021
 {
 
 private struct <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=68
@@ -122,10 +122,10 @@ private struct <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FE
 internal class <Module>
 
 public static class LZ4Codec
-	private static readonly int[] DECODER_TABLE_32; 
-	private static readonly int[] DECODER_TABLE_64; 
-	private static readonly int[] DEBRUIJN_TABLE_32; 
-	private static readonly int[] DEBRUIJN_TABLE_64; 
+	private static readonly int[] DECODER_TABLE_32;
+	private static readonly int[] DECODER_TABLE_64;
+	private static readonly int[] DEBRUIJN_TABLE_32;
+	private static readonly int[] DEBRUIJN_TABLE_64;
 
 
 	internal static void CheckArguments(byte[] input, int inputOffset, ref int inputLength, byte[] output, int outputOffset, ref int outputLength) { }
@@ -216,38 +216,38 @@ public static class LZ4Codec
 
 }
 
-private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 7020
+private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 7022
 {
-	public byte[] src; 
-	public int src_base; 
-	public int src_end; 
-	public int src_LASTLITERALS; 
-	public byte[] dst; 
-	public int dst_base; 
-	public int dst_len; 
-	public int dst_end; 
-	public int[] hashTable; 
-	public ushort[] chainTable; 
-	public int nextToUpdate; 
+	public byte[] src;
+	public int src_base;
+	public int src_end;
+	public int src_LASTLITERALS;
+	public byte[] dst;
+	public int dst_base;
+	public int dst_len;
+	public int dst_end;
+	public int[] hashTable;
+	public ushort[] chainTable;
+	public int nextToUpdate;
 
 
 	public void .ctor() { }
 
 }
 
-public static class LZ4Codec // TypeDefIndex: 7027
+public static class LZ4Codec // TypeDefIndex: 7029
 {
-	private static readonly ILZ4Service Encoder; 
-	private static readonly ILZ4Service EncoderHC; 
-	private static readonly ILZ4Service Decoder; 
-	private static ILZ4Service _service_MM32; 
-	private static ILZ4Service _service_MM64; 
-	private static ILZ4Service _service_CC32; 
-	private static ILZ4Service _service_CC64; 
-	private static ILZ4Service _service_N32; 
-	private static ILZ4Service _service_N64; 
-	private static ILZ4Service _service_S32; 
-	private static ILZ4Service _service_S64; 
+	private static readonly ILZ4Service Encoder;
+	private static readonly ILZ4Service EncoderHC;
+	private static readonly ILZ4Service Decoder;
+	private static ILZ4Service _service_MM32;
+	private static ILZ4Service _service_MM64;
+	private static ILZ4Service _service_CC32;
+	private static ILZ4Service _service_CC64;
+	private static ILZ4Service _service_N32;
+	private static ILZ4Service _service_N64;
+	private static ILZ4Service _service_S32;
+	private static ILZ4Service _service_S64;
 
 
 	private static bool Has2010Runtime() { }

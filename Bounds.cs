@@ -1,8 +1,8 @@
 public struct Bounds : IEquatable<Bounds> // TypeDefIndex: 3372
 {
-	private Vector3 m_Center; 
-	[NativeNameAttribute] 
-	private Vector3 m_Extents; 
+	private Vector3 m_Center;
+	[NativeNameAttribute]
+	private Vector3 m_Extents;
 
 	public Vector3 center { get; set; }
 	public Vector3 size { get; set; }
@@ -55,16 +55,16 @@ public struct Bounds : IEquatable<Bounds> // TypeDefIndex: 3372
 
 	public override string ToString() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool Contains(Vector3 point) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public float SqrDistance(Vector3 point) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool IntersectRayAABB(Ray ray, Bounds bounds, out float dist) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Vector3 ClosestPoint(Vector3 point) { }
 
 	private static bool Contains_Injected(ref Bounds _unity_self, ref Vector3 point) { }

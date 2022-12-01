@@ -1,6 +1,6 @@
-public static class TimeEx // TypeDefIndex: 6865
+public static class TimeEx // TypeDefIndex: 6867
 {
-	private static Stopwatch stopwatch; 
+	private static Stopwatch stopwatch;
 
 	public static double realtimeSinceStartup { get; }
 	public static double currentTimestamp { get; }

@@ -1,8 +1,8 @@
 public sealed class UTF32Encoding : Encoding // TypeDefIndex: 467
 {
-	private bool emitUTF32ByteOrderMark; 
-	private bool isThrowException; 
-	private bool bigEndian; 
+	private bool emitUTF32ByteOrderMark;
+	private bool isThrowException;
+	private bool bigEndian;
 
 
 	public void .ctor() { }
@@ -17,24 +17,24 @@ public sealed class UTF32Encoding : Encoding // TypeDefIndex: 467
 
 	public override int GetByteCount(string s) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public override int GetByteCount(char* chars, int count) { }
 
 	public override int GetBytes(string s, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public override int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
 	public override string GetString(byte[] bytes, int index, int count) { }
@@ -71,8 +71,8 @@ public sealed class UTF32Encoding : Encoding // TypeDefIndex: 467
 
 internal class UTF32Encoding.UTF32Decoder : DecoderNLS // TypeDefIndex: 468
 {
-	internal int iChar; 
-	internal int readByteCount; 
+	internal int iChar;
+	internal int readByteCount;
 
 	internal override bool HasState { get; }
 

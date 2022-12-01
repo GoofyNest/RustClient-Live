@@ -1,15 +1,15 @@
-public class VersionInfo // TypeDefIndex: 13355
+public class VersionInfo // TypeDefIndex: 13370
 {
 	public const byte Major = 2;
 	public const byte Minor = 0;
 	public const byte Release = 0;
-	private static string StageSuffix; 
-	[SerializeField] 
-	private int m_major; 
-	[SerializeField] 
-	private int m_minor; 
-	[SerializeField] 
-	private int m_release; 
+	private static string StageSuffix;
+	[SerializeField]
+	private int m_major;
+	[SerializeField]
+	private int m_minor;
+	[SerializeField]
+	private int m_release;
 
 	public int Number { get; }
 

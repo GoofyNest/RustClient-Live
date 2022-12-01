@@ -1,14 +1,14 @@
-public class IconSkinPicker : MonoBehaviour // TypeDefIndex: 10919
+public class IconSkinPicker : MonoBehaviour // TypeDefIndex: 10925
 {
-	private static IconSkinPicker.SkinHistory loadedHistory; 
+	private static IconSkinPicker.SkinHistory loadedHistory;
 	private const string PrefsKey = "SkinHistory";
-	public GameObjectRef pickerIcon; 
-	public GameObject container; 
-	public Action skinChangedEvent; 
-	public ScrollRect scroller; 
-	public SearchFilterInput searchFilter; 
-	private ItemBlueprint lastBlueprintRefresh; 
-	private List<IconSkin> spawnedSkinIcons; 
+	public GameObjectRef pickerIcon;
+	public GameObject container;
+	public Action skinChangedEvent;
+	public ScrollRect scroller;
+	public SearchFilterInput searchFilter;
+	private ItemBlueprint lastBlueprintRefresh;
+	private List<IconSkin> spawnedSkinIcons;
 
 
 	public static bool HasRecentlyUsed(int skinId, out TimeSpan timeSince) { }
@@ -43,21 +43,21 @@ public class IconSkinPicker : MonoBehaviour // TypeDefIndex: 10919
 
 }
 
-private class IconSkinPicker.SkinHistory // TypeDefIndex: 10920
+private class IconSkinPicker.SkinHistory // TypeDefIndex: 10926
 {
-	public Dictionary<int, long> lastUsedSkins; 
+	public Dictionary<int, long> lastUsedSkins;
 
 
 	public void .ctor() { }
 
 }
 
-private struct IconSkinPicker.SkinButtonSetup // TypeDefIndex: 10921
+private struct IconSkinPicker.SkinButtonSetup // TypeDefIndex: 10927
 {
-	public ItemDefinition item; 
-	public int skinid; 
-	public string text; 
-	public bool canUse; 
+	public ItemDefinition item;
+	public int skinid;
+	public string text;
+	public bool canUse;
 
 }
 

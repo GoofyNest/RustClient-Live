@@ -1,10 +1,10 @@
-public class SoundFollowCollider : MonoBehaviour, IClientComponent // TypeDefIndex: 10758
+public class SoundFollowCollider : MonoBehaviour, IClientComponent // TypeDefIndex: 10762
 {
-	public SoundDefinition soundDefinition; 
-	public Sound sound; 
-	public Bounds soundFollowBounds; 
-	public bool startImmediately; 
-	private bool soundPlaying; 
+	public SoundDefinition soundDefinition;
+	public Sound sound;
+	public Bounds soundFollowBounds;
+	public bool startImmediately;
+	private bool soundPlaying;
 
 
 	private void Awake() { }

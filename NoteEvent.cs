@@ -1,4 +1,4 @@
-public abstract class NoteEvent : ChannelEvent // TypeDefIndex: 7539
+public abstract class NoteEvent : ChannelEvent // TypeDefIndex: 7541
 {
 	public SevenBitNumber NoteNumber { get; set; }
 	public SevenBitNumber Velocity { get; set; }

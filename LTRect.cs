@@ -1,28 +1,28 @@
-public class LTRect // TypeDefIndex: 5592
+public class LTRect // TypeDefIndex: 5594
 {
-	public Rect _rect; 
-	public float alpha; 
-	public float rotation; 
-	public Vector2 pivot; 
-	public Vector2 margin; 
-	public Rect relativeRect; 
-	public bool rotateEnabled; 
-	[HideInInspector] 
-	public bool rotateFinished; 
-	public bool alphaEnabled; 
-	public string labelStr; 
-	public LTGUI.Element_Type type; 
-	public GUIStyle style; 
-	public bool useColor; 
-	public Color color; 
-	public bool fontScaleToFit; 
-	public bool useSimpleScale; 
-	public bool sizeByHeight; 
-	public Texture texture; 
-	private int _id; 
-	[HideInInspector] 
-	public int counter; 
-	public static bool colorTouched; 
+	public Rect _rect;
+	public float alpha;
+	public float rotation;
+	public Vector2 pivot;
+	public Vector2 margin;
+	public Rect relativeRect;
+	public bool rotateEnabled;
+	[HideInInspector]
+	public bool rotateFinished;
+	public bool alphaEnabled;
+	public string labelStr;
+	public LTGUI.Element_Type type;
+	public GUIStyle style;
+	public bool useColor;
+	public Color color;
+	public bool fontScaleToFit;
+	public bool useSimpleScale;
+	public bool sizeByHeight;
+	public Texture texture;
+	private int _id;
+	[HideInInspector]
+	public int counter;
+	public static bool colorTouched;
 
 	public bool hasInitiliazed { get; }
 	public int id { get; }

@@ -34,15 +34,15 @@ internal sealed class UnsafeNativeMethods.ManifestEtw.EtwEnableCallback : Multic
 
 internal struct UnsafeNativeMethods.ManifestEtw.EVENT_FILTER_DESCRIPTOR // TypeDefIndex: 93
 {
-	public long Ptr; 
-	public int Size; 
-	public int Type; 
+	public long Ptr;
+	public int Size;
+	public int Type;
 
 }
 
 internal enum UnsafeNativeMethods.ManifestEtw.ActivityControl // TypeDefIndex: 94
 {
-	public uint value__; 
+	public uint value__;
 	public const UnsafeNativeMethods.ManifestEtw.ActivityControl EVENT_ACTIVITY_CTRL_GET_ID = 1;
 	public const UnsafeNativeMethods.ManifestEtw.ActivityControl EVENT_ACTIVITY_CTRL_SET_ID = 2;
 	public const UnsafeNativeMethods.ManifestEtw.ActivityControl EVENT_ACTIVITY_CTRL_CREATE_ID = 3;
@@ -53,7 +53,7 @@ internal enum UnsafeNativeMethods.ManifestEtw.ActivityControl // TypeDefIndex: 9
 
 internal enum UnsafeNativeMethods.ManifestEtw.EVENT_INFO_CLASS // TypeDefIndex: 95
 {
-	public int value__; 
+	public int value__;
 	public const UnsafeNativeMethods.ManifestEtw.EVENT_INFO_CLASS BinaryTrackInfo = 0;
 	public const UnsafeNativeMethods.ManifestEtw.EVENT_INFO_CLASS SetEnableAllKeywords = 1;
 	public const UnsafeNativeMethods.ManifestEtw.EVENT_INFO_CLASS SetTraits = 2;
@@ -62,7 +62,7 @@ internal enum UnsafeNativeMethods.ManifestEtw.EVENT_INFO_CLASS // TypeDefIndex: 
 
 internal enum UnsafeNativeMethods.ManifestEtw.TRACE_QUERY_INFO_CLASS // TypeDefIndex: 96
 {
-	public int value__; 
+	public int value__;
 	public const UnsafeNativeMethods.ManifestEtw.TRACE_QUERY_INFO_CLASS TraceGuidQueryList = 0;
 	public const UnsafeNativeMethods.ManifestEtw.TRACE_QUERY_INFO_CLASS TraceGuidQueryInfo = 1;
 	public const UnsafeNativeMethods.ManifestEtw.TRACE_QUERY_INFO_CLASS TraceGuidQueryProcess = 2;
@@ -73,38 +73,38 @@ internal enum UnsafeNativeMethods.ManifestEtw.TRACE_QUERY_INFO_CLASS // TypeDefI
 
 internal struct UnsafeNativeMethods.ManifestEtw.TRACE_GUID_INFO // TypeDefIndex: 97
 {
-	public int InstanceCount; 
-	public int Reserved; 
+	public int InstanceCount;
+	public int Reserved;
 
 }
 
 internal struct UnsafeNativeMethods.ManifestEtw.TRACE_PROVIDER_INSTANCE_INFO // TypeDefIndex: 98
 {
-	public int NextOffset; 
-	public int EnableCount; 
-	public int Pid; 
-	public int Flags; 
+	public int NextOffset;
+	public int EnableCount;
+	public int Pid;
+	public int Flags;
 
 }
 
 internal struct UnsafeNativeMethods.ManifestEtw.TRACE_ENABLE_INFO // TypeDefIndex: 99
 {
-	public int IsEnabled; 
-	public byte Level; 
-	public byte Reserved1; 
-	public ushort LoggerId; 
-	public int EnableProperty; 
-	public int Reserved2; 
-	public long MatchAnyKeyword; 
-	public long MatchAllKeyword; 
+	public int IsEnabled;
+	public byte Level;
+	public byte Reserved1;
+	public ushort LoggerId;
+	public int EnableProperty;
+	public int Reserved2;
+	public long MatchAnyKeyword;
+	public long MatchAllKeyword;
 
 }
 
 internal static class UnsafeNativeMethods // TypeDefIndex: 4902
 {
-	internal static readonly bool use_sqlite3_close_v2; 
-	internal static readonly bool use_sqlite3_open_v2; 
-	internal static readonly bool use_sqlite3_create_function_v2; 
+	internal static readonly bool use_sqlite3_close_v2;
+	internal static readonly bool use_sqlite3_open_v2;
+	internal static readonly bool use_sqlite3_create_function_v2;
 
 
 	private static void .cctor() { }

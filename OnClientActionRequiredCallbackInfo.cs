@@ -1,15 +1,15 @@
-public struct OnClientActionRequiredCallbackInfo : ICallbackInfo // TypeDefIndex: 9789
+public struct OnClientActionRequiredCallbackInfo : ICallbackInfo // TypeDefIndex: 9791
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ClientHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonClientAction <ClientAction>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonClientActionReason <ActionReasonCode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ActionReasonDetailsString>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IntPtr <ClientHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonClientAction <ClientAction>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonClientActionReason <ActionReasonCode>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ActionReasonDetailsString>k__BackingField;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientHandle { get; set; }
@@ -18,34 +18,34 @@ public struct OnClientActionRequiredCallbackInfo : ICallbackInfo // TypeDefIndex
 	public Utf8String ActionReasonDetailsString { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ClientHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonClientAction get_ClientAction() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientAction(AntiCheatCommonClientAction value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonClientActionReason get_ActionReasonCode() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ActionReasonCode(AntiCheatCommonClientActionReason value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ActionReasonDetailsString() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ActionReasonDetailsString(Utf8String value) { }
 
 	public Nullable<Result> GetResultCode() { }

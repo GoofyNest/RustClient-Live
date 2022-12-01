@@ -1,6 +1,6 @@
 internal class CookieParser // TypeDefIndex: 2938
 {
-	private CookieTokenizer m_tokenizer; 
+	private CookieTokenizer m_tokenizer;
 
 
 	internal void .ctor(string cookieString) { }

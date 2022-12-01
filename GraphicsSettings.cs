@@ -2,7 +2,7 @@ public sealed class GraphicsSettings : Object // TypeDefIndex: 3842
 {
 	public static bool lightsUseLinearIntensity { get; }
 	public static RenderPipelineAsset renderPipelineAsset { get; }
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	private static ScriptableObject INTERNAL_defaultRenderPipeline { get; }
 	public static RenderPipelineAsset defaultRenderPipeline { get; }
 
@@ -17,7 +17,7 @@ public sealed class GraphicsSettings : Object // TypeDefIndex: 3842
 
 	public static RenderPipelineAsset get_defaultRenderPipeline() { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public static BuiltinShaderMode GetShaderMode(BuiltinShaderType type) { }
 
 }

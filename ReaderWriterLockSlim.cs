@@ -1,25 +1,25 @@
 public class ReaderWriterLockSlim : IDisposable // TypeDefIndex: 3191
 {
-	private bool fIsReentrant; 
-	private int myLock; 
-	private uint numWriteWaiters; 
-	private uint numReadWaiters; 
-	private uint numWriteUpgradeWaiters; 
-	private uint numUpgradeWaiters; 
-	private bool fNoWaiters; 
-	private int upgradeLockOwnerId; 
-	private int writeLockOwnerId; 
-	private EventWaitHandle writeEvent; 
-	private EventWaitHandle readEvent; 
-	private EventWaitHandle upgradeEvent; 
-	private EventWaitHandle waitUpgradeEvent; 
-	private static long s_nextLockID; 
-	private long lockID; 
-	[ThreadStaticAttribute] 
-	private static ReaderWriterCount t_rwc; 
-	private bool fUpgradeThreadHoldingRead; 
-	private uint owners; 
-	private bool fDisposed; 
+	private bool fIsReentrant;
+	private int myLock;
+	private uint numWriteWaiters;
+	private uint numReadWaiters;
+	private uint numWriteUpgradeWaiters;
+	private uint numUpgradeWaiters;
+	private bool fNoWaiters;
+	private int upgradeLockOwnerId;
+	private int writeLockOwnerId;
+	private EventWaitHandle writeEvent;
+	private EventWaitHandle readEvent;
+	private EventWaitHandle upgradeEvent;
+	private EventWaitHandle waitUpgradeEvent;
+	private static long s_nextLockID;
+	private long lockID;
+	[ThreadStaticAttribute]
+	private static ReaderWriterCount t_rwc;
+	private bool fUpgradeThreadHoldingRead;
+	private uint owners;
+	private bool fDisposed;
 
 	public bool IsReadLockHeld { get; }
 	public bool IsUpgradeableReadLockHeld { get; }
@@ -124,8 +124,8 @@ public class ReaderWriterLockSlim : IDisposable // TypeDefIndex: 3191
 
 private struct ReaderWriterLockSlim.TimeoutTracker // TypeDefIndex: 3192
 {
-	private int m_total; 
-	private int m_start; 
+	private int m_total;
+	private int m_start;
 
 	public int RemainingMilliseconds { get; }
 	public bool IsExpired { get; }

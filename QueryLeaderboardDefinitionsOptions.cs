@@ -1,33 +1,33 @@
-public struct QueryLeaderboardDefinitionsOptions // TypeDefIndex: 9314
+public struct QueryLeaderboardDefinitionsOptions // TypeDefIndex: 9316
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <StartTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <EndTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <StartTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <EndTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
 
 	public Nullable<DateTimeOffset> StartTime { get; set; }
 	public Nullable<DateTimeOffset> EndTime { get; set; }
 	public ProductUserId LocalUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_StartTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StartTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_EndTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EndTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
 }

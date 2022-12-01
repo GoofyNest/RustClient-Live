@@ -1,8 +1,8 @@
-public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12150
+public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12157
 {
-	public Texture2D HeightTexture; 
-	public Texture2D NormalTexture; 
-	private float normY; 
+	public Texture2D HeightTexture;
+	public Texture2D NormalTexture;
+	private float normY;
 
 
 	public override void Setup() { }
@@ -103,10 +103,10 @@ public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12150
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 12151
+private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 12158
 {
-	public float[,] heights; 
-	public TerrainHeightMap <>4__this; 
+	public float[,] heights;
+	public TerrainHeightMap <>4__this;
 
 
 	public void .ctor() { }
@@ -115,10 +115,10 @@ private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 1215
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 12152
+private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 12159
 {
-	public Color32[] heights; 
-	public TerrainHeightMap <>4__this; 
+	public Color32[] heights;
+	public TerrainHeightMap <>4__this;
 
 
 	public void .ctor() { }
@@ -127,11 +127,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 1215
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 12153
+private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 12160
 {
-	public int normalres; 
-	public Color32[] normals; 
-	public TerrainHeightMap <>4__this; 
+	public int normalres;
+	public Color32[] normals;
+	public TerrainHeightMap <>4__this;
 
 
 	public void .ctor() { }
@@ -140,11 +140,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 1215
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 12154
+private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 12161
 {
-	public TerrainHeightMap <>4__this; 
-	public float height; 
-	public float opacity; 
+	public TerrainHeightMap <>4__this;
+	public float height;
+	public float opacity;
 
 
 	public void .ctor() { }
@@ -153,11 +153,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 12155
+private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 12162
 {
-	public TerrainHeightMap <>4__this; 
-	public float height; 
-	public float opacity; 
+	public TerrainHeightMap <>4__this;
+	public float height;
+	public float opacity;
 
 
 	public void .ctor() { }
@@ -166,11 +166,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 12156
+private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 12163
 {
-	public TerrainHeightMap <>4__this; 
-	public float height; 
-	public float opacity; 
+	public TerrainHeightMap <>4__this;
+	public float height;
+	public float opacity;
 
 
 	public void .ctor() { }
@@ -179,10 +179,10 @@ private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 12157
+private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 12164
 {
-	public TerrainHeightMap <>4__this; 
-	public float delta; 
+	public TerrainHeightMap <>4__this;
+	public float delta;
 
 
 	public void .ctor() { }

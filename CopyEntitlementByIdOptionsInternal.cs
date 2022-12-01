@@ -1,8 +1,8 @@
-internal struct CopyEntitlementByIdOptionsInternal : ISettable<CopyEntitlementByIdOptions>, IDisposable // TypeDefIndex: 9430
+internal struct CopyEntitlementByIdOptionsInternal : ISettable<CopyEntitlementByIdOptions>, IDisposable // TypeDefIndex: 9432
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_EntitlementId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_EntitlementId;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String EntitlementId { set; }

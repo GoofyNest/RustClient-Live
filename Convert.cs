@@ -1,9 +1,9 @@
 public static class Convert // TypeDefIndex: 196
 {
-	internal static readonly RuntimeType[] ConvertTypes; 
-	private static readonly RuntimeType EnumType; 
-	internal static readonly char[] base64Table; 
-	public static readonly object DBNull; 
+	internal static readonly RuntimeType[] ConvertTypes;
+	private static readonly RuntimeType EnumType;
+	internal static readonly char[] base64Table;
+	public static readonly object DBNull;
 
 
 	public static TypeCode GetTypeCode(object value) { }
@@ -20,24 +20,24 @@ public static class Convert // TypeDefIndex: 196
 
 	public static bool ToBoolean(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool ToBoolean(sbyte value) { }
 
 	public static bool ToBoolean(byte value) { }
 
 	public static bool ToBoolean(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool ToBoolean(ushort value) { }
 
 	public static bool ToBoolean(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool ToBoolean(uint value) { }
 
 	public static bool ToBoolean(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool ToBoolean(ulong value) { }
 
 	public static bool ToBoolean(string value, IFormatProvider provider) { }
@@ -50,68 +50,68 @@ public static class Convert // TypeDefIndex: 196
 
 	public static char ToChar(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static char ToChar(sbyte value) { }
 
 	public static char ToChar(byte value) { }
 
 	public static char ToChar(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static char ToChar(ushort value) { }
 
 	public static char ToChar(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static char ToChar(uint value) { }
 
 	public static char ToChar(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static char ToChar(ulong value) { }
 
 	public static char ToChar(string value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(bool value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(ushort value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(uint value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(ulong value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(float value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(double value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(string value, IFormatProvider provider) { }
 
 	public static byte ToByte(object value, IFormatProvider provider) { }
@@ -120,22 +120,22 @@ public static class Convert // TypeDefIndex: 196
 
 	public static byte ToByte(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte ToByte(sbyte value) { }
 
 	public static byte ToByte(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte ToByte(ushort value) { }
 
 	public static byte ToByte(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte ToByte(uint value) { }
 
 	public static byte ToByte(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte ToByte(ulong value) { }
 
 	public static byte ToByte(float value) { }
@@ -154,22 +154,22 @@ public static class Convert // TypeDefIndex: 196
 
 	public static short ToInt16(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static short ToInt16(sbyte value) { }
 
 	public static short ToInt16(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static short ToInt16(ushort value) { }
 
 	public static short ToInt16(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static short ToInt16(uint value) { }
 
 	public static short ToInt16(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static short ToInt16(ulong value) { }
 
 	public static short ToInt16(float value) { }
@@ -180,46 +180,46 @@ public static class Convert // TypeDefIndex: 196
 
 	public static short ToInt16(string value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(bool value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(sbyte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(uint value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(ulong value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(float value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(double value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(string value, IFormatProvider provider) { }
 
 	public static int ToInt32(object value) { }
@@ -234,15 +234,15 @@ public static class Convert // TypeDefIndex: 196
 
 	public static int ToInt32(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static int ToInt32(ushort value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static int ToInt32(uint value) { }
 
 	public static int ToInt32(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static int ToInt32(ulong value) { }
 
 	public static int ToInt32(float value) { }
@@ -255,49 +255,49 @@ public static class Convert // TypeDefIndex: 196
 
 	public static int ToInt32(string value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(object value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(bool value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(sbyte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(ushort value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(ulong value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(float value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(double value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(string value, IFormatProvider provider) { }
 
 	public static long ToInt64(object value) { }
@@ -308,22 +308,22 @@ public static class Convert // TypeDefIndex: 196
 
 	public static long ToInt64(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static long ToInt64(sbyte value) { }
 
 	public static long ToInt64(byte value) { }
 
 	public static long ToInt64(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static long ToInt64(ushort value) { }
 
 	public static long ToInt64(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static long ToInt64(uint value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static long ToInt64(ulong value) { }
 
 	public static long ToInt64(long value) { }
@@ -338,68 +338,68 @@ public static class Convert // TypeDefIndex: 196
 
 	public static long ToInt64(string value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(bool value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(char value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(sbyte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(byte value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(ushort value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(uint value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(float value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(double value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(Decimal value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(string value, IFormatProvider provider) { }
 
 	public static float ToSingle(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static float ToSingle(sbyte value) { }
 
 	public static float ToSingle(byte value) { }
 
 	public static float ToSingle(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static float ToSingle(ushort value) { }
 
 	public static float ToSingle(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static float ToSingle(uint value) { }
 
 	public static float ToSingle(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static float ToSingle(ulong value) { }
 
 	public static float ToSingle(double value) { }
@@ -414,24 +414,24 @@ public static class Convert // TypeDefIndex: 196
 
 	public static double ToDouble(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static double ToDouble(sbyte value) { }
 
 	public static double ToDouble(byte value) { }
 
 	public static double ToDouble(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static double ToDouble(ushort value) { }
 
 	public static double ToDouble(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static double ToDouble(uint value) { }
 
 	public static double ToDouble(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static double ToDouble(ulong value) { }
 
 	public static double ToDouble(float value) { }
@@ -446,24 +446,24 @@ public static class Convert // TypeDefIndex: 196
 
 	public static Decimal ToDecimal(object value, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal ToDecimal(sbyte value) { }
 
 	public static Decimal ToDecimal(byte value) { }
 
 	public static Decimal ToDecimal(short value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal ToDecimal(ushort value) { }
 
 	public static Decimal ToDecimal(int value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal ToDecimal(uint value) { }
 
 	public static Decimal ToDecimal(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static Decimal ToDecimal(ulong value) { }
 
 	public static Decimal ToDecimal(float value) { }
@@ -488,39 +488,39 @@ public static class Convert // TypeDefIndex: 196
 
 	public static byte ToByte(string value, int fromBase) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte ToSByte(string value, int fromBase) { }
 
 	public static short ToInt16(string value, int fromBase) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(string value, int fromBase) { }
 
 	public static int ToInt32(string value, int fromBase) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(string value, int fromBase) { }
 
 	public static long ToInt64(string value, int fromBase) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(string value, int fromBase) { }
 
 	public static string ToString(int value, int toBase) { }
 
 	public static string ToBase64String(byte[] inArray) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string ToBase64String(byte[] inArray, Base64FormattingOptions options) { }
 
 	public static string ToBase64String(byte[] inArray, int offset, int length) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string ToBase64String(byte[] inArray, int offset, int length, Base64FormattingOptions options) { }
 
 	public static int ToBase64CharArray(byte[] inArray, int offsetIn, int length, char[] outArray, int offsetOut) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static int ToBase64CharArray(byte[] inArray, int offsetIn, int length, char[] outArray, int offsetOut, Base64FormattingOptions options) { }
 
 	private static int ConvertToBase64Array(char* outChars, byte* inData, int offset, int length, bool insertLineBreaks) { }

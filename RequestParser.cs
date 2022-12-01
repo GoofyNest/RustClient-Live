@@ -1,6 +1,6 @@
-public class RequestParser // TypeDefIndex: 6958
+public class RequestParser // TypeDefIndex: 6960
 {
-	private static readonly Regex _regex; 
+	private static readonly Regex _regex;
 
 
 	public static WebSocketHttpRequest Parse(ArraySegment<byte> bytes, string scheme) { }

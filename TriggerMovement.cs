@@ -1,9 +1,9 @@
-public class TriggerMovement : TriggerBase, IClientComponent // TypeDefIndex: 10975
+public class TriggerMovement : TriggerBase, IClientComponent // TypeDefIndex: 10981
 {
-	[TooltipAttribute] 
-	public Transform losEyes; 
-	public BaseEntity.MovementModify movementModify; 
-	private float scale; 
+	[TooltipAttribute]
+	public Transform losEyes;
+	public BaseEntity.MovementModify movementModify;
+	private float scale;
 
 
 	public void SetMovementScale(float newScale) { }

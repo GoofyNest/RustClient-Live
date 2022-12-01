@@ -1,9 +1,9 @@
 public sealed class X509StoreManager // TypeDefIndex: 1722
 {
-	private static string _userPath; 
-	private static string _localMachinePath; 
-	private static X509Stores _userStore; 
-	private static X509Stores _machineStore; 
+	private static string _userPath;
+	private static string _localMachinePath;
+	private static X509Stores _userStore;
+	private static X509Stores _machineStore;
 
 	internal static string CurrentUserPath { get; }
 	internal static string LocalMachinePath { get; }

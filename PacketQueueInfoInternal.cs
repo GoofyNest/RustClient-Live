@@ -1,11 +1,11 @@
-internal struct PacketQueueInfoInternal : IGettable<PacketQueueInfo>, ISettable<PacketQueueInfo>, IDisposable // TypeDefIndex: 8992
+internal struct PacketQueueInfoInternal : IGettable<PacketQueueInfo>, ISettable<PacketQueueInfo>, IDisposable // TypeDefIndex: 8994
 {
-	private ulong m_IncomingPacketQueueMaxSizeBytes; 
-	private ulong m_IncomingPacketQueueCurrentSizeBytes; 
-	private ulong m_IncomingPacketQueueCurrentPacketCount; 
-	private ulong m_OutgoingPacketQueueMaxSizeBytes; 
-	private ulong m_OutgoingPacketQueueCurrentSizeBytes; 
-	private ulong m_OutgoingPacketQueueCurrentPacketCount; 
+	private ulong m_IncomingPacketQueueMaxSizeBytes;
+	private ulong m_IncomingPacketQueueCurrentSizeBytes;
+	private ulong m_IncomingPacketQueueCurrentPacketCount;
+	private ulong m_OutgoingPacketQueueMaxSizeBytes;
+	private ulong m_OutgoingPacketQueueCurrentSizeBytes;
+	private ulong m_OutgoingPacketQueueCurrentPacketCount;
 
 	public ulong IncomingPacketQueueMaxSizeBytes { get; set; }
 	public ulong IncomingPacketQueueCurrentSizeBytes { get; set; }

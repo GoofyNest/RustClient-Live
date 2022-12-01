@@ -1,15 +1,15 @@
 private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5051
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public T tweenInfo; 
-	private float <elapsedTime>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public T tweenInfo;
+	private float <elapsedTime>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -17,7 +17,7 @@ private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerat
 	|-TweenRunner.<Start>d__2<FloatTween>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -33,7 +33,7 @@ private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerat
 	|-TweenRunner.<Start>d__2<FloatTween>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -41,7 +41,7 @@ private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerat
 	|-TweenRunner.<Start>d__2<FloatTween>.System.Collections.Generic.IEnumerator<System.Object>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -50,7 +50,7 @@ private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerat
 	|-TweenRunner.<Start>d__2<FloatTween>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -60,32 +60,32 @@ private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerat
 
 }
 
-private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6696
+private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6698
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public T tweenInfo; 
-	private float <elapsedTime>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public T tweenInfo;
+	private float <elapsedTime>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

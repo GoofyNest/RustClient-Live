@@ -1,6 +1,6 @@
-public class LargeShredderTrigger : TriggerBase // TypeDefIndex: 11370
+public class LargeShredderTrigger : TriggerBase // TypeDefIndex: 11376
 {
-	public LargeShredder shredder; 
+	public LargeShredder shredder;
 
 
 	internal override GameObject InterestedInObject(GameObject obj) { }

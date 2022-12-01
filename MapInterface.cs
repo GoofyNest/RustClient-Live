@@ -1,26 +1,26 @@
-public class MapInterface : SingletonComponent<MapInterface> // TypeDefIndex: 12714
+public class MapInterface : SingletonComponent<MapInterface> // TypeDefIndex: 12728
 {
-	public static bool IsOpen; 
-	public Image cameraPositon; 
-	public ScrollRectEx scrollRect; 
-	public Toggle showGridToggle; 
-	public Button FocusButton; 
-	public CanvasGroup CanvasGroup; 
-	public SoundDefinition PlaceMarkerSound; 
-	public SoundDefinition ClearMarkerSound; 
-	public MapView View; 
-	public Color[] PointOfInterestColours; 
-	public Sprite[] PointOfInterestSprites; 
-	public bool DebugStayOpen; 
-	private PointerEventData pointerData; 
-	private List<RaycastResult> rayResults; 
-	public static float LastOpened; 
-	private NeedsCursor NeedsCursor; 
-	private NeedsMouseButtons NeedsMouseButtons; 
-	private NeedsMouseWheel NeedsMouseWheel; 
-	private Vector3 rmbStartPos; 
-	private float rmbStartTime; 
-	internal static MapEntity lastActiveMap; 
+	public static bool IsOpen;
+	public Image cameraPositon;
+	public ScrollRectEx scrollRect;
+	public Toggle showGridToggle;
+	public Button FocusButton;
+	public CanvasGroup CanvasGroup;
+	public SoundDefinition PlaceMarkerSound;
+	public SoundDefinition ClearMarkerSound;
+	public MapView View;
+	public Color[] PointOfInterestColours;
+	public Sprite[] PointOfInterestSprites;
+	public bool DebugStayOpen;
+	private PointerEventData pointerData;
+	private List<RaycastResult> rayResults;
+	public static float LastOpened;
+	private NeedsCursor NeedsCursor;
+	private NeedsMouseButtons NeedsMouseButtons;
+	private NeedsMouseWheel NeedsMouseWheel;
+	private Vector3 rmbStartPos;
+	private float rmbStartTime;
+	internal static MapEntity lastActiveMap;
 
 	private static BasePlayer LocalPlayerEntity { get; }
 	public static MapEntity localPlayerMap { get; }

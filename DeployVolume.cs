@@ -1,13 +1,13 @@
-public abstract class DeployVolume : PrefabAttribute // TypeDefIndex: 11580
+public abstract class DeployVolume : PrefabAttribute // TypeDefIndex: 11587
 {
-	public LayerMask layers; 
-	[InspectorFlagsAttribute] 
-	public ColliderInfo.Flags ignore; 
-	public DeployVolume.EntityMode entityMode; 
-	[FormerlySerializedAsAttribute] 
-	public BaseEntity[] entityList; 
-	[CompilerGeneratedAttribute] 
-	private static Collider <LastDeployHit>k__BackingField; 
+	public LayerMask layers;
+	[InspectorFlagsAttribute]
+	public ColliderInfo.Flags ignore;
+	public DeployVolume.EntityMode entityMode;
+	[FormerlySerializedAsAttribute]
+	public BaseEntity[] entityList;
+	[CompilerGeneratedAttribute]
+	private static Collider <LastDeployHit>k__BackingField;
 
 	public static Collider LastDeployHit { get; set; }
 
@@ -30,10 +30,10 @@ public abstract class DeployVolume : PrefabAttribute // TypeDefIndex: 11580
 
 	public static bool CheckBounds(Bounds bounds, int layerMask, DeployVolume volume) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static Collider get_LastDeployHit() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_LastDeployHit(Collider value) { }
 
 	private static bool CheckFlags(List<Collider> list, DeployVolume volume) { }
@@ -44,9 +44,9 @@ public abstract class DeployVolume : PrefabAttribute // TypeDefIndex: 11580
 
 }
 
-public enum DeployVolume.EntityMode // TypeDefIndex: 11581
+public enum DeployVolume.EntityMode // TypeDefIndex: 11588
 {
-	public int value__; 
+	public int value__;
 	public const DeployVolume.EntityMode ExcludeList = 0;
 	public const DeployVolume.EntityMode IncludeList = 1;
 

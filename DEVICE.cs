@@ -1,7 +1,7 @@
-public struct DEVICE_INFO_TYPE // TypeDefIndex: 7688
+public struct DEVICE_INFO_TYPE // TypeDefIndex: 7690
 {
-	private int DeviceType; 
-	private uint Connected; 
+	private int DeviceType;
+	private uint Connected;
 
 }
 

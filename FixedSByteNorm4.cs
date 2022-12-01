@@ -1,12 +1,12 @@
-public struct FixedSByteNorm4 // TypeDefIndex: 13207
+public struct FixedSByteNorm4 // TypeDefIndex: 13222
 {
 	private const int FracBits = 7;
 	private const float MaxFrac = 128;
 	private const float RcpMaxFrac = 0,0078125;
-	public sbyte x; 
-	public sbyte y; 
-	public sbyte z; 
-	public sbyte w; 
+	public sbyte x;
+	public sbyte y;
+	public sbyte z;
+	public sbyte w;
 
 
 	public void .ctor(Vector4 vec) { }

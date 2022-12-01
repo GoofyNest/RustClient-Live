@@ -1,6 +1,6 @@
 internal class BufferOffsetSize2 : BufferOffsetSize // TypeDefIndex: 2531
 {
-	public readonly int InitialSize; 
+	public readonly int InitialSize;
 
 
 	public void .ctor(int size) { }

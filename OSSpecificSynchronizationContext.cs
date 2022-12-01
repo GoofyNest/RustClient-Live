@@ -1,7 +1,7 @@
 internal class OSSpecificSynchronizationContext : SynchronizationContext // TypeDefIndex: 794
 {
-	private object m_OSSynchronizationContext; 
-	private static readonly ConditionalWeakTable<object, OSSpecificSynchronizationContext> s_ContextCache; 
+	private object m_OSSynchronizationContext;
+	private static readonly ConditionalWeakTable<object, OSSpecificSynchronizationContext> s_ContextCache;
 
 
 	private void .ctor(object osContext) { }
@@ -14,7 +14,7 @@ internal class OSSpecificSynchronizationContext : SynchronizationContext // Type
 
 	public override void Post(SendOrPostCallback d, object state) { }
 
-	[OSSpecificSynchronizationContext.MonoPInvokeCallbackAttribute] 
+	[OSSpecificSynchronizationContext.MonoPInvokeCallbackAttribute]
 	private static void InvocationEntry(IntPtr arg) { }
 
 	private static object GetOSContext() { }
@@ -47,8 +47,8 @@ private sealed class OSSpecificSynchronizationContext.MonoPInvokeCallbackAttribu
 
 private class OSSpecificSynchronizationContext.InvocationContext // TypeDefIndex: 797
 {
-	private SendOrPostCallback m_Delegate; 
-	private object m_State; 
+	private SendOrPostCallback m_Delegate;
+	private object m_State;
 
 
 	public void .ctor(SendOrPostCallback d, object state) { }
@@ -59,8 +59,8 @@ private class OSSpecificSynchronizationContext.InvocationContext // TypeDefIndex
 
 private sealed class OSSpecificSynchronizationContext.<>c // TypeDefIndex: 798
 {
-	public static readonly OSSpecificSynchronizationContext.<>c <>9; 
-	public static ConditionalWeakTable.CreateValueCallback<object, OSSpecificSynchronizationContext> <>9__3_0; 
+	public static readonly OSSpecificSynchronizationContext.<>c <>9;
+	public static ConditionalWeakTable.CreateValueCallback<object, OSSpecificSynchronizationContext> <>9__3_0;
 
 
 	private static void .cctor() { }

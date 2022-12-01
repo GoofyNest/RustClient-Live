@@ -1,9 +1,9 @@
 internal struct ValidateAuthTicketResponse_t : ICallbackData // TypeDefIndex: 5305
 {
-	internal ulong SteamID; 
-	internal AuthResponse AuthSessionResponse; 
-	internal ulong OwnerSteamID; 
-	public static int _datasize; 
+	internal ulong SteamID;
+	internal AuthResponse AuthSessionResponse;
+	internal ulong OwnerSteamID;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

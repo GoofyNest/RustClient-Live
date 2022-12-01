@@ -1,11 +1,11 @@
-internal struct GetUserItemVoteResult_t : ICallbackData // TypeDefIndex: 5444
+internal struct GetUserItemVoteResult_t : ICallbackData // TypeDefIndex: 5446
 {
-	internal PublishedFileId PublishedFileId; 
-	internal Result Result; 
-	internal bool VotedUp; 
-	internal bool VotedDown; 
-	internal bool VoteSkipped; 
-	public static int _datasize; 
+	internal PublishedFileId PublishedFileId;
+	internal Result Result;
+	internal bool VotedUp;
+	internal bool VotedDown;
+	internal bool VoteSkipped;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

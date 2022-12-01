@@ -67,9 +67,9 @@ public static class Directory // TypeDefIndex: 618
 
 internal sealed class Directory.SearchData // TypeDefIndex: 619
 {
-	public readonly string fullPath; 
-	public readonly string userPath; 
-	public readonly SearchOption searchOption; 
+	public readonly string fullPath;
+	public readonly string userPath;
+	public readonly SearchOption searchOption;
 
 
 	public void .ctor(string fullPath, string userPath, SearchOption searchOption) { }

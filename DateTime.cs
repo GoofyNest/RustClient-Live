@@ -29,10 +29,10 @@ public struct DateTime : IComparable, IFormattable, IConvertible, ISerializable,
 	private const int DatePartDayOfYear = 1;
 	private const int DatePartMonth = 2;
 	private const int DatePartDay = 3;
-	private static readonly int[] DaysToMonth365; 
-	private static readonly int[] DaysToMonth366; 
-	public static readonly DateTime MinValue; 
-	public static readonly DateTime MaxValue; 
+	private static readonly int[] DaysToMonth365;
+	private static readonly int[] DaysToMonth366;
+	public static readonly DateTime MinValue;
+	public static readonly DateTime MaxValue;
 	private const ulong TicksMask = 4611686018427387903;
 	private const ulong FlagsMask = 13835058055282163712;
 	private const ulong LocalMask = 9223372036854775808;
@@ -44,7 +44,7 @@ public struct DateTime : IComparable, IFormattable, IConvertible, ISerializable,
 	private const int KindShift = 62;
 	private const string TicksField = "ticks";
 	private const string DateDataField = "dateData";
-	private ulong dateData; 
+	private ulong dateData;
 
 	internal long InternalTicks { get; }
 	private ulong InternalKind { get; }
@@ -97,6 +97,8 @@ public struct DateTime : IComparable, IFormattable, IConvertible, ISerializable,
 	public DateTime AddHours(double value) { }
 
 	public DateTime AddMilliseconds(double value) { }
+
+	public DateTime AddMinutes(double value) { }
 
 	public DateTime AddMonths(int months) { }
 
@@ -280,7 +282,7 @@ public struct DateTime : IComparable, IFormattable, IConvertible, ISerializable,
 
 public enum DateTimeKind // TypeDefIndex: 198
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeKind Unspecified = 0;
 	public const DateTimeKind Utc = 1;
 	public const DateTimeKind Local = 2;
@@ -289,10 +291,10 @@ public enum DateTimeKind // TypeDefIndex: 198
 
 public struct DateTimeOffset : IComparable, IFormattable, ISerializable, IDeserializationCallback, IComparable<DateTimeOffset>, IEquatable<DateTimeOffset> // TypeDefIndex: 199
 {
-	public static readonly DateTimeOffset MinValue; 
-	public static readonly DateTimeOffset MaxValue; 
-	private DateTime m_dateTime; 
-	private short m_offsetMinutes; 
+	public static readonly DateTimeOffset MinValue;
+	public static readonly DateTimeOffset MaxValue;
+	private DateTime m_dateTime;
+	private short m_offsetMinutes;
 
 	public static DateTimeOffset Now { get; }
 	public static DateTimeOffset UtcNow { get; }
@@ -406,9 +408,9 @@ public struct DateTimeOffset : IComparable, IFormattable, ISerializable, IDeseri
 
 internal static class DateTimeFormat // TypeDefIndex: 225
 {
-	internal static readonly TimeSpan NullOffset; 
-	internal static char[] allStandardFormats; 
-	internal static string[] fixedNumberFormats; 
+	internal static readonly TimeSpan NullOffset;
+	internal static char[] allStandardFormats;
+	internal static string[] fixedNumberFormats;
 
 
 	internal static void FormatDigits(StringBuilder outputBuffer, int value, int len) { }
@@ -455,8 +457,8 @@ internal static class DateTimeFormat // TypeDefIndex: 225
 
 internal static class DateTimeParse // TypeDefIndex: 226
 {
-	internal static DateTimeParse.MatchNumberDelegate m_hebrewNumberParser; 
-	private static DateTimeParse.DS[][] dateParsingStates; 
+	internal static DateTimeParse.MatchNumberDelegate m_hebrewNumberParser;
+	private static DateTimeParse.DS[][] dateParsingStates;
 
 
 	internal static DateTime ParseExact(string s, string format, DateTimeFormatInfo dtfi, DateTimeStyles style) { }
@@ -634,7 +636,7 @@ internal sealed class DateTimeParse.MatchNumberDelegate : MulticastDelegate // T
 
 internal enum DateTimeParse.DTT // TypeDefIndex: 228
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeParse.DTT End = 0;
 	public const DateTimeParse.DTT NumEnd = 1;
 	public const DateTimeParse.DTT NumAmpm = 2;
@@ -661,7 +663,7 @@ internal enum DateTimeParse.DTT // TypeDefIndex: 228
 
 internal enum DateTimeParse.TM // TypeDefIndex: 229
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeParse.TM NotSet = -1;
 	public const DateTimeParse.TM AM = 0;
 	public const DateTimeParse.TM PM = 1;
@@ -670,7 +672,7 @@ internal enum DateTimeParse.TM // TypeDefIndex: 229
 
 internal enum DateTimeParse.DS // TypeDefIndex: 230
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeParse.DS BEGIN = 0;
 	public const DateTimeParse.DS N = 1;
 	public const DateTimeParse.DS NN = 2;
@@ -715,24 +717,24 @@ internal enum DateTimeParse.DS // TypeDefIndex: 230
 
 internal struct DateTimeToken // TypeDefIndex: 234
 {
-	internal DateTimeParse.DTT dtt; 
-	internal TokenType suffix; 
-	internal int num; 
+	internal DateTimeParse.DTT dtt;
+	internal TokenType suffix;
+	internal int num;
 
 }
 
 internal struct DateTimeRawInfo // TypeDefIndex: 235
 {
-	private int* num; 
-	internal int numCount; 
-	internal int month; 
-	internal int year; 
-	internal int dayOfWeek; 
-	internal int era; 
-	internal DateTimeParse.TM timeMark; 
-	internal double fraction; 
-	internal bool hasSameDateAndTimeSeparators; 
-	internal bool timeZone; 
+	private int* num;
+	internal int numCount;
+	internal int month;
+	internal int year;
+	internal int dayOfWeek;
+	internal int era;
+	internal DateTimeParse.TM timeMark;
+	internal double fraction;
+	internal bool hasSameDateAndTimeSeparators;
+	internal bool timeZone;
 
 
 	internal void Init(int* numberBuffer) { }
@@ -745,22 +747,22 @@ internal struct DateTimeRawInfo // TypeDefIndex: 235
 
 internal struct DateTimeResult // TypeDefIndex: 238
 {
-	internal int Year; 
-	internal int Month; 
-	internal int Day; 
-	internal int Hour; 
-	internal int Minute; 
-	internal int Second; 
-	internal double fraction; 
-	internal int era; 
-	internal ParseFlags flags; 
-	internal TimeSpan timeZoneOffset; 
-	internal Calendar calendar; 
-	internal DateTime parsedDate; 
-	internal ParseFailureKind failure; 
-	internal string failureMessageID; 
-	internal object failureMessageFormatArgument; 
-	internal string failureArgumentName; 
+	internal int Year;
+	internal int Month;
+	internal int Day;
+	internal int Hour;
+	internal int Minute;
+	internal int Second;
+	internal double fraction;
+	internal int era;
+	internal ParseFlags flags;
+	internal TimeSpan timeZoneOffset;
+	internal Calendar calendar;
+	internal DateTime parsedDate;
+	internal ParseFailureKind failure;
+	internal string failureMessageID;
+	internal object failureMessageFormatArgument;
+	internal string failureArgumentName;
 
 
 	internal void Init() { }
@@ -775,7 +777,7 @@ internal struct DateTimeResult // TypeDefIndex: 238
 
 internal enum DateTimeFormatFlags // TypeDefIndex: 694
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeFormatFlags None = 0;
 	public const DateTimeFormatFlags UseGenitiveMonth = 1;
 	public const DateTimeFormatFlags UseLeapYearMonth = 2;
@@ -789,84 +791,84 @@ internal enum DateTimeFormatFlags // TypeDefIndex: 694
 
 public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider // TypeDefIndex: 695
 {
-	private static DateTimeFormatInfo invariantInfo; 
-	private CultureData m_cultureData; 
-	[OptionalFieldAttribute] 
-	internal string m_name; 
-	private string m_langName; 
-	private CompareInfo m_compareInfo; 
-	private CultureInfo m_cultureInfo; 
-	internal string amDesignator; 
-	internal string pmDesignator; 
-	[OptionalFieldAttribute] 
-	internal string dateSeparator; 
-	[OptionalFieldAttribute] 
-	internal string generalShortTimePattern; 
-	[OptionalFieldAttribute] 
-	internal string generalLongTimePattern; 
-	[OptionalFieldAttribute] 
-	internal string timeSeparator; 
-	internal string monthDayPattern; 
-	[OptionalFieldAttribute] 
-	internal string dateTimeOffsetPattern; 
+	private static DateTimeFormatInfo invariantInfo;
+	private CultureData m_cultureData;
+	[OptionalFieldAttribute]
+	internal string m_name;
+	private string m_langName;
+	private CompareInfo m_compareInfo;
+	private CultureInfo m_cultureInfo;
+	internal string amDesignator;
+	internal string pmDesignator;
+	[OptionalFieldAttribute]
+	internal string dateSeparator;
+	[OptionalFieldAttribute]
+	internal string generalShortTimePattern;
+	[OptionalFieldAttribute]
+	internal string generalLongTimePattern;
+	[OptionalFieldAttribute]
+	internal string timeSeparator;
+	internal string monthDayPattern;
+	[OptionalFieldAttribute]
+	internal string dateTimeOffsetPattern;
 	internal const string rfc1123Pattern = "ddd, dd MMM yyyy HH\':\'mm\':\'ss \'GMT\'";
 	internal const string sortableDateTimePattern = "yyyy\'-\'MM\'-\'dd\'T\'HH\':\'mm\':\'ss";
 	internal const string universalSortableDateTimePattern = "yyyy\'-\'MM\'-\'dd HH\':\'mm\':\'ss\'Z\'";
-	internal Calendar calendar; 
-	internal int firstDayOfWeek; 
-	internal int calendarWeekRule; 
-	[OptionalFieldAttribute] 
-	internal string fullDateTimePattern; 
-	internal string[] abbreviatedDayNames; 
-	[OptionalFieldAttribute] 
-	internal string[] m_superShortDayNames; 
-	internal string[] dayNames; 
-	internal string[] abbreviatedMonthNames; 
-	internal string[] monthNames; 
-	[OptionalFieldAttribute] 
-	internal string[] genitiveMonthNames; 
-	[OptionalFieldAttribute] 
-	internal string[] m_genitiveAbbreviatedMonthNames; 
-	[OptionalFieldAttribute] 
-	internal string[] leapYearMonthNames; 
-	internal string longDatePattern; 
-	internal string shortDatePattern; 
-	internal string yearMonthPattern; 
-	internal string longTimePattern; 
-	internal string shortTimePattern; 
-	[OptionalFieldAttribute] 
-	private string[] allYearMonthPatterns; 
-	internal string[] allShortDatePatterns; 
-	internal string[] allLongDatePatterns; 
-	internal string[] allShortTimePatterns; 
-	internal string[] allLongTimePatterns; 
-	internal string[] m_eraNames; 
-	internal string[] m_abbrevEraNames; 
-	internal string[] m_abbrevEnglishEraNames; 
-	internal int[] optionalCalendars; 
+	internal Calendar calendar;
+	internal int firstDayOfWeek;
+	internal int calendarWeekRule;
+	[OptionalFieldAttribute]
+	internal string fullDateTimePattern;
+	internal string[] abbreviatedDayNames;
+	[OptionalFieldAttribute]
+	internal string[] m_superShortDayNames;
+	internal string[] dayNames;
+	internal string[] abbreviatedMonthNames;
+	internal string[] monthNames;
+	[OptionalFieldAttribute]
+	internal string[] genitiveMonthNames;
+	[OptionalFieldAttribute]
+	internal string[] m_genitiveAbbreviatedMonthNames;
+	[OptionalFieldAttribute]
+	internal string[] leapYearMonthNames;
+	internal string longDatePattern;
+	internal string shortDatePattern;
+	internal string yearMonthPattern;
+	internal string longTimePattern;
+	internal string shortTimePattern;
+	[OptionalFieldAttribute]
+	private string[] allYearMonthPatterns;
+	internal string[] allShortDatePatterns;
+	internal string[] allLongDatePatterns;
+	internal string[] allShortTimePatterns;
+	internal string[] allLongTimePatterns;
+	internal string[] m_eraNames;
+	internal string[] m_abbrevEraNames;
+	internal string[] m_abbrevEnglishEraNames;
+	internal int[] optionalCalendars;
 	private const int DEFAULT_ALL_DATETIMES_SIZE = 132;
-	internal bool m_isReadOnly; 
-	[OptionalFieldAttribute] 
-	internal DateTimeFormatFlags formatFlags; 
-	internal static bool preferExistingTokens; 
-	[OptionalFieldAttribute] 
-	private int CultureID; 
-	[OptionalFieldAttribute] 
-	private bool m_useUserOverride; 
-	[OptionalFieldAttribute] 
-	private bool bUseCalendarInfo; 
-	[OptionalFieldAttribute] 
-	private int nDataItem; 
-	[OptionalFieldAttribute] 
-	internal bool m_isDefaultCalendar; 
-	[OptionalFieldAttribute] 
-	private static Hashtable s_calendarNativeNames; 
-	[OptionalFieldAttribute] 
-	internal string[] m_dateWords; 
-	private string m_fullTimeSpanPositivePattern; 
-	private string m_fullTimeSpanNegativePattern; 
+	internal bool m_isReadOnly;
+	[OptionalFieldAttribute]
+	internal DateTimeFormatFlags formatFlags;
+	internal static bool preferExistingTokens;
+	[OptionalFieldAttribute]
+	private int CultureID;
+	[OptionalFieldAttribute]
+	private bool m_useUserOverride;
+	[OptionalFieldAttribute]
+	private bool bUseCalendarInfo;
+	[OptionalFieldAttribute]
+	private int nDataItem;
+	[OptionalFieldAttribute]
+	internal bool m_isDefaultCalendar;
+	[OptionalFieldAttribute]
+	private static Hashtable s_calendarNativeNames;
+	[OptionalFieldAttribute]
+	internal string[] m_dateWords;
+	private string m_fullTimeSpanPositivePattern;
+	private string m_fullTimeSpanNegativePattern;
 	internal const DateTimeStyles InvalidDateTimeStyles = -256;
-	private TokenHashValue[] m_dtfiTokenHash; 
+	private TokenHashValue[] m_dtfiTokenHash;
 	private const int TOKEN_HASH_SIZE = 199;
 	private const int SECOND_PRIME = 197;
 	private const string dateSeparatorOrTimeZoneOffset = "-";
@@ -891,8 +893,8 @@ public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider // TypeDefI
 	internal const string KoreanLangName = "ko";
 	internal const string JapaneseLangName = "ja";
 	internal const string EnglishLangName = "en";
-	private static DateTimeFormatInfo s_jajpDTFI; 
-	private static DateTimeFormatInfo s_zhtwDTFI; 
+	private static DateTimeFormatInfo s_jajpDTFI;
+	private static DateTimeFormatInfo s_zhtwDTFI;
 
 	private string CultureName { get; }
 	private CultureInfo Culture { get; }
@@ -938,7 +940,7 @@ public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider // TypeDefI
 	private string[] UnclonedShortTimePatterns { get; }
 	private string[] UnclonedLongTimePatterns { get; }
 	public bool IsReadOnly { get; }
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public string[] MonthGenitiveNames { get; }
 	internal string FullTimeSpanPositivePattern { get; }
 	internal string FullTimeSpanNegativePattern { get; }
@@ -970,10 +972,10 @@ public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider // TypeDefI
 
 	private void InitializeOverridableProperties(CultureData cultureData, int calendarID) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[OnSerializingAttribute] 
+	[OnSerializingAttribute]
 	private void OnSerializing(StreamingContext ctx) { }
 
 	public static DateTimeFormatInfo get_InvariantInfo() { }
@@ -1144,9 +1146,9 @@ public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider // TypeDefI
 
 internal class DateTimeFormatInfoScanner // TypeDefIndex: 699
 {
-	internal List<string> m_dateWords; 
-	private static Dictionary<string, string> s_knownWords; 
-	private DateTimeFormatInfoScanner.FoundDatePattern m_ymdFlags; 
+	internal List<string> m_dateWords;
+	private static Dictionary<string, string> s_knownWords;
+	private DateTimeFormatInfoScanner.FoundDatePattern m_ymdFlags;
 
 	private static Dictionary<string, string> KnownWords { get; }
 
@@ -1187,7 +1189,7 @@ internal class DateTimeFormatInfoScanner // TypeDefIndex: 699
 
 private enum DateTimeFormatInfoScanner.FoundDatePattern // TypeDefIndex: 700
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeFormatInfoScanner.FoundDatePattern None = 0;
 	public const DateTimeFormatInfoScanner.FoundDatePattern FoundYearPatternFlag = 1;
 	public const DateTimeFormatInfoScanner.FoundDatePattern FoundMonthPatternFlag = 2;
@@ -1198,7 +1200,7 @@ private enum DateTimeFormatInfoScanner.FoundDatePattern // TypeDefIndex: 700
 
 public enum DateTimeStyles // TypeDefIndex: 701
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeStyles None = 0;
 	public const DateTimeStyles AllowLeadingWhite = 1;
 	public const DateTimeStyles AllowTrailingWhite = 2;
@@ -1214,7 +1216,7 @@ public enum DateTimeStyles // TypeDefIndex: 701
 
 public sealed class DateTimeConstantAttribute : CustomConstantAttribute // TypeDefIndex: 1303
 {
-	private DateTime date; 
+	private DateTime date;
 
 	public override object Value { get; }
 
@@ -1264,8 +1266,8 @@ internal sealed class DateTimeOffsetStorage : DataStorage // TypeDefIndex: 4389
 {
 
 internal sealed class DateTimeOffsetStorage : DataStorage
-	private static readonly DateTimeOffset s_defaultValue; 
-	private DateTimeOffset[] _values; 
+	private static readonly DateTimeOffset s_defaultValue;
+	private DateTimeOffset[] _values;
 
 
 	internal void .ctor(DataColumn column) { }
@@ -1302,8 +1304,8 @@ internal sealed class DateTimeOffsetStorage : DataStorage
 
 internal sealed class DateTimeStorage : DataStorage // TypeDefIndex: 4390
 {
-	private static readonly DateTime s_defaultValue; 
-	private DateTime[] _values; 
+	private static readonly DateTime s_defaultValue;
+	private DateTime[] _values;
 
 
 	internal void .ctor(DataColumn column) { }
@@ -1338,9 +1340,9 @@ internal sealed class DateTimeStorage : DataStorage // TypeDefIndex: 4390
 
 }
 
-public enum DateTimeZoneHandling // TypeDefIndex: 5874
+public enum DateTimeZoneHandling // TypeDefIndex: 5876
 {
-	public int value__; 
+	public int value__;
 	public const DateTimeZoneHandling Local = 0;
 	public const DateTimeZoneHandling Utc = 1;
 	public const DateTimeZoneHandling Unspecified = 2;
@@ -1348,34 +1350,34 @@ public enum DateTimeZoneHandling // TypeDefIndex: 5874
 
 }
 
-internal struct DateTimeParser // TypeDefIndex: 5923
+internal struct DateTimeParser // TypeDefIndex: 5925
 {
-	public int Year; 
-	public int Month; 
-	public int Day; 
-	public int Hour; 
-	public int Minute; 
-	public int Second; 
-	public int Fraction; 
-	public int ZoneHour; 
-	public int ZoneMinute; 
-	public ParserTimeZone Zone; 
-	private char[] _text; 
-	private int _end; 
-	private static readonly int[] Power10; 
-	private static readonly int Lzyyyy; 
-	private static readonly int Lzyyyy_; 
-	private static readonly int Lzyyyy_MM; 
-	private static readonly int Lzyyyy_MM_; 
-	private static readonly int Lzyyyy_MM_dd; 
-	private static readonly int Lzyyyy_MM_ddT; 
-	private static readonly int LzHH; 
-	private static readonly int LzHH_; 
-	private static readonly int LzHH_mm; 
-	private static readonly int LzHH_mm_; 
-	private static readonly int LzHH_mm_ss; 
-	private static readonly int Lz_; 
-	private static readonly int Lz_zz; 
+	public int Year;
+	public int Month;
+	public int Day;
+	public int Hour;
+	public int Minute;
+	public int Second;
+	public int Fraction;
+	public int ZoneHour;
+	public int ZoneMinute;
+	public ParserTimeZone Zone;
+	private char[] _text;
+	private int _end;
+	private static readonly int[] Power10;
+	private static readonly int Lzyyyy;
+	private static readonly int Lzyyyy_;
+	private static readonly int Lzyyyy_MM;
+	private static readonly int Lzyyyy_MM_;
+	private static readonly int Lzyyyy_MM_dd;
+	private static readonly int Lzyyyy_MM_ddT;
+	private static readonly int LzHH;
+	private static readonly int LzHH_;
+	private static readonly int LzHH_mm;
+	private static readonly int LzHH_mm_;
+	private static readonly int LzHH_mm_ss;
+	private static readonly int Lz_;
+	private static readonly int Lz_zz;
 
 
 	private static void .cctor() { }
@@ -1398,16 +1400,16 @@ internal struct DateTimeParser // TypeDefIndex: 5923
 
 }
 
-internal static class DateTimeUtils // TypeDefIndex: 5956
+internal static class DateTimeUtils // TypeDefIndex: 5958
 {
-	internal static readonly long InitialJavaScriptDateTicks; 
-	private static readonly int[] DaysToMonth365; 
-	private static readonly int[] DaysToMonth366; 
+	internal static readonly long InitialJavaScriptDateTicks;
+	private static readonly int[] DaysToMonth365;
+	private static readonly int[] DaysToMonth366;
 
 
 	private static void .cctor() { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TimeSpan GetUtcOffset(DateTime d) { }
 
 	public static XmlDateTimeSerializationMode ToSerializationMode(DateTimeKind kind) { }
@@ -1474,7 +1476,7 @@ internal static class DateTimeUtils // TypeDefIndex: 5956
 
 }
 
-public abstract class DateTimeConverterBase : JsonConverter // TypeDefIndex: 6108
+public abstract class DateTimeConverterBase : JsonConverter // TypeDefIndex: 6110
 {
 
 	public override bool CanConvert(Type objectType) { }

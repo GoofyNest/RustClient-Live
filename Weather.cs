@@ -1,72 +1,72 @@
-public class Weather : ConsoleSystem // TypeDefIndex: 13764
+public class Weather : ConsoleSystem // TypeDefIndex: 13780
 {
-	[ServerVar] 
-	public static float wetness_rain; 
-	[ServerVar] 
-	public static float wetness_snow; 
+	[ServerVar]
+	public static float wetness_rain;
+	[ServerVar]
+	public static float wetness_snow;
 
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float clear_chance { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float dust_chance { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float fog_chance { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float overcast_chance { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float storm_chance { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float rain_chance { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float rain { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float wind { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float thunder { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float rainbow { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float fog { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float atmosphere_rayleigh { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float atmosphere_mie { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float atmosphere_brightness { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float atmosphere_contrast { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float atmosphere_directionality { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_size { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_opacity { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_coverage { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_sharpness { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_coloring { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_attenuation { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_saturation { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_scattering { get; set; }
-	[ReplicatedVar] 
+	[ReplicatedVar]
 	public static float cloud_brightness { get; set; }
 
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void load(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void reset(ConsoleSystem.Arg args) { }
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static void report(ConsoleSystem.Arg args) { }
 
 	public static float get_clear_chance() { }
@@ -175,9 +175,9 @@ public class Weather : ConsoleSystem // TypeDefIndex: 13764
 
 }
 
-private sealed class Weather.<>c__DisplayClass0_0 // TypeDefIndex: 13765
+private sealed class Weather.<>c__DisplayClass0_0 // TypeDefIndex: 13781
 {
-	public string name; 
+	public string name;
 
 
 	public void .ctor() { }

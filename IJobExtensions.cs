@@ -1,7 +1,7 @@
 public static class IJobExtensions // TypeDefIndex: 3299
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static JobHandle Schedule<T>(T jobData, JobHandle dependsOn) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +12,7 @@ public static class IJobExtensions // TypeDefIndex: 3299
 
 internal struct IJobExtensions.JobStruct<T> // TypeDefIndex: 3300
 {
-	public static IntPtr jobReflectionData; 
+	public static IntPtr jobReflectionData;
 
 
 	public static IntPtr Initialize() { }

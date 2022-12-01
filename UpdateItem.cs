@@ -1,8 +1,8 @@
-public class UpdateItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6489
+public class UpdateItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6491
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Item item; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Item item;
 
 
 	public static void ResetToPool(UpdateItem instance) { }

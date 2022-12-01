@@ -1,10 +1,10 @@
 internal class ARC4Managed : RC4, ICryptoTransform, IDisposable // TypeDefIndex: 63
 {
-	private byte[] key; 
-	private byte[] state; 
-	private byte x; 
-	private byte y; 
-	private bool m_disposed; 
+	private byte[] key;
+	private byte[] state;
+	private byte x;
+	private byte y;
+	private bool m_disposed;
 
 	public override byte[] Key { get; set; }
 	public bool CanTransformMultipleBlocks { get; }

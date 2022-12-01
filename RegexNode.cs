@@ -1,13 +1,13 @@
 internal sealed class RegexNode // TypeDefIndex: 2625
 {
-	internal int _type; 
-	internal List<RegexNode> _children; 
-	internal string _str; 
-	internal char _ch; 
-	internal int _m; 
-	internal int _n; 
-	internal RegexOptions _options; 
-	internal RegexNode _next; 
+	internal int _type;
+	internal List<RegexNode> _children;
+	internal string _str;
+	internal char _ch;
+	internal int _m;
+	internal int _n;
+	internal RegexOptions _options;
+	internal RegexNode _next;
 
 
 	internal void .ctor(int type, RegexOptions options) { }

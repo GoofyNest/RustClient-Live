@@ -1,13 +1,13 @@
-public class AchievementTodo : BaseMonoBehaviour // TypeDefIndex: 12576
+public class AchievementTodo : BaseMonoBehaviour // TypeDefIndex: 12589
 {
-	public Text text; 
-	public RectTransform checkIcon; 
-	public RectTransform checkBox; 
-	public Color AliveColor; 
-	public Color DeadColor; 
-	public Color HighlightColor; 
-	private AchievementGroup.AchievementItem Item; 
-	internal bool State; 
+	public Text text;
+	public RectTransform checkIcon;
+	public RectTransform checkBox;
+	public Color AliveColor;
+	public Color DeadColor;
+	public Color HighlightColor;
+	private AchievementGroup.AchievementItem Item;
+	internal bool State;
 
 
 	private void Awake() { }

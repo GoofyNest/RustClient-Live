@@ -1,26 +1,26 @@
-public class RustFlexText : RustText, IFlexNode // TypeDefIndex: 7058
+public class RustFlexText : RustText, IFlexNode // TypeDefIndex: 7060
 {
-	[TooltipAttribute] 
-	public FlexLength Basis; 
-	[MinAttribute] 
-	[TooltipAttribute] 
-	public int Grow; 
-	[MinAttribute] 
-	[TooltipAttribute] 
-	public int Shrink; 
-	[TooltipAttribute] 
-	public FlexAlignSelf AlignSelf; 
-	[TooltipAttribute] 
-	public FlexLength FlexMinWidth; 
-	[TooltipAttribute] 
-	public FlexLength FlexMaxWidth; 
-	[TooltipAttribute] 
-	public FlexLength FlexMinHeight; 
-	[TooltipAttribute] 
-	public FlexLength FlexMaxHeight; 
-	private bool _isDirty; 
-	private float _preferredWidth; 
-	private float _preferredHeight; 
+	[TooltipAttribute]
+	public FlexLength Basis;
+	[MinAttribute]
+	[TooltipAttribute]
+	public int Grow;
+	[MinAttribute]
+	[TooltipAttribute]
+	public int Shrink;
+	[TooltipAttribute]
+	public FlexAlignSelf AlignSelf;
+	[TooltipAttribute]
+	public FlexLength FlexMinWidth;
+	[TooltipAttribute]
+	public FlexLength FlexMaxWidth;
+	[TooltipAttribute]
+	public FlexLength FlexMinHeight;
+	[TooltipAttribute]
+	public FlexLength FlexMaxHeight;
+	private bool _isDirty;
+	private float _preferredWidth;
+	private float _preferredHeight;
 
 	private RectTransform Facepunch.Flexbox.IFlexNode.Transform { get; }
 	private bool Facepunch.Flexbox.IFlexNode.IsActive { get; }

@@ -1,11 +1,11 @@
-public class ERRoadNetwork // TypeDefIndex: 7285
+public class ERRoadNetwork // TypeDefIndex: 7287
 {
-	public ERModularBase roadNetwork; 
-	public bool isInBuildMode; 
-	public string str; 
-	public static ERRoadNetwork.RoadUpdateCallback onRoadUpdate; 
-	public static ERRoadNetwork.BuildModeCallback onBuildModeEnter; 
-	public static ERRoadNetwork.EditModeCallback onEditModeEnter; 
+	public ERModularBase roadNetwork;
+	public bool isInBuildMode;
+	public string str;
+	public static ERRoadNetwork.RoadUpdateCallback onRoadUpdate;
+	public static ERRoadNetwork.BuildModeCallback onBuildModeEnter;
+	public static ERRoadNetwork.EditModeCallback onEditModeEnter;
 
 
 	public static void OnBuildModeEnter() { }
@@ -70,7 +70,7 @@ public class ERRoadNetwork // TypeDefIndex: 7285
 
 	public ERConnection[] LoadConnections() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public ERConnection GetSourceConnectionByName(string name) { }
 
 	public ERConnection GetConnectionPrefabByName(string name) { }
@@ -99,7 +99,7 @@ public class ERRoadNetwork // TypeDefIndex: 7285
 
 }
 
-public sealed class ERRoadNetwork.RoadUpdateCallback : MulticastDelegate // TypeDefIndex: 7286
+public sealed class ERRoadNetwork.RoadUpdateCallback : MulticastDelegate // TypeDefIndex: 7288
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -112,7 +112,7 @@ public sealed class ERRoadNetwork.RoadUpdateCallback : MulticastDelegate // Type
 
 }
 
-public sealed class ERRoadNetwork.BuildModeCallback : MulticastDelegate // TypeDefIndex: 7287
+public sealed class ERRoadNetwork.BuildModeCallback : MulticastDelegate // TypeDefIndex: 7289
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -125,7 +125,7 @@ public sealed class ERRoadNetwork.BuildModeCallback : MulticastDelegate // TypeD
 
 }
 
-public sealed class ERRoadNetwork.EditModeCallback : MulticastDelegate // TypeDefIndex: 7288
+public sealed class ERRoadNetwork.EditModeCallback : MulticastDelegate // TypeDefIndex: 7290
 {
 
 	public void .ctor(object object, IntPtr method) { }

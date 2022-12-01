@@ -1,9 +1,9 @@
 internal class DecoderNLS : Decoder, ISerializable // TypeDefIndex: 441
 {
-	protected Encoding m_encoding; 
-	protected bool m_mustFlush; 
-	internal bool m_throwOnOverflow; 
-	internal int m_bytesUsed; 
+	protected Encoding m_encoding;
+	protected bool m_mustFlush;
+	internal bool m_throwOnOverflow;
+	internal int m_bytesUsed;
 
 	public bool MustFlush { get; }
 	internal virtual bool HasState { get; }

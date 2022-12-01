@@ -1,17 +1,17 @@
-public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6413
+public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6415
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int oldResult1; 
-	public int oldResult2; 
-	public int oldResult3; 
-	public int newResult1; 
-	public int newResult2; 
-	public int newResult3; 
-	public bool isSpinning; 
-	public float spinTime; 
-	public uint storageID; 
-	public int multiplier; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int oldResult1;
+	public int oldResult2;
+	public int oldResult3;
+	public int newResult1;
+	public int newResult2;
+	public int newResult3;
+	public bool isSpinning;
+	public float spinTime;
+	public uint storageID;
+	public int multiplier;
 
 
 	public static void ResetToPool(SlotMachine instance) { }
@@ -68,54 +68,54 @@ public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public class SlotMachine : BaseMountable // TypeDefIndex: 10165
+public class SlotMachine : BaseMountable // TypeDefIndex: 10167
 {
-	private Option __menuOption_Menu_Deposit; 
-	private Option __menuOption_Menu_Spin; 
-	[ServerVar] 
-	public static int ForcePayoutIndex; 
-	[HeaderAttribute] 
-	public Transform Reel1; 
-	public Transform Reel2; 
-	public Transform Reel3; 
-	public Transform Arm; 
-	public AnimationCurve Curve; 
-	public int Reel1Spins; 
-	public int Reel2Spins; 
-	public int Reel3Spins; 
-	public int MaxReelSpins; 
-	public float SpinDuration; 
-	private int SpinResult1; 
-	private int SpinResult2; 
-	private int SpinResult3; 
-	private int SpinResultPrevious1; 
-	private int SpinResultPrevious2; 
-	private int SpinResultPrevious3; 
-	private float SpinTime; 
-	public GameObjectRef StoragePrefab; 
-	public EntityRef StorageInstance; 
-	public SoundDefinition SpinSound; 
-	public SlotMachinePayoutDisplay PayoutDisplay; 
-	public SlotMachinePayoutSettings PayoutSettings; 
-	public Transform HandIkTarget; 
+	private Option __menuOption_Menu_Deposit;
+	private Option __menuOption_Menu_Spin;
+	[ServerVar]
+	public static int ForcePayoutIndex;
+	[HeaderAttribute]
+	public Transform Reel1;
+	public Transform Reel2;
+	public Transform Reel3;
+	public Transform Arm;
+	public AnimationCurve Curve;
+	public int Reel1Spins;
+	public int Reel2Spins;
+	public int Reel3Spins;
+	public int MaxReelSpins;
+	public float SpinDuration;
+	private int SpinResult1;
+	private int SpinResult2;
+	private int SpinResult3;
+	private int SpinResultPrevious1;
+	private int SpinResultPrevious2;
+	private int SpinResultPrevious3;
+	private float SpinTime;
+	public GameObjectRef StoragePrefab;
+	public EntityRef StorageInstance;
+	public SoundDefinition SpinSound;
+	public SlotMachinePayoutDisplay PayoutDisplay;
+	public SlotMachinePayoutSettings PayoutSettings;
+	public Transform HandIkTarget;
 	private const BaseEntity.Flags HasScrapForSpin = 128;
 	private const BaseEntity.Flags IsSpinningFlag = 256;
-	public Material PayoutIconMaterial; 
-	public bool UseTimeOfDayAdjustedSprite; 
-	public MeshRenderer[] PulseRenderers; 
-	public float PulseSpeed; 
-	[ColorUsageAttribute] 
-	public Color PulseFrom; 
-	[ColorUsageAttribute] 
-	public Color PulseTo; 
-	[CompilerGeneratedAttribute] 
-	private int <CurrentMultiplier>k__BackingField; 
-	private TimeSince lastWin; 
-	private Material instancedPulseMaterial; 
-	private TimeSince pulseTime; 
-	private float pulseFor; 
-	private static int emissionId; 
-	private Quaternion InitialArmRotation; 
+	public Material PayoutIconMaterial;
+	public bool UseTimeOfDayAdjustedSprite;
+	public MeshRenderer[] PulseRenderers;
+	public float PulseSpeed;
+	[ColorUsageAttribute]
+	public Color PulseFrom;
+	[ColorUsageAttribute]
+	public Color PulseTo;
+	[CompilerGeneratedAttribute]
+	private int <CurrentMultiplier>k__BackingField;
+	private TimeSince lastWin;
+	private Material instancedPulseMaterial;
+	private TimeSince pulseTime;
+	private float pulseFor;
+	private static int emissionId;
+	private Quaternion InitialArmRotation;
 
 	public override bool HasMenuOptions { get; }
 	private bool IsSpinning { get; }
@@ -130,28 +130,28 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10165
 
 	private bool get_IsSpinning() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_CurrentMultiplier() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentMultiplier(int value) { }
 
 	protected override bool HideMenuItems(BasePlayer player) { }
 
 	private bool CanSpin() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Spin(BasePlayer player) { }
 
 	public bool Menu_Spin_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Deposit(BasePlayer player) { }
 
 	public bool Menu_Deposit_ShowIf(BasePlayer player) { }
@@ -164,7 +164,7 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10165
 
 	private static float CalculateReelAngle(int oldResult, int newResult, int numSpins, int maxNumSpins, float timeSinceSpin, float maxTime) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void RPC_OnSpin(BaseEntity.RPCMessage msg) { }
 
 	private void UpdateSpinVisualsInvoke() { }
@@ -187,9 +187,9 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10165
 
 }
 
-public enum SlotMachine.SlotFaces // TypeDefIndex: 10166
+public enum SlotMachine.SlotFaces // TypeDefIndex: 10168
 {
-	public int value__; 
+	public int value__;
 	public const SlotMachine.SlotFaces Scrap = 0;
 	public const SlotMachine.SlotFaces Rope = 1;
 	public const SlotMachine.SlotFaces Apple = 2;

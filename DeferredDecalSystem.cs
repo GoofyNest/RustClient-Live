@@ -1,22 +1,22 @@
-public class DeferredDecalSystem // TypeDefIndex: 12402
+public class DeferredDecalSystem // TypeDefIndex: 12410
 {
-	internal static bool IsDirty; 
+	internal static bool IsDirty;
 	internal const int QueueSize = 2;
-	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] DiffuseDecals; 
-	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] SpecularDecals; 
-	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] NormalsDecals; 
-	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] EmissionDecals; 
-	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] CombinedDecals; 
-	internal static int DiffusePass; 
-	internal static int SpecularPass; 
-	internal static int NormalsPass; 
-	internal static int EmissionPass; 
-	internal static int CombinedPass; 
-	internal static RenderTargetIdentifier[] DiffuseRenderTarget; 
-	internal static RenderTargetIdentifier[] SpecularRenderTarget; 
-	internal static RenderTargetIdentifier[] NormalsRenderTarget; 
-	internal static RenderTargetIdentifier[] EmissionRenderTarget; 
-	internal static RenderTargetIdentifier[] CombinedRenderTarget; 
+	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] DiffuseDecals;
+	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] SpecularDecals;
+	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] NormalsDecals;
+	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] EmissionDecals;
+	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] CombinedDecals;
+	internal static int DiffusePass;
+	internal static int SpecularPass;
+	internal static int NormalsPass;
+	internal static int EmissionPass;
+	internal static int CombinedPass;
+	internal static RenderTargetIdentifier[] DiffuseRenderTarget;
+	internal static RenderTargetIdentifier[] SpecularRenderTarget;
+	internal static RenderTargetIdentifier[] NormalsRenderTarget;
+	internal static RenderTargetIdentifier[] EmissionRenderTarget;
+	internal static RenderTargetIdentifier[] CombinedRenderTarget;
 
 	public static bool IsEmpty { get; }
 

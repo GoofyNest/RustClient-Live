@@ -1,6 +1,6 @@
-public enum ERRoadWayType // TypeDefIndex: 7207
+public enum ERRoadWayType // TypeDefIndex: 7209
 {
-	public int value__; 
+	public int value__;
 	public const ERRoadWayType Primary = 1;
 	public const ERRoadWayType Secondary = 2;
 	public const ERRoadWayType Tertiary = 3;

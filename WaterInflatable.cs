@@ -1,42 +1,42 @@
-public class WaterInflatable : BaseMountable, IPoolVehicle, INotifyTrigger // TypeDefIndex: 10380
+public class WaterInflatable : BaseMountable, IPoolVehicle, INotifyTrigger // TypeDefIndex: 10384
 {
-	public Rigidbody rigidBody; 
-	public Transform centerOfMass; 
-	public float forwardPushForce; 
-	public float rearPushForce; 
-	public float rotationForce; 
-	public float maxSpeed; 
-	public float maxPaddleFrequency; 
-	public SoundDefinition paddleSfx; 
-	public SoundDefinition smallPlayerMovementSound; 
-	public SoundDefinition largePlayerMovementSound; 
-	public BlendedSoundLoops waterLoops; 
-	public float waterSoundSpeedDivisor; 
-	public float additiveDownhillVelocity; 
-	public GameObjectRef handSplashForwardEffect; 
-	public GameObjectRef handSplashBackEffect; 
-	public GameObjectRef footSplashEffect; 
-	public float animationLerpSpeed; 
-	public Transform smoothedEyePosition; 
-	public float smoothedEyeSpeed; 
-	public Buoyancy buoyancy; 
-	public bool driftTowardsIsland; 
-	public GameObjectRef mountEffect; 
-	[RangeAttribute] 
-	public float handSplashOffset; 
-	public float velocitySplashMultiplier; 
-	public Vector3 modifyEyeOffset; 
-	[RangeAttribute] 
-	public float inheritVelocityMultiplier; 
-	private TimeSince lastPaddle; 
-	public ParticleSystem[] movingParticleSystems; 
-	public float movingParticlesThreshold; 
-	public Transform headSpaceCheckPosition; 
-	public float headSpaceCheckRadius; 
-	private WaterInflatable.PaddleDirection lastPaddleDirection; 
-	private Vector3 smoothedAnimDirection; 
-	private Vector3 smoothedEyePos; 
-	private Quaternion smoothedEyeRot; 
+	public Rigidbody rigidBody;
+	public Transform centerOfMass;
+	public float forwardPushForce;
+	public float rearPushForce;
+	public float rotationForce;
+	public float maxSpeed;
+	public float maxPaddleFrequency;
+	public SoundDefinition paddleSfx;
+	public SoundDefinition smallPlayerMovementSound;
+	public SoundDefinition largePlayerMovementSound;
+	public BlendedSoundLoops waterLoops;
+	public float waterSoundSpeedDivisor;
+	public float additiveDownhillVelocity;
+	public GameObjectRef handSplashForwardEffect;
+	public GameObjectRef handSplashBackEffect;
+	public GameObjectRef footSplashEffect;
+	public float animationLerpSpeed;
+	public Transform smoothedEyePosition;
+	public float smoothedEyeSpeed;
+	public Buoyancy buoyancy;
+	public bool driftTowardsIsland;
+	public GameObjectRef mountEffect;
+	[RangeAttribute]
+	public float handSplashOffset;
+	public float velocitySplashMultiplier;
+	public Vector3 modifyEyeOffset;
+	[RangeAttribute]
+	public float inheritVelocityMultiplier;
+	private TimeSince lastPaddle;
+	public ParticleSystem[] movingParticleSystems;
+	public float movingParticlesThreshold;
+	public Transform headSpaceCheckPosition;
+	public float headSpaceCheckRadius;
+	private WaterInflatable.PaddleDirection lastPaddleDirection;
+	private Vector3 smoothedAnimDirection;
+	private Vector3 smoothedEyePos;
+	private Quaternion smoothedEyeRot;
 
 	public override bool IsSummerDlcVehicle { get; }
 
@@ -45,7 +45,7 @@ public class WaterInflatable : BaseMountable, IPoolVehicle, INotifyTrigger // Ty
 
 	public override bool get_IsSummerDlcVehicle() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void OnPaddled(BaseEntity.RPCMessage msg) { }
 
 	public override void UpdatePlayerModel(BasePlayer player) { }
@@ -92,9 +92,9 @@ public class WaterInflatable : BaseMountable, IPoolVehicle, INotifyTrigger // Ty
 
 }
 
-private enum WaterInflatable.PaddleDirection // TypeDefIndex: 10381
+private enum WaterInflatable.PaddleDirection // TypeDefIndex: 10385
 {
-	public int value__; 
+	public int value__;
 	public const WaterInflatable.PaddleDirection Forward = 0;
 	public const WaterInflatable.PaddleDirection Left = 1;
 	public const WaterInflatable.PaddleDirection Right = 2;
@@ -102,9 +102,9 @@ private enum WaterInflatable.PaddleDirection // TypeDefIndex: 10381
 
 }
 
-private enum WaterInflatable.ParticleType // TypeDefIndex: 10382
+private enum WaterInflatable.ParticleType // TypeDefIndex: 10386
 {
-	public int value__; 
+	public int value__;
 	public const WaterInflatable.ParticleType HandForward = 0;
 	public const WaterInflatable.ParticleType HandBack = 1;
 	public const WaterInflatable.ParticleType Foot = 2;

@@ -1,16 +1,16 @@
 public class RectOffset // TypeDefIndex: 3378
 {
-	[VisibleToOtherModulesAttribute] 
-	internal IntPtr m_Ptr; 
-	private readonly object m_SourceStyle; 
+	[VisibleToOtherModulesAttribute]
+	internal IntPtr m_Ptr;
+	private readonly object m_SourceStyle;
 
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int left { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int right { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int top { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public int bottom { get; }
 	public int horizontal { get; }
 	public int vertical { get; }
@@ -18,7 +18,7 @@ public class RectOffset // TypeDefIndex: 3378
 
 	public void .ctor() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal void .ctor(object sourceStyle, IntPtr source) { }
 
 	protected override void Finalize() { }
@@ -27,10 +27,10 @@ public class RectOffset // TypeDefIndex: 3378
 
 	private void Destroy() { }
 
-	[ThreadAndSerializationSafeAttribute] 
+	[ThreadAndSerializationSafeAttribute]
 	private static IntPtr InternalCreate() { }
 
-	[ThreadAndSerializationSafeAttribute] 
+	[ThreadAndSerializationSafeAttribute]
 	private static void InternalDestroy(IntPtr ptr) { }
 
 	public int get_left() { }

@@ -1,11 +1,11 @@
-public sealed class Helper // TypeDefIndex: 8257
+public sealed class Helper // TypeDefIndex: 8259
 {
-	private static Dictionary<long, Helper.Allocation> s_Allocations; 
-	private static Dictionary<long, Helper.PinnedBuffer> s_PinnedBuffers; 
-	private static Dictionary<IntPtr, Helper.DelegateHolder> s_Callbacks; 
-	private static Dictionary<string, Helper.DelegateHolder> s_StaticCallbacks; 
-	private static long s_LastClientDataId; 
-	private static Dictionary<IntPtr, object> s_ClientDatas; 
+	private static Dictionary<long, Helper.Allocation> s_Allocations;
+	private static Dictionary<long, Helper.PinnedBuffer> s_PinnedBuffers;
+	private static Dictionary<IntPtr, Helper.DelegateHolder> s_Callbacks;
+	private static Dictionary<string, Helper.DelegateHolder> s_StaticCallbacks;
+	private static long s_LastClientDataId;
+	private static Dictionary<IntPtr, object> s_ClientDatas;
 
 
 	internal static void AddCallback(out IntPtr clientDataAddress, object clientData, Delegate publicDelegate, Delegate privateDelegate, Delegate[] structDelegates) { }
@@ -3041,79 +3041,79 @@ public sealed class Helper // TypeDefIndex: 8257
 
 }
 
-private struct Helper.Allocation // TypeDefIndex: 8258
+private struct Helper.Allocation // TypeDefIndex: 8260
 {
-	[CompilerGeneratedAttribute] 
-	private int <Size>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private object <Cache>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<bool> <IsArrayItemAllocated>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private int <Size>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private object <Cache>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<bool> <IsArrayItemAllocated>k__BackingField;
 
 	public int Size { get; set; }
 	public object Cache { get; set; }
 	public Nullable<bool> IsArrayItemAllocated { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Size() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Size(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_Cache() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Cache(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<bool> get_IsArrayItemAllocated() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_IsArrayItemAllocated(Nullable<bool> value) { }
 
 	public void .ctor(int size, object cache, Nullable<bool> isArrayItemAllocated) { }
 
 }
 
-private struct Helper.PinnedBuffer // TypeDefIndex: 8259
+private struct Helper.PinnedBuffer // TypeDefIndex: 8261
 {
-	[CompilerGeneratedAttribute] 
-	private GCHandle <Handle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <RefCount>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private GCHandle <Handle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <RefCount>k__BackingField;
 
 	public GCHandle Handle { get; set; }
 	public int RefCount { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public GCHandle get_Handle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Handle(GCHandle value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_RefCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RefCount(int value) { }
 
 	public void .ctor(GCHandle handle) { }
 
 }
 
-private class Helper.DelegateHolder // TypeDefIndex: 8260
+private class Helper.DelegateHolder // TypeDefIndex: 8262
 {
-	[CompilerGeneratedAttribute] 
-	private Delegate <Public>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Delegate <Private>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Delegate[] <StructDelegates>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<ulong> <NotificationId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Delegate <Public>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Delegate <Private>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Delegate[] <StructDelegates>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<ulong> <NotificationId>k__BackingField;
 
 	public Delegate Public { get; set; }
 	public Delegate Private { get; set; }
@@ -3121,38 +3121,38 @@ private class Helper.DelegateHolder // TypeDefIndex: 8260
 	public Nullable<ulong> NotificationId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Delegate get_Public() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Public(Delegate value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Delegate get_Private() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Private(Delegate value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Delegate[] get_StructDelegates() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_StructDelegates(Delegate[] value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<ulong> get_NotificationId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NotificationId(Nullable<ulong> value) { }
 
 	public void .ctor(Delegate publicDelegate, Delegate privateDelegate, Delegate[] structDelegates) { }
 
 }
 
-private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8261
+private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8263
 {
 	public static readonly Helper.<>
-	public static Func<Delegate, bool> <>9__3_0; 
+	public static Func<Delegate, bool> <>9__3_0;
 
 
 	private static void .cctor() { }
@@ -3191,9 +3191,9 @@ private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackIn
 
 }
 
-private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8262
+private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8264
 {
-	public ulong notificationId; 
+	public ulong notificationId;
 
 
 	public void .ctor() { }
@@ -3202,10 +3202,10 @@ private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8262
 
 }
 
-private sealed class Helper.<>c // TypeDefIndex: 8263
+private sealed class Helper.<>c // TypeDefIndex: 8265
 {
-	public static readonly Helper.<>c <>9; 
-	public static Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int> <>9__63_0; 
+	public static readonly Helper.<>c <>9;
+	public static Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int> <>9__63_0;
 
 
 	private static void .cctor() { }

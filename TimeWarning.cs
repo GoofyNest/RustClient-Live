@@ -1,4 +1,4 @@
-public sealed class TimeWarning : IDisposable // TypeDefIndex: 5602
+public sealed class TimeWarning : IDisposable // TypeDefIndex: 5604
 {
 
 	private void .ctor() { }
@@ -7,10 +7,10 @@ public sealed class TimeWarning : IDisposable // TypeDefIndex: 5602
 
 	public void Dispose() { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void BeginSample(string name) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void EndSample() { }
 
 }

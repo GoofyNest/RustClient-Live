@@ -1,24 +1,24 @@
-public struct SetClientNetworkStateOptions // TypeDefIndex: 9743
+public struct SetClientNetworkStateOptions // TypeDefIndex: 9745
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <ClientHandle>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsNetworkActive>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <ClientHandle>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsNetworkActive>k__BackingField;
 
 	public IntPtr ClientHandle { get; set; }
 	public bool IsNetworkActive { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_ClientHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientHandle(IntPtr value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsNetworkActive() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsNetworkActive(bool value) { }
 
 }

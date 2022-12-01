@@ -1,14 +1,14 @@
-public class ERPrefabInstance : MonoBehaviour // TypeDefIndex: 7301
+public class ERPrefabInstance : MonoBehaviour // TypeDefIndex: 7303
 {
-	public SideObject so; 
-	public GameObject prefab; 
-	public ERSORoadExt soData; 
-	public double id; 
-	public ERModularRoad roadScript; 
-	public bool buildFlag; 
-	public bool locked; 
-	public bool child; 
-	public int sectionIndex; 
+	public SideObject so;
+	public GameObject prefab;
+	public ERSORoadExt soData;
+	public double id;
+	public ERModularRoad roadScript;
+	public bool buildFlag;
+	public bool locked;
+	public bool child;
+	public int sectionIndex;
 
 
 	public void Copy(ERPrefabInstance source) { }

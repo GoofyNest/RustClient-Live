@@ -1,6 +1,6 @@
 internal sealed class SqlInt16Storage : DataStorage // TypeDefIndex: 4425
 {
-	private SqlInt16[] _values; 
+	private SqlInt16[] _values;
 
 
 	public void .ctor(DataColumn column) { }

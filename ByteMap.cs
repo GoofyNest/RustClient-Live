@@ -1,11 +1,11 @@
-public class ByteMap // TypeDefIndex: 12028
+public class ByteMap // TypeDefIndex: 12035
 {
-	[SerializeField] 
-	private int size; 
-	[SerializeField] 
-	private int bytes; 
-	[SerializeField] 
-	private byte[] values; 
+	[SerializeField]
+	private int size;
+	[SerializeField]
+	private int bytes;
+	[SerializeField]
+	private byte[] values;
 
 	public int Size { get; }
 	public uint Item { get; set; }

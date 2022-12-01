@@ -1,12 +1,12 @@
 public class WriteAccessRequiredAttribute : Attribute // TypeDefIndex: 3335
 {
 
-[RequiredByNativeCodeAttribute] 
-[AttributeUsageAttribute] 
-[ObsoleteAttribute] 
+[RequiredByNativeCodeAttribute]
+[AttributeUsageAttribute]
+[ObsoleteAttribute]
 public sealed class NativeContainerNeedsThreadIndexAttribute : Attribute
 
-[AttributeUsageAttribute] 
+[AttributeUsageAttribute]
 public class WriteAccessRequiredAttribute : Attribute
 
 	public void .ctor() { }

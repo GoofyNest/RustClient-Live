@@ -1,21 +1,21 @@
-public class LightLOD : MonoBehaviour, ILOD, IClientComponent // TypeDefIndex: 13089
+public class LightLOD : MonoBehaviour, ILOD, IClientComponent // TypeDefIndex: 13104
 {
-	public float DistanceBias; 
-	public bool ToggleLight; 
-	public bool ToggleShadows; 
-	private static List<LightLOD> pointLights; 
-	private static List<LightLOD> spotLights; 
-	private Light lightComponent; 
-	private LightOccludee lightOccludee; 
-	private LightEx lightEx; 
-	private VolumetricLightBeam volumetricBeam; 
-	private float cameraDist; 
-	private float fadeSign; 
-	private float maxLightIntensity; 
-	private float shadowIntensity; 
-	private static ListHashSet<LightLOD> registered; 
-	private static readonly int UpdatePerFrame; 
-	private static int updateIndex; 
+	public float DistanceBias;
+	public bool ToggleLight;
+	public bool ToggleShadows;
+	private static List<LightLOD> pointLights;
+	private static List<LightLOD> spotLights;
+	private Light lightComponent;
+	private LightOccludee lightOccludee;
+	private LightEx lightEx;
+	private VolumetricLightBeam volumetricBeam;
+	private float cameraDist;
+	private float fadeSign;
+	private float maxLightIntensity;
+	private float shadowIntensity;
+	private static ListHashSet<LightLOD> registered;
+	private static readonly int UpdatePerFrame;
+	private static int updateIndex;
 
 
 	private int GetMaxLightCount() { }

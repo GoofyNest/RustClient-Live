@@ -1,6 +1,6 @@
 internal enum TypeNameFormatFlags // TypeDefIndex: 290
 {
-	public int value__; 
+	public int value__;
 	public const TypeNameFormatFlags FormatBasic = 0;
 	public const TypeNameFormatFlags FormatNamespace = 1;
 	public const TypeNameFormatFlags FormatFullInst = 2;

@@ -1,4 +1,4 @@
-public class VersionConverter : JsonConverter // TypeDefIndex: 6115
+public class VersionConverter : JsonConverter // TypeDefIndex: 6117
 {
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }

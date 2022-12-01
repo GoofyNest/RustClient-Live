@@ -1,33 +1,33 @@
 internal class Panel : BaseVisualElementPanel // TypeDefIndex: 4606
 {
-	private VisualElement m_RootContainer; 
-	private VisualTreeUpdater m_VisualTreeUpdater; 
-	private uint m_Version; 
-	private uint m_RepaintVersion; 
-	private ProfilerMarker m_MarkerUpdate; 
-	private static ProfilerMarker s_MarkerPickAll; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private EventDispatcher <dispatcher>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private ScriptableObject <ownerObject>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private ContextType <contextType>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private FocusController <focusController>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private EventInterests <IMGUIEventInterests>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <IMGUIContainersCount>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private IMGUIContainer <rootIMGUIContainer>k__BackingField; 
-	private bool m_ValidatingLayout; 
+	private VisualElement m_RootContainer;
+	private VisualTreeUpdater m_VisualTreeUpdater;
+	private uint m_Version;
+	private uint m_RepaintVersion;
+	private ProfilerMarker m_MarkerUpdate;
+	private static ProfilerMarker s_MarkerPickAll;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private EventDispatcher <dispatcher>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private ScriptableObject <ownerObject>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private ContextType <contextType>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private FocusController <focusController>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private EventInterests <IMGUIEventInterests>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <IMGUIContainersCount>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private IMGUIContainer <rootIMGUIContainer>k__BackingField;
+	private bool m_ValidatingLayout;
 
 	public override VisualElement visualTree { get; }
 	public override EventDispatcher dispatcher { get; }
@@ -42,25 +42,25 @@ internal class Panel : BaseVisualElementPanel // TypeDefIndex: 4606
 
 	public override VisualElement get_visualTree() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override EventDispatcher get_dispatcher() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override ScriptableObject get_ownerObject() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override ContextType get_contextType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override FocusController get_focusController() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override EventInterests get_IMGUIEventInterests() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override int get_IMGUIContainersCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public override IMGUIContainer get_rootIMGUIContainer() { }
 
 	internal override uint get_version() { }

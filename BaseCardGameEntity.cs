@@ -1,21 +1,21 @@
-public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10033
+public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10035
 {
-	private Option __menuOption_Menu_Open; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private GameObjectRef uiPrefab; 
-	public ItemDefinition scrapItemDef; 
-	[SerializeField] 
-	private GameObjectRef potPrefab; 
-	public BaseCardGameEntity.PlayerStorageInfo[] playerStoragePoints; 
-	[SerializeField] 
-	private GameObjectRef playerStoragePrefab; 
-	private CardGameController _gameCont; 
-	public BaseCardGameEntity.CardGameOption gameOption; 
-	[CompilerGeneratedAttribute] 
-	private string <recentlyLeftPlayerName>k__BackingField; 
-	public static CardGameUI localClientUI; 
-	private TimeSince showWinningsTipFor; 
+	private Option __menuOption_Menu_Open;
+	[HeaderAttribute]
+	[SerializeField]
+	private GameObjectRef uiPrefab;
+	public ItemDefinition scrapItemDef;
+	[SerializeField]
+	private GameObjectRef potPrefab;
+	public BaseCardGameEntity.PlayerStorageInfo[] playerStoragePoints;
+	[SerializeField]
+	private GameObjectRef playerStoragePrefab;
+	private CardGameController _gameCont;
+	public BaseCardGameEntity.CardGameOption gameOption;
+	[CompilerGeneratedAttribute]
+	private string <recentlyLeftPlayerName>k__BackingField;
+	public static CardGameUI localClientUI;
+	private TimeSince showWinningsTipFor;
 
 	public override bool HasMenuOptions { get; }
 	public int ScrapItemID { get; }
@@ -44,10 +44,10 @@ public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10033
 
 	public override void DestroyShared() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_recentlyLeftPlayerName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_recentlyLeftPlayerName(string value) { }
 
 	public bool get_ShowTakeWinningsTip() { }
@@ -66,10 +66,10 @@ public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10033
 
 	public CardGameUI.UIState GetUIGameState(CardPlayerData localPlayerData) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Open(BasePlayer player) { }
 
 	public bool Menu_Open_ShowIf(BasePlayer player) { }
@@ -78,19 +78,19 @@ public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10033
 
 	public bool Menu_Play_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void OnResultsDeclared(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ReceiveCardsForPlayer(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ClientPlaySound(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ClientStartTurnTimer(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void ClientOnPlayerLeft(BaseEntity.RPCMessage msg) { }
 
 	private void ClearRecentlyLeftPlayer() { }
@@ -99,18 +99,18 @@ public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10033
 
 }
 
-public class BaseCardGameEntity.PlayerStorageInfo // TypeDefIndex: 10034
+public class BaseCardGameEntity.PlayerStorageInfo // TypeDefIndex: 10036
 {
-	public Transform storagePos; 
+	public Transform storagePos;
 
 
 	public void .ctor() { }
 
 }
 
-public enum BaseCardGameEntity.CardGameOption // TypeDefIndex: 10035
+public enum BaseCardGameEntity.CardGameOption // TypeDefIndex: 10037
 {
-	public int value__; 
+	public int value__;
 	public const BaseCardGameEntity.CardGameOption TexasHoldEm = 0;
 	public const BaseCardGameEntity.CardGameOption Blackjack = 1;
 

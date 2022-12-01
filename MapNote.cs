@@ -1,9 +1,9 @@
-public class MapNote : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6470
+public class MapNote : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6472
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int noteType; 
-	public Vector3 worldPosition; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int noteType;
+	public Vector3 worldPosition;
 
 
 	public static void ResetToPool(MapNote instance) { }

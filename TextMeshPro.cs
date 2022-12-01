@@ -1,30 +1,30 @@
-public class TextMeshPro : TMP_Text, ILayoutElement // TypeDefIndex: 6806
+public class TextMeshPro : TMP_Text, ILayoutElement // TypeDefIndex: 6808
 {
-	[SerializeField] 
-	private bool m_hasFontAssetChanged; 
-	private float m_previousLossyScaleY; 
-	[SerializeField] 
-	private Renderer m_renderer; 
-	private MeshFilter m_meshFilter; 
-	private bool m_isFirstAllocation; 
-	private int m_max_characters; 
-	private int m_max_numberOfLines; 
-	[SerializeField] 
-	protected TMP_SubMesh[] m_subTextObjects; 
-	private bool m_isMaskingEnabled; 
-	private bool isMaskUpdateRequired; 
-	[SerializeField] 
-	private MaskingTypes m_maskType; 
-	private Matrix4x4 m_EnvMapMatrix; 
-	private Vector3[] m_RectTransformCorners; 
-	private bool m_isRegisteredForEvents; 
-	private int loopCountA; 
-	private bool m_currentAutoSizeMode; 
+	[SerializeField]
+	private bool m_hasFontAssetChanged;
+	private float m_previousLossyScaleY;
+	[SerializeField]
+	private Renderer m_renderer;
+	private MeshFilter m_meshFilter;
+	private bool m_isFirstAllocation;
+	private int m_max_characters;
+	private int m_max_numberOfLines;
+	[SerializeField]
+	protected TMP_SubMesh[] m_subTextObjects;
+	private bool m_isMaskingEnabled;
+	private bool isMaskUpdateRequired;
+	[SerializeField]
+	private MaskingTypes m_maskType;
+	private Matrix4x4 m_EnvMapMatrix;
+	private Vector3[] m_RectTransformCorners;
+	private bool m_isRegisteredForEvents;
+	private int loopCountA;
+	private bool m_currentAutoSizeMode;
 
 	public int sortingLayerID { get; set; }
 	public int sortingOrder { get; set; }
 	public override bool autoSizeTextContainer { get; set; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public TextContainer textContainer { get; }
 	public Transform transform { get; }
 	public Renderer renderer { get; }

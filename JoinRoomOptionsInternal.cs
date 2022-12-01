@@ -1,14 +1,14 @@
-internal struct JoinRoomOptionsInternal : ISettable<JoinRoomOptions>, IDisposable // TypeDefIndex: 8773
+internal struct JoinRoomOptionsInternal : ISettable<JoinRoomOptions>, IDisposable // TypeDefIndex: 8775
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_RoomName; 
-	private IntPtr m_ClientBaseUrl; 
-	private IntPtr m_ParticipantToken; 
-	private IntPtr m_ParticipantId; 
-	private JoinRoomFlags m_Flags; 
-	private int m_ManualAudioInputEnabled; 
-	private int m_ManualAudioOutputEnabled; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_RoomName;
+	private IntPtr m_ClientBaseUrl;
+	private IntPtr m_ParticipantToken;
+	private IntPtr m_ParticipantId;
+	private JoinRoomFlags m_Flags;
+	private int m_ManualAudioInputEnabled;
+	private int m_ManualAudioOutputEnabled;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String RoomName { set; }

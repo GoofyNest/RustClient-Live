@@ -1,15 +1,15 @@
-public class SubbandLayer1 : ASubband // TypeDefIndex: 7417
+public class SubbandLayer1 : ASubband // TypeDefIndex: 7419
 {
-	internal static readonly float[] TableFactor; 
-	internal static readonly float[] TableOffset; 
-	protected int Allocation; 
-	protected float Factor; 
-	protected float Offset; 
-	protected float Sample; 
-	protected int Samplelength; 
-	protected int Samplenumber; 
-	protected float Scalefactor; 
-	protected readonly int Subbandnumber; 
+	internal static readonly float[] TableFactor;
+	internal static readonly float[] TableOffset;
+	protected int Allocation;
+	protected float Factor;
+	protected float Offset;
+	protected float Sample;
+	protected int Samplelength;
+	protected int Samplenumber;
+	protected float Scalefactor;
+	protected readonly int Subbandnumber;
 
 
 	internal void .ctor(int subbandnumber) { }

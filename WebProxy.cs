@@ -1,14 +1,14 @@
 public class WebProxy : IWebProxy, ISerializable // TypeDefIndex: 2978
 {
-	private bool _UseRegistry; 
-	private bool _BypassOnLocal; 
-	private bool m_EnableAutoproxy; 
-	private Uri _ProxyAddress; 
-	private ArrayList _BypassList; 
-	private ICredentials _Credentials; 
-	private Regex[] _RegExBypassList; 
-	private Hashtable _ProxyHostAddresses; 
-	private AutoWebProxyScriptEngine m_ScriptEngine; 
+	private bool _UseRegistry;
+	private bool _BypassOnLocal;
+	private bool m_EnableAutoproxy;
+	private Uri _ProxyAddress;
+	private ArrayList _BypassList;
+	private ICredentials _Credentials;
+	private Regex[] _RegExBypassList;
+	private Hashtable _ProxyHostAddresses;
+	private AutoWebProxyScriptEngine m_ScriptEngine;
 
 	public ICredentials Credentials { get; }
 	public bool UseDefaultCredentials { get; set; }

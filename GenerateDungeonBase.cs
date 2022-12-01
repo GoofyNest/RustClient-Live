@@ -1,19 +1,19 @@
-public class GenerateDungeonBase : ProceduralComponent // TypeDefIndex: 12206
+public class GenerateDungeonBase : ProceduralComponent // TypeDefIndex: 12213
 {
-	public string EntranceFolder; 
-	public string LinkFolder; 
-	public string EndFolder; 
-	public string TransitionFolder; 
-	public InfrastructureType ConnectionType; 
-	private static Vector3 VolumeExtrudePositive; 
-	private static Vector3 VolumeExtrudeNegative; 
+	public string EntranceFolder;
+	public string LinkFolder;
+	public string EndFolder;
+	public string TransitionFolder;
+	public InfrastructureType ConnectionType;
+	private static Vector3 VolumeExtrudePositive;
+	private static Vector3 VolumeExtrudeNegative;
 	private const int MaxCount = 2147483647;
 	private const int MaxDepth = 3;
 	private const int MaxFloor = 2;
-	private List<GenerateDungeonBase.DungeonSegment> segmentsTotal; 
-	private Quaternion[] horizontalRotations; 
-	private Quaternion[] pillarRotations; 
-	private Quaternion[] verticalRotations; 
+	private List<GenerateDungeonBase.DungeonSegment> segmentsTotal;
+	private Quaternion[] horizontalRotations;
+	private Quaternion[] pillarRotations;
+	private Quaternion[] verticalRotations;
 
 	public override bool RunOnCache { get; }
 
@@ -54,24 +54,24 @@ public class GenerateDungeonBase : ProceduralComponent // TypeDefIndex: 12206
 
 }
 
-private class GenerateDungeonBase.DungeonSegment // TypeDefIndex: 12207
+private class GenerateDungeonBase.DungeonSegment // TypeDefIndex: 12214
 {
-	public Vector3 position; 
-	public Quaternion rotation; 
-	public Prefab prefab; 
-	public DungeonBaseLink link; 
-	public int score; 
-	public int cost; 
-	public int floor; 
+	public Vector3 position;
+	public Quaternion rotation;
+	public Prefab prefab;
+	public DungeonBaseLink link;
+	public int score;
+	public int cost;
+	public int floor;
 
 
 	public void .ctor() { }
 
 }
 
-private sealed class GenerateDungeonBase.<>c__DisplayClass14_0 // TypeDefIndex: 12208
+private sealed class GenerateDungeonBase.<>c__DisplayClass14_0 // TypeDefIndex: 12215
 {
-	public GenerateDungeonBase.DungeonSegment segmentStart; 
+	public GenerateDungeonBase.DungeonSegment segmentStart;
 
 
 	public void .ctor() { }
@@ -80,15 +80,29 @@ private sealed class GenerateDungeonBase.<>c__DisplayClass14_0 // TypeDefIndex: 
 
 }
 
-private sealed class GenerateDungeonBase.<>c__DisplayClass14_1 // TypeDefIndex: 12209
+private sealed class GenerateDungeonBase.<>c__DisplayClass14_1 // TypeDefIndex: 12216
 {
-	public GenerateDungeonBase.DungeonSegment segmentEnd; 
+	public GenerateDungeonBase.DungeonSegment segmentEnd;
 	public GenerateDungeonBase.<>c
 
 
 	public void .ctor() { }
 
 	internal float <Process>
+
+}
+
+private sealed class GenerateDungeonBase.<>c // TypeDefIndex: 12217
+{
+	public static readonly GenerateDungeonBase.<>c <>9;
+	public static Func<GenerateDungeonBase.DungeonSegment, bool> <>9__14_1;
+
+
+	private static void .cctor() { }
+
+	public void .ctor() { }
+
+	internal bool <Process>
 
 }
 

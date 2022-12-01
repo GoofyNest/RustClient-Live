@@ -1,8 +1,8 @@
 internal class EtwSession // TypeDefIndex: 1618
 {
-	public readonly int m_etwSessionId; 
-	public ActivityFilter m_activityFilter; 
-	private static List<WeakReference<EtwSession>> s_etwSessions; 
+	public readonly int m_etwSessionId;
+	public ActivityFilter m_activityFilter;
+	private static List<WeakReference<EtwSession>> s_etwSessions;
 
 
 	public static EtwSession GetEtwSession(int etwSessionId, bool bCreateIfNeeded = False) { }
@@ -19,7 +19,7 @@ internal class EtwSession // TypeDefIndex: 1618
 
 private sealed class EtwSession.<>c__DisplayClass1_0 // TypeDefIndex: 1619
 {
-	public EtwSession etwSession; 
+	public EtwSession etwSession;
 
 
 	public void .ctor() { }
@@ -30,8 +30,8 @@ private sealed class EtwSession.<>c__DisplayClass1_0 // TypeDefIndex: 1619
 
 private sealed class EtwSession.<>c // TypeDefIndex: 1620
 {
-	public static readonly EtwSession.<>c <>9; 
-	public static Predicate<WeakReference<EtwSession>> <>9__2_0; 
+	public static readonly EtwSession.<>c <>9;
+	public static Predicate<WeakReference<EtwSession>> <>9__2_0;
 
 
 	private static void .cctor() { }

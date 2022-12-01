@@ -1,7 +1,7 @@
 public class CultureNotFoundException : ArgumentException, ISerializable // TypeDefIndex: 691
 {
-	private string m_invalidCultureName; 
-	private Nullable<int> m_invalidCultureId; 
+	private string m_invalidCultureName;
+	private Nullable<int> m_invalidCultureId;
 
 	public virtual Nullable<int> InvalidCultureId { get; }
 	public virtual string InvalidCultureName { get; }

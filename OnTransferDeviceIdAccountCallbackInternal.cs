@@ -1,4 +1,4 @@
-internal sealed class OnTransferDeviceIdAccountCallbackInternal : MulticastDelegate // TypeDefIndex: 9618
+internal sealed class OnTransferDeviceIdAccountCallbackInternal : MulticastDelegate // TypeDefIndex: 9620
 {
 
 	public void .ctor(object object, IntPtr method) { }

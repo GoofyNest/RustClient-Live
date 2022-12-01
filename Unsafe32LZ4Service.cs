@@ -1,4 +1,4 @@
-internal class Unsafe32LZ4Service : ILZ4Service // TypeDefIndex: 7030
+internal class Unsafe32LZ4Service : ILZ4Service // TypeDefIndex: 7032
 {
 
 	public int Encode(byte[] input, int inputOffset, int inputLength, byte[] output, int outputOffset, int outputLength) { }

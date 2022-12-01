@@ -1,11 +1,11 @@
 internal class MD2Managed : MD2 // TypeDefIndex: 67
 {
-	private byte[] state; 
-	private byte[] checksum; 
-	private byte[] buffer; 
-	private int count; 
-	private byte[] x; 
-	private static readonly byte[] PI_SUBST; 
+	private byte[] state;
+	private byte[] checksum;
+	private byte[] buffer;
+	private int count;
+	private byte[] x;
+	private static readonly byte[] PI_SUBST;
 
 
 	private byte[] Padding(int nLength) { }
@@ -26,12 +26,12 @@ internal class MD2Managed : MD2 // TypeDefIndex: 67
 
 public class MD2Managed : MD2 // TypeDefIndex: 1754
 {
-	private byte[] state; 
-	private byte[] checksum; 
-	private byte[] buffer; 
-	private int count; 
-	private byte[] x; 
-	private static readonly byte[] PI_SUBST; 
+	private byte[] state;
+	private byte[] checksum;
+	private byte[] buffer;
+	private int count;
+	private byte[] x;
+	private static readonly byte[] PI_SUBST;
 
 
 	private byte[] Padding(int nLength) { }

@@ -1,6 +1,6 @@
-public enum TypeNameHandling // TypeDefIndex: 5917
+public enum TypeNameHandling // TypeDefIndex: 5919
 {
-	public int value__; 
+	public int value__;
 	public const TypeNameHandling None = 0;
 	public const TypeNameHandling Objects = 1;
 	public const TypeNameHandling Arrays = 2;

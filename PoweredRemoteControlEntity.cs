@@ -1,11 +1,11 @@
-public class PoweredRemoteControlEntity : IOEntity, IRemoteControllable // TypeDefIndex: 10147
+public class PoweredRemoteControlEntity : IOEntity, IRemoteControllable // TypeDefIndex: 10149
 {
-	private Option __menuOption_Menu_SetID; 
-	public string rcIdentifier; 
-	public Transform viewEyes; 
-	public GameObjectRef IDPanelPrefab; 
-	public bool isStatic; 
-	public bool appendEntityIDToIdentifier; 
+	private Option __menuOption_Menu_SetID;
+	public string rcIdentifier;
+	public Transform viewEyes;
+	public GameObjectRef IDPanelPrefab;
+	public bool isStatic;
+	public bool appendEntityIDToIdentifier;
 
 	public override bool HasMenuOptions { get; }
 	public virtual bool RequiresMouse { get; }
@@ -49,10 +49,10 @@ public class PoweredRemoteControlEntity : IOEntity, IRemoteControllable // TypeD
 
 	public override void DestroyShared() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_SetID(BasePlayer player) { }
 
 	public bool Menu_SetID_ShowIf(BasePlayer player) { }

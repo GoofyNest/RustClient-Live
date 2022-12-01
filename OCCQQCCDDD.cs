@@ -1,4 +1,4 @@
-public class OCCQQCCDDD : MonoBehaviour // TypeDefIndex: 7299
+public class OCCQQCCDDD : MonoBehaviour // TypeDefIndex: 7301
 {
 
 	public static List<Vector3> OQDDOOOOQD(ERModularRoad scr, int startMarker, int endMarker, List<ERMarkerExt> markers, float faceDist, bool ignorePrefabAlignment, ref List<float> tValues, ref List<float> markerDistances, ref List<float> bendAngles) { }

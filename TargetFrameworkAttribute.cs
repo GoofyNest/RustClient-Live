@@ -1,7 +1,7 @@
 public sealed class TargetFrameworkAttribute : Attribute // TypeDefIndex: 1021
 {
-	private string _frameworkName; 
-	private string _frameworkDisplayName; 
+	private string _frameworkName;
+	private string _frameworkDisplayName;
 
 	public string FrameworkDisplayName { set; }
 

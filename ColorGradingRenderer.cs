@@ -1,12 +1,12 @@
-internal sealed class ColorGradingRenderer : PostProcessEffectRenderer<ColorGrading> // TypeDefIndex: 13566
+internal sealed class ColorGradingRenderer : PostProcessEffectRenderer<ColorGrading> // TypeDefIndex: 13582
 {
-	private Texture2D m_GradingCurves; 
-	private readonly Color[] m_Pixels; 
-	private RenderTexture m_InternalLdrLut; 
-	private RenderTexture m_InternalLogLut; 
+	private Texture2D m_GradingCurves;
+	private readonly Color[] m_Pixels;
+	private RenderTexture m_InternalLdrLut;
+	private RenderTexture m_InternalLogLut;
 	private const int k_Lut2DSize = 32;
 	private const int k_Lut3DSize = 33;
-	private readonly HableCurve m_HableCurve; 
+	private readonly HableCurve m_HableCurve;
 
 
 	public override void Render(PostProcessRenderContext context) { }
@@ -37,9 +37,9 @@ internal sealed class ColorGradingRenderer : PostProcessEffectRenderer<ColorGrad
 
 }
 
-private enum ColorGradingRenderer.Pass // TypeDefIndex: 13567
+private enum ColorGradingRenderer.Pass // TypeDefIndex: 13583
 {
-	public int value__; 
+	public int value__;
 	public const ColorGradingRenderer.Pass LutGenLDRFromScratch = 0;
 	public const ColorGradingRenderer.Pass LutGenLDR = 1;
 	public const ColorGradingRenderer.Pass LutGenHDR2D = 2;

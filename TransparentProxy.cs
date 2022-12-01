@@ -1,8 +1,8 @@
 internal class TransparentProxy // TypeDefIndex: 1160
 {
-	public RealProxy _rp; 
-	private RuntimeRemoteClassHandle _class; 
-	private bool _custom_type_info; 
+	public RealProxy _rp;
+	private RuntimeRemoteClassHandle _class;
+	private bool _custom_type_info;
 
 	private bool IsContextBoundObject { get; }
 	private Context TargetContext { get; }

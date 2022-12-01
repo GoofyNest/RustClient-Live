@@ -1,9 +1,9 @@
-public class MiningQuarry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6331
+public class MiningQuarry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6333
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public ResourceExtractor extractor; 
-	public int staticType; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public ResourceExtractor extractor;
+	public int staticType;
 
 
 	public static void ResetToPool(MiningQuarry instance) { }
@@ -60,24 +60,26 @@ public class MiningQuarry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class MiningQuarry : BaseResourceExtractor // TypeDefIndex: 11303
+public class MiningQuarry : BaseResourceExtractor // TypeDefIndex: 11309
 {
-	public Animator beltAnimator; 
-	public Renderer beltScrollRenderer; 
-	public int scrollMatIndex; 
-	public SoundPlayer[] onSounds; 
-	public float processRate; 
-	public float workToAdd; 
-	public GameObjectRef bucketDropEffect; 
-	public GameObject bucketDropTransform; 
-	public MiningQuarry.ChildPrefab engineSwitchPrefab; 
-	public MiningQuarry.ChildPrefab hopperPrefab; 
-	public MiningQuarry.ChildPrefab fuelStoragePrefab; 
-	public MiningQuarry.QuarryType staticType; 
-	public bool isStatic; 
-	private List<SoundModulation.Modulator> soundGainMods; 
-	private List<SoundModulation.Modulator> soundPitchMods; 
-	private float beltSpeed; 
+	public Animator beltAnimator;
+	public Renderer beltScrollRenderer;
+	public int scrollMatIndex;
+	public SoundPlayer[] onSounds;
+	public float processRate;
+	public float workToAdd;
+	public float workPerFuel;
+	public float pendingWork;
+	public GameObjectRef bucketDropEffect;
+	public GameObject bucketDropTransform;
+	public MiningQuarry.ChildPrefab engineSwitchPrefab;
+	public MiningQuarry.ChildPrefab hopperPrefab;
+	public MiningQuarry.ChildPrefab fuelStoragePrefab;
+	public MiningQuarry.QuarryType staticType;
+	public bool isStatic;
+	private List<SoundModulation.Modulator> soundGainMods;
+	private List<SoundModulation.Modulator> soundPitchMods;
+	private float beltSpeed;
 
 
 	public bool IsEngineOn() { }
@@ -92,9 +94,9 @@ public class MiningQuarry : BaseResourceExtractor // TypeDefIndex: 11303
 
 }
 
-public enum MiningQuarry.QuarryType // TypeDefIndex: 11304
+public enum MiningQuarry.QuarryType // TypeDefIndex: 11310
 {
-	public int value__; 
+	public int value__;
 	public const MiningQuarry.QuarryType None = 0;
 	public const MiningQuarry.QuarryType Basic = 1;
 	public const MiningQuarry.QuarryType Sulfur = 2;
@@ -102,11 +104,11 @@ public enum MiningQuarry.QuarryType // TypeDefIndex: 11304
 
 }
 
-public class MiningQuarry.ChildPrefab // TypeDefIndex: 11305
+public class MiningQuarry.ChildPrefab // TypeDefIndex: 11311
 {
-	public GameObjectRef prefabToSpawn; 
-	public GameObject origin; 
-	public BaseEntity instance; 
+	public GameObjectRef prefabToSpawn;
+	public GameObject origin;
+	public BaseEntity instance;
 
 
 	public void .ctor() { }

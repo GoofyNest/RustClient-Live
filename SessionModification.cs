@@ -1,4 +1,4 @@
-public sealed class SessionModification : Handle // TypeDefIndex: 8566
+public sealed class SessionModification : Handle // TypeDefIndex: 8568
 {
 	public const int SessionmodificationAddattributeApiLatest = 1;
 	public const int SessionmodificationMaxSessionAttributeLength = 64;

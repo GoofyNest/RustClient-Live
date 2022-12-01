@@ -1,14 +1,14 @@
 public class Type3Message : MessageBase // TypeDefIndex: 1733
 {
-	private NtlmAuthLevel _level; 
-	private byte[] _challenge; 
-	private string _host; 
-	private string _domain; 
-	private string _username; 
-	private string _password; 
-	private Type2Message _type2; 
-	private byte[] _lm; 
-	private byte[] _nt; 
+	private NtlmAuthLevel _level;
+	private byte[] _challenge;
+	private string _host;
+	private string _domain;
+	private string _username;
+	private string _password;
+	private Type2Message _type2;
+	private byte[] _lm;
+	private byte[] _nt;
 
 	public string Domain { set; }
 	public string Password { set; }

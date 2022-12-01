@@ -1,9 +1,9 @@
 internal sealed class CultureAwareComparer : StringComparer // TypeDefIndex: 304
 {
-	private CompareInfo _compareInfo; 
-	private bool _ignoreCase; 
-	[OptionalFieldAttribute] 
-	private CompareOptions _options; 
+	private CompareInfo _compareInfo;
+	private bool _ignoreCase;
+	[OptionalFieldAttribute]
+	private CompareOptions _options;
 
 
 	internal void .ctor(CultureInfo culture, bool ignoreCase) { }

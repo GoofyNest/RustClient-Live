@@ -1,18 +1,18 @@
 public class StreamWriter : TextWriter // TypeDefIndex: 648
 {
-	public static readonly StreamWriter Null; 
-	private Stream stream; 
-	private Encoding encoding; 
-	private Encoder encoder; 
-	private byte[] byteBuffer; 
-	private char[] charBuffer; 
-	private int charPos; 
-	private int charLen; 
-	private bool autoFlush; 
-	private bool haveWrittenPreamble; 
-	private bool closable; 
-	private Task _asyncWriteTask; 
-	private static Encoding _UTF8NoBOM; 
+	public static readonly StreamWriter Null;
+	private Stream stream;
+	private Encoding encoding;
+	private Encoder encoder;
+	private byte[] byteBuffer;
+	private char[] charBuffer;
+	private int charPos;
+	private int charLen;
+	private bool autoFlush;
+	private bool haveWrittenPreamble;
+	private bool closable;
+	private Task _asyncWriteTask;
+	private static Encoding _UTF8NoBOM;
 
 	internal static Encoding UTF8NoBOM { get; }
 	public virtual bool AutoFlush { set; }
@@ -23,7 +23,7 @@ public class StreamWriter : TextWriter // TypeDefIndex: 648
 
 	private void CheckAsyncTaskInProgress() { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal static Encoding get_UTF8NoBOM() { }
 
 	internal void .ctor() { }

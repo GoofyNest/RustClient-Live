@@ -1,10 +1,10 @@
-public class SlidingProgressDoor : ProgressDoor // TypeDefIndex: 11545
+public class SlidingProgressDoor : ProgressDoor // TypeDefIndex: 11552
 {
-	public Vector3 openPosition; 
-	public Vector3 closedPosition; 
-	public GameObject doorObject; 
-	public TriggerVehiclePush vehiclePhysBox; 
-	private float client_targetStoredEnergy; 
+	public Vector3 openPosition;
+	public Vector3 closedPosition;
+	public GameObject doorObject;
+	public TriggerVehiclePush vehiclePhysBox;
+	private float client_targetStoredEnergy;
 
 
 	public override void UpdateProgress() { }

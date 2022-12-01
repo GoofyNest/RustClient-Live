@@ -1,17 +1,17 @@
 public class GridLayoutGroup : LayoutGroup // TypeDefIndex: 4971
 {
-	[SerializeField] 
-	protected GridLayoutGroup.Corner m_StartCorner; 
-	[SerializeField] 
-	protected GridLayoutGroup.Axis m_StartAxis; 
-	[SerializeField] 
-	protected Vector2 m_CellSize; 
-	[SerializeField] 
-	protected Vector2 m_Spacing; 
-	[SerializeField] 
-	protected GridLayoutGroup.Constraint m_Constraint; 
-	[SerializeField] 
-	protected int m_ConstraintCount; 
+	[SerializeField]
+	protected GridLayoutGroup.Corner m_StartCorner;
+	[SerializeField]
+	protected GridLayoutGroup.Axis m_StartAxis;
+	[SerializeField]
+	protected Vector2 m_CellSize;
+	[SerializeField]
+	protected Vector2 m_Spacing;
+	[SerializeField]
+	protected GridLayoutGroup.Constraint m_Constraint;
+	[SerializeField]
+	protected int m_ConstraintCount;
 
 	public GridLayoutGroup.Corner startCorner { get; set; }
 	public GridLayoutGroup.Axis startAxis { get; set; }
@@ -61,7 +61,7 @@ public class GridLayoutGroup : LayoutGroup // TypeDefIndex: 4971
 
 public enum GridLayoutGroup.Corner // TypeDefIndex: 4972
 {
-	public int value__; 
+	public int value__;
 	public const GridLayoutGroup.Corner UpperLeft = 0;
 	public const GridLayoutGroup.Corner UpperRight = 1;
 	public const GridLayoutGroup.Corner LowerLeft = 2;
@@ -71,7 +71,7 @@ public enum GridLayoutGroup.Corner // TypeDefIndex: 4972
 
 public enum GridLayoutGroup.Axis // TypeDefIndex: 4973
 {
-	public int value__; 
+	public int value__;
 	public const GridLayoutGroup.Axis Horizontal = 0;
 	public const GridLayoutGroup.Axis Vertical = 1;
 
@@ -79,7 +79,7 @@ public enum GridLayoutGroup.Axis // TypeDefIndex: 4973
 
 public enum GridLayoutGroup.Constraint // TypeDefIndex: 4974
 {
-	public int value__; 
+	public int value__;
 	public const GridLayoutGroup.Constraint Flexible = 0;
 	public const GridLayoutGroup.Constraint FixedColumnCount = 1;
 	public const GridLayoutGroup.Constraint FixedRowCount = 2;

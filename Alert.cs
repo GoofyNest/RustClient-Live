@@ -1,7 +1,7 @@
 public class Alert // TypeDefIndex: 1736
 {
-	private AlertLevel level; 
-	private AlertDescription description; 
+	private AlertLevel level;
+	private AlertDescription description;
 
 	public AlertLevel Level { get; }
 	public AlertDescription Description { get; }

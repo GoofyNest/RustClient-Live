@@ -1,9 +1,9 @@
-public class AspectRatioGuide : MonoBehaviour // TypeDefIndex: 12580
+public class AspectRatioGuide : MonoBehaviour // TypeDefIndex: 12593
 {
-	public AspectRatioFitter aspectRatioFitter; 
-	public RustText label; 
-	public float aspect; 
-	public float ratio; 
+	public AspectRatioFitter aspectRatioFitter;
+	public RustText label;
+	public float aspect;
+	public float ratio;
 
 
 	private void Populate() { }

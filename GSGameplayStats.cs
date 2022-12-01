@@ -1,10 +1,10 @@
-internal struct GSGameplayStats_t : ICallbackData // TypeDefIndex: 5501
+internal struct GSGameplayStats_t : ICallbackData // TypeDefIndex: 5503
 {
-	internal Result Result; 
-	internal int Rank; 
-	internal uint TotalConnects; 
-	internal uint TotalMinutesPlayed; 
-	public static int _datasize; 
+	internal Result Result;
+	internal int Rank;
+	internal uint TotalConnects;
+	internal uint TotalMinutesPlayed;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

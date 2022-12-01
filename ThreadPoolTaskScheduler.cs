@@ -1,6 +1,6 @@
 internal sealed class ThreadPoolTaskScheduler : TaskScheduler // TypeDefIndex: 893
 {
-	private static readonly ParameterizedThreadStart s_longRunningThreadWork; 
+	private static readonly ParameterizedThreadStart s_longRunningThreadWork;
 
 	internal override bool RequiresAtomicStartTransition { get; }
 

@@ -1,13 +1,13 @@
-public class MaterialConfig : ScriptableObject // TypeDefIndex: 13094
+public class MaterialConfig : ScriptableObject // TypeDefIndex: 13109
 {
-	[HorizontalAttribute] 
-	public MaterialConfig.ShaderParametersFloat[] Floats; 
-	[HorizontalAttribute] 
-	public MaterialConfig.ShaderParametersColor[] Colors; 
-	[HorizontalAttribute] 
-	public MaterialConfig.ShaderParametersTexture[] Textures; 
-	public string[] ScaleUV; 
-	private MaterialPropertyBlock properties; 
+	[HorizontalAttribute]
+	public MaterialConfig.ShaderParametersFloat[] Floats;
+	[HorizontalAttribute]
+	public MaterialConfig.ShaderParametersColor[] Colors;
+	[HorizontalAttribute]
+	public MaterialConfig.ShaderParametersTexture[] Textures;
+	public string[] ScaleUV;
+	private MaterialPropertyBlock properties;
 
 
 	public MaterialPropertyBlock GetMaterialPropertyBlock(Material mat, Vector3 pos, Vector3 scale) { }
@@ -16,14 +16,14 @@ public class MaterialConfig : ScriptableObject // TypeDefIndex: 13094
 
 }
 
-public class MaterialConfig.ShaderParameters<T> // TypeDefIndex: 13095
+public class MaterialConfig.ShaderParameters<T> // TypeDefIndex: 13110
 {
-	public string Name; 
-	public T Arid; 
-	public T Temperate; 
-	public T Tundra; 
-	public T Arctic; 
-	private T[] climates; 
+	public string Name;
+	public T Arid;
+	public T Temperate;
+	public T Tundra;
+	public T Arctic;
+	private T[] climates;
 
 
 	public float FindBlendParameters(Vector3 pos, out T src, out T dst) { }
@@ -58,21 +58,21 @@ public class MaterialConfig.ShaderParameters<T> // TypeDefIndex: 13095
 
 }
 
-public class MaterialConfig.ShaderParametersFloat : MaterialConfig.ShaderParameters<float> // TypeDefIndex: 13096
+public class MaterialConfig.ShaderParametersFloat : MaterialConfig.ShaderParameters<float> // TypeDefIndex: 13111
 {
 
 	public void .ctor() { }
 
 }
 
-public class MaterialConfig.ShaderParametersColor : MaterialConfig.ShaderParameters<Color> // TypeDefIndex: 13097
+public class MaterialConfig.ShaderParametersColor : MaterialConfig.ShaderParameters<Color> // TypeDefIndex: 13112
 {
 
 	public void .ctor() { }
 
 }
 
-public class MaterialConfig.ShaderParametersTexture : MaterialConfig.ShaderParameters<Texture> // TypeDefIndex: 13098
+public class MaterialConfig.ShaderParametersTexture : MaterialConfig.ShaderParameters<Texture> // TypeDefIndex: 13113
 {
 
 	public void .ctor() { }

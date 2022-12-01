@@ -1,8 +1,8 @@
-internal struct CopyUnlockedAchievementByIndexOptionsInternal : ISettable<CopyUnlockedAchievementByIndexOptions>, IDisposable // TypeDefIndex: 9908
+internal struct CopyUnlockedAchievementByIndexOptionsInternal : ISettable<CopyUnlockedAchievementByIndexOptions>, IDisposable // TypeDefIndex: 9910
 {
-	private int m_ApiVersion; 
-	private IntPtr m_UserId; 
-	private uint m_AchievementIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_UserId;
+	private uint m_AchievementIndex;
 
 	public ProductUserId UserId { set; }
 	public uint AchievementIndex { set; }

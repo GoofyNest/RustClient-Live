@@ -1,18 +1,18 @@
 internal sealed class SchemaEntity : IDtdEntityInfo // TypeDefIndex: 2278
 {
-	private XmlQualifiedName qname; 
-	private string url; 
-	private string pubid; 
-	private string text; 
-	private XmlQualifiedName ndata; 
-	private int lineNumber; 
-	private int linePosition; 
-	private bool isParameter; 
-	private bool isExternal; 
-	private bool parsingInProgress; 
-	private bool isDeclaredInExternal; 
-	private string baseURI; 
-	private string declaredURI; 
+	private XmlQualifiedName qname;
+	private string url;
+	private string pubid;
+	private string text;
+	private XmlQualifiedName ndata;
+	private int lineNumber;
+	private int linePosition;
+	private bool isParameter;
+	private bool isExternal;
+	private bool parsingInProgress;
+	private bool isDeclaredInExternal;
+	private string baseURI;
+	private string declaredURI;
 
 	private string System.Xml.IDtdEntityInfo.Name { get; }
 	private bool System.Xml.IDtdEntityInfo.IsExternal { get; }

@@ -1,24 +1,24 @@
-internal struct LogPlayerTakeDamageOptionsInternal : ISettable<LogPlayerTakeDamageOptions>, IDisposable // TypeDefIndex: 9780
+internal struct LogPlayerTakeDamageOptionsInternal : ISettable<LogPlayerTakeDamageOptions>, IDisposable // TypeDefIndex: 9782
 {
-	private int m_ApiVersion; 
-	private IntPtr m_VictimPlayerHandle; 
-	private IntPtr m_VictimPlayerPosition; 
-	private IntPtr m_VictimPlayerViewRotation; 
-	private IntPtr m_AttackerPlayerHandle; 
-	private IntPtr m_AttackerPlayerPosition; 
-	private IntPtr m_AttackerPlayerViewRotation; 
-	private int m_IsHitscanAttack; 
-	private int m_HasLineOfSight; 
-	private int m_IsCriticalHit; 
-	private uint m_HitBoneId_DEPRECATED; 
-	private float m_DamageTaken; 
-	private float m_HealthRemaining; 
-	private AntiCheatCommonPlayerTakeDamageSource m_DamageSource; 
-	private AntiCheatCommonPlayerTakeDamageType m_DamageType; 
-	private AntiCheatCommonPlayerTakeDamageResult m_DamageResult; 
-	private IntPtr m_PlayerUseWeaponData; 
-	private uint m_TimeSincePlayerUseWeaponMs; 
-	private IntPtr m_DamagePosition; 
+	private int m_ApiVersion;
+	private IntPtr m_VictimPlayerHandle;
+	private IntPtr m_VictimPlayerPosition;
+	private IntPtr m_VictimPlayerViewRotation;
+	private IntPtr m_AttackerPlayerHandle;
+	private IntPtr m_AttackerPlayerPosition;
+	private IntPtr m_AttackerPlayerViewRotation;
+	private int m_IsHitscanAttack;
+	private int m_HasLineOfSight;
+	private int m_IsCriticalHit;
+	private uint m_HitBoneId_DEPRECATED;
+	private float m_DamageTaken;
+	private float m_HealthRemaining;
+	private AntiCheatCommonPlayerTakeDamageSource m_DamageSource;
+	private AntiCheatCommonPlayerTakeDamageType m_DamageType;
+	private AntiCheatCommonPlayerTakeDamageResult m_DamageResult;
+	private IntPtr m_PlayerUseWeaponData;
+	private uint m_TimeSincePlayerUseWeaponMs;
+	private IntPtr m_DamagePosition;
 
 	public IntPtr VictimPlayerHandle { set; }
 	public Nullable<Vec3f> VictimPlayerPosition { set; }

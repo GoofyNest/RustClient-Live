@@ -1,13 +1,13 @@
-public class LootPanelWaterCatcher : LootPanel // TypeDefIndex: 12803
+public class LootPanelWaterCatcher : LootPanel // TypeDefIndex: 12817
 {
-	public ItemIcon sourceItem; 
-	public Image capacityImage; 
-	public CanvasGroup helpCanvas; 
-	public CanvasGroup buttonsCanvas; 
-	public Button fromButton; 
-	public Button toButton; 
-	public Button drinkButton; 
-	private LootPanelWaterCatcher.TransferMode transferMode; 
+	public ItemIcon sourceItem;
+	public Image capacityImage;
+	public CanvasGroup helpCanvas;
+	public CanvasGroup buttonsCanvas;
+	public Button fromButton;
+	public Button toButton;
+	public Button drinkButton;
+	private LootPanelWaterCatcher.TransferMode transferMode;
 
 
 	protected override void OnDisable() { }
@@ -52,9 +52,9 @@ public class LootPanelWaterCatcher : LootPanel // TypeDefIndex: 12803
 
 }
 
-private enum LootPanelWaterCatcher.TransferMode // TypeDefIndex: 12804
+private enum LootPanelWaterCatcher.TransferMode // TypeDefIndex: 12818
 {
-	public int value__; 
+	public int value__;
 	public const LootPanelWaterCatcher.TransferMode None = 0;
 	public const LootPanelWaterCatcher.TransferMode From = 1;
 	public const LootPanelWaterCatcher.TransferMode To = 2;

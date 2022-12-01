@@ -1,9 +1,9 @@
-public class VisualStorageContainer : LootContainer // TypeDefIndex: 11350
+public class VisualStorageContainer : LootContainer // TypeDefIndex: 11356
 {
-	public VisualStorageContainerNode[] displayNodes; 
-	public VisualStorageContainer.DisplayModel[] displayModels; 
-	public Transform nodeParent; 
-	public GameObject defaultDisplayModel; 
+	public VisualStorageContainerNode[] displayNodes;
+	public VisualStorageContainer.DisplayModel[] displayModels;
+	public Transform nodeParent;
+	public GameObject defaultDisplayModel;
 
 
 	public void ClearRigidBodies() { }
@@ -18,11 +18,11 @@ public class VisualStorageContainer : LootContainer // TypeDefIndex: 11350
 
 }
 
-public class VisualStorageContainer.DisplayModel // TypeDefIndex: 11351
+public class VisualStorageContainer.DisplayModel // TypeDefIndex: 11357
 {
-	public GameObject displayModel; 
-	public ItemDefinition def; 
-	public int slot; 
+	public GameObject displayModel;
+	public ItemDefinition def;
+	public int slot;
 
 
 	public void .ctor() { }

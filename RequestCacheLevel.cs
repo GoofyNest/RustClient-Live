@@ -1,6 +1,6 @@
 public enum RequestCacheLevel // TypeDefIndex: 3092
 {
-	public int value__; 
+	public int value__;
 	public const RequestCacheLevel Default = 0;
 	public const RequestCacheLevel BypassCache = 1;
 	public const RequestCacheLevel CacheOnly = 2;

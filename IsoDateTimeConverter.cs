@@ -1,8 +1,8 @@
-public class IsoDateTimeConverter : DateTimeConverterBase // TypeDefIndex: 6116
+public class IsoDateTimeConverter : DateTimeConverterBase // TypeDefIndex: 6118
 {
-	private DateTimeStyles _dateTimeStyles; 
-	private string _dateTimeFormat; 
-	private CultureInfo _culture; 
+	private DateTimeStyles _dateTimeStyles;
+	private string _dateTimeFormat;
+	private CultureInfo _culture;
 
 	public CultureInfo Culture { get; }
 

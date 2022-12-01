@@ -10,10 +10,10 @@ public abstract class PlayableAsset : ScriptableObject // TypeDefIndex: 3868
 
 	public virtual IEnumerable<PlayableBinding> get_outputs() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void Internal_CreatePlayable(PlayableAsset asset, PlayableGraph graph, GameObject go, IntPtr ptr) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void Internal_GetPlayableAssetDuration(PlayableAsset asset, IntPtr ptrToDouble) { }
 
 	protected void .ctor() { }

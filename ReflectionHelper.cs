@@ -1,8 +1,8 @@
 internal class ReflectionHelper // TypeDefIndex: 2057
 {
-	private Hashtable _clrTypes; 
-	private Hashtable _schemaTypes; 
-	private static readonly ParameterModifier[] empty_modifiers; 
+	private Hashtable _clrTypes;
+	private Hashtable _schemaTypes;
+	private static readonly ParameterModifier[] empty_modifiers;
 
 
 	public void RegisterSchemaType(XmlTypeMapping map, string xmlType, string ns) { }

@@ -1,6 +1,6 @@
 public struct SByte : IComparable, IFormattable, IConvertible, IComparable<sbyte>, IEquatable<sbyte> // TypeDefIndex: 296
 {
-	private sbyte m_value; 
+	private sbyte m_value;
 	public const sbyte MaxValue = 127;
 	public const sbyte MinValue = -128;
 
@@ -23,15 +23,15 @@ public struct SByte : IComparable, IFormattable, IConvertible, IComparable<sbyte
 
 	private string ToString(string format, NumberFormatInfo info) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte Parse(string s, IFormatProvider provider) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static sbyte Parse(string s, NumberStyles style, IFormatProvider provider) { }
 
 	private static sbyte Parse(string s, NumberStyles style, NumberFormatInfo info) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static bool TryParse(string s, NumberStyles style, IFormatProvider provider, out sbyte result) { }
 
 	private static bool TryParse(string s, NumberStyles style, NumberFormatInfo info, out sbyte result) { }

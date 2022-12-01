@@ -1,14 +1,14 @@
-public class GameManifest : ScriptableObject // TypeDefIndex: 12474
+public class GameManifest : ScriptableObject // TypeDefIndex: 12482
 {
-	internal static GameManifest loadedManifest; 
-	internal static Dictionary<string, string> guidToPath; 
-	internal static Dictionary<string, string> pathToGuid; 
-	internal static Dictionary<string, Object> guidToObject; 
-	public GameManifest.PooledString[] pooledStrings; 
-	public GameManifest.PrefabProperties[] prefabProperties; 
-	public GameManifest.EffectCategory[] effectCategories; 
-	public GameManifest.GuidPath[] guidPaths; 
-	public string[] entities; 
+	internal static GameManifest loadedManifest;
+	internal static Dictionary<string, string> guidToPath;
+	internal static Dictionary<string, string> pathToGuid;
+	internal static Dictionary<string, Object> guidToObject;
+	public GameManifest.PooledString[] pooledStrings;
+	public GameManifest.PrefabProperties[] prefabProperties;
+	public GameManifest.EffectCategory[] effectCategories;
+	public GameManifest.GuidPath[] guidPaths;
+	public string[] entities;
 
 	public static GameManifest Current { get; }
 
@@ -37,43 +37,43 @@ public class GameManifest : ScriptableObject // TypeDefIndex: 12474
 
 }
 
-public struct GameManifest.PooledString // TypeDefIndex: 12475
+public struct GameManifest.PooledString // TypeDefIndex: 12483
 {
-	[HideInInspector] 
-	public string str; 
-	public uint hash; 
+	[HideInInspector]
+	public string str;
+	public uint hash;
 
 }
 
-public class GameManifest.PrefabProperties // TypeDefIndex: 12476
+public class GameManifest.PrefabProperties // TypeDefIndex: 12484
 {
-	[HideInInspector] 
-	public string name; 
-	public string guid; 
-	public uint hash; 
-	public bool pool; 
+	[HideInInspector]
+	public string name;
+	public string guid;
+	public uint hash;
+	public bool pool;
 
 
 	public void .ctor() { }
 
 }
 
-public class GameManifest.EffectCategory // TypeDefIndex: 12477
+public class GameManifest.EffectCategory // TypeDefIndex: 12485
 {
-	[HideInInspector] 
-	public string folder; 
-	public List<string> prefabs; 
+	[HideInInspector]
+	public string folder;
+	public List<string> prefabs;
 
 
 	public void .ctor() { }
 
 }
 
-public class GameManifest.GuidPath // TypeDefIndex: 12478
+public class GameManifest.GuidPath // TypeDefIndex: 12486
 {
-	[HideInInspector] 
-	public string name; 
-	public string guid; 
+	[HideInInspector]
+	public string name;
+	public string guid;
 
 
 	public void .ctor() { }

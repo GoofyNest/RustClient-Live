@@ -1,12 +1,12 @@
 public class AspectRatioFitter : UIBehaviour, ILayoutSelfController, ILayoutController // TypeDefIndex: 4963
 {
-	[SerializeField] 
-	private AspectRatioFitter.AspectMode m_AspectMode; 
-	[SerializeField] 
-	private float m_AspectRatio; 
-	private RectTransform m_Rect; 
-	private bool m_DelayedSetDirty; 
-	private DrivenRectTransformTracker m_Tracker; 
+	[SerializeField]
+	private AspectRatioFitter.AspectMode m_AspectMode;
+	[SerializeField]
+	private float m_AspectRatio;
+	private RectTransform m_Rect;
+	private bool m_DelayedSetDirty;
+	private DrivenRectTransformTracker m_Tracker;
 
 	public AspectRatioFitter.AspectMode aspectMode { get; set; }
 	public float aspectRatio { get; set; }
@@ -49,7 +49,7 @@ public class AspectRatioFitter : UIBehaviour, ILayoutSelfController, ILayoutCont
 
 public enum AspectRatioFitter.AspectMode // TypeDefIndex: 4964
 {
-	public int value__; 
+	public int value__;
 	public const AspectRatioFitter.AspectMode None = 0;
 	public const AspectRatioFitter.AspectMode WidthControlsHeight = 1;
 	public const AspectRatioFitter.AspectMode HeightControlsWidth = 2;

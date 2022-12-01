@@ -1,6 +1,6 @@
 public class CheckoutException : ExternalException // TypeDefIndex: 2779
 {
-	public static readonly CheckoutException Canceled; 
+	public static readonly CheckoutException Canceled;
 
 
 	public void .ctor() { }

@@ -1,6 +1,6 @@
 internal class CFString : CFObject // TypeDefIndex: 2518
 {
-	private string str; 
+	private string str;
 
 
 	public void .ctor(IntPtr handle, bool own) { }

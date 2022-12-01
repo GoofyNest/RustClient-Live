@@ -1,26 +1,26 @@
-public class MeshPaintController : MonoBehaviour, IClientComponent // TypeDefIndex: 10932
+public class MeshPaintController : MonoBehaviour, IClientComponent // TypeDefIndex: 10938
 {
-	public Camera pickerCamera; 
-	public Texture2D brushTexture; 
-	public Vector2 brushScale; 
-	public Color brushColor; 
-	public float brushSpacing; 
-	public RawImage brushImage; 
-	public float brushPreviewScaleMultiplier; 
-	public bool applyDefaults; 
-	public Texture2D defaltBrushTexture; 
-	public float defaultBrushSize; 
-	public Color defaultBrushColor; 
-	public float defaultBrushAlpha; 
-	public Toggle lastBrush; 
-	public Button UndoButton; 
-	public Button RedoButton; 
-	private Vector3 lastPosition; 
-	internal List<BaseMeshPaintable> dirtyPaintables; 
-	internal bool drawingBlocked; 
-	private ChangeSignText signTextPanel; 
-	private BaseMeshPaintable paintingMesh; 
-	private BaseMeshPaintable lastPaintedMesh; 
+	public Camera pickerCamera;
+	public Texture2D brushTexture;
+	public Vector2 brushScale;
+	public Color brushColor;
+	public float brushSpacing;
+	public RawImage brushImage;
+	public float brushPreviewScaleMultiplier;
+	public bool applyDefaults;
+	public Texture2D defaltBrushTexture;
+	public float defaultBrushSize;
+	public Color defaultBrushColor;
+	public float defaultBrushAlpha;
+	public Toggle lastBrush;
+	public Button UndoButton;
+	public Button RedoButton;
+	private Vector3 lastPosition;
+	internal List<BaseMeshPaintable> dirtyPaintables;
+	internal bool drawingBlocked;
+	private ChangeSignText signTextPanel;
+	private BaseMeshPaintable paintingMesh;
+	private BaseMeshPaintable lastPaintedMesh;
 
 
 	private void Awake() { }

@@ -19,7 +19,7 @@ internal class X509CertificateCollection : CollectionBase, IEnumerable // TypeDe
 
 public class X509CertificateCollection.X509CertificateEnumerator : IEnumerator // TypeDefIndex: 60
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public X509Certificate Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -60,7 +60,7 @@ public class X509CertificateCollection : CollectionBase, IEnumerable // TypeDefI
 
 public class X509CertificateCollection.X509CertificateEnumerator : IEnumerator // TypeDefIndex: 1718
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public X509Certificate Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -103,7 +103,7 @@ public class X509CertificateCollection : CollectionBase // TypeDefIndex: 2819
 
 public class X509CertificateCollection.X509CertificateEnumerator : IEnumerator // TypeDefIndex: 2820
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public X509Certificate Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

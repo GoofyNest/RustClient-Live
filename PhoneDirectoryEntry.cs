@@ -1,14 +1,14 @@
-public class PhoneDirectoryEntry : MonoBehaviour // TypeDefIndex: 12659
+public class PhoneDirectoryEntry : MonoBehaviour // TypeDefIndex: 12673
 {
-	public RustText PhoneNumber; 
-	public RustText PhoneName; 
-	public GameObject DeleteIcon; 
-	public GameObject CensorIcon; 
-	private PhoneDialler diallerDialog; 
-	private string rawNumberString; 
-	private string cachedName; 
-	private int cachedNumber; 
-	private PhoneDirectoryEntry.NumberType assignedType; 
+	public RustText PhoneNumber;
+	public RustText PhoneName;
+	public GameObject DeleteIcon;
+	public GameObject CensorIcon;
+	private PhoneDialler diallerDialog;
+	private string rawNumberString;
+	private string cachedName;
+	private int cachedNumber;
+	private PhoneDirectoryEntry.NumberType assignedType;
 
 
 	public void Populate(PhoneDirectory.DirectoryEntry entry, PhoneDialler forDialog, PhoneDirectoryEntry.NumberType type) { }
@@ -23,9 +23,9 @@ public class PhoneDirectoryEntry : MonoBehaviour // TypeDefIndex: 12659
 
 }
 
-public enum PhoneDirectoryEntry.NumberType // TypeDefIndex: 12660
+public enum PhoneDirectoryEntry.NumberType // TypeDefIndex: 12674
 {
-	public int value__; 
+	public int value__;
 	public const PhoneDirectoryEntry.NumberType Directory = 0;
 	public const PhoneDirectoryEntry.NumberType Contact = 1;
 

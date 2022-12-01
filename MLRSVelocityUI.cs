@@ -1,10 +1,10 @@
-public class MLRSVelocityUI : MonoBehaviour // TypeDefIndex: 11463
+public class MLRSVelocityUI : MonoBehaviour // TypeDefIndex: 11469
 {
-	[SerializeField] 
-	private RustText percentText; 
-	[SerializeField] 
-	private HudElement percentBar; 
-	private float lastSetPercent; 
+	[SerializeField]
+	private RustText percentText;
+	[SerializeField]
+	private HudElement percentBar;
+	private float lastSetPercent;
 
 
 	protected void OnEnable() { }

@@ -1,17 +1,17 @@
-public class FlexLayoutManager : MonoBehaviour // TypeDefIndex: 6826
+public class FlexLayoutManager : MonoBehaviour // TypeDefIndex: 6828
 {
-	[CompilerGeneratedAttribute] 
-	private static FlexLayoutManager <Instance>k__BackingField; 
-	private static readonly List<FlexElement> DirtyElements; 
-	private static readonly List<FlexElement> UpdatingElements; 
+	[CompilerGeneratedAttribute]
+	private static FlexLayoutManager <Instance>k__BackingField;
+	private static readonly List<FlexElement> DirtyElements;
+	private static readonly List<FlexElement> UpdatingElements;
 
 	public static FlexLayoutManager Instance { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static FlexLayoutManager get_Instance() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_Instance(FlexLayoutManager value) { }
 
 	public void OnEnable() { }

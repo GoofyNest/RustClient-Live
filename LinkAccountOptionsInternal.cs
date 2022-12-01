@@ -1,8 +1,8 @@
-internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9592
+internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9594
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ContinuanceToken; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ContinuanceToken;
 
 	public ProductUserId LocalUserId { set; }
 	public ContinuanceToken ContinuanceToken { set; }
@@ -20,12 +20,12 @@ internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDis
 
 }
 
-internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9668
+internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9670
 {
-	private int m_ApiVersion; 
-	private LinkAccountFlags m_LinkAccountFlags; 
-	private IntPtr m_ContinuanceToken; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private LinkAccountFlags m_LinkAccountFlags;
+	private IntPtr m_ContinuanceToken;
+	private IntPtr m_LocalUserId;
 
 	public LinkAccountFlags LinkAccountFlags { set; }
 	public ContinuanceToken ContinuanceToken { set; }

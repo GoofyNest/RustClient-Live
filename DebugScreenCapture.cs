@@ -1,17 +1,17 @@
 public struct DebugScreenCapture // TypeDefIndex: 3584
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private NativeArray<byte> <rawImageDataReference>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private TextureFormat <imageFormat>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <width>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <height>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private NativeArray<byte> <rawImageDataReference>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private TextureFormat <imageFormat>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <width>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <height>k__BackingField;
 
 	public NativeArray<byte> rawImageDataReference { set; }
 	public TextureFormat imageFormat { set; }
@@ -19,16 +19,16 @@ public struct DebugScreenCapture // TypeDefIndex: 3584
 	public int height { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_rawImageDataReference(NativeArray<byte> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_imageFormat(TextureFormat value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_width(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_height(int value) { }
 
 }

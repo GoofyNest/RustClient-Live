@@ -1,12 +1,12 @@
-public class Helicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6336
+public class Helicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6338
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 tiltRot; 
-	public Vector3 leftGun; 
-	public Vector3 rightGun; 
-	public Vector3 spotlightVec; 
-	public List<float> weakspothealths; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 tiltRot;
+	public Vector3 leftGun;
+	public Vector3 rightGun;
+	public Vector3 spotlightVec;
+	public List<float> weakspothealths;
 
 
 	public static void ResetToPool(Helicopter instance) { }

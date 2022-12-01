@@ -1,6 +1,6 @@
 public enum ShaderPropertyType // TypeDefIndex: 3860
 {
-	public int value__; 
+	public int value__;
 	public const ShaderPropertyType Color = 0;
 	public const ShaderPropertyType Vector = 1;
 	public const ShaderPropertyType Float = 2;

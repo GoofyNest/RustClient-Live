@@ -1,7 +1,7 @@
 internal static class ParameterizedStrings // TypeDefIndex: 394
 {
-	[ThreadStaticAttribute] 
-	private static ParameterizedStrings.LowLevelStack _cachedStack; 
+	[ThreadStaticAttribute]
+	private static ParameterizedStrings.LowLevelStack _cachedStack;
 
 
 	public static string Evaluate(string format, ParameterizedStrings.FormatParam[] args) { }
@@ -26,8 +26,8 @@ internal static class ParameterizedStrings // TypeDefIndex: 394
 
 public struct ParameterizedStrings.FormatParam // TypeDefIndex: 395
 {
-	private readonly int _int32; 
-	private readonly string _string; 
+	private readonly int _int32;
+	private readonly string _string;
 
 	public int Int32 { get; }
 	public string String { get; }
@@ -50,8 +50,8 @@ public struct ParameterizedStrings.FormatParam // TypeDefIndex: 395
 
 private sealed class ParameterizedStrings.LowLevelStack // TypeDefIndex: 396
 {
-	private ParameterizedStrings.FormatParam[] _arr; 
-	private int _count; 
+	private ParameterizedStrings.FormatParam[] _arr;
+	private int _count;
 
 
 	public void .ctor() { }

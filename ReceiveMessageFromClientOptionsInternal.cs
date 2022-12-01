@@ -1,9 +1,9 @@
-internal struct ReceiveMessageFromClientOptionsInternal : ISettable<ReceiveMessageFromClientOptions>, IDisposable // TypeDefIndex: 9740
+internal struct ReceiveMessageFromClientOptionsInternal : ISettable<ReceiveMessageFromClientOptions>, IDisposable // TypeDefIndex: 9742
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ClientHandle; 
-	private uint m_DataLengthBytes; 
-	private IntPtr m_Data; 
+	private int m_ApiVersion;
+	private IntPtr m_ClientHandle;
+	private uint m_DataLengthBytes;
+	private IntPtr m_Data;
 
 	public IntPtr ClientHandle { set; }
 	public ArraySegment<byte> Data { set; }

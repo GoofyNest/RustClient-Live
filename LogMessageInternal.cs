@@ -1,8 +1,8 @@
-internal struct LogMessageInternal : IGettable<LogMessage>, ISettable<LogMessage>, IDisposable // TypeDefIndex: 9055
+internal struct LogMessageInternal : IGettable<LogMessage>, ISettable<LogMessage>, IDisposable // TypeDefIndex: 9057
 {
-	private IntPtr m_Category; 
-	private IntPtr m_Message; 
-	private LogLevel m_Level; 
+	private IntPtr m_Category;
+	private IntPtr m_Message;
+	private LogLevel m_Level;
 
 	public Utf8String Category { get; set; }
 	public Utf8String Message { get; set; }

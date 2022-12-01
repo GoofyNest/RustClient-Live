@@ -1,6 +1,6 @@
 public class UploadValuesCompletedEventArgs : AsyncCompletedEventArgs // TypeDefIndex: 2973
 {
-	private byte[] m_Result; 
+	private byte[] m_Result;
 
 	public byte[] Result { get; }
 

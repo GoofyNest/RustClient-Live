@@ -1,25 +1,25 @@
 internal static class ReflectionExtensions // TypeDefIndex: 89
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsEnum(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsAbstract(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsSealed(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Type BaseType(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Assembly Assembly(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TypeCode GetTypeCode(Type type) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ReflectionOnly(Assembly assm) { }
 
 }
@@ -27,7 +27,7 @@ internal static class ReflectionExtensions // TypeDefIndex: 89
 public static class ReflectionExtensions // TypeDefIndex: 4851
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool HasAttribute(MemberInfo method, Type attribute) { }
 
 }

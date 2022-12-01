@@ -1,10 +1,10 @@
-public class PushbackStream // TypeDefIndex: 7409
+public class PushbackStream // TypeDefIndex: 7411
 {
-	private readonly int _BackBufferSize; 
-	private readonly CircularByteBuffer _CircularByteBuffer; 
-	private readonly Stream _Stream; 
-	private readonly byte[] _TemporaryBuffer; 
-	private int _NumForwardBytesInBuffer; 
+	private readonly int _BackBufferSize;
+	private readonly CircularByteBuffer _CircularByteBuffer;
+	private readonly Stream _Stream;
+	private readonly byte[] _TemporaryBuffer;
+	private int _NumForwardBytesInBuffer;
 
 
 	internal void .ctor(Stream s, int backBufferSize) { }

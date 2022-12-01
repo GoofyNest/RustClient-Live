@@ -1,10 +1,10 @@
 public class ObjectIDGenerator // TypeDefIndex: 1036
 {
-	internal int m_currentCount; 
-	internal int m_currentSize; 
-	internal long[] m_ids; 
-	internal object[] m_objs; 
-	private static readonly int[] sizes; 
+	internal int m_currentCount;
+	internal int m_currentSize;
+	internal long[] m_ids;
+	internal object[] m_objs;
+	private static readonly int[] sizes;
 
 
 	public void .ctor() { }

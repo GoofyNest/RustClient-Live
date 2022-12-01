@@ -1,21 +1,21 @@
-public class CardPlayerData : IDisposable // TypeDefIndex: 13809
+public class CardPlayerData : IDisposable // TypeDefIndex: 13825
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <UserID>k__BackingField; 
-	public List<PlayingCard> Cards; 
-	[CompilerGeneratedAttribute] 
-	private CardPlayerData.CardPlayerState <State>k__BackingField; 
-	public readonly int mountIndex; 
-	private readonly bool isServer; 
-	public int availableInputs; 
-	public int betThisRound; 
-	public int betThisTurn; 
-	[CompilerGeneratedAttribute] 
-	private bool <LeftRoundEarly>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <SendCardDetails>k__BackingField; 
-	public TimeUntil ClientTimeUntilTurnEnds; 
-	private int clientScrap; 
+	[CompilerGeneratedAttribute]
+	private ulong <UserID>k__BackingField;
+	public List<PlayingCard> Cards;
+	[CompilerGeneratedAttribute]
+	private CardPlayerData.CardPlayerState <State>k__BackingField;
+	public readonly int mountIndex;
+	private readonly bool isServer;
+	public int availableInputs;
+	public int betThisRound;
+	public int betThisTurn;
+	[CompilerGeneratedAttribute]
+	private bool <LeftRoundEarly>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <SendCardDetails>k__BackingField;
+	public TimeUntil ClientTimeUntilTurnEnds;
+	private int clientScrap;
 
 	public ulong UserID { get; set; }
 	public CardPlayerData.CardPlayerState State { get; set; }
@@ -28,16 +28,16 @@ public class CardPlayerData : IDisposable // TypeDefIndex: 13809
 	public bool SendCardDetails { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_UserID() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_UserID(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public CardPlayerData.CardPlayerState get_State() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_State(CardPlayerData.CardPlayerState value) { }
 
 	public bool get_HasUser() { }
@@ -50,16 +50,16 @@ public class CardPlayerData : IDisposable // TypeDefIndex: 13809
 
 	private bool get_IsClient() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_LeftRoundEarly() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LeftRoundEarly(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_SendCardDetails() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SendCardDetails(bool value) { }
 
 	public void .ctor(int mountIndex, bool isServer) { }
@@ -78,9 +78,9 @@ public class CardPlayerData : IDisposable // TypeDefIndex: 13809
 
 }
 
-public enum CardPlayerData.CardPlayerState // TypeDefIndex: 13810
+public enum CardPlayerData.CardPlayerState // TypeDefIndex: 13826
 {
-	public int value__; 
+	public int value__;
 	public const CardPlayerData.CardPlayerState None = 0;
 	public const CardPlayerData.CardPlayerState WantsToPlay = 1;
 	public const CardPlayerData.CardPlayerState InGame = 2;

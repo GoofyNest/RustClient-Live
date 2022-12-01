@@ -1,24 +1,24 @@
-public struct UnregisterPlayersOptions // TypeDefIndex: 8611
+public struct UnregisterPlayersOptions // TypeDefIndex: 8613
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId[] <PlayersToUnregister>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId[] <PlayersToUnregister>k__BackingField;
 
 	public Utf8String SessionName { get; set; }
 	public ProductUserId[] PlayersToUnregister { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId[] get_PlayersToUnregister() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlayersToUnregister(ProductUserId[] value) { }
 
 }

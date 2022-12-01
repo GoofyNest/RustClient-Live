@@ -1,6 +1,6 @@
-public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7561
+public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7563
 {
-	private SmpteData _smpteData; 
+	private SmpteData _smpteData;
 
 	public SmpteFormat Format { get; set; }
 	public byte Hours { get; set; }
@@ -48,10 +48,10 @@ public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7561
 
 }
 
-private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 7562
+private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 7564
 {
-	public SmpteOffsetEvent <>4__this; 
-	public ReadingSettings settings; 
+	public SmpteOffsetEvent <>4__this;
+	public ReadingSettings settings;
 
 
 	public void .ctor() { }

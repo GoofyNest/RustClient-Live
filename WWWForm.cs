@@ -1,11 +1,11 @@
 public class WWWForm // TypeDefIndex: 4130
 {
-	private List<byte[]> formData; 
-	private List<string> fieldNames; 
-	private List<string> fileNames; 
-	private List<string> types; 
-	private byte[] boundary; 
-	private bool containsFiles; 
+	private List<byte[]> formData;
+	private List<string> fieldNames;
+	private List<string> fileNames;
+	private List<string> types;
+	private byte[] boundary;
+	private bool containsFiles;
 
 	internal static Encoding DefaultEncoding { get; }
 	public Dictionary<string, string> headers { get; }

@@ -1,11 +1,11 @@
-public class Mailbox : StorageContainer // TypeDefIndex: 10126
+public class Mailbox : StorageContainer // TypeDefIndex: 10128
 {
-	private Option __menuOption_Full; 
-	public string ownerPanel; 
-	public GameObjectRef mailDropSound; 
-	public ItemDefinition[] allowedItems; 
-	public bool autoSubmitWhenClosed; 
-	public bool shouldMarkAsFull; 
+	private Option __menuOption_Full;
+	public string ownerPanel;
+	public GameObjectRef mailDropSound;
+	public ItemDefinition[] allowedItems;
+	public bool autoSubmitWhenClosed;
+	public bool shouldMarkAsFull;
 
 	public override bool HasMenuOptions { get; }
 	public int mailInputSlot { get; }
@@ -25,10 +25,10 @@ public class Mailbox : StorageContainer // TypeDefIndex: 10126
 
 	public void MarkFull(bool full) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Full(BasePlayer player) { }
 
 	public bool Full_ShowIf(BasePlayer player) { }

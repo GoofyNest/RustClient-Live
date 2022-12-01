@@ -1,6 +1,6 @@
 public class TraceListenerCollection : IList, ICollection, IEnumerable // TypeDefIndex: 2644
 {
-	private ArrayList list; 
+	private ArrayList list;
 
 	public int Count { get; }
 	private object System.Collections.IList.Item { get; set; }

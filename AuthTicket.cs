@@ -1,7 +1,7 @@
 public class AuthTicket : IDisposable // TypeDefIndex: 5109
 {
-	public byte[] Data; 
-	public uint Handle; 
+	public byte[] Data;
+	public uint Handle;
 
 
 	public void Cancel() { }

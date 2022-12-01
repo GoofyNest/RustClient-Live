@@ -1,12 +1,12 @@
 public class ParameterInfo : ICustomAttributeProvider, IObjectReference, _ParameterInfo // TypeDefIndex: 596
 {
-	protected Type ClassImpl; 
-	protected object DefaultValueImpl; 
-	protected MemberInfo MemberImpl; 
-	protected string NameImpl; 
-	protected int PositionImpl; 
-	protected ParameterAttributes AttrsImpl; 
-	internal MarshalAsAttribute marshalAs; 
+	protected Type ClassImpl;
+	protected object DefaultValueImpl;
+	protected MemberInfo MemberImpl;
+	protected string NameImpl;
+	protected int PositionImpl;
+	protected ParameterAttributes AttrsImpl;
+	internal MarshalAsAttribute marshalAs;
 
 	public virtual Type ParameterType { get; }
 	public virtual ParameterAttributes Attributes { get; }

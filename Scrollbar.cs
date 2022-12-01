@@ -1,27 +1,27 @@
 public class Scrollbar : Selectable, IBeginDragHandler, IEventSystemHandler, IDragHandler, IInitializePotentialDragHandler, ICanvasElement // TypeDefIndex: 5004
 {
-	[SerializeField] 
-	private RectTransform m_HandleRect; 
-	[SerializeField] 
-	private Scrollbar.Direction m_Direction; 
-	[RangeAttribute] 
-	[SerializeField] 
-	private float m_Value; 
-	[RangeAttribute] 
-	[SerializeField] 
-	private float m_Size; 
-	[RangeAttribute] 
-	[SerializeField] 
-	private int m_NumberOfSteps; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private Scrollbar.ScrollEvent m_OnValueChanged; 
-	private RectTransform m_ContainerRect; 
-	private Vector2 m_Offset; 
-	private DrivenRectTransformTracker m_Tracker; 
-	private Coroutine m_PointerDownRepeat; 
-	private bool isPointerDownAndNotDragging; 
-	private bool m_DelayedUpdateVisuals; 
+	[SerializeField]
+	private RectTransform m_HandleRect;
+	[SerializeField]
+	private Scrollbar.Direction m_Direction;
+	[RangeAttribute]
+	[SerializeField]
+	private float m_Value;
+	[RangeAttribute]
+	[SerializeField]
+	private float m_Size;
+	[RangeAttribute]
+	[SerializeField]
+	private int m_NumberOfSteps;
+	[SpaceAttribute]
+	[SerializeField]
+	private Scrollbar.ScrollEvent m_OnValueChanged;
+	private RectTransform m_ContainerRect;
+	private Vector2 m_Offset;
+	private DrivenRectTransformTracker m_Tracker;
+	private Coroutine m_PointerDownRepeat;
+	private bool isPointerDownAndNotDragging;
+	private bool m_DelayedUpdateVisuals;
 
 	public RectTransform handleRect { get; set; }
 	public Scrollbar.Direction direction { get; set; }
@@ -100,7 +100,7 @@ public class Scrollbar : Selectable, IBeginDragHandler, IEventSystemHandler, IDr
 
 	public override void OnPointerDown(PointerEventData eventData) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	protected IEnumerator ClickRepeat(PointerEventData eventData) { }
 
 	public override void OnPointerUp(PointerEventData eventData) { }
@@ -125,7 +125,7 @@ public class Scrollbar : Selectable, IBeginDragHandler, IEventSystemHandler, IDr
 
 public enum Scrollbar.Direction // TypeDefIndex: 5005
 {
-	public int value__; 
+	public int value__;
 	public const Scrollbar.Direction LeftToRight = 0;
 	public const Scrollbar.Direction RightToLeft = 1;
 	public const Scrollbar.Direction BottomToTop = 2;
@@ -142,7 +142,7 @@ public class Scrollbar.ScrollEvent : UnityEvent<float> // TypeDefIndex: 5006
 
 private enum Scrollbar.Axis // TypeDefIndex: 5007
 {
-	public int value__; 
+	public int value__;
 	public const Scrollbar.Axis Horizontal = 0;
 	public const Scrollbar.Axis Vertical = 1;
 
@@ -150,30 +150,30 @@ private enum Scrollbar.Axis // TypeDefIndex: 5007
 
 private sealed class Scrollbar.<ClickRepeat>d__57 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5008
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public Scrollbar <>4__this; 
-	public PointerEventData eventData; 
+	private int <>1__state;
+	private object <>2__current;
+	public Scrollbar <>4__this;
+	public PointerEventData eventData;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

@@ -1,6 +1,6 @@
 public struct BitVector32 // TypeDefIndex: 3095
 {
-	private uint data; 
+	private uint data;
 
 	public bool Item { get; set; }
 

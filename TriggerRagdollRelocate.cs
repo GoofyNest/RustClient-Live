@@ -1,6 +1,6 @@
-public class TriggerRagdollRelocate : TriggerBase // TypeDefIndex: 11788
+public class TriggerRagdollRelocate : TriggerBase // TypeDefIndex: 11795
 {
-	public Transform targetLocation; 
+	public Transform targetLocation;
 
 
 	internal override void OnObjectAdded(GameObject obj, Collider col) { }

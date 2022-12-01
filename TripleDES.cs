@@ -1,7 +1,7 @@
 public abstract class TripleDES : SymmetricAlgorithm // TypeDefIndex: 1000
 {
-	private static KeySizes[] s_legalBlockSizes; 
-	private static KeySizes[] s_legalKeySizes; 
+	private static KeySizes[] s_legalBlockSizes;
+	private static KeySizes[] s_legalKeySizes;
 
 	public override byte[] Key { get; set; }
 

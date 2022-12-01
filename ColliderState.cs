@@ -1,7 +1,7 @@
-internal struct ColliderState // TypeDefIndex: 7329
+internal struct ColliderState // TypeDefIndex: 7331
 {
-	public float3 PositionA; 
-	public float3 PositionB; 
+	public float3 PositionA;
+	public float3 PositionB;
 
 }
 

@@ -1,6 +1,6 @@
 public class MissingSatelliteAssemblyException : SystemException // TypeDefIndex: 487
 {
-	private string _cultureName; 
+	private string _cultureName;
 
 
 	public void .ctor() { }

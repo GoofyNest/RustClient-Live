@@ -1,6 +1,6 @@
-public class FishLookup : PrefabAttribute // TypeDefIndex: 10597
+public class FishLookup : PrefabAttribute // TypeDefIndex: 10601
 {
-	public ItemModFishable FallbackFish; 
+	public ItemModFishable FallbackFish;
 
 
 	protected override Type GetIndexedType() { }

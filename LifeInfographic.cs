@@ -1,19 +1,19 @@
-public class LifeInfographic : MonoBehaviour // TypeDefIndex: 12846
+public class LifeInfographic : MonoBehaviour // TypeDefIndex: 12860
 {
-	public PlayerLifeStory life; 
-	public GameObject container; 
-	public RawImage AttackerAvatarImage; 
-	public Image DamageSourceImage; 
-	public LifeInfographicStat[] Stats; 
-	public Animator[] AllAnimators; 
-	public GameObject WeaponRoot; 
-	public GameObject DistanceRoot; 
-	public GameObject DistanceDivider; 
-	public Image WeaponImage; 
-	public LifeInfographic.DamageSetting[] DamageDisplays; 
-	public bool ShowDebugData; 
-	private int triggerParam; 
-	private int closeState; 
+	public PlayerLifeStory life;
+	public GameObject container;
+	public RawImage AttackerAvatarImage;
+	public Image DamageSourceImage;
+	public LifeInfographicStat[] Stats;
+	public Animator[] AllAnimators;
+	public GameObject WeaponRoot;
+	public GameObject DistanceRoot;
+	public GameObject DistanceDivider;
+	public Image WeaponImage;
+	public LifeInfographic.DamageSetting[] DamageDisplays;
+	public bool ShowDebugData;
+	private int triggerParam;
+	private int closeState;
 
 
 	private void OnEnable() { }
@@ -36,7 +36,7 @@ public class LifeInfographic : MonoBehaviour // TypeDefIndex: 12846
 
 	public void AnimateIn() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator Animate() { }
 
 	public void ResetAnimators() { }
@@ -47,41 +47,41 @@ public class LifeInfographic : MonoBehaviour // TypeDefIndex: 12846
 
 }
 
-public struct LifeInfographic.DamageSetting // TypeDefIndex: 12847
+public struct LifeInfographic.DamageSetting // TypeDefIndex: 12861
 {
-	public DamageType ForType; 
-	public string Display; 
-	public Sprite DamageSprite; 
+	public DamageType ForType;
+	public string Display;
+	public Sprite DamageSprite;
 
 }
 
-private sealed class LifeInfographic.<Animate>d__25 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12848
+private sealed class LifeInfographic.<Animate>d__25 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12862
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public LifeInfographic <>4__this; 
-	private Animator[] <>7__wrap1; 
-	private int <>7__wrap2; 
+	private int <>1__state;
+	private object <>2__current;
+	public LifeInfographic <>4__this;
+	private Animator[] <>7__wrap1;
+	private int <>7__wrap2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

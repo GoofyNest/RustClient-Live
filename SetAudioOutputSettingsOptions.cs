@@ -1,33 +1,33 @@
-public struct SetAudioOutputSettingsOptions // TypeDefIndex: 8710
+public struct SetAudioOutputSettingsOptions // TypeDefIndex: 8712
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeviceId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Volume>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeviceId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <Volume>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String DeviceId { get; set; }
 	public float Volume { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeviceId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeviceId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_Volume() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Volume(float value) { }
 
 }

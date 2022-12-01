@@ -1,24 +1,24 @@
-public class RCMenu : ComputerMenu // TypeDefIndex: 10409
+public class RCMenu : ComputerMenu // TypeDefIndex: 10413
 {
-	public Image backgroundOpaque; 
-	public InputField newBookmarkEntryField; 
-	public NeedsCursor needsCursor; 
-	public float hiddenOffset; 
-	public RectTransform devicesPanel; 
-	private Vector3 initialDevicesPosition; 
-	public static bool isControllingCamera; 
-	public CanvasGroup overExposure; 
-	public CanvasGroup interference; 
-	public float interferenceFadeDuration; 
-	public Text timeText; 
-	public Text watchedDurationText; 
-	public Text deviceNameText; 
-	public Text noSignalText; 
-	public SoundDefinition bookmarkPressedSoundDef; 
-	public GameObject[] hideIfStatic; 
-	private float startWatchingTime; 
-	private float noSignalDuration; 
-	private bool devicePanelVisible; 
+	public Image backgroundOpaque;
+	public InputField newBookmarkEntryField;
+	public NeedsCursor needsCursor;
+	public float hiddenOffset;
+	public RectTransform devicesPanel;
+	private Vector3 initialDevicesPosition;
+	public static bool isControllingCamera;
+	public CanvasGroup overExposure;
+	public CanvasGroup interference;
+	public float interferenceFadeDuration;
+	public Text timeText;
+	public Text watchedDurationText;
+	public Text deviceNameText;
+	public Text noSignalText;
+	public SoundDefinition bookmarkPressedSoundDef;
+	public GameObject[] hideIfStatic;
+	private float startWatchingTime;
+	private float noSignalDuration;
+	private bool devicePanelVisible;
 
 	public bool RequiresMouseForControl { get; }
 
@@ -45,7 +45,7 @@ public class RCMenu : ComputerMenu // TypeDefIndex: 10409
 
 	public void DelayedLODRefresh() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator RefreshLODs() { }
 
 	public void AddBookmarkPressed() { }
@@ -72,30 +72,30 @@ public class RCMenu : ComputerMenu // TypeDefIndex: 10409
 
 }
 
-private sealed class RCMenu.<RefreshLODs>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10410
+private sealed class RCMenu.<RefreshLODs>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10414
 {
-	private int <>1__state; 
-	private object <>2__current; 
+	private int <>1__state;
+	private object <>2__current;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

@@ -1,15 +1,15 @@
-public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // TypeDefIndex: 11608
+public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // TypeDefIndex: 11615
 {
-	public static bool Paused; 
-	public GameObjectRef BatchPrefab; 
-	public float CellSize; 
-	public LayerSelect FoliageLayer; 
-	public ShadowCastingMode FoliageShadows; 
-	internal ListHashSet<FoliagePlacement> Placements; 
-	private WorldSpaceGrid<FoliageCell> grid; 
-	private Vector2i curCell; 
-	private Vector3 prevPosition; 
-	private Stopwatch watch; 
+	public static bool Paused;
+	public GameObjectRef BatchPrefab;
+	public float CellSize;
+	public LayerSelect FoliageLayer;
+	public ShadowCastingMode FoliageShadows;
+	internal ListHashSet<FoliagePlacement> Placements;
+	private WorldSpaceGrid<FoliageCell> grid;
+	private Vector2i curCell;
+	private Vector3 prevPosition;
+	private Stopwatch watch;
 
 	public static float MaxRefreshDistance { get; }
 	public bool Initialized { get; }
@@ -50,7 +50,7 @@ public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // 
 
 	public void ResetTimeout() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator UpdateCoroutine() { }
 
 	private bool NeedsUpdate() { }
@@ -63,35 +63,35 @@ public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // 
 
 }
 
-private sealed class FoliageGrid.<UpdateCoroutine>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11609
+private sealed class FoliageGrid.<UpdateCoroutine>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11616
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public FoliageGrid <>4__this; 
-	private Vector2i <newCell>5__2; 
-	private List<FoliageCell> <cells>5__3; 
-	private List<IEnumerator> <enumerators>5__4; 
-	private int <i>5__5; 
+	private int <>1__state;
+	private object <>2__current;
+	public FoliageGrid <>4__this;
+	private Vector2i <newCell>5__2;
+	private List<FoliageCell> <cells>5__3;
+	private List<IEnumerator> <enumerators>5__4;
+	private int <i>5__5;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

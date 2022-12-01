@@ -1,18 +1,18 @@
 internal class SimpleCollator // TypeDefIndex: 39
 {
-	private static bool QuickCheckDisabled; 
-	private static SimpleCollator invariant; 
-	private readonly TextInfo textInfo; 
-	private readonly CodePointIndexer cjkIndexer; 
-	private readonly Contraction[] contractions; 
-	private readonly Level2Map[] level2Maps; 
-	private readonly byte[] unsafeFlags; 
-	private readonly byte* cjkCatTable; 
-	private readonly byte* cjkLv1Table; 
-	private readonly byte* cjkLv2Table; 
-	private readonly CodePointIndexer cjkLv2Indexer; 
-	private readonly int lcid; 
-	private readonly bool frenchSort; 
+	private static bool QuickCheckDisabled;
+	private static SimpleCollator invariant;
+	private readonly TextInfo textInfo;
+	private readonly CodePointIndexer cjkIndexer;
+	private readonly Contraction[] contractions;
+	private readonly Level2Map[] level2Maps;
+	private readonly byte[] unsafeFlags;
+	private readonly byte* cjkCatTable;
+	private readonly byte* cjkLv1Table;
+	private readonly byte* cjkLv2Table;
+	private readonly CodePointIndexer cjkLv2Indexer;
+	private readonly int lcid;
+	private readonly bool frenchSort;
 	private const int UnsafeFlagLength = 96;
 
 
@@ -114,13 +114,13 @@ internal class SimpleCollator // TypeDefIndex: 39
 
 internal struct SimpleCollator.Context // TypeDefIndex: 40
 {
-	public readonly CompareOptions Option; 
-	public readonly byte* NeverMatchFlags; 
-	public readonly byte* AlwaysMatchFlags; 
-	public byte* Buffer1; 
-	public byte* Buffer2; 
-	public int PrevCode; 
-	public byte* PrevSortKey; 
+	public readonly CompareOptions Option;
+	public readonly byte* NeverMatchFlags;
+	public readonly byte* AlwaysMatchFlags;
+	public byte* Buffer1;
+	public byte* Buffer2;
+	public int PrevCode;
+	public byte* PrevSortKey;
 
 
 	public void .ctor(CompareOptions opt, byte* alwaysMatchFlags, byte* neverMatchFlags, byte* buffer1, byte* buffer2, byte* prev1) { }
@@ -129,8 +129,8 @@ internal struct SimpleCollator.Context // TypeDefIndex: 40
 
 private struct SimpleCollator.PreviousInfo // TypeDefIndex: 41
 {
-	public int Code; 
-	public byte* SortKey; 
+	public int Code;
+	public byte* SortKey;
 
 
 	public void .ctor(bool dummy) { }
@@ -139,17 +139,17 @@ private struct SimpleCollator.PreviousInfo // TypeDefIndex: 41
 
 private struct SimpleCollator.Escape // TypeDefIndex: 42
 {
-	public string Source; 
-	public int Index; 
-	public int Start; 
-	public int End; 
-	public int Optional; 
+	public string Source;
+	public int Index;
+	public int Start;
+	public int End;
+	public int Optional;
 
 }
 
 private enum SimpleCollator.ExtenderType // TypeDefIndex: 43
 {
-	public int value__; 
+	public int value__;
 	public const SimpleCollator.ExtenderType None = 0;
 	public const SimpleCollator.ExtenderType Simple = 1;
 	public const SimpleCollator.ExtenderType Voiced = 2;

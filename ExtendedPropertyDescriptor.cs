@@ -2,8 +2,8 @@ internal sealed class ExtendedPropertyDescriptor : PropertyDescriptor // TypeDef
 {
 
 internal sealed class ExtendedPropertyDescriptor : PropertyDescriptor
-	private readonly ReflectPropertyDescriptor extenderInfo; 
-	private readonly IExtenderProvider provider; 
+	private readonly ReflectPropertyDescriptor extenderInfo;
+	private readonly IExtenderProvider provider;
 
 	public override Type ComponentType { get; }
 	public override bool IsReadOnly { get; }

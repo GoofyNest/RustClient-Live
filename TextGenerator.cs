@@ -1,16 +1,16 @@
 public sealed class TextGenerator : IDisposable // TypeDefIndex: 3957
 {
-	internal IntPtr m_Ptr; 
-	private string m_LastString; 
-	private TextGenerationSettings m_LastSettings; 
-	private bool m_HasGenerated; 
-	private TextGenerationError m_LastValid; 
-	private readonly List<UIVertex> m_Verts; 
-	private readonly List<UICharInfo> m_Characters; 
-	private readonly List<UILineInfo> m_Lines; 
-	private bool m_CachedVerts; 
-	private bool m_CachedCharacters; 
-	private bool m_CachedLines; 
+	internal IntPtr m_Ptr;
+	private string m_LastString;
+	private TextGenerationSettings m_LastSettings;
+	private bool m_HasGenerated;
+	private TextGenerationError m_LastValid;
+	private readonly List<UIVertex> m_Verts;
+	private readonly List<UICharInfo> m_Characters;
+	private readonly List<UILineInfo> m_Lines;
+	private bool m_CachedVerts;
+	private bool m_CachedCharacters;
+	private bool m_CachedLines;
 
 	public int characterCountVisible { get; }
 	public IList<UIVertex> verts { get; }
@@ -65,23 +65,23 @@ public sealed class TextGenerator : IDisposable // TypeDefIndex: 3957
 
 	public int get_lineCount() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static IntPtr Internal_Create() { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	private static void Internal_Destroy(IntPtr ptr) { }
 
 	internal bool Populate_Internal(string str, Font font, Color color, int fontSize, float scaleFactor, float lineSpacing, FontStyle style, bool richText, bool resizeTextForBestFit, int resizeTextMinSize, int resizeTextMaxSize, int verticalOverFlow, int horizontalOverflow, bool updateBounds, TextAnchor anchor, float extentsX, float extentsY, float pivotX, float pivotY, bool generateOutOfBounds, bool alignByGeometry, out uint error) { }
 
 	internal bool Populate_Internal(string str, Font font, Color color, int fontSize, float scaleFactor, float lineSpacing, FontStyle style, bool richText, bool resizeTextForBestFit, int resizeTextMinSize, int resizeTextMaxSize, VerticalWrapMode verticalOverFlow, HorizontalWrapMode horizontalOverflow, bool updateBounds, TextAnchor anchor, Vector2 extents, Vector2 pivot, bool generateOutOfBounds, bool alignByGeometry, out TextGenerationError error) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private void GetVerticesInternal(object vertices) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private void GetCharactersInternal(object characters) { }
 
-	[NativeThrowsAttribute] 
+	[NativeThrowsAttribute]
 	private void GetLinesInternal(object lines) { }
 
 	private void get_rectExtents_Injected(out Rect ret) { }

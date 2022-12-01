@@ -1,9 +1,9 @@
-public static class GamePhysics // TypeDefIndex: 10988
+public static class GamePhysics // TypeDefIndex: 10994
 {
 	public const int BufferLength = 8192;
-	private static RaycastHit[] hitBuffer; 
-	private static RaycastHit[] hitBufferB; 
-	private static Collider[] colBuffer; 
+	private static RaycastHit[] hitBuffer;
+	private static RaycastHit[] hitBufferB;
+	private static Collider[] colBuffer;
 
 
 	public static bool CheckSphere(Vector3 position, float radius, int layerMask = -5, QueryTriggerInteraction triggerInteraction = 0) { }
@@ -139,11 +139,11 @@ public static class GamePhysics // TypeDefIndex: 10988
 
 }
 
-private sealed class GamePhysics.<>c // TypeDefIndex: 10989
+private sealed class GamePhysics.<>c // TypeDefIndex: 10995
 {
-	public static readonly GamePhysics.<>c <>9; 
-	public static Comparison<RaycastHit> <>9__42_0; 
-	public static Comparison<RaycastHit> <>9__43_0; 
+	public static readonly GamePhysics.<>c <>9;
+	public static Comparison<RaycastHit> <>9__42_0;
+	public static Comparison<RaycastHit> <>9__43_0;
 
 
 	private static void .cctor() { }

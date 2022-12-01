@@ -1,9 +1,9 @@
-public class WaterBaseNavGenTest : MonoBehaviour // TypeDefIndex: 9999
+public class WaterBaseNavGenTest : MonoBehaviour // TypeDefIndex: 10001
 {
-	private IEnumerator co; 
+	private IEnumerator co;
 
 
-	[ContextMenu] 
+	[ContextMenu]
 	public void NavGen() { }
 
 	public void .ctor() { }

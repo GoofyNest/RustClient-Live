@@ -1,8 +1,8 @@
-public sealed class VectorscopeMonitor : Monitor // TypeDefIndex: 13610
+public sealed class VectorscopeMonitor : Monitor // TypeDefIndex: 13626
 {
-	public int size; 
-	public float exposure; 
-	private ComputeBuffer m_Data; 
+	public int size;
+	public float exposure;
+	private ComputeBuffer m_Data;
 	private const int k_ThreadGroupSizeX = 16;
 	private const int k_ThreadGroupSizeY = 16;
 

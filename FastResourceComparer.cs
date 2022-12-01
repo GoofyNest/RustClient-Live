@@ -1,6 +1,6 @@
 internal sealed class FastResourceComparer : IComparer, IEqualityComparer, IComparer<string>, IEqualityComparer<string> // TypeDefIndex: 481
 {
-	internal static readonly FastResourceComparer Default; 
+	internal static readonly FastResourceComparer Default;
 
 
 	public int GetHashCode(object key) { }

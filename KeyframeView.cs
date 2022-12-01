@@ -1,12 +1,12 @@
-public class KeyframeView : MonoBehaviour // TypeDefIndex: 12620
+public class KeyframeView : MonoBehaviour // TypeDefIndex: 12633
 {
-	public ScrollRect Scroller; 
-	public GameObjectRef KeyframePrefab; 
-	public RectTransform KeyframeRoot; 
-	public Transform CurrentPositionIndicator; 
-	public bool LockScrollToCurrentPosition; 
-	public RustText TrackName; 
-	private List<KeyframeWidget> spawnedWidgets; 
+	public ScrollRect Scroller;
+	public GameObjectRef KeyframePrefab;
+	public RectTransform KeyframeRoot;
+	public Transform CurrentPositionIndicator;
+	public bool LockScrollToCurrentPosition;
+	public RustText TrackName;
+	private List<KeyframeWidget> spawnedWidgets;
 
 
 	public void Populate(DemoShotVectorTrack track, float trackLength) { }
@@ -31,18 +31,18 @@ public class KeyframeView : MonoBehaviour // TypeDefIndex: 12620
 
 }
 
-public struct KeyframeView.UIKeyframeValue // TypeDefIndex: 12621
+public struct KeyframeView.UIKeyframeValue // TypeDefIndex: 12634
 {
-	public float time; 
-	public string visibleValue; 
-	public object backingKeyframe; 
-	public KeyframeView.UIKeyframeValue.KeyframeValueType type; 
+	public float time;
+	public string visibleValue;
+	public object backingKeyframe;
+	public KeyframeView.UIKeyframeValue.KeyframeValueType type;
 
 }
 
-public enum KeyframeView.UIKeyframeValue.KeyframeValueType // TypeDefIndex: 12622
+public enum KeyframeView.UIKeyframeValue.KeyframeValueType // TypeDefIndex: 12635
 {
-	public int value__; 
+	public int value__;
 	public const KeyframeView.UIKeyframeValue.KeyframeValueType Vector3 = 0;
 	public const KeyframeView.UIKeyframeValue.KeyframeValueType Quaternion = 1;
 	public const KeyframeView.UIKeyframeValue.KeyframeValueType Float = 2;

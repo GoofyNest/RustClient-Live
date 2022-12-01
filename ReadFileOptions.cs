@@ -1,15 +1,15 @@
-public struct ReadFileOptions // TypeDefIndex: 8421
+public struct ReadFileOptions // TypeDefIndex: 8423
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <ReadChunkLengthBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnReadFileDataCallback <ReadFileDataCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnFileTransferProgressCallback <FileTransferProgressCallback>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <ReadChunkLengthBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnReadFileDataCallback <ReadFileDataCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnFileTransferProgressCallback <FileTransferProgressCallback>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String Filename { get; set; }
@@ -18,50 +18,50 @@ public struct ReadFileOptions // TypeDefIndex: 8421
 	public OnFileTransferProgressCallback FileTransferProgressCallback { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_ReadChunkLengthBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReadChunkLengthBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnReadFileDataCallback get_ReadFileDataCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReadFileDataCallback(OnReadFileDataCallback value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnFileTransferProgressCallback get_FileTransferProgressCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FileTransferProgressCallback(OnFileTransferProgressCallback value) { }
 
 }
 
-public struct ReadFileOptions // TypeDefIndex: 8924
+public struct ReadFileOptions // TypeDefIndex: 8926
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Filename>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <ReadChunkLengthBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnReadFileDataCallback <ReadFileDataCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private OnFileTransferProgressCallback <FileTransferProgressCallback>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Filename>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <ReadChunkLengthBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnReadFileDataCallback <ReadFileDataCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private OnFileTransferProgressCallback <FileTransferProgressCallback>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public Utf8String Filename { get; set; }
@@ -70,34 +70,34 @@ public struct ReadFileOptions // TypeDefIndex: 8924
 	public OnFileTransferProgressCallback FileTransferProgressCallback { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Filename() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Filename(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_ReadChunkLengthBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReadChunkLengthBytes(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnReadFileDataCallback get_ReadFileDataCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReadFileDataCallback(OnReadFileDataCallback value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public OnFileTransferProgressCallback get_FileTransferProgressCallback() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_FileTransferProgressCallback(OnFileTransferProgressCallback value) { }
 
 }

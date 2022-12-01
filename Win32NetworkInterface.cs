@@ -1,7 +1,7 @@
 internal class Win32NetworkInterface // TypeDefIndex: 3082
 {
-	private static Win32_FIXED_INFO fixedInfo; 
-	private static bool initialized; 
+	private static Win32_FIXED_INFO fixedInfo;
+	private static bool initialized;
 
 	public static Win32_FIXED_INFO FixedInfo { get; }
 

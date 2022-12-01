@@ -1,6 +1,6 @@
 public static class BitConverter // TypeDefIndex: 178
 {
-	public static readonly bool IsLittleEndian; 
+	public static readonly bool IsLittleEndian;
 
 
 	private static bool AmILittleEndian() { }
@@ -15,13 +15,13 @@ public static class BitConverter // TypeDefIndex: 178
 
 	public static byte[] GetBytes(long value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte[] GetBytes(ushort value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte[] GetBytes(uint value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static byte[] GetBytes(ulong value) { }
 
 	public static byte[] GetBytes(float value) { }
@@ -34,13 +34,13 @@ public static class BitConverter // TypeDefIndex: 178
 
 	public static long ToInt64(byte[] value, int startIndex) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ushort ToUInt16(byte[] value, int startIndex) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static uint ToUInt32(byte[] value, int startIndex) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static ulong ToUInt64(byte[] value, int startIndex) { }
 
 	private static char GetHexValue(int i) { }

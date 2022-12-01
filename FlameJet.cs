@@ -1,18 +1,18 @@
-public class FlameJet : MonoBehaviour // TypeDefIndex: 10625
+public class FlameJet : MonoBehaviour // TypeDefIndex: 10629
 {
-	public LineRenderer line; 
-	public float tesselation; 
-	private float length; 
-	public float maxLength; 
-	public float drag; 
-	private int numSegments; 
-	private float spacing; 
-	public bool on; 
-	private Vector3[] lastWorldSegments; 
-	private Vector3[] currentSegments; 
-	public Color startColor; 
-	public Color endColor; 
-	public Color currentColor; 
+	public LineRenderer line;
+	public float tesselation;
+	private float length;
+	public float maxLength;
+	public float drag;
+	private int numSegments;
+	private float spacing;
+	public bool on;
+	private Vector3[] lastWorldSegments;
+	private Vector3[] currentSegments;
+	public Color startColor;
+	public Color endColor;
+	public Color currentColor;
 
 
 	private void Initialize() { }

@@ -1,15 +1,15 @@
-public class CreateBuilding : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6492
+public class CreateBuilding : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6494
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint entity; 
-	public uint socket; 
-	public bool onterrain; 
-	public Vector3 position; 
-	public Vector3 normal; 
-	public Ray ray; 
-	public uint blockID; 
-	public Vector3 rotation; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint entity;
+	public uint socket;
+	public bool onterrain;
+	public Vector3 position;
+	public Vector3 normal;
+	public Ray ray;
+	public uint blockID;
+	public Vector3 rotation;
 
 
 	public static void ResetToPool(CreateBuilding instance) { }

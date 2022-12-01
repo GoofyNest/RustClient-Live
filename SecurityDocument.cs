@@ -1,6 +1,6 @@
 internal sealed class SecurityDocument // TypeDefIndex: 897
 {
-	internal byte[] m_data; 
+	internal byte[] m_data;
 
 
 	public void .ctor(int numData) { }

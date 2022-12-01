@@ -7,8 +7,8 @@ public sealed class Resources // TypeDefIndex: 3493
 	|-Resources.ConvertObjects<object>
 	*/
 
-	[FreeFunctionAttribute] 
-	[TypeInferenceRuleAttribute] 
+	[FreeFunctionAttribute]
+	[TypeInferenceRuleAttribute]
 	public static Object[] FindObjectsOfTypeAll(Type type) { }
 
 	public static T[] FindObjectsOfTypeAll<T>() { }
@@ -43,13 +43,13 @@ public sealed class Resources // TypeDefIndex: 3493
 	|-Resources.Load<object>
 	*/
 
-	[TypeInferenceRuleAttribute] 
-	[FreeFunctionAttribute] 
-	[NativeThrowsAttribute] 
+	[TypeInferenceRuleAttribute]
+	[FreeFunctionAttribute]
+	[NativeThrowsAttribute]
 	public static Object Load(string path, Type systemTypeInstance) { }
 
-	[NativeThrowsAttribute] 
-	[FreeFunctionAttribute] 
+	[NativeThrowsAttribute]
+	[FreeFunctionAttribute]
 	public static Object[] LoadAll(string path, Type systemTypeInstance) { }
 
 	public static T[] LoadAll<T>(string path) { }
@@ -59,8 +59,8 @@ public sealed class Resources // TypeDefIndex: 3493
 	|-Resources.LoadAll<object>
 	*/
 
-	[FreeFunctionAttribute] 
-	[TypeInferenceRuleAttribute] 
+	[FreeFunctionAttribute]
+	[TypeInferenceRuleAttribute]
 	public static Object GetBuiltinResource(Type type, string path) { }
 
 	public static T GetBuiltinResource<T>(string path) { }
@@ -70,10 +70,10 @@ public sealed class Resources // TypeDefIndex: 3493
 	|-Resources.GetBuiltinResource<object>
 	*/
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void UnloadAsset(Object assetToUnload) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static AsyncOperation UnloadUnusedAssets() { }
 
 }

@@ -1,8 +1,8 @@
 public class Win32Exception : ExternalException, ISerializable // TypeDefIndex: 2772
 {
-	private readonly int nativeErrorCode; 
-	private static bool s_ErrorMessagesInitialized; 
-	private static Dictionary<int, string> s_ErrorMessage; 
+	private readonly int nativeErrorCode;
+	private static bool s_ErrorMessagesInitialized;
+	private static Dictionary<int, string> s_ErrorMessage;
 
 	public int NativeErrorCode { get; }
 

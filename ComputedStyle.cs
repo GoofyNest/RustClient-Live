@@ -1,6 +1,6 @@
 internal struct ComputedStyle // TypeDefIndex: 4711
 {
-	private VisualElement m_Element; 
+	private VisualElement m_Element;
 
 	private VisualElementStylesData stylesData { get; }
 	private InheritedStylesData inheritedStylesData { get; }

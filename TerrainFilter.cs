@@ -1,7 +1,7 @@
-public class TerrainFilter : PrefabAttribute // TypeDefIndex: 12191
+public class TerrainFilter : PrefabAttribute // TypeDefIndex: 12198
 {
-	public SpawnFilter Filter; 
-	public bool CheckPlacementMap; 
+	public SpawnFilter Filter;
+	public bool CheckPlacementMap;
 
 
 	protected void OnDrawGizmosSelected() { }

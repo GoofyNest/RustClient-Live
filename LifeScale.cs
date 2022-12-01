@@ -1,10 +1,10 @@
-public class LifeScale : BaseMonoBehaviour // TypeDefIndex: 11373
+public class LifeScale : BaseMonoBehaviour // TypeDefIndex: 11379
 {
-	private bool initialized; 
-	private Vector3 initialScale; 
-	public Vector3 finalScale; 
-	private Vector3 targetLerpScale; 
-	private Action updateScaleAction; 
+	private bool initialized;
+	private Vector3 initialScale;
+	public Vector3 finalScale;
+	private Vector3 targetLerpScale;
+	private Action updateScaleAction;
 
 
 	protected void Awake() { }

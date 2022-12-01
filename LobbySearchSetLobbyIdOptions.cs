@@ -1,15 +1,15 @@
-public struct LobbySearchSetLobbyIdOptions // TypeDefIndex: 9196
+public struct LobbySearchSetLobbyIdOptions // TypeDefIndex: 9198
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LobbyId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LobbyId>k__BackingField;
 
 	public Utf8String LobbyId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LobbyId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LobbyId(Utf8String value) { }
 
 }

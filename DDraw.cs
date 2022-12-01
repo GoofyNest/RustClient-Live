@@ -1,12 +1,12 @@
-public class DDraw : MonoBehaviour // TypeDefIndex: 13471
+public class DDraw : MonoBehaviour // TypeDefIndex: 13487
 {
-	public static GameObject store; 
-	public static DDraw singleton; 
-	public List<DDraw.BaseObject> list; 
-	internal static int AutoYPosition; 
-	internal static float LastAutoY; 
-	private static Material lineMaterial; 
-	internal static GUISkin _skin; 
+	public static GameObject store;
+	public static DDraw singleton;
+	public List<DDraw.BaseObject> list;
+	internal static int AutoYPosition;
+	internal static float LastAutoY;
+	private static Material lineMaterial;
+	internal static GUISkin _skin;
 
 	internal static GUISkin skin { get; }
 
@@ -65,19 +65,19 @@ public class DDraw : MonoBehaviour // TypeDefIndex: 13471
 
 }
 
-public class DDraw.BaseObject // TypeDefIndex: 13472
+public class DDraw.BaseObject // TypeDefIndex: 13488
 {
-	public Vector3 position; 
-	public Matrix4x4 transform; 
-	public Color color; 
-	public float end; 
-	public float start; 
-	public float delta; 
-	public bool distanceFade; 
-	public bool ztest; 
-	public Stack<Matrix4x4> matrixStack; 
-	private static Vector3[] vDisc; 
-	private static Vector3[] vPlane; 
+	public Vector3 position;
+	public Matrix4x4 transform;
+	public Color color;
+	public float end;
+	public float start;
+	public float delta;
+	public bool distanceFade;
+	public bool ztest;
+	public Stack<Matrix4x4> matrixStack;
+	private static Vector3[] vDisc;
+	private static Vector3[] vPlane;
 
 
 	public virtual void Draw() { }
@@ -104,10 +104,10 @@ public class DDraw.BaseObject // TypeDefIndex: 13472
 
 }
 
-public class DDraw.CapsuleObj : DDraw.BaseObject // TypeDefIndex: 13473
+public class DDraw.CapsuleObj : DDraw.BaseObject // TypeDefIndex: 13489
 {
-	public float radius; 
-	public float height; 
+	public float radius;
+	public float height;
 
 
 	public override void Draw() { }
@@ -116,7 +116,7 @@ public class DDraw.CapsuleObj : DDraw.BaseObject // TypeDefIndex: 13473
 
 }
 
-public class DDraw.SphereObj : DDraw.BaseObject // TypeDefIndex: 13474
+public class DDraw.SphereObj : DDraw.BaseObject // TypeDefIndex: 13490
 {
 
 	public override void Draw() { }
@@ -125,11 +125,11 @@ public class DDraw.SphereObj : DDraw.BaseObject // TypeDefIndex: 13474
 
 }
 
-public class DDraw.SphereGizmoObj : DDraw.BaseObject // TypeDefIndex: 13475
+public class DDraw.SphereGizmoObj : DDraw.BaseObject // TypeDefIndex: 13491
 {
-	private static Matrix4x4 XZ; 
-	private static Matrix4x4 YZ; 
-	private static Matrix4x4 XY; 
+	private static Matrix4x4 XZ;
+	private static Matrix4x4 YZ;
+	private static Matrix4x4 XY;
 
 
 	public override void Draw() { }
@@ -140,7 +140,7 @@ public class DDraw.SphereGizmoObj : DDraw.BaseObject // TypeDefIndex: 13475
 
 }
 
-public class DDraw.LineObj : DDraw.BaseObject // TypeDefIndex: 13476
+public class DDraw.LineObj : DDraw.BaseObject // TypeDefIndex: 13492
 {
 
 	public override void Draw() { }
@@ -149,7 +149,7 @@ public class DDraw.LineObj : DDraw.BaseObject // TypeDefIndex: 13476
 
 }
 
-public class DDraw.CubeObj : DDraw.BaseObject // TypeDefIndex: 13477
+public class DDraw.CubeObj : DDraw.BaseObject // TypeDefIndex: 13493
 {
 
 	public override void Draw() { }
@@ -158,7 +158,7 @@ public class DDraw.CubeObj : DDraw.BaseObject // TypeDefIndex: 13477
 
 }
 
-public class DDraw.ArrowHead : DDraw.BaseObject // TypeDefIndex: 13478
+public class DDraw.ArrowHead : DDraw.BaseObject // TypeDefIndex: 13494
 {
 
 	public override void Draw() { }
@@ -167,27 +167,11 @@ public class DDraw.ArrowHead : DDraw.BaseObject // TypeDefIndex: 13478
 
 }
 
-public class DDraw.TextObj : DDraw.BaseObject // TypeDefIndex: 13479
+public class DDraw.TextObj : DDraw.BaseObject // TypeDefIndex: 13495
 {
-	public string text; 
-	protected Rect rect; 
-	protected bool draw; 
-
-
-	public override void Draw() { }
-
-	public override void DrawGUI() { }
-
-	public void .ctor() { }
-
-}
-
-public class DDraw.ScreenTextObj : DDraw.BaseObject // TypeDefIndex: 13480
-{
-	public string text; 
-	public int x; 
-	public int y; 
-	protected Rect rect; 
+	public string text;
+	protected Rect rect;
+	protected bool draw;
 
 
 	public override void Draw() { }
@@ -198,10 +182,26 @@ public class DDraw.ScreenTextObj : DDraw.BaseObject // TypeDefIndex: 13480
 
 }
 
-private sealed class DDraw.<>c // TypeDefIndex: 13481
+public class DDraw.ScreenTextObj : DDraw.BaseObject // TypeDefIndex: 13496
 {
-	public static readonly DDraw.<>c <>9; 
-	public static Predicate<DDraw.BaseObject> <>9__24_0; 
+	public string text;
+	public int x;
+	public int y;
+	protected Rect rect;
+
+
+	public override void Draw() { }
+
+	public override void DrawGUI() { }
+
+	public void .ctor() { }
+
+}
+
+private sealed class DDraw.<>c // TypeDefIndex: 13497
+{
+	public static readonly DDraw.<>c <>9;
+	public static Predicate<DDraw.BaseObject> <>9__24_0;
 
 
 	private static void .cctor() { }
@@ -212,22 +212,22 @@ private sealed class DDraw.<>c // TypeDefIndex: 13481
 
 }
 
-public class DDraw // TypeDefIndex: 13687
+public class DDraw // TypeDefIndex: 13703
 {
 
-	[ClientVar] 
+	[ClientVar]
 	public static void line(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void arrow(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void sphere(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void text(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
+	[ClientVar]
 	public static void box(ConsoleSystem.Arg arg) { }
 
 	public void .ctor() { }

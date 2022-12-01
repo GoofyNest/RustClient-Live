@@ -1,19 +1,19 @@
 internal class CFProxy // TypeDefIndex: 2523
 {
-	private static IntPtr kCFProxyAutoConfigurationJavaScriptKey; 
-	private static IntPtr kCFProxyAutoConfigurationURLKey; 
-	private static IntPtr kCFProxyHostNameKey; 
-	private static IntPtr kCFProxyPasswordKey; 
-	private static IntPtr kCFProxyPortNumberKey; 
-	private static IntPtr kCFProxyTypeKey; 
-	private static IntPtr kCFProxyUsernameKey; 
-	private static IntPtr kCFProxyTypeAutoConfigurationURL; 
-	private static IntPtr kCFProxyTypeAutoConfigurationJavaScript; 
-	private static IntPtr kCFProxyTypeFTP; 
-	private static IntPtr kCFProxyTypeHTTP; 
-	private static IntPtr kCFProxyTypeHTTPS; 
-	private static IntPtr kCFProxyTypeSOCKS; 
-	private CFDictionary settings; 
+	private static IntPtr kCFProxyAutoConfigurationJavaScriptKey;
+	private static IntPtr kCFProxyAutoConfigurationURLKey;
+	private static IntPtr kCFProxyHostNameKey;
+	private static IntPtr kCFProxyPasswordKey;
+	private static IntPtr kCFProxyPortNumberKey;
+	private static IntPtr kCFProxyTypeKey;
+	private static IntPtr kCFProxyUsernameKey;
+	private static IntPtr kCFProxyTypeAutoConfigurationURL;
+	private static IntPtr kCFProxyTypeAutoConfigurationJavaScript;
+	private static IntPtr kCFProxyTypeFTP;
+	private static IntPtr kCFProxyTypeHTTP;
+	private static IntPtr kCFProxyTypeHTTPS;
+	private static IntPtr kCFProxyTypeSOCKS;
+	private CFDictionary settings;
 
 	public IntPtr AutoConfigurationJavaScript { get; }
 	public IntPtr AutoConfigurationUrl { get; }

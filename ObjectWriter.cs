@@ -1,26 +1,26 @@
 internal sealed class ObjectWriter // TypeDefIndex: 1115
 {
-	private Queue m_objectQueue; 
-	private ObjectIDGenerator m_idGenerator; 
-	private int m_currentId; 
-	private ISurrogateSelector m_surrogates; 
-	private StreamingContext m_context; 
-	private __BinaryWriter serWriter; 
-	private SerializationObjectManager m_objectManager; 
-	private long topId; 
-	private string topName; 
-	private Header[] headers; 
-	private InternalFE formatterEnums; 
-	private SerializationBinder m_binder; 
-	private SerObjectInfoInit serObjectInfoInit; 
-	private IFormatterConverter m_formatterConverter; 
-	internal object[] crossAppDomainArray; 
-	private object previousObj; 
-	private long previousId; 
-	private Type previousType; 
-	private InternalPrimitiveTypeE previousCode; 
-	private Hashtable assemblyToIdTable; 
-	private SerStack niPool; 
+	private Queue m_objectQueue;
+	private ObjectIDGenerator m_idGenerator;
+	private int m_currentId;
+	private ISurrogateSelector m_surrogates;
+	private StreamingContext m_context;
+	private __BinaryWriter serWriter;
+	private SerializationObjectManager m_objectManager;
+	private long topId;
+	private string topName;
+	private Header[] headers;
+	private InternalFE formatterEnums;
+	private SerializationBinder m_binder;
+	private SerObjectInfoInit serObjectInfoInit;
+	private IFormatterConverter m_formatterConverter;
+	internal object[] crossAppDomainArray;
+	private object previousObj;
+	private long previousId;
+	private Type previousType;
+	private InternalPrimitiveTypeE previousCode;
+	private Hashtable assemblyToIdTable;
+	private SerStack niPool;
 
 	internal SerializationObjectManager ObjectManager { get; }
 

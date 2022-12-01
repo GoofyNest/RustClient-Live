@@ -1,15 +1,15 @@
-public struct WindowsRTCOptions // TypeDefIndex: 9884
+public struct WindowsRTCOptions // TypeDefIndex: 9886
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<WindowsRTCOptionsPlatformSpecificOptions> <PlatformSpecificOptions>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<WindowsRTCOptionsPlatformSpecificOptions> <PlatformSpecificOptions>k__BackingField;
 
 	public Nullable<WindowsRTCOptionsPlatformSpecificOptions> PlatformSpecificOptions { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<WindowsRTCOptionsPlatformSpecificOptions> get_PlatformSpecificOptions() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PlatformSpecificOptions(Nullable<WindowsRTCOptionsPlatformSpecificOptions> value) { }
 
 	internal void Set(ref WindowsRTCOptionsInternal other) { }

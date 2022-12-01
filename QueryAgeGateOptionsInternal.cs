@@ -1,8 +1,8 @@
-internal struct QueryAgeGateOptionsInternal : ISettable<QueryAgeGateOptions>, IDisposable // TypeDefIndex: 9355
+internal struct QueryAgeGateOptionsInternal : ISettable<QueryAgeGateOptions>, IDisposable // TypeDefIndex: 9357
 {
 
 internal struct QueryAgeGateOptionsInternal : ISettable<QueryAgeGateOptions>, IDisposable
-	private int m_ApiVersion; 
+	private int m_ApiVersion;
 
 
 	public void Set(ref QueryAgeGateOptions other) { }

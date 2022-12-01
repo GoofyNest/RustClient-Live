@@ -1,11 +1,11 @@
-public class VendingMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6346
+public class VendingMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6348
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public VendingMachine.SellOrderContainer sellOrderContainer; 
-	public string shopName; 
-	public int vmoIndex; 
-	public uint networkID; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public VendingMachine.SellOrderContainer sellOrderContainer;
+	public string shopName;
+	public int vmoIndex;
+	public uint networkID;
 
 
 	public static void ResetToPool(VendingMachine instance) { }
@@ -62,20 +62,20 @@ public class VendingMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class VendingMachine.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6347
+public class VendingMachine.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6349
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int itemToSellID; 
-	public int itemToSellAmount; 
-	public int currencyID; 
-	public int currencyAmountPerItem; 
-	public int inStock; 
-	public bool currencyIsBP; 
-	public bool itemToSellIsBP; 
-	public float itemCondition; 
-	public float itemConditionMax; 
-	public int instanceData; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int itemToSellID;
+	public int itemToSellAmount;
+	public int currencyID;
+	public int currencyAmountPerItem;
+	public int inStock;
+	public bool currencyIsBP;
+	public bool itemToSellIsBP;
+	public float itemCondition;
+	public float itemConditionMax;
+	public int instanceData;
 
 
 	public static void ResetToPool(VendingMachine.SellOrder instance) { }
@@ -132,11 +132,11 @@ public class VendingMachine.SellOrder : IDisposable, Pool.IPooled, IProto // Typ
 
 }
 
-public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6348
+public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6350
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<VendingMachine.SellOrder> sellOrders; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<VendingMachine.SellOrder> sellOrders;
 
 
 	public static void ResetToPool(VendingMachine.SellOrderContainer instance) { }
@@ -193,23 +193,23 @@ public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IPro
 
 }
 
-public class VendingMachine : StorageContainer // TypeDefIndex: 10202
+public class VendingMachine : StorageContainer // TypeDefIndex: 10204
 {
-	private Option __menuOption_Menu_BroadcastOff; 
-	private Option __menuOption_Menu_BroadcastOn; 
-	private Option __menuOption_Menu_OpenAdmin; 
-	private Option __menuOption_Menu_RotateVM; 
-	private Option __menuOption_Menu_Shop; 
-	[HeaderAttribute] 
-	public static readonly Translate.Phrase WaitForVendingMessage; 
-	public GameObjectRef adminMenuPrefab; 
-	public string customerPanel; 
-	public VendingMachine.SellOrderContainer sellOrders; 
-	public SoundPlayer buySound; 
-	public string shopName; 
-	public GameObjectRef mapMarkerPrefab; 
-	public ItemDefinition blueprintBaseDef; 
-	private List<SoundManager.ScheduledSound> scheduledPhysSounds; 
+	private Option __menuOption_Menu_BroadcastOff;
+	private Option __menuOption_Menu_BroadcastOn;
+	private Option __menuOption_Menu_OpenAdmin;
+	private Option __menuOption_Menu_RotateVM;
+	private Option __menuOption_Menu_Shop;
+	[HeaderAttribute]
+	public static readonly Translate.Phrase WaitForVendingMessage;
+	public GameObjectRef adminMenuPrefab;
+	public string customerPanel;
+	public VendingMachine.SellOrderContainer sellOrders;
+	public SoundPlayer buySound;
+	public string shopName;
+	public GameObjectRef mapMarkerPrefab;
+	public ItemDefinition blueprintBaseDef;
+	private List<SoundManager.ScheduledSound> scheduledPhysSounds;
 
 	public override bool HasMenuOptions { get; }
 
@@ -224,60 +224,60 @@ public class VendingMachine : StorageContainer // TypeDefIndex: 10202
 
 	public virtual void InstallDefaultSellOrders() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_StartVendingSounds(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_CancelVendingSounds(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_ReceiveSellOrders(BaseEntity.RPCMessage msg) { }
 
 	public virtual bool ShouldShowAdminPanel() { }
 
 	public override bool ShouldShowLootMenus() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Shop(BasePlayer player) { }
 
 	public bool Menu_Shop_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_OpenAdmin(BasePlayer player) { }
 
 	public bool Menu_OpenAdmin_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_BroadcastOn(BasePlayer player) { }
 
 	public bool Menu_Broadcast_On_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_BroadcastOff(BasePlayer player) { }
 
 	public bool Menu_Broadcast_Off_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_RotateVM(BasePlayer player) { }
 
 	public virtual bool Menu_RotateVM_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void CLIENT_OpenAdminMenu(BaseEntity.RPCMessage rpc) { }
 
 	public override void PostNetworkUpdate() { }
@@ -302,7 +302,7 @@ public class VendingMachine : StorageContainer // TypeDefIndex: 10202
 
 }
 
-public static class VendingMachine.VendingMachineFlags // TypeDefIndex: 10203
+public static class VendingMachine.VendingMachineFlags // TypeDefIndex: 10205
 {
 	public const BaseEntity.Flags EmptyInv = 128;
 	public const BaseEntity.Flags IsVending = 256;

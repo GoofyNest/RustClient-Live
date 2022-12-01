@@ -1,24 +1,24 @@
 public static class ExecuteEvents // TypeDefIndex: 5082
 {
-	private static readonly ExecuteEvents.EventFunction<IPointerEnterHandler> s_PointerEnterHandler; 
-	private static readonly ExecuteEvents.EventFunction<IPointerExitHandler> s_PointerExitHandler; 
-	private static readonly ExecuteEvents.EventFunction<IPointerDownHandler> s_PointerDownHandler; 
-	private static readonly ExecuteEvents.EventFunction<IPointerUpHandler> s_PointerUpHandler; 
-	private static readonly ExecuteEvents.EventFunction<IPointerClickHandler> s_PointerClickHandler; 
-	private static readonly ExecuteEvents.EventFunction<IInitializePotentialDragHandler> s_InitializePotentialDragHandler; 
-	private static readonly ExecuteEvents.EventFunction<IBeginDragHandler> s_BeginDragHandler; 
-	private static readonly ExecuteEvents.EventFunction<IDragHandler> s_DragHandler; 
-	private static readonly ExecuteEvents.EventFunction<IEndDragHandler> s_EndDragHandler; 
-	private static readonly ExecuteEvents.EventFunction<IDropHandler> s_DropHandler; 
-	private static readonly ExecuteEvents.EventFunction<IScrollHandler> s_ScrollHandler; 
-	private static readonly ExecuteEvents.EventFunction<IUpdateSelectedHandler> s_UpdateSelectedHandler; 
-	private static readonly ExecuteEvents.EventFunction<ISelectHandler> s_SelectHandler; 
-	private static readonly ExecuteEvents.EventFunction<IDeselectHandler> s_DeselectHandler; 
-	private static readonly ExecuteEvents.EventFunction<IMoveHandler> s_MoveHandler; 
-	private static readonly ExecuteEvents.EventFunction<ISubmitHandler> s_SubmitHandler; 
-	private static readonly ExecuteEvents.EventFunction<ICancelHandler> s_CancelHandler; 
-	private static readonly ObjectPool<List<IEventSystemHandler>> s_HandlerListPool; 
-	private static readonly List<Transform> s_InternalTransformList; 
+	private static readonly ExecuteEvents.EventFunction<IPointerEnterHandler> s_PointerEnterHandler;
+	private static readonly ExecuteEvents.EventFunction<IPointerExitHandler> s_PointerExitHandler;
+	private static readonly ExecuteEvents.EventFunction<IPointerDownHandler> s_PointerDownHandler;
+	private static readonly ExecuteEvents.EventFunction<IPointerUpHandler> s_PointerUpHandler;
+	private static readonly ExecuteEvents.EventFunction<IPointerClickHandler> s_PointerClickHandler;
+	private static readonly ExecuteEvents.EventFunction<IInitializePotentialDragHandler> s_InitializePotentialDragHandler;
+	private static readonly ExecuteEvents.EventFunction<IBeginDragHandler> s_BeginDragHandler;
+	private static readonly ExecuteEvents.EventFunction<IDragHandler> s_DragHandler;
+	private static readonly ExecuteEvents.EventFunction<IEndDragHandler> s_EndDragHandler;
+	private static readonly ExecuteEvents.EventFunction<IDropHandler> s_DropHandler;
+	private static readonly ExecuteEvents.EventFunction<IScrollHandler> s_ScrollHandler;
+	private static readonly ExecuteEvents.EventFunction<IUpdateSelectedHandler> s_UpdateSelectedHandler;
+	private static readonly ExecuteEvents.EventFunction<ISelectHandler> s_SelectHandler;
+	private static readonly ExecuteEvents.EventFunction<IDeselectHandler> s_DeselectHandler;
+	private static readonly ExecuteEvents.EventFunction<IMoveHandler> s_MoveHandler;
+	private static readonly ExecuteEvents.EventFunction<ISubmitHandler> s_SubmitHandler;
+	private static readonly ExecuteEvents.EventFunction<ICancelHandler> s_CancelHandler;
+	private static readonly ObjectPool<List<IEventSystemHandler>> s_HandlerListPool;
+	private static readonly List<Transform> s_InternalTransformList;
 
 	public static ExecuteEvents.EventFunction<IPointerEnterHandler> pointerEnterHandler { get; }
 	public static ExecuteEvents.EventFunction<IPointerExitHandler> pointerExitHandler { get; }
@@ -227,7 +227,7 @@ public sealed class ExecuteEvents.EventFunction<T1> : MulticastDelegate // TypeD
 
 private sealed class ExecuteEvents.<>c // TypeDefIndex: 5084
 {
-	public static readonly ExecuteEvents.<>c <>9; 
+	public static readonly ExecuteEvents.<>c <>9;
 
 
 	private static void .cctor() { }

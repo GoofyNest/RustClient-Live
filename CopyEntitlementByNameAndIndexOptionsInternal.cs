@@ -1,9 +1,9 @@
-internal struct CopyEntitlementByNameAndIndexOptionsInternal : ISettable<CopyEntitlementByNameAndIndexOptions>, IDisposable // TypeDefIndex: 9434
+internal struct CopyEntitlementByNameAndIndexOptionsInternal : ISettable<CopyEntitlementByNameAndIndexOptions>, IDisposable // TypeDefIndex: 9436
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_EntitlementName; 
-	private uint m_Index; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_EntitlementName;
+	private uint m_Index;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String EntitlementName { set; }

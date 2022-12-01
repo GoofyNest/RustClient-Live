@@ -1,6 +1,6 @@
-public class DropBox : Mailbox // TypeDefIndex: 10413
+public class DropBox : Mailbox // TypeDefIndex: 10417
 {
-	public Transform EyePoint; 
+	public Transform EyePoint;
 
 
 	public override bool PlayerIsOwner(BasePlayer player) { }

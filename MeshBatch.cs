@@ -1,13 +1,13 @@
-public abstract class MeshBatch : MonoBehaviour // TypeDefIndex: 13177
+public abstract class MeshBatch : MonoBehaviour // TypeDefIndex: 13192
 {
-	[CompilerGeneratedAttribute] 
-	private bool <NeedsRefresh>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Count>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <BatchedCount>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <VertexCount>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private bool <NeedsRefresh>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Count>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <BatchedCount>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <VertexCount>k__BackingField;
 
 	public bool NeedsRefresh { get; set; }
 	public int Count { get; set; }
@@ -18,28 +18,28 @@ public abstract class MeshBatch : MonoBehaviour // TypeDefIndex: 13177
 	public int AvailableVertices { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_NeedsRefresh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_NeedsRefresh(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Count() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Count(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_BatchedCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_BatchedCount(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_VertexCount() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_VertexCount(int value) { }
 
 	protected abstract void AllocMemory();

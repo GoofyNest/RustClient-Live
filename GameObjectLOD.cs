@@ -1,9 +1,9 @@
-public class GameObjectLOD : LODComponent // TypeDefIndex: 11665
+public class GameObjectLOD : LODComponent // TypeDefIndex: 11672
 {
-	public float Distance; 
-	public GameObject TargetGameObject; 
-	private int curlod; 
-	private bool force; 
+	public float Distance;
+	public GameObject TargetGameObject;
+	private int curlod;
+	private bool force;
 
 
 	protected override void InitLOD() { }

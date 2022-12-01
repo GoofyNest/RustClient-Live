@@ -1,11 +1,11 @@
-public class LootGrid : MonoBehaviour // TypeDefIndex: 12808
+public class LootGrid : MonoBehaviour // TypeDefIndex: 12822
 {
-	public int Container; 
-	public int Offset; 
-	public int Count; 
-	public GameObject ItemIconPrefab; 
-	public Sprite BackgroundImage; 
-	public ItemContainerSource Inventory; 
+	public int Container;
+	public int Offset;
+	public int Count;
+	public GameObject ItemIconPrefab;
+	public Sprite BackgroundImage;
+	public ItemContainerSource Inventory;
 
 
 	public void CreateInventory(ItemContainerSource inventory, Nullable<int> slots, Nullable<int> offset) { }

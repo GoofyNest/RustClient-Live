@@ -1,20 +1,20 @@
-internal struct FlexChildEnumerator : IEnumerator<IFlexNode>, IEnumerator, IDisposable // TypeDefIndex: 6818
+internal struct FlexChildEnumerator : IEnumerator<IFlexNode>, IEnumerator, IDisposable // TypeDefIndex: 6820
 {
-	private readonly Transform _parent; 
-	private readonly int _childCount; 
-	private readonly bool _reversed; 
-	private int _index; 
-	[CompilerGeneratedAttribute] 
-	private IFlexNode <Current>k__BackingField; 
+	private readonly Transform _parent;
+	private readonly int _childCount;
+	private readonly bool _reversed;
+	private int _index;
+	[CompilerGeneratedAttribute]
+	private IFlexNode <Current>k__BackingField;
 
 	public IFlexNode Current { get; set; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IFlexNode get_Current() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Current(IFlexNode value) { }
 
 	public void .ctor(FlexElement parent, bool reversed) { }

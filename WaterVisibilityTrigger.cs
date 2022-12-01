@@ -1,10 +1,10 @@
-public class WaterVisibilityTrigger : EnvironmentVolumeTrigger // TypeDefIndex: 12384
+public class WaterVisibilityTrigger : EnvironmentVolumeTrigger // TypeDefIndex: 12392
 {
-	public bool togglePhysics; 
-	public bool toggleVisuals; 
-	private long enteredTick; 
-	private static long ticks; 
-	private static SortedList<long, WaterVisibilityTrigger> tracker; 
+	public bool togglePhysics;
+	public bool toggleVisuals;
+	private long enteredTick;
+	private static long ticks;
+	private static SortedList<long, WaterVisibilityTrigger> tracker;
 
 
 	public static void Reset() { }

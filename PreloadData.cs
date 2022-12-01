@@ -1,7 +1,7 @@
 internal class PreloadData : Object // TypeDefIndex: 3555
 {
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal void PreloadDataDontStripMe() { }
 
 }

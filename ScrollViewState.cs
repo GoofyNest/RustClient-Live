@@ -1,7 +1,7 @@
 internal class ScrollViewState // TypeDefIndex: 4063
 {
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 
 }

@@ -1,13 +1,13 @@
-public class MedicalTool : AttackEntity // TypeDefIndex: 10323
+public class MedicalTool : AttackEntity // TypeDefIndex: 10326
 {
-	public float healDurationSelf; 
-	public float healDurationOther; 
-	public float healDurationOtherWounded; 
-	public float maxDistanceOther; 
-	public bool canUseOnOther; 
-	public bool canRevive; 
-	private BasePlayer useTarget; 
-	private float resetTime; 
+	public float healDurationSelf;
+	public float healDurationOther;
+	public float healDurationOtherWounded;
+	public float maxDistanceOther;
+	public bool canUseOnOther;
+	public bool canRevive;
+	private BasePlayer useTarget;
+	private float resetTime;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -20,7 +20,7 @@ public class MedicalTool : AttackEntity // TypeDefIndex: 10323
 
 	public override void OnViewmodelEvent(string name) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void Reset() { }
 
 	public override void OnDeploy() { }

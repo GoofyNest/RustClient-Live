@@ -1,52 +1,52 @@
-public class CardGamePlayerWidget : MonoBehaviour // TypeDefIndex: 12634
+public class CardGamePlayerWidget : MonoBehaviour // TypeDefIndex: 12647
 {
-	[SerializeField] 
-	private GameObjectRef cardImageSmallPrefab; 
-	[SerializeField] 
-	private RawImage avatar; 
-	[SerializeField] 
-	private RustText playerName; 
-	[SerializeField] 
-	private RustText scrapTotal; 
-	[SerializeField] 
-	private RustText betText; 
-	[SerializeField] 
-	private Image background; 
-	[SerializeField] 
-	private Color inactiveBackground; 
-	[SerializeField] 
-	private Color activeBackground; 
-	[SerializeField] 
-	private Color foldedBackground; 
-	[SerializeField] 
-	private Color winnerBackground; 
-	[SerializeField] 
-	private Animation actionShowAnimation; 
-	[SerializeField] 
-	private RustText actionText; 
-	[SerializeField] 
-	private Sprite canSeeIcon; 
-	[SerializeField] 
-	private Sprite cannotSeeIcon; 
-	[SerializeField] 
-	private Sprite blankSprite; 
-	[SerializeField] 
-	private Image cornerIcon; 
-	[SerializeField] 
-	private Transform cardDisplayParent; 
-	[SerializeField] 
-	private GridLayoutGroup cardDisplayGridLayout; 
-	[SerializeField] 
-	private GameObject circle; 
-	[SerializeField] 
-	private RustText circleText; 
-	private Color normalCardColour; 
-	private Color fadedCardColour; 
-	private List<Image> cardImages; 
-	private List<PlayingCard> emptyCardList; 
-	private Vector2 cardSizeOneRow; 
-	private Vector2 cardSizeTwoRows; 
-	private TimeSince lastHandResultShow; 
+	[SerializeField]
+	private GameObjectRef cardImageSmallPrefab;
+	[SerializeField]
+	private RawImage avatar;
+	[SerializeField]
+	private RustText playerName;
+	[SerializeField]
+	private RustText scrapTotal;
+	[SerializeField]
+	private RustText betText;
+	[SerializeField]
+	private Image background;
+	[SerializeField]
+	private Color inactiveBackground;
+	[SerializeField]
+	private Color activeBackground;
+	[SerializeField]
+	private Color foldedBackground;
+	[SerializeField]
+	private Color winnerBackground;
+	[SerializeField]
+	private Animation actionShowAnimation;
+	[SerializeField]
+	private RustText actionText;
+	[SerializeField]
+	private Sprite canSeeIcon;
+	[SerializeField]
+	private Sprite cannotSeeIcon;
+	[SerializeField]
+	private Sprite blankSprite;
+	[SerializeField]
+	private Image cornerIcon;
+	[SerializeField]
+	private Transform cardDisplayParent;
+	[SerializeField]
+	private GridLayoutGroup cardDisplayGridLayout;
+	[SerializeField]
+	private GameObject circle;
+	[SerializeField]
+	private RustText circleText;
+	private Color normalCardColour;
+	private Color fadedCardColour;
+	private List<Image> cardImages;
+	private List<PlayingCard> emptyCardList;
+	private Vector2 cardSizeOneRow;
+	private Vector2 cardSizeTwoRows;
+	private TimeSince lastHandResultShow;
 
 
 	protected void Awake() { }
@@ -67,9 +67,9 @@ public class CardGamePlayerWidget : MonoBehaviour // TypeDefIndex: 12634
 
 }
 
-public enum CardGamePlayerWidget.PlayerUIState // TypeDefIndex: 12635
+public enum CardGamePlayerWidget.PlayerUIState // TypeDefIndex: 12648
 {
-	public int value__; 
+	public int value__;
 	public const CardGamePlayerWidget.PlayerUIState Default = 0;
 	public const CardGamePlayerWidget.PlayerUIState TheirTurn = 1;
 	public const CardGamePlayerWidget.PlayerUIState Winner = 2;

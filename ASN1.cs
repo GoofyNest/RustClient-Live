@@ -1,8 +1,8 @@
 internal class ASN1 // TypeDefIndex: 45
 {
-	private byte m_nTag; 
-	private byte[] m_aValue; 
-	private ArrayList elist; 
+	private byte m_nTag;
+	private byte[] m_aValue;
+	private ArrayList elist;
 
 	public int Count { get; }
 	public byte Tag { get; }
@@ -49,9 +49,9 @@ internal class ASN1 // TypeDefIndex: 45
 
 public class ASN1 // TypeDefIndex: 1704
 {
-	private byte m_nTag; 
-	private byte[] m_aValue; 
-	private ArrayList elist; 
+	private byte m_nTag;
+	private byte[] m_aValue;
+	private ArrayList elist;
 
 	public int Count { get; }
 	public byte Tag { get; }

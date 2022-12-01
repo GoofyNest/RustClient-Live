@@ -1,9 +1,9 @@
-public class MouseSteerableSeat : BaseVehicleSeat // TypeDefIndex: 11491
+public class MouseSteerableSeat : BaseVehicleSeat // TypeDefIndex: 11498
 {
-	[SerializeField] 
-	private bool supportsMouseSteer; 
+	[SerializeField]
+	private bool supportsMouseSteer;
 	public const BUTTON MouseSteerButton = 64;
-	private bool playerIsMouseSteering; 
+	private bool playerIsMouseSteering;
 
 
 	public override Vector2 GetYawClamp() { }

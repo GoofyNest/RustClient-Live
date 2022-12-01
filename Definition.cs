@@ -1,15 +1,15 @@
-public struct Definition // TypeDefIndex: 9288
+public struct Definition // TypeDefIndex: 9290
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LeaderboardId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <StatName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LeaderboardAggregation <Aggregation>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <StartTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <EndTime>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <LeaderboardId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <StatName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LeaderboardAggregation <Aggregation>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <StartTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <EndTime>k__BackingField;
 
 	public Utf8String LeaderboardId { get; set; }
 	public Utf8String StatName { get; set; }
@@ -18,64 +18,64 @@ public struct Definition // TypeDefIndex: 9288
 	public Nullable<DateTimeOffset> EndTime { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LeaderboardId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LeaderboardId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_StatName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StatName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LeaderboardAggregation get_Aggregation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Aggregation(LeaderboardAggregation value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_StartTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StartTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_EndTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EndTime(Nullable<DateTimeOffset> value) { }
 
 	internal void Set(ref DefinitionInternal other) { }
 
 }
 
-public struct Definition // TypeDefIndex: 9909
+public struct Definition // TypeDefIndex: 9911
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AchievementId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Description>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LockedDisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LockedDescription>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <HiddenDescription>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <CompletionDescription>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <UnlockedIconId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LockedIconId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsHidden>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private StatThresholds[] <StatThresholds>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <AchievementId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Description>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LockedDisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LockedDescription>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <HiddenDescription>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <CompletionDescription>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <UnlockedIconId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LockedIconId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <IsHidden>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private StatThresholds[] <StatThresholds>k__BackingField;
 
 	public Utf8String AchievementId { get; set; }
 	public Utf8String DisplayName { get; set; }
@@ -90,70 +90,70 @@ public struct Definition // TypeDefIndex: 9909
 	public StatThresholds[] StatThresholds { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AchievementId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AchievementId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Description() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Description(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LockedDisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LockedDisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LockedDescription() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LockedDescription(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_HiddenDescription() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HiddenDescription(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_CompletionDescription() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CompletionDescription(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_UnlockedIconId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_UnlockedIconId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LockedIconId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LockedIconId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsHidden() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_IsHidden(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public StatThresholds[] get_StatThresholds() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StatThresholds(StatThresholds[] value) { }
 
 	internal void Set(ref DefinitionInternal other) { }

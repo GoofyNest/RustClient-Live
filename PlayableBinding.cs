@@ -1,11 +1,11 @@
 public struct PlayableBinding // TypeDefIndex: 3870
 {
-	private string m_StreamName; 
-	private Object m_SourceObject; 
-	private Type m_SourceBindingType; 
-	private PlayableBinding.CreateOutputMethod m_CreateOutputMethod; 
-	public static readonly PlayableBinding[] None; 
-	public static readonly double DefaultDuration; 
+	private string m_StreamName;
+	private Object m_SourceObject;
+	private Type m_SourceBindingType;
+	private PlayableBinding.CreateOutputMethod m_CreateOutputMethod;
+	public static readonly PlayableBinding[] None;
+	public static readonly double DefaultDuration;
 
 
 	private static void .cctor() { }

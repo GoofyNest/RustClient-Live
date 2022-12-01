@@ -1,20 +1,20 @@
-public sealed class ZlibCodec // TypeDefIndex: 7004
+public sealed class ZlibCodec // TypeDefIndex: 7006
 {
-	public byte[] InputBuffer; 
-	public int NextIn; 
-	public int AvailableBytesIn; 
-	public long TotalBytesIn; 
-	public byte[] OutputBuffer; 
-	public int NextOut; 
-	public int AvailableBytesOut; 
-	public long TotalBytesOut; 
-	public string Message; 
-	internal DeflateManager dstate; 
-	internal InflateManager istate; 
-	internal uint _Adler32; 
-	public CompressionLevel CompressLevel; 
-	public int WindowBits; 
-	public CompressionStrategy Strategy; 
+	public byte[] InputBuffer;
+	public int NextIn;
+	public int AvailableBytesIn;
+	public long TotalBytesIn;
+	public byte[] OutputBuffer;
+	public int NextOut;
+	public int AvailableBytesOut;
+	public long TotalBytesOut;
+	public string Message;
+	internal DeflateManager dstate;
+	internal InflateManager istate;
+	internal uint _Adler32;
+	public CompressionLevel CompressLevel;
+	public int WindowBits;
+	public CompressionStrategy Strategy;
 
 
 	public void .ctor() { }

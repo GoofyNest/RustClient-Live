@@ -1,14 +1,14 @@
 public abstract class Module : ISerializable, ICustomAttributeProvider, _Module // TypeDefIndex: 571
 {
-	public static readonly TypeFilter FilterTypeName; 
-	public static readonly TypeFilter FilterTypeNameIgnoreCase; 
-	internal IntPtr _impl; 
-	internal Assembly assembly; 
-	internal string fqname; 
-	internal string name; 
-	internal string scopename; 
-	internal bool is_resource; 
-	internal int token; 
+	public static readonly TypeFilter FilterTypeName;
+	public static readonly TypeFilter FilterTypeNameIgnoreCase;
+	internal IntPtr _impl;
+	internal Assembly assembly;
+	internal string fqname;
+	internal string name;
+	internal string scopename;
+	internal bool is_resource;
+	internal int token;
 	private const BindingFlags defaultBindingFlags = 28;
 
 	public virtual Assembly Assembly { get; }

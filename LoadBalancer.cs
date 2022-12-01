@@ -1,12 +1,12 @@
-public class LoadBalancer : SingletonComponent<LoadBalancer> // TypeDefIndex: 13091
+public class LoadBalancer : SingletonComponent<LoadBalancer> // TypeDefIndex: 13106
 {
-	public static bool Paused; 
+	public static bool Paused;
 	private const float MinMilliseconds = 1;
 	private const float MaxMilliseconds = 100;
 	private const int MinBacklog = 1000;
 	private const int MaxBacklog = 100000;
-	private Queue<DeferredAction>[] queues; 
-	private Stopwatch watch; 
+	private Queue<DeferredAction>[] queues;
+	private Stopwatch watch;
 
 
 	protected void LateUpdate() { }

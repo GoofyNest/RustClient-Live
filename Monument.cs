@@ -1,7 +1,7 @@
-public class Monument : TerrainPlacement // TypeDefIndex: 12334
+public class Monument : TerrainPlacement // TypeDefIndex: 12342
 {
-	public float Radius; 
-	public float Fade; 
+	public float Radius;
+	public float Fade;
 
 
 	protected void OnDrawGizmosSelected() { }
@@ -22,14 +22,14 @@ public class Monument : TerrainPlacement // TypeDefIndex: 12334
 
 }
 
-private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12335
+private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12343
 {
-	public Matrix4x4 worldToLocal; 
-	public Monument <>4__this; 
-	public bool useBlendMap; 
-	public TextureData blenddata; 
-	public Vector3 position; 
-	public TextureData heightdata; 
+	public Matrix4x4 worldToLocal;
+	public Monument <>4__this;
+	public bool useBlendMap;
+	public TextureData blenddata;
+	public Vector3 position;
+	public TextureData heightdata;
 
 
 	public void .ctor() { }
@@ -38,20 +38,20 @@ private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12335
 
 }
 
-private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12336
+private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12344
 {
-	public Matrix4x4 worldToLocal; 
-	public Monument <>4__this; 
-	public TextureData splat0data; 
-	public TextureData splat1data; 
-	public bool should0; 
-	public bool should1; 
-	public bool should2; 
-	public bool should3; 
-	public bool should4; 
-	public bool should5; 
-	public bool should6; 
-	public bool should7; 
+	public Matrix4x4 worldToLocal;
+	public Monument <>4__this;
+	public TextureData splat0data;
+	public TextureData splat1data;
+	public bool should0;
+	public bool should1;
+	public bool should2;
+	public bool should3;
+	public bool should4;
+	public bool should5;
+	public bool should6;
+	public bool should7;
 
 
 	public void .ctor() { }
@@ -60,11 +60,11 @@ private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12336
 
 }
 
-private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12337
+private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12345
 {
-	public Matrix4x4 worldToLocal; 
-	public Monument <>4__this; 
-	public TextureData alphadata; 
+	public Matrix4x4 worldToLocal;
+	public Monument <>4__this;
+	public TextureData alphadata;
 
 
 	public void .ctor() { }
@@ -73,15 +73,15 @@ private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12337
 
 }
 
-private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12338
+private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12346
 {
-	public Matrix4x4 worldToLocal; 
-	public Monument <>4__this; 
-	public TextureData biomedata; 
-	public bool should0; 
-	public bool should1; 
-	public bool should2; 
-	public bool should3; 
+	public Matrix4x4 worldToLocal;
+	public Monument <>4__this;
+	public TextureData biomedata;
+	public bool should0;
+	public bool should1;
+	public bool should2;
+	public bool should3;
 
 
 	public void .ctor() { }
@@ -90,11 +90,11 @@ private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12338
 
 }
 
-private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12339
+private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12347
 {
-	public Matrix4x4 worldToLocal; 
-	public Monument <>4__this; 
-	public TextureData topologydata; 
+	public Matrix4x4 worldToLocal;
+	public Monument <>4__this;
+	public TextureData topologydata;
 
 
 	public void .ctor() { }

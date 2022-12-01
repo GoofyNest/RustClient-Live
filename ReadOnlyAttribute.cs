@@ -1,9 +1,9 @@
 public sealed class ReadOnlyAttribute : Attribute // TypeDefIndex: 2738
 {
-	private bool isReadOnly; 
-	public static readonly ReadOnlyAttribute Yes; 
-	public static readonly ReadOnlyAttribute No; 
-	public static readonly ReadOnlyAttribute Default; 
+	private bool isReadOnly;
+	public static readonly ReadOnlyAttribute Yes;
+	public static readonly ReadOnlyAttribute No;
+	public static readonly ReadOnlyAttribute Default;
 
 	public bool IsReadOnly { get; }
 
@@ -29,7 +29,7 @@ public sealed class ReadOnlyAttribute : Attribute // TypeDefIndex: 3315
 
 }
 
-public class ReadOnlyAttribute : PropertyAttribute // TypeDefIndex: 8037
+public class ReadOnlyAttribute : PropertyAttribute // TypeDefIndex: 8039
 {
 
 	public void .ctor() { }

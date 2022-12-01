@@ -1,13 +1,13 @@
 internal sealed class XdrValidator : BaseValidator // TypeDefIndex: 2302
 {
-	private HWStack validationStack; 
-	private Hashtable attPresence; 
-	private XmlQualifiedName name; 
-	private XmlNamespaceManager nsManager; 
-	private bool isProcessContents; 
-	private Hashtable IDs; 
-	private IdRefNode idRefListHead; 
-	private Parser inlineSchemaParser; 
+	private HWStack validationStack;
+	private Hashtable attPresence;
+	private XmlQualifiedName name;
+	private XmlNamespaceManager nsManager;
+	private bool isProcessContents;
+	private Hashtable IDs;
+	private IdRefNode idRefListHead;
+	private Parser inlineSchemaParser;
 
 	private bool IsInlineSchemaStarted { get; }
 	private bool HasSchema { get; }

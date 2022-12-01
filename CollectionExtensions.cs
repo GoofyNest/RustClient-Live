@@ -1,10 +1,10 @@
 public static class CollectionExtensions // TypeDefIndex: 1442
 {
 
-[ExtensionAttribute] 
+[ExtensionAttribute]
 public static class CollectionExtensions
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TValue GetValueOrDefault<TKey, TValue>(IReadOnlyDictionary<TKey, TValue> dictionary, TKey key) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +12,7 @@ public static class CollectionExtensions
 	|-CollectionExtensions.GetValueOrDefault<string, LocalDataStoreSlot>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static TValue GetValueOrDefault<TKey, TValue>(IReadOnlyDictionary<TKey, TValue> dictionary, TKey key, TValue defaultValue) { }
 	/* GenericInstMethod :
 	|
@@ -21,10 +21,10 @@ public static class CollectionExtensions
 
 }
 
-internal static class CollectionExtensions // TypeDefIndex: 5767
+internal static class CollectionExtensions // TypeDefIndex: 5769
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool SequenceEqual<TSource>(List<TSource> first, List<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -34,10 +34,10 @@ internal static class CollectionExtensions // TypeDefIndex: 5767
 	|-CollectionExtensions.SequenceEqual<string>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetValue(List<NameValueHeaderValue> parameters, string key, string value) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string ToString<T>(List<T> list) { }
 	/* GenericInstMethod :
 	|
@@ -45,7 +45,7 @@ internal static class CollectionExtensions // TypeDefIndex: 5767
 	|-CollectionExtensions.ToString<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ToStringBuilder<T>(List<T> list, StringBuilder sb) { }
 	/* GenericInstMethod :
 	|

@@ -1,27 +1,27 @@
 internal class SortKeyBuffer // TypeDefIndex: 44
 {
-	private byte[] l1b; 
-	private byte[] l2b; 
-	private byte[] l3b; 
-	private byte[] l4sb; 
-	private byte[] l4tb; 
-	private byte[] l4kb; 
-	private byte[] l4wb; 
-	private byte[] l5b; 
-	private string source; 
-	private int l1; 
-	private int l2; 
-	private int l3; 
-	private int l4s; 
-	private int l4t; 
-	private int l4k; 
-	private int l4w; 
-	private int l5; 
-	private int lcid; 
-	private CompareOptions options; 
-	private bool processLevel2; 
-	private bool frenchSort; 
-	private bool frenchSorted; 
+	private byte[] l1b;
+	private byte[] l2b;
+	private byte[] l3b;
+	private byte[] l4sb;
+	private byte[] l4tb;
+	private byte[] l4kb;
+	private byte[] l4wb;
+	private byte[] l5b;
+	private string source;
+	private int l1;
+	private int l2;
+	private int l3;
+	private int l4s;
+	private int l4t;
+	private int l4k;
+	private int l4w;
+	private int l5;
+	private int lcid;
+	private CompareOptions options;
+	private bool processLevel2;
+	private bool frenchSort;
+	private bool frenchSorted;
 
 
 	public void .ctor(int lcid) { }

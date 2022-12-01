@@ -1,8 +1,8 @@
-public class GenericSpawner : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6321
+public class GenericSpawner : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6323
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<GenericSpawner.SpawnedEnt> ents; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<GenericSpawner.SpawnedEnt> ents;
 
 
 	public static void ResetToPool(GenericSpawner instance) { }
@@ -59,13 +59,13 @@ public class GenericSpawner : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class GenericSpawner.SpawnedEnt : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
+public class GenericSpawner.SpawnedEnt : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6324
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint uid; 
-	public uint spawnPointIndex; 
-	public bool mobile; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint uid;
+	public uint spawnPointIndex;
+	public bool mobile;
 
 
 	public static void ResetToPool(GenericSpawner.SpawnedEnt instance) { }

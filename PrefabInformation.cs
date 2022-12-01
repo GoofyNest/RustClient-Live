@@ -1,11 +1,11 @@
-public class PrefabInformation : PrefabAttribute // TypeDefIndex: 11712
+public class PrefabInformation : PrefabAttribute // TypeDefIndex: 11719
 {
-	public ItemDefinition associatedItemDefinition; 
-	public Translate.Phrase title; 
-	public Translate.Phrase description; 
-	public Sprite sprite; 
-	public bool shownOnDeathScreen; 
-	public static List<BaseEntity> DeathScreenEntities; 
+	public ItemDefinition associatedItemDefinition;
+	public Translate.Phrase title;
+	public Translate.Phrase description;
+	public Sprite sprite;
+	public bool shownOnDeathScreen;
+	public static List<BaseEntity> DeathScreenEntities;
 
 
 	protected override Type GetIndexedType() { }

@@ -1,48 +1,48 @@
-public class MapView : FacepunchBehaviour // TypeDefIndex: 12716
+public class MapView : FacepunchBehaviour // TypeDefIndex: 12730
 {
-	public RawImage mapImage; 
-	public Image cameraPositon; 
-	public ScrollRectEx scrollRect; 
-	public GameObject monumentMarkerContainer; 
-	public Transform clusterMarkerContainer; 
-	public GameObjectRef monumentMarkerPrefab; 
-	public GameObject missionMarkerContainer; 
-	public GameObjectRef missionMarkerPrefab; 
-	public TeamMemberMapMarker[] teamPositions; 
-	public PointOfInterestMapMarker PointOfInterestMarker; 
-	public PointOfInterestMapMarker LeaderPointOfInterestMarker; 
-	public GameObject PlayerDeathMarker; 
-	public List<SleepingBagMapMarker> SleepingBagMarkers; 
-	public List<SleepingBagClusterMapMarker> SleepingBagClusters; 
-	[FormerlySerializedAsAttribute] 
-	public RawImage UndergroundLayer; 
-	public bool ShowGrid; 
-	public bool ShowPointOfInterestMarkers; 
-	public bool ShowDeathMarker; 
-	public bool ShowSleepingBags; 
-	public bool ShowLocalPlayer; 
-	public bool ShowTeamMembers; 
-	public bool ShowTrainLayer; 
-	public bool ShowMissions; 
-	[FormerlySerializedAsAttribute] 
-	public bool ShowUndergroundLayers; 
-	public bool MLRSMarkerMode; 
-	public RustImageButton LockButton; 
-	public RustImageButton OverworldButton; 
-	public RustImageButton TrainButton; 
-	public RustImageButton[] UnderwaterButtons; 
-	public static MapView ActiveView; 
-	[CompilerGeneratedAttribute] 
-	private bool <followingPlayer>k__BackingField; 
-	private Dictionary<MapMarker.ClusterType, List<MapMarker>> clusterDict; 
-	private List<GameObject> markersToRetire; 
-	private Dictionary<MapMarker, GameObject> markerLookup; 
-	private List<MonumentMarker> monumentMarkers; 
-	private List<MissionMapMarker> missionMarkers; 
-	private bool isShowingUndergroundLayers; 
-	private Nullable<MapLayer> undergroundLayerOverride; 
-	private MapLayer visibleLayer; 
-	internal static MapEntity lastActiveMap; 
+	public RawImage mapImage;
+	public Image cameraPositon;
+	public ScrollRectEx scrollRect;
+	public GameObject monumentMarkerContainer;
+	public Transform clusterMarkerContainer;
+	public GameObjectRef monumentMarkerPrefab;
+	public GameObject missionMarkerContainer;
+	public GameObjectRef missionMarkerPrefab;
+	public TeamMemberMapMarker[] teamPositions;
+	public PointOfInterestMapMarker PointOfInterestMarker;
+	public PointOfInterestMapMarker LeaderPointOfInterestMarker;
+	public GameObject PlayerDeathMarker;
+	public List<SleepingBagMapMarker> SleepingBagMarkers;
+	public List<SleepingBagClusterMapMarker> SleepingBagClusters;
+	[FormerlySerializedAsAttribute]
+	public RawImage UndergroundLayer;
+	public bool ShowGrid;
+	public bool ShowPointOfInterestMarkers;
+	public bool ShowDeathMarker;
+	public bool ShowSleepingBags;
+	public bool ShowLocalPlayer;
+	public bool ShowTeamMembers;
+	public bool ShowTrainLayer;
+	public bool ShowMissions;
+	[FormerlySerializedAsAttribute]
+	public bool ShowUndergroundLayers;
+	public bool MLRSMarkerMode;
+	public RustImageButton LockButton;
+	public RustImageButton OverworldButton;
+	public RustImageButton TrainButton;
+	public RustImageButton[] UnderwaterButtons;
+	public static MapView ActiveView;
+	[CompilerGeneratedAttribute]
+	private bool <followingPlayer>k__BackingField;
+	private Dictionary<MapMarker.ClusterType, List<MapMarker>> clusterDict;
+	private List<GameObject> markersToRetire;
+	private Dictionary<MapMarker, GameObject> markerLookup;
+	private List<MonumentMarker> monumentMarkers;
+	private List<MissionMapMarker> missionMarkers;
+	private bool isShowingUndergroundLayers;
+	private Nullable<MapLayer> undergroundLayerOverride;
+	private MapLayer visibleLayer;
+	internal static MapEntity lastActiveMap;
 
 	public bool followingPlayer { get; set; }
 	private bool IsOpen { get; }
@@ -50,10 +50,10 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 12716
 	private static BasePlayer LocalPlayerEntity { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_followingPlayer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_followingPlayer(bool value) { }
 
 	private bool get_IsOpen() { }
@@ -128,17 +128,17 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 12716
 
 }
 
-private struct MapView.SleepingBagCluster // TypeDefIndex: 12717
+private struct MapView.SleepingBagCluster // TypeDefIndex: 12731
 {
-	public List<RespawnInformation.SpawnOptions> clusterMarkers; 
-	public Vector3 centre; 
+	public List<RespawnInformation.SpawnOptions> clusterMarkers;
+	public Vector3 centre;
 
 }
 
-private struct MapView.MapMarkerCluster // TypeDefIndex: 12718
+private struct MapView.MapMarkerCluster // TypeDefIndex: 12732
 {
-	public List<MapMarker> markers; 
-	public Vector3 centre; 
+	public List<MapMarker> markers;
+	public Vector3 centre;
 
 }
 

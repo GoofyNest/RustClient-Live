@@ -1,8 +1,8 @@
-public class SetupAppNotification : UIDialog // TypeDefIndex: 12670
+public class SetupAppNotification : UIDialog // TypeDefIndex: 12684
 {
-	public RustInput titleInput; 
-	public RustInput bodyInput; 
-	private SmartAlarm _alarm; 
+	public RustInput titleInput;
+	public RustInput bodyInput;
+	private SmartAlarm _alarm;
 
 
 	public void Initialize(SmartAlarm alarm, string title, string body) { }

@@ -1,7 +1,7 @@
 public static class ChallengeResponse2 // TypeDefIndex: 1726
 {
-	private static byte[] magic; 
-	private static byte[] nullEncMagic; 
+	private static byte[] magic;
+	private static byte[] nullEncMagic;
 
 
 	private static byte[] Compute_LM(string password, byte[] challenge) { }

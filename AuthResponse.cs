@@ -1,6 +1,6 @@
 public enum AuthResponse // TypeDefIndex: 5144
 {
-	public int value__; 
+	public int value__;
 	public const AuthResponse OK = 0;
 	public const AuthResponse UserNotConnectedToSteam = 1;
 	public const AuthResponse NoLicenseOrExpired = 2;
@@ -14,7 +14,7 @@ public enum AuthResponse // TypeDefIndex: 5144
 
 }
 
-public enum AuthResponse // TypeDefIndex: 5690
+public enum AuthResponse // TypeDefIndex: 5692
 {
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40
@@ -26,7 +26,7 @@ private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024
 internal class <Module>
 
 public enum AuthResponse
-	public int value__; 
+	public int value__;
 	public const AuthResponse Invalid = 0;
 	public const AuthResponse TimedOut = 1;
 	public const AuthResponse OK = 2;

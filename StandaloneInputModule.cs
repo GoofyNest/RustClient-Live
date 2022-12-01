@@ -1,31 +1,31 @@
 public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5091
 {
-	private float m_PrevActionTime; 
-	private Vector2 m_LastMoveVector; 
-	private int m_ConsecutiveMoveCount; 
-	private Vector2 m_LastMousePosition; 
-	private Vector2 m_MousePosition; 
-	private GameObject m_CurrentFocusedGameObject; 
-	private PointerEventData m_InputPointerEvent; 
-	[SerializeField] 
-	private string m_HorizontalAxis; 
-	[SerializeField] 
-	private string m_VerticalAxis; 
-	[SerializeField] 
-	private string m_SubmitButton; 
-	[SerializeField] 
-	private string m_CancelButton; 
-	[SerializeField] 
-	private float m_InputActionsPerSecond; 
-	[SerializeField] 
-	private float m_RepeatDelay; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private bool m_ForceModuleActive; 
+	private float m_PrevActionTime;
+	private Vector2 m_LastMoveVector;
+	private int m_ConsecutiveMoveCount;
+	private Vector2 m_LastMousePosition;
+	private Vector2 m_MousePosition;
+	private GameObject m_CurrentFocusedGameObject;
+	private PointerEventData m_InputPointerEvent;
+	[SerializeField]
+	private string m_HorizontalAxis;
+	[SerializeField]
+	private string m_VerticalAxis;
+	[SerializeField]
+	private string m_SubmitButton;
+	[SerializeField]
+	private string m_CancelButton;
+	[SerializeField]
+	private float m_InputActionsPerSecond;
+	[SerializeField]
+	private float m_RepeatDelay;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private bool m_ForceModuleActive;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public StandaloneInputModule.InputMode inputMode { get; }
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public bool allowActivationOnMobileDevice { get; set; }
 	public bool forceModuleActive { get; set; }
 	public float inputActionsPerSecond { get; set; }
@@ -100,7 +100,7 @@ public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5091
 
 	protected void ProcessMouseEvent() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected virtual bool ForceAutoSelect() { }
 
 	protected void ProcessMouseEvent(int id) { }
@@ -115,7 +115,7 @@ public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5091
 
 public enum StandaloneInputModule.InputMode // TypeDefIndex: 5092
 {
-	public int value__; 
+	public int value__;
 	public const StandaloneInputModule.InputMode Mouse = 0;
 	public const StandaloneInputModule.InputMode Buttons = 1;
 

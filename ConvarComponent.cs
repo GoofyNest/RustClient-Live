@@ -1,8 +1,8 @@
-public class ConvarComponent : MonoBehaviour // TypeDefIndex: 13082
+public class ConvarComponent : MonoBehaviour // TypeDefIndex: 13097
 {
-	public bool runOnServer; 
-	public bool runOnClient; 
-	public List<ConvarComponent.ConvarEvent> List; 
+	public bool runOnServer;
+	public bool runOnClient;
+	public List<ConvarComponent.ConvarEvent> List;
 
 
 	protected void OnEnable() { }
@@ -15,12 +15,12 @@ public class ConvarComponent : MonoBehaviour // TypeDefIndex: 13082
 
 }
 
-public class ConvarComponent.ConvarEvent // TypeDefIndex: 13083
+public class ConvarComponent.ConvarEvent // TypeDefIndex: 13098
 {
-	public string convar; 
-	public string on; 
-	public MonoBehaviour component; 
-	internal ConsoleSystem.Command cmd; 
+	public string convar;
+	public string on;
+	public MonoBehaviour component;
+	internal ConsoleSystem.Command cmd;
 
 
 	public void OnEnable() { }

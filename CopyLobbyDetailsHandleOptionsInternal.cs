@@ -1,8 +1,8 @@
-internal struct CopyLobbyDetailsHandleOptionsInternal : ISettable<CopyLobbyDetailsHandleOptions>, IDisposable // TypeDefIndex: 9088
+internal struct CopyLobbyDetailsHandleOptionsInternal : ISettable<CopyLobbyDetailsHandleOptions>, IDisposable // TypeDefIndex: 9090
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LobbyId; 
-	private IntPtr m_LocalUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LobbyId;
+	private IntPtr m_LocalUserId;
 
 	public Utf8String LobbyId { set; }
 	public ProductUserId LocalUserId { set; }

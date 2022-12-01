@@ -1,21 +1,21 @@
-public class Ragdoll : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10955
+public class Ragdoll : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10961
 {
-	public Transform eyeTransform; 
-	public Transform centerBone; 
-	public Rigidbody primaryBody; 
-	public PhysicMaterial physicMaterial; 
-	public SpringJoint corpseJoint; 
-	public Skeleton skeleton; 
-	public Model model; 
-	public List<Joint> joints; 
-	public List<CharacterJoint> characterJoints; 
-	public List<ConfigurableJoint> configurableJoints; 
-	public List<Rigidbody> rigidbodies; 
-	public GameObject GibEffect; 
-	public Rigidbody pinTo; 
-	private LODGroup _lodGroup; 
-	private ArticulatedOccludee occludee; 
-	protected bool IsSetup; 
+	public Transform eyeTransform;
+	public Transform centerBone;
+	public Rigidbody primaryBody;
+	public PhysicMaterial physicMaterial;
+	public SpringJoint corpseJoint;
+	public Skeleton skeleton;
+	public Model model;
+	public List<Joint> joints;
+	public List<CharacterJoint> characterJoints;
+	public List<ConfigurableJoint> configurableJoints;
+	public List<Rigidbody> rigidbodies;
+	public GameObject GibEffect;
+	public Rigidbody pinTo;
+	private LODGroup _lodGroup;
+	private ArticulatedOccludee occludee;
+	protected bool IsSetup;
 
 	public LODGroup lodGroup { get; }
 

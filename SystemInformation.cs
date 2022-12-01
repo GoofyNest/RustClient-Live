@@ -1,11 +1,11 @@
-public struct SystemInformation // TypeDefIndex: 6212
+public struct SystemInformation // TypeDefIndex: 6214
 {
-	public SystemInformation.Hardware hardware; 
-	public SystemInformation.Environment environment; 
+	public SystemInformation.Hardware hardware;
+	public SystemInformation.Environment environment;
 
 }
 
-public struct SystemInformation.Hardware // TypeDefIndex: 6213
+public struct SystemInformation.Hardware // TypeDefIndex: 6215
 {
 	public string deviceName { get; }
 	public string operatingSystem { get; }
@@ -56,7 +56,7 @@ public struct SystemInformation.Hardware // TypeDefIndex: 6213
 
 }
 
-public struct SystemInformation.Environment // TypeDefIndex: 6214
+public struct SystemInformation.Environment // TypeDefIndex: 6216
 {
 	public string unityVersion { get; }
 	public string version { get; }

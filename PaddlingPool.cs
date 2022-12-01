@@ -1,16 +1,16 @@
-public class PaddlingPool : LiquidContainer, ISplashable // TypeDefIndex: 10540
+public class PaddlingPool : LiquidContainer, ISplashable // TypeDefIndex: 10544
 {
 	public const BaseEntity.Flags FilledUp = 1024;
-	public Transform poolWaterVolume; 
-	public GameObject poolWaterVisual; 
-	public float minimumWaterHeight; 
-	public float maximumWaterHeight; 
-	public WaterVolume waterVolume; 
-	public bool alignWaterUp; 
-	public GameObjectRef destroyedWithWaterEffect; 
-	public Transform destroyedWithWaterEffectPos; 
-	public Collider requireLookAt; 
-	private float lastFillAmount; 
+	public Transform poolWaterVolume;
+	public GameObject poolWaterVisual;
+	public float minimumWaterHeight;
+	public float maximumWaterHeight;
+	public WaterVolume waterVolume;
+	public bool alignWaterUp;
+	public GameObjectRef destroyedWithWaterEffect;
+	public Transform destroyedWithWaterEffectPos;
+	public Collider requireLookAt;
+	private float lastFillAmount;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

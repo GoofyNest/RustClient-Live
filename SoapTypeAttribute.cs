@@ -1,12 +1,12 @@
 public sealed class SoapTypeAttribute : SoapAttribute // TypeDefIndex: 1214
 {
-	private bool _useAttribute; 
-	private string _xmlElementName; 
-	private string _xmlNamespace; 
-	private string _xmlTypeName; 
-	private string _xmlTypeNamespace; 
-	private bool _isType; 
-	private bool _isElement; 
+	private bool _useAttribute;
+	private string _xmlElementName;
+	private string _xmlNamespace;
+	private string _xmlTypeName;
+	private string _xmlTypeNamespace;
+	private bool _isType;
+	private bool _isElement;
 
 	public override bool UseAttribute { get; }
 	public string XmlElementName { get; }

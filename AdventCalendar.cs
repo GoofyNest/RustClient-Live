@@ -1,16 +1,16 @@
-public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 10018
+public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 10020
 {
-	private Option __menuOption_Menu_OpenCalendar; 
-	public int startMonth; 
-	public int startDay; 
-	public AdventCalendar.DayReward[] days; 
-	public GameObject[] crosses; 
-	public static List<AdventCalendar> all; 
-	public static Dictionary<ulong, List<int>> playerRewardHistory; 
-	public static readonly Translate.Phrase CheckLater; 
-	public static readonly Translate.Phrase EventOver; 
-	public GameObjectRef giftEffect; 
-	public GameObjectRef boxCloseEffect; 
+	private Option __menuOption_Menu_OpenCalendar;
+	public int startMonth;
+	public int startDay;
+	public AdventCalendar.DayReward[] days;
+	public GameObject[] crosses;
+	public static List<AdventCalendar> all;
+	public static Dictionary<ulong, List<int>> playerRewardHistory;
+	public static readonly Translate.Phrase CheckLater;
+	public static readonly Translate.Phrase EventOver;
+	public GameObjectRef giftEffect;
+	public GameObjectRef boxCloseEffect;
 
 	public override bool HasMenuOptions { get; }
 
@@ -21,10 +21,10 @@ public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 10018
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_OpenCalendar(BasePlayer player) { }
 
 	public bool Menu_OpenCalendar_ShowIf(BasePlayer player) { }
@@ -39,9 +39,9 @@ public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 10018
 
 }
 
-public class AdventCalendar.DayReward // TypeDefIndex: 10019
+public class AdventCalendar.DayReward // TypeDefIndex: 10021
 {
-	public ItemAmount[] rewards; 
+	public ItemAmount[] rewards;
 
 
 	public void .ctor() { }

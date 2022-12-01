@@ -1,20 +1,20 @@
 public class MethodResponse : IMethodReturnMessage, IMethodMessage, IMessage, ISerializable, IInternalMessage // TypeDefIndex: 1250
 {
-	private string _methodName; 
-	private string _uri; 
-	private string _typeName; 
-	private MethodBase _methodBase; 
-	private object _returnValue; 
-	private Exception _exception; 
-	private Type[] _methodSignature; 
-	private ArgInfo _inArgInfo; 
-	private object[] _args; 
-	private object[] _outArgs; 
-	private IMethodCallMessage _callMsg; 
-	private LogicalCallContext _callContext; 
-	private Identity _targetIdentity; 
-	protected IDictionary ExternalProperties; 
-	protected IDictionary InternalProperties; 
+	private string _methodName;
+	private string _uri;
+	private string _typeName;
+	private MethodBase _methodBase;
+	private object _returnValue;
+	private Exception _exception;
+	private Type[] _methodSignature;
+	private ArgInfo _inArgInfo;
+	private object[] _args;
+	private object[] _outArgs;
+	private IMethodCallMessage _callMsg;
+	private LogicalCallContext _callContext;
+	private Identity _targetIdentity;
+	protected IDictionary ExternalProperties;
+	protected IDictionary InternalProperties;
 
 	public int ArgCount { get; }
 	public object[] Args { get; }

@@ -1,10 +1,10 @@
 public sealed class PublicKey // TypeDefIndex: 2811
 {
-	private AsymmetricAlgorithm _key; 
-	private AsnEncodedData _keyValue; 
-	private AsnEncodedData _params; 
-	private Oid _oid; 
-	private static byte[] Empty; 
+	private AsymmetricAlgorithm _key;
+	private AsnEncodedData _keyValue;
+	private AsnEncodedData _params;
+	private Oid _oid;
+	private static byte[] Empty;
 
 	public AsnEncodedData EncodedKeyValue { get; }
 	public AsnEncodedData EncodedParameters { get; }

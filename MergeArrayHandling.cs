@@ -1,6 +1,6 @@
-public enum MergeArrayHandling // TypeDefIndex: 6049
+public enum MergeArrayHandling // TypeDefIndex: 6051
 {
-	public int value__; 
+	public int value__;
 	public const MergeArrayHandling Concat = 0;
 	public const MergeArrayHandling Union = 1;
 	public const MergeArrayHandling Replace = 2;

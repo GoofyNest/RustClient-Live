@@ -1,12 +1,12 @@
-public static class TextureEx // TypeDefIndex: 5612
+public static class TextureEx // TypeDefIndex: 5614
 {
-	private static Color32[] buffer; 
+	private static Color32[] buffer;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void Clear(Texture2D tex, Color32 color) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int GetSizeInBytes(Texture texture) { }
 
 	public static int GetBitsPerPixel(TextureFormat format) { }

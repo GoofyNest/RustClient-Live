@@ -1,17 +1,17 @@
-public abstract class SysExEvent : MidiEvent // TypeDefIndex: 7533
+public abstract class SysExEvent : MidiEvent // TypeDefIndex: 7535
 {
-	[CompilerGeneratedAttribute] 
-	private byte[] <Data>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private byte[] <Data>k__BackingField;
 
 	public byte[] Data { get; set; }
 
 
 	protected void .ctor(MidiEventType eventType) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte[] get_Data() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Data(byte[] value) { }
 
 	internal sealed override void Read(MidiReader reader, ReadingSettings settings, int size) { }

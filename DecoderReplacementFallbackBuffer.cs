@@ -1,8 +1,8 @@
 public sealed class DecoderReplacementFallbackBuffer : DecoderFallbackBuffer // TypeDefIndex: 443
 {
-	private string strDefault; 
-	private int fallbackCount; 
-	private int fallbackIndex; 
+	private string strDefault;
+	private int fallbackCount;
+	private int fallbackIndex;
 
 	public override int Remaining { get; }
 

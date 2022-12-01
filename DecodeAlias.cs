@@ -1,15 +1,15 @@
-public class DecodeAlias : Attribute // TypeDefIndex: 13366
+public class DecodeAlias : Attribute // TypeDefIndex: 13381
 {
-	[CompilerGeneratedAttribute] 
-	private string[] <Names>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string[] <Names>k__BackingField;
 
 	public string[] Names { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string[] get_Names() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Names(string[] value) { }
 
 	public void .ctor(string[] names) { }

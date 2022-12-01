@@ -1,11 +1,11 @@
 public abstract class ConstructorInfo : MethodBase, _ConstructorInfo // TypeDefIndex: 559
 {
-	[ComVisibleAttribute] 
-	public static readonly string ConstructorName; 
-	[ComVisibleAttribute] 
-	public static readonly string TypeConstructorName; 
+	[ComVisibleAttribute]
+	public static readonly string ConstructorName;
+	[ComVisibleAttribute]
+	public static readonly string TypeConstructorName;
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override MemberTypes MemberType { get; }
 
 
@@ -13,8 +13,8 @@ public abstract class ConstructorInfo : MethodBase, _ConstructorInfo // TypeDefI
 
 	public override MemberTypes get_MemberType() { }
 
-	[DebuggerHiddenAttribute] 
-	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute]
+	[DebuggerStepThroughAttribute]
 	public object Invoke(object[] parameters) { }
 
 	public abstract object Invoke(BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture);

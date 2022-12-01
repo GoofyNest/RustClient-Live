@@ -1,6 +1,6 @@
 public enum RegistryHive // TypeDefIndex: 102
 {
-	public int value__; 
+	public int value__;
 	public const RegistryHive ClassesRoot = -2147483648;
 	public const RegistryHive CurrentConfig = -2147483643;
 	public const RegistryHive CurrentUser = -2147483647;

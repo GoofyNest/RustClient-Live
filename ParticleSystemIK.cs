@@ -1,7 +1,7 @@
-public class ParticleSystemIK : MonoBehaviour, IClientComponent // TypeDefIndex: 13107
+public class ParticleSystemIK : MonoBehaviour, IClientComponent // TypeDefIndex: 13122
 {
-	private ParticleSystem system; 
-	private ParticleSystemIK.ParticleSystemIKJob job; 
+	private ParticleSystem system;
+	private ParticleSystemIK.ParticleSystemIKJob job;
 
 
 	private void Awake() { }
@@ -14,14 +14,14 @@ public class ParticleSystemIK : MonoBehaviour, IClientComponent // TypeDefIndex:
 
 }
 
-public struct ParticleSystemIK.ParticleSystemIKJob : IJobParticleSystem // TypeDefIndex: 13108
+public struct ParticleSystemIK.ParticleSystemIKJob : IJobParticleSystem // TypeDefIndex: 13123
 {
-	[ReadOnlyAttribute] 
-	public Vector3 position; 
-	[ReadOnlyAttribute] 
-	public Vector3 forward; 
-	[ReadOnlyAttribute] 
-	public float deltaTime; 
+	[ReadOnlyAttribute]
+	public Vector3 position;
+	[ReadOnlyAttribute]
+	public Vector3 forward;
+	[ReadOnlyAttribute]
+	public float deltaTime;
 
 
 	public void Execute(ParticleSystemJobData particles) { }

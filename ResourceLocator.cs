@@ -1,7 +1,7 @@
 internal struct ResourceLocator // TypeDefIndex: 494
 {
-	internal object _value; 
-	internal int _dataPos; 
+	internal object _value;
+	internal int _dataPos;
 
 	internal int DataPosition { get; }
 	internal object Value { get; set; }

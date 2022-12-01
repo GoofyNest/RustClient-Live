@@ -1,7 +1,7 @@
-public class Grayscale : ImageEffectBase // TypeDefIndex: 8208
+public class Grayscale : ImageEffectBase // TypeDefIndex: 8210
 {
-	public Texture textureRamp; 
-	public float rampOffset; 
+	public Texture textureRamp;
+	public float rampOffset;
 
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }

@@ -1,10 +1,10 @@
 internal abstract class IOAsyncResult : IAsyncResult // TypeDefIndex: 2594
 {
-	private AsyncCallback async_callback; 
-	private object async_state; 
-	private ManualResetEvent wait_handle; 
-	private bool completed_synchronously; 
-	private bool completed; 
+	private AsyncCallback async_callback;
+	private object async_state;
+	private ManualResetEvent wait_handle;
+	private bool completed_synchronously;
+	private bool completed;
 
 	public AsyncCallback AsyncCallback { get; }
 	public object AsyncState { get; }

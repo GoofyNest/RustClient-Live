@@ -1,12 +1,12 @@
-public class PostEffectsBase : MonoBehaviour // TypeDefIndex: 8214
+public class PostEffectsBase : MonoBehaviour // TypeDefIndex: 8216
 {
-	protected bool supportImageEffects; 
-	protected bool supportHDRTextures; 
-	protected bool supportDepthTextures; 
-	protected bool supportDX11; 
-	private bool checkedSystemInfo; 
-	protected bool isSupported; 
-	private Camera camera; 
+	protected bool supportImageEffects;
+	protected bool supportHDRTextures;
+	protected bool supportDepthTextures;
+	protected bool supportDX11;
+	private bool checkedSystemInfo;
+	protected bool isSupported;
+	private Camera camera;
 
 	public Camera Camera { get; }
 

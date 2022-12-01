@@ -1,9 +1,9 @@
-internal class Fisheye : PostEffectsBase // TypeDefIndex: 8206
+internal class Fisheye : PostEffectsBase // TypeDefIndex: 8208
 {
-	public float strengthX; 
-	public float strengthY; 
-	public Shader fishEyeShader; 
-	private Material fisheyeMaterial; 
+	public float strengthX;
+	public float strengthY;
+	public Shader fishEyeShader;
+	private Material fisheyeMaterial;
 
 
 	public override bool CheckResources() { }

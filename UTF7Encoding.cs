@@ -1,10 +1,10 @@
 public class UTF7Encoding : Encoding // TypeDefIndex: 469
 {
-	private byte[] base64Bytes; 
-	private sbyte[] base64Values; 
-	private bool[] directEncode; 
-	[OptionalFieldAttribute] 
-	private bool m_allowOptionals; 
+	private byte[] base64Bytes;
+	private sbyte[] base64Values;
+	private bool[] directEncode;
+	[OptionalFieldAttribute]
+	private bool m_allowOptionals;
 
 
 	public void .ctor() { }
@@ -15,49 +15,49 @@ public class UTF7Encoding : Encoding // TypeDefIndex: 469
 
 	internal override void SetDefaultFallbacks() { }
 
-	[OnDeserializingAttribute] 
+	[OnDeserializingAttribute]
 	private void OnDeserializing(StreamingContext ctx) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext ctx) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool Equals(object value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetHashCode() { }
 
 	public override int GetByteCount(char[] chars, int index, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetByteCount(string s) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetByteCount(char* chars, int count) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetBytes(string s, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[CLSCompliantAttribute] 
-	[ComVisibleAttribute] 
+	[CLSCompliantAttribute]
+	[ComVisibleAttribute]
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }
 
-	[ComVisibleAttribute] 
-	[CLSCompliantAttribute] 
+	[ComVisibleAttribute]
+	[CLSCompliantAttribute]
 	public override int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override string GetString(byte[] bytes, int index, int count) { }
 
 	internal override int GetByteCount(char* chars, int count, EncoderNLS baseEncoder) { }
@@ -80,9 +80,9 @@ public class UTF7Encoding : Encoding // TypeDefIndex: 469
 
 private class UTF7Encoding.Decoder : DecoderNLS, ISerializable // TypeDefIndex: 470
 {
-	internal int bits; 
-	internal int bitCount; 
-	internal bool firstByte; 
+	internal int bits;
+	internal int bitCount;
+	internal bool firstByte;
 
 	internal override bool HasState { get; }
 
@@ -101,8 +101,8 @@ private class UTF7Encoding.Decoder : DecoderNLS, ISerializable // TypeDefIndex: 
 
 private class UTF7Encoding.Encoder : EncoderNLS, ISerializable // TypeDefIndex: 471
 {
-	internal int bits; 
-	internal int bitCount; 
+	internal int bits;
+	internal int bitCount;
 
 	internal override bool HasState { get; }
 
@@ -138,9 +138,9 @@ internal sealed class UTF7Encoding.DecoderUTF7Fallback : DecoderFallback // Type
 
 internal sealed class UTF7Encoding.DecoderUTF7FallbackBuffer : DecoderFallbackBuffer // TypeDefIndex: 473
 {
-	private char cFallback; 
-	private int iCount; 
-	private int iSize; 
+	private char cFallback;
+	private int iCount;
+	private int iSize;
 
 	public override int Remaining { get; }
 

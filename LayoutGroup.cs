@@ -1,15 +1,15 @@
 public abstract class LayoutGroup : UIBehaviour, ILayoutElement, ILayoutGroup, ILayoutController // TypeDefIndex: 4983
 {
-	[SerializeField] 
-	protected RectOffset m_Padding; 
-	[SerializeField] 
-	protected TextAnchor m_ChildAlignment; 
-	private RectTransform m_Rect; 
-	protected DrivenRectTransformTracker m_Tracker; 
-	private Vector2 m_TotalMinSize; 
-	private Vector2 m_TotalPreferredSize; 
-	private Vector2 m_TotalFlexibleSize; 
-	private List<RectTransform> m_RectChildren; 
+	[SerializeField]
+	protected RectOffset m_Padding;
+	[SerializeField]
+	protected TextAnchor m_ChildAlignment;
+	private RectTransform m_Rect;
+	protected DrivenRectTransformTracker m_Tracker;
+	private Vector2 m_TotalMinSize;
+	private Vector2 m_TotalPreferredSize;
+	private Vector2 m_TotalFlexibleSize;
+	private List<RectTransform> m_RectChildren;
 
 	public RectOffset padding { get; set; }
 	public TextAnchor childAlignment { get; set; }
@@ -116,36 +116,36 @@ public abstract class LayoutGroup : UIBehaviour, ILayoutElement, ILayoutGroup, I
 
 	protected void SetDirty() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator DelayedSetDirty(RectTransform rectTransform) { }
 
 }
 
 private sealed class LayoutGroup.<DelayedSetDirty>d__56 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4984
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public RectTransform rectTransform; 
+	private int <>1__state;
+	private object <>2__current;
+	public RectTransform rectTransform;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

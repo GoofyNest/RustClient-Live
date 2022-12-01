@@ -1,25 +1,25 @@
 public struct Guid : IFormattable, IComparable, IComparable<Guid>, IEquatable<Guid> // TypeDefIndex: 241
 {
-	public static readonly Guid Empty; 
-	private int _a; 
-	private short _b; 
-	private short _c; 
-	private byte _d; 
-	private byte _e; 
-	private byte _f; 
-	private byte _g; 
-	private byte _h; 
-	private byte _i; 
-	private byte _j; 
-	private byte _k; 
-	private static object _rngAccess; 
-	private static RandomNumberGenerator _rng; 
-	private static RandomNumberGenerator _fastRng; 
+	public static readonly Guid Empty;
+	private int _a;
+	private short _b;
+	private short _c;
+	private byte _d;
+	private byte _e;
+	private byte _f;
+	private byte _g;
+	private byte _h;
+	private byte _i;
+	private byte _j;
+	private byte _k;
+	private static object _rngAccess;
+	private static RandomNumberGenerator _rng;
+	private static RandomNumberGenerator _fastRng;
 
 
 	public void .ctor(byte[] b) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(uint a, ushort b, ushort c, byte d, byte e, byte f, byte g, byte h, byte i, byte j, byte k) { }
 
 	public void .ctor(int a, short b, short c, byte d, byte e, byte f, byte g, byte h, byte i, byte j, byte k) { }
@@ -94,7 +94,7 @@ public struct Guid : IFormattable, IComparable, IComparable<Guid>, IEquatable<Gu
 
 private enum Guid.GuidStyles // TypeDefIndex: 242
 {
-	public int value__; 
+	public int value__;
 	public const Guid.GuidStyles None = 0;
 	public const Guid.GuidStyles AllowParenthesis = 1;
 	public const Guid.GuidStyles AllowBraces = 2;
@@ -115,7 +115,7 @@ private enum Guid.GuidStyles // TypeDefIndex: 242
 
 private enum Guid.GuidParseThrowStyle // TypeDefIndex: 243
 {
-	public int value__; 
+	public int value__;
 	public const Guid.GuidParseThrowStyle None = 0;
 	public const Guid.GuidParseThrowStyle All = 1;
 	public const Guid.GuidParseThrowStyle AllButOverflow = 2;
@@ -124,7 +124,7 @@ private enum Guid.GuidParseThrowStyle // TypeDefIndex: 243
 
 private enum Guid.ParseFailureKind // TypeDefIndex: 244
 {
-	public int value__; 
+	public int value__;
 	public const Guid.ParseFailureKind None = 0;
 	public const Guid.ParseFailureKind ArgumentNull = 1;
 	public const Guid.ParseFailureKind Format = 2;
@@ -136,13 +136,13 @@ private enum Guid.ParseFailureKind // TypeDefIndex: 244
 
 private struct Guid.GuidResult // TypeDefIndex: 245
 {
-	internal Guid parsedGuid; 
-	internal Guid.GuidParseThrowStyle throwStyle; 
-	internal Guid.ParseFailureKind m_failure; 
-	internal string m_failureMessageID; 
-	internal object m_failureMessageFormatArgument; 
-	internal string m_failureArgumentName; 
-	internal Exception m_innerException; 
+	internal Guid parsedGuid;
+	internal Guid.GuidParseThrowStyle throwStyle;
+	internal Guid.ParseFailureKind m_failure;
+	internal string m_failureMessageID;
+	internal object m_failureMessageFormatArgument;
+	internal string m_failureArgumentName;
+	internal Exception m_innerException;
 
 
 	internal void Init(Guid.GuidParseThrowStyle canThrow) { }

@@ -1,6 +1,6 @@
-public class DamageTypeList // TypeDefIndex: 13829
+public class DamageTypeList // TypeDefIndex: 13845
 {
-	public float[] types; 
+	public float[] types;
 
 
 	public void Set(DamageType index, float amount) { }

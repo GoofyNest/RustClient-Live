@@ -1,14 +1,14 @@
 internal class LazyAsyncResult : IAsyncResult // TypeDefIndex: 2919
 {
-	[ThreadStaticAttribute] 
-	private static LazyAsyncResult.ThreadContext t_ThreadContext; 
-	private object m_AsyncObject; 
-	private object m_AsyncState; 
-	private AsyncCallback m_AsyncCallback; 
-	private object m_Result; 
-	private int m_IntCompleted; 
-	private bool m_UserEvent; 
-	private object m_Event; 
+	[ThreadStaticAttribute]
+	private static LazyAsyncResult.ThreadContext t_ThreadContext;
+	private object m_AsyncObject;
+	private object m_AsyncState;
+	private AsyncCallback m_AsyncCallback;
+	private object m_Result;
+	private int m_IntCompleted;
+	private bool m_UserEvent;
+	private object m_Event;
 
 	private static LazyAsyncResult.ThreadContext CurrentThreadContext { get; }
 	internal object AsyncObject { get; }
@@ -55,7 +55,7 @@ internal class LazyAsyncResult : IAsyncResult // TypeDefIndex: 2919
 
 private class LazyAsyncResult.ThreadContext // TypeDefIndex: 2920
 {
-	internal int m_NestedIOCount; 
+	internal int m_NestedIOCount;
 
 
 	public void .ctor() { }

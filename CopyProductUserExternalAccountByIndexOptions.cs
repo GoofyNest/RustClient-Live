@@ -1,24 +1,24 @@
-public struct CopyProductUserExternalAccountByIndexOptions // TypeDefIndex: 9561
+public struct CopyProductUserExternalAccountByIndexOptions // TypeDefIndex: 9563
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <ExternalAccountInfoIndex>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <ExternalAccountInfoIndex>k__BackingField;
 
 	public ProductUserId TargetUserId { get; set; }
 	public uint ExternalAccountInfoIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_ExternalAccountInfoIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ExternalAccountInfoIndex(uint value) { }
 
 }

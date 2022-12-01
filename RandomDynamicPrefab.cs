@@ -1,12 +1,12 @@
-public class RandomDynamicPrefab : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 12105
+public class RandomDynamicPrefab : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 12112
 {
-	public uint Seed; 
-	public float Distance; 
-	public float Probability; 
-	public string ResourceFolder; 
-	private Prefab prefab; 
-	private GameObject instance; 
-	private LODCell cell; 
+	public uint Seed;
+	public float Distance;
+	public float Probability;
+	public string ResourceFolder;
+	private Prefab prefab;
+	private GameObject instance;
+	private LODCell cell;
 
 
 	protected void OnEnable() { }

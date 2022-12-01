@@ -1,47 +1,47 @@
-public class PhoneDialler : UIDialog // TypeDefIndex: 12657
+public class PhoneDialler : UIDialog // TypeDefIndex: 12671
 {
-	public GameObject DialingRoot; 
-	public GameObject CallInProcessRoot; 
-	public GameObject IncomingCallRoot; 
-	public RustText ThisPhoneNumber; 
-	public RustInput PhoneNameInput; 
-	public RustText textDisplay; 
-	public RustText CallTimeText; 
-	public RustButton DefaultDialViewButton; 
-	public RustText[] IncomingCallNumber; 
-	public GameObject NumberDialRoot; 
-	public GameObject PromptVoicemailRoot; 
-	public RustButton ContactsButton; 
-	public RustText FailText; 
-	public NeedsCursor CursorController; 
-	public NeedsKeyboard KeyboardController; 
-	public Translate.Phrase WrongNumberPhrase; 
-	public Translate.Phrase NetworkBusy; 
-	public Translate.Phrase Engaged; 
-	public GameObjectRef DirectoryEntryPrefab; 
-	public Transform DirectoryRoot; 
-	public GameObject NoDirectoryRoot; 
-	public RustButton DirectoryPageUp; 
-	public RustButton DirectoryPageDown; 
-	public Transform ContactsRoot; 
-	public RustInput ContactsNameInput; 
-	public RustInput ContactsNumberInput; 
-	public GameObject NoContactsRoot; 
-	public RustButton AddContactButton; 
-	public SoundDefinition DialToneSfx; 
-	public Button[] NumberButtons; 
-	public Translate.Phrase AnsweringMachine; 
-	public VoicemailDialog Voicemail; 
-	public GameObject VoicemailRoot; 
-	private PhoneController attachedPhone; 
-	private Telephone.CallState lastState; 
-	private List<GameObject> spawnedDirectoryEntries; 
-	private int directoryPage; 
-	private TimeSince lastKeyDelete; 
-	private Sound dialTone; 
-	private string textEntered; 
-	private int lastEnteredFrame; 
-	private bool inputtingNumber; 
+	public GameObject DialingRoot;
+	public GameObject CallInProcessRoot;
+	public GameObject IncomingCallRoot;
+	public RustText ThisPhoneNumber;
+	public RustInput PhoneNameInput;
+	public RustText textDisplay;
+	public RustText CallTimeText;
+	public RustButton DefaultDialViewButton;
+	public RustText[] IncomingCallNumber;
+	public GameObject NumberDialRoot;
+	public GameObject PromptVoicemailRoot;
+	public RustButton ContactsButton;
+	public RustText FailText;
+	public NeedsCursor CursorController;
+	public NeedsKeyboard KeyboardController;
+	public Translate.Phrase WrongNumberPhrase;
+	public Translate.Phrase NetworkBusy;
+	public Translate.Phrase Engaged;
+	public GameObjectRef DirectoryEntryPrefab;
+	public Transform DirectoryRoot;
+	public GameObject NoDirectoryRoot;
+	public RustButton DirectoryPageUp;
+	public RustButton DirectoryPageDown;
+	public Transform ContactsRoot;
+	public RustInput ContactsNameInput;
+	public RustInput ContactsNumberInput;
+	public GameObject NoContactsRoot;
+	public RustButton AddContactButton;
+	public SoundDefinition DialToneSfx;
+	public Button[] NumberButtons;
+	public Translate.Phrase AnsweringMachine;
+	public VoicemailDialog Voicemail;
+	public GameObject VoicemailRoot;
+	private PhoneController attachedPhone;
+	private Telephone.CallState lastState;
+	private List<GameObject> spawnedDirectoryEntries;
+	private int directoryPage;
+	private TimeSince lastKeyDelete;
+	private Sound dialTone;
+	private string textEntered;
+	private int lastEnteredFrame;
+	private bool inputtingNumber;
 
 	public bool IsContactsActive { get; }
 	public float NormalisedAnsweringMessagePlayTime { get; }
@@ -98,7 +98,7 @@ public class PhoneDialler : UIDialog // TypeDefIndex: 12657
 
 	private void UpdateIncomingCallText(PhoneController c) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator PlayInputBeepsForPhoneNumber(string number) { }
 
 	public void OnReceivedAnsweringMessage(float length, bool canLeaveVoicemail) { }
@@ -125,33 +125,33 @@ public class PhoneDialler : UIDialog // TypeDefIndex: 12657
 
 }
 
-private sealed class PhoneDialler.<PlayInputBeepsForPhoneNumber>d__68 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12658
+private sealed class PhoneDialler.<PlayInputBeepsForPhoneNumber>d__68 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12672
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public PhoneDialler <>4__this; 
-	public string number; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public PhoneDialler <>4__this;
+	public string number;
+	private int <i>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

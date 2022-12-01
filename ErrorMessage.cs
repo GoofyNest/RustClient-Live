@@ -1,6 +1,6 @@
 internal class ErrorMessage : IMethodCallMessage, IMethodMessage, IMessage // TypeDefIndex: 1236
 {
-	private string _uri; 
+	private string _uri;
 
 	public int ArgCount { get; }
 	public object[] Args { get; }

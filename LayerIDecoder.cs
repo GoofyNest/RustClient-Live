@@ -1,15 +1,15 @@
-public class LayerIDecoder : IFrameDecoder // TypeDefIndex: 7414
+public class LayerIDecoder : IFrameDecoder // TypeDefIndex: 7416
 {
-	protected ABuffer Buffer; 
-	protected readonly Crc16 CRC; 
-	protected SynthesisFilter Filter1; 
-	protected SynthesisFilter Filter2; 
-	protected Header Header; 
-	protected int Mode; 
-	protected int NuSubbands; 
-	protected Bitstream Stream; 
-	protected ASubband[] Subbands; 
-	protected int WhichChannels; 
+	protected ABuffer Buffer;
+	protected readonly Crc16 CRC;
+	protected SynthesisFilter Filter1;
+	protected SynthesisFilter Filter2;
+	protected Header Header;
+	protected int Mode;
+	protected int NuSubbands;
+	protected Bitstream Stream;
+	protected ASubband[] Subbands;
+	protected int WhichChannels;
 
 
 	internal void .ctor() { }

@@ -1,6 +1,6 @@
-public static class Controls // TypeDefIndex: 13819
+public static class Controls // TypeDefIndex: 13835
 {
-	public static float labelWidth; 
+	public static float labelWidth;
 
 
 	public static float FloatSlider(string strLabel, float value, float low, float high, string format = "0.00") { }

@@ -1,13 +1,13 @@
-public class SSS : ConsoleSystem // TypeDefIndex: 13750
+public class SSS : ConsoleSystem // TypeDefIndex: 13766
 {
-	[ClientVar] 
-	public static bool enabled; 
-	[ClientVar] 
-	public static int quality; 
-	[ClientVar] 
-	public static bool halfres; 
-	[ClientVar] 
-	public static float scale; 
+	[ClientVar]
+	public static bool enabled;
+	[ClientVar]
+	public static int quality;
+	[ClientVar]
+	public static bool halfres;
+	[ClientVar]
+	public static float scale;
 
 
 	public void .ctor() { }

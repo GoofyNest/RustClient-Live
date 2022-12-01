@@ -1,31 +1,31 @@
 public sealed class Cookie // TypeDefIndex: 2934
 {
-	internal static readonly char[] PortSplitDelimiters; 
-	internal static readonly char[] Reserved2Name; 
-	internal static readonly char[] Reserved2Value; 
-	private static Comparer staticComparer; 
-	private string m_comment; 
-	private Uri m_commentUri; 
-	private CookieVariant m_cookieVariant; 
-	private bool m_discard; 
-	private string m_domain; 
-	private bool m_domain_implicit; 
-	private DateTime m_expires; 
-	private string m_name; 
-	private string m_path; 
-	private bool m_path_implicit; 
-	private string m_port; 
-	private bool m_port_implicit; 
-	private int[] m_port_list; 
-	private bool m_secure; 
-	[OptionalFieldAttribute] 
-	private bool m_httpOnly; 
-	private DateTime m_timeStamp; 
-	private string m_value; 
-	private int m_version; 
-	private string m_domainKey; 
-	internal bool IsQuotedVersion; 
-	internal bool IsQuotedDomain; 
+	internal static readonly char[] PortSplitDelimiters;
+	internal static readonly char[] Reserved2Name;
+	internal static readonly char[] Reserved2Value;
+	private static Comparer staticComparer;
+	private string m_comment;
+	private Uri m_commentUri;
+	private CookieVariant m_cookieVariant;
+	private bool m_discard;
+	private string m_domain;
+	private bool m_domain_implicit;
+	private DateTime m_expires;
+	private string m_name;
+	private string m_path;
+	private bool m_path_implicit;
+	private string m_port;
+	private bool m_port_implicit;
+	private int[] m_port_list;
+	private bool m_secure;
+	[OptionalFieldAttribute]
+	private bool m_httpOnly;
+	private DateTime m_timeStamp;
+	private string m_value;
+	private int m_version;
+	private string m_domainKey;
+	internal bool IsQuotedVersion;
+	internal bool IsQuotedDomain;
 
 	public string Comment { get; set; }
 	public Uri CommentUri { set; }

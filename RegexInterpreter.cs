@@ -1,16 +1,16 @@
 internal sealed class RegexInterpreter : RegexRunner // TypeDefIndex: 2619
 {
-	internal int runoperator; 
-	internal int[] runcodes; 
-	internal int runcodepos; 
-	internal string[] runstrings; 
-	internal RegexCode runcode; 
-	internal RegexPrefix runfcPrefix; 
-	internal RegexBoyerMoore runbmPrefix; 
-	internal int runanchors; 
-	internal bool runrtl; 
-	internal bool runci; 
-	internal CultureInfo runculture; 
+	internal int runoperator;
+	internal int[] runcodes;
+	internal int runcodepos;
+	internal string[] runstrings;
+	internal RegexCode runcode;
+	internal RegexPrefix runfcPrefix;
+	internal RegexBoyerMoore runbmPrefix;
+	internal int runanchors;
+	internal bool runrtl;
+	internal bool runci;
+	internal CultureInfo runculture;
 
 
 	internal void .ctor(RegexCode code, CultureInfo culture) { }

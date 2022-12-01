@@ -1,7 +1,7 @@
 internal abstract class RC4 : SymmetricAlgorithm // TypeDefIndex: 74
 {
-	private static KeySizes[] s_legalBlockSizes; 
-	private static KeySizes[] s_legalKeySizes; 
+	private static KeySizes[] s_legalBlockSizes;
+	private static KeySizes[] s_legalKeySizes;
 
 	public override byte[] IV { get; set; }
 

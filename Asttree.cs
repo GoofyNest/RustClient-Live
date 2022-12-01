@@ -1,9 +1,9 @@
 internal class Asttree // TypeDefIndex: 2137
 {
-	private ArrayList fAxisArray; 
-	private string xpathexpr; 
-	private bool isField; 
-	private XmlNamespaceManager nsmgr; 
+	private ArrayList fAxisArray;
+	private string xpathexpr;
+	private bool isField;
+	private XmlNamespaceManager nsmgr;
 
 	internal ArrayList SubtreeArray { get; }
 

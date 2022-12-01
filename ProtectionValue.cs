@@ -1,10 +1,10 @@
-public class ProtectionValue : MonoBehaviour, IClothingChanged // TypeDefIndex: 12818
+public class ProtectionValue : MonoBehaviour, IClothingChanged // TypeDefIndex: 12832
 {
-	public CanvasGroup group; 
-	public TextMeshProUGUI text; 
-	public DamageType damageType; 
-	public bool selectedItem; 
-	public bool displayBaseProtection; 
+	public CanvasGroup group;
+	public TextMeshProUGUI text;
+	public DamageType damageType;
+	public bool selectedItem;
+	public bool displayBaseProtection;
 
 
 	private void OnEnable() { }

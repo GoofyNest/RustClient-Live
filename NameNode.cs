@@ -1,8 +1,8 @@
 internal sealed class NameNode : ExpressionNode // TypeDefIndex: 4269
 {
-	internal string _name; 
-	internal bool _found; 
-	internal DataColumn _column; 
+	internal string _name;
+	internal bool _found;
+	internal DataColumn _column;
 
 	internal override bool IsSqlColumn { get; }
 

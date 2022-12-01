@@ -1,7 +1,7 @@
-public class nametags : ConsoleSystem // TypeDefIndex: 11396
+public class nametags : ConsoleSystem // TypeDefIndex: 11402
 {
-	[ClientVar] 
-	public static bool enabled; 
+	[ClientVar]
+	public static bool enabled;
 
 
 	public void .ctor() { }

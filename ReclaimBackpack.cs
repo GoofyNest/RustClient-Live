@@ -1,10 +1,10 @@
-public class ReclaimBackpack : StorageContainer // TypeDefIndex: 10463
+public class ReclaimBackpack : StorageContainer // TypeDefIndex: 10467
 {
-	public int reclaimID; 
-	public ulong playerSteamID; 
-	public bool onlyOwnerLoot; 
-	public Collider myCollider; 
-	public GameObject art; 
+	public int reclaimID;
+	public ulong playerSteamID;
+	public bool onlyOwnerLoot;
+	public Collider myCollider;
+	public GameObject art;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

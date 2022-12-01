@@ -1,10 +1,10 @@
-public class MenuTip : MonoBehaviour // TypeDefIndex: 12731
+public class MenuTip : MonoBehaviour // TypeDefIndex: 12745
 {
-	public TextMeshProUGUI text; 
-	public LoadingScreen screen; 
-	public static Translate.Phrase[] MenuTips; 
-	private int currentTipIndex; 
-	private float nextTipTime; 
+	public TextMeshProUGUI text;
+	public LoadingScreen screen;
+	public static Translate.Phrase[] MenuTips;
+	private int currentTipIndex;
+	private float nextTipTime;
 
 
 	public void OnEnable() { }

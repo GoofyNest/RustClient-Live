@@ -1,8 +1,8 @@
 internal static class PointerDeviceState // TypeDefIndex: 4690
 {
-	private static Vector2[] m_Positions; 
-	private static IPanel[] m_Panels; 
-	private static int[] m_PressedButtons; 
+	private static Vector2[] m_Positions;
+	private static IPanel[] m_Panels;
+	private static int[] m_PressedButtons;
 
 
 	public static void SavePointerPosition(int pointerId, Vector2 position, IPanel panel) { }

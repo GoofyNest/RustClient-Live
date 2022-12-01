@@ -1,13 +1,13 @@
 public class PhysicsRaycaster : BaseRaycaster // TypeDefIndex: 5099
 {
 	protected const int kNoEventMaskSet = -1;
-	protected Camera m_EventCamera; 
-	[SerializeField] 
-	protected LayerMask m_EventMask; 
-	[SerializeField] 
-	protected int m_MaxRayIntersections; 
-	protected int m_LastMaxRayIntersections; 
-	private RaycastHit[] m_Hits; 
+	protected Camera m_EventCamera;
+	[SerializeField]
+	protected LayerMask m_EventMask;
+	[SerializeField]
+	protected int m_MaxRayIntersections;
+	protected int m_LastMaxRayIntersections;
+	private RaycastHit[] m_Hits;
 
 	public override Camera eventCamera { get; }
 	public virtual int depth { get; }
@@ -40,7 +40,7 @@ public class PhysicsRaycaster : BaseRaycaster // TypeDefIndex: 5099
 
 private class PhysicsRaycaster.RaycastHitComparer : IComparer<RaycastHit> // TypeDefIndex: 5100
 {
-	public static PhysicsRaycaster.RaycastHitComparer instance; 
+	public static PhysicsRaycaster.RaycastHitComparer instance;
 
 
 	public int Compare(RaycastHit x, RaycastHit y) { }

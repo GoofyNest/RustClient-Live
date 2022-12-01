@@ -1,13 +1,13 @@
-public class WarningHeaderValue : ICloneable // TypeDefIndex: 5818
+public class WarningHeaderValue : ICloneable // TypeDefIndex: 5820
 {
-	[CompilerGeneratedAttribute] 
-	private string <Agent>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Code>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <Date>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Text>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Agent>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Code>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <Date>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Text>k__BackingField;
 
 	public string Agent { get; set; }
 	public int Code { get; set; }
@@ -17,28 +17,28 @@ public class WarningHeaderValue : ICloneable // TypeDefIndex: 5818
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Agent() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Agent(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Code() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Code(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_Date() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Date(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Text() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Text(string value) { }
 
 	private static bool IsCodeValid(int code) { }

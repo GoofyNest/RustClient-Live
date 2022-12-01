@@ -1,8 +1,8 @@
 internal class SelectorActiveAxis : ActiveAxis // TypeDefIndex: 2147
 {
-	private ConstraintStruct cs; 
-	private ArrayList KSs; 
-	private int KSpointer; 
+	private ConstraintStruct cs;
+	private ArrayList KSs;
+	private int KSpointer;
 
 	public int lastDepth { get; }
 

@@ -1,12 +1,12 @@
 internal class Axis : AstNode // TypeDefIndex: 1789
 {
-	private Axis.AxisType axisType; 
-	private AstNode input; 
-	private string prefix; 
-	private string name; 
-	private XPathNodeType nodeType; 
-	protected bool abbrAxis; 
-	private string urn; 
+	private Axis.AxisType axisType;
+	private AstNode input;
+	private string prefix;
+	private string name;
+	private XPathNodeType nodeType;
+	protected bool abbrAxis;
+	private string urn;
 
 	public override AstNode.AstType Type { get; }
 	public override XPathResultType ReturnType { get; }
@@ -49,7 +49,7 @@ internal class Axis : AstNode // TypeDefIndex: 1789
 
 public enum Axis.AxisType // TypeDefIndex: 1790
 {
-	public int value__; 
+	public int value__;
 	public const Axis.AxisType Ancestor = 0;
 	public const Axis.AxisType AncestorOrSelf = 1;
 	public const Axis.AxisType Attribute = 2;

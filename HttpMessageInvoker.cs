@@ -1,7 +1,7 @@
-public class HttpMessageInvoker : IDisposable // TypeDefIndex: 5758
+public class HttpMessageInvoker : IDisposable // TypeDefIndex: 5760
 {
-	private HttpMessageHandler handler; 
-	private readonly bool disposeHandler; 
+	private HttpMessageHandler handler;
+	private readonly bool disposeHandler;
 
 
 	public void .ctor(HttpMessageHandler handler, bool disposeHandler) { }

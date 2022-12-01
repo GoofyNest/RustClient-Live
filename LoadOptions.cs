@@ -1,6 +1,6 @@
-public enum LoadOptions // TypeDefIndex: 5848
+public enum LoadOptions // TypeDefIndex: 5850
 {
-	public int value__; 
+	public int value__;
 	public const LoadOptions None = 0;
 	public const LoadOptions PreserveWhitespace = 1;
 	public const LoadOptions SetBaseUri = 2;

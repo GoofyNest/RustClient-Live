@@ -1,10 +1,10 @@
-internal struct QueryOwnershipTokenOptionsInternal : ISettable<QueryOwnershipTokenOptions>, IDisposable // TypeDefIndex: 9509
+internal struct QueryOwnershipTokenOptionsInternal : ISettable<QueryOwnershipTokenOptions>, IDisposable // TypeDefIndex: 9511
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_CatalogItemIds; 
-	private uint m_CatalogItemIdCount; 
-	private IntPtr m_CatalogNamespace; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_CatalogItemIds;
+	private uint m_CatalogItemIdCount;
+	private IntPtr m_CatalogNamespace;
 
 	public EpicAccountId LocalUserId { set; }
 	public Utf8String[] CatalogItemIds { set; }

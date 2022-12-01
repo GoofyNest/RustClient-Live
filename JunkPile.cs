@@ -1,15 +1,15 @@
-public class JunkPile : BaseEntity // TypeDefIndex: 10312
+public class JunkPile : BaseEntity // TypeDefIndex: 10315
 {
-	public GameObjectRef sinkEffect; 
-	public SpawnGroup[] spawngroups; 
-	public NPCSpawner NPCSpawn; 
+	public GameObjectRef sinkEffect;
+	public SpawnGroup[] spawngroups;
+	public NPCSpawner NPCSpawn;
 	private const float lifetimeMinutes = 30;
-	private float sunkAmount; 
+	private float sunkAmount;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_StartSink(BaseEntity.RPCMessage msg) { }
 
 	public void SinkThink() { }

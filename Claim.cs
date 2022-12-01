@@ -1,14 +1,14 @@
 public class Claim // TypeDefIndex: 934
 {
-	private string m_issuer; 
-	private string m_originalIssuer; 
-	private string m_type; 
-	private string m_value; 
-	private string m_valueType; 
-	private byte[] m_userSerializationData; 
-	private Dictionary<string, string> m_properties; 
-	private object m_propertyLock; 
-	private ClaimsIdentity m_subject; 
+	private string m_issuer;
+	private string m_originalIssuer;
+	private string m_type;
+	private string m_value;
+	private string m_valueType;
+	private byte[] m_userSerializationData;
+	private Dictionary<string, string> m_properties;
+	private object m_propertyLock;
+	private ClaimsIdentity m_subject;
 
 	public IDictionary<string, string> Properties { get; }
 	public ClaimsIdentity Subject { get; set; }
@@ -22,7 +22,7 @@ public class Claim // TypeDefIndex: 934
 
 	protected void .ctor(Claim other, ClaimsIdentity subject) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserializedMethod(StreamingContext context) { }
 
 	public IDictionary<string, string> get_Properties() { }

@@ -1,42 +1,42 @@
 internal sealed class XdrBuilder : SchemaBuilder // TypeDefIndex: 2291
 {
-	private static readonly int[] S_XDR_Root_Element; 
-	private static readonly int[] S_XDR_Root_SubElements; 
-	private static readonly int[] S_XDR_ElementType_SubElements; 
-	private static readonly int[] S_XDR_AttributeType_SubElements; 
-	private static readonly int[] S_XDR_Group_SubElements; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Root_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_ElementType_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_AttributeType_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Element_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Attribute_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Group_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_ElementDataType_Attributes; 
-	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_AttributeDataType_Attributes; 
-	private static readonly XdrBuilder.XdrEntry[] S_SchemaEntries; 
-	private SchemaInfo _SchemaInfo; 
-	private string _TargetNamespace; 
-	private XmlReader _reader; 
-	private PositionInfo positionInfo; 
-	private ParticleContentValidator _contentValidator; 
-	private XdrBuilder.XdrEntry _CurState; 
-	private XdrBuilder.XdrEntry _NextState; 
-	private HWStack _StateHistory; 
-	private HWStack _GroupStack; 
-	private string _XdrName; 
-	private string _XdrPrefix; 
-	private XdrBuilder.ElementContent _ElementDef; 
-	private XdrBuilder.GroupContent _GroupDef; 
-	private XdrBuilder.AttributeContent _AttributeDef; 
-	private XdrBuilder.DeclBaseInfo _UndefinedAttributeTypes; 
-	private XdrBuilder.DeclBaseInfo _BaseDecl; 
-	private XmlNameTable _NameTable; 
-	private SchemaNames _SchemaNames; 
-	private XmlNamespaceManager _CurNsMgr; 
-	private string _Text; 
-	private ValidationEventHandler validationEventHandler; 
-	private Hashtable _UndeclaredElements; 
-	private XmlResolver xmlResolver; 
+	private static readonly int[] S_XDR_Root_Element;
+	private static readonly int[] S_XDR_Root_SubElements;
+	private static readonly int[] S_XDR_ElementType_SubElements;
+	private static readonly int[] S_XDR_AttributeType_SubElements;
+	private static readonly int[] S_XDR_Group_SubElements;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Root_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_ElementType_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_AttributeType_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Element_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Attribute_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_Group_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_ElementDataType_Attributes;
+	private static readonly XdrBuilder.XdrAttributeEntry[] S_XDR_AttributeDataType_Attributes;
+	private static readonly XdrBuilder.XdrEntry[] S_SchemaEntries;
+	private SchemaInfo _SchemaInfo;
+	private string _TargetNamespace;
+	private XmlReader _reader;
+	private PositionInfo positionInfo;
+	private ParticleContentValidator _contentValidator;
+	private XdrBuilder.XdrEntry _CurState;
+	private XdrBuilder.XdrEntry _NextState;
+	private HWStack _StateHistory;
+	private HWStack _GroupStack;
+	private string _XdrName;
+	private string _XdrPrefix;
+	private XdrBuilder.ElementContent _ElementDef;
+	private XdrBuilder.GroupContent _GroupDef;
+	private XdrBuilder.AttributeContent _AttributeDef;
+	private XdrBuilder.DeclBaseInfo _UndefinedAttributeTypes;
+	private XdrBuilder.DeclBaseInfo _BaseDecl;
+	private XmlNameTable _NameTable;
+	private SchemaNames _SchemaNames;
+	private XmlNamespaceManager _CurNsMgr;
+	private string _Text;
+	private ValidationEventHandler validationEventHandler;
+	private Hashtable _UndeclaredElements;
+	private XmlResolver xmlResolver;
 
 	internal XmlResolver XmlResolver { set; }
 
@@ -217,18 +217,18 @@ internal sealed class XdrBuilder : SchemaBuilder // TypeDefIndex: 2291
 
 private sealed class XdrBuilder.DeclBaseInfo // TypeDefIndex: 2292
 {
-	internal XmlQualifiedName _Name; 
-	internal string _Prefix; 
-	internal XmlQualifiedName _TypeName; 
-	internal string _TypePrefix; 
-	internal object _Default; 
-	internal object _Revises; 
-	internal uint _MaxOccurs; 
-	internal uint _MinOccurs; 
-	internal bool _Checking; 
-	internal SchemaElementDecl _ElementDecl; 
-	internal SchemaAttDef _Attdef; 
-	internal XdrBuilder.DeclBaseInfo _Next; 
+	internal XmlQualifiedName _Name;
+	internal string _Prefix;
+	internal XmlQualifiedName _TypeName;
+	internal string _TypePrefix;
+	internal object _Default;
+	internal object _Revises;
+	internal uint _MaxOccurs;
+	internal uint _MinOccurs;
+	internal bool _Checking;
+	internal SchemaElementDecl _ElementDecl;
+	internal SchemaAttDef _Attdef;
+	internal XdrBuilder.DeclBaseInfo _Next;
 
 
 	internal void .ctor() { }
@@ -239,11 +239,11 @@ private sealed class XdrBuilder.DeclBaseInfo // TypeDefIndex: 2292
 
 private sealed class XdrBuilder.GroupContent // TypeDefIndex: 2293
 {
-	internal uint _MinVal; 
-	internal uint _MaxVal; 
-	internal bool _HasMaxAttr; 
-	internal bool _HasMinAttr; 
-	internal int _Order; 
+	internal uint _MinVal;
+	internal uint _MaxVal;
+	internal bool _HasMaxAttr;
+	internal bool _HasMinAttr;
+	internal int _Order;
 
 
 	internal static void Copy(XdrBuilder.GroupContent from, XdrBuilder.GroupContent to) { }
@@ -256,20 +256,20 @@ private sealed class XdrBuilder.GroupContent // TypeDefIndex: 2293
 
 private sealed class XdrBuilder.ElementContent // TypeDefIndex: 2294
 {
-	internal SchemaElementDecl _ElementDecl; 
-	internal int _ContentAttr; 
-	internal int _OrderAttr; 
-	internal bool _MasterGroupRequired; 
-	internal bool _ExistTerminal; 
-	internal bool _AllowDataType; 
-	internal bool _HasDataType; 
-	internal bool _HasType; 
-	internal bool _EnumerationRequired; 
-	internal uint _MinVal; 
-	internal uint _MaxVal; 
-	internal uint _MaxLength; 
-	internal uint _MinLength; 
-	internal Hashtable _AttDefList; 
+	internal SchemaElementDecl _ElementDecl;
+	internal int _ContentAttr;
+	internal int _OrderAttr;
+	internal bool _MasterGroupRequired;
+	internal bool _ExistTerminal;
+	internal bool _AllowDataType;
+	internal bool _HasDataType;
+	internal bool _HasType;
+	internal bool _EnumerationRequired;
+	internal uint _MinVal;
+	internal uint _MaxVal;
+	internal uint _MaxLength;
+	internal uint _MinLength;
+	internal Hashtable _AttDefList;
 
 
 	public void .ctor() { }
@@ -278,18 +278,18 @@ private sealed class XdrBuilder.ElementContent // TypeDefIndex: 2294
 
 private sealed class XdrBuilder.AttributeContent // TypeDefIndex: 2295
 {
-	internal SchemaAttDef _AttDef; 
-	internal XmlQualifiedName _Name; 
-	internal string _Prefix; 
-	internal bool _Required; 
-	internal uint _MinVal; 
-	internal uint _MaxVal; 
-	internal uint _MaxLength; 
-	internal uint _MinLength; 
-	internal bool _EnumerationRequired; 
-	internal bool _HasDataType; 
-	internal bool _Global; 
-	internal object _Default; 
+	internal SchemaAttDef _AttDef;
+	internal XmlQualifiedName _Name;
+	internal string _Prefix;
+	internal bool _Required;
+	internal uint _MinVal;
+	internal uint _MaxVal;
+	internal uint _MaxLength;
+	internal uint _MinLength;
+	internal bool _EnumerationRequired;
+	internal bool _HasDataType;
+	internal bool _Global;
+	internal object _Default;
 
 
 	public void .ctor() { }
@@ -350,10 +350,10 @@ private sealed class XdrBuilder.XdrEndChildFunction : MulticastDelegate // TypeD
 
 private sealed class XdrBuilder.XdrAttributeEntry // TypeDefIndex: 2300
 {
-	internal SchemaNames.Token _Attribute; 
-	internal int _SchemaFlags; 
-	internal XmlSchemaDatatype _Datatype; 
-	internal XdrBuilder.XdrBuildFunction _BuildFunc; 
+	internal SchemaNames.Token _Attribute;
+	internal int _SchemaFlags;
+	internal XmlSchemaDatatype _Datatype;
+	internal XdrBuilder.XdrBuildFunction _BuildFunc;
 
 
 	internal void .ctor(SchemaNames.Token a, XmlTokenizedType ttype, XdrBuilder.XdrBuildFunction build) { }
@@ -364,13 +364,13 @@ private sealed class XdrBuilder.XdrAttributeEntry // TypeDefIndex: 2300
 
 private sealed class XdrBuilder.XdrEntry // TypeDefIndex: 2301
 {
-	internal SchemaNames.Token _Name; 
-	internal int[] _NextStates; 
-	internal XdrBuilder.XdrAttributeEntry[] _Attributes; 
-	internal XdrBuilder.XdrInitFunction _InitFunc; 
-	internal XdrBuilder.XdrBeginChildFunction _BeginChildFunc; 
-	internal XdrBuilder.XdrEndChildFunction _EndChildFunc; 
-	internal bool _AllowText; 
+	internal SchemaNames.Token _Name;
+	internal int[] _NextStates;
+	internal XdrBuilder.XdrAttributeEntry[] _Attributes;
+	internal XdrBuilder.XdrInitFunction _InitFunc;
+	internal XdrBuilder.XdrBeginChildFunction _BeginChildFunc;
+	internal XdrBuilder.XdrEndChildFunction _EndChildFunc;
+	internal bool _AllowText;
 
 
 	internal void .ctor(SchemaNames.Token n, int[] states, XdrBuilder.XdrAttributeEntry[] attributes, XdrBuilder.XdrInitFunction init, XdrBuilder.XdrBeginChildFunction begin, XdrBuilder.XdrEndChildFunction end, bool fText) { }

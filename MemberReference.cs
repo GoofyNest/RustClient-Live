@@ -1,6 +1,6 @@
 internal sealed class MemberReference // TypeDefIndex: 1085
 {
-	internal int idRef; 
+	internal int idRef;
 
 
 	internal void .ctor() { }

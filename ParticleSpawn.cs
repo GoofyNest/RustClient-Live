@@ -1,11 +1,11 @@
-public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent // TypeDefIndex: 12109
+public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent // TypeDefIndex: 12116
 {
-	public GameObjectRef[] Prefabs; 
-	public int PatchCount; 
-	public int PatchSize; 
-	[CompilerGeneratedAttribute] 
-	private Vector3 <Origin>k__BackingField; 
-	private ParticlePatch[] patches; 
+	public GameObjectRef[] Prefabs;
+	public int PatchCount;
+	public int PatchSize;
+	[CompilerGeneratedAttribute]
+	private Vector3 <Origin>k__BackingField;
+	private ParticlePatch[] patches;
 
 	public Vector3 Origin { get; set; }
 
@@ -20,16 +20,16 @@ public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent
 
 	public void Refresh(bool force = False) { }
 
-	[ContextMenu] 
+	[ContextMenu]
 	private void RefreshAll_ContextMenu() { }
 
-	[ContextMenu] 
+	[ContextMenu]
 	private void Refresh_ContextMenu() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Vector3 get_Origin() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Origin(Vector3 value) { }
 
 	protected override void Awake() { }
@@ -38,38 +38,38 @@ public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent
 
 	private void FreePatches() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator UpdateCoroutine() { }
 
 	public void .ctor() { }
 
 }
 
-private sealed class ParticleSpawn.<UpdateCoroutine>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12110
+private sealed class ParticleSpawn.<UpdateCoroutine>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12117
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public ParticleSpawn <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public ParticleSpawn <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

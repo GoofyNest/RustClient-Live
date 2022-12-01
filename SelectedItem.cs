@@ -1,22 +1,22 @@
-public class SelectedItem : SingletonComponent<SelectedItem>, IInventoryChanged // TypeDefIndex: 12825
+public class SelectedItem : SingletonComponent<SelectedItem>, IInventoryChanged // TypeDefIndex: 12839
 {
-	public Image icon; 
-	public Image iconSplitter; 
-	public RustText title; 
-	public RustText description; 
-	public GameObject splitPanel; 
-	public GameObject itemProtection; 
-	public GameObject menuOption; 
-	public GameObject optionsParent; 
-	public GameObject innerPanelContainer; 
-	private Animator animator; 
-	private ProtectionValue[] protectionValues; 
-	private ItemInformationPanel[] informationPanels; 
-	private List<Option> previousOptions; 
-	private Item lastItem; 
-	internal bool wasOpen; 
-	public static ItemIcon selectedItem; 
-	public static ItemIcon hoveredItem; 
+	public Image icon;
+	public Image iconSplitter;
+	public RustText title;
+	public RustText description;
+	public GameObject splitPanel;
+	public GameObject itemProtection;
+	public GameObject menuOption;
+	public GameObject optionsParent;
+	public GameObject innerPanelContainer;
+	private Animator animator;
+	private ProtectionValue[] protectionValues;
+	private ItemInformationPanel[] informationPanels;
+	private List<Option> previousOptions;
+	private Item lastItem;
+	internal bool wasOpen;
+	public static ItemIcon selectedItem;
+	public static ItemIcon hoveredItem;
 
 	public static Item item { get; }
 

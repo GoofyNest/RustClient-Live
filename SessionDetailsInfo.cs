@@ -1,13 +1,13 @@
-public struct SessionDetailsInfo // TypeDefIndex: 8558
+public struct SessionDetailsInfo // TypeDefIndex: 8560
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <SessionId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <HostAddress>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <NumOpenPublicConnections>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<SessionDetailsSettings> <Settings>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <SessionId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <HostAddress>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <NumOpenPublicConnections>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<SessionDetailsSettings> <Settings>k__BackingField;
 
 	public Utf8String SessionId { get; set; }
 	public Utf8String HostAddress { get; set; }
@@ -15,28 +15,28 @@ public struct SessionDetailsInfo // TypeDefIndex: 8558
 	public Nullable<SessionDetailsSettings> Settings { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_SessionId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SessionId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_HostAddress() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HostAddress(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_NumOpenPublicConnections() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NumOpenPublicConnections(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<SessionDetailsSettings> get_Settings() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Settings(Nullable<SessionDetailsSettings> value) { }
 
 	internal void Set(ref SessionDetailsInfoInternal other) { }

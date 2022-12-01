@@ -1,8 +1,8 @@
-public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6352
+public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6354
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector3 aimDir; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector3 aimDir;
 
 
 	public static void ResetToPool(SAMSite instance) { }
@@ -59,43 +59,43 @@ public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6352
 
 }
 
-public class SamSite : ContainerIOEntity // TypeDefIndex: 10159
+public class SamSite : ContainerIOEntity // TypeDefIndex: 10161
 {
-	private Option __menuOption_Menu_DisableDefenderMode; 
-	private Option __menuOption_Menu_EnableDefenderMode; 
-	public Animator pitchAnimator; 
-	public GameObject yaw; 
-	public GameObject pitch; 
-	public GameObject gear; 
-	public Transform eyePoint; 
-	public float gearEpislonDegrees; 
-	public float turnSpeed; 
-	public float clientLerpSpeed; 
-	public Vector3 currentAimDir; 
-	public Vector3 targetAimDir; 
-	public float vehicleScanRadius; 
-	public float missileScanRadius; 
-	public GameObjectRef projectileTest; 
-	public GameObjectRef muzzleFlashTest; 
-	public bool staticRespawn; 
-	public ItemDefinition ammoType; 
-	public Transform[] tubes; 
-	[ServerVar] 
-	public static float staticrepairseconds; 
-	public SoundDefinition yawMovementLoopDef; 
-	public float yawGainLerp; 
-	public float yawGainMovementSpeedMult; 
-	public SoundDefinition pitchMovementLoopDef; 
-	public float pitchGainLerp; 
-	public float pitchGainMovementSpeedMult; 
-	public int lowAmmoThreshold; 
-	public BaseEntity.Flags Flag_DefenderMode; 
-	private Sound yawMovementLoop; 
-	private Sound pitchMovementLoop; 
-	private SoundModulation.Modulator yawGainModulator; 
-	private SoundModulation.Modulator pitchGainModulator; 
-	private float previousYawAngle; 
-	private float previousPitchAngle; 
+	private Option __menuOption_Menu_DisableDefenderMode;
+	private Option __menuOption_Menu_EnableDefenderMode;
+	public Animator pitchAnimator;
+	public GameObject yaw;
+	public GameObject pitch;
+	public GameObject gear;
+	public Transform eyePoint;
+	public float gearEpislonDegrees;
+	public float turnSpeed;
+	public float clientLerpSpeed;
+	public Vector3 currentAimDir;
+	public Vector3 targetAimDir;
+	public float vehicleScanRadius;
+	public float missileScanRadius;
+	public GameObjectRef projectileTest;
+	public GameObjectRef muzzleFlashTest;
+	public bool staticRespawn;
+	public ItemDefinition ammoType;
+	public Transform[] tubes;
+	[ServerVar]
+	public static float staticrepairseconds;
+	public SoundDefinition yawMovementLoopDef;
+	public float yawGainLerp;
+	public float yawGainMovementSpeedMult;
+	public SoundDefinition pitchMovementLoopDef;
+	public float pitchGainLerp;
+	public float pitchGainMovementSpeedMult;
+	public int lowAmmoThreshold;
+	public BaseEntity.Flags Flag_DefenderMode;
+	private Sound yawMovementLoop;
+	private Sound pitchMovementLoop;
+	private SoundModulation.Modulator yawGainModulator;
+	private SoundModulation.Modulator pitchGainModulator;
+	private float previousYawAngle;
+	private float previousPitchAngle;
 
 	public override bool HasMenuOptions { get; }
 
@@ -124,18 +124,18 @@ public class SamSite : ContainerIOEntity // TypeDefIndex: 10159
 
 	protected override void DoClientDestroy() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	private void Menu_EnableDefenderMode(BasePlayer player) { }
 
 	private bool Menu_EnableDefenderMode_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	private void Menu_DisableDefenderMode(BasePlayer player) { }
 
 	private bool Menu_DisableDefenderMode_ShowIf(BasePlayer player) { }

@@ -1,15 +1,15 @@
-public class FootstepEffects : BaseFootstepEffect // TypeDefIndex: 11083
+public class FootstepEffects : BaseFootstepEffect // TypeDefIndex: 11089
 {
-	public Transform leftFoot; 
-	public Transform rightFoot; 
-	public string footstepEffectName; 
-	public string jumpStartEffectName; 
-	public string jumpLandEffectName; 
-	private bool lastWasLeft; 
-	private bool lastWasStopped; 
-	private BasePlayer player; 
-	private bool isOnGround; 
-	private Animator animator; 
+	public Transform leftFoot;
+	public Transform rightFoot;
+	public string footstepEffectName;
+	public string jumpStartEffectName;
+	public string jumpLandEffectName;
+	private bool lastWasLeft;
+	private bool lastWasStopped;
+	private BasePlayer player;
+	private bool isOnGround;
+	private Animator animator;
 
 
 	private void OnEnable() { }

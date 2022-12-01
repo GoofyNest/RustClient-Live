@@ -1,7 +1,7 @@
 public class CollectionChangeEventArgs : EventArgs // TypeDefIndex: 2674
 {
-	private CollectionChangeAction action; 
-	private object element; 
+	private CollectionChangeAction action;
+	private object element;
 
 	public virtual CollectionChangeAction Action { get; }
 	public virtual object Element { get; }

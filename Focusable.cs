@@ -1,9 +1,9 @@
 public abstract class Focusable : CallbackEventHandler // TypeDefIndex: 4591
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private bool <focusable>k__BackingField; 
-	internal bool isIMGUIContainer; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private bool <focusable>k__BackingField;
+	internal bool isIMGUIContainer;
 
 	public abstract FocusController focusController { get; }
 	public bool focusable { get; }
@@ -12,7 +12,7 @@ public abstract class Focusable : CallbackEventHandler // TypeDefIndex: 4591
 
 	public abstract FocusController get_focusController();
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_focusable() { }
 
 	public virtual bool get_canGrabFocus() { }

@@ -1,7 +1,7 @@
-public class InvisibleVendingMachine : NPCVendingMachine // TypeDefIndex: 10443
+public class InvisibleVendingMachine : NPCVendingMachine // TypeDefIndex: 10447
 {
-	public GameObjectRef buyEffect; 
-	public NPCVendingOrderManifest vmoManifest; 
+	public GameObjectRef buyEffect;
+	public NPCVendingOrderManifest vmoManifest;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

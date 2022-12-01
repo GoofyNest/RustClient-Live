@@ -1,6 +1,6 @@
-public enum ExternalAccountType // TypeDefIndex: 8285
+public enum ExternalAccountType // TypeDefIndex: 8287
 {
-	public int value__; 
+	public int value__;
 	public const ExternalAccountType Epic = 0;
 	public const ExternalAccountType Steam = 1;
 	public const ExternalAccountType Psn = 2;

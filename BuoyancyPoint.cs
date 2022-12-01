@@ -1,14 +1,14 @@
-public class BuoyancyPoint : MonoBehaviour // TypeDefIndex: 11437
+public class BuoyancyPoint : MonoBehaviour // TypeDefIndex: 11443
 {
-	public float buoyancyForce; 
-	public float size; 
-	public float waveScale; 
-	public float waveFrequency; 
-	public bool doSplashEffects; 
-	public float randomOffset; 
-	public bool wasSubmergedLastFrame; 
-	public float nexSplashTime; 
-	private static readonly Color gizmoColour; 
+	public float buoyancyForce;
+	public float size;
+	public float waveScale;
+	public float waveFrequency;
+	public bool doSplashEffects;
+	public float randomOffset;
+	public bool wasSubmergedLastFrame;
+	public float nexSplashTime;
+	private static readonly Color gizmoColour;
 
 
 	public void Start() { }

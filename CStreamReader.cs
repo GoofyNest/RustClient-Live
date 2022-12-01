@@ -1,6 +1,6 @@
 internal class CStreamReader : StreamReader // TypeDefIndex: 683
 {
-	private TermInfoDriver driver; 
+	private TermInfoDriver driver;
 
 
 	public void .ctor(Stream stream, Encoding encoding) { }

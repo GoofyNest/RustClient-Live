@@ -1,20 +1,20 @@
-public class ContainerIOEntity : IOEntity, IItemContainerEntity, IIdealSlotEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10093
+public class ContainerIOEntity : IOEntity, IItemContainerEntity, IIdealSlotEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10095
 {
-	private Option __menuOption_Menu_Occupied; 
-	private Option __menuOption_Menu_Open; 
-	public ItemDefinition onlyAllowedItem; 
-	public ItemContainer.ContentsType allowedContents; 
-	public int maxStackSize; 
-	public int numSlots; 
-	public string lootPanelName; 
-	public Translate.Phrase panelTitle; 
-	public bool needsBuildingPrivilegeToUse; 
-	public bool isLootable; 
-	public bool dropsLoot; 
-	public bool dropFloats; 
-	public bool onlyOneUser; 
-	public SoundDefinition openSound; 
-	public SoundDefinition closeSound; 
+	private Option __menuOption_Menu_Occupied;
+	private Option __menuOption_Menu_Open;
+	public ItemDefinition onlyAllowedItem;
+	public ItemContainer.ContentsType allowedContents;
+	public int maxStackSize;
+	public int numSlots;
+	public string lootPanelName;
+	public Translate.Phrase panelTitle;
+	public bool needsBuildingPrivilegeToUse;
+	public bool isLootable;
+	public bool dropsLoot;
+	public bool dropFloats;
+	public bool onlyOneUser;
+	public SoundDefinition openSound;
+	public SoundDefinition closeSound;
 
 	public override bool HasMenuOptions { get; }
 	public Translate.Phrase LootPanelTitle { get; }
@@ -34,16 +34,16 @@ public class ContainerIOEntity : IOEntity, IItemContainerEntity, IIdealSlotEntit
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Open(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Occupied(BasePlayer player) { }
 
 	public bool Menu_Occupied_ShowIf(BasePlayer player) { }

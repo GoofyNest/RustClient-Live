@@ -1,8 +1,8 @@
-internal class GB18030Encoder : MonoEncoder // TypeDefIndex: 7849
+internal class GB18030Encoder : MonoEncoder // TypeDefIndex: 7851
 {
-	private static DbcsConvert gb2312; 
-	private char incomplete_byte_count; 
-	private char incomplete_bytes; 
+	private static DbcsConvert gb2312;
+	private char incomplete_byte_count;
+	private char incomplete_bytes;
 
 
 	public void .ctor(MonoEncoding owner) { }

@@ -1,6 +1,6 @@
-public enum TextAlignmentOptions // TypeDefIndex: 6766
+public enum TextAlignmentOptions // TypeDefIndex: 6768
 {
-	public int value__; 
+	public int value__;
 	public const TextAlignmentOptions TopLeft = 257;
 	public const TextAlignmentOptions Top = 258;
 	public const TextAlignmentOptions TopRight = 260;

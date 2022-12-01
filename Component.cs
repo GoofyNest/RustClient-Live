@@ -1,17 +1,17 @@
 public class Component : MarshalByRefObject, IComponent, IDisposable // TypeDefIndex: 2677
 {
-	private static readonly object EventDisposed; 
-	private ISite site; 
-	private EventHandlerList events; 
+	private static readonly object EventDisposed;
+	private ISite site;
+	private EventHandlerList events;
 
 	protected virtual bool CanRaiseEvents { get; }
 	internal bool CanRaiseEventsInternal { get; }
 	protected EventHandlerList Events { get; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	public virtual ISite Site { get; }
-	[DesignerSerializationVisibilityAttribute] 
-	[BrowsableAttribute] 
+	[DesignerSerializationVisibilityAttribute]
+	[BrowsableAttribute]
 	protected bool DesignMode { get; }
 
 
@@ -47,16 +47,16 @@ public class Component : Object // TypeDefIndex: 3511
 	public GameObject gameObject { get; }
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public Transform get_transform() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public GameObject get_gameObject() { }
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public Component GetComponent(Type type) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal void GetComponentFastPath(Type type, IntPtr oneFurtherThanResultValue) { }
 
 	public T GetComponent<T>() { }
@@ -193,6 +193,7 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponent<PlayerModifiers>
 	|-Component.GetComponent<PlayerVoiceRecorder>
 	|-Component.GetComponent<PlayerVoiceSpeaker>
+	|-Component.GetComponent<PlayingCardSprite>
 	|-Component.GetComponent<PlayingCardsViewmodel>
 	|-Component.GetComponent<PostOpaqueDepth>
 	|-Component.GetComponent<PowerLineWireConnectionHelper>
@@ -253,7 +254,6 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponent<TreadAnimator>
 	|-Component.GetComponent<TriggerLadder>
 	|-Component.GetComponent<UIEscapeCapture>
-	|-Component.GetComponent<Animation>
 	|-Component.GetComponent<Animator>
 	|-Component.GetComponent<AudioSource>
 	|-Component.GetComponent<BoxCollider>
@@ -371,7 +371,7 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.TryGetComponent<v_chainsaw>
 	*/
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public Component GetComponentInChildren(Type t, bool includeInactive) { }
 
 	public T GetComponentInChildren<T>(bool includeInactive) { }
@@ -385,7 +385,7 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponentInChildren<object>
 	*/
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public T GetComponentInChildren<T>() { }
 	/* GenericInstMethod :
 	|
@@ -423,7 +423,7 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponentInChildren<object>
 	*/
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public Component[] GetComponentsInChildren(Type t) { }
 
 	public T[] GetComponentsInChildren<T>(bool includeInactive) { }
@@ -513,6 +513,7 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponentsInChildren<HitNumber>
 	|-Component.GetComponentsInChildren<ItemIcon>
 	|-Component.GetComponentsInChildren<ItemTextValue>
+	|-Component.GetComponentsInChildren<ModularCarCodeLockVisuals>
 	|-Component.GetComponentsInChildren<PathInterestNode>
 	|-Component.GetComponentsInChildren<PathSpeedZone>
 	|-Component.GetComponentsInChildren<NetGraphItem>
@@ -557,7 +558,7 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponentsInChildren<VolumetricLightBeam>
 	*/
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public Component GetComponentInParent(Type t) { }
 
 	public T GetComponentInParent<T>() { }
@@ -612,7 +613,7 @@ public class Component : Object // TypeDefIndex: 3511
 
 	public Component[] GetComponents(Type type) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void GetComponentsForListInternal(Type searchType, object resultList) { }
 
 	public void GetComponents(Type type, List<Component> results) { }
@@ -644,22 +645,22 @@ public class Component : Object // TypeDefIndex: 3511
 
 	public bool CompareTag(string tag) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SendMessageUpwards(string methodName, object value, SendMessageOptions options) { }
 
 	public void SendMessage(string methodName, object value) { }
 
 	public void SendMessage(string methodName) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SendMessage(string methodName, object value, SendMessageOptions options) { }
 
 	public void SendMessage(string methodName, SendMessageOptions options) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void BroadcastMessage(string methodName, object parameter, SendMessageOptions options) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public void BroadcastMessage(string methodName) { }
 
 	public void BroadcastMessage(string methodName, SendMessageOptions options) { }

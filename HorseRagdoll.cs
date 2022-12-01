@@ -1,14 +1,14 @@
-public class HorseRagdoll : AnimalRagdoll // TypeDefIndex: 10655
+public class HorseRagdoll : AnimalRagdoll // TypeDefIndex: 10659
 {
-	public GameObject mane; 
-	public GameObject woodArmor; 
-	public GameObject roadsignArmor; 
-	public HorseBreed overrideBreed; 
-	public GameObjectRef breedSource; 
-	private int breedIndex; 
-	private bool showHair; 
-	private bool showWoodArmor; 
-	private bool showRoadsignArmor; 
+	public GameObject mane;
+	public GameObject woodArmor;
+	public GameObject roadsignArmor;
+	public HorseBreed overrideBreed;
+	public GameObjectRef breedSource;
+	private int breedIndex;
+	private bool showHair;
+	private bool showWoodArmor;
+	private bool showRoadsignArmor;
 
 
 	public void SetBreedIndex(int newIndex) { }

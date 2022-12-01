@@ -1,8 +1,8 @@
-public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6343
+public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint population; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint population;
 
 
 	public static void ResetToPool(Spawnable instance) { }
@@ -59,14 +59,14 @@ public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6343
 
 }
 
-public class Spawnable : MonoBehaviour, IServerComponent // TypeDefIndex: 11739
+public class Spawnable : MonoBehaviour, IServerComponent // TypeDefIndex: 11746
 {
-	[ReadOnlyAttribute] 
-	public SpawnPopulation Population; 
-	[SerializeField] 
-	private bool ForceSpawnOnly; 
-	[SerializeField] 
-	private string ForceSpawnInfoMessage; 
+	[ReadOnlyAttribute]
+	public SpawnPopulation Population;
+	[SerializeField]
+	private bool ForceSpawnOnly;
+	[SerializeField]
+	private string ForceSpawnInfoMessage;
 
 
 	protected void OnValidate() { }

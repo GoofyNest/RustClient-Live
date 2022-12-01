@@ -1,6 +1,6 @@
 internal class CallContextSecurityData : ICloneable // TypeDefIndex: 1219
 {
-	private IPrincipal _principal; 
+	private IPrincipal _principal;
 
 	internal bool HasInfo { get; }
 

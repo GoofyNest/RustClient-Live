@@ -1,22 +1,22 @@
-public struct Stat // TypeDefIndex: 5565
+public struct Stat // TypeDefIndex: 5567
 {
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private SteamId <UserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private SteamId <UserId>k__BackingField;
 
 	public string Name { get; set; }
 	internal SteamId UserId { set; }
 
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Name(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_UserId(SteamId value) { }
 
 	public void .ctor(string name) { }
@@ -27,16 +27,16 @@ public struct Stat // TypeDefIndex: 5565
 
 }
 
-public struct Stat // TypeDefIndex: 8446
+public struct Stat // TypeDefIndex: 8448
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <StartTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<DateTimeOffset> <EndTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Value>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <StartTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<DateTimeOffset> <EndTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Value>k__BackingField;
 
 	public Utf8String Name { get; set; }
 	public Nullable<DateTimeOffset> StartTime { get; set; }
@@ -44,28 +44,28 @@ public struct Stat // TypeDefIndex: 8446
 	public int Value { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Name(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_StartTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StartTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<DateTimeOffset> get_EndTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EndTime(Nullable<DateTimeOffset> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Value() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Value(int value) { }
 
 	internal void Set(ref StatInternal other) { }

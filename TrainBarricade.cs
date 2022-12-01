@@ -1,15 +1,15 @@
-public class TrainBarricade : BaseCombatEntity, ITrainCollidable // TypeDefIndex: 11502
+public class TrainBarricade : BaseCombatEntity, ITrainCollidable // TypeDefIndex: 11509
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private float trainDamagePerMPS; 
-	[SerializeField] 
-	private float minVelToDestroy; 
-	[SerializeField] 
-	private float velReduction; 
-	[SerializeField] 
-	private GameObjectRef barricadeDamageEffect; 
-	private float nextEffectTime; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private float trainDamagePerMPS;
+	[SerializeField]
+	private float minVelToDestroy;
+	[SerializeField]
+	private float velReduction;
+	[SerializeField]
+	private GameObjectRef barricadeDamageEffect;
+	private float nextEffectTime;
 
 
 	public bool CustomCollision(TrainCar train, TriggerTrainCollisions trainTrigger) { }

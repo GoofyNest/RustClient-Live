@@ -1,11 +1,11 @@
 public static class NativeArrayUnsafeUtility // TypeDefIndex: 3339
 {
 
-[AttributeUsageAttribute] 
-[RequiredByNativeCodeAttribute] 
+[AttributeUsageAttribute]
+[RequiredByNativeCodeAttribute]
 public sealed class NativeSetClassTypeToNullOnScheduleAttribute : Attribute
 
-[ExtensionAttribute] 
+[ExtensionAttribute]
 public static class NativeArrayUnsafeUtility
 
 	public static NativeArray<T> ConvertExistingDataToNativeArray<T>(void* dataPointer, int length, Allocator allocator) { }
@@ -31,7 +31,7 @@ public static class NativeArrayUnsafeUtility
 	|-NativeArrayUnsafeUtility.ConvertExistingDataToNativeArray<Vector4>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void* GetUnsafePtr<T>(NativeArray<T> nativeArray) { }
 	/* GenericInstMethod :
 	|
@@ -40,7 +40,7 @@ public static class NativeArrayUnsafeUtility
 	|-NativeArrayUnsafeUtility.GetUnsafePtr<float3>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void* GetUnsafeReadOnlyPtr<T>(NativeArray<T> nativeArray) { }
 	/* GenericInstMethod :
 	|

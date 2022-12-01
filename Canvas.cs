@@ -1,8 +1,8 @@
 public sealed class Canvas : Behaviour // TypeDefIndex: 4741
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Canvas.WillRenderCanvases willRenderCanvases; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Canvas.WillRenderCanvases willRenderCanvases;
 
 	public RenderMode renderMode { get; }
 	public bool isRootCanvas { get; }
@@ -17,14 +17,14 @@ public sealed class Canvas : Behaviour // TypeDefIndex: 4741
 	public int sortingLayerID { get; set; }
 	public AdditionalCanvasShaderChannels additionalShaderChannels { get; set; }
 	public Canvas rootCanvas { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public Camera worldCamera { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_willRenderCanvases(Canvas.WillRenderCanvases value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_willRenderCanvases(Canvas.WillRenderCanvases value) { }
 
 	public RenderMode get_renderMode() { }
@@ -69,15 +69,15 @@ public sealed class Canvas : Behaviour // TypeDefIndex: 4741
 
 	public void set_worldCamera(Camera value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Material GetDefaultCanvasMaterial() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static Material GetETC1SupportedCanvasMaterial() { }
 
 	public static void ForceUpdateCanvases() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void SendWillRenderCanvases() { }
 
 	public void .ctor() { }

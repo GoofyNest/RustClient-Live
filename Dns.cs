@@ -17,7 +17,7 @@ public static class Dns // TypeDefIndex: 2995
 
 	public static IPHostEntry GetHostEntry(IPAddress address) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static IPHostEntry GetHostByName(string hostName) { }
 
 	public static string GetHostName() { }

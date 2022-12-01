@@ -1,7 +1,7 @@
 internal struct LineInfo // TypeDefIndex: 1989
 {
-	internal int lineNo; 
-	internal int linePos; 
+	internal int lineNo;
+	internal int linePos;
 
 
 	public void .ctor(int lineNo, int linePos) { }

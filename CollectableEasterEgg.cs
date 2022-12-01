@@ -1,12 +1,12 @@
-public class CollectableEasterEgg : BaseEntity // TypeDefIndex: 10092
+public class CollectableEasterEgg : BaseEntity // TypeDefIndex: 10094
 {
-	private Option __menuOption_Menu_Pickup; 
-	public Transform artwork; 
-	public float bounceRange; 
-	public float bounceSpeed; 
-	public GameObjectRef pickupEffect; 
-	public ItemDefinition itemToGive; 
-	private float randOffset; 
+	private Option __menuOption_Menu_Pickup;
+	public Transform artwork;
+	public float bounceRange;
+	public float bounceSpeed;
+	public GameObjectRef pickupEffect;
+	public ItemDefinition itemToGive;
+	private float randOffset;
 
 	public override bool HasMenuOptions { get; }
 
@@ -25,10 +25,10 @@ public class CollectableEasterEgg : BaseEntity // TypeDefIndex: 10092
 
 	public void Update() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Pickup(BasePlayer player) { }
 
 	public void Menu_Pickup_Start() { }

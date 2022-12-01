@@ -1,26 +1,26 @@
-public class ChangeSignText : UIDialog // TypeDefIndex: 12648
+public class ChangeSignText : UIDialog // TypeDefIndex: 12662
 {
-	public Action<int, Texture2D> onUpdateTexture; 
-	public GameObject objectContainer; 
-	public GameObject currentFrameSection; 
-	public GameObject[] frameOptions; 
-	public Camera cameraPreview; 
-	public Camera camera3D; 
-	[CompilerGeneratedAttribute] 
-	private MeshPaintableSource[] <currentSources>k__BackingField; 
-	private List<GameObject> copiedObjects; 
-	private int currentFrame; 
-	private Dictionary<BaseMeshPaintable, ChangeSignText.UndoBuffer> undoBuffer; 
-	private static string savedContainerName; 
-	private static Vector3 savedContainerEuler; 
+	public Action<int, Texture2D> onUpdateTexture;
+	public GameObject objectContainer;
+	public GameObject currentFrameSection;
+	public GameObject[] frameOptions;
+	public Camera cameraPreview;
+	public Camera camera3D;
+	[CompilerGeneratedAttribute]
+	private MeshPaintableSource[] <currentSources>k__BackingField;
+	private List<GameObject> copiedObjects;
+	private int currentFrame;
+	private Dictionary<BaseMeshPaintable, ChangeSignText.UndoBuffer> undoBuffer;
+	private static string savedContainerName;
+	private static Vector3 savedContainerEuler;
 
 	public MeshPaintableSource[] currentSources { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshPaintableSource[] get_currentSources() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_currentSources(MeshPaintableSource[] value) { }
 
 	public void Setup(MeshPaintableSource[] sources) { }
@@ -57,12 +57,12 @@ public class ChangeSignText : UIDialog // TypeDefIndex: 12648
 
 }
 
-private class ChangeSignText.UndoBuffer : IDisposable // TypeDefIndex: 12649
+private class ChangeSignText.UndoBuffer : IDisposable // TypeDefIndex: 12663
 {
-	private List<Texture2D> buffer; 
-	private Texture2D startFrame; 
-	private int undoIndex; 
-	private int undoSteps; 
+	private List<Texture2D> buffer;
+	private Texture2D startFrame;
+	private int undoIndex;
+	private int undoSteps;
 
 	private int CurrentSlot { get; }
 	public bool IsUndoAvailable { get; }

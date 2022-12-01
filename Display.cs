@@ -1,11 +1,11 @@
 public class Display // TypeDefIndex: 3384
 {
-	internal IntPtr nativeDisplay; 
-	public static Display[] displays; 
-	private static Display _mainDisplay; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Display.DisplaysUpdatedDelegate onDisplaysUpdated; 
+	internal IntPtr nativeDisplay;
+	public static Display[] displays;
+	private static Display _mainDisplay;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Display.DisplaysUpdatedDelegate onDisplaysUpdated;
 
 	public int renderingWidth { get; }
 	public int renderingHeight { get; }
@@ -33,22 +33,22 @@ public class Display // TypeDefIndex: 3384
 
 	public static Display get_main() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void RecreateDisplayList(IntPtr[] nativeDisplay) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void FireDisplaysUpdated() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GetSystemExtImpl(IntPtr nativeDisplay, out int w, out int h) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GetRenderingExtImpl(IntPtr nativeDisplay, out int w, out int h) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static void GetRenderingBuffersImpl(IntPtr nativeDisplay, out RenderBuffer color, out RenderBuffer depth) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static int RelativeMouseAtImpl(int x, int y, out int rx, out int ry) { }
 
 	private static void .cctor() { }

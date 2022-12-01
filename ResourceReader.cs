@@ -1,19 +1,19 @@
 public sealed class ResourceReader : IResourceReader, IEnumerable, IDisposable // TypeDefIndex: 495
 {
-	private BinaryReader _store; 
-	internal Dictionary<string, ResourceLocator> _resCache; 
-	private long _nameSectionOffset; 
-	private long _dataSectionOffset; 
-	private int[] _nameHashes; 
-	private int* _nameHashesPtr; 
-	private int[] _namePositions; 
-	private int* _namePositionsPtr; 
-	private RuntimeType[] _typeTable; 
-	private int[] _typeNamePositions; 
-	private BinaryFormatter _objFormatter; 
-	private int _numResources; 
-	private UnmanagedMemoryStream _ums; 
-	private int _version; 
+	private BinaryReader _store;
+	internal Dictionary<string, ResourceLocator> _resCache;
+	private long _nameSectionOffset;
+	private long _dataSectionOffset;
+	private int[] _nameHashes;
+	private int* _nameHashesPtr;
+	private int[] _namePositions;
+	private int* _namePositionsPtr;
+	private RuntimeType[] _typeTable;
+	private int[] _typeNamePositions;
+	private BinaryFormatter _objFormatter;
+	private int _numResources;
+	private UnmanagedMemoryStream _ums;
+	private int _version;
 
 
 	internal void .ctor(Stream stream, Dictionary<string, ResourceLocator> resCache) { }
@@ -72,10 +72,10 @@ public sealed class ResourceReader : IResourceReader, IEnumerable, IDisposable /
 
 internal sealed class ResourceReader.ResourceEnumerator : IDictionaryEnumerator, IEnumerator // TypeDefIndex: 496
 {
-	private ResourceReader _reader; 
-	private bool _currentIsValid; 
-	private int _currentName; 
-	private int _dataPosition; 
+	private ResourceReader _reader;
+	private bool _currentIsValid;
+	private int _currentName;
+	private int _dataPosition;
 
 	public object Key { get; }
 	public object Current { get; }

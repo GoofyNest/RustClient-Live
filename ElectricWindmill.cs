@@ -1,14 +1,14 @@
-public class ElectricWindmill : IOEntity // TypeDefIndex: 10462
+public class ElectricWindmill : IOEntity // TypeDefIndex: 10466
 {
-	public Animator animator; 
-	public int maxPowerGeneration; 
-	public Transform vaneRot; 
-	public SoundDefinition wooshSound; 
-	public Transform wooshOrigin; 
-	public float targetSpeed; 
-	private float serverWindSpeed; 
-	private float lastServerTime; 
-	protected static int speedIndex; 
+	public Animator animator;
+	public int maxPowerGeneration;
+	public Transform vaneRot;
+	public SoundDefinition wooshSound;
+	public Transform wooshOrigin;
+	public float targetSpeed;
+	private float serverWindSpeed;
+	private float lastServerTime;
+	protected static int speedIndex;
 
 
 	public override int MaximalPowerOutput() { }

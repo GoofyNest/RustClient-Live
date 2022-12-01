@@ -1,17 +1,17 @@
-public struct OnIncomingPacketQueueFullInfo : ICallbackInfo // TypeDefIndex: 8972
+public struct OnIncomingPacketQueueFullInfo : ICallbackInfo // TypeDefIndex: 8974
 {
-	[CompilerGeneratedAttribute] 
-	private object <ClientData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <PacketQueueMaxSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <PacketQueueCurrentSizeBytes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <OverflowPacketLocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private byte <OverflowPacketChannel>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <OverflowPacketSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private object <ClientData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <PacketQueueMaxSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <PacketQueueCurrentSizeBytes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <OverflowPacketLocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private byte <OverflowPacketChannel>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <OverflowPacketSizeBytes>k__BackingField;
 
 	public object ClientData { get; set; }
 	public ulong PacketQueueMaxSizeBytes { get; set; }
@@ -21,40 +21,40 @@ public struct OnIncomingPacketQueueFullInfo : ICallbackInfo // TypeDefIndex: 897
 	public uint OverflowPacketSizeBytes { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public object get_ClientData() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientData(object value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_PacketQueueMaxSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PacketQueueMaxSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_PacketQueueCurrentSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PacketQueueCurrentSizeBytes(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_OverflowPacketLocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverflowPacketLocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public byte get_OverflowPacketChannel() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverflowPacketChannel(byte value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_OverflowPacketSizeBytes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OverflowPacketSizeBytes(uint value) { }
 
 	public Nullable<Result> GetResultCode() { }

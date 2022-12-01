@@ -1,17 +1,17 @@
-public class MinMaxAttribute : PropertyAttribute // TypeDefIndex: 13074
+public class MinMaxAttribute : PropertyAttribute // TypeDefIndex: 13089
 {
-	public float min; 
-	public float max; 
+	public float min;
+	public float max;
 
 
 	public void .ctor(float min, float max) { }
 
 }
 
-public sealed class MinMaxAttribute : Attribute // TypeDefIndex: 13540
+public sealed class MinMaxAttribute : Attribute // TypeDefIndex: 13556
 {
-	public readonly float min; 
-	public readonly float max; 
+	public readonly float min;
+	public readonly float max;
 
 
 	public void .ctor(float min, float max) { }

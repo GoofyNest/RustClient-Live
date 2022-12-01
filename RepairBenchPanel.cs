@@ -1,18 +1,18 @@
-public class RepairBenchPanel : LootPanel // TypeDefIndex: 12822
+public class RepairBenchPanel : LootPanel // TypeDefIndex: 12836
 {
-	public Text infoText; 
-	public Button repairButton; 
-	public Color gotColor; 
-	public Color notGotColor; 
-	public Translate.Phrase phraseEmpty; 
-	public Translate.Phrase phraseNotRepairable; 
-	public Translate.Phrase phraseRepairNotNeeded; 
-	public Translate.Phrase phraseNoBlueprint; 
-	public GameObject skinsPanel; 
-	public GameObject changeSkinDialog; 
-	public IconSkinPicker picker; 
-	public GameObject attachmentSkinBlocker; 
-	private Item _displayItem; 
+	public Text infoText;
+	public Button repairButton;
+	public Color gotColor;
+	public Color notGotColor;
+	public Translate.Phrase phraseEmpty;
+	public Translate.Phrase phraseNotRepairable;
+	public Translate.Phrase phraseRepairNotNeeded;
+	public Translate.Phrase phraseNoBlueprint;
+	public GameObject skinsPanel;
+	public GameObject changeSkinDialog;
+	public IconSkinPicker picker;
+	public GameObject attachmentSkinBlocker;
+	private Item _displayItem;
 
 	public Item item { get; }
 

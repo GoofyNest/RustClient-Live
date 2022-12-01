@@ -1,4 +1,4 @@
-public sealed class StatsInterface : Handle // TypeDefIndex: 8448
+public sealed class StatsInterface : Handle // TypeDefIndex: 8450
 {
 	public const int CopystatbyindexApiLatest = 1;
 	public const int CopystatbynameApiLatest = 1;
@@ -27,10 +27,10 @@ public sealed class StatsInterface : Handle // TypeDefIndex: 8448
 
 	public void QueryStats(ref QueryStatsOptions options, object clientData, OnQueryStatsCompleteCallback completionDelegate) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnIngestStatCompleteCallbackInternalImplementation(ref IngestStatCompleteCallbackInfoInternal data) { }
 
-	[MonoPInvokeCallbackAttribute] 
+	[MonoPInvokeCallbackAttribute]
 	internal static void OnQueryStatsCompleteCallbackInternalImplementation(ref OnQueryStatsCompleteCallbackInfoInternal data) { }
 
 }

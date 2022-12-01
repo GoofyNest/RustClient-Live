@@ -1,10 +1,10 @@
-public class FoliageRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 11615
+public class FoliageRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 11622
 {
-	public Material material; 
-	public Mesh LOD0; 
-	public Mesh LOD1; 
-	private FoliageGroup batchGroup; 
-	private MeshInstance batchInstance; 
+	public Material material;
+	public Mesh LOD0;
+	public Mesh LOD1;
+	private FoliageGroup batchGroup;
+	private MeshInstance batchInstance;
 
 
 	protected void OnEnable() { }

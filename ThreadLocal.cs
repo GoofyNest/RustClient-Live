@@ -1,15 +1,15 @@
 private struct ThreadLocal.LinkedSlotVolatile<T> // TypeDefIndex: 768
 {
-	internal ThreadLocal.LinkedSlot<T> Value; 
+	internal ThreadLocal.LinkedSlot<T> Value;
 
 }
 
 private sealed class ThreadLocal.LinkedSlot<T> // TypeDefIndex: 769
 {
-	internal ThreadLocal.LinkedSlot<T> Next; 
-	internal ThreadLocal.LinkedSlot<T> Previous; 
-	internal ThreadLocal.LinkedSlotVolatile<T>[] SlotArray; 
-	internal T Value; 
+	internal ThreadLocal.LinkedSlot<T> Next;
+	internal ThreadLocal.LinkedSlot<T> Previous;
+	internal ThreadLocal.LinkedSlotVolatile<T>[] SlotArray;
+	internal T Value;
 
 
 	internal void .ctor(ThreadLocal.LinkedSlotVolatile<T>[] slotArray) { }
@@ -22,8 +22,8 @@ private sealed class ThreadLocal.LinkedSlot<T> // TypeDefIndex: 769
 
 private class ThreadLocal.IdManager<T> // TypeDefIndex: 770
 {
-	private int m_nextIdToTry; 
-	private List<bool> m_freeIds; 
+	private int m_nextIdToTry;
+	private List<bool> m_freeIds;
 
 
 	internal int GetId() { }
@@ -48,8 +48,8 @@ private class ThreadLocal.IdManager<T> // TypeDefIndex: 770
 
 private class ThreadLocal.FinalizationHelper<T> // TypeDefIndex: 771
 {
-	internal ThreadLocal.LinkedSlotVolatile<T>[] SlotArray; 
-	private bool m_trackAllValues; 
+	internal ThreadLocal.LinkedSlotVolatile<T>[] SlotArray;
+	private bool m_trackAllValues;
 
 
 	internal void .ctor(ThreadLocal.LinkedSlotVolatile<T>[] slotArray, bool trackAllValues) { }

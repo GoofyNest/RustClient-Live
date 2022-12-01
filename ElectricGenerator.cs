@@ -1,6 +1,6 @@
-public class ElectricGenerator : IOEntity // TypeDefIndex: 11534
+public class ElectricGenerator : IOEntity // TypeDefIndex: 11541
 {
-	public float electricAmount; 
+	public float electricAmount;
 
 
 	public override bool IsRootEntity() { }

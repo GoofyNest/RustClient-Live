@@ -1,14 +1,14 @@
-public class WorldSpline : MonoBehaviour // TypeDefIndex: 13199
+public class WorldSpline : MonoBehaviour // TypeDefIndex: 13214
 {
-	public int dataIndex; 
-	public Vector3[] points; 
-	public Vector3[] tangents; 
-	[RangeAttribute] 
-	public float lutInterval; 
-	[SerializeField] 
-	private bool showGizmos; 
-	private static List<Vector3> visualSplineList; 
-	private WorldSplineData privateData; 
+	public int dataIndex;
+	public Vector3[] points;
+	public Vector3[] tangents;
+	[RangeAttribute]
+	public float lutInterval;
+	[SerializeField]
+	private bool showGizmos;
+	private static List<Vector3> visualSplineList;
+	private WorldSplineData privateData;
 
 
 	public WorldSplineData GetData() { }

@@ -1,4 +1,4 @@
-internal sealed class OnQueryStatsCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8441
+internal sealed class OnQueryStatsCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8443
 {
 
 	public void .ctor(object object, IntPtr method) { }

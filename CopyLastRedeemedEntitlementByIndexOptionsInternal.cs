@@ -1,8 +1,8 @@
-internal struct CopyLastRedeemedEntitlementByIndexOptionsInternal : ISettable<CopyLastRedeemedEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9442
+internal struct CopyLastRedeemedEntitlementByIndexOptionsInternal : ISettable<CopyLastRedeemedEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9444
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private uint m_RedeemedEntitlementIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private uint m_RedeemedEntitlementIndex;
 
 	public EpicAccountId LocalUserId { set; }
 	public uint RedeemedEntitlementIndex { set; }

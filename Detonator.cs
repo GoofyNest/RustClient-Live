@@ -1,15 +1,15 @@
-public class Detonator : HeldEntity, IRFObject // TypeDefIndex: 10285
+public class Detonator : HeldEntity, IRFObject // TypeDefIndex: 10288
 {
-	public int frequency; 
-	private float timeSinceDeploy; 
-	public GameObjectRef frequencyPanelPrefab; 
-	public GameObjectRef attackEffect; 
-	public GameObjectRef unAttackEffect; 
-	private float deployDelay; 
-	private bool wasAttacking; 
-	private float configProgress; 
-	private float attackHeldTime; 
-	private float attackReleasedTime; 
+	public int frequency;
+	private float timeSinceDeploy;
+	public GameObjectRef frequencyPanelPrefab;
+	public GameObjectRef attackEffect;
+	public GameObjectRef unAttackEffect;
+	private float deployDelay;
+	private bool wasAttacking;
+	private float configProgress;
+	private float attackHeldTime;
+	private float attackReleasedTime;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

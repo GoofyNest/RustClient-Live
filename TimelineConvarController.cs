@@ -1,7 +1,7 @@
-public class TimelineConvarController : PlayableAsset, ITimelineClipAsset // TypeDefIndex: 12532
+public class TimelineConvarController : PlayableAsset, ITimelineClipAsset // TypeDefIndex: 12545
 {
-	public string convarName; 
-	public TimelineConvarPlayable template; 
+	public string convarName;
+	public TimelineConvarPlayable template;
 
 	public ClipCaps clipCaps { get; }
 

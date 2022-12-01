@@ -1,4 +1,4 @@
-public class HitboxCollision : BaseCollision // TypeDefIndex: 10994
+public class HitboxCollision : BaseCollision // TypeDefIndex: 11000
 {
 
 	public override void TraceTest(HitTest test, List<TraceInfo> hits) { }

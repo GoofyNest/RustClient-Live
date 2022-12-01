@@ -1,7 +1,7 @@
 internal abstract class Ucs4Decoder : Decoder // TypeDefIndex: 2019
 {
-	internal byte[] lastBytes; 
-	internal int lastBytesCount; 
+	internal byte[] lastBytes;
+	internal int lastBytesCount;
 
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }

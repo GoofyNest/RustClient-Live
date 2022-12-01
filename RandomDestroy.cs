@@ -1,7 +1,7 @@
-public class RandomDestroy : MonoBehaviour // TypeDefIndex: 12103
+public class RandomDestroy : MonoBehaviour // TypeDefIndex: 12110
 {
-	public uint Seed; 
-	public float Probability; 
+	public uint Seed;
+	public float Probability;
 
 
 	protected void Start() { }

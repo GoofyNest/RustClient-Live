@@ -1,6 +1,6 @@
 internal enum TokenType // TypeDefIndex: 240
 {
-	public int value__; 
+	public int value__;
 	public const TokenType NumberToken = 1;
 	public const TokenType YearNumberToken = 2;
 	public const TokenType Am = 3;

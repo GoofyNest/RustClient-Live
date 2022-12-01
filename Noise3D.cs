@@ -1,8 +1,8 @@
-public static class Noise3D // TypeDefIndex: 13339
+public static class Noise3D // TypeDefIndex: 13354
 {
-	private static bool ms_IsSupportedChecked; 
-	private static bool ms_IsSupported; 
-	private static Texture3D ms_NoiseTexture; 
+	private static bool ms_IsSupportedChecked;
+	private static bool ms_IsSupported;
+	private static Texture3D ms_NoiseTexture;
 	private const HideFlags kHideFlags = 61;
 	private const int kMinShaderLevel = 35;
 
@@ -17,7 +17,7 @@ public static class Noise3D // TypeDefIndex: 13339
 
 	public static string get_isNotSupportedString() { }
 
-	[RuntimeInitializeOnLoadMethodAttribute] 
+	[RuntimeInitializeOnLoadMethodAttribute]
 	private static void OnStartUp() { }
 
 	public static void LoadIfNeeded() { }

@@ -1,7 +1,7 @@
-public class TreeManager : BaseEntity // TypeDefIndex: 10379
+public class TreeManager : BaseEntity // TypeDefIndex: 10383
 {
-	public static TreeManager client; 
-	private static Dictionary<uint, ImpostorInstanceData> trees; 
+	public static TreeManager client;
+	private static Dictionary<uint, ImpostorInstanceData> trees;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -26,13 +26,13 @@ public class TreeManager : BaseEntity // TypeDefIndex: 10379
 
 	private static ImpostorInstanceData CreateImpostorInstanceData(BaseEntity entity, Vector3 position, Vector3 scale) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void CLIENT_ReceiveTrees(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void CLIENT_TreeDestroyed(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void CLIENT_TreeSpawned(BaseEntity.RPCMessage msg) { }
 
 	public void .ctor() { }

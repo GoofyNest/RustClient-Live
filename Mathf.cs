@@ -1,30 +1,30 @@
 public struct Mathf // TypeDefIndex: 3470
 {
-	public static readonly float Epsilon; 
+	public static readonly float Epsilon;
 
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static int ClosestPowerOfTwo(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static bool IsPowerOfTwo(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static int NextPowerOfTwo(int value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float GammaToLinearSpace(float value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float LinearToGammaSpace(float value) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static ushort FloatToHalf(float val) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float HalfToFloat(ushort val) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float PerlinNoise(float x, float y) { }
 
 	public static float Sin(float f) { }
@@ -101,7 +101,7 @@ public struct Mathf // TypeDefIndex: 3470
 
 	public static bool Approximately(float a, float b) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static float SmoothDamp(float current, float target, ref float currentVelocity, float smoothTime) { }
 
 	public static float SmoothDamp(float current, float target, ref float currentVelocity, float smoothTime, float maxSpeed, float deltaTime) { }

@@ -1,10 +1,10 @@
-internal struct JoinGameAcceptedCallbackInfoInternal : ICallbackInfoInternal, IGettable<JoinGameAcceptedCallbackInfo>, ISettable<JoinGameAcceptedCallbackInfo>, IDisposable // TypeDefIndex: 8834
+internal struct JoinGameAcceptedCallbackInfoInternal : ICallbackInfoInternal, IGettable<JoinGameAcceptedCallbackInfo>, ISettable<JoinGameAcceptedCallbackInfo>, IDisposable // TypeDefIndex: 8836
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_JoinInfo; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_TargetUserId; 
-	private ulong m_UiEventId; 
+	private IntPtr m_ClientData;
+	private IntPtr m_JoinInfo;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_TargetUserId;
+	private ulong m_UiEventId;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

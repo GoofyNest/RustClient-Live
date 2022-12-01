@@ -1,21 +1,21 @@
-public class FoliageCell // TypeDefIndex: 11605
+public class FoliageCell // TypeDefIndex: 11612
 {
-	private static readonly ListHashSet<FoliagePlacement> EmptyPlacements; 
-	public Vector3 position; 
-	public FoliageGrid grid; 
-	public bool interrupt; 
-	public float lod; 
-	public uint seed; 
-	private ListHashSet<FoliagePlacement> placements; 
-	private ListDictionary<FoliageKey, FoliageGroup> batches; 
-	private Action initAsyncAction; 
+	private static readonly ListHashSet<FoliagePlacement> EmptyPlacements;
+	public Vector3 position;
+	public FoliageGrid grid;
+	public bool interrupt;
+	public float lod;
+	public uint seed;
+	private ListHashSet<FoliagePlacement> placements;
+	private ListDictionary<FoliageKey, FoliageGroup> batches;
+	private Action initAsyncAction;
 
 
 	public void .ctor(FoliageGrid grid, Vector3 position) { }
 
 	private void Init() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator InitAsync() { }
 
 	public bool NeedsRefresh() { }
@@ -28,7 +28,7 @@ public class FoliageCell // TypeDefIndex: 11605
 
 	public void Refresh(bool force = False) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	public IEnumerator RefreshAsync() { }
 
 	private float CalculateLOD() { }
@@ -43,66 +43,66 @@ public class FoliageCell // TypeDefIndex: 11605
 
 }
 
-private sealed class FoliageCell.<InitAsync>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11606
+private sealed class FoliageCell.<InitAsync>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11613
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public FoliageCell <>4__this; 
-	private IEnumerator <enumerator>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public FoliageCell <>4__this;
+	private IEnumerator <enumerator>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class FoliageCell.<RefreshAsync>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11607
+private sealed class FoliageCell.<RefreshAsync>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11614
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public FoliageCell <>4__this; 
-	private BufferList<FoliageGroup> <batchGroups>5__2; 
-	private IEnumerator <enumerator>5__3; 
-	private int <i>5__4; 
-	private FoliageGroup <batchGroup>5__5; 
-	private int <j>5__6; 
+	private int <>1__state;
+	private object <>2__current;
+	public FoliageCell <>4__this;
+	private BufferList<FoliageGroup> <batchGroups>5__2;
+	private IEnumerator <enumerator>5__3;
+	private int <i>5__4;
+	private FoliageGroup <batchGroup>5__5;
+	private int <j>5__6;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

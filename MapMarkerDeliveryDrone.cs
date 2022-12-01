@@ -1,6 +1,6 @@
-public class MapMarkerDeliveryDrone : MapMarker // TypeDefIndex: 10523
+public class MapMarkerDeliveryDrone : MapMarker // TypeDefIndex: 10527
 {
-	private RectTransform _rectTransform; 
+	private RectTransform _rectTransform;
 
 
 	public override void SetupUIMarker(GameObject marker) { }

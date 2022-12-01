@@ -1,10 +1,10 @@
-public class Reflection : ConsoleSystem // TypeDefIndex: 13746
+public class Reflection : ConsoleSystem // TypeDefIndex: 13762
 {
-	[ClientVar] 
+	[ClientVar]
 	public static int resolution { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static float updateinterval { get; set; }
-	[ClientVar] 
+	[ClientVar]
 	public static int timeslicing { get; set; }
 
 

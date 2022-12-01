@@ -1,9 +1,9 @@
-public class DoorCloser : BaseEntity // TypeDefIndex: 10100
+public class DoorCloser : BaseEntity // TypeDefIndex: 10102
 {
-	private Option __menuOption_Menu_Remove; 
-	[ItemSelector] 
-	public ItemDefinition itemType; 
-	public float delay; 
+	private Option __menuOption_Menu_Remove;
+	[ItemSelector]
+	public ItemDefinition itemType;
+	public float delay;
 
 	public override bool HasMenuOptions { get; }
 
@@ -18,10 +18,10 @@ public class DoorCloser : BaseEntity // TypeDefIndex: 10100
 
 	public Door GetDoor() { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_Remove(BasePlayer player) { }
 
 	public bool Menu_Remove_ShowIf(BasePlayer player) { }

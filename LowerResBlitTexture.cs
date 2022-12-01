@@ -1,7 +1,7 @@
 internal class LowerResBlitTexture : Object // TypeDefIndex: 3554
 {
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal void LowerResBlitTextureDontStripMe() { }
 
 }

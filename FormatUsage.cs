@@ -1,6 +1,6 @@
 public enum FormatUsage // TypeDefIndex: 3905
 {
-	public int value__; 
+	public int value__;
 	public const FormatUsage Sample = 0;
 	public const FormatUsage Linear = 1;
 	public const FormatUsage Sparse = 2;

@@ -1,13 +1,13 @@
 internal class Normalization // TypeDefIndex: 478
 {
-	private static byte* props; 
-	private static int* mappedChars; 
-	private static short* charMapIndex; 
-	private static short* helperIndex; 
-	private static ushort* mapIdxToComposite; 
-	private static byte* combiningClass; 
-	private static object forLock; 
-	public static readonly bool isReady; 
+	private static byte* props;
+	private static int* mappedChars;
+	private static short* charMapIndex;
+	private static short* helperIndex;
+	private static ushort* mapIdxToComposite;
+	private static byte* combiningClass;
+	private static object forLock;
+	public static readonly bool isReady;
 
 
 	private static uint PropValue(int cp) { }

@@ -1,10 +1,10 @@
-internal struct IngestStatOptionsInternal : ISettable<IngestStatOptions>, IDisposable // TypeDefIndex: 8437
+internal struct IngestStatOptionsInternal : ISettable<IngestStatOptions>, IDisposable // TypeDefIndex: 8439
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_Stats; 
-	private uint m_StatsCount; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_Stats;
+	private uint m_StatsCount;
+	private IntPtr m_TargetUserId;
 
 	public ProductUserId LocalUserId { set; }
 	public IngestData[] Stats { set; }

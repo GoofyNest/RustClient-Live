@@ -1,8 +1,8 @@
-internal struct CopyTransactionByIndexOptionsInternal : ISettable<CopyTransactionByIndexOptions>, IDisposable // TypeDefIndex: 9454
+internal struct CopyTransactionByIndexOptionsInternal : ISettable<CopyTransactionByIndexOptions>, IDisposable // TypeDefIndex: 9456
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private uint m_TransactionIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private uint m_TransactionIndex;
 
 	public EpicAccountId LocalUserId { set; }
 	public uint TransactionIndex { set; }

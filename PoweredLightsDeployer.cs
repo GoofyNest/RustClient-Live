@@ -1,12 +1,12 @@
-public class PoweredLightsDeployer : HeldEntity // TypeDefIndex: 10345
+public class PoweredLightsDeployer : HeldEntity // TypeDefIndex: 10349
 {
-	public GameObjectRef poweredLightsPrefab; 
-	public EntityRef activeLights; 
-	public MaterialReplacement guide; 
-	public GameObject guideObject; 
-	public float maxPlaceDistance; 
-	public float lengthPerAmount; 
-	private float nextClickTime; 
+	public GameObjectRef poweredLightsPrefab;
+	public EntityRef activeLights;
+	public MaterialReplacement guide;
+	public GameObject guideObject;
+	public float maxPlaceDistance;
+	public float lengthPerAmount;
+	private float nextClickTime;
 
 	public AdvancedChristmasLights active { get; set; }
 

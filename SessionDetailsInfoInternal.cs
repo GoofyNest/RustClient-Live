@@ -1,10 +1,10 @@
-internal struct SessionDetailsInfoInternal : IGettable<SessionDetailsInfo>, ISettable<SessionDetailsInfo>, IDisposable // TypeDefIndex: 8559
+internal struct SessionDetailsInfoInternal : IGettable<SessionDetailsInfo>, ISettable<SessionDetailsInfo>, IDisposable // TypeDefIndex: 8561
 {
-	private int m_ApiVersion; 
-	private IntPtr m_SessionId; 
-	private IntPtr m_HostAddress; 
-	private uint m_NumOpenPublicConnections; 
-	private IntPtr m_Settings; 
+	private int m_ApiVersion;
+	private IntPtr m_SessionId;
+	private IntPtr m_HostAddress;
+	private uint m_NumOpenPublicConnections;
+	private IntPtr m_Settings;
 
 	public Utf8String SessionId { get; set; }
 	public Utf8String HostAddress { get; set; }

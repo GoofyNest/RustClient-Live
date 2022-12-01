@@ -9,17 +9,17 @@ public static class Buffer // TypeDefIndex: 180
 
 	internal static void ZeroMemory(byte* src, long len) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal static void Memcpy(byte[] dest, int destIndex, byte* src, int srcIndex, int len) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal static void Memcpy(byte* pDest, int destIndex, byte[] src, int srcIndex, int len) { }
 
 	public static int ByteLength(Array array) { }
 
 	public static void BlockCopy(Array src, int srcOffset, Array dst, int dstOffset, int count) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public static void MemoryCopy(void* source, void* destination, long destinationSizeInBytes, long sourceBytesToCopy) { }
 
 	internal static void memcpy4(byte* dest, byte* src, int size) { }

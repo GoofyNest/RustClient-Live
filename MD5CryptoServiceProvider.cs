@@ -1,11 +1,11 @@
 public sealed class MD5CryptoServiceProvider : MD5 // TypeDefIndex: 1006
 {
-	private uint[] _H; 
-	private uint[] buff; 
-	private ulong count; 
-	private byte[] _ProcessingBuffer; 
-	private int _ProcessingBufferCount; 
-	private static readonly uint[] K; 
+	private uint[] _H;
+	private uint[] buff;
+	private ulong count;
+	private byte[] _ProcessingBuffer;
+	private int _ProcessingBufferCount;
+	private static readonly uint[] K;
 
 
 	public void .ctor() { }

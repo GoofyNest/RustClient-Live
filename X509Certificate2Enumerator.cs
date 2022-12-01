@@ -1,6 +1,6 @@
 public sealed class X509Certificate2Enumerator : IEnumerator // TypeDefIndex: 2816
 {
-	private IEnumerator enumerator; 
+	private IEnumerator enumerator;
 
 	public X509Certificate2 Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }

@@ -1,14 +1,14 @@
 public abstract class NameObjectCollectionBase : ICollection, IEnumerable, ISerializable, IDeserializationCallback // TypeDefIndex: 3102
 {
-	private bool _readOnly; 
-	private ArrayList _entriesArray; 
-	private IEqualityComparer _keyComparer; 
-	private Hashtable _entriesTable; 
-	private NameObjectCollectionBase.NameObjectEntry _nullKeyEntry; 
-	private SerializationInfo _serializationInfo; 
-	private int _version; 
-	private object _syncRoot; 
-	private static StringComparer defaultComparer; 
+	private bool _readOnly;
+	private ArrayList _entriesArray;
+	private IEqualityComparer _keyComparer;
+	private Hashtable _entriesTable;
+	private NameObjectCollectionBase.NameObjectEntry _nullKeyEntry;
+	private SerializationInfo _serializationInfo;
+	private int _version;
+	private object _syncRoot;
+	private static StringComparer defaultComparer;
 
 	protected bool IsReadOnly { get; }
 	public virtual int Count { get; }
@@ -65,8 +65,8 @@ public abstract class NameObjectCollectionBase : ICollection, IEnumerable, ISeri
 
 internal class NameObjectCollectionBase.NameObjectEntry // TypeDefIndex: 3103
 {
-	internal string Key; 
-	internal object Value; 
+	internal string Key;
+	internal object Value;
 
 
 	internal void .ctor(string name, object value) { }
@@ -75,9 +75,9 @@ internal class NameObjectCollectionBase.NameObjectEntry // TypeDefIndex: 3103
 
 internal class NameObjectCollectionBase.NameObjectKeysEnumerator : IEnumerator // TypeDefIndex: 3104
 {
-	private int _pos; 
-	private NameObjectCollectionBase _coll; 
-	private int _version; 
+	private int _pos;
+	private NameObjectCollectionBase _coll;
+	private int _version;
 
 	public object Current { get; }
 

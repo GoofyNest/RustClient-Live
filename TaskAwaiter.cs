@@ -1,6 +1,6 @@
 public struct TaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 1290
 {
-	private readonly Task m_task; 
+	private readonly Task m_task;
 
 	public bool IsCompleted { get; }
 

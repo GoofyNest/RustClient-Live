@@ -1,6 +1,6 @@
 public enum ParameterAttributes // TypeDefIndex: 544
 {
-	public int value__; 
+	public int value__;
 	public const ParameterAttributes None = 0;
 	public const ParameterAttributes In = 1;
 	public const ParameterAttributes Out = 2;

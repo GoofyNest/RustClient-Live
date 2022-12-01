@@ -1,10 +1,10 @@
 public sealed class CspParameters // TypeDefIndex: 947
 {
-	public int ProviderType; 
-	public string ProviderName; 
-	public string KeyContainerName; 
-	public int KeyNumber; 
-	private int m_flags; 
+	public int ProviderType;
+	public string ProviderName;
+	public string KeyContainerName;
+	public int KeyNumber;
+	private int m_flags;
 
 	public CspProviderFlags Flags { get; set; }
 

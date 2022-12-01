@@ -1,12 +1,12 @@
 internal class CodePageDataItem // TypeDefIndex: 735
 {
-	internal int m_dataIndex; 
-	internal int m_uiFamilyCodePage; 
-	internal string m_webName; 
-	internal string m_headerName; 
-	internal string m_bodyName; 
-	internal uint m_flags; 
-	private static readonly char[] sep; 
+	internal int m_dataIndex;
+	internal int m_uiFamilyCodePage;
+	internal string m_webName;
+	internal string m_headerName;
+	internal string m_bodyName;
+	internal uint m_flags;
+	private static readonly char[] sep;
 
 	public string WebName { get; }
 	public virtual int UIFamilyCodePage { get; }

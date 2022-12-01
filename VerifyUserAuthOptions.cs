@@ -1,15 +1,15 @@
-public struct VerifyUserAuthOptions // TypeDefIndex: 9710
+public struct VerifyUserAuthOptions // TypeDefIndex: 9712
 {
-	[CompilerGeneratedAttribute] 
-	private Nullable<Token> <AuthToken>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Nullable<Token> <AuthToken>k__BackingField;
 
 	public Nullable<Token> AuthToken { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<Token> get_AuthToken() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AuthToken(Nullable<Token> value) { }
 
 }

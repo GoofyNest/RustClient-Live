@@ -1,20 +1,20 @@
 public sealed class TimeZoneInfo : IEquatable<TimeZoneInfo>, ISerializable, IDeserializationCallback // TypeDefIndex: 314
 {
-	private TimeSpan baseUtcOffset; 
-	private string daylightDisplayName; 
-	private string displayName; 
-	private string id; 
-	private static TimeZoneInfo local; 
-	private List<KeyValuePair<DateTime, TimeType>> transitions; 
-	private static bool readlinkNotFound; 
-	private string standardDisplayName; 
-	private bool supportsDaylightSavingTime; 
-	private static TimeZoneInfo utc; 
-	private static string timeZoneDirectory; 
-	private TimeZoneInfo.AdjustmentRule[] adjustmentRules; 
-	private static RegistryKey timeZoneKey; 
-	private static RegistryKey localZoneKey; 
-	private static ReadOnlyCollection<TimeZoneInfo> systemTimeZones; 
+	private TimeSpan baseUtcOffset;
+	private string daylightDisplayName;
+	private string displayName;
+	private string id;
+	private static TimeZoneInfo local;
+	private List<KeyValuePair<DateTime, TimeType>> transitions;
+	private static bool readlinkNotFound;
+	private string standardDisplayName;
+	private bool supportsDaylightSavingTime;
+	private static TimeZoneInfo utc;
+	private static string timeZoneDirectory;
+	private TimeZoneInfo.AdjustmentRule[] adjustmentRules;
+	private static RegistryKey timeZoneKey;
+	private static RegistryKey localZoneKey;
+	private static ReadOnlyCollection<TimeZoneInfo> systemTimeZones;
 
 	public TimeSpan BaseUtcOffset { get; }
 	public string DisplayName { get; }
@@ -198,12 +198,12 @@ public sealed class TimeZoneInfo : IEquatable<TimeZoneInfo>, ISerializable, IDes
 
 public sealed class TimeZoneInfo.AdjustmentRule : IEquatable<TimeZoneInfo.AdjustmentRule>, ISerializable, IDeserializationCallback // TypeDefIndex: 315
 {
-	private DateTime m_dateStart; 
-	private DateTime m_dateEnd; 
-	private TimeSpan m_daylightDelta; 
-	private TimeZoneInfo.TransitionTime m_daylightTransitionStart; 
-	private TimeZoneInfo.TransitionTime m_daylightTransitionEnd; 
-	private TimeSpan m_baseUtcOffsetDelta; 
+	private DateTime m_dateStart;
+	private DateTime m_dateEnd;
+	private TimeSpan m_daylightDelta;
+	private TimeZoneInfo.TransitionTime m_daylightTransitionStart;
+	private TimeZoneInfo.TransitionTime m_daylightTransitionEnd;
+	private TimeSpan m_baseUtcOffsetDelta;
 
 	public DateTime DateStart { get; }
 	public DateTime DateEnd { get; }
@@ -244,12 +244,12 @@ public sealed class TimeZoneInfo.AdjustmentRule : IEquatable<TimeZoneInfo.Adjust
 
 public struct TimeZoneInfo.TransitionTime : IEquatable<TimeZoneInfo.TransitionTime>, ISerializable, IDeserializationCallback // TypeDefIndex: 316
 {
-	private DateTime m_timeOfDay; 
-	private byte m_month; 
-	private byte m_week; 
-	private byte m_day; 
-	private DayOfWeek m_dayOfWeek; 
-	private bool m_isFixedDateRule; 
+	private DateTime m_timeOfDay;
+	private byte m_month;
+	private byte m_week;
+	private byte m_day;
+	private DayOfWeek m_dayOfWeek;
+	private bool m_isFixedDateRule;
 
 	public DateTime TimeOfDay { get; }
 	public int Month { get; }
@@ -297,41 +297,41 @@ public struct TimeZoneInfo.TransitionTime : IEquatable<TimeZoneInfo.TransitionTi
 
 internal struct TimeZoneInfo.SYSTEMTIME // TypeDefIndex: 317
 {
-	internal ushort wYear; 
-	internal ushort wMonth; 
-	internal ushort wDayOfWeek; 
-	internal ushort wDay; 
-	internal ushort wHour; 
-	internal ushort wMinute; 
-	internal ushort wSecond; 
-	internal ushort wMilliseconds; 
+	internal ushort wYear;
+	internal ushort wMonth;
+	internal ushort wDayOfWeek;
+	internal ushort wDay;
+	internal ushort wHour;
+	internal ushort wMinute;
+	internal ushort wSecond;
+	internal ushort wMilliseconds;
 
 }
 
 internal struct TimeZoneInfo.TIME_ZONE_INFORMATION // TypeDefIndex: 318
 {
-	internal int Bias; 
-	internal string StandardName; 
-	internal TimeZoneInfo.SYSTEMTIME StandardDate; 
-	internal int StandardBias; 
-	internal string DaylightName; 
-	internal TimeZoneInfo.SYSTEMTIME DaylightDate; 
-	internal int DaylightBias; 
+	internal int Bias;
+	internal string StandardName;
+	internal TimeZoneInfo.SYSTEMTIME StandardDate;
+	internal int StandardBias;
+	internal string DaylightName;
+	internal TimeZoneInfo.SYSTEMTIME DaylightDate;
+	internal int DaylightBias;
 
 }
 
 internal struct TimeZoneInfo.DYNAMIC_TIME_ZONE_INFORMATION // TypeDefIndex: 319
 {
-	internal TimeZoneInfo.TIME_ZONE_INFORMATION TZI; 
-	internal string TimeZoneKeyName; 
-	internal byte DynamicDaylightTimeDisabled; 
+	internal TimeZoneInfo.TIME_ZONE_INFORMATION TZI;
+	internal string TimeZoneKeyName;
+	internal byte DynamicDaylightTimeDisabled;
 
 }
 
 private sealed class TimeZoneInfo.<>c // TypeDefIndex: 320
 {
-	public static readonly TimeZoneInfo.<>c <>9; 
-	public static Comparison<TimeZoneInfo.AdjustmentRule> <>9__19_0; 
+	public static readonly TimeZoneInfo.<>c <>9;
+	public static Comparison<TimeZoneInfo.AdjustmentRule> <>9__19_0;
 
 
 	private static void .cctor() { }

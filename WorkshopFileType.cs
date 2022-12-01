@@ -1,6 +1,6 @@
 internal enum WorkshopFileType // TypeDefIndex: 5159
 {
-	public int value__; 
+	public int value__;
 	public const WorkshopFileType First = 0;
 	public const WorkshopFileType Community = 0;
 	public const WorkshopFileType Microtransaction = 1;

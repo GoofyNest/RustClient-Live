@@ -1,8 +1,8 @@
-public struct Triangle // TypeDefIndex: 6604
+public struct Triangle // TypeDefIndex: 6606
 {
-	public Vector3 point0; 
-	public Vector3 point1; 
-	public Vector3 point2; 
+	public Vector3 point0;
+	public Vector3 point1;
+	public Vector3 point2;
 
 	public Vector3 Normal { get; }
 	public Vector3 Center { get; }

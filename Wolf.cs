@@ -1,7 +1,7 @@
-public class Wolf : BaseAnimalNPC // TypeDefIndex: 10670
+public class Wolf : BaseAnimalNPC // TypeDefIndex: 10674
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override float RealisticMass { get; }
 	public override BaseEntity.TraitFlag Traits { get; }

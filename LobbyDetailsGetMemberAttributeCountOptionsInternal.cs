@@ -1,7 +1,7 @@
-internal struct LobbyDetailsGetMemberAttributeCountOptionsInternal : ISettable<LobbyDetailsGetMemberAttributeCountOptions>, IDisposable // TypeDefIndex: 9146
+internal struct LobbyDetailsGetMemberAttributeCountOptionsInternal : ISettable<LobbyDetailsGetMemberAttributeCountOptions>, IDisposable // TypeDefIndex: 9148
 {
-	private int m_ApiVersion; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_TargetUserId;
 
 	public ProductUserId TargetUserId { set; }
 

@@ -9,26 +9,26 @@ internal static class Debug // TypeDefIndex: 2456
 
 public class Debug // TypeDefIndex: 3371
 {
-	internal static ILogger s_Logger; 
+	internal static ILogger s_Logger;
 
 	public static ILogger unityLogger { get; }
 
 
 	public static ILogger get_unityLogger() { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static void DrawLine(Vector3 start, Vector3 end, Color color, float duration) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static void DrawLine(Vector3 start, Vector3 end, Color color) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static void DrawLine(Vector3 start, Vector3 end, Color color, float duration, bool depthTest) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static void DrawRay(Vector3 start, Vector3 dir, Color color, float duration) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static void DrawRay(Vector3 start, Vector3 dir, Color color) { }
 
 	public static void DrawRay(Vector3 start, Vector3 dir, Color color, float duration, bool depthTest) { }
@@ -59,19 +59,19 @@ public class Debug // TypeDefIndex: 3371
 
 	public static void LogWarningFormat(Object context, string format, object[] args) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void Assert(bool condition) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void Assert(bool condition, string message) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void Assert(bool condition, string message, Object context) { }
 
-	[ConditionalAttribute] 
+	[ConditionalAttribute]
 	public static void LogAssertion(object message) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static bool CallOverridenDebugHandler(Exception exception, Object obj) { }
 
 	private static void .cctor() { }

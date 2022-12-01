@@ -1,8 +1,8 @@
-internal struct UpdateParentEmailOptionsInternal : ISettable<UpdateParentEmailOptions>, IDisposable // TypeDefIndex: 9367
+internal struct UpdateParentEmailOptionsInternal : ISettable<UpdateParentEmailOptions>, IDisposable // TypeDefIndex: 9369
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_ParentEmail; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_ParentEmail;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String ParentEmail { set; }

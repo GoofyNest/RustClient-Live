@@ -1,4 +1,4 @@
-public class SceneField // TypeDefIndex: 6170
+public class SceneField // TypeDefIndex: 6172
 {
 
 public static class SteamworksDataDummy
@@ -9,10 +9,10 @@ internal class <Module>
 
 [Serializable]
 public class SceneField
-	[SerializeField] 
-	private Object sceneAsset; 
-	[SerializeField] 
-	private string sceneName; 
+	[SerializeField]
+	private Object sceneAsset;
+	[SerializeField]
+	private string sceneName;
 
 	public string SceneName { get; }
 

@@ -1,15 +1,15 @@
-public struct SessionDetailsCopySessionAttributeByKeyOptions // TypeDefIndex: 8554
+public struct SessionDetailsCopySessionAttributeByKeyOptions // TypeDefIndex: 8556
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <AttrKey>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <AttrKey>k__BackingField;
 
 	public Utf8String AttrKey { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_AttrKey() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AttrKey(Utf8String value) { }
 
 }

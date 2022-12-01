@@ -1,39 +1,39 @@
-public class Chainsaw : BaseMelee // TypeDefIndex: 10269
+public class Chainsaw : BaseMelee // TypeDefIndex: 10272
 {
-	public float attackFadeInTime; 
-	public float attackFadeInDelay; 
-	public float attackFadeOutTime; 
-	public float idleFadeInTimeFromOff; 
-	public float idleFadeInTimeFromAttack; 
-	public float idleFadeInDelay; 
-	public float idleFadeOutTime; 
-	private bool wasEngineOn; 
-	private bool wasAttackingAudio; 
-	public Renderer chainRenderer; 
-	private MaterialPropertyBlock block; 
-	private Vector2 saveST; 
-	private float chainSpeed; 
-	private float chainAmount; 
-	private float chainSpinUpRate; 
-	[HeaderAttribute] 
-	public float fuelPerSec; 
-	public int maxAmmo; 
-	public int ammo; 
-	public ItemDefinition fuelType; 
-	public float reloadDuration; 
-	[HeaderAttribute] 
-	public SoundPlayer idleLoop; 
-	public SoundPlayer attackLoopAir; 
-	public SoundPlayer revUp; 
-	public SoundPlayer revDown; 
-	public SoundPlayer offSound; 
-	private string lastHitMaterial; 
-	private float lastHitTime; 
-	private float nextReleaseTime; 
-	private float nextPressTime; 
-	private bool wasAttacking; 
-	private float reloadFinishedTime; 
-	public float engineStartChance; 
+	public float attackFadeInTime;
+	public float attackFadeInDelay;
+	public float attackFadeOutTime;
+	public float idleFadeInTimeFromOff;
+	public float idleFadeInTimeFromAttack;
+	public float idleFadeInDelay;
+	public float idleFadeOutTime;
+	private bool wasEngineOn;
+	private bool wasAttackingAudio;
+	public Renderer chainRenderer;
+	private MaterialPropertyBlock block;
+	private Vector2 saveST;
+	private float chainSpeed;
+	private float chainAmount;
+	private float chainSpinUpRate;
+	[HeaderAttribute]
+	public float fuelPerSec;
+	public int maxAmmo;
+	public int ammo;
+	public ItemDefinition fuelType;
+	public float reloadDuration;
+	[HeaderAttribute]
+	public SoundPlayer idleLoop;
+	public SoundPlayer attackLoopAir;
+	public SoundPlayer revUp;
+	public SoundPlayer revDown;
+	public SoundPlayer offSound;
+	private string lastHitMaterial;
+	private float lastHitTime;
+	private float nextReleaseTime;
+	private float nextPressTime;
+	private bool wasAttacking;
+	private float reloadFinishedTime;
+	public float engineStartChance;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

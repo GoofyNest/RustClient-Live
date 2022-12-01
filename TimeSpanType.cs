@@ -1,6 +1,6 @@
-public enum TimeSpanType // TypeDefIndex: 7512
+public enum TimeSpanType // TypeDefIndex: 7514
 {
-	public int value__; 
+	public int value__;
 	public const TimeSpanType Metric = 0;
 	public const TimeSpanType Musical = 1;
 	public const TimeSpanType BarBeatTicks = 2;

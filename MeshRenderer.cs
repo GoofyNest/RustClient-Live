@@ -1,7 +1,7 @@
 public class MeshRenderer : Renderer // TypeDefIndex: 3438
 {
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private void DontStripMeshRenderer() { }
 
 }

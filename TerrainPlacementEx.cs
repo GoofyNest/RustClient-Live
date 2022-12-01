@@ -1,10 +1,10 @@
-public static class TerrainPlacementEx // TypeDefIndex: 12346
+public static class TerrainPlacementEx // TypeDefIndex: 12354
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyTerrainPlacements(Transform transform, TerrainPlacement[] placements, Vector3 pos, Quaternion rot, Vector3 scale) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void ApplyTerrainPlacements(Transform transform, TerrainPlacement[] placements) { }
 
 }

@@ -19,9 +19,9 @@ internal static class TaskToApm // TypeDefIndex: 890
 
 private sealed class TaskToApm.TaskWrapperAsyncResult : IAsyncResult // TypeDefIndex: 891
 {
-	internal readonly Task Task; 
-	private readonly object m_state; 
-	private readonly bool m_completedSynchronously; 
+	internal readonly Task Task;
+	private readonly object m_state;
+	private readonly bool m_completedSynchronously;
 
 	private object System.IAsyncResult.AsyncState { get; }
 	private bool System.IAsyncResult.CompletedSynchronously { get; }
@@ -43,8 +43,8 @@ private sealed class TaskToApm.TaskWrapperAsyncResult : IAsyncResult // TypeDefI
 
 private sealed class TaskToApm.<>c__DisplayClass3_0 // TypeDefIndex: 892
 {
-	public AsyncCallback callback; 
-	public IAsyncResult asyncResult; 
+	public AsyncCallback callback;
+	public IAsyncResult asyncResult;
 
 
 	public void .ctor() { }

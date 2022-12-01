@@ -1,6 +1,6 @@
-public class SystemInfoGeneralText : MonoBehaviour // TypeDefIndex: 11025
+public class SystemInfoGeneralText : MonoBehaviour // TypeDefIndex: 11031
 {
-	public TextMeshProUGUI text; 
+	public TextMeshProUGUI text;
 
 	public static string currentInfo { get; }
 

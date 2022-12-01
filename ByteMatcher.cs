@@ -1,7 +1,7 @@
 internal class ByteMatcher // TypeDefIndex: 397
 {
-	private Hashtable map; 
-	private Hashtable starts; 
+	private Hashtable map;
+	private Hashtable starts;
 
 
 	public void AddMapping(TermInfoStrings key, byte[] val) { }

@@ -1,9 +1,9 @@
 internal class TypeTranslator // TypeDefIndex: 2064
 {
-	private static Hashtable nameCache; 
-	private static Hashtable primitiveTypes; 
-	private static Hashtable primitiveArrayTypes; 
-	private static Hashtable nullableTypes; 
+	private static Hashtable nameCache;
+	private static Hashtable primitiveTypes;
+	private static Hashtable primitiveArrayTypes;
+	private static Hashtable nullableTypes;
 
 
 	private static void .cctor() { }

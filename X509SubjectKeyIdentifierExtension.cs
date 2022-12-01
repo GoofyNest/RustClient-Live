@@ -2,9 +2,9 @@ public sealed class X509SubjectKeyIdentifierExtension : X509Extension // TypeDef
 {
 	internal const string oid = "2.5.29.14";
 	internal const string friendlyName = "Subject Key Identifier";
-	private byte[] _subjectKeyIdentifier; 
-	private string _ski; 
-	private AsnDecodeStatus _status; 
+	private byte[] _subjectKeyIdentifier;
+	private string _ski;
+	private AsnDecodeStatus _status;
 
 	public string SubjectKeyIdentifier { get; }
 

@@ -1,10 +1,10 @@
-internal struct QueryProductUserIdMappingsOptionsInternal : ISettable<QueryProductUserIdMappingsOptions>, IDisposable // TypeDefIndex: 9630
+internal struct QueryProductUserIdMappingsOptionsInternal : ISettable<QueryProductUserIdMappingsOptions>, IDisposable // TypeDefIndex: 9632
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private ExternalAccountType m_AccountIdType_DEPRECATED; 
-	private IntPtr m_ProductUserIds; 
-	private uint m_ProductUserIdCount; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private ExternalAccountType m_AccountIdType_DEPRECATED;
+	private IntPtr m_ProductUserIds;
+	private uint m_ProductUserIdCount;
 
 	public ProductUserId LocalUserId { set; }
 	public ExternalAccountType AccountIdType_DEPRECATED { set; }

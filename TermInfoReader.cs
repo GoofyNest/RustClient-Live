@@ -1,10 +1,10 @@
 internal class TermInfoReader // TypeDefIndex: 399
 {
-	private short boolSize; 
-	private short numSize; 
-	private short strOffsets; 
-	private byte[] buffer; 
-	private int booleansOffset; 
+	private short boolSize;
+	private short numSize;
+	private short strOffsets;
+	private byte[] buffer;
+	private int booleansOffset;
 
 
 	public void .ctor(string term, string filename) { }

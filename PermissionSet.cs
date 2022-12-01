@@ -1,11 +1,11 @@
 public class PermissionSet : ISecurityEncodable, ICollection, IEnumerable, IDeserializationCallback // TypeDefIndex: 902
 {
-	private static object[] psUnrestricted; 
-	private PermissionState state; 
-	private ArrayList list; 
-	private bool _declsec; 
-	private bool[] _ignored; 
-	private static object[] action; 
+	private static object[] psUnrestricted;
+	private PermissionState state;
+	private ArrayList list;
+	private bool _declsec;
+	private bool[] _ignored;
+	private static object[] action;
 
 	public virtual int Count { get; }
 	public virtual object SyncRoot { get; }
@@ -37,13 +37,13 @@ public class PermissionSet : ISecurityEncodable, ICollection, IEnumerable, IDese
 
 	public virtual object get_SyncRoot() { }
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool Equals(object obj) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetHashCode() { }
 
 	private static void .cctor() { }

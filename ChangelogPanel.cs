@@ -1,11 +1,11 @@
-public class ChangelogPanel : MonoBehaviour // TypeDefIndex: 12762
+public class ChangelogPanel : MonoBehaviour // TypeDefIndex: 12776
 {
-	public GameObject AddedHeader; 
-	public GameObject RemovedHeader; 
-	public GameObject ChangedHeader; 
-	public RustText AddedContent; 
-	public RustText RemovedContent; 
-	public RustText ChangedContent; 
+	public GameObject AddedHeader;
+	public GameObject RemovedHeader;
+	public GameObject ChangedHeader;
+	public RustText AddedContent;
+	public RustText RemovedContent;
+	public RustText ChangedContent;
 
 
 	public void Open() { }
@@ -22,9 +22,9 @@ public class ChangelogPanel : MonoBehaviour // TypeDefIndex: 12762
 
 }
 
-private enum ChangelogPanel.ChangelogSection // TypeDefIndex: 12763
+private enum ChangelogPanel.ChangelogSection // TypeDefIndex: 12777
 {
-	public int value__; 
+	public int value__;
 	public const ChangelogPanel.ChangelogSection Added = 0;
 	public const ChangelogPanel.ChangelogSection Removed = 1;
 	public const ChangelogPanel.ChangelogSection Changed = 2;

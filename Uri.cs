@@ -1,32 +1,32 @@
 internal class Uri // TypeDefIndex: 52
 {
-	private bool isUnixFilePath; 
-	private string source; 
-	private string scheme; 
-	private string host; 
-	private int port; 
-	private string path; 
-	private string query; 
-	private string fragment; 
-	private string userinfo; 
-	private bool isUnc; 
-	private bool isOpaquePart; 
-	private bool userEscaped; 
-	private string cachedToString; 
-	private string cachedLocalPath; 
-	private int cachedHashCode; 
-	private bool reduce; 
-	private static readonly string hexUpperChars; 
-	public static readonly string SchemeDelimiter; 
-	public static readonly string UriSchemeFile; 
-	public static readonly string UriSchemeFtp; 
-	public static readonly string UriSchemeGopher; 
-	public static readonly string UriSchemeHttp; 
-	public static readonly string UriSchemeHttps; 
-	public static readonly string UriSchemeMailto; 
-	public static readonly string UriSchemeNews; 
-	public static readonly string UriSchemeNntp; 
-	private static Uri.UriScheme[] schemes; 
+	private bool isUnixFilePath;
+	private string source;
+	private string scheme;
+	private string host;
+	private int port;
+	private string path;
+	private string query;
+	private string fragment;
+	private string userinfo;
+	private bool isUnc;
+	private bool isOpaquePart;
+	private bool userEscaped;
+	private string cachedToString;
+	private string cachedLocalPath;
+	private int cachedHashCode;
+	private bool reduce;
+	private static readonly string hexUpperChars;
+	public static readonly string SchemeDelimiter;
+	public static readonly string UriSchemeFile;
+	public static readonly string UriSchemeFtp;
+	public static readonly string UriSchemeGopher;
+	public static readonly string UriSchemeHttp;
+	public static readonly string UriSchemeHttps;
+	public static readonly string UriSchemeMailto;
+	public static readonly string UriSchemeNews;
+	public static readonly string UriSchemeNntp;
+	private static Uri.UriScheme[] schemes;
 
 	public string AbsolutePath { get; }
 	public bool IsFile { get; }
@@ -98,9 +98,9 @@ internal class Uri // TypeDefIndex: 52
 
 private struct Uri.UriScheme // TypeDefIndex: 53
 {
-	public string scheme; 
-	public string delimiter; 
-	public int defaultPort; 
+	public string scheme;
+	public string delimiter;
+	public int defaultPort;
 
 
 	public void .ctor(string s, string d, int p) { }
@@ -109,42 +109,42 @@ private struct Uri.UriScheme // TypeDefIndex: 53
 
 public class Uri : ISerializable // TypeDefIndex: 2568
 {
-	public static readonly string UriSchemeFile; 
-	public static readonly string UriSchemeFtp; 
-	public static readonly string UriSchemeGopher; 
-	public static readonly string UriSchemeHttp; 
-	public static readonly string UriSchemeHttps; 
-	internal static readonly string UriSchemeWs; 
-	internal static readonly string UriSchemeWss; 
-	public static readonly string UriSchemeMailto; 
-	public static readonly string UriSchemeNews; 
-	public static readonly string UriSchemeNntp; 
-	public static readonly string UriSchemeNetTcp; 
-	public static readonly string UriSchemeNetPipe; 
-	public static readonly string SchemeDelimiter; 
+	public static readonly string UriSchemeFile;
+	public static readonly string UriSchemeFtp;
+	public static readonly string UriSchemeGopher;
+	public static readonly string UriSchemeHttp;
+	public static readonly string UriSchemeHttps;
+	internal static readonly string UriSchemeWs;
+	internal static readonly string UriSchemeWss;
+	public static readonly string UriSchemeMailto;
+	public static readonly string UriSchemeNews;
+	public static readonly string UriSchemeNntp;
+	public static readonly string UriSchemeNetTcp;
+	public static readonly string UriSchemeNetPipe;
+	public static readonly string SchemeDelimiter;
 	private const int c_Max16BitUtf8SequenceLength = 12;
 	internal const int c_MaxUriBufferSize = 65520;
 	private const int c_MaxUriSchemeName = 1024;
-	private string m_String; 
-	private string m_originalUnicodeString; 
-	private UriParser m_Syntax; 
-	private string m_DnsSafeHost; 
-	private Uri.Flags m_Flags; 
-	private Uri.UriInfo m_Info; 
-	private bool m_iriParsing; 
-	private static bool s_ConfigInitialized; 
-	private static bool s_ConfigInitializing; 
-	private static UriIdnScope s_IdnScope; 
-	private static bool s_IriParsing; 
-	private static bool useDotNetRelativeOrAbsolute; 
+	private string m_String;
+	private string m_originalUnicodeString;
+	private UriParser m_Syntax;
+	private string m_DnsSafeHost;
+	private Uri.Flags m_Flags;
+	private Uri.UriInfo m_Info;
+	private bool m_iriParsing;
+	private static bool s_ConfigInitialized;
+	private static bool s_ConfigInitializing;
+	private static UriIdnScope s_IdnScope;
+	private static bool s_IriParsing;
+	private static bool useDotNetRelativeOrAbsolute;
 	private const UriKind DotNetRelativeOrAbsolute = 300;
-	internal static readonly bool IsWindowsFileSystem; 
-	private static object s_initLock; 
+	internal static readonly bool IsWindowsFileSystem;
+	private static object s_initLock;
 	private const UriFormat V1ToStringUnescape = 32767;
 	internal const char c_DummyChar = '\xffff';
 	internal const char c_EOL = '\xfffe';
-	internal static readonly char[] HexLowerChars; 
-	private static readonly char[] _WSchars; 
+	internal static readonly char[] HexLowerChars;
+	private static readonly char[] _WSchars;
 
 	private bool IsImplicitFile { get; }
 	private bool IsUncOrDosPath { get; }
@@ -432,7 +432,7 @@ public class Uri : ISerializable // TypeDefIndex: 2568
 
 private enum Uri.Flags // TypeDefIndex: 2569
 {
-	public ulong value__; 
+	public ulong value__;
 	public const Uri.Flags Zero = 0;
 	public const Uri.Flags SchemeNotCanonical = 1;
 	public const Uri.Flags UserNotCanonical = 2;
@@ -493,12 +493,12 @@ private enum Uri.Flags // TypeDefIndex: 2569
 
 private class Uri.UriInfo // TypeDefIndex: 2570
 {
-	public string Host; 
-	public string ScopeId; 
-	public string String; 
-	public Uri.Offset Offset; 
-	public string DnsSafeHost; 
-	public Uri.MoreInfo MoreInfo; 
+	public string Host;
+	public string ScopeId;
+	public string String;
+	public Uri.Offset Offset;
+	public string DnsSafeHost;
+	public Uri.MoreInfo MoreInfo;
 
 
 	public void .ctor() { }
@@ -507,25 +507,25 @@ private class Uri.UriInfo // TypeDefIndex: 2570
 
 private struct Uri.Offset // TypeDefIndex: 2571
 {
-	public ushort Scheme; 
-	public ushort User; 
-	public ushort Host; 
-	public ushort PortValue; 
-	public ushort Path; 
-	public ushort Query; 
-	public ushort Fragment; 
-	public ushort End; 
+	public ushort Scheme;
+	public ushort User;
+	public ushort Host;
+	public ushort PortValue;
+	public ushort Path;
+	public ushort Query;
+	public ushort Fragment;
+	public ushort End;
 
 }
 
 private class Uri.MoreInfo // TypeDefIndex: 2572
 {
-	public string Path; 
-	public string Query; 
-	public string Fragment; 
-	public string AbsoluteUri; 
-	public int Hash; 
-	public string RemoteUrl; 
+	public string Path;
+	public string Query;
+	public string Fragment;
+	public string AbsoluteUri;
+	public int Hash;
+	public string RemoteUrl;
 
 
 	public void .ctor() { }
@@ -534,7 +534,7 @@ private class Uri.MoreInfo // TypeDefIndex: 2572
 
 private enum Uri.Check // TypeDefIndex: 2573
 {
-	public int value__; 
+	public int value__;
 	public const Uri.Check None = 0;
 	public const Uri.Check EscapedCanonical = 1;
 	public const Uri.Check DisplayCanonical = 2;

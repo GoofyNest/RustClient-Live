@@ -1,7 +1,7 @@
 internal struct SafeStringMarshal : IDisposable // TypeDefIndex: 22
 {
-	private readonly string str; 
-	private IntPtr marshaled_string; 
+	private readonly string str;
+	private IntPtr marshaled_string;
 
 	public IntPtr Value { get; }
 

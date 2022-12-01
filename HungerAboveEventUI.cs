@@ -1,4 +1,4 @@
-public class HungerAboveEventUI : BaseEventUI // TypeDefIndex: 12552
+public class HungerAboveEventUI : BaseEventUI // TypeDefIndex: 12565
 {
 
 	public override AIEventData Save() { }

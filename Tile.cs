@@ -1,17 +1,17 @@
 public class Tile : TileBase // TypeDefIndex: 4571
 {
-	[SerializeField] 
-	private Sprite m_Sprite; 
-	[SerializeField] 
-	private Color m_Color; 
-	[SerializeField] 
-	private Matrix4x4 m_Transform; 
-	[SerializeField] 
-	private GameObject m_InstancedGameObject; 
-	[SerializeField] 
-	private TileFlags m_Flags; 
-	[SerializeField] 
-	private Tile.ColliderType m_ColliderType; 
+	[SerializeField]
+	private Sprite m_Sprite;
+	[SerializeField]
+	private Color m_Color;
+	[SerializeField]
+	private Matrix4x4 m_Transform;
+	[SerializeField]
+	private GameObject m_InstancedGameObject;
+	[SerializeField]
+	private TileFlags m_Flags;
+	[SerializeField]
+	private Tile.ColliderType m_ColliderType;
 
 	public Sprite sprite { get; set; }
 	public Color color { get; set; }
@@ -53,7 +53,7 @@ public class Tile : TileBase // TypeDefIndex: 4571
 
 public enum Tile.ColliderType // TypeDefIndex: 4572
 {
-	public int value__; 
+	public int value__;
 	public const Tile.ColliderType None = 0;
 	public const Tile.ColliderType Sprite = 1;
 	public const Tile.ColliderType Grid = 2;

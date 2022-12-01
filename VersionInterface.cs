@@ -1,12 +1,12 @@
-public sealed class VersionInterface // TypeDefIndex: 8296
+public sealed class VersionInterface // TypeDefIndex: 8298
 {
-	public static readonly Utf8String CompanyName; 
-	public static readonly Utf8String CopyrightString; 
+	public static readonly Utf8String CompanyName;
+	public static readonly Utf8String CopyrightString;
 	public const int MajorVersion = 1;
 	public const int MinorVersion = 15;
 	public const int PatchVersion = 2;
-	public static readonly Utf8String ProductIdentifier; 
-	public static readonly Utf8String ProductName; 
+	public static readonly Utf8String ProductIdentifier;
+	public static readonly Utf8String ProductName;
 
 
 	public static Utf8String GetVersion() { }

@@ -1,4 +1,4 @@
-public class MusicUtil // TypeDefIndex: 10738
+public class MusicUtil // TypeDefIndex: 10742
 {
 	public const float OneSixteenth = 0,0625;
 

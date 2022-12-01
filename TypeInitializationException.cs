@@ -1,6 +1,6 @@
 public sealed class TypeInitializationException : SystemException // TypeDefIndex: 324
 {
-	private string _typeName; 
+	private string _typeName;
 
 	public string TypeName { get; }
 

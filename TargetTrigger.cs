@@ -1,7 +1,7 @@
-public class TargetTrigger : TriggerBase // TypeDefIndex: 11313
+public class TargetTrigger : TriggerBase // TypeDefIndex: 11319
 {
-	[TooltipAttribute] 
-	public Transform losEyes; 
+	[TooltipAttribute]
+	public Transform losEyes;
 
 
 	internal override GameObject InterestedInObject(GameObject obj) { }

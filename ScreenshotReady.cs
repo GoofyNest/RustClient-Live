@@ -1,8 +1,8 @@
-internal struct ScreenshotReady_t : ICallbackData // TypeDefIndex: 5412
+internal struct ScreenshotReady_t : ICallbackData // TypeDefIndex: 5414
 {
-	internal uint Local; 
-	internal Result Result; 
-	public static int _datasize; 
+	internal uint Local;
+	internal Result Result;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

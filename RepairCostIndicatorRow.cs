@@ -1,12 +1,12 @@
-public class RepairCostIndicatorRow : MonoBehaviour // TypeDefIndex: 12993
+public class RepairCostIndicatorRow : MonoBehaviour // TypeDefIndex: 13007
 {
-	public RustText ItemName; 
-	public Image ItemSprite; 
-	public RustText Amount; 
-	public RectTransform FillRect; 
-	public Image BackgroundImage; 
-	public Color OkColour; 
-	public Color MissingColour; 
+	public RustText ItemName;
+	public Image ItemSprite;
+	public RustText Amount;
+	public RectTransform FillRect;
+	public Image BackgroundImage;
+	public Color OkColour;
+	public Color MissingColour;
 
 
 	public void Populate(ItemDefinition def, int totalRequired, int currentAmount) { }

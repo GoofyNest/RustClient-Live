@@ -1,9 +1,9 @@
-public class AuthenticationHeaderValue : ICloneable // TypeDefIndex: 5765
+public class AuthenticationHeaderValue : ICloneable // TypeDefIndex: 5767
 {
-	[CompilerGeneratedAttribute] 
-	private string <Parameter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Scheme>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <Parameter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Scheme>k__BackingField;
 
 	public string Parameter { get; set; }
 	public string Scheme { get; set; }
@@ -11,16 +11,16 @@ public class AuthenticationHeaderValue : ICloneable // TypeDefIndex: 5765
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Parameter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Parameter(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Scheme() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Scheme(string value) { }
 
 	private object System.ICloneable.Clone() { }

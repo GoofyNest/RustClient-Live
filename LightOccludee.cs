@@ -1,15 +1,15 @@
-public class LightOccludee : MonoBehaviour // TypeDefIndex: 13090
+public class LightOccludee : MonoBehaviour // TypeDefIndex: 13105
 {
-	public float RadiusScale; 
-	public float MinTimeVisible; 
-	public bool IsDynamic; 
-	private Light light; 
-	private LightEx lightEx; 
-	private VolumetricLightBeam volumetricBeam; 
-	private OccludeeSphere occludee; 
-	private bool lodVisible; 
-	private bool volumeVisible; 
-	private bool occludeeCulled; 
+	public float RadiusScale;
+	public float MinTimeVisible;
+	public bool IsDynamic;
+	private Light light;
+	private LightEx lightEx;
+	private VolumetricLightBeam volumetricBeam;
+	private OccludeeSphere occludee;
+	private bool lodVisible;
+	private bool volumeVisible;
+	private bool occludeeCulled;
 
 	public bool IsVisible { get; }
 

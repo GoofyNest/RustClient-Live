@@ -1,7 +1,7 @@
 public sealed class OidEnumerator : IEnumerator // TypeDefIndex: 2794
 {
-	private OidCollection m_oids; 
-	private int m_current; 
+	private OidCollection m_oids;
+	private int m_current;
 
 	private object System.Collections.IEnumerator.Current { get; }
 

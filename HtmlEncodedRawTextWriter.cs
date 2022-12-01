@@ -1,14 +1,14 @@
 internal class HtmlEncodedRawTextWriter : XmlEncodedRawTextWriter // TypeDefIndex: 1839
 {
-	protected ByteStack elementScope; 
-	protected ElementProperties currentElementProperties; 
-	private AttributeProperties currentAttributeProperties; 
-	private bool endsWithAmpersand; 
-	private byte[] uriEscapingBuffer; 
-	private string mediaType; 
-	private bool doNotEscapeUriAttributes; 
-	protected static TernaryTreeReadOnly elementPropertySearch; 
-	protected static TernaryTreeReadOnly attributePropertySearch; 
+	protected ByteStack elementScope;
+	protected ElementProperties currentElementProperties;
+	private AttributeProperties currentAttributeProperties;
+	private bool endsWithAmpersand;
+	private byte[] uriEscapingBuffer;
+	private string mediaType;
+	private bool doNotEscapeUriAttributes;
+	protected static TernaryTreeReadOnly elementPropertySearch;
+	protected static TernaryTreeReadOnly attributePropertySearch;
 
 
 	public void .ctor(TextWriter writer, XmlWriterSettings settings) { }

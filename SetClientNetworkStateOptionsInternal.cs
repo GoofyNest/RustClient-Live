@@ -1,8 +1,8 @@
-internal struct SetClientNetworkStateOptionsInternal : ISettable<SetClientNetworkStateOptions>, IDisposable // TypeDefIndex: 9744
+internal struct SetClientNetworkStateOptionsInternal : ISettable<SetClientNetworkStateOptions>, IDisposable // TypeDefIndex: 9746
 {
-	private int m_ApiVersion; 
-	private IntPtr m_ClientHandle; 
-	private int m_IsNetworkActive; 
+	private int m_ApiVersion;
+	private IntPtr m_ClientHandle;
+	private int m_IsNetworkActive;
 
 	public IntPtr ClientHandle { set; }
 	public bool IsNetworkActive { set; }

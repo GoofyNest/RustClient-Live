@@ -1,6 +1,6 @@
-public class CH47PathFinder : BasePathFinder // TypeDefIndex: 11453
+public class CH47PathFinder : BasePathFinder // TypeDefIndex: 11459
 {
-	public List<Vector3> visitedPatrolPoints; 
+	public List<Vector3> visitedPatrolPoints;
 
 
 	public override Vector3 GetRandomPatrolPoint() { }

@@ -1,10 +1,10 @@
-public class ISONoise : PostEffectsBase // TypeDefIndex: 8046
+public class ISONoise : PostEffectsBase // TypeDefIndex: 8048
 {
-	public float monochromeTiling; 
-	public FilterMode filterMode; 
-	public Texture2D noiseTexture; 
-	public Shader noiseShader; 
-	private Material noiseMaterial; 
+	public float monochromeTiling;
+	public FilterMode filterMode;
+	public Texture2D noiseTexture;
+	public Shader noiseShader;
+	private Material noiseMaterial;
 
 
 	public override bool CheckResources() { }

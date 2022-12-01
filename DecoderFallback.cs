@@ -1,9 +1,9 @@
 public abstract class DecoderFallback // TypeDefIndex: 439
 {
-	internal bool bIsMicrosoftBestFitFallback; 
-	private static DecoderFallback replacementFallback; 
-	private static DecoderFallback exceptionFallback; 
-	private static object s_InternalSyncObject; 
+	internal bool bIsMicrosoftBestFitFallback;
+	private static DecoderFallback replacementFallback;
+	private static DecoderFallback exceptionFallback;
+	private static object s_InternalSyncObject;
 
 	private static object InternalSyncObject { get; }
 	public static DecoderFallback ReplacementFallback { get; }

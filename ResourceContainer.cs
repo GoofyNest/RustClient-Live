@@ -1,7 +1,7 @@
-public class ResourceContainer : EntityComponent<BaseEntity> // TypeDefIndex: 10154
+public class ResourceContainer : EntityComponent<BaseEntity> // TypeDefIndex: 10156
 {
-	private Option __menuOption_MenuLoot; 
-	public bool lootable; 
+	private Option __menuOption_MenuLoot;
+	public bool lootable;
 
 	public override bool HasMenuOptions { get; }
 
@@ -12,10 +12,10 @@ public class ResourceContainer : EntityComponent<BaseEntity> // TypeDefIndex: 10
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuLoot(BasePlayer player) { }
 
 	public bool MenuLoot_Test(BasePlayer player) { }

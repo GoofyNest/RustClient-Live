@@ -1,33 +1,33 @@
-public struct GetProductUserIdMappingOptions // TypeDefIndex: 9585
+public struct GetProductUserIdMappingOptions // TypeDefIndex: 9587
 {
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ExternalAccountType <AccountIdType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ProductUserId <TargetProductUserId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ProductUserId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ExternalAccountType <AccountIdType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ProductUserId <TargetProductUserId>k__BackingField;
 
 	public ProductUserId LocalUserId { get; set; }
 	public ExternalAccountType AccountIdType { get; set; }
 	public ProductUserId TargetProductUserId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(ProductUserId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ExternalAccountType get_AccountIdType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountIdType(ExternalAccountType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ProductUserId get_TargetProductUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TargetProductUserId(ProductUserId value) { }
 
 }

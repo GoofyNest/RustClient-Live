@@ -1,6 +1,6 @@
 public enum DllImportSearchPath // TypeDefIndex: 1336
 {
-	public int value__; 
+	public int value__;
 	public const DllImportSearchPath UseDllDirectoryForDependencies = 256;
 	public const DllImportSearchPath ApplicationDirectory = 512;
 	public const DllImportSearchPath UserDirectories = 1024;

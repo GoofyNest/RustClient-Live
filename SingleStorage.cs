@@ -1,6 +1,6 @@
 internal sealed class SingleStorage : DataStorage // TypeDefIndex: 4434
 {
-	private float[] _values; 
+	private float[] _values;
 
 
 	public void .ctor(DataColumn column) { }

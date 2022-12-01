@@ -1,9 +1,9 @@
-public static class StringFormatCache // TypeDefIndex: 12518
+public static class StringFormatCache // TypeDefIndex: 12526
 {
-	private static Dictionary<StringFormatCache.Key1, string> dict1; 
-	private static Dictionary<StringFormatCache.Key2, string> dict2; 
-	private static Dictionary<StringFormatCache.Key3, string> dict3; 
-	private static Dictionary<StringFormatCache.Key4, string> dict4; 
+	private static Dictionary<StringFormatCache.Key1, string> dict1;
+	private static Dictionary<StringFormatCache.Key2, string> dict2;
+	private static Dictionary<StringFormatCache.Key3, string> dict3;
+	private static Dictionary<StringFormatCache.Key4, string> dict4;
 
 
 	public static string Get(string format, string value1) { }
@@ -18,10 +18,10 @@ public static class StringFormatCache // TypeDefIndex: 12518
 
 }
 
-private struct StringFormatCache.Key1 : IEquatable<StringFormatCache.Key1> // TypeDefIndex: 12519
+private struct StringFormatCache.Key1 : IEquatable<StringFormatCache.Key1> // TypeDefIndex: 12527
 {
-	public string format; 
-	public string value1; 
+	public string format;
+	public string value1;
 
 
 	public void .ctor(string format, string value1) { }
@@ -34,11 +34,11 @@ private struct StringFormatCache.Key1 : IEquatable<StringFormatCache.Key1> // Ty
 
 }
 
-private struct StringFormatCache.Key2 : IEquatable<StringFormatCache.Key2> // TypeDefIndex: 12520
+private struct StringFormatCache.Key2 : IEquatable<StringFormatCache.Key2> // TypeDefIndex: 12528
 {
-	public string format; 
-	public string value1; 
-	public string value2; 
+	public string format;
+	public string value1;
+	public string value2;
 
 
 	public void .ctor(string format, string value1, string value2) { }
@@ -51,12 +51,12 @@ private struct StringFormatCache.Key2 : IEquatable<StringFormatCache.Key2> // Ty
 
 }
 
-private struct StringFormatCache.Key3 : IEquatable<StringFormatCache.Key3> // TypeDefIndex: 12521
+private struct StringFormatCache.Key3 : IEquatable<StringFormatCache.Key3> // TypeDefIndex: 12529
 {
-	public string format; 
-	public string value1; 
-	public string value2; 
-	public string value3; 
+	public string format;
+	public string value1;
+	public string value2;
+	public string value3;
 
 
 	public void .ctor(string format, string value1, string value2, string value3) { }
@@ -69,13 +69,13 @@ private struct StringFormatCache.Key3 : IEquatable<StringFormatCache.Key3> // Ty
 
 }
 
-private struct StringFormatCache.Key4 : IEquatable<StringFormatCache.Key4> // TypeDefIndex: 12522
+private struct StringFormatCache.Key4 : IEquatable<StringFormatCache.Key4> // TypeDefIndex: 12530
 {
-	public string format; 
-	public string value1; 
-	public string value2; 
-	public string value3; 
-	public string value4; 
+	public string format;
+	public string value1;
+	public string value2;
+	public string value3;
+	public string value4;
 
 
 	public void .ctor(string format, string value1, string value2, string value3, string value4) { }

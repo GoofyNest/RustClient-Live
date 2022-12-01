@@ -1,13 +1,13 @@
-public class LookatTooltip : MonoBehaviour // TypeDefIndex: 12859
+public class LookatTooltip : MonoBehaviour // TypeDefIndex: 12873
 {
-	public static bool Enabled; 
-	public BaseEntity currentlyLookingAt; 
-	public RustText textLabel; 
-	public Image icon; 
-	public CanvasGroup canvasGroup; 
-	public CanvasGroup infoGroup; 
-	public CanvasGroup minimiseGroup; 
-	private int lastInfoHash; 
+	public static bool Enabled;
+	public BaseEntity currentlyLookingAt;
+	public RustText textLabel;
+	public Image icon;
+	public CanvasGroup canvasGroup;
+	public CanvasGroup infoGroup;
+	public CanvasGroup minimiseGroup;
+	private int lastInfoHash;
 
 
 	private void OnEnable() { }

@@ -1,4 +1,4 @@
-public abstract class MidiException : Exception // TypeDefIndex: 7642
+public abstract class MidiException : Exception // TypeDefIndex: 7644
 {
 
 	internal void .ctor(string message) { }

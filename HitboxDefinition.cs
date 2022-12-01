@@ -1,12 +1,12 @@
-public class HitboxDefinition : MonoBehaviour // TypeDefIndex: 10995
+public class HitboxDefinition : MonoBehaviour // TypeDefIndex: 11001
 {
-	public Vector3 center; 
-	public Vector3 rotation; 
-	public HitboxDefinition.Type type; 
-	public int priority; 
-	public PhysicMaterial physicMaterial; 
-	[SerializeField] 
-	private Vector3 scale; 
+	public Vector3 center;
+	public Vector3 rotation;
+	public HitboxDefinition.Type type;
+	public int priority;
+	public PhysicMaterial physicMaterial;
+	[SerializeField]
+	private Vector3 scale;
 
 	public Vector3 Scale { get; set; }
 	public Matrix4x4 LocalMatrix { get; }
@@ -28,9 +28,9 @@ public class HitboxDefinition : MonoBehaviour // TypeDefIndex: 10995
 
 }
 
-public enum HitboxDefinition.Type // TypeDefIndex: 10996
+public enum HitboxDefinition.Type // TypeDefIndex: 11002
 {
-	public int value__; 
+	public int value__;
 	public const HitboxDefinition.Type BOX = 0;
 	public const HitboxDefinition.Type CAPSULE = 1;
 

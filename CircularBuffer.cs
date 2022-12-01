@@ -1,24 +1,24 @@
 private sealed class CircularBuffer.<GetEnumerator>d__26<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4838
 {
-	private int <>1__state; 
-	private T <>2__current; 
-	public CircularBuffer<T> <>4__this; 
-	private IEnumerator<ArraySegment<T>> <>7__wrap1; 
-	private ArraySegment<T> <segment>5__3; 
-	private int <i>5__4; 
+	private int <>1__state;
+	private T <>2__current;
+	public CircularBuffer<T> <>4__this;
+	private IEnumerator<ArraySegment<T>> <>7__wrap1;
+	private ArraySegment<T> <segment>5__3;
+	private int <i>5__4;
 
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
 	|-CircularBuffer.<GetEnumerator>d__26<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -37,21 +37,21 @@ private sealed class CircularBuffer.<GetEnumerator>d__26<T> : IEnumerator<T>, IE
 	|-CircularBuffer.<GetEnumerator>d__26<object>.<>m__Finally1
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
 	|-CircularBuffer.<GetEnumerator>d__26<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
 	|-CircularBuffer.<GetEnumerator>d__26<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -60,23 +60,23 @@ private sealed class CircularBuffer.<GetEnumerator>d__26<T> : IEnumerator<T>, IE
 
 }
 
-private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 7635
+private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 7637
 {
-	private int <>1__state; 
-	private T <>2__current; 
-	private int <>l__initialThreadId; 
-	private int start; 
-	public int <>3__start; 
-	public CircularBuffer<T> <>4__this; 
-	private int end; 
-	public int <>3__end; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private T <>2__current;
+	private int <>l__initialThreadId;
+	private int start;
+	public int <>3__start;
+	public CircularBuffer<T> <>4__this;
+	private int end;
+	public int <>3__end;
+	private int <i>5__2;
 
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -85,7 +85,7 @@ private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumer
 	|-CircularBuffer.<GetItems>d__15<object>..ctor
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -101,7 +101,7 @@ private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumer
 	|-CircularBuffer.<GetItems>d__15<object>.MoveNext
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -110,7 +110,7 @@ private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumer
 	|-CircularBuffer.<GetItems>d__15<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -119,7 +119,7 @@ private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumer
 	|-CircularBuffer.<GetItems>d__15<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -128,7 +128,7 @@ private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumer
 	|-CircularBuffer.<GetItems>d__15<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -137,7 +137,7 @@ private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumer
 	|-CircularBuffer.<GetItems>d__15<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|

@@ -1,6 +1,6 @@
-public class RandomUsernames // TypeDefIndex: 8255
+public class RandomUsernames // TypeDefIndex: 8257
 {
-	private static string[] All; 
+	private static string[] All;
 
 
 	public static string Get(int v) { }
@@ -13,9 +13,9 @@ public class RandomUsernames // TypeDefIndex: 8255
 
 }
 
-private class RandomUsernames.DataFile // TypeDefIndex: 8256
+private class RandomUsernames.DataFile // TypeDefIndex: 8258
 {
-	public string[] RandomUsernames; 
+	public string[] RandomUsernames;
 
 
 	public void .ctor() { }

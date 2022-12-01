@@ -1,6 +1,6 @@
-public struct PublishedFileId : IEquatable<PublishedFileId>, IComparable<PublishedFileId> // TypeDefIndex: 5534
+public struct PublishedFileId : IEquatable<PublishedFileId>, IComparable<PublishedFileId> // TypeDefIndex: 5536
 {
-	public ulong Value; 
+	public ulong Value;
 
 
 	public static PublishedFileId op_Implicit(ulong value) { }

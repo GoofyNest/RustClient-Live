@@ -1,8 +1,8 @@
 public sealed class Comparer : IComparer, ISerializable // TypeDefIndex: 1385
 {
-	private CompareInfo m_compareInfo; 
-	public static readonly Comparer Default; 
-	public static readonly Comparer DefaultInvariant; 
+	private CompareInfo m_compareInfo;
+	public static readonly Comparer Default;
+	public static readonly Comparer DefaultInvariant;
 
 
 	private void .ctor() { }

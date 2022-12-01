@@ -1,12 +1,12 @@
-internal class GB18030Source // TypeDefIndex: 7850
+internal class GB18030Source // TypeDefIndex: 7852
 {
-	private static readonly byte* gbx2uni; 
-	private static readonly byte* uni2gbx; 
-	private static readonly int gbx2uniSize; 
-	private static readonly int uni2gbxSize; 
-	private static readonly long gbxBase; 
-	private static readonly long gbxSuppBase; 
-	private static readonly GB18030Source.GB18030Map[] ranges; 
+	private static readonly byte* gbx2uni;
+	private static readonly byte* uni2gbx;
+	private static readonly int gbx2uniSize;
+	private static readonly int uni2gbxSize;
+	private static readonly long gbxBase;
+	private static readonly long gbxSuppBase;
+	private static readonly GB18030Source.GB18030Map[] ranges;
 
 
 	private void .ctor() { }
@@ -31,13 +31,13 @@ internal class GB18030Source // TypeDefIndex: 7850
 
 }
 
-private class GB18030Source.GB18030Map // TypeDefIndex: 7851
+private class GB18030Source.GB18030Map // TypeDefIndex: 7853
 {
-	public readonly int UStart; 
-	public readonly int UEnd; 
-	public readonly long GStart; 
-	public readonly long GEnd; 
-	public readonly bool Dummy; 
+	public readonly int UStart;
+	public readonly int UEnd;
+	public readonly long GStart;
+	public readonly long GEnd;
+	public readonly bool Dummy;
 
 
 	public void .ctor(int ustart, int uend, long gstart, long gend, bool dummy) { }

@@ -1,7 +1,7 @@
-public class StabilitySocket : Socket_Base // TypeDefIndex: 10836
+public class StabilitySocket : Socket_Base // TypeDefIndex: 10841
 {
-	[RangeAttribute] 
-	public float support; 
+	[RangeAttribute]
+	public float support;
 
 
 	private void OnDrawGizmosSelected() { }

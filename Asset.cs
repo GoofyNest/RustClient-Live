@@ -7,15 +7,15 @@ private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024
 
 internal class <Module>
 
-[VisibleToOtherModulesAttribute] 
-[AttributeUsageAttribute] 
+[VisibleToOtherModulesAttribute]
+[AttributeUsageAttribute]
 internal sealed class AssetFileNameExtensionAttribute : Attribute
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private readonly string <preferredExtension>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private readonly IEnumerable<string> <otherExtensions>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private readonly string <preferredExtension>k__BackingField;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private readonly IEnumerable<string> <otherExtensions>k__BackingField;
 
 
 	public void .ctor(string preferredExtension, string[] otherExtensions) { }
@@ -25,33 +25,33 @@ internal sealed class AssetFileNameExtensionAttribute : Attribute
 public class AssetBundle : Object // TypeDefIndex: 3997
 {
 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
-[ExcludeFromPresetAttribute] 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
+[ExcludeFromPresetAttribute]
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
 public class AssetBundle : Object
 
 	private void .ctor() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static AssetBundleCreateRequest LoadFromFileAsync_Internal(string path, uint crc, ulong offset) { }
 
 	public static AssetBundleCreateRequest LoadFromFileAsync(string path) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	internal static AssetBundle LoadFromFile_Internal(string path, uint crc, ulong offset) { }
 
 	public static AssetBundle LoadFromFile(string path) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public bool Contains(string name) { }
 
 	public T LoadAsset<T>(string name) { }
@@ -61,12 +61,12 @@ public class AssetBundle : Object
 	|-AssetBundle.LoadAsset<object>
 	*/
 
-	[TypeInferenceRuleAttribute] 
+	[TypeInferenceRuleAttribute]
 	public Object LoadAsset(string name, Type type) { }
 
-	[NativeThrowsAttribute] 
-	[TypeInferenceRuleAttribute] 
-	[NativeMethodAttribute] 
+	[NativeThrowsAttribute]
+	[TypeInferenceRuleAttribute]
+	[NativeMethodAttribute]
 	private Object LoadAsset_Internal(string name, Type type) { }
 
 	public AssetBundleRequest LoadAssetAsync(string name) { }
@@ -97,18 +97,18 @@ public class AssetBundle : Object
 
 	public Object[] LoadAllAssets(Type type) { }
 
-	[NativeThrowsAttribute] 
-	[NativeMethodAttribute] 
+	[NativeThrowsAttribute]
+	[NativeMethodAttribute]
 	private AssetBundleRequest LoadAssetAsync_Internal(string name, Type type) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void Unload(bool unloadAllLoadedObjects) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public string[] GetAllAssetNames() { }
 
-	[NativeThrowsAttribute] 
-	[NativeMethodAttribute] 
+	[NativeThrowsAttribute]
+	[NativeMethodAttribute]
 	internal Object[] LoadAssetWithSubAssets_Internal(string name, Type type) { }
 
 }
@@ -118,7 +118,7 @@ public class AssetBundleCreateRequest : AsyncOperation // TypeDefIndex: 3998
 	public AssetBundle assetBundle { get; }
 
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public AssetBundle get_assetBundle() { }
 
 	public void .ctor() { }
@@ -128,7 +128,7 @@ public class AssetBundleCreateRequest : AsyncOperation // TypeDefIndex: 3998
 public class AssetBundleManifest : Object // TypeDefIndex: 3999
 {
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public string[] GetAllAssetBundles() { }
 
 }
@@ -136,22 +136,22 @@ public class AssetBundleManifest : Object // TypeDefIndex: 3999
 public class AssetBundleRequest : AsyncOperation // TypeDefIndex: 4001
 {
 
-[NativeHeaderAttribute] 
-[RequiredByNativeCodeAttribute] 
+[NativeHeaderAttribute]
+[RequiredByNativeCodeAttribute]
 public class AssetBundleRequest : AsyncOperation
 	public Object asset { get; }
 
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public Object get_asset() { }
 
 	public void .ctor() { }
 
 }
 
-public static class AssetPool // TypeDefIndex: 6572
+public static class AssetPool // TypeDefIndex: 6574
 {
-	public static Dictionary<Type, AssetPool.Pool> storage; 
+	public static Dictionary<Type, AssetPool.Pool> storage;
 
 
 	public static T Get<T>() { }
@@ -176,12 +176,12 @@ public static class AssetPool // TypeDefIndex: 6572
 
 }
 
-public class AssetPool.Pool // TypeDefIndex: 6573
+public class AssetPool.Pool // TypeDefIndex: 6575
 {
-	public Stack<Object> stack; 
-	public int allocated; 
-	public int available; 
-	public string name; 
+	public Stack<Object> stack;
+	public int allocated;
+	public int available;
+	public string name;
 
 
 	public void .ctor(string name) { }
@@ -203,17 +203,17 @@ public class AssetPool.Pool // TypeDefIndex: 6573
 
 }
 
-public class AssetBundleBackend : FileSystemBackend, IDisposable // TypeDefIndex: 6661
+public class AssetBundleBackend : FileSystemBackend, IDisposable // TypeDefIndex: 6663
 {
 
 public class AssetBundleBackend : FileSystemBackend, IDisposable
-	private AssetBundle rootBundle; 
-	private AssetBundleManifest manifest; 
-	private Dictionary<string, AssetBundle> bundles; 
-	private Dictionary<string, AssetBundle> files; 
-	private string assetPath; 
-	[CompilerGeneratedAttribute] 
-	private float <LoadProgress>k__BackingField; 
+	private AssetBundle rootBundle;
+	private AssetBundleManifest manifest;
+	private Dictionary<string, AssetBundle> bundles;
+	private Dictionary<string, AssetBundle> files;
+	private string assetPath;
+	[CompilerGeneratedAttribute]
+	private float <LoadProgress>k__BackingField;
 
 	public static bool Enabled { get; }
 	public float LoadProgress { get; set; }
@@ -221,10 +221,10 @@ public class AssetBundleBackend : FileSystemBackend, IDisposable
 
 	public static bool get_Enabled() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_LoadProgress() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_LoadProgress(float value) { }
 
 	public void Load(string assetRoot) { }
@@ -257,11 +257,11 @@ public class AssetBundleBackend : FileSystemBackend, IDisposable
 
 }
 
-private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6662
+private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6664
 {
-	public AssetBundleBackend <>4__this; 
-	public int maxConcurrency; 
-	public int priority; 
+	public AssetBundleBackend <>4__this;
+	public int maxConcurrency;
+	public int priority;
 
 
 	public void .ctor() { }
@@ -274,10 +274,10 @@ private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6
 
 }
 
-private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6663
+private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6665
 {
-	public static readonly AssetBundleBackend.<>c <>9; 
-	public static Func<string, string> <>9__17_3; 
+	public static readonly AssetBundleBackend.<>c <>9;
+	public static Func<string, string> <>9__17_3;
 
 
 	private static void .cctor() { }
@@ -288,10 +288,10 @@ private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6663
 
 }
 
-private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6664
+private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6666
 {
-	public string folder; 
-	public Func<KeyValuePair<string, AssetBundle>, bool> <>9__0; 
+	public string folder;
+	public Func<KeyValuePair<string, AssetBundle>, bool> <>9__0;
 
 
 	public void .ctor() { }
@@ -300,16 +300,16 @@ private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6
 
 }
 
-internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6665
+internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6667
 {
-	private readonly AssetBundle _bundle; 
-	private readonly List<string> _filePaths; 
-	private readonly int _maxConcurrency; 
-	private readonly int _priority; 
-	private readonly List<AssetBundleRequest> _requests; 
-	[TupleElementNamesAttribute] 
-	private readonly List<ValueTuple<string, AssetBundleRequest>> _pendingRequests; 
-	private int _index; 
+	private readonly AssetBundle _bundle;
+	private readonly List<string> _filePaths;
+	private readonly int _maxConcurrency;
+	private readonly int _priority;
+	private readonly List<AssetBundleRequest> _requests;
+	[TupleElementNamesAttribute]
+	private readonly List<ValueTuple<string, AssetBundleRequest>> _pendingRequests;
+	private int _index;
 
 	public override int TotalCount { get; }
 	public override bool keepWaiting { get; }
@@ -327,16 +327,16 @@ internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6
 
 }
 
-public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6666
+public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6668
 {
-	private readonly FileSystemBackend _backend; 
-	private readonly LoadAssetsResult _load; 
-	private readonly List<ValueTuple<string, Object>> _loaded; 
-	private readonly int _alreadyLoadedCount; 
+	private readonly FileSystemBackend _backend;
+	private readonly LoadAssetsResult _load;
+	private readonly List<ValueTuple<string, Object>> _loaded;
+	private readonly int _alreadyLoadedCount;
 
 	public int TotalCount { get; }
 	public int CompletedCount { get; }
-	[TupleElementNamesAttribute] 
+	[TupleElementNamesAttribute]
 	public IReadOnlyList<ValueTuple<string, Object>> Results { get; }
 	public override bool keepWaiting { get; }
 
@@ -355,11 +355,11 @@ public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6666
 
 }
 
-public static class AssetNameCache // TypeDefIndex: 12466
+public static class AssetNameCache // TypeDefIndex: 12474
 {
-	private static Dictionary<Object, string> mixed; 
-	private static Dictionary<Object, string> lower; 
-	private static Dictionary<Object, string> upper; 
+	private static Dictionary<Object, string> mixed;
+	private static Dictionary<Object, string> lower;
+	private static Dictionary<Object, string> upper;
 
 
 	private static string LookupName(Object obj) { }
@@ -368,29 +368,29 @@ public static class AssetNameCache // TypeDefIndex: 12466
 
 	private static string LookupNameUpper(Object obj) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string GetName(PhysicMaterial mat) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string GetNameLower(PhysicMaterial mat) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string GetNameUpper(PhysicMaterial mat) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string GetName(Material mat) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string GetNameLower(Material mat) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string GetNameUpper(Material mat) { }
 
 	private static void .cctor() { }
 
 }
 
-public static class AssetStorage // TypeDefIndex: 13155
+public static class AssetStorage // TypeDefIndex: 13170
 {
 
 	public static void Save<T>(ref T asset, string path) { }

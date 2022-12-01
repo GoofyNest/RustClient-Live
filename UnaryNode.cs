@@ -1,7 +1,7 @@
 internal sealed class UnaryNode : ExpressionNode // TypeDefIndex: 4271
 {
-	internal readonly int _op; 
-	internal ExpressionNode _right; 
+	internal readonly int _op;
+	internal ExpressionNode _right;
 
 
 	internal void .ctor(DataTable table, int op, ExpressionNode right) { }

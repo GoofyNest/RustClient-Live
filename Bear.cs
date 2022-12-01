@@ -1,7 +1,7 @@
-public class Bear : BaseAnimalNPC // TypeDefIndex: 10647
+public class Bear : BaseAnimalNPC // TypeDefIndex: 10651
 {
-	[ServerVar] 
-	public static float Population; 
+	[ServerVar]
+	public static float Population;
 
 	public override float RealisticMass { get; }
 	public override BaseEntity.TraitFlag Traits { get; }

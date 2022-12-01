@@ -1,8 +1,8 @@
-internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9596
+internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9598
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Credentials; 
-	private IntPtr m_UserLoginInfo; 
+	private int m_ApiVersion;
+	private IntPtr m_Credentials;
+	private IntPtr m_UserLoginInfo;
 
 	public Nullable<Credentials> Credentials { set; }
 	public Nullable<UserLoginInfo> UserLoginInfo { set; }
@@ -20,11 +20,11 @@ internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // T
 
 }
 
-internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9673
+internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9675
 {
-	private int m_ApiVersion; 
-	private IntPtr m_Credentials; 
-	private AuthScopeFlags m_ScopeFlags; 
+	private int m_ApiVersion;
+	private IntPtr m_Credentials;
+	private AuthScopeFlags m_ScopeFlags;
 
 	public Nullable<Credentials> Credentials { set; }
 	public AuthScopeFlags ScopeFlags { set; }

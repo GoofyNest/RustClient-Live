@@ -1,9 +1,9 @@
-public class RHIB : MotorRowboat // TypeDefIndex: 10157
+public class RHIB : MotorRowboat // TypeDefIndex: 10159
 {
-	private Option __menuOption_Release; 
-	public GameObject steeringWheel; 
-	[ServerVar] 
-	public static float rhibpopulation; 
+	private Option __menuOption_Release;
+	public GameObject steeringWheel;
+	[ServerVar]
+	public static float rhibpopulation;
 
 	public override bool HasMenuOptions { get; }
 
@@ -14,10 +14,10 @@ public class RHIB : MotorRowboat // TypeDefIndex: 10157
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Release(BasePlayer player) { }
 
 	public bool Release_ShowIf(BasePlayer player) { }

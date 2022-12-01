@@ -1,16 +1,16 @@
-internal static class GADevice // TypeDefIndex: 5682
+internal static class GADevice // TypeDefIndex: 5684
 {
-	private static readonly string _buildPlatform; 
-	private static readonly string _deviceModel; 
-	private static string _writablepath; 
-	private static readonly string _osVersion; 
-	private static readonly string _deviceManufacturer; 
-	[CompilerGeneratedAttribute] 
-	private static string <SdkGameEngineVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <GameEngineVersion>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <ConnectionType>k__BackingField; 
+	private static readonly string _buildPlatform;
+	private static readonly string _deviceModel;
+	private static string _writablepath;
+	private static readonly string _osVersion;
+	private static readonly string _deviceManufacturer;
+	[CompilerGeneratedAttribute]
+	private static string <SdkGameEngineVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <GameEngineVersion>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <ConnectionType>k__BackingField;
 
 	private static string SdkGameEngineVersion { get; set; }
 	public static string GameEngineVersion { get; set; }
@@ -24,22 +24,22 @@ internal static class GADevice // TypeDefIndex: 5682
 
 	public static void Touch() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static string get_SdkGameEngineVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_SdkGameEngineVersion(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_GameEngineVersion() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_GameEngineVersion(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_ConnectionType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void set_ConnectionType(string value) { }
 
 	public static string get_RelevantSdkVersion() { }

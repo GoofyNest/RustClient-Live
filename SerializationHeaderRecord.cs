@@ -1,12 +1,12 @@
 internal sealed class SerializationHeaderRecord // TypeDefIndex: 1071
 {
-	internal int binaryFormatterMajorVersion; 
-	internal int binaryFormatterMinorVersion; 
-	internal BinaryHeaderEnum binaryHeaderEnum; 
-	internal int topId; 
-	internal int headerId; 
-	internal int majorVersion; 
-	internal int minorVersion; 
+	internal int binaryFormatterMajorVersion;
+	internal int binaryFormatterMinorVersion;
+	internal BinaryHeaderEnum binaryHeaderEnum;
+	internal int topId;
+	internal int headerId;
+	internal int majorVersion;
+	internal int minorVersion;
 
 
 	internal void .ctor() { }

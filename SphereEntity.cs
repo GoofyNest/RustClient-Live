@@ -1,8 +1,8 @@
-public class SphereEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6339
+public class SphereEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6341
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public float radius; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public float radius;
 
 
 	public static void ResetToPool(SphereEntity instance) { }
@@ -59,11 +59,11 @@ public class SphereEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class SphereEntity : BaseEntity // TypeDefIndex: 11344
+public class SphereEntity : BaseEntity // TypeDefIndex: 11350
 {
-	public float currentRadius; 
-	public float lerpRadius; 
-	public float lerpSpeed; 
+	public float currentRadius;
+	public float lerpRadius;
+	public float lerpSpeed;
 
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }

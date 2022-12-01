@@ -1,14 +1,14 @@
 public sealed class SecurityElement // TypeDefIndex: 905
 {
-	private string text; 
-	private string tag; 
-	private ArrayList attributes; 
-	private ArrayList children; 
-	private static readonly char[] invalid_tag_chars; 
-	private static readonly char[] invalid_text_chars; 
-	private static readonly char[] invalid_attr_name_chars; 
-	private static readonly char[] invalid_attr_value_chars; 
-	private static readonly char[] invalid_chars; 
+	private string text;
+	private string tag;
+	private ArrayList attributes;
+	private ArrayList children;
+	private static readonly char[] invalid_tag_chars;
+	private static readonly char[] invalid_text_chars;
+	private static readonly char[] invalid_attr_name_chars;
+	private static readonly char[] invalid_attr_value_chars;
+	private static readonly char[] invalid_chars;
 
 	public Hashtable Attributes { get; }
 	public ArrayList Children { get; }
@@ -67,8 +67,8 @@ public sealed class SecurityElement // TypeDefIndex: 905
 
 internal class SecurityElement.SecurityAttribute // TypeDefIndex: 906
 {
-	private string _name; 
-	private string _value; 
+	private string _name;
+	private string _value;
 
 	public string Name { get; }
 	public string Value { get; }

@@ -1,11 +1,11 @@
-public class CommandBufferManager : MonoBehaviour // TypeDefIndex: 12396
+public class CommandBufferManager : MonoBehaviour // TypeDefIndex: 12404
 {
-	private Camera _targetCamera; 
-	private Dictionary<int, CommandBufferManager.CommandBufferEntry> commandBuffers; 
-	private bool changed; 
-	public Action OnPreRenderCall; 
-	public Action OnPreCullCall; 
-	private static Dictionary<Camera, CommandBufferManager> instances; 
+	private Camera _targetCamera;
+	private Dictionary<int, CommandBufferManager.CommandBufferEntry> commandBuffers;
+	private bool changed;
+	public Action OnPreRenderCall;
+	public Action OnPreCullCall;
+	private static Dictionary<Camera, CommandBufferManager> instances;
 
 	public Camera targetCamera { get; }
 	public Camera Camera { get; }
@@ -44,10 +44,10 @@ public class CommandBufferManager : MonoBehaviour // TypeDefIndex: 12396
 
 }
 
-private struct CommandBufferManager.CommandBufferEntry : IEquatable<CommandBufferManager.CommandBufferEntry> // TypeDefIndex: 12397
+private struct CommandBufferManager.CommandBufferEntry : IEquatable<CommandBufferManager.CommandBufferEntry> // TypeDefIndex: 12405
 {
-	public CommandBuffer buffer; 
-	public List<KeyValuePair<int, Action<CommandBuffer>>> orderedFill; 
+	public CommandBuffer buffer;
+	public List<KeyValuePair<int, Action<CommandBuffer>>> orderedFill;
 
 
 	public void Add(int orderId, Action<CommandBuffer> value) { }
@@ -62,9 +62,9 @@ private struct CommandBufferManager.CommandBufferEntry : IEquatable<CommandBuffe
 
 }
 
-private sealed class CommandBufferManager.CommandBufferEntry.<>c__DisplayClass3_0 // TypeDefIndex: 12398
+private sealed class CommandBufferManager.CommandBufferEntry.<>c__DisplayClass3_0 // TypeDefIndex: 12406
 {
-	public int orderId; 
+	public int orderId;
 
 
 	public void .ctor() { }

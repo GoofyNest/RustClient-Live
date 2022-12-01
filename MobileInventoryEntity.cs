@@ -1,10 +1,10 @@
-public class MobileInventoryEntity : BaseEntity // TypeDefIndex: 11184
+public class MobileInventoryEntity : BaseEntity // TypeDefIndex: 11190
 {
-	public SoundDefinition ringingLoop; 
-	public SoundDefinition silentLoop; 
+	public SoundDefinition ringingLoop;
+	public SoundDefinition silentLoop;
 	public const BaseEntity.Flags Ringing = 128;
-	public static BaseEntity.Flags Flag_Silent; 
-	private Sound ringingSound; 
+	public static BaseEntity.Flags Flag_Silent;
+	private Sound ringingSound;
 
 
 	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }

@@ -1,24 +1,24 @@
 public abstract class RegexRunner // TypeDefIndex: 2629
 {
-	protected internal int runtextbeg; 
-	protected internal int runtextend; 
-	protected internal int runtextstart; 
-	protected internal string runtext; 
-	protected internal int runtextpos; 
-	protected internal int[] runtrack; 
-	protected internal int runtrackpos; 
-	protected internal int[] runstack; 
-	protected internal int runstackpos; 
-	protected internal int[] runcrawl; 
-	protected internal int runcrawlpos; 
-	protected internal int runtrackcount; 
-	protected internal Match runmatch; 
-	protected internal Regex runregex; 
-	private int timeout; 
-	private bool ignoreTimeout; 
-	private int timeoutOccursAt; 
+	protected internal int runtextbeg;
+	protected internal int runtextend;
+	protected internal int runtextstart;
+	protected internal string runtext;
+	protected internal int runtextpos;
+	protected internal int[] runtrack;
+	protected internal int runtrackpos;
+	protected internal int[] runstack;
+	protected internal int runstackpos;
+	protected internal int[] runcrawl;
+	protected internal int runcrawlpos;
+	protected internal int runtrackcount;
+	protected internal Match runmatch;
+	protected internal Regex runregex;
+	private int timeout;
+	private bool ignoreTimeout;
+	private int timeoutOccursAt;
 	private const int TimeoutCheckFrequency = 1000;
-	private int timeoutChecksToSkip; 
+	private int timeoutChecksToSkip;
 
 
 	protected internal void .ctor() { }

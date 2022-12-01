@@ -1,11 +1,11 @@
 internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex: 292
 {
-	internal static readonly RuntimeType ValueType; 
-	internal static readonly RuntimeType EnumType; 
-	private static readonly RuntimeType ObjectType; 
-	private static readonly RuntimeType StringType; 
-	private static readonly RuntimeType DelegateType; 
-	private static Type[] s_SICtorParamTypes; 
+	internal static readonly RuntimeType ValueType;
+	internal static readonly RuntimeType EnumType;
+	private static readonly RuntimeType ObjectType;
+	private static readonly RuntimeType StringType;
+	private static readonly RuntimeType DelegateType;
+	private static Type[] s_SICtorParamTypes;
 	private const BindingFlags MemberBindingMask = 255;
 	private const BindingFlags InvocationMask = 65280;
 	private const BindingFlags BinderNonCreateInstance = 15616;
@@ -15,10 +15,10 @@ internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex
 	private const BindingFlags BinderSetInvokeField = 2304;
 	private const BindingFlags BinderNonFieldGetSet = 16773888;
 	private const BindingFlags ClassicBindingMask = 61696;
-	private static RuntimeType s_typedRef; 
-	private MonoTypeInfo type_info; 
-	internal object GenericCache; 
-	private RuntimeConstructorInfo m_serializationCtor; 
+	private static RuntimeType s_typedRef;
+	private MonoTypeInfo type_info;
+	internal object GenericCache;
+	private RuntimeConstructorInfo m_serializationCtor;
 
 	public override Module Module { get; }
 	public override Assembly Assembly { get; }
@@ -84,7 +84,7 @@ internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex
 
 	public override MethodInfo[] GetMethods(BindingFlags bindingAttr) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override ConstructorInfo[] GetConstructors(BindingFlags bindingAttr) { }
 
 	public override PropertyInfo[] GetProperties(BindingFlags bindingAttr) { }
@@ -117,7 +117,7 @@ internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex
 
 	public override bool IsInstanceOfType(object o) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool IsSubclassOf(Type type) { }
 
 	public override bool IsAssignableFrom(Type c) { }
@@ -184,8 +184,8 @@ internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex
 
 	public override bool get_IsGenericType() { }
 
-	[DebuggerHiddenAttribute] 
-	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute]
+	[DebuggerStepThroughAttribute]
 	public override object InvokeMember(string name, BindingFlags bindingFlags, Binder binder, object target, object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, string[] namedParams) { }
 
 	public override bool Equals(object obj) { }
@@ -218,8 +218,8 @@ internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex
 
 	internal object CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes, ref StackCrawlMark stackMark) { }
 
-	[DebuggerStepThroughAttribute] 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
+	[DebuggerStepThroughAttribute]
 	internal object CreateInstanceDefaultCtor(bool publicOnly, bool skipCheckThis, bool fillCache, ref StackCrawlMark stackMark) { }
 
 	internal MonoCMethod GetDefaultConstructor() { }
@@ -326,7 +326,7 @@ internal class RuntimeType : TypeInfo, ISerializable, ICloneable // TypeDefIndex
 
 internal enum RuntimeType.MemberListType // TypeDefIndex: 293
 {
-	public int value__; 
+	public int value__;
 	public const RuntimeType.MemberListType All = 0;
 	public const RuntimeType.MemberListType CaseSensitive = 1;
 	public const RuntimeType.MemberListType CaseInsensitive = 2;
@@ -336,10 +336,10 @@ internal enum RuntimeType.MemberListType // TypeDefIndex: 293
 
 private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 {
-	private T[] _items; 
-	private T _item; 
-	private int _count; 
-	private int _capacity; 
+	private T[] _items;
+	private T _item;
+	private int _count;
+	private int _capacity;
 
 	public T Item { get; }
 	public int Count { get; }

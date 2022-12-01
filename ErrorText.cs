@@ -1,8 +1,8 @@
-public class ErrorText : MonoBehaviour // TypeDefIndex: 12683
+public class ErrorText : MonoBehaviour // TypeDefIndex: 12697
 {
-	public TextMeshProUGUI text; 
-	public int maxLength; 
-	private Stopwatch stopwatch; 
+	public TextMeshProUGUI text;
+	public int maxLength;
+	private Stopwatch stopwatch;
 
 
 	public void OnEnable() { }

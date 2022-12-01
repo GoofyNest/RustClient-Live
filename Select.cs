@@ -1,18 +1,18 @@
 internal sealed class Select // TypeDefIndex: 4302
 {
-	private readonly DataTable _table; 
-	private readonly IndexField[] _indexFields; 
-	private DataViewRowState _recordStates; 
-	private DataExpression _rowFilter; 
-	private ExpressionNode _expression; 
-	private Index _index; 
-	private int[] _records; 
-	private int _recordCount; 
-	private ExpressionNode _linearExpression; 
-	private bool _candidatesForBinarySearch; 
-	private Select.ColumnInfo[] _candidateColumns; 
-	private int _nCandidates; 
-	private int _matchedCandidates; 
+	private readonly DataTable _table;
+	private readonly IndexField[] _indexFields;
+	private DataViewRowState _recordStates;
+	private DataExpression _rowFilter;
+	private ExpressionNode _expression;
+	private Index _index;
+	private int[] _records;
+	private int _recordCount;
+	private ExpressionNode _linearExpression;
+	private bool _candidatesForBinarySearch;
+	private Select.ColumnInfo[] _candidateColumns;
+	private int _nCandidates;
+	private int _matchedCandidates;
 
 
 	public void .ctor(DataTable table, string filterExpression, string sort, DataViewRowState recordStates) { }
@@ -65,9 +65,9 @@ internal sealed class Select // TypeDefIndex: 4302
 
 private sealed class Select.ColumnInfo // TypeDefIndex: 4303
 {
-	public bool flag; 
-	public bool equalsOperator; 
-	public BinaryNode expr; 
+	public bool flag;
+	public bool equalsOperator;
+	public BinaryNode expr;
 
 
 	public void .ctor() { }

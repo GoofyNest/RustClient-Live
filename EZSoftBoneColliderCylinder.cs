@@ -1,9 +1,9 @@
-public class EZSoftBoneColliderCylinder : EZSoftBoneColliderBase // TypeDefIndex: 7175
+public class EZSoftBoneColliderCylinder : EZSoftBoneColliderBase // TypeDefIndex: 7177
 {
-	[SerializeField] 
-	private float m_Margin; 
-	[SerializeField] 
-	private bool m_InsideMode; 
+	[SerializeField]
+	private float m_Margin;
+	[SerializeField]
+	private bool m_InsideMode;
 
 	public float margin { get; set; }
 	public bool insideMode { get; set; }

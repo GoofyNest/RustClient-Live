@@ -1,12 +1,12 @@
-public class ContentRangeHeaderValue : ICloneable // TypeDefIndex: 5771
+public class ContentRangeHeaderValue : ICloneable // TypeDefIndex: 5773
 {
-	private string unit; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<long> <From>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<long> <Length>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Nullable<long> <To>k__BackingField; 
+	private string unit;
+	[CompilerGeneratedAttribute]
+	private Nullable<long> <From>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<long> <Length>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Nullable<long> <To>k__BackingField;
 
 	public Nullable<long> From { get; set; }
 	public Nullable<long> Length { get; set; }
@@ -16,22 +16,22 @@ public class ContentRangeHeaderValue : ICloneable // TypeDefIndex: 5771
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<long> get_From() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_From(Nullable<long> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<long> get_Length() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Length(Nullable<long> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Nullable<long> get_To() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_To(Nullable<long> value) { }
 
 	public string get_Unit() { }

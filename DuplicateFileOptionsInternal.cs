@@ -1,9 +1,9 @@
-internal struct DuplicateFileOptionsInternal : ISettable<DuplicateFileOptions>, IDisposable // TypeDefIndex: 8883
+internal struct DuplicateFileOptionsInternal : ISettable<DuplicateFileOptions>, IDisposable // TypeDefIndex: 8885
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_SourceFilename; 
-	private IntPtr m_DestinationFilename; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_SourceFilename;
+	private IntPtr m_DestinationFilename;
 
 	public ProductUserId LocalUserId { set; }
 	public Utf8String SourceFilename { set; }

@@ -1,8 +1,8 @@
-public class FloatRow : MaterialRow // TypeDefIndex: 7771
+public class FloatRow : MaterialRow // TypeDefIndex: 7773
 {
-	public Button Reset; 
-	public Slider Slider; 
-	private float Default; 
+	public Button Reset;
+	public Slider Slider;
+	private float Default;
 
 	public bool IsDefault { get; }
 

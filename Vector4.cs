@@ -1,14 +1,14 @@
 public struct Vector4 : IEquatable<Vector4> // TypeDefIndex: 3474
 {
 	public const float kEpsilon = 1E-05;
-	public float x; 
-	public float y; 
-	public float z; 
-	public float w; 
-	private static readonly Vector4 zeroVector; 
-	private static readonly Vector4 oneVector; 
-	private static readonly Vector4 positiveInfinityVector; 
-	private static readonly Vector4 negativeInfinityVector; 
+	public float x;
+	public float y;
+	public float z;
+	public float w;
+	private static readonly Vector4 zeroVector;
+	private static readonly Vector4 oneVector;
+	private static readonly Vector4 positiveInfinityVector;
+	private static readonly Vector4 negativeInfinityVector;
 
 	public float Item { get; set; }
 	public Vector4 normalized { get; }

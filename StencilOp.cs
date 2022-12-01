@@ -1,6 +1,6 @@
 public enum StencilOp // TypeDefIndex: 3816
 {
-	public int value__; 
+	public int value__;
 	public const StencilOp Keep = 0;
 	public const StencilOp Zero = 1;
 	public const StencilOp Replace = 2;

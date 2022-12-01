@@ -1,19 +1,19 @@
-public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 10207
+public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 10209
 {
-	private Option __menuOption_Menu_MountZipline; 
-	public Transform LineDeparturePoint; 
-	public LineRenderer ZiplineRenderer; 
-	public Collider MountCollider; 
-	public BoxCollider[] BuildingBlocks; 
-	public BoxCollider[] PointBuildingBlocks; 
-	public SpawnableBoundsBlocker[] SpawnableBoundsBlockers; 
-	public GameObjectRef MountableRef; 
-	public float LineSlackAmount; 
-	public bool RegenLine; 
-	private List<Vector3> ziplineTargets; 
-	private List<Vector3> linePoints; 
-	public GameObjectRef ArrivalPointRef; 
-	private bool hasSetupLineRenderer; 
+	private Option __menuOption_Menu_MountZipline;
+	public Transform LineDeparturePoint;
+	public LineRenderer ZiplineRenderer;
+	public Collider MountCollider;
+	public BoxCollider[] BuildingBlocks;
+	public BoxCollider[] PointBuildingBlocks;
+	public SpawnableBoundsBlocker[] SpawnableBoundsBlockers;
+	public GameObjectRef MountableRef;
+	public float LineSlackAmount;
+	public bool RegenLine;
+	private List<Vector3> ziplineTargets;
+	private List<Vector3> linePoints;
+	public GameObjectRef ArrivalPointRef;
+	private bool hasSetupLineRenderer;
 
 	public override bool HasMenuOptions { get; }
 
@@ -28,10 +28,10 @@ public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 10207
 
 	private void UpdateLineRenderer(bool force = False) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	private void Menu_MountZipline(BasePlayer player) { }
 
 	private bool Menu_Mount_ShowIf(BasePlayer player) { }
@@ -50,7 +50,7 @@ public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 10207
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <UpdateBuildingBlocks>g__SetUpBuildingBlock|25_0(BoxCollider longCollider, BoxCollider pointCollider, SpawnableBoundsBlocker spawnBlocker, int startIndex, int endIndex) { }
 
 }

@@ -1,8 +1,8 @@
 public static class WebUtility // TypeDefIndex: 2912
 {
-	private static readonly char[] _htmlEntityEndingChars; 
-	private static UnicodeDecodingConformance _htmlDecodeConformance; 
-	private static UnicodeEncodingConformance _htmlEncodeConformance; 
+	private static readonly char[] _htmlEntityEndingChars;
+	private static UnicodeDecodingConformance _htmlDecodeConformance;
+	private static UnicodeEncodingConformance _htmlEncodeConformance;
 
 
 	private static byte[] UrlEncode(byte[] bytes, int offset, int count, bool alwaysCreateNewReturnValue) { }

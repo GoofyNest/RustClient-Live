@@ -1,12 +1,12 @@
 internal sealed class RangeContentValidator : ContentValidator // TypeDefIndex: 2172
 {
-	private BitSet firstpos; 
-	private BitSet[] followpos; 
-	private BitSet positionsWithRangeTerminals; 
-	private SymbolsDictionary symbols; 
-	private Positions positions; 
-	private int minMaxNodesCount; 
-	private int endMarkerPos; 
+	private BitSet firstpos;
+	private BitSet[] followpos;
+	private BitSet positionsWithRangeTerminals;
+	private SymbolsDictionary symbols;
+	private Positions positions;
+	private int minMaxNodesCount;
+	private int endMarkerPos;
 
 
 	internal void .ctor(BitSet firstpos, BitSet[] followpos, SymbolsDictionary symbols, Positions positions, int endMarkerPos, XmlSchemaContentType contentType, bool isEmptiable, BitSet positionsWithRangeTerminals, int minmaxNodesCount) { }

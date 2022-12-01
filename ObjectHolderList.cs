@@ -1,7 +1,7 @@
 internal class ObjectHolderList // TypeDefIndex: 1042
 {
-	internal ObjectHolder[] m_values; 
-	internal int m_count; 
+	internal ObjectHolder[] m_values;
+	internal int m_count;
 
 	internal int Version { get; }
 	internal int Count { get; }

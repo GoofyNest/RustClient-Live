@@ -1,7 +1,7 @@
 internal class NamespaceListNode : SyntaxTreeNode // TypeDefIndex: 2158
 {
-	protected NamespaceList namespaceList; 
-	protected object particle; 
+	protected NamespaceList namespaceList;
+	protected object particle;
 
 	public override bool IsNullable { get; }
 

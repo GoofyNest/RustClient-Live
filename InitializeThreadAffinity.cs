@@ -1,17 +1,17 @@
-public struct InitializeThreadAffinity // TypeDefIndex: 9872
+public struct InitializeThreadAffinity // TypeDefIndex: 9874
 {
-	[CompilerGeneratedAttribute] 
-	private ulong <NetworkWork>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <StorageIo>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <WebSocketIo>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <P2PIo>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <HttpRequestIo>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <RTCIo>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private ulong <NetworkWork>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <StorageIo>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <WebSocketIo>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <P2PIo>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <HttpRequestIo>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <RTCIo>k__BackingField;
 
 	public ulong NetworkWork { get; set; }
 	public ulong StorageIo { get; set; }
@@ -21,40 +21,40 @@ public struct InitializeThreadAffinity // TypeDefIndex: 9872
 	public ulong RTCIo { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_NetworkWork() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_NetworkWork(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_StorageIo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StorageIo(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_WebSocketIo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_WebSocketIo(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_P2PIo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_P2PIo(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_HttpRequestIo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_HttpRequestIo(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_RTCIo() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RTCIo(ulong value) { }
 
 	internal void Set(ref InitializeThreadAffinityInternal other) { }

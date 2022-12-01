@@ -1,7 +1,7 @@
 internal class CaptureEnumerator : IEnumerator // TypeDefIndex: 2607
 {
-	internal CaptureCollection _rcc; 
-	internal int _curindex; 
+	internal CaptureCollection _rcc;
+	internal int _curindex;
 
 	public object Current { get; }
 	public Capture Capture { get; }

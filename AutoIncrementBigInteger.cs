@@ -1,8 +1,8 @@
 internal sealed class AutoIncrementBigInteger : AutoIncrementValue // TypeDefIndex: 4189
 {
-	private BigInteger _current; 
-	private long _seed; 
-	private BigInteger _step; 
+	private BigInteger _current;
+	private long _seed;
+	private BigInteger _step;
 
 	internal override object Current { get; set; }
 	internal override Type DataType { get; }

@@ -1,35 +1,35 @@
-public static class Config // TypeDefIndex: 8264
+public static class Config // TypeDefIndex: 8266
 {
 	public const string LibraryName = "EOSSDK-Win64-Shipping";
 	public const CallingConvention LibraryCallingConvention = 2;
 
 }
 
-public class Config : ScriptableObject // TypeDefIndex: 13326
+public class Config : ScriptableObject // TypeDefIndex: 13341
 {
-	public int geometryLayerID; 
-	public string geometryTag; 
-	public int geometryRenderQueue; 
-	public bool forceSinglePass; 
-	[SerializeField] 
-	[HighlightNullAttribute] 
-	private Shader beamShader1Pass; 
-	[FormerlySerializedAsAttribute] 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	[HighlightNullAttribute] 
-	private Shader beamShader2Pass; 
-	public int sharedMeshSides; 
-	public int sharedMeshSegments; 
-	[RangeAttribute] 
-	public float globalNoiseScale; 
-	public Vector3 globalNoiseVelocity; 
-	[HighlightNullAttribute] 
-	public TextAsset noise3DData; 
-	public int noise3DSize; 
-	[HighlightNullAttribute] 
-	public ParticleSystem dustParticlesPrefab; 
-	private static Config m_Instance; 
+	public int geometryLayerID;
+	public string geometryTag;
+	public int geometryRenderQueue;
+	public bool forceSinglePass;
+	[SerializeField]
+	[HighlightNullAttribute]
+	private Shader beamShader1Pass;
+	[FormerlySerializedAsAttribute]
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	[HighlightNullAttribute]
+	private Shader beamShader2Pass;
+	public int sharedMeshSides;
+	public int sharedMeshSegments;
+	[RangeAttribute]
+	public float globalNoiseScale;
+	public Vector3 globalNoiseVelocity;
+	[HighlightNullAttribute]
+	public TextAsset noise3DData;
+	public int noise3DSize;
+	[HighlightNullAttribute]
+	public ParticleSystem dustParticlesPrefab;
+	private static Config m_Instance;
 
 	public Shader beamShader { get; }
 	public Vector4 globalNoiseParam { get; }

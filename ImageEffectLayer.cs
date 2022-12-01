@@ -1,8 +1,8 @@
-public class ImageEffectLayer : FacepunchBehaviour // TypeDefIndex: 8050
+public class ImageEffectLayer : FacepunchBehaviour // TypeDefIndex: 8052
 {
-	protected int sortOrder; 
-	private IImageEffect[] effects; 
-	internal bool _layerEnabled; 
+	protected int sortOrder;
+	private IImageEffect[] effects;
+	internal bool _layerEnabled;
 
 	public int SortOrder { get; }
 	public IImageEffect[] Effects { get; }

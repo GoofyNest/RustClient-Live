@@ -1,9 +1,9 @@
 internal sealed class SqlUdtStorage : DataStorage // TypeDefIndex: 4435
 {
-	private object[] _values; 
-	private readonly bool _implementsIXmlSerializable; 
-	private readonly bool _implementsIComparable; 
-	private static readonly Dictionary<Type, object> s_typeToNull; 
+	private object[] _values;
+	private readonly bool _implementsIXmlSerializable;
+	private readonly bool _implementsIComparable;
+	private static readonly Dictionary<Type, object> s_typeToNull;
 
 
 	public void .ctor(DataColumn column, Type type) { }

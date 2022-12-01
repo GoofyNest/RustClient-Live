@@ -1,9 +1,9 @@
 internal class DefaultWatcher : IFileWatcher // TypeDefIndex: 2841
 {
-	private static DefaultWatcher instance; 
-	private static Thread thread; 
-	private static Hashtable watches; 
-	private static string[] NoStringsArray; 
+	private static DefaultWatcher instance;
+	private static Thread thread;
+	private static Hashtable watches;
+	private static string[] NoStringsArray;
 
 
 	private void .ctor() { }

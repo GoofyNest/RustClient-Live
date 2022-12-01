@@ -1,6 +1,6 @@
-public class FoliageDisplacementManager : SingletonComponent<FoliageDisplacementManager>, IClientComponent // TypeDefIndex: 12426
+public class FoliageDisplacementManager : SingletonComponent<FoliageDisplacementManager>, IClientComponent // TypeDefIndex: 12434
 {
-	private SpecialPurposeCamera handle; 
+	private SpecialPurposeCamera handle;
 
 
 	public static void Add(FoliageDisplacement instance) { }

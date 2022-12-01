@@ -1,14 +1,14 @@
-public class LZ4Stream : Stream // TypeDefIndex: 7028
+public class LZ4Stream : Stream // TypeDefIndex: 7030
 {
-	private readonly Stream _innerStream; 
-	private readonly LZ4StreamMode _compressionMode; 
-	private readonly bool _highCompression; 
-	private readonly bool _interactiveRead; 
-	private readonly bool _isolateInnerStream; 
-	private readonly int _blockSize; 
-	private byte[] _buffer; 
-	private int _bufferLength; 
-	private int _bufferOffset; 
+	private readonly Stream _innerStream;
+	private readonly LZ4StreamMode _compressionMode;
+	private readonly bool _highCompression;
+	private readonly bool _interactiveRead;
+	private readonly bool _isolateInnerStream;
+	private readonly int _blockSize;
+	private byte[] _buffer;
+	private int _bufferLength;
+	private int _bufferOffset;
 
 	public override bool CanRead { get; }
 	public override bool CanSeek { get; }
@@ -65,9 +65,9 @@ public class LZ4Stream : Stream // TypeDefIndex: 7028
 
 }
 
-public enum LZ4Stream.ChunkFlags // TypeDefIndex: 7029
+public enum LZ4Stream.ChunkFlags // TypeDefIndex: 7031
 {
-	public int value__; 
+	public int value__;
 	public const LZ4Stream.ChunkFlags None = 0;
 	public const LZ4Stream.ChunkFlags Compressed = 1;
 	public const LZ4Stream.ChunkFlags HighCompression = 2;

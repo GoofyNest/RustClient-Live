@@ -1,6 +1,6 @@
 public struct Int16 : IComparable, IFormattable, IConvertible, IComparable<short>, IEquatable<short> // TypeDefIndex: 257
 {
-	internal short m_value; 
+	internal short m_value;
 	public const short MaxValue = 32767;
 	public const short MinValue = -32768;
 

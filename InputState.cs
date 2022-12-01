@@ -1,8 +1,8 @@
-public class InputState // TypeDefIndex: 11847
+public class InputState // TypeDefIndex: 11854
 {
-	public InputMessage current; 
-	public InputMessage previous; 
-	private int SwallowedButtons; 
+	public InputMessage current;
+	public InputMessage previous;
+	private int SwallowedButtons;
 
 
 	public bool IsDown(BUTTON btn) { }

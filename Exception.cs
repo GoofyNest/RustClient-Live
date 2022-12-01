@@ -1,23 +1,23 @@
 public class Exception : ISerializable, _Exception // TypeDefIndex: 218
 {
-	[OptionalFieldAttribute] 
-	private static object s_EDILock; 
-	private string _className; 
-	internal string _message; 
-	private IDictionary _data; 
-	private Exception _innerException; 
-	private string _helpURL; 
-	private object _stackTrace; 
-	private string _stackTraceString; 
-	private string _remoteStackTraceString; 
-	private int _remoteStackIndex; 
-	private object _dynamicMethods; 
-	internal int _HResult; 
-	private string _source; 
-	[OptionalFieldAttribute] 
-	private SafeSerializationManager _safeSerializationManager; 
-	internal StackTrace[] captured_traces; 
-	private IntPtr[] native_trace_ips; 
+	[OptionalFieldAttribute]
+	private static object s_EDILock;
+	private string _className;
+	internal string _message;
+	private IDictionary _data;
+	private Exception _innerException;
+	private string _helpURL;
+	private object _stackTrace;
+	private string _stackTraceString;
+	private string _remoteStackTraceString;
+	private int _remoteStackIndex;
+	private object _dynamicMethods;
+	internal int _HResult;
+	private string _source;
+	[OptionalFieldAttribute]
+	private SafeSerializationManager _safeSerializationManager;
+	internal StackTrace[] captured_traces;
+	private IntPtr[] native_trace_ips;
 	private const int _COMPlusExceptionCode = -532462766;
 
 	public virtual string Message { get; }
@@ -52,7 +52,7 @@ public class Exception : ISerializable, _Exception // TypeDefIndex: 218
 
 	private string GetStackTrace(bool needFileInfo) { }
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal void SetErrorCode(int hr) { }
 
 	public virtual string get_Source() { }
@@ -63,7 +63,7 @@ public class Exception : ISerializable, _Exception // TypeDefIndex: 218
 
 	public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-	[OnDeserializedAttribute] 
+	[OnDeserializedAttribute]
 	private void OnDeserialized(StreamingContext context) { }
 
 	private string StripFileInfo(string stackTrace, bool isRemoteStackTrace) { }
@@ -88,7 +88,7 @@ public class Exception : ISerializable, _Exception // TypeDefIndex: 218
 
 internal enum Exception.ExceptionMessageKind // TypeDefIndex: 219
 {
-	public int value__; 
+	public int value__;
 	public const Exception.ExceptionMessageKind ThreadAbort = 1;
 	public const Exception.ExceptionMessageKind ThreadInterrupted = 2;
 	public const Exception.ExceptionMessageKind OutOfMemory = 3;

@@ -1,9 +1,9 @@
-public class TimelineMarker : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7082
+public class TimelineMarker : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7084
 {
-	public int CurrentPosition; 
-	public Image Background; 
-	private Timeline Parent; 
-	private bool hasDragged; 
+	public int CurrentPosition;
+	public Image Background;
+	private Timeline Parent;
+	private bool hasDragged;
 
 	public override bool IsPressed { get; }
 

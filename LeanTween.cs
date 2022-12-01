@@ -1,36 +1,36 @@
-public class LeanTween : MonoBehaviour // TypeDefIndex: 5587
+public class LeanTween : MonoBehaviour // TypeDefIndex: 5589
 {
-	public static bool throwErrors; 
-	public static float tau; 
-	public static float PI_DIV2; 
-	private static LTSeq[] sequences; 
-	private static LTDescr[] tweens; 
-	private static int[] tweensFinished; 
-	private static int[] tweensFinishedIds; 
-	private static LTDescr tween; 
-	private static int tweenMaxSearch; 
-	private static int maxTweens; 
-	private static int maxSequences; 
-	private static int frameRendered; 
-	private static GameObject _tweenEmpty; 
-	public static float dtEstimated; 
-	public static float dtManual; 
-	public static float dtActual; 
-	private static uint global_counter; 
-	private static int i; 
-	private static int j; 
-	private static int finishedCnt; 
-	public static AnimationCurve punch; 
-	public static AnimationCurve shake; 
-	private static int maxTweenReached; 
-	public static int startSearch; 
-	public static LTDescr d; 
-	private static Action<LTEvent>[] eventListeners; 
-	private static GameObject[] goListeners; 
-	private static int eventsMaxSearch; 
-	public static int EVENTS_MAX; 
-	public static int LISTENERS_MAX; 
-	private static int INIT_LISTENERS_MAX; 
+	public static bool throwErrors;
+	public static float tau;
+	public static float PI_DIV2;
+	private static LTSeq[] sequences;
+	private static LTDescr[] tweens;
+	private static int[] tweensFinished;
+	private static int[] tweensFinishedIds;
+	private static LTDescr tween;
+	private static int tweenMaxSearch;
+	private static int maxTweens;
+	private static int maxSequences;
+	private static int frameRendered;
+	private static GameObject _tweenEmpty;
+	public static float dtEstimated;
+	public static float dtManual;
+	public static float dtActual;
+	private static uint global_counter;
+	private static int i;
+	private static int j;
+	private static int finishedCnt;
+	public static AnimationCurve punch;
+	public static AnimationCurve shake;
+	private static int maxTweenReached;
+	public static int startSearch;
+	public static LTDescr d;
+	private static Action<LTEvent>[] eventListeners;
+	private static GameObject[] goListeners;
+	private static int eventsMaxSearch;
+	public static int EVENTS_MAX;
+	public static int LISTENERS_MAX;
+	private static int INIT_LISTENERS_MAX;
 
 	public static int maxSearch { get; }
 	public static int maxSimulataneousTweens { get; }
@@ -92,7 +92,7 @@ public class LeanTween : MonoBehaviour // TypeDefIndex: 5587
 
 	public static LTDescr[] descriptions(GameObject gameObject) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void pause(GameObject gameObject, int uniqueId) { }
 
 	public static void pause(int uniqueId) { }
@@ -103,7 +103,7 @@ public class LeanTween : MonoBehaviour // TypeDefIndex: 5587
 
 	public static void resumeAll() { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public static void resume(GameObject gameObject, int uniqueId) { }
 
 	public static void resume(int uniqueId) { }

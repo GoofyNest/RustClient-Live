@@ -1,9 +1,9 @@
-public class PatternFirework : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6433
+public class PatternFirework : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6435
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public PatternFirework.Design design; 
-	public int shellFuseLength; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public PatternFirework.Design design;
+	public int shellFuseLength;
 
 
 	public static void ResetToPool(PatternFirework instance) { }
@@ -60,12 +60,12 @@ public class PatternFirework : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class PatternFirework.Design : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6434
+public class PatternFirework.Design : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6436
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<PatternFirework.Star> stars; 
-	public ulong editedBy; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<PatternFirework.Star> stars;
+	public ulong editedBy;
 
 
 	public static void ResetToPool(PatternFirework.Design instance) { }
@@ -122,12 +122,12 @@ public class PatternFirework.Design : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class PatternFirework.Star : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6435
+public class PatternFirework.Star : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6437
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public Vector2 position; 
-	public Color color; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public Vector2 position;
+	public Color color;
 
 
 	public static void ResetToPool(PatternFirework.Star instance) { }
@@ -184,13 +184,13 @@ public class PatternFirework.Star : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6436
+public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6438
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int version; 
-	public string name; 
-	public PatternFirework.Design design; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int version;
+	public string name;
+	public PatternFirework.Design design;
 
 
 	public static void ResetToPool(PatternFirework.SavedDesign instance) { }
@@ -247,21 +247,21 @@ public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex: 9989
+public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex: 9991
 {
 	public const int CurrentVersion = 1;
-	[HeaderAttribute] 
-	public GameObjectRef FireworkDesignerDialog; 
-	public int MaxStars; 
-	public float ShellFuseLengthShort; 
-	public float ShellFuseLengthMed; 
-	public float ShellFuseLengthLong; 
-	public PatternFirework.Design Design; 
-	public PatternFirework.FuseLength ShellFuseLength; 
-	private Option __menuOption_MenuLongFuse; 
-	private Option __menuOption_MenuMediumFuse; 
-	private Option __menuOption_MenuOpenDesigner; 
-	private Option __menuOption_MenuShortFuse; 
+	[HeaderAttribute]
+	public GameObjectRef FireworkDesignerDialog;
+	public int MaxStars;
+	public float ShellFuseLengthShort;
+	public float ShellFuseLengthMed;
+	public float ShellFuseLengthLong;
+	public PatternFirework.Design Design;
+	public PatternFirework.FuseLength ShellFuseLength;
+	private Option __menuOption_MenuLongFuse;
+	private Option __menuOption_MenuMediumFuse;
+	private Option __menuOption_MenuOpenDesigner;
+	private Option __menuOption_MenuShortFuse;
 
 	public override bool HasMenuOptions { get; }
 
@@ -272,39 +272,39 @@ public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex
 
 	protected override void PreInitShell(FireworkShell shell) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuOpenDesigner(BasePlayer player) { }
 
 	public bool MenuOpenDesigner_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void OpenDesigner(BaseEntity.RPCMessage rpc) { }
 
 	public void SetFireworkDesign(PatternFirework.Design design) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuShortFuse(BasePlayer player) { }
 
 	public bool MenuShortFuse_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuMediumFuse(BasePlayer player) { }
 
 	public bool MenuMediumFuse_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void MenuLongFuse(BasePlayer player) { }
 
 	public bool MenuLongFuse_ShowIf(BasePlayer player) { }
@@ -321,9 +321,9 @@ public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex
 
 }
 
-public enum PatternFirework.FuseLength // TypeDefIndex: 9990
+public enum PatternFirework.FuseLength // TypeDefIndex: 9992
 {
-	public int value__; 
+	public int value__;
 	public const PatternFirework.FuseLength Short = 0;
 	public const PatternFirework.FuseLength Medium = 1;
 	public const PatternFirework.FuseLength Long = 2;

@@ -1,6 +1,6 @@
-public class GenerateDecorTopology : ProceduralComponent // TypeDefIndex: 12204
+public class GenerateDecorTopology : ProceduralComponent // TypeDefIndex: 12211
 {
-	public bool KeepExisting; 
+	public bool KeepExisting;
 
 
 	public override void Process(uint seed) { }
@@ -9,11 +9,11 @@ public class GenerateDecorTopology : ProceduralComponent // TypeDefIndex: 12204
 
 }
 
-private sealed class GenerateDecorTopology.<>c__DisplayClass1_0 // TypeDefIndex: 12205
+private sealed class GenerateDecorTopology.<>c__DisplayClass1_0 // TypeDefIndex: 12212
 {
-	public TerrainTopologyMap topomap; 
-	public GenerateDecorTopology <>4__this; 
-	public int topores; 
+	public TerrainTopologyMap topomap;
+	public GenerateDecorTopology <>4__this;
+	public int topores;
 
 
 	public void .ctor() { }

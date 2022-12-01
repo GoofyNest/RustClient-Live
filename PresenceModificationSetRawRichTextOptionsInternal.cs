@@ -1,7 +1,7 @@
-internal struct PresenceModificationSetRawRichTextOptionsInternal : ISettable<PresenceModificationSetRawRichTextOptions>, IDisposable // TypeDefIndex: 8854
+internal struct PresenceModificationSetRawRichTextOptionsInternal : ISettable<PresenceModificationSetRawRichTextOptions>, IDisposable // TypeDefIndex: 8856
 {
-	private int m_ApiVersion; 
-	private IntPtr m_RichText; 
+	private int m_ApiVersion;
+	private IntPtr m_RichText;
 
 	public Utf8String RichText { set; }
 

@@ -1,7 +1,7 @@
-public class RandomItemDispenser : PrefabAttribute, IServerComponent // TypeDefIndex: 11409
+public class RandomItemDispenser : PrefabAttribute, IServerComponent // TypeDefIndex: 11415
 {
-	public RandomItemDispenser.RandomItemChance[] Chances; 
-	public bool OnlyAwardOne; 
+	public RandomItemDispenser.RandomItemChance[] Chances;
+	public bool OnlyAwardOne;
 
 
 	protected override Type GetIndexedType() { }
@@ -10,12 +10,12 @@ public class RandomItemDispenser : PrefabAttribute, IServerComponent // TypeDefI
 
 }
 
-public struct RandomItemDispenser.RandomItemChance // TypeDefIndex: 11410
+public struct RandomItemDispenser.RandomItemChance // TypeDefIndex: 11416
 {
-	public ItemDefinition Item; 
-	public int Amount; 
-	[RangeAttribute] 
-	public float Chance; 
+	public ItemDefinition Item;
+	public int Amount;
+	[RangeAttribute]
+	public float Chance;
 
 }
 

@@ -3,7 +3,7 @@ public abstract class TypeInfo : Type, IReflectableType // TypeDefIndex: 554
 	public virtual IEnumerable<FieldInfo> DeclaredFields { get; }
 
 
-	[FriendAccessAllowedAttribute] 
+	[FriendAccessAllowedAttribute]
 	internal void .ctor() { }
 
 	private TypeInfo System.Reflection.IReflectableType.GetTypeInfo() { }
@@ -14,9 +14,9 @@ public abstract class TypeInfo : Type, IReflectableType // TypeDefIndex: 554
 
 internal class TypeInfo : IRemotingTypeInfo // TypeDefIndex: 1153
 {
-	private string serverType; 
-	private string[] serverHierarchy; 
-	private string[] interfacesImplemented; 
+	private string serverType;
+	private string[] serverHierarchy;
+	private string[] interfacesImplemented;
 
 	public string TypeName { get; }
 

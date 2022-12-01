@@ -1,16 +1,16 @@
 internal class TraceLoggingEventTypes // TypeDefIndex: 1586
 {
-	internal readonly TraceLoggingTypeInfo[] typeInfos; 
-	internal readonly string name; 
-	internal readonly EventTags tags; 
-	internal readonly byte level; 
-	internal readonly byte opcode; 
-	internal readonly EventKeywords keywords; 
-	internal readonly byte[] typeMetadata; 
-	internal readonly int scratchSize; 
-	internal readonly int dataCount; 
-	internal readonly int pinCount; 
-	private ConcurrentSet<KeyValuePair<string, EventTags>, NameInfo> nameInfos; 
+	internal readonly TraceLoggingTypeInfo[] typeInfos;
+	internal readonly string name;
+	internal readonly EventTags tags;
+	internal readonly byte level;
+	internal readonly byte opcode;
+	internal readonly EventKeywords keywords;
+	internal readonly byte[] typeMetadata;
+	internal readonly int scratchSize;
+	internal readonly int dataCount;
+	internal readonly int pinCount;
+	private ConcurrentSet<KeyValuePair<string, EventTags>, NameInfo> nameInfos;
 
 	internal string Name { get; }
 	internal EventTags Tags { get; }

@@ -1,27 +1,27 @@
-public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 10456
+public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 10460
 {
-	public VirtualItemIcon MerchandiseIcon; 
-	public VirtualItemIcon CurrencyIcon; 
-	private ItemDefinition merchandiseInfo; 
-	private ItemDefinition currencyInfo; 
-	public GameObject buyButton; 
-	public GameObject cantaffordNotification; 
-	public GameObject outOfStockNotification; 
-	private IVendingMachineInterface vendingPanel; 
-	public UIIntegerEntry intEntry; 
-	public Action<SellOrderEntry, int> onAmountChanged; 
-	public VendingMachine.SellOrder sellOrder; 
-	private bool dirty; 
-	private int minMultiplier; 
-	private bool merchIsBP; 
-	private bool currencyIsBP; 
-	private int merchandiseSellSize; 
-	private int currencyAmountPerItem; 
-	private int index; 
-	private int numInStock; 
-	private float itemCondition; 
-	private float itemConditionMax; 
-	private int itemInstanceInt; 
+	public VirtualItemIcon MerchandiseIcon;
+	public VirtualItemIcon CurrencyIcon;
+	private ItemDefinition merchandiseInfo;
+	private ItemDefinition currencyInfo;
+	public GameObject buyButton;
+	public GameObject cantaffordNotification;
+	public GameObject outOfStockNotification;
+	private IVendingMachineInterface vendingPanel;
+	public UIIntegerEntry intEntry;
+	public Action<SellOrderEntry, int> onAmountChanged;
+	public VendingMachine.SellOrder sellOrder;
+	private bool dirty;
+	private int minMultiplier;
+	private bool merchIsBP;
+	private bool currencyIsBP;
+	private int merchandiseSellSize;
+	private int currencyAmountPerItem;
+	private int index;
+	private int numInStock;
+	private float itemCondition;
+	private float itemConditionMax;
+	private int itemInstanceInt;
 
 
 	public void OnEnable() { }
@@ -58,16 +58,16 @@ public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <CurrencyAvailable>
 
 }
 
-private sealed class SellOrderEntry.<>c // TypeDefIndex: 10457
+private sealed class SellOrderEntry.<>c // TypeDefIndex: 10461
 {
-	public static readonly SellOrderEntry.<>c <>9; 
-	public static Func<Item, bool> <>9__30_1; 
-	public static Func<Item, int> <>9__30_2; 
+	public static readonly SellOrderEntry.<>c <>9;
+	public static Func<Item, bool> <>9__30_1;
+	public static Func<Item, int> <>9__30_2;
 
 
 	private static void .cctor() { }

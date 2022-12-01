@@ -1,6 +1,6 @@
-public class ERSideWalkVecs : MonoBehaviour // TypeDefIndex: 7271
+public class ERSideWalkVecs : MonoBehaviour // TypeDefIndex: 7273
 {
-	public static GameObject sidewalk; 
+	public static GameObject sidewalk;
 
 
 	public static void OQOQDODDCD(ERCrossings scr) { }

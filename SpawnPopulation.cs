@@ -1,27 +1,27 @@
-public class SpawnPopulation : BaseScriptableObject // TypeDefIndex: 11738
+public class SpawnPopulation : BaseScriptableObject // TypeDefIndex: 11745
 {
-	[HeaderAttribute] 
-	public string ResourceFolder; 
-	public GameObjectRef[] ResourceList; 
-	[HeaderAttribute] 
-	[TooltipAttribute] 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private float _targetDensity; 
-	public float SpawnRate; 
-	public int ClusterSizeMin; 
-	public int ClusterSizeMax; 
-	public int ClusterDithering; 
-	public int SpawnAttemptsInitial; 
-	public int SpawnAttemptsRepeating; 
-	public bool EnforcePopulationLimits; 
-	public bool ScaleWithLargeMaps; 
-	public bool ScaleWithSpawnFilter; 
-	public bool ScaleWithServerPopulation; 
-	public bool AlignToNormal; 
-	public SpawnFilter Filter; 
-	public float FilterCutoff; 
-	public float FilterRadius; 
+	[HeaderAttribute]
+	public string ResourceFolder;
+	public GameObjectRef[] ResourceList;
+	[HeaderAttribute]
+	[TooltipAttribute]
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private float _targetDensity;
+	public float SpawnRate;
+	public int ClusterSizeMin;
+	public int ClusterSizeMax;
+	public int ClusterDithering;
+	public int SpawnAttemptsInitial;
+	public int SpawnAttemptsRepeating;
+	public bool EnforcePopulationLimits;
+	public bool ScaleWithLargeMaps;
+	public bool ScaleWithSpawnFilter;
+	public bool ScaleWithServerPopulation;
+	public bool AlignToNormal;
+	public SpawnFilter Filter;
+	public float FilterCutoff;
+	public float FilterRadius;
 
 	public virtual float TargetDensity { get; }
 

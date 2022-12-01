@@ -5,14 +5,14 @@ public sealed class CubemapArray : Texture // TypeDefIndex: 3450
 
 	public override bool get_isReadable() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Internal_CreateImpl(CubemapArray mono, int ext, int count, int mipCount, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	private static void Internal_Create(CubemapArray mono, int ext, int count, int mipCount, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	public void .ctor(int width, int cubemapCount, DefaultFormat format, TextureCreationFlags flags) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor(int width, int cubemapCount, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	public void .ctor(int width, int cubemapCount, GraphicsFormat format, TextureCreationFlags flags, int mipCount) { }

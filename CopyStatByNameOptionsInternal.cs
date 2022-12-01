@@ -1,8 +1,8 @@
-internal struct CopyStatByNameOptionsInternal : ISettable<CopyStatByNameOptions>, IDisposable // TypeDefIndex: 8429
+internal struct CopyStatByNameOptionsInternal : ISettable<CopyStatByNameOptions>, IDisposable // TypeDefIndex: 8431
 {
-	private int m_ApiVersion; 
-	private IntPtr m_TargetUserId; 
-	private IntPtr m_Name; 
+	private int m_ApiVersion;
+	private IntPtr m_TargetUserId;
+	private IntPtr m_Name;
 
 	public ProductUserId TargetUserId { set; }
 	public Utf8String Name { set; }

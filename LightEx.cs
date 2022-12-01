@@ -1,25 +1,25 @@
-public class LightEx : UpdateBehaviour, IClientComponent // TypeDefIndex: 10922
+public class LightEx : UpdateBehaviour, IClientComponent // TypeDefIndex: 10928
 {
-	public bool alterColor; 
-	public float colorTimeScale; 
-	public Color colorA; 
-	public Color colorB; 
-	public AnimationCurve blendCurve; 
-	public bool loopColor; 
-	public bool alterIntensity; 
-	public float intensityTimeScale; 
-	public AnimationCurve intenseCurve; 
-	public float intensityCurveScale; 
-	public bool loopIntensity; 
-	public bool randomOffset; 
-	public float randomIntensityStartScale; 
-	private float initialRange; 
-	private Color initialColor; 
-	private float initialIntensity; 
-	private Light lightComponent; 
-	private bool canToggleLight; 
-	private float time; 
-	private LightLOD lightLOD; 
+	public bool alterColor;
+	public float colorTimeScale;
+	public Color colorA;
+	public Color colorB;
+	public AnimationCurve blendCurve;
+	public bool loopColor;
+	public bool alterIntensity;
+	public float intensityTimeScale;
+	public AnimationCurve intenseCurve;
+	public float intensityCurveScale;
+	public bool loopIntensity;
+	public bool randomOffset;
+	public float randomIntensityStartScale;
+	private float initialRange;
+	private Color initialColor;
+	private float initialIntensity;
+	private Light lightComponent;
+	private bool canToggleLight;
+	private float time;
+	private LightLOD lightLOD;
 
 
 	protected void Awake() { }

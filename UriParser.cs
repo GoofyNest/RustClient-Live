@@ -1,38 +1,38 @@
 public abstract class UriParser // TypeDefIndex: 2583
 {
 	private const UriSyntaxFlags SchemeOnlyFlags = 16;
-	private static readonly Dictionary<string, UriParser> m_Table; 
-	private static Dictionary<string, UriParser> m_TempTable; 
-	private UriSyntaxFlags m_Flags; 
-	private UriSyntaxFlags m_UpdatableFlags; 
-	private bool m_UpdatableFlagsUsed; 
+	private static readonly Dictionary<string, UriParser> m_Table;
+	private static Dictionary<string, UriParser> m_TempTable;
+	private UriSyntaxFlags m_Flags;
+	private UriSyntaxFlags m_UpdatableFlags;
+	private bool m_UpdatableFlagsUsed;
 	private const UriSyntaxFlags c_UpdatableFlags = 33554432;
-	private int m_Port; 
-	private string m_Scheme; 
+	private int m_Port;
+	private string m_Scheme;
 	internal const int NoDefaultPort = -1;
 	private const int c_InitialTableSize = 25;
-	internal static UriParser HttpUri; 
-	internal static UriParser HttpsUri; 
-	internal static UriParser WsUri; 
-	internal static UriParser WssUri; 
-	internal static UriParser FtpUri; 
-	internal static UriParser FileUri; 
-	internal static UriParser GopherUri; 
-	internal static UriParser NntpUri; 
-	internal static UriParser NewsUri; 
-	internal static UriParser MailToUri; 
-	internal static UriParser UuidUri; 
-	internal static UriParser TelnetUri; 
-	internal static UriParser LdapUri; 
-	internal static UriParser NetTcpUri; 
-	internal static UriParser NetPipeUri; 
-	internal static UriParser VsMacrosUri; 
-	private static readonly UriParser.UriQuirksVersion s_QuirksVersion; 
+	internal static UriParser HttpUri;
+	internal static UriParser HttpsUri;
+	internal static UriParser WsUri;
+	internal static UriParser WssUri;
+	internal static UriParser FtpUri;
+	internal static UriParser FileUri;
+	internal static UriParser GopherUri;
+	internal static UriParser NntpUri;
+	internal static UriParser NewsUri;
+	internal static UriParser MailToUri;
+	internal static UriParser UuidUri;
+	internal static UriParser TelnetUri;
+	internal static UriParser LdapUri;
+	internal static UriParser NetTcpUri;
+	internal static UriParser NetPipeUri;
+	internal static UriParser VsMacrosUri;
+	private static readonly UriParser.UriQuirksVersion s_QuirksVersion;
 	private const int c_MaxCapacity = 512;
 	private const UriSyntaxFlags UnknownV1SyntaxFlags = 351342590;
-	private static readonly UriSyntaxFlags HttpSyntaxFlags; 
+	private static readonly UriSyntaxFlags HttpSyntaxFlags;
 	private const UriSyntaxFlags FtpSyntaxFlags = 367005533;
-	private static readonly UriSyntaxFlags FileSyntaxFlags; 
+	private static readonly UriSyntaxFlags FileSyntaxFlags;
 	private const UriSyntaxFlags VsmacrosSyntaxFlags = 399519697;
 	private const UriSyntaxFlags GopherSyntaxFlags = 337645405;
 	private const UriSyntaxFlags NewsSyntaxFlags = 268435536;
@@ -100,7 +100,7 @@ public abstract class UriParser // TypeDefIndex: 2583
 
 private enum UriParser.UriQuirksVersion // TypeDefIndex: 2584
 {
-	public int value__; 
+	public int value__;
 	public const UriParser.UriQuirksVersion V2 = 2;
 	public const UriParser.UriQuirksVersion V3 = 3;
 

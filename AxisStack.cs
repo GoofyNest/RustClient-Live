@@ -1,8 +1,8 @@
 internal class AxisStack // TypeDefIndex: 2133
 {
-	private ArrayList stack; 
-	private ForwardAxis subtree; 
-	private ActiveAxis parent; 
+	private ArrayList stack;
+	private ForwardAxis subtree;
+	private ActiveAxis parent;
 
 	internal ForwardAxis Subtree { get; }
 	internal int Length { get; }

@@ -1,18 +1,18 @@
 public class ReturnMessage : IMethodReturnMessage, IMethodMessage, IMessage, IInternalMessage // TypeDefIndex: 1258
 {
-	private object[] _outArgs; 
-	private object[] _args; 
-	private LogicalCallContext _callCtx; 
-	private object _returnValue; 
-	private string _uri; 
-	private Exception _exception; 
-	private MethodBase _methodBase; 
-	private string _methodName; 
-	private Type[] _methodSignature; 
-	private string _typeName; 
-	private MethodReturnDictionary _properties; 
-	private Identity _targetIdentity; 
-	private ArgInfo _inArgInfo; 
+	private object[] _outArgs;
+	private object[] _args;
+	private LogicalCallContext _callCtx;
+	private object _returnValue;
+	private string _uri;
+	private Exception _exception;
+	private MethodBase _methodBase;
+	private string _methodName;
+	private Type[] _methodSignature;
+	private string _typeName;
+	private MethodReturnDictionary _properties;
+	private Identity _targetIdentity;
+	private ArgInfo _inArgInfo;
 
 	public int ArgCount { get; }
 	public object[] Args { get; }

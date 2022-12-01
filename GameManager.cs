@@ -1,10 +1,10 @@
-public class GameManager // TypeDefIndex: 11617
+public class GameManager // TypeDefIndex: 11624
 {
-	public static GameManager client; 
-	internal PrefabPreProcess preProcessed; 
-	internal PrefabPoolCollection pool; 
-	private bool Clientside; 
-	private bool Serverside; 
+	public static GameManager client;
+	internal PrefabPreProcess preProcessed;
+	internal PrefabPoolCollection pool;
+	private bool Clientside;
+	private bool Serverside;
 
 
 	public void Reset() { }

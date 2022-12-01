@@ -1,10 +1,10 @@
-public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 12750
+public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 12764
 {
-	public GameObject queueContainer; 
-	public GameObject queueItemPrefab; 
-	private ScrollRect scrollRect; 
-	private static Dictionary<int, int> CraftingItems; 
-	public static bool isCrafting; 
+	public GameObject queueContainer;
+	public GameObject queueItemPrefab;
+	private ScrollRect scrollRect;
+	private static Dictionary<int, int> CraftingItems;
+	public static bool isCrafting;
 
 
 	protected override void Awake() { }
@@ -31,10 +31,10 @@ public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 
 
 }
 
-private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 12751
+private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 12765
 {
-	public int taskid; 
-	public Func<CraftingQueueIcon, bool> <>9__0; 
+	public int taskid;
+	public Func<CraftingQueueIcon, bool> <>9__0;
 
 
 	public void .ctor() { }
@@ -43,10 +43,10 @@ private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 12751
 
 }
 
-private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 12752
+private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 12766
 {
-	public int taskid; 
-	public Func<CraftingQueueIcon, bool> <>9__0; 
+	public int taskid;
+	public Func<CraftingQueueIcon, bool> <>9__0;
 
 
 	public void .ctor() { }
@@ -55,10 +55,10 @@ private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 12752
 
 }
 
-private sealed class CraftingQueue.<>c__DisplayClass10_0 // TypeDefIndex: 12753
+private sealed class CraftingQueue.<>c__DisplayClass10_0 // TypeDefIndex: 12767
 {
-	public int taskid; 
-	public Func<CraftingQueueIcon, bool> <>9__0; 
+	public int taskid;
+	public Func<CraftingQueueIcon, bool> <>9__0;
 
 
 	public void .ctor() { }

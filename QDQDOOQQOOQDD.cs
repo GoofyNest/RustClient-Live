@@ -1,20 +1,20 @@
-public class QDQDOOQQOOQDD : MonoBehaviour // TypeDefIndex: 7292
+public class QDQDOOQQOOQDD : MonoBehaviour // TypeDefIndex: 7294
 {
-	private List<Vector3> ᙃ; 
-	private float[,] ᙄ; 
-	private float[] ᙅ; 
-	private TerrainData 4AAAA; 
-	public static float minx; 
-	public static float minz; 
-	public static float maxx; 
-	public static float maxz; 
-	public static Vector2 splatMapScale; 
-	public static List<GameObject> surfaceObjects; 
-	public static List<GameObject> tunnelObjects; 
-	public static int crossingSurfacesStart; 
-	public static int sideObjectSurfacesStart; 
-	public static List<GameObject> treeObjects; 
-	public static List<GameObject> detailObjects; 
+	private List<Vector3> ᙃ;
+	private float[,] ᙄ;
+	private float[] ᙅ;
+	private TerrainData 4AAAA;
+	public static float minx;
+	public static float minz;
+	public static float maxx;
+	public static float maxz;
+	public static Vector2 splatMapScale;
+	public static List<GameObject> surfaceObjects;
+	public static List<GameObject> tunnelObjects;
+	public static int crossingSurfacesStart;
+	public static int sideObjectSurfacesStart;
+	public static List<GameObject> treeObjects;
+	public static List<GameObject> detailObjects;
 
 
 	public static void ODDCCODOOC(ERModularBase scr, Terrain terrain) { }

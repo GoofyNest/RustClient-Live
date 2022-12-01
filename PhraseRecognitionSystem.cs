@@ -1,17 +1,17 @@
 public static class PhraseRecognitionSystem // TypeDefIndex: 3594
 {
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static PhraseRecognitionSystem.ErrorDelegate OnError; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static PhraseRecognitionSystem.StatusDelegate OnStatusChanged; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static PhraseRecognitionSystem.ErrorDelegate OnError;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static PhraseRecognitionSystem.StatusDelegate OnStatusChanged;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void PhraseRecognitionSystem_InvokeErrorEvent(SpeechError errorCode) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	private static void PhraseRecognitionSystem_InvokeStatusChangedEvent(SpeechSystemStatus status) { }
 
 }

@@ -2,12 +2,12 @@ public class Physics // TypeDefIndex: 3939
 {
 	public static Vector3 gravity { get; }
 	public static bool queriesHitBackfaces { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static PhysicsScene defaultPhysicsScene { get; }
 	public static bool autoSyncTransforms { get; set; }
 
 
-	[ThreadSafeAttribute] 
+	[ThreadSafeAttribute]
 	public static Vector3 get_gravity() { }
 
 	public static bool get_queriesHitBackfaces() { }
@@ -20,136 +20,136 @@ public class Physics // TypeDefIndex: 3939
 
 	public static bool Raycast(Vector3 origin, Vector3 direction, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Vector3 origin, Vector3 direction, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Vector3 origin, Vector3 direction, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Vector3 origin, Vector3 direction) { }
 
 	public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[RequiredByNativeCodeAttribute] 
-	[ExcludeFromDocsAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo) { }
 
 	public static bool Raycast(Ray ray, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Ray ray, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Ray ray, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Ray ray) { }
 
 	public static bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Raycast(Ray ray, out RaycastHit hitInfo) { }
 
 	public static bool Linecast(Vector3 start, Vector3 end, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static bool Linecast(Vector3 start, Vector3 end, out RaycastHit hitInfo, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool Linecast(Vector3 start, Vector3 end, out RaycastHit hitInfo, int layerMask) { }
 
 	public static bool CapsuleCast(Vector3 point1, Vector3 point2, float radius, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool CapsuleCast(Vector3 point1, Vector3 point2, float radius, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask) { }
 
 	public static bool SphereCast(Vector3 origin, float radius, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool SphereCast(Vector3 origin, float radius, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask) { }
 
 	public static bool SphereCast(Ray ray, float radius, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool SphereCast(Ray ray, float radius, float maxDistance, int layerMask) { }
 
 	public static bool SphereCast(Ray ray, float radius, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool SphereCast(Ray ray, float radius, out RaycastHit hitInfo, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool SphereCast(Ray ray, float radius, out RaycastHit hitInfo, float maxDistance) { }
 
 	public static bool BoxCast(Vector3 center, Vector3 halfExtents, Vector3 direction, out RaycastHit hitInfo, Quaternion orientation, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool BoxCast(Vector3 center, Vector3 halfExtents, Vector3 direction, out RaycastHit hitInfo, Quaternion orientation, float maxDistance, int layerMask) { }
 
-	[NativeNameAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeNameAttribute]
+	[StaticAccessorAttribute]
 	private static RaycastHit[] Internal_RaycastAll(PhysicsScene physicsScene, Ray ray, float maxDistance, int mask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static RaycastHit[] RaycastAll(Vector3 origin, Vector3 direction, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit[] RaycastAll(Vector3 origin, Vector3 direction, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit[] RaycastAll(Vector3 origin, Vector3 direction, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit[] RaycastAll(Vector3 origin, Vector3 direction) { }
 
 	public static RaycastHit[] RaycastAll(Ray ray, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[RequiredByNativeCodeAttribute] 
-	[ExcludeFromDocsAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit[] RaycastAll(Ray ray, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit[] RaycastAll(Ray ray, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static RaycastHit[] RaycastAll(Ray ray) { }
 
 	public static int RaycastNonAlloc(Ray ray, RaycastHit[] results, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[RequiredByNativeCodeAttribute] 
-	[ExcludeFromDocsAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[ExcludeFromDocsAttribute]
 	public static int RaycastNonAlloc(Ray ray, RaycastHit[] results, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int RaycastNonAlloc(Ray ray, RaycastHit[] results, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int RaycastNonAlloc(Ray ray, RaycastHit[] results) { }
 
 	public static int RaycastNonAlloc(Vector3 origin, Vector3 direction, RaycastHit[] results, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int RaycastNonAlloc(Vector3 origin, Vector3 direction, RaycastHit[] results, float maxDistance, int layerMask) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int RaycastNonAlloc(Vector3 origin, Vector3 direction, RaycastHit[] results, float maxDistance) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static int RaycastNonAlloc(Vector3 origin, Vector3 direction, RaycastHit[] results) { }
 
-	[NativeNameAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeNameAttribute]
+	[StaticAccessorAttribute]
 	private static RaycastHit[] Query_SphereCastAll(PhysicsScene physicsScene, Vector3 origin, float radius, Vector3 direction, float maxDistance, int mask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static RaycastHit[] SphereCastAll(Vector3 origin, float radius, Vector3 direction, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
@@ -164,13 +164,13 @@ public class Physics // TypeDefIndex: 3939
 
 	public static int OverlapSphereNonAlloc(Vector3 position, float radius, Collider[] results, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	private static bool CheckSphere_Internal(PhysicsScene physicsScene, Vector3 position, float radius, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static bool CheckSphere(Vector3 position, float radius, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool CheckSphere(Vector3 position, float radius, int layerMask) { }
 
 	public static int CapsuleCastNonAlloc(Vector3 point1, Vector3 point2, float radius, Vector3 direction, RaycastHit[] results, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
@@ -179,28 +179,28 @@ public class Physics // TypeDefIndex: 3939
 
 	public static int SphereCastNonAlloc(Ray ray, float radius, RaycastHit[] results, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[NativeNameAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeNameAttribute]
+	[StaticAccessorAttribute]
 	private static bool CheckCapsule_Internal(PhysicsScene physicsScene, Vector3 start, Vector3 end, float radius, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static bool CheckCapsule(Vector3 start, Vector3 end, float radius, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static bool CheckCapsule(Vector3 start, Vector3 end, float radius, int layerMask) { }
 
-	[NativeNameAttribute] 
-	[StaticAccessorAttribute] 
+	[NativeNameAttribute]
+	[StaticAccessorAttribute]
 	private static bool CheckBox_Internal(PhysicsScene physicsScene, Vector3 center, Vector3 halfExtents, Quaternion orientation, int layermask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static bool CheckBox(Vector3 center, Vector3 halfExtents, Quaternion orientation, int layermask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[StaticAccessorAttribute] 
-	[NativeNameAttribute] 
+	[StaticAccessorAttribute]
+	[NativeNameAttribute]
 	private static Collider[] OverlapBox_Internal(PhysicsScene physicsScene, Vector3 center, Vector3 halfExtents, Quaternion orientation, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
 	public static Collider[] OverlapBox(Vector3 center, Vector3 halfExtents, Quaternion orientation, int layerMask, QueryTriggerInteraction queryTriggerInteraction) { }
 
-	[ExcludeFromDocsAttribute] 
+	[ExcludeFromDocsAttribute]
 	public static Collider[] OverlapBox(Vector3 center, Vector3 halfExtents, Quaternion orientation, int layerMask) { }
 
 	public static int OverlapBoxNonAlloc(Vector3 center, Vector3 halfExtents, Collider[] results, Quaternion orientation, int mask, QueryTriggerInteraction queryTriggerInteraction) { }
@@ -225,22 +225,22 @@ public class Physics // TypeDefIndex: 3939
 
 }
 
-public class Physics : ConsoleSystem // TypeDefIndex: 13740
+public class Physics : ConsoleSystem // TypeDefIndex: 13756
 {
-	[ClientVar] 
-	public static int ragdollmode; 
-	[ClientVar] 
-	[ServerVar] 
-	public static bool batchsynctransforms; 
+	[ClientVar]
+	public static int ragdollmode;
+	[ClientVar]
+	[ServerVar]
+	public static bool batchsynctransforms;
 
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static float steps { get; set; }
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static float minsteps { get; set; }
-	[ClientVar] 
-	[ServerVar] 
+	[ClientVar]
+	[ServerVar]
 	public static bool autosynctransforms { get; set; }
 
 

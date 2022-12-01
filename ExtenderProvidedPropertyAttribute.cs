@@ -1,8 +1,8 @@
 public sealed class ExtenderProvidedPropertyAttribute : Attribute // TypeDefIndex: 2708
 {
-	private PropertyDescriptor extenderProperty; 
-	private IExtenderProvider provider; 
-	private Type receiverType; 
+	private PropertyDescriptor extenderProperty;
+	private IExtenderProvider provider;
+	private Type receiverType;
 
 	public IExtenderProvider Provider { get; }
 	public Type ReceiverType { get; }

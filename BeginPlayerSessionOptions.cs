@@ -1,15 +1,15 @@
-public struct BeginPlayerSessionOptions // TypeDefIndex: 9041
+public struct BeginPlayerSessionOptions // TypeDefIndex: 9043
 {
-	[CompilerGeneratedAttribute] 
-	private BeginPlayerSessionOptionsAccountId <AccountId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DisplayName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private UserControllerType <ControllerType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ServerIp>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <GameSessionId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private BeginPlayerSessionOptionsAccountId <AccountId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DisplayName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private UserControllerType <ControllerType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <ServerIp>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <GameSessionId>k__BackingField;
 
 	public BeginPlayerSessionOptionsAccountId AccountId { get; set; }
 	public Utf8String DisplayName { get; set; }
@@ -18,34 +18,34 @@ public struct BeginPlayerSessionOptions // TypeDefIndex: 9041
 	public Utf8String GameSessionId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BeginPlayerSessionOptionsAccountId get_AccountId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AccountId(BeginPlayerSessionOptionsAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DisplayName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DisplayName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public UserControllerType get_ControllerType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ControllerType(UserControllerType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ServerIp() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ServerIp(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_GameSessionId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_GameSessionId(Utf8String value) { }
 
 }

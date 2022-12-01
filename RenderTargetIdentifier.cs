@@ -1,12 +1,12 @@
 public struct RenderTargetIdentifier : IEquatable<RenderTargetIdentifier> // TypeDefIndex: 3827
 {
-	private BuiltinRenderTextureType m_Type; 
-	private int m_NameID; 
-	private int m_InstanceID; 
-	private IntPtr m_BufferPointer; 
-	private int m_MipLevel; 
-	private CubemapFace m_CubeFace; 
-	private int m_DepthSlice; 
+	private BuiltinRenderTextureType m_Type;
+	private int m_NameID;
+	private int m_InstanceID;
+	private IntPtr m_BufferPointer;
+	private int m_MipLevel;
+	private CubemapFace m_CubeFace;
+	private int m_DepthSlice;
 
 
 	public void .ctor(BuiltinRenderTextureType type) { }

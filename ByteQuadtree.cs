@@ -1,11 +1,11 @@
-public sealed class ByteQuadtree // TypeDefIndex: 12029
+public sealed class ByteQuadtree // TypeDefIndex: 12036
 {
-	[SerializeField] 
-	private int size; 
-	[SerializeField] 
-	private int levels; 
-	[SerializeField] 
-	private ByteMap[] values; 
+	[SerializeField]
+	private int size;
+	[SerializeField]
+	private int levels;
+	[SerializeField]
+	private ByteMap[] values;
 
 	public int Size { get; }
 	public ByteQuadtree.Element Root { get; }
@@ -23,12 +23,12 @@ public sealed class ByteQuadtree // TypeDefIndex: 12029
 
 }
 
-public struct ByteQuadtree.Element // TypeDefIndex: 12030
+public struct ByteQuadtree.Element // TypeDefIndex: 12037
 {
-	private ByteQuadtree source; 
-	private int x; 
-	private int y; 
-	private int level; 
+	private ByteQuadtree source;
+	private int x;
+	private int y;
+	private int level;
 
 	public bool IsLeaf { get; }
 	public bool IsRoot { get; }

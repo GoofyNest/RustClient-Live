@@ -1,124 +1,124 @@
-public static class StringEx // TypeDefIndex: 6618
+public static class StringEx // TypeDefIndex: 6620
 {
-	private static readonly Regex regexNumeric; 
-	private static readonly Regex regexAlphaNumeric; 
+	private static readonly Regex regexNumeric;
+	private static readonly Regex regexAlphaNumeric;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string Replace(string originalString, string oldValue, string newValue, StringComparison comparisonType) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool Contains(string haystack, string needle, CompareOptions options) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsLower(string str) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string ToPrintable(string str, int maxLength = 2147483647) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsNumeric(string str) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool IsAlphaNumeric(string str) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string EscapeRichText(string str) { }
 
-	[IteratorStateMachineAttribute] 
-	[ExtensionAttribute] 
+	[IteratorStateMachineAttribute]
+	[ExtensionAttribute]
 	public static IEnumerable<string> SplitToLines(string input) { }
 
-	[IteratorStateMachineAttribute] 
-	[ExtensionAttribute] 
+	[IteratorStateMachineAttribute]
+	[ExtensionAttribute]
 	public static IEnumerable<string> SplitToChunks(string str, int chunkLength) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static uint ManifestHash(string str) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool StartsWithAny(string str, string[] values) { }
 
 	private static void .cctor() { }
 
 }
 
-private sealed class StringEx.<SplitToLines>d__9 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6619
+private sealed class StringEx.<SplitToLines>d__9 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6621
 {
-	private int <>1__state; 
-	private string <>2__current; 
-	private int <>l__initialThreadId; 
-	private string input; 
-	public string <>3__input; 
-	private StringReader <reader>5__2; 
+	private int <>1__state;
+	private string <>2__current;
+	private int <>l__initialThreadId;
+	private string input;
+	public string <>3__input;
+	private StringReader <reader>5__2;
 
 	private string System.Collections.Generic.IEnumerator<System.String>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
 	private void <>m__Finally1() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private string System.Collections.Generic.IEnumerator<System.String>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<string> System.Collections.Generic.IEnumerable<System.String>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
-private sealed class StringEx.<SplitToChunks>d__10 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6620
+private sealed class StringEx.<SplitToChunks>d__10 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6622
 {
-	private int <>1__state; 
-	private string <>2__current; 
-	private int <>l__initialThreadId; 
-	private string str; 
-	public string <>3__str; 
-	private int chunkLength; 
-	public int <>3__chunkLength; 
-	private int <i>5__2; 
+	private int <>1__state;
+	private string <>2__current;
+	private int <>l__initialThreadId;
+	private string str;
+	public string <>3__str;
+	private int chunkLength;
+	public int <>3__chunkLength;
+	private int <i>5__2;
 
 	private string System.Collections.Generic.IEnumerator<System.String>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private string System.Collections.Generic.IEnumerator<System.String>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator<string> System.Collections.Generic.IEnumerable<System.String>.GetEnumerator() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }

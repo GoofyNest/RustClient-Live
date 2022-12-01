@@ -2,11 +2,11 @@ internal class DigestHeaderParser // TypeDefIndex: 2992
 {
 
 internal class DigestHeaderParser
-	private string header; 
-	private int length; 
-	private int pos; 
-	private static string[] keywords; 
-	private string[] values; 
+	private string header;
+	private int length;
+	private int pos;
+	private static string[] keywords;
+	private string[] values;
 
 	public string Realm { get; }
 	public string Opaque { get; }

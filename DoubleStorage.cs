@@ -1,6 +1,6 @@
 internal sealed class DoubleStorage : DataStorage // TypeDefIndex: 4407
 {
-	private double[] _values; 
+	private double[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

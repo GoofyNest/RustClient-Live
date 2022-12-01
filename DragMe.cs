@@ -1,9 +1,9 @@
-public class DragMe : MonoBehaviour, IBeginDragHandler, IEventSystemHandler, IDragHandler, IEndDragHandler // TypeDefIndex: 13049
+public class DragMe : MonoBehaviour, IBeginDragHandler, IEventSystemHandler, IDragHandler, IEndDragHandler // TypeDefIndex: 13064
 {
-	public static DragMe dragging; 
-	public static GameObject dragIcon; 
-	public static object data; 
-	public string dragType; 
+	public static DragMe dragging;
+	public static GameObject dragIcon;
+	public static object data;
+	public string dragType;
 
 	protected virtual Canvas TopCanvas { get; }
 	public virtual bool CancelOnDrop { get; }

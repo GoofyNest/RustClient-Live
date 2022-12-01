@@ -1,37 +1,37 @@
-public class ImpostorInstanceData // TypeDefIndex: 12430
+public class ImpostorInstanceData // TypeDefIndex: 12438
 {
-	[CompilerGeneratedAttribute] 
-	private Renderer <Renderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Mesh <Mesh>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <Material>k__BackingField; 
-	public ImpostorBatch Batch; 
-	public int BatchIndex; 
-	private int hash; 
-	private Vector4 positionAndScale; 
+	[CompilerGeneratedAttribute]
+	private Renderer <Renderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Mesh <Mesh>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <Material>k__BackingField;
+	public ImpostorBatch Batch;
+	public int BatchIndex;
+	private int hash;
+	private Vector4 positionAndScale;
 
 	public Renderer Renderer { get; set; }
 	public Mesh Mesh { get; set; }
 	public Material Material { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Renderer(Renderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Renderer get_Renderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Mesh(Mesh value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Mesh get_Mesh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Material(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_Material() { }
 
 	public void .ctor(Renderer renderer, Mesh mesh, Material material) { }

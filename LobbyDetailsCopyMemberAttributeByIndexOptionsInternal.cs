@@ -1,8 +1,8 @@
-internal struct LobbyDetailsCopyMemberAttributeByIndexOptionsInternal : ISettable<LobbyDetailsCopyMemberAttributeByIndexOptions>, IDisposable // TypeDefIndex: 9138
+internal struct LobbyDetailsCopyMemberAttributeByIndexOptionsInternal : ISettable<LobbyDetailsCopyMemberAttributeByIndexOptions>, IDisposable // TypeDefIndex: 9140
 {
-	private int m_ApiVersion; 
-	private IntPtr m_TargetUserId; 
-	private uint m_AttrIndex; 
+	private int m_ApiVersion;
+	private IntPtr m_TargetUserId;
+	private uint m_AttrIndex;
 
 	public ProductUserId TargetUserId { set; }
 	public uint AttrIndex { set; }

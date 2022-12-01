@@ -1,30 +1,30 @@
 internal static class Native // TypeDefIndex: 4583
 {
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static void YGNodeMeasureInvoke(YogaNode node, float width, YogaMeasureMode widthMode, float height, YogaMeasureMode heightMode, IntPtr returnValueAddress) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static void YGNodeBaselineInvoke(YogaNode node, float width, float height, IntPtr returnValueAddress) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float YGNodeLayoutGetLeft(IntPtr node) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float YGNodeLayoutGetTop(IntPtr node) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float YGNodeLayoutGetWidth(IntPtr node) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public static float YGNodeLayoutGetHeight(IntPtr node) { }
 
 }
 
-public class Native // TypeDefIndex: 7335
+public class Native // TypeDefIndex: 7337
 {
 
-[SuppressUnmanagedCodeSecurityAttribute] 
+[SuppressUnmanagedCodeSecurityAttribute]
 public class Native
 
 	public static extern IntPtr NET_Create() { }
@@ -89,9 +89,9 @@ public class Native
 
 }
 
-public enum Native.Metrics // TypeDefIndex: 7336
+public enum Native.Metrics // TypeDefIndex: 7338
 {
-	public int value__; 
+	public int value__;
 	public const Native.Metrics USER_MESSAGE_BYTES_PUSHED = 0;
 	public const Native.Metrics USER_MESSAGE_BYTES_SENT = 1;
 	public const Native.Metrics USER_MESSAGE_BYTES_RESENT = 2;
@@ -103,9 +103,9 @@ public enum Native.Metrics // TypeDefIndex: 7336
 
 }
 
-public enum Native.PacketPriority // TypeDefIndex: 7337
+public enum Native.PacketPriority // TypeDefIndex: 7339
 {
-	public int value__; 
+	public int value__;
 	public const Native.PacketPriority IMMEDIATE_PRIORITY = 0;
 	public const Native.PacketPriority HIGH_PRIORITY = 1;
 	public const Native.PacketPriority MEDIUM_PRIORITY = 2;
@@ -114,49 +114,49 @@ public enum Native.PacketPriority // TypeDefIndex: 7337
 
 }
 
-public struct Native.RaknetStats // TypeDefIndex: 7338
+public struct Native.RaknetStats // TypeDefIndex: 7340
 {
-	[FixedBufferAttribute] 
-	public Native.RaknetStats.<valueOverLastSecond>e__FixedBuffer valueOverLastSecond; 
-	[FixedBufferAttribute] 
-	public Native.RaknetStats.<runningTotal>e__FixedBuffer runningTotal; 
-	public ulong connectionStartTime; 
-	public byte isLimitedByCongestionControl; 
-	public ulong BPSLimitByCongestionControl; 
-	public byte isLimitedByOutgoingBandwidthLimit; 
-	public ulong BPSLimitByOutgoingBandwidthLimit; 
-	[FixedBufferAttribute] 
-	public Native.RaknetStats.<messageInSendBuffer>e__FixedBuffer messageInSendBuffer; 
-	[FixedBufferAttribute] 
-	public Native.RaknetStats.<bytesInSendBuffer>e__FixedBuffer bytesInSendBuffer; 
-	public uint messagesInResendBuffer; 
-	public ulong bytesInResendBuffer; 
-	public float packetlossLastSecond; 
-	public float packetlossTotal; 
+	[FixedBufferAttribute]
+	public Native.RaknetStats.<valueOverLastSecond>e__FixedBuffer valueOverLastSecond;
+	[FixedBufferAttribute]
+	public Native.RaknetStats.<runningTotal>e__FixedBuffer runningTotal;
+	public ulong connectionStartTime;
+	public byte isLimitedByCongestionControl;
+	public ulong BPSLimitByCongestionControl;
+	public byte isLimitedByOutgoingBandwidthLimit;
+	public ulong BPSLimitByOutgoingBandwidthLimit;
+	[FixedBufferAttribute]
+	public Native.RaknetStats.<messageInSendBuffer>e__FixedBuffer messageInSendBuffer;
+	[FixedBufferAttribute]
+	public Native.RaknetStats.<bytesInSendBuffer>e__FixedBuffer bytesInSendBuffer;
+	public uint messagesInResendBuffer;
+	public ulong bytesInResendBuffer;
+	public float packetlossLastSecond;
+	public float packetlossTotal;
 
 }
 
-public struct Native.RaknetStats.<valueOverLastSecond>e__FixedBuffer // TypeDefIndex: 7339
+public struct Native.RaknetStats.<valueOverLastSecond>e__FixedBuffer // TypeDefIndex: 7341
 {
-	public ulong FixedElementField; 
+	public ulong FixedElementField;
 
 }
 
-public struct Native.RaknetStats.<runningTotal>e__FixedBuffer // TypeDefIndex: 7340
+public struct Native.RaknetStats.<runningTotal>e__FixedBuffer // TypeDefIndex: 7342
 {
-	public ulong FixedElementField; 
+	public ulong FixedElementField;
 
 }
 
-public struct Native.RaknetStats.<messageInSendBuffer>e__FixedBuffer // TypeDefIndex: 7341
+public struct Native.RaknetStats.<messageInSendBuffer>e__FixedBuffer // TypeDefIndex: 7343
 {
-	public uint FixedElementField; 
+	public uint FixedElementField;
 
 }
 
-public struct Native.RaknetStats.<bytesInSendBuffer>e__FixedBuffer // TypeDefIndex: 7342
+public struct Native.RaknetStats.<bytesInSendBuffer>e__FixedBuffer // TypeDefIndex: 7344
 {
-	public double FixedElementField; 
+	public double FixedElementField;
 
 }
 

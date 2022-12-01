@@ -1,8 +1,8 @@
-internal struct Vec3fInternal : IGettable<Vec3f>, ISettable<Vec3f>, IDisposable // TypeDefIndex: 9806
+internal struct Vec3fInternal : IGettable<Vec3f>, ISettable<Vec3f>, IDisposable // TypeDefIndex: 9808
 {
-	private float m_x; 
-	private float m_y; 
-	private float m_z; 
+	private float m_x;
+	private float m_y;
+	private float m_z;
 
 	public float x { get; set; }
 	public float y { get; set; }

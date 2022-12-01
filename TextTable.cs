@@ -1,11 +1,11 @@
-public class TextTable // TypeDefIndex: 6606
+public class TextTable // TypeDefIndex: 6608
 {
-	private List<TextTable.Row> rows; 
-	private List<TextTable.Column> columns; 
-	private StringBuilder builder; 
-	private string text; 
-	private string jsonText; 
-	private static Encoding utf8NoBom; 
+	private List<TextTable.Row> rows;
+	private List<TextTable.Column> columns;
+	private StringBuilder builder;
+	private string text;
+	private string jsonText;
+	private static Encoding utf8NoBom;
 
 
 	public void Clear() { }
@@ -28,19 +28,19 @@ public class TextTable // TypeDefIndex: 6606
 
 }
 
-private class TextTable.Row // TypeDefIndex: 6607
+private class TextTable.Row // TypeDefIndex: 6609
 {
-	public string[] values; 
+	public string[] values;
 
 
 	public void .ctor(string[] values) { }
 
 }
 
-private class TextTable.Column // TypeDefIndex: 6608
+private class TextTable.Column // TypeDefIndex: 6610
 {
-	public string title; 
-	public int width; 
+	public string title;
+	public int width;
 
 
 	public void .ctor(string title) { }

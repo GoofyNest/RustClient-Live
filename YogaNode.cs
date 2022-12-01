@@ -1,8 +1,8 @@
 internal class YogaNode // TypeDefIndex: 4584
 {
-	internal IntPtr _ygNode; 
-	private MeasureFunction _measureFunction; 
-	private BaselineFunction _baselineFunction; 
+	internal IntPtr _ygNode;
+	private MeasureFunction _measureFunction;
+	private BaselineFunction _baselineFunction;
 
 	public float LayoutX { get; }
 	public float LayoutY { get; }

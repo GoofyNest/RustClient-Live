@@ -1,10 +1,10 @@
 public sealed class SqlChars : INullable, IXmlSerializable, ISerializable // TypeDefIndex: 4347
 {
-	internal char[] _rgchBuf; 
-	private long _lCurLen; 
-	internal SqlStreamChars _stream; 
-	private SqlBytesCharsState _state; 
-	private char[] _rgchWorkBuf; 
+	internal char[] _rgchBuf;
+	private long _lCurLen;
+	internal SqlStreamChars _stream;
+	private SqlBytesCharsState _state;
+	private char[] _rgchWorkBuf;
 
 	public bool IsNull { get; }
 	public char[] Buffer { get; }

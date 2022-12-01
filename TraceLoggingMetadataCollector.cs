@@ -1,10 +1,10 @@
 internal class TraceLoggingMetadataCollector // TypeDefIndex: 1587
 {
-	private readonly TraceLoggingMetadataCollector.Impl impl; 
-	private readonly FieldMetadata currentGroup; 
-	private int bufferedArrayFieldCount; 
-	[CompilerGeneratedAttribute] 
-	private EventFieldTags <Tags>k__BackingField; 
+	private readonly TraceLoggingMetadataCollector.Impl impl;
+	private readonly FieldMetadata currentGroup;
+	private int bufferedArrayFieldCount;
+	[CompilerGeneratedAttribute]
+	private EventFieldTags <Tags>k__BackingField;
 
 	internal EventFieldTags Tags { get; set; }
 	internal int ScratchSize { get; }
@@ -17,10 +17,10 @@ internal class TraceLoggingMetadataCollector // TypeDefIndex: 1587
 
 	private void .ctor(TraceLoggingMetadataCollector other, FieldMetadata group) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal EventFieldTags get_Tags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_Tags(EventFieldTags value) { }
 
 	internal int get_ScratchSize() { }
@@ -51,12 +51,12 @@ internal class TraceLoggingMetadataCollector // TypeDefIndex: 1587
 
 private class TraceLoggingMetadataCollector.Impl // TypeDefIndex: 1588
 {
-	internal readonly List<FieldMetadata> fields; 
-	internal short scratchSize; 
-	internal sbyte dataCount; 
-	internal sbyte pinCount; 
-	private int bufferNesting; 
-	private bool scalar; 
+	internal readonly List<FieldMetadata> fields;
+	internal short scratchSize;
+	internal sbyte dataCount;
+	internal sbyte pinCount;
+	private int bufferNesting;
+	private bool scalar;
 
 
 	public void AddScalar(int size) { }

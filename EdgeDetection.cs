@@ -1,16 +1,16 @@
-public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8204
+public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8206
 {
-	public EdgeDetection.EdgeDetectMode mode; 
-	public float sensitivityDepth; 
-	public float sensitivityNormals; 
-	public float lumThreshold; 
-	public float edgeExp; 
-	public float sampleDist; 
-	public float edgesOnly; 
-	public Color edgesOnlyBgColor; 
-	public Shader edgeDetectShader; 
-	private Material edgeDetectMaterial; 
-	private EdgeDetection.EdgeDetectMode oldMode; 
+	public EdgeDetection.EdgeDetectMode mode;
+	public float sensitivityDepth;
+	public float sensitivityNormals;
+	public float lumThreshold;
+	public float edgeExp;
+	public float sampleDist;
+	public float edgesOnly;
+	public Color edgesOnlyBgColor;
+	public Shader edgeDetectShader;
+	private Material edgeDetectMaterial;
+	private EdgeDetection.EdgeDetectMode oldMode;
 
 
 	public override bool CheckResources() { }
@@ -21,16 +21,16 @@ public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8204
 
 	private void OnEnable() { }
 
-	[ImageEffectOpaque] 
+	[ImageEffectOpaque]
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
 	public void .ctor() { }
 
 }
 
-public enum EdgeDetection.EdgeDetectMode // TypeDefIndex: 8205
+public enum EdgeDetection.EdgeDetectMode // TypeDefIndex: 8207
 {
-	public int value__; 
+	public int value__;
 	public const EdgeDetection.EdgeDetectMode TriangleDepthNormals = 0;
 	public const EdgeDetection.EdgeDetectMode RobertsCrossDepthNormals = 1;
 	public const EdgeDetection.EdgeDetectMode SobelDepth = 2;

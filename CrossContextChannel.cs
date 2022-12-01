@@ -11,9 +11,9 @@ internal class CrossContextChannel : IMessageSink // TypeDefIndex: 1175
 
 private class CrossContextChannel.ContextRestoreSink : IMessageSink // TypeDefIndex: 1176
 {
-	private IMessageSink _next; 
-	private Context _context; 
-	private IMessage _call; 
+	private IMessageSink _next;
+	private Context _context;
+	private IMessage _call;
 
 
 	public void .ctor(IMessageSink next, Context context, IMessage call) { }

@@ -1,11 +1,11 @@
-public class VitalNote : MonoBehaviour, IClientComponent, IVitalNotice // TypeDefIndex: 13063
+public class VitalNote : MonoBehaviour, IClientComponent, IVitalNotice // TypeDefIndex: 13078
 {
-	public VitalNote.Vital VitalType; 
-	public FloatConditions showIf; 
-	public TextMeshProUGUI valueText; 
-	private float lastValue; 
-	private float lastPrintedValue; 
-	protected bool show; 
+	public VitalNote.Vital VitalType;
+	public FloatConditions showIf;
+	public TextMeshProUGUI valueText;
+	private float lastValue;
+	private float lastPrintedValue;
+	protected bool show;
 
 	public bool IsActive { get; }
 
@@ -28,9 +28,9 @@ public class VitalNote : MonoBehaviour, IClientComponent, IVitalNotice // TypeDe
 
 }
 
-public enum VitalNote.Vital // TypeDefIndex: 13064
+public enum VitalNote.Vital // TypeDefIndex: 13079
 {
-	public int value__; 
+	public int value__;
 	public const VitalNote.Vital Comfort = 0;
 	public const VitalNote.Vital Radiation = 1;
 	public const VitalNote.Vital Poison = 2;

@@ -1,10 +1,10 @@
 internal class ProcessWaitHandle : WaitHandle // TypeDefIndex: 2654
 {
 
-[DefaultMemberAttribute] 
+[DefaultMemberAttribute]
 public class ProcessModuleCollection : ReadOnlyCollectionBase
 
-[DefaultMemberAttribute] 
+[DefaultMemberAttribute]
 public class ProcessThreadCollection : ReadOnlyCollectionBase
 
 internal class ProcessWaitHandle : WaitHandle

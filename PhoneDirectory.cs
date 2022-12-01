@@ -1,9 +1,9 @@
-public class PhoneDirectory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6512
+public class PhoneDirectory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6514
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public List<PhoneDirectory.DirectoryEntry> entries; 
-	public bool atEnd; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public List<PhoneDirectory.DirectoryEntry> entries;
+	public bool atEnd;
 
 
 	public static void ResetToPool(PhoneDirectory instance) { }
@@ -60,12 +60,12 @@ public class PhoneDirectory : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class PhoneDirectory.DirectoryEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6513
+public class PhoneDirectory.DirectoryEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6515
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public int phoneNumber; 
-	public string phoneName; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public int phoneNumber;
+	public string phoneName;
 
 
 	public static void ResetToPool(PhoneDirectory.DirectoryEntry instance) { }

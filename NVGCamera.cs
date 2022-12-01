@@ -1,9 +1,9 @@
-public class NVGCamera : FacepunchBehaviour, IClothingChanged // TypeDefIndex: 10398
+public class NVGCamera : FacepunchBehaviour, IClothingChanged // TypeDefIndex: 10402
 {
-	public static NVGCamera instance; 
-	public PostProcessVolume postProcessVolume; 
-	public GameObject lights; 
-	private bool initalized; 
+	public static NVGCamera instance;
+	public PostProcessVolume postProcessVolume;
+	public GameObject lights;
+	private bool initalized;
 
 
 	public void Awake() { }

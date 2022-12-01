@@ -1,8 +1,8 @@
 public sealed class Oid // TypeDefIndex: 2792
 {
-	private string m_value; 
-	private string m_friendlyName; 
-	private OidGroup m_group; 
+	private string m_value;
+	private string m_friendlyName;
+	private OidGroup m_group;
 
 	public string Value { get; set; }
 	public string FriendlyName { get; }

@@ -1,49 +1,49 @@
-public class BaseFishingRod : HeldEntity // TypeDefIndex: 10232
+public class BaseFishingRod : HeldEntity // TypeDefIndex: 10234
 {
-	public GameObjectRef FishingBobberRef; 
-	public float FishCatchDistance; 
-	public LineRenderer ReelLineRenderer; 
-	public Transform LineRendererWorldStartPos; 
-	[CompilerGeneratedAttribute] 
-	private BaseFishingRod.CatchState <CurrentState>k__BackingField; 
-	private BaseFishingRod.FishState currentFishState; 
-	private EntityRef<FishingBobber> currentBobber; 
-	public float ConditionLossOnSuccess; 
-	public float ConditionLossOnFail; 
-	public float GlobalStrainSpeedMultiplier; 
-	public float MaxCastDistance; 
+	public GameObjectRef FishingBobberRef;
+	public float FishCatchDistance;
+	public LineRenderer ReelLineRenderer;
+	public Transform LineRendererWorldStartPos;
+	[CompilerGeneratedAttribute]
+	private BaseFishingRod.CatchState <CurrentState>k__BackingField;
+	private BaseFishingRod.FishState currentFishState;
+	private EntityRef<FishingBobber> currentBobber;
+	public float ConditionLossOnSuccess;
+	public float ConditionLossOnFail;
+	public float GlobalStrainSpeedMultiplier;
+	public float MaxCastDistance;
 	public const BaseEntity.Flags Straining = 128;
-	public ItemModFishable ForceFish; 
-	public static BaseEntity.Flags PullingLeftFlag; 
-	public static BaseEntity.Flags PullingRightFlag; 
-	public static BaseEntity.Flags ReelingInFlag; 
-	public GameObjectRef BobberPreview; 
-	public SoundDefinition onLineSoundDef; 
-	public SoundDefinition strainSoundDef; 
-	public AnimationCurve strainGainCurve; 
-	public SoundDefinition tensionBreakSoundDef; 
-	[ClientVar] 
-	public static bool ShowUI; 
-	private Vector3[] lineRendererPositionsArray; 
-	private Vector3[] lineRendererResultArray; 
-	private float[] lineRendererSlack; 
-	private float clientStrainAmountNormalised; 
-	private TimeUntil canCancel; 
-	private FishingRodViewmodel rodViewModel; 
-	private BobberPreview spawnedPreview; 
-	private static int FailedCatch_Param; 
-	private static int CaughtFish_Param; 
-	private static int ReelingIn_Param; 
-	private static int IsFishing_Param; 
-	private bool aimAnimationReady; 
-	private static TimeSince lastLureFail; 
-	public static TimeSince lastLineReset; 
-	public static BaseFishingRod.FailReason lastFailReason; 
-	private Sound onLineSound; 
-	private Sound strainSound; 
-	private SoundModulation.Modulator strainGainMod; 
-	private TimeUntil consumingBackMovement; 
-	private TimeSince reelInAnimTimer; 
+	public ItemModFishable ForceFish;
+	public static BaseEntity.Flags PullingLeftFlag;
+	public static BaseEntity.Flags PullingRightFlag;
+	public static BaseEntity.Flags ReelingInFlag;
+	public GameObjectRef BobberPreview;
+	public SoundDefinition onLineSoundDef;
+	public SoundDefinition strainSoundDef;
+	public AnimationCurve strainGainCurve;
+	public SoundDefinition tensionBreakSoundDef;
+	[ClientVar]
+	public static bool ShowUI;
+	private Vector3[] lineRendererPositionsArray;
+	private Vector3[] lineRendererResultArray;
+	private float[] lineRendererSlack;
+	private float clientStrainAmountNormalised;
+	private TimeUntil canCancel;
+	private FishingRodViewmodel rodViewModel;
+	private BobberPreview spawnedPreview;
+	private static int FailedCatch_Param;
+	private static int CaughtFish_Param;
+	private static int ReelingIn_Param;
+	private static int IsFishing_Param;
+	private bool aimAnimationReady;
+	private static TimeSince lastLureFail;
+	public static TimeSince lastLineReset;
+	public static BaseFishingRod.FailReason lastFailReason;
+	private Sound onLineSound;
+	private Sound strainSound;
+	private SoundModulation.Modulator strainGainMod;
+	private TimeUntil consumingBackMovement;
+	private TimeSince reelInAnimTimer;
 
 	public BaseFishingRod.CatchState CurrentState { get; set; }
 	public static bool ShowLureFailError { get; }
@@ -51,10 +51,10 @@ public class BaseFishingRod : HeldEntity // TypeDefIndex: 10232
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public BaseFishingRod.CatchState get_CurrentState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentState(BaseFishingRod.CatchState value) { }
 
 	public static bool get_ShowLureFailError() { }
@@ -75,19 +75,19 @@ public class BaseFishingRod : HeldEntity // TypeDefIndex: 10232
 
 	public override bool HeldEntityBlocksMovement(InputState state) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_ReceiveCastPoint(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_HookedSomething(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_UpdateFishState(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_OnCaughtFish(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_ResetLine(BaseEntity.RPCMessage msg) { }
 
 	public override void OnViewmodelEvent(string name) { }
@@ -118,9 +118,9 @@ public class BaseFishingRod : HeldEntity // TypeDefIndex: 10232
 
 }
 
-public enum BaseFishingRod.CatchState // TypeDefIndex: 10233
+public enum BaseFishingRod.CatchState // TypeDefIndex: 10235
 {
-	public int value__; 
+	public int value__;
 	public const BaseFishingRod.CatchState None = 0;
 	public const BaseFishingRod.CatchState Aiming = 1;
 	public const BaseFishingRod.CatchState Waiting = 2;
@@ -129,18 +129,18 @@ public enum BaseFishingRod.CatchState // TypeDefIndex: 10233
 
 }
 
-public enum BaseFishingRod.FishState // TypeDefIndex: 10234
+public enum BaseFishingRod.FishState // TypeDefIndex: 10236
 {
-	public int value__; 
+	public int value__;
 	public const BaseFishingRod.FishState PullingLeft = 1;
 	public const BaseFishingRod.FishState PullingRight = 2;
 	public const BaseFishingRod.FishState PullingBack = 4;
 
 }
 
-public enum BaseFishingRod.FailReason // TypeDefIndex: 10235
+public enum BaseFishingRod.FailReason // TypeDefIndex: 10237
 {
-	public int value__; 
+	public int value__;
 	public const BaseFishingRod.FailReason UserRequested = 0;
 	public const BaseFishingRod.FailReason BadAngle = 1;
 	public const BaseFishingRod.FailReason TensionBreak = 2;

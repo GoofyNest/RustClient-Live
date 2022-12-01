@@ -1,12 +1,12 @@
 public struct Boolean : IComparable, IConvertible, IComparable<bool>, IEquatable<bool> // TypeDefIndex: 179
 {
-	private bool m_value; 
+	private bool m_value;
 	internal const int True = 1;
 	internal const int False = 0;
 	internal const string TrueLiteral = "True";
 	internal const string FalseLiteral = "False";
-	public static readonly string TrueString; 
-	public static readonly string FalseString; 
+	public static readonly string TrueString;
+	public static readonly string FalseString;
 
 
 	public override int GetHashCode() { }

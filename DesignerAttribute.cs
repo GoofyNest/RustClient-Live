@@ -1,8 +1,8 @@
 public sealed class DesignerAttribute : Attribute // TypeDefIndex: 2692
 {
-	private readonly string designerTypeName; 
-	private readonly string designerBaseTypeName; 
-	private string typeId; 
+	private readonly string designerTypeName;
+	private readonly string designerBaseTypeName;
+	private string typeId;
 
 	public override object TypeId { get; }
 

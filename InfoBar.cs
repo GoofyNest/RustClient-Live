@@ -1,9 +1,9 @@
-public class InfoBar : MonoBehaviour // TypeDefIndex: 12698
+public class InfoBar : MonoBehaviour // TypeDefIndex: 12712
 {
-	public Text TextValue; 
-	public Image ImageFill; 
-	public Color GoodColor; 
-	public Color BadColor; 
+	public Text TextValue;
+	public Image ImageFill;
+	public Color GoodColor;
+	public Color BadColor;
 
 
 	public void Set(string valueText, float progress = 0, float redProgress = -1) { }

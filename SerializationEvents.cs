@@ -1,9 +1,9 @@
 internal class SerializationEvents // TypeDefIndex: 1054
 {
-	private List<MethodInfo> m_OnSerializingMethods; 
-	private List<MethodInfo> m_OnSerializedMethods; 
-	private List<MethodInfo> m_OnDeserializingMethods; 
-	private List<MethodInfo> m_OnDeserializedMethods; 
+	private List<MethodInfo> m_OnSerializingMethods;
+	private List<MethodInfo> m_OnSerializedMethods;
+	private List<MethodInfo> m_OnDeserializingMethods;
+	private List<MethodInfo> m_OnDeserializedMethods;
 
 	internal bool HasOnSerializingEvents { get; }
 

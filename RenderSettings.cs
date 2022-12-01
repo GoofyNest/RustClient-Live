@@ -1,10 +1,10 @@
 public sealed class RenderSettings : Object // TypeDefIndex: 3405
 {
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static bool fog { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static float fogStartDistance { get; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static float fogEndDistance { get; }
 	public static FogMode fogMode { get; }
 	public static Color fogColor { get; set; }
@@ -14,9 +14,9 @@ public sealed class RenderSettings : Object // TypeDefIndex: 3405
 	public static Color ambientEquatorColor { get; set; }
 	public static Color ambientGroundColor { get; set; }
 	public static float ambientIntensity { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static Color ambientLight { get; set; }
-	[NativePropertyAttribute] 
+	[NativePropertyAttribute]
 	public static Material skybox { get; set; }
 	public static SphericalHarmonicsL2 ambientProbe { get; set; }
 	public static Cubemap customReflection { get; }

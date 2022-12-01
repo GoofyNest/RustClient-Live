@@ -1,33 +1,33 @@
-public struct CopyOfferImageInfoByIndexOptions // TypeDefIndex: 9447
+public struct CopyOfferImageInfoByIndexOptions // TypeDefIndex: 9449
 {
-	[CompilerGeneratedAttribute] 
-	private EpicAccountId <LocalUserId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <OfferId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <ImageInfoIndex>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private EpicAccountId <LocalUserId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <OfferId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <ImageInfoIndex>k__BackingField;
 
 	public EpicAccountId LocalUserId { get; set; }
 	public Utf8String OfferId { get; set; }
 	public uint ImageInfoIndex { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EpicAccountId get_LocalUserId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LocalUserId(EpicAccountId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_OfferId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_OfferId(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_ImageInfoIndex() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ImageInfoIndex(uint value) { }
 
 }

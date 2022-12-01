@@ -1,16 +1,16 @@
-public class CH47FlightTest : MonoBehaviour // TypeDefIndex: 10581
+public class CH47FlightTest : MonoBehaviour // TypeDefIndex: 10585
 {
-	public Rigidbody rigidBody; 
-	public float engineThrustMax; 
-	public Vector3 torqueScale; 
-	public Transform com; 
-	public Transform[] GroundPoints; 
-	public Transform[] GroundEffects; 
-	public float currentThrottle; 
-	public float avgThrust; 
-	public float liftDotMax; 
-	public Transform AIMoveTarget; 
-	private static float altitudeTolerance; 
+	public Rigidbody rigidBody;
+	public float engineThrustMax;
+	public Vector3 torqueScale;
+	public Transform com;
+	public Transform[] GroundPoints;
+	public Transform[] GroundEffects;
+	public float currentThrottle;
+	public float avgThrust;
+	public float liftDotMax;
+	public Transform AIMoveTarget;
+	private static float altitudeTolerance;
 
 
 	public void Awake() { }
@@ -31,12 +31,12 @@ public class CH47FlightTest : MonoBehaviour // TypeDefIndex: 10581
 
 }
 
-public struct CH47FlightTest.HelicopterInputState_t // TypeDefIndex: 10582
+public struct CH47FlightTest.HelicopterInputState_t // TypeDefIndex: 10586
 {
-	public float throttle; 
-	public float roll; 
-	public float yaw; 
-	public float pitch; 
+	public float throttle;
+	public float roll;
+	public float yaw;
+	public float pitch;
 
 }
 

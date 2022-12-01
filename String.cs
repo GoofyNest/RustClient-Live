@@ -1,11 +1,11 @@
 public sealed class String : IComparable, ICloneable, IConvertible, IEnumerable, IComparable<string>, IEnumerable<char>, IEquatable<string> // TypeDefIndex: 301
 {
-	private int m_stringLength; 
-	private char m_firstChar; 
+	private int m_stringLength;
+	private char m_firstChar;
 	private const int TrimHead = 0;
 	private const int TrimTail = 1;
 	private const int TrimBoth = 2;
-	public static readonly string Empty; 
+	public static readonly string Empty;
 	private const int charPtrAlignConst = 1;
 	private const int alignConst = 3;
 
@@ -15,32 +15,32 @@ public sealed class String : IComparable, ICloneable, IConvertible, IEnumerable,
 
 	public static string Join(string separator, string[] value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string Join(string separator, object[] values) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string Join<T>(string separator, IEnumerable<T> values) { }
 	/* GenericInstMethod :
 	|
 	|-String.Join<object>
 	*/
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public static string Join(string separator, IEnumerable<string> values) { }
 
 	public static string Join(string separator, string[] value, int startIndex, int count) { }
 
 	private static int CompareOrdinalIgnoreCaseHelper(string strA, string strB) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	private static bool EqualsHelper(string strA, string strB) { }
 
 	private static int CompareOrdinalHelper(string strA, string strB) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public override bool Equals(object obj) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public bool Equals(string value) { }
 
 	public bool Equals(string value, StringComparison comparisonType) { }
@@ -63,24 +63,24 @@ public sealed class String : IComparable, ICloneable, IConvertible, IEnumerable,
 
 	public static bool IsNullOrWhiteSpace(string value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public override int GetHashCode() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	internal int GetLegacyNonRandomizedHashCode() { }
 
 	public string[] Split(char[] separator) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public string[] Split(char[] separator, StringSplitOptions options) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	internal string[] SplitInternal(char[] separator, int count, StringSplitOptions options) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public string[] Split(string[] separator, StringSplitOptions options) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public string[] Split(string[] separator, int count, StringSplitOptions options) { }
 
 	private string[] InternalSplitKeepEmptyEntries(int[] sepList, int[] lengthList, int numReplaces, int count) { }
@@ -103,13 +103,13 @@ public sealed class String : IComparable, ICloneable, IConvertible, IEnumerable,
 
 	public string TrimEnd(char[] trimChars) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(char* value) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(char* value, int startIndex, int length) { }
 
-	[CLSCompliantAttribute] 
+	[CLSCompliantAttribute]
 	public void .ctor(sbyte* value, int startIndex, int length, Encoding enc) { }
 
 	internal static string CreateStringFromEncoding(byte* bytes, int byteLength, Encoding encoding) { }
@@ -164,7 +164,7 @@ public sealed class String : IComparable, ICloneable, IConvertible, IEnumerable,
 
 	public bool EndsWith(string value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public bool EndsWith(string value, StringComparison comparisonType) { }
 
 	internal bool EndsWith(char value) { }
@@ -211,7 +211,7 @@ public sealed class String : IComparable, ICloneable, IConvertible, IEnumerable,
 
 	public bool StartsWith(string value) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public bool StartsWith(string value, StringComparison comparisonType) { }
 
 	public string ToLower() { }

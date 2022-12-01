@@ -1,10 +1,10 @@
-public class MLRSAmmoUI : MonoBehaviour // TypeDefIndex: 11457
+public class MLRSAmmoUI : MonoBehaviour // TypeDefIndex: 11463
 {
-	[SerializeField] 
-	private RustText ammoText; 
-	[SerializeField] 
-	private MLRSAmmoIcon[] ammoIcons; 
-	private int lastSetAmmoCount; 
+	[SerializeField]
+	private RustText ammoText;
+	[SerializeField]
+	private MLRSAmmoIcon[] ammoIcons;
+	private int lastSetAmmoCount;
 
 
 	protected void OnEnable() { }

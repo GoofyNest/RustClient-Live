@@ -1,7 +1,7 @@
 public static class NumberExtensions // TypeDefIndex: 4850
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatBytes<T>(T input, bool shortFormat = False) { }
 	/* GenericInstMethod :
 	|
@@ -12,32 +12,32 @@ public static class NumberExtensions // TypeDefIndex: 4850
 	|-NumberExtensions.FormatBytes<ulong>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T Clamp<T>(T input, T min, T max) { }
 	/* GenericInstMethod :
 	|
 	|-NumberExtensions.Clamp<int>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatSeconds(ulong i) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatSeconds(long s) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatSecondsLong(ulong i) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatSecondsLong(long s) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatNumberShort(ulong i) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatNumberShort(long num) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string FormatDistance(float num) { }
 
 }

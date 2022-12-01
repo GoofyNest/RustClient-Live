@@ -1,15 +1,15 @@
 public static class DefaultControls // TypeDefIndex: 4923
 {
-	private static DefaultControls.IFactoryControls m_CurrentFactory; 
+	private static DefaultControls.IFactoryControls m_CurrentFactory;
 	private const float kWidth = 160;
 	private const float kThickHeight = 30;
 	private const float kThinHeight = 20;
-	private static Vector2 s_ThickElementSize; 
-	private static Vector2 s_ThinElementSize; 
-	private static Vector2 s_ImageElementSize; 
-	private static Color s_DefaultSelectableColor; 
-	private static Color s_PanelColor; 
-	private static Color s_TextColor; 
+	private static Vector2 s_ThickElementSize;
+	private static Vector2 s_ThinElementSize;
+	private static Vector2 s_ImageElementSize;
+	private static Color s_DefaultSelectableColor;
+	private static Color s_PanelColor;
+	private static Color s_TextColor;
 
 	public static DefaultControls.IFactoryControls factory { get; }
 
@@ -56,7 +56,7 @@ public static class DefaultControls // TypeDefIndex: 4923
 
 private class DefaultControls.DefaultRuntimeFactory : DefaultControls.IFactoryControls // TypeDefIndex: 4925
 {
-	public static DefaultControls.IFactoryControls Default; 
+	public static DefaultControls.IFactoryControls Default;
 
 
 	public GameObject CreateGameObject(string name, Type[] components) { }
@@ -69,13 +69,13 @@ private class DefaultControls.DefaultRuntimeFactory : DefaultControls.IFactoryCo
 
 public struct DefaultControls.Resources // TypeDefIndex: 4926
 {
-	public Sprite standard; 
-	public Sprite background; 
-	public Sprite inputField; 
-	public Sprite knob; 
-	public Sprite checkmark; 
-	public Sprite dropdown; 
-	public Sprite mask; 
+	public Sprite standard;
+	public Sprite background;
+	public Sprite inputField;
+	public Sprite knob;
+	public Sprite checkmark;
+	public Sprite dropdown;
+	public Sprite mask;
 
 }
 

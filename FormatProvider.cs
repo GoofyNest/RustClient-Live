@@ -9,12 +9,12 @@ internal class FormatProvider // TypeDefIndex: 3975
 
 private class FormatProvider.Number // TypeDefIndex: 3976
 {
-	private static string[] s_posCurrencyFormats; 
-	private static string[] s_negCurrencyFormats; 
-	private static string[] s_posPercentFormats; 
-	private static string[] s_negPercentFormats; 
-	private static string[] s_negNumberFormats; 
-	private static string s_posNumberFormat; 
+	private static string[] s_posCurrencyFormats;
+	private static string[] s_negCurrencyFormats;
+	private static string[] s_posPercentFormats;
+	private static string[] s_negPercentFormats;
+	private static string[] s_negNumberFormats;
+	private static string s_posNumberFormat;
 
 
 	private static bool IsWhite(char ch) { }
@@ -63,10 +63,10 @@ private class FormatProvider.Number // TypeDefIndex: 3976
 
 internal struct FormatProvider.Number.NumberBuffer // TypeDefIndex: 3977
 {
-	public int precision; 
-	public int scale; 
-	public bool sign; 
-	public char* overrideDigits; 
+	public int precision;
+	public int scale;
+	public bool sign;
+	public char* overrideDigits;
 
 	public char* digits { get; }
 

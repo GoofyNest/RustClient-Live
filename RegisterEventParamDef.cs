@@ -1,24 +1,24 @@
-public struct RegisterEventParamDef // TypeDefIndex: 9799
+public struct RegisterEventParamDef // TypeDefIndex: 9801
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <ParamName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AntiCheatCommonEventParamType <ParamType>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <ParamName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private AntiCheatCommonEventParamType <ParamType>k__BackingField;
 
 	public Utf8String ParamName { get; set; }
 	public AntiCheatCommonEventParamType ParamType { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_ParamName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParamName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AntiCheatCommonEventParamType get_ParamType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ParamType(AntiCheatCommonEventParamType value) { }
 
 	internal void Set(ref RegisterEventParamDefInternal other) { }

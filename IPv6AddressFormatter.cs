@@ -2,8 +2,8 @@ internal struct IPv6AddressFormatter // TypeDefIndex: 3012
 {
 
 internal struct IPv6AddressFormatter
-	private ushort[] address; 
-	private long scopeId; 
+	private ushort[] address;
+	private long scopeId;
 
 
 	public void .ctor(ushort[] addr, long scopeId) { }

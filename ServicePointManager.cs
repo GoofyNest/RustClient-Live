@@ -1,21 +1,21 @@
 public class ServicePointManager // TypeDefIndex: 3019
 {
-	private static HybridDictionary servicePoints; 
-	private static ICertificatePolicy policy; 
-	private static int defaultConnectionLimit; 
-	private static int maxServicePointIdleTime; 
-	private static int maxServicePoints; 
-	private static int dnsRefreshTimeout; 
-	private static bool _checkCRL; 
-	private static SecurityProtocolType _securityProtocol; 
-	private static bool expectContinue; 
-	private static bool useNagle; 
-	private static ServerCertValidationCallback server_cert_cb; 
-	private static bool tcp_keepalive; 
-	private static int tcp_keepalive_time; 
-	private static int tcp_keepalive_interval; 
+	private static HybridDictionary servicePoints;
+	private static ICertificatePolicy policy;
+	private static int defaultConnectionLimit;
+	private static int maxServicePointIdleTime;
+	private static int maxServicePoints;
+	private static int dnsRefreshTimeout;
+	private static bool _checkCRL;
+	private static SecurityProtocolType _securityProtocol;
+	private static bool expectContinue;
+	private static bool useNagle;
+	private static ServerCertValidationCallback server_cert_cb;
+	private static bool tcp_keepalive;
+	private static int tcp_keepalive_time;
+	private static int tcp_keepalive_interval;
 
-	[MonoTODOAttribute] 
+	[MonoTODOAttribute]
 	public static bool CheckCertificateRevocationList { get; }
 	public static int DnsRefreshTimeout { get; }
 	public static SecurityProtocolType SecurityProtocol { get; }
@@ -45,9 +45,9 @@ public class ServicePointManager // TypeDefIndex: 3019
 
 private class ServicePointManager.SPKey // TypeDefIndex: 3020
 {
-	private Uri uri; 
-	private Uri proxy; 
-	private bool use_connect; 
+	private Uri uri;
+	private Uri proxy;
+	private bool use_connect;
 
 	public bool UsesProxy { get; }
 

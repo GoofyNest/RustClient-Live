@@ -1,15 +1,15 @@
 public static class StackTraceUtility // TypeDefIndex: 3530
 {
-	private static string projectFolder; 
+	private static string projectFolder;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void SetProjectFolder(string folder) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public static string ExtractStackTrace() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void ExtractStringFromExceptionInternal(object exceptiono, out string message, out string stackTrace) { }
 
 	internal static string ExtractFormattedStackTrace(StackTrace stackTrace) { }

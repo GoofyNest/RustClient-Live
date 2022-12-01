@@ -1,9 +1,9 @@
 public class WWW : CustomYieldInstruction, IDisposable // TypeDefIndex: 4760
 {
 
-[ObsoleteAttribute] 
+[ObsoleteAttribute]
 public class WWW : CustomYieldInstruction, IDisposable
-	private UnityWebRequest _uwr; 
+	private UnityWebRequest _uwr;
 
 	public string error { get; }
 	public bool isDone { get; }
@@ -32,6 +32,8 @@ public class WWW : CustomYieldInstruction, IDisposable
 	private Texture2D CreateTextureFromDownloadedData(bool markNonReadable) { }
 
 	public Texture2D get_texture() { }
+
+	public void LoadImageIntoTexture(Texture2D texture) { }
 
 	public string get_url() { }
 

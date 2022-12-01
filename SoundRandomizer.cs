@@ -1,6 +1,6 @@
-public class SoundRandomizer // TypeDefIndex: 10768
+public class SoundRandomizer // TypeDefIndex: 10772
 {
-	private static Dictionary<SoundDefinition, int> lastClipIndexBySoundDef; 
+	private static Dictionary<SoundDefinition, int> lastClipIndexBySoundDef;
 
 
 	public static void Randomize(Sound sound, bool randomizeClip = True) { }

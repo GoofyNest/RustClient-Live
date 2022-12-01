@@ -1,23 +1,23 @@
-public class RustLayout : UIBehaviour, ILayoutGroup, ILayoutController, IAutoLayout // TypeDefIndex: 7063
+public class RustLayout : UIBehaviour, ILayoutGroup, ILayoutController, IAutoLayout // TypeDefIndex: 7065
 {
-	public RustLayout.LayoutMode Mode; 
-	public bool ReverseOrder; 
-	public float Spacing; 
-	public RectOffset Padding; 
-	[FormerlySerializedAsAttribute] 
-	[TooltipAttribute] 
-	public bool ChildrenFill; 
-	[FormerlySerializedAsAttribute] 
-	[TooltipAttribute] 
-	public bool ResizeToChildren; 
-	[TooltipAttribute] 
-	public bool ResizeToChildrenOpposite; 
-	public RectTransform[] IgnoreLayout; 
-	public int MaxHeight; 
-	[TooltipAttribute] 
-	public RustLayout ParentLayout; 
-	private bool doingLayout; 
-	private bool changedSize; 
+	public RustLayout.LayoutMode Mode;
+	public bool ReverseOrder;
+	public float Spacing;
+	public RectOffset Padding;
+	[FormerlySerializedAsAttribute]
+	[TooltipAttribute]
+	public bool ChildrenFill;
+	[FormerlySerializedAsAttribute]
+	[TooltipAttribute]
+	public bool ResizeToChildren;
+	[TooltipAttribute]
+	public bool ResizeToChildrenOpposite;
+	public RectTransform[] IgnoreLayout;
+	public int MaxHeight;
+	[TooltipAttribute]
+	public RustLayout ParentLayout;
+	private bool doingLayout;
+	private bool changedSize;
 
 
 	protected override void Awake() { }
@@ -46,9 +46,9 @@ public class RustLayout : UIBehaviour, ILayoutGroup, ILayoutController, IAutoLay
 
 }
 
-public enum RustLayout.LayoutMode // TypeDefIndex: 7064
+public enum RustLayout.LayoutMode // TypeDefIndex: 7066
 {
-	public int value__; 
+	public int value__;
 	public const RustLayout.LayoutMode Top = 0;
 	public const RustLayout.LayoutMode Left = 1;
 	public const RustLayout.LayoutMode Right = 2;

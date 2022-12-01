@@ -1,6 +1,6 @@
 public enum GenericParameterAttributes // TypeDefIndex: 526
 {
-	public int value__; 
+	public int value__;
 	public const GenericParameterAttributes None = 0;
 	public const GenericParameterAttributes VarianceMask = 3;
 	public const GenericParameterAttributes Covariant = 1;

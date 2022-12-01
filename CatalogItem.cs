@@ -1,25 +1,25 @@
-public struct CatalogItem // TypeDefIndex: 9417
+public struct CatalogItem // TypeDefIndex: 9419
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <CatalogNamespace>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Id>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <EntitlementName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <TitleText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DescriptionText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <LongDescriptionText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <TechnicalDetailsText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Utf8String <DeveloperText>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EcomItemType <ItemType>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private long <EntitlementEndTimestamp>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <CatalogNamespace>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <Id>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <EntitlementName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <TitleText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DescriptionText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <LongDescriptionText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <TechnicalDetailsText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Utf8String <DeveloperText>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EcomItemType <ItemType>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private long <EntitlementEndTimestamp>k__BackingField;
 
 	public Utf8String CatalogNamespace { get; set; }
 	public Utf8String Id { get; set; }
@@ -33,64 +33,64 @@ public struct CatalogItem // TypeDefIndex: 9417
 	public long EntitlementEndTimestamp { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_CatalogNamespace() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_CatalogNamespace(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Id() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Id(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_EntitlementName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EntitlementName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_TitleText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TitleText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DescriptionText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DescriptionText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_LongDescriptionText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LongDescriptionText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_TechnicalDetailsText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TechnicalDetailsText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_DeveloperText() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_DeveloperText(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EcomItemType get_ItemType() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ItemType(EcomItemType value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_EntitlementEndTimestamp() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_EntitlementEndTimestamp(long value) { }
 
 	internal void Set(ref CatalogItemInternal other) { }

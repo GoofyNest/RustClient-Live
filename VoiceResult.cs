@@ -1,6 +1,6 @@
 internal enum VoiceResult // TypeDefIndex: 5142
 {
-	public int value__; 
+	public int value__;
 	public const VoiceResult OK = 0;
 	public const VoiceResult NotInitialized = 1;
 	public const VoiceResult NotRecording = 2;

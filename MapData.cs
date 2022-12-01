@@ -1,9 +1,9 @@
-public class MapData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6518
+public class MapData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6520
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string name; 
-	public byte[] data; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string name;
+	public byte[] data;
 
 
 	public static void ResetToPool(MapData instance) { }

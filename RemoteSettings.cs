@@ -1,27 +1,27 @@
 public static class RemoteSettings // TypeDefIndex: 4746
 {
 
-[NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
+[NativeHeaderAttribute]
+[NativeHeaderAttribute]
 public static class RemoteSettings
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static RemoteSettings.UpdatedEventHandler Updated; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private static Action BeforeFetchFromServer; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private static Action<bool, bool, int> Completed; 
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static RemoteSettings.UpdatedEventHandler Updated;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private static Action BeforeFetchFromServer;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private static Action<bool, bool, int> Completed;
 
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RemoteSettingsUpdated(bool wasLastUpdatedFromServer) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RemoteSettingsBeforeFetchFromServer() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	internal static void RemoteSettingsUpdateCompleted(bool wasLastUpdatedFromServer, bool settingsChanged, int response) { }
 
 }

@@ -1,17 +1,17 @@
 public abstract class Base : IDisposable // TypeDefIndex: 5289
 {
-	[CompilerGeneratedAttribute] 
-	private AppId <AppId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Action OnChanges; 
-	[CompilerGeneratedAttribute] 
-	private Action<ServerInfo> OnResponsiveServer; 
-	public List<ServerInfo> Responsive; 
-	public List<ServerInfo> Unresponsive; 
-	internal HServerListRequest request; 
-	internal List<MatchMakingKeyValuePair> filters; 
-	internal List<int> watchList; 
-	internal int LastCount; 
+	[CompilerGeneratedAttribute]
+	private AppId <AppId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Action OnChanges;
+	[CompilerGeneratedAttribute]
+	private Action<ServerInfo> OnResponsiveServer;
+	public List<ServerInfo> Responsive;
+	public List<ServerInfo> Unresponsive;
+	internal HServerListRequest request;
+	internal List<MatchMakingKeyValuePair> filters;
+	internal List<int> watchList;
+	internal int LastCount;
 
 	internal static ISteamMatchmakingServers Internal { get; }
 	public AppId AppId { get; set; }
@@ -21,21 +21,21 @@ public abstract class Base : IDisposable // TypeDefIndex: 5289
 
 	internal static ISteamMatchmakingServers get_Internal() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public AppId get_AppId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AppId(AppId value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_OnChanges(Action value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_OnChanges(Action value) { }
 
 	public void .ctor() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public virtual Task<bool> RunQueryAsync(float timeoutSeconds = 10) { }
 
 	public virtual void Cancel() { }
@@ -66,36 +66,36 @@ public abstract class Base : IDisposable // TypeDefIndex: 5289
 
 	private void OnServer(ServerInfo serverInfo, bool responded) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <UpdateResponsive>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private bool <MovePendingToUnresponsive>
 
 }
 
 private struct Base.<RunQueryAsync>d__15 : IAsyncStateMachine // TypeDefIndex: 5290
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<bool> <>t__builder; 
-	public Base <>4__this; 
-	public float timeoutSeconds; 
-	private Stopwatch <stopwatch>5__2; 
-	private HServerListRequest <thisRequest>5__3; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<bool> <>t__builder;
+	public Base <>4__this;
+	public float timeoutSeconds;
+	private Stopwatch <stopwatch>5__2;
+	private HServerListRequest <thisRequest>5__3;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public class Base // TypeDefIndex: 6261
+public class Base // TypeDefIndex: 6263
 {
-	public string Parent; 
-	public Auth Auth; 
+	public string Parent;
+	public Auth Auth;
 
 	public int Version { get; }
 

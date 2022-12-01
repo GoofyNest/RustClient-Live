@@ -1,16 +1,16 @@
-public class CraftingQueueIcon : MonoBehaviour, IPointerUpHandler, IEventSystemHandler, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler // TypeDefIndex: 12754
+public class CraftingQueueIcon : MonoBehaviour, IPointerUpHandler, IEventSystemHandler, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler // TypeDefIndex: 12768
 {
-	public CanvasGroup canvasGroup; 
-	public Image icon; 
-	public Image iconCancel; 
-	public GameObject timeLeft; 
-	public GameObject craftingCount; 
-	public int taskid; 
-	public float endTime; 
-	public ItemDefinition item; 
-	public int amount; 
-	private ScrollRect scrollRect; 
-	private bool pointerOverButton; 
+	public CanvasGroup canvasGroup;
+	public Image icon;
+	public Image iconCancel;
+	public GameObject timeLeft;
+	public GameObject craftingCount;
+	public int taskid;
+	public float endTime;
+	public ItemDefinition item;
+	public int amount;
+	private ScrollRect scrollRect;
+	private bool pointerOverButton;
 
 	public string timeLeftString { get; }
 

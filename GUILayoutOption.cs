@@ -1,7 +1,7 @@
 public sealed class GUILayoutOption // TypeDefIndex: 4044
 {
-	internal GUILayoutOption.Type type; 
-	internal object value; 
+	internal GUILayoutOption.Type type;
+	internal object value;
 
 
 	internal void .ctor(GUILayoutOption.Type type, object value) { }
@@ -10,7 +10,7 @@ public sealed class GUILayoutOption // TypeDefIndex: 4044
 
 internal enum GUILayoutOption.Type // TypeDefIndex: 4045
 {
-	public int value__; 
+	public int value__;
 	public const GUILayoutOption.Type fixedWidth = 0;
 	public const GUILayoutOption.Type fixedHeight = 1;
 	public const GUILayoutOption.Type minWidth = 2;

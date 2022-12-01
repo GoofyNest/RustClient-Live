@@ -1,9 +1,9 @@
-public class TriggerNotifyEntity : TriggerBase, IPrefabPreProcess // TypeDefIndex: 11777
+public class TriggerNotifyEntity : TriggerBase, IPrefabPreProcess // TypeDefIndex: 11784
 {
-	public GameObject notifyTarget; 
-	private INotifyEntityTrigger toNotify; 
-	public bool runClientside; 
-	public bool runServerside; 
+	public GameObject notifyTarget;
+	private INotifyEntityTrigger toNotify;
+	public bool runClientside;
+	public bool runServerside;
 
 	public bool HasContents { get; }
 

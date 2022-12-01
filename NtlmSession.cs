@@ -1,6 +1,6 @@
 internal class NtlmSession // TypeDefIndex: 2559
 {
-	private MessageBase message; 
+	private MessageBase message;
 
 
 	public void .ctor() { }

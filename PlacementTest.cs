@@ -1,12 +1,12 @@
-public class PlacementTest : MonoBehaviour // TypeDefIndex: 10534
+public class PlacementTest : MonoBehaviour // TypeDefIndex: 10538
 {
-	public MeshCollider myMeshCollider; 
-	public Transform testTransform; 
-	public Transform visualTest; 
-	public float hemisphere; 
-	public float clampTest; 
-	public float testDist; 
-	private float nextTest; 
+	public MeshCollider myMeshCollider;
+	public Transform testTransform;
+	public Transform visualTest;
+	public float hemisphere;
+	public float clampTest;
+	public float testDist;
+	private float nextTest;
 
 
 	public Vector3 RandomHemisphereDirection(Vector3 input, float degreesOffset) { }

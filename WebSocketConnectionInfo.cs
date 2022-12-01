@@ -1,19 +1,19 @@
-public class WebSocketConnectionInfo : IWebSocketConnectionInfo // TypeDefIndex: 6966
+public class WebSocketConnectionInfo : IWebSocketConnectionInfo // TypeDefIndex: 6968
 {
-	[CompilerGeneratedAttribute] 
-	private string <SubProtocol>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Origin>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Host>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Path>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IPAddress <ClientIpAddress>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ClientPort>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Guid <Id>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private string <SubProtocol>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Origin>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Host>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Path>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IPAddress <ClientIpAddress>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ClientPort>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Guid <Id>k__BackingField;
 
 	private string SubProtocol { set; }
 	private string Origin { set; }
@@ -28,31 +28,31 @@ public class WebSocketConnectionInfo : IWebSocketConnectionInfo // TypeDefIndex:
 
 	private void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_SubProtocol(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Origin(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Host(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Path() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_Path(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IPAddress get_ClientIpAddress() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientIpAddress(IPAddress value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ClientPort(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Id(Guid value) { }
 
 }

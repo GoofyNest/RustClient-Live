@@ -1,17 +1,17 @@
-public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7125
+public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7127
 {
-	private static readonly Task s_canceledTask; 
-	[CompilerGeneratedAttribute] 
-	private static readonly Task <CompletedTask>k__BackingField; 
-	internal readonly object _obj; 
-	internal readonly short _token; 
-	internal readonly bool _continueOnCapturedContext; 
+	private static readonly Task s_canceledTask;
+	[CompilerGeneratedAttribute]
+	private static readonly Task <CompletedTask>k__BackingField;
+	internal readonly object _obj;
+	internal readonly short _token;
+	internal readonly bool _continueOnCapturedContext;
 
 	internal static Task CompletedTask { get; }
 	public bool IsCompleted { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static Task get_CompletedTask() { }
 
 	public void .ctor(Task task) { }
@@ -24,7 +24,7 @@ public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7125
 
 	public bool get_IsCompleted() { }
 
-	[StackTraceHiddenAttribute] 
+	[StackTraceHiddenAttribute]
 	internal void ThrowIfCompletedUnsuccessfully() { }
 
 	public ValueTaskAwaiter GetAwaiter() { }

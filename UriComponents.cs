@@ -1,6 +1,6 @@
 public enum UriComponents // TypeDefIndex: 2576
 {
-	public int value__; 
+	public int value__;
 	public const UriComponents Scheme = 1;
 	public const UriComponents UserInfo = 2;
 	public const UriComponents Host = 4;

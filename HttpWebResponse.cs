@@ -1,17 +1,17 @@
 public class HttpWebResponse : WebResponse, ISerializable, IDisposable // TypeDefIndex: 3010
 {
-	private Uri uri; 
-	private WebHeaderCollection webHeaders; 
-	private CookieCollection cookieCollection; 
-	private string method; 
-	private Version version; 
-	private HttpStatusCode statusCode; 
-	private string statusDescription; 
-	private long contentLength; 
-	private string contentType; 
-	private CookieContainer cookie_container; 
-	private bool disposed; 
-	private Stream stream; 
+	private Uri uri;
+	private WebHeaderCollection webHeaders;
+	private CookieCollection cookieCollection;
+	private string method;
+	private Version version;
+	private HttpStatusCode statusCode;
+	private string statusDescription;
+	private long contentLength;
+	private string contentType;
+	private CookieContainer cookie_container;
+	private bool disposed;
+	private Stream stream;
 
 	public override long ContentLength { get; }
 	public override WebHeaderCollection Headers { get; }
@@ -22,7 +22,7 @@ public class HttpWebResponse : WebResponse, ISerializable, IDisposable // TypeDe
 
 	internal void .ctor(Uri uri, string method, WebConnectionData data, CookieContainer container) { }
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
 	public override long get_ContentLength() { }
@@ -53,8 +53,8 @@ public class HttpWebResponse : WebResponse, ISerializable, IDisposable // TypeDe
 
 	private void FillCookies() { }
 
-	[ObsoleteAttribute] 
-	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute]
+	[EditorBrowsableAttribute]
 	public void .ctor() { }
 
 }

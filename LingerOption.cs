@@ -1,7 +1,7 @@
 public class LingerOption // TypeDefIndex: 3042
 {
-	private bool enabled; 
-	private int lingerTime; 
+	private bool enabled;
+	private int lingerTime;
 
 	public bool Enabled { set; }
 	public int LingerTime { set; }

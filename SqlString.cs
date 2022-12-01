@@ -1,23 +1,23 @@
 public struct SqlString : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4358
 {
-	private string m_value; 
-	private CompareInfo m_cmpInfo; 
-	private int m_lcid; 
-	private SqlCompareOptions m_flag; 
-	private bool m_fNotNull; 
-	public static readonly SqlString Null; 
-	internal static readonly UnicodeEncoding s_unicodeEncoding; 
-	public static readonly int IgnoreCase; 
-	public static readonly int IgnoreWidth; 
-	public static readonly int IgnoreNonSpace; 
-	public static readonly int IgnoreKanaType; 
-	public static readonly int BinarySort; 
-	public static readonly int BinarySort2; 
-	private static readonly SqlCompareOptions s_iDefaultFlag; 
-	private static readonly CompareOptions s_iValidCompareOptionMask; 
-	internal static readonly SqlCompareOptions s_iValidSqlCompareOptionMask; 
-	internal static readonly int s_lcidUSEnglish; 
-	private static readonly int s_lcidBinary; 
+	private string m_value;
+	private CompareInfo m_cmpInfo;
+	private int m_lcid;
+	private SqlCompareOptions m_flag;
+	private bool m_fNotNull;
+	public static readonly SqlString Null;
+	internal static readonly UnicodeEncoding s_unicodeEncoding;
+	public static readonly int IgnoreCase;
+	public static readonly int IgnoreWidth;
+	public static readonly int IgnoreNonSpace;
+	public static readonly int IgnoreKanaType;
+	public static readonly int BinarySort;
+	public static readonly int BinarySort2;
+	private static readonly SqlCompareOptions s_iDefaultFlag;
+	private static readonly CompareOptions s_iValidCompareOptionMask;
+	internal static readonly SqlCompareOptions s_iValidSqlCompareOptionMask;
+	internal static readonly int s_lcidUSEnglish;
+	private static readonly int s_lcidBinary;
 
 	public bool IsNull { get; }
 	public string Value { get; }

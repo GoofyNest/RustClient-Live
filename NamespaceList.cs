@@ -1,8 +1,8 @@
 internal class NamespaceList // TypeDefIndex: 2262
 {
-	private NamespaceList.ListType type; 
-	private Hashtable set; 
-	private string targetNamespace; 
+	private NamespaceList.ListType type;
+	private Hashtable set;
+	private string targetNamespace;
 
 	public NamespaceList.ListType Type { get; }
 	public string Excluded { get; }
@@ -41,7 +41,7 @@ internal class NamespaceList // TypeDefIndex: 2262
 
 public enum NamespaceList.ListType // TypeDefIndex: 2263
 {
-	public int value__; 
+	public int value__;
 	public const NamespaceList.ListType Any = 0;
 	public const NamespaceList.ListType Other = 1;
 	public const NamespaceList.ListType Set = 2;

@@ -1,7 +1,7 @@
-public static class BoundsCheckEx // TypeDefIndex: 12026
+public static class BoundsCheckEx // TypeDefIndex: 12033
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ApplyBoundsChecks(BaseEntity entity, BoundsCheck[] bounds, Vector3 pos, Quaternion rot, Vector3 scale, LayerMask rejectOnLayer) { }
 
 }

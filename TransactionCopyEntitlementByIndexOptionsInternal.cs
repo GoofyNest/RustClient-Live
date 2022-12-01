@@ -1,7 +1,7 @@
-internal struct TransactionCopyEntitlementByIndexOptionsInternal : ISettable<TransactionCopyEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9516
+internal struct TransactionCopyEntitlementByIndexOptionsInternal : ISettable<TransactionCopyEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9518
 {
-	private int m_ApiVersion; 
-	private uint m_EntitlementIndex; 
+	private int m_ApiVersion;
+	private uint m_EntitlementIndex;
 
 	public uint EntitlementIndex { set; }
 

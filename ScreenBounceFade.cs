@@ -1,14 +1,14 @@
-public class ScreenBounceFade : BaseScreenShake // TypeDefIndex: 11101
+public class ScreenBounceFade : BaseScreenShake // TypeDefIndex: 11107
 {
-	public AnimationCurve bounceScale; 
-	public AnimationCurve bounceSpeed; 
-	public AnimationCurve bounceViewmodel; 
-	public AnimationCurve distanceFalloff; 
-	public AnimationCurve timeFalloff; 
-	private float bounceTime; 
-	private Vector3 bounceVelocity; 
-	public float maxDistance; 
-	public float scale; 
+	public AnimationCurve bounceScale;
+	public AnimationCurve bounceSpeed;
+	public AnimationCurve bounceViewmodel;
+	public AnimationCurve distanceFalloff;
+	public AnimationCurve timeFalloff;
+	private float bounceTime;
+	private Vector3 bounceVelocity;
+	public float maxDistance;
+	public float scale;
 
 
 	public override void Setup() { }

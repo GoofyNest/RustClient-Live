@@ -1,6 +1,6 @@
-public class ConversationManager : MonoBehaviour // TypeDefIndex: 10573
+public class ConversationManager : MonoBehaviour // TypeDefIndex: 10577
 {
-	private static ConversationManager.Conversation activeConversation; 
+	private static ConversationManager.Conversation activeConversation;
 
 
 	public static bool InConversation() { }
@@ -19,15 +19,15 @@ public class ConversationManager : MonoBehaviour // TypeDefIndex: 10573
 
 }
 
-public class ConversationManager.Conversation : MonoBehaviour // TypeDefIndex: 10574
+public class ConversationManager.Conversation : MonoBehaviour // TypeDefIndex: 10578
 {
-	public ConversationData data; 
-	public int currentSpeechNodeIndex; 
-	public IConversationProvider provider; 
-	private float age; 
-	private float speechNodeAge; 
-	private int speechCharacterIndex; 
-	private float timeOnChar; 
+	public ConversationData data;
+	public int currentSpeechNodeIndex;
+	public IConversationProvider provider;
+	private float age;
+	private float speechNodeAge;
+	private int speechCharacterIndex;
+	private float timeOnChar;
 
 
 	public int GetSpeechNodeIndex(string name) { }

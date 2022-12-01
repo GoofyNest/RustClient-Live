@@ -1,31 +1,31 @@
-public class BasicCar : BaseVehicle // TypeDefIndex: 11434
+public class BasicCar : BaseVehicle // TypeDefIndex: 11440
 {
-	public BasicCar.VehicleWheel[] wheels; 
-	public float brakePedal; 
-	public float gasPedal; 
-	public float steering; 
-	public Transform centerOfMass; 
-	public Transform steeringWheel; 
-	public float motorForceConstant; 
-	public float brakeForceConstant; 
-	public float GasLerpTime; 
-	public float SteeringLerpTime; 
-	public Transform driverEye; 
-	public GameObjectRef chairRef; 
-	public Transform chairAnchorTest; 
-	public SoundPlayer idleLoopPlayer; 
-	public Transform engineOffset; 
-	public SoundDefinition engineSoundDef; 
-	private SedanWheelSmoke wheelSmoke; 
-	private float shockRestingPosY; 
-	private float shockDistance; 
-	private float traceDistanceNeutralPoint; 
-	private int cachedMask; 
+	public BasicCar.VehicleWheel[] wheels;
+	public float brakePedal;
+	public float gasPedal;
+	public float steering;
+	public Transform centerOfMass;
+	public Transform steeringWheel;
+	public float motorForceConstant;
+	public float brakeForceConstant;
+	public float GasLerpTime;
+	public float SteeringLerpTime;
+	public Transform driverEye;
+	public GameObjectRef chairRef;
+	public Transform chairAnchorTest;
+	public SoundPlayer idleLoopPlayer;
+	public Transform engineOffset;
+	public SoundDefinition engineSoundDef;
+	private SedanWheelSmoke wheelSmoke;
+	private float shockRestingPosY;
+	private float shockDistance;
+	private float traceDistanceNeutralPoint;
+	private int cachedMask;
 	private const float wheelSpinConstant = 120;
-	private AverageVelocity averageVelocity; 
-	private Sound engineSoundLoop; 
-	private SoundModulation.Modulator engineSoundVolume; 
-	private SoundModulation.Modulator engineSoundPitch; 
+	private AverageVelocity averageVelocity;
+	private Sound engineSoundLoop;
+	private SoundModulation.Modulator engineSoundVolume;
+	private SoundModulation.Modulator engineSoundPitch;
 
 
 	public override float MaxVelocity() { }
@@ -60,15 +60,15 @@ public class BasicCar : BaseVehicle // TypeDefIndex: 11434
 
 }
 
-public class BasicCar.VehicleWheel // TypeDefIndex: 11435
+public class BasicCar.VehicleWheel // TypeDefIndex: 11441
 {
-	public Transform shock; 
-	public WheelCollider wheelCollider; 
-	public Transform wheel; 
-	public Transform axle; 
-	public bool steerWheel; 
-	public bool brakeWheel; 
-	public bool powerWheel; 
+	public Transform shock;
+	public WheelCollider wheelCollider;
+	public Transform wheel;
+	public Transform axle;
+	public bool steerWheel;
+	public bool brakeWheel;
+	public bool powerWheel;
 
 
 	public void .ctor() { }

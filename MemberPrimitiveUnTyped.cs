@@ -1,7 +1,7 @@
 internal sealed class MemberPrimitiveUnTyped // TypeDefIndex: 1084
 {
-	internal InternalPrimitiveTypeE typeInformation; 
-	internal object value; 
+	internal InternalPrimitiveTypeE typeInformation;
+	internal object value;
 
 
 	internal void .ctor() { }

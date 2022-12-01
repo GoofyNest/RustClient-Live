@@ -1,62 +1,62 @@
-public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 11185
+public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 11191
 {
-	public int PhoneNumber; 
-	public string PhoneName; 
-	public bool CanModifyPhoneName; 
-	public bool CanSaveNumbers; 
-	public bool RequirePower; 
-	public bool RequireParent; 
-	public float CallWaitingTime; 
-	public bool AppendGridToName; 
-	public bool IsMobile; 
-	public bool CanSaveVoicemail; 
-	public GameObjectRef PhoneDialog; 
-	public VoiceProcessor VProcessor; 
-	public PreloadedCassetteContent PreloadedContent; 
-	public SoundDefinition DialToneSfx; 
-	public SoundDefinition RingingSfx; 
-	public SoundDefinition ErrorSfx; 
-	public SoundDefinition CallIncomingWhileBusySfx; 
-	public SoundDefinition PickupHandsetSfx; 
-	public SoundDefinition PutDownHandsetSfx; 
-	public SoundDefinition FailedWrongNumber; 
-	public SoundDefinition FailedNoAnswer; 
-	public SoundDefinition FailedNetworkBusy; 
-	public SoundDefinition FailedEngaged; 
-	public SoundDefinition FailedRemoteHangUp; 
-	public SoundDefinition FailedSelfHangUp; 
-	public Light RingingLight; 
-	public float RingingLightFrequency; 
-	public AudioSource answeringMachineSound; 
-	public EntityRef currentPlayerRef; 
-	[CompilerGeneratedAttribute] 
-	private int <lastDialedNumber>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PhoneDirectory <savedNumbers>k__BackingField; 
-	public List<VoicemailEntry> savedVoicemail; 
-	private SoundDefinition currentlyLoadedPreloadedContent; 
-	private string connectedPlayerId; 
-	[CompilerGeneratedAttribute] 
-	private Telephone.CallState <clientCallState>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private PhoneDialler <CurrentDialog>k__BackingField; 
-	private float callStartTime; 
-	private Sound ringingSound; 
-	private Sound dialingSound; 
-	[CompilerGeneratedAttribute] 
-	private PhoneDirectory <currentDirectory>k__BackingField; 
-	private TimeSince lastDirectoryUpdate; 
-	[CompilerGeneratedAttribute] 
-	private int <ConnectedCallPhoneNumber>k__BackingField; 
-	private int voicemailTarget; 
-	private OggEncoder currentEncoder; 
-	private AudioInterceptComponent activeIntercept; 
-	private int requestedDialNumber; 
-	private bool cachedCanLeaveVoicemail; 
-	[CompilerGeneratedAttribute] 
-	private TimeSince <AnsweringMessageStartTime>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <AnsweringMachineMessageLength>k__BackingField; 
+	public int PhoneNumber;
+	public string PhoneName;
+	public bool CanModifyPhoneName;
+	public bool CanSaveNumbers;
+	public bool RequirePower;
+	public bool RequireParent;
+	public float CallWaitingTime;
+	public bool AppendGridToName;
+	public bool IsMobile;
+	public bool CanSaveVoicemail;
+	public GameObjectRef PhoneDialog;
+	public VoiceProcessor VProcessor;
+	public PreloadedCassetteContent PreloadedContent;
+	public SoundDefinition DialToneSfx;
+	public SoundDefinition RingingSfx;
+	public SoundDefinition ErrorSfx;
+	public SoundDefinition CallIncomingWhileBusySfx;
+	public SoundDefinition PickupHandsetSfx;
+	public SoundDefinition PutDownHandsetSfx;
+	public SoundDefinition FailedWrongNumber;
+	public SoundDefinition FailedNoAnswer;
+	public SoundDefinition FailedNetworkBusy;
+	public SoundDefinition FailedEngaged;
+	public SoundDefinition FailedRemoteHangUp;
+	public SoundDefinition FailedSelfHangUp;
+	public Light RingingLight;
+	public float RingingLightFrequency;
+	public AudioSource answeringMachineSound;
+	public EntityRef currentPlayerRef;
+	[CompilerGeneratedAttribute]
+	private int <lastDialedNumber>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PhoneDirectory <savedNumbers>k__BackingField;
+	public List<VoicemailEntry> savedVoicemail;
+	private SoundDefinition currentlyLoadedPreloadedContent;
+	private string connectedPlayerId;
+	[CompilerGeneratedAttribute]
+	private Telephone.CallState <clientCallState>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private PhoneDialler <CurrentDialog>k__BackingField;
+	private float callStartTime;
+	private Sound ringingSound;
+	private Sound dialingSound;
+	[CompilerGeneratedAttribute]
+	private PhoneDirectory <currentDirectory>k__BackingField;
+	private TimeSince lastDirectoryUpdate;
+	[CompilerGeneratedAttribute]
+	private int <ConnectedCallPhoneNumber>k__BackingField;
+	private int voicemailTarget;
+	private OggEncoder currentEncoder;
+	private AudioInterceptComponent activeIntercept;
+	private int requestedDialNumber;
+	private bool cachedCanLeaveVoicemail;
+	[CompilerGeneratedAttribute]
+	private TimeSince <AnsweringMessageStartTime>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private float <AnsweringMachineMessageLength>k__BackingField;
 
 	public int MaxVoicemailSlots { get; }
 	public BasePlayer currentPlayer { get; set; }
@@ -91,46 +91,46 @@ public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 1118
 
 	private bool get_isServer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_lastDialedNumber() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_lastDialedNumber(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PhoneDirectory get_savedNumbers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_savedNumbers(PhoneDirectory value) { }
 
 	public BaseEntity get_ParentEntity() { }
 
 	private Cassette get_cachedCassette() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Telephone.CallState get_clientCallState() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_clientCallState(Telephone.CallState value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PhoneDialler get_CurrentDialog() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_CurrentDialog(PhoneDialler value) { }
 
 	public float get_CallDuration() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public PhoneDirectory get_currentDirectory() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_currentDirectory(PhoneDirectory value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ConnectedCallPhoneNumber() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_ConnectedCallPhoneNumber(int value) { }
 
 	public void OpenDialler(BasePlayer player) { }
@@ -159,16 +159,16 @@ public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 1118
 
 	public void ClientPlayAnsweringMessage(BaseEntity.RPCMessage msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TimeSince get_AnsweringMessageStartTime() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_AnsweringMessageStartTime(TimeSince value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public float get_AnsweringMachineMessageLength() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_AnsweringMachineMessageLength(float value) { }
 
 	private void PlayAnsweringMessage(AudioClip clip, bool canLeaveVoicemail) { }
@@ -205,13 +205,13 @@ public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 1118
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <ClientToggleVoicemail>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <ClientReceiveAnsweringData>
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <ClientPlayAnsweringMessage>
 
 }

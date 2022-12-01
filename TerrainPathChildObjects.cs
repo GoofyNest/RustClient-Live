@@ -1,14 +1,14 @@
-public class TerrainPathChildObjects : MonoBehaviour // TypeDefIndex: 12113
+public class TerrainPathChildObjects : MonoBehaviour // TypeDefIndex: 12120
 {
-	public bool Spline; 
-	public float Width; 
-	public float Offset; 
-	public float Fade; 
-	[InspectorFlagsAttribute] 
-	public TerrainSplat.Enum Splat; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum Topology; 
-	public InfrastructureType Type; 
+	public bool Spline;
+	public float Width;
+	public float Offset;
+	public float Fade;
+	[InspectorFlagsAttribute]
+	public TerrainSplat.Enum Splat;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum Topology;
+	public InfrastructureType Type;
 
 
 	protected void Awake() { }

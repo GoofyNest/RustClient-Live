@@ -1,19 +1,19 @@
-public class DiscoFloorMesh : MonoBehaviour, IClientComponent // TypeDefIndex: 11175
+public class DiscoFloorMesh : MonoBehaviour, IClientComponent // TypeDefIndex: 11181
 {
-	public int GridRows; 
-	public int GridColumns; 
-	public float GridSize; 
-	[RangeAttribute] 
-	public float TestOffset; 
-	public Color OffColor; 
-	public MeshRenderer Renderer; 
-	public bool DrawInEditor; 
-	public MeshFilter Filter; 
-	public AnimationCurve customCurveX; 
-	public AnimationCurve customCurveY; 
-	private static int powerId; 
-	private Mesh builtMesh; 
-	private Color[] colourArray; 
+	public int GridRows;
+	public int GridColumns;
+	public float GridSize;
+	[RangeAttribute]
+	public float TestOffset;
+	public Color OffColor;
+	public MeshRenderer Renderer;
+	public bool DrawInEditor;
+	public MeshFilter Filter;
+	public AnimationCurve customCurveX;
+	public AnimationCurve customCurveY;
+	private static int powerId;
+	private Mesh builtMesh;
+	private Color[] colourArray;
 
 	public int NumTiles { get; }
 
@@ -44,9 +44,9 @@ public class DiscoFloorMesh : MonoBehaviour, IClientComponent // TypeDefIndex: 1
 
 }
 
-public enum DiscoFloorMesh.PatternType // TypeDefIndex: 11176
+public enum DiscoFloorMesh.PatternType // TypeDefIndex: 11182
 {
-	public int value__; 
+	public int value__;
 	public const DiscoFloorMesh.PatternType InOut = 0;
 	public const DiscoFloorMesh.PatternType Radial = 1;
 	public const DiscoFloorMesh.PatternType Ripple = 2;
@@ -55,9 +55,9 @@ public enum DiscoFloorMesh.PatternType // TypeDefIndex: 11176
 
 }
 
-public enum DiscoFloorMesh.Corner // TypeDefIndex: 11177
+public enum DiscoFloorMesh.Corner // TypeDefIndex: 11183
 {
-	public int value__; 
+	public int value__;
 	public const DiscoFloorMesh.Corner TopLeft = 0;
 	public const DiscoFloorMesh.Corner TopRight = 1;
 	public const DiscoFloorMesh.Corner BottomLeft = 2;

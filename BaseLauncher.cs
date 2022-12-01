@@ -1,7 +1,7 @@
-public class BaseLauncher : BaseProjectile // TypeDefIndex: 10241
+public class BaseLauncher : BaseProjectile // TypeDefIndex: 10243
 {
-	private int lastSpectatorReloadAmmo; 
-	private TimeSince lastSpectatorAmmoInsert; 
+	private int lastSpectatorReloadAmmo;
+	private TimeSince lastSpectatorAmmoInsert;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }

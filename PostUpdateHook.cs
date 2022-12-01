@@ -1,8 +1,8 @@
-public class PostUpdateHook : MonoBehaviour // TypeDefIndex: 13115
+public class PostUpdateHook : MonoBehaviour // TypeDefIndex: 13130
 {
-	public static Action OnUpdate; 
-	public static Action OnLateUpdate; 
-	public static Action OnFixedUpdate; 
+	public static Action OnUpdate;
+	public static Action OnLateUpdate;
+	public static Action OnFixedUpdate;
 
 
 	private void Update() { }

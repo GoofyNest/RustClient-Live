@@ -1,8 +1,8 @@
 internal struct GameRichPresenceJoinRequested_t : ICallbackData // TypeDefIndex: 5320
 {
-	internal ulong SteamIDFriend; 
-	internal byte[] Connect; 
-	public static int _datasize; 
+	internal ulong SteamIDFriend;
+	internal byte[] Connect;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

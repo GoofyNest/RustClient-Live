@@ -2,17 +2,17 @@ public abstract class WaitHandle : MarshalByRefObject, IDisposable // TypeDefInd
 {
 	public const int WaitTimeout = 258;
 	private const int MAX_WAITHANDLES = 64;
-	private IntPtr waitHandle; 
-	internal SafeWaitHandle safeWaitHandle; 
-	internal bool hasThreadAffinity; 
+	private IntPtr waitHandle;
+	internal SafeWaitHandle safeWaitHandle;
+	internal bool hasThreadAffinity;
 	private const int WAIT_OBJECT_0 = 0;
 	private const int WAIT_ABANDONED = 128;
 	private const int WAIT_FAILED = 2147483647;
 	private const int ERROR_TOO_MANY_POSTS = 298;
-	protected static readonly IntPtr InvalidHandle; 
+	protected static readonly IntPtr InvalidHandle;
 	internal const int MaxWaitHandles = 64;
 
-	[ObsoleteAttribute] 
+	[ObsoleteAttribute]
 	public virtual IntPtr Handle { set; }
 	public SafeWaitHandle SafeWaitHandle { get; set; }
 
@@ -23,10 +23,10 @@ public abstract class WaitHandle : MarshalByRefObject, IDisposable // TypeDefInd
 
 	public virtual void set_Handle(IntPtr value) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public SafeWaitHandle get_SafeWaitHandle() { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public void set_SafeWaitHandle(SafeWaitHandle value) { }
 
 	internal void SetHandleInternal(SafeWaitHandle handle) { }
@@ -41,10 +41,10 @@ public abstract class WaitHandle : MarshalByRefObject, IDisposable // TypeDefInd
 
 	internal static bool InternalWaitOne(SafeHandle waitableSafeHandle, long millisecondsTimeout, bool hasThreadAffinity, bool exitContext) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int WaitAny(WaitHandle[] waitHandles, int millisecondsTimeout, bool exitContext) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static int WaitAny(WaitHandle[] waitHandles, TimeSpan timeout, bool exitContext) { }
 
 	private static void ThrowAbandonedMutexException() { }

@@ -1,7 +1,7 @@
-public class InstancingContainer // TypeDefIndex: 13150
+public class InstancingContainer // TypeDefIndex: 13165
 {
-	private int capacity; 
-	private ListDictionary<InstancingKey, InstancingBuffer> buffers; 
+	private int capacity;
+	private ListDictionary<InstancingKey, InstancingBuffer> buffers;
 
 
 	public void .ctor(int capacity = 128) { }

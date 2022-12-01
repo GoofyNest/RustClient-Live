@@ -1,8 +1,8 @@
-public class TriggerComfort : TriggerBase // TypeDefIndex: 11764
+public class TriggerComfort : TriggerBase // TypeDefIndex: 11771
 {
-	public float triggerSize; 
-	public float baseComfort; 
-	public float minComfortRange; 
+	public float triggerSize;
+	public float baseComfort;
+	public float minComfortRange;
 
 
 	private void OnValidate() { }

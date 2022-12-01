@@ -1,6 +1,6 @@
 public enum CommandBehavior // TypeDefIndex: 4174
 {
-	public int value__; 
+	public int value__;
 	public const CommandBehavior Default = 0;
 	public const CommandBehavior SingleResult = 1;
 	public const CommandBehavior SchemaOnly = 2;

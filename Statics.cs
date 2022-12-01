@@ -1,8 +1,8 @@
 internal static class Statics // TypeDefIndex: 1577
 {
-	public static readonly TraceLoggingDataType IntPtrType; 
-	public static readonly TraceLoggingDataType UIntPtrType; 
-	public static readonly TraceLoggingDataType HexIntPtrType; 
+	public static readonly TraceLoggingDataType IntPtrType;
+	public static readonly TraceLoggingDataType UIntPtrType;
+	public static readonly TraceLoggingDataType HexIntPtrType;
 
 
 	public static byte[] MetadataForString(string name, int prefixSize, int suffixSize, int additionalSize) { }

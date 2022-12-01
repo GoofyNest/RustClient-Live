@@ -1,24 +1,24 @@
-public struct StatThresholds // TypeDefIndex: 9947
+public struct StatThresholds // TypeDefIndex: 9949
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Threshold>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Threshold>k__BackingField;
 
 	public Utf8String Name { get; set; }
 	public int Threshold { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Name(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Threshold() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Threshold(int value) { }
 
 	internal void Set(ref StatThresholdsInternal other) { }

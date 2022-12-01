@@ -15,11 +15,11 @@ internal sealed class SequenceNode : InteriorNode // TypeDefIndex: 2160
 
 private struct SequenceNode.SequenceConstructPosContext // TypeDefIndex: 2161
 {
-	public SequenceNode this_; 
-	public BitSet firstpos; 
-	public BitSet lastpos; 
-	public BitSet lastposLeft; 
-	public BitSet firstposRight; 
+	public SequenceNode this_;
+	public BitSet firstpos;
+	public BitSet lastpos;
+	public BitSet lastposLeft;
+	public BitSet firstposRight;
 
 
 	public void .ctor(SequenceNode node, BitSet firstpos, BitSet lastpos) { }

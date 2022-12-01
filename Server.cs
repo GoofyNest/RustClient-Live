@@ -1,10 +1,10 @@
 internal abstract class ServerIdentity : Identity // TypeDefIndex: 1145
 {
-	protected Type _objectType; 
-	protected MarshalByRefObject _serverObject; 
-	protected IMessageSink _serverSink; 
-	protected Context _context; 
-	protected Lease _lease; 
+	protected Type _objectType;
+	protected MarshalByRefObject _serverObject;
+	protected IMessageSink _serverSink;
+	protected Context _context;
+	protected Lease _lease;
 
 	public Type ObjectType { get; }
 	public Lease Lease { get; }
@@ -50,7 +50,7 @@ internal class ServerContextTerminatorSink : IMessageSink // TypeDefIndex: 1259
 
 internal class ServerObjectTerminatorSink : IMessageSink // TypeDefIndex: 1260
 {
-	private IMessageSink _nextSink; 
+	private IMessageSink _nextSink;
 
 
 	public void .ctor(IMessageSink nextSink) { }
@@ -63,8 +63,8 @@ internal class ServerObjectTerminatorSink : IMessageSink // TypeDefIndex: 1260
 
 internal class ServerObjectReplySink : IMessageSink // TypeDefIndex: 1261
 {
-	private IMessageSink _replySink; 
-	private ServerIdentity _identity; 
+	private IMessageSink _replySink;
+	private ServerIdentity _identity;
 
 
 	public void .ctor(ServerIdentity identity, IMessageSink replySink) { }
@@ -90,8 +90,8 @@ internal sealed class ServerCertValidationCallbackWrapper : MulticastDelegate //
 
 internal class ServerCertValidationCallback // TypeDefIndex: 2985
 {
-	private readonly RemoteCertificateValidationCallback m_ValidationCallback; 
-	private readonly ExecutionContext m_Context; 
+	private readonly RemoteCertificateValidationCallback m_ValidationCallback;
+	private readonly ExecutionContext m_Context;
 
 
 	internal void .ctor(RemoteCertificateValidationCallback validationCallback) { }
@@ -104,58 +104,58 @@ internal class ServerCertValidationCallback // TypeDefIndex: 2985
 
 private class ServerCertValidationCallback.CallbackContext // TypeDefIndex: 2986
 {
-	internal readonly object request; 
-	internal readonly X509Certificate certificate; 
-	internal readonly X509Chain chain; 
-	internal readonly SslPolicyErrors sslPolicyErrors; 
-	internal bool result; 
+	internal readonly object request;
+	internal readonly X509Certificate certificate;
+	internal readonly X509Chain chain;
+	internal readonly SslPolicyErrors sslPolicyErrors;
+	internal bool result;
 
 
 	internal void .ctor(object request, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { }
 
 }
 
-public struct ServerInfo : IEquatable<ServerInfo> // TypeDefIndex: 5563
+public struct ServerInfo : IEquatable<ServerInfo> // TypeDefIndex: 5565
 {
-	[CompilerGeneratedAttribute] 
-	private string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Ping>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <GameDir>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Map>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <Description>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AppId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Players>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <MaxPlayers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <BotPlayers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Passworded>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <Secure>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <LastTimePlayed>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <Version>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private string <TagString>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ulong <SteamId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private uint <AddressRaw>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IPAddress <Address>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <ConnectionPort>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private int <QueryPort>k__BackingField; 
-	private string[] _tags; 
+	[CompilerGeneratedAttribute]
+	private string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Ping>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <GameDir>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Map>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <Description>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AppId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Players>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <MaxPlayers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <BotPlayers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Passworded>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private bool <Secure>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <LastTimePlayed>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <Version>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private string <TagString>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ulong <SteamId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private uint <AddressRaw>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private IPAddress <Address>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <ConnectionPort>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private int <QueryPort>k__BackingField;
+	private string[] _tags;
 
 	public string Name { get; set; }
 	public int Ping { get; set; }
@@ -178,117 +178,117 @@ public struct ServerInfo : IEquatable<ServerInfo> // TypeDefIndex: 5563
 	public int QueryPort { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Name(string value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public int get_Ping() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Ping(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_GameDir(string value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public string get_Map() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Map(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Description(string value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public uint get_AppId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AppId(uint value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public int get_Players() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Players(int value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public int get_MaxPlayers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_MaxPlayers(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_BotPlayers(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Passworded(bool value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public bool get_Secure() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Secure(bool value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public uint get_LastTimePlayed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_LastTimePlayed(uint value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Version(int value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public string get_TagString() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_TagString(string value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public ulong get_SteamId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_SteamId(ulong value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public uint get_AddressRaw() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_AddressRaw(uint value) { }
 
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute]
+	[CompilerGeneratedAttribute]
 	public IPAddress get_Address() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Address(IPAddress value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public int get_ConnectionPort() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ConnectionPort(int value) { }
 
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute]
+	[IsReadOnlyAttribute]
 	public int get_QueryPort() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_QueryPort(int value) { }
 
 	internal static ServerInfo From(gameserveritem_t item) { }
@@ -297,7 +297,7 @@ public struct ServerInfo : IEquatable<ServerInfo> // TypeDefIndex: 5563
 
 	public void AddToHistory() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task<Dictionary<string, string>> QueryRulesAsync() { }
 
 	public void RemoveFromHistory() { }
@@ -312,24 +312,24 @@ public struct ServerInfo : IEquatable<ServerInfo> // TypeDefIndex: 5563
 
 }
 
-private struct ServerInfo.<QueryRulesAsync>d__85 : IAsyncStateMachine // TypeDefIndex: 5564
+private struct ServerInfo.<QueryRulesAsync>d__85 : IAsyncStateMachine // TypeDefIndex: 5566
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder; 
-	public ServerInfo <>4__this; 
-	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder;
+	public ServerInfo <>4__this;
+	private TaskAwaiter<Dictionary<string, string>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public enum ServerQuerySet // TypeDefIndex: 5702
+public enum ServerQuerySet // TypeDefIndex: 5704
 {
-	public int value__; 
+	public int value__;
 	public const ServerQuerySet Whitelist = 0;
 	public const ServerQuerySet Internet = 1;
 	public const ServerQuerySet LocalNetwork = 2;
@@ -339,45 +339,45 @@ public enum ServerQuerySet // TypeDefIndex: 5702
 
 }
 
-public struct ServerInfo // TypeDefIndex: 5708
+public struct ServerInfo // TypeDefIndex: 5710
 {
-	private static readonly char[] SplitComma; 
-	[CompilerGeneratedAttribute] 
-	private readonly uint <AppId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <Name>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly IPAddress <Address>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly uint <AddressRaw>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <ConnectionPort>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <QueryPort>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <Map>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <TagString>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly bool <IsSecure>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <Players>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <MaxPlayers>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly uint <LastTimePlayed>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly int <Ping>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly ulong <SteamId>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly uint <Born>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly HashSet<string> <Tags>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <ConnectionProtocol>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <ConnectionString>k__BackingField; 
+	private static readonly char[] SplitComma;
+	[CompilerGeneratedAttribute]
+	private readonly uint <AppId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <Name>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly IPAddress <Address>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly uint <AddressRaw>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <ConnectionPort>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <QueryPort>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <Map>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <TagString>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly bool <IsSecure>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <Players>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <MaxPlayers>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly uint <LastTimePlayed>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly int <Ping>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly ulong <SteamId>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly uint <Born>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly HashSet<string> <Tags>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <ConnectionProtocol>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <ConnectionString>k__BackingField;
 
 	public uint AppId { get; }
 	public string Name { get; }
@@ -399,58 +399,58 @@ public struct ServerInfo // TypeDefIndex: 5708
 	public string ConnectionString { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AppId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Name() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IPAddress get_Address() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_AddressRaw() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_ConnectionPort() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_QueryPort() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Map() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_TagString() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsSecure() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Players() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_MaxPlayers() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_LastTimePlayed() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_Ping() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ulong get_SteamId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public uint get_Born() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public HashSet<string> get_Tags() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ConnectionProtocol() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ConnectionString() { }
 
 	public void .ctor(uint appId, string name, IPAddress address, int connectionPort, int queryPort, string map, string tagString, bool isSecure, int players, int maxPlayers, uint lastTimePlayed, int ping, ulong steamId, int authedPlayers = 2147483647) { }
@@ -463,10 +463,10 @@ public struct ServerInfo // TypeDefIndex: 5708
 
 }
 
-private sealed class ServerInfo.<>c // TypeDefIndex: 5709
+private sealed class ServerInfo.<>c // TypeDefIndex: 5711
 {
-	public static readonly ServerInfo.<>c <>9; 
-	public static Func<string, bool> <>9__55_0; 
+	public static readonly ServerInfo.<>c <>9;
+	public static Func<string, bool> <>9__55_0;
 
 
 	private static void .cctor() { }
@@ -477,24 +477,24 @@ private sealed class ServerInfo.<>c // TypeDefIndex: 5709
 
 }
 
-public struct ServerParameters // TypeDefIndex: 5710
+public struct ServerParameters // TypeDefIndex: 5712
 {
-	[CompilerGeneratedAttribute] 
-	private readonly string <ShortName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <FullName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly string <Version>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly bool <IsSecure>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly bool <HideIP>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly IPAddress <Address>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly ushort <GamePort>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private readonly ushort <QueryPort>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private readonly string <ShortName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <FullName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly string <Version>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly bool <IsSecure>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly bool <HideIP>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly IPAddress <Address>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly ushort <GamePort>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private readonly ushort <QueryPort>k__BackingField;
 
 	public string ShortName { get; }
 	public string FullName { get; }
@@ -506,70 +506,70 @@ public struct ServerParameters // TypeDefIndex: 5710
 	public ushort QueryPort { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_ShortName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_FullName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public string get_Version() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_IsSecure() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public bool get_HideIP() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IPAddress get_Address() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_GamePort() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ushort get_QueryPort() { }
 
 	public void .ctor(string shortName, string fullName, string version, bool isSecure, bool hideIP, IPAddress address, ushort gamePort, ushort queryPort = 0) { }
 
 }
 
-public static class ServerInfoExtensions // TypeDefIndex: 6164
+public static class ServerInfoExtensions // TypeDefIndex: 6166
 {
 
-	[AsyncStateMachineAttribute] 
-	[ExtensionAttribute] 
+	[AsyncStateMachineAttribute]
+	[ExtensionAttribute]
 	public static Task<Dictionary<string, string>> QueryRulesAsync(ServerInfo server) { }
 
 }
 
-private struct ServerInfoExtensions.<QueryRulesAsync>d__0 : IAsyncStateMachine // TypeDefIndex: 6165
+private struct ServerInfoExtensions.<QueryRulesAsync>d__0 : IAsyncStateMachine // TypeDefIndex: 6167
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder; 
-	public ServerInfo server; 
-	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder;
+	public ServerInfo server;
+	private TaskAwaiter<Dictionary<string, string>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public static class ServerListMetadata // TypeDefIndex: 6218
+public static class ServerListMetadata // TypeDefIndex: 6220
 {
-	[CompilerGeneratedAttribute] 
-	private static DateTimeOffset <LastDownloaded>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private static DateTimeOffset <LastDownloaded>k__BackingField;
 
 	public static DateTimeOffset LastDownloaded { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static DateTimeOffset get_LastDownloaded() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_LastDownloaded(DateTimeOffset value) { }
 
 	public static void Refresh(bool force = False) { }
@@ -580,15 +580,15 @@ public static class ServerListMetadata // TypeDefIndex: 6218
 
 	private static void OnUpdated(Dictionary<IPEndPoint, int> metadata) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal static bool <LoadMetadata>g__TryParseIPEndPoint|6_0(string value, out IPEndPoint endPoint) { }
 
 }
 
-private sealed class ServerListMetadata.<>c // TypeDefIndex: 6219
+private sealed class ServerListMetadata.<>c // TypeDefIndex: 6221
 {
-	public static readonly ServerListMetadata.<>c <>9; 
-	public static Action<string> <>9__5_0; 
+	public static readonly ServerListMetadata.<>c <>9;
+	public static Action<string> <>9__5_0;
 
 
 	private static void .cctor() { }
@@ -599,11 +599,11 @@ private sealed class ServerListMetadata.<>c // TypeDefIndex: 6219
 
 }
 
-public class ServerGib : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6337
+public class ServerGib : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6339
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public string gibName; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public string gibName;
 
 
 	public static void ResetToPool(ServerGib instance) { }
@@ -660,23 +660,23 @@ public class ServerGib : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6337
 
 }
 
-public abstract class Server : BaseNetwork // TypeDefIndex: 6877
+public abstract class Server : BaseNetwork // TypeDefIndex: 6879
 {
-	public static ulong MaxPacketsPerSecond; 
-	public static int MaxPacketSize; 
-	public static int MaxConnectionsPerIP; 
-	public static float MaxReceiveTime; 
-	public string ip; 
-	public int port; 
-	public bool compressionEnabled; 
-	public bool logging; 
-	public Manager visibility; 
-	public IServerCallback callbackHandler; 
-	public bool debug; 
-	internal uint lastValueGiven; 
-	public List<Connection> connections; 
-	private Dictionary<ulong, Connection> connectionByGUID; 
-	private Dictionary<string, List<Connection>> connectionsByIP; 
+	public static ulong MaxPacketsPerSecond;
+	public static int MaxPacketSize;
+	public static int MaxConnectionsPerIP;
+	public static float MaxReceiveTime;
+	public string ip;
+	public int port;
+	public bool compressionEnabled;
+	public bool logging;
+	public Manager visibility;
+	public IServerCallback callbackHandler;
+	public bool debug;
+	internal uint lastValueGiven;
+	public List<Connection> connections;
+	private Dictionary<ulong, Connection> connectionByGUID;
+	private Dictionary<string, List<Connection>> connectionsByIP;
 
 	public virtual string ProtocolId { get; }
 	public virtual bool AllowPassthroughMessages { get; }
@@ -738,30 +738,30 @@ public abstract class Server : BaseNetwork // TypeDefIndex: 6877
 
 }
 
-public class ServerVar : ConsoleVar // TypeDefIndex: 6929
+public class ServerVar : ConsoleVar // TypeDefIndex: 6931
 {
 
 	public void .ctor() { }
 
 }
 
-public class ServerUserVar : ConsoleVar // TypeDefIndex: 6930
+public class ServerUserVar : ConsoleVar // TypeDefIndex: 6932
 {
 
 	public void .ctor() { }
 
 }
 
-public class ServerAllVar : ConsoleVar // TypeDefIndex: 6931
+public class ServerAllVar : ConsoleVar // TypeDefIndex: 6933
 {
 
 	public void .ctor() { }
 
 }
 
-public class Server : Server // TypeDefIndex: 7345
+public class Server : Server // TypeDefIndex: 7347
 {
-	private Peer peer; 
+	private Peer peer;
 
 	public override string ProtocolId { get; }
 	public override bool AllowPassthroughMessages { get; }
@@ -807,22 +807,23 @@ public class Server : Server // TypeDefIndex: 7345
 
 }
 
-public class ServerConsole : SingletonComponent<ServerConsole> // TypeDefIndex: 11023
+public class ServerConsole : SingletonComponent<ServerConsole> // TypeDefIndex: 11029
 {
 
 	public void .ctor() { }
 
 }
 
-public class ServerGib : BaseCombatEntity // TypeDefIndex: 11340
+public class ServerGib : BaseCombatEntity // TypeDefIndex: 11346
 {
-	public GameObject _gibSource; 
-	public string _gibName; 
-	public PhysicMaterial physicsMaterial; 
-	private MeshCollider meshCollider; 
-	private MeshFilter meshFilter; 
-	private MeshRenderer meshRenderer; 
-	private bool initialized; 
+	public GameObject _gibSource;
+	public string _gibName;
+	public PhysicMaterial physicsMaterial;
+	public bool useContinuousCollision;
+	private MeshCollider meshCollider;
+	private MeshFilter meshFilter;
+	private MeshRenderer meshRenderer;
+	private bool initialized;
 
 
 	public MeshCollider GetCollider() { }
@@ -841,16 +842,16 @@ public class ServerGib : BaseCombatEntity // TypeDefIndex: 11340
 
 }
 
-public class ServerProjectile : EntityComponent<BaseEntity>, IServerComponent // TypeDefIndex: 11417
+public class ServerProjectile : EntityComponent<BaseEntity>, IServerComponent // TypeDefIndex: 11423
 {
-	public Vector3 initialVelocity; 
-	public float drag; 
-	public float gravityModifier; 
-	public float speed; 
-	public float scanRange; 
-	public Vector3 swimScale; 
-	public Vector3 swimSpeed; 
-	public float radius; 
+	public Vector3 initialVelocity;
+	public float drag;
+	public float gravityModifier;
+	public float speed;
+	public float scanRange;
+	public Vector3 swimScale;
+	public Vector3 swimSpeed;
+	public float radius;
 
 	public virtual bool HasRangeLimit { get; }
 
@@ -863,7 +864,7 @@ public class ServerProjectile : EntityComponent<BaseEntity>, IServerComponent //
 
 }
 
-public class ServerMgr : SingletonComponent<ServerMgr> // TypeDefIndex: 12462
+public class ServerMgr : SingletonComponent<ServerMgr> // TypeDefIndex: 12470
 {
 
 public class ServerMgr : SingletonComponent<ServerMgr>
@@ -874,11 +875,11 @@ public class ServerMgr : SingletonComponent<ServerMgr>
 
 }
 
-public class ServerPerformance : BaseMonoBehaviour // TypeDefIndex: 12463
+public class ServerPerformance : BaseMonoBehaviour // TypeDefIndex: 12471
 {
-	public static ulong deaths; 
-	public static ulong spawns; 
-	public static ulong position_changes; 
+	public static ulong deaths;
+	public static ulong spawns;
+	public static ulong position_changes;
 
 
 	public void .ctor() { }
@@ -887,14 +888,14 @@ public class ServerPerformance : BaseMonoBehaviour // TypeDefIndex: 12463
 
 }
 
-public class ServerBrowser : MonoBehaviour // TypeDefIndex: 12927
+public class ServerBrowser : MonoBehaviour // TypeDefIndex: 12941
 {
-	public string orderBy; 
-	private string searchText; 
-	private bool showFull; 
-	private bool showEmpty; 
-	private List<HashSet<string>> searchTags; 
-	private HashSet<string> excludeTags; 
+	public string orderBy;
+	private string searchText;
+	private bool showFull;
+	private bool showEmpty;
+	private List<HashSet<string>> searchTags;
+	private HashSet<string> excludeTags;
 
 
 	private void OnEnable() { }
@@ -921,11 +922,11 @@ public class ServerBrowser : MonoBehaviour // TypeDefIndex: 12927
 
 }
 
-public class ServerBrowserCategory : MonoBehaviour // TypeDefIndex: 12928
+public class ServerBrowserCategory : MonoBehaviour // TypeDefIndex: 12942
 {
-	public LocalizeText serverCountText; 
-	public ServerBrowserList browserList; 
-	public bool isDirty; 
+	public LocalizeText serverCountText;
+	public ServerBrowserList browserList;
+	public bool isDirty;
 
 
 	public void OnEnable() { }
@@ -940,10 +941,10 @@ public class ServerBrowserCategory : MonoBehaviour // TypeDefIndex: 12928
 
 }
 
-private sealed class ServerBrowserCategory.<>c // TypeDefIndex: 12929
+private sealed class ServerBrowserCategory.<>c // TypeDefIndex: 12943
 {
-	public static readonly ServerBrowserCategory.<>c <>9; 
-	public static Func<ServerInfo, int> <>9__6_0; 
+	public static readonly ServerBrowserCategory.<>c <>9;
+	public static Func<ServerInfo, int> <>9__6_0;
 
 
 	private static void .cctor() { }
@@ -954,20 +955,20 @@ private sealed class ServerBrowserCategory.<>c // TypeDefIndex: 12929
 
 }
 
-public class ServerBrowserInfo : SingletonComponent<ServerBrowserInfo> // TypeDefIndex: 12930
+public class ServerBrowserInfo : SingletonComponent<ServerBrowserInfo> // TypeDefIndex: 12944
 {
-	public bool isMain; 
-	public Text serverName; 
-	public Text serverMeta; 
-	public Text serverText; 
-	public Button viewWebpage; 
-	public Button refresh; 
-	public Nullable<ServerInfo> currentServer; 
-	public HttpImage headerImage; 
-	public HttpImage logoImage; 
-	private string weburl; 
-	private Texture loadedTexture; 
-	private string descriptionText; 
+	public bool isMain;
+	public Text serverName;
+	public Text serverMeta;
+	public Text serverText;
+	public Button viewWebpage;
+	public Button refresh;
+	public Nullable<ServerInfo> currentServer;
+	public HttpImage headerImage;
+	public HttpImage logoImage;
+	private string weburl;
+	private Texture loadedTexture;
+	private string descriptionText;
 
 
 	public override void SingletonSetup() { }
@@ -984,7 +985,7 @@ public class ServerBrowserInfo : SingletonComponent<ServerBrowserInfo> // TypeDe
 
 	public void Refresh() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	private void QueryRules() { }
 
 	private void EnableRefreshButton() { }
@@ -995,37 +996,37 @@ public class ServerBrowserInfo : SingletonComponent<ServerBrowserInfo> // TypeDe
 
 }
 
-private struct ServerBrowserInfo.<QueryRules>d__19 : IAsyncStateMachine // TypeDefIndex: 12931
+private struct ServerBrowserInfo.<QueryRules>d__19 : IAsyncStateMachine // TypeDefIndex: 12945
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public ServerBrowserInfo <>4__this; 
-	private bool <loadedImage>5__2; 
-	private bool <loadedLogo>5__3; 
-	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public ServerBrowserInfo <>4__this;
+	private bool <loadedImage>5__2;
+	private bool <loadedLogo>5__3;
+	private TaskAwaiter<Dictionary<string, string>> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public class ServerBrowserItem : MonoBehaviour // TypeDefIndex: 12932
+public class ServerBrowserItem : MonoBehaviour // TypeDefIndex: 12946
 {
-	public TextMeshProUGUI serverName; 
-	public RustFlexText mapName; 
-	public TextMeshProUGUI playerCount; 
-	public TextMeshProUGUI ping; 
-	public Toggle favourited; 
-	public ServerBrowserTagList serverTagList; 
-	private static RealTimeSince timeSinceGotFriendServers; 
-	private static Dictionary<string, string> friendsOnServers; 
-	private static RealTimeSince timeSinceGotFavouriteServers; 
-	private static HashSet<string> favorites; 
-	private ServerInfo serverInfo; 
-	internal bool preventFavouriteToggle; 
+	public TextMeshProUGUI serverName;
+	public RustFlexText mapName;
+	public TextMeshProUGUI playerCount;
+	public TextMeshProUGUI ping;
+	public Toggle favourited;
+	public ServerBrowserTagList serverTagList;
+	private static RealTimeSince timeSinceGotFriendServers;
+	private static Dictionary<string, string> friendsOnServers;
+	private static RealTimeSince timeSinceGotFavouriteServers;
+	private static HashSet<string> favorites;
+	private ServerInfo serverInfo;
+	internal bool preventFavouriteToggle;
 
 
 	private static string GetFriendOnServer(IPAddress addr, int port) { }
@@ -1042,17 +1043,17 @@ public class ServerBrowserItem : MonoBehaviour // TypeDefIndex: 12932
 
 }
 
-private sealed class ServerBrowserItem.<>c // TypeDefIndex: 12933
+private sealed class ServerBrowserItem.<>c // TypeDefIndex: 12947
 {
-	public static readonly ServerBrowserItem.<>c <>9; 
-	public static Func<IPlayerInfo, bool> <>9__8_0; 
-	public static Func<IPlayerInfo, bool> <>9__8_1; 
-	public static Func<IPlayerInfo, bool> <>9__8_2; 
-	public static Func<IPlayerInfo, string> <>9__8_3; 
-	public static Func<IGrouping<string, IPlayerInfo>, string> <>9__8_4; 
-	public static Func<IPlayerInfo, string> <>9__8_6; 
-	public static Func<IGrouping<string, IPlayerInfo>, string> <>9__8_5; 
-	public static Func<ServerInfo, string> <>9__11_0; 
+	public static readonly ServerBrowserItem.<>c <>9;
+	public static Func<IPlayerInfo, bool> <>9__8_0;
+	public static Func<IPlayerInfo, bool> <>9__8_1;
+	public static Func<IPlayerInfo, bool> <>9__8_2;
+	public static Func<IPlayerInfo, string> <>9__8_3;
+	public static Func<IGrouping<string, IPlayerInfo>, string> <>9__8_4;
+	public static Func<IPlayerInfo, string> <>9__8_6;
+	public static Func<IGrouping<string, IPlayerInfo>, string> <>9__8_5;
+	public static Func<ServerInfo, string> <>9__11_0;
 
 
 	private static void .cctor() { }
@@ -1077,37 +1078,37 @@ private sealed class ServerBrowserItem.<>c // TypeDefIndex: 12933
 
 }
 
-public class ServerBrowserList : BaseMonoBehaviour, VirtualScroll.IDataSource // TypeDefIndex: 12934
+public class ServerBrowserList : BaseMonoBehaviour, VirtualScroll.IDataSource // TypeDefIndex: 12948
 {
-	public ServerBrowserList.QueryType queryType; 
-	public static string VersionTag; 
-	public ServerBrowserList.ServerKeyvalues[] keyValues; 
-	private IServerQuery Request; 
-	internal int servers; 
-	internal int players; 
-	public bool shouldShowSecureServers; 
-	private HashSet<IPEndPoint> officialServers; 
-	public ServerBrowserCategory categoryButton; 
-	public bool startActive; 
-	public Transform listTransform; 
-	public int refreshOrder; 
-	public bool UseOfficialServers; 
-	public VirtualScroll VirtualScroll; 
-	public ServerBrowserList.Rules[] rules; 
-	public bool hideOfficialServers; 
-	public bool excludeEmptyServersUsingQuery; 
-	public bool alwaysIncludeEmptyServers; 
-	public bool clampPlayerCountsToTrustedValues; 
-	internal bool isDirty; 
-	private string searchFilter; 
-	private bool showFull; 
-	private bool showEmpty; 
-	private List<HashSet<string>> searchTags; 
-	private HashSet<string> excludeTags; 
-	private List<ServerInfo> serverList; 
-	private List<ServerInfo> serverListSortedFiltered; 
-	public string sortOrder; 
-	private RealTimeSince timeSinceRebuild; 
+	public ServerBrowserList.QueryType queryType;
+	public static string VersionTag;
+	public ServerBrowserList.ServerKeyvalues[] keyValues;
+	private IServerQuery Request;
+	internal int servers;
+	internal int players;
+	public bool shouldShowSecureServers;
+	private HashSet<IPEndPoint> officialServers;
+	public ServerBrowserCategory categoryButton;
+	public bool startActive;
+	public Transform listTransform;
+	public int refreshOrder;
+	public bool UseOfficialServers;
+	public VirtualScroll VirtualScroll;
+	public ServerBrowserList.Rules[] rules;
+	public bool hideOfficialServers;
+	public bool excludeEmptyServersUsingQuery;
+	public bool alwaysIncludeEmptyServers;
+	public bool clampPlayerCountsToTrustedValues;
+	internal bool isDirty;
+	private string searchFilter;
+	private bool showFull;
+	private bool showEmpty;
+	private List<HashSet<string>> searchTags;
+	private HashSet<string> excludeTags;
+	private List<ServerInfo> serverList;
+	private List<ServerInfo> serverListSortedFiltered;
+	public string sortOrder;
+	private RealTimeSince timeSinceRebuild;
 
 
 	public void Refresh() { }
@@ -1150,9 +1151,9 @@ public class ServerBrowserList : BaseMonoBehaviour, VirtualScroll.IDataSource //
 
 }
 
-public enum ServerBrowserList.QueryType // TypeDefIndex: 12935
+public enum ServerBrowserList.QueryType // TypeDefIndex: 12949
 {
-	public int value__; 
+	public int value__;
 	public const ServerBrowserList.QueryType RegularInternet = 0;
 	public const ServerBrowserList.QueryType Friends = 1;
 	public const ServerBrowserList.QueryType History = 2;
@@ -1162,29 +1163,29 @@ public enum ServerBrowserList.QueryType // TypeDefIndex: 12935
 
 }
 
-public struct ServerBrowserList.ServerKeyvalues // TypeDefIndex: 12936
+public struct ServerBrowserList.ServerKeyvalues // TypeDefIndex: 12950
 {
-	public string key; 
-	public string value; 
+	public string key;
+	public string value;
 
 }
 
-public struct ServerBrowserList.Rules // TypeDefIndex: 12937
+public struct ServerBrowserList.Rules // TypeDefIndex: 12951
 {
-	public string tag; 
-	public ServerBrowserList serverList; 
+	public string tag;
+	public ServerBrowserList serverList;
 
 }
 
-private class ServerBrowserList.HashSetEqualityComparer<T> : IEqualityComparer<HashSet<T>> // TypeDefIndex: 12938
+private class ServerBrowserList.HashSetEqualityComparer<T> : IEqualityComparer<HashSet<T>> // TypeDefIndex: 12952
 {
-	[CompilerGeneratedAttribute] 
-	private static readonly ServerBrowserList.HashSetEqualityComparer<T> <Instance>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private static readonly ServerBrowserList.HashSetEqualityComparer<T> <Instance>k__BackingField;
 
 	public static ServerBrowserList.HashSetEqualityComparer<T> Instance { get; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static ServerBrowserList.HashSetEqualityComparer<T> get_Instance() { }
 	/* GenericInstMethod :
 	|
@@ -1218,24 +1219,24 @@ private class ServerBrowserList.HashSetEqualityComparer<T> : IEqualityComparer<H
 
 }
 
-private sealed class ServerBrowserList.<>c // TypeDefIndex: 12939
+private sealed class ServerBrowserList.<>c // TypeDefIndex: 12953
 {
-	public static readonly ServerBrowserList.<>c <>9; 
-	public static Func<Manifest.ServerDesc, string> <>9__10_0; 
-	public static Func<ServerInfo, bool> <>9__40_1; 
-	public static Func<ServerInfo, bool> <>9__40_2; 
-	public static Func<ServerInfo, int> <>9__40_3; 
-	public static Func<ServerInfo, uint> <>9__40_5; 
-	public static Func<ServerInfo, uint> <>9__40_7; 
-	public static Func<ServerInfo, bool> <>9__40_8; 
-	public static Func<ServerInfo, uint> <>9__40_9; 
-	public static Func<ServerInfo, bool> <>9__40_10; 
-	public static Func<ServerInfo, uint> <>9__40_11; 
-	public static Func<ServerInfo, string> <>9__40_12; 
-	public static Func<ServerInfo, string> <>9__40_13; 
-	public static Func<ServerInfo, int> <>9__40_14; 
-	public static Func<ServerInfo, int> <>9__40_15; 
-	public static Func<ServerInfo, int> <>9__40_16; 
+	public static readonly ServerBrowserList.<>c <>9;
+	public static Func<Manifest.ServerDesc, string> <>9__10_0;
+	public static Func<ServerInfo, bool> <>9__40_1;
+	public static Func<ServerInfo, bool> <>9__40_2;
+	public static Func<ServerInfo, int> <>9__40_3;
+	public static Func<ServerInfo, uint> <>9__40_5;
+	public static Func<ServerInfo, uint> <>9__40_7;
+	public static Func<ServerInfo, bool> <>9__40_8;
+	public static Func<ServerInfo, uint> <>9__40_9;
+	public static Func<ServerInfo, bool> <>9__40_10;
+	public static Func<ServerInfo, uint> <>9__40_11;
+	public static Func<ServerInfo, string> <>9__40_12;
+	public static Func<ServerInfo, string> <>9__40_13;
+	public static Func<ServerInfo, int> <>9__40_14;
+	public static Func<ServerInfo, int> <>9__40_15;
+	public static Func<ServerInfo, int> <>9__40_16;
 
 
 	private static void .cctor() { }
@@ -1274,9 +1275,9 @@ private sealed class ServerBrowserList.<>c // TypeDefIndex: 12939
 
 }
 
-private sealed class ServerBrowserList.<>c__DisplayClass11_0 // TypeDefIndex: 12940
+private sealed class ServerBrowserList.<>c__DisplayClass11_0 // TypeDefIndex: 12954
 {
-	public ServerBrowserList.Rules rule; 
+	public ServerBrowserList.Rules rule;
 
 
 	public void .ctor() { }
@@ -1285,10 +1286,10 @@ private sealed class ServerBrowserList.<>c__DisplayClass11_0 // TypeDefIndex: 12
 
 }
 
-private sealed class ServerBrowserList.<>c__DisplayClass40_0 // TypeDefIndex: 12941
+private sealed class ServerBrowserList.<>c__DisplayClass40_0 // TypeDefIndex: 12955
 {
-	public ServerBrowserList <>4__this; 
-	public int now; 
+	public ServerBrowserList <>4__this;
+	public int now;
 
 
 	public void .ctor() { }
@@ -1301,10 +1302,10 @@ private sealed class ServerBrowserList.<>c__DisplayClass40_0 // TypeDefIndex: 12
 
 }
 
-public class ServerBrowserTag : MonoBehaviour // TypeDefIndex: 12942
+public class ServerBrowserTag : MonoBehaviour // TypeDefIndex: 12956
 {
-	public string serverTag; 
-	public RustButton button; 
+	public string serverTag;
+	public RustButton button;
 
 	public bool IsActive { get; }
 
@@ -1315,11 +1316,11 @@ public class ServerBrowserTag : MonoBehaviour // TypeDefIndex: 12942
 
 }
 
-public class ServerBrowserTagFilters : MonoBehaviour // TypeDefIndex: 12943
+public class ServerBrowserTagFilters : MonoBehaviour // TypeDefIndex: 12957
 {
-	public UnityEvent TagFiltersChanged; 
-	private ServerBrowserTagGroup[] _groups; 
-	private List<bool> _previousState; 
+	public UnityEvent TagFiltersChanged;
+	private ServerBrowserTagGroup[] _groups;
+	private List<bool> _previousState;
 
 
 	public void Start() { }
@@ -1330,16 +1331,16 @@ public class ServerBrowserTagFilters : MonoBehaviour // TypeDefIndex: 12943
 
 	public void .ctor() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <Start>
 
 }
 
-public class ServerBrowserTagGroup : MonoBehaviour // TypeDefIndex: 12944
+public class ServerBrowserTagGroup : MonoBehaviour // TypeDefIndex: 12958
 {
-	[TooltipAttribute] 
-	public bool isExclusive; 
-	public ServerBrowserTag[] tags; 
+	[TooltipAttribute]
+	public bool isExclusive;
+	public ServerBrowserTag[] tags;
 
 
 	private void Initialize() { }
@@ -1354,10 +1355,10 @@ public class ServerBrowserTagGroup : MonoBehaviour // TypeDefIndex: 12944
 
 }
 
-public class ServerBrowserTagList : MonoBehaviour // TypeDefIndex: 12945
+public class ServerBrowserTagList : MonoBehaviour // TypeDefIndex: 12959
 {
-	public int maxTagsToShow; 
-	private ServerBrowserTagGroup[] _groups; 
+	public int maxTagsToShow;
+	private ServerBrowserTagGroup[] _groups;
 
 
 	private void Initialize() { }
@@ -1370,16 +1371,16 @@ public class ServerBrowserTagList : MonoBehaviour // TypeDefIndex: 12945
 
 }
 
-public class ServerHistory : MonoBehaviour // TypeDefIndex: 12946
+public class ServerHistory : MonoBehaviour // TypeDefIndex: 12960
 {
-	public ServerHistoryItem prefab; 
-	public GameObject panelList; 
-	internal IServerQuery Request; 
+	public ServerHistoryItem prefab;
+	public GameObject panelList;
+	internal IServerQuery Request;
 
 
 	private void Start() { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public Task Refresh() { }
 
 	private void OnServer(ServerInfo server) { }
@@ -1388,25 +1389,25 @@ public class ServerHistory : MonoBehaviour // TypeDefIndex: 12946
 
 }
 
-private struct ServerHistory.<Refresh>d__4 : IAsyncStateMachine // TypeDefIndex: 12947
+private struct ServerHistory.<Refresh>d__4 : IAsyncStateMachine // TypeDefIndex: 12961
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder <>t__builder; 
-	public ServerHistory <>4__this; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder <>t__builder;
+	public ServerHistory <>4__this;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private sealed class ServerHistory.<>c // TypeDefIndex: 12948
+private sealed class ServerHistory.<>c // TypeDefIndex: 12962
 {
-	public static readonly ServerHistory.<>c <>9; 
-	public static Func<Transform, object> <>9__5_0; 
+	public static readonly ServerHistory.<>c <>9;
+	public static Func<Transform, object> <>9__5_0;
 
 
 	private static void .cctor() { }
@@ -1417,13 +1418,13 @@ private sealed class ServerHistory.<>c // TypeDefIndex: 12948
 
 }
 
-public class ServerHistoryItem : MonoBehaviour // TypeDefIndex: 12949
+public class ServerHistoryItem : MonoBehaviour // TypeDefIndex: 12963
 {
-	private ServerInfo serverInfo; 
-	public Text serverName; 
-	public Text players; 
-	public Text lastJoinDate; 
-	public uint order; 
+	private ServerInfo serverInfo;
+	public Text serverName;
+	public Text players;
+	public Text lastJoinDate;
+	public uint order;
 
 
 	internal void Setup(ServerInfo s) { }
@@ -1434,269 +1435,269 @@ public class ServerHistoryItem : MonoBehaviour // TypeDefIndex: 12949
 
 }
 
-public static class ServerInfoHelpers // TypeDefIndex: 12950
+public static class ServerInfoHelpers // TypeDefIndex: 12964
 {
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task<Nullable<ServerInfo>> Load(string address, int port) { }
 
-	[AsyncStateMachineAttribute] 
+	[AsyncStateMachineAttribute]
 	public static Task<Dictionary<string, string>> LoadRules(ServerInfo serverInfo) { }
 
 }
 
-private struct ServerInfoHelpers.<Load>d__0 : IAsyncStateMachine // TypeDefIndex: 12951
+private struct ServerInfoHelpers.<Load>d__0 : IAsyncStateMachine // TypeDefIndex: 12965
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Nullable<ServerInfo>> <>t__builder; 
-	public string address; 
-	public int port; 
-	private List<string> <endpointSet>5__2; 
-	private int <i>5__3; 
-	private IServerQuery <query>5__4; 
-	private TaskAwaiter <>u__1; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Nullable<ServerInfo>> <>t__builder;
+	public string address;
+	public int port;
+	private List<string> <endpointSet>5__2;
+	private int <i>5__3;
+	private IServerQuery <query>5__4;
+	private TaskAwaiter <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-private struct ServerInfoHelpers.<LoadRules>d__1 : IAsyncStateMachine // TypeDefIndex: 12952
+private struct ServerInfoHelpers.<LoadRules>d__1 : IAsyncStateMachine // TypeDefIndex: 12966
 {
-	public int <>1__state; 
-	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder; 
-	public ServerInfo serverInfo; 
-	private Dictionary<string, string> <rules>5__2; 
-	private int <i>5__3; 
-	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
-	private TaskAwaiter <>u__2; 
+	public int <>1__state;
+	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder;
+	public ServerInfo serverInfo;
+	private Dictionary<string, string> <rules>5__2;
+	private int <i>5__3;
+	private TaskAwaiter<Dictionary<string, string>> <>u__1;
+	private TaskAwaiter <>u__2;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
-public static class Server // TypeDefIndex: 13439
+public static class Server // TypeDefIndex: 13455
 {
 	public const byte Default = 0;
 	public const byte Positions = 14;
 
 }
 
-public class Server : ConsoleSystem // TypeDefIndex: 13748
+public class Server : ConsoleSystem // TypeDefIndex: 13764
 {
-	[ServerVar] 
-	public static string ip; 
-	[ServerVar] 
-	public static int port; 
-	[ServerVar] 
-	public static int queryport; 
-	[ServerVar] 
-	public static int maxplayers; 
-	[ServerVar] 
-	public static string hostname; 
-	[ServerVar] 
-	public static string identity; 
-	[ServerVar] 
-	public static string level; 
-	[ServerVar] 
-	public static string levelurl; 
-	[ServerVar] 
-	public static bool leveltransfer; 
-	[ServerVar] 
-	public static int seed; 
-	[ServerVar] 
-	public static int salt; 
-	[ServerVar] 
-	public static int worldsize; 
-	[ServerVar] 
-	public static int saveinterval; 
-	[ServerVar] 
-	public static bool secure; 
-	[ServerVar] 
-	public static int encryption; 
-	[ServerVar] 
-	public static string anticheatid; 
-	[ServerVar] 
-	public static string anticheatkey; 
-	[ServerVar] 
-	public static int tickrate; 
-	[ServerVar] 
-	public static int entityrate; 
-	[ServerVar] 
-	public static float schematime; 
-	[ServerVar] 
-	public static float cycletime; 
-	[ServerVar] 
-	public static bool official; 
-	[ServerVar] 
-	public static bool stats; 
-	[ServerVar] 
-	public static bool stability; 
-	[ServerVar] 
-	public static bool radiation; 
-	[ServerVar] 
-	public static float itemdespawn; 
-	[ServerVar] 
-	public static float itemdespawn_quick; 
-	[ServerVar] 
-	public static float corpsedespawn; 
-	[ServerVar] 
-	public static float debrisdespawn; 
-	[ServerVar] 
-	public static bool pve; 
-	[ServerVar] 
-	public static bool cinematic; 
-	[ServerVar] 
-	public static string description; 
-	[ServerVar] 
-	public static string url; 
-	[ServerVar] 
-	public static string branch; 
-	[ServerVar] 
-	public static int queriesPerSecond; 
-	[ServerVar] 
-	public static int ipQueriesPerMin; 
-	[ServerVar] 
-	public static bool statBackup; 
-	[ServerVar] 
-	public static string headerimage; 
-	[ServerVar] 
-	public static string logoimage; 
-	[ServerVar] 
-	public static int saveBackupCount; 
-	[ReplicatedVar] 
-	public static string motd; 
-	[ServerVar] 
-	public static float meleedamage; 
-	[ServerVar] 
-	public static float arrowdamage; 
-	[ServerVar] 
-	public static float bulletdamage; 
-	[ServerVar] 
-	public static float bleedingdamage; 
-	[ReplicatedVar] 
-	public static float funWaterDamageThreshold; 
-	[ReplicatedVar] 
-	public static float funWaterWetnessGain; 
-	[ServerVar] 
-	public static float meleearmor; 
-	[ServerVar] 
-	public static float arrowarmor; 
-	[ServerVar] 
-	public static float bulletarmor; 
-	[ServerVar] 
-	public static float bleedingarmor; 
-	[ServerVar] 
-	public static int updatebatch; 
-	[ServerVar] 
-	public static int updatebatchspawn; 
-	[ServerVar] 
-	public static int entitybatchsize; 
-	[ServerVar] 
-	public static float entitybatchtime; 
-	[ServerVar] 
-	public static float composterUpdateInterval; 
-	[ReplicatedVar] 
-	public static float planttick; 
-	[ServerVar] 
-	public static float planttickscale; 
-	[ServerVar] 
-	public static bool useMinimumPlantCondition; 
-	[ServerVar] 
-	public static float nonPlanterDeathChancePerTick; 
-	[ServerVar] 
-	public static float ceilingLightGrowableRange; 
-	[ServerVar] 
-	public static float artificialTemperatureGrowableRange; 
-	[ServerVar] 
-	public static float ceilingLightHeightOffset; 
-	[ServerVar] 
-	public static float sprinklerRadius; 
-	[ServerVar] 
-	public static float sprinklerEyeHeightOffset; 
-	[ServerVar] 
-	public static float optimalPlanterQualitySaturation; 
-	[ServerVar] 
-	public static float metabolismtick; 
-	[ServerVar] 
-	public static float modifierTickRate; 
-	[ServerVar] 
-	public static float rewounddelay; 
-	[ServerVar] 
-	public static bool woundingenabled; 
-	[ServerVar] 
-	public static bool crawlingenabled; 
-	[ServerVar] 
-	public static float woundedrecoverchance; 
-	[ServerVar] 
-	public static float incapacitatedrecoverchance; 
-	[ServerVar] 
-	public static float woundedmaxfoodandwaterbonus; 
-	[ServerVar] 
-	public static int crawlingminimumhealth; 
-	[ServerVar] 
-	public static int crawlingmaximumhealth; 
-	[ServerVar] 
-	public static bool playerserverfall; 
-	[ServerVar] 
-	public static bool plantlightdetection; 
-	[ServerVar] 
-	public static float respawnresetrange; 
-	[ServerVar] 
-	public static int maxunack; 
-	[ServerVar] 
-	public static bool netcache; 
-	[ServerVar] 
-	public static bool corpses; 
-	[ServerVar] 
-	public static bool events; 
-	[ServerVar] 
-	public static bool dropitems; 
-	[ServerVar] 
-	public static int netcachesize; 
-	[ServerVar] 
-	public static int savecachesize; 
-	[ServerVar] 
-	public static int combatlogsize; 
-	[ServerVar] 
-	public static int combatlogdelay; 
-	[ServerVar] 
-	public static int authtimeout; 
-	[ServerVar] 
-	public static int playertimeout; 
-	[ServerVar] 
-	public static int idlekick; 
-	[ServerVar] 
-	public static int idlekickmode; 
-	[ServerVar] 
-	public static int idlekickadmins; 
-	[ServerVar] 
-	public static string gamemode; 
-	[ServerVar] 
-	public static string tags; 
-	[ServerVar] 
-	public static bool censorplayerlist; 
-	[ServerVar] 
-	public static string bansServerEndpoint; 
-	[ServerVar] 
-	public static int bansServerFailureMode; 
-	[ServerVar] 
-	public static int bansServerTimeout; 
-	[ServerVar] 
-	public static string reportsServerEndpoint; 
-	[ServerVar] 
-	public static string reportsServerEndpointKey; 
-	[ServerVar] 
-	public static bool printReportsToConsole; 
+	[ServerVar]
+	public static string ip;
+	[ServerVar]
+	public static int port;
+	[ServerVar]
+	public static int queryport;
+	[ServerVar]
+	public static int maxplayers;
+	[ServerVar]
+	public static string hostname;
+	[ServerVar]
+	public static string identity;
+	[ServerVar]
+	public static string level;
+	[ServerVar]
+	public static string levelurl;
+	[ServerVar]
+	public static bool leveltransfer;
+	[ServerVar]
+	public static int seed;
+	[ServerVar]
+	public static int salt;
+	[ServerVar]
+	public static int worldsize;
+	[ServerVar]
+	public static int saveinterval;
+	[ServerVar]
+	public static bool secure;
+	[ServerVar]
+	public static int encryption;
+	[ServerVar]
+	public static string anticheatid;
+	[ServerVar]
+	public static string anticheatkey;
+	[ServerVar]
+	public static int tickrate;
+	[ServerVar]
+	public static int entityrate;
+	[ServerVar]
+	public static float schematime;
+	[ServerVar]
+	public static float cycletime;
+	[ServerVar]
+	public static bool official;
+	[ServerVar]
+	public static bool stats;
+	[ServerVar]
+	public static bool stability;
+	[ServerVar]
+	public static bool radiation;
+	[ServerVar]
+	public static float itemdespawn;
+	[ServerVar]
+	public static float itemdespawn_quick;
+	[ServerVar]
+	public static float corpsedespawn;
+	[ServerVar]
+	public static float debrisdespawn;
+	[ServerVar]
+	public static bool pve;
+	[ServerVar]
+	public static bool cinematic;
+	[ServerVar]
+	public static string description;
+	[ServerVar]
+	public static string url;
+	[ServerVar]
+	public static string branch;
+	[ServerVar]
+	public static int queriesPerSecond;
+	[ServerVar]
+	public static int ipQueriesPerMin;
+	[ServerVar]
+	public static bool statBackup;
+	[ServerVar]
+	public static string headerimage;
+	[ServerVar]
+	public static string logoimage;
+	[ServerVar]
+	public static int saveBackupCount;
+	[ReplicatedVar]
+	public static string motd;
+	[ServerVar]
+	public static float meleedamage;
+	[ServerVar]
+	public static float arrowdamage;
+	[ServerVar]
+	public static float bulletdamage;
+	[ServerVar]
+	public static float bleedingdamage;
+	[ReplicatedVar]
+	public static float funWaterDamageThreshold;
+	[ReplicatedVar]
+	public static float funWaterWetnessGain;
+	[ServerVar]
+	public static float meleearmor;
+	[ServerVar]
+	public static float arrowarmor;
+	[ServerVar]
+	public static float bulletarmor;
+	[ServerVar]
+	public static float bleedingarmor;
+	[ServerVar]
+	public static int updatebatch;
+	[ServerVar]
+	public static int updatebatchspawn;
+	[ServerVar]
+	public static int entitybatchsize;
+	[ServerVar]
+	public static float entitybatchtime;
+	[ServerVar]
+	public static float composterUpdateInterval;
+	[ReplicatedVar]
+	public static float planttick;
+	[ServerVar]
+	public static float planttickscale;
+	[ServerVar]
+	public static bool useMinimumPlantCondition;
+	[ServerVar]
+	public static float nonPlanterDeathChancePerTick;
+	[ServerVar]
+	public static float ceilingLightGrowableRange;
+	[ServerVar]
+	public static float artificialTemperatureGrowableRange;
+	[ServerVar]
+	public static float ceilingLightHeightOffset;
+	[ServerVar]
+	public static float sprinklerRadius;
+	[ServerVar]
+	public static float sprinklerEyeHeightOffset;
+	[ServerVar]
+	public static float optimalPlanterQualitySaturation;
+	[ServerVar]
+	public static float metabolismtick;
+	[ServerVar]
+	public static float modifierTickRate;
+	[ServerVar]
+	public static float rewounddelay;
+	[ServerVar]
+	public static bool woundingenabled;
+	[ServerVar]
+	public static bool crawlingenabled;
+	[ServerVar]
+	public static float woundedrecoverchance;
+	[ServerVar]
+	public static float incapacitatedrecoverchance;
+	[ServerVar]
+	public static float woundedmaxfoodandwaterbonus;
+	[ServerVar]
+	public static int crawlingminimumhealth;
+	[ServerVar]
+	public static int crawlingmaximumhealth;
+	[ServerVar]
+	public static bool playerserverfall;
+	[ServerVar]
+	public static bool plantlightdetection;
+	[ServerVar]
+	public static float respawnresetrange;
+	[ServerVar]
+	public static int maxunack;
+	[ServerVar]
+	public static bool netcache;
+	[ServerVar]
+	public static bool corpses;
+	[ServerVar]
+	public static bool events;
+	[ServerVar]
+	public static bool dropitems;
+	[ServerVar]
+	public static int netcachesize;
+	[ServerVar]
+	public static int savecachesize;
+	[ServerVar]
+	public static int combatlogsize;
+	[ServerVar]
+	public static int combatlogdelay;
+	[ServerVar]
+	public static int authtimeout;
+	[ServerVar]
+	public static int playertimeout;
+	[ServerVar]
+	public static int idlekick;
+	[ServerVar]
+	public static int idlekickmode;
+	[ServerVar]
+	public static int idlekickadmins;
+	[ServerVar]
+	public static string gamemode;
+	[ServerVar]
+	public static string tags;
+	[ServerVar]
+	public static bool censorplayerlist;
+	[ServerVar]
+	public static string bansServerEndpoint;
+	[ServerVar]
+	public static int bansServerFailureMode;
+	[ServerVar]
+	public static int bansServerTimeout;
+	[ServerVar]
+	public static string reportsServerEndpoint;
+	[ServerVar]
+	public static string reportsServerEndpointKey;
+	[ServerVar]
+	public static bool printReportsToConsole;
 
-	[ServerVar] 
+	[ServerVar]
 	public static int anticheatlog { get; set; }
 
 

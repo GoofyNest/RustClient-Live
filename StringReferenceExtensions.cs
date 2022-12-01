@@ -1,13 +1,13 @@
-internal static class StringReferenceExtensions // TypeDefIndex: 5944
+internal static class StringReferenceExtensions // TypeDefIndex: 5946
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static int IndexOf(StringReference s, char c, int startIndex, int length) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool StartsWith(StringReference s, string text) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool EndsWith(StringReference s, string text) { }
 
 }

@@ -1,7 +1,7 @@
 public sealed class NamedPermissionSet : PermissionSet // TypeDefIndex: 901
 {
-	private string name; 
-	private string description; 
+	private string name;
+	private string description;
 
 	public string Name { get; set; }
 
@@ -18,10 +18,10 @@ public sealed class NamedPermissionSet : PermissionSet // TypeDefIndex: 901
 
 	public override SecurityElement ToXml() { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override bool Equals(object obj) { }
 
-	[ComVisibleAttribute] 
+	[ComVisibleAttribute]
 	public override int GetHashCode() { }
 
 }

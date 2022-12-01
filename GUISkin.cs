@@ -1,57 +1,57 @@
 public sealed class GUISkin : ScriptableObject // TypeDefIndex: 4049
 {
-	[SerializeField] 
-	private Font m_Font; 
-	[SerializeField] 
-	private GUIStyle m_box; 
-	[SerializeField] 
-	private GUIStyle m_button; 
-	[SerializeField] 
-	private GUIStyle m_toggle; 
-	[SerializeField] 
-	private GUIStyle m_label; 
-	[SerializeField] 
-	private GUIStyle m_textField; 
-	[SerializeField] 
-	private GUIStyle m_textArea; 
-	[SerializeField] 
-	private GUIStyle m_window; 
-	[SerializeField] 
-	private GUIStyle m_horizontalSlider; 
-	[SerializeField] 
-	private GUIStyle m_horizontalSliderThumb; 
-	private GUIStyle m_horizontalSliderThumbExtent; 
-	[SerializeField] 
-	private GUIStyle m_verticalSlider; 
-	[SerializeField] 
-	private GUIStyle m_verticalSliderThumb; 
-	private GUIStyle m_verticalSliderThumbExtent; 
-	[SerializeField] 
-	private GUIStyle m_horizontalScrollbar; 
-	[SerializeField] 
-	private GUIStyle m_horizontalScrollbarThumb; 
-	[SerializeField] 
-	private GUIStyle m_horizontalScrollbarLeftButton; 
-	[SerializeField] 
-	private GUIStyle m_horizontalScrollbarRightButton; 
-	[SerializeField] 
-	private GUIStyle m_verticalScrollbar; 
-	[SerializeField] 
-	private GUIStyle m_verticalScrollbarThumb; 
-	[SerializeField] 
-	private GUIStyle m_verticalScrollbarUpButton; 
-	[SerializeField] 
-	private GUIStyle m_verticalScrollbarDownButton; 
-	[SerializeField] 
-	private GUIStyle m_ScrollView; 
-	[SerializeField] 
-	internal GUIStyle[] m_CustomStyles; 
-	[SerializeField] 
-	private GUISettings m_Settings; 
-	internal static GUIStyle ms_Error; 
-	private Dictionary<string, GUIStyle> m_Styles; 
-	internal static GUISkin.SkinChangedDelegate m_SkinChanged; 
-	internal static GUISkin current; 
+	[SerializeField]
+	private Font m_Font;
+	[SerializeField]
+	private GUIStyle m_box;
+	[SerializeField]
+	private GUIStyle m_button;
+	[SerializeField]
+	private GUIStyle m_toggle;
+	[SerializeField]
+	private GUIStyle m_label;
+	[SerializeField]
+	private GUIStyle m_textField;
+	[SerializeField]
+	private GUIStyle m_textArea;
+	[SerializeField]
+	private GUIStyle m_window;
+	[SerializeField]
+	private GUIStyle m_horizontalSlider;
+	[SerializeField]
+	private GUIStyle m_horizontalSliderThumb;
+	private GUIStyle m_horizontalSliderThumbExtent;
+	[SerializeField]
+	private GUIStyle m_verticalSlider;
+	[SerializeField]
+	private GUIStyle m_verticalSliderThumb;
+	private GUIStyle m_verticalSliderThumbExtent;
+	[SerializeField]
+	private GUIStyle m_horizontalScrollbar;
+	[SerializeField]
+	private GUIStyle m_horizontalScrollbarThumb;
+	[SerializeField]
+	private GUIStyle m_horizontalScrollbarLeftButton;
+	[SerializeField]
+	private GUIStyle m_horizontalScrollbarRightButton;
+	[SerializeField]
+	private GUIStyle m_verticalScrollbar;
+	[SerializeField]
+	private GUIStyle m_verticalScrollbarThumb;
+	[SerializeField]
+	private GUIStyle m_verticalScrollbarUpButton;
+	[SerializeField]
+	private GUIStyle m_verticalScrollbarDownButton;
+	[SerializeField]
+	private GUIStyle m_ScrollView;
+	[SerializeField]
+	internal GUIStyle[] m_CustomStyles;
+	[SerializeField]
+	private GUISettings m_Settings;
+	internal static GUIStyle ms_Error;
+	private Dictionary<string, GUIStyle> m_Styles;
+	internal static GUISkin.SkinChangedDelegate m_SkinChanged;
+	internal static GUISkin current;
 
 	public Font font { get; set; }
 	public GUIStyle box { get; set; }

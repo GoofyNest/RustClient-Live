@@ -1,22 +1,22 @@
 internal sealed class WriteObjectInfo // TypeDefIndex: 1107
 {
-	internal int objectInfoId; 
-	internal object obj; 
-	internal Type objectType; 
-	internal bool isSi; 
-	internal bool isNamed; 
-	internal bool isTyped; 
-	internal bool isArray; 
-	internal SerializationInfo si; 
-	internal SerObjectInfoCache cache; 
-	internal object[] memberData; 
-	internal ISerializationSurrogate serializationSurrogate; 
-	internal StreamingContext context; 
-	internal SerObjectInfoInit serObjectInfoInit; 
-	internal long objectId; 
-	internal long assemId; 
-	private string binderTypeName; 
-	private string binderAssemblyString; 
+	internal int objectInfoId;
+	internal object obj;
+	internal Type objectType;
+	internal bool isSi;
+	internal bool isNamed;
+	internal bool isTyped;
+	internal bool isArray;
+	internal SerializationInfo si;
+	internal SerObjectInfoCache cache;
+	internal object[] memberData;
+	internal ISerializationSurrogate serializationSurrogate;
+	internal StreamingContext context;
+	internal SerObjectInfoInit serObjectInfoInit;
+	internal long objectId;
+	internal long assemId;
+	private string binderTypeName;
+	private string binderAssemblyString;
 
 
 	internal void .ctor() { }

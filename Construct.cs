@@ -1,8 +1,8 @@
-public class Construct : ConsoleSystem // TypeDefIndex: 13683
+public class Construct : ConsoleSystem // TypeDefIndex: 13699
 {
-	[ServerVar] 
-	[HelpAttribute] 
-	public static float frameminutes; 
+	[ServerVar]
+	[HelpAttribute]
+	public static float frameminutes;
 
 
 	public void .ctor() { }

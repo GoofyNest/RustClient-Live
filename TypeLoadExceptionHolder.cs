@@ -1,6 +1,6 @@
 internal class TypeLoadExceptionHolder // TypeDefIndex: 1044
 {
-	private string m_typeName; 
+	private string m_typeName;
 
 	internal string TypeName { get; }
 

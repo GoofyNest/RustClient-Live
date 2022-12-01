@@ -1,51 +1,51 @@
-public class BurstCloth : MonoBehaviour // TypeDefIndex: 7320
+public class BurstCloth : MonoBehaviour // TypeDefIndex: 7322
 {
 	internal const int TickRateMultiplier = 60;
 	internal const int MaximumTickRate = 240;
-	private static readonly List<CapsuleParams> CapsuleParamsShared; 
-	[HeaderAttribute] 
-	public Transform[] RootBones; 
-	public bool SiblingConstraints; 
-	public int StiffnessDepth; 
-	[RangeAttribute] 
-	public float LengthModifier; 
-	[HeaderAttribute] 
-	public BurstClothMaterial Material; 
-	public Vector3 Gravity; 
-	public Transform SimulationSpace; 
-	[HeaderAttribute] 
-	public bool EnableCollisions; 
-	public float CollisionRadius; 
-	[BurstClothCurveRectAttribute] 
-	public AnimationCurve CollisionRadiusCurve; 
-	[HeaderAttribute] 
-	public bool EnableSimulation; 
-	[RangeAttribute] 
-	public int TickRate; 
-	[RangeAttribute] 
-	public int MaxTicksPerFrame; 
-	[SerializeField] 
-	[HideInInspector] 
-	private List<BurstCloth.Chain> _chains; 
-	[SerializeField] 
-	[HideInInspector] 
-	private List<BoneData> _boneDataOriginal; 
-	private Vector3 _origin; 
-	private Quaternion _rotation; 
-	private Vector3 _up; 
-	private Vector3 _simulationSpaceDelta; 
-	private Transform _prevSimulationSpace; 
-	private Vector3 _prevSimulationOrigin; 
-	private float _accumulator; 
-	private int _boneCount; 
-	private int _maxBoneDepth; 
-	private Dictionary<Transform, int> _boneToIndex; 
-	private TransformAccessArray _boneTransforms; 
-	private NativeArray<BoneData> _boneData; 
-	private NativeArray<BoneState> _boneState; 
-	private TransformAccessArray _colliderTransforms; 
-	private NativeArray<ColliderData> _colliderData; 
-	private NativeArray<ColliderState> _colliderState; 
+	private static readonly List<CapsuleParams> CapsuleParamsShared;
+	[HeaderAttribute]
+	public Transform[] RootBones;
+	public bool SiblingConstraints;
+	public int StiffnessDepth;
+	[RangeAttribute]
+	public float LengthModifier;
+	[HeaderAttribute]
+	public BurstClothMaterial Material;
+	public Vector3 Gravity;
+	public Transform SimulationSpace;
+	[HeaderAttribute]
+	public bool EnableCollisions;
+	public float CollisionRadius;
+	[BurstClothCurveRectAttribute]
+	public AnimationCurve CollisionRadiusCurve;
+	[HeaderAttribute]
+	public bool EnableSimulation;
+	[RangeAttribute]
+	public int TickRate;
+	[RangeAttribute]
+	public int MaxTicksPerFrame;
+	[SerializeField]
+	[HideInInspector]
+	private List<BurstCloth.Chain> _chains;
+	[SerializeField]
+	[HideInInspector]
+	private List<BoneData> _boneDataOriginal;
+	private Vector3 _origin;
+	private Quaternion _rotation;
+	private Vector3 _up;
+	private Vector3 _simulationSpaceDelta;
+	private Transform _prevSimulationSpace;
+	private Vector3 _prevSimulationOrigin;
+	private float _accumulator;
+	private int _boneCount;
+	private int _maxBoneDepth;
+	private Dictionary<Transform, int> _boneToIndex;
+	private TransformAccessArray _boneTransforms;
+	private NativeArray<BoneData> _boneData;
+	private NativeArray<BoneState> _boneState;
+	private TransformAccessArray _colliderTransforms;
+	private NativeArray<ColliderData> _colliderData;
+	private NativeArray<ColliderState> _colliderState;
 
 
 	protected void Initialize() { }
@@ -86,17 +86,17 @@ public class BurstCloth : MonoBehaviour // TypeDefIndex: 7320
 
 }
 
-private struct BurstCloth.Chain // TypeDefIndex: 7321
+private struct BurstCloth.Chain // TypeDefIndex: 7323
 {
-	public List<Transform> Transforms; 
+	public List<Transform> Transforms;
 
 }
 
-private sealed class BurstCloth.<>c // TypeDefIndex: 7322
+private sealed class BurstCloth.<>c // TypeDefIndex: 7324
 {
-	public static readonly BurstCloth.<>c <>9; 
-	public static Func<BurstCloth.Chain, int> <>9__42_0; 
-	public static Func<BurstCloth.Chain, int> <>9__42_1; 
+	public static readonly BurstCloth.<>c <>9;
+	public static Func<BurstCloth.Chain, int> <>9__42_0;
+	public static Func<BurstCloth.Chain, int> <>9__42_1;
 
 
 	private static void .cctor() { }

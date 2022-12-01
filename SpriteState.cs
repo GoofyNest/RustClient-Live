@@ -1,14 +1,14 @@
 public struct SpriteState : IEquatable<SpriteState> // TypeDefIndex: 5017
 {
-	[SerializeField] 
-	private Sprite m_HighlightedSprite; 
-	[SerializeField] 
-	private Sprite m_PressedSprite; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Sprite m_SelectedSprite; 
-	[SerializeField] 
-	private Sprite m_DisabledSprite; 
+	[SerializeField]
+	private Sprite m_HighlightedSprite;
+	[SerializeField]
+	private Sprite m_PressedSprite;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Sprite m_SelectedSprite;
+	[SerializeField]
+	private Sprite m_DisabledSprite;
 
 	public Sprite highlightedSprite { get; set; }
 	public Sprite pressedSprite { get; set; }

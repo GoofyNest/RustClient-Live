@@ -1,6 +1,6 @@
-public class SeedRandom // TypeDefIndex: 6602
+public class SeedRandom // TypeDefIndex: 6604
 {
-	public uint Seed; 
+	public uint Seed;
 
 
 	public void .ctor(uint seed = 0) { }

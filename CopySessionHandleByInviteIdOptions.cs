@@ -1,15 +1,15 @@
-public struct CopySessionHandleByInviteIdOptions // TypeDefIndex: 8470
+public struct CopySessionHandleByInviteIdOptions // TypeDefIndex: 8472
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <InviteId>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <InviteId>k__BackingField;
 
 	public Utf8String InviteId { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_InviteId() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_InviteId(Utf8String value) { }
 
 }

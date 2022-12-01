@@ -1,7 +1,7 @@
-public struct ValueTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 7134
+public struct ValueTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 7136
 {
-	internal static readonly Action<object> s_invokeActionDelegate; 
-	private readonly ValueTask _value; 
+	internal static readonly Action<object> s_invokeActionDelegate;
+	private readonly ValueTask _value;
 
 	public bool IsCompleted { get; }
 
@@ -10,7 +10,7 @@ public struct ValueTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion //
 
 	public bool get_IsCompleted() { }
 
-	[StackTraceHiddenAttribute] 
+	[StackTraceHiddenAttribute]
 	public void GetResult() { }
 
 	public void OnCompleted(Action continuation) { }
@@ -21,9 +21,9 @@ public struct ValueTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion //
 
 }
 
-private sealed class ValueTaskAwaiter.<>c // TypeDefIndex: 7135
+private sealed class ValueTaskAwaiter.<>c // TypeDefIndex: 7137
 {
-	public static readonly ValueTaskAwaiter.<>c <>9; 
+	public static readonly ValueTaskAwaiter.<>c <>9;
 
 
 	private static void .cctor() { }

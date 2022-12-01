@@ -1,9 +1,9 @@
-internal struct LobbyMemberStatusReceivedCallbackInfoInternal : ICallbackInfoInternal, IGettable<LobbyMemberStatusReceivedCallbackInfo>, ISettable<LobbyMemberStatusReceivedCallbackInfo>, IDisposable // TypeDefIndex: 9162
+internal struct LobbyMemberStatusReceivedCallbackInfoInternal : ICallbackInfoInternal, IGettable<LobbyMemberStatusReceivedCallbackInfo>, ISettable<LobbyMemberStatusReceivedCallbackInfo>, IDisposable // TypeDefIndex: 9164
 {
-	private IntPtr m_ClientData; 
-	private IntPtr m_LobbyId; 
-	private IntPtr m_TargetUserId; 
-	private LobbyMemberStatus m_CurrentStatus; 
+	private IntPtr m_ClientData;
+	private IntPtr m_LobbyId;
+	private IntPtr m_TargetUserId;
+	private LobbyMemberStatus m_CurrentStatus;
 
 	public object ClientData { get; set; }
 	public IntPtr ClientDataAddress { get; }

@@ -1,6 +1,6 @@
-public enum LogLevel // TypeDefIndex: 6941
+public enum LogLevel // TypeDefIndex: 6943
 {
-	public int value__; 
+	public int value__;
 	public const LogLevel Debug = 0;
 	public const LogLevel Info = 1;
 	public const LogLevel Warn = 2;
@@ -8,9 +8,9 @@ public enum LogLevel // TypeDefIndex: 6941
 
 }
 
-public enum LogLevel // TypeDefIndex: 9053
+public enum LogLevel // TypeDefIndex: 9055
 {
-	public int value__; 
+	public int value__;
 	public const LogLevel Off = 0;
 	public const LogLevel Fatal = 100;
 	public const LogLevel Error = 200;

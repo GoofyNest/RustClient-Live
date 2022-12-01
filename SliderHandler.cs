@@ -1,15 +1,15 @@
 internal struct SliderHandler // TypeDefIndex: 4065
 {
-	private readonly Rect position; 
-	private readonly float currentValue; 
-	private readonly float size; 
-	private readonly float start; 
-	private readonly float end; 
-	private readonly GUIStyle slider; 
-	private readonly GUIStyle thumb; 
-	private readonly GUIStyle thumbExtent; 
-	private readonly bool horiz; 
-	private readonly int id; 
+	private readonly Rect position;
+	private readonly float currentValue;
+	private readonly float size;
+	private readonly float start;
+	private readonly float end;
+	private readonly GUIStyle slider;
+	private readonly GUIStyle thumb;
+	private readonly GUIStyle thumbExtent;
+	private readonly bool horiz;
+	private readonly int id;
 
 
 	public void .ctor(Rect position, float currentValue, float size, float start, float end, GUIStyle slider, GUIStyle thumb, bool horiz, int id, GUIStyle thumbExtent) { }

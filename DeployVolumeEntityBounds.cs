@@ -1,6 +1,6 @@
-public class DeployVolumeEntityBounds : DeployVolume // TypeDefIndex: 11583
+public class DeployVolumeEntityBounds : DeployVolume // TypeDefIndex: 11590
 {
-	private Bounds bounds; 
+	private Bounds bounds;
 
 
 	protected override bool Check(Vector3 position, Quaternion rotation, int mask = -1) { }

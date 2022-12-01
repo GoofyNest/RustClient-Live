@@ -1,8 +1,8 @@
-internal struct DeleteItemResult_t : ICallbackData // TypeDefIndex: 5452
+internal struct DeleteItemResult_t : ICallbackData // TypeDefIndex: 5454
 {
-	internal Result Result; 
-	internal PublishedFileId PublishedFileId; 
-	public static int _datasize; 
+	internal Result Result;
+	internal PublishedFileId PublishedFileId;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

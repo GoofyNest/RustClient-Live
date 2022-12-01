@@ -1,6 +1,6 @@
 internal class AtomicBoolean // TypeDefIndex: 748
 {
-	private int flag; 
+	private int flag;
 
 
 	public bool TryRelaxedSet() { }

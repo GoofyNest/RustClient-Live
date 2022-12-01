@@ -1,12 +1,12 @@
 public struct SqlByte : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4344
 {
-	private bool m_fNotNull; 
-	private byte m_value; 
-	private static readonly int s_iBitNotByteMax; 
-	public static readonly SqlByte Null; 
-	public static readonly SqlByte Zero; 
-	public static readonly SqlByte MinValue; 
-	public static readonly SqlByte MaxValue; 
+	private bool m_fNotNull;
+	private byte m_value;
+	private static readonly int s_iBitNotByteMax;
+	public static readonly SqlByte Null;
+	public static readonly SqlByte Zero;
+	public static readonly SqlByte MinValue;
+	public static readonly SqlByte MaxValue;
 
 	public bool IsNull { get; }
 	public byte Value { get; }

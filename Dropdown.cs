@@ -1,33 +1,33 @@
 public class Dropdown : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 4927
 {
-	[SerializeField] 
-	private RectTransform m_Template; 
-	[SerializeField] 
-	private Text m_CaptionText; 
-	[SerializeField] 
-	private Image m_CaptionImage; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private Text m_ItemText; 
-	[SerializeField] 
-	private Image m_ItemImage; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private int m_Value; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private Dropdown.OptionDataList m_Options; 
-	[SpaceAttribute] 
-	[SerializeField] 
-	private Dropdown.DropdownEvent m_OnValueChanged; 
-	[SerializeField] 
-	private float m_AlphaFadeSpeed; 
-	private GameObject m_Dropdown; 
-	private GameObject m_Blocker; 
-	private List<Dropdown.DropdownItem> m_Items; 
-	private TweenRunner<FloatTween> m_AlphaTweenRunner; 
-	private bool validTemplate; 
-	private static Dropdown.OptionData s_NoOptionData; 
+	[SerializeField]
+	private RectTransform m_Template;
+	[SerializeField]
+	private Text m_CaptionText;
+	[SerializeField]
+	private Image m_CaptionImage;
+	[SpaceAttribute]
+	[SerializeField]
+	private Text m_ItemText;
+	[SerializeField]
+	private Image m_ItemImage;
+	[SpaceAttribute]
+	[SerializeField]
+	private int m_Value;
+	[SpaceAttribute]
+	[SerializeField]
+	private Dropdown.OptionDataList m_Options;
+	[SpaceAttribute]
+	[SerializeField]
+	private Dropdown.DropdownEvent m_OnValueChanged;
+	[SerializeField]
+	private float m_AlphaFadeSpeed;
+	private GameObject m_Dropdown;
+	private GameObject m_Blocker;
+	private List<Dropdown.DropdownItem> m_Items;
+	private TweenRunner<FloatTween> m_AlphaTweenRunner;
+	private bool validTemplate;
+	private static Dropdown.OptionData s_NoOptionData;
 
 	public RectTransform template { get; set; }
 	public Text captionText { get; set; }
@@ -139,7 +139,7 @@ public class Dropdown : Selectable, IPointerClickHandler, IEventSystemHandler, I
 
 	public void Hide() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator DelayedDestroyDropdownList(float delay) { }
 
 	private void ImmediateDestroyDropdownList() { }
@@ -152,10 +152,10 @@ public class Dropdown : Selectable, IPointerClickHandler, IEventSystemHandler, I
 
 public class Dropdown.OptionData // TypeDefIndex: 4929
 {
-	[SerializeField] 
-	private string m_Text; 
-	[SerializeField] 
-	private Sprite m_Image; 
+	[SerializeField]
+	private string m_Text;
+	[SerializeField]
+	private Sprite m_Image;
 
 	public string text { get; set; }
 	public Sprite image { get; set; }
@@ -181,8 +181,8 @@ public class Dropdown.OptionData // TypeDefIndex: 4929
 
 public class Dropdown.OptionDataList // TypeDefIndex: 4930
 {
-	[SerializeField] 
-	private List<Dropdown.OptionData> m_Options; 
+	[SerializeField]
+	private List<Dropdown.OptionData> m_Options;
 
 	public List<Dropdown.OptionData> options { get; set; }
 
@@ -204,8 +204,8 @@ public class Dropdown.DropdownEvent : UnityEvent<int> // TypeDefIndex: 4931
 
 private sealed class Dropdown.<>c__DisplayClass62_0 // TypeDefIndex: 4932
 {
-	public Dropdown.DropdownItem item; 
-	public Dropdown <>4__this; 
+	public Dropdown.DropdownItem item;
+	public Dropdown <>4__this;
 
 
 	public void .ctor() { }
@@ -216,42 +216,42 @@ private sealed class Dropdown.<>c__DisplayClass62_0 // TypeDefIndex: 4932
 
 private sealed class Dropdown.<DelayedDestroyDropdownList>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4933
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public float delay; 
-	public Dropdown <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public float delay;
+	public Dropdown <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 7044
+public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 7046
 {
-	public RustIcon Icon; 
-	public RustText Text; 
-	public RustIcon OptionIcon; 
-	public Option[] Options; 
-	private int CurrentOption; 
-	public Dropdown.ChangedEvent OnChanged; 
+	public RustIcon Icon;
+	public RustText Text;
+	public RustIcon OptionIcon;
+	public Option[] Options;
+	private int CurrentOption;
+	public Dropdown.ChangedEvent OnChanged;
 
 	public Option Value { get; }
 
@@ -284,7 +284,7 @@ public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler //
 
 }
 
-public class Dropdown.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7045
+public class Dropdown.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7047
 {
 
 	public void .ctor() { }

@@ -1,7 +1,7 @@
 internal class StackBuilderSink : IMessageSink // TypeDefIndex: 1262
 {
-	private MarshalByRefObject _target; 
-	private RealProxy _rp; 
+	private MarshalByRefObject _target;
+	private RealProxy _rp;
 
 
 	public void .ctor(MarshalByRefObject obj, bool forceInternalExecute) { }
@@ -14,7 +14,7 @@ internal class StackBuilderSink : IMessageSink // TypeDefIndex: 1262
 
 	private void CheckParameters(IMessage msg) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void <AsyncProcessMessage>
 
 }

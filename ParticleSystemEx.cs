@@ -1,10 +1,10 @@
-public static class ParticleSystemEx // TypeDefIndex: 13139
+public static class ParticleSystemEx // TypeDefIndex: 13154
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetPlayingState(ParticleSystem ps, bool play) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetEmitterState(ParticleSystem ps, bool enable) { }
 
 }

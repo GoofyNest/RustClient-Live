@@ -1,6 +1,6 @@
 internal enum Nodes // TypeDefIndex: 4255
 {
-	public int value__; 
+	public int value__;
 	public const Nodes Noop = 0;
 	public const Nodes Unop = 1;
 	public const Nodes UnopSpec = 2;

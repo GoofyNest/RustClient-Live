@@ -1,6 +1,6 @@
-internal enum ParseResult // TypeDefIndex: 5949
+internal enum ParseResult // TypeDefIndex: 5951
 {
-	public int value__; 
+	public int value__;
 	public const ParseResult None = 0;
 	public const ParseResult Success = 1;
 	public const ParseResult Overflow = 2;

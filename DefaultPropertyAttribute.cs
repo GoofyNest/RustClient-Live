@@ -1,7 +1,7 @@
 public sealed class DefaultPropertyAttribute : Attribute // TypeDefIndex: 2686
 {
-	private readonly string name; 
-	public static readonly DefaultPropertyAttribute Default; 
+	private readonly string name;
+	public static readonly DefaultPropertyAttribute Default;
 
 	public string Name { get; }
 

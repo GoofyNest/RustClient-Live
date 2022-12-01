@@ -1,12 +1,12 @@
-public class RadiationOverlay : MonoBehaviour // TypeDefIndex: 10861
+public class RadiationOverlay : MonoBehaviour // TypeDefIndex: 10867
 {
-	public SoundDefinition[] geigerSounds; 
-	public PostProcessVolume postProcessVolume; 
-	private Sound sound; 
-	private float smoothRadiationCurrent; 
-	private float smoothRadiationVelocity; 
-	private float smoothRadiationExposureCurrent; 
-	private float smoothRadiationExposureVelocity; 
+	public SoundDefinition[] geigerSounds;
+	public PostProcessVolume postProcessVolume;
+	private Sound sound;
+	private float smoothRadiationCurrent;
+	private float smoothRadiationVelocity;
+	private float smoothRadiationExposureCurrent;
+	private float smoothRadiationExposureVelocity;
 
 
 	public void Awake() { }

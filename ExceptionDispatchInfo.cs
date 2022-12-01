@@ -2,8 +2,8 @@ public sealed class ExceptionDispatchInfo // TypeDefIndex: 1265
 {
 
 public sealed class ExceptionDispatchInfo
-	private Exception m_Exception; 
-	private object m_stackTrace; 
+	private Exception m_Exception;
+	private object m_stackTrace;
 
 	internal object BinaryStackTraceArray { get; }
 	public Exception SourceException { get; }

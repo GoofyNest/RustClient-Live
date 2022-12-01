@@ -1,10 +1,10 @@
 public class X509Store // TypeDefIndex: 1721
 {
-	private string _storePath; 
-	private X509CertificateCollection _certificates; 
-	private ArrayList _crls; 
-	private bool _crl; 
-	private bool _newFormat; 
+	private string _storePath;
+	private X509CertificateCollection _certificates;
+	private ArrayList _crls;
+	private bool _crl;
+	private bool _newFormat;
 
 	public X509CertificateCollection Certificates { get; }
 	public ArrayList Crls { get; }
@@ -32,11 +32,11 @@ public class X509Store // TypeDefIndex: 1721
 
 public sealed class X509Store : IDisposable // TypeDefIndex: 2837
 {
-	private string _name; 
-	private StoreLocation _location; 
-	private X509Certificate2Collection list; 
-	private OpenFlags _flags; 
-	private X509Store store; 
+	private string _name;
+	private StoreLocation _location;
+	private X509Certificate2Collection list;
+	private OpenFlags _flags;
+	private X509Store store;
 
 	public X509Certificate2Collection Certificates { get; }
 	private X509Stores Factory { get; }

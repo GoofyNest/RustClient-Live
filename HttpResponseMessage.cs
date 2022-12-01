@@ -1,14 +1,14 @@
-public class HttpResponseMessage : IDisposable // TypeDefIndex: 5762
+public class HttpResponseMessage : IDisposable // TypeDefIndex: 5764
 {
-	private HttpResponseHeaders headers; 
-	private string reasonPhrase; 
-	private HttpStatusCode statusCode; 
-	private Version version; 
-	private bool disposed; 
-	[CompilerGeneratedAttribute] 
-	private HttpContent <Content>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private HttpRequestMessage <RequestMessage>k__BackingField; 
+	private HttpResponseHeaders headers;
+	private string reasonPhrase;
+	private HttpStatusCode statusCode;
+	private Version version;
+	private bool disposed;
+	[CompilerGeneratedAttribute]
+	private HttpContent <Content>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private HttpRequestMessage <RequestMessage>k__BackingField;
 
 	public HttpContent Content { get; set; }
 	public HttpResponseHeaders Headers { get; }
@@ -21,10 +21,10 @@ public class HttpResponseMessage : IDisposable // TypeDefIndex: 5762
 
 	public void .ctor(HttpStatusCode statusCode) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public HttpContent get_Content() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Content(HttpContent value) { }
 
 	public HttpResponseHeaders get_Headers() { }
@@ -35,7 +35,7 @@ public class HttpResponseMessage : IDisposable // TypeDefIndex: 5762
 
 	public void set_ReasonPhrase(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_RequestMessage(HttpRequestMessage value) { }
 
 	public HttpStatusCode get_StatusCode() { }

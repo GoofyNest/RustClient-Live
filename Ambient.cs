@@ -1,6 +1,6 @@
 public enum AmbientMode // TypeDefIndex: 3817
 {
-	public int value__; 
+	public int value__;
 	public const AmbientMode Skybox = 0;
 	public const AmbientMode Trilight = 1;
 	public const AmbientMode Flat = 3;
@@ -8,94 +8,94 @@ public enum AmbientMode // TypeDefIndex: 3817
 
 }
 
-public class AmbienceDefinition : ScriptableObject // TypeDefIndex: 10696
+public class AmbienceDefinition : ScriptableObject // TypeDefIndex: 10700
 {
-	[HeaderAttribute] 
-	public List<SoundDefinition> sounds; 
-	[HorizontalAttribute] 
-	public AmbienceDefinition.ValueRange stingFrequency; 
-	[HeaderAttribute] 
-	[InspectorFlagsAttribute] 
-	public TerrainBiome.Enum biomes; 
-	[InspectorFlagsAttribute] 
-	public TerrainTopology.Enum topologies; 
-	public EnvironmentType environmentType; 
-	public bool useEnvironmentType; 
-	public AnimationCurve time; 
-	[HorizontalAttribute] 
-	public AmbienceDefinition.ValueRange rain; 
-	[HorizontalAttribute] 
-	public AmbienceDefinition.ValueRange wind; 
-	[HorizontalAttribute] 
-	public AmbienceDefinition.ValueRange snow; 
+	[HeaderAttribute]
+	public List<SoundDefinition> sounds;
+	[HorizontalAttribute]
+	public AmbienceDefinition.ValueRange stingFrequency;
+	[HeaderAttribute]
+	[InspectorFlagsAttribute]
+	public TerrainBiome.Enum biomes;
+	[InspectorFlagsAttribute]
+	public TerrainTopology.Enum topologies;
+	public EnvironmentType environmentType;
+	public bool useEnvironmentType;
+	public AnimationCurve time;
+	[HorizontalAttribute]
+	public AmbienceDefinition.ValueRange rain;
+	[HorizontalAttribute]
+	public AmbienceDefinition.ValueRange wind;
+	[HorizontalAttribute]
+	public AmbienceDefinition.ValueRange snow;
 
 
 	public void .ctor() { }
 
 }
 
-public class AmbienceDefinition.ValueRange // TypeDefIndex: 10697
+public class AmbienceDefinition.ValueRange // TypeDefIndex: 10701
 {
-	public float min; 
-	public float max; 
+	public float min;
+	public float max;
 
 
 	public void .ctor(float min, float max) { }
 
 }
 
-public class AmbienceDefinitionList : ScriptableObject // TypeDefIndex: 10698
+public class AmbienceDefinitionList : ScriptableObject // TypeDefIndex: 10702
 {
-	public List<AmbienceDefinition> defs; 
+	public List<AmbienceDefinition> defs;
 
 
 	public void .ctor() { }
 
 }
 
-public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<AmbienceEmitter> // TypeDefIndex: 10699
+public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<AmbienceEmitter> // TypeDefIndex: 10703
 {
-	public AmbienceDefinitionList baseAmbience; 
-	public AmbienceDefinitionList stings; 
-	public bool isStatic; 
-	public bool followCamera; 
-	public bool isBaseEmitter; 
-	public bool active; 
-	public float cameraDistanceSq; 
-	public BoundingSphere boundingSphere; 
-	public float crossfadeTime; 
-	[CompilerGeneratedAttribute] 
-	private TerrainTopology.Enum <currentTopology>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private TerrainBiome.Enum <currentBiome>k__BackingField; 
-	public Dictionary<AmbienceDefinition, float> nextStingTime; 
-	public float deactivateTime; 
-	public bool playUnderwater; 
-	public bool playAbovewater; 
-	private Sound baseSound; 
-	private SoundModulation.Modulator occlusionGain; 
-	private SoundModulation.Modulator pitchModulator; 
-	private float lastCrossfade; 
-	private List<int> biomeReadings; 
-	private List<int> topologyReadings; 
-	private int readingsToKeep; 
-	private Vector3 lastPosition; 
-	private Dictionary<int, int> readingOccurences; 
+	public AmbienceDefinitionList baseAmbience;
+	public AmbienceDefinitionList stings;
+	public bool isStatic;
+	public bool followCamera;
+	public bool isBaseEmitter;
+	public bool active;
+	public float cameraDistanceSq;
+	public BoundingSphere boundingSphere;
+	public float crossfadeTime;
+	[CompilerGeneratedAttribute]
+	private TerrainTopology.Enum <currentTopology>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private TerrainBiome.Enum <currentBiome>k__BackingField;
+	public Dictionary<AmbienceDefinition, float> nextStingTime;
+	public float deactivateTime;
+	public bool playUnderwater;
+	public bool playAbovewater;
+	private Sound baseSound;
+	private SoundModulation.Modulator occlusionGain;
+	private SoundModulation.Modulator pitchModulator;
+	private float lastCrossfade;
+	private List<int> biomeReadings;
+	private List<int> topologyReadings;
+	private int readingsToKeep;
+	private Vector3 lastPosition;
+	private Dictionary<int, int> readingOccurences;
 
 	public TerrainTopology.Enum currentTopology { get; set; }
 	public TerrainBiome.Enum currentBiome { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TerrainTopology.Enum get_currentTopology() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_currentTopology(TerrainTopology.Enum value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public TerrainBiome.Enum get_currentBiome() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_currentBiome(TerrainBiome.Enum value) { }
 
 	protected void Awake() { }
@@ -158,14 +158,14 @@ public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<Ambi
 
 }
 
-public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 10700
+public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 10704
 {
-	public float maxDistance; 
-	public float stingRadius; 
-	public float stingFrequency; 
-	public float stingFrequencyVariance; 
-	public SoundDefinition[] stingSounds; 
-	private SynchronizedClock stingClock; 
+	public float maxDistance;
+	public float stingRadius;
+	public float stingFrequency;
+	public float stingFrequencyVariance;
+	public SoundDefinition[] stingSounds;
+	private SynchronizedClock stingClock;
 
 
 	private void PlaySting(uint seed) { }
@@ -178,23 +178,23 @@ public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 10700
 
 }
 
-public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientComponent // TypeDefIndex: 10701
+public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientComponent // TypeDefIndex: 10705
 {
-	public List<AmbienceManager.EmitterTypeLimit> localEmitterLimits; 
-	public AmbienceManager.EmitterTypeLimit catchallEmitterLimit; 
-	public int maxActiveLocalEmitters; 
-	public int activeLocalEmitters; 
-	public List<AmbienceEmitter> cameraEmitters; 
-	public List<AmbienceEmitter> emittersInRange; 
-	public List<AmbienceEmitter> activeEmitters; 
-	public float localEmitterRange; 
-	public List<AmbienceZone> currentAmbienceZones; 
-	public bool isUnderwater; 
-	private Dictionary<AmbienceDefinitionList, AmbienceManager.EmitterTypeLimit> emitterLimitByAmbience; 
-	private float tickInterval; 
-	private float lastTick; 
-	private List<AmbienceManager.AmbienceGroup> ambienceGroups; 
-	private Dictionary<AmbienceDefinitionList, AmbienceManager.AmbienceGroup> ambienceGroupsByDef; 
+	public List<AmbienceManager.EmitterTypeLimit> localEmitterLimits;
+	public AmbienceManager.EmitterTypeLimit catchallEmitterLimit;
+	public int maxActiveLocalEmitters;
+	public int activeLocalEmitters;
+	public List<AmbienceEmitter> cameraEmitters;
+	public List<AmbienceEmitter> emittersInRange;
+	public List<AmbienceEmitter> activeEmitters;
+	public float localEmitterRange;
+	public List<AmbienceZone> currentAmbienceZones;
+	public bool isUnderwater;
+	private Dictionary<AmbienceDefinitionList, AmbienceManager.EmitterTypeLimit> emitterLimitByAmbience;
+	private float tickInterval;
+	private float lastTick;
+	private List<AmbienceManager.AmbienceGroup> ambienceGroups;
+	private Dictionary<AmbienceDefinitionList, AmbienceManager.AmbienceGroup> ambienceGroupsByDef;
 
 
 	private void Start() { }
@@ -253,25 +253,25 @@ public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientCompo
 
 }
 
-public class AmbienceManager.EmitterTypeLimit // TypeDefIndex: 10702
+public class AmbienceManager.EmitterTypeLimit // TypeDefIndex: 10706
 {
-	public List<AmbienceDefinitionList> ambience; 
-	public int limit; 
-	public int active; 
+	public List<AmbienceDefinitionList> ambience;
+	public int limit;
+	public int active;
 
 
 	public void .ctor() { }
 
 }
 
-public class AmbienceManager.AmbienceGroup // TypeDefIndex: 10703
+public class AmbienceManager.AmbienceGroup // TypeDefIndex: 10707
 {
-	public AmbienceDefinitionList ambienceDefinition; 
-	public HashSet<AmbienceEmitter> emitters; 
-	public CullingGroup cullingGroup; 
-	public BoundingSphere[] cullGroupSpheres; 
-	public List<AmbienceEmitter> emittersBySphereIdx; 
-	public bool cullingGroupDirty; 
+	public AmbienceDefinitionList ambienceDefinition;
+	public HashSet<AmbienceEmitter> emitters;
+	public CullingGroup cullingGroup;
+	public BoundingSphere[] cullGroupSpheres;
+	public List<AmbienceEmitter> emittersBySphereIdx;
+	public bool cullingGroupDirty;
 
 
 	public void OnCullingGroupChange(CullingGroupEvent evt) { }
@@ -280,11 +280,11 @@ public class AmbienceManager.AmbienceGroup // TypeDefIndex: 10703
 
 }
 
-public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefIndex: 10704
+public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefIndex: 10708
 {
-	public int baseEmitterCount; 
-	public int baseEmitterDistance; 
-	public GameObjectRef emitterPrefab; 
+	public int baseEmitterCount;
+	public int baseEmitterDistance;
+	public GameObjectRef emitterPrefab;
 
 
 	private void Start() { }
@@ -295,13 +295,13 @@ public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefI
 
 }
 
-public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 10705
+public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 10709
 {
-	public AmbienceDefinitionList baseAmbience; 
-	public AmbienceDefinitionList stings; 
-	public float priority; 
-	public bool overrideCrossfadeTime; 
-	public float crossfadeTime; 
+	public AmbienceDefinitionList baseAmbience;
+	public AmbienceDefinitionList stings;
+	public float priority;
+	public bool overrideCrossfadeTime;
+	public float crossfadeTime;
 
 
 	private void Awake() { }
@@ -318,24 +318,24 @@ public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 107
 
 }
 
-public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13075
+public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13090
 {
-	public bool isDynamic; 
-	public float enabledRadius; 
-	public bool toggleFade; 
-	public float toggleFadeDuration; 
-	private Light lightComponent; 
-	private LightOccludee lightOccludee; 
-	private LightEx lightEx; 
-	private VolumetricLightBeam volumetricBeam; 
-	private LODCell cell; 
-	private float targetIntensity; 
-	private float targetFadeDuration; 
-	private LODEnvironmentMode EnvironmentMode; 
-	private float fadeStartTime; 
-	private float fadeEndTime; 
-	private bool fadeToState; 
-	private bool queuedState; 
+	public bool isDynamic;
+	public float enabledRadius;
+	public bool toggleFade;
+	public float toggleFadeDuration;
+	private Light lightComponent;
+	private LightOccludee lightOccludee;
+	private LightEx lightEx;
+	private VolumetricLightBeam volumetricBeam;
+	private LODCell cell;
+	private float targetIntensity;
+	private float targetFadeDuration;
+	private LODEnvironmentMode EnvironmentMode;
+	private float fadeStartTime;
+	private float fadeEndTime;
+	private bool fadeToState;
+	private bool queuedState;
 
 
 	private float GetDistance() { }
@@ -364,17 +364,17 @@ public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // Typ
 
 }
 
-public enum AmbientOcclusionMode // TypeDefIndex: 13544
+public enum AmbientOcclusionMode // TypeDefIndex: 13560
 {
-	public int value__; 
+	public int value__;
 	public const AmbientOcclusionMode ScalableAmbientObscurance = 0;
 	public const AmbientOcclusionMode MultiScaleVolumetricObscurance = 1;
 
 }
 
-public enum AmbientOcclusionQuality // TypeDefIndex: 13545
+public enum AmbientOcclusionQuality // TypeDefIndex: 13561
 {
-	public int value__; 
+	public int value__;
 	public const AmbientOcclusionQuality Lowest = 0;
 	public const AmbientOcclusionQuality Low = 1;
 	public const AmbientOcclusionQuality Medium = 2;
@@ -383,48 +383,48 @@ public enum AmbientOcclusionQuality // TypeDefIndex: 13545
 
 }
 
-public sealed class AmbientOcclusionModeParameter : ParameterOverride<AmbientOcclusionMode> // TypeDefIndex: 13546
+public sealed class AmbientOcclusionModeParameter : ParameterOverride<AmbientOcclusionMode> // TypeDefIndex: 13562
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class AmbientOcclusionQualityParameter : ParameterOverride<AmbientOcclusionQuality> // TypeDefIndex: 13547
+public sealed class AmbientOcclusionQualityParameter : ParameterOverride<AmbientOcclusionQuality> // TypeDefIndex: 13563
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex: 13548
+public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex: 13564
 {
-	[TooltipAttribute] 
-	public AmbientOcclusionModeParameter mode; 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public FloatParameter intensity; 
-	[ColorUsageAttribute] 
-	[TooltipAttribute] 
-	public ColorParameter color; 
-	[TooltipAttribute] 
-	public BoolParameter ambientOnly; 
-	[RangeAttribute] 
-	public FloatParameter noiseFilterTolerance; 
-	[RangeAttribute] 
-	public FloatParameter blurTolerance; 
-	[RangeAttribute] 
-	public FloatParameter upsampleTolerance; 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public FloatParameter thicknessModifier; 
-	[RangeAttribute] 
-	[TooltipAttribute] 
-	public FloatParameter directLightingStrength; 
-	[TooltipAttribute] 
-	public FloatParameter radius; 
-	[TooltipAttribute] 
-	public AmbientOcclusionQualityParameter quality; 
+	[TooltipAttribute]
+	public AmbientOcclusionModeParameter mode;
+	[RangeAttribute]
+	[TooltipAttribute]
+	public FloatParameter intensity;
+	[ColorUsageAttribute]
+	[TooltipAttribute]
+	public ColorParameter color;
+	[TooltipAttribute]
+	public BoolParameter ambientOnly;
+	[RangeAttribute]
+	public FloatParameter noiseFilterTolerance;
+	[RangeAttribute]
+	public FloatParameter blurTolerance;
+	[RangeAttribute]
+	public FloatParameter upsampleTolerance;
+	[RangeAttribute]
+	[TooltipAttribute]
+	public FloatParameter thicknessModifier;
+	[RangeAttribute]
+	[TooltipAttribute]
+	public FloatParameter directLightingStrength;
+	[TooltipAttribute]
+	public FloatParameter radius;
+	[TooltipAttribute]
+	public AmbientOcclusionQualityParameter quality;
 
 
 	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
@@ -433,9 +433,9 @@ public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex
 
 }
 
-internal sealed class AmbientOcclusionRenderer : PostProcessEffectRenderer<AmbientOcclusion> // TypeDefIndex: 13550
+internal sealed class AmbientOcclusionRenderer : PostProcessEffectRenderer<AmbientOcclusion> // TypeDefIndex: 13566
 {
-	private IAmbientOcclusionMethod[] m_Methods; 
+	private IAmbientOcclusionMethod[] m_Methods;
 
 
 	public override void Init() { }

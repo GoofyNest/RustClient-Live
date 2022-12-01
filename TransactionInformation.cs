@@ -1,9 +1,9 @@
 public class TransactionInformation // TypeDefIndex: 3991
 {
-	private string local_id; 
-	private Guid dtcId; 
-	private DateTime creation_time; 
-	private TransactionStatus status; 
+	private string local_id;
+	private Guid dtcId;
+	private DateTime creation_time;
+	private TransactionStatus status;
 
 	public TransactionStatus Status { get; set; }
 

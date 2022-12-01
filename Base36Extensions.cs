@@ -1,13 +1,13 @@
 public static class Base36Extensions // TypeDefIndex: 4846
 {
 	private const string CharList = "0123456789abcdefghijklmnopqrstuvwxyz";
-	private static char[] CharArray; 
+	private static char[] CharArray;
 
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static string ToBase36<T>(T i) { }
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static long FromBase36(string input) { }
 
 	private static void .cctor() { }

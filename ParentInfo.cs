@@ -1,9 +1,9 @@
-public class ParentInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
+public class ParentInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint uid; 
-	public uint bone; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint uid;
+	public uint bone;
 
 
 	public static void ResetToPool(ParentInfo instance) { }

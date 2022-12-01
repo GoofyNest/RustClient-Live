@@ -1,7 +1,7 @@
-public static class ComponentExtensions // TypeDefIndex: 6230
+public static class ComponentExtensions // TypeDefIndex: 6232
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T Duplicate<T>(T obj) { }
 	/* GenericInstMethod :
 	|
@@ -9,7 +9,7 @@ public static class ComponentExtensions // TypeDefIndex: 6230
 	|-ComponentExtensions.Duplicate<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static T[] Duplicate<T>(T obj, int amount, bool includeOriginalInArray = False) { }
 	/* GenericInstMethod :
 	|
@@ -17,7 +17,7 @@ public static class ComponentExtensions // TypeDefIndex: 6230
 	|-ComponentExtensions.Duplicate<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static void SetActive<T>(T obj, bool active) { }
 	/* GenericInstMethod :
 	|
@@ -35,35 +35,35 @@ public static class ComponentExtensions // TypeDefIndex: 6230
 	|-ComponentExtensions.SetActive<Text>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Vector2 WorldToRectTransform<T>(T obj, Vector2 worldPos) { }
 	/* GenericInstMethod :
 	|
 	|-ComponentExtensions.WorldToRectTransform<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static Rect GetWorldRect<T>(T obj) { }
 	/* GenericInstMethod :
 	|
 	|-ComponentExtensions.GetWorldRect<object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool GetComponent<T, U>(T obj, out U value) { }
 	/* GenericInstMethod :
 	|
 	|-ComponentExtensions.GetComponent<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool GetComponentInParent<T, U>(T obj, out U value) { }
 	/* GenericInstMethod :
 	|
 	|-ComponentExtensions.GetComponentInParent<object, object>
 	*/
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool GetComponentInChildren<T, U>(T obj, out U value) { }
 	/* GenericInstMethod :
 	|

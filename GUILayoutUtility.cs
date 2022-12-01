@@ -1,10 +1,10 @@
 public class GUILayoutUtility // TypeDefIndex: 4046
 {
-	private static readonly Dictionary<int, GUILayoutUtility.LayoutCache> s_StoredLayouts; 
-	private static readonly Dictionary<int, GUILayoutUtility.LayoutCache> s_StoredWindows; 
-	internal static GUILayoutUtility.LayoutCache current; 
-	internal static readonly Rect kDummyRect; 
-	private static GUIStyle s_SpaceStyle; 
+	private static readonly Dictionary<int, GUILayoutUtility.LayoutCache> s_StoredLayouts;
+	private static readonly Dictionary<int, GUILayoutUtility.LayoutCache> s_StoredWindows;
+	internal static GUILayoutUtility.LayoutCache current;
+	internal static readonly Rect kDummyRect;
+	private static GUIStyle s_SpaceStyle;
 
 	internal static GUIStyle spaceStyle { get; }
 
@@ -13,12 +13,12 @@ public class GUILayoutUtility // TypeDefIndex: 4046
 
 	private static void Internal_MoveWindow(int windowID, Rect r) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static GUILayoutUtility.LayoutCache SelectIDList(int instanceID, bool isWindow) { }
 
 	internal static void Begin(int instanceID) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void BeginContainer(GUILayoutUtility.LayoutCache cache) { }
 
 	internal static void BeginWindow(int windowID, GUIStyle style, GUILayoutOption[] options) { }
@@ -27,7 +27,7 @@ public class GUILayoutUtility // TypeDefIndex: 4046
 
 	internal static void LayoutFromEditorWindow() { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal static void LayoutFromContainer(float w, float h) { }
 
 	internal static void LayoutFreeGroup(GUILayoutGroup toplevel) { }
@@ -62,13 +62,13 @@ public class GUILayoutUtility // TypeDefIndex: 4046
 
 internal sealed class GUILayoutUtility.LayoutCache // TypeDefIndex: 4047
 {
-	[VisibleToOtherModulesAttribute] 
-	internal GUILayoutGroup topLevel; 
-	internal GenericStack layoutGroups; 
-	internal GUILayoutGroup windows; 
+	[VisibleToOtherModulesAttribute]
+	internal GUILayoutGroup topLevel;
+	internal GenericStack layoutGroups;
+	internal GUILayoutGroup windows;
 
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal void .ctor() { }
 
 }

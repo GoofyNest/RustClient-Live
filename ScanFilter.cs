@@ -1,7 +1,7 @@
-internal class ScanFilter : PathFilter // TypeDefIndex: 6104
+internal class ScanFilter : PathFilter // TypeDefIndex: 6106
 {
 
-[PreserveAttribute] 
+[PreserveAttribute]
 internal class ScanFilter : PathFilter
 
 	public void .ctor() { }

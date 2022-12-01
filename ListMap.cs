@@ -1,7 +1,7 @@
 internal class ListMap : ObjectMap // TypeDefIndex: 2129
 {
-	private XmlTypeMapElementInfoList _itemInfo; 
-	private string _choiceMember; 
+	private XmlTypeMapElementInfoList _itemInfo;
+	private string _choiceMember;
 
 	public string ChoiceMember { set; }
 	public XmlTypeMapElementInfoList ItemInfo { get; set; }

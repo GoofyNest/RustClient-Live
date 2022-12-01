@@ -1,6 +1,6 @@
 public struct Int32 : IComparable, IFormattable, IConvertible, IComparable<int>, IEquatable<int> // TypeDefIndex: 258
 {
-	internal int m_value; 
+	internal int m_value;
 	public const int MaxValue = 2147483647;
 	public const int MinValue = -2147483648;
 

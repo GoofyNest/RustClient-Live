@@ -1,4 +1,4 @@
-internal static class Interop // TypeDefIndex: 7371
+internal static class Interop // TypeDefIndex: 7373
 {
 	internal const int SQLITE_OK = 0;
 	internal const int SQLITE_ROW = 100;
@@ -8,8 +8,8 @@ internal static class Interop // TypeDefIndex: 7371
 	internal const int SQLITE_TEXT = 3;
 	internal const int SQLITE_BLOB = 4;
 	internal const int SQLITE_NULL = 5;
-	internal static IntPtr SQLITE_STATIC; 
-	internal static IntPtr SQLITE_TRANSIENT; 
+	internal static IntPtr SQLITE_STATIC;
+	internal static IntPtr SQLITE_TRANSIENT;
 
 
 	internal static extern int sqlite3_open(string filename, out IntPtr db) { }

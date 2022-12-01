@@ -1,45 +1,45 @@
-public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 12894
+public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 12908
 {
-	[CompilerGeneratedAttribute] 
-	private static bool <WantsSkip>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private static string <Text>k__BackingField; 
-	public CanvasRenderer panel; 
-	public TextMeshProUGUI title; 
-	public TextMeshProUGUI subtitle; 
-	public Button skipButton; 
-	public Button cancelButton; 
-	public GameObject performanceWarning; 
-	public AudioSource music; 
-	public RectTransform serverInfo; 
-	public RustText serverName; 
-	public RustText serverPlayers; 
-	public RustLayout serverModeSection; 
-	public RustText serverMode; 
-	public RustText serverMap; 
-	public RustLayout serverTagsSection; 
-	public ServerBrowserTagList serverTags; 
-	public RectTransform demoInfo; 
-	public RustText demoName; 
-	public RustText demoLength; 
-	public RustText demoDate; 
-	public RustText demoMap; 
-	public RawImage backgroundImage; 
-	public Texture2D defaultBackground; 
-	public GameObject pingWarning; 
-	public RustText pingWarningText; 
-	[TooltipAttribute] 
-	public int minPingDiffToShowWarning; 
-	[TooltipAttribute] 
-	public float pingDiffFactorToShowWarning; 
-	[TooltipAttribute] 
-	public int requiredPingSampleCount; 
-	public GameObject blackout; 
-	private string _backgroundImagePath; 
-	private Texture2D _backgroundImage; 
-	private string _pingWarningTextTemplate; 
-	private int _pingSampleCount; 
-	private int _minimumPingSample; 
+	[CompilerGeneratedAttribute]
+	private static bool <WantsSkip>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private static string <Text>k__BackingField;
+	public CanvasRenderer panel;
+	public TextMeshProUGUI title;
+	public TextMeshProUGUI subtitle;
+	public Button skipButton;
+	public Button cancelButton;
+	public GameObject performanceWarning;
+	public AudioSource music;
+	public RectTransform serverInfo;
+	public RustText serverName;
+	public RustText serverPlayers;
+	public RustLayout serverModeSection;
+	public RustText serverMode;
+	public RustText serverMap;
+	public RustLayout serverTagsSection;
+	public ServerBrowserTagList serverTags;
+	public RectTransform demoInfo;
+	public RustText demoName;
+	public RustText demoLength;
+	public RustText demoDate;
+	public RustText demoMap;
+	public RawImage backgroundImage;
+	public Texture2D defaultBackground;
+	public GameObject pingWarning;
+	public RustText pingWarningText;
+	[TooltipAttribute]
+	public int minPingDiffToShowWarning;
+	[TooltipAttribute]
+	public float pingDiffFactorToShowWarning;
+	[TooltipAttribute]
+	public int requiredPingSampleCount;
+	public GameObject blackout;
+	private string _backgroundImagePath;
+	private Texture2D _backgroundImage;
+	private string _pingWarningTextTemplate;
+	private int _pingSampleCount;
+	private int _minimumPingSample;
 
 	public static bool isOpen { get; }
 	public static bool WantsSkip { get; set; }
@@ -48,16 +48,16 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 
 	public static bool get_isOpen() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static bool get_WantsSkip() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_WantsSkip(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private static void set_Text(string value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static string get_Text() { }
 
 	protected override void Awake() { }
@@ -106,24 +106,24 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 
 	public void .ctor() { }
 
-	[AsyncStateMachineAttribute] 
-	[CompilerGeneratedAttribute] 
+	[AsyncStateMachineAttribute]
+	[CompilerGeneratedAttribute]
 	private void <ChooseBackgroundImage>g__PreloadBackgroundImage|64_0(string url) { }
 
 }
 
-private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d : IAsyncStateMachine // TypeDefIndex: 12895
+private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d : IAsyncStateMachine // TypeDefIndex: 12909
 {
-	public int <>1__state; 
-	public AsyncVoidMethodBuilder <>t__builder; 
-	public string url; 
-	public LoadingScreen <>4__this; 
-	private TaskAwaiter<string> <>u__1; 
+	public int <>1__state;
+	public AsyncVoidMethodBuilder <>t__builder;
+	public string url;
+	public LoadingScreen <>4__this;
+	private TaskAwaiter<string> <>u__1;
 
 
 	private void MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }

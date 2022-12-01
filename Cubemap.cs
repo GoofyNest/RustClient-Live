@@ -4,10 +4,10 @@ public sealed class Cubemap : Texture // TypeDefIndex: 3447
 	public override bool isReadable { get; }
 
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public TextureFormat get_format() { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private static bool Internal_CreateImpl(Cubemap mono, int ext, int mipCount, GraphicsFormat format, TextureCreationFlags flags, IntPtr nativeTex) { }
 
 	private static void Internal_Create(Cubemap mono, int ext, int mipCount, GraphicsFormat format, TextureCreationFlags flags, IntPtr nativeTex) { }
@@ -16,7 +16,7 @@ public sealed class Cubemap : Texture // TypeDefIndex: 3447
 
 	public void .ctor(int width, DefaultFormat format, TextureCreationFlags flags) { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor(int width, GraphicsFormat format, TextureCreationFlags flags) { }
 
 	public void .ctor(int width, TextureFormat format, int mipCount) { }

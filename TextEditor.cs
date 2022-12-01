@@ -1,30 +1,30 @@
 public class TextEditor // TypeDefIndex: 4066
 {
-	public TouchScreenKeyboard keyboardOnScreen; 
-	public int controlID; 
-	public GUIStyle style; 
-	public bool multiline; 
-	public bool hasHorizontalCursorPos; 
-	public bool isPasswordField; 
-	[VisibleToOtherModulesAttribute] 
-	internal bool m_HasFocus; 
-	public Vector2 scrollOffset; 
-	private GUIContent m_Content; 
-	private Rect m_Position; 
-	private int m_CursorIndex; 
-	private int m_SelectIndex; 
-	private bool m_RevealCursor; 
-	public Vector2 graphicalCursorPos; 
-	public Vector2 graphicalSelectCursorPos; 
-	private bool m_MouseDragSelectsWholeWords; 
-	private int m_DblClickInitPos; 
-	private TextEditor.DblClickSnapping m_DblClickSnap; 
-	private bool m_bJustSelected; 
-	private int m_iAltCursorPos; 
-	private string oldText; 
-	private int oldPos; 
-	private int oldSelectPos; 
-	private static Dictionary<Event, TextEditor.TextEditOp> s_Keyactions; 
+	public TouchScreenKeyboard keyboardOnScreen;
+	public int controlID;
+	public GUIStyle style;
+	public bool multiline;
+	public bool hasHorizontalCursorPos;
+	public bool isPasswordField;
+	[VisibleToOtherModulesAttribute]
+	internal bool m_HasFocus;
+	public Vector2 scrollOffset;
+	private GUIContent m_Content;
+	private Rect m_Position;
+	private int m_CursorIndex;
+	private int m_SelectIndex;
+	private bool m_RevealCursor;
+	public Vector2 graphicalCursorPos;
+	public Vector2 graphicalSelectCursorPos;
+	private bool m_MouseDragSelectsWholeWords;
+	private int m_DblClickInitPos;
+	private TextEditor.DblClickSnapping m_DblClickSnap;
+	private bool m_bJustSelected;
+	private int m_iAltCursorPos;
+	private string oldText;
+	private int oldPos;
+	private int oldSelectPos;
+	private static Dictionary<Event, TextEditor.TextEditOp> s_Keyactions;
 
 	public string text { get; set; }
 	public Rect position { get; set; }
@@ -42,7 +42,7 @@ public class TextEditor // TypeDefIndex: 4066
 
 	public void set_position(Rect value) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal virtual Rect get_localPosition() { }
 
 	public int get_cursorIndex() { }
@@ -55,7 +55,7 @@ public class TextEditor // TypeDefIndex: 4066
 
 	private void ClearCursorPos() { }
 
-	[RequiredByNativeCodeAttribute] 
+	[RequiredByNativeCodeAttribute]
 	public void .ctor() { }
 
 	public void OnFocus() { }
@@ -66,7 +66,7 @@ public class TextEditor // TypeDefIndex: 4066
 
 	public bool HandleKeyEvent(Event e) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal bool HandleKeyEvent(Event e, bool textIsReadOnly) { }
 
 	public bool DeleteLineBack() { }
@@ -189,7 +189,7 @@ public class TextEditor // TypeDefIndex: 4066
 
 	public void UpdateScrollOffsetIfNeeded(Event evt) { }
 
-	[VisibleToOtherModulesAttribute] 
+	[VisibleToOtherModulesAttribute]
 	internal void UpdateScrollOffset() { }
 
 	public void DrawCursor(string newText) { }
@@ -232,7 +232,7 @@ public class TextEditor // TypeDefIndex: 4066
 
 public enum TextEditor.DblClickSnapping // TypeDefIndex: 4067
 {
-	public byte value__; 
+	public byte value__;
 	public const TextEditor.DblClickSnapping WORDS = 0;
 	public const TextEditor.DblClickSnapping PARAGRAPHS = 1;
 
@@ -240,7 +240,7 @@ public enum TextEditor.DblClickSnapping // TypeDefIndex: 4067
 
 private enum TextEditor.CharacterType // TypeDefIndex: 4068
 {
-	public int value__; 
+	public int value__;
 	public const TextEditor.CharacterType LetterLike = 0;
 	public const TextEditor.CharacterType Symbol = 1;
 	public const TextEditor.CharacterType Symbol2 = 2;
@@ -250,7 +250,7 @@ private enum TextEditor.CharacterType // TypeDefIndex: 4068
 
 private enum TextEditor.Direction // TypeDefIndex: 4069
 {
-	public int value__; 
+	public int value__;
 	public const TextEditor.Direction Forward = 0;
 	public const TextEditor.Direction Backward = 1;
 
@@ -258,7 +258,7 @@ private enum TextEditor.Direction // TypeDefIndex: 4069
 
 private enum TextEditor.TextEditOp // TypeDefIndex: 4070
 {
-	public int value__; 
+	public int value__;
 	public const TextEditor.TextEditOp MoveLeft = 0;
 	public const TextEditor.TextEditOp MoveRight = 1;
 	public const TextEditor.TextEditOp MoveUp = 2;

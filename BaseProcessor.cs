@@ -1,11 +1,11 @@
 internal class BaseProcessor // TypeDefIndex: 2139
 {
-	private XmlNameTable nameTable; 
-	private SchemaNames schemaNames; 
-	private ValidationEventHandler eventHandler; 
-	private XmlSchemaCompilationSettings compilationSettings; 
-	private int errorCount; 
-	private string NsXml; 
+	private XmlNameTable nameTable;
+	private SchemaNames schemaNames;
+	private ValidationEventHandler eventHandler;
+	private XmlSchemaCompilationSettings compilationSettings;
+	private int errorCount;
+	private string NsXml;
 
 	protected XmlNameTable NameTable { get; }
 	protected SchemaNames SchemaNames { get; }

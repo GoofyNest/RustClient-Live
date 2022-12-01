@@ -1,18 +1,18 @@
 public class FocusController // TypeDefIndex: 4594
 {
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private readonly IFocusRing <focusRing>k__BackingField; 
-	private List<FocusController.FocusedElement> m_FocusedElements; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private int <imguiKeyboardControl>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private readonly IFocusRing <focusRing>k__BackingField;
+	private List<FocusController.FocusedElement> m_FocusedElements;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private int <imguiKeyboardControl>k__BackingField;
 
 	private IFocusRing focusRing { get; }
 	internal int imguiKeyboardControl { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private IFocusRing get_focusRing() { }
 
 	internal Focusable GetLeafFocusedElement() { }
@@ -31,10 +31,10 @@ public class FocusController // TypeDefIndex: 4594
 
 	internal Focusable SwitchFocusOnEvent(EventBase e) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal int get_imguiKeyboardControl() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	internal void set_imguiKeyboardControl(int value) { }
 
 	internal void SyncIMGUIFocus(int imguiKeyboardControlID, Focusable imguiContainerHavingKeyboardControl, bool forceSwitch) { }
@@ -43,8 +43,8 @@ public class FocusController // TypeDefIndex: 4594
 
 private struct FocusController.FocusedElement // TypeDefIndex: 4595
 {
-	public VisualElement m_SubTreeRoot; 
-	public Focusable m_FocusedElement; 
+	public VisualElement m_SubTreeRoot;
+	public Focusable m_FocusedElement;
 
 }
 

@@ -1,11 +1,11 @@
 public abstract class BaseInputModule : UIBehaviour // TypeDefIndex: 5086
 {
-	protected List<RaycastResult> m_RaycastResultCache; 
-	private AxisEventData m_AxisEventData; 
-	private EventSystem m_EventSystem; 
-	private BaseEventData m_BaseEventData; 
-	protected BaseInput m_InputOverride; 
-	private BaseInput m_DefaultInput; 
+	protected List<RaycastResult> m_RaycastResultCache;
+	private AxisEventData m_AxisEventData;
+	private EventSystem m_EventSystem;
+	private BaseEventData m_BaseEventData;
+	protected BaseInput m_InputOverride;
+	private BaseInput m_DefaultInput;
 
 	public BaseInput input { get; }
 	public BaseInput inputOverride { get; set; }

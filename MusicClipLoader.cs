@@ -1,9 +1,9 @@
-public class MusicClipLoader // TypeDefIndex: 10729
+public class MusicClipLoader // TypeDefIndex: 10733
 {
-	public List<MusicClipLoader.LoadedAudioClip> loadedClips; 
-	public Dictionary<AudioClip, MusicClipLoader.LoadedAudioClip> loadedClipDict; 
-	public List<AudioClip> clipsToLoad; 
-	public List<AudioClip> clipsToUnload; 
+	public List<MusicClipLoader.LoadedAudioClip> loadedClips;
+	public Dictionary<AudioClip, MusicClipLoader.LoadedAudioClip> loadedClipDict;
+	public List<AudioClip> clipsToLoad;
+	public List<AudioClip> clipsToUnload;
 
 
 	public void Update() { }
@@ -16,10 +16,10 @@ public class MusicClipLoader // TypeDefIndex: 10729
 
 }
 
-public class MusicClipLoader.LoadedAudioClip // TypeDefIndex: 10730
+public class MusicClipLoader.LoadedAudioClip // TypeDefIndex: 10734
 {
-	public AudioClip clip; 
-	public float unloadTime; 
+	public AudioClip clip;
+	public float unloadTime;
 
 
 	public void .ctor() { }

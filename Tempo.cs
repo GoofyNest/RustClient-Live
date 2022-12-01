@@ -1,15 +1,15 @@
-public sealed class Tempo // TypeDefIndex: 7465
+public sealed class Tempo // TypeDefIndex: 7467
 {
-	public static readonly Tempo Default; 
-	[CompilerGeneratedAttribute] 
-	private readonly long <MicrosecondsPerQuarterNote>k__BackingField; 
+	public static readonly Tempo Default;
+	[CompilerGeneratedAttribute]
+	private readonly long <MicrosecondsPerQuarterNote>k__BackingField;
 
 	public long MicrosecondsPerQuarterNote { get; }
 
 
 	public void .ctor(long microsecondsPerQuarterNote) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public long get_MicrosecondsPerQuarterNote() { }
 
 	public static bool op_Equality(Tempo tempo1, Tempo tempo2) { }

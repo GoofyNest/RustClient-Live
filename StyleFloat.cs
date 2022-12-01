@@ -1,8 +1,8 @@
 public struct StyleFloat : IStyleValue<float>, IEquatable<StyleFloat> // TypeDefIndex: 4717
 {
-	private StyleKeyword m_Keyword; 
-	private float m_Value; 
-	private int m_Specificity; 
+	private StyleKeyword m_Keyword;
+	private float m_Value;
+	private int m_Specificity;
 
 	public float value { get; }
 	public StyleKeyword keyword { get; }

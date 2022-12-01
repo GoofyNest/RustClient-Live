@@ -1,6 +1,6 @@
-public class AvatarSwitcher : StateMachineBehaviour // TypeDefIndex: 10843
+public class AvatarSwitcher : StateMachineBehaviour // TypeDefIndex: 10849
 {
-	public Avatar ToApply; 
+	public Avatar ToApply;
 
 
 	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }

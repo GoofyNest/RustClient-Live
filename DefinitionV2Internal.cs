@@ -1,17 +1,17 @@
-internal struct DefinitionV2Internal : IGettable<DefinitionV2>, ISettable<DefinitionV2>, IDisposable // TypeDefIndex: 9912
+internal struct DefinitionV2Internal : IGettable<DefinitionV2>, ISettable<DefinitionV2>, IDisposable // TypeDefIndex: 9914
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AchievementId; 
-	private IntPtr m_UnlockedDisplayName; 
-	private IntPtr m_UnlockedDescription; 
-	private IntPtr m_LockedDisplayName; 
-	private IntPtr m_LockedDescription; 
-	private IntPtr m_FlavorText; 
-	private IntPtr m_UnlockedIconURL; 
-	private IntPtr m_LockedIconURL; 
-	private int m_IsHidden; 
-	private uint m_StatThresholdsCount; 
-	private IntPtr m_StatThresholds; 
+	private int m_ApiVersion;
+	private IntPtr m_AchievementId;
+	private IntPtr m_UnlockedDisplayName;
+	private IntPtr m_UnlockedDescription;
+	private IntPtr m_LockedDisplayName;
+	private IntPtr m_LockedDescription;
+	private IntPtr m_FlavorText;
+	private IntPtr m_UnlockedIconURL;
+	private IntPtr m_LockedIconURL;
+	private int m_IsHidden;
+	private uint m_StatThresholdsCount;
+	private IntPtr m_StatThresholds;
 
 	public Utf8String AchievementId { get; set; }
 	public Utf8String UnlockedDisplayName { get; set; }

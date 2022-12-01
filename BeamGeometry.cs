@@ -1,16 +1,16 @@
-public class BeamGeometry : MonoBehaviour // TypeDefIndex: 13325
+public class BeamGeometry : MonoBehaviour // TypeDefIndex: 13340
 {
-	private VolumetricLightBeam m_Master; 
-	private Matrix4x4 m_ColorGradientMatrix; 
-	private MeshType m_CurrentMeshType; 
-	[CompilerGeneratedAttribute] 
-	private MeshRenderer <meshRenderer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private MeshFilter <meshFilter>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Material <material>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Mesh <coneMesh>k__BackingField; 
+	private VolumetricLightBeam m_Master;
+	private Matrix4x4 m_ColorGradientMatrix;
+	private MeshType m_CurrentMeshType;
+	[CompilerGeneratedAttribute]
+	private MeshRenderer <meshRenderer>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private MeshFilter <meshFilter>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Material <material>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Mesh <coneMesh>k__BackingField;
 
 	public MeshRenderer meshRenderer { get; set; }
 	public MeshFilter meshFilter { get; set; }
@@ -21,28 +21,28 @@ public class BeamGeometry : MonoBehaviour // TypeDefIndex: 13325
 	public int sortingOrder { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshRenderer get_meshRenderer() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_meshRenderer(MeshRenderer value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public MeshFilter get_meshFilter() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_meshFilter(MeshFilter value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Material get_material() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_material(Material value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Mesh get_coneMesh() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_coneMesh(Mesh value) { }
 
 	public bool get_visible() { }

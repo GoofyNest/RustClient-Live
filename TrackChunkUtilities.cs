@@ -1,7 +1,7 @@
-public static class TrackChunkUtilities // TypeDefIndex: 7633
+public static class TrackChunkUtilities // TypeDefIndex: 7635
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static IEnumerable<TrackChunk> GetTrackChunks(MidiFile midiFile) { }
 
 }

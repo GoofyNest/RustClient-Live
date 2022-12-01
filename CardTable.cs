@@ -1,27 +1,27 @@
-public class CardTable : BaseCardGameEntity // TypeDefIndex: 10087
+public class CardTable : BaseCardGameEntity // TypeDefIndex: 10089
 {
-	private Option __menuOption_Menu_Play; 
-	[HeaderAttribute] 
-	[SerializeField] 
-	private ViewModel viewModel; 
-	[SerializeField] 
-	private CardGameUI.PlayingCardImage[] tableCards; 
-	[SerializeField] 
-	private Renderer[] tableCardBackings; 
-	[SerializeField] 
-	private Canvas cardUICanvas; 
-	[SerializeField] 
-	private Image[] tableCardImages; 
-	[SerializeField] 
-	private Sprite blankCard; 
-	[SerializeField] 
-	private CardTable.ChipStack[] chipStacks; 
-	[SerializeField] 
-	private CardTable.ChipStack[] fillerStacks; 
-	private Nullable<bool> localWasHoldingCards; 
-	private int lastVisualScrap; 
-	private static Dictionary<int, Sprite> tableCardImageDict; 
-	private static Sprite blankCardStatic; 
+	private Option __menuOption_Menu_Play;
+	[HeaderAttribute]
+	[SerializeField]
+	private ViewModel viewModel;
+	[SerializeField]
+	private CardGameUI.PlayingCardImage[] tableCards;
+	[SerializeField]
+	private Renderer[] tableCardBackings;
+	[SerializeField]
+	private Canvas cardUICanvas;
+	[SerializeField]
+	private Image[] tableCardImages;
+	[SerializeField]
+	private Sprite blankCard;
+	[SerializeField]
+	private CardTable.ChipStack[] chipStacks;
+	[SerializeField]
+	private CardTable.ChipStack[] fillerStacks;
+	private Nullable<bool> localWasHoldingCards;
+	private int lastVisualScrap;
+	private static Dictionary<int, Sprite> tableCardImageDict;
+	private static Sprite blankCardStatic;
 
 	public override bool HasMenuOptions { get; }
 	protected override float MaxStorageInteractionDist { get; }
@@ -39,10 +39,10 @@ public class CardTable : BaseCardGameEntity // TypeDefIndex: 10087
 
 	public override void RefreshLocalPlayer(CardPlayerData localPlayerData) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public override void Menu_Play(BasePlayer player) { }
 
 	private void DelayedViewModelDeploy(float timeDelay) { }
@@ -65,10 +65,10 @@ public class CardTable : BaseCardGameEntity // TypeDefIndex: 10087
 
 }
 
-public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 10088
+public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 10090
 {
-	public int chipValue; 
-	public GameObject[] chips; 
+	public int chipValue;
+	public GameObject[] chips;
 
 
 	public int CompareTo(CardTable.ChipStack other) { }

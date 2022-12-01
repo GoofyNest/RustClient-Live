@@ -1,49 +1,49 @@
 public sealed class PhotoCaptureFrame : IDisposable // TypeDefIndex: 3618
 {
-	private IntPtr m_NativePtr; 
-	[DebuggerBrowsableAttribute] 
-	[CompilerGeneratedAttribute] 
-	private int <dataLength>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private bool <hasLocationData>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	[DebuggerBrowsableAttribute] 
-	private CapturePixelFormat <pixelFormat>k__BackingField; 
+	private IntPtr m_NativePtr;
+	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
+	private int <dataLength>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private bool <hasLocationData>k__BackingField;
+	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
+	private CapturePixelFormat <pixelFormat>k__BackingField;
 
 	public int dataLength { get; set; }
 	private bool hasLocationData { set; }
 	private CapturePixelFormat pixelFormat { set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public int get_dataLength() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_dataLength(int value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_hasLocationData(bool value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	private void set_pixelFormat(CapturePixelFormat value) { }
 
-	[ThreadAndSerializationSafeAttribute] 
+	[ThreadAndSerializationSafeAttribute]
 	private int GetDataLength() { }
 
-	[ThreadAndSerializationSafeAttribute] 
+	[ThreadAndSerializationSafeAttribute]
 	private bool GetHasLocationData() { }
 
-	[ThreadAndSerializationSafeAttribute] 
+	[ThreadAndSerializationSafeAttribute]
 	private CapturePixelFormat GetCapturePixelFormat() { }
 
 	internal void .ctor(IntPtr nativePtr) { }
 
 	private void Cleanup() { }
 
-	[ThreadAndSerializationSafeAttribute] 
-	[NativeConditionalAttribute] 
-	[NativeNameAttribute] 
+	[ThreadAndSerializationSafeAttribute]
+	[NativeConditionalAttribute]
+	[NativeNameAttribute]
 	private void Dispose_Internal() { }
 
 	public void Dispose() { }

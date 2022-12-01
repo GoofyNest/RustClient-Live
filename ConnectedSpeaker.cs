@@ -1,8 +1,8 @@
-public class ConnectedSpeaker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6423
+public class ConnectedSpeaker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6425
 {
-	public bool ShouldPool; 
-	private bool _disposed; 
-	public uint connectedTo; 
+	public bool ShouldPool;
+	private bool _disposed;
+	public uint connectedTo;
 
 
 	public static void ResetToPool(ConnectedSpeaker instance) { }
@@ -59,15 +59,15 @@ public class ConnectedSpeaker : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class ConnectedSpeaker : IOEntity // TypeDefIndex: 10283
+public class ConnectedSpeaker : IOEntity // TypeDefIndex: 10286
 {
-	public AudioSource SoundSource; 
-	private EntityRef<IOEntity> connectedTo; 
-	public VoiceProcessor VoiceProcessor; 
-	private ShoutcastStreamer connectedToStreamer; 
-	private VoiceProcessor connectedToProcessor; 
-	private bool isPlayingStreamedAudio; 
-	private uint currentReadIndex; 
+	public AudioSource SoundSource;
+	private EntityRef<IOEntity> connectedTo;
+	public VoiceProcessor VoiceProcessor;
+	private ShoutcastStreamer connectedToStreamer;
+	private VoiceProcessor connectedToProcessor;
+	private bool isPlayingStreamedAudio;
+	private uint currentReadIndex;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -80,10 +80,10 @@ public class ConnectedSpeaker : IOEntity // TypeDefIndex: 10283
 
 	private void OnAudioRead(float[] data) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_PlayAudioFrom(BaseEntity.RPCMessage msg) { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	private void Client_StopPlayingAudio(BaseEntity.RPCMessage msg) { }
 
 	public override void ClientOnEnable() { }

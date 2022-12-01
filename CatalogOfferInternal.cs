@@ -1,27 +1,27 @@
-internal struct CatalogOfferInternal : IGettable<CatalogOffer>, ISettable<CatalogOffer>, IDisposable // TypeDefIndex: 9420
+internal struct CatalogOfferInternal : IGettable<CatalogOffer>, ISettable<CatalogOffer>, IDisposable // TypeDefIndex: 9422
 {
-	private int m_ApiVersion; 
-	private int m_ServerIndex; 
-	private IntPtr m_CatalogNamespace; 
-	private IntPtr m_Id; 
-	private IntPtr m_TitleText; 
-	private IntPtr m_DescriptionText; 
-	private IntPtr m_LongDescriptionText; 
-	private IntPtr m_TechnicalDetailsText_DEPRECATED; 
-	private IntPtr m_CurrencyCode; 
-	private Result m_PriceResult; 
-	private uint m_OriginalPrice_DEPRECATED; 
-	private uint m_CurrentPrice_DEPRECATED; 
-	private byte m_DiscountPercentage; 
-	private long m_ExpirationTimestamp; 
-	private uint m_PurchasedCount_DEPRECATED; 
-	private int m_PurchaseLimit; 
-	private int m_AvailableForPurchase; 
-	private ulong m_OriginalPrice64; 
-	private ulong m_CurrentPrice64; 
-	private uint m_DecimalPoint; 
-	private long m_ReleaseDateTimestamp; 
-	private long m_EffectiveDateTimestamp; 
+	private int m_ApiVersion;
+	private int m_ServerIndex;
+	private IntPtr m_CatalogNamespace;
+	private IntPtr m_Id;
+	private IntPtr m_TitleText;
+	private IntPtr m_DescriptionText;
+	private IntPtr m_LongDescriptionText;
+	private IntPtr m_TechnicalDetailsText_DEPRECATED;
+	private IntPtr m_CurrencyCode;
+	private Result m_PriceResult;
+	private uint m_OriginalPrice_DEPRECATED;
+	private uint m_CurrentPrice_DEPRECATED;
+	private byte m_DiscountPercentage;
+	private long m_ExpirationTimestamp;
+	private uint m_PurchasedCount_DEPRECATED;
+	private int m_PurchaseLimit;
+	private int m_AvailableForPurchase;
+	private ulong m_OriginalPrice64;
+	private ulong m_CurrentPrice64;
+	private uint m_DecimalPoint;
+	private long m_ReleaseDateTimestamp;
+	private long m_EffectiveDateTimestamp;
 
 	public int ServerIndex { get; set; }
 	public Utf8String CatalogNamespace { get; set; }

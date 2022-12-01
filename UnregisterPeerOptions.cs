@@ -1,15 +1,15 @@
-public struct UnregisterPeerOptions // TypeDefIndex: 9854
+public struct UnregisterPeerOptions // TypeDefIndex: 9856
 {
-	[CompilerGeneratedAttribute] 
-	private IntPtr <PeerHandle>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private IntPtr <PeerHandle>k__BackingField;
 
 	public IntPtr PeerHandle { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public IntPtr get_PeerHandle() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_PeerHandle(IntPtr value) { }
 
 }

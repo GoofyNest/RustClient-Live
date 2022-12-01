@@ -1,32 +1,32 @@
 public sealed class ComputeShader : Object // TypeDefIndex: 3553
 {
 
-	[RequiredByNativeCodeAttribute] 
-	[NativeMethodAttribute] 
+	[RequiredByNativeCodeAttribute]
+	[NativeMethodAttribute]
 	public int FindKernel(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public bool HasKernel(string name) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetFloat(int nameID, float val) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetVector(int nameID, Vector4 val) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	private void SetFloatArray(int nameID, float[] values) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void SetTexture(int kernelIndex, int nameID, Texture texture, int mipLevel) { }
 
-	[FreeFunctionAttribute] 
+	[FreeFunctionAttribute]
 	public void SetBuffer(int kernelIndex, int nameID, ComputeBuffer buffer) { }
 
-	[NativeMethodAttribute] 
+	[NativeMethodAttribute]
 	public void GetKernelThreadGroupSizes(int kernelIndex, out uint x, out uint y, out uint z) { }
 
-	[NativeNameAttribute] 
+	[NativeNameAttribute]
 	public void Dispatch(int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ) { }
 
 	public void SetFloat(string name, float val) { }

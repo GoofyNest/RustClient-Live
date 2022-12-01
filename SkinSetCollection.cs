@@ -1,6 +1,6 @@
-public class SkinSetCollection : ScriptableObject // TypeDefIndex: 12510
+public class SkinSetCollection : ScriptableObject // TypeDefIndex: 12518
 {
-	public SkinSet[] Skins; 
+	public SkinSet[] Skins;
 
 
 	public int GetIndex(float MeshNumber) { }

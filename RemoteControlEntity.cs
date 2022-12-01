@@ -1,10 +1,10 @@
-public class RemoteControlEntity : BaseCombatEntity, IRemoteControllable // TypeDefIndex: 10153
+public class RemoteControlEntity : BaseCombatEntity, IRemoteControllable // TypeDefIndex: 10155
 {
-	private Option __menuOption_Menu_SetID; 
-	[HeaderAttribute] 
-	public string rcIdentifier; 
-	public Transform viewEyes; 
-	public GameObjectRef IDPanelPrefab; 
+	private Option __menuOption_Menu_SetID;
+	[HeaderAttribute]
+	public string rcIdentifier;
+	public Transform viewEyes;
+	public GameObjectRef IDPanelPrefab;
 
 	public override bool HasMenuOptions { get; }
 	public virtual bool RequiresMouse { get; }
@@ -40,10 +40,10 @@ public class RemoteControlEntity : BaseCombatEntity, IRemoteControllable // Type
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu]
+	[BaseEntity.Menu.Description]
+	[BaseEntity.Menu.Icon]
+	[BaseEntity.Menu.ShowIf]
 	public void Menu_SetID(BasePlayer player) { }
 
 	public bool Menu_SetID_ShowIf(BasePlayer player) { }

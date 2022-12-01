@@ -1,8 +1,8 @@
-public class CargoMoveTest : FacepunchBehaviour // TypeDefIndex: 10000
+public class CargoMoveTest : FacepunchBehaviour // TypeDefIndex: 10002
 {
-	public int targetNodeIndex; 
-	private float currentThrottle; 
-	private float turnScale; 
+	public int targetNodeIndex;
+	private float currentThrottle;
+	private float turnScale;
 
 
 	private void Awake() { }

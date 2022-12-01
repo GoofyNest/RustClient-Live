@@ -1,13 +1,13 @@
-public class TerrainSetNeighbours : MonoBehaviour // TypeDefIndex: 13378
+public class TerrainSetNeighbours : MonoBehaviour // TypeDefIndex: 13393
 {
-	[SerializeField] 
-	private Terrain leftTerrain; 
-	[SerializeField] 
-	private Terrain topTerrain; 
-	[SerializeField] 
-	private Terrain rightTerrain; 
-	[SerializeField] 
-	private Terrain bottomTerrain; 
+	[SerializeField]
+	private Terrain leftTerrain;
+	[SerializeField]
+	private Terrain topTerrain;
+	[SerializeField]
+	private Terrain rightTerrain;
+	[SerializeField]
+	private Terrain bottomTerrain;
 
 
 	private void Awake() { }

@@ -1,7 +1,7 @@
 public sealed class TypeConverterAttribute : Attribute // TypeDefIndex: 2754
 {
-	private string typeName; 
-	public static readonly TypeConverterAttribute Default; 
+	private string typeName;
+	public static readonly TypeConverterAttribute Default;
 
 	public string ConverterTypeName { get; }
 

@@ -1,9 +1,9 @@
-internal struct LobbyDataUpdate_t : ICallbackData // TypeDefIndex: 5344
+internal struct LobbyDataUpdate_t : ICallbackData // TypeDefIndex: 5346
 {
-	internal ulong SteamIDLobby; 
-	internal ulong SteamIDMember; 
-	internal byte Success; 
-	public static int _datasize; 
+	internal ulong SteamIDLobby;
+	internal ulong SteamIDMember;
+	internal byte Success;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

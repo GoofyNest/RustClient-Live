@@ -1,6 +1,6 @@
 public enum KeyCode // TypeDefIndex: 3456
 {
-	public int value__; 
+	public int value__;
 	public const KeyCode None = 0;
 	public const KeyCode Backspace = 8;
 	public const KeyCode Delete = 127;

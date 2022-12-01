@@ -1,19 +1,19 @@
 internal class DSAManaged : DSA // TypeDefIndex: 78
 {
-	private bool keypairGenerated; 
-	private bool m_disposed; 
-	private BigInteger p; 
-	private BigInteger q; 
-	private BigInteger g; 
-	private BigInteger x; 
-	private BigInteger y; 
-	private BigInteger j; 
-	private BigInteger seed; 
-	private int counter; 
-	private bool j_missing; 
-	private RandomNumberGenerator rng; 
-	[CompilerGeneratedAttribute] 
-	private DSAManaged.KeyGeneratedEventHandler KeyGenerated; 
+	private bool keypairGenerated;
+	private bool m_disposed;
+	private BigInteger p;
+	private BigInteger q;
+	private BigInteger g;
+	private BigInteger x;
+	private BigInteger y;
+	private BigInteger j;
+	private BigInteger seed;
+	private int counter;
+	private bool j_missing;
+	private RandomNumberGenerator rng;
+	[CompilerGeneratedAttribute]
+	private DSAManaged.KeyGeneratedEventHandler KeyGenerated;
 
 	private RandomNumberGenerator Random { get; }
 	public override int KeySize { get; }
@@ -48,10 +48,10 @@ internal class DSAManaged : DSA // TypeDefIndex: 78
 
 	protected override void Dispose(bool disposing) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void add_KeyGenerated(DSAManaged.KeyGeneratedEventHandler value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void remove_KeyGenerated(DSAManaged.KeyGeneratedEventHandler value) { }
 
 }

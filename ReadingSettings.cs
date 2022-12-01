@@ -1,32 +1,32 @@
-public class ReadingSettings // TypeDefIndex: 7615
+public class ReadingSettings // TypeDefIndex: 7617
 {
-	private UnexpectedTrackChunksCountPolicy _unexpectedTrackChunksCountPolicy; 
-	private ExtraTrackChunkPolicy _extraTrackChunkPolicy; 
-	private UnknownChunkIdPolicy _unknownChunkIdPolicy; 
-	private MissedEndOfTrackPolicy _missedEndOfTrackPolicy; 
-	private SilentNoteOnPolicy _silentNoteOnPolicy; 
-	private InvalidChunkSizePolicy _invalidChunkSizePolicy; 
-	private UnknownFileFormatPolicy _unknownFileFormatPolicy; 
-	private UnknownChannelEventPolicy _unknownChannelEventPolicy; 
-	private InvalidChannelEventParameterValuePolicy _invalidChannelEventParameterValuePolicy; 
-	private InvalidMetaEventParameterValuePolicy _invalidMetaEventParameterValuePolicy; 
-	private InvalidSystemCommonEventParameterValuePolicy _invalidSystemCommonEventParameterValuePolicy; 
-	private NotEnoughBytesPolicy _notEnoughBytesPolicy; 
-	private NoHeaderChunkPolicy _noHeaderChunkPolicy; 
-	private ZeroLengthDataPolicy _zeroLengthDataPolicy; 
-	private EndOfTrackStoringPolicy _endOfTrackStoringPolicy; 
-	[CompilerGeneratedAttribute] 
-	private UnknownChannelEventCallback <UnknownChannelEventCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ChunkTypesCollection <CustomChunkTypes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private EventTypesCollection <CustomMetaEventTypes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private Encoding <TextEncoding>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private DecodeTextCallback <DecodeTextCallback>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private ReaderSettings <ReaderSettings>k__BackingField; 
+	private UnexpectedTrackChunksCountPolicy _unexpectedTrackChunksCountPolicy;
+	private ExtraTrackChunkPolicy _extraTrackChunkPolicy;
+	private UnknownChunkIdPolicy _unknownChunkIdPolicy;
+	private MissedEndOfTrackPolicy _missedEndOfTrackPolicy;
+	private SilentNoteOnPolicy _silentNoteOnPolicy;
+	private InvalidChunkSizePolicy _invalidChunkSizePolicy;
+	private UnknownFileFormatPolicy _unknownFileFormatPolicy;
+	private UnknownChannelEventPolicy _unknownChannelEventPolicy;
+	private InvalidChannelEventParameterValuePolicy _invalidChannelEventParameterValuePolicy;
+	private InvalidMetaEventParameterValuePolicy _invalidMetaEventParameterValuePolicy;
+	private InvalidSystemCommonEventParameterValuePolicy _invalidSystemCommonEventParameterValuePolicy;
+	private NotEnoughBytesPolicy _notEnoughBytesPolicy;
+	private NoHeaderChunkPolicy _noHeaderChunkPolicy;
+	private ZeroLengthDataPolicy _zeroLengthDataPolicy;
+	private EndOfTrackStoringPolicy _endOfTrackStoringPolicy;
+	[CompilerGeneratedAttribute]
+	private UnknownChannelEventCallback <UnknownChannelEventCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ChunkTypesCollection <CustomChunkTypes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private EventTypesCollection <CustomMetaEventTypes>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private Encoding <TextEncoding>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private DecodeTextCallback <DecodeTextCallback>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private ReaderSettings <ReaderSettings>k__BackingField;
 
 	public UnexpectedTrackChunksCountPolicy UnexpectedTrackChunksCountPolicy { get; }
 	public ExtraTrackChunkPolicy ExtraTrackChunkPolicy { get; }
@@ -67,7 +67,7 @@ public class ReadingSettings // TypeDefIndex: 7615
 
 	public UnknownChannelEventPolicy get_UnknownChannelEventPolicy() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public UnknownChannelEventCallback get_UnknownChannelEventCallback() { }
 
 	public InvalidChannelEventParameterValuePolicy get_InvalidChannelEventParameterValuePolicy() { }
@@ -80,26 +80,26 @@ public class ReadingSettings // TypeDefIndex: 7615
 
 	public NoHeaderChunkPolicy get_NoHeaderChunkPolicy() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ChunkTypesCollection get_CustomChunkTypes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public EventTypesCollection get_CustomMetaEventTypes() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Encoding get_TextEncoding() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public DecodeTextCallback get_DecodeTextCallback() { }
 
 	public ZeroLengthDataPolicy get_ZeroLengthDataPolicy() { }
 
 	public EndOfTrackStoringPolicy get_EndOfTrackStoringPolicy() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public ReaderSettings get_ReaderSettings() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_ReaderSettings(ReaderSettings value) { }
 
 	public void .ctor() { }

@@ -1,21 +1,21 @@
 public struct BoneWeight : IEquatable<BoneWeight> // TypeDefIndex: 3444
 {
-	[SerializeField] 
-	private float m_Weight0; 
-	[SerializeField] 
-	private float m_Weight1; 
-	[SerializeField] 
-	private float m_Weight2; 
-	[SerializeField] 
-	private float m_Weight3; 
-	[SerializeField] 
-	private int m_BoneIndex0; 
-	[SerializeField] 
-	private int m_BoneIndex1; 
-	[SerializeField] 
-	private int m_BoneIndex2; 
-	[SerializeField] 
-	private int m_BoneIndex3; 
+	[SerializeField]
+	private float m_Weight0;
+	[SerializeField]
+	private float m_Weight1;
+	[SerializeField]
+	private float m_Weight2;
+	[SerializeField]
+	private float m_Weight3;
+	[SerializeField]
+	private int m_BoneIndex0;
+	[SerializeField]
+	private int m_BoneIndex1;
+	[SerializeField]
+	private int m_BoneIndex2;
+	[SerializeField]
+	private int m_BoneIndex3;
 
 	public float weight0 { get; }
 	public float weight1 { get; }

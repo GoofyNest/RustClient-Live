@@ -1,6 +1,6 @@
-internal struct HSteamPipe : IEquatable<HSteamPipe>, IComparable<HSteamPipe> // TypeDefIndex: 5528
+internal struct HSteamPipe : IEquatable<HSteamPipe>, IComparable<HSteamPipe> // TypeDefIndex: 5530
 {
-	public int Value; 
+	public int Value;
 
 
 	public static HSteamPipe op_Implicit(int value) { }

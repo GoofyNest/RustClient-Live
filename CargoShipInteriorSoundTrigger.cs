@@ -1,6 +1,6 @@
-public class CargoShipInteriorSoundTrigger : MonoBehaviour, IClientComponent // TypeDefIndex: 10002
+public class CargoShipInteriorSoundTrigger : MonoBehaviour, IClientComponent // TypeDefIndex: 10004
 {
-	public CargoShipSounds cargoShipSounds; 
+	public CargoShipSounds cargoShipSounds;
 
 
 	private void OnTriggerEnter(Collider other) { }

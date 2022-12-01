@@ -1,6 +1,6 @@
 internal sealed class SqlBooleanStorage : DataStorage // TypeDefIndex: 4431
 {
-	private SqlBoolean[] _values; 
+	private SqlBoolean[] _values;
 
 
 	public void .ctor(DataColumn column) { }

@@ -1,8 +1,8 @@
-internal struct LobbyDetailsCopyMemberAttributeByKeyOptionsInternal : ISettable<LobbyDetailsCopyMemberAttributeByKeyOptions>, IDisposable // TypeDefIndex: 9140
+internal struct LobbyDetailsCopyMemberAttributeByKeyOptionsInternal : ISettable<LobbyDetailsCopyMemberAttributeByKeyOptions>, IDisposable // TypeDefIndex: 9142
 {
-	private int m_ApiVersion; 
-	private IntPtr m_TargetUserId; 
-	private IntPtr m_AttrKey; 
+	private int m_ApiVersion;
+	private IntPtr m_TargetUserId;
+	private IntPtr m_AttrKey;
 
 	public ProductUserId TargetUserId { set; }
 	public Utf8String AttrKey { set; }

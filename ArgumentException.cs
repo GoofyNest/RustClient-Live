@@ -1,6 +1,6 @@
 public class ArgumentException : SystemException, ISerializable // TypeDefIndex: 166
 {
-	private string m_paramName; 
+	private string m_paramName;
 
 	public override string Message { get; }
 
@@ -38,8 +38,8 @@ public class ArgumentNullException : ArgumentException // TypeDefIndex: 167
 
 public class ArgumentOutOfRangeException : ArgumentException, ISerializable // TypeDefIndex: 168
 {
-	private static string _rangeMessage; 
-	private object m_actualValue; 
+	private static string _rangeMessage;
+	private object m_actualValue;
 
 	private static string RangeMessage { get; }
 	public override string Message { get; }
@@ -65,10 +65,10 @@ public class ArgumentOutOfRangeException : ArgumentException, ISerializable // T
 
 public struct ArgIterator // TypeDefIndex: 347
 {
-	private IntPtr sig; 
-	private IntPtr args; 
-	private int next_arg; 
-	private int num_args; 
+	private IntPtr sig;
+	private IntPtr args;
+	private int next_arg;
+	private int num_args;
 
 
 	public override bool Equals(object o) { }
@@ -79,7 +79,7 @@ public struct ArgIterator // TypeDefIndex: 347
 
 internal enum ArgInfoType // TypeDefIndex: 1221
 {
-	public byte value__; 
+	public byte value__;
 	public const ArgInfoType In = 0;
 	public const ArgInfoType Out = 1;
 
@@ -87,9 +87,9 @@ internal enum ArgInfoType // TypeDefIndex: 1221
 
 internal class ArgInfo // TypeDefIndex: 1222
 {
-	private int[] _paramMap; 
-	private int _inoutArgCount; 
-	private MethodBase _method; 
+	private int[] _paramMap;
+	private int _inoutArgCount;
+	private MethodBase _method;
 
 
 	public void .ctor(MethodBase method, ArgInfoType type) { }
@@ -100,23 +100,23 @@ internal class ArgInfo // TypeDefIndex: 1222
 
 internal class ArgumentCache : ISerializationCallbackReceiver // TypeDefIndex: 3629
 {
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private Object m_ObjectArgument; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_ObjectArgumentAssemblyTypeName; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private int m_IntArgument; 
-	[SerializeField] 
-	[FormerlySerializedAsAttribute] 
-	private float m_FloatArgument; 
-	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
-	private string m_StringArgument; 
-	[SerializeField] 
-	private bool m_BoolArgument; 
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private Object m_ObjectArgument;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_ObjectArgumentAssemblyTypeName;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private int m_IntArgument;
+	[SerializeField]
+	[FormerlySerializedAsAttribute]
+	private float m_FloatArgument;
+	[FormerlySerializedAsAttribute]
+	[SerializeField]
+	private string m_StringArgument;
+	[SerializeField]
+	private bool m_BoolArgument;
 
 	public Object unityObjectArgument { get; }
 	public string unityObjectArgumentAssemblyTypeName { get; }
@@ -148,10 +148,10 @@ internal class ArgumentCache : ISerializationCallbackReceiver // TypeDefIndex: 3
 
 }
 
-public static class ArgEx // TypeDefIndex: 13483
+public static class ArgEx // TypeDefIndex: 13499
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static BasePlayer GetPlayer_Clientside(ConsoleSystem.Arg arg, int iArgNum) { }
 
 }

@@ -1,20 +1,20 @@
 public struct GlyphMetrics : IEquatable<GlyphMetrics> // TypeDefIndex: 4116
 {
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_Width; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_Height; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_HorizontalBearingX; 
-	[SerializeField] 
-	[NativeNameAttribute] 
-	private float m_HorizontalBearingY; 
-	[NativeNameAttribute] 
-	[SerializeField] 
-	private float m_HorizontalAdvance; 
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_Width;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_Height;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_HorizontalBearingX;
+	[SerializeField]
+	[NativeNameAttribute]
+	private float m_HorizontalBearingY;
+	[NativeNameAttribute]
+	[SerializeField]
+	private float m_HorizontalAdvance;
 
 	public float width { get; }
 	public float height { get; }

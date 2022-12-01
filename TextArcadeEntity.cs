@@ -1,6 +1,6 @@
-public class TextArcadeEntity : ArcadeEntity // TypeDefIndex: 10499
+public class TextArcadeEntity : ArcadeEntity // TypeDefIndex: 10503
 {
-	public TextMeshProUGUI text; 
+	public TextMeshProUGUI text;
 
 
 	public override void SetVisible(bool wantsVis) { }

@@ -1,74 +1,74 @@
-public class BaseGameMode : BaseEntity // TypeDefIndex: 10236
+public class BaseGameMode : BaseEntity // TypeDefIndex: 10238
 {
-	private GameMode gameModeScores; 
-	public string[] scoreColumns; 
-	[HeaderAttribute] 
-	public bool globalChat; 
-	public bool localChat; 
-	public bool teamSystem; 
-	public bool safeZone; 
-	public bool ingameMap; 
-	public bool compass; 
-	public bool contactSystem; 
-	public bool crawling; 
-	public bool rustPlus; 
-	public bool wipeBpsOnProtocol; 
-	public int maximumSleepingBags; 
-	public bool returnValidCombatlog; 
-	public bool missionSystem; 
-	public bool mlrs; 
+	private GameMode gameModeScores;
+	public string[] scoreColumns;
+	[HeaderAttribute]
+	public bool globalChat;
+	public bool localChat;
+	public bool teamSystem;
+	public bool safeZone;
+	public bool ingameMap;
+	public bool compass;
+	public bool contactSystem;
+	public bool crawling;
+	public bool rustPlus;
+	public bool wipeBpsOnProtocol;
+	public int maximumSleepingBags;
+	public bool returnValidCombatlog;
+	public bool missionSystem;
+	public bool mlrs;
 	public const BaseEntity.Flags Flag_Warmup = 128;
 	public const BaseEntity.Flags Flag_GameOver = 256;
 	public const BaseEntity.Flags Flag_WaitingForPlayers = 512;
-	[HeaderAttribute] 
-	public Translate.Phrase[] addedFeatures; 
-	public Translate.Phrase[] removedFeatures; 
-	public Translate.Phrase[] changedFeatures; 
-	public List<string> convars; 
-	[CompilerGeneratedAttribute] 
-	private static Action<BaseGameMode> GameModeChanged; 
-	public string shortname; 
-	public float matchDuration; 
-	public float warmupDuration; 
-	public float timeBetweenMatches; 
-	public int minPlayersToStart; 
-	public bool useCustomSpawns; 
-	public string victoryScoreName; 
-	public string teamScoreName; 
-	public int numScoreForVictory; 
-	public string gamemodeTitle; 
-	public SoundDefinition[] warmupMusics; 
-	public SoundDefinition[] lossMusics; 
-	public SoundDefinition[] winMusics; 
-	private float warmupStartTime; 
-	private float matchStartTime; 
-	private float matchEndTime; 
-	public List<string> gameModeTags; 
-	public BasePlayer.CameraMode deathCameraMode; 
-	public bool permanent; 
-	public bool limitTeamAuths; 
-	public bool allowSleeping; 
-	public bool allowWounding; 
-	public bool allowBleeding; 
-	public bool allowTemperature; 
-	public bool quickRespawn; 
-	public bool quickDeploy; 
-	public float respawnDelayOverride; 
-	public float startHealthOverride; 
-	public float autoHealDelay; 
-	public float autoHealDuration; 
-	public bool hasKillFeed; 
-	public static BaseGameMode clActiveGameMode; 
-	public static List<BaseGameMode> clGameModeManifest; 
-	public PlayerInventoryProperties[] loadouts; 
-	[TooltipAttribute] 
-	public bool useStaticLoadoutPerPlayer; 
-	public bool topUpMagazines; 
-	public bool sendKillNotifications; 
-	public BaseGameMode.GameModeTeam[] teams; 
-	private bool wasInWarmup; 
-	private bool wasMatchOver; 
-	private bool wasMatchActive; 
+	[HeaderAttribute]
+	public Translate.Phrase[] addedFeatures;
+	public Translate.Phrase[] removedFeatures;
+	public Translate.Phrase[] changedFeatures;
+	public List<string> convars;
+	[CompilerGeneratedAttribute]
+	private static Action<BaseGameMode> GameModeChanged;
+	public string shortname;
+	public float matchDuration;
+	public float warmupDuration;
+	public float timeBetweenMatches;
+	public int minPlayersToStart;
+	public bool useCustomSpawns;
+	public string victoryScoreName;
+	public string teamScoreName;
+	public int numScoreForVictory;
+	public string gamemodeTitle;
+	public SoundDefinition[] warmupMusics;
+	public SoundDefinition[] lossMusics;
+	public SoundDefinition[] winMusics;
+	private float warmupStartTime;
+	private float matchStartTime;
+	private float matchEndTime;
+	public List<string> gameModeTags;
+	public BasePlayer.CameraMode deathCameraMode;
+	public bool permanent;
+	public bool limitTeamAuths;
+	public bool allowSleeping;
+	public bool allowWounding;
+	public bool allowBleeding;
+	public bool allowTemperature;
+	public bool quickRespawn;
+	public bool quickDeploy;
+	public float respawnDelayOverride;
+	public float startHealthOverride;
+	public float autoHealDelay;
+	public float autoHealDuration;
+	public bool hasKillFeed;
+	public static BaseGameMode clActiveGameMode;
+	public static List<BaseGameMode> clGameModeManifest;
+	public PlayerInventoryProperties[] loadouts;
+	[TooltipAttribute]
+	public bool useStaticLoadoutPerPlayer;
+	public bool topUpMagazines;
+	public bool sendKillNotifications;
+	public BaseGameMode.GameModeTeam[] teams;
+	private bool wasInWarmup;
+	private bool wasMatchOver;
+	private bool wasMatchActive;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -109,10 +109,10 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10236
 
 	protected void OnCreated_Vanilla() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void add_GameModeChanged(Action<BaseGameMode> value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public static void remove_GameModeChanged(Action<BaseGameMode> value) { }
 
 	public bool HasAnyGameModeTag(string[] tags) { }
@@ -169,7 +169,7 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10236
 
 	public float TimeUntilMatchEnds() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void RPC_ScoreSplash(BaseEntity.RPCMessage msg) { }
 
 	public void .ctor() { }
@@ -178,17 +178,17 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10236
 
 }
 
-public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10237
+public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10239
 {
-	public Nullable<float> Scale; 
-	public Nullable<int> Amount; 
+	public Nullable<float> Scale;
+	public Nullable<int> Amount;
 
 }
 
-public class BaseGameMode.GameModeTeam // TypeDefIndex: 10238
+public class BaseGameMode.GameModeTeam // TypeDefIndex: 10240
 {
-	public string name; 
-	public PlayerInventoryProperties[] teamloadouts; 
+	public string name;
+	public PlayerInventoryProperties[] teamloadouts;
 
 
 	public void .ctor() { }

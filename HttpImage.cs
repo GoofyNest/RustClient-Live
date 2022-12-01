@@ -1,18 +1,18 @@
-public class HttpImage : MonoBehaviour // TypeDefIndex: 7084
+public class HttpImage : MonoBehaviour // TypeDefIndex: 7086
 {
-	public static Dictionary<string, UnityWebRequest> RequestCache; 
-	public static Dictionary<string, ValueTuple<Texture2D, Sprite>> TextureCache; 
-	public Texture2D LoadingImage; 
-	public Texture2D MissingImage; 
-	private RawImage rawImage; 
-	private Image image; 
-	private Sprite loadingSprite; 
-	private Sprite missingSprite; 
-	public string Url; 
-	public bool AutosizeHeight; 
-	public bool GenerateMipmaps; 
-	public float MaxWidth; 
-	public float MaxHeight; 
+	public static Dictionary<string, UnityWebRequest> RequestCache;
+	public static Dictionary<string, ValueTuple<Texture2D, Sprite>> TextureCache;
+	public Texture2D LoadingImage;
+	public Texture2D MissingImage;
+	private RawImage rawImage;
+	private Image image;
+	private Sprite loadingSprite;
+	private Sprite missingSprite;
+	public string Url;
+	public bool AutosizeHeight;
+	public bool GenerateMipmaps;
+	public float MaxWidth;
+	public float MaxHeight;
 
 
 	private void Init() { }
@@ -23,7 +23,7 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7084
 
 	public bool Load(string url) { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator WaitForLoad(string url) { }
 
 	private void UpdateImageTexture(ValueTuple<Texture2D, Sprite> tex) { }
@@ -32,7 +32,7 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7084
 
 	public void SetLoadingImage() { }
 
-	[IteratorStateMachineAttribute] 
+	[IteratorStateMachineAttribute]
 	private IEnumerator StartAndWaitForLoad(string url) { }
 
 	private void AutosizeForTexture(Texture2D texture) { }
@@ -47,63 +47,63 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7084
 
 }
 
-private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7085
+private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7087
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string url; 
-	public HttpImage <>4__this; 
+	private int <>1__state;
+	private object <>2__current;
+	public string url;
+	public HttpImage <>4__this;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
-private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7086
+private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7088
 {
-	private int <>1__state; 
-	private object <>2__current; 
-	public string url; 
-	public HttpImage <>4__this; 
-	private UnityWebRequest <request>5__2; 
+	private int <>1__state;
+	private object <>2__current;
+	public string url;
+	public HttpImage <>4__this;
+	private UnityWebRequest <request>5__2;
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.IDisposable.Dispose() { }
 
 	private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] 
+	[DebuggerHiddenAttribute]
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

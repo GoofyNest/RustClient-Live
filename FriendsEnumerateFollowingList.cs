@@ -1,10 +1,10 @@
 internal struct FriendsEnumerateFollowingList_t : ICallbackData // TypeDefIndex: 5329
 {
-	internal Result Result; 
-	internal ulong[] GSteamID; 
-	internal int ResultsReturned; 
-	internal int TotalResultCount; 
-	public static int _datasize; 
+	internal Result Result;
+	internal ulong[] GSteamID;
+	internal int ResultsReturned;
+	internal int TotalResultCount;
+	public static int _datasize;
 
 	public int DataSize { get; }
 	public CallbackType CallbackType { get; }

@@ -1,6 +1,6 @@
 internal sealed class BigIntegerStorage : DataStorage // TypeDefIndex: 4370
 {
-	private BigInteger[] _values; 
+	private BigInteger[] _values;
 
 
 	internal void .ctor(DataColumn column) { }

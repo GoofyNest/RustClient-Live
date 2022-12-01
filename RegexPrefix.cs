@@ -1,8 +1,8 @@
 internal sealed class RegexPrefix // TypeDefIndex: 2615
 {
-	internal string _prefix; 
-	internal bool _caseInsensitive; 
-	internal static RegexPrefix _empty; 
+	internal string _prefix;
+	internal bool _caseInsensitive;
+	internal static RegexPrefix _empty;
 
 	internal string Prefix { get; }
 	internal bool CaseInsensitive { get; }

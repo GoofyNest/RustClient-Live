@@ -1,6 +1,6 @@
 public enum X509FindType // TypeDefIndex: 2803
 {
-	public int value__; 
+	public int value__;
 	public const X509FindType FindByThumbprint = 0;
 	public const X509FindType FindBySubjectName = 1;
 	public const X509FindType FindBySubjectDistinguishedName = 2;

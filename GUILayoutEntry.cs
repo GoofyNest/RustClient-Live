@@ -1,16 +1,16 @@
 internal class GUILayoutEntry // TypeDefIndex: 4058
 {
-	public float minWidth; 
-	public float maxWidth; 
-	public float minHeight; 
-	public float maxHeight; 
-	public Rect rect; 
-	public int stretchWidth; 
-	public int stretchHeight; 
-	public bool consideredForMargin; 
-	private GUIStyle m_Style; 
-	internal static Rect kDummyRect; 
-	protected static int indent; 
+	public float minWidth;
+	public float maxWidth;
+	public float minHeight;
+	public float maxHeight;
+	public Rect rect;
+	public int stretchWidth;
+	public int stretchHeight;
+	public bool consideredForMargin;
+	private GUIStyle m_Style;
+	internal static Rect kDummyRect;
+	protected static int indent;
 
 	public GUIStyle style { get; set; }
 	public virtual int marginLeft { get; }

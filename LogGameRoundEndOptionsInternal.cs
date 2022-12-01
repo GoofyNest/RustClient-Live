@@ -1,7 +1,7 @@
-internal struct LogGameRoundEndOptionsInternal : ISettable<LogGameRoundEndOptions>, IDisposable // TypeDefIndex: 9770
+internal struct LogGameRoundEndOptionsInternal : ISettable<LogGameRoundEndOptions>, IDisposable // TypeDefIndex: 9772
 {
-	private int m_ApiVersion; 
-	private uint m_WinningTeamId; 
+	private int m_ApiVersion;
+	private uint m_WinningTeamId;
 
 	public uint WinningTeamId { set; }
 

@@ -1,10 +1,10 @@
-public class AverageVelocity // TypeDefIndex: 10844
+public class AverageVelocity // TypeDefIndex: 10850
 {
-	private Vector3 pos; 
-	private float time; 
-	private float lastEntry; 
-	private float averageSpeed; 
-	private Vector3 averageVelocity; 
+	private Vector3 pos;
+	private float time;
+	private float lastEntry;
+	private float averageSpeed;
+	private Vector3 averageVelocity;
 
 	public float Speed { get; }
 	public Vector3 Average { get; }

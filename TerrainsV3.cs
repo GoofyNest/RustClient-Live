@@ -1,7 +1,7 @@
-public class TerrainsV3 // TypeDefIndex: 7313
+public class TerrainsV3 // TypeDefIndex: 7315
 {
-	public Terrain terrain; 
-	public string id; 
+	public Terrain terrain;
+	public string id;
 
 
 	public void .ctor() { }

@@ -1,17 +1,17 @@
-public class TriggerParent : TriggerBase, IServerComponent // TypeDefIndex: 11779
+public class TriggerParent : TriggerBase, IServerComponent // TypeDefIndex: 11786
 {
-	[TooltipAttribute] 
-	[SerializeField] 
-	private bool doClippingCheck; 
-	[TooltipAttribute] 
-	public BaseMountable associatedMountable; 
-	[TooltipAttribute] 
-	public bool parentMountedPlayers; 
-	[TooltipAttribute] 
-	public bool parentSleepers; 
-	public bool ParentNPCPlayers; 
-	[TooltipAttribute] 
-	public bool overrideOtherTriggers; 
+	[TooltipAttribute]
+	[SerializeField]
+	private bool doClippingCheck;
+	[TooltipAttribute]
+	public BaseMountable associatedMountable;
+	[TooltipAttribute]
+	public bool parentMountedPlayers;
+	[TooltipAttribute]
+	public bool parentSleepers;
+	public bool ParentNPCPlayers;
+	[TooltipAttribute]
+	public bool overrideOtherTriggers;
 	public const int CLIP_CHECK_MASK = 1218511105;
 
 

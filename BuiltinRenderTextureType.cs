@@ -1,6 +1,6 @@
 public enum BuiltinRenderTextureType // TypeDefIndex: 3823
 {
-	public int value__; 
+	public int value__;
 	public const BuiltinRenderTextureType PropertyName = -4;
 	public const BuiltinRenderTextureType BufferPtr = -3;
 	public const BuiltinRenderTextureType RenderTexture = -2;

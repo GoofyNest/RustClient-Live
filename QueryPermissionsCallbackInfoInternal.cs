@@ -1,11 +1,11 @@
-internal struct QueryPermissionsCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryPermissionsCallbackInfo>, ISettable<QueryPermissionsCallbackInfo>, IDisposable // TypeDefIndex: 9357
+internal struct QueryPermissionsCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryPermissionsCallbackInfo>, ISettable<QueryPermissionsCallbackInfo>, IDisposable // TypeDefIndex: 9359
 {
-	private Result m_ResultCode; 
-	private IntPtr m_ClientData; 
-	private IntPtr m_LocalUserId; 
-	private IntPtr m_KWSUserId; 
-	private IntPtr m_DateOfBirth; 
-	private int m_IsMinor; 
+	private Result m_ResultCode;
+	private IntPtr m_ClientData;
+	private IntPtr m_LocalUserId;
+	private IntPtr m_KWSUserId;
+	private IntPtr m_DateOfBirth;
+	private int m_IsMinor;
 
 	public Result ResultCode { get; set; }
 	public object ClientData { get; set; }

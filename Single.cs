@@ -1,6 +1,6 @@
 public struct Single : IComparable, IFormattable, IConvertible, IComparable<float>, IEquatable<float> // TypeDefIndex: 299
 {
-	internal float m_value; 
+	internal float m_value;
 	public const float MinValue = -3,402823E+38;
 	public const float Epsilon = 1,401298E-45;
 	public const float MaxValue = 3,402823E+38;
@@ -15,7 +15,7 @@ public struct Single : IComparable, IFormattable, IConvertible, IComparable<floa
 
 	public static bool IsNegativeInfinity(float f) { }
 
-	[ReliabilityContractAttribute] 
+	[ReliabilityContractAttribute]
 	public static bool IsNaN(float f) { }
 
 	public static bool IsFinite(float f) { }

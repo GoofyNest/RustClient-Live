@@ -1,6 +1,6 @@
-public class WindZoneEx : MonoBehaviour // TypeDefIndex: 12450
+public class WindZoneEx : MonoBehaviour // TypeDefIndex: 12458
 {
-	private WindZone windZone; 
+	private WindZone windZone;
 
 	public WindZoneMode Mode { get; }
 	public float Radius { get; }

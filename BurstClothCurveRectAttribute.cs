@@ -1,7 +1,7 @@
-public class BurstClothCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7318
+public class BurstClothCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7320
 {
-	public readonly Rect Rect; 
-	public readonly Color Color; 
+	public readonly Rect Rect;
+	public readonly Color Color;
 
 
 	public void .ctor() { }

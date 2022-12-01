@@ -1,25 +1,25 @@
-internal struct SimulatePositionsJob : IJob // TypeDefIndex: 7332
+internal struct SimulatePositionsJob : IJob // TypeDefIndex: 7334
 {
-	[ReadOnlyAttribute] 
-	public NativeArray<ColliderData> ColliderData; 
-	[ReadOnlyAttribute] 
-	public NativeArray<ColliderState> ColliderState; 
-	[ReadOnlyAttribute] 
-	public NativeArray<BoneData> BoneData; 
-	public NativeArray<BoneState> BoneState; 
-	public int TickRate; 
-	public float DeltaTime; 
-	public int IterationCount; 
-	public float3 SimulationSpaceDelta; 
-	public float3 Gravity; 
-	public int StiffnessDepth; 
-	public float LengthModifier; 
-	public bool SiblingConstraints; 
-	public bool EnableCollisions; 
-	public float3 Origin; 
-	public quaternion Rotation; 
-	public float3 Up; 
-	public float Radius; 
+	[ReadOnlyAttribute]
+	public NativeArray<ColliderData> ColliderData;
+	[ReadOnlyAttribute]
+	public NativeArray<ColliderState> ColliderState;
+	[ReadOnlyAttribute]
+	public NativeArray<BoneData> BoneData;
+	public NativeArray<BoneState> BoneState;
+	public int TickRate;
+	public float DeltaTime;
+	public int IterationCount;
+	public float3 SimulationSpaceDelta;
+	public float3 Gravity;
+	public int StiffnessDepth;
+	public float LengthModifier;
+	public bool SiblingConstraints;
+	public bool EnableCollisions;
+	public float3 Origin;
+	public quaternion Rotation;
+	public float3 Up;
+	public float Radius;
 
 
 	public void Execute() { }

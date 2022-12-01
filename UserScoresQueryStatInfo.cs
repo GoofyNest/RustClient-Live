@@ -1,24 +1,24 @@
-public struct UserScoresQueryStatInfo // TypeDefIndex: 9320
+public struct UserScoresQueryStatInfo // TypeDefIndex: 9322
 {
-	[CompilerGeneratedAttribute] 
-	private Utf8String <StatName>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private LeaderboardAggregation <Aggregation>k__BackingField; 
+	[CompilerGeneratedAttribute]
+	private Utf8String <StatName>k__BackingField;
+	[CompilerGeneratedAttribute]
+	private LeaderboardAggregation <Aggregation>k__BackingField;
 
 	public Utf8String StatName { get; set; }
 	public LeaderboardAggregation Aggregation { get; set; }
 
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public Utf8String get_StatName() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_StatName(Utf8String value) { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public LeaderboardAggregation get_Aggregation() { }
 
-	[CompilerGeneratedAttribute] 
+	[CompilerGeneratedAttribute]
 	public void set_Aggregation(LeaderboardAggregation value) { }
 
 	internal void Set(ref UserScoresQueryStatInfoInternal other) { }

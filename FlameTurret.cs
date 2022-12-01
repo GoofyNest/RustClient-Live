@@ -1,18 +1,18 @@
-public class FlameTurret : StorageContainer // TypeDefIndex: 10289
+public class FlameTurret : StorageContainer // TypeDefIndex: 10292
 {
-	public Transform upper; 
-	public Vector3 aimDir; 
-	public float arc; 
-	public float triggeredDuration; 
-	public float flameRange; 
-	public float flameRadius; 
-	public float fuelPerSec; 
-	public Transform eyeTransform; 
-	public List<DamageTypeEntry> damagePerSec; 
-	public GameObjectRef triggeredEffect; 
-	public GameObjectRef fireballPrefab; 
-	public GameObjectRef explosionEffect; 
-	public TargetTrigger trigger; 
+	public Transform upper;
+	public Vector3 aimDir;
+	public float arc;
+	public float triggeredDuration;
+	public float flameRange;
+	public float flameRadius;
+	public float fuelPerSec;
+	public Transform eyeTransform;
+	public List<DamageTypeEntry> damagePerSec;
+	public GameObjectRef triggeredEffect;
+	public GameObjectRef fireballPrefab;
+	public GameObjectRef explosionEffect;
+	public TargetTrigger trigger;
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -27,7 +27,7 @@ public class FlameTurret : StorageContainer // TypeDefIndex: 10289
 
 	public void ClientThink() { }
 
-	[BaseEntity.RPC_Client] 
+	[BaseEntity.RPC_Client]
 	public void CLIENT_ReceiveAimDir(BaseEntity.RPCMessage rpc) { }
 
 	public void UpdateAiming() { }

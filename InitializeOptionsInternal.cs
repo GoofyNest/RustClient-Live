@@ -1,14 +1,14 @@
-internal struct InitializeOptionsInternal : ISettable<InitializeOptions>, IDisposable // TypeDefIndex: 9871
+internal struct InitializeOptionsInternal : ISettable<InitializeOptions>, IDisposable // TypeDefIndex: 9873
 {
-	private int m_ApiVersion; 
-	private IntPtr m_AllocateMemoryFunction; 
-	private IntPtr m_ReallocateMemoryFunction; 
-	private IntPtr m_ReleaseMemoryFunction; 
-	private IntPtr m_ProductName; 
-	private IntPtr m_ProductVersion; 
-	private IntPtr m_Reserved; 
-	private IntPtr m_SystemInitializeOptions; 
-	private IntPtr m_OverrideThreadAffinity; 
+	private int m_ApiVersion;
+	private IntPtr m_AllocateMemoryFunction;
+	private IntPtr m_ReallocateMemoryFunction;
+	private IntPtr m_ReleaseMemoryFunction;
+	private IntPtr m_ProductName;
+	private IntPtr m_ProductVersion;
+	private IntPtr m_Reserved;
+	private IntPtr m_SystemInitializeOptions;
+	private IntPtr m_OverrideThreadAffinity;
 
 	public IntPtr AllocateMemoryFunction { set; }
 	public IntPtr ReallocateMemoryFunction { set; }

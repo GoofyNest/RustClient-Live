@@ -1,7 +1,7 @@
-public static class WaterCheckEx // TypeDefIndex: 12386
+public static class WaterCheckEx // TypeDefIndex: 12394
 {
 
-	[ExtensionAttribute] 
+	[ExtensionAttribute]
 	public static bool ApplyWaterChecks(Transform transform, WaterCheck[] anchors, Vector3 pos, Quaternion rot, Vector3 scale) { }
 
 }

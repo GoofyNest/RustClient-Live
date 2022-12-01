@@ -1,71 +1,71 @@
-public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 12440
+public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 12448
 {
-	private static readonly uint[,] qualitySamples; 
-	private static Vector4[] sampleData; 
-	private Mesh blitMesh; 
-	private Mesh skyboxMesh; 
-	private static float[] octaVerts; 
-	private static readonly ReflectionProbeEx.CubemapFaceMatrices[] cubemapFaceMatrices; 
-	private static readonly ReflectionProbeEx.CubemapFaceMatrices[] cubemapFaceMatricesD3D11; 
-	private static readonly ReflectionProbeEx.CubemapFaceMatrices[] shadowCubemapFaceMatrices; 
-	private ReflectionProbeEx.CubemapFaceMatrices[] platformCubemapFaceMatrices; 
-	private static readonly HashSet<string> supportedShaderNames; 
-	private static Dictionary<Shader, Shader> supportedShaders; 
-	private static Dictionary<Material, Material> matchingMaterials; 
-	private RenderTexture probeTempTexture; 
-	private RenderTexture probeShadowTexture; 
-	private RenderTexture arrayTexture; 
-	private RenderTexture arrayTempTexture; 
-	private RenderTexture arrayDepthTexture; 
-	private int mipmapCount; 
-	private Material blitMaterial; 
-	private Material filterMaterial; 
-	private Material shadowMaterial; 
-	private CommandBuffer forwardCB; 
-	private CommandBuffer shadowCB; 
-	private Matrix4x4[] viewProjMatrixArray; 
-	private Matrix4x4[] objectToWorldArray; 
-	private Matrix4x4[] cameraToWorldArray; 
-	private bool useGeometryShader; 
-	private int PassCount; 
-	private static readonly int[] tab32; 
-	public ReflectionProbeRefreshMode refreshMode; 
-	public bool timeSlicing; 
-	public int resolution; 
-	[InspectorNameAttribute] 
-	public bool hdr; 
-	public float shadowDistance; 
-	public ReflectionProbeClearFlags clearFlags; 
-	public Color background; 
-	public float nearClip; 
-	public float farClip; 
-	public Transform attachToTarget; 
-	public Light directionalLight; 
-	public float textureMipBias; 
-	public bool highPrecision; 
-	public bool enableShadows; 
-	public ReflectionProbeEx.ConvolutionQuality convolutionQuality; 
-	public List<ReflectionProbeEx.RenderListEntry> staticRenderList; 
-	public Cubemap reflectionCubemap; 
-	public float reflectionIntensity; 
-	private List<ReflectionProbeEx.RenderListEntry> dynamicRenderList; 
-	private ReflectionProbe probe; 
-	private RenderTexture probeTexture; 
-	private int probeResolution; 
-	private bool probeHdr; 
-	private float probeShadowDistance; 
-	private float probeNearClip; 
-	private float probeFarClip; 
+	private static readonly uint[,] qualitySamples;
+	private static Vector4[] sampleData;
+	private Mesh blitMesh;
+	private Mesh skyboxMesh;
+	private static float[] octaVerts;
+	private static readonly ReflectionProbeEx.CubemapFaceMatrices[] cubemapFaceMatrices;
+	private static readonly ReflectionProbeEx.CubemapFaceMatrices[] cubemapFaceMatricesD3D11;
+	private static readonly ReflectionProbeEx.CubemapFaceMatrices[] shadowCubemapFaceMatrices;
+	private ReflectionProbeEx.CubemapFaceMatrices[] platformCubemapFaceMatrices;
+	private static readonly HashSet<string> supportedShaderNames;
+	private static Dictionary<Shader, Shader> supportedShaders;
+	private static Dictionary<Material, Material> matchingMaterials;
+	private RenderTexture probeTempTexture;
+	private RenderTexture probeShadowTexture;
+	private RenderTexture arrayTexture;
+	private RenderTexture arrayTempTexture;
+	private RenderTexture arrayDepthTexture;
+	private int mipmapCount;
+	private Material blitMaterial;
+	private Material filterMaterial;
+	private Material shadowMaterial;
+	private CommandBuffer forwardCB;
+	private CommandBuffer shadowCB;
+	private Matrix4x4[] viewProjMatrixArray;
+	private Matrix4x4[] objectToWorldArray;
+	private Matrix4x4[] cameraToWorldArray;
+	private bool useGeometryShader;
+	private int PassCount;
+	private static readonly int[] tab32;
+	public ReflectionProbeRefreshMode refreshMode;
+	public bool timeSlicing;
+	public int resolution;
+	[InspectorNameAttribute]
+	public bool hdr;
+	public float shadowDistance;
+	public ReflectionProbeClearFlags clearFlags;
+	public Color background;
+	public float nearClip;
+	public float farClip;
+	public Transform attachToTarget;
+	public Light directionalLight;
+	public float textureMipBias;
+	public bool highPrecision;
+	public bool enableShadows;
+	public ReflectionProbeEx.ConvolutionQuality convolutionQuality;
+	public List<ReflectionProbeEx.RenderListEntry> staticRenderList;
+	public Cubemap reflectionCubemap;
+	public float reflectionIntensity;
+	private List<ReflectionProbeEx.RenderListEntry> dynamicRenderList;
+	private ReflectionProbe probe;
+	private RenderTexture probeTexture;
+	private int probeResolution;
+	private bool probeHdr;
+	private float probeShadowDistance;
+	private float probeNearClip;
+	private float probeFarClip;
 	private const int probeDepth = 24;
-	private bool probeHighPrecision; 
-	private ReflectionProbeEx.TimeSlicingState timeSlicedRenderState; 
-	private bool scriptingRenderQueued; 
-	private Matrix4x4 faceProjMatrix; 
-	private Matrix4x4 faceProjInvMatrix; 
-	private int prevFrame; 
-	private ReflectionProbeRefreshMode savedProbeRefresh; 
-	private ReflectionProbeMode savedProbeMode; 
-	private Texture savedProbeCustomTexture; 
+	private bool probeHighPrecision;
+	private ReflectionProbeEx.TimeSlicingState timeSlicedRenderState;
+	private bool scriptingRenderQueued;
+	private Matrix4x4 faceProjMatrix;
+	private Matrix4x4 faceProjInvMatrix;
+	private int prevFrame;
+	private ReflectionProbeRefreshMode savedProbeRefresh;
+	private ReflectionProbeMode savedProbeMode;
+	private Texture savedProbeCustomTexture;
 
 	public RenderTexture Texture { get; }
 
@@ -201,31 +201,31 @@ public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 12440
 
 }
 
-private struct ReflectionProbeEx.CubemapSkyboxVertex // TypeDefIndex: 12441
+private struct ReflectionProbeEx.CubemapSkyboxVertex // TypeDefIndex: 12449
 {
-	public float x; 
-	public float y; 
-	public float z; 
-	public Color color; 
-	public float tu; 
-	public float tv; 
-	public float tw; 
+	public float x;
+	public float y;
+	public float z;
+	public Color color;
+	public float tu;
+	public float tv;
+	public float tw;
 
 }
 
-private struct ReflectionProbeEx.CubemapFaceMatrices // TypeDefIndex: 12442
+private struct ReflectionProbeEx.CubemapFaceMatrices // TypeDefIndex: 12450
 {
-	public Matrix4x4 worldToView; 
-	public Matrix4x4 viewToWorld; 
+	public Matrix4x4 worldToView;
+	public Matrix4x4 viewToWorld;
 
 
 	public void .ctor(Vector3 x, Vector3 y, Vector3 z) { }
 
 }
 
-public enum ReflectionProbeEx.ConvolutionQuality // TypeDefIndex: 12443
+public enum ReflectionProbeEx.ConvolutionQuality // TypeDefIndex: 12451
 {
-	public int value__; 
+	public int value__;
 	public const ReflectionProbeEx.ConvolutionQuality Lowest = 0;
 	public const ReflectionProbeEx.ConvolutionQuality Low = 1;
 	public const ReflectionProbeEx.ConvolutionQuality Medium = 2;
@@ -234,19 +234,19 @@ public enum ReflectionProbeEx.ConvolutionQuality // TypeDefIndex: 12443
 
 }
 
-public struct ReflectionProbeEx.RenderListEntry // TypeDefIndex: 12444
+public struct ReflectionProbeEx.RenderListEntry // TypeDefIndex: 12452
 {
-	public Renderer renderer; 
-	public bool alwaysEnabled; 
+	public Renderer renderer;
+	public bool alwaysEnabled;
 
 
 	public void .ctor(Renderer renderer, bool alwaysEnabled) { }
 
 }
 
-private enum ReflectionProbeEx.TimeSlicingState // TypeDefIndex: 12445
+private enum ReflectionProbeEx.TimeSlicingState // TypeDefIndex: 12453
 {
-	public int value__; 
+	public int value__;
 	public const ReflectionProbeEx.TimeSlicingState Shadow = 0;
 	public const ReflectionProbeEx.TimeSlicingState Render = 1;
 	public const ReflectionProbeEx.TimeSlicingState GenerateMips = 2;

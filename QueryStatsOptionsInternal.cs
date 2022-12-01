@@ -1,12 +1,12 @@
-internal struct QueryStatsOptionsInternal : ISettable<QueryStatsOptions>, IDisposable // TypeDefIndex: 8445
+internal struct QueryStatsOptionsInternal : ISettable<QueryStatsOptions>, IDisposable // TypeDefIndex: 8447
 {
-	private int m_ApiVersion; 
-	private IntPtr m_LocalUserId; 
-	private long m_StartTime; 
-	private long m_EndTime; 
-	private IntPtr m_StatNames; 
-	private uint m_StatNamesCount; 
-	private IntPtr m_TargetUserId; 
+	private int m_ApiVersion;
+	private IntPtr m_LocalUserId;
+	private long m_StartTime;
+	private long m_EndTime;
+	private IntPtr m_StatNames;
+	private uint m_StatNamesCount;
+	private IntPtr m_TargetUserId;
 
 	public ProductUserId LocalUserId { set; }
 	public Nullable<DateTimeOffset> StartTime { set; }
