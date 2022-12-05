@@ -1,4 +1,4 @@
-public class Crosshair : BaseMonoBehaviour // TypeDefIndex: 12611
+public class Crosshair : BaseMonoBehaviour // TypeDefIndex: 12612
 {
 	public static bool Enabled;
 	public Image Image;

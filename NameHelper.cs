@@ -1,4 +1,4 @@
-public static class NameHelper // TypeDefIndex: 12506
+public static class NameHelper // TypeDefIndex: 12507
 {
 	private static Dictionary<string, string> _cache;
 

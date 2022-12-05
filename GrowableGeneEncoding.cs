@@ -1,4 +1,4 @@
-public static class GrowableGeneEncoding // TypeDefIndex: 11282
+public static class GrowableGeneEncoding // TypeDefIndex: 11283
 {
 
 	public static void EncodeGenesToItem(GrowableEntity sourceGrowable, Item targetItem) { }

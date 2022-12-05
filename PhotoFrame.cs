@@ -61,7 +61,7 @@ public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 639
 
 }
 
-public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10147
+public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10148
 {
 	private Option __menuOption_Menu_ChangeText;
 	private Option __menuOption_Menu_LockSign;

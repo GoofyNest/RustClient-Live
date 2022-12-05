@@ -1,4 +1,4 @@
-public class LootPanelOven : LootPanel // TypeDefIndex: 12813
+public class LootPanelOven : LootPanel // TypeDefIndex: 12814
 {
 	private OvenLootPanel ovenPanel;
 

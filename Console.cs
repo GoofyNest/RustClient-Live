@@ -3203,7 +3203,7 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10016
 
 }
 
-public static class ConsoleNetwork // TypeDefIndex: 11110
+public static class ConsoleNetwork // TypeDefIndex: 11111
 {
 
 	internal static void Init() { }
@@ -3216,7 +3216,7 @@ public static class ConsoleNetwork // TypeDefIndex: 11110
 
 }
 
-public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12603
+public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12604
 {
 	public RustText text;
 	public InputField outputField;
@@ -3281,7 +3281,7 @@ public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12603
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12604
+private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12605
 {
 	public Button btn;
 	public ConsoleUI <>4__this;
@@ -3293,7 +3293,7 @@ private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12604
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12605
+private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12606
 {
 	public string str;
 
@@ -3304,7 +3304,7 @@ private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12605
 
 }
 
-private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12606
+private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12607
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -3334,7 +3334,7 @@ private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumer
 
 }
 
-public class ConsoleInput // TypeDefIndex: 13485
+public class ConsoleInput // TypeDefIndex: 13486
 {
 	[CompilerGeneratedAttribute]
 	private Action<string> OnInputText;
@@ -3372,7 +3372,7 @@ public class ConsoleInput // TypeDefIndex: 13485
 
 }
 
-public class ConsoleWindow // TypeDefIndex: 13486
+public class ConsoleWindow // TypeDefIndex: 13487
 {
 	private TextWriter oldOutput;
 	private const int STD_INPUT_HANDLE = -10;
@@ -3399,7 +3399,7 @@ public class ConsoleWindow // TypeDefIndex: 13486
 
 }
 
-public class Console : ConsoleSystem // TypeDefIndex: 13698
+public class Console : ConsoleSystem // TypeDefIndex: 13699
 {
 	[ClientVar]
 	[HelpAttribute]

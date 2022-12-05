@@ -1,4 +1,4 @@
-public class ContainerIOEntity : IOEntity, IItemContainerEntity, IIdealSlotEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10095
+public class ContainerIOEntity : IOEntity, IItemContainerEntity, IIdealSlotEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10096
 {
 	private Option __menuOption_Menu_Occupied;
 	private Option __menuOption_Menu_Open;

@@ -1,4 +1,4 @@
-public class GenerateSplat : ProceduralComponent // TypeDefIndex: 12282
+public class GenerateSplat : ProceduralComponent // TypeDefIndex: 12283
 {
 
 	public static extern void Native_GenerateSplat(byte[] map, int res, Vector3 pos, Vector3 size, uint seed, float lootAngle, float biomeAngle, short[] heightmap, int heightres, byte[] biomemap, int biomeres, int[] topologymap, int topologyres) { }

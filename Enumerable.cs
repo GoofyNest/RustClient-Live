@@ -12536,7 +12536,7 @@ internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, 
 
 }
 
-public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12562
+public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12563
 {
 	public object Value;
 	public RustText TextValue;
@@ -12551,7 +12551,7 @@ public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12562
 
 }
 
-public class EnumListUI : MonoBehaviour // TypeDefIndex: 12563
+public class EnumListUI : MonoBehaviour // TypeDefIndex: 12564
 {
 	public Transform PrefabItem;
 	public Transform Container;

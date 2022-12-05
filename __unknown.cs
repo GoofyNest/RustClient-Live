@@ -8429,7 +8429,7 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 
 }
 
-public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10627
+public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10628
 {
 	public bool bAttacking;
 	public bool bHitMetal;
@@ -8473,7 +8473,7 @@ public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10627
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 13968
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 13969
 {
 
 [CompilerGeneratedAttribute]

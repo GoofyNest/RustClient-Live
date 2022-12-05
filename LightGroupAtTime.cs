@@ -1,4 +1,4 @@
-public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10929
+public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10930
 {
 	public float IntensityOverride;
 	public AnimationCurve IntensityScaleOverTime;
@@ -57,7 +57,7 @@ public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10929
 
 }
 
-private struct LightGroupAtTime.EmissiveCols // TypeDefIndex: 10930
+private struct LightGroupAtTime.EmissiveCols // TypeDefIndex: 10931
 {
 	public Color colour;
 	public int matIndex;
@@ -67,7 +67,7 @@ private struct LightGroupAtTime.EmissiveCols // TypeDefIndex: 10930
 
 }
 
-public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 10931
+public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 10932
 {
 
 	protected override void RunJob(LightGroupAtTime entity) { }

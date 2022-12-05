@@ -1,4 +1,4 @@
-public class HotOverlay : MonoBehaviour // TypeDefIndex: 10863
+public class HotOverlay : MonoBehaviour // TypeDefIndex: 10864
 {
 	public PostProcessVolume postProcessVolume;
 	public float smoothTime;

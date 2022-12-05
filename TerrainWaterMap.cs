@@ -1,4 +1,4 @@
-public class TerrainWaterMap : TerrainMap<short> // TypeDefIndex: 12179
+public class TerrainWaterMap : TerrainMap<short> // TypeDefIndex: 12180
 {
 	public Texture2D WaterTexture;
 	private float normY;
@@ -58,7 +58,7 @@ public class TerrainWaterMap : TerrainMap<short> // TypeDefIndex: 12179
 
 }
 
-private sealed class TerrainWaterMap.<>c__DisplayClass3_0 // TypeDefIndex: 12180
+private sealed class TerrainWaterMap.<>c__DisplayClass3_0 // TypeDefIndex: 12181
 {
 	public Color32[] heights;
 	public TerrainWaterMap <>4__this;

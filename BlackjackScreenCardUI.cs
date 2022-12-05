@@ -1,4 +1,4 @@
-public class BlackjackScreenCardUI : FacepunchBehaviour // TypeDefIndex: 12642
+public class BlackjackScreenCardUI : FacepunchBehaviour // TypeDefIndex: 12643
 {
 	[SerializeField]
 	private Canvas baseCanvas;

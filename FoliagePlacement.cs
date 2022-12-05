@@ -1,4 +1,4 @@
-public class FoliagePlacement : ScriptableObject // TypeDefIndex: 11621
+public class FoliagePlacement : ScriptableObject // TypeDefIndex: 11622
 {
 	[HeaderAttribute]
 	public float Density;

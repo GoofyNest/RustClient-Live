@@ -1,4 +1,4 @@
-public class WaterCatcher : LiquidContainer // TypeDefIndex: 11261
+public class WaterCatcher : LiquidContainer // TypeDefIndex: 11262
 {
 	[HeaderAttribute]
 	public ItemDefinition itemToCreate;

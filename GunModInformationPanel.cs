@@ -1,4 +1,4 @@
-public class GunModInformationPanel : ItemInformationPanel // TypeDefIndex: 12784
+public class GunModInformationPanel : ItemInformationPanel // TypeDefIndex: 12785
 {
 	public ItemTextValue fireRateDisplay;
 	public ItemTextValue velocityDisplay;

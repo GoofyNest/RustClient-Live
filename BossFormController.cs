@@ -1,4 +1,4 @@
-public class BossFormController : ArcadeEntityController // TypeDefIndex: 10489
+public class BossFormController : ArcadeEntityController // TypeDefIndex: 10490
 {
 	public float animationSpeed;
 	public Sprite[] animationFrames;
@@ -33,7 +33,7 @@ public class BossFormController : ArcadeEntityController // TypeDefIndex: 10489
 
 }
 
-public class BossFormController.BossDamagePoint // TypeDefIndex: 10490
+public class BossFormController.BossDamagePoint // TypeDefIndex: 10491
 {
 	public BoxCollider hitBox;
 	public float health;

@@ -1,4 +1,4 @@
-public class CullingVolume : MonoBehaviour, IClientComponent // TypeDefIndex: 11585
+public class CullingVolume : MonoBehaviour, IClientComponent // TypeDefIndex: 11586
 {
 	[TooltipAttribute]
 	public GameObject OccludeeRoot;

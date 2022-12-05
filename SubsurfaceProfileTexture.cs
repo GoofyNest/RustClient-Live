@@ -1,4 +1,4 @@
-public class SubsurfaceProfileTexture // TypeDefIndex: 12422
+public class SubsurfaceProfileTexture // TypeDefIndex: 12423
 {
 	public const int SUBSURFACE_RADIUS_SCALE = 1024;
 	public const int SUBSURFACE_KERNEL_SIZE = 3;
@@ -30,7 +30,7 @@ public class SubsurfaceProfileTexture // TypeDefIndex: 12422
 
 }
 
-private struct SubsurfaceProfileTexture.SubsurfaceProfileEntry // TypeDefIndex: 12423
+private struct SubsurfaceProfileTexture.SubsurfaceProfileEntry // TypeDefIndex: 12424
 {
 	public SubsurfaceProfileData data;
 	public SubsurfaceProfile profile;

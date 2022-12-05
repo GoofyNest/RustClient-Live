@@ -1,4 +1,4 @@
-public class Chainsaw : BaseMelee // TypeDefIndex: 10272
+public class Chainsaw : BaseMelee // TypeDefIndex: 10273
 {
 	public float attackFadeInTime;
 	public float attackFadeInDelay;

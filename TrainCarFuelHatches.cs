@@ -1,4 +1,4 @@
-public class TrainCarFuelHatches : MonoBehaviour // TypeDefIndex: 11511
+public class TrainCarFuelHatches : MonoBehaviour // TypeDefIndex: 11512
 {
 	[SerializeField]
 	private TrainCar owner;

@@ -1,4 +1,4 @@
-public class PreUpdateHook : MonoBehaviour // TypeDefIndex: 13132
+public class PreUpdateHook : MonoBehaviour // TypeDefIndex: 13133
 {
 	public static Action OnUpdate;
 	public static Action OnLateUpdate;

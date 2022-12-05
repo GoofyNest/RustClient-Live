@@ -1,4 +1,4 @@
-public class VertexColorStream : MonoBehaviour // TypeDefIndex: 13334
+public class VertexColorStream : MonoBehaviour // TypeDefIndex: 13335
 {
 	[HideInInspector]
 	public Mesh originalMesh;

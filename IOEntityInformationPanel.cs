@@ -1,4 +1,4 @@
-public class IOEntityInformationPanel : ItemInformationPanel // TypeDefIndex: 12786
+public class IOEntityInformationPanel : ItemInformationPanel // TypeDefIndex: 12787
 {
 	public ItemTextValue requiredPowerDisplay;
 	public ItemTextValue requiredFluidDisplay;

@@ -1,4 +1,4 @@
-public class HostileNote : MonoBehaviour, IClientComponent // TypeDefIndex: 12709
+public class HostileNote : MonoBehaviour, IClientComponent // TypeDefIndex: 12710
 {
 	public CanvasGroup warnGroup;
 	public CanvasGroup group;

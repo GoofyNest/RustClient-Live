@@ -16,7 +16,7 @@ public enum AmmoTypes // TypeDefIndex: 6631
 
 }
 
-public class AmmoBelowAIEvent : BaseAIEvent // TypeDefIndex: 11129
+public class AmmoBelowAIEvent : BaseAIEvent // TypeDefIndex: 11130
 {
 	[CompilerGeneratedAttribute]
 	private float <Value>k__BackingField;
@@ -34,7 +34,7 @@ public class AmmoBelowAIEvent : BaseAIEvent // TypeDefIndex: 11129
 
 }
 
-public class AmmoBelowEventUI : BaseEventUI // TypeDefIndex: 12552
+public class AmmoBelowEventUI : BaseEventUI // TypeDefIndex: 12553
 {
 
 	public override AIEventData Save() { }
@@ -45,7 +45,7 @@ public class AmmoBelowEventUI : BaseEventUI // TypeDefIndex: 12552
 
 }
 
-public class AmmoInformationPanel : ItemInformationPanel // TypeDefIndex: 12756
+public class AmmoInformationPanel : ItemInformationPanel // TypeDefIndex: 12757
 {
 	public ItemStatValue damageDisplay;
 	public ItemStatValue velocityDisplay;

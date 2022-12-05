@@ -1,4 +1,4 @@
-public enum EncodeOptions // TypeDefIndex: 13373
+public enum EncodeOptions // TypeDefIndex: 13374
 {
 	public int value__;
 	public const EncodeOptions None = 0;

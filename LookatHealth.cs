@@ -1,4 +1,4 @@
-public class LookatHealth : MonoBehaviour // TypeDefIndex: 12872
+public class LookatHealth : MonoBehaviour // TypeDefIndex: 12873
 {
 	public static bool Enabled;
 	public GameObject container;

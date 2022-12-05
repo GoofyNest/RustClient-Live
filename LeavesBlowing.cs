@@ -1,4 +1,4 @@
-public class LeavesBlowing : MonoBehaviour // TypeDefIndex: 11947
+public class LeavesBlowing : MonoBehaviour // TypeDefIndex: 11948
 {
 	public ParticleSystem m_psLeaves;
 	public float m_flSwirl;

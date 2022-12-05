@@ -1,4 +1,4 @@
-public class HLODBounds : MonoBehaviour, IEditorComponent // TypeDefIndex: 11673
+public class HLODBounds : MonoBehaviour, IEditorComponent // TypeDefIndex: 11674
 {
 	[TooltipAttribute]
 	public Bounds MeshBounds;

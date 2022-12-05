@@ -1,4 +1,4 @@
-public class SupplySignal : TimedExplosive // TypeDefIndex: 11353
+public class SupplySignal : TimedExplosive // TypeDefIndex: 11354
 {
 	public GameObjectRef smokeEffectPrefab;
 	public GameObjectRef EntityToCreate;

@@ -1,4 +1,4 @@
-public class SeparableSSS // TypeDefIndex: 12419
+public class SeparableSSS // TypeDefIndex: 12420
 {
 
 	private static Vector3 Gaussian(float variance, float r, Color falloffColor) { }

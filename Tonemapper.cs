@@ -1,4 +1,4 @@
-public enum Tonemapper // TypeDefIndex: 13578
+public enum Tonemapper // TypeDefIndex: 13579
 {
 	public int value__;
 	public const Tonemapper None = 0;

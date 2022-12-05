@@ -1,4 +1,4 @@
-public class GodRays : PostProcessEffectSettings // TypeDefIndex: 12013
+public class GodRays : PostProcessEffectSettings // TypeDefIndex: 12014
 {
 	public BoolParameter UseDepth;
 	public BlendModeTypeParameter BlendMode;

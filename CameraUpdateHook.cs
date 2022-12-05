@@ -1,4 +1,4 @@
-public class CameraUpdateHook : MonoBehaviour // TypeDefIndex: 13093
+public class CameraUpdateHook : MonoBehaviour // TypeDefIndex: 13094
 {
 	public static Action PreCull;
 	public static Action PreRender;
@@ -12,7 +12,7 @@ public class CameraUpdateHook : MonoBehaviour // TypeDefIndex: 13093
 
 }
 
-private sealed class CameraUpdateHook.<>c // TypeDefIndex: 13094
+private sealed class CameraUpdateHook.<>c // TypeDefIndex: 13095
 {
 	public static readonly CameraUpdateHook.<>c <>9;
 	public static Camera.CameraCallback <>9__4_0;

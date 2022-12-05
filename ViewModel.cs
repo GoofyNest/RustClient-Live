@@ -1,4 +1,4 @@
-public class ViewModel : MonoBehaviour, IClientComponent // TypeDefIndex: 10986
+public class ViewModel : MonoBehaviour, IClientComponent // TypeDefIndex: 10987
 {
 	public GameObjectRef viewModelPrefab;
 	public HeldEntity targetEntity;

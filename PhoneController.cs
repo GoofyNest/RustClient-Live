@@ -1,4 +1,4 @@
-public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 11191
+public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 11192
 {
 	public int PhoneNumber;
 	public string PhoneName;

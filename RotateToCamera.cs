@@ -1,4 +1,4 @@
-public class RotateToCamera : MonoBehaviour, IClientComponent // TypeDefIndex: 10964
+public class RotateToCamera : MonoBehaviour, IClientComponent // TypeDefIndex: 10965
 {
 	public float maxDistance;
 

@@ -1,4 +1,4 @@
-public class ElectricBattery : IOEntity, IInstanceDataReceiver // TypeDefIndex: 10426
+public class ElectricBattery : IOEntity, IInstanceDataReceiver // TypeDefIndex: 10427
 {
 	public int maxOutput;
 	public float maxCapactiySeconds;

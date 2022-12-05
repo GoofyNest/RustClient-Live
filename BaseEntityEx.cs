@@ -1,4 +1,4 @@
-public static class BaseEntityEx // TypeDefIndex: 11199
+public static class BaseEntityEx // TypeDefIndex: 11200
 {
 
 	[ExtensionAttribute]

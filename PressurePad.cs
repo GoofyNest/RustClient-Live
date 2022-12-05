@@ -1,4 +1,4 @@
-public class PressurePad : BaseDetector // TypeDefIndex: 10430
+public class PressurePad : BaseDetector // TypeDefIndex: 10431
 {
 	public float pressPowerTime;
 	public int pressPowerAmount;

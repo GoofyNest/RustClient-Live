@@ -1,4 +1,4 @@
-public class NewsSource : MonoBehaviour // TypeDefIndex: 12917
+public class NewsSource : MonoBehaviour // TypeDefIndex: 12918
 {
 	private static readonly Regex BbcodeParse;
 	public RustText title;
@@ -35,7 +35,7 @@ public class NewsSource : MonoBehaviour // TypeDefIndex: 12917
 
 }
 
-private struct NewsSource.ParagraphBuilder // TypeDefIndex: 12918
+private struct NewsSource.ParagraphBuilder // TypeDefIndex: 12919
 {
 	public StringBuilder StringBuilder;
 	public List<string> Links;
@@ -49,7 +49,7 @@ private struct NewsSource.ParagraphBuilder // TypeDefIndex: 12918
 
 }
 
-private sealed class NewsSource.<>c__DisplayClass12_0 // TypeDefIndex: 12919
+private sealed class NewsSource.<>c__DisplayClass12_0 // TypeDefIndex: 12920
 {
 	public SteamNewsSource.Story story;
 
@@ -62,7 +62,7 @@ private sealed class NewsSource.<>c__DisplayClass12_0 // TypeDefIndex: 12919
 
 }
 
-private sealed class NewsSource.<>c // TypeDefIndex: 12920
+private sealed class NewsSource.<>c // TypeDefIndex: 12921
 {
 	public static readonly NewsSource.<>c <>9;
 	public static Func<Manifest.NewsInfo.BlogInfo, string> <>9__12_2;
@@ -76,7 +76,7 @@ private sealed class NewsSource.<>c // TypeDefIndex: 12920
 
 }
 
-private sealed class NewsSource.<>c__DisplayClass18_0 // TypeDefIndex: 12921
+private sealed class NewsSource.<>c__DisplayClass18_0 // TypeDefIndex: 12922
 {
 	public string videoUrl;
 

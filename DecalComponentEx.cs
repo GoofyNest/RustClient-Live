@@ -1,4 +1,4 @@
-public static class DecalComponentEx // TypeDefIndex: 10907
+public static class DecalComponentEx // TypeDefIndex: 10908
 {
 
 	[ExtensionAttribute]

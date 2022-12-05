@@ -1,4 +1,4 @@
-public class Mountain : TerrainPlacement // TypeDefIndex: 12348
+public class Mountain : TerrainPlacement // TypeDefIndex: 12349
 {
 	public float Fade;
 
@@ -21,7 +21,7 @@ public class Mountain : TerrainPlacement // TypeDefIndex: 12348
 
 }
 
-private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 12349
+private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 12350
 {
 	public Matrix4x4 worldToLocal;
 	public Mountain <>4__this;
@@ -35,7 +35,7 @@ private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 12349
 
 }
 
-private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 12350
+private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 12351
 {
 	public Matrix4x4 worldToLocal;
 	public Mountain <>4__this;
@@ -59,7 +59,7 @@ private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 12350
 
 }
 
-private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 12351
+private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 12352
 {
 	public Matrix4x4 worldToLocal;
 	public Mountain <>4__this;
@@ -78,7 +78,7 @@ private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 12351
 
 }
 
-private sealed class Mountain.<>c__DisplayClass6_0 // TypeDefIndex: 12352
+private sealed class Mountain.<>c__DisplayClass6_0 // TypeDefIndex: 12353
 {
 	public Matrix4x4 worldToLocal;
 	public Mountain <>4__this;

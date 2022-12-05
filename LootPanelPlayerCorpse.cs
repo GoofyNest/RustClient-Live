@@ -1,4 +1,4 @@
-public class LootPanelPlayerCorpse : LootPanel // TypeDefIndex: 12814
+public class LootPanelPlayerCorpse : LootPanel // TypeDefIndex: 12815
 {
 	public GameObject[] BeltRoots;
 	public GameObject[] ClothingRoots;

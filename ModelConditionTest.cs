@@ -1,4 +1,4 @@
-public abstract class ModelConditionTest : PrefabAttribute // TypeDefIndex: 10797
+public abstract class ModelConditionTest : PrefabAttribute // TypeDefIndex: 10798
 {
 
 	public abstract bool DoTest(BaseEntity ent);
@@ -9,7 +9,7 @@ public abstract class ModelConditionTest : PrefabAttribute // TypeDefIndex: 1079
 
 }
 
-public class ModelConditionTest_False : ModelConditionTest // TypeDefIndex: 10798
+public class ModelConditionTest_False : ModelConditionTest // TypeDefIndex: 10799
 {
 	public ConditionalModel reference;
 
@@ -20,7 +20,7 @@ public class ModelConditionTest_False : ModelConditionTest // TypeDefIndex: 1079
 
 }
 
-public class ModelConditionTest_FoundationSide : ModelConditionTest // TypeDefIndex: 10799
+public class ModelConditionTest_FoundationSide : ModelConditionTest // TypeDefIndex: 10800
 {
 	private const string square_south = "foundation/sockets/foundation-top/1";
 	private const string square_north = "foundation/sockets/foundation-top/3";
@@ -42,7 +42,7 @@ public class ModelConditionTest_FoundationSide : ModelConditionTest // TypeDefIn
 
 }
 
-public class ModelConditionTest_RampHigh : ModelConditionTest // TypeDefIndex: 10800
+public class ModelConditionTest_RampHigh : ModelConditionTest // TypeDefIndex: 10801
 {
 	private const string socket = "ramp/sockets/block-male/1";
 
@@ -55,7 +55,7 @@ public class ModelConditionTest_RampHigh : ModelConditionTest // TypeDefIndex: 1
 
 }
 
-public class ModelConditionTest_RampLow : ModelConditionTest // TypeDefIndex: 10801
+public class ModelConditionTest_RampLow : ModelConditionTest // TypeDefIndex: 10802
 {
 	private const string socket = "ramp/sockets/block-male/1";
 
@@ -68,7 +68,7 @@ public class ModelConditionTest_RampLow : ModelConditionTest // TypeDefIndex: 10
 
 }
 
-public class ModelConditionTest_RoofBottom : ModelConditionTest // TypeDefIndex: 10802
+public class ModelConditionTest_RoofBottom : ModelConditionTest // TypeDefIndex: 10803
 {
 	private const string roof_square = "roof/";
 	private const string roof_triangle = "roof.triangle/";
@@ -90,7 +90,7 @@ public class ModelConditionTest_RoofBottom : ModelConditionTest // TypeDefIndex:
 
 }
 
-public class ModelConditionTest_RoofLeft : ModelConditionTest // TypeDefIndex: 10803
+public class ModelConditionTest_RoofLeft : ModelConditionTest // TypeDefIndex: 10804
 {
 	public ModelConditionTest_RoofLeft.AngleType angle;
 	public ModelConditionTest_RoofLeft.ShapeType shape;
@@ -118,7 +118,7 @@ public class ModelConditionTest_RoofLeft : ModelConditionTest // TypeDefIndex: 1
 
 }
 
-public enum ModelConditionTest_RoofLeft.AngleType // TypeDefIndex: 10804
+public enum ModelConditionTest_RoofLeft.AngleType // TypeDefIndex: 10805
 {
 	public int value__;
 	public const ModelConditionTest_RoofLeft.AngleType None = -1;
@@ -133,7 +133,7 @@ public enum ModelConditionTest_RoofLeft.AngleType // TypeDefIndex: 10804
 
 }
 
-public enum ModelConditionTest_RoofLeft.ShapeType // TypeDefIndex: 10805
+public enum ModelConditionTest_RoofLeft.ShapeType // TypeDefIndex: 10806
 {
 	public int value__;
 	public const ModelConditionTest_RoofLeft.ShapeType Any = -1;
@@ -142,7 +142,7 @@ public enum ModelConditionTest_RoofLeft.ShapeType // TypeDefIndex: 10805
 
 }
 
-public class ModelConditionTest_RoofRight : ModelConditionTest // TypeDefIndex: 10806
+public class ModelConditionTest_RoofRight : ModelConditionTest // TypeDefIndex: 10807
 {
 	public ModelConditionTest_RoofRight.AngleType angle;
 	public ModelConditionTest_RoofRight.ShapeType shape;
@@ -170,7 +170,7 @@ public class ModelConditionTest_RoofRight : ModelConditionTest // TypeDefIndex: 
 
 }
 
-public enum ModelConditionTest_RoofRight.AngleType // TypeDefIndex: 10807
+public enum ModelConditionTest_RoofRight.AngleType // TypeDefIndex: 10808
 {
 	public int value__;
 	public const ModelConditionTest_RoofRight.AngleType None = -1;
@@ -185,7 +185,7 @@ public enum ModelConditionTest_RoofRight.AngleType // TypeDefIndex: 10807
 
 }
 
-public enum ModelConditionTest_RoofRight.ShapeType // TypeDefIndex: 10808
+public enum ModelConditionTest_RoofRight.ShapeType // TypeDefIndex: 10809
 {
 	public int value__;
 	public const ModelConditionTest_RoofRight.ShapeType Any = -1;
@@ -194,7 +194,7 @@ public enum ModelConditionTest_RoofRight.ShapeType // TypeDefIndex: 10808
 
 }
 
-public class ModelConditionTest_RoofTop : ModelConditionTest // TypeDefIndex: 10809
+public class ModelConditionTest_RoofTop : ModelConditionTest // TypeDefIndex: 10810
 {
 	private const string roof_square = "roof/";
 	private const string roof_triangle = "roof.triangle/";
@@ -216,7 +216,7 @@ public class ModelConditionTest_RoofTop : ModelConditionTest // TypeDefIndex: 10
 
 }
 
-public class ModelConditionTest_RoofTriangle : ModelConditionTest // TypeDefIndex: 10810
+public class ModelConditionTest_RoofTriangle : ModelConditionTest // TypeDefIndex: 10811
 {
 	private const string socket = "roof/sockets/wall-female";
 
@@ -227,7 +227,7 @@ public class ModelConditionTest_RoofTriangle : ModelConditionTest // TypeDefInde
 
 }
 
-public class ModelConditionTest_SpiralStairs : ModelConditionTest // TypeDefIndex: 10811
+public class ModelConditionTest_SpiralStairs : ModelConditionTest // TypeDefIndex: 10812
 {
 	private const string stairs_socket_female = "sockets/stairs-female/1";
 	private static string[] stairs_sockets_female;
@@ -245,7 +245,7 @@ public class ModelConditionTest_SpiralStairs : ModelConditionTest // TypeDefInde
 
 }
 
-public class ModelConditionTest_True : ModelConditionTest // TypeDefIndex: 10812
+public class ModelConditionTest_True : ModelConditionTest // TypeDefIndex: 10813
 {
 	public ConditionalModel reference;
 
@@ -256,7 +256,7 @@ public class ModelConditionTest_True : ModelConditionTest // TypeDefIndex: 10812
 
 }
 
-public class ModelConditionTest_Wall : ModelConditionTest // TypeDefIndex: 10813
+public class ModelConditionTest_Wall : ModelConditionTest // TypeDefIndex: 10814
 {
 
 	public override bool DoTest(BaseEntity ent) { }
@@ -265,7 +265,7 @@ public class ModelConditionTest_Wall : ModelConditionTest // TypeDefIndex: 10813
 
 }
 
-public class ModelConditionTest_WallCornerLeft : ModelConditionTest // TypeDefIndex: 10814
+public class ModelConditionTest_WallCornerLeft : ModelConditionTest // TypeDefIndex: 10815
 {
 	private const string socket = "sockets/stability/2";
 	private static string[] sockets;
@@ -279,7 +279,7 @@ public class ModelConditionTest_WallCornerLeft : ModelConditionTest // TypeDefIn
 
 }
 
-public class ModelConditionTest_WallCornerRight : ModelConditionTest // TypeDefIndex: 10815
+public class ModelConditionTest_WallCornerRight : ModelConditionTest // TypeDefIndex: 10816
 {
 	private const string socket = "sockets/stability/1";
 	private static string[] sockets;
@@ -293,7 +293,7 @@ public class ModelConditionTest_WallCornerRight : ModelConditionTest // TypeDefI
 
 }
 
-public class ModelConditionTest_WallTriangleLeft : ModelConditionTest // TypeDefIndex: 10816
+public class ModelConditionTest_WallTriangleLeft : ModelConditionTest // TypeDefIndex: 10817
 {
 	private const string socket_1 = "wall/sockets/wall-female";
 	private const string socket_2 = "wall/sockets/floor-female/1";
@@ -314,7 +314,7 @@ public class ModelConditionTest_WallTriangleLeft : ModelConditionTest // TypeDef
 
 }
 
-public class ModelConditionTest_WallTriangleRight : ModelConditionTest // TypeDefIndex: 10817
+public class ModelConditionTest_WallTriangleRight : ModelConditionTest // TypeDefIndex: 10818
 {
 	private const string socket_1 = "wall/sockets/wall-female";
 	private const string socket_2 = "wall/sockets/floor-female/1";

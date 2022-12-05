@@ -1,4 +1,4 @@
-public class SceneToPrefabTag : MonoBehaviour, IEditorComponent // TypeDefIndex: 11739
+public class SceneToPrefabTag : MonoBehaviour, IEditorComponent // TypeDefIndex: 11740
 {
 	public SceneToPrefabTag.TagType Type;
 	public int SpecificLOD;
@@ -8,7 +8,7 @@ public class SceneToPrefabTag : MonoBehaviour, IEditorComponent // TypeDefIndex:
 
 }
 
-public enum SceneToPrefabTag.TagType // TypeDefIndex: 11740
+public enum SceneToPrefabTag.TagType // TypeDefIndex: 11741
 {
 	public int value__;
 	public const SceneToPrefabTag.TagType ForceInclude = 0;

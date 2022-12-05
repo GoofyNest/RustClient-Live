@@ -59,7 +59,7 @@ public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class ResearchTable : StorageContainer // TypeDefIndex: 10358
+public class ResearchTable : StorageContainer // TypeDefIndex: 10359
 {
 	public float researchFinishedTime;
 	public float researchCostFraction;
@@ -95,7 +95,7 @@ public class ResearchTable : StorageContainer // TypeDefIndex: 10358
 
 }
 
-public enum ResearchTable.ResearchType // TypeDefIndex: 10359
+public enum ResearchTable.ResearchType // TypeDefIndex: 10360
 {
 	public int value__;
 	public const ResearchTable.ResearchType ResearchTable = 0;

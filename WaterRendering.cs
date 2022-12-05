@@ -1,4 +1,4 @@
-public class WaterRendering // TypeDefIndex: 12377
+public class WaterRendering // TypeDefIndex: 12378
 {
 	private WaterSystem water;
 	private WaterSimulation simulation;
@@ -106,7 +106,7 @@ public class WaterRendering // TypeDefIndex: 12377
 
 }
 
-private struct WaterRendering.RenderState // TypeDefIndex: 12378
+private struct WaterRendering.RenderState // TypeDefIndex: 12379
 {
 	public Camera camera;
 	public int layer;
@@ -119,7 +119,7 @@ private struct WaterRendering.RenderState // TypeDefIndex: 12378
 
 }
 
-private sealed class WaterRendering.<>c // TypeDefIndex: 12379
+private sealed class WaterRendering.<>c // TypeDefIndex: 12380
 {
 	public static readonly WaterRendering.<>c <>9;
 	public static Comparison<WaterCullingVolume> <>9__62_0;

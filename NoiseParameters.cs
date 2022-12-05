@@ -1,4 +1,4 @@
-public struct NoiseParameters // TypeDefIndex: 12048
+public struct NoiseParameters // TypeDefIndex: 12049
 {
 	public int Octaves;
 	public float Frequency;

@@ -65,7 +65,7 @@ public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 643
 
 }
 
-public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<Snowmobile>, IPrefabPreProcess // TypeDefIndex: 10171
+public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<Snowmobile>, IPrefabPreProcess // TypeDefIndex: 10172
 {
 	private Option __menuOption_Menu_FuelStorage;
 	private Option __menuOption_Menu_ItemStorage;

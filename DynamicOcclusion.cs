@@ -1,4 +1,4 @@
-public class DynamicOcclusion : MonoBehaviour // TypeDefIndex: 13343
+public class DynamicOcclusion : MonoBehaviour // TypeDefIndex: 13344
 {
 	public LayerMask layerMask;
 	public float minOccluderArea;
@@ -45,7 +45,7 @@ public class DynamicOcclusion : MonoBehaviour // TypeDefIndex: 13343
 
 }
 
-private enum DynamicOcclusion.Direction // TypeDefIndex: 13344
+private enum DynamicOcclusion.Direction // TypeDefIndex: 13345
 {
 	public int value__;
 	public const DynamicOcclusion.Direction Up = 0;

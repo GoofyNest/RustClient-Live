@@ -1,4 +1,4 @@
-public class VoiceProcessor : EntityComponentBase // TypeDefIndex: 11405
+public class VoiceProcessor : EntityComponentBase // TypeDefIndex: 11406
 {
 	public AudioSource mouthSpeaker;
 	public PlayerVoiceSpeaker playerSpeaker;

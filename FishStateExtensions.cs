@@ -1,4 +1,4 @@
-public static class FishStateExtensions // TypeDefIndex: 11201
+public static class FishStateExtensions // TypeDefIndex: 11202
 {
 
 	[ExtensionAttribute]

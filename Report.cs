@@ -246,7 +246,7 @@ public sealed class ReportsInterface : Handle // TypeDefIndex: 8637
 
 }
 
-public class ReportBug : UIDialog // TypeDefIndex: 13857
+public class ReportBug : UIDialog // TypeDefIndex: 13858
 {
 	public GameObject GetInformation;
 	public GameObject Finished;
@@ -300,7 +300,7 @@ public class ReportBug : UIDialog // TypeDefIndex: 13857
 
 }
 
-public static class ReportBug.Phrases // TypeDefIndex: 13858
+public static class ReportBug.Phrases // TypeDefIndex: 13859
 {
 	public static Translate.Phrase Initializing;
 	public static Translate.Phrase SendingReport;
@@ -311,7 +311,7 @@ public static class ReportBug.Phrases // TypeDefIndex: 13858
 
 }
 
-private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13859
+private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13860
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -340,7 +340,7 @@ private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, I
 
 }
 
-private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 13860
+private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 13861
 {
 	public int <>1__state;
 	public AsyncVoidMethodBuilder <>t__builder;
@@ -356,7 +356,7 @@ private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-private sealed class ReportBug.<>c // TypeDefIndex: 13861
+private sealed class ReportBug.<>c // TypeDefIndex: 13862
 {
 	public static readonly ReportBug.<>c <>9;
 	public static Comparison<BasePlayer> <>9__31_0;
@@ -370,7 +370,7 @@ private sealed class ReportBug.<>c // TypeDefIndex: 13861
 
 }
 
-public class ReportPlayer : UIDialog // TypeDefIndex: 13862
+public class ReportPlayer : UIDialog // TypeDefIndex: 13863
 {
 	public GameObject FindPlayer;
 	public GameObject GetInformation;
@@ -409,7 +409,7 @@ public class ReportPlayer : UIDialog // TypeDefIndex: 13862
 
 }
 
-public static class ReportPlayer.Phrases // TypeDefIndex: 13863
+public static class ReportPlayer.Phrases // TypeDefIndex: 13864
 {
 	public static Translate.Phrase Initializing;
 	public static Translate.Phrase SendingReport;
@@ -420,7 +420,7 @@ public static class ReportPlayer.Phrases // TypeDefIndex: 13863
 
 }
 
-private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 13864
+private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 13865
 {
 	public int <>1__state;
 	public AsyncVoidMethodBuilder <>t__builder;

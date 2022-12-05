@@ -620,7 +620,7 @@ public class DemoClient : Client, IDisposable // TypeDefIndex: 6868
 
 }
 
-public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10912
+public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10913
 {
 	[CompilerGeneratedAttribute]
 	private DemoShot <CurrentShot>k__BackingField;
@@ -691,7 +691,7 @@ public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10912
 
 }
 
-public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefIndex: 10913
+public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefIndex: 10914
 {
 	private DemoShot recordingShot;
 	private float lastKeyframe;
@@ -781,7 +781,7 @@ public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefI
 
 }
 
-public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10914
+public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10915
 {
 	public bool Countdown;
 	public bool PauseOnSave;
@@ -791,7 +791,7 @@ public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10914
 
 }
 
-private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10915
+private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10916
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -824,7 +824,7 @@ private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object
 
 }
 
-public static class DemoShotHelpers // TypeDefIndex: 10916
+public static class DemoShotHelpers // TypeDefIndex: 10917
 {
 
 	[ExtensionAttribute]
@@ -856,7 +856,7 @@ public static class DemoShotHelpers // TypeDefIndex: 10916
 
 }
 
-public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12543
+public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12544
 {
 	public PlayableDirector Director;
 
@@ -869,7 +869,7 @@ public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12543
 
 }
 
-public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12544
+public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12545
 {
 	public string DemoName;
 
@@ -888,7 +888,7 @@ public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12544
 
 }
 
-public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex: 12622
+public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex: 12623
 {
 	public GameObject Root;
 
@@ -901,7 +901,7 @@ public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex
 
 }
 
-public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12623
+public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12624
 {
 	public RustSlider DemoProgress;
 	public RustText DemoName;
@@ -953,7 +953,7 @@ public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12623
 
 }
 
-private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12624
+private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12625
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -981,7 +981,7 @@ private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object
 
 }
 
-public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12625
+public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12626
 {
 	public CanvasGroup Canvas;
 	public static bool ToggleHide;
@@ -995,7 +995,7 @@ public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12625
 
 }
 
-public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12626
+public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12627
 {
 	public bool FireEventOnClicked;
 
@@ -1010,7 +1010,7 @@ public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHand
 
 }
 
-public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12627
+public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12628
 {
 	public RustButton PlayButton;
 	public Sprite DragSprite;
@@ -1053,7 +1053,7 @@ public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12627
 
 }
 
-public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12628
+public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12629
 {
 	public RustButton FolderName;
 	public Transform ChildRoot;
@@ -1106,7 +1106,7 @@ public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12628
 
 }
 
-public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12629
+public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12630
 {
 
 	public void OnDroppedValue(object data) { }
@@ -1115,7 +1115,7 @@ public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12629
 
 }
 
-public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // TypeDefIndex: 12630
+public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // TypeDefIndex: 12631
 {
 	public GameObjectRef ShotListEntry;
 	public GameObjectRef FolderEntry;
@@ -1166,7 +1166,7 @@ public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // Type
 
 }
 
-public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12631
+public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12632
 {
 	public RustInput NameInput;
 	public GameObject RecordingRoot;
@@ -1209,7 +1209,7 @@ public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12631
 
 }
 
-public class DemoText : MonoBehaviour // TypeDefIndex: 12632
+public class DemoText : MonoBehaviour // TypeDefIndex: 12633
 {
 	public RustText TimeText;
 	public RustText TotalSecondText;
@@ -1229,7 +1229,7 @@ public class DemoText : MonoBehaviour // TypeDefIndex: 12632
 
 }
 
-public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12637
+public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12638
 {
 	public RustInput Input;
 	public GameObject RecordingUnderlay;
@@ -1255,7 +1255,7 @@ public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12
 
 }
 
-public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // TypeDefIndex: 12638
+public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // TypeDefIndex: 12639
 {
 	public RustText RecordingLabel;
 	public RustText ProgressLabel;
@@ -1280,7 +1280,7 @@ public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // 
 
 }
 
-public class DemoItem : RustButton // TypeDefIndex: 12889
+public class DemoItem : RustButton // TypeDefIndex: 12890
 {
 	public Demos demos;
 	public int itemId;
@@ -1297,7 +1297,7 @@ public class DemoItem : RustButton // TypeDefIndex: 12889
 
 }
 
-public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // TypeDefIndex: 12890
+public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // TypeDefIndex: 12891
 {
 	public VirtualScroll virtualScroll;
 	public GameObject deletePopup;
@@ -1339,7 +1339,7 @@ public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // Typ
 
 }
 
-private struct Demos.DemoInfo // TypeDefIndex: 12891
+private struct Demos.DemoInfo // TypeDefIndex: 12892
 {
 	public string path;
 	public string name;
@@ -1351,7 +1351,7 @@ private struct Demos.DemoInfo // TypeDefIndex: 12891
 
 }
 
-private sealed class Demos.<>c // TypeDefIndex: 12892
+private sealed class Demos.<>c // TypeDefIndex: 12893
 {
 	public static readonly Demos.<>c <>9;
 	public static Func<Demos.DemoInfo, string> <>9__14_0;
@@ -1383,7 +1383,7 @@ private sealed class Demos.<>c // TypeDefIndex: 12892
 
 }
 
-private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12893
+private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12894
 {
 	public Demos.DemoInfo demoInfo;
 
@@ -1394,7 +1394,7 @@ private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12893
 
 }
 
-public class Demo : ConsoleSystem // TypeDefIndex: 13711
+public class Demo : ConsoleSystem // TypeDefIndex: 13712
 {
 	public static uint Version;
 	private static bool _hud;
@@ -1475,7 +1475,7 @@ public class Demo : ConsoleSystem // TypeDefIndex: 13711
 
 }
 
-public class Demo.Header : DemoHeader, IDemoHeader // TypeDefIndex: 13712
+public class Demo.Header : DemoHeader, IDemoHeader // TypeDefIndex: 13713
 {
 	private long Network.IDemoHeader.Length { get; set; }
 

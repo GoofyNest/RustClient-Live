@@ -1,4 +1,4 @@
-public class ScarecrowBrain : BaseAIBrain // TypeDefIndex: 10672
+public class ScarecrowBrain : BaseAIBrain // TypeDefIndex: 10673
 {
 
 	public void .ctor() { }

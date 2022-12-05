@@ -1,4 +1,4 @@
-public class WaterCullingVolume : MonoBehaviour // TypeDefIndex: 12359
+public class WaterCullingVolume : MonoBehaviour // TypeDefIndex: 12360
 {
 	public bool isDynamic;
 	private Bounds worldBounds;

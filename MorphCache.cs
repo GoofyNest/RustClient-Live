@@ -1,4 +1,4 @@
-public class MorphCache : FacepunchBehaviour // TypeDefIndex: 12445
+public class MorphCache : FacepunchBehaviour // TypeDefIndex: 12446
 {
 	private Mesh[] shapes;
 	private SkinnedMeshRenderer skinnedMeshRenderer;

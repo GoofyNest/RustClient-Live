@@ -1,4 +1,4 @@
-public class Preset // TypeDefIndex: 13365
+public class Preset // TypeDefIndex: 13366
 {
 	public bool DiagDetection;
 	public bool CornerDetection;

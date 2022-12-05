@@ -1,4 +1,4 @@
-public enum InfrastructureType // TypeDefIndex: 12186
+public enum InfrastructureType // TypeDefIndex: 12187
 {
 	public int value__;
 	public const InfrastructureType Road = 0;

@@ -1,4 +1,4 @@
-public class VitalNote : MonoBehaviour, IClientComponent, IVitalNotice // TypeDefIndex: 13078
+public class VitalNote : MonoBehaviour, IClientComponent, IVitalNotice // TypeDefIndex: 13079
 {
 	public VitalNote.Vital VitalType;
 	public FloatConditions showIf;
@@ -28,7 +28,7 @@ public class VitalNote : MonoBehaviour, IClientComponent, IVitalNotice // TypeDe
 
 }
 
-public enum VitalNote.Vital // TypeDefIndex: 13079
+public enum VitalNote.Vital // TypeDefIndex: 13080
 {
 	public int value__;
 	public const VitalNote.Vital Comfort = 0;

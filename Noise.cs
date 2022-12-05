@@ -1,4 +1,4 @@
-public static class Noise // TypeDefIndex: 12047
+public static class Noise // TypeDefIndex: 12048
 {
 	public const float MIN = -1000000;
 	public const float MAX = 1000000;

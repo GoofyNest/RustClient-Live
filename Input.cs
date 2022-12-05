@@ -245,7 +245,7 @@ private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6849
 
 }
 
-public class Input : ConsoleSystem // TypeDefIndex: 13740
+public class Input : ConsoleSystem // TypeDefIndex: 13741
 {
 	[ClientVar]
 	public static bool flipy;

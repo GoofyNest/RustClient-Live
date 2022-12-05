@@ -1,4 +1,4 @@
-public sealed class BlurTypeParameter : ParameterOverride<BlurType> // TypeDefIndex: 11994
+public sealed class BlurTypeParameter : ParameterOverride<BlurType> // TypeDefIndex: 11995
 {
 
 	public void .ctor() { }

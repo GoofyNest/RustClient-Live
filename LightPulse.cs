@@ -1,4 +1,4 @@
-public class LightPulse : MonoBehaviour, IClientComponent // TypeDefIndex: 11091
+public class LightPulse : MonoBehaviour, IClientComponent // TypeDefIndex: 11092
 {
 	public Light TargetLight;
 	public float PulseSpeed;

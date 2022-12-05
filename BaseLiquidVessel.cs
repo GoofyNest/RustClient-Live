@@ -1,4 +1,4 @@
-public class BaseLiquidVessel : AttackEntity // TypeDefIndex: 10244
+public class BaseLiquidVessel : AttackEntity // TypeDefIndex: 10245
 {
 	[HeaderAttribute]
 	public GameObjectRef thrownWaterObject;

@@ -1,4 +1,4 @@
-public class GameTip : SingletonComponent<GameTip> // TypeDefIndex: 12716
+public class GameTip : SingletonComponent<GameTip> // TypeDefIndex: 12717
 {
 	public CanvasGroup canvasGroup;
 	public RustIcon icon;
@@ -46,7 +46,7 @@ public class GameTip : SingletonComponent<GameTip> // TypeDefIndex: 12716
 
 }
 
-public enum GameTip.Styles // TypeDefIndex: 12717
+public enum GameTip.Styles // TypeDefIndex: 12718
 {
 	public int value__;
 	public const GameTip.Styles Blue_Normal = 0;
@@ -57,7 +57,7 @@ public enum GameTip.Styles // TypeDefIndex: 12717
 
 }
 
-public struct GameTip.Theme // TypeDefIndex: 12718
+public struct GameTip.Theme // TypeDefIndex: 12719
 {
 	public Icons Icon;
 	public Color BackgroundColor;
@@ -66,7 +66,7 @@ public struct GameTip.Theme // TypeDefIndex: 12718
 
 }
 
-private sealed class GameTip.<Think>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12719
+private sealed class GameTip.<Think>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12720
 {
 	private int <>1__state;
 	private object <>2__current;

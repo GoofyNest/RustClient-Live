@@ -1,4 +1,4 @@
-public class OpenURL : MonoBehaviour // TypeDefIndex: 12980
+public class OpenURL : MonoBehaviour // TypeDefIndex: 12981
 {
 	public bool OpenWebURL;
 

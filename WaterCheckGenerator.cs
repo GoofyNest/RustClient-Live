@@ -1,4 +1,4 @@
-public class WaterCheckGenerator : MonoBehaviour, IEditorComponent // TypeDefIndex: 12395
+public class WaterCheckGenerator : MonoBehaviour, IEditorComponent // TypeDefIndex: 12396
 {
 	public float PlacementRadius;
 	public float PlacementDistance;

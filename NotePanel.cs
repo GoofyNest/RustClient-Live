@@ -1,4 +1,4 @@
-public class NotePanel : MonoBehaviour // TypeDefIndex: 10535
+public class NotePanel : MonoBehaviour // TypeDefIndex: 10536
 {
 	public InputField input;
 	private Item item;

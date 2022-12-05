@@ -1,4 +1,4 @@
-public class ConsumableInformationPanel : ItemInformationPanel // TypeDefIndex: 12778
+public class ConsumableInformationPanel : ItemInformationPanel // TypeDefIndex: 12779
 {
 	public ItemTextValue[] values;
 	public UIGenesDisplay Genes;

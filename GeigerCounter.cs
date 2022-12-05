@@ -1,4 +1,4 @@
-public class GeigerCounter : AttackEntity // TypeDefIndex: 11205
+public class GeigerCounter : AttackEntity // TypeDefIndex: 11206
 {
 	public Transform geigerRod;
 	private BasePlayer playerCache;

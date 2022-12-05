@@ -125,7 +125,7 @@ public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class CodeLock : BaseLock // TypeDefIndex: 10093
+public class CodeLock : BaseLock // TypeDefIndex: 10094
 {
 	private Option __menuOption_Menu_ChangeGuestCode;
 	private Option __menuOption_Menu_ChangeLockCode;

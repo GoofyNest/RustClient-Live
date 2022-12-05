@@ -1,4 +1,4 @@
-public class SunSettings : MonoBehaviour, IClientComponent // TypeDefIndex: 10976
+public class SunSettings : MonoBehaviour, IClientComponent // TypeDefIndex: 10977
 {
 	private Light light;
 

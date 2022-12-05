@@ -1,4 +1,4 @@
-public class DofExposer : SingletonComponent<DofExposer> // TypeDefIndex: 11014
+public class DofExposer : SingletonComponent<DofExposer> // TypeDefIndex: 11015
 {
 	public PostProcessVolume PostVolume;
 	public bool DofEnabled;

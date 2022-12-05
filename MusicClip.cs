@@ -1,4 +1,4 @@
-public class MusicClip : ScriptableObject // TypeDefIndex: 10732
+public class MusicClip : ScriptableObject // TypeDefIndex: 10733
 {
 	public AudioClip audioClip;
 	public int lengthInBars;

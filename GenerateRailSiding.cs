@@ -1,4 +1,4 @@
-public class GenerateRailSiding : ProceduralComponent // TypeDefIndex: 12251
+public class GenerateRailSiding : ProceduralComponent // TypeDefIndex: 12252
 {
 	public const float Width = 4;
 	public const float InnerPadding = 1;

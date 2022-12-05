@@ -1,4 +1,4 @@
-public class ContainerSourceLoot : ItemContainerSource // TypeDefIndex: 12617
+public class ContainerSourceLoot : ItemContainerSource // TypeDefIndex: 12618
 {
 	public int container;
 

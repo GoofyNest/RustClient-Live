@@ -1,4 +1,4 @@
-public class Locker : StorageContainer // TypeDefIndex: 10321
+public class Locker : StorageContainer // TypeDefIndex: 10322
 {
 	public GameObjectRef equipSound;
 	private const int maxGearSets = 3;
@@ -21,7 +21,7 @@ public class Locker : StorageContainer // TypeDefIndex: 10321
 
 }
 
-private enum Locker.RowType // TypeDefIndex: 10322
+private enum Locker.RowType // TypeDefIndex: 10323
 {
 	public int value__;
 	public const Locker.RowType Clothing = 0;
@@ -29,7 +29,7 @@ private enum Locker.RowType // TypeDefIndex: 10322
 
 }
 
-public static class Locker.LockerFlags // TypeDefIndex: 10323
+public static class Locker.LockerFlags // TypeDefIndex: 10324
 {
 	public const BaseEntity.Flags IsEquipping = 128;
 

@@ -1,4 +1,4 @@
-public class LargeShredderTrigger : TriggerBase // TypeDefIndex: 11376
+public class LargeShredderTrigger : TriggerBase // TypeDefIndex: 11377
 {
 	public LargeShredder shredder;
 

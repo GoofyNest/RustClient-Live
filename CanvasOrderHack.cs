@@ -1,4 +1,4 @@
-public class CanvasOrderHack : MonoBehaviour // TypeDefIndex: 10843
+public class CanvasOrderHack : MonoBehaviour // TypeDefIndex: 10844
 {
 
 	private void OnEnable() { }

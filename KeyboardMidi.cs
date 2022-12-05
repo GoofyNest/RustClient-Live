@@ -1,4 +1,4 @@
-public static class KeyboardMidi // TypeDefIndex: 13930
+public static class KeyboardMidi // TypeDefIndex: 13931
 {
 	[ClientVar]
 	public static string midikeymap;
@@ -18,7 +18,7 @@ public static class KeyboardMidi // TypeDefIndex: 13930
 
 }
 
-private sealed class KeyboardMidi.<>c // TypeDefIndex: 13931
+private sealed class KeyboardMidi.<>c // TypeDefIndex: 13932
 {
 	public static readonly KeyboardMidi.<>c <>9;
 	public static Func<string, KeyCode> <>9__4_0;

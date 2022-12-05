@@ -1,4 +1,4 @@
-public class CinematicEntity : BaseEntity // TypeDefIndex: 11010
+public class CinematicEntity : BaseEntity // TypeDefIndex: 11011
 {
 	private const BaseEntity.Flags HideMesh = 128;
 	public GameObject[] DisableObjects;

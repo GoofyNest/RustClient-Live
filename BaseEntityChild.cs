@@ -1,4 +1,4 @@
-public class BaseEntityChild : MonoBehaviour // TypeDefIndex: 11214
+public class BaseEntityChild : MonoBehaviour // TypeDefIndex: 11215
 {
 
 	public static void Setup(GameObject obj, BaseEntity parent) { }

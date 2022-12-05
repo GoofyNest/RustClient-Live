@@ -1,4 +1,4 @@
-public class XMasRefill : BaseEntity // TypeDefIndex: 10393
+public class XMasRefill : BaseEntity // TypeDefIndex: 10394
 {
 	public GameObjectRef[] giftPrefabs;
 	public List<BasePlayer> goodKids;

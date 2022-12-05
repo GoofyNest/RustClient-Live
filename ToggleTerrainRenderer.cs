@@ -1,4 +1,4 @@
-public class ToggleTerrainRenderer : MonoBehaviour // TypeDefIndex: 12930
+public class ToggleTerrainRenderer : MonoBehaviour // TypeDefIndex: 12931
 {
 	public Toggle toggleControl;
 	public Text textControl;

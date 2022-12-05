@@ -69,7 +69,7 @@ public enum ScreenSpaceAmbientOcclusion.SSAOSamples // TypeDefIndex: 8223
 
 }
 
-public enum ScreenSpaceReflectionPreset // TypeDefIndex: 13604
+public enum ScreenSpaceReflectionPreset // TypeDefIndex: 13605
 {
 	public int value__;
 	public const ScreenSpaceReflectionPreset Lower = 0;
@@ -83,7 +83,7 @@ public enum ScreenSpaceReflectionPreset // TypeDefIndex: 13604
 
 }
 
-public enum ScreenSpaceReflectionResolution // TypeDefIndex: 13605
+public enum ScreenSpaceReflectionResolution // TypeDefIndex: 13606
 {
 	public int value__;
 	public const ScreenSpaceReflectionResolution Downsampled = 0;
@@ -92,21 +92,21 @@ public enum ScreenSpaceReflectionResolution // TypeDefIndex: 13605
 
 }
 
-public sealed class ScreenSpaceReflectionPresetParameter : ParameterOverride<ScreenSpaceReflectionPreset> // TypeDefIndex: 13606
+public sealed class ScreenSpaceReflectionPresetParameter : ParameterOverride<ScreenSpaceReflectionPreset> // TypeDefIndex: 13607
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class ScreenSpaceReflectionResolutionParameter : ParameterOverride<ScreenSpaceReflectionResolution> // TypeDefIndex: 13607
+public sealed class ScreenSpaceReflectionResolutionParameter : ParameterOverride<ScreenSpaceReflectionResolution> // TypeDefIndex: 13608
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class ScreenSpaceReflections : PostProcessEffectSettings // TypeDefIndex: 13608
+public sealed class ScreenSpaceReflections : PostProcessEffectSettings // TypeDefIndex: 13609
 {
 	[TooltipAttribute]
 	public ScreenSpaceReflectionPresetParameter preset;
@@ -134,7 +134,7 @@ public sealed class ScreenSpaceReflections : PostProcessEffectSettings // TypeDe
 
 }
 
-internal sealed class ScreenSpaceReflectionsRenderer : PostProcessEffectRenderer<ScreenSpaceReflections> // TypeDefIndex: 13609
+internal sealed class ScreenSpaceReflectionsRenderer : PostProcessEffectRenderer<ScreenSpaceReflections> // TypeDefIndex: 13610
 {
 	private RenderTexture m_Resolve;
 	private RenderTexture m_History;
@@ -154,7 +154,7 @@ internal sealed class ScreenSpaceReflectionsRenderer : PostProcessEffectRenderer
 
 }
 
-private class ScreenSpaceReflectionsRenderer.QualityPreset // TypeDefIndex: 13610
+private class ScreenSpaceReflectionsRenderer.QualityPreset // TypeDefIndex: 13611
 {
 	public int maximumIterationCount;
 	public float thickness;
@@ -165,7 +165,7 @@ private class ScreenSpaceReflectionsRenderer.QualityPreset // TypeDefIndex: 1361
 
 }
 
-private enum ScreenSpaceReflectionsRenderer.Pass // TypeDefIndex: 13611
+private enum ScreenSpaceReflectionsRenderer.Pass // TypeDefIndex: 13612
 {
 	public int value__;
 	public const ScreenSpaceReflectionsRenderer.Pass Test = 0;

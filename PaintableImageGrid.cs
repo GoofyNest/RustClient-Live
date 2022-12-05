@@ -1,4 +1,4 @@
-public class PaintableImageGrid : UIBehaviour // TypeDefIndex: 12981
+public class PaintableImageGrid : UIBehaviour // TypeDefIndex: 12982
 {
 	public UIPaintableImage templateImage;
 	public int cols;

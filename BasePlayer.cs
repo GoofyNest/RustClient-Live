@@ -3184,7 +3184,7 @@ private sealed class BasePlayer.<>c__DisplayClass309_0 // TypeDefIndex: 10066
 
 }
 
-public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10344
+public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10345
 {
 	public ItemContainer containerMain;
 	public ItemContainer containerBelt;
@@ -3234,7 +3234,7 @@ public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 1034
 
 }
 
-public enum PlayerInventory.Type // TypeDefIndex: 10345
+public enum PlayerInventory.Type // TypeDefIndex: 10346
 {
 	public int value__;
 	public const PlayerInventory.Type Main = 0;
@@ -3243,7 +3243,7 @@ public enum PlayerInventory.Type // TypeDefIndex: 10345
 
 }
 
-public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10346
+public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10347
 {
 	public BaseEntity entitySource;
 	public Item itemSource;
@@ -3272,7 +3272,7 @@ public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10346
 
 }
 
-public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 10347
+public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 10348
 {
 	public const float HotThreshold = 40;
 	public const float ColdThreshold = 5;
@@ -3319,7 +3319,7 @@ public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 1034
 
 }
 
-public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10348
+public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10349
 {
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -3335,7 +3335,7 @@ public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10348
 
 }
 
-public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10429
+public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10430
 {
 	public BaseDetector myDetector;
 
@@ -3344,7 +3344,7 @@ public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10429
 
 }
 
-public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10949
+public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10950
 {
 	public HairType type;
 	private Dictionary<Renderer, PlayerModelHair.RendererMaterials> materials;
@@ -3368,7 +3368,7 @@ public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10949
 
 }
 
-public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10950
+public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10951
 {
 	public string[] names;
 	public Material[] original;
@@ -3379,7 +3379,7 @@ public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10950
 
 }
 
-public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10952
+public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10953
 {
 	[InspectorFlagsAttribute]
 	public HairCapMask hairCapMask;
@@ -3391,7 +3391,7 @@ public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10952
 
 }
 
-public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10953
+public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10954
 {
 	public PlayerModelSkin.SkinMaterialType MaterialType;
 	public Renderer SkinRenderer;
@@ -3405,7 +3405,7 @@ public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex:
 
 }
 
-public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10954
+public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10955
 {
 	public int value__;
 	public const PlayerModelSkin.SkinMaterialType HEAD = 0;
@@ -3414,7 +3414,7 @@ public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10954
 
 }
 
-public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11148
+public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11149
 {
 	[CompilerGeneratedAttribute]
 	private float <Range>k__BackingField;
@@ -3432,7 +3432,7 @@ public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11148
 
 }
 
-public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11386
+public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11387
 {
 	private BasePlayer player;
 
@@ -3461,7 +3461,7 @@ public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11386
 
 }
 
-public class PlayerBelt // TypeDefIndex: 11387
+public class PlayerBelt // TypeDefIndex: 11388
 {
 	public static int SelectedSlot;
 	protected BasePlayer player;
@@ -3491,7 +3491,7 @@ public class PlayerBelt // TypeDefIndex: 11387
 
 }
 
-public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 11388
+public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 11389
 {
 	public SteamInventory steamInventory;
 	private int[] craftableItems;
@@ -3511,7 +3511,7 @@ public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 113
 
 }
 
-public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11389
+public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11390
 {
 	public static readonly Vector3 EyeOffset;
 	public static readonly Vector3 DuckOffset;
@@ -3639,7 +3639,7 @@ public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11389
 
 }
 
-public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11390
+public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11391
 {
 	public InputState state;
 	public bool hadInputBuffer;
@@ -3721,7 +3721,7 @@ public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11390
 
 }
 
-public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // TypeDefIndex: 11391
+public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // TypeDefIndex: 11392
 {
 	public static float pm_uplimit;
 	public static float pm_downlimit;
@@ -4139,7 +4139,7 @@ public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // Ty
 
 }
 
-public enum PlayerModel.MountPoses // TypeDefIndex: 11392
+public enum PlayerModel.MountPoses // TypeDefIndex: 11393
 {
 	public int value__;
 	public const PlayerModel.MountPoses Chair = 0;
@@ -4175,7 +4175,7 @@ public enum PlayerModel.MountPoses // TypeDefIndex: 11392
 
 }
 
-public enum PlayerModel.ReactionDir // TypeDefIndex: 11393
+public enum PlayerModel.ReactionDir // TypeDefIndex: 11394
 {
 	public int value__;
 	public const PlayerModel.ReactionDir North = 0;
@@ -4185,7 +4185,7 @@ public enum PlayerModel.ReactionDir // TypeDefIndex: 11393
 
 }
 
-private sealed class PlayerModel.<>c // TypeDefIndex: 11394
+private sealed class PlayerModel.<>c // TypeDefIndex: 11395
 {
 	public static readonly PlayerModel.<>c <>9;
 	public static Func<Wearable, bool> <>9__199_0;
@@ -4205,7 +4205,7 @@ private sealed class PlayerModel.<>c // TypeDefIndex: 11394
 
 }
 
-private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11395
+private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11396
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -4234,7 +4234,7 @@ private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<objec
 
 }
 
-private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11396
+private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11397
 {
 	public string strName;
 
@@ -4245,7 +4245,7 @@ private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11396
 
 }
 
-private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11397
+private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11398
 {
 	public string strName;
 
@@ -4256,7 +4256,7 @@ private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11397
 
 }
 
-public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // TypeDefIndex: 11398
+public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // TypeDefIndex: 11399
 {
 	public PlayerModelCinematicList.PlayerModelCinematicAnimation[] Animations;
 
@@ -4269,7 +4269,7 @@ public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // Typ
 
 }
 
-public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefIndex: 11399
+public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefIndex: 11400
 {
 	public string StateName;
 	public string ClipName;
@@ -4277,7 +4277,7 @@ public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefI
 
 }
 
-public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 11400
+public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 11401
 {
 	private PlayerModel playerModel;
 
@@ -4288,7 +4288,7 @@ public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 1
 
 }
 
-public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11401
+public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11402
 {
 	public CanvasGroup canvasGroup;
 	public Text text;
@@ -4315,7 +4315,7 @@ public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11401
 
 }
 
-public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 11403
+public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 11404
 {
 	internal static byte[] readBuffer;
 	internal static byte[] readBufferUncompressed;
@@ -4346,7 +4346,7 @@ public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 
 
 }
 
-public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 11404
+public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 11405
 {
 	public VoiceProcessor voiceProcessor;
 	private float nextSpeechFakeChange;
@@ -4380,7 +4380,7 @@ public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 1
 
 }
 
-public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11410
+public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11411
 {
 	public const float WaterLevelHead = 0,75;
 	public const float WaterLevelNeck = 0,65;
@@ -4519,7 +4519,7 @@ public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11410
 
 }
 
-public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11411
+public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11412
 {
 	public Buoyancy buoyancy;
 	public const BaseEntity.Flags Flag_Buoyant = 16384;
@@ -4546,7 +4546,7 @@ public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11411
 
 }
 
-public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12507
+public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12508
 {
 	public string niceName;
 	public int order;
@@ -4560,7 +4560,7 @@ public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12507
 
 }
 
-public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12508
+public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12509
 {
 	public ulong skinOverride;
 
@@ -4569,7 +4569,7 @@ public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDef
 
 }
 
-public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12574
+public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12575
 {
 
 	public override void Init(AIEventType eventType, BaseStateUI stateUI) { }
@@ -4582,7 +4582,7 @@ public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12574
 
 }
 
-public class Player : ConsoleSystem // TypeDefIndex: 13757
+public class Player : ConsoleSystem // TypeDefIndex: 13758
 {
 	[ServerVar]
 	public static int tickrate_cl;
@@ -4635,7 +4635,7 @@ public class Player : ConsoleSystem // TypeDefIndex: 13757
 
 }
 
-public class PlayerCull : ConsoleSystem // TypeDefIndex: 13758
+public class PlayerCull : ConsoleSystem // TypeDefIndex: 13759
 {
 	private static bool _enabled;
 	[ClientVar]
@@ -4665,7 +4665,7 @@ public class PlayerCull : ConsoleSystem // TypeDefIndex: 13758
 
 }
 
-public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13966
+public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13967
 {
 
 public enum PlayerMenuAnimation.Layers

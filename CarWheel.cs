@@ -1,4 +1,4 @@
-public class CarWheel // TypeDefIndex: 11447
+public class CarWheel // TypeDefIndex: 11448
 {
 	public WheelCollider wheelCollider;
 	[RangeAttribute]

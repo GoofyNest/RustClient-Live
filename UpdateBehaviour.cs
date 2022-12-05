@@ -1,4 +1,4 @@
-public abstract class UpdateBehaviour : MonoBehaviour // TypeDefIndex: 13143
+public abstract class UpdateBehaviour : MonoBehaviour // TypeDefIndex: 13144
 {
 	internal float lastUpdate;
 	internal float nextUpdate;

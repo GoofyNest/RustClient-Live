@@ -1,4 +1,4 @@
-public class ExcavatorSignalComputer : BaseCombatEntity // TypeDefIndex: 10111
+public class ExcavatorSignalComputer : BaseCombatEntity // TypeDefIndex: 10112
 {
 	private Option __menuOption_Menu_Press_TrainTunnel;
 	public float chargePower;

@@ -1,4 +1,4 @@
-public class HBHFSensor : BaseDetector // TypeDefIndex: 10117
+public class HBHFSensor : BaseDetector // TypeDefIndex: 10118
 {
 	private Option __menuOption_Menu_ExcludeAuth;
 	private Option __menuOption_Menu_ExcludeOthers;

@@ -1,4 +1,4 @@
-public class SantaSleigh : BaseEntity // TypeDefIndex: 10361
+public class SantaSleigh : BaseEntity // TypeDefIndex: 10362
 {
 	public GameObjectRef prefabDrop;
 	public SpawnFilter filter;

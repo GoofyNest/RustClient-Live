@@ -59,7 +59,7 @@ public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6354
 
 }
 
-public class SamSite : ContainerIOEntity // TypeDefIndex: 10161
+public class SamSite : ContainerIOEntity // TypeDefIndex: 10162
 {
 	private Option __menuOption_Menu_DisableDefenderMode;
 	private Option __menuOption_Menu_EnableDefenderMode;

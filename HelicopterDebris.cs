@@ -1,4 +1,4 @@
-public class HelicopterDebris : ServerGib // TypeDefIndex: 11340
+public class HelicopterDebris : ServerGib // TypeDefIndex: 11341
 {
 	public ItemDefinition metalFragments;
 	public ItemDefinition hqMetal;

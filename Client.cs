@@ -400,7 +400,7 @@ internal struct ClientCredentialsInternal : IGettable<ClientCredentials>, ISetta
 
 }
 
-public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 10615
+public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 10616
 {
 	public RendererLOD _lod;
 	public LineRenderer _line;
@@ -456,7 +456,7 @@ public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 10615
 
 }
 
-public class Client : SingletonComponent<Client>, IClientCallback // TypeDefIndex: 10877
+public class Client : SingletonComponent<Client>, IClientCallback // TypeDefIndex: 10878
 {
 	public static Translate.Phrase loading_loading;
 	public static Translate.Phrase loading_connecting;
@@ -687,7 +687,7 @@ public class Client : SingletonComponent<Client>, IClientCallback // TypeDefInde
 
 }
 
-private enum Client.ConnectionProtocol // TypeDefIndex: 10878
+private enum Client.ConnectionProtocol // TypeDefIndex: 10879
 {
 	public int value__;
 	public const Client.ConnectionProtocol Raknet = 0;
@@ -695,7 +695,7 @@ private enum Client.ConnectionProtocol // TypeDefIndex: 10878
 
 }
 
-public enum Client.ProcessAccessFlags // TypeDefIndex: 10879
+public enum Client.ProcessAccessFlags // TypeDefIndex: 10880
 {
 	public uint value__;
 	public const Client.ProcessAccessFlags Terminate = 1;
@@ -703,7 +703,7 @@ public enum Client.ProcessAccessFlags // TypeDefIndex: 10879
 
 }
 
-private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 10880
+private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 10881
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -724,7 +724,7 @@ private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 10880
 
 }
 
-private sealed class Client.<>c // TypeDefIndex: 10881
+private sealed class Client.<>c // TypeDefIndex: 10882
 {
 	public static readonly Client.<>c <>9;
 	public static Func<ConsoleSystem.Command, bool> <>9__39_0;
@@ -741,7 +741,7 @@ private sealed class Client.<>c // TypeDefIndex: 10881
 
 }
 
-private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10882
+private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10883
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -774,7 +774,7 @@ private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10883
+private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10884
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -817,7 +817,7 @@ private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object
 
 }
 
-public struct ClientPerformanceReport // TypeDefIndex: 11033
+public struct ClientPerformanceReport // TypeDefIndex: 11034
 {
 	public int request_id;
 	public string user_id;
@@ -838,7 +838,7 @@ public struct ClientPerformanceReport // TypeDefIndex: 11033
 
 }
 
-public class ClientFrametimeReport // TypeDefIndex: 11047
+public class ClientFrametimeReport // TypeDefIndex: 11048
 {
 	public int request_id;
 	public int start_frame;
@@ -849,7 +849,7 @@ public class ClientFrametimeReport // TypeDefIndex: 11047
 
 }
 
-public class ClientFrametimeRequest // TypeDefIndex: 11048
+public class ClientFrametimeRequest // TypeDefIndex: 11049
 {
 	public int request_id;
 	public int start_frame;
@@ -860,7 +860,7 @@ public class ClientFrametimeRequest // TypeDefIndex: 11048
 
 }
 
-public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11571
+public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11572
 {
 
 	public void Cycle() { }
@@ -873,7 +873,7 @@ public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11571
 
 }
 
-public class ClientSteamAuthReporter // TypeDefIndex: 12534
+public class ClientSteamAuthReporter // TypeDefIndex: 12535
 {
 	[CompilerGeneratedAttribute]
 	private static readonly ClientSteamAuthReporter <Instance>k__BackingField;
@@ -914,7 +914,7 @@ public class ClientSteamAuthReporter // TypeDefIndex: 12534
 
 }
 
-public enum ClientSteamAuthReporter.AuthState // TypeDefIndex: 12535
+public enum ClientSteamAuthReporter.AuthState // TypeDefIndex: 12536
 {
 	public int value__;
 	public const ClientSteamAuthReporter.AuthState Joined = 0;
@@ -925,7 +925,7 @@ public enum ClientSteamAuthReporter.AuthState // TypeDefIndex: 12535
 
 }
 
-private class ClientSteamAuthReporter.AuthChangeEvent // TypeDefIndex: 12536
+private class ClientSteamAuthReporter.AuthChangeEvent // TypeDefIndex: 12537
 {
 	[JsonPropertyAttribute]
 	public ClientSteamAuthReporter.AuthState State;
@@ -941,7 +941,7 @@ private class ClientSteamAuthReporter.AuthChangeEvent // TypeDefIndex: 12536
 
 }
 
-private struct ClientSteamAuthReporter.<UploadThread>d__21 : IAsyncStateMachine // TypeDefIndex: 12537
+private struct ClientSteamAuthReporter.<UploadThread>d__21 : IAsyncStateMachine // TypeDefIndex: 12538
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -959,7 +959,7 @@ private struct ClientSteamAuthReporter.<UploadThread>d__21 : IAsyncStateMachine 
 
 }
 
-private struct ClientSteamAuthReporter.<PostJsonAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 12538
+private struct ClientSteamAuthReporter.<PostJsonAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 12539
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder<bool> <>t__builder;
@@ -977,14 +977,14 @@ private struct ClientSteamAuthReporter.<PostJsonAsync>d__22 : IAsyncStateMachine
 
 }
 
-public static class Client // TypeDefIndex: 13454
+public static class Client // TypeDefIndex: 13455
 {
 	public const byte Default = 0;
 	public const byte Tick = 1;
 
 }
 
-public class Client : ConsoleSystem // TypeDefIndex: 13696
+public class Client : ConsoleSystem // TypeDefIndex: 13697
 {
 	public static string anticheatid;
 	public static string anticheatkey;
@@ -1156,7 +1156,7 @@ public class Client : ConsoleSystem // TypeDefIndex: 13696
 
 }
 
-public enum Client.CameraSensorType // TypeDefIndex: 13697
+public enum Client.CameraSensorType // TypeDefIndex: 13698
 {
 	public int value__;
 	public const Client.CameraSensorType _8Mm = 0;
@@ -1175,7 +1175,7 @@ public enum Client.CameraSensorType // TypeDefIndex: 13697
 
 }
 
-public static class Client // TypeDefIndex: 13853
+public static class Client // TypeDefIndex: 13854
 {
 	public const float UseDistance = 2;
 	private static Scene _entityScene;

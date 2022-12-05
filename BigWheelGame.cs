@@ -1,4 +1,4 @@
-public class BigWheelGame : SpinnerWheel // TypeDefIndex: 10470
+public class BigWheelGame : SpinnerWheel // TypeDefIndex: 10471
 {
 	public HitNumber[] hitNumbers;
 	public GameObject indicator;

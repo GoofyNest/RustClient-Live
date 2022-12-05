@@ -64,7 +64,7 @@ public class Telephone : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6399
 
 }
 
-public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 10182
+public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 10183
 {
 	private Option __menuOption_Menu_Answer;
 	private Option __menuOption_Menu_MakeCall;
@@ -191,7 +191,7 @@ public class Telephone : ContainerIOEntity, ICassettePlayer // TypeDefIndex: 101
 
 }
 
-public enum Telephone.CallState // TypeDefIndex: 10183
+public enum Telephone.CallState // TypeDefIndex: 10184
 {
 	public int value__;
 	public const Telephone.CallState Idle = 0;
@@ -201,7 +201,7 @@ public enum Telephone.CallState // TypeDefIndex: 10183
 
 }
 
-public enum Telephone.DialFailReason // TypeDefIndex: 10184
+public enum Telephone.DialFailReason // TypeDefIndex: 10185
 {
 	public int value__;
 	public const Telephone.DialFailReason TimedOut = 0;
@@ -215,7 +215,7 @@ public enum Telephone.DialFailReason // TypeDefIndex: 10184
 
 }
 
-private class Telephone.CensoredNumbers // TypeDefIndex: 10185
+private class Telephone.CensoredNumbers // TypeDefIndex: 10186
 {
 	public List<int> numbers;
 	public int saveVersion;

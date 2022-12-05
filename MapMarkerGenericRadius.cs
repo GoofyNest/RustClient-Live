@@ -1,4 +1,4 @@
-public class MapMarkerGenericRadius : MapMarker // TypeDefIndex: 10325
+public class MapMarkerGenericRadius : MapMarker // TypeDefIndex: 10326
 {
 	public float radius;
 	public Color color1;

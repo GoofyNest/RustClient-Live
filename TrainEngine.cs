@@ -63,7 +63,7 @@ public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIndex: 10192
+public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIndex: 10193
 {
 	private Option __menuOption_Menu_FuelStorage;
 	private int clientFuelAmount;
@@ -266,7 +266,7 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 
 }
 
-private enum TrainEngine.TrainMovementState // TypeDefIndex: 10193
+private enum TrainEngine.TrainMovementState // TypeDefIndex: 10194
 {
 	public int value__;
 	public const TrainEngine.TrainMovementState Stationary = 0;
@@ -275,7 +275,7 @@ private enum TrainEngine.TrainMovementState // TypeDefIndex: 10193
 
 }
 
-private enum TrainEngine.LeverStyle // TypeDefIndex: 10194
+private enum TrainEngine.LeverStyle // TypeDefIndex: 10195
 {
 	public int value__;
 	public const TrainEngine.LeverStyle WorkCart = 0;
@@ -283,7 +283,7 @@ private enum TrainEngine.LeverStyle // TypeDefIndex: 10194
 
 }
 
-public enum TrainEngine.EngineSpeeds // TypeDefIndex: 10195
+public enum TrainEngine.EngineSpeeds // TypeDefIndex: 10196
 {
 	public int value__;
 	public const TrainEngine.EngineSpeeds Rev_Hi = 0;

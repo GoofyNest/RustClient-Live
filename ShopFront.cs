@@ -1,4 +1,4 @@
-public class ShopFront : StorageContainer // TypeDefIndex: 10362
+public class ShopFront : StorageContainer // TypeDefIndex: 10363
 {
 	public float maxUseAngle;
 	public BasePlayer vendorPlayer;
@@ -35,7 +35,7 @@ public class ShopFront : StorageContainer // TypeDefIndex: 10362
 
 }
 
-public static class ShopFront.ShopFrontFlags // TypeDefIndex: 10363
+public static class ShopFront.ShopFrontFlags // TypeDefIndex: 10364
 {
 	public const BaseEntity.Flags VendorAccepted = 128;
 	public const BaseEntity.Flags CustomerAccepted = 256;

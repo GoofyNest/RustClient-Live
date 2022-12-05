@@ -1,4 +1,4 @@
-public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex: 10716
+public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex: 10717
 {
 	[RangeAttribute]
 	public float blend;
@@ -20,7 +20,7 @@ public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex
 
 }
 
-public class BlendedSoundLoops.Loop // TypeDefIndex: 10717
+public class BlendedSoundLoops.Loop // TypeDefIndex: 10718
 {
 	public SoundDefinition soundDef;
 	public AnimationCurve gainCurve;

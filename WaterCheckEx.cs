@@ -1,4 +1,4 @@
-public static class WaterCheckEx // TypeDefIndex: 12394
+public static class WaterCheckEx // TypeDefIndex: 12395
 {
 
 	[ExtensionAttribute]

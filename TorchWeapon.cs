@@ -1,4 +1,4 @@
-public class TorchWeapon : BaseMelee // TypeDefIndex: 10381
+public class TorchWeapon : BaseMelee // TypeDefIndex: 10382
 {
 	public float fuelTickAmount;
 	[HeaderAttribute]

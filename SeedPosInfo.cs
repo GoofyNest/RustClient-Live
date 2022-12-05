@@ -1,4 +1,4 @@
-public class SeedPosInfo : MonoBehaviour // TypeDefIndex: 11028
+public class SeedPosInfo : MonoBehaviour // TypeDefIndex: 11029
 {
 	public CanvasGroup Canvas;
 	public Text WorldPos;

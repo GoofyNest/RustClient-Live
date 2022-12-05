@@ -1,4 +1,4 @@
-public class LayerCullDistance : MonoBehaviour // TypeDefIndex: 13103
+public class LayerCullDistance : MonoBehaviour // TypeDefIndex: 13104
 {
 	public string Layer;
 	public float Distance;

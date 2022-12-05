@@ -1,4 +1,4 @@
-public class SharpenAndVignette : PostProcessEffectSettings // TypeDefIndex: 12026
+public class SharpenAndVignette : PostProcessEffectSettings // TypeDefIndex: 12027
 {
 	[HeaderAttribute]
 	public BoolParameter applySharpen;

@@ -1,4 +1,4 @@
-public class HackableLockedCrate : LootContainer // TypeDefIndex: 10116
+public class HackableLockedCrate : LootContainer // TypeDefIndex: 10117
 {
 	private Option __menuOption_Menu_Hack;
 	public const BaseEntity.Flags Flag_Hacking = 128;
