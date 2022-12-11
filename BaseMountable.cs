@@ -111,6 +111,8 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10049
 
 	public virtual bool IsInstrument() { }
 
+	public Vector3 GetMountedPosition() { }
+
 	public virtual void UpdatePlayerModel(BasePlayer player) { }
 
 	public virtual void PostLateUpdatePlayer(BasePlayer player) { }
@@ -122,8 +124,6 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10049
 	public void UpdatePlayerPosition(BasePlayer player) { }
 
 	public virtual Quaternion GetMountedRotation() { }
-
-	public Vector3 GetMountedPosition() { }
 
 	public virtual void PlayerMounted(BasePlayer player, bool wasSwap) { }
 
