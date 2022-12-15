@@ -1,4 +1,4 @@
-public class RespawnInformation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6503
+public class RespawnInformation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6505
 {
 	public bool ShouldPool;
 	private bool _disposed;
@@ -61,7 +61,7 @@ public class RespawnInformation : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class RespawnInformation.SpawnOptions : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6504
+public class RespawnInformation.SpawnOptions : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6506
 {
 	public bool ShouldPool;
 	private bool _disposed;
@@ -127,7 +127,7 @@ public class RespawnInformation.SpawnOptions : IDisposable, Pool.IPooled, IProto
 
 }
 
-public enum RespawnInformation.SpawnOptions.RespawnType // TypeDefIndex: 6505
+public enum RespawnInformation.SpawnOptions.RespawnType // TypeDefIndex: 6507
 {
 	public int value__;
 	public const RespawnInformation.SpawnOptions.RespawnType SleepingBag = 1;

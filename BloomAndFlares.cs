@@ -1,4 +1,4 @@
-public class BloomAndFlares : PostEffectsBase // TypeDefIndex: 8181
+public class BloomAndFlares : PostEffectsBase // TypeDefIndex: 8183
 {
 	public TweakMode34 tweakMode;
 	public BloomScreenBlendMode screenBlendMode;

@@ -1,4 +1,4 @@
-internal struct GetPermissionsCountOptionsInternal : ISettable<GetPermissionsCountOptions>, IDisposable // TypeDefIndex: 9335
+internal struct GetPermissionsCountOptionsInternal : ISettable<GetPermissionsCountOptions>, IDisposable // TypeDefIndex: 9337
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

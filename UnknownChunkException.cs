@@ -1,4 +1,4 @@
-public sealed class UnknownChunkException : MidiException // TypeDefIndex: 7599
+public sealed class UnknownChunkException : MidiException // TypeDefIndex: 7601
 {
 	[CompilerGeneratedAttribute]
 	private readonly string <ChunkId>k__BackingField;

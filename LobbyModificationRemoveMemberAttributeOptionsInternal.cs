@@ -1,4 +1,4 @@
-internal struct LobbyModificationRemoveMemberAttributeOptionsInternal : ISettable<LobbyModificationRemoveMemberAttributeOptions>, IDisposable // TypeDefIndex: 9175
+internal struct LobbyModificationRemoveMemberAttributeOptionsInternal : ISettable<LobbyModificationRemoveMemberAttributeOptions>, IDisposable // TypeDefIndex: 9177
 {
 	private int m_ApiVersion;
 	private IntPtr m_Key;

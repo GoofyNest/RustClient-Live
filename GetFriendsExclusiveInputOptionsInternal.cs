@@ -1,4 +1,4 @@
-internal struct GetFriendsExclusiveInputOptionsInternal : ISettable<GetFriendsExclusiveInputOptions>, IDisposable // TypeDefIndex: 8337
+internal struct GetFriendsExclusiveInputOptionsInternal : ISettable<GetFriendsExclusiveInputOptions>, IDisposable // TypeDefIndex: 8339
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

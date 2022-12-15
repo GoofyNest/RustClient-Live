@@ -1,4 +1,4 @@
-public struct GetNextReceivedPacketSizeOptions // TypeDefIndex: 8958
+public struct GetNextReceivedPacketSizeOptions // TypeDefIndex: 8960
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

@@ -1,4 +1,4 @@
-internal struct IngestStatCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<IngestStatCompleteCallbackInfo>, ISettable<IngestStatCompleteCallbackInfo>, IDisposable // TypeDefIndex: 8437
+internal struct IngestStatCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<IngestStatCompleteCallbackInfo>, ISettable<IngestStatCompleteCallbackInfo>, IDisposable // TypeDefIndex: 8439
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

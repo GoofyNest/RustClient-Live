@@ -70,7 +70,7 @@ public class Hero // TypeDefIndex: 6211
 
 }
 
-public class Hero : ConsoleSystem // TypeDefIndex: 13739
+public class Hero : ConsoleSystem // TypeDefIndex: 13749
 {
 	[ClientVar]
 	public static string ident;
@@ -97,7 +97,7 @@ public class Hero : ConsoleSystem // TypeDefIndex: 13739
 
 }
 
-public class Hero : SingletonComponent<Hero> // TypeDefIndex: 13908
+public class Hero : SingletonComponent<Hero> // TypeDefIndex: 13918
 {
 	public CanvasGroup CanvasGroup;
 	public Video VideoPlayer;
@@ -130,7 +130,7 @@ public class Hero : SingletonComponent<Hero> // TypeDefIndex: 13908
 
 }
 
-private sealed class Hero.<>c // TypeDefIndex: 13909
+private sealed class Hero.<>c // TypeDefIndex: 13919
 {
 	public static readonly Hero.<>c <>9;
 	public static Func<Hero, Guid> <>9__9_0;
@@ -144,7 +144,7 @@ private sealed class Hero.<>c // TypeDefIndex: 13909
 
 }
 
-private struct Hero.<ShowAsync>d__10 : IAsyncStateMachine // TypeDefIndex: 13910
+private struct Hero.<ShowAsync>d__10 : IAsyncStateMachine // TypeDefIndex: 13920
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;

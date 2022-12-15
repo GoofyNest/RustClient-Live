@@ -1,4 +1,4 @@
-public static class GizmosUtil // TypeDefIndex: 13181
+public static class GizmosUtil // TypeDefIndex: 13191
 {
 
 	public static void DrawWireCircleX(Vector3 pos, float radius) { }

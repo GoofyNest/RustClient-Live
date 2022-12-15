@@ -1,4 +1,4 @@
-public struct UpdateLobbyModificationOptions // TypeDefIndex: 9274
+public struct UpdateLobbyModificationOptions // TypeDefIndex: 9276
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

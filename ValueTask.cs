@@ -1,4 +1,4 @@
-public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7127
+public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7129
 {
 	private static readonly Task s_canceledTask;
 	[CompilerGeneratedAttribute]

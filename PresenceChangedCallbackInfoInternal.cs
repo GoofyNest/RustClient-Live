@@ -1,4 +1,4 @@
-internal struct PresenceChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<PresenceChangedCallbackInfo>, ISettable<PresenceChangedCallbackInfo>, IDisposable // TypeDefIndex: 8844
+internal struct PresenceChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<PresenceChangedCallbackInfo>, ISettable<PresenceChangedCallbackInfo>, IDisposable // TypeDefIndex: 8846
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;

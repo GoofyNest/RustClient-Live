@@ -60,7 +60,7 @@ public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6352
 
 }
 
-public class WaterWell : LiquidContainer // TypeDefIndex: 10207
+public class WaterWell : LiquidContainer // TypeDefIndex: 10209
 {
 	private Option __menuOption_Menu_Pump;
 	public Animator animator;

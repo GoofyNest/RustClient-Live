@@ -1,4 +1,4 @@
-public struct LeaveRoomOptions // TypeDefIndex: 8778
+public struct LeaveRoomOptions // TypeDefIndex: 8780
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

@@ -1,4 +1,4 @@
-public class MissionUIPanel : MonoBehaviour // TypeDefIndex: 11972
+public class MissionUIPanel : MonoBehaviour // TypeDefIndex: 11982
 {
 	public GameObject activeMissionParent;
 	public RustText missionTitleText;

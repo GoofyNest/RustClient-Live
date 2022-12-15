@@ -1,4 +1,4 @@
-public static class KeywordUtil // TypeDefIndex: 8152
+public static class KeywordUtil // TypeDefIndex: 8154
 {
 
 	public static void EnsureKeywordState(string keyword, bool state) { }

@@ -1,4 +1,4 @@
-public enum LODDistanceMode // TypeDefIndex: 11687
+public enum LODDistanceMode // TypeDefIndex: 11696
 {
 	public int value__;
 	public const LODDistanceMode XYZ = 0;

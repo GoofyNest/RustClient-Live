@@ -1,4 +1,4 @@
-public class MeshPaintable : BaseMeshPaintable // TypeDefIndex: 10940
+public class MeshPaintable : BaseMeshPaintable // TypeDefIndex: 10948
 {
 	public string replacementTextureName;
 	public int textureWidth;

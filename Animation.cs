@@ -434,7 +434,7 @@ public class AnimationTriggers
 
 }
 
-public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10510
+public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10512
 {
 	public Animator animator;
 
@@ -447,7 +447,7 @@ public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10510
 
 }
 
-public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10855
+public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10863
 {
 	public GameObject targetObject;
 
@@ -458,7 +458,7 @@ public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10855
 
 }
 
-public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 11067
+public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 11075
 {
 	public Transform rootObject;
 	public HeldEntity targetEntity;

@@ -1,4 +1,4 @@
-public enum LeaderboardAggregation // TypeDefIndex: 9298
+public enum LeaderboardAggregation // TypeDefIndex: 9300
 {
 	public int value__;
 	public const LeaderboardAggregation Min = 0;

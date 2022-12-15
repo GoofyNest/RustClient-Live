@@ -1,4 +1,4 @@
-public sealed class MidiFile // TypeDefIndex: 7601
+public sealed class MidiFile // TypeDefIndex: 7603
 {
 	internal Nullable<ushort> _originalFormat;
 	[CompilerGeneratedAttribute]

@@ -1,4 +1,4 @@
-internal struct QueryFriendsCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryFriendsCallbackInfo>, ISettable<QueryFriendsCallbackInfo>, IDisposable // TypeDefIndex: 9408
+internal struct QueryFriendsCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryFriendsCallbackInfo>, ISettable<QueryFriendsCallbackInfo>, IDisposable // TypeDefIndex: 9410
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

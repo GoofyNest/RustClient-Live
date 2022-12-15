@@ -62,7 +62,7 @@ public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 
 }
 
-public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 10027
+public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 10029
 {
 	private Option __menuOption_Menu_AssignToFriend;
 	private Option __menuOption_Menu_MaxAuth;
@@ -275,13 +275,13 @@ public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex
 
 }
 
-public static class AutoTurret.TurretFlags // TypeDefIndex: 10028
+public static class AutoTurret.TurretFlags // TypeDefIndex: 10030
 {
 	public const BaseEntity.Flags Peacekeeper = 128;
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10029
+private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10031
 {
 	public ulong id;
 
@@ -292,7 +292,7 @@ private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10029
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 10030
+private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 10032
 {
 	public BasePlayer player;
 

@@ -1,4 +1,4 @@
-public struct CreateLobbyOptions // TypeDefIndex: 9093
+public struct CreateLobbyOptions // TypeDefIndex: 9095
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

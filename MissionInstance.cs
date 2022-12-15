@@ -1,4 +1,4 @@
-public class MissionInstance : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6465
+public class MissionInstance : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6467
 {
 	public bool ShouldPool;
 	private bool _disposed;

@@ -1,4 +1,4 @@
-internal struct LeaderboardRecordInternal : IGettable<LeaderboardRecord>, ISettable<LeaderboardRecord>, IDisposable // TypeDefIndex: 9300
+internal struct LeaderboardRecordInternal : IGettable<LeaderboardRecord>, ISettable<LeaderboardRecord>, IDisposable // TypeDefIndex: 9302
 {
 	private int m_ApiVersion;
 	private IntPtr m_UserId;

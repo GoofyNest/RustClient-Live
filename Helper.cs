@@ -1,4 +1,4 @@
-public sealed class Helper // TypeDefIndex: 8259
+public sealed class Helper // TypeDefIndex: 8261
 {
 	private static Dictionary<long, Helper.Allocation> s_Allocations;
 	private static Dictionary<long, Helper.PinnedBuffer> s_PinnedBuffers;
@@ -3041,7 +3041,7 @@ public sealed class Helper // TypeDefIndex: 8259
 
 }
 
-private struct Helper.Allocation // TypeDefIndex: 8260
+private struct Helper.Allocation // TypeDefIndex: 8262
 {
 	[CompilerGeneratedAttribute]
 	private int <Size>k__BackingField;
@@ -3077,7 +3077,7 @@ private struct Helper.Allocation // TypeDefIndex: 8260
 
 }
 
-private struct Helper.PinnedBuffer // TypeDefIndex: 8261
+private struct Helper.PinnedBuffer // TypeDefIndex: 8263
 {
 	[CompilerGeneratedAttribute]
 	private GCHandle <Handle>k__BackingField;
@@ -3104,7 +3104,7 @@ private struct Helper.PinnedBuffer // TypeDefIndex: 8261
 
 }
 
-private class Helper.DelegateHolder // TypeDefIndex: 8262
+private class Helper.DelegateHolder // TypeDefIndex: 8264
 {
 	[CompilerGeneratedAttribute]
 	private Delegate <Public>k__BackingField;
@@ -3149,7 +3149,7 @@ private class Helper.DelegateHolder // TypeDefIndex: 8262
 
 }
 
-private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8263
+private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8265
 {
 	public static readonly Helper.<>
 	public static Func<Delegate, bool> <>9__3_0;
@@ -3191,7 +3191,7 @@ private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackIn
 
 }
 
-private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8264
+private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8266
 {
 	public ulong notificationId;
 
@@ -3202,7 +3202,7 @@ private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8264
 
 }
 
-private sealed class Helper.<>c // TypeDefIndex: 8265
+private sealed class Helper.<>c // TypeDefIndex: 8267
 {
 	public static readonly Helper.<>c <>9;
 	public static Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int> <>9__63_0;

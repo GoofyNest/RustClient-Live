@@ -1,4 +1,4 @@
-public enum MeshType // TypeDefIndex: 13349
+public enum MeshType // TypeDefIndex: 13359
 {
 	public int value__;
 	public const MeshType Shared = 0;

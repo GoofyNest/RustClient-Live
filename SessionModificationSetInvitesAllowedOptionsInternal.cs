@@ -1,4 +1,4 @@
-internal struct SessionModificationSetInvitesAllowedOptionsInternal : ISettable<SessionModificationSetInvitesAllowedOptions>, IDisposable // TypeDefIndex: 8578
+internal struct SessionModificationSetInvitesAllowedOptionsInternal : ISettable<SessionModificationSetInvitesAllowedOptions>, IDisposable // TypeDefIndex: 8580
 {
 	private int m_ApiVersion;
 	private int m_InvitesAllowed;

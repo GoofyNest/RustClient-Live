@@ -124,7 +124,7 @@ public class ReclaimManager.ReclaimInfo : IDisposable, Pool.IPooled, IProto // T
 
 }
 
-public class ReclaimManager : BaseEntity // TypeDefIndex: 11633
+public class ReclaimManager : BaseEntity // TypeDefIndex: 11642
 {
 	private const int defaultReclaims = 128;
 	private const int reclaimSlotCount = 40;

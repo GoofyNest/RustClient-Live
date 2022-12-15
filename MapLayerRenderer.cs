@@ -1,11 +1,18 @@
-public class MapLayerRenderer : SingletonComponent<MapLayerRenderer> // TypeDefIndex: 12726
+public class MapLayerRenderer : SingletonComponent<MapLayerRenderer> // TypeDefIndex: 12736
 {
+	private Nullable<uint> _currentlyRenderedDungeon;
 	private Nullable<int> _underwaterLabFloorCount;
 	public Camera renderCamera;
 	public CameraEvent cameraEvent;
 	public Material renderMaterial;
 	private Nullable<MapLayer> _currentlyRenderedLayer;
 
+
+	private void RenderDungeonsLayer() { }
+
+	private CommandBuffer BuildCommandBufferDungeons(ProceduralDynamicDungeon closest) { }
+
+	public static ProceduralDynamicDungeon FindDungeon(Vector3 position, float maxDist = 200) { }
 
 	private void RenderTrainLayer() { }
 
@@ -27,10 +34,10 @@ public class MapLayerRenderer : SingletonComponent<MapLayerRenderer> // TypeDefI
 
 }
 
-private sealed class MapLayerRenderer.<>c // TypeDefIndex: 12727
+private sealed class MapLayerRenderer.<>c // TypeDefIndex: 12737
 {
 	public static readonly MapLayerRenderer.<>c <>9;
-	public static Func<DungeonBaseInfo, int> <>9__4_0;
+	public static Func<DungeonBaseInfo, int> <>9__8_0;
 
 
 	private static void .cctor() { }

@@ -1,4 +1,4 @@
-internal class Quads // TypeDefIndex: 8218
+internal class Quads // TypeDefIndex: 8220
 {
 	private static Mesh[] meshes;
 	private static int currentQuads;

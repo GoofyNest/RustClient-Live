@@ -1,4 +1,4 @@
-public class TOD_Animation : MonoBehaviour // TypeDefIndex: 8088
+public class TOD_Animation : MonoBehaviour // TypeDefIndex: 8090
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -33,7 +33,7 @@ public class TOD_Animation : MonoBehaviour // TypeDefIndex: 8088
 
 }
 
-public class TOD_MinAttribute : PropertyAttribute // TypeDefIndex: 8089
+public class TOD_MinAttribute : PropertyAttribute // TypeDefIndex: 8091
 {
 	public float min;
 
@@ -42,7 +42,7 @@ public class TOD_MinAttribute : PropertyAttribute // TypeDefIndex: 8089
 
 }
 
-public class TOD_MaxAttribute : PropertyAttribute // TypeDefIndex: 8090
+public class TOD_MaxAttribute : PropertyAttribute // TypeDefIndex: 8092
 {
 	public float max;
 
@@ -51,7 +51,7 @@ public class TOD_MaxAttribute : PropertyAttribute // TypeDefIndex: 8090
 
 }
 
-public class TOD_RangeAttribute : PropertyAttribute // TypeDefIndex: 8091
+public class TOD_RangeAttribute : PropertyAttribute // TypeDefIndex: 8093
 {
 	public float min;
 	public float max;
@@ -61,7 +61,7 @@ public class TOD_RangeAttribute : PropertyAttribute // TypeDefIndex: 8091
 
 }
 
-public class TOD_Billboard : MonoBehaviour // TypeDefIndex: 8092
+public class TOD_Billboard : MonoBehaviour // TypeDefIndex: 8094
 {
 	public float Altitude;
 	public float Azimuth;
@@ -79,7 +79,7 @@ public class TOD_Billboard : MonoBehaviour // TypeDefIndex: 8092
 
 }
 
-public class TOD_Camera : MonoBehaviour // TypeDefIndex: 8093
+public class TOD_Camera : MonoBehaviour // TypeDefIndex: 8095
 {
 	public TOD_Sky sky;
 	public bool DomePosToCamera;
@@ -121,7 +121,7 @@ public class TOD_Camera : MonoBehaviour // TypeDefIndex: 8093
 
 }
 
-public class TOD_Components : MonoBehaviour // TypeDefIndex: 8094
+public class TOD_Components : MonoBehaviour // TypeDefIndex: 8096
 {
 	public GameObject Space;
 	public GameObject Stars;
@@ -519,7 +519,7 @@ public class TOD_Components : MonoBehaviour // TypeDefIndex: 8094
 
 }
 
-public enum TOD_MoonPositionType // TypeDefIndex: 8095
+public enum TOD_MoonPositionType // TypeDefIndex: 8097
 {
 	public int value__;
 	public const TOD_MoonPositionType OppositeToSun = 0;
@@ -527,7 +527,7 @@ public enum TOD_MoonPositionType // TypeDefIndex: 8095
 
 }
 
-public enum TOD_StarsPositionType // TypeDefIndex: 8096
+public enum TOD_StarsPositionType // TypeDefIndex: 8098
 {
 	public int value__;
 	public const TOD_StarsPositionType Static = 0;
@@ -535,7 +535,7 @@ public enum TOD_StarsPositionType // TypeDefIndex: 8096
 
 }
 
-public enum TOD_FogType // TypeDefIndex: 8097
+public enum TOD_FogType // TypeDefIndex: 8099
 {
 	public int value__;
 	public const TOD_FogType None = 0;
@@ -545,7 +545,7 @@ public enum TOD_FogType // TypeDefIndex: 8097
 
 }
 
-public enum TOD_AmbientType // TypeDefIndex: 8098
+public enum TOD_AmbientType // TypeDefIndex: 8100
 {
 	public int value__;
 	public const TOD_AmbientType None = 0;
@@ -555,7 +555,7 @@ public enum TOD_AmbientType // TypeDefIndex: 8098
 
 }
 
-public enum TOD_ReflectionType // TypeDefIndex: 8099
+public enum TOD_ReflectionType // TypeDefIndex: 8101
 {
 	public int value__;
 	public const TOD_ReflectionType None = 0;
@@ -563,7 +563,7 @@ public enum TOD_ReflectionType // TypeDefIndex: 8099
 
 }
 
-public enum TOD_ColorSpaceType // TypeDefIndex: 8100
+public enum TOD_ColorSpaceType // TypeDefIndex: 8102
 {
 	public int value__;
 	public const TOD_ColorSpaceType Auto = 0;
@@ -572,7 +572,7 @@ public enum TOD_ColorSpaceType // TypeDefIndex: 8100
 
 }
 
-public enum TOD_ColorRangeType // TypeDefIndex: 8101
+public enum TOD_ColorRangeType // TypeDefIndex: 8103
 {
 	public int value__;
 	public const TOD_ColorRangeType Auto = 0;
@@ -581,7 +581,7 @@ public enum TOD_ColorRangeType // TypeDefIndex: 8101
 
 }
 
-public enum TOD_ColorOutputType // TypeDefIndex: 8102
+public enum TOD_ColorOutputType // TypeDefIndex: 8104
 {
 	public int value__;
 	public const TOD_ColorOutputType Raw = 0;
@@ -589,7 +589,7 @@ public enum TOD_ColorOutputType // TypeDefIndex: 8102
 
 }
 
-public enum TOD_CloudQualityType // TypeDefIndex: 8103
+public enum TOD_CloudQualityType // TypeDefIndex: 8105
 {
 	public int value__;
 	public const TOD_CloudQualityType Low = 0;
@@ -598,7 +598,7 @@ public enum TOD_CloudQualityType // TypeDefIndex: 8103
 
 }
 
-public enum TOD_MeshQualityType // TypeDefIndex: 8104
+public enum TOD_MeshQualityType // TypeDefIndex: 8106
 {
 	public int value__;
 	public const TOD_MeshQualityType Low = 0;
@@ -607,7 +607,7 @@ public enum TOD_MeshQualityType // TypeDefIndex: 8104
 
 }
 
-public enum TOD_StarQualityType // TypeDefIndex: 8105
+public enum TOD_StarQualityType // TypeDefIndex: 8107
 {
 	public int value__;
 	public const TOD_StarQualityType Low = 0;
@@ -616,7 +616,7 @@ public enum TOD_StarQualityType // TypeDefIndex: 8105
 
 }
 
-public enum TOD_SkyQualityType // TypeDefIndex: 8106
+public enum TOD_SkyQualityType // TypeDefIndex: 8108
 {
 	public int value__;
 	public const TOD_SkyQualityType PerVertex = 0;
@@ -624,7 +624,7 @@ public enum TOD_SkyQualityType // TypeDefIndex: 8106
 
 }
 
-public abstract class TOD_ImageEffect : MonoBehaviour // TypeDefIndex: 8107
+public abstract class TOD_ImageEffect : MonoBehaviour // TypeDefIndex: 8109
 {
 	public TOD_Sky sky;
 	protected Camera cam;
@@ -653,7 +653,7 @@ public abstract class TOD_ImageEffect : MonoBehaviour // TypeDefIndex: 8107
 
 }
 
-public enum TOD_ImageEffect.ResolutionType // TypeDefIndex: 8108
+public enum TOD_ImageEffect.ResolutionType // TypeDefIndex: 8110
 {
 	public int value__;
 	public const TOD_ImageEffect.ResolutionType Low = 0;
@@ -662,7 +662,7 @@ public enum TOD_ImageEffect.ResolutionType // TypeDefIndex: 8108
 
 }
 
-public class TOD_Parameters // TypeDefIndex: 8109
+public class TOD_Parameters // TypeDefIndex: 8111
 {
 	public TOD_CycleParameters Cycle;
 	public TOD_WorldParameters World;
@@ -687,7 +687,7 @@ public class TOD_Parameters // TypeDefIndex: 8109
 
 }
 
-public class TOD_CycleParameters // TypeDefIndex: 8110
+public class TOD_CycleParameters // TypeDefIndex: 8112
 {
 	[TooltipAttribute]
 	public float Hour;
@@ -715,7 +715,7 @@ public class TOD_CycleParameters // TypeDefIndex: 8110
 
 }
 
-public class TOD_WorldParameters // TypeDefIndex: 8111
+public class TOD_WorldParameters // TypeDefIndex: 8113
 {
 	[TooltipAttribute]
 	[RangeAttribute]
@@ -732,7 +732,7 @@ public class TOD_WorldParameters // TypeDefIndex: 8111
 
 }
 
-public class TOD_AtmosphereParameters // TypeDefIndex: 8112
+public class TOD_AtmosphereParameters // TypeDefIndex: 8114
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -758,7 +758,7 @@ public class TOD_AtmosphereParameters // TypeDefIndex: 8112
 
 }
 
-public class TOD_DayParameters // TypeDefIndex: 8113
+public class TOD_DayParameters // TypeDefIndex: 8115
 {
 	[TooltipAttribute]
 	public Gradient SunColor;
@@ -792,7 +792,7 @@ public class TOD_DayParameters // TypeDefIndex: 8113
 
 }
 
-public class TOD_NightParameters // TypeDefIndex: 8114
+public class TOD_NightParameters // TypeDefIndex: 8116
 {
 	[TooltipAttribute]
 	public Gradient MoonColor;
@@ -826,7 +826,7 @@ public class TOD_NightParameters // TypeDefIndex: 8114
 
 }
 
-public class TOD_SunParameters // TypeDefIndex: 8115
+public class TOD_SunParameters // TypeDefIndex: 8117
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -843,7 +843,7 @@ public class TOD_SunParameters // TypeDefIndex: 8115
 
 }
 
-public class TOD_MoonParameters // TypeDefIndex: 8116
+public class TOD_MoonParameters // TypeDefIndex: 8118
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -868,7 +868,7 @@ public class TOD_MoonParameters // TypeDefIndex: 8116
 
 }
 
-public class TOD_StarParameters // TypeDefIndex: 8117
+public class TOD_StarParameters // TypeDefIndex: 8119
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -884,7 +884,7 @@ public class TOD_StarParameters // TypeDefIndex: 8117
 
 }
 
-public class TOD_CloudParameters // TypeDefIndex: 8118
+public class TOD_CloudParameters // TypeDefIndex: 8120
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -919,7 +919,7 @@ public class TOD_CloudParameters // TypeDefIndex: 8118
 
 }
 
-public class TOD_LightParameters // TypeDefIndex: 8119
+public class TOD_LightParameters // TypeDefIndex: 8121
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -933,7 +933,7 @@ public class TOD_LightParameters // TypeDefIndex: 8119
 
 }
 
-public class TOD_FogParameters // TypeDefIndex: 8120
+public class TOD_FogParameters // TypeDefIndex: 8122
 {
 	[TooltipAttribute]
 	public TOD_FogType Mode;
@@ -946,7 +946,7 @@ public class TOD_FogParameters // TypeDefIndex: 8120
 
 }
 
-public class TOD_AmbientParameters // TypeDefIndex: 8121
+public class TOD_AmbientParameters // TypeDefIndex: 8123
 {
 	[TooltipAttribute]
 	public TOD_AmbientType Mode;
@@ -962,7 +962,7 @@ public class TOD_AmbientParameters // TypeDefIndex: 8121
 
 }
 
-public class TOD_ReflectionParameters // TypeDefIndex: 8122
+public class TOD_ReflectionParameters // TypeDefIndex: 8124
 {
 	[TooltipAttribute]
 	public TOD_ReflectionType Mode;
@@ -978,7 +978,7 @@ public class TOD_ReflectionParameters // TypeDefIndex: 8122
 
 }
 
-public class TOD_Rays : TOD_ImageEffect // TypeDefIndex: 8123
+public class TOD_Rays : TOD_ImageEffect // TypeDefIndex: 8125
 {
 	public Shader GodRayShader;
 	public Shader ScreenClearShader;
@@ -1020,7 +1020,7 @@ public class TOD_Rays : TOD_ImageEffect // TypeDefIndex: 8123
 
 }
 
-public enum TOD_Rays.BlendModeType // TypeDefIndex: 8124
+public enum TOD_Rays.BlendModeType // TypeDefIndex: 8126
 {
 	public int value__;
 	public const TOD_Rays.BlendModeType Screen = 0;
@@ -1028,7 +1028,7 @@ public enum TOD_Rays.BlendModeType // TypeDefIndex: 8124
 
 }
 
-public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8125
+public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8127
 {
 	public Material Skybox;
 	public Mesh MoonLOD0;
@@ -1502,7 +1502,7 @@ public class TOD_Resources : MonoBehaviour // TypeDefIndex: 8125
 
 }
 
-public class TOD_Scattering : TOD_ImageEffect // TypeDefIndex: 8126
+public class TOD_Scattering : TOD_ImageEffect // TypeDefIndex: 8128
 {
 	public Shader ScatteringShader;
 	public Shader ScreenClearShader;
@@ -1553,7 +1553,7 @@ public class TOD_Scattering : TOD_ImageEffect // TypeDefIndex: 8126
 
 }
 
-public class TOD_Shadows : TOD_ImageEffect // TypeDefIndex: 8127
+public class TOD_Shadows : TOD_ImageEffect // TypeDefIndex: 8129
 {
 	public Shader ShadowShader;
 	public Texture2D CloudTexture;
@@ -1578,7 +1578,7 @@ public class TOD_Shadows : TOD_ImageEffect // TypeDefIndex: 8127
 
 }
 
-public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8128
+public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8130
 {
 	private static List<TOD_Sky> instances;
 	[TooltipAttribute]
@@ -2078,7 +2078,7 @@ public class TOD_Sky : MonoBehaviour // TypeDefIndex: 8128
 
 }
 
-public class TOD_Sky.ReflectionProbeState // TypeDefIndex: 8129
+public class TOD_Sky.ReflectionProbeState // TypeDefIndex: 8131
 {
 	public ReflectionProbe Probe;
 	public GameObject ProbeInstance;
@@ -2093,7 +2093,7 @@ public class TOD_Sky.ReflectionProbeState // TypeDefIndex: 8129
 
 }
 
-public class TOD_Time : MonoBehaviour // TypeDefIndex: 8130
+public class TOD_Time : MonoBehaviour // TypeDefIndex: 8132
 {
 	[TooltipAttribute]
 	[TOD_MinAttribute]
@@ -2198,7 +2198,7 @@ public class TOD_Time : MonoBehaviour // TypeDefIndex: 8130
 
 }
 
-public static class TOD_Util // TypeDefIndex: 8131
+public static class TOD_Util // TypeDefIndex: 8133
 {
 
 	public static Color MulRGB(Color color, float multiplier) { }
@@ -2228,7 +2228,7 @@ public static class TOD_Util // TypeDefIndex: 8131
 
 }
 
-public abstract class TOD_Audio : MonoBehaviour // TypeDefIndex: 8132
+public abstract class TOD_Audio : MonoBehaviour // TypeDefIndex: 8134
 {
 	private AudioSource audioComponent;
 
@@ -2243,7 +2243,7 @@ public abstract class TOD_Audio : MonoBehaviour // TypeDefIndex: 8132
 
 }
 
-public class TOD_AudioAtDay : TOD_Audio // TypeDefIndex: 8133
+public class TOD_AudioAtDay : TOD_Audio // TypeDefIndex: 8135
 {
 	public float fadeTime;
 	private float lerpTime;
@@ -2258,7 +2258,7 @@ public class TOD_AudioAtDay : TOD_Audio // TypeDefIndex: 8133
 
 }
 
-public class TOD_AudioAtNight : TOD_Audio // TypeDefIndex: 8134
+public class TOD_AudioAtNight : TOD_Audio // TypeDefIndex: 8136
 {
 	public float fadeTime;
 	private float lerpTime;
@@ -2273,7 +2273,7 @@ public class TOD_AudioAtNight : TOD_Audio // TypeDefIndex: 8134
 
 }
 
-public class TOD_AudioAtTime : TOD_Audio // TypeDefIndex: 8135
+public class TOD_AudioAtTime : TOD_Audio // TypeDefIndex: 8137
 {
 	public AnimationCurve Volume;
 
@@ -2284,7 +2284,7 @@ public class TOD_AudioAtTime : TOD_Audio // TypeDefIndex: 8135
 
 }
 
-public abstract class TOD_Light : MonoBehaviour // TypeDefIndex: 8136
+public abstract class TOD_Light : MonoBehaviour // TypeDefIndex: 8138
 {
 	private Light lightComponent;
 
@@ -2299,7 +2299,7 @@ public abstract class TOD_Light : MonoBehaviour // TypeDefIndex: 8136
 
 }
 
-public class TOD_LightAtDay : TOD_Light // TypeDefIndex: 8137
+public class TOD_LightAtDay : TOD_Light // TypeDefIndex: 8139
 {
 	public float fadeTime;
 	private float lerpTime;
@@ -2314,7 +2314,7 @@ public class TOD_LightAtDay : TOD_Light // TypeDefIndex: 8137
 
 }
 
-public class TOD_LightAtNight : TOD_Light // TypeDefIndex: 8138
+public class TOD_LightAtNight : TOD_Light // TypeDefIndex: 8140
 {
 	public float fadeTime;
 	private float lerpTime;
@@ -2329,7 +2329,7 @@ public class TOD_LightAtNight : TOD_Light // TypeDefIndex: 8138
 
 }
 
-public class TOD_LightAtTime : TOD_Light // TypeDefIndex: 8139
+public class TOD_LightAtTime : TOD_Light // TypeDefIndex: 8141
 {
 	public AnimationCurve Intensity;
 
@@ -2340,7 +2340,7 @@ public class TOD_LightAtTime : TOD_Light // TypeDefIndex: 8139
 
 }
 
-public class TOD_LoadSkyFromFile : MonoBehaviour // TypeDefIndex: 8140
+public class TOD_LoadSkyFromFile : MonoBehaviour // TypeDefIndex: 8142
 {
 	public TOD_Sky sky;
 	public TextAsset textAsset;
@@ -2352,7 +2352,7 @@ public class TOD_LoadSkyFromFile : MonoBehaviour // TypeDefIndex: 8140
 
 }
 
-public abstract class TOD_Particle : MonoBehaviour // TypeDefIndex: 8141
+public abstract class TOD_Particle : MonoBehaviour // TypeDefIndex: 8143
 {
 	private ParticleSystem particleComponent;
 
@@ -2367,7 +2367,7 @@ public abstract class TOD_Particle : MonoBehaviour // TypeDefIndex: 8141
 
 }
 
-public class TOD_ParticleAtDay : TOD_Particle // TypeDefIndex: 8142
+public class TOD_ParticleAtDay : TOD_Particle // TypeDefIndex: 8144
 {
 	public float fadeTime;
 	private float lerpTime;
@@ -2382,7 +2382,7 @@ public class TOD_ParticleAtDay : TOD_Particle // TypeDefIndex: 8142
 
 }
 
-public class TOD_ParticleAtNight : TOD_Particle // TypeDefIndex: 8143
+public class TOD_ParticleAtNight : TOD_Particle // TypeDefIndex: 8145
 {
 	public float fadeTime;
 	private float lerpTime;
@@ -2397,7 +2397,7 @@ public class TOD_ParticleAtNight : TOD_Particle // TypeDefIndex: 8143
 
 }
 
-public class TOD_ParticleAtTime : TOD_Particle // TypeDefIndex: 8144
+public class TOD_ParticleAtTime : TOD_Particle // TypeDefIndex: 8146
 {
 	public AnimationCurve Emission;
 
@@ -2408,7 +2408,7 @@ public class TOD_ParticleAtTime : TOD_Particle // TypeDefIndex: 8144
 
 }
 
-public abstract class TOD_Render : MonoBehaviour // TypeDefIndex: 8145
+public abstract class TOD_Render : MonoBehaviour // TypeDefIndex: 8147
 {
 	private Renderer rendererComponent;
 
@@ -2421,7 +2421,7 @@ public abstract class TOD_Render : MonoBehaviour // TypeDefIndex: 8145
 
 }
 
-public class TOD_RenderAtDay : TOD_Render // TypeDefIndex: 8146
+public class TOD_RenderAtDay : TOD_Render // TypeDefIndex: 8148
 {
 
 	protected void Start() { }
@@ -2432,7 +2432,7 @@ public class TOD_RenderAtDay : TOD_Render // TypeDefIndex: 8146
 
 }
 
-public class TOD_RenderAtNight : TOD_Render // TypeDefIndex: 8147
+public class TOD_RenderAtNight : TOD_Render // TypeDefIndex: 8149
 {
 
 	protected void Start() { }
@@ -2443,7 +2443,7 @@ public class TOD_RenderAtNight : TOD_Render // TypeDefIndex: 8147
 
 }
 
-public class TOD_WeatherManager : MonoBehaviour // TypeDefIndex: 8148
+public class TOD_WeatherManager : MonoBehaviour // TypeDefIndex: 8150
 {
 	public ParticleSystem RainParticleSystem;
 	public float FadeTime;
@@ -2474,7 +2474,7 @@ public class TOD_WeatherManager : MonoBehaviour // TypeDefIndex: 8148
 
 }
 
-public enum TOD_WeatherManager.RainType // TypeDefIndex: 8149
+public enum TOD_WeatherManager.RainType // TypeDefIndex: 8151
 {
 	public int value__;
 	public const TOD_WeatherManager.RainType None = 0;
@@ -2483,7 +2483,7 @@ public enum TOD_WeatherManager.RainType // TypeDefIndex: 8149
 
 }
 
-public enum TOD_WeatherManager.CloudType // TypeDefIndex: 8150
+public enum TOD_WeatherManager.CloudType // TypeDefIndex: 8152
 {
 	public int value__;
 	public const TOD_WeatherManager.CloudType None = 0;
@@ -2494,7 +2494,7 @@ public enum TOD_WeatherManager.CloudType // TypeDefIndex: 8150
 
 }
 
-public enum TOD_WeatherManager.AtmosphereType // TypeDefIndex: 8151
+public enum TOD_WeatherManager.AtmosphereType // TypeDefIndex: 8153
 {
 	public int value__;
 	public const TOD_WeatherManager.AtmosphereType Clear = 0;

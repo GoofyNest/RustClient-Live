@@ -1,4 +1,4 @@
-public struct PresenceModificationDataRecordId // TypeDefIndex: 8847
+public struct PresenceModificationDataRecordId // TypeDefIndex: 8849
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <Key>k__BackingField;

@@ -1,4 +1,4 @@
-public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 7170
+public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 7172
 {
 	public const float DeltaTime_Min = 1E-06;
 	public const int MaxInstanceCount = 12;
@@ -117,7 +117,7 @@ public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // 
 
 }
 
-public enum EZSoftBone.UnificationMode // TypeDefIndex: 7171
+public enum EZSoftBone.UnificationMode // TypeDefIndex: 7173
 {
 	public int value__;
 	public const EZSoftBone.UnificationMode None = 0;
@@ -126,7 +126,7 @@ public enum EZSoftBone.UnificationMode // TypeDefIndex: 7171
 
 }
 
-public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7172
+public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7174
 {
 	public int value__;
 	public const EZSoftBone.DeltaTimeMode DeltaTime = 0;
@@ -136,7 +136,7 @@ public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7172
 
 }
 
-private class EZSoftBone.BoneChain // TypeDefIndex: 7173
+private class EZSoftBone.BoneChain // TypeDefIndex: 7175
 {
 	public EZSoftBone.Bone[] childBones;
 
@@ -147,7 +147,7 @@ private class EZSoftBone.BoneChain // TypeDefIndex: 7173
 
 }
 
-private class EZSoftBone.Bone // TypeDefIndex: 7174
+private class EZSoftBone.Bone // TypeDefIndex: 7176
 {
 	public EZSoftBone.Bone parentBone;
 	public Vector3 localPosition;
@@ -200,7 +200,7 @@ private class EZSoftBone.Bone // TypeDefIndex: 7174
 
 }
 
-private sealed class EZSoftBone.<>c // TypeDefIndex: 7175
+private sealed class EZSoftBone.<>c // TypeDefIndex: 7177
 {
 	public static readonly EZSoftBone.<>c <>9;
 	public static Func<EZSoftBone.BoneChain, int> <>9__55_0;

@@ -1,4 +1,4 @@
-public enum LogCategory // TypeDefIndex: 9054
+public enum LogCategory // TypeDefIndex: 9056
 {
 	public int value__;
 	public const LogCategory Core = 0;

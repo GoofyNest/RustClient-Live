@@ -1,4 +1,4 @@
-public sealed class DecodeTextCallback : MulticastDelegate // TypeDefIndex: 7606
+public sealed class DecodeTextCallback : MulticastDelegate // TypeDefIndex: 7608
 {
 
 	public void .ctor(object object, IntPtr method) { }

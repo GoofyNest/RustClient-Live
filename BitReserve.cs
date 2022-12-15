@@ -1,4 +1,4 @@
-internal sealed class BitReserve // TypeDefIndex: 7399
+internal sealed class BitReserve // TypeDefIndex: 7401
 {
 	private const int BUFSIZE = 32768;
 	private const int BUFSIZE_MASK = 32767;

@@ -3,8 +3,8 @@ internal class PersistentCall // TypeDefIndex: 3638
 	[SerializeField]
 	[FormerlySerializedAsAttribute]
 	private Object m_Target;
-	[FormerlySerializedAsAttribute]
 	[SerializeField]
+	[FormerlySerializedAsAttribute]
 	private string m_MethodName;
 	[SerializeField]
 	[FormerlySerializedAsAttribute]

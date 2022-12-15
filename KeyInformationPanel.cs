@@ -1,4 +1,4 @@
-public class KeyInformationPanel : ItemInformationPanel // TypeDefIndex: 12804
+public class KeyInformationPanel : ItemInformationPanel // TypeDefIndex: 12814
 {
 	[SerializeField]
 	private Text id;

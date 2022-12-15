@@ -1,4 +1,4 @@
-public sealed class BlendModeTypeParameter : ParameterOverride<BlendModeType> // TypeDefIndex: 12012
+public sealed class BlendModeTypeParameter : ParameterOverride<BlendModeType> // TypeDefIndex: 12022
 {
 
 	public void .ctor() { }

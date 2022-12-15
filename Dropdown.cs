@@ -244,7 +244,7 @@ private sealed class Dropdown.<DelayedDestroyDropdownList>d__74 : IEnumerator<ob
 
 }
 
-public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 7046
+public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 7048
 {
 	public RustIcon Icon;
 	public RustText Text;
@@ -284,7 +284,7 @@ public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler //
 
 }
 
-public class Dropdown.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7047
+public class Dropdown.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7049
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class FpStandaloneInputModule : StandaloneInputModule // TypeDefIndex: 12705
+public class FpStandaloneInputModule : StandaloneInputModule // TypeDefIndex: 12715
 {
 	public PointerEventData CurrentData { get; }
 

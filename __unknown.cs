@@ -7152,14 +7152,14 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6271
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6647
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6649
 {
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 373B494F210C656134C5728D551D4C97B013EB33
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 E03C5B88B476F381E452F92C935A5B86131DFC4A
 
 }
 
-public class FastAction<A> // TypeDefIndex: 6680
+public class FastAction<A> // TypeDefIndex: 6682
 {
 	private LinkedList<Action<A>> delegates;
 	private Dictionary<Action<A>, LinkedListNode<Action<A>>> lookup;
@@ -7202,7 +7202,7 @@ public class FastAction<A> // TypeDefIndex: 6680
 
 }
 
-public class FastAction<A, B> // TypeDefIndex: 6681
+public class FastAction<A, B> // TypeDefIndex: 6683
 {
 	private LinkedList<Action<A, B>> delegates;
 	private Dictionary<Action<A, B>, LinkedListNode<Action<A, B>>> lookup;
@@ -7251,7 +7251,7 @@ public class FastAction<A, B> // TypeDefIndex: 6681
 
 }
 
-public class FastAction<A, B, C> // TypeDefIndex: 6682
+public class FastAction<A, B, C> // TypeDefIndex: 6684
 {
 	private LinkedList<Action<A, B, C>> delegates;
 	private Dictionary<Action<A, B, C>, LinkedListNode<Action<A, B, C>>> lookup;
@@ -7285,7 +7285,7 @@ public class FastAction<A, B, C> // TypeDefIndex: 6682
 
 }
 
-public enum _HorizontalAlignmentOptions // TypeDefIndex: 6769
+public enum _HorizontalAlignmentOptions // TypeDefIndex: 6771
 {
 	public int value__;
 	public const _HorizontalAlignmentOptions Left = 1;
@@ -7297,7 +7297,7 @@ public enum _HorizontalAlignmentOptions // TypeDefIndex: 6769
 
 }
 
-public enum _VerticalAlignmentOptions // TypeDefIndex: 6770
+public enum _VerticalAlignmentOptions // TypeDefIndex: 6772
 {
 	public int value__;
 	public const _VerticalAlignmentOptions Top = 256;
@@ -7309,13 +7309,13 @@ public enum _VerticalAlignmentOptions // TypeDefIndex: 6770
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6812
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6814
 {
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46
 
 }
 
-internal class <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA} // TypeDefIndex: 6889
+internal class <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA} // TypeDefIndex: 6891
 {
 	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=32 $$method0x600002d-1
 	internal static <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=32 $$method0x600002d-2
@@ -7324,13 +7324,13 @@ internal class <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CEC
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6977
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 6979
 {
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=18 B633673BF635D4C719EF5A0496BD28129A8CE5D3B76217371B6C1FDDFFDD780B
 
 }
 
-internal class <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7} // TypeDefIndex: 7008
+internal class <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7} // TypeDefIndex: 7010
 {
 	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=76 $$method0x6000504-1
 	internal static <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=68 $$method0x6000505-1
@@ -7353,7 +7353,7 @@ internal class <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FE
 
 }
 
-internal class <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8} // TypeDefIndex: 7033
+internal class <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8} // TypeDefIndex: 7035
 {
 	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=32 $$method0x600007d-1
 	internal static <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=32 $$method0x600007d-2
@@ -7362,7 +7362,7 @@ internal class <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84F
 
 }
 
-public struct ValueTask<TResult> : IEquatable<ValueTask<TResult>> // TypeDefIndex: 7128
+public struct ValueTask<TResult> : IEquatable<ValueTask<TResult>> // TypeDefIndex: 7130
 {
 	internal readonly object _obj;
 	internal readonly TResult _result;
@@ -7456,7 +7456,7 @@ public struct ValueTask<TResult> : IEquatable<ValueTask<TResult>> // TypeDefInde
 
 }
 
-public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 7138
+public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 7140
 {
 	private readonly ValueTask<TResult> _value;
 
@@ -7506,13 +7506,13 @@ public struct ValueTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyComp
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7380
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7382
 {
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 C92FBDBB320D6C40BEB41D97EE6C7B301C4ADB1D
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7431
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7433
 {
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 021F8912B268BE164A590D1440F05920A3F2A63B9874F994402C7AFFC6F92F82
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 02E68C9160BF270CAF19E18D3A77BC2EAA90EFCB3ECA3C454B58CD5BBA5FF7ED
@@ -7595,7 +7595,7 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7431
 
 }
 
-internal sealed class TimedObjectsComparer<TObject> : IComparer<TObject> // TypeDefIndex: 7480
+internal sealed class TimedObjectsComparer<TObject> : IComparer<TObject> // TypeDefIndex: 7482
 {
 
 	public int Compare(TObject x, TObject y) { }
@@ -7612,7 +7612,7 @@ internal sealed class TimedObjectsComparer<TObject> : IComparer<TObject> // Type
 
 }
 
-public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7520
+public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7522
 {
 	private readonly long _time;
 	[CompilerGeneratedAttribute]
@@ -7677,7 +7677,7 @@ public sealed class ValueChange<TValue> : ITimedObject // TypeDefIndex: 7520
 
 }
 
-public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnumerable // TypeDefIndex: 7521
+public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnumerable // TypeDefIndex: 7523
 {
 	[CompilerGeneratedAttribute]
 	private EventHandler ValuesChanged;
@@ -7782,13 +7782,13 @@ public sealed class ValueLine<TValue> : IEnumerable<ValueChange<TValue>>, IEnume
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7654
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 7656
 {
 	internal static readonly int B52DDE3D967E604310620E80EFBFBED9B6FB8C0605B3CB29D31534DAA6181A7C = 505223448;
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7855
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7857
 {
 	internal static <PrivateImplementationDetails>.$ArrayType$132 $$field-0
 
@@ -7797,7 +7797,7 @@ internal class <PrivateImplementationDetails> // TypeDefIndex: 7855
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7873
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7875
 {
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
@@ -7812,7 +7812,7 @@ internal class <PrivateImplementationDetails> // TypeDefIndex: 7873
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7914
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7916
 {
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
@@ -7828,7 +7828,7 @@ internal class <PrivateImplementationDetails> // TypeDefIndex: 7914
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 7992
+internal class <PrivateImplementationDetails> // TypeDefIndex: 7994
 {
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
@@ -7873,7 +7873,7 @@ internal class <PrivateImplementationDetails> // TypeDefIndex: 7992
 
 }
 
-internal class <PrivateImplementationDetails> // TypeDefIndex: 8026
+internal class <PrivateImplementationDetails> // TypeDefIndex: 8028
 {
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-0
 	internal static <PrivateImplementationDetails>.$ArrayType$512 $$field-1
@@ -7896,7 +7896,7 @@ internal class <PrivateImplementationDetails> // TypeDefIndex: 8026
 
 }
 
-public class CC_AnalogTV : CC_Base // TypeDefIndex: 8054
+public class CC_AnalogTV : CC_Base // TypeDefIndex: 8056
 {
 	public float phase;
 	public bool grayscale;
@@ -7914,7 +7914,7 @@ public class CC_AnalogTV : CC_Base // TypeDefIndex: 8054
 
 }
 
-public class CC_Base : MonoBehaviour // TypeDefIndex: 8055
+public class CC_Base : MonoBehaviour // TypeDefIndex: 8057
 {
 	public Shader shader;
 	protected Material _material;
@@ -7932,7 +7932,7 @@ public class CC_Base : MonoBehaviour // TypeDefIndex: 8055
 
 }
 
-public class CC_BleachBypass : CC_Base // TypeDefIndex: 8056
+public class CC_BleachBypass : CC_Base // TypeDefIndex: 8058
 {
 	public float amount;
 
@@ -7943,7 +7943,7 @@ public class CC_BleachBypass : CC_Base // TypeDefIndex: 8056
 
 }
 
-public class CC_Blend : CC_Base // TypeDefIndex: 8057
+public class CC_Blend : CC_Base // TypeDefIndex: 8059
 {
 	public Texture texture;
 	public float amount;
@@ -7956,7 +7956,7 @@ public class CC_Blend : CC_Base // TypeDefIndex: 8057
 
 }
 
-public class CC_BrightnessContrastGamma : CC_Base // TypeDefIndex: 8058
+public class CC_BrightnessContrastGamma : CC_Base // TypeDefIndex: 8060
 {
 	public float redCoeff;
 	public float greenCoeff;
@@ -7972,7 +7972,7 @@ public class CC_BrightnessContrastGamma : CC_Base // TypeDefIndex: 8058
 
 }
 
-public class CC_ChannelMixer : CC_Base // TypeDefIndex: 8059
+public class CC_ChannelMixer : CC_Base // TypeDefIndex: 8061
 {
 	public float redR;
 	public float redG;
@@ -7994,7 +7994,7 @@ public class CC_ChannelMixer : CC_Base // TypeDefIndex: 8059
 
 }
 
-public class CC_Convolution3x3 : CC_Base // TypeDefIndex: 8060
+public class CC_Convolution3x3 : CC_Base // TypeDefIndex: 8062
 {
 	public Vector3 kernelTop;
 	public Vector3 kernelMiddle;
@@ -8009,7 +8009,7 @@ public class CC_Convolution3x3 : CC_Base // TypeDefIndex: 8060
 
 }
 
-public class CC_CrossStitch : CC_Base // TypeDefIndex: 8061
+public class CC_CrossStitch : CC_Base // TypeDefIndex: 8063
 {
 	public int size;
 	public float brightness;
@@ -8023,7 +8023,7 @@ public class CC_CrossStitch : CC_Base // TypeDefIndex: 8061
 
 }
 
-public class CC_DoubleVision : CC_Base, IImageEffect // TypeDefIndex: 8062
+public class CC_DoubleVision : CC_Base, IImageEffect // TypeDefIndex: 8064
 {
 	public Vector2 displace;
 	public float amount;
@@ -8037,7 +8037,7 @@ public class CC_DoubleVision : CC_Base, IImageEffect // TypeDefIndex: 8062
 
 }
 
-public class CC_FastVignette : CC_Base // TypeDefIndex: 8063
+public class CC_FastVignette : CC_Base // TypeDefIndex: 8065
 {
 	public float sharpness;
 	public float darkness;
@@ -8050,7 +8050,7 @@ public class CC_FastVignette : CC_Base // TypeDefIndex: 8063
 
 }
 
-public class CC_Frost : CC_Base, IImageEffect // TypeDefIndex: 8064
+public class CC_Frost : CC_Base, IImageEffect // TypeDefIndex: 8066
 {
 	public float scale;
 	public float sharpness;
@@ -8066,7 +8066,7 @@ public class CC_Frost : CC_Base, IImageEffect // TypeDefIndex: 8064
 
 }
 
-public class CC_GradientRamp : CC_Base // TypeDefIndex: 8065
+public class CC_GradientRamp : CC_Base // TypeDefIndex: 8067
 {
 	public Texture rampTexture;
 	public float amount;
@@ -8078,7 +8078,7 @@ public class CC_GradientRamp : CC_Base // TypeDefIndex: 8065
 
 }
 
-public class CC_Grayscale : CC_Base, IImageEffect // TypeDefIndex: 8066
+public class CC_Grayscale : CC_Base, IImageEffect // TypeDefIndex: 8068
 {
 	public float redLuminance;
 	public float greenLuminance;
@@ -8094,7 +8094,7 @@ public class CC_Grayscale : CC_Base, IImageEffect // TypeDefIndex: 8066
 
 }
 
-public class CC_Halftone : CC_Base // TypeDefIndex: 8067
+public class CC_Halftone : CC_Base // TypeDefIndex: 8069
 {
 	public float density;
 	public int mode;
@@ -8108,7 +8108,7 @@ public class CC_Halftone : CC_Base // TypeDefIndex: 8067
 
 }
 
-public class CC_HueSaturationValue : CC_Base // TypeDefIndex: 8068
+public class CC_HueSaturationValue : CC_Base // TypeDefIndex: 8070
 {
 	public float hue;
 	public float saturation;
@@ -8121,7 +8121,7 @@ public class CC_HueSaturationValue : CC_Base // TypeDefIndex: 8068
 
 }
 
-public class CC_Led : CC_Base // TypeDefIndex: 8069
+public class CC_Led : CC_Base // TypeDefIndex: 8071
 {
 	public float scale;
 	public bool automaticRatio;
@@ -8136,7 +8136,7 @@ public class CC_Led : CC_Base // TypeDefIndex: 8069
 
 }
 
-public class CC_Levels : CC_Base // TypeDefIndex: 8070
+public class CC_Levels : CC_Base // TypeDefIndex: 8072
 {
 	public int mode;
 	public float inputMinL;
@@ -8167,7 +8167,7 @@ public class CC_Levels : CC_Base // TypeDefIndex: 8070
 
 }
 
-public class CC_LookupFilter : CC_Base // TypeDefIndex: 8071
+public class CC_LookupFilter : CC_Base // TypeDefIndex: 8073
 {
 	public Texture lookupTexture;
 
@@ -8178,7 +8178,7 @@ public class CC_LookupFilter : CC_Base // TypeDefIndex: 8071
 
 }
 
-public class CC_Negative : CC_Base // TypeDefIndex: 8072
+public class CC_Negative : CC_Base // TypeDefIndex: 8074
 {
 	public float amount;
 
@@ -8189,7 +8189,7 @@ public class CC_Negative : CC_Base // TypeDefIndex: 8072
 
 }
 
-public class CC_PhotoFilter : CC_Base, IImageEffect // TypeDefIndex: 8073
+public class CC_PhotoFilter : CC_Base, IImageEffect // TypeDefIndex: 8075
 {
 	public Color color;
 	public float density;
@@ -8203,7 +8203,7 @@ public class CC_PhotoFilter : CC_Base, IImageEffect // TypeDefIndex: 8073
 
 }
 
-public class CC_Pixelate : CC_Base // TypeDefIndex: 8074
+public class CC_Pixelate : CC_Base // TypeDefIndex: 8076
 {
 	public float scale;
 	public bool automaticRatio;
@@ -8217,7 +8217,7 @@ public class CC_Pixelate : CC_Base // TypeDefIndex: 8074
 
 }
 
-public class CC_Posterize : CC_Base // TypeDefIndex: 8075
+public class CC_Posterize : CC_Base // TypeDefIndex: 8077
 {
 	public int levels;
 
@@ -8228,7 +8228,7 @@ public class CC_Posterize : CC_Base // TypeDefIndex: 8075
 
 }
 
-public class CC_RGBSplit : CC_Base // TypeDefIndex: 8076
+public class CC_RGBSplit : CC_Base // TypeDefIndex: 8078
 {
 	public float amount;
 	public float angle;
@@ -8240,7 +8240,7 @@ public class CC_RGBSplit : CC_Base // TypeDefIndex: 8076
 
 }
 
-public class CC_RadialBlur : CC_Base // TypeDefIndex: 8077
+public class CC_RadialBlur : CC_Base // TypeDefIndex: 8079
 {
 	public float amount;
 	public Vector2 center;
@@ -8253,7 +8253,7 @@ public class CC_RadialBlur : CC_Base // TypeDefIndex: 8077
 
 }
 
-public class CC_Sharpen : CC_Base // TypeDefIndex: 8078
+public class CC_Sharpen : CC_Base // TypeDefIndex: 8080
 {
 	public float strength;
 	public float clamp;
@@ -8265,7 +8265,7 @@ public class CC_Sharpen : CC_Base // TypeDefIndex: 8078
 
 }
 
-public class CC_SharpenAndVignette : CC_Base, IImageEffect // TypeDefIndex: 8079
+public class CC_SharpenAndVignette : CC_Base, IImageEffect // TypeDefIndex: 8081
 {
 	[HeaderAttribute]
 	public bool applySharpen;
@@ -8289,7 +8289,7 @@ public class CC_SharpenAndVignette : CC_Base, IImageEffect // TypeDefIndex: 8079
 
 }
 
-public class CC_Threshold : CC_Base // TypeDefIndex: 8080
+public class CC_Threshold : CC_Base // TypeDefIndex: 8082
 {
 	public float threshold;
 	public bool useNoise;
@@ -8302,7 +8302,7 @@ public class CC_Threshold : CC_Base // TypeDefIndex: 8080
 
 }
 
-public class CC_Vibrance : CC_Base // TypeDefIndex: 8081
+public class CC_Vibrance : CC_Base // TypeDefIndex: 8083
 {
 	public float amount;
 
@@ -8313,7 +8313,7 @@ public class CC_Vibrance : CC_Base // TypeDefIndex: 8081
 
 }
 
-public class CC_Wiggle : CC_Base, IImageEffect // TypeDefIndex: 8082
+public class CC_Wiggle : CC_Base, IImageEffect // TypeDefIndex: 8084
 {
 	public float timer;
 	public float speed;
@@ -8330,7 +8330,7 @@ public class CC_Wiggle : CC_Base, IImageEffect // TypeDefIndex: 8082
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 9955
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 9957
 {
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=19552 1DC4C1B55DC0F7A09DD49557857282243A661721
 	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=420 4D97B7EA75C57A5C53C1E01B1C6253465DE43B65
@@ -8341,7 +8341,7 @@ internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 9955
 
 }
 
-internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <State>j__TPar> // TypeDefIndex: 9962
+internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <State>j__TPar> // TypeDefIndex: 9964
 {
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=420
@@ -8429,7 +8429,7 @@ internal sealed class <>f__AnonymousType0<<Identifier>j__TPar, <Name>j__TPar, <S
 
 }
 
-public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10628
+public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10631
 {
 	public bool bAttacking;
 	public bool bHitMetal;
@@ -8473,7 +8473,7 @@ public class v_chainsaw : MonoBehaviour // TypeDefIndex: 10628
 
 }
 
-internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 13969
+internal sealed class <PrivateImplementationDetails> // TypeDefIndex: 13979
 {
 
 [CompilerGeneratedAttribute]

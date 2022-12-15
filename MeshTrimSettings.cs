@@ -1,4 +1,4 @@
-public struct MeshTrimSettings // TypeDefIndex: 7383
+public struct MeshTrimSettings // TypeDefIndex: 7385
 {
 
 internal class <Module>

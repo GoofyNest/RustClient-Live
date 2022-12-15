@@ -1,4 +1,4 @@
-public class AddSellOrderManager : MonoBehaviour // TypeDefIndex: 10453
+public class AddSellOrderManager : MonoBehaviour // TypeDefIndex: 10455
 {
 	public VirtualItemIcon sellItemIcon;
 	public VirtualItemIcon currencyItemIcon;
@@ -45,7 +45,7 @@ public class AddSellOrderManager : MonoBehaviour // TypeDefIndex: 10453
 
 }
 
-private sealed class AddSellOrderManager.<>c__DisplayClass10_0 // TypeDefIndex: 10454
+private sealed class AddSellOrderManager.<>c__DisplayClass10_0 // TypeDefIndex: 10456
 {
 	public AddSellOrderManager <>4__this;
 	public string search;

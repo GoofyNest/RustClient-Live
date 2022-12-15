@@ -1,4 +1,4 @@
-public struct BeginPlayerSessionOptionsAccountId // TypeDefIndex: 9045
+public struct BeginPlayerSessionOptionsAccountId // TypeDefIndex: 9047
 {
 	private MetricsAccountIdType m_AccountIdType;
 	private EpicAccountId m_Epic;

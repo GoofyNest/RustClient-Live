@@ -1,4 +1,4 @@
-internal struct RemoveGame // TypeDefIndex: 7728
+internal struct RemoveGame // TypeDefIndex: 7730
 {
 	[CompilerGeneratedAttribute]
 	private string <GameId>k__BackingField;

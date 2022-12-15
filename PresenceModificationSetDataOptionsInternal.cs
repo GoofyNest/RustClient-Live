@@ -1,4 +1,4 @@
-internal struct PresenceModificationSetDataOptionsInternal : ISettable<PresenceModificationSetDataOptions>, IDisposable // TypeDefIndex: 8852
+internal struct PresenceModificationSetDataOptionsInternal : ISettable<PresenceModificationSetDataOptions>, IDisposable // TypeDefIndex: 8854
 {
 	private int m_ApiVersion;
 	private int m_RecordsCount;

@@ -1,4 +1,4 @@
-public class MLRSVelocityUI : MonoBehaviour // TypeDefIndex: 11470
+public class MLRSVelocityUI : MonoBehaviour // TypeDefIndex: 11479
 {
 	[SerializeField]
 	private RustText percentText;

@@ -94,7 +94,7 @@ public class Input // TypeDefIndex: 4080
 
 }
 
-public static class Input // TypeDefIndex: 6843
+public static class Input // TypeDefIndex: 6845
 {
 
 public static class Input
@@ -147,7 +147,7 @@ public static class Input
 
 }
 
-public class Input.Button // TypeDefIndex: 6844
+public class Input.Button // TypeDefIndex: 6846
 {
 	public string Name;
 	public Func<bool> TestFunction;
@@ -170,7 +170,7 @@ public class Input.Button // TypeDefIndex: 6844
 
 }
 
-private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6845
+private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6847
 {
 	public string name;
 
@@ -181,7 +181,7 @@ private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6845
 
 }
 
-private sealed class Input.<>c // TypeDefIndex: 6846
+private sealed class Input.<>c // TypeDefIndex: 6848
 {
 	public static readonly Input.<>c <>9;
 	public static Func<Input.Button, bool> <>9__15_0;
@@ -212,7 +212,7 @@ private sealed class Input.<>c // TypeDefIndex: 6846
 
 }
 
-private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6847
+private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6849
 {
 	public string bind;
 
@@ -223,7 +223,7 @@ private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6847
 
 }
 
-private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6848
+private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6850
 {
 	public string bind;
 
@@ -234,7 +234,7 @@ private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6848
 
 }
 
-private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6849
+private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6851
 {
 	public string bind;
 
@@ -245,7 +245,7 @@ private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6849
 
 }
 
-public class Input : ConsoleSystem // TypeDefIndex: 13741
+public class Input : ConsoleSystem // TypeDefIndex: 13751
 {
 	[ClientVar]
 	public static bool flipy;

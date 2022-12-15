@@ -1,4 +1,4 @@
-public class TerrainAnchor : PrefabAttribute // TypeDefIndex: 12132
+public class TerrainAnchor : PrefabAttribute // TypeDefIndex: 12142
 {
 	public float Extents;
 	public float Offset;

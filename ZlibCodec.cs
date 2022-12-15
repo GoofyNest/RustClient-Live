@@ -1,4 +1,4 @@
-public sealed class ZlibCodec // TypeDefIndex: 7006
+public sealed class ZlibCodec // TypeDefIndex: 7008
 {
 	public byte[] InputBuffer;
 	public int NextIn;

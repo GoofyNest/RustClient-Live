@@ -1,4 +1,4 @@
-internal struct JoinSessionAcceptedCallbackInfoInternal : ICallbackInfoInternal, IGettable<JoinSessionAcceptedCallbackInfo>, ISettable<JoinSessionAcceptedCallbackInfo>, IDisposable // TypeDefIndex: 8499
+internal struct JoinSessionAcceptedCallbackInfoInternal : ICallbackInfoInternal, IGettable<JoinSessionAcceptedCallbackInfo>, ISettable<JoinSessionAcceptedCallbackInfo>, IDisposable // TypeDefIndex: 8501
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;

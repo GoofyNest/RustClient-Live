@@ -1,4 +1,4 @@
-internal struct QueryIdTokenOptionsInternal : ISettable<QueryIdTokenOptions>, IDisposable // TypeDefIndex: 9703
+internal struct QueryIdTokenOptionsInternal : ISettable<QueryIdTokenOptions>, IDisposable // TypeDefIndex: 9705
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

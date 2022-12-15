@@ -1,4 +1,4 @@
-internal struct WindowsRTCOptionsInternal : IGettable<WindowsRTCOptions>, ISettable<WindowsRTCOptions>, IDisposable // TypeDefIndex: 9887
+internal struct WindowsRTCOptionsInternal : IGettable<WindowsRTCOptions>, ISettable<WindowsRTCOptions>, IDisposable // TypeDefIndex: 9889
 {
 	private int m_ApiVersion;
 	private IntPtr m_PlatformSpecificOptions;

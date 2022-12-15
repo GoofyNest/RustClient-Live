@@ -1,4 +1,4 @@
-public class CardPlayerDataBlackjack : CardPlayerData // TypeDefIndex: 13828
+public class CardPlayerDataBlackjack : CardPlayerData // TypeDefIndex: 13838
 {
 	public List<PlayingCard> SplitCards;
 	public int splitBetThisRound;

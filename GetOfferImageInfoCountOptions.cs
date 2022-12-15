@@ -1,4 +1,4 @@
-public struct GetOfferImageInfoCountOptions // TypeDefIndex: 9473
+public struct GetOfferImageInfoCountOptions // TypeDefIndex: 9475
 {
 	[CompilerGeneratedAttribute]
 	private EpicAccountId <LocalUserId>k__BackingField;

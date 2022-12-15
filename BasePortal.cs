@@ -1,4 +1,4 @@
-public class BasePortal : BaseCombatEntity // TypeDefIndex: 10067
+public class BasePortal : BaseCombatEntity // TypeDefIndex: 10069
 {
 	private Option __menuOption_Menu_UsePortal;
 	public bool isUsablePortal;
@@ -12,6 +12,7 @@ public class BasePortal : BaseCombatEntity // TypeDefIndex: 10067
 	public GameObjectRef appearEffect;
 	public GameObjectRef disappearEffect;
 	public GameObjectRef transitionSoundEffect;
+	public string useTagString;
 
 	public override bool HasMenuOptions { get; }
 

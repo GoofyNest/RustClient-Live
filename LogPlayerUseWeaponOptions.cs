@@ -1,4 +1,4 @@
-public struct LogPlayerUseWeaponOptions // TypeDefIndex: 9789
+public struct LogPlayerUseWeaponOptions // TypeDefIndex: 9791
 {
 	[CompilerGeneratedAttribute]
 	private Nullable<LogPlayerUseWeaponData> <UseWeaponData>k__BackingField;

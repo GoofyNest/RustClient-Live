@@ -1,4 +1,4 @@
-public class ERModularBase : MonoBehaviour // TypeDefIndex: 7213
+public class ERModularBase : MonoBehaviour // TypeDefIndex: 7215
 {
 	public int updateInt;
 	public bool newSplatMapRestoreCode;
@@ -451,7 +451,7 @@ public class ERModularBase : MonoBehaviour // TypeDefIndex: 7213
 
 }
 
-public sealed class ERModularBase.RoadUpdate : MulticastDelegate // TypeDefIndex: 7214
+public sealed class ERModularBase.RoadUpdate : MulticastDelegate // TypeDefIndex: 7216
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -464,7 +464,7 @@ public sealed class ERModularBase.RoadUpdate : MulticastDelegate // TypeDefIndex
 
 }
 
-public sealed class ERModularBase.OnBuildMode : MulticastDelegate // TypeDefIndex: 7215
+public sealed class ERModularBase.OnBuildMode : MulticastDelegate // TypeDefIndex: 7217
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -477,7 +477,7 @@ public sealed class ERModularBase.OnBuildMode : MulticastDelegate // TypeDefInde
 
 }
 
-private sealed class ERModularBase.ᙃ : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 7216
+private sealed class ERModularBase.ᙃ : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 7218
 {
 	private int ᙅ;
 	private object 4AAAA;
@@ -508,7 +508,7 @@ private sealed class ERModularBase.ᙃ : IEnumerator<object>, IDisposable, IEnum
 
 }
 
-private sealed class ERModularBase.ᙄ : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 7217
+private sealed class ERModularBase.ᙄ : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 7219
 {
 	private int ᙅ;
 	private object 4AAAA;

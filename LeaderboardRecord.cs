@@ -1,4 +1,4 @@
-public struct LeaderboardRecord // TypeDefIndex: 9299
+public struct LeaderboardRecord // TypeDefIndex: 9301
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <UserId>k__BackingField;

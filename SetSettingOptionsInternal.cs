@@ -1,4 +1,4 @@
-internal struct SetSettingOptionsInternal : ISettable<SetSettingOptions>, IDisposable // TypeDefIndex: 8799
+internal struct SetSettingOptionsInternal : ISettable<SetSettingOptions>, IDisposable // TypeDefIndex: 8801
 {
 	private int m_ApiVersion;
 	private IntPtr m_SettingName;

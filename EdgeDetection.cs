@@ -1,4 +1,4 @@
-public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8206
+public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8208
 {
 	public EdgeDetection.EdgeDetectMode mode;
 	public float sensitivityDepth;
@@ -28,7 +28,7 @@ public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8206
 
 }
 
-public enum EdgeDetection.EdgeDetectMode // TypeDefIndex: 8207
+public enum EdgeDetection.EdgeDetectMode // TypeDefIndex: 8209
 {
 	public int value__;
 	public const EdgeDetection.EdgeDetectMode TriangleDepthNormals = 0;

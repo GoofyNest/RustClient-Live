@@ -1,4 +1,4 @@
-public static class FreeImage // TypeDefIndex: 8040
+public static class FreeImage // TypeDefIndex: 8042
 {
 	public const uint FI_RGBA_RED_MASK = 16711680;
 	public const uint FI_RGBA_GREEN_MASK = 65280;
@@ -38,7 +38,7 @@ public static class FreeImage // TypeDefIndex: 8040
 
 }
 
-public enum FreeImage.Format // TypeDefIndex: 8041
+public enum FreeImage.Format // TypeDefIndex: 8043
 {
 	public int value__;
 	public const FreeImage.Format Unknown = -1;
@@ -58,7 +58,7 @@ public enum FreeImage.Format // TypeDefIndex: 8041
 
 }
 
-public enum FreeImage.SaveFlags // TypeDefIndex: 8042
+public enum FreeImage.SaveFlags // TypeDefIndex: 8044
 {
 	public int value__;
 	public const FreeImage.SaveFlags DEFAULT = 0;
@@ -100,7 +100,7 @@ public enum FreeImage.SaveFlags // TypeDefIndex: 8042
 
 }
 
-public enum FreeImage.LoadFlags // TypeDefIndex: 8043
+public enum FreeImage.LoadFlags // TypeDefIndex: 8045
 {
 	public int value__;
 	public const FreeImage.LoadFlags DEFAULT = 0;
@@ -122,7 +122,7 @@ public enum FreeImage.LoadFlags // TypeDefIndex: 8043
 
 }
 
-public struct FreeImage.Header // TypeDefIndex: 8044
+public struct FreeImage.Header // TypeDefIndex: 8046
 {
 	public uint size;
 	public int width;
@@ -138,7 +138,7 @@ public struct FreeImage.Header // TypeDefIndex: 8044
 
 }
 
-public struct FreeImage.Bitmap // TypeDefIndex: 8045
+public struct FreeImage.Bitmap // TypeDefIndex: 8047
 {
 	public IntPtr data;
 	public static FreeImage.Bitmap Null;
@@ -154,7 +154,7 @@ public struct FreeImage.Bitmap // TypeDefIndex: 8045
 
 }
 
-public struct FreeImage.RGBQuad // TypeDefIndex: 8046
+public struct FreeImage.RGBQuad // TypeDefIndex: 8048
 {
 	public byte rgbBlue;
 	public byte rgbGreen;
@@ -164,7 +164,7 @@ public struct FreeImage.RGBQuad // TypeDefIndex: 8046
 
 }
 
-public enum FreeImage.Filter // TypeDefIndex: 8047
+public enum FreeImage.Filter // TypeDefIndex: 8049
 {
 	public int value__;
 	public const FreeImage.Filter Box = 0;

@@ -1,4 +1,4 @@
-public struct Definition // TypeDefIndex: 9290
+public struct Definition // TypeDefIndex: 9292
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <LeaderboardId>k__BackingField;
@@ -52,7 +52,7 @@ public struct Definition // TypeDefIndex: 9290
 
 }
 
-public struct Definition // TypeDefIndex: 9911
+public struct Definition // TypeDefIndex: 9913
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <AchievementId>k__BackingField;

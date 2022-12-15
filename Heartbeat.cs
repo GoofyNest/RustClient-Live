@@ -1,4 +1,4 @@
-internal struct Heartbeat // TypeDefIndex: 7723
+internal struct Heartbeat // TypeDefIndex: 7725
 {
 	[CompilerGeneratedAttribute]
 	private string <GameId>k__BackingField;

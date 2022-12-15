@@ -223,7 +223,7 @@ private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerab
 
 }
 
-public static class Extensions // TypeDefIndex: 8157
+public static class Extensions // TypeDefIndex: 8159
 {
 
 	[ExtensionAttribute]
@@ -238,7 +238,7 @@ public static class Extensions // TypeDefIndex: 8157
 
 }
 
-public static class Extensions // TypeDefIndex: 8267
+public static class Extensions // TypeDefIndex: 8269
 {
 
 	[ExtensionAttribute]
@@ -249,7 +249,7 @@ public static class Extensions // TypeDefIndex: 8267
 
 }
 
-public static class Extensions // TypeDefIndex: 13376
+public static class Extensions // TypeDefIndex: 13386
 {
 
 	[ExtensionAttribute]

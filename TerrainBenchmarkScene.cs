@@ -1,4 +1,4 @@
-public class TerrainBenchmarkScene : BenchmarkScene // TypeDefIndex: 9984
+public class TerrainBenchmarkScene : BenchmarkScene // TypeDefIndex: 9986
 {
 	public Terrain terrain;
 	private TerrainMeta terrainMeta;

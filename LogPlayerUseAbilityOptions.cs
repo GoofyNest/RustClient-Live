@@ -1,4 +1,4 @@
-public struct LogPlayerUseAbilityOptions // TypeDefIndex: 9785
+public struct LogPlayerUseAbilityOptions // TypeDefIndex: 9787
 {
 	[CompilerGeneratedAttribute]
 	private IntPtr <PlayerHandle>k__BackingField;

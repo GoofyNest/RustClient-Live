@@ -1,4 +1,4 @@
-public class IceFence : GraveyardFence // TypeDefIndex: 10549
+public class IceFence : GraveyardFence // TypeDefIndex: 10551
 {
 	public GameObject[] styles;
 	private bool init;

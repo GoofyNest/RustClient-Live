@@ -1,4 +1,4 @@
-internal struct StartSessionOptionsInternal : ISettable<StartSessionOptions>, IDisposable // TypeDefIndex: 8610
+internal struct StartSessionOptionsInternal : ISettable<StartSessionOptions>, IDisposable // TypeDefIndex: 8612
 {
 	private int m_ApiVersion;
 	private IntPtr m_SessionName;

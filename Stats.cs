@@ -1,4 +1,4 @@
-public class Stats // TypeDefIndex: 6880
+public class Stats // TypeDefIndex: 6882
 {
 	public bool Enabled;
 	public Stats.Node Building;
@@ -15,7 +15,7 @@ public class Stats // TypeDefIndex: 6880
 
 }
 
-public class Stats.Node : Pool.IPooled // TypeDefIndex: 6881
+public class Stats.Node : Pool.IPooled // TypeDefIndex: 6883
 {
 	public Dictionary<string, Stats.Node> Children;
 	public long Bytes;

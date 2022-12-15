@@ -1,4 +1,4 @@
-internal sealed class OnCreateDeviceIdCallbackInternal : MulticastDelegate // TypeDefIndex: 9604
+internal sealed class OnCreateDeviceIdCallbackInternal : MulticastDelegate // TypeDefIndex: 9606
 {
 
 	public void .ctor(object object, IntPtr method) { }

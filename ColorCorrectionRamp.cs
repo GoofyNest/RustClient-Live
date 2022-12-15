@@ -1,4 +1,4 @@
-public class ColorCorrectionRamp : ImageEffectBase // TypeDefIndex: 8193
+public class ColorCorrectionRamp : ImageEffectBase // TypeDefIndex: 8195
 {
 	public Texture textureRamp;
 

@@ -1,4 +1,4 @@
-public class MountableParentCombatEntity : BaseCombatEntity // TypeDefIndex: 10144
+public class MountableParentCombatEntity : BaseCombatEntity // TypeDefIndex: 10146
 {
 	private Option __menuOption_Menu_Mount;
 	private BaseMountable mountable;

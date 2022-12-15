@@ -1,4 +1,4 @@
-internal struct DeleteFileOptionsInternal : ISettable<DeleteFileOptions>, IDisposable // TypeDefIndex: 8881
+internal struct DeleteFileOptionsInternal : ISettable<DeleteFileOptions>, IDisposable // TypeDefIndex: 8883
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

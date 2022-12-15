@@ -1,4 +1,4 @@
-public struct InitializeThreadAffinity // TypeDefIndex: 9874
+public struct InitializeThreadAffinity // TypeDefIndex: 9876
 {
 	[CompilerGeneratedAttribute]
 	private ulong <NetworkWork>k__BackingField;

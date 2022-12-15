@@ -1,4 +1,4 @@
-public struct QueryUserInfoCallbackInfo : ICallbackInfo // TypeDefIndex: 8325
+public struct QueryUserInfoCallbackInfo : ICallbackInfo // TypeDefIndex: 8327
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

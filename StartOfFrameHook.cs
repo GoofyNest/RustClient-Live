@@ -1,4 +1,4 @@
-public class StartOfFrameHook : MonoBehaviour // TypeDefIndex: 13143
+public class StartOfFrameHook : MonoBehaviour // TypeDefIndex: 13153
 {
 	public static Action OnStartOfFrame;
 

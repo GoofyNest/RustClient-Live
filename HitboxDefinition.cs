@@ -1,4 +1,4 @@
-public class HitboxDefinition : MonoBehaviour // TypeDefIndex: 11002
+public class HitboxDefinition : MonoBehaviour // TypeDefIndex: 11010
 {
 	public Vector3 center;
 	public Vector3 rotation;
@@ -28,7 +28,7 @@ public class HitboxDefinition : MonoBehaviour // TypeDefIndex: 11002
 
 }
 
-public enum HitboxDefinition.Type // TypeDefIndex: 11003
+public enum HitboxDefinition.Type // TypeDefIndex: 11011
 {
 	public int value__;
 	public const HitboxDefinition.Type BOX = 0;

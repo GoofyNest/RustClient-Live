@@ -1,4 +1,4 @@
-internal sealed class Huffman // TypeDefIndex: 7409
+internal sealed class Huffman // TypeDefIndex: 7411
 {
 	private static readonly int[][] ValTab0;
 	private static readonly int[][] ValTab1;

@@ -1,4 +1,4 @@
-public class RepeatingFirework : BaseFirework // TypeDefIndex: 9995
+public class RepeatingFirework : BaseFirework // TypeDefIndex: 9997
 {
 	public float timeBetweenRepeats;
 	public int maxRepeats;

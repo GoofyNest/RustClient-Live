@@ -1,4 +1,4 @@
-public class ParticleScaler : MonoBehaviour // TypeDefIndex: 8085
+public class ParticleScaler : MonoBehaviour // TypeDefIndex: 8087
 {
 	public float particleScale;
 	public bool alsoScaleGameobject;

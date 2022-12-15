@@ -1,4 +1,4 @@
-public class AchievementGroup // TypeDefIndex: 12587
+public class AchievementGroup // TypeDefIndex: 12597
 {
 	public Translate.Phrase groupTitle;
 	public static AchievementGroup[] All;
@@ -15,7 +15,7 @@ public class AchievementGroup // TypeDefIndex: 12587
 
 }
 
-public class AchievementGroup.AchievementItem // TypeDefIndex: 12588
+public class AchievementGroup.AchievementItem // TypeDefIndex: 12598
 {
 	public string Name;
 	public Translate.Phrase Phrase;
@@ -32,7 +32,7 @@ public class AchievementGroup.AchievementItem // TypeDefIndex: 12588
 
 }
 
-private sealed class AchievementGroup.<>c // TypeDefIndex: 12589
+private sealed class AchievementGroup.<>c // TypeDefIndex: 12599
 {
 	public static readonly AchievementGroup.<>c <>9;
 	public static Func<AchievementGroup.AchievementItem, bool> <>9__6_0;

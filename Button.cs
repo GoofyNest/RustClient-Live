@@ -62,7 +62,7 @@ private sealed class Button.<OnFinishSubmit>d__9 : IEnumerator<object>, IEnumera
 
 }
 
-public enum BUTTON // TypeDefIndex: 11854
+public enum BUTTON // TypeDefIndex: 11863
 {
 	public int value__;
 	public const BUTTON FORWARD = 2;

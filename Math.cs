@@ -158,7 +158,7 @@ public static class Math // TypeDefIndex: 266
 
 }
 
-public static class math // TypeDefIndex: 7141
+public static class math // TypeDefIndex: 7143
 {
 
 public static class math
@@ -299,7 +299,7 @@ public static class math
 
 }
 
-internal struct math.IntFloatUnion // TypeDefIndex: 7142
+internal struct math.IntFloatUnion // TypeDefIndex: 7144
 {
 	public int intValue;
 	public float floatValue;

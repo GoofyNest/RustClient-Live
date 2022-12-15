@@ -1,4 +1,4 @@
-internal struct SetClientDetailsOptionsInternal : ISettable<SetClientDetailsOptions>, IDisposable // TypeDefIndex: 9804
+internal struct SetClientDetailsOptionsInternal : ISettable<SetClientDetailsOptions>, IDisposable // TypeDefIndex: 9806
 {
 	private int m_ApiVersion;
 	private IntPtr m_ClientHandle;

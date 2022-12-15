@@ -1,4 +1,4 @@
-public struct Triangle // TypeDefIndex: 6606
+public struct Triangle // TypeDefIndex: 6608
 {
 	public Vector3 point0;
 	public Vector3 point1;

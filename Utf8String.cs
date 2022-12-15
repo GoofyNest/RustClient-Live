@@ -1,4 +1,4 @@
-public sealed class Utf8String // TypeDefIndex: 8279
+public sealed class Utf8String // TypeDefIndex: 8281
 {
 	public static Utf8String EmptyString;
 	[CompilerGeneratedAttribute]

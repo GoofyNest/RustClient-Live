@@ -1,4 +1,4 @@
-public class OODODOQDCC : MonoBehaviour // TypeDefIndex: 7190
+public class OODODOQDCC : MonoBehaviour // TypeDefIndex: 7192
 {
 
 	public static void OQCCCDDOQO(ERBend scr, ref List<Vector3> leftOuterSegments, ref List<Vector3> leftInnerSegments, ref List<Vector3> rightOuterSegments, ref List<Vector3> rightInnerSegments) { }

@@ -1,4 +1,4 @@
-public enum ReadResult // TypeDefIndex: 8425
+public enum ReadResult // TypeDefIndex: 8427
 {
 	public int value__;
 	public const ReadResult RrContinuereading = 1;
@@ -7,7 +7,7 @@ public enum ReadResult // TypeDefIndex: 8425
 
 }
 
-public enum ReadResult // TypeDefIndex: 8928
+public enum ReadResult // TypeDefIndex: 8930
 {
 	public int value__;
 	public const ReadResult ContinueReading = 1;

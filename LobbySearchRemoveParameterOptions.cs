@@ -1,4 +1,4 @@
-public struct LobbySearchRemoveParameterOptions // TypeDefIndex: 9196
+public struct LobbySearchRemoveParameterOptions // TypeDefIndex: 9198
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <Key>k__BackingField;

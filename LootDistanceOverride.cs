@@ -1,4 +1,4 @@
-public class LootDistanceOverride : MonoBehaviour // TypeDefIndex: 11245
+public class LootDistanceOverride : MonoBehaviour // TypeDefIndex: 11254
 {
 	public float amount;
 

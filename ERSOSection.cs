@@ -1,4 +1,4 @@
-public struct ERSOSection // TypeDefIndex: 7202
+public struct ERSOSection // TypeDefIndex: 7204
 {
 	public Vector3 startPosition;
 	public Vector3 endPosition;

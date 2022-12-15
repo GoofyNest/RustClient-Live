@@ -1,4 +1,4 @@
-public class Skin // TypeDefIndex: 7744
+public class Skin // TypeDefIndex: 7746
 {
 	private string manifestName;
 	private string manifestContent;
@@ -79,7 +79,7 @@ public class Skin // TypeDefIndex: 7744
 
 }
 
-public class Skin.Manifest // TypeDefIndex: 7745
+public class Skin.Manifest // TypeDefIndex: 7747
 {
 	[CompilerGeneratedAttribute]
 	private int <Version>k__BackingField;
@@ -133,7 +133,7 @@ public class Skin.Manifest // TypeDefIndex: 7745
 
 }
 
-public class Skin.Manifest.Group // TypeDefIndex: 7746
+public class Skin.Manifest.Group // TypeDefIndex: 7748
 {
 	[CompilerGeneratedAttribute]
 	private Dictionary<string, string> <Textures>k__BackingField;
@@ -169,7 +169,7 @@ public class Skin.Manifest.Group // TypeDefIndex: 7746
 
 }
 
-public class Skin.Manifest.ColorEntry // TypeDefIndex: 7747
+public class Skin.Manifest.ColorEntry // TypeDefIndex: 7749
 {
 	[CompilerGeneratedAttribute]
 	private float <r>k__BackingField;
@@ -205,7 +205,7 @@ public class Skin.Manifest.ColorEntry // TypeDefIndex: 7747
 
 }
 
-private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7748
+private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7750
 {
 	public InventoryDef[] definitions;
 	public string downloadUrl;
@@ -218,7 +218,7 @@ private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7748
 
 }
 
-private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7749
+private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7751
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -254,7 +254,7 @@ private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, ID
 
 }
 
-private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7750
+private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7752
 {
 	private int <>1__state;
 	private object <>2__current;

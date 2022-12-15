@@ -1,4 +1,4 @@
-public sealed class Vector4Parameter : ParameterOverride<Vector4> // TypeDefIndex: 13637
+public sealed class Vector4Parameter : ParameterOverride<Vector4> // TypeDefIndex: 13647
 {
 
 	public override void Interp(Vector4 from, Vector4 to, float t) { }

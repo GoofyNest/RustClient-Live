@@ -1,4 +1,4 @@
-public class ERCrossingMainRoad : MonoBehaviour // TypeDefIndex: 7265
+public class ERCrossingMainRoad : MonoBehaviour // TypeDefIndex: 7267
 {
 	public ERModularBase baseScript;
 	public double roadType1;

@@ -1,4 +1,4 @@
-public class LanguageSelection : MonoBehaviour // TypeDefIndex: 12906
+public class LanguageSelection : MonoBehaviour // TypeDefIndex: 12916
 {
 	public GameObject buttonContainer;
 
@@ -14,7 +14,7 @@ public class LanguageSelection : MonoBehaviour // TypeDefIndex: 12906
 
 }
 
-private sealed class LanguageSelection.<>c__DisplayClass3_0 // TypeDefIndex: 12907
+private sealed class LanguageSelection.<>c__DisplayClass3_0 // TypeDefIndex: 12917
 {
 	public LanguageSelection <>4__this;
 	public GameObject goThis;
@@ -24,7 +24,7 @@ private sealed class LanguageSelection.<>c__DisplayClass3_0 // TypeDefIndex: 129
 
 }
 
-private sealed class LanguageSelection.<>c__DisplayClass3_1 // TypeDefIndex: 12908
+private sealed class LanguageSelection.<>c__DisplayClass3_1 // TypeDefIndex: 12918
 {
 	public string name;
 	public LanguageSelection.<>c

@@ -1,4 +1,4 @@
-public class ERTreeInstance // TypeDefIndex: 7230
+public class ERTreeInstance // TypeDefIndex: 7232
 {
 	public int prototypeIndex;
 	public Vector3 position;

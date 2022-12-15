@@ -1,4 +1,4 @@
-public class ZIndexArray // TypeDefIndex: 7256
+public class ZIndexArray // TypeDefIndex: 7258
 {
 	public List<int> index;
 

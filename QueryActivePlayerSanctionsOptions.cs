@@ -1,4 +1,4 @@
-public struct QueryActivePlayerSanctionsOptions // TypeDefIndex: 8631
+public struct QueryActivePlayerSanctionsOptions // TypeDefIndex: 8633
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <TargetUserId>k__BackingField;

@@ -1,4 +1,4 @@
-internal struct SessionSearchSetSessionIdOptionsInternal : ISettable<SessionSearchSetSessionIdOptions>, IDisposable // TypeDefIndex: 8603
+internal struct SessionSearchSetSessionIdOptionsInternal : ISettable<SessionSearchSetSessionIdOptions>, IDisposable // TypeDefIndex: 8605
 {
 	private int m_ApiVersion;
 	private IntPtr m_SessionId;

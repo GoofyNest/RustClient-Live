@@ -1,4 +1,4 @@
-public static class TimedObjectUtilities // TypeDefIndex: 7481
+public static class TimedObjectUtilities // TypeDefIndex: 7483
 {
 
 	[ExtensionAttribute]

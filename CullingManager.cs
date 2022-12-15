@@ -1,4 +1,4 @@
-public class CullingManager : SingletonComponent<CullingManager> // TypeDefIndex: 11585
+public class CullingManager : SingletonComponent<CullingManager> // TypeDefIndex: 11594
 {
 	private List<CullingVolume> volumes;
 

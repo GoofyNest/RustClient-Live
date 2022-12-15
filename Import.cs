@@ -1,4 +1,4 @@
-public static class Import // TypeDefIndex: 7810
+public static class Import // TypeDefIndex: 7812
 {
 
 internal class <Module>
@@ -21,7 +21,7 @@ public static class Import
 
 }
 
-private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7811
+private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7813
 {
 	public string[] columnNames;
 
@@ -34,7 +34,7 @@ private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7811
 
 }
 
-private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7812
+private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7814
 {
 	public int i;
 	public Import.<>c
@@ -55,7 +55,7 @@ private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7812
 
 }
 
-private sealed class Import.<>c // TypeDefIndex: 7813
+private sealed class Import.<>c // TypeDefIndex: 7815
 {
 	public static readonly Import.<>c <>9;
 	public static Func<Match, string> <>9__2_0;

@@ -1,4 +1,4 @@
-public struct UnlockAchievementsOptions // TypeDefIndex: 9951
+public struct UnlockAchievementsOptions // TypeDefIndex: 9953
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <UserId>k__BackingField;

@@ -1,4 +1,4 @@
-public struct RegisterPlatformAudioUserOptions // TypeDefIndex: 8706
+public struct RegisterPlatformAudioUserOptions // TypeDefIndex: 8708
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <UserId>k__BackingField;

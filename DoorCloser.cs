@@ -1,4 +1,4 @@
-public class DoorCloser : BaseEntity // TypeDefIndex: 10103
+public class DoorCloser : BaseEntity // TypeDefIndex: 10105
 {
 	private Option __menuOption_Menu_Remove;
 	[ItemSelector]

@@ -33,7 +33,7 @@ internal struct GlyphValueRecord // TypeDefIndex: 4118
 
 }
 
-public struct GlyphValueRecord_Legacy // TypeDefIndex: 6709
+public struct GlyphValueRecord_Legacy // TypeDefIndex: 6711
 {
 	public float xPlacement;
 	public float yPlacement;

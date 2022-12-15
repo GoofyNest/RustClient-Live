@@ -1,4 +1,4 @@
-public sealed class PresenceModification : Handle // TypeDefIndex: 8846
+public sealed class PresenceModification : Handle // TypeDefIndex: 8848
 {
 	public const int PresencemodificationDatarecordidApiLatest = 1;
 	public const int PresencemodificationDeletedataApiLatest = 1;

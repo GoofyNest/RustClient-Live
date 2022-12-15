@@ -1,4 +1,4 @@
-public struct PromoteMemberOptions // TypeDefIndex: 9254
+public struct PromoteMemberOptions // TypeDefIndex: 9256
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <LobbyId>k__BackingField;

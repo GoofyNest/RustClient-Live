@@ -1,4 +1,4 @@
-public class ConversationData : ScriptableObject // TypeDefIndex: 10572
+public class ConversationData : ScriptableObject // TypeDefIndex: 10575
 {
 	public string shortname;
 	public Translate.Phrase providerNameTranslated;
@@ -15,7 +15,7 @@ public class ConversationData : ScriptableObject // TypeDefIndex: 10572
 
 }
 
-public class ConversationData.ConversationCondition // TypeDefIndex: 10573
+public class ConversationData.ConversationCondition // TypeDefIndex: 10576
 {
 	public ConversationData.ConversationCondition.ConditionType conditionType;
 	public uint conditionAmount;
@@ -29,7 +29,7 @@ public class ConversationData.ConversationCondition // TypeDefIndex: 10573
 
 }
 
-public enum ConversationData.ConversationCondition.ConditionType // TypeDefIndex: 10574
+public enum ConversationData.ConversationCondition.ConditionType // TypeDefIndex: 10577
 {
 	public int value__;
 	public const ConversationData.ConversationCondition.ConditionType NONE = 0;
@@ -42,7 +42,7 @@ public enum ConversationData.ConversationCondition.ConditionType // TypeDefIndex
 
 }
 
-public class ConversationData.ResponseNode // TypeDefIndex: 10575
+public class ConversationData.ResponseNode // TypeDefIndex: 10578
 {
 	public Translate.Phrase responseTextLocalized;
 	public ConversationData.ConversationCondition[] conditions;
@@ -62,7 +62,7 @@ public class ConversationData.ResponseNode // TypeDefIndex: 10575
 
 }
 
-public class ConversationData.SpeechNode // TypeDefIndex: 10576
+public class ConversationData.SpeechNode // TypeDefIndex: 10579
 {
 	public string shortname;
 	public Translate.Phrase statementLocalized;

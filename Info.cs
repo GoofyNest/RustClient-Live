@@ -1,4 +1,4 @@
-public struct Info // TypeDefIndex: 8833
+public struct Info // TypeDefIndex: 8835
 {
 	[CompilerGeneratedAttribute]
 	private Status <Status>k__BackingField;
@@ -88,7 +88,7 @@ public struct Info // TypeDefIndex: 8833
 
 }
 
-public struct Info // TypeDefIndex: 13478
+public struct Info // TypeDefIndex: 13488
 {
 	public string action;
 	public string icon;

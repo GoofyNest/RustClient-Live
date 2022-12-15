@@ -1,4 +1,4 @@
-public class StrobeLight : IOEntity // TypeDefIndex: 9997
+public class StrobeLight : IOEntity // TypeDefIndex: 9999
 {
 	public float frequency;
 	public MeshRenderer lightMesh;

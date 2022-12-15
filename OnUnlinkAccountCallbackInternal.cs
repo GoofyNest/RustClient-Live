@@ -1,4 +1,4 @@
-internal sealed class OnUnlinkAccountCallbackInternal : MulticastDelegate // TypeDefIndex: 9622
+internal sealed class OnUnlinkAccountCallbackInternal : MulticastDelegate // TypeDefIndex: 9624
 {
 
 	public void .ctor(object object, IntPtr method) { }

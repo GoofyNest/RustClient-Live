@@ -1,4 +1,4 @@
-public struct UpdateSessionModificationOptions // TypeDefIndex: 8617
+public struct UpdateSessionModificationOptions // TypeDefIndex: 8619
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <SessionName>k__BackingField;

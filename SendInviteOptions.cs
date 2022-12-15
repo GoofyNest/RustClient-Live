@@ -1,4 +1,4 @@
-public struct SendInviteOptions // TypeDefIndex: 8546
+public struct SendInviteOptions // TypeDefIndex: 8548
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <SessionName>k__BackingField;
@@ -32,7 +32,7 @@ public struct SendInviteOptions // TypeDefIndex: 8546
 
 }
 
-public struct SendInviteOptions // TypeDefIndex: 9268
+public struct SendInviteOptions // TypeDefIndex: 9270
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <LobbyId>k__BackingField;
@@ -66,7 +66,7 @@ public struct SendInviteOptions // TypeDefIndex: 9268
 
 }
 
-public struct SendInviteOptions // TypeDefIndex: 9417
+public struct SendInviteOptions // TypeDefIndex: 9419
 {
 	[CompilerGeneratedAttribute]
 	private EpicAccountId <LocalUserId>k__BackingField;

@@ -1,4 +1,4 @@
-public class RequestParser // TypeDefIndex: 6960
+public class RequestParser // TypeDefIndex: 6962
 {
 	private static readonly Regex _regex;
 

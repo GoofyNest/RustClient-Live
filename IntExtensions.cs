@@ -1,4 +1,4 @@
-internal static class IntExtensions // TypeDefIndex: 6954
+internal static class IntExtensions // TypeDefIndex: 6956
 {
 
 	[ExtensionAttribute]

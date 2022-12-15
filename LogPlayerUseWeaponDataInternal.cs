@@ -1,4 +1,4 @@
-internal struct LogPlayerUseWeaponDataInternal : IGettable<LogPlayerUseWeaponData>, ISettable<LogPlayerUseWeaponData>, IDisposable // TypeDefIndex: 9788
+internal struct LogPlayerUseWeaponDataInternal : IGettable<LogPlayerUseWeaponData>, ISettable<LogPlayerUseWeaponData>, IDisposable // TypeDefIndex: 9790
 {
 	private IntPtr m_PlayerHandle;
 	private IntPtr m_PlayerPosition;

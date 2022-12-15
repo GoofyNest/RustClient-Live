@@ -1,4 +1,4 @@
-public class Buoyancy : ListComponent<Buoyancy>, IServerComponent // TypeDefIndex: 11443
+public class Buoyancy : ListComponent<Buoyancy>, IServerComponent // TypeDefIndex: 11452
 {
 	public BuoyancyPoint[] points;
 	public GameObjectRef[] waterImpacts;

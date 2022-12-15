@@ -1,4 +1,4 @@
-internal sealed class OnQueryInvitesCallbackInternal : MulticastDelegate // TypeDefIndex: 8513
+internal sealed class OnQueryInvitesCallbackInternal : MulticastDelegate // TypeDefIndex: 8515
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ internal sealed class OnQueryInvitesCallbackInternal : MulticastDelegate // Type
 
 }
 
-internal sealed class OnQueryInvitesCallbackInternal : MulticastDelegate // TypeDefIndex: 9241
+internal sealed class OnQueryInvitesCallbackInternal : MulticastDelegate // TypeDefIndex: 9243
 {
 
 	public void .ctor(object object, IntPtr method) { }

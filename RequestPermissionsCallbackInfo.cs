@@ -1,4 +1,4 @@
-public struct RequestPermissionsCallbackInfo : ICallbackInfo // TypeDefIndex: 9362
+public struct RequestPermissionsCallbackInfo : ICallbackInfo // TypeDefIndex: 9364
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

@@ -1,4 +1,4 @@
-internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9592
+internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9594
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;
@@ -34,7 +34,7 @@ internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettab
 
 }
 
-internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9667
+internal struct LinkAccountCallbackInfoInternal : ICallbackInfoInternal, IGettable<LinkAccountCallbackInfo>, ISettable<LinkAccountCallbackInfo>, IDisposable // TypeDefIndex: 9669
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

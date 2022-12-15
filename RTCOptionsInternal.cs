@@ -1,4 +1,4 @@
-internal struct RTCOptionsInternal : IGettable<RTCOptions>, ISettable<RTCOptions>, IDisposable // TypeDefIndex: 9881
+internal struct RTCOptionsInternal : IGettable<RTCOptions>, ISettable<RTCOptions>, IDisposable // TypeDefIndex: 9883
 {
 	private int m_ApiVersion;
 	private IntPtr m_PlatformSpecificOptions;

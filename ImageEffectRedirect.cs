@@ -1,4 +1,4 @@
-public class ImageEffectRedirect : MonoBehaviour // TypeDefIndex: 8053
+public class ImageEffectRedirect : MonoBehaviour // TypeDefIndex: 8055
 {
 	public IImageEffect target;
 

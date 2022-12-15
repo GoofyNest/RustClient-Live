@@ -1,4 +1,4 @@
-internal struct ReceiveMessageFromPeerOptionsInternal : ISettable<ReceiveMessageFromPeerOptions>, IDisposable // TypeDefIndex: 9849
+internal struct ReceiveMessageFromPeerOptionsInternal : ISettable<ReceiveMessageFromPeerOptions>, IDisposable // TypeDefIndex: 9851
 {
 	private int m_ApiVersion;
 	private IntPtr m_PeerHandle;

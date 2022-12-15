@@ -30,6 +30,8 @@ public class SkinnedMeshRenderer : Renderer // TypeDefIndex: 3437
 
 	public void set_skinnedMotionVectors(bool value) { }
 
+	public void SetBlendShapeWeight(int index, float value) { }
+
 	[FreeFunctionAttribute]
 	private Bounds GetLocalAABB() { }
 

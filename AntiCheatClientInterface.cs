@@ -1,4 +1,4 @@
-public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9821
+public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9823
 {
 	private static byte[] PollStatusStaticBuffer;
 	public const int AddexternalintegritycatalogApiLatest = 1;

@@ -1,4 +1,4 @@
-public class DiscoFloorMesh : MonoBehaviour, IClientComponent // TypeDefIndex: 11182
+public class DiscoFloorMesh : MonoBehaviour, IClientComponent // TypeDefIndex: 11191
 {
 	public int GridRows;
 	public int GridColumns;
@@ -44,7 +44,7 @@ public class DiscoFloorMesh : MonoBehaviour, IClientComponent // TypeDefIndex: 1
 
 }
 
-public enum DiscoFloorMesh.PatternType // TypeDefIndex: 11183
+public enum DiscoFloorMesh.PatternType // TypeDefIndex: 11192
 {
 	public int value__;
 	public const DiscoFloorMesh.PatternType InOut = 0;
@@ -55,7 +55,7 @@ public enum DiscoFloorMesh.PatternType // TypeDefIndex: 11183
 
 }
 
-public enum DiscoFloorMesh.Corner // TypeDefIndex: 11184
+public enum DiscoFloorMesh.Corner // TypeDefIndex: 11193
 {
 	public int value__;
 	public const DiscoFloorMesh.Corner TopLeft = 0;

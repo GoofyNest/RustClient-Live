@@ -1,4 +1,4 @@
-public class ERRoundabouts : MonoBehaviour // TypeDefIndex: 7189
+public class ERRoundabouts : MonoBehaviour // TypeDefIndex: 7191
 {
 	public float roundAboutRadius;
 	public float prevRoundAboutRadius;

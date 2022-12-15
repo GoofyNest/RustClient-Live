@@ -1,4 +1,4 @@
-internal struct OnMessageToClientCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnMessageToClientCallbackInfo>, ISettable<OnMessageToClientCallbackInfo>, IDisposable // TypeDefIndex: 9796
+internal struct OnMessageToClientCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnMessageToClientCallbackInfo>, ISettable<OnMessageToClientCallbackInfo>, IDisposable // TypeDefIndex: 9798
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_ClientHandle;

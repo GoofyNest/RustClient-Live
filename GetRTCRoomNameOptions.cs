@@ -1,4 +1,4 @@
-public struct GetRTCRoomNameOptions // TypeDefIndex: 9105
+public struct GetRTCRoomNameOptions // TypeDefIndex: 9107
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <LobbyId>k__BackingField;

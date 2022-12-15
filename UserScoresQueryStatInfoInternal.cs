@@ -1,4 +1,4 @@
-internal struct UserScoresQueryStatInfoInternal : IGettable<UserScoresQueryStatInfo>, ISettable<UserScoresQueryStatInfo>, IDisposable // TypeDefIndex: 9323
+internal struct UserScoresQueryStatInfoInternal : IGettable<UserScoresQueryStatInfo>, ISettable<UserScoresQueryStatInfo>, IDisposable // TypeDefIndex: 9325
 {
 	private int m_ApiVersion;
 	private IntPtr m_StatName;

@@ -1,4 +1,4 @@
-internal struct QueryInvitesCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryInvitesCallbackInfo>, ISettable<QueryInvitesCallbackInfo>, IDisposable // TypeDefIndex: 8533
+internal struct QueryInvitesCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryInvitesCallbackInfo>, ISettable<QueryInvitesCallbackInfo>, IDisposable // TypeDefIndex: 8535
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;
@@ -34,7 +34,7 @@ internal struct QueryInvitesCallbackInfoInternal : ICallbackInfoInternal, IGetta
 
 }
 
-internal struct QueryInvitesCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryInvitesCallbackInfo>, ISettable<QueryInvitesCallbackInfo>, IDisposable // TypeDefIndex: 9257
+internal struct QueryInvitesCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryInvitesCallbackInfo>, ISettable<QueryInvitesCallbackInfo>, IDisposable // TypeDefIndex: 9259
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

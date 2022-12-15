@@ -1,4 +1,4 @@
-public class SubsurfaceProfile : ScriptableObject // TypeDefIndex: 12422
+public class SubsurfaceProfile : ScriptableObject // TypeDefIndex: 12432
 {
 	private static SubsurfaceProfileTexture profileTexture;
 	public SubsurfaceProfileData Data;

@@ -1,4 +1,4 @@
-internal class ISO2022JPDecoder : Decoder // TypeDefIndex: 7825
+internal class ISO2022JPDecoder : Decoder // TypeDefIndex: 7827
 {
 	private static JISConvert convert;
 	private readonly bool allow_shift_io;

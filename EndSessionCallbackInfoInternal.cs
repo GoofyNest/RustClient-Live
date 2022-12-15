@@ -1,4 +1,4 @@
-internal struct EndSessionCallbackInfoInternal : ICallbackInfoInternal, IGettable<EndSessionCallbackInfo>, ISettable<EndSessionCallbackInfo>, IDisposable // TypeDefIndex: 8489
+internal struct EndSessionCallbackInfoInternal : ICallbackInfoInternal, IGettable<EndSessionCallbackInfo>, ISettable<EndSessionCallbackInfo>, IDisposable // TypeDefIndex: 8491
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

@@ -1,4 +1,4 @@
-public class PathData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
+public class PathData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6524
 {
 	public bool ShouldPool;
 	private bool _disposed;

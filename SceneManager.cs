@@ -6,8 +6,8 @@ public class SceneManager // TypeDefIndex: 3659
 	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
 	private static UnityAction<Scene> sceneUnloaded;
-	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
 	private static UnityAction<Scene, Scene> activeSceneChanged;
 
 	public static int sceneCount { get; }
@@ -28,16 +28,16 @@ public class SceneManager // TypeDefIndex: 3659
 	[NativeThrowsAttribute]
 	public static Scene GetSceneAt(int index) { }
 
-	[NativeThrowsAttribute]
 	[StaticAccessorAttribute]
+	[NativeThrowsAttribute]
 	public static Scene CreateScene(string sceneName, CreateSceneParameters parameters) { }
 
 	[StaticAccessorAttribute]
 	[NativeThrowsAttribute]
 	private static AsyncOperation UnloadSceneAsyncInternal(Scene scene, UnloadSceneOptions options) { }
 
-	[NativeThrowsAttribute]
 	[StaticAccessorAttribute]
+	[NativeThrowsAttribute]
 	private static AsyncOperation LoadSceneAsyncNameIndexInternal(string sceneName, int sceneBuildIndex, LoadSceneParameters parameters, bool mustCompleteNextFrame) { }
 
 	[NativeThrowsAttribute]

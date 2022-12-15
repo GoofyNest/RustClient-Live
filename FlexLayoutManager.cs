@@ -1,4 +1,4 @@
-public class FlexLayoutManager : MonoBehaviour // TypeDefIndex: 6828
+public class FlexLayoutManager : MonoBehaviour // TypeDefIndex: 6830
 {
 	[CompilerGeneratedAttribute]
 	private static FlexLayoutManager <Instance>k__BackingField;

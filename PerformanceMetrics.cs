@@ -1,4 +1,4 @@
-public static class PerformanceMetrics // TypeDefIndex: 13127
+public static class PerformanceMetrics // TypeDefIndex: 13137
 {
 	private static PerformanceSamplePoint current;
 	private static Action OnBeforeRender;
@@ -15,7 +15,7 @@ public static class PerformanceMetrics // TypeDefIndex: 13127
 
 }
 
-private sealed class PerformanceMetrics.<>c // TypeDefIndex: 13128
+private sealed class PerformanceMetrics.<>c // TypeDefIndex: 13138
 {
 	public static readonly PerformanceMetrics.<>c <>9;
 	public static UnityAction <>9__3_0;
@@ -29,7 +29,7 @@ private sealed class PerformanceMetrics.<>c // TypeDefIndex: 13128
 
 }
 
-private sealed class PerformanceMetrics.<>c__DisplayClass4_0 // TypeDefIndex: 13129
+private sealed class PerformanceMetrics.<>c__DisplayClass4_0 // TypeDefIndex: 13139
 {
 	public TimeSpan lastTime;
 	public int lastFrame;
@@ -44,7 +44,7 @@ private sealed class PerformanceMetrics.<>c__DisplayClass4_0 // TypeDefIndex: 13
 
 }
 
-private sealed class PerformanceMetrics.<>c__DisplayClass6_0 // TypeDefIndex: 13130
+private sealed class PerformanceMetrics.<>c__DisplayClass6_0 // TypeDefIndex: 13140
 {
 	public bool active;
 	public Stopwatch watch;

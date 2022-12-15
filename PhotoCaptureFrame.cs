@@ -1,8 +1,8 @@
 public sealed class PhotoCaptureFrame : IDisposable // TypeDefIndex: 3618
 {
 	private IntPtr m_NativePtr;
-	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
 	private int <dataLength>k__BackingField;
 	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]

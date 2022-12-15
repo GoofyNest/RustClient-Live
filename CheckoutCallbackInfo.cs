@@ -1,4 +1,4 @@
-public struct CheckoutCallbackInfo : ICallbackInfo // TypeDefIndex: 9425
+public struct CheckoutCallbackInfo : ICallbackInfo // TypeDefIndex: 9427
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

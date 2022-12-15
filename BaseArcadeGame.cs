@@ -1,4 +1,4 @@
-public class BaseArcadeGame : BaseMonoBehaviour // TypeDefIndex: 10489
+public class BaseArcadeGame : BaseMonoBehaviour // TypeDefIndex: 10491
 {
 	public static List<BaseArcadeGame> globalActiveGames;
 	public Camera cameraToRender;

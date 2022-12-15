@@ -1,4 +1,4 @@
-public class GameManager // TypeDefIndex: 11625
+public class GameManager // TypeDefIndex: 11634
 {
 	public static GameManager client;
 	internal PrefabPreProcess preProcessed;

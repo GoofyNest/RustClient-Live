@@ -1,4 +1,4 @@
-public class NeedsCursor : MonoBehaviour, IClientComponent // TypeDefIndex: 12614
+public class NeedsCursor : MonoBehaviour, IClientComponent // TypeDefIndex: 12624
 {
 
 	private void Update() { }

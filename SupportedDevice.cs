@@ -1,4 +1,4 @@
-public enum SupportedDevice // TypeDefIndex: 7687
+public enum SupportedDevice // TypeDefIndex: 7689
 {
 	public int value__;
 	public const SupportedDevice None = 0;

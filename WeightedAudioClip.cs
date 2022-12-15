@@ -1,4 +1,4 @@
-public class WeightedAudioClip // TypeDefIndex: 10779
+public class WeightedAudioClip // TypeDefIndex: 10784
 {
 	public AudioClip audioClip;
 	public int weight;

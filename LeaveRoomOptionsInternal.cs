@@ -1,4 +1,4 @@
-internal struct LeaveRoomOptionsInternal : ISettable<LeaveRoomOptions>, IDisposable // TypeDefIndex: 8779
+internal struct LeaveRoomOptionsInternal : ISettable<LeaveRoomOptions>, IDisposable // TypeDefIndex: 8781
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

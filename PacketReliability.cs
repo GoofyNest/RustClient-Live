@@ -1,4 +1,4 @@
-public enum PacketReliability // TypeDefIndex: 8995
+public enum PacketReliability // TypeDefIndex: 8997
 {
 	public int value__;
 	public const PacketReliability UnreliableUnordered = 0;

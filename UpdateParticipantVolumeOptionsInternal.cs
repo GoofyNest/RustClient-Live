@@ -1,4 +1,4 @@
-internal struct UpdateParticipantVolumeOptionsInternal : ISettable<UpdateParticipantVolumeOptions>, IDisposable // TypeDefIndex: 8719
+internal struct UpdateParticipantVolumeOptionsInternal : ISettable<UpdateParticipantVolumeOptions>, IDisposable // TypeDefIndex: 8721
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

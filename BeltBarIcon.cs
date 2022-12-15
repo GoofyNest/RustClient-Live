@@ -1,4 +1,4 @@
-public class BeltBarIcon : MonoBehaviour // TypeDefIndex: 12759
+public class BeltBarIcon : MonoBehaviour // TypeDefIndex: 12769
 {
 	private ItemIcon itemIcon;
 	private bool wasSelected;

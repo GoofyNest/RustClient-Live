@@ -1,4 +1,4 @@
-public class TennisBall : SpriteArcadeEntity // TypeDefIndex: 10503
+public class TennisBall : SpriteArcadeEntity // TypeDefIndex: 10505
 {
 	public float speed;
 	public float maxSpeed;

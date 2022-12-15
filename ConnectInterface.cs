@@ -1,4 +1,4 @@
-public sealed class ConnectInterface : Handle // TypeDefIndex: 9556
+public sealed class ConnectInterface : Handle // TypeDefIndex: 9558
 {
 	public const int AddnotifyauthexpirationApiLatest = 1;
 	public const int AddnotifyloginstatuschangedApiLatest = 1;

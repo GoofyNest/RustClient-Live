@@ -1,4 +1,4 @@
-public class Layer3SideInfo // TypeDefIndex: 7427
+public class Layer3SideInfo // TypeDefIndex: 7429
 {
 	internal ChannelData[] Channels;
 	internal int MainDataBegin;

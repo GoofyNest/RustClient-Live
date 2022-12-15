@@ -1,4 +1,4 @@
-public sealed class LobbyModification : Handle // TypeDefIndex: 9167
+public sealed class LobbyModification : Handle // TypeDefIndex: 9169
 {
 	public const int LobbymodificationAddattributeApiLatest = 1;
 	public const int LobbymodificationAddmemberattributeApiLatest = 1;

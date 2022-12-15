@@ -1,4 +1,4 @@
-public enum MaskingOffsetMode // TypeDefIndex: 6775
+public enum MaskingOffsetMode // TypeDefIndex: 6777
 {
 	public int value__;
 	public const MaskingOffsetMode Percentage = 0;

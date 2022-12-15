@@ -1,4 +1,4 @@
-public enum TimeSpanType // TypeDefIndex: 7514
+public enum TimeSpanType // TypeDefIndex: 7516
 {
 	public int value__;
 	public const TimeSpanType Metric = 0;

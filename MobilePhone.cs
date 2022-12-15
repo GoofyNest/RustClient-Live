@@ -1,4 +1,4 @@
-public class MobilePhone : HeldEntity // TypeDefIndex: 10331
+public class MobilePhone : HeldEntity // TypeDefIndex: 10333
 {
 	public PhoneController Controller;
 

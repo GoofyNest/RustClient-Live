@@ -1,4 +1,4 @@
-public struct TagAttribute // TypeDefIndex: 6806
+public struct TagAttribute // TypeDefIndex: 6808
 {
 	public int startIndex;
 	public int length;

@@ -1,4 +1,4 @@
-public class OvenLootPanel : MonoBehaviour // TypeDefIndex: 12827
+public class OvenLootPanel : MonoBehaviour // TypeDefIndex: 12837
 {
 	public GameObject controlsOn;
 	public GameObject controlsOff;
@@ -43,7 +43,7 @@ public class OvenLootPanel : MonoBehaviour // TypeDefIndex: 12827
 
 }
 
-private sealed class OvenLootPanel.<GetItemIcons>d__30 : IEnumerable<ItemIcon>, IEnumerable, IEnumerator<ItemIcon>, IEnumerator, IDisposable // TypeDefIndex: 12828
+private sealed class OvenLootPanel.<GetItemIcons>d__30 : IEnumerable<ItemIcon>, IEnumerable, IEnumerator<ItemIcon>, IEnumerator, IDisposable // TypeDefIndex: 12838
 {
 	private int <>1__state;
 	private ItemIcon <>2__current;

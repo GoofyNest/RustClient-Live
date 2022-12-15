@@ -1,4 +1,4 @@
-public sealed class AllocateMemoryFunc : MulticastDelegate // TypeDefIndex: 9863
+public sealed class AllocateMemoryFunc : MulticastDelegate // TypeDefIndex: 9865
 {
 
 	public void .ctor(object object, IntPtr method) { }

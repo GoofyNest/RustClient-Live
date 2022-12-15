@@ -1,4 +1,4 @@
-public class ChangelogPanel : MonoBehaviour // TypeDefIndex: 12777
+public class ChangelogPanel : MonoBehaviour // TypeDefIndex: 12787
 {
 	public GameObject AddedHeader;
 	public GameObject RemovedHeader;
@@ -22,7 +22,7 @@ public class ChangelogPanel : MonoBehaviour // TypeDefIndex: 12777
 
 }
 
-private enum ChangelogPanel.ChangelogSection // TypeDefIndex: 12778
+private enum ChangelogPanel.ChangelogSection // TypeDefIndex: 12788
 {
 	public int value__;
 	public const ChangelogPanel.ChangelogSection Added = 0;

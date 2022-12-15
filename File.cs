@@ -1053,7 +1053,7 @@ internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5410
 
 }
 
-public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6477
+public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6479
 {
 	public bool ShouldPool;
 	private bool _disposed;
@@ -1117,7 +1117,7 @@ public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public static class FileSystem // TypeDefIndex: 6671
+public static class FileSystem // TypeDefIndex: 6673
 {
 	public static bool LogDebug;
 	public static bool LogTime;
@@ -1169,7 +1169,7 @@ public static class FileSystem // TypeDefIndex: 6671
 
 }
 
-public abstract class FileSystemBackend // TypeDefIndex: 6672
+public abstract class FileSystemBackend // TypeDefIndex: 6674
 {
 	public bool isError;
 	public string loadingError;
@@ -1222,7 +1222,7 @@ public abstract class FileSystemBackend // TypeDefIndex: 6672
 
 }
 
-public class FileDialog : MonoBehaviour // TypeDefIndex: 7108
+public class FileDialog : MonoBehaviour // TypeDefIndex: 7110
 {
 	[HideInInspector]
 	public string result;
@@ -1299,7 +1299,7 @@ public class FileDialog : MonoBehaviour // TypeDefIndex: 7108
 
 }
 
-public enum FileDialog.FileDialogMode // TypeDefIndex: 7109
+public enum FileDialog.FileDialogMode // TypeDefIndex: 7111
 {
 	public int value__;
 	public const FileDialog.FileDialogMode Open = 0;
@@ -1307,7 +1307,7 @@ public enum FileDialog.FileDialogMode // TypeDefIndex: 7109
 
 }
 
-private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7110
+private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7112
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -1342,7 +1342,7 @@ private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, 
 
 }
 
-private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7111
+private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7113
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -1376,7 +1376,7 @@ private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, 
 
 }
 
-private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex: 7112
+private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex: 7114
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder<string> <>t__builder;
@@ -1396,7 +1396,7 @@ private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-public class FileListElement : MonoBehaviour // TypeDefIndex: 7113
+public class FileListElement : MonoBehaviour // TypeDefIndex: 7115
 {
 	public Image icon;
 	public Text elementName;
@@ -1412,7 +1412,7 @@ public class FileListElement : MonoBehaviour // TypeDefIndex: 7113
 
 }
 
-internal static class FileUtilities // TypeDefIndex: 7631
+internal static class FileUtilities // TypeDefIndex: 7633
 {
 
 	private static extern SafeFileHandle CreateFile(string lpFileName, uint dwDesiredAccess, uint dwShareMode, IntPtr lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, IntPtr hTemplateFile) { }
@@ -1423,7 +1423,7 @@ internal static class FileUtilities // TypeDefIndex: 7631
 
 }
 
-public struct FileMetadata // TypeDefIndex: 8393
+public struct FileMetadata // TypeDefIndex: 8395
 {
 	[CompilerGeneratedAttribute]
 	private uint <FileSizeBytes>k__BackingField;
@@ -1468,7 +1468,7 @@ public struct FileMetadata // TypeDefIndex: 8393
 
 }
 
-internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8394
+internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8396
 {
 	private int m_ApiVersion;
 	private uint m_FileSizeBytes;
@@ -1508,7 +1508,7 @@ internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMe
 
 }
 
-public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8395
+public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8397
 {
 	[CompilerGeneratedAttribute]
 	private object <ClientData>k__BackingField;
@@ -1564,7 +1564,7 @@ public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 
 
 }
 
-internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8396
+internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8398
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;
@@ -1612,7 +1612,7 @@ internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal
 
 }
 
-public struct FileMetadata // TypeDefIndex: 8886
+public struct FileMetadata // TypeDefIndex: 8888
 {
 	[CompilerGeneratedAttribute]
 	private uint <FileSizeBytes>k__BackingField;
@@ -1666,7 +1666,7 @@ public struct FileMetadata // TypeDefIndex: 8886
 
 }
 
-internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8887
+internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8889
 {
 	private int m_ApiVersion;
 	private uint m_FileSizeBytes;
@@ -1712,7 +1712,7 @@ internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMe
 
 }
 
-public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8888
+public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8890
 {
 	[CompilerGeneratedAttribute]
 	private object <ClientData>k__BackingField;
@@ -1768,7 +1768,7 @@ public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 
 
 }
 
-internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8889
+internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8891
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;
@@ -1816,7 +1816,7 @@ internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal
 
 }
 
-public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11112
+public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11120
 {
 	public static bool ranInBackground;
 	public static Coroutine warmupTask;
@@ -1848,7 +1848,7 @@ public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11112
 
 }
 
-private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11113
+private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11121
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -1883,7 +1883,7 @@ private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>,
 
 }
 
-private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11114
+private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11122
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -1916,7 +1916,7 @@ private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11115
+private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11123
 {
 	public Nullable<bool> poolFilter;
 
@@ -1927,7 +1927,7 @@ private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11
 
 }
 
-private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11116
+private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11124
 {
 	public static readonly FileSystem_Warmup.<>c <>9;
 	public static Func<GameManifest.PrefabProperties, string> <>9__10_0;
@@ -1947,7 +1947,7 @@ private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11116
 
 }
 
-public class FileStorage : IDisposable // TypeDefIndex: 12478
+public class FileStorage : IDisposable // TypeDefIndex: 12488
 {
 	private Database db;
 	private CRC32 crc;
@@ -1987,7 +1987,7 @@ public class FileStorage : IDisposable // TypeDefIndex: 12478
 
 }
 
-private class FileStorage.CacheData // TypeDefIndex: 12479
+private class FileStorage.CacheData // TypeDefIndex: 12489
 {
 	public byte[] data;
 	public uint entityID;
@@ -1998,7 +1998,7 @@ private class FileStorage.CacheData // TypeDefIndex: 12479
 
 }
 
-public enum FileStorage.Type // TypeDefIndex: 12480
+public enum FileStorage.Type // TypeDefIndex: 12490
 {
 	public int value__;
 	public const FileStorage.Type png = 0;
@@ -2007,7 +2007,7 @@ public enum FileStorage.Type // TypeDefIndex: 12480
 
 }
 
-private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12481
+private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12491
 {
 	public uint entityid;
 	public uint numid;
@@ -2020,7 +2020,7 @@ private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12481
 
 }
 
-private sealed class FileStorage.<>c // TypeDefIndex: 12482
+private sealed class FileStorage.<>c // TypeDefIndex: 12492
 {
 	public static readonly FileStorage.<>c <>9;
 	public static Func<KeyValuePair<uint, FileStorage.CacheData>, uint> <>9__14_1;
@@ -2034,7 +2034,7 @@ private sealed class FileStorage.<>c // TypeDefIndex: 12482
 
 }
 
-public static class FileEx // TypeDefIndex: 13151
+public static class FileEx // TypeDefIndex: 13161
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }
@@ -2046,7 +2046,7 @@ public static class FileEx // TypeDefIndex: 13151
 
 }
 
-public class FileConVar : ConsoleSystem // TypeDefIndex: 13727
+public class FileConVar : ConsoleSystem // TypeDefIndex: 13737
 {
 	[ClientVar]
 	public static bool debug { get; set; }

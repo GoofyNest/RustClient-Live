@@ -1,4 +1,4 @@
-public class CardGameUI : UIDialog // TypeDefIndex: 12650
+public class CardGameUI : UIDialog // TypeDefIndex: 12660
 {
 	[HeaderAttribute]
 	[SerializeField]
@@ -140,7 +140,7 @@ public class CardGameUI : UIDialog // TypeDefIndex: 12650
 
 }
 
-public class CardGameUI.PlayingCardImage // TypeDefIndex: 12651
+public class CardGameUI.PlayingCardImage // TypeDefIndex: 12661
 {
 	public Rank rank;
 	public Suit suit;
@@ -153,7 +153,7 @@ public class CardGameUI.PlayingCardImage // TypeDefIndex: 12651
 
 }
 
-public class CardGameUI.InfoTextUI // TypeDefIndex: 12652
+public class CardGameUI.InfoTextUI // TypeDefIndex: 12662
 {
 	public GameObject gameObj;
 	public RustText rustText;
@@ -164,7 +164,7 @@ public class CardGameUI.InfoTextUI // TypeDefIndex: 12652
 
 }
 
-public enum CardGameUI.InfoTextUI.Attitude // TypeDefIndex: 12653
+public enum CardGameUI.InfoTextUI.Attitude // TypeDefIndex: 12663
 {
 	public int value__;
 	public const CardGameUI.InfoTextUI.Attitude Neutral = 0;
@@ -173,7 +173,7 @@ public enum CardGameUI.InfoTextUI.Attitude // TypeDefIndex: 12653
 
 }
 
-public enum CardGameUI.UIState // TypeDefIndex: 12655
+public enum CardGameUI.UIState // TypeDefIndex: 12665
 {
 	public int value__;
 	public const CardGameUI.UIState None = 0;
@@ -185,7 +185,7 @@ public enum CardGameUI.UIState // TypeDefIndex: 12655
 
 }
 
-public struct CardGameUI.KeycodeWithAction // TypeDefIndex: 12656
+public struct CardGameUI.KeycodeWithAction // TypeDefIndex: 12666
 {
 	public readonly string actionName;
 	public readonly KeyCode keyCode;
@@ -198,7 +198,7 @@ public struct CardGameUI.KeycodeWithAction // TypeDefIndex: 12656
 
 }
 
-public enum CardGameUI.CardType // TypeDefIndex: 12657
+public enum CardGameUI.CardType // TypeDefIndex: 12667
 {
 	public int value__;
 	public const CardGameUI.CardType Large = 0;

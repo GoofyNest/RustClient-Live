@@ -1,4 +1,4 @@
-public static class NoteEventUtilities // TypeDefIndex: 7632
+public static class NoteEventUtilities // TypeDefIndex: 7634
 {
 
 	[ExtensionAttribute]

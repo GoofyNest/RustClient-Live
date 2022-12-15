@@ -1,4 +1,4 @@
-public class CardReader : IOEntity // TypeDefIndex: 10267
+public class CardReader : IOEntity // TypeDefIndex: 10269
 {
 	public float accessDuration;
 	public int accessLevel;

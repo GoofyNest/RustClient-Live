@@ -1,4 +1,4 @@
-public class MedicalTool : AttackEntity // TypeDefIndex: 10327
+public class MedicalTool : AttackEntity // TypeDefIndex: 10329
 {
 	public float healDurationSelf;
 	public float healDurationOther;

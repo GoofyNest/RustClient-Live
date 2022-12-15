@@ -1,4 +1,4 @@
-public struct UpdateSendingVolumeOptions // TypeDefIndex: 8734
+public struct UpdateSendingVolumeOptions // TypeDefIndex: 8736
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

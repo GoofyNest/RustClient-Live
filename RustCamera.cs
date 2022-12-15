@@ -1,4 +1,4 @@
-public struct RustCamera.DepthOfFieldSettings<T> // TypeDefIndex: 10967
+public struct RustCamera.DepthOfFieldSettings<T> // TypeDefIndex: 10975
 {
 	public bool wants;
 	public float focalDistance;

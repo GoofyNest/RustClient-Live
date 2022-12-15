@@ -85,8 +85,8 @@ public enum GraphicsFormat // TypeDefIndex: 3907
 	public const GraphicsFormat R10G10B10_XRUNormPack32 = 84;
 	public const GraphicsFormat A10R10G10B10_XRSRGBPack32 = 85;
 	public const GraphicsFormat A10R10G10B10_XRUNormPack32 = 86;
-	[ObsoleteAttribute]
 	[EditorBrowsableAttribute]
+	[ObsoleteAttribute]
 	public const GraphicsFormat RGB_DXT1_SRGB = 96;
 	public const GraphicsFormat RGBA_DXT1_SRGB = 96;
 	[EditorBrowsableAttribute]

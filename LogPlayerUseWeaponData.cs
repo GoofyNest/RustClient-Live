@@ -1,4 +1,4 @@
-public struct LogPlayerUseWeaponData // TypeDefIndex: 9787
+public struct LogPlayerUseWeaponData // TypeDefIndex: 9789
 {
 	[CompilerGeneratedAttribute]
 	private IntPtr <PlayerHandle>k__BackingField;

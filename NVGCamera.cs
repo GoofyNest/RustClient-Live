@@ -1,4 +1,4 @@
-public class NVGCamera : FacepunchBehaviour, IClothingChanged // TypeDefIndex: 10403
+public class NVGCamera : FacepunchBehaviour, IClothingChanged // TypeDefIndex: 10405
 {
 	public static NVGCamera instance;
 	public PostProcessVolume postProcessVolume;

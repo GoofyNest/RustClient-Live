@@ -1,4 +1,4 @@
-public class GraveyardFence : SimpleBuildingBlock // TypeDefIndex: 10517
+public class GraveyardFence : SimpleBuildingBlock // TypeDefIndex: 10519
 {
 	public BoxCollider[] pillars;
 

@@ -247,7 +247,7 @@ public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex: 9991
+public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex: 9993
 {
 	public const int CurrentVersion = 1;
 	[HeaderAttribute]
@@ -321,7 +321,7 @@ public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex
 
 }
 
-public enum PatternFirework.FuseLength // TypeDefIndex: 9992
+public enum PatternFirework.FuseLength // TypeDefIndex: 9994
 {
 	public int value__;
 	public const PatternFirework.FuseLength Short = 0;

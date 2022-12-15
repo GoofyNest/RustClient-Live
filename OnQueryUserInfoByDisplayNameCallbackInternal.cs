@@ -1,4 +1,4 @@
-internal sealed class OnQueryUserInfoByDisplayNameCallbackInternal : MulticastDelegate // TypeDefIndex: 8312
+internal sealed class OnQueryUserInfoByDisplayNameCallbackInternal : MulticastDelegate // TypeDefIndex: 8314
 {
 
 	public void .ctor(object object, IntPtr method) { }

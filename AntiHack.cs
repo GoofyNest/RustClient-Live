@@ -1,4 +1,4 @@
-public class AntiHack : ConsoleSystem // TypeDefIndex: 13686
+public class AntiHack : ConsoleSystem // TypeDefIndex: 13696
 {
 
 	public void .ctor() { }

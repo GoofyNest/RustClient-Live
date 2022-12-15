@@ -1,4 +1,4 @@
-public class ChromaAnimationAPI // TypeDefIndex: 7691
+public class ChromaAnimationAPI // TypeDefIndex: 7693
 {
 	private const string DLL_NAME = "CChromaEditorLibrary64";
 

@@ -1,4 +1,4 @@
-internal struct UpdateSendingOptionsInternal : ISettable<UpdateSendingOptions>, IDisposable // TypeDefIndex: 8731
+internal struct UpdateSendingOptionsInternal : ISettable<UpdateSendingOptions>, IDisposable // TypeDefIndex: 8733
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

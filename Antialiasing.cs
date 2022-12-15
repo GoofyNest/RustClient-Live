@@ -1,4 +1,4 @@
-public class Antialiasing : PostEffectsBase // TypeDefIndex: 8170
+public class Antialiasing : PostEffectsBase // TypeDefIndex: 8172
 {
 	public AAMode mode;
 	public bool showGeneratedNormals;

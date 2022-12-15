@@ -1,4 +1,4 @@
-public class WorldData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6519
+public class WorldData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6521
 {
 	public bool ShouldPool;
 	private bool _disposed;

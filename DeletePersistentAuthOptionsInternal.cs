@@ -1,4 +1,4 @@
-internal struct DeletePersistentAuthOptionsInternal : ISettable<DeletePersistentAuthOptions>, IDisposable // TypeDefIndex: 9663
+internal struct DeletePersistentAuthOptionsInternal : ISettable<DeletePersistentAuthOptions>, IDisposable // TypeDefIndex: 9665
 {
 	private int m_ApiVersion;
 	private IntPtr m_RefreshToken;

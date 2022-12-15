@@ -1,4 +1,4 @@
-public class CrossingCornerClass // TypeDefIndex: 7270
+public class CrossingCornerClass // TypeDefIndex: 7272
 {
 	public string presetName;
 	public double id;

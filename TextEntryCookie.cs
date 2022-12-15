@@ -1,4 +1,4 @@
-public class TextEntryCookie : MonoBehaviour // TypeDefIndex: 13029
+public class TextEntryCookie : MonoBehaviour // TypeDefIndex: 13039
 {
 	public InputField control { get; }
 

@@ -1,4 +1,4 @@
-public class HitboxSystem : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11004
+public class HitboxSystem : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11012
 {
 	private float rebuildTime;
 	private const float rebuildDeltaTime = 0,03333334;
@@ -17,7 +17,7 @@ public class HitboxSystem : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11
 
 }
 
-public class HitboxSystem.HitboxShape // TypeDefIndex: 11005
+public class HitboxSystem.HitboxShape // TypeDefIndex: 11013
 {
 	public Transform bone;
 	public HitboxDefinition.Type type;
@@ -64,7 +64,7 @@ public class HitboxSystem.HitboxShape // TypeDefIndex: 11005
 
 }
 
-private sealed class HitboxSystem.<>c // TypeDefIndex: 11006
+private sealed class HitboxSystem.<>c // TypeDefIndex: 11014
 {
 	public static readonly HitboxSystem.<>c <>9;
 	public static Func<HitboxDefinition, int> <>9__4_0;

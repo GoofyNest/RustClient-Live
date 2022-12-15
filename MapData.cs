@@ -1,4 +1,4 @@
-public class MapData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6520
+public class MapData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
 {
 	public bool ShouldPool;
 	private bool _disposed;

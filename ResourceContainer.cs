@@ -1,4 +1,4 @@
-public class ResourceContainer : EntityComponent<BaseEntity> // TypeDefIndex: 10157
+public class ResourceContainer : EntityComponent<BaseEntity> // TypeDefIndex: 10159
 {
 	private Option __menuOption_MenuLoot;
 	public bool lootable;

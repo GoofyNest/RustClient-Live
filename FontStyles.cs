@@ -1,4 +1,4 @@
-public enum FontStyles // TypeDefIndex: 6777
+public enum FontStyles // TypeDefIndex: 6779
 {
 	public int value__;
 	public const FontStyles Normal = 0;

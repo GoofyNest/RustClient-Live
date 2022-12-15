@@ -1,4 +1,4 @@
-internal struct DeleteSnapshotCallbackInfoInternal : ICallbackInfoInternal, IGettable<DeleteSnapshotCallbackInfo>, ISettable<DeleteSnapshotCallbackInfo>, IDisposable // TypeDefIndex: 8805
+internal struct DeleteSnapshotCallbackInfoInternal : ICallbackInfoInternal, IGettable<DeleteSnapshotCallbackInfo>, ISettable<DeleteSnapshotCallbackInfo>, IDisposable // TypeDefIndex: 8807
 {
 	private Result m_ResultCode;
 	private IntPtr m_LocalUserId;

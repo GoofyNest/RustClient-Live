@@ -1,4 +1,4 @@
-public class ValidBounds : SingletonComponent<ValidBounds> // TypeDefIndex: 11804
+public class ValidBounds : SingletonComponent<ValidBounds> // TypeDefIndex: 11813
 {
 	public Bounds worldBounds;
 

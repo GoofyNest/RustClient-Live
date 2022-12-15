@@ -1,4 +1,4 @@
-public class Menu : RustControl // TypeDefIndex: 7049
+public class Menu : RustControl // TypeDefIndex: 7051
 {
 	public bool AllowFiltering;
 	public int MaxResults;
@@ -33,14 +33,14 @@ public class Menu : RustControl // TypeDefIndex: 7049
 
 }
 
-public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7050
+public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7052
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7051
+private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7053
 {
 	public Option option;
 	public Menu <>4__this;
@@ -52,7 +52,7 @@ private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7051
 
 }
 
-private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7052
+private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7054
 {
 	public string searchString;
 
@@ -63,7 +63,7 @@ private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7052
 
 }
 
-private sealed class Menu.<>c // TypeDefIndex: 7053
+private sealed class Menu.<>c // TypeDefIndex: 7055
 {
 	public static readonly Menu.<>c <>9;
 	public static Func<Option, Option> <>9__14_0;

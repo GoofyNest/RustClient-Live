@@ -1,4 +1,4 @@
-public static class TimeSpanUtilities // TypeDefIndex: 7515
+public static class TimeSpanUtilities // TypeDefIndex: 7517
 {
 	private static readonly Dictionary<TimeSpanType, Parsing<ITimeSpan>> Parsers;
 	private static readonly Dictionary<TimeSpanType, ITimeSpan> MaximumTimeSpans;
@@ -22,7 +22,7 @@ public static class TimeSpanUtilities // TypeDefIndex: 7515
 
 }
 
-private sealed class TimeSpanUtilities.<>c__DisplayClass12_0<TTimeSpan> // TypeDefIndex: 7516
+private sealed class TimeSpanUtilities.<>c__DisplayClass12_0<TTimeSpan> // TypeDefIndex: 7518
 {
 	public Parsing<TTimeSpan> parsing;
 

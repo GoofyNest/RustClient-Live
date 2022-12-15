@@ -1,4 +1,4 @@
-internal static class ThrowIfArgument // TypeDefIndex: 7653
+internal static class ThrowIfArgument // TypeDefIndex: 7655
 {
 
 	internal static void IsNull(string parameterName, object argument) { }

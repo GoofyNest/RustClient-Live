@@ -1,4 +1,4 @@
-public struct OnCustomInviteAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 9534
+public struct OnCustomInviteAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 9536
 {
 	[CompilerGeneratedAttribute]
 	private object <ClientData>k__BackingField;

@@ -1,4 +1,4 @@
-internal struct UninstallModOptionsInternal : ISettable<UninstallModOptions>, IDisposable // TypeDefIndex: 9038
+internal struct UninstallModOptionsInternal : ISettable<UninstallModOptions>, IDisposable // TypeDefIndex: 9040
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

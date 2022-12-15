@@ -47,7 +47,7 @@ public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 
 
 }
 
-internal struct FloatTween : ITweenValue // TypeDefIndex: 6695
+internal struct FloatTween : ITweenValue // TypeDefIndex: 6697
 {
 	private FloatTween.FloatTweenCallback m_Target;
 	private float m_StartValue;
@@ -89,7 +89,7 @@ internal struct FloatTween : ITweenValue // TypeDefIndex: 6695
 
 }
 
-public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 6696
+public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 6698
 {
 
 	public void .ctor() { }

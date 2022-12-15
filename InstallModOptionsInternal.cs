@@ -1,4 +1,4 @@
-internal struct InstallModOptionsInternal : ISettable<InstallModOptions>, IDisposable // TypeDefIndex: 9020
+internal struct InstallModOptionsInternal : ISettable<InstallModOptions>, IDisposable // TypeDefIndex: 9022
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

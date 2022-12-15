@@ -7,7 +7,7 @@ public class Header // TypeDefIndex: 1237
 
 }
 
-public class Header // TypeDefIndex: 7408
+public class Header // TypeDefIndex: 7410
 {
 	internal const int MPEG2_LSF = 0;
 	internal const int MPEG25_LSF = 2;

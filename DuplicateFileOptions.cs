@@ -1,4 +1,4 @@
-public struct DuplicateFileOptions // TypeDefIndex: 8884
+public struct DuplicateFileOptions // TypeDefIndex: 8886
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

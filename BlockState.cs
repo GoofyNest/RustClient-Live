@@ -1,4 +1,4 @@
-internal enum BlockState // TypeDefIndex: 6980
+internal enum BlockState // TypeDefIndex: 6982
 {
 
 internal class <Module>

@@ -1,4 +1,4 @@
-internal static class MusicalTimeSpanParser // TypeDefIndex: 7504
+internal static class MusicalTimeSpanParser // TypeDefIndex: 7506
 {
 	private static readonly Dictionary<string, Tuple<int, int>> Fractions;
 	private static readonly Dictionary<string, Tuple<int, int>> Tuplets;

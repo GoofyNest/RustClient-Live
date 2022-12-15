@@ -1,4 +1,4 @@
-public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9975
+public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9977
 {
 	public string BenchmarkTitle;
 	public string BenchmarkIdent;
@@ -36,7 +36,7 @@ public class BenchmarkScene : MonoBehaviour // TypeDefIndex: 9975
 
 }
 
-private sealed class BenchmarkScene.<RunBenchmark>d__13 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9976
+private sealed class BenchmarkScene.<RunBenchmark>d__13 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9978
 {
 	private int <>1__state;
 	private object <>2__current;

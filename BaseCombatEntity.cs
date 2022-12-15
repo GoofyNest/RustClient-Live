@@ -1,4 +1,4 @@
-public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10038
+public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10040
 {
 	private Option __menuOption_Menu_Pickup;
 	[HeaderAttribute]
@@ -109,7 +109,7 @@ public class BaseCombatEntity : BaseEntity // TypeDefIndex: 10038
 
 }
 
-public struct BaseCombatEntity.Pickup // TypeDefIndex: 10039
+public struct BaseCombatEntity.Pickup // TypeDefIndex: 10041
 {
 	public bool enabled;
 	[ItemSelector]
@@ -128,7 +128,7 @@ public struct BaseCombatEntity.Pickup // TypeDefIndex: 10039
 
 }
 
-public struct BaseCombatEntity.Repair // TypeDefIndex: 10040
+public struct BaseCombatEntity.Repair // TypeDefIndex: 10042
 {
 	public bool enabled;
 	[ItemSelector]
@@ -139,7 +139,7 @@ public struct BaseCombatEntity.Repair // TypeDefIndex: 10040
 
 }
 
-public enum BaseCombatEntity.LifeState // TypeDefIndex: 10041
+public enum BaseCombatEntity.LifeState // TypeDefIndex: 10043
 {
 	public int value__;
 	public const BaseCombatEntity.LifeState Alive = 0;
@@ -147,7 +147,7 @@ public enum BaseCombatEntity.LifeState // TypeDefIndex: 10041
 
 }
 
-public enum BaseCombatEntity.Faction // TypeDefIndex: 10042
+public enum BaseCombatEntity.Faction // TypeDefIndex: 10044
 {
 	public int value__;
 	public const BaseCombatEntity.Faction Default = 0;

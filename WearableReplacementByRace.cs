@@ -1,4 +1,4 @@
-public class WearableReplacementByRace : MonoBehaviour // TypeDefIndex: 11820
+public class WearableReplacementByRace : MonoBehaviour // TypeDefIndex: 11829
 {
 	public GameObjectRef[] replacements;
 

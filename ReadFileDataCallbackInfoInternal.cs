@@ -1,4 +1,4 @@
-internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8422
+internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8424
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;
@@ -53,7 +53,7 @@ internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGetta
 
 }
 
-internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8925
+internal struct ReadFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<ReadFileDataCallbackInfo>, ISettable<ReadFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8927
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;

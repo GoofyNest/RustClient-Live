@@ -1,4 +1,4 @@
-public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 13261
+public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 13271
 {
 	public float bobSpeedWalk;
 	public float bobSpeedRun;
@@ -25,7 +25,7 @@ public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 13261
 
 }
 
-public struct ViewmodelBob.BobSettings // TypeDefIndex: 13262
+public struct ViewmodelBob.BobSettings // TypeDefIndex: 13272
 {
 	public float bobSpeed;
 	public float bobAmount;

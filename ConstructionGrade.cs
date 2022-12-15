@@ -1,4 +1,4 @@
-public class ConstructionGrade : PrefabAttribute // TypeDefIndex: 10789
+public class ConstructionGrade : PrefabAttribute // TypeDefIndex: 10794
 {
 	public Construction construction;
 	public BuildingGrade gradeBase;

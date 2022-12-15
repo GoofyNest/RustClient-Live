@@ -1,4 +1,4 @@
-public class MiniCopterSounds : MonoBehaviour, IClientComponent // TypeDefIndex: 10010
+public class MiniCopterSounds : MonoBehaviour, IClientComponent // TypeDefIndex: 10012
 {
 	public MiniCopter miniCopter;
 	public GameObject soundAttachPoint;

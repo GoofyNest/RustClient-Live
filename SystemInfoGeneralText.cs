@@ -1,4 +1,4 @@
-public class SystemInfoGeneralText : MonoBehaviour // TypeDefIndex: 11032
+public class SystemInfoGeneralText : MonoBehaviour // TypeDefIndex: 11040
 {
 	public TextMeshProUGUI text;
 

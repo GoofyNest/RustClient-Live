@@ -1,4 +1,4 @@
-internal struct CopyLeaderboardRecordByIndexOptionsInternal : ISettable<CopyLeaderboardRecordByIndexOptions>, IDisposable // TypeDefIndex: 9283
+internal struct CopyLeaderboardRecordByIndexOptionsInternal : ISettable<CopyLeaderboardRecordByIndexOptions>, IDisposable // TypeDefIndex: 9285
 {
 	private int m_ApiVersion;
 	private uint m_LeaderboardRecordIndex;

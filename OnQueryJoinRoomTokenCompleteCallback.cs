@@ -1,4 +1,4 @@
-public sealed class OnQueryJoinRoomTokenCompleteCallback : MulticastDelegate // TypeDefIndex: 8746
+public sealed class OnQueryJoinRoomTokenCompleteCallback : MulticastDelegate // TypeDefIndex: 8748
 {
 
 	public void .ctor(object object, IntPtr method) { }

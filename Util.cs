@@ -1,4 +1,4 @@
-public static class Util // TypeDefIndex: 13454
+public static class Util // TypeDefIndex: 13464
 {
 	public const int OceanMargin = 500;
 	public static readonly Translate.Phrase NotificationEmpty;
@@ -17,7 +17,7 @@ public static class Util // TypeDefIndex: 13454
 
 }
 
-public static class Util // TypeDefIndex: 13481
+public static class Util // TypeDefIndex: 13491
 {
 
 	public static Info GetInfo(GameObject obj, BasePlayer player) { }

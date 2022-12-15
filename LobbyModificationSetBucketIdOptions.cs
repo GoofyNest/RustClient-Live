@@ -1,4 +1,4 @@
-public struct LobbyModificationSetBucketIdOptions // TypeDefIndex: 9176
+public struct LobbyModificationSetBucketIdOptions // TypeDefIndex: 9178
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <BucketId>k__BackingField;

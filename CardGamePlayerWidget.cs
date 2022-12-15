@@ -1,4 +1,4 @@
-public class CardGamePlayerWidget : MonoBehaviour // TypeDefIndex: 12648
+public class CardGamePlayerWidget : MonoBehaviour // TypeDefIndex: 12658
 {
 	[SerializeField]
 	private GameObjectRef cardImageSmallPrefab;
@@ -67,7 +67,7 @@ public class CardGamePlayerWidget : MonoBehaviour // TypeDefIndex: 12648
 
 }
 
-public enum CardGamePlayerWidget.PlayerUIState // TypeDefIndex: 12649
+public enum CardGamePlayerWidget.PlayerUIState // TypeDefIndex: 12659
 {
 	public int value__;
 	public const CardGamePlayerWidget.PlayerUIState Default = 0;

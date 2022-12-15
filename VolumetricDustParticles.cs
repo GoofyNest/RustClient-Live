@@ -1,4 +1,4 @@
-public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13360
+public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13370
 {
 	[RangeAttribute]
 	public float alpha;
@@ -65,7 +65,7 @@ public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 13360
 
 }
 
-public enum VolumetricDustParticles.Direction // TypeDefIndex: 13361
+public enum VolumetricDustParticles.Direction // TypeDefIndex: 13371
 {
 	public int value__;
 	public const VolumetricDustParticles.Direction Beam = 0;

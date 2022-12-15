@@ -37,17 +37,17 @@ public class SupportedRenderingFeatures // TypeDefIndex: 3857
 	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
 	private bool <terrainDetailUnsupported>k__BackingField;
-	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
 	private bool <overridesEnvironmentLighting>k__BackingField;
-	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
 	private bool <overridesFog>k__BackingField;
 	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
 	private bool <overridesOtherLightingSettings>k__BackingField;
-	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
 	private bool <editableMaterialRenderQueue>k__BackingField;
 	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]

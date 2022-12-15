@@ -1,5 +1,6 @@
-public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 10211
+public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 10213
 {
+	public bool SendClientCurrentState;
 	public bool UseQueuedMovementUpdates;
 	public bool AllowedToSleep;
 	public AIDesignSO DefaultDesignSO;
@@ -23,6 +24,7 @@ public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAID
 	public bool RefreshKnownLOS;
 	[CompilerGeneratedAttribute]
 	private BaseAIBrain.BasicAIState <CurrentState>k__BackingField;
+	public AIState ClientCurrentState;
 	public Vector3 mainInterestPoint;
 	[CompilerGeneratedAttribute]
 	private AIThinkMode <ThinkMode>k__BackingField;
@@ -156,13 +158,20 @@ public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAID
 
 	private bool PlayerCanDesignAI(BasePlayer player) { }
 
+	public override void LoadComponent(BaseNetworkable.LoadInfo info) { }
+
+	[BaseEntity.RPC_Client]
+	public void ClientChangeState(BaseEntity.RPCMessage rpc) { }
+
+	public void OnClientStateChanged(AIState state) { }
+
 	public void EventTriggeredStateChange(int newStateContainerID, int sourceEventID) { }
 
 	public void .ctor() { }
 
 }
 
-public class BaseAIBrain.BasicAIState // TypeDefIndex: 10212
+public class BaseAIBrain.BasicAIState // TypeDefIndex: 10214
 {
 
 	public void .ctor() { }

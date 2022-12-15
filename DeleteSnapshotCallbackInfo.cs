@@ -1,4 +1,4 @@
-public struct DeleteSnapshotCallbackInfo : ICallbackInfo // TypeDefIndex: 8804
+public struct DeleteSnapshotCallbackInfo : ICallbackInfo // TypeDefIndex: 8806
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

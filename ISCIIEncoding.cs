@@ -1,4 +1,4 @@
-public abstract class ISCIIEncoding : MonoEncoding // TypeDefIndex: 7891
+public abstract class ISCIIEncoding : MonoEncoding // TypeDefIndex: 7893
 {
 	private int shift;
 	private string encodingName;

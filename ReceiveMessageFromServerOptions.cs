@@ -1,4 +1,4 @@
-public struct ReceiveMessageFromServerOptions // TypeDefIndex: 9850
+public struct ReceiveMessageFromServerOptions // TypeDefIndex: 9852
 {
 	[CompilerGeneratedAttribute]
 	private ArraySegment<byte> <Data>k__BackingField;

@@ -1,4 +1,4 @@
-internal sealed class InflateManager // TypeDefIndex: 6990
+internal sealed class InflateManager // TypeDefIndex: 6992
 {
 	private InflateManager.InflateManagerMode mode;
 	internal ZlibCodec _codec;
@@ -30,7 +30,7 @@ internal sealed class InflateManager // TypeDefIndex: 6990
 
 }
 
-private enum InflateManager.InflateManagerMode // TypeDefIndex: 6991
+private enum InflateManager.InflateManagerMode // TypeDefIndex: 6993
 {
 	public int value__;
 	public const InflateManager.InflateManagerMode METHOD = 0;

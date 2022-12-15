@@ -1,4 +1,4 @@
-public class TwitchTrophy : BaseCombatEntity // TypeDefIndex: 10197
+public class TwitchTrophy : BaseCombatEntity // TypeDefIndex: 10199
 {
 	private Option __menuOption_Menu_OpenTrophy;
 	[HeaderAttribute]

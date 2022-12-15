@@ -1,4 +1,4 @@
-public class InvokeSpammer : MonoBehaviour // TypeDefIndex: 11019
+public class InvokeSpammer : MonoBehaviour // TypeDefIndex: 11027
 {
 	public int InvokeMilliseconds;
 	public float RepeatTime;

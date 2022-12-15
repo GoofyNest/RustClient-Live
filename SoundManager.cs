@@ -1,4 +1,4 @@
-public class SoundManager : SingletonComponent<SoundManager>, IClientComponent // TypeDefIndex: 10764
+public class SoundManager : SingletonComponent<SoundManager>, IClientComponent // TypeDefIndex: 10769
 {
 	public SoundClass defaultSoundClass;
 	public Dictionary<SoundDefinition, List<Sound>> activeSoundsByDef;
@@ -58,7 +58,7 @@ public class SoundManager : SingletonComponent<SoundManager>, IClientComponent /
 
 }
 
-public class SoundManager.ScheduledSound // TypeDefIndex: 10765
+public class SoundManager.ScheduledSound // TypeDefIndex: 10770
 {
 	public SoundDefinition def;
 	public float startTime;

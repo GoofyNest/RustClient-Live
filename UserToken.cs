@@ -1,4 +1,4 @@
-public struct UserToken // TypeDefIndex: 8759
+public struct UserToken // TypeDefIndex: 8761
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <ProductUserId>k__BackingField;

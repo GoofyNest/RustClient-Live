@@ -1,4 +1,4 @@
-public struct OccludeeSphere // TypeDefIndex: 13312
+public struct OccludeeSphere // TypeDefIndex: 13322
 {
 	public int id;
 	public OccludeeState state;

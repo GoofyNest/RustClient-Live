@@ -1,4 +1,4 @@
-public class RustControl : UIBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 7058
+public class RustControl : UIBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 7060
 {
 	protected static bool IsDragging;
 	[SerializeField]
@@ -49,7 +49,7 @@ public class RustControl : UIBehaviour, IPointerEnterHandler, IEventSystemHandle
 
 }
 
-public enum RustControl.State // TypeDefIndex: 7059
+public enum RustControl.State // TypeDefIndex: 7061
 {
 	public int value__;
 	public const RustControl.State Normal = 1;

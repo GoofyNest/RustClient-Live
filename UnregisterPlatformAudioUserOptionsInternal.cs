@@ -1,4 +1,4 @@
-internal struct UnregisterPlatformAudioUserOptionsInternal : ISettable<UnregisterPlatformAudioUserOptions>, IDisposable // TypeDefIndex: 8715
+internal struct UnregisterPlatformAudioUserOptionsInternal : ISettable<UnregisterPlatformAudioUserOptions>, IDisposable // TypeDefIndex: 8717
 {
 	private int m_ApiVersion;
 	private IntPtr m_UserId;

@@ -3,14 +3,14 @@ public struct VertexAttributeDescriptor : IEquatable<VertexAttributeDescriptor> 
 	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
 	private VertexAttribute <attribute>k__BackingField;
-	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
 	private VertexAttributeFormat <format>k__BackingField;
 	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
 	private int <dimension>k__BackingField;
-	[CompilerGeneratedAttribute]
 	[DebuggerBrowsableAttribute]
+	[CompilerGeneratedAttribute]
 	private int <stream>k__BackingField;
 
 	public VertexAttribute attribute { get; set; }

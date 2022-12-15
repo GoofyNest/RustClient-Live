@@ -1,4 +1,4 @@
-public enum SessionAttributeAdvertisementType // TypeDefIndex: 8548
+public enum SessionAttributeAdvertisementType // TypeDefIndex: 8550
 {
 	public int value__;
 	public const SessionAttributeAdvertisementType DontAdvertise = 0;

@@ -1,4 +1,4 @@
-internal struct SendCustomInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendCustomInviteCallbackInfo>, ISettable<SendCustomInviteCallbackInfo>, IDisposable // TypeDefIndex: 9545
+internal struct SendCustomInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendCustomInviteCallbackInfo>, ISettable<SendCustomInviteCallbackInfo>, IDisposable // TypeDefIndex: 9547
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

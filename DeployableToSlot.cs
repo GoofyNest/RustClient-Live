@@ -1,4 +1,4 @@
-public class DeployableToSlot : MonoBehaviour // TypeDefIndex: 11227
+public class DeployableToSlot : MonoBehaviour // TypeDefIndex: 11236
 {
 	public BaseEntity.Slot slot;
 

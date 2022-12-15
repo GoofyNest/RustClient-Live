@@ -1,4 +1,4 @@
-public class ERRoadNetwork // TypeDefIndex: 7287
+public class ERRoadNetwork // TypeDefIndex: 7289
 {
 	public ERModularBase roadNetwork;
 	public bool isInBuildMode;
@@ -99,7 +99,7 @@ public class ERRoadNetwork // TypeDefIndex: 7287
 
 }
 
-public sealed class ERRoadNetwork.RoadUpdateCallback : MulticastDelegate // TypeDefIndex: 7288
+public sealed class ERRoadNetwork.RoadUpdateCallback : MulticastDelegate // TypeDefIndex: 7290
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -112,7 +112,7 @@ public sealed class ERRoadNetwork.RoadUpdateCallback : MulticastDelegate // Type
 
 }
 
-public sealed class ERRoadNetwork.BuildModeCallback : MulticastDelegate // TypeDefIndex: 7289
+public sealed class ERRoadNetwork.BuildModeCallback : MulticastDelegate // TypeDefIndex: 7291
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -125,7 +125,7 @@ public sealed class ERRoadNetwork.BuildModeCallback : MulticastDelegate // TypeD
 
 }
 
-public sealed class ERRoadNetwork.EditModeCallback : MulticastDelegate // TypeDefIndex: 7290
+public sealed class ERRoadNetwork.EditModeCallback : MulticastDelegate // TypeDefIndex: 7292
 {
 
 	public void .ctor(object object, IntPtr method) { }

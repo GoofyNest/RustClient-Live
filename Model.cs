@@ -1,4 +1,4 @@
-public class Model : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10946
+public class Model : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10954
 {
 	public SphereCollider collision;
 	public Transform rootBone;

@@ -1,4 +1,4 @@
-public struct UpdateParentEmailOptions // TypeDefIndex: 9368
+public struct UpdateParentEmailOptions // TypeDefIndex: 9370
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

@@ -1,4 +1,4 @@
-internal struct FlexChildEnumerator : IEnumerator<IFlexNode>, IEnumerator, IDisposable // TypeDefIndex: 6820
+internal struct FlexChildEnumerator : IEnumerator<IFlexNode>, IEnumerator, IDisposable // TypeDefIndex: 6822
 {
 	private readonly Transform _parent;
 	private readonly int _childCount;

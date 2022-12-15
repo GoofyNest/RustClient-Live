@@ -1,4 +1,4 @@
-public struct CopyPlayerSanctionByIndexOptions // TypeDefIndex: 8621
+public struct CopyPlayerSanctionByIndexOptions // TypeDefIndex: 8623
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <TargetUserId>k__BackingField;

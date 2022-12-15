@@ -1,4 +1,4 @@
-public static class WebSocketStatusCodes // TypeDefIndex: 6973
+public static class WebSocketStatusCodes // TypeDefIndex: 6975
 {
 	public static ushort[] ValidCloseCodes;
 

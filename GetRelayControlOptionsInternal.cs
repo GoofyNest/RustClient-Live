@@ -1,4 +1,4 @@
-internal struct GetRelayControlOptionsInternal : ISettable<GetRelayControlOptions>, IDisposable // TypeDefIndex: 8965
+internal struct GetRelayControlOptionsInternal : ISettable<GetRelayControlOptions>, IDisposable // TypeDefIndex: 8967
 {
 
 internal struct GetRelayControlOptionsInternal : ISettable<GetRelayControlOptions>, IDisposable

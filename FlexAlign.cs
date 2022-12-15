@@ -1,4 +1,4 @@
-public enum FlexAlign // TypeDefIndex: 6817
+public enum FlexAlign // TypeDefIndex: 6819
 {
 	public int value__;
 	public const FlexAlign Start = 0;

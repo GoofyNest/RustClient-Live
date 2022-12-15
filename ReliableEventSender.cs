@@ -1,4 +1,4 @@
-public class ReliableEventSender : StateMachineBehaviour // TypeDefIndex: 10854
+public class ReliableEventSender : StateMachineBehaviour // TypeDefIndex: 10862
 {
 	[HeaderAttribute]
 	public string StateEnter;

@@ -1,4 +1,4 @@
-internal struct QueryAgeGateOptionsInternal : ISettable<QueryAgeGateOptions>, IDisposable // TypeDefIndex: 9357
+internal struct QueryAgeGateOptionsInternal : ISettable<QueryAgeGateOptions>, IDisposable // TypeDefIndex: 9359
 {
 
 internal struct QueryAgeGateOptionsInternal : ISettable<QueryAgeGateOptions>, IDisposable

@@ -1,4 +1,4 @@
-public class MapMarkerMLRSRocket : MapMarker // TypeDefIndex: 11471
+public class MapMarkerMLRSRocket : MapMarker // TypeDefIndex: 11480
 {
 	public RectTransform uiMarkerTransform;
 

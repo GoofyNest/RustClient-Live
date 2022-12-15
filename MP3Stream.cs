@@ -1,4 +1,4 @@
-public class MP3Stream : Stream // TypeDefIndex: 7395
+public class MP3Stream : Stream // TypeDefIndex: 7397
 {
 	private readonly Bitstream _BitStream;
 	private readonly Decoder _Decoder;

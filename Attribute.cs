@@ -246,7 +246,7 @@ internal class AttributeHelperEngine // TypeDefIndex: 3495
 
 }
 
-public enum AttributeType // TypeDefIndex: 8281
+public enum AttributeType // TypeDefIndex: 8283
 {
 	public int value__;
 	public const AttributeType Boolean = 0;
@@ -256,7 +256,7 @@ public enum AttributeType // TypeDefIndex: 8281
 
 }
 
-public struct AttributeData // TypeDefIndex: 8466
+public struct AttributeData // TypeDefIndex: 8468
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <Key>k__BackingField;
@@ -283,7 +283,7 @@ public struct AttributeData // TypeDefIndex: 8466
 
 }
 
-internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<AttributeData>, IDisposable // TypeDefIndex: 8467
+internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<AttributeData>, IDisposable // TypeDefIndex: 8469
 {
 	private int m_ApiVersion;
 	private IntPtr m_Key;
@@ -311,7 +311,7 @@ internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<Attr
 
 }
 
-public struct AttributeDataValue // TypeDefIndex: 8468
+public struct AttributeDataValue // TypeDefIndex: 8470
 {
 	private Nullable<long> m_AsInt64;
 	private Nullable<double> m_AsDouble;
@@ -360,7 +360,7 @@ public struct AttributeDataValue // TypeDefIndex: 8468
 
 }
 
-internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISettable<AttributeDataValue>, IDisposable // TypeDefIndex: 8469
+internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISettable<AttributeDataValue>, IDisposable // TypeDefIndex: 8471
 {
 	private long m_AsInt64;
 	private double m_AsDouble;
@@ -400,7 +400,7 @@ internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISet
 
 }
 
-public struct Attribute // TypeDefIndex: 9079
+public struct Attribute // TypeDefIndex: 9081
 {
 	[CompilerGeneratedAttribute]
 	private Nullable<AttributeData> <Data>k__BackingField;
@@ -427,7 +427,7 @@ public struct Attribute // TypeDefIndex: 9079
 
 }
 
-internal struct AttributeInternal : IGettable<Attribute>, ISettable<Attribute>, IDisposable // TypeDefIndex: 9080
+internal struct AttributeInternal : IGettable<Attribute>, ISettable<Attribute>, IDisposable // TypeDefIndex: 9082
 {
 	private int m_ApiVersion;
 	private IntPtr m_Data;
@@ -455,7 +455,7 @@ internal struct AttributeInternal : IGettable<Attribute>, ISettable<Attribute>, 
 
 }
 
-public struct AttributeData // TypeDefIndex: 9081
+public struct AttributeData // TypeDefIndex: 9083
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <Key>k__BackingField;
@@ -482,7 +482,7 @@ public struct AttributeData // TypeDefIndex: 9081
 
 }
 
-internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<AttributeData>, IDisposable // TypeDefIndex: 9082
+internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<AttributeData>, IDisposable // TypeDefIndex: 9084
 {
 	private int m_ApiVersion;
 	private IntPtr m_Key;
@@ -510,7 +510,7 @@ internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<Attr
 
 }
 
-public struct AttributeDataValue // TypeDefIndex: 9083
+public struct AttributeDataValue // TypeDefIndex: 9085
 {
 	private Nullable<long> m_AsInt64;
 	private Nullable<double> m_AsDouble;
@@ -559,7 +559,7 @@ public struct AttributeDataValue // TypeDefIndex: 9083
 
 }
 
-internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISettable<AttributeDataValue>, IDisposable // TypeDefIndex: 9084
+internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISettable<AttributeDataValue>, IDisposable // TypeDefIndex: 9086
 {
 	private long m_AsInt64;
 	private double m_AsDouble;

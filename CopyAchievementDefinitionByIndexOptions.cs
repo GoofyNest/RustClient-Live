@@ -1,4 +1,4 @@
-public struct CopyAchievementDefinitionByIndexOptions // TypeDefIndex: 9897
+public struct CopyAchievementDefinitionByIndexOptions // TypeDefIndex: 9899
 {
 	[CompilerGeneratedAttribute]
 	private uint <AchievementIndex>k__BackingField;

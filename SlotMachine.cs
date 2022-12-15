@@ -68,7 +68,7 @@ public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public class SlotMachine : BaseMountable // TypeDefIndex: 10168
+public class SlotMachine : BaseMountable // TypeDefIndex: 10170
 {
 	private Option __menuOption_Menu_Deposit;
 	private Option __menuOption_Menu_Spin;
@@ -187,7 +187,7 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10168
 
 }
 
-public enum SlotMachine.SlotFaces // TypeDefIndex: 10169
+public enum SlotMachine.SlotFaces // TypeDefIndex: 10171
 {
 	public int value__;
 	public const SlotMachine.SlotFaces Scrap = 0;

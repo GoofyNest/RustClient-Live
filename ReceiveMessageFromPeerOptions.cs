@@ -1,4 +1,4 @@
-public struct ReceiveMessageFromPeerOptions // TypeDefIndex: 9848
+public struct ReceiveMessageFromPeerOptions // TypeDefIndex: 9850
 {
 	[CompilerGeneratedAttribute]
 	private IntPtr <PeerHandle>k__BackingField;

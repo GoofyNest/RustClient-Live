@@ -1,4 +1,4 @@
-public class ERRoundaboutElement // TypeDefIndex: 7188
+public class ERRoundaboutElement // TypeDefIndex: 7190
 {
 	public float roadWidth;
 	public float prevRoadWidth;

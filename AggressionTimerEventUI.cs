@@ -1,4 +1,4 @@
-public class AggressionTimerEventUI : BaseEventUI // TypeDefIndex: 12552
+public class AggressionTimerEventUI : BaseEventUI // TypeDefIndex: 12562
 {
 
 	public override AIEventData Save() { }

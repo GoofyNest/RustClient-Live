@@ -1,4 +1,4 @@
-internal struct DumpSessionStateOptionsInternal : ISettable<DumpSessionStateOptions>, IDisposable // TypeDefIndex: 8487
+internal struct DumpSessionStateOptionsInternal : ISettable<DumpSessionStateOptions>, IDisposable // TypeDefIndex: 8489
 {
 	private int m_ApiVersion;
 	private IntPtr m_SessionName;

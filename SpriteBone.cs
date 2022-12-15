@@ -1,7 +1,7 @@
 public struct SpriteBone // TypeDefIndex: 3580
 {
-	[NativeNameAttribute]
 	[SerializeField]
+	[NativeNameAttribute]
 	private string m_Name;
 	[NativeNameAttribute]
 	[SerializeField]
@@ -9,11 +9,11 @@ public struct SpriteBone // TypeDefIndex: 3580
 	[SerializeField]
 	[NativeNameAttribute]
 	private Quaternion m_Rotation;
-	[NativeNameAttribute]
 	[SerializeField]
+	[NativeNameAttribute]
 	private float m_Length;
-	[NativeNameAttribute]
 	[SerializeField]
+	[NativeNameAttribute]
 	private int m_ParentId;
 
 }

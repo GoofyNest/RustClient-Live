@@ -1,4 +1,4 @@
-internal struct AddNotifyAudioBeforeSendOptionsInternal : ISettable<AddNotifyAudioBeforeSendOptions>, IDisposable // TypeDefIndex: 8645
+internal struct AddNotifyAudioBeforeSendOptionsInternal : ISettable<AddNotifyAudioBeforeSendOptions>, IDisposable // TypeDefIndex: 8647
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

@@ -1,4 +1,4 @@
-public struct GetProductUserIdMappingOptions // TypeDefIndex: 9587
+public struct GetProductUserIdMappingOptions // TypeDefIndex: 9589
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

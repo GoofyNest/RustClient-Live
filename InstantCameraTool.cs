@@ -1,4 +1,4 @@
-public class InstantCameraTool : HeldEntity // TypeDefIndex: 10308
+public class InstantCameraTool : HeldEntity // TypeDefIndex: 10310
 {
 	public ItemDefinition photoItem;
 	public GameObjectRef screenshotEffect;
@@ -49,7 +49,7 @@ public class InstantCameraTool : HeldEntity // TypeDefIndex: 10308
 
 }
 
-private sealed class InstantCameraTool.<TakePhoto>d__19 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10309
+private sealed class InstantCameraTool.<TakePhoto>d__19 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10311
 {
 	private int <>1__state;
 	private object <>2__current;

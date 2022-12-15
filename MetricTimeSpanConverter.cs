@@ -1,4 +1,4 @@
-internal sealed class MetricTimeSpanConverter : ITimeSpanConverter // TypeDefIndex: 7491
+internal sealed class MetricTimeSpanConverter : ITimeSpanConverter // TypeDefIndex: 7493
 {
 
 	public ITimeSpan ConvertTo(long timeSpan, long time, TempoMap tempoMap) { }
@@ -17,7 +17,7 @@ internal sealed class MetricTimeSpanConverter : ITimeSpanConverter // TypeDefInd
 
 }
 
-private sealed class MetricTimeSpanConverter.<>c // TypeDefIndex: 7492
+private sealed class MetricTimeSpanConverter.<>c // TypeDefIndex: 7494
 {
 	public static readonly MetricTimeSpanConverter.<>c <>9;
 	public static Func<MetricTempoMapValuesCache.AccumulatedMicroseconds, long> <>9__2_0;
@@ -31,7 +31,7 @@ private sealed class MetricTimeSpanConverter.<>c // TypeDefIndex: 7492
 
 }
 
-private sealed class MetricTimeSpanConverter.<>c__DisplayClass3_0 // TypeDefIndex: 7493
+private sealed class MetricTimeSpanConverter.<>c__DisplayClass3_0 // TypeDefIndex: 7495
 {
 	public long timeMicroseconds;
 

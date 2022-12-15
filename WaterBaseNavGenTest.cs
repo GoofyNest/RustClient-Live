@@ -1,4 +1,4 @@
-public class WaterBaseNavGenTest : MonoBehaviour // TypeDefIndex: 10001
+public class WaterBaseNavGenTest : MonoBehaviour // TypeDefIndex: 10003
 {
 	private IEnumerator co;
 

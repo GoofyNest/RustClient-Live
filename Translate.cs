@@ -1,4 +1,4 @@
-public static class Translate // TypeDefIndex: 6894
+public static class Translate // TypeDefIndex: 6896
 {
 
 private struct <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=128
@@ -30,7 +30,7 @@ public static class Translate
 
 }
 
-public class Translate.Phrase // TypeDefIndex: 6895
+public class Translate.Phrase // TypeDefIndex: 6897
 {
 	public string token;
 	[TextAreaAttribute]

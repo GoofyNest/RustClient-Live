@@ -1,7 +1,7 @@
 public abstract class RenderPipeline // TypeDefIndex: 3852
 {
-	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
 	private bool <disposed>k__BackingField;
 
 	public bool disposed { get; set; }

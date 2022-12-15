@@ -1,4 +1,4 @@
-internal struct PromoteMemberOptionsInternal : ISettable<PromoteMemberOptions>, IDisposable // TypeDefIndex: 9255
+internal struct PromoteMemberOptionsInternal : ISettable<PromoteMemberOptions>, IDisposable // TypeDefIndex: 9257
 {
 	private int m_ApiVersion;
 	private IntPtr m_LobbyId;

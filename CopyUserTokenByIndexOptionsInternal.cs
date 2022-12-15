@@ -1,4 +1,4 @@
-internal struct CopyUserTokenByIndexOptionsInternal : ISettable<CopyUserTokenByIndexOptions>, IDisposable // TypeDefIndex: 8737
+internal struct CopyUserTokenByIndexOptionsInternal : ISettable<CopyUserTokenByIndexOptions>, IDisposable // TypeDefIndex: 8739
 {
 	private int m_ApiVersion;
 	private uint m_UserTokenIndex;

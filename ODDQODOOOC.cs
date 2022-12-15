@@ -1,4 +1,4 @@
-public class ODDQODOOOC : MonoBehaviour // TypeDefIndex: 7245
+public class ODDQODOOOC : MonoBehaviour // TypeDefIndex: 7247
 {
 	public static List<Vector3> debugvecs;
 	public static bool sidewaysFlag;

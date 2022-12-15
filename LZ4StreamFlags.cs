@@ -1,4 +1,4 @@
-public enum LZ4StreamFlags // TypeDefIndex: 7023
+public enum LZ4StreamFlags // TypeDefIndex: 7025
 {
 	public int value__;
 	public const LZ4StreamFlags None = 0;

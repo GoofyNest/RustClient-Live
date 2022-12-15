@@ -1,4 +1,4 @@
-public class BaseBoat : BaseVehicle // TypeDefIndex: 10034
+public class BaseBoat : BaseVehicle // TypeDefIndex: 10036
 {
 	private Option __menuOption_Menu_Push;
 	public float engineThrust;

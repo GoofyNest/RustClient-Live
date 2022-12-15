@@ -1,4 +1,4 @@
-public class WheelSwitch : IOEntity // TypeDefIndex: 10208
+public class WheelSwitch : IOEntity // TypeDefIndex: 10210
 {
 	private Option __menuOption_Menu_Turn;
 	public Transform wheelObj;

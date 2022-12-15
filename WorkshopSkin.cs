@@ -1,4 +1,4 @@
-public class WorkshopSkin : MonoBehaviour // TypeDefIndex: 7739
+public class WorkshopSkin : MonoBehaviour // TypeDefIndex: 7741
 {
 	public static bool AllowApply;
 	public static bool AllowUnload;
@@ -72,7 +72,7 @@ public class WorkshopSkin : MonoBehaviour // TypeDefIndex: 7739
 
 }
 
-private sealed class WorkshopSkin.<ItemQueueCoroutine>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7740
+private sealed class WorkshopSkin.<ItemQueueCoroutine>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7742
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -100,7 +100,7 @@ private sealed class WorkshopSkin.<ItemQueueCoroutine>d__31 : IEnumerator<object
 
 }
 
-private sealed class WorkshopSkin.<SkinQueueCoroutine>d__32 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7741
+private sealed class WorkshopSkin.<SkinQueueCoroutine>d__32 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7743
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -128,7 +128,7 @@ private sealed class WorkshopSkin.<SkinQueueCoroutine>d__32 : IEnumerator<object
 
 }
 
-private sealed class WorkshopSkin.<LoadItem>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7742
+private sealed class WorkshopSkin.<LoadItem>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7744
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -161,7 +161,7 @@ private sealed class WorkshopSkin.<LoadItem>d__33 : IEnumerator<object>, IEnumer
 
 }
 
-private sealed class WorkshopSkin.<LoadSkin>d__34 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7743
+private sealed class WorkshopSkin.<LoadSkin>d__34 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7745
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -194,7 +194,7 @@ private sealed class WorkshopSkin.<LoadSkin>d__34 : IEnumerator<object>, IEnumer
 
 }
 
-public class WorkshopSkin : WorkshopSkinBase // TypeDefIndex: 12543
+public class WorkshopSkin : WorkshopSkinBase // TypeDefIndex: 12553
 {
 
 	public void .ctor() { }

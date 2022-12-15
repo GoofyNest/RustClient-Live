@@ -1,4 +1,4 @@
-internal struct GetPortRangeOptionsInternal : ISettable<GetPortRangeOptions>, IDisposable // TypeDefIndex: 8963
+internal struct GetPortRangeOptionsInternal : ISettable<GetPortRangeOptions>, IDisposable // TypeDefIndex: 8965
 {
 
 internal struct GetPortRangeOptionsInternal : ISettable<GetPortRangeOptions>, IDisposable

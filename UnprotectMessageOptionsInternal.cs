@@ -1,4 +1,4 @@
-internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9748
+internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9750
 {
 	private int m_ApiVersion;
 	private IntPtr m_ClientHandle;
@@ -25,7 +25,7 @@ internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOpti
 
 }
 
-internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9855
+internal struct UnprotectMessageOptionsInternal : ISettable<UnprotectMessageOptions>, IDisposable // TypeDefIndex: 9857
 {
 	private int m_ApiVersion;
 	private uint m_DataLengthBytes;

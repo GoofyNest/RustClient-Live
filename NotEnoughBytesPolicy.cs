@@ -1,4 +1,4 @@
-public enum NotEnoughBytesPolicy // TypeDefIndex: 7615
+public enum NotEnoughBytesPolicy // TypeDefIndex: 7617
 {
 	public int value__;
 	public const NotEnoughBytesPolicy Abort = 0;

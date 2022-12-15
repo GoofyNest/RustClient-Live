@@ -1,4 +1,4 @@
-public class RendererGroup : Pool.IPooled // TypeDefIndex: 11667
+public class RendererGroup : Pool.IPooled // TypeDefIndex: 11676
 {
 	public bool Invalidated;
 	public bool NeedsRefresh;

@@ -1,4 +1,4 @@
-public class Subscriber : Pool.IPooled // TypeDefIndex: 6883
+public class Subscriber : Pool.IPooled // TypeDefIndex: 6885
 {
 	internal Manager manager;
 	internal Connection connection;

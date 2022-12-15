@@ -1,4 +1,4 @@
-internal struct IOSCredentialsSystemAuthCredentialsOptionsInternal : IGettable<IOSCredentialsSystemAuthCredentialsOptions>, ISettable<IOSCredentialsSystemAuthCredentialsOptions>, IDisposable // TypeDefIndex: 9717
+internal struct IOSCredentialsSystemAuthCredentialsOptionsInternal : IGettable<IOSCredentialsSystemAuthCredentialsOptions>, ISettable<IOSCredentialsSystemAuthCredentialsOptions>, IDisposable // TypeDefIndex: 9719
 {
 	private int m_ApiVersion;
 	private IntPtr m_PresentationContextProviding;

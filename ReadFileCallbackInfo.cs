@@ -1,4 +1,4 @@
-public struct ReadFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8419
+public struct ReadFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8421
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;
@@ -45,7 +45,7 @@ public struct ReadFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8419
 
 }
 
-public struct ReadFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8922
+public struct ReadFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8924
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

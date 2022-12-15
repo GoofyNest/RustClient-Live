@@ -1,4 +1,4 @@
-public class WorldModel : MonoBehaviour // TypeDefIndex: 11838
+public class WorldModel : MonoBehaviour // TypeDefIndex: 11847
 {
 	public float mass;
 

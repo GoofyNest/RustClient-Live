@@ -1,4 +1,4 @@
-public class sRGB // TypeDefIndex: 13170
+public class sRGB // TypeDefIndex: 13180
 {
 	public static byte[] to_linear;
 	public static byte[] to_srgb;

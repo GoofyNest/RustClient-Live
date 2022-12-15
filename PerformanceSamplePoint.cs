@@ -1,4 +1,4 @@
-public struct PerformanceSamplePoint // TypeDefIndex: 13126
+public struct PerformanceSamplePoint // TypeDefIndex: 13136
 {
 	public int UpdateCount;
 	public int FixedUpdateCount;

@@ -1,4 +1,4 @@
-public class BaseSubmarine : BaseVehicle, IEngineControllerUser, IEntity, IAirSupply // TypeDefIndex: 10070
+public class BaseSubmarine : BaseVehicle, IEngineControllerUser, IEntity, IAirSupply // TypeDefIndex: 10072
 {
 	private Option __menuOption_Menu_FuelStorage;
 	private Option __menuOption_Menu_ItemStorage;
@@ -302,7 +302,7 @@ public class BaseSubmarine : BaseVehicle, IEngineControllerUser, IEntity, IAirSu
 
 }
 
-public class BaseSubmarine.ParentTriggerInfo // TypeDefIndex: 10071
+public class BaseSubmarine.ParentTriggerInfo // TypeDefIndex: 10073
 {
 	public TriggerParent trigger;
 	public Transform triggerWaterLevel;

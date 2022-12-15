@@ -1,4 +1,4 @@
-public class PlayingCard // TypeDefIndex: 13831
+public class PlayingCard // TypeDefIndex: 13841
 {
 	public readonly bool IsUnknownCard;
 	public readonly Suit Suit;

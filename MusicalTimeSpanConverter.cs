@@ -1,4 +1,4 @@
-internal sealed class MusicalTimeSpanConverter : ITimeSpanConverter // TypeDefIndex: 7495
+internal sealed class MusicalTimeSpanConverter : ITimeSpanConverter // TypeDefIndex: 7497
 {
 
 	public ITimeSpan ConvertTo(long timeSpan, long time, TempoMap tempoMap) { }

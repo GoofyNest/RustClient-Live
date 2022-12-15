@@ -1,4 +1,4 @@
-public class PhoneDirectory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6514
+public class PhoneDirectory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6516
 {
 	public bool ShouldPool;
 	private bool _disposed;
@@ -60,7 +60,7 @@ public class PhoneDirectory : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class PhoneDirectory.DirectoryEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6515
+public class PhoneDirectory.DirectoryEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6517
 {
 	public bool ShouldPool;
 	private bool _disposed;

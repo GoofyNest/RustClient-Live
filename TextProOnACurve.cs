@@ -1,4 +1,4 @@
-public abstract class TextProOnACurve : MonoBehaviour // TypeDefIndex: 7164
+public abstract class TextProOnACurve : MonoBehaviour // TypeDefIndex: 7166
 {
 	private TMP_Text m_TextComponent;
 

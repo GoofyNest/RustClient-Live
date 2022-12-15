@@ -1585,6 +1585,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<AvatarCache.Entry>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.PendingFileRequest>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.QueuedFileRequest>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<BlendShapeController.BlendState>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CameraMan.CameraState>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CardGameUI.KeycodeWithAction>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Cassette.LoadRequest>
@@ -2339,6 +2340,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<BaseEntity.PendingFileRequest>
 	|
 	|-Array.InternalArray__ICollection_Add<BaseEntity.QueuedFileRequest>
+	|
+	|-Array.InternalArray__ICollection_Add<BlendShapeController.BlendState>
 	|
 	|-Array.InternalArray__ICollection_Add<CameraMan.CameraState>
 	|
@@ -3828,6 +3831,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<BaseEntity.QueuedFileRequest>
 	|
+	|-Array.InternalArray__ICollection_Remove<BlendShapeController.BlendState>
+	|
 	|-Array.InternalArray__ICollection_Remove<CameraMan.CameraState>
 	|
 	|-Array.InternalArray__ICollection_Remove<CardGameUI.KeycodeWithAction>
@@ -5316,6 +5321,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<BaseEntity.QueuedFileRequest>
 	|
+	|-Array.InternalArray__ICollection_Contains<BlendShapeController.BlendState>
+	|
 	|-Array.InternalArray__ICollection_Contains<CameraMan.CameraState>
 	|
 	|-Array.InternalArray__ICollection_Contains<CardGameUI.KeycodeWithAction>
@@ -6798,6 +6805,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<AvatarCache.Entry>
 	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.PendingFileRequest>
 	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.QueuedFileRequest>
+	|-Array.InternalArray__ICollection_CopyTo<BlendShapeController.BlendState>
 	|-Array.InternalArray__ICollection_CopyTo<CameraMan.CameraState>
 	|-Array.InternalArray__ICollection_CopyTo<CardGameUI.KeycodeWithAction>
 	|-Array.InternalArray__ICollection_CopyTo<Cassette.LoadRequest>
@@ -7550,6 +7558,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<BaseEntity.PendingFileRequest>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<BaseEntity.QueuedFileRequest>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<BlendShapeController.BlendState>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<CameraMan.CameraState>
 	|
@@ -9041,6 +9051,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<BaseEntity.QueuedFileRequest>
 	|
+	|-Array.InternalArray__Insert<BlendShapeController.BlendState>
+	|
 	|-Array.InternalArray__Insert<CameraMan.CameraState>
 	|
 	|-Array.InternalArray__Insert<CardGameUI.KeycodeWithAction>
@@ -10531,6 +10543,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<BaseEntity.QueuedFileRequest>
 	|
+	|-Array.InternalArray__IndexOf<BlendShapeController.BlendState>
+	|
 	|-Array.InternalArray__IndexOf<CameraMan.CameraState>
 	|
 	|-Array.InternalArray__IndexOf<CardGameUI.KeycodeWithAction>
@@ -12019,6 +12033,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__get_Item<BaseEntity.QueuedFileRequest>
 	|
+	|-Array.InternalArray__get_Item<BlendShapeController.BlendState>
+	|
 	|-Array.InternalArray__get_Item<CameraMan.CameraState>
 	|
 	|-Array.InternalArray__get_Item<CardGameUI.KeycodeWithAction>
@@ -13506,6 +13522,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__set_Item<BaseEntity.PendingFileRequest>
 	|
 	|-Array.InternalArray__set_Item<BaseEntity.QueuedFileRequest>
+	|
+	|-Array.InternalArray__set_Item<BlendShapeController.BlendState>
 	|
 	|-Array.InternalArray__set_Item<CameraMan.CameraState>
 	|
@@ -15608,6 +15626,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AvatarCache.Entry>..ctor
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>..ctor
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>..ctor
+	|-Array.InternalEnumerator<BlendShapeController.BlendState>..ctor
 	|-Array.InternalEnumerator<CameraMan.CameraState>..ctor
 	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>..ctor
 	|-Array.InternalEnumerator<Cassette.LoadRequest>..ctor
@@ -16355,6 +16374,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AvatarCache.Entry>.Dispose
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.Dispose
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.Dispose
+	|-Array.InternalEnumerator<BlendShapeController.BlendState>.Dispose
 	|-Array.InternalEnumerator<CameraMan.CameraState>.Dispose
 	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.Dispose
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.Dispose
@@ -17102,6 +17122,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AvatarCache.Entry>.MoveNext
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.MoveNext
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.MoveNext
+	|-Array.InternalEnumerator<BlendShapeController.BlendState>.MoveNext
 	|-Array.InternalEnumerator<CameraMan.CameraState>.MoveNext
 	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.MoveNext
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.MoveNext
@@ -17854,6 +17875,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.get_Current
 	|
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.get_Current
+	|
+	|-Array.InternalEnumerator<BlendShapeController.BlendState>.get_Current
 	|
 	|-Array.InternalEnumerator<CameraMan.CameraState>.get_Current
 	|
@@ -19337,6 +19360,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AvatarCache.Entry>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<BlendShapeController.BlendState>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.Reset
@@ -20089,6 +20113,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<BlendShapeController.BlendState>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.get_Current
 	|
@@ -21582,6 +21608,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.Dispose
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.Dispose
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.Dispose
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>.Dispose
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.Dispose
 	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.Dispose
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.Dispose
@@ -22329,6 +22356,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.MoveNext
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.MoveNext
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.MoveNext
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>.MoveNext
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.MoveNext
 	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.MoveNext
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.MoveNext
@@ -23081,6 +23109,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.get_Current
 	|
@@ -24717,6 +24747,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CommandBufferManager.CommandBufferEntry>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Debugging.EntityInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<DamageRenderer.DamageShowingRenderer>.System.Collections.IEnumerator.get_Current
@@ -25346,6 +25377,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.Reset
@@ -26093,6 +26125,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>..ctor
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>..ctor
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>..ctor
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>..ctor
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>..ctor
 	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>..ctor
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>..ctor
@@ -26840,6 +26873,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>..cctor
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>..cctor
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>..cctor
+	|-Array.EmptyInternalEnumerator<BlendShapeController.BlendState>..cctor
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>..cctor
 	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>..cctor
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>..cctor
@@ -31474,7 +31508,7 @@ internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6278
 
 }
 
-public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6572
+public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6574
 {
 
 public class ArrayIndexIsEnum : PropertyAttribute
@@ -31485,7 +31519,7 @@ public class ArrayIndexIsEnum : PropertyAttribute
 
 }
 
-public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6573
+public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6575
 {
 	public float min;
 	public float max;
@@ -31495,7 +31529,7 @@ public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6573
 
 }
 
-public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8160
+public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8162
 {
 	private readonly List<Value> values;
 
@@ -31531,7 +31565,7 @@ public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8160
 
 }
 
-public static class Arrays // TypeDefIndex: 8245
+public static class Arrays // TypeDefIndex: 8247
 {
 	public static ushort[] flushes;
 	public static readonly ushort[] unique5;
@@ -31545,7 +31579,7 @@ public static class Arrays // TypeDefIndex: 8245
 
 }
 
-public static class ArrayEx // TypeDefIndex: 13147
+public static class ArrayEx // TypeDefIndex: 13157
 {
 
 	public static T[] New<T>(int length) { }

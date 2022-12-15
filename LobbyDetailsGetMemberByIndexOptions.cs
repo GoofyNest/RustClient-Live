@@ -1,4 +1,4 @@
-public struct LobbyDetailsGetMemberByIndexOptions // TypeDefIndex: 9149
+public struct LobbyDetailsGetMemberByIndexOptions // TypeDefIndex: 9151
 {
 	[CompilerGeneratedAttribute]
 	private uint <MemberIndex>k__BackingField;

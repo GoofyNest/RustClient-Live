@@ -1,4 +1,4 @@
-public struct OnShowReportPlayerCallbackInfo : ICallbackInfo // TypeDefIndex: 8364
+public struct OnShowReportPlayerCallbackInfo : ICallbackInfo // TypeDefIndex: 8366
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

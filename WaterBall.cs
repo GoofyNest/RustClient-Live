@@ -1,4 +1,4 @@
-public class WaterBall : BaseEntity // TypeDefIndex: 11360
+public class WaterBall : BaseEntity // TypeDefIndex: 11369
 {
 	public ItemDefinition liquidType;
 	public int waterAmount;

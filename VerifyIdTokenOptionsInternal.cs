@@ -1,4 +1,4 @@
-internal struct VerifyIdTokenOptionsInternal : ISettable<VerifyIdTokenOptions>, IDisposable // TypeDefIndex: 9646
+internal struct VerifyIdTokenOptionsInternal : ISettable<VerifyIdTokenOptions>, IDisposable // TypeDefIndex: 9648
 {
 	private int m_ApiVersion;
 	private IntPtr m_IdToken;
@@ -16,7 +16,7 @@ internal struct VerifyIdTokenOptionsInternal : ISettable<VerifyIdTokenOptions>, 
 
 }
 
-internal struct VerifyIdTokenOptionsInternal : ISettable<VerifyIdTokenOptions>, IDisposable // TypeDefIndex: 9709
+internal struct VerifyIdTokenOptionsInternal : ISettable<VerifyIdTokenOptions>, IDisposable // TypeDefIndex: 9711
 {
 	private int m_ApiVersion;
 	private IntPtr m_IdToken;

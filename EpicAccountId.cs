@@ -1,4 +1,4 @@
-public sealed class EpicAccountId : Handle // TypeDefIndex: 8286
+public sealed class EpicAccountId : Handle // TypeDefIndex: 8288
 {
 	public const int EpicaccountidMaxLength = 32;
 

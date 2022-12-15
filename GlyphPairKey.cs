@@ -1,4 +1,4 @@
-public struct GlyphPairKey // TypeDefIndex: 6724
+public struct GlyphPairKey // TypeDefIndex: 6726
 {
 	public uint firstGlyphIndex;
 	public uint secondGlyphIndex;

@@ -1,4 +1,4 @@
-public class BaseLock : BaseEntity // TypeDefIndex: 10046
+public class BaseLock : BaseEntity // TypeDefIndex: 10048
 {
 	private Option __menuOption_Menu_RemoveLock;
 	[ItemSelector]

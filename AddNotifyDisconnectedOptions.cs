@@ -1,4 +1,4 @@
-public struct AddNotifyDisconnectedOptions // TypeDefIndex: 8761
+public struct AddNotifyDisconnectedOptions // TypeDefIndex: 8763
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

@@ -1,4 +1,4 @@
-public sealed class OnPromoteMemberCallback : MulticastDelegate // TypeDefIndex: 9238
+public sealed class OnPromoteMemberCallback : MulticastDelegate // TypeDefIndex: 9240
 {
 
 	public void .ctor(object object, IntPtr method) { }

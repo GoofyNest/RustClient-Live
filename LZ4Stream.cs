@@ -1,4 +1,4 @@
-public class LZ4Stream : Stream // TypeDefIndex: 7030
+public class LZ4Stream : Stream // TypeDefIndex: 7032
 {
 	private readonly Stream _innerStream;
 	private readonly LZ4StreamMode _compressionMode;
@@ -65,7 +65,7 @@ public class LZ4Stream : Stream // TypeDefIndex: 7030
 
 }
 
-public enum LZ4Stream.ChunkFlags // TypeDefIndex: 7031
+public enum LZ4Stream.ChunkFlags // TypeDefIndex: 7033
 {
 	public int value__;
 	public const LZ4Stream.ChunkFlags None = 0;

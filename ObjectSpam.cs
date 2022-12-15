@@ -1,4 +1,4 @@
-public class ObjectSpam : MonoBehaviour // TypeDefIndex: 11026
+public class ObjectSpam : MonoBehaviour // TypeDefIndex: 11034
 {
 	public GameObject source;
 	public int amount;

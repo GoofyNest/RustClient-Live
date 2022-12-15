@@ -1,4 +1,4 @@
-public class TexasHoldEmUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12660
+public class TexasHoldEmUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12670
 {
 	[SerializeField]
 	private Image[] holeCardImages;
@@ -80,7 +80,7 @@ public class TexasHoldEmUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDef
 
 }
 
-private enum TexasHoldEmUI.PlayerChipState // TypeDefIndex: 12661
+private enum TexasHoldEmUI.PlayerChipState // TypeDefIndex: 12671
 {
 	public int value__;
 	public const TexasHoldEmUI.PlayerChipState None = 0;
@@ -90,7 +90,7 @@ private enum TexasHoldEmUI.PlayerChipState // TypeDefIndex: 12661
 
 }
 
-private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 12662
+private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 12672
 {
 	public static readonly TexasHoldEmUI.<>c <>9;
 	public static Predicate<CardGameUI.KeycodeWithAction> <>9__34_0;

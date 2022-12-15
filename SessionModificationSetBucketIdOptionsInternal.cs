@@ -1,4 +1,4 @@
-internal struct SessionModificationSetBucketIdOptionsInternal : ISettable<SessionModificationSetBucketIdOptions>, IDisposable // TypeDefIndex: 8574
+internal struct SessionModificationSetBucketIdOptionsInternal : ISettable<SessionModificationSetBucketIdOptions>, IDisposable // TypeDefIndex: 8576
 {
 	private int m_ApiVersion;
 	private IntPtr m_BucketId;

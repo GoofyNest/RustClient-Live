@@ -1,4 +1,4 @@
-internal class ZlibBaseStream : Stream // TypeDefIndex: 7004
+internal class ZlibBaseStream : Stream // TypeDefIndex: 7006
 {
 	protected internal ZlibCodec _z;
 	protected internal ZlibBaseStream.StreamMode _streamMode;
@@ -78,7 +78,7 @@ internal class ZlibBaseStream : Stream // TypeDefIndex: 7004
 
 }
 
-internal enum ZlibBaseStream.StreamMode // TypeDefIndex: 7005
+internal enum ZlibBaseStream.StreamMode // TypeDefIndex: 7007
 {
 	public int value__;
 	public const ZlibBaseStream.StreamMode Writer = 0;

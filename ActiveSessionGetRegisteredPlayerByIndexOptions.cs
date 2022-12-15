@@ -1,4 +1,4 @@
-public struct ActiveSessionGetRegisteredPlayerByIndexOptions // TypeDefIndex: 8454
+public struct ActiveSessionGetRegisteredPlayerByIndexOptions // TypeDefIndex: 8456
 {
 	[CompilerGeneratedAttribute]
 	private uint <PlayerIndex>k__BackingField;

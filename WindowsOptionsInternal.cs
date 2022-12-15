@@ -1,4 +1,4 @@
-internal struct WindowsOptionsInternal : ISettable<WindowsOptions>, IDisposable // TypeDefIndex: 9885
+internal struct WindowsOptionsInternal : ISettable<WindowsOptions>, IDisposable // TypeDefIndex: 9887
 {
 	private int m_ApiVersion;
 	private IntPtr m_Reserved;

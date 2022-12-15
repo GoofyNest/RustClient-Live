@@ -1,4 +1,4 @@
-public class HttpImage : MonoBehaviour // TypeDefIndex: 7086
+public class HttpImage : MonoBehaviour // TypeDefIndex: 7088
 {
 	public static Dictionary<string, UnityWebRequest> RequestCache;
 	public static Dictionary<string, ValueTuple<Texture2D, Sprite>> TextureCache;
@@ -47,7 +47,7 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7086
 
 }
 
-private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7087
+private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7089
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -77,7 +77,7 @@ private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumer
 
 }
 
-private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7088
+private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7090
 {
 	private int <>1__state;
 	private object <>2__current;

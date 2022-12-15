@@ -1,4 +1,4 @@
-public enum Keyboard.RZKEY // TypeDefIndex: 7667
+public enum Keyboard.RZKEY // TypeDefIndex: 7669
 {
 
 public enum Keyboard.RZKEY
@@ -130,14 +130,14 @@ public enum Keyboard.RZKEY
 
 }
 
-public enum Keyboard.RZLED // TypeDefIndex: 7668
+public enum Keyboard.RZLED // TypeDefIndex: 7670
 {
 	public int value__;
 	public const Keyboard.RZLED RZLED_LOGO = 20;
 
 }
 
-public enum Keyboard.EFFECT_TYPE // TypeDefIndex: 7669
+public enum Keyboard.EFFECT_TYPE // TypeDefIndex: 7671
 {
 	public int value__;
 	public const Keyboard.EFFECT_TYPE CHROMA_NONE = 0;
@@ -154,7 +154,7 @@ public enum Keyboard.EFFECT_TYPE // TypeDefIndex: 7669
 
 }
 
-public struct Keyboard.STATIC_EFFECT_TYPE // TypeDefIndex: 7670
+public struct Keyboard.STATIC_EFFECT_TYPE // TypeDefIndex: 7672
 {
 	public int Color;
 

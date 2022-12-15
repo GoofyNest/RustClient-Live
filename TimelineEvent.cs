@@ -1,4 +1,4 @@
-internal struct TimelineEvent // TypeDefIndex: 7727
+internal struct TimelineEvent // TypeDefIndex: 7729
 {
 	[CompilerGeneratedAttribute]
 	private string <Event>k__BackingField;

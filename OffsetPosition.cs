@@ -1,4 +1,4 @@
-public enum OffsetPosition // TypeDefIndex: 7223
+public enum OffsetPosition // TypeDefIndex: 7225
 {
 	public int value__;
 	public const OffsetPosition Start = 0;

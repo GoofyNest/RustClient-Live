@@ -1,4 +1,4 @@
-public sealed class PresenceInterface : Handle // TypeDefIndex: 8845
+public sealed class PresenceInterface : Handle // TypeDefIndex: 8847
 {
 	public const int AddnotifyjoingameacceptedApiLatest = 2;
 	public const int AddnotifyonpresencechangedApiLatest = 1;

@@ -1,4 +1,4 @@
-internal struct GetOfferItemCountOptionsInternal : ISettable<GetOfferItemCountOptions>, IDisposable // TypeDefIndex: 9476
+internal struct GetOfferItemCountOptionsInternal : ISettable<GetOfferItemCountOptions>, IDisposable // TypeDefIndex: 9478
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

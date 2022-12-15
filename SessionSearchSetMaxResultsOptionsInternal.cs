@@ -1,4 +1,4 @@
-internal struct SessionSearchSetMaxResultsOptionsInternal : ISettable<SessionSearchSetMaxResultsOptions>, IDisposable // TypeDefIndex: 8599
+internal struct SessionSearchSetMaxResultsOptionsInternal : ISettable<SessionSearchSetMaxResultsOptions>, IDisposable // TypeDefIndex: 8601
 {
 	private int m_ApiVersion;
 	private uint m_MaxSearchResults;

@@ -1,4 +1,4 @@
-internal struct UnlockAchievementsOptionsInternal : ISettable<UnlockAchievementsOptions>, IDisposable // TypeDefIndex: 9952
+internal struct UnlockAchievementsOptionsInternal : ISettable<UnlockAchievementsOptions>, IDisposable // TypeDefIndex: 9954
 {
 	private int m_ApiVersion;
 	private IntPtr m_UserId;

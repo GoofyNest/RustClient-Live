@@ -1,4 +1,4 @@
-public struct AuthExpirationCallbackInfo : ICallbackInfo // TypeDefIndex: 9554
+public struct AuthExpirationCallbackInfo : ICallbackInfo // TypeDefIndex: 9556
 {
 	[CompilerGeneratedAttribute]
 	private object <ClientData>k__BackingField;

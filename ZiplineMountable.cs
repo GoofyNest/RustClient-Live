@@ -59,7 +59,7 @@ public class ZiplineMountable : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class ZiplineMountable : BaseMountable // TypeDefIndex: 10397
+public class ZiplineMountable : BaseMountable // TypeDefIndex: 10399
 {
 	public float MoveSpeed;
 	public float ForwardAdditive;
@@ -84,7 +84,7 @@ public class ZiplineMountable : BaseMountable // TypeDefIndex: 10397
 
 	private Vector3 ProcessBezierMovement(float distanceToTravel) { }
 
-	private Vector3 GetLineEndPoint() { }
+	private Vector3 GetLineEndPoint(bool applyDismountOffset = False) { }
 
 	private Vector3 GetNextLinePoint(Transform forTransform) { }
 

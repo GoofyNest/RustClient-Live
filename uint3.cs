@@ -1,4 +1,4 @@
-public struct uint3 : IEquatable<uint3>, IFormattable // TypeDefIndex: 7158
+public struct uint3 : IEquatable<uint3>, IFormattable // TypeDefIndex: 7160
 {
 
 [DebuggerTypeProxyAttribute]

@@ -1,4 +1,4 @@
-public struct Capsule // TypeDefIndex: 6598
+public struct Capsule // TypeDefIndex: 6600
 {
 	public Vector3 position;
 	public float radius;

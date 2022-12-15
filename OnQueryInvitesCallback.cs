@@ -1,4 +1,4 @@
-public sealed class OnQueryInvitesCallback : MulticastDelegate // TypeDefIndex: 8512
+public sealed class OnQueryInvitesCallback : MulticastDelegate // TypeDefIndex: 8514
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ public sealed class OnQueryInvitesCallback : MulticastDelegate // TypeDefIndex: 
 
 }
 
-public sealed class OnQueryInvitesCallback : MulticastDelegate // TypeDefIndex: 9240
+public sealed class OnQueryInvitesCallback : MulticastDelegate // TypeDefIndex: 9242
 {
 
 	public void .ctor(object object, IntPtr method) { }

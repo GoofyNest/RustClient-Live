@@ -1,4 +1,4 @@
-public class ERPrefab : MonoBehaviour // TypeDefIndex: 7302
+public class ERPrefab : MonoBehaviour // TypeDefIndex: 7304
 {
 	public bool isRoadType;
 	public bool isSidewalk;

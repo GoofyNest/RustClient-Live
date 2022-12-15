@@ -1,4 +1,4 @@
-public struct Vec3f // TypeDefIndex: 9807
+public struct Vec3f // TypeDefIndex: 9809
 {
 	[CompilerGeneratedAttribute]
 	private float <x>k__BackingField;

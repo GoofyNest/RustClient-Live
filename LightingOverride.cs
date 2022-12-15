@@ -1,4 +1,4 @@
-public class LightingOverride : MonoBehaviour // TypeDefIndex: 6646
+public class LightingOverride : MonoBehaviour // TypeDefIndex: 6648
 {
 	public bool overrideAmbientLight;
 	public AmbientMode ambientMode;

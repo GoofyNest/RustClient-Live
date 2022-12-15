@@ -1,4 +1,4 @@
-internal sealed class OnHideFriendsCallbackInternal : MulticastDelegate // TypeDefIndex: 8355
+internal sealed class OnHideFriendsCallbackInternal : MulticastDelegate // TypeDefIndex: 8357
 {
 
 	public void .ctor(object object, IntPtr method) { }

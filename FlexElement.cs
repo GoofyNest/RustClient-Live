@@ -1,4 +1,4 @@
-public class FlexElement : UIBehaviour, IFlexNode // TypeDefIndex: 6821
+public class FlexElement : UIBehaviour, IFlexNode // TypeDefIndex: 6823
 {
 	private static readonly List<IFlexNode> SizingChildren;
 	[TooltipAttribute]
@@ -154,7 +154,7 @@ public class FlexElement : UIBehaviour, IFlexNode // TypeDefIndex: 6821
 
 }
 
-private struct FlexElement.ChildSizingParameters // TypeDefIndex: 6822
+private struct FlexElement.ChildSizingParameters // TypeDefIndex: 6824
 {
 	public float Size;
 	public float MinSize;
@@ -164,7 +164,7 @@ private struct FlexElement.ChildSizingParameters // TypeDefIndex: 6822
 
 }
 
-private struct FlexElement.<>c__DisplayClass33_0 // TypeDefIndex: 6823
+private struct FlexElement.<>c__DisplayClass33_0 // TypeDefIndex: 6825
 {
 	public float growthAllowance;
 	public float shrinkAllowance;
@@ -174,20 +174,20 @@ private struct FlexElement.<>c__DisplayClass33_0 // TypeDefIndex: 6823
 
 }
 
-private struct FlexElement.<>c__DisplayClass33_1 // TypeDefIndex: 6824
+private struct FlexElement.<>c__DisplayClass33_1 // TypeDefIndex: 6826
 {
 	public int growSum;
 	public int shrinkSum;
 
 }
 
-private struct FlexElement.<>c__DisplayClass33_2 // TypeDefIndex: 6825
+private struct FlexElement.<>c__DisplayClass33_2 // TypeDefIndex: 6827
 {
 	public IFlexNode child;
 
 }
 
-private sealed class FlexElement.<>c // TypeDefIndex: 6826
+private sealed class FlexElement.<>c // TypeDefIndex: 6828
 {
 	public static readonly FlexElement.<>c <>9;
 	public static Predicate<IFlexNode> <>9__33_0;
@@ -201,7 +201,7 @@ private sealed class FlexElement.<>c // TypeDefIndex: 6826
 
 }
 
-private struct FlexElement.<>c__DisplayClass35_0 // TypeDefIndex: 6827
+private struct FlexElement.<>c__DisplayClass35_0 // TypeDefIndex: 6829
 {
 	public FlexElement <>4__this;
 	public float innerSize;

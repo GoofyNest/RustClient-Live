@@ -1,4 +1,4 @@
-public sealed class HistogramMonitor : Monitor // TypeDefIndex: 13622
+public sealed class HistogramMonitor : Monitor // TypeDefIndex: 13632
 {
 	public int width;
 	public int height;
@@ -21,7 +21,7 @@ public sealed class HistogramMonitor : Monitor // TypeDefIndex: 13622
 
 }
 
-public enum HistogramMonitor.Channel // TypeDefIndex: 13623
+public enum HistogramMonitor.Channel // TypeDefIndex: 13633
 {
 	public int value__;
 	public const HistogramMonitor.Channel Red = 0;

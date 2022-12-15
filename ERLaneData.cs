@@ -1,4 +1,4 @@
-public class ERLaneData // TypeDefIndex: 7212
+public class ERLaneData // TypeDefIndex: 7214
 {
 	public Vector3[] points;
 	public List<ERLaneConnector> connectors;

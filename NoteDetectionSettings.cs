@@ -1,4 +1,4 @@
-public sealed class NoteDetectionSettings // TypeDefIndex: 7455
+public sealed class NoteDetectionSettings // TypeDefIndex: 7457
 {
 	private NoteStartDetectionPolicy _noteStartDetectionPolicy;
 	private NoteSearchContext _noteSearchContext;

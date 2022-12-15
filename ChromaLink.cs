@@ -1,4 +1,4 @@
-public enum ChromaLink.EFFECT_TYPE // TypeDefIndex: 7685
+public enum ChromaLink.EFFECT_TYPE // TypeDefIndex: 7687
 {
 
 public enum ChromaLink.EFFECT_TYPE
@@ -10,7 +10,7 @@ public enum ChromaLink.EFFECT_TYPE
 
 }
 
-public struct ChromaLink.STATIC_EFFECT_TYPE // TypeDefIndex: 7686
+public struct ChromaLink.STATIC_EFFECT_TYPE // TypeDefIndex: 7688
 {
 	public int Color;
 

@@ -1,4 +1,4 @@
-public class BlackjackUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12646
+public class BlackjackUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12656
 {
 	[SerializeField]
 	private Image[] playerCardImages;
@@ -85,7 +85,7 @@ public class BlackjackUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIn
 
 }
 
-private sealed class BlackjackUI.<>c // TypeDefIndex: 12647
+private sealed class BlackjackUI.<>c // TypeDefIndex: 12657
 {
 	public static readonly BlackjackUI.<>c <>9;
 	public static Predicate<CardGameUI.KeycodeWithAction> <>9__33_0;

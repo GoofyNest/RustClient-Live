@@ -1,4 +1,4 @@
-internal struct GetTransactionCountOptionsInternal : ISettable<GetTransactionCountOptions>, IDisposable // TypeDefIndex: 9478
+internal struct GetTransactionCountOptionsInternal : ISettable<GetTransactionCountOptions>, IDisposable // TypeDefIndex: 9480
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

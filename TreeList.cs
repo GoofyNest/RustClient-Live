@@ -1,4 +1,4 @@
-public class TreeList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6509
+public class TreeList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6511
 {
 	public bool ShouldPool;
 	private bool _disposed;

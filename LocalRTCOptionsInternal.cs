@@ -1,4 +1,4 @@
-internal struct LocalRTCOptionsInternal : IGettable<LocalRTCOptions>, ISettable<LocalRTCOptions>, IDisposable // TypeDefIndex: 9209
+internal struct LocalRTCOptionsInternal : IGettable<LocalRTCOptions>, ISettable<LocalRTCOptions>, IDisposable // TypeDefIndex: 9211
 {
 	private int m_ApiVersion;
 	private uint m_Flags;

@@ -1,4 +1,4 @@
-public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12699
+public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12709
 {
 	public GameObject DisplayRoot;
 	public GameObjectRef GenericStatRow;
@@ -42,7 +42,7 @@ public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 12699
 
 }
 
-public struct ExpandedLifeStats.GenericStatDisplay // TypeDefIndex: 12700
+public struct ExpandedLifeStats.GenericStatDisplay // TypeDefIndex: 12710
 {
 	public string statKey;
 	public Sprite statSprite;
@@ -50,7 +50,7 @@ public struct ExpandedLifeStats.GenericStatDisplay // TypeDefIndex: 12700
 
 }
 
-private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 12701
+private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 12711
 {
 	public static readonly ExpandedLifeStats.<>c <>9;
 	public static Comparison<PlayerLifeStory.WeaponStats> <>9__21_0;
@@ -64,7 +64,7 @@ private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 12701
 
 }
 
-private sealed class ExpandedLifeStats.<WaitAndRelayout>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12702
+private sealed class ExpandedLifeStats.<WaitAndRelayout>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12712
 {
 	private int <>1__state;
 	private object <>2__current;
@@ -93,7 +93,7 @@ private sealed class ExpandedLifeStats.<WaitAndRelayout>d__22 : IEnumerator<obje
 
 }
 
-private sealed class ExpandedLifeStats.<>c__DisplayClass23_0 // TypeDefIndex: 12703
+private sealed class ExpandedLifeStats.<>c__DisplayClass23_0 // TypeDefIndex: 12713
 {
 	public ExpandedLifeStats.GenericStatDisplay genericStatDisplay;
 

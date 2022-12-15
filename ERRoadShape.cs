@@ -1,4 +1,4 @@
-public struct ERRoadShape // TypeDefIndex: 7218
+public struct ERRoadShape // TypeDefIndex: 7220
 {
 	public List<Vector2> nodes;
 	public List<bool> hardEdge;

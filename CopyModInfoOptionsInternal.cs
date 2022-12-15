@@ -1,4 +1,4 @@
-internal struct CopyModInfoOptionsInternal : ISettable<CopyModInfoOptions>, IDisposable // TypeDefIndex: 9012
+internal struct CopyModInfoOptionsInternal : ISettable<CopyModInfoOptions>, IDisposable // TypeDefIndex: 9014
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

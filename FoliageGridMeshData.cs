@@ -1,4 +1,4 @@
-public class FoliageGridMeshData // TypeDefIndex: 13177
+public class FoliageGridMeshData // TypeDefIndex: 13187
 {
 	public List<FoliageGridMeshData.FoliageVertex> vertices;
 	public List<int> triangles;
@@ -19,7 +19,7 @@ public class FoliageGridMeshData // TypeDefIndex: 13177
 
 }
 
-public struct FoliageGridMeshData.FoliageVertex // TypeDefIndex: 13178
+public struct FoliageGridMeshData.FoliageVertex // TypeDefIndex: 13188
 {
 	public Vector3 position;
 	public Vector3 normal;

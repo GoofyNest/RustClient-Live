@@ -1,4 +1,4 @@
-public sealed class OnCustomInviteReceivedCallback : MulticastDelegate // TypeDefIndex: 9536
+public sealed class OnCustomInviteReceivedCallback : MulticastDelegate // TypeDefIndex: 9538
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public static class TrackChunkUtilities // TypeDefIndex: 7635
+public static class TrackChunkUtilities // TypeDefIndex: 7637
 {
 
 	[ExtensionAttribute]

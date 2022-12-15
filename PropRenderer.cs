@@ -1,4 +1,4 @@
-public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 6635
+public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 6637
 {
 	public bool HideLowLods;
 	public bool HideUnskinnable;
@@ -39,7 +39,7 @@ public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 663
 
 }
 
-public sealed class PropRenderer.LightIntensityScale : MulticastDelegate // TypeDefIndex: 6636
+public sealed class PropRenderer.LightIntensityScale : MulticastDelegate // TypeDefIndex: 6638
 {
 
 	public void .ctor(object object, IntPtr method) { }

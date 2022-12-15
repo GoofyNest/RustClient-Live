@@ -1,4 +1,4 @@
-public class PoweredWaterPurifier : WaterPurifier // TypeDefIndex: 11257
+public class PoweredWaterPurifier : WaterPurifier // TypeDefIndex: 11266
 {
 	public float ConvertInterval;
 	public int PowerDrain;

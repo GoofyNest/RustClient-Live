@@ -1,4 +1,4 @@
-internal struct DeleteFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<DeleteFileCallbackInfo>, ISettable<DeleteFileCallbackInfo>, IDisposable // TypeDefIndex: 8879
+internal struct DeleteFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<DeleteFileCallbackInfo>, ISettable<DeleteFileCallbackInfo>, IDisposable // TypeDefIndex: 8881
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

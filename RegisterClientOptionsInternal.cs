@@ -1,4 +1,4 @@
-internal struct RegisterClientOptionsInternal : ISettable<RegisterClientOptions>, IDisposable // TypeDefIndex: 9744
+internal struct RegisterClientOptionsInternal : ISettable<RegisterClientOptions>, IDisposable // TypeDefIndex: 9746
 {
 	private int m_ApiVersion;
 	private IntPtr m_ClientHandle;

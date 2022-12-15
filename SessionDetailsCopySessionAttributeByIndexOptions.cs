@@ -1,4 +1,4 @@
-public struct SessionDetailsCopySessionAttributeByIndexOptions // TypeDefIndex: 8554
+public struct SessionDetailsCopySessionAttributeByIndexOptions // TypeDefIndex: 8556
 {
 	[CompilerGeneratedAttribute]
 	private uint <AttrIndex>k__BackingField;

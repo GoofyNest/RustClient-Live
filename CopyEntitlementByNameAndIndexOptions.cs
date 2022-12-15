@@ -1,4 +1,4 @@
-public struct CopyEntitlementByNameAndIndexOptions // TypeDefIndex: 9435
+public struct CopyEntitlementByNameAndIndexOptions // TypeDefIndex: 9437
 {
 	[CompilerGeneratedAttribute]
 	private EpicAccountId <LocalUserId>k__BackingField;

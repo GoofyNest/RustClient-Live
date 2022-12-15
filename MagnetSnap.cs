@@ -1,4 +1,4 @@
-public class MagnetSnap // TypeDefIndex: 11479
+public class MagnetSnap // TypeDefIndex: 11488
 {
 	private Transform snapLocation;
 	private Vector3 prevSnapLocation;

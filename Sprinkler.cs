@@ -1,4 +1,4 @@
-public class Sprinkler : IOEntity // TypeDefIndex: 10443
+public class Sprinkler : IOEntity // TypeDefIndex: 10445
 {
 	public float SplashFrequency;
 	public Transform Eyes;

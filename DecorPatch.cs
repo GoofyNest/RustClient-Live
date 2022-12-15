@@ -1,4 +1,4 @@
-public class DecorPatch // TypeDefIndex: 12091
+public class DecorPatch // TypeDefIndex: 12101
 {
 	private bool initialized;
 	private float LOD;

@@ -1,4 +1,4 @@
-public enum AuthTokenType // TypeDefIndex: 9653
+public enum AuthTokenType // TypeDefIndex: 9655
 {
 	public int value__;
 	public const AuthTokenType Client = 0;

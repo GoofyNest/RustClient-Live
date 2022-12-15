@@ -1,4 +1,4 @@
-public class RustWrapper : RustControl // TypeDefIndex: 7079
+public class RustWrapper : RustControl // TypeDefIndex: 7081
 {
 	public RustText Text;
 	public RectTransform Canvas;

@@ -1,4 +1,4 @@
-public sealed class Bitstream // TypeDefIndex: 7400
+public sealed class Bitstream // TypeDefIndex: 7402
 {
 	private const int BUFFER_INT_SIZE = 433;
 	internal const sbyte INITIAL_SYNC = 0;

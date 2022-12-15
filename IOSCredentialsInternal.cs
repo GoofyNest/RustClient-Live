@@ -1,4 +1,4 @@
-internal struct IOSCredentialsInternal : IGettable<IOSCredentials>, ISettable<IOSCredentials>, IDisposable // TypeDefIndex: 9715
+internal struct IOSCredentialsInternal : IGettable<IOSCredentials>, ISettable<IOSCredentials>, IDisposable // TypeDefIndex: 9717
 {
 	private int m_ApiVersion;
 	private IntPtr m_Id;

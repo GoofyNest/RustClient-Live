@@ -1,4 +1,4 @@
-public struct PageResult // TypeDefIndex: 8293
+public struct PageResult // TypeDefIndex: 8295
 {
 	[CompilerGeneratedAttribute]
 	private int <StartIndex>k__BackingField;

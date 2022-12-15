@@ -1,4 +1,4 @@
-public enum VignetteMode // TypeDefIndex: 13618
+public enum VignetteMode // TypeDefIndex: 13628
 {
 	public int value__;
 	public const VignetteMode Classic = 0;

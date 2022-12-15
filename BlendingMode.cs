@@ -1,4 +1,4 @@
-public enum BlendingMode // TypeDefIndex: 13348
+public enum BlendingMode // TypeDefIndex: 13358
 {
 	public int value__;
 	public const BlendingMode Additive = 0;

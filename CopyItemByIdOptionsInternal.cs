@@ -1,4 +1,4 @@
-internal struct CopyItemByIdOptionsInternal : ISettable<CopyItemByIdOptions>, IDisposable // TypeDefIndex: 9438
+internal struct CopyItemByIdOptionsInternal : ISettable<CopyItemByIdOptions>, IDisposable // TypeDefIndex: 9440
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

@@ -1,4 +1,4 @@
-public enum StyleGroup // TypeDefIndex: 7073
+public enum StyleGroup // TypeDefIndex: 7075
 {
 	public int value__;
 	public const StyleGroup Normal = 0;

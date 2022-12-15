@@ -1,4 +1,4 @@
-public static class LengthedObjectUtilities // TypeDefIndex: 7453
+public static class LengthedObjectUtilities // TypeDefIndex: 7455
 {
 
 	[ExtensionAttribute]

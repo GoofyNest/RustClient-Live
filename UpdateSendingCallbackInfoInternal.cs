@@ -1,4 +1,4 @@
-internal struct UpdateSendingCallbackInfoInternal : ICallbackInfoInternal, IGettable<UpdateSendingCallbackInfo>, ISettable<UpdateSendingCallbackInfo>, IDisposable // TypeDefIndex: 8729
+internal struct UpdateSendingCallbackInfoInternal : ICallbackInfoInternal, IGettable<UpdateSendingCallbackInfo>, ISettable<UpdateSendingCallbackInfo>, IDisposable // TypeDefIndex: 8731
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

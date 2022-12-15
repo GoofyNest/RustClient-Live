@@ -1,4 +1,4 @@
-internal struct CustomInviteRejectedCallbackInfoInternal : ICallbackInfoInternal, IGettable<CustomInviteRejectedCallbackInfo>, ISettable<CustomInviteRejectedCallbackInfo>, IDisposable // TypeDefIndex: 9528
+internal struct CustomInviteRejectedCallbackInfoInternal : ICallbackInfoInternal, IGettable<CustomInviteRejectedCallbackInfo>, ISettable<CustomInviteRejectedCallbackInfo>, IDisposable // TypeDefIndex: 9530
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_TargetUserId;

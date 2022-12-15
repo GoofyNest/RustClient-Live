@@ -1,4 +1,4 @@
-public class SignPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 10544
+public class SignPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 10546
 {
 	public RawImage Image;
 	public RectTransform ImageContainer;

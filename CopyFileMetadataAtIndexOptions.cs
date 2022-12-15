@@ -1,4 +1,4 @@
-public struct CopyFileMetadataAtIndexOptions // TypeDefIndex: 8385
+public struct CopyFileMetadataAtIndexOptions // TypeDefIndex: 8387
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;
@@ -23,7 +23,7 @@ public struct CopyFileMetadataAtIndexOptions // TypeDefIndex: 8385
 
 }
 
-public struct CopyFileMetadataAtIndexOptions // TypeDefIndex: 8870
+public struct CopyFileMetadataAtIndexOptions // TypeDefIndex: 8872
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

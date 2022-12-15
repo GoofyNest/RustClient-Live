@@ -1,4 +1,4 @@
-public class ERDecal : ScriptableObject // TypeDefIndex: 7227
+public class ERDecal : ScriptableObject // TypeDefIndex: 7229
 {
 	public int id;
 	public string name;

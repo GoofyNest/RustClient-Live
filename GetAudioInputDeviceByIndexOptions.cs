@@ -1,4 +1,4 @@
-public struct GetAudioInputDeviceByIndexOptions // TypeDefIndex: 8670
+public struct GetAudioInputDeviceByIndexOptions // TypeDefIndex: 8672
 {
 	[CompilerGeneratedAttribute]
 	private uint <DeviceInfoIndex>k__BackingField;

@@ -1,4 +1,4 @@
-internal struct QueryFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryFileCallbackInfo>, ISettable<QueryFileCallbackInfo>, IDisposable // TypeDefIndex: 8412
+internal struct QueryFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryFileCallbackInfo>, ISettable<QueryFileCallbackInfo>, IDisposable // TypeDefIndex: 8414
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;
@@ -34,7 +34,7 @@ internal struct QueryFileCallbackInfoInternal : ICallbackInfoInternal, IGettable
 
 }
 
-internal struct QueryFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryFileCallbackInfo>, ISettable<QueryFileCallbackInfo>, IDisposable // TypeDefIndex: 8915
+internal struct QueryFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryFileCallbackInfo>, ISettable<QueryFileCallbackInfo>, IDisposable // TypeDefIndex: 8917
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

@@ -1,4 +1,4 @@
-public class HorseRagdoll : AnimalRagdoll // TypeDefIndex: 10660
+public class HorseRagdoll : AnimalRagdoll // TypeDefIndex: 10663
 {
 	public GameObject mane;
 	public GameObject woodArmor;

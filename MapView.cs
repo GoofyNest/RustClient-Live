@@ -1,4 +1,4 @@
-public class MapView : FacepunchBehaviour // TypeDefIndex: 12731
+public class MapView : FacepunchBehaviour // TypeDefIndex: 12741
 {
 	public RawImage mapImage;
 	public Image cameraPositon;
@@ -31,6 +31,7 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 12731
 	public RustImageButton OverworldButton;
 	public RustImageButton TrainButton;
 	public RustImageButton[] UnderwaterButtons;
+	public RustImageButton DungeonButton;
 	public static MapView ActiveView;
 	[CompilerGeneratedAttribute]
 	private bool <followingPlayer>k__BackingField;
@@ -122,20 +123,22 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 12731
 
 	public void UpdateLayerButtons(Nullable<MapLayer> currentLayer) { }
 
+	private static bool IsInDungeon(out ProceduralDynamicDungeon dungeon) { }
+
 	public void .ctor() { }
 
 	private static void .cctor() { }
 
 }
 
-private struct MapView.SleepingBagCluster // TypeDefIndex: 12732
+private struct MapView.SleepingBagCluster // TypeDefIndex: 12742
 {
 	public List<RespawnInformation.SpawnOptions> clusterMarkers;
 	public Vector3 centre;
 
 }
 
-private struct MapView.MapMarkerCluster // TypeDefIndex: 12733
+private struct MapView.MapMarkerCluster // TypeDefIndex: 12743
 {
 	public List<MapMarker> markers;
 	public Vector3 centre;

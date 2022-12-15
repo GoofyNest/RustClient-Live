@@ -25,15 +25,15 @@ public class PhotoCapture : IDisposable // TypeDefIndex: 3610
 
 	public void Dispose() { }
 
-	[NativeNameAttribute]
 	[NativeConditionalAttribute]
+	[NativeNameAttribute]
 	private void Dispose_Internal() { }
 
 	protected override void Finalize() { }
 
 	[NativeConditionalAttribute]
-	[NativeNameAttribute]
 	[ThreadAndSerializationSafeAttribute]
+	[NativeNameAttribute]
 	private void DisposeThreaded_Internal() { }
 
 	private static void .cctor() { }

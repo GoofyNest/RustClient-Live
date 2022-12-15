@@ -1,4 +1,4 @@
-public struct Extents // TypeDefIndex: 6803
+public struct Extents // TypeDefIndex: 6805
 {
 	public Vector2 min;
 	public Vector2 max;

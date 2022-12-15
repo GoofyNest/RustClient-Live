@@ -1,4 +1,4 @@
-public class ProceduralLift : BaseEntity // TypeDefIndex: 10153
+public class ProceduralLift : BaseEntity // TypeDefIndex: 10155
 {
 	private Option __menuOption_Menu_UseLift;
 	public float movementSpeed;

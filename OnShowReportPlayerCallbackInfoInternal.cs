@@ -1,4 +1,4 @@
-internal struct OnShowReportPlayerCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnShowReportPlayerCallbackInfo>, ISettable<OnShowReportPlayerCallbackInfo>, IDisposable // TypeDefIndex: 8365
+internal struct OnShowReportPlayerCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnShowReportPlayerCallbackInfo>, ISettable<OnShowReportPlayerCallbackInfo>, IDisposable // TypeDefIndex: 8367
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

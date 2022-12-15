@@ -1,4 +1,4 @@
-internal struct PauseSocialOverlayOptionsInternal : ISettable<PauseSocialOverlayOptions>, IDisposable // TypeDefIndex: 8367
+internal struct PauseSocialOverlayOptionsInternal : ISettable<PauseSocialOverlayOptions>, IDisposable // TypeDefIndex: 8369
 {
 	private int m_ApiVersion;
 	private int m_IsPaused;

@@ -1,4 +1,4 @@
-public sealed class AntiCheatServerInterface : Handle // TypeDefIndex: 9726
+public sealed class AntiCheatServerInterface : Handle // TypeDefIndex: 9728
 {
 	public const int AddnotifyclientactionrequiredApiLatest = 1;
 	public const int AddnotifyclientauthstatuschangedApiLatest = 1;

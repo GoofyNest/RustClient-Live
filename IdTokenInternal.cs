@@ -1,4 +1,4 @@
-internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9590
+internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9592
 {
 	private int m_ApiVersion;
 	private IntPtr m_ProductUserId;
@@ -26,7 +26,7 @@ internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDispo
 
 }
 
-internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9665
+internal struct IdTokenInternal : IGettable<IdToken>, ISettable<IdToken>, IDisposable // TypeDefIndex: 9667
 {
 	private int m_ApiVersion;
 	private IntPtr m_AccountId;

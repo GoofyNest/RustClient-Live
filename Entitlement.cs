@@ -1,4 +1,4 @@
-public struct Entitlement // TypeDefIndex: 9459
+public struct Entitlement // TypeDefIndex: 9461
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <EntitlementName>k__BackingField;

@@ -1,4 +1,4 @@
-public struct MaterialReference // TypeDefIndex: 6684
+public struct MaterialReference // TypeDefIndex: 6686
 {
 	public int index;
 	public TMP_FontAsset fontAsset;

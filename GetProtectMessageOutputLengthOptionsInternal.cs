@@ -1,4 +1,4 @@
-internal struct GetProtectMessageOutputLengthOptionsInternal : ISettable<GetProtectMessageOutputLengthOptions>, IDisposable // TypeDefIndex: 9732
+internal struct GetProtectMessageOutputLengthOptionsInternal : ISettable<GetProtectMessageOutputLengthOptions>, IDisposable // TypeDefIndex: 9734
 {
 	private int m_ApiVersion;
 	private uint m_DataLengthBytes;
@@ -16,7 +16,7 @@ internal struct GetProtectMessageOutputLengthOptionsInternal : ISettable<GetProt
 
 }
 
-internal struct GetProtectMessageOutputLengthOptionsInternal : ISettable<GetProtectMessageOutputLengthOptions>, IDisposable // TypeDefIndex: 9829
+internal struct GetProtectMessageOutputLengthOptionsInternal : ISettable<GetProtectMessageOutputLengthOptions>, IDisposable // TypeDefIndex: 9831
 {
 	private int m_ApiVersion;
 	private uint m_DataLengthBytes;

@@ -1,4 +1,4 @@
-public class Harmony : ConsoleSystem // TypeDefIndex: 13737
+public class Harmony : ConsoleSystem // TypeDefIndex: 13747
 {
 
 	[ServerVar]

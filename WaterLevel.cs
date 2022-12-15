@@ -1,4 +1,4 @@
-public static class WaterLevel // TypeDefIndex: 11806
+public static class WaterLevel // TypeDefIndex: 11815
 {
 
 	public static float Factor(Vector3 start, Vector3 end, float radius, BaseEntity forEntity) { }
@@ -27,7 +27,7 @@ public static class WaterLevel // TypeDefIndex: 11806
 
 }
 
-public struct WaterLevel.WaterInfo // TypeDefIndex: 11807
+public struct WaterLevel.WaterInfo // TypeDefIndex: 11816
 {
 	public bool isValid;
 	public float currentDepth;

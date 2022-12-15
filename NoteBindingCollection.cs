@@ -1,4 +1,4 @@
-public class NoteBindingCollection : ScriptableObject // TypeDefIndex: 11303
+public class NoteBindingCollection : ScriptableObject // TypeDefIndex: 11312
 {
 	public NoteBindingCollection.NoteData[] BaseBindings;
 	public float MinimumNoteTime;
@@ -43,7 +43,7 @@ public class NoteBindingCollection : ScriptableObject // TypeDefIndex: 11303
 
 }
 
-public struct NoteBindingCollection.NoteData // TypeDefIndex: 11304
+public struct NoteBindingCollection.NoteData // TypeDefIndex: 11313
 {
 	public SoundDefinition NoteSound;
 	public SoundDefinition NoteStartSound;

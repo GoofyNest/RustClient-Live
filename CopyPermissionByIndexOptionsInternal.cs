@@ -1,4 +1,4 @@
-internal struct CopyPermissionByIndexOptionsInternal : ISettable<CopyPermissionByIndexOptions>, IDisposable // TypeDefIndex: 9327
+internal struct CopyPermissionByIndexOptionsInternal : ISettable<CopyPermissionByIndexOptions>, IDisposable // TypeDefIndex: 9329
 {
 	private int m_ApiVersion;
 	private IntPtr m_LocalUserId;

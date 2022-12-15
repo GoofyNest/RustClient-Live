@@ -1,4 +1,4 @@
-public class TimelineConvarController : PlayableAsset, ITimelineClipAsset // TypeDefIndex: 12546
+public class TimelineConvarController : PlayableAsset, ITimelineClipAsset // TypeDefIndex: 12556
 {
 	public string convarName;
 	public TimelineConvarPlayable template;

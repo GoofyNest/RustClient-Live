@@ -1,4 +1,4 @@
-public enum BlurType // TypeDefIndex: 11994
+public enum BlurType // TypeDefIndex: 12004
 {
 	public int value__;
 	public const BlurType StandardGauss = 0;

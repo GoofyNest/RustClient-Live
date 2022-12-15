@@ -1,4 +1,4 @@
-public struct StatThresholds // TypeDefIndex: 9949
+public struct StatThresholds // TypeDefIndex: 9951
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <Name>k__BackingField;

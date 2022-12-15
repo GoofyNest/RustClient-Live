@@ -1,4 +1,4 @@
-public class PrefabInformation : PrefabAttribute // TypeDefIndex: 11720
+public class PrefabInformation : PrefabAttribute // TypeDefIndex: 11729
 {
 	public ItemDefinition associatedItemDefinition;
 	public Translate.Phrase title;

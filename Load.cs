@@ -1,4 +1,4 @@
-public sealed class Load : AfterDecode // TypeDefIndex: 13384
+public sealed class Load : AfterDecode // TypeDefIndex: 13394
 {
 
 	public void .ctor() { }

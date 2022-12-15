@@ -1,4 +1,4 @@
-public struct UnlinkAccountOptions // TypeDefIndex: 9639
+public struct UnlinkAccountOptions // TypeDefIndex: 9641
 {
 	[CompilerGeneratedAttribute]
 	private ProductUserId <LocalUserId>k__BackingField;

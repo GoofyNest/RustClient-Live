@@ -1,4 +1,4 @@
-internal struct QueryLeaderboardRanksOptionsInternal : ISettable<QueryLeaderboardRanksOptions>, IDisposable // TypeDefIndex: 9319
+internal struct QueryLeaderboardRanksOptionsInternal : ISettable<QueryLeaderboardRanksOptions>, IDisposable // TypeDefIndex: 9321
 {
 	private int m_ApiVersion;
 	private IntPtr m_LeaderboardId;

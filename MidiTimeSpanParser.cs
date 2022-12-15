@@ -1,4 +1,4 @@
-internal static class MidiTimeSpanParser // TypeDefIndex: 7503
+internal static class MidiTimeSpanParser // TypeDefIndex: 7505
 {
 	private static readonly string TimeSpanGroup;
 	private static readonly string[] Patterns;

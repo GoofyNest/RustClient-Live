@@ -294,6 +294,7 @@ public static class Pool // TypeDefIndex: 4841
 	|-Pool.Free<BaseVehicle>
 	|-Pool.Free<BoomBox>
 	|-Pool.Free<BradleyAPC>
+	|-Pool.Free<BrainComponent>
 	|-Pool.Free<BuildingBlock>
 	|-Pool.Free<BuildingPrivilege>
 	|-Pool.Free<CamperModule>
@@ -434,6 +435,7 @@ public static class Pool // TypeDefIndex: 4841
 	|-Pool.Free<PlayerTeam>
 	|-Pool.Free<PlayerUpdateLoot>
 	|-Pool.Free<PrefabData>
+	|-Pool.Free<ProceduralDungeon>
 	|-Pool.Free<ProjectileShoot.Projectile>
 	|-Pool.Free<ProjectileShoot>
 	|-Pool.Free<PuzzleReset>
@@ -613,6 +615,7 @@ public static class Pool // TypeDefIndex: 4841
 	|-Pool.Get<BaseVehicle>
 	|-Pool.Get<BoomBox>
 	|-Pool.Get<BradleyAPC>
+	|-Pool.Get<BrainComponent>
 	|-Pool.Get<BuildingBlock>
 	|-Pool.Get<BuildingPrivilege>
 	|-Pool.Get<CamperModule>
@@ -753,6 +756,7 @@ public static class Pool // TypeDefIndex: 4841
 	|-Pool.Get<PlayerTeam>
 	|-Pool.Get<PlayerUpdateLoot>
 	|-Pool.Get<PrefabData>
+	|-Pool.Get<ProceduralDungeon>
 	|-Pool.Get<ProjectileShoot.Projectile>
 	|-Pool.Get<ProjectileShoot>
 	|-Pool.Get<PuzzleReset>
@@ -1270,7 +1274,7 @@ public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4844
 
 }
 
-public class Pool : ConsoleSystem // TypeDefIndex: 13760
+public class Pool : ConsoleSystem // TypeDefIndex: 13770
 {
 	[ServerVar]
 	[ClientVar]
@@ -1320,7 +1324,7 @@ public class Pool : ConsoleSystem // TypeDefIndex: 13760
 
 }
 
-private sealed class Pool.<>c // TypeDefIndex: 13761
+private sealed class Pool.<>c // TypeDefIndex: 13771
 {
 	public static readonly Pool.<>c <>9;
 	public static Func<KeyValuePair<Type, Pool.ICollection>, long> <>9__4_0;

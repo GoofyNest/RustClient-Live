@@ -1,4 +1,4 @@
-public class NeedsKeyboard : ListComponent<NeedsKeyboard> // TypeDefIndex: 8032
+public class NeedsKeyboard : ListComponent<NeedsKeyboard> // TypeDefIndex: 8034
 {
 	public UnityEvent onNoKeysDown;
 	public bool ShowEscapeUI;
@@ -27,7 +27,7 @@ public class NeedsKeyboard : ListComponent<NeedsKeyboard> // TypeDefIndex: 8032
 
 }
 
-public enum NeedsKeyboard.BypassOption // TypeDefIndex: 8033
+public enum NeedsKeyboard.BypassOption // TypeDefIndex: 8035
 {
 	public int value__;
 	public const NeedsKeyboard.BypassOption Voice = 1;

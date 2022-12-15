@@ -1,4 +1,4 @@
-public class Detonator : HeldEntity, IRFObject // TypeDefIndex: 10289
+public class Detonator : HeldEntity, IRFObject // TypeDefIndex: 10291
 {
 	public int frequency;
 	private float timeSinceDeploy;

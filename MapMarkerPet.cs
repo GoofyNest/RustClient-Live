@@ -1,4 +1,4 @@
-public class MapMarkerPet : MapMarker // TypeDefIndex: 10672
+public class MapMarkerPet : MapMarker // TypeDefIndex: 10677
 {
 	private RectTransform _rectTransform;
 

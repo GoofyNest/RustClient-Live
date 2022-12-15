@@ -72,7 +72,7 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3988
 
 }
 
-public sealed class Transaction : Handle // TypeDefIndex: 9516
+public sealed class Transaction : Handle // TypeDefIndex: 9518
 {
 	public const int TransactionCopyentitlementbyindexApiLatest = 1;
 	public const int TransactionGetentitlementscountApiLatest = 1;

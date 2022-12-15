@@ -1,4 +1,4 @@
-public struct RedeemEntitlementsCallbackInfo : ICallbackInfo // TypeDefIndex: 9512
+public struct RedeemEntitlementsCallbackInfo : ICallbackInfo // TypeDefIndex: 9514
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

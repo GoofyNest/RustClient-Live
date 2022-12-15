@@ -1,4 +1,4 @@
-public class ShopFrontLootPanel : LootPanel // TypeDefIndex: 10399
+public class ShopFrontLootPanel : LootPanel // TypeDefIndex: 10401
 {
 	public Text playerLabelA;
 	public Text playerLabelB;

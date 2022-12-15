@@ -1,4 +1,4 @@
-public enum ClipCaps // TypeDefIndex: 7807
+public enum ClipCaps // TypeDefIndex: 7809
 {
 
 [FlagsAttribute]

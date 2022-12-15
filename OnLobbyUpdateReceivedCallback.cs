@@ -1,4 +1,4 @@
-public sealed class OnLobbyUpdateReceivedCallback : MulticastDelegate // TypeDefIndex: 9236
+public sealed class OnLobbyUpdateReceivedCallback : MulticastDelegate // TypeDefIndex: 9238
 {
 
 	public void .ctor(object object, IntPtr method) { }

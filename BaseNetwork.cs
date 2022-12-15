@@ -61,7 +61,7 @@ public class BaseNetworkable : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public abstract class BaseNetwork // TypeDefIndex: 6855
+public abstract class BaseNetwork // TypeDefIndex: 6857
 {
 	[CompilerGeneratedAttribute]
 	private NetRead <read>k__BackingField;
@@ -103,7 +103,7 @@ public abstract class BaseNetwork // TypeDefIndex: 6855
 
 }
 
-public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6856
+public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6858
 {
 	public int value__;
 	public const BaseNetwork.StatTypeLong BytesSent = 0;
@@ -120,7 +120,7 @@ public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6856
 
 }
 
-public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, IEntity, NetworkHandler // TypeDefIndex: 11216
+public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, IEntity, NetworkHandler // TypeDefIndex: 11225
 {
 	[CompilerGeneratedAttribute]
 	private bool <JustCreated>k__BackingField;
@@ -269,7 +269,7 @@ public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, I
 
 }
 
-public struct BaseNetworkable.SaveInfo // TypeDefIndex: 11217
+public struct BaseNetworkable.SaveInfo // TypeDefIndex: 11226
 {
 	public Entity msg;
 	public bool forDisk;
@@ -280,14 +280,14 @@ public struct BaseNetworkable.SaveInfo // TypeDefIndex: 11217
 
 }
 
-public struct BaseNetworkable.LoadInfo // TypeDefIndex: 11218
+public struct BaseNetworkable.LoadInfo // TypeDefIndex: 11227
 {
 	public Entity msg;
 	public bool fromDisk;
 
 }
 
-public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // TypeDefIndex: 11219
+public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // TypeDefIndex: 11228
 {
 	protected override Manager visibilityManager { get; }
 
@@ -298,7 +298,7 @@ public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // 
 
 }
 
-public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>, IEnumerable // TypeDefIndex: 11220
+public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>, IEnumerable // TypeDefIndex: 11229
 {
 	private ListDictionary<uint, BaseNetworkable> entityList;
 
@@ -334,7 +334,7 @@ public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>
 
 }
 
-public enum BaseNetworkable.DestroyMode // TypeDefIndex: 11221
+public enum BaseNetworkable.DestroyMode // TypeDefIndex: 11230
 {
 	public byte value__;
 	public const BaseNetworkable.DestroyMode None = 0;
@@ -342,7 +342,7 @@ public enum BaseNetworkable.DestroyMode // TypeDefIndex: 11221
 
 }
 
-public static class BaseNetworkableEx // TypeDefIndex: 11222
+public static class BaseNetworkableEx // TypeDefIndex: 11231
 {
 
 	[ExtensionAttribute]

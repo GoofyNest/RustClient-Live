@@ -1,4 +1,4 @@
-public class Barricade : DecayEntity // TypeDefIndex: 11250
+public class Barricade : DecayEntity // TypeDefIndex: 11259
 {
 	public float reflectDamage;
 	public GameObjectRef reflectEffect;

@@ -1,4 +1,4 @@
-public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10035
+public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10037
 {
 	private Option __menuOption_Menu_Open;
 	[HeaderAttribute]
@@ -99,7 +99,7 @@ public abstract class BaseCardGameEntity : BaseVehicle // TypeDefIndex: 10035
 
 }
 
-public class BaseCardGameEntity.PlayerStorageInfo // TypeDefIndex: 10036
+public class BaseCardGameEntity.PlayerStorageInfo // TypeDefIndex: 10038
 {
 	public Transform storagePos;
 
@@ -108,7 +108,7 @@ public class BaseCardGameEntity.PlayerStorageInfo // TypeDefIndex: 10036
 
 }
 
-public enum BaseCardGameEntity.CardGameOption // TypeDefIndex: 10037
+public enum BaseCardGameEntity.CardGameOption // TypeDefIndex: 10039
 {
 	public int value__;
 	public const BaseCardGameEntity.CardGameOption TexasHoldEm = 0;

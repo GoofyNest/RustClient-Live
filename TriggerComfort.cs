@@ -1,4 +1,4 @@
-public class TriggerComfort : TriggerBase // TypeDefIndex: 11772
+public class TriggerComfort : TriggerBase // TypeDefIndex: 11781
 {
 	public float triggerSize;
 	public float baseComfort;

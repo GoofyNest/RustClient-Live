@@ -1,4 +1,4 @@
-public struct OnDisplaySettingsUpdatedCallbackInfo : ICallbackInfo // TypeDefIndex: 8352
+public struct OnDisplaySettingsUpdatedCallbackInfo : ICallbackInfo // TypeDefIndex: 8354
 {
 	[CompilerGeneratedAttribute]
 	private object <ClientData>k__BackingField;

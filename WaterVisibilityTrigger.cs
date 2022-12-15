@@ -1,4 +1,4 @@
-public class WaterVisibilityTrigger : EnvironmentVolumeTrigger // TypeDefIndex: 12393
+public class WaterVisibilityTrigger : EnvironmentVolumeTrigger // TypeDefIndex: 12403
 {
 	public bool togglePhysics;
 	public bool toggleVisuals;

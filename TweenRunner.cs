@@ -60,7 +60,7 @@ private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerat
 
 }
 
-private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6698
+private sealed class TweenRunner.<Start>d__2<T> : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6700
 {
 	private int <>1__state;
 	private object <>2__current;

@@ -1,4 +1,4 @@
-public class TickComponent : MonoBehaviour // TypeDefIndex: 6618
+public class TickComponent : MonoBehaviour // TypeDefIndex: 6620
 {
 	public static TickComponent Instance;
 

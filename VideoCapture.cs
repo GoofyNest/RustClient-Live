@@ -25,8 +25,8 @@ public class VideoCapture : IDisposable // TypeDefIndex: 3619
 
 	public void Dispose() { }
 
-	[NativeConditionalAttribute]
 	[NativeMethodAttribute]
+	[NativeConditionalAttribute]
 	private void Dispose_Internal() { }
 
 	protected override void Finalize() { }

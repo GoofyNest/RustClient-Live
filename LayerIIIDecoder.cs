@@ -1,4 +1,4 @@
-internal sealed class LayerIIIDecoder : IFrameDecoder // TypeDefIndex: 7418
+internal sealed class LayerIIIDecoder : IFrameDecoder // TypeDefIndex: 7420
 {
 	private const int SSLIMIT = 18;
 	private const int SBLIMIT = 32;

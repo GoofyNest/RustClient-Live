@@ -1,4 +1,4 @@
-public class BurstCloth : MonoBehaviour // TypeDefIndex: 7322
+public class BurstCloth : MonoBehaviour // TypeDefIndex: 7324
 {
 	internal const int TickRateMultiplier = 60;
 	internal const int MaximumTickRate = 240;
@@ -86,13 +86,13 @@ public class BurstCloth : MonoBehaviour // TypeDefIndex: 7322
 
 }
 
-private struct BurstCloth.Chain // TypeDefIndex: 7323
+private struct BurstCloth.Chain // TypeDefIndex: 7325
 {
 	public List<Transform> Transforms;
 
 }
 
-private sealed class BurstCloth.<>c // TypeDefIndex: 7324
+private sealed class BurstCloth.<>c // TypeDefIndex: 7326
 {
 	public static readonly BurstCloth.<>c <>9;
 	public static Func<BurstCloth.Chain, int> <>9__42_0;

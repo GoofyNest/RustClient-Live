@@ -1,4 +1,4 @@
-public class WaterRuntime // TypeDefIndex: 12381
+public class WaterRuntime // TypeDefIndex: 12391
 {
 	[CompilerGeneratedAttribute]
 	private WaterCamera <WaterCamera>k__BackingField;

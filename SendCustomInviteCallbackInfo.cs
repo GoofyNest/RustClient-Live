@@ -1,4 +1,4 @@
-public struct SendCustomInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9544
+public struct SendCustomInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9546
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

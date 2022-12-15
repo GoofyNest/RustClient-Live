@@ -1,4 +1,4 @@
-public class BaseGameMode : BaseEntity // TypeDefIndex: 10239
+public class BaseGameMode : BaseEntity // TypeDefIndex: 10241
 {
 	private GameMode gameModeScores;
 	public string[] scoreColumns;
@@ -178,14 +178,14 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10239
 
 }
 
-public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10240
+public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10242
 {
 	public Nullable<float> Scale;
 	public Nullable<int> Amount;
 
 }
 
-public class BaseGameMode.GameModeTeam // TypeDefIndex: 10241
+public class BaseGameMode.GameModeTeam // TypeDefIndex: 10243
 {
 	public string name;
 	public PlayerInventoryProperties[] teamloadouts;

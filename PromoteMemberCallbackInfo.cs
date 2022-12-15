@@ -1,4 +1,4 @@
-public struct PromoteMemberCallbackInfo : ICallbackInfo // TypeDefIndex: 9252
+public struct PromoteMemberCallbackInfo : ICallbackInfo // TypeDefIndex: 9254
 {
 	[CompilerGeneratedAttribute]
 	private Result <ResultCode>k__BackingField;

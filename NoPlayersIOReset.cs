@@ -1,4 +1,4 @@
-public class NoPlayersIOReset : FacepunchBehaviour // TypeDefIndex: 11554
+public class NoPlayersIOReset : FacepunchBehaviour // TypeDefIndex: 11563
 {
 	[SerializeField]
 	private IOEntity[] entitiesToReset;

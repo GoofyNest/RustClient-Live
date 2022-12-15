@@ -1,4 +1,4 @@
-public sealed class ChunkTypesCollection // TypeDefIndex: 7525
+public sealed class ChunkTypesCollection // TypeDefIndex: 7527
 {
 	private readonly Dictionary<string, Type> _types;
 

@@ -1,4 +1,4 @@
-public sealed class Common // TypeDefIndex: 8283
+public sealed class Common // TypeDefIndex: 8285
 {
 	public const ulong InvalidNotificationid = 0;
 	public static readonly Utf8String IptUnknown;

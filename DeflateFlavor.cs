@@ -1,4 +1,4 @@
-internal enum DeflateFlavor // TypeDefIndex: 6981
+internal enum DeflateFlavor // TypeDefIndex: 6983
 {
 	public int value__;
 	public const DeflateFlavor Store = 0;

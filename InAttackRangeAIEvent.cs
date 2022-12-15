@@ -1,4 +1,4 @@
-public class InAttackRangeAIEvent : BaseAIEvent // TypeDefIndex: 11142
+public class InAttackRangeAIEvent : BaseAIEvent // TypeDefIndex: 11150
 {
 
 	public void .ctor() { }

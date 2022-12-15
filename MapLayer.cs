@@ -1,4 +1,4 @@
-public enum MapLayer // TypeDefIndex: 12728
+public enum MapLayer // TypeDefIndex: 12738
 {
 	public int value__;
 	public const MapLayer Overworld = -1;
@@ -11,6 +11,7 @@ public enum MapLayer // TypeDefIndex: 12728
 	public const MapLayer Underwater6 = 6;
 	public const MapLayer Underwater7 = 7;
 	public const MapLayer Underwater8 = 8;
+	public const MapLayer Dungeons = 10;
 
 }
 

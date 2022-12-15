@@ -1,4 +1,4 @@
-public struct LobbySearchSetMaxResultsOptions // TypeDefIndex: 9200
+public struct LobbySearchSetMaxResultsOptions // TypeDefIndex: 9202
 {
 	[CompilerGeneratedAttribute]
 	private uint <MaxResults>k__BackingField;

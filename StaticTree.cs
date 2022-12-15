@@ -1,4 +1,4 @@
-internal sealed class StaticTree // TypeDefIndex: 7001
+internal sealed class StaticTree // TypeDefIndex: 7003
 {
 	internal static readonly short[] lengthAndLiteralsTreeCodes;
 	internal static readonly short[] distTreeCodes;

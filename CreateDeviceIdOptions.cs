@@ -1,4 +1,4 @@
-public struct CreateDeviceIdOptions // TypeDefIndex: 9569
+public struct CreateDeviceIdOptions // TypeDefIndex: 9571
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <DeviceModel>k__BackingField;

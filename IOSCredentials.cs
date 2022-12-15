@@ -1,4 +1,4 @@
-public struct IOSCredentials // TypeDefIndex: 9714
+public struct IOSCredentials // TypeDefIndex: 9716
 {
 	[CompilerGeneratedAttribute]
 	private Utf8String <Id>k__BackingField;

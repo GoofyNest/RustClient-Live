@@ -1,4 +1,4 @@
-public class TerrainMeta : MonoBehaviour // TypeDefIndex: 12183
+public class TerrainMeta : MonoBehaviour // TypeDefIndex: 12193
 {
 	public Terrain terrain;
 	public TerrainConfig config;
@@ -292,7 +292,7 @@ public class TerrainMeta : MonoBehaviour // TypeDefIndex: 12183
 
 }
 
-public enum TerrainMeta.PaintMode // TypeDefIndex: 12184
+public enum TerrainMeta.PaintMode // TypeDefIndex: 12194
 {
 	public int value__;
 	public const TerrainMeta.PaintMode None = 0;

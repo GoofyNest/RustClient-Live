@@ -1,4 +1,4 @@
-public static class Benchmarking // TypeDefIndex: 9977
+public static class Benchmarking // TypeDefIndex: 9979
 {
 	[CompilerGeneratedAttribute]
 	private static bool <IsBenchmarking>k__BackingField;
@@ -40,7 +40,7 @@ public static class Benchmarking // TypeDefIndex: 9977
 
 }
 
-private struct Benchmarking.<RunAsync>d__7 : IAsyncStateMachine // TypeDefIndex: 9978
+private struct Benchmarking.<RunAsync>d__7 : IAsyncStateMachine // TypeDefIndex: 9980
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -60,7 +60,7 @@ private struct Benchmarking.<RunAsync>d__7 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-private struct Benchmarking.<RunSingleSceneAsync>d__8 : IAsyncStateMachine // TypeDefIndex: 9979
+private struct Benchmarking.<RunSingleSceneAsync>d__8 : IAsyncStateMachine // TypeDefIndex: 9981
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -77,7 +77,7 @@ private struct Benchmarking.<RunSingleSceneAsync>d__8 : IAsyncStateMachine // Ty
 
 }
 
-private struct Benchmarking.<RunBenchmarkScene>d__9 : IAsyncStateMachine // TypeDefIndex: 9980
+private struct Benchmarking.<RunBenchmarkScene>d__9 : IAsyncStateMachine // TypeDefIndex: 9982
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -92,7 +92,7 @@ private struct Benchmarking.<RunBenchmarkScene>d__9 : IAsyncStateMachine // Type
 
 }
 
-private struct Benchmarking.<RunBenchmarksInScene>d__10 : IAsyncStateMachine // TypeDefIndex: 9981
+private struct Benchmarking.<RunBenchmarksInScene>d__10 : IAsyncStateMachine // TypeDefIndex: 9983
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -109,7 +109,7 @@ private struct Benchmarking.<RunBenchmarksInScene>d__10 : IAsyncStateMachine // 
 
 }
 
-private struct Benchmarking.<Report>d__11 : IAsyncStateMachine // TypeDefIndex: 9982
+private struct Benchmarking.<Report>d__11 : IAsyncStateMachine // TypeDefIndex: 9984
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;
@@ -123,7 +123,7 @@ private struct Benchmarking.<Report>d__11 : IAsyncStateMachine // TypeDefIndex: 
 
 }
 
-private struct Benchmarking.<RunDemoBasedBenchmark>d__12 : IAsyncStateMachine // TypeDefIndex: 9983
+private struct Benchmarking.<RunDemoBasedBenchmark>d__12 : IAsyncStateMachine // TypeDefIndex: 9985
 {
 	public int <>1__state;
 	public AsyncTaskMethodBuilder <>t__builder;

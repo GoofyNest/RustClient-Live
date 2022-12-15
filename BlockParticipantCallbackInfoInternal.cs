@@ -1,4 +1,4 @@
-internal struct BlockParticipantCallbackInfoInternal : ICallbackInfoInternal, IGettable<BlockParticipantCallbackInfo>, ISettable<BlockParticipantCallbackInfo>, IDisposable // TypeDefIndex: 8766
+internal struct BlockParticipantCallbackInfoInternal : ICallbackInfoInternal, IGettable<BlockParticipantCallbackInfo>, ISettable<BlockParticipantCallbackInfo>, IDisposable // TypeDefIndex: 8768
 {
 	private Result m_ResultCode;
 	private IntPtr m_ClientData;

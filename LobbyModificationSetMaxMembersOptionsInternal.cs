@@ -1,4 +1,4 @@
-internal struct LobbyModificationSetMaxMembersOptionsInternal : ISettable<LobbyModificationSetMaxMembersOptions>, IDisposable // TypeDefIndex: 9181
+internal struct LobbyModificationSetMaxMembersOptionsInternal : ISettable<LobbyModificationSetMaxMembersOptions>, IDisposable // TypeDefIndex: 9183
 {
 	private int m_ApiVersion;
 	private uint m_MaxMembers;

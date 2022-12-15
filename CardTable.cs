@@ -1,4 +1,4 @@
-public class CardTable : BaseCardGameEntity // TypeDefIndex: 10090
+public class CardTable : BaseCardGameEntity // TypeDefIndex: 10092
 {
 	private Option __menuOption_Menu_Play;
 	[HeaderAttribute]
@@ -65,7 +65,7 @@ public class CardTable : BaseCardGameEntity // TypeDefIndex: 10090
 
 }
 
-public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 10091
+public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 10093
 {
 	public int chipValue;
 	public GameObject[] chips;

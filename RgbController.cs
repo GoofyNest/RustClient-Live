@@ -1,4 +1,4 @@
-public class RgbController : IDisposable // TypeDefIndex: 7703
+public class RgbController : IDisposable // TypeDefIndex: 7705
 {
 	private readonly IReadOnlyList<IRgbService> _services;
 	private readonly CancellationTokenSource _cts;
@@ -46,7 +46,7 @@ public class RgbController : IDisposable // TypeDefIndex: 7703
 
 }
 
-private struct RgbController.<Worker>d__14 : IAsyncStateMachine // TypeDefIndex: 7704
+private struct RgbController.<Worker>d__14 : IAsyncStateMachine // TypeDefIndex: 7706
 {
 	public int <>1__state;
 	public AsyncVoidMethodBuilder <>t__builder;
@@ -62,7 +62,7 @@ private struct RgbController.<Worker>d__14 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-private struct RgbController.<StartServices>d__15 : IAsyncStateMachine // TypeDefIndex: 7705
+private struct RgbController.<StartServices>d__15 : IAsyncStateMachine // TypeDefIndex: 7707
 {
 	public int <>1__state;
 	public AsyncValueTaskMethodBuilder <>t__builder;
@@ -79,7 +79,7 @@ private struct RgbController.<StartServices>d__15 : IAsyncStateMachine // TypeDe
 
 }
 
-private struct RgbController.<StopServices>d__16 : IAsyncStateMachine // TypeDefIndex: 7706
+private struct RgbController.<StopServices>d__16 : IAsyncStateMachine // TypeDefIndex: 7708
 {
 	public int <>1__state;
 	public AsyncValueTaskMethodBuilder <>t__builder;
@@ -96,7 +96,7 @@ private struct RgbController.<StopServices>d__16 : IAsyncStateMachine // TypeDef
 
 }
 
-private struct RgbController.<UpdateServices>d__17 : IAsyncStateMachine // TypeDefIndex: 7707
+private struct RgbController.<UpdateServices>d__17 : IAsyncStateMachine // TypeDefIndex: 7709
 {
 	public int <>1__state;
 	public AsyncValueTaskMethodBuilder <>t__builder;

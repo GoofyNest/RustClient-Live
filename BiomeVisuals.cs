@@ -1,4 +1,4 @@
-public class BiomeVisuals : MonoBehaviour // TypeDefIndex: 12110
+public class BiomeVisuals : MonoBehaviour // TypeDefIndex: 12120
 {
 	public GameObject Arid;
 	public GameObject Temperate;

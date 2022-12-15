@@ -1,4 +1,4 @@
-public class SlotMachinePayoutSettings : ScriptableObject // TypeDefIndex: 10477
+public class SlotMachinePayoutSettings : ScriptableObject // TypeDefIndex: 10479
 {
 	public ItemAmount SpinCost;
 	public SlotMachinePayoutSettings.PayoutInfo[] Payouts;
@@ -12,7 +12,7 @@ public class SlotMachinePayoutSettings : ScriptableObject // TypeDefIndex: 10477
 
 }
 
-public struct SlotMachinePayoutSettings.PayoutInfo // TypeDefIndex: 10478
+public struct SlotMachinePayoutSettings.PayoutInfo // TypeDefIndex: 10480
 {
 	public ItemAmount Item;
 	[RangeAttribute]
@@ -25,7 +25,7 @@ public struct SlotMachinePayoutSettings.PayoutInfo // TypeDefIndex: 10478
 
 }
 
-public struct SlotMachinePayoutSettings.IndividualPayouts // TypeDefIndex: 10479
+public struct SlotMachinePayoutSettings.IndividualPayouts // TypeDefIndex: 10481
 {
 	public ItemAmount Item;
 	[RangeAttribute]

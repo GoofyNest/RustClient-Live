@@ -1,4 +1,4 @@
-internal struct AuthExpirationCallbackInfoInternal : ICallbackInfoInternal, IGettable<AuthExpirationCallbackInfo>, ISettable<AuthExpirationCallbackInfo>, IDisposable // TypeDefIndex: 9555
+internal struct AuthExpirationCallbackInfoInternal : ICallbackInfoInternal, IGettable<AuthExpirationCallbackInfo>, ISettable<AuthExpirationCallbackInfo>, IDisposable // TypeDefIndex: 9557
 {
 	private IntPtr m_ClientData;
 	private IntPtr m_LocalUserId;

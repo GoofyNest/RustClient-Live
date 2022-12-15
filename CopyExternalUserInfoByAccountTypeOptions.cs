@@ -1,4 +1,4 @@
-public struct CopyExternalUserInfoByAccountTypeOptions // TypeDefIndex: 8301
+public struct CopyExternalUserInfoByAccountTypeOptions // TypeDefIndex: 8303
 {
 	[CompilerGeneratedAttribute]
 	private EpicAccountId <LocalUserId>k__BackingField;

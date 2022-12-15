@@ -1,4 +1,4 @@
-public sealed class OnReadFileCompleteCallback : MulticastDelegate // TypeDefIndex: 8407
+public sealed class OnReadFileCompleteCallback : MulticastDelegate // TypeDefIndex: 8409
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ public sealed class OnReadFileCompleteCallback : MulticastDelegate // TypeDefInd
 
 }
 
-public sealed class OnReadFileCompleteCallback : MulticastDelegate // TypeDefIndex: 8904
+public sealed class OnReadFileCompleteCallback : MulticastDelegate // TypeDefIndex: 8906
 {
 
 	public void .ctor(object object, IntPtr method) { }

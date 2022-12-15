@@ -1,4 +1,4 @@
-internal struct LogPlayerTickOptionsInternal // TypeDefIndex: 9784
+internal struct LogPlayerTickOptionsInternal // TypeDefIndex: 9786
 {
 	public int m_ApiVersion;
 	public IntPtr m_PlayerHandle;

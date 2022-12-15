@@ -1,4 +1,4 @@
-public class SkeletonSkinLod : MonoBehaviour // TypeDefIndex: 7368
+public class SkeletonSkinLod : MonoBehaviour // TypeDefIndex: 7370
 {
 	private static LOD[] emptyLOD;
 	public LODGroup LODGroup;

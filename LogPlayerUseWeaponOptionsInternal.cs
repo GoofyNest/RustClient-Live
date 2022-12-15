@@ -1,4 +1,4 @@
-internal struct LogPlayerUseWeaponOptionsInternal : ISettable<LogPlayerUseWeaponOptions>, IDisposable // TypeDefIndex: 9790
+internal struct LogPlayerUseWeaponOptionsInternal : ISettable<LogPlayerUseWeaponOptions>, IDisposable // TypeDefIndex: 9792
 {
 	private int m_ApiVersion;
 	private IntPtr m_UseWeaponData;

@@ -1,4 +1,4 @@
-public class UpdateItemContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6489
+public class UpdateItemContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6491
 {
 	public bool ShouldPool;
 	private bool _disposed;

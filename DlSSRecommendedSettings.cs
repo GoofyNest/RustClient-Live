@@ -1,4 +1,4 @@
-public struct DlSSRecommendedSettings // TypeDefIndex: 8242
+public struct DlSSRecommendedSettings // TypeDefIndex: 8244
 {
 	public float recommendedSharpness;
 	public uint optimalRenderWidth;

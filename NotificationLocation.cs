@@ -1,4 +1,4 @@
-public enum NotificationLocation // TypeDefIndex: 8349
+public enum NotificationLocation // TypeDefIndex: 8351
 {
 	public int value__;
 	public const NotificationLocation TopLeft = 0;

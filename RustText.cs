@@ -1,4 +1,4 @@
-public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7075
+public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7077
 {
 	public bool IsLocalized;
 	public string Token;

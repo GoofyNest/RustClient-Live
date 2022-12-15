@@ -1,4 +1,4 @@
-public class ChangelogButton : MonoBehaviour // TypeDefIndex: 12776
+public class ChangelogButton : MonoBehaviour // TypeDefIndex: 12786
 {
 	public RustButton Button;
 	public CanvasGroup CanvasGroup;

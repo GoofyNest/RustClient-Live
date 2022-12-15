@@ -1,4 +1,4 @@
-public class EasyRoads3DTerrainIDv3 : MonoBehaviour // TypeDefIndex: 7186
+public class EasyRoads3DTerrainIDv3 : MonoBehaviour // TypeDefIndex: 7188
 {
 	public string terrainid;
 

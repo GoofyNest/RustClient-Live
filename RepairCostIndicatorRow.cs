@@ -1,4 +1,4 @@
-public class RepairCostIndicatorRow : MonoBehaviour // TypeDefIndex: 13008
+public class RepairCostIndicatorRow : MonoBehaviour // TypeDefIndex: 13018
 {
 	public RustText ItemName;
 	public Image ItemSprite;

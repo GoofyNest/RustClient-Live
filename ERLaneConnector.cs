@@ -1,4 +1,4 @@
-public class ERLaneConnector // TypeDefIndex: 7257
+public class ERLaneConnector // TypeDefIndex: 7259
 {
 	public Vector3 connectorStart;
 	public Vector3 connectorEnd;

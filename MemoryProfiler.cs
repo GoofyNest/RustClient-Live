@@ -6,8 +6,8 @@ public sealed class MemoryProfiler // TypeDefIndex: 3587
 	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
 	private static Action<string, bool, DebugScreenCapture> m_SaveScreenshotToDisk;
-	[DebuggerBrowsableAttribute]
 	[CompilerGeneratedAttribute]
+	[DebuggerBrowsableAttribute]
 	private static Action<MetaData> createMetaData;
 
 

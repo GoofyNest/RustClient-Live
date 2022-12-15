@@ -1,4 +1,4 @@
-public class ElectricalCombiner : IOEntity // TypeDefIndex: 10435
+public class ElectricalCombiner : IOEntity // TypeDefIndex: 10437
 {
 	public int input1Amount;
 	public int input2Amount;
