@@ -1235,6 +1235,7 @@ public class Socket_Base : PrefabAttribute // TypeDefIndex: 10841
 	public bool monogamous;
 	public Vector3 position;
 	public Quaternion rotation;
+	private Type cachedType;
 	public Vector3 selectSize;
 	public Vector3 selectCenter;
 	[ReadOnlyAttribute]
@@ -1242,6 +1243,8 @@ public class Socket_Base : PrefabAttribute // TypeDefIndex: 10841
 	public SocketMod[] socketMods;
 	public Socket_Base.OccupiedSocketCheck[] checkOccupiedSockets;
 
+
+	public void .ctor() { }
 
 	public Vector3 GetSelectPivot(Vector3 position, Quaternion rotation) { }
 
@@ -1260,8 +1263,6 @@ public class Socket_Base : PrefabAttribute // TypeDefIndex: 10841
 	public virtual Construction.Placement DoPlacement(Construction.Target target) { }
 
 	public virtual bool CheckSocketMods(Construction.Placement placement) { }
-
-	public void .ctor() { }
 
 }
 

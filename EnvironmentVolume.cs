@@ -18,6 +18,10 @@ public class EnvironmentVolume : MonoBehaviour // TypeDefIndex: 11617
 
 	protected virtual void Awake() { }
 
+	protected void OnEnable() { }
+
+	protected void OnDisable() { }
+
 	public void UpdateTrigger() { }
 
 	public void .ctor() { }
