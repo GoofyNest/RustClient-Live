@@ -5,6 +5,9 @@ public class Debugging : ConsoleSystem // TypeDefIndex: 13715
 	public static bool checktriggers;
 	[ServerVar]
 	public static bool checkparentingtriggers;
+	[ServerVar]
+	[ClientVar]
+	public static bool DebugDismounts;
 	[ClientVar]
 	[ServerVar]
 	public static bool callbacks;
@@ -171,7 +174,7 @@ public struct Debugging.EntityInfo // TypeDefIndex: 13716
 
 }
 
-private sealed class Debugging.<>c__DisplayClass41_0 // TypeDefIndex: 13717
+private sealed class Debugging.<>c__DisplayClass42_0 // TypeDefIndex: 13717
 {
 	public Vector3 position;
 	public float radius;
@@ -186,9 +189,9 @@ private sealed class Debugging.<>c__DisplayClass41_0 // TypeDefIndex: 13717
 private sealed class Debugging.<>c // TypeDefIndex: 13718
 {
 	public static readonly Debugging.<>c <>9;
-	public static Func<BaseNetworkable, uint> <>9__41_1;
-	public static Func<IGrouping<uint, BaseNetworkable>, BaseNetworkable> <>9__41_2;
-	public static Func<BaseNetworkable, Debugging.EntityInfo> <>9__41_3;
+	public static Func<BaseNetworkable, uint> <>9__42_1;
+	public static Func<IGrouping<uint, BaseNetworkable>, BaseNetworkable> <>9__42_2;
+	public static Func<BaseNetworkable, Debugging.EntityInfo> <>9__42_3;
 
 
 	private static void .cctor() { }

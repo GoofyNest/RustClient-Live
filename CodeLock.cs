@@ -5,6 +5,7 @@ public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6315
 	public CodeLock.Private pv;
 	public bool hasCode;
 	public bool hasGuestCode;
+	public bool hasAuth;
 
 
 	public static void ResetToPool(CodeLock instance) { }
@@ -140,6 +141,7 @@ public class CodeLock : BaseLock // TypeDefIndex: 10096
 	private bool hasCode;
 	public const BaseEntity.Flags Flag_CodeEntryBlocked = 524288;
 	public static readonly Translate.Phrase blockwarning;
+	public bool HasAuth;
 
 	public override bool HasMenuOptions { get; }
 

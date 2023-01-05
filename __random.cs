@@ -57461,6 +57461,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MissionMapMarker>..ctor
 	|-List<Modifier>..ctor
 	|-List<ModifierDefintion>..ctor
+	|-List<ModularCarCodeLockVisuals>..ctor
 	|-List<SqliteFunction>..ctor
 	|-List<SqliteFunctionAttribute>..ctor
 	|-List<SqliteKeyReader.KeyInfo>..ctor
@@ -61915,6 +61916,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MeshRendererBatch>.Add
 	|-List<MissionMapMarker>.Add
 	|-List<Modifier>.Add
+	|-List<ModularCarCodeLockVisuals>.Add
 	|-List<SqliteFunction>.Add
 	|-List<SqliteFunctionAttribute>.Add
 	|-List<SqliteParameter>.Add
@@ -66135,6 +66137,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MissionMapMarker>.GetEnumerator
 	|-List<Modifier>.GetEnumerator
 	|-List<ModifierDefintion>.GetEnumerator
+	|-List<ModularCarCodeLockVisuals>.GetEnumerator
 	|-List<SqliteFunctionAttribute>.GetEnumerator
 	|-List<SqliteParameter>.GetEnumerator
 	|-List<MonumentInfo>.GetEnumerator
@@ -68302,6 +68305,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MidiEvent>.Remove
 	|-List<MeshRendererLookup.LookupEntry>.Remove
 	|-List<Modifier>.Remove
+	|-List<ModularCarCodeLockVisuals>.Remove
 	|-List<SqliteParameter>.Remove
 	|-List<SqliteStatement>.Remove
 	|-List<MusicClipLoader.LoadedAudioClip>.Remove

@@ -21,7 +21,7 @@ public class BaseLock : BaseEntity // TypeDefIndex: 10048
 
 	public bool Menu_RemoveLock_ShowIf(BasePlayer player) { }
 
-	public override List<Option> GetMenuItems(BasePlayer player) { }
+	public override List<Option> GetMenuItems(BasePlayer player, bool fromParent = False) { }
 
 	public override float BoundsPadding() { }
 

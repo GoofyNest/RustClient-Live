@@ -514,7 +514,6 @@ public class Component : Object // TypeDefIndex: 3511
 	|-Component.GetComponentsInChildren<HitNumber>
 	|-Component.GetComponentsInChildren<ItemIcon>
 	|-Component.GetComponentsInChildren<ItemTextValue>
-	|-Component.GetComponentsInChildren<ModularCarCodeLockVisuals>
 	|-Component.GetComponentsInChildren<PathInterestNode>
 	|-Component.GetComponentsInChildren<PathSpeedZone>
 	|-Component.GetComponentsInChildren<NetGraphItem>

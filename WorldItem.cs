@@ -82,7 +82,7 @@ public class WorldItem : BaseEntity // TypeDefIndex: 10395
 
 	public override Info GetMenuInformation(GameObject primaryObject, BasePlayer player) { }
 
-	public override List<Option> GetMenuItems(BasePlayer player) { }
+	public override List<Option> GetMenuItems(BasePlayer player, bool fromParent = False) { }
 
 	protected override void DoClientDestroy() { }
 

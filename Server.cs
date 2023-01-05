@@ -1545,6 +1545,8 @@ public class Server : ConsoleSystem // TypeDefIndex: 13775
 	[ServerVar]
 	public static float itemdespawn;
 	[ServerVar]
+	public static float itemdespawn_container_scale;
+	[ServerVar]
 	public static float itemdespawn_quick;
 	[ServerVar]
 	public static float corpsedespawn;

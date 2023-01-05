@@ -6977,7 +6977,7 @@ public interface IProvider // TypeDefIndex: 13490
 
 	public abstract Info GetMenuInformation(GameObject primaryObject, BasePlayer player);
 
-	public abstract List<Option> GetMenuItems(BasePlayer player);
+	public abstract List<Option> GetMenuItems(BasePlayer player, bool fromParent = False);
 
 }
 

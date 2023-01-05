@@ -37,6 +37,8 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10051
 	[FormerlySerializedAsAttribute]
 	public bool isMobile;
 	public float SideLeanAmount;
+	public const float playerHeight = 1,8;
+	public const float playerRadius = 0,5;
 
 	public override bool HasMenuOptions { get; }
 	public virtual bool DisableLegsMeshAtExtremeViewAnglesInFirstPersonWithEyes { get; }
@@ -67,7 +69,7 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10051
 
 	public virtual Vector2 GetYawClamp() { }
 
-	public virtual bool IsMounted() { }
+	public virtual bool AnyMounted() { }
 
 	public virtual Vector3 EyePositionForPlayer(BasePlayer player, Quaternion lookRot) { }
 
@@ -106,6 +108,10 @@ public class BaseMountable : BaseCombatEntity // TypeDefIndex: 10051
 	public virtual bool LocalPlayerIsMounted() { }
 
 	public virtual BaseVehicle VehicleParent() { }
+
+	public virtual bool HasValidDismountPosition(BasePlayer player) { }
+
+	public virtual bool ValidDismountPosition(BasePlayer player, Vector3 disPos) { }
 
 	public virtual bool get_IsSummerDlcVehicle() { }
 

@@ -5,6 +5,7 @@ public class DroppedItemContainer : BaseCombatEntity, LootPanel.IHasLootPanel, I
 	public int maxItemCount;
 	public ulong playerSteamID;
 	public string _playerName;
+	public bool ItemBasedDespawn;
 	public bool onlyOwnerLoot;
 	public SoundDefinition openSound;
 	public SoundDefinition closeSound;

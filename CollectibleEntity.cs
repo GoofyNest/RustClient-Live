@@ -10,7 +10,7 @@ public class CollectibleEntity : BaseEntity, IPrefabPreProcess // TypeDefIndex: 
 
 	public override bool ShouldLerp() { }
 
-	public override List<Option> GetMenuItems(BasePlayer player) { }
+	public override List<Option> GetMenuItems(BasePlayer player, bool fromParent = False) { }
 
 	public bool IsFood(bool checkConsumeMod = False) { }
 

@@ -3645,7 +3645,7 @@ public class SteamFriendsList : MonoBehaviour // TypeDefIndex: 13024
 
 	private void OnEnable() { }
 
-	public void Refresh() { }
+	public void Refresh(string searchFilter = "") { }
 
 	public void AddPlayer(IPlayerInfo f) { }
 

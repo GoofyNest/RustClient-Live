@@ -26,6 +26,7 @@ public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntit
 	public abstract float DriveWheelVelocity { get; }
 	public bool LightsAreOn { get; }
 	public VehicleEngineController.EngineState<GroundVehicle> CurEngineState { get; }
+	private bool ShouldClientTick { get; }
 
 
 	[CompilerGeneratedAttribute]
@@ -53,6 +54,8 @@ public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntit
 	public abstract float GetBrakeInput();
 
 	protected override bool CanPushNow(BasePlayer pusher) { }
+
+	private bool get_ShouldClientTick() { }
 
 	protected override void ClientInit(Entity info) { }
 
