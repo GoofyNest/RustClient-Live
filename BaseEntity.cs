@@ -871,6 +871,7 @@ public class BaseEntity.Menu : Attribute // TypeDefIndex: 10216
 	public string OnProgress;
 	public bool LongUseOnly;
 	public bool PrioritizeIfNotWhitelisted;
+	public bool PrioritizeIfUnlocked;
 
 
 	public void .ctor() { }
