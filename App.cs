@@ -3120,8 +3120,6 @@ public static class Approved // TypeDefIndex: 7740
 
 	private static void Add_2022() { }
 
-	private static void Add_January_05_2023() { }
-
 	private static void Add_December_29_2022() { }
 
 	private static void Add_December_22_2022() { }
