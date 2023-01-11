@@ -43,11 +43,10 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 12741
 	private bool isShowingUndergroundLayers;
 	private Nullable<MapLayer> undergroundLayerOverride;
 	private MapLayer visibleLayer;
-	private HashSet<uint> toRemove;
 	internal static MapEntity lastActiveMap;
 
 	public bool followingPlayer { get; set; }
-	public bool IsOpen { get; }
+	private bool IsOpen { get; }
 	public static float MarkerScale { get; }
 	private static BasePlayer LocalPlayerEntity { get; }
 
@@ -58,7 +57,7 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 12741
 	[CompilerGeneratedAttribute]
 	public void set_followingPlayer(bool value) { }
 
-	public bool get_IsOpen() { }
+	private bool get_IsOpen() { }
 
 	public static float get_MarkerScale() { }
 

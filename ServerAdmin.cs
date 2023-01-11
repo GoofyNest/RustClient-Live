@@ -296,7 +296,7 @@ public class ServerAdminUI : SingletonComponent<ServerAdminUI> // TypeDefIndex: 
 
 	public void BanPlayer(string playerName, string banReason) { }
 
-	public void SpectatePlayer(string playerName) { }
+	public void SpectatePlayer(ulong id) { }
 
 	public void ModifyConvar(string convar, string newValue) { }
 
